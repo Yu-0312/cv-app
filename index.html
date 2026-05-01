@@ -3945,13 +3945,23 @@
       }
 
       function updateAuthUi() {
+        const headerLoginBtn = $("headerLoginBtn");
+        const loginBtn = $("loginBtn");
         if (state.user) {
           const display = state.user.user_metadata?.full_name || state.user.email || "已登入";
+          const avatarUrl = state.user.user_metadata?.avatar_url || state.user.user_metadata?.picture || "";
           $("authStatus").innerHTML = `<strong>${escapeHtml(display)}</strong> · Google 已登入`;
-          $("headerAuthStatus").innerHTML = `<strong>${escapeHtml(display)}</strong> · Google 已登入`;
+          const avatarHtml = avatarUrl
+            ? `<img src="${escapeHtml(avatarUrl)}" alt="${escapeHtml(display)}" style="width:28px;height:28px;border-radius:50%;object-fit:cover;vertical-align:middle;margin-right:6px;">`
+            : "";
+          $("headerAuthStatus").innerHTML = `${avatarHtml}<strong>${escapeHtml(display)}</strong> · Google 已登入`;
+          if (headerLoginBtn) headerLoginBtn.style.display = "none";
+          if (loginBtn) loginBtn.style.display = "none";
         } else {
           $("authStatus").innerHTML = "<strong>尚未登入</strong> · 可先編輯草稿";
           $("headerAuthStatus").innerHTML = "<strong>尚未登入</strong> · 可先編輯草稿";
+          if (headerLoginBtn) headerLoginBtn.style.display = "";
+          if (loginBtn) loginBtn.style.display = "";
         }
         renderGoogleImpactChecklist();
       }
