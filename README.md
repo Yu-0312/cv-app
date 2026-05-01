@@ -9,7 +9,7 @@
 - 下載 PDF
 - PWA 安裝成手機 / 桌面 APP
 
-目前主畫面是 [index.html](/Users/maxwang/Desktop/CV%20App/index.html)，資料表設定在 [supabase-schema.sql](/Users/maxwang/Desktop/CV%20App/supabase-schema.sql)。
+目前主畫面是 [index.html](index.html)，資料表設定在 [supabase-schema.sql](supabase-schema.sql)。
 
 ## 上線前設定
 
@@ -25,7 +25,7 @@
 7. 按 `套用設定`
 8. 按 `Google 登入` 測試
 
-如果你不想每次手動輸入，現在可以直接改專案根目錄的 [config.js](/Users/maxwang/Desktop/CV%20App/config.js)：
+如果你不想每次手動輸入，現在可以直接改專案根目錄的 [config.js](config.js)：
 
 ```js
 window.CV_STUDIO_CONFIG = {
@@ -57,7 +57,7 @@ https://你的帳號.github.io/你的-repo/
 1. Supabase `Authentication > URL Configuration` 的 `Site URL` 與 `Redirect URLs`
 2. Google Cloud OAuth 允許的網址設定
 
-另外，根目錄的 [config.js](/Users/maxwang/Desktop/CV%20App/config.js) 目前已把 `siteUrl` 留空，頁面會自動改用目前開啟的網址當作登入回跳位址；如果你想固定寫死成 GitHub Pages 網址，也可以手動填入。
+另外，根目錄的 [config.js](config.js) 目前已把 `siteUrl` 留空，頁面會自動改用目前開啟的網址當作登入回跳位址；如果你想固定寫死成 GitHub Pages 網址，也可以手動填入。
 
 ## Google 登入實作方式
 
@@ -92,11 +92,25 @@ Google 官方已公告舊版 Google Sign-In for Web 程式庫已淘汰，且 Fed
 
 ## 使用方式
 
+### CV 編輯器
+
 - 左側輸入履歷內容，右側即時預覽
 - 模板可在 `Academic Warm / Slate / Mono / Serif Ivory / Forest / Rose / Midnight / Sand / Plum` 之間切換
 - 登入後按 `儲存我的 CV`，會存到自己帳號的雲端資料
 - 按 `下載 PDF` 可以把目前模板匯出成 PDF
 - 若瀏覽器支援，按 `安裝 APP` 可直接安裝
+
+### 公開瀏覽 / 草稿模式
+
+未登入的訪客可以自由瀏覽預覽版面並在本機編輯草稿，但**無法儲存至雲端**。登入後才能將資料存入自己的帳號。
+
+### WYSIWYG 直接編輯
+
+在 CV 預覽與學習歷程頁面，登入後可直接在預覽畫面上點選任意欄位進行內容編輯，不需切換回左側表單，修改結果即時同步。
+
+### 學習歷程（Portfolio）
+
+上方切換至「學習歷程」分頁，可編輯與預覽學習歷程文件，並支援下載成 PDF。
 
 ## 模板欄位格式
 
