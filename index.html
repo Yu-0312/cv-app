@@ -1593,6 +1593,122 @@
     }
   </style>
 
+  <style id="image-upload-styles">
+    /* ===== IMAGE UPLOAD WIDGET ===== */
+    .img-upload-widget {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .img-upload-preview {
+      position: relative;
+      width: 88px;
+      height: 88px;
+      border-radius: 50%;
+      background: rgba(49,40,27,0.07);
+      border: 2px dashed rgba(49,40,27,0.18);
+      overflow: hidden;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--muted);
+      font-size: 28px;
+      cursor: pointer;
+      transition: border-color 0.2s, background 0.2s;
+    }
+    .img-upload-preview:hover {
+      border-color: var(--accent);
+      background: rgba(145,100,60,0.07);
+    }
+    .img-upload-preview img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+    .img-upload-preview .upload-overlay {
+      display: none;
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.38);
+      border-radius: 50%;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 22px;
+    }
+    .img-upload-preview:hover .upload-overlay {
+      display: flex;
+    }
+    .img-upload-row {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+    .img-upload-actions {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      flex: 1;
+    }
+    .img-upload-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 14px;
+      border-radius: 10px;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      border: 1.5px solid rgba(49,40,27,0.18);
+      background: var(--surface);
+      color: var(--text);
+      transition: background 0.15s, border-color 0.15s;
+    }
+    .img-upload-btn:hover {
+      background: rgba(145,100,60,0.09);
+      border-color: var(--accent);
+    }
+    .img-upload-btn input[type="file"] {
+      display: none;
+    }
+    .img-upload-hint {
+      font-size: 11px;
+      color: var(--muted);
+      line-height: 1.4;
+    }
+    .img-upload-status {
+      font-size: 11px;
+      color: var(--accent);
+      min-height: 14px;
+    }
+
+    /* Rect variant for cover / section images */
+    .img-upload-preview.rect {
+      width: 100%;
+      height: 120px;
+      border-radius: 12px;
+    }
+    .img-upload-preview.rect img {
+      border-radius: 10px;
+    }
+    .img-upload-preview.rect .upload-overlay {
+      border-radius: 10px;
+    }
+    .img-upload-preview.sm-rect {
+      width: 100%;
+      height: 80px;
+      border-radius: 10px;
+    }
+    .img-upload-preview.sm-rect img {
+      border-radius: 8px;
+    }
+    .img-upload-preview.sm-rect .upload-overlay {
+      border-radius: 8px;
+    }
+  </style>
+
   <style id="tabs-portfolio-styles">
     /* ===== APP TABS ===== */
     .app-tabs {
@@ -2540,8 +2656,24 @@
                 <input id="website" type="text" />
               </div>
               <div class="field full">
-                <label>頭像圖片網址</label>
-                <input id="avatar" type="url" placeholder="https://..." />
+                <label>個人頭像</label>
+                <div class="img-upload-widget">
+                  <div class="img-upload-row">
+                    <div class="img-upload-preview" id="avatarPreview" title="點擊上傳頭像">
+                      <span id="avatarInitials">CV</span>
+                      <div class="upload-overlay">📷</div>
+                    </div>
+                    <div class="img-upload-actions">
+                      <label class="img-upload-btn">
+                        📁 選擇圖片
+                        <input type="file" id="avatarFileInput" accept="image/*" />
+                      </label>
+                      <div class="img-upload-status" id="avatarUploadStatus"></div>
+                      <div class="img-upload-hint">支援 JPG、PNG、WebP，建議正方形裁切。<br>或直接貼上圖片網址：</div>
+                      <input id="avatar" type="url" placeholder="https://..." style="font-size:12px;padding:5px 8px;" />
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="field full">
                 <label>個人摘要</label>
@@ -2723,8 +2855,22 @@
                   <input id="pfSchool" type="text" placeholder="私立康橋高中 3年1201班" />
                 </div>
                 <div class="field full">
-                  <label>封面圖片網址</label>
-                  <input id="pfCoverImage" type="url" placeholder="https://..." />
+                  <label>封面圖片</label>
+                  <div class="img-upload-widget">
+                    <div class="img-upload-preview rect" id="pfCoverPreview" title="點擊上傳封面圖">
+                      <span style="font-size:32px;">🖼️</span>
+                      <div class="upload-overlay">📷</div>
+                    </div>
+                    <div style="display:flex;gap:8px;align-items:center;margin-top:4px;">
+                      <label class="img-upload-btn">
+                        📁 選擇圖片
+                        <input type="file" id="pfCoverFileInput" accept="image/*" />
+                      </label>
+                      <div class="img-upload-status" id="pfCoverUploadStatus"></div>
+                    </div>
+                    <div class="img-upload-hint">或直接貼上圖片網址：</div>
+                    <input id="pfCoverImage" type="url" placeholder="https://..." style="font-size:12px;padding:5px 8px;" />
+                  </div>
                 </div>
               </div>
             </div>
@@ -3557,6 +3703,8 @@
         $("siteUrl").value = state.config.siteUrl || "";
         $("defaultTemplateSelect").value = state.config.defaultTemplate || "n-tech";
         syncRuntimeConfigStatus();
+        // Sync avatar preview after data is loaded
+        updateAvatarPreview(state.data.avatar || "");
       }
 
       function syncRuntimeConfigStatus() {
@@ -4087,6 +4235,31 @@
         updateActionButtons();
       }
 
+      /* ── Image Upload Utility ── */
+      async function uploadImage(file, storagePath, statusEl) {
+        if (!state.client || !state.user) {
+          // Not logged in: use local blob URL (preview only, not persisted)
+          if (statusEl) statusEl.textContent = "⚠️ 登入後可永久儲存";
+          return URL.createObjectURL(file);
+        }
+        if (statusEl) statusEl.textContent = "上傳中...";
+        const ext = file.name.split(".").pop().toLowerCase() || "jpg";
+        const path = `${state.user.id}/${storagePath}.${ext}`;
+        const { error: upErr } = await state.client.storage
+          .from("cv-images")
+          .upload(path, file, { upsert: true, contentType: file.type });
+        if (upErr) {
+          if (statusEl) statusEl.textContent = `❌ ${upErr.message}`;
+          return null;
+        }
+        const { data } = state.client.storage.from("cv-images").getPublicUrl(path);
+        // Add cache-buster so the browser picks up the new image
+        const url = data.publicUrl + "?t=" + Date.now();
+        if (statusEl) statusEl.textContent = "✅ 上傳成功";
+        setTimeout(() => { if (statusEl) statusEl.textContent = ""; }, 3000);
+        return url;
+      }
+
       async function loadProfile() {
         if (!state.client || !state.user) return;
         const { data, error } = await state.client
@@ -4180,16 +4353,110 @@
         }
       }
 
+      function updateAvatarPreview(url) {
+        const preview = $("avatarPreview");
+        const initials = $("avatarInitials");
+        if (!preview) return;
+        if (url) {
+          let img = preview.querySelector("img");
+          if (!img) {
+            img = document.createElement("img");
+            img.alt = "avatar";
+            img.onerror = () => { img.remove(); if (initials) initials.style.display = ""; };
+            preview.insertBefore(img, preview.firstChild);
+          }
+          img.src = url;
+          if (initials) initials.style.display = "none";
+        } else {
+          const img = preview.querySelector("img");
+          if (img) img.remove();
+          if (initials) initials.style.display = "";
+        }
+      }
+
+      function updateCoverPreview(url) {
+        const preview = $("pfCoverPreview");
+        if (!preview) return;
+        if (url) {
+          let img = preview.querySelector("img");
+          if (!img) {
+            img = document.createElement("img");
+            img.alt = "cover";
+            img.style.cssText = "width:100%;height:100%;object-fit:cover;border-radius:10px;";
+            img.onerror = () => { img.remove(); };
+            preview.insertBefore(img, preview.firstChild);
+          }
+          img.src = url;
+          const placeholder = preview.querySelector("span");
+          if (placeholder) placeholder.style.display = "none";
+        } else {
+          const img = preview.querySelector("img");
+          if (img) img.remove();
+          const placeholder = preview.querySelector("span");
+          if (placeholder) placeholder.style.display = "";
+        }
+      }
+
       function attachInputListeners() {
         fields.forEach((field) => {
           const node = $(field);
           if (!node) return;
           node.addEventListener("input", (event) => {
             state.data[field] = event.target.value;
+            if (field === "avatar") updateAvatarPreview(event.target.value);
             saveJson(STORAGE_KEY, state.data);
             updatePreview();
           });
         });
+
+        // Avatar file upload
+        const avatarFileInput = $("avatarFileInput");
+        if (avatarFileInput) {
+          avatarFileInput.addEventListener("change", async (e) => {
+            const file = e.target.files[0];
+            if (!file) return;
+            const statusEl = $("avatarUploadStatus");
+            const url = await uploadImage(file, "avatars/avatar", statusEl);
+            if (url) {
+              state.data.avatar = url;
+              const urlInput = $("avatar");
+              if (urlInput) urlInput.value = url;
+              updateAvatarPreview(url);
+              saveJson(STORAGE_KEY, state.data);
+              updatePreview();
+            }
+            e.target.value = "";
+          });
+        }
+        // Make preview div also trigger file picker
+        const avatarPreview = $("avatarPreview");
+        if (avatarPreview) {
+          avatarPreview.addEventListener("click", () => avatarFileInput && avatarFileInput.click());
+        }
+
+        // Portfolio cover file upload
+        const pfCoverFileInput = $("pfCoverFileInput");
+        if (pfCoverFileInput) {
+          pfCoverFileInput.addEventListener("change", async (e) => {
+            const file = e.target.files[0];
+            if (!file) return;
+            const statusEl = $("pfCoverUploadStatus");
+            const url = await uploadImage(file, "portfolio/cover", statusEl);
+            if (url) {
+              pf.coverImageUrl = url;
+              const urlInput = $("pfCoverImage");
+              if (urlInput) urlInput.value = url;
+              updateCoverPreview(url);
+              save();
+              renderPreview();
+            }
+            e.target.value = "";
+          });
+        }
+        const pfCoverPreview = $("pfCoverPreview");
+        if (pfCoverPreview) {
+          pfCoverPreview.addEventListener("click", () => pfCoverFileInput && pfCoverFileInput.click());
+        }
 
         document.querySelectorAll("[data-template-option]").forEach((button) => {
           button.addEventListener("click", () => {
@@ -4791,6 +5058,7 @@
         $el("pfStudentName").value = pf.studentName;
         $el("pfSchool").value      = pf.school;
         $el("pfCoverImage").value  = pf.coverImageUrl;
+        updateCoverPreview(pf.coverImageUrl || "");
 
         $el("pfChapters").innerHTML = pf.chapters.map((ch, ci) => `
           <div class="pf-chapter-block">
@@ -4817,8 +5085,18 @@
                   <textarea style="min-height:72px;resize:vertical;" placeholder="描述這段學習歷程..." data-sec-body="${ci}-${si}">${esc(sec.body)}</textarea>
                 </div>
                 <div class="field">
-                  <label style="font-size:12px;">圖片網址（選填）</label>
-                  <input type="url" placeholder="https://..." value="${esc(sec.imageUrl)}" data-sec-img="${ci}-${si}" />
+                  <label style="font-size:12px;">佐證圖片（選填）</label>
+                  <div class="img-upload-widget">
+                    ${sec.imageUrl ? `<div class="img-upload-preview sm-rect" data-sec-img-preview="${ci}-${si}" style="margin-bottom:4px;"><img src="${esc(sec.imageUrl)}" alt="" onerror="this.parentElement.style.display='none'" /><div class="upload-overlay">📷</div></div>` : `<div class="img-upload-preview sm-rect" data-sec-img-preview="${ci}-${si}" style="margin-bottom:4px;display:none;"><div class="upload-overlay">📷</div></div>`}
+                    <div style="display:flex;gap:8px;align-items:center;">
+                      <label class="img-upload-btn" style="font-size:12px;padding:4px 10px;">
+                        📁 上傳圖片
+                        <input type="file" accept="image/*" data-sec-file="${ci}-${si}" />
+                      </label>
+                      <span class="img-upload-status" data-sec-upload-status="${ci}-${si}"></span>
+                    </div>
+                    <input type="url" placeholder="或貼上圖片網址..." value="${esc(sec.imageUrl)}" data-sec-img="${ci}-${si}" style="font-size:12px;padding:5px 8px;margin-top:4px;" />
+                  </div>
                 </div>
                 <div class="field">
                   <label style="font-size:12px;">圖片說明（選填）</label>
@@ -4852,7 +5130,48 @@
         document.querySelectorAll("[data-sec-img]").forEach(inp => {
           inp.oninput = e => {
             const [ci, si] = e.target.dataset.secImg.split("-").map(Number);
-            pf.chapters[ci].sections[si].imageUrl = e.target.value; save(); renderPreview();
+            const url = e.target.value;
+            pf.chapters[ci].sections[si].imageUrl = url;
+            // Update inline preview
+            const previewEl = document.querySelector(`[data-sec-img-preview="${ci}-${si}"]`);
+            if (previewEl) {
+              if (url) {
+                previewEl.style.display = "";
+                let img = previewEl.querySelector("img");
+                if (!img) { img = document.createElement("img"); img.alt = ""; img.onerror = () => { previewEl.style.display = "none"; }; previewEl.insertBefore(img, previewEl.firstChild); }
+                img.src = url;
+              } else {
+                previewEl.style.display = "none";
+              }
+            }
+            save(); renderPreview();
+          };
+        });
+
+        document.querySelectorAll("[data-sec-file]").forEach(fileInp => {
+          fileInp.onchange = async e => {
+            const file = e.target.files[0];
+            if (!file) return;
+            const [ci, si] = e.target.dataset.secFile.split("-").map(Number);
+            const statusEl = document.querySelector(`[data-sec-upload-status="${ci}-${si}"]`);
+            const ts = Date.now();
+            const url = await uploadImage(file, `portfolio/sec_${ci}_${si}_${ts}`, statusEl);
+            if (url) {
+              pf.chapters[ci].sections[si].imageUrl = url;
+              // Update URL input
+              const urlInp = document.querySelector(`[data-sec-img="${ci}-${si}"]`);
+              if (urlInp) urlInp.value = url;
+              // Update preview
+              const previewEl = document.querySelector(`[data-sec-img-preview="${ci}-${si}"]`);
+              if (previewEl) {
+                previewEl.style.display = "";
+                let img = previewEl.querySelector("img");
+                if (!img) { img = document.createElement("img"); img.alt = ""; previewEl.insertBefore(img, previewEl.firstChild); }
+                img.src = url;
+              }
+              save(); renderPreview();
+            }
+            e.target.value = "";
           };
         });
         document.querySelectorAll("[data-sec-cap]").forEach(inp => {
@@ -5167,6 +5486,7 @@
           pf.studentName    = $el("pfStudentName").value;
           pf.school         = $el("pfSchool").value;
           pf.coverImageUrl  = $el("pfCoverImage").value;
+          updateCoverPreview(pf.coverImageUrl);
           save(); renderPreview();
         };
         ["pfTitle", "pfStudentName", "pfSchool", "pfCoverImage"].forEach(id => {
