@@ -4,7 +4,7 @@
     {
       "name": "CV App",
       "runtimeExecutable": "python3",
-      "runtimeArgs": ["-m", "http.server", "8788"],
+      "runtimeArgs": ["-m", "http.server", "8788", "--directory", "/Users/maxwang/Desktop/CV App/.claude/worktrees/distracted-wescoff"],
       "port": 8788
     }
   ]
