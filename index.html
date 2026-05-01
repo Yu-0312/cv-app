@@ -512,6 +512,40 @@
       overflow: hidden;
     }
 
+    .editor-login-gate {
+      display: none;
+      position: absolute;
+      inset: 0;
+      background: rgba(243, 239, 230, 0.93);
+      backdrop-filter: blur(8px);
+      border-radius: 28px;
+      z-index: 20;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 14px;
+      text-align: center;
+      padding: 36px 28px;
+    }
+    .editor-panel.auth-locked .editor-login-gate,
+    .portfolio-editor-panel.auth-locked .editor-login-gate {
+      display: flex;
+    }
+    .editor-login-gate .lock-icon {
+      font-size: 2.8rem;
+      line-height: 1;
+    }
+    .editor-login-gate h3 {
+      font-size: 1.15rem;
+      margin: 0;
+    }
+    .editor-login-gate p {
+      color: var(--muted);
+      font-size: 0.9rem;
+      margin: 0;
+      max-width: 240px;
+    }
+
     .editor-header {
       display: flex;
       justify-content: space-between;
@@ -2199,6 +2233,20 @@
 
     <section class="workspace">
       <aside class="panel editor-panel">
+        <div class="editor-login-gate">
+          <div class="lock-icon">🔒</div>
+          <h3>登入後才能編輯</h3>
+          <p>你可以自由瀏覽 CV 預覽，登入後即可開始編輯與儲存。</p>
+          <a class="primary google-btn button-link" href="#" data-login-trigger="google" aria-disabled="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
+              <path fill="#EA4335" d="M12 10.2v3.9h5.5c-.2 1.2-1.4 3.6-5.5 3.6-3.3 0-6-2.8-6-6.2s2.7-6.2 6-6.2c1.9 0 3.1.8 3.8 1.5l2.6-2.5C16.8 2.8 14.6 2 12 2 6.9 2 2.8 6.3 2.8 11.5S6.9 21 12 21c6.9 0 9.1-4.8 9.1-7.3 0-.5 0-.9-.1-1.3H12Z"/>
+              <path fill="#34A853" d="M2.8 11.5c0 1.7.6 3.4 1.7 4.8l3.3-2.6c-.4-.6-.7-1.4-.7-2.2s.2-1.5.7-2.2L4.5 6.7c-1.1 1.4-1.7 3-1.7 4.8Z"/>
+              <path fill="#4A90E2" d="M12 21c2.5 0 4.7-.8 6.3-2.3l-3.1-2.5c-.8.6-1.8 1-3.2 1-2.5 0-4.6-1.7-5.4-4l-3.4 2.6C5 18.9 8.2 21 12 21Z"/>
+              <path fill="#FBBC05" d="M6.6 13.2c-.2-.6-.3-1.1-.3-1.7s.1-1.2.3-1.7L3.2 7.2C2.4 8.6 2 10 2 11.5s.4 2.9 1.2 4.3l3.4-2.6Z"/>
+            </svg>
+            Google 登入
+          </a>
+        </div>
         <div class="editor-header">
           <div>
             <h2>編輯器</h2>
@@ -2603,6 +2651,20 @@
 
         <!-- left: editor -->
         <aside class="panel portfolio-editor-panel">
+          <div class="editor-login-gate">
+            <div class="lock-icon">🔒</div>
+            <h3>登入後才能編輯</h3>
+            <p>你可以自由瀏覽學習歷程預覽，登入後即可開始編輯與儲存。</p>
+            <a class="primary google-btn button-link" href="#" data-login-trigger="google" aria-disabled="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
+                <path fill="#EA4335" d="M12 10.2v3.9h5.5c-.2 1.2-1.4 3.6-5.5 3.6-3.3 0-6-2.8-6-6.2s2.7-6.2 6-6.2c1.9 0 3.1.8 3.8 1.5l2.6-2.5C16.8 2.8 14.6 2 12 2 6.9 2 2.8 6.3 2.8 11.5S6.9 21 12 21c6.9 0 9.1-4.8 9.1-7.3 0-.5 0-.9-.1-1.3H12Z"/>
+                <path fill="#34A853" d="M2.8 11.5c0 1.7.6 3.4 1.7 4.8l3.3-2.6c-.4-.6-.7-1.4-.7-2.2s.2-1.5.7-2.2L4.5 6.7c-1.1 1.4-1.7 3-1.7 4.8Z"/>
+                <path fill="#4A90E2" d="M12 21c2.5 0 4.7-.8 6.3-2.3l-3.1-2.5c-.8.6-1.8 1-3.2 1-2.5 0-4.6-1.7-5.4-4l-3.4 2.6C5 18.9 8.2 21 12 21Z"/>
+                <path fill="#FBBC05" d="M6.6 13.2c-.2-.6-.3-1.1-.3-1.7s.1-1.2.3-1.7L3.2 7.2C2.4 8.6 2 10 2 11.5s.4 2.9 1.2 4.3l3.4-2.6Z"/>
+              </svg>
+              Google 登入
+            </a>
+          </div>
           <div class="editor-header">
             <div>
               <h2>學習歷程編輯器</h2>
@@ -3481,6 +3543,7 @@
 
         $("sidebarRegion").innerHTML = layoutState.regions.sidebar.map((blockId) => renderEditableBlock(blockId, layoutState)).join("");
         $("mainRegion").innerHTML = layoutState.regions.main.map((blockId) => renderEditableBlock(blockId, layoutState)).join("");
+        syncEditableState();
       }
 
       function syncInputs() {
@@ -3947,6 +4010,23 @@
         }
       }
 
+      function syncEditableState() {
+        const editable = Boolean(state.user);
+        // Toggle contenteditable in CV preview
+        document.querySelectorAll("#cvPaper [contenteditable]").forEach(el => {
+          el.contentEditable = editable ? "true" : "false";
+        });
+        // Show/hide inline WYSIWYG action buttons (add entry, remove entry, etc.)
+        document.querySelectorAll("#cvPaper .wysiwyg-add-btn, #cvPaper [data-rm-entry], #cvPaper [data-add-entry]").forEach(btn => {
+          btn.style.display = editable ? "" : "none";
+        });
+        // Lock/unlock the editor panels
+        const editorPanel = document.querySelector(".editor-panel");
+        const portfolioPanel = document.querySelector(".portfolio-editor-panel");
+        if (editorPanel) editorPanel.classList.toggle("auth-locked", !editable);
+        if (portfolioPanel) portfolioPanel.classList.toggle("auth-locked", !editable);
+      }
+
       function updateAuthUi() {
         const headerLoginBtn = $("headerLoginBtn");
         const loginBtn = $("loginBtn");
@@ -3961,11 +4041,12 @@
           if (headerLoginBtn) headerLoginBtn.style.display = "none";
           if (loginBtn) loginBtn.style.display = "none";
         } else {
-          $("authStatus").innerHTML = "<strong>尚未登入</strong> · 可先編輯草稿";
-          $("headerAuthStatus").innerHTML = "<strong>尚未登入</strong> · 可先編輯草稿";
+          $("authStatus").innerHTML = "<strong>尚未登入</strong> · 僅限瀏覽，登入後可編輯";
+          $("headerAuthStatus").innerHTML = "<strong>尚未登入</strong> · 僅限瀏覽，登入後可編輯";
           if (headerLoginBtn) headerLoginBtn.style.display = "";
           if (loginBtn) loginBtn.style.display = "";
         }
+        syncEditableState();
         renderGoogleImpactChecklist();
       }
 
