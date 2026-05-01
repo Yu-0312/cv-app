@@ -1744,6 +1744,25 @@
       font-size: 13px;
     }
 
+    /* ===== PORTFOLIO INLINE EDITING ===== */
+    .pf-page [contenteditable="true"] {
+      outline: none;
+      border-radius: 2px;
+      cursor: text;
+      transition: background 0.12s;
+    }
+    .pf-page [contenteditable="true"]:hover {
+      background: rgba(64, 75, 90, 0.07);
+    }
+    .pf-page [contenteditable="true"]:focus {
+      background: rgba(64, 75, 90, 0.10);
+      box-shadow: 0 0 0 1.5px rgba(64, 75, 90, 0.30);
+    }
+    .pf-page [contenteditable="true"][data-pf-field="secBody"] {
+      display: block;
+      min-height: 1.2em;
+    }
+
     @media (max-width: 960px) {
       .portfolio-workspace { grid-template-columns: 1fr; }
       .portfolio-editor-panel { position: static; max-height: none; }
@@ -2588,7 +2607,7 @@
           <div class="editor-header">
             <div>
               <h2>學習歷程編輯器</h2>
-              <div class="install-hint">左側填寫，右側即時預覽封面、目錄、內容頁與結尾頁。</div>
+              <div class="install-hint">左側填寫，或直接點擊右側預覽頁面內文即可行內編輯；選取文字可加粗、變色等格式。</div>
             </div>
           </div>
           <div class="portfolio-editor-scroll">
@@ -4387,7 +4406,7 @@
         const paper = $("cvPaper");
         if (!paper) return;
 
-        /* show toolbar on selection within cvPaper */
+        /* show toolbar on selection within cvPaper OR pfPreviewArea */
         document.addEventListener("selectionchange", () => {
           clearTimeout(_fmtHideTimer);
           const sel = window.getSelection();
@@ -4396,7 +4415,10 @@
             return;
           }
           const range = sel.getRangeAt(0);
-          if (!paper.contains(range.commonAncestorContainer)) {
+          const pfArea = document.getElementById("pfPreviewArea");
+          const inCV = paper.contains(range.commonAncestorContainer);
+          const inPF = pfArea && pfArea.contains(range.commonAncestorContainer);
+          if (!inCV && !inPF) {
             _fmtHideTimer = setTimeout(hideFormatToolbar, 200);
             return;
           }
@@ -4634,6 +4656,14 @@
       function esc(s) {
         return String(s || "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
       }
+      /* Convert body text to safe HTML for contenteditable preview.
+         If content is already HTML (user edited inline), pass through;
+         otherwise escape and convert newlines to <br>. */
+      function pfBodyToHtml(text) {
+        if (!text) return "";
+        if (/<[a-z][\s\S]*>/i.test(text)) return text;
+        return esc(text).replace(/\n/g, "<br>");
+      }
 
       const pfDefault = {
         title: "高科大化工材料N",
@@ -4780,6 +4810,84 @@
         pf.chapters.forEach((ch, i) => parts.push(buildContentPage(ch, i + 1, c)));
         parts.push(buildEndPage(c));
         $el("pfPreviewArea").innerHTML = parts.join("");
+        attachPfPreviewListeners();
+      }
+
+      /* ── INLINE EDITING – sync contenteditable preview → data model ── */
+      function attachPfPreviewListeners() {
+        const area = $el("pfPreviewArea");
+        if (!area) return;
+
+        /* Prevent newlines in single-line fields */
+        area.addEventListener("keydown", (e) => {
+          const el = e.target.closest("[data-pf-field]");
+          if (!el) return;
+          const singleLine = ["title", "studentName", "school", "chTitle", "secHeader", "secCaption"];
+          if (e.key === "Enter" && singleLine.includes(el.dataset.pfField)) {
+            e.preventDefault();
+          }
+        });
+
+        /* Sync on blur */
+        area.addEventListener("focusout", (e) => {
+          const el = e.target.closest("[contenteditable='true'][data-pf-field]");
+          if (!el) return;
+          const field = el.dataset.pfField;
+          const ci = el.dataset.pfCh !== undefined ? +el.dataset.pfCh : null;
+          const si = el.dataset.pfSec !== undefined ? +el.dataset.pfSec : null;
+
+          if (field === "title") {
+            pf.title = el.innerText.trim();
+            /* mirror to all other title sinks in preview */
+            area.querySelectorAll("[data-pf-field='title']").forEach(t => {
+              if (t !== el) t.innerText = pf.title;
+            });
+            const inp = $el("pfTitle");
+            if (inp) inp.value = pf.title;
+
+          } else if (field === "studentName") {
+            pf.studentName = el.innerText.trim();
+            area.querySelectorAll("[data-pf-field='studentName']").forEach(t => {
+              if (t !== el) t.innerText = pf.studentName;
+            });
+            const inp = $el("pfStudentName");
+            if (inp) inp.value = pf.studentName;
+
+          } else if (field === "school") {
+            pf.school = el.innerText.trim();
+            const inp = $el("pfSchool");
+            if (inp) inp.value = pf.school;
+
+          } else if (field === "chTitle" && ci !== null) {
+            pf.chapters[ci].title = el.innerText.trim();
+            /* sync to left-panel input */
+            const inp = area.closest(".portfolio-workspace")
+              ?.querySelector(`[data-ch-title="${ci}"]`)
+              || document.querySelector(`[data-ch-title="${ci}"]`);
+            if (inp) inp.value = pf.chapters[ci].title;
+            /* also update TOC page text (re-render only TOC) */
+            const tocPage = $el("pfPreviewArea")?.children[1];
+            if (tocPage) tocPage.outerHTML = buildTocPage(accent());
+
+          } else if (field === "secHeader" && ci !== null && si !== null) {
+            pf.chapters[ci].sections[si].header = el.innerText.trim();
+            const inp = document.querySelector(`[data-sec-hdr="${ci}-${si}"]`);
+            if (inp) inp.value = pf.chapters[ci].sections[si].header;
+
+          } else if (field === "secBody" && ci !== null && si !== null) {
+            pf.chapters[ci].sections[si].body = el.innerHTML;
+            /* show plain text in the left-panel textarea */
+            const ta = document.querySelector(`[data-sec-body="${ci}-${si}"]`);
+            if (ta) ta.value = el.innerText;
+
+          } else if (field === "secCaption" && ci !== null && si !== null) {
+            pf.chapters[ci].sections[si].imageCaption = el.innerText.trim();
+            const inp = document.querySelector(`[data-sec-cap="${ci}-${si}"]`);
+            if (inp) inp.value = pf.chapters[ci].sections[si].imageCaption;
+          }
+
+          save();
+        });
       }
 
       function heroImg(styles) {
@@ -4796,9 +4904,9 @@
         return `<div class="pf-page">
           ${imgHtml}
           <div style="padding:6% 8%;">
-            <div style="font-size:2.4em;font-weight:700;line-height:1.18;color:#111;margin-bottom:0.45em;">${esc(pf.title) || "文件標題"}</div>
-            <div style="font-size:1em;font-weight:500;color:${c};margin-bottom:2px;">${esc(pf.studentName) || "姓名"}</div>
-            <div style="font-size:0.85em;color:#666;">${esc(pf.school) || "學校班級"}</div>
+            <div style="font-size:2.4em;font-weight:700;line-height:1.18;color:#111;margin-bottom:0.45em;" contenteditable="true" data-pf-field="title" spellcheck="false">${esc(pf.title) || "文件標題"}</div>
+            <div style="font-size:1em;font-weight:500;color:${c};margin-bottom:2px;" contenteditable="true" data-pf-field="studentName" spellcheck="false">${esc(pf.studentName) || "姓名"}</div>
+            <div style="font-size:0.85em;color:#666;" contenteditable="true" data-pf-field="school" spellcheck="false">${esc(pf.school) || "學校班級"}</div>
           </div>
         </div>`;
       }
@@ -4825,23 +4933,24 @@
       }
 
       function buildContentPage(ch, pageNum, c) {
-        const secs = ch.sections.map(sec => `
-          ${sec.header ? `<div style="font-size:0.83em;font-weight:700;margin:0.75em 0 0.25em;">${esc(sec.header)}</div>` : ""}
-          <div style="font-size:0.76em;line-height:1.72;color:#2e2e2e;">${esc(sec.body).replace(/\n/g, "<br>")}</div>
+        const ci = pageNum - 1;
+        const secs = ch.sections.map((sec, si) => `
+          <div style="font-size:0.83em;font-weight:700;margin:0.75em 0 0.25em;" contenteditable="true" data-pf-ch="${ci}" data-pf-sec="${si}" data-pf-field="secHeader" spellcheck="false">${esc(sec.header)}</div>
+          <div style="font-size:0.76em;line-height:1.72;color:#2e2e2e;" contenteditable="true" data-pf-ch="${ci}" data-pf-sec="${si}" data-pf-field="secBody" spellcheck="false">${pfBodyToHtml(sec.body)}</div>
           ${sec.imageUrl
             ? `<img style="width:54%;max-height:96px;object-fit:cover;border-radius:3px;display:block;margin:0.45em auto;" src="${esc(sec.imageUrl)}" alt="" />
-               <div style="text-align:center;font-size:0.68em;color:#777;margin-top:2px;">${esc(sec.imageCaption)}</div>`
+               <div style="text-align:center;font-size:0.68em;color:#777;margin-top:2px;" contenteditable="true" data-pf-ch="${ci}" data-pf-sec="${si}" data-pf-field="secCaption" spellcheck="false">${esc(sec.imageCaption)}</div>`
             : ""}
         `).join("");
         return `<div class="pf-page">
           <div style="display:grid;grid-template-columns:13px 1fr;height:100%;position:relative;">
             <div style="background:${c};"></div>
             <div style="padding:5% 5% 9%;overflow:hidden;">
-              <div style="position:absolute;top:2.5%;right:3%;font-size:0.62em;color:#aaa;">${esc(pf.title)}</div>
-              <div style="font-size:1.42em;font-weight:700;line-height:1.22;margin-bottom:0.7em;color:#111;">${esc(ch.title) || "章節 " + pageNum}</div>
+              <div style="position:absolute;top:2.5%;right:3%;font-size:0.62em;color:#aaa;" contenteditable="true" data-pf-field="title" spellcheck="false">${esc(pf.title)}</div>
+              <div style="font-size:1.42em;font-weight:700;line-height:1.22;margin-bottom:0.7em;color:#111;" contenteditable="true" data-pf-ch="${ci}" data-pf-field="chTitle" spellcheck="false">${esc(ch.title) || "章節 " + pageNum}</div>
               ${secs}
               <div style="position:absolute;bottom:2%;left:19px;right:3%;display:flex;justify-content:space-between;font-size:0.62em;color:#aaa;">
-                <span>${esc(pf.studentName)}</span><span>${pageNum}</span>
+                <span contenteditable="true" data-pf-field="studentName" spellcheck="false">${esc(pf.studentName)}</span><span>${pageNum}</span>
               </div>
             </div>
           </div>
@@ -4924,7 +5033,7 @@
       function buildPrintContent(ch, pageNum, c) {
         const secs = ch.sections.map(sec => `
           ${sec.header ? `<div style="font-size:11pt;font-weight:700;margin:5mm 0 2mm;">${esc(sec.header)}</div>` : ""}
-          <div style="font-size:10pt;line-height:1.8;color:#2a2a2a;">${esc(sec.body).replace(/\n/g, "<br>")}</div>
+          <div style="font-size:10pt;line-height:1.8;color:#2a2a2a;">${pfBodyToHtml(sec.body)}</div>
           ${sec.imageUrl
             ? `<img style="width:54%;max-height:75mm;object-fit:cover;border-radius:2mm;display:block;margin:4mm auto;" src="${esc(sec.imageUrl)}" alt="" />
                <div style="text-align:center;font-size:8pt;color:#777;margin-top:2mm;">${esc(sec.imageCaption)}</div>`
