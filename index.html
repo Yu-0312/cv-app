@@ -3976,14 +3976,21 @@
           setMessage("Google 登入不能直接在 file:// 本機檔案模式下使用，請改用 localhost 或正式網站網址開啟。", "error");
           return;
         }
-        makeClient();
-        const authorizeUrl = getGoogleAuthorizeUrl();
-        if (!authorizeUrl) {
-          setMessage("無法建立 Google 登入網址，請檢查 Supabase URL 設定。", "error");
+        if (!makeClient()) {
+          setMessage("無法建立 Supabase 連線，請檢查設定。", "error");
           return;
         }
         setMessage("正在前往 Google 登入，登入完成後會自動回到這個頁面。");
-        window.location.assign(authorizeUrl);
+        const { error } = await state.client.auth.signInWithOAuth({
+          provider: "google",
+          options: {
+            redirectTo: getRedirectUrl(),
+            queryParams: { prompt: "select_account" }
+          }
+        });
+        if (error) {
+          setMessage(`登入失敗：${error.message}`, "error");
+        }
       }
 
       async function signOut() {
