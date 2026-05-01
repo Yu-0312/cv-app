@@ -128,6 +128,23 @@ Google 官方已公告舊版 Google Sign-In for Web 程式庫已淘汰，且 Fed
 前端協作 | 自由接案 | 2023 - 2024 | 製作品牌官網與活動頁。
 ```
 
+## 專案結構
+
+```
+CV-App/
+├── .claude/               # Claude Code 開發工具設定（IDE 整合與工作區設定）
+├── .github/               # GitHub 相關設定
+│   └── workflows/         # GitHub Actions 自動部署流程（push 到 main 後自動部署到 GitHub Pages）
+├── index.html             # 主頁面，包含所有 UI 與應用程式邏輯
+├── sw.js                  # Service Worker，實現 PWA 離線快取功能
+├── manifest.json          # PWA 設定，定義 APP 名稱、圖示與安裝行為
+├── icon.svg               # APP 圖示
+├── supabase-schema.sql    # Supabase 資料庫結構定義，包含資料表與 RLS 規則
+├── config.js              # 本機使用的 Supabase 設定（已加入 .gitignore，不會上傳）
+├── config.example.js      # 設定檔範本（供參考，實際使用請複製為 config.js）
+└── package.json           # npm 設定，包含 build 腳本（將檔案複製到 dist/）
+```
+
 ## 你接下來可以做的事
 
 - 依照你的品牌或求職情境再延伸更多模板色系
