@@ -1,0 +1,8 @@
+{
+  "name": "cv-studio",
+  "private": true,
+  "scripts": {
+    "build": "mkdir -p dist && cp index.html manifest.json sw.js icon.svg config.js dist/ && cp index.html dist/404.html && touch dist/.nojekyll",
+    "deploy:prepare": "npm run build"
+  }
+}

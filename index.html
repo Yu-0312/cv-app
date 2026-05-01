@@ -1,0 +1,5013 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0f172a" />
+  <title>CV Studio</title>
+  <link rel="manifest" href="manifest.json" />
+  <script>
+    function injectScriptOnce(src) {
+      if (!src || document.querySelector(`script[src="${src}"]`)) return;
+      const script = document.createElement("script");
+      script.src = src;
+      document.head.appendChild(script);
+    }
+
+    window.__loadSupabaseFallback = function __loadSupabaseFallback() {
+      injectScriptOnce("https://unpkg.com/@supabase/supabase-js@2");
+    };
+
+    window.__loadHtml2pdfFallback = function __loadHtml2pdfFallback() {
+      injectScriptOnce("https://unpkg.com/html2pdf.js@0.10.1/dist/html2pdf.bundle.min.js");
+    };
+  </script>
+  <script src="config.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" onerror="window.__loadSupabaseFallback()"></script>
+  <script src="https://cdn.jsdelivr.net/npm/html2pdf.js@0.10.1/dist/html2pdf.bundle.min.js" onerror="window.__loadHtml2pdfFallback()"></script>
+  <style>
+    :root {
+      --bg: #f3efe6;
+      --bg-strong: #e7dece;
+      --surface: rgba(255, 250, 244, 0.92);
+      --surface-strong: #fffaf4;
+      --ink: #1f2430;
+      --muted: #5f6675;
+      --line: rgba(49, 40, 27, 0.12);
+      --accent: #ad3f2f;
+      --accent-2: #214e74;
+      --accent-3: #d89f3d;
+      --success: #157347;
+      --danger: #a73b33;
+      --shadow: 0 24px 80px rgba(50, 38, 18, 0.12);
+      --radius: 26px;
+      --paper: #fffefb;
+      --paper-line: #ddd2c1;
+      --template-accent: #ad3f2f;
+      --template-accent-soft: #f6dfd8;
+      --template-heading: #162033;
+      --template-sidebar: #f5ece1;
+      --template-paper: #fffefb;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: "Iowan Old Style", "Palatino Linotype", "Noto Serif TC", serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at top left, rgba(216, 159, 61, 0.18), transparent 26%),
+        radial-gradient(circle at 85% 10%, rgba(33, 78, 116, 0.16), transparent 22%),
+        linear-gradient(180deg, #f8f5ee 0%, var(--bg) 45%, #efe8da 100%);
+      min-height: 100vh;
+    }
+
+    button, input, textarea, select {
+      font: inherit;
+    }
+
+    button {
+      border: 1px solid transparent;
+      border-radius: 999px;
+      cursor: pointer;
+      padding: 11px 16px;
+      transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
+    }
+
+    button:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 10px 24px rgba(26, 25, 23, 0.08);
+    }
+
+    button.primary {
+      background: linear-gradient(135deg, var(--accent), #c26941);
+      color: #fff;
+    }
+
+    button.secondary {
+      background: linear-gradient(135deg, var(--accent-2), #3f7696);
+      color: #fff;
+    }
+
+    button.soft {
+      background: rgba(255, 255, 255, 0.8);
+      border-color: rgba(33, 78, 116, 0.12);
+      color: var(--ink);
+    }
+
+    button.ghost {
+      background: transparent;
+      border-color: rgba(49, 40, 27, 0.14);
+      color: var(--ink);
+    }
+
+    a.button-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      border: 1px solid transparent;
+      border-radius: 999px;
+      cursor: pointer;
+      padding: 11px 16px;
+      transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
+    }
+
+    a.button-link:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 10px 24px rgba(26, 25, 23, 0.08);
+    }
+
+    a.button-link.primary {
+      background: linear-gradient(135deg, var(--accent), #c26941);
+      color: #fff;
+    }
+
+    a.button-link.soft {
+      background: rgba(255, 255, 255, 0.8);
+      border-color: rgba(33, 78, 116, 0.12);
+      color: var(--ink);
+    }
+
+    a.button-link[aria-disabled="true"] {
+      opacity: 0.55;
+      cursor: not-allowed;
+      pointer-events: none;
+      transform: none;
+      box-shadow: none;
+    }
+
+    button:disabled {
+      opacity: 0.55;
+      cursor: not-allowed;
+      transform: none;
+      box-shadow: none;
+    }
+
+    .shell {
+      width: min(1400px, calc(100% - 24px));
+      margin: 0 auto;
+      padding: 28px 0 48px;
+    }
+
+    .page-header {
+      position: sticky;
+      top: 14px;
+      z-index: 20;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      padding: 16px 18px;
+      margin-bottom: 18px;
+      background: rgba(255, 250, 244, 0.78);
+      backdrop-filter: blur(18px);
+      border: 1px solid rgba(49, 40, 27, 0.08);
+      border-radius: 26px;
+      box-shadow: 0 18px 42px rgba(50, 38, 18, 0.1);
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      min-width: 0;
+    }
+
+    .brand-mark {
+      width: 46px;
+      height: 46px;
+      border-radius: 16px;
+      display: grid;
+      place-items: center;
+      color: #fff;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      background: linear-gradient(135deg, var(--accent), var(--accent-2));
+      box-shadow: 0 12px 26px rgba(33, 78, 116, 0.2);
+    }
+
+    .brand-copy {
+      min-width: 0;
+    }
+
+    .brand-copy strong {
+      display: block;
+      font-size: 1rem;
+      color: var(--template-heading);
+    }
+
+    .brand-copy span {
+      display: block;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    .header-actions {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .google-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: #fff;
+      color: #202124;
+      border-color: rgba(49, 40, 27, 0.12);
+      box-shadow: 0 10px 24px rgba(31, 36, 48, 0.08);
+    }
+
+    .google-btn svg {
+      flex: 0 0 auto;
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      background: linear-gradient(135deg, rgba(255, 250, 244, 0.9), rgba(246, 239, 225, 0.86));
+      border: 1px solid rgba(49, 40, 27, 0.08);
+      border-radius: 34px;
+      box-shadow: var(--shadow);
+      padding: 28px;
+      margin-bottom: 18px;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      right: -40px;
+      top: -50px;
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(216, 159, 61, 0.22), transparent 68%);
+      pointer-events: none;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      border-radius: 999px;
+      padding: 8px 14px;
+      background: rgba(255, 255, 255, 0.8);
+      color: var(--accent);
+      font-size: 13px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: 24px;
+      align-items: stretch;
+      margin-top: 16px;
+    }
+
+    h1, h2, h3, p {
+      margin: 0;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.5rem, 6vw, 4.9rem);
+      line-height: 0.94;
+      letter-spacing: -0.04em;
+      margin-top: 16px;
+      max-width: 11ch;
+    }
+
+    .hero p {
+      color: var(--muted);
+      margin-top: 16px;
+      font-size: 1.03rem;
+      max-width: 64ch;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 24px;
+    }
+
+    .hero-stats {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 26px;
+    }
+
+    .hero-stat {
+      padding: 16px;
+      border-radius: 20px;
+      background: rgba(255, 255, 255, 0.72);
+      border: 1px solid rgba(49, 40, 27, 0.08);
+    }
+
+    .hero-stat strong {
+      display: block;
+      font-size: 1.4rem;
+      color: var(--template-heading);
+    }
+
+    .hero-stat span {
+      display: block;
+      margin-top: 6px;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    .hero-notes {
+      display: grid;
+      gap: 12px;
+    }
+
+    .hero-note {
+      background: rgba(255, 255, 255, 0.76);
+      border: 1px solid rgba(49, 40, 27, 0.08);
+      border-radius: 22px;
+      padding: 18px;
+    }
+
+    .hero-note strong {
+      display: block;
+      margin-bottom: 8px;
+      color: var(--template-heading);
+      font-size: 1rem;
+    }
+
+    .hero-preview {
+      display: grid;
+      gap: 14px;
+      align-content: space-between;
+      min-height: 100%;
+    }
+
+    .preview-card {
+      position: relative;
+      overflow: hidden;
+      padding: 22px;
+      border-radius: 28px;
+      background: linear-gradient(160deg, #1c3147 0%, #2e5979 56%, #d89f3d 160%);
+      color: #f7f4ee;
+      min-height: 310px;
+      box-shadow: 0 24px 54px rgba(33, 78, 116, 0.22);
+    }
+
+    .preview-card::after {
+      content: "";
+      position: absolute;
+      inset: auto -32px -54px auto;
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(255, 255, 255, 0.28), transparent 70%);
+    }
+
+    .preview-card-label {
+      display: inline-flex;
+      padding: 7px 11px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.14);
+      font-size: 12px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .preview-card h3 {
+      font-size: 2rem;
+      line-height: 1;
+      letter-spacing: -0.04em;
+      margin-top: 18px;
+      max-width: 8ch;
+    }
+
+    .preview-card p {
+      color: rgba(247, 244, 238, 0.82);
+      max-width: 30ch;
+    }
+
+    .mini-cv {
+      margin-top: 20px;
+      padding: 16px;
+      border-radius: 22px;
+      background: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+    }
+
+    .mini-cv-head {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      align-items: center;
+      margin-bottom: 12px;
+    }
+
+    .mini-avatar {
+      width: 44px;
+      height: 44px;
+      border-radius: 14px;
+      display: grid;
+      place-items: center;
+      font-weight: 700;
+      background: rgba(255, 255, 255, 0.24);
+    }
+
+    .mini-lines {
+      display: grid;
+      gap: 8px;
+    }
+
+    .mini-line {
+      height: 10px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.22);
+    }
+
+    .mini-line.short { width: 38%; }
+    .mini-line.mid { width: 62%; }
+    .mini-line.long { width: 100%; }
+
+    .feature-strip {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+      margin-bottom: 18px;
+    }
+
+    .feature-card {
+      padding: 18px;
+      border-radius: 24px;
+      background: rgba(255, 250, 244, 0.84);
+      border: 1px solid rgba(49, 40, 27, 0.08);
+      box-shadow: 0 16px 38px rgba(50, 38, 18, 0.08);
+    }
+
+    .feature-card strong {
+      display: block;
+      margin-bottom: 8px;
+      color: var(--template-heading);
+    }
+
+    .feature-card p {
+      color: var(--muted);
+      font-size: 0.94rem;
+    }
+
+    .topbar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 18px;
+    }
+
+    .topbar-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .status-pill {
+      padding: 9px 14px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.84);
+      border: 1px solid rgba(49, 40, 27, 0.08);
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .status-pill strong {
+      color: var(--ink);
+    }
+
+    .workspace {
+      display: grid;
+      grid-template-columns: minmax(360px, 460px) minmax(0, 1fr);
+      gap: 18px;
+      align-items: start;
+    }
+
+    .panel {
+      background: var(--surface);
+      backdrop-filter: blur(18px);
+      border: 1px solid rgba(49, 40, 27, 0.08);
+      border-radius: 28px;
+      box-shadow: var(--shadow);
+    }
+
+    .editor-panel {
+      position: sticky;
+      top: 14px;
+      overflow: hidden;
+    }
+
+    .editor-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      padding: 20px 22px 14px;
+      border-bottom: 1px solid rgba(49, 40, 27, 0.08);
+    }
+
+    .editor-scroll {
+      max-height: calc(100vh - 120px);
+      overflow: auto;
+      padding: 18px 18px 22px;
+    }
+
+    .section-card {
+      background: rgba(255, 255, 255, 0.78);
+      border: 1px solid rgba(49, 40, 27, 0.08);
+      border-radius: 22px;
+      padding: 16px;
+      margin-bottom: 14px;
+    }
+
+    .section-card h3 {
+      font-size: 1.02rem;
+      margin-bottom: 12px;
+    }
+
+    .section-card p {
+      color: var(--muted);
+      font-size: 0.92rem;
+      margin-bottom: 12px;
+    }
+
+    .field-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    .field-grid.single {
+      grid-template-columns: 1fr;
+    }
+
+    .field {
+      display: grid;
+      gap: 6px;
+    }
+
+    .field.full {
+      grid-column: 1 / -1;
+    }
+
+    .field label {
+      font-size: 12px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    .field input,
+    .field textarea,
+    .field select {
+      width: 100%;
+      border-radius: 16px;
+      border: 1px solid rgba(49, 40, 27, 0.12);
+      background: #fffdfa;
+      padding: 12px 14px;
+      color: var(--ink);
+    }
+
+    .field textarea {
+      min-height: 108px;
+      resize: vertical;
+      line-height: 1.6;
+    }
+
+    .helper {
+      color: var(--muted);
+      font-size: 13px;
+      margin-top: 8px;
+    }
+
+    .helper.success {
+      color: var(--success);
+    }
+
+    .checklist {
+      display: grid;
+      gap: 10px;
+      margin-top: 12px;
+    }
+
+    .checklist-item {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+      padding: 12px 14px;
+      border-radius: 16px;
+      background: rgba(255, 255, 255, 0.82);
+      border: 1px solid rgba(49, 40, 27, 0.08);
+      color: var(--ink);
+      line-height: 1.5;
+    }
+
+    .checklist-item strong {
+      color: var(--template-heading);
+    }
+
+    .checklist-mark {
+      width: 22px;
+      height: 22px;
+      border-radius: 999px;
+      display: inline-grid;
+      place-items: center;
+      flex: 0 0 auto;
+      font-size: 12px;
+      font-weight: 700;
+      background: rgba(33, 78, 116, 0.1);
+      color: var(--accent-2);
+    }
+
+    .checklist-item.ok .checklist-mark {
+      background: rgba(21, 115, 71, 0.12);
+      color: var(--success);
+    }
+
+    .checklist-item.warn .checklist-mark {
+      background: rgba(216, 159, 61, 0.18);
+      color: #8b5b11;
+    }
+
+    .checklist-item.error .checklist-mark {
+      background: rgba(167, 59, 51, 0.12);
+      color: var(--danger);
+    }
+
+    .template-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 10px;
+    }
+
+    .template-option {
+      border-radius: 22px;
+      border: 1px solid rgba(49, 40, 27, 0.08);
+      padding: 14px;
+      background: #fffdf9;
+      cursor: pointer;
+      transition: transform 0.18s ease, border-color 0.18s ease, box-shadow 0.18s ease;
+    }
+
+    .template-option:hover,
+    .template-option.active {
+      transform: translateY(-2px);
+      border-color: rgba(33, 78, 116, 0.28);
+      box-shadow: 0 14px 32px rgba(33, 78, 116, 0.12);
+    }
+
+    .template-swatch {
+      display: grid;
+      grid-template-columns: 28% 1fr;
+      gap: 6px;
+      height: 88px;
+      border-radius: 14px;
+      overflow: hidden;
+      margin-bottom: 12px;
+      border: 1px solid rgba(49, 40, 27, 0.08);
+    }
+
+    .template-swatch div:first-child {
+      background: var(--swatch-sidebar, #f1e8da);
+    }
+
+    .template-swatch div:last-child {
+      background:
+        linear-gradient(180deg, var(--swatch-paper, #fffefb) 0%, var(--swatch-paper, #fffefb) 22%, var(--swatch-accent-soft, #f6dfd8) 22%, var(--swatch-accent-soft, #f6dfd8) 34%, var(--swatch-paper, #fffefb) 34%);
+    }
+
+    .template-option strong {
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    .template-option span {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .mode-grid,
+    .editor-tools,
+    .layout-actions {
+      display: grid;
+      gap: 10px;
+    }
+
+    .mode-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .mode-button {
+      text-align: left;
+      border-radius: 20px;
+      border: 1px solid rgba(49, 40, 27, 0.08);
+      background: #fffdf9;
+      padding: 14px;
+    }
+
+    .mode-button strong,
+    .editor-tool strong {
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    .mode-button span,
+    .editor-tool span {
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.5;
+    }
+
+    .mode-button.active {
+      border-color: rgba(33, 78, 116, 0.28);
+      box-shadow: 0 14px 32px rgba(33, 78, 116, 0.12);
+      background: #fff;
+    }
+
+    .editor-tool {
+      border-radius: 18px;
+      background: rgba(255, 255, 255, 0.72);
+      border: 1px solid rgba(49, 40, 27, 0.08);
+      padding: 14px;
+    }
+
+    .field-inline {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 10px;
+      align-items: center;
+      margin-top: 10px;
+    }
+
+    .field-inline input,
+    .field-inline select {
+      width: 100%;
+    }
+
+    .mini-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 10px;
+    }
+
+    .mini-actions button {
+      padding: 8px 12px;
+    }
+
+    .preview-shell {
+      padding: 20px;
+    }
+
+    .preview-frame {
+      background: rgba(255, 255, 255, 0.58);
+      border-radius: 24px;
+      border: 1px solid rgba(49, 40, 27, 0.08);
+      padding: 18px;
+    }
+
+    .preview-toolbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 14px;
+    }
+
+    .preview-toolbar p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .cv-paper {
+      width: min(100%, 860px);
+      margin: 0 auto;
+      background: var(--template-paper);
+      color: var(--ink);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 24px 48px rgba(36, 26, 12, 0.14);
+      border: 1px solid var(--paper-line);
+      --base-font-size: 16px;
+      --sidebar-width: 280px;
+      --section-gap: 24px;
+    }
+
+    .cv-grid {
+      display: grid;
+      grid-template-columns: var(--sidebar-width) 1fr;
+      min-height: 1120px;
+    }
+
+    .cv-sidebar {
+      background: var(--template-sidebar);
+      padding: 34px 24px;
+    }
+
+    .cv-main {
+      padding: 34px 34px 40px;
+      background: var(--template-paper);
+      font-size: var(--base-font-size);
+    }
+
+    .cv-region {
+      display: grid;
+      gap: var(--section-gap);
+      align-content: start;
+      min-height: 100%;
+    }
+
+    .avatar {
+      width: 104px;
+      height: 104px;
+      border-radius: 28px;
+      overflow: hidden;
+      background: linear-gradient(135deg, var(--template-accent), var(--accent-3));
+      color: #fff;
+      display: grid;
+      place-items: center;
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 18px;
+    }
+
+    .avatar.rounded {
+      border-radius: 28px;
+    }
+
+    .avatar.circle {
+      border-radius: 999px;
+    }
+
+    .avatar img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .cv-name {
+      font-size: 2.6rem;
+      line-height: 0.95;
+      letter-spacing: -0.05em;
+      color: var(--template-heading);
+    }
+
+    .cv-role {
+      margin-top: 10px;
+      display: inline-block;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: var(--template-accent-soft);
+      color: var(--template-accent);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .cv-summary {
+      margin-top: 18px;
+      color: var(--muted);
+      line-height: 1.8;
+      font-size: 1rem;
+      white-space: pre-wrap;
+    }
+
+    .aside-block,
+    .main-block {
+      margin-top: 0;
+    }
+
+    .aside-block h3,
+    .main-block h3 {
+      margin-bottom: 12px;
+      font-size: 0.92rem;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      color: var(--template-accent);
+    }
+
+    .contact-list,
+    .simple-list {
+      display: grid;
+      gap: 10px;
+    }
+
+    .contact-item {
+      font-size: 0.95rem;
+      color: var(--ink);
+      word-break: break-word;
+    }
+
+    .simple-pill {
+      display: inline-flex;
+      align-items: center;
+      margin: 0 8px 8px 0;
+      padding: 7px 12px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.75);
+      border: 1px solid rgba(49, 40, 27, 0.08);
+      font-size: 0.88rem;
+    }
+
+    .timeline-item {
+      display: grid;
+      grid-template-columns: 126px 1fr;
+      gap: 14px;
+      padding: 16px 0;
+      border-top: 1px solid rgba(49, 40, 27, 0.08);
+    }
+
+    .timeline-item:first-child {
+      border-top: 0;
+      padding-top: 0;
+    }
+
+    .timeline-date {
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .timeline-item h4 {
+      margin: 0;
+      font-size: 1.08rem;
+      color: var(--template-heading);
+    }
+
+    .timeline-meta {
+      display: block;
+      color: var(--template-accent);
+      font-size: 0.92rem;
+      margin: 6px 0 8px;
+    }
+
+    .timeline-body {
+      color: var(--muted);
+      white-space: pre-wrap;
+    }
+
+    .empty-block {
+      color: rgba(95, 102, 117, 0.8);
+      border: 1px dashed rgba(49, 40, 27, 0.12);
+      border-radius: 18px;
+      padding: 16px;
+      background: rgba(255, 255, 255, 0.5);
+      font-size: 0.94rem;
+    }
+
+    .profile-block.centered,
+    .profile-block.centered .cv-name,
+    .profile-block.centered .cv-summary {
+      text-align: center;
+    }
+
+    .profile-block.centered .cv-role {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .profile-block.sidebar-profile .avatar {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .editable-block {
+      position: relative;
+      border-radius: 20px;
+      transition: box-shadow 0.18s ease, outline-color 0.18s ease, transform 0.18s ease;
+      outline: 2px solid transparent;
+      cursor: grab;
+    }
+
+    .editable-block:hover {
+      outline-color: rgba(33, 78, 116, 0.18);
+    }
+
+    .editable-block.active {
+      outline-color: rgba(33, 78, 116, 0.45);
+      box-shadow: 0 16px 36px rgba(33, 78, 116, 0.14);
+    }
+
+    .editable-block.dragging {
+      opacity: 0.45;
+      cursor: grabbing;
+    }
+
+    .cv-region.drop-target {
+      outline: 2px dashed rgba(33, 78, 116, 0.36);
+      outline-offset: 8px;
+      border-radius: 16px;
+    }
+
+    .block-hint {
+      position: absolute;
+      right: 12px;
+      top: 12px;
+      padding: 4px 8px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.88);
+      border: 1px solid rgba(49, 40, 27, 0.08);
+      color: var(--muted);
+      font-size: 11px;
+      opacity: 0;
+      transition: opacity 0.18s ease;
+      pointer-events: none;
+    }
+
+    .editable-block:hover .block-hint,
+    .editable-block.active .block-hint {
+      opacity: 1;
+    }
+
+    .preview-toolbar-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+    }
+
+    .layout-badge {
+      padding: 8px 12px;
+      border-radius: 999px;
+      border: 1px solid rgba(49, 40, 27, 0.08);
+      background: rgba(255, 255, 255, 0.82);
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .cv-paper[data-layout="split-right"] .cv-grid {
+      grid-template-columns: 1fr var(--sidebar-width);
+    }
+
+    .cv-paper[data-layout="split-right"] .cv-sidebar {
+      order: 2;
+    }
+
+    .cv-paper[data-layout="split-right"] .cv-main {
+      order: 1;
+    }
+
+    .cv-paper[data-layout="balanced"] .cv-grid {
+      grid-template-columns: minmax(320px, 1fr) minmax(360px, 1.08fr);
+    }
+
+    .cv-paper[data-layout="stacked"] .cv-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .cv-paper[data-layout="stacked"] .cv-sidebar {
+      border-bottom: 1px solid var(--paper-line);
+    }
+
+    .cv-paper[data-layout="stacked"] .cv-main {
+      border-top: 0;
+    }
+
+    .auth-card {
+      margin-top: 14px;
+      display: grid;
+      gap: 12px;
+    }
+
+    .debug-card {
+      border-radius: 22px;
+      background: rgba(28, 49, 71, 0.06);
+      border: 1px dashed rgba(33, 78, 116, 0.24);
+      padding: 14px 16px;
+    }
+
+    .debug-card strong {
+      display: block;
+      margin-bottom: 8px;
+      color: var(--template-heading);
+    }
+
+    details.setup-card {
+      border-radius: 22px;
+      background: rgba(255, 255, 255, 0.76);
+      border: 1px solid rgba(49, 40, 27, 0.08);
+      padding: 14px 16px;
+    }
+
+    details.setup-card summary {
+      cursor: pointer;
+      font-weight: 700;
+    }
+
+    .setup-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 14px;
+    }
+
+    .message {
+      margin-top: 14px;
+      padding: 14px 16px;
+      border-radius: 18px;
+      background: rgba(255, 255, 255, 0.76);
+      border: 1px solid rgba(49, 40, 27, 0.08);
+      color: var(--muted);
+      font-size: 14px;
+      white-space: pre-wrap;
+    }
+
+    .message.success {
+      border-color: rgba(21, 115, 71, 0.18);
+      color: var(--success);
+    }
+
+    .message.error {
+      border-color: rgba(167, 59, 51, 0.18);
+      color: var(--danger);
+    }
+
+    .install-hint {
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    [data-template="n-tech"] {
+      --template-accent: #ad3f2f;
+      --template-accent-soft: #f7e1da;
+      --template-heading: #1a2230;
+      --template-sidebar: #f6ecdf;
+      --template-paper: #fffefb;
+      --paper-line: #ddd0bf;
+    }
+
+    [data-template="slate"] {
+      --template-accent: #214e74;
+      --template-accent-soft: #ddeaf3;
+      --template-heading: #102131;
+      --template-sidebar: #e8f0f5;
+      --template-paper: #fbfdff;
+      --paper-line: #c8d8e3;
+    }
+
+    [data-template="mono"] {
+      --template-accent: #30383d;
+      --template-accent-soft: #eceff1;
+      --template-heading: #15181b;
+      --template-sidebar: #f1f1ee;
+      --template-paper: #fffefc;
+      --paper-line: #d8d6d1;
+    }
+
+    [data-template="serif-ivory"] {
+      --template-accent: #8f5d2f;
+      --template-accent-soft: #f4e7d8;
+      --template-heading: #2c2119;
+      --template-sidebar: #f8f0e5;
+      --template-paper: #fffdf8;
+      --paper-line: #e2d2be;
+    }
+
+    [data-template="forest"] {
+      --template-accent: #2f6b57;
+      --template-accent-soft: #dceee7;
+      --template-heading: #18372d;
+      --template-sidebar: #e9f4ef;
+      --template-paper: #fbfefc;
+      --paper-line: #c7ddd2;
+    }
+
+    [data-template="rose"] {
+      --template-accent: #b14c68;
+      --template-accent-soft: #f9dfe7;
+      --template-heading: #341d25;
+      --template-sidebar: #fdf0f4;
+      --template-paper: #fffdfd;
+      --paper-line: #e8c8d2;
+    }
+
+    [data-template="midnight"] {
+      --template-accent: #304c89;
+      --template-accent-soft: #dde6fb;
+      --template-heading: #16203a;
+      --template-sidebar: #e8eefb;
+      --template-paper: #fbfcff;
+      --paper-line: #c8d2ea;
+    }
+
+    [data-template="sand"] {
+      --template-accent: #b67b3d;
+      --template-accent-soft: #f6e6d0;
+      --template-heading: #3c2a19;
+      --template-sidebar: #faf1e4;
+      --template-paper: #fffdfa;
+      --paper-line: #e2d0b7;
+    }
+
+    [data-template="plum"] {
+      --template-accent: #6b456f;
+      --template-accent-soft: #eadcf0;
+      --template-heading: #28192b;
+      --template-sidebar: #f4ecf7;
+      --template-paper: #fffdfd;
+      --paper-line: #d9c6de;
+    }
+
+    [data-template="ocean"] {
+      --template-accent: #1a6e7e;
+      --template-accent-soft: #d6eef2;
+      --template-heading: #0d2f36;
+      --template-sidebar: #e0f2f6;
+      --template-paper: #f7fdfe;
+      --paper-line: #b8dce5;
+    }
+
+    [data-template="ember"] {
+      --template-accent: #c05a20;
+      --template-accent-soft: #fde8d8;
+      --template-heading: #2d1a0f;
+      --template-sidebar: #fdecd8;
+      --template-paper: #fffaf5;
+      --paper-line: #e8ceaf;
+    }
+
+    [data-template="noir"] {
+      --template-accent: #2c2c2c;
+      --template-accent-soft: #e8e8e5;
+      --template-heading: #111111;
+      --template-sidebar: #f0f0ed;
+      --template-paper: #fffffe;
+      --paper-line: #d2d2cf;
+    }
+
+    [data-template="sage"] {
+      --template-accent: #4a7c6e;
+      --template-accent-soft: #dceee9;
+      --template-heading: #1c3530;
+      --template-sidebar: #e5f0ec;
+      --template-paper: #fafefb;
+      --paper-line: #c0d8d0;
+    }
+
+    [data-template="coral"] {
+      --template-accent: #c4624a;
+      --template-accent-soft: #fce4dc;
+      --template-heading: #2e1a14;
+      --template-sidebar: #fdeae3;
+      --template-paper: #fffcfb;
+      --paper-line: #e8c8be;
+    }
+
+    [data-template="cobalt"] {
+      --template-accent: #1c3f89;
+      --template-accent-soft: #dce4f8;
+      --template-heading: #0e1f48;
+      --template-sidebar: #e4eaf8;
+      --template-paper: #fbfcff;
+      --paper-line: #c4cee8;
+    }
+
+    [data-template="dusk"] {
+      --template-accent: #7a567a;
+      --template-accent-soft: #f0e4f0;
+      --template-heading: #2a1b2a;
+      --template-sidebar: #f2e8f4;
+      --template-paper: #fefcff;
+      --paper-line: #ddc8de;
+    }
+
+    [data-template="copper"] {
+      --template-accent: #9e6030;
+      --template-accent-soft: #f5e4d0;
+      --template-heading: #2e1f12;
+      --template-sidebar: #f7e8d5;
+      --template-paper: #fffdf8;
+      --paper-line: #dfc8a8;
+    }
+
+    [data-template="linen"] {
+      --template-accent: #5a5a6e;
+      --template-accent-soft: #e8e8f0;
+      --template-heading: #232330;
+      --template-sidebar: #f2f2f6;
+      --template-paper: #fefeff;
+      --paper-line: #d2d2dc;
+    }
+
+    /* === 圖像紋路模板 === */
+
+    [data-template="botanical"] {
+      --template-accent: #3d7a5e;
+      --template-accent-soft: #d8ede5;
+      --template-heading: #1a3328;
+      --template-sidebar: #e4f0ea;
+      --template-paper: #f9fdfa;
+      --paper-line: #b8d8c8;
+    }
+    [data-template="botanical"] .cv-sidebar {
+      background-color: #e4f0ea;
+      background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='90' height='110'><ellipse cx='45' cy='24' rx='14' ry='22' fill='rgba(61,122,94,0.15)' transform='rotate(-25,45,24)'/><line x1='45' y1='46' x2='45' y2='62' stroke='rgba(61,122,94,0.22)' stroke-width='1.2'/><circle cx='45' cy='46' r='2.5' fill='rgba(61,122,94,0.25)'/><ellipse cx='20' cy='68' rx='10' ry='18' fill='rgba(61,122,94,0.11)' transform='rotate(22,20,68)'/><line x1='20' y1='86' x2='20' y2='100' stroke='rgba(61,122,94,0.15)' stroke-width='1'/><circle cx='20' cy='86' r='2' fill='rgba(61,122,94,0.18)'/><ellipse cx='70' cy='74' rx='8' ry='14' fill='rgba(61,122,94,0.13)' transform='rotate(-38,70,74)'/><ellipse cx='28' cy='10' rx='6' ry='11' fill='rgba(61,122,94,0.09)' transform='rotate(42,28,10)'/></svg>");
+      background-size: 90px 110px;
+    }
+
+    [data-template="geometric"] {
+      --template-accent: #7ec8d4;
+      --template-accent-soft: #d8eef2;
+      --template-heading: #0d1e3c;
+      --template-sidebar: #1e3a6e;
+      --template-paper: #fafbff;
+      --paper-line: #c0cce8;
+    }
+    [data-template="geometric"] .cv-sidebar {
+      background-color: #1e3a6e;
+      background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='50' height='50'><polygon points='25,2 48,25 25,48 2,25' fill='none' stroke='rgba(255,255,255,0.10)' stroke-width='0.8'/><polygon points='25,10 40,25 25,40 10,25' fill='rgba(255,255,255,0.04)'/><circle cx='25' cy='2' r='1.5' fill='rgba(255,255,255,0.15)'/><circle cx='48' cy='25' r='1.5' fill='rgba(255,255,255,0.15)'/><circle cx='25' cy='48' r='1.5' fill='rgba(255,255,255,0.15)'/><circle cx='2' cy='25' r='1.5' fill='rgba(255,255,255,0.15)'/></svg>");
+      background-size: 50px 50px;
+    }
+    [data-template="geometric"] .cv-sidebar .cv-name { color: #e8f4ff; }
+    [data-template="geometric"] .cv-sidebar .cv-role { background: rgba(126,200,212,0.22); color: #7ec8d4; }
+    [data-template="geometric"] .cv-sidebar .cv-summary { color: rgba(220,238,255,0.72); }
+    [data-template="geometric"] .cv-sidebar .aside-block h3 { color: #7ec8d4; }
+    [data-template="geometric"] .cv-sidebar .contact-item { color: rgba(220,238,255,0.85); }
+    [data-template="geometric"] .cv-sidebar .simple-pill { background: rgba(255,255,255,0.08); border-color: rgba(255,255,255,0.15); color: rgba(220,238,255,0.85); }
+    [data-template="geometric"] .cv-sidebar .timeline-item { border-top-color: rgba(255,255,255,0.09); }
+    [data-template="geometric"] .cv-sidebar .timeline-item h4 { color: #e8f4ff; }
+    [data-template="geometric"] .cv-sidebar .timeline-meta { color: #7ec8d4; }
+    [data-template="geometric"] .cv-sidebar .timeline-date,
+    [data-template="geometric"] .cv-sidebar .timeline-body { color: rgba(180,210,255,0.65); }
+
+    [data-template="blueprint"] {
+      --template-accent: #2a5fba;
+      --template-accent-soft: #dce8f8;
+      --template-heading: #0d1e3c;
+      --template-sidebar: #162f5e;
+      --template-paper: #f5f8ff;
+      --paper-line: #b0c4e0;
+    }
+    [data-template="blueprint"] .cv-sidebar {
+      background-color: #162f5e;
+      background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='32' height='32'><line x1='0' y1='0' x2='32' y2='32' stroke='rgba(255,255,255,0.05)' stroke-width='0.6'/><line x1='32' y1='0' x2='0' y2='32' stroke='rgba(255,255,255,0.05)' stroke-width='0.6'/><rect x='0' y='0' width='32' height='32' fill='none' stroke='rgba(255,255,255,0.04)' stroke-width='0.4'/></svg>");
+      background-size: 32px 32px;
+    }
+    [data-template="blueprint"] .cv-main {
+      background-image: radial-gradient(circle, rgba(42,95,186,0.18) 1.5px, transparent 1.5px);
+      background-size: 22px 22px;
+    }
+    [data-template="blueprint"] .cv-sidebar .cv-name { color: #e4eeff; }
+    [data-template="blueprint"] .cv-sidebar .cv-role { background: rgba(42,95,186,0.28); color: #90b8f8; }
+    [data-template="blueprint"] .cv-sidebar .cv-summary { color: rgba(200,220,255,0.70); }
+    [data-template="blueprint"] .cv-sidebar .aside-block h3 { color: #90b8f8; }
+    [data-template="blueprint"] .cv-sidebar .contact-item { color: rgba(200,220,255,0.85); }
+    [data-template="blueprint"] .cv-sidebar .simple-pill { background: rgba(255,255,255,0.07); border-color: rgba(255,255,255,0.13); color: rgba(200,220,255,0.82); }
+    [data-template="blueprint"] .cv-sidebar .timeline-item { border-top-color: rgba(255,255,255,0.09); }
+    [data-template="blueprint"] .cv-sidebar .timeline-item h4 { color: #e4eeff; }
+    [data-template="blueprint"] .cv-sidebar .timeline-meta { color: #90b8f8; }
+    [data-template="blueprint"] .cv-sidebar .timeline-date,
+    [data-template="blueprint"] .cv-sidebar .timeline-body { color: rgba(180,210,255,0.62); }
+
+    /* === 花邊裝飾模板 === */
+
+    [data-template="ornate"] {
+      --template-accent: #9c7c2e;
+      --template-accent-soft: #f5ead2;
+      --template-heading: #2a1e0c;
+      --template-sidebar: #faf4e8;
+      --template-paper: #fffdf6;
+      --paper-line: #c8a55a;
+    }
+    [data-template="ornate"] .cv-paper {
+      position: relative;
+      border: 2px solid #c8a55a;
+    }
+    [data-template="ornate"] .cv-paper::before {
+      content: '';
+      position: absolute;
+      inset: 8px;
+      border: 1.5px solid rgba(200,165,90,0.48);
+      pointer-events: none;
+      z-index: 100;
+      border-radius: 5px;
+    }
+    [data-template="ornate"] .cv-sidebar {
+      background-color: #faf4e8;
+      background-image:
+        url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='70' height='70'><path d='M6,54 L6,6 L54,6' fill='none' stroke='%23c8a55a' stroke-width='2'/><path d='M13,47 L13,13 L47,13' fill='none' stroke='%23c8a55a' stroke-width='0.9' opacity='0.38'/><circle cx='6' cy='6' r='3.5' fill='%23c8a55a'/><circle cx='12' cy='12' r='1.8' fill='%23c8a55a' opacity='0.38'/></svg>"),
+        url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='70' height='70'><path d='M6,16 L6,64 L54,64' fill='none' stroke='%23c8a55a' stroke-width='2'/><path d='M13,23 L13,57 L47,57' fill='none' stroke='%23c8a55a' stroke-width='0.9' opacity='0.38'/><circle cx='6' cy='64' r='3.5' fill='%23c8a55a'/><circle cx='12' cy='58' r='1.8' fill='%23c8a55a' opacity='0.38'/></svg>");
+      background-position: top left, bottom left;
+      background-repeat: no-repeat;
+      background-size: 70px 70px;
+    }
+    [data-template="ornate"] .cv-main {
+      background-color: #fffdf6;
+      background-image:
+        url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='70' height='70'><path d='M64,54 L64,6 L16,6' fill='none' stroke='%23c8a55a' stroke-width='2'/><path d='M57,47 L57,13 L23,13' fill='none' stroke='%23c8a55a' stroke-width='0.9' opacity='0.38'/><circle cx='64' cy='6' r='3.5' fill='%23c8a55a'/><circle cx='58' cy='12' r='1.8' fill='%23c8a55a' opacity='0.38'/></svg>"),
+        url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='70' height='70'><path d='M64,16 L64,64 L16,64' fill='none' stroke='%23c8a55a' stroke-width='2'/><path d='M57,23 L57,57 L23,57' fill='none' stroke='%23c8a55a' stroke-width='0.9' opacity='0.38'/><circle cx='64' cy='64' r='3.5' fill='%23c8a55a'/><circle cx='58' cy='58' r='1.8' fill='%23c8a55a' opacity='0.38'/></svg>");
+      background-position: top right, bottom right;
+      background-repeat: no-repeat;
+      background-size: 70px 70px;
+    }
+
+    [data-template="watercolor"] {
+      --template-accent: #5568b8;
+      --template-accent-soft: #e4e8f8;
+      --template-heading: #1c2248;
+      --template-sidebar: #eceef8;
+      --template-paper: #fdfeff;
+      --paper-line: #c4c8e8;
+    }
+    [data-template="watercolor"] .cv-sidebar {
+      background:
+        radial-gradient(ellipse at 28% 16%, rgba(85,104,184,0.32) 0%, transparent 55%),
+        radial-gradient(ellipse at 78% 84%, rgba(160,90,200,0.24) 0%, transparent 50%),
+        radial-gradient(ellipse at 55% 48%, rgba(70,160,210,0.18) 0%, transparent 48%),
+        #eceef8;
+    }
+    [data-template="watercolor"] .cv-main {
+      background:
+        radial-gradient(ellipse at 88% 8%, rgba(85,104,184,0.07) 0%, transparent 38%),
+        radial-gradient(ellipse at 12% 92%, rgba(160,90,200,0.05) 0%, transparent 38%),
+        #fdfeff;
+    }
+
+    [data-template="flourish"] {
+      --template-accent: #7a4070;
+      --template-accent-soft: #f0e2ee;
+      --template-heading: #2a1228;
+      --template-sidebar: #f7eef6;
+      --template-paper: #fefcff;
+      --paper-line: #c8a0c0;
+    }
+    [data-template="flourish"] .cv-paper {
+      position: relative;
+      border: 3px solid rgba(122,64,112,0.32);
+    }
+    [data-template="flourish"] .cv-paper::before {
+      content: '';
+      position: absolute;
+      inset: 6px;
+      border: 1px solid rgba(122,64,112,0.20);
+      pointer-events: none;
+      z-index: 100;
+      border-radius: 7px;
+    }
+    [data-template="flourish"] .cv-sidebar {
+      background-color: #f7eef6;
+      background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='20' height='60'><path d='M10,0 C15,8 5,17 10,25 C15,33 5,42 10,50 C15,58 5,60 10,60' fill='none' stroke='rgba(122,64,112,0.28)' stroke-width='1.5'/><circle cx='10' cy='12' r='3.5' fill='rgba(122,64,112,0.14)'/><circle cx='10' cy='38' r='3' fill='rgba(122,64,112,0.11)'/><circle cx='15' cy='5' r='2' fill='rgba(122,64,112,0.09)'/><circle cx='5' cy='19' r='2' fill='rgba(122,64,112,0.08)'/><circle cx='15' cy='31' r='2' fill='rgba(122,64,112,0.08)'/><circle cx='5' cy='45' r='1.5' fill='rgba(122,64,112,0.07)'/></svg>");
+      background-size: 20px 60px;
+      background-position: right top;
+      background-repeat: repeat-y;
+    }
+
+    @media (max-width: 1100px) {
+      .workspace,
+      .hero-grid,
+      .feature-strip,
+      .hero-stats {
+        grid-template-columns: 1fr;
+      }
+
+      .editor-panel {
+        position: static;
+      }
+
+      .editor-scroll {
+        max-height: none;
+      }
+    }
+
+    @media (max-width: 860px) {
+      .field-grid,
+      .template-grid,
+      .cv-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .page-header {
+        position: static;
+        padding: 14px;
+      }
+
+      .header-actions,
+      .brand,
+      .hero-actions {
+        width: 100%;
+      }
+
+      .header-actions {
+        justify-content: stretch;
+      }
+
+      .header-actions button,
+      .hero-actions button {
+        flex: 1 1 220px;
+      }
+
+      .preview-shell {
+        padding: 14px;
+      }
+
+      .cv-main,
+      .cv-sidebar {
+        padding: 24px 20px;
+      }
+
+      .timeline-item {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media print {
+      body {
+        background: #fff;
+      }
+
+      .hero,
+      .topbar,
+      .editor-panel,
+      .preview-toolbar {
+        display: none !important;
+      }
+
+      .shell,
+      .preview-shell,
+      .preview-frame {
+        width: auto;
+        margin: 0;
+        padding: 0;
+        box-shadow: none;
+        background: #fff;
+      }
+
+      .cv-paper {
+        width: 100%;
+        box-shadow: none;
+        border: 0;
+        border-radius: 0;
+      }
+    }
+  </style>
+
+  <style id="tabs-portfolio-styles">
+    /* ===== APP TABS ===== */
+    .app-tabs {
+      display: flex;
+      gap: 4px;
+      padding: 5px;
+      background: rgba(255,250,244,0.82);
+      backdrop-filter: blur(18px);
+      border: 1px solid rgba(49,40,27,0.08);
+      border-radius: 18px;
+      margin-bottom: 20px;
+      width: fit-content;
+    }
+
+    .app-tab {
+      padding: 9px 22px;
+      border-radius: 13px;
+      border: 1px solid transparent;
+      background: transparent;
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+
+    .app-tab:hover {
+      background: rgba(255,255,255,0.55);
+      color: var(--ink);
+      transform: none;
+      box-shadow: none;
+    }
+
+    .app-tab.active {
+      background: #fff;
+      color: var(--ink);
+      border-color: rgba(49,40,27,0.09);
+      box-shadow: 0 2px 8px rgba(50,38,18,0.08);
+    }
+
+    .app-page { display: none; }
+    .app-page.active { display: block; }
+
+    /* ===== PORTFOLIO WORKSPACE ===== */
+    .portfolio-workspace {
+      display: grid;
+      grid-template-columns: minmax(360px, 460px) minmax(0, 1fr);
+      gap: 20px;
+      align-items: start;
+    }
+
+    .portfolio-editor-panel {
+      position: sticky;
+      top: 14px;
+      max-height: calc(100vh - 28px);
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    .portfolio-editor-scroll {
+      flex: 1;
+      overflow-y: auto;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .pf-chapter-block {
+      background: var(--surface-strong);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 14px;
+      margin-bottom: 10px;
+    }
+
+    .pf-chapter-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+
+    .pf-chapter-label {
+      font-weight: 600;
+      font-size: 14px;
+      color: var(--ink);
+    }
+
+    .pf-section-block {
+      background: rgba(255,255,255,0.7);
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 12px;
+      margin-top: 8px;
+    }
+
+    .pf-section-header-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 8px;
+    }
+
+    .pf-add-section-btn {
+      margin-top: 8px;
+      width: 100%;
+      background: rgba(255,255,255,0.5);
+      border: 1px dashed rgba(49,40,27,0.18);
+      border-radius: 10px;
+      padding: 8px;
+      font-size: 13px;
+      color: var(--muted);
+      cursor: pointer;
+      transition: background 0.15s;
+    }
+
+    .pf-add-section-btn:hover {
+      background: rgba(255,255,255,0.85);
+      transform: none;
+      box-shadow: none;
+    }
+
+    /* ===== PORTFOLIO TEMPLATE PICKER ===== */
+    .pf-template-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+    }
+
+    .pf-template-option {
+      border: 2px solid transparent;
+      border-radius: 10px;
+      padding: 8px;
+      cursor: pointer;
+      text-align: center;
+      background: rgba(255,255,255,0.55);
+      transition: all 0.15s ease;
+    }
+
+    .pf-template-option:hover,
+    .pf-template-option.active {
+      border-color: var(--accent);
+      background: rgba(255,255,255,0.9);
+      transform: none;
+      box-shadow: none;
+    }
+
+    .pf-color-swatch {
+      width: 100%;
+      height: 22px;
+      border-radius: 5px;
+      margin-bottom: 4px;
+    }
+
+    .pf-template-option strong {
+      font-size: 11px;
+      display: block;
+      color: var(--ink);
+    }
+
+    /* ===== PORTFOLIO PREVIEW PAGES ===== */
+    .portfolio-preview-area {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      align-items: center;
+      padding-bottom: 40px;
+    }
+
+    .pf-page {
+      width: 100%;
+      max-width: 680px;
+      aspect-ratio: 210 / 297;
+      background: #fff;
+      box-shadow: 0 4px 24px rgba(50,38,18,0.13);
+      border-radius: 3px;
+      position: relative;
+      overflow: hidden;
+      font-family: "Iowan Old Style", "Palatino Linotype", "Noto Serif TC", serif;
+      color: #1a1a1a;
+      font-size: 13px;
+    }
+
+    @media (max-width: 960px) {
+      .portfolio-workspace { grid-template-columns: 1fr; }
+      .portfolio-editor-panel { position: static; max-height: none; }
+    }
+
+    /* ===== WYSIWYG MODE: hide left editor, full-width preview ===== */
+    .workspace {
+      grid-template-columns: 1fr !important;
+    }
+    .editor-panel {
+      display: none !important;
+    }
+
+    /* ===== CV STUDIO BAR ===== */
+    .cv-studio-bar {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      padding: 16px 20px;
+      background: rgba(255, 250, 244, 0.94);
+      backdrop-filter: blur(18px);
+      border: 1px solid rgba(49, 40, 27, 0.08);
+      border-radius: 24px;
+      box-shadow: var(--shadow);
+      margin-bottom: 14px;
+    }
+    .cv-studio-section {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .cv-studio-label {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+      font-weight: 600;
+    }
+
+    /* ===== JOB ROLE CHIPS ===== */
+    .job-role-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+    .job-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 5px 13px;
+      border-radius: 999px;
+      border: 1px solid rgba(49, 40, 27, 0.14);
+      background: rgba(255, 255, 255, 0.78);
+      color: var(--ink);
+      font-size: 12.5px;
+      cursor: pointer;
+      transition: all 0.15s ease;
+      transform: none;
+      box-shadow: none;
+    }
+    .job-chip:hover {
+      border-color: var(--accent);
+      background: rgba(255, 255, 255, 0.96);
+      transform: translateY(-1px);
+      box-shadow: 0 4px 12px rgba(173, 63, 47, 0.12);
+    }
+    .job-chip.active {
+      background: linear-gradient(135deg, var(--accent), #c26941);
+      color: #fff;
+      border-color: transparent;
+      box-shadow: 0 4px 16px rgba(173, 63, 47, 0.30);
+    }
+
+    /* ===== TEMPLATE STRIP ===== */
+    .template-strip {
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      padding-bottom: 6px;
+      scrollbar-width: thin;
+      scrollbar-color: rgba(49, 40, 27, 0.14) transparent;
+    }
+    .template-strip::-webkit-scrollbar { height: 4px; }
+    .template-strip::-webkit-scrollbar-track { background: transparent; }
+    .template-strip::-webkit-scrollbar-thumb { background: rgba(49, 40, 27, 0.18); border-radius: 999px; }
+    .template-chip {
+      flex: 0 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 5px;
+      padding: 8px 10px;
+      border-radius: 13px;
+      border: 1.5px solid rgba(49, 40, 27, 0.1);
+      background: rgba(255, 255, 255, 0.78);
+      cursor: pointer;
+      transition: all 0.15s ease;
+      min-width: 72px;
+      text-align: center;
+      position: relative;
+      box-shadow: none;
+      transform: none;
+    }
+    .template-chip:hover {
+      border-color: rgba(33, 78, 116, 0.28);
+      transform: translateY(-1px);
+      box-shadow: 0 4px 12px rgba(33, 78, 116, 0.1);
+    }
+    .template-chip.active {
+      border-color: var(--accent);
+      background: #fff;
+      box-shadow: 0 0 0 3px rgba(173, 63, 47, 0.12);
+      transform: none;
+    }
+    .chip-swatch {
+      width: 52px;
+      height: 30px;
+      border-radius: 7px;
+      display: grid;
+      grid-template-columns: 28% 1fr;
+      overflow: hidden;
+    }
+    .chip-swatch-sidebar { border-radius: 7px 0 0 7px; }
+    .chip-swatch-main   { border-radius: 0 7px 7px 0; }
+    .template-chip strong {
+      font-size: 9.5px;
+      color: var(--ink);
+      font-weight: 600;
+      white-space: nowrap;
+    }
+    .rec-dot {
+      display: none;
+      position: absolute;
+      top: -5px;
+      right: -5px;
+      width: 13px;
+      height: 13px;
+      border-radius: 50%;
+      background: var(--accent);
+      border: 2px solid var(--bg);
+    }
+    .template-chip.recommended .rec-dot   { display: block; }
+    .template-chip.recommended-alt .rec-dot { display: block; background: var(--accent-2); }
+    .template-chip.recommended   { border-color: rgba(173, 63, 47, 0.35); }
+    .template-chip.recommended-alt { border-color: rgba(33, 78, 116, 0.30); }
+
+    /* ===== FLOATING FORMAT TOOLBAR ===== */
+    .format-toolbar {
+      position: fixed;
+      z-index: 2000;
+      display: none;
+      align-items: center;
+      gap: 2px;
+      padding: 5px 8px;
+      background: #20262f;
+      border-radius: 10px;
+      box-shadow: 0 8px 28px rgba(0, 0, 0, 0.32);
+      transform: translateX(-50%);
+      pointer-events: auto;
+      white-space: nowrap;
+    }
+    .format-toolbar.visible { display: flex; }
+    .format-toolbar::after {
+      content: "";
+      position: absolute;
+      bottom: -5px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 10px;
+      height: 6px;
+      background: #20262f;
+      clip-path: polygon(0 0, 100% 0, 50% 100%);
+    }
+    .fmt-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 28px;
+      height: 28px;
+      padding: 0 5px;
+      border-radius: 6px;
+      background: transparent;
+      color: #d8d8d8;
+      font-size: 12px;
+      font-weight: 700;
+      cursor: pointer;
+      border: none;
+      transition: background 0.1s ease;
+      transform: none;
+      box-shadow: none;
+    }
+    .fmt-btn:hover {
+      background: rgba(255, 255, 255, 0.14);
+      transform: none;
+      box-shadow: none;
+    }
+    .fmt-sep {
+      width: 1px;
+      height: 18px;
+      background: rgba(255, 255, 255, 0.16);
+      margin: 0 3px;
+      flex-shrink: 0;
+    }
+    .fmt-color-wrap {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 28px;
+      height: 28px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    .fmt-color-wrap:hover { background: rgba(255,255,255,0.14); }
+    .fmt-color-wrap span {
+      font-size: 13px;
+      font-weight: 800;
+      pointer-events: none;
+      line-height: 1;
+    }
+    .fmt-color-wrap input[type="color"] {
+      position: absolute;
+      inset: 0;
+      opacity: 0;
+      cursor: pointer;
+      width: 100%;
+      height: 100%;
+      padding: 0;
+      border: none;
+    }
+    .fmt-font-size {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      color: #aaa;
+      font-size: 11px;
+      padding: 0 4px;
+      user-select: none;
+    }
+    .fmt-font-size input[type="number"] {
+      width: 36px;
+      padding: 2px 4px;
+      border: 1px solid rgba(255,255,255,0.2);
+      border-radius: 4px;
+      background: rgba(255,255,255,0.08);
+      color: #ddd;
+      font-size: 11px;
+      text-align: center;
+    }
+    .fmt-font-size input[type="number"]::-webkit-inner-spin-button,
+    .fmt-font-size input[type="number"]::-webkit-outer-spin-button { opacity: 0; }
+
+    /* ===== CONTENTEDITABLE STYLES ===== */
+    [contenteditable="true"] {
+      outline: none;
+      cursor: text;
+      transition: background 0.12s ease;
+      border-radius: 3px;
+    }
+    [contenteditable="true"]:hover {
+      background: rgba(173, 63, 47, 0.05);
+    }
+    [contenteditable="true"]:focus {
+      background: rgba(33, 78, 116, 0.06);
+      outline: 1.5px dashed rgba(33, 78, 116, 0.32);
+      outline-offset: 2px;
+    }
+    .simple-pill[contenteditable="true"]:focus {
+      outline: 1.5px dashed rgba(173, 63, 47, 0.45);
+    }
+    .cv-name[contenteditable="true"]:hover,
+    .cv-name[contenteditable="true"]:focus {
+      background: transparent;
+    }
+    .cv-name[contenteditable="true"]:focus {
+      outline: 1.5px dashed rgba(33, 78, 116, 0.3);
+    }
+    h4[contenteditable="true"],
+    .timeline-date[contenteditable="true"],
+    .timeline-meta[contenteditable="true"],
+    .timeline-body[contenteditable="true"] {
+      display: block;
+      min-height: 1em;
+    }
+    [contenteditable="true"]:empty::before {
+      content: attr(data-ph);
+      color: rgba(100, 100, 100, 0.35);
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <header class="page-header">
+      <div class="brand">
+        <div class="brand-mark">CV</div>
+        <div class="brand-copy">
+          <strong>CV Studio</strong>
+          <span>用漂亮版型把履歷整理成可登入、可儲存、可下載的作品頁。</span>
+        </div>
+      </div>
+      <div class="header-actions">
+        <div class="status-pill" id="headerAuthStatus"><strong>尚未登入</strong> · 可先編輯草稿</div>
+        <a id="headerLoginBtn" class="soft google-btn button-link" href="#" data-login-trigger="google" aria-disabled="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
+            <path fill="#EA4335" d="M12 10.2v3.9h5.5c-.2 1.2-1.4 3.6-5.5 3.6-3.3 0-6-2.8-6-6.2s2.7-6.2 6-6.2c1.9 0 3.1.8 3.8 1.5l2.6-2.5C16.8 2.8 14.6 2 12 2 6.9 2 2.8 6.3 2.8 11.5S6.9 21 12 21c6.9 0 9.1-4.8 9.1-7.3 0-.5 0-.9-.1-1.3H12Z"/>
+            <path fill="#34A853" d="M2.8 11.5c0 1.7.6 3.4 1.7 4.8l3.3-2.6c-.4-.6-.7-1.4-.7-2.2s.2-1.5.7-2.2L4.5 6.7c-1.1 1.4-1.7 3-1.7 4.8Z"/>
+            <path fill="#4A90E2" d="M12 21c2.5 0 4.7-.8 6.3-2.3l-3.1-2.5c-.8.6-1.8 1-3.2 1-2.5 0-4.6-1.7-5.4-4l-3.4 2.6C5 18.9 8.2 21 12 21Z"/>
+            <path fill="#FBBC05" d="M6.6 13.2c-.2-.6-.3-1.1-.3-1.7s.1-1.2.3-1.7L3.2 7.2C2.4 8.6 2 10 2 11.5s.4 2.9 1.2 4.3l3.4-2.6Z"/>
+          </svg>
+          Google 登入
+        </a>
+      </div>
+    </header>
+
+    <nav class="app-tabs">
+      <button class="app-tab active" data-tab="home" type="button">主畫面</button>
+      <button class="app-tab" data-tab="cv" type="button">CV 履歷</button>
+      <button class="app-tab" data-tab="portfolio" type="button">學習歷程</button>
+    </nav>
+
+    <div id="page-home" class="app-page active">
+    <section class="hero panel">
+      <div class="eyebrow">CV Studio / Web + App</div>
+      <div class="hero-grid">
+        <div>
+          <h1>把履歷做成一個打開就想投遞的主畫面。</h1>
+          <p>
+            這個首頁先把產品感做出來，讓使用者一進來就知道這是一個可以用 Google 登入、編輯個人履歷、同步雲端並下載 PDF 的 CV 平台。右上角保留明確登入入口，下面則直接接到編輯器與即時預覽。
+          </p>
+          <div class="hero-actions">
+            <button id="startEditingBtn" class="primary" type="button">開始編輯履歷</button>
+            <a class="soft google-btn button-link" href="#" data-login-trigger="google" aria-disabled="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
+                <path fill="#EA4335" d="M12 10.2v3.9h5.5c-.2 1.2-1.4 3.6-5.5 3.6-3.3 0-6-2.8-6-6.2s2.7-6.2 6-6.2c1.9 0 3.1.8 3.8 1.5l2.6-2.5C16.8 2.8 14.6 2 12 2 6.9 2 2.8 6.3 2.8 11.5S6.9 21 12 21c6.9 0 9.1-4.8 9.1-7.3 0-.5 0-.9-.1-1.3H12Z"/>
+                <path fill="#34A853" d="M2.8 11.5c0 1.7.6 3.4 1.7 4.8l3.3-2.6c-.4-.6-.7-1.4-.7-2.2s.2-1.5.7-2.2L4.5 6.7c-1.1 1.4-1.7 3-1.7 4.8Z"/>
+                <path fill="#4A90E2" d="M12 21c2.5 0 4.7-.8 6.3-2.3l-3.1-2.5c-.8.6-1.8 1-3.2 1-2.5 0-4.6-1.7-5.4-4l-3.4 2.6C5 18.9 8.2 21 12 21Z"/>
+                <path fill="#FBBC05" d="M6.6 13.2c-.2-.6-.3-1.1-.3-1.7s.1-1.2.3-1.7L3.2 7.2C2.4 8.6 2 10 2 11.5s.4 2.9 1.2 4.3l3.4-2.6Z"/>
+              </svg>
+              右上角快速登入
+            </a>
+          </div>
+          <div class="hero-stats">
+            <div class="hero-stat">
+              <strong>24 種</strong>
+              <span>即時切換的履歷模板</span>
+            </div>
+            <div class="hero-stat">
+              <strong>1 秒內</strong>
+              <span>編輯內容即時更新預覽</span>
+            </div>
+            <div class="hero-stat">
+              <strong>Google</strong>
+              <span>登入後同步你的個人 CV</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-preview">
+          <div class="preview-card">
+            <span class="preview-card-label">Landing Preview</span>
+            <h3>乾淨、可信、可直接開始</h3>
+            <p>首頁視覺先建立信任感，再把使用者帶去登入與編輯，不會一打開就被表單壓住。</p>
+            <div class="mini-cv">
+              <div class="mini-cv-head">
+                <div class="mini-avatar">CW</div>
+                <div class="status-pill"><strong>Cloud CV</strong> · Synced</div>
+              </div>
+              <div class="mini-lines">
+                <div class="mini-line mid"></div>
+                <div class="mini-line short"></div>
+                <div class="mini-line long"></div>
+                <div class="mini-line mid"></div>
+              </div>
+            </div>
+          </div>
+          <div class="hero-note">
+            <strong>核心流程</strong>
+            首頁認識產品 → 右上角 Google 登入 → 開始編輯 → 儲存雲端或下載 PDF。
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="feature-strip">
+      <article class="feature-card">
+        <strong>首頁先講清楚</strong>
+        <p>使用者先看到產品價值、主要操作與登入方式，不需要先研究表單。</p>
+      </article>
+      <article class="feature-card">
+        <strong>右上角登入明確</strong>
+        <p>Google 登入固定放在頁首右上角，符合常見產品習慣，也更容易被找到。</p>
+      </article>
+      <article class="feature-card">
+        <strong>編輯器還在下面</strong>
+        <p>保留你原本的即時預覽、模板切換、Supabase 設定與雲端同步功能。</p>
+      </article>
+      <article class="feature-card">
+        <strong>可延伸成正式服務</strong>
+        <p>這個結構之後很容易再補方案介紹、作品案例、FAQ 或公開模板展示。</p>
+      </article>
+    </section>
+    </div><!-- /page-home -->
+
+    <div id="page-cv" class="app-page">
+    <section class="topbar" id="editorSection">
+      <div class="topbar-group">
+        <a id="loginBtn" class="primary google-btn button-link" href="#" data-login-trigger="google" aria-disabled="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
+            <path fill="#EA4335" d="M12 10.2v3.9h5.5c-.2 1.2-1.4 3.6-5.5 3.6-3.3 0-6-2.8-6-6.2s2.7-6.2 6-6.2c1.9 0 3.1.8 3.8 1.5l2.6-2.5C16.8 2.8 14.6 2 12 2 6.9 2 2.8 6.3 2.8 11.5S6.9 21 12 21c6.9 0 9.1-4.8 9.1-7.3 0-.5 0-.9-.1-1.3H12Z"/>
+            <path fill="#34A853" d="M2.8 11.5c0 1.7.6 3.4 1.7 4.8l3.3-2.6c-.4-.6-.7-1.4-.7-2.2s.2-1.5.7-2.2L4.5 6.7c-1.1 1.4-1.7 3-1.7 4.8Z"/>
+            <path fill="#4A90E2" d="M12 21c2.5 0 4.7-.8 6.3-2.3l-3.1-2.5c-.8.6-1.8 1-3.2 1-2.5 0-4.6-1.7-5.4-4l-3.4 2.6C5 18.9 8.2 21 12 21Z"/>
+            <path fill="#FBBC05" d="M6.6 13.2c-.2-.6-.3-1.1-.3-1.7s.1-1.2.3-1.7L3.2 7.2C2.4 8.6 2 10 2 11.5s.4 2.9 1.2 4.3l3.4-2.6Z"/>
+          </svg>
+          Google 登入
+        </a>
+        <button id="logoutBtn" class="ghost" type="button">登出</button>
+        <button id="saveBtn" class="secondary" type="button">儲存我的 CV</button>
+        <button id="downloadPdfBtn" class="soft" type="button">下載 PDF</button>
+        <button id="installBtn" class="ghost" type="button" hidden>安裝 APP</button>
+      </div>
+      <div class="topbar-group">
+        <div class="status-pill" id="authStatus"><strong>尚未登入</strong> · 可先編輯草稿</div>
+        <div class="status-pill" id="syncStatus"><strong>本機草稿</strong> · 尚未同步</div>
+      </div>
+    </section>
+
+    <!-- ===== CV STUDIO BAR ===== -->
+    <div class="cv-studio-bar" id="cvStudioBar">
+      <div class="cv-studio-section">
+        <span class="cv-studio-label">依職位推薦模板</span>
+        <div class="job-role-row" id="jobRoleBar">
+          <button class="job-chip" type="button" data-job="software">💻 軟體工程師</button>
+          <button class="job-chip" type="button" data-job="frontend">🖥 前端 / 全端</button>
+          <button class="job-chip" type="button" data-job="data">📊 資料科學</button>
+          <button class="job-chip" type="button" data-job="ux">🎨 UX / 產品設計</button>
+          <button class="job-chip" type="button" data-job="pm">🗂 產品經理</button>
+          <button class="job-chip" type="button" data-job="marketing">📣 行銷 / 品牌</button>
+          <button class="job-chip" type="button" data-job="research">🔬 學術研究</button>
+          <button class="job-chip" type="button" data-job="education">📚 教育 / 老師</button>
+          <button class="job-chip" type="button" data-job="healthcare">🏥 醫療 / 護理</button>
+          <button class="job-chip" type="button" data-job="finance">💰 金融 / 財務</button>
+          <button class="job-chip" type="button" data-job="legal">⚖ 法律 / 顧問</button>
+          <button class="job-chip" type="button" data-job="architecture">🏛 建築 / 工藝</button>
+          <button class="job-chip" type="button" data-job="creative">🎭 藝術 / 創意</button>
+          <button class="job-chip" type="button" data-job="hr">👥 人資 / 管理</button>
+        </div>
+      </div>
+      <div class="cv-studio-section">
+        <span class="cv-studio-label">模板選擇（點選即時套用）</span>
+        <div class="template-strip" id="templateStrip"><!-- rendered by JS --></div>
+      </div>
+    </div>
+
+    <section class="workspace">
+      <aside class="panel editor-panel">
+        <div class="editor-header">
+          <div>
+            <h2>編輯器</h2>
+            <div class="install-hint">左邊輸入，右邊會即時看到 CV 排版。</div>
+          </div>
+        </div>
+        <div class="editor-scroll">
+          <div class="section-card auth-card">
+            <h3>雲端與登入</h3>
+            <p>正式上線時，每位使用者用自己的 Google 帳號登入，只能讀寫自己的 CV。</p>
+            <details class="setup-card">
+              <summary>Supabase 設定</summary>
+              <div class="field-grid" style="margin-top:12px;">
+                <div class="field full">
+                  <label>Supabase URL</label>
+                  <input id="supabaseUrl" type="url" placeholder="https://your-project.supabase.co" />
+                </div>
+                <div class="field full">
+                  <label>Supabase Anon Key</label>
+                  <textarea id="supabaseAnonKey" placeholder="貼上 anon public key"></textarea>
+                </div>
+                <div class="field">
+                  <label>Site URL</label>
+                  <input id="siteUrl" type="url" placeholder="https://your-domain.com/" />
+                </div>
+                <div class="field">
+                  <label>預設模板</label>
+                  <select id="defaultTemplateSelect">
+                    <option value="n-tech">Academic Warm 學術暖調</option>
+                    <option value="slate">Slate 專業藍</option>
+                    <option value="mono">Mono 簡潔灰</option>
+                    <option value="serif-ivory">Serif Ivory 象牙文藝</option>
+                    <option value="forest">Forest 研究綠</option>
+                    <option value="rose">Rose 品牌粉</option>
+                    <option value="midnight">Midnight 深藍商務</option>
+                    <option value="sand">Sand 柔和米色</option>
+                    <option value="plum">Plum 沉穩紫棕</option>
+                  </select>
+                </div>
+              </div>
+              <div class="setup-actions">
+                <button id="applyConfigBtn" class="soft" type="button">套用設定</button>
+                <button id="loadProfileBtn" class="ghost" type="button">重新讀取雲端資料</button>
+              </div>
+              <div id="runtimeConfigStatus" class="helper" hidden></div>
+              <div class="helper">這個頁面使用 Supabase 的 Google OAuth redirect flow，不使用已淘汰的 `platform.js` / `g-signin2`。請在 Supabase Authentication 內啟用 Google Provider，並把 Site URL 與 redirect URL 指向你的網站。</div>
+              <div id="oauthSetupHints" class="checklist" aria-live="polite"></div>
+              <div id="authDiagnostics" class="checklist" aria-live="polite"></div>
+              <div class="debug-card">
+                <strong>登入偵錯資訊</strong>
+                <div id="authDebugPanel" class="checklist" aria-live="polite"></div>
+              </div>
+            </details>
+            <details class="setup-card">
+              <summary>Google 登入影響評估</summary>
+              <div class="helper">Google 舊版 Sign-In 程式庫已淘汰，且 FedCM 已成為必要方向。這個專案目前走 Supabase OAuth redirect，不直接依賴舊版 Google Sign-In JavaScript client。</div>
+              <div id="googleImpactChecklist" class="checklist" aria-live="polite"></div>
+            </details>
+          </div>
+
+          <div class="section-card">
+            <h3>工作模式</h3>
+            <p id="workflowDescription">你可以先選模板再填資料，或先填資料再把同一份內容套到其他模板。</p>
+            <div class="mode-grid">
+              <button id="workflowTemplateFirst" class="mode-button active" type="button" data-workflow-mode="template-first">
+                <strong>先選模板再編輯</strong>
+                <span>先決定版型，接著一邊填資料一邊微調版面。</span>
+              </button>
+              <button id="workflowContentFirst" class="mode-button" type="button" data-workflow-mode="content-first">
+                <strong>先填資料再套版</strong>
+                <span>先完成內容，再把同一份資料一鍵套用到其他模板。</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="section-card">
+            <h3>模板</h3>
+            <p id="templateSectionHint">目前可先挑一個模板開始編輯；之後切到別的模板時，已輸入資料會自動重新排進新模板。</p>
+            <div class="template-grid" id="templateGrid">
+              <button class="template-option active" type="button" data-template-option="n-tech" style="--swatch-sidebar:#f6ecdf;--swatch-paper:#fffefb;--swatch-accent-soft:#f7e1da;">
+                <div class="template-swatch"><div></div><div></div></div>
+                <strong>Academic Warm</strong>
+                <span>研究型、溫潤、敘事感</span>
+              </button>
+              <button class="template-option" type="button" data-template-option="slate" style="--swatch-sidebar:#e8f0f5;--swatch-paper:#fbfdff;--swatch-accent-soft:#ddeaf3;">
+                <div class="template-swatch"><div></div><div></div></div>
+                <strong>Slate</strong>
+                <span>專業、科技、企業感</span>
+              </button>
+              <button class="template-option" type="button" data-template-option="mono" style="--swatch-sidebar:#f1f1ee;--swatch-paper:#fffefc;--swatch-accent-soft:#eceff1;">
+                <div class="template-swatch"><div></div><div></div></div>
+                <strong>Mono</strong>
+                <span>乾淨、極簡、列印穩定</span>
+              </button>
+              <button class="template-option" type="button" data-template-option="serif-ivory" style="--swatch-sidebar:#f8f0e5;--swatch-paper:#fffdf8;--swatch-accent-soft:#f4e7d8;">
+                <div class="template-swatch"><div></div><div></div></div>
+                <strong>Serif Ivory</strong>
+                <span>文藝、編排感、閱讀友善</span>
+              </button>
+              <button class="template-option" type="button" data-template-option="forest" style="--swatch-sidebar:#e9f4ef;--swatch-paper:#fbfefc;--swatch-accent-soft:#dceee7;">
+                <div class="template-swatch"><div></div><div></div></div>
+                <strong>Forest</strong>
+                <span>研究、理性、專題導向</span>
+              </button>
+              <button class="template-option" type="button" data-template-option="rose" style="--swatch-sidebar:#fdf0f4;--swatch-paper:#fffdfd;--swatch-accent-soft:#f9dfe7;">
+                <div class="template-swatch"><div></div><div></div></div>
+                <strong>Rose</strong>
+                <span>品牌、親和、作品展示感</span>
+              </button>
+              <button class="template-option" type="button" data-template-option="midnight" style="--swatch-sidebar:#e8eefb;--swatch-paper:#fbfcff;--swatch-accent-soft:#dde6fb;">
+                <div class="template-swatch"><div></div><div></div></div>
+                <strong>Midnight</strong>
+                <span>商務、穩重、管理職感</span>
+              </button>
+              <button class="template-option" type="button" data-template-option="sand" style="--swatch-sidebar:#faf1e4;--swatch-paper:#fffdfa;--swatch-accent-soft:#f6e6d0;">
+                <div class="template-swatch"><div></div><div></div></div>
+                <strong>Sand</strong>
+                <span>柔和、簡報感、敘事清楚</span>
+              </button>
+              <button class="template-option" type="button" data-template-option="plum" style="--swatch-sidebar:#f4ecf7;--swatch-paper:#fffdfd;--swatch-accent-soft:#eadcf0;">
+                <div class="template-swatch"><div></div><div></div></div>
+                <strong>Plum</strong>
+                <span>成熟、設計感、辨識度高</span>
+              </button>
+              <button class="template-option" type="button" data-template-option="ocean" style="--swatch-sidebar:#e0f2f6;--swatch-paper:#f7fdfe;--swatch-accent-soft:#d6eef2;">
+                <div class="template-swatch"><div></div><div></div></div>
+                <strong>Ocean</strong>
+                <span>科技、數據、清晰理性</span>
+              </button>
+              <button class="template-option" type="button" data-template-option="ember" style="--swatch-sidebar:#fdecd8;--swatch-paper:#fffaf5;--swatch-accent-soft:#fde8d8;">
+                <div class="template-swatch"><div></div><div></div></div>
+                <strong>Ember</strong>
+                <span>創意、活力、品牌感強</span>
+              </button>
+              <button class="template-option" type="button" data-template-option="noir" style="--swatch-sidebar:#f0f0ed;--swatch-paper:#fffffe;--swatch-accent-soft:#e8e8e5;">
+                <div class="template-swatch"><div></div><div></div></div>
+                <strong>Noir</strong>
+                <span>極簡、俐落、高對比</span>
+              </button>
+              <button class="template-option" type="button" data-template-option="sage" style="--swatch-sidebar:#e5f0ec;--swatch-paper:#fafefb;--swatch-accent-soft:#dceee9;">
+                <div class="template-swatch"><div></div><div></div></div>
+                <strong>Sage</strong>
+                <span>自然、沉穩、醫療學術感</span>
+              </button>
+              <button class="template-option" type="button" data-template-option="coral" style="--swatch-sidebar:#fdeae3;--swatch-paper:#fffcfb;--swatch-accent-soft:#fce4dc;">
+                <div class="template-swatch"><div></div><div></div></div>
+                <strong>Coral</strong>
+                <span>親切、教育、服務業感</span>
+              </button>
+              <button class="template-option" type="button" data-template-option="cobalt" style="--swatch-sidebar:#e4eaf8;--swatch-paper:#fbfcff;--swatch-accent-soft:#dce4f8;">
+                <div class="template-swatch"><div></div><div></div></div>
+                <strong>Cobalt</strong>
+                <span>工程、顧問、結構清楚</span>
+              </button>
+              <button class="template-option" type="button" data-template-option="dusk" style="--swatch-sidebar:#f2e8f4;--swatch-paper:#fefcff;--swatch-accent-soft:#f0e4f0;">
+                <div class="template-swatch"><div></div><div></div></div>
+                <strong>Dusk</strong>
+                <span>UX、產品、視覺設計感</span>
+              </button>
+              <button class="template-option" type="button" data-template-option="copper" style="--swatch-sidebar:#f7e8d5;--swatch-paper:#fffdf8;--swatch-accent-soft:#f5e4d0;">
+                <div class="template-swatch"><div></div><div></div></div>
+                <strong>Copper</strong>
+                <span>建築、藝術、工藝質感</span>
+              </button>
+              <button class="template-option" type="button" data-template-option="linen" style="--swatch-sidebar:#f2f2f6;--swatch-paper:#fefeff;--swatch-accent-soft:#e8e8f0;">
+                <div class="template-swatch"><div></div><div></div></div>
+                <strong>Linen</strong>
+                <span>學術、法律、正式文件感</span>
+              </button>
+              <button class="template-option" type="button" data-template-option="botanical" style="--swatch-sidebar:#e4f0ea;--swatch-paper:#f9fdfa;--swatch-accent-soft:#d8ede5;">
+                <div class="template-swatch"><div></div><div></div></div>
+                <strong>Botanical</strong>
+                <span>植物花紋、自然、手繪感</span>
+              </button>
+              <button class="template-option" type="button" data-template-option="geometric" style="--swatch-sidebar:#1e3a6e;--swatch-paper:#fafbff;--swatch-accent-soft:#d8eef2;">
+                <div class="template-swatch"><div></div><div></div></div>
+                <strong>Geometric</strong>
+                <span>深藍菱格、幾何、科技感</span>
+              </button>
+              <button class="template-option" type="button" data-template-option="blueprint" style="--swatch-sidebar:#162f5e;--swatch-paper:#f5f8ff;--swatch-accent-soft:#dce8f8;">
+                <div class="template-swatch"><div></div><div></div></div>
+                <strong>Blueprint</strong>
+                <span>藍圖點陣、工程、製圖感</span>
+              </button>
+              <button class="template-option" type="button" data-template-option="ornate" style="--swatch-sidebar:#faf4e8;--swatch-paper:#fffdf6;--swatch-accent-soft:#f5ead2;">
+                <div class="template-swatch"><div></div><div></div></div>
+                <strong>Ornate</strong>
+                <span>古典金框、角落花飾</span>
+              </button>
+              <button class="template-option" type="button" data-template-option="watercolor" style="--swatch-sidebar:#eceef8;--swatch-paper:#fdfeff;--swatch-accent-soft:#e4e8f8;">
+                <div class="template-swatch"><div></div><div></div></div>
+                <strong>Watercolor</strong>
+                <span>水彩暈染、藝術、渲染感</span>
+              </button>
+              <button class="template-option" type="button" data-template-option="flourish" style="--swatch-sidebar:#f7eef6;--swatch-paper:#fefcff;--swatch-accent-soft:#f0e2ee;">
+                <div class="template-swatch"><div></div><div></div></div>
+                <strong>Flourish</strong>
+                <span>花邊藤蔓、優雅、手工感</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="section-card">
+            <h3>版面微調</h3>
+            <p>選取右側預覽中的任一區塊後，可以調整字級、內距、欄位位置與區塊順序。</p>
+            <div class="editor-tools">
+              <div class="editor-tool">
+                <strong>當前選取區塊</strong>
+                <span id="selectedBlockLabel">尚未選取，請點右側預覽中的區塊。</span>
+              </div>
+              <div class="editor-tool">
+                <strong>模板整體排版</strong>
+                <div class="field-inline">
+                  <label for="sidebarWidthRange">側欄寬度</label>
+                  <input id="sidebarWidthRange" type="range" min="220" max="360" step="4" />
+                </div>
+                <div class="field-inline">
+                  <label for="baseFontSizeRange">基礎字級</label>
+                  <input id="baseFontSizeRange" type="range" min="14" max="20" step="1" />
+                </div>
+                <div class="field-inline">
+                  <label for="sectionGapRange">區塊間距</label>
+                  <input id="sectionGapRange" type="range" min="12" max="36" step="2" />
+                </div>
+                <div class="field-inline">
+                  <label for="fontFamilySelect">字體風格</label>
+                  <select id="fontFamilySelect">
+                    <option value="serif">Serif 典雅</option>
+                    <option value="sans">Sans 俐落</option>
+                    <option value="display">Display 雜誌感</option>
+                  </select>
+                </div>
+              </div>
+              <div class="editor-tool">
+                <strong>選取區塊設定</strong>
+                <div class="field-inline">
+                  <label for="blockRegionSelect">所在欄位</label>
+                  <select id="blockRegionSelect">
+                    <option value="sidebar">側欄</option>
+                    <option value="main">主欄</option>
+                  </select>
+                </div>
+                <div class="field-inline">
+                  <label for="blockFontSizeRange">區塊字級</label>
+                  <input id="blockFontSizeRange" type="range" min="13" max="24" step="1" />
+                </div>
+                <div class="field-inline">
+                  <label for="blockSpacingRange">區塊內距</label>
+                  <input id="blockSpacingRange" type="range" min="0" max="28" step="2" />
+                </div>
+                <div class="layout-actions">
+                  <div class="mini-actions">
+                    <button id="moveBlockUpBtn" class="soft" type="button">往前移</button>
+                    <button id="moveBlockDownBtn" class="soft" type="button">往後移</button>
+                  </div>
+                  <div class="mini-actions">
+                    <button id="resetBlockBtn" class="ghost" type="button">重設這個區塊</button>
+                    <button id="resetTemplateLayoutBtn" class="ghost" type="button">重設此模板排版</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="section-card">
+            <h3>基本資料</h3>
+            <div class="field-grid">
+              <div class="field">
+                <label>姓名</label>
+                <input id="name" type="text" />
+              </div>
+              <div class="field">
+                <label>標題 / 角色</label>
+                <input id="role" type="text" />
+              </div>
+              <div class="field">
+                <label>Email</label>
+                <input id="email" type="email" />
+              </div>
+              <div class="field">
+                <label>電話</label>
+                <input id="phone" type="text" />
+              </div>
+              <div class="field">
+                <label>地點</label>
+                <input id="location" type="text" />
+              </div>
+              <div class="field">
+                <label>網站 / 作品集</label>
+                <input id="website" type="text" />
+              </div>
+              <div class="field full">
+                <label>頭像圖片網址</label>
+                <input id="avatar" type="url" placeholder="https://..." />
+              </div>
+              <div class="field full">
+                <label>個人摘要</label>
+                <textarea id="summary"></textarea>
+              </div>
+            </div>
+          </div>
+
+          <div class="section-card">
+            <h3>專業技能與亮點</h3>
+            <div class="field-grid">
+              <div class="field full">
+                <label>技能標籤</label>
+                <textarea id="skills" placeholder="例如：React, UI/UX, Figma, Supabase, Python"></textarea>
+              </div>
+              <div class="field full">
+                <label>核心亮點</label>
+                <textarea id="highlights" placeholder="每行一項，例如：具備教學設計經驗"></textarea>
+              </div>
+            </div>
+          </div>
+
+          <div class="section-card">
+            <h3>工作 / 實習經歷</h3>
+            <p>每一筆請用 `職稱 | 單位 | 日期 | 內容`，空一行分隔下一筆。</p>
+            <div class="field-grid single">
+              <div class="field full">
+                <textarea id="experience"></textarea>
+              </div>
+            </div>
+          </div>
+
+          <div class="section-card">
+            <h3>學歷</h3>
+            <p>每一筆請用 `學校 / 科系 | 學位或類型 | 日期 | 說明`，空一行分隔。</p>
+            <div class="field-grid single">
+              <div class="field full">
+                <textarea id="education"></textarea>
+              </div>
+            </div>
+          </div>
+
+          <div class="section-card">
+            <h3>專案 / 作品</h3>
+            <p>每一筆請用 `專案名 | 類型或技術 | 日期 | 內容`，空一行分隔。</p>
+            <div class="field-grid single">
+              <div class="field full">
+                <textarea id="projects"></textarea>
+              </div>
+            </div>
+          </div>
+
+          <div class="section-card">
+            <h3>獎項 / 證照</h3>
+            <div class="field-grid single">
+              <div class="field full">
+                <textarea id="awards" placeholder="每行一項，例如：2025 Google UX Design Certificate"></textarea>
+              </div>
+            </div>
+          </div>
+
+          <div id="message" class="message">可先編輯本機草稿；登入後按「儲存我的 CV」即可同步到雲端。</div>
+        </div>
+      </aside>
+
+      <section class="panel preview-shell">
+        <div class="preview-frame">
+          <div class="preview-toolbar">
+            <div class="preview-toolbar-meta">
+              <div>
+              <h2>即時預覽</h2>
+                <p>這份預覽就是下載 PDF 的內容，也可以直接點選區塊做版面微調。</p>
+              </div>
+              <div class="layout-badge" id="previewModeBadge">目前模式：先選模板再編輯</div>
+            </div>
+          </div>
+
+          <div id="cvPaper" class="cv-paper" data-template="n-tech">
+            <div class="cv-grid">
+              <aside class="cv-sidebar">
+                <div id="sidebarRegion" class="cv-region cv-region-sidebar" data-region="sidebar"></div>
+              </aside>
+
+              <section class="cv-main">
+                <div id="mainRegion" class="cv-region cv-region-main" data-region="main"></div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+    </div><!-- /page-cv -->
+
+    <div id="page-portfolio" class="app-page">
+
+      <!-- portfolio topbar -->
+      <section class="topbar">
+        <div class="topbar-group">
+          <button id="pfDownloadBtn" class="soft" type="button">下載學習歷程 PDF</button>
+        </div>
+        <div class="topbar-group">
+          <div class="status-pill"><strong>學習歷程</strong> · 即時預覽排版</div>
+        </div>
+      </section>
+
+      <!-- portfolio workspace -->
+      <section class="portfolio-workspace">
+
+        <!-- left: editor -->
+        <aside class="panel portfolio-editor-panel">
+          <div class="editor-header">
+            <div>
+              <h2>學習歷程編輯器</h2>
+              <div class="install-hint">左側填寫，右側即時預覽封面、目錄、內容頁與結尾頁。</div>
+            </div>
+          </div>
+          <div class="portfolio-editor-scroll">
+
+            <!-- template picker -->
+            <div class="section-card">
+              <h3>版型配色</h3>
+              <p>選擇側欄條與強調色的主色調。</p>
+              <div class="pf-template-grid">
+                <button class="pf-template-option active" data-pf-theme="slate" type="button">
+                  <div class="pf-color-swatch" style="background:#404b5a;"></div>
+                  <strong>深藍灰</strong>
+                </button>
+                <button class="pf-template-option" data-pf-theme="brick" type="button">
+                  <div class="pf-color-swatch" style="background:#8b4a42;"></div>
+                  <strong>磚紅</strong>
+                </button>
+                <button class="pf-template-option" data-pf-theme="rose" type="button">
+                  <div class="pf-color-swatch" style="background:#9d6565;"></div>
+                  <strong>玫瑰棕</strong>
+                </button>
+                <button class="pf-template-option" data-pf-theme="indigo" type="button">
+                  <div class="pf-color-swatch" style="background:#3a4f7a;"></div>
+                  <strong>深靛藍</strong>
+                </button>
+                <button class="pf-template-option" data-pf-theme="forest" type="button">
+                  <div class="pf-color-swatch" style="background:#3d6b5e;"></div>
+                  <strong>墨綠</strong>
+                </button>
+                <button class="pf-template-option" data-pf-theme="umber" type="button">
+                  <div class="pf-color-swatch" style="background:#5a4032;"></div>
+                  <strong>深棕</strong>
+                </button>
+              </div>
+            </div>
+
+            <!-- basic info -->
+            <div class="section-card">
+              <h3>基本資料</h3>
+              <div class="field-grid">
+                <div class="field full">
+                  <label>文件大標題（志願校系）</label>
+                  <input id="pfTitle" type="text" placeholder="高科大化工材料N" />
+                </div>
+                <div class="field">
+                  <label>學生姓名</label>
+                  <input id="pfStudentName" type="text" placeholder="王宇錡" />
+                </div>
+                <div class="field">
+                  <label>學校與班級</label>
+                  <input id="pfSchool" type="text" placeholder="私立康橋高中 3年1201班" />
+                </div>
+                <div class="field full">
+                  <label>封面圖片網址</label>
+                  <input id="pfCoverImage" type="url" placeholder="https://..." />
+                </div>
+              </div>
+            </div>
+
+            <!-- chapters -->
+            <div class="section-card">
+              <h3>章節內容</h3>
+              <p>每個章節對應一頁內容頁，可加入多個小節（標題 ＋ 內文 ＋ 圖片）。</p>
+              <div id="pfChapters"></div>
+              <button id="pfAddChapterBtn" class="soft" type="button" style="width:100%;margin-top:12px;">＋ 新增章節</button>
+            </div>
+
+          </div><!-- /portfolio-editor-scroll -->
+        </aside><!-- /portfolio-editor-panel -->
+
+        <!-- right: preview -->
+        <div style="overflow-y:auto;max-height:calc(100vh - 80px);padding:0 4px;">
+          <p style="text-align:center;color:var(--muted);font-size:13px;margin:0 0 14px;">預覽順序：封面 → 目錄 → 內容頁（每章節一頁）→ 結尾頁</p>
+          <div class="portfolio-preview-area" id="pfPreviewArea"></div>
+        </div>
+
+      </section><!-- /portfolio-workspace -->
+
+    </div><!-- /page-portfolio -->
+
+  </main>
+
+  <!-- ===== FLOATING FORMAT TOOLBAR ===== -->
+  <div class="format-toolbar" id="formatToolbar" role="toolbar" aria-label="文字格式工具列">
+    <button class="fmt-btn" data-cmd="bold"         title="粗體 Ctrl+B"><strong>B</strong></button>
+    <button class="fmt-btn" data-cmd="italic"       title="斜體 Ctrl+I"><em>I</em></button>
+    <button class="fmt-btn" data-cmd="underline"    title="底線 Ctrl+U"><u style="text-decoration-color:#ccc">U</u></button>
+    <button class="fmt-btn" data-cmd="strikeThrough" title="刪除線"><s style="text-decoration-color:#ccc">S</s></button>
+    <div class="fmt-sep"></div>
+    <label class="fmt-color-wrap" title="字體顏色">
+      <span id="fmtColorPreview" style="color:#fff;border-bottom:3px solid #fff;">A</span>
+      <input type="color" id="fmtFontColor" value="#1f2430" />
+    </label>
+    <label class="fmt-color-wrap" title="文字背景 / 螢光筆">
+      <span style="background:rgba(255,220,50,0.45);padding:0 3px;border-radius:2px;color:#fff;">H</span>
+      <input type="color" id="fmtBgColor" value="#ffdc32" />
+    </label>
+    <div class="fmt-sep"></div>
+    <div class="fmt-font-size">
+      <button class="fmt-btn" data-cmd="sz-" title="縮小字體" style="min-width:22px;">A<sub style="font-size:8px;color:#aaa">−</sub></button>
+      <input type="number" id="fmtFontSize" value="16" min="8" max="72" title="字體大小 (px)" />
+      <button class="fmt-btn" data-cmd="sz+" title="放大字體" style="min-width:22px;">A<sup style="font-size:8px;color:#aaa">+</sup></button>
+    </div>
+    <div class="fmt-sep"></div>
+    <button class="fmt-btn" data-cmd="justifyLeft"   title="靠左">≡</button>
+    <button class="fmt-btn" data-cmd="justifyCenter" title="置中" style="letter-spacing:.05em;">⊟</button>
+    <div class="fmt-sep"></div>
+    <button class="fmt-btn" data-cmd="removeFormat"  title="清除格式" style="font-size:10px;color:#aaa;">✕</button>
+  </div>
+
+  <script>
+    (() => {
+      const STORAGE_KEY = "cv-studio-local-v1";
+      const CONFIG_KEY = "cv-studio-config-v1";
+      const TEMPLATE_KEY = "cv-studio-template-v1";
+      const WORKFLOW_KEY = "cv-studio-workflow-v1";
+      const LAYOUT_KEY = "cv-studio-layout-v1";
+      const defaultData = {
+        name: "你的名字",
+        role: "Product Designer / Frontend Builder",
+        email: "your@email.com",
+        phone: "0912-345-678",
+        location: "Taipei, Taiwan",
+        website: "portfolio.example.com",
+        avatar: "",
+        summary: "我擅長把抽象需求整理成清楚的產品與介面，能同時兼顧視覺、邏輯與落地執行。希望用這份 CV 清楚呈現我的能力、專案脈絡與成長方向。",
+        skills: "UI/UX, Figma, React, Supabase, TypeScript",
+        highlights: "能獨立完成從需求到介面的規劃\n擅長整理複雜資訊與做視覺敘事\n熟悉網頁產品原型與前端落地",
+        experience: "產品設計實習生 | 某某科技 | 2024 - 現在 | 參與後台系統改版，重新整理使用流程並製作可交付的設計規格。\n\n前端接案協作 | 自由接案 | 2023 - 2024 | 與客戶共同完成品牌官網與活動頁，負責 UI 製作與互動實作。",
+        education: "國立某某大學 / 資訊管理 | 學士 | 2021 - 2025 | 主修資訊管理、互動設計與數位產品規劃。",
+        projects: "CV Studio | Web App / Supabase | 2026 | 建立可 Google 登入、切換模板、下載 PDF 的履歷編輯器。\n\n校園活動網站 | React / UI System | 2025 | 建立活動報名與資訊整理頁，改善手機端瀏覽體驗。",
+        awards: "2025 Google UX Design Certificate\n2024 校內專題競賽佳作"
+      };
+      const templateDefinitions = {
+        "n-tech": {
+          label: "Academic Warm 學術暖調",
+          layout: "split-left",
+          fontFamily: "serif",
+          sidebarWidth: 280,
+          baseFontSize: 16,
+          sectionGap: 24,
+          avatarShape: "rounded",
+          profileAlign: "left",
+          regions: {
+            sidebar: ["contacts", "skills", "highlights", "awards"],
+            main: ["profile", "experience", "projects", "education"]
+          }
+        },
+        slate: {
+          label: "Slate 專業藍",
+          layout: "split-right",
+          fontFamily: "sans",
+          sidebarWidth: 268,
+          baseFontSize: 16,
+          sectionGap: 22,
+          avatarShape: "rounded",
+          profileAlign: "left",
+          regions: {
+            sidebar: ["profile", "contacts", "skills"],
+            main: ["experience", "projects", "education", "highlights", "awards"]
+          }
+        },
+        mono: {
+          label: "Mono 簡潔灰",
+          layout: "stacked",
+          fontFamily: "sans",
+          sidebarWidth: 280,
+          baseFontSize: 15,
+          sectionGap: 20,
+          avatarShape: "circle",
+          profileAlign: "center",
+          regions: {
+            sidebar: ["profile", "contacts", "skills"],
+            main: ["highlights", "experience", "projects", "education", "awards"]
+          }
+        },
+        "serif-ivory": {
+          label: "Serif Ivory 象牙文藝",
+          layout: "balanced",
+          fontFamily: "serif",
+          sidebarWidth: 300,
+          baseFontSize: 17,
+          sectionGap: 26,
+          avatarShape: "rounded",
+          profileAlign: "left",
+          regions: {
+            sidebar: ["profile", "contacts", "awards"],
+            main: ["summary", "experience", "projects", "education", "skills", "highlights"]
+          }
+        },
+        forest: {
+          label: "Forest 研究綠",
+          layout: "split-left",
+          fontFamily: "serif",
+          sidebarWidth: 292,
+          baseFontSize: 16,
+          sectionGap: 24,
+          avatarShape: "circle",
+          profileAlign: "left",
+          regions: {
+            sidebar: ["profile", "contacts", "highlights"],
+            main: ["experience", "education", "projects", "skills", "awards"]
+          }
+        },
+        rose: {
+          label: "Rose 品牌粉",
+          layout: "split-right",
+          fontFamily: "display",
+          sidebarWidth: 252,
+          baseFontSize: 16,
+          sectionGap: 24,
+          avatarShape: "rounded",
+          profileAlign: "center",
+          regions: {
+            sidebar: ["contacts", "skills", "awards"],
+            main: ["profile", "projects", "experience", "highlights", "education"]
+          }
+        },
+        midnight: {
+          label: "Midnight 深藍商務",
+          layout: "balanced",
+          fontFamily: "sans",
+          sidebarWidth: 272,
+          baseFontSize: 15,
+          sectionGap: 22,
+          avatarShape: "circle",
+          profileAlign: "left",
+          regions: {
+            sidebar: ["contacts", "skills", "highlights"],
+            main: ["profile", "experience", "projects", "awards", "education"]
+          }
+        },
+        sand: {
+          label: "Sand 柔和米色",
+          layout: "stacked",
+          fontFamily: "serif",
+          sidebarWidth: 280,
+          baseFontSize: 16,
+          sectionGap: 22,
+          avatarShape: "rounded",
+          profileAlign: "center",
+          regions: {
+            sidebar: ["profile", "contacts"],
+            main: ["summary", "skills", "experience", "projects", "education", "awards", "highlights"]
+          }
+        },
+        plum: {
+          label: "Plum 沉穩紫棕",
+          layout: "split-left",
+          fontFamily: "display",
+          sidebarWidth: 286,
+          baseFontSize: 16,
+          sectionGap: 24,
+          avatarShape: "circle",
+          profileAlign: "left",
+          regions: {
+            sidebar: ["profile", "contacts", "awards"],
+            main: ["highlights", "experience", "projects", "education", "skills"]
+          }
+        },
+        ocean: {
+          label: "Ocean 深邃青藍",
+          layout: "split-left",
+          fontFamily: "sans",
+          sidebarWidth: 284,
+          baseFontSize: 16,
+          sectionGap: 22,
+          avatarShape: "circle",
+          profileAlign: "left",
+          regions: {
+            sidebar: ["profile", "contacts", "skills"],
+            main: ["experience", "projects", "education", "highlights", "awards"]
+          }
+        },
+        ember: {
+          label: "Ember 燃橙創意",
+          layout: "split-right",
+          fontFamily: "display",
+          sidebarWidth: 260,
+          baseFontSize: 16,
+          sectionGap: 24,
+          avatarShape: "rounded",
+          profileAlign: "center",
+          regions: {
+            sidebar: ["contacts", "skills", "awards"],
+            main: ["profile", "projects", "experience", "highlights", "education"]
+          }
+        },
+        noir: {
+          label: "Noir 極簡黑白",
+          layout: "stacked",
+          fontFamily: "sans",
+          sidebarWidth: 280,
+          baseFontSize: 15,
+          sectionGap: 20,
+          avatarShape: "circle",
+          profileAlign: "left",
+          regions: {
+            sidebar: ["profile", "contacts", "skills"],
+            main: ["highlights", "experience", "projects", "education", "awards"]
+          }
+        },
+        sage: {
+          label: "Sage 草木靜綠",
+          layout: "balanced",
+          fontFamily: "serif",
+          sidebarWidth: 296,
+          baseFontSize: 16,
+          sectionGap: 24,
+          avatarShape: "rounded",
+          profileAlign: "left",
+          regions: {
+            sidebar: ["profile", "contacts", "highlights"],
+            main: ["experience", "education", "projects", "skills", "awards"]
+          }
+        },
+        coral: {
+          label: "Coral 珊瑚暖調",
+          layout: "split-left",
+          fontFamily: "display",
+          sidebarWidth: 268,
+          baseFontSize: 16,
+          sectionGap: 22,
+          avatarShape: "rounded",
+          profileAlign: "left",
+          regions: {
+            sidebar: ["profile", "contacts", "awards"],
+            main: ["experience", "education", "projects", "skills", "highlights"]
+          }
+        },
+        cobalt: {
+          label: "Cobalt 鈷藍工程",
+          layout: "split-right",
+          fontFamily: "sans",
+          sidebarWidth: 272,
+          baseFontSize: 15,
+          sectionGap: 22,
+          avatarShape: "circle",
+          profileAlign: "left",
+          regions: {
+            sidebar: ["contacts", "skills", "highlights"],
+            main: ["profile", "experience", "projects", "education", "awards"]
+          }
+        },
+        dusk: {
+          label: "Dusk 薄暮霧紫",
+          layout: "balanced",
+          fontFamily: "display",
+          sidebarWidth: 288,
+          baseFontSize: 16,
+          sectionGap: 24,
+          avatarShape: "circle",
+          profileAlign: "center",
+          regions: {
+            sidebar: ["profile", "contacts", "skills"],
+            main: ["highlights", "experience", "projects", "awards", "education"]
+          }
+        },
+        copper: {
+          label: "Copper 琥珀銅褐",
+          layout: "split-left",
+          fontFamily: "serif",
+          sidebarWidth: 290,
+          baseFontSize: 17,
+          sectionGap: 26,
+          avatarShape: "rounded",
+          profileAlign: "left",
+          regions: {
+            sidebar: ["profile", "contacts", "awards"],
+            main: ["summary", "experience", "projects", "education", "skills", "highlights"]
+          }
+        },
+        linen: {
+          label: "Linen 亞麻典雅",
+          layout: "stacked",
+          fontFamily: "serif",
+          sidebarWidth: 280,
+          baseFontSize: 16,
+          sectionGap: 22,
+          avatarShape: "rounded",
+          profileAlign: "center",
+          regions: {
+            sidebar: ["profile", "contacts"],
+            main: ["summary", "skills", "experience", "projects", "education", "awards", "highlights"]
+          }
+        },
+        botanical: {
+          label: "Botanical 植物花紋",
+          layout: "split-left",
+          fontFamily: "serif",
+          sidebarWidth: 290,
+          baseFontSize: 16,
+          sectionGap: 24,
+          avatarShape: "rounded",
+          profileAlign: "left",
+          regions: {
+            sidebar: ["profile", "contacts", "awards"],
+            main: ["experience", "education", "projects", "skills", "highlights"]
+          }
+        },
+        geometric: {
+          label: "Geometric 幾何菱格",
+          layout: "split-left",
+          fontFamily: "sans",
+          sidebarWidth: 278,
+          baseFontSize: 16,
+          sectionGap: 22,
+          avatarShape: "circle",
+          profileAlign: "left",
+          regions: {
+            sidebar: ["profile", "contacts", "skills"],
+            main: ["experience", "projects", "education", "highlights", "awards"]
+          }
+        },
+        blueprint: {
+          label: "Blueprint 藍圖點陣",
+          layout: "split-left",
+          fontFamily: "sans",
+          sidebarWidth: 276,
+          baseFontSize: 15,
+          sectionGap: 20,
+          avatarShape: "circle",
+          profileAlign: "left",
+          regions: {
+            sidebar: ["profile", "contacts", "skills"],
+            main: ["highlights", "experience", "projects", "education", "awards"]
+          }
+        },
+        ornate: {
+          label: "Ornate 古典金框",
+          layout: "split-left",
+          fontFamily: "serif",
+          sidebarWidth: 296,
+          baseFontSize: 17,
+          sectionGap: 26,
+          avatarShape: "rounded",
+          profileAlign: "left",
+          regions: {
+            sidebar: ["profile", "contacts", "awards"],
+            main: ["summary", "experience", "projects", "education", "skills", "highlights"]
+          }
+        },
+        watercolor: {
+          label: "Watercolor 水彩暈染",
+          layout: "balanced",
+          fontFamily: "display",
+          sidebarWidth: 280,
+          baseFontSize: 16,
+          sectionGap: 24,
+          avatarShape: "circle",
+          profileAlign: "center",
+          regions: {
+            sidebar: ["profile", "contacts", "skills"],
+            main: ["highlights", "experience", "projects", "awards", "education"]
+          }
+        },
+        flourish: {
+          label: "Flourish 花邊藤蔓",
+          layout: "split-left",
+          fontFamily: "display",
+          sidebarWidth: 284,
+          baseFontSize: 16,
+          sectionGap: 22,
+          avatarShape: "rounded",
+          profileAlign: "left",
+          regions: {
+            sidebar: ["profile", "contacts", "awards"],
+            main: ["experience", "projects", "education", "skills", "highlights"]
+          }
+        }
+      };
+      const templateLabels = Object.fromEntries(Object.entries(templateDefinitions).map(([id, config]) => [id, config.label]));
+
+      /* ── 職位 → 推薦模板對照表 ── */
+      const JOB_PRESETS = {
+        software:     { label: "軟體工程師",   template: "cobalt",     alt: "ocean"      },
+        frontend:     { label: "前端 / 全端",   template: "blueprint",  alt: "cobalt"     },
+        data:         { label: "資料科學",      template: "ocean",      alt: "geometric"  },
+        ux:           { label: "UX / 產品設計", template: "dusk",       alt: "rose"       },
+        pm:           { label: "產品經理",      template: "midnight",   alt: "slate"      },
+        marketing:    { label: "行銷 / 品牌",   template: "ember",      alt: "coral"      },
+        research:     { label: "學術研究",      template: "n-tech",     alt: "forest"     },
+        education:    { label: "教育 / 老師",   template: "coral",      alt: "sage"       },
+        healthcare:   { label: "醫療 / 護理",   template: "sage",       alt: "linen"      },
+        finance:      { label: "金融 / 財務",   template: "midnight",   alt: "cobalt"     },
+        legal:        { label: "法律 / 顧問",   template: "noir",       alt: "cobalt"     },
+        architecture: { label: "建築 / 工藝",   template: "copper",     alt: "ornate"     },
+        creative:     { label: "藝術 / 創意",   template: "watercolor", alt: "plum"       },
+        hr:           { label: "人資 / 管理",   template: "linen",      alt: "midnight"   }
+      };
+
+      /* ── 模板 strip 色票資料 ── */
+      const TEMPLATE_STRIP_DATA = [
+        { id:"n-tech",      label:"Academic",    s:"#f6ecdf", m:"#fffefb" },
+        { id:"slate",       label:"Slate",       s:"#e8f0f5", m:"#fbfdff" },
+        { id:"mono",        label:"Mono",        s:"#f1f1ee", m:"#fffefc" },
+        { id:"serif-ivory", label:"Serif Ivory", s:"#f8f0e5", m:"#fffdf8" },
+        { id:"forest",      label:"Forest",      s:"#e9f4ef", m:"#fbfefc" },
+        { id:"rose",        label:"Rose",        s:"#fdf0f4", m:"#fffdfd" },
+        { id:"midnight",    label:"Midnight",    s:"#e8eefb", m:"#fbfcff" },
+        { id:"sand",        label:"Sand",        s:"#faf1e4", m:"#fffdfa" },
+        { id:"plum",        label:"Plum",        s:"#f4ecf7", m:"#fffdfd" },
+        { id:"ocean",       label:"Ocean",       s:"#e0f2f6", m:"#f7fdfe" },
+        { id:"ember",       label:"Ember",       s:"#fdecd8", m:"#fffaf5" },
+        { id:"noir",        label:"Noir",        s:"#f0f0ed", m:"#fffffe" },
+        { id:"sage",        label:"Sage",        s:"#e5f0ec", m:"#fafefb" },
+        { id:"coral",       label:"Coral",       s:"#fdeae3", m:"#fffcfb" },
+        { id:"cobalt",      label:"Cobalt",      s:"#e4eaf8", m:"#fbfcff" },
+        { id:"dusk",        label:"Dusk",        s:"#f2e8f4", m:"#fefcff" },
+        { id:"copper",      label:"Copper",      s:"#f7e8d5", m:"#fffdf8" },
+        { id:"linen",       label:"Linen",       s:"#f2f2f6", m:"#fefeff" },
+        { id:"botanical",   label:"Botanical",   s:"#e4f0ea", m:"#f9fdfa" },
+        { id:"geometric",   label:"Geometric",   s:"#1e3a6e", m:"#fafbff" },
+        { id:"blueprint",   label:"Blueprint",   s:"#162f5e", m:"#f5f8ff" },
+        { id:"ornate",      label:"Ornate",      s:"#faf4e8", m:"#fffdf6" },
+        { id:"watercolor",  label:"Watercolor",  s:"#eceef8", m:"#fdfeff" },
+        { id:"flourish",    label:"Flourish",    s:"#f7eef6", m:"#fefcff" }
+      ];
+      const blockLabels = {
+        profile: "個人檔頭",
+        summary: "個人摘要",
+        contacts: "聯絡方式",
+        skills: "技能",
+        highlights: "亮點",
+        awards: "獎項 / 證照",
+        experience: "工作 / 實習",
+        projects: "專案 / 作品",
+        education: "學歷"
+      };
+
+      function loadInitialConfig() {
+        const stored = loadJson(CONFIG_KEY, {});
+        const runtimeConfig = typeof window.CV_STUDIO_CONFIG === "object" && window.CV_STUDIO_CONFIG
+          ? window.CV_STUDIO_CONFIG
+          : {};
+
+        return {
+          supabaseUrl: runtimeConfig.supabaseUrl || stored.supabaseUrl || "",
+          supabaseAnonKey: runtimeConfig.supabaseAnonKey || stored.supabaseAnonKey || "",
+          siteUrl: runtimeConfig.siteUrl || stored.siteUrl || window.location.href,
+          defaultTemplate: runtimeConfig.defaultTemplate || stored.defaultTemplate || "n-tech"
+        };
+      }
+
+      const state = {
+        data: loadJson(STORAGE_KEY, defaultData),
+        config: loadInitialConfig(),
+        template: localStorage.getItem(TEMPLATE_KEY) || "n-tech",
+        workflowMode: localStorage.getItem(WORKFLOW_KEY) || "template-first",
+        layoutPrefs: loadJson(LAYOUT_KEY, {}),
+        selectedBlock: "profile",
+        user: null,
+        client: null,
+        installPrompt: null,
+        pendingAuthMessage: null,
+        authDebug: {
+          hasCode: false,
+          exchangeStatus: "idle",
+          exchangeMessage: "",
+          sessionUser: "",
+          sessionError: "",
+          sessionPresent: false
+        }
+      };
+
+      let authSubscription = null;
+
+      const fields = ["name", "role", "email", "phone", "location", "website", "avatar", "summary", "skills", "highlights", "experience", "education", "projects", "awards"];
+
+      function $(id) {
+        return document.getElementById(id);
+      }
+
+      function loadJson(key, fallback) {
+        try {
+          const raw = localStorage.getItem(key);
+          return raw
+            ? Array.isArray(fallback)
+              ? JSON.parse(raw)
+              : { ...fallback, ...JSON.parse(raw) }
+            : fallback;
+        } catch {
+          return fallback;
+        }
+      }
+
+      function saveJson(key, value) {
+        localStorage.setItem(key, JSON.stringify(value));
+      }
+
+      function setMessage(text, type = "") {
+        const node = $("message");
+        node.textContent = text;
+        node.className = `message${type ? ` ${type}` : ""}`;
+      }
+
+      function sleep(ms) {
+        return new Promise((resolve) => window.setTimeout(resolve, ms));
+      }
+
+      function createChecklistItem(status, title, detail) {
+        const symbol = status === "ok" ? "OK" : status === "warn" ? "!" : "x";
+        return `
+          <div class="checklist-item ${status}">
+            <span class="checklist-mark">${symbol}</span>
+            <div>
+              <strong>${escapeHtml(title)}</strong><br />
+              <span>${escapeHtml(detail)}</span>
+            </div>
+          </div>
+        `;
+      }
+
+      function clone(value) {
+        return JSON.parse(JSON.stringify(value));
+      }
+
+      function splitLines(text) {
+        return String(text || "")
+          .split("\n")
+          .map((item) => item.trim())
+          .filter(Boolean);
+      }
+
+      function parseEntries(text) {
+        return String(text || "")
+          .split(/\n\s*\n/)
+          .map((chunk) => chunk.trim())
+          .filter(Boolean)
+          .map((chunk) => {
+            const [title = "", subtitle = "", date = "", body = ""] = chunk.split("|").map((part) => part.trim());
+            return { title, subtitle, date, body };
+          });
+      }
+
+      function renderPills(items, emptyText) {
+        return items.length
+          ? items.map((item) => `<span class="simple-pill">${escapeHtml(item)}</span>`).join("")
+          : `<div class="empty-block">${escapeHtml(emptyText)}</div>`;
+      }
+
+      function renderLines(items, emptyText) {
+        return items.length
+          ? items.map((item) => `<div class="contact-item">${escapeHtml(item)}</div>`).join("")
+          : `<div class="empty-block">${escapeHtml(emptyText)}</div>`;
+      }
+
+      function renderTimeline(items, emptyText) {
+        if (!items.length) {
+          return `<div class="empty-block">${escapeHtml(emptyText)}</div>`;
+        }
+        return items.map((item) => `
+          <article class="timeline-item">
+            <div class="timeline-date">${escapeHtml(item.date || "")}</div>
+            <div>
+              <h4>${escapeHtml(item.title || "未命名項目")}</h4>
+              <span class="timeline-meta">${escapeHtml(item.subtitle || "")}</span>
+              <div class="timeline-body">${escapeHtml(item.body || "")}</div>
+            </div>
+          </article>
+        `).join("");
+      }
+
+      function escapeHtml(value) {
+        return String(value || "").replace(/[&<>"']/g, (match) => ({
+          "&": "&amp;",
+          "<": "&lt;",
+          ">": "&gt;",
+          '"': "&quot;",
+          "'": "&#39;"
+        }[match]));
+      }
+
+      function normalizeLayoutRegions(regions) {
+        const allBlocks = Object.keys(blockLabels);
+        const next = {
+          sidebar: Array.isArray(regions?.sidebar) ? [...regions.sidebar] : [],
+          main: Array.isArray(regions?.main) ? [...regions.main] : []
+        };
+        allBlocks.forEach((blockId) => {
+          const exists = next.sidebar.includes(blockId) || next.main.includes(blockId);
+          if (!exists) next.main.push(blockId);
+        });
+        next.sidebar = next.sidebar.filter((item, index) => next.sidebar.indexOf(item) === index && allBlocks.includes(item));
+        next.main = next.main.filter((item, index) => !next.sidebar.includes(item) && next.main.indexOf(item) === index && allBlocks.includes(item));
+        return next;
+      }
+
+      function getLayoutState(templateId = state.template) {
+        const template = templateDefinitions[templateId] || templateDefinitions["n-tech"];
+        const saved = state.layoutPrefs[templateId] || {};
+        return {
+          layout: saved.layout || template.layout,
+          fontFamily: saved.fontFamily || template.fontFamily,
+          sidebarWidth: saved.sidebarWidth || template.sidebarWidth,
+          baseFontSize: saved.baseFontSize || template.baseFontSize,
+          sectionGap: saved.sectionGap || template.sectionGap,
+          avatarShape: saved.avatarShape || template.avatarShape,
+          profileAlign: saved.profileAlign || template.profileAlign,
+          blockStyles: saved.blockStyles || {},
+          regions: normalizeLayoutRegions(saved.regions || template.regions)
+        };
+      }
+
+      function persistLayout(templateId, nextLayout) {
+        state.layoutPrefs[templateId] = nextLayout;
+        saveJson(LAYOUT_KEY, state.layoutPrefs);
+      }
+
+      function patchCurrentLayout(mutator) {
+        const nextLayout = getLayoutState();
+        mutator(nextLayout);
+        nextLayout.regions = normalizeLayoutRegions(nextLayout.regions);
+        persistLayout(state.template, nextLayout);
+        updatePreview();
+        syncLayoutControls();
+      }
+
+      function ensureBlockStyle(blockId) {
+        const layoutState = getLayoutState();
+        if (!layoutState.blockStyles[blockId]) {
+          layoutState.blockStyles[blockId] = {};
+          persistLayout(state.template, layoutState);
+        }
+        return layoutState.blockStyles[blockId];
+      }
+
+      function getFontStack(type) {
+        if (type === "sans") return '"Noto Sans TC", "Segoe UI", sans-serif';
+        if (type === "display") return '"Avenir Next", "Noto Serif TC", "PingFang TC", serif';
+        return '"Iowan Old Style", "Palatino Linotype", "Noto Serif TC", serif';
+      }
+
+      function getBlockRegion(blockId, layoutState = getLayoutState()) {
+        return layoutState.regions.sidebar.includes(blockId) ? "sidebar" : "main";
+      }
+
+      function getBlockStyle(blockId, layoutState = getLayoutState()) {
+        return layoutState.blockStyles?.[blockId] || {};
+      }
+
+      function buildAvatar(layoutState) {
+        const initials = (state.data.name || "CV").trim().slice(0, 2).toUpperCase();
+        return `
+          <div class="avatar ${escapeHtml(layoutState.avatarShape)}">
+            ${state.data.avatar ? `<img src="${escapeHtml(state.data.avatar)}" alt="avatar" />` : escapeHtml(initials)}
+          </div>
+        `;
+      }
+
+      /* ── helpers for contenteditable blocks ── */
+      function ce(field, tag, cls, value, ph, extraAttr) {
+        const attr = extraAttr ? ` ${extraAttr}` : "";
+        return `<${tag} class="${cls}" contenteditable="true" data-field="${field}" data-sync="text" spellcheck="false" data-ph="${ph || ""}"${attr}>${escapeHtml(value)}</${tag}>`;
+      }
+
+      function renderEditableTimeline(items, field, emptyText) {
+        if (!items.length) return `<div class="empty-block">${escapeHtml(emptyText)}</div>`;
+        return items.map((item, i) => `
+          <article class="timeline-item">
+            <div class="timeline-date" contenteditable="true" data-field="${field}" data-sync="entry-field" data-ei="${i}" data-ep="date" spellcheck="false" data-ph="日期">${escapeHtml(item.date || "")}</div>
+            <div>
+              <h4 contenteditable="true" data-field="${field}" data-sync="entry-field" data-ei="${i}" data-ep="title" spellcheck="false" data-ph="職稱 / 名稱">${escapeHtml(item.title || "")}</h4>
+              <span class="timeline-meta" contenteditable="true" data-field="${field}" data-sync="entry-field" data-ei="${i}" data-ep="subtitle" spellcheck="false" data-ph="單位 / 機構">${escapeHtml(item.subtitle || "")}</span>
+              <div class="timeline-body" contenteditable="true" data-field="${field}" data-sync="entry-field" data-ei="${i}" data-ep="body" spellcheck="false" data-ph="內容說明">${escapeHtml(item.body || "")}</div>
+            </div>
+          </article>`).join("");
+      }
+
+      function renderBlockContent(blockId, layoutState) {
+        if (blockId === "profile") {
+          const hasStandaloneSummary = layoutState.regions.sidebar.includes("summary") || layoutState.regions.main.includes("summary");
+          const profileClass = [
+            "profile-block",
+            layoutState.profileAlign === "center" ? "centered" : "",
+            getBlockRegion("profile", layoutState) === "sidebar" ? "sidebar-profile" : ""
+          ].filter(Boolean).join(" ");
+          return `
+            <div class="${profileClass}">
+              ${buildAvatar(layoutState)}
+              ${ce("name", "h1", "cv-name", state.data.name || "你的名字", "姓名")}
+              ${ce("role", "div", "cv-role", state.data.role || "職稱 / 角色", "職稱")}
+              ${hasStandaloneSummary ? "" : ce("summary", "div", "cv-summary", state.data.summary || "", "個人摘要")}
+            </div>`;
+        }
+        if (blockId === "summary") {
+          return `<div class="main-block"><h3>Summary</h3>${ce("summary", "div", "cv-summary", state.data.summary || "", "點擊輸入個人摘要…")}</div>`;
+        }
+        if (blockId === "contacts") {
+          const cfields = [
+            { f: "email",    ph: "Email" },
+            { f: "phone",    ph: "電話" },
+            { f: "location", ph: "地點" },
+            { f: "website",  ph: "網站 / 作品集" }
+          ];
+          const items = cfields.map(cf =>
+            `<div class="contact-item" contenteditable="true" data-field="${cf.f}" data-sync="text" spellcheck="false" data-ph="${cf.ph}">${escapeHtml(state.data[cf.f] || "")}</div>`
+          ).join("");
+          return `<div class="aside-block"><h3>聯絡方式</h3><div class="contact-list">${items}</div></div>`;
+        }
+        if (blockId === "skills") {
+          const skillList = splitLines(state.data.skills.replaceAll(",", "\n"));
+          const pills = skillList.length
+            ? skillList.map((s, i) =>
+                `<span class="simple-pill" contenteditable="true" data-field="skills" data-sync="list-item" data-li="${i}" spellcheck="false" data-ph="技能">${escapeHtml(s)}</span>`
+              ).join("") + `<button class="simple-pill wysiwyg-add-btn" data-add-to="skills" type="button" title="新增技能">＋</button>`
+            : `<div class="empty-block" style="cursor:pointer;" data-add-to="skills">點擊這裡新增技能標籤</div>`;
+          return `<div class="aside-block"><h3>技能</h3><div class="simple-list">${pills}</div></div>`;
+        }
+        if (blockId === "highlights") {
+          const lines = splitLines(state.data.highlights);
+          const items = lines.length
+            ? lines.map((line, i) =>
+                `<div class="contact-item" contenteditable="true" data-field="highlights" data-sync="list-item" data-li="${i}" spellcheck="false" data-ph="亮點">${escapeHtml(line)}</div>`
+              ).join("") + `<button class="wysiwyg-add-btn contact-item" data-add-to="highlights" type="button">＋ 新增亮點</button>`
+            : `<div class="empty-block" style="cursor:pointer;" data-add-to="highlights">點擊這裡新增亮點</div>`;
+          return `<div class="aside-block"><h3>亮點</h3><div class="contact-list">${items}</div></div>`;
+        }
+        if (blockId === "awards") {
+          const lines = splitLines(state.data.awards);
+          const items = lines.length
+            ? lines.map((line, i) =>
+                `<div class="contact-item" contenteditable="true" data-field="awards" data-sync="list-item" data-li="${i}" spellcheck="false" data-ph="獎項 / 證照">${escapeHtml(line)}</div>`
+              ).join("") + `<button class="wysiwyg-add-btn contact-item" data-add-to="awards" type="button">＋ 新增獎項</button>`
+            : `<div class="empty-block" style="cursor:pointer;" data-add-to="awards">點擊這裡新增獎項 / 證照</div>`;
+          return `<div class="aside-block"><h3>獎項 / 證照</h3><div class="contact-list">${items}</div></div>`;
+        }
+        if (blockId === "experience") {
+          return `<div class="main-block"><h3>Experience</h3><div>${renderEditableTimeline(parseEntries(state.data.experience), "experience", "點擊這裡新增工作 / 實習經歷。")}</div><button class="wysiwyg-add-btn" data-add-to="experience" type="button" style="margin-top:8px;">＋ 新增經歷</button></div>`;
+        }
+        if (blockId === "projects") {
+          return `<div class="main-block"><h3>Projects</h3><div>${renderEditableTimeline(parseEntries(state.data.projects), "projects", "點擊這裡新增專案 / 作品。")}</div><button class="wysiwyg-add-btn" data-add-to="projects" type="button" style="margin-top:8px;">＋ 新增專案</button></div>`;
+        }
+        if (blockId === "education") {
+          return `<div class="main-block"><h3>Education</h3><div>${renderEditableTimeline(parseEntries(state.data.education), "education", "點擊這裡新增學歷。")}</div><button class="wysiwyg-add-btn" data-add-to="education" type="button" style="margin-top:8px;">＋ 新增學歷</button></div>`;
+        }
+        return "";
+      }
+
+      function renderEditableBlock(blockId, layoutState) {
+        const blockStyle = getBlockStyle(blockId, layoutState);
+        const style = [
+          blockStyle.fontSize ? `font-size:${blockStyle.fontSize}px;` : "",
+          blockStyle.padding ? `padding:${blockStyle.padding}px;` : ""
+        ].join("");
+        return `
+          <section
+            class="editable-block ${state.selectedBlock === blockId ? "active" : ""}"
+            data-block-id="${escapeHtml(blockId)}"
+            draggable="true"
+            style="${style}"
+          >
+            <div class="block-hint">${escapeHtml(blockLabels[blockId])}</div>
+            ${renderBlockContent(blockId, layoutState)}
+          </section>
+        `;
+      }
+
+      function updatePreview(force) {
+        // Don't re-render while user is typing inside a contenteditable element
+        const ae = document.activeElement;
+        if (!force && ae && ae.isContentEditable && $("cvPaper") && $("cvPaper").contains(ae)) return;
+
+        const layoutState = getLayoutState();
+        const paper = $("cvPaper");
+        paper.dataset.template = state.template;
+        paper.dataset.layout = layoutState.layout;
+        paper.style.setProperty("--sidebar-width", `${layoutState.sidebarWidth}px`);
+        paper.style.setProperty("--base-font-size", `${layoutState.baseFontSize}px`);
+        paper.style.setProperty("--section-gap", `${layoutState.sectionGap}px`);
+        paper.style.fontFamily = getFontStack(layoutState.fontFamily);
+
+        $("sidebarRegion").innerHTML = layoutState.regions.sidebar.map((blockId) => renderEditableBlock(blockId, layoutState)).join("");
+        $("mainRegion").innerHTML = layoutState.regions.main.map((blockId) => renderEditableBlock(blockId, layoutState)).join("");
+      }
+
+      function syncInputs() {
+        fields.forEach((field) => {
+          const node = $(field);
+          if (node) node.value = state.data[field] || "";
+        });
+        $("supabaseUrl").value = state.config.supabaseUrl || "";
+        $("supabaseAnonKey").value = state.config.supabaseAnonKey || "";
+        $("siteUrl").value = state.config.siteUrl || "";
+        $("defaultTemplateSelect").value = state.config.defaultTemplate || "n-tech";
+        syncRuntimeConfigStatus();
+      }
+
+      function syncRuntimeConfigStatus() {
+        const node = $("runtimeConfigStatus");
+        const runtimeConfig = typeof window.CV_STUDIO_CONFIG === "object" && window.CV_STUDIO_CONFIG
+          ? window.CV_STUDIO_CONFIG
+          : null;
+
+        if (!runtimeConfig?.supabaseUrl || !runtimeConfig?.supabaseAnonKey) {
+          node.hidden = true;
+          node.textContent = "";
+          node.className = "helper";
+          return;
+        }
+
+        node.hidden = false;
+        node.className = "helper success";
+        node.textContent = "目前已由 config.js 自動帶入 Supabase 設定；你仍可在這裡手動覆蓋並重新套用。";
+      }
+
+      function syncWorkflowUi() {
+        const isTemplateFirst = state.workflowMode === "template-first";
+        document.querySelectorAll("[data-workflow-mode]").forEach((button) => {
+          button.classList.toggle("active", button.dataset.workflowMode === state.workflowMode);
+        });
+        $("workflowDescription").textContent = isTemplateFirst
+          ? "先挑模板，再開始填資料與微調排版。切換模板時，內容會直接套到新模板。"
+          : "先把履歷內容填好，再點其他模板比對版型。切換後仍可繼續改內容與微調排版。";
+        $("templateSectionHint").textContent = isTemplateFirst
+          ? "目前可先挑一個模板開始編輯；之後切到別的模板時，已輸入資料會自動重新排進新模板。"
+          : "先把左側內容填完，再直接點任一模板，就會用你現在的資料自動重新排版。";
+        $("previewModeBadge").textContent = `目前模式：${isTemplateFirst ? "先選模板再編輯" : "先填資料再套版"}`;
+      }
+
+      function syncLayoutControls() {
+        const layoutState = getLayoutState();
+        $("sidebarWidthRange").value = String(layoutState.sidebarWidth);
+        $("baseFontSizeRange").value = String(layoutState.baseFontSize);
+        $("sectionGapRange").value = String(layoutState.sectionGap);
+        $("fontFamilySelect").value = layoutState.fontFamily;
+
+        const blockStyle = getBlockStyle(state.selectedBlock, layoutState);
+        $("selectedBlockLabel").textContent = `${blockLabels[state.selectedBlock] || state.selectedBlock} · ${getBlockRegion(state.selectedBlock, layoutState) === "sidebar" ? "側欄" : "主欄"}`;
+        $("blockRegionSelect").value = getBlockRegion(state.selectedBlock, layoutState);
+        $("blockFontSizeRange").value = String(blockStyle.fontSize || layoutState.baseFontSize);
+        $("blockSpacingRange").value = String(blockStyle.padding || 0);
+      }
+
+      function setSelectedBlock(blockId) {
+        state.selectedBlock = blockId;
+        syncLayoutControls();
+        updatePreview();
+      }
+
+      function setWorkflowMode(mode) {
+        state.workflowMode = mode;
+        localStorage.setItem(WORKFLOW_KEY, mode);
+        syncWorkflowUi();
+      }
+
+      function buildTemplateStrip() {
+        const strip = $("templateStrip");
+        if (!strip) return;
+        strip.innerHTML = TEMPLATE_STRIP_DATA.map(c => `
+          <button class="template-chip${state.template === c.id ? " active" : ""}" type="button" data-template-chip="${c.id}" title="${templateLabels[c.id] || c.id}">
+            <div class="chip-swatch">
+              <div class="chip-swatch-sidebar" style="background:${c.s};"></div>
+              <div class="chip-swatch-main"    style="background:${c.m};"></div>
+            </div>
+            <strong>${c.label}</strong>
+            <div class="rec-dot"></div>
+          </button>`).join("");
+        // wire up clicks
+        strip.querySelectorAll("[data-template-chip]").forEach(btn => {
+          btn.addEventListener("click", () => {
+            updateTemplate(btn.dataset.templateChip);
+            setMessage(`已切換到 ${templateLabels[btn.dataset.templateChip]}。直接點 CV 內容即可編輯文字。`, "success");
+          });
+        });
+      }
+
+      function updateTemplate(templateId, persist = true) {
+        state.template = templateId;
+        // update old grid buttons
+        document.querySelectorAll("[data-template-option]").forEach((button) => {
+          button.classList.toggle("active", button.dataset.templateOption === templateId);
+        });
+        // update new strip chips
+        document.querySelectorAll("[data-template-chip]").forEach((button) => {
+          button.classList.toggle("active", button.dataset.templateChip === templateId);
+        });
+        if (persist) {
+          localStorage.setItem(TEMPLATE_KEY, templateId);
+        }
+        $("syncStatus").innerHTML = `<strong>${escapeHtml(templateLabels[templateId] || templateId)}</strong> · 已選模板`;
+        updatePreview(true);
+        syncLayoutControls();
+      }
+
+      function canUseSupabase() {
+        return Boolean(state.config.supabaseUrl && state.config.supabaseAnonKey && window.supabase);
+      }
+
+      function getRedirectUrl() {
+        const configuredUrl = state.config.siteUrl?.trim();
+        if (!configuredUrl) {
+          return `${window.location.origin}${window.location.pathname}`;
+        }
+
+        try {
+          const normalized = new URL(configuredUrl, window.location.origin);
+          normalized.hash = "";
+          return normalized.toString();
+        } catch {
+          return `${window.location.origin}${window.location.pathname}`;
+        }
+      }
+
+      function readAuthRedirectResult() {
+        const searchParams = new URLSearchParams(window.location.search);
+        const hashParams = new URLSearchParams(window.location.hash.replace(/^#/, ""));
+        const error = searchParams.get("error") || hashParams.get("error");
+        const errorDescription = searchParams.get("error_description") || hashParams.get("error_description");
+        const hasCode = searchParams.has("code");
+        const hasToken = hashParams.has("access_token");
+
+        if (error) {
+          return {
+            type: "error",
+            message: errorDescription || error
+          };
+        }
+
+        if (hasCode || hasToken) {
+          return {
+            type: "success",
+            message: "Google 驗證完成，正在同步你的登入狀態..."
+          };
+        }
+
+        return null;
+      }
+
+      function getAuthCodeFromUrl() {
+        return new URLSearchParams(window.location.search).get("code");
+      }
+
+      function renderAuthDebugPanel() {
+        const items = [];
+        items.push(
+          state.authDebug.hasCode
+            ? createChecklistItem("ok", "回跳網址包含 code", "已偵測到 OAuth 回跳帶回的 code 參數。")
+            : createChecklistItem("warn", "回跳網址沒有 code", "如果你剛完成 Google 登入但這裡沒有 code，代表回跳流程沒有完整走到這個頁面。")
+        );
+
+        items.push(
+          state.authDebug.exchangeStatus === "success"
+            ? createChecklistItem("ok", "exchangeCodeForSession 成功", state.authDebug.exchangeMessage || "已成功把 code 交換成 session。")
+            : state.authDebug.exchangeStatus === "error"
+              ? createChecklistItem("error", "exchangeCodeForSession 失敗", state.authDebug.exchangeMessage || "code 交換 session 時發生錯誤。")
+              : createChecklistItem("warn", "尚未執行 code 交換", "目前還沒有執行或不需要執行 exchangeCodeForSession。")
+        );
+
+        items.push(
+          state.authDebug.sessionPresent
+            ? createChecklistItem("ok", "getSession() 有拿到 session", state.authDebug.sessionUser || "session 已存在，但尚未解析出使用者名稱。")
+            : createChecklistItem("error", "getSession() 沒有拿到 session", state.authDebug.sessionError || "目前 session 為空。")
+        );
+
+        $("authDebugPanel").innerHTML = items.join("");
+      }
+
+      function clearAuthRedirectParams() {
+        const url = new URL(window.location.href);
+        const searchKeys = ["code", "state", "error", "error_code", "error_description"];
+        const hashKeys = ["access_token", "expires_at", "expires_in", "provider_token", "refresh_token", "token_type", "type", "error", "error_code", "error_description"];
+        let changed = false;
+
+        searchKeys.forEach((key) => {
+          if (url.searchParams.has(key)) {
+            url.searchParams.delete(key);
+            changed = true;
+          }
+        });
+
+        const hashParams = new URLSearchParams(url.hash.replace(/^#/, ""));
+        hashKeys.forEach((key) => {
+          if (hashParams.has(key)) {
+            hashParams.delete(key);
+            changed = true;
+          }
+        });
+
+        url.hash = hashParams.toString() ? `#${hashParams.toString()}` : "";
+
+        if (changed) {
+          window.history.replaceState({}, document.title, url.toString());
+        }
+      }
+
+      function getSupabaseCallbackUrl() {
+        const supabaseUrl = state.config.supabaseUrl?.trim();
+        if (!supabaseUrl) return "";
+
+        try {
+          const url = new URL(supabaseUrl);
+          url.pathname = "/auth/v1/callback";
+          url.search = "";
+          url.hash = "";
+          return url.toString();
+        } catch {
+          return "";
+        }
+      }
+
+      function getGoogleAuthorizeUrl() {
+        const supabaseUrl = state.config.supabaseUrl?.trim();
+        if (!supabaseUrl) return "";
+
+        try {
+          const authorizeUrl = new URL("/auth/v1/authorize", supabaseUrl);
+          authorizeUrl.searchParams.set("provider", "google");
+          authorizeUrl.searchParams.set("redirect_to", getRedirectUrl());
+          authorizeUrl.searchParams.set("prompt", "select_account");
+          return authorizeUrl.toString();
+        } catch {
+          return "";
+        }
+      }
+
+      function updateActionButtons() {
+        const readyForLogin = Boolean(getGoogleAuthorizeUrl());
+        const readyForCloud = canUseSupabase();
+        document.querySelectorAll("[data-login-trigger='google']").forEach((button) => {
+          if (button.tagName === "A") {
+            button.href = readyForLogin ? getGoogleAuthorizeUrl() : "#";
+            button.setAttribute("aria-disabled", readyForLogin ? "false" : "true");
+          } else {
+            button.disabled = !readyForLogin;
+          }
+        });
+        $("logoutBtn").disabled = !state.user;
+        $("saveBtn").disabled = !readyForCloud || !state.user;
+        $("loadProfileBtn").disabled = !readyForCloud;
+        $("applyConfigBtn").disabled = false;
+        $("installBtn").disabled = !state.installPrompt;
+      }
+
+      async function ensureDependenciesReady() {
+        const startedAt = Date.now();
+        const timeoutMs = 8000;
+
+        while ((!window.supabase || !window.html2pdf) && Date.now() - startedAt < timeoutMs) {
+          await sleep(150);
+        }
+
+        if (!window.supabase) {
+          setMessage("Supabase 程式庫載入失敗，Google 登入目前無法使用。請重新整理頁面後再試。", "error");
+        }
+
+        if (!window.html2pdf) {
+          setMessage("PDF 匯出程式庫載入失敗，下載 PDF 功能暫時不可用。請重新整理頁面後再試。", "error");
+        }
+
+        updateActionButtons();
+      }
+
+      function renderGoogleImpactChecklist() {
+        const items = [];
+        const usesDeprecatedLibrary = Boolean(
+          document.querySelector('script[src*="apis.google.com/js/platform.js"]') ||
+          document.querySelector(".g-signin2")
+        );
+
+        items.push(
+          usesDeprecatedLibrary
+            ? createChecklistItem("error", "偵測到舊版 Google Sign-In 程式庫", "頁面包含已淘汰的 platform.js 或 g-signin2。這會受 FedCM 強制採用影響，建議改成 GIS 或像目前這樣走 Supabase OAuth redirect。")
+            : createChecklistItem("ok", "未使用已淘汰的 Google Sign-In 前端程式庫", "目前頁面沒有載入 platform.js、gapi.auth2 或 g-signin2，因此不需要為這個前端流程額外接 FedCM 相容參數。")
+        );
+
+        items.push(
+          canUseSupabase()
+            ? createChecklistItem("ok", "Supabase OAuth 設定已填入", "已提供 Supabase URL 與 Anon Key，可以啟動 Google OAuth redirect flow。")
+            : createChecklistItem("warn", "Supabase OAuth 設定尚未完成", "請先填入 Supabase URL 與 Anon Key，並在 Supabase Authentication > Providers 啟用 Google。")
+        );
+
+        const redirectUrl = getRedirectUrl();
+        items.push(
+          window.location.protocol === "file:"
+            ? createChecklistItem("error", "目前是 file:// 開啟", "Google OAuth 不能直接在本機檔案模式使用。請改用 localhost 或正式網站網址，並把該網址加入 Supabase 與 Google Cloud 的允許清單。")
+            : createChecklistItem("ok", "登入流程使用標準瀏覽器 redirect", `目前回跳網址為 ${redirectUrl}。請確認它已加入 Supabase 的 Site URL 與 Redirect URLs。`)
+        );
+
+        items.push(
+          createChecklistItem("warn", "FedCM 影響說明", "FedCM 主要影響舊版 Google Sign-In JavaScript 按鈕與 One Tap。這個專案目前由 Supabase 代管 Google OAuth 流程，前端受影響較低，但仍需實際在 Chrome 上測一次登入與回跳。")
+        );
+
+        $("googleImpactChecklist").innerHTML = items.join("");
+        renderOauthSetupHints();
+      }
+
+      function renderOauthSetupHints() {
+        const redirectUrl = getRedirectUrl();
+        const callbackUrl = getSupabaseCallbackUrl();
+        const items = [];
+
+        if (redirectUrl) {
+          items.push(createChecklistItem("ok", "Supabase Site URL", redirectUrl));
+          items.push(createChecklistItem("ok", "Supabase Redirect URLs", `${redirectUrl} 或 ${redirectUrl}*`));
+          items.push(createChecklistItem("ok", "Google Authorized JavaScript origin", new URL(redirectUrl).origin));
+        }
+
+        if (callbackUrl) {
+          items.push(createChecklistItem("ok", "Google Authorized redirect URI", callbackUrl));
+        }
+
+        $("oauthSetupHints").innerHTML = items.join("");
+        renderAuthDiagnostics();
+        renderAuthDebugPanel();
+      }
+
+      function renderAuthDiagnostics() {
+        const authorizeUrl = getGoogleAuthorizeUrl();
+        const items = [];
+
+        items.push(
+          window.supabase
+            ? createChecklistItem("ok", "Supabase 瀏覽器 SDK 已載入", "已偵測到 window.supabase，可處理 session 同步與雲端資料讀寫。")
+            : createChecklistItem("error", "Supabase 瀏覽器 SDK 未載入", "目前偵測不到 window.supabase。Google 按鈕會改走直接 authorize URL，但登入回來後可能無法同步 session。")
+        );
+
+        items.push(
+          state.config.supabaseUrl && state.config.supabaseAnonKey
+            ? createChecklistItem("ok", "Supabase Runtime Config 完整", "Supabase URL 與 anon key 都已載入。")
+            : createChecklistItem("warn", "Supabase Runtime Config 不完整", "請確認 config.js 或設定面板中的 Supabase URL 與 anon key 是否正確。")
+        );
+
+        items.push(
+          authorizeUrl
+            ? createChecklistItem("ok", "Google authorize URL 已建立", authorizeUrl)
+            : createChecklistItem("error", "Google authorize URL 建立失敗", "目前無法產生 Google authorize URL，通常表示 Supabase URL 格式有誤。")
+        );
+
+        $("authDiagnostics").innerHTML = items.join("");
+        renderAuthDebugPanel();
+      }
+
+      function bindAuthListener() {
+        if (!state.client || authSubscription) return;
+        const { data } = state.client.auth.onAuthStateChange(async (event, session) => {
+          state.user = session?.user || null;
+          updateAuthUi();
+          updateActionButtons();
+
+          if (event === "SIGNED_IN" && state.user) {
+            await loadProfile();
+            setMessage("Google 登入成功，已連接到你的雲端 CV。", "success");
+          }
+
+          if (event === "SIGNED_OUT") {
+            setMessage("已登出，目前回到本機草稿模式。");
+          }
+        });
+        authSubscription = data.subscription;
+      }
+
+      function makeClient() {
+        if (!canUseSupabase()) {
+          if (authSubscription) {
+            authSubscription.unsubscribe();
+            authSubscription = null;
+          }
+          state.client = null;
+          updateActionButtons();
+          renderGoogleImpactChecklist();
+          return null;
+        }
+
+        if (state.client) {
+          bindAuthListener();
+          updateActionButtons();
+          renderGoogleImpactChecklist();
+          return state.client;
+        }
+
+        state.client = window.supabase.createClient(state.config.supabaseUrl, state.config.supabaseAnonKey, {
+          auth: {
+            flowType: "pkce",
+            detectSessionInUrl: true,
+            persistSession: true,
+            autoRefreshToken: true
+          }
+        });
+        bindAuthListener();
+        updateActionButtons();
+        renderGoogleImpactChecklist();
+        return state.client;
+      }
+
+      async function refreshSession() {
+        if (!makeClient()) {
+          updateAuthUi();
+          return;
+        }
+        const authCode = getAuthCodeFromUrl();
+        state.authDebug.hasCode = Boolean(authCode);
+        if (authCode) {
+          const { error: exchangeError } = await state.client.auth.exchangeCodeForSession(authCode);
+          if (exchangeError) {
+            state.authDebug.exchangeStatus = "error";
+            state.authDebug.exchangeMessage = exchangeError.message;
+            setMessage(`Google 登入回跳處理失敗：${exchangeError.message}`, "error");
+          } else {
+            state.authDebug.exchangeStatus = "success";
+            state.authDebug.exchangeMessage = "已成功完成 code 交換。";
+          }
+        } else {
+          state.authDebug.exchangeStatus = "idle";
+          state.authDebug.exchangeMessage = "";
+        }
+        const { data, error } = await state.client.auth.getSession();
+        if (error) {
+          state.authDebug.sessionPresent = false;
+          state.authDebug.sessionUser = "";
+          state.authDebug.sessionError = error.message;
+          renderAuthDebugPanel();
+          setMessage(`無法取得登入狀態：${error.message}`, "error");
+          return;
+        }
+        state.user = data.session?.user || null;
+        state.authDebug.sessionPresent = Boolean(data.session);
+        state.authDebug.sessionUser = state.user
+          ? `${state.user.user_metadata?.full_name || state.user.email || "已登入使用者"}`
+          : "";
+        state.authDebug.sessionError = data.session ? "" : "Supabase 回傳 session 為空。";
+        updateAuthUi();
+        updateActionButtons();
+        renderAuthDebugPanel();
+        if (state.user) {
+          await loadProfile();
+        }
+        if (state.pendingAuthMessage) {
+          const message = state.pendingAuthMessage.status === "success" && state.user
+            ? { text: "Google 登入成功，已完成帳號連接並同步登入狀態。", type: "success" }
+            : state.pendingAuthMessage;
+          setMessage(message.text, message.type);
+          state.pendingAuthMessage = null;
+          clearAuthRedirectParams();
+        }
+      }
+
+      function updateAuthUi() {
+        if (state.user) {
+          const display = state.user.user_metadata?.full_name || state.user.email || "已登入";
+          $("authStatus").innerHTML = `<strong>${escapeHtml(display)}</strong> · Google 已登入`;
+          $("headerAuthStatus").innerHTML = `<strong>${escapeHtml(display)}</strong> · Google 已登入`;
+        } else {
+          $("authStatus").innerHTML = "<strong>尚未登入</strong> · 可先編輯草稿";
+          $("headerAuthStatus").innerHTML = "<strong>尚未登入</strong> · 可先編輯草稿";
+        }
+        renderGoogleImpactChecklist();
+      }
+
+      async function signInWithGoogle(event) {
+        event?.preventDefault();
+        if (!state.config.supabaseUrl?.trim()) {
+          setMessage("請先在 Supabase 設定中填入 URL。", "error");
+          return;
+        }
+        if (window.location.protocol === "file:") {
+          setMessage("Google 登入不能直接在 file:// 本機檔案模式下使用，請改用 localhost 或正式網站網址開啟。", "error");
+          return;
+        }
+        makeClient();
+        const authorizeUrl = getGoogleAuthorizeUrl();
+        if (!authorizeUrl) {
+          setMessage("無法建立 Google 登入網址，請檢查 Supabase URL 設定。", "error");
+          return;
+        }
+        setMessage("正在前往 Google 登入，登入完成後會自動回到這個頁面。");
+        window.location.assign(authorizeUrl);
+      }
+
+      async function signOut() {
+        if (!state.client) return;
+        const { error } = await state.client.auth.signOut();
+        if (error) {
+          setMessage(`登出失敗：${error.message}`, "error");
+          return;
+        }
+        state.user = null;
+        updateAuthUi();
+        updateActionButtons();
+      }
+
+      async function loadProfile() {
+        if (!state.client || !state.user) return;
+        const { data, error } = await state.client
+          .from("cv_profiles")
+          .select("content, template_id")
+          .eq("user_id", state.user.id)
+          .maybeSingle();
+
+        if (error) {
+          setMessage(`讀取雲端 CV 失敗：${error.message}`, "error");
+          return;
+        }
+
+        if (data?.content) {
+          const content = data.content || {};
+          state.data = {
+            ...defaultData,
+            ...Object.fromEntries(Object.entries(content).filter(([key]) => !key.startsWith("_")))
+          };
+          if (content._layoutPrefs) {
+            state.layoutPrefs = content._layoutPrefs;
+            saveJson(LAYOUT_KEY, state.layoutPrefs);
+          }
+          if (content._workflowMode) {
+            state.workflowMode = content._workflowMode;
+            localStorage.setItem(WORKFLOW_KEY, state.workflowMode);
+          }
+          saveJson(STORAGE_KEY, state.data);
+          syncInputs();
+          updatePreview();
+          syncWorkflowUi();
+          syncLayoutControls();
+          updateTemplate(data.template_id || state.template);
+          setMessage("已從雲端載入你的 CV。", "success");
+        } else {
+          setMessage("目前沒有雲端 CV，先從這份草稿開始編輯即可。");
+        }
+      }
+
+      async function saveProfile() {
+        if (!state.user) {
+          setMessage("請先用 Google 登入，之後就能把 CV 存到雲端。", "error");
+          return;
+        }
+        if (!state.client) {
+          setMessage("Supabase 尚未設定完成。", "error");
+          return;
+        }
+
+        const payload = {
+          user_id: state.user.id,
+          email: state.user.email,
+          full_name: state.user.user_metadata?.full_name || state.data.name,
+          template_id: state.template,
+          content: {
+            ...state.data,
+            _layoutPrefs: state.layoutPrefs,
+            _workflowMode: state.workflowMode
+          }
+        };
+
+        const { error } = await state.client.from("cv_profiles").upsert(payload, {
+          onConflict: "user_id"
+        });
+
+        if (error) {
+          setMessage(`儲存失敗：${error.message}`, "error");
+          return;
+        }
+
+        $("syncStatus").innerHTML = `<strong>${escapeHtml(templateLabels[state.template])}</strong> · 已同步雲端`;
+        setMessage("CV 已成功儲存到雲端，之後登入同一個 Google 帳號就能繼續編輯。", "success");
+      }
+
+      async function downloadPdf() {
+        const paper = $("cvPaper");
+        const filenameBase = (state.data.name || "cv").trim().replace(/\s+/g, "-").toLowerCase();
+        setMessage("正在產生 PDF，請稍候...");
+        try {
+          await window.html2pdf().set({
+            margin: 0,
+            filename: `${filenameBase || "cv"}.pdf`,
+            image: { type: "jpeg", quality: 0.98 },
+            html2canvas: { scale: 2, useCORS: true, backgroundColor: "#ffffff" },
+            jsPDF: { unit: "mm", format: "a4", orientation: "portrait" },
+            pagebreak: { mode: ["avoid-all", "css", "legacy"] }
+          }).from(paper).save();
+          setMessage("PDF 已開始下載。", "success");
+        } catch (error) {
+          setMessage(`PDF 下載失敗：${error.message}`, "error");
+        }
+      }
+
+      function attachInputListeners() {
+        fields.forEach((field) => {
+          const node = $(field);
+          if (!node) return;
+          node.addEventListener("input", (event) => {
+            state.data[field] = event.target.value;
+            saveJson(STORAGE_KEY, state.data);
+            updatePreview();
+          });
+        });
+
+        document.querySelectorAll("[data-template-option]").forEach((button) => {
+          button.addEventListener("click", () => {
+            updateTemplate(button.dataset.templateOption);
+            setMessage(
+              state.workflowMode === "content-first"
+                ? `已把目前資料套用到 ${templateLabels[button.dataset.templateOption]}。你可以繼續改內容或微調排版。`
+                : `已切換到 ${templateLabels[button.dataset.templateOption]}。你可以直接繼續編輯內容與排版。`,
+              "success"
+            );
+          });
+        });
+
+        document.querySelectorAll("[data-workflow-mode]").forEach((button) => {
+          button.addEventListener("click", () => {
+            setWorkflowMode(button.dataset.workflowMode);
+          });
+        });
+
+        $("sidebarWidthRange").addEventListener("input", (event) => {
+          patchCurrentLayout((layoutState) => {
+            layoutState.sidebarWidth = Number(event.target.value);
+          });
+        });
+        $("baseFontSizeRange").addEventListener("input", (event) => {
+          patchCurrentLayout((layoutState) => {
+            layoutState.baseFontSize = Number(event.target.value);
+          });
+        });
+        $("sectionGapRange").addEventListener("input", (event) => {
+          patchCurrentLayout((layoutState) => {
+            layoutState.sectionGap = Number(event.target.value);
+          });
+        });
+        $("fontFamilySelect").addEventListener("change", (event) => {
+          patchCurrentLayout((layoutState) => {
+            layoutState.fontFamily = event.target.value;
+          });
+        });
+        $("blockRegionSelect").addEventListener("change", (event) => {
+          patchCurrentLayout((layoutState) => {
+            const currentRegion = getBlockRegion(state.selectedBlock, layoutState);
+            const nextRegion = event.target.value;
+            if (currentRegion === nextRegion) return;
+            layoutState.regions[currentRegion] = layoutState.regions[currentRegion].filter((item) => item !== state.selectedBlock);
+            layoutState.regions[nextRegion].unshift(state.selectedBlock);
+          });
+        });
+        $("blockFontSizeRange").addEventListener("input", (event) => {
+          patchCurrentLayout((layoutState) => {
+            layoutState.blockStyles[state.selectedBlock] = layoutState.blockStyles[state.selectedBlock] || {};
+            layoutState.blockStyles[state.selectedBlock].fontSize = Number(event.target.value);
+          });
+        });
+        $("blockSpacingRange").addEventListener("input", (event) => {
+          patchCurrentLayout((layoutState) => {
+            layoutState.blockStyles[state.selectedBlock] = layoutState.blockStyles[state.selectedBlock] || {};
+            layoutState.blockStyles[state.selectedBlock].padding = Number(event.target.value);
+          });
+        });
+        $("moveBlockUpBtn").addEventListener("click", () => {
+          patchCurrentLayout((layoutState) => {
+            const region = getBlockRegion(state.selectedBlock, layoutState);
+            const list = layoutState.regions[region];
+            const index = list.indexOf(state.selectedBlock);
+            if (index > 0) {
+              [list[index - 1], list[index]] = [list[index], list[index - 1]];
+            }
+          });
+        });
+        $("moveBlockDownBtn").addEventListener("click", () => {
+          patchCurrentLayout((layoutState) => {
+            const region = getBlockRegion(state.selectedBlock, layoutState);
+            const list = layoutState.regions[region];
+            const index = list.indexOf(state.selectedBlock);
+            if (index > -1 && index < list.length - 1) {
+              [list[index + 1], list[index]] = [list[index], list[index + 1]];
+            }
+          });
+        });
+        $("resetBlockBtn").addEventListener("click", () => {
+          patchCurrentLayout((layoutState) => {
+            const base = templateDefinitions[state.template];
+            delete layoutState.blockStyles[state.selectedBlock];
+            const targetRegion = getBlockRegion(state.selectedBlock, layoutState);
+            layoutState.regions[targetRegion] = layoutState.regions[targetRegion].filter((item) => item !== state.selectedBlock);
+            layoutState.regions.sidebar = layoutState.regions.sidebar.filter((item) => item !== state.selectedBlock);
+            layoutState.regions.main = layoutState.regions.main.filter((item) => item !== state.selectedBlock);
+            const baseRegion = base.regions.sidebar.includes(state.selectedBlock) ? "sidebar" : "main";
+            layoutState.regions[baseRegion].push(state.selectedBlock);
+          });
+        });
+        $("resetTemplateLayoutBtn").addEventListener("click", () => {
+          const nextPrefs = { ...state.layoutPrefs };
+          delete nextPrefs[state.template];
+          state.layoutPrefs = nextPrefs;
+          saveJson(LAYOUT_KEY, state.layoutPrefs);
+          updatePreview();
+          syncLayoutControls();
+          setMessage(`已重設 ${templateLabels[state.template]} 的排版設定。`, "success");
+        });
+        $("cvPaper").addEventListener("click", (event) => {
+          const block = event.target.closest("[data-block-id]");
+          if (!block) return;
+          setSelectedBlock(block.dataset.blockId);
+        });
+        $("cvPaper").addEventListener("dragstart", (event) => {
+          const block = event.target.closest("[data-block-id]");
+          if (!block) return;
+          state.selectedBlock = block.dataset.blockId;
+          block.classList.add("dragging");
+          event.dataTransfer.effectAllowed = "move";
+          event.dataTransfer.setData("text/plain", block.dataset.blockId);
+          syncLayoutControls();
+        });
+        $("cvPaper").addEventListener("dragend", () => {
+          document.querySelectorAll(".editable-block.dragging").forEach((node) => node.classList.remove("dragging"));
+          document.querySelectorAll(".cv-region.drop-target").forEach((node) => node.classList.remove("drop-target"));
+        });
+        $("cvPaper").addEventListener("dragover", (event) => {
+          const region = event.target.closest("[data-region]");
+          if (!region) return;
+          event.preventDefault();
+          document.querySelectorAll(".cv-region.drop-target").forEach((node) => node.classList.remove("drop-target"));
+          region.classList.add("drop-target");
+        });
+        $("cvPaper").addEventListener("drop", (event) => {
+          const regionNode = event.target.closest("[data-region]");
+          if (!regionNode) return;
+          event.preventDefault();
+          const draggedBlockId = event.dataTransfer.getData("text/plain");
+          const targetBlock = event.target.closest("[data-block-id]");
+          const targetRegion = regionNode.dataset.region;
+          patchCurrentLayout((layoutState) => {
+            layoutState.regions.sidebar = layoutState.regions.sidebar.filter((item) => item !== draggedBlockId);
+            layoutState.regions.main = layoutState.regions.main.filter((item) => item !== draggedBlockId);
+            const targetList = layoutState.regions[targetRegion];
+            if (!targetBlock || targetBlock.dataset.blockId === draggedBlockId) {
+              targetList.push(draggedBlockId);
+              return;
+            }
+            const insertIndex = targetList.indexOf(targetBlock.dataset.blockId);
+            targetList.splice(insertIndex < 0 ? targetList.length : insertIndex, 0, draggedBlockId);
+          });
+          setSelectedBlock(draggedBlockId);
+        });
+
+        $("applyConfigBtn").addEventListener("click", () => {
+          state.config.supabaseUrl = $("supabaseUrl").value.trim();
+          state.config.supabaseAnonKey = $("supabaseAnonKey").value.trim();
+          state.config.siteUrl = $("siteUrl").value.trim() || getRedirectUrl();
+          state.config.defaultTemplate = $("defaultTemplateSelect").value;
+          saveJson(CONFIG_KEY, state.config);
+          if (!localStorage.getItem(TEMPLATE_KEY)) {
+            updateTemplate(state.config.defaultTemplate);
+          }
+          makeClient();
+          setMessage("Supabase 設定已套用。接下來可以按 Google 登入測試。", "success");
+        });
+
+        $("loadProfileBtn").addEventListener("click", async () => {
+          await refreshSession();
+        });
+
+        document.querySelectorAll("[data-login-trigger='google']").forEach((button) => {
+          button.addEventListener("click", signInWithGoogle);
+        });
+        $("logoutBtn").addEventListener("click", signOut);
+        $("saveBtn").addEventListener("click", saveProfile);
+        $("downloadPdfBtn").addEventListener("click", downloadPdf);
+        $("startEditingBtn").addEventListener("click", () => {
+          $("editorSection").scrollIntoView({ behavior: "smooth", block: "start" });
+        });
+        $("installBtn").addEventListener("click", async () => {
+          if (!state.installPrompt) return;
+          state.installPrompt.prompt();
+          await state.installPrompt.userChoice;
+          state.installPrompt = null;
+          $("installBtn").hidden = true;
+        });
+      }
+
+      function registerServiceWorker() {
+        if ("serviceWorker" in navigator) {
+          navigator.serviceWorker.register("./sw.js").catch(() => {});
+        }
+      }
+
+      function bootstrapInstallPrompt() {
+        window.addEventListener("beforeinstallprompt", (event) => {
+          event.preventDefault();
+          state.installPrompt = event;
+          $("installBtn").hidden = false;
+          updateActionButtons();
+        });
+      }
+
+      /* ══════════════════════════════════════════════════════
+         WYSIWYG – contenteditable sync helpers
+      ══════════════════════════════════════════════════════ */
+
+      function serializeEntries(entries) {
+        return entries.map(e =>
+          [e.title, e.subtitle, e.date, e.body].map(s => (s || "").trim()).join(" | ")
+        ).join("\n\n");
+      }
+
+      function syncContentEditable(el) {
+        const field = el.dataset.field;
+        const syncType = el.dataset.sync;
+        if (!field) return;
+
+        if (syncType === "text") {
+          state.data[field] = el.textContent.trim();
+        } else if (syncType === "list-item") {
+          const idx = parseInt(el.dataset.li, 10);
+          let lines = splitLines(field === "skills"
+            ? state.data[field].replaceAll(",", "\n")
+            : state.data[field]);
+          if (!isNaN(idx) && idx < lines.length) lines[idx] = el.textContent.trim();
+          state.data[field] = field === "skills" ? lines.join(", ") : lines.join("\n");
+        } else if (syncType === "entry-field") {
+          const ei = parseInt(el.dataset.ei, 10);
+          const ep = el.dataset.ep;
+          const entries = parseEntries(state.data[field]);
+          if (!isNaN(ei) && entries[ei] && ep) entries[ei][ep] = el.textContent.trim();
+          state.data[field] = serializeEntries(entries);
+        }
+
+        saveJson(STORAGE_KEY, state.data);
+        // keep hidden form inputs in sync
+        const inp = $(field);
+        if (inp) inp.value = state.data[field] || "";
+      }
+
+      /* ── "＋ add item" buttons inside the preview ── */
+      function handleWysiwygAdd(target) {
+        const addTo = target.dataset.addTo;
+        if (!addTo) return;
+
+        if (addTo === "skills") {
+          const cur = (state.data.skills || "").trim();
+          state.data.skills = cur ? cur + ", 新技能" : "新技能";
+        } else if (addTo === "highlights") {
+          const cur = (state.data.highlights || "").trim();
+          state.data.highlights = cur ? cur + "\n新亮點" : "新亮點";
+        } else if (addTo === "awards") {
+          const cur = (state.data.awards || "").trim();
+          state.data.awards = cur ? cur + "\n新獎項" : "新獎項";
+        } else if (["experience", "projects", "education"].includes(addTo)) {
+          const placeholders = {
+            experience:  "新職稱 | 單位 | 日期 | 內容說明",
+            projects:    "新專案名 | 類型 | 日期 | 內容說明",
+            education:   "學校 / 科系 | 學位 | 日期 | 說明"
+          };
+          const cur = (state.data[addTo] || "").trim();
+          state.data[addTo] = cur ? cur + "\n\n" + placeholders[addTo] : placeholders[addTo];
+        }
+
+        saveJson(STORAGE_KEY, state.data);
+        const inp = $(addTo);
+        if (inp) inp.value = state.data[addTo] || "";
+        updatePreview(true);
+      }
+
+      /* ══════════════════════════════════════════════════════
+         WYSIWYG – floating format toolbar
+      ══════════════════════════════════════════════════════ */
+      let _fmtHideTimer = null;
+
+      function positionFormatToolbar(rect) {
+        const tb = $("formatToolbar");
+        if (!tb) return;
+        const x = rect.left + rect.width / 2 + window.scrollX;
+        const y = rect.top  + window.scrollY - tb.offsetHeight - 10;
+        tb.style.left = `${x}px`;
+        tb.style.top  = `${Math.max(window.scrollY + 6, y)}px`;
+        tb.classList.add("visible");
+      }
+
+      function hideFormatToolbar() {
+        const tb = $("formatToolbar");
+        if (tb) tb.classList.remove("visible");
+      }
+
+      function updateFmtColorPreview(color) {
+        const prev = $("fmtColorPreview");
+        if (prev) {
+          prev.style.color       = color;
+          prev.style.borderColor = color;
+        }
+      }
+
+      function attachFormatToolbar() {
+        const paper = $("cvPaper");
+        if (!paper) return;
+
+        /* show toolbar on selection within cvPaper */
+        document.addEventListener("selectionchange", () => {
+          clearTimeout(_fmtHideTimer);
+          const sel = window.getSelection();
+          if (!sel || sel.isCollapsed || !sel.rangeCount) {
+            _fmtHideTimer = setTimeout(hideFormatToolbar, 200);
+            return;
+          }
+          const range = sel.getRangeAt(0);
+          if (!paper.contains(range.commonAncestorContainer)) {
+            _fmtHideTimer = setTimeout(hideFormatToolbar, 200);
+            return;
+          }
+          const rect = range.getBoundingClientRect();
+          if (rect.width === 0) { hideFormatToolbar(); return; }
+          positionFormatToolbar(rect);
+        });
+
+        /* toolbar buttons */
+        $("formatToolbar").addEventListener("mousedown", (e) => {
+          e.preventDefault(); // keep focus in contenteditable
+
+          const btn = e.target.closest("[data-cmd]");
+          if (!btn) return;
+          const cmd = btn.dataset.cmd;
+
+          if (cmd === "sz-" || cmd === "sz+") {
+            const sel = window.getSelection();
+            if (!sel.rangeCount) return;
+            const range = sel.getRangeAt(0);
+            const span = document.createElement("span");
+            const delta = cmd === "sz+" ? 1.15 : 0.87;
+            span.style.fontSize = `${delta}em`;
+            try { range.surroundContents(span); }
+            catch { /* skip cross-element selections */ }
+            // update size input
+            const anchor = sel.anchorNode?.parentElement;
+            if (anchor) {
+              const cs = window.getComputedStyle(anchor);
+              $("fmtFontSize").value = Math.round(parseFloat(cs.fontSize));
+            }
+          } else {
+            document.execCommand(cmd, false, null);
+          }
+        });
+
+        /* font color */
+        $("fmtFontColor").addEventListener("input", (e) => {
+          document.execCommand("foreColor", false, e.target.value);
+          updateFmtColorPreview(e.target.value);
+        });
+        $("fmtFontColor").addEventListener("change", (e) => {
+          document.execCommand("foreColor", false, e.target.value);
+          updateFmtColorPreview(e.target.value);
+        });
+
+        /* background / highlight color */
+        $("fmtBgColor").addEventListener("input", (e) => {
+          document.execCommand("hiliteColor", false, e.target.value);
+        });
+
+        /* font size number input */
+        $("fmtFontSize").addEventListener("change", (e) => {
+          const px = Math.min(72, Math.max(8, parseInt(e.target.value, 10)));
+          if (!isNaN(px)) {
+            const sel = window.getSelection();
+            if (!sel.rangeCount) return;
+            const range = sel.getRangeAt(0);
+            const span = document.createElement("span");
+            span.style.fontSize = `${px}px`;
+            try { range.surroundContents(span); } catch { /* ignore */ }
+          }
+        });
+      }
+
+      /* ══════════════════════════════════════════════════════
+         WYSIWYG – contenteditable event wiring on cvPaper
+      ══════════════════════════════════════════════════════ */
+      function attachWysiwygListeners() {
+        const paper = $("cvPaper");
+        if (!paper) return;
+
+        let _ceDebounce = null;
+
+        /* debounced sync while typing */
+        paper.addEventListener("input", (e) => {
+          const el = e.target.closest("[contenteditable='true'][data-field]");
+          if (!el) return;
+          clearTimeout(_ceDebounce);
+          _ceDebounce = setTimeout(() => syncContentEditable(el), 350);
+        });
+
+        /* final sync on blur + re-render structured blocks */
+        paper.addEventListener("focusout", (e) => {
+          clearTimeout(_ceDebounce);
+          const el = e.target.closest("[contenteditable='true'][data-field]");
+          if (!el) return;
+          syncContentEditable(el);
+          // re-render only structural blocks (skills pills, timeline) to refresh markup
+          const field = el.dataset.field;
+          const structural = ["skills", "highlights", "awards", "experience", "projects", "education"];
+          if (structural.includes(field) && el.dataset.sync !== "text") {
+            setTimeout(() => updatePreview(true), 0);
+          }
+        });
+
+        /* "＋ add" buttons */
+        paper.addEventListener("click", (e) => {
+          const addBtn = e.target.closest("[data-add-to]");
+          if (addBtn) {
+            e.preventDefault();
+            handleWysiwygAdd(addBtn);
+          }
+          /* block selection for layout hint */
+          const block = e.target.closest("[data-block-id]");
+          if (block && !e.target.isContentEditable) {
+            setSelectedBlock(block.dataset.blockId);
+          }
+        });
+      }
+
+      /* ══════════════════════════════════════════════════════
+         JOB PRESETS – attach chip handlers
+      ══════════════════════════════════════════════════════ */
+      let _activeJobChip = null;
+
+      function applyJobPreset(jobId) {
+        const preset = JOB_PRESETS[jobId];
+        if (!preset) return;
+
+        const alreadyActive = _activeJobChip === jobId;
+
+        // clear all chip active states and template recommendations
+        document.querySelectorAll(".job-chip").forEach(c => c.classList.remove("active"));
+        document.querySelectorAll(".template-chip").forEach(c => {
+          c.classList.remove("recommended", "recommended-alt");
+        });
+
+        if (alreadyActive) {
+          // toggle off
+          _activeJobChip = null;
+          setMessage("已清除職位推薦。", "");
+          return;
+        }
+
+        _activeJobChip = jobId;
+        document.querySelector(`.job-chip[data-job="${jobId}"]`)?.classList.add("active");
+
+        // highlight recommended templates in the strip
+        document.querySelector(`.template-chip[data-template-chip="${preset.template}"]`)?.classList.add("recommended");
+        document.querySelector(`.template-chip[data-template-chip="${preset.alt}"]`)?.classList.add("recommended-alt");
+
+        // auto-apply primary template
+        updateTemplate(preset.template);
+
+        // scroll the strip to show the recommended chip
+        const recChip = document.querySelector(`.template-chip[data-template-chip="${preset.template}"]`);
+        if (recChip) recChip.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "center" });
+
+        setMessage(
+          `${preset.label}推薦使用「${templateLabels[preset.template]}」模板（★），備選「${templateLabels[preset.alt]}」（●）。`,
+          "success"
+        );
+      }
+
+      function attachJobChipListeners() {
+        document.querySelectorAll(".job-chip[data-job]").forEach(chip => {
+          chip.addEventListener("click", () => applyJobPreset(chip.dataset.job));
+        });
+      }
+
+      /* ══════════════════════════════════════════════════════
+         WYSIWYG – add some helpful CSS for the add buttons
+      ══════════════════════════════════════════════════════ */
+      (function injectWysiwygHelperStyles() {
+        const s = document.createElement("style");
+        s.textContent = `
+          .wysiwyg-add-btn {
+            display: inline-flex; align-items: center; gap: 4px;
+            padding: 4px 10px; border-radius: 999px;
+            border: 1px dashed rgba(49,40,27,0.22);
+            background: rgba(255,255,255,0.55); color: var(--muted);
+            font-size: 11px; cursor: pointer;
+            transition: all 0.15s ease; transform: none; box-shadow: none;
+          }
+          .wysiwyg-add-btn:hover {
+            border-color: var(--accent); color: var(--accent);
+            background: rgba(255,255,255,0.85);
+          }
+          .cv-paper .block-hint {
+            pointer-events: none;
+          }
+        `;
+        document.head.appendChild(s);
+      })();
+
+      async function init() {
+        await ensureDependenciesReady();
+        const authRedirectResult = readAuthRedirectResult();
+        if (authRedirectResult) {
+          state.pendingAuthMessage = {
+            status: authRedirectResult.type,
+            text: authRedirectResult.type === "error"
+              ? `Google 登入回跳失敗：${authRedirectResult.message}`
+              : authRedirectResult.message,
+            type: authRedirectResult.type === "error" ? "error" : ""
+          };
+        }
+        syncInputs();
+        syncWorkflowUi();
+        buildTemplateStrip();          // ← build strip before updateTemplate
+        updateTemplate(state.template || state.config.defaultTemplate || "n-tech", false);
+        updatePreview(true);
+        syncLayoutControls();
+        attachInputListeners();
+        attachWysiwygListeners();      // ← contenteditable sync
+        attachFormatToolbar();         // ← floating format toolbar
+        attachJobChipListeners();      // ← job preset chips
+        bootstrapInstallPrompt();
+        registerServiceWorker();
+        updateActionButtons();
+        renderGoogleImpactChecklist();
+        await refreshSession();
+      }
+
+      init();
+    })();
+
+    /* ===== PORTFOLIO MODULE ===== */
+    (() => {
+      const PF_KEY = "pf-studio-local-v1";
+      const PF_TAB_KEY = "cv-studio-active-tab";
+
+      const pfThemes = {
+        slate:  { label: "深藍灰", color: "#404b5a" },
+        brick:  { label: "磚紅",   color: "#8b4a42" },
+        rose:   { label: "玫瑰棕", color: "#9d6565" },
+        indigo: { label: "深靛藍", color: "#3a4f7a" },
+        forest: { label: "墨綠",   color: "#3d6b5e" },
+        umber:  { label: "深棕",   color: "#5a4032" },
+      };
+
+      function uid() { return Math.random().toString(36).slice(2, 9); }
+      function $el(id) { return document.getElementById(id); }
+      function esc(s) {
+        return String(s || "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+      }
+
+      const pfDefault = {
+        title: "高科大化工材料N",
+        studentName: "王宇錡",
+        school: "私立康橋高中 3年1201班",
+        coverImageUrl: "",
+        accentTheme: "slate",
+        chapters: [{
+          id: uid(),
+          title: "探究實作、國際服務、哈佛交流",
+          sections: [
+            { id: uid(), header: "物理探究與科學傳播", body: "高二下參加全國高中物理探究實作競賽，初賽以全台優等入選校內賽訓。", imageUrl: "", imageCaption: "" }
+          ]
+        }]
+      };
+
+      let pf = (() => {
+        try {
+          const s = localStorage.getItem(PF_KEY);
+          return s ? JSON.parse(s) : JSON.parse(JSON.stringify(pfDefault));
+        } catch { return JSON.parse(JSON.stringify(pfDefault)); }
+      })();
+
+      function save() { localStorage.setItem(PF_KEY, JSON.stringify(pf)); }
+      function accent() { return pfThemes[pf.accentTheme]?.color || "#404b5a"; }
+
+      /* ── TAB SWITCHING ── */
+      function switchTab(tabId) {
+        document.querySelectorAll(".app-page").forEach(p => p.classList.remove("active"));
+        document.querySelectorAll(".app-tab").forEach(t => t.classList.remove("active"));
+        const page = document.getElementById("page-" + tabId);
+        const tab  = document.querySelector("[data-tab='" + tabId + "']");
+        if (page) page.classList.add("active");
+        if (tab)  tab.classList.add("active");
+        localStorage.setItem(PF_TAB_KEY, tabId);
+      }
+
+      /* ── EDITOR RENDER ── */
+      function renderEditor() {
+        document.querySelectorAll("[data-pf-theme]").forEach(b => {
+          b.classList.toggle("active", b.dataset.pfTheme === pf.accentTheme);
+        });
+        $el("pfTitle").value       = pf.title;
+        $el("pfStudentName").value = pf.studentName;
+        $el("pfSchool").value      = pf.school;
+        $el("pfCoverImage").value  = pf.coverImageUrl;
+
+        $el("pfChapters").innerHTML = pf.chapters.map((ch, ci) => `
+          <div class="pf-chapter-block">
+            <div class="pf-chapter-header">
+              <span class="pf-chapter-label">章節 ${ci + 1}</span>
+              <button class="ghost" style="padding:4px 10px;font-size:12px;border-radius:8px;" data-rm-ch="${ci}" type="button">刪除章節</button>
+            </div>
+            <div class="field">
+              <label style="font-size:12px;">章節大標題</label>
+              <input type="text" placeholder="探究實作、國際服務..." value="${esc(ch.title)}" data-ch-title="${ci}" />
+            </div>
+            ${ch.sections.map((sec, si) => `
+              <div class="pf-section-block">
+                <div class="pf-section-header-row">
+                  <span style="font-size:12px;font-weight:600;color:var(--muted);">小節 ${si + 1}</span>
+                  <button class="ghost" style="padding:2px 8px;font-size:11px;border-radius:6px;" data-rm-sec="${ci}-${si}" type="button">刪除</button>
+                </div>
+                <div class="field">
+                  <label style="font-size:12px;">小節標題</label>
+                  <input type="text" placeholder="物理探究與科學傳播" value="${esc(sec.header)}" data-sec-hdr="${ci}-${si}" />
+                </div>
+                <div class="field">
+                  <label style="font-size:12px;">內文</label>
+                  <textarea style="min-height:72px;resize:vertical;" placeholder="描述這段學習歷程..." data-sec-body="${ci}-${si}">${esc(sec.body)}</textarea>
+                </div>
+                <div class="field">
+                  <label style="font-size:12px;">圖片網址（選填）</label>
+                  <input type="url" placeholder="https://..." value="${esc(sec.imageUrl)}" data-sec-img="${ci}-${si}" />
+                </div>
+                <div class="field">
+                  <label style="font-size:12px;">圖片說明（選填）</label>
+                  <input type="text" placeholder="圖（一）說明文字" value="${esc(sec.imageCaption)}" data-sec-cap="${ci}-${si}" />
+                </div>
+              </div>
+            `).join("")}
+            <button class="pf-add-section-btn" data-add-sec="${ci}" type="button">＋ 新增小節</button>
+          </div>
+        `).join("");
+
+        attachEditorListeners();
+      }
+
+      function attachEditorListeners() {
+        document.querySelectorAll("[data-ch-title]").forEach(inp => {
+          inp.oninput = e => { pf.chapters[+e.target.dataset.chTitle].title = e.target.value; save(); renderPreview(); };
+        });
+        document.querySelectorAll("[data-sec-hdr]").forEach(inp => {
+          inp.oninput = e => {
+            const [ci, si] = e.target.dataset.secHdr.split("-").map(Number);
+            pf.chapters[ci].sections[si].header = e.target.value; save(); renderPreview();
+          };
+        });
+        document.querySelectorAll("[data-sec-body]").forEach(ta => {
+          ta.oninput = e => {
+            const [ci, si] = e.target.dataset.secBody.split("-").map(Number);
+            pf.chapters[ci].sections[si].body = e.target.value; save(); renderPreview();
+          };
+        });
+        document.querySelectorAll("[data-sec-img]").forEach(inp => {
+          inp.oninput = e => {
+            const [ci, si] = e.target.dataset.secImg.split("-").map(Number);
+            pf.chapters[ci].sections[si].imageUrl = e.target.value; save(); renderPreview();
+          };
+        });
+        document.querySelectorAll("[data-sec-cap]").forEach(inp => {
+          inp.oninput = e => {
+            const [ci, si] = e.target.dataset.secCap.split("-").map(Number);
+            pf.chapters[ci].sections[si].imageCaption = e.target.value; save(); renderPreview();
+          };
+        });
+        document.querySelectorAll("[data-rm-ch]").forEach(btn => {
+          btn.onclick = e => {
+            const ci = +e.target.dataset.rmCh;
+            if (pf.chapters.length <= 1) return;
+            pf.chapters.splice(ci, 1); save(); renderEditor(); renderPreview();
+          };
+        });
+        document.querySelectorAll("[data-rm-sec]").forEach(btn => {
+          btn.onclick = e => {
+            const [ci, si] = e.target.dataset.rmSec.split("-").map(Number);
+            if (pf.chapters[ci].sections.length <= 1) return;
+            pf.chapters[ci].sections.splice(si, 1); save(); renderEditor(); renderPreview();
+          };
+        });
+        document.querySelectorAll("[data-add-sec]").forEach(btn => {
+          btn.onclick = e => {
+            const ci = +e.target.dataset.addSec;
+            pf.chapters[ci].sections.push({ id: uid(), header: "", body: "", imageUrl: "", imageCaption: "" });
+            save(); renderEditor(); renderPreview();
+          };
+        });
+      }
+
+      /* ── PREVIEW RENDER ── */
+      function renderPreview() {
+        const c = accent();
+        const parts = [buildCoverPage(c), buildTocPage(c)];
+        pf.chapters.forEach((ch, i) => parts.push(buildContentPage(ch, i + 1, c)));
+        parts.push(buildEndPage(c));
+        $el("pfPreviewArea").innerHTML = parts.join("");
+      }
+
+      function heroImg(styles) {
+        return pf.coverImageUrl
+          ? `<img style="${styles}src:none;object-fit:cover;display:block;" src="${esc(pf.coverImageUrl)}" alt="" onerror="this.style.display='none'" />`
+          : `<div style="${styles}background:linear-gradient(135deg,${accent()}cc,${accent()}77);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,0.55);font-size:11px;">封面圖片</div>`;
+      }
+
+      function buildCoverPage(c) {
+        const imgStyle = "width:100%;height:40%;object-fit:cover;display:block;";
+        const imgHtml = pf.coverImageUrl
+          ? `<img style="${imgStyle}" src="${esc(pf.coverImageUrl)}" alt="" />`
+          : `<div style="${imgStyle}background:linear-gradient(135deg,${c}cc,${c}77);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,0.55);font-size:11px;">封面圖片</div>`;
+        return `<div class="pf-page">
+          ${imgHtml}
+          <div style="padding:6% 8%;">
+            <div style="font-size:2.4em;font-weight:700;line-height:1.18;color:#111;margin-bottom:0.45em;">${esc(pf.title) || "文件標題"}</div>
+            <div style="font-size:1em;font-weight:500;color:${c};margin-bottom:2px;">${esc(pf.studentName) || "姓名"}</div>
+            <div style="font-size:0.85em;color:#666;">${esc(pf.school) || "學校班級"}</div>
+          </div>
+        </div>`;
+      }
+
+      function buildTocPage(c) {
+        const imgStyle = "width:100%;height:100%;object-fit:cover;display:block;";
+        const imgHtml = pf.coverImageUrl
+          ? `<img style="${imgStyle}" src="${esc(pf.coverImageUrl)}" alt="" />`
+          : `<div style="${imgStyle}background:linear-gradient(160deg,${c}55,${c}22);"></div>`;
+        const items = pf.chapters.map((ch, i) =>
+          `<div style="display:flex;justify-content:space-between;padding:0.38em 0;border-bottom:1px dotted rgba(0,0,0,0.1);font-size:0.82em;">
+            <span>${esc(ch.title) || "章節 " + (i + 1)}</span><span>${i + 1}</span>
+          </div>`
+        ).join("");
+        return `<div class="pf-page">
+          <div style="display:grid;grid-template-columns:28% 1fr;height:100%;">
+            <div style="overflow:hidden;">${imgHtml}</div>
+            <div style="padding:10% 7% 6%;">
+              <div style="font-size:1.65em;font-weight:700;color:${c};margin-bottom:1.1em;">目錄</div>
+              ${items}
+            </div>
+          </div>
+        </div>`;
+      }
+
+      function buildContentPage(ch, pageNum, c) {
+        const secs = ch.sections.map(sec => `
+          ${sec.header ? `<div style="font-size:0.83em;font-weight:700;margin:0.75em 0 0.25em;">${esc(sec.header)}</div>` : ""}
+          <div style="font-size:0.76em;line-height:1.72;color:#2e2e2e;">${esc(sec.body).replace(/\n/g, "<br>")}</div>
+          ${sec.imageUrl
+            ? `<img style="width:54%;max-height:96px;object-fit:cover;border-radius:3px;display:block;margin:0.45em auto;" src="${esc(sec.imageUrl)}" alt="" />
+               <div style="text-align:center;font-size:0.68em;color:#777;margin-top:2px;">${esc(sec.imageCaption)}</div>`
+            : ""}
+        `).join("");
+        return `<div class="pf-page">
+          <div style="display:grid;grid-template-columns:13px 1fr;height:100%;position:relative;">
+            <div style="background:${c};"></div>
+            <div style="padding:5% 5% 9%;overflow:hidden;">
+              <div style="position:absolute;top:2.5%;right:3%;font-size:0.62em;color:#aaa;">${esc(pf.title)}</div>
+              <div style="font-size:1.42em;font-weight:700;line-height:1.22;margin-bottom:0.7em;color:#111;">${esc(ch.title) || "章節 " + pageNum}</div>
+              ${secs}
+              <div style="position:absolute;bottom:2%;left:19px;right:3%;display:flex;justify-content:space-between;font-size:0.62em;color:#aaa;">
+                <span>${esc(pf.studentName)}</span><span>${pageNum}</span>
+              </div>
+            </div>
+          </div>
+        </div>`;
+      }
+
+      function buildEndPage(c) {
+        return `<div class="pf-page">
+          <div style="width:100%;height:40%;background:${c};"></div>
+          <div style="height:60%;display:flex;align-items:center;justify-content:center;font-size:1em;color:#333;letter-spacing:0.07em;">感謝審閱</div>
+        </div>`;
+      }
+
+      /* ── PDF DOWNLOAD ── */
+      async function downloadPdf() {
+        const btn = $el("pfDownloadBtn");
+        btn.disabled = true;
+        btn.textContent = "產生 PDF 中...";
+        const c = accent();
+
+        const wrap = document.createElement("div");
+        wrap.style.cssText = "position:fixed;left:-99999px;top:0;width:210mm;font-family:'Noto Serif TC','Iowan Old Style','Palatino Linotype',serif;";
+
+        const pages = [buildPrintCover(c), buildPrintToc(c)];
+        pf.chapters.forEach((ch, i) => pages.push(buildPrintContent(ch, i + 1, c)));
+        pages.push(buildPrintEnd(c));
+
+        wrap.innerHTML = pages.map(p =>
+          `<div style="width:210mm;min-height:297mm;max-height:297mm;page-break-after:always;overflow:hidden;position:relative;background:#fff;box-sizing:border-box;">${p}</div>`
+        ).join("");
+
+        document.body.appendChild(wrap);
+        try {
+          await window.html2pdf().set({
+            margin: 0,
+            filename: `學習歷程_${pf.studentName || "作品集"}.pdf`,
+            image: { type: "jpeg", quality: 0.95 },
+            html2canvas: { scale: 2, useCORS: true, logging: false },
+            jsPDF: { unit: "mm", format: "a4", orientation: "portrait" },
+            pagebreak: { mode: ["css", "legacy"] }
+          }).from(wrap).save();
+        } finally {
+          document.body.removeChild(wrap);
+          btn.disabled = false;
+          btn.textContent = "下載學習歷程 PDF";
+        }
+      }
+
+      /* Print-resolution page builders (A4 full size) */
+      function buildPrintCover(c) {
+        const imgHtml = pf.coverImageUrl
+          ? `<img style="width:100%;height:118mm;object-fit:cover;display:block;" src="${esc(pf.coverImageUrl)}" alt="" />`
+          : `<div style="width:100%;height:118mm;background:linear-gradient(135deg,${c}cc,${c}77);"></div>`;
+        return `${imgHtml}
+          <div style="padding:20mm 24mm;">
+            <div style="font-size:32pt;font-weight:700;line-height:1.22;color:#111;margin-bottom:8mm;">${esc(pf.title)}</div>
+            <div style="font-size:13pt;color:${c};margin-bottom:2mm;">${esc(pf.studentName)}</div>
+            <div style="font-size:10pt;color:#666;">${esc(pf.school)}</div>
+          </div>`;
+      }
+
+      function buildPrintToc(c) {
+        const imgHtml = pf.coverImageUrl
+          ? `<img style="width:100%;height:297mm;object-fit:cover;display:block;" src="${esc(pf.coverImageUrl)}" alt="" />`
+          : `<div style="width:100%;height:297mm;background:linear-gradient(160deg,${c}55,${c}22);"></div>`;
+        const items = pf.chapters.map((ch, i) =>
+          `<div style="display:flex;justify-content:space-between;padding:3mm 0;border-bottom:1px dotted rgba(0,0,0,0.12);font-size:11pt;">
+            <span>${esc(ch.title) || "章節 " + (i + 1)}</span><span>${i + 1}</span>
+          </div>`
+        ).join("");
+        return `<div style="display:grid;grid-template-columns:62mm 1fr;height:297mm;box-sizing:border-box;">
+          <div style="overflow:hidden;">${imgHtml}</div>
+          <div style="padding:28mm 14mm 14mm;">
+            <div style="font-size:22pt;font-weight:700;color:${c};margin-bottom:12mm;">目錄</div>
+            ${items}
+          </div>
+        </div>`;
+      }
+
+      function buildPrintContent(ch, pageNum, c) {
+        const secs = ch.sections.map(sec => `
+          ${sec.header ? `<div style="font-size:11pt;font-weight:700;margin:5mm 0 2mm;">${esc(sec.header)}</div>` : ""}
+          <div style="font-size:10pt;line-height:1.8;color:#2a2a2a;">${esc(sec.body).replace(/\n/g, "<br>")}</div>
+          ${sec.imageUrl
+            ? `<img style="width:54%;max-height:75mm;object-fit:cover;border-radius:2mm;display:block;margin:4mm auto;" src="${esc(sec.imageUrl)}" alt="" />
+               <div style="text-align:center;font-size:8pt;color:#777;margin-top:2mm;">${esc(sec.imageCaption)}</div>`
+            : ""}
+        `).join("");
+        return `<div style="display:grid;grid-template-columns:10mm 1fr;height:297mm;position:relative;box-sizing:border-box;">
+          <div style="background:${c};"></div>
+          <div style="padding:14mm 14mm 18mm;overflow:hidden;">
+            <div style="position:absolute;top:8mm;right:8mm;font-size:8pt;color:#bbb;">${esc(pf.title)}</div>
+            <div style="font-size:22pt;font-weight:700;line-height:1.22;margin-bottom:8mm;color:#111;">${esc(ch.title) || "章節 " + pageNum}</div>
+            ${secs}
+            <div style="position:absolute;bottom:6mm;left:16mm;right:8mm;display:flex;justify-content:space-between;font-size:8pt;color:#bbb;">
+              <span>${esc(pf.studentName)}</span><span>${pageNum}</span>
+            </div>
+          </div>
+        </div>`;
+      }
+
+      function buildPrintEnd(c) {
+        return `<div>
+          <div style="width:100%;height:118mm;background:${c};"></div>
+          <div style="height:179mm;display:flex;align-items:center;justify-content:center;font-size:14pt;color:#333;letter-spacing:0.1em;">感謝審閱</div>
+        </div>`;
+      }
+
+      /* ── INIT ── */
+      function init() {
+        /* Tab buttons */
+        document.querySelectorAll(".app-tab").forEach(btn => {
+          btn.addEventListener("click", () => switchTab(btn.dataset.tab));
+        });
+
+        /* Home → CV button */
+        const startBtn = document.getElementById("startEditingBtn");
+        if (startBtn) {
+          startBtn.addEventListener("click", () => switchTab("cv"));
+        }
+
+        /* Portfolio theme picker */
+        document.querySelectorAll("[data-pf-theme]").forEach(btn => {
+          btn.addEventListener("click", () => {
+            pf.accentTheme = btn.dataset.pfTheme;
+            save(); renderEditor(); renderPreview();
+          });
+        });
+
+        /* Basic info fields */
+        const syncBasic = () => {
+          pf.title          = $el("pfTitle").value;
+          pf.studentName    = $el("pfStudentName").value;
+          pf.school         = $el("pfSchool").value;
+          pf.coverImageUrl  = $el("pfCoverImage").value;
+          save(); renderPreview();
+        };
+        ["pfTitle", "pfStudentName", "pfSchool", "pfCoverImage"].forEach(id => {
+          $el(id)?.addEventListener("input", syncBasic);
+        });
+
+        /* Add chapter */
+        $el("pfAddChapterBtn")?.addEventListener("click", () => {
+          pf.chapters.push({
+            id: uid(), title: "",
+            sections: [{ id: uid(), header: "", body: "", imageUrl: "", imageCaption: "" }]
+          });
+          save(); renderEditor(); renderPreview();
+        });
+
+        /* Download PDF */
+        $el("pfDownloadBtn")?.addEventListener("click", downloadPdf);
+
+        /* Restore last tab */
+        const savedTab = localStorage.getItem(PF_TAB_KEY);
+        if (savedTab && ["home", "cv", "portfolio"].includes(savedTab)) {
+          switchTab(savedTab);
+        }
+
+        renderEditor();
+        renderPreview();
+      }
+
+      init();
+    })();
+  </script>
+</body>
+</html>
