@@ -3898,9 +3898,11 @@
           return;
         }
         const authCode = getAuthCodeFromUrl();
+        console.log("[CV Auth] authCode from URL:", authCode);
         state.authDebug.hasCode = Boolean(authCode);
         if (authCode) {
           const { error: exchangeError } = await state.client.auth.exchangeCodeForSession(authCode);
+          console.log("[CV Auth] exchangeCodeForSession error:", exchangeError?.message || "none");
           if (exchangeError) {
             state.authDebug.exchangeStatus = "error";
             state.authDebug.exchangeMessage = exchangeError.message;
@@ -3914,6 +3916,7 @@
           state.authDebug.exchangeMessage = "";
         }
         const { data, error } = await state.client.auth.getSession();
+        console.log("[CV Auth] getSession user:", data?.session?.user?.email || "null", "error:", error?.message || "none");
         if (error) {
           state.authDebug.sessionPresent = false;
           state.authDebug.sessionUser = "";
