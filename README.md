@@ -25,13 +25,13 @@
 7. 按 `套用設定`
 8. 按 `Google 登入` 測試
 
-如果你不想每次手動輸入，現在可以直接改專案根目錄的 [config.js](config.js)：
+如果你不想每次手動輸入，把 [config.example.js](config.example.js) 複製一份改名為 `config.js`，填入你的設定（`config.js` 已加入 `.gitignore`，不會被 commit）：
 
 ```js
 window.CV_STUDIO_CONFIG = {
   supabaseUrl: "https://your-project.supabase.co",
   supabaseAnonKey: "your-anon-key",
-  siteUrl: "https://your-site.example.com/",
+  siteUrl: "",          // 留空會自動使用目前網址
   defaultTemplate: "n-tech"
 };
 ```
