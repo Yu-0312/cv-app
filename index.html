@@ -1871,6 +1871,52 @@
       color: var(--ink);
     }
 
+    /* ===== PORTFOLIO LAYOUT TEMPLATE SELECTOR ===== */
+    .pf-layout-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 8px;
+    }
+
+    .pf-layout-option {
+      border: 2px solid var(--line);
+      border-radius: 12px;
+      padding: 8px 8px 10px;
+      cursor: pointer;
+      text-align: left;
+      background: rgba(255,255,255,0.55);
+      transition: border-color 0.15s, background 0.15s;
+    }
+
+    .pf-layout-option:hover {
+      border-color: var(--accent);
+      background: rgba(255,255,255,0.85);
+      transform: none;
+      box-shadow: none;
+    }
+
+    .pf-layout-option.active {
+      border-color: var(--accent);
+      background: rgba(255,255,255,0.95);
+      transform: none;
+      box-shadow: none;
+    }
+
+    .pf-layout-name {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--ink);
+      display: block;
+    }
+
+    .pf-layout-desc {
+      font-size: 10px;
+      color: var(--muted);
+      display: block;
+      line-height: 1.45;
+      margin-top: 2px;
+    }
+
     /* ===== PORTFOLIO PREVIEW PAGES ===== */
     .portfolio-preview-area {
       display: flex;
@@ -3405,7 +3451,15 @@
           </div>
           <div class="portfolio-editor-scroll">
 
-            <!-- template picker -->
+            <!-- layout template picker -->
+            <div class="section-card">
+              <h3>套用學習歷程模板</h3>
+              <p style="margin-bottom:10px;">選擇一種章節架構作為起點，套用後可自由新增、修改內容。</p>
+              <div class="pf-layout-grid" id="pfLayoutGrid"></div>
+              <p style="font-size:11px;color:var(--muted);margin-top:8px;">⚠️ 套用模板將取代現有章節內容，基本資料不受影響。</p>
+            </div>
+
+            <!-- color picker -->
             <div class="section-card">
               <h3>版型配色</h3>
               <p>選擇側欄條與強調色的主色調。</p>
@@ -3443,15 +3497,15 @@
               <div class="field-grid">
                 <div class="field full">
                   <label>文件大標題（志願校系）</label>
-                  <input id="pfTitle" type="text" placeholder="高科大化工材料N" />
+                  <input id="pfTitle" type="text" placeholder="例如：清大資工 / 台大材料 / 政大法律" />
                 </div>
                 <div class="field">
                   <label>學生姓名</label>
-                  <input id="pfStudentName" type="text" placeholder="王宇錡" />
+                  <input id="pfStudentName" type="text" placeholder="請輸入你的姓名" />
                 </div>
                 <div class="field">
                   <label>學校與班級</label>
-                  <input id="pfSchool" type="text" placeholder="私立康橋高中 3年1201班" />
+                  <input id="pfSchool" type="text" placeholder="例如：建國中學 三年十班" />
                 </div>
                 <div class="field full">
                   <label>封面圖片</label>
@@ -5804,17 +5858,178 @@
         return esc(text).replace(/\n/g, "<br>");
       }
 
+      /* ── LAYOUT TEMPLATES ── */
+      /* ── MINI PAGE PREVIEW SVG ── */
+      function pfMiniPreview(c) {
+        return `<svg viewBox="0 0 84 60" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;border-radius:4px;display:block;margin-bottom:6px;">
+          <rect x="0" y="0" width="39" height="60" fill="#faf9f6" rx="2"/>
+          <rect x="0" y="0" width="39" height="24" fill="${c}" rx="2"/>
+          <rect x="0" y="20" width="39" height="4" fill="${c}"/>
+          <rect x="3" y="28" width="23" height="3.5" rx="1.75" fill="#111" opacity="0.65"/>
+          <rect x="3" y="34" width="14" height="2" rx="1" fill="${c}"/>
+          <rect x="3" y="39" width="19" height="1.5" rx="0.75" fill="#ccc"/>
+          <rect x="3" y="42.5" width="13" height="1.5" rx="0.75" fill="#ccc"/>
+          <rect x="45" y="0" width="39" height="60" fill="#faf9f6" rx="2"/>
+          <rect x="45" y="0" width="5" height="60" fill="${c}" rx="2"/>
+          <rect x="45" y="0" width="5" height="60" fill="${c}"/>
+          <rect x="53" y="6" width="21" height="3" rx="1.5" fill="#111" opacity="0.65"/>
+          <rect x="53" y="12" width="27" height="1.5" rx="0.75" fill="#ddd"/>
+          <rect x="53" y="15" width="25" height="1.5" rx="0.75" fill="#ddd"/>
+          <rect x="53" y="18" width="29" height="1.5" rx="0.75" fill="#ddd"/>
+          <rect x="53" y="23" width="19" height="2.5" rx="1.25" fill="#111" opacity="0.5"/>
+          <rect x="53" y="28" width="26" height="1.5" rx="0.75" fill="#ddd"/>
+          <rect x="53" y="31" width="23" height="1.5" rx="0.75" fill="#ddd"/>
+          <rect x="53" y="34" width="27" height="1.5" rx="0.75" fill="#ddd"/>
+          <rect x="53" y="37" width="21" height="1.5" rx="0.75" fill="#ddd"/>
+          <rect x="53" y="42" width="19" height="2.5" rx="1.25" fill="#111" opacity="0.5"/>
+          <rect x="53" y="47" width="25" height="1.5" rx="0.75" fill="#ddd"/>
+          <rect x="53" y="50" width="22" height="1.5" rx="0.75" fill="#ddd"/>
+        </svg>`;
+      }
+
+      const pfTemplates = [
+        {
+          id: "general",
+          name: "自由編排",
+          icon: "✏️",
+          previewColor: "#404b5a",
+          desc: "空白起步，完全自訂章節內容。",
+          chapters: [
+            { title: "", sections: [{ header: "", body: "", imageUrl: "", imageCaption: "" }] }
+          ]
+        },
+        {
+          id: "science",
+          name: "探究實作型",
+          icon: "🔬",
+          previewColor: "#3a4f7a",
+          desc: "理工、生醫、資訊類志願，著重實驗與競賽成果。",
+          chapters: [
+            {
+              title: "探究實作與科學競賽",
+              sections: [
+                { header: "探究主題與動機", body: "請說明你選擇這個探究主題的原因與背景，以及它如何與你的志願方向連結。", imageUrl: "", imageCaption: "" },
+                { header: "研究過程與方法", body: "描述你如何設計實驗、蒐集資料、分析結果，遇到哪些困難並如何克服。", imageUrl: "", imageCaption: "" },
+                { header: "成果與反思", body: "分享你的實驗成果或獲得的獎項，以及這段過程讓你學到了什麼。", imageUrl: "", imageCaption: "" }
+              ]
+            },
+            {
+              title: "自主學習計畫",
+              sections: [
+                { header: "學習動機與目標", body: "為什麼選擇這個主題進行自主學習？與你的志願有何連結？設定了哪些學習目標？", imageUrl: "", imageCaption: "" },
+                { header: "學習過程與成果", body: "你如何規劃與執行這份自主學習計畫？完成了哪些作品、報告或能力提升？", imageUrl: "", imageCaption: "" }
+              ]
+            }
+          ]
+        },
+        {
+          id: "humanities",
+          name: "人文社科型",
+          icon: "📚",
+          previewColor: "#8b4a42",
+          desc: "文史哲、法政、外語類志願，展現閱讀廣度與思辨深度。",
+          chapters: [
+            {
+              title: "閱讀與思辨",
+              sections: [
+                { header: "重要讀物與啟發", body: "分享一本對你影響深遠的書或文章，說明它如何改變你對某個議題的看法。", imageUrl: "", imageCaption: "" },
+                { header: "社會議題關懷", body: "描述一個讓你關心的社會議題，你的觀察、分析，以及你做了什麼回應或行動。", imageUrl: "", imageCaption: "" }
+              ]
+            },
+            {
+              title: "跨域學習與語言能力",
+              sections: [
+                { header: "語言學習歷程", body: "描述你的語言學習過程，包含自學方法、語言檢定成績或海外交流經驗。", imageUrl: "", imageCaption: "" },
+                { header: "跨科整合作品", body: "分享一個結合不同學科的報告、創作或專題，說明你如何整合不同領域的知識。", imageUrl: "", imageCaption: "" }
+              ]
+            }
+          ]
+        },
+        {
+          id: "leadership",
+          name: "社團服務型",
+          icon: "🌟",
+          previewColor: "#3d6b5e",
+          desc: "展現領導力、團隊合作與服務熱忱的學生。",
+          chapters: [
+            {
+              title: "社團與幹部經歷",
+              sections: [
+                { header: "擔任職務與負責工作", body: "說明你在哪個社團擔任什麼職務，主要負責哪些工作，與哪些夥伴合作。", imageUrl: "", imageCaption: "" },
+                { header: "印象最深的活動", body: "描述你企劃或執行過最有成就感的一次活動，如何面對困難並帶領團隊解決問題。", imageUrl: "", imageCaption: "" },
+                { header: "領導與成長", body: "擔任幹部讓你學到什麼？對溝通、組織或決策能力有何影響？如何與你的志願連結？", imageUrl: "", imageCaption: "" }
+              ]
+            },
+            {
+              title: "志工服務與社會參與",
+              sections: [
+                { header: "服務動機與過程", body: "你參與了哪些志工或服務活動？為什麼選擇這個服務族群或單位？", imageUrl: "", imageCaption: "" },
+                { header: "服務學習與反思", body: "透過服務，你對社會有什麼新的認識？這段經歷如何影響你的價值觀與未來方向？", imageUrl: "", imageCaption: "" }
+              ]
+            }
+          ]
+        },
+        {
+          id: "competition",
+          name: "競賽成就型",
+          icon: "🏆",
+          previewColor: "#5a4032",
+          desc: "有豐富競賽、檢定或得獎紀錄的學生。",
+          chapters: [
+            {
+              title: "競賽與獎項",
+              sections: [
+                { header: "競賽名稱與背景", body: "請說明你參加了哪個競賽，競賽的主題、規格與參賽人數為何。", imageUrl: "", imageCaption: "" },
+                { header: "準備過程與策略", body: "你如何備賽？遇到哪些技術或心理上的挑戰？團隊分工或個人策略為何？", imageUrl: "", imageCaption: "" },
+                { header: "成果與意義", body: "你獲得了什麼名次或成績？這段經歷對你的學習態度與未來志向有何影響？", imageUrl: "", imageCaption: "" }
+              ]
+            },
+            {
+              title: "證照與技能認證",
+              sections: [
+                { header: "取得的證照或認證", body: "列舉你獲得的語言、技術或專業證照，說明取得動機與學習過程。", imageUrl: "", imageCaption: "" },
+                { header: "技能實際應用", body: "這些技能如何在課業、競賽、社團或生活中實際發揮作用？舉一個具體案例。", imageUrl: "", imageCaption: "" }
+              ]
+            }
+          ]
+        },
+        {
+          id: "creative",
+          name: "跨域創作型",
+          icon: "🎨",
+          previewColor: "#9d6565",
+          desc: "藝術、設計、音樂、影像或多元跨域創作的學生。",
+          chapters: [
+            {
+              title: "創作理念與代表作品",
+              sections: [
+                { header: "創作動機與核心理念", body: "是什麼驅使你走向這條創作路？說明你的創作核心價值與想傳達的主題。", imageUrl: "", imageCaption: "" },
+                { header: "代表作品介紹", body: "介紹你最滿意的一件作品：創作背景、使用的媒材或技術、完成過程與呈現的意涵。", imageUrl: "", imageCaption: "" }
+              ]
+            },
+            {
+              title: "跨域合作與展演經歷",
+              sections: [
+                { header: "展覽、演出或合作計畫", body: "分享你參與過的展覽、演出、比賽或跨領域合作，說明你的角色與貢獻。", imageUrl: "", imageCaption: "" },
+                { header: "反思與未來方向", body: "創作歷程讓你發現自己哪些特質或局限？如何與你報考的科系或未來方向連結？", imageUrl: "", imageCaption: "" }
+              ]
+            }
+          ]
+        }
+      ];
+
       const pfDefault = {
-        title: "高科大化工材料N",
-        studentName: "王宇錡",
-        school: "私立康橋高中 3年1201班",
+        title: "",
+        studentName: "",
+        school: "",
         coverImageUrl: "",
         accentTheme: "slate",
+        pfTemplate: "general",
         chapters: [{
           id: uid(),
-          title: "探究實作、國際服務、哈佛交流",
+          title: "",
           sections: [
-            { id: uid(), header: "物理探究與科學傳播", body: "高二下參加全國高中物理探究實作競賽，初賽以全台優等入選校內賽訓。", imageUrl: "", imageCaption: "" }
+            { id: uid(), header: "", body: "", imageUrl: "", imageCaption: "" }
           ]
         }]
       };
@@ -5822,7 +6037,9 @@
       let pf = (() => {
         try {
           const s = localStorage.getItem(PF_KEY);
-          return s ? JSON.parse(s) : JSON.parse(JSON.stringify(pfDefault));
+          const loaded = s ? JSON.parse(s) : JSON.parse(JSON.stringify(pfDefault));
+          if (!loaded.pfTemplate) loaded.pfTemplate = "general";
+          return loaded;
         } catch { return JSON.parse(JSON.stringify(pfDefault)); }
       })();
 
@@ -5842,6 +6059,7 @@
 
       /* ── EDITOR RENDER ── */
       function renderEditor() {
+        renderTemplateSelector();
         document.querySelectorAll("[data-pf-theme]").forEach(b => {
           b.classList.toggle("active", b.dataset.pfTheme === pf.accentTheme);
         });
@@ -5992,6 +6210,37 @@
             save(); renderEditor(); renderPreview();
           };
         });
+      }
+
+      /* ── LAYOUT TEMPLATE SELECTOR ── */
+      function renderTemplateSelector() {
+        const grid = $el("pfLayoutGrid");
+        if (!grid) return;
+        grid.innerHTML = pfTemplates.map(t => `
+          <button class="pf-layout-option${pf.pfTemplate === t.id ? " active" : ""}"
+            data-pf-layout="${t.id}" type="button">
+            ${pfMiniPreview(t.previewColor)}
+            <span class="pf-layout-name">${t.name}</span>
+            <span class="pf-layout-desc">${t.desc}</span>
+          </button>
+        `).join("");
+        grid.querySelectorAll("[data-pf-layout]").forEach(btn => {
+          btn.addEventListener("click", () => loadPfTemplate(btn.dataset.pfLayout));
+        });
+      }
+
+      function loadPfTemplate(id) {
+        const tpl = pfTemplates.find(t => t.id === id);
+        if (!tpl) return;
+        pf.pfTemplate = id;
+        pf.chapters = tpl.chapters.map(ch => ({
+          id: uid(),
+          title: ch.title,
+          sections: ch.sections.map(s => ({ id: uid(), header: s.header, body: s.body, imageUrl: s.imageUrl, imageCaption: s.imageCaption }))
+        }));
+        save();
+        renderEditor();
+        renderPreview();
       }
 
       /* ── PREVIEW RENDER ── */
