@@ -534,6 +534,37 @@
       box-shadow: 0 16px 38px rgba(50, 38, 18, 0.08);
     }
 
+    .feature-card strong {
+      display: block;
+      margin-bottom: 8px;
+      color: var(--template-heading);
+    }
+
+    .feature-card p {
+      color: var(--muted);
+      font-size: 0.94rem;
+    }
+
+    .feature-card-action {
+      display: inline-block;
+      margin-top: 14px;
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--template-heading);
+      background: rgba(255, 255, 255, 0.72);
+      border: 1px solid rgba(49, 40, 27, 0.14);
+      border-radius: 100px;
+      padding: 6px 14px;
+      cursor: pointer;
+      transition: background 0.15s, border-color 0.15s;
+    }
+
+    .feature-card-action:hover {
+      background: rgba(255, 255, 255, 0.96);
+      border-color: rgba(49, 40, 27, 0.28);
+    }
+
+
     .topbar {
       display: flex;
       flex-wrap: wrap;
@@ -3322,6 +3353,7 @@
           </p>
           <div class="hero-actions">
             <button id="startEditingBtn" class="primary" type="button">開始編輯履歷</button>
+            <button id="goPortfolioBtn" class="secondary" type="button">查看學習歷程</button>
             <a class="canva-btn button-link" href="https://www.canva.com/" data-canva-trigger target="_blank" rel="noreferrer noopener">
               <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
                 <path fill="currentColor" d="M12 2.5c4.9 0 8.95 3.35 8.95 8.59 0 5.53-4.24 10.41-9.82 10.41-4.73 0-8.08-3.48-8.08-7.77 0-4.81 3.81-8.84 8.78-8.84 2.12 0 3.97.74 5.34 2.05l-1.76 1.92c-.98-.92-2.09-1.41-3.48-1.41-3.14 0-5.6 2.59-5.6 5.96 0 2.78 1.95 5.31 4.93 5.31 2.89 0 5.16-2.76 5.16-6.06 0-3.14-2.02-5.66-4.8-5.66-1.53 0-2.79.81-3.67 2.05l-2.1-1.31C7.02 4.42 9.24 2.5 12 2.5Z"/>
@@ -3411,16 +3443,24 @@
 
     <section class="feature-strip">
       <article class="feature-card">
-        <strong>一進來就知道能做什麼</strong>
-        <p>首頁直接說明產品功能，讓第一次使用的人不用猜這是編輯器、履歷工具還是作品頁。</p>
+        <strong>CV 履歷編輯器</strong>
+        <p>即時編輯、切換模板，填完就能直接下載 PDF。</p>
+        <button class="feature-card-action" data-guide-tab="cv" type="button">前往編輯 →</button>
       </article>
       <article class="feature-card">
-        <strong>操作流程更短</strong>
-        <p>從開始編輯、登入同步到下載 PDF，主要動作都集中在同一個畫面裡。</p>
+        <strong>學習歷程作品集</strong>
+        <p>記錄課程、專案與成果，自動產生可分享的學習歷程頁面。</p>
+        <button class="feature-card-action" data-guide-tab="portfolio" type="button">前往學習歷程 →</button>
       </article>
       <article class="feature-card">
-        <strong>核心功能沒有少</strong>
-        <p>模板切換、即時預覽、Google 登入同步和 PDF 匯出都保留，只是首頁更乾淨了。</p>
+        <strong>下載 PDF</strong>
+        <p>一鍵將履歷轉成排版精確的 PDF，直接投遞或列印。</p>
+        <button class="feature-card-action" data-guide-tab="cv" data-guide-action="download" type="button">前往下載 →</button>
+      </article>
+      <article class="feature-card">
+        <strong>Google 雲端同步</strong>
+        <p>登入後自動儲存，換裝置也能繼續編輯，不怕資料遺失。</p>
+        <button class="feature-card-action" data-guide-action="login" type="button">如何登入 →</button>
       </article>
     </section>
     </div><!-- /page-home -->
@@ -7787,6 +7827,25 @@
         if (startBtn) {
           startBtn.setAttribute("aria-controls", "page-cv");
         }
+
+        /* Home → Portfolio button */
+        const goPortfolioBtn = document.getElementById("goPortfolioBtn");
+        if (goPortfolioBtn) {
+          goPortfolioBtn.addEventListener("click", () => switchTab("portfolio"));
+        }
+
+        /* Feature guide buttons */
+        document.querySelectorAll(".feature-card-action[data-guide-tab]").forEach(btn => {
+          btn.addEventListener("click", () => {
+            switchTab(btn.dataset.guideTab);
+            if (btn.dataset.guideAction === "download") {
+              setTimeout(() => document.getElementById("downloadPdfBtn")?.scrollIntoView({ behavior: "smooth", block: "center" }), 150);
+            }
+          });
+        });
+        document.querySelector(".feature-card-action[data-guide-action='login']")?.addEventListener("click", () => {
+          document.getElementById("loginBtn")?.scrollIntoView({ behavior: "smooth", block: "center" });
+        });
 
         document.querySelectorAll("[data-pf-guide-mode]").forEach(btn => {
           btn.addEventListener("click", () => {
