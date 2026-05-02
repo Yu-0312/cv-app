@@ -9,7 +9,7 @@
 - 下載 PDF
 - PWA 安裝成手機 / 桌面 APP
 
-目前主畫面是 [index.html](/Users/maxwang/Desktop/CV%20App/index.html)，資料表設定在 [supabase-schema.sql](/Users/maxwang/Desktop/CV%20App/supabase-schema.sql)。
+目前主畫面是 `index.html`，資料表設定在 `supabase-schema.sql`。
 
 ## 上線前設定
 
@@ -25,7 +25,7 @@
 7. 按 `套用設定`
 8. 按 `Google 登入` 測試
 
-如果你不想每次手動輸入，現在可以直接改專案根目錄的 [config.js](/Users/maxwang/Desktop/CV%20App/config.js)：
+如果你不想每次手動輸入，現在可以直接改專案根目錄的 `config.js`：
 
 ```js
 window.CV_STUDIO_CONFIG = {
@@ -57,7 +57,7 @@ https://你的帳號.github.io/你的-repo/
 1. Supabase `Authentication > URL Configuration` 的 `Site URL` 與 `Redirect URLs`
 2. Google Cloud OAuth 允許的網址設定
 
-另外，根目錄的 [config.js](/Users/maxwang/Desktop/CV%20App/config.js) 目前已把 `siteUrl` 留空，頁面會自動改用目前開啟的網址當作登入回跳位址；如果你想固定寫死成 GitHub Pages 網址，也可以手動填入。
+另外，根目錄的 `config.js` 目前已把 `siteUrl` 留空，頁面會自動改用目前開啟的網址當作登入回跳位址；如果你想固定寫死成 GitHub Pages 網址，也可以手動填入。
 
 ## Google 登入實作方式
 
