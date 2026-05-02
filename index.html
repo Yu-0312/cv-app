@@ -5738,7 +5738,7 @@
           setMessage("請先在 Supabase 設定中填入 URL。", "error");
           return;
         }
-        if (window.location.protocol === "file:") {
+        if (window.location.protocol === "file:" && !state.config.siteUrl?.trim()) {
           setMessage("Google 登入不能直接在 file:// 本機檔案模式下使用，請改用 localhost 或正式網站網址開啟。", "error");
           alert("Google 登入不支援直接開啟檔案（file://）。\n\n請在終端機執行：\n  npx serve .\n然後用瀏覽器開啟 http://localhost:3000 再登入。");
           return;
@@ -5747,7 +5747,8 @@
           setMessage("無法建立 Supabase 連線，請檢查設定。", "error");
           return;
         }
-        setMessage("正在前往 Google 登入，登入完成後會自動回到這個頁面。");
+        const isFileProtocol = window.location.protocol === "file:";
+        setMessage(isFileProtocol ? "正在前往 Google 登入，完成後將跳轉到正式網站。" : "正在前往 Google 登入，登入完成後會自動回到這個頁面。");
         const { error } = await state.client.auth.signInWithOAuth({
           provider: "google",
           options: {
