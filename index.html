@@ -2087,6 +2087,464 @@
       pointer-events: none;
     }
   </style>
+
+  <style id="persona-styles">
+    /* ── Persona page shell ── */
+    .persona-hero {
+      padding: 20px 22px;
+      margin-bottom: 18px;
+      background:
+        radial-gradient(circle at top left, rgba(255,183,197,0.22), transparent 24%),
+        radial-gradient(circle at 92% 18%, rgba(101,127,255,0.14), transparent 18%),
+        linear-gradient(135deg, rgba(255,250,244,0.94), rgba(249,240,231,0.92));
+      border: 1px solid rgba(49,40,27,0.08);
+      border-radius: 28px;
+      box-shadow: var(--shadow);
+    }
+    .persona-hero h2 {
+      font-size: clamp(1.8rem,4vw,2.8rem);
+      line-height: 1.02;
+      letter-spacing: -0.04em;
+      margin-bottom: 10px;
+      color: var(--template-heading);
+    }
+    .persona-hero p { max-width: 68ch; color: var(--muted); line-height: 1.8; }
+
+    .persona-workspace {
+      display: grid;
+      grid-template-columns: minmax(340px,420px) minmax(0,1fr);
+      gap: 18px;
+      align-items: start;
+    }
+    .persona-editor-panel { position: sticky; top: 14px; overflow: hidden; }
+    .persona-preview-shell { padding: 20px; }
+    .persona-preview-frame {
+      background: rgba(255,255,255,0.58);
+      border-radius: 24px;
+      border: 1px solid rgba(49,40,27,0.08);
+      padding: 18px;
+    }
+    .preview-toolbar { margin-bottom: 16px; }
+    .preview-toolbar-meta { display: flex; align-items: flex-start; justify-content: space-between; gap: 14px; }
+    .preview-toolbar-meta h2 { font-size: 1.1rem; font-weight: 700; margin-bottom: 4px; }
+    .preview-toolbar-meta p { font-size: 0.88rem; color: var(--muted); }
+    .layout-badge {
+      flex-shrink: 0;
+      padding: 6px 14px;
+      border-radius: 999px;
+      background: rgba(33,78,116,0.08);
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--template-heading);
+      border: 1px solid rgba(33,78,116,0.14);
+    }
+
+    .theme-row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+    .theme-card {
+      border: 1px solid rgba(49,40,27,0.08);
+      border-radius: 22px;
+      background: #fffdf9;
+      padding: 14px;
+      text-align: left;
+      cursor: pointer;
+      transition: box-shadow .18s, border-color .18s;
+    }
+    .theme-card.active {
+      border-color: rgba(33,78,116,0.28);
+      box-shadow: 0 14px 32px rgba(33,78,116,0.12);
+    }
+    .theme-card strong { display: block; margin: 10px 0 4px; }
+    .theme-card span { color: var(--muted); font-size: 13px; line-height: 1.5; }
+    .theme-swatch-preview { height: 82px; border-radius: 16px; border: 1px solid rgba(49,40,27,0.08); }
+
+    /* ── Board shell ── */
+    .persona-board {
+      position: relative;
+      overflow: hidden;
+      border-radius: 32px;
+      padding: 26px 24px 30px;
+      min-height: 1280px;
+      box-shadow: 0 24px 56px rgba(30,18,8,0.18);
+      font-family: inherit;
+    }
+
+    /* ── CUTE THEME ── */
+    .persona-board[data-theme="cute"] {
+      background:
+        radial-gradient(ellipse at 12% 0%, rgba(255,185,185,0.45) 0%, transparent 32%),
+        radial-gradient(ellipse at 88% 6%, rgba(255,210,140,0.45) 0%, transparent 28%),
+        radial-gradient(ellipse at 50% 100%, rgba(255,180,200,0.3) 0%, transparent 38%),
+        linear-gradient(160deg, #fdf0e4 0%, #fceee6 55%, #fdf3ef 100%);
+      color: #3a1e10;
+      --persona-ink: #3a1e10;
+      --persona-note: #fffcf8;
+      --persona-note-alt: #f6faf0;
+      --persona-note-soft: #fff1ef;
+      --persona-stroke: rgba(180,110,80,0.13);
+      --persona-accent: #e07060;
+      --persona-accent-2: #74b05a;
+      --persona-accent-3: #f5b830;
+      --persona-accent-4: #e8a0b8;
+      --persona-tape: rgba(255,165,130,0.75);
+      --persona-grid: rgba(200,110,70,0.045);
+      /* section header gradients */
+      --sh-0: linear-gradient(90deg,#f0a090,#f6bcb0);
+      --sh-1: linear-gradient(90deg,#f2a896,#f6c0b2);
+      --sh-2: linear-gradient(90deg,#8ec870,#aada8e);
+      --sh-3: linear-gradient(90deg,#f5c06a,#f8d688);
+      --sh-4: linear-gradient(90deg,#78aee8,#9ac6f2);
+      --sh-5: linear-gradient(90deg,#f8ce60,#fce082);
+      --sh-6: linear-gradient(90deg,#f49ab5,#f8bace);
+      --sh-7: linear-gradient(90deg,#a0d8c0,#c2e8d4);
+      --sh-8: linear-gradient(90deg,#c8a0e8,#dfc0f6);
+      --sh-9: linear-gradient(90deg,#f8c490,#fcd8a8);
+    }
+
+    /* ── COOL THEME ── */
+    .persona-board[data-theme="cool"] {
+      background:
+        radial-gradient(ellipse at 10% 0%, rgba(70,110,200,0.28) 0%, transparent 30%),
+        radial-gradient(ellipse at 90% 8%, rgba(120,80,210,0.2) 0%, transparent 26%),
+        radial-gradient(ellipse at 50% 100%, rgba(40,80,160,0.22) 0%, transparent 36%),
+        linear-gradient(160deg, #131d2e 0%, #18243a 55%, #141c30 100%);
+      color: #d6e2f6;
+      --persona-ink: #d6e2f6;
+      --persona-note: rgba(28,44,70,0.9);
+      --persona-note-alt: rgba(22,35,58,0.9);
+      --persona-note-soft: rgba(20,32,52,0.9);
+      --persona-stroke: rgba(90,130,220,0.22);
+      --persona-accent: #5888e8;
+      --persona-accent-2: #36aaa0;
+      --persona-accent-3: #e8b438;
+      --persona-accent-4: #b868e0;
+      --persona-tape: rgba(70,105,185,0.85);
+      --persona-grid: rgba(80,120,210,0.07);
+      --sh-0: linear-gradient(90deg,#253c6a,#2e4e82);
+      --sh-1: linear-gradient(90deg,#1e3460,#264478);
+      --sh-2: linear-gradient(90deg,#183e3c,#205250);
+      --sh-3: linear-gradient(90deg,#3a2e18,#503e24);
+      --sh-4: linear-gradient(90deg,#281e52,#362868);
+      --sh-5: linear-gradient(90deg,#1c3824,#285040);
+      --sh-6: linear-gradient(90deg,#3a1c48,#50285e);
+      --sh-7: linear-gradient(90deg,#183244,#205060);
+      --sh-8: linear-gradient(90deg,#282658,#383476);
+      --sh-9: linear-gradient(90deg,#38261c,#503828);
+    }
+
+    /* ── Dot grid background ── */
+    .persona-board::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image: radial-gradient(circle, var(--persona-grid) 1.2px, transparent 1.2px);
+      background-size: 22px 22px;
+      pointer-events: none;
+    }
+
+    /* ── Floating decorations ── */
+    .persona-decos { position: absolute; inset: 0; pointer-events: none; overflow: hidden; }
+    .persona-deco {
+      position: absolute;
+      font-size: 1.3rem;
+      user-select: none;
+      animation: pDecoFloat 5s ease-in-out infinite alternate;
+      opacity: 0.32;
+    }
+    [data-theme="cool"] .persona-deco { opacity: 0.16; filter: hue-rotate(180deg); }
+    @keyframes pDecoFloat {
+      from { transform: translateY(0) rotate(0deg); }
+      to   { transform: translateY(-9px) rotate(10deg); }
+    }
+
+    /* ── Grid layout ── */
+    .persona-board-grid {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: 14px;
+    }
+    .persona-col { display: grid; gap: 12px; align-content: start; }
+
+    /* ── Section card ── */
+    .persona-note {
+      position: relative;
+      background: var(--persona-note);
+      border: 1.5px solid var(--persona-stroke);
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 6px 20px rgba(60,35,15,0.07), 0 1px 3px rgba(60,35,15,0.05);
+    }
+    .persona-note.alt { background: var(--persona-note-alt); }
+    .persona-note.soft { background: var(--persona-note-soft); }
+    .persona-note h3, .persona-note h4, .persona-note p { margin: 0; }
+
+    /* Colored header strip */
+    .persona-note-head {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 9px 15px;
+      background: var(--sh, var(--sh-1));
+    }
+    .persona-note-head h3 {
+      margin: 0;
+      font-size: 0.95rem;
+      font-weight: 700;
+      letter-spacing: 0.03em;
+      color: #fff;
+      text-shadow: 0 1px 4px rgba(0,0,0,0.2);
+    }
+    .persona-note-body { padding: 14px 16px; }
+
+    /* Index badge inside header */
+    .persona-index {
+      min-width: 26px;
+      height: 26px;
+      padding: 0 7px;
+      border-radius: 9px;
+      background: rgba(255,255,255,0.38);
+      color: #fff;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 0.84rem;
+      flex-shrink: 0;
+      text-shadow: 0 1px 3px rgba(0,0,0,0.22);
+      backdrop-filter: blur(2px);
+    }
+
+    /* ── Hero section (no header strip) ── */
+    .persona-note.hero-note {
+      background: transparent;
+      border: none;
+      box-shadow: none;
+      overflow: visible;
+      padding: 6px 4px;
+    }
+    .persona-top-title {
+      font-size: clamp(2.4rem,5.2vw,4.2rem);
+      line-height: 0.9;
+      letter-spacing: -0.05em;
+      color: var(--persona-accent);
+      font-weight: 900;
+    }
+    .persona-top-subtitle {
+      margin-top: 8px;
+      font-size: clamp(1.4rem,3vw,2.2rem);
+      line-height: 1.05;
+      font-weight: 800;
+      color: var(--persona-ink);
+    }
+    .persona-tagline {
+      margin-top: 12px;
+      display: inline-block;
+      padding: 9px 16px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.65);
+      border: 1.5px solid var(--persona-stroke);
+      font-size: 0.94rem;
+      line-height: 1.6;
+      backdrop-filter: blur(4px);
+    }
+    [data-theme="cool"] .persona-tagline {
+      background: rgba(70,110,200,0.2);
+      border-color: rgba(90,140,240,0.3);
+    }
+
+    /* ── Facts ── */
+    .persona-facts { display: grid; gap: 7px; font-size: 0.93rem; line-height: 1.65; }
+    .persona-fact-row { display: flex; align-items: baseline; gap: 8px; }
+    .persona-fact-row strong {
+      color: var(--persona-accent);
+      flex-shrink: 0;
+      font-size: 0.86rem;
+      font-weight: 700;
+    }
+
+    /* ── List items ── */
+    .persona-list { display: grid; gap: 7px; line-height: 1.68; font-size: 0.92rem; }
+    .persona-list-item { display: flex; align-items: flex-start; gap: 8px; }
+    .persona-list-bullet {
+      flex-shrink: 0;
+      width: 17px;
+      height: 17px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--persona-accent-2), var(--persona-accent));
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 0.55rem;
+      font-weight: 700;
+      margin-top: 3px;
+    }
+
+    /* ── Centerpiece ── */
+    .persona-centerpiece { display: grid; gap: 13px; justify-items: center; padding: 18px 16px 16px; }
+    .persona-photo {
+      width: min(100%,290px);
+      aspect-ratio: 0.78;
+      border-radius: 26px;
+      overflow: hidden;
+      border: 2px solid var(--persona-stroke);
+      background:
+        radial-gradient(circle at top, rgba(255,255,255,0.85), transparent 40%),
+        linear-gradient(180deg,
+          color-mix(in srgb, var(--persona-accent-3) 50%, white 50%),
+          color-mix(in srgb, var(--persona-accent) 25%, white 75%));
+      box-shadow: 0 16px 34px rgba(50,30,14,0.14);
+      display: grid;
+      place-items: center;
+      color: rgba(255,255,255,0.9);
+      font-size: 0.95rem;
+      font-weight: 700;
+      text-align: center;
+      padding: 18px;
+    }
+    .persona-photo img { width:100%; height:100%; object-fit:cover; display:block; }
+    .persona-bubble {
+      position: relative;
+      max-width: 250px;
+      padding: 11px 15px;
+      border-radius: 16px;
+      background: rgba(255,255,255,0.88);
+      border: 1.5px solid var(--persona-stroke);
+      font-size: 0.92rem;
+      line-height: 1.65;
+      text-align: center;
+      box-shadow: 0 5px 16px rgba(60,35,14,0.08);
+    }
+    .persona-bubble::before {
+      content: "";
+      position: absolute;
+      top: -11px;
+      left: 50%;
+      transform: translateX(-50%);
+      border: 7px solid transparent;
+      border-bottom-color: rgba(255,255,255,0.88);
+    }
+    [data-theme="cool"] .persona-bubble {
+      background: rgba(36,58,100,0.92);
+      border-color: rgba(90,140,240,0.3);
+      color: var(--persona-ink);
+    }
+    [data-theme="cool"] .persona-bubble::before { border-bottom-color: rgba(36,58,100,0.92); }
+
+    /* ── Energy cards ── */
+    .persona-energy-stack { display: grid; gap: 9px; }
+    .persona-energy-card {
+      display: grid;
+      grid-template-columns: 46px 1fr;
+      gap: 10px;
+      align-items: start;
+      padding: 11px;
+      border-radius: 13px;
+      background: rgba(255,255,255,0.52);
+      border: 1px solid var(--persona-stroke);
+    }
+    [data-theme="cool"] .persona-energy-card { background: rgba(255,255,255,0.07); }
+    .persona-energy-badge {
+      width: 46px;
+      height: 46px;
+      border-radius: 13px;
+      display: grid;
+      place-items: center;
+      color: #fff;
+      font-size: 0.8rem;
+      font-weight: 800;
+      background: linear-gradient(135deg, var(--persona-accent), var(--persona-accent-3));
+      text-align: center;
+      line-height: 1.2;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+    .persona-energy-card strong { display:block; margin-bottom:3px; font-size:0.9rem; }
+    .persona-energy-card p { color: color-mix(in srgb, var(--persona-ink) 70%, transparent 30%); line-height:1.6; font-size:0.86rem; margin:0; }
+
+    /* ── Pills ── */
+    .persona-pills, .persona-item-row { display: flex; flex-wrap: wrap; gap: 8px; }
+    .persona-pill {
+      padding: 5px 13px;
+      border-radius: 999px;
+      border: 1.5px solid var(--persona-stroke);
+      background: rgba(255,255,255,0.72);
+      font-size: 0.86rem;
+      font-weight: 600;
+      color: var(--persona-ink);
+    }
+    [data-theme="cool"] .persona-pill { background: rgba(70,110,200,0.15); border-color: rgba(90,140,240,0.25); }
+    .persona-item-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 5px 12px;
+      border-radius: 11px;
+      border: 1.5px solid var(--persona-stroke);
+      background: rgba(255,255,255,0.65);
+      font-size: 0.86rem;
+      color: var(--persona-ink);
+    }
+    [data-theme="cool"] .persona-item-pill { background: rgba(70,110,200,0.12); border-color: rgba(90,140,240,0.22); }
+
+    /* ── Mascot ── */
+    .persona-mascot-wrap { display: grid; grid-template-columns: 100px 1fr; gap: 13px; align-items: center; }
+    .persona-mascot-card {
+      width: 100px; aspect-ratio: 1;
+      border-radius: 20px;
+      overflow: hidden;
+      border: 1.5px solid var(--persona-stroke);
+      background:
+        linear-gradient(160deg, rgba(255,255,255,0.7), rgba(255,255,255,0.3)),
+        linear-gradient(135deg,
+          color-mix(in srgb, var(--persona-accent-2) 22%, white 78%),
+          color-mix(in srgb, var(--persona-accent-3) 28%, white 72%));
+      display: grid;
+      place-items: center;
+      font-size: 2.4rem;
+      box-shadow: 0 8px 20px rgba(50,28,10,0.1);
+    }
+    .persona-mascot-card img { width:100%; height:100%; object-fit:cover; display:block; }
+    .persona-note-footer {
+      margin-top: 8px;
+      color: color-mix(in srgb, var(--persona-ink) 64%, transparent 36%);
+      line-height: 1.7;
+      font-size: 0.88rem;
+    }
+
+    /* ── Bottom quote ── */
+    .persona-bottom-quote {
+      position: relative;
+      z-index: 1;
+      margin-top: 18px;
+      padding: 16px 22px;
+      text-align: center;
+      font-size: clamp(1.2rem,2.4vw,1.8rem);
+      letter-spacing: 0.04em;
+      font-weight: 800;
+      color: var(--persona-ink);
+      border-radius: 16px;
+      background: rgba(255,255,255,0.5);
+      border: 1.5px solid var(--persona-stroke);
+      backdrop-filter: blur(4px);
+    }
+    [data-theme="cool"] .persona-bottom-quote {
+      background: rgba(36,58,100,0.6);
+      border-color: rgba(90,140,240,0.25);
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 1100px) {
+      .persona-workspace { grid-template-columns: 1fr; }
+      .persona-editor-panel { position: static; }
+    }
+    @media (max-width: 800px) {
+      .persona-board-grid { grid-template-columns: 1fr; }
+      .theme-row { grid-template-columns: 1fr; }
+      .persona-mascot-wrap { grid-template-columns: 80px 1fr; }
+      .persona-board { padding: 18px; min-height: auto; }
+    }
+  </style>
 </head>
 <body>
   <main class="shell">
@@ -2116,6 +2574,7 @@
       <button class="app-tab active" data-tab="home" type="button">主畫面</button>
       <button class="app-tab" data-tab="cv" type="button">CV 履歷</button>
       <button class="app-tab" data-tab="portfolio" type="button">學習歷程</button>
+      <button class="app-tab" data-tab="persona" type="button">個人化頁</button>
     </nav>
 
     <div id="page-home" class="app-page active">
@@ -2749,6 +3208,198 @@
       </section><!-- /portfolio-workspace -->
 
     </div><!-- /page-portfolio -->
+
+    <div id="page-persona" class="app-page">
+      <section class="persona-hero">
+        <h2>把自我介紹做成有角色感的拼貼頁。</h2>
+        <p>這個頁面不是面試用的死板履歷，而是偏向「個人設定檔 / 自介牆 / 角色卡」的編輯方式。你可以切換可愛風或帥氣風，把 MBTI、個性、能量感、喜歡的東西和小缺點都排成一張更有記憶點的頁面。</p>
+      </section>
+
+      <section class="persona-workspace">
+        <aside class="panel persona-editor-panel">
+          <div class="editor-header">
+            <div>
+              <h2>個人化編輯器</h2>
+              <div class="install-hint">左邊整理內容，右邊會即時排成拼貼風自介頁。</div>
+            </div>
+          </div>
+          <div class="editor-scroll">
+
+            <div class="section-card">
+              <h3>風格模板</h3>
+              <p>可愛風偏紙膠帶、暖色、手帳感；帥氣風偏冷色、俐落、帶偶像海報感。</p>
+              <div class="theme-row" id="personaThemeRow">
+                <button class="theme-card active" type="button" data-persona-theme="cute">
+                  <div class="theme-swatch-preview" style="background:linear-gradient(135deg,#f6d0c0 0%,#faeee2 55%,#f8c8c0 100%);"></div>
+                  <strong>可愛風 🌸</strong>
+                  <span>溫暖、手作拼貼、日記感自介頁</span>
+                </button>
+                <button class="theme-card" type="button" data-persona-theme="cool">
+                  <div class="theme-swatch-preview" style="background:linear-gradient(135deg,#131d2e 0%,#2a3e72 55%,#1e305a 100%);"></div>
+                  <strong>帥氣風 🖤</strong>
+                  <span>深夜冷調、俐落、帶角色設定感</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="section-card">
+              <h3>主標題區</h3>
+              <div class="field-grid">
+                <div class="field">
+                  <label>日期 / 生日標題</label>
+                  <input id="personaHeroDate" type="text" placeholder="例如：6 / 9" />
+                </div>
+                <div class="field">
+                  <label>主角色標籤</label>
+                  <input id="personaHeroCode" type="text" placeholder="例如：ESFP / Moon Child" />
+                </div>
+                <div class="field full">
+                  <label>大標題</label>
+                  <input id="personaMainTitle" type="text" placeholder="例如：雙子座 × 屬羊女生" />
+                </div>
+                <div class="field full">
+                  <label>一句話標語</label>
+                  <textarea id="personaTagline" placeholder="例如：生活就是我的舞台，而我拒絕無聊。"></textarea>
+                </div>
+              </div>
+            </div>
+
+            <div class="section-card">
+              <h3>① 基本設定</h3>
+              <div class="field-grid">
+                <div class="field">
+                  <label>生日</label>
+                  <input id="personaBirthday" type="text" placeholder="6 月 9 日" />
+                </div>
+                <div class="field">
+                  <label>星座</label>
+                  <input id="personaSign" type="text" placeholder="雙子座" />
+                </div>
+                <div class="field">
+                  <label>MBTI</label>
+                  <input id="personaMbti" type="text" placeholder="ESFP" />
+                </div>
+                <div class="field">
+                  <label>生肖 / 屬性</label>
+                  <input id="personaAnimal" type="text" placeholder="羊 / 狐狸 / 海豚" />
+                </div>
+                <div class="field">
+                  <label>性別 / 身分感</label>
+                  <input id="personaGender" type="text" placeholder="女生 / 非二元 / 創作者" />
+                </div>
+                <div class="field">
+                  <label>角色定位</label>
+                  <input id="personaRole" type="text" placeholder="舞台型社交電池 / 酷派創作者" />
+                </div>
+              </div>
+            </div>
+
+            <div class="section-card">
+              <h3>② ③ 氣質 &amp; 故事</h3>
+              <div class="field-grid">
+                <div class="field full">
+                  <label>整體氣質（逐行輸入）</label>
+                  <textarea id="personaVibe" placeholder="像是在描述這個人的氛圍、個性、存在感。每行一條。"></textarea>
+                </div>
+                <div class="field full">
+                  <label>生日特別感 / 小故事</label>
+                  <textarea id="personaStory" placeholder="像旁白的文字，描述自己的節奏、魅力與想法。"></textarea>
+                </div>
+              </div>
+            </div>
+
+            <div class="section-card">
+              <h3>④ 三重能量</h3>
+              <p>一行一筆，格式：<code>標題 | 內容描述</code>，段落用空行隔開，最多排三張。</p>
+              <div class="field-grid single">
+                <div class="field full">
+                  <textarea id="personaEnergy" placeholder="ESFP | 熱情、行動力強，享受當下。&#10;&#10;雙子座 | 腦袋轉很快，喜歡變化和交流。&#10;&#10;屬羊 | 溫柔感性，也有自己堅持。"></textarea>
+                </div>
+              </div>
+            </div>
+
+            <div class="section-card">
+              <h3>⑤ ⑦ 優點 &amp; 缺點</h3>
+              <div class="field-grid">
+                <div class="field full">
+                  <label>優點整理（逐行）</label>
+                  <textarea id="personaStrengths" placeholder="很會帶動氣氛&#10;熱情真誠，容易建立連結&#10;反應快，適應力強"></textarea>
+                </div>
+                <div class="field full">
+                  <label>小小缺點（逐行）</label>
+                  <textarea id="personaWeaknesses" placeholder="有時三分鐘熱度&#10;討厭被限制，容易突然想逃跑"></textarea>
+                </div>
+              </div>
+            </div>
+
+            <div class="section-card">
+              <h3>⑥ 感情模式</h3>
+              <div class="field-grid single">
+                <div class="field full">
+                  <textarea id="personaLoveStyle" placeholder="喜歡輕鬆愉快、自然舒服的關係&#10;需要新鮮感與互動感&#10;重視真誠與被理解"></textarea>
+                </div>
+              </div>
+            </div>
+
+            <div class="section-card">
+              <h3>⑧ ⑨ 關鍵字 &amp; 小物</h3>
+              <div class="field-grid">
+                <div class="field full">
+                  <label>關鍵字（逗號或換行分隔）</label>
+                  <textarea id="personaKeywords" placeholder="熱情, 社交高手, 行動力, 享受當下"></textarea>
+                </div>
+                <div class="field full">
+                  <label>幸運小物 / 喜歡的東西</label>
+                  <textarea id="personaFavorites" placeholder="音符吊飾, 黃水晶, 拍立得, 星星"></textarea>
+                </div>
+                <div class="field full">
+                  <label>給自己的提醒（便條紙文字）</label>
+                  <textarea id="personaReminder" placeholder="偶爾停下來也沒關係。你不是只負責逗別人開心的人，也值得被接住、被好好喜歡。"></textarea>
+                </div>
+              </div>
+            </div>
+
+            <div class="section-card">
+              <h3>圖片與小夥伴</h3>
+              <div class="field-grid">
+                <div class="field full">
+                  <label>主視覺圖片網址</label>
+                  <input id="personaPortrait" type="url" placeholder="可貼角色照、自拍、插畫圖網址" />
+                </div>
+                <div class="field full">
+                  <label>對話泡泡文字</label>
+                  <input id="personaBubble" type="text" placeholder="舞台在哪裡，我就在哪裡發光！" />
+                </div>
+                <div class="field">
+                  <label>小夥伴名稱</label>
+                  <input id="personaMascotName" type="text" placeholder="棉花糖小羊" />
+                </div>
+                <div class="field full">
+                  <label>小夥伴圖片網址（可留空）</label>
+                  <input id="personaMascotImage" type="url" placeholder="可留空，顯示預設圖示" />
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </aside>
+
+        <section class="panel persona-preview-shell">
+          <div class="persona-preview-frame">
+            <div class="preview-toolbar">
+              <div class="preview-toolbar-meta">
+                <div>
+                  <h2>個人化頁預覽</h2>
+                  <p>這不是投遞型履歷，而是自我介紹、社群個人頁、角色設定卡的視覺風格。</p>
+                </div>
+                <div class="layout-badge" id="personaThemeBadge">目前風格：可愛風 🌸</div>
+              </div>
+            </div>
+            <div id="personaBoard" class="persona-board" data-theme="cute"></div>
+          </div>
+        </section>
+      </section>
+    </div><!-- /page-persona -->
 
   </main>
 
@@ -5187,7 +5838,7 @@
 
         /* Restore last tab */
         const savedTab = localStorage.getItem(PF_TAB_KEY);
-        if (savedTab && ["home", "cv", "portfolio"].includes(savedTab)) {
+        if (savedTab && ["home", "cv", "portfolio", "persona"].includes(savedTab)) {
           switchTab(savedTab);
         }
 
@@ -5196,6 +5847,265 @@
       }
 
       init();
+    })();
+
+    /* ===== PERSONA PAGE MODULE ===== */
+    (() => {
+      const PERSONA_KEY = "persona-board-local-v1";
+
+      const personaDefault = {
+        theme: "cute",
+        heroDate: "6 / 9",
+        heroCode: "ESFP",
+        mainTitle: "雙子座 × 屬羊女生",
+        tagline: "生活就是我的舞台，而我拒絕無聊。",
+        birthday: "6 月 9 日",
+        sign: "雙子座",
+        mbti: "ESFP",
+        animal: "羊",
+        gender: "女生",
+        role: "表演者型魅力體",
+        vibe: "像陽光一樣的人，走到哪裡都能帶動氣氛。\n外表活潑、親切自然，內心其實很細膩。\n喜歡新鮮、喜歡體驗，也很重視真誠。",
+        story: "在熱鬧裡找到舞台，在自由裡保留真心。比起照著劇本生活，我更喜歡把每一天活成自己的現場。",
+        strengths: "很會帶動氣氛\n熱情真誠，容易建立連結\n反應快，適應力強\n創意很多，點子很會冒出來\n說到做到，行動力高",
+        weaknesses: "有時三分鐘熱度\n太想把每件事都做好\n討厭被限制，容易突然想逃跑\n有時講話太直",
+        energy: "ESFP | 熱情、行動力強，享受當下，擅長把氣氛點亮。\n\n雙子座 | 腦袋靈活、喜歡交流，總能找到新的有趣角度。\n\n屬羊 | 溫柔善良，也有自己安靜而堅定的一面。",
+        keywords: "熱情, 表演者, 社交高手, 行動力, 享受當下, 自由靈魂",
+        favorites: "音符吊飾, 黃水晶, 拍立得, 星星, 紙膠帶",
+        reminder: "偶爾停下來也沒關係。你不是只負責逗別人開心的人，也值得被理解、被接住、被好好喜歡。",
+        portrait: "",
+        bubble: "舞台在哪裡，我就在哪裡發光！",
+        mascotName: "棉花糖小羊",
+        mascotImage: "",
+        loveStyle: "喜歡輕鬆愉快、自然舒服的關係\n需要新鮮感與互動感\n喜歡一起體驗新事物\n重視真誠與被理解"
+      };
+
+      const personaThemeMeta = {
+        cute: { label: "可愛風 🌸", mascot: "🐑", decos: ["🌸","✦","♪","⭐","🌿","💫","🎵","✿","🍀","💕"] },
+        cool: { label: "帥氣風 🖤", mascot: "🐺", decos: ["✦","◆","⚡","◇","▲","★","◈","⬡","✧","▸"] }
+      };
+
+      const personaDecoPositions = [
+        { top:"3%",  left:"5%",  delay:"0s"   },
+        { top:"7%",  right:"7%", delay:"1.2s" },
+        { top:"16%", left:"2%",  delay:"2.4s" },
+        { top:"28%", right:"3%", delay:"0.6s" },
+        { top:"42%", left:"4%",  delay:"1.8s" },
+        { top:"58%", right:"2%", delay:"3s"   },
+        { top:"72%", left:"2%",  delay:"0.9s" },
+        { top:"82%", right:"6%", delay:"2.1s" },
+        { top:"91%", left:"7%",  delay:"1.5s" },
+        { top:"95%", right:"10%",delay:"0.3s" }
+      ];
+
+      function $p(id) { return document.getElementById(id); }
+
+      function esc(v) {
+        return String(v || "").replace(/[&<>"']/g, m => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[m]));
+      }
+
+      function splitLines(t) { return String(t||"").split("\n").map(s=>s.trim()).filter(Boolean); }
+      function splitItems(t) { return String(t||"").split(/[\n,]/).map(s=>s.trim()).filter(Boolean); }
+      function parsePairs(t) {
+        return String(t||"").split(/\n\s*\n/).map(s=>s.trim()).filter(Boolean).map(s=>{
+          const [title="",body=""] = s.split("|").map(p=>p.trim());
+          return {title,body};
+        }).slice(0,3);
+      }
+
+      function loadPersona() {
+        try { const r=localStorage.getItem(PERSONA_KEY); return r?{...personaDefault,...JSON.parse(r)}:{...personaDefault}; }
+        catch { return {...personaDefault}; }
+      }
+
+      let persona = loadPersona();
+
+      const personaInputMap = {
+        heroDate:"personaHeroDate", heroCode:"personaHeroCode", mainTitle:"personaMainTitle",
+        tagline:"personaTagline", birthday:"personaBirthday", sign:"personaSign",
+        mbti:"personaMbti", animal:"personaAnimal", gender:"personaGender", role:"personaRole",
+        vibe:"personaVibe", story:"personaStory", strengths:"personaStrengths",
+        weaknesses:"personaWeaknesses", energy:"personaEnergy", keywords:"personaKeywords",
+        favorites:"personaFavorites", reminder:"personaReminder", portrait:"personaPortrait",
+        bubble:"personaBubble", mascotName:"personaMascotName", mascotImage:"personaMascotImage",
+        loveStyle:"personaLoveStyle"
+      };
+
+      function savePersona() { localStorage.setItem(PERSONA_KEY, JSON.stringify(persona)); }
+
+      function syncInputs() {
+        Object.entries(personaInputMap).forEach(([key,id]) => {
+          const n = $p(id); if (n) n.value = persona[key] || "";
+        });
+      }
+
+      function renderBoard() {
+        const board = $p("personaBoard");
+        const badge = $p("personaThemeBadge");
+        if (!board) return;
+
+        const meta = personaThemeMeta[persona.theme] || personaThemeMeta.cute;
+        const vibeLines = splitLines(persona.vibe);
+        const strengthLines = splitLines(persona.strengths);
+        const weaknessLines = splitLines(persona.weaknesses);
+        const loveLines = splitLines(persona.loveStyle);
+        const keywordItems = splitItems(persona.keywords);
+        const favoriteItems = splitItems(persona.favorites);
+        const energyCards = parsePairs(persona.energy);
+
+        board.dataset.theme = persona.theme;
+        if (badge) badge.textContent = "目前風格：" + meta.label;
+
+        const decoHtml = personaDecoPositions.map((pos, i) => {
+          const sym = meta.decos[i % meta.decos.length];
+          const styleArr = Object.entries(pos).filter(([k])=>k!=="delay").map(([k,v])=>k+":"+v);
+          return '<span class="persona-deco" style="' + styleArr.join(";") + ';animation-delay:' + pos.delay + '">' + sym + '</span>';
+        }).join("");
+
+        function listItem(text) {
+          return '<div class="persona-list-item"><span class="persona-list-bullet">\u2713</span><span>' + esc(text) + '</span></div>';
+        }
+        function emptyHint(msg) { return '<p style="opacity:.52;font-size:.86rem">' + msg + '</p>'; }
+
+        board.innerHTML = [
+          '<div class="persona-decos">' + decoHtml + '</div>',
+          '<div class="persona-board-grid">',
+
+          /* LEFT COLUMN */
+          '<div class="persona-col">',
+
+          /* hero */
+          '<section class="persona-note hero-note">',
+          '<div class="persona-top-title">' + esc(persona.heroDate) + '</div>',
+          '<div class="persona-top-subtitle">' + esc(persona.heroCode) + '</div>',
+          '<div class="persona-top-subtitle" style="font-size:clamp(1.3rem,2.6vw,2rem);margin-top:8px">' + esc(persona.mainTitle) + '</div>',
+          '<div class="persona-tagline">' + esc(persona.tagline) + '</div>',
+          '</section>',
+
+          /* vibe */
+          '<section class="persona-note">',
+          '<div class="persona-note-head" style="--sh:var(--sh-2)"><span class="persona-index">2</span><h3>整體氣質</h3></div>',
+          '<div class="persona-note-body"><div class="persona-list">',
+          vibeLines.length ? vibeLines.map(listItem).join("") : emptyHint("描述這個人的氛圍與個性。"),
+          '</div></div></section>',
+
+          /* story */
+          '<section class="persona-note alt">',
+          '<div class="persona-note-head" style="--sh:var(--sh-3)"><span class="persona-index">3</span><h3>生日特別感</h3></div>',
+          '<div class="persona-note-body"><p style="line-height:1.82;font-size:.92rem">' + (esc(persona.story)||emptyHint("寫一段像旁白的文字。")) + '</p></div>',
+          '</section>',
+
+          /* strengths */
+          '<section class="persona-note">',
+          '<div class="persona-note-head" style="--sh:var(--sh-5)"><span class="persona-index">5</span><h3>優點整理</h3></div>',
+          '<div class="persona-note-body"><div class="persona-list">',
+          strengthLines.length ? strengthLines.map(listItem).join("") : emptyHint("列出最有記憶點的優點。"),
+          '</div></div></section>',
+
+          /* keywords */
+          '<section class="persona-note soft">',
+          '<div class="persona-note-head" style="--sh:var(--sh-8)"><span class="persona-index">8</span><h3>關鍵字</h3></div>',
+          '<div class="persona-note-body"><div class="persona-pills">',
+          keywordItems.length ? keywordItems.map(k=>'<span class="persona-pill">'+esc(k)+'</span>').join("") : emptyHint("用逗號分隔你的關鍵字。"),
+          '</div></div></section>',
+
+          '</div>', /* /left col */
+
+          /* RIGHT COLUMN */
+          '<div class="persona-col">',
+
+          /* basic info */
+          '<section class="persona-note">',
+          '<div class="persona-note-head" style="--sh:var(--sh-1)"><span class="persona-index">1</span><h3>基本資料</h3></div>',
+          '<div class="persona-note-body"><div class="persona-facts">',
+          [["生日",persona.birthday],["星座",persona.sign],["MBTI",persona.mbti],["生肖",persona.animal],["性別",persona.gender],["定位",persona.role]]
+            .map(([k,v])=>'<div class="persona-fact-row"><strong>'+k+'：</strong><span>'+(esc(v)||"—")+'</span></div>').join(""),
+          '</div></div></section>',
+
+          /* centerpiece */
+          '<section class="persona-note" style="overflow:hidden">',
+          '<div class="persona-centerpiece">',
+          '<div class="persona-photo">',
+          persona.portrait
+            ? '<img src="'+esc(persona.portrait)+'" alt="persona portrait" />'
+            : '<div>'+(persona.theme==="cool"?"✦ Your Main Character Energy ✦":"✿ Your Cute Scrapbook Cover ✿")+'</div>',
+          '</div>',
+          '<div class="persona-bubble">'+esc(persona.bubble)+'</div>',
+          '</div></section>',
+
+          /* energy */
+          '<section class="persona-note alt">',
+          '<div class="persona-note-head" style="--sh:var(--sh-4)"><span class="persona-index">4</span><h3>三重能量</h3></div>',
+          '<div class="persona-note-body"><div class="persona-energy-stack">',
+          energyCards.length
+            ? energyCards.map(c=>'<div class="persona-energy-card"><div class="persona-energy-badge">'+esc((c.title||"?").slice(0,4))+'</div><div><strong>'+esc(c.title||"能量")+'</strong><p>'+esc(c.body||"請補充描述。")+'</p></div></div>').join("")
+            : '<div class="persona-energy-card"><div class="persona-energy-badge">+</div><div><strong>新增能量</strong><p>用「標題 | 內容」填三組。</p></div></div>',
+          '</div></div></section>',
+
+          /* love style */
+          '<section class="persona-note">',
+          '<div class="persona-note-head" style="--sh:var(--sh-6)"><span class="persona-index">6</span><h3>感情模式</h3></div>',
+          '<div class="persona-note-body"><div class="persona-list">',
+          loveLines.length ? loveLines.map(listItem).join("") : emptyHint("寫下你習慣的互動方式。"),
+          '</div></div></section>',
+
+          /* weaknesses */
+          '<section class="persona-note soft">',
+          '<div class="persona-note-head" style="--sh:var(--sh-7)"><span class="persona-index">7</span><h3>小小缺點</h3></div>',
+          '<div class="persona-note-body"><div class="persona-list">',
+          weaknessLines.length ? weaknessLines.map(listItem).join("") : emptyHint("保留一點真實感，這頁會更可愛。"),
+          '</div></div></section>',
+
+          /* favorites */
+          '<section class="persona-note">',
+          '<div class="persona-note-head" style="--sh:var(--sh-9)"><span class="persona-index">9</span><h3>適合你的小物</h3></div>',
+          '<div class="persona-note-body"><div class="persona-item-row">',
+          favoriteItems.length ? favoriteItems.map(item=>'<span class="persona-item-pill">\u2736 '+esc(item)+'</span>').join("") : emptyHint("列出你喜歡的東西。"),
+          '</div></div></section>',
+
+          /* mascot + reminder */
+          '<section class="persona-note soft">',
+          '<div class="persona-note-body"><div class="persona-mascot-wrap">',
+          '<div class="persona-mascot-card">',
+          persona.mascotImage ? '<img src="'+esc(persona.mascotImage)+'" alt="mascot" />' : meta.mascot,
+          '</div>',
+          '<div><div style="font-weight:700;margin-bottom:6px;font-size:.92rem">'+meta.mascot+' '+esc(persona.mascotName)+'</div>',
+          '<p class="persona-note-footer">'+(esc(persona.reminder)||"給自己的一句提醒。")+'</p></div>',
+          '</div></div></section>',
+
+          '</div>', /* /right col */
+          '</div>', /* /grid */
+          '<div class="persona-bottom-quote">'+esc(persona.tagline)+'</div>'
+        ].join("");
+      }
+
+      function setTheme(themeId) {
+        persona.theme = themeId;
+        document.querySelectorAll("[data-persona-theme]").forEach(b => {
+          b.classList.toggle("active", b.dataset.personaTheme === themeId);
+        });
+        savePersona();
+        renderBoard();
+      }
+
+      function bindEvents() {
+        Object.entries(personaInputMap).forEach(([key, id]) => {
+          const n = $p(id); if (!n) return;
+          n.addEventListener("input", e => { persona[key] = e.target.value; savePersona(); renderBoard(); });
+        });
+        document.querySelectorAll("[data-persona-theme]").forEach(b => {
+          b.addEventListener("click", () => setTheme(b.dataset.personaTheme));
+        });
+      }
+
+      function initPersona() {
+        if (!$p("page-persona")) return;
+        syncInputs();
+        bindEvents();
+        setTheme(persona.theme || "cute");
+      }
+
+      initPersona();
     })();
   </script>
 </body>
