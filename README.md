@@ -9,7 +9,7 @@
 - 下載 PDF
 - PWA 安裝成手機 / 桌面 APP
 
-目前主畫面是 `index.html`，資料表設定在 `supabase-schema.sql`。
+目前主畫面是 [index.html](index.html)，資料表設定在 [supabase-schema.sql](supabase-schema.sql)。
 
 ## 上線前設定
 
@@ -25,13 +25,13 @@
 7. 按 `套用設定`
 8. 按 `Google 登入` 測試
 
-如果你不想每次手動輸入，現在可以直接改專案根目錄的 `config.js`：
+如果你不想每次手動輸入，把 [config.example.js](config.example.js) 複製一份改名為 `config.js`，填入你的設定（`config.js` 已加入 `.gitignore`，不會被 commit）：
 
 ```js
 window.CV_STUDIO_CONFIG = {
   supabaseUrl: "https://your-project.supabase.co",
   supabaseAnonKey: "your-anon-key",
-  siteUrl: "https://your-site.example.com/",
+  siteUrl: "",          // 留空會自動使用目前網址
   defaultTemplate: "n-tech"
 };
 ```
@@ -57,7 +57,7 @@ https://你的帳號.github.io/你的-repo/
 1. Supabase `Authentication > URL Configuration` 的 `Site URL` 與 `Redirect URLs`
 2. Google Cloud OAuth 允許的網址設定
 
-另外，根目錄的 `config.js` 目前已把 `siteUrl` 留空，頁面會自動改用目前開啟的網址當作登入回跳位址；如果你想固定寫死成 GitHub Pages 網址，也可以手動填入。
+另外，根目錄的 [config.js](config.js) 目前已把 `siteUrl` 留空，頁面會自動改用目前開啟的網址當作登入回跳位址；如果你想固定寫死成 GitHub Pages 網址，也可以手動填入。
 
 ## Google 登入實作方式
 

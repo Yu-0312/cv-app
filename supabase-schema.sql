@@ -1,6 +1,7 @@
 -- Run this in Supabase SQL Editor
 -- 1. Enable Google provider in Authentication > Providers
 -- 2. Add your site URL and redirect URL in Authentication > URL Configuration
+-- 3. Create the cv-images storage bucket (see bottom of this file)
 
 create table if not exists public.cv_profiles (
   user_id uuid primary key references auth.users(id) on delete cascade,
@@ -54,3 +55,50 @@ create policy "Users can delete own CV"
 on public.cv_profiles
 for delete
 using (auth.uid() = user_id);
+
+-- ============================================================
+-- STORAGE: cv-images bucket
+-- Run once in Supabase SQL Editor after creating the bucket
+-- in Storage > New Bucket (name: cv-images, Public: ON)
+-- ============================================================
+
+-- Allow any authenticated user to upload into their own folder
+drop policy if exists "Users can upload own images" on storage.objects;
+create policy "Users can upload own images"
+on storage.objects
+for insert
+to authenticated
+with check (
+  bucket_id = 'cv-images'
+  and (storage.foldername(name))[1] = auth.uid()::text
+);
+
+-- Allow authenticated users to update/replace their own images
+drop policy if exists "Users can update own images" on storage.objects;
+create policy "Users can update own images"
+on storage.objects
+for update
+to authenticated
+using (
+  bucket_id = 'cv-images'
+  and (storage.foldername(name))[1] = auth.uid()::text
+);
+
+-- Allow authenticated users to delete their own images
+drop policy if exists "Users can delete own images" on storage.objects;
+create policy "Users can delete own images"
+on storage.objects
+for delete
+to authenticated
+using (
+  bucket_id = 'cv-images'
+  and (storage.foldername(name))[1] = auth.uid()::text
+);
+
+-- Allow everyone (including anon) to read images (for public CV preview & PDF)
+drop policy if exists "Public can read cv-images" on storage.objects;
+create policy "Public can read cv-images"
+on storage.objects
+for select
+to public
+using (bucket_id = 'cv-images');

@@ -1,5 +1,5 @@
-const CACHE_NAME = "cv-studio-cache-v1";
-const ASSETS = ["./", "./index.html", "./manifest.json", "./icon.svg"];
+const CACHE_NAME = "cv-studio-cache-v2";
+const ASSETS = ["./", "./index.html", "./manifest.json", "./icon.svg", "./config.js"];
 
 self.addEventListener("install", (event) => {
   event.waitUntil(
