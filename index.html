@@ -462,6 +462,25 @@
       font-size: 0.94rem;
     }
 
+    .feature-card-action {
+      display: inline-block;
+      margin-top: 14px;
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--template-heading);
+      background: rgba(255, 255, 255, 0.72);
+      border: 1px solid rgba(49, 40, 27, 0.14);
+      border-radius: 100px;
+      padding: 6px 14px;
+      cursor: pointer;
+      transition: background 0.15s, border-color 0.15s;
+    }
+
+    .feature-card-action:hover {
+      background: rgba(255, 255, 255, 0.96);
+      border-color: rgba(49, 40, 27, 0.28);
+    }
+
     .topbar {
       display: flex;
       flex-wrap: wrap;
@@ -2245,6 +2264,7 @@
           </p>
           <div class="hero-actions">
             <button id="startEditingBtn" class="primary" type="button">開始編輯履歷</button>
+            <button id="goPortfolioBtn" class="secondary" type="button">查看學習歷程</button>
           </div>
           <div class="hero-stats">
             <div class="hero-stat">
@@ -2289,20 +2309,24 @@
 
     <section class="feature-strip">
       <article class="feature-card">
-        <strong>首頁先講清楚</strong>
-        <p>使用者先看到產品價值、主要操作與登入方式，不需要先研究表單。</p>
+        <strong>CV 履歷編輯器</strong>
+        <p>即時編輯、切換模板，填完就能直接下載 PDF。</p>
+        <button class="feature-card-action" data-guide-tab="cv" type="button">前往編輯 →</button>
       </article>
       <article class="feature-card">
-        <strong>右上角登入明確</strong>
-        <p>Google 登入固定放在頁首右上角，符合常見產品習慣，也更容易被找到。</p>
+        <strong>學習歷程作品集</strong>
+        <p>記錄課程、專案與成果，自動產生可分享的學習歷程頁面。</p>
+        <button class="feature-card-action" data-guide-tab="portfolio" type="button">前往學習歷程 →</button>
       </article>
       <article class="feature-card">
-        <strong>編輯器還在下面</strong>
-        <p>保留你原本的即時預覽、模板切換、Supabase 設定與雲端同步功能。</p>
+        <strong>下載 PDF</strong>
+        <p>一鍵將履歷轉成排版精確的 PDF，直接投遞或列印。</p>
+        <button class="feature-card-action" data-guide-tab="cv" data-guide-action="download" type="button">前往下載 →</button>
       </article>
       <article class="feature-card">
-        <strong>可延伸成正式服務</strong>
-        <p>這個結構之後很容易再補方案介紹、作品案例、FAQ 或公開模板展示。</p>
+        <strong>Google 雲端同步</strong>
+        <p>登入後自動儲存，換裝置也能繼續編輯，不怕資料遺失。</p>
+        <button class="feature-card-action" data-guide-action="login" type="button">如何登入 →</button>
       </article>
     </section>
     </div><!-- /page-home -->
@@ -5471,6 +5495,25 @@
         if (startBtn) {
           startBtn.addEventListener("click", () => switchTab("cv"));
         }
+
+        /* Home → Portfolio button */
+        const goPortfolioBtn = document.getElementById("goPortfolioBtn");
+        if (goPortfolioBtn) {
+          goPortfolioBtn.addEventListener("click", () => switchTab("portfolio"));
+        }
+
+        /* Feature guide buttons */
+        document.querySelectorAll(".feature-card-action[data-guide-tab]").forEach(btn => {
+          btn.addEventListener("click", () => {
+            switchTab(btn.dataset.guideTab);
+            if (btn.dataset.guideAction === "download") {
+              setTimeout(() => document.getElementById("downloadPdfBtn")?.scrollIntoView({ behavior: "smooth", block: "center" }), 150);
+            }
+          });
+        });
+        document.querySelector(".feature-card-action[data-guide-action='login']")?.addEventListener("click", () => {
+          document.getElementById("loginBtn")?.scrollIntoView({ behavior: "smooth", block: "center" });
+        });
 
         /* Portfolio theme picker */
         document.querySelectorAll("[data-pf-theme]").forEach(btn => {
