@@ -2017,6 +2017,65 @@
       color: var(--muted);
     }
 
+    /* ===== PORTFOLIO TOOLS ===== */
+    .pf-tools-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px;
+    }
+
+    .pf-tool-category-label {
+      grid-column: 1 / -1;
+      font-size: 0.74rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin: 10px 0 2px;
+    }
+
+    .pf-tool-category-label:first-child {
+      margin-top: 0;
+    }
+
+    .pf-tool-card {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      padding: 11px 13px;
+      background: rgba(255, 255, 255, 0.72);
+      border: 1px solid rgba(49, 40, 27, 0.09);
+      border-radius: 14px;
+      text-decoration: none;
+      color: inherit;
+      transition: box-shadow 0.15s, border-color 0.15s, background 0.15s;
+    }
+
+    .pf-tool-card:hover {
+      background: #fff;
+      border-color: rgba(33, 78, 116, 0.25);
+      box-shadow: 0 4px 14px rgba(33, 78, 116, 0.10);
+    }
+
+    .pf-tool-icon {
+      font-size: 19px;
+      line-height: 1;
+      flex: 0 0 auto;
+      margin-top: 1px;
+    }
+
+    .pf-tool-info strong {
+      display: block;
+      font-size: 0.86rem;
+      margin-bottom: 2px;
+    }
+
+    .pf-tool-info span {
+      font-size: 0.76rem;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+
     /* ===== PORTFOLIO PREVIEW PAGES ===== */
     .portfolio-preview-area {
       display: flex;
@@ -4046,6 +4105,139 @@
               <p>每個章節對應一頁內容頁，可加入多個小節（標題 ＋ 內文 ＋ 圖片）。</p>
               <div id="pfChapters"></div>
               <button id="pfAddChapterBtn" class="soft" type="button" style="width:100%;margin-top:12px;">＋ 新增章節</button>
+            </div>
+
+            <!-- tools & resources -->
+            <div class="section-card" id="pfToolsSection">
+              <h3>推薦工具資源</h3>
+              <p>整理課程成果、設計封面、撰寫自述時常用的工具，點選直接開啟。</p>
+              <div class="pf-tools-grid">
+
+                <div class="pf-tool-category-label">官方上傳平台</div>
+                <a class="pf-tool-card" href="https://epf.mlife.org.tw/Portal.do" target="_blank" rel="noreferrer noopener">
+                  <span class="pf-tool-icon">🎓</span>
+                  <div class="pf-tool-info">
+                    <strong>學習歷程上傳平台</strong>
+                    <span>官方中央資料庫，課程成果與多元表現上傳</span>
+                  </div>
+                </a>
+
+                <div class="pf-tool-category-label">學習歷程製作</div>
+                <a class="pf-tool-card" href="https://luckertw.com/" target="_blank" rel="noreferrer noopener">
+                  <span class="pf-tool-icon">📚</span>
+                  <div class="pf-tool-info">
+                    <strong>Lucker 拉課</strong>
+                    <span>專為學習歷程設計，含千種範本與雲端範例庫</span>
+                  </div>
+                </a>
+                <a class="pf-tool-card" href="https://www.yory.school/" target="_blank" rel="noreferrer noopener">
+                  <span class="pf-tool-icon">📋</span>
+                  <div class="pf-tool-info">
+                    <strong>Yory 優歷</strong>
+                    <span>AI 輔助自述撰寫，依教授閱卷邏輯給回饋</span>
+                  </div>
+                </a>
+                <a class="pf-tool-card" href="https://student.104.com.tw/epf/" target="_blank" rel="noreferrer noopener">
+                  <span class="pf-tool-icon">💼</span>
+                  <div class="pf-tool-info">
+                    <strong>104 學習歷程</strong>
+                    <span>免費線上自述編輯器，一鍵匯出 PDF</span>
+                  </div>
+                </a>
+
+                <div class="pf-tool-category-label">設計工具</div>
+                <a class="pf-tool-card" href="https://www.canva.com/" target="_blank" rel="noreferrer noopener">
+                  <span class="pf-tool-icon">🎨</span>
+                  <div class="pf-tool-info">
+                    <strong>Canva</strong>
+                    <span>最多學生使用的免費設計工具，含學習歷程範本</span>
+                  </div>
+                </a>
+                <a class="pf-tool-card" href="https://www.adobe.com/express/" target="_blank" rel="noreferrer noopener">
+                  <span class="pf-tool-icon">✨</span>
+                  <div class="pf-tool-info">
+                    <strong>Adobe Express</strong>
+                    <span>免費快速設計，封面與排版皆適用</span>
+                  </div>
+                </a>
+                <a class="pf-tool-card" href="https://www.figma.com/" target="_blank" rel="noreferrer noopener">
+                  <span class="pf-tool-icon">✏️</span>
+                  <div class="pf-tool-info">
+                    <strong>Figma</strong>
+                    <span>進階排版設計，免費版適合個人使用</span>
+                  </div>
+                </a>
+
+                <div class="pf-tool-category-label">簡報 & 文件</div>
+                <a class="pf-tool-card" href="https://docs.google.com/presentation/create" target="_blank" rel="noreferrer noopener">
+                  <span class="pf-tool-icon">📊</span>
+                  <div class="pf-tool-info">
+                    <strong>Google 簡報</strong>
+                    <span>線上共同編輯簡報，可分享連結方便修改</span>
+                  </div>
+                </a>
+                <a class="pf-tool-card" href="https://docs.google.com/document/create" target="_blank" rel="noreferrer noopener">
+                  <span class="pf-tool-icon">📝</span>
+                  <div class="pf-tool-info">
+                    <strong>Google 文件</strong>
+                    <span>線上文件撰寫，適合報告草稿與自述整理</span>
+                  </div>
+                </a>
+                <a class="pf-tool-card" href="https://gamma.app/" target="_blank" rel="noreferrer noopener">
+                  <span class="pf-tool-icon">⚡</span>
+                  <div class="pf-tool-info">
+                    <strong>Gamma</strong>
+                    <span>AI 自動生成美觀簡報，幾分鐘完成版型</span>
+                  </div>
+                </a>
+                <a class="pf-tool-card" href="https://hackmd.io/" target="_blank" rel="noreferrer noopener">
+                  <span class="pf-tool-icon">📄</span>
+                  <div class="pf-tool-info">
+                    <strong>HackMD</strong>
+                    <span>Markdown 共筆筆記，適合整理學習心得</span>
+                  </div>
+                </a>
+
+                <div class="pf-tool-category-label">免費圖庫</div>
+                <a class="pf-tool-card" href="https://unsplash.com/" target="_blank" rel="noreferrer noopener">
+                  <span class="pf-tool-icon">🖼️</span>
+                  <div class="pf-tool-info">
+                    <strong>Unsplash</strong>
+                    <span>免費高畫質照片，可複製圖片網址直接貼入</span>
+                  </div>
+                </a>
+                <a class="pf-tool-card" href="https://www.pexels.com/" target="_blank" rel="noreferrer noopener">
+                  <span class="pf-tool-icon">📸</span>
+                  <div class="pf-tool-info">
+                    <strong>Pexels</strong>
+                    <span>免費圖片與影片素材，CC0 授權免費使用</span>
+                  </div>
+                </a>
+                <a class="pf-tool-card" href="https://pixabay.com/" target="_blank" rel="noreferrer noopener">
+                  <span class="pf-tool-icon">🌄</span>
+                  <div class="pf-tool-info">
+                    <strong>Pixabay</strong>
+                    <span>免費圖片與插圖向量素材，CC0 授權</span>
+                  </div>
+                </a>
+
+                <div class="pf-tool-category-label">AI 輔助寫作</div>
+                <a class="pf-tool-card" href="https://chatgpt.com/" target="_blank" rel="noreferrer noopener">
+                  <span class="pf-tool-icon">🤖</span>
+                  <div class="pf-tool-info">
+                    <strong>ChatGPT</strong>
+                    <span>AI 輔助寫作、想法整理與自述草稿撰寫</span>
+                  </div>
+                </a>
+                <a class="pf-tool-card" href="https://copilot.microsoft.com/" target="_blank" rel="noreferrer noopener">
+                  <span class="pf-tool-icon">💡</span>
+                  <div class="pf-tool-info">
+                    <strong>Microsoft Copilot</strong>
+                    <span>免費 GPT-4 輔助，整合 Bing 搜尋與撰寫</span>
+                  </div>
+                </a>
+
+              </div>
             </div>
 
           </div><!-- /portfolio-editor-scroll -->
