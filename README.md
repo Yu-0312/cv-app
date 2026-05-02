@@ -25,13 +25,13 @@
 7. 按 `套用設定`
 8. 按 `Google 登入` 測試
 
-如果你不想每次手動輸入，現在可以直接改專案根目錄的 [config.js](config.js)：
+如果你不想每次手動輸入，把 [config.example.js](config.example.js) 複製一份改名為 `config.js`，填入你的設定（`config.js` 已加入 `.gitignore`，不會被 commit）：
 
 ```js
 window.CV_STUDIO_CONFIG = {
   supabaseUrl: "https://your-project.supabase.co",
   supabaseAnonKey: "your-anon-key",
-  siteUrl: "https://your-site.example.com/",
+  siteUrl: "",          // 留空會自動使用目前網址
   defaultTemplate: "n-tech"
 };
 ```
@@ -126,6 +126,23 @@ Google 官方已公告舊版 Google Sign-In for Web 程式庫已淘汰，且 Fed
 產品設計實習生 | 某某科技 | 2024 - 現在 | 負責後台流程與設計規格整理。
 
 前端協作 | 自由接案 | 2023 - 2024 | 製作品牌官網與活動頁。
+```
+
+## 專案結構
+
+```
+CV-App/
+├── .claude/               # Claude Code 開發工具設定（IDE 整合與工作區設定）
+├── .github/               # GitHub 相關設定
+│   └── workflows/         # GitHub Actions 自動部署流程（push 到 main 後自動部署到 GitHub Pages）
+├── index.html             # 主頁面，包含所有 UI 與應用程式邏輯
+├── sw.js                  # Service Worker，實現 PWA 離線快取功能
+├── manifest.json          # PWA 設定，定義 APP 名稱、圖示與安裝行為
+├── icon.svg               # APP 圖示
+├── supabase-schema.sql    # Supabase 資料庫結構定義，包含資料表與 RLS 規則
+├── config.js              # 本機使用的 Supabase 設定（已加入 .gitignore，不會上傳）
+├── config.example.js      # 設定檔範本（供參考，實際使用請複製為 config.js）
+└── package.json           # npm 設定，包含 build 腳本（將檔案複製到 dist/）
 ```
 
 ## 你接下來可以做的事
