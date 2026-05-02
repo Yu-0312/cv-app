@@ -51,6 +51,7 @@ cp config.example.js config.js
 window.CV_STUDIO_CONFIG = {
   supabaseUrl: "https://your-project.supabase.co",
   supabaseAnonKey: "your-anon-key",
+  canvaConnectUrl: "https://www.canva.com/",
   siteUrl: "",          // 留空會自動使用目前網址
   defaultTemplate: "n-tech"
 };
@@ -101,7 +102,6 @@ npm run build
 切換上方「**學習歷程**」分頁，可建立章節式作品集，並支援匯出為 PDF。
 
 ---
-
 ## 模板欄位格式
 
 工作經歷、學歷、專案、獎項這幾個區塊使用以下格式：
