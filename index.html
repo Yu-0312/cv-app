@@ -5922,12 +5922,13 @@
         const readyForLogin = Boolean(getGoogleAuthorizeUrl());
         const readyForCloud = canUseSupabase();
         const canvaUrl = getCanvaConnectUrl();
+        const authorizeUrl = getGoogleAuthorizeUrl();
         document.querySelectorAll("[data-login-trigger='google']").forEach((button) => {
           if (button.tagName === "A") {
-            button.href = readyForLogin ? getGoogleAuthorizeUrl() : "#";
-            button.setAttribute("aria-disabled", readyForLogin ? "false" : "true");
+            button.href = authorizeUrl || "#";
+            button.setAttribute("aria-disabled", "false");
           } else {
-            button.disabled = !readyForLogin;
+            button.disabled = false;
           }
         });
         document.querySelectorAll("[data-canva-trigger]").forEach((button) => {
@@ -6187,11 +6188,6 @@
         event?.preventDefault();
         if (!state.config.supabaseUrl?.trim()) {
           setMessage("請先在 Supabase 設定中填入 URL。", "error");
-          return;
-        }
-        if (window.location.protocol === "file:" && !state.config.siteUrl?.trim()) {
-          setMessage("Google 登入不能直接在 file:// 本機檔案模式下使用，請改用 localhost 或正式網站網址開啟。", "error");
-          alert("Google 登入不支援直接開啟檔案（file://）。\n\n請在終端機執行：\n  npx serve .\n然後用瀏覽器開啟 http://localhost:3000 再登入。");
           return;
         }
         if (!makeClient()) {
