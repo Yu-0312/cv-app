@@ -25,6 +25,7 @@
   <script src="config.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" onerror="window.__loadSupabaseFallback()"></script>
   <script src="https://cdn.jsdelivr.net/npm/html2pdf.js@0.10.1/dist/html2pdf.bundle.min.js" onerror="window.__loadHtml2pdfFallback()"></script>
+  <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
   <style>
     :root {
       --bg: #f3efe6;
@@ -3285,6 +3286,170 @@
         flex-direction: column;
       }
     }
+
+    /* ── Tool panel styles ── */
+    .tool-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    .tool-row label {
+      font-size: 0.82rem;
+      color: var(--muted);
+      white-space: nowrap;
+    }
+    .word-count-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.78rem;
+      color: var(--muted);
+      background: rgba(33, 78, 116, 0.07);
+      border-radius: 999px;
+      padding: 3px 10px;
+      border: 1px solid rgba(33, 78, 116, 0.12);
+    }
+    .word-count-badge strong {
+      color: var(--ink);
+    }
+
+    /* Snapshot slots */
+    .snapshot-list {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .snapshot-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(255,255,255,0.6);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 6px 10px;
+      font-size: 0.82rem;
+    }
+    .snapshot-item .snap-name {
+      flex: 1;
+      font-weight: 600;
+      color: var(--ink);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .snapshot-item .snap-date {
+      font-size: 0.72rem;
+      color: var(--muted);
+      white-space: nowrap;
+    }
+    .snapshot-item button {
+      padding: 3px 9px;
+      font-size: 0.75rem;
+      border-radius: 999px;
+    }
+    .snapshot-empty {
+      font-size: 0.82rem;
+      color: var(--muted);
+      font-style: italic;
+    }
+
+    /* QR code */
+    #qrCanvas {
+      display: block;
+      border-radius: 8px;
+      border: 1px solid var(--line);
+    }
+    .qr-wrap {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .qr-info {
+      font-size: 0.78rem;
+      color: var(--muted);
+      max-width: 200px;
+      line-height: 1.5;
+    }
+
+    /* Zoom control */
+    .zoom-control {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+    .zoom-control input[type=range] {
+      width: 80px;
+    }
+    #zoomValueLabel {
+      min-width: 36px;
+      text-align: right;
+      font-weight: 600;
+      color: var(--ink);
+    }
+
+    /* Undo/Redo buttons */
+    .undo-redo-row {
+      display: flex;
+      gap: 6px;
+    }
+    .undo-redo-row button {
+      padding: 5px 14px;
+      font-size: 0.8rem;
+    }
+    .undo-redo-row button:disabled {
+      opacity: 0.35;
+      cursor: not-allowed;
+    }
+
+    /* Color swatch */
+    .color-swatch-row {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .color-swatch {
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      border: 2px solid transparent;
+      cursor: pointer;
+      transition: transform 0.15s, border-color 0.15s;
+    }
+    .color-swatch:hover { transform: scale(1.18); }
+    .color-swatch.active { border-color: var(--ink); }
+    input[type=color].accent-picker {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      border: 2px solid var(--line);
+      padding: 1px;
+      cursor: pointer;
+      background: none;
+    }
+
+    /* Print styles */
+    @media print {
+      body > *:not(#app) { display: none !important; }
+      #app { display: block !important; }
+      .app-page:not(#page-cv) { display: none !important; }
+      #page-cv > *:not(.workspace) { display: none !important; }
+      .workspace { display: block !important; margin: 0 !important; padding: 0 !important; }
+      .editor-panel { display: none !important; }
+      .preview-shell { box-shadow: none !important; background: none !important; padding: 0 !important; }
+      .preview-frame { box-shadow: none !important; background: none !important; }
+      .preview-toolbar { display: none !important; }
+      #cvPaper {
+        transform: none !important;
+        box-shadow: none !important;
+        margin: 0 auto !important;
+        width: 210mm !important;
+      }
+    }
   </style>
 </head>
 <body>
@@ -3487,6 +3652,9 @@
         <button id="saveBtn" class="secondary" type="button">儲存 CV</button>
         <button id="previewPdfBtn" class="secondary" type="button">預覽 PDF</button>
         <button id="downloadPdfBtn" class="soft" type="button">下載 PDF</button>
+        <button id="printCvBtn" class="soft" type="button">列印</button>
+        <button id="undoBtn" class="ghost" type="button" title="復原 (Ctrl+Z)" disabled>↩ 復原</button>
+        <button id="redoBtn" class="ghost" type="button" title="重做 (Ctrl+Y)" disabled>↪ 重做</button>
         <button id="installBtn" class="ghost" type="button" hidden>安裝 APP</button>
       </div>
       <div class="topbar-group">
@@ -3547,6 +3715,87 @@
         <span class="cv-studio-label">模板選擇（點選即時套用）</span>
         <div class="template-strip" id="templateStrip"><!-- rendered by JS --></div>
       </div>
+
+      <!-- ===== TOOLS PANEL ===== -->
+      <div class="cv-studio-section">
+        <details id="cvToolsDetails" style="width:100%;">
+          <summary class="cv-studio-label" style="cursor:pointer;user-select:none;list-style:none;display:flex;align-items:center;gap:8px;">
+            <span>工具列</span>
+            <span id="wordCountBadge" class="word-count-badge" style="font-size:0.72rem;">字數 <strong id="wordCountNum">0</strong></span>
+          </summary>
+          <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px;margin-top:14px;">
+
+            <!-- Word count -->
+            <div class="editor-tool" style="background:rgba(255,255,255,0.6);border:1px solid var(--line);border-radius:14px;padding:12px 14px;">
+              <strong style="font-size:0.82rem;">字數統計</strong>
+              <div class="tool-row" style="margin-top:8px;gap:8px;">
+                <span class="word-count-badge">總字數 <strong id="wordCountNumFull">0</strong> 字</span>
+                <span class="word-count-badge">字元數 <strong id="charCountNum">0</strong></span>
+              </div>
+            </div>
+
+            <!-- Custom accent color -->
+            <div class="editor-tool" style="background:rgba(255,255,255,0.6);border:1px solid var(--line);border-radius:14px;padding:12px 14px;">
+              <strong style="font-size:0.82rem;">自定義強調色</strong>
+              <div class="color-swatch-row" style="margin-top:8px;">
+                <span class="color-swatch active" style="background:#ad3f2f;" data-accent="#ad3f2f" title="磚紅"></span>
+                <span class="color-swatch" style="background:#214e74;" data-accent="#214e74" title="深藍"></span>
+                <span class="color-swatch" style="background:#2e6b3e;" data-accent="#2e6b3e" title="墨綠"></span>
+                <span class="color-swatch" style="background:#6b3fa0;" data-accent="#6b3fa0" title="暗紫"></span>
+                <span class="color-swatch" style="background:#b05e1a;" data-accent="#b05e1a" title="焦橙"></span>
+                <span class="color-swatch" style="background:#1a5f7a;" data-accent="#1a5f7a" title="靛青"></span>
+                <span class="color-swatch" style="background:#7a1f3d;" data-accent="#7a1f3d" title="酒紅"></span>
+                <span class="color-swatch" style="background:#2d2d2d;" data-accent="#2d2d2d" title="黑"></span>
+                <input type="color" id="accentColorPicker" class="accent-picker" value="#ad3f2f" title="自訂顏色" />
+              </div>
+              <div style="margin-top:8px;">
+                <button id="resetAccentBtn" class="ghost" type="button" style="padding:4px 12px;font-size:0.75rem;">還原預設色</button>
+              </div>
+            </div>
+
+            <!-- Version snapshots -->
+            <div class="editor-tool" style="background:rgba(255,255,255,0.6);border:1px solid var(--line);border-radius:14px;padding:12px 14px;">
+              <strong style="font-size:0.82rem;">版本快照</strong>
+              <p style="font-size:0.75rem;color:var(--muted);margin:4px 0 8px;">針對不同職位保留不同版本（最多 5 個）</p>
+              <div class="tool-row" style="margin-bottom:8px;gap:6px;">
+                <input id="snapshotNameInput" type="text" placeholder="快照名稱…" style="flex:1;min-width:0;padding:5px 9px;border-radius:8px;border:1px solid var(--line);font-size:0.78rem;background:rgba(255,255,255,0.8);" />
+                <button id="saveSnapshotBtn" class="secondary" type="button" style="padding:5px 12px;font-size:0.78rem;white-space:nowrap;">儲存快照</button>
+              </div>
+              <div class="snapshot-list" id="snapshotList">
+                <span class="snapshot-empty">尚無快照。</span>
+              </div>
+            </div>
+
+            <!-- Export / Import + Clear -->
+            <div class="editor-tool" style="background:rgba(255,255,255,0.6);border:1px solid var(--line);border-radius:14px;padding:12px 14px;">
+              <strong style="font-size:0.82rem;">資料管理</strong>
+              <p style="font-size:0.75rem;color:var(--muted);margin:4px 0 8px;">備份 CV 資料為 JSON，或從備份還原</p>
+              <div class="tool-row" style="gap:6px;flex-wrap:wrap;">
+                <button id="exportJsonBtn" class="soft" type="button" style="padding:5px 12px;font-size:0.78rem;">匯出 JSON</button>
+                <button id="importJsonBtn" class="soft" type="button" style="padding:5px 12px;font-size:0.78rem;">匯入 JSON</button>
+                <input id="importJsonInput" type="file" accept=".json" hidden />
+                <button id="clearAllBtn" class="ghost" type="button" style="padding:5px 12px;font-size:0.78rem;color:var(--danger);border-color:rgba(167,59,51,0.3);">清除資料</button>
+              </div>
+            </div>
+
+            <!-- QR Code -->
+            <div class="editor-tool" style="background:rgba(255,255,255,0.6);border:1px solid var(--line);border-radius:14px;padding:12px 14px;">
+              <strong style="font-size:0.82rem;">QR Code</strong>
+              <p style="font-size:0.75rem;color:var(--muted);margin:4px 0 8px;">掃描後開啟作品集或 LinkedIn（需先填寫網站欄位）</p>
+              <div class="qr-wrap">
+                <canvas id="qrCanvas" width="80" height="80"></canvas>
+                <div class="qr-info" id="qrInfo" style="font-size:0.72rem;">請先填寫網站 / 作品集網址。</div>
+              </div>
+              <div style="margin-top:8px;">
+                <button id="downloadQrBtn" class="soft" type="button" style="padding:4px 12px;font-size:0.75rem;" disabled>下載 QR Code</button>
+              </div>
+            </div>
+
+          </div>
+        </details>
+      </div>
+      <!-- /TOOLS PANEL -->
+
     </div>
 
     <section class="workspace">
@@ -3923,6 +4172,12 @@
                 <p>這份預覽就是下載 PDF 的內容，也可以直接點選區塊做版面微調。</p>
               </div>
               <div class="layout-badge" id="previewModeBadge">目前模式：先選模板再編輯</div>
+            </div>
+            <div class="zoom-control" style="margin-top:8px;">
+              <label for="previewZoomRange">縮放</label>
+              <input id="previewZoomRange" type="range" min="50" max="120" step="5" value="100" />
+              <span id="zoomValueLabel">100%</span>
+              <button id="zoomResetBtn" class="ghost" type="button" style="padding:3px 10px;font-size:0.78rem;">重設</button>
             </div>
           </div>
 
@@ -5112,6 +5367,10 @@
 
         $("sidebarRegion").innerHTML = layoutState.regions.sidebar.map((blockId) => renderEditableBlock(blockId, layoutState)).join("");
         $("mainRegion").innerHTML = layoutState.regions.main.map((blockId) => renderEditableBlock(blockId, layoutState)).join("");
+
+        // Keep tool panel in sync
+        if (typeof updateWordCount === "function") updateWordCount();
+        if (typeof updateQrCode === "function") updateQrCode();
       }
 
       function syncInputs() {
@@ -6405,6 +6664,368 @@
         document.head.appendChild(s);
       })();
 
+      /* ══════════════════════════════════════════════════════
+         TOOLS – Undo / Redo
+      ══════════════════════════════════════════════════════ */
+      const undoStack = [];
+      const redoStack = [];
+      const UNDO_LIMIT = 50;
+
+      function pushUndo() {
+        undoStack.push(JSON.stringify(state.data));
+        if (undoStack.length > UNDO_LIMIT) undoStack.shift();
+        redoStack.length = 0;
+        updateUndoRedoBtns();
+      }
+
+      function updateUndoRedoBtns() {
+        const u = $("undoBtn");
+        const r = $("redoBtn");
+        if (u) u.disabled = undoStack.length === 0;
+        if (r) r.disabled = redoStack.length === 0;
+      }
+
+      function undoAction() {
+        if (!undoStack.length) return;
+        redoStack.push(JSON.stringify(state.data));
+        const prev = JSON.parse(undoStack.pop());
+        state.data = { ...state.data, ...prev };
+        saveJson(STORAGE_KEY, state.data);
+        syncInputs();
+        updatePreview(true);
+        updateUndoRedoBtns();
+        setMessage("已復原上一步。", "success");
+      }
+
+      function redoAction() {
+        if (!redoStack.length) return;
+        undoStack.push(JSON.stringify(state.data));
+        const next = JSON.parse(redoStack.pop());
+        state.data = { ...state.data, ...next };
+        saveJson(STORAGE_KEY, state.data);
+        syncInputs();
+        updatePreview(true);
+        updateUndoRedoBtns();
+        setMessage("已重做。", "success");
+      }
+
+      /* ══════════════════════════════════════════════════════
+         TOOLS – Version Snapshots
+      ══════════════════════════════════════════════════════ */
+      const SNAPSHOTS_KEY = "cv-studio-snapshots-v1";
+      const MAX_SNAPSHOTS = 5;
+
+      function loadSnapshots() {
+        return loadJson(SNAPSHOTS_KEY, []);
+      }
+
+      function saveSnapshot() {
+        const nameInput = $("snapshotNameInput");
+        const name = nameInput ? nameInput.value.trim() : "";
+        if (!name) { setMessage("請先輸入快照名稱。", "error"); return; }
+        const snapshots = loadSnapshots();
+        if (snapshots.length >= MAX_SNAPSHOTS) {
+          setMessage(`最多只能儲存 ${MAX_SNAPSHOTS} 個快照，請先刪除舊快照。`, "error");
+          return;
+        }
+        snapshots.push({
+          id: Date.now(),
+          name,
+          date: new Date().toLocaleString("zh-TW", { month: "numeric", day: "numeric", hour: "2-digit", minute: "2-digit" }),
+          template: state.template,
+          data: JSON.parse(JSON.stringify(state.data))
+        });
+        saveJson(SNAPSHOTS_KEY, snapshots);
+        if (nameInput) nameInput.value = "";
+        renderSnapshotList();
+        setMessage(`快照「${name}」已儲存。`, "success");
+      }
+
+      function restoreSnapshot(id) {
+        const snapshots = loadSnapshots();
+        const snap = snapshots.find(s => s.id === id);
+        if (!snap) return;
+        if (!confirm(`確定要載入快照「${snap.name}」？目前未儲存的變更將被覆蓋。`)) return;
+        pushUndo();
+        state.data = { ...state.data, ...snap.data };
+        saveJson(STORAGE_KEY, state.data);
+        syncInputs();
+        updateTemplate(snap.template || state.template, true);
+        updatePreview(true);
+        setMessage(`已載入快照「${snap.name}」。`, "success");
+      }
+
+      function deleteSnapshot(id) {
+        const snapshots = loadSnapshots().filter(s => s.id !== id);
+        saveJson(SNAPSHOTS_KEY, snapshots);
+        renderSnapshotList();
+      }
+
+      function renderSnapshotList() {
+        const list = $("snapshotList");
+        if (!list) return;
+        const snapshots = loadSnapshots();
+        if (!snapshots.length) {
+          list.innerHTML = `<span class="snapshot-empty">尚無快照，先輸入名稱再按「儲存快照」。</span>`;
+          return;
+        }
+        list.innerHTML = snapshots.map(s => `
+          <div class="snapshot-item">
+            <span class="snap-name" title="${escapeHtml(s.name)}">${escapeHtml(s.name)}</span>
+            <span class="snap-date">${escapeHtml(s.date)}</span>
+            <button class="soft" type="button" onclick="restoreSnap(${s.id})">載入</button>
+            <button class="ghost" type="button" onclick="deleteSnap(${s.id})" style="color:var(--danger);">✕</button>
+          </div>`).join("");
+      }
+
+      window.restoreSnap = (id) => restoreSnapshot(id);
+      window.deleteSnap = (id) => { deleteSnapshot(id); };
+
+      /* ══════════════════════════════════════════════════════
+         TOOLS – Export / Import JSON
+      ══════════════════════════════════════════════════════ */
+      function exportJson() {
+        const payload = {
+          version: "cv-studio-v1",
+          exportedAt: new Date().toISOString(),
+          template: state.template,
+          layoutPrefs: state.layoutPrefs,
+          data: state.data
+        };
+        const blob = new Blob([JSON.stringify(payload, null, 2)], { type: "application/json" });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement("a");
+        a.href = url;
+        a.download = `cv-backup-${(state.data.name || "unnamed").replace(/\s+/g, "-")}-${Date.now()}.json`;
+        a.click();
+        URL.revokeObjectURL(url);
+        setMessage("CV 資料已匯出為 JSON。", "success");
+      }
+
+      function importJson(file) {
+        if (!file) return;
+        const reader = new FileReader();
+        reader.onload = (e) => {
+          try {
+            const payload = JSON.parse(e.target.result);
+            if (!payload.data) throw new Error("格式錯誤");
+            if (!confirm("確定要匯入？目前的 CV 資料將被覆蓋。")) return;
+            pushUndo();
+            state.data = { ...state.data, ...payload.data };
+            if (payload.layoutPrefs) {
+              state.layoutPrefs = payload.layoutPrefs;
+              saveJson(LAYOUT_KEY, state.layoutPrefs);
+            }
+            saveJson(STORAGE_KEY, state.data);
+            syncInputs();
+            if (payload.template) updateTemplate(payload.template, true);
+            updatePreview(true);
+            syncLayoutControls();
+            setMessage("CV 資料匯入成功。", "success");
+          } catch {
+            setMessage("匯入失敗：JSON 格式不正確。", "error");
+          }
+        };
+        reader.readAsText(file);
+      }
+
+      /* ══════════════════════════════════════════════════════
+         TOOLS – Custom Accent Color
+      ══════════════════════════════════════════════════════ */
+      const ACCENT_KEY = "cv-studio-custom-accent-v1";
+
+      function applyAccentColor(color) {
+        const paper = $("cvPaper");
+        if (paper) {
+          paper.style.setProperty("--template-accent", color);
+          // update soft accent as lighter tint
+          const r = parseInt(color.slice(1,3),16);
+          const g = parseInt(color.slice(3,5),16);
+          const b = parseInt(color.slice(5,7),16);
+          paper.style.setProperty("--template-accent-soft", `rgba(${r},${g},${b},0.12)`);
+        }
+        localStorage.setItem(ACCENT_KEY, color);
+        // sync swatches
+        document.querySelectorAll(".color-swatch").forEach(el => {
+          el.classList.toggle("active", el.dataset.accent === color);
+        });
+        const picker = $("accentColorPicker");
+        if (picker) picker.value = color;
+      }
+
+      function resetAccentColor() {
+        const paper = $("cvPaper");
+        if (paper) {
+          paper.style.removeProperty("--template-accent");
+          paper.style.removeProperty("--template-accent-soft");
+        }
+        localStorage.removeItem(ACCENT_KEY);
+        document.querySelectorAll(".color-swatch").forEach(el => el.classList.remove("active"));
+        setMessage("已還原為模板預設色。", "success");
+      }
+
+      function loadSavedAccent() {
+        const saved = localStorage.getItem(ACCENT_KEY);
+        if (saved) applyAccentColor(saved);
+      }
+
+      /* ══════════════════════════════════════════════════════
+         TOOLS – Preview Zoom
+      ══════════════════════════════════════════════════════ */
+      function setPreviewZoom(pct) {
+        const paper = $("cvPaper");
+        if (!paper) return;
+        const scale = pct / 100;
+        paper.style.transform = `scale(${scale})`;
+        paper.style.transformOrigin = "top center";
+        // compensate container height so scrolling works
+        const natural = paper.scrollHeight;
+        paper.parentElement.style.minHeight = `${natural * scale}px`;
+        const label = $("zoomValueLabel");
+        if (label) label.textContent = `${pct}%`;
+      }
+
+      /* ══════════════════════════════════════════════════════
+         TOOLS – Word Count
+      ══════════════════════════════════════════════════════ */
+      function updateWordCount() {
+        const textFields = ["summary","skills","highlights","experience","education","projects","awards"];
+        const allText = textFields.map(f => state.data[f] || "").join(" ");
+        const words = allText.match(/[\u4e00-\u9fff]|[a-zA-Z0-9]+(?:['\-][a-zA-Z0-9]+)*/g) || [];
+        const chars = allText.replace(/\s/g, "").length;
+        // summary badge (always visible in tools label)
+        const wn = $("wordCountNum");
+        if (wn) wn.textContent = words.length;
+        // full detail panel
+        const wnf = $("wordCountNumFull");
+        if (wnf) wnf.textContent = words.length;
+        const cn = $("charCountNum");
+        if (cn) cn.textContent = chars;
+      }
+
+      /* ══════════════════════════════════════════════════════
+         TOOLS – QR Code
+      ══════════════════════════════════════════════════════ */
+      function updateQrCode() {
+        const url = (state.data.website || "").trim();
+        const canvas = $("qrCanvas");
+        const info = $("qrInfo");
+        const dlBtn = $("downloadQrBtn");
+        if (!canvas) return;
+        if (!url) {
+          const ctx = canvas.getContext("2d");
+          ctx.clearRect(0, 0, canvas.width, canvas.height);
+          if (info) info.textContent = "請先在基本資料填寫網站或作品集網址。";
+          if (dlBtn) dlBtn.disabled = true;
+          return;
+        }
+        if (typeof QRCode !== "undefined") {
+          QRCode.toCanvas(canvas, url, { width: 96, margin: 1, color: { dark: "#1f2430", light: "#fffefb" } }, (err) => {
+            if (!err) {
+              if (info) info.textContent = url.length > 48 ? url.slice(0, 45) + "…" : url;
+              if (dlBtn) dlBtn.disabled = false;
+            }
+          });
+        } else {
+          if (info) info.textContent = "QR Code 程式庫載入中，請稍候再試。";
+        }
+      }
+
+      function downloadQrCode() {
+        const canvas = $("qrCanvas");
+        if (!canvas) return;
+        const a = document.createElement("a");
+        a.href = canvas.toDataURL("image/png");
+        a.download = `qrcode-${(state.data.name || "cv").replace(/\s+/g,"-")}.png`;
+        a.click();
+      }
+
+      /* ══════════════════════════════════════════════════════
+         TOOLS – Print CV
+      ══════════════════════════════════════════════════════ */
+      function printCv() {
+        window.print();
+      }
+
+      /* ══════════════════════════════════════════════════════
+         TOOLS – Clear All Data
+      ══════════════════════════════════════════════════════ */
+      function clearAllData() {
+        if (!confirm("確定要清除所有 CV 資料？此動作無法還原（但可用復原鍵 Ctrl+Z 取回）。")) return;
+        pushUndo();
+        const blank = {};
+        fields.forEach(f => { blank[f] = ""; });
+        state.data = { ...state.data, ...blank };
+        saveJson(STORAGE_KEY, state.data);
+        syncInputs();
+        updatePreview(true);
+        updateWordCount();
+        setMessage("所有 CV 資料已清除。", "success");
+      }
+
+      /* ══════════════════════════════════════════════════════
+         TOOLS – Attach all tool listeners
+      ══════════════════════════════════════════════════════ */
+      function attachToolListeners() {
+        // Undo / Redo buttons
+        $("undoBtn")?.addEventListener("click", undoAction);
+        $("redoBtn")?.addEventListener("click", redoAction);
+
+        // Keyboard shortcuts
+        document.addEventListener("keydown", (e) => {
+          if ((e.ctrlKey || e.metaKey) && !e.shiftKey && e.key === "z") { e.preventDefault(); undoAction(); }
+          if ((e.ctrlKey || e.metaKey) && (e.key === "y" || (e.shiftKey && e.key === "z"))) { e.preventDefault(); redoAction(); }
+        });
+
+        // Snapshot
+        $("saveSnapshotBtn")?.addEventListener("click", saveSnapshot);
+
+        // Export / Import
+        $("exportJsonBtn")?.addEventListener("click", exportJson);
+        $("importJsonBtn")?.addEventListener("click", () => $("importJsonInput")?.click());
+        $("importJsonInput")?.addEventListener("change", (e) => {
+          importJson(e.target.files[0]);
+          e.target.value = "";
+        });
+
+        // Custom accent color swatches
+        document.querySelectorAll(".color-swatch[data-accent]").forEach(el => {
+          el.addEventListener("click", () => applyAccentColor(el.dataset.accent));
+        });
+        $("accentColorPicker")?.addEventListener("input", (e) => applyAccentColor(e.target.value));
+        $("resetAccentBtn")?.addEventListener("click", resetAccentColor);
+
+        // Preview zoom
+        $("previewZoomRange")?.addEventListener("input", (e) => setPreviewZoom(Number(e.target.value)));
+        $("zoomResetBtn")?.addEventListener("click", () => {
+          const range = $("previewZoomRange");
+          if (range) { range.value = 100; setPreviewZoom(100); }
+        });
+
+        // QR code download
+        $("downloadQrBtn")?.addEventListener("click", downloadQrCode);
+
+        // Print
+        $("printCvBtn")?.addEventListener("click", printCv);
+
+        // Clear all
+        $("clearAllBtn")?.addEventListener("click", clearAllData);
+
+        // Push undo snapshot before each field change
+        fields.forEach(field => {
+          const node = $(field);
+          if (!node) return;
+          node.addEventListener("focus", () => { pushUndo(); });
+        });
+
+        // Load saved accent & snapshots
+        loadSavedAccent();
+        renderSnapshotList();
+        updateWordCount();
+        updateQrCode();
+        updateUndoRedoBtns();
+      }
+
       async function init() {
         await ensureDependenciesReady();
         const authRedirectResult = readAuthRedirectResult();
@@ -6428,6 +7049,7 @@
         attachWysiwygListeners();      // ← contenteditable sync
         attachFormatToolbar();         // ← floating format toolbar
         attachJobChipListeners();      // ← job preset chips
+        attachToolListeners();         // ← tools panel
         bootstrapInstallPrompt();
         registerServiceWorker();
         updateActionButtons();
