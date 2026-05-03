@@ -2170,6 +2170,14 @@
     .editor-panel {
       display: none !important;
     }
+    .portfolio-workspace,
+    .persona-workspace {
+      grid-template-columns: 1fr !important;
+    }
+    .portfolio-editor-panel,
+    .persona-editor-panel {
+      display: none !important;
+    }
 
     /* ===== CV STUDIO BAR ===== */
     .cv-studio-bar {
@@ -2447,6 +2455,65 @@
       color: rgba(100, 100, 100, 0.35);
       pointer-events: none;
     }
+    .pf-inline-editable,
+    .persona-inline-editable {
+      display: block;
+      min-height: 1em;
+      white-space: pre-wrap;
+      position: relative;
+      z-index: 2;
+    }
+    .pf-inline-editable[data-ph]:empty::before,
+    .persona-inline-editable[data-ph]:empty::before {
+      content: attr(data-ph);
+      color: rgba(100, 100, 100, 0.35);
+      pointer-events: none;
+    }
+    .persona-top-subtitle .persona-inline-editable {
+      transform: rotate(-1.4deg);
+      transform-origin: left center;
+    }
+    .persona-tagline .persona-inline-editable {
+      transform: rotate(-0.8deg);
+      transform-origin: center center;
+    }
+    .persona-bubble .persona-inline-editable,
+    .persona-summary-strip .persona-inline-editable {
+      display: inline-block;
+    }
+    .pf-inline-label {
+      display: block;
+      margin-bottom: 6px;
+      font-size: 11px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: rgba(92, 102, 116, 0.9);
+    }
+    .pf-inline-input {
+      margin-top: 10px;
+      padding: 10px 12px;
+      border-radius: 14px;
+      border: 1px dashed rgba(49, 40, 27, 0.18);
+      background: rgba(255,255,255,0.72);
+    }
+    .pf-inline-actions {
+      display: flex;
+      justify-content: center;
+      margin: 0 0 14px;
+    }
+    .pf-inline-add-btn {
+      padding: 10px 16px;
+      border-radius: 999px;
+      border: 1px dashed rgba(49, 40, 27, 0.22);
+      background: rgba(255,255,255,0.82);
+      color: var(--ink);
+      cursor: pointer;
+    }
+    .pf-inline-add-btn:hover {
+      background: #fff;
+      transform: none;
+      box-shadow: none;
+    }
 
     /* ── GUIDED TOUR ── */
     #tour-overlay {
@@ -2699,43 +2766,44 @@
       position: relative;
       overflow: hidden;
       border-radius: 36px;
-      padding: 26px;
-      min-height: 1280px;
+      width: 100%;
+      aspect-ratio: 899 / 1398;
+      min-height: 960px;
       box-shadow: 0 28px 60px rgba(50, 38, 18, 0.18);
       isolation: isolate;
       background:
-        linear-gradient(180deg, rgba(255, 248, 239, 0.72), rgba(247, 236, 221, 0.76)),
+        linear-gradient(180deg, rgba(255, 248, 239, 0.16), rgba(247, 236, 221, 0.2)),
         var(--persona-template-image) center top / cover no-repeat;
     }
 
     .persona-board[data-theme="cute"] {
-      color: #40271f;
-      --persona-ink: #40271f;
-      --persona-note: rgba(255, 250, 244, 0.88);
-      --persona-note-soft: rgba(255, 241, 235, 0.88);
-      --persona-note-alt: rgba(249, 240, 215, 0.88);
-      --persona-stroke: rgba(104, 76, 61, 0.14);
-      --persona-accent: #cc6d5c;
-      --persona-accent-2: #8eaa66;
-      --persona-accent-3: #f0b857;
-      --persona-accent-4: #c686d4;
-      --persona-tape: rgba(231, 194, 176, 0.82);
-      --persona-grid: rgba(120, 90, 76, 0.05);
+      color: #35221c;
+      --persona-ink: #35221c;
+      --persona-note: rgba(255, 249, 241, 0.93);
+      --persona-note-soft: rgba(252, 238, 229, 0.93);
+      --persona-note-alt: rgba(245, 237, 214, 0.93);
+      --persona-stroke: rgba(113, 81, 66, 0.14);
+      --persona-accent: #bc654f;
+      --persona-accent-2: #7d9a57;
+      --persona-accent-3: #d4a548;
+      --persona-accent-4: #9479bc;
+      --persona-tape: rgba(228, 194, 176, 0.88);
+      --persona-shadow: 0 14px 28px rgba(90, 62, 43, 0.1);
     }
 
     .persona-board[data-theme="cool"] {
-      color: #e6eefb;
-      --persona-ink: #e6eefb;
-      --persona-note: rgba(22, 34, 54, 0.82);
-      --persona-note-soft: rgba(17, 29, 47, 0.82);
-      --persona-note-alt: rgba(29, 45, 70, 0.82);
-      --persona-stroke: rgba(142, 174, 255, 0.2);
-      --persona-accent: #486cc7;
-      --persona-accent-2: #78c3b9;
-      --persona-accent-3: #89b0ff;
-      --persona-accent-4: #d8b0ff;
-      --persona-tape: rgba(164, 181, 224, 0.9);
-      --persona-grid: rgba(33, 53, 90, 0.06);
+      color: #2a2130;
+      --persona-ink: #2a2130;
+      --persona-note: rgba(247, 246, 250, 0.93);
+      --persona-note-soft: rgba(240, 239, 247, 0.93);
+      --persona-note-alt: rgba(235, 236, 244, 0.94);
+      --persona-stroke: rgba(81, 94, 122, 0.16);
+      --persona-accent: #536eaf;
+      --persona-accent-2: #6f9788;
+      --persona-accent-3: #8e7cb8;
+      --persona-accent-4: #d39c54;
+      --persona-tape: rgba(189, 199, 230, 0.88);
+      --persona-shadow: 0 14px 28px rgba(56, 68, 96, 0.12);
     }
 
     .persona-board::before {
@@ -2743,25 +2811,9 @@
       position: absolute;
       inset: 0;
       background:
-        linear-gradient(180deg, rgba(255, 253, 249, 0.14), rgba(255, 246, 235, 0.34)),
-        radial-gradient(circle at top left, rgba(255,255,255,0.3), transparent 24%);
+        linear-gradient(180deg, rgba(255,255,255,0.08), rgba(255,255,255,0.14)),
+        radial-gradient(circle at top left, rgba(255,255,255,0.22), transparent 26%);
       pointer-events: none;
-    }
-
-    .persona-board[data-theme="cool"]::before {
-      background:
-        linear-gradient(180deg, rgba(8, 15, 28, 0.38), rgba(11, 19, 34, 0.48)),
-        radial-gradient(circle at top left, rgba(140, 176, 255, 0.08), transparent 24%);
-    }
-
-    .persona-board::after {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background-image: radial-gradient(circle, var(--persona-grid) 1.2px, transparent 1.2px);
-      background-size: 24px 24px;
-      pointer-events: none;
-      opacity: 0.45;
     }
 
     .persona-board > * {
@@ -2769,406 +2821,341 @@
       z-index: 1;
     }
 
-    .persona-decos {
-      position: relative;
-      z-index: 1;
-    }
-
-    .persona-deco-layer {
+    .persona-board-overlay {
       position: absolute;
       inset: 0;
-      pointer-events: none;
-      overflow: hidden;
     }
 
-    .persona-deco-item {
+    .persona-overlay-copy {
       position: absolute;
-      font-size: 1.15rem;
-      opacity: 0.34;
-      animation: personaFloat 5.2s ease-in-out infinite alternate;
+      color: var(--persona-ink);
+      z-index: 3;
+      mix-blend-mode: multiply;
+      text-shadow:
+        0 1px 0 rgba(255, 250, 244, 0.96),
+        0 2px 4px rgba(138, 109, 86, 0.08);
     }
 
-    [data-theme="cool"] .persona-deco-item {
-      opacity: 0.18;
-    }
-
-    @keyframes personaFloat {
-      from { transform: translateY(0) rotate(-6deg); }
-      to { transform: translateY(-10px) rotate(8deg); }
+    .persona-overlay-copy .persona-inline-editable {
+      color: inherit;
+      opacity: 1;
+      filter: saturate(1.04);
     }
 
     .persona-title-card {
-      position: relative;
-      z-index: 1;
-      display: grid;
-      gap: 12px;
-      margin-bottom: 18px;
-      padding: 22px 24px 18px;
-      border-radius: 28px;
-      background: rgba(255, 251, 246, 0.52);
-      border: 1px solid var(--persona-stroke);
-      box-shadow: 0 16px 34px rgba(70, 42, 27, 0.08);
-    }
-
-    [data-theme="cool"] .persona-title-card {
-      background: rgba(18, 29, 48, 0.38);
-    }
-
-    .persona-title-row {
-      display: grid;
-      grid-template-columns: minmax(0, 1.1fr) auto;
-      gap: 18px;
-      align-items: start;
-    }
-
-    .persona-title-main {
-      min-width: 0;
-    }
-
-    .persona-layout-main {
-      position: relative;
-      z-index: 1;
-      display: grid;
-      grid-template-columns: minmax(0, 0.92fr) minmax(280px, 0.82fr) minmax(0, 0.96fr);
-      gap: 18px;
-      align-items: start;
-    }
-
-    .persona-col {
-      display: grid;
-      gap: 16px;
-      align-content: start;
-    }
-
-    .persona-center-column {
-      display: grid;
-      gap: 14px;
-      align-content: start;
-    }
-
-    .persona-note {
-      position: relative;
-      background: var(--persona-note);
-      border: 1px solid var(--persona-stroke);
-      border-radius: 28px;
-      padding: 20px 22px;
-      box-shadow: 0 16px 34px rgba(70, 42, 27, 0.08);
-      backdrop-filter: blur(5px);
-    }
-
-    .persona-note.soft { background: var(--persona-note-soft); }
-    .persona-note.alt { background: var(--persona-note-alt); }
-    .persona-note.center { text-align: center; }
-
-    .persona-note::before {
-      content: "";
-      position: absolute;
-      top: -10px;
-      left: 24px;
-      width: 78px;
-      height: 18px;
-      border-radius: 6px;
-      background: var(--persona-tape);
-      transform: rotate(-4deg);
-      box-shadow: 0 4px 10px rgba(60, 46, 36, 0.08);
-    }
-
-    .persona-note h3,
-    .persona-note h4,
-    .persona-note p {
-      margin: 0;
-    }
-
-    .persona-note-head {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      margin-bottom: 12px;
-    }
-
-    .persona-heading {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      color: var(--persona-ink);
-    }
-
-    .persona-index {
-      min-width: 34px;
-      height: 34px;
-      padding: 0 11px;
-      border-radius: 12px;
-      background: color-mix(in srgb, var(--persona-accent) 90%, white 10%);
-      color: #fff;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: 700;
-    }
-
-    .persona-heading h3 {
-      font-size: 1.05rem;
-      letter-spacing: 0.03em;
-    }
-
-    .persona-cutout {
-      color: transparent;
-      background:
-        linear-gradient(180deg, rgba(255,255,255,0.08), rgba(255,255,255,0.08)),
-        var(--persona-template-image) center top / cover no-repeat;
-      -webkit-background-clip: text;
-      background-clip: text;
-      -webkit-text-stroke: 1.2px rgba(63, 40, 29, 0.3);
-      filter: drop-shadow(0 2px 0 rgba(255,255,255,0.22));
-    }
-
-    [data-theme="cool"] .persona-cutout {
-      -webkit-text-stroke: 1px rgba(218, 232, 255, 0.28);
-      filter: drop-shadow(0 1px 0 rgba(18, 30, 50, 0.32));
+      top: 2.8%;
+      left: 3.8%;
+      width: 58%;
+      transform: rotate(-2deg);
     }
 
     .persona-top-title {
-      font-size: clamp(2.6rem, 6vw, 4.6rem);
-      line-height: 0.92;
-      letter-spacing: -0.06em;
-      color: var(--persona-accent);
+      font-family: "Marker Felt", "Chalkboard SE", "American Typewriter", "Noto Serif TC", serif;
+      font-size: clamp(2.5rem, 3.8vw, 4rem);
+      line-height: 0.94;
+      letter-spacing: 0.03em;
       font-weight: 900;
+      color: var(--persona-accent);
+      text-shadow:
+        0 1px 0 rgba(255, 248, 240, 0.95),
+        0 3px 0 rgba(191, 113, 85, 0.18);
+    }
+
+    .persona-top-title .persona-inline-editable:first-child {
+      transform: rotate(-5deg) translateY(-0.05em);
+      transform-origin: left center;
+      margin-right: 0.14em;
+    }
+
+    .persona-top-title .persona-inline-editable:last-child {
+      transform: rotate(-1deg) translateY(0.02em);
+      transform-origin: left center;
     }
 
     .persona-top-subtitle {
-      margin-top: 6px;
-      font-size: clamp(1.7rem, 4vw, 2.8rem);
-      line-height: 1.02;
-      font-weight: 800;
-      color: var(--persona-ink);
+      margin-top: 0.35rem;
+      font-family: "STKaiti", "KaiTi TC", "DFKai-SB", "Kaiti TC", "Noto Serif TC", serif;
+      font-size: clamp(1.8rem, 2.6vw, 2.9rem);
+      line-height: 1.1;
+      letter-spacing: 0.06em;
+      font-weight: 900;
+      color: #44312b;
+      text-shadow:
+        0 1px 0 rgba(255, 251, 245, 0.96),
+        0 0 3px rgba(84, 62, 53, 0.05);
     }
 
     .persona-tagline {
       display: inline-block;
-      max-width: 52ch;
-      padding: 12px 18px;
-      border-radius: 18px;
-      background: rgba(255,255,255,0.74);
-      border: 1px solid var(--persona-stroke);
-      font-size: 0.98rem;
-      line-height: 1.6;
-      backdrop-filter: blur(4px);
-    }
-
-    [data-theme="cool"] .persona-tagline {
-      background: rgba(22, 35, 58, 0.66);
-    }
-
-    .persona-sticker-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      justify-content: flex-end;
-    }
-
-    .persona-sticker {
-      display: inline-flex;
-      align-items: center;
-      gap: 7px;
-      padding: 9px 14px;
-      border-radius: 999px;
-      border: 1px solid var(--persona-stroke);
-      background: rgba(255,255,255,0.76);
-      font-size: 0.88rem;
-      font-weight: 700;
-      color: var(--persona-ink);
-      backdrop-filter: blur(4px);
-    }
-
-    [data-theme="cool"] .persona-sticker {
-      background: rgba(22, 35, 58, 0.76);
-    }
-
-    .persona-facts {
-      display: grid;
-      gap: 10px;
-      font-size: 0.96rem;
-      line-height: 1.7;
-    }
-
-    .persona-fact-row {
-      display: flex;
-      align-items: baseline;
-      gap: 8px;
-    }
-
-    .persona-fact-row strong {
-      color: var(--persona-accent);
-      min-width: 52px;
-    }
-
-    .persona-traits,
-    .persona-list {
-      display: grid;
-      gap: 10px;
-      line-height: 1.72;
-    }
-
-    .persona-traits div::before,
-    .persona-list div::before {
-      content: "•";
-      color: var(--persona-accent);
-      margin-right: 8px;
-      font-weight: 700;
-    }
-
-    .persona-pills,
-    .persona-item-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-    }
-
-    .persona-pill,
-    .persona-item-pill {
-      padding: 8px 12px;
-      border-radius: 999px;
-      border: 1px solid var(--persona-stroke);
-      background: rgba(255,255,255,0.72);
-      font-size: 0.92rem;
-    }
-
-    .persona-list-item {
-      display: flex;
-      align-items: flex-start;
-      gap: 9px;
-    }
-
-    .persona-list-bullet {
-      width: 20px;
-      height: 20px;
-      flex: 0 0 auto;
-      border-radius: 50%;
-      display: inline-grid;
-      place-items: center;
-      background: linear-gradient(135deg, var(--persona-accent-2), var(--persona-accent));
-      color: #fff;
-      font-size: 0.62rem;
-      font-weight: 700;
-      margin-top: 2px;
-    }
-
-    .persona-pill,
-    .persona-item-pill {
-      padding: 8px 12px;
-      border-radius: 999px;
-      border: 1px solid var(--persona-stroke);
-      background: rgba(255,255,255,0.72);
-      font-size: 0.92rem;
-      color: var(--persona-ink);
-    }
-
-    [data-theme="cool"] .persona-pill,
-    [data-theme="cool"] .persona-item-pill {
-      background: rgba(255,255,255,0.08);
-    }
-
-    .persona-portrait-card {
-      position: relative;
-      padding: 24px 20px 16px;
-      border-radius: 34px;
-      border: 1px solid var(--persona-stroke);
-      background:
-        linear-gradient(180deg, rgba(255,255,255,0.42), rgba(255,255,255,0.18)),
-        linear-gradient(180deg, color-mix(in srgb, var(--persona-accent-3) 55%, white 45%), color-mix(in srgb, var(--persona-accent) 32%, white 68%));
-      box-shadow: 0 26px 38px rgba(58, 37, 22, 0.14);
-      backdrop-filter: blur(5px);
-    }
-
-    [data-theme="cool"] .persona-portrait-card {
-      background:
-        linear-gradient(180deg, rgba(255,255,255,0.08), rgba(255,255,255,0.02)),
-        linear-gradient(180deg, rgba(55, 82, 136, 0.95), rgba(27, 46, 84, 0.95));
-    }
-
-    .persona-centerpiece {
-      display: grid;
-      gap: 14px;
-      justify-items: center;
-    }
-
-    .persona-photo {
-      width: min(100%, 320px);
-      aspect-ratio: 0.82;
-      border-radius: 34px;
-      overflow: hidden;
-      border: 1.5px solid rgba(255,255,255,0.55);
-      background:
-        radial-gradient(circle at top, rgba(255,255,255,0.85), transparent 32%),
-        linear-gradient(180deg, color-mix(in srgb, var(--persona-accent-3) 55%, white 45%), color-mix(in srgb, var(--persona-accent) 30%, white 70%));
-      box-shadow: 0 22px 38px rgba(58, 37, 22, 0.18);
-      display: grid;
-      place-items: center;
-      color: rgba(255,255,255,0.9);
-      font-size: 1.15rem;
-      font-weight: 700;
+      margin-top: 1rem;
+      margin-left: 5%;
+      width: 78%;
+      font-family: "STKaiti", "KaiTi TC", "DFKai-SB", "Kaiti TC", "Noto Serif TC", serif;
+      font-size: 1.05rem;
+      line-height: 1.58;
+      letter-spacing: 0.12em;
+      font-weight: 800;
       text-align: center;
-      padding: 20px;
+      color: #4a3832;
+      transform: rotate(-1.4deg);
     }
 
-    .persona-photo-frame {
-      width: min(100%, 340px);
-      padding: 14px;
-      border-radius: 42px;
-      background: rgba(255, 250, 244, 0.52);
-      border: 1px solid rgba(255,255,255,0.45);
-      box-shadow: inset 0 0 0 1px rgba(255,255,255,0.18);
+    .persona-basic-card {
+      top: 2.6%;
+      right: 4%;
+      width: 29%;
+      transform: rotate(-1deg);
     }
 
-    [data-theme="cool"] .persona-photo-frame {
-      background: rgba(14, 25, 42, 0.42);
-      border-color: rgba(153, 184, 255, 0.18);
+    .persona-vibe-card {
+      top: 23.6%;
+      left: 3%;
+      width: 28%;
+      transform: rotate(-1.2deg);
     }
 
-    .persona-photo img,
-    .persona-mascot-card img {
+    .persona-story-card {
+      top: 47.7%;
+      left: 3.2%;
+      width: 27.5%;
+      transform: rotate(-0.85deg);
+    }
+
+    .persona-strength-card {
+      top: 68.7%;
+      left: 2.6%;
+      width: 28.2%;
+      transform: rotate(-0.75deg);
+    }
+
+    .persona-keyword-card {
+      top: 86%;
+      left: 2.4%;
+      width: 29%;
+      transform: rotate(-0.5deg);
+      padding-bottom: 0.8rem;
+    }
+
+    .persona-energy-card-stack {
+      top: 24.5%;
+      right: 4%;
+      width: 29%;
+      transform: rotate(0.8deg);
+    }
+
+    .persona-love-card {
+      top: 69.3%;
+      left: 39%;
+      width: 24.6%;
+      transform: rotate(-1deg);
+    }
+
+    .persona-weakness-card {
+      top: 69%;
+      right: 4.1%;
+      width: 27.8%;
+      transform: rotate(-1deg);
+    }
+
+    .persona-favorite-card {
+      top: 86%;
+      right: 3.2%;
+      width: 30%;
+      transform: rotate(-0.8deg);
+    }
+
+    .persona-reminder-card {
+      top: 86.3%;
+      left: 39.3%;
+      width: 22.4%;
+      transform: rotate(-1deg);
+    }
+
+    .persona-summary-strip {
+      position: absolute;
+      left: 6%;
+      right: 6%;
+      bottom: 2.4%;
+      font-family: "STKaiti", "KaiTi TC", "DFKai-SB", "Kaiti TC", "Noto Serif TC", serif;
+      text-align: center;
+      font-size: clamp(1.34rem, 1.95vw, 2rem);
+      line-height: 1.35;
+      font-weight: 900;
+      letter-spacing: 0.14em;
+      color: #342923;
+      text-shadow:
+        0 1px 0 rgba(255,255,255,0.78),
+        0 2px 5px rgba(95, 71, 51, 0.06);
+    }
+
+    .persona-bubble {
+      position: absolute;
+      left: 36%;
+      top: 54.2%;
+      width: 16.5%;
+      min-height: 6rem;
+      padding: 0.8rem 0.6rem;
+      font-family: "STKaiti", "KaiTi TC", "DFKai-SB", "Kaiti TC", "Noto Serif TC", serif;
+      font-size: 0.96rem;
+      line-height: 1.65;
+      font-weight: 800;
+      letter-spacing: 0.05em;
+      text-align: center;
+      display: grid;
+      place-items: center;
+      color: #45342e;
+    }
+
+    .persona-custom-portrait {
+      position: absolute;
+      left: 34.8%;
+      top: 28%;
+      width: 30%;
+      height: 33%;
+      border-radius: 2rem;
+      overflow: hidden;
+      box-shadow: 0 18px 30px rgba(78, 53, 36, 0.12);
+      opacity: 0.98;
+      mix-blend-mode: multiply;
+    }
+
+    .persona-custom-portrait img {
       width: 100%;
       height: 100%;
       object-fit: cover;
       display: block;
     }
 
-    .persona-bubble {
-      position: relative;
-      max-width: 270px;
-      padding: 14px 18px;
-      border-radius: 22px;
-      background: rgba(255,255,255,0.82);
-      border: 1px solid var(--persona-stroke);
-      font-size: 0.98rem;
+    .persona-facts {
+      display: grid;
+      gap: 0.34rem;
+      font-size: 0.91rem;
+      line-height: 1.55;
+      font-weight: 700;
+    }
+
+    .persona-fact-row {
+      display: flex;
+      align-items: baseline;
+      gap: 0.45rem;
+    }
+
+    .persona-fact-row strong {
+      color: var(--persona-accent);
+      min-width: 3rem;
+      font-weight: 800;
+    }
+
+    .persona-list {
+      display: grid;
+      gap: 0.36rem;
       line-height: 1.7;
+      font-size: 0.95rem;
+      font-weight: 700;
+    }
+
+    .persona-list-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.48rem;
+    }
+
+    .persona-list-bullet {
+      width: 0.95rem;
+      height: 0.95rem;
+      flex: 0 0 auto;
+      border-radius: 50%;
+      display: inline-grid;
+      place-items: center;
+      color: var(--persona-accent);
+      font-size: 0.75rem;
+      font-weight: 700;
+      margin-top: 0.1rem;
+    }
+
+    .persona-story-text,
+    .persona-note-footer {
+      font-size: 0.96rem;
+      line-height: 1.76;
+      font-weight: 700;
+    }
+
+    .persona-note-footer {
+      color: color-mix(in srgb, var(--persona-ink) 78%, white 22%);
+    }
+
+    .persona-pill-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.3rem 0.45rem;
+    }
+
+    .persona-pill,
+    .persona-item-pill {
+      padding: 0;
+      color: var(--persona-ink);
+      font-size: 0.88rem;
+      line-height: 1.34;
+      font-weight: 800;
+    }
+
+    .persona-energy-stack {
+      display: grid;
+      gap: 0.72rem;
+    }
+
+    .persona-energy-entry {
+      display: grid;
+      grid-template-columns: 2.45rem 1fr;
+      gap: 0.65rem;
+      align-items: start;
+    }
+
+    .persona-energy-badge {
+      width: 2.45rem;
+      height: 2.45rem;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      font-size: 0.8rem;
+      font-weight: 800;
+      color: #fff;
+      background: linear-gradient(135deg, var(--persona-accent-2), var(--persona-accent-4));
+    }
+
+    .persona-energy-entry strong {
+      display: block;
+      margin-bottom: 0.14rem;
+      font-size: 0.96rem;
+      color: var(--persona-ink);
+    }
+
+    .persona-energy-entry p {
+      font-size: 0.9rem;
+      line-height: 1.62;
+      color: color-mix(in srgb, var(--persona-ink) 76%, white 24%);
+      font-weight: 700;
+    }
+
+    .persona-item-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 0.35rem;
+    }
+
+    .persona-item-pill {
+      min-height: 4.2rem;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
       text-align: center;
-      backdrop-filter: blur(4px);
+      padding: 0;
     }
 
-    .persona-bubble::before {
-      content: "";
-      position: absolute;
-      top: -10px;
-      left: 50%;
-      transform: translateX(-50%);
-      border: 7px solid transparent;
-      border-bottom-color: rgba(255,255,255,0.82);
-    }
-
-    [data-theme="cool"] .persona-bubble {
-      background: rgba(22, 35, 58, 0.86);
-    }
-
-    [data-theme="cool"] .persona-bubble::before {
-      border-bottom-color: rgba(22, 35, 58, 0.86);
-    }
-
-    .persona-portrait-caption {
-      font-size: 0.84rem;
-      color: color-mix(in srgb, var(--persona-ink) 74%, white 26%);
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
+    .persona-empty {
+      opacity: 0.58;
+      font-size: 0.86rem;
+      line-height: 1.6;
     }
 
     .persona-avatar-switch {
@@ -3208,107 +3195,6 @@
       background: rgba(255, 255, 255, 0.94);
     }
 
-    .persona-energy-stack {
-      display: grid;
-      gap: 10px;
-    }
-
-    .persona-energy-card {
-      display: grid;
-      grid-template-columns: auto 1fr;
-      gap: 12px;
-      align-items: start;
-      padding: 14px;
-      border-radius: 20px;
-      background: rgba(255,255,255,0.62);
-      border: 1px solid var(--persona-stroke);
-    }
-
-    .persona-energy-badge {
-      width: 52px;
-      height: 52px;
-      border-radius: 50%;
-      display: grid;
-      place-items: center;
-      color: #fff;
-      font-size: 0.98rem;
-      font-weight: 700;
-      background: linear-gradient(135deg, var(--persona-accent), var(--persona-accent-3));
-    }
-
-    .persona-energy-card strong {
-      display: block;
-      margin-bottom: 4px;
-      font-size: 0.98rem;
-    }
-
-    .persona-energy-card p {
-      color: color-mix(in srgb, var(--persona-ink) 72%, white 28%);
-      line-height: 1.65;
-      font-size: 0.94rem;
-    }
-
-    .persona-mini-quote {
-      padding: 16px 18px;
-      border-radius: 24px;
-      border: 1px dashed var(--persona-stroke);
-      background: rgba(255,255,255,0.42);
-      font-size: 0.95rem;
-      line-height: 1.72;
-      text-align: center;
-    }
-
-    [data-theme="cool"] .persona-mini-quote {
-      background: rgba(255,255,255,0.05);
-    }
-
-    .persona-mascot-wrap {
-      display: grid;
-      gap: 14px;
-      justify-items: center;
-      text-align: center;
-    }
-
-    .persona-mascot-card {
-      width: 124px;
-      aspect-ratio: 1;
-      border-radius: 30px;
-      overflow: hidden;
-      border: 1px solid var(--persona-stroke);
-      background:
-        linear-gradient(180deg, rgba(255,255,255,0.78), rgba(255,255,255,0.4)),
-        linear-gradient(135deg, color-mix(in srgb, var(--persona-accent-2) 20%, white 80%), color-mix(in srgb, var(--persona-accent-3) 28%, white 72%));
-      display: grid;
-      place-items: center;
-      font-size: 3rem;
-      box-shadow: 0 14px 28px rgba(58, 37, 22, 0.1);
-    }
-
-    .persona-note-footer {
-      margin-top: 6px;
-      color: color-mix(in srgb, var(--persona-ink) 68%, white 32%);
-      line-height: 1.72;
-      font-size: 0.92rem;
-    }
-
-    .persona-footer-note {
-      margin-top: 18px;
-      text-align: center;
-      font-size: 0.88rem;
-      color: color-mix(in srgb, var(--persona-ink) 62%, white 38%);
-    }
-
-    .persona-bottom-quote {
-      position: relative;
-      z-index: 1;
-      margin-top: 22px;
-      text-align: center;
-      font-size: clamp(1.5rem, 3vw, 2.4rem);
-      letter-spacing: 0.04em;
-      font-weight: 800;
-      color: var(--persona-ink);
-    }
-
     @media (max-width: 1100px) {
       .persona-workspace {
         grid-template-columns: 1fr;
@@ -3318,16 +3204,12 @@
         position: static;
       }
 
-      .persona-layout-main {
-        grid-template-columns: 1fr;
+      .persona-preview-shell {
+        overflow-x: auto;
       }
 
-      .persona-title-row {
-        grid-template-columns: 1fr;
-      }
-
-      .persona-sticker-row {
-        justify-content: flex-start;
+      .persona-board {
+        min-width: 760px;
       }
     }
 
@@ -3337,8 +3219,8 @@
       }
 
       .persona-board {
-        min-height: auto;
-        padding: 20px;
+        min-height: 840px;
+        min-width: 680px;
       }
 
       .preview-toolbar-meta {
@@ -3562,7 +3444,6 @@
     <nav class="app-tabs">
       <button class="app-tab active" data-tab="home" type="button">主畫面</button>
       <button class="app-tab" data-tab="cv" type="button">CV 履歷</button>
-      <button class="app-tab" data-tab="persona" type="button">個人化頁</button>
       <button class="app-tab" data-tab="portfolio" type="button">學習歷程</button>
     </nav>
 
@@ -4500,218 +4381,16 @@
 
         <!-- right: preview -->
         <div style="overflow-y:auto;max-height:calc(100vh - 80px);padding:0 4px;" id="pfPreviewSection">
-          <p style="text-align:center;color:var(--muted);font-size:13px;margin:0 0 14px;">預覽順序：封面 → 目錄 → 內容頁（每章節一頁）→ 結尾頁</p>
+          <p style="text-align:center;color:var(--muted);font-size:13px;margin:0 0 10px;">預覽順序：封面 → 目錄 → 內容頁（每章節一頁）→ 結尾頁。直接點頁面上的文字即可編輯。</p>
+          <div class="pf-inline-actions">
+            <button id="pfInlineAddChapterBtn" class="pf-inline-add-btn" type="button">＋ 新增章節</button>
+          </div>
           <div class="portfolio-preview-area" id="pfPreviewArea"></div>
         </div>
 
       </section><!-- /portfolio-workspace -->
 
     </div><!-- /page-portfolio -->
-
-    <div id="page-persona" class="app-page">
-      <section class="persona-hero">
-        <h2>把自我介紹做成有角色感的拼貼頁。</h2>
-        <p>這個頁面不是面試用的死板履歷，而是偏向「個人設定檔 / 自介牆 / 角色卡」的編輯方式。你可以切換可愛風或帥氣風，把 MBTI、個性、能量感、喜歡的東西和小缺點都排成一張更有記憶點的頁面。</p>
-      </section>
-
-      <section class="persona-workspace">
-        <aside class="panel persona-editor-panel">
-          <div class="editor-header">
-            <div>
-              <h2>個人化編輯器</h2>
-              <div class="install-hint">左邊整理內容，右邊會即時排成拼貼風自介頁。</div>
-            </div>
-          </div>
-          <div class="editor-scroll">
-
-            <div class="section-card">
-              <h3>風格模板</h3>
-              <p>可愛風偏紙膠帶、暖色、手帳感；帥氣風偏冷色、俐落、帶偶像海報感。</p>
-              <div class="theme-row" id="personaThemeRow">
-                <button class="theme-card active" type="button" data-persona-theme="cute">
-                  <div class="theme-swatch-preview" style="background:linear-gradient(135deg,#f6d0c0 0%,#faeee2 55%,#f8c8c0 100%);"></div>
-                  <strong>可愛風 🌸</strong>
-                  <span>溫暖、手作拼貼、日記感自介頁</span>
-                </button>
-                <button class="theme-card" type="button" data-persona-theme="cool">
-                  <div class="theme-swatch-preview" style="background:linear-gradient(135deg,#131d2e 0%,#2a3e72 55%,#1e305a 100%);"></div>
-                  <strong>帥氣風 🖤</strong>
-                  <span>深夜冷調、俐落、帶角色設定感</span>
-                </button>
-              </div>
-            </div>
-
-            <div class="section-card">
-              <h3>主標題區</h3>
-              <div class="field-grid">
-                <div class="field">
-                  <label>日期 / 生日標題</label>
-                  <input id="personaHeroDate" type="text" placeholder="生日、代號、紀念日，例如 07 / 21" />
-                </div>
-                <div class="field">
-                  <label>主角色標籤</label>
-                  <input id="personaHeroCode" type="text" placeholder="MBTI、角色名、風格代號，例如 INFP / Dreamer" />
-                </div>
-                <div class="field full">
-                  <label>大標題</label>
-                  <input id="personaMainTitle" type="text" placeholder="一句人物主標，例如 海邊長大的慢熱創作者" />
-                </div>
-                <div class="field full">
-                  <label>一句話標語</label>
-                  <textarea id="personaTagline" placeholder="一句最像你的標語，例如 我喜歡把靈感過成日常。"></textarea>
-                </div>
-              </div>
-            </div>
-
-            <div class="section-card">
-              <h3>① 基本設定</h3>
-              <div class="field-grid">
-                <div class="field">
-                  <label>生日</label>
-                  <input id="personaBirthday" type="text" placeholder="生日或重要日期" />
-                </div>
-                <div class="field">
-                  <label>星座</label>
-                  <input id="personaSign" type="text" placeholder="星座、氣質分類" />
-                </div>
-                <div class="field">
-                  <label>MBTI</label>
-                  <input id="personaMbti" type="text" placeholder="MBTI 或人格標籤" />
-                </div>
-                <div class="field">
-                  <label>生肖 / 屬性</label>
-                  <input id="personaAnimal" type="text" placeholder="生肖、動物意象、守護象徵" />
-                </div>
-                <div class="field">
-                  <label>性別 / 身分感</label>
-                  <input id="personaGender" type="text" placeholder="身分感、稱呼、角色定位" />
-                </div>
-                <div class="field">
-                  <label>角色定位</label>
-                  <input id="personaRole" type="text" placeholder="你想被記住的角色，例如 靜靜發光的企劃者" />
-                </div>
-              </div>
-            </div>
-
-            <div class="section-card">
-              <h3>② ③ 氣質 &amp; 故事</h3>
-              <div class="field-grid">
-                <div class="field full">
-                  <label>整體氣質（逐行輸入）</label>
-                  <textarea id="personaVibe" placeholder="每行一句人物氛圍，例如 慢熱、細膩、觀察力強"></textarea>
-                </div>
-                <div class="field full">
-                  <label>生日特別感 / 小故事</label>
-                  <textarea id="personaStory" placeholder="寫一段旁白，描述你的節奏、故事感與價值觀。"></textarea>
-                </div>
-              </div>
-            </div>
-
-            <div class="section-card">
-              <h3>④ 三重能量</h3>
-              <p>一行一筆，格式：<code>標題 | 內容描述</code>，段落用空行隔開，最多排三張。</p>
-              <div class="field-grid single">
-                <div class="field full">
-                  <textarea id="personaEnergy" placeholder="每段格式為 標題 | 描述&#10;&#10;例如：觀察者 | 習慣先感受氣氛，再慢慢表達自己。"></textarea>
-                </div>
-              </div>
-            </div>
-
-            <div class="section-card">
-              <h3>⑤ ⑦ 優點 &amp; 缺點</h3>
-              <div class="field-grid">
-                <div class="field full">
-                  <label>優點整理（逐行）</label>
-                  <textarea id="personaStrengths" placeholder="每行一個優點，例如 有耐心、整理力強、很會傾聽"></textarea>
-                </div>
-                <div class="field full">
-                  <label>小小缺點（逐行）</label>
-                  <textarea id="personaWeaknesses" placeholder="每行一個小缺點，例如 想太多、回訊息慢、偶爾猶豫"></textarea>
-                </div>
-              </div>
-            </div>
-
-            <div class="section-card">
-              <h3>⑥ 感情模式</h3>
-              <div class="field-grid single">
-                <div class="field full">
-                  <textarea id="personaLoveStyle" placeholder="每行一句相處方式，例如 重視安全感、喜歡慢慢熟起來"></textarea>
-                </div>
-              </div>
-            </div>
-
-            <div class="section-card">
-              <h3>⑧ ⑨ 關鍵字 &amp; 小物</h3>
-              <div class="field-grid">
-                <div class="field full">
-                  <label>關鍵字（逗號或換行分隔）</label>
-                  <textarea id="personaKeywords" placeholder="用逗號分隔關鍵字，例如 溫柔, 靈感型, 夜貓子"></textarea>
-                </div>
-                <div class="field full">
-                  <label>幸運小物 / 喜歡的東西</label>
-                  <textarea id="personaFavorites" placeholder="填喜歡的物件、符號、收藏，例如 耳機, 雨天, 底片機"></textarea>
-                </div>
-                <div class="field full">
-                  <label>給自己的提醒（便條紙文字）</label>
-                  <textarea id="personaReminder" placeholder="寫給自己的一句提醒，例如 慢一點也沒關係，穩穩前進就很好。"></textarea>
-                </div>
-              </div>
-            </div>
-
-            <div class="section-card">
-              <h3>圖片與小夥伴</h3>
-              <div class="field-grid">
-                <div class="field full">
-                  <label>中間預設人像</label>
-                  <div class="persona-avatar-switch" id="personaAvatarSwitch">
-                    <button class="persona-avatar-choice active" type="button" data-persona-avatar="female">
-                      <strong>女生預設</strong>
-                      <span>沿用拼貼角色感，適合可愛風與暖色模板。</span>
-                    </button>
-                    <button class="persona-avatar-choice" type="button" data-persona-avatar="male">
-                      <strong>男生預設</strong>
-                      <span>改成男生版本站位；若有自訂圖，仍會以自訂圖優先。</span>
-                    </button>
-                  </div>
-                </div>
-                <div class="field full">
-                  <label>卡通人像圖片網址（可留空）</label>
-                  <input id="personaPortrait" type="url" placeholder="可留空使用男女預設，或貼上你自己的插畫 / Q 版角色圖" />
-                </div>
-                <div class="field full">
-                  <label>中間對話泡泡</label>
-                  <input id="personaBubble" type="text" placeholder="一句短台詞，例如 我通常先安靜，熟了就很鬧。" />
-                </div>
-                <div class="field">
-                  <label>小夥伴名稱</label>
-                  <input id="personaMascotName" type="text" placeholder="小夥伴名稱，例如 夜燈狐狸" />
-                </div>
-                <div class="field full">
-                  <label>小夥伴圖片網址（可留空）</label>
-                  <input id="personaMascotImage" type="url" placeholder="可留空，或貼上代表物 / 吉祥物圖片網址" />
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </aside>
-
-        <section class="panel persona-preview-shell">
-          <div class="persona-preview-frame">
-            <div class="preview-toolbar">
-              <div class="preview-toolbar-meta">
-                <div>
-                  <h2>個人化頁預覽</h2>
-                  <p>目前已改成用參考圖做底模板，前景資訊卡會即時覆蓋，標題與重點標籤走挖空字效果。</p>
-                </div>
-                <div class="layout-badge" id="personaThemeBadge">目前風格：可愛風 🌸</div>
-              </div>
-            </div>
-            <div id="personaBoard" class="persona-board" data-theme="cute"></div>
-          </div>
-        </section>
-      </section>
-    </div><!-- /page-persona -->
 
   </main>
 
@@ -5202,6 +4881,7 @@
         selectedBlock: "profile",
         user: null,
         client: null,
+        authBusy: false,
         installPrompt: null,
         pendingAuthMessage: null,
         authDebug: {
@@ -5935,12 +5615,26 @@
           button.href = canvaUrl;
           button.setAttribute("aria-disabled", "false");
         });
-        $("logoutBtn").disabled = !state.user;
-        $("headerLogoutBtn").disabled = !state.user;
+        $("logoutBtn").disabled = !state.user || state.authBusy;
+        $("headerLogoutBtn").disabled = !state.user || state.authBusy;
         $("saveBtn").disabled = !readyForCloud || !state.user;
         $("loadProfileBtn").disabled = !readyForCloud;
         $("applyConfigBtn").disabled = false;
         $("installBtn").disabled = !state.installPrompt;
+      }
+
+      function syncLogoutFeedback() {
+        const loggingOut = state.authBusy;
+        const logoutBtn = $("logoutBtn");
+        const headerLogoutBtn = $("headerLogoutBtn");
+        if (logoutBtn) {
+          logoutBtn.textContent = loggingOut ? "登出中..." : "登出";
+          logoutBtn.setAttribute("aria-busy", loggingOut ? "true" : "false");
+        }
+        if (headerLogoutBtn) {
+          headerLogoutBtn.textContent = loggingOut ? "登出中..." : "登出";
+          headerLogoutBtn.setAttribute("aria-busy", loggingOut ? "true" : "false");
+        }
       }
 
       async function ensureDependenciesReady() {
@@ -6046,7 +5740,11 @@
         if (!state.client || authSubscription) return;
         const { data } = state.client.auth.onAuthStateChange(async (event, session) => {
           state.user = session?.user || null;
+          if (event === "SIGNED_OUT") {
+            state.authBusy = false;
+          }
           updateAuthUi();
+          syncLogoutFeedback();
           updateActionButtons();
 
           if (event === "SIGNED_IN" && state.user) {
@@ -6173,9 +5871,13 @@
           });
           headerLogoutBtn.hidden = false;
         } else {
-          $("authStatus").innerHTML = "<strong>尚未登入</strong> · 可先編輯草稿";
+          $("authStatus").innerHTML = state.authBusy
+            ? "<strong>登出中...</strong> · 正在切回本機草稿"
+            : "<strong>尚未登入</strong> · 可先編輯草稿";
           $("headerAuthStatus").classList.remove("user-pill");
-          $("headerAuthStatus").innerHTML = "<strong>尚未登入</strong> · 可先編輯草稿";
+          $("headerAuthStatus").innerHTML = state.authBusy
+            ? "<strong>登出中...</strong> · 正在切回本機草稿"
+            : "<strong>尚未登入</strong> · 可先編輯草稿";
           loginTriggers.forEach((button) => {
             button.style.display = "";
           });
@@ -6209,14 +5911,24 @@
       }
 
       async function signOut() {
-        if (!state.client) return;
+        if (!state.client || state.authBusy) return;
+        state.authBusy = true;
+        state.user = null;
+        updateAuthUi();
+        syncLogoutFeedback();
+        updateActionButtons();
+        setMessage("正在登出，稍候會切回本機草稿模式。");
         const { error } = await state.client.auth.signOut();
         if (error) {
+          state.authBusy = false;
+          await refreshSession();
+          syncLogoutFeedback();
+          updateActionButtons();
           setMessage(`登出失敗：${error.message}`, "error");
           return;
         }
-        state.user = null;
-        updateAuthUi();
+        state.authBusy = false;
+        syncLogoutFeedback();
         updateActionButtons();
       }
 
@@ -7464,6 +7176,77 @@
         `;
       }
 
+      function pfEditable(field, value, placeholder = "", extra = "") {
+        return `<div class="pf-inline-editable" contenteditable="true" spellcheck="false" data-pf-field="${field}" data-ph="${esc(placeholder)}" ${extra}>${esc(value || "")}</div>`;
+      }
+
+      function pfEditableSection(ci, si, part, value, placeholder = "", extra = "") {
+        return `<div class="pf-inline-editable" contenteditable="true" spellcheck="false" data-pf-ci="${ci}" data-pf-si="${si}" data-pf-part="${part}" data-ph="${esc(placeholder)}" ${extra}>${esc(value || "")}</div>`;
+      }
+
+      function pfEditableChapter(ci, value, placeholder = "", extra = "") {
+        return `<div class="pf-inline-editable" contenteditable="true" spellcheck="false" data-pf-chapter="${ci}" data-ph="${esc(placeholder)}" ${extra}>${esc(value || "")}</div>`;
+      }
+
+      function pfInlineImageEditor(ci, si, sec, ratio, placeholderText) {
+        const imageCard = sec.imageUrl
+          ? sectionImageCard(sec, ratio)
+          : `<div style="${ratio}border-radius:24px;border:1px dashed rgba(49,40,27,0.18);background:linear-gradient(135deg, rgba(255,255,255,0.96) 0%, rgba(236,228,219,0.88) 100%);display:flex;align-items:flex-end;justify-content:flex-start;padding:14px;color:#73808c;font-size:0.72em;line-height:1.6;">${placeholderText}</div>`;
+        return `${imageCard}
+          <div class="pf-inline-input">
+            <span class="pf-inline-label">圖片網址</span>
+            ${pfEditableSection(ci, si, "imageUrl", sec.imageUrl || "", "貼上圖片網址")}
+          </div>
+          <div class="pf-inline-input">
+            <span class="pf-inline-label">圖片說明</span>
+            ${pfEditableSection(ci, si, "imageCaption", sec.imageCaption || "", "補一段圖片說明")}
+          </div>`;
+      }
+
+      function syncPortfolioEditable(el) {
+        const field = el.dataset.pfField;
+        if (field) {
+          pf[field] = el.textContent.trim();
+          save();
+          return;
+        }
+        const chapterIndex = Number(el.dataset.pfChapter);
+        if (!Number.isNaN(chapterIndex) && pf.chapters[chapterIndex]) {
+          pf.chapters[chapterIndex].title = el.textContent.trim();
+          save();
+          return;
+        }
+        const ci = Number(el.dataset.pfCi);
+        const si = Number(el.dataset.pfSi);
+        const part = el.dataset.pfPart;
+        if (Number.isNaN(ci) || Number.isNaN(si) || !part || !pf.chapters[ci]?.sections?.[si]) return;
+        pf.chapters[ci].sections[si][part] = el.textContent.trim();
+        save();
+      }
+
+      function attachPortfolioInlineListeners() {
+        const area = $el("pfPreviewArea");
+        if (!area || area.dataset.inlineBound === "true") return;
+        area.dataset.inlineBound = "true";
+        let debounce = null;
+        area.addEventListener("input", (event) => {
+          const el = event.target.closest("[contenteditable='true'][data-pf-field],[contenteditable='true'][data-pf-chapter],[contenteditable='true'][data-pf-part]");
+          if (!el) return;
+          clearTimeout(debounce);
+          debounce = setTimeout(() => syncPortfolioEditable(el), 250);
+        });
+        area.addEventListener("focusout", (event) => {
+          const el = event.target.closest("[contenteditable='true'][data-pf-field],[contenteditable='true'][data-pf-chapter],[contenteditable='true'][data-pf-part]");
+          if (!el) return;
+          clearTimeout(debounce);
+          syncPortfolioEditable(el);
+          setTimeout(() => {
+            renderPreview();
+            syncPortfolioGuideUi();
+          }, 0);
+        });
+      }
+
       function getPortfolioGuideSteps() {
         const basicsDone = [pf.title, pf.studentName, pf.school].every((value) => String(value || "").trim());
         const chapterTitleDone = pf.chapters.every((chapter) => String(chapter.title || "").trim());
@@ -7558,7 +7341,7 @@
       }
 
       /* ── TAB SWITCHING ── */
-      const APP_TAB_IDS = ["home", "cv", "persona", "portfolio"];
+      const APP_TAB_IDS = ["home", "cv", "portfolio"];
 
       function normalizeTabId(tabId) {
         return APP_TAB_IDS.includes(tabId) ? tabId : "home";
@@ -7701,6 +7484,7 @@
         pf.chapters.forEach((ch, i) => parts.push(buildContentPage(ch, i + 1, theme)));
         parts.push(buildEndPage(theme));
         $el("pfPreviewArea").innerHTML = parts.join("");
+        attachPortfolioInlineListeners();
         syncPortfolioGuideUi();
       }
 
@@ -7726,23 +7510,27 @@
             <div style="display:flex;flex-direction:column;justify-content:space-between;">
               <div>
                 <div style="display:inline-flex;align-items:center;gap:8px;padding:7px 12px;border-radius:999px;background:#ffffffd9;border:1px solid ${theme.line};font-size:0.68em;letter-spacing:0.16em;text-transform:uppercase;color:${theme.deep};">Learning Portfolio</div>
-                <div style="margin-top:18px;font-size:2.28em;font-weight:700;line-height:1.08;color:#151515;letter-spacing:-0.04em;">${esc(pf.title) || ""}</div>
+                <div style="margin-top:18px;font-size:2.28em;font-weight:700;line-height:1.08;color:#151515;letter-spacing:-0.04em;">${pfEditable("title", pf.title, "請輸入文件標題")}</div>
                 <div style="width:56px;height:3px;background:${c};margin:16px 0 14px;"></div>
                 <div style="max-width:30ch;font-size:0.86em;line-height:1.8;color:#59606b;">以作品、紀錄與學習內容整理主題脈絡，方便快速檢視重點。</div>
               </div>
               <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
                 <div style="padding:14px;border-radius:18px;background:#ffffffd9;border:1px solid ${theme.line};">
                   <div style="font-size:0.64em;letter-spacing:0.16em;text-transform:uppercase;color:#7b8491;margin-bottom:8px;">Student</div>
-                  <div style="font-size:1em;font-weight:700;color:${theme.deep};">${esc(pf.studentName) || ""}</div>
+                  <div style="font-size:1em;font-weight:700;color:${theme.deep};">${pfEditable("studentName", pf.studentName, "署名")}</div>
                 </div>
                 <div style="padding:14px;border-radius:18px;background:#ffffffd9;border:1px solid ${theme.line};">
                   <div style="font-size:0.64em;letter-spacing:0.16em;text-transform:uppercase;color:#7b8491;margin-bottom:8px;">School</div>
-                  <div style="font-size:0.84em;line-height:1.6;color:#404752;">${esc(pf.school) || ""}</div>
+                  <div style="font-size:0.84em;line-height:1.6;color:#404752;">${pfEditable("school", pf.school, "附註欄位")}</div>
                 </div>
               </div>
             </div>
             <div style="display:grid;grid-template-rows:1fr auto;gap:14px;">
               <div style="border-radius:28px;overflow:hidden;border:1px solid rgba(0,0,0,0.08);box-shadow:0 22px 48px rgba(17,24,39,0.14);background:#fff;">${imgHtml}</div>
+              <div class="pf-inline-input">
+                <span class="pf-inline-label">封面圖片網址</span>
+                ${pfEditable("coverImageUrl", pf.coverImageUrl, "貼上封面圖片網址")}
+              </div>
               <div style="display:grid;grid-template-columns:repeat(3, 1fr);gap:8px;">
                 <div style="height:64px;border-radius:16px;background:${theme.deep};"></div>
                 <div style="height:64px;border-radius:16px;background:${c};"></div>
@@ -7797,11 +7585,11 @@
         if (theme.variant === "studio") return buildStudioContentPage(ch, pageNum, theme);
         const primarySection = ch.sections[0] || {};
         const secondarySections = ch.sections.slice(1);
-        const leftCards = secondarySections.map(sec => `
+        const leftCards = secondarySections.map((sec, index) => `
           <div style="padding:14px 16px;border-radius:20px;background:#ffffffeb;border:1px solid rgba(0,0,0,0.07);">
-            ${sec.header ? `<div style="font-size:0.76em;font-weight:700;letter-spacing:0.06em;color:${theme.deep};margin-bottom:8px;">${esc(sec.header)}</div>` : ""}
-            <div style="font-size:0.73em;line-height:1.78;color:#2e2e2e;">${esc(sec.body).replace(/\n/g, "<br>")}</div>
-            ${sec.imageUrl ? `<div style="margin-top:12px;">${sectionImageCard(sec, "width:100%;height:96px;")}</div>` : ""}
+            <div style="font-size:0.76em;font-weight:700;letter-spacing:0.06em;color:${theme.deep};margin-bottom:8px;">${pfEditableSection(pageNum - 1, index + 1, "header", sec.header, "小節標題")}</div>
+            <div style="font-size:0.73em;line-height:1.78;color:#2e2e2e;">${pfEditableSection(pageNum - 1, index + 1, "body", sec.body, "輸入小節內容")}</div>
+            <div style="margin-top:12px;">${pfInlineImageEditor(pageNum - 1, index + 1, sec, "width:100%;height:96px;", "可加入成果照片或作品截圖")}</div>
           </div>
         `).join("");
         return `<div class="pf-page" style="${portfolioPageStyle(theme)}">
@@ -7811,7 +7599,7 @@
             <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:14px;">
               <div>
                 <div style="font-size:0.68em;letter-spacing:0.18em;text-transform:uppercase;color:#7b8491;">Chapter ${chapterCountLabel(pageNum)}</div>
-                <div style="font-size:1.72em;font-weight:700;line-height:1.08;color:#111;max-width:14ch;margin-top:8px;">${esc(ch.title) || "章節 " + pageNum}</div>
+                <div style="font-size:1.72em;font-weight:700;line-height:1.08;color:#111;max-width:14ch;margin-top:8px;">${pfEditableChapter(pageNum - 1, ch.title, "章節標題")}</div>
               </div>
               <div style="padding:10px 12px;border-radius:18px;background:${theme.soft};border:1px solid ${theme.line};min-width:120px;">
                 <div style="font-size:0.62em;letter-spacing:0.16em;text-transform:uppercase;color:#66707d;margin-bottom:7px;">Focus</div>
@@ -7821,8 +7609,8 @@
             <div style="display:grid;grid-template-columns:1.1fr 0.9fr;gap:16px;min-height:0;">
               <div style="display:grid;grid-template-rows:auto 1fr;gap:14px;min-height:0;">
                 <div style="padding:18px 18px 16px;border-radius:26px;background:#ffffffef;border:1px solid rgba(0,0,0,0.07);box-shadow:0 16px 34px rgba(17,24,39,0.05);">
-                  ${primarySection.header ? `<div style="font-size:0.82em;font-weight:700;letter-spacing:0.08em;color:${c};margin-bottom:10px;">${esc(primarySection.header)}</div>` : ""}
-                  <div style="font-size:0.76em;line-height:1.9;color:#222;">${esc(primarySection.body || "").replace(/\n/g, "<br>")}</div>
+                  <div style="font-size:0.82em;font-weight:700;letter-spacing:0.08em;color:${c};margin-bottom:10px;">${pfEditableSection(pageNum - 1, 0, "header", primarySection.header, "核心段落標題")}</div>
+                  <div style="font-size:0.76em;line-height:1.9;color:#222;">${pfEditableSection(pageNum - 1, 0, "body", primarySection.body, "輸入本章主要內容")}</div>
                 </div>
                 <div style="display:grid;align-content:start;gap:12px;overflow:hidden;">
                   ${leftCards || `<div style="padding:14px 16px;border-radius:20px;background:#ffffffeb;border:1px dashed ${theme.line};font-size:0.72em;line-height:1.7;color:#6a7280;">這一章目前只有一個小節，若想讓版面更完整，可以再新增一個成果、補充說明或延伸內容小節。</div>`}
@@ -7834,7 +7622,7 @@
                   <div style="font-size:1.48em;font-weight:700;line-height:1.05;margin-bottom:12px;">章節摘要</div>
                   <div style="font-size:0.74em;line-height:1.75;color:rgba(255,255,255,0.86);">${esc(sectionExcerpt(primarySection.body || "", 130) || "以具體事件、作品與內容說明整理本章重點。").replace(/\n/g, "<br>")}</div>
                 </div>
-                ${primarySection.imageUrl ? sectionImageCard(primarySection, "width:100%;height:182px;") : `<div style="height:182px;border-radius:24px;border:1px dashed ${theme.line};background:linear-gradient(135deg, ${theme.soft} 0%, rgba(255,255,255,0.96) 100%);display:flex;align-items:flex-end;justify-content:flex-start;padding:14px;color:#73808c;font-size:0.7em;line-height:1.6;">建議在這一章放入成果照片、活動紀錄或作品截圖，版面會更完整。</div>`}
+                ${pfInlineImageEditor(pageNum - 1, 0, primarySection, "width:100%;height:182px;", "建議在這一章放入成果照片、活動紀錄或作品截圖，版面會更完整。")}
               </div>
             </div>
             <div style="display:flex;justify-content:space-between;align-items:center;font-size:0.64em;color:#8a93a0;border-top:1px solid rgba(0,0,0,0.07);padding-top:10px;">
@@ -7944,11 +7732,11 @@
             <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:16px;color:#fff;">
               <div>
                 <div style="font-size:0.7em;letter-spacing:0.22em;text-transform:uppercase;color:rgba(255,255,255,0.68);">Applicant Dossier</div>
-                <div style="margin-top:14px;font-size:2.2em;font-weight:700;line-height:1.02;max-width:11ch;">${esc(pf.title) || ""}</div>
+                <div style="margin-top:14px;font-size:2.2em;font-weight:700;line-height:1.02;max-width:11ch;">${pfEditable("title", pf.title, "請輸入文件標題")}</div>
               </div>
               <div style="min-width:140px;padding:12px 14px;border:1px solid rgba(255,255,255,0.16);background:rgba(255,255,255,0.06);font-size:0.72em;line-height:1.8;">
-                <div>${esc(pf.studentName) || ""}</div>
-                <div>${esc(pf.school) || ""}</div>
+                <div>${pfEditable("studentName", pf.studentName, "署名")}</div>
+                <div>${pfEditable("school", pf.school, "附註欄位")}</div>
               </div>
             </div>
             <div style="display:grid;grid-template-columns:1fr 0.92fr;gap:16px;align-items:stretch;">
@@ -7964,6 +7752,10 @@
                 </div>
               </div>
               <div style="border:1px solid ${theme.line};background:#fff;overflow:hidden;">${imgHtml}</div>
+              <div class="pf-inline-input">
+                <span class="pf-inline-label">封面圖片網址</span>
+                ${pfEditable("coverImageUrl", pf.coverImageUrl, "貼上封面圖片網址")}
+              </div>
             </div>
             <div style="display:flex;justify-content:space-between;font-size:0.68em;letter-spacing:0.14em;text-transform:uppercase;color:#7d8592;">
               <span>Prepared Portfolio</span><span>${esc(theme.shortLabel)}</span>
@@ -8119,10 +7911,10 @@
       function buildDossierContentPage(ch, pageNum, theme) {
         const primarySection = ch.sections[0] || {};
         const secondary = ch.sections.slice(1, 4);
-        const items = secondary.map((sec) => `
+        const items = secondary.map((sec, index) => `
           <div style="padding:12px 0;border-top:1px solid ${theme.line};">
-            <div style="font-size:0.78em;font-weight:700;color:${theme.deep};">${esc(sec.header || "補充項目")}</div>
-            <div style="margin-top:8px;font-size:0.73em;line-height:1.78;color:#495261;">${esc(sectionExcerpt(sec.body, 100)).replace(/\n/g, "<br>")}</div>
+            <div style="font-size:0.78em;font-weight:700;color:${theme.deep};">${pfEditableSection(pageNum - 1, index + 1, "header", sec.header, "補充項目標題")}</div>
+            <div style="margin-top:8px;font-size:0.73em;line-height:1.78;color:#495261;">${pfEditableSection(pageNum - 1, index + 1, "body", sec.body, "補充項目內容")}</div>
           </div>
         `).join("");
         return `<div class="pf-page" style="${portfolioPageStyle(theme)}">
@@ -8132,15 +7924,15 @@
             <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:16px;color:#fff;">
               <div>
                 <div style="font-size:0.66em;letter-spacing:0.2em;text-transform:uppercase;color:rgba(255,255,255,0.72);">Section ${chapterCountLabel(pageNum)}</div>
-                <div style="margin-top:8px;font-size:1.82em;font-weight:700;line-height:1.06;">${esc(ch.title) || "章節 " + pageNum}</div>
+                <div style="margin-top:8px;font-size:1.82em;font-weight:700;line-height:1.06;">${pfEditableChapter(pageNum - 1, ch.title, "章節標題")}</div>
               </div>
               <div style="font-size:0.68em;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.66);">${esc(theme.shortLabel)}</div>
             </div>
             <div style="display:grid;grid-template-columns:1.08fr 0.92fr;gap:16px;">
               <div style="padding:18px 18px 16px;background:#fff;border:1px solid ${theme.line};">
                 <div style="font-size:0.7em;letter-spacing:0.16em;text-transform:uppercase;color:${theme.color};">Summary</div>
-                <div style="margin-top:10px;font-size:0.98em;font-weight:700;color:${theme.deep};">${esc(primarySection.header || "核心重點")}</div>
-                <div style="margin-top:12px;font-size:0.76em;line-height:1.9;color:#333c48;">${esc(primarySection.body || "").replace(/\n/g, "<br>")}</div>
+                <div style="margin-top:10px;font-size:0.98em;font-weight:700;color:${theme.deep};">${pfEditableSection(pageNum - 1, 0, "header", primarySection.header, "核心重點標題")}</div>
+                <div style="margin-top:12px;font-size:0.76em;line-height:1.9;color:#333c48;">${pfEditableSection(pageNum - 1, 0, "body", primarySection.body, "輸入本章主要內容")}</div>
                 <div style="margin-top:18px;padding-top:12px;border-top:1px solid ${theme.line};font-size:0.72em;line-height:1.78;color:#65707d;">${esc(sectionExcerpt(primarySection.body || ch.title, 128))}</div>
               </div>
               <div style="display:grid;grid-template-rows:auto 1fr;gap:12px;">
@@ -8148,7 +7940,7 @@
                   <div style="font-size:0.68em;letter-spacing:0.16em;text-transform:uppercase;color:#6d7582;">Quick Notes</div>
                   ${items || `<div style="margin-top:10px;font-size:0.74em;line-height:1.75;color:#5e6774;">可補入競賽摘要、數據結果、社團領導或關鍵證據。</div>`}
                 </div>
-                ${primarySection.imageUrl ? sectionImageCard(primarySection, "width:100%;height:210px;") : `<div style="background:#fff;border:1px dashed ${theme.line};padding:14px;color:#73808c;font-size:0.74em;line-height:1.75;display:flex;align-items:flex-end;">可加入證照、活動、簡報頁或成果照片。</div>`}
+                ${pfInlineImageEditor(pageNum - 1, 0, primarySection, "width:100%;height:210px;", "可加入證照、活動、簡報頁或成果照片。")}
               </div>
             </div>
             <div style="display:flex;justify-content:space-between;font-size:0.66em;color:#7e8895;"><span>${esc(pf.studentName)}</span><span>${chapterCountLabel(pageNum)}</span></div>
@@ -8677,13 +8469,15 @@
         });
 
         /* Add chapter */
-        $el("pfAddChapterBtn")?.addEventListener("click", () => {
+        const addPortfolioChapter = () => {
           pf.chapters.push({
             id: uid(), title: "",
             sections: [{ id: uid(), header: "", body: "", imageUrl: "", imageCaption: "" }]
           });
           save(); renderEditor(); renderPreview(); syncPortfolioGuideUi();
-        });
+        };
+        $el("pfAddChapterBtn")?.addEventListener("click", addPortfolioChapter);
+        $el("pfInlineAddChapterBtn")?.addEventListener("click", addPortfolioChapter);
 
         /* Download PDF */
         $el("pfPreviewBtn")?.addEventListener("click", previewPortfolioPdf);
@@ -8716,303 +8510,6 @@
       init();
     })();
 
-    /* ===== PERSONA PAGE MODULE ===== */
-    (() => {
-      const PERSONA_KEY = "persona-board-local-v2";
-
-      const personaDefault = {
-        theme: "cute",
-        heroDate: "",
-        heroCode: "",
-        mainTitle: "",
-        tagline: "",
-        birthday: "",
-        sign: "",
-        mbti: "",
-        animal: "",
-        gender: "",
-        role: "",
-        vibe: "",
-        story: "",
-        strengths: "",
-        weaknesses: "",
-        energy: "",
-        keywords: "",
-        favorites: "",
-        reminder: "",
-        avatarPreset: "female",
-        portrait: "",
-        bubble: "",
-        mascotName: "",
-        mascotImage: "",
-        loveStyle: ""
-      };
-
-      const personaThemeMeta = {
-        cute: { label: "可愛風 🌸", mascot: "🐑", decos: ["🌸","✦","♪","⭐","🌿","💫","🎵","✿","🍀","💕"] },
-        cool: { label: "帥氣風 🖤", mascot: "🐺", decos: ["✦","◆","⚡","◇","▲","★","◈","⬡","✧","▸"] }
-      };
-
-      const personaDecoPositions = [
-        { top:"3%",  left:"5%",  delay:"0s"   },
-        { top:"7%",  right:"7%", delay:"1.2s" },
-        { top:"16%", left:"2%",  delay:"2.4s" },
-        { top:"28%", right:"3%", delay:"0.6s" },
-        { top:"42%", left:"4%",  delay:"1.8s" },
-        { top:"58%", right:"2%", delay:"3s"   },
-        { top:"72%", left:"2%",  delay:"0.9s" },
-        { top:"82%", right:"6%", delay:"2.1s" },
-        { top:"91%", left:"7%",  delay:"1.5s" },
-        { top:"95%", right:"10%",delay:"0.3s" }
-      ];
-
-      function $p(id) { return document.getElementById(id); }
-
-      function esc(v) {
-        return String(v || "").replace(/[&<>"']/g, m => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[m]));
-      }
-
-      function splitLines(t) { return String(t||"").split("\n").map(s=>s.trim()).filter(Boolean); }
-      function splitItems(t) { return String(t||"").split(/[\n,]/).map(s=>s.trim()).filter(Boolean); }
-      function svgToDataUri(svg) {
-        return "data:image/svg+xml;charset=UTF-8," + encodeURIComponent(svg);
-      }
-      function getPresetPortraitUrl(preset, theme) {
-        const isMale = preset === "male";
-        const palette = theme === "cool"
-          ? { bg1:"#172948", bg2:"#2f4f88", skin:"#f2d4c0", hair:isMale?"#21304f":"#18243b", jacket:isMale?"#cfd8ea":"#f0f5ff", top:isMale?"#6ea7d8":"#f0b7aa", accent:"#8ec5ff", bottom:isMale?"#2c3f6b":"#b6c4f2" }
-          : { bg1:"#f7ddc8", bg2:"#f2cbb9", skin:"#f7d8c7", hair:isMale?"#7a563f":"#5a4038", jacket:isMale?"#efe6d9":"#fff6ed", top:isMale?"#95b37f":"#f3b1a5", accent:"#f2b75b", bottom:isMale?"#8090c7":"#e8c2a8" };
-        const svg = isMale
-          ? `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 420" fill="none"><rect width="320" height="420" rx="40" fill="${palette.bg1}"/><path d="M32 365C70 326 110 320 160 320C210 320 250 328 288 365V420H32V365Z" fill="${palette.bg2}" opacity=".28"/><path d="M103 96C117 66 150 48 186 53C228 58 251 94 248 137C245 183 214 216 165 220C122 223 93 194 87 153C84 132 89 114 103 96Z" fill="${palette.hair}"/><path d="M121 163C121 126 138 102 165 102C193 102 210 126 210 163V184C210 226 189 257 165 257C141 257 121 226 121 184V163Z" fill="${palette.skin}"/><circle cx="149" cy="165" r="5.5" fill="#2d2525"/><circle cx="184" cy="165" r="5.5" fill="#2d2525"/><path d="M151 198C160 204 170 204 179 198" stroke="#8a4f4f" stroke-width="5" stroke-linecap="round"/><path d="M118 162C124 139 140 132 158 132H171C191 132 209 142 215 165L228 222L216 229L204 202V334H124V202L113 229L101 222L118 162Z" fill="${palette.jacket}"/><path d="M141 192H188V334H141V192Z" fill="${palette.top}"/><path d="M126 334H204L224 420H106L126 334Z" fill="${palette.bottom}"/><path d="M160 196L174 218L160 236L146 218L160 196Z" fill="${palette.accent}"/></svg>`
-          : `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 420" fill="none"><rect width="320" height="420" rx="40" fill="${palette.bg1}"/><path d="M38 370C86 330 118 318 160 318C202 318 240 328 282 370V420H38V370Z" fill="${palette.bg2}" opacity=".26"/><path d="M92 112C103 71 136 48 175 52C215 57 242 91 242 130C242 159 231 182 214 209L234 314H194L182 240L171 242L160 240L149 242L138 240L126 314H86L106 209C88 183 77 158 77 132C77 125 82 112 92 112Z" fill="${palette.hair}"/><path d="M118 158C118 121 136 98 164 98C193 98 210 121 210 158V181C210 222 189 253 164 253C139 253 118 222 118 181V158Z" fill="${palette.skin}"/><circle cx="148" cy="161" r="5.5" fill="#2d2525"/><circle cx="184" cy="161" r="5.5" fill="#2d2525"/><path d="M150 194C158 202 170 202 179 194" stroke="#9b5e63" stroke-width="5" stroke-linecap="round"/><path d="M111 174C120 147 140 138 162 138H172C194 138 212 150 219 176L231 230L220 236L206 208V332H122V208L108 236L97 230L111 174Z" fill="${palette.jacket}"/><path d="M137 186H191V250L202 332H126L137 250V186Z" fill="${palette.top}"/><path d="M126 332L165 296L204 332L182 420H148L126 332Z" fill="${palette.bottom}"/><path d="M164 192L177 211L164 230L151 211L164 192Z" fill="${palette.accent}"/></svg>`;
-        return svgToDataUri(svg);
-      }
-      function parsePairs(t) {
-        return String(t||"").split(/\n\s*\n/).map(s=>s.trim()).filter(Boolean).map(s=>{
-          const [title="",body=""] = s.split("|").map(p=>p.trim());
-          return {title,body};
-        }).slice(0,3);
-      }
-
-      function loadPersona() {
-        try { const r=localStorage.getItem(PERSONA_KEY); return r?{...personaDefault,...JSON.parse(r)}:{...personaDefault}; }
-        catch { return {...personaDefault}; }
-      }
-
-      let persona = loadPersona();
-
-      const personaInputMap = {
-        heroDate:"personaHeroDate", heroCode:"personaHeroCode", mainTitle:"personaMainTitle",
-        tagline:"personaTagline", birthday:"personaBirthday", sign:"personaSign",
-        mbti:"personaMbti", animal:"personaAnimal", gender:"personaGender", role:"personaRole",
-        vibe:"personaVibe", story:"personaStory", strengths:"personaStrengths",
-        weaknesses:"personaWeaknesses", energy:"personaEnergy", keywords:"personaKeywords",
-        favorites:"personaFavorites", reminder:"personaReminder", portrait:"personaPortrait",
-        bubble:"personaBubble", mascotName:"personaMascotName", mascotImage:"personaMascotImage",
-        loveStyle:"personaLoveStyle"
-      };
-
-      function savePersona() { localStorage.setItem(PERSONA_KEY, JSON.stringify(persona)); }
-
-      function syncInputs() {
-        Object.entries(personaInputMap).forEach(([key,id]) => {
-          const n = $p(id); if (n) n.value = persona[key] || "";
-        });
-        syncAvatarPreset();
-      }
-
-      function syncAvatarPreset() {
-        document.querySelectorAll("[data-persona-avatar]").forEach(btn => {
-          btn.classList.toggle("active", btn.dataset.personaAvatar === (persona.avatarPreset || "female"));
-        });
-      }
-
-      function setAvatarPreset(preset) {
-        persona.avatarPreset = preset;
-        if (!persona.gender) {
-          persona.gender = preset === "male" ? "男生" : "女生";
-          const genderInput = $p("personaGender");
-          if (genderInput) genderInput.value = persona.gender;
-        }
-        savePersona();
-        syncAvatarPreset();
-        renderBoard();
-      }
-
-      function renderBoard() {
-        const board = $p("personaBoard");
-        const badge = $p("personaThemeBadge");
-        if (!board) return;
-
-        const meta = personaThemeMeta[persona.theme] || personaThemeMeta.cute;
-        const vibeLines = splitLines(persona.vibe);
-        const strengthLines = splitLines(persona.strengths);
-        const weaknessLines = splitLines(persona.weaknesses);
-        const loveLines = splitLines(persona.loveStyle);
-        const keywordItems = splitItems(persona.keywords);
-        const favoriteItems = splitItems(persona.favorites);
-        const energyCards = parsePairs(persona.energy);
-        const avatarPreset = persona.avatarPreset || "female";
-        const fallbackGender = avatarPreset === "male" ? "男生" : "女生";
-        const portraitSrc = persona.portrait || getPresetPortraitUrl(avatarPreset, persona.theme);
-        const portraitLabel = persona.portrait ? "custom portrait" : (avatarPreset === "male" ? "male preset avatar" : "female preset avatar");
-
-        board.dataset.theme = persona.theme;
-        if (badge) badge.textContent = "目前風格：" + meta.label;
-
-        const decoHtml = personaDecoPositions.map((pos, i) => {
-          const sym = meta.decos[i % meta.decos.length];
-          const styleArr = Object.entries(pos).filter(([k])=>k!=="delay").map(([k,v])=>k+":"+v);
-          return '<span class="persona-deco-item" style="' + styleArr.join(";") + ';animation-delay:' + pos.delay + '">' + sym + '</span>';
-        }).join("");
-
-        function listItem(text) {
-          return '<div class="persona-list-item"><span class="persona-list-bullet">\u2713</span><span>' + esc(text) + '</span></div>';
-        }
-        function emptyHint(msg) { return '<p style="opacity:.52;font-size:.86rem">' + msg + '</p>'; }
-        const titleText = [persona.heroDate, persona.heroCode].filter(Boolean).join(" / ");
-        const boardTitle = titleText || "日期 / 代號";
-        const boardSubtitle = persona.mainTitle || "一句人物主標";
-        const boardTagline = persona.tagline || "一句最像你的自我介紹短句";
-        const bubbleText = persona.bubble || "放一句最像你的口頭禪或自述";
-
-        board.innerHTML = [
-          '<div class="persona-deco-layer">' + decoHtml + '</div>',
-          '<div class="persona-title-card">',
-          '<div class="persona-title-row">',
-          '<div class="persona-title-main">',
-          '<div class="persona-top-title persona-cutout">' + esc(boardTitle) + '</div>',
-          '<div class="persona-top-subtitle persona-cutout">' + esc(boardSubtitle) + '</div>',
-          '<div class="persona-tagline">' + esc(boardTagline) + '</div>',
-          '</div>',
-          '<div class="persona-sticker-row">',
-          '<span class="persona-sticker">MBTI · ' + esc(persona.mbti || "未填寫") + '</span>',
-          '<span class="persona-sticker">星座 · ' + esc(persona.sign || "未填寫") + '</span>',
-          '<span class="persona-sticker">' + meta.mascot + " " + esc(persona.mascotName || "你的吉祥物") + '</span>',
-          '</div>',
-          '</div>',
-          '</div>',
-
-          '<div class="persona-layout-main">',
-
-          '<div class="persona-col">',
-          '<section class="persona-note">',
-          '<div class="persona-note-head"><span class="persona-index">1</span><div class="persona-heading"><h3 class="persona-cutout">基本資料</h3></div></div>',
-          '<div class="persona-facts">',
-          [["生日",persona.birthday],["星座",persona.sign],["MBTI",persona.mbti],["生肖",persona.animal],["性別",persona.gender || fallbackGender],["定位",persona.role]]
-            .map(([k,v])=>'<div class="persona-fact-row"><strong>'+k+'：</strong><span>'+(esc(v)||"—")+'</span></div>').join(""),
-          '</div></section>',
-
-          '<section class="persona-note alt">',
-          '<div class="persona-note-head"><span class="persona-index">2</span><div class="persona-heading"><h3 class="persona-cutout">整體氣質</h3></div></div>',
-          '<div class="persona-list">',
-          vibeLines.length ? vibeLines.map(listItem).join("") : emptyHint("描述人物氣質，例如慢熱、溫柔、觀察力強。"),
-          '</div></section>',
-
-          '<section class="persona-note">',
-          '<div class="persona-note-head"><span class="persona-index">3</span><div class="persona-heading"><h3 class="persona-cutout">小故事</h3></div></div>',
-          '<p style="line-height:1.82;font-size:.92rem">' + (esc(persona.story)||emptyHint("用 2 到 4 句寫一段像旁白的小故事。")) + '</p>',
-          '</section>',
-
-          '<section class="persona-note soft">',
-          '<div class="persona-note-head"><span class="persona-index">8</span><div class="persona-heading"><h3 class="persona-cutout">關鍵字</h3></div></div>',
-          '<div class="persona-pills">',
-          keywordItems.length ? keywordItems.map(k=>'<span class="persona-pill">'+esc(k)+'</span>').join("") : emptyHint("填入 4 到 8 個關鍵字，用逗號分隔。"),
-          '</div></section>',
-
-          '</div>',
-
-          '<div class="persona-center-column">',
-          '<section class="persona-portrait-card">',
-          '<div class="persona-centerpiece">',
-          '<div class="persona-photo-frame"><div class="persona-photo"><img src="'+esc(portraitSrc)+'" alt="'+ portraitLabel +'" /></div></div>',
-          '<div class="persona-bubble">'+ esc(bubbleText) +'</div>',
-          '<div class="persona-portrait-caption">'+ portraitLabel +'</div>',
-          '</div></section>',
-
-          '<section class="persona-note soft">',
-          '<div class="persona-mascot-wrap">',
-          '<div class="persona-mascot-card">',
-          persona.mascotImage ? '<img src="'+esc(persona.mascotImage)+'" alt="mascot" />' : meta.mascot,
-          '</div>',
-          '<div><div style="font-weight:700;margin-bottom:6px;font-size:1rem">'+meta.mascot+' '+esc(persona.mascotName || "小夥伴名稱")+'</div>',
-          '<p class="persona-note-footer">'+(esc(persona.reminder)||"在這裡寫一句給自己的提醒或安慰。")+'</p></div>',
-          '</div></section>',
-
-          '<div class="persona-mini-quote">' + esc(boardTagline) + '</div>',
-          '</div>',
-
-          '<div class="persona-col">',
-          '<section class="persona-note alt">',
-          '<div class="persona-note-head"><span class="persona-index">4</span><div class="persona-heading"><h3 class="persona-cutout">三重能量</h3></div></div>',
-          '<div class="persona-energy-stack">',
-          energyCards.length
-            ? energyCards.map(c=>'<div class="persona-energy-card"><div class="persona-energy-badge">'+esc((c.title||"?").slice(0,4))+'</div><div><strong>'+esc(c.title||"能量")+'</strong><p>'+esc(c.body||"請補充描述。")+'</p></div></div>').join("")
-            : '<div class="persona-energy-card"><div class="persona-energy-badge">+</div><div><strong>能量卡</strong><p>格式請填「標題 | 描述」，可寫 1 到 3 組。</p></div></div>',
-          '</div></section>',
-
-          '<section class="persona-note">',
-          '<div class="persona-note-head"><span class="persona-index">5</span><div class="persona-heading"><h3 class="persona-cutout">優點整理</h3></div></div>',
-          '<div class="persona-list">',
-          strengthLines.length ? strengthLines.map(listItem).join("") : emptyHint("每行填一個優點，例如穩定、真誠、執行力高。"),
-          '</div></section>',
-
-          '<section class="persona-note soft">',
-          '<div class="persona-note-head"><span class="persona-index">6</span><div class="persona-heading"><h3 class="persona-cutout">感情模式</h3></div></div>',
-          '<div class="persona-list">',
-          loveLines.length ? loveLines.map(listItem).join("") : emptyHint("描述你習慣的相處方式與安全感來源。"),
-          '</div></section>',
-
-          '<section class="persona-note alt">',
-          '<div class="persona-note-head"><span class="persona-index">7</span><div class="persona-heading"><h3 class="persona-cutout">小小缺點</h3></div></div>',
-          '<div class="persona-list">',
-          weaknessLines.length ? weaknessLines.map(listItem).join("") : emptyHint("填幾個真實但不刺人的小缺點。"),
-          '</div></section>',
-
-          '<section class="persona-note">',
-          '<div class="persona-note-head"><span class="persona-index">9</span><div class="persona-heading"><h3 class="persona-cutout">適合你的小物</h3></div></div>',
-          '<div class="persona-item-row">',
-          favoriteItems.length ? favoriteItems.map(item=>'<span class="persona-item-pill">\u2736 '+esc(item)+'</span>').join("") : emptyHint("填入喜歡的小物、符號、顏色或收藏。"),
-          '</div></section>',
-
-          '</div>',
-          '</div>',
-          '<div class="persona-footer-note">編輯左側內容時，這張角色卡會即時同步更新。</div>',
-          '<div class="persona-bottom-quote">'+esc(boardTagline)+'</div>'
-        ].join("");
-      }
-
-      function setTheme(themeId) {
-        persona.theme = themeId;
-        document.querySelectorAll("[data-persona-theme]").forEach(b => {
-          b.classList.toggle("active", b.dataset.personaTheme === themeId);
-        });
-        savePersona();
-        renderBoard();
-      }
-
-      function bindEvents() {
-        Object.entries(personaInputMap).forEach(([key, id]) => {
-          const n = $p(id); if (!n) return;
-          n.addEventListener("input", e => { persona[key] = e.target.value; savePersona(); renderBoard(); });
-        });
-        document.querySelectorAll("[data-persona-theme]").forEach(b => {
-          b.addEventListener("click", () => setTheme(b.dataset.personaTheme));
-        });
-        document.querySelectorAll("[data-persona-avatar]").forEach(b => {
-          b.addEventListener("click", () => setAvatarPreset(b.dataset.personaAvatar));
-        });
-      }
-
-      function initPersona() {
-        if (!$p("page-persona")) return;
-        syncInputs();
-        bindEvents();
-        setTheme(persona.theme || "cute");
-      }
-
-      initPersona();
-    })();
   </script>
 </body>
 </html>
