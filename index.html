@@ -476,44 +476,12 @@
     .mini-line.mid { width: 62%; }
     .mini-line.long { width: 100%; }
 
-    .step-grid {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 14px;
-      margin-bottom: 18px;
-    }
-
-    .step-card {
-      padding: 18px;
-      border-radius: 24px;
-      background: rgba(255, 250, 244, 0.84);
-      border: 1px solid rgba(49, 40, 27, 0.08);
-      box-shadow: 0 16px 38px rgba(50, 38, 18, 0.08);
-    }
-
-    .step-card strong,
     .feature-card strong {
       display: block;
       margin-bottom: 8px;
       color: var(--template-heading);
     }
 
-    .step-card span {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      width: 34px;
-      height: 34px;
-      margin-bottom: 12px;
-      border-radius: 12px;
-      background: rgba(33, 78, 116, 0.08);
-      color: var(--accent-2);
-      font-size: 0.92rem;
-      font-weight: 700;
-      letter-spacing: 0.04em;
-    }
-
-    .step-card p,
     .feature-card p {
       color: var(--muted);
       font-size: 0.94rem;
@@ -1621,7 +1589,6 @@
     @media (max-width: 1100px) {
       .workspace,
       .hero-grid,
-      .step-grid,
       .feature-strip,
       .hero-stats {
         grid-template-columns: 1fr;
@@ -1750,133 +1717,6 @@
 
     .app-page { display: none; }
     .app-page.active { display: block; }
-
-    .guide-panel {
-      display: grid;
-      gap: 14px;
-      padding: 18px 20px;
-      background: rgba(255, 250, 244, 0.92);
-      border: 1px solid rgba(49, 40, 27, 0.08);
-      border-radius: 24px;
-      box-shadow: 0 16px 36px rgba(50, 38, 18, 0.08);
-      margin-bottom: 16px;
-    }
-
-    .guide-panel-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      gap: 12px;
-      flex-wrap: wrap;
-    }
-
-    .guide-panel-header p,
-    .guide-step-copy p,
-    .guide-progress p {
-      color: var(--muted);
-      font-size: 0.94rem;
-    }
-
-    .guide-mode-grid {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 10px;
-    }
-
-    .guide-mode-button {
-      text-align: left;
-      border-radius: 20px;
-      border: 1px solid rgba(49, 40, 27, 0.08);
-      background: rgba(255, 255, 255, 0.85);
-      padding: 14px;
-    }
-
-    .guide-mode-button strong,
-    .guide-step-card strong {
-      display: block;
-      margin-bottom: 4px;
-      color: var(--template-heading);
-    }
-
-    .guide-mode-button span,
-    .guide-step-card span,
-    .guide-step-copy span {
-      color: var(--muted);
-      font-size: 13px;
-      line-height: 1.5;
-    }
-
-    .guide-mode-button.active {
-      background: #fff;
-      border-color: rgba(33, 78, 116, 0.28);
-      box-shadow: 0 14px 32px rgba(33, 78, 116, 0.12);
-    }
-
-    .guide-progress {
-      padding: 14px 16px;
-      border-radius: 20px;
-      background: rgba(255, 255, 255, 0.84);
-      border: 1px solid rgba(49, 40, 27, 0.08);
-      min-width: 220px;
-    }
-
-    .guide-progress strong {
-      display: block;
-      font-size: 1.35rem;
-      color: var(--template-heading);
-      margin-bottom: 4px;
-    }
-
-    .guide-step-list {
-      display: grid;
-      gap: 10px;
-    }
-
-    .guide-step-card {
-      display: grid;
-      grid-template-columns: auto 1fr auto;
-      gap: 12px;
-      align-items: center;
-      padding: 14px;
-      border-radius: 20px;
-      background: rgba(255, 255, 255, 0.78);
-      border: 1px solid rgba(49, 40, 27, 0.08);
-    }
-
-    .guide-step-marker {
-      width: 30px;
-      height: 30px;
-      border-radius: 999px;
-      display: grid;
-      place-items: center;
-      background: rgba(33, 78, 116, 0.12);
-      color: var(--accent-2);
-      font-size: 13px;
-      font-weight: 700;
-    }
-
-    .guide-step-card.done .guide-step-marker {
-      background: rgba(21, 115, 71, 0.14);
-      color: var(--success);
-    }
-
-    .guide-step-card.active-step {
-      border-color: rgba(33, 78, 116, 0.22);
-      box-shadow: 0 10px 24px rgba(33, 78, 116, 0.08);
-    }
-
-    .guide-step-copy {
-      display: grid;
-      gap: 4px;
-    }
-
-    .guide-step-card button {
-      white-space: nowrap;
-    }
-
-    .guide-panel[data-guide-mode="free"] .guide-step-list {
-      display: none;
-    }
 
     /* ===== PORTFOLIO WORKSPACE ===== */
     .portfolio-workspace {
@@ -2158,9 +1998,6 @@
     @media (max-width: 960px) {
       .portfolio-workspace { grid-template-columns: 1fr; }
       .portfolio-editor-panel { position: static; max-height: none; }
-      .guide-mode-grid { grid-template-columns: 1fr; }
-      .guide-step-card { grid-template-columns: auto 1fr; }
-      .guide-step-card button { grid-column: 2; justify-self: start; }
     }
 
     /* ===== WYSIWYG MODE: hide left editor, full-width preview ===== */
@@ -3528,24 +3365,6 @@
       </div>
     </section>
 
-    <section class="step-grid">
-      <article class="step-card">
-        <span>01</span>
-        <strong>選模板</strong>
-        <p>先挑一個接近你職位氣質的版型，直接開始，不需要自己排版。</p>
-      </article>
-      <article class="step-card">
-        <span>02</span>
-        <strong>填內容</strong>
-        <p>輸入基本資料、經歷與作品資訊，畫面會同步更新，不必來回切頁。</p>
-      </article>
-      <article class="step-card">
-        <span>03</span>
-        <strong>同步或匯出</strong>
-        <p>登入後保存到雲端，或直接下載 PDF，把履歷帶去投遞或分享。</p>
-      </article>
-    </section>
-
     <section class="feature-strip">
       <article class="feature-card">
         <strong>CV 履歷編輯器</strong>
@@ -3605,33 +3424,6 @@
 
     <!-- ===== CV STUDIO BAR ===== -->
     <div class="cv-studio-bar" id="cvStudioBar">
-      <div class="guide-panel" id="cvGuidePanel" data-guide-mode="guided">
-        <div class="guide-panel-header">
-          <div>
-            <h2>CV 引導模式</h2>
-            <p id="cvGuideSummary">可依熟悉程度切換操作節奏；新手可跟著步驟完成，熟手可直接自由編輯。</p>
-          </div>
-          <div class="guide-progress">
-            <strong id="cvGuideProgress">0 / 4</strong>
-            <p id="cvGuideProgressText">先從選一個引導模式開始。</p>
-          </div>
-        </div>
-        <div class="guide-mode-grid">
-          <button class="guide-mode-button active" type="button" data-cv-guide-mode="guided">
-            <strong>完整引導</strong>
-            <span>一步一步完成模板、內容、排版與匯出。</span>
-          </button>
-          <button class="guide-mode-button" type="button" data-cv-guide-mode="focus">
-            <strong>快速引導</strong>
-            <span>只保留最關鍵步驟，適合想快速產出第一版。</span>
-          </button>
-          <button class="guide-mode-button" type="button" data-cv-guide-mode="free">
-            <strong>自由編輯</strong>
-            <span>隱藏步驟卡，直接使用既有編輯器與即時預覽。</span>
-          </button>
-        </div>
-        <div class="guide-step-list" id="cvGuideSteps" aria-live="polite"></div>
-      </div>
       <div class="cv-studio-section">
         <span class="cv-studio-label">依職位推薦模板</span>
         <div class="job-role-row" id="jobRoleBar">
@@ -4150,34 +3942,6 @@
         </div>
       </section>
 
-      <div class="guide-panel" id="pfGuidePanel" data-guide-mode="guided">
-        <div class="guide-panel-header">
-          <div>
-            <h2>學習歷程引導模式</h2>
-            <p id="pfGuideSummary">可選擇完整步驟、快速流程，或直接自由編輯章節內容與配色。</p>
-          </div>
-          <div class="guide-progress">
-            <strong id="pfGuideProgress">0 / 4</strong>
-            <p id="pfGuideProgressText">先選模式，再開始整理封面與章節。</p>
-          </div>
-        </div>
-        <div class="guide-mode-grid">
-          <button class="guide-mode-button active" type="button" data-pf-guide-mode="guided">
-            <strong>完整引導</strong>
-            <span>從封面、章節到預覽與匯出，逐步完成學習歷程。</span>
-          </button>
-          <button class="guide-mode-button" type="button" data-pf-guide-mode="focus">
-            <strong>快速引導</strong>
-            <span>保留最需要先做的重點，適合先做可提交版本。</span>
-          </button>
-          <button class="guide-mode-button" type="button" data-pf-guide-mode="free">
-            <strong>自由編輯</strong>
-            <span>隱藏步驟提醒，直接編輯章節、圖片與預覽。</span>
-          </button>
-        </div>
-        <div class="guide-step-list" id="pfGuideSteps" aria-live="polite"></div>
-      </div>
-
       <!-- portfolio workspace -->
       <section class="portfolio-workspace">
 
@@ -4442,7 +4206,6 @@
       const TEMPLATE_KEY = "cv-studio-template-v1";
       const WORKFLOW_KEY = "cv-studio-workflow-v1";
       const LAYOUT_KEY = "cv-studio-layout-v1";
-      const GUIDE_MODE_KEY = "cv-studio-guide-mode-v1";
       const defaultData = {
         name: "",
         role: "",
@@ -4876,11 +4639,11 @@
         config: loadInitialConfig(),
         template: localStorage.getItem(TEMPLATE_KEY) || "n-tech",
         workflowMode: localStorage.getItem(WORKFLOW_KEY) || "template-first",
-        guideMode: localStorage.getItem(GUIDE_MODE_KEY) || "guided",
         layoutPrefs: loadJson(LAYOUT_KEY, {}),
         selectedBlock: "profile",
         user: null,
         client: null,
+        clientConfigSignature: "",
         authBusy: false,
         installPrompt: null,
         pendingAuthMessage: null,
@@ -5299,7 +5062,6 @@
           ? "目前可先挑一個模板開始編輯；之後切到別的模板時，已輸入資料會自動重新排進新模板。"
           : "先把左側內容填完，再直接點任一模板，就會用你現在的資料自動重新排版。";
         $("previewModeBadge").textContent = `目前模式：${isTemplateFirst ? "先選模板再編輯" : "先填資料再套版"}`;
-        syncCvGuideUi();
       }
 
       function syncLayoutControls() {
@@ -5326,105 +5088,6 @@
         state.workflowMode = mode;
         localStorage.setItem(WORKFLOW_KEY, mode);
         syncWorkflowUi();
-      }
-
-      function getCvGuideSteps() {
-        const basicsDone = ["name", "role", "email", "summary"].every((field) => {
-          const value = String(state.data[field] || "").trim();
-          return value && value !== defaultData[field];
-        });
-        const contentDone = ["experience", "education", "projects"].every((field) => {
-          const value = String(state.data[field] || "").trim();
-          return value && value !== defaultData[field];
-        });
-        const polishDone =
-          state.user ||
-          Boolean(String(state.data.skills || "").trim() && state.data.skills !== defaultData.skills) ||
-          Boolean(String(state.data.awards || "").trim() && state.data.awards !== defaultData.awards);
-
-        const steps = [
-          {
-            title: "選流程與模板",
-            detail: `先決定「${state.workflowMode === "template-first" ? "先選模板再編輯" : "先填資料再套版"}」流程，再挑模板開始。`,
-            done: Boolean(state.template),
-            action: "前往流程設定",
-            onClick: () => scrollToNode("cvWorkflowSection")
-          },
-          {
-            title: "完成基本資料",
-            detail: "填好姓名、職位、聯絡方式與摘要，右側就會形成第一版履歷。",
-            done: basicsDone,
-            action: "填基本資料",
-            onClick: () => scrollToNode("cvBasicsSection", "name")
-          },
-          {
-            title: "補齊主體內容",
-            detail: "把工作、專案與學歷補齊，履歷的核心說服力會完整很多。",
-            done: contentDone,
-            action: "填經歷內容",
-            onClick: () => scrollToNode("cvExperienceSection", "experience")
-          },
-          {
-            title: "微調並匯出",
-            detail: "選取右側區塊做版面微調，完成後可登入儲存或直接下載 PDF。",
-            done: polishDone,
-            action: "前往排版微調",
-            onClick: () => scrollToNode("cvLayoutSection")
-          }
-        ];
-
-        return state.guideMode === "focus" ? steps.slice(0, 3) : steps;
-      }
-
-      function syncCvGuideUi() {
-        const panel = $("cvGuidePanel");
-        if (!panel) return;
-
-        panel.dataset.guideMode = state.guideMode;
-        document.querySelectorAll("[data-cv-guide-mode]").forEach((button) => {
-          button.classList.toggle("active", button.dataset.cvGuideMode === state.guideMode);
-        });
-
-        const summaryMap = {
-          guided: "目前是完整引導，會依序帶你完成流程、內容、排版與匯出。",
-          focus: "目前是快速引導，只保留最先需要完成的關鍵步驟。",
-          free: "目前是自由編輯，保留模式切換，但不顯示步驟清單。"
-        };
-        $("cvGuideSummary").textContent = summaryMap[state.guideMode];
-
-        const steps = getCvGuideSteps();
-        const doneCount = steps.filter((step) => step.done).length;
-        $("cvGuideProgress").textContent = `${doneCount} / ${steps.length}`;
-        $("cvGuideProgressText").textContent =
-          state.guideMode === "free"
-            ? "自由編輯中，需要時可隨時切回完整或快速引導。"
-            : doneCount === steps.length
-              ? "履歷主要步驟都已完成，可以直接下載或登入儲存。"
-              : `下一步建議先完成「${steps.find((step) => !step.done)?.title || steps[0].title}」。`;
-
-        $("cvGuideSteps").innerHTML = steps.map((step, index) => `
-          <div class="guide-step-card ${step.done ? "done" : "active-step"}">
-            <div class="guide-step-marker">${step.done ? "OK" : index + 1}</div>
-            <div class="guide-step-copy">
-              <strong>${escapeHtml(step.title)}</strong>
-              <span>${escapeHtml(step.detail)}</span>
-            </div>
-            <button class="soft" type="button" data-cv-guide-jump="${index}">${escapeHtml(step.action)}</button>
-          </div>
-        `).join("");
-
-        document.querySelectorAll("[data-cv-guide-jump]").forEach((button) => {
-          button.addEventListener("click", () => {
-            const step = steps[Number(button.dataset.cvGuideJump)];
-            step?.onClick?.();
-          });
-        });
-      }
-
-      function setCvGuideMode(mode) {
-        state.guideMode = mode;
-        localStorage.setItem(GUIDE_MODE_KEY, mode);
-        syncCvGuideUi();
       }
 
       function buildTemplateStrip() {
@@ -5464,7 +5127,6 @@
         $("syncStatus").innerHTML = `<strong>${escapeHtml(templateLabels[templateId] || templateId)}</strong> · 已選模板`;
         updatePreview(true);
         syncLayoutControls();
-        syncCvGuideUi();
       }
 
       function canUseSupabase() {
@@ -5566,6 +5228,37 @@
         if (changed) {
           window.history.replaceState({}, document.title, url.toString());
         }
+      }
+
+      function getSupabaseProjectRef() {
+        const supabaseUrl = state.config.supabaseUrl?.trim();
+        if (!supabaseUrl) return "";
+
+        try {
+          return new URL(supabaseUrl).hostname.split(".")[0] || "";
+        } catch {
+          return "";
+        }
+      }
+
+      function clearSupabaseSessionStorage() {
+        const projectRef = getSupabaseProjectRef();
+        const keysToRemove = [];
+
+        for (let i = 0; i < window.localStorage.length; i += 1) {
+          const key = window.localStorage.key(i);
+          if (!key) continue;
+
+          const isProjectSessionKey = projectRef && key.startsWith(`sb-${projectRef}-`);
+          const isLegacySessionKey = projectRef && key === `supabase.auth.token`;
+          if (isProjectSessionKey || isLegacySessionKey) {
+            keysToRemove.push(key);
+          }
+        }
+
+        keysToRemove.forEach((key) => {
+          window.localStorage.removeItem(key);
+        });
       }
 
       function getSupabaseCallbackUrl() {
@@ -5741,7 +5434,7 @@
         const { data } = state.client.auth.onAuthStateChange(async (event, session) => {
           state.user = session?.user || null;
           if (event === "SIGNED_OUT") {
-            state.authBusy = false;
+            applySignedOutState();
           }
           updateAuthUi();
           syncLogoutFeedback();
@@ -5759,6 +5452,14 @@
         authSubscription = data.subscription;
       }
 
+      function applySignedOutState() {
+        state.user = null;
+        state.authBusy = false;
+        state.authDebug.sessionPresent = false;
+        state.authDebug.sessionUser = "";
+        state.authDebug.sessionError = "Supabase 回傳 session 為空。";
+      }
+
       function makeClient() {
         if (!canUseSupabase()) {
           if (authSubscription) {
@@ -5766,16 +5467,24 @@
             authSubscription = null;
           }
           state.client = null;
+          state.clientConfigSignature = "";
           updateActionButtons();
           renderGoogleImpactChecklist();
           return null;
         }
 
-        if (state.client) {
+        const nextSignature = `${state.config.supabaseUrl.trim()}::${state.config.supabaseAnonKey.trim()}`;
+
+        if (state.client && state.clientConfigSignature === nextSignature) {
           bindAuthListener();
           updateActionButtons();
           renderGoogleImpactChecklist();
           return state.client;
+        }
+
+        if (authSubscription) {
+          authSubscription.unsubscribe();
+          authSubscription = null;
         }
 
         state.client = window.supabase.createClient(state.config.supabaseUrl, state.config.supabaseAnonKey, {
@@ -5786,6 +5495,7 @@
             autoRefreshToken: true
           }
         });
+        state.clientConfigSignature = nextSignature;
         bindAuthListener();
         updateActionButtons();
         renderGoogleImpactChecklist();
@@ -5831,6 +5541,9 @@
           ? `${state.user.user_metadata?.full_name || state.user.email || "已登入帳號"}`
           : "";
         state.authDebug.sessionError = data.session ? "" : "Supabase 回傳 session 為空。";
+        if (!data.session || authCode) {
+          clearAuthRedirectParams();
+        }
         updateAuthUi();
         updateActionButtons();
         renderAuthDebugPanel();
@@ -5911,14 +5624,23 @@
       }
 
       async function signOut() {
-        if (!state.client || state.authBusy) return;
+        if (state.authBusy) return;
+        if (!makeClient()) {
+          applySignedOutState();
+          updateAuthUi();
+          syncLogoutFeedback();
+          updateActionButtons();
+          setMessage("目前沒有可用的雲端登入連線，已切回本機草稿模式。");
+          return;
+        }
         state.authBusy = true;
         state.user = null;
         updateAuthUi();
         syncLogoutFeedback();
         updateActionButtons();
         setMessage("正在登出，稍候會切回本機草稿模式。");
-        const { error } = await state.client.auth.signOut();
+        clearAuthRedirectParams();
+        const { error } = await state.client.auth.signOut({ scope: "local" });
         if (error) {
           state.authBusy = false;
           await refreshSession();
@@ -5927,7 +5649,9 @@
           setMessage(`登出失敗：${error.message}`, "error");
           return;
         }
-        state.authBusy = false;
+        clearSupabaseSessionStorage();
+        applySignedOutState();
+        await refreshSession();
         syncLogoutFeedback();
         updateActionButtons();
       }
@@ -5966,10 +5690,8 @@
           syncLayoutControls();
           updateTemplate(data.template_id || state.template);
           setMessage("已從雲端載入 CV。", "success");
-          syncCvGuideUi();
         } else {
           setMessage("目前沒有雲端 CV，可直接從本機草稿開始編輯。");
-          syncCvGuideUi();
         }
       }
 
@@ -6055,7 +5777,6 @@
             state.data[field] = event.target.value;
             saveJson(STORAGE_KEY, state.data);
             updatePreview();
-            syncCvGuideUi();
           });
         });
 
@@ -6074,12 +5795,6 @@
         document.querySelectorAll("[data-workflow-mode]").forEach((button) => {
           button.addEventListener("click", () => {
             setWorkflowMode(button.dataset.workflowMode);
-          });
-        });
-
-        document.querySelectorAll("[data-cv-guide-mode]").forEach((button) => {
-          button.addEventListener("click", () => {
-            setCvGuideMode(button.dataset.cvGuideMode);
           });
         });
 
@@ -6945,7 +6660,6 @@
         updateTemplate(state.template || state.config.defaultTemplate || "n-tech", false);
         updatePreview(true);
         syncLayoutControls();
-        syncCvGuideUi();
         attachInputListeners();
         attachWysiwygListeners();      // ← contenteditable sync
         attachFormatToolbar();         // ← floating format toolbar
@@ -6968,7 +6682,6 @@
     (() => {
       const PF_KEY = "pf-studio-local-v4";
       const PF_TAB_KEY = "cv-studio-active-tab";
-      const PF_GUIDE_MODE_KEY = "pf-studio-guide-mode-v1";
       const PF_PRESET_KEY = "pf-studio-preset-v1";
 
       const pfThemes = {
@@ -7062,7 +6775,6 @@
           return s ? JSON.parse(s) : JSON.parse(JSON.stringify(pfDefault));
         } catch { return JSON.parse(JSON.stringify(pfDefault)); }
       })();
-      let pfGuideMode = localStorage.getItem(PF_GUIDE_MODE_KEY) || "guided";
       let pfActivePreset = (() => {
         try {
           const s = localStorage.getItem(PF_PRESET_KEY);
@@ -7242,102 +6954,8 @@
           syncPortfolioEditable(el);
           setTimeout(() => {
             renderPreview();
-            syncPortfolioGuideUi();
           }, 0);
         });
-      }
-
-      function getPortfolioGuideSteps() {
-        const basicsDone = [pf.title, pf.studentName, pf.school].every((value) => String(value || "").trim());
-        const chapterTitleDone = pf.chapters.every((chapter) => String(chapter.title || "").trim());
-        const chapterBodyDone = pf.chapters.every((chapter) =>
-          chapter.sections.some((section) => String(section.header || "").trim() || String(section.body || "").trim())
-        );
-        const previewDone = chapterTitleDone && chapterBodyDone;
-
-        const steps = [
-          {
-            title: "先選配色方向",
-            detail: "先挑一個整體風格，後續封面、目錄與內容頁會沿用同一組主色。",
-            done: Boolean(pf.accentTheme),
-            action: "前往配色",
-            onClick: () => scrollPfTo("pfThemeSection")
-          },
-          {
-            title: "完成封面資訊",
-            detail: "填好文件標題與基本欄位後，封面頁就會立刻成形。",
-            done: basicsDone,
-            action: "填基本資料",
-            onClick: () => scrollPfTo("pfBasicsSection", "pfTitle")
-          },
-          {
-            title: "整理章節內容",
-            detail: "替每章設定標題與至少一個小節內容，學習歷程的主體就完成了。",
-            done: chapterBodyDone,
-            action: "編輯章節",
-            onClick: () => scrollPfTo("pfChaptersSection")
-          },
-          {
-            title: "確認預覽並匯出",
-            detail: "檢查封面、目錄與每章版面後，即可下載學習歷程 PDF。",
-            done: previewDone,
-            action: "查看預覽",
-            onClick: () => scrollPfTo("pfPreviewSection")
-          }
-        ];
-
-        return pfGuideMode === "focus" ? steps.slice(0, 3) : steps;
-      }
-
-      function syncPortfolioGuideUi() {
-        const panel = $el("pfGuidePanel");
-        if (!panel) return;
-
-        panel.dataset.guideMode = pfGuideMode;
-        document.querySelectorAll("[data-pf-guide-mode]").forEach((button) => {
-          button.classList.toggle("active", button.dataset.pfGuideMode === pfGuideMode);
-        });
-
-        const summaryMap = {
-          guided: "目前是完整引導，會帶你依序完成封面、章節、預覽與匯出。",
-          focus: "目前是快速引導，只保留最先需要完成的關鍵步驟。",
-          free: "目前是自由編輯，保留模式切換，但不顯示步驟清單。"
-        };
-        $el("pfGuideSummary").textContent = summaryMap[pfGuideMode];
-
-        const steps = getPortfolioGuideSteps();
-        const doneCount = steps.filter((step) => step.done).length;
-        $el("pfGuideProgress").textContent = `${doneCount} / ${steps.length}`;
-        $el("pfGuideProgressText").textContent =
-          pfGuideMode === "free"
-            ? "自由編輯中，需要時可隨時切回完整或快速引導。"
-            : doneCount === steps.length
-              ? "學習歷程主要步驟都已完成，可以直接下載 PDF。"
-              : `下一步建議先完成「${steps.find((step) => !step.done)?.title || steps[0].title}」。`;
-
-        $el("pfGuideSteps").innerHTML = steps.map((step, index) => `
-          <div class="guide-step-card ${step.done ? "done" : "active-step"}">
-            <div class="guide-step-marker">${step.done ? "OK" : index + 1}</div>
-            <div class="guide-step-copy">
-              <strong>${esc(step.title)}</strong>
-              <span>${esc(step.detail)}</span>
-            </div>
-            <button class="soft" type="button" data-pf-guide-jump="${index}">${esc(step.action)}</button>
-          </div>
-        `).join("");
-
-        document.querySelectorAll("[data-pf-guide-jump]").forEach((button) => {
-          button.addEventListener("click", () => {
-            const step = steps[Number(button.dataset.pfGuideJump)];
-            step?.onClick?.();
-          });
-        });
-      }
-
-      function setPortfolioGuideMode(mode) {
-        pfGuideMode = mode;
-        localStorage.setItem(PF_GUIDE_MODE_KEY, mode);
-        syncPortfolioGuideUi();
       }
 
       /* ── TAB SWITCHING ── */
@@ -7423,56 +7041,55 @@
 
         attachEditorListeners();
         attachPortfolioPresetListeners();
-        syncPortfolioGuideUi();
       }
 
       function attachEditorListeners() {
         document.querySelectorAll("[data-ch-title]").forEach(inp => {
-          inp.oninput = e => { pf.chapters[+e.target.dataset.chTitle].title = e.target.value; save(); renderPreview(); syncPortfolioGuideUi(); };
+          inp.oninput = e => { pf.chapters[+e.target.dataset.chTitle].title = e.target.value; save(); renderPreview(); };
         });
         document.querySelectorAll("[data-sec-hdr]").forEach(inp => {
           inp.oninput = e => {
             const [ci, si] = e.target.dataset.secHdr.split("-").map(Number);
-            pf.chapters[ci].sections[si].header = e.target.value; save(); renderPreview(); syncPortfolioGuideUi();
+            pf.chapters[ci].sections[si].header = e.target.value; save(); renderPreview();
           };
         });
         document.querySelectorAll("[data-sec-body]").forEach(ta => {
           ta.oninput = e => {
             const [ci, si] = e.target.dataset.secBody.split("-").map(Number);
-            pf.chapters[ci].sections[si].body = e.target.value; save(); renderPreview(); syncPortfolioGuideUi();
+            pf.chapters[ci].sections[si].body = e.target.value; save(); renderPreview();
           };
         });
         document.querySelectorAll("[data-sec-img]").forEach(inp => {
           inp.oninput = e => {
             const [ci, si] = e.target.dataset.secImg.split("-").map(Number);
-            pf.chapters[ci].sections[si].imageUrl = e.target.value; save(); renderPreview(); syncPortfolioGuideUi();
+            pf.chapters[ci].sections[si].imageUrl = e.target.value; save(); renderPreview();
           };
         });
         document.querySelectorAll("[data-sec-cap]").forEach(inp => {
           inp.oninput = e => {
             const [ci, si] = e.target.dataset.secCap.split("-").map(Number);
-            pf.chapters[ci].sections[si].imageCaption = e.target.value; save(); renderPreview(); syncPortfolioGuideUi();
+            pf.chapters[ci].sections[si].imageCaption = e.target.value; save(); renderPreview();
           };
         });
         document.querySelectorAll("[data-rm-ch]").forEach(btn => {
           btn.onclick = e => {
             const ci = +e.target.dataset.rmCh;
             if (pf.chapters.length <= 1) return;
-            pf.chapters.splice(ci, 1); save(); renderEditor(); renderPreview(); syncPortfolioGuideUi();
+            pf.chapters.splice(ci, 1); save(); renderEditor(); renderPreview();
           };
         });
         document.querySelectorAll("[data-rm-sec]").forEach(btn => {
           btn.onclick = e => {
             const [ci, si] = e.target.dataset.rmSec.split("-").map(Number);
             if (pf.chapters[ci].sections.length <= 1) return;
-            pf.chapters[ci].sections.splice(si, 1); save(); renderEditor(); renderPreview(); syncPortfolioGuideUi();
+            pf.chapters[ci].sections.splice(si, 1); save(); renderEditor(); renderPreview();
           };
         });
         document.querySelectorAll("[data-add-sec]").forEach(btn => {
           btn.onclick = e => {
             const ci = +e.target.dataset.addSec;
             pf.chapters[ci].sections.push({ id: uid(), header: "", body: "", imageUrl: "", imageCaption: "" });
-            save(); renderEditor(); renderPreview(); syncPortfolioGuideUi();
+            save(); renderEditor(); renderPreview();
           };
         });
       }
@@ -7485,7 +7102,6 @@
         parts.push(buildEndPage(theme));
         $el("pfPreviewArea").innerHTML = parts.join("");
         attachPortfolioInlineListeners();
-        syncPortfolioGuideUi();
       }
 
       function buildCoverPage(theme) {
@@ -8279,7 +7895,7 @@
           desc: "切換到「學習歷程」分頁，可製作多章節的學習歷程檔案，支援圖文並茂的章節內容與 PDF 匯出。"
         },
         {
-          target: ".page-header .header-actions button[data-login-trigger='google']",
+          target: ".page-header .header-actions [data-login-trigger='google']",
           tab: "home",
           title: "Google 登入與雲端同步",
           desc: "右上角點「Google 登入」後，你的 CV 資料將自動同步至雲端，換裝置也不怕遺失。一切就緒，開始打造你的履歷吧！"
@@ -8449,20 +8065,13 @@
         document.querySelector(".feature-card-action[data-guide-action='login']")?.addEventListener("click", () => {
           document.getElementById("loginBtn")?.scrollIntoView({ behavior: "smooth", block: "center" });
         });
-
-        document.querySelectorAll("[data-pf-guide-mode]").forEach(btn => {
-          btn.addEventListener("click", () => {
-            setPortfolioGuideMode(btn.dataset.pfGuideMode);
-          });
-        });
-
         /* Basic info fields */
         const syncBasic = () => {
           pf.title          = $el("pfTitle").value;
           pf.studentName    = $el("pfStudentName").value;
           pf.school         = $el("pfSchool").value;
           pf.coverImageUrl  = $el("pfCoverImage").value;
-          save(); renderPreview(); syncPortfolioGuideUi();
+          save(); renderPreview();
         };
         ["pfTitle", "pfStudentName", "pfSchool", "pfCoverImage"].forEach(id => {
           $el(id)?.addEventListener("input", syncBasic);
@@ -8474,7 +8083,7 @@
             id: uid(), title: "",
             sections: [{ id: uid(), header: "", body: "", imageUrl: "", imageCaption: "" }]
           });
-          save(); renderEditor(); renderPreview(); syncPortfolioGuideUi();
+          save(); renderEditor(); renderPreview();
         };
         $el("pfAddChapterBtn")?.addEventListener("click", addPortfolioChapter);
         $el("pfInlineAddChapterBtn")?.addEventListener("click", addPortfolioChapter);
@@ -8503,7 +8112,6 @@
 
         renderEditor();
         renderPreview();
-        syncPortfolioGuideUi();
       }
 
       window.switchCvStudioTab = switchTab;
