@@ -2,10 +2,10 @@
   "version": "0.0.1",
   "configurations": [
     {
-      "name": "CV App",
+      "name": "CV App Worktree",
       "runtimeExecutable": "python3",
-      "runtimeArgs": ["-m", "http.server", "8788"],
-      "port": 8788
+      "runtimeArgs": ["-m", "http.server", "8789"],
+      "port": 8789
     }
   ]
 }
