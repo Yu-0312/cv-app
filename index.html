@@ -28,22 +28,24 @@
   <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
   <style>
     :root {
-      --bg: #f3efe6;
+      --bg: #f5f0e7;
       --bg-strong: #e7dece;
-      --surface: rgba(255, 250, 244, 0.92);
-      --surface-strong: #fffaf4;
-      --ink: #1f2430;
-      --muted: #5f6675;
-      --line: rgba(49, 40, 27, 0.12);
-      --accent: #ad3f2f;
-      --accent-2: #214e74;
-      --accent-3: #d89f3d;
+      --surface: rgba(255, 252, 247, 0.9);
+      --surface-strong: rgba(255, 255, 255, 0.92);
+      --ink: #1d2430;
+      --muted: #66707f;
+      --line: rgba(40, 33, 24, 0.11);
+      --accent: #ab4c33;
+      --accent-2: #244b75;
+      --accent-3: #d2a15c;
       --success: #157347;
       --danger: #a73b33;
-      --shadow: 0 24px 80px rgba(50, 38, 18, 0.12);
-      --radius: 26px;
+      --shadow: 0 24px 70px rgba(47, 35, 15, 0.1);
+      --radius: 22px;
       --paper: #fffefb;
       --paper-line: #ddd2c1;
+      --sans: "Avenir Next", "PingFang TC", "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+      --serif: "Iowan Old Style", "Palatino Linotype", "Noto Serif TC", serif;
       --template-accent: #ad3f2f;
       --template-accent-soft: #f6dfd8;
       --template-heading: #162033;
@@ -57,12 +59,15 @@
 
     body {
       margin: 0;
-      font-family: "Iowan Old Style", "Palatino Linotype", "Noto Serif TC", serif;
+      font-family: var(--serif);
       color: var(--ink);
       background:
-        radial-gradient(circle at top left, rgba(216, 159, 61, 0.18), transparent 26%),
-        radial-gradient(circle at 85% 10%, rgba(33, 78, 116, 0.16), transparent 22%),
-        linear-gradient(180deg, #f8f5ee 0%, var(--bg) 45%, #efe8da 100%);
+        linear-gradient(rgba(255,255,255,0.3) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.3) 1px, transparent 1px),
+        radial-gradient(circle at top left, rgba(216, 159, 61, 0.12), transparent 26%),
+        radial-gradient(circle at 85% 10%, rgba(33, 78, 116, 0.1), transparent 22%),
+        linear-gradient(180deg, #faf7f1 0%, var(--bg) 48%, #efe7d8 100%);
+      background-size: 24px 24px, 24px 24px, auto, auto, auto;
       min-height: 100vh;
     }
 
@@ -72,10 +77,14 @@
 
     button {
       border: 1px solid transparent;
-      border-radius: 999px;
+      border-radius: 16px;
       cursor: pointer;
       padding: 11px 16px;
-      transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
+      transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease, border-color 0.18s ease;
+      font-family: var(--sans);
+      font-size: 0.95rem;
+      font-weight: 600;
+      letter-spacing: 0.01em;
     }
 
     button:hover {
@@ -111,10 +120,14 @@
       justify-content: center;
       text-decoration: none;
       border: 1px solid transparent;
-      border-radius: 999px;
+      border-radius: 16px;
       cursor: pointer;
       padding: 11px 16px;
-      transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
+      transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease, border-color 0.18s ease;
+      font-family: var(--sans);
+      font-size: 0.95rem;
+      font-weight: 600;
+      letter-spacing: 0.01em;
     }
 
     a.button-link:hover {
@@ -125,6 +138,13 @@
     a.button-link.primary {
       background: linear-gradient(135deg, var(--accent), #c26941);
       color: #fff;
+    }
+
+    a.button-link.secondary {
+      background: #fff;
+      border-color: rgba(49, 40, 27, 0.12);
+      color: var(--accent-2);
+      box-shadow: 0 10px 24px rgba(31, 36, 48, 0.08);
     }
 
     a.button-link.soft {
@@ -149,9 +169,9 @@
     }
 
     .shell {
-      width: min(1400px, calc(100% - 24px));
+      width: min(1380px, calc(100% - 32px));
       margin: 0 auto;
-      padding: 28px 0 48px;
+      padding: 24px 0 54px;
     }
 
     .page-header {
@@ -161,14 +181,14 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      gap: 16px;
-      padding: 16px 18px;
+      gap: 18px;
+      padding: 14px 18px;
       margin-bottom: 18px;
-      background: rgba(255, 250, 244, 0.78);
+      background: rgba(255, 251, 247, 0.72);
       backdrop-filter: blur(18px);
-      border: 1px solid rgba(49, 40, 27, 0.08);
-      border-radius: 26px;
-      box-shadow: 0 18px 42px rgba(50, 38, 18, 0.1);
+      border: 1px solid rgba(49, 40, 27, 0.07);
+      border-radius: 22px;
+      box-shadow: 0 18px 42px rgba(50, 38, 18, 0.08);
     }
 
     .brand {
@@ -179,15 +199,16 @@
     }
 
     .brand-mark {
-      width: 46px;
-      height: 46px;
-      border-radius: 16px;
+      width: 48px;
+      height: 48px;
+      border-radius: 15px;
       display: grid;
       place-items: center;
       color: #fff;
       font-weight: 700;
-      letter-spacing: 0.08em;
-      background: linear-gradient(135deg, var(--accent), var(--accent-2));
+      letter-spacing: 0.12em;
+      font-family: var(--sans);
+      background: linear-gradient(145deg, #1f3553, #b4563f);
       box-shadow: 0 12px 26px rgba(33, 78, 116, 0.2);
     }
 
@@ -197,14 +218,17 @@
 
     .brand-copy strong {
       display: block;
-      font-size: 1rem;
+      font-size: 1.15rem;
+      letter-spacing: -0.02em;
       color: var(--template-heading);
     }
 
     .brand-copy span {
       display: block;
       color: var(--muted);
-      font-size: 0.92rem;
+      font-size: 0.88rem;
+      font-family: var(--sans);
+      line-height: 1.45;
     }
 
     .header-actions {
@@ -212,7 +236,7 @@
       flex-wrap: wrap;
       justify-content: flex-end;
       align-items: center;
-      gap: 10px;
+      gap: 8px;
     }
 
     .google-btn {
@@ -245,23 +269,25 @@
     .hero {
       position: relative;
       overflow: hidden;
-      background: linear-gradient(135deg, rgba(255, 250, 244, 0.9), rgba(246, 239, 225, 0.86));
+      background:
+        linear-gradient(135deg, rgba(255, 252, 248, 0.95), rgba(244, 236, 223, 0.9)),
+        radial-gradient(circle at top right, rgba(36, 75, 117, 0.08), transparent 32%);
       border: 1px solid rgba(49, 40, 27, 0.08);
-      border-radius: 34px;
+      border-radius: 32px;
       box-shadow: var(--shadow);
-      padding: 28px;
-      margin-bottom: 18px;
+      padding: 40px;
+      margin-bottom: 22px;
     }
 
     .hero::after {
       content: "";
       position: absolute;
-      right: -40px;
-      top: -50px;
-      width: 220px;
-      height: 220px;
+      right: -64px;
+      top: -76px;
+      width: 280px;
+      height: 280px;
       border-radius: 50%;
-      background: radial-gradient(circle, rgba(216, 159, 61, 0.22), transparent 68%);
+      background: radial-gradient(circle, rgba(216, 159, 61, 0.18), transparent 70%);
       pointer-events: none;
     }
 
@@ -270,20 +296,39 @@
       align-items: center;
       gap: 10px;
       border-radius: 999px;
-      padding: 8px 14px;
-      background: rgba(255, 255, 255, 0.8);
+      padding: 7px 12px;
+      background: rgba(255, 255, 255, 0.72);
       color: var(--accent);
-      font-size: 13px;
-      letter-spacing: 0.08em;
+      font-size: 11px;
+      font-family: var(--sans);
+      font-weight: 700;
+      letter-spacing: 0.14em;
       text-transform: uppercase;
     }
 
     .hero-grid {
       display: grid;
-      grid-template-columns: 1.05fr 0.95fr;
-      gap: 24px;
+      grid-template-columns: minmax(0, 1.08fr) minmax(320px, 0.92fr);
+      gap: 40px;
       align-items: stretch;
-      margin-top: 16px;
+      margin-top: 18px;
+    }
+
+    .hero-copy {
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+    }
+
+    .hero-kicker {
+      display: block;
+      margin-top: 20px;
+      font-family: var(--sans);
+      font-size: 0.9rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--accent-2);
     }
 
     h1, h2, h3, p {
@@ -291,67 +336,114 @@
     }
 
     .hero h1 {
-      font-size: clamp(2.5rem, 6vw, 4.9rem);
-      line-height: 0.94;
-      letter-spacing: -0.04em;
-      margin-top: 16px;
-      max-width: 11ch;
+      font-size: clamp(2.9rem, 5.6vw, 5.2rem);
+      line-height: 0.92;
+      letter-spacing: -0.065em;
+      margin-top: 12px;
+      max-width: 12ch;
+    }
+
+    .hero h1 .line {
+      display: block;
+    }
+
+    .hero h1 .line-accent {
+      color: var(--template-heading);
     }
 
     .hero p {
       color: var(--muted);
-      margin-top: 16px;
-      font-size: 1.03rem;
-      max-width: 64ch;
+      margin-top: 18px;
+      font-size: 1.08rem;
+      line-height: 1.85;
+      max-width: 54ch;
+      font-family: var(--sans);
+    }
+
+    .hero-lead {
+      max-width: 28ch;
+    }
+
+    .hero-trust {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 22px;
+    }
+
+    .hero-trust-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 12px;
+      border-radius: 999px;
+      border: 1px solid rgba(49, 40, 27, 0.08);
+      background: rgba(255, 255, 255, 0.72);
+      color: var(--muted);
+      font-family: var(--sans);
+      font-size: 0.82rem;
+      line-height: 1.3;
+    }
+
+    .hero-trust-item strong {
+      color: var(--ink);
+      font-weight: 700;
     }
 
     .hero-actions {
       display: flex;
       flex-wrap: wrap;
       gap: 12px;
-      margin-top: 24px;
+      margin-top: 28px;
     }
 
     .hero-stats {
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 12px;
-      margin-top: 26px;
+      gap: 14px;
+      margin-top: 30px;
     }
 
     .hero-stat {
-      padding: 16px;
+      padding: 18px 18px 16px;
       border-radius: 20px;
       background: rgba(255, 255, 255, 0.72);
       border: 1px solid rgba(49, 40, 27, 0.08);
+      box-shadow: 0 12px 22px rgba(50, 38, 18, 0.04);
     }
 
     .hero-stat strong {
       display: block;
-      font-size: 1.4rem;
+      font-size: 1.75rem;
       color: var(--template-heading);
+      line-height: 1;
+      letter-spacing: -0.04em;
     }
 
     .hero-stat span {
       display: block;
       margin-top: 6px;
       color: var(--muted);
-      font-size: 0.92rem;
+      font-size: 0.84rem;
+      line-height: 1.55;
+      font-family: var(--sans);
     }
 
     .hero-list {
       display: grid;
-      gap: 10px;
-      margin-top: 24px;
+      gap: 12px;
+      margin-top: 26px;
     }
 
     .hero-list-item {
       display: flex;
       align-items: flex-start;
-      gap: 10px;
+      gap: 12px;
       color: var(--ink);
       font-size: 0.96rem;
-      line-height: 1.6;
+      line-height: 1.7;
+      font-family: var(--sans);
+      max-width: 58ch;
     }
 
     .hero-list-item::before {
@@ -371,10 +463,10 @@
     }
 
     .hero-note {
-      background: rgba(255, 255, 255, 0.76);
+      background: rgba(255, 255, 255, 0.82);
       border: 1px solid rgba(49, 40, 27, 0.08);
-      border-radius: 22px;
-      padding: 18px;
+      border-radius: 20px;
+      padding: 18px 18px 19px;
     }
 
     .hero-note strong {
@@ -386,20 +478,20 @@
 
     .hero-preview {
       display: grid;
-      gap: 14px;
-      align-content: space-between;
+      gap: 16px;
+      align-content: start;
       min-height: 100%;
     }
 
     .preview-card {
       position: relative;
       overflow: hidden;
-      padding: 22px;
-      border-radius: 28px;
-      background: linear-gradient(160deg, #1c3147 0%, #2e5979 56%, #d89f3d 160%);
+      padding: 26px;
+      border-radius: 26px;
+      background: linear-gradient(160deg, #18283d 0%, #244b75 56%, #d29b4c 160%);
       color: #f7f4ee;
-      min-height: 310px;
-      box-shadow: 0 24px 54px rgba(33, 78, 116, 0.22);
+      min-height: 336px;
+      box-shadow: 0 24px 54px rgba(24, 40, 61, 0.18);
     }
 
     .preview-card::after {
@@ -417,28 +509,33 @@
       padding: 7px 11px;
       border-radius: 999px;
       background: rgba(255, 255, 255, 0.14);
-      font-size: 12px;
-      letter-spacing: 0.08em;
+      font-size: 11px;
+      font-family: var(--sans);
+      font-weight: 700;
+      letter-spacing: 0.12em;
       text-transform: uppercase;
     }
 
     .preview-card h3 {
-      font-size: 2rem;
-      line-height: 1;
-      letter-spacing: -0.04em;
+      font-size: 2.1rem;
+      line-height: 1.02;
+      letter-spacing: -0.05em;
       margin-top: 18px;
-      max-width: 8ch;
+      max-width: 11ch;
     }
 
     .preview-card p {
       color: rgba(247, 244, 238, 0.82);
-      max-width: 30ch;
+      max-width: 31ch;
+      margin-top: 14px;
+      line-height: 1.75;
+      font-family: var(--sans);
     }
 
     .mini-cv {
-      margin-top: 20px;
-      padding: 16px;
-      border-radius: 22px;
+      margin-top: 22px;
+      padding: 18px;
+      border-radius: 20px;
       background: rgba(255, 255, 255, 0.12);
       border: 1px solid rgba(255, 255, 255, 0.14);
     }
@@ -490,47 +587,184 @@
 
     .feature-strip {
       display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
+      grid-template-columns: repeat(4, minmax(0, 1fr));
       gap: 14px;
       margin-bottom: 18px;
     }
 
+    .home-section {
+      margin-bottom: 20px;
+    }
+
+    .home-section-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+      gap: 18px;
+      margin-bottom: 16px;
+    }
+
+    .home-section-head h2 {
+      font-size: clamp(1.8rem, 3vw, 2.5rem);
+      line-height: 0.96;
+      letter-spacing: -0.05em;
+      max-width: 10ch;
+    }
+
+    .home-section-head p {
+      max-width: 46ch;
+      color: var(--muted);
+      font-family: var(--sans);
+      font-size: 0.96rem;
+      line-height: 1.75;
+    }
+
     .feature-card {
-      padding: 18px;
-      border-radius: 24px;
-      background: rgba(255, 250, 244, 0.84);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 208px;
+      padding: 22px;
+      border-radius: 22px;
+      background: rgba(255, 252, 247, 0.82);
       border: 1px solid rgba(49, 40, 27, 0.08);
-      box-shadow: 0 16px 38px rgba(50, 38, 18, 0.08);
+      box-shadow: 0 16px 38px rgba(50, 38, 18, 0.06);
+      transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease, background 0.18s ease;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-3px);
+      background: rgba(255, 254, 250, 0.94);
+      border-color: rgba(33, 78, 116, 0.16);
+      box-shadow: 0 22px 40px rgba(33, 78, 116, 0.09);
+    }
+
+    .feature-card-top {
+      display: grid;
+      gap: 12px;
+    }
+
+    .feature-card-kicker {
+      display: inline-flex;
+      align-self: flex-start;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.86);
+      border: 1px solid rgba(49, 40, 27, 0.08);
+      color: var(--accent-2);
+      font-family: var(--sans);
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
     }
 
     .feature-card strong {
       display: block;
-      margin-bottom: 8px;
+      margin-bottom: 10px;
       color: var(--template-heading);
+      font-size: 1.15rem;
+      line-height: 1.15;
+      letter-spacing: -0.03em;
     }
 
     .feature-card p {
       color: var(--muted);
-      font-size: 0.94rem;
+      font-size: 0.93rem;
+      line-height: 1.72;
+      font-family: var(--sans);
     }
 
     .feature-card-action {
-      display: inline-block;
-      margin-top: 14px;
-      font-size: 0.88rem;
-      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      align-self: flex-start;
+      margin-top: 20px;
+      font-size: 0.84rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
       color: var(--template-heading);
-      background: rgba(255, 255, 255, 0.72);
-      border: 1px solid rgba(49, 40, 27, 0.14);
-      border-radius: 100px;
-      padding: 6px 14px;
+      background: rgba(255, 255, 255, 0.84);
+      border: 1px solid rgba(49, 40, 27, 0.12);
+      border-radius: 14px;
+      padding: 10px 12px;
       cursor: pointer;
-      transition: background 0.15s, border-color 0.15s;
+      transition: background 0.15s, border-color 0.15s, transform 0.15s, box-shadow 0.15s;
+      font-family: var(--sans);
+      text-decoration: none;
     }
 
     .feature-card-action:hover {
-      background: rgba(255, 255, 255, 0.96);
-      border-color: rgba(49, 40, 27, 0.28);
+      background: #fff;
+      border-color: rgba(33, 78, 116, 0.24);
+      transform: translateX(2px);
+      box-shadow: 0 10px 20px rgba(33, 78, 116, 0.08);
+    }
+
+    .feature-card:hover .feature-card-action {
+      border-color: rgba(33, 78, 116, 0.18);
+    }
+
+    .feature-card:focus-within {
+      transform: translateY(-3px);
+      background: rgba(255, 254, 250, 0.94);
+      border-color: rgba(33, 78, 116, 0.18);
+      box-shadow: 0 22px 40px rgba(33, 78, 116, 0.09);
+    }
+
+    .feature-card-action:focus-visible {
+      outline: 2px solid rgba(33, 78, 116, 0.28);
+      outline-offset: 3px;
+    }
+
+    .home-flow {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+      margin-bottom: 20px;
+    }
+
+    .home-flow-card {
+      padding: 22px;
+      border-radius: 22px;
+      background: rgba(255, 252, 247, 0.82);
+      border: 1px solid rgba(49, 40, 27, 0.08);
+      box-shadow: 0 16px 38px rgba(50, 38, 18, 0.05);
+    }
+
+    .home-flow-step {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--accent), var(--accent-2));
+      color: #fff;
+      font-family: var(--sans);
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+    }
+
+    .home-flow-card h3 {
+      margin-top: 18px;
+      font-size: 1.28rem;
+      line-height: 1.05;
+      letter-spacing: -0.04em;
+      max-width: 11ch;
+    }
+
+    .home-flow-card p {
+      margin-top: 12px;
+      color: var(--muted);
+      font-family: var(--sans);
+      font-size: 0.92rem;
+      line-height: 1.72;
+      max-width: 34ch;
     }
 
 
@@ -541,22 +775,29 @@
       justify-content: space-between;
       align-items: center;
       margin-bottom: 18px;
+      padding: 14px 16px;
+      background: rgba(255, 251, 247, 0.72);
+      border: 1px solid rgba(49, 40, 27, 0.07);
+      border-radius: 20px;
+      box-shadow: 0 14px 32px rgba(50, 38, 18, 0.05);
     }
 
     .topbar-group {
       display: flex;
       flex-wrap: wrap;
-      gap: 10px;
+      gap: 8px;
       align-items: center;
     }
 
     .status-pill {
-      padding: 9px 14px;
+      padding: 8px 12px;
       border-radius: 999px;
-      background: rgba(255, 255, 255, 0.84);
+      background: rgba(255, 255, 255, 0.86);
       border: 1px solid rgba(49, 40, 27, 0.08);
       color: var(--muted);
-      font-size: 14px;
+      font-size: 13px;
+      font-family: var(--sans);
+      line-height: 1.3;
     }
 
     .status-pill strong {
@@ -610,7 +851,7 @@
     .workspace {
       display: grid;
       grid-template-columns: minmax(360px, 460px) minmax(0, 1fr);
-      gap: 18px;
+      gap: 20px;
       align-items: start;
     }
 
@@ -618,7 +859,7 @@
       background: var(--surface);
       backdrop-filter: blur(18px);
       border: 1px solid rgba(49, 40, 27, 0.08);
-      border-radius: 28px;
+      border-radius: 24px;
       box-shadow: var(--shadow);
     }
 
@@ -633,7 +874,7 @@
       justify-content: space-between;
       align-items: center;
       gap: 12px;
-      padding: 20px 22px 14px;
+      padding: 18px 20px 12px;
       border-bottom: 1px solid rgba(49, 40, 27, 0.08);
     }
 
@@ -644,22 +885,25 @@
     }
 
     .section-card {
-      background: rgba(255, 255, 255, 0.78);
+      background: rgba(255, 255, 255, 0.74);
       border: 1px solid rgba(49, 40, 27, 0.08);
-      border-radius: 22px;
+      border-radius: 18px;
       padding: 16px;
       margin-bottom: 14px;
     }
 
     .section-card h3 {
-      font-size: 1.02rem;
+      font-size: 1rem;
       margin-bottom: 12px;
+      letter-spacing: -0.02em;
     }
 
     .section-card p {
       color: var(--muted);
-      font-size: 0.92rem;
+      font-size: 0.9rem;
       margin-bottom: 12px;
+      line-height: 1.7;
+      font-family: var(--sans);
     }
 
     .field-grid {
@@ -683,20 +927,23 @@
 
     .field label {
       font-size: 12px;
-      letter-spacing: 0.05em;
+      letter-spacing: 0.1em;
       text-transform: uppercase;
       color: var(--muted);
+      font-family: var(--sans);
+      font-weight: 700;
     }
 
     .field input,
     .field textarea,
     .field select {
       width: 100%;
-      border-radius: 16px;
+      border-radius: 14px;
       border: 1px solid rgba(49, 40, 27, 0.12);
       background: #fffdfa;
       padding: 12px 14px;
       color: var(--ink);
+      font-family: var(--sans);
     }
 
     .field textarea {
@@ -815,6 +1062,8 @@
     .template-option span {
       color: var(--muted);
       font-size: 13px;
+      line-height: 1.6;
+      font-family: var(--sans);
     }
 
     .mode-grid,
@@ -824,13 +1073,66 @@
       gap: 10px;
     }
 
+    .layout-preset-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+
+    .layout-preset-btn {
+      text-align: left;
+      border-radius: 16px;
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.82);
+      padding: 12px 14px;
+      cursor: pointer;
+      transition: transform 0.16s ease, box-shadow 0.16s ease, border-color 0.16s ease;
+    }
+
+    .layout-preset-btn:hover,
+    .layout-preset-btn.active {
+      transform: translateY(-1px);
+      box-shadow: 0 10px 24px rgba(28, 49, 71, 0.08);
+      border-color: rgba(33, 78, 116, 0.28);
+    }
+
+    .layout-preset-btn strong,
+    .layout-preset-btn span {
+      display: block;
+    }
+
+    .layout-preset-btn span {
+      margin-top: 4px;
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.5;
+    }
+
+    .image-drag-badge {
+      position: absolute;
+      right: 8px;
+      top: 8px;
+      z-index: 2;
+      padding: 4px 8px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.9);
+      border: 1px solid rgba(49, 40, 27, 0.08);
+      color: var(--muted);
+      font-size: 11px;
+      line-height: 1;
+      pointer-events: none;
+      opacity: 0;
+      transition: opacity 0.18s ease;
+    }
+
     .mode-grid {
       grid-template-columns: 1fr 1fr;
     }
 
     .mode-button {
       text-align: left;
-      border-radius: 20px;
+      border-radius: 18px;
       border: 1px solid rgba(49, 40, 27, 0.08);
       background: #fffdf9;
       padding: 14px;
@@ -851,7 +1153,7 @@
 
     .mode-button.active {
       border-color: rgba(33, 78, 116, 0.28);
-      box-shadow: 0 14px 32px rgba(33, 78, 116, 0.12);
+      box-shadow: 0 12px 24px rgba(33, 78, 116, 0.1);
       background: #fff;
     }
 
@@ -951,6 +1253,7 @@
     .avatar {
       width: 104px;
       height: 104px;
+      position: relative;
       border-radius: 28px;
       overflow: hidden;
       background: linear-gradient(135deg, var(--template-accent), var(--accent-3));
@@ -974,7 +1277,23 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
+      object-position: var(--avatar-pos-x, 50%) var(--avatar-pos-y, 50%);
+      transform: scale(var(--avatar-scale, 1));
+      transform-origin: center center;
       display: block;
+      cursor: grab;
+      user-select: none;
+    }
+
+    .avatar img:active {
+      cursor: grabbing;
+    }
+
+    .avatar:hover .image-drag-badge,
+    figure:hover .image-drag-badge,
+    .avatar:focus-within .image-drag-badge,
+    figure:focus-within .image-drag-badge {
+      opacity: 1;
     }
 
     .cv-name {
@@ -1169,6 +1488,17 @@
       font-size: 13px;
     }
 
+    [data-pf-cover-img],
+    [data-pf-section-img] {
+      cursor: grab;
+      user-select: none;
+    }
+
+    [data-pf-cover-img]:active,
+    [data-pf-section-img]:active {
+      cursor: grabbing;
+    }
+
     .cv-paper[data-layout="split-right"] .cv-grid {
       grid-template-columns: 1fr var(--sidebar-width);
     }
@@ -1238,11 +1568,13 @@
     .message {
       margin-top: 14px;
       padding: 14px 16px;
-      border-radius: 18px;
-      background: rgba(255, 255, 255, 0.76);
+      border-radius: 16px;
+      background: rgba(255, 255, 255, 0.78);
       border: 1px solid rgba(49, 40, 27, 0.08);
       color: var(--muted);
       font-size: 14px;
+      line-height: 1.7;
+      font-family: var(--sans);
       white-space: pre-wrap;
     }
 
@@ -1586,10 +1918,84 @@
       background-repeat: repeat-y;
     }
 
+    [data-template="terracotta"] {
+      --template-accent: #b6593f;
+      --template-accent-soft: #f7dfd6;
+      --template-heading: #331b16;
+      --template-sidebar: #faebe4;
+      --template-paper: #fffdfb;
+      --paper-line: #e2bbaf;
+    }
+
+    [data-template="aurora"] {
+      --template-accent: #2d8e8d;
+      --template-accent-soft: #daf3ef;
+      --template-heading: #15363f;
+      --template-sidebar: #e6f7f3;
+      --template-paper: #fafdff;
+      --paper-line: #badfdc;
+    }
+    [data-template="aurora"] .cv-sidebar {
+      background:
+        radial-gradient(circle at 18% 18%, rgba(45,142,141,0.18) 0%, transparent 34%),
+        radial-gradient(circle at 84% 78%, rgba(106,99,202,0.14) 0%, transparent 32%),
+        #e6f7f3;
+    }
+
+    [data-template="graphite"] {
+      --template-accent: #4f5965;
+      --template-accent-soft: #e7ebef;
+      --template-heading: #171c22;
+      --template-sidebar: #eef1f4;
+      --template-paper: #fcfdfe;
+      --paper-line: #c9d1d8;
+    }
+
+    [data-template="mint"] {
+      --template-accent: #2e8b6d;
+      --template-accent-soft: #daf4e9;
+      --template-heading: #153127;
+      --template-sidebar: #e5f8ef;
+      --template-paper: #fbfffd;
+      --paper-line: #bde2d1;
+    }
+    [data-template="mint"] .cv-main {
+      background:
+        linear-gradient(180deg, rgba(46,139,109,0.035) 0%, rgba(46,139,109,0) 18%),
+        #fbfffd;
+    }
+
+    [data-template="ruby"] {
+      --template-accent: #a63e56;
+      --template-accent-soft: #f7dde5;
+      --template-heading: #32141d;
+      --template-sidebar: #fbe9ee;
+      --template-paper: #fffdfd;
+      --paper-line: #dfbcc6;
+    }
+
+    [data-template="celestial"] {
+      --template-accent: #445fc7;
+      --template-accent-soft: #e1e7fb;
+      --template-heading: #162043;
+      --template-sidebar: #e8edff;
+      --template-paper: #fbfcff;
+      --paper-line: #c2ccf1;
+    }
+    [data-template="celestial"] .cv-sidebar {
+      background-color: #e8edff;
+      background-image:
+        radial-gradient(circle at 18px 18px, rgba(68,95,199,0.16) 0 2px, transparent 2.4px),
+        radial-gradient(circle at 68px 48px, rgba(68,95,199,0.12) 0 1.6px, transparent 2px),
+        radial-gradient(circle at 110px 26px, rgba(68,95,199,0.10) 0 1.8px, transparent 2.2px);
+      background-size: 140px 90px;
+    }
+
     @media (max-width: 1100px) {
       .workspace,
       .hero-grid,
       .feature-strip,
+      .home-flow,
       .hero-stats {
         grid-template-columns: 1fr;
       }
@@ -1619,6 +2025,23 @@
       .brand,
       .hero-actions {
         width: 100%;
+      }
+
+      .home-section-head {
+        align-items: start;
+      }
+
+      .hero {
+        padding: 28px 22px;
+      }
+
+      .hero-trust {
+        gap: 8px;
+      }
+
+      .hero-trust-item {
+        width: 100%;
+        justify-content: space-between;
       }
 
       .header-actions {
@@ -1679,24 +2102,27 @@
     /* ===== APP TABS ===== */
     .app-tabs {
       display: flex;
-      gap: 4px;
-      padding: 5px;
-      background: rgba(255,250,244,0.82);
+      gap: 6px;
+      padding: 6px;
+      background: rgba(255,251,247,0.76);
       backdrop-filter: blur(18px);
       border: 1px solid rgba(49,40,27,0.08);
       border-radius: 18px;
       margin-bottom: 20px;
       width: fit-content;
+      box-shadow: 0 14px 28px rgba(50, 38, 18, 0.05);
     }
 
     .app-tab {
-      padding: 9px 22px;
-      border-radius: 13px;
+      padding: 10px 18px;
+      border-radius: 14px;
       border: 1px solid transparent;
       background: transparent;
       color: var(--muted);
-      font-size: 14px;
-      font-weight: 500;
+      font-size: 13px;
+      font-family: var(--sans);
+      font-weight: 700;
+      letter-spacing: 0.06em;
       cursor: pointer;
       transition: all 0.15s ease;
     }
@@ -1712,11 +2138,15 @@
       background: #fff;
       color: var(--ink);
       border-color: rgba(49,40,27,0.09);
-      box-shadow: 0 2px 8px rgba(50,38,18,0.08);
+      box-shadow: 0 8px 18px rgba(50,38,18,0.07);
     }
 
     .app-page { display: none; }
-    .app-page.active { display: block; }
+    #page-home.app-page { display: block; }
+    body:has(.app-page.active) .app-page { display: none; }
+    body:has(.app-page.active) .app-page.active { display: block; }
+    body:has(.app-page:target) .app-page { display: none; }
+    body:has(.app-page:target) .app-page:target { display: block; }
 
     /* ===== PORTFOLIO WORKSPACE ===== */
     .portfolio-workspace {
@@ -1724,6 +2154,92 @@
       grid-template-columns: minmax(360px, 460px) minmax(0, 1fr);
       gap: 20px;
       align-items: start;
+    }
+
+    .portfolio-hero {
+      position: relative;
+      overflow: hidden;
+      padding: 28px 30px;
+      margin-bottom: 16px;
+      background:
+        linear-gradient(135deg, rgba(255, 252, 248, 0.94), rgba(244, 236, 223, 0.9)),
+        radial-gradient(circle at top right, rgba(36, 75, 117, 0.08), transparent 30%);
+      border: 1px solid rgba(49, 40, 27, 0.08);
+      border-radius: 28px;
+      box-shadow: var(--shadow);
+    }
+
+    .portfolio-hero::after {
+      content: "";
+      position: absolute;
+      right: -56px;
+      top: -72px;
+      width: 240px;
+      height: 240px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(36, 75, 117, 0.14), transparent 68%);
+      pointer-events: none;
+    }
+
+    .portfolio-hero-grid {
+      position: relative;
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(260px, 0.9fr);
+      gap: 26px;
+      align-items: end;
+    }
+
+    .portfolio-hero-copy h1 {
+      margin-top: 14px;
+      font-size: clamp(2.3rem, 4.4vw, 4rem);
+      line-height: 0.94;
+      letter-spacing: -0.05em;
+      max-width: 9ch;
+      text-wrap: balance;
+    }
+
+    .portfolio-hero-copy p {
+      margin-top: 16px;
+      max-width: 58ch;
+      color: var(--muted);
+      font-family: var(--sans);
+      font-size: 1rem;
+      line-height: 1.8;
+    }
+
+    .portfolio-hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 24px;
+    }
+
+    .portfolio-hero-meta {
+      display: grid;
+      gap: 12px;
+    }
+
+    .portfolio-meta-card {
+      padding: 16px 18px;
+      border-radius: 18px;
+      background: rgba(255, 255, 255, 0.72);
+      border: 1px solid rgba(49, 40, 27, 0.08);
+    }
+
+    .portfolio-meta-card strong {
+      display: block;
+      margin-bottom: 6px;
+      color: var(--template-heading);
+      font-size: 0.98rem;
+      letter-spacing: -0.02em;
+    }
+
+    .portfolio-meta-card span {
+      display: block;
+      color: var(--muted);
+      font-family: var(--sans);
+      font-size: 0.88rem;
+      line-height: 1.65;
     }
 
     .portfolio-editor-panel {
@@ -1803,16 +2319,84 @@
     .pf-template-grid {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 8px;
+      gap: 10px;
+    }
+
+    .pf-template-strip {
+      display: flex;
+      gap: 10px;
+      overflow-x: auto;
+      padding-bottom: 4px;
+      margin-top: 14px;
+    }
+
+    .pf-template-strip::-webkit-scrollbar { height: 4px; }
+    .pf-template-strip::-webkit-scrollbar-track { background: transparent; }
+    .pf-template-strip::-webkit-scrollbar-thumb { background: rgba(49, 40, 27, 0.18); border-radius: 999px; }
+
+    .pf-template-chip {
+      min-width: 220px;
+      padding: 12px;
+      border-radius: 18px;
+      border: 1px solid rgba(49, 40, 27, 0.1);
+      background: rgba(255,255,255,0.76);
+      text-align: left;
+      transition: border-color 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
+    }
+
+    .pf-template-chip:hover {
+      border-color: rgba(33, 78, 116, 0.26);
+      box-shadow: 0 10px 24px rgba(33, 78, 116, 0.08);
+      transform: none;
+    }
+
+    .pf-template-chip.active {
+      border-color: rgba(33, 78, 116, 0.24);
+      background: #fff;
+      box-shadow: 0 14px 26px rgba(33, 78, 116, 0.1);
+    }
+
+    .pf-template-chip .pf-color-swatch {
+      height: 34px;
+      margin-bottom: 10px;
+    }
+
+    .pf-template-chip strong,
+    .pf-template-option strong {
+      display: block;
+      color: var(--ink);
+      font-family: var(--sans);
+      font-size: 0.86rem;
+      letter-spacing: -0.01em;
+    }
+
+    .pf-template-chip span,
+    .pf-template-option span {
+      display: block;
+      margin-top: 5px;
+      color: var(--muted);
+      font-size: 0.76rem;
+      line-height: 1.6;
+      font-family: var(--sans);
+    }
+
+    .pf-template-chip-meta {
+      margin-top: 10px;
+      font-size: 0.68rem;
+      line-height: 1.5;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: rgba(95, 102, 117, 0.85);
+      font-family: var(--sans);
     }
 
     .pf-template-option {
-      border: 2px solid transparent;
+      border: 1px solid rgba(49, 40, 27, 0.1);
       border-radius: 16px;
-      padding: 10px;
+      padding: 12px;
       cursor: pointer;
       text-align: left;
-      background: rgba(255,255,255,0.55);
+      background: rgba(255,255,255,0.7);
       transition: all 0.15s ease;
     }
 
@@ -1831,18 +2415,14 @@
       margin-bottom: 8px;
     }
 
-    .pf-template-option strong {
-      font-size: 12px;
-      display: block;
-      color: var(--ink);
-    }
-
-    .pf-template-option span {
-      display: block;
-      margin-top: 4px;
-      font-size: 11px;
+    .pf-template-option-meta {
+      margin-top: 10px;
+      font-size: 0.68rem;
       line-height: 1.55;
-      color: var(--muted);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: rgba(95, 102, 117, 0.82);
+      font-family: var(--sans);
     }
 
     .pf-preset-row {
@@ -1856,6 +2436,66 @@
       font-size: 13px;
       line-height: 1.65;
       color: var(--muted);
+      font-family: var(--sans);
+    }
+
+    .pf-content-preset-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+    }
+
+    .pf-content-preset-btn {
+      text-align: left;
+      border-radius: 18px;
+      border: 1px solid rgba(49, 40, 27, 0.1);
+      background: rgba(255,255,255,0.72);
+      padding: 14px;
+    }
+
+    .pf-content-preset-btn:hover {
+      border-color: rgba(33, 78, 116, 0.24);
+      background: #fff;
+      transform: none;
+    }
+
+    .pf-content-preset-btn strong {
+      display: block;
+      font-size: 0.9rem;
+      font-family: var(--sans);
+      margin-bottom: 6px;
+      color: var(--ink);
+    }
+
+    .pf-content-preset-btn span {
+      display: block;
+      font-size: 0.8rem;
+      line-height: 1.65;
+      color: var(--muted);
+      font-family: var(--sans);
+    }
+
+    .pf-theme-status {
+      margin-top: 14px;
+      padding: 14px 16px;
+      border-radius: 18px;
+      background: rgba(255,255,255,0.72);
+      border: 1px solid rgba(49, 40, 27, 0.08);
+    }
+
+    .pf-theme-status strong {
+      display: block;
+      color: var(--template-heading);
+      font-size: 0.98rem;
+      letter-spacing: -0.02em;
+    }
+
+    .pf-theme-status p {
+      margin: 8px 0 0;
+      color: var(--muted);
+      font-size: 0.88rem;
+      line-height: 1.75;
+      font-family: var(--sans);
     }
 
     /* ===== PORTFOLIO TOOLS ===== */
@@ -1924,6 +2564,21 @@
       gap: 16px;
       align-items: center;
       padding-bottom: 40px;
+    }
+
+    .portfolio-preview-shell {
+      overflow-y: auto;
+      max-height: calc(100vh - 80px);
+      padding: 0 4px;
+    }
+
+    .portfolio-preview-topnote {
+      margin: 0 0 10px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.7;
+      font-family: var(--sans);
     }
 
     .pf-page {
@@ -1996,8 +2651,11 @@
     }
 
     @media (max-width: 960px) {
+      .portfolio-hero-grid { grid-template-columns: 1fr; }
       .portfolio-workspace { grid-template-columns: 1fr; }
       .portfolio-editor-panel { position: static; max-height: none; }
+      .portfolio-preview-shell { max-height: none; }
+      .pf-content-preset-grid { grid-template-columns: 1fr; }
     }
 
     /* ===== WYSIWYG MODE: hide left editor, full-width preview ===== */
@@ -2007,11 +2665,10 @@
     .editor-panel {
       display: none !important;
     }
-    .portfolio-workspace,
     .persona-workspace {
       grid-template-columns: 1fr !important;
     }
-    .portfolio-editor-panel,
+    .persona-editor-panel,
     .persona-editor-panel {
       display: none !important;
     }
@@ -2340,11 +2997,13 @@
     }
     .pf-inline-add-btn {
       padding: 10px 16px;
-      border-radius: 999px;
+      border-radius: 16px;
       border: 1px dashed rgba(49, 40, 27, 0.22);
       background: rgba(255,255,255,0.82);
       color: var(--ink);
       cursor: pointer;
+      font-family: var(--sans);
+      font-weight: 700;
     }
     .pf-inline-add-btn:hover {
       background: #fff;
@@ -3254,7 +3913,7 @@
         <div class="brand-mark">CV</div>
         <div class="brand-copy">
           <strong>CV Studio</strong>
-          <span>用漂亮版型把履歷整理成可登入、可儲存、可下載的作品頁。</span>
+          <span>把履歷整理成清楚、有版式感、可直接匯出的個人頁。</span>
         </div>
       </div>
       <div class="header-actions">
@@ -3279,23 +3938,32 @@
     </header>
 
     <nav class="app-tabs">
-      <button class="app-tab active" data-tab="home" type="button">主畫面</button>
-      <button class="app-tab" data-tab="cv" type="button">CV 履歷</button>
-      <button class="app-tab" data-tab="portfolio" type="button">學習歷程</button>
+      <a class="app-tab active" data-tab="home" href="#page-home">主畫面</a>
+      <a class="app-tab" data-tab="cv" href="#page-cv">CV 履歷</a>
+      <a class="app-tab" data-tab="portfolio" href="#page-portfolio">學習歷程</a>
     </nav>
 
     <div id="page-home" class="app-page active">
     <section class="hero panel">
-      <div class="eyebrow">CV Studio / Web + App</div>
+      <div class="eyebrow">CV Studio / Editorial Resume Builder</div>
       <div class="hero-grid">
-        <div>
-          <h1>快速做出可編輯、可儲存、可下載的履歷。</h1>
-          <p>
-            CV Studio 幫使用者把履歷整理成清楚的版面，支援套用模板、即時預覽、Google 登入同步，以及匯出 PDF。打開首頁就能知道這個產品能做什麼，也能立刻開始。
+        <div class="hero-copy">
+          <span class="hero-kicker">Resume, Portfolio, Export</span>
+          <h1>
+            <span class="line">把內容整理好，</span>
+            <span class="line line-accent">把版面做漂亮。</span>
+          </h1>
+          <p class="hero-lead">
+            CV Studio 把內容編輯、模板切換、即時預覽和 PDF 匯出整合成一條清楚流程。你不用先學排版，也能快速做出一份乾淨、有說服力、可以直接送出的履歷與學習歷程。
           </p>
+          <div class="hero-trust">
+            <div class="hero-trust-item"><strong>即時預覽</strong><span>邊改邊看結果</span></div>
+            <div class="hero-trust-item"><strong>可切模板</strong><span>同內容快速比稿</span></div>
+            <div class="hero-trust-item"><strong>直接輸出</strong><span>PDF 與雲端同步</span></div>
+          </div>
           <div class="hero-actions">
-            <button id="startEditingBtn" class="primary" type="button">開始編輯履歷</button>
-            <button id="goPortfolioBtn" class="secondary" type="button">查看學習歷程</button>
+            <a id="startEditingBtn" class="button-link primary" href="#page-cv">開始編輯履歷</a>
+            <a id="goPortfolioBtn" class="button-link secondary" href="#page-portfolio">查看學習歷程</a>
             <a class="canva-btn button-link" href="https://www.canva.com/" data-canva-trigger target="_blank" rel="noreferrer noopener">
               <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
                 <path fill="currentColor" d="M12 2.5c4.9 0 8.95 3.35 8.95 8.59 0 5.53-4.24 10.41-9.82 10.41-4.73 0-8.08-3.48-8.08-7.77 0-4.81 3.81-8.84 8.78-8.84 2.12 0 3.97.74 5.34 2.05l-1.76 1.92c-.98-.92-2.09-1.41-3.48-1.41-3.14 0-5.6 2.59-5.6 5.96 0 2.78 1.95 5.31 4.93 5.31 2.89 0 5.16-2.76 5.16-6.06 0-3.14-2.02-5.66-4.8-5.66-1.53 0-2.79.81-3.67 2.05l-2.1-1.31C7.02 4.42 9.24 2.5 12 2.5Z"/>
@@ -3313,31 +3981,17 @@
             </a>
             <button id="startTourBtn" class="soft" type="button">✦ 功能導覽</button>
           </div>
-          <div class="hero-list">
-            <div class="hero-list-item">用模板快速建立履歷，不用從空白頁開始。</div>
-            <div class="hero-list-item">修改內容時右側即時預覽，排版變化一眼看懂。</div>
-            <div class="hero-list-item">登入後可同步雲端，完成後直接下載 PDF 投遞。</div>
-          </div>
-          <div class="hero-stats">
-            <div class="hero-stat">
-              <strong>24 種</strong>
-              <span>可直接套用的履歷模板</span>
-            </div>
-            <div class="hero-stat">
-              <strong>即時</strong>
-              <span>編輯後立即更新預覽</span>
-            </div>
-            <div class="hero-stat">
-              <strong>Google</strong>
-              <span>登入後同步你的履歷</span>
-            </div>
-          </div>
+          <div class="hero-list" id="homeHeroList"></div>
+          <div class="hero-stats" id="homeHeroStats"></div>
         </div>
         <div class="hero-preview">
           <div class="preview-card">
-            <span class="preview-card-label">Product Preview</span>
-            <h3>一個地方完成履歷整理、排版與匯出</h3>
-            <p>首頁先說清楚功能，再把使用者帶到編輯器，流程更直覺。</p>
+            <span class="preview-card-label">Live Preview</span>
+            <h3>
+              <span class="line">內容、版型、輸出，</span>
+              <span class="line">在同一個畫面完成</span>
+            </h3>
+            <p>首屏先說清楚產品價值，再把使用者帶到最短的開始路徑，降低理解成本。</p>
             <div class="mini-cv">
               <div class="mini-cv-head">
                 <div class="mini-avatar">CW</div>
@@ -3354,38 +4008,53 @@
           <div class="preview-flow">
             <div class="hero-note">
               <strong>適合誰</strong>
-              想快速整理求職履歷、學生申請資料，或需要一份能立刻匯出 PDF 的個人頁面。
+              想快速整理求職履歷、申請資料，或需要一份看起來俐落又能立刻輸出的個人頁。
             </div>
             <div class="hero-note">
               <strong>你會得到什麼</strong>
-              一份版面整齊、可切換模板、可儲存到雲端的履歷成品。
+              一份版面清楚、文字有節奏、可切模板並能同步儲存的履歷成品。
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="feature-strip">
-      <article class="feature-card">
-        <strong>CV 履歷編輯器</strong>
-        <p>即時編輯、切換模板，填完就能直接下載 PDF。</p>
-        <button class="feature-card-action" data-guide-tab="cv" type="button">前往編輯 →</button>
-      </article>
-      <article class="feature-card">
-        <strong>學習歷程作品集</strong>
-        <p>記錄課程、專案與成果，自動產生可分享的學習歷程頁面。</p>
-        <button class="feature-card-action" data-guide-tab="portfolio" type="button">前往學習歷程 →</button>
-      </article>
-      <article class="feature-card">
-        <strong>下載 PDF</strong>
-        <p>一鍵將履歷轉成排版精確的 PDF，直接投遞或列印。</p>
-        <button class="feature-card-action" data-guide-tab="cv" data-guide-action="download" type="button">前往下載 →</button>
-      </article>
-      <article class="feature-card">
-        <strong>Google 雲端同步</strong>
-        <p>登入後自動儲存，換裝置也能繼續編輯，不怕資料遺失。</p>
-        <button class="feature-card-action" data-guide-action="login" type="button">如何登入 →</button>
-      </article>
+    <section class="home-section">
+      <div class="home-section-head">
+        <div>
+          <div class="eyebrow">Start Here</div>
+          <h2>先選入口，再開始做第一版。</h2>
+        </div>
+        <p>首頁下方保留最常用的操作入口，讓使用者可以直接進入履歷、學習歷程、下載或同步，而不是先被大量說明卡住。</p>
+      </div>
+      <section class="feature-strip" id="homeFeatureStrip"></section>
+    </section>
+
+    <section class="home-section">
+      <div class="home-section-head">
+        <div>
+          <div class="eyebrow">Workflow</div>
+          <h2>三個步驟，把內容變成能送出的版本。</h2>
+        </div>
+        <p>首頁不只講功能，也應該幫使用者理解接下來的節奏，降低第一次使用時的不確定感。</p>
+      </div>
+      <div class="home-flow">
+        <article class="home-flow-card">
+          <div class="home-flow-step">01</div>
+          <h3>先選 CV 或學習歷程</h3>
+          <p>如果你要快速投遞，就先進 CV；如果你要整理章節、圖片和反思內容，就進學習歷程。</p>
+        </article>
+        <article class="home-flow-card">
+          <div class="home-flow-step">02</div>
+          <h3>邊寫邊切模板比對</h3>
+          <p>同一份內容可以快速切換版型，觀察哪一種層級、字體與節奏最適合你的資料。</p>
+        </article>
+        <article class="home-flow-card">
+          <div class="home-flow-step">03</div>
+          <h3>完成後直接輸出或同步</h3>
+          <p>確認內容和版面後，就能下載 PDF、列印，或登入後把目前版本同步到雲端。</p>
+        </article>
+      </div>
     </section>
     </div><!-- /page-home -->
 
@@ -3426,22 +4095,7 @@
     <div class="cv-studio-bar" id="cvStudioBar">
       <div class="cv-studio-section">
         <span class="cv-studio-label">依職位推薦模板</span>
-        <div class="job-role-row" id="jobRoleBar">
-          <button class="job-chip" type="button" data-job="software">💻 軟體工程師</button>
-          <button class="job-chip" type="button" data-job="frontend">🖥 前端 / 全端</button>
-          <button class="job-chip" type="button" data-job="data">📊 資料科學</button>
-          <button class="job-chip" type="button" data-job="ux">🎨 UX / 產品設計</button>
-          <button class="job-chip" type="button" data-job="pm">🗂 產品經理</button>
-          <button class="job-chip" type="button" data-job="marketing">📣 行銷 / 品牌</button>
-          <button class="job-chip" type="button" data-job="research">🔬 學術研究</button>
-          <button class="job-chip" type="button" data-job="education">📚 教育 / 老師</button>
-          <button class="job-chip" type="button" data-job="healthcare">🏥 醫療 / 護理</button>
-          <button class="job-chip" type="button" data-job="finance">💰 金融 / 財務</button>
-          <button class="job-chip" type="button" data-job="legal">⚖ 法律 / 顧問</button>
-          <button class="job-chip" type="button" data-job="architecture">🏛 建築 / 工藝</button>
-          <button class="job-chip" type="button" data-job="creative">🎭 藝術 / 創意</button>
-          <button class="job-chip" type="button" data-job="hr">👥 人資 / 管理</button>
-        </div>
+        <div class="job-role-row" id="jobRoleBar"></div>
       </div>
       <div class="cv-studio-section">
         <span class="cv-studio-label">模板選擇（點選即時套用）</span>
@@ -3563,17 +4217,7 @@
                 </div>
                 <div class="field">
                   <label>預設模板</label>
-                  <select id="defaultTemplateSelect">
-                    <option value="n-tech">Academic Warm 學術暖調</option>
-                    <option value="slate">Slate 專業藍</option>
-                    <option value="mono">Mono 簡潔灰</option>
-                    <option value="serif-ivory">Serif Ivory 象牙文藝</option>
-                    <option value="forest">Forest 研究綠</option>
-                    <option value="rose">Rose 品牌粉</option>
-                    <option value="midnight">Midnight 深藍商務</option>
-                    <option value="sand">Sand 柔和米色</option>
-                    <option value="plum">Plum 沉穩紫棕</option>
-                  </select>
+                  <select id="defaultTemplateSelect"></select>
                 </div>
               </div>
               <div class="setup-actions">
@@ -3614,140 +4258,33 @@
           <div class="section-card" id="cvTemplateSection">
             <h3>模板</h3>
             <p id="templateSectionHint">目前可先挑一個模板開始編輯；之後切到別的模板時，已輸入資料會自動重新排進新模板。</p>
-            <div class="template-grid" id="templateGrid">
-              <button class="template-option active" type="button" data-template-option="n-tech" style="--swatch-sidebar:#f6ecdf;--swatch-paper:#fffefb;--swatch-accent-soft:#f7e1da;">
-                <div class="template-swatch"><div></div><div></div></div>
-                <strong>Academic Warm</strong>
-                <span>研究型、溫潤、敘事感</span>
-              </button>
-              <button class="template-option" type="button" data-template-option="slate" style="--swatch-sidebar:#e8f0f5;--swatch-paper:#fbfdff;--swatch-accent-soft:#ddeaf3;">
-                <div class="template-swatch"><div></div><div></div></div>
-                <strong>Slate</strong>
-                <span>專業、科技、企業感</span>
-              </button>
-              <button class="template-option" type="button" data-template-option="mono" style="--swatch-sidebar:#f1f1ee;--swatch-paper:#fffefc;--swatch-accent-soft:#eceff1;">
-                <div class="template-swatch"><div></div><div></div></div>
-                <strong>Mono</strong>
-                <span>乾淨、極簡、列印穩定</span>
-              </button>
-              <button class="template-option" type="button" data-template-option="serif-ivory" style="--swatch-sidebar:#f8f0e5;--swatch-paper:#fffdf8;--swatch-accent-soft:#f4e7d8;">
-                <div class="template-swatch"><div></div><div></div></div>
-                <strong>Serif Ivory</strong>
-                <span>文藝、編排感、閱讀友善</span>
-              </button>
-              <button class="template-option" type="button" data-template-option="forest" style="--swatch-sidebar:#e9f4ef;--swatch-paper:#fbfefc;--swatch-accent-soft:#dceee7;">
-                <div class="template-swatch"><div></div><div></div></div>
-                <strong>Forest</strong>
-                <span>研究、理性、專題導向</span>
-              </button>
-              <button class="template-option" type="button" data-template-option="rose" style="--swatch-sidebar:#fdf0f4;--swatch-paper:#fffdfd;--swatch-accent-soft:#f9dfe7;">
-                <div class="template-swatch"><div></div><div></div></div>
-                <strong>Rose</strong>
-                <span>品牌、親和、作品展示感</span>
-              </button>
-              <button class="template-option" type="button" data-template-option="midnight" style="--swatch-sidebar:#e8eefb;--swatch-paper:#fbfcff;--swatch-accent-soft:#dde6fb;">
-                <div class="template-swatch"><div></div><div></div></div>
-                <strong>Midnight</strong>
-                <span>商務、穩重、管理職感</span>
-              </button>
-              <button class="template-option" type="button" data-template-option="sand" style="--swatch-sidebar:#faf1e4;--swatch-paper:#fffdfa;--swatch-accent-soft:#f6e6d0;">
-                <div class="template-swatch"><div></div><div></div></div>
-                <strong>Sand</strong>
-                <span>柔和、簡報感、敘事清楚</span>
-              </button>
-              <button class="template-option" type="button" data-template-option="plum" style="--swatch-sidebar:#f4ecf7;--swatch-paper:#fffdfd;--swatch-accent-soft:#eadcf0;">
-                <div class="template-swatch"><div></div><div></div></div>
-                <strong>Plum</strong>
-                <span>成熟、設計感、辨識度高</span>
-              </button>
-              <button class="template-option" type="button" data-template-option="ocean" style="--swatch-sidebar:#e0f2f6;--swatch-paper:#f7fdfe;--swatch-accent-soft:#d6eef2;">
-                <div class="template-swatch"><div></div><div></div></div>
-                <strong>Ocean</strong>
-                <span>科技、數據、清晰理性</span>
-              </button>
-              <button class="template-option" type="button" data-template-option="ember" style="--swatch-sidebar:#fdecd8;--swatch-paper:#fffaf5;--swatch-accent-soft:#fde8d8;">
-                <div class="template-swatch"><div></div><div></div></div>
-                <strong>Ember</strong>
-                <span>創意、活力、品牌感強</span>
-              </button>
-              <button class="template-option" type="button" data-template-option="noir" style="--swatch-sidebar:#f0f0ed;--swatch-paper:#fffffe;--swatch-accent-soft:#e8e8e5;">
-                <div class="template-swatch"><div></div><div></div></div>
-                <strong>Noir</strong>
-                <span>極簡、俐落、高對比</span>
-              </button>
-              <button class="template-option" type="button" data-template-option="sage" style="--swatch-sidebar:#e5f0ec;--swatch-paper:#fafefb;--swatch-accent-soft:#dceee9;">
-                <div class="template-swatch"><div></div><div></div></div>
-                <strong>Sage</strong>
-                <span>自然、沉穩、醫療學術感</span>
-              </button>
-              <button class="template-option" type="button" data-template-option="coral" style="--swatch-sidebar:#fdeae3;--swatch-paper:#fffcfb;--swatch-accent-soft:#fce4dc;">
-                <div class="template-swatch"><div></div><div></div></div>
-                <strong>Coral</strong>
-                <span>親切、教育、服務業感</span>
-              </button>
-              <button class="template-option" type="button" data-template-option="cobalt" style="--swatch-sidebar:#e4eaf8;--swatch-paper:#fbfcff;--swatch-accent-soft:#dce4f8;">
-                <div class="template-swatch"><div></div><div></div></div>
-                <strong>Cobalt</strong>
-                <span>工程、顧問、結構清楚</span>
-              </button>
-              <button class="template-option" type="button" data-template-option="dusk" style="--swatch-sidebar:#f2e8f4;--swatch-paper:#fefcff;--swatch-accent-soft:#f0e4f0;">
-                <div class="template-swatch"><div></div><div></div></div>
-                <strong>Dusk</strong>
-                <span>UX、產品、視覺設計感</span>
-              </button>
-              <button class="template-option" type="button" data-template-option="copper" style="--swatch-sidebar:#f7e8d5;--swatch-paper:#fffdf8;--swatch-accent-soft:#f5e4d0;">
-                <div class="template-swatch"><div></div><div></div></div>
-                <strong>Copper</strong>
-                <span>建築、藝術、工藝質感</span>
-              </button>
-              <button class="template-option" type="button" data-template-option="linen" style="--swatch-sidebar:#f2f2f6;--swatch-paper:#fefeff;--swatch-accent-soft:#e8e8f0;">
-                <div class="template-swatch"><div></div><div></div></div>
-                <strong>Linen</strong>
-                <span>學術、法律、正式文件感</span>
-              </button>
-              <button class="template-option" type="button" data-template-option="botanical" style="--swatch-sidebar:#e4f0ea;--swatch-paper:#f9fdfa;--swatch-accent-soft:#d8ede5;">
-                <div class="template-swatch"><div></div><div></div></div>
-                <strong>Botanical</strong>
-                <span>植物花紋、自然、手繪感</span>
-              </button>
-              <button class="template-option" type="button" data-template-option="geometric" style="--swatch-sidebar:#1e3a6e;--swatch-paper:#fafbff;--swatch-accent-soft:#d8eef2;">
-                <div class="template-swatch"><div></div><div></div></div>
-                <strong>Geometric</strong>
-                <span>深藍菱格、幾何、科技感</span>
-              </button>
-              <button class="template-option" type="button" data-template-option="blueprint" style="--swatch-sidebar:#162f5e;--swatch-paper:#f5f8ff;--swatch-accent-soft:#dce8f8;">
-                <div class="template-swatch"><div></div><div></div></div>
-                <strong>Blueprint</strong>
-                <span>藍圖點陣、工程、製圖感</span>
-              </button>
-              <button class="template-option" type="button" data-template-option="ornate" style="--swatch-sidebar:#faf4e8;--swatch-paper:#fffdf6;--swatch-accent-soft:#f5ead2;">
-                <div class="template-swatch"><div></div><div></div></div>
-                <strong>Ornate</strong>
-                <span>古典金框、角落花飾</span>
-              </button>
-              <button class="template-option" type="button" data-template-option="watercolor" style="--swatch-sidebar:#eceef8;--swatch-paper:#fdfeff;--swatch-accent-soft:#e4e8f8;">
-                <div class="template-swatch"><div></div><div></div></div>
-                <strong>Watercolor</strong>
-                <span>水彩暈染、藝術、渲染感</span>
-              </button>
-              <button class="template-option" type="button" data-template-option="flourish" style="--swatch-sidebar:#f7eef6;--swatch-paper:#fefcff;--swatch-accent-soft:#f0e2ee;">
-                <div class="template-swatch"><div></div><div></div></div>
-                <strong>Flourish</strong>
-                <span>花邊藤蔓、優雅、手工感</span>
-              </button>
-            </div>
+            <div class="template-grid" id="templateGrid"></div>
           </div>
 
           <div class="section-card" id="cvLayoutSection">
             <h3>版面微調</h3>
-            <p>選取右側預覽中的任一區塊後，可以調整字級、內距、欄位位置與區塊順序。</p>
+            <p>可先套用排版預設，再細調欄位、字級、頭像位置與區塊順序。</p>
             <div class="editor-tools">
+              <div class="editor-tool">
+                <strong>快速排版預設</strong>
+                <span>一鍵切換成常見履歷版型，再依需求微調。</span>
+                <div class="layout-preset-grid" id="layoutPresetGrid"></div>
+              </div>
               <div class="editor-tool">
                 <strong>當前選取區塊</strong>
                 <span id="selectedBlockLabel">尚未選取，請點右側預覽中的區塊。</span>
               </div>
               <div class="editor-tool">
                 <strong>模板整體排版</strong>
+                <div class="field-inline">
+                  <label for="layoutModeSelect">版面結構</label>
+                  <select id="layoutModeSelect">
+                    <option value="split-left">左側欄</option>
+                    <option value="split-right">右側欄</option>
+                    <option value="balanced">均衡雙欄</option>
+                    <option value="stacked">上下堆疊</option>
+                  </select>
+                </div>
                 <div class="field-inline">
                   <label for="sidebarWidthRange">側欄寬度</label>
                   <input id="sidebarWidthRange" type="range" min="220" max="360" step="4" />
@@ -3767,6 +4304,39 @@
                     <option value="sans">Sans 俐落</option>
                     <option value="display">Display 雜誌感</option>
                   </select>
+                </div>
+                <div class="field-inline">
+                  <label for="profileAlignSelect">檔頭對齊</label>
+                  <select id="profileAlignSelect">
+                    <option value="left">靠左</option>
+                    <option value="center">置中</option>
+                  </select>
+                </div>
+                <div class="field-inline">
+                  <label for="avatarShapeSelect">頭像外框</label>
+                  <select id="avatarShapeSelect">
+                    <option value="rounded">圓角方形</option>
+                    <option value="circle">圓形</option>
+                  </select>
+                </div>
+              </div>
+              <div class="editor-tool">
+                <strong>圖片微調</strong>
+                <span>可調整 CV 頭像顯示位置與縮放，也可直接在右側預覽拖動圖片，雙擊重設。</span>
+                <div class="field-inline">
+                  <label for="avatarPosXRange">水平位置</label>
+                  <input id="avatarPosXRange" type="range" min="0" max="100" step="1" />
+                </div>
+                <div class="field-inline">
+                  <label for="avatarPosYRange">垂直位置</label>
+                  <input id="avatarPosYRange" type="range" min="0" max="100" step="1" />
+                </div>
+                <div class="field-inline">
+                  <label for="avatarScaleRange">縮放比例</label>
+                  <input id="avatarScaleRange" type="range" min="1" max="2.2" step="0.05" />
+                </div>
+                <div class="mini-actions">
+                  <button id="resetAvatarImageBtn" class="ghost" type="button">重設頭像位置</button>
                 </div>
               </div>
               <div class="editor-tool">
@@ -3800,96 +4370,7 @@
             </div>
           </div>
 
-          <div class="section-card" id="cvBasicsSection">
-            <h3>基本資料</h3>
-            <div class="field-grid">
-              <div class="field">
-                <label>姓名</label>
-                <input id="name" type="text" placeholder="請輸入姓名或暱稱" />
-              </div>
-              <div class="field">
-                <label>標題 / 角色</label>
-                <input id="role" type="text" placeholder="例如：前端工程師 / 產品設計師 / 行銷企劃" />
-              </div>
-              <div class="field">
-                <label>Email</label>
-                <input id="email" type="email" placeholder="請輸入聯絡 Email" />
-              </div>
-              <div class="field">
-                <label>電話</label>
-                <input id="phone" type="text" placeholder="請輸入電話或留空" />
-              </div>
-              <div class="field">
-                <label>地點</label>
-                <input id="location" type="text" placeholder="例如：台北市 / 遠端 / New Taipei City" />
-              </div>
-              <div class="field">
-                <label>網站 / 作品集</label>
-                <input id="website" type="text" placeholder="請輸入網站、LinkedIn 或作品集連結" />
-              </div>
-              <div class="field full">
-                <label>頭像圖片網址</label>
-                <input id="avatar" type="url" placeholder="請貼上圖片網址，或先留空" />
-              </div>
-              <div class="field full">
-                <label>摘要</label>
-                <textarea id="summary" placeholder="請用 2 到 4 句介紹背景、核心能力、代表經驗與求職方向"></textarea>
-              </div>
-            </div>
-          </div>
-
-          <div class="section-card" id="cvSkillsSection">
-            <h3>專業技能與亮點</h3>
-            <div class="field-grid">
-              <div class="field full">
-                <label>技能標籤</label>
-                <textarea id="skills" placeholder="例如：JavaScript, React, Figma, SQL"></textarea>
-              </div>
-              <div class="field full">
-                <label>核心亮點</label>
-                <textarea id="highlights" placeholder="請逐行輸入亮點，例如：主導 0 到 1 專案上線"></textarea>
-              </div>
-            </div>
-          </div>
-
-          <div class="section-card" id="cvExperienceSection">
-            <h3>工作 / 實習經歷</h3>
-            <p>每一筆請用 `職稱 | 單位 | 日期 | 內容`，空一行分隔下一筆。</p>
-            <div class="field-grid single">
-              <div class="field full">
-                <textarea id="experience" placeholder="請輸入職稱 | 公司 / 單位 | 日期 | 工作內容、成果與量化表現"></textarea>
-              </div>
-            </div>
-          </div>
-
-          <div class="section-card" id="cvEducationSection">
-            <h3>學歷</h3>
-            <p>每一筆請用 `學校 / 科系 | 學位或類型 | 日期 | 說明`，空一行分隔。</p>
-            <div class="field-grid single">
-              <div class="field full">
-                <textarea id="education" placeholder="請輸入學校 / 科系 | 學位 | 日期 | 補充說明"></textarea>
-              </div>
-            </div>
-          </div>
-
-          <div class="section-card" id="cvProjectsSection">
-            <h3>專案 / 作品</h3>
-            <p>每一筆請用 `專案名 | 類型或技術 | 日期 | 內容`，空一行分隔。</p>
-            <div class="field-grid single">
-              <div class="field full">
-                <textarea id="projects" placeholder="請輸入專案名稱 | 類型 / 技術 | 日期 | 專案說明、角色與成果"></textarea>
-              </div>
-            </div>
-          </div>
-
-          <div class="section-card" id="cvAwardsSection">
-            <h3>獎項 / 證照</h3>
-            <div class="field-grid single">
-              <div class="field full">
-                <textarea id="awards" placeholder="請逐行輸入獎項、證照或其他代表性成就"></textarea>
-              </div>
-            </div>
-          </div>
+          <div id="cvFormSections"></div>
 
           <div id="message" class="message">可先編輯本機草稿；登入後按「儲存 CV」即可同步到雲端。</div>
         </div>
@@ -3931,6 +4412,33 @@
 
     <div id="page-portfolio" class="app-page">
 
+      <section class="portfolio-hero">
+        <div class="eyebrow">Portfolio / Learning Journey</div>
+        <div class="portfolio-hero-grid">
+          <div class="portfolio-hero-copy">
+            <h1>把學習歷程整理成有敘事感的作品頁。</h1>
+            <p>
+              這裡不只是把資料排進 PDF，而是把封面、章節、圖片和文字節奏整理成一份更像作品集的學習歷程。選好風格後，就能一邊編輯一邊即時看到成果。
+            </p>
+            <div class="portfolio-hero-actions">
+              <a class="button-link primary" href="#page-portfolio">開始整理學習歷程</a>
+              <a class="button-link secondary" href="#page-home" onclick="switchCvStudioTab('home'); return false;">回到主畫面</a>
+              <a class="button-link soft" href="#page-cv" onclick="switchCvStudioTab('cv'); return false;">前往 CV 履歷</a>
+            </div>
+          </div>
+          <div class="portfolio-hero-meta">
+            <div class="portfolio-meta-card">
+              <strong>頁面結構</strong>
+              <span>封面、目錄、章節內容到結尾頁，會維持同一套版式語氣。</span>
+            </div>
+            <div class="portfolio-meta-card">
+              <strong>編輯方式</strong>
+              <span>左側調整章節與圖片，右側即時預覽；也能直接在頁面上改文字。</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <!-- portfolio topbar -->
       <section class="topbar">
         <div class="topbar-group">
@@ -3939,6 +4447,7 @@
         </div>
         <div class="topbar-group">
           <div class="status-pill"><strong>學習歷程</strong> · 即時預覽排版</div>
+          <div class="status-pill"><strong>章節式作品頁</strong> · 可直接輸出 PDF</div>
         </div>
       </section>
 
@@ -3972,7 +4481,9 @@
 
             <div class="section-card" id="pfThemeSection">
               <h3>版型配色</h3>
-              <p>以下模板參考了近年的學生作品集、建築作品集、編輯式 portfolio 與教學簡報風格，除了顏色，也會同步切換版面語氣。</p>
+              <p>以下模板參考了近年的學生作品集、建築作品集、編輯式 portfolio 與教學簡報風格，除了顏色，也會同步切換版面語氣與章節節奏。</p>
+              <div class="pf-template-strip" id="pfTemplateStrip"></div>
+              <div class="pf-theme-status" id="pfThemeStatus"></div>
               <div class="pf-template-grid" id="pfThemeGrid"></div>
             </div>
 
@@ -3996,7 +4507,28 @@
                   <label>封面圖片網址</label>
                   <input id="pfCoverImage" type="url" placeholder="https://..." />
                 </div>
+                <div class="field">
+                  <label>封面水平位置</label>
+                  <input id="pfCoverPosX" type="range" min="0" max="100" step="1" />
+                </div>
+                <div class="field">
+                  <label>封面垂直位置</label>
+                  <input id="pfCoverPosY" type="range" min="0" max="100" step="1" />
+                </div>
+                <div class="field">
+                  <label>封面縮放比例</label>
+                  <input id="pfCoverScale" type="range" min="1" max="2.2" step="0.05" />
+                </div>
+                <div class="field full">
+                  <button id="pfResetCoverImageBtn" class="ghost" type="button">重設封面圖片位置</button>
+                </div>
               </div>
+            </div>
+
+            <div class="section-card" id="pfContentPresetSection">
+              <h3>內容模板</h3>
+              <p>這裡整理的是常見高分學習歷程結構。點一下就能套入章節框架與示範文案骨架，再改成自己的真實內容。</p>
+              <div class="pf-content-preset-grid" id="pfContentPresetGrid"></div>
             </div>
 
             <!-- chapters -->
@@ -4011,141 +4543,15 @@
             <div class="section-card" id="pfToolsSection">
               <h3>推薦工具資源</h3>
               <p>整理課程成果、設計封面、撰寫自述時常用的工具，點選直接開啟。</p>
-              <div class="pf-tools-grid">
-
-                <div class="pf-tool-category-label">官方上傳平台</div>
-                <a class="pf-tool-card" href="https://epf.mlife.org.tw/Portal.do" target="_blank" rel="noreferrer noopener">
-                  <span class="pf-tool-icon">🎓</span>
-                  <div class="pf-tool-info">
-                    <strong>學習歷程上傳平台</strong>
-                    <span>官方中央資料庫，課程成果與多元表現上傳</span>
-                  </div>
-                </a>
-
-                <div class="pf-tool-category-label">學習歷程製作</div>
-                <a class="pf-tool-card" href="https://luckertw.com/" target="_blank" rel="noreferrer noopener">
-                  <span class="pf-tool-icon">📚</span>
-                  <div class="pf-tool-info">
-                    <strong>Lucker 拉課</strong>
-                    <span>專為學習歷程設計，含千種範本與雲端範例庫</span>
-                  </div>
-                </a>
-                <a class="pf-tool-card" href="https://www.yory.school/" target="_blank" rel="noreferrer noopener">
-                  <span class="pf-tool-icon">📋</span>
-                  <div class="pf-tool-info">
-                    <strong>Yory 優歷</strong>
-                    <span>AI 輔助自述撰寫，依教授閱卷邏輯給回饋</span>
-                  </div>
-                </a>
-                <a class="pf-tool-card" href="https://student.104.com.tw/epf/" target="_blank" rel="noreferrer noopener">
-                  <span class="pf-tool-icon">💼</span>
-                  <div class="pf-tool-info">
-                    <strong>104 學習歷程</strong>
-                    <span>免費線上自述編輯器，一鍵匯出 PDF</span>
-                  </div>
-                </a>
-
-                <div class="pf-tool-category-label">設計工具</div>
-                <a class="pf-tool-card" href="https://www.canva.com/" target="_blank" rel="noreferrer noopener">
-                  <span class="pf-tool-icon">🎨</span>
-                  <div class="pf-tool-info">
-                    <strong>Canva</strong>
-                    <span>最多學生使用的免費設計工具，含學習歷程範本</span>
-                  </div>
-                </a>
-                <a class="pf-tool-card" href="https://www.adobe.com/express/" target="_blank" rel="noreferrer noopener">
-                  <span class="pf-tool-icon">✨</span>
-                  <div class="pf-tool-info">
-                    <strong>Adobe Express</strong>
-                    <span>免費快速設計，封面與排版皆適用</span>
-                  </div>
-                </a>
-                <a class="pf-tool-card" href="https://www.figma.com/" target="_blank" rel="noreferrer noopener">
-                  <span class="pf-tool-icon">✏️</span>
-                  <div class="pf-tool-info">
-                    <strong>Figma</strong>
-                    <span>進階排版設計，免費版適合個人使用</span>
-                  </div>
-                </a>
-
-                <div class="pf-tool-category-label">簡報 & 文件</div>
-                <a class="pf-tool-card" href="https://docs.google.com/presentation/create" target="_blank" rel="noreferrer noopener">
-                  <span class="pf-tool-icon">📊</span>
-                  <div class="pf-tool-info">
-                    <strong>Google 簡報</strong>
-                    <span>線上共同編輯簡報，可分享連結方便修改</span>
-                  </div>
-                </a>
-                <a class="pf-tool-card" href="https://docs.google.com/document/create" target="_blank" rel="noreferrer noopener">
-                  <span class="pf-tool-icon">📝</span>
-                  <div class="pf-tool-info">
-                    <strong>Google 文件</strong>
-                    <span>線上文件撰寫，適合報告草稿與自述整理</span>
-                  </div>
-                </a>
-                <a class="pf-tool-card" href="https://gamma.app/" target="_blank" rel="noreferrer noopener">
-                  <span class="pf-tool-icon">⚡</span>
-                  <div class="pf-tool-info">
-                    <strong>Gamma</strong>
-                    <span>AI 自動生成美觀簡報，幾分鐘完成版型</span>
-                  </div>
-                </a>
-                <a class="pf-tool-card" href="https://hackmd.io/" target="_blank" rel="noreferrer noopener">
-                  <span class="pf-tool-icon">📄</span>
-                  <div class="pf-tool-info">
-                    <strong>HackMD</strong>
-                    <span>Markdown 共筆筆記，適合整理學習心得</span>
-                  </div>
-                </a>
-
-                <div class="pf-tool-category-label">免費圖庫</div>
-                <a class="pf-tool-card" href="https://unsplash.com/" target="_blank" rel="noreferrer noopener">
-                  <span class="pf-tool-icon">🖼️</span>
-                  <div class="pf-tool-info">
-                    <strong>Unsplash</strong>
-                    <span>免費高畫質照片，可複製圖片網址直接貼入</span>
-                  </div>
-                </a>
-                <a class="pf-tool-card" href="https://www.pexels.com/" target="_blank" rel="noreferrer noopener">
-                  <span class="pf-tool-icon">📸</span>
-                  <div class="pf-tool-info">
-                    <strong>Pexels</strong>
-                    <span>免費圖片與影片素材，CC0 授權免費使用</span>
-                  </div>
-                </a>
-                <a class="pf-tool-card" href="https://pixabay.com/" target="_blank" rel="noreferrer noopener">
-                  <span class="pf-tool-icon">🌄</span>
-                  <div class="pf-tool-info">
-                    <strong>Pixabay</strong>
-                    <span>免費圖片與插圖向量素材，CC0 授權</span>
-                  </div>
-                </a>
-
-                <div class="pf-tool-category-label">AI 輔助寫作</div>
-                <a class="pf-tool-card" href="https://chatgpt.com/" target="_blank" rel="noreferrer noopener">
-                  <span class="pf-tool-icon">🤖</span>
-                  <div class="pf-tool-info">
-                    <strong>ChatGPT</strong>
-                    <span>AI 輔助寫作、想法整理與自述草稿撰寫</span>
-                  </div>
-                </a>
-                <a class="pf-tool-card" href="https://copilot.microsoft.com/" target="_blank" rel="noreferrer noopener">
-                  <span class="pf-tool-icon">💡</span>
-                  <div class="pf-tool-info">
-                    <strong>Microsoft Copilot</strong>
-                    <span>免費 GPT-4 輔助，整合 Bing 搜尋與撰寫</span>
-                  </div>
-                </a>
-
-              </div>
+              <div class="pf-tools-grid" id="pfToolsGrid"></div>
             </div>
 
           </div><!-- /portfolio-editor-scroll -->
         </aside><!-- /portfolio-editor-panel -->
 
         <!-- right: preview -->
-        <div style="overflow-y:auto;max-height:calc(100vh - 80px);padding:0 4px;" id="pfPreviewSection">
-          <p style="text-align:center;color:var(--muted);font-size:13px;margin:0 0 10px;">預覽順序：封面 → 目錄 → 內容頁（每章節一頁）→ 結尾頁。直接點頁面上的文字即可編輯。</p>
+        <div class="portfolio-preview-shell" id="pfPreviewSection">
+          <p class="portfolio-preview-topnote">預覽順序：封面 → 目錄 → 內容頁（每章節一頁）→ 結尾頁。直接點頁面上的文字即可編輯。</p>
           <div class="pf-inline-actions">
             <button id="pfInlineAddChapterBtn" class="pf-inline-add-btn" type="button">＋ 新增章節</button>
           </div>
@@ -4206,22 +4612,6 @@
       const TEMPLATE_KEY = "cv-studio-template-v1";
       const WORKFLOW_KEY = "cv-studio-workflow-v1";
       const LAYOUT_KEY = "cv-studio-layout-v1";
-      const defaultData = {
-        name: "",
-        role: "",
-        email: "",
-        phone: "",
-        location: "",
-        website: "",
-        avatar: "",
-        summary: "",
-        skills: "",
-        highlights: "",
-        experience: "",
-        education: "",
-        projects: "",
-        awards: ""
-      };
       const templateDefinitions = {
         "n-tech": {
           label: "Academic Warm 學術暖調",
@@ -4558,55 +4948,394 @@
             sidebar: ["profile", "contacts", "awards"],
             main: ["experience", "projects", "education", "skills", "highlights"]
           }
+        },
+        terracotta: {
+          label: "Terracotta 陶土暖棕",
+          layout: "split-left",
+          fontFamily: "serif",
+          sidebarWidth: 288,
+          baseFontSize: 16,
+          sectionGap: 24,
+          avatarShape: "rounded",
+          profileAlign: "left",
+          regions: {
+            sidebar: ["profile", "contacts", "awards"],
+            main: ["summary", "experience", "projects", "education", "skills", "highlights"]
+          }
+        },
+        aurora: {
+          label: "Aurora 極光青霧",
+          layout: "balanced",
+          fontFamily: "display",
+          sidebarWidth: 284,
+          baseFontSize: 16,
+          sectionGap: 24,
+          avatarShape: "circle",
+          profileAlign: "center",
+          regions: {
+            sidebar: ["profile", "contacts", "skills"],
+            main: ["highlights", "experience", "projects", "awards", "education"]
+          }
+        },
+        graphite: {
+          label: "Graphite 石墨極簡",
+          layout: "stacked",
+          fontFamily: "sans",
+          sidebarWidth: 280,
+          baseFontSize: 15,
+          sectionGap: 20,
+          avatarShape: "circle",
+          profileAlign: "left",
+          regions: {
+            sidebar: ["profile", "contacts", "skills"],
+            main: ["highlights", "experience", "projects", "education", "awards"]
+          }
+        },
+        mint: {
+          label: "Mint 清新薄荷",
+          layout: "split-right",
+          fontFamily: "sans",
+          sidebarWidth: 266,
+          baseFontSize: 16,
+          sectionGap: 22,
+          avatarShape: "rounded",
+          profileAlign: "left",
+          regions: {
+            sidebar: ["contacts", "skills", "highlights"],
+            main: ["profile", "experience", "projects", "education", "awards"]
+          }
+        },
+        ruby: {
+          label: "Ruby 酒紅雅緻",
+          layout: "split-left",
+          fontFamily: "display",
+          sidebarWidth: 276,
+          baseFontSize: 16,
+          sectionGap: 24,
+          avatarShape: "rounded",
+          profileAlign: "center",
+          regions: {
+            sidebar: ["profile", "contacts", "awards"],
+            main: ["projects", "experience", "highlights", "education", "skills"]
+          }
+        },
+        celestial: {
+          label: "Celestial 星夜靛藍",
+          layout: "balanced",
+          fontFamily: "sans",
+          sidebarWidth: 286,
+          baseFontSize: 15,
+          sectionGap: 22,
+          avatarShape: "circle",
+          profileAlign: "left",
+          regions: {
+            sidebar: ["profile", "contacts", "skills"],
+            main: ["experience", "projects", "education", "highlights", "awards"]
+          }
+        }
+      };
+      const CV_LAYOUT_PRESETS = {
+        classic: {
+          label: "經典雙欄",
+          desc: "左欄資訊、右欄經歷，穩定好讀。",
+          layout: "split-left",
+          fontFamily: "serif",
+          sidebarWidth: 284,
+          baseFontSize: 16,
+          sectionGap: 24,
+          avatarShape: "rounded",
+          profileAlign: "left",
+          regions: {
+            sidebar: ["profile", "contacts", "skills", "awards"],
+            main: ["summary", "experience", "projects", "education", "highlights"]
+          }
+        },
+        executive: {
+          label: "商務右欄",
+          desc: "主內容先行，適合顧問與管理職。",
+          layout: "split-right",
+          fontFamily: "sans",
+          sidebarWidth: 260,
+          baseFontSize: 15,
+          sectionGap: 22,
+          avatarShape: "circle",
+          profileAlign: "left",
+          regions: {
+            sidebar: ["contacts", "skills", "highlights"],
+            main: ["profile", "summary", "experience", "projects", "education", "awards"]
+          }
+        },
+        editorial: {
+          label: "雜誌編排",
+          desc: "更重視檔頭與作品展示節奏。",
+          layout: "balanced",
+          fontFamily: "display",
+          sidebarWidth: 292,
+          baseFontSize: 16,
+          sectionGap: 24,
+          avatarShape: "rounded",
+          profileAlign: "center",
+          regions: {
+            sidebar: ["profile", "contacts", "awards"],
+            main: ["projects", "experience", "highlights", "education", "skills", "summary"]
+          }
+        },
+        compact: {
+          label: "緊湊求職",
+          desc: "資訊密度高，適合新鮮人快速投遞。",
+          layout: "split-left",
+          fontFamily: "sans",
+          sidebarWidth: 248,
+          baseFontSize: 14,
+          sectionGap: 18,
+          avatarShape: "circle",
+          profileAlign: "left",
+          regions: {
+            sidebar: ["profile", "contacts", "skills"],
+            main: ["experience", "projects", "education", "highlights", "awards", "summary"]
+          }
+        },
+        narrative: {
+          label: "敘事型",
+          desc: "上下堆疊，適合研究與長文摘要。",
+          layout: "stacked",
+          fontFamily: "serif",
+          sidebarWidth: 280,
+          baseFontSize: 16,
+          sectionGap: 22,
+          avatarShape: "rounded",
+          profileAlign: "center",
+          regions: {
+            sidebar: ["profile", "contacts"],
+            main: ["summary", "experience", "projects", "education", "skills", "highlights", "awards"]
+          }
+        },
+        portfolio: {
+          label: "作品導向",
+          desc: "先放個人檔頭與專案，適合設計創作。",
+          layout: "balanced",
+          fontFamily: "display",
+          sidebarWidth: 274,
+          baseFontSize: 16,
+          sectionGap: 24,
+          avatarShape: "circle",
+          profileAlign: "center",
+          regions: {
+            sidebar: ["profile", "contacts", "skills"],
+            main: ["projects", "highlights", "experience", "awards", "education", "summary"]
+          }
         }
       };
       const templateLabels = Object.fromEntries(Object.entries(templateDefinitions).map(([id, config]) => [id, config.label]));
+      const runtimeConfigSource = typeof window.CV_STUDIO_CONFIG === "object" && window.CV_STUDIO_CONFIG
+        ? window.CV_STUDIO_CONFIG
+        : {};
 
-      /* ── 職位 → 推薦模板對照表 ── */
-      const JOB_PRESETS = {
-        software:     { label: "軟體工程師",   template: "cobalt",     alt: "ocean"      },
-        frontend:     { label: "前端 / 全端",   template: "blueprint",  alt: "cobalt"     },
-        data:         { label: "資料科學",      template: "ocean",      alt: "geometric"  },
-        ux:           { label: "UX / 產品設計", template: "dusk",       alt: "rose"       },
-        pm:           { label: "產品經理",      template: "midnight",   alt: "slate"      },
-        marketing:    { label: "行銷 / 品牌",   template: "ember",      alt: "coral"      },
-        research:     { label: "學術研究",      template: "n-tech",     alt: "forest"     },
-        education:    { label: "教育 / 老師",   template: "coral",      alt: "sage"       },
-        healthcare:   { label: "醫療 / 護理",   template: "sage",       alt: "linen"      },
-        finance:      { label: "金融 / 財務",   template: "midnight",   alt: "cobalt"     },
-        legal:        { label: "法律 / 顧問",   template: "noir",       alt: "cobalt"     },
-        architecture: { label: "建築 / 工藝",   template: "copper",     alt: "ornate"     },
-        creative:     { label: "藝術 / 創意",   template: "watercolor", alt: "plum"       },
-        hr:           { label: "人資 / 管理",   template: "linen",      alt: "midnight"   }
+      const DEFAULT_TEMPLATE_META = {
+        "n-tech":      { shortLabel: "Academic",    description: "研究型、溫潤、敘事感",         swatchSidebar: "#f6ecdf", swatchPaper: "#fffefb", swatchAccentSoft: "#f7e1da" },
+        slate:         { shortLabel: "Slate",       description: "專業、科技、企業感",           swatchSidebar: "#e8f0f5", swatchPaper: "#fbfdff", swatchAccentSoft: "#ddeaf3" },
+        mono:          { shortLabel: "Mono",        description: "乾淨、極簡、列印穩定",         swatchSidebar: "#f1f1ee", swatchPaper: "#fffefc", swatchAccentSoft: "#eceff1" },
+        "serif-ivory": { shortLabel: "Serif Ivory", description: "文藝、編排感、閱讀友善",       swatchSidebar: "#f8f0e5", swatchPaper: "#fffdf8", swatchAccentSoft: "#f4e7d8" },
+        forest:        { shortLabel: "Forest",      description: "研究、理性、專題導向",         swatchSidebar: "#e9f4ef", swatchPaper: "#fbfefc", swatchAccentSoft: "#dceee7" },
+        rose:          { shortLabel: "Rose",        description: "品牌、親和、作品展示感",       swatchSidebar: "#fdf0f4", swatchPaper: "#fffdfd", swatchAccentSoft: "#f9dfe7" },
+        midnight:      { shortLabel: "Midnight",    description: "商務、穩重、管理職感",         swatchSidebar: "#e8eefb", swatchPaper: "#fbfcff", swatchAccentSoft: "#dde6fb" },
+        sand:          { shortLabel: "Sand",        description: "柔和、簡報感、敘事清楚",       swatchSidebar: "#faf1e4", swatchPaper: "#fffdfa", swatchAccentSoft: "#f6e6d0" },
+        plum:          { shortLabel: "Plum",        description: "成熟、設計感、辨識度高",       swatchSidebar: "#f4ecf7", swatchPaper: "#fffdfd", swatchAccentSoft: "#eadcf0" },
+        ocean:         { shortLabel: "Ocean",       description: "科技、數據、清晰理性",         swatchSidebar: "#e0f2f6", swatchPaper: "#f7fdfe", swatchAccentSoft: "#d6eef2" },
+        ember:         { shortLabel: "Ember",       description: "創意、活力、品牌感強",         swatchSidebar: "#fdecd8", swatchPaper: "#fffaf5", swatchAccentSoft: "#fde8d8" },
+        noir:          { shortLabel: "Noir",        description: "極簡、俐落、高對比",           swatchSidebar: "#f0f0ed", swatchPaper: "#fffffe", swatchAccentSoft: "#e8e8e5" },
+        sage:          { shortLabel: "Sage",        description: "自然、沉穩、醫療學術感",       swatchSidebar: "#e5f0ec", swatchPaper: "#fafefb", swatchAccentSoft: "#dceee9" },
+        coral:         { shortLabel: "Coral",       description: "親切、教育、服務業感",         swatchSidebar: "#fdeae3", swatchPaper: "#fffcfb", swatchAccentSoft: "#fce4dc" },
+        cobalt:        { shortLabel: "Cobalt",      description: "工程、顧問、結構清楚",         swatchSidebar: "#e4eaf8", swatchPaper: "#fbfcff", swatchAccentSoft: "#dce4f8" },
+        dusk:          { shortLabel: "Dusk",        description: "UX、產品、視覺設計感",         swatchSidebar: "#f2e8f4", swatchPaper: "#fefcff", swatchAccentSoft: "#f0e4f0" },
+        copper:        { shortLabel: "Copper",      description: "建築、藝術、工藝質感",         swatchSidebar: "#f7e8d5", swatchPaper: "#fffdf8", swatchAccentSoft: "#f5e4d0" },
+        linen:         { shortLabel: "Linen",       description: "學術、法律、正式文件感",       swatchSidebar: "#f2f2f6", swatchPaper: "#fefeff", swatchAccentSoft: "#e8e8f0" },
+        botanical:     { shortLabel: "Botanical",   description: "植物花紋、自然、手繪感",       swatchSidebar: "#e4f0ea", swatchPaper: "#f9fdfa", swatchAccentSoft: "#d8ede5" },
+        geometric:     { shortLabel: "Geometric",   description: "深藍菱格、幾何、科技感",       swatchSidebar: "#1e3a6e", swatchPaper: "#fafbff", swatchAccentSoft: "#d8eef2" },
+        blueprint:     { shortLabel: "Blueprint",   description: "藍圖點陣、工程、製圖感",       swatchSidebar: "#162f5e", swatchPaper: "#f5f8ff", swatchAccentSoft: "#dce8f8" },
+        ornate:        { shortLabel: "Ornate",      description: "古典金框、角落花飾",           swatchSidebar: "#faf4e8", swatchPaper: "#fffdf6", swatchAccentSoft: "#f5ead2" },
+        watercolor:    { shortLabel: "Watercolor",  description: "水彩暈染、藝術、渲染感",       swatchSidebar: "#eceef8", swatchPaper: "#fdfeff", swatchAccentSoft: "#e4e8f8" },
+        flourish:      { shortLabel: "Flourish",    description: "花邊藤蔓、優雅、手工感",       swatchSidebar: "#f7eef6", swatchPaper: "#fefcff", swatchAccentSoft: "#f0e2ee" },
+        terracotta:    { shortLabel: "Terracotta",  description: "陶土暖棕、溫厚、手作感",       swatchSidebar: "#faebe4", swatchPaper: "#fffdfb", swatchAccentSoft: "#f6ded4" },
+        aurora:        { shortLabel: "Aurora",      description: "極光青霧、輕盈、展示感",       swatchSidebar: "#e6f7f3", swatchPaper: "#fafdff", swatchAccentSoft: "#dbf2ec" },
+        graphite:      { shortLabel: "Graphite",    description: "石墨極簡、低調、商務感",       swatchSidebar: "#eef1f4", swatchPaper: "#fcfdfe", swatchAccentSoft: "#e5eaef" },
+        mint:          { shortLabel: "Mint",        description: "清新薄荷、明亮、俐落感",       swatchSidebar: "#e5f8ef", swatchPaper: "#fbfffd", swatchAccentSoft: "#dbf3e7" },
+        ruby:          { shortLabel: "Ruby",        description: "酒紅雅緻、品牌、精緻感",       swatchSidebar: "#fbe9ee", swatchPaper: "#fffdfd", swatchAccentSoft: "#f6dbe3" },
+        celestial:     { shortLabel: "Celestial",   description: "星夜靛藍、冷靜、專業感",       swatchSidebar: "#e8edff", swatchPaper: "#fbfcff", swatchAccentSoft: "#dfe5fb" }
       };
 
-      /* ── 模板 strip 色票資料 ── */
-      const TEMPLATE_STRIP_DATA = [
-        { id:"n-tech",      label:"Academic",    s:"#f6ecdf", m:"#fffefb" },
-        { id:"slate",       label:"Slate",       s:"#e8f0f5", m:"#fbfdff" },
-        { id:"mono",        label:"Mono",        s:"#f1f1ee", m:"#fffefc" },
-        { id:"serif-ivory", label:"Serif Ivory", s:"#f8f0e5", m:"#fffdf8" },
-        { id:"forest",      label:"Forest",      s:"#e9f4ef", m:"#fbfefc" },
-        { id:"rose",        label:"Rose",        s:"#fdf0f4", m:"#fffdfd" },
-        { id:"midnight",    label:"Midnight",    s:"#e8eefb", m:"#fbfcff" },
-        { id:"sand",        label:"Sand",        s:"#faf1e4", m:"#fffdfa" },
-        { id:"plum",        label:"Plum",        s:"#f4ecf7", m:"#fffdfd" },
-        { id:"ocean",       label:"Ocean",       s:"#e0f2f6", m:"#f7fdfe" },
-        { id:"ember",       label:"Ember",       s:"#fdecd8", m:"#fffaf5" },
-        { id:"noir",        label:"Noir",        s:"#f0f0ed", m:"#fffffe" },
-        { id:"sage",        label:"Sage",        s:"#e5f0ec", m:"#fafefb" },
-        { id:"coral",       label:"Coral",       s:"#fdeae3", m:"#fffcfb" },
-        { id:"cobalt",      label:"Cobalt",      s:"#e4eaf8", m:"#fbfcff" },
-        { id:"dusk",        label:"Dusk",        s:"#f2e8f4", m:"#fefcff" },
-        { id:"copper",      label:"Copper",      s:"#f7e8d5", m:"#fffdf8" },
-        { id:"linen",       label:"Linen",       s:"#f2f2f6", m:"#fefeff" },
-        { id:"botanical",   label:"Botanical",   s:"#e4f0ea", m:"#f9fdfa" },
-        { id:"geometric",   label:"Geometric",   s:"#1e3a6e", m:"#fafbff" },
-        { id:"blueprint",   label:"Blueprint",   s:"#162f5e", m:"#f5f8ff" },
-        { id:"ornate",      label:"Ornate",      s:"#faf4e8", m:"#fffdf6" },
-        { id:"watercolor",  label:"Watercolor",  s:"#eceef8", m:"#fdfeff" },
-        { id:"flourish",    label:"Flourish",    s:"#f7eef6", m:"#fefcff" }
+      const templateCatalog = Object.entries(templateDefinitions).map(([id, config]) => ({
+        id,
+        ...config,
+        ...(DEFAULT_TEMPLATE_META[id] || {}),
+        ...((runtimeConfigSource.templateMeta && runtimeConfigSource.templateMeta[id]) || {})
+      }));
+      const templateCatalogMap = Object.fromEntries(templateCatalog.map((template) => [template.id, template]));
+      const TEMPLATE_STRIP_DATA = templateCatalog.map((template) => ({
+        id: template.id,
+        label: template.shortLabel || template.label,
+        s: template.swatchSidebar,
+        m: template.swatchPaper
+      }));
+
+      /* ── 職位 → 推薦模板對照表 ── */
+      const DEFAULT_JOB_PRESETS = {
+        software:     { icon: "💻", label: "軟體工程師",   template: "cobalt",     alt: "ocean"      },
+        frontend:     { icon: "🖥", label: "前端 / 全端",   template: "blueprint",  alt: "cobalt"     },
+        data:         { icon: "📊", label: "資料科學",      template: "ocean",      alt: "geometric"  },
+        ux:           { icon: "🎨", label: "UX / 產品設計", template: "dusk",       alt: "rose"       },
+        pm:           { icon: "🗂", label: "產品經理",      template: "midnight",   alt: "slate"      },
+        marketing:    { icon: "📣", label: "行銷 / 品牌",   template: "ember",      alt: "coral"      },
+        research:     { icon: "🔬", label: "學術研究",      template: "n-tech",     alt: "forest"     },
+        education:    { icon: "📚", label: "教育 / 老師",   template: "coral",      alt: "sage"       },
+        healthcare:   { icon: "🏥", label: "醫療 / 護理",   template: "sage",       alt: "linen"      },
+        finance:      { icon: "💰", label: "金融 / 財務",   template: "midnight",   alt: "cobalt"     },
+        legal:        { icon: "⚖", label: "法律 / 顧問",   template: "noir",       alt: "cobalt"     },
+        architecture: { icon: "🏛", label: "建築 / 工藝",   template: "copper",     alt: "ornate"     },
+        creative:     { icon: "🎭", label: "藝術 / 創意",   template: "watercolor", alt: "plum"       },
+        hr:           { icon: "👥", label: "人資 / 管理",   template: "linen",      alt: "midnight"   }
+      };
+      const JOB_PRESETS = { ...DEFAULT_JOB_PRESETS, ...(runtimeConfigSource.jobPresets || {}) };
+
+      const DEFAULT_HOME_CONTENT = {
+        heroList: [
+          "用模板快速建立履歷，不用從空白頁開始。",
+          "修改內容時右側即時預覽，排版變化一眼看懂。",
+          "登入後可同步雲端，完成後直接下載 PDF 投遞。"
+        ],
+        heroStats: [
+          { value: () => `${templateCatalog.length} 種`, label: "可直接套用的履歷模板" },
+          { value: "即時", label: "編輯後立即更新預覽" },
+          { value: "Google", label: "登入後同步你的履歷" }
+        ],
+        featureCards: [
+          { kicker: "Editor", title: "CV 履歷編輯器", description: "即時編輯、切換模板，填完就能直接下載 PDF。", tab: "cv", actionLabel: "前往編輯" },
+          { kicker: "Portfolio", title: "學習歷程作品集", description: "記錄課程、專案與成果，自動產生可分享的學習歷程頁面。", tab: "portfolio", actionLabel: "前往學習歷程" },
+          { kicker: "Export", title: "下載 PDF", description: "一鍵將履歷轉成排版精確的 PDF，直接投遞或列印。", tab: "cv", action: "download", actionLabel: "前往下載" },
+          { kicker: "Cloud", title: "Google 雲端同步", description: "登入後自動儲存，換裝置也能繼續編輯，不怕資料遺失。", action: "login", actionLabel: "了解同步" }
+        ]
+      };
+      const HOME_CONTENT = {
+        ...DEFAULT_HOME_CONTENT,
+        ...(runtimeConfigSource.homeContent || {})
+      };
+
+      const DEFAULT_CV_FIELD_SECTIONS = [
+        {
+          id: "cvBasicsSection",
+          title: "基本資料",
+          gridClass: "field-grid",
+          fields: [
+            { id: "name", label: "姓名", type: "text", placeholder: "請輸入姓名或暱稱" },
+            { id: "role", label: "標題 / 角色", type: "text", placeholder: "例如：前端工程師 / 產品設計師 / 行銷企劃" },
+            { id: "email", label: "Email", type: "email", placeholder: "請輸入聯絡 Email" },
+            { id: "phone", label: "電話", type: "text", placeholder: "請輸入電話或留空" },
+            { id: "location", label: "地點", type: "text", placeholder: "例如：台北市 / 遠端 / New Taipei City" },
+            { id: "website", label: "網站 / 作品集", type: "text", placeholder: "請輸入網站、LinkedIn 或作品集連結" },
+            { id: "avatar", label: "頭像圖片網址", type: "url", placeholder: "請貼上圖片網址，或先留空", full: true },
+            { id: "summary", label: "摘要", type: "textarea", placeholder: "請用 2 到 4 句介紹背景、核心能力、代表經驗與求職方向", full: true }
+          ]
+        },
+        {
+          id: "cvSkillsSection",
+          title: "專業技能與亮點",
+          gridClass: "field-grid",
+          fields: [
+            { id: "skills", label: "技能標籤", type: "textarea", placeholder: "例如：JavaScript, React, Figma, SQL", full: true },
+            { id: "highlights", label: "核心亮點", type: "textarea", placeholder: "請逐行輸入亮點，例如：主導 0 到 1 專案上線", full: true }
+          ]
+        },
+        {
+          id: "cvExperienceSection",
+          title: "工作 / 實習經歷",
+          description: "每一筆請用 `職稱 | 單位 | 日期 | 內容`，空一行分隔下一筆。",
+          gridClass: "field-grid single",
+          fields: [
+            { id: "experience", type: "textarea", placeholder: "請輸入職稱 | 公司 / 單位 | 日期 | 工作內容、成果與量化表現", full: true }
+          ]
+        },
+        {
+          id: "cvEducationSection",
+          title: "學歷",
+          description: "每一筆請用 `學校 / 科系 | 學位或類型 | 日期 | 說明`，空一行分隔。",
+          gridClass: "field-grid single",
+          fields: [
+            { id: "education", type: "textarea", placeholder: "請輸入學校 / 科系 | 學位 | 日期 | 補充說明", full: true }
+          ]
+        },
+        {
+          id: "cvProjectsSection",
+          title: "專案 / 作品",
+          description: "每一筆請用 `專案名 | 類型或技術 | 日期 | 內容`，空一行分隔。",
+          gridClass: "field-grid single",
+          fields: [
+            { id: "projects", type: "textarea", placeholder: "請輸入專案名稱 | 類型 / 技術 | 日期 | 專案說明、角色與成果", full: true }
+          ]
+        },
+        {
+          id: "cvAwardsSection",
+          title: "獎項 / 證照",
+          gridClass: "field-grid single",
+          fields: [
+            { id: "awards", type: "textarea", placeholder: "請逐行輸入獎項、證照或其他代表性成就", full: true }
+          ]
+        }
       ];
+      const CV_FIELD_SECTIONS = Array.isArray(runtimeConfigSource.cvFieldSections) && runtimeConfigSource.cvFieldSections.length
+        ? runtimeConfigSource.cvFieldSections
+        : DEFAULT_CV_FIELD_SECTIONS;
+
+      const DEFAULT_CV_BLOCK_CONTENT = {
+        summary: { heading: "Summary", placeholder: "點擊輸入摘要…" },
+        contacts: {
+          heading: "聯絡方式",
+          fields: [
+            { f: "email", ph: "Email" },
+            { f: "phone", ph: "電話" },
+            { f: "location", ph: "地點" },
+            { f: "website", ph: "網站 / 作品集" }
+          ]
+        },
+        skills: {
+          heading: "技能",
+          itemPlaceholder: "技能",
+          addLabel: "＋",
+          emptyText: "點擊這裡新增技能標籤",
+          addTitle: "新增技能"
+        },
+        highlights: {
+          heading: "亮點",
+          itemPlaceholder: "亮點",
+          addLabel: "＋ 新增亮點",
+          emptyText: "點擊這裡新增亮點"
+        },
+        awards: {
+          heading: "獎項 / 證照",
+          itemPlaceholder: "獎項 / 證照",
+          addLabel: "＋ 新增獎項",
+          emptyText: "點擊這裡新增獎項 / 證照"
+        },
+        experience: {
+          heading: "Experience",
+          addLabel: "＋ 新增經歷",
+          emptyText: "點擊這裡新增工作 / 實習經歷。"
+        },
+        projects: {
+          heading: "Projects",
+          addLabel: "＋ 新增專案",
+          emptyText: "點擊這裡新增專案 / 作品。"
+        },
+        education: {
+          heading: "Education",
+          addLabel: "＋ 新增學歷",
+          emptyText: "點擊這裡新增學歷。"
+        }
+      };
+      const CV_BLOCK_CONTENT = {
+        ...DEFAULT_CV_BLOCK_CONTENT,
+        ...(runtimeConfigSource.cvBlockContent || {})
+      };
+
       const blockLabels = {
         profile: "檔頭",
         summary: "摘要",
@@ -4618,6 +5347,56 @@
         projects: "專案 / 作品",
         education: "學歷"
       };
+      const fields = CV_FIELD_SECTIONS.flatMap((section) => section.fields.map((field) => field.id));
+      const defaultData = Object.fromEntries(fields.map((field) => [field, ""]));
+      const DEFAULT_PORTFOLIO_TOOLS = [
+        {
+          category: "官方上傳平台",
+          items: [
+            { icon: "🎓", title: "學習歷程上傳平台", description: "官方中央資料庫，課程成果與多元表現上傳", href: "https://epf.mlife.org.tw/Portal.do" }
+          ]
+        },
+        {
+          category: "學習歷程製作",
+          items: [
+            { icon: "📚", title: "Lucker 拉課", description: "專為學習歷程設計，含千種範本與雲端範例庫", href: "https://luckertw.com/" },
+            { icon: "📋", title: "Yory 優歷", description: "AI 輔助自述撰寫，依教授閱卷邏輯給回饋", href: "https://www.yory.school/" },
+            { icon: "💼", title: "104 學習歷程", description: "免費線上自述編輯器，一鍵匯出 PDF", href: "https://student.104.com.tw/epf/" }
+          ]
+        },
+        {
+          category: "設計工具",
+          items: [
+            { icon: "🎨", title: "Canva", description: "最多學生使用的免費設計工具，含學習歷程範本", href: "https://www.canva.com/" },
+            { icon: "✨", title: "Adobe Express", description: "免費快速設計，封面與排版皆適用", href: "https://www.adobe.com/express/" },
+            { icon: "✏️", title: "Figma", description: "進階排版設計，免費版適合個人使用", href: "https://www.figma.com/" }
+          ]
+        },
+        {
+          category: "簡報 & 文件",
+          items: [
+            { icon: "📊", title: "Google 簡報", description: "線上共同編輯簡報，可分享連結方便修改", href: "https://docs.google.com/presentation/create" },
+            { icon: "📝", title: "Google 文件", description: "線上文件撰寫，適合報告草稿與自述整理", href: "https://docs.google.com/document/create" },
+            { icon: "⚡", title: "Gamma", description: "AI 自動生成美觀簡報，幾分鐘完成版型", href: "https://gamma.app/" },
+            { icon: "📄", title: "HackMD", description: "Markdown 共筆筆記，適合整理學習心得", href: "https://hackmd.io/" }
+          ]
+        },
+        {
+          category: "免費圖庫",
+          items: [
+            { icon: "🖼️", title: "Unsplash", description: "免費高畫質照片，可複製圖片網址直接貼入", href: "https://unsplash.com/" },
+            { icon: "📸", title: "Pexels", description: "免費圖片與影片素材，CC0 授權免費使用", href: "https://www.pexels.com/" },
+            { icon: "🌄", title: "Pixabay", description: "免費圖片與插圖向量素材，CC0 授權", href: "https://pixabay.com/" }
+          ]
+        },
+        {
+          category: "AI 輔助寫作",
+          items: [
+            { icon: "🤖", title: "ChatGPT", description: "AI 輔助寫作、想法整理與自述草稿撰寫", href: "https://chatgpt.com/" },
+            { icon: "💡", title: "Microsoft Copilot", description: "免費 GPT-4 輔助，整合 Bing 搜尋與撰寫", href: "https://copilot.microsoft.com/" }
+          ]
+        }
+      ];
 
       function loadInitialConfig() {
         const stored = loadJson(CONFIG_KEY, {});
@@ -4658,8 +5437,6 @@
       };
 
       let authSubscription = null;
-
-      const fields = ["name", "role", "email", "phone", "location", "website", "avatar", "summary", "skills", "highlights", "experience", "education", "projects", "awards"];
 
       function $(id) {
         return document.getElementById(id);
@@ -4716,6 +5493,135 @@
         const worker = window.html2pdf().set(options).from(sourceNode).toPdf();
         const pdf = await worker.get("pdf");
         return pdf.output("blob");
+      }
+
+      function resolveContentValue(value) {
+        return typeof value === "function" ? value() : value;
+      }
+
+      function renderHomeSections() {
+        const heroList = $("homeHeroList");
+        const heroStats = $("homeHeroStats");
+        const featureStrip = $("homeFeatureStrip");
+
+        if (heroList) {
+          heroList.innerHTML = (HOME_CONTENT.heroList || []).map((item) => `
+            <div class="hero-list-item">${escapeHtml(resolveContentValue(item))}</div>
+          `).join("");
+        }
+
+        if (heroStats) {
+          heroStats.innerHTML = (HOME_CONTENT.heroStats || []).map((item) => `
+            <div class="hero-stat">
+              <strong>${escapeHtml(resolveContentValue(item.value))}</strong>
+              <span>${escapeHtml(resolveContentValue(item.label))}</span>
+            </div>
+          `).join("");
+        }
+
+        if (featureStrip) {
+          featureStrip.innerHTML = (HOME_CONTENT.featureCards || []).map((card) => `
+            <a
+              class="feature-card"
+              href="${escapeHtml(card.tab ? `#page-${card.tab}` : "#page-cv")}"
+              ${card.tab ? `data-guide-tab="${escapeHtml(card.tab)}"` : ""}
+              ${card.action ? `data-guide-action="${escapeHtml(card.action)}"` : ""}
+            >
+              <div class="feature-card-top">
+                ${card.kicker ? `<span class="feature-card-kicker">${escapeHtml(card.kicker)}</span>` : ""}
+                <div>
+                  <strong>${escapeHtml(card.title)}</strong>
+                  <p>${escapeHtml(card.description)}</p>
+                </div>
+              </div>
+              <span class="feature-card-action">${escapeHtml(card.actionLabel || "前往查看")}</span>
+            </a>
+          `).join("");
+        }
+      }
+
+      function renderJobPresetBar() {
+        const bar = $("jobRoleBar");
+        if (!bar) return;
+        bar.innerHTML = Object.entries(JOB_PRESETS).map(([id, preset]) => `
+          <button class="job-chip" type="button" data-job="${escapeHtml(id)}">
+            ${preset.icon ? `${escapeHtml(preset.icon)} ` : ""}${escapeHtml(preset.label)}
+          </button>
+        `).join("");
+      }
+
+      function renderTemplateControls() {
+        const grid = $("templateGrid");
+        const select = $("defaultTemplateSelect");
+
+        if (grid) {
+          grid.innerHTML = templateCatalog.map((template) => `
+            <button
+              class="template-option${state.template === template.id ? " active" : ""}"
+              type="button"
+              data-template-option="${escapeHtml(template.id)}"
+              style="--swatch-sidebar:${template.swatchSidebar};--swatch-paper:${template.swatchPaper};--swatch-accent-soft:${template.swatchAccentSoft};"
+            >
+              <div class="template-swatch"><div></div><div></div></div>
+              <strong>${escapeHtml(template.shortLabel || template.label)}</strong>
+              <span>${escapeHtml(template.description || template.label)}</span>
+            </button>
+          `).join("");
+        }
+
+        if (select) {
+          select.innerHTML = templateCatalog.map((template) => `
+            <option value="${escapeHtml(template.id)}">${escapeHtml(template.label)}</option>
+          `).join("");
+        }
+      }
+
+      function renderFieldControl(field) {
+        const tag = field.type === "textarea" ? "textarea" : "input";
+        const extraClass = field.full ? " full" : "";
+        const typeAttr = tag === "input" ? ` type="${escapeHtml(field.type || "text")}"` : "";
+        const placeholder = field.placeholder ? ` placeholder="${escapeHtml(field.placeholder)}"` : "";
+        const rows = tag === "textarea" && field.rows ? ` rows="${Number(field.rows)}"` : "";
+        return `
+          <div class="field${extraClass}">
+            ${field.label ? `<label>${escapeHtml(field.label)}</label>` : ""}
+            <${tag} id="${escapeHtml(field.id)}"${typeAttr}${placeholder}${rows}></${tag}>
+          </div>
+        `;
+      }
+
+      function renderCvFormSections() {
+        const container = $("cvFormSections");
+        if (!container) return;
+        container.innerHTML = CV_FIELD_SECTIONS.map((section) => `
+          <div class="section-card" id="${escapeHtml(section.id || `section-${section.title}`)}">
+            <h3>${escapeHtml(section.title)}</h3>
+            ${section.description ? `<p>${escapeHtml(section.description)}</p>` : ""}
+            <div class="${escapeHtml(section.gridClass || "field-grid")}">
+              ${(section.fields || []).map(renderFieldControl).join("")}
+            </div>
+          </div>
+        `).join("");
+      }
+
+      function renderPortfolioToolsGrid() {
+        const grid = $("pfToolsGrid");
+        if (!grid) return;
+        const groups = Array.isArray(runtimeConfigSource.portfolioTools) && runtimeConfigSource.portfolioTools.length
+          ? runtimeConfigSource.portfolioTools
+          : DEFAULT_PORTFOLIO_TOOLS;
+        grid.innerHTML = groups.map((group) => `
+          <div class="pf-tool-category-label">${escapeHtml(group.category)}</div>
+          ${(group.items || []).map((item) => `
+            <a class="pf-tool-card" href="${escapeHtml(item.href)}" target="_blank" rel="noreferrer noopener">
+              <span class="pf-tool-icon">${escapeHtml(item.icon || "")}</span>
+              <div class="pf-tool-info">
+                <strong>${escapeHtml(item.title)}</strong>
+                <span>${escapeHtml(item.description || "")}</span>
+              </div>
+            </a>
+          `).join("")}
+        `).join("");
       }
 
       function setMessage(text, type = "") {
@@ -4816,10 +5722,19 @@
         return next;
       }
 
+      function normalizeCvImageMeta(meta) {
+        return {
+          x: Number.isFinite(Number(meta?.x)) ? Math.min(100, Math.max(0, Number(meta.x))) : 50,
+          y: Number.isFinite(Number(meta?.y)) ? Math.min(100, Math.max(0, Number(meta.y))) : 50,
+          scale: Number.isFinite(Number(meta?.scale)) ? Math.min(2.2, Math.max(1, Number(meta.scale))) : 1
+        };
+      }
+
       function getLayoutState(templateId = state.template) {
         const template = templateDefinitions[templateId] || templateDefinitions["n-tech"];
         const saved = state.layoutPrefs[templateId] || {};
         return {
+          presetId: saved.presetId || "",
           layout: saved.layout || template.layout,
           fontFamily: saved.fontFamily || template.fontFamily,
           sidebarWidth: saved.sidebarWidth || template.sidebarWidth,
@@ -4827,9 +5742,55 @@
           sectionGap: saved.sectionGap || template.sectionGap,
           avatarShape: saved.avatarShape || template.avatarShape,
           profileAlign: saved.profileAlign || template.profileAlign,
+          avatarMeta: normalizeCvImageMeta(saved.avatarMeta),
           blockStyles: saved.blockStyles || {},
           regions: normalizeLayoutRegions(saved.regions || template.regions)
         };
+      }
+
+      function getMatchingLayoutPreset(layoutState = getLayoutState()) {
+        return Object.entries(CV_LAYOUT_PRESETS).find(([, preset]) => {
+          return preset.layout === layoutState.layout
+            && preset.fontFamily === layoutState.fontFamily
+            && preset.sidebarWidth === layoutState.sidebarWidth
+            && preset.baseFontSize === layoutState.baseFontSize
+            && preset.sectionGap === layoutState.sectionGap
+            && preset.avatarShape === layoutState.avatarShape
+            && preset.profileAlign === layoutState.profileAlign
+            && JSON.stringify(normalizeLayoutRegions(preset.regions)) === JSON.stringify(normalizeLayoutRegions(layoutState.regions));
+        })?.[0] || "";
+      }
+
+      function applyLayoutPreset(presetId) {
+        const preset = CV_LAYOUT_PRESETS[presetId];
+        if (!preset) return;
+        patchCurrentLayout((layoutState) => {
+          layoutState.presetId = presetId;
+          layoutState.layout = preset.layout;
+          layoutState.fontFamily = preset.fontFamily;
+          layoutState.sidebarWidth = preset.sidebarWidth;
+          layoutState.baseFontSize = preset.baseFontSize;
+          layoutState.sectionGap = preset.sectionGap;
+          layoutState.avatarShape = preset.avatarShape;
+          layoutState.profileAlign = preset.profileAlign;
+          layoutState.regions = clone(preset.regions);
+        });
+        setMessage(`已套用「${CV_LAYOUT_PRESETS[presetId].label}」排版。`, "success");
+      }
+
+      function renderLayoutPresetButtons() {
+        const grid = $("layoutPresetGrid");
+        if (!grid) return;
+        const activePreset = getLayoutState().presetId || getMatchingLayoutPreset();
+        grid.innerHTML = Object.entries(CV_LAYOUT_PRESETS).map(([id, preset]) => `
+          <button class="layout-preset-btn${activePreset === id ? " active" : ""}" type="button" data-layout-preset="${escapeHtml(id)}">
+            <strong>${escapeHtml(preset.label)}</strong>
+            <span>${escapeHtml(preset.desc)}</span>
+          </button>
+        `).join("");
+        grid.querySelectorAll("[data-layout-preset]").forEach((button) => {
+          button.addEventListener("click", () => applyLayoutPreset(button.dataset.layoutPreset));
+        });
       }
 
       function persistLayout(templateId, nextLayout) {
@@ -4841,6 +5802,8 @@
         const nextLayout = getLayoutState();
         mutator(nextLayout);
         nextLayout.regions = normalizeLayoutRegions(nextLayout.regions);
+        nextLayout.avatarMeta = normalizeCvImageMeta(nextLayout.avatarMeta);
+        nextLayout.presetId = getMatchingLayoutPreset(nextLayout);
         persistLayout(state.template, nextLayout);
         updatePreview();
         syncLayoutControls();
@@ -4871,9 +5834,13 @@
 
       function buildAvatar(layoutState) {
         const initials = (state.data.name || "CV").trim().slice(0, 2).toUpperCase();
+        const avatarMeta = normalizeCvImageMeta(layoutState.avatarMeta);
         return `
-          <div class="avatar ${escapeHtml(layoutState.avatarShape)}">
-            ${state.data.avatar ? `<img src="${escapeHtml(state.data.avatar)}" alt="avatar" />` : escapeHtml(initials)}
+          <div
+            class="avatar ${escapeHtml(layoutState.avatarShape)}"
+            style="--avatar-pos-x:${avatarMeta.x}%;--avatar-pos-y:${avatarMeta.y}%;--avatar-scale:${avatarMeta.scale};"
+          >
+            ${state.data.avatar ? `<img data-cv-avatar-img="true" src="${escapeHtml(state.data.avatar)}" alt="avatar" /><span class="image-drag-badge">拖曳圖片</span>` : escapeHtml(initials)}
           </div>
         `;
       }
@@ -4914,55 +5881,58 @@
             </div>`;
         }
         if (blockId === "summary") {
-          return `<div class="main-block"><h3>Summary</h3>${ce("summary", "div", "cv-summary", state.data.summary || "", "點擊輸入摘要…")}</div>`;
+          const summaryConfig = CV_BLOCK_CONTENT.summary || {};
+          return `<div class="main-block"><h3>${escapeHtml(summaryConfig.heading || "Summary")}</h3>${ce("summary", "div", "cv-summary", state.data.summary || "", summaryConfig.placeholder || "點擊輸入摘要…")}</div>`;
         }
         if (blockId === "contacts") {
-          const cfields = [
-            { f: "email",    ph: "Email" },
-            { f: "phone",    ph: "電話" },
-            { f: "location", ph: "地點" },
-            { f: "website",  ph: "網站 / 作品集" }
-          ];
+          const contactsConfig = CV_BLOCK_CONTENT.contacts || {};
+          const cfields = Array.isArray(contactsConfig.fields) ? contactsConfig.fields : [];
           const items = cfields.map(cf =>
             `<div class="contact-item" contenteditable="true" data-field="${cf.f}" data-sync="text" spellcheck="false" data-ph="${cf.ph}">${escapeHtml(state.data[cf.f] || "")}</div>`
           ).join("");
-          return `<div class="aside-block"><h3>聯絡方式</h3><div class="contact-list">${items}</div></div>`;
+          return `<div class="aside-block"><h3>${escapeHtml(contactsConfig.heading || "聯絡方式")}</h3><div class="contact-list">${items}</div></div>`;
         }
         if (blockId === "skills") {
+          const skillsConfig = CV_BLOCK_CONTENT.skills || {};
           const skillList = splitLines(state.data.skills.replaceAll(",", "\n"));
           const pills = skillList.length
             ? skillList.map((s, i) =>
-                `<span class="simple-pill" contenteditable="true" data-field="skills" data-sync="list-item" data-li="${i}" spellcheck="false" data-ph="技能">${escapeHtml(s)}</span>`
-              ).join("") + `<button class="simple-pill wysiwyg-add-btn" data-add-to="skills" type="button" title="新增技能">＋</button>`
-            : `<div class="empty-block" style="cursor:pointer;" data-add-to="skills">點擊這裡新增技能標籤</div>`;
-          return `<div class="aside-block"><h3>技能</h3><div class="simple-list">${pills}</div></div>`;
+                `<span class="simple-pill" contenteditable="true" data-field="skills" data-sync="list-item" data-li="${i}" spellcheck="false" data-ph="${escapeHtml(skillsConfig.itemPlaceholder || "技能")}">${escapeHtml(s)}</span>`
+              ).join("") + `<button class="simple-pill wysiwyg-add-btn" data-add-to="skills" type="button" title="${escapeHtml(skillsConfig.addTitle || "新增技能")}">${escapeHtml(skillsConfig.addLabel || "＋")}</button>`
+            : `<div class="empty-block" style="cursor:pointer;" data-add-to="skills">${escapeHtml(skillsConfig.emptyText || "點擊這裡新增技能標籤")}</div>`;
+          return `<div class="aside-block"><h3>${escapeHtml(skillsConfig.heading || "技能")}</h3><div class="simple-list">${pills}</div></div>`;
         }
         if (blockId === "highlights") {
+          const highlightsConfig = CV_BLOCK_CONTENT.highlights || {};
           const lines = splitLines(state.data.highlights);
           const items = lines.length
             ? lines.map((line, i) =>
-                `<div class="contact-item" contenteditable="true" data-field="highlights" data-sync="list-item" data-li="${i}" spellcheck="false" data-ph="亮點">${escapeHtml(line)}</div>`
-              ).join("") + `<button class="wysiwyg-add-btn contact-item" data-add-to="highlights" type="button">＋ 新增亮點</button>`
-            : `<div class="empty-block" style="cursor:pointer;" data-add-to="highlights">點擊這裡新增亮點</div>`;
-          return `<div class="aside-block"><h3>亮點</h3><div class="contact-list">${items}</div></div>`;
+                `<div class="contact-item" contenteditable="true" data-field="highlights" data-sync="list-item" data-li="${i}" spellcheck="false" data-ph="${escapeHtml(highlightsConfig.itemPlaceholder || "亮點")}">${escapeHtml(line)}</div>`
+              ).join("") + `<button class="wysiwyg-add-btn contact-item" data-add-to="highlights" type="button">${escapeHtml(highlightsConfig.addLabel || "＋ 新增亮點")}</button>`
+            : `<div class="empty-block" style="cursor:pointer;" data-add-to="highlights">${escapeHtml(highlightsConfig.emptyText || "點擊這裡新增亮點")}</div>`;
+          return `<div class="aside-block"><h3>${escapeHtml(highlightsConfig.heading || "亮點")}</h3><div class="contact-list">${items}</div></div>`;
         }
         if (blockId === "awards") {
+          const awardsConfig = CV_BLOCK_CONTENT.awards || {};
           const lines = splitLines(state.data.awards);
           const items = lines.length
             ? lines.map((line, i) =>
-                `<div class="contact-item" contenteditable="true" data-field="awards" data-sync="list-item" data-li="${i}" spellcheck="false" data-ph="獎項 / 證照">${escapeHtml(line)}</div>`
-              ).join("") + `<button class="wysiwyg-add-btn contact-item" data-add-to="awards" type="button">＋ 新增獎項</button>`
-            : `<div class="empty-block" style="cursor:pointer;" data-add-to="awards">點擊這裡新增獎項 / 證照</div>`;
-          return `<div class="aside-block"><h3>獎項 / 證照</h3><div class="contact-list">${items}</div></div>`;
+                `<div class="contact-item" contenteditable="true" data-field="awards" data-sync="list-item" data-li="${i}" spellcheck="false" data-ph="${escapeHtml(awardsConfig.itemPlaceholder || "獎項 / 證照")}">${escapeHtml(line)}</div>`
+              ).join("") + `<button class="wysiwyg-add-btn contact-item" data-add-to="awards" type="button">${escapeHtml(awardsConfig.addLabel || "＋ 新增獎項")}</button>`
+            : `<div class="empty-block" style="cursor:pointer;" data-add-to="awards">${escapeHtml(awardsConfig.emptyText || "點擊這裡新增獎項 / 證照")}</div>`;
+          return `<div class="aside-block"><h3>${escapeHtml(awardsConfig.heading || "獎項 / 證照")}</h3><div class="contact-list">${items}</div></div>`;
         }
         if (blockId === "experience") {
-          return `<div class="main-block"><h3>Experience</h3><div>${renderEditableTimeline(parseEntries(state.data.experience), "experience", "點擊這裡新增工作 / 實習經歷。")}</div><button class="wysiwyg-add-btn" data-add-to="experience" type="button" style="margin-top:8px;">＋ 新增經歷</button></div>`;
+          const experienceConfig = CV_BLOCK_CONTENT.experience || {};
+          return `<div class="main-block"><h3>${escapeHtml(experienceConfig.heading || "Experience")}</h3><div>${renderEditableTimeline(parseEntries(state.data.experience), "experience", experienceConfig.emptyText || "點擊這裡新增工作 / 實習經歷。")}</div><button class="wysiwyg-add-btn" data-add-to="experience" type="button" style="margin-top:8px;">${escapeHtml(experienceConfig.addLabel || "＋ 新增經歷")}</button></div>`;
         }
         if (blockId === "projects") {
-          return `<div class="main-block"><h3>Projects</h3><div>${renderEditableTimeline(parseEntries(state.data.projects), "projects", "點擊這裡新增專案 / 作品。")}</div><button class="wysiwyg-add-btn" data-add-to="projects" type="button" style="margin-top:8px;">＋ 新增專案</button></div>`;
+          const projectsConfig = CV_BLOCK_CONTENT.projects || {};
+          return `<div class="main-block"><h3>${escapeHtml(projectsConfig.heading || "Projects")}</h3><div>${renderEditableTimeline(parseEntries(state.data.projects), "projects", projectsConfig.emptyText || "點擊這裡新增專案 / 作品。")}</div><button class="wysiwyg-add-btn" data-add-to="projects" type="button" style="margin-top:8px;">${escapeHtml(projectsConfig.addLabel || "＋ 新增專案")}</button></div>`;
         }
         if (blockId === "education") {
-          return `<div class="main-block"><h3>Education</h3><div>${renderEditableTimeline(parseEntries(state.data.education), "education", "點擊這裡新增學歷。")}</div><button class="wysiwyg-add-btn" data-add-to="education" type="button" style="margin-top:8px;">＋ 新增學歷</button></div>`;
+          const educationConfig = CV_BLOCK_CONTENT.education || {};
+          return `<div class="main-block"><h3>${escapeHtml(educationConfig.heading || "Education")}</h3><div>${renderEditableTimeline(parseEntries(state.data.education), "education", educationConfig.emptyText || "點擊這裡新增學歷。")}</div><button class="wysiwyg-add-btn" data-add-to="education" type="button" style="margin-top:8px;">${escapeHtml(educationConfig.addLabel || "＋ 新增學歷")}</button></div>`;
         }
         return "";
       }
@@ -5066,16 +6036,23 @@
 
       function syncLayoutControls() {
         const layoutState = getLayoutState();
+        $("layoutModeSelect").value = layoutState.layout;
         $("sidebarWidthRange").value = String(layoutState.sidebarWidth);
         $("baseFontSizeRange").value = String(layoutState.baseFontSize);
         $("sectionGapRange").value = String(layoutState.sectionGap);
         $("fontFamilySelect").value = layoutState.fontFamily;
+        $("profileAlignSelect").value = layoutState.profileAlign;
+        $("avatarShapeSelect").value = layoutState.avatarShape;
+        $("avatarPosXRange").value = String(normalizeCvImageMeta(layoutState.avatarMeta).x);
+        $("avatarPosYRange").value = String(normalizeCvImageMeta(layoutState.avatarMeta).y);
+        $("avatarScaleRange").value = String(normalizeCvImageMeta(layoutState.avatarMeta).scale);
 
         const blockStyle = getBlockStyle(state.selectedBlock, layoutState);
         $("selectedBlockLabel").textContent = `${blockLabels[state.selectedBlock] || state.selectedBlock} · ${getBlockRegion(state.selectedBlock, layoutState) === "sidebar" ? "側欄" : "主欄"}`;
         $("blockRegionSelect").value = getBlockRegion(state.selectedBlock, layoutState);
         $("blockFontSizeRange").value = String(blockStyle.fontSize || layoutState.baseFontSize);
         $("blockSpacingRange").value = String(blockStyle.padding || 0);
+        renderLayoutPresetButtons();
       }
 
       function setSelectedBlock(blockId) {
@@ -5798,6 +6775,11 @@
           });
         });
 
+        $("layoutModeSelect").addEventListener("change", (event) => {
+          patchCurrentLayout((layoutState) => {
+            layoutState.layout = event.target.value;
+          });
+        });
         $("sidebarWidthRange").addEventListener("input", (event) => {
           patchCurrentLayout((layoutState) => {
             layoutState.sidebarWidth = Number(event.target.value);
@@ -5817,6 +6799,40 @@
           patchCurrentLayout((layoutState) => {
             layoutState.fontFamily = event.target.value;
           });
+        });
+        $("profileAlignSelect").addEventListener("change", (event) => {
+          patchCurrentLayout((layoutState) => {
+            layoutState.profileAlign = event.target.value;
+          });
+        });
+        $("avatarShapeSelect").addEventListener("change", (event) => {
+          patchCurrentLayout((layoutState) => {
+            layoutState.avatarShape = event.target.value;
+          });
+        });
+        $("avatarPosXRange").addEventListener("input", (event) => {
+          patchCurrentLayout((layoutState) => {
+            layoutState.avatarMeta = normalizeCvImageMeta(layoutState.avatarMeta);
+            layoutState.avatarMeta.x = Number(event.target.value);
+          });
+        });
+        $("avatarPosYRange").addEventListener("input", (event) => {
+          patchCurrentLayout((layoutState) => {
+            layoutState.avatarMeta = normalizeCvImageMeta(layoutState.avatarMeta);
+            layoutState.avatarMeta.y = Number(event.target.value);
+          });
+        });
+        $("avatarScaleRange").addEventListener("input", (event) => {
+          patchCurrentLayout((layoutState) => {
+            layoutState.avatarMeta = normalizeCvImageMeta(layoutState.avatarMeta);
+            layoutState.avatarMeta.scale = Number(event.target.value);
+          });
+        });
+        $("resetAvatarImageBtn").addEventListener("click", () => {
+          patchCurrentLayout((layoutState) => {
+            layoutState.avatarMeta = normalizeCvImageMeta({ x: 50, y: 50, scale: 1 });
+          });
+          setMessage("已重設頭像位置與縮放。", "success");
         });
         $("blockRegionSelect").addEventListener("change", (event) => {
           patchCurrentLayout((layoutState) => {
@@ -6202,6 +7218,64 @@
           if (block && !e.target.isContentEditable) {
             setSelectedBlock(block.dataset.blockId);
           }
+        });
+      }
+
+      function attachCvImageDragListeners() {
+        const paper = $("cvPaper");
+        if (!paper || paper.dataset.imageDragBound === "true") return;
+        paper.dataset.imageDragBound = "true";
+
+        let dragState = null;
+
+        const finishDrag = () => {
+          if (dragState?.finalMeta) {
+            patchCurrentLayout((layoutState) => {
+              layoutState.avatarMeta = normalizeCvImageMeta(dragState.finalMeta);
+            });
+          }
+          dragState = null;
+        };
+
+        paper.addEventListener("pointerdown", (event) => {
+          const avatarImg = event.target.closest("[data-cv-avatar-img]");
+          if (!avatarImg) return;
+          const frame = avatarImg.closest(".avatar");
+          if (!frame) return;
+          const avatarMeta = normalizeCvImageMeta(getLayoutState().avatarMeta);
+          dragState = {
+            pointerId: event.pointerId,
+            frame,
+            startX: event.clientX,
+            startY: event.clientY,
+            meta: { ...avatarMeta }
+          };
+          avatarImg.setPointerCapture?.(event.pointerId);
+          event.preventDefault();
+        });
+
+        paper.addEventListener("pointermove", (event) => {
+          if (!dragState || event.pointerId !== dragState.pointerId) return;
+          const width = dragState.frame.clientWidth || 1;
+          const height = dragState.frame.clientHeight || 1;
+          const nextX = Math.min(100, Math.max(0, dragState.meta.x + (event.clientX - dragState.startX) / width * 100));
+          const nextY = Math.min(100, Math.max(0, dragState.meta.y + (event.clientY - dragState.startY) / height * 100));
+          dragState.frame.style.setProperty("--avatar-pos-x", `${nextX}%`);
+          dragState.frame.style.setProperty("--avatar-pos-y", `${nextY}%`);
+          dragState.finalMeta = normalizeCvImageMeta({ ...dragState.meta, x: nextX, y: nextY });
+          $("avatarPosXRange").value = String(dragState.finalMeta.x);
+          $("avatarPosYRange").value = String(dragState.finalMeta.y);
+        });
+
+        paper.addEventListener("pointerup", finishDrag);
+        paper.addEventListener("pointercancel", finishDrag);
+        paper.addEventListener("dblclick", (event) => {
+          const avatarImg = event.target.closest("[data-cv-avatar-img]");
+          if (!avatarImg) return;
+          patchCurrentLayout((layoutState) => {
+            layoutState.avatarMeta = normalizeCvImageMeta({ x: 50, y: 50, scale: 1 });
+          });
+          setMessage("已重設頭像位置與縮放。", "success");
         });
       }
 
@@ -6654,6 +7728,10 @@
             type: authRedirectResult.type === "error" ? "error" : ""
           };
         }
+        renderHomeSections();
+        renderTemplateControls();
+        renderCvFormSections();
+        renderJobPresetBar();
         syncInputs();
         syncWorkflowUi();
         buildTemplateStrip();          // ← build strip before updateTemplate
@@ -6662,6 +7740,7 @@
         syncLayoutControls();
         attachInputListeners();
         attachWysiwygListeners();      // ← contenteditable sync
+        attachCvImageDragListeners();
         attachFormatToolbar();         // ← floating format toolbar
         attachJobChipListeners();      // ← job preset chips
         attachToolListeners();         // ← tools panel
@@ -6685,18 +7764,24 @@
       const PF_PRESET_KEY = "pf-studio-preset-v1";
 
       const pfThemes = {
-        slate:      { label: "Slate Dossier", shortLabel: "深藍提案", description: "正式、商管、顧問式提案", color: "#404b5a", deep: "#1f2d3d", soft: "#dfe7ef", paper: "#f7f2ea", line: "#c8d2dc", variant: "dossier", font: "sans" },
-        brick:      { label: "Brick Editorial", shortLabel: "磚紅敘事", description: "人文、社科、文字敘事感", color: "#8b4a42", deep: "#472925", soft: "#ead9d5", paper: "#f8f0eb", line: "#d6bbb4", variant: "editorial", font: "serif" },
-        rose:       { label: "Rose Showcase", shortLabel: "玫瑰展示", description: "教育、服務、溫柔親和", color: "#9d6565", deep: "#4f3538", soft: "#ecdede", paper: "#faf3f1", line: "#dcc2c2", variant: "soft", font: "display" },
-        indigo:     { label: "Indigo Blueprint", shortLabel: "靛藍藍圖", description: "工程、資工、技術架構", color: "#3a4f7a", deep: "#1d2d4d", soft: "#dde4f2", paper: "#f4f3f8", line: "#c5d1e5", variant: "blueprint", font: "sans" },
-        forest:     { label: "Forest Studio", shortLabel: "墨綠研究", description: "自然、生醫、研究紀錄", color: "#3d6b5e", deep: "#1e4038", soft: "#dcebe5", paper: "#f3f6f2", line: "#bfd4ca", variant: "studio", font: "serif" },
-        umber:      { label: "Umber Studio", shortLabel: "深棕建築", description: "建築、空間、工藝質感", color: "#5a4032", deep: "#2d211c", soft: "#e8ddd3", paper: "#f7f2ec", line: "#cfbeaf", variant: "studio", font: "serif" },
-        ivory:      { label: "Ivory Editorial", shortLabel: "象牙書冊", description: "法律、文史、正式閱讀感", color: "#9c7e58", deep: "#473726", soft: "#efe4d6", paper: "#fcf8f1", line: "#dbcbb7", variant: "editorial", font: "serif" },
-        cobalt:     { label: "Cobalt Strategy", shortLabel: "鈷藍策略", description: "財金、企管、分析報告感", color: "#2957a4", deep: "#152b57", soft: "#dee7f6", paper: "#f6f8fd", line: "#c5d4eb", variant: "dossier", font: "sans" },
-        sage:       { label: "Sage Care", shortLabel: "草木照護", description: "護理、心理、照護敘事", color: "#5d8a79", deep: "#27473d", soft: "#deece7", paper: "#f7fbf9", line: "#c7ddd4", variant: "soft", font: "serif" },
-        noir:       { label: "Noir Counsel", shortLabel: "黑白論證", description: "法政、辯論、精準高對比", color: "#2d2d2d", deep: "#111111", soft: "#e7e7e4", paper: "#fbfbfa", line: "#d7d7d3", variant: "dossier", font: "sans" },
-        aurora:     { label: "Aurora Gallery", shortLabel: "曙光展演", description: "設計、影像、品牌案例感", color: "#8a6de9", deep: "#2e2457", soft: "#e9e2ff", paper: "#faf8ff", line: "#d6cbf5", variant: "gallery", font: "display" },
-        terracotta: { label: "Terracotta Atelier", shortLabel: "陶土工坊", description: "藝術、工藝、手作氣質", color: "#b86a4d", deep: "#5d2e20", soft: "#f2dfd6", paper: "#fff7f2", line: "#e2c4b5", variant: "gallery", font: "display" }
+        slate:        { label: "Slate Dossier", shortLabel: "深藍提案", description: "正式、商管、顧問式提案", category: "結構型", bestFor: "封面＋目錄＋重點條列", inspiration: "104 建議的摘要、圖表、章節結構", color: "#404b5a", deep: "#1f2d3d", soft: "#dfe7ef", paper: "#f7f2ea", line: "#c8d2dc", variant: "dossier", font: "sans" },
+        cobalt:       { label: "Cobalt Strategy", shortLabel: "鈷藍策略", description: "財金、企管、分析報告感", category: "結構型", bestFor: "分析、成果、結論導向", inspiration: "商管與報告式 portfolio", color: "#2957a4", deep: "#152b57", soft: "#dee7f6", paper: "#f6f8fd", line: "#c5d4eb", variant: "dossier", font: "sans" },
+        noir:         { label: "Noir Counsel", shortLabel: "黑白論證", description: "法政、辯論、精準高對比", category: "結構型", bestFor: "論證、證據、重點清單", inspiration: "正式 dossier 與 case brief", color: "#2d2d2d", deep: "#111111", soft: "#e7e7e4", paper: "#fbfbfa", line: "#d7d7d3", variant: "dossier", font: "sans" },
+        signal:       { label: "Signal Strategy", shortLabel: "亮藍策略", description: "俐落、圖表感、決策導向", category: "結構型", bestFor: "企劃、競賽、分析簡報", inspiration: "企業提案 deck", color: "#1f6fd1", deep: "#12315d", soft: "#dbeafe", paper: "#f8fbff", line: "#c8daf1", variant: "dossier", font: "sans" },
+        brick:        { label: "Brick Editorial", shortLabel: "磚紅敘事", description: "人文、社科、文字敘事感", category: "敘事型", bestFor: "長文反思、主題式章節", inspiration: "編輯式 portfolio 與文史作品集", color: "#8b4a42", deep: "#472925", soft: "#ead9d5", paper: "#f8f0eb", line: "#d6bbb4", variant: "editorial", font: "serif" },
+        ivory:        { label: "Ivory Editorial", shortLabel: "象牙書冊", description: "法律、文史、正式閱讀感", category: "敘事型", bestFor: "自述、閱讀、研究說明", inspiration: "書冊式作品集", color: "#9c7e58", deep: "#473726", soft: "#efe4d6", paper: "#fcf8f1", line: "#dbcbb7", variant: "editorial", font: "serif" },
+        academy:      { label: "Academy Reader", shortLabel: "學院閱讀", description: "穩定、清楚、學術摘要感", category: "敘事型", bestFor: "研究動機、方法、反思", inspiration: "學術海報與申請資料摘要", color: "#5f6f87", deep: "#273649", soft: "#e4e9f0", paper: "#fafbfd", line: "#ced7e2", variant: "editorial", font: "serif" },
+        rose:         { label: "Rose Showcase", shortLabel: "玫瑰展示", description: "教育、服務、溫柔親和", category: "溫和型", bestFor: "服務、陪伴、教學歷程", inspiration: "教育與社會服務型 portfolio", color: "#9d6565", deep: "#4f3538", soft: "#ecdede", paper: "#faf3f1", line: "#dcc2c2", variant: "soft", font: "display" },
+        sage:         { label: "Sage Care", shortLabel: "草木照護", description: "護理、心理、照護敘事", category: "溫和型", bestFor: "照護故事、實習反思、成長脈絡", inspiration: "醫護與陪伴敘事頁面", color: "#5d8a79", deep: "#27473d", soft: "#deece7", paper: "#f7fbf9", line: "#c7ddd4", variant: "soft", font: "serif" },
+        sand:         { label: "Sand Reflection", shortLabel: "沙色反思", description: "柔和、簡報感、摘要清楚", category: "溫和型", bestFor: "多元表現與反思整理", inspiration: "學生簡報與心得頁", color: "#b89058", deep: "#5a3f26", soft: "#f1e4cf", paper: "#fdf8f1", line: "#e2d1ba", variant: "soft", font: "serif" },
+        indigo:       { label: "Indigo Blueprint", shortLabel: "靛藍藍圖", description: "工程、資工、技術架構", category: "技術型", bestFor: "流程、架構、專題拆解", inspiration: "工程藍圖與架構圖版面", color: "#3a4f7a", deep: "#1d2d4d", soft: "#dde4f2", paper: "#f4f3f8", line: "#c5d1e5", variant: "blueprint", font: "sans" },
+        graphite:     { label: "Graphite Grid", shortLabel: "石墨格線", description: "中性、理性、模組化", category: "技術型", bestFor: "資訊密度高、模組分區清楚", inspiration: "產品 spec 與 UI case study", color: "#5e6873", deep: "#202832", soft: "#e4e9ee", paper: "#f7f9fb", line: "#ccd5df", variant: "blueprint", font: "sans" },
+        forest:       { label: "Forest Studio", shortLabel: "墨綠研究", description: "自然、生醫、研究紀錄", category: "研究型", bestFor: "研究流程、方法、觀察紀錄", inspiration: "研究型學習歷程與實驗紀錄", color: "#3d6b5e", deep: "#1e4038", soft: "#dcebe5", paper: "#f3f6f2", line: "#bfd4ca", variant: "studio", font: "serif" },
+        umber:        { label: "Umber Studio", shortLabel: "深棕建築", description: "建築、空間、工藝質感", category: "研究型", bestFor: "作品圖面、材料、過程紀錄", inspiration: "建築作品集與材料板", color: "#5a4032", deep: "#2d211c", soft: "#e8ddd3", paper: "#f7f2ec", line: "#cfbeaf", variant: "studio", font: "serif" },
+        moss:         { label: "Moss Research", shortLabel: "苔綠研究", description: "田野、環境、觀察式排版", category: "研究型", bestFor: "自然觀察、田調、資料整理", inspiration: "field notes 與 research journal", color: "#62745b", deep: "#2d3928", soft: "#e3eadc", paper: "#f8faf5", line: "#cfd8c8", variant: "studio", font: "serif" },
+        aurora:       { label: "Aurora Gallery", shortLabel: "曙光展演", description: "設計、影像、品牌案例感", category: "展示型", bestFor: "圖像先行、案例展示", inspiration: "Canva portfolio 類展示頁", color: "#8a6de9", deep: "#2e2457", soft: "#e9e2ff", paper: "#faf8ff", line: "#d6cbf5", variant: "gallery", font: "display" },
+        terracotta:   { label: "Terracotta Atelier", shortLabel: "陶土工坊", description: "藝術、工藝、手作氣質", category: "展示型", bestFor: "作品照片、手作細節、創作說明", inspiration: "展演型 portfolio 與工坊頁面", color: "#b86a4d", deep: "#5d2e20", soft: "#f2dfd6", paper: "#fff7f2", line: "#e2c4b5", variant: "gallery", font: "display" },
+        plum:         { label: "Plum Brandbook", shortLabel: "梅紫案例", description: "品牌、企劃、視覺提案感", category: "展示型", bestFor: "活動策劃、品牌作品、主視覺", inspiration: "品牌提案書", color: "#77506f", deep: "#311f33", soft: "#eadfef", paper: "#fcf8fd", line: "#d8c8dd", variant: "gallery", font: "display" }
       };
 
       const PF_DEPARTMENT_PRESETS = {
@@ -6729,6 +7814,177 @@
         civil:      { label: "公共服務 / 公職",  template: "ivory",     alt: "slate",      note: "穩定、可信，適合服務、紀錄與制度理解。" }
       };
 
+      const PF_CONTENT_TEMPLATES = {
+        course: {
+          label: "課程學習成果",
+          description: "適合單一課程、作業、實作作品，重點放在問題、方法、成果與反思。",
+          title: "課程學習成果",
+          chapters: [
+            {
+              title: "課程背景與任務",
+              sections: [
+                { header: "課程主題", body: "先交代這門課的主題、授課情境與老師給的任務。例如這份成果需要解決什麼問題、完成什麼作品，或回應哪一個學習目標。", imageCaption: "可放課堂照片、講義截圖或任務說明頁" },
+                { header: "我為什麼選這個方向", body: "說明自己在題目發想時的思考。可以寫你注意到的現象、想解決的問題，或這個主題和你的興趣有什麼連結。", imageCaption: "可放構想草圖、筆記或腦力激盪紀錄" }
+              ]
+            },
+            {
+              title: "製作過程與方法",
+              sections: [
+                { header: "執行步驟", body: "把過程拆成 2 到 4 個步驟，例如蒐集資料、設計實驗、進行訪談、製作作品、修改版本。讓教授看到你不是只放成果，而是真的有歷程。", imageCaption: "可放流程圖、表格、草稿對照" },
+                { header: "遇到的困難與調整", body: "具體寫出一個卡住的點，以及你怎麼修正。這段通常很加分，因為它能看出你如何面對問題與迭代。", imageCaption: "可放修正版、測試紀錄或失敗後的調整成果" }
+              ]
+            },
+            {
+              title: "成果與反思",
+              sections: [
+                { header: "最後成果", body: "整理這次完成的作品、報告或實驗結果，用一句話點出最有代表性的成效。", imageCaption: "可放完成品、成品頁、數據圖" },
+                { header: "我的收穫", body: "不要只寫學到很多，而是明確說出你學到哪一種能力，例如資料整理、表達、邏輯分析、團隊合作，並舉出對應例子。", imageCaption: "可放成果摘要卡或重點整理頁" }
+              ]
+            }
+          ]
+        },
+        reflection: {
+          label: "多元表現綜整",
+          description: "適合統整社團、服務、競賽、自主學習等多元表現，強調能力與成長脈絡。",
+          title: "多元表現綜整心得",
+          chapters: [
+            {
+              title: "我的學習主軸",
+              sections: [
+                { header: "核心興趣與方向", body: "先用一段話整理自己高中三年的主軸。不是把活動一條條列出，而是說明你最在意的主題，例如公共議題、設計表達、照護服務、科技應用。", imageCaption: "可放活動拼貼、主題照片或代表性畫面" },
+                { header: "我如何累積經驗", body: "點出你是怎麼從不同活動中逐步累積能力，例如從社團到競賽、從課堂到校外計畫，讓讀者看到脈絡。", imageCaption: "可放時間線或經驗地圖" }
+              ]
+            },
+            {
+              title: "代表經驗整理",
+              sections: [
+                { header: "經驗一：最有代表性的投入", body: "挑一段最能代表你的經驗，寫你做了什麼、扮演什麼角色、具體影響了什麼。", imageCaption: "可放活動紀錄、作品頁或證明文件" },
+                { header: "經驗二：能力成長最明顯的事件", body: "這一段可以專注在你如何從不熟悉到逐漸上手，呈現成長曲線與自我修正能力。", imageCaption: "可放前後版本對照、成果截圖" }
+              ]
+            },
+            {
+              title: "反思與申請連結",
+              sections: [
+                { header: "我從中看見的自己", body: "統整你最穩定出現的特質與能力，例如持續性、觀察力、組織力、同理心或表達能力。", imageCaption: "可放反思摘句或能力關鍵字" },
+                { header: "與未來科系的關聯", body: "最後把這些經驗和你想申請的科系連起來，說明你不是因為喜歡而選擇，而是已經透過經驗證明自己有動機與基礎。", imageCaption: "可放未來方向圖、學習計畫摘要" }
+              ]
+            }
+          ]
+        },
+        research: {
+          label: "專題研究 / 探究實作",
+          description: "適合自然科學、社會探究、專題研究，重點在研究問題、方法、結果與限制。",
+          title: "專題研究與探究實作",
+          chapters: [
+            {
+              title: "研究動機與問題意識",
+              sections: [
+                { header: "我觀察到的問題", body: "先說明你是在哪個情境下發現這個問題，為什麼它值得研究，並把問題描述得具體可理解。", imageCaption: "可放觀察照片、新聞、資料來源" },
+                { header: "研究目的與假設", body: "用簡單清楚的方式寫出你的研究目的、想驗證的假設，或想比較的變因。", imageCaption: "可放研究架構圖或概念圖" }
+              ]
+            },
+            {
+              title: "研究方法與執行",
+              sections: [
+                { header: "資料蒐集方法", body: "說明你用的是實驗、訪談、問卷、田野觀察、文本分析或其他方法，並交代你為什麼選這種方法。", imageCaption: "可放表單、訪綱、實驗裝置" },
+                { header: "分析與調整", body: "寫出過程中怎麼記錄、分析與修正。如果有研究限制，也可以誠實指出。", imageCaption: "可放表格、數據圖、紀錄表" }
+              ]
+            },
+            {
+              title: "結果、發現與反思",
+              sections: [
+                { header: "主要發現", body: "挑出最關鍵的研究結果，用簡單語句說出你發現了什麼，不要只貼圖表。", imageCaption: "可放最重要的圖表或成果頁" },
+                { header: "研究帶給我的能力", body: "說明這次探究如何讓你學會提出問題、整理證據、辨識限制與修正結論。", imageCaption: "可放研究過程剪影或結論摘要" }
+              ]
+            }
+          ]
+        },
+        camp: {
+          label: "營隊 / 研習活動",
+          description: "適合大學營隊、工作坊、校外參訪與研習，重點在經驗亮點與反思。",
+          title: "營隊與研習學習歷程",
+          chapters: [
+            {
+              title: "參與動機與期待",
+              sections: [
+                { header: "我為什麼報名", body: "交代你原本對這個領域的好奇、既有基礎，以及希望透過這次活動確認什麼方向。", imageCaption: "可放活動海報、錄取通知、出發前準備" },
+                { header: "活動前的準備", body: "說明你在參加前做了哪些閱讀、查資料或技能練習，讓你的投入看起來更主動。", imageCaption: "可放筆記、行前資料、設備照片" }
+              ]
+            },
+            {
+              title: "活動內容與亮點",
+              sections: [
+                { header: "最有收穫的學習片段", body: "挑 1 到 2 個最有代表性的課程、講座、實作或交流片段，寫出你從中學到了什麼。", imageCaption: "可放課程照片、作品、實作紀錄" },
+                { header: "我在其中做了什麼", body: "如果有分組討論、任務挑戰或成果發表，要明確交代你在團隊中的角色與實際貢獻。", imageCaption: "可放小組成果、簡報、發表照片" }
+              ]
+            },
+            {
+              title: "反思與延伸行動",
+              sections: [
+                { header: "這次經驗改變了我什麼", body: "說明這次活動如何影響你對科系、能力或未來方向的理解。", imageCaption: "可放心得摘句或未來規劃圖" },
+                { header: "後續延伸", body: "如果你因為這次活動延伸做了閱讀、專題、社團投入或比賽，這裡可以接起來。", imageCaption: "可放延伸成果或後續行動紀錄" }
+              ]
+            }
+          ]
+        },
+        service: {
+          label: "社團 / 服務學習",
+          description: "適合社團幹部、志工服務、活動籌辦，重點在角色、影響與自我成長。",
+          title: "社團與服務學習歷程",
+          chapters: [
+            {
+              title: "角色與投入背景",
+              sections: [
+                { header: "我參與的原因", body: "先交代你為什麼加入這個社團或服務活動，和你原本的興趣、價值或經驗有什麼連結。", imageCaption: "可放活動照片、社團紀錄或服務現場" },
+                { header: "我的角色", body: "具體寫出你擔任的職務、分工與責任，而不是只說有參與。", imageCaption: "可放分工表、活動海報、工作紀錄" }
+              ]
+            },
+            {
+              title: "活動執行與影響",
+              sections: [
+                { header: "一次代表性任務", body: "挑一場你最有投入感的活動，說明你如何規劃、執行與處理問題。", imageCaption: "可放流程、海報、現場照片" },
+                { header: "對他人或團隊的影響", body: "這一段可以寫活動成果、回饋、參與人數，或團隊運作因此變得更順的具體改變。", imageCaption: "可放成果數據、回饋截圖、合照" }
+              ]
+            },
+            {
+              title: "能力成長與反思",
+              sections: [
+                { header: "我學到的能力", body: "整理你透過這段歷程培養出的能力，例如溝通、協調、帶領、時間管理或同理心。", imageCaption: "可放能力整理圖或反思摘要" },
+                { header: "與未來方向的關聯", body: "說明這段社團或服務經驗如何幫助你理解未來想走的領域。", imageCaption: "可放未來規劃或延伸行動" }
+              ]
+            }
+          ]
+        },
+        competition: {
+          label: "競賽 / 作品集案例",
+          description: "適合競賽、作品提案、創作或品牌活動，重點在任務、策略、成果與優化。",
+          title: "競賽與作品案例整理",
+          chapters: [
+            {
+              title: "題目與挑戰",
+              sections: [
+                { header: "競賽主題或任務", body: "說明競賽題目、評分方向，或你要回應的真實問題。", imageCaption: "可放競賽簡章、題目摘要、提案背景" },
+                { header: "我的切入角度", body: "交代你的作品概念、策略或想法，讓人知道你不是照著別人的做法完成。", imageCaption: "可放 moodboard、草圖、概念圖" }
+              ]
+            },
+            {
+              title: "製作與修正過程",
+              sections: [
+                { header: "作品發展過程", body: "把過程拆成幾個階段，例如研究、構想、測試、修改、定稿。這段很適合放前後版本比較。", imageCaption: "可放版本演進、草稿與定稿對照" },
+                { header: "我如何解決問題", body: "說明過程中最大的瓶頸，以及你如何透過查資料、請教、測試或合作突破。", imageCaption: "可放筆記、測試截圖、修正紀錄" }
+              ]
+            },
+            {
+              title: "成果與說服力",
+              sections: [
+                { header: "最終成果與回饋", body: "整理結果、名次、評審回饋或觀眾回應，讓成果更具體。", imageCaption: "可放得獎照片、評語、成品畫面" },
+                { header: "這份作品代表了什麼能力", body: "最後點出這份作品最能代表你的哪種能力與特質，例如創意、策略、執行力或表達能力。", imageCaption: "可放成果摘要頁" }
+              ]
+            }
+          ]
+        }
+      };
+
       function uid() { return Math.random().toString(36).slice(2, 9); }
       function $el(id) { return document.getElementById(id); }
       function scrollPfTo(id, focusId) {
@@ -6754,17 +8010,65 @@
         return `linear-gradient(135deg, ${theme.deep} 0%, ${theme.color} 52%, ${theme.soft} 100%)`;
       }
 
+      function normalizePortfolioImageMeta(meta) {
+        return {
+          x: Number.isFinite(Number(meta?.x)) ? Math.min(100, Math.max(0, Number(meta.x))) : 50,
+          y: Number.isFinite(Number(meta?.y)) ? Math.min(100, Math.max(0, Number(meta.y))) : 50,
+          scale: Number.isFinite(Number(meta?.scale)) ? Math.min(2.2, Math.max(1, Number(meta.scale))) : 1
+        };
+      }
+
+      function portfolioImageStyle(meta, extra = "") {
+        const safeMeta = normalizePortfolioImageMeta(meta);
+        return `width:100%;height:100%;object-fit:cover;display:block;object-position:${safeMeta.x}% ${safeMeta.y}%;transform:scale(${safeMeta.scale});transform-origin:center center;${extra}`;
+      }
+
+      function normalizePortfolioData(data) {
+        const next = JSON.parse(JSON.stringify(data || pfDefault));
+        next.coverImageMeta = normalizePortfolioImageMeta(next.coverImageMeta);
+        next.chapters = Array.isArray(next.chapters) ? next.chapters : [];
+        next.chapters.forEach((chapter) => {
+          chapter.sections = Array.isArray(chapter.sections) ? chapter.sections : [];
+          chapter.sections.forEach((section) => {
+            section.imageMeta = normalizePortfolioImageMeta(section.imageMeta);
+          });
+        });
+        return next;
+      }
+
+      function createPfSectionTemplate(section = {}) {
+        return {
+          id: uid(),
+          header: section.header || "",
+          body: section.body || "",
+          imageUrl: section.imageUrl || "",
+          imageCaption: section.imageCaption || "",
+          imageMeta: normalizePortfolioImageMeta(section.imageMeta)
+        };
+      }
+
+      function createPfChapterTemplate(chapter = {}) {
+        return {
+          id: uid(),
+          title: chapter.title || "請輸入章節標題",
+          sections: Array.isArray(chapter.sections) && chapter.sections.length
+            ? chapter.sections.map((section) => createPfSectionTemplate(section))
+            : [createPfSectionTemplate()]
+        };
+      }
+
       const pfDefault = {
         title: "",
         studentName: "",
         school: "",
         coverImageUrl: "",
+        coverImageMeta: { x: 50, y: 50, scale: 1 },
         accentTheme: "slate",
         chapters: [{
           id: uid(),
           title: "請輸入章節標題",
           sections: [
-            { id: uid(), header: "", body: "", imageUrl: "", imageCaption: "" }
+            { id: uid(), header: "", body: "", imageUrl: "", imageCaption: "", imageMeta: { x: 50, y: 50, scale: 1 } }
           ]
         }]
       };
@@ -6772,8 +8076,8 @@
       let pf = (() => {
         try {
           const s = localStorage.getItem(PF_KEY);
-          return s ? JSON.parse(s) : JSON.parse(JSON.stringify(pfDefault));
-        } catch { return JSON.parse(JSON.stringify(pfDefault)); }
+          return normalizePortfolioData(s ? JSON.parse(s) : JSON.parse(JSON.stringify(pfDefault)));
+        } catch { return normalizePortfolioData(JSON.parse(JSON.stringify(pfDefault))); }
       })();
       let pfActivePreset = (() => {
         try {
@@ -6805,21 +8109,54 @@
           >${esc(preset.label)}</button>
         `).join("");
       }
-      function renderPortfolioThemeOptions() {
-        const grid = $el("pfThemeGrid");
+      function renderPfContentPresets() {
+        const grid = $el("pfContentPresetGrid");
         if (!grid) return;
-        grid.innerHTML = Object.entries(pfThemes).map(([id, theme]) => `
+        grid.innerHTML = Object.entries(PF_CONTENT_TEMPLATES).map(([id, preset]) => `
+          <button class="pf-content-preset-btn" data-pf-content-preset="${id}" type="button">
+            <strong>${esc(preset.label)}</strong>
+            <span>${esc(preset.description)}</span>
+          </button>
+        `).join("");
+      }
+      function renderPortfolioThemeOptions() {
+        const entries = Object.entries(pfThemes);
+        const strip = $el("pfTemplateStrip");
+        const grid = $el("pfThemeGrid");
+        if (strip) {
+          strip.innerHTML = entries.map(([id, theme]) => `
+            <button class="pf-template-chip${pf.accentTheme === id ? " active" : ""}" data-pf-theme="${id}" type="button">
+              <div class="pf-color-swatch" style="background:${gradientSwatch(theme)};"></div>
+              <strong>${esc(theme.shortLabel)}</strong>
+              <span>${esc(theme.description)}</span>
+              <div class="pf-template-chip-meta">${esc(theme.category || "模板")} · ${esc(theme.bestFor || theme.label)}</div>
+            </button>
+          `).join("");
+        }
+        if (!grid) return;
+        grid.innerHTML = entries.map(([id, theme]) => `
           <button class="pf-template-option${pf.accentTheme === id ? " active" : ""}" data-pf-theme="${id}" type="button">
             <div class="pf-color-swatch" style="background:${gradientSwatch(theme)};"></div>
             <strong>${esc(theme.shortLabel)}</strong>
             <span>${esc(theme.description)}</span>
+            <div class="pf-template-option-meta">${esc(theme.category || "模板")} · ${esc(theme.bestFor || theme.label)}</div>
           </button>
         `).join("");
+      }
+      function updatePortfolioThemeStatus() {
+        const theme = themePalette();
+        const status = $el("pfThemeStatus");
+        if (!status || !theme) return;
+        status.innerHTML = `
+          <strong>${esc(theme.label)} / ${esc(theme.shortLabel)}</strong>
+          <p>${esc(theme.description)}。適合 ${esc(theme.bestFor || "章節式學習歷程")}，版型靈感來自 ${esc(theme.inspiration || "學生作品集")}。</p>
+        `;
       }
       function syncPortfolioRecommendationUi() {
         renderPfPresetBar("pfDepartmentBar", PF_DEPARTMENT_PRESETS, "dept");
         renderPfPresetBar("pfCareerBar", PF_CAREER_PRESETS, "career");
         renderPortfolioThemeOptions();
+        updatePortfolioThemeStatus();
         const status = $el("pfRecommendationStatus");
         if (!status) return;
         if (!pfActivePreset) {
@@ -6834,6 +8171,25 @@
         }
         status.textContent = `${preset.label}：主推薦「${pfThemes[preset.template]?.shortLabel || preset.template}」，備選「${pfThemes[preset.alt]?.shortLabel || preset.alt}」。${preset.note}`;
       }
+      function setPortfolioTheme(themeId, options = {}) {
+        const { clearPreset = true } = options;
+        if (!pfThemes[themeId]) return;
+        if (clearPreset) pfActivePreset = null;
+        pf.accentTheme = themeId;
+        save();
+        savePfPresetState();
+        renderEditor();
+        renderPreview();
+      }
+      function applyPortfolioContentTemplate(templateId) {
+        const preset = PF_CONTENT_TEMPLATES[templateId];
+        if (!preset) return;
+        pf.title = preset.title;
+        pf.chapters = preset.chapters.map((chapter) => createPfChapterTemplate(chapter));
+        save();
+        renderEditor();
+        renderPreview();
+      }
       function applyPortfolioPreset(group, id) {
         const presets = group === "dept" ? PF_DEPARTMENT_PRESETS : PF_CAREER_PRESETS;
         const preset = presets[id];
@@ -6846,11 +8202,7 @@
           return;
         }
         pfActivePreset = { group, id };
-        pf.accentTheme = preset.template;
-        save();
-        savePfPresetState();
-        renderEditor();
-        renderPreview();
+        setPortfolioTheme(preset.template, { clearPreset: false });
       }
       function attachPortfolioPresetListeners() {
         document.querySelectorAll("[data-pf-preset]").forEach((btn) => {
@@ -6861,12 +8213,12 @@
         });
         document.querySelectorAll("[data-pf-theme]").forEach((btn) => {
           btn.addEventListener("click", () => {
-            pfActivePreset = null;
-            pf.accentTheme = btn.dataset.pfTheme;
-            save();
-            savePfPresetState();
-            renderEditor();
-            renderPreview();
+            setPortfolioTheme(btn.dataset.pfTheme);
+          });
+        });
+        document.querySelectorAll("[data-pf-content-preset]").forEach((btn) => {
+          btn.addEventListener("click", () => {
+            applyPortfolioContentTemplate(btn.dataset.pfContentPreset);
           });
         });
       }
@@ -6880,12 +8232,30 @@
       }
       function sectionImageCard(sec, ratio = "width:100%;height:140px;") {
         if (!sec.imageUrl) return "";
+        const chapterIndex = pf.chapters.findIndex((chapter) => chapter.sections.includes(sec));
+        const sectionIndex = (pf.chapters.find((chapter) => chapter.sections.includes(sec))?.sections || []).indexOf(sec);
         return `
-          <figure style="margin:0;border-radius:18px;overflow:hidden;background:#ffffff;border:1px solid rgba(0,0,0,0.08);box-shadow:0 14px 30px rgba(17,24,39,0.08);">
-            <img style="${ratio}object-fit:cover;display:block;" src="${esc(sec.imageUrl)}" alt="" />
+          <figure style="position:relative;margin:0;border-radius:18px;overflow:hidden;background:#ffffff;border:1px solid rgba(0,0,0,0.08);box-shadow:0 14px 30px rgba(17,24,39,0.08);">
+            <img
+              data-pf-section-img="true"
+              data-pf-ci="${escapeHtml(String(chapterIndex))}"
+              data-pf-si="${escapeHtml(String(sectionIndex))}"
+              style="${portfolioImageStyle(sec.imageMeta, ratio)}"
+              src="${esc(sec.imageUrl)}"
+              alt=""
+            />
+            <span class="image-drag-badge">拖曳圖片</span>
             ${sec.imageCaption ? `<figcaption style="padding:10px 12px;font-size:0.68em;line-height:1.6;color:#5f6675;background:rgba(255,255,255,0.96);">${esc(sec.imageCaption)}</figcaption>` : ""}
           </figure>
         `;
+      }
+
+      function coverImageMarkup(extraStyle = "") {
+        if (!pf.coverImageUrl) return "";
+        return `<div style="position:relative;width:100%;height:100%;overflow:hidden;">
+          <img data-pf-cover-img="true" style="${portfolioImageStyle(pf.coverImageMeta, extraStyle)}" src="${esc(pf.coverImageUrl)}" alt="" />
+          <span class="image-drag-badge">拖曳圖片</span>
+        </div>`;
       }
 
       function pfEditable(field, value, placeholder = "", extra = "") {
@@ -6966,7 +8336,8 @@
       }
 
       function getTabFromLocation() {
-        const hashTab = window.location.hash.replace(/^#/, "").trim();
+        const hashTabRaw = window.location.hash.replace(/^#/, "").trim();
+        const hashTab = hashTabRaw.replace(/^page-/, "");
         if (APP_TAB_IDS.includes(hashTab)) return hashTab;
 
         const searchTab = new URLSearchParams(window.location.search).get("tab");
@@ -6988,7 +8359,7 @@
 
         if (updateUrl) {
           const url = new URL(window.location.href);
-          url.hash = nextTabId === "home" ? "" : nextTabId;
+          url.hash = `page-${nextTabId}`;
           window.history.replaceState({}, document.title, url.toString());
         }
       }
@@ -6996,10 +8367,14 @@
       /* ── EDITOR RENDER ── */
       function renderEditor() {
         syncPortfolioRecommendationUi();
+        renderPfContentPresets();
         $el("pfTitle").value       = pf.title;
         $el("pfStudentName").value = pf.studentName;
         $el("pfSchool").value      = pf.school;
         $el("pfCoverImage").value  = pf.coverImageUrl;
+        $el("pfCoverPosX").value   = String(normalizePortfolioImageMeta(pf.coverImageMeta).x);
+        $el("pfCoverPosY").value   = String(normalizePortfolioImageMeta(pf.coverImageMeta).y);
+        $el("pfCoverScale").value  = String(normalizePortfolioImageMeta(pf.coverImageMeta).scale);
 
         $el("pfChapters").innerHTML = pf.chapters.map((ch, ci) => `
           <div class="pf-chapter-block">
@@ -7033,6 +8408,18 @@
                   <label style="font-size:12px;">圖片說明（選填）</label>
                   <input type="text" placeholder="請輸入圖片說明" value="${esc(sec.imageCaption)}" data-sec-cap="${ci}-${si}" />
                 </div>
+                <div class="field">
+                  <label style="font-size:12px;">圖片水平位置</label>
+                  <input type="range" min="0" max="100" step="1" value="${normalizePortfolioImageMeta(sec.imageMeta).x}" data-sec-img-x="${ci}-${si}" />
+                </div>
+                <div class="field">
+                  <label style="font-size:12px;">圖片垂直位置</label>
+                  <input type="range" min="0" max="100" step="1" value="${normalizePortfolioImageMeta(sec.imageMeta).y}" data-sec-img-y="${ci}-${si}" />
+                </div>
+                <div class="field">
+                  <label style="font-size:12px;">圖片縮放比例</label>
+                  <input type="range" min="1" max="2.2" step="0.05" value="${normalizePortfolioImageMeta(sec.imageMeta).scale}" data-sec-img-scale="${ci}-${si}" />
+                </div>
               </div>
             `).join("")}
             <button class="pf-add-section-btn" data-add-sec="${ci}" type="button">＋ 新增小節</button>
@@ -7044,6 +8431,13 @@
       }
 
       function attachEditorListeners() {
+        $el("pfCoverPosX").oninput = e => { pf.coverImageMeta = normalizePortfolioImageMeta({ ...pf.coverImageMeta, x: e.target.value }); save(); renderPreview(); };
+        $el("pfCoverPosY").oninput = e => { pf.coverImageMeta = normalizePortfolioImageMeta({ ...pf.coverImageMeta, y: e.target.value }); save(); renderPreview(); };
+        $el("pfCoverScale").oninput = e => { pf.coverImageMeta = normalizePortfolioImageMeta({ ...pf.coverImageMeta, scale: e.target.value }); save(); renderPreview(); };
+        $el("pfResetCoverImageBtn").onclick = () => {
+          pf.coverImageMeta = normalizePortfolioImageMeta({ x: 50, y: 50, scale: 1 });
+          save(); renderEditor(); renderPreview();
+        };
         document.querySelectorAll("[data-ch-title]").forEach(inp => {
           inp.oninput = e => { pf.chapters[+e.target.dataset.chTitle].title = e.target.value; save(); renderPreview(); };
         });
@@ -7071,6 +8465,24 @@
             pf.chapters[ci].sections[si].imageCaption = e.target.value; save(); renderPreview();
           };
         });
+        document.querySelectorAll("[data-sec-img-x]").forEach(inp => {
+          inp.oninput = e => {
+            const [ci, si] = e.target.dataset.secImgX.split("-").map(Number);
+            pf.chapters[ci].sections[si].imageMeta = normalizePortfolioImageMeta({ ...pf.chapters[ci].sections[si].imageMeta, x: e.target.value }); save(); renderPreview();
+          };
+        });
+        document.querySelectorAll("[data-sec-img-y]").forEach(inp => {
+          inp.oninput = e => {
+            const [ci, si] = e.target.dataset.secImgY.split("-").map(Number);
+            pf.chapters[ci].sections[si].imageMeta = normalizePortfolioImageMeta({ ...pf.chapters[ci].sections[si].imageMeta, y: e.target.value }); save(); renderPreview();
+          };
+        });
+        document.querySelectorAll("[data-sec-img-scale]").forEach(inp => {
+          inp.oninput = e => {
+            const [ci, si] = e.target.dataset.secImgScale.split("-").map(Number);
+            pf.chapters[ci].sections[si].imageMeta = normalizePortfolioImageMeta({ ...pf.chapters[ci].sections[si].imageMeta, scale: e.target.value }); save(); renderPreview();
+          };
+        });
         document.querySelectorAll("[data-rm-ch]").forEach(btn => {
           btn.onclick = e => {
             const ci = +e.target.dataset.rmCh;
@@ -7088,7 +8500,7 @@
         document.querySelectorAll("[data-add-sec]").forEach(btn => {
           btn.onclick = e => {
             const ci = +e.target.dataset.addSec;
-            pf.chapters[ci].sections.push({ id: uid(), header: "", body: "", imageUrl: "", imageCaption: "" });
+            pf.chapters[ci].sections.push({ id: uid(), header: "", body: "", imageUrl: "", imageCaption: "", imageMeta: { x: 50, y: 50, scale: 1 } });
             save(); renderEditor(); renderPreview();
           };
         });
@@ -7102,6 +8514,106 @@
         parts.push(buildEndPage(theme));
         $el("pfPreviewArea").innerHTML = parts.join("");
         attachPortfolioInlineListeners();
+        attachPortfolioImageDragListeners();
+      }
+
+      function attachPortfolioImageDragListeners() {
+        const area = $el("pfPreviewArea");
+        if (!area || area.dataset.imageDragBound === "true") return;
+        area.dataset.imageDragBound = "true";
+
+        let dragState = null;
+
+        function getPortfolioImageMeta(target) {
+          if (target.dataset.pfCoverImg) {
+            return { kind: "cover", meta: normalizePortfolioImageMeta(pf.coverImageMeta) };
+          }
+          const ci = Number(target.dataset.pfCi);
+          const si = Number(target.dataset.pfSi);
+          if (!Number.isNaN(ci) && !Number.isNaN(si) && pf.chapters[ci]?.sections?.[si]) {
+            return {
+              kind: "section",
+              ci,
+              si,
+              meta: normalizePortfolioImageMeta(pf.chapters[ci].sections[si].imageMeta)
+            };
+          }
+          return null;
+        }
+
+        function syncPortfolioImageControls(state) {
+          if (!state) return;
+          if (state.kind === "cover") {
+            $el("pfCoverPosX").value = String(state.meta.x);
+            $el("pfCoverPosY").value = String(state.meta.y);
+            $el("pfCoverScale").value = String(state.meta.scale);
+            return;
+          }
+          const key = `${state.ci}-${state.si}`;
+          document.querySelector(`[data-sec-img-x="${key}"]`) && (document.querySelector(`[data-sec-img-x="${key}"]`).value = String(state.meta.x));
+          document.querySelector(`[data-sec-img-y="${key}"]`) && (document.querySelector(`[data-sec-img-y="${key}"]`).value = String(state.meta.y));
+          document.querySelector(`[data-sec-img-scale="${key}"]`) && (document.querySelector(`[data-sec-img-scale="${key}"]`).value = String(state.meta.scale));
+        }
+
+        function finishDrag() {
+          if (dragState?.kind === "cover" && dragState.finalMeta) {
+            pf.coverImageMeta = normalizePortfolioImageMeta(dragState.finalMeta);
+            save();
+          } else if (dragState?.kind === "section" && dragState.finalMeta && pf.chapters[dragState.ci]?.sections?.[dragState.si]) {
+            pf.chapters[dragState.ci].sections[dragState.si].imageMeta = normalizePortfolioImageMeta(dragState.finalMeta);
+            save();
+          }
+          dragState = null;
+        }
+
+        area.addEventListener("pointerdown", (event) => {
+          const img = event.target.closest("[data-pf-cover-img],[data-pf-section-img]");
+          if (!img) return;
+          const info = getPortfolioImageMeta(img);
+          if (!info) return;
+          dragState = {
+            ...info,
+            pointerId: event.pointerId,
+            img,
+            frame: img.parentElement,
+            startX: event.clientX,
+            startY: event.clientY,
+            finalMeta: info.meta
+          };
+          img.setPointerCapture?.(event.pointerId);
+          event.preventDefault();
+        });
+
+        area.addEventListener("pointermove", (event) => {
+          if (!dragState || event.pointerId !== dragState.pointerId) return;
+          const width = dragState.frame?.clientWidth || 1;
+          const height = dragState.frame?.clientHeight || 1;
+          const nextMeta = normalizePortfolioImageMeta({
+            ...dragState.meta,
+            x: dragState.meta.x + (event.clientX - dragState.startX) / width * 100,
+            y: dragState.meta.y + (event.clientY - dragState.startY) / height * 100
+          });
+          dragState.img.style.objectPosition = `${nextMeta.x}% ${nextMeta.y}%`;
+          dragState.finalMeta = nextMeta;
+          syncPortfolioImageControls({ ...dragState, meta: nextMeta });
+        });
+
+        area.addEventListener("pointerup", finishDrag);
+        area.addEventListener("pointercancel", finishDrag);
+        area.addEventListener("dblclick", (event) => {
+          const img = event.target.closest("[data-pf-cover-img],[data-pf-section-img]");
+          if (!img) return;
+          const info = getPortfolioImageMeta(img);
+          if (!info) return;
+          if (info.kind === "cover") {
+            pf.coverImageMeta = normalizePortfolioImageMeta({ x: 50, y: 50, scale: 1 });
+          } else if (pf.chapters[info.ci]?.sections?.[info.si]) {
+            pf.chapters[info.ci].sections[info.si].imageMeta = normalizePortfolioImageMeta({ x: 50, y: 50, scale: 1 });
+          }
+          save();
+          renderEditor();
+          renderPreview();
+        });
       }
 
       function buildCoverPage(theme) {
@@ -7112,7 +8624,7 @@
         if (theme.variant === "soft") return buildSoftCoverPage(theme);
         if (theme.variant === "studio") return buildStudioCoverPage(theme);
         const imgHtml = pf.coverImageUrl
-          ? `<img style="width:100%;height:100%;object-fit:cover;display:block;" src="${esc(pf.coverImageUrl)}" alt="" />`
+          ? coverImageMarkup()
           : `<div style="width:100%;height:100%;background:
               radial-gradient(circle at top right, rgba(255,255,255,0.3), transparent 36%),
               linear-gradient(145deg, ${theme.deep} 0%, ${c} 45%, ${theme.soft} 160%);
@@ -7273,7 +8785,7 @@
 
       function buildBlueprintCoverPage(theme) {
         const imgHtml = pf.coverImageUrl
-          ? `<img style="width:100%;height:100%;object-fit:cover;display:block;mix-blend-mode:screen;" src="${esc(pf.coverImageUrl)}" alt="" />`
+          ? coverImageMarkup("mix-blend-mode:screen;")
           : `<div style="width:100%;height:100%;background:repeating-linear-gradient(0deg, rgba(255,255,255,0.06), rgba(255,255,255,0.06) 1px, transparent 1px, transparent 28px), repeating-linear-gradient(90deg, rgba(255,255,255,0.06), rgba(255,255,255,0.06) 1px, transparent 1px, transparent 28px);"></div>`;
         return `<div class="pf-page" style="${portfolioPageStyle(theme)}">
           <div style="position:absolute;inset:0;background:${theme.deep};"></div>
@@ -7310,7 +8822,7 @@
 
       function buildGalleryCoverPage(theme) {
         const imgHtml = pf.coverImageUrl
-          ? `<img style="width:100%;height:100%;object-fit:cover;display:block;" src="${esc(pf.coverImageUrl)}" alt="" />`
+          ? coverImageMarkup()
           : `<div style="width:100%;height:100%;background:${gradientSwatch(theme)};"></div>`;
         return `<div class="pf-page" style="${portfolioPageStyle(theme)}">
           <div style="position:absolute;inset:0;background:linear-gradient(180deg, ${theme.paper} 0%, #fff 100%);"></div>
@@ -7339,7 +8851,7 @@
 
       function buildDossierCoverPage(theme) {
         const imgHtml = pf.coverImageUrl
-          ? `<img style="width:100%;height:100%;object-fit:cover;display:block;filter:saturate(0.92);" src="${esc(pf.coverImageUrl)}" alt="" />`
+          ? coverImageMarkup("filter:saturate(0.92);")
           : `<div style="width:100%;height:100%;background:linear-gradient(135deg, ${theme.soft}, #fff);"></div>`;
         return `<div class="pf-page" style="${portfolioPageStyle(theme)}">
           <div style="position:absolute;inset:0;background:${theme.paper};"></div>
@@ -7382,7 +8894,7 @@
 
       function buildSoftCoverPage(theme) {
         const imgHtml = pf.coverImageUrl
-          ? `<img style="width:100%;height:100%;object-fit:cover;display:block;" src="${esc(pf.coverImageUrl)}" alt="" />`
+          ? coverImageMarkup()
           : `<div style="width:100%;height:100%;background:linear-gradient(160deg, ${theme.soft}, #fff);"></div>`;
         return `<div class="pf-page" style="${portfolioPageStyle(theme)}">
           <div style="position:absolute;inset:0;background:radial-gradient(circle at top left, ${theme.soft}, transparent 30%), linear-gradient(180deg, #fffdfa 0%, ${theme.paper} 100%);"></div>
@@ -7418,7 +8930,7 @@
 
       function buildStudioCoverPage(theme) {
         const imgHtml = pf.coverImageUrl
-          ? `<img style="width:100%;height:100%;object-fit:cover;display:block;filter:contrast(1.02) saturate(0.92);" src="${esc(pf.coverImageUrl)}" alt="" />`
+          ? coverImageMarkup("filter:contrast(1.02) saturate(0.92);")
           : `<div style="width:100%;height:100%;background:linear-gradient(135deg, ${theme.soft} 0%, #fff 100%);"></div>`;
         return `<div class="pf-page" style="${portfolioPageStyle(theme)}">
           <div style="position:absolute;inset:0;background:${theme.paper};"></div>
@@ -7710,7 +9222,7 @@
       function buildPrintCover(theme) {
         const c = theme.color;
         const imgHtml = pf.coverImageUrl
-          ? `<img style="width:100%;height:100%;object-fit:cover;display:block;" src="${esc(pf.coverImageUrl)}" alt="" />`
+          ? coverImageMarkup()
           : `<div style="width:100%;height:100%;background:
               radial-gradient(circle at top right, rgba(255,255,255,0.3), transparent 36%),
               linear-gradient(145deg, ${theme.deep} 0%, ${c} 45%, ${theme.soft} 160%);"></div>`;
@@ -7873,7 +9385,7 @@
         {
           target: "#templateStrip",
           tab: "cv",
-          title: "24 種模板即時切換",
+          title: `${templateCatalog.length} 種模板即時切換`,
           desc: "在模板列表中點選任一模板，右側預覽會立即更新。從學術風、現代感到創意設計應有盡有。"
         },
         {
@@ -8037,14 +9549,20 @@
       /* ── INIT ── */
       function init() {
         /* Tab buttons */
-        document.querySelectorAll(".app-tab").forEach(btn => {
-          btn.addEventListener("click", () => switchTab(btn.dataset.tab));
+        document.querySelector(".app-tabs")?.addEventListener("click", (event) => {
+          const button = event.target.closest(".app-tab[data-tab]");
+          if (!button) return;
+          switchTab(button.dataset.tab);
         });
 
         /* Home → CV button */
         const startBtn = document.getElementById("startEditingBtn");
         if (startBtn) {
           startBtn.setAttribute("aria-controls", "page-cv");
+          startBtn.addEventListener("click", () => {
+            switchTab("cv");
+            document.getElementById("editorSection")?.scrollIntoView({ behavior: "smooth", block: "start" });
+          });
         }
 
         /* Home → Portfolio button */
@@ -8055,14 +9573,17 @@
 
         /* Feature guide buttons */
         document.querySelectorAll(".feature-card-action[data-guide-tab]").forEach(btn => {
-          btn.addEventListener("click", () => {
+          btn.addEventListener("click", (event) => {
+            event.preventDefault();
             switchTab(btn.dataset.guideTab);
             if (btn.dataset.guideAction === "download") {
               setTimeout(() => document.getElementById("downloadPdfBtn")?.scrollIntoView({ behavior: "smooth", block: "center" }), 150);
             }
           });
         });
-        document.querySelector(".feature-card-action[data-guide-action='login']")?.addEventListener("click", () => {
+        document.querySelector(".feature-card-action[data-guide-action='login']")?.addEventListener("click", (event) => {
+          event.preventDefault();
+          switchTab("cv");
           document.getElementById("loginBtn")?.scrollIntoView({ behavior: "smooth", block: "center" });
         });
         /* Basic info fields */
@@ -8081,7 +9602,7 @@
         const addPortfolioChapter = () => {
           pf.chapters.push({
             id: uid(), title: "",
-            sections: [{ id: uid(), header: "", body: "", imageUrl: "", imageCaption: "" }]
+            sections: [{ id: uid(), header: "", body: "", imageUrl: "", imageCaption: "", imageMeta: { x: 50, y: 50, scale: 1 } }]
           });
           save(); renderEditor(); renderPreview();
         };
@@ -8110,6 +9631,7 @@
         });
         initTour();
 
+        renderPortfolioToolsGrid();
         renderEditor();
         renderPreview();
       }
