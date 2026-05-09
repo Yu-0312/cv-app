@@ -2,7 +2,12 @@
   "permissions": {
     "allow": [
       "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\(d.get\\('scripts', {}\\)\\)\")",
-      "mcp__Claude_Preview__preview_start"
+      "mcp__Claude_Preview__preview_start",
+      "WebSearch",
+      "Bash(python3 -)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:santifer.io)",
+      "Bash(gh pr create --title 'feat: 新增學測落點分析（落點分析）並修復 GSAT IIFE 執行問題' --body ':*)"
     ]
   }
 }
