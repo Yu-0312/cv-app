@@ -3046,6 +3046,7 @@
     .gsat-score-card .sc-subj { font-size: 11px; color: var(--muted); margin-bottom: 3px; }
     .gsat-score-card .sc-val { font-size: 20px; font-weight: 800; }
     .gsat-score-card .sc-bench { font-size: 10px; color: var(--muted); margin-top: 2px; }
+    .gsat-score-card .sc-pct { font-size: 10px; color: var(--muted); margin-top: 1px; letter-spacing: -.01em; }
     .gsat-total-bar { display: flex; align-items: center; gap: 12px; background: var(--accent); border-radius: 12px; padding: 14px 18px; color: #fff; margin-bottom: 12px; }
     .gsat-total-bar .tb-total { font-size: 28px; font-weight: 900; }
     .gsat-total-bar .tb-label { font-size: 12px; opacity: .85; }
@@ -4156,7 +4157,7 @@
             </div>
           </div>
 
-          <button id="gsatAnalyzeBtn" class="gsat-analyze-btn" type="button" onclick="window.gsatAnalyze&&window.gsatAnalyze()">開始落點分析</button>
+          <button id="gsatAnalyzeBtn" class="gsat-analyze-btn" type="button">開始落點分析</button>
         </div>
 
         <!-- RIGHT PANEL: results -->
@@ -8134,6 +8135,7 @@
       }
 
       window.switchCvStudioTab = switchTab;
+      init();
 
       /* ================================================================
          CAREER ADVISOR  (inspired by career-ops / santifer)
@@ -8154,7 +8156,7 @@
         }
 
         function getCvSummary() {
-          const d = state.data;
+          const d = window.cvStudioState?.data || {};
           const parts = [
             d.name    && `姓名：${d.name}`,
             d.role    && `職稱/目標：${d.role}`,
@@ -8785,7 +8787,7 @@
           });
 
           /* Refresh CV snippet + load API key whenever the tab is shown */
-          document.querySelector("[data-tab='career']").addEventListener("click", () => {
+          document.querySelector("[data-tab='career']")?.addEventListener("click", () => {
             updateCvSnippet();
             loadApiKey();
             updateApiNote();
@@ -8809,15 +8811,40 @@
       "use strict";
       function $g(id) { return document.getElementById(id); }
 
-      /* ── 五標參考值（近年學測約略值） ─────────────────────────── */
+      /* ── 五標參考值（115學年度學測官方公布值） ──────────────────── */
       const BM = {
-        國文:  { 頂標:14, 前標:12, 均標:10, 後標:7, 底標:5 },
-        英文:  { 頂標:15, 前標:13, 均標:10, 後標:7, 底標:5 },
-        數學A: { 頂標:14, 前標:12, 均標:9,  後標:6, 底標:4 },
-        數學B: { 頂標:13, 前標:11, 均標:8,  後標:5, 底標:3 },
-        社會:  { 頂標:14, 前標:12, 均標:9,  後標:6, 底標:4 },
-        自然:  { 頂標:13, 前標:11, 均標:9,  後標:6, 底標:4 },
+        國文:  { 頂標:13, 前標:12, 均標:10, 後標:9, 底標:7 },
+        英文:  { 頂標:13, 前標:11, 均標:8,  後標:5, 底標:3 },
+        數學A: { 頂標:12, 前標:10, 均標:8,  後標:5, 底標:4 },
+        數學B: { 頂標:11, 前標:9,  均標:5,  後標:3, 底標:2 },
+        社會:  { 頂標:13, 前標:12, 均標:10, 後標:8, 底標:7 },
+        自然:  { 頂標:13, 前標:12, 均標:9,  後標:7, 底標:5 },
       };
+
+      /* ── 115學年度 同級分累積百分比估算 ─────────────────────────── */
+      /* 錨點定義：[級分, 此分以上佔全體%]                            */
+      /* 15級分%：大考中心公布；五標百分位：頂12%/前25%/均50%/後75%/底88% */
+      /* 其餘以線性內插估算，僅供參考                                 */
+      const _ANCHORS = {
+        國文:  [[15,2.17],[13,12],[12,25],[10,50],[9,75],[7,88],[1,100]],
+        英文:  [[15,2.76],[13,12],[11,25],[8,50],[5,75],[3,88],[1,100]],
+        數學A: [[15,1.23],[12,12],[10,25],[8,50],[5,75],[4,88],[1,100]],
+        數學B: [[15,1.29],[11,12],[9,25],[5,50],[3,75],[2,88],[1,100]],
+        社會:  [[15,1.90],[13,12],[12,25],[10,50],[8,75],[7,88],[1,100]],
+        自然:  [[15,2.40],[13,12],[12,25],[9,50],[7,75],[5,88],[1,100]],
+      };
+      function pctAbove(subj, score) {
+        if (!score || score < 1) return null;
+        const anch = _ANCHORS[subj]; if (!anch) return null;
+        for (let i = 0; i < anch.length - 1; i++) {
+          const [s1, p1] = anch[i], [s2, p2] = anch[i+1];
+          if (score <= s1 && score >= s2) {
+            const t = (s1 - score) / (s1 - s2);
+            return +(p1 + (p2 - p1) * t).toFixed(1);
+          }
+        }
+        return null;
+      }
 
       /* ── 校系資料（歷年一階篩選加權分切線，111–113學年均值） ──── */
       /* w: 各科加權  th: 最低門檻  h: 近三年切線 [113,112,111]  */
@@ -8966,10 +8993,13 @@
           const score = scores[s] || 0;
           const lv  = bmLevel(s, score);
           const col = bmColor(lv);
+          const pct = pctAbove(s, score);
+          const pctHtml = (score && pct !== null) ? `<div class="sc-pct">前 ${pct}%</div>` : "";
           return `<div class="gsat-score-card">
             <div class="sc-subj">${s}</div>
             <div class="sc-val" style="color:${col}">${score || "—"}</div>
             <div class="sc-bench" style="color:${col}">${score ? lv : ""}</div>
+            ${pctHtml}
           </div>`;
         }).join("");
 
