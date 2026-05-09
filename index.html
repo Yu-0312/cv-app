@@ -2007,12 +2007,10 @@
     .editor-panel {
       display: none !important;
     }
-    .portfolio-workspace,
-    .persona-workspace {
+    .portfolio-workspace {
       grid-template-columns: 1fr !important;
     }
-    .portfolio-editor-panel,
-    .persona-editor-panel {
+    .portfolio-editor-panel {
       display: none !important;
     }
 
@@ -2292,31 +2290,17 @@
       color: rgba(100, 100, 100, 0.35);
       pointer-events: none;
     }
-    .pf-inline-editable,
-    .persona-inline-editable {
+    .pf-inline-editable {
       display: block;
       min-height: 1em;
       white-space: pre-wrap;
       position: relative;
       z-index: 2;
     }
-    .pf-inline-editable[data-ph]:empty::before,
-    .persona-inline-editable[data-ph]:empty::before {
+    .pf-inline-editable[data-ph]:empty::before {
       content: attr(data-ph);
       color: rgba(100, 100, 100, 0.35);
       pointer-events: none;
-    }
-    .persona-top-subtitle .persona-inline-editable {
-      transform: rotate(-1.4deg);
-      transform-origin: left center;
-    }
-    .persona-tagline .persona-inline-editable {
-      transform: rotate(-0.8deg);
-      transform-origin: center center;
-    }
-    .persona-bubble .persona-inline-editable,
-    .persona-summary-strip .persona-inline-editable {
-      display: inline-block;
     }
     .pf-inline-label {
       display: block;
@@ -2475,595 +2459,7 @@
     }
   </style>
 
-  <style id="persona-styles">
-    :root {
-      --persona-template-image: url("persona-template-base.png");
-    }
-
-    .persona-hero {
-      padding: 20px 22px;
-      margin-bottom: 18px;
-      background:
-        radial-gradient(circle at top left, rgba(255, 183, 197, 0.22), transparent 24%),
-        radial-gradient(circle at 92% 18%, rgba(101, 127, 255, 0.14), transparent 18%),
-        linear-gradient(135deg, rgba(255, 250, 244, 0.94), rgba(249, 240, 231, 0.92));
-      border: 1px solid rgba(49, 40, 27, 0.08);
-      border-radius: 28px;
-      box-shadow: var(--shadow);
-    }
-
-    .persona-hero h2 {
-      font-size: clamp(1.8rem, 4vw, 2.8rem);
-      line-height: 1.02;
-      letter-spacing: -0.04em;
-      margin-bottom: 10px;
-      color: var(--template-heading);
-    }
-
-    .persona-hero p {
-      max-width: 68ch;
-      color: var(--muted);
-      line-height: 1.8;
-    }
-
-    .persona-workspace {
-      display: grid;
-      grid-template-columns: minmax(360px, 460px) minmax(0, 1fr);
-      gap: 18px;
-      align-items: start;
-    }
-
-    .persona-editor-panel {
-      position: sticky;
-      top: 14px;
-      overflow: hidden;
-    }
-
-    .persona-preview-shell {
-      padding: 20px;
-    }
-
-    .persona-preview-frame {
-      background: rgba(255, 255, 255, 0.58);
-      border-radius: 24px;
-      border: 1px solid rgba(49, 40, 27, 0.08);
-      padding: 18px;
-    }
-
-    .theme-row {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 10px;
-    }
-
-    .theme-card {
-      border: 1px solid rgba(49, 40, 27, 0.08);
-      border-radius: 22px;
-      background: #fffdf9;
-      padding: 14px;
-      text-align: left;
-      cursor: pointer;
-      transition: box-shadow 0.18s ease, border-color 0.18s ease, transform 0.18s ease;
-    }
-
-    .theme-card.active {
-      border-color: rgba(33, 78, 116, 0.28);
-      box-shadow: 0 14px 32px rgba(33, 78, 116, 0.12);
-    }
-
-    .theme-card strong {
-      display: block;
-      margin: 10px 0 4px;
-    }
-
-    .theme-card span {
-      color: var(--muted);
-      font-size: 13px;
-      line-height: 1.5;
-    }
-
-    .theme-swatch-preview {
-      height: 82px;
-      border-radius: 16px;
-      border: 1px solid rgba(49, 40, 27, 0.08);
-    }
-
-    .preview-toolbar { margin-bottom: 16px; }
-
-    .preview-toolbar-meta {
-      display: flex;
-      align-items: flex-start;
-      justify-content: space-between;
-      gap: 14px;
-    }
-
-    .preview-toolbar-meta h2 {
-      font-size: 1.1rem;
-      font-weight: 700;
-      margin-bottom: 4px;
-    }
-
-    .preview-toolbar-meta p {
-      font-size: 0.88rem;
-      color: var(--muted);
-    }
-
-    .layout-badge {
-      flex-shrink: 0;
-      padding: 6px 14px;
-      border-radius: 999px;
-      background: rgba(33, 78, 116, 0.08);
-      font-size: 0.82rem;
-      font-weight: 600;
-      color: var(--template-heading);
-      border: 1px solid rgba(33, 78, 116, 0.14);
-    }
-
-    .persona-board {
-      position: relative;
-      overflow: hidden;
-      border-radius: 36px;
-      width: 100%;
-      aspect-ratio: 899 / 1398;
-      min-height: 960px;
-      box-shadow: 0 28px 60px rgba(50, 38, 18, 0.18);
-      isolation: isolate;
-      background:
-        linear-gradient(180deg, rgba(255, 248, 239, 0.16), rgba(247, 236, 221, 0.2)),
-        var(--persona-template-image) center top / cover no-repeat;
-    }
-
-    .persona-board[data-theme="cute"] {
-      color: #35221c;
-      --persona-ink: #35221c;
-      --persona-note: rgba(255, 249, 241, 0.93);
-      --persona-note-soft: rgba(252, 238, 229, 0.93);
-      --persona-note-alt: rgba(245, 237, 214, 0.93);
-      --persona-stroke: rgba(113, 81, 66, 0.14);
-      --persona-accent: #bc654f;
-      --persona-accent-2: #7d9a57;
-      --persona-accent-3: #d4a548;
-      --persona-accent-4: #9479bc;
-      --persona-tape: rgba(228, 194, 176, 0.88);
-      --persona-shadow: 0 14px 28px rgba(90, 62, 43, 0.1);
-    }
-
-    .persona-board[data-theme="cool"] {
-      color: #2a2130;
-      --persona-ink: #2a2130;
-      --persona-note: rgba(247, 246, 250, 0.93);
-      --persona-note-soft: rgba(240, 239, 247, 0.93);
-      --persona-note-alt: rgba(235, 236, 244, 0.94);
-      --persona-stroke: rgba(81, 94, 122, 0.16);
-      --persona-accent: #536eaf;
-      --persona-accent-2: #6f9788;
-      --persona-accent-3: #8e7cb8;
-      --persona-accent-4: #d39c54;
-      --persona-tape: rgba(189, 199, 230, 0.88);
-      --persona-shadow: 0 14px 28px rgba(56, 68, 96, 0.12);
-    }
-
-    .persona-board::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background:
-        linear-gradient(180deg, rgba(255,255,255,0.08), rgba(255,255,255,0.14)),
-        radial-gradient(circle at top left, rgba(255,255,255,0.22), transparent 26%);
-      pointer-events: none;
-    }
-
-    .persona-board > * {
-      position: relative;
-      z-index: 1;
-    }
-
-    .persona-board-overlay {
-      position: absolute;
-      inset: 0;
-    }
-
-    .persona-overlay-copy {
-      position: absolute;
-      color: var(--persona-ink);
-      z-index: 3;
-      mix-blend-mode: multiply;
-      text-shadow:
-        0 1px 0 rgba(255, 250, 244, 0.96),
-        0 2px 4px rgba(138, 109, 86, 0.08);
-    }
-
-    .persona-overlay-copy .persona-inline-editable {
-      color: inherit;
-      opacity: 1;
-      filter: saturate(1.04);
-    }
-
-    .persona-title-card {
-      top: 2.8%;
-      left: 3.8%;
-      width: 58%;
-      transform: rotate(-2deg);
-    }
-
-    .persona-top-title {
-      font-family: "Marker Felt", "Chalkboard SE", "American Typewriter", "Noto Serif TC", serif;
-      font-size: clamp(2.5rem, 3.8vw, 4rem);
-      line-height: 0.94;
-      letter-spacing: 0.03em;
-      font-weight: 900;
-      color: var(--persona-accent);
-      text-shadow:
-        0 1px 0 rgba(255, 248, 240, 0.95),
-        0 3px 0 rgba(191, 113, 85, 0.18);
-    }
-
-    .persona-top-title .persona-inline-editable:first-child {
-      transform: rotate(-5deg) translateY(-0.05em);
-      transform-origin: left center;
-      margin-right: 0.14em;
-    }
-
-    .persona-top-title .persona-inline-editable:last-child {
-      transform: rotate(-1deg) translateY(0.02em);
-      transform-origin: left center;
-    }
-
-    .persona-top-subtitle {
-      margin-top: 0.35rem;
-      font-family: "STKaiti", "KaiTi TC", "DFKai-SB", "Kaiti TC", "Noto Serif TC", serif;
-      font-size: clamp(1.8rem, 2.6vw, 2.9rem);
-      line-height: 1.1;
-      letter-spacing: 0.06em;
-      font-weight: 900;
-      color: #44312b;
-      text-shadow:
-        0 1px 0 rgba(255, 251, 245, 0.96),
-        0 0 3px rgba(84, 62, 53, 0.05);
-    }
-
-    .persona-tagline {
-      display: inline-block;
-      margin-top: 1rem;
-      margin-left: 5%;
-      width: 78%;
-      font-family: "STKaiti", "KaiTi TC", "DFKai-SB", "Kaiti TC", "Noto Serif TC", serif;
-      font-size: 1.05rem;
-      line-height: 1.58;
-      letter-spacing: 0.12em;
-      font-weight: 800;
-      text-align: center;
-      color: #4a3832;
-      transform: rotate(-1.4deg);
-    }
-
-    .persona-basic-card {
-      top: 2.6%;
-      right: 4%;
-      width: 29%;
-      transform: rotate(-1deg);
-    }
-
-    .persona-vibe-card {
-      top: 23.6%;
-      left: 3%;
-      width: 28%;
-      transform: rotate(-1.2deg);
-    }
-
-    .persona-story-card {
-      top: 47.7%;
-      left: 3.2%;
-      width: 27.5%;
-      transform: rotate(-0.85deg);
-    }
-
-    .persona-strength-card {
-      top: 68.7%;
-      left: 2.6%;
-      width: 28.2%;
-      transform: rotate(-0.75deg);
-    }
-
-    .persona-keyword-card {
-      top: 86%;
-      left: 2.4%;
-      width: 29%;
-      transform: rotate(-0.5deg);
-      padding-bottom: 0.8rem;
-    }
-
-    .persona-energy-card-stack {
-      top: 24.5%;
-      right: 4%;
-      width: 29%;
-      transform: rotate(0.8deg);
-    }
-
-    .persona-love-card {
-      top: 69.3%;
-      left: 39%;
-      width: 24.6%;
-      transform: rotate(-1deg);
-    }
-
-    .persona-weakness-card {
-      top: 69%;
-      right: 4.1%;
-      width: 27.8%;
-      transform: rotate(-1deg);
-    }
-
-    .persona-favorite-card {
-      top: 86%;
-      right: 3.2%;
-      width: 30%;
-      transform: rotate(-0.8deg);
-    }
-
-    .persona-reminder-card {
-      top: 86.3%;
-      left: 39.3%;
-      width: 22.4%;
-      transform: rotate(-1deg);
-    }
-
-    .persona-summary-strip {
-      position: absolute;
-      left: 6%;
-      right: 6%;
-      bottom: 2.4%;
-      font-family: "STKaiti", "KaiTi TC", "DFKai-SB", "Kaiti TC", "Noto Serif TC", serif;
-      text-align: center;
-      font-size: clamp(1.34rem, 1.95vw, 2rem);
-      line-height: 1.35;
-      font-weight: 900;
-      letter-spacing: 0.14em;
-      color: #342923;
-      text-shadow:
-        0 1px 0 rgba(255,255,255,0.78),
-        0 2px 5px rgba(95, 71, 51, 0.06);
-    }
-
-    .persona-bubble {
-      position: absolute;
-      left: 36%;
-      top: 54.2%;
-      width: 16.5%;
-      min-height: 6rem;
-      padding: 0.8rem 0.6rem;
-      font-family: "STKaiti", "KaiTi TC", "DFKai-SB", "Kaiti TC", "Noto Serif TC", serif;
-      font-size: 0.96rem;
-      line-height: 1.65;
-      font-weight: 800;
-      letter-spacing: 0.05em;
-      text-align: center;
-      display: grid;
-      place-items: center;
-      color: #45342e;
-    }
-
-    .persona-custom-portrait {
-      position: absolute;
-      left: 34.8%;
-      top: 28%;
-      width: 30%;
-      height: 33%;
-      border-radius: 2rem;
-      overflow: hidden;
-      box-shadow: 0 18px 30px rgba(78, 53, 36, 0.12);
-      opacity: 0.98;
-      mix-blend-mode: multiply;
-    }
-
-    .persona-custom-portrait img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-    }
-
-    .persona-facts {
-      display: grid;
-      gap: 0.34rem;
-      font-size: 0.91rem;
-      line-height: 1.55;
-      font-weight: 700;
-    }
-
-    .persona-fact-row {
-      display: flex;
-      align-items: baseline;
-      gap: 0.45rem;
-    }
-
-    .persona-fact-row strong {
-      color: var(--persona-accent);
-      min-width: 3rem;
-      font-weight: 800;
-    }
-
-    .persona-list {
-      display: grid;
-      gap: 0.36rem;
-      line-height: 1.7;
-      font-size: 0.95rem;
-      font-weight: 700;
-    }
-
-    .persona-list-item {
-      display: flex;
-      align-items: flex-start;
-      gap: 0.48rem;
-    }
-
-    .persona-list-bullet {
-      width: 0.95rem;
-      height: 0.95rem;
-      flex: 0 0 auto;
-      border-radius: 50%;
-      display: inline-grid;
-      place-items: center;
-      color: var(--persona-accent);
-      font-size: 0.75rem;
-      font-weight: 700;
-      margin-top: 0.1rem;
-    }
-
-    .persona-story-text,
-    .persona-note-footer {
-      font-size: 0.96rem;
-      line-height: 1.76;
-      font-weight: 700;
-    }
-
-    .persona-note-footer {
-      color: color-mix(in srgb, var(--persona-ink) 78%, white 22%);
-    }
-
-    .persona-pill-grid {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.3rem 0.45rem;
-    }
-
-    .persona-pill,
-    .persona-item-pill {
-      padding: 0;
-      color: var(--persona-ink);
-      font-size: 0.88rem;
-      line-height: 1.34;
-      font-weight: 800;
-    }
-
-    .persona-energy-stack {
-      display: grid;
-      gap: 0.72rem;
-    }
-
-    .persona-energy-entry {
-      display: grid;
-      grid-template-columns: 2.45rem 1fr;
-      gap: 0.65rem;
-      align-items: start;
-    }
-
-    .persona-energy-badge {
-      width: 2.45rem;
-      height: 2.45rem;
-      border-radius: 50%;
-      display: grid;
-      place-items: center;
-      font-size: 0.8rem;
-      font-weight: 800;
-      color: #fff;
-      background: linear-gradient(135deg, var(--persona-accent-2), var(--persona-accent-4));
-    }
-
-    .persona-energy-entry strong {
-      display: block;
-      margin-bottom: 0.14rem;
-      font-size: 0.96rem;
-      color: var(--persona-ink);
-    }
-
-    .persona-energy-entry p {
-      font-size: 0.9rem;
-      line-height: 1.62;
-      color: color-mix(in srgb, var(--persona-ink) 76%, white 24%);
-      font-weight: 700;
-    }
-
-    .persona-item-grid {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 0.35rem;
-    }
-
-    .persona-item-pill {
-      min-height: 4.2rem;
-      display: flex;
-      align-items: flex-end;
-      justify-content: center;
-      text-align: center;
-      padding: 0;
-    }
-
-    .persona-empty {
-      opacity: 0.58;
-      font-size: 0.86rem;
-      line-height: 1.6;
-    }
-
-    .persona-avatar-switch {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 10px;
-    }
-
-    .persona-avatar-choice {
-      border: 1px solid rgba(49, 40, 27, 0.08);
-      border-radius: 18px;
-      background: rgba(255, 255, 255, 0.78);
-      padding: 12px 14px;
-      text-align: left;
-      color: var(--ink);
-    }
-
-    .persona-avatar-choice strong,
-    .persona-avatar-choice span {
-      display: block;
-    }
-
-    .persona-avatar-choice strong {
-      margin-bottom: 4px;
-      font-size: 0.96rem;
-    }
-
-    .persona-avatar-choice span {
-      color: var(--muted);
-      font-size: 0.82rem;
-      line-height: 1.5;
-    }
-
-    .persona-avatar-choice.active {
-      border-color: rgba(33, 78, 116, 0.24);
-      box-shadow: 0 14px 28px rgba(33, 78, 116, 0.12);
-      background: rgba(255, 255, 255, 0.94);
-    }
-
-    @media (max-width: 1100px) {
-      .persona-workspace {
-        grid-template-columns: 1fr;
-      }
-
-      .persona-editor-panel {
-        position: static;
-      }
-
-      .persona-preview-shell {
-        overflow-x: auto;
-      }
-
-      .persona-board {
-        min-width: 760px;
-      }
-    }
-
-    @media (max-width: 860px) {
-      .theme-row {
-        grid-template-columns: 1fr;
-      }
-
-      .persona-board {
-        min-height: 840px;
-        min-width: 680px;
-      }
-
-      .preview-toolbar-meta {
-        flex-direction: column;
-      }
-    }
+  <style>
 
     /* ── Tool panel styles ── */
     .tool-row {
@@ -3210,6 +2606,481 @@
       background: none;
     }
 
+    /* ===== CAREER ADVISOR ===== */
+    .career-workspace {
+      display: grid;
+      grid-template-columns: 360px 1fr;
+      gap: 0;
+      min-height: calc(100vh - 130px);
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+    .career-panel {
+      background: var(--surface);
+      border-right: 1px solid var(--line);
+      padding: 24px 20px;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+    .career-results-shell {
+      padding: 28px 32px;
+      overflow-y: auto;
+      background: var(--bg);
+    }
+    .career-mode-tabs {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+    }
+    .career-mode-tab {
+      flex: 1;
+      padding: 10px 12px;
+      border-radius: 12px;
+      border: 1.5px solid var(--line);
+      background: rgba(255,255,255,0.6);
+      color: var(--muted);
+      font-size: 12.5px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.18s;
+      text-align: center;
+      line-height: 1.4;
+    }
+    .career-mode-tab.active {
+      background: linear-gradient(135deg, var(--accent), #c26941);
+      color: #fff;
+      border-color: transparent;
+    }
+    .career-mode-tab:hover:not(.active) {
+      background: rgba(255,255,255,0.9);
+      color: var(--ink);
+    }
+    .career-panel-label {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 6px;
+    }
+    .career-textarea {
+      width: 100%;
+      min-height: 190px;
+      resize: vertical;
+      padding: 13px 14px;
+      border: 1.5px solid var(--line);
+      border-radius: 14px;
+      background: rgba(255,255,255,0.8);
+      font-size: 13px;
+      line-height: 1.6;
+      color: var(--ink);
+      outline: none;
+      transition: border-color 0.18s;
+      font-family: inherit;
+    }
+    .career-textarea:focus { border-color: var(--accent); }
+    .career-api-input {
+      width: 100%;
+      padding: 11px 14px;
+      border: 1.5px solid var(--line);
+      border-radius: 12px;
+      background: rgba(255,255,255,0.8);
+      font-size: 13px;
+      color: var(--ink);
+      outline: none;
+      transition: border-color 0.18s;
+      font-family: inherit;
+    }
+    .career-api-input:focus { border-color: var(--accent-2); }
+    .career-analyze-btn {
+      width: 100%;
+      padding: 14px;
+      background: linear-gradient(135deg, var(--accent), #c26941);
+      color: #fff;
+      border: none;
+      border-radius: 14px;
+      font-size: 14.5px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .career-analyze-btn:disabled {
+      opacity: 0.55;
+      cursor: not-allowed;
+      transform: none !important;
+      box-shadow: none !important;
+    }
+    .career-api-note {
+      background: rgba(33,78,116,0.07);
+      border: 1px solid rgba(33,78,116,0.15);
+      border-radius: 10px;
+      padding: 11px 13px;
+      font-size: 11.5px;
+      color: var(--accent-2);
+      line-height: 1.55;
+    }
+    .career-results-empty {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 320px;
+      color: var(--muted);
+      text-align: center;
+      gap: 14px;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+    .career-results-empty svg { opacity: 0.25; }
+    .career-loading {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 72px 32px;
+      gap: 18px;
+    }
+    .career-loading-spinner {
+      width: 38px;
+      height: 38px;
+      border: 3px solid var(--line);
+      border-top-color: var(--accent);
+      border-radius: 50%;
+      animation: career-spin 0.75s linear infinite;
+    }
+    @keyframes career-spin { to { transform: rotate(360deg); } }
+    .career-loading-text {
+      color: var(--muted);
+      font-size: 13.5px;
+      text-align: center;
+    }
+    .career-score-overall {
+      background: var(--surface-strong);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 20px 24px;
+      display: flex;
+      align-items: center;
+      gap: 22px;
+      margin-bottom: 20px;
+    }
+    .career-grade-big {
+      font-size: 64px;
+      font-weight: 800;
+      line-height: 1;
+      flex-shrink: 0;
+    }
+    .career-score-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+    .career-score-card {
+      background: var(--surface-strong);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 14px 16px;
+    }
+    .career-score-label {
+      font-size: 11.5px;
+      color: var(--muted);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 5px;
+    }
+    .career-score-grade {
+      font-size: 36px;
+      font-weight: 800;
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+    .career-score-desc { font-size: 12px; color: var(--muted); line-height: 1.5; }
+    .grade-a { color: #157347; }
+    .grade-b { color: #2e86de; }
+    .grade-c { color: #d89f3d; }
+    .grade-d { color: #c26941; }
+    .grade-f { color: #a73b33; }
+    .career-result-section {
+      background: var(--surface-strong);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 18px 20px;
+      margin-bottom: 14px;
+    }
+    .career-result-section h4 {
+      margin: 0 0 11px;
+      font-size: 14.5px;
+      font-weight: 700;
+      color: var(--ink);
+      display: flex;
+      align-items: center;
+      gap: 7px;
+    }
+    .career-result-section ul { margin: 0; padding: 0 0 0 18px; }
+    .career-result-section li {
+      font-size: 13.5px;
+      line-height: 1.65;
+      color: var(--ink);
+      margin-bottom: 5px;
+    }
+    .career-result-section p {
+      font-size: 13.5px;
+      line-height: 1.65;
+      color: var(--ink);
+      margin: 0 0 6px;
+    }
+    .career-result-section p:last-child { margin-bottom: 0; }
+    .career-cv-snippet {
+      background: rgba(216,159,61,0.1);
+      border-left: 3px solid var(--accent-3);
+      border-radius: 0 10px 10px 0;
+      padding: 10px 14px;
+      margin-top: 4px;
+      font-size: 13px;
+      color: var(--ink);
+      font-style: italic;
+      line-height: 1.6;
+    }
+    .career-pos-card {
+      background: var(--surface-strong);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 18px 20px;
+      margin-bottom: 12px;
+    }
+    .career-pos-card h4 { margin: 0 0 6px; font-size: 15px; font-weight: 700; color: var(--ink); }
+    .career-pos-card p { margin: 0 0 10px; font-size: 13px; color: var(--muted); line-height: 1.55; }
+    .career-pos-tags { display: flex; flex-wrap: wrap; gap: 6px; }
+    .career-tag-accent {
+      background: rgba(173,63,47,0.1);
+      color: var(--accent);
+      border-radius: 999px;
+      padding: 3px 10px;
+      font-size: 11.5px;
+      font-weight: 600;
+    }
+    .career-tag-blue {
+      background: rgba(33,78,116,0.1);
+      color: var(--accent-2);
+      border-radius: 999px;
+      padding: 3px 10px;
+      font-size: 11.5px;
+      font-weight: 600;
+    }
+    .career-two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+      margin-bottom: 14px;
+    }
+    /* archetype + probability badges */
+    .career-archetype-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 18px;
+      flex-wrap: wrap;
+    }
+    .career-archetype-badge {
+      background: rgba(33,78,116,0.1);
+      color: var(--accent-2);
+      border: 1px solid rgba(33,78,116,0.2);
+      border-radius: 999px;
+      padding: 4px 13px;
+      font-size: 12px;
+      font-weight: 700;
+    }
+    .career-prob-badge {
+      border-radius: 999px;
+      padding: 4px 13px;
+      font-size: 12px;
+      font-weight: 700;
+    }
+    .career-prob-high  { background: rgba(21,115,71,0.12);  color: #157347; border: 1px solid rgba(21,115,71,0.25); }
+    .career-prob-mid   { background: rgba(216,159,61,0.12); color: #b07d20; border: 1px solid rgba(216,159,61,0.3); }
+    .career-prob-low   { background: rgba(167,59,51,0.12);  color: #a73b33; border: 1px solid rgba(167,59,51,0.25); }
+    /* level + ATS boxes */
+    .career-level-box {
+      background: var(--surface-strong);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 14px 18px;
+      margin-bottom: 14px;
+    }
+    .career-level-box h5 {
+      margin: 0 0 8px;
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+    .career-level-row {
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+      margin-bottom: 8px;
+    }
+    .career-level-item { font-size: 13px; color: var(--ink); }
+    .career-level-item strong { color: var(--accent-2); }
+    .career-ats-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-bottom: 14px;
+    }
+    .career-ats-col { background: var(--surface-strong); border: 1px solid var(--line); border-radius: 14px; padding: 14px 16px; }
+    .career-ats-col h5 { margin: 0 0 8px; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; }
+    .career-ats-found h5 { color: #157347; }
+    .career-ats-missing h5 { color: #a73b33; }
+    .career-ats-tags { display: flex; flex-wrap: wrap; gap: 5px; }
+    .career-tag-green {
+      background: rgba(21,115,71,0.1); color: #157347;
+      border-radius: 999px; padding: 3px 9px; font-size: 11.5px; font-weight: 600;
+    }
+    .career-tag-red {
+      background: rgba(167,59,51,0.1); color: #a73b33;
+      border-radius: 999px; padding: 3px 9px; font-size: 11.5px; font-weight: 600;
+    }
+    /* STAR story cards */
+    .career-star-card {
+      background: var(--surface-strong);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 18px 20px;
+      margin-bottom: 14px;
+    }
+    .career-star-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 10px;
+    }
+    .career-star-num {
+      width: 28px; height: 28px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--accent), #c26941);
+      color: #fff;
+      font-size: 13px;
+      font-weight: 800;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+    }
+    .career-star-theme { font-size: 15px; font-weight: 700; color: var(--ink); }
+    .career-star-questions { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 14px; }
+    .career-star-body { display: flex; flex-direction: column; gap: 10px; }
+    .career-star-item { display: flex; gap: 12px; align-items: flex-start; }
+    .career-star-label {
+      width: 32px; height: 24px;
+      border-radius: 6px;
+      font-size: 11px;
+      font-weight: 800;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+    .star-s { background: rgba(46,134,222,0.15); color: #2e86de; }
+    .star-t { background: rgba(216,159,61,0.18); color: #b07d20; }
+    .star-a { background: rgba(21,115,71,0.15); color: #157347; }
+    .star-r { background: rgba(173,63,47,0.15); color: var(--accent); }
+    .star-ref { background: rgba(33,78,116,0.12); color: var(--accent-2); font-size: 9px; width: 40px; }
+    .career-star-item div { font-size: 13px; color: var(--ink); line-height: 1.6; }
+    /* Cover letter */
+    .career-letter-body {
+      background: rgba(255,255,255,0.85);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 20px 22px;
+      font-size: 14px;
+      line-height: 1.75;
+      color: var(--ink);
+      white-space: pre-wrap;
+      max-height: 520px;
+      overflow-y: auto;
+    }
+    .career-copy-btn {
+      background: rgba(33,78,116,0.1);
+      border: 1px solid rgba(33,78,116,0.2);
+      color: var(--accent-2);
+      border-radius: 8px;
+      padding: 5px 12px;
+      font-size: 12px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+    .career-copy-btn:hover { background: rgba(33,78,116,0.18); }
+    @media (max-width: 900px) {
+      .career-workspace { grid-template-columns: 1fr; }
+      .career-panel { border-right: none; border-bottom: 1px solid var(--line); }
+      .career-score-grid, .career-two-col, .career-ats-grid { grid-template-columns: 1fr; }
+    }
+
+    /* ============================================================
+       GSAT 學測落點分析
+       ============================================================ */
+    .gsat-workspace { display: grid; grid-template-columns: 360px 1fr; height: calc(100vh - 120px); }
+    .gsat-panel { padding: 24px 20px; border-right: 1px solid var(--line); overflow-y: auto; display: flex; flex-direction: column; gap: 20px; }
+    .gsat-panel-label { font-size: 11px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); margin-bottom: 6px; }
+    .gsat-results-shell { overflow-y: auto; padding: 24px 28px; }
+    .gsat-score-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+    .gsat-score-item { display: flex; flex-direction: column; gap: 4px; }
+    .gsat-score-label { font-size: 12px; color: var(--muted); font-weight: 600; }
+    .gsat-score-input { border: 1.5px solid var(--line); border-radius: 8px; padding: 6px 10px; font-size: 15px; font-weight: 700; text-align: center; width: 100%; background: var(--bg); color: var(--ink); transition: border-color .15s; box-sizing: border-box; }
+    .gsat-score-input:focus { outline: none; border-color: var(--accent); }
+    .gsat-track-row { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+    .gsat-track-btn { border: 1.5px solid var(--line); border-radius: 8px; padding: 8px; font-size: 13px; font-weight: 600; cursor: pointer; text-align: center; background: var(--bg); color: var(--muted); transition: all .15s; }
+    .gsat-track-btn.active { border-color: var(--accent); color: var(--accent); background: rgba(33,78,116,.07); }
+    .gsat-analyze-btn { background: var(--accent); color: #fff; border: none; border-radius: 12px; padding: 14px; font-size: 14px; font-weight: 700; cursor: pointer; width: 100%; transition: opacity .15s; }
+    .gsat-analyze-btn:hover { opacity: .85; }
+    .gsat-analyze-btn:disabled { opacity: .5; cursor: not-allowed; }
+    .gsat-results-empty { padding: 80px 32px; text-align: center; color: var(--muted); }
+    .gsat-section-title { font-size: 15px; font-weight: 800; color: var(--ink); margin: 24px 0 10px; }
+    .gsat-section-title:first-child { margin-top: 0; }
+    .gsat-score-summary { display: grid; grid-template-columns: repeat(5, 1fr); gap: 8px; }
+    .gsat-score-card { background: var(--bg); border: 1.5px solid var(--line); border-radius: 10px; padding: 10px 8px; text-align: center; }
+    .gsat-score-card .sc-subj { font-size: 11px; color: var(--muted); margin-bottom: 3px; }
+    .gsat-score-card .sc-val { font-size: 20px; font-weight: 800; }
+    .gsat-score-card .sc-bench { font-size: 10px; color: var(--muted); margin-top: 2px; }
+    .gsat-total-bar { display: flex; align-items: center; gap: 12px; background: var(--accent); border-radius: 12px; padding: 14px 18px; color: #fff; margin-bottom: 12px; }
+    .gsat-total-bar .tb-total { font-size: 28px; font-weight: 900; }
+    .gsat-total-bar .tb-label { font-size: 12px; opacity: .85; }
+    .gsat-total-bar .tb-tier { margin-left: auto; background: rgba(255,255,255,.2); border-radius: 8px; padding: 4px 10px; font-size: 13px; font-weight: 700; }
+    .gsat-tier-row { display: flex; flex-direction: column; gap: 8px; margin-bottom: 4px; }
+    .gsat-dept-card { border: 1.5px solid var(--line); border-radius: 12px; padding: 12px 14px; background: var(--bg); }
+    .gsat-dept-card .dc-header { display: flex; align-items: center; gap: 8px; margin-bottom: 4px; flex-wrap: wrap; }
+    .gsat-dept-card .dc-school { font-size: 14px; font-weight: 700; color: var(--ink); }
+    .gsat-dept-card .dc-dept { font-size: 13px; color: var(--muted); }
+    .gsat-dept-card .dc-reason { font-size: 12px; color: var(--muted); line-height: 1.5; margin-top: 4px; }
+    .gsat-dept-card .dc-tip { margin-top: 6px; font-size: 12px; color: var(--accent); font-weight: 600; }
+    .dc-badge { border-radius: 6px; padding: 2px 8px; font-size: 11px; font-weight: 700; white-space: nowrap; }
+    .dc-badge-dream { background: #fef3c7; color: #92400e; }
+    .dc-badge-reach { background: #fee2e2; color: #991b1b; }
+    .dc-badge-target { background: #d1fae5; color: #065f46; }
+    .dc-badge-safety { background: #dbeafe; color: #1e40af; }
+    .gsat-strategy-card { background: var(--bg); border: 1.5px solid var(--line); border-radius: 12px; padding: 14px 16px; margin-bottom: 10px; }
+    .gsat-strategy-card h4 { font-size: 13px; font-weight: 700; color: var(--ink); margin: 0 0 6px; }
+    .gsat-strategy-card p { font-size: 12.5px; color: var(--muted); line-height: 1.6; margin: 0; }
+    .gsat-strategy-card .sc-example { margin-top: 8px; background: rgba(33,78,116,.06); border-radius: 8px; padding: 8px 10px; font-size: 12px; color: var(--ink); line-height: 1.5; font-style: italic; }
+    .gsat-tag-row { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+    .gsat-tag { background: rgba(33,78,116,.09); color: var(--accent); border-radius: 6px; padding: 2px 9px; font-size: 11.5px; font-weight: 600; }
+    .gsat-disclaimer { background: #fef9c3; border: 1px solid #fde68a; border-radius: 10px; padding: 10px 14px; font-size: 12px; color: #78350f; line-height: 1.6; margin-bottom: 16px; }
+    .gsat-tier-section { margin-bottom: 20px; }
+    .gsat-dept-card--warn { border-color: #fca5a5 !important; }
+    .gsat-threshold-warning { font-size: 11.5px; color: #dc2626; background: #fef2f2; border-radius: 6px; padding: 4px 8px; margin: 4px 0 2px; }
+    .gsat-dept-stats { display: flex; gap: 16px; flex-wrap: wrap; font-size: 12px; color: var(--muted); margin-top: 6px; }
+    .gsat-dept-stats strong { color: var(--ink); }
+    .gsat-dept-note { font-size: 11.5px; color: var(--muted); margin-top: 4px; font-style: italic; }
+    @media (max-width: 900px) {
+      .gsat-workspace { grid-template-columns: 1fr; }
+      .gsat-panel { border-right: none; border-bottom: 1px solid var(--line); }
+      .gsat-score-summary { grid-template-columns: repeat(3, 1fr); }
+    }
+
     /* Print styles */
     @media print {
       body > *:not(#app) { display: none !important; }
@@ -3282,6 +3153,8 @@
       <button class="app-tab active" data-tab="home" type="button">主畫面</button>
       <button class="app-tab" data-tab="cv" type="button">CV 履歷</button>
       <button class="app-tab" data-tab="portfolio" type="button">學習歷程</button>
+      <button class="app-tab" data-tab="career" type="button">✦ 求職顧問</button>
+      <button class="app-tab" data-tab="gsat" type="button">✦ 學測落點</button>
     </nav>
 
     <div id="page-home" class="app-page active">
@@ -4155,6 +4028,151 @@
       </section><!-- /portfolio-workspace -->
 
     </div><!-- /page-portfolio -->
+
+    <div id="page-career" class="app-page">
+      <div class="career-workspace">
+
+        <!-- LEFT PANEL -->
+        <div class="career-panel">
+          <div>
+            <div style="font-size:18px;font-weight:800;color:var(--ink);margin-bottom:4px;">求職顧問</div>
+            <div style="font-size:13px;color:var(--muted);line-height:1.5;">AI 協助你分析職位適配度、推薦適合崗位，並給出投遞策略與履歷優化建議。</div>
+          </div>
+
+          <!-- Mode toggle -->
+          <div>
+            <div class="career-panel-label">分析模式</div>
+            <div class="career-mode-tabs">
+              <button class="career-mode-tab active" data-mode="fit" type="button">職位適配分析<br><span style="font-weight:400;font-size:11px;">貼上職缺描述</span></button>
+              <button class="career-mode-tab" data-mode="position" type="button">推薦適合崗位<br><span style="font-weight:400;font-size:11px;">依你的履歷分析</span></button>
+              <button class="career-mode-tab" data-mode="interview" type="button">面試 STAR 準備<br><span style="font-weight:400;font-size:11px;">生成故事庫</span></button>
+              <button class="career-mode-tab" data-mode="coverletter" type="button">求職信生成<br><span style="font-weight:400;font-size:11px;">一鍵客製化</span></button>
+            </div>
+          </div>
+
+          <!-- JD input (only shown in fit mode) -->
+          <div id="careerJdSection">
+            <div class="career-panel-label">職缺描述 / Job Description</div>
+            <textarea id="careerJdInput" class="career-textarea" placeholder="將職缺的完整描述貼在這裡，包含職稱、職責、要求技能、公司介紹等。內容越完整，分析越準確。"></textarea>
+          </div>
+
+          <!-- CV snapshot preview -->
+          <div>
+            <div class="career-panel-label">你的履歷摘要（自動讀取）</div>
+            <div id="careerCvSnippet" style="background:rgba(255,255,255,0.6);border:1.5px solid var(--line);border-radius:12px;padding:12px 14px;font-size:12px;color:var(--muted);line-height:1.6;max-height:120px;overflow:hidden;position:relative;">
+              <span style="color:var(--muted);font-style:italic;">前往 CV 履歷頁填寫資料後，此處會自動讀取。</span>
+            </div>
+          </div>
+
+          <!-- API key -->
+          <div>
+            <div class="career-panel-label">Claude API Key</div>
+            <input id="claudeApiKey" class="career-api-input" type="password" placeholder="sk-ant- / sk- / AIza / gsk_..." autocomplete="off" />
+            <div class="career-api-note" style="margin-top:8px;">
+              支援 Anthropic、OpenAI、Google Gemini、Groq，系統自動識別。<br>
+              API Key 僅存於瀏覽器 localStorage，不會上傳至任何伺服器。
+            </div>
+          </div>
+
+          <!-- Analyze button -->
+          <button id="careerAnalyzeBtn" class="career-analyze-btn" data-mode="fit" type="button">
+            分析職位適配度
+          </button>
+        </div>
+
+        <!-- RIGHT PANEL: Results -->
+        <div class="career-results-shell">
+          <div id="careerResultsArea">
+            <div class="career-results-empty">
+              <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true">
+                <path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2"/>
+                <rect x="9" y="3" width="6" height="4" rx="1"/>
+                <path d="M9 12h6M9 16h4"/>
+              </svg>
+              <div>選擇分析模式、填入職缺描述（或直接分析履歷），<br>再點擊按鈕開始分析。</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div><!-- /page-career -->
+
+    <div id="page-gsat" class="app-page">
+      <div class="gsat-workspace">
+
+        <!-- LEFT PANEL: inputs -->
+        <div class="gsat-panel">
+          <div>
+            <div style="font-size:18px;font-weight:800;color:var(--ink);margin-bottom:4px;">學測落點分析</div>
+            <div style="font-size:13px;color:var(--muted);line-height:1.5;">輸入學測成績，根據近三年歷史資料快速預測落點校系。</div>
+          </div>
+
+          <!-- Track -->
+          <div>
+            <div class="gsat-panel-label">就讀組別</div>
+            <div class="gsat-track-row">
+              <button class="gsat-track-btn active" data-track="science" type="button">自然組</button>
+              <button class="gsat-track-btn" data-track="social" type="button">社會組</button>
+            </div>
+          </div>
+
+          <!-- Score inputs -->
+          <div>
+            <div class="gsat-panel-label">學測各科成績（1–15 級分）</div>
+            <div class="gsat-score-grid">
+              <div class="gsat-score-item">
+                <span class="gsat-score-label">國文</span>
+                <input class="gsat-score-input" id="gsatScore國文" type="number" min="1" max="15" placeholder="—" />
+              </div>
+              <div class="gsat-score-item">
+                <span class="gsat-score-label">英文</span>
+                <input class="gsat-score-input" id="gsatScore英文" type="number" min="1" max="15" placeholder="—" />
+              </div>
+              <div class="gsat-score-item" id="gsatMathARow">
+                <span class="gsat-score-label">數學 A（自然組）</span>
+                <input class="gsat-score-input" id="gsatScore數學A" type="number" min="1" max="15" placeholder="—" />
+              </div>
+              <div class="gsat-score-item" id="gsatMathBRow" style="display:none;">
+                <span class="gsat-score-label">數學 B（社會組）</span>
+                <input class="gsat-score-input" id="gsatScore數學B" type="number" min="1" max="15" placeholder="—" />
+              </div>
+              <div class="gsat-score-item">
+                <span class="gsat-score-label">社會</span>
+                <input class="gsat-score-input" id="gsatScore社會" type="number" min="1" max="15" placeholder="—" />
+              </div>
+              <div class="gsat-score-item">
+                <span class="gsat-score-label">自然</span>
+                <input class="gsat-score-input" id="gsatScore自然" type="number" min="1" max="15" placeholder="—" />
+              </div>
+              <div class="gsat-score-item">
+                <span class="gsat-score-label">英聽</span>
+                <select class="gsat-score-input" id="gsatListen" style="font-size:13px;font-weight:600;">
+                  <option value="A">A 級</option>
+                  <option value="B" selected>B 級</option>
+                  <option value="C">C 級</option>
+                  <option value="F">F 級</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <button id="gsatAnalyzeBtn" class="gsat-analyze-btn" type="button" onclick="window.gsatAnalyze&&window.gsatAnalyze()">開始落點分析</button>
+        </div>
+
+        <!-- RIGHT PANEL: results -->
+        <div class="gsat-results-shell">
+          <div id="gsatResultsArea">
+            <div class="gsat-results-empty">
+              <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true" style="color:var(--muted);margin-bottom:16px;display:block;margin-left:auto;margin-right:auto;">
+                <circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/>
+              </svg>
+              <div style="font-size:14px;color:var(--muted);line-height:1.7;">填入學測成績後點擊「開始落點分析」，<br>AI 會預測落點並給出學習歷程策略。</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div><!-- /page-gsat -->
 
   </main>
 
@@ -6674,6 +6692,7 @@
 
       window.closePdfPreview = closePdfPreview;
       window.openPdfPreview = openPdfPreview;
+      window.cvStudioState = state;   /* exposed for career advisor */
 
       init();
     })();
@@ -6959,10 +6978,10 @@
       }
 
       /* ── TAB SWITCHING ── */
-      const APP_TAB_IDS = ["home", "cv", "portfolio"];
+      const APP_TAB_IDS = ["home", "cv", "portfolio", "career", "gsat"];
 
       function normalizeTabId(tabId) {
-        return APP_TAB_IDS.includes(tabId) ? tabId : "home";
+        return document.getElementById("page-" + tabId) ? tabId : "home";
       }
 
       function getTabFromLocation() {
@@ -8115,7 +8134,901 @@
       }
 
       window.switchCvStudioTab = switchTab;
-      init();
+
+      /* ================================================================
+         CAREER ADVISOR  (inspired by career-ops / santifer)
+         ================================================================ */
+      (function careerAdvisor() {
+        const CLAUDE_API = "https://api.anthropic.com/v1/messages";
+
+        /* ── helpers ── */
+        function $c(id) { return document.getElementById(id); }
+
+        function gradeClass(grade) {
+          const g = (grade || "").toUpperCase().charAt(0);
+          if (g === "A") return "grade-a";
+          if (g === "B") return "grade-b";
+          if (g === "C") return "grade-c";
+          if (g === "D") return "grade-d";
+          return "grade-f";
+        }
+
+        function getCvSummary() {
+          const d = state.data;
+          const parts = [
+            d.name    && `姓名：${d.name}`,
+            d.role    && `職稱/目標：${d.role}`,
+            d.summary && `自我介紹：${d.summary}`,
+            d.skills  && `技能：${d.skills}`,
+            (d.highlights || d.awards) && `亮點/成就：${[d.highlights, d.awards].filter(Boolean).join("\n")}`,
+            d.experience && `工作經歷：${d.experience}`,
+            d.education  && `教育背景：${d.education}`,
+            d.projects   && `專案/作品：${d.projects}`,
+          ].filter(Boolean);
+          return parts.length ? parts.join("\n\n") : "";
+        }
+
+        function updateCvSnippet() {
+          const el = $c("careerCvSnippet");
+          if (!el) return;
+          const summary = getCvSummary();
+          if (!summary) {
+            el.innerHTML = `<span style="color:var(--muted);font-style:italic;">前往 CV 履歷頁填寫資料後，此處會自動讀取。</span>`;
+          } else {
+            const preview = summary.slice(0, 240) + (summary.length > 240 ? "…" : "");
+            el.textContent = preview;
+          }
+        }
+
+        function parseJson(text) {
+          const m = text.match(/```(?:json)?\s*([\s\S]*?)\s*```/) || text.match(/(\{[\s\S]*\})/);
+          return JSON.parse(m ? m[1] : text);
+        }
+
+        function detectProvider(key) {
+          if (key.startsWith("sk-ant-")) return "anthropic";
+          if (key.startsWith("AIza"))   return "gemini";
+          if (key.startsWith("gsk_"))   return "groq";
+          if (key.startsWith("sk-"))    return "openai";
+          return null;
+        }
+
+        async function callClaude(systemPrompt, userPrompt) {
+          const key = ($c("claudeApiKey").value || "").trim();
+          if (!key) throw new Error("請先填入 API Key（左側面板底部）");
+
+          const provider = detectProvider(key);
+          if (!provider) throw new Error("無法識別 API Key 格式，請確認是否來自 Anthropic、OpenAI、Google Gemini 或 Groq");
+
+          let res, data;
+
+          /* ── Anthropic / Claude ── */
+          if (provider === "anthropic") {
+            res = await fetch("https://api.anthropic.com/v1/messages", {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+                "x-api-key": key,
+                "anthropic-version": "2023-06-01",
+                "anthropic-dangerous-direct-browser-access": "true",
+              },
+              body: JSON.stringify({
+                model: "claude-opus-4-6",
+                max_tokens: 2048,
+                system: systemPrompt,
+                messages: [{ role: "user", content: userPrompt }],
+              }),
+            });
+            if (!res.ok) { const e = await res.json().catch(() => ({})); throw new Error(e.error?.message || `Anthropic API 錯誤 ${res.status}`); }
+            data = await res.json();
+            return data.content[0].text;
+          }
+
+          /* ── OpenAI (GPT) ── */
+          if (provider === "openai") {
+            res = await fetch("https://api.openai.com/v1/chat/completions", {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+                "Authorization": `Bearer ${key}`,
+              },
+              body: JSON.stringify({
+                model: "gpt-4o",
+                max_tokens: 2048,
+                messages: [
+                  { role: "system", content: systemPrompt },
+                  { role: "user",   content: userPrompt },
+                ],
+              }),
+            });
+            if (!res.ok) { const e = await res.json().catch(() => ({})); throw new Error(e.error?.message || `OpenAI API 錯誤 ${res.status}`); }
+            data = await res.json();
+            return data.choices[0].message.content;
+          }
+
+          /* ── Google Gemini ── */
+          if (provider === "gemini") {
+            res = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-pro:generateContent?key=${key}`, {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({
+                contents: [{ role: "user", parts: [{ text: `${systemPrompt}\n\n${userPrompt}` }] }],
+                generationConfig: { maxOutputTokens: 2048 },
+              }),
+            });
+            if (!res.ok) { const e = await res.json().catch(() => ({})); throw new Error(e.error?.message || `Gemini API 錯誤 ${res.status}`); }
+            data = await res.json();
+            return data.candidates[0].content.parts[0].text;
+          }
+
+          /* ── Groq ── */
+          if (provider === "groq") {
+            res = await fetch("https://api.groq.com/openai/v1/chat/completions", {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+                "Authorization": `Bearer ${key}`,
+              },
+              body: JSON.stringify({
+                model: "llama-3.3-70b-versatile",
+                max_tokens: 2048,
+                messages: [
+                  { role: "system", content: systemPrompt },
+                  { role: "user",   content: userPrompt },
+                ],
+              }),
+            });
+            if (!res.ok) { const e = await res.json().catch(() => ({})); throw new Error(e.error?.message || `Groq API 錯誤 ${res.status}`); }
+            data = await res.json();
+            return data.choices[0].message.content;
+          }
+        }
+
+        /* ── loading / error states ── */
+        function showLoading(msg) {
+          $c("careerResultsArea").innerHTML = `
+            <div class="career-loading">
+              <div class="career-loading-spinner"></div>
+              <div class="career-loading-text">${msg}</div>
+            </div>`;
+        }
+
+        function showError(msg) {
+          $c("careerResultsArea").innerHTML = `
+            <div style="padding:40px 32px;text-align:center;color:var(--danger);font-size:13.5px;line-height:1.6;">${msg}</div>`;
+        }
+
+        /* ── MODE 1: Job-fit analysis ── */
+        async function analyzeJobFit() {
+          const jd = ($c("careerJdInput").value || "").trim();
+          if (!jd) { showError("請先貼上職缺描述再分析。"); return; }
+
+          const cv = getCvSummary();
+          if (!cv) { showError("請先至「CV 履歷」頁填寫你的履歷資料。"); return; }
+
+          const system = `你是一位頂尖職涯顧問，擁有 10 年以上招聘與職涯輔導經驗，熟悉 ATS 系統運作。請根據使用者的履歷與職缺描述，進行全面深度的職位適配分析（對標 career-ops 評估系統）。
+
+請用繁體中文，以 JSON 格式輸出（不加任何說明文字）：
+{
+  "archetype": "職位類型，如：軟體工程師 / 產品經理 / 行銷專員 / 資料科學家 / UX設計師 / 業務開發 / 營運管理 等",
+  "overall": {
+    "grade": "A",
+    "score": 85,
+    "summary": "2-3句整體評語，說明整體契合度與最大優缺點",
+    "application_probability": "高",
+    "probability_reason": "說明為何建議或不建議投遞（1句話）"
+  },
+  "dimensions": [
+    { "name": "背景與經歷匹配", "grade": "A", "desc": "詳細說明哪些過往經歷符合，哪些有明顯缺口" },
+    { "name": "技能吻合度",     "grade": "B", "desc": "硬技能（技術棧）與軟技能的吻合程度，列出缺少的關鍵技能" },
+    { "name": "成就與量化成果", "grade": "C", "desc": "履歷中的成就是否符合職缺期望的成果規模與量化程度" },
+    { "name": "ATS關鍵字覆蓋", "grade": "B", "desc": "重要關鍵字命中率，說明哪類關鍵字缺乏" },
+    { "name": "應徵可信度",     "grade": "A", "desc": "整體定位的合理性，面試官看到此履歷的第一印象" },
+    { "name": "層級與薪資匹配", "grade": "B", "desc": "推估職位層級是否與履歷資歷相符，薪資定位是否合理" }
+  ],
+  "level_assessment": {
+    "inferred_level": "依履歷推估的層級，如：Senior / Mid / Junior / Lead / Manager",
+    "jd_expected_level": "職缺期望的層級",
+    "gap_analysis": "層級差異說明與建議"
+  },
+  "ats_keywords": {
+    "found": ["履歷中已有的重要關鍵字1", "關鍵字2", "關鍵字3"],
+    "missing": ["履歷缺少的高優先關鍵字1", "關鍵字2", "關鍵字3", "關鍵字4"]
+  },
+  "strategy":      { "title": "投遞策略", "points": ["策略1","策略2","策略3"] },
+  "cv_tips":       { "title": "履歷優化建議（優先順序排列）", "points": ["建議1","建議2","建議3","建議4"] },
+  "interview_prep":{ "title": "面試準備重點", "points": ["重點1","重點2","重點3"] },
+  "salary_notes":  "薪資談判定位建議（根據層級與技能稀缺性評估，給出範圍方向）",
+  "cover_letter_hook": "求職信開場白（80-100字，展現對公司的理解，帶入1-2個量化成就，有力且不誇張）"
+}`;
+
+          const prompt = `我的履歷：\n\n${cv}\n\n---\n\n職缺描述：\n\n${jd}`;
+
+          showLoading("正在分析職位適配度，通常需要 15–30 秒…");
+          try {
+            const text = await callClaude(system, prompt);
+            renderJobFit(parseJson(text));
+          } catch (e) {
+            showError("分析失敗：" + e.message);
+          }
+        }
+
+        function renderJobFit(r) {
+          const dims = (r.dimensions || []).map(d => `
+            <div class="career-score-card">
+              <div class="career-score-label">${d.name}</div>
+              <div class="career-score-grade ${gradeClass(d.grade)}">${d.grade}</div>
+              <div class="career-score-desc">${d.desc}</div>
+            </div>`).join("");
+
+          const list = (arr) => (arr || []).map(p => `<li>${p}</li>`).join("");
+
+          const prob = (r.overall?.application_probability || "").charAt(0);
+          const probClass = prob === "高" ? "career-prob-high" : prob === "中" ? "career-prob-mid" : "career-prob-low";
+
+          const lvl = r.level_assessment || {};
+          const ats = r.ats_keywords || {};
+
+          $c("careerResultsArea").innerHTML = `
+            ${r.archetype ? `<div class="career-archetype-row">
+              <span class="career-archetype-badge">🏷 ${r.archetype}</span>
+              ${r.overall?.application_probability ? `<span class="career-prob-badge ${probClass}">投遞建議：${r.overall.application_probability}</span>` : ""}
+            </div>` : ""}
+
+            <div style="margin-bottom:8px;font-size:12px;color:var(--muted);font-weight:600;text-transform:uppercase;letter-spacing:.05em;">整體適配評分</div>
+            <div class="career-score-overall" style="margin-bottom:20px;">
+              <div class="career-grade-big ${gradeClass(r.overall?.grade)}">${r.overall?.grade || "—"}</div>
+              <div>
+                <div style="font-size:22px;font-weight:800;color:var(--ink);margin-bottom:4px;">${r.overall?.score ?? ""}分</div>
+                <div style="font-size:13.5px;color:var(--muted);line-height:1.55;">${r.overall?.summary || ""}</div>
+                ${r.overall?.probability_reason ? `<div style="font-size:12px;color:var(--muted);margin-top:6px;font-style:italic;">${r.overall.probability_reason}</div>` : ""}
+              </div>
+            </div>
+
+            <div style="margin-bottom:8px;font-size:12px;color:var(--muted);font-weight:600;text-transform:uppercase;letter-spacing:.05em;">六維度評分</div>
+            <div class="career-score-grid" style="margin-bottom:20px;">${dims}</div>
+
+            ${(lvl.inferred_level || lvl.jd_expected_level) ? `
+            <div class="career-level-box">
+              <h5>層級評估</h5>
+              <div class="career-level-row">
+                ${lvl.inferred_level ? `<div class="career-level-item">你的層級：<strong>${lvl.inferred_level}</strong></div>` : ""}
+                ${lvl.jd_expected_level ? `<div class="career-level-item">職缺期望：<strong>${lvl.jd_expected_level}</strong></div>` : ""}
+              </div>
+              ${lvl.gap_analysis ? `<div style="font-size:13px;color:var(--muted);line-height:1.6;">${lvl.gap_analysis}</div>` : ""}
+            </div>` : ""}
+
+            ${(ats.found?.length || ats.missing?.length) ? `
+            <div style="margin-bottom:8px;font-size:12px;color:var(--muted);font-weight:600;text-transform:uppercase;letter-spacing:.05em;">ATS 關鍵字分析</div>
+            <div class="career-ats-grid" style="margin-bottom:20px;">
+              <div class="career-ats-col career-ats-found">
+                <h5>✓ 已覆蓋</h5>
+                <div class="career-ats-tags">${(ats.found || []).map(k => `<span class="career-tag-green">${k}</span>`).join("")}</div>
+              </div>
+              <div class="career-ats-col career-ats-missing">
+                <h5>✗ 缺少（優先補充）</h5>
+                <div class="career-ats-tags">${(ats.missing || []).map(k => `<span class="career-tag-red">${k}</span>`).join("")}</div>
+              </div>
+            </div>` : ""}
+
+            ${r.strategy ? `<div class="career-result-section">
+              <h4>📋 ${r.strategy.title}</h4>
+              <ul>${list(r.strategy.points)}</ul>
+            </div>` : ""}
+
+            ${r.cv_tips ? `<div class="career-result-section">
+              <h4>✏️ ${r.cv_tips.title}</h4>
+              <ul>${list(r.cv_tips.points)}</ul>
+            </div>` : ""}
+
+            ${r.interview_prep ? `<div class="career-result-section">
+              <h4>🎯 ${r.interview_prep.title}</h4>
+              <ul>${list(r.interview_prep.points)}</ul>
+            </div>` : ""}
+
+            ${r.salary_notes ? `<div class="career-result-section">
+              <h4>💰 薪資談判建議</h4>
+              <p>${r.salary_notes}</p>
+            </div>` : ""}
+
+            ${r.cover_letter_hook ? `<div class="career-result-section">
+              <h4>✉️ 求職信開場建議</h4>
+              <div class="career-cv-snippet">${r.cover_letter_hook}</div>
+            </div>` : ""}`;
+        }
+
+        /* ── MODE 3: Interview STAR story bank ── */
+        async function analyzeInterviewPrep() {
+          const jd = ($c("careerJdInput").value || "").trim();
+          if (!jd) { showError("請先貼上職缺描述再生成面試準備。"); return; }
+          const cv = getCvSummary();
+          if (!cv) { showError("請先至「CV 履歷」頁填寫你的履歷資料。"); return; }
+
+          const system = `你是一位專業面試教練，精通 STAR 方法論與行為面試設計。根據使用者的履歷與職缺描述，生成 5 個針對性的 STAR 面試故事，每個故事對應此職位最可能被問到的面試題。故事內容需要以使用者的真實經歷為基礎推斷，具體且有說服力。
+
+請用繁體中文，以 JSON 格式輸出（不加任何說明文字）：
+{
+  "role_analysis": "此職位最核心的能力需求與文化特質（2-3句，說明面試官最在意什麼）",
+  "stories": [
+    {
+      "theme": "故事主題，如：跨部門協作、危機處理、數據驅動決策、技術突破、領導轉型等",
+      "applicable_questions": ["最可能被問到的面試問題1", "面試問題2"],
+      "situation": "情境：具體的背景說明（時間、公司規模、背景脈絡）",
+      "task": "任務：你具體需要完成或解決什麼問題",
+      "action": "行動：你個人採取的具體步驟（強調「我」而非「我們」，列出2-3個關鍵行動）",
+      "result": "結果：可量化的成果或明確的影響（盡可能有數字、百分比、時間範圍）",
+      "reflection": "反思：你從中學到什麼，以及這如何影響你後續的工作方式"
+    }
+  ],
+  "common_questions": ["預測的其他常見行為面試問題1","問題2","問題3","問題4"],
+  "tips": ["面試技巧提示1（針對此職位）", "提示2", "提示3"]
+}`;
+
+          const prompt = `我的履歷：\n\n${cv}\n\n---\n\n職缺描述：\n\n${jd}`;
+          showLoading("正在生成 STAR 面試故事庫，通常需要 20–40 秒…");
+          try {
+            const text = await callClaude(system, prompt);
+            renderInterviewPrep(parseJson(text));
+          } catch (e) {
+            showError("生成失敗：" + e.message);
+          }
+        }
+
+        function renderInterviewPrep(r) {
+          const list = (arr) => (arr || []).map(p => `<li>${p}</li>`).join("");
+
+          const stories = (r.stories || []).map((s, i) => `
+            <div class="career-star-card">
+              <div class="career-star-header">
+                <span class="career-star-num">${i + 1}</span>
+                <span class="career-star-theme">${s.theme}</span>
+              </div>
+              <div class="career-star-questions">
+                ${(s.applicable_questions || []).map(q => `<span class="career-tag-blue">Q: ${q}</span>`).join("")}
+              </div>
+              <div class="career-star-body">
+                <div class="career-star-item"><span class="career-star-label star-s">S</span><div>${s.situation}</div></div>
+                <div class="career-star-item"><span class="career-star-label star-t">T</span><div>${s.task}</div></div>
+                <div class="career-star-item"><span class="career-star-label star-a">A</span><div>${s.action}</div></div>
+                <div class="career-star-item"><span class="career-star-label star-r">R</span><div>${s.result}</div></div>
+                ${s.reflection ? `<div class="career-star-item"><span class="career-star-label star-ref">反思</span><div>${s.reflection}</div></div>` : ""}
+              </div>
+            </div>`).join("");
+
+          $c("careerResultsArea").innerHTML = `
+            ${r.role_analysis ? `<div class="career-result-section" style="margin-bottom:18px;">
+              <h4>🎯 職位核心需求分析</h4>
+              <p>${r.role_analysis}</p>
+            </div>` : ""}
+
+            <div style="margin-bottom:8px;font-size:12px;color:var(--muted);font-weight:600;text-transform:uppercase;letter-spacing:.05em;">STAR 面試故事庫（5個）</div>
+            ${stories}
+
+            ${r.common_questions?.length ? `<div class="career-result-section">
+              <h4>❓ 其他預測常見問題</h4>
+              <ul>${list(r.common_questions)}</ul>
+            </div>` : ""}
+
+            ${r.tips?.length ? `<div class="career-result-section">
+              <h4>💡 面試技巧提示</h4>
+              <ul>${list(r.tips)}</ul>
+            </div>` : ""}`;
+        }
+
+        /* ── MODE 4: Cover letter generation ── */
+        async function generateCoverLetter() {
+          const jd = ($c("careerJdInput").value || "").trim();
+          if (!jd) { showError("請先貼上職缺描述再生成求職信。"); return; }
+          const cv = getCvSummary();
+          if (!cv) { showError("請先至「CV 履歷」頁填寫你的履歷資料。"); return; }
+
+          const system = `你是頂尖的求職文件撰寫師，擅長生成 ATS 友善、高轉換率的客製化求職信。根據使用者的履歷與職缺，生成一封專業、個人化的求職信。要求：
+- 開頭 1-2 句展現對公司/職缺的具體了解，不要用「我對貴公司深感興趣」等套話
+- 中段呈現 2-3 個與職缺高度相關的具體成就（盡可能量化）
+- 結尾主動表達下一步意願，有自信但不浮誇
+- 全篇自然融入職缺的 5-8 個重要關鍵字
+- 篇幅：350-500 字，語氣：專業但有個人特色
+
+請用繁體中文，以 JSON 格式輸出（不加任何說明文字）：
+{
+  "subject_line": "建議的郵件主旨行（簡潔、帶職位名稱）",
+  "full_letter": "完整求職信全文（含稱謂、正文三段、結語與署名位置）",
+  "keywords_used": ["信中自然融入的關鍵字1", "關鍵字2", "關鍵字3", "關鍵字4", "關鍵字5"],
+  "personalization_points": ["此信的個人化亮點1（說明為何這樣寫）", "亮點2"],
+  "alternative_opening": "備用的另一種開場方式（不同角度，如：從成就切入 或 從共同價值觀切入）"
+}`;
+
+          const prompt = `我的履歷：\n\n${cv}\n\n---\n\n職缺描述：\n\n${jd}`;
+          showLoading("正在生成客製化求職信，通常需要 15–30 秒…");
+          try {
+            const text = await callClaude(system, prompt);
+            renderCoverLetter(parseJson(text));
+          } catch (e) {
+            showError("生成失敗：" + e.message);
+          }
+        }
+
+        function renderCoverLetter(r) {
+          const list = (arr) => (arr || []).map(p => `<li>${p}</li>`).join("");
+          const safeText = (r.full_letter || "").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+
+          $c("careerResultsArea").innerHTML = `
+            ${r.subject_line ? `<div class="career-result-section" style="margin-bottom:14px;">
+              <h4>📧 建議郵件主旨</h4>
+              <div style="font-size:14px;color:var(--ink);font-weight:600;padding:10px 14px;background:rgba(33,78,116,0.08);border-radius:10px;">${r.subject_line}</div>
+            </div>` : ""}
+
+            <div class="career-result-section" style="margin-bottom:14px;">
+              <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px;">
+                <h4 style="margin:0;">✉️ 求職信全文</h4>
+                <button class="career-copy-btn" id="careerCopyLetterBtn">複製全文</button>
+              </div>
+              <div class="career-letter-body">${safeText.replace(/\n/g, "<br>")}</div>
+            </div>
+
+            ${r.keywords_used?.length ? `<div class="career-result-section" style="margin-bottom:14px;">
+              <h4>🔑 ATS 關鍵字（已融入）</h4>
+              <div class="career-ats-tags">${(r.keywords_used || []).map(k => `<span class="career-tag-green">${k}</span>`).join("")}</div>
+            </div>` : ""}
+
+            ${r.personalization_points?.length ? `<div class="career-result-section" style="margin-bottom:14px;">
+              <h4>✨ 個人化亮點說明</h4>
+              <ul>${list(r.personalization_points)}</ul>
+            </div>` : ""}
+
+            ${r.alternative_opening ? `<div class="career-result-section">
+              <h4>✏️ 備用開場方式</h4>
+              <div class="career-cv-snippet">${r.alternative_opening}</div>
+            </div>` : ""}`;
+
+          /* wire up copy button after render */
+          const copyBtn = document.getElementById("careerCopyLetterBtn");
+          if (copyBtn) {
+            copyBtn.addEventListener("click", () => {
+              navigator.clipboard.writeText(r.full_letter || "").then(() => {
+                copyBtn.textContent = "已複製！";
+                setTimeout(() => { copyBtn.textContent = "複製全文"; }, 2000);
+              });
+            });
+          }
+        }
+
+        /* ── MODE 2: Position recommendations ── */
+        async function analyzePosition() {
+          const cv = getCvSummary();
+          if (!cv) { showError("請先至「CV 履歷」頁填寫你的履歷資料。"); return; }
+
+          const system = `你是一位資深職涯顧問。請根據使用者的履歷，分析最適合的職位與產業，並給出具體的求職建議。
+
+請用繁體中文，以 JSON 格式輸出（不加任何說明文字）：
+{
+  "profile_summary": "職涯定位描述（2–3句話）",
+  "positions": [
+    {
+      "title": "職位名稱",
+      "match": "高",
+      "reason": "為什麼適合（1–2句）",
+      "industries": ["產業1","產業2"],
+      "keywords": ["關鍵字1","關鍵字2","關鍵字3"]
+    }
+  ],
+  "strengths": ["優勢1","優勢2","優勢3"],
+  "gaps":       ["可補強的地方1","可補強的地方2"],
+  "next_steps": ["行動1","行動2","行動3"],
+  "job_search_tips": {
+    "platforms":  ["平台1","平台2"],
+    "timing":     "投遞時機與節奏",
+    "networking": "人脈策略建議"
+  }
+}`;
+
+          const prompt = `我的履歷如下，請分析我最適合的崗位：\n\n${cv}`;
+
+          showLoading("正在分析你的職涯定位，通常需要 15–30 秒…");
+          try {
+            const text = await callClaude(system, prompt);
+            renderPosition(parseJson(text));
+          } catch (e) {
+            showError("分析失敗：" + e.message);
+          }
+        }
+
+        function renderPosition(r) {
+          const list = (arr) => (arr || []).map(p => `<li>${p}</li>`).join("");
+
+          const positions = (r.positions || []).map(p => `
+            <div class="career-pos-card">
+              <h4>${p.title}
+                <span style="font-size:12px;font-weight:500;color:var(--muted);">· 匹配度：${p.match}</span>
+              </h4>
+              <p>${p.reason}</p>
+              <div class="career-pos-tags">
+                ${(p.industries || []).map(i => `<span class="career-tag-accent">${i}</span>`).join("")}
+                ${(p.keywords   || []).map(k => `<span class="career-tag-blue">${k}</span>`).join("")}
+              </div>
+            </div>`).join("");
+
+          const tips = r.job_search_tips || {};
+
+          $c("careerResultsArea").innerHTML = `
+            ${r.profile_summary ? `<div class="career-result-section" style="margin-bottom:18px;">
+              <h4>🧭 你的職涯定位</h4>
+              <p>${r.profile_summary}</p>
+            </div>` : ""}
+
+            <div style="margin-bottom:8px;font-size:12px;color:var(--muted);font-weight:600;text-transform:uppercase;letter-spacing:.05em;">推薦崗位</div>
+            <div style="margin-bottom:20px;">${positions}</div>
+
+            <div class="career-two-col">
+              ${r.strengths ? `<div class="career-result-section">
+                <h4>💪 你的核心優勢</h4>
+                <ul>${list(r.strengths)}</ul>
+              </div>` : ""}
+              ${r.gaps ? `<div class="career-result-section">
+                <h4>📈 可補強的地方</h4>
+                <ul>${list(r.gaps)}</ul>
+              </div>` : ""}
+            </div>
+
+            ${r.next_steps ? `<div class="career-result-section">
+              <h4>🚀 建議的下一步行動</h4>
+              <ul>${list(r.next_steps)}</ul>
+            </div>` : ""}
+
+            ${(tips.platforms || tips.timing || tips.networking) ? `<div class="career-result-section">
+              <h4>🔍 求職實戰建議</h4>
+              ${tips.platforms ? `<p><strong>推薦平台：</strong>${tips.platforms.join("、")}</p>` : ""}
+              ${tips.timing    ? `<p><strong>投遞節奏：</strong>${tips.timing}</p>` : ""}
+              ${tips.networking? `<p><strong>人脈策略：</strong>${tips.networking}</p>` : ""}
+            </div>` : ""}`;
+        }
+
+        /* ── init ── */
+        function init() {
+          const MODE_CONFIG = {
+            fit:         { label: "分析職位適配度",     jd: true,  hint: "貼上職缺描述後，點擊「分析職位適配度」" },
+            position:    { label: "分析我適合哪些崗位", jd: false, hint: "點擊按鈕，AI 將根據你的履歷推薦適合崗位" },
+            interview:   { label: "生成 STAR 面試故事", jd: true,  hint: "貼上職缺描述後，點擊按鈕生成面試故事庫" },
+            coverletter: { label: "生成客製化求職信",   jd: true,  hint: "貼上職缺描述後，點擊按鈕一鍵生成求職信" },
+          };
+
+          /* Mode tabs */
+          const modeTabs = document.querySelectorAll(".career-mode-tab");
+          modeTabs.forEach(tab => {
+            tab.addEventListener("click", () => {
+              modeTabs.forEach(t => t.classList.remove("active"));
+              tab.classList.add("active");
+              const mode = tab.dataset.mode;
+              const cfg = MODE_CONFIG[mode] || MODE_CONFIG.fit;
+              const jdSection = $c("careerJdSection");
+              if (jdSection) jdSection.style.display = cfg.jd ? "" : "none";
+              const btn = $c("careerAnalyzeBtn");
+              btn.textContent = cfg.label;
+              btn.dataset.mode = mode;
+              $c("careerResultsArea").innerHTML = `
+                <div class="career-results-empty">
+                  <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true">
+                    <path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2"/>
+                    <rect x="9" y="3" width="6" height="4" rx="1"/>
+                    <path d="M9 12h6M9 16h4"/>
+                  </svg>
+                  <div>${cfg.hint}</div>
+                </div>`;
+            });
+          });
+
+          /* Analyze button */
+          $c("careerAnalyzeBtn").addEventListener("click", async () => {
+            const btn = $c("careerAnalyzeBtn");
+            btn.disabled = true;
+            try {
+              const mode = btn.dataset.mode;
+              if (mode === "position")    await analyzePosition();
+              else if (mode === "interview")   await analyzeInterviewPrep();
+              else if (mode === "coverletter") await generateCoverLetter();
+              else                             await analyzeJobFit();
+            } finally {
+              btn.disabled = false;
+            }
+          });
+
+          /* ── API key: cloud save/load ── */
+          let saveKeyTimer = null;
+
+          async function loadApiKey() {
+            const user   = window.cvStudioState?.user;
+            const client = window.cvStudioState?.client;
+            if (!user || !client) return;
+            const { data } = await client
+              .from("cv_profiles")
+              .select("content")
+              .eq("user_id", user.id)
+              .maybeSingle();
+            const key = data?.content?._careerApiKey;
+            if (key) $c("claudeApiKey").value = key;
+            updateApiNote();
+          }
+
+          async function saveApiKey(apiKey) {
+            const user   = window.cvStudioState?.user;
+            const client = window.cvStudioState?.client;
+            if (!user || !client) return;
+            const { data } = await client
+              .from("cv_profiles")
+              .select("content")
+              .eq("user_id", user.id)
+              .maybeSingle();
+            const merged = { ...(data?.content || {}), _careerApiKey: apiKey || null };
+            await client.from("cv_profiles").upsert(
+              { user_id: user.id, content: merged },
+              { onConflict: "user_id" }
+            );
+          }
+
+          function updateApiNote() {
+            const note = document.querySelector(".career-api-note");
+            if (!note) return;
+            const loggedIn = !!window.cvStudioState?.user;
+            note.innerHTML = loggedIn
+              ? `支援 Anthropic、OpenAI、Google Gemini、Groq，系統自動識別。<br>已登入：API Key 會加密存於你的帳號，換裝置也能使用。`
+              : `支援 Anthropic、OpenAI、Google Gemini、Groq，系統自動識別。<br><strong>尚未登入</strong>：Key 僅在此次工作階段保留，刷新後會清空。`;
+          }
+
+          $c("claudeApiKey").addEventListener("input", () => {
+            const val = $c("claudeApiKey").value.trim();
+            clearTimeout(saveKeyTimer);
+            if (window.cvStudioState?.user) {
+              /* debounce 1.5s then save to cloud */
+              saveKeyTimer = setTimeout(() => saveApiKey(val), 1500);
+            }
+            /* no localStorage — intentionally not persisted when logged out */
+          });
+
+          /* Refresh CV snippet + load API key whenever the tab is shown */
+          document.querySelector("[data-tab='career']").addEventListener("click", () => {
+            updateCvSnippet();
+            loadApiKey();
+            updateApiNote();
+          });
+
+          /* Try to load on first paint (user may already be signed in) */
+          loadApiKey();
+          updateApiNote();
+          updateCvSnippet();
+        }
+
+        try { init(); } catch(e) { console.error('[career-advisor] init failed:', e); }
+      })();
+    })();
+
+    /* ============================================================
+       GSAT 學測落點分析 IIFE  — data-driven, no API required
+       資料來源：歷年大學甄選入學統計，僅供參考
+       ============================================================ */
+    (function () {
+      "use strict";
+      function $g(id) { return document.getElementById(id); }
+
+      /* ── 五標參考值（近年學測約略值） ─────────────────────────── */
+      const BM = {
+        國文:  { 頂標:14, 前標:12, 均標:10, 後標:7, 底標:5 },
+        英文:  { 頂標:15, 前標:13, 均標:10, 後標:7, 底標:5 },
+        數學A: { 頂標:14, 前標:12, 均標:9,  後標:6, 底標:4 },
+        數學B: { 頂標:13, 前標:11, 均標:8,  後標:5, 底標:3 },
+        社會:  { 頂標:14, 前標:12, 均標:9,  後標:6, 底標:4 },
+        自然:  { 頂標:13, 前標:11, 均標:9,  後標:6, 底標:4 },
+      };
+
+      /* ── 校系資料（歷年一階篩選加權分切線，111–113學年均值） ──── */
+      /* w: 各科加權  th: 最低門檻  h: 近三年切線 [113,112,111]  */
+      const DEPTS = [
+        /* ======== 自然組 ======== */
+        { u:"國立臺灣大學",     d:"醫學系",         t:"science", w:{國文:2,英文:2,數學A:1,自然:1.5},       th:{英文:"頂標",數學A:"頂標",自然:"頂標"}, h:[70.5,69.8,70.2], note:"全台競爭最激烈系所" },
+        { u:"國立臺灣大學",     d:"電機工程學系",   t:"science", w:{國文:1,英文:1.5,數學A:2,自然:2},       th:{英文:"前標",數學A:"前標",自然:"前標"}, h:[61.5,60.8,61.2], note:"" },
+        { u:"國立臺灣大學",     d:"資訊工程學系",   t:"science", w:{國文:1,英文:1.5,數學A:2,自然:2},       th:{英文:"前標",數學A:"頂標"},             h:[62.0,61.3,61.8], note:"數學須達頂標" },
+        { u:"國立臺灣大學",     d:"牙醫學系",       t:"science", w:{國文:1,英文:2,數學A:1,自然:2},         th:{英文:"前標",自然:"前標"},              h:[58.0,57.3,57.8], note:"" },
+        { u:"國立臺灣大學",     d:"機械工程學系",   t:"science", w:{國文:1,英文:1.5,數學A:1.5,自然:2},     th:{數學A:"前標"},                         h:[54.5,53.8,54.1], note:"" },
+        { u:"國立臺灣大學",     d:"化學工程學系",   t:"science", w:{國文:1,英文:1.5,數學A:1.5,自然:2},     th:{數學A:"前標",自然:"均標"},             h:[53.0,52.3,52.8], note:"" },
+        { u:"國立陽明交通大學", d:"醫學系",         t:"science", w:{國文:2,英文:2,數學A:1,自然:1.5},       th:{英文:"頂標",數學A:"前標",自然:"前標"}, h:[69.0,68.2,68.7], note:"" },
+        { u:"國立陽明交通大學", d:"電機工程學系",   t:"science", w:{國文:1,英文:1.5,數學A:2,自然:2},       th:{英文:"前標",數學A:"前標"},             h:[60.5,59.8,60.1], note:"" },
+        { u:"國立陽明交通大學", d:"資訊工程學系",   t:"science", w:{國文:1,英文:1.5,數學A:2,自然:1.5},     th:{數學A:"前標"},                         h:[59.0,58.3,58.7], note:"" },
+        { u:"國立清華大學",     d:"電機工程學系",   t:"science", w:{國文:1,英文:1.5,數學A:2,自然:2},       th:{數學A:"前標",自然:"均標"},             h:[59.0,58.3,58.8], note:"" },
+        { u:"國立清華大學",     d:"資訊工程學系",   t:"science", w:{國文:1,英文:1.5,數學A:2,自然:1.5},     th:{數學A:"前標"},                         h:[59.5,58.8,59.1], note:"" },
+        { u:"國立清華大學",     d:"化學工程學系",   t:"science", w:{國文:1,英文:1.5,數學A:1.5,自然:2},     th:{自然:"均標"},                          h:[51.0,50.2,50.8], note:"" },
+        { u:"國立成功大學",     d:"醫學系",         t:"science", w:{國文:2,英文:2,數學A:1,自然:1.5},       th:{英文:"前標",數學A:"前標",自然:"前標"}, h:[67.5,66.8,67.2], note:"" },
+        { u:"國立成功大學",     d:"電機工程學系",   t:"science", w:{國文:1,英文:1.5,數學A:2,自然:1.5},     th:{數學A:"均標"},                         h:[57.5,56.8,57.1], note:"" },
+        { u:"國立成功大學",     d:"資訊工程學系",   t:"science", w:{國文:1,英文:1.5,數學A:2,自然:1.5},     th:{數學A:"前標"},                         h:[58.0,57.3,57.7], note:"" },
+        { u:"國立成功大學",     d:"機械工程學系",   t:"science", w:{國文:1,英文:1,數學A:1.5,自然:1.5},     th:{},                                     h:[50.5,49.8,50.1], note:"" },
+        { u:"國立中山大學",     d:"醫學系",         t:"science", w:{國文:2,英文:2,數學A:1,自然:1.5},       th:{英文:"前標",自然:"前標"},              h:[65.5,64.8,65.2], note:"" },
+        { u:"國立中山大學",     d:"電機工程學系",   t:"science", w:{國文:1,英文:1.5,數學A:2,自然:1.5},     th:{},                                     h:[52.5,51.8,52.1], note:"" },
+        { u:"國立中山大學",     d:"資訊工程學系",   t:"science", w:{國文:1,英文:1.5,數學A:2,自然:1.5},     th:{},                                     h:[53.0,52.3,52.6], note:"" },
+        { u:"國立中央大學",     d:"電機工程學系",   t:"science", w:{國文:1,英文:1.5,數學A:2,自然:1.5},     th:{},                                     h:[51.5,50.8,51.1], note:"" },
+        { u:"國立中央大學",     d:"資訊工程學系",   t:"science", w:{國文:1,英文:1.5,數學A:2,自然:1.5},     th:{},                                     h:[52.0,51.2,51.6], note:"" },
+        { u:"國立中興大學",     d:"電機工程學系",   t:"science", w:{國文:1,英文:1,數學A:1.5,自然:1.5},     th:{},                                     h:[47.5,46.8,47.1], note:"" },
+        { u:"國立中興大學",     d:"資訊工程學系",   t:"science", w:{國文:1,英文:1,數學A:1.5,自然:1.5},     th:{},                                     h:[48.0,47.2,47.6], note:"" },
+        { u:"國立臺灣師範大學", d:"數學系",         t:"science", w:{國文:1,英文:1,數學A:2,自然:1},         th:{數學A:"前標"},                         h:[44.0,43.3,43.7], note:"" },
+        { u:"國立臺灣師範大學", d:"物理學系",       t:"science", w:{國文:1,英文:1,數學A:1.5,自然:2},       th:{自然:"均標"},                          h:[43.5,42.8,43.1], note:"" },
+        { u:"國立臺灣海洋大學", d:"資訊工程學系",   t:"science", w:{國文:1,英文:1,數學A:1.5,自然:1},       th:{},                                     h:[36.0,35.2,35.7], note:"" },
+        { u:"臺北醫學大學",     d:"醫學系",         t:"science", w:{國文:1.5,英文:2,數學A:1,自然:2},       th:{英文:"前標",自然:"前標"},              h:[62.5,61.8,62.1], note:"" },
+        { u:"中國醫藥大學",     d:"醫學系",         t:"science", w:{國文:1.5,英文:1.5,數學A:1,自然:2},     th:{自然:"前標"},                          h:[61.0,60.2,60.7], note:"" },
+        { u:"高雄醫學大學",     d:"醫學系",         t:"science", w:{國文:1.5,英文:1.5,數學A:1,自然:2},     th:{自然:"前標"},                          h:[61.5,60.8,61.1], note:"" },
+        /* ======== 社會組 ======== */
+        { u:"國立臺灣大學",     d:"法律學系",       t:"social",  w:{國文:2,英文:1.5,數學B:1,社會:2},        th:{英文:"前標",社會:"前標"},              h:[58.5,57.8,58.1], note:"社會組頂尖系所" },
+        { u:"國立臺灣大學",     d:"政治學系",       t:"social",  w:{國文:1.5,英文:1.5,數學B:1,社會:2},      th:{社會:"前標"},                          h:[54.5,53.8,54.1], note:"" },
+        { u:"國立臺灣大學",     d:"經濟學系",       t:"social",  w:{國文:1,英文:1.5,數學B:1.5,社會:1.5},    th:{英文:"前標",數學B:"前標"},             h:[53.0,52.3,52.8], note:"" },
+        { u:"國立臺灣大學",     d:"外國語文學系",   t:"social",  w:{國文:1.5,英文:2,社會:1},                th:{英文:"頂標"},                          h:[44.0,43.2,43.7], note:"英文佔比高，需達頂標" },
+        { u:"國立臺灣大學",     d:"工商管理學系",   t:"social",  w:{國文:1,英文:1.5,數學B:1.5,社會:1.5},    th:{英文:"均標"},                          h:[50.5,49.8,50.1], note:"" },
+        { u:"國立臺灣大學",     d:"社會學系",       t:"social",  w:{國文:1.5,英文:1.5,數學B:1,社會:1.5},    th:{},                                     h:[49.5,48.8,49.2], note:"" },
+        { u:"國立政治大學",     d:"法律學系",       t:"social",  w:{國文:2,英文:1.5,數學B:1,社會:2},        th:{英文:"前標"},                          h:[55.5,54.8,55.1], note:"" },
+        { u:"國立政治大學",     d:"政治學系",       t:"social",  w:{國文:1.5,英文:1.5,數學B:0.5,社會:2},    th:{},                                     h:[51.5,50.8,51.1], note:"" },
+        { u:"國立政治大學",     d:"經濟學系",       t:"social",  w:{國文:1,英文:1.5,數學B:1.5,社會:1},      th:{英文:"前標"},                          h:[49.5,48.8,49.2], note:"" },
+        { u:"國立政治大學",     d:"傳播學院",       t:"social",  w:{國文:1.5,英文:1.5,數學B:0.5,社會:1.5},  th:{},                                     h:[50.5,49.8,50.1], note:"" },
+        { u:"國立政治大學",     d:"企業管理學系",   t:"social",  w:{國文:1,英文:1.5,數學B:1.5,社會:1},      th:{},                                     h:[48.5,47.8,48.1], note:"" },
+        { u:"國立臺灣師範大學", d:"英語學系",       t:"social",  w:{國文:1,英文:2,社會:1},                  th:{英文:"前標"},                          h:[42.0,41.3,41.7], note:"" },
+        { u:"國立臺灣師範大學", d:"歷史學系",       t:"social",  w:{國文:1.5,英文:1,社會:2},                th:{},                                     h:[40.5,39.8,40.1], note:"" },
+        { u:"國立中山大學",     d:"政治經濟學系",   t:"social",  w:{國文:1,英文:1.5,數學B:1,社會:1.5},      th:{},                                     h:[43.5,42.8,43.1], note:"" },
+        { u:"國立中山大學",     d:"企業管理學系",   t:"social",  w:{國文:1,英文:1.5,數學B:1,社會:1},        th:{},                                     h:[42.0,41.3,41.7], note:"" },
+        { u:"國立中興大學",     d:"法律學系",       t:"social",  w:{國文:2,英文:1.5,數學B:0.5,社會:2},      th:{},                                     h:[47.5,46.8,47.1], note:"" },
+        { u:"國立中興大學",     d:"財務金融學系",   t:"social",  w:{國文:1,英文:1.5,數學B:1.5,社會:1},      th:{},                                     h:[41.5,40.8,41.1], note:"" },
+        { u:"東吳大學",         d:"法律學系",       t:"social",  w:{國文:2,英文:1,數學B:0.5,社會:1.5},      th:{},                                     h:[42.5,41.8,42.1], note:"" },
+        { u:"輔仁大學",         d:"法律學系",       t:"social",  w:{國文:1.5,英文:1,數學B:0.5,社會:1.5},    th:{},                                     h:[38.5,37.8,38.1], note:"" },
+        { u:"淡江大學",         d:"英文學系",       t:"social",  w:{國文:1,英文:2,社會:0.5},                th:{},                                     h:[31.5,30.8,31.1], note:"" },
+        { u:"逢甲大學",         d:"財務金融學系",   t:"social",  w:{國文:1,英文:1,數學B:1,社會:1},          th:{},                                     h:[33.0,32.2,32.6], note:"" },
+      ];
+
+      /* ── Track toggle ─────────────────────────────────────────── */
+      let selectedTrack = "science";
+
+      document.querySelectorAll(".gsat-track-btn").forEach(btn => {
+        btn.addEventListener("click", () => {
+          selectedTrack = btn.dataset.track;
+          document.querySelectorAll(".gsat-track-btn").forEach(b => b.classList.toggle("active", b === btn));
+          const mathARow = $g("gsatMathARow");
+          const mathBRow = $g("gsatMathBRow");
+          if (mathARow) mathARow.style.display = selectedTrack === "science" ? "" : "none";
+          if (mathBRow) mathBRow.style.display = selectedTrack === "social"  ? "" : "none";
+        });
+      });
+
+      /* ── Score helpers ────────────────────────────────────────── */
+      function getScores() {
+        return {
+          國文:  +($g("gsatScore國文")?.value  || 0) || 0,
+          英文:  +($g("gsatScore英文")?.value  || 0) || 0,
+          數學A: +($g("gsatScore數學A")?.value || 0) || 0,
+          數學B: +($g("gsatScore數學B")?.value || 0) || 0,
+          社會:  +($g("gsatScore社會")?.value  || 0) || 0,
+          自然:  +($g("gsatScore自然")?.value  || 0) || 0,
+        };
+      }
+
+      function weighted(scores, w) {
+        return Object.entries(w).reduce((s, [k, v]) => s + (scores[k] || 0) * v, 0);
+      }
+
+      function bmLevel(subj, score) {
+        const b = BM[subj]; if (!b) return "—";
+        if (score >= b.頂標) return "頂標";
+        if (score >= b.前標) return "前標";
+        if (score >= b.均標) return "均標";
+        if (score >= b.後標) return "後標";
+        if (score >= b.底標) return "底標";
+        return "底標以下";
+      }
+
+      function bmColor(lv) {
+        return ({頂標:"#7c3aed",前標:"#2563eb",均標:"#059669",後標:"#d97706",底標:"#dc2626","底標以下":"#9f1239"})[lv] || "#6b7280";
+      }
+
+      function meetsThreshold(scores, subj, lv) {
+        const b = BM[subj]; if (!b) return true;
+        return (scores[subj] || 0) >= b[lv];
+      }
+
+      /* ── Main analysis ─────────────────────────────────────────── */
+      function analyze() {
+        const scores   = getScores();
+        const mathKey  = selectedTrack === "science" ? "數學A" : "數學B";
+        const total5   = scores.國文 + scores.英文 + scores[mathKey] + scores.社會 + scores.自然;
+
+        if (total5 < 5) {
+          $g("gsatResultsArea").innerHTML = `<div class="gsat-results-empty">請先輸入各科成績</div>`;
+          return;
+        }
+
+        const results = DEPTS
+          .filter(dep => dep.t === selectedTrack)
+          .map(dep => {
+            const userW  = weighted(scores, dep.w);
+            const avgC   = dep.h.reduce((a, b) => a + b, 0) / dep.h.length;
+            const gap    = +(userW - avgC).toFixed(1);
+            const ratio  = userW / avgC;
+            const tier   = ratio >= 1.05 ? "safety" : ratio >= 0.97 ? "target" : ratio >= 0.90 ? "reach" : "dream";
+            const fails  = Object.entries(dep.th || {})
+              .filter(([s, lv]) => !meetsThreshold(scores, s, lv))
+              .map(([s, lv]) => `${s}需${lv}（你：${bmLevel(s, scores[s] || 0)}）`);
+            return { ...dep, userW: +userW.toFixed(1), avgC: +avgC.toFixed(1), gap, tier, fails };
+          });
+
+        const order = { safety:0, target:1, reach:2, dream:3 };
+        results.sort((a, b) => order[a.tier] - order[b.tier] || b.gap - a.gap);
+        renderResults(results, scores, total5);
+      }
+
+      /* ── Render ────────────────────────────────────────────────── */
+      function renderResults(results, scores, total5) {
+        const listen  = $g("gsatListen")?.value || "B";
+        const subjSet = selectedTrack === "science"
+          ? ["國文","英文","數學A","自然","社會"]
+          : ["國文","英文","數學B","社會","自然"];
+
+        const scoreCards = subjSet.map(s => {
+          const score = scores[s] || 0;
+          const lv  = bmLevel(s, score);
+          const col = bmColor(lv);
+          return `<div class="gsat-score-card">
+            <div class="sc-subj">${s}</div>
+            <div class="sc-val" style="color:${col}">${score || "—"}</div>
+            <div class="sc-bench" style="color:${col}">${score ? lv : ""}</div>
+          </div>`;
+        }).join("");
+
+        const TIER_CFG = {
+          safety: { label:"安全志願", badge:"dc-badge-safety", text:"安全", color:"#1e40af" },
+          target: { label:"標準志願", badge:"dc-badge-target", text:"標準", color:"#065f46" },
+          reach:  { label:"挑戰校系", badge:"dc-badge-reach",  text:"挑戰", color:"#991b1b" },
+          dream:  { label:"✦ 夢幻志願",badge:"dc-badge-dream",  text:"夢幻", color:"#92400e" },
+        };
+
+        const tierHtml = ["safety","target","reach","dream"].map(tier => {
+          const list = results.filter(r => r.tier === tier);
+          if (!list.length) return "";
+          const cfg = TIER_CFG[tier];
+          const cards = list.map(r => {
+            const warnHtml = r.fails.length
+              ? `<div class="gsat-threshold-warning">⚠ 門檻未達：${r.fails.join("、")}</div>` : "";
+            return `<div class="gsat-dept-card${r.fails.length ? " gsat-dept-card--warn" : ""}">
+              <div class="dc-header">
+                <span class="dc-badge ${cfg.badge}">${cfg.text}</span>
+                <span class="dc-school">${r.u}</span>
+                <span class="dc-dept">｜ ${r.d}</span>
+              </div>
+              ${warnHtml}
+              <div class="gsat-dept-stats">
+                <span>加權：<strong>${r.userW}</strong></span>
+                <span>歷年均線：<strong>${r.avgC}</strong></span>
+                <span>差距：<strong style="color:${r.gap>=0?"#059669":"#dc2626"}">${r.gap>=0?"+":""}${r.gap}</strong></span>
+              </div>
+              ${r.note ? `<div class="gsat-dept-note">${r.note}</div>` : ""}
+            </div>`;
+          }).join("");
+          return `<div class="gsat-tier-section">
+            <div class="gsat-section-title" style="color:${cfg.color}">${cfg.label}（${list.length}）</div>
+            <div class="gsat-tier-row">${cards}</div>
+          </div>`;
+        }).join("");
+
+        $g("gsatResultsArea").innerHTML = `
+          <div style="padding-bottom:40px;">
+            <div class="gsat-total-bar">
+              <div>
+                <div class="tb-total">${total5}</div>
+                <div class="tb-label">五科總分（滿分 75）・${selectedTrack === "science" ? "自然組" : "社會組"}・英聽 ${listen}</div>
+              </div>
+            </div>
+            <div class="gsat-score-summary" style="margin-bottom:12px;">${scoreCards}</div>
+            <div class="gsat-disclaimer">
+              ⚠ 本資料為歷年統計估算，<strong>僅供初步參考</strong>。建議交叉比對
+              <strong>甄戰 AI 大數據</strong>、<strong>104 落點分析</strong>、<strong>1111 落點分析</strong>
+              等網站，並以大學甄選入學委員會公告之正式篩選條件為準。
+            </div>
+            ${tierHtml}
+          </div>`;
+      }
+
+      window.gsatAnalyze = analyze;
+      const _gsatBtn = $g("gsatAnalyzeBtn");
+      if (_gsatBtn) _gsatBtn.addEventListener("click", analyze);
     })();
 
   </script>

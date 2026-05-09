@@ -4,8 +4,8 @@
     {
       "name": "CV App Worktree",
       "runtimeExecutable": "python3",
-      "runtimeArgs": ["-m", "http.server", "8789"],
-      "port": 8789
+      "runtimeArgs": ["-m", "http.server", "8790", "--directory", "/Users/maxwang/Desktop/CV App/.claude/worktrees/gallant-shtern"],
+      "port": 8790
     }
   ]
 }
