@@ -2,7 +2,23 @@
   "name": "cv-studio",
   "private": true,
   "scripts": {
+    "university-tw:help": "node scripts/scrape-university-tw.mjs --help",
+    "university-tw:scrape": "node scripts/scrape-university-tw.mjs --out data/raw/university-tw-site.json",
+    "university-tw:build:help": "node scripts/build-university-tw-app-data.mjs --help",
+    "university-tw:build": "node scripts/build-university-tw-app-data.mjs data/raw/university-tw-site.json --js-out data/app/university-tw-app-data.js --json-out data/app/university-tw-app-data.json",
+    "university-tw:sql:help": "node scripts/build-university-tw-sql.mjs --help",
+    "university-tw:sql": "node scripts/build-university-tw-sql.mjs data/raw/university-tw-site.json --out data/sql/university-tw-seed.sql",
+    "gsat:104:help": "node scripts/import-104-gsat.mjs --help",
+    "gsat:104:standard": "node scripts/import-104-gsat.mjs fetch-standard --year 115 --out data/raw/104-standard-115.json",
+    "gsat:104:major-list": "node scripts/import-104-gsat.mjs fetch-major-list --score-year 115 --role-type 1 --chinese 12 --english 11 --mathA 10 --mathB 9 --society 12 --natural 12 --out data/normalized/104-gsat-115.json",
+    "gsat:104:browser:probe": "node scripts/capture-104-browser-state.mjs probe --score-year 115 --role-type 1 --chinese 12 --english 11 --mathA 10 --mathB 9 --society 12 --natural 12",
+    "gsat:104:browser:capture": "node scripts/capture-104-browser-state.mjs capture --score-year 115 --role-type 1 --chinese 12 --english 11 --mathA 10 --mathB 9 --society 12 --natural 12 --out data/raw/104-browser-capture.json",
+    "gsat:build:help": "node scripts/build-gsat-external-data.mjs --help",
+    "gsat:build": "node scripts/build-gsat-external-data.mjs data/normalized --js-out data/app/gsat-external-data.js --json-out data/app/gsat-external-data.json --report-out data/app/gsat-external-report.md",
     "build": "mkdir -p dist && cp index.html manifest.json sw.js icon.svg config.js dist/ && cp index.html dist/404.html && touch dist/.nojekyll",
     "deploy:prepare": "npm run build"
+  },
+  "devDependencies": {
+    "puppeteer-core": "^24.43.0"
   }
 }

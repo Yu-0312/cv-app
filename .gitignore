@@ -6,3 +6,6 @@ dist/
 dist.zip
 template-reference-*.pdf
 config.js
+.claude/worktrees/
+data/raw/104-browser-capture.json
+data/normalized/104-gsat-115-browser.json

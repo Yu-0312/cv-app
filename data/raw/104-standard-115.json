@@ -1,0 +1,98 @@
+{
+  "source": "104",
+  "fetchedAt": "2026-05-09T16:13:05.892Z",
+  "scoreYear": 115,
+  "url": "https://student.104.com.tw/api/v1.0/hs/standardScore?scoreYear=115",
+  "data": {
+    "currentYear": {
+      "year": 115,
+      "score": {
+        "top": {
+          "mathA": 12,
+          "mathB": 11,
+          "chinese": 13,
+          "english": 13,
+          "natural": 13,
+          "society": 13
+        },
+        "pre": {
+          "mathA": 10,
+          "mathB": 9,
+          "chinese": 12,
+          "english": 11,
+          "natural": 12,
+          "society": 12
+        },
+        "avage": {
+          "mathA": 8,
+          "mathB": 5,
+          "chinese": 10,
+          "english": 8,
+          "natural": 9,
+          "society": 10
+        },
+        "post": {
+          "mathA": 5,
+          "mathB": 3,
+          "chinese": 9,
+          "english": 5,
+          "natural": 7,
+          "society": 8
+        },
+        "bottom": {
+          "mathA": 4,
+          "mathB": 2,
+          "chinese": 7,
+          "english": 3,
+          "natural": 5,
+          "society": 7
+        }
+      }
+    },
+    "preYear": {
+      "year": 114,
+      "score": {
+        "top": {
+          "mathA": 11,
+          "mathB": 12,
+          "chinese": 13,
+          "english": 13,
+          "natural": 13,
+          "society": 13
+        },
+        "pre": {
+          "mathA": 9,
+          "mathB": 10,
+          "chinese": 12,
+          "english": 11,
+          "natural": 12,
+          "society": 12
+        },
+        "avage": {
+          "mathA": 6,
+          "mathB": 6,
+          "chinese": 10,
+          "english": 8,
+          "natural": 9,
+          "society": 10
+        },
+        "post": {
+          "mathA": 4,
+          "mathB": 4,
+          "chinese": 9,
+          "english": 4,
+          "natural": 7,
+          "society": 8
+        },
+        "bottom": {
+          "mathA": 3,
+          "mathB": 3,
+          "chinese": 7,
+          "english": 3,
+          "natural": 5,
+          "society": 7
+        }
+      }
+    }
+  }
+}

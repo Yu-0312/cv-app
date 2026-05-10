@@ -134,6 +134,125 @@ npm run build
 
 ---
 
+## 學測落點資料擴充
+
+目前專案已支援「全台大學 + 學士班科系」選擇，但校系落點分數資料仍在持續補齊。  
+為了避免把第三方網站資料直接手抄進 `index.html`，專案新增了外部資料匯入流程。
+
+### University TW 全站資料抓取
+
+專案現在也能把 `University TW` 的公開靜態資料一次性抓回本地資料庫檔：
+
+```bash
+npm run university-tw:help
+npm run university-tw:scrape
+npm run university-tw:build
+npm run university-tw:sql
+```
+
+輸出檔會在：
+
+```text
+data/raw/university-tw-site.json
+data/app/university-tw-app-data.js
+data/app/university-tw-app-data.json
+data/sql/university-tw-seed.sql
+```
+
+目前抓取內容包含：
+
+- `uac` 分發入學：60 校、1717 筆校系
+- `caac` 個人申請：123 校、2674 筆校系明細
+- `star` 繁星推薦：64 校、1612 筆校系明細
+- `female` 男女比：125 校校級與系級資料
+- `register` 註冊率：125 校校級與系級資料
+
+這個資料檔是本地快照，不依賴即時第三方 API，比直接綁外站 API 穩定得多；之後只要定期重跑抓取腳本即可更新。
+
+### University TW 前端與 Supabase 匯入
+
+現在這份快照可以同時走兩條路：
+
+- `npm run university-tw:build`
+  - 產出前端可直接載入的資料檔
+  - `index.html` 會自動載入 `data/app/university-tw-app-data.js`
+  - 學測分析頁在使用者選定大學或科系時，會額外顯示 `University TW` 的分發入學、個人申請、繁星、男女比、註冊率摘要
+- `npm run university-tw:sql`
+  - 產出可直接匯入 PostgreSQL / Supabase 的 seed 檔
+  - 搭配 [`supabase-university-tw-schema.sql`](supabase-university-tw-schema.sql) 使用
+
+匯入 Supabase 的順序：
+
+```bash
+# 1. 先在 Supabase SQL Editor 執行
+supabase-university-tw-schema.sql
+
+# 2. 再貼上或匯入 seed
+data/sql/university-tw-seed.sql
+```
+
+SQL 結構會建立：
+
+- `public.university_tw_snapshots`
+- `public.university_tw_universities`
+- `public.university_tw_uac_departments`
+- `public.university_tw_caac_departments`
+- `public.university_tw_star_departments`
+- `public.university_tw_gender_departments`
+- `public.university_tw_registration_departments`
+
+這樣你後續不只前端可直接查，也能在 Supabase 內做搜尋、篩選、報表或 API。
+
+### 104 落點資料匯入
+
+先查看工具說明：
+
+```bash
+npm run gsat:104:help
+```
+
+下載 104 公開五標資料：
+
+```bash
+npm run gsat:104:standard
+```
+
+直接用一組學測分數抓 104 校系列表，產生 normalized JSON：
+
+```bash
+npm run gsat:104:major-list
+node scripts/import-104-gsat.mjs summarize data/normalized/104-gsat-115.json
+npm run gsat:build
+```
+
+如果你要走「瀏覽器態擷取」，目前也有基礎工具可用：
+
+```bash
+npm run gsat:104:browser:probe
+npm run gsat:104:browser:capture
+node scripts/import-104-gsat.mjs extract-capture data/raw/104-browser-capture.json --score-year 115 --out data/normalized/104-gsat-115-browser.json
+```
+
+注意：
+
+- 未登入狀態下，104 結果頁目前只會露出前 20 筆，後面是會員牆。
+- 因此 `browser:capture` 要真的抓到更多批次，仍需要使用已登入的 104 工作階段。
+
+若你已經在瀏覽器完成 104 落點查詢，也可以把 Network HAR 匯出後轉成正規化資料：
+
+```bash
+node scripts/import-104-gsat.mjs extract-har exports/104-session.har --score-year 115 --out data/normalized/104-gsat-115.json
+node scripts/import-104-gsat.mjs summarize data/normalized/104-gsat-115.json
+npm run gsat:build
+```
+
+相關說明請見：
+
+- [gsat-source-audit.md](gsat-source-audit.md)
+- [data/README.md](data/README.md)
+
+---
+
 ## 專案結構
 
 ```
@@ -145,6 +264,8 @@ CV-App/
 ├── sw.js                    # Service Worker，PWA 離線快取
 ├── manifest.json            # PWA 安裝設定
 ├── icon.svg                 # APP 圖示
+├── data/                    # 第三方學測落點資料（raw / normalized）
+├── scripts/                 # 匯入與整理工具
 ├── supabase-schema.sql      # 資料庫結構與 RLS 規則
 ├── config.js                # 本機 Supabase 設定（不 commit）
 ├── config.example.js        # 設定檔範本

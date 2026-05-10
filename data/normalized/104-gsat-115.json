@@ -1,0 +1,3117 @@
+{
+  "source": "104",
+  "extractedAt": "2026-05-10T02:04:38.905Z",
+  "scoreYear": 115,
+  "inputMethod": "direct-api",
+  "requestCount": 1,
+  "pageCount": 1,
+  "majorCount": 20,
+  "requestSummaries": [
+    {
+      "endpoint": "/api/v1.0/hs/majorList",
+      "url": "https://student.104.com.tw/api/v1.0/hs/majorList",
+      "requestPayload": {
+        "majorName": "",
+        "schoolNo": [],
+        "groupNo": [],
+        "hollands": [],
+        "risk": [],
+        "interview": [],
+        "score": {
+          "roleType": 1,
+          "chinese": 12,
+          "english": 11,
+          "mathA": 10,
+          "mathB": 9,
+          "society": 12,
+          "natural": 12,
+          "apcsS": 0,
+          "apcsI": 0,
+          "eListening": "F"
+        },
+        "page": {
+          "limit": 100,
+          "offset": 0
+        }
+      },
+      "page": {
+        "limit": 20,
+        "offset": 0,
+        "total": 2072
+      }
+    }
+  ],
+  "landingPoint": {
+    "roleType": 1,
+    "wantMajorCount": 0,
+    "score": {
+      "scoreYear": 115,
+      "chinese": 12,
+      "english": 11,
+      "mathA": 10,
+      "mathB": 9,
+      "society": 12,
+      "natural": 12,
+      "eListening": "F",
+      "apcsS": 0,
+      "apcsI": 0
+    }
+  },
+  "majors": [
+    {
+      "source": "104",
+      "scoreYear": 115,
+      "endpoint": "/api/v1.0/hs/majorList",
+      "requestPayload": {
+        "majorName": "",
+        "schoolNo": [],
+        "groupNo": [],
+        "hollands": [],
+        "risk": [],
+        "interview": [],
+        "score": {
+          "roleType": 1,
+          "chinese": 12,
+          "english": 11,
+          "mathA": 10,
+          "mathB": 9,
+          "society": 12,
+          "natural": 12,
+          "apcsS": 0,
+          "apcsI": 0,
+          "eListening": "F"
+        },
+        "page": {
+          "limit": 100,
+          "offset": 0
+        }
+      },
+      "schoolName": "東吳大學",
+      "schoolLink": "https://collego.edu.tw/Highschool/DepartmentIntro?dept_id=005012",
+      "departmentName": "化學系",
+      "departmentLink": "https://web-ch.scu.edu.tw/chem",
+      "schoolTypeName": "私立",
+      "area": "台北市",
+      "categoryName": "數理化學群",
+      "enrollmentMajorNo": "005122",
+      "enrollmentSchoolNo": "",
+      "reportRisk": 110.00000000000001,
+      "acceptanceRate": null,
+      "wantMajor": false,
+      "firstStage": {
+        "power": [
+          {
+            "name": "自然",
+            "level": 3
+          }
+        ],
+        "standard": [
+          {
+            "level": "後標",
+            "name": "自然"
+          }
+        ]
+      },
+      "secondStage": {
+        "steps": [
+          "審查資料",
+          "面試"
+        ],
+        "selectDate": "115/5/16 至 115/5/17",
+        "selectStudentNumber": 102,
+        "enrollStudentNumber": 34
+      },
+      "lowScorePreYear": [
+        {
+          "year": 114,
+          "score": [
+            "自然11"
+          ]
+        },
+        {
+          "year": 113,
+          "score": [
+            "自然10"
+          ]
+        }
+      ],
+      "lowScoreThisYear": [
+        {
+          "year": 115,
+          "score": [
+            "自然10"
+          ]
+        }
+      ],
+      "acceptSubjects": [],
+      "registration": "98%",
+      "teacherStudentRatio": "1:29",
+      "selectCharge": 1000,
+      "enrollmentQuota": [
+        {
+          "year": 115,
+          "quota": "34"
+        },
+        {
+          "year": 114,
+          "quota": "24"
+        },
+        {
+          "year": 113,
+          "quota": "24"
+        }
+      ],
+      "excess": [
+        "英數A自"
+      ],
+      "distribution": [
+        "114年備26",
+        "113年備17",
+        "112年備18"
+      ],
+      "interest": [
+        "I",
+        "R"
+      ],
+      "links": [
+        {
+          "name": "簡章",
+          "link": "https://www.cac.edu.tw/apply115/system/ColQry_115xappLyfOrStu_Azd5gP29/html/115_005122.htm?v=1.0"
+        },
+        {
+          "name": "畢業出路",
+          "link": "https://guide.104.com.tw/career/schoolMajor/5059000000/440101/?utm_source=hsapply&utm_medium=result"
+        },
+        {
+          "name": "科系介紹",
+          "link": "https://guide.104.com.tw/career/schoolMajor/5059000000/440101/introduction?utm_source=hsapply&utm_medium=result"
+        },
+        {
+          "name": "科系真心話",
+          "link": "https://guide.104.com.tw/career/schoolMajor/5059000000/440101/comment/?utm_source=hsapply&utm_medium=result"
+        },
+        {
+          "name": "學群排行榜",
+          "link": "https://guide.104.com.tw/career/college-brand/?typeId=GU03&utm_source=hsapply&utm_medium=result"
+        }
+      ],
+      "dynamic": {
+        "views": 817,
+        "average": [],
+        "overTotalScore": null,
+        "secondStageScore": [],
+        "avg": null
+      }
+    },
+    {
+      "source": "104",
+      "scoreYear": 115,
+      "endpoint": "/api/v1.0/hs/majorList",
+      "requestPayload": {
+        "majorName": "",
+        "schoolNo": [],
+        "groupNo": [],
+        "hollands": [],
+        "risk": [],
+        "interview": [],
+        "score": {
+          "roleType": 1,
+          "chinese": 12,
+          "english": 11,
+          "mathA": 10,
+          "mathB": 9,
+          "society": 12,
+          "natural": 12,
+          "apcsS": 0,
+          "apcsI": 0,
+          "eListening": "F"
+        },
+        "page": {
+          "limit": 100,
+          "offset": 0
+        }
+      },
+      "schoolName": "東吳大學",
+      "schoolLink": "https://collego.edu.tw/Highschool/DepartmentIntro?dept_id=005015",
+      "departmentName": "心理學系",
+      "departmentLink": "https://web-ch.scu.edu.tw/psy",
+      "schoolTypeName": "私立",
+      "area": "台北市",
+      "categoryName": "社會心理學群",
+      "enrollmentMajorNo": "005142",
+      "enrollmentSchoolNo": "",
+      "reportRisk": 110.00000000000001,
+      "acceptanceRate": null,
+      "wantMajor": false,
+      "firstStage": {
+        "power": [
+          {
+            "name": "國英數A",
+            "level": 3
+          }
+        ],
+        "standard": [
+          {
+            "level": "後標",
+            "name": "國文"
+          },
+          {
+            "level": "後標",
+            "name": "英文"
+          },
+          {
+            "level": "後標",
+            "name": "數A"
+          }
+        ]
+      },
+      "secondStage": {
+        "steps": [
+          "審查資料",
+          "團體面試"
+        ],
+        "selectDate": "115/5/16 至 115/5/17",
+        "selectStudentNumber": 99,
+        "enrollStudentNumber": 33
+      },
+      "lowScorePreYear": [
+        {
+          "year": 114,
+          "score": [
+            "國英數A30"
+          ]
+        },
+        {
+          "year": 113,
+          "score": [
+            "國英數A31"
+          ]
+        }
+      ],
+      "lowScoreThisYear": [
+        {
+          "year": 115,
+          "score": [
+            "國英數A31"
+          ]
+        }
+      ],
+      "acceptSubjects": [],
+      "registration": "98%",
+      "teacherStudentRatio": "1:28",
+      "selectCharge": 1000,
+      "enrollmentQuota": [
+        {
+          "year": 115,
+          "quota": "33"
+        },
+        {
+          "year": 114,
+          "quota": "33"
+        },
+        {
+          "year": 113,
+          "quota": "33"
+        }
+      ],
+      "excess": [
+        "國英數A"
+      ],
+      "distribution": [
+        "114年備48",
+        "113年備29",
+        "112年備24"
+      ],
+      "interest": [
+        "S",
+        "I",
+        "A"
+      ],
+      "links": [
+        {
+          "name": "簡章",
+          "link": "https://www.cac.edu.tw/apply115/system/ColQry_115xappLyfOrStu_Azd5gP29/html/115_005142.htm?v=1.0"
+        },
+        {
+          "name": "畢業出路",
+          "link": "https://guide.104.com.tw/career/schoolMajor/5059000000/310501/?utm_source=hsapply&utm_medium=result"
+        },
+        {
+          "name": "科系介紹",
+          "link": "https://guide.104.com.tw/career/schoolMajor/5059000000/310501/introduction?utm_source=hsapply&utm_medium=result"
+        },
+        {
+          "name": "科系真心話",
+          "link": "https://guide.104.com.tw/career/schoolMajor/5059000000/310501/comment/?utm_source=hsapply&utm_medium=result"
+        },
+        {
+          "name": "學群排行榜",
+          "link": "https://guide.104.com.tw/career/college-brand/?typeId=GU10&utm_source=hsapply&utm_medium=result"
+        }
+      ],
+      "dynamic": {
+        "views": 581,
+        "average": [],
+        "overTotalScore": null,
+        "secondStageScore": [],
+        "avg": null
+      }
+    },
+    {
+      "source": "104",
+      "scoreYear": 115,
+      "endpoint": "/api/v1.0/hs/majorList",
+      "requestPayload": {
+        "majorName": "",
+        "schoolNo": [],
+        "groupNo": [],
+        "hollands": [],
+        "risk": [],
+        "interview": [],
+        "score": {
+          "roleType": 1,
+          "chinese": 12,
+          "english": 11,
+          "mathA": 10,
+          "mathB": 9,
+          "society": 12,
+          "natural": 12,
+          "apcsS": 0,
+          "apcsI": 0,
+          "eListening": "F"
+        },
+        "page": {
+          "limit": 100,
+          "offset": 0
+        }
+      },
+      "schoolName": "東吳大學",
+      "schoolLink": "https://collego.edu.tw/Highschool/DepartmentIntro?dept_id=005008",
+      "departmentName": "日本語文學系",
+      "departmentLink": "http://www.scu.edu.tw/japanese/",
+      "schoolTypeName": "私立",
+      "area": "台北市",
+      "categoryName": "外語學群",
+      "enrollmentMajorNo": "005082",
+      "enrollmentSchoolNo": "",
+      "reportRisk": 110.00000000000001,
+      "acceptanceRate": null,
+      "wantMajor": false,
+      "firstStage": {
+        "power": [
+          {
+            "name": "國英社",
+            "level": 3
+          }
+        ],
+        "standard": [
+          {
+            "level": "均標",
+            "name": "國文"
+          }
+        ]
+      },
+      "secondStage": {
+        "steps": [
+          "審查資料",
+          "面試"
+        ],
+        "selectDate": "115/5/16 至 115/5/17",
+        "selectStudentNumber": 258,
+        "enrollStudentNumber": 86
+      },
+      "lowScorePreYear": [
+        {
+          "year": 114,
+          "score": [
+            "國英社32"
+          ]
+        },
+        {
+          "year": 113,
+          "score": [
+            "國文11",
+            "英文10"
+          ]
+        }
+      ],
+      "lowScoreThisYear": [
+        {
+          "year": 115,
+          "score": [
+            "國英社31"
+          ]
+        }
+      ],
+      "acceptSubjects": [],
+      "registration": "99%",
+      "teacherStudentRatio": "1:34",
+      "selectCharge": 1000,
+      "enrollmentQuota": [
+        {
+          "year": 115,
+          "quota": "86"
+        },
+        {
+          "year": 114,
+          "quota": "80"
+        },
+        {
+          "year": 113,
+          "quota": "80"
+        }
+      ],
+      "excess": [
+        "國英社"
+      ],
+      "distribution": [
+        "114年備105",
+        "113年備72",
+        "112年備60"
+      ],
+      "interest": [
+        "A",
+        "S"
+      ],
+      "links": [
+        {
+          "name": "簡章",
+          "link": "https://www.cac.edu.tw/apply115/system/ColQry_115xappLyfOrStu_Azd5gP29/html/115_005082.htm?v=1.0"
+        },
+        {
+          "name": "畢業出路",
+          "link": "https://guide.104.com.tw/career/schoolMajor/5059000000/220320/?utm_source=hsapply&utm_medium=result"
+        },
+        {
+          "name": "科系介紹",
+          "link": "https://guide.104.com.tw/career/schoolMajor/5059000000/220320/introduction?utm_source=hsapply&utm_medium=result"
+        },
+        {
+          "name": "科系真心話",
+          "link": "https://guide.104.com.tw/career/schoolMajor/5059000000/220320/comment/?utm_source=hsapply&utm_medium=result"
+        },
+        {
+          "name": "學群排行榜",
+          "link": "https://guide.104.com.tw/career/college-brand/?typeId=GU12&utm_source=hsapply&utm_medium=result"
+        }
+      ],
+      "dynamic": {
+        "views": 359,
+        "average": [],
+        "overTotalScore": null,
+        "secondStageScore": [],
+        "avg": null
+      }
+    },
+    {
+      "source": "104",
+      "scoreYear": 115,
+      "endpoint": "/api/v1.0/hs/majorList",
+      "requestPayload": {
+        "majorName": "",
+        "schoolNo": [],
+        "groupNo": [],
+        "hollands": [],
+        "risk": [],
+        "interview": [],
+        "score": {
+          "roleType": 1,
+          "chinese": 12,
+          "english": 11,
+          "mathA": 10,
+          "mathB": 9,
+          "society": 12,
+          "natural": 12,
+          "apcsS": 0,
+          "apcsI": 0,
+          "eListening": "F"
+        },
+        "page": {
+          "limit": 100,
+          "offset": 0
+        }
+      },
+      "schoolName": "東吳大學",
+      "schoolLink": "https://collego.edu.tw/Highschool/DepartmentIntro?dept_id=005004",
+      "departmentName": "政治學系",
+      "departmentLink": "https://web-ch.scu.edu.tw/politics",
+      "schoolTypeName": "私立",
+      "area": "台北市",
+      "categoryName": "法政學群",
+      "enrollmentMajorNo": "005042",
+      "enrollmentSchoolNo": "",
+      "reportRisk": 110.00000000000001,
+      "acceptanceRate": null,
+      "wantMajor": false,
+      "firstStage": {
+        "power": [
+          {
+            "name": "國英社",
+            "level": 3
+          }
+        ],
+        "standard": [
+          {
+            "level": "均標",
+            "name": "國文"
+          },
+          {
+            "level": "後標",
+            "name": "英文"
+          },
+          {
+            "level": "後標",
+            "name": "社會"
+          },
+          {
+            "level": "後標",
+            "name": "數A"
+          },
+          {
+            "level": "後標",
+            "name": "數B"
+          }
+        ]
+      },
+      "secondStage": {
+        "steps": [
+          "審查資料",
+          "面試"
+        ],
+        "selectDate": "115/5/15 至 115/5/16",
+        "selectStudentNumber": 207,
+        "enrollStudentNumber": 69
+      },
+      "lowScorePreYear": [
+        {
+          "year": 114,
+          "score": [
+            "國英社33"
+          ]
+        },
+        {
+          "year": 113,
+          "score": [
+            "國文12",
+            "英社21"
+          ]
+        }
+      ],
+      "lowScoreThisYear": [
+        {
+          "year": 115,
+          "score": [
+            "國英社32"
+          ]
+        }
+      ],
+      "acceptSubjects": [],
+      "registration": "99%",
+      "teacherStudentRatio": "1:30",
+      "selectCharge": 1000,
+      "enrollmentQuota": [
+        {
+          "year": 115,
+          "quota": "69"
+        },
+        {
+          "year": 114,
+          "quota": "67"
+        },
+        {
+          "year": 113,
+          "quota": "67"
+        }
+      ],
+      "excess": [
+        "國英社"
+      ],
+      "distribution": [
+        "114年備39",
+        "113年備32",
+        "112年備31"
+      ],
+      "interest": [
+        "E",
+        "S",
+        "A"
+      ],
+      "links": [
+        {
+          "name": "簡章",
+          "link": "https://www.cac.edu.tw/apply115/system/ColQry_115xappLyfOrStu_Azd5gP29/html/115_005042.htm?v=1.0"
+        },
+        {
+          "name": "畢業出路",
+          "link": "https://guide.104.com.tw/career/schoolMajor/5059000000/310201/?utm_source=hsapply&utm_medium=result"
+        },
+        {
+          "name": "科系介紹",
+          "link": "https://guide.104.com.tw/career/schoolMajor/5059000000/310201/introduction?utm_source=hsapply&utm_medium=result"
+        },
+        {
+          "name": "科系真心話",
+          "link": "https://guide.104.com.tw/career/schoolMajor/5059000000/310201/comment/?utm_source=hsapply&utm_medium=result"
+        },
+        {
+          "name": "學群排行榜",
+          "link": "https://guide.104.com.tw/career/college-brand/?typeId=GU15&utm_source=hsapply&utm_medium=result"
+        }
+      ],
+      "dynamic": {
+        "views": 647,
+        "average": [],
+        "overTotalScore": null,
+        "secondStageScore": [],
+        "avg": null
+      }
+    },
+    {
+      "source": "104",
+      "scoreYear": 115,
+      "endpoint": "/api/v1.0/hs/majorList",
+      "requestPayload": {
+        "majorName": "",
+        "schoolNo": [],
+        "groupNo": [],
+        "hollands": [],
+        "risk": [],
+        "interview": [],
+        "score": {
+          "roleType": 1,
+          "chinese": 12,
+          "english": 11,
+          "mathA": 10,
+          "mathB": 9,
+          "society": 12,
+          "natural": 12,
+          "apcsS": 0,
+          "apcsI": 0,
+          "eListening": "F"
+        },
+        "page": {
+          "limit": 100,
+          "offset": 0
+        }
+      },
+      "schoolName": "東吳大學",
+      "schoolLink": "https://collego.edu.tw/Highschool/DepartmentIntro?dept_id=005007",
+      "departmentName": "英文學系",
+      "departmentLink": "http://www.scu.edu.tw/english/",
+      "schoolTypeName": "私立",
+      "area": "台北市",
+      "categoryName": "外語學群",
+      "enrollmentMajorNo": "005072",
+      "enrollmentSchoolNo": "",
+      "reportRisk": 110.00000000000001,
+      "acceptanceRate": null,
+      "wantMajor": false,
+      "firstStage": {
+        "power": [
+          {
+            "name": "國英",
+            "level": 3
+          }
+        ],
+        "standard": [
+          {
+            "level": "均標",
+            "name": "國文"
+          },
+          {
+            "level": "均標",
+            "name": "英文"
+          }
+        ]
+      },
+      "secondStage": {
+        "steps": [
+          "審查資料",
+          "面試"
+        ],
+        "selectDate": "115/5/16 至 115/5/17",
+        "selectStudentNumber": 189,
+        "enrollStudentNumber": 63
+      },
+      "lowScorePreYear": [
+        {
+          "year": 114,
+          "score": [
+            "國英22"
+          ]
+        },
+        {
+          "year": 113,
+          "score": [
+            "國文3",
+            "英文11"
+          ]
+        }
+      ],
+      "lowScoreThisYear": [
+        {
+          "year": 115,
+          "score": [
+            "國英21"
+          ]
+        }
+      ],
+      "acceptSubjects": [],
+      "registration": "98%",
+      "teacherStudentRatio": "1:37",
+      "selectCharge": 1000,
+      "enrollmentQuota": [
+        {
+          "year": 115,
+          "quota": "63"
+        },
+        {
+          "year": 114,
+          "quota": "90"
+        },
+        {
+          "year": 113,
+          "quota": "84"
+        }
+      ],
+      "excess": [
+        "國英"
+      ],
+      "distribution": [
+        "114年備84",
+        "113年備94",
+        "112年備110"
+      ],
+      "interest": [
+        "A",
+        "S"
+      ],
+      "links": [
+        {
+          "name": "簡章",
+          "link": "https://www.cac.edu.tw/apply115/system/ColQry_115xappLyfOrStu_Azd5gP29/html/115_005072.htm?v=1.0"
+        },
+        {
+          "name": "畢業出路",
+          "link": "https://guide.104.com.tw/career/schoolMajor/5059000000/220309/?utm_source=hsapply&utm_medium=result"
+        },
+        {
+          "name": "科系介紹",
+          "link": "https://guide.104.com.tw/career/schoolMajor/5059000000/220309/introduction?utm_source=hsapply&utm_medium=result"
+        },
+        {
+          "name": "科系真心話",
+          "link": "https://guide.104.com.tw/career/schoolMajor/5059000000/220309/comment/?utm_source=hsapply&utm_medium=result"
+        },
+        {
+          "name": "學群排行榜",
+          "link": "https://guide.104.com.tw/career/college-brand/?typeId=GU12&utm_source=hsapply&utm_medium=result"
+        }
+      ],
+      "dynamic": {
+        "views": 475,
+        "average": [],
+        "overTotalScore": null,
+        "secondStageScore": [],
+        "avg": null
+      }
+    },
+    {
+      "source": "104",
+      "scoreYear": 115,
+      "endpoint": "/api/v1.0/hs/majorList",
+      "requestPayload": {
+        "majorName": "",
+        "schoolNo": [],
+        "groupNo": [],
+        "hollands": [],
+        "risk": [],
+        "interview": [],
+        "score": {
+          "roleType": 1,
+          "chinese": 12,
+          "english": 11,
+          "mathA": 10,
+          "mathB": 9,
+          "society": 12,
+          "natural": 12,
+          "apcsS": 0,
+          "apcsI": 0,
+          "eListening": "F"
+        },
+        "page": {
+          "limit": 100,
+          "offset": 0
+        }
+      },
+      "schoolName": "東吳大學",
+      "schoolLink": "https://collego.edu.tw/Highschool/DepartmentIntro?dept_id=005003",
+      "departmentName": "哲學系",
+      "departmentLink": "http://www.scu.edu.tw/philos/",
+      "schoolTypeName": "私立",
+      "area": "台北市",
+      "categoryName": "文史哲學群",
+      "enrollmentMajorNo": "005032",
+      "enrollmentSchoolNo": "",
+      "reportRisk": 110.00000000000001,
+      "acceptanceRate": null,
+      "wantMajor": false,
+      "firstStage": {
+        "power": [
+          {
+            "name": "國文",
+            "level": 5
+          },
+          {
+            "name": "英文",
+            "level": 3
+          }
+        ],
+        "standard": [
+          {
+            "level": "後標",
+            "name": "國文"
+          },
+          {
+            "level": "後標",
+            "name": "英文"
+          }
+        ]
+      },
+      "secondStage": {
+        "steps": [
+          "審查資料",
+          "面試"
+        ],
+        "selectDate": "115/5/16 至 115/5/17",
+        "selectStudentNumber": 108,
+        "enrollStudentNumber": 36
+      },
+      "lowScorePreYear": [
+        {
+          "year": 114,
+          "score": [
+            "國文10",
+            "英文7"
+          ]
+        },
+        {
+          "year": 113,
+          "score": [
+            "國文9",
+            "英文6"
+          ]
+        }
+      ],
+      "lowScoreThisYear": [
+        {
+          "year": 115,
+          "score": [
+            "國文11",
+            "英文8"
+          ]
+        }
+      ],
+      "acceptSubjects": [],
+      "registration": "98%",
+      "teacherStudentRatio": "1:24",
+      "selectCharge": 1000,
+      "enrollmentQuota": [
+        {
+          "year": 115,
+          "quota": "36"
+        },
+        {
+          "year": 114,
+          "quota": "35"
+        },
+        {
+          "year": 113,
+          "quota": "35"
+        }
+      ],
+      "excess": [
+        "國英社"
+      ],
+      "distribution": [
+        "114年備14",
+        "113年備11",
+        "112年備18"
+      ],
+      "interest": [
+        "A",
+        "S"
+      ],
+      "links": [
+        {
+          "name": "簡章",
+          "link": "https://www.cac.edu.tw/apply115/system/ColQry_115xappLyfOrStu_Azd5gP29/html/115_005032.htm?v=1.0"
+        },
+        {
+          "name": "畢業出路",
+          "link": "https://guide.104.com.tw/career/schoolMajor/5059000000/221101/?utm_source=hsapply&utm_medium=result"
+        },
+        {
+          "name": "科系介紹",
+          "link": "https://guide.104.com.tw/career/schoolMajor/5059000000/221101/introduction?utm_source=hsapply&utm_medium=result"
+        },
+        {
+          "name": "科系真心話",
+          "link": "https://guide.104.com.tw/career/schoolMajor/5059000000/221101/comment/?utm_source=hsapply&utm_medium=result"
+        },
+        {
+          "name": "學群排行榜",
+          "link": "https://guide.104.com.tw/career/college-brand/?typeId=GU13&utm_source=hsapply&utm_medium=result"
+        }
+      ],
+      "dynamic": {
+        "views": 499,
+        "average": [],
+        "overTotalScore": null,
+        "secondStageScore": [],
+        "avg": null
+      }
+    },
+    {
+      "source": "104",
+      "scoreYear": 115,
+      "endpoint": "/api/v1.0/hs/majorList",
+      "requestPayload": {
+        "majorName": "",
+        "schoolNo": [],
+        "groupNo": [],
+        "hollands": [],
+        "risk": [],
+        "interview": [],
+        "score": {
+          "roleType": 1,
+          "chinese": 12,
+          "english": 11,
+          "mathA": 10,
+          "mathB": 9,
+          "society": 12,
+          "natural": 12,
+          "apcsS": 0,
+          "apcsI": 0,
+          "eListening": "F"
+        },
+        "page": {
+          "limit": 100,
+          "offset": 0
+        }
+      },
+      "schoolName": "國立中興大學",
+      "schoolLink": "https://collego.edu.tw/Highschool/DepartmentIntro?dept_id=003031",
+      "departmentName": "森林學系木材科學組",
+      "departmentLink": "http://for.nchu.edu.tw/",
+      "schoolTypeName": "公立",
+      "area": "台中市",
+      "categoryName": "生物資源學群",
+      "enrollmentMajorNo": "003362",
+      "enrollmentSchoolNo": "",
+      "reportRisk": 110.00000000000001,
+      "acceptanceRate": null,
+      "wantMajor": false,
+      "firstStage": {
+        "power": [
+          {
+            "name": "自然",
+            "level": 3.5
+          }
+        ],
+        "standard": [
+          {
+            "level": "均標",
+            "name": "國文"
+          },
+          {
+            "level": "均標",
+            "name": "英文"
+          },
+          {
+            "level": "均標",
+            "name": "自然"
+          },
+          {
+            "level": "均標",
+            "name": "數B"
+          }
+        ]
+      },
+      "secondStage": {
+        "steps": [
+          "審查資料",
+          "面試"
+        ],
+        "selectDate": "115/5/16",
+        "selectStudentNumber": 49,
+        "enrollStudentNumber": 14
+      },
+      "lowScorePreYear": [
+        {
+          "year": 114,
+          "score": [
+            "自然11"
+          ]
+        },
+        {
+          "year": 113,
+          "score": [
+            "自然9"
+          ]
+        }
+      ],
+      "lowScoreThisYear": [
+        {
+          "year": 115,
+          "score": [
+            "自然11"
+          ]
+        }
+      ],
+      "acceptSubjects": [],
+      "registration": "94%",
+      "teacherStudentRatio": "1:18",
+      "selectCharge": 1200,
+      "enrollmentQuota": [
+        {
+          "year": 115,
+          "quota": "14"
+        },
+        {
+          "year": 114,
+          "quota": "14"
+        },
+        {
+          "year": 113,
+          "quota": "14"
+        }
+      ],
+      "excess": [
+        "國英數B自"
+      ],
+      "distribution": [
+        "114年備18",
+        "113年備14",
+        "112年備12"
+      ],
+      "interest": [
+        "I",
+        "R"
+      ],
+      "links": [
+        {
+          "name": "簡章",
+          "link": "https://www.cac.edu.tw/apply115/system/ColQry_115xappLyfOrStu_Azd5gP29/html/115_003362.htm?v=1.0"
+        },
+        {
+          "name": "畢業出路",
+          "link": "https://guide.104.com.tw/career/schoolMajor/5006000000/621001/?utm_source=hsapply&utm_medium=result"
+        },
+        {
+          "name": "科系介紹",
+          "link": "https://guide.104.com.tw/career/schoolMajor/5006000000/621001/introduction?utm_source=hsapply&utm_medium=result"
+        },
+        {
+          "name": "科系真心話",
+          "link": "https://guide.104.com.tw/career/schoolMajor/5006000000/621001/comment/?utm_source=hsapply&utm_medium=result"
+        },
+        {
+          "name": "學群排行榜",
+          "link": "https://guide.104.com.tw/career/college-brand/?typeId=GU06&utm_source=hsapply&utm_medium=result"
+        }
+      ],
+      "dynamic": {
+        "views": 389,
+        "average": [],
+        "overTotalScore": null,
+        "secondStageScore": [],
+        "avg": null
+      }
+    },
+    {
+      "source": "104",
+      "scoreYear": 115,
+      "endpoint": "/api/v1.0/hs/majorList",
+      "requestPayload": {
+        "majorName": "",
+        "schoolNo": [],
+        "groupNo": [],
+        "hollands": [],
+        "risk": [],
+        "interview": [],
+        "score": {
+          "roleType": 1,
+          "chinese": 12,
+          "english": 11,
+          "mathA": 10,
+          "mathB": 9,
+          "society": 12,
+          "natural": 12,
+          "apcsS": 0,
+          "apcsI": 0,
+          "eListening": "F"
+        },
+        "page": {
+          "limit": 100,
+          "offset": 0
+        }
+      },
+      "schoolName": "國立中興大學",
+      "schoolLink": "null",
+      "departmentName": "興翼招生A組(商學管理)",
+      "departmentLink": "https://www.nchu.edu.tw/index1.php",
+      "schoolTypeName": "公立",
+      "area": "台中市",
+      "categoryName": "跨領域",
+      "enrollmentMajorNo": "003462",
+      "enrollmentSchoolNo": "",
+      "reportRisk": 110.00000000000001,
+      "acceptanceRate": null,
+      "wantMajor": false,
+      "firstStage": {
+        "power": [
+          {
+            "name": "國文",
+            "level": 5.5
+          },
+          {
+            "name": "英文",
+            "level": 5.5
+          }
+        ],
+        "standard": [
+          {
+            "level": "均標",
+            "name": "國文"
+          },
+          {
+            "level": "均標",
+            "name": "英文"
+          },
+          {
+            "level": "均標",
+            "name": "數A"
+          },
+          {
+            "level": "均標",
+            "name": "數B"
+          }
+        ]
+      },
+      "secondStage": {
+        "steps": [
+          "審查資料"
+        ],
+        "selectDate": null,
+        "selectStudentNumber": 50,
+        "enrollStudentNumber": 9
+      },
+      "lowScorePreYear": [
+        {
+          "year": 114,
+          "score": [
+            "國英21"
+          ]
+        },
+        {
+          "year": 113,
+          "score": [
+            "國英19"
+          ]
+        }
+      ],
+      "lowScoreThisYear": [
+        {
+          "year": 115,
+          "score": [
+            "國英21"
+          ]
+        }
+      ],
+      "acceptSubjects": [],
+      "registration": null,
+      "teacherStudentRatio": null,
+      "selectCharge": 300,
+      "enrollmentQuota": [
+        {
+          "year": 115,
+          "quota": "9"
+        },
+        {
+          "year": 114,
+          "quota": "9"
+        },
+        {
+          "year": 113,
+          "quota": "10"
+        }
+      ],
+      "excess": [
+        "國英"
+      ],
+      "distribution": [
+        "114年備26",
+        "113年備27",
+        "112年備32"
+      ],
+      "interest": [
+        "S",
+        "E",
+        "C"
+      ],
+      "links": [
+        {
+          "name": "簡章",
+          "link": "https://www.cac.edu.tw/apply115/system/ColQry_115xappLyfOrStu_Azd5gP29/html/115_003462.htm?v=1.0"
+        },
+        {
+          "name": "畢業出路",
+          "link": "https://guide.104.com.tw/career/school/5006000000?utm_source=hsapply&utm_medium=result"
+        }
+      ],
+      "dynamic": {
+        "views": 414,
+        "average": [],
+        "overTotalScore": null,
+        "secondStageScore": [],
+        "avg": null
+      }
+    },
+    {
+      "source": "104",
+      "scoreYear": 115,
+      "endpoint": "/api/v1.0/hs/majorList",
+      "requestPayload": {
+        "majorName": "",
+        "schoolNo": [],
+        "groupNo": [],
+        "hollands": [],
+        "risk": [],
+        "interview": [],
+        "score": {
+          "roleType": 1,
+          "chinese": 12,
+          "english": 11,
+          "mathA": 10,
+          "mathB": 9,
+          "society": 12,
+          "natural": 12,
+          "apcsS": 0,
+          "apcsI": 0,
+          "eListening": "F"
+        },
+        "page": {
+          "limit": 100,
+          "offset": 0
+        }
+      },
+      "schoolName": "國立中興大學",
+      "schoolLink": "null",
+      "departmentName": "興翼招生B組(文史法律)",
+      "departmentLink": "https://www.nchu.edu.tw/index1.php",
+      "schoolTypeName": "公立",
+      "area": "台中市",
+      "categoryName": "跨領域",
+      "enrollmentMajorNo": "003472",
+      "enrollmentSchoolNo": "",
+      "reportRisk": 110.00000000000001,
+      "acceptanceRate": null,
+      "wantMajor": false,
+      "firstStage": {
+        "power": [
+          {
+            "name": "國文",
+            "level": 8
+          },
+          {
+            "name": "英文",
+            "level": 8
+          },
+          {
+            "name": "社會",
+            "level": 8
+          }
+        ],
+        "standard": [
+          {
+            "level": "均標",
+            "name": "國文"
+          },
+          {
+            "level": "均標",
+            "name": "英文"
+          },
+          {
+            "level": "均標",
+            "name": "社會"
+          }
+        ]
+      },
+      "secondStage": {
+        "steps": [
+          "審查資料"
+        ],
+        "selectDate": null,
+        "selectStudentNumber": 48,
+        "enrollStudentNumber": 6
+      },
+      "lowScorePreYear": [
+        {
+          "year": 114,
+          "score": [
+            "國英社30"
+          ]
+        },
+        {
+          "year": 113,
+          "score": [
+            "國英社34"
+          ]
+        }
+      ],
+      "lowScoreThisYear": [
+        {
+          "year": 115,
+          "score": [
+            "國英社31"
+          ]
+        }
+      ],
+      "acceptSubjects": [],
+      "registration": null,
+      "teacherStudentRatio": null,
+      "selectCharge": 300,
+      "enrollmentQuota": [
+        {
+          "year": 115,
+          "quota": "6"
+        },
+        {
+          "year": 114,
+          "quota": "6"
+        },
+        {
+          "year": 113,
+          "quota": "6"
+        }
+      ],
+      "excess": [
+        "國英社"
+      ],
+      "distribution": [
+        "114年備17",
+        "113年備22",
+        "112年備29"
+      ],
+      "interest": [
+        "A",
+        "S",
+        "E"
+      ],
+      "links": [
+        {
+          "name": "簡章",
+          "link": "https://www.cac.edu.tw/apply115/system/ColQry_115xappLyfOrStu_Azd5gP29/html/115_003472.htm?v=1.0"
+        },
+        {
+          "name": "畢業出路",
+          "link": "https://guide.104.com.tw/career/school/5006000000?utm_source=hsapply&utm_medium=result"
+        }
+      ],
+      "dynamic": {
+        "views": 450,
+        "average": [],
+        "overTotalScore": null,
+        "secondStageScore": [],
+        "avg": null
+      }
+    },
+    {
+      "source": "104",
+      "scoreYear": 115,
+      "endpoint": "/api/v1.0/hs/majorList",
+      "requestPayload": {
+        "majorName": "",
+        "schoolNo": [],
+        "groupNo": [],
+        "hollands": [],
+        "risk": [],
+        "interview": [],
+        "score": {
+          "roleType": 1,
+          "chinese": 12,
+          "english": 11,
+          "mathA": 10,
+          "mathB": 9,
+          "society": 12,
+          "natural": 12,
+          "apcsS": 0,
+          "apcsI": 0,
+          "eListening": "F"
+        },
+        "page": {
+          "limit": 100,
+          "offset": 0
+        }
+      },
+      "schoolName": "國立中興大學",
+      "schoolLink": "null",
+      "departmentName": "興翼招生C組(化學數學)",
+      "departmentLink": "https://www.nchu.edu.tw/index1.php",
+      "schoolTypeName": "公立",
+      "area": "台中市",
+      "categoryName": "跨領域",
+      "enrollmentMajorNo": "003482",
+      "enrollmentSchoolNo": "",
+      "reportRisk": 110.00000000000001,
+      "acceptanceRate": null,
+      "wantMajor": false,
+      "firstStage": {
+        "power": [
+          {
+            "name": "英文",
+            "level": 10
+          },
+          {
+            "name": "自然",
+            "level": 10
+          },
+          {
+            "name": "數A",
+            "level": 10
+          }
+        ],
+        "standard": [
+          {
+            "level": "均標",
+            "name": "英文"
+          },
+          {
+            "level": "均標",
+            "name": "自然"
+          },
+          {
+            "level": "均標",
+            "name": "數A"
+          }
+        ]
+      },
+      "secondStage": {
+        "steps": [
+          "審查資料"
+        ],
+        "selectDate": null,
+        "selectStudentNumber": 40,
+        "enrollStudentNumber": 4
+      },
+      "lowScorePreYear": [
+        {
+          "year": 114,
+          "score": [
+            "英數A自25"
+          ]
+        },
+        {
+          "year": 113,
+          "score": [
+            "英數A自25"
+          ]
+        }
+      ],
+      "lowScoreThisYear": [
+        {
+          "year": 115,
+          "score": [
+            "英數A自28"
+          ]
+        }
+      ],
+      "acceptSubjects": [],
+      "registration": null,
+      "teacherStudentRatio": null,
+      "selectCharge": 300,
+      "enrollmentQuota": [
+        {
+          "year": 115,
+          "quota": "4"
+        },
+        {
+          "year": 114,
+          "quota": "4"
+        },
+        {
+          "year": 113,
+          "quota": "4"
+        }
+      ],
+      "excess": [
+        "英數A自"
+      ],
+      "distribution": [
+        "114年備14",
+        "113年備8",
+        "112年備9"
+      ],
+      "interest": [
+        "I",
+        "R",
+        "C"
+      ],
+      "links": [
+        {
+          "name": "簡章",
+          "link": "https://www.cac.edu.tw/apply115/system/ColQry_115xappLyfOrStu_Azd5gP29/html/115_003482.htm?v=1.0"
+        },
+        {
+          "name": "畢業出路",
+          "link": "https://guide.104.com.tw/career/school/5006000000?utm_source=hsapply&utm_medium=result"
+        }
+      ],
+      "dynamic": {
+        "views": 431,
+        "average": [],
+        "overTotalScore": null,
+        "secondStageScore": [],
+        "avg": null
+      }
+    },
+    {
+      "source": "104",
+      "scoreYear": 115,
+      "endpoint": "/api/v1.0/hs/majorList",
+      "requestPayload": {
+        "majorName": "",
+        "schoolNo": [],
+        "groupNo": [],
+        "hollands": [],
+        "risk": [],
+        "interview": [],
+        "score": {
+          "roleType": 1,
+          "chinese": 12,
+          "english": 11,
+          "mathA": 10,
+          "mathB": 9,
+          "society": 12,
+          "natural": 12,
+          "apcsS": 0,
+          "apcsI": 0,
+          "eListening": "F"
+        },
+        "page": {
+          "limit": 100,
+          "offset": 0
+        }
+      },
+      "schoolName": "國立中興大學",
+      "schoolLink": "null",
+      "departmentName": "興翼招生D組(化材電資暨工程)",
+      "departmentLink": "https://www.nchu.edu.tw/index1.php",
+      "schoolTypeName": "公立",
+      "area": "台中市",
+      "categoryName": "跨領域",
+      "enrollmentMajorNo": "003492",
+      "enrollmentSchoolNo": "",
+      "reportRisk": 110.00000000000001,
+      "acceptanceRate": null,
+      "wantMajor": false,
+      "firstStage": {
+        "power": [
+          {
+            "name": "英文",
+            "level": 3
+          },
+          {
+            "name": "自然",
+            "level": 3
+          },
+          {
+            "name": "數A",
+            "level": 3
+          }
+        ],
+        "standard": [
+          {
+            "level": "均標",
+            "name": "英文"
+          },
+          {
+            "level": "均標",
+            "name": "自然"
+          },
+          {
+            "level": "均標",
+            "name": "數A"
+          }
+        ]
+      },
+      "secondStage": {
+        "steps": [
+          "審查資料"
+        ],
+        "selectDate": null,
+        "selectStudentNumber": 57,
+        "enrollStudentNumber": 19
+      },
+      "lowScorePreYear": [
+        {
+          "year": 114,
+          "score": [
+            "英數A自30"
+          ]
+        },
+        {
+          "year": 113,
+          "score": [
+            "英數A自30"
+          ]
+        }
+      ],
+      "lowScoreThisYear": [
+        {
+          "year": 115,
+          "score": [
+            "英數A自32"
+          ]
+        }
+      ],
+      "acceptSubjects": [],
+      "registration": null,
+      "teacherStudentRatio": null,
+      "selectCharge": 300,
+      "enrollmentQuota": [
+        {
+          "year": 115,
+          "quota": "19"
+        },
+        {
+          "year": 114,
+          "quota": "18"
+        },
+        {
+          "year": 113,
+          "quota": "18"
+        }
+      ],
+      "excess": [
+        "英數A自"
+      ],
+      "distribution": [
+        "114年備36",
+        "113年備34",
+        "112年備19"
+      ],
+      "interest": [
+        "R",
+        "I"
+      ],
+      "links": [
+        {
+          "name": "簡章",
+          "link": "https://www.cac.edu.tw/apply115/system/ColQry_115xappLyfOrStu_Azd5gP29/html/115_003492.htm?v=1.0"
+        },
+        {
+          "name": "畢業出路",
+          "link": "https://guide.104.com.tw/career/school/5006000000?utm_source=hsapply&utm_medium=result"
+        }
+      ],
+      "dynamic": {
+        "views": 122,
+        "average": [],
+        "overTotalScore": null,
+        "secondStageScore": [],
+        "avg": null
+      }
+    },
+    {
+      "source": "104",
+      "scoreYear": 115,
+      "endpoint": "/api/v1.0/hs/majorList",
+      "requestPayload": {
+        "majorName": "",
+        "schoolNo": [],
+        "groupNo": [],
+        "hollands": [],
+        "risk": [],
+        "interview": [],
+        "score": {
+          "roleType": 1,
+          "chinese": 12,
+          "english": 11,
+          "mathA": 10,
+          "mathB": 9,
+          "society": 12,
+          "natural": 12,
+          "apcsS": 0,
+          "apcsI": 0,
+          "eListening": "F"
+        },
+        "page": {
+          "limit": 100,
+          "offset": 0
+        }
+      },
+      "schoolName": "國立中興大學",
+      "schoolLink": "null",
+      "departmentName": "興翼招生E組(生物資源暨農業科技)",
+      "departmentLink": "https://www.nchu.edu.tw/index1.php",
+      "schoolTypeName": "公立",
+      "area": "台中市",
+      "categoryName": "跨領域",
+      "enrollmentMajorNo": "003502",
+      "enrollmentSchoolNo": "",
+      "reportRisk": 110.00000000000001,
+      "acceptanceRate": null,
+      "wantMajor": false,
+      "firstStage": {
+        "power": [
+          {
+            "name": "英文",
+            "level": 5
+          },
+          {
+            "name": "自然",
+            "level": 5
+          }
+        ],
+        "standard": [
+          {
+            "level": "均標",
+            "name": "英文"
+          },
+          {
+            "level": "均標",
+            "name": "自然"
+          },
+          {
+            "level": "均標",
+            "name": "數A"
+          },
+          {
+            "level": "均標",
+            "name": "數B"
+          }
+        ]
+      },
+      "secondStage": {
+        "steps": [
+          "審查資料"
+        ],
+        "selectDate": null,
+        "selectStudentNumber": 50,
+        "enrollStudentNumber": 10
+      },
+      "lowScorePreYear": [
+        {
+          "year": 114,
+          "score": [
+            "英自19"
+          ]
+        },
+        {
+          "year": 113,
+          "score": [
+            "英自18"
+          ]
+        }
+      ],
+      "lowScoreThisYear": [
+        {
+          "year": 115,
+          "score": [
+            "英自19"
+          ]
+        }
+      ],
+      "acceptSubjects": [],
+      "registration": null,
+      "teacherStudentRatio": null,
+      "selectCharge": 300,
+      "enrollmentQuota": [
+        {
+          "year": 115,
+          "quota": "10"
+        },
+        {
+          "year": 114,
+          "quota": "10"
+        },
+        {
+          "year": 113,
+          "quota": "10"
+        }
+      ],
+      "excess": [
+        "英自"
+      ],
+      "distribution": [
+        "114年正取",
+        "113年正取",
+        "112年正取"
+      ],
+      "interest": [
+        "I",
+        "R",
+        "A",
+        "S",
+        "E"
+      ],
+      "links": [
+        {
+          "name": "簡章",
+          "link": "https://www.cac.edu.tw/apply115/system/ColQry_115xappLyfOrStu_Azd5gP29/html/115_003502.htm?v=1.0"
+        },
+        {
+          "name": "畢業出路",
+          "link": "https://guide.104.com.tw/career/school/5006000000?utm_source=hsapply&utm_medium=result"
+        }
+      ],
+      "dynamic": {
+        "views": 216,
+        "average": [],
+        "overTotalScore": null,
+        "secondStageScore": [],
+        "avg": null
+      }
+    },
+    {
+      "source": "104",
+      "scoreYear": 115,
+      "endpoint": "/api/v1.0/hs/majorList",
+      "requestPayload": {
+        "majorName": "",
+        "schoolNo": [],
+        "groupNo": [],
+        "hollands": [],
+        "risk": [],
+        "interview": [],
+        "score": {
+          "roleType": 1,
+          "chinese": 12,
+          "english": 11,
+          "mathA": 10,
+          "mathB": 9,
+          "society": 12,
+          "natural": 12,
+          "apcsS": 0,
+          "apcsI": 0,
+          "eListening": "F"
+        },
+        "page": {
+          "limit": 100,
+          "offset": 0
+        }
+      },
+      "schoolName": "國立中興大學",
+      "schoolLink": "null",
+      "departmentName": "興翼招生F組(生物科技暨獸醫)",
+      "departmentLink": "https://www.nchu.edu.tw/index1.php",
+      "schoolTypeName": "公立",
+      "area": "台中市",
+      "categoryName": "跨領域",
+      "enrollmentMajorNo": "003512",
+      "enrollmentSchoolNo": "",
+      "reportRisk": 110.00000000000001,
+      "acceptanceRate": null,
+      "wantMajor": false,
+      "firstStage": {
+        "power": [
+          {
+            "name": "英文",
+            "level": 5.5
+          },
+          {
+            "name": "自然",
+            "level": 5.5
+          },
+          {
+            "name": "數A",
+            "level": 5.5
+          }
+        ],
+        "standard": [
+          {
+            "level": "均標",
+            "name": "英文"
+          },
+          {
+            "level": "均標",
+            "name": "自然"
+          },
+          {
+            "level": "均標",
+            "name": "數A"
+          }
+        ]
+      },
+      "secondStage": {
+        "steps": [
+          "審查資料"
+        ],
+        "selectDate": null,
+        "selectStudentNumber": 50,
+        "enrollStudentNumber": 9
+      },
+      "lowScorePreYear": [
+        {
+          "year": 114,
+          "score": [
+            "英數A自23"
+          ]
+        },
+        {
+          "year": 113,
+          "score": [
+            "英數A自25"
+          ]
+        }
+      ],
+      "lowScoreThisYear": [
+        {
+          "year": 115,
+          "score": [
+            "英數A自27"
+          ]
+        }
+      ],
+      "acceptSubjects": [],
+      "registration": null,
+      "teacherStudentRatio": null,
+      "selectCharge": 300,
+      "enrollmentQuota": [
+        {
+          "year": 115,
+          "quota": "9"
+        },
+        {
+          "year": 114,
+          "quota": "9"
+        },
+        {
+          "year": 113,
+          "quota": "9"
+        }
+      ],
+      "excess": [
+        "英數A自"
+      ],
+      "distribution": [
+        "114年備23",
+        "113年備5",
+        "112年備11"
+      ],
+      "interest": [
+        "I",
+        "R",
+        "S"
+      ],
+      "links": [
+        {
+          "name": "簡章",
+          "link": "https://www.cac.edu.tw/apply115/system/ColQry_115xappLyfOrStu_Azd5gP29/html/115_003512.htm?v=1.0"
+        },
+        {
+          "name": "畢業出路",
+          "link": "https://guide.104.com.tw/career/school/5006000000?utm_source=hsapply&utm_medium=result"
+        }
+      ],
+      "dynamic": {
+        "views": 336,
+        "average": [],
+        "overTotalScore": null,
+        "secondStageScore": [],
+        "avg": null
+      }
+    },
+    {
+      "source": "104",
+      "scoreYear": 115,
+      "endpoint": "/api/v1.0/hs/majorList",
+      "requestPayload": {
+        "majorName": "",
+        "schoolNo": [],
+        "groupNo": [],
+        "hollands": [],
+        "risk": [],
+        "interview": [],
+        "score": {
+          "roleType": 1,
+          "chinese": 12,
+          "english": 11,
+          "mathA": 10,
+          "mathB": 9,
+          "society": 12,
+          "natural": 12,
+          "apcsS": 0,
+          "apcsI": 0,
+          "eListening": "F"
+        },
+        "page": {
+          "limit": 100,
+          "offset": 0
+        }
+      },
+      "schoolName": "國立成功大學",
+      "schoolLink": "null",
+      "departmentName": "成星招生乙組(管理)",
+      "departmentLink": "https://web.ncku.edu.tw/",
+      "schoolTypeName": "公立",
+      "area": "台南市",
+      "categoryName": "跨領域",
+      "enrollmentMajorNo": "004622",
+      "enrollmentSchoolNo": "",
+      "reportRisk": 110.00000000000001,
+      "acceptanceRate": null,
+      "wantMajor": false,
+      "firstStage": {
+        "power": [
+          {
+            "name": "英文",
+            "level": 8
+          },
+          {
+            "name": "數B",
+            "level": 4
+          }
+        ],
+        "standard": [
+          {
+            "level": "均標",
+            "name": "國文"
+          },
+          {
+            "level": "均標",
+            "name": "英文"
+          },
+          {
+            "level": "均標",
+            "name": "數B"
+          }
+        ]
+      },
+      "secondStage": {
+        "steps": [
+          "審查資料"
+        ],
+        "selectDate": null,
+        "selectStudentNumber": 48,
+        "enrollStudentNumber": 12
+      },
+      "lowScorePreYear": [
+        {
+          "year": 114,
+          "score": [
+            "英文8",
+            "數B6"
+          ]
+        },
+        {
+          "year": 113,
+          "score": [
+            "英文8",
+            "數B8"
+          ]
+        }
+      ],
+      "lowScoreThisYear": [
+        {
+          "year": 115,
+          "score": [
+            "英文9",
+            "數B5"
+          ]
+        }
+      ],
+      "acceptSubjects": [],
+      "registration": null,
+      "teacherStudentRatio": null,
+      "selectCharge": 600,
+      "enrollmentQuota": [
+        {
+          "year": 115,
+          "quota": "12"
+        },
+        {
+          "year": 114,
+          "quota": "12"
+        },
+        {
+          "year": 113,
+          "quota": "12"
+        }
+      ],
+      "excess": [
+        "國英數B",
+        "數B",
+        "英"
+      ],
+      "distribution": [
+        "114年備17",
+        "113年備13",
+        "112年備13"
+      ],
+      "interest": [
+        "S",
+        "E",
+        "C"
+      ],
+      "links": [
+        {
+          "name": "簡章",
+          "link": "https://www.cac.edu.tw/apply115/system/ColQry_115xappLyfOrStu_Azd5gP29/html/115_004622.htm?v=1.0"
+        },
+        {
+          "name": "畢業出路",
+          "link": "https://guide.104.com.tw/career/school/5005000000?utm_source=hsapply&utm_medium=result"
+        }
+      ],
+      "dynamic": {
+        "views": 583,
+        "average": [],
+        "overTotalScore": null,
+        "secondStageScore": [],
+        "avg": null
+      }
+    },
+    {
+      "source": "104",
+      "scoreYear": 115,
+      "endpoint": "/api/v1.0/hs/majorList",
+      "requestPayload": {
+        "majorName": "",
+        "schoolNo": [],
+        "groupNo": [],
+        "hollands": [],
+        "risk": [],
+        "interview": [],
+        "score": {
+          "roleType": 1,
+          "chinese": 12,
+          "english": 11,
+          "mathA": 10,
+          "mathB": 9,
+          "society": 12,
+          "natural": 12,
+          "apcsS": 0,
+          "apcsI": 0,
+          "eListening": "F"
+        },
+        "page": {
+          "limit": 100,
+          "offset": 0
+        }
+      },
+      "schoolName": "國立臺灣大學",
+      "schoolLink": "null",
+      "departmentName": "希望組丙組(理)",
+      "departmentLink": "https://www.ntu.edu.tw/",
+      "schoolTypeName": "公立",
+      "area": "台北市",
+      "categoryName": "跨領域",
+      "enrollmentMajorNo": "001682",
+      "enrollmentSchoolNo": "",
+      "reportRisk": 110.00000000000001,
+      "acceptanceRate": null,
+      "wantMajor": false,
+      "firstStage": {
+        "power": [
+          {
+            "name": "英文",
+            "level": 4
+          },
+          {
+            "name": "自然",
+            "level": 4
+          },
+          {
+            "name": "數A",
+            "level": 4
+          },
+          {
+            "name": "國英數A自",
+            "level": 6
+          }
+        ],
+        "standard": [
+          {
+            "level": "均標",
+            "name": "國文"
+          },
+          {
+            "level": "均標",
+            "name": "英文"
+          },
+          {
+            "level": "前標",
+            "name": "自然"
+          },
+          {
+            "level": "前標",
+            "name": "數A"
+          }
+        ]
+      },
+      "secondStage": {
+        "steps": [
+          "審查資料"
+        ],
+        "selectDate": null,
+        "selectStudentNumber": 24,
+        "enrollStudentNumber": 6
+      },
+      "lowScorePreYear": [
+        {
+          "year": 114,
+          "score": [
+            "國英數A自41",
+            "英數A自31"
+          ]
+        },
+        {
+          "year": 113,
+          "score": [
+            "國英數A自42",
+            "英數A自34"
+          ]
+        }
+      ],
+      "lowScoreThisYear": [
+        {
+          "year": 115,
+          "score": [
+            "國英數A自43",
+            "英數A自32"
+          ]
+        }
+      ],
+      "acceptSubjects": [],
+      "registration": null,
+      "teacherStudentRatio": null,
+      "selectCharge": 1500,
+      "enrollmentQuota": [
+        {
+          "year": 115,
+          "quota": "6"
+        },
+        {
+          "year": 114,
+          "quota": "6"
+        },
+        {
+          "year": 113,
+          "quota": "6"
+        }
+      ],
+      "excess": [
+        "國英數A自",
+        "自",
+        "數A",
+        "英"
+      ],
+      "distribution": [
+        "114年正取",
+        "113年正取",
+        "112年正取"
+      ],
+      "interest": [
+        "I",
+        "R",
+        "C"
+      ],
+      "links": [
+        {
+          "name": "簡章",
+          "link": "https://www.cac.edu.tw/apply115/system/ColQry_115xappLyfOrStu_Azd5gP29/html/115_001682.htm?v=1.0"
+        },
+        {
+          "name": "畢業出路",
+          "link": "https://guide.104.com.tw/career/school/5003000000?utm_source=hsapply&utm_medium=result"
+        }
+      ],
+      "dynamic": {
+        "views": 614,
+        "average": [],
+        "overTotalScore": null,
+        "secondStageScore": [],
+        "avg": null
+      }
+    },
+    {
+      "source": "104",
+      "scoreYear": 115,
+      "endpoint": "/api/v1.0/hs/majorList",
+      "requestPayload": {
+        "majorName": "",
+        "schoolNo": [],
+        "groupNo": [],
+        "hollands": [],
+        "risk": [],
+        "interview": [],
+        "score": {
+          "roleType": 1,
+          "chinese": 12,
+          "english": 11,
+          "mathA": 10,
+          "mathB": 9,
+          "society": 12,
+          "natural": 12,
+          "apcsS": 0,
+          "apcsI": 0,
+          "eListening": "F"
+        },
+        "page": {
+          "limit": 100,
+          "offset": 0
+        }
+      },
+      "schoolName": "國立臺灣大學",
+      "schoolLink": "null",
+      "departmentName": "希望組庚組(生農)",
+      "departmentLink": "https://www.ntu.edu.tw/",
+      "schoolTypeName": "公立",
+      "area": "台北市",
+      "categoryName": "跨領域",
+      "enrollmentMajorNo": "001722",
+      "enrollmentSchoolNo": "",
+      "reportRisk": 110.00000000000001,
+      "acceptanceRate": null,
+      "wantMajor": false,
+      "firstStage": {
+        "power": [
+          {
+            "name": "英文",
+            "level": 4
+          },
+          {
+            "name": "自然",
+            "level": 4
+          },
+          {
+            "name": "數A",
+            "level": 4
+          },
+          {
+            "name": "國英數A自",
+            "level": 6
+          }
+        ],
+        "standard": [
+          {
+            "level": "均標",
+            "name": "國文"
+          },
+          {
+            "level": "均標",
+            "name": "英文"
+          },
+          {
+            "level": "均標",
+            "name": "自然"
+          },
+          {
+            "level": "均標",
+            "name": "數A"
+          }
+        ]
+      },
+      "secondStage": {
+        "steps": [
+          "審查資料"
+        ],
+        "selectDate": null,
+        "selectStudentNumber": 36,
+        "enrollStudentNumber": 9
+      },
+      "lowScorePreYear": [
+        {
+          "year": 114,
+          "score": [
+            "國英數A自38",
+            "英數A自30"
+          ]
+        },
+        {
+          "year": 113,
+          "score": [
+            "國英數A自38",
+            "英數A自29"
+          ]
+        }
+      ],
+      "lowScoreThisYear": [
+        {
+          "year": 115,
+          "score": [
+            "國英數A自41",
+            "英數A自32"
+          ]
+        }
+      ],
+      "acceptSubjects": [],
+      "registration": null,
+      "teacherStudentRatio": null,
+      "selectCharge": 1500,
+      "enrollmentQuota": [
+        {
+          "year": 115,
+          "quota": "9"
+        },
+        {
+          "year": 114,
+          "quota": "9"
+        },
+        {
+          "year": 113,
+          "quota": "9"
+        }
+      ],
+      "excess": [
+        "國英數A自",
+        "自",
+        "英",
+        "數A"
+      ],
+      "distribution": [
+        "114年備9",
+        "113年備2",
+        "112年備4"
+      ],
+      "interest": [
+        "R",
+        "I",
+        "S"
+      ],
+      "links": [
+        {
+          "name": "簡章",
+          "link": "https://www.cac.edu.tw/apply115/system/ColQry_115xappLyfOrStu_Azd5gP29/html/115_001722.htm?v=1.0"
+        },
+        {
+          "name": "畢業出路",
+          "link": "https://guide.104.com.tw/career/school/5003000000?utm_source=hsapply&utm_medium=result"
+        }
+      ],
+      "dynamic": {
+        "views": 537,
+        "average": [],
+        "overTotalScore": null,
+        "secondStageScore": [],
+        "avg": null
+      }
+    },
+    {
+      "source": "104",
+      "scoreYear": 115,
+      "endpoint": "/api/v1.0/hs/majorList",
+      "requestPayload": {
+        "majorName": "",
+        "schoolNo": [],
+        "groupNo": [],
+        "hollands": [],
+        "risk": [],
+        "interview": [],
+        "score": {
+          "roleType": 1,
+          "chinese": 12,
+          "english": 11,
+          "mathA": 10,
+          "mathB": 9,
+          "society": 12,
+          "natural": 12,
+          "apcsS": 0,
+          "apcsI": 0,
+          "eListening": "F"
+        },
+        "page": {
+          "limit": 100,
+          "offset": 0
+        }
+      },
+      "schoolName": "國立臺灣師範大學",
+      "schoolLink": "https://collego.edu.tw/Highschool/DepartmentIntro?dept_id=002042",
+      "departmentName": "美術學系水墨畫組",
+      "departmentLink": "https://www.art.ntnu.edu.tw",
+      "schoolTypeName": "公立",
+      "area": "台北市",
+      "categoryName": "藝術學群",
+      "enrollmentMajorNo": "002572",
+      "enrollmentSchoolNo": "",
+      "reportRisk": 110.00000000000001,
+      "acceptanceRate": null,
+      "wantMajor": false,
+      "firstStage": {
+        "power": [
+          {
+            "name": "國英社",
+            "level": 6
+          }
+        ],
+        "standard": [
+          {
+            "level": "後標",
+            "name": "英文"
+          }
+        ]
+      },
+      "secondStage": {
+        "steps": [
+          "審查資料",
+          "口試"
+        ],
+        "selectDate": "115/5/16",
+        "selectStudentNumber": 52,
+        "enrollStudentNumber": 13
+      },
+      "lowScorePreYear": [
+        {
+          "year": 114,
+          "score": [
+            "國英社26"
+          ]
+        },
+        {
+          "year": 113,
+          "score": [
+            "國英社26"
+          ]
+        }
+      ],
+      "lowScoreThisYear": [
+        {
+          "year": 115,
+          "score": [
+            "國英社28"
+          ]
+        }
+      ],
+      "acceptSubjects": [],
+      "registration": "100%",
+      "teacherStudentRatio": "1:11",
+      "selectCharge": 1500,
+      "enrollmentQuota": [
+        {
+          "year": 115,
+          "quota": "13"
+        },
+        {
+          "year": 114,
+          "quota": "13"
+        },
+        {
+          "year": 113,
+          "quota": "13"
+        }
+      ],
+      "excess": [
+        "國英社",
+        "國",
+        "英",
+        "社"
+      ],
+      "distribution": [
+        "114年正取",
+        "113年備4",
+        "112年備6"
+      ],
+      "interest": [
+        "A",
+        "R"
+      ],
+      "links": [
+        {
+          "name": "簡章",
+          "link": "https://www.cac.edu.tw/apply115/system/ColQry_115xappLyfOrStu_Azd5gP29/html/115_002572.htm?v=1.0"
+        },
+        {
+          "name": "畢業出路",
+          "link": "https://guide.104.com.tw/career/schoolMajor/5004000000/210101/?utm_source=hsapply&utm_medium=result"
+        },
+        {
+          "name": "科系介紹",
+          "link": "https://guide.104.com.tw/career/schoolMajor/5004000000/210101/introduction?utm_source=hsapply&utm_medium=result"
+        },
+        {
+          "name": "學群排行榜",
+          "link": "https://guide.104.com.tw/career/college-brand/?typeId=GU09&utm_source=hsapply&utm_medium=result"
+        }
+      ],
+      "dynamic": {
+        "views": 734,
+        "average": [],
+        "overTotalScore": null,
+        "secondStageScore": [],
+        "avg": null
+      }
+    },
+    {
+      "source": "104",
+      "scoreYear": 115,
+      "endpoint": "/api/v1.0/hs/majorList",
+      "requestPayload": {
+        "majorName": "",
+        "schoolNo": [],
+        "groupNo": [],
+        "hollands": [],
+        "risk": [],
+        "interview": [],
+        "score": {
+          "roleType": 1,
+          "chinese": 12,
+          "english": 11,
+          "mathA": 10,
+          "mathB": 9,
+          "society": 12,
+          "natural": 12,
+          "apcsS": 0,
+          "apcsI": 0,
+          "eListening": "F"
+        },
+        "page": {
+          "limit": 100,
+          "offset": 0
+        }
+      },
+      "schoolName": "國立臺灣師範大學",
+      "schoolLink": "https://collego.edu.tw/Highschool/DepartmentIntro?dept_id=002041",
+      "departmentName": "美術學系繪畫組",
+      "departmentLink": "https://www.art.ntnu.edu.tw",
+      "schoolTypeName": "公立",
+      "area": "台北市",
+      "categoryName": "藝術學群",
+      "enrollmentMajorNo": "002562",
+      "enrollmentSchoolNo": "",
+      "reportRisk": 110.00000000000001,
+      "acceptanceRate": null,
+      "wantMajor": false,
+      "firstStage": {
+        "power": [
+          {
+            "name": "國英社",
+            "level": 6
+          }
+        ],
+        "standard": [
+          {
+            "level": "後標",
+            "name": "英文"
+          }
+        ]
+      },
+      "secondStage": {
+        "steps": [
+          "審查資料",
+          "口試"
+        ],
+        "selectDate": "115/5/16",
+        "selectStudentNumber": 52,
+        "enrollStudentNumber": 13
+      },
+      "lowScorePreYear": [
+        {
+          "year": 114,
+          "score": [
+            "國英社28"
+          ]
+        },
+        {
+          "year": 113,
+          "score": [
+            "國英社30"
+          ]
+        }
+      ],
+      "lowScoreThisYear": [
+        {
+          "year": 115,
+          "score": [
+            "國英社30"
+          ]
+        }
+      ],
+      "acceptSubjects": [],
+      "registration": "100%",
+      "teacherStudentRatio": "1:11",
+      "selectCharge": 1500,
+      "enrollmentQuota": [
+        {
+          "year": 115,
+          "quota": "13"
+        },
+        {
+          "year": 114,
+          "quota": "13"
+        },
+        {
+          "year": 113,
+          "quota": "13"
+        }
+      ],
+      "excess": [
+        "國英社",
+        "國",
+        "英",
+        "社"
+      ],
+      "distribution": [
+        "114年備4",
+        "113年備15",
+        "112年備12"
+      ],
+      "interest": [
+        "A",
+        "R"
+      ],
+      "links": [
+        {
+          "name": "簡章",
+          "link": "https://www.cac.edu.tw/apply115/system/ColQry_115xappLyfOrStu_Azd5gP29/html/115_002562.htm?v=1.0"
+        },
+        {
+          "name": "畢業出路",
+          "link": "https://guide.104.com.tw/career/schoolMajor/5004000000/210101/?utm_source=hsapply&utm_medium=result"
+        },
+        {
+          "name": "科系介紹",
+          "link": "https://guide.104.com.tw/career/schoolMajor/5004000000/210101/introduction?utm_source=hsapply&utm_medium=result"
+        },
+        {
+          "name": "學群排行榜",
+          "link": "https://guide.104.com.tw/career/college-brand/?typeId=GU09&utm_source=hsapply&utm_medium=result"
+        }
+      ],
+      "dynamic": {
+        "views": 1476,
+        "average": [],
+        "overTotalScore": null,
+        "secondStageScore": [],
+        "avg": null
+      }
+    },
+    {
+      "source": "104",
+      "scoreYear": 115,
+      "endpoint": "/api/v1.0/hs/majorList",
+      "requestPayload": {
+        "majorName": "",
+        "schoolNo": [],
+        "groupNo": [],
+        "hollands": [],
+        "risk": [],
+        "interview": [],
+        "score": {
+          "roleType": 1,
+          "chinese": 12,
+          "english": 11,
+          "mathA": 10,
+          "mathB": 9,
+          "society": 12,
+          "natural": 12,
+          "apcsS": 0,
+          "apcsI": 0,
+          "eListening": "F"
+        },
+        "page": {
+          "limit": 100,
+          "offset": 0
+        }
+      },
+      "schoolName": "國立臺灣師範大學",
+      "schoolLink": "https://collego.edu.tw/Highschool/DepartmentIntro?dept_id=002012",
+      "departmentName": "特殊教育學系(公費生)",
+      "departmentLink": "https://www.spe.ntnu.edu.tw/",
+      "schoolTypeName": "公立",
+      "area": "台北市",
+      "categoryName": "教育學群",
+      "enrollmentMajorNo": "002122",
+      "enrollmentSchoolNo": "",
+      "reportRisk": 110.00000000000001,
+      "acceptanceRate": null,
+      "wantMajor": false,
+      "firstStage": {
+        "power": [
+          {
+            "name": "國文",
+            "level": 8
+          },
+          {
+            "name": "英文",
+            "level": 9
+          },
+          {
+            "name": "國英",
+            "level": 10
+          }
+        ],
+        "standard": [
+          {
+            "level": "均標",
+            "name": "國文"
+          },
+          {
+            "level": "均標",
+            "name": "英文"
+          }
+        ]
+      },
+      "secondStage": {
+        "steps": [
+          "審查資料",
+          "面試"
+        ],
+        "selectDate": "115/5/15",
+        "selectStudentNumber": 8,
+        "enrollStudentNumber": 1
+      },
+      "lowScorePreYear": [
+        {
+          "year": 114,
+          "score": [
+            "國英19",
+            "英文9",
+            "國文10"
+          ]
+        },
+        {
+          "year": 113,
+          "score": [
+            "國英26",
+            "英文12",
+            "國文14"
+          ]
+        }
+      ],
+      "lowScoreThisYear": [
+        {
+          "year": 115,
+          "score": [
+            "國英20",
+            "英文9",
+            "國文11"
+          ]
+        }
+      ],
+      "acceptSubjects": [],
+      "registration": "100%",
+      "teacherStudentRatio": "1:12",
+      "selectCharge": 1000,
+      "enrollmentQuota": [
+        {
+          "year": 115,
+          "quota": "1"
+        },
+        {
+          "year": 114,
+          "quota": "1"
+        },
+        {
+          "year": 113,
+          "quota": "1"
+        }
+      ],
+      "excess": [
+        "國英",
+        "國",
+        "英"
+      ],
+      "distribution": [
+        "114年備1",
+        "113年正取"
+      ],
+      "interest": [
+        "S",
+        "A",
+        "R"
+      ],
+      "links": [
+        {
+          "name": "簡章",
+          "link": "https://www.cac.edu.tw/apply115/system/ColQry_115xappLyfOrStu_Azd5gP29/html/115_002122.htm?v=1.0"
+        },
+        {
+          "name": "畢業出路",
+          "link": "https://guide.104.com.tw/career/schoolMajor/5004000000/140601/?utm_source=hsapply&utm_medium=result"
+        },
+        {
+          "name": "科系介紹",
+          "link": "https://guide.104.com.tw/career/schoolMajor/5004000000/140601/introduction?utm_source=hsapply&utm_medium=result"
+        },
+        {
+          "name": "科系真心話",
+          "link": "https://guide.104.com.tw/career/schoolMajor/5004000000/140601/comment/?utm_source=hsapply&utm_medium=result"
+        },
+        {
+          "name": "學群排行榜",
+          "link": "https://guide.104.com.tw/career/college-brand/?typeId=GU14&utm_source=hsapply&utm_medium=result"
+        }
+      ],
+      "dynamic": {
+        "views": 1309,
+        "average": [],
+        "overTotalScore": null,
+        "secondStageScore": [],
+        "avg": null
+      }
+    },
+    {
+      "source": "104",
+      "scoreYear": 115,
+      "endpoint": "/api/v1.0/hs/majorList",
+      "requestPayload": {
+        "majorName": "",
+        "schoolNo": [],
+        "groupNo": [],
+        "hollands": [],
+        "risk": [],
+        "interview": [],
+        "score": {
+          "roleType": 1,
+          "chinese": 12,
+          "english": 11,
+          "mathA": 10,
+          "mathB": 9,
+          "society": 12,
+          "natural": 12,
+          "apcsS": 0,
+          "apcsI": 0,
+          "eListening": "F"
+        },
+        "page": {
+          "limit": 100,
+          "offset": 0
+        }
+      },
+      "schoolName": "國立臺灣師範大學",
+      "schoolLink": "https://collego.edu.tw/Highschool/DepartmentIntro?dept_id=002022",
+      "departmentName": "晨光招生(生命科學系)",
+      "departmentLink": "http://www.biol.ntnu.edu.tw/",
+      "schoolTypeName": "公立",
+      "area": "台北市",
+      "categoryName": "生命科學學群",
+      "enrollmentMajorNo": "002482",
+      "enrollmentSchoolNo": "",
+      "reportRisk": 110.00000000000001,
+      "acceptanceRate": null,
+      "wantMajor": false,
+      "firstStage": {
+        "power": [
+          {
+            "name": "自然",
+            "level": 7
+          }
+        ],
+        "standard": [
+          {
+            "level": "均標",
+            "name": "國文"
+          },
+          {
+            "level": "均標",
+            "name": "英文"
+          },
+          {
+            "level": "後標",
+            "name": "數A"
+          },
+          {
+            "level": "後標",
+            "name": "數B"
+          }
+        ]
+      },
+      "secondStage": {
+        "steps": [
+          "審查資料"
+        ],
+        "selectDate": null,
+        "selectStudentNumber": 21,
+        "enrollStudentNumber": 3
+      },
+      "lowScorePreYear": [
+        {
+          "year": 114,
+          "score": [
+            "自然10"
+          ]
+        },
+        {
+          "year": 113,
+          "score": [
+            "數A5",
+            "自然9"
+          ]
+        }
+      ],
+      "lowScoreThisYear": [
+        {
+          "year": 115,
+          "score": [
+            "自然10"
+          ]
+        }
+      ],
+      "acceptSubjects": [],
+      "registration": "98%",
+      "teacherStudentRatio": "1:9",
+      "selectCharge": 600,
+      "enrollmentQuota": [
+        {
+          "year": 115,
+          "quota": "3"
+        },
+        {
+          "year": 114,
+          "quota": "3"
+        },
+        {
+          "year": 113,
+          "quota": "3"
+        }
+      ],
+      "excess": [
+        "國英自",
+        "自",
+        "英",
+        "國"
+      ],
+      "distribution": [
+        "114年備1",
+        "113年備1",
+        "112年備2"
+      ],
+      "interest": [
+        "I",
+        "R"
+      ],
+      "links": [
+        {
+          "name": "簡章",
+          "link": "https://www.cac.edu.tw/apply115/system/ColQry_115xappLyfOrStu_Azd5gP29/html/115_002482.htm?v=1.0"
+        },
+        {
+          "name": "畢業出路",
+          "link": "https://guide.104.com.tw/career/schoolMajor/5004000000/420103/?utm_source=hsapply&utm_medium=result"
+        },
+        {
+          "name": "科系介紹",
+          "link": "https://guide.104.com.tw/career/schoolMajor/5004000000/420103/introduction?utm_source=hsapply&utm_medium=result"
+        },
+        {
+          "name": "科系真心話",
+          "link": "https://guide.104.com.tw/career/schoolMajor/5004000000/420103/comment/?utm_source=hsapply&utm_medium=result"
+        },
+        {
+          "name": "學群排行榜",
+          "link": "https://guide.104.com.tw/career/college-brand/?typeId=GU05&utm_source=hsapply&utm_medium=result"
+        }
+      ],
+      "dynamic": {
+        "views": 823,
+        "average": [],
+        "overTotalScore": null,
+        "secondStageScore": [],
+        "avg": null
+      }
+    }
+  ]
+}

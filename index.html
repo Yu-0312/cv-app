@@ -6,6 +6,9 @@
   <meta name="theme-color" content="#0f172a" />
   <title>CV Studio</title>
   <link rel="manifest" href="manifest.json" />
+  <script src="./university-data.js"></script>
+  <script src="./data/app/gsat-external-data.js"></script>
+  <script src="./data/app/university-tw-app-data.js"></script>
   <script>
     function injectScriptOnce(src) {
       if (!src || document.querySelector(`script[src="${src}"]`)) return;
@@ -3028,6 +3031,7 @@
     .gsat-panel-label { font-size: 11px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); margin-bottom: 6px; }
     .gsat-results-shell { overflow-y: auto; padding: 24px 28px; }
     .gsat-score-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+    .gsat-select-grid { display: grid; grid-template-columns: 1fr; gap: 10px; }
     .gsat-score-item { display: flex; flex-direction: column; gap: 4px; }
     .gsat-score-label { font-size: 12px; color: var(--muted); font-weight: 600; }
     .gsat-score-input { border: 1.5px solid var(--line); border-radius: 8px; padding: 6px 10px; font-size: 15px; font-weight: 700; text-align: center; width: 100%; background: var(--bg); color: var(--ink); transition: border-color .15s; box-sizing: border-box; }
@@ -3083,6 +3087,13 @@
     .gsat-dept-stats { display: flex; gap: 16px; flex-wrap: wrap; font-size: 12px; color: var(--muted); margin-top: 6px; }
     .gsat-dept-stats strong { color: var(--ink); }
     .gsat-dept-note { font-size: 11.5px; color: var(--muted); margin-top: 4px; font-style: italic; }
+    .gsat-filter-summary { display: flex; flex-wrap: wrap; gap: 8px; margin: 14px 0 12px; }
+    .gsat-filter-pill { background: rgba(33,78,116,.08); color: var(--accent); border-radius: 999px; padding: 6px 10px; font-size: 12px; font-weight: 700; }
+    .gsat-empty-note { background: rgba(33,78,116,.05); border: 1px dashed rgba(33,78,116,.25); border-radius: 12px; padding: 14px 16px; color: var(--muted); font-size: 13px; line-height: 1.7; margin-bottom: 14px; }
+    .gsat-inline-list { display: flex; flex-direction: column; gap: 6px; margin-top: 8px; }
+    .gsat-inline-item { font-size: 12px; color: var(--ink); line-height: 1.6; }
+    .gsat-inline-item strong { color: var(--accent-2); }
+    .gsat-mini-note { margin-top: 8px; font-size: 11.5px; color: var(--muted); line-height: 1.6; }
     @media (max-width: 900px) {
       .gsat-workspace { grid-template-columns: 1fr; }
       .gsat-panel { border-right: none; border-bottom: 1px solid var(--line); }
@@ -4124,6 +4135,30 @@
             </div>
           </div>
 
+          <div>
+            <div class="gsat-panel-label">學習歷程分析範圍</div>
+            <div class="gsat-select-grid">
+              <div class="gsat-score-item">
+                <span class="gsat-score-label">大學等級分類</span>
+                <select class="gsat-score-input" id="gsatTierSelect" style="font-size:13px;font-weight:600;text-align:left;padding-left:12px;">
+                  <option value="all">全部大學</option>
+                </select>
+              </div>
+              <div class="gsat-score-item">
+                <span class="gsat-score-label">指定大學</span>
+                <select class="gsat-score-input" id="gsatUniversitySelect" style="font-size:13px;font-weight:600;text-align:left;padding-left:12px;">
+                  <option value="all">全部大學</option>
+                </select>
+              </div>
+              <div class="gsat-score-item">
+                <span class="gsat-score-label">指定科系</span>
+                <select class="gsat-score-input" id="gsatDepartmentSelect" style="font-size:13px;font-weight:600;text-align:left;padding-left:12px;">
+                  <option value="all">請先選擇大學</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
           <!-- Score inputs -->
           <div>
             <div class="gsat-panel-label">學測各科成績（1–15 級分）</div>
@@ -4162,15 +4197,6 @@
                 </select>
               </div>
             </div>
-          </div>
-
-          <!-- University filter -->
-          <div>
-            <div class="gsat-uni-filter-header">
-              <div class="gsat-panel-label" style="margin:0;">篩選顯示學校</div>
-              <button id="gsatToggleAllUni" class="gsat-uni-toggle-all" type="button">全不選</button>
-            </div>
-            <div id="gsatUniFilter" class="gsat-uni-chips"></div>
           </div>
 
           <button id="gsatAnalyzeBtn" class="gsat-analyze-btn" type="button">開始落點分析</button>
@@ -8864,7 +8890,77 @@
 
       /* ── 校系資料（歷年一階篩選加權分切線，111–113學年均值） ──── */
       /* w: 各科加權  th: 最低門檻  h: 近三年切線 [113,112,111]  */
-      const DEPTS = [
+      const OFFICIAL_UNIVERSITIES = window.CV_UNIVERSITY_DATA?.universities || [];
+      const OFFICIAL_DEPARTMENTS_BY_UNIVERSITY = window.CV_UNIVERSITY_DATA?.departmentsByUniversity || {};
+      const UNIVERSITY_TW_UNIVERSITIES = window.CV_UNIVERSITY_TW_DATA?.universities || {};
+      const UNIVERSITY_TW_ONLY_NAMES = Object.keys(UNIVERSITY_TW_UNIVERSITIES).filter(
+        (name) => !OFFICIAL_UNIVERSITIES.some((university) => university.name === name)
+      );
+      const ALL_UNIVERSITIES = [
+        ...OFFICIAL_UNIVERSITIES,
+        ...UNIVERSITY_TW_ONLY_NAMES.map((name) => ({
+          name,
+          publicPrivate: name.startsWith("國立") ? "公立" : "私立",
+          system: /科技大學|技術學院|專科/.test(name) ? "技專校院" : "一般大學",
+          source: "university-tw"
+        }))
+      ];
+
+      const ELITE_UNIVERSITIES = new Set([
+        "國立臺灣大學", "國立政治大學", "國立清華大學", "國立陽明交通大學", "國立成功大學",
+      ]);
+      const PRIVATE_TOP_UNIVERSITIES = new Set([
+        "東吳大學", "輔仁大學", "東海大學", "淡江大學", "中原大學", "逢甲大學", "元智大學",
+        "世新大學", "銘傳大學", "中國文化大學", "實踐大學", "義守大學", "亞洲大學", "長庚大學",
+      ]);
+      const SPECIALIZED_UNIVERSITIES = new Set([
+        "國立臺北藝術大學", "國立臺灣藝術大學", "國立臺南藝術大學", "國立體育大學", "國立臺灣體育運動大學",
+        "國立高雄餐旅大學", "國立臺北護理健康大學", "高雄醫學大學", "臺北醫學大學", "中山醫學大學",
+        "中國醫藥大學", "馬偕醫學大學", "慈濟大學", "文藻外語大學",
+      ]);
+
+      const UNIVERSITY_GROUP_CONFIG = [
+        { id:"elite", label:"A 級｜頂尖研究型大學", strategy:"research" },
+        { id:"national-general", label:"B 級｜公立綜合與師範大學", strategy:"balanced" },
+        { id:"specialized", label:"專門型｜醫藥、藝術、體育與特色大學", strategy:"specialized" },
+        { id:"tech-national", label:"國立技職｜科技與實作導向", strategy:"tech" },
+        { id:"private-top", label:"私立前段｜知名綜合大學", strategy:"private-top" },
+        { id:"private-general", label:"私立綜合｜區域與特色大學", strategy:"private-steady" },
+        { id:"tech-private", label:"私立技職｜應用實務型大學", strategy:"tech-applied" },
+        { id:"open", label:"其他型｜空中與進修導向大學", strategy:"steady" },
+      ];
+
+      function classifyUniversityGroup(university) {
+        if (ELITE_UNIVERSITIES.has(university.name)) return "elite";
+        if (university.system === "空中大學") return "open";
+        if (SPECIALIZED_UNIVERSITIES.has(university.name)) return "specialized";
+        if (university.publicPrivate === "公立" && university.system === "技專校院") return "tech-national";
+        if (university.publicPrivate === "私立" && university.system === "技專校院") return "tech-private";
+        if (university.publicPrivate === "公立") return "national-general";
+        if (PRIVATE_TOP_UNIVERSITIES.has(university.name)) return "private-top";
+        return "private-general";
+      }
+
+      const UNIVERSITY_GROUPS = UNIVERSITY_GROUP_CONFIG.map(group => ({
+        ...group,
+        schools: ALL_UNIVERSITIES
+          .filter(university => classifyUniversityGroup(university) === group.id)
+          .map(university => university.name),
+      })).filter(group => group.schools.length);
+
+      const UNIVERSITY_META = ALL_UNIVERSITIES.reduce((acc, university) => {
+        const tierId = classifyUniversityGroup(university);
+        const group = UNIVERSITY_GROUP_CONFIG.find(item => item.id === tierId);
+        acc[university.name] = {
+          ...university,
+          tierId,
+          tierLabel: group?.label || "",
+          strategy: group?.strategy || "balanced",
+        };
+        return acc;
+      }, {});
+
+      const BASE_DEPTS = [
         /* ======== 自然組 ======== */
         /* --- 國立臺灣大學 --- */
         { u:"國立臺灣大學", d:"醫學系",           t:"science", w:{國文:2,英文:2,數學A:1,自然:1.5},     th:{英文:"頂標",數學A:"頂標",自然:"頂標"}, h:[70.5,69.8,70.2], note:"全台競爭最激烈系所" },
@@ -9473,48 +9569,382 @@
         { u:"中州科技大學", d:"護理系",               t:"science", w:{國文:1.5,英文:1.5,數學A:1,自然:1.5},th:{},                                    h:[29.5,28.8,29.2], note:"" },
       ];
 
+      function mergeDeptRecords(base, external) {
+        const map = new Map();
+        [...base, ...external].forEach((item) => {
+          if (!item?.u || !item?.d || !item?.t) return;
+          map.set(`${item.u}::${item.d}::${item.t}`, item);
+        });
+        return [...map.values()];
+      }
+
+      const EXTERNAL_GSAT_DEPTS = Array.isArray(window.CV_GSAT_EXTERNAL_DEPTS)
+        ? window.CV_GSAT_EXTERNAL_DEPTS
+        : [];
+      const DEPTS = mergeDeptRecords(BASE_DEPTS, EXTERNAL_GSAT_DEPTS);
+
       /* ── Track toggle ─────────────────────────────────────────── */
       let selectedTrack = "science";
-      let selectedUniversities = new Set();
+      let selectedTierId = "all";
+      let selectedUniversity = "all";
+      let selectedDepartment = "all";
 
-      function getAllUnis() {
-        return [...new Set(DEPTS.filter(d => d.t === selectedTrack).map(d => d.u))];
+      function getTierMeta(tierId) {
+        return UNIVERSITY_GROUPS.find(group => group.id === tierId) || null;
       }
 
-      function renderUniFilter() {
-        const container = $g("gsatUniFilter");
-        const toggleBtn = $g("gsatToggleAllUni");
-        if (!container) return;
-        const all = getAllUnis();
-        const allSelected = all.every(u => selectedUniversities.has(u));
-        if (toggleBtn) toggleBtn.textContent = allSelected ? "全不選" : "全選";
-        container.innerHTML = all.map(u => {
-          const sel = selectedUniversities.has(u);
-          const short = u.replace(/^國立/, "").replace(/大學$/, "");
-          return `<button type="button" class="gsat-uni-chip${sel ? " active" : ""}" data-uni="${u}">${short}</button>`;
-        }).join("");
-        container.querySelectorAll(".gsat-uni-chip").forEach(btn => {
-          btn.addEventListener("click", () => {
-            const u = btn.dataset.uni;
-            if (selectedUniversities.has(u)) selectedUniversities.delete(u);
-            else selectedUniversities.add(u);
-            renderUniFilter();
+      function getUniversityMeta(name) {
+        return UNIVERSITY_META[name] || null;
+      }
+
+      function getUniversityTwSchoolData(universityName) {
+        return UNIVERSITY_TW_UNIVERSITIES[universityName] || null;
+      }
+
+      function getOfficialDepartments(universityName) {
+        const set = new Set(OFFICIAL_DEPARTMENTS_BY_UNIVERSITY[universityName] || []);
+        const schoolData = getUniversityTwSchoolData(universityName);
+        ["uac", "caac", "star", "female", "register"].forEach((sectionName) => {
+          const departments = schoolData?.[sectionName]?.departments;
+          if (!departments || typeof departments !== "object") return;
+          Object.keys(departments).forEach((departmentName) => {
+            if (departmentName) set.add(departmentName);
           });
         });
-        const tb = $g("gsatToggleAllUni");
-        if (tb) {
-          tb.onclick = () => {
-            const a = getAllUnis();
-            const allSel = a.every(u => selectedUniversities.has(u));
-            selectedUniversities = allSel ? new Set() : new Set(a);
-            renderUniFilter();
-          };
-        }
+        return [...set].sort((a, b) => a.localeCompare(b, "zh-Hant"));
       }
 
-      function initUniFilter() {
-        selectedUniversities = new Set(getAllUnis());
-        renderUniFilter();
+      function getUniversityTwDepartmentProfile(universityName, departmentName) {
+        const schoolData = getUniversityTwSchoolData(universityName);
+        if (!schoolData || !departmentName || departmentName === "all") return null;
+        return {
+          uac: schoolData?.uac?.departments?.[departmentName] || null,
+          caac: schoolData?.caac?.departments?.[departmentName] || null,
+          star: schoolData?.star?.departments?.[departmentName] || null,
+          female: schoolData?.female?.departments?.[departmentName] || null,
+          register: schoolData?.register?.departments?.[departmentName] || null,
+        };
+      }
+
+      function summarizeTableRows(rows, joiner = "、") {
+        if (!Array.isArray(rows) || !rows.length) return "";
+        return rows
+          .map((row) => {
+            const label = row[""] || row["年度"] || row["輪次"] || row.col0 || "";
+            const content = Object.entries(row)
+              .filter(([key, value]) => !["", "年度", "輪次", "col0"].includes(key) && value && value !== "--")
+              .map(([key, value]) => `${key}${value}`)
+              .join(joiner);
+            return [label, content].filter(Boolean).join("：");
+          })
+          .filter(Boolean)
+          .join(" ｜ ");
+      }
+
+      function getFemaleSchoolSummaryText(summaryRows) {
+        if (!Array.isArray(summaryRows) || !summaryRows.length) return "";
+        const undergraduate = summaryRows.find((row) => row.scope === "大學部");
+        const picked = undergraduate || summaryRows[0];
+        if (!picked) return "";
+        return `${picked.scope}女生比例 ${picked.femalePercent}（女 ${picked.girls} / 男 ${picked.boys}）`;
+      }
+
+      function buildUniversityTwInsightHtml() {
+        if (selectedUniversity === "all") return "";
+        const schoolData = getUniversityTwSchoolData(selectedUniversity);
+        if (!schoolData) return "";
+
+        const schoolCards = [];
+        const summaryBits = [];
+        if (schoolData.uac?.departmentCount) summaryBits.push(`分發 ${schoolData.uac.departmentCount} 系`);
+        if (schoolData.caac?.departmentCount) summaryBits.push(`個申 ${schoolData.caac.departmentCount} 系`);
+        if (schoolData.star?.departmentCount) summaryBits.push(`繁星 ${schoolData.star.departmentCount} 系`);
+        const femaleText = getFemaleSchoolSummaryText(schoolData.female?.summary);
+        const registerRate = schoolData.register?.total?.registrationRate || "";
+        const registerText = registerRate ? `校級註冊率 ${registerRate}` : "";
+
+        schoolCards.push(`
+          <div class="gsat-strategy-card">
+            <h4>${selectedUniversity} 校級摘要</h4>
+            <p>這裡整合了 University TW 收錄的分發、個申、繁星、男女比與新生註冊率資料，可在沒有歷年落點切線時當作校系背景參考。</p>
+            <div class="gsat-tag-row">
+              ${summaryBits.map((item) => `<span class="gsat-tag">${item}</span>`).join("")}
+              ${femaleText ? `<span class="gsat-tag">${femaleText}</span>` : ""}
+              ${registerText ? `<span class="gsat-tag">${registerText}</span>` : ""}
+            </div>
+          </div>
+        `);
+
+        if (selectedDepartment !== "all") {
+          const profile = getUniversityTwDepartmentProfile(selectedUniversity, selectedDepartment);
+          if (profile?.uac) {
+            schoolCards.push(`
+              <div class="gsat-strategy-card">
+                <h4>分發入學資料</h4>
+                <p>${selectedDepartment} 在分發入學收錄的採計與檢定條件。</p>
+                <div class="gsat-inline-list">
+                  <div class="gsat-inline-item"><strong>採計科目：</strong>${profile.uac.subjectsText || "未提供"}</div>
+                  <div class="gsat-inline-item"><strong>檢定標準：</strong>${profile.uac.standardsText || "未提供"}</div>
+                </div>
+              </div>
+            `);
+          }
+
+          if (profile?.caac) {
+            schoolCards.push(`
+              <div class="gsat-strategy-card">
+                <h4>個人申請資料</h4>
+                <p>${selectedDepartment} 在個人申請的招生與篩選資訊。</p>
+                <div class="gsat-inline-list">
+                  <div class="gsat-inline-item"><strong>代碼：</strong>${profile.caac.code || "未提供"}</div>
+                  <div class="gsat-inline-item"><strong>甄試日期：</strong>${profile.caac.examDate || "未提供"}</div>
+                  <div class="gsat-inline-item"><strong>招收人數：</strong>${profile.caac.admissionInfo || "未提供"}</div>
+                  <div class="gsat-inline-item"><strong>採計科目：</strong>${profile.caac.subjectText || "未提供"}</div>
+                  <div class="gsat-inline-item"><strong>學測檢定：</strong>${summarizeTableRows(profile.caac.standards) || "未提供"}</div>
+                  <div class="gsat-inline-item"><strong>篩選倍率：</strong>${summarizeTableRows(profile.caac.multipliers) || "未提供"}</div>
+                  <div class="gsat-inline-item"><strong>114 篩選結果：</strong>${summarizeTableRows(profile.caac.previousYearFilterResult, " / ") || "未提供"}</div>
+                </div>
+              </div>
+            `);
+          }
+
+          if (profile?.star) {
+            schoolCards.push(`
+              <div class="gsat-strategy-card">
+                <h4>繁星推薦資料</h4>
+                <p>${selectedDepartment} 在繁星推薦的群組、比序與去年錄取資訊。</p>
+                <div class="gsat-inline-list">
+                  <div class="gsat-inline-item"><strong>代碼：</strong>${profile.star.code || "未提供"}${profile.star.group ? `｜第 ${profile.star.group} 類學群` : ""}</div>
+                  <div class="gsat-inline-item"><strong>繁星規定：</strong>${profile.star.rule || "未提供"}</div>
+                  <div class="gsat-inline-item"><strong>招收人數：</strong>${profile.star.admissionInfo || "未提供"}</div>
+                  <div class="gsat-inline-item"><strong>採計科目：</strong>${profile.star.subjectText || "未提供"}</div>
+                  <div class="gsat-inline-item"><strong>學測檢定：</strong>${summarizeTableRows(profile.star.standards) || "未提供"}</div>
+                  <div class="gsat-inline-item"><strong>分發比序：</strong>${summarizeTableRows(profile.star.rankingItems, " → ") || "未提供"}</div>
+                  <div class="gsat-inline-item"><strong>114 比序結果：</strong>${profile.star.previousYearAdmissionSummary || "未提供"}${profile.star.previousYearAdmissionDetails?.length ? `｜${summarizeTableRows(profile.star.previousYearAdmissionDetails, " / ")}` : ""}</div>
+                </div>
+              </div>
+            `);
+          }
+
+          if (profile?.female || profile?.register) {
+            schoolCards.push(`
+              <div class="gsat-strategy-card">
+                <h4>校系輪廓資料</h4>
+                <p>用男女比與新生註冊率輔助理解這個校系的就讀輪廓與吸引力。</p>
+                <div class="gsat-inline-list">
+                  ${profile.female ? `<div class="gsat-inline-item"><strong>男女比：</strong>女生 ${profile.female.femalePercent}（女 ${profile.female.girls} / 男 ${profile.female.boys}）</div>` : ""}
+                  ${profile.register ? `<div class="gsat-inline-item"><strong>新生註冊率：</strong>${profile.register.registrationRate}（註冊 ${profile.register.registeredCount} / 名額-保留 ${profile.register.quotaMinusReserved}）</div>` : ""}
+                </div>
+                <div class="gsat-mini-note">這兩項不是錄取門檻，但能幫你判斷校系組成、競爭感受與實際就讀傾向。</div>
+              </div>
+            `);
+          }
+        }
+
+        return `
+          <div class="gsat-tier-section">
+            <div class="gsat-section-title">校系資料庫摘要</div>
+            ${schoolCards.join("")}
+          </div>
+        `;
+      }
+
+      function populateTierSelect() {
+        const select = $g("gsatTierSelect");
+        if (!select) return;
+        select.innerHTML = `<option value="all">全部大學</option>${
+          UNIVERSITY_GROUPS.map(group => `<option value="${group.id}">${group.label}</option>`).join("")
+        }`;
+        select.value = selectedTierId;
+      }
+
+      function getUniversitiesForTier(tierId) {
+        if (tierId === "all") {
+          return Object.keys(UNIVERSITY_META).sort((a, b) => a.localeCompare(b, "zh-Hant"));
+        }
+        return [...(getTierMeta(tierId)?.schools || [])];
+      }
+
+      function populateUniversitySelect() {
+        const select = $g("gsatUniversitySelect");
+        if (!select) return;
+        const universities = getUniversitiesForTier(selectedTierId);
+        if (selectedUniversity !== "all" && !universities.includes(selectedUniversity)) {
+          selectedUniversity = "all";
+          selectedDepartment = "all";
+        }
+        select.innerHTML = `<option value="all">全部大學</option>${
+          universities.map(name => `<option value="${name}">${name}</option>`).join("")
+        }`;
+        select.value = selectedUniversity;
+      }
+
+      function populateDepartmentSelect() {
+        const select = $g("gsatDepartmentSelect");
+        if (!select) return;
+        if (selectedUniversity === "all") {
+          selectedDepartment = "all";
+          select.innerHTML = `<option value="all">請先選擇大學</option>`;
+          select.value = "all";
+          return;
+        }
+        const departments = getOfficialDepartments(selectedUniversity);
+        if (selectedDepartment !== "all" && !departments.includes(selectedDepartment)) {
+          selectedDepartment = "all";
+        }
+        select.innerHTML = `<option value="all">全部科系</option>${
+          departments.map(name => `<option value="${name}">${name}</option>`).join("")
+        }`;
+        select.value = selectedDepartment;
+      }
+
+      function getSelectedFilterSummary() {
+        const tierMeta = getTierMeta(selectedTierId);
+        const universityMeta = getUniversityMeta(selectedUniversity);
+        return {
+          tierMeta,
+          universityMeta,
+          tierText: tierMeta ? tierMeta.label : "全部大學",
+          universityText: universityMeta ? universityMeta.name : "全部大學",
+          departmentText: selectedDepartment === "all" ? "全部科系" : selectedDepartment,
+        };
+      }
+
+      function schoolMatchesFilter(schoolName) {
+        if (selectedUniversity !== "all") return schoolName === selectedUniversity;
+        if (selectedTierId !== "all") return getUniversityMeta(schoolName)?.tierId === selectedTierId;
+        return true;
+      }
+
+      function departmentMatchesFilter(departmentName) {
+        if (selectedDepartment !== "all") return departmentName === selectedDepartment;
+        return true;
+      }
+
+      function scoreBand(total5) {
+        if (total5 >= 60) return "high";
+        if (total5 >= 50) return "upper-mid";
+        if (total5 >= 40) return "mid";
+        return "build";
+      }
+
+      function strategyProfile(meta) {
+        return meta?.strategy || getTierMeta(selectedTierId)?.strategy || "balanced";
+      }
+
+      function buildStrategyCards(scores, total5, filteredResults) {
+        const { tierMeta, universityMeta, tierText, universityText, departmentText } = getSelectedFilterSummary();
+        const profile = strategyProfile(universityMeta || tierMeta);
+        const band = scoreBand(total5);
+        const sample = filteredResults[0] || null;
+        const focusMap = {
+          research: {
+            title: "研究探究型",
+            points: "強調自主研究、探究歷程、學科延伸閱讀與競賽成果。作品不只放結果，更要交代你怎麼定題、怎麼修正方法、最後得到什麼洞見。",
+            tags: ["專題研究", "競賽成果", "閱讀反思", "跨域探究"],
+            example: "適合把自然科探究、小論文、資料分析、程式專案整理成完整的問題意識與方法歷程。",
+          },
+          balanced: {
+            title: "均衡表現型",
+            points: "除了成績，審查通常也會看學習穩定度、校內外參與、團隊合作與服務紀錄。建議把課程成果、幹部經驗、專案協作整合成一條主線。",
+            tags: ["課程成果", "團隊協作", "穩定學習", "校內參與"],
+            example: "可把一學期專題、社團活動與志工經驗串成『從參與到帶領』的成長故事。",
+          },
+          steady: {
+            title: "穩定累積型",
+            points: "重點是讓審查看到你長期投入、願意補強且有清楚方向。資料不一定要很多，但每一項都要說清楚你做了什麼、學到什麼、未來怎麼延伸。",
+            tags: ["持續投入", "反思整理", "目標明確", "學習修正"],
+            example: "把三個代表性經驗做深做完整，通常比堆很多零碎活動更有效。",
+          },
+          specialized: {
+            title: "專門校系型",
+            points: "這類學校特別重視專業對口度。醫藥看服務與科學素養，藝術看作品辨識度與創作脈絡，師培看教學熱忱與帶領經驗，體育看訓練紀錄與自律。",
+            tags: ["對口證明", "專業動機", "作品辨識度", "長期投入"],
+            example: "若目標校偏醫藥，可補志工服務、照護觀察、科學探究；若偏藝術，則要加強作品集敘事與視覺完成度。",
+          },
+          "private-top": {
+            title: "私校前段型",
+            points: "除了學科能力，也很在意個人敘事、活動參與與英文／跨域能力。建議把你的特色包裝得更清楚，讓審查能快速記住你。",
+            tags: ["個人特色", "跨域經驗", "英文能力", "活動參與"],
+            example: "可把交換營隊、簡報競賽、媒體作品或跨校合作整理成亮點頁。",
+          },
+          "private-steady": {
+            title: "私校穩健型",
+            points: "重點在於讓申請材料清楚、完整、好閱讀。你需要明確說明動機、準備過程與未來規劃，降低審查者閱讀成本。",
+            tags: ["申請動機", "材料完整", "成果整理", "未來規劃"],
+            example: "每一頁都回答一個問題，例如『我為何適合這個領域』、『我已經做了哪些準備』。",
+          },
+          tech: {
+            title: "國立技職實作型",
+            points: "以實作能力、專題製作、證照與產業連結最重要。能不能把問題解掉、作品做出來，比單純描述興趣更有說服力。",
+            tags: ["專題實作", "證照", "競賽實績", "產業連結"],
+            example: "建議放流程圖、成品照片、技術堆疊、遇到的錯誤與優化前後對照。",
+          },
+          "tech-applied": {
+            title: "應用技職型",
+            points: "審查會很看重能否快速證明你有做過。把實習、接案、社團企劃、店務或專題都整理成『情境 - 行動 - 成果』的格式會很有用。",
+            tags: ["做過的證明", "成品成果", "實習經驗", "問題解決"],
+            example: "即使不是大型比賽，校內專題、商業設計、活動企劃或資訊作品也都可以成為核心證據。",
+          },
+        };
+
+        const guidanceMap = {
+          high: "你的成績已具備衝刺前段校系的條件，學習歷程要避免只停在『我有參加』，要把深度、方法與辨識度做出來。",
+          "upper-mid": "你的成績落在很有競爭力的區間，建議用學習歷程把『穩定度 + 主題性』做強，會比單純多塞活動更有效。",
+          mid: "你的成績屬於可透過審查資料補強的區間，重點是讓審查看到你已經準備好、而且知道自己要什麼。",
+          build: "目前成績還需要作品集與準備度來拉高說服力。學習歷程要主打進步軌跡、反思能力與具體成果，不要只列清單。",
+        };
+
+        const profileInfo = focusMap[profile] || focusMap.balanced;
+        const targetLabel = selectedDepartment !== "all"
+          ? `${universityText} ${departmentText}`
+          : (universityText === "全部大學" ? tierText : universityText);
+        const cards = [
+          {
+            title: `${targetLabel}建議主軸`,
+            body: profileInfo.points,
+            example: profileInfo.example,
+            tags: profileInfo.tags,
+          },
+          {
+            title: "依目前成績的準備方向",
+            body: guidanceMap[band],
+            example: sample
+              ? `以目前篩到的 ${sample.u} ${sample.d} 來看，你和歷年均線差 ${sample.gap >= 0 ? "+" : ""}${sample.gap} 分，建議把相關課程或作品放到前面。`
+              : "若目前沒有對應校系切線資料，仍可先依校型準備通用版學習歷程，再依目標科系微調。",
+            tags: band === "high"
+              ? ["深度優先", "探究歷程", "辨識度"]
+              : band === "upper-mid"
+                ? ["主題清楚", "穩定表現", "亮點排序"]
+                : band === "mid"
+                  ? ["補強動機", "反思能力", "代表作品"]
+                  : ["進步軌跡", "基本功", "具體成果"],
+          },
+          {
+            title: "建議你優先補的材料",
+            body: selectedTrack === "science"
+              ? "優先整理自然科探究、數理專題、實驗紀錄、程式或工程作品，並把解題思路、模型建立與修正過程具體寫出來。"
+              : "優先整理閱讀分析、社會觀察、議題討論、企劃簡報、語文表達與團隊協作，並把觀點形成與影響力證據寫清楚。",
+            example: selectedTrack === "science"
+              ? "可新增一頁『問題定義 → 方法 → 驗證 → 修正』，把專題或競賽從成果頁升級成審查頁。"
+              : "可新增一頁『議題背景 → 我的觀點 → 實際行動 → 反思』，讓社會組資料不只停在心得感想。",
+            tags: selectedTrack === "science"
+              ? ["研究方法", "實驗紀錄", "技術作品"]
+              : ["觀點整理", "表達能力", "企劃執行"],
+          },
+        ];
+
+        return `<div class="gsat-tier-section">
+          <div class="gsat-section-title">學習歷程分析建議</div>
+          ${cards.map(card => `
+            <div class="gsat-strategy-card">
+              <h4>${card.title}</h4>
+              <p>${card.body}</p>
+              <div class="gsat-tag-row">${card.tags.map(tag => `<span class="gsat-tag">${tag}</span>`).join("")}</div>
+              <div class="sc-example">${card.example}</div>
+            </div>
+          `).join("")}
+        </div>`;
       }
 
       document.querySelectorAll(".gsat-track-btn").forEach(btn => {
@@ -9525,7 +9955,6 @@
           const mathBRow = $g("gsatMathBRow");
           if (mathARow) mathARow.style.display = selectedTrack === "science" ? "" : "none";
           if (mathBRow) mathBRow.style.display = selectedTrack === "social"  ? "" : "none";
-          initUniFilter();
         });
       });
 
@@ -9539,6 +9968,32 @@
           else if (v < 1) { inp.value = 1; inp.classList.add("input-error"); setTimeout(() => inp.classList.remove("input-error"), 800); }
           else inp.classList.remove("input-error");
         });
+      });
+
+      populateTierSelect();
+      populateUniversitySelect();
+      populateDepartmentSelect();
+
+      $g("gsatTierSelect")?.addEventListener("change", (event) => {
+        selectedTierId = event.target.value || "all";
+        populateUniversitySelect();
+        populateDepartmentSelect();
+      });
+
+      $g("gsatUniversitySelect")?.addEventListener("change", (event) => {
+        selectedUniversity = event.target.value || "all";
+        const universityMeta = getUniversityMeta(selectedUniversity);
+        if (universityMeta) {
+          selectedTierId = universityMeta.tierId;
+          populateTierSelect();
+          populateUniversitySelect();
+        }
+        selectedDepartment = "all";
+        populateDepartmentSelect();
+      });
+
+      $g("gsatDepartmentSelect")?.addEventListener("change", (event) => {
+        selectedDepartment = event.target.value || "all";
       });
 
       /* ── Score helpers ────────────────────────────────────────── */
@@ -9594,10 +10049,10 @@
           return;
         }
 
-        const activeUnis = selectedUniversities.size > 0 ? selectedUniversities : new Set(getAllUnis());
-
         const results = DEPTS
-          .filter(dep => dep.t === selectedTrack && activeUnis.has(dep.u))
+          .filter(dep => dep.t === selectedTrack)
+          .filter(dep => schoolMatchesFilter(dep.u))
+          .filter(dep => departmentMatchesFilter(dep.d))
           .map(dep => {
             const userW  = weighted(scores, dep.w);
             const avgC   = dep.h.reduce((a, b) => a + b, 0) / dep.h.length;
@@ -9619,6 +10074,7 @@
       /* ── Render ────────────────────────────────────────────────── */
       function renderResults(results, scores, total5) {
         const listen  = $g("gsatListen")?.value || "B";
+        const { tierText, universityText, departmentText } = getSelectedFilterSummary();
         const subjSet = selectedTrack === "science"
           ? ["國文","英文","數學A","自然","社會"]
           : ["國文","英文","數學B","社會","自然"];
@@ -9642,6 +10098,13 @@
           safety:   { label:"安全志願",   badge:"dc-badge-safety",   text:"安全", color:"#1e40af" },
           fallback: { label:"保底志願",   badge:"dc-badge-fallback", text:"保底", color:"#065f46" },
         };
+
+        const filterSummaryHtml = `
+          <div class="gsat-filter-summary">
+            <span class="gsat-filter-pill">分類：${tierText}</span>
+            <span class="gsat-filter-pill">學校：${universityText}</span>
+            <span class="gsat-filter-pill">科系：${departmentText}</span>
+          </div>`;
 
         const tierHtml = ["dream","safety","fallback"].map(tier => {
           const list = results.filter(r => r.tier === tier);
@@ -9671,6 +10134,16 @@
           </div>`;
         }).join("");
 
+        const emptyNoteHtml = results.length
+          ? ""
+          : `<div class="gsat-empty-note">
+              目前所選的「${universityText} / ${departmentText} / ${selectedTrack === "science" ? "自然組" : "社會組"}」沒有收錄到對應的歷年校系切線。
+              這不代表不能申請，只是目前系統缺少該科系的歷年一階分數資料；下方仍會先提供 University TW 校系資料摘要與學習歷程準備方向。
+            </div>`;
+
+        const universityTwInsightHtml = buildUniversityTwInsightHtml();
+        const strategyHtml = buildStrategyCards(scores, total5, results);
+
         $g("gsatResultsArea").innerHTML = `
           <div style="padding-bottom:40px;">
             <div class="gsat-total-bar">
@@ -9680,11 +10153,15 @@
               </div>
             </div>
             <div class="gsat-score-summary" style="margin-bottom:12px;">${scoreCards}</div>
+            ${filterSummaryHtml}
             <div class="gsat-disclaimer">
               ⚠ 本資料為歷年統計估算，<strong>僅供初步參考</strong>。建議交叉比對
               <strong>甄戰 AI 大數據</strong>、<strong>104 落點分析</strong>、<strong>1111 落點分析</strong>
               等網站，並以大學甄選入學委員會公告之正式篩選條件為準。
             </div>
+            ${emptyNoteHtml}
+            ${universityTwInsightHtml}
+            ${strategyHtml}
             ${tierHtml}
           </div>`;
       }
@@ -9692,9 +10169,6 @@
       window.gsatAnalyze = analyze;
       const _gsatBtn = $g("gsatAnalyzeBtn");
       if (_gsatBtn) _gsatBtn.addEventListener("click", analyze);
-
-      /* init university filter chips on load */
-      initUniFilter();
     })();
 
   </script>
