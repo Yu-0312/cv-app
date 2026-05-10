@@ -15,7 +15,7 @@
     "gsat:104:browser:capture": "node scripts/capture-104-browser-state.mjs capture --score-year 115 --role-type 1 --chinese 12 --english 11 --mathA 10 --mathB 9 --society 12 --natural 12 --out data/raw/104-browser-capture.json",
     "gsat:build:help": "node scripts/build-gsat-external-data.mjs --help",
     "gsat:build": "node scripts/build-gsat-external-data.mjs data/normalized --js-out data/app/gsat-external-data.js --json-out data/app/gsat-external-data.json --report-out data/app/gsat-external-report.md",
-    "build": "mkdir -p dist && cp index.html manifest.json sw.js icon.svg config.js dist/ && cp index.html dist/404.html && touch dist/.nojekyll",
+    "build": "node scripts/prepare-dist.mjs",
     "deploy:prepare": "npm run build"
   },
   "devDependencies": {

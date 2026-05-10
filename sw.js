@@ -1,13 +1,41 @@
-const CACHE_NAME = "cv-studio-cache-v3";
-const ASSETS = ["./manifest.json", "./icon.svg", "./config.js"];
+const CACHE_NAME = "cv-studio-cache-v6";
+const ASSETS = [
+  "./manifest.json",
+  "./icon.svg",
+  "./config.js",
+  "./university-data.js",
+  "./data/app/gsat-external-data.js",
+  "./data/app/university-tw-app-data.js"
+];
 const HTML_ASSETS = ["./", "./index.html"];
+const NETWORK_FIRST_ASSETS = ASSETS.map((asset) => asset.replace(/^\./, ""));
+
+function isSameOrigin(requestUrl) {
+  return requestUrl.origin === self.location.origin;
+}
+
+function isNetworkFirstAsset(requestUrl) {
+  return isSameOrigin(requestUrl) && NETWORK_FIRST_ASSETS.some((assetPath) => requestUrl.pathname.endsWith(assetPath));
+}
+
+function cacheSuccessfulResponse(cacheKey, response) {
+  if (!response.ok) return;
+  caches.open(CACHE_NAME).then((cache) => cache.put(cacheKey, response.clone()));
+}
 
 self.addEventListener("install", (event) => {
   event.waitUntil(
     caches.open(CACHE_NAME).then((cache) =>
-      Promise.all(ASSETS.map(url =>
-        fetch(url, { cache: "no-cache" }).then(r => cache.put(url, r)).catch(() => {})
-      ))
+      Promise.all(
+        [...HTML_ASSETS, ...ASSETS].map((url) =>
+          fetch(url, { cache: "no-cache" }).then((response) => {
+            if (response.ok) {
+              cache.put(url, response.clone());
+            }
+            return response;
+          }).catch(() => {})
+        )
+      )
     )
   );
   self.skipWaiting();
@@ -32,7 +60,35 @@ self.addEventListener("fetch", (event) => {
   if (isHtml) {
     /* Network-first for HTML — always get latest code */
     event.respondWith(
-      fetch(event.request, { cache: "no-cache" }).catch(() => caches.match("./index.html"))
+      fetch(event.request, { cache: "no-cache" })
+        .then((response) => {
+          if (response.ok) {
+            const copy = response.clone();
+            caches.open(CACHE_NAME).then((cache) => {
+              cache.put("./", copy.clone());
+              cache.put("./index.html", copy);
+            });
+          }
+          return response;
+        })
+        .catch(() => caches.match("./index.html"))
+    );
+    return;
+  }
+
+  if (isNetworkFirstAsset(url)) {
+    event.respondWith(
+      fetch(event.request, { cache: "no-cache" })
+        .then((response) => {
+          if (isSameOrigin(url)) {
+            cacheSuccessfulResponse(event.request, response);
+          }
+          return response;
+        })
+        .catch(async () => {
+          const cached = await caches.match(event.request);
+          return cached || new Response("Offline", { status: 503, statusText: "Offline" });
+        })
     );
     return;
   }
@@ -42,11 +98,12 @@ self.addEventListener("fetch", (event) => {
       if (cached) return cached;
       return fetch(event.request)
         .then((response) => {
-          const copy = response.clone();
-          caches.open(CACHE_NAME).then((cache) => cache.put(event.request, copy));
+          if (isSameOrigin(url)) {
+            cacheSuccessfulResponse(event.request, response);
+          }
           return response;
         })
-        .catch(() => caches.match("./index.html"));
+        .catch(() => new Response("Offline", { status: 503, statusText: "Offline" }));
     })
   );
 });

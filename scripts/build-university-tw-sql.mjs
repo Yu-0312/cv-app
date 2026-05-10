@@ -37,7 +37,14 @@ function cleanText(value = "") {
 }
 
 function normalizeUniversityCode(value, name = "") {
-  const digits = cleanText(value).replace(/\D/g, "");
+  const text = cleanText(value).toLowerCase();
+  if (!text) {
+    return cleanText(name);
+  }
+  if (/^[a-z]+\d+$/i.test(text)) {
+    return text;
+  }
+  const digits = text.replace(/\D/g, "");
   if (!digits) {
     return cleanText(name);
   }
@@ -45,6 +52,44 @@ function normalizeUniversityCode(value, name = "") {
     return digits;
   }
   return digits.padStart(4, "0");
+}
+
+function parseEmbeddedInteger(value) {
+  const text = String(value ?? "")
+    .replace(/^'/, "")
+    .replace(/'$/, "")
+    .replace(/''/g, "'")
+    .replace(/\D/g, "");
+  return text ? Number(text) : -1;
+}
+
+function dedupeRows(rows, buildKey, chooseRow = (current) => current) {
+  const map = new Map();
+  for (const row of rows) {
+    const key = buildKey(row);
+    if (!map.has(key)) {
+      map.set(key, row);
+      continue;
+    }
+    map.set(key, chooseRow(map.get(key), row));
+  }
+  return Array.from(map.values());
+}
+
+function preferRegistrationRow(current, candidate) {
+  const currentRegistered = parseEmbeddedInteger(current.registered_count_text);
+  const candidateRegistered = parseEmbeddedInteger(candidate.registered_count_text);
+  if (candidateRegistered !== currentRegistered) {
+    return candidateRegistered > currentRegistered ? candidate : current;
+  }
+
+  const currentQuota = parseEmbeddedInteger(current.quota_minus_reserved_text);
+  const candidateQuota = parseEmbeddedInteger(candidate.quota_minus_reserved_text);
+  if (candidateQuota !== currentQuota) {
+    return candidateQuota > currentQuota ? candidate : current;
+  }
+
+  return current;
 }
 
 function sqlString(value) {
@@ -155,7 +200,31 @@ function createCanonicalUniversityIndex(raw, snapshotId) {
     row.sourceSections.register = true;
   }
 
-  const universities = Array.from(map.values()).sort((a, b) => a.name.localeCompare(b.name, "zh-Hant"));
+  const universities = Array.from(map.values())
+    .sort((a, b) => a.name.localeCompare(b.name, "zh-Hant"))
+    .map((row) => ({ ...row }));
+
+  const usedCodes = new Set();
+  for (const row of universities) {
+    const candidates = [
+      cleanText(row.universityCode),
+      normalizeUniversityCode(row.schoolNo, row.name),
+      cleanText(row.name)
+    ].filter(Boolean);
+    let finalCode = candidates.find((candidate) => !usedCodes.has(candidate));
+    if (!finalCode) {
+      const base = candidates[0] || cleanText(row.name) || "university";
+      let suffix = 2;
+      finalCode = `${base}#${suffix}`;
+      while (usedCodes.has(finalCode)) {
+        suffix += 1;
+        finalCode = `${base}#${suffix}`;
+      }
+    }
+    row.universityCode = finalCode;
+    usedCodes.add(finalCode);
+  }
+
   const nameToCode = Object.fromEntries(universities.map((row) => [row.name, row.universityCode]));
   return { universities, nameToCode };
 }
@@ -300,6 +369,28 @@ function buildSql(raw, snapshotId) {
     source_sections: sqlJson(row.sourceSections, {})
   }));
 
+  const uniqueUacRows = dedupeRows(
+    uacRows,
+    (row) => `${row.snapshot_id}|${row.university_code}|${row.department_code}`
+  );
+  const uniqueCaacRows = dedupeRows(
+    caacRows,
+    (row) => `${row.snapshot_id}|${row.university_code}|${row.department_code}`
+  );
+  const uniqueStarRows = dedupeRows(
+    starRows,
+    (row) => `${row.snapshot_id}|${row.university_code}|${row.department_code}`
+  );
+  const uniqueGenderRows = dedupeRows(
+    genderRows,
+    (row) => `${row.snapshot_id}|${row.university_code}|${row.department_name}`
+  );
+  const uniqueRegistrationRows = dedupeRows(
+    registrationRows,
+    (row) => `${row.snapshot_id}|${row.university_code}|${row.department_name}`,
+    preferRegistrationRow
+  );
+
   return `-- University TW seed generated at ${generatedAt}
 -- Snapshot ID: ${snapshotId}
 -- Summary: ${JSON.stringify(summary)}
@@ -364,7 +455,7 @@ ${buildInsert(
     "standard_code",
     "subject_code"
   ],
-  uacRows
+  uniqueUacRows
 )}
 ${buildInsert(
   "public.university_tw_caac_departments",
@@ -385,7 +476,7 @@ ${buildInsert(
     "title",
     "heading"
   ],
-  caacRows
+  uniqueCaacRows
 )}
 ${buildInsert(
   "public.university_tw_star_departments",
@@ -408,7 +499,7 @@ ${buildInsert(
     "title",
     "heading"
   ],
-  starRows
+  uniqueStarRows
 )}
 ${buildInsert(
   "public.university_tw_gender_departments",
@@ -421,7 +512,7 @@ ${buildInsert(
     "female_percent_text",
     "metrics"
   ],
-  genderRows
+  uniqueGenderRows
 )}
 ${buildInsert(
   "public.university_tw_registration_departments",
@@ -434,7 +525,7 @@ ${buildInsert(
     "registration_rate_text",
     "metrics"
   ],
-  registrationRows
+  uniqueRegistrationRows
 )}
 commit;
 `;

@@ -65,7 +65,8 @@ window.CV_STUDIO_CONFIG = {
 
 ```bash
 npm run build
-# 輸出至 dist/，包含 index.html、manifest.json、sw.js、icon.svg、config.js、404.html、.nojekyll
+# 輸出至 dist/，並自動帶入學測分析需要的 university-data.js 與 data/app/*
+# 若本機沒有 config.js，build 也會自動產生安全 fallback，不會在 CI 直接失敗
 ```
 
 部署步驟：
