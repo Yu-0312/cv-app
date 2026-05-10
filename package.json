@@ -16,7 +16,8 @@
     "gsat:build:help": "node scripts/build-gsat-external-data.mjs --help",
     "gsat:build": "node scripts/build-gsat-external-data.mjs data/normalized --js-out data/app/gsat-external-data.js --json-out data/app/gsat-external-data.json --report-out data/app/gsat-external-report.md",
     "build": "node scripts/prepare-dist.mjs",
-    "deploy:prepare": "npm run build"
+    "deploy:prepare": "npm run build",
+    "smoke:test": "npm run build && node scripts/smoke-test.mjs"
   },
   "devDependencies": {
     "puppeteer-core": "^24.43.0"

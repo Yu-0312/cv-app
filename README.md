@@ -69,6 +69,18 @@ npm run build
 # 若本機沒有 config.js，build 也會自動產生安全 fallback，不會在 CI 直接失敗
 ```
 
+建議在改完登入、學測或 Career 互動後順手跑一次 smoke test：
+
+```bash
+npm run smoke:test
+```
+
+這個指令會自動建置 `dist/`，再用 headless Chrome 檢查：
+
+- Google 登入 UI 的登入 / 登出事件流
+- Career 頁的模式切換、履歷摘要同步、缺少 API key 的錯誤提示
+- 學測頁的分類 → 大學 → 科系聯動、可分析校系結果、以及沒有歷年切線時的 fallback 畫面
+
 部署步驟：
 
 1. 將專案推送至 GitHub repository

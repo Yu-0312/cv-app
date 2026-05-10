@@ -249,24 +249,39 @@
     .hero {
       position: relative;
       overflow: hidden;
-      background: linear-gradient(135deg, rgba(255, 250, 244, 0.9), rgba(246, 239, 225, 0.86));
+      background:
+        radial-gradient(circle at 0% 0%, rgba(216, 159, 61, 0.12), transparent 34%),
+        radial-gradient(circle at 96% 8%, rgba(28, 49, 71, 0.12), transparent 24%),
+        linear-gradient(140deg, rgba(255, 250, 244, 0.96), rgba(246, 239, 225, 0.9));
       border: 1px solid rgba(49, 40, 27, 0.08);
       border-radius: 34px;
       box-shadow: var(--shadow);
-      padding: 28px;
+      padding: 30px;
       margin-bottom: 18px;
     }
 
+    .hero::before,
     .hero::after {
       content: "";
       position: absolute;
+      border-radius: 50%;
+      pointer-events: none;
+    }
+
+    .hero::before {
+      left: -80px;
+      bottom: -110px;
+      width: 240px;
+      height: 240px;
+      background: radial-gradient(circle, rgba(28, 49, 71, 0.12), transparent 68%);
+    }
+
+    .hero::after {
       right: -40px;
       top: -50px;
       width: 220px;
       height: 220px;
-      border-radius: 50%;
-      background: radial-gradient(circle, rgba(216, 159, 61, 0.22), transparent 68%);
-      pointer-events: none;
+      background: radial-gradient(circle, rgba(216, 159, 61, 0.24), transparent 68%);
     }
 
     .eyebrow {
@@ -290,6 +305,11 @@
       margin-top: 16px;
     }
 
+    .hero-copy {
+      position: relative;
+      z-index: 1;
+    }
+
     h1, h2, h3, p {
       margin: 0;
     }
@@ -309,16 +329,107 @@
       max-width: 64ch;
     }
 
+    .hero-lead {
+      max-width: 60ch;
+    }
+
     .hero-actions {
       display: flex;
       flex-wrap: wrap;
       gap: 12px;
       margin-top: 24px;
+      align-items: stretch;
+    }
+
+    .hero-actions > * {
+      min-height: 48px;
+      justify-content: center;
+    }
+
+    .hero-action-note {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 14px;
+      padding: 10px 14px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.78);
+      border: 1px solid rgba(49, 40, 27, 0.08);
+      color: var(--muted);
+      font-size: 0.92rem;
+      line-height: 1.4;
+    }
+
+    .hero-action-note strong {
+      color: var(--template-heading);
+      font-size: 0.92rem;
+    }
+
+    .hero-kpis {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+      gap: 10px;
+      margin-top: 18px;
+    }
+
+    .hero-kpi {
+      padding: 14px 16px;
+      border-radius: 18px;
+      background: rgba(255, 255, 255, 0.76);
+      border: 1px solid rgba(49, 40, 27, 0.08);
+    }
+
+    .hero-kpi strong,
+    .hero-step strong {
+      display: block;
+      color: var(--template-heading);
+      font-size: 0.98rem;
+      margin-bottom: 6px;
+    }
+
+    .hero-kpi span,
+    .hero-step span {
+      display: block;
+      color: var(--muted);
+      font-size: 0.92rem;
+      line-height: 1.55;
+    }
+
+    .hero-workflow {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+      gap: 12px;
+      margin-top: 26px;
+    }
+
+    .hero-step {
+      position: relative;
+      padding: 18px 18px 16px;
+      border-radius: 22px;
+      background: rgba(255, 255, 255, 0.82);
+      border: 1px solid rgba(49, 40, 27, 0.08);
+      box-shadow: 0 14px 34px rgba(50, 38, 18, 0.06);
+    }
+
+    .hero-step-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 34px;
+      height: 34px;
+      padding: 0 11px;
+      border-radius: 999px;
+      margin-bottom: 12px;
+      background: linear-gradient(135deg, rgba(216, 159, 61, 0.18), rgba(28, 49, 71, 0.14));
+      color: var(--template-heading);
+      font-size: 0.84rem;
+      font-weight: 700;
+      letter-spacing: 0.03em;
     }
 
     .hero-stats {
       display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
       gap: 12px;
       margin-top: 26px;
     }
@@ -393,6 +504,8 @@
       gap: 14px;
       align-content: space-between;
       min-height: 100%;
+      position: relative;
+      z-index: 1;
     }
 
     .preview-card {
@@ -437,6 +550,7 @@
     .preview-card p {
       color: rgba(247, 244, 238, 0.82);
       max-width: 30ch;
+      margin-top: 14px;
     }
 
     .mini-cv {
@@ -480,6 +594,30 @@
     .mini-line.mid { width: 62%; }
     .mini-line.long { width: 100%; }
 
+    .preview-highlights {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 18px;
+    }
+
+    .preview-highlight {
+      display: inline-flex;
+      align-items: center;
+      padding: 7px 12px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.14);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      font-size: 0.84rem;
+      color: rgba(247, 244, 238, 0.9);
+    }
+
+    .hero-note-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+    }
+
     .feature-card strong {
       display: block;
       margin-bottom: 8px;
@@ -494,17 +632,40 @@
 
     .feature-strip {
       display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 14px;
       margin-bottom: 18px;
     }
 
     .feature-card {
+      position: relative;
       padding: 18px;
       border-radius: 24px;
       background: rgba(255, 250, 244, 0.84);
       border: 1px solid rgba(49, 40, 27, 0.08);
       box-shadow: 0 16px 38px rgba(50, 38, 18, 0.08);
+      transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 22px 42px rgba(50, 38, 18, 0.12);
+      border-color: rgba(49, 40, 27, 0.16);
+    }
+
+    .feature-card-tag {
+      display: inline-flex;
+      align-items: center;
+      padding: 6px 10px;
+      border-radius: 999px;
+      margin-bottom: 14px;
+      background: rgba(255, 255, 255, 0.76);
+      border: 1px solid rgba(49, 40, 27, 0.08);
+      color: var(--accent);
+      font-size: 0.76rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
     }
 
     .feature-card strong {
@@ -516,6 +677,15 @@
     .feature-card p {
       color: var(--muted);
       font-size: 0.94rem;
+      line-height: 1.65;
+    }
+
+    .feature-card-meta {
+      display: block;
+      margin-top: 12px;
+      color: var(--template-heading);
+      font-size: 0.84rem;
+      font-weight: 600;
     }
 
     .feature-card-action {
@@ -1592,9 +1762,11 @@
 
     @media (max-width: 1100px) {
       .workspace,
-      .hero-grid,
-      .feature-strip,
-      .hero-stats {
+      .hero-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-note-grid {
         grid-template-columns: 1fr;
       }
 
@@ -1630,8 +1802,13 @@
       }
 
       .header-actions button,
-      .hero-actions button {
+      .hero-actions > * {
         flex: 1 1 220px;
+      }
+
+      .hero-action-note {
+        border-radius: 18px;
+        align-items: flex-start;
       }
 
       .preview-shell {
@@ -1644,6 +1821,26 @@
       }
 
       .timeline-item {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .hero {
+        padding: 22px;
+      }
+
+      .hero h1 {
+        max-width: 100%;
+      }
+
+      .hero-actions > * {
+        flex-basis: 100%;
+      }
+
+      .hero-kpis,
+      .hero-workflow,
+      .hero-note-grid {
         grid-template-columns: 1fr;
       }
     }
@@ -3206,10 +3403,10 @@
     <section class="hero panel">
       <div class="eyebrow">CV Studio / Web + App</div>
       <div class="hero-grid">
-        <div>
-          <h1>快速做出可編輯、可儲存、可下載的履歷。</h1>
-          <p>
-            CV Studio 幫使用者把履歷整理成清楚的版面，支援套用模板、即時預覽、Google 登入同步，以及匯出 PDF。打開首頁就能知道這個產品能做什麼，也能立刻開始。
+        <div class="hero-copy">
+          <h1>把履歷、學習歷程與學測分析整理成同一套工作流。</h1>
+          <p class="hero-lead">
+            先編輯履歷、補齊學習歷程，再用學測落點快速比對校系方向。首頁現在會直接告訴你下一步做什麼，也保留無登入就能先開始的彈性。
           </p>
           <div class="hero-actions">
             <button id="startEditingBtn" class="primary" type="button">開始編輯履歷</button>
@@ -3231,31 +3428,66 @@
             </a>
             <button id="startTourBtn" class="soft" type="button">✦ 功能導覽</button>
           </div>
-          <div class="hero-list">
-            <div class="hero-list-item">用模板快速建立履歷，不用從空白頁開始。</div>
-            <div class="hero-list-item">修改內容時右側即時預覽，排版變化一眼看懂。</div>
-            <div class="hero-list-item">登入後可同步雲端，完成後直接下載 PDF 投遞。</div>
+          <div class="hero-action-note">
+            <strong>建議流程</strong>
+            不用先註冊也能編輯本地草稿；需要跨裝置同步時，再用 Google 登入接手就好。
+          </div>
+          <div class="hero-kpis">
+            <div class="hero-kpi">
+              <strong>先做履歷</strong>
+              <span>直接從模板開始，先把可投遞版本做出來。</span>
+            </div>
+            <div class="hero-kpi">
+              <strong>再補歷程</strong>
+              <span>把專題、證照、課程成果整理成學習歷程頁。</span>
+            </div>
+            <div class="hero-kpi">
+              <strong>最後看落點</strong>
+              <span>用校系資料、相近科系與建議方向一起比對。</span>
+            </div>
+          </div>
+          <div class="hero-workflow">
+            <div class="hero-step">
+              <div class="hero-step-badge">Step 1</div>
+              <strong>建立第一版履歷</strong>
+              <span>把姓名、經歷、技能與作品先整理成可預覽的版面。</span>
+            </div>
+            <div class="hero-step">
+              <div class="hero-step-badge">Step 2</div>
+              <strong>補齊申請材料</strong>
+              <span>把學習歷程和成果頁補完，讓內容不只是一份 PDF。</span>
+            </div>
+            <div class="hero-step">
+              <div class="hero-step-badge">Step 3</div>
+              <strong>整理投遞與志願方向</strong>
+              <span>輸出履歷、雲端同步，並用學測落點挑出下一輪要看的校系。</span>
+            </div>
           </div>
           <div class="hero-stats">
             <div class="hero-stat">
               <strong>24 種</strong>
-              <span>可直接套用的履歷模板</span>
+              <span>履歷模板可直接套用</span>
             </div>
             <div class="hero-stat">
-              <strong>即時</strong>
-              <span>編輯後立即更新預覽</span>
+              <strong>即時預覽</strong>
+              <span>改一段內容就能立刻看到排版變化</span>
             </div>
             <div class="hero-stat">
-              <strong>Google</strong>
-              <span>登入後同步你的履歷</span>
+              <strong>Google 同步</strong>
+              <span>登入後可跨裝置接續編輯</span>
             </div>
           </div>
         </div>
         <div class="hero-preview">
           <div class="preview-card">
-            <span class="preview-card-label">Product Preview</span>
-            <h3>一個地方完成履歷整理、排版與匯出</h3>
-            <p>首頁先說清楚功能，再把使用者帶到編輯器，流程更直覺。</p>
+            <span class="preview-card-label">From Draft To Decision</span>
+            <h3>今天就能先完成一版，再慢慢補完整套資料。</h3>
+            <p>不是只能做履歷，也不是只能看落點，而是把學生申請和求職準備整合成同一套入口。</p>
+            <div class="preview-highlights">
+              <span class="preview-highlight">履歷編輯</span>
+              <span class="preview-highlight">學習歷程</span>
+              <span class="preview-highlight">學測落點</span>
+            </div>
             <div class="mini-cv">
               <div class="mini-cv-head">
                 <div class="mini-avatar">CW</div>
@@ -3270,13 +3502,19 @@
             </div>
           </div>
           <div class="preview-flow">
-            <div class="hero-note">
-              <strong>適合誰</strong>
-              想快速整理求職履歷、學生申請資料，或需要一份能立刻匯出 PDF 的個人頁面。
+            <div class="hero-note-grid">
+              <div class="hero-note">
+                <strong>適合誰</strong>
+                要快速整理求職履歷、備審資料，或正在做學測後校系比較的人。
+              </div>
+              <div class="hero-note">
+                <strong>你會得到什麼</strong>
+                一份可下載的履歷、一套可延伸的學習歷程，以及更好選的校系清單。
+              </div>
             </div>
             <div class="hero-note">
-              <strong>你會得到什麼</strong>
-              一份版面整齊、可切換模板、可儲存到雲端的履歷成品。
+              <strong>什麼時候該先做哪一塊</strong>
+              如果你現在最急的是投履歷，先進履歷編輯器；如果你在整理申請資料，就先看學習歷程；如果你要排志願，直接切到學測落點頁。
             </div>
           </div>
         </div>
@@ -3285,23 +3523,31 @@
 
     <section class="feature-strip">
       <article class="feature-card">
+        <span class="feature-card-tag">Start Here</span>
         <strong>CV 履歷編輯器</strong>
-        <p>即時編輯、切換模板，填完就能直接下載 PDF。</p>
+        <p>先把可以投遞的版本做出來，模板、版面和 PDF 匯出都已經接好。</p>
+        <span class="feature-card-meta">適合現在就要開始投履歷的人</span>
         <button class="feature-card-action" data-guide-tab="cv" type="button">前往編輯 →</button>
       </article>
       <article class="feature-card">
+        <span class="feature-card-tag">Portfolio</span>
         <strong>學習歷程作品集</strong>
-        <p>記錄課程、專案與成果，自動產生可分享的學習歷程頁面。</p>
+        <p>把課程、專題、證照和成果拆開整理，之後做備審時會快很多。</p>
+        <span class="feature-card-meta">適合要整理申請資料與專案成果的人</span>
         <button class="feature-card-action" data-guide-tab="portfolio" type="button">前往學習歷程 →</button>
       </article>
       <article class="feature-card">
+        <span class="feature-card-tag">Decision</span>
         <strong>下載 PDF</strong>
-        <p>一鍵將履歷轉成排版精確的 PDF，直接投遞或列印。</p>
+        <p>完成內容後直接輸出 PDF，避免臨時轉檔造成版面跑掉。</p>
+        <span class="feature-card-meta">適合交件前最後整理與匯出</span>
         <button class="feature-card-action" data-guide-tab="cv" data-guide-action="download" type="button">前往下載 →</button>
       </article>
       <article class="feature-card">
+        <span class="feature-card-tag">Sync</span>
         <strong>Google 雲端同步</strong>
-        <p>登入後自動儲存，換裝置也能繼續編輯，不怕資料遺失。</p>
+        <p>準備好了再登入同步，換手機或電腦都能繼續接著做。</p>
+        <span class="feature-card-meta">適合跨裝置編輯與長期維護草稿</span>
         <button class="feature-card-action" data-guide-action="login" type="button">如何登入 →</button>
       </article>
     </section>
@@ -8997,6 +9243,40 @@
       let UNIVERSITY_TW_UNIVERSITIES = window.CV_UNIVERSITY_TW_DATA?.universities || {};
       let ALL_UNIVERSITIES = [];
 
+      // Cache GSAT-derived lookups so filter changes don't keep rebuilding the same lists.
+      const GSAT_RUNTIME_CACHE = {
+        tierUniversityLists: new Map(),
+        universityDepartmentLists: new Map(),
+        departmentCoverage: new Map(),
+        departmentProfile: new Map(),
+        normalizedDepartmentLabels: new Map(),
+        departmentTokens: new Map(),
+        similarSuggestions: new Map(),
+        filteredDeptRecords: new Map(),
+        deptRecordsByTrack: { science: [], social: [] },
+        deptRecordsByTrackAndUniversity: { science: new Map(), social: new Map() },
+        deptDepartmentNamesByTrack: { science: new Set(), social: new Set() },
+        deptExactMatchByTrack: { science: new Set(), social: new Set() },
+      };
+
+      function resetUniversityTwDerivedCaches() {
+        GSAT_RUNTIME_CACHE.tierUniversityLists.clear();
+        GSAT_RUNTIME_CACHE.universityDepartmentLists.clear();
+        GSAT_RUNTIME_CACHE.departmentCoverage.clear();
+        GSAT_RUNTIME_CACHE.departmentProfile.clear();
+        GSAT_RUNTIME_CACHE.similarSuggestions.clear();
+        GSAT_RUNTIME_CACHE.filteredDeptRecords.clear();
+      }
+
+      function resetDeptRecordDerivedCaches() {
+        GSAT_RUNTIME_CACHE.filteredDeptRecords.clear();
+        GSAT_RUNTIME_CACHE.similarSuggestions.clear();
+        GSAT_RUNTIME_CACHE.deptRecordsByTrack = { science: [], social: [] };
+        GSAT_RUNTIME_CACHE.deptRecordsByTrackAndUniversity = { science: new Map(), social: new Map() };
+        GSAT_RUNTIME_CACHE.deptDepartmentNamesByTrack = { science: new Set(), social: new Set() };
+        GSAT_RUNTIME_CACHE.deptExactMatchByTrack = { science: new Set(), social: new Set() };
+      }
+
       const TOP_UNIVERSITIES = [
         "國立臺灣大學", "國立清華大學", "國立陽明交通大學", "國立成功大學", "國立政治大學",
       ];
@@ -9122,6 +9402,7 @@
           };
           return acc;
         }, {});
+        resetUniversityTwDerivedCaches();
       }
 
       refreshUniversityIndexes();
@@ -9749,6 +10030,26 @@
         : [];
       const DEPTS = mergeDeptRecords(BASE_DEPTS, EXTERNAL_GSAT_DEPTS);
 
+      function buildDeptRecordIndexes(records) {
+        resetDeptRecordDerivedCaches();
+        records.forEach((record) => {
+          if (!record?.t || !record?.u || !record?.d) return;
+          const avgC = Array.isArray(record.h) && record.h.length
+            ? +(record.h.reduce((sum, value) => sum + value, 0) / record.h.length).toFixed(1)
+            : 0;
+          const enrichedRecord = { ...record, avgC };
+          GSAT_RUNTIME_CACHE.deptRecordsByTrack[record.t].push(enrichedRecord);
+          GSAT_RUNTIME_CACHE.deptDepartmentNamesByTrack[record.t].add(record.d);
+          GSAT_RUNTIME_CACHE.deptExactMatchByTrack[record.t].add(`${record.u}::${record.d}`);
+          if (!GSAT_RUNTIME_CACHE.deptRecordsByTrackAndUniversity[record.t].has(record.u)) {
+            GSAT_RUNTIME_CACHE.deptRecordsByTrackAndUniversity[record.t].set(record.u, []);
+          }
+          GSAT_RUNTIME_CACHE.deptRecordsByTrackAndUniversity[record.t].get(record.u).push(enrichedRecord);
+        });
+      }
+
+      buildDeptRecordIndexes(DEPTS);
+
       /* ── Track toggle ─────────────────────────────────────────── */
       let selectedTrack = "science";
       let selectedTierId = "all";
@@ -10030,6 +10331,9 @@
       }
 
       function getOfficialDepartments(universityName) {
+        if (GSAT_RUNTIME_CACHE.universityDepartmentLists.has(universityName)) {
+          return GSAT_RUNTIME_CACHE.universityDepartmentLists.get(universityName);
+        }
         const set = new Set(OFFICIAL_DEPARTMENTS_BY_UNIVERSITY[universityName] || []);
         const schoolData = getUniversityTwSchoolData(universityName);
         ["uac", "caac", "star", "female", "register"].forEach((sectionName) => {
@@ -10039,18 +10343,25 @@
             if (departmentName) set.add(departmentName);
           });
         });
-        return [...set].sort((a, b) => a.localeCompare(b, "zh-Hant"));
+        const departments = [...set].sort((a, b) => a.localeCompare(b, "zh-Hant"));
+        GSAT_RUNTIME_CACHE.universityDepartmentLists.set(universityName, departments);
+        return departments;
       }
 
       function getDepartmentCoverage(universityName) {
+        if (GSAT_RUNTIME_CACHE.departmentCoverage.has(universityName)) {
+          return GSAT_RUNTIME_CACHE.departmentCoverage.get(universityName);
+        }
         const officialSet = new Set(OFFICIAL_DEPARTMENTS_BY_UNIVERSITY[universityName] || []);
         const mergedDepartments = getOfficialDepartments(universityName);
         const twSupplement = mergedDepartments.filter((departmentName) => !officialSet.has(departmentName)).length;
-        return {
+        const coverage = {
           total: mergedDepartments.length,
           official: officialSet.size,
           twSupplement,
         };
+        GSAT_RUNTIME_CACHE.departmentCoverage.set(universityName, coverage);
+        return coverage;
       }
 
       function updateDepartmentHint() {
@@ -10090,15 +10401,21 @@
       }
 
       function getUniversityTwDepartmentProfile(universityName, departmentName) {
+        const cacheKey = `${universityName}::${departmentName}`;
+        if (GSAT_RUNTIME_CACHE.departmentProfile.has(cacheKey)) {
+          return GSAT_RUNTIME_CACHE.departmentProfile.get(cacheKey);
+        }
         const schoolData = getUniversityTwSchoolData(universityName);
         if (!schoolData || !departmentName || departmentName === "all") return null;
-        return {
+        const profile = {
           uac: schoolData?.uac?.departments?.[departmentName] || null,
           caac: schoolData?.caac?.departments?.[departmentName] || null,
           star: schoolData?.star?.departments?.[departmentName] || null,
           female: schoolData?.female?.departments?.[departmentName] || null,
           register: schoolData?.register?.departments?.[departmentName] || null,
         };
+        GSAT_RUNTIME_CACHE.departmentProfile.set(cacheKey, profile);
+        return profile;
       }
 
       const DEPARTMENT_SIMILARITY_GROUPS = [
@@ -10115,19 +10432,27 @@
         { key: "傳播", keywords: ["傳播", "新聞", "廣告", "公關", "媒體", "電影"] },
         { key: "設計", keywords: ["設計", "視覺", "多媒體", "數位內容", "工業設計", "商業設計"] },
         { key: "教育", keywords: ["教育", "師資", "幼教", "特教", "諮商", "輔導"] },
-        { key: "人文", keywords: ["中文", "歷史", "哲學", "台文", "文化", "社會", "社工", "心理"] },
+        { key: "人文", keywords: ["中文", "歷史", "哲學", "台文", "文化", "社會", "社工", "心理", "人類", "考古", "地理"] },
         { key: "觀光", keywords: ["觀光", "餐旅", "休閒", "旅遊", "餐飲", "旅館"] }
       ];
 
       function normalizeDepartmentLabel(name) {
-        return cleanGsatText(name)
+        if (GSAT_RUNTIME_CACHE.normalizedDepartmentLabels.has(name)) {
+          return GSAT_RUNTIME_CACHE.normalizedDepartmentLabels.get(name);
+        }
+        const normalized = cleanGsatText(name)
           .replace(/學士學位學程|學位學程|學士班|進修學士班|原住民專班|雙主修|輔系/g, "")
           .replace(/學系|學程|系|組/g, "")
           .replace(/[()（）]/g, "")
           .trim();
+        GSAT_RUNTIME_CACHE.normalizedDepartmentLabels.set(name, normalized);
+        return normalized;
       }
 
       function getDepartmentTokens(name) {
+        if (GSAT_RUNTIME_CACHE.departmentTokens.has(name)) {
+          return GSAT_RUNTIME_CACHE.departmentTokens.get(name);
+        }
         const normalized = normalizeDepartmentLabel(name);
         if (!normalized) return [];
         const tokens = new Set();
@@ -10141,7 +10466,9 @@
             tokens.add(normalized.slice(index, index + 2));
           }
         }
-        return [...tokens];
+        const tokenList = [...tokens];
+        GSAT_RUNTIME_CACHE.departmentTokens.set(name, tokenList);
+        return tokenList;
       }
 
       function scoreDepartmentSimilarity(sourceName, candidateName) {
@@ -10182,28 +10509,36 @@
 
       function getSimilarDepartmentSuggestions(universityName, departmentName, limit = 4) {
         if (!universityName || universityName === "all" || !departmentName || departmentName === "all") return [];
-        return getOfficialDepartments(universityName)
+        const cacheKey = `${selectedTrack}::${universityName}::${departmentName}::${limit}`;
+        if (GSAT_RUNTIME_CACHE.similarSuggestions.has(cacheKey)) {
+          return GSAT_RUNTIME_CACHE.similarSuggestions.get(cacheKey);
+        }
+        const suggestions = getOfficialDepartments(universityName)
           .filter((name) => name && name !== departmentName)
           .map((name) => {
             const similarity = scoreDepartmentSimilarity(departmentName, name);
+            const hasCutline = hasMatchingDeptRecord(selectedTrack, universityName, name);
             const { profile, signals } = getDepartmentSuggestionSignals(universityName, name);
             const profileScore = [profile?.uac, profile?.caac, profile?.star, profile?.register, profile?.female].filter(Boolean).length;
-            const cutoffScore = hasMatchingDeptRecord(selectedTrack, universityName, name) ? 3 : 0;
             return {
               name,
               similarity,
               profile,
               signals,
-              score: similarity + profileScore + cutoffScore,
+              hasCutline,
+              score: similarity * 10 + (hasCutline ? 12 : 0) + profileScore * 2,
             };
           })
-          .filter((item) => item.score > 0)
+          .filter((item) => item.similarity >= 4)
           .sort((a, b) => (
             b.score - a.score ||
+            b.similarity - a.similarity ||
             b.signals.length - a.signals.length ||
             a.name.localeCompare(b.name, "zh-Hant")
           ))
           .slice(0, limit);
+        GSAT_RUNTIME_CACHE.similarSuggestions.set(cacheKey, suggestions);
+        return suggestions;
       }
 
       function buildGsatActionButtons(actions = []) {
@@ -10352,10 +10687,14 @@
         if (selectedUniversity === "all" || selectedDepartment === "all") return "";
         const suggestions = getSimilarDepartmentSuggestions(selectedUniversity, selectedDepartment);
         if (!suggestions.length) return "";
+        const currentHasCutline = hasMatchingDeptRecord(selectedTrack, selectedUniversity, selectedDepartment);
+        const caption = currentHasCutline
+          ? `如果你想比較 ${escapeGsatHtml(selectedDepartment)} 在同校內的替代選項，可以先看這幾個常一起評估、而且資料較完整的科系。`
+          : `如果 ${escapeGsatHtml(selectedDepartment)} 暫時沒有歷年切線，先看這幾個同校常一起比較、而且資料較完整的科系。`;
         return `
           <div class="gsat-tier-section">
             <div class="gsat-section-title">同校相近科系</div>
-            <div class="gsat-tier-caption">如果 ${escapeGsatHtml(selectedDepartment)} 暫時沒有歷年切線，先看這幾個同校常一起比較、而且資料較完整的科系。</div>
+            <div class="gsat-tier-caption">${caption}</div>
             <div class="gsat-suggestion-grid">
               ${suggestions.map((item) => `
                 <div class="gsat-suggestion-item">
@@ -10385,10 +10724,17 @@
       }
 
       function getUniversitiesForTier(tierId) {
-        if (tierId === "all") {
-          return Object.keys(UNIVERSITY_META).sort((a, b) => a.localeCompare(b, "zh-Hant"));
+        if (GSAT_RUNTIME_CACHE.tierUniversityLists.has(tierId)) {
+          return GSAT_RUNTIME_CACHE.tierUniversityLists.get(tierId);
         }
-        return [...(getTierMeta(tierId)?.schools || [])];
+        let universities;
+        if (tierId === "all") {
+          universities = Object.keys(UNIVERSITY_META).sort((a, b) => a.localeCompare(b, "zh-Hant"));
+        } else {
+          universities = [...(getTierMeta(tierId)?.schools || [])];
+        }
+        GSAT_RUNTIME_CACHE.tierUniversityLists.set(tierId, universities);
+        return universities;
       }
 
       function populateUniversitySelect() {
@@ -10448,24 +10794,29 @@
         };
       }
 
-      function schoolMatchesFilter(schoolName) {
-        if (selectedUniversity !== "all") return schoolName === selectedUniversity;
-        if (selectedTierId !== "all") return getUniversityMeta(schoolName)?.tierId === selectedTierId;
-        return true;
-      }
-
-      function departmentMatchesFilter(departmentName) {
-        if (selectedDepartment !== "all") return departmentName === selectedDepartment;
-        return true;
-      }
-
       function hasMatchingDeptRecord(track, universityName, departmentName) {
         if (!departmentName || departmentName === "all") return true;
-        return DEPTS.some((department) => (
-          department.t === track &&
-          (universityName === "all" || department.u === universityName) &&
-          department.d === departmentName
-        ));
+        if (universityName === "all") {
+          return GSAT_RUNTIME_CACHE.deptDepartmentNamesByTrack[track].has(departmentName);
+        }
+        return GSAT_RUNTIME_CACHE.deptExactMatchByTrack[track].has(`${universityName}::${departmentName}`);
+      }
+
+      function getDeptRecordsForAnalysis(track, tierId, universityName, departmentName) {
+        const cacheKey = `${track}::${tierId}::${universityName}::${departmentName}`;
+        if (GSAT_RUNTIME_CACHE.filteredDeptRecords.has(cacheKey)) {
+          return GSAT_RUNTIME_CACHE.filteredDeptRecords.get(cacheKey);
+        }
+        const baseRecords = universityName === "all"
+          ? GSAT_RUNTIME_CACHE.deptRecordsByTrack[track]
+          : (GSAT_RUNTIME_CACHE.deptRecordsByTrackAndUniversity[track].get(universityName) || []);
+        const filteredRecords = baseRecords.filter((record) => {
+          if (universityName === "all" && tierId !== "all" && getUniversityMeta(record.u)?.tierId !== tierId) return false;
+          if (departmentName !== "all" && record.d !== departmentName) return false;
+          return true;
+        });
+        GSAT_RUNTIME_CACHE.filteredDeptRecords.set(cacheKey, filteredRecords);
+        return filteredRecords;
       }
 
       function getGsatDataSourceLabel() {
@@ -10537,14 +10888,14 @@
         return `和歷年均線差 ${Math.abs(result.gap)} 分，建議搭配備審與其他校系一起布局。`;
       }
 
-      function buildResultOverviewHtml(results) {
+      function buildResultOverviewHtml(tierBuckets) {
         const picks = [
           { tier: "dream", kicker: "先看衝刺", button: "只看這個科系" },
           { tier: "safety", kicker: "主力觀察", button: "改看這個科系" },
           { tier: "fallback", kicker: "穩健保留", button: "收進保底帶" },
         ]
           .map((item) => {
-            const result = results.find((entry) => entry.tier === item.tier);
+            const result = (tierBuckets[item.tier] || []).find((entry) => !entry.fails.length);
             return result ? { ...item, result } : null;
           })
           .filter(Boolean);
@@ -10881,13 +11232,10 @@
           return;
         }
 
-        const results = DEPTS
-          .filter(dep => dep.t === selectedTrack)
-          .filter(dep => schoolMatchesFilter(dep.u))
-          .filter(dep => departmentMatchesFilter(dep.d))
+        const results = getDeptRecordsForAnalysis(selectedTrack, selectedTierId, selectedUniversity, selectedDepartment)
           .map(dep => {
             const userW  = weighted(scores, dep.w);
-            const avgC   = dep.h.reduce((a, b) => a + b, 0) / dep.h.length;
+            const avgC   = dep.avgC;
             const gap    = +(userW - avgC).toFixed(1);
             const ratio  = userW / avgC;
             /* 3-tier: 夢幻 = below cutoff, 安全 = up to 25% above, 保底 = 25%+ above */
@@ -10944,8 +11292,13 @@
             <div class="gsat-sort-note">排序說明：夢幻志願會先看最接近門檻的校系，安全與保底則優先顯示差距較小、比較貼近實際填志願順序的選項。</div>
           </div>`;
 
+        const tierBuckets = results.reduce((acc, result) => {
+          acc[result.tier].push(result);
+          return acc;
+        }, { dream: [], safety: [], fallback: [] });
+
         const tierHtml = ["dream","safety","fallback"].map(tier => {
-          const list = results.filter(r => r.tier === tier);
+          const list = tierBuckets[tier];
           if (!list.length) return "";
           const cfg = TIER_CFG[tier];
           const cards = list.map(r => {
@@ -10973,7 +11326,7 @@
           </div>`;
         }).join("");
 
-        const overviewHtml = results.length ? buildResultOverviewHtml(results) : "";
+        const overviewHtml = results.length ? buildResultOverviewHtml(tierBuckets) : "";
         const emptyStateHtml = results.length ? "" : buildEmptyStateHtml();
         const universityTwInsightHtml = buildUniversityTwInsightHtml();
         const departmentSuggestionHtml = buildDepartmentSuggestionHtml();
