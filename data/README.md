@@ -54,6 +54,8 @@ npm run university-tw:sql
 - `data/app/*`：給前端直接載入，讓學測分析頁能顯示校系摘要
 - `data/sql/*`：給 Supabase / PostgreSQL 匯入，建立正式資料表內容
 
+目前 `SQL seed` 也會額外產出 `public.university_tw_caac_scores` 所需資料，把 `個人申請` 校系頁中的年度分數整理成逐年列，方便資料庫直接查詢近年結果。
+
 目前實際抓取量：
 
 - `uacSchools`: 60

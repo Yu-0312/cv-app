@@ -210,11 +210,14 @@ SQL 結構會建立：
 - `public.university_tw_universities`
 - `public.university_tw_uac_departments`
 - `public.university_tw_caac_departments`
+- `public.university_tw_caac_scores`
 - `public.university_tw_star_departments`
 - `public.university_tw_gender_departments`
 - `public.university_tw_registration_departments`
 
 這樣你後續不只前端可直接查，也能在 Supabase 內做搜尋、篩選、報表或 API。
+
+其中 `public.university_tw_caac_scores` 會把 `個人申請` 校系頁上可拆出的年度資料正規化成一列一年，方便直接用 `school + department + admission_year` 查近年的篩選標準與分數欄位。
 
 ### 104 落點資料匯入
 

@@ -25,10 +25,15 @@
     window.__loadHtml2pdfFallback = function __loadHtml2pdfFallback() {
       injectScriptOnce("https://unpkg.com/html2pdf.js@0.10.1/dist/html2pdf.bundle.min.js");
     };
+
+    window.__loadPdfJsFallback = function __loadPdfJsFallback() {
+      injectScriptOnce("https://unpkg.com/pdfjs-dist@3.11.174/build/pdf.min.js");
+    };
   </script>
   <script src="config.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" onerror="window.__loadSupabaseFallback()"></script>
   <script src="https://cdn.jsdelivr.net/npm/html2pdf.js@0.10.1/dist/html2pdf.bundle.min.js" onerror="window.__loadHtml2pdfFallback()"></script>
+  <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@3.11.174/build/pdf.min.js" onerror="window.__loadPdfJsFallback()"></script>
   <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
   <style>
     :root {
@@ -217,6 +222,25 @@
       justify-content: flex-end;
       align-items: center;
       gap: 10px;
+    }
+
+    .language-toggle {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 9px 12px;
+      background: rgba(255, 255, 255, 0.76);
+      border-color: rgba(49, 40, 27, 0.14);
+      color: var(--ink);
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0;
+      box-shadow: 0 10px 24px rgba(31, 36, 48, 0.06);
+    }
+
+    .language-toggle-divider {
+      color: var(--muted);
+      font-weight: 500;
     }
 
     .google-btn {
@@ -3379,6 +3403,11 @@
         </div>
       </div>
       <div class="header-actions">
+        <button id="languageToggleBtn" class="language-toggle" type="button" data-language-toggle data-i18n-skip aria-label="Switch language">
+          <span class="language-toggle-current">中文</span>
+          <span class="language-toggle-divider">/</span>
+          <span class="language-toggle-next">EN</span>
+        </button>
         <div class="status-pill" id="headerAuthStatus"><strong>尚未登入</strong> · 可先編輯草稿</div>
         <button id="headerLogoutBtn" class="ghost" type="button" hidden>登出</button>
         <a id="headerCanvaBtn" class="canva-btn button-link" href="https://www.canva.com/" data-canva-trigger target="_blank" rel="noreferrer noopener">
@@ -3673,13 +3702,16 @@
             <!-- Export / Import + Clear -->
             <div class="editor-tool" style="background:rgba(255,255,255,0.6);border:1px solid var(--line);border-radius:14px;padding:12px 14px;">
               <strong style="font-size:0.82rem;">資料管理</strong>
-              <p style="font-size:0.75rem;color:var(--muted);margin:4px 0 8px;">備份 CV 資料為 JSON，或從備份還原</p>
+              <p style="font-size:0.75rem;color:var(--muted);margin:4px 0 8px;">備份 CV 資料為 JSON，或匯入 JSON / PDF 履歷進行編輯</p>
               <div class="tool-row" style="gap:6px;flex-wrap:wrap;">
                 <button id="exportJsonBtn" class="soft" type="button" style="padding:5px 12px;font-size:0.78rem;">匯出 JSON</button>
                 <button id="importJsonBtn" class="soft" type="button" style="padding:5px 12px;font-size:0.78rem;">匯入 JSON</button>
                 <input id="importJsonInput" type="file" accept=".json" hidden />
+                <button id="importPdfBtn" class="soft" type="button" style="padding:5px 12px;font-size:0.78rem;">匯入 PDF 履歷</button>
+                <input id="importPdfInput" type="file" accept=".pdf,application/pdf" hidden />
                 <button id="clearAllBtn" class="ghost" type="button" style="padding:5px 12px;font-size:0.78rem;color:var(--danger);border-color:rgba(167,59,51,0.3);">清除資料</button>
               </div>
+              <div id="pdfImportStatus" style="margin-top:8px;font-size:0.74rem;color:var(--muted);line-height:1.5;">可上傳現有 PDF 履歷，系統會自動抽取文字並回填到可編輯欄位。</div>
             </div>
 
             <!-- QR Code -->
@@ -4544,6 +4576,865 @@
 
   <script>
     (() => {
+      const LANGUAGE_KEY = "cv-studio-language-v1";
+      const TEXT_ATTRS = ["placeholder", "title", "aria-label", "data-ph"];
+      const UI_EN = Object.freeze({
+        "功能導覽": "Feature tour",
+        "步驟 1 / 8": "Step 1 / 8",
+        "跳過導覽": "Skip tour",
+        "← 上一步": "← Previous",
+        "下一步 →": "Next →",
+        "完成 ✓": "Done ✓",
+        "CV Studio": "CV Studio",
+        "用漂亮版型把履歷整理成可登入、可儲存、可下載的作品頁。": "Turn your CV into a polished page you can sign into, save, and download.",
+        "尚未登入": "Not signed in",
+        "可先編輯草稿": "Draft editing available",
+        "登出": "Sign out",
+        "登出中...": "Signing out...",
+        "正在切回本機草稿": "Returning to local draft",
+        "連接 Canva": "Connect Canva",
+        "Google 登入": "Sign in with Google",
+        "Google 登入同步": "Google sync",
+        "主畫面": "Home",
+        "CV 履歷": "CV Resume",
+        "學習歷程": "Learning Portfolio",
+        "✦ 求職顧問": "✦ Career Advisor",
+        "✦ 學測落點": "✦ GSAT Placement",
+        "CV Studio / Web + App": "CV Studio / Web + App",
+        "把履歷、學習歷程與學測分析整理成同一套工作流。": "Bring resumes, learning portfolios, and GSAT planning into one workflow.",
+        "先編輯履歷、補齊學習歷程，再用學測落點快速比對校系方向。首頁現在會直接告訴你下一步做什麼，也保留無登入就能先開始的彈性。": "Edit your resume, complete your learning portfolio, then compare school and department directions with GSAT placement. The home screen points you to the next step while still letting you start without signing in.",
+        "開始編輯履歷": "Start Editing Resume",
+        "查看學習歷程": "View Learning Portfolio",
+        "✦ 功能導覽": "✦ Feature Tour",
+        "建議流程": "Suggested Flow",
+        "不用先註冊也能編輯本地草稿；需要跨裝置同步時，再用 Google 登入接手就好。": "You can edit a local draft first. Sign in with Google only when you want cross-device sync.",
+        "先做履歷": "Start With Resume",
+        "直接從模板開始，先把可投遞版本做出來。": "Start from a template and create a version ready to send.",
+        "再補歷程": "Then Add Portfolio",
+        "把專題、證照、課程成果整理成學習歷程頁。": "Organize projects, certificates, and coursework into portfolio pages.",
+        "最後看落點": "Finish With Placement",
+        "用校系資料、相近科系與建議方向一起比對。": "Compare departments, similar programs, and suggested directions together.",
+        "建立第一版履歷": "Build Your First Resume",
+        "把姓名、經歷、技能與作品先整理成可預覽的版面。": "Put your name, experience, skills, and work into a preview-ready layout.",
+        "補齊申請材料": "Complete Application Materials",
+        "把學習歷程和成果頁補完，讓內容不只是一份 PDF。": "Fill in portfolio and outcome pages so your materials go beyond a PDF.",
+        "整理投遞與志願方向": "Plan Applications and Preferences",
+        "輸出履歷、雲端同步，並用學測落點挑出下一輪要看的校系。": "Export your resume, sync it, and use GSAT placement to decide which schools to inspect next.",
+        "24 種": "24 Styles",
+        "履歷模板可直接套用": "Resume templates ready to use",
+        "即時預覽": "Live Preview",
+        "改一段內容就能立刻看到排版變化": "See layout changes as soon as you edit",
+        "Google 同步": "Google Sync",
+        "登入後可跨裝置接續編輯": "Continue editing across devices after signing in",
+        "今天就能先完成一版，再慢慢補完整套資料。": "Finish a first version today, then keep filling out the full set.",
+        "不是只能做履歷，也不是只能看落點，而是把學生申請和求職準備整合成同一套入口。": "This is not just a resume builder or a placement checker. It is one entry point for applications and career preparation.",
+        "履歷編輯": "Resume Editing",
+        "適合誰": "Who It Helps",
+        "要快速整理求職履歷、備審資料，或正在做學測後校系比較的人。": "People preparing resumes, application materials, or school comparisons after GSAT.",
+        "你會得到什麼": "What You Get",
+        "一份可下載的履歷、一套可延伸的學習歷程，以及更好選的校系清單。": "A downloadable resume, an expandable portfolio, and a clearer department shortlist.",
+        "什麼時候該先做哪一塊": "Where To Start",
+        "如果你現在最急的是投履歷，先進履歷編輯器；如果你在整理申請資料，就先看學習歷程；如果你要排志願，直接切到學測落點頁。": "If you need to apply for jobs, start with the resume editor. If you are preparing application files, start with the portfolio. If you are ranking preferences, go to GSAT placement.",
+        "CV 履歷編輯器": "CV Resume Editor",
+        "先把可以投遞的版本做出來，模板、版面和 PDF 匯出都已經接好。": "Create a sendable version first. Templates, layout, and PDF export are ready.",
+        "適合現在就要開始投履歷的人": "For anyone ready to send resumes now",
+        "前往編輯 →": "Go Edit →",
+        "學習歷程作品集": "Learning Portfolio",
+        "把課程、專題、證照和成果拆開整理，之後做備審時會快很多。": "Organize courses, projects, certificates, and outcomes so application prep moves faster later.",
+        "適合要整理申請資料與專案成果的人": "For application materials and project outcomes",
+        "前往學習歷程 →": "Go To Portfolio →",
+        "下載 PDF": "Download PDF",
+        "完成內容後直接輸出 PDF，避免臨時轉檔造成版面跑掉。": "Export directly to PDF after writing so last-minute conversion does not break the layout.",
+        "適合交件前最後整理與匯出": "For final checks and export",
+        "前往下載 →": "Go Download →",
+        "Google 雲端同步": "Google Cloud Sync",
+        "準備好了再登入同步，換手機或電腦都能繼續接著做。": "Sign in when ready, then continue on another phone or computer.",
+        "適合跨裝置編輯與長期維護草稿": "For cross-device editing and long-term drafts",
+        "如何登入 →": "How To Sign In →",
+        "儲存 CV": "Save CV",
+        "預覽 PDF": "Preview PDF",
+        "列印": "Print",
+        "復原 (Ctrl+Z)": "Undo (Ctrl+Z)",
+        "↩ 復原": "↩ Undo",
+        "重做 (Ctrl+Y)": "Redo (Ctrl+Y)",
+        "↪ 重做": "↪ Redo",
+        "安裝 APP": "Install App",
+        "本機草稿": "Local draft",
+        "尚未同步": "Not synced",
+        "依職位推薦模板": "Recommend Templates By Role",
+        "💻 軟體工程師": "💻 Software Engineer",
+        "🖥 前端 / 全端": "🖥 Frontend / Full-stack",
+        "📊 資料科學": "📊 Data Science",
+        "🎨 UX / 產品設計": "🎨 UX / Product Design",
+        "🗂 產品經理": "🗂 Product Manager",
+        "📣 行銷 / 品牌": "📣 Marketing / Brand",
+        "🔬 學術研究": "🔬 Academic Research",
+        "📚 教育 / 老師": "📚 Education / Teacher",
+        "🏥 醫療 / 護理": "🏥 Healthcare / Nursing",
+        "💰 金融 / 財務": "💰 Finance",
+        "⚖ 法律 / 顧問": "⚖ Legal / Consulting",
+        "🏛 建築 / 工藝": "🏛 Architecture / Craft",
+        "🎭 藝術 / 創意": "🎭 Arts / Creative",
+        "👥 人資 / 管理": "👥 HR / Management",
+        "模板選擇（點選即時套用）": "Template Selection (Click To Apply)",
+        "工具列": "Tools",
+        "字數": "Words",
+        "字數統計": "Word Count",
+        "總字數": "Total Words",
+        "字": "words",
+        "字元數": "Characters",
+        "自定義強調色": "Custom Accent Color",
+        "磚紅": "Brick Red",
+        "深藍": "Deep Blue",
+        "墨綠": "Ink Green",
+        "暗紫": "Deep Purple",
+        "焦橙": "Burnt Orange",
+        "靛青": "Indigo",
+        "酒紅": "Wine Red",
+        "黑": "Black",
+        "自訂顏色": "Custom Color",
+        "還原預設色": "Reset Default Color",
+        "版本快照": "Version Snapshots",
+        "針對不同職位保留不同版本（最多 5 個）": "Keep different versions for different roles (up to 5).",
+        "快照名稱…": "Snapshot name...",
+        "儲存快照": "Save Snapshot",
+        "尚無快照。": "No snapshots yet.",
+        "資料管理": "Data Management",
+        "備份 CV 資料為 JSON，或匯入 JSON / PDF 履歷進行編輯": "Back up CV data as JSON, or import JSON / PDF resumes for editing.",
+        "匯出 JSON": "Export JSON",
+        "匯入 JSON": "Import JSON",
+        "匯入 PDF 履歷": "Import PDF Resume",
+        "清除資料": "Clear Data",
+        "可上傳現有 PDF 履歷，系統會自動抽取文字並回填到可編輯欄位。": "Upload an existing PDF resume and the system will extract text into editable fields.",
+        "QR Code": "QR Code",
+        "掃描後開啟作品集或 LinkedIn（需先填寫網站欄位）": "Scan to open your portfolio or LinkedIn (fill in the website field first).",
+        "請先填寫網站 / 作品集網址。": "Enter a website / portfolio URL first.",
+        "下載 QR Code": "Download QR Code",
+        "編輯器": "Editor",
+        "左邊輸入，右邊會即時看到 CV 排版。": "Type on the left and preview the CV layout on the right.",
+        "雲端與登入": "Cloud and Sign-in",
+        "正式上線時，每位使用者使用自己的 Google 帳號登入，且僅能讀寫該帳號的 CV 資料。": "In production, each user signs in with their own Google account and can only read or write their own CV data.",
+        "Supabase 設定": "Supabase Settings",
+        "貼上 anon public key": "Paste anon public key",
+        "預設模板": "Default Template",
+        "套用設定": "Apply Settings",
+        "重新讀取雲端資料": "Reload Cloud Data",
+        "這個頁面使用 Supabase 的 Google OAuth redirect flow，不使用已淘汰的 `platform.js` / `g-signin2`。請在 Supabase Authentication 內啟用 Google Provider，並把 Site URL 與 redirect URL 指向目前網站。": "This page uses Supabase Google OAuth redirect flow and does not use the deprecated `platform.js` / `g-signin2`. Enable Google Provider in Supabase Authentication and point the Site URL and redirect URL to the current site.",
+        "登入偵錯資訊": "Sign-in Debug Info",
+        "Google 登入影響評估": "Google Sign-in Impact Check",
+        "Google 舊版 Sign-In 程式庫已淘汰，且 FedCM 已成為必要方向。這個專案目前走 Supabase OAuth redirect，不直接依賴舊版 Google Sign-In JavaScript client。": "Legacy Google Sign-In libraries are deprecated and FedCM is now the required direction. This project currently uses Supabase OAuth redirect and does not directly depend on the legacy Google Sign-In JavaScript client.",
+        "工作模式": "Workflow Mode",
+        "你可以先選模板再填資料，或先填資料再把同一份內容套到其他模板。": "Choose a template before writing, or write first and apply the same content to other templates later.",
+        "先選模板再編輯": "Template First",
+        "先決定版型，接著一邊填資料一邊微調版面。": "Choose a layout first, then write and refine the layout as you go.",
+        "先填資料再套版": "Content First",
+        "先完成內容，再把同一份資料一鍵套用到其他模板。": "Finish the content first, then apply it to other templates with one click.",
+        "模板": "Templates",
+        "目前可先挑一個模板開始編輯；之後切到別的模板時，已輸入資料會自動重新排進新模板。": "Pick a template to start. When you switch later, your existing content will flow into the new template.",
+        "研究型、溫潤、敘事感": "Academic, warm, narrative",
+        "專業、科技、企業感": "Professional, technical, corporate",
+        "乾淨、極簡、列印穩定": "Clean, minimal, print-stable",
+        "文藝、編排感、閱讀友善": "Literary, editorial, readable",
+        "研究、理性、專題導向": "Research, rational, project-driven",
+        "品牌、親和、作品展示感": "Brand-friendly, approachable, portfolio-like",
+        "商務、穩重、管理職感": "Business, steady, management-oriented",
+        "柔和、簡報感、敘事清楚": "Soft, presentation-like, clear storytelling",
+        "成熟、設計感、辨識度高": "Mature, designed, distinctive",
+        "科技、數據、清晰理性": "Tech, data, clear and rational",
+        "創意、活力、品牌感強": "Creative, energetic, brand-forward",
+        "極簡、俐落、高對比": "Minimal, sharp, high contrast",
+        "自然、沉穩、醫療學術感": "Natural, calm, medical-academic",
+        "親切、教育、服務業感": "Friendly, education, service-oriented",
+        "工程、顧問、結構清楚": "Engineering, consulting, structured",
+        "UX、產品、視覺設計感": "UX, product, visual design",
+        "建築、藝術、工藝質感": "Architecture, art, craft texture",
+        "學術、法律、正式文件感": "Academic, legal, formal document",
+        "植物花紋、自然、手繪感": "Botanical, natural, hand-drawn",
+        "深藍菱格、幾何、科技感": "Deep-blue argyle, geometric, technical",
+        "藍圖點陣、工程、製圖感": "Blueprint dots, engineering, drafting",
+        "古典金框、角落花飾": "Classic gold frame, corner ornaments",
+        "水彩暈染、藝術、渲染感": "Watercolor wash, artistic, atmospheric",
+        "花邊藤蔓、優雅、手工感": "Floral vines, elegant, handcrafted",
+        "版面微調": "Layout Tuning",
+        "選取右側預覽中的任一區塊後，可以調整字級、內距、欄位位置與區塊順序。": "Select any block in the preview to adjust font size, spacing, column position, and block order.",
+        "當前選取區塊": "Selected Block",
+        "尚未選取，請點右側預覽中的區塊。": "Nothing selected. Click a block in the preview.",
+        "模板整體排版": "Template Layout",
+        "側欄寬度": "Sidebar Width",
+        "基礎字級": "Base Font Size",
+        "區塊間距": "Block Gap",
+        "字體風格": "Font Style",
+        "Serif 典雅": "Serif Elegant",
+        "Sans 俐落": "Sans Clean",
+        "Display 雜誌感": "Display Magazine",
+        "選取區塊設定": "Block Settings",
+        "所在欄位": "Column",
+        "側欄": "Sidebar",
+        "主欄": "Main Column",
+        "區塊字級": "Block Font Size",
+        "區塊內距": "Block Padding",
+        "往前移": "Move Up",
+        "往後移": "Move Down",
+        "重設這個區塊": "Reset This Block",
+        "重設此模板排版": "Reset Template Layout",
+        "基本資料": "Basic Info",
+        "姓名": "Name",
+        "請輸入姓名或暱稱": "Enter your name or nickname",
+        "標題 / 角色": "Title / Role",
+        "例如：前端工程師 / 產品設計師 / 行銷企劃": "Example: Frontend Engineer / Product Designer / Marketing Planner",
+        "請輸入聯絡 Email": "Enter contact email",
+        "電話": "Phone",
+        "請輸入電話或留空": "Enter phone or leave blank",
+        "地點": "Location",
+        "例如：台北市 / 遠端 / New Taipei City": "Example: Taipei / Remote / New Taipei City",
+        "網站 / 作品集": "Website / Portfolio",
+        "請輸入網站、LinkedIn 或作品集連結": "Enter a website, LinkedIn, or portfolio link",
+        "頭像圖片網址": "Avatar Image URL",
+        "請貼上圖片網址，或先留空": "Paste an image URL, or leave blank for now",
+        "摘要": "Summary",
+        "請用 2 到 4 句介紹背景、核心能力、代表經驗與求職方向": "Use 2 to 4 sentences to introduce your background, strengths, key experience, and target direction",
+        "專業技能與亮點": "Skills and Highlights",
+        "技能標籤": "Skill Tags",
+        "例如：JavaScript, React, Figma, SQL": "Example: JavaScript, React, Figma, SQL",
+        "核心亮點": "Key Highlights",
+        "請逐行輸入亮點，例如：主導 0 到 1 專案上線": "Enter highlights line by line, e.g. Led a 0-to-1 launch",
+        "工作 / 實習經歷": "Work / Internship Experience",
+        "每一筆請用 `職稱 | 單位 | 日期 | 內容`，空一行分隔下一筆。": "Use `Title | Organization | Date | Details` for each entry, separated by a blank line.",
+        "請輸入職稱 | 公司 / 單位 | 日期 | 工作內容、成果與量化表現": "Enter title | company / organization | date | work details, outcomes, and metrics",
+        "學歷": "Education",
+        "每一筆請用 `學校 / 科系 | 學位或類型 | 日期 | 說明`，空一行分隔。": "Use `School / Department | Degree or Type | Date | Notes` for each entry, separated by a blank line.",
+        "請輸入學校 / 科系 | 學位 | 日期 | 補充說明": "Enter school / department | degree | date | notes",
+        "專案 / 作品": "Projects / Work",
+        "每一筆請用 `專案名 | 類型或技術 | 日期 | 內容`，空一行分隔。": "Use `Project Name | Type or Tech | Date | Details` for each entry, separated by a blank line.",
+        "請輸入專案名稱 | 類型 / 技術 | 日期 | 專案說明、角色與成果": "Enter project name | type / tech | date | description, role, and outcomes",
+        "獎項 / 證照": "Awards / Certifications",
+        "請逐行輸入獎項、證照或其他代表性成就": "Enter awards, certificates, or representative achievements line by line",
+        "可先編輯本機草稿；登入後按「儲存 CV」即可同步到雲端。": "You can edit a local draft first. After signing in, click \"Save CV\" to sync to the cloud.",
+        "即時預覽": "Live Preview",
+        "這份預覽就是下載 PDF 的內容，也可以直接點選區塊做版面微調。": "This preview is what the PDF will contain. Click blocks directly to tune the layout.",
+        "目前模式：先選模板再編輯": "Current Mode: Template First",
+        "縮放": "Zoom",
+        "重設": "Reset",
+        "預覽學習歷程 PDF": "Preview Portfolio PDF",
+        "下載學習歷程 PDF": "Download Portfolio PDF",
+        "即時預覽排版": "Live layout preview",
+        "學習歷程編輯器": "Learning Portfolio Editor",
+        "左側填寫，右側即時預覽封面、目錄、內容頁與結尾頁。": "Fill in the left side and preview the cover, table of contents, content pages, and closing page on the right.",
+        "依科系 / 職業推薦版型": "Recommend Layouts By Department / Career",
+        "先選申請方向，系統會直接推薦合適的學習歷程風格，並套用主模板與備選模板。": "Choose an application direction and the system will recommend a matching portfolio style with primary and alternate templates.",
+        "依科系推薦": "By Department",
+        "依未來職業推薦": "By Future Career",
+        "可先選一個科系或職業，系統會自動套用建議模板。": "Choose a department or career and the system will apply a recommended template.",
+        "版型配色": "Template Colors",
+        "以下模板參考了近年的學生作品集、建築作品集、編輯式 portfolio 與教學簡報風格，除了顏色，也會同步切換版面語氣。": "These templates reference recent student portfolios, architecture portfolios, editorial portfolios, and teaching slides. Color and layout tone change together.",
+        "文件標題": "Document Title",
+        "請輸入文件標題": "Enter document title",
+        "署名": "Byline",
+        "選填": "Optional",
+        "附註欄位": "Note Field",
+        "封面圖片網址": "Cover Image URL",
+        "章節內容": "Chapter Content",
+        "每個章節對應一頁內容頁，可加入多個小節（標題 ＋ 內文 ＋ 圖片）。": "Each chapter becomes one content page. Add multiple sections with title, body, and image.",
+        "＋ 新增章節": "+ Add Chapter",
+        "推薦工具資源": "Recommended Tools",
+        "整理課程成果、設計封面、撰寫自述時常用的工具，點選直接開啟。": "Useful tools for organizing coursework, designing covers, and writing statements.",
+        "官方上傳平台": "Official Upload Platform",
+        "學習歷程上傳平台": "Learning Portfolio Upload Platform",
+        "官方中央資料庫，課程成果與多元表現上傳": "Official central database for coursework and diverse achievements",
+        "學習歷程製作": "Portfolio Creation",
+        "設計工具": "Design Tools",
+        "簡報 & 文件": "Slides & Documents",
+        "免費圖庫": "Free Stock Media",
+        "AI 輔助寫作": "AI Writing Assistance",
+        "預覽順序：封面 → 目錄 → 內容頁（每章節一頁）→ 結尾頁。直接點頁面上的文字即可編輯。": "Preview order: cover → table of contents → content pages (one per chapter) → closing page. Click text on pages to edit directly.",
+        "求職顧問": "Career Advisor",
+        "AI 協助你分析職位適配度、推薦適合崗位，並給出投遞策略與履歷優化建議。": "AI helps analyze job fit, recommend suitable roles, and provide application strategy and resume improvement advice.",
+        "分析模式": "Analysis Mode",
+        "職位適配分析": "Job Fit Analysis",
+        "貼上職缺描述": "Paste Job Description",
+        "推薦適合崗位": "Recommend Roles",
+        "依你的履歷分析": "Analyze Your Resume",
+        "面試 STAR 準備": "STAR Interview Prep",
+        "生成故事庫": "Generate Story Bank",
+        "求職信生成": "Cover Letter",
+        "一鍵客製化": "One-click Customization",
+        "職缺描述 / Job Description": "Job Description",
+        "將職缺的完整描述貼在這裡，包含職稱、職責、要求技能、公司介紹等。內容越完整，分析越準確。": "Paste the full job description here, including title, responsibilities, required skills, and company information. More detail improves the analysis.",
+        "你的履歷摘要（自動讀取）": "Your Resume Summary (Auto-loaded)",
+        "前往 CV 履歷頁填寫資料後，此處會自動讀取。": "Fill in the CV page and this section will load automatically.",
+        "Claude API Key": "AI API Key",
+        "支援 Anthropic、OpenAI、Google Gemini、Groq，系統自動識別。": "Supports Anthropic, OpenAI, Google Gemini, and Groq with automatic detection.",
+        "API Key 僅存於瀏覽器 localStorage，不會上傳至任何伺服器。": "The API key stays in this browser session and is not uploaded to any server.",
+        "安全模式": "Safe Mode",
+        "API Key 只保留在目前瀏覽器頁籤，不會上傳到 Supabase 或其他雲端資料庫。": "The API key stays only in the current browser tab and is not uploaded to Supabase or any cloud database.",
+        "分析職位適配度": "Analyze Job Fit",
+        "選擇分析模式、填入職缺描述（或直接分析履歷），": "Choose an analysis mode, enter a job description (or analyze the resume directly),",
+        "再點擊按鈕開始分析。": "then click the button to start.",
+        "學測落點分析": "GSAT Placement Analysis",
+        "輸入學測成績，根據近三年歷史資料快速預測落點校系。": "Enter GSAT scores to quickly estimate target schools and departments from recent historical data.",
+        "就讀組別": "Track",
+        "自然組": "Science Track",
+        "社會組": "Social Studies Track",
+        "學習歷程分析範圍": "Portfolio Analysis Scope",
+        "大學等級分類": "University Category",
+        "指定大學": "Selected University",
+        "指定科系": "Selected Department",
+        "全部大學": "All Universities",
+        "全部科系": "All Departments",
+        "請先選擇大學": "Choose a university first",
+        "先選大學後，系統會自動載入可選科系。": "Choose a university first and available departments will load automatically.",
+        "學測各科成績（1–15 級分）": "GSAT Subject Scores (1-15)",
+        "國文": "Chinese",
+        "英文": "English",
+        "數學 A（自然組）": "Math A (Science Track)",
+        "數學 B（社會組）": "Math B (Social Studies Track)",
+        "數學A": "Math A",
+        "數學B": "Math B",
+        "社會": "Social Studies",
+        "自然": "Natural Sciences",
+        "英聽": "English Listening",
+        "A 級": "Level A",
+        "B 級": "Level B",
+        "C 級": "Level C",
+        "F 級": "Level F",
+        "開始落點分析": "Start Placement Analysis",
+        "先選範圍，再開始看落點": "Choose a scope, then view placements",
+        "建議先選大學分類、學校與科系，再填入學測成績。": "Choose a university category, school, and department before entering GSAT scores.",
+        "系統會同時整理落點結果、校系背景資料與學習歷程準備方向。": "The system will summarize placement results, school background, and portfolio preparation directions.",
+        "文字格式工具列": "Text Formatting Toolbar",
+        "粗體 Ctrl+B": "Bold Ctrl+B",
+        "斜體 Ctrl+I": "Italic Ctrl+I",
+        "底線 Ctrl+U": "Underline Ctrl+U",
+        "刪除線": "Strikethrough",
+        "字體顏色": "Text Color",
+        "文字背景 / 螢光筆": "Text Background / Highlight",
+        "縮小字體": "Decrease Font Size",
+        "字體大小 (px)": "Font Size (px)",
+        "放大字體": "Increase Font Size",
+        "靠左": "Align Left",
+        "置中": "Align Center",
+        "清除格式": "Clear Formatting",
+        "PDF 預覽": "PDF Preview",
+        "可先確認頁面與排版，再決定是否下載。": "Check pages and layout before downloading.",
+        "關閉": "Close",
+        "Summary": "Summary",
+        "Experience": "Experience",
+        "Projects": "Projects",
+        "Education": "Education",
+        "檔頭": "Header",
+        "聯絡方式": "Contact",
+        "技能": "Skills",
+        "亮點": "Highlights",
+        "工作 / 實習": "Work / Internship",
+        "未命名項目": "Untitled Item",
+        "日期": "Date",
+        "職稱 / 名稱": "Title / Name",
+        "單位 / 機構": "Organization",
+        "內容說明": "Details",
+        "職稱 / 角色": "Title / Role",
+        "職稱": "Title",
+        "點擊輸入摘要…": "Click to enter summary...",
+        "點擊這裡新增技能標籤": "Click here to add skill tags",
+        "新增技能": "Add Skill",
+        "＋ 新增亮點": "+ Add Highlight",
+        "點擊這裡新增亮點": "Click here to add a highlight",
+        "＋ 新增獎項": "+ Add Award",
+        "點擊這裡新增獎項 / 證照": "Click here to add awards / certifications",
+        "點擊這裡新增工作 / 實習經歷。": "Click here to add work / internship experience.",
+        "＋ 新增經歷": "+ Add Experience",
+        "點擊這裡新增專案 / 作品。": "Click here to add a project / work sample.",
+        "＋ 新增專案": "+ Add Project",
+        "點擊這裡新增學歷。": "Click here to add education.",
+        "＋ 新增學歷": "+ Add Education",
+        "新技能": "New Skill",
+        "新亮點": "New Highlight",
+        "新獎項": "New Award",
+        "新職稱 | 單位 | 日期 | 內容說明": "New Title | Organization | Date | Details",
+        "新專案名 | 類型 | 日期 | 內容說明": "New Project | Type | Date | Details",
+        "學校 / 科系 | 學位 | 日期 | 說明": "School / Department | Degree | Date | Notes",
+        "Academic Warm 學術暖調": "Academic Warm",
+        "Slate 專業藍": "Slate Professional Blue",
+        "Mono 簡潔灰": "Mono Clean Gray",
+        "Serif Ivory 象牙文藝": "Serif Ivory",
+        "Forest 研究綠": "Forest Research Green",
+        "Rose 品牌粉": "Rose Brand Pink",
+        "Midnight 深藍商務": "Midnight Business Blue",
+        "Sand 柔和米色": "Sand Soft Beige",
+        "Plum 沉穩紫棕": "Plum Calm Purple",
+        "Ocean 深邃青藍": "Ocean Teal Blue",
+        "Ember 燃橙創意": "Ember Creative Orange",
+        "Noir 極簡黑白": "Noir Minimal Black",
+        "Sage 草木靜綠": "Sage Calm Green",
+        "Coral 珊瑚暖調": "Coral Warm",
+        "Cobalt 鈷藍工程": "Cobalt Engineering Blue",
+        "Dusk 薄暮霧紫": "Dusk Mist Purple",
+        "Copper 琥珀銅褐": "Copper Amber",
+        "Linen 亞麻典雅": "Linen Elegant",
+        "Botanical 植物花紋": "Botanical Pattern",
+        "Geometric 幾何菱格": "Geometric Argyle",
+        "Blueprint 藍圖點陣": "Blueprint Dot Grid",
+        "Ornate 古典金框": "Ornate Gold Frame",
+        "Watercolor 水彩暈染": "Watercolor Wash",
+        "Flourish 花邊藤蔓": "Flourish Vines",
+        "章節": "Chapter",
+        "刪除章節": "Delete Chapter",
+        "章節大標題": "Chapter Title",
+        "請輸入章節標題，例如：專題成果、服務學習、競賽經驗": "Enter a chapter title, e.g. Project Outcomes, Service Learning, Competition Experience",
+        "小節": "Section",
+        "刪除": "Delete",
+        "小節標題": "Section Title",
+        "請輸入小節標題": "Enter section title",
+        "內文": "Body",
+        "請輸入這個小節的內容描述": "Enter this section's description",
+        "圖片網址（選填）": "Image URL (Optional)",
+        "圖片說明（選填）": "Image Caption (Optional)",
+        "請輸入圖片說明": "Enter image caption",
+        "＋ 新增小節": "+ Add Section",
+        "封面形象區": "Cover image area",
+        "以作品、紀錄與學習內容整理主題脈絡，方便快速檢視重點。": "Organize works, records, and learning content into a clear theme for quick review.",
+        "內容總覽": "Content Overview",
+        "章節標題": "Chapter Title",
+        "本章學習重點摘要。": "Key learning summary for this chapter.",
+        "核心段落標題": "Core Section Title",
+        "輸入本章主要內容": "Enter main content for this chapter",
+        "輸入小節內容": "Enter section content",
+        "可加入成果照片或作品截圖": "Add outcome photos or work screenshots",
+        "圖片網址": "Image URL",
+        "貼上圖片網址": "Paste image URL",
+        "圖片說明": "Image Caption",
+        "補一段圖片說明": "Add an image caption",
+        "這一章目前只有一個小節，若想讓版面更完整，可以再新增一個成果、補充說明或延伸內容小節。": "This chapter currently has one section. Add an outcome, note, or extension section to make the layout fuller.",
+        "章節摘要": "Chapter Summary",
+        "以具體事件、作品與內容說明整理本章重點。": "Summarize this chapter with concrete events, works, and descriptions.",
+        "建議在這一章放入成果照片、活動紀錄或作品截圖，版面會更完整。": "Add outcome photos, activity records, or work screenshots to make this chapter fuller.",
+        "感謝審閱": "Thank You",
+        "以上內容整理文件中的章節與成果重點，可依需求繼續補充或調整。": "The chapters and outcome highlights are organized above. You can continue refining them as needed.",
+        "文件署名": "Document byline",
+        "整體適配評分": "Overall Fit Score",
+        "六維度評分": "Six-dimension Score",
+        "層級評估": "Level Assessment",
+        "你的層級：": "Your level: ",
+        "職缺期望：": "Role expectation: ",
+        "ATS 關鍵字分析": "ATS Keyword Analysis",
+        "✓ 已覆蓋": "✓ Covered",
+        "✗ 缺少（優先補充）": "✗ Missing (Prioritize)",
+        "📋 投遞策略": "📋 Application Strategy",
+        "✏️ 履歷優化建議": "✏️ Resume Improvements",
+        "🎯 面試準備重點": "🎯 Interview Prep",
+        "💰 薪資談判建議": "💰 Salary Negotiation Advice",
+        "✉️ 求職信開場建議": "✉️ Cover Letter Opening",
+        "職位核心需求分析": "Core Role Requirements",
+        "STAR 面試故事庫（5個）": "STAR Interview Story Bank (5)",
+        "其他預測常見問題": "Other Likely Questions",
+        "面試技巧提示": "Interview Tips",
+        "建議郵件主旨": "Suggested Email Subject",
+        "求職信全文": "Full Cover Letter",
+        "複製全文": "Copy Full Text",
+        "已複製！": "Copied!",
+        "ATS 關鍵字（已融入）": "ATS Keywords (Included)",
+        "個人化亮點說明": "Personalization Highlights",
+        "備用開場方式": "Alternative Opening",
+        "你的職涯定位": "Your Career Positioning",
+        "推薦崗位": "Recommended Roles",
+        "匹配度：": "Match: ",
+        "你的核心優勢": "Core Strengths",
+        "可補強的地方": "Areas To Improve",
+        "建議的下一步行動": "Recommended Next Steps",
+        "求職實戰建議": "Job Search Advice",
+        "推薦平台：": "Recommended platforms: ",
+        "投遞節奏：": "Application rhythm: ",
+        "人脈策略：": "Networking strategy: ",
+        "請先填入 API Key（左側面板底部）": "Enter an API key first (bottom of the left panel).",
+        "無法識別 API Key 格式，請確認是否來自 Anthropic、OpenAI、Google Gemini 或 Groq": "Could not identify the API key format. Check whether it comes from Anthropic, OpenAI, Google Gemini, or Groq.",
+        "請先貼上職缺描述再分析。": "Paste a job description before analyzing.",
+        "請先至「CV 履歷」頁填寫你的履歷資料。": "Fill in your resume on the CV Resume page first.",
+        "正在分析職位適配度，通常需要 15–30 秒…": "Analyzing job fit. This usually takes 15-30 seconds...",
+        "請先貼上職缺描述再生成面試準備。": "Paste a job description before generating interview prep.",
+        "正在生成 STAR 面試故事庫，通常需要 20–40 秒…": "Generating a STAR story bank. This usually takes 20-40 seconds...",
+        "請先貼上職缺描述再生成求職信。": "Paste a job description before generating a cover letter.",
+        "正在生成客製化求職信，通常需要 15–30 秒…": "Generating a customized cover letter. This usually takes 15-30 seconds...",
+        "正在分析你的職涯定位，通常需要 15–30 秒…": "Analyzing your career positioning. This usually takes 15-30 seconds...",
+        "分析我適合哪些崗位": "Analyze Suitable Roles",
+        "生成 STAR 面試故事": "Generate STAR Stories",
+        "生成客製化求職信": "Generate Cover Letter",
+        "點擊按鈕，AI 將根據你的履歷推薦適合崗位": "Click the button and AI will recommend suitable roles from your resume.",
+        "貼上職缺描述後，點擊按鈕生成面試故事庫": "Paste a job description, then click the button to generate interview stories.",
+        "貼上職缺描述後，點擊按鈕一鍵生成求職信": "Paste a job description, then click the button to generate a cover letter.",
+        "貼上職缺描述後，點擊「分析職位適配度」": "Paste a job description, then click \"Analyze Job Fit\".",
+        "目前這個範圍沒有對應的歷年校系切線。建議先縮小到一個大學分類或指定學校，系統會更容易給你可比較的落點結果。": "This scope has no matching historical department cutoff data. Narrow to a university category or specific school for more comparable results.",
+        "目前這個範圍沒有可直接計算的歷年切線。": "This scope has no historical cutoff data that can be calculated directly.",
+        "改看同校全部科系": "View all departments in this school",
+        "比較同分類大學": "Compare universities in this category",
+        "清除全部篩選": "Clear all filters",
+        "依照最接近歷年均線排序，方便先看最有機會挑戰到的校系。": "Sorted by closest historical average so you can review the most realistic challenge options first.",
+        "依照與均線差距由小到大排序，先看最貼近實際志願順序的選項。": "Sorted by smallest gap from average to show options closest to practical preference order.",
+        "依照與均線差距由小到大排序，避免一開始就被過度保守的選項淹沒。": "Sorted by smallest gap from average so overly conservative options do not dominate first.",
+        "前段衝刺": "Early Reach",
+        "衝刺主帶": "Main Reach",
+        "衝刺補位": "Reach Backup",
+        "主力前段": "Early Core",
+        "主力中段": "Core Middle",
+        "主力後段": "Core Backup",
+        "穩健保留": "Stable Reserve",
+        "保底主帶": "Main Safety",
+        "最後收尾": "Final Safety",
+        "建議志願帶": "Suggested Preference Band",
+        "可依你實際想排的志願數前後微調。": "Adjust this based on your actual number of preferences.",
+        "先看衝刺": "Review Reach",
+        "主力觀察": "Core Watch",
+        "穩健保留": "Stable Reserve",
+        "只看這個科系": "View this department only",
+        "改看這個科系": "View this department",
+        "收進保底帶": "Add to safety band",
+        "看同校全部科系": "View all departments in this school",
+        "這次可以先看這幾個方向": "Start with these directions",
+        "先用每一帶最有代表性的校系快速抓節奏，再往下看完整清單會更快。": "Use the representative option in each band to get oriented, then review the full list below.",
+        "學習歷程分析建議": "Learning Portfolio Suggestions",
+        "依目前成績的準備方向": "Preparation Direction Based On Current Scores",
+        "建議你優先補的材料": "Materials To Prioritize",
+        "研究探究型": "Research-focused",
+        "均衡表現型": "Balanced Profile",
+        "穩定累積型": "Steady Growth",
+        "專門校系型": "Specialized Program",
+        "私校前段型": "Top Private-school Track",
+        "私校穩健型": "Steady Private-school Track",
+        "國立技職實作型": "National Technical Practical Track",
+        "應用技職型": "Applied Technical Track",
+        "先補上學測成績": "Enter GSAT Scores First",
+        "至少輸入目前要採計的五科級分後，再開始落點分析。": "Enter at least the five subject scores being counted before starting placement analysis.",
+        "如果還沒決定校系，也可以先維持「全部大學 / 全部科系」快速看整體分布。": "If you have not chosen a school or department, keep \"All Universities / All Departments\" to view the broad distribution.",
+        "夢幻志願": "Reach",
+        "安全志願": "Target",
+        "保底志願": "Safety",
+        "夢幻": "Reach",
+        "安全": "Target",
+        "保底": "Safety",
+        "分類：": "Category: ",
+        "學校：": "School: ",
+        "科系：": "Department: ",
+        "資料來源：": "Data source: ",
+        "排序說明：夢幻志願會先看最接近門檻的校系，安全與保底則優先顯示差距較小、比較貼近實際填志願順序的選項。": "Sort note: reach options show the closest thresholds first; target and safety options prioritize smaller gaps closer to practical preference order.",
+        "門檻未達：": "Threshold not met: ",
+        "加權：": "Weighted: ",
+        "歷年均線：": "Historical avg: ",
+        "差距：": "Gap: ",
+        "五科總分（滿分 75）": "Five-subject total (max 75)",
+        "本資料為歷年統計估算，": "This uses estimates from historical statistics. ",
+        "僅供初步參考": "For preliminary reference only",
+        "建議交叉比對": "Please cross-check with",
+        "等網站，並以大學甄選入學委員會公告之正式篩選條件為準。": "and use official screening criteria from the University Admissions Committee as the source of truth.",
+        "校系資料庫摘要": "School Database Summary",
+        "同校相近科系": "Similar Departments In This School",
+        "改看這個科系": "View This Department",
+        "同校全部科系": "All Departments In This School",
+        "目前無可選科系": "No departments available",
+        "本地快照": "Local Snapshot",
+        "Supabase": "Supabase",
+        "頂標": "Top Standard",
+        "前標": "High Standard",
+        "均標": "Average Standard",
+        "後標": "Low Standard",
+        "底標": "Bottom Standard",
+        "底標以下": "Below Bottom Standard",
+        "未提供": "Not provided",
+        "可查": "Available",
+        "有歷年切線": "Historical cutoff available",
+        "有個申資料": "Individual application data",
+        "有繁星資料": "Star recommendation data",
+        "有分發條件": "Distribution requirements",
+        "註冊率可查": "Registration rate available",
+        "前": "Top",
+        "頁面包含已淘汰的 platform.js 或 g-signin2。這會受 FedCM 強制採用影響，建議改成 GIS 或像目前這樣走 Supabase OAuth redirect。": "The page includes deprecated platform.js or g-signin2. This is affected by FedCM enforcement. Use GIS or Supabase OAuth redirect as this project does.",
+        "未使用已淘汰的 Google Sign-In 前端程式庫": "No deprecated Google Sign-In frontend library detected",
+        "目前頁面沒有載入 platform.js、gapi.auth2 或 g-signin2，因此不需要為這個前端流程額外接 FedCM 相容參數。": "The page does not load platform.js, gapi.auth2, or g-signin2, so this frontend flow does not need extra FedCM compatibility parameters.",
+        "Supabase OAuth 設定已填入": "Supabase OAuth settings are filled in",
+        "已提供 Supabase URL 與 Anon Key，可以啟動 Google OAuth redirect flow。": "Supabase URL and anon key are provided, so Google OAuth redirect flow can start.",
+        "Supabase OAuth 設定尚未完成": "Supabase OAuth settings are incomplete",
+        "請先填入 Supabase URL 與 Anon Key，並在 Supabase Authentication > Providers 啟用 Google。": "Enter Supabase URL and anon key, then enable Google under Supabase Authentication > Providers.",
+        "目前是 file:// 開啟": "Currently opened with file://",
+        "Google OAuth 不能直接在本機檔案模式使用。請改用 localhost 或正式網站網址，並把該網址加入 Supabase 與 Google Cloud 的允許清單。": "Google OAuth cannot run from local file mode. Use localhost or a deployed URL and add it to Supabase and Google Cloud allowlists.",
+        "登入流程使用標準瀏覽器 redirect": "Sign-in uses standard browser redirect",
+        "FedCM 影響說明": "FedCM impact note",
+        "FedCM 主要影響舊版 Google Sign-In JavaScript 按鈕與 One Tap。這個專案目前由 Supabase 代管 Google OAuth 流程，前端受影響較低，但仍需實際在 Chrome 上測一次登入與回跳。": "FedCM mainly affects legacy Google Sign-In JavaScript buttons and One Tap. This project delegates Google OAuth to Supabase, so frontend impact is lower, but sign-in and redirect should still be tested in Chrome.",
+        "Supabase 瀏覽器 SDK 已載入": "Supabase browser SDK loaded",
+        "已偵測到 window.supabase，可處理 session 同步與雲端資料讀寫。": "window.supabase is detected and can handle session sync and cloud data access.",
+        "Supabase 瀏覽器 SDK 未載入": "Supabase browser SDK not loaded",
+        "目前偵測不到 window.supabase。Google 按鈕會改走直接 authorize URL，但登入回來後可能無法同步 session。": "window.supabase was not detected. Google buttons will use direct authorize URLs, but the session may not sync after returning.",
+        "Supabase Runtime Config 完整": "Supabase runtime config complete",
+        "Supabase URL 與 anon key 都已載入。": "Supabase URL and anon key are loaded.",
+        "Supabase Runtime Config 不完整": "Supabase runtime config incomplete",
+        "請確認 config.js 或設定面板中的 Supabase URL 與 anon key 是否正確。": "Check whether the Supabase URL and anon key in config.js or the settings panel are correct.",
+        "Google authorize URL 已建立": "Google authorize URL created",
+        "Google authorize URL 建立失敗": "Failed to create Google authorize URL",
+        "目前無法產生 Google authorize URL，通常表示 Supabase URL 格式有誤。": "The Google authorize URL cannot be generated, usually because the Supabase URL format is invalid."
+      });
+
+      const INLINE_TERMS = Object.freeze([
+        ["目前模式：", "Current Mode: "],
+        ["先選模板再編輯", "Template First"],
+        ["先填資料再套版", "Content First"],
+        ["已選模板", "Template selected"],
+        ["已同步雲端", "Synced to cloud"],
+        ["Google 已登入", "Signed in with Google"],
+        ["尚未登入", "Not signed in"],
+        ["可先編輯草稿", "Draft editing available"],
+        ["本機草稿", "Local draft"],
+        ["尚未同步", "Not synced"],
+        ["登出中...", "Signing out..."],
+        ["正在切回本機草稿", "Returning to local draft"],
+        ["全部大學", "All Universities"],
+        ["全部科系", "All Departments"],
+        ["請先選擇大學", "Choose a university first"],
+        ["目前無可選科系", "No departments available"],
+        ["自然組", "Science Track"],
+        ["社會組", "Social Studies Track"],
+        ["國文", "Chinese"],
+        ["英文", "English"],
+        ["數學A", "Math A"],
+        ["數學B", "Math B"],
+        ["頂標", "Top Standard"],
+        ["前標", "High Standard"],
+        ["均標", "Average Standard"],
+        ["後標", "Low Standard"],
+        ["底標以下", "Below Bottom Standard"],
+        ["底標", "Bottom Standard"],
+        ["本地快照", "Local Snapshot"],
+        ["未提供", "Not provided"],
+        ["可查", "Available"],
+        ["夢幻志願", "Reach"],
+        ["安全志願", "Target"],
+        ["保底志願", "Safety"],
+        ["夢幻", "Reach"],
+        ["安全", "Target"],
+        ["保底", "Safety"],
+        ["分類：", "Category: "],
+        ["學校：", "School: "],
+        ["科系：", "Department: "],
+        ["資料來源：", "Data source: "],
+        ["門檻未達：", "Threshold not met: "],
+        ["加權：", "Weighted: "],
+        ["歷年均線：", "Historical avg: "],
+        ["差距：", "Gap: "],
+        ["你的層級：", "Your level: "],
+        ["職缺期望：", "Role expectation: "],
+        ["匹配度：", "Match: "],
+        ["推薦平台：", "Recommended platforms: "],
+        ["投遞節奏：", "Application rhythm: "],
+        ["人脈策略：", "Networking strategy: "]
+      ]);
+
+      const textNodeKeys = new WeakMap();
+      const attrKeys = new WeakMap();
+      const REVERSE_EN = new Map();
+      Object.entries(UI_EN).forEach(([source, translated]) => {
+        if (!REVERSE_EN.has(translated)) REVERSE_EN.set(translated, source);
+      });
+
+      let language = localStorage.getItem(LANGUAGE_KEY) === "en" ? "en" : "zh";
+      let applying = false;
+      let queuedApply = false;
+
+      function isEnglish() {
+        return language === "en";
+      }
+
+      function translatePattern(source) {
+        const rules = [
+          [/^步驟\s*(\d+)\s*\/\s*(\d+)$/, (_match, step, total) => `Step ${step} / ${total}`],
+          [/^章節\s*(\d+)$/, (_match, index) => `Chapter ${index}`],
+          [/^小節\s*(\d+)$/, (_match, index) => `Section ${index}`],
+          [/^第\s*(\d+)(?:-(\d+))?\s*志願帶$/, (_match, start, end) => `Preference Band ${start}${end ? `-${end}` : ""}`],
+          [/^前\s*([0-9.]+)%$/, (_match, pct) => `Top ${pct}%`],
+          [/^(.+?)需(.+?)（你：(.+?)）$/, (_match, subject, required, current) => `${translateSource(subject)} requires ${translateSource(required)} (you: ${translateSource(current)})`],
+          [/^已重設\s*(.+?)\s*的排版設定。$/, (_match, template) => `Reset layout settings for ${translateSource(template)}.`],
+          [/^已切換到\s*(.+?)。直接點 CV 內容即可編輯文字。$/, (_match, template) => `Switched to ${translateSource(template)}. Click CV content directly to edit text.`],
+          [/^已切換到\s*(.+?)。你可以直接繼續編輯內容與排版。$/, (_match, template) => `Switched to ${translateSource(template)}. Continue editing content and layout.`],
+          [/^已把目前資料套用到\s*(.+?)。你可以繼續改內容或微調排版。$/, (_match, template) => `Applied current data to ${translateSource(template)}. Continue editing content or layout.`],
+          [/^(.+?)推薦使用「(.+?)」模板（★），備選「(.+?)」（●）。$/, (_match, role, primary, alt) => `${translateSource(role)} recommends the "${translateSource(primary)}" template (★), with "${translateSource(alt)}" as alternate (●).`],
+          [/^(.+?)：主推薦「(.+?)」，備選「(.+?)」。(.+)$/, (_match, preset, primary, alt, note) => `${translateSource(preset)}: primary recommendation "${translateSource(primary)}", alternate "${translateSource(alt)}". ${translateSource(note)}`],
+          [/^CV 已成功儲存到雲端，之後登入同一個 Google 帳號就能繼續編輯。$/, () => "CV saved to the cloud. Sign in with the same Google account later to continue editing."],
+          [/^讀取雲端 CV 失敗：(.+)$/, (_match, message) => `Failed to load cloud CV: ${message}`],
+          [/^儲存失敗：(.+)$/, (_match, message) => `Save failed: ${message}`],
+          [/^PDF 下載失敗：(.+)$/, (_match, message) => `PDF download failed: ${message}`],
+          [/^PDF 預覽失敗：(.+)$/, (_match, message) => `PDF preview failed: ${message}`],
+          [/^登入失敗：(.+)$/, (_match, message) => `Sign-in failed: ${message}`],
+          [/^登出失敗：(.+)$/, (_match, message) => `Sign-out failed: ${message}`],
+          [/^Google 登入回跳失敗：(.+)$/, (_match, message) => `Google sign-in redirect failed: ${message}`],
+          [/^Google 登入回跳處理失敗：(.+)$/, (_match, message) => `Google sign-in redirect handling failed: ${message}`],
+          [/^無法取得登入狀態：(.+)$/, (_match, message) => `Could not get sign-in status: ${message}`],
+          [/^Anthropic API 錯誤\s*(\d+)$/, (_match, status) => `Anthropic API error ${status}`],
+          [/^OpenAI API 錯誤\s*(\d+)$/, (_match, status) => `OpenAI API error ${status}`],
+          [/^Gemini API 錯誤\s*(\d+)$/, (_match, status) => `Gemini API error ${status}`],
+          [/^Groq API 錯誤\s*(\d+)$/, (_match, status) => `Groq API error ${status}`],
+          [/^分析失敗：(.+)$/, (_match, message) => `Analysis failed: ${message}`],
+          [/^生成失敗：(.+)$/, (_match, message) => `Generation failed: ${message}`],
+          [/^(.+?)\s*·\s*(.+)$/, (_match, left, right) => `${translateSource(left)} · ${translateSource(right)}`],
+          [/^(.+?)｜(.+)$/, (_match, left, right) => `${translateSource(left)} | ${translateSource(right)}`]
+        ];
+
+        for (const [pattern, replacer] of rules) {
+          if (pattern.test(source)) {
+            return source.replace(pattern, replacer);
+          }
+        }
+
+        return "";
+      }
+
+      function replaceInlineTerms(source) {
+        if (!/[\u3400-\u9fff]/.test(source)) return source;
+        return INLINE_TERMS
+          .slice()
+          .sort((a, b) => b[0].length - a[0].length)
+          .reduce((text, [zh, en]) => text.split(zh).join(en), source);
+      }
+
+      function translateSource(source) {
+        const normalized = String(source || "").trim();
+        if (!normalized || !isEnglish()) return normalized;
+        if (Object.prototype.hasOwnProperty.call(UI_EN, normalized)) return UI_EN[normalized];
+        const pattern = translatePattern(normalized);
+        return pattern || replaceInlineTerms(normalized);
+      }
+
+      function shouldSkipTextNode(node) {
+        const parent = node.parentElement;
+        if (!parent) return true;
+        return Boolean(parent.closest("script, style, noscript, [data-i18n-skip], input, textarea, [contenteditable='true']"));
+      }
+
+      function sourceForTextNode(node, core) {
+        const saved = textNodeKeys.get(node);
+        if (saved) {
+          const expected = isEnglish() ? translateSource(saved) : saved;
+          if (core === saved || core === expected || REVERSE_EN.get(core) === saved) {
+            return saved;
+          }
+        }
+        const source = REVERSE_EN.get(core) || core;
+        textNodeKeys.set(node, source);
+        return source;
+      }
+
+      function translateTextNode(node) {
+        if (shouldSkipTextNode(node)) return;
+        const raw = node.nodeValue || "";
+        const core = raw.trim();
+        if (!core) return;
+        const source = sourceForTextNode(node, core);
+        const translated = isEnglish() ? translateSource(source) : source;
+        if (!translated || translated === core) return;
+        node.nodeValue = raw.replace(core, translated);
+      }
+
+      function translateElementAttrs(element) {
+        if (!element || element.closest?.("script, style, noscript, [data-i18n-skip]")) return;
+        let keys = attrKeys.get(element);
+        if (!keys) {
+          keys = {};
+          attrKeys.set(element, keys);
+        }
+        TEXT_ATTRS.forEach((attr) => {
+          if (!element.hasAttribute(attr)) return;
+          const current = element.getAttribute(attr) || "";
+          if (!current.trim()) return;
+          const saved = keys[attr];
+          const source = saved && (current === saved || current === translateSource(saved) || REVERSE_EN.get(current) === saved)
+            ? saved
+            : (REVERSE_EN.get(current) || current);
+          keys[attr] = source;
+          const translated = isEnglish() ? translateSource(source) : source;
+          if (translated && translated !== current) {
+            element.setAttribute(attr, translated);
+          }
+        });
+      }
+
+      function applyLanguage(root = document.body) {
+        if (!root) return;
+        applying = true;
+        document.documentElement.lang = isEnglish() ? "en" : "zh-Hant";
+        updateLanguageToggles();
+
+        const rootElement = root.nodeType === Node.ELEMENT_NODE ? root : root.parentElement;
+        if (rootElement) {
+          translateElementAttrs(rootElement);
+          rootElement.querySelectorAll?.("*").forEach(translateElementAttrs);
+        }
+
+        const walkerRoot = root.nodeType === Node.TEXT_NODE ? root.parentElement : root;
+        if (walkerRoot) {
+          const walker = document.createTreeWalker(walkerRoot, NodeFilter.SHOW_TEXT);
+          while (walker.nextNode()) translateTextNode(walker.currentNode);
+        }
+
+        applying = false;
+      }
+
+      function queueApplyLanguage() {
+        if (applying || queuedApply) return;
+        queuedApply = true;
+        requestAnimationFrame(() => {
+          queuedApply = false;
+          applyLanguage(document.body);
+        });
+      }
+
+      function updateLanguageToggles() {
+        document.querySelectorAll("[data-language-toggle]").forEach((button) => {
+          const current = button.querySelector(".language-toggle-current");
+          const next = button.querySelector(".language-toggle-next");
+          if (current) current.textContent = isEnglish() ? "EN" : "中文";
+          if (next) next.textContent = isEnglish() ? "中文" : "EN";
+          button.setAttribute("aria-label", isEnglish() ? "Switch to Chinese" : "Switch to English");
+          button.setAttribute("title", isEnglish() ? "Switch to Chinese" : "Switch to English");
+        });
+      }
+
+      function setLanguage(nextLanguage) {
+        const normalized = nextLanguage === "en" ? "en" : "zh";
+        if (normalized === language) return;
+        language = normalized;
+        localStorage.setItem(LANGUAGE_KEY, language);
+        window.dispatchEvent(new CustomEvent("cv:language-changed", { detail: { language } }));
+        applyLanguage(document.body);
+      }
+
+      function toggleLanguage() {
+        setLanguage(isEnglish() ? "zh" : "en");
+      }
+
+      function initLanguage() {
+        updateLanguageToggles();
+        document.querySelectorAll("[data-language-toggle]").forEach((button) => {
+          if (button.dataset.languageBound === "true") return;
+          button.dataset.languageBound = "true";
+          button.addEventListener("click", toggleLanguage);
+        });
+        const observer = new MutationObserver(() => queueApplyLanguage());
+        observer.observe(document.body, {
+          childList: true,
+          subtree: true,
+          characterData: true,
+          attributes: true,
+          attributeFilter: TEXT_ATTRS
+        });
+        applyLanguage(document.body);
+      }
+
+      window.cvStudioI18n = {
+        getLanguage: () => language,
+        isEnglish,
+        setLanguage,
+        toggleLanguage,
+        t: translateSource,
+        apply: applyLanguage
+      };
+
+      initLanguage();
+    })();
+
+    (() => {
       const STORAGE_KEY = "cv-studio-local-v2";
       const CONFIG_KEY = "cv-studio-config-v2";
       const TEMPLATE_KEY = "cv-studio-template-v1";
@@ -4563,7 +5454,9 @@
         experience: "",
         education: "",
         projects: "",
-        awards: ""
+        awards: "",
+        importedPdfText: "",
+        importedPdfFileName: ""
       };
       const templateDefinitions = {
         "n-tech": {
@@ -5044,6 +5937,10 @@
         localStorage.setItem(key, JSON.stringify(value));
       }
 
+      function notifyCvDataUpdated(source = "manual") {
+        window.dispatchEvent(new CustomEvent("cv:data-updated", { detail: { source } }));
+      }
+
       let pdfPreviewUrl = "";
 
       function closePdfPreview() {
@@ -5154,6 +6051,10 @@
         }[match]));
       }
 
+      function uiText(value) {
+        return window.cvStudioI18n?.t(value) || value;
+      }
+
       function normalizeLayoutRegions(regions) {
         const allBlocks = Object.keys(blockLabels);
         const next = {
@@ -5234,18 +6135,18 @@
       /* ── helpers for contenteditable blocks ── */
       function ce(field, tag, cls, value, ph, extraAttr) {
         const attr = extraAttr ? ` ${extraAttr}` : "";
-        return `<${tag} class="${cls}" contenteditable="true" data-field="${field}" data-sync="text" spellcheck="false" data-ph="${ph || ""}"${attr}>${escapeHtml(value)}</${tag}>`;
+        return `<${tag} class="${cls}" contenteditable="true" data-field="${field}" data-sync="text" spellcheck="false" data-ph="${escapeHtml(uiText(ph || ""))}"${attr}>${escapeHtml(value)}</${tag}>`;
       }
 
       function renderEditableTimeline(items, field, emptyText) {
         if (!items.length) return `<div class="empty-block">${escapeHtml(emptyText)}</div>`;
         return items.map((item, i) => `
           <article class="timeline-item">
-            <div class="timeline-date" contenteditable="true" data-field="${field}" data-sync="entry-field" data-ei="${i}" data-ep="date" spellcheck="false" data-ph="日期">${escapeHtml(item.date || "")}</div>
+            <div class="timeline-date" contenteditable="true" data-field="${field}" data-sync="entry-field" data-ei="${i}" data-ep="date" spellcheck="false" data-ph="${escapeHtml(uiText("日期"))}">${escapeHtml(item.date || "")}</div>
             <div>
-              <h4 contenteditable="true" data-field="${field}" data-sync="entry-field" data-ei="${i}" data-ep="title" spellcheck="false" data-ph="職稱 / 名稱">${escapeHtml(item.title || "")}</h4>
-              <span class="timeline-meta" contenteditable="true" data-field="${field}" data-sync="entry-field" data-ei="${i}" data-ep="subtitle" spellcheck="false" data-ph="單位 / 機構">${escapeHtml(item.subtitle || "")}</span>
-              <div class="timeline-body" contenteditable="true" data-field="${field}" data-sync="entry-field" data-ei="${i}" data-ep="body" spellcheck="false" data-ph="內容說明">${escapeHtml(item.body || "")}</div>
+              <h4 contenteditable="true" data-field="${field}" data-sync="entry-field" data-ei="${i}" data-ep="title" spellcheck="false" data-ph="${escapeHtml(uiText("職稱 / 名稱"))}">${escapeHtml(item.title || "")}</h4>
+              <span class="timeline-meta" contenteditable="true" data-field="${field}" data-sync="entry-field" data-ei="${i}" data-ep="subtitle" spellcheck="false" data-ph="${escapeHtml(uiText("單位 / 機構"))}">${escapeHtml(item.subtitle || "")}</span>
+              <div class="timeline-body" contenteditable="true" data-field="${field}" data-sync="entry-field" data-ei="${i}" data-ep="body" spellcheck="false" data-ph="${escapeHtml(uiText("內容說明"))}">${escapeHtml(item.body || "")}</div>
             </div>
           </article>`).join("");
       }
@@ -5261,8 +6162,8 @@
           return `
             <div class="${profileClass}">
               ${buildAvatar(layoutState)}
-              ${ce("name", "h1", "cv-name", state.data.name || "姓名", "姓名")}
-              ${ce("role", "div", "cv-role", state.data.role || "職稱 / 角色", "職稱")}
+              ${ce("name", "h1", "cv-name", state.data.name || uiText("姓名"), "姓名")}
+              ${ce("role", "div", "cv-role", state.data.role || uiText("職稱 / 角色"), "職稱")}
               ${hasStandaloneSummary ? "" : ce("summary", "div", "cv-summary", state.data.summary || "", "摘要")}
             </div>`;
         }
@@ -5277,7 +6178,7 @@
             { f: "website",  ph: "網站 / 作品集" }
           ];
           const items = cfields.map(cf =>
-            `<div class="contact-item" contenteditable="true" data-field="${cf.f}" data-sync="text" spellcheck="false" data-ph="${cf.ph}">${escapeHtml(state.data[cf.f] || "")}</div>`
+            `<div class="contact-item" contenteditable="true" data-field="${cf.f}" data-sync="text" spellcheck="false" data-ph="${escapeHtml(uiText(cf.ph))}">${escapeHtml(state.data[cf.f] || "")}</div>`
           ).join("");
           return `<div class="aside-block"><h3>聯絡方式</h3><div class="contact-list">${items}</div></div>`;
         }
@@ -5286,7 +6187,7 @@
           const pills = skillList.length
             ? skillList.map((s, i) =>
                 `<span class="simple-pill" contenteditable="true" data-field="skills" data-sync="list-item" data-li="${i}" spellcheck="false" data-ph="技能">${escapeHtml(s)}</span>`
-              ).join("") + `<button class="simple-pill wysiwyg-add-btn" data-add-to="skills" type="button" title="新增技能">＋</button>`
+              ).join("") + `<button class="simple-pill wysiwyg-add-btn" data-add-to="skills" type="button" title="${escapeHtml(uiText("新增技能"))}">＋</button>`
             : `<div class="empty-block" style="cursor:pointer;" data-add-to="skills">點擊這裡新增技能標籤</div>`;
           return `<div class="aside-block"><h3>技能</h3><div class="simple-list">${pills}</div></div>`;
         }
@@ -5359,6 +6260,7 @@
         // Keep tool panel in sync
         if (typeof updateWordCount === "function") updateWordCount();
         if (typeof updateQrCode === "function") updateQrCode();
+        window.cvStudioI18n?.apply(paper);
       }
 
       function syncInputs() {
@@ -6813,12 +7715,244 @@
             if (payload.template) updateTemplate(payload.template, true);
             updatePreview(true);
             syncLayoutControls();
+            updatePdfImportStatus();
+            notifyCvDataUpdated("json-import");
             setMessage("CV 資料匯入成功。", "success");
           } catch {
             setMessage("匯入失敗：JSON 格式不正確。", "error");
           }
         };
         reader.readAsText(file);
+      }
+
+      function updatePdfImportStatus() {
+        const el = $("pdfImportStatus");
+        if (!el) return;
+        const fileName = (state.data.importedPdfFileName || "").trim();
+        const text = (state.data.importedPdfText || "").trim();
+        if (!fileName || !text) {
+          el.textContent = "可上傳現有 PDF 履歷，系統會自動抽取文字並回填到可編輯欄位。";
+          return;
+        }
+        const charCount = text.replace(/\s+/g, "").length;
+        el.textContent = `已匯入 PDF：${fileName}，抽取約 ${charCount} 字，可直接編輯欄位，也能提供給求職顧問分析。`;
+      }
+
+      function normalizeResumeText(text) {
+        return String(text || "")
+          .replace(/\u00a0/g, " ")
+          .replace(/\r/g, "")
+          .replace(/[ \t]+\n/g, "\n")
+          .replace(/\n{3,}/g, "\n\n")
+          .replace(/[ \t]{2,}/g, " ")
+          .trim();
+      }
+
+      function splitResumeSections(text) {
+        const sectionMap = {
+          summary: ["summary", "profile", "about", "overview", "professional summary", "自我介紹", "個人簡介", "專業摘要", "簡介", "個人摘要"],
+          skills: ["skills", "technical skills", "core skills", "expertise", "專長", "技能", "能力", "核心技能"],
+          experience: ["experience", "work experience", "employment", "professional experience", "經歷", "工作經歷", "工作經驗", "實習經歷"],
+          education: ["education", "academic background", "學歷", "教育背景"],
+          projects: ["projects", "project experience", "portfolio", "作品集", "專案", "專案經驗", "作品"],
+          awards: ["awards", "honors", "achievements", "certifications", "獎項", "榮譽", "證照", "獲獎紀錄"],
+          highlights: ["highlights", "key achievements", "selected achievements", "亮點", "重點成就", "關鍵成就"]
+        };
+        const headingLookup = {};
+        Object.entries(sectionMap).forEach(([key, headings]) => {
+          headings.forEach((heading) => {
+            const normalized = heading.toLowerCase().replace(/[^a-z0-9\u4e00-\u9fff]/g, "");
+            headingLookup[normalized] = key;
+          });
+        });
+
+        const sections = {};
+        const lines = normalizeResumeText(text).split("\n").map((line) => line.trim()).filter(Boolean);
+        let currentKey = "summary";
+        const introLines = [];
+
+        lines.forEach((line) => {
+          const normalized = line.toLowerCase().replace(/[^a-z0-9\u4e00-\u9fff]/g, "");
+          const matchedKey = headingLookup[normalized];
+          if (matchedKey) {
+            currentKey = matchedKey;
+            if (!sections[currentKey]) sections[currentKey] = [];
+            return;
+          }
+
+          if (!sections[currentKey] && currentKey === "summary") {
+            introLines.push(line);
+            return;
+          }
+          if (!sections[currentKey]) sections[currentKey] = [];
+          sections[currentKey].push(line);
+        });
+
+        if (introLines.length && !sections.summary?.length) {
+          sections.summary = introLines;
+        }
+
+        const result = {};
+        Object.entries(sections).forEach(([key, value]) => {
+          const joined = value.join("\n").trim();
+          if (joined) result[key] = joined;
+        });
+        return result;
+      }
+
+      function mergeResumeField(currentValue, nextValue) {
+        const current = (currentValue || "").trim();
+        const next = (nextValue || "").trim();
+        if (!next) return currentValue || "";
+        if (!current) return next;
+        if (current.includes(next)) return current;
+        if (next.includes(current)) return next;
+        return `${current}\n${next}`;
+      }
+
+      function inferResumeHeader(lines, fullText) {
+        const filtered = lines
+          .map((line) => line.trim())
+          .filter(Boolean)
+          .filter((line) => !/@/.test(line))
+          .filter((line) => !/(https?:\/\/|www\.)/i.test(line))
+          .filter((line) => !/\+?\d[\d\s\-()]{7,}/.test(line));
+
+        const name = filtered.find((line) => line.length >= 2 && line.length <= 30 && !/[:：]/.test(line)) || "";
+        const role = filtered.find((line, index) => index > 0 && line !== name && line.length <= 45) || "";
+
+        const emailMatch = fullText.match(/[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}/ig);
+        const phoneMatch = fullText.match(/(?:\+?\d[\d\s\-()]{7,}\d)/);
+        const websiteMatch = fullText.match(/https?:\/\/[^\s]+|www\.[^\s]+/i);
+
+        return {
+          name,
+          role,
+          email: emailMatch ? emailMatch[0] : "",
+          phone: phoneMatch ? phoneMatch[0].replace(/\s+/g, " ").trim() : "",
+          website: websiteMatch ? websiteMatch[0] : ""
+        };
+      }
+
+      function parsePdfResumeText(text, fileName = "") {
+        const normalizedText = normalizeResumeText(text);
+        const lines = normalizedText.split("\n").map((line) => line.trim()).filter(Boolean);
+        const header = inferResumeHeader(lines.slice(0, 12), normalizedText);
+        const sections = splitResumeSections(normalizedText);
+        const locationMatch = normalizedText.match(/(?:台北|新北|桃園|台中|台南|高雄|基隆|新竹|嘉義|苗栗|彰化|南投|雲林|屏東|宜蘭|花蓮|台東|澎湖|Taipei|Taichung|Tainan|Kaohsiung)[^\n,;，；]{0,12}/i);
+
+        const summaryFallback = lines
+          .filter((line) => line !== header.name && line !== header.role)
+          .slice(0, 4)
+          .join("\n");
+
+        return {
+          name: header.name,
+          role: header.role,
+          email: header.email,
+          phone: header.phone,
+          website: header.website,
+          location: locationMatch ? locationMatch[0].trim() : "",
+          summary: sections.summary || summaryFallback,
+          skills: sections.skills || "",
+          highlights: sections.highlights || "",
+          experience: sections.experience || "",
+          education: sections.education || "",
+          projects: sections.projects || "",
+          awards: sections.awards || "",
+          importedPdfText: normalizedText,
+          importedPdfFileName: fileName || ""
+        };
+      }
+
+      function buildPdfImportPayload(parsed) {
+        const nextData = { ...state.data };
+        const appendFields = ["summary", "skills", "highlights", "experience", "education", "projects", "awards"];
+        const replaceIfBlank = ["name", "role", "email", "phone", "location", "website"];
+
+        replaceIfBlank.forEach((field) => {
+          const nextValue = (parsed[field] || "").trim();
+          if (nextValue && !(nextData[field] || "").trim()) {
+            nextData[field] = nextValue;
+          }
+        });
+
+        appendFields.forEach((field) => {
+          nextData[field] = mergeResumeField(nextData[field], parsed[field]);
+        });
+
+        nextData.importedPdfText = parsed.importedPdfText || "";
+        nextData.importedPdfFileName = parsed.importedPdfFileName || "";
+        return nextData;
+      }
+
+      async function extractPdfText(file) {
+        if (!window.pdfjsLib) {
+          throw new Error("PDF 解析工具尚未載入完成，請稍候再試。");
+        }
+
+        const workerSrc = "https://cdn.jsdelivr.net/npm/pdfjs-dist@3.11.174/build/pdf.worker.min.js";
+        if (window.pdfjsLib.GlobalWorkerOptions?.workerSrc !== workerSrc) {
+          window.pdfjsLib.GlobalWorkerOptions.workerSrc = workerSrc;
+        }
+
+        const buffer = await file.arrayBuffer();
+        const pdf = await window.pdfjsLib.getDocument({ data: buffer }).promise;
+        const pages = [];
+
+        for (let pageNumber = 1; pageNumber <= pdf.numPages; pageNumber += 1) {
+          const page = await pdf.getPage(pageNumber);
+          const content = await page.getTextContent();
+          const lines = [];
+          let currentLine = [];
+
+          content.items.forEach((item) => {
+            const chunk = String(item.str || "").trim();
+            if (chunk) currentLine.push(chunk);
+            if (item.hasEOL && currentLine.length) {
+              lines.push(currentLine.join(" ").trim());
+              currentLine = [];
+            }
+          });
+
+          if (currentLine.length) {
+            lines.push(currentLine.join(" ").trim());
+          }
+
+          const pageText = lines.join("\n").trim();
+          if (pageText) pages.push(pageText);
+        }
+
+        return normalizeResumeText(pages.join("\n\n"));
+      }
+
+      async function importPdfResume(file) {
+        if (!file) return;
+        if (!/\.pdf$/i.test(file.name) && file.type !== "application/pdf") {
+          setMessage("請選擇 PDF 格式的履歷檔案。", "error");
+          return;
+        }
+        if (!confirm("匯入 PDF 後，系統會保留目前資料並把辨識出的內容合併進編輯器欄位，是否繼續？")) return;
+
+        try {
+          setMessage("正在解析 PDF 履歷，請稍候…", "success");
+          const text = await extractPdfText(file);
+          if (!text) {
+            throw new Error("未能從 PDF 中讀取到文字，可能是掃描圖檔型 PDF。");
+          }
+          const parsed = parsePdfResumeText(text, file.name);
+          pushUndo();
+          state.data = buildPdfImportPayload(parsed);
+          saveJson(STORAGE_KEY, state.data);
+          syncInputs();
+          updatePreview(true);
+          updateWordCount();
+          updatePdfImportStatus();
+          notifyCvDataUpdated("pdf-import");
+          setMessage("PDF 履歷已匯入，可直接在欄位中編輯，求職顧問也會讀取這份內容。", "success");
+        } catch (error) {
+          setMessage(`PDF 匯入失敗：${error.message || "請稍後再試。"}`, "error");
+        }
       }
 
       /* ══════════════════════════════════════════════════════
@@ -6947,11 +8081,15 @@
         pushUndo();
         const blank = {};
         fields.forEach(f => { blank[f] = ""; });
+        blank.importedPdfText = "";
+        blank.importedPdfFileName = "";
         state.data = { ...state.data, ...blank };
         saveJson(STORAGE_KEY, state.data);
         syncInputs();
         updatePreview(true);
         updateWordCount();
+        updatePdfImportStatus();
+        notifyCvDataUpdated("clear-all");
         setMessage("所有 CV 資料已清除。", "success");
       }
 
@@ -6977,6 +8115,11 @@
         $("importJsonBtn")?.addEventListener("click", () => $("importJsonInput")?.click());
         $("importJsonInput")?.addEventListener("change", (e) => {
           importJson(e.target.files[0]);
+          e.target.value = "";
+        });
+        $("importPdfBtn")?.addEventListener("click", () => $("importPdfInput")?.click());
+        $("importPdfInput")?.addEventListener("change", async (e) => {
+          await importPdfResume(e.target.files[0]);
           e.target.value = "";
         });
 
@@ -7013,6 +8156,7 @@
         // Load saved accent & snapshots
         loadSavedAccent();
         renderSnapshotList();
+        updatePdfImportStatus();
         updateWordCount();
         updateQrCode();
         updateUndoRedoBtns();
@@ -7045,6 +8189,16 @@
         registerServiceWorker();
         updateActionButtons();
         renderGoogleImpactChecklist();
+        window.addEventListener("cv:language-changed", () => {
+          syncWorkflowUi();
+          updatePreview(true);
+          syncLayoutControls();
+          syncRuntimeConfigStatus();
+          updateAuthUi();
+          syncLogoutFeedback();
+          updateActionButtons();
+          renderGoogleImpactChecklist();
+        });
         await refreshSession();
       }
 
@@ -8489,6 +9643,10 @@
 
         renderEditor();
         renderPreview();
+        window.addEventListener("cv:language-changed", () => {
+          renderEditor();
+          renderPreview();
+        });
       }
 
       window.switchCvStudioTab = switchTab;
@@ -8562,6 +9720,7 @@
             d.experience && `工作經歷：${d.experience}`,
             d.education  && `教育背景：${d.education}`,
             d.projects   && `專案/作品：${d.projects}`,
+            d.importedPdfText && `PDF 匯入原文：${d.importedPdfText}`,
           ].filter(Boolean);
           return parts.length ? parts.join("\n\n") : "";
         }
@@ -8597,6 +9756,10 @@
 
           const provider = detectProvider(key);
           if (!provider) throw new Error("無法識別 API Key 格式，請確認是否來自 Anthropic、OpenAI、Google Gemini 或 Groq");
+          const outputLanguageInstruction = window.cvStudioI18n?.getLanguage?.() === "en"
+            ? "Output every user-facing JSON value in professional English. Keep JSON keys unchanged."
+            : "請用繁體中文輸出所有使用者可見的 JSON 值。請保留 JSON key 不變。";
+          const localizedSystemPrompt = `${systemPrompt}\n\n${outputLanguageInstruction}`;
 
           let res, data;
 
@@ -8613,7 +9776,7 @@
               body: JSON.stringify({
                 model: "claude-opus-4-6",
                 max_tokens: 2048,
-                system: systemPrompt,
+                system: localizedSystemPrompt,
                 messages: [{ role: "user", content: userPrompt }],
               }),
             });
@@ -8634,7 +9797,7 @@
                 model: "gpt-4o",
                 max_tokens: 2048,
                 messages: [
-                  { role: "system", content: systemPrompt },
+                  { role: "system", content: localizedSystemPrompt },
                   { role: "user",   content: userPrompt },
                 ],
               }),
@@ -8650,7 +9813,7 @@
               method: "POST",
               headers: { "Content-Type": "application/json" },
               body: JSON.stringify({
-                contents: [{ role: "user", parts: [{ text: `${systemPrompt}\n\n${userPrompt}` }] }],
+                contents: [{ role: "user", parts: [{ text: `${localizedSystemPrompt}\n\n${userPrompt}` }] }],
                 generationConfig: { maxOutputTokens: 2048 },
               }),
             });
@@ -8671,7 +9834,7 @@
                 model: "llama-3.3-70b-versatile",
                 max_tokens: 2048,
                 messages: [
-                  { role: "system", content: systemPrompt },
+                  { role: "system", content: localizedSystemPrompt },
                   { role: "user",   content: userPrompt },
                 ],
               }),
@@ -9178,6 +10341,14 @@
           });
 
           window.addEventListener("cv:supabase-client-changed", () => {
+            syncCareerAdvisorState();
+          });
+
+          window.addEventListener("cv:data-updated", () => {
+            updateCvSnippet();
+          });
+
+          window.addEventListener("cv:language-changed", () => {
             syncCareerAdvisorState();
           });
 

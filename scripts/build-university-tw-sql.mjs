@@ -92,6 +92,71 @@ function sqlJson(value, fallback = null) {
   return `${sqlString(JSON.stringify(payload))}::jsonb`;
 }
 
+function parseYearLabel(value) {
+  const match = cleanText(value).match(/(\d{2,3})年/);
+  return match ? Number(match[1]) : null;
+}
+
+function buildRowMapByYear(rows) {
+  const map = new Map();
+  for (const row of Array.isArray(rows) ? rows : []) {
+    const year = parseYearLabel(row?.col0);
+    if (!year) continue;
+    const normalized = {};
+    for (const [key, value] of Object.entries(row || {})) {
+      if (key === "col0") continue;
+      normalized[key] = cleanText(value);
+    }
+    map.set(year, normalized);
+  }
+  return map;
+}
+
+function buildHistoryReportMap(links) {
+  const map = new Map();
+  for (const link of Array.isArray(links) ? links : []) {
+    const year = parseYearLabel(link?.label);
+    const url = cleanText(link?.url);
+    if (!year || !url || !url.includes("/apply_his_report/")) continue;
+    map.set(year, url);
+  }
+  return map;
+}
+
+function parseCompactCaacScoreRows(subjectText) {
+  const text = cleanText(subjectText);
+  if (!text || !text.includes("結果") || !/\d{2,3}年/.test(text)) return [];
+
+  const tokens = text.split(" ").filter(Boolean);
+  const yearIndexes = tokens
+    .map((token, index) => ({ token, index, year: parseYearLabel(token) }))
+    .filter((item) => item.year);
+
+  if (!yearIndexes.length) return [];
+
+  const headers = tokens.slice(0, yearIndexes[0].index).map((item) => cleanText(item));
+  if (!headers.length) return [];
+
+  const rows = [];
+  for (let i = 0; i < yearIndexes.length; i += 1) {
+    const current = yearIndexes[i];
+    const nextIndex = yearIndexes[i + 1]?.index ?? tokens.length;
+    const values = tokens.slice(current.index + 1, nextIndex);
+    if (!values.length) continue;
+
+    const payload = {};
+    for (let j = 0; j < headers.length; j += 1) {
+      payload[headers[j]] = cleanText(values[j] ?? "");
+    }
+    rows.push({
+      year: current.year,
+      payload
+    });
+  }
+
+  return rows;
+}
+
 function buildSnapshotId(raw, explicitSnapshotId) {
   if (explicitSnapshotId) return explicitSnapshotId;
   const isoDate = new Date().toISOString().slice(0, 10).replace(/-/g, "");
@@ -244,14 +309,30 @@ function buildSql(raw, snapshotId) {
   }
 
   const caacRows = [];
+  const caacScoreRows = [];
   for (const school of raw?.sections?.caac?.schools || []) {
     for (const department of school.departmentDetails || []) {
       const code = cleanText(department.code);
       const name = cleanText(department.name);
       if (!code || !name) continue;
+      const universityCode =
+        nameToCode[cleanText(school.name)] || normalizeUniversityCode(school.code, school.name);
+      const standardsByYear = buildRowMapByYear(department.standards);
+      const multipliersByYear = buildRowMapByYear(department.multipliers);
+      const compactRowsByYear = new Map(
+        parseCompactCaacScoreRows(department.subjectText).map((row) => [row.year, row.payload])
+      );
+      const historyReportsByYear = buildHistoryReportMap(department.historyLinks);
+      const years = new Set([
+        ...standardsByYear.keys(),
+        ...multipliersByYear.keys(),
+        ...compactRowsByYear.keys()
+      ]);
+      const currentYear = years.size ? Math.max(...years) : null;
+
       caacRows.push({
         snapshot_id: sqlString(snapshotId),
-        university_code: sqlString(nameToCode[cleanText(school.name)] || normalizeUniversityCode(school.code, school.name)),
+        university_code: sqlString(universityCode),
         department_code: sqlString(code),
         department_name: sqlString(name),
         exam_date: sqlString(cleanText(department.examDate)),
@@ -269,6 +350,33 @@ function buildSql(raw, snapshotId) {
         title: sqlString(cleanText(department.title)),
         heading: sqlString(cleanText(department.heading))
       });
+
+      for (const year of Array.from(years).sort((a, b) => b - a)) {
+        const standards = standardsByYear.get(year) || {};
+        const multipliers = multipliersByYear.get(year) || {};
+        const scorePayload = compactRowsByYear.get(year) || {};
+        caacScoreRows.push({
+          snapshot_id: sqlString(snapshotId),
+          university_code: sqlString(universityCode),
+          department_code: sqlString(code),
+          department_name: sqlString(name),
+          admission_year: sqlInteger(year),
+          exam_date: sqlString(cleanText(department.examDate)),
+          admission_info: sqlString(cleanText(department.admissionInfo)),
+          subject_text: sqlString(cleanText(department.subjectText)),
+          standards: sqlJson(standards, {}),
+          multipliers: sqlJson(multipliers, {}),
+          filter_result: sqlJson(
+            currentYear !== null && year === currentYear - 1 && Array.isArray(department.previousYearFilterResult)
+              ? department.previousYearFilterResult
+              : [],
+            []
+          ),
+          score_payload: sqlJson(scorePayload, {}),
+          history_report_url: sqlString(cleanText(historyReportsByYear.get(year))),
+          source_url: sqlString(cleanText(department.url))
+        });
+      }
     }
   }
 
@@ -367,6 +475,10 @@ function buildSql(raw, snapshotId) {
     starRows,
     (row) => `${row.snapshot_id}|${row.university_code}|${row.department_code}`
   );
+  const uniqueCaacScoreRows = dedupeRows(
+    caacScoreRows,
+    (row) => `${row.snapshot_id}|${row.university_code}|${row.department_code}|${row.admission_year}`
+  );
   const uniqueGenderRows = dedupeRows(
     genderRows,
     (row) => `${row.snapshot_id}|${row.university_code}|${row.department_name}`
@@ -407,6 +519,7 @@ set
 delete from public.university_tw_registration_departments where snapshot_id = ${sqlString(snapshotId)};
 delete from public.university_tw_gender_departments where snapshot_id = ${sqlString(snapshotId)};
 delete from public.university_tw_star_departments where snapshot_id = ${sqlString(snapshotId)};
+delete from public.university_tw_caac_scores where snapshot_id = ${sqlString(snapshotId)};
 delete from public.university_tw_caac_departments where snapshot_id = ${sqlString(snapshotId)};
 delete from public.university_tw_uac_departments where snapshot_id = ${sqlString(snapshotId)};
 delete from public.university_tw_universities where snapshot_id = ${sqlString(snapshotId)};
@@ -462,6 +575,26 @@ ${buildInsert(
     "heading"
   ],
   uniqueCaacRows
+)}
+${buildInsert(
+  "public.university_tw_caac_scores",
+  [
+    "snapshot_id",
+    "university_code",
+    "department_code",
+    "department_name",
+    "admission_year",
+    "exam_date",
+    "admission_info",
+    "subject_text",
+    "standards",
+    "multipliers",
+    "filter_result",
+    "score_payload",
+    "history_report_url",
+    "source_url"
+  ],
+  uniqueCaacScoreRows
 )}
 ${buildInsert(
   "public.university_tw_star_departments",

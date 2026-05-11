@@ -73,6 +73,34 @@ create table if not exists public.university_tw_caac_departments (
 create index if not exists university_tw_caac_departments_name_idx
   on public.university_tw_caac_departments (department_name);
 
+create table if not exists public.university_tw_caac_scores (
+  snapshot_id text not null,
+  university_code text not null,
+  department_code text not null,
+  department_name text not null,
+  admission_year integer not null,
+  exam_date text,
+  admission_info text,
+  subject_text text,
+  standards jsonb not null default '{}'::jsonb,
+  multipliers jsonb not null default '{}'::jsonb,
+  filter_result jsonb not null default '[]'::jsonb,
+  score_payload jsonb not null default '{}'::jsonb,
+  history_report_url text,
+  source_url text,
+  created_at timestamptz not null default now(),
+  primary key (snapshot_id, university_code, department_code, admission_year),
+  foreign key (snapshot_id, university_code)
+    references public.university_tw_universities(snapshot_id, university_code)
+    on delete cascade
+);
+
+create index if not exists university_tw_caac_scores_name_idx
+  on public.university_tw_caac_scores (department_name);
+
+create index if not exists university_tw_caac_scores_year_idx
+  on public.university_tw_caac_scores (admission_year);
+
 create table if not exists public.university_tw_star_departments (
   snapshot_id text not null,
   university_code text not null,
