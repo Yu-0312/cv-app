@@ -9,7 +9,7 @@
 ## Features
 
 - **Google Sign-In** — Secure OAuth via Supabase; CV data is automatically tied to your account
-- **9 Templates** — Academic Warm, Slate, Mono, Serif Ivory, Forest, Rose, Midnight, Sand, Plum
+- **28 Templates** — Academic, business, engineering, creative, GitHub-inspired print, and ATS-friendly resume styles
 - **Live Preview** — Type on the left, see results on the right instantly
 - **WYSIWYG Editing** — Click any field directly in the preview pane to edit (no need to switch back to the form)
 - **Cloud Storage** — One-click save and load for authenticated users
@@ -83,7 +83,7 @@ Deployment steps:
 ### CV Editor
 
 - Fill in your CV details in the left panel; the right panel updates in real time
-- Switch between 9 color templates using the buttons at the top
+- Switch between 28 resume templates using the buttons at the top
 - After signing in, click **Save My CV** to store your data in the cloud
 - Click **Download PDF** to export the current template as a PDF
 - If your browser supports it, click **Install App** to install as a native-like app

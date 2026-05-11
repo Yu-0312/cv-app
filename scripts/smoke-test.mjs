@@ -325,7 +325,9 @@ async function main() {
           name: "測試學生",
           role: "前端工程師",
           summary: "熟悉網頁開發與介面優化。",
-          skills: "JavaScript\nHTML\nCSS"
+          skills: "JavaScript\nHTML\nCSS",
+          importedPdfText: "PDF 原文：曾參與履歷匯入測試與求職顧問分析。",
+          importedPdfFileName: "smoke-resume.pdf"
         });
         window.localStorage.setItem("cv-studio-local-v2", JSON.stringify(window.cvStudioState.data));
       });
@@ -334,8 +336,16 @@ async function main() {
       await page.waitForSelector("#page-career.active");
       await page.waitForFunction(() => {
         const node = document.getElementById("careerCvSnippet");
-        return node && /測試學生|前端工程師/.test(node.textContent || "");
+        return node && /測試學生|前端工程師/.test(node.textContent || "") && /smoke-resume\.pdf/.test(node.textContent || "");
       });
+      const uploadEntrypointsReady = await page.evaluate(() => {
+        return Boolean(
+          document.getElementById("uploadCvPdfBtn") &&
+          document.getElementById("careerUploadCvBtn") &&
+          typeof window.openCvPdfImport === "function"
+        );
+      });
+      assert.equal(uploadEntrypointsReady, true);
 
       await page.click(".career-mode-tab[data-mode='position']");
       await page.waitForFunction(() => {
@@ -398,6 +408,100 @@ async function main() {
       const suggestionText = await page.$eval("#gsatResultsArea", (node) => node.textContent || "");
       assert.ok(actionCount >= 1, "無切線 fallback 應提供至少一個快速操作按鈕");
       assert.doesNotMatch(suggestionText, /土木工程學系|化學工程學系|材料科學與工程學系/);
+    });
+
+    await withStep("模板 placeholder 一致性", async () => {
+      const audit = await page.evaluate(async () => {
+        const wait = (ms) => new Promise((resolve) => window.setTimeout(resolve, ms));
+        const cvFields = ["name", "role", "email", "phone", "location", "website", "avatar", "summary", "skills", "highlights", "experience", "education", "projects", "awards"];
+        const placeholderPattern = /^(姓名|職稱 \/ 角色|職稱|摘要|Email|電話|地點|網站 \/ 作品集|日期|職稱 \/ 名稱|單位 \/ 機構|內容說明)$/;
+
+        window.switchCvStudioTab("cv");
+        await wait(50);
+        const cv = [];
+        const templateIds = Array.from(document.querySelectorAll("[data-template-chip]")).map((node) => node.dataset.templateChip);
+        for (const templateId of templateIds) {
+          cvFields.forEach((field) => {
+            window.cvStudioState.data[field] = "";
+            const input = document.getElementById(field);
+            if (input) input.value = "";
+          });
+          document.querySelector(`[data-template-chip="${CSS.escape(templateId)}"]`)?.click();
+          await wait(15);
+          const paper = document.getElementById("cvPaper");
+          const actualPromptText = Array.from(paper.querySelectorAll('[contenteditable="true"][data-ph]'))
+            .filter((node) => placeholderPattern.test((node.textContent || "").trim()))
+            .map((node) => ({ field: node.dataset.field, text: (node.textContent || "").trim() }));
+          const verticalContactPlaceholders = Array.from(paper.querySelectorAll('.contact-list [contenteditable="true"][data-ph]'))
+            .map((node) => {
+              const rect = node.getBoundingClientRect();
+              const lineHeight = Number.parseFloat(window.getComputedStyle(node).lineHeight) || 16;
+              return {
+                field: node.dataset.field,
+                placeholder: node.getAttribute("data-ph") || "",
+                width: rect.width,
+                height: rect.height,
+                lineHeight
+              };
+            })
+            .filter((item) => item.width < 48 || item.height > item.lineHeight * 1.8);
+          cv.push({
+            templateId,
+            actualPromptText,
+            verticalContactPlaceholders,
+            overflowing: paper.scrollHeight > paper.clientHeight + 2 || paper.scrollWidth > paper.clientWidth + 2
+          });
+        }
+
+        window.switchCvStudioTab("portfolio");
+        await wait(50);
+        const setInput = (selector, value) => {
+          const input = document.querySelector(selector);
+          if (!input) return;
+          input.value = value;
+          input.dispatchEvent(new Event("input", { bubbles: true }));
+        };
+        setInput("#pfTitle", "");
+        setInput("#pfStudentName", "");
+        setInput("#pfSchool", "");
+        setInput("#pfCoverImage", "");
+        setInput('[data-ch-title="0"]', "");
+        setInput('[data-sec-hdr="0-0"]', "");
+        setInput('[data-sec-body="0-0"]', "");
+        setInput('[data-sec-img="0-0"]', "");
+        setInput('[data-sec-cap="0-0"]', "");
+        await wait(50);
+
+        const portfolio = [];
+        const themeIds = Array.from(document.querySelectorAll("[data-pf-theme]")).map((node) => node.dataset.pfTheme);
+        for (const themeId of themeIds) {
+          document.querySelector(`[data-pf-theme="${CSS.escape(themeId)}"]`)?.click();
+          await wait(20);
+          const area = document.getElementById("pfPreviewArea");
+          const editables = Array.from(area.querySelectorAll(".pf-inline-editable"));
+          const pagesOverflow = Array.from(area.querySelectorAll(".pf-page"))
+            .map((pageNode, index) => ({
+              index,
+              overX: pageNode.scrollWidth > pageNode.clientWidth + 2,
+              overY: pageNode.scrollHeight > pageNode.clientHeight + 2
+            }))
+            .filter((item) => item.overX || item.overY);
+          portfolio.push({
+            themeId,
+            editableCount: editables.length,
+            emptyEditableCount: editables.filter((node) => !(node.textContent || "").trim()).length,
+            pagesOverflow
+          });
+        }
+
+        return { cv, portfolio };
+      });
+
+      const badCv = audit.cv.filter((item) => item.actualPromptText.length || item.verticalContactPlaceholders.length || item.overflowing);
+      assert.deepEqual(badCv, [], "CV 模板不得把 placeholder 當成實際文字，也不得溢出紙張");
+
+      const badPortfolio = audit.portfolio.filter((item) => item.editableCount < 9 || item.pagesOverflow.length);
+      assert.deepEqual(badPortfolio, [], "Portfolio 模板必須保留 inline placeholder，且不得溢出頁面");
     });
 
     assert.deepEqual(pageErrors, [], `頁面執行錯誤：\n${pageErrors.join("\n")}`);

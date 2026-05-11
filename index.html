@@ -37,8 +37,8 @@
   <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
   <style>
     :root {
-      --bg: #f3efe6;
-      --bg-strong: #e7dece;
+      --bg: #f3f5f1;
+      --bg-strong: #e2e7de;
       --surface: rgba(255, 250, 244, 0.92);
       --surface-strong: #fffaf4;
       --ink: #1f2430;
@@ -50,7 +50,7 @@
       --success: #157347;
       --danger: #a73b33;
       --shadow: 0 24px 80px rgba(50, 38, 18, 0.12);
-      --radius: 26px;
+      --radius: 18px;
       --paper: #fffefb;
       --paper-line: #ddd2c1;
       --template-accent: #ad3f2f;
@@ -68,10 +68,7 @@
       margin: 0;
       font-family: "Iowan Old Style", "Palatino Linotype", "Noto Serif TC", serif;
       color: var(--ink);
-      background:
-        radial-gradient(circle at top left, rgba(216, 159, 61, 0.18), transparent 26%),
-        radial-gradient(circle at 85% 10%, rgba(33, 78, 116, 0.16), transparent 22%),
-        linear-gradient(180deg, #f8f5ee 0%, var(--bg) 45%, #efe8da 100%);
+      background: linear-gradient(180deg, #f7f8f4 0%, var(--bg) 46%, #f5f0e8 100%);
       min-height: 100vh;
     }
 
@@ -268,6 +265,348 @@
 
     .canva-btn svg {
       flex: 0 0 auto;
+    }
+
+    #page-home {
+      --home-ink: #17201f;
+      --home-muted: #64716d;
+      --home-line: rgba(23, 32, 31, 0.12);
+      --home-panel: rgba(255, 255, 255, 0.86);
+      --home-teal: #127a76;
+      --home-green: #3f7b5a;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans TC", sans-serif;
+      color: var(--home-ink);
+    }
+
+    .home-dashboard {
+      display: grid;
+      grid-template-columns: minmax(0, 1.14fr) minmax(320px, 0.86fr);
+      gap: 16px;
+      align-items: stretch;
+      margin-bottom: 16px;
+    }
+
+    .home-intro,
+    .home-status-panel,
+    .home-panel,
+    .feature-card {
+      background: var(--home-panel);
+      border: 1px solid var(--home-line);
+      border-radius: 8px;
+      box-shadow: 0 18px 48px rgba(23, 32, 31, 0.08);
+    }
+
+    .home-intro {
+      min-height: 430px;
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 34px;
+    }
+
+    .home-kicker {
+      display: inline-flex;
+      width: fit-content;
+      align-items: center;
+      gap: 8px;
+      padding: 7px 11px;
+      border-radius: 8px;
+      background: rgba(18, 122, 118, 0.1);
+      color: var(--home-teal);
+      font-size: 0.78rem;
+      font-weight: 800;
+      letter-spacing: 0;
+    }
+
+    .home-title {
+      margin-top: 18px;
+      max-width: 15ch;
+      color: var(--home-ink);
+      font-size: 3.65rem;
+      font-weight: 800;
+      line-height: 1.08;
+      letter-spacing: 0;
+    }
+
+    .home-lead {
+      margin-top: 18px;
+      max-width: 58ch;
+      color: var(--home-muted);
+      font-size: 1rem;
+      line-height: 1.75;
+    }
+
+    .home-actions {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 10px;
+    }
+
+    .home-action,
+    .feature-card-action {
+      width: 100%;
+      min-height: 48px;
+      border-radius: 8px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      font-size: 0.95rem;
+      font-weight: 800;
+      line-height: 1.2;
+      letter-spacing: 0;
+      text-decoration: none;
+    }
+
+    .home-action.primary {
+      background: var(--home-teal);
+      color: #fff;
+      border-color: transparent;
+    }
+
+    .home-action.secondary {
+      background: #1d2d2b;
+      color: #fff;
+      border-color: transparent;
+    }
+
+    .home-action.tertiary {
+      background: #fff;
+      color: var(--home-ink);
+      border-color: var(--home-line);
+    }
+
+    .home-status-panel {
+      padding: 22px;
+      display: grid;
+      gap: 18px;
+      align-content: start;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.94), rgba(244, 248, 246, 0.9));
+    }
+
+    .home-panel-header {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      align-items: center;
+    }
+
+    .home-panel-header strong {
+      font-size: 1rem;
+    }
+
+    .home-panel-header span {
+      color: var(--home-muted);
+      font-size: 0.84rem;
+      font-weight: 700;
+    }
+
+    .home-progress {
+      display: grid;
+      gap: 10px;
+    }
+
+    .home-progress-top {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      color: var(--home-muted);
+      font-size: 0.86rem;
+      font-weight: 700;
+    }
+
+    .home-progress-track {
+      height: 10px;
+      overflow: hidden;
+      border-radius: 999px;
+      background: rgba(23, 32, 31, 0.08);
+    }
+
+    .home-progress-fill {
+      width: 42%;
+      height: 100%;
+      border-radius: inherit;
+      background: linear-gradient(90deg, var(--home-teal), var(--home-green));
+    }
+
+    .home-task-list {
+      display: grid;
+      gap: 10px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .home-task {
+      display: grid;
+      grid-template-columns: 28px minmax(0, 1fr) auto;
+      gap: 10px;
+      align-items: center;
+      padding: 12px;
+      border: 1px solid rgba(23, 32, 31, 0.08);
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.72);
+    }
+
+    .home-task-mark {
+      width: 28px;
+      height: 28px;
+      display: grid;
+      place-items: center;
+      border-radius: 8px;
+      background: rgba(18, 122, 118, 0.12);
+      color: var(--home-teal);
+      font-weight: 900;
+    }
+
+    .home-task strong {
+      display: block;
+      font-size: 0.92rem;
+      line-height: 1.35;
+    }
+
+    .home-task span {
+      display: block;
+      margin-top: 2px;
+      color: var(--home-muted);
+      font-size: 0.78rem;
+      line-height: 1.45;
+    }
+
+    .home-task-state {
+      padding: 5px 8px;
+      border-radius: 999px;
+      background: rgba(209, 152, 47, 0.14);
+      color: #8b5e12;
+      font-size: 0.72rem;
+      font-weight: 800;
+      white-space: nowrap;
+    }
+
+    .home-mini-stats {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 8px;
+    }
+
+    .home-mini-stat {
+      padding: 12px;
+      border-radius: 8px;
+      background: rgba(23, 32, 31, 0.04);
+      border: 1px solid rgba(23, 32, 31, 0.08);
+    }
+
+    .home-mini-stat strong {
+      display: block;
+      font-size: 1.18rem;
+      line-height: 1;
+    }
+
+    .home-mini-stat span {
+      display: block;
+      margin-top: 6px;
+      color: var(--home-muted);
+      font-size: 0.75rem;
+      line-height: 1.45;
+    }
+
+    .home-utility-row {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+    }
+
+    .home-utility-row .button-link,
+    .home-utility-row button {
+      width: 100%;
+      min-height: 44px;
+      border-radius: 8px;
+      justify-content: center;
+      font-size: 0.86rem;
+      font-weight: 800;
+    }
+
+    .home-support-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.15fr) minmax(280px, 0.85fr);
+      gap: 16px;
+    }
+
+    .home-panel {
+      padding: 18px;
+    }
+
+    .home-panel h2 {
+      margin: 0 0 12px;
+      color: var(--home-ink);
+      font-size: 1rem;
+      letter-spacing: 0;
+    }
+
+    .home-path-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 10px;
+    }
+
+    .home-path {
+      padding: 14px;
+      border: 1px solid rgba(23, 32, 31, 0.08);
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.72);
+    }
+
+    .home-path small {
+      display: block;
+      color: var(--home-muted);
+      font-size: 0.76rem;
+      font-weight: 800;
+      line-height: 1.4;
+    }
+
+    .home-path strong {
+      display: block;
+      margin-top: 7px;
+      font-size: 0.95rem;
+      line-height: 1.45;
+    }
+
+    .home-path span {
+      display: block;
+      margin-top: 6px;
+      color: var(--home-muted);
+      font-size: 0.78rem;
+      line-height: 1.55;
+    }
+
+    .home-note-list {
+      display: grid;
+      gap: 10px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .home-note-list li {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid rgba(23, 32, 31, 0.08);
+      color: var(--home-muted);
+      font-size: 0.88rem;
+      line-height: 1.55;
+    }
+
+    .home-note-list li:last-child {
+      padding-bottom: 0;
+      border-bottom: 0;
+    }
+
+    .home-note-list strong {
+      color: var(--home-ink);
+      white-space: nowrap;
     }
 
     .hero {
@@ -642,93 +981,95 @@
       gap: 12px;
     }
 
-    .feature-card strong {
-      display: block;
-      margin-bottom: 8px;
-      color: var(--template-heading);
-    }
-
-    .feature-card p {
-      color: var(--muted);
-      font-size: 0.94rem;
-      line-height: 1.65;
-    }
-
     .feature-strip {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 14px;
-      margin-bottom: 18px;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+      margin-bottom: 16px;
     }
 
     .feature-card {
       position: relative;
-      padding: 18px;
-      border-radius: 24px;
-      background: rgba(255, 250, 244, 0.84);
-      border: 1px solid rgba(49, 40, 27, 0.08);
-      box-shadow: 0 16px 38px rgba(50, 38, 18, 0.08);
+      min-height: 198px;
+      padding: 16px;
+      border-radius: 8px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      background: var(--home-panel, rgba(255, 255, 255, 0.86));
+      border: 1px solid var(--home-line, rgba(23, 32, 31, 0.12));
+      box-shadow: 0 18px 48px rgba(23, 32, 31, 0.08);
       transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
     }
 
     .feature-card:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 22px 42px rgba(50, 38, 18, 0.12);
-      border-color: rgba(49, 40, 27, 0.16);
+      transform: translateY(-2px);
+      box-shadow: 0 20px 42px rgba(23, 32, 31, 0.11);
+      border-color: rgba(18, 122, 118, 0.24);
     }
 
     .feature-card-tag {
       display: inline-flex;
       align-items: center;
-      padding: 6px 10px;
+      width: fit-content;
+      padding: 5px 8px;
       border-radius: 999px;
-      margin-bottom: 14px;
-      background: rgba(255, 255, 255, 0.76);
-      border: 1px solid rgba(49, 40, 27, 0.08);
-      color: var(--accent);
-      font-size: 0.76rem;
-      font-weight: 700;
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
+      margin-bottom: 0;
+      background: rgba(18, 122, 118, 0.1);
+      border: 0;
+      color: var(--home-teal, #127a76);
+      font-size: 0.72rem;
+      font-weight: 900;
+      letter-spacing: 0;
+      text-transform: none;
     }
 
     .feature-card strong {
       display: block;
-      margin-bottom: 8px;
-      color: var(--template-heading);
+      margin-bottom: 0;
+      color: var(--home-ink, var(--template-heading));
+      font-size: 1.02rem;
+      line-height: 1.45;
     }
 
     .feature-card p {
-      color: var(--muted);
-      font-size: 0.94rem;
+      color: var(--home-muted, var(--muted));
+      font-size: 0.88rem;
       line-height: 1.65;
     }
 
     .feature-card-meta {
       display: block;
-      margin-top: 12px;
-      color: var(--template-heading);
-      font-size: 0.84rem;
-      font-weight: 600;
+      margin-top: auto;
+      color: var(--home-ink, var(--template-heading));
+      font-size: 0.78rem;
+      font-weight: 800;
     }
 
     .feature-card-action {
-      display: inline-block;
-      margin-top: 14px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      min-height: 38px;
+      margin-top: 2px;
       font-size: 0.88rem;
-      font-weight: 600;
-      color: var(--template-heading);
-      background: rgba(255, 255, 255, 0.72);
-      border: 1px solid rgba(49, 40, 27, 0.14);
-      border-radius: 100px;
-      padding: 6px 14px;
+      font-weight: 800;
+      line-height: 1.2;
+      color: var(--home-ink, var(--template-heading));
+      background: #fff;
+      border: 1px solid rgba(23, 32, 31, 0.12);
+      border-radius: 8px;
+      padding: 8px 11px;
       cursor: pointer;
       transition: background 0.15s, border-color 0.15s;
     }
 
     .feature-card-action:hover {
-      background: rgba(255, 255, 255, 0.96);
-      border-color: rgba(49, 40, 27, 0.28);
+      background: rgba(18, 122, 118, 0.08);
+      border-color: rgba(18, 122, 118, 0.26);
+      transform: none;
+      box-shadow: none;
     }
 
 
@@ -1784,10 +2125,246 @@
       background-repeat: repeat-y;
     }
 
+    /* === GitHub 參考模板：重新轉譯為本專案原生版型 === */
+
+    [data-template="paperline"] {
+      --template-accent: #526275;
+      --template-accent-soft: #edf1f5;
+      --template-heading: #1b2533;
+      --template-sidebar: #e8edf2;
+      --template-paper: #ffffff;
+      --paper-line: #cbd4df;
+    }
+    [data-template="paperline"].cv-paper {
+      border-radius: 4px;
+      box-shadow: 0 18px 44px rgba(27, 37, 51, 0.13);
+    }
+    [data-template="paperline"] .cv-sidebar {
+      border-right: 1px solid #cbd4df;
+      background:
+        linear-gradient(180deg, rgba(255,255,255,0.36), transparent 24%),
+        #e8edf2;
+    }
+    [data-template="paperline"] .cv-main {
+      background: #ffffff;
+    }
+    [data-template="paperline"] .cv-name {
+      font-size: 2.34rem;
+      line-height: 1.02;
+      letter-spacing: 0;
+    }
+    [data-template="paperline"] .cv-role {
+      border-radius: 4px;
+      letter-spacing: 0.11em;
+      background: #ffffff;
+      border: 1px solid #cbd4df;
+    }
+    [data-template="paperline"] .aside-block h3,
+    [data-template="paperline"] .main-block h3 {
+      padding-bottom: 7px;
+      border-bottom: 1px solid #cbd4df;
+      letter-spacing: 0.16em;
+    }
+    [data-template="paperline"] .timeline-item {
+      grid-template-columns: 112px 1fr;
+      padding: 13px 0;
+    }
+    [data-template="paperline"] .simple-pill {
+      border-radius: 4px;
+      background: rgba(255,255,255,0.82);
+    }
+
+    [data-template="iconic-pro"] {
+      --template-accent: #0a66c2;
+      --template-accent-soft: #e8f2fb;
+      --template-heading: #17212f;
+      --template-sidebar: #eef6fb;
+      --template-paper: #fbfdff;
+      --paper-line: #c5d8ea;
+    }
+    [data-template="iconic-pro"].cv-paper {
+      border-radius: 8px;
+      border-color: #b8cee3;
+    }
+    [data-template="iconic-pro"] .cv-sidebar {
+      background:
+        linear-gradient(180deg, rgba(10,102,194,0.12), rgba(10,102,194,0.02) 42%),
+        #eef6fb;
+    }
+    [data-template="iconic-pro"] .avatar {
+      border: 4px solid #ffffff;
+      box-shadow: 0 10px 24px rgba(10, 102, 194, 0.18);
+    }
+    [data-template="iconic-pro"] .cv-name {
+      font-size: 2.48rem;
+      letter-spacing: -0.02em;
+    }
+    [data-template="iconic-pro"] .cv-role {
+      border-radius: 8px;
+      background: #0a66c2;
+      color: #ffffff;
+    }
+    [data-template="iconic-pro"] .contact-item {
+      position: relative;
+      padding-left: 14px;
+    }
+    [data-template="iconic-pro"] .contact-item::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0.62em;
+      width: 6px;
+      height: 6px;
+      border-radius: 2px;
+      background: var(--template-accent);
+    }
+    [data-template="iconic-pro"] .simple-pill {
+      border-radius: 7px;
+      border-color: rgba(10,102,194,0.18);
+      background: rgba(255,255,255,0.88);
+    }
+    [data-template="iconic-pro"] .timeline-item {
+      border-top-color: rgba(10,102,194,0.14);
+    }
+
+    [data-template="markdown-cv"] {
+      --template-accent: #2f3a45;
+      --template-accent-soft: #f2f3f4;
+      --template-heading: #15191e;
+      --template-sidebar: #ffffff;
+      --template-paper: #ffffff;
+      --paper-line: #d8dde2;
+    }
+    [data-template="markdown-cv"].cv-paper {
+      border-radius: 0;
+      box-shadow: 0 16px 34px rgba(21, 25, 30, 0.1);
+    }
+    [data-template="markdown-cv"] .cv-sidebar {
+      background: #ffffff;
+      border-bottom: 2px solid #2f3a45;
+      padding-bottom: 22px;
+    }
+    [data-template="markdown-cv"] .cv-main {
+      background: #ffffff;
+      padding-top: 26px;
+    }
+    [data-template="markdown-cv"] .avatar {
+      display: none;
+    }
+    [data-template="markdown-cv"] .cv-name {
+      font-size: 2.22rem;
+      letter-spacing: 0;
+      text-transform: none;
+    }
+    [data-template="markdown-cv"] .cv-role {
+      margin-top: 8px;
+      padding: 0;
+      border-radius: 0;
+      background: transparent;
+      color: var(--template-accent);
+      letter-spacing: 0;
+      text-transform: none;
+    }
+    [data-template="markdown-cv"] .cv-summary {
+      line-height: 1.65;
+    }
+    [data-template="markdown-cv"] .aside-block h3,
+    [data-template="markdown-cv"] .main-block h3 {
+      margin-bottom: 8px;
+      padding-bottom: 5px;
+      border-bottom: 1px solid #2f3a45;
+      color: #15191e;
+      letter-spacing: 0.04em;
+      text-transform: none;
+    }
+    [data-template="markdown-cv"] .timeline-item {
+      grid-template-columns: 116px 1fr;
+      gap: 16px;
+      padding: 10px 0;
+      border-top-color: #e2e6ea;
+    }
+    [data-template="markdown-cv"] .timeline-date {
+      text-align: right;
+      color: #5c6670;
+      font-size: 0.84rem;
+      font-variant-numeric: tabular-nums;
+    }
+    [data-template="markdown-cv"] .simple-pill {
+      border-radius: 0;
+      padding: 4px 0;
+      border: 0;
+      background: transparent;
+      margin-right: 14px;
+    }
+
+    [data-template="bootstrap-rail"] {
+      --template-accent: #bd5d38;
+      --template-accent-soft: #f4e7df;
+      --template-heading: #272727;
+      --template-sidebar: #bd5d38;
+      --template-paper: #fffdfb;
+      --paper-line: #e0c7ba;
+    }
+    [data-template="bootstrap-rail"].cv-paper {
+      border-radius: 6px;
+    }
+    [data-template="bootstrap-rail"] .cv-sidebar {
+      background:
+        linear-gradient(180deg, rgba(255,255,255,0.16), rgba(255,255,255,0)),
+        #bd5d38;
+      color: rgba(255,255,255,0.88);
+    }
+    [data-template="bootstrap-rail"] .cv-sidebar .cv-name,
+    [data-template="bootstrap-rail"] .cv-sidebar .timeline-item h4 {
+      color: #ffffff;
+    }
+    [data-template="bootstrap-rail"] .cv-sidebar .cv-role {
+      background: rgba(255,255,255,0.16);
+      color: #ffffff;
+    }
+    [data-template="bootstrap-rail"] .cv-sidebar .cv-summary,
+    [data-template="bootstrap-rail"] .cv-sidebar .contact-item,
+    [data-template="bootstrap-rail"] .cv-sidebar .timeline-date,
+    [data-template="bootstrap-rail"] .cv-sidebar .timeline-body {
+      color: rgba(255,255,255,0.78);
+    }
+    [data-template="bootstrap-rail"] .cv-sidebar .aside-block h3,
+    [data-template="bootstrap-rail"] .cv-sidebar .main-block h3,
+    [data-template="bootstrap-rail"] .cv-sidebar .timeline-meta {
+      color: #ffe0d0;
+    }
+    [data-template="bootstrap-rail"] .cv-sidebar .simple-pill {
+      background: rgba(255,255,255,0.12);
+      border-color: rgba(255,255,255,0.18);
+      color: rgba(255,255,255,0.88);
+    }
+    [data-template="bootstrap-rail"] .cv-main {
+      background: #fffdfb;
+    }
+    [data-template="bootstrap-rail"] .cv-main .main-block h3 {
+      color: #bd5d38;
+      border-left: 5px solid #bd5d38;
+      padding-left: 10px;
+      letter-spacing: 0.08em;
+    }
+    [data-template="bootstrap-rail"] .timeline-item {
+      grid-template-columns: 120px 1fr;
+      border-top-color: rgba(189,93,56,0.16);
+    }
+
     @media (max-width: 1100px) {
       .workspace,
       .hero-grid {
         grid-template-columns: 1fr;
+      }
+
+      .home-dashboard,
+      .home-support-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .feature-strip {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
       }
 
       .hero-note-grid {
@@ -1810,8 +2387,27 @@
         grid-template-columns: 1fr;
       }
 
+      .home-intro {
+        min-height: 0;
+        padding: 24px;
+      }
+
+      .home-title {
+        max-width: 100%;
+        font-size: 2.75rem;
+      }
+
+      .home-actions,
+      .home-mini-stats,
+      .home-utility-row,
+      .home-path-grid {
+        grid-template-columns: 1fr;
+      }
+
       .page-header {
         position: static;
+        flex-direction: column;
+        align-items: stretch;
         padding: 14px;
       }
 
@@ -1822,12 +2418,23 @@
       }
 
       .header-actions {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
         justify-content: stretch;
       }
 
       .header-actions button,
       .hero-actions > * {
         flex: 1 1 220px;
+      }
+
+      .header-actions .status-pill {
+        grid-column: 1 / -1;
+      }
+
+      .header-actions > * {
+        min-width: 0;
+        justify-content: center;
       }
 
       .hero-action-note {
@@ -1852,6 +2459,28 @@
     @media (max-width: 640px) {
       .hero {
         padding: 22px;
+      }
+
+      .home-dashboard {
+        gap: 12px;
+      }
+
+      .home-intro,
+      .home-status-panel,
+      .home-panel {
+        padding: 18px;
+      }
+
+      .home-title {
+        font-size: 2.08rem;
+      }
+
+      .home-lead {
+        font-size: 0.94rem;
+      }
+
+      .feature-strip {
+        grid-template-columns: 1fr;
       }
 
       .hero h1 {
@@ -1942,6 +2571,27 @@
 
     .app-page { display: none; }
     .app-page.active { display: block; }
+
+    @media (max-width: 860px) {
+      .app-tabs {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: auto;
+        justify-content: flex-start;
+        border-radius: 8px;
+        scrollbar-width: none;
+      }
+
+      .app-tabs::-webkit-scrollbar {
+        display: none;
+      }
+
+      .app-tab {
+        flex: 0 0 auto;
+        white-space: nowrap;
+        padding: 9px 16px;
+      }
+    }
 
     /* ===== PORTFOLIO WORKSPACE ===== */
     .portfolio-workspace {
@@ -2485,6 +3135,12 @@
       transition: background 0.12s ease;
       border-radius: 3px;
     }
+    [contenteditable="true"][data-ph] {
+      min-width: 0;
+      max-width: 100%;
+      overflow-wrap: break-word;
+      word-break: normal;
+    }
     [contenteditable="true"]:hover {
       background: rgba(173, 63, 47, 0.05);
     }
@@ -2512,20 +3168,33 @@
     }
     [contenteditable="true"]:empty::before {
       content: attr(data-ph);
-      color: rgba(100, 100, 100, 0.35);
+      display: inline-block;
+      max-width: 100%;
+      color: currentColor;
+      opacity: 0.45;
       pointer-events: none;
+      white-space: normal;
+      overflow-wrap: break-word;
+      word-break: normal;
     }
     .pf-inline-editable {
       display: block;
       min-height: 1em;
+      max-width: 100%;
       white-space: pre-wrap;
       position: relative;
       z-index: 2;
     }
     .pf-inline-editable[data-ph]:empty::before {
       content: attr(data-ph);
-      color: rgba(100, 100, 100, 0.35);
+      display: inline-block;
+      max-width: 100%;
+      color: currentColor;
+      opacity: 0.45;
       pointer-events: none;
+      white-space: normal;
+      overflow-wrap: break-word;
+      word-break: normal;
     }
     .pf-inline-label {
       display: block;
@@ -2889,6 +3558,44 @@
       text-transform: uppercase;
       letter-spacing: 0.06em;
       margin-bottom: 6px;
+    }
+    .career-cv-actions {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      margin-top: 8px;
+    }
+    .career-upload-btn,
+    .career-link-btn {
+      width: 100%;
+      min-height: 40px;
+      border-radius: 10px;
+      padding: 9px 12px;
+      font-size: 12.5px;
+      font-weight: 700;
+      line-height: 1.25;
+    }
+    .career-upload-btn {
+      background: var(--accent-2);
+      color: #fff;
+      border-color: transparent;
+    }
+    .career-link-btn {
+      background: rgba(255,255,255,0.75);
+      color: var(--ink);
+      border-color: var(--line);
+    }
+    .career-cv-note {
+      margin-top: 7px;
+      color: var(--muted);
+      font-size: 11.5px;
+      line-height: 1.5;
+    }
+    .career-cv-source {
+      margin-bottom: 6px;
+      color: var(--accent-2);
+      font-size: 11.5px;
+      font-weight: 800;
     }
     .career-textarea {
       width: 100%;
@@ -3437,156 +4144,149 @@
     </nav>
 
     <div id="page-home" class="app-page active">
-    <section class="hero panel">
-      <div class="eyebrow">CV Studio / Web + App</div>
-      <div class="hero-grid">
-        <div class="hero-copy">
-          <h1>把履歷、學習歷程與學測分析整理成同一套工作流。</h1>
-          <p class="hero-lead">
-            先編輯履歷、補齊學習歷程，再用學測落點快速比對校系方向。首頁現在會直接告訴你下一步做什麼，也保留無登入就能先開始的彈性。
-          </p>
-          <div class="hero-actions">
-            <button id="startEditingBtn" class="primary" type="button">開始編輯履歷</button>
-            <button id="goPortfolioBtn" class="secondary" type="button">查看學習歷程</button>
-            <a class="canva-btn button-link" href="https://www.canva.com/" data-canva-trigger target="_blank" rel="noreferrer noopener">
-              <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
-                <path fill="currentColor" d="M12 2.5c4.9 0 8.95 3.35 8.95 8.59 0 5.53-4.24 10.41-9.82 10.41-4.73 0-8.08-3.48-8.08-7.77 0-4.81 3.81-8.84 8.78-8.84 2.12 0 3.97.74 5.34 2.05l-1.76 1.92c-.98-.92-2.09-1.41-3.48-1.41-3.14 0-5.6 2.59-5.6 5.96 0 2.78 1.95 5.31 4.93 5.31 2.89 0 5.16-2.76 5.16-6.06 0-3.14-2.02-5.66-4.8-5.66-1.53 0-2.79.81-3.67 2.05l-2.1-1.31C7.02 4.42 9.24 2.5 12 2.5Z"/>
-              </svg>
-              連接 Canva
-            </a>
-            <a class="soft google-btn button-link" href="#" data-login-trigger="google" aria-disabled="true">
-              <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
-                <path fill="#EA4335" d="M12 10.2v3.9h5.5c-.2 1.2-1.4 3.6-5.5 3.6-3.3 0-6-2.8-6-6.2s2.7-6.2 6-6.2c1.9 0 3.1.8 3.8 1.5l2.6-2.5C16.8 2.8 14.6 2 12 2 6.9 2 2.8 6.3 2.8 11.5S6.9 21 12 21c6.9 0 9.1-4.8 9.1-7.3 0-.5 0-.9-.1-1.3H12Z"/>
-                <path fill="#34A853" d="M2.8 11.5c0 1.7.6 3.4 1.7 4.8l3.3-2.6c-.4-.6-.7-1.4-.7-2.2s.2-1.5.7-2.2L4.5 6.7c-1.1 1.4-1.7 3-1.7 4.8Z"/>
-                <path fill="#4A90E2" d="M12 21c2.5 0 4.7-.8 6.3-2.3l-3.1-2.5c-.8.6-1.8 1-3.2 1-2.5 0-4.6-1.7-5.4-4l-3.4 2.6C5 18.9 8.2 21 12 21Z"/>
-                <path fill="#FBBC05" d="M6.6 13.2c-.2-.6-.3-1.1-.3-1.7s.1-1.2.3-1.7L3.2 7.2C2.4 8.6 2 10 2 11.5s.4 2.9 1.2 4.3l3.4-2.6Z"/>
-              </svg>
-              Google 登入同步
-            </a>
-            <button id="startTourBtn" class="soft" type="button">✦ 功能導覽</button>
-          </div>
-          <div class="hero-action-note">
-            <strong>建議流程</strong>
-            不用先註冊也能編輯本地草稿；需要跨裝置同步時，再用 Google 登入接手就好。
-          </div>
-          <div class="hero-kpis">
-            <div class="hero-kpi">
-              <strong>先做履歷</strong>
-              <span>直接從模板開始，先把可投遞版本做出來。</span>
-            </div>
-            <div class="hero-kpi">
-              <strong>再補歷程</strong>
-              <span>把專題、證照、課程成果整理成學習歷程頁。</span>
-            </div>
-            <div class="hero-kpi">
-              <strong>最後看落點</strong>
-              <span>用校系資料、相近科系與建議方向一起比對。</span>
-            </div>
-          </div>
-          <div class="hero-workflow">
-            <div class="hero-step">
-              <div class="hero-step-badge">Step 1</div>
-              <strong>建立第一版履歷</strong>
-              <span>把姓名、經歷、技能與作品先整理成可預覽的版面。</span>
-            </div>
-            <div class="hero-step">
-              <div class="hero-step-badge">Step 2</div>
-              <strong>補齊申請材料</strong>
-              <span>把學習歷程和成果頁補完，讓內容不只是一份 PDF。</span>
-            </div>
-            <div class="hero-step">
-              <div class="hero-step-badge">Step 3</div>
-              <strong>整理投遞與志願方向</strong>
-              <span>輸出履歷、雲端同步，並用學測落點挑出下一輪要看的校系。</span>
-            </div>
-          </div>
-          <div class="hero-stats">
-            <div class="hero-stat">
-              <strong>24 種</strong>
-              <span>履歷模板可直接套用</span>
-            </div>
-            <div class="hero-stat">
-              <strong>即時預覽</strong>
-              <span>改一段內容就能立刻看到排版變化</span>
-            </div>
-            <div class="hero-stat">
-              <strong>Google 同步</strong>
-              <span>登入後可跨裝置接續編輯</span>
-            </div>
-          </div>
+    <section class="home-dashboard" aria-label="CV Studio 主畫面">
+      <div class="home-intro">
+        <div>
+          <span class="home-kicker">CV Studio 工作台</span>
+          <h1 class="home-title">今天先完成一版可送出的申請資料。</h1>
+          <p class="home-lead">履歷、學習歷程、學測落點與同步狀態集中在同一個入口，打開後就能接續目前進度。</p>
         </div>
-        <div class="hero-preview">
-          <div class="preview-card">
-            <span class="preview-card-label">From Draft To Decision</span>
-            <h3>今天就能先完成一版，再慢慢補完整套資料。</h3>
-            <p>不是只能做履歷，也不是只能看落點，而是把學生申請和求職準備整合成同一套入口。</p>
-            <div class="preview-highlights">
-              <span class="preview-highlight">履歷編輯</span>
-              <span class="preview-highlight">學習歷程</span>
-              <span class="preview-highlight">學測落點</span>
-            </div>
-            <div class="mini-cv">
-              <div class="mini-cv-head">
-                <div class="mini-avatar">CW</div>
-                <div class="status-pill"><strong>Cloud CV</strong> · Ready</div>
-              </div>
-              <div class="mini-lines">
-                <div class="mini-line mid"></div>
-                <div class="mini-line short"></div>
-                <div class="mini-line long"></div>
-                <div class="mini-line mid"></div>
-              </div>
-            </div>
-          </div>
-          <div class="preview-flow">
-            <div class="hero-note-grid">
-              <div class="hero-note">
-                <strong>適合誰</strong>
-                要快速整理求職履歷、備審資料，或正在做學測後校系比較的人。
-              </div>
-              <div class="hero-note">
-                <strong>你會得到什麼</strong>
-                一份可下載的履歷、一套可延伸的學習歷程，以及更好選的校系清單。
-              </div>
-            </div>
-            <div class="hero-note">
-              <strong>什麼時候該先做哪一塊</strong>
-              如果你現在最急的是投履歷，先進履歷編輯器；如果你在整理申請資料，就先看學習歷程；如果你要排志願，直接切到學測落點頁。
-            </div>
-          </div>
+        <div class="home-actions">
+          <button id="startEditingBtn" class="home-action primary" type="button">開始履歷</button>
+          <button id="goPortfolioBtn" class="home-action secondary" type="button">整理歷程</button>
+          <button id="goGsatBtn" class="home-action tertiary" type="button">查看落點</button>
         </div>
       </div>
+
+      <aside class="home-status-panel" aria-label="目前進度">
+        <div class="home-panel-header">
+          <strong>目前進度</strong>
+          <span>本機草稿</span>
+        </div>
+        <div class="home-progress" aria-label="整體進度 42%">
+          <div class="home-progress-top">
+            <span>申請資料</span>
+            <span>42%</span>
+          </div>
+          <div class="home-progress-track">
+            <div class="home-progress-fill"></div>
+          </div>
+        </div>
+        <ul class="home-task-list">
+          <li class="home-task">
+            <span class="home-task-mark">1</span>
+            <div>
+              <strong>CV 履歷</strong>
+              <span>個人資料、經歷、技能、作品</span>
+            </div>
+            <span class="home-task-state">可編輯</span>
+          </li>
+          <li class="home-task">
+            <span class="home-task-mark">2</span>
+            <div>
+              <strong>學習歷程</strong>
+              <span>章節、圖片、成果摘要</span>
+            </div>
+            <span class="home-task-state">待整理</span>
+          </li>
+          <li class="home-task">
+            <span class="home-task-mark">3</span>
+            <div>
+              <strong>學測落點</strong>
+              <span>115 學年度校系資料</span>
+            </div>
+            <span class="home-task-state">可分析</span>
+          </li>
+        </ul>
+        <div class="home-mini-stats">
+          <div class="home-mini-stat">
+            <strong>28</strong>
+            <span>履歷模板</span>
+          </div>
+          <div class="home-mini-stat">
+            <strong>3</strong>
+            <span>主要工作區</span>
+          </div>
+          <div class="home-mini-stat">
+            <strong>PDF</strong>
+            <span>輸出格式</span>
+          </div>
+        </div>
+        <div class="home-utility-row">
+          <a class="soft google-btn button-link" href="#" data-login-trigger="google" aria-disabled="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
+              <path fill="#EA4335" d="M12 10.2v3.9h5.5c-.2 1.2-1.4 3.6-5.5 3.6-3.3 0-6-2.8-6-6.2s2.7-6.2 6-6.2c1.9 0 3.1.8 3.8 1.5l2.6-2.5C16.8 2.8 14.6 2 12 2 6.9 2 2.8 6.3 2.8 11.5S6.9 21 12 21c6.9 0 9.1-4.8 9.1-7.3 0-.5 0-.9-.1-1.3H12Z"/>
+              <path fill="#34A853" d="M2.8 11.5c0 1.7.6 3.4 1.7 4.8l3.3-2.6c-.4-.6-.7-1.4-.7-2.2s.2-1.5.7-2.2L4.5 6.7c-1.1 1.4-1.7 3-1.7 4.8Z"/>
+              <path fill="#4A90E2" d="M12 21c2.5 0 4.7-.8 6.3-2.3l-3.1-2.5c-.8.6-1.8 1-3.2 1-2.5 0-4.6-1.7-5.4-4l-3.4 2.6C5 18.9 8.2 21 12 21Z"/>
+              <path fill="#FBBC05" d="M6.6 13.2c-.2-.6-.3-1.1-.3-1.7s.1-1.2.3-1.7L3.2 7.2C2.4 8.6 2 10 2 11.5s.4 2.9 1.2 4.3l3.4-2.6Z"/>
+            </svg>
+            Google 同步
+          </a>
+          <button id="startTourBtn" class="home-action tertiary" type="button">功能導覽</button>
+        </div>
+      </aside>
     </section>
 
     <section class="feature-strip">
       <article class="feature-card">
-        <span class="feature-card-tag">Start Here</span>
+        <span class="feature-card-tag">Start</span>
         <strong>CV 履歷編輯器</strong>
-        <p>先把可以投遞的版本做出來，模板、版面和 PDF 匯出都已經接好。</p>
-        <span class="feature-card-meta">適合現在就要開始投履歷的人</span>
-        <button class="feature-card-action" data-guide-tab="cv" type="button">前往編輯 →</button>
+        <p>模板、版面、即時預覽與 PDF 輸出集中處理。</p>
+        <span class="feature-card-meta">履歷 / CV / Resume</span>
+        <button class="feature-card-action" data-guide-tab="cv" type="button">前往編輯</button>
       </article>
       <article class="feature-card">
         <span class="feature-card-tag">Portfolio</span>
         <strong>學習歷程作品集</strong>
-        <p>把課程、專題、證照和成果拆開整理，之後做備審時會快很多。</p>
-        <span class="feature-card-meta">適合要整理申請資料與專案成果的人</span>
-        <button class="feature-card-action" data-guide-tab="portfolio" type="button">前往學習歷程 →</button>
+        <p>章節式整理課程、專題、證照、競賽與成果。</p>
+        <span class="feature-card-meta">備審 / 作品集</span>
+        <button class="feature-card-action" data-guide-tab="portfolio" type="button">前往歷程</button>
       </article>
       <article class="feature-card">
         <span class="feature-card-tag">Decision</span>
-        <strong>下載 PDF</strong>
-        <p>完成內容後直接輸出 PDF，避免臨時轉檔造成版面跑掉。</p>
-        <span class="feature-card-meta">適合交件前最後整理與匯出</span>
-        <button class="feature-card-action" data-guide-tab="cv" data-guide-action="download" type="button">前往下載 →</button>
+        <strong>學測落點</strong>
+        <p>用分數、校系分類與相近科系快速排查方向。</p>
+        <span class="feature-card-meta">115 學年度資料</span>
+        <button class="feature-card-action" data-guide-tab="gsat" type="button">查看落點</button>
       </article>
       <article class="feature-card">
         <span class="feature-card-tag">Sync</span>
-        <strong>Google 雲端同步</strong>
-        <p>準備好了再登入同步，換手機或電腦都能繼續接著做。</p>
-        <span class="feature-card-meta">適合跨裝置編輯與長期維護草稿</span>
-        <button class="feature-card-action" data-guide-action="login" type="button">如何登入 →</button>
+        <strong>同步與輸出</strong>
+        <p>登入後保存草稿，完成後輸出 PDF 或連接 Canva。</p>
+        <span class="feature-card-meta">Google / PDF / Canva</span>
+        <button class="feature-card-action" data-guide-tab="cv" data-guide-action="download" type="button">前往輸出</button>
       </article>
+    </section>
+
+    <section class="home-support-grid" aria-label="申請路徑與資料狀態">
+      <div class="home-panel">
+        <h2>常用路徑</h2>
+        <div class="home-path-grid">
+          <div class="home-path">
+            <small>求職</small>
+            <strong>履歷先行</strong>
+            <span>完成 CV 後輸出 PDF，再用求職顧問檢查職缺匹配。</span>
+          </div>
+          <div class="home-path">
+            <small>備審</small>
+            <strong>歷程先行</strong>
+            <span>先整理章節與成果圖片，再回到 CV 補齊摘要。</span>
+          </div>
+          <div class="home-path">
+            <small>選校</small>
+            <strong>落點先行</strong>
+            <span>先篩出校系清單，再決定要強化哪一段材料。</span>
+          </div>
+        </div>
+      </div>
+      <aside class="home-panel">
+        <h2>資料狀態</h2>
+        <ul class="home-note-list">
+          <li><strong>離線</strong><span>PWA 快取可開啟草稿</span></li>
+          <li><strong>同步</strong><span>Google 登入後啟用</span></li>
+          <li><strong>匯出</strong><span>CV 與學習歷程皆支援 PDF</span></li>
+        </ul>
+      </aside>
     </section>
     </div><!-- /page-home -->
 
@@ -3610,6 +4310,7 @@
         </a>
         <button id="logoutBtn" class="ghost" type="button">登出</button>
         <button id="saveBtn" class="secondary" type="button">儲存 CV</button>
+        <button id="uploadCvPdfBtn" class="secondary" type="button">上傳 CV PDF</button>
         <button id="previewPdfBtn" class="secondary" type="button">預覽 PDF</button>
         <button id="downloadPdfBtn" class="soft" type="button">下載 PDF</button>
         <button id="printCvBtn" class="soft" type="button">列印</button>
@@ -3711,7 +4412,7 @@
                 <input id="importPdfInput" type="file" accept=".pdf,application/pdf" hidden />
                 <button id="clearAllBtn" class="ghost" type="button" style="padding:5px 12px;font-size:0.78rem;color:var(--danger);border-color:rgba(167,59,51,0.3);">清除資料</button>
               </div>
-              <div id="pdfImportStatus" style="margin-top:8px;font-size:0.74rem;color:var(--muted);line-height:1.5;">可上傳現有 PDF 履歷，系統會自動抽取文字並回填到可編輯欄位。</div>
+              <div id="pdfImportStatus" style="margin-top:8px;font-size:0.74rem;color:var(--muted);line-height:1.5;">可上傳現有 PDF 履歷，系統會自動抽取文字並回填到可編輯欄位，也會同步給求職顧問使用。</div>
             </div>
 
             <!-- QR Code -->
@@ -3777,6 +4478,25 @@
                     <option value="midnight">Midnight 深藍商務</option>
                     <option value="sand">Sand 柔和米色</option>
                     <option value="plum">Plum 沉穩紫棕</option>
+                    <option value="ocean">Ocean 深邃青藍</option>
+                    <option value="ember">Ember 燃橙創意</option>
+                    <option value="noir">Noir 極簡黑白</option>
+                    <option value="sage">Sage 草木靜綠</option>
+                    <option value="coral">Coral 珊瑚暖調</option>
+                    <option value="cobalt">Cobalt 鈷藍工程</option>
+                    <option value="dusk">Dusk 薄暮霧紫</option>
+                    <option value="copper">Copper 琥珀銅褐</option>
+                    <option value="linen">Linen 亞麻典雅</option>
+                    <option value="botanical">Botanical 植物花紋</option>
+                    <option value="geometric">Geometric 幾何菱格</option>
+                    <option value="blueprint">Blueprint 藍圖點陣</option>
+                    <option value="ornate">Ornate 古典金框</option>
+                    <option value="watercolor">Watercolor 水彩暈染</option>
+                    <option value="flourish">Flourish 花邊藤蔓</option>
+                    <option value="paperline">Paperline 單頁列印</option>
+                    <option value="iconic-pro">Iconic Pro 圖標專業</option>
+                    <option value="markdown-cv">Markdown CV 純文字</option>
+                    <option value="bootstrap-rail">Bootstrap Rail 側欄履歷</option>
                   </select>
                 </div>
               </div>
@@ -3938,6 +4658,26 @@
                 <div class="template-swatch"><div></div><div></div></div>
                 <strong>Flourish</strong>
                 <span>花邊藤蔓、優雅、手工感</span>
+              </button>
+              <button class="template-option" type="button" data-template-option="paperline" style="--swatch-sidebar:#e8edf2;--swatch-paper:#ffffff;--swatch-accent-soft:#edf1f5;">
+                <div class="template-swatch"><div></div><div></div></div>
+                <strong>Paperline</strong>
+                <span>GitHub 單頁、列印、技術履歷感</span>
+              </button>
+              <button class="template-option" type="button" data-template-option="iconic-pro" style="--swatch-sidebar:#eef6fb;--swatch-paper:#fbfdff;--swatch-accent-soft:#e8f2fb;">
+                <div class="template-swatch"><div></div><div></div></div>
+                <strong>Iconic Pro</strong>
+                <span>LinkedIn 風、雙欄、專業感</span>
+              </button>
+              <button class="template-option" type="button" data-template-option="markdown-cv" style="--swatch-sidebar:#ffffff;--swatch-paper:#ffffff;--swatch-accent-soft:#f2f3f4;">
+                <div class="template-swatch"><div></div><div></div></div>
+                <strong>Markdown CV</strong>
+                <span>ATS 友善、純文字、日期對齊</span>
+              </button>
+              <button class="template-option" type="button" data-template-option="bootstrap-rail" style="--swatch-sidebar:#bd5d38;--swatch-paper:#fffdfb;--swatch-accent-soft:#f4e7df;">
+                <div class="template-swatch"><div></div><div></div></div>
+                <strong>Bootstrap Rail</strong>
+                <span>強側欄、履歷網站、商務感</span>
               </button>
             </div>
           </div>
@@ -4393,6 +5133,11 @@
             <div id="careerCvSnippet" style="background:rgba(255,255,255,0.6);border:1.5px solid var(--line);border-radius:12px;padding:12px 14px;font-size:12px;color:var(--muted);line-height:1.6;max-height:120px;overflow:hidden;position:relative;">
               <span style="color:var(--muted);font-style:italic;">前往 CV 履歷頁填寫資料後，此處會自動讀取。</span>
             </div>
+            <div class="career-cv-actions">
+              <button id="careerUploadCvBtn" class="career-upload-btn" type="button">上傳 PDF CV</button>
+              <button id="careerEditCvBtn" class="career-link-btn" type="button">前往 CV 編輯</button>
+            </div>
+            <div class="career-cv-note">已匯入的 PDF 原文會和欄位內容一起送入分析。</div>
           </div>
 
           <!-- API key -->
@@ -4600,6 +5345,59 @@
         "學習歷程": "Learning Portfolio",
         "✦ 求職顧問": "✦ Career Advisor",
         "✦ 學測落點": "✦ GSAT Placement",
+        "CV Studio 工作台": "CV Studio Workspace",
+        "今天先完成一版可送出的申請資料。": "Finish one sendable application set today.",
+        "履歷、學習歷程、學測落點與同步狀態集中在同一個入口，打開後就能接續目前進度。": "Resume, portfolio, GSAT planning, and sync status are gathered in one place so you can pick up where you left off.",
+        "開始履歷": "Start Resume",
+        "整理歷程": "Organize Portfolio",
+        "查看落點": "Check Placement",
+        "目前進度": "Current Progress",
+        "申請資料": "Application Set",
+        "42%": "42%",
+        "CV 履歷": "CV Resume",
+        "個人資料、經歷、技能、作品": "Profile, experience, skills, work",
+        "可編輯": "Editable",
+        "章節、圖片、成果摘要": "Sections, images, outcome summaries",
+        "待整理": "To Organize",
+        "學測落點": "GSAT Placement",
+        "115 學年度校系資料": "Academic year 115 school data",
+        "可分析": "Ready",
+        "28": "28",
+        "履歷模板": "Resume Templates",
+        "3": "3",
+        "主要工作區": "Main Workspaces",
+        "輸出格式": "Export Format",
+        "Google 同步": "Google Sync",
+        "CV 履歷編輯器": "CV Resume Editor",
+        "模板、版面、即時預覽與 PDF 輸出集中處理。": "Templates, layout, live preview, and PDF export in one place.",
+        "前往編輯": "Go Edit",
+        "學習歷程作品集": "Learning Portfolio",
+        "章節式整理課程、專題、證照、競賽與成果。": "Organize courses, projects, certificates, competitions, and outcomes by section.",
+        "備審 / 作品集": "Application / Portfolio",
+        "前往歷程": "Go Portfolio",
+        "用分數、校系分類與相近科系快速排查方向。": "Use scores, school categories, and nearby departments to narrow your direction.",
+        "查看落點": "Check Placement",
+        "同步與輸出": "Sync and Export",
+        "登入後保存草稿，完成後輸出 PDF 或連接 Canva。": "Sign in to save drafts, then export PDF or connect Canva when ready.",
+        "前往輸出": "Go Export",
+        "申請路徑與資料狀態": "Application Paths and Data Status",
+        "常用路徑": "Common Paths",
+        "求職": "Jobs",
+        "履歷先行": "Resume First",
+        "完成 CV 後輸出 PDF，再用求職顧問檢查職缺匹配。": "Finish your CV, export a PDF, then use Career Advisor to check role fit.",
+        "備審": "Application",
+        "歷程先行": "Portfolio First",
+        "先整理章節與成果圖片，再回到 CV 補齊摘要。": "Organize sections and outcome images first, then return to the CV summary.",
+        "選校": "School Choice",
+        "落點先行": "Placement First",
+        "先篩出校系清單，再決定要強化哪一段材料。": "Shortlist schools first, then decide which materials to strengthen.",
+        "資料狀態": "Data Status",
+        "離線": "Offline",
+        "PWA 快取可開啟草稿": "PWA cache can open drafts",
+        "同步": "Sync",
+        "Google 登入後啟用": "Enabled after Google sign-in",
+        "匯出": "Export",
+        "CV 與學習歷程皆支援 PDF": "CV and portfolio both support PDF",
         "CV Studio / Web + App": "CV Studio / Web + App",
         "把履歷、學習歷程與學測分析整理成同一套工作流。": "Bring resumes, learning portfolios, and GSAT planning into one workflow.",
         "先編輯履歷、補齊學習歷程，再用學測落點快速比對校系方向。首頁現在會直接告訴你下一步做什麼，也保留無登入就能先開始的彈性。": "Edit your resume, complete your learning portfolio, then compare school and department directions with GSAT placement. The home screen points you to the next step while still letting you start without signing in.",
@@ -4620,7 +5418,7 @@
         "把學習歷程和成果頁補完，讓內容不只是一份 PDF。": "Fill in portfolio and outcome pages so your materials go beyond a PDF.",
         "整理投遞與志願方向": "Plan Applications and Preferences",
         "輸出履歷、雲端同步，並用學測落點挑出下一輪要看的校系。": "Export your resume, sync it, and use GSAT placement to decide which schools to inspect next.",
-        "24 種": "24 Styles",
+        "28 種": "28 Styles",
         "履歷模板可直接套用": "Resume templates ready to use",
         "即時預覽": "Live Preview",
         "改一段內容就能立刻看到排版變化": "See layout changes as soon as you edit",
@@ -4652,6 +5450,7 @@
         "適合跨裝置編輯與長期維護草稿": "For cross-device editing and long-term drafts",
         "如何登入 →": "How To Sign In →",
         "儲存 CV": "Save CV",
+        "上傳 CV PDF": "Upload CV PDF",
         "預覽 PDF": "Preview PDF",
         "列印": "Print",
         "復原 (Ctrl+Z)": "Undo (Ctrl+Z)",
@@ -4706,6 +5505,7 @@
         "匯入 PDF 履歷": "Import PDF Resume",
         "清除資料": "Clear Data",
         "可上傳現有 PDF 履歷，系統會自動抽取文字並回填到可編輯欄位。": "Upload an existing PDF resume and the system will extract text into editable fields.",
+        "可上傳現有 PDF 履歷，系統會自動抽取文字並回填到可編輯欄位，也會同步給求職顧問使用。": "Upload an existing PDF resume. The system will extract text into editable fields and share it with Career Advisor.",
         "QR Code": "QR Code",
         "掃描後開啟作品集或 LinkedIn（需先填寫網站欄位）": "Scan to open your portfolio or LinkedIn (fill in the website field first).",
         "請先填寫網站 / 作品集網址。": "Enter a website / portfolio URL first.",
@@ -4755,6 +5555,10 @@
         "古典金框、角落花飾": "Classic gold frame, corner ornaments",
         "水彩暈染、藝術、渲染感": "Watercolor wash, artistic, atmospheric",
         "花邊藤蔓、優雅、手工感": "Floral vines, elegant, handcrafted",
+        "GitHub 單頁、列印、技術履歷感": "GitHub single-page, printable, technical resume",
+        "LinkedIn 風、雙欄、專業感": "LinkedIn-like, two-column, professional",
+        "ATS 友善、純文字、日期對齊": "ATS-friendly, plain-text feel, aligned dates",
+        "強側欄、履歷網站、商務感": "Strong sidebar, resume-site, business style",
         "版面微調": "Layout Tuning",
         "選取右側預覽中的任一區塊後，可以調整字級、內距、欄位位置與區塊順序。": "Select any block in the preview to adjust font size, spacing, column position, and block order.",
         "當前選取區塊": "Selected Block",
@@ -4862,6 +5666,9 @@
         "將職缺的完整描述貼在這裡，包含職稱、職責、要求技能、公司介紹等。內容越完整，分析越準確。": "Paste the full job description here, including title, responsibilities, required skills, and company information. More detail improves the analysis.",
         "你的履歷摘要（自動讀取）": "Your Resume Summary (Auto-loaded)",
         "前往 CV 履歷頁填寫資料後，此處會自動讀取。": "Fill in the CV page and this section will load automatically.",
+        "上傳 PDF CV": "Upload PDF CV",
+        "前往 CV 編輯": "Go To CV Editor",
+        "已匯入的 PDF 原文會和欄位內容一起送入分析。": "Imported PDF text is analyzed together with the editable CV fields.",
         "Claude API Key": "AI API Key",
         "支援 Anthropic、OpenAI、Google Gemini、Groq，系統自動識別。": "Supports Anthropic, OpenAI, Google Gemini, and Groq with automatic detection.",
         "API Key 僅存於瀏覽器 localStorage，不會上傳至任何伺服器。": "The API key stays in this browser session and is not uploaded to any server.",
@@ -4976,6 +5783,10 @@
         "Ornate 古典金框": "Ornate Gold Frame",
         "Watercolor 水彩暈染": "Watercolor Wash",
         "Flourish 花邊藤蔓": "Flourish Vines",
+        "Paperline 單頁列印": "Paperline Print",
+        "Iconic Pro 圖標專業": "Iconic Pro",
+        "Markdown CV 純文字": "Markdown CV",
+        "Bootstrap Rail 側欄履歷": "Bootstrap Rail",
         "章節": "Chapter",
         "刪除章節": "Delete Chapter",
         "章節大標題": "Chapter Title",
@@ -5458,6 +6269,15 @@
         importedPdfText: "",
         importedPdfFileName: ""
       };
+      const CV_FIELD_PLACEHOLDER_VALUES = {
+        name: ["姓名"],
+        role: ["職稱 / 角色", "職稱"],
+        email: ["Email"],
+        phone: ["電話"],
+        location: ["地點"],
+        website: ["網站 / 作品集"],
+        summary: ["摘要", "點擊輸入摘要…"]
+      };
       const templateDefinitions = {
         "n-tech": {
           label: "Academic Warm 學術暖調",
@@ -5794,6 +6614,62 @@
             sidebar: ["profile", "contacts", "awards"],
             main: ["experience", "projects", "education", "skills", "highlights"]
           }
+        },
+        paperline: {
+          label: "Paperline 單頁列印",
+          layout: "split-left",
+          fontFamily: "sans",
+          sidebarWidth: 286,
+          baseFontSize: 15,
+          sectionGap: 20,
+          avatarShape: "rounded",
+          profileAlign: "left",
+          regions: {
+            sidebar: ["profile", "contacts", "skills"],
+            main: ["summary", "experience", "projects", "education", "highlights", "awards"]
+          }
+        },
+        "iconic-pro": {
+          label: "Iconic Pro 圖標專業",
+          layout: "split-left",
+          fontFamily: "sans",
+          sidebarWidth: 274,
+          baseFontSize: 15,
+          sectionGap: 21,
+          avatarShape: "circle",
+          profileAlign: "left",
+          regions: {
+            sidebar: ["profile", "contacts", "skills"],
+            main: ["experience", "projects", "education", "highlights", "awards"]
+          }
+        },
+        "markdown-cv": {
+          label: "Markdown CV 純文字",
+          layout: "stacked",
+          fontFamily: "sans",
+          sidebarWidth: 280,
+          baseFontSize: 15,
+          sectionGap: 18,
+          avatarShape: "rounded",
+          profileAlign: "left",
+          regions: {
+            sidebar: ["profile", "contacts", "skills"],
+            main: ["summary", "experience", "projects", "education", "highlights", "awards"]
+          }
+        },
+        "bootstrap-rail": {
+          label: "Bootstrap Rail 側欄履歷",
+          layout: "split-left",
+          fontFamily: "sans",
+          sidebarWidth: 260,
+          baseFontSize: 15,
+          sectionGap: 22,
+          avatarShape: "circle",
+          profileAlign: "center",
+          regions: {
+            sidebar: ["profile", "contacts", "skills"],
+            main: ["experience", "projects", "education", "highlights", "awards"]
+          }
         }
       };
       const templateLabels = Object.fromEntries(Object.entries(templateDefinitions).map(([id, config]) => [id, config.label]));
@@ -5841,7 +6717,11 @@
         { id:"blueprint",   label:"Blueprint",   s:"#162f5e", m:"#f5f8ff" },
         { id:"ornate",      label:"Ornate",      s:"#faf4e8", m:"#fffdf6" },
         { id:"watercolor",  label:"Watercolor",  s:"#eceef8", m:"#fdfeff" },
-        { id:"flourish",    label:"Flourish",    s:"#f7eef6", m:"#fefcff" }
+        { id:"flourish",    label:"Flourish",    s:"#f7eef6", m:"#fefcff" },
+        { id:"paperline",   label:"Paperline",   s:"#e8edf2", m:"#ffffff" },
+        { id:"iconic-pro",  label:"Iconic Pro",  s:"#eef6fb", m:"#fbfdff" },
+        { id:"markdown-cv", label:"Markdown",    s:"#ffffff", m:"#ffffff" },
+        { id:"bootstrap-rail", label:"Rail",     s:"#bd5d38", m:"#fffdfb" }
       ];
       const blockLabels = {
         profile: "檔頭",
@@ -5881,7 +6761,7 @@
       }
 
       const state = {
-        data: loadJson(STORAGE_KEY, defaultData),
+        data: normalizeCvData(loadJson(STORAGE_KEY, defaultData)),
         config: loadInitialConfig(),
         template: localStorage.getItem(TEMPLATE_KEY) || "n-tech",
         workflowMode: localStorage.getItem(WORKFLOW_KEY) || "template-first",
@@ -5931,6 +6811,17 @@
         } catch {
           return fallback;
         }
+      }
+
+      function normalizeCvData(data) {
+        const next = { ...defaultData, ...(data || {}) };
+        Object.entries(CV_FIELD_PLACEHOLDER_VALUES).forEach(([field, values]) => {
+          const current = String(next[field] || "").trim();
+          if (values.includes(current)) {
+            next[field] = "";
+          }
+        });
+        return next;
       }
 
       function saveJson(key, value) {
@@ -6162,8 +7053,8 @@
           return `
             <div class="${profileClass}">
               ${buildAvatar(layoutState)}
-              ${ce("name", "h1", "cv-name", state.data.name || uiText("姓名"), "姓名")}
-              ${ce("role", "div", "cv-role", state.data.role || uiText("職稱 / 角色"), "職稱")}
+              ${ce("name", "h1", "cv-name", state.data.name || "", "姓名")}
+              ${ce("role", "div", "cv-role", state.data.role || "", "職稱 / 角色")}
               ${hasStandaloneSummary ? "" : ce("summary", "div", "cv-summary", state.data.summary || "", "摘要")}
             </div>`;
         }
@@ -6388,17 +7279,30 @@
         return Boolean(state.config.supabaseUrl && state.config.supabaseAnonKey && window.supabase);
       }
 
+      function getCurrentCleanUrl() {
+        try {
+          const current = new URL(window.location.href);
+          current.search = "";
+          current.hash = "";
+          return current.toString();
+        } catch {
+          return `${window.location.origin}${window.location.pathname}`;
+        }
+      }
+
+      function isLocalHttpPreview() {
+        return window.location.protocol.startsWith("http")
+          && ["localhost", "127.0.0.1", "::1"].includes(window.location.hostname);
+      }
+
       function getRedirectUrl() {
+        if (isLocalHttpPreview()) {
+          return getCurrentCleanUrl();
+        }
+
         const configuredUrl = state.config.siteUrl?.trim();
         if (!configuredUrl) {
-          try {
-            const current = new URL(window.location.href);
-            current.search = "";
-            current.hash = "";
-            return current.toString();
-          } catch {
-            return `${window.location.origin}${window.location.pathname}`;
-          }
+          return getCurrentCleanUrl();
         }
 
         try {
@@ -6407,7 +7311,7 @@
           normalized.hash = "";
           return normalized.toString();
         } catch {
-          return `${window.location.origin}${window.location.pathname}`;
+          return getCurrentCleanUrl();
         }
       }
 
@@ -6888,11 +7792,21 @@
           return;
         }
         const isFileProtocol = window.location.protocol === "file:";
-        setMessage(isFileProtocol ? "正在前往 Google 登入，完成後將跳轉到正式網站。" : "正在前往 Google 登入，登入完成後會自動回到這個頁面。");
+        const redirectUrl = getRedirectUrl();
+        if (isFileProtocol) {
+          const shouldContinue = window.confirm(
+            `目前是本機 file:// 預覽。\n\nGoogle OAuth 無法登入後回到本機檔案，完成登入後會跳到：\n${redirectUrl}\n\n如果正式站尚未部署最新改版，登入後看到的畫面會和現在不同。要繼續 Google 登入嗎？`
+          );
+          if (!shouldContinue) {
+            setMessage("已取消 Google 登入。本機預覽不會被同步到正式站，請部署後再從正式網址登入，或改用 localhost 測試登入。");
+            return;
+          }
+        }
+        setMessage(isFileProtocol ? `正在前往 Google 登入，完成後將跳轉到 ${redirectUrl}` : "正在前往 Google 登入，登入完成後會自動回到這個頁面。");
         const { error } = await state.client.auth.signInWithOAuth({
           provider: "google",
           options: {
-            redirectTo: getRedirectUrl(),
+            redirectTo: redirectUrl,
             queryParams: { prompt: "select_account" }
           }
         });
@@ -7272,25 +8186,34 @@
         ).join("\n\n");
       }
 
+      function getEditablePlainText(el) {
+        const text = (el.textContent || "").trim();
+        if (!text) {
+          el.innerHTML = "";
+        }
+        return text;
+      }
+
       function syncContentEditable(el) {
         const field = el.dataset.field;
         const syncType = el.dataset.sync;
         if (!field) return;
+        const text = getEditablePlainText(el);
 
         if (syncType === "text") {
-          state.data[field] = el.textContent.trim();
+          state.data[field] = text;
         } else if (syncType === "list-item") {
           const idx = parseInt(el.dataset.li, 10);
           let lines = splitLines(field === "skills"
             ? state.data[field].replaceAll(",", "\n")
             : state.data[field]);
-          if (!isNaN(idx) && idx < lines.length) lines[idx] = el.textContent.trim();
+          if (!isNaN(idx) && idx < lines.length) lines[idx] = text;
           state.data[field] = field === "skills" ? lines.join(", ") : lines.join("\n");
         } else if (syncType === "entry-field") {
           const ei = parseInt(el.dataset.ei, 10);
           const ep = el.dataset.ep;
           const entries = parseEntries(state.data[field]);
-          if (!isNaN(ei) && entries[ei] && ep) entries[ei][ep] = el.textContent.trim();
+          if (!isNaN(ei) && entries[ei] && ep) entries[ei][ep] = text;
           state.data[field] = serializeEntries(entries);
         }
 
@@ -7731,11 +8654,15 @@
         const fileName = (state.data.importedPdfFileName || "").trim();
         const text = (state.data.importedPdfText || "").trim();
         if (!fileName || !text) {
-          el.textContent = "可上傳現有 PDF 履歷，系統會自動抽取文字並回填到可編輯欄位。";
+          el.textContent = uiText("可上傳現有 PDF 履歷，系統會自動抽取文字並回填到可編輯欄位，也會同步給求職顧問使用。");
           return;
         }
         const charCount = text.replace(/\s+/g, "").length;
         el.textContent = `已匯入 PDF：${fileName}，抽取約 ${charCount} 字，可直接編輯欄位，也能提供給求職顧問分析。`;
+      }
+
+      function openPdfImportPicker() {
+        $("importPdfInput")?.click();
       }
 
       function normalizeResumeText(text) {
@@ -8117,7 +9044,8 @@
           importJson(e.target.files[0]);
           e.target.value = "";
         });
-        $("importPdfBtn")?.addEventListener("click", () => $("importPdfInput")?.click());
+        $("uploadCvPdfBtn")?.addEventListener("click", openPdfImportPicker);
+        $("importPdfBtn")?.addEventListener("click", openPdfImportPicker);
         $("importPdfInput")?.addEventListener("change", async (e) => {
           await importPdfResume(e.target.files[0]);
           e.target.value = "";
@@ -8204,6 +9132,7 @@
 
       window.closePdfPreview = closePdfPreview;
       window.openPdfPreview = openPdfPreview;
+      window.openCvPdfImport = openPdfImportPicker;
       window.cvStudioState = state;   /* exposed for career advisor */
 
       init();
@@ -8293,18 +9222,80 @@
         accentTheme: "slate",
         chapters: [{
           id: uid(),
-          title: "請輸入章節標題",
+          title: "",
           sections: [
             { id: uid(), header: "", body: "", imageUrl: "", imageCaption: "" }
           ]
         }]
       };
 
+      const PF_PLACEHOLDER_VALUES = new Set([
+        "請輸入文件標題",
+        "署名",
+        "文件署名",
+        "附註欄位",
+        "貼上封面圖片網址",
+        "請輸入章節標題",
+        "章節標題",
+        "小節標題",
+        "延伸小節",
+        "延伸內容",
+        "補充段落",
+        "核心段落標題",
+        "核心重點標題",
+        "核心學習內容",
+        "核心作品",
+        "核心段落",
+        "核心敘述",
+        "輸入本章主要內容",
+        "輸入小節內容",
+        "補充項目標題",
+        "補充項目內容",
+        "貼上圖片網址",
+        "補一段圖片說明"
+      ]);
+
+      function cleanPfPlaceholder(value) {
+        const text = String(value || "").trim();
+        return PF_PLACEHOLDER_VALUES.has(text) ? "" : value;
+      }
+
+      function normalizePfData(data) {
+        const source = data && typeof data === "object" ? data : {};
+        const chapters = Array.isArray(source.chapters) && source.chapters.length
+          ? source.chapters
+          : pfDefault.chapters;
+        return {
+          ...pfDefault,
+          ...source,
+          title: cleanPfPlaceholder(source.title),
+          studentName: cleanPfPlaceholder(source.studentName),
+          school: cleanPfPlaceholder(source.school),
+          coverImageUrl: cleanPfPlaceholder(source.coverImageUrl),
+          chapters: chapters.map((chapter) => {
+            const sections = Array.isArray(chapter.sections) && chapter.sections.length
+              ? chapter.sections
+              : [{ id: uid(), header: "", body: "", imageUrl: "", imageCaption: "" }];
+            return {
+              id: chapter.id || uid(),
+              title: cleanPfPlaceholder(chapter.title),
+              sections: sections.map((section) => ({
+                id: section.id || uid(),
+                header: cleanPfPlaceholder(section.header),
+                body: cleanPfPlaceholder(section.body),
+                imageUrl: cleanPfPlaceholder(section.imageUrl),
+                imageCaption: cleanPfPlaceholder(section.imageCaption)
+              }))
+            };
+          })
+        };
+      }
+
       let pf = (() => {
         try {
           const s = localStorage.getItem(PF_KEY);
-          return s ? JSON.parse(s) : JSON.parse(JSON.stringify(pfDefault));
-        } catch { return JSON.parse(JSON.stringify(pfDefault)); }
+          return normalizePfData(s ? JSON.parse(s) : JSON.parse(JSON.stringify(pfDefault)));
+        } catch { return normalizePfData(JSON.parse(JSON.stringify(pfDefault))); }
       })();
       let pfActivePreset = (() => {
         try {
@@ -8431,6 +9422,14 @@
         return `<div class="pf-inline-editable" contenteditable="true" spellcheck="false" data-pf-chapter="${ci}" data-ph="${esc(placeholder)}" ${extra}>${esc(value || "")}</div>`;
       }
 
+      function pfEditableText(el) {
+        const text = (el.textContent || "").trim();
+        if (!text) {
+          el.innerHTML = "";
+        }
+        return text;
+      }
+
       function pfInlineImageEditor(ci, si, sec, ratio, placeholderText) {
         const imageCard = sec.imageUrl
           ? sectionImageCard(sec, ratio)
@@ -8447,15 +9446,16 @@
       }
 
       function syncPortfolioEditable(el) {
+        const text = pfEditableText(el);
         const field = el.dataset.pfField;
         if (field) {
-          pf[field] = el.textContent.trim();
+          pf[field] = text;
           save();
           return;
         }
         const chapterIndex = Number(el.dataset.pfChapter);
         if (!Number.isNaN(chapterIndex) && pf.chapters[chapterIndex]) {
-          pf.chapters[chapterIndex].title = el.textContent.trim();
+          pf.chapters[chapterIndex].title = text;
           save();
           return;
         }
@@ -8463,7 +9463,7 @@
         const si = Number(el.dataset.pfSi);
         const part = el.dataset.pfPart;
         if (Number.isNaN(ci) || Number.isNaN(si) || !part || !pf.chapters[ci]?.sections?.[si]) return;
-        pf.chapters[ci].sections[si][part] = el.textContent.trim();
+        pf.chapters[ci].sections[si][part] = text;
         save();
       }
 
@@ -8797,7 +9797,7 @@
             <div style="margin-top:10px;font-size:2em;font-weight:700;line-height:1.1;color:#18202a;">感謝審閱</div>
             <div style="max-width:32ch;margin-top:16px;font-size:0.84em;line-height:1.85;color:#545d68;">以上內容整理文件中的章節與成果重點，可依需求繼續補充或調整。</div>
             <div style="margin-top:28px;width:180px;height:1px;background:${theme.line};"></div>
-            <div style="margin-top:14px;font-size:0.76em;color:${c};">${esc(pf.studentName) || "文件署名"}</div>
+            <div style="margin-top:14px;font-size:0.76em;color:${c};">${pfEditable("studentName", pf.studentName, "署名")}</div>
           </div>
         </div>`;
       }
@@ -8813,22 +9813,26 @@
             <div style="display:flex;flex-direction:column;justify-content:space-between;">
               <div>
                 <div style="font-size:0.72em;letter-spacing:0.24em;text-transform:uppercase;color:${theme.soft};">System Blueprint</div>
-                <div style="margin-top:18px;font-size:2.4em;font-weight:700;line-height:1.02;max-width:10ch;">${esc(pf.title) || ""}</div>
+                <div style="margin-top:18px;font-size:2.4em;font-weight:700;line-height:1.02;max-width:10ch;">${pfEditable("title", pf.title, "請輸入文件標題")}</div>
                 <div style="margin-top:16px;max-width:33ch;font-size:0.82em;line-height:1.85;color:rgba(238,245,255,0.78);">用流程、專題與證據整理內容架構，讓審閱者快速理解主題、執行方式與驗證結果。</div>
               </div>
               <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
                 <div style="padding:14px;border:1px solid rgba(255,255,255,0.12);background:rgba(255,255,255,0.04);">
                   <div style="font-size:0.62em;letter-spacing:0.16em;text-transform:uppercase;color:${theme.soft};">Student</div>
-                  <div style="margin-top:8px;font-size:1.05em;font-weight:700;">${esc(pf.studentName) || ""}</div>
+                  <div style="margin-top:8px;font-size:1.05em;font-weight:700;">${pfEditable("studentName", pf.studentName, "署名")}</div>
                 </div>
                 <div style="padding:14px;border:1px solid rgba(255,255,255,0.12);background:rgba(255,255,255,0.04);">
                   <div style="font-size:0.62em;letter-spacing:0.16em;text-transform:uppercase;color:${theme.soft};">School</div>
-                  <div style="margin-top:8px;font-size:0.84em;line-height:1.7;">${esc(pf.school) || ""}</div>
+                  <div style="margin-top:8px;font-size:0.84em;line-height:1.7;">${pfEditable("school", pf.school, "附註欄位")}</div>
                 </div>
               </div>
             </div>
             <div style="display:grid;grid-template-rows:1fr auto;gap:12px;">
               <div style="border:1px solid rgba(255,255,255,0.16);background:linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.01));overflow:hidden;">${imgHtml}</div>
+              <div class="pf-inline-input" style="background:rgba(255,255,255,0.06);border-color:rgba(255,255,255,0.18);color:#eef5ff;">
+                <span class="pf-inline-label" style="color:rgba(238,245,255,0.72);">封面圖片網址</span>
+                ${pfEditable("coverImageUrl", pf.coverImageUrl, "貼上封面圖片網址")}
+              </div>
               <div style="display:grid;grid-template-columns:repeat(3, 1fr);gap:8px;">
                 <div style="height:58px;background:${theme.color};"></div>
                 <div style="height:58px;background:rgba(255,255,255,0.14);"></div>
@@ -8849,16 +9853,20 @@
             <div style="display:flex;flex-direction:column;justify-content:space-between;">
               <div>
                 <div style="font-size:0.72em;letter-spacing:0.22em;text-transform:uppercase;color:${theme.color};">Portfolio Casebook</div>
-                <div style="margin-top:16px;font-size:2.36em;font-weight:700;line-height:0.98;letter-spacing:-0.04em;color:${theme.deep};">${esc(pf.title) || ""}</div>
+                <div style="margin-top:16px;font-size:2.36em;font-weight:700;line-height:0.98;letter-spacing:-0.04em;color:${theme.deep};">${pfEditable("title", pf.title, "請輸入文件標題")}</div>
               </div>
               <div style="padding:16px;border-radius:24px;background:#fff;border:1px solid ${theme.line};box-shadow:0 18px 34px rgba(46,36,87,0.08);">
-                <div style="font-size:0.96em;font-weight:700;color:${theme.deep};">${esc(pf.studentName) || ""}</div>
-                <div style="margin-top:8px;font-size:0.8em;line-height:1.7;color:#5b6070;">${esc(pf.school) || ""}</div>
+                <div style="font-size:0.96em;font-weight:700;color:${theme.deep};">${pfEditable("studentName", pf.studentName, "署名")}</div>
+                <div style="margin-top:8px;font-size:0.8em;line-height:1.7;color:#5b6070;">${pfEditable("school", pf.school, "附註欄位")}</div>
                 <div style="margin-top:14px;font-size:0.78em;line-height:1.8;color:#4e5362;">以視覺呈現作品、活動與說明，讓審閱者更快進入內容脈絡。</div>
               </div>
             </div>
             <div style="display:grid;grid-template-rows:1fr auto;gap:12px;">
               <div style="border-radius:28px;overflow:hidden;box-shadow:0 24px 48px rgba(46,36,87,0.14);background:#fff;">${imgHtml}</div>
+              <div class="pf-inline-input">
+                <span class="pf-inline-label">封面圖片網址</span>
+                ${pfEditable("coverImageUrl", pf.coverImageUrl, "貼上封面圖片網址")}
+              </div>
               <div style="display:grid;grid-template-columns:1.2fr 0.8fr;gap:10px;">
                 <div style="height:72px;border-radius:18px;background:${theme.deep};"></div>
                 <div style="height:72px;border-radius:18px;background:${theme.soft};border:1px solid ${theme.line};"></div>
@@ -8921,22 +9929,26 @@
             <div style="display:flex;flex-direction:column;justify-content:space-between;">
               <div style="padding:22px;border-radius:30px;background:rgba(255,255,255,0.84);border:1px solid ${theme.line};">
                 <div style="font-size:0.7em;letter-spacing:0.18em;text-transform:uppercase;color:${theme.color};">Learning Story</div>
-                <div style="margin-top:14px;font-size:2.18em;font-weight:700;line-height:1.04;color:${theme.deep};">${esc(pf.title) || ""}</div>
+                <div style="margin-top:14px;font-size:2.18em;font-weight:700;line-height:1.04;color:${theme.deep};">${pfEditable("title", pf.title, "請輸入文件標題")}</div>
                 <div style="margin-top:14px;font-size:0.82em;line-height:1.85;color:#59606b;">把教學、服務、關懷與相關紀錄整理成溫和但清楚的展示頁。</div>
               </div>
               <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
                 <div style="padding:14px 16px;border-radius:20px;background:#fff;border:1px solid ${theme.line};">
                   <div style="font-size:0.66em;color:#7b8491;letter-spacing:0.14em;text-transform:uppercase;">Student</div>
-                  <div style="margin-top:8px;font-weight:700;color:${theme.deep};">${esc(pf.studentName) || ""}</div>
+                  <div style="margin-top:8px;font-weight:700;color:${theme.deep};">${pfEditable("studentName", pf.studentName, "署名")}</div>
                 </div>
                 <div style="padding:14px 16px;border-radius:20px;background:#fff;border:1px solid ${theme.line};">
                   <div style="font-size:0.66em;color:#7b8491;letter-spacing:0.14em;text-transform:uppercase;">School</div>
-                  <div style="margin-top:8px;font-size:0.82em;line-height:1.7;color:#495261;">${esc(pf.school) || ""}</div>
+                  <div style="margin-top:8px;font-size:0.82em;line-height:1.7;color:#495261;">${pfEditable("school", pf.school, "附註欄位")}</div>
                 </div>
               </div>
             </div>
             <div style="display:grid;grid-template-rows:1fr auto;gap:12px;">
               <div style="border-radius:34px;overflow:hidden;border:1px solid ${theme.line};background:#fff;box-shadow:0 22px 42px rgba(39,71,61,0.08);">${imgHtml}</div>
+              <div class="pf-inline-input">
+                <span class="pf-inline-label">封面圖片網址</span>
+                ${pfEditable("coverImageUrl", pf.coverImageUrl, "貼上封面圖片網址")}
+              </div>
               <div style="display:grid;grid-template-columns:repeat(3, 1fr);gap:8px;">
                 <div style="height:60px;border-radius:18px;background:${theme.deep};"></div>
                 <div style="height:60px;border-radius:18px;background:${theme.color};"></div>
@@ -8958,15 +9970,19 @@
               <div>
                 <div style="font-size:0.68em;letter-spacing:0.24em;text-transform:uppercase;color:${theme.color};">Studio Portfolio</div>
                 <div style="margin-top:18px;width:48px;height:2px;background:${theme.color};"></div>
-                <div style="margin-top:16px;font-size:2.18em;font-weight:700;line-height:1.02;color:${theme.deep};">${esc(pf.title) || ""}</div>
+                <div style="margin-top:16px;font-size:2.18em;font-weight:700;line-height:1.02;color:${theme.deep};">${pfEditable("title", pf.title, "請輸入文件標題")}</div>
               </div>
               <div style="font-size:0.82em;line-height:1.9;color:#525a63;">
-                <div>${esc(pf.studentName) || ""}</div>
-                <div style="margin-top:6px;">${esc(pf.school) || ""}</div>
+                <div>${pfEditable("studentName", pf.studentName, "署名")}</div>
+                <div style="margin-top:6px;">${pfEditable("school", pf.school, "附註欄位")}</div>
               </div>
             </div>
             <div style="display:grid;grid-template-rows:1fr auto;gap:12px;">
               <div style="overflow:hidden;border:1px solid ${theme.line};background:#fff;">${imgHtml}</div>
+              <div class="pf-inline-input">
+                <span class="pf-inline-label">封面圖片網址</span>
+                ${pfEditable("coverImageUrl", pf.coverImageUrl, "貼上封面圖片網址")}
+              </div>
               <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
                 <div style="height:64px;background:${theme.soft};border:1px solid ${theme.line};"></div>
                 <div style="height:64px;background:${theme.deep};"></div>
@@ -8982,8 +9998,8 @@
         const cards = secondary.map((sec, index) => `
           <div style="padding:12px;border:1px solid rgba(255,255,255,0.12);background:rgba(255,255,255,0.04);">
             <div style="font-size:0.66em;letter-spacing:0.18em;text-transform:uppercase;color:${theme.soft};">Node ${chapterCountLabel(index + 1)}</div>
-            <div style="margin-top:8px;font-size:0.9em;font-weight:700;color:#fff;">${esc(sec.header || "延伸小節")}</div>
-            <div style="margin-top:8px;font-size:0.74em;line-height:1.7;color:rgba(238,245,255,0.78);">${esc(sectionExcerpt(sec.body, 120)).replace(/\n/g, "<br>")}</div>
+            <div style="margin-top:8px;font-size:0.9em;font-weight:700;color:#fff;">${pfEditableSection(pageNum - 1, index + 1, "header", sec.header, "延伸小節")}</div>
+            <div style="margin-top:8px;font-size:0.74em;line-height:1.7;color:rgba(238,245,255,0.78);">${pfEditableSection(pageNum - 1, index + 1, "body", sec.body, "輸入小節內容")}</div>
           </div>
         `).join("");
         return `<div class="pf-page" style="${portfolioPageStyle(theme)}">
@@ -8993,7 +10009,7 @@
             <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:16px;">
               <div>
                 <div style="font-size:0.68em;letter-spacing:0.22em;text-transform:uppercase;color:${theme.soft};">Chapter ${chapterCountLabel(pageNum)}</div>
-                <div style="margin-top:10px;font-size:1.94em;font-weight:700;line-height:1.04;">${esc(ch.title) || "章節 " + pageNum}</div>
+                <div style="margin-top:10px;font-size:1.94em;font-weight:700;line-height:1.04;">${pfEditableChapter(pageNum - 1, ch.title, "章節標題")}</div>
               </div>
               <div style="min-width:170px;padding:12px;border:1px solid rgba(255,255,255,0.12);background:rgba(255,255,255,0.05);font-size:0.74em;line-height:1.7;color:rgba(238,245,255,0.8);">${esc(sectionExcerpt(primarySection.body || primarySection.header || ch.title, 88))}</div>
             </div>
@@ -9001,8 +10017,8 @@
               <div style="display:grid;grid-template-rows:auto 1fr;gap:12px;">
                 <div style="padding:16px;border:1px solid rgba(255,255,255,0.12);background:rgba(255,255,255,0.05);">
                   <div style="font-size:0.72em;letter-spacing:0.16em;text-transform:uppercase;color:${theme.color};margin-bottom:8px;">Primary</div>
-                  <div style="font-size:0.82em;font-weight:700;">${esc(primarySection.header || "核心學習內容")}</div>
-                  <div style="margin-top:10px;font-size:0.75em;line-height:1.85;color:rgba(238,245,255,0.82);">${esc(primarySection.body || "").replace(/\n/g, "<br>")}</div>
+                  <div style="font-size:0.82em;font-weight:700;">${pfEditableSection(pageNum - 1, 0, "header", primarySection.header, "核心學習內容")}</div>
+                  <div style="margin-top:10px;font-size:0.75em;line-height:1.85;color:rgba(238,245,255,0.82);">${pfEditableSection(pageNum - 1, 0, "body", primarySection.body, "輸入本章主要內容")}</div>
                 </div>
                 <div style="display:grid;gap:10px;align-content:start;">${cards || `<div style="padding:14px;border:1px dashed rgba(255,255,255,0.18);font-size:0.74em;line-height:1.75;color:rgba(238,245,255,0.7);">可再新增實驗紀錄、技術拆解或成果驗證，讓本章更完整。</div>`}</div>
               </div>
@@ -9011,7 +10027,7 @@
                   <div style="font-size:0.66em;letter-spacing:0.2em;text-transform:uppercase;color:rgba(255,255,255,0.72);">Focus</div>
                   <div style="margin-top:8px;font-size:1.38em;font-weight:700;">方法與驗證</div>
                 </div>
-                ${primarySection.imageUrl ? sectionImageCard(primarySection, "width:100%;height:240px;") : `<div style="border:1px dashed rgba(255,255,255,0.2);background:rgba(255,255,255,0.04);color:rgba(238,245,255,0.68);font-size:0.74em;line-height:1.75;padding:14px;display:flex;align-items:flex-end;">可放流程圖、電路圖、實驗照片或系統截圖。</div>`}
+                ${pfInlineImageEditor(pageNum - 1, 0, primarySection, "width:100%;height:240px;", "可放流程圖、電路圖、實驗照片或系統截圖。")}
               </div>
             </div>
             <div style="display:flex;justify-content:space-between;font-size:0.66em;color:rgba(238,245,255,0.58);"><span>${esc(pf.studentName)}</span><span>${chapterCountLabel(pageNum)}</span></div>
@@ -9022,10 +10038,10 @@
       function buildGalleryContentPage(ch, pageNum, theme) {
         const primarySection = ch.sections[0] || {};
         const secondary = ch.sections.slice(1, 3);
-        const cards = secondary.map((sec) => `
+        const cards = secondary.map((sec, index) => `
           <div style="padding:14px;border-radius:20px;background:#fff;border:1px solid ${theme.line};box-shadow:0 16px 30px rgba(46,36,87,0.08);">
-            <div style="font-size:0.84em;font-weight:700;color:${theme.deep};">${esc(sec.header || "延伸內容")}</div>
-            <div style="margin-top:8px;font-size:0.74em;line-height:1.8;color:#414757;">${esc(sectionExcerpt(sec.body, 120)).replace(/\n/g, "<br>")}</div>
+            <div style="font-size:0.84em;font-weight:700;color:${theme.deep};">${pfEditableSection(pageNum - 1, index + 1, "header", sec.header, "延伸內容")}</div>
+            <div style="margin-top:8px;font-size:0.74em;line-height:1.8;color:#414757;">${pfEditableSection(pageNum - 1, index + 1, "body", sec.body, "輸入小節內容")}</div>
           </div>
         `).join("");
         return `<div class="pf-page" style="${portfolioPageStyle(theme)}">
@@ -9034,16 +10050,16 @@
             <div style="display:grid;grid-template-rows:auto 1fr auto;gap:12px;">
               <div>
                 <div style="font-size:0.68em;letter-spacing:0.22em;text-transform:uppercase;color:${theme.color};">Chapter ${chapterCountLabel(pageNum)}</div>
-                <div style="margin-top:10px;font-size:2em;font-weight:700;line-height:1;color:${theme.deep};">${esc(ch.title) || "章節 " + pageNum}</div>
+                <div style="margin-top:10px;font-size:2em;font-weight:700;line-height:1;color:${theme.deep};">${pfEditableChapter(pageNum - 1, ch.title, "章節標題")}</div>
               </div>
-              ${primarySection.imageUrl ? sectionImageCard(primarySection, "width:100%;height:328px;") : `<div style="border-radius:30px;background:${gradientSwatch(theme)};min-height:328px;"></div>`}
+              ${pfInlineImageEditor(pageNum - 1, 0, primarySection, "width:100%;height:328px;", "可加入成果照片、活動紀錄或作品截圖。")}
               <div style="font-size:0.72em;line-height:1.8;color:#5f6675;">${esc(sectionExcerpt(primarySection.body || primarySection.header || ch.title, 112)).replace(/\n/g, "<br>")}</div>
             </div>
             <div style="display:grid;grid-template-rows:auto auto 1fr;gap:12px;">
               <div style="padding:18px 20px;border-radius:28px;background:${theme.deep};color:#fff;">
                 <div style="font-size:0.68em;letter-spacing:0.18em;text-transform:uppercase;color:rgba(255,255,255,0.7);">Case Story</div>
-                <div style="margin-top:10px;font-size:1.42em;font-weight:700;">${esc(primarySection.header || "核心作品")}</div>
-                <div style="margin-top:10px;font-size:0.76em;line-height:1.85;color:rgba(255,255,255,0.84);">${esc(primarySection.body || "").replace(/\n/g, "<br>")}</div>
+                <div style="margin-top:10px;font-size:1.42em;font-weight:700;">${pfEditableSection(pageNum - 1, 0, "header", primarySection.header, "核心作品")}</div>
+                <div style="margin-top:10px;font-size:0.76em;line-height:1.85;color:rgba(255,255,255,0.84);">${pfEditableSection(pageNum - 1, 0, "body", primarySection.body, "輸入本章主要內容")}</div>
               </div>
               <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
                 <div style="height:74px;border-radius:18px;background:${theme.color};"></div>
@@ -9098,10 +10114,10 @@
       function buildSoftContentPage(ch, pageNum, theme) {
         const primarySection = ch.sections[0] || {};
         const secondary = ch.sections.slice(1, 4);
-        const chips = secondary.map((sec) => `
+        const chips = secondary.map((sec, index) => `
           <div style="padding:12px 14px;border-radius:18px;background:#fff;border:1px solid ${theme.line};">
-            <div style="font-size:0.8em;font-weight:700;color:${theme.deep};">${esc(sec.header || "延伸內容")}</div>
-            <div style="margin-top:8px;font-size:0.73em;line-height:1.78;color:#52606d;">${esc(sectionExcerpt(sec.body, 96)).replace(/\n/g, "<br>")}</div>
+            <div style="font-size:0.8em;font-weight:700;color:${theme.deep};">${pfEditableSection(pageNum - 1, index + 1, "header", sec.header, "延伸內容")}</div>
+            <div style="margin-top:8px;font-size:0.73em;line-height:1.78;color:#52606d;">${pfEditableSection(pageNum - 1, index + 1, "body", sec.body, "輸入小節內容")}</div>
           </div>
         `).join("");
         return `<div class="pf-page" style="${portfolioPageStyle(theme)}">
@@ -9110,15 +10126,15 @@
             <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:14px;">
               <div>
                 <div style="font-size:0.68em;letter-spacing:0.18em;text-transform:uppercase;color:${theme.color};">Chapter ${chapterCountLabel(pageNum)}</div>
-                <div style="margin-top:10px;font-size:1.88em;font-weight:700;line-height:1.04;color:${theme.deep};">${esc(ch.title) || "章節 " + pageNum}</div>
+                <div style="margin-top:10px;font-size:1.88em;font-weight:700;line-height:1.04;color:${theme.deep};">${pfEditableChapter(pageNum - 1, ch.title, "章節標題")}</div>
               </div>
               <div style="padding:10px 12px;border-radius:16px;background:rgba(255,255,255,0.82);border:1px solid ${theme.line};font-size:0.72em;line-height:1.7;color:#5c6674;max-width:180px;">${esc(sectionExcerpt(primarySection.body || primarySection.header || ch.title, 84))}</div>
             </div>
             <div style="display:grid;grid-template-columns:1.04fr 0.96fr;gap:14px;">
               <div style="display:grid;grid-template-rows:auto 1fr;gap:12px;">
                 <div style="padding:18px;border-radius:28px;background:#fff;border:1px solid ${theme.line};box-shadow:0 16px 30px rgba(39,71,61,0.06);">
-                  <div style="font-size:0.82em;font-weight:700;color:${theme.color};">${esc(primarySection.header || "核心段落")}</div>
-                  <div style="margin-top:10px;font-size:0.75em;line-height:1.9;color:#333d47;">${esc(primarySection.body || "").replace(/\n/g, "<br>")}</div>
+                  <div style="font-size:0.82em;font-weight:700;color:${theme.color};">${pfEditableSection(pageNum - 1, 0, "header", primarySection.header, "核心段落")}</div>
+                  <div style="margin-top:10px;font-size:0.75em;line-height:1.9;color:#333d47;">${pfEditableSection(pageNum - 1, 0, "body", primarySection.body, "輸入本章主要內容")}</div>
                 </div>
                 <div style="display:grid;align-content:start;gap:10px;">${chips || `<div style="padding:14px;border-radius:18px;border:1px dashed ${theme.line};font-size:0.74em;line-height:1.75;color:#6a7280;">可再加上補充說明、帶領經驗、合作過程或成果影響。</div>`}</div>
               </div>
@@ -9127,7 +10143,7 @@
                   <div style="font-size:0.66em;letter-spacing:0.18em;text-transform:uppercase;color:rgba(255,255,255,0.72);">Reflection</div>
                   <div style="margin-top:8px;font-size:1.34em;font-weight:700;">成長與回應</div>
                 </div>
-                ${primarySection.imageUrl ? sectionImageCard(primarySection, "width:100%;height:244px;") : `<div style="border-radius:28px;border:1px dashed ${theme.line};background:linear-gradient(135deg, ${theme.soft}, #fff);padding:14px;color:#73808c;font-size:0.74em;line-height:1.75;display:flex;align-items:flex-end;">適合加入教學活動、服務歷程、照護現場或團隊互動畫面。</div>`}
+                ${pfInlineImageEditor(pageNum - 1, 0, primarySection, "width:100%;height:244px;", "適合加入教學活動、服務歷程、照護現場或團隊互動畫面。")}
               </div>
             </div>
             <div style="display:flex;justify-content:space-between;font-size:0.66em;color:#85909e;"><span>${esc(pf.studentName)}</span><span>${chapterCountLabel(pageNum)}</span></div>
@@ -9138,10 +10154,10 @@
       function buildStudioContentPage(ch, pageNum, theme) {
         const primarySection = ch.sections[0] || {};
         const secondary = ch.sections.slice(1, 3);
-        const list = secondary.map((sec) => `
+        const list = secondary.map((sec, index) => `
           <div style="padding-top:12px;border-top:1px solid ${theme.line};">
-            <div style="font-size:0.82em;font-weight:700;color:${theme.deep};">${esc(sec.header || "補充段落")}</div>
-            <div style="margin-top:8px;font-size:0.74em;line-height:1.82;color:#545d68;">${esc(sectionExcerpt(sec.body, 110)).replace(/\n/g, "<br>")}</div>
+            <div style="font-size:0.82em;font-weight:700;color:${theme.deep};">${pfEditableSection(pageNum - 1, index + 1, "header", sec.header, "補充段落")}</div>
+            <div style="margin-top:8px;font-size:0.74em;line-height:1.82;color:#545d68;">${pfEditableSection(pageNum - 1, index + 1, "body", sec.body, "輸入小節內容")}</div>
           </div>
         `).join("");
         return `<div class="pf-page" style="${portfolioPageStyle(theme)}">
@@ -9151,15 +10167,15 @@
               <div>
                 <div style="font-size:0.66em;letter-spacing:0.22em;text-transform:uppercase;color:${theme.color};">Chapter ${chapterCountLabel(pageNum)}</div>
                 <div style="margin-top:14px;width:48px;height:2px;background:${theme.color};"></div>
-                <div style="margin-top:14px;font-size:1.88em;font-weight:700;line-height:1.04;color:${theme.deep};">${esc(ch.title) || "章節 " + pageNum}</div>
+                <div style="margin-top:14px;font-size:1.88em;font-weight:700;line-height:1.04;color:${theme.deep};">${pfEditableChapter(pageNum - 1, ch.title, "章節標題")}</div>
               </div>
               <div style="font-size:0.76em;line-height:1.85;color:#606974;">${esc(sectionExcerpt(primarySection.body || primarySection.header || ch.title, 120)).replace(/\n/g, "<br>")}</div>
             </div>
             <div style="display:grid;grid-template-rows:auto auto 1fr;gap:12px;">
-              ${primarySection.imageUrl ? sectionImageCard(primarySection, "width:100%;height:232px;") : `<div style="height:232px;background:${theme.soft};border:1px solid ${theme.line};"></div>`}
+              ${pfInlineImageEditor(pageNum - 1, 0, primarySection, "width:100%;height:232px;", "可加入成果照片、草圖、紀錄或作品截圖。")}
               <div style="padding:16px 0;border-top:1px solid ${theme.line};border-bottom:1px solid ${theme.line};">
-                <div style="font-size:0.84em;font-weight:700;color:${theme.deep};">${esc(primarySection.header || "核心敘述")}</div>
-                <div style="margin-top:10px;font-size:0.74em;line-height:1.9;color:#3c434c;">${esc(primarySection.body || "").replace(/\n/g, "<br>")}</div>
+                <div style="font-size:0.84em;font-weight:700;color:${theme.deep};">${pfEditableSection(pageNum - 1, 0, "header", primarySection.header, "核心敘述")}</div>
+                <div style="margin-top:10px;font-size:0.74em;line-height:1.9;color:#3c434c;">${pfEditableSection(pageNum - 1, 0, "body", primarySection.body, "輸入本章主要內容")}</div>
               </div>
               <div>${list || `<div style="padding-top:12px;border-top:1px solid ${theme.line};font-size:0.74em;line-height:1.75;color:#6a7280;">可補上設計歷程、材料思考、空間分析或使用者回饋。</div>`}</div>
             </div>
@@ -9404,7 +10420,7 @@
         {
           target: "#templateStrip",
           tab: "cv",
-          title: "24 種模板即時切換",
+          title: "28 種模板即時切換",
           desc: "在模板列表中點選任一模板，右側預覽會立即更新。從學術風、現代感到創意設計應有盡有。"
         },
         {
@@ -9584,6 +10600,11 @@
           goPortfolioBtn.addEventListener("click", () => switchTab("portfolio"));
         }
 
+        const goGsatBtn = document.getElementById("goGsatBtn");
+        if (goGsatBtn) {
+          goGsatBtn.addEventListener("click", () => switchTab("gsat"));
+        }
+
         /* Feature guide buttons */
         document.querySelectorAll(".feature-card-action[data-guide-tab]").forEach(btn => {
           btn.addEventListener("click", () => {
@@ -9733,7 +10754,11 @@
             el.innerHTML = `<span style="color:var(--muted);font-style:italic;">前往 CV 履歷頁填寫資料後，此處會自動讀取。</span>`;
           } else {
             const preview = summary.slice(0, 240) + (summary.length > 240 ? "…" : "");
-            el.textContent = preview;
+            const pdfFileName = (window.cvStudioState?.data?.importedPdfFileName || "").trim();
+            el.innerHTML = `
+              ${pdfFileName ? `<div class="career-cv-source">PDF：${careerText(pdfFileName)}</div>` : ""}
+              <div>${careerText(preview)}</div>
+            `;
           }
         }
 
@@ -10329,6 +11354,23 @@
           $c("claudeApiKey").addEventListener("input", () => {
             const val = $c("claudeApiKey").value.trim();
             storeCareerApiKey(val);
+          });
+
+          $c("careerUploadCvBtn")?.addEventListener("click", () => {
+            if (typeof window.openCvPdfImport === "function") {
+              window.openCvPdfImport();
+            } else {
+              document.getElementById("importPdfInput")?.click();
+            }
+          });
+
+          $c("careerEditCvBtn")?.addEventListener("click", () => {
+            if (typeof window.switchCvStudioTab === "function") {
+              window.switchCvStudioTab("cv");
+            }
+            window.setTimeout(() => {
+              document.getElementById("editorSection")?.scrollIntoView({ behavior: "smooth", block: "start" });
+            }, 60);
           });
 
           /* Refresh CV snippet + load API key whenever the tab is shown */
