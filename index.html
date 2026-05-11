@@ -4326,7 +4326,6 @@
         </a>
         <button id="logoutBtn" class="ghost" type="button">登出</button>
         <button id="saveBtn" class="secondary" type="button">儲存 CV</button>
-        <button id="uploadCvPdfBtn" class="secondary" type="button">上傳 CV PDF</button>
         <button id="previewPdfBtn" class="secondary" type="button">預覽 PDF</button>
         <button id="downloadPdfBtn" class="soft" type="button">下載 PDF</button>
         <button id="printCvBtn" class="soft" type="button">列印</button>
@@ -4419,16 +4418,14 @@
             <!-- Export / Import + Clear -->
             <div class="editor-tool" style="background:rgba(255,255,255,0.6);border:1px solid var(--line);border-radius:14px;padding:12px 14px;">
               <strong style="font-size:0.82rem;">資料管理</strong>
-              <p style="font-size:0.75rem;color:var(--muted);margin:4px 0 8px;">備份 CV 資料為 JSON，或匯入 JSON / PDF 履歷進行編輯</p>
+              <p style="font-size:0.75rem;color:var(--muted);margin:4px 0 8px;">備份或匯入 CV 編輯器資料。PDF CV 請到求職顧問上傳分析。</p>
               <div class="tool-row" style="gap:6px;flex-wrap:wrap;">
                 <button id="exportJsonBtn" class="soft" type="button" style="padding:5px 12px;font-size:0.78rem;">匯出 JSON</button>
                 <button id="importJsonBtn" class="soft" type="button" style="padding:5px 12px;font-size:0.78rem;">匯入 JSON</button>
                 <input id="importJsonInput" type="file" accept=".json" hidden />
-                <button id="importPdfBtn" class="soft" type="button" style="padding:5px 12px;font-size:0.78rem;">匯入 PDF 履歷</button>
                 <input id="importPdfInput" type="file" accept=".pdf,application/pdf" hidden />
                 <button id="clearAllBtn" class="ghost" type="button" style="padding:5px 12px;font-size:0.78rem;color:var(--danger);border-color:rgba(167,59,51,0.3);">清除資料</button>
               </div>
-              <div id="pdfImportStatus" style="margin-top:8px;font-size:0.74rem;color:var(--muted);line-height:1.5;">可上傳現有 PDF 履歷，系統會自動抽取文字並回填到可編輯欄位，也會同步給求職顧問使用。</div>
             </div>
 
             <!-- QR Code -->
@@ -5150,10 +5147,10 @@
               <span style="color:var(--muted);font-style:italic;">前往 CV 履歷頁填寫資料後，此處會自動讀取。</span>
             </div>
             <div class="career-cv-actions">
-              <button id="careerUploadCvBtn" class="career-upload-btn" type="button">上傳 PDF CV</button>
+              <button id="careerUploadCvBtn" class="career-upload-btn" type="button">上傳 CV 並分析</button>
               <button id="careerEditCvBtn" class="career-link-btn" type="button">前往 CV 編輯</button>
             </div>
-            <div class="career-cv-note">已匯入的 PDF 原文會和欄位內容一起送入分析。</div>
+            <div class="career-cv-note">上傳 PDF 後只讀取原文給求職顧問，不會回填或改動 CV 編輯器；若已填 API key，會自動啟動「推薦適合崗位」。</div>
           </div>
 
           <!-- API key -->
@@ -5473,7 +5470,6 @@
         "適合跨裝置編輯與長期維護草稿": "For cross-device editing and long-term drafts",
         "如何登入 →": "How To Sign In →",
         "儲存 CV": "Save CV",
-        "上傳 CV PDF": "Upload CV PDF",
         "預覽 PDF": "Preview PDF",
         "列印": "Print",
         "復原 (Ctrl+Z)": "Undo (Ctrl+Z)",
@@ -5522,13 +5518,10 @@
         "儲存快照": "Save Snapshot",
         "尚無快照。": "No snapshots yet.",
         "資料管理": "Data Management",
-        "備份 CV 資料為 JSON，或匯入 JSON / PDF 履歷進行編輯": "Back up CV data as JSON, or import JSON / PDF resumes for editing.",
+        "備份或匯入 CV 編輯器資料。PDF CV 請到求職顧問上傳分析。": "Back up or import CV editor data. Upload PDF CVs in Career Advisor for analysis.",
         "匯出 JSON": "Export JSON",
         "匯入 JSON": "Import JSON",
-        "匯入 PDF 履歷": "Import PDF Resume",
         "清除資料": "Clear Data",
-        "可上傳現有 PDF 履歷，系統會自動抽取文字並回填到可編輯欄位。": "Upload an existing PDF resume and the system will extract text into editable fields.",
-        "可上傳現有 PDF 履歷，系統會自動抽取文字並回填到可編輯欄位，也會同步給求職顧問使用。": "Upload an existing PDF resume. The system will extract text into editable fields and share it with Career Advisor.",
         "QR Code": "QR Code",
         "掃描後開啟作品集或 LinkedIn（需先填寫網站欄位）": "Scan to open your portfolio or LinkedIn (fill in the website field first).",
         "請先填寫網站 / 作品集網址。": "Enter a website / portfolio URL first.",
@@ -5689,9 +5682,9 @@
         "將職缺的完整描述貼在這裡，包含職稱、職責、要求技能、公司介紹等。內容越完整，分析越準確。": "Paste the full job description here, including title, responsibilities, required skills, and company information. More detail improves the analysis.",
         "你的履歷摘要（自動讀取）": "Your Resume Summary (Auto-loaded)",
         "前往 CV 履歷頁填寫資料後，此處會自動讀取。": "Fill in the CV page and this section will load automatically.",
-        "上傳 PDF CV": "Upload PDF CV",
+        "上傳 CV 並分析": "Upload CV and Analyze",
         "前往 CV 編輯": "Go To CV Editor",
-        "已匯入的 PDF 原文會和欄位內容一起送入分析。": "Imported PDF text is analyzed together with the editable CV fields.",
+        "上傳 PDF 後只讀取原文給求職顧問，不會回填或改動 CV 編輯器；若已填 API key，會自動啟動「推薦適合崗位」。": "After upload, PDF text is used only by Career Advisor and will not change the CV editor. If an API key is present, role recommendation starts automatically.",
         "Claude API Key": "AI API Key",
         "支援 Anthropic、OpenAI、Google Gemini、Groq，系統自動識別。": "Supports Anthropic, OpenAI, Google Gemini, and Groq with automatic detection.",
         "API Key 僅存於瀏覽器 localStorage，不會上傳至任何伺服器。": "The API key stays in this browser session and is not uploaded to any server.",
@@ -8863,7 +8856,6 @@
             if (payload.template) updateTemplate(payload.template, true);
             updatePreview(true);
             syncLayoutControls();
-            updatePdfImportStatus();
             notifyCvDataUpdated("json-import");
             setMessage("CV 資料匯入成功。", "success");
           } catch {
@@ -8871,19 +8863,6 @@
           }
         };
         reader.readAsText(file);
-      }
-
-      function updatePdfImportStatus() {
-        const el = $("pdfImportStatus");
-        if (!el) return;
-        const fileName = (state.data.importedPdfFileName || "").trim();
-        const text = (state.data.importedPdfText || "").trim();
-        if (!fileName || !text) {
-          el.textContent = uiText("可上傳現有 PDF 履歷，系統會自動抽取文字並回填到可編輯欄位，也會同步給求職顧問使用。");
-          return;
-        }
-        const charCount = text.replace(/\s+/g, "").length;
-        el.textContent = `已匯入 PDF：${fileName}，抽取約 ${charCount} 字，可直接編輯欄位，也能提供給求職顧問分析。`;
       }
 
       function openPdfImportPicker() {
@@ -8898,144 +8877,6 @@
           .replace(/\n{3,}/g, "\n\n")
           .replace(/[ \t]{2,}/g, " ")
           .trim();
-      }
-
-      function splitResumeSections(text) {
-        const sectionMap = {
-          summary: ["summary", "profile", "about", "overview", "professional summary", "自我介紹", "個人簡介", "專業摘要", "簡介", "個人摘要"],
-          skills: ["skills", "technical skills", "core skills", "expertise", "專長", "技能", "能力", "核心技能"],
-          experience: ["experience", "work experience", "employment", "professional experience", "經歷", "工作經歷", "工作經驗", "實習經歷"],
-          education: ["education", "academic background", "學歷", "教育背景"],
-          projects: ["projects", "project experience", "portfolio", "作品集", "專案", "專案經驗", "作品"],
-          awards: ["awards", "honors", "achievements", "certifications", "獎項", "榮譽", "證照", "獲獎紀錄"],
-          highlights: ["highlights", "key achievements", "selected achievements", "亮點", "重點成就", "關鍵成就"]
-        };
-        const headingLookup = {};
-        Object.entries(sectionMap).forEach(([key, headings]) => {
-          headings.forEach((heading) => {
-            const normalized = heading.toLowerCase().replace(/[^a-z0-9\u4e00-\u9fff]/g, "");
-            headingLookup[normalized] = key;
-          });
-        });
-
-        const sections = {};
-        const lines = normalizeResumeText(text).split("\n").map((line) => line.trim()).filter(Boolean);
-        let currentKey = "summary";
-        const introLines = [];
-
-        lines.forEach((line) => {
-          const normalized = line.toLowerCase().replace(/[^a-z0-9\u4e00-\u9fff]/g, "");
-          const matchedKey = headingLookup[normalized];
-          if (matchedKey) {
-            currentKey = matchedKey;
-            if (!sections[currentKey]) sections[currentKey] = [];
-            return;
-          }
-
-          if (!sections[currentKey] && currentKey === "summary") {
-            introLines.push(line);
-            return;
-          }
-          if (!sections[currentKey]) sections[currentKey] = [];
-          sections[currentKey].push(line);
-        });
-
-        if (introLines.length && !sections.summary?.length) {
-          sections.summary = introLines;
-        }
-
-        const result = {};
-        Object.entries(sections).forEach(([key, value]) => {
-          const joined = value.join("\n").trim();
-          if (joined) result[key] = joined;
-        });
-        return result;
-      }
-
-      function mergeResumeField(currentValue, nextValue) {
-        const current = (currentValue || "").trim();
-        const next = (nextValue || "").trim();
-        if (!next) return currentValue || "";
-        if (!current) return next;
-        if (current.includes(next)) return current;
-        if (next.includes(current)) return next;
-        return `${current}\n${next}`;
-      }
-
-      function inferResumeHeader(lines, fullText) {
-        const filtered = lines
-          .map((line) => line.trim())
-          .filter(Boolean)
-          .filter((line) => !/@/.test(line))
-          .filter((line) => !/(https?:\/\/|www\.)/i.test(line))
-          .filter((line) => !/\+?\d[\d\s\-()]{7,}/.test(line));
-
-        const name = filtered.find((line) => line.length >= 2 && line.length <= 30 && !/[:：]/.test(line)) || "";
-        const role = filtered.find((line, index) => index > 0 && line !== name && line.length <= 45) || "";
-
-        const emailMatch = fullText.match(/[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}/ig);
-        const phoneMatch = fullText.match(/(?:\+?\d[\d\s\-()]{7,}\d)/);
-        const websiteMatch = fullText.match(/https?:\/\/[^\s]+|www\.[^\s]+/i);
-
-        return {
-          name,
-          role,
-          email: emailMatch ? emailMatch[0] : "",
-          phone: phoneMatch ? phoneMatch[0].replace(/\s+/g, " ").trim() : "",
-          website: websiteMatch ? websiteMatch[0] : ""
-        };
-      }
-
-      function parsePdfResumeText(text, fileName = "") {
-        const normalizedText = normalizeResumeText(text);
-        const lines = normalizedText.split("\n").map((line) => line.trim()).filter(Boolean);
-        const header = inferResumeHeader(lines.slice(0, 12), normalizedText);
-        const sections = splitResumeSections(normalizedText);
-        const locationMatch = normalizedText.match(/(?:台北|新北|桃園|台中|台南|高雄|基隆|新竹|嘉義|苗栗|彰化|南投|雲林|屏東|宜蘭|花蓮|台東|澎湖|Taipei|Taichung|Tainan|Kaohsiung)[^\n,;，；]{0,12}/i);
-
-        const summaryFallback = lines
-          .filter((line) => line !== header.name && line !== header.role)
-          .slice(0, 4)
-          .join("\n");
-
-        return {
-          name: header.name,
-          role: header.role,
-          email: header.email,
-          phone: header.phone,
-          website: header.website,
-          location: locationMatch ? locationMatch[0].trim() : "",
-          summary: sections.summary || summaryFallback,
-          skills: sections.skills || "",
-          highlights: sections.highlights || "",
-          experience: sections.experience || "",
-          education: sections.education || "",
-          projects: sections.projects || "",
-          awards: sections.awards || "",
-          importedPdfText: normalizedText,
-          importedPdfFileName: fileName || ""
-        };
-      }
-
-      function buildPdfImportPayload(parsed) {
-        const nextData = { ...state.data };
-        const appendFields = ["summary", "skills", "highlights", "experience", "education", "projects", "awards"];
-        const replaceIfBlank = ["name", "role", "email", "phone", "location", "website"];
-
-        replaceIfBlank.forEach((field) => {
-          const nextValue = (parsed[field] || "").trim();
-          if (nextValue && !(nextData[field] || "").trim()) {
-            nextData[field] = nextValue;
-          }
-        });
-
-        appendFields.forEach((field) => {
-          nextData[field] = mergeResumeField(nextData[field], parsed[field]);
-        });
-
-        nextData.importedPdfText = parsed.importedPdfText || "";
-        nextData.importedPdfFileName = parsed.importedPdfFileName || "";
-        return nextData;
       }
 
       async function extractPdfText(file) {
@@ -9078,32 +8919,61 @@
         return normalizeResumeText(pages.join("\n\n"));
       }
 
-      async function importPdfResume(file) {
+      function runCareerAdvisorFromUploadedPdf(fileName) {
+        if (typeof window.switchCvStudioTab === "function") {
+          window.switchCvStudioTab("career");
+        }
+        window.setTimeout(() => {
+          window.dispatchEvent(new CustomEvent("career:auto-analyze-uploaded-cv", {
+            detail: { fileName }
+          }));
+        }, 80);
+      }
+
+      function showCareerUploadStatus(message, type = "loading") {
+        if (typeof window.switchCvStudioTab === "function") {
+          window.switchCvStudioTab("career");
+        }
+        const area = document.getElementById("careerResultsArea");
+        if (!area) return;
+        if (type === "error") {
+          area.innerHTML = `<div style="padding:40px 32px;text-align:center;color:var(--danger);font-size:13.5px;line-height:1.6;">${escapeHtml(message)}</div>`;
+          return;
+        }
+        area.innerHTML = `
+          <div class="career-loading">
+            <div class="career-loading-spinner"></div>
+            <div class="career-loading-text">${escapeHtml(message)}</div>
+          </div>`;
+      }
+
+      async function importPdfForCareerAdvisor(file) {
         if (!file) return;
         if (!/\.pdf$/i.test(file.name) && file.type !== "application/pdf") {
           setMessage("請選擇 PDF 格式的履歷檔案。", "error");
+          showCareerUploadStatus("請選擇 PDF 格式的 CV 檔案。", "error");
           return;
         }
-        if (!confirm("匯入 PDF 後，系統會保留目前資料並把辨識出的內容合併進編輯器欄位，是否繼續？")) return;
 
         try {
-          setMessage("正在解析 PDF 履歷，請稍候…", "success");
+          setMessage("正在讀取 PDF CV，完成後會直接交給求職顧問分析…", "success");
+          showCareerUploadStatus("正在讀取 PDF CV，完成後會直接啟動求職顧問分析…");
           const text = await extractPdfText(file);
           if (!text) {
             throw new Error("未能從 PDF 中讀取到文字，可能是掃描圖檔型 PDF。");
           }
-          const parsed = parsePdfResumeText(text, file.name);
-          pushUndo();
-          state.data = buildPdfImportPayload(parsed);
+          state.data = {
+            ...state.data,
+            importedPdfText: text,
+            importedPdfFileName: file.name
+          };
           saveJson(STORAGE_KEY, state.data);
-          syncInputs();
-          updatePreview(true);
-          updateWordCount();
-          updatePdfImportStatus();
-          notifyCvDataUpdated("pdf-import");
-          setMessage("PDF 履歷已匯入，可直接在欄位中編輯，求職顧問也會讀取這份內容。", "success");
+          notifyCvDataUpdated("career-pdf-upload");
+          setMessage("PDF CV 已上傳，正在切換到求職顧問並啟動 AI 分析。", "success");
+          runCareerAdvisorFromUploadedPdf(file.name);
         } catch (error) {
-          setMessage(`PDF 匯入失敗：${error.message || "請稍後再試。"}`, "error");
+          setMessage(`PDF CV 讀取失敗：${error.message || "請稍後再試。"}`, "error");
+          showCareerUploadStatus(`PDF CV 讀取失敗：${error.message || "請稍後再試。"}`, "error");
         }
       }
 
@@ -9240,7 +9110,6 @@
         syncInputs();
         updatePreview(true);
         updateWordCount();
-        updatePdfImportStatus();
         notifyCvDataUpdated("clear-all");
         setMessage("所有 CV 資料已清除。", "success");
       }
@@ -9269,10 +9138,8 @@
           importJson(e.target.files[0]);
           e.target.value = "";
         });
-        $("uploadCvPdfBtn")?.addEventListener("click", openPdfImportPicker);
-        $("importPdfBtn")?.addEventListener("click", openPdfImportPicker);
         $("importPdfInput")?.addEventListener("change", async (e) => {
-          await importPdfResume(e.target.files[0]);
+          await importPdfForCareerAdvisor(e.target.files[0]);
           e.target.value = "";
         });
 
@@ -9309,7 +9176,6 @@
         // Load saved accent & snapshots
         loadSavedAccent();
         renderSnapshotList();
-        updatePdfImportStatus();
         updateWordCount();
         updateQrCode();
         updateUndoRedoBtns();
@@ -10971,6 +10837,12 @@
 
         function getCvSummary() {
           const d = window.cvStudioState?.data || {};
+          if ((d.importedPdfText || "").trim()) {
+            return [
+              d.importedPdfFileName && `PDF 檔名：${d.importedPdfFileName}`,
+              `PDF CV 原文：${d.importedPdfText}`
+            ].filter(Boolean).join("\n\n");
+          }
           const parts = [
             d.name    && `姓名：${d.name}`,
             d.role    && `職稱/目標：${d.role}`,
@@ -10980,7 +10852,6 @@
             d.experience && `工作經歷：${d.experience}`,
             d.education  && `教育背景：${d.education}`,
             d.projects   && `專案/作品：${d.projects}`,
-            d.importedPdfText && `PDF 匯入原文：${d.importedPdfText}`,
           ].filter(Boolean);
           return parts.length ? parts.join("\n\n") : "";
         }
@@ -11601,6 +11472,16 @@
             } else {
               document.getElementById("importPdfInput")?.click();
             }
+          });
+
+          window.addEventListener("career:auto-analyze-uploaded-cv", () => {
+            updateCvSnippet();
+            const positionTab = document.querySelector(".career-mode-tab[data-mode='position']");
+            positionTab?.click();
+            window.setTimeout(() => {
+              const analyzeBtn = $c("careerAnalyzeBtn");
+              if (analyzeBtn && !analyzeBtn.disabled) analyzeBtn.click();
+            }, 60);
           });
 
           $c("careerEditCvBtn")?.addEventListener("click", () => {
