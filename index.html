@@ -424,10 +424,11 @@
     }
 
     .home-progress-fill {
-      width: 42%;
+      width: var(--home-progress, 0%);
       height: 100%;
       border-radius: inherit;
       background: linear-gradient(90deg, var(--home-teal), var(--home-green));
+      transition: width 0.22s ease;
     }
 
     .home-task-list {
@@ -482,6 +483,21 @@
       font-size: 0.72rem;
       font-weight: 800;
       white-space: nowrap;
+    }
+
+    .home-task-state[data-state="done"] {
+      background: rgba(18, 122, 118, 0.12);
+      color: var(--home-teal);
+    }
+
+    .home-task-state[data-state="active"] {
+      background: rgba(209, 152, 47, 0.14);
+      color: #8b5e12;
+    }
+
+    .home-task-state[data-state="pending"] {
+      background: rgba(23, 32, 31, 0.07);
+      color: var(--home-muted);
     }
 
     .home-mini-stats {
@@ -4161,15 +4177,15 @@
       <aside class="home-status-panel" aria-label="目前進度">
         <div class="home-panel-header">
           <strong>目前進度</strong>
-          <span>本機草稿</span>
+          <span id="homeSyncState">可開始</span>
         </div>
-        <div class="home-progress" aria-label="整體進度 42%">
+        <div id="homeProgress" class="home-progress" aria-label="整體進度 0%">
           <div class="home-progress-top">
             <span>申請資料</span>
-            <span>42%</span>
+            <span id="homeProgressValue">0%</span>
           </div>
           <div class="home-progress-track">
-            <div class="home-progress-fill"></div>
+            <div id="homeProgressFill" class="home-progress-fill" style="--home-progress:0%;"></div>
           </div>
         </div>
         <ul class="home-task-list">
@@ -4179,7 +4195,7 @@
               <strong>CV 履歷</strong>
               <span>個人資料、經歷、技能、作品</span>
             </div>
-            <span class="home-task-state">可編輯</span>
+            <span id="homeTaskCvState" class="home-task-state" data-state="pending">可編輯</span>
           </li>
           <li class="home-task">
             <span class="home-task-mark">2</span>
@@ -4187,7 +4203,7 @@
               <strong>學習歷程</strong>
               <span>章節、圖片、成果摘要</span>
             </div>
-            <span class="home-task-state">待整理</span>
+            <span id="homeTaskPortfolioState" class="home-task-state" data-state="pending">待整理</span>
           </li>
           <li class="home-task">
             <span class="home-task-mark">3</span>
@@ -4195,20 +4211,20 @@
               <strong>學測落點</strong>
               <span>115 學年度校系資料</span>
             </div>
-            <span class="home-task-state">可分析</span>
+            <span id="homeTaskGsatState" class="home-task-state" data-state="pending">待輸入</span>
           </li>
         </ul>
         <div class="home-mini-stats">
           <div class="home-mini-stat">
-            <strong>28</strong>
+            <strong id="homeTemplateCount">28</strong>
             <span>履歷模板</span>
           </div>
           <div class="home-mini-stat">
-            <strong>3</strong>
+            <strong id="homeWorkspaceCount">3</strong>
             <span>主要工作區</span>
           </div>
           <div class="home-mini-stat">
-            <strong>PDF</strong>
+            <strong id="homeExportFormat">PDF</strong>
             <span>輸出格式</span>
           </div>
         </div>
@@ -5352,16 +5368,23 @@
         "整理歷程": "Organize Portfolio",
         "查看落點": "Check Placement",
         "目前進度": "Current Progress",
+        "整體進度": "Overall Progress",
+        "可開始": "Ready to Start",
+        "雲端已連線": "Cloud Connected",
+        "同步中": "Syncing",
         "申請資料": "Application Set",
-        "42%": "42%",
         "CV 履歷": "CV Resume",
         "個人資料、經歷、技能、作品": "Profile, experience, skills, work",
         "可編輯": "Editable",
+        "資料完整": "Complete",
+        "進行中": "In Progress",
         "章節、圖片、成果摘要": "Sections, images, outcome summaries",
         "待整理": "To Organize",
+        "已整理": "Organized",
         "學測落點": "GSAT Placement",
         "115 學年度校系資料": "Academic year 115 school data",
         "可分析": "Ready",
+        "待輸入": "To Enter",
         "28": "28",
         "履歷模板": "Resume Templates",
         "3": "3",
@@ -6251,6 +6274,7 @@
       const TEMPLATE_KEY = "cv-studio-template-v1";
       const WORKFLOW_KEY = "cv-studio-workflow-v1";
       const LAYOUT_KEY = "cv-studio-layout-v1";
+      const PORTFOLIO_STORAGE_KEY = "pf-studio-local-v4";
       const defaultData = {
         name: "",
         role: "",
@@ -6751,10 +6775,13 @@
           }
         })();
 
+        const isLocalHttp = window.location.protocol.startsWith("http")
+          && ["localhost", "127.0.0.1", "::1"].includes(window.location.hostname);
+
         return {
           supabaseUrl: runtimeConfig.supabaseUrl || stored.supabaseUrl || "",
           supabaseAnonKey: runtimeConfig.supabaseAnonKey || stored.supabaseAnonKey || "",
-          siteUrl: runtimeConfig.siteUrl || stored.siteUrl || fallbackSiteUrl,
+          siteUrl: isLocalHttp ? fallbackSiteUrl : runtimeConfig.siteUrl || stored.siteUrl || fallbackSiteUrl,
           canvaConnectUrl: runtimeConfig.canvaConnectUrl || stored.canvaConnectUrl || "https://www.canva.com/",
           defaultTemplate: runtimeConfig.defaultTemplate || stored.defaultTemplate || "n-tech"
         };
@@ -6786,6 +6813,32 @@
       let authSubscription = null;
 
       const fields = ["name", "role", "email", "phone", "location", "website", "avatar", "summary", "skills", "highlights", "experience", "education", "projects", "awards"];
+      const HOME_GSAT_SCORE_FIELDS = ["國文", "英文", "數學A", "數學B", "社會", "自然"];
+      const HOME_PORTFOLIO_PLACEHOLDER_VALUES = new Set([
+        "請輸入文件標題",
+        "署名",
+        "文件署名",
+        "附註欄位",
+        "貼上封面圖片網址",
+        "請輸入章節標題",
+        "章節標題",
+        "小節標題",
+        "延伸小節",
+        "延伸內容",
+        "補充段落",
+        "核心段落標題",
+        "核心重點標題",
+        "核心學習內容",
+        "核心作品",
+        "核心段落",
+        "核心敘述",
+        "輸入本章主要內容",
+        "輸入小節內容",
+        "補充項目標題",
+        "補充項目內容",
+        "貼上圖片網址",
+        "補一段圖片說明"
+      ]);
 
       function $(id) {
         return document.getElementById(id);
@@ -6944,6 +6997,169 @@
 
       function uiText(value) {
         return window.cvStudioI18n?.t(value) || value;
+      }
+
+      function hasMeaningfulText(value) {
+        return String(value || "").trim().length > 0;
+      }
+
+      function hasCvField(field) {
+        const value = String(state.data[field] || "").trim();
+        if (!value) return false;
+        return !(CV_FIELD_PLACEHOLDER_VALUES[field] || []).includes(value);
+      }
+
+      function hasCvEntry(field) {
+        if (!hasCvField(field)) return false;
+        return parseEntries(state.data[field]).some((entry) =>
+          [entry.title, entry.subtitle, entry.date, entry.body].some(hasMeaningfulText)
+        );
+      }
+
+      function getCvHomeProgress() {
+        const skillCount = splitLines(String(state.data.skills || "").replaceAll(",", "\n")).length;
+        const itemStates = [
+          hasCvField("name") && (hasCvField("role") || hasCvField("email") || hasCvField("phone")),
+          hasCvField("summary") || hasCvField("importedPdfText"),
+          skillCount >= 2,
+          ["experience", "projects", "education"].some(hasCvEntry),
+          splitLines(state.data.highlights).length > 0 || splitLines(state.data.awards).length > 0 || hasCvField("importedPdfText")
+        ];
+        const completed = itemStates.filter(Boolean).length;
+        return {
+          score: completed * 10,
+          hasAny: fields.some(hasCvField) || hasCvField("importedPdfText"),
+          complete: completed >= itemStates.length - 1
+        };
+      }
+
+      function isMeaningfulPortfolioText(value) {
+        const text = String(value || "").trim();
+        return Boolean(text) && !HOME_PORTFOLIO_PLACEHOLDER_VALUES.has(text);
+      }
+
+      function getPortfolioHomeProgress() {
+        let portfolio = {};
+        try {
+          const raw = localStorage.getItem(PORTFOLIO_STORAGE_KEY);
+          portfolio = raw ? JSON.parse(raw) : {};
+        } catch {
+          portfolio = {};
+        }
+
+        const profileCount = ["title", "studentName", "school"]
+          .filter((field) => isMeaningfulPortfolioText(portfolio[field])).length;
+        let sectionTextCount = 0;
+        let hasImage = isMeaningfulPortfolioText(portfolio.coverImageUrl);
+        const chapters = Array.isArray(portfolio.chapters) ? portfolio.chapters : [];
+        chapters.forEach((chapter) => {
+          if (isMeaningfulPortfolioText(chapter?.title)) sectionTextCount += 1;
+          const sections = Array.isArray(chapter?.sections) ? chapter.sections : [];
+          sections.forEach((section) => {
+            ["header", "body", "imageCaption"].forEach((field) => {
+              if (isMeaningfulPortfolioText(section?.[field])) sectionTextCount += 1;
+            });
+            if (isMeaningfulPortfolioText(section?.imageUrl)) hasImage = true;
+          });
+        });
+
+        const score =
+          (profileCount >= 2 ? 8 : profileCount > 0 ? 4 : 0) +
+          (sectionTextCount >= 3 ? 12 : sectionTextCount > 0 ? 6 : 0) +
+          (hasImage ? 5 : 0);
+
+        return {
+          score,
+          hasAny: profileCount > 0 || sectionTextCount > 0 || hasImage,
+          complete: score >= 20
+        };
+      }
+
+      function getGsatHomeProgress() {
+        const scoreCount = HOME_GSAT_SCORE_FIELDS.reduce((count, subject) => {
+          const value = document.getElementById(`gsatScore${subject}`)?.value;
+          const score = Number.parseFloat(value || "");
+          return Number.isFinite(score) && score > 0 ? count + 1 : count;
+        }, 0);
+        const targetReady = ["gsatTierSelect", "gsatUniversitySelect", "gsatDepartmentSelect"]
+          .some((id) => {
+            const value = document.getElementById(id)?.value || "";
+            return Boolean(value) && value !== "all";
+          });
+        const score = (targetReady ? 5 : 0) + (scoreCount >= 5 ? 10 : scoreCount > 0 ? 5 : 0);
+
+        return {
+          score,
+          hasAny: targetReady || scoreCount > 0,
+          ready: targetReady && scoreCount >= 5
+        };
+      }
+
+      function setHomeText(id, text) {
+        const node = $(id);
+        if (node) node.textContent = uiText(text);
+      }
+
+      function setHomeTaskState(id, text, stateName) {
+        const node = $(id);
+        if (!node) return;
+        node.textContent = uiText(text);
+        node.dataset.state = stateName;
+      }
+
+      function renderHomeStatus() {
+        const cv = getCvHomeProgress();
+        const portfolio = getPortfolioHomeProgress();
+        const gsat = getGsatHomeProgress();
+        const syncScore = state.user ? 10 : 0;
+        const completion = Math.max(0, Math.min(100, Math.round(cv.score + portfolio.score + gsat.score + syncScore)));
+        const hasLocalWork = cv.hasAny || portfolio.hasAny || gsat.hasAny;
+
+        const progressNode = $("homeProgress");
+        const progressFill = $("homeProgressFill");
+        if (progressNode) {
+          progressNode.dataset.progress = String(completion);
+          progressNode.setAttribute("aria-label", `${uiText("整體進度")} ${completion}%`);
+        }
+        if (progressFill) {
+          progressFill.style.setProperty("--home-progress", `${completion}%`);
+        }
+        setHomeText("homeProgressValue", `${completion}%`);
+
+        const syncState = state.authBusy
+          ? "同步中"
+          : state.user
+            ? "雲端已連線"
+            : hasLocalWork
+              ? "本機草稿"
+              : "可開始";
+        setHomeText("homeSyncState", syncState);
+
+        setHomeTaskState(
+          "homeTaskCvState",
+          cv.complete ? "資料完整" : cv.hasAny ? "進行中" : "可編輯",
+          cv.complete ? "done" : cv.hasAny ? "active" : "pending"
+        );
+        setHomeTaskState(
+          "homeTaskPortfolioState",
+          portfolio.complete ? "已整理" : portfolio.hasAny ? "進行中" : "待整理",
+          portfolio.complete ? "done" : portfolio.hasAny ? "active" : "pending"
+        );
+        setHomeTaskState(
+          "homeTaskGsatState",
+          gsat.ready ? "可分析" : gsat.hasAny ? "進行中" : "待輸入",
+          gsat.ready ? "done" : gsat.hasAny ? "active" : "pending"
+        );
+
+        const templateCount = $("homeTemplateCount");
+        if (templateCount) templateCount.textContent = String(Object.keys(templateDefinitions).length);
+        const workspaceCount = $("homeWorkspaceCount");
+        if (workspaceCount) workspaceCount.textContent = state.user ? "4" : "3";
+        const exportFormat = $("homeExportFormat");
+        if (exportFormat) exportFormat.textContent = "PDF";
+
+        const page = $("page-home");
+        if (page) window.cvStudioI18n?.apply(page);
       }
 
       function normalizeLayoutRegions(regions) {
@@ -7134,7 +7350,10 @@
       function updatePreview(force) {
         // Don't re-render while user is typing inside a contenteditable element
         const ae = document.activeElement;
-        if (!force && ae && ae.isContentEditable && $("cvPaper") && $("cvPaper").contains(ae)) return;
+        if (!force && ae && ae.isContentEditable && $("cvPaper") && $("cvPaper").contains(ae)) {
+          renderHomeStatus();
+          return;
+        }
 
         const layoutState = getLayoutState();
         const paper = $("cvPaper");
@@ -7152,6 +7371,7 @@
         if (typeof updateWordCount === "function") updateWordCount();
         if (typeof updateQrCode === "function") updateQrCode();
         window.cvStudioI18n?.apply(paper);
+        renderHomeStatus();
       }
 
       function syncInputs() {
@@ -7165,6 +7385,7 @@
         $("canvaConnectUrl").value = state.config.canvaConnectUrl || "https://www.canva.com/";
         $("defaultTemplateSelect").value = state.config.defaultTemplate || "n-tech";
         syncRuntimeConfigStatus();
+        renderHomeStatus();
       }
 
       function getCanvaConnectUrl() {
@@ -7779,6 +8000,7 @@
           headerLogoutBtn.hidden = true;
         }
         renderGoogleImpactChecklist();
+        renderHomeStatus();
       }
 
       async function signInWithGoogle(event) {
@@ -7969,6 +8191,7 @@
             state.data[field] = event.target.value;
             saveJson(STORAGE_KEY, state.data);
             updatePreview();
+            notifyCvDataUpdated("field-input");
           });
         });
 
@@ -8221,6 +8444,7 @@
         // keep hidden form inputs in sync
         const inp = $(field);
         if (inp) inp.value = state.data[field] || "";
+        notifyCvDataUpdated("wysiwyg-input");
       }
 
       /* ── "＋ add item" buttons inside the preview ── */
@@ -8251,6 +8475,7 @@
         const inp = $(addTo);
         if (inp) inp.value = state.data[addTo] || "";
         updatePreview(true);
+        notifyCvDataUpdated("wysiwyg-add");
       }
 
       /* ══════════════════════════════════════════════════════
@@ -9117,6 +9342,16 @@
         registerServiceWorker();
         updateActionButtons();
         renderGoogleImpactChecklist();
+        renderHomeStatus();
+        window.addEventListener("cv:data-updated", renderHomeStatus);
+        window.addEventListener("portfolio:data-updated", renderHomeStatus);
+        window.addEventListener("storage", (event) => {
+          if ([STORAGE_KEY, PORTFOLIO_STORAGE_KEY].includes(event.key)) renderHomeStatus();
+        });
+        ["gsatTierSelect", "gsatUniversitySelect", "gsatDepartmentSelect", "gsatListen"]
+          .forEach((id) => $(id)?.addEventListener("change", renderHomeStatus));
+        HOME_GSAT_SCORE_FIELDS
+          .forEach((subject) => document.getElementById(`gsatScore${subject}`)?.addEventListener("input", renderHomeStatus));
         window.addEventListener("cv:language-changed", () => {
           syncWorkflowUi();
           updatePreview(true);
@@ -9126,6 +9361,7 @@
           syncLogoutFeedback();
           updateActionButtons();
           renderGoogleImpactChecklist();
+          renderHomeStatus();
         });
         await refreshSession();
       }
@@ -9304,7 +9540,10 @@
         } catch { return null; }
       })();
 
-      function save() { localStorage.setItem(PF_KEY, JSON.stringify(pf)); }
+      function save() {
+        localStorage.setItem(PF_KEY, JSON.stringify(pf));
+        window.dispatchEvent(new CustomEvent("portfolio:data-updated"));
+      }
       function themePalette() {
         return pfThemes[pf.accentTheme] || pfThemes.slate;
       }

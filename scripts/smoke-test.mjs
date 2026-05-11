@@ -319,6 +319,106 @@ async function main() {
       });
     });
 
+    await withStep("首頁狀態同步與本機 redirect", async () => {
+      const redirectTo = await page.$eval("#headerLoginBtn", (node) => {
+        return new URL(node.href).searchParams.get("redirect_to");
+      });
+      assert.equal(redirectTo, `${origin}/`);
+
+      const initialHome = await page.evaluate(() => ({
+        progress: document.getElementById("homeProgressValue")?.textContent || "",
+        sync: document.getElementById("homeSyncState")?.textContent || "",
+        cv: document.getElementById("homeTaskCvState")?.textContent || "",
+        portfolio: document.getElementById("homeTaskPortfolioState")?.textContent || "",
+        gsat: document.getElementById("homeTaskGsatState")?.textContent || ""
+      }));
+      assert.equal(initialHome.progress, "0%");
+      assert.match(initialHome.sync, /可開始/);
+      assert.match(initialHome.cv, /可編輯/);
+      assert.match(initialHome.portfolio, /待整理/);
+      assert.match(initialHome.gsat, /待輸入/);
+
+      await page.evaluate(() => {
+        Object.assign(window.cvStudioState.data, {
+          name: "首頁學生",
+          role: "前端工程師",
+          email: "home@example.com",
+          summary: "具備前端開發、作品整理與跨裝置同步經驗，正在準備完整申請資料。",
+          skills: "JavaScript\nHTML\nCSS",
+          highlights: "完成作品集\n熟悉履歷優化",
+          experience: "前端實習生|Studio|2026|負責介面開發與資料同步測試"
+        });
+        window.localStorage.setItem("cv-studio-local-v2", JSON.stringify(window.cvStudioState.data));
+        window.localStorage.setItem("pf-studio-local-v4", JSON.stringify({
+          title: "學習歷程測試",
+          studentName: "首頁學生",
+          school: "測試高中",
+          coverImageUrl: "https://example.com/cover.png",
+          accentTheme: "slate",
+          chapters: [{
+            id: "smoke-chapter",
+            title: "專題成果",
+            sections: [{
+              id: "smoke-section",
+              header: "網站專題",
+              body: "整理需求、設計介面並完成互動測試。",
+              imageUrl: "",
+              imageCaption: "成果截圖"
+            }]
+          }]
+        }));
+
+        const tier = document.getElementById("gsatTierSelect");
+        if (tier) {
+          tier.value = "top";
+          tier.dispatchEvent(new Event("change", { bubbles: true }));
+        }
+        ["國文", "英文", "數學A", "社會", "自然"].forEach((subject, index) => {
+          const input = document.getElementById(`gsatScore${subject}`);
+          if (!input) return;
+          input.value = String(11 + index);
+          input.dispatchEvent(new Event("input", { bubbles: true }));
+        });
+
+        window.dispatchEvent(new CustomEvent("cv:data-updated"));
+        window.dispatchEvent(new CustomEvent("portfolio:data-updated"));
+      });
+
+      await page.waitForFunction(() => {
+        const value = Number.parseInt(document.getElementById("homeProgressValue")?.textContent || "0", 10);
+        return value >= 85;
+      });
+      const updatedHome = await page.evaluate(() => ({
+        progress: document.getElementById("homeProgressValue")?.textContent || "",
+        sync: document.getElementById("homeSyncState")?.textContent || "",
+        cv: document.getElementById("homeTaskCvState")?.textContent || "",
+        portfolio: document.getElementById("homeTaskPortfolioState")?.textContent || "",
+        gsat: document.getElementById("homeTaskGsatState")?.textContent || ""
+      }));
+      assert.match(updatedHome.sync, /本機草稿/);
+      assert.match(updatedHome.cv, /資料完整/);
+      assert.match(updatedHome.portfolio, /已整理/);
+      assert.match(updatedHome.gsat, /可分析/);
+
+      await page.click("[data-language-toggle]");
+      await page.waitForFunction(() => /Finish one sendable/.test(document.querySelector(".home-title")?.textContent || ""));
+      const englishHome = await page.evaluate(() => ({
+        title: document.querySelector(".home-title")?.textContent || "",
+        sync: document.getElementById("homeSyncState")?.textContent || "",
+        cv: document.getElementById("homeTaskCvState")?.textContent || "",
+        portfolio: document.getElementById("homeTaskPortfolioState")?.textContent || "",
+        gsat: document.getElementById("homeTaskGsatState")?.textContent || ""
+      }));
+      assert.match(englishHome.sync, /Local draft/);
+      assert.match(englishHome.cv, /Complete/);
+      assert.match(englishHome.portfolio, /Organized/);
+      assert.match(englishHome.gsat, /Ready/);
+      assert.doesNotMatch(Object.values(englishHome).join(" "), /[\u3400-\u9fff]/);
+
+      await page.click("[data-language-toggle]");
+      await page.waitForFunction(() => /今天先完成/.test(document.querySelector(".home-title")?.textContent || ""));
+    });
+
     await withStep("Career 基本互動", async () => {
       await page.evaluate(() => {
         Object.assign(window.cvStudioState.data, {
