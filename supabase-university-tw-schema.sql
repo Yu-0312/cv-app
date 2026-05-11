@@ -122,17 +122,46 @@ create index if not exists university_tw_gender_departments_name_idx
 create table if not exists public.university_tw_registration_departments (
   snapshot_id text not null,
   university_code text not null,
+  row_key text not null,
   department_name text not null,
   quota_minus_reserved_text text,
   registered_count_text text,
   registration_rate_text text,
   metrics jsonb not null default '{}'::jsonb,
   created_at timestamptz not null default now(),
-  primary key (snapshot_id, university_code, department_name),
+  primary key (snapshot_id, university_code, row_key),
   foreign key (snapshot_id, university_code)
     references public.university_tw_universities(snapshot_id, university_code)
     on delete cascade
 );
+
+alter table if exists public.university_tw_registration_departments
+  add column if not exists row_key text;
+
+update public.university_tw_registration_departments
+set row_key = coalesce(
+  row_key,
+  md5(
+    concat_ws(
+      '::',
+      coalesce(department_name, ''),
+      coalesce(quota_minus_reserved_text, ''),
+      coalesce(registered_count_text, ''),
+      coalesce(registration_rate_text, '')
+    )
+  )
+)
+where row_key is null;
+
+alter table if exists public.university_tw_registration_departments
+  alter column row_key set not null;
+
+alter table if exists public.university_tw_registration_departments
+  drop constraint if exists university_tw_registration_departments_pkey;
+
+alter table if exists public.university_tw_registration_departments
+  add constraint university_tw_registration_departments_pkey
+  primary key (snapshot_id, university_code, row_key);
 
 create index if not exists university_tw_registration_departments_name_idx
   on public.university_tw_registration_departments (department_name);

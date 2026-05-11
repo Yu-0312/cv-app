@@ -380,7 +380,9 @@ async function main() {
       });
 
       const sourceText = await page.$eval(".gsat-source-chip", (node) => node.textContent || "");
+      const resultText = await page.$eval("#gsatResultsArea", (node) => node.textContent || "");
       assert.match(sourceText, /本地快照/);
+      assert.doesNotMatch(resultText, /暫時沒有歷年切線/);
     });
 
     await withStep("GSAT 無切線 fallback", async () => {
@@ -393,7 +395,9 @@ async function main() {
       });
 
       const actionCount = await page.$$eval("#gsatResultsArea [data-gsat-action]", (nodes) => nodes.length);
+      const suggestionText = await page.$eval("#gsatResultsArea", (node) => node.textContent || "");
       assert.ok(actionCount >= 1, "無切線 fallback 應提供至少一個快速操作按鈕");
+      assert.doesNotMatch(suggestionText, /土木工程學系|化學工程學系|材料科學與工程學系/);
     });
 
     assert.deepEqual(pageErrors, [], `頁面執行錯誤：\n${pageErrors.join("\n")}`);

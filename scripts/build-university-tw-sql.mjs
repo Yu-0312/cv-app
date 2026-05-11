@@ -54,15 +54,6 @@ function normalizeUniversityCode(value, name = "") {
   return digits.padStart(4, "0");
 }
 
-function parseEmbeddedInteger(value) {
-  const text = String(value ?? "")
-    .replace(/^'/, "")
-    .replace(/'$/, "")
-    .replace(/''/g, "'")
-    .replace(/\D/g, "");
-  return text ? Number(text) : -1;
-}
-
 function dedupeRows(rows, buildKey, chooseRow = (current) => current) {
   const map = new Map();
   for (const row of rows) {
@@ -76,20 +67,11 @@ function dedupeRows(rows, buildKey, chooseRow = (current) => current) {
   return Array.from(map.values());
 }
 
-function preferRegistrationRow(current, candidate) {
-  const currentRegistered = parseEmbeddedInteger(current.registered_count_text);
-  const candidateRegistered = parseEmbeddedInteger(candidate.registered_count_text);
-  if (candidateRegistered !== currentRegistered) {
-    return candidateRegistered > currentRegistered ? candidate : current;
-  }
-
-  const currentQuota = parseEmbeddedInteger(current.quota_minus_reserved_text);
-  const candidateQuota = parseEmbeddedInteger(candidate.quota_minus_reserved_text);
-  if (candidateQuota !== currentQuota) {
-    return candidateQuota > currentQuota ? candidate : current;
-  }
-
-  return current;
+function buildRowKey(index, ...parts) {
+  return [
+    String(index + 1).padStart(4, "0"),
+    ...parts.map((part) => cleanText(part).replace(/::/g, ":"))
+  ].join("::");
 }
 
 function sqlString(value) {
@@ -340,16 +322,20 @@ function buildSql(raw, snapshotId) {
 
   const registrationRows = [];
   for (const school of raw?.sections?.register?.schools || []) {
-    for (const department of school.departments || []) {
+    for (const [index, department] of (school.departments || []).entries()) {
       const name = cleanText(department.departmentName);
       if (!name) continue;
+      const quotaMinusReserved = cleanText(department.quotaMinusReserved);
+      const registeredCount = cleanText(department.registeredCount);
+      const registrationRate = cleanText(department.registrationRate);
       registrationRows.push({
         snapshot_id: sqlString(snapshotId),
         university_code: sqlString(nameToCode[cleanText(school.name)] || normalizeUniversityCode(school.code, school.name)),
+        row_key: sqlString(buildRowKey(index, name, quotaMinusReserved, registeredCount, registrationRate)),
         department_name: sqlString(name),
-        quota_minus_reserved_text: sqlString(cleanText(department.quotaMinusReserved)),
-        registered_count_text: sqlString(cleanText(department.registeredCount)),
-        registration_rate_text: sqlString(cleanText(department.registrationRate)),
+        quota_minus_reserved_text: sqlString(quotaMinusReserved),
+        registered_count_text: sqlString(registeredCount),
+        registration_rate_text: sqlString(registrationRate),
         metrics: sqlJson(department.metrics || {}, {})
       });
     }
@@ -387,8 +373,7 @@ function buildSql(raw, snapshotId) {
   );
   const uniqueRegistrationRows = dedupeRows(
     registrationRows,
-    (row) => `${row.snapshot_id}|${row.university_code}|${row.department_name}`,
-    preferRegistrationRow
+    (row) => `${row.snapshot_id}|${row.university_code}|${row.row_key}`
   );
 
   return `-- University TW seed generated at ${generatedAt}
@@ -519,6 +504,7 @@ ${buildInsert(
   [
     "snapshot_id",
     "university_code",
+    "row_key",
     "department_name",
     "quota_minus_reserved_text",
     "registered_count_text",

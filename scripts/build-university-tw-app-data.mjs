@@ -45,26 +45,19 @@ function keyByDepartment(items = [], mapper) {
   return result;
 }
 
-function buildSchoolRecordFromUniversityTw(school) {
-  const femaleSummary = Array.isArray(school?.summary) ? school.summary : [];
-  const registerTotal = school?.total || null;
-
-  return {
-    code: school.code,
-    name: school.name,
-    femaleSummary,
-    registerTotal,
-    femaleDepartments: keyByDepartment(school.departments, (item) => ({
-      femalePercent: cleanText(item.femalePercent),
-      girls: cleanText(item.girls),
-      boys: cleanText(item.boys)
-    })),
-    registerDepartments: keyByDepartment(school.departments, (item) => ({
-      registrationRate: cleanText(item.registrationRate),
-      registeredCount: cleanText(item.registeredCount),
-      quotaMinusReserved: cleanText(item.quotaMinusReserved)
-    }))
-  };
+function keyByDepartmentWithVariants(items = [], mapper) {
+  const result = {};
+  for (const item of items) {
+    const name = cleanText(item?.departmentName || item?.name);
+    if (!name) continue;
+    const entry = mapper(item);
+    if (!result[name]) {
+      result[name] = { ...entry, variants: [{ ...entry }] };
+      continue;
+    }
+    result[name].variants.push({ ...entry });
+  }
+  return result;
 }
 
 function buildPayload(raw) {
@@ -148,7 +141,7 @@ function buildPayload(raw) {
     schools[name] ||= { code: school.code, name };
     schools[name].register = {
       total: school.total || null,
-      departments: keyByDepartment(school.departments, (item) => ({
+      departments: keyByDepartmentWithVariants(school.departments, (item) => ({
         registrationRate: cleanText(item.registrationRate),
         registeredCount: cleanText(item.registeredCount),
         quotaMinusReserved: cleanText(item.quotaMinusReserved)

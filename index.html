@@ -3261,6 +3261,11 @@
     .gsat-dept-card .dc-dept { font-size: 13px; color: var(--muted); }
     .gsat-dept-card .dc-reason { font-size: 12px; color: var(--muted); line-height: 1.5; margin-top: 4px; }
     .gsat-dept-card .dc-tip { margin-top: 6px; font-size: 12px; color: var(--accent); font-weight: 600; }
+    .gsat-dept-band { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-top: 8px; padding: 8px 10px; border-radius: 10px; background: rgba(33,78,116,.05); }
+    .gsat-band-chip { display: inline-flex; align-items: center; border-radius: 999px; padding: 4px 9px; background: rgba(33,78,116,.12); color: var(--accent); font-size: 10.5px; font-weight: 800; letter-spacing: .04em; }
+    .gsat-band-copy { display: grid; gap: 2px; min-width: 0; }
+    .gsat-band-title { font-size: 11.5px; font-weight: 800; color: var(--ink); line-height: 1.45; }
+    .gsat-band-note { font-size: 11px; color: var(--muted); line-height: 1.5; }
     .dc-badge { border-radius: 6px; padding: 2px 8px; font-size: 11px; font-weight: 700; white-space: nowrap; }
     .dc-badge-dream    { background: #fef3c7; color: #92400e; }
     .dc-badge-reach    { background: #fee2e2; color: #991b1b; }
@@ -3305,6 +3310,9 @@
     .gsat-overview-kicker { font-size: 10.5px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); margin-bottom: 6px; }
     .gsat-overview-title { font-size: 14px; font-weight: 800; color: var(--ink); line-height: 1.5; margin: 0 0 6px; }
     .gsat-overview-text { font-size: 12px; color: var(--muted); line-height: 1.7; margin: 0; }
+    .gsat-overview-band { margin-top: 10px; padding: 8px 10px; border-radius: 10px; background: rgba(33,78,116,.05); }
+    .gsat-overview-band strong { display: block; font-size: 11.5px; color: var(--ink); margin-bottom: 3px; }
+    .gsat-overview-band span { display: block; font-size: 11px; color: var(--muted); line-height: 1.5; }
     .gsat-action-row { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
     .gsat-action-btn { appearance: none; border: 1px solid rgba(33,78,116,.14); background: rgba(33,78,116,.06); color: var(--accent); border-radius: 999px; padding: 7px 11px; font-size: 11.5px; font-weight: 700; line-height: 1.2; cursor: pointer; transition: transform .15s, background .15s, border-color .15s; }
     .gsat-action-btn:hover { transform: translateY(-1px); background: rgba(33,78,116,.1); border-color: rgba(33,78,116,.26); }
@@ -9250,6 +9258,7 @@
         departmentCoverage: new Map(),
         departmentProfile: new Map(),
         normalizedDepartmentLabels: new Map(),
+        departmentGroupKeys: new Map(),
         departmentTokens: new Map(),
         similarSuggestions: new Map(),
         filteredDeptRecords: new Map(),
@@ -10171,12 +10180,31 @@
         (rowsByTable.registration || []).forEach((row) => {
           const school = getSchool(row.university_code);
           if (!school) return;
-          school.register.departments[row.department_name] = {
+          const variant = {
+            rowKey: row.row_key || "",
             registrationRate: row.registration_rate_text || "",
             registeredCount: row.registered_count_text || "",
             quotaMinusReserved: row.quota_minus_reserved_text || "",
             metrics: row.metrics || {}
           };
+          const current = school.register.departments[row.department_name];
+          if (!current) {
+            school.register.departments[row.department_name] = {
+              ...variant,
+              variants: [{ ...variant }]
+            };
+            return;
+          }
+          if (!Array.isArray(current.variants)) {
+            current.variants = [{
+              rowKey: current.rowKey || "",
+              registrationRate: current.registrationRate || "",
+              registeredCount: current.registeredCount || "",
+              quotaMinusReserved: current.quotaMinusReserved || "",
+              metrics: current.metrics || {}
+            }];
+          }
+          current.variants.push({ ...variant });
         });
 
         return universities;
@@ -10261,7 +10289,8 @@
           ]),
           fetchAllSupabaseRows(client, "university_tw_registration_departments", snapshotId, [
             { column: "university_code" },
-            { column: "department_name" }
+            { column: "department_name" },
+            { column: "row_key" }
           ])
         ]);
         const [universitiesResult, uacResult, caacResult, starResult, genderResult, registrationResult] = queries;
@@ -10471,29 +10500,90 @@
         return tokenList;
       }
 
+      function getDepartmentGroupKeys(name) {
+        if (GSAT_RUNTIME_CACHE.departmentGroupKeys.has(name)) {
+          return GSAT_RUNTIME_CACHE.departmentGroupKeys.get(name);
+        }
+        const normalized = normalizeDepartmentLabel(name);
+        const groups = DEPARTMENT_SIMILARITY_GROUPS
+          .filter((group) => group.keywords.some((keyword) => normalized.includes(keyword)))
+          .map((group) => group.key);
+        GSAT_RUNTIME_CACHE.departmentGroupKeys.set(name, groups);
+        return groups;
+      }
+
       function scoreDepartmentSimilarity(sourceName, candidateName) {
         const source = normalizeDepartmentLabel(sourceName);
         const candidate = normalizeDepartmentLabel(candidateName);
         if (!source || !candidate || source === candidate) return -1;
 
+        const sourceGroupKeys = getDepartmentGroupKeys(sourceName);
+        const candidateGroupKeys = getDepartmentGroupKeys(candidateName);
+        const sourceGroupSet = new Set(sourceGroupKeys);
+        const sharedGroups = candidateGroupKeys.filter((groupKey) => sourceGroupSet.has(groupKey));
+        const directOverlap = source.includes(candidate) || candidate.includes(source);
+        const prefixMatch = source.slice(0, 2) && source.slice(0, 2) === candidate.slice(0, 2);
+
+        const sourceBigrams = Array.from(
+          { length: Math.max(source.length - 1, 0) },
+          (_, index) => source.slice(index, index + 2)
+        );
+        const candidateBigrams = Array.from(
+          { length: Math.max(candidate.length - 1, 0) },
+          (_, index) => candidate.slice(index, index + 2)
+        );
+        const sourceBigramSet = new Set(sourceBigrams);
+        const bigramOverlap = candidateBigrams.filter((token) => sourceBigramSet.has(token)).length;
+        const bigramRatio = bigramOverlap / Math.max(sourceBigrams.length, candidateBigrams.length, 1);
+
+        if (!directOverlap && !prefixMatch && !sharedGroups.length && bigramRatio < 0.34) {
+          return -1;
+        }
+
         let score = 0;
-        if (source.includes(candidate) || candidate.includes(source)) score += 8;
-        if (source.slice(0, 2) && source.slice(0, 2) === candidate.slice(0, 2)) score += 3;
+        if (directOverlap) score += 60;
+        if (prefixMatch) score += 24;
+        score += sharedGroups.length * 28;
+        score += Math.round(bigramRatio * 24);
 
-        const sourceTokens = getDepartmentTokens(sourceName);
-        const candidateTokens = getDepartmentTokens(candidateName);
-        const sourceSet = new Set(sourceTokens);
-        const overlap = candidateTokens.filter((token) => sourceSet.has(token));
-        score += overlap.length * 4;
-
-        if (!overlap.length && source.length >= 2 && candidate.length >= 2) {
-          const sourceBigrams = new Set(Array.from({ length: Math.max(source.length - 1, 0) }, (_, index) => source.slice(index, index + 2)));
-          const candidateBigrams = Array.from({ length: Math.max(candidate.length - 1, 0) }, (_, index) => candidate.slice(index, index + 2));
-          const bigramOverlap = candidateBigrams.filter((token) => sourceBigrams.has(token)).length;
-          score += Math.min(bigramOverlap, 3);
+        if (!sharedGroups.length && !directOverlap && !prefixMatch && bigramOverlap < 2) {
+          return -1;
         }
 
         return score;
+      }
+
+      function getRegistrationProfileVariants(profile) {
+        if (!profile) return [];
+        if (Array.isArray(profile.variants) && profile.variants.length) return profile.variants;
+        return [{
+          rowKey: profile.rowKey || "",
+          registrationRate: profile.registrationRate || "",
+          registeredCount: profile.registeredCount || "",
+          quotaMinusReserved: profile.quotaMinusReserved || "",
+          metrics: profile.metrics || {}
+        }];
+      }
+
+      function getRegistrationSignalText(profile) {
+        const variants = getRegistrationProfileVariants(profile);
+        if (!variants.length) return "註冊率可查";
+        if (variants.length === 1) {
+          return `註冊率 ${variants[0].registrationRate || "可查"}`;
+        }
+        return `註冊率 ${variants.length} 筆分項`;
+      }
+
+      function getRegistrationDetailText(profile) {
+        const variants = getRegistrationProfileVariants(profile);
+        if (!variants.length) return "未提供";
+        if (variants.length === 1) {
+          const variant = variants[0];
+          return `${variant.registrationRate}（註冊 ${variant.registeredCount} / 名額-保留 ${variant.quotaMinusReserved}）`;
+        }
+        return variants
+          .map((variant, index) => `${index + 1}. ${variant.registrationRate}（註冊 ${variant.registeredCount} / 名額-保留 ${variant.quotaMinusReserved}）`)
+          .join("；");
       }
 
       function getDepartmentSuggestionSignals(universityName, departmentName) {
@@ -10503,7 +10593,7 @@
         if (profile?.caac) signals.push("有個申資料");
         if (profile?.star) signals.push("有繁星資料");
         if (profile?.uac) signals.push("有分發條件");
-        if (profile?.register) signals.push(`註冊率 ${profile.register.registrationRate || "可查"}`);
+        if (profile?.register) signals.push(getRegistrationSignalText(profile.register));
         return { profile, signals };
       }
 
@@ -10526,10 +10616,10 @@
               profile,
               signals,
               hasCutline,
-              score: similarity * 10 + (hasCutline ? 12 : 0) + profileScore * 2,
+              score: similarity * 100 + (hasCutline ? 8 : 0) + profileScore,
             };
           })
-          .filter((item) => item.similarity >= 4)
+          .filter((item) => item.similarity > 0)
           .sort((a, b) => (
             b.score - a.score ||
             b.similarity - a.similarity ||
@@ -10667,7 +10757,7 @@
                 <p>用男女比與新生註冊率輔助理解這個校系的就讀輪廓與吸引力。</p>
                 <div class="gsat-inline-list">
                   ${profile.female ? `<div class="gsat-inline-item"><strong>男女比：</strong>女生 ${escapeGsatHtml(profile.female.femalePercent)}（女 ${escapeGsatHtml(profile.female.girls)} / 男 ${escapeGsatHtml(profile.female.boys)}）</div>` : ""}
-                  ${profile.register ? `<div class="gsat-inline-item"><strong>新生註冊率：</strong>${escapeGsatHtml(profile.register.registrationRate)}（註冊 ${escapeGsatHtml(profile.register.registeredCount)} / 名額-保留 ${escapeGsatHtml(profile.register.quotaMinusReserved)}）</div>` : ""}
+                  ${profile.register ? `<div class="gsat-inline-item"><strong>新生註冊率：</strong>${escapeGsatHtml(getRegistrationDetailText(profile.register))}</div>` : ""}
                 </div>
                 <div class="gsat-mini-note">這兩項不是錄取門檻，但能幫你判斷校系組成、競爭感受與實際就讀傾向。</div>
               </div>
@@ -10881,6 +10971,63 @@
         return "依照與均線差距由小到大排序，避免一開始就被過度保守的選項淹沒。";
       }
 
+      function clampBandRange(start, end) {
+        const safeStart = Math.max(1, start);
+        const safeEnd = Math.max(safeStart, end);
+        return [safeStart, safeEnd];
+      }
+
+      function getPreferenceBand(result, indexInTier, tierCount) {
+        const density = tierCount <= 1 ? 0 : indexInTier / Math.max(tierCount - 1, 1);
+        const stage = density <= 0.34 ? 0 : density <= 0.68 ? 1 : 2;
+        const ranges = {
+          dream: [
+            [1, 3],
+            [2, 4],
+            [3, 5],
+          ],
+          safety: [
+            [4, 7],
+            [5, 8],
+            [6, 9],
+          ],
+          fallback: [
+            [8, 10],
+            [9, 11],
+            [10, 12],
+          ],
+        };
+        const titles = {
+          dream: ["前段衝刺", "衝刺主帶", "衝刺補位"],
+          safety: ["主力前段", "主力中段", "主力後段"],
+          fallback: ["穩健保留", "保底主帶", "最後收尾"],
+        };
+        const notes = {
+          dream: [
+            "如果你會先放最想拚的校系，這批可優先擺在最前段。",
+            "保留一點衝刺空間，同時避免前幾個志願全都過高。",
+            "適合放在衝刺段尾端，讓前段志願更有節奏。",
+          ],
+          safety: [
+            "這批最適合當成中前段主力，是拉高命中率的核心區。",
+            "可放在志願中段，兼顧穩定與上修空間。",
+            "適合接在主力前段後面，幫整體排序補滿厚度。",
+          ],
+          fallback: [
+            "這批可先放在後段前半，保留穩定落點。",
+            "適合當成保底主帶，避免最後只剩過度保守選項。",
+            "建議收在最後幾個志願，作為完整保底結尾。",
+          ],
+        };
+        const [rawStart, rawEnd] = ranges[result.tier]?.[stage] || [1, 3];
+        const [start, end] = clampBandRange(rawStart, rawEnd);
+        return {
+          chip: `第 ${start}${end > start ? `-${end}` : ""} 志願帶`,
+          title: titles[result.tier]?.[stage] || "建議志願帶",
+          note: `${notes[result.tier]?.[stage] || "可依你實際想排的志願數前後微調。"} 以常見 12 個志願排序節奏估算。`,
+        };
+      }
+
       function getResultSummaryText(result) {
         if (result.gap >= 5) return `比歷年均線高 ${result.gap} 分，可先當成穩健配置。`;
         if (result.gap >= 0) return `剛好站上歷年均線 ${result.gap} 分，適合列入主力觀察帶。`;
@@ -10907,17 +11054,25 @@
             <div class="gsat-section-title">這次可以先看這幾個方向</div>
             <div class="gsat-tier-caption">先用每一帶最有代表性的校系快速抓節奏，再往下看完整清單會更快。</div>
             <div class="gsat-overview-grid">
-              ${picks.map(({ kicker, button, result }) => `
+              ${picks.map(({ kicker, button, result }) => {
+                const tierList = tierBuckets[result.tier] || [];
+                const band = getPreferenceBand(result, Math.max(tierList.indexOf(result), 0), tierList.length);
+                return `
                 <div class="gsat-overview-card">
                   <div class="gsat-overview-kicker">${escapeGsatHtml(kicker)}</div>
                   <div class="gsat-overview-title">${escapeGsatHtml(result.u)}｜${escapeGsatHtml(result.d)}</div>
                   <p class="gsat-overview-text">${escapeGsatHtml(getResultSummaryText(result))}</p>
+                  <div class="gsat-overview-band">
+                    <strong>${escapeGsatHtml(`${band.title}｜${band.chip}`)}</strong>
+                    <span>${escapeGsatHtml(band.note)}</span>
+                  </div>
                   ${buildGsatActionButtons([
                     { label: button, action: "select-department", university: result.u, department: result.d },
                     { label: "看同校全部科系", action: "show-all-departments", university: result.u, variant: "soft" }
                   ])}
                 </div>
-              `).join("")}
+              `;
+              }).join("")}
             </div>
           </div>
         `;
@@ -11301,7 +11456,8 @@
           const list = tierBuckets[tier];
           if (!list.length) return "";
           const cfg = TIER_CFG[tier];
-          const cards = list.map(r => {
+          const cards = list.map((r, index) => {
+            const band = getPreferenceBand(r, index, list.length);
             const warnHtml = r.fails.length
               ? `<div class="gsat-threshold-warning">⚠ 門檻未達：${escapeGsatHtml(r.fails.join("、"))}</div>` : "";
             return `<div class="gsat-dept-card${r.fails.length ? " gsat-dept-card--warn" : ""}">
@@ -11315,6 +11471,13 @@
                 <span>加權：<strong>${r.userW}</strong></span>
                 <span>歷年均線：<strong>${r.avgC}</strong></span>
                 <span>差距：<strong style="color:${r.gap>=0?"#059669":"#dc2626"}">${r.gap>=0?"+":""}${r.gap}</strong></span>
+              </div>
+              <div class="gsat-dept-band">
+                <span class="gsat-band-chip">${escapeGsatHtml(band.chip)}</span>
+                <div class="gsat-band-copy">
+                  <div class="gsat-band-title">${escapeGsatHtml(band.title)}</div>
+                  <div class="gsat-band-note">${escapeGsatHtml(band.note)}</div>
+                </div>
               </div>
               ${r.note ? `<div class="gsat-dept-note">${escapeGsatHtml(r.note)}</div>` : ""}
             </div>`;
