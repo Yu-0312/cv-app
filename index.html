@@ -1088,6 +1088,155 @@
       box-shadow: none;
     }
 
+    .home-function-hub {
+      margin-bottom: 16px;
+      padding: 18px;
+      border: 1px solid var(--home-line, rgba(23, 32, 31, 0.12));
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.86);
+      box-shadow: 0 18px 48px rgba(23, 32, 31, 0.08);
+    }
+
+    .home-function-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+      gap: 14px;
+      margin-bottom: 14px;
+    }
+
+    .home-function-head h2 {
+      margin: 10px 0 0;
+      color: var(--home-ink, var(--ink));
+      font-size: 1.35rem;
+      line-height: 1.28;
+      letter-spacing: 0;
+    }
+
+    .home-function-head .home-action {
+      width: auto;
+      min-width: 160px;
+      flex: 0 0 auto;
+    }
+
+    .function-accordion {
+      display: grid;
+      gap: 10px;
+    }
+
+    .function-group {
+      border: 1px solid rgba(23, 32, 31, 0.1);
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.66);
+      overflow: hidden;
+    }
+
+    .function-group summary {
+      display: grid;
+      grid-template-columns: minmax(120px, 0.36fr) minmax(0, 1fr);
+      gap: 12px;
+      align-items: center;
+      min-height: 54px;
+      padding: 12px 14px;
+      cursor: pointer;
+      list-style: none;
+      user-select: none;
+    }
+
+    .function-group summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .function-group summary span {
+      color: var(--home-teal, #127a76);
+      font-size: 0.78rem;
+      font-weight: 900;
+    }
+
+    .function-group summary strong {
+      color: var(--home-ink, var(--ink));
+      font-size: 0.95rem;
+      line-height: 1.35;
+    }
+
+    .function-group summary::after {
+      content: "展開";
+      justify-self: end;
+      grid-column: 2;
+      color: var(--home-muted, var(--muted));
+      font-size: 0.76rem;
+      font-weight: 800;
+    }
+
+    .function-group[open] summary {
+      border-bottom: 1px solid rgba(23, 32, 31, 0.08);
+      background: rgba(18, 122, 118, 0.06);
+    }
+
+    .function-group[open] summary::after {
+      content: "收合";
+    }
+
+    .function-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 10px;
+      padding: 12px;
+    }
+
+    .function-item {
+      min-height: 118px;
+      padding: 13px;
+      border: 1px solid rgba(23, 32, 31, 0.1);
+      border-radius: 8px;
+      background: #fff;
+      color: var(--home-ink, var(--ink));
+      display: grid;
+      align-content: start;
+      justify-items: start;
+      gap: 8px;
+      text-align: left;
+      text-decoration: none;
+      box-shadow: none;
+      transition: border-color 0.15s ease, background 0.15s ease, transform 0.15s ease;
+    }
+
+    .function-item:hover {
+      transform: translateY(-1px);
+      border-color: rgba(18, 122, 118, 0.28);
+      background: rgba(255, 255, 255, 0.92);
+      box-shadow: none;
+    }
+
+    .function-item-tag {
+      display: inline-flex;
+      align-items: center;
+      width: fit-content;
+      min-height: 24px;
+      padding: 4px 8px;
+      border-radius: 999px;
+      background: rgba(18, 122, 118, 0.1);
+      color: var(--home-teal, #127a76);
+      font-size: 0.72rem;
+      font-weight: 900;
+      line-height: 1.2;
+    }
+
+    .function-item strong {
+      font-size: 0.96rem;
+      line-height: 1.35;
+    }
+
+    .function-item small {
+      color: var(--home-muted, var(--muted));
+      font-size: 0.78rem;
+      line-height: 1.45;
+    }
+
+    .function-item-link {
+      font: inherit;
+    }
+
 
     .topbar {
       display: flex;
@@ -2416,8 +2565,27 @@
       .home-actions,
       .home-mini-stats,
       .home-utility-row,
-      .home-path-grid {
+      .home-path-grid,
+      .function-grid {
         grid-template-columns: 1fr;
+      }
+
+      .home-function-head {
+        display: grid;
+        align-items: stretch;
+      }
+
+      .home-function-head .home-action {
+        width: 100%;
+      }
+
+      .function-group summary {
+        grid-template-columns: 1fr;
+      }
+
+      .function-group summary::after {
+        grid-column: 1;
+        justify-self: start;
       }
 
       .page-header {
@@ -2547,32 +2715,147 @@
 
   <style id="tabs-portfolio-styles">
     /* ===== APP TABS ===== */
-    .app-tabs {
+    .app-nav-shell {
+      position: relative;
+      z-index: 15;
       display: flex;
-      gap: 4px;
-      padding: 5px;
-      background: rgba(255,250,244,0.82);
-      backdrop-filter: blur(18px);
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 18px;
+    }
+
+    .feature-menu-trigger {
+      min-width: 230px;
+      padding: 11px 14px;
+      border-radius: 8px;
       border: 1px solid rgba(49,40,27,0.08);
-      border-radius: 18px;
-      margin-bottom: 20px;
-      width: fit-content;
+      background: rgba(255,250,244,0.88);
+      color: var(--ink);
+      display: grid;
+      grid-template-columns: 1fr auto;
+      grid-template-areas:
+        "label caret"
+        "current caret";
+      align-items: center;
+      column-gap: 12px;
+      text-align: left;
+      box-shadow: 0 16px 34px rgba(50,38,18,0.08);
+      backdrop-filter: blur(18px);
+    }
+
+    .feature-menu-trigger:hover {
+      transform: translateY(-1px);
+    }
+
+    .feature-menu-label {
+      grid-area: label;
+      color: var(--muted);
+      font-size: 0.74rem;
+      font-weight: 800;
+      line-height: 1.3;
+    }
+
+    .feature-menu-trigger strong {
+      grid-area: current;
+      display: block;
+      margin-top: 2px;
+      color: var(--ink);
+      font-size: 0.98rem;
+      line-height: 1.35;
+    }
+
+    .feature-menu-caret {
+      grid-area: caret;
+      color: var(--accent-2);
+      font-size: 1.15rem;
+      font-weight: 900;
+      transition: transform 0.18s ease;
+    }
+
+    .feature-menu-trigger[aria-expanded="true"] .feature-menu-caret {
+      transform: rotate(180deg);
+    }
+
+    .nav-shortcuts {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 8px;
+      min-width: 0;
+    }
+
+    .nav-shortcut {
+      padding: 10px 14px;
+      border-radius: 8px;
+      border-color: rgba(49,40,27,0.1);
+      background: rgba(255,255,255,0.76);
+      color: var(--ink);
+      font-size: 0.86rem;
+      font-weight: 800;
+      box-shadow: 0 10px 24px rgba(50,38,18,0.06);
+    }
+
+    .nav-shortcut:hover,
+    .nav-shortcut.active {
+      background: #fff;
+      color: var(--accent);
+      transform: translateY(-1px);
+    }
+
+    .feature-menu-panel {
+      position: absolute;
+      top: calc(100% + 10px);
+      left: 0;
+      width: min(720px, 100%);
+      padding: 10px;
+      background: rgba(255,250,244,0.95);
+      backdrop-filter: blur(18px);
+      border: 1px solid rgba(49,40,27,0.1);
+      border-radius: 10px;
+      box-shadow: 0 28px 80px rgba(50,38,18,0.18);
+    }
+
+    .feature-menu-panel[hidden] {
+      display: none !important;
+    }
+
+    .app-tabs {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px;
     }
 
     .app-tab {
-      padding: 9px 22px;
-      border-radius: 13px;
+      min-height: 72px;
+      padding: 12px;
+      border-radius: 8px;
       border: 1px solid transparent;
-      background: transparent;
+      background: rgba(255,255,255,0.6);
       color: var(--muted);
-      font-size: 14px;
-      font-weight: 500;
+      font-size: 0.82rem;
+      font-weight: 700;
       cursor: pointer;
       transition: all 0.15s ease;
+      text-align: left;
+      display: grid;
+      align-content: start;
+      gap: 4px;
+    }
+
+    .app-tab strong {
+      color: var(--ink);
+      font-size: 0.95rem;
+      line-height: 1.3;
+    }
+
+    .app-tab span {
+      color: var(--muted);
+      font-size: 0.78rem;
+      line-height: 1.45;
     }
 
     .app-tab:hover {
-      background: rgba(255,255,255,0.55);
+      background: rgba(255,255,255,0.9);
       color: var(--ink);
       transform: none;
       box-shadow: none;
@@ -2581,31 +2864,42 @@
     .app-tab.active {
       background: #fff;
       color: var(--ink);
-      border-color: rgba(49,40,27,0.09);
-      box-shadow: 0 2px 8px rgba(50,38,18,0.08);
+      border-color: rgba(18,122,118,0.28);
+      box-shadow: inset 3px 0 0 #127a76, 0 12px 24px rgba(50,38,18,0.08);
     }
 
     .app-page { display: none; }
     .app-page.active { display: block; }
 
     @media (max-width: 860px) {
-      .app-tabs {
+      .app-nav-shell {
+        display: grid;
+        gap: 10px;
+      }
+
+      .feature-menu-trigger,
+      .feature-menu-panel {
         width: 100%;
         max-width: 100%;
-        overflow-x: auto;
-        justify-content: flex-start;
-        border-radius: 8px;
-        scrollbar-width: none;
       }
 
-      .app-tabs::-webkit-scrollbar {
-        display: none;
+      .feature-menu-panel {
+        position: static;
+        margin-top: -2px;
       }
 
-      .app-tab {
-        flex: 0 0 auto;
-        white-space: nowrap;
-        padding: 9px 16px;
+      .app-tabs {
+        grid-template-columns: 1fr;
+      }
+
+      .nav-shortcuts {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+
+      .nav-shortcut {
+        min-height: 42px;
+        padding: 9px 8px;
       }
     }
 
@@ -4071,11 +4365,22 @@
     .gsat-suggestion-meta { font-size: 11.5px; color: var(--muted); line-height: 1.6; margin: 0; }
     .gsat-suggestion-badges { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
     .gsat-suggestion-badge { background: rgba(33,78,116,.08); color: var(--accent); border-radius: 999px; padding: 4px 8px; font-size: 10.5px; font-weight: 700; }
+    .gsat-scope-summary { margin-top: 10px; border: 1px solid rgba(33,78,116,.14); background: rgba(33,78,116,.045); border-radius: 10px; padding: 10px 11px; color: var(--muted); font-size: 11.5px; line-height: 1.65; }
+    .gsat-scope-summary strong { color: var(--ink); }
+    .gsat-scope-summary .scope-line { display: block; }
+    .gsat-data-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; margin-bottom: 14px; }
+    .gsat-data-card { border: 1.5px solid var(--line); border-radius: 12px; padding: 13px 14px; background: rgba(255,255,255,.88); box-shadow: 0 10px 20px rgba(15,23,42,.045); min-width: 0; }
+    .gsat-data-kicker { font-size: 10.5px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); margin-bottom: 7px; }
+    .gsat-data-number { font-size: 20px; font-weight: 900; color: var(--ink); line-height: 1.2; word-break: break-word; }
+    .gsat-data-text { margin-top: 5px; font-size: 11.5px; color: var(--muted); line-height: 1.55; }
+    .gsat-data-breakdown { display: flex; flex-wrap: wrap; gap: 6px; margin: -2px 0 14px; }
+    .gsat-data-chip { display: inline-flex; align-items: center; gap: 4px; border-radius: 999px; padding: 5px 9px; background: rgba(15,23,42,.045); color: var(--ink); border: 1px solid rgba(15,23,42,.07); font-size: 11.5px; font-weight: 700; }
+    .gsat-data-chip span { color: var(--muted); font-weight: 600; }
     @media (max-width: 900px) {
       .gsat-workspace { grid-template-columns: 1fr; }
       .gsat-panel { border-right: none; border-bottom: 1px solid var(--line); }
       .gsat-score-summary { grid-template-columns: repeat(3, 1fr); }
-      .gsat-overview-grid, .gsat-suggestion-grid { grid-template-columns: 1fr; }
+      .gsat-overview-grid, .gsat-suggestion-grid, .gsat-data-grid { grid-template-columns: 1fr; }
     }
 
     /* Print styles */
@@ -4151,12 +4456,39 @@
       </div>
     </header>
 
-    <nav class="app-tabs">
-      <button class="app-tab active" data-tab="home" type="button">主畫面</button>
-      <button class="app-tab" data-tab="cv" type="button">CV 履歷</button>
-      <button class="app-tab" data-tab="portfolio" type="button">學習歷程</button>
-      <button class="app-tab" data-tab="career" type="button">✦ 求職顧問</button>
-      <button class="app-tab" data-tab="gsat" type="button">✦ 學測落點</button>
+    <nav class="app-nav-shell" aria-label="主要功能">
+      <button id="featureMenuBtn" class="feature-menu-trigger" type="button" aria-expanded="false" aria-controls="featureMenuPanel">
+        <span class="feature-menu-label">功能中心</span>
+        <strong id="featureMenuCurrent">主畫面</strong>
+        <span class="feature-menu-caret" aria-hidden="true">⌄</span>
+      </button>
+      <div class="nav-shortcuts" aria-label="常用入口">
+        <button class="nav-shortcut" data-tab-shortcut="cv" type="button">開始履歷</button>
+        <button class="nav-shortcut" data-tab-shortcut="career" type="button">求職顧問</button>
+        <button class="nav-shortcut" data-tab-shortcut="gsat" type="button">學測落點</button>
+      </div>
+      <div id="featureMenuPanel" class="app-tabs feature-menu-panel" hidden>
+        <button class="app-tab active" data-tab="home" type="button">
+          <strong>主畫面</strong>
+          <span>進度、入口與下一步</span>
+        </button>
+        <button class="app-tab" data-tab="cv" type="button">
+          <strong>CV 履歷</strong>
+          <span>模板、編輯、PDF 輸出</span>
+        </button>
+        <button class="app-tab" data-tab="portfolio" type="button">
+          <strong>學習歷程</strong>
+          <span>章節、圖片、成果頁</span>
+        </button>
+        <button class="app-tab" data-tab="career" type="button">
+          <strong>求職顧問</strong>
+          <span>上傳 CV、AI 分析、求職信</span>
+        </button>
+        <button class="app-tab" data-tab="gsat" type="button">
+          <strong>學測落點</strong>
+          <span>校系篩選與落點分析</span>
+        </button>
+      </div>
     </nav>
 
     <div id="page-home" class="app-page active">
@@ -4165,7 +4497,7 @@
         <div>
           <span class="home-kicker">CV Studio 工作台</span>
           <h1 class="home-title">今天先完成一版可送出的申請資料。</h1>
-          <p class="home-lead">履歷、學習歷程、學測落點與同步狀態集中在同一個入口，打開後就能接續目前進度。</p>
+          <p class="home-lead">履歷、學習歷程、學測落點與同步狀態集中在同一個入口；登入後才會顯示個人進度。</p>
         </div>
         <div class="home-actions">
           <button id="startEditingBtn" class="home-action primary" type="button">開始履歷</button>
@@ -4174,15 +4506,15 @@
         </div>
       </div>
 
-      <aside class="home-status-panel" aria-label="目前進度">
+      <aside class="home-status-panel" aria-label="功能概覽">
         <div class="home-panel-header">
-          <strong>目前進度</strong>
-          <span id="homeSyncState">可開始</span>
+          <strong id="homeStatusTitle">功能概覽</strong>
+          <span id="homeSyncState">未登入</span>
         </div>
-        <div id="homeProgress" class="home-progress" aria-label="整體進度 0%">
+        <div id="homeProgress" class="home-progress" aria-label="功能概覽">
           <div class="home-progress-top">
-            <span>申請資料</span>
-            <span id="homeProgressValue">0%</span>
+            <span id="homeProgressLabel">登入後顯示進度</span>
+            <span id="homeProgressValue">登入後</span>
           </div>
           <div class="home-progress-track">
             <div id="homeProgressFill" class="home-progress-fill" style="--home-progress:0%;"></div>
@@ -4195,7 +4527,7 @@
               <strong>CV 履歷</strong>
               <span>個人資料、經歷、技能、作品</span>
             </div>
-            <span id="homeTaskCvState" class="home-task-state" data-state="pending">可編輯</span>
+            <span id="homeTaskCvState" class="home-task-state" data-state="pending">可使用</span>
           </li>
           <li class="home-task">
             <span class="home-task-mark">2</span>
@@ -4203,7 +4535,7 @@
               <strong>學習歷程</strong>
               <span>章節、圖片、成果摘要</span>
             </div>
-            <span id="homeTaskPortfolioState" class="home-task-state" data-state="pending">待整理</span>
+            <span id="homeTaskPortfolioState" class="home-task-state" data-state="pending">可使用</span>
           </li>
           <li class="home-task">
             <span class="home-task-mark">3</span>
@@ -4211,7 +4543,7 @@
               <strong>學測落點</strong>
               <span>115 學年度校系資料</span>
             </div>
-            <span id="homeTaskGsatState" class="home-task-state" data-state="pending">待輸入</span>
+            <span id="homeTaskGsatState" class="home-task-state" data-state="pending">可使用</span>
           </li>
         </ul>
         <div class="home-mini-stats">
@@ -4243,35 +4575,80 @@
       </aside>
     </section>
 
-    <section class="feature-strip">
-      <article class="feature-card">
-        <span class="feature-card-tag">Start</span>
-        <strong>CV 履歷編輯器</strong>
-        <p>模板、版面、即時預覽與 PDF 輸出集中處理。</p>
-        <span class="feature-card-meta">履歷 / CV / Resume</span>
-        <button class="feature-card-action" data-guide-tab="cv" type="button">前往編輯</button>
-      </article>
-      <article class="feature-card">
-        <span class="feature-card-tag">Portfolio</span>
-        <strong>學習歷程作品集</strong>
-        <p>章節式整理課程、專題、證照、競賽與成果。</p>
-        <span class="feature-card-meta">備審 / 作品集</span>
-        <button class="feature-card-action" data-guide-tab="portfolio" type="button">前往歷程</button>
-      </article>
-      <article class="feature-card">
-        <span class="feature-card-tag">Decision</span>
-        <strong>學測落點</strong>
-        <p>用分數、校系分類與相近科系快速排查方向。</p>
-        <span class="feature-card-meta">115 學年度資料</span>
-        <button class="feature-card-action" data-guide-tab="gsat" type="button">查看落點</button>
-      </article>
-      <article class="feature-card">
-        <span class="feature-card-tag">Sync</span>
-        <strong>同步與輸出</strong>
-        <p>登入後保存草稿，完成後輸出 PDF 或連接 Canva。</p>
-        <span class="feature-card-meta">Google / PDF / Canva</span>
-        <button class="feature-card-action" data-guide-tab="cv" data-guide-action="download" type="button">前往輸出</button>
-      </article>
+    <section class="home-function-hub" aria-label="功能中心">
+      <div class="home-function-head">
+        <div>
+          <span class="home-kicker">功能中心</span>
+          <h2>依照任務展開，不必一次看完所有工具。</h2>
+        </div>
+        <button id="openFeatureMenuBtn" class="home-action tertiary" type="button">展開全部功能</button>
+      </div>
+      <div class="function-accordion">
+        <details class="function-group" open>
+          <summary>
+            <span>最常用</span>
+            <strong>履歷、顧問、落點</strong>
+          </summary>
+          <div class="function-grid">
+            <button class="function-item feature-card-action" data-guide-tab="cv" type="button">
+              <span class="function-item-tag">CV</span>
+              <strong>建立或修改履歷</strong>
+              <small>模板、區塊、即時預覽</small>
+            </button>
+            <button class="function-item feature-card-action" data-guide-tab="career" type="button">
+              <span class="function-item-tag">AI</span>
+              <strong>上傳 CV 給求職顧問</strong>
+              <small>直接分析適合崗位</small>
+            </button>
+            <button class="function-item feature-card-action" data-guide-tab="gsat" type="button">
+              <span class="function-item-tag">GSAT</span>
+              <strong>查看學測落點</strong>
+              <small>用校系資料縮小方向</small>
+            </button>
+          </div>
+        </details>
+        <details class="function-group">
+          <summary>
+            <span>作品與備審</span>
+            <strong>把成果整理成可交付頁面</strong>
+          </summary>
+          <div class="function-grid">
+            <button class="function-item feature-card-action" data-guide-tab="portfolio" type="button">
+              <span class="function-item-tag">Portfolio</span>
+              <strong>整理學習歷程</strong>
+              <small>章節、圖片、成果摘要</small>
+            </button>
+            <button class="function-item feature-card-action" data-guide-tab="portfolio" data-guide-action="preview" type="button">
+              <span class="function-item-tag">Preview</span>
+              <strong>檢查作品集預覽</strong>
+              <small>封面、目錄、內容頁</small>
+            </button>
+          </div>
+        </details>
+        <details class="function-group">
+          <summary>
+            <span>輸出與同步</span>
+            <strong>保存、下載、外部工具</strong>
+          </summary>
+          <div class="function-grid">
+            <button class="function-item feature-card-action" data-guide-tab="cv" data-guide-action="download" type="button">
+              <span class="function-item-tag">PDF</span>
+              <strong>輸出履歷 PDF</strong>
+              <small>預覽後下載或列印</small>
+            </button>
+            <button class="function-item feature-card-action" data-guide-action="login" type="button">
+              <span class="function-item-tag">Cloud</span>
+              <strong>Google 雲端同步</strong>
+              <small>跨裝置接續編輯</small>
+            </button>
+            <a class="function-item function-item-link" href="https://www.canva.com/" data-canva-trigger target="_blank" rel="noreferrer noopener">
+              <span class="function-item-tag">Canva</span>
+              <strong>連接 Canva</strong>
+              <small>開啟外部設計工具</small>
+            </a>
+          </div>
+        </details>
+      </div>
     </section>
 
     <section class="home-support-grid" aria-label="申請路徑與資料狀態">
@@ -5228,6 +5605,9 @@
                 <div id="gsatDepartmentHint" class="gsat-field-hint" aria-live="polite">先選大學後，系統會自動載入可選科系。</div>
               </div>
             </div>
+            <div id="gsatDataScopeSummary" class="gsat-scope-summary" aria-live="polite">
+              <span class="scope-line"><strong>資料庫範圍</strong>：正在整理校數與校系總量。</span>
+            </div>
           </div>
 
           <!-- Score inputs -->
@@ -5360,19 +5740,24 @@
         "✦ 學測落點": "✦ GSAT Placement",
         "CV Studio 工作台": "CV Studio Workspace",
         "今天先完成一版可送出的申請資料。": "Finish one sendable application set today.",
-        "履歷、學習歷程、學測落點與同步狀態集中在同一個入口，打開後就能接續目前進度。": "Resume, portfolio, GSAT planning, and sync status are gathered in one place so you can pick up where you left off.",
+        "履歷、學習歷程、學測落點與同步狀態集中在同一個入口；登入後才會顯示個人進度。": "Resume, portfolio, GSAT planning, and sync status are gathered in one place; personal progress appears only after sign-in.",
         "開始履歷": "Start Resume",
         "整理歷程": "Organize Portfolio",
         "查看落點": "Check Placement",
         "目前進度": "Current Progress",
+        "功能概覽": "Feature Overview",
         "整體進度": "Overall Progress",
+        "登入後顯示進度": "Progress after sign-in",
+        "登入後": "After sign-in",
         "可開始": "Ready to Start",
+        "未登入": "Not signed in",
         "雲端已連線": "Cloud Connected",
         "同步中": "Syncing",
         "申請資料": "Application Set",
         "CV 履歷": "CV Resume",
         "個人資料、經歷、技能、作品": "Profile, experience, skills, work",
         "可編輯": "Editable",
+        "可使用": "Available",
         "資料完整": "Complete",
         "進行中": "In Progress",
         "章節、圖片、成果摘要": "Sections, images, outcome summaries",
@@ -5445,6 +5830,12 @@
         "Google 同步": "Google Sync",
         "登入後可跨裝置接續編輯": "Continue editing across devices after signing in",
         "今天就能先完成一版，再慢慢補完整套資料。": "Finish a first version today, then keep filling out the full set.",
+        "功能中心": "Feature Center",
+        "進度、入口與下一步": "Progress, entry points, and next steps",
+        "模板、編輯、PDF 輸出": "Templates, editing, and PDF export",
+        "章節、圖片、成果頁": "Chapters, images, and outcome pages",
+        "上傳 CV、AI 分析、求職信": "Upload CV, AI analysis, and cover letters",
+        "校系篩選與落點分析": "Department filtering and placement analysis",
         "不是只能做履歷，也不是只能看落點，而是把學生申請和求職準備整合成同一套入口。": "This is not just a resume builder or a placement checker. It is one entry point for applications and career preparation.",
         "履歷編輯": "Resume Editing",
         "適合誰": "Who It Helps",
@@ -5469,6 +5860,30 @@
         "準備好了再登入同步，換手機或電腦都能繼續接著做。": "Sign in when ready, then continue on another phone or computer.",
         "適合跨裝置編輯與長期維護草稿": "For cross-device editing and long-term drafts",
         "如何登入 →": "How To Sign In →",
+        "依照任務展開，不必一次看完所有工具。": "Expand by task instead of seeing every tool at once.",
+        "展開全部功能": "Open All Features",
+        "最常用": "Most Used",
+        "履歷、顧問、落點": "Resume, advisor, placement",
+        "建立或修改履歷": "Create or edit a resume",
+        "模板、區塊、即時預覽": "Templates, sections, live preview",
+        "上傳 CV 給求職顧問": "Upload CV to Career Advisor",
+        "直接分析適合崗位": "Analyze suitable roles directly",
+        "查看學測落點": "View GSAT placement",
+        "用校系資料縮小方向": "Narrow choices with department data",
+        "作品與備審": "Portfolio and Applications",
+        "把成果整理成可交付頁面": "Turn achievements into deliverable pages",
+        "整理學習歷程": "Organize learning portfolio",
+        "章節、圖片、成果摘要": "Chapters, images, achievement summaries",
+        "檢查作品集預覽": "Check portfolio preview",
+        "封面、目錄、內容頁": "Cover, table of contents, content pages",
+        "輸出與同步": "Export and Sync",
+        "保存、下載、外部工具": "Save, download, external tools",
+        "輸出履歷 PDF": "Export resume PDF",
+        "預覽後下載或列印": "Preview, download, or print",
+        "Google 雲端同步": "Google Cloud Sync",
+        "跨裝置接續編輯": "Continue across devices",
+        "連接 Canva": "Connect Canva",
+        "開啟外部設計工具": "Open external design tools",
         "儲存 CV": "Save CV",
         "預覽 PDF": "Preview PDF",
         "列印": "Print",
@@ -7100,13 +7515,50 @@
         node.dataset.state = stateName;
       }
 
+      function updateHomeFeatureCounters() {
+        const templateCount = $("homeTemplateCount");
+        if (templateCount) templateCount.textContent = String(Object.keys(templateDefinitions).length);
+        const workspaceCount = $("homeWorkspaceCount");
+        if (workspaceCount) workspaceCount.textContent = state.user ? "4" : "3";
+        const exportFormat = $("homeExportFormat");
+        if (exportFormat) exportFormat.textContent = "PDF";
+      }
+
+      function renderSignedOutHomeStatus() {
+        const progressNode = $("homeProgress");
+        const progressFill = $("homeProgressFill");
+        if (progressNode) {
+          progressNode.dataset.progress = "0";
+          progressNode.setAttribute("aria-label", uiText("功能概覽"));
+        }
+        if (progressFill) {
+          progressFill.style.setProperty("--home-progress", "0%");
+        }
+
+        setHomeText("homeStatusTitle", "功能概覽");
+        setHomeText("homeSyncState", state.authBusy ? "同步中" : "未登入");
+        setHomeText("homeProgressLabel", "登入後顯示進度");
+        setHomeText("homeProgressValue", "登入後");
+        setHomeTaskState("homeTaskCvState", "可使用", "pending");
+        setHomeTaskState("homeTaskPortfolioState", "可使用", "pending");
+        setHomeTaskState("homeTaskGsatState", "可使用", "pending");
+        updateHomeFeatureCounters();
+
+        const page = $("page-home");
+        if (page) window.cvStudioI18n?.apply(page);
+      }
+
       function renderHomeStatus() {
+        if (!state.user) {
+          renderSignedOutHomeStatus();
+          return;
+        }
+
         const cv = getCvHomeProgress();
         const portfolio = getPortfolioHomeProgress();
         const gsat = getGsatHomeProgress();
-        const syncScore = state.user ? 10 : 0;
+        const syncScore = 10;
         const completion = Math.max(0, Math.min(100, Math.round(cv.score + portfolio.score + gsat.score + syncScore)));
-        const hasLocalWork = cv.hasAny || portfolio.hasAny || gsat.hasAny;
 
         const progressNode = $("homeProgress");
         const progressFill = $("homeProgressFill");
@@ -7117,15 +7569,13 @@
         if (progressFill) {
           progressFill.style.setProperty("--home-progress", `${completion}%`);
         }
+        setHomeText("homeStatusTitle", "目前進度");
+        setHomeText("homeProgressLabel", "申請資料");
         setHomeText("homeProgressValue", `${completion}%`);
 
         const syncState = state.authBusy
           ? "同步中"
-          : state.user
-            ? "雲端已連線"
-            : hasLocalWork
-              ? "本機草稿"
-              : "可開始";
+          : "雲端已連線";
         setHomeText("homeSyncState", syncState);
 
         setHomeTaskState(
@@ -7144,12 +7594,7 @@
           gsat.ready ? "done" : gsat.hasAny ? "active" : "pending"
         );
 
-        const templateCount = $("homeTemplateCount");
-        if (templateCount) templateCount.textContent = String(Object.keys(templateDefinitions).length);
-        const workspaceCount = $("homeWorkspaceCount");
-        if (workspaceCount) workspaceCount.textContent = state.user ? "4" : "3";
-        const exportFormat = $("homeExportFormat");
-        if (exportFormat) exportFormat.textContent = "PDF";
+        updateHomeFeatureCounters();
 
         const page = $("page-home");
         if (page) window.cvStudioI18n?.apply(page);
@@ -9611,6 +10056,20 @@
         return null;
       }
 
+      function setFeatureMenuOpen(open) {
+        const trigger = document.getElementById("featureMenuBtn");
+        const panel = document.getElementById("featureMenuPanel");
+        if (!trigger || !panel) return;
+        trigger.setAttribute("aria-expanded", open ? "true" : "false");
+        panel.hidden = !open;
+      }
+
+      function updateFeatureMenuCurrent(tabId) {
+        const current = document.getElementById("featureMenuCurrent");
+        const activeTab = document.querySelector(`.app-tab[data-tab="${tabId}"] strong`);
+        if (current && activeTab) current.textContent = activeTab.textContent || "主畫面";
+      }
+
       function switchTab(tabId, options = {}) {
         const { updateUrl = true } = options;
         const nextTabId = normalizeTabId(tabId);
@@ -9620,7 +10079,13 @@
         const tab  = document.querySelector("[data-tab='" + nextTabId + "']");
         if (page) page.classList.add("active");
         if (tab)  tab.classList.add("active");
+        updateFeatureMenuCurrent(nextTabId);
+        document.querySelectorAll(".nav-shortcut").forEach((shortcut) => {
+          shortcut.classList.toggle("active", shortcut.dataset.tabShortcut === nextTabId);
+        });
+        setFeatureMenuOpen(false);
         localStorage.setItem(PF_TAB_KEY, nextTabId);
+        window.dispatchEvent(new CustomEvent("cv:tab-changed", { detail: { tabId: nextTabId } }));
 
         if (updateUrl) {
           const url = new URL(window.location.href);
@@ -10688,9 +11153,39 @@
 
       /* ── INIT ── */
       function init() {
+        const featureMenuBtn = document.getElementById("featureMenuBtn");
+        if (featureMenuBtn) {
+          featureMenuBtn.addEventListener("click", () => {
+            const expanded = featureMenuBtn.getAttribute("aria-expanded") === "true";
+            setFeatureMenuOpen(!expanded);
+          });
+        }
+
+        document.getElementById("openFeatureMenuBtn")?.addEventListener("click", () => {
+          document.querySelectorAll(".function-group").forEach(group => {
+            group.open = true;
+          });
+          setFeatureMenuOpen(true);
+          document.getElementById("featureMenuBtn")?.scrollIntoView({ behavior: "smooth", block: "center" });
+        });
+
+        document.addEventListener("click", (event) => {
+          const shell = document.querySelector(".app-nav-shell");
+          if (!shell || shell.contains(event.target)) return;
+          setFeatureMenuOpen(false);
+        });
+
+        document.addEventListener("keydown", (event) => {
+          if (event.key === "Escape") setFeatureMenuOpen(false);
+        });
+
         /* Tab buttons */
         document.querySelectorAll(".app-tab").forEach(btn => {
           btn.addEventListener("click", () => switchTab(btn.dataset.tab));
+        });
+
+        document.querySelectorAll("[data-tab-shortcut]").forEach(btn => {
+          btn.addEventListener("click", () => switchTab(btn.dataset.tabShortcut));
         });
 
         /* Home → CV button */
@@ -10716,6 +11211,8 @@
             switchTab(btn.dataset.guideTab);
             if (btn.dataset.guideAction === "download") {
               setTimeout(() => document.getElementById("downloadPdfBtn")?.scrollIntoView({ behavior: "smooth", block: "center" }), 150);
+            } else if (btn.dataset.guideAction === "preview") {
+              setTimeout(() => document.getElementById("pfPreviewSection")?.scrollIntoView({ behavior: "smooth", block: "start" }), 150);
             }
           });
         });
@@ -11498,6 +11995,10 @@
             syncCareerAdvisorState();
           });
 
+          window.addEventListener("cv:tab-changed", (event) => {
+            if (event.detail?.tabId === "career") syncCareerAdvisorState();
+          });
+
           window.addEventListener("cv:supabase-auth-changed", () => {
             syncCareerAdvisorState();
           });
@@ -11595,11 +12096,27 @@
         departmentTokens: new Map(),
         similarSuggestions: new Map(),
         filteredDeptRecords: new Map(),
+        dataScopeStats: new Map(),
         deptRecordsByTrack: { science: [], social: [] },
         deptRecordsByTrackAndUniversity: { science: new Map(), social: new Map() },
         deptDepartmentNamesByTrack: { science: new Set(), social: new Set() },
         deptExactMatchByTrack: { science: new Set(), social: new Set() },
       };
+
+      const UDB_114_SCHOOL_COUNTS = Object.freeze({
+        source: "教育部 114 學年度大專校院一覽表",
+        observedAt: "民國114年10月15日",
+        total: 149,
+        public: { general: 32, technical: 13, juniorCollege: 2, open: 2, total: 49 },
+        private: { general: 34, technical: 48, juniorCollege: 10, religious: 8, total: 100 },
+      });
+
+      const GSAT_REFERENCE_LINKS = Object.freeze([
+        "教育部大專校院一覽表：全國大專校院校數與公私立/學制分類",
+        "教育部統計處學校基本統計資訊：科系別資料下載與欄位注意事項",
+        "大學甄選入學委員會：115 申請入學/繁星推薦校系分則查詢",
+        "大學考試入學分發委員會：115 分發入學校系分則",
+      ]);
 
       function resetUniversityTwDerivedCaches() {
         GSAT_RUNTIME_CACHE.tierUniversityLists.clear();
@@ -11608,6 +12125,7 @@
         GSAT_RUNTIME_CACHE.departmentProfile.clear();
         GSAT_RUNTIME_CACHE.similarSuggestions.clear();
         GSAT_RUNTIME_CACHE.filteredDeptRecords.clear();
+        GSAT_RUNTIME_CACHE.dataScopeStats.clear();
       }
 
       function resetDeptRecordDerivedCaches() {
@@ -12726,6 +13244,121 @@
         return coverage;
       }
 
+      function countObjectKeys(value) {
+        return value && typeof value === "object" ? Object.keys(value).filter(Boolean).length : 0;
+      }
+
+      function addCount(map, key, amount = 1) {
+        if (!key) return;
+        map.set(key, (map.get(key) || 0) + amount);
+      }
+
+      function getRegionGroup(city = "") {
+        if (/臺北|台北|新北|基隆/.test(city)) return "北北基";
+        if (/桃園|新竹|苗栗/.test(city)) return "桃竹苗";
+        if (/臺中|台中|彰化|南投/.test(city)) return "中彰投";
+        if (/雲林|嘉義|臺南|台南/.test(city)) return "雲嘉南";
+        if (/高雄|屏東/.test(city)) return "高屏";
+        if (/宜蘭|花蓮|臺東|台東/.test(city)) return "東部";
+        if (/澎湖|金門|連江/.test(city)) return "離島";
+        return "未標示地區";
+      }
+
+      function inferUniversityFocus(university = {}) {
+        const name = university.name || "";
+        if (university.system === "空中大學" || /空中大學/.test(name)) return "進修遠距";
+        if (/醫學|醫藥|護理|藥理|醫事|長庚|慈濟|馬偕/.test(name)) return "醫藥健康";
+        if (/師範|教育/.test(name)) return "師培教育";
+        if (/藝術|體育|餐旅|文藻/.test(name)) return "特色專門";
+        if (university.system === "技專校院" || /科技大學|技術學院|專科/.test(name)) return "技職應用";
+        return "綜合大學";
+      }
+
+      function formatGsatNumber(value) {
+        return Number(value || 0).toLocaleString("zh-Hant");
+      }
+
+      function mapEntriesByCount(map, limit = 6) {
+        return [...map.entries()]
+          .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0], "zh-Hant"))
+          .slice(0, limit);
+      }
+
+      function getGsatScopeStats(tierId = selectedTierId, universityName = selectedUniversity) {
+        const cacheKey = `${tierId}::${universityName}::${Object.keys(UNIVERSITY_TW_UNIVERSITIES).length}`;
+        if (GSAT_RUNTIME_CACHE.dataScopeStats.has(cacheKey)) {
+          return GSAT_RUNTIME_CACHE.dataScopeStats.get(cacheKey);
+        }
+
+        const names = universityName === "all"
+          ? getUniversitiesForTier(tierId)
+          : [universityName].filter(Boolean);
+        const stats = {
+          schools: 0,
+          departmentOptions: 0,
+          officialDepartmentOptions: 0,
+          twSupplementDepartmentOptions: 0,
+          uacDepartments: 0,
+          caacDepartments: 0,
+          starDepartments: 0,
+          femaleDepartments: 0,
+          registrationDepartments: 0,
+          bySystem: new Map(),
+          byPublic: new Map(),
+          byRegion: new Map(),
+          byFocus: new Map(),
+          byTier: new Map(),
+        };
+
+        names.forEach((name) => {
+          const meta = getUniversityMeta(name) || { name };
+          const schoolData = getUniversityTwSchoolData(name);
+          if (!meta && !schoolData) return;
+          stats.schools += 1;
+          const coverage = getDepartmentCoverage(name);
+          stats.departmentOptions += coverage.total;
+          stats.officialDepartmentOptions += coverage.official;
+          stats.twSupplementDepartmentOptions += coverage.twSupplement;
+          stats.uacDepartments += countObjectKeys(schoolData?.uac?.departments);
+          stats.caacDepartments += countObjectKeys(schoolData?.caac?.departments);
+          stats.starDepartments += countObjectKeys(schoolData?.star?.departments);
+          stats.femaleDepartments += countObjectKeys(schoolData?.female?.departments);
+          stats.registrationDepartments += countObjectKeys(schoolData?.register?.departments);
+          addCount(stats.bySystem, meta.system || "未標示學制");
+          addCount(stats.byPublic, meta.publicPrivate || "未標示設立別");
+          addCount(stats.byRegion, getRegionGroup(meta.city || ""));
+          addCount(stats.byFocus, inferUniversityFocus(meta));
+          addCount(stats.byTier, getTierMeta(meta.tierId)?.label || "未分類");
+        });
+
+        GSAT_RUNTIME_CACHE.dataScopeStats.set(cacheKey, stats);
+        return stats;
+      }
+
+      function buildScopeClassificationChips(scopeStats) {
+        const chips = [
+          ...mapEntriesByCount(scopeStats.bySystem, 3).map(([label, count]) => `${escapeGsatHtml(label)} <span>${formatGsatNumber(count)}校</span>`),
+          ...mapEntriesByCount(scopeStats.byPublic, 2).map(([label, count]) => `${escapeGsatHtml(label)} <span>${formatGsatNumber(count)}校</span>`),
+          ...mapEntriesByCount(scopeStats.byRegion, 4).map(([label, count]) => `${escapeGsatHtml(label)} <span>${formatGsatNumber(count)}校</span>`),
+          ...mapEntriesByCount(scopeStats.byFocus, 4).map(([label, count]) => `${escapeGsatHtml(label)} <span>${formatGsatNumber(count)}校</span>`),
+        ];
+        return [...new Set(chips)].slice(0, 10);
+      }
+
+      function updateGsatScopeSummary() {
+        const summary = $g("gsatDataScopeSummary");
+        if (!summary) return;
+        const globalStats = getGsatScopeStats("all", "all");
+        const scopeStats = getGsatScopeStats(selectedTierId, selectedUniversity);
+        const label = selectedUniversity !== "all"
+          ? selectedUniversity
+          : (getTierMeta(selectedTierId)?.label || "全部大學");
+        summary.innerHTML = `
+          <span class="scope-line"><strong>${escapeGsatHtml(label)}</strong>：${formatGsatNumber(scopeStats.schools)} 校、${formatGsatNumber(scopeStats.departmentOptions)} 個校系選項，個申 ${formatGsatNumber(scopeStats.caacDepartments)}／繁星 ${formatGsatNumber(scopeStats.starDepartments)}／分發 ${formatGsatNumber(scopeStats.uacDepartments)}。</span>
+          <span class="scope-line">全資料庫：${formatGsatNumber(globalStats.schools)} 校、${formatGsatNumber(globalStats.departmentOptions)} 個校系選項；教育部 UDB 114/10/15 公告全國大專校院 ${formatGsatNumber(UDB_114_SCHOOL_COUNTS.total)} 校。</span>
+        `;
+      }
+
       function updateDepartmentHint() {
         const hint = $g("gsatDepartmentHint");
         if (!hint) return;
@@ -13183,6 +13816,7 @@
           select.innerHTML = `<option value="all">請先選擇大學</option>`;
           select.value = "all";
           updateDepartmentHint();
+          updateGsatScopeSummary();
           return;
         }
         const departments = getOfficialDepartments(selectedUniversity);
@@ -13192,6 +13826,7 @@
           select.innerHTML = `<option value="all">目前無可選科系</option>`;
           select.value = "all";
           updateDepartmentHint();
+          updateGsatScopeSummary();
           return;
         }
         select.disabled = false;
@@ -13203,6 +13838,7 @@
         }`;
         select.value = selectedDepartment;
         updateDepartmentHint();
+        updateGsatScopeSummary();
       }
 
       function getSelectedFilterSummary() {
@@ -13407,6 +14043,51 @@
               `;
               }).join("")}
             </div>
+          </div>
+        `;
+      }
+
+      function buildGsatDataOverviewHtml() {
+        const { tierText, universityText, departmentText } = getSelectedFilterSummary();
+        const globalStats = getGsatScopeStats("all", "all");
+        const scopeStats = getGsatScopeStats(selectedTierId, selectedUniversity);
+        const selectedSchoolProfile = selectedUniversity !== "all" ? getUniversityMeta(selectedUniversity) : null;
+        const selectedSchoolExtra = selectedSchoolProfile
+          ? `${selectedSchoolProfile.publicPrivate || "未標示"}・${selectedSchoolProfile.system || "未標示學制"}・${getRegionGroup(selectedSchoolProfile.city || "")}・${inferUniversityFocus(selectedSchoolProfile)}`
+          : `${tierText} / ${selectedTrack === "science" ? "自然組" : "社會組"} / ${departmentText}`;
+        const scopeChips = buildScopeClassificationChips(scopeStats);
+        const sourceText = GSAT_DATA_STATE.source === "supabase"
+          ? "目前優先讀取 Supabase 最新快照，若無權限或無資料才回到本地快照。"
+          : "目前使用本地快照；若 Supabase 已匯入同一套 schema，會自動切到雲端最新快照。";
+
+        return `
+          <div class="gsat-tier-section">
+            <div class="gsat-section-title">資料覆蓋總覽</div>
+            <div class="gsat-tier-caption">先確認資料庫覆蓋範圍，再判讀夢幻/安全/保底，會比只看單一分數更穩。</div>
+            <div class="gsat-data-grid">
+              <div class="gsat-data-card">
+                <div class="gsat-data-kicker">官方校數基準</div>
+                <div class="gsat-data-number">${formatGsatNumber(UDB_114_SCHOOL_COUNTS.total)} 校</div>
+                <div class="gsat-data-text">教育部 UDB ${escapeGsatHtml(UDB_114_SCHOOL_COUNTS.observedAt)}：公立 ${formatGsatNumber(UDB_114_SCHOOL_COUNTS.public.total)}、私立 ${formatGsatNumber(UDB_114_SCHOOL_COUNTS.private.total)}。</div>
+              </div>
+              <div class="gsat-data-card">
+                <div class="gsat-data-kicker">本工具收錄</div>
+                <div class="gsat-data-number">${formatGsatNumber(globalStats.schools)} 校 / ${formatGsatNumber(globalStats.departmentOptions)} 系</div>
+                <div class="gsat-data-text">整合教育部名錄與 University TW 快照後的可選校系總量。</div>
+              </div>
+              <div class="gsat-data-card">
+                <div class="gsat-data-kicker">招生管道資料</div>
+                <div class="gsat-data-number">${formatGsatNumber(globalStats.caacDepartments)} 個申</div>
+                <div class="gsat-data-text">另含繁星 ${formatGsatNumber(globalStats.starDepartments)}、分發 ${formatGsatNumber(globalStats.uacDepartments)} 筆校系條件。</div>
+              </div>
+              <div class="gsat-data-card">
+                <div class="gsat-data-kicker">目前範圍</div>
+                <div class="gsat-data-number">${formatGsatNumber(scopeStats.schools)} 校 / ${formatGsatNumber(scopeStats.departmentOptions)} 系</div>
+                <div class="gsat-data-text">${escapeGsatHtml(selectedSchoolExtra)}。資料來源：${escapeGsatHtml(getGsatDataSourceLabel())}。</div>
+              </div>
+            </div>
+            ${scopeChips.length ? `<div class="gsat-data-breakdown">${scopeChips.map((chip) => `<span class="gsat-data-chip">${chip}</span>`).join("")}</div>` : ""}
+            <div class="gsat-mini-note">${escapeGsatHtml(sourceText)} 參考來源：${escapeGsatHtml(GSAT_REFERENCE_LINKS.join("、"))}。</div>
           </div>
         `;
       }
@@ -13824,6 +14505,7 @@
 
         const overviewHtml = results.length ? buildResultOverviewHtml(tierBuckets) : "";
         const emptyStateHtml = results.length ? "" : buildEmptyStateHtml();
+        const dataOverviewHtml = buildGsatDataOverviewHtml();
         const universityTwInsightHtml = buildUniversityTwInsightHtml();
         const departmentSuggestionHtml = buildDepartmentSuggestionHtml();
         const strategyHtml = buildStrategyCards(scores, total5, results);
@@ -13839,6 +14521,7 @@
             <div class="gsat-score-summary" style="margin-bottom:12px;">${scoreCards}</div>
             ${filterSummaryHtml}
             ${metaRowHtml}
+            ${dataOverviewHtml}
             <div class="gsat-disclaimer">
               ⚠ 本資料為歷年統計估算，<strong>僅供初步參考</strong>。建議交叉比對
               <strong>甄戰 AI 大數據</strong>、<strong>104 落點分析</strong>、<strong>1111 落點分析</strong>

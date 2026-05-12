@@ -326,17 +326,19 @@ async function main() {
       assert.equal(redirectTo, `${origin}/`);
 
       const initialHome = await page.evaluate(() => ({
+        title: document.getElementById("homeStatusTitle")?.textContent || "",
         progress: document.getElementById("homeProgressValue")?.textContent || "",
         sync: document.getElementById("homeSyncState")?.textContent || "",
         cv: document.getElementById("homeTaskCvState")?.textContent || "",
         portfolio: document.getElementById("homeTaskPortfolioState")?.textContent || "",
         gsat: document.getElementById("homeTaskGsatState")?.textContent || ""
       }));
-      assert.equal(initialHome.progress, "0%");
-      assert.match(initialHome.sync, /可開始/);
-      assert.match(initialHome.cv, /可編輯/);
-      assert.match(initialHome.portfolio, /待整理/);
-      assert.match(initialHome.gsat, /待輸入/);
+      assert.match(initialHome.title, /功能概覽/);
+      assert.match(initialHome.progress, /登入後/);
+      assert.match(initialHome.sync, /未登入/);
+      assert.match(initialHome.cv, /可使用/);
+      assert.match(initialHome.portfolio, /可使用/);
+      assert.match(initialHome.gsat, /可使用/);
 
       await page.evaluate(() => {
         Object.assign(window.cvStudioState.data, {
@@ -384,21 +386,46 @@ async function main() {
         window.dispatchEvent(new CustomEvent("portfolio:data-updated"));
       });
 
-      await page.waitForFunction(() => {
-        const value = Number.parseInt(document.getElementById("homeProgressValue")?.textContent || "0", 10);
-        return value >= 85;
-      });
-      const updatedHome = await page.evaluate(() => ({
+      await page.waitForFunction(() => /登入後/.test(document.getElementById("homeProgressValue")?.textContent || ""));
+      const signedOutUpdatedHome = await page.evaluate(() => ({
+        title: document.getElementById("homeStatusTitle")?.textContent || "",
         progress: document.getElementById("homeProgressValue")?.textContent || "",
         sync: document.getElementById("homeSyncState")?.textContent || "",
         cv: document.getElementById("homeTaskCvState")?.textContent || "",
         portfolio: document.getElementById("homeTaskPortfolioState")?.textContent || "",
         gsat: document.getElementById("homeTaskGsatState")?.textContent || ""
       }));
-      assert.match(updatedHome.sync, /本機草稿/);
-      assert.match(updatedHome.cv, /資料完整/);
-      assert.match(updatedHome.portfolio, /已整理/);
-      assert.match(updatedHome.gsat, /可分析/);
+      assert.match(signedOutUpdatedHome.title, /功能概覽/);
+      assert.match(signedOutUpdatedHome.progress, /登入後/);
+      assert.match(signedOutUpdatedHome.sync, /未登入/);
+      assert.match(signedOutUpdatedHome.cv, /可使用/);
+      assert.match(signedOutUpdatedHome.portfolio, /可使用/);
+      assert.match(signedOutUpdatedHome.gsat, /可使用/);
+
+      await page.evaluate(async () => {
+        await window.__supabaseTest.emit("SIGNED_IN", {
+          id: "smoke-user",
+          email: "smoke@example.com",
+          user_metadata: { full_name: "Smoke Tester" }
+        });
+      });
+      await page.waitForFunction(() => {
+        const value = Number.parseInt(document.getElementById("homeProgressValue")?.textContent || "0", 10);
+        return value >= 85;
+      });
+      const signedInHome = await page.evaluate(() => ({
+        title: document.getElementById("homeStatusTitle")?.textContent || "",
+        progress: document.getElementById("homeProgressValue")?.textContent || "",
+        sync: document.getElementById("homeSyncState")?.textContent || "",
+        cv: document.getElementById("homeTaskCvState")?.textContent || "",
+        portfolio: document.getElementById("homeTaskPortfolioState")?.textContent || "",
+        gsat: document.getElementById("homeTaskGsatState")?.textContent || ""
+      }));
+      assert.match(signedInHome.title, /目前進度/);
+      assert.match(signedInHome.sync, /雲端已連線/);
+      assert.match(signedInHome.cv, /資料完整/);
+      assert.match(signedInHome.portfolio, /已整理/);
+      assert.match(signedInHome.gsat, /可分析/);
 
       await page.click("[data-language-toggle]");
       await page.waitForFunction(() => /Finish one sendable/.test(document.querySelector(".home-title")?.textContent || ""));
@@ -409,7 +436,7 @@ async function main() {
         portfolio: document.getElementById("homeTaskPortfolioState")?.textContent || "",
         gsat: document.getElementById("homeTaskGsatState")?.textContent || ""
       }));
-      assert.match(englishHome.sync, /Local draft/);
+      assert.match(englishHome.sync, /Cloud Connected/);
       assert.match(englishHome.cv, /Complete/);
       assert.match(englishHome.portfolio, /Organized/);
       assert.match(englishHome.gsat, /Ready/);
@@ -417,6 +444,10 @@ async function main() {
 
       await page.click("[data-language-toggle]");
       await page.waitForFunction(() => /今天先完成/.test(document.querySelector(".home-title")?.textContent || ""));
+      await page.evaluate(async () => {
+        await window.__supabaseTest.emit("SIGNED_OUT");
+      });
+      await page.waitForFunction(() => /未登入/.test(document.getElementById("homeSyncState")?.textContent || ""));
     });
 
     await withStep("Career 基本互動", async () => {
@@ -432,7 +463,7 @@ async function main() {
         window.localStorage.setItem("cv-studio-local-v2", JSON.stringify(window.cvStudioState.data));
       });
 
-      await page.click("[data-tab='career']");
+      await page.click("[data-tab-shortcut='career']");
       await page.waitForSelector("#page-career.active");
       await page.waitForFunction(() => {
         const node = document.getElementById("careerCvSnippet");
@@ -464,7 +495,7 @@ async function main() {
     });
 
     await withStep("GSAT 正向分析流程", async () => {
-      await page.click("[data-tab='gsat']");
+      await page.click("[data-tab-shortcut='gsat']");
       await page.waitForSelector("#page-gsat.active");
 
       const departmentDisabled = await page.$eval("#gsatDepartmentSelect", (node) => node.disabled);
@@ -493,7 +524,12 @@ async function main() {
 
       const sourceText = await page.$eval(".gsat-source-chip", (node) => node.textContent || "");
       const resultText = await page.$eval("#gsatResultsArea", (node) => node.textContent || "");
+      const scopeSummaryText = await page.$eval("#gsatDataScopeSummary", (node) => node.textContent || "");
       assert.match(sourceText, /本地快照/);
+      assert.match(resultText, /資料覆蓋總覽/);
+      assert.match(resultText, /149 校/);
+      assert.match(resultText, /4,113 系/);
+      assert.match(scopeSummaryText, /校系選項/);
       assert.doesNotMatch(resultText, /暫時沒有歷年切線/);
     });
 
