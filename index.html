@@ -6274,7 +6274,6 @@
         "複製全文": "Copy Full Text",
         "已複製！": "Copied!",
         "ATS 關鍵字（已融入）": "ATS Keywords (Included)",
-        "個人化亮點說明": "Personalization Highlights",
         "備用開場方式": "Alternative Opening",
         "你的職涯定位": "Your Career Positioning",
         "推薦崗位": "Recommended Roles",
@@ -11750,19 +11749,18 @@
           const cv = getCvSummary();
           if (!cv) { showError("請先至「CV 履歷」頁填寫你的履歷資料。"); return; }
 
-          const system = `你是頂尖的求職文件撰寫師，擅長生成 ATS 友善、高轉換率的客製化求職信。根據使用者的履歷與職缺，生成一封專業、個人化的求職信。要求：
+          const system = `你是頂尖的求職文件撰寫師，擅長生成 ATS 友善、高轉換率的求職信。根據使用者的履歷與職缺，生成一封專業、具體、符合職缺需求的求職信。要求：
 - 開頭 1-2 句展現對公司/職缺的具體了解，不要用「我對貴公司深感興趣」等套話
 - 中段呈現 2-3 個與職缺高度相關的具體成就（盡可能量化）
 - 結尾主動表達下一步意願，有自信但不浮誇
 - 全篇自然融入職缺的 5-8 個重要關鍵字
-- 篇幅：350-500 字，語氣：專業但有個人特色
+- 篇幅：350-500 字，語氣：專業、具體、自然
 
 請用繁體中文，以 JSON 格式輸出（不加任何說明文字）：
 {
   "subject_line": "建議的郵件主旨行（簡潔、帶職位名稱）",
   "full_letter": "完整求職信全文（含稱謂、正文三段、結語與署名位置）",
   "keywords_used": ["信中自然融入的關鍵字1", "關鍵字2", "關鍵字3", "關鍵字4", "關鍵字5"],
-  "personalization_points": ["此信的個人化亮點1（說明為何這樣寫）", "亮點2"],
   "alternative_opening": "備用的另一種開場方式（不同角度，如：從成就切入 或 從共同價值觀切入）"
 }`;
 
@@ -11794,11 +11792,6 @@
             ${r.keywords_used?.length ? `<div class="career-result-section" style="margin-bottom:14px;">
               <h4>🔑 ATS 關鍵字（已融入）</h4>
               <div class="career-ats-tags">${careerTagItems(r.keywords_used, "career-tag-green")}</div>
-            </div>` : ""}
-
-            ${r.personalization_points?.length ? `<div class="career-result-section" style="margin-bottom:14px;">
-              <h4>✨ 個人化亮點說明</h4>
-              <ul>${careerListItems(r.personalization_points)}</ul>
             </div>` : ""}
 
             ${r.alternative_opening ? `<div class="career-result-section">
