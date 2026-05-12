@@ -1836,6 +1836,21 @@
       margin-top: 0;
     }
 
+    .editable-block[data-block-id="profile"],
+    .editable-block[data-block-id="summary"],
+    .editable-block[data-block-id="contacts"],
+    .editable-block[data-block-id="skills"],
+    .editable-block[data-block-id="highlights"],
+    .editable-block[data-block-id="awards"],
+    .profile-block,
+    .contact-list,
+    .simple-list,
+    .timeline-item,
+    .empty-block {
+      break-inside: avoid;
+      page-break-inside: avoid;
+    }
+
     .aside-block h3,
     .main-block h3 {
       margin-bottom: 12px;
@@ -1843,6 +1858,8 @@
       text-transform: uppercase;
       letter-spacing: 0.18em;
       color: var(--template-accent);
+      break-after: avoid;
+      page-break-after: avoid;
     }
 
     .contact-list,
@@ -10029,9 +10046,22 @@
       }
 
       function getCvPdfOptions(filename) {
+        const avoidBreakSelectors = [
+          ".editable-block[data-block-id='profile']",
+          ".editable-block[data-block-id='summary']",
+          ".editable-block[data-block-id='contacts']",
+          ".editable-block[data-block-id='skills']",
+          ".editable-block[data-block-id='highlights']",
+          ".editable-block[data-block-id='awards']",
+          ".profile-block",
+          ".contact-list",
+          ".simple-list",
+          ".timeline-item",
+          ".empty-block"
+        ];
         const pagebreak = state.pdfPageMode === "single"
-          ? { mode: ["avoid-all", "css", "legacy"] }
-          : { mode: ["css", "legacy"] };
+          ? { mode: ["avoid-all", "css", "legacy"], avoid: avoidBreakSelectors }
+          : { mode: ["css", "legacy"], avoid: avoidBreakSelectors };
         return {
           margin: 0,
           filename,
