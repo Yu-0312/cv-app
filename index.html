@@ -14785,8 +14785,7 @@
           ]),
           fetchAllSupabaseRows(client, "university_tw_registration_departments", snapshotId, [
             { column: "university_code" },
-            { column: "department_name" },
-            { column: "row_key" }
+            { column: "department_name" }
           ])
         ]);
         const [universitiesResult, uacResult, caacResult, starResult, genderResult, registrationResult] = queries;
