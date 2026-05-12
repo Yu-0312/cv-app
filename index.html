@@ -2871,6 +2871,45 @@
     .app-page { display: none; }
     .app-page.active { display: block; }
 
+    body.public-share-mode .page-header,
+    body.public-share-mode .app-nav-shell,
+    body.public-share-mode #page-home,
+    body.public-share-mode #page-portfolio,
+    body.public-share-mode #page-career,
+    body.public-share-mode #page-gsat,
+    body.public-share-mode #editorSection,
+    body.public-share-mode #cvStudioBar,
+    body.public-share-mode .editor-panel,
+    body.public-share-mode .preview-toolbar {
+      display: none !important;
+    }
+
+    body.public-share-mode #page-cv {
+      display: block !important;
+    }
+
+    body.public-share-mode .workspace {
+      display: block;
+      max-width: 960px;
+      margin: 0 auto;
+    }
+
+    body.public-share-mode .preview-shell,
+    body.public-share-mode .preview-frame {
+      border: 0;
+      box-shadow: none;
+      background: transparent;
+      padding: 0;
+    }
+
+    body.public-share-mode .cv-paper {
+      border-radius: 0;
+    }
+
+    body.public-share-mode [contenteditable="true"] {
+      user-select: text;
+    }
+
     @media (max-width: 860px) {
       .app-nav-shell {
         display: grid;
@@ -4703,6 +4742,9 @@
         </a>
         <button id="logoutBtn" class="ghost" type="button">登出</button>
         <button id="saveBtn" class="secondary" type="button">儲存 CV</button>
+        <button id="publishShareBtn" class="secondary" type="button">發布分享頁</button>
+        <button id="copyShareBtn" class="soft" type="button" disabled>複製分享連結</button>
+        <button id="unpublishShareBtn" class="ghost" type="button" disabled>取消公開</button>
         <button id="previewPdfBtn" class="secondary" type="button">預覽 PDF</button>
         <button id="downloadPdfBtn" class="soft" type="button">下載 PDF</button>
         <button id="printCvBtn" class="soft" type="button">列印</button>
@@ -5102,6 +5144,21 @@
                     <option value="display">Display 雜誌感</option>
                   </select>
                 </div>
+                <div class="field-inline">
+                  <label for="resumeLanguageSelect">履歷標題語言</label>
+                  <select id="resumeLanguageSelect">
+                    <option value="auto">跟隨介面</option>
+                    <option value="zh">中文</option>
+                    <option value="en">English</option>
+                  </select>
+                </div>
+                <div class="field-inline">
+                  <label for="pdfPageModeSelect">PDF 分頁模式</label>
+                  <select id="pdfPageModeSelect">
+                    <option value="auto">自動分頁</option>
+                    <option value="single">盡量單頁</option>
+                  </select>
+                </div>
               </div>
               <div class="editor-tool">
                 <strong>選取區塊設定</strong>
@@ -5164,6 +5221,12 @@
               <div class="field full">
                 <label>頭像圖片網址</label>
                 <input id="avatar" type="url" placeholder="請貼上圖片網址，或先留空" />
+                <input id="avatarFileInput" type="file" accept="image/png,image/jpeg,image/webp,image/gif" hidden />
+                <div class="mini-actions" style="margin-top:10px;">
+                  <button id="uploadAvatarBtn" class="soft" type="button">上傳頭像</button>
+                  <button id="clearAvatarBtn" class="ghost" type="button">清除頭像</button>
+                </div>
+                <div class="helper">登入後可將頭像上傳到 Supabase Storage；未登入時也可先貼圖片網址。</div>
               </div>
               <div class="field full">
                 <label>摘要</label>
@@ -5885,6 +5948,9 @@
         "連接 Canva": "Connect Canva",
         "開啟外部設計工具": "Open external design tools",
         "儲存 CV": "Save CV",
+        "發布分享頁": "Publish Share Page",
+        "複製分享連結": "Copy Share Link",
+        "取消公開": "Unpublish",
         "預覽 PDF": "Preview PDF",
         "列印": "Print",
         "復原 (Ctrl+Z)": "Undo (Ctrl+Z)",
@@ -6002,6 +6068,12 @@
         "Serif 典雅": "Serif Elegant",
         "Sans 俐落": "Sans Clean",
         "Display 雜誌感": "Display Magazine",
+        "履歷標題語言": "Resume Heading Language",
+        "跟隨介面": "Follow Interface",
+        "中文": "Chinese",
+        "PDF 分頁模式": "PDF Page Mode",
+        "自動分頁": "Auto Pagination",
+        "盡量單頁": "Prefer One Page",
         "選取區塊設定": "Block Settings",
         "所在欄位": "Column",
         "側欄": "Sidebar",
@@ -6026,6 +6098,9 @@
         "請輸入網站、LinkedIn 或作品集連結": "Enter a website, LinkedIn, or portfolio link",
         "頭像圖片網址": "Avatar Image URL",
         "請貼上圖片網址，或先留空": "Paste an image URL, or leave blank for now",
+        "上傳頭像": "Upload Avatar",
+        "清除頭像": "Clear Avatar",
+        "登入後可將頭像上傳到 Supabase Storage；未登入時也可先貼圖片網址。": "After signing in, upload your avatar to Supabase Storage; before signing in, you can paste an image URL.",
         "摘要": "Summary",
         "請用 2 到 4 句介紹背景、核心能力、代表經驗與求職方向": "Use 2 to 4 sentences to introduce your background, strengths, key experience, and target direction",
         "專業技能與亮點": "Skills and Highlights",
@@ -6687,6 +6762,8 @@
       const TEMPLATE_KEY = "cv-studio-template-v1";
       const WORKFLOW_KEY = "cv-studio-workflow-v1";
       const LAYOUT_KEY = "cv-studio-layout-v1";
+      const RESUME_LANGUAGE_KEY = "cv-studio-resume-language-v1";
+      const PDF_PAGE_MODE_KEY = "cv-studio-pdf-page-mode-v1";
       const PORTFOLIO_STORAGE_KEY = "pf-studio-local-v4";
       const defaultData = {
         name: "",
@@ -7171,6 +7248,64 @@
         projects: "專案 / 作品",
         education: "學歷"
       };
+      const cvSectionLabels = {
+        zh: {
+          summary: "摘要",
+          contacts: "聯絡方式",
+          skills: "技能",
+          highlights: "亮點",
+          awards: "獎項 / 證照",
+          experience: "工作 / 實習",
+          projects: "專案 / 作品",
+          education: "學歷",
+          name: "姓名",
+          role: "職稱 / 角色",
+          summaryPlaceholder: "點擊輸入摘要…",
+          skillsPlaceholder: "技能",
+          highlightsPlaceholder: "亮點",
+          awardsPlaceholder: "獎項 / 證照",
+          addSkill: "新增技能",
+          addHighlight: "新增亮點",
+          addAward: "新增獎項",
+          addExperience: "新增經歷",
+          addProject: "新增專案",
+          addEducation: "新增學歷",
+          emptySkills: "點擊這裡新增技能標籤",
+          emptyHighlights: "點擊這裡新增亮點",
+          emptyAwards: "點擊這裡新增獎項 / 證照",
+          emptyExperience: "點擊這裡新增工作 / 實習經歷。",
+          emptyProjects: "點擊這裡新增專案 / 作品。",
+          emptyEducation: "點擊這裡新增學歷。"
+        },
+        en: {
+          summary: "Summary",
+          contacts: "Contact",
+          skills: "Skills",
+          highlights: "Highlights",
+          awards: "Awards / Certifications",
+          experience: "Experience",
+          projects: "Projects",
+          education: "Education",
+          name: "Name",
+          role: "Title / Role",
+          summaryPlaceholder: "Click to add summary...",
+          skillsPlaceholder: "Skill",
+          highlightsPlaceholder: "Highlight",
+          awardsPlaceholder: "Award / Certification",
+          addSkill: "Add skill",
+          addHighlight: "Add highlight",
+          addAward: "Add award",
+          addExperience: "Add experience",
+          addProject: "Add project",
+          addEducation: "Add education",
+          emptySkills: "Click here to add skill tags",
+          emptyHighlights: "Click here to add highlights",
+          emptyAwards: "Click here to add awards or certifications",
+          emptyExperience: "Click here to add work or internship experience.",
+          emptyProjects: "Click here to add projects or portfolio work.",
+          emptyEducation: "Click here to add education."
+        }
+      };
 
       function loadInitialConfig() {
         const stored = loadJson(CONFIG_KEY, {});
@@ -7206,7 +7341,11 @@
         template: localStorage.getItem(TEMPLATE_KEY) || "n-tech",
         workflowMode: localStorage.getItem(WORKFLOW_KEY) || "template-first",
         layoutPrefs: loadJson(LAYOUT_KEY, {}),
+        resumeLanguage: localStorage.getItem(RESUME_LANGUAGE_KEY) || "auto",
+        pdfPageMode: localStorage.getItem(PDF_PAGE_MODE_KEY) || "auto",
         selectedBlock: "profile",
+        shareSlug: "",
+        isPublicShare: false,
         user: null,
         client: null,
         clientConfigSignature: "",
@@ -7302,6 +7441,8 @@
               data: normalizeCvData(defaultData),
               template: state.config.defaultTemplate || "n-tech",
               workflowMode: "template-first",
+              resumeLanguage: "auto",
+              pdfPageMode: "auto",
               layoutPrefs: {}
             };
           }
@@ -7312,6 +7453,8 @@
             data: normalizeCvData(data),
             template: parsed?.template || state.config.defaultTemplate || "n-tech",
             workflowMode: parsed?.workflowMode || "template-first",
+            resumeLanguage: parsed?.resumeLanguage || "auto",
+            pdfPageMode: parsed?.pdfPageMode || "auto",
             layoutPrefs: parsed?.layoutPrefs && typeof parsed.layoutPrefs === "object"
               ? parsed.layoutPrefs
               : {}
@@ -7321,6 +7464,8 @@
             data: normalizeCvData(defaultData),
             template: state.config.defaultTemplate || "n-tech",
             workflowMode: "template-first",
+            resumeLanguage: "auto",
+            pdfPageMode: "auto",
             layoutPrefs: {}
           };
         }
@@ -7332,6 +7477,8 @@
           data: normalizeCvData(state.data),
           template: state.template || state.config.defaultTemplate || "n-tech",
           workflowMode: state.workflowMode || "template-first",
+          resumeLanguage: state.resumeLanguage || "auto",
+          pdfPageMode: state.pdfPageMode || "auto",
           layoutPrefs: state.layoutPrefs || {}
         }));
       }
@@ -7341,12 +7488,16 @@
         state.data = snapshot.data;
         state.template = snapshot.template;
         state.workflowMode = snapshot.workflowMode;
+        state.resumeLanguage = snapshot.resumeLanguage;
+        state.pdfPageMode = snapshot.pdfPageMode;
         state.layoutPrefs = snapshot.layoutPrefs;
 
         localStorage.removeItem(CLOUD_PROFILE_ACTIVE_KEY);
         saveJson(STORAGE_KEY, state.data);
         localStorage.setItem(TEMPLATE_KEY, state.template);
         localStorage.setItem(WORKFLOW_KEY, state.workflowMode);
+        localStorage.setItem(RESUME_LANGUAGE_KEY, state.resumeLanguage);
+        localStorage.setItem(PDF_PAGE_MODE_KEY, state.pdfPageMode);
         saveJson(LAYOUT_KEY, state.layoutPrefs);
 
         syncInputs();
@@ -7362,6 +7513,58 @@
           preserveSignedOutDraftSnapshot();
         }
         window.dispatchEvent(new CustomEvent("cv:data-updated", { detail: { source } }));
+      }
+
+      function buildProfileContent() {
+        return {
+          ...normalizeCvData(state.data),
+          _layoutPrefs: state.layoutPrefs || {},
+          _workflowMode: state.workflowMode || "template-first",
+          _resumeLanguage: state.resumeLanguage || "auto",
+          _pdfPageMode: state.pdfPageMode || "auto"
+        };
+      }
+
+      function applyProfileContent(content = {}, templateId = state.template, options = {}) {
+        const { persist = true, source = "profile" } = options;
+        const publicKeys = Object.fromEntries(
+          Object.entries(content || {}).filter(([key]) => !key.startsWith("_"))
+        );
+        state.data = normalizeCvData({
+          ...defaultData,
+          ...publicKeys
+        });
+        state.layoutPrefs = content._layoutPrefs && typeof content._layoutPrefs === "object"
+          ? content._layoutPrefs
+          : {};
+        state.workflowMode = content._workflowMode || "template-first";
+        state.resumeLanguage = ["auto", "zh", "en"].includes(content._resumeLanguage)
+          ? content._resumeLanguage
+          : "auto";
+        state.pdfPageMode = ["auto", "single"].includes(content._pdfPageMode)
+          ? content._pdfPageMode
+          : "auto";
+        state.template = templateId || state.template || state.config.defaultTemplate || "n-tech";
+
+        if (persist) {
+          saveJson(STORAGE_KEY, state.data);
+          saveJson(LAYOUT_KEY, state.layoutPrefs);
+          localStorage.setItem(WORKFLOW_KEY, state.workflowMode);
+          localStorage.setItem(RESUME_LANGUAGE_KEY, state.resumeLanguage);
+          localStorage.setItem(PDF_PAGE_MODE_KEY, state.pdfPageMode);
+          localStorage.setItem(TEMPLATE_KEY, state.template);
+        }
+
+        syncInputs();
+        syncWorkflowUi();
+        syncLayoutControls();
+        updateTemplate(state.template, persist);
+        updatePreview(true);
+        if (persist) {
+          notifyCvDataUpdated(source);
+        } else {
+          renderHomeStatus();
+        }
       }
 
       let pdfPreviewUrl = "";
@@ -7476,6 +7679,16 @@
 
       function uiText(value) {
         return window.cvStudioI18n?.t(value) || value;
+      }
+
+      function getResumeLanguage() {
+        if (state.resumeLanguage === "zh" || state.resumeLanguage === "en") return state.resumeLanguage;
+        return window.cvStudioI18n?.isEnglish?.() ? "en" : "zh";
+      }
+
+      function cvLabel(key) {
+        const labels = cvSectionLabels[getResumeLanguage()] || cvSectionLabels.zh;
+        return labels[key] || cvSectionLabels.zh[key] || key;
       }
 
       function hasMeaningfulText(value) {
@@ -7751,7 +7964,8 @@
       /* ── helpers for contenteditable blocks ── */
       function ce(field, tag, cls, value, ph, extraAttr) {
         const attr = extraAttr ? ` ${extraAttr}` : "";
-        return `<${tag} class="${cls}" contenteditable="true" data-field="${field}" data-sync="text" spellcheck="false" data-ph="${escapeHtml(uiText(ph || ""))}"${attr}>${escapeHtml(value)}</${tag}>`;
+        const placeholder = state.resumeLanguage === "auto" ? uiText(ph || "") : (ph || "");
+        return `<${tag} class="${cls}" contenteditable="true" data-field="${field}" data-sync="text" spellcheck="false" data-ph="${escapeHtml(placeholder)}"${attr}>${escapeHtml(value)}</${tag}>`;
       }
 
       function renderEditableTimeline(items, field, emptyText) {
@@ -7778,13 +7992,13 @@
           return `
             <div class="${profileClass}">
               ${buildAvatar(layoutState)}
-              ${ce("name", "h1", "cv-name", state.data.name || "", "姓名")}
-              ${ce("role", "div", "cv-role", state.data.role || "", "職稱 / 角色")}
-              ${hasStandaloneSummary ? "" : ce("summary", "div", "cv-summary", state.data.summary || "", "摘要")}
+              ${ce("name", "h1", "cv-name", state.data.name || "", cvLabel("name"))}
+              ${ce("role", "div", "cv-role", state.data.role || "", cvLabel("role"))}
+              ${hasStandaloneSummary ? "" : ce("summary", "div", "cv-summary", state.data.summary || "", cvLabel("summary"))}
             </div>`;
         }
         if (blockId === "summary") {
-          return `<div class="main-block"><h3>Summary</h3>${ce("summary", "div", "cv-summary", state.data.summary || "", "點擊輸入摘要…")}</div>`;
+          return `<div class="main-block"><h3>${escapeHtml(cvLabel("summary"))}</h3>${ce("summary", "div", "cv-summary", state.data.summary || "", cvLabel("summaryPlaceholder"))}</div>`;
         }
         if (blockId === "contacts") {
           const cfields = [
@@ -7796,43 +8010,43 @@
           const items = cfields.map(cf =>
             `<div class="contact-item" contenteditable="true" data-field="${cf.f}" data-sync="text" spellcheck="false" data-ph="${escapeHtml(uiText(cf.ph))}">${escapeHtml(state.data[cf.f] || "")}</div>`
           ).join("");
-          return `<div class="aside-block"><h3>聯絡方式</h3><div class="contact-list">${items}</div></div>`;
+          return `<div class="aside-block"><h3>${escapeHtml(cvLabel("contacts"))}</h3><div class="contact-list">${items}</div></div>`;
         }
         if (blockId === "skills") {
           const skillList = splitLines(state.data.skills.replaceAll(",", "\n"));
           const pills = skillList.length
             ? skillList.map((s, i) =>
-                `<span class="simple-pill" contenteditable="true" data-field="skills" data-sync="list-item" data-li="${i}" spellcheck="false" data-ph="技能">${escapeHtml(s)}</span>`
-              ).join("") + `<button class="simple-pill wysiwyg-add-btn" data-add-to="skills" type="button" title="${escapeHtml(uiText("新增技能"))}">＋</button>`
-            : `<div class="empty-block" style="cursor:pointer;" data-add-to="skills">點擊這裡新增技能標籤</div>`;
-          return `<div class="aside-block"><h3>技能</h3><div class="simple-list">${pills}</div></div>`;
+                `<span class="simple-pill" contenteditable="true" data-field="skills" data-sync="list-item" data-li="${i}" spellcheck="false" data-ph="${escapeHtml(cvLabel("skillsPlaceholder"))}">${escapeHtml(s)}</span>`
+              ).join("") + `<button class="simple-pill wysiwyg-add-btn" data-add-to="skills" type="button" title="${escapeHtml(cvLabel("addSkill"))}">＋</button>`
+            : `<div class="empty-block" style="cursor:pointer;" data-add-to="skills">${escapeHtml(cvLabel("emptySkills"))}</div>`;
+          return `<div class="aside-block"><h3>${escapeHtml(cvLabel("skills"))}</h3><div class="simple-list">${pills}</div></div>`;
         }
         if (blockId === "highlights") {
           const lines = splitLines(state.data.highlights);
           const items = lines.length
             ? lines.map((line, i) =>
-                `<div class="contact-item" contenteditable="true" data-field="highlights" data-sync="list-item" data-li="${i}" spellcheck="false" data-ph="亮點">${escapeHtml(line)}</div>`
-              ).join("") + `<button class="wysiwyg-add-btn contact-item" data-add-to="highlights" type="button">＋ 新增亮點</button>`
-            : `<div class="empty-block" style="cursor:pointer;" data-add-to="highlights">點擊這裡新增亮點</div>`;
-          return `<div class="aside-block"><h3>亮點</h3><div class="contact-list">${items}</div></div>`;
+                `<div class="contact-item" contenteditable="true" data-field="highlights" data-sync="list-item" data-li="${i}" spellcheck="false" data-ph="${escapeHtml(cvLabel("highlightsPlaceholder"))}">${escapeHtml(line)}</div>`
+              ).join("") + `<button class="wysiwyg-add-btn contact-item" data-add-to="highlights" type="button">＋ ${escapeHtml(cvLabel("addHighlight"))}</button>`
+            : `<div class="empty-block" style="cursor:pointer;" data-add-to="highlights">${escapeHtml(cvLabel("emptyHighlights"))}</div>`;
+          return `<div class="aside-block"><h3>${escapeHtml(cvLabel("highlights"))}</h3><div class="contact-list">${items}</div></div>`;
         }
         if (blockId === "awards") {
           const lines = splitLines(state.data.awards);
           const items = lines.length
             ? lines.map((line, i) =>
-                `<div class="contact-item" contenteditable="true" data-field="awards" data-sync="list-item" data-li="${i}" spellcheck="false" data-ph="獎項 / 證照">${escapeHtml(line)}</div>`
-              ).join("") + `<button class="wysiwyg-add-btn contact-item" data-add-to="awards" type="button">＋ 新增獎項</button>`
-            : `<div class="empty-block" style="cursor:pointer;" data-add-to="awards">點擊這裡新增獎項 / 證照</div>`;
-          return `<div class="aside-block"><h3>獎項 / 證照</h3><div class="contact-list">${items}</div></div>`;
+                `<div class="contact-item" contenteditable="true" data-field="awards" data-sync="list-item" data-li="${i}" spellcheck="false" data-ph="${escapeHtml(cvLabel("awardsPlaceholder"))}">${escapeHtml(line)}</div>`
+              ).join("") + `<button class="wysiwyg-add-btn contact-item" data-add-to="awards" type="button">＋ ${escapeHtml(cvLabel("addAward"))}</button>`
+            : `<div class="empty-block" style="cursor:pointer;" data-add-to="awards">${escapeHtml(cvLabel("emptyAwards"))}</div>`;
+          return `<div class="aside-block"><h3>${escapeHtml(cvLabel("awards"))}</h3><div class="contact-list">${items}</div></div>`;
         }
         if (blockId === "experience") {
-          return `<div class="main-block"><h3>Experience</h3><div>${renderEditableTimeline(parseEntries(state.data.experience), "experience", "點擊這裡新增工作 / 實習經歷。")}</div><button class="wysiwyg-add-btn" data-add-to="experience" type="button" style="margin-top:8px;">＋ 新增經歷</button></div>`;
+          return `<div class="main-block"><h3>${escapeHtml(cvLabel("experience"))}</h3><div>${renderEditableTimeline(parseEntries(state.data.experience), "experience", cvLabel("emptyExperience"))}</div><button class="wysiwyg-add-btn" data-add-to="experience" type="button" style="margin-top:8px;">＋ ${escapeHtml(cvLabel("addExperience"))}</button></div>`;
         }
         if (blockId === "projects") {
-          return `<div class="main-block"><h3>Projects</h3><div>${renderEditableTimeline(parseEntries(state.data.projects), "projects", "點擊這裡新增專案 / 作品。")}</div><button class="wysiwyg-add-btn" data-add-to="projects" type="button" style="margin-top:8px;">＋ 新增專案</button></div>`;
+          return `<div class="main-block"><h3>${escapeHtml(cvLabel("projects"))}</h3><div>${renderEditableTimeline(parseEntries(state.data.projects), "projects", cvLabel("emptyProjects"))}</div><button class="wysiwyg-add-btn" data-add-to="projects" type="button" style="margin-top:8px;">＋ ${escapeHtml(cvLabel("addProject"))}</button></div>`;
         }
         if (blockId === "education") {
-          return `<div class="main-block"><h3>Education</h3><div>${renderEditableTimeline(parseEntries(state.data.education), "education", "點擊這裡新增學歷。")}</div><button class="wysiwyg-add-btn" data-add-to="education" type="button" style="margin-top:8px;">＋ 新增學歷</button></div>`;
+          return `<div class="main-block"><h3>${escapeHtml(cvLabel("education"))}</h3><div>${renderEditableTimeline(parseEntries(state.data.education), "education", cvLabel("emptyEducation"))}</div><button class="wysiwyg-add-btn" data-add-to="education" type="button" style="margin-top:8px;">＋ ${escapeHtml(cvLabel("addEducation"))}</button></div>`;
         }
         return "";
       }
@@ -7879,7 +8093,9 @@
         // Keep tool panel in sync
         if (typeof updateWordCount === "function") updateWordCount();
         if (typeof updateQrCode === "function") updateQrCode();
-        window.cvStudioI18n?.apply(paper);
+        if (state.resumeLanguage === "auto") {
+          window.cvStudioI18n?.apply(paper);
+        }
         renderHomeStatus();
       }
 
@@ -7946,6 +8162,8 @@
         $("baseFontSizeRange").value = String(layoutState.baseFontSize);
         $("sectionGapRange").value = String(layoutState.sectionGap);
         $("fontFamilySelect").value = layoutState.fontFamily;
+        $("resumeLanguageSelect").value = state.resumeLanguage;
+        $("pdfPageModeSelect").value = state.pdfPageMode;
 
         const blockStyle = getBlockStyle(state.selectedBlock, layoutState);
         $("selectedBlockLabel").textContent = `${blockLabels[state.selectedBlock] || state.selectedBlock} · ${getBlockRegion(state.selectedBlock, layoutState) === "sidebar" ? "側欄" : "主欄"}`;
@@ -8202,6 +8420,156 @@
         }
       }
 
+      function getShareSlugFromUrl() {
+        try {
+          return new URL(window.location.href).searchParams.get("share")?.trim() || "";
+        } catch {
+          return "";
+        }
+      }
+
+      function generateShareSlug() {
+        const prefix = (state.data.name || state.user?.email || "cv")
+          .toLowerCase()
+          .replace(/[^a-z0-9]+/g, "-")
+          .replace(/^-+|-+$/g, "")
+          .slice(0, 24) || "cv";
+        const bytes = new Uint8Array(4);
+        window.crypto?.getRandomValues?.(bytes);
+        const suffix = Array.from(bytes, (byte) => byte.toString(16).padStart(2, "0")).join("") || String(Date.now()).slice(-8);
+        return `${prefix}-${suffix}`;
+      }
+
+      function getPublicShareUrl(slug = state.shareSlug) {
+        if (!slug) return "";
+        try {
+          const url = new URL(getRedirectUrl());
+          url.searchParams.set("share", slug);
+          return url.toString();
+        } catch {
+          return `${getRedirectUrl()}?share=${encodeURIComponent(slug)}`;
+        }
+      }
+
+      async function copyTextToClipboard(text) {
+        if (!text) return false;
+        if (navigator.clipboard?.writeText) {
+          try {
+            await navigator.clipboard.writeText(text);
+            return true;
+          } catch {
+            // Fall through to prompt fallback.
+          }
+        }
+        window.prompt("請複製分享連結", text);
+        return false;
+      }
+
+      async function loadOwnPublicShare() {
+        if (!state.client || !state.user) return;
+        const { data, error } = await state.client
+          .from("cv_public_profiles")
+          .select("slug")
+          .eq("user_id", state.user.id)
+          .maybeSingle();
+        if (!error && data?.slug) {
+          state.shareSlug = data.slug;
+        } else if (!error) {
+          state.shareSlug = "";
+        }
+        updateActionButtons();
+      }
+
+      async function publishShareProfile() {
+        if (!state.user || !state.client) {
+          setMessage("請先登入並完成 Supabase 設定，才能發布公開分享頁。", "error");
+          return;
+        }
+        const slug = state.shareSlug || generateShareSlug();
+        const payload = {
+          user_id: state.user.id,
+          slug,
+          title: state.data.name || state.user.user_metadata?.full_name || state.user.email || "CV",
+          template_id: state.template,
+          content: buildProfileContent(),
+          published_at: new Date().toISOString()
+        };
+        const { error } = await state.client
+          .from("cv_public_profiles")
+          .upsert(payload, { onConflict: "user_id" });
+        if (error) {
+          setMessage(`發布分享頁失敗：${error.message}`, "error");
+          return;
+        }
+        state.shareSlug = slug;
+        updateActionButtons();
+        const url = getPublicShareUrl(slug);
+        await copyTextToClipboard(url);
+        setMessage(`公開分享頁已發布，連結已準備好：${url}`, "success");
+      }
+
+      async function copyShareLink() {
+        const url = getPublicShareUrl();
+        if (!url) {
+          setMessage("目前還沒有公開分享頁，請先按「發布分享頁」。", "error");
+          return;
+        }
+        await copyTextToClipboard(url);
+        setMessage("分享連結已複製。", "success");
+      }
+
+      async function unpublishShareProfile() {
+        if (!state.user || !state.client) return;
+        const { error } = await state.client
+          .from("cv_public_profiles")
+          .delete()
+          .eq("user_id", state.user.id);
+        if (error) {
+          setMessage(`取消公開失敗：${error.message}`, "error");
+          return;
+        }
+        state.shareSlug = "";
+        updateActionButtons();
+        setMessage("已取消公開分享頁。", "success");
+      }
+
+      function enterPublicShareMode() {
+        state.isPublicShare = true;
+        document.body.classList.add("public-share-mode");
+        document.querySelectorAll(".app-page").forEach((page) => page.classList.remove("active"));
+        $("page-cv")?.classList.add("active");
+        document.querySelectorAll(".app-tab").forEach((tab) => tab.classList.remove("active"));
+        $("cvPaper")?.querySelectorAll("[contenteditable='true']").forEach((node) => {
+          node.setAttribute("contenteditable", "false");
+        });
+      }
+
+      async function loadPublicShareIfRequested() {
+        const slug = getShareSlugFromUrl();
+        if (!slug) return false;
+        if (!makeClient()) {
+          setMessage("這個分享頁需要 Supabase 設定才能讀取。", "error");
+          return false;
+        }
+        const { data, error } = await state.client
+          .from("cv_public_profiles")
+          .select("content, template_id, title")
+          .eq("slug", slug)
+          .maybeSingle();
+        if (error || !data?.content) {
+          setMessage(`找不到公開分享頁${error?.message ? `：${error.message}` : "。"}`, "error");
+          return false;
+        }
+        applyProfileContent(data.content, data.template_id, {
+          persist: false,
+          source: "public-share"
+        });
+        enterPublicShareMode();
+        document.title = `${data.title || state.data.name || "CV"} · CV Studio`;
+        setMessage("正在檢視公開 CV 分享頁。", "success");
+        return true;
+      }
+
       function updateActionButtons() {
         const readyForLogin = Boolean(getGoogleAuthorizeUrl());
         const readyForCloud = canUseSupabase();
@@ -8222,8 +8590,13 @@
         $("logoutBtn").disabled = !state.user || state.authBusy;
         $("headerLogoutBtn").disabled = !state.user || state.authBusy;
         $("saveBtn").disabled = !readyForCloud || !state.user || state.authBusy;
+        $("publishShareBtn").disabled = !readyForCloud || !state.user || state.authBusy;
+        $("copyShareBtn").disabled = !state.shareSlug || state.authBusy;
+        $("unpublishShareBtn").disabled = !readyForCloud || !state.user || !state.shareSlug || state.authBusy;
         $("loadProfileBtn").disabled = !readyForCloud || state.authBusy;
         $("applyConfigBtn").disabled = false;
+        $("uploadAvatarBtn").disabled = !readyForCloud || !state.user || state.authBusy;
+        $("clearAvatarBtn").disabled = !state.data.avatar || state.authBusy;
         $("installBtn").disabled = !state.installPrompt;
       }
 
@@ -8380,6 +8753,7 @@
 
       function applySignedOutState() {
         state.user = null;
+        state.shareSlug = "";
         state.authBusy = false;
         state.authDebug.sessionPresent = false;
         state.authDebug.sessionUser = "";
@@ -8636,30 +9010,16 @@
         }
 
         if (data?.content) {
-          const content = data.content || {};
-          state.data = {
-            ...defaultData,
-            ...Object.fromEntries(Object.entries(content).filter(([key]) => !key.startsWith("_")))
-          };
-          if (content._layoutPrefs) {
-            state.layoutPrefs = content._layoutPrefs;
-            saveJson(LAYOUT_KEY, state.layoutPrefs);
-          }
-          if (content._workflowMode) {
-            state.workflowMode = content._workflowMode;
-            localStorage.setItem(WORKFLOW_KEY, state.workflowMode);
-          }
+          applyProfileContent(data.content || {}, data.template_id || state.template, {
+            persist: true,
+            source: "cloud-profile"
+          });
           localStorage.setItem(CLOUD_PROFILE_ACTIVE_KEY, state.user.id || "true");
-          saveJson(STORAGE_KEY, state.data);
-          syncInputs();
-          updatePreview();
-          syncWorkflowUi();
-          syncLayoutControls();
-          updateTemplate(data.template_id || state.template);
           setMessage("已從雲端載入 CV。", "success");
         } else {
           setMessage("目前沒有雲端 CV，可直接從本機草稿開始編輯。");
         }
+        await loadOwnPublicShare();
       }
 
       async function saveProfile() {
@@ -8677,11 +9037,7 @@
           email: state.user.email,
           full_name: state.user.user_metadata?.full_name || state.data.name,
           template_id: state.template,
-          content: {
-            ...state.data,
-            _layoutPrefs: state.layoutPrefs,
-            _workflowMode: state.workflowMode
-          }
+          content: buildProfileContent()
         };
 
         const { error } = await state.client.from("cv_profiles").upsert(payload, {
@@ -8697,19 +9053,89 @@
         setMessage("CV 已成功儲存到雲端，之後登入同一個 Google 帳號就能繼續編輯。", "success");
       }
 
+      function setAvatarUrl(url, source = "avatar") {
+        state.data.avatar = url || "";
+        const input = $("avatar");
+        if (input) input.value = state.data.avatar;
+        saveJson(STORAGE_KEY, state.data);
+        updatePreview(true);
+        updateActionButtons();
+        notifyCvDataUpdated(source);
+      }
+
+      function getAvatarFilePath(file) {
+        const extension = (file.name.split(".").pop() || "jpg").toLowerCase().replace(/[^a-z0-9]/g, "") || "jpg";
+        return `${state.user.id}/avatar-${Date.now()}.${extension}`;
+      }
+
+      async function uploadAvatarFile(file) {
+        if (!file) return;
+        if (!state.user || !state.client) {
+          setMessage("請先登入後再上傳頭像。", "error");
+          return;
+        }
+        if (!file.type.startsWith("image/")) {
+          setMessage("請選擇圖片檔案。", "error");
+          return;
+        }
+        if (file.size > 4 * 1024 * 1024) {
+          setMessage("頭像檔案請控制在 4MB 以內。", "error");
+          return;
+        }
+        const storage = state.client.storage?.from?.("cv-images");
+        if (!storage) {
+          setMessage("Supabase Storage 尚未啟用，請先確認 cv-images bucket。", "error");
+          return;
+        }
+        setMessage("正在上傳頭像，請稍候...");
+        const path = getAvatarFilePath(file);
+        const { error } = await storage.upload(path, file, {
+          cacheControl: "3600",
+          upsert: true
+        });
+        if (error) {
+          setMessage(`頭像上傳失敗：${error.message}`, "error");
+          return;
+        }
+        const { data } = storage.getPublicUrl(path);
+        const publicUrl = data?.publicUrl || "";
+        if (!publicUrl) {
+          setMessage("頭像已上傳，但無法取得公開網址，請確認 bucket 是否設為 Public。", "error");
+          return;
+        }
+        setAvatarUrl(publicUrl, "avatar-upload");
+        setMessage("頭像已上傳並套用。若要跨裝置保留，請按「儲存 CV」。", "success");
+      }
+
+      function openAvatarUploadDialog() {
+        $("avatarFileInput")?.click();
+      }
+
+      function clearAvatar() {
+        setAvatarUrl("", "avatar-clear");
+        setMessage("已清除頭像。", "success");
+      }
+
+      function getCvPdfOptions(filename) {
+        const pagebreak = state.pdfPageMode === "single"
+          ? { mode: ["avoid-all", "css", "legacy"] }
+          : { mode: ["css", "legacy"] };
+        return {
+          margin: 0,
+          filename,
+          image: { type: "jpeg", quality: 0.98 },
+          html2canvas: { scale: 2, useCORS: true, backgroundColor: "#ffffff" },
+          jsPDF: { unit: "mm", format: "a4", orientation: "portrait" },
+          pagebreak
+        };
+      }
+
       async function downloadCvPdf() {
         const paper = $("cvPaper");
         const filenameBase = (state.data.name || "cv").trim().replace(/\s+/g, "-").toLowerCase();
         setMessage("正在產生 PDF，請稍候...");
         try {
-          await window.html2pdf().set({
-            margin: 0,
-            filename: `${filenameBase || "cv"}.pdf`,
-            image: { type: "jpeg", quality: 0.98 },
-            html2canvas: { scale: 2, useCORS: true, backgroundColor: "#ffffff" },
-            jsPDF: { unit: "mm", format: "a4", orientation: "portrait" },
-            pagebreak: { mode: ["avoid-all", "css", "legacy"] }
-          }).from(paper).save();
+          await window.html2pdf().set(getCvPdfOptions(`${filenameBase || "cv"}.pdf`)).from(paper).save();
           setMessage("PDF 已開始下載。", "success");
         } catch (error) {
           setMessage(`PDF 下載失敗：${error.message}`, "error");
@@ -8721,14 +9147,7 @@
         const filenameBase = (state.data.name || "cv").trim().replace(/\s+/g, "-").toLowerCase();
         setMessage("正在產生 PDF 預覽，請稍候...");
         try {
-          const blob = await buildPdfBlob(paper, {
-            margin: 0,
-            filename: `${filenameBase || "cv"}.pdf`,
-            image: { type: "jpeg", quality: 0.98 },
-            html2canvas: { scale: 2, useCORS: true, backgroundColor: "#ffffff" },
-            jsPDF: { unit: "mm", format: "a4", orientation: "portrait" },
-            pagebreak: { mode: ["avoid-all", "css", "legacy"] }
-          });
+          const blob = await buildPdfBlob(paper, getCvPdfOptions(`${filenameBase || "cv"}.pdf`));
           openPdfPreview(URL.createObjectURL(blob), "CV PDF 預覽");
           setMessage("PDF 預覽已開啟。", "success");
         } catch (error) {
@@ -8785,6 +9204,18 @@
           patchCurrentLayout((layoutState) => {
             layoutState.fontFamily = event.target.value;
           });
+        });
+        $("resumeLanguageSelect").addEventListener("change", (event) => {
+          state.resumeLanguage = event.target.value;
+          localStorage.setItem(RESUME_LANGUAGE_KEY, state.resumeLanguage);
+          updatePreview(true);
+          notifyCvDataUpdated("resume-language");
+        });
+        $("pdfPageModeSelect").addEventListener("change", (event) => {
+          state.pdfPageMode = event.target.value;
+          localStorage.setItem(PDF_PAGE_MODE_KEY, state.pdfPageMode);
+          setMessage(state.pdfPageMode === "single" ? "PDF 會優先嘗試維持單頁。" : "PDF 會依內容自動分頁。", "success");
+          notifyCvDataUpdated("pdf-page-mode");
         });
         $("blockRegionSelect").addEventListener("change", (event) => {
           patchCurrentLayout((layoutState) => {
@@ -8918,6 +9349,16 @@
         $("headerLogoutBtn").addEventListener("click", signOut);
         $("logoutBtn").addEventListener("click", signOut);
         $("saveBtn").addEventListener("click", saveProfile);
+        $("publishShareBtn").addEventListener("click", publishShareProfile);
+        $("copyShareBtn").addEventListener("click", copyShareLink);
+        $("unpublishShareBtn").addEventListener("click", unpublishShareProfile);
+        $("uploadAvatarBtn").addEventListener("click", openAvatarUploadDialog);
+        $("clearAvatarBtn").addEventListener("click", clearAvatar);
+        $("avatarFileInput").addEventListener("change", async (event) => {
+          const file = event.target.files?.[0];
+          event.target.value = "";
+          await uploadAvatarFile(file);
+        });
         $("previewPdfBtn").addEventListener("click", previewCvPdf);
         $("downloadPdfBtn").addEventListener("click", downloadCvPdf);
         $("startEditingBtn").addEventListener("click", () => {
@@ -9789,7 +10230,10 @@
           renderGoogleImpactChecklist();
           renderHomeStatus();
         });
-        await refreshSession();
+        const loadedPublicShare = await loadPublicShareIfRequested();
+        if (!loadedPublicShare) {
+          await refreshSession();
+        }
       }
 
       window.closePdfPreview = closePdfPreview;

@@ -174,9 +174,17 @@ This project does **not** use the deprecated `google-signin2` / `gapi.auth2` fro
 
 ---
 
-## Roadmap / Ideas
+## Completed Roadmap
 
-- Additional template color schemes or custom theme support
-- Supabase Storage integration for avatar and attachment uploads
-- Multi-page CV or bilingual (Chinese/English) toggle
-- Public shareable CV URL or online portfolio showcase
+- **Supabase Storage avatar upload**: signed-in users can upload an avatar to the `cv-images` bucket and apply the public URL to the CV.
+- **Public CV share page**: signed-in users can publish, copy, and unpublish a public CV snapshot; visitors can open it with `?share=slug`.
+- **PDF page mode**: export supports automatic pagination or a one-page preference.
+- **Bilingual resume headings**: CV headings can follow the UI language or be fixed to Chinese / English.
+- **Automated GSAT data refresh**: GitHub Actions now refresh University TW and 104 GSAT data weekly.
+
+## Next Ideas
+
+- Attachment uploads and portfolio asset management
+- SEO / Open Graph preview images for share pages
+- Multiple CV versions and application tracking
+- More granular bilingual content mapping

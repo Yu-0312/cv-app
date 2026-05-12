@@ -1,0 +1,49 @@
+name: Update GSAT Data
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 20 * * 0"
+
+permissions:
+  contents: write
+
+jobs:
+  refresh-gsat-data:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Refresh University TW snapshot
+        run: |
+          npm run university-tw:scrape
+          npm run university-tw:build
+          npm run university-tw:sql
+
+      - name: Refresh 104 GSAT data
+        run: |
+          npm run gsat:104:standard
+          npm run gsat:104:major-list
+          npm run gsat:build
+
+      - name: Commit updated data
+        run: |
+          if git diff --quiet -- data; then
+            echo "No GSAT data changes."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data
+          git commit -m "Update GSAT data"
+          git push

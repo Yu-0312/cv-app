@@ -57,6 +57,56 @@ for delete
 using (auth.uid() = user_id);
 
 -- ============================================================
+-- PUBLIC SHARE PAGES
+-- One public snapshot per user. Owners can publish/update/delete
+-- their own snapshot; anyone can read by slug.
+-- ============================================================
+
+create table if not exists public.cv_public_profiles (
+  user_id uuid primary key references auth.users(id) on delete cascade,
+  slug text not null unique,
+  title text,
+  template_id text not null default 'n-tech',
+  content jsonb not null default '{}'::jsonb,
+  published_at timestamptz not null default now(),
+  created_at timestamptz not null default now(),
+  updated_at timestamptz not null default now()
+);
+
+drop trigger if exists cv_public_profiles_set_updated_at on public.cv_public_profiles;
+create trigger cv_public_profiles_set_updated_at
+before update on public.cv_public_profiles
+for each row
+execute function public.handle_cv_profiles_updated_at();
+
+alter table public.cv_public_profiles enable row level security;
+
+drop policy if exists "Anyone can view public CV shares" on public.cv_public_profiles;
+create policy "Anyone can view public CV shares"
+on public.cv_public_profiles
+for select
+using (true);
+
+drop policy if exists "Users can insert own public CV share" on public.cv_public_profiles;
+create policy "Users can insert own public CV share"
+on public.cv_public_profiles
+for insert
+with check (auth.uid() = user_id);
+
+drop policy if exists "Users can update own public CV share" on public.cv_public_profiles;
+create policy "Users can update own public CV share"
+on public.cv_public_profiles
+for update
+using (auth.uid() = user_id)
+with check (auth.uid() = user_id);
+
+drop policy if exists "Users can delete own public CV share" on public.cv_public_profiles;
+create policy "Users can delete own public CV share"
+on public.cv_public_profiles
+for delete
+using (auth.uid() = user_id);
+
+-- ============================================================
 -- STORAGE: cv-images bucket
 -- Run once in Supabase SQL Editor after creating the bucket
 -- in Storage > New Bucket (name: cv-images, Public: ON)
