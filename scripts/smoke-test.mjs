@@ -37,6 +37,8 @@ const SUPABASE_STUB_SOURCE = `
   (() => {
     const authListeners = [];
     const profiles = new Map();
+    let signOutGate = null;
+    let releaseSignOutGate = null;
 
     function resolve(data, error = null) {
       return Promise.resolve({ data, error });
@@ -77,6 +79,17 @@ const SUPABASE_STUB_SOURCE = `
 
     window.__supabaseTest = {
       authListeners,
+      delayNextSignOut() {
+        signOutGate = new Promise((resolve) => {
+          releaseSignOutGate = resolve;
+        });
+      },
+      async finishSignOut() {
+        const release = releaseSignOutGate;
+        releaseSignOutGate = null;
+        if (release) release();
+        await Promise.resolve();
+      },
       async emit(event, user = null) {
         const session = user ? { user } : null;
         for (const listener of [...authListeners]) {
@@ -112,6 +125,14 @@ const SUPABASE_STUB_SOURCE = `
               return { error: null };
             },
             async signOut() {
+              if (signOutGate) {
+                const gate = signOutGate;
+                signOutGate = null;
+                await gate;
+              }
+              for (const listener of [...authListeners]) {
+                await listener("SIGNED_OUT", null);
+              }
               return { error: null };
             }
           },
@@ -309,6 +330,42 @@ async function main() {
       const logoutVisible = await page.$eval("#headerLogoutBtn", (node) => !node.hidden);
       assert.match(signedInAuthText, /Smoke Tester/);
       assert.equal(logoutVisible, true);
+
+      await page.evaluate(() => window.__supabaseTest.delayNextSignOut());
+      await page.click("#headerLogoutBtn");
+      await page.waitForFunction(() => {
+        const authNode = document.getElementById("authStatus");
+        const headerNode = document.getElementById("headerAuthStatus");
+        const button = document.getElementById("headerLogoutBtn");
+        return /登出中/.test(authNode?.textContent || "")
+          && /登出中/.test(headerNode?.textContent || "")
+          && /登出中/.test(button?.textContent || "")
+          && button?.disabled === true
+          && button?.hidden === false;
+      });
+      await page.evaluate(async () => {
+        await window.__supabaseTest.finishSignOut();
+      });
+      await page.waitForFunction(() => {
+        const node = document.getElementById("message");
+        return node && /已登出/.test(node.textContent || "");
+      });
+      await page.waitForFunction(() => {
+        const node = document.getElementById("authStatus");
+        return node && /尚未登入/.test(node.textContent || "");
+      });
+
+      await page.evaluate(async () => {
+        await window.__supabaseTest.emit("SIGNED_IN", {
+          id: "smoke-user",
+          email: "smoke@example.com",
+          user_metadata: { full_name: "Smoke Tester" }
+        });
+      });
+      await page.waitForFunction(() => {
+        const node = document.getElementById("authStatus");
+        return node && /Smoke Tester/.test(node.textContent || "");
+      });
 
       await page.evaluate(async () => {
         await window.__supabaseTest.emit("SIGNED_OUT");

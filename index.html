@@ -6408,7 +6408,9 @@
         "請確認 config.js 或設定面板中的 Supabase URL 與 anon key 是否正確。": "Check whether the Supabase URL and anon key in config.js or the settings panel are correct.",
         "Google authorize URL 已建立": "Google authorize URL created",
         "Google authorize URL 建立失敗": "Failed to create Google authorize URL",
-        "目前無法產生 Google authorize URL，通常表示 Supabase URL 格式有誤。": "The Google authorize URL cannot be generated, usually because the Supabase URL format is invalid."
+        "目前無法產生 Google authorize URL，通常表示 Supabase URL 格式有誤。": "The Google authorize URL cannot be generated, usually because the Supabase URL format is invalid.",
+        "登出中，正在切回本機草稿模式。": "Signing out and returning to local draft mode.",
+        "已登出，目前回到本機草稿模式。": "Signed out. You are back in local draft mode."
       });
 
       const INLINE_TERMS = Object.freeze([
@@ -8136,8 +8138,8 @@
         });
         $("logoutBtn").disabled = !state.user || state.authBusy;
         $("headerLogoutBtn").disabled = !state.user || state.authBusy;
-        $("saveBtn").disabled = !readyForCloud || !state.user;
-        $("loadProfileBtn").disabled = !readyForCloud;
+        $("saveBtn").disabled = !readyForCloud || !state.user || state.authBusy;
+        $("loadProfileBtn").disabled = !readyForCloud || state.authBusy;
         $("applyConfigBtn").disabled = false;
         $("installBtn").disabled = !state.installPrompt;
       }
@@ -8404,7 +8406,15 @@
       function updateAuthUi() {
         const loginTriggers = document.querySelectorAll("[data-login-trigger='google']");
         const headerLogoutBtn = $("headerLogoutBtn");
-        if (state.user) {
+        if (state.authBusy) {
+          $("authStatus").innerHTML = "<strong>登出中...</strong> · 正在切回本機草稿";
+          $("headerAuthStatus").classList.remove("user-pill");
+          $("headerAuthStatus").innerHTML = "<strong>登出中...</strong> · 正在切回本機草稿";
+          loginTriggers.forEach((button) => {
+            button.style.display = "none";
+          });
+          headerLogoutBtn.hidden = false;
+        } else if (state.user) {
           const display = state.user.user_metadata?.full_name || state.user.email || "已登入";
           const avatarUrl = state.user.user_metadata?.avatar_url || state.user.user_metadata?.picture || "";
           const initials = display.trim().slice(0, 2).toUpperCase();
@@ -8477,6 +8487,7 @@
 
       async function signOut() {
         if (state.authBusy) return;
+        const previousUser = state.user;
         if (!makeClient()) {
           applySignedOutState();
           updateAuthUi();
@@ -8486,15 +8497,15 @@
           return;
         }
         state.authBusy = true;
-        state.user = null;
         updateAuthUi();
         syncLogoutFeedback();
         updateActionButtons();
-        setMessage("正在登出，稍候會切回本機草稿模式。");
+        setMessage("登出中，正在切回本機草稿模式。");
         clearAuthRedirectParams();
         const { error } = await state.client.auth.signOut({ scope: "local" });
         if (error) {
           state.authBusy = false;
+          if (!state.user && previousUser) state.user = previousUser;
           await refreshSession();
           syncLogoutFeedback();
           updateActionButtons();
@@ -8503,9 +8514,11 @@
         }
         clearSupabaseSessionStorage();
         applySignedOutState();
-        await refreshSession();
+        updateAuthUi();
+        renderAuthDebugPanel();
         syncLogoutFeedback();
         updateActionButtons();
+        setMessage("已登出，目前回到本機草稿模式。", "success");
       }
 
       async function loadProfile() {
