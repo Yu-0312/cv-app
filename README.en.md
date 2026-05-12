@@ -1,6 +1,6 @@
 # CV Studio
 
-> A PWA-based CV editor — build in seconds, preview in real time, save to the cloud
+> A PWA workspace for resumes, learning portfolios, Career Advisor analysis, and GSAT placement planning
 
 [繁體中文版](README.md)
 
@@ -18,6 +18,8 @@
 - **Public Share SEO / OG** — Share pages update SEO metadata and generate Open Graph preview images
 - **PDF Export** — Export your CV with full template styling preserved
 - **Portfolio / Learning Experience** — A dedicated tab for chapter-based portfolios, asset uploads, attachments, and PDF export
+- **Career Advisor** — Reads the CV editor summary, analyzes job fit, recommends roles, prepares STAR interview stories, and drafts cover letters; PDF / CV file upload is not supported
+- **GSAT Placement Analysis** — Supports 115 academic year department data, University TW snapshots, and 104 placement data import flows
 - **PWA Install** — Install as a desktop or mobile app with offline cache support
 
 ---
@@ -108,6 +110,19 @@ Switch to the **Portfolio** tab at the top to build a chapter-based portfolio an
 ### Public Share Pages
 
 Signed-in users can publish public CV share pages. Publishing updates SEO / Open Graph / Twitter Card metadata and attempts to upload a generated 1200×630 preview image to Storage. If Storage is unavailable, the page falls back to `og-image.svg`.
+
+### Career Advisor
+
+The Career tab reads the summary, skills, experience, education, and projects already entered in the CV editor, then combines them with a pasted job description to produce:
+
+- Job-fit analysis
+- Recommended roles
+- STAR interview stories
+- Cover letter drafts
+
+This feature uses `career-ops`-style evaluation ideas such as A-F scoring, ATS keywords, and STAR stories, but it is not a full port of GitHub's `santifer/career-ops` CLI, batch job pipeline, tracker, or custom ATS PDF generation flow.
+
+API keys stay in the current browser tab's `sessionStorage` and are not written to Supabase.
 
 ---
 
