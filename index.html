@@ -14530,11 +14530,13 @@
         source: "local",
         latestSnapshotId: "",
         loadPromise: null,
+        loadRequestId: 0,
         loadedClientSignature: "",
         loadedAuthSignature: "",
         supabaseAvailable: false,
       };
       const GSAT_SUPABASE_PAGE_SIZE = 1000;
+      const GSAT_SYNC_TIMEOUT_MS = 4500;
 
       function normalizeUniversityName(name) {
         return String(name || "").replace(/\s+/g, " ").trim();
@@ -14703,7 +14705,38 @@
         return { data: rows, error: null };
       }
 
-      async function tryLoadUniversityTwFromSupabase() {
+      function applyLocalGsatDataSource() {
+        UNIVERSITY_TW_UNIVERSITIES = window.CV_UNIVERSITY_TW_DATA?.universities || {};
+        refreshUniversityIndexes();
+        GSAT_DATA_STATE.source = "local";
+        GSAT_DATA_STATE.latestSnapshotId = "";
+        GSAT_DATA_STATE.supabaseAvailable = false;
+      }
+
+      function withGsatTimeout(promise, timeoutMs) {
+        if (!timeoutMs) return promise;
+        return Promise.race([
+          promise,
+          new Promise((resolve) => {
+            window.setTimeout(() => resolve("__timeout__"), timeoutMs);
+          })
+        ]);
+      }
+
+      function finishGsatDataSourceSync(loadedFromSupabase) {
+        if (loadedFromSupabase === "__timeout__") {
+          GSAT_DATA_STATE.loadRequestId += 1;
+        }
+        if (loadedFromSupabase !== true) {
+          applyLocalGsatDataSource();
+        }
+        populateTierSelect();
+        populateUniversitySelect();
+        populateDepartmentSelect();
+        return GSAT_DATA_STATE.source;
+      }
+
+      async function tryLoadUniversityTwFromSupabase(requestId = GSAT_DATA_STATE.loadRequestId) {
         const state = window.cvStudioState;
         const client = state?.client;
         const clientSignature = state?.clientConfigSignature || "";
@@ -14727,6 +14760,7 @@
           .order("generated_at", { ascending: false })
           .limit(1);
         if (snapshotError || !snapshotRows?.length) return false;
+        if (requestId !== GSAT_DATA_STATE.loadRequestId) return false;
 
         const snapshotId = snapshotRows[0].snapshot_id;
         const queries = await Promise.all([
@@ -14758,6 +14792,7 @@
         const [universitiesResult, uacResult, caacResult, starResult, genderResult, registrationResult] = queries;
         const hasError = queries.some((result) => result.error);
         if (hasError || !universitiesResult.data?.length) return false;
+        if (requestId !== GSAT_DATA_STATE.loadRequestId) return false;
 
         UNIVERSITY_TW_UNIVERSITIES = buildUniversityTwSupabasePayload({
           universities: universitiesResult.data,
@@ -14776,25 +14811,37 @@
         return true;
       }
 
-      async function syncGsatDataSource() {
-        if (GSAT_DATA_STATE.loadPromise) return GSAT_DATA_STATE.loadPromise;
-        GSAT_DATA_STATE.loadPromise = (async () => {
-          const loadedFromSupabase = await tryLoadUniversityTwFromSupabase().catch(() => false);
-          if (!loadedFromSupabase) {
-            UNIVERSITY_TW_UNIVERSITIES = window.CV_UNIVERSITY_TW_DATA?.universities || {};
-            refreshUniversityIndexes();
-            GSAT_DATA_STATE.source = "local";
-            GSAT_DATA_STATE.latestSnapshotId = "";
-            GSAT_DATA_STATE.supabaseAvailable = false;
+      async function syncGsatDataSource(options = {}) {
+        const timeoutMs = Number(options.timeoutMs || 0);
+        if (GSAT_DATA_STATE.loadPromise) {
+          if (!timeoutMs) return GSAT_DATA_STATE.loadPromise;
+          const activePromise = GSAT_DATA_STATE.loadPromise;
+          const activeResult = await withGsatTimeout(activePromise, timeoutMs).catch(() => false);
+          if (activeResult === "__timeout__") {
+            GSAT_DATA_STATE.loadRequestId += 1;
+            if (GSAT_DATA_STATE.loadPromise === activePromise) {
+              GSAT_DATA_STATE.loadPromise = null;
+            }
+            return finishGsatDataSourceSync(false);
           }
-          populateTierSelect();
-          populateUniversitySelect();
-          populateDepartmentSelect();
-          return GSAT_DATA_STATE.source;
+          if (!activeResult) return finishGsatDataSourceSync(false);
+          return activeResult;
+        }
+        const requestId = ++GSAT_DATA_STATE.loadRequestId;
+        let activePromise;
+        activePromise = (async () => {
+          const loadedFromSupabase = await withGsatTimeout(
+            tryLoadUniversityTwFromSupabase(requestId),
+            timeoutMs
+          ).catch(() => false);
+          return finishGsatDataSourceSync(loadedFromSupabase);
         })().finally(() => {
-          GSAT_DATA_STATE.loadPromise = null;
+          if (GSAT_DATA_STATE.loadPromise === activePromise) {
+            GSAT_DATA_STATE.loadPromise = null;
+          }
         });
-        return GSAT_DATA_STATE.loadPromise;
+        GSAT_DATA_STATE.loadPromise = activePromise;
+        return activePromise;
       }
 
       function isGsatPageActive() {
@@ -14806,7 +14853,7 @@
         if (!force && !isGsatPageActive()) {
           return Promise.resolve(GSAT_DATA_STATE.source);
         }
-        return syncGsatDataSource();
+        return syncGsatDataSource(options);
       }
 
       function getTierMeta(tierId) {
@@ -15909,13 +15956,13 @@
 
       window.addEventListener("cv:supabase-client-changed", () => {
         if (isGsatPageActive()) {
-          ensureGsatDataSourceSync({ force: true });
+          ensureGsatDataSourceSync({ force: true, timeoutMs: GSAT_SYNC_TIMEOUT_MS });
         }
       });
 
       window.addEventListener("cv:supabase-auth-changed", () => {
         if (isGsatPageActive()) {
-          ensureGsatDataSourceSync({ force: true });
+          ensureGsatDataSourceSync({ force: true, timeoutMs: GSAT_SYNC_TIMEOUT_MS });
         }
       });
 
@@ -15987,6 +16034,36 @@
 
       function bmColor(lv) {
         return ({頂標:"#7c3aed",前標:"#2563eb",均標:"#059669",後標:"#d97706",底標:"#dc2626","底標以下":"#9f1239"})[lv] || "#6b7280";
+      }
+
+      function setGsatLoadingState(message = "正在整理落點資料...") {
+        const area = $g("gsatResultsArea");
+        if (!area) return;
+        area.innerHTML = `
+          <div class="gsat-results-empty" aria-live="polite">
+            <div style="font-size:15px;font-weight:700;color:var(--ink);margin-bottom:8px;">分析中...</div>
+            <div style="font-size:14px;color:var(--muted);line-height:1.8;">${escapeGsatHtml(message)}</div>
+          </div>`;
+      }
+
+      function showGsatAnalysisError(message = "分析時發生問題，已先切回本地快照。請再按一次開始落點分析。") {
+        const area = $g("gsatResultsArea");
+        if (!area) return;
+        area.innerHTML = `
+          <div class="gsat-results-empty" aria-live="polite">
+            <div style="font-size:15px;font-weight:700;color:var(--ink);margin-bottom:8px;">暫時無法完成分析</div>
+            <div style="font-size:14px;color:var(--muted);line-height:1.8;">${escapeGsatHtml(message)}</div>
+          </div>`;
+      }
+
+      function revealGsatResults() {
+        const shell = document.querySelector(".gsat-results-shell");
+        if (shell) {
+          shell.scrollTop = 0;
+          if (window.matchMedia("(max-width: 900px)").matches) {
+            shell.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+        }
       }
 
       function meetsThreshold(scores, subj, lv) {
@@ -16151,8 +16228,26 @@
       const _gsatBtn = $g("gsatAnalyzeBtn");
       if (_gsatBtn) {
         _gsatBtn.addEventListener("click", async () => {
-          await ensureGsatDataSourceSync({ force: true });
-          analyze();
+          const originalText = _gsatBtn.textContent || "開始落點分析";
+          _gsatBtn.disabled = true;
+          _gsatBtn.textContent = "分析中...";
+          setGsatLoadingState("正在同步校系資料；若雲端較慢，會自動改用本地快照。");
+          try {
+            await ensureGsatDataSourceSync({ force: true, timeoutMs: GSAT_SYNC_TIMEOUT_MS });
+          } catch (error) {
+            console.warn("[GSAT] data sync fallback:", error);
+            finishGsatDataSourceSync(false);
+          }
+          try {
+            analyze();
+          } catch (error) {
+            console.warn("[GSAT] analysis failed:", error);
+            showGsatAnalysisError();
+          } finally {
+            revealGsatResults();
+            _gsatBtn.disabled = false;
+            _gsatBtn.textContent = originalText;
+          }
         });
       }
     })();

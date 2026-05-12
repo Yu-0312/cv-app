@@ -44,6 +44,7 @@ const SUPABASE_STUB_SOURCE = `
     let releaseSignOutGate = null;
     let currentSession = readPersistedSession();
     let lastSignOutOptions = null;
+    let hangNextGsatSnapshotQuery = false;
 
     function resolve(data, error = null) {
       return Promise.resolve({ data, error });
@@ -126,7 +127,13 @@ const SUPABASE_STUB_SOURCE = `
         },
         order() { return builder; },
         limit() {
-          if (tableName === "university_tw_snapshots") return resolve([]);
+          if (tableName === "university_tw_snapshots") {
+            if (hangNextGsatSnapshotQuery) {
+              hangNextGsatSnapshotQuery = false;
+              return new Promise(() => {});
+            }
+            return resolve([]);
+          }
           return resolve([]);
         },
         range() { return resolve([]); },
@@ -212,6 +219,9 @@ const SUPABASE_STUB_SOURCE = `
         signOutGate = new Promise((resolve) => {
           releaseSignOutGate = resolve;
         });
+      },
+      hangNextGsatSnapshotQuery() {
+        hangNextGsatSnapshotQuery = true;
       },
       async finishSignOut() {
         const release = releaseSignOutGate;
@@ -916,6 +926,32 @@ async function main() {
         const node = document.getElementById("careerResultsArea");
         return node && /請先填入 API Key/.test(node.textContent || "");
       });
+    });
+
+    await withStep("GSAT 雲端同步逾時 fallback", async () => {
+      await page.click("[data-tab-shortcut='gsat']");
+      await page.waitForSelector("#page-gsat.active");
+      await page.evaluate(() => window.__supabaseTest.hangNextGsatSnapshotQuery());
+
+      await page.$eval("#gsatScore國文", (node) => { node.value = "13"; node.dispatchEvent(new Event("input", { bubbles: true })); });
+      await page.$eval("#gsatScore英文", (node) => { node.value = "13"; node.dispatchEvent(new Event("input", { bubbles: true })); });
+      await page.$eval("#gsatScore數學A", (node) => { node.value = "15"; node.dispatchEvent(new Event("input", { bubbles: true })); });
+      await page.$eval("#gsatScore社會", (node) => { node.value = "10"; node.dispatchEvent(new Event("input", { bubbles: true })); });
+      await page.$eval("#gsatScore自然", (node) => { node.value = "13"; node.dispatchEvent(new Event("input", { bubbles: true })); });
+
+      await page.$eval("#gsatAnalyzeBtn", (node) => node.click());
+      await page.waitForFunction(() => /分析中/.test(document.getElementById("gsatResultsArea")?.textContent || ""), { timeout: 1000 });
+      await page.waitForFunction(() => {
+        const text = document.getElementById("gsatResultsArea")?.textContent || "";
+        return /五科總分/.test(text) && /本地快照/.test(text);
+      }, { timeout: 10000 });
+
+      const buttonState = await page.$eval("#gsatAnalyzeBtn", (node) => ({
+        disabled: node.disabled,
+        text: node.textContent || ""
+      }));
+      assert.equal(buttonState.disabled, false);
+      assert.match(buttonState.text, /開始落點分析/);
     });
 
     await withStep("GSAT 正向分析流程", async () => {
