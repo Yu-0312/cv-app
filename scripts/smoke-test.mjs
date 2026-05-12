@@ -876,6 +876,81 @@ async function main() {
       await page.waitForFunction(() => /測試公司/.test(document.getElementById("applicationList")?.textContent || ""));
       log("[smoke] 投遞紀錄已新增");
 
+      await page.evaluate(() => {
+        window.confirm = () => true;
+        const payload = {
+          version: "cv-studio-v1",
+          template: "\"><img src=x onerror=alert(1)>",
+          layoutPrefs: "bad-layout",
+          data: {
+            ...window.cvStudioState.data,
+            injectedUnknownField: "<script>window.__pwnedData=1</script>",
+            avatar: "javascript:window.__pwnedAvatar=1"
+          },
+          cvVersions: [{
+            id: "1);window.__pwnedSnapshot=1;//",
+            name: "Injected Snapshot",
+            template: "\"><img src=x onerror=alert(1)>",
+            layoutPrefs: "bad-layout",
+            data: window.cvStudioState.data
+          }],
+          applicationRecords: [{
+            id: "2);window.__pwnedApplication=1;//",
+            company: "Injected Company",
+            role: "Injected Role",
+            status: "已投遞",
+            link: "javascript:window.__pwnedApplication=2",
+            note: "Imported record should render safely."
+          }]
+        };
+        const input = document.getElementById("importJsonInput");
+        const transfer = new DataTransfer();
+        transfer.items.add(new File([JSON.stringify(payload)], "malicious-cv.json", { type: "application/json" }));
+        input.files = transfer.files;
+        input.dispatchEvent(new Event("change", { bubbles: true }));
+      });
+      await page.waitForFunction(() => /Injected Snapshot/.test(document.getElementById("snapshotList")?.textContent || "")).catch(async (error) => {
+        const importedDebug = await page.evaluate(() => ({
+          auth: document.getElementById("authStatus")?.textContent || "",
+          snapshotText: document.getElementById("snapshotList")?.textContent || "",
+          applicationText: document.getElementById("applicationList")?.textContent || "",
+          snapshots: window.localStorage.getItem("cv-studio-snapshots-v1"),
+          applications: window.localStorage.getItem("cv-studio-applications-v1"),
+          signedOut: window.localStorage.getItem("cv-studio-auth-signed-out-v1"),
+          active: window.localStorage.getItem("cv-studio-cloud-profile-active-v1"),
+          storageKey: window.__supabaseTest?.storageKey || "",
+          authStorage: window.localStorage.getItem(window.__supabaseTest?.storageKey || "")
+        }));
+        throw new Error(`${error.message} importedDebug=${JSON.stringify(importedDebug)}`);
+      });
+      const importedListSafety = await page.evaluate(() => ({
+        snapshotInlineHandlers: document.querySelectorAll("#snapshotList [onclick]").length,
+        applicationInlineHandlers: document.querySelectorAll("#applicationList [onclick]").length,
+        javascriptLinks: [...document.querySelectorAll("#applicationList a[href]")].filter((node) => /^javascript:/i.test(node.getAttribute("href") || "")).length,
+        snapshotButtonId: document.querySelector("[data-snapshot-id]")?.getAttribute("data-snapshot-id") || "",
+        applicationButtonId: document.querySelector("[data-application-delete]")?.getAttribute("data-application-delete") || "",
+        hasUnknownField: Object.prototype.hasOwnProperty.call(window.cvStudioState.data, "injectedUnknownField"),
+        avatar: window.cvStudioState.data.avatar || "",
+        template: window.cvStudioState.template || "",
+        pwnedSnapshot: window.__pwnedSnapshot || 0,
+        pwnedApplication: window.__pwnedApplication || 0,
+        pwnedData: window.__pwnedData || 0,
+        pwnedAvatar: window.__pwnedAvatar || 0
+      }));
+      assert.equal(importedListSafety.snapshotInlineHandlers, 0);
+      assert.equal(importedListSafety.applicationInlineHandlers, 0);
+      assert.equal(importedListSafety.javascriptLinks, 0);
+      assert.match(importedListSafety.snapshotButtonId, /^[\w.-]+$/);
+      assert.match(importedListSafety.applicationButtonId, /^[\w.-]+$/);
+      assert.equal(importedListSafety.hasUnknownField, false);
+      assert.equal(importedListSafety.avatar, "");
+      assert.match(importedListSafety.template, /^[\w.-]+$/);
+      assert.equal(importedListSafety.pwnedSnapshot, 0);
+      assert.equal(importedListSafety.pwnedApplication, 0);
+      assert.equal(importedListSafety.pwnedData, 0);
+      assert.equal(importedListSafety.pwnedAvatar, 0);
+      log("[smoke] 匯入紀錄已安全渲染");
+
       await page.select("#bilingualFieldSelect", "summary");
       await page.$eval("#bilingualZhInput", (node) => { node.value = "中文摘要：具備前端開發與產品整理能力。"; });
       await page.$eval("#bilingualEnInput", (node) => { node.value = "English summary with frontend and product delivery experience."; });

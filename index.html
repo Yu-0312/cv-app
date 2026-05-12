@@ -7488,6 +7488,7 @@
       const PORTFOLIO_STORAGE_KEY = "pf-studio-local-v4";
       const SNAPSHOTS_KEY = "cv-studio-snapshots-v1";
       const APPLICATIONS_KEY = "cv-studio-applications-v1";
+      const CV_DATA_FIELDS = ["name", "role", "email", "phone", "location", "website", "avatar", "summary", "skills", "highlights", "experience", "education", "projects", "awards"];
       const BILINGUAL_FIELDS = ["name", "role", "location", "website", "summary", "skills", "highlights", "experience", "education", "projects", "awards"];
       const defaultData = {
         name: "",
@@ -8103,11 +8104,11 @@
       const state = {
         data: normalizeCvData(shouldStartWithSignedOutPlaceholders(initialConfig) ? defaultData : loadJson(STORAGE_KEY, defaultData)),
         config: initialConfig,
-        template: localStorage.getItem(TEMPLATE_KEY) || "n-tech",
-        workflowMode: localStorage.getItem(WORKFLOW_KEY) || "template-first",
-        layoutPrefs: loadJson(LAYOUT_KEY, {}),
-        resumeLanguage: localStorage.getItem(RESUME_LANGUAGE_KEY) || "auto",
-        pdfPageMode: localStorage.getItem(PDF_PAGE_MODE_KEY) || "auto",
+        template: normalizeTemplateId(localStorage.getItem(TEMPLATE_KEY), initialConfig.defaultTemplate || "n-tech"),
+        workflowMode: normalizeWorkflowMode(localStorage.getItem(WORKFLOW_KEY)),
+        layoutPrefs: normalizeLayoutPrefs(loadJson(LAYOUT_KEY, {})),
+        resumeLanguage: normalizeResumeLanguage(localStorage.getItem(RESUME_LANGUAGE_KEY)),
+        pdfPageMode: normalizePdfPageMode(localStorage.getItem(PDF_PAGE_MODE_KEY)),
         selectedBlock: "profile",
         shareSlug: "",
         isPublicShare: false,
@@ -8129,7 +8130,7 @@
 
       let authSubscription = null;
 
-      const fields = ["name", "role", "email", "phone", "location", "website", "avatar", "summary", "skills", "highlights", "experience", "education", "projects", "awards"];
+      const fields = CV_DATA_FIELDS;
       const HOME_GSAT_SCORE_FIELDS = ["國文", "英文", "數學A", "數學B", "社會", "自然"];
       const HOME_PORTFOLIO_PLACEHOLDER_VALUES = new Set([
         "請輸入文件標題",
@@ -8183,23 +8184,86 @@
         }
       }
 
+      function isPlainObject(value) {
+        return Object.prototype.toString.call(value) === "[object Object]";
+      }
+
+      function normalizeStringValue(value) {
+        if (value === null || value === undefined) return "";
+        if (Array.isArray(value)) return value.map((item) => normalizeStringValue(item)).filter(Boolean).join("\n");
+        if (typeof value === "object") return "";
+        return String(value);
+      }
+
+      function normalizeExternalUrl(value) {
+        const text = normalizeStringValue(value).trim();
+        if (!text) return "";
+        const hasExplicitScheme = /^[a-z][a-z0-9+.-]*:/i.test(text);
+        const looksLikeDomain = /^[\w.-]+\.[a-z]{2,}(?:[/:?#]|$)/i.test(text);
+        if (!hasExplicitScheme && !looksLikeDomain) return "";
+        const withScheme = hasExplicitScheme
+          ? text
+          : looksLikeDomain
+            ? `https://${text}`
+            : text;
+        try {
+          const parsed = new URL(withScheme, window.location.origin);
+          return ["http:", "https:", "mailto:", "tel:"].includes(parsed.protocol) ? parsed.href : "";
+        } catch {
+          return "";
+        }
+      }
+
+      function normalizeImageUrl(value) {
+        const text = normalizeStringValue(value).trim();
+        if (!text) return "";
+        if (/^data:image\/(?:png|jpe?g|webp|gif);base64,/i.test(text)) return text;
+        return normalizeExternalUrl(text);
+      }
+
+      function normalizeWorkflowMode(value) {
+        return ["template-first", "content-first"].includes(value) ? value : "template-first";
+      }
+
+      function normalizeResumeLanguage(value) {
+        return ["auto", "zh", "en"].includes(value) ? value : "auto";
+      }
+
+      function normalizePdfPageMode(value) {
+        return ["auto", "single"].includes(value) ? value : "auto";
+      }
+
+      function normalizeLayoutPrefs(value) {
+        return isPlainObject(value) ? value : {};
+      }
+
+      function normalizeTemplateId(value, fallback = "n-tech") {
+        const id = normalizeStringValue(value).trim();
+        if (templateDefinitions[id]) return id;
+        return templateDefinitions[fallback] ? fallback : "n-tech";
+      }
+
       function normalizeBilingualContent(value) {
-        const source = value && typeof value === "object" ? value : {};
+        const source = isPlainObject(value) ? value : {};
         return BILINGUAL_FIELDS.reduce((next, field) => {
-          const item = source[field] && typeof source[field] === "object" ? source[field] : {};
+          const item = isPlainObject(source[field]) ? source[field] : {};
           next[field] = {
-            zh: String(item.zh || ""),
-            en: String(item.en || "")
+            zh: normalizeStringValue(item.zh),
+            en: normalizeStringValue(item.en)
           };
           return next;
         }, {});
       }
 
       function normalizeCvData(data) {
-        const next = { ...defaultData, ...(data || {}) };
-        delete next.importedPdfText;
-        delete next.importedPdfFileName;
-        next.bilingualContent = normalizeBilingualContent(next.bilingualContent);
+        const source = isPlainObject(data) ? data : {};
+        const next = { ...defaultData };
+        CV_DATA_FIELDS.forEach((field) => {
+          next[field] = normalizeStringValue(source[field]);
+        });
+        next.website = normalizeExternalUrl(next.website) || next.website;
+        next.avatar = normalizeImageUrl(next.avatar);
+        next.bilingualContent = normalizeBilingualContent(source.bilingualContent);
         Object.entries(CV_FIELD_PLACEHOLDER_VALUES).forEach(([field, values]) => {
           const current = String(next[field] || "").trim();
           if (values.includes(current)) {
@@ -8318,37 +8382,32 @@
 
       function applyProfileContent(content = {}, templateId = state.template, options = {}) {
         const { persist = true, source = "profile" } = options;
+        const profileContent = isPlainObject(content) ? content : {};
         const publicKeys = Object.fromEntries(
-          Object.entries(content || {}).filter(([key]) => !key.startsWith("_"))
+          Object.entries(profileContent).filter(([key]) => !key.startsWith("_"))
         );
         state.data = normalizeCvData({
           ...defaultData,
           ...publicKeys
         });
-        state.layoutPrefs = content._layoutPrefs && typeof content._layoutPrefs === "object"
-          ? content._layoutPrefs
-          : {};
-        state.workflowMode = content._workflowMode || "template-first";
-        state.resumeLanguage = ["auto", "zh", "en"].includes(content._resumeLanguage)
-          ? content._resumeLanguage
-          : "auto";
-        state.pdfPageMode = ["auto", "single"].includes(content._pdfPageMode)
-          ? content._pdfPageMode
-          : "auto";
-        state.template = templateId || state.template || state.config.defaultTemplate || "n-tech";
+        state.layoutPrefs = normalizeLayoutPrefs(profileContent._layoutPrefs);
+        state.workflowMode = normalizeWorkflowMode(profileContent._workflowMode);
+        state.resumeLanguage = normalizeResumeLanguage(profileContent._resumeLanguage);
+        state.pdfPageMode = normalizePdfPageMode(profileContent._pdfPageMode);
+        state.template = normalizeTemplateId(templateId, state.config.defaultTemplate || state.template || "n-tech");
 
         if (persist) {
           saveJson(STORAGE_KEY, state.data);
           saveJson(LAYOUT_KEY, state.layoutPrefs);
-          if (content._portfolioData && typeof content._portfolioData === "object") {
-            saveJson(PORTFOLIO_STORAGE_KEY, content._portfolioData);
+          if (profileContent._portfolioData && typeof profileContent._portfolioData === "object") {
+            saveJson(PORTFOLIO_STORAGE_KEY, profileContent._portfolioData);
             window.dispatchEvent(new CustomEvent("portfolio:cloud-loaded", { detail: { source } }));
           }
-          if (Array.isArray(content._cvVersions)) {
-            saveJson(SNAPSHOTS_KEY, content._cvVersions);
+          if (Array.isArray(profileContent._cvVersions)) {
+            saveJson(SNAPSHOTS_KEY, normalizeSnapshots(profileContent._cvVersions));
           }
-          if (Array.isArray(content._applicationRecords)) {
-            saveJson(APPLICATIONS_KEY, content._applicationRecords);
+          if (Array.isArray(profileContent._applicationRecords)) {
+            saveJson(APPLICATIONS_KEY, normalizeApplications(profileContent._applicationRecords));
           }
           localStorage.setItem(WORKFLOW_KEY, state.workflowMode);
           localStorage.setItem(RESUME_LANGUAGE_KEY, state.resumeLanguage);
@@ -10017,7 +10076,7 @@
           headerLogoutBtn.hidden = false;
         } else if (state.user) {
           const display = state.user.user_metadata?.full_name || state.user.email || "已登入";
-          const avatarUrl = state.user.user_metadata?.avatar_url || state.user.user_metadata?.picture || "";
+          const avatarUrl = normalizeImageUrl(state.user.user_metadata?.avatar_url || state.user.user_metadata?.picture || "");
           const initials = display.trim().slice(0, 2).toUpperCase();
           const avatarHtml = avatarUrl
             ? `<img src="${escapeHtml(avatarUrl)}" alt="${escapeHtml(display)}">`
@@ -10958,7 +11017,7 @@
         if (!undoStack.length) return;
         redoStack.push(JSON.stringify(state.data));
         const prev = JSON.parse(undoStack.pop());
-        state.data = { ...state.data, ...prev };
+        state.data = normalizeCvData({ ...state.data, ...prev });
         saveJson(STORAGE_KEY, state.data);
         syncInputs();
         updatePreview(true);
@@ -10970,7 +11029,7 @@
         if (!redoStack.length) return;
         undoStack.push(JSON.stringify(state.data));
         const next = JSON.parse(redoStack.pop());
-        state.data = { ...state.data, ...next };
+        state.data = normalizeCvData({ ...state.data, ...next });
         saveJson(STORAGE_KEY, state.data);
         syncInputs();
         updatePreview(true);
@@ -10983,8 +11042,56 @@
       ══════════════════════════════════════════════════════ */
       const MAX_SNAPSHOTS = 12;
 
+      function normalizeRecordId(value, fallback) {
+        const cleaned = normalizeStringValue(value).trim().replace(/[^\w.-]/g, "").slice(0, 80);
+        return cleaned || fallback;
+      }
+
+      function normalizeSnapshotRecord(snapshot, index = 0) {
+        const source = isPlainObject(snapshot) ? snapshot : {};
+        return {
+          id: normalizeRecordId(source.id, `snap-${index}`),
+          name: normalizeStringValue(source.name).slice(0, 120) || "未命名版本",
+          targetRole: normalizeStringValue(source.targetRole).slice(0, 120),
+          targetCompany: normalizeStringValue(source.targetCompany).slice(0, 120),
+          date: normalizeStringValue(source.date).slice(0, 80),
+          template: normalizeTemplateId(source.template, state.template),
+          layoutPrefs: normalizeLayoutPrefs(source.layoutPrefs),
+          resumeLanguage: normalizeResumeLanguage(source.resumeLanguage),
+          pdfPageMode: normalizePdfPageMode(source.pdfPageMode),
+          data: normalizeCvData(source.data)
+        };
+      }
+
+      function normalizeSnapshots(value) {
+        return (Array.isArray(value) ? value : [])
+          .slice(0, MAX_SNAPSHOTS)
+          .map((snapshot, index) => normalizeSnapshotRecord(snapshot, index));
+      }
+
+      function normalizeApplicationRecord(item, index = 0) {
+        const source = isPlainObject(item) ? item : {};
+        return {
+          id: normalizeRecordId(source.id, `app-${index}`),
+          company: normalizeStringValue(source.company).slice(0, 160),
+          role: normalizeStringValue(source.role).slice(0, 160),
+          status: normalizeStringValue(source.status).slice(0, 60) || "準備中",
+          versionId: normalizeRecordId(source.versionId, ""),
+          date: normalizeStringValue(source.date).slice(0, 40),
+          link: normalizeExternalUrl(source.link),
+          note: normalizeStringValue(source.note).slice(0, 600),
+          createdAt: normalizeStringValue(source.createdAt).slice(0, 80)
+        };
+      }
+
+      function normalizeApplications(value) {
+        return (Array.isArray(value) ? value : [])
+          .slice(0, 100)
+          .map((item, index) => normalizeApplicationRecord(item, index));
+      }
+
       function loadSnapshots() {
-        return loadJson(SNAPSHOTS_KEY, []);
+        return normalizeSnapshots(loadJson(SNAPSHOTS_KEY, []));
       }
 
       function saveSnapshot() {
@@ -10999,7 +11106,7 @@
           return;
         }
         snapshots.push({
-          id: Date.now(),
+          id: String(Date.now()),
           name,
           targetRole: roleInput?.value.trim() || "",
           targetCompany: companyInput?.value.trim() || "",
@@ -11021,26 +11128,20 @@
 
       function restoreSnapshot(id) {
         const snapshots = loadSnapshots();
-        const snap = snapshots.find(s => s.id === id);
+        const snap = snapshots.find(s => String(s.id) === String(id));
         if (!snap) return;
         if (!confirm(`確定要載入版本「${snap.name}」？目前未儲存的變更將被覆蓋。`)) return;
         pushUndo();
-        state.data = { ...state.data, ...snap.data };
-        if (snap.layoutPrefs && typeof snap.layoutPrefs === "object") {
-          state.layoutPrefs = snap.layoutPrefs;
-          saveJson(LAYOUT_KEY, state.layoutPrefs);
-        }
-        if (snap.resumeLanguage) {
-          state.resumeLanguage = snap.resumeLanguage;
-          localStorage.setItem(RESUME_LANGUAGE_KEY, state.resumeLanguage);
-        }
-        if (snap.pdfPageMode) {
-          state.pdfPageMode = snap.pdfPageMode;
-          localStorage.setItem(PDF_PAGE_MODE_KEY, state.pdfPageMode);
-        }
+        state.data = normalizeCvData({ ...state.data, ...snap.data });
+        state.layoutPrefs = normalizeLayoutPrefs(snap.layoutPrefs);
+        saveJson(LAYOUT_KEY, state.layoutPrefs);
+        state.resumeLanguage = normalizeResumeLanguage(snap.resumeLanguage);
+        localStorage.setItem(RESUME_LANGUAGE_KEY, state.resumeLanguage);
+        state.pdfPageMode = normalizePdfPageMode(snap.pdfPageMode);
+        localStorage.setItem(PDF_PAGE_MODE_KEY, state.pdfPageMode);
         saveJson(STORAGE_KEY, state.data);
         syncInputs();
-        updateTemplate(snap.template || state.template, true);
+        updateTemplate(normalizeTemplateId(snap.template, state.template), true);
         syncLayoutControls();
         renderBilingualMappingControls();
         updatePreview(true);
@@ -11048,7 +11149,7 @@
       }
 
       function deleteSnapshot(id) {
-        const snapshots = loadSnapshots().filter(s => s.id !== id);
+        const snapshots = loadSnapshots().filter(s => String(s.id) !== String(id));
         saveJson(SNAPSHOTS_KEY, snapshots);
         renderSnapshotList();
         syncApplicationVersionSelect();
@@ -11066,16 +11167,27 @@
           <div class="snapshot-item">
             <span class="snap-name" title="${escapeHtml(s.name)}">${escapeHtml(s.name)}${s.targetRole ? ` · ${escapeHtml(s.targetRole)}` : ""}${s.targetCompany ? ` @ ${escapeHtml(s.targetCompany)}` : ""}</span>
             <span class="snap-date">${escapeHtml(s.date)}</span>
-            <button class="soft" type="button" onclick="restoreSnap(${s.id})">載入</button>
-            <button class="ghost" type="button" onclick="deleteSnap(${s.id})" style="color:var(--danger);">✕</button>
+            <button class="soft" type="button" data-snapshot-action="restore" data-snapshot-id="${escapeHtml(String(s.id))}">載入</button>
+            <button class="ghost" type="button" data-snapshot-action="delete" data-snapshot-id="${escapeHtml(String(s.id))}" style="color:var(--danger);">✕</button>
           </div>`).join("");
       }
 
       window.restoreSnap = (id) => restoreSnapshot(id);
       window.deleteSnap = (id) => { deleteSnapshot(id); };
 
+      function handleSnapshotListClick(event) {
+        const button = event.target.closest("[data-snapshot-action]");
+        if (!button) return;
+        const id = button.dataset.snapshotId || "";
+        if (button.dataset.snapshotAction === "restore") {
+          restoreSnapshot(id);
+        } else if (button.dataset.snapshotAction === "delete") {
+          deleteSnapshot(id);
+        }
+      }
+
       function loadApplications() {
-        return loadJson(APPLICATIONS_KEY, []);
+        return normalizeApplications(loadJson(APPLICATIONS_KEY, []));
       }
 
       function syncApplicationVersionSelect() {
@@ -11098,13 +11210,13 @@
         }
         const applications = loadApplications();
         applications.unshift({
-          id: Date.now(),
+          id: String(Date.now()),
           company,
           role,
           status: $("applicationStatusSelect")?.value || "準備中",
           versionId: $("applicationVersionSelect")?.value || "",
           date: $("applicationDateInput")?.value || new Date().toISOString().slice(0, 10),
-          link: $("applicationLinkInput")?.value.trim() || "",
+          link: normalizeExternalUrl($("applicationLinkInput")?.value.trim() || ""),
           note: $("applicationNoteInput")?.value.trim() || "",
           createdAt: new Date().toISOString()
         });
@@ -11118,7 +11230,7 @@
       }
 
       function deleteApplicationRecord(id) {
-        saveJson(APPLICATIONS_KEY, loadApplications().filter((item) => item.id !== id));
+        saveJson(APPLICATIONS_KEY, loadApplications().filter((item) => String(item.id) !== String(id)));
         renderApplicationList();
       }
 
@@ -11144,13 +11256,19 @@
               ${item.note ? `<span>${escapeHtml(item.note)}</span>` : ""}
               <div class="mini-list-actions">
                 ${item.link ? `<a class="button-link soft" href="${escapeHtml(item.link)}" target="_blank" rel="noreferrer noopener">開啟連結</a>` : ""}
-                <button class="ghost" type="button" onclick="deleteApplicationRecord(${item.id})" style="color:var(--danger);">刪除</button>
+                <button class="ghost" type="button" data-application-delete="${escapeHtml(String(item.id))}" style="color:var(--danger);">刪除</button>
               </div>
             </div>`;
         }).join("");
       }
 
       window.deleteApplicationRecord = (id) => deleteApplicationRecord(id);
+
+      function handleApplicationListClick(event) {
+        const button = event.target.closest("[data-application-delete]");
+        if (!button) return;
+        deleteApplicationRecord(button.dataset.applicationDelete || "");
+      }
 
       const BILINGUAL_FIELD_LABELS = {
         name: "姓名",
@@ -11259,24 +11377,24 @@
             if (!payload.data) throw new Error("格式錯誤");
             if (!confirm("確定要匯入？目前的 CV 資料將被覆蓋。")) return;
             pushUndo();
-            state.data = { ...state.data, ...payload.data };
+            state.data = normalizeCvData({ ...state.data, ...payload.data });
             if (payload.layoutPrefs) {
-              state.layoutPrefs = payload.layoutPrefs;
+              state.layoutPrefs = normalizeLayoutPrefs(payload.layoutPrefs);
               saveJson(LAYOUT_KEY, state.layoutPrefs);
             }
             if (payload.resumeLanguage) {
-              state.resumeLanguage = payload.resumeLanguage;
+              state.resumeLanguage = normalizeResumeLanguage(payload.resumeLanguage);
               localStorage.setItem(RESUME_LANGUAGE_KEY, state.resumeLanguage);
             }
             if (payload.pdfPageMode) {
-              state.pdfPageMode = payload.pdfPageMode;
+              state.pdfPageMode = normalizePdfPageMode(payload.pdfPageMode);
               localStorage.setItem(PDF_PAGE_MODE_KEY, state.pdfPageMode);
             }
             if (Array.isArray(payload.cvVersions)) {
-              saveJson(SNAPSHOTS_KEY, payload.cvVersions);
+              saveJson(SNAPSHOTS_KEY, normalizeSnapshots(payload.cvVersions));
             }
             if (Array.isArray(payload.applicationRecords)) {
-              saveJson(APPLICATIONS_KEY, payload.applicationRecords);
+              saveJson(APPLICATIONS_KEY, normalizeApplications(payload.applicationRecords));
             }
             if (payload.portfolioData && typeof payload.portfolioData === "object") {
               saveJson(PORTFOLIO_STORAGE_KEY, payload.portfolioData);
@@ -11284,7 +11402,7 @@
             }
             saveJson(STORAGE_KEY, state.data);
             syncInputs();
-            if (payload.template) updateTemplate(payload.template, true);
+            if (payload.template) updateTemplate(normalizeTemplateId(payload.template, state.template), true);
             updatePreview(true);
             syncLayoutControls();
             renderSnapshotList();
@@ -11452,6 +11570,8 @@
         // Snapshot
         $("saveSnapshotBtn")?.addEventListener("click", saveSnapshot);
         $("addApplicationBtn")?.addEventListener("click", addApplicationRecord);
+        $("snapshotList")?.addEventListener("click", handleSnapshotListClick);
+        $("applicationList")?.addEventListener("click", handleApplicationListClick);
         $("bilingualFieldSelect")?.addEventListener("change", renderBilingualMappingControls);
         $("saveBilingualBtn")?.addEventListener("click", saveBilingualField);
         $("syncBilingualFromCurrentBtn")?.addEventListener("click", syncBilingualFromCurrent);
