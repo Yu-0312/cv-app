@@ -123,6 +123,12 @@ const SUPABASE_STUB_SOURCE = `
       get lastSignOutOptions() {
         return lastSignOutOptions;
       },
+      setProfile(userId, content, templateId = "n-tech") {
+        profiles.set(userId, {
+          content,
+          template_id: templateId
+        });
+      },
       delayNextSignOut() {
         signOutGate = new Promise((resolve) => {
           releaseSignOutGate = resolve;
@@ -363,6 +369,22 @@ async function main() {
     });
 
     await withStep("登入／登出事件流", async () => {
+      await page.evaluate(() => {
+        Object.assign(window.cvStudioState.data, {
+          name: "Local Draft",
+          role: "Local Role",
+          email: "local@example.com",
+          summary: "Local draft summary"
+        });
+        window.localStorage.setItem("cv-studio-local-v2", JSON.stringify(window.cvStudioState.data));
+        window.__supabaseTest.setProfile("smoke-user", {
+          name: "Cloud Person",
+          role: "Cloud Role",
+          email: "cloud@example.com",
+          summary: "Cloud profile summary"
+        });
+      });
+
       await page.evaluate(async () => {
         await window.__supabaseTest.emit("SIGNED_IN", {
           id: "smoke-user",
@@ -377,8 +399,10 @@ async function main() {
 
       const signedInAuthText = await page.$eval("#authStatus", (node) => node.textContent || "");
       const logoutVisible = await page.$eval("#headerLogoutBtn", (node) => !node.hidden);
+      const cloudName = await page.evaluate(() => window.cvStudioState.data.name);
       assert.match(signedInAuthText, /Smoke Tester/);
       assert.equal(logoutVisible, true);
+      assert.equal(cloudName, "Cloud Person");
 
       await page.evaluate(() => window.__supabaseTest.delayNextSignOut());
       await page.click("#headerLogoutBtn");
@@ -403,6 +427,8 @@ async function main() {
         const node = document.getElementById("authStatus");
         return node && /尚未登入/.test(node.textContent || "");
       });
+      const restoredName = await page.evaluate(() => window.cvStudioState.data.name);
+      assert.equal(restoredName, "Local Draft");
       const signOutOptions = await page.evaluate(() => window.__supabaseTest.lastSignOutOptions);
       const authStorageCleared = await page.evaluate(() => {
         const key = window.__supabaseTest.storageKey;
@@ -420,6 +446,8 @@ async function main() {
         const node = document.getElementById("authStatus");
         return node && /尚未登入/.test(node.textContent || "");
       });
+      const reloadedName = await page.evaluate(() => window.cvStudioState.data.name);
+      assert.equal(reloadedName, "Local Draft");
 
       await page.evaluate(async () => {
         await window.__supabaseTest.emit("SIGNED_IN", {

@@ -6681,6 +6681,8 @@
 
     (() => {
       const STORAGE_KEY = "cv-studio-local-v2";
+      const SIGNED_OUT_DRAFT_KEY = "cv-studio-signed-out-draft-v1";
+      const CLOUD_PROFILE_ACTIVE_KEY = "cv-studio-cloud-profile-active-v1";
       const CONFIG_KEY = "cv-studio-config-v2";
       const TEMPLATE_KEY = "cv-studio-template-v1";
       const WORKFLOW_KEY = "cv-studio-workflow-v1";
@@ -7290,6 +7292,69 @@
 
       function saveJson(key, value) {
         localStorage.setItem(key, JSON.stringify(value));
+      }
+
+      function loadSignedOutDraftSnapshot() {
+        try {
+          const raw = localStorage.getItem(SIGNED_OUT_DRAFT_KEY);
+          if (!raw) {
+            return {
+              data: normalizeCvData(defaultData),
+              template: state.config.defaultTemplate || "n-tech",
+              workflowMode: "template-first",
+              layoutPrefs: {}
+            };
+          }
+
+          const parsed = JSON.parse(raw);
+          const data = parsed?.data || parsed || defaultData;
+          return {
+            data: normalizeCvData(data),
+            template: parsed?.template || state.config.defaultTemplate || "n-tech",
+            workflowMode: parsed?.workflowMode || "template-first",
+            layoutPrefs: parsed?.layoutPrefs && typeof parsed.layoutPrefs === "object"
+              ? parsed.layoutPrefs
+              : {}
+          };
+        } catch {
+          return {
+            data: normalizeCvData(defaultData),
+            template: state.config.defaultTemplate || "n-tech",
+            workflowMode: "template-first",
+            layoutPrefs: {}
+          };
+        }
+      }
+
+      function preserveSignedOutDraftSnapshot() {
+        if (localStorage.getItem(CLOUD_PROFILE_ACTIVE_KEY)) return;
+        localStorage.setItem(SIGNED_OUT_DRAFT_KEY, JSON.stringify({
+          data: normalizeCvData(state.data),
+          template: state.template || state.config.defaultTemplate || "n-tech",
+          workflowMode: state.workflowMode || "template-first",
+          layoutPrefs: state.layoutPrefs || {}
+        }));
+      }
+
+      function restoreSignedOutDraftSnapshot() {
+        const snapshot = loadSignedOutDraftSnapshot();
+        state.data = snapshot.data;
+        state.template = snapshot.template;
+        state.workflowMode = snapshot.workflowMode;
+        state.layoutPrefs = snapshot.layoutPrefs;
+
+        localStorage.removeItem(CLOUD_PROFILE_ACTIVE_KEY);
+        saveJson(STORAGE_KEY, state.data);
+        localStorage.setItem(TEMPLATE_KEY, state.template);
+        localStorage.setItem(WORKFLOW_KEY, state.workflowMode);
+        saveJson(LAYOUT_KEY, state.layoutPrefs);
+
+        syncInputs();
+        syncWorkflowUi();
+        syncLayoutControls();
+        updateTemplate(state.template, false);
+        updatePreview(true);
+        notifyCvDataUpdated("signed-out-draft");
       }
 
       function notifyCvDataUpdated(source = "manual") {
@@ -8279,12 +8344,14 @@
           if (event === "SIGNED_OUT") {
             clearSupabaseSessionStorage();
             applySignedOutState();
+            restoreSignedOutDraftSnapshot();
           }
           updateAuthUi();
           syncLogoutFeedback();
           updateActionButtons();
 
           if (event === "SIGNED_IN" && state.user) {
+            preserveSignedOutDraftSnapshot();
             await loadProfile();
             setMessage("Google 登入成功，已連接到雲端 CV。", "success");
           }
@@ -8535,6 +8602,7 @@
         }
         clearSupabaseSessionStorage();
         applySignedOutState();
+        restoreSignedOutDraftSnapshot();
         updateAuthUi();
         renderAuthDebugPanel();
         syncLogoutFeedback();
@@ -8573,6 +8641,7 @@
             state.workflowMode = content._workflowMode;
             localStorage.setItem(WORKFLOW_KEY, state.workflowMode);
           }
+          localStorage.setItem(CLOUD_PROFILE_ACTIVE_KEY, state.user.id || "true");
           saveJson(STORAGE_KEY, state.data);
           syncInputs();
           updatePreview();
