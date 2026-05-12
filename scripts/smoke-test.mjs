@@ -366,6 +366,27 @@ async function main() {
       assert.match(authText, /尚未登入/);
       assert.match(headerText, /尚未登入/);
       assert.equal(loginVisible, true);
+
+      await page.evaluate(() => {
+        window.localStorage.removeItem("cv-studio-signed-out-draft-v1");
+        window.localStorage.removeItem("cv-studio-cloud-profile-active-v1");
+        window.localStorage.setItem("cv-studio-local-v2", JSON.stringify({
+          name: "Legacy Cloud Name",
+          role: "Legacy Role",
+          email: "legacy@example.com"
+        }));
+      });
+      await page.reload({ waitUntil: "domcontentloaded", timeout: 120000 });
+      await page.waitForFunction(
+        () => Boolean(window.cvStudioState && window.switchCvStudioTab),
+        { timeout: 120000 }
+      );
+      await page.waitForFunction(() => {
+        const node = document.getElementById("authStatus");
+        return node && /尚未登入/.test(node.textContent || "") && window.cvStudioState?.data?.name === "";
+      });
+      const previewText = await page.$eval("#cvPaper", (node) => node.textContent || "");
+      assert.doesNotMatch(previewText, /Legacy Cloud Name/);
     });
 
     await withStep("登入／登出事件流", async () => {

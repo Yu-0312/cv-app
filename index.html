@@ -7358,6 +7358,9 @@
       }
 
       function notifyCvDataUpdated(source = "manual") {
+        if (!state.user && !state.authBusy && source !== "signed-out-draft") {
+          preserveSignedOutDraftSnapshot();
+        }
         window.dispatchEvent(new CustomEvent("cv:data-updated", { detail: { source } }));
       }
 
@@ -8469,6 +8472,11 @@
         state.authDebug.sessionError = data.session ? "" : "Supabase 回傳 session 為空。";
         if (!data.session || authCode) {
           clearAuthRedirectParams();
+        }
+        if (!state.user) {
+          clearSupabaseSessionStorage();
+          applySignedOutState();
+          restoreSignedOutDraftSnapshot();
         }
         updateAuthUi();
         updateActionButtons();
