@@ -8058,14 +8058,51 @@
         };
       }
 
-      function shouldStartWithSignedOutPlaceholders() {
-        return localStorage.getItem(AUTH_SIGNED_OUT_KEY) === "true"
-          || !localStorage.getItem(CLOUD_PROFILE_ACTIVE_KEY);
+      function getProjectRefFromSupabaseUrl(supabaseUrl = "") {
+        const normalizedUrl = String(supabaseUrl || "").trim();
+        if (!normalizedUrl) return "";
+        try {
+          return new URL(normalizedUrl).hostname.split(".")[0] || "";
+        } catch {
+          return "";
+        }
       }
 
+      function readPersistedSupabaseSession(config = {}) {
+        const projectRef = getProjectRefFromSupabaseUrl(config.supabaseUrl);
+        if (!projectRef) return null;
+        const storageKey = `sb-${projectRef}-auth-token`;
+        const storages = [window.localStorage, window.sessionStorage].filter(Boolean);
+
+        for (const storage of storages) {
+          try {
+            const raw = storage.getItem(storageKey);
+            if (!raw) continue;
+            const parsed = JSON.parse(raw);
+            const session = parsed?.currentSession || parsed?.session || parsed;
+            const expiresAt = Number(parsed?.expires_at || session?.expires_at || 0);
+            if (expiresAt && expiresAt * 1000 <= Date.now()) continue;
+            if (session?.access_token || session?.user || parsed?.currentSession) {
+              return session;
+            }
+          } catch {
+            // Ignore malformed auth storage and start from placeholders.
+          }
+        }
+
+        return null;
+      }
+
+      function shouldStartWithSignedOutPlaceholders(config = {}) {
+        return localStorage.getItem(AUTH_SIGNED_OUT_KEY) === "true"
+          || !localStorage.getItem(CLOUD_PROFILE_ACTIVE_KEY)
+          || !readPersistedSupabaseSession(config);
+      }
+
+      const initialConfig = loadInitialConfig();
       const state = {
-        data: normalizeCvData(shouldStartWithSignedOutPlaceholders() ? defaultData : loadJson(STORAGE_KEY, defaultData)),
-        config: loadInitialConfig(),
+        data: normalizeCvData(shouldStartWithSignedOutPlaceholders(initialConfig) ? defaultData : loadJson(STORAGE_KEY, defaultData)),
+        config: initialConfig,
         template: localStorage.getItem(TEMPLATE_KEY) || "n-tech",
         workflowMode: localStorage.getItem(WORKFLOW_KEY) || "template-first",
         layoutPrefs: loadJson(LAYOUT_KEY, {}),
@@ -9192,14 +9229,7 @@
       }
 
       function getSupabaseProjectRef() {
-        const supabaseUrl = state.config.supabaseUrl?.trim();
-        if (!supabaseUrl) return "";
-
-        try {
-          return new URL(supabaseUrl).hostname.split(".")[0] || "";
-        } catch {
-          return "";
-        }
+        return getProjectRefFromSupabaseUrl(state.config.supabaseUrl);
       }
 
       function clearSupabaseSessionStorage() {
@@ -11735,7 +11765,8 @@
       }
 
       function canLoadStoredPortfolio() {
-        return localStorage.getItem(PF_AUTH_SIGNED_OUT_KEY) !== "true"
+        return canPersistPortfolio()
+          && localStorage.getItem(PF_AUTH_SIGNED_OUT_KEY) !== "true"
           && Boolean(localStorage.getItem(PF_CLOUD_PROFILE_ACTIVE_KEY));
       }
 
@@ -11770,7 +11801,7 @@
       }
       function accent() { return themePalette().color; }
       function savePfPresetState() {
-        if (!pfActivePreset) {
+        if (!pfActivePreset || !canPersistPortfolio()) {
           localStorage.removeItem(PF_PRESET_KEY);
           return;
         }
@@ -12179,6 +12210,8 @@
         try {
           if (!canLoadStoredPortfolio()) {
             pf = normalizePfData(JSON.parse(JSON.stringify(pfDefault)));
+            pfActivePreset = null;
+            localStorage.removeItem(PF_PRESET_KEY);
             renderEditor();
             renderPreview();
             renderAssetList();
@@ -16580,6 +16613,8 @@
 
       function parseGsatSubjectCombo(name = "") {
         const text = String(name || "")
+          .replace(/[Ａａ]/g, "A")
+          .replace(/[Ｂｂ]/g, "B")
           .replace(/\s+/g, "")
           .replace(/之?級分總和|級分|總和|科/g, "");
         const subjects = [];

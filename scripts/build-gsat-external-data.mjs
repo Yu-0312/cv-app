@@ -4,15 +4,23 @@ import fs from "node:fs/promises";
 import path from "node:path";
 
 const SUBJECT_ALIASES = new Map([
+  ["國", "國文"],
   ["國文", "國文"],
+  ["英", "英文"],
   ["英文", "英文"],
   ["數學a", "數學A"],
+  ["數學ａ", "數學A"],
   ["數a", "數學A"],
+  ["數ａ", "數學A"],
   ["數甲", "數學A"],
   ["數學b", "數學B"],
+  ["數學ｂ", "數學B"],
   ["數b", "數學B"],
+  ["數ｂ", "數學B"],
   ["數乙", "數學B"],
+  ["社", "社會"],
   ["社會", "社會"],
+  ["自", "自然"],
   ["自然", "自然"]
 ]);
 
@@ -94,7 +102,11 @@ async function collectInputFiles(inputPath) {
 }
 
 function normalizeSubjectName(name = "") {
-  const key = String(name).trim().toLowerCase();
+  const key = String(name)
+    .trim()
+    .replace(/[Ａａ]/g, "a")
+    .replace(/[Ｂｂ]/g, "b")
+    .toLowerCase();
   return SUBJECT_ALIASES.get(key) || "";
 }
 
@@ -104,6 +116,8 @@ function normalizeLevel(level = "") {
 
 function parseSubjectCombo(name = "") {
   const text = String(name || "")
+    .replace(/[Ａａ]/g, "A")
+    .replace(/[Ｂｂ]/g, "B")
     .replace(/\s+/g, "")
     .replace(/之?級分總和|級分|總和|科/g, "");
   const subjects = [];
@@ -477,7 +491,11 @@ async function build() {
     acc[item.reason] = (acc[item.reason] || 0) + 1;
     return acc;
   }, {});
-  for (const [reason, count] of Object.entries(reasonCount)) {
+  const reasonEntries = Object.entries(reasonCount);
+  if (!reasonEntries.length) {
+    report.push("- 無");
+  }
+  for (const [reason, count] of reasonEntries) {
     report.push(`- ${reason}：${count}`);
   }
 

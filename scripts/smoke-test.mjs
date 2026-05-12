@@ -554,6 +554,8 @@ async function main() {
       assert.equal(signedOutCvStorage, null);
       const signedOutPortfolioStorage = await page.evaluate(() => window.localStorage.getItem("pf-studio-local-v4"));
       assert.equal(signedOutPortfolioStorage, null);
+      const signedOutPortfolioPreset = await page.evaluate(() => window.localStorage.getItem("pf-studio-preset-v1"));
+      assert.equal(signedOutPortfolioPreset, null);
       const signOutOptions = await page.evaluate(() => window.__supabaseTest.lastSignOutOptions);
       const authStorageCleared = await page.evaluate(() => {
         const key = window.__supabaseTest.storageKey;
@@ -593,6 +595,77 @@ async function main() {
         return !window.localStorage.getItem(key) && !window.sessionStorage.getItem(key);
       });
       assert.equal(staleStorageCleared, true);
+
+      await page.evaluateOnNewDocument(() => {
+        const privateTokens = ["Stale Cached Person", "Stale Cached Portfolio"];
+        window.__cvPrivacyLeakSeen = false;
+        function scanForPrivateText() {
+          const bodyText = document.body?.textContent || "";
+          const stateName = window.cvStudioState?.data?.name || "";
+          if (privateTokens.some((token) => bodyText.includes(token) || stateName.includes(token))) {
+            window.__cvPrivacyLeakSeen = true;
+          }
+        }
+        function startPrivacyObserver() {
+          scanForPrivateText();
+          if (document.documentElement) {
+            new MutationObserver(scanForPrivateText).observe(document.documentElement, {
+              childList: true,
+              subtree: true,
+              characterData: true
+            });
+          }
+          window.setInterval(scanForPrivateText, 25);
+        }
+        if (document.readyState === "loading") {
+          document.addEventListener("DOMContentLoaded", startPrivacyObserver, { once: true });
+        } else {
+          startPrivacyObserver();
+        }
+      });
+      await page.evaluate(() => {
+        const key = window.__supabaseTest.storageKey;
+        window.localStorage.removeItem("cv-studio-auth-signed-out-v1");
+        window.localStorage.setItem("cv-studio-cloud-profile-active-v1", "stale-user");
+        window.localStorage.removeItem(key);
+        window.sessionStorage.removeItem(key);
+        window.localStorage.setItem("cv-studio-local-v2", JSON.stringify({
+          name: "Stale Cached Person",
+          role: "Should Stay Hidden",
+          summary: "This cached CV should not render before auth is confirmed."
+        }));
+        window.localStorage.setItem("pf-studio-local-v4", JSON.stringify({
+          title: "Stale Cached Portfolio",
+          studentName: "Stale Cached Person",
+          chapters: [{ id: "stale", title: "Private Chapter", sections: [{ id: "stale-sec", header: "Private", body: "Private body" }] }]
+        }));
+        window.localStorage.setItem("pf-studio-preset-v1", JSON.stringify({ group: "dept", id: "engineering" }));
+      });
+      await page.reload({ waitUntil: "domcontentloaded", timeout: 120000 });
+      await page.waitForFunction(
+        () => Boolean(window.cvStudioState && window.switchCvStudioTab),
+        { timeout: 120000 }
+      );
+      await page.waitForFunction(() => {
+        const node = document.getElementById("authStatus");
+        return node && /尚未登入/.test(node.textContent || "");
+      });
+      const staleCachePrivacy = await page.evaluate(() => ({
+        leakSeen: Boolean(window.__cvPrivacyLeakSeen),
+        name: window.cvStudioState.data.name,
+        portfolioTitle: document.getElementById("pfTitle")?.value || "",
+        cvStorage: window.localStorage.getItem("cv-studio-local-v2"),
+        portfolioStorage: window.localStorage.getItem("pf-studio-local-v4"),
+        portfolioPreset: window.localStorage.getItem("pf-studio-preset-v1")
+      }));
+      assert.deepEqual(staleCachePrivacy, {
+        leakSeen: false,
+        name: "",
+        portfolioTitle: "",
+        cvStorage: null,
+        portfolioStorage: null,
+        portfolioPreset: null
+      });
 
       await page.evaluate(async () => {
         window.localStorage.removeItem("cv-studio-auth-signed-out-v1");

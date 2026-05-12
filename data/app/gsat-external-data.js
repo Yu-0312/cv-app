@@ -1651,6 +1651,174 @@ window.CV_GSAT_EXTERNAL_DEPTS = [
   },
   {
     "u": "國立臺灣師範大學",
+    "d": "美術學系水墨畫組",
+    "t": "social",
+    "w": {
+      "國文": 1,
+      "英文": 1,
+      "社會": 1
+    },
+    "th": {
+      "英文": "後標"
+    },
+    "h": [
+      28,
+      26,
+      26
+    ],
+    "note": "來源：104 落點分析・公立・104風險值 110",
+    "source": "104",
+    "criteriaName": "國英社",
+    "criteriaSubjects": [
+      "國文",
+      "英文",
+      "社會"
+    ],
+    "screeningPower": [
+      {
+        "name": "國英社",
+        "subjects": [
+          "國文",
+          "英文",
+          "社會"
+        ],
+        "multiplier": 6
+      }
+    ],
+    "screeningRules": [
+      {
+        "year": 115,
+        "items": [
+          {
+            "label": "國英社",
+            "canonicalLabel": "國英社",
+            "subjects": [
+              "國文",
+              "英文",
+              "社會"
+            ],
+            "score": 28
+          }
+        ]
+      },
+      {
+        "year": 114,
+        "items": [
+          {
+            "label": "國英社",
+            "canonicalLabel": "國英社",
+            "subjects": [
+              "國文",
+              "英文",
+              "社會"
+            ],
+            "score": 26
+          }
+        ]
+      },
+      {
+        "year": 113,
+        "items": [
+          {
+            "label": "國英社",
+            "canonicalLabel": "國英社",
+            "subjects": [
+              "國文",
+              "英文",
+              "社會"
+            ],
+            "score": 26
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "u": "國立臺灣師範大學",
+    "d": "美術學系繪畫組",
+    "t": "social",
+    "w": {
+      "國文": 1,
+      "英文": 1,
+      "社會": 1
+    },
+    "th": {
+      "英文": "後標"
+    },
+    "h": [
+      30,
+      28,
+      30
+    ],
+    "note": "來源：104 落點分析・公立・104風險值 110",
+    "source": "104",
+    "criteriaName": "國英社",
+    "criteriaSubjects": [
+      "國文",
+      "英文",
+      "社會"
+    ],
+    "screeningPower": [
+      {
+        "name": "國英社",
+        "subjects": [
+          "國文",
+          "英文",
+          "社會"
+        ],
+        "multiplier": 6
+      }
+    ],
+    "screeningRules": [
+      {
+        "year": 115,
+        "items": [
+          {
+            "label": "國英社",
+            "canonicalLabel": "國英社",
+            "subjects": [
+              "國文",
+              "英文",
+              "社會"
+            ],
+            "score": 30
+          }
+        ]
+      },
+      {
+        "year": 114,
+        "items": [
+          {
+            "label": "國英社",
+            "canonicalLabel": "國英社",
+            "subjects": [
+              "國文",
+              "英文",
+              "社會"
+            ],
+            "score": 28
+          }
+        ]
+      },
+      {
+        "year": 113,
+        "items": [
+          {
+            "label": "國英社",
+            "canonicalLabel": "國英社",
+            "subjects": [
+              "國文",
+              "英文",
+              "社會"
+            ],
+            "score": 30
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "u": "國立臺灣師範大學",
     "d": "特殊教育學系(公費生)",
     "t": "social",
     "w": {
