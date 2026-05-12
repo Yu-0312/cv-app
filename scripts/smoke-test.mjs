@@ -3,6 +3,7 @@
 import assert from "node:assert/strict";
 import fs from "node:fs";
 import http from "node:http";
+import os from "node:os";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import puppeteer from "puppeteer-core";
@@ -37,6 +38,8 @@ const SUPABASE_STUB_SOURCE = `
   (() => {
     const authListeners = [];
     const profiles = new Map();
+    const publicProfiles = new Map(JSON.parse(window.localStorage.getItem("__supabase_public_profiles") || "[]"));
+    const uploads = new Map();
     let signOutGate = null;
     let releaseSignOutGate = null;
     let currentSession = readPersistedSession();
@@ -82,12 +85,43 @@ const SUPABASE_STUB_SOURCE = `
       }));
     }
 
+    function persistPublicProfiles() {
+      window.localStorage.setItem("__supabase_public_profiles", JSON.stringify([...publicProfiles.entries()]));
+    }
+
+    function findPublicProfile(filters) {
+      if (filters.user_id) {
+        return [...publicProfiles.values()].find((profile) => profile.user_id === filters.user_id) || null;
+      }
+      if (filters.slug) {
+        return publicProfiles.get(filters.slug) || null;
+      }
+      return null;
+    }
+
+    function removePublicProfile(filters) {
+      const profile = findPublicProfile(filters);
+      if (profile?.slug) {
+        publicProfiles.delete(profile.slug);
+        persistPublicProfiles();
+      }
+    }
+
     function createBuilder(tableName) {
       const filters = {};
+      let deleteMode = false;
       const builder = {
         select() { return builder; },
+        delete() {
+          deleteMode = true;
+          return builder;
+        },
         eq(column, value) {
           filters[column] = value;
+          if (deleteMode) {
+            if (tableName === "cv_public_profiles") removePublicProfile(filters);
+            return resolve(null);
+          }
           return builder;
         },
         order() { return builder; },
@@ -100,6 +134,9 @@ const SUPABASE_STUB_SOURCE = `
           if (tableName === "cv_profiles") {
             return resolve(profiles.get(filters.user_id) || null);
           }
+          if (tableName === "cv_public_profiles") {
+            return resolve(findPublicProfile(filters));
+          }
           return resolve(null);
         },
         upsert(payload) {
@@ -109,10 +146,43 @@ const SUPABASE_STUB_SOURCE = `
               template_id: payload.template_id || null
             });
           }
+          if (tableName === "cv_public_profiles" && payload?.slug) {
+            const existing = findPublicProfile({ user_id: payload.user_id });
+            if (existing?.slug && existing.slug !== payload.slug) {
+              publicProfiles.delete(existing.slug);
+            }
+            publicProfiles.set(payload.slug, { ...payload });
+            persistPublicProfiles();
+          }
           return resolve(null);
         }
       };
       return builder;
+    }
+
+    function createStorage() {
+      return {
+        from(bucketName) {
+          return {
+            async upload(path, fileOrBlob, options = {}) {
+              uploads.set(path, {
+                bucketName,
+                path,
+                type: options.contentType || fileOrBlob?.type || "application/octet-stream",
+                size: fileOrBlob?.size || 0
+              });
+              return { data: { path }, error: null };
+            },
+            getPublicUrl(path) {
+              return { data: { publicUrl: \`https://storage.test/\${bucketName}/\${path}\` } };
+            },
+            async remove(paths) {
+              (paths || []).forEach((path) => uploads.delete(path));
+              return { data: null, error: null };
+            }
+          };
+        }
+      };
     }
 
     window.__supabaseTest = {
@@ -122,6 +192,15 @@ const SUPABASE_STUB_SOURCE = `
       },
       get lastSignOutOptions() {
         return lastSignOutOptions;
+      },
+      get publicProfiles() {
+        return [...publicProfiles.values()];
+      },
+      get uploads() {
+        return [...uploads.values()];
+      },
+      get profiles() {
+        return [...profiles.values()];
       },
       setProfile(userId, content, templateId = "n-tech") {
         profiles.set(userId, {
@@ -193,7 +272,8 @@ const SUPABASE_STUB_SOURCE = `
           },
           from(tableName) {
             return createBuilder(tableName);
-          }
+          },
+          storage: createStorage()
         };
       }
     };
@@ -299,6 +379,7 @@ async function main() {
   const page = await browser.newPage();
   const consoleErrors = [];
   const pageErrors = [];
+  const tempDirs = [];
 
   page.on("console", (message) => {
     if (message.type() === "error") {
@@ -307,6 +388,9 @@ async function main() {
   });
   page.on("pageerror", (error) => {
     pageErrors.push(error.message);
+  });
+  page.on("dialog", async (dialog) => {
+    await dialog.dismiss();
   });
 
   await page.setBypassServiceWorker(true);
@@ -645,6 +729,151 @@ async function main() {
       await page.waitForFunction(() => /未登入/.test(document.getElementById("homeSyncState")?.textContent || ""));
     });
 
+    await withStep("CV 版本、雙語與公開分享隱私", async () => {
+      await page.evaluate(async () => {
+        window.localStorage.removeItem("cv-studio-auth-signed-out-v1");
+        window.localStorage.removeItem("cv-studio-snapshots-v1");
+        window.localStorage.removeItem("cv-studio-applications-v1");
+        window.localStorage.removeItem("__supabase_public_profiles");
+        await window.__supabaseTest.emit("SIGNED_IN", {
+          id: "smoke-user",
+          email: "smoke@example.com",
+          user_metadata: { full_name: "Smoke Tester" }
+        });
+      });
+      await page.waitForFunction(() => /Smoke Tester/.test(document.getElementById("authStatus")?.textContent || ""));
+
+      await page.evaluate(() => {
+        window.switchCvStudioTab("cv");
+        const setInput = (id, value) => {
+          const node = document.getElementById(id);
+          if (!node) throw new Error(`Missing #${id}`);
+          node.value = value;
+          node.dispatchEvent(new Event("input", { bubbles: true }));
+        };
+        setInput("name", "王宇錡");
+        setInput("role", "Frontend Engineer");
+        setInput("email", "yu@example.com");
+        setInput("summary", "中文摘要：具備前端開發與產品整理能力。");
+        setInput("skills", "JavaScript, UI Testing");
+      });
+      await page.waitForSelector("#page-cv.active");
+      log("[smoke] CV 基本資料已填入");
+
+      await page.$eval("#snapshotNameInput", (node) => { node.value = "Frontend 版本"; });
+      await page.$eval("#snapshotRoleInput", (node) => { node.value = "前端工程師"; });
+      await page.$eval("#snapshotCompanyInput", (node) => { node.value = "測試公司"; });
+      await page.$eval("#saveSnapshotBtn", (node) => node.click());
+      await page.waitForFunction(() => /Frontend 版本/.test(document.getElementById("snapshotList")?.textContent || ""), { timeout: 10000 }).catch(async (error) => {
+        const snapshotDebug = await page.evaluate(() => ({
+          list: document.getElementById("snapshotList")?.textContent || "",
+          message: document.getElementById("message")?.textContent || "",
+          local: window.localStorage.getItem("cv-studio-snapshots-v1"),
+          pageErrors: window.__pageErrors || null
+        }));
+        throw new Error(`${error.message} snapshotDebug=${JSON.stringify(snapshotDebug)}`);
+      });
+      log("[smoke] CV 版本已儲存");
+
+      await page.$eval("#applicationCompanyInput", (node) => { node.value = "測試公司"; });
+      await page.$eval("#applicationRoleInput", (node) => { node.value = "前端工程師"; });
+      await page.select("#applicationStatusSelect", "已投遞");
+      await page.$eval("#applicationDateInput", (node) => { node.value = "2026-05-12"; });
+      await page.$eval("#applicationNoteInput", (node) => { node.value = "等待 HR 回覆"; });
+      await page.$eval("#addApplicationBtn", (node) => node.click());
+      await page.waitForFunction(() => /測試公司/.test(document.getElementById("applicationList")?.textContent || ""));
+      log("[smoke] 投遞紀錄已新增");
+
+      await page.select("#bilingualFieldSelect", "summary");
+      await page.$eval("#bilingualZhInput", (node) => { node.value = "中文摘要：具備前端開發與產品整理能力。"; });
+      await page.$eval("#bilingualEnInput", (node) => { node.value = "English summary with frontend and product delivery experience."; });
+      await page.$eval("#saveBilingualBtn", (node) => node.click());
+      await page.select("#resumeLanguageSelect", "en");
+      await page.waitForFunction(() => /English summary with frontend/.test(document.getElementById("cvPaper")?.textContent || ""));
+      log("[smoke] 雙語內容已切換");
+
+      await page.$eval("#saveBtn", (node) => node.click());
+      await page.waitForFunction(() => /CV 已成功儲存到雲端/.test(document.getElementById("message")?.textContent || ""));
+      log("[smoke] 私人雲端 CV 已儲存");
+      const savedProfile = await page.evaluate(() => window.__supabaseTest.profiles.at(-1)?.content || {});
+      assert.ok(Array.isArray(savedProfile._cvVersions), "雲端私人 CV 應包含版本紀錄");
+      assert.ok(Array.isArray(savedProfile._applicationRecords), "雲端私人 CV 應包含投遞紀錄");
+
+      await page.$eval("#publishShareBtn", (node) => node.click());
+      await page.waitForFunction(() => /公開分享頁已發布/.test(document.getElementById("message")?.textContent || ""));
+      log("[smoke] 公開分享已發布");
+      const shareAudit = await page.evaluate(() => {
+        const profile = window.__supabaseTest.publicProfiles[0];
+        return {
+          slug: profile?.slug || "",
+          contentKeys: Object.keys(profile?.content || {}),
+          title: document.querySelector('meta[property="og:title"]')?.getAttribute("content") || "",
+          image: document.querySelector('meta[property="og:image"]')?.getAttribute("content") || ""
+        };
+      });
+      assert.ok(shareAudit.slug, "公開分享應產生 slug");
+      assert.equal(shareAudit.contentKeys.includes("_applicationRecords"), false, "公開分享不得包含投遞紀錄");
+      assert.equal(shareAudit.contentKeys.includes("_cvVersions"), false, "公開分享不得包含 CV 版本");
+      assert.equal(shareAudit.contentKeys.includes("_portfolioData"), false, "公開分享不得包含私人作品集資料");
+      assert.match(shareAudit.title, /王宇錡/);
+      assert.match(shareAudit.image, /storage\.test|og-image\.svg/);
+
+      await page.goto(`${origin}/?share=${encodeURIComponent(shareAudit.slug)}`, { waitUntil: "domcontentloaded", timeout: 120000 });
+      await page.waitForFunction(
+        () => Boolean(window.cvStudioState && document.body.classList.contains("public-share-mode")),
+        { timeout: 120000 }
+      );
+      const publicText = await page.$eval("#cvPaper", (node) => node.textContent || "");
+      assert.match(publicText, /English summary with frontend/);
+      assert.doesNotMatch(publicText, /等待 HR 回覆/);
+      assert.doesNotMatch(publicText, /測試公司/);
+    });
+
+    await withStep("作品集素材庫與雲端附件", async () => {
+      await page.goto(origin, { waitUntil: "domcontentloaded", timeout: 120000 });
+      await page.waitForFunction(
+        () => Boolean(window.cvStudioState && window.switchCvStudioTab),
+        { timeout: 120000 }
+      );
+      await page.evaluate(async () => {
+        window.localStorage.removeItem("cv-studio-auth-signed-out-v1");
+        await window.__supabaseTest.emit("SIGNED_IN", {
+          id: "smoke-user",
+          email: "smoke@example.com",
+          user_metadata: { full_name: "Smoke Tester" }
+        });
+        window.switchCvStudioTab("portfolio");
+      });
+      await page.waitForSelector("#page-portfolio.active");
+
+      await page.$eval("#pfAssetNameInput", (node) => { node.value = "Cover Image"; });
+      await page.$eval("#pfAssetUrlInput", (node) => { node.value = "https://example.com/cover.png"; });
+      await page.$eval("#pfAddAssetUrlBtn", (node) => node.click());
+      await page.waitForFunction(() => /Cover Image/.test(document.getElementById("pfAssetList")?.textContent || ""));
+      await page.$eval("[data-pf-asset-cover]", (node) => node.click());
+      await page.waitForFunction(() => document.getElementById("pfCoverImage")?.value === "https://example.com/cover.png");
+
+      const tempDir = fs.mkdtempSync(path.join(os.tmpdir(), "cv-smoke-asset-"));
+      tempDirs.push(tempDir);
+      const pdfPath = path.join(tempDir, "portfolio-evidence.pdf");
+      fs.writeFileSync(pdfPath, "%PDF-1.4\\n% smoke portfolio evidence\\n");
+      const fileInput = await page.$("#pfAssetFileInput");
+      await fileInput.uploadFile(pdfPath);
+      await page.waitForFunction(() => /素材已上傳並加入/.test(document.getElementById("pfAssetUploadStatus")?.textContent || ""));
+
+      const assetAudit = await page.evaluate(() => {
+        const stored = JSON.parse(window.localStorage.getItem("pf-studio-local-v4") || "{}");
+        return {
+          cover: stored.coverImageUrl,
+          assetCount: stored.assets?.length || 0,
+          uploads: window.__supabaseTest.uploads
+        };
+      });
+      assert.equal(assetAudit.cover, "https://example.com/cover.png");
+      assert.ok(assetAudit.assetCount >= 2, "素材庫應保存 URL 素材與上傳附件");
+      assert.ok(assetAudit.uploads.some((item) => /portfolio-assets/.test(item.path)), "登入後附件應上傳到 Supabase Storage");
+    });
+
     await withStep("Career 基本互動", async () => {
       await page.evaluate(() => {
         Object.assign(window.cvStudioState.data, {
@@ -843,6 +1072,9 @@ async function main() {
     log("\n[smoke] 全部通過");
   } finally {
     await browser.close();
+    for (const tempDir of tempDirs) {
+      fs.rmSync(tempDir, { recursive: true, force: true });
+    }
     await new Promise((resolve, reject) => {
       server.close((error) => (error ? reject(error) : resolve()));
     });

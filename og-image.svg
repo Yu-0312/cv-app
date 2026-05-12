@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">CV Studio</title>
+  <desc id="desc">Default Open Graph preview image for CV Studio public share pages.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#fffaf4"/>
+      <stop offset="0.55" stop-color="#f3f5f1"/>
+      <stop offset="1" stop-color="#e5edf1"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0" stop-color="#ad3f2f"/>
+      <stop offset="1" stop-color="#214e74"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect x="82" y="76" width="1036" height="478" rx="34" fill="#fffefb" stroke="#d8cfc2" stroke-width="2"/>
+  <rect x="126" y="124" width="84" height="84" rx="24" fill="url(#accent)"/>
+  <text x="168" y="178" text-anchor="middle" font-family="Avenir Next, Noto Sans TC, sans-serif" font-size="30" font-weight="800" fill="#fff">CV</text>
+  <text x="246" y="160" font-family="Avenir Next, Noto Sans TC, sans-serif" font-size="28" font-weight="800" fill="#1f2430">CV Studio</text>
+  <text x="246" y="200" font-family="Avenir Next, Noto Sans TC, sans-serif" font-size="20" fill="#5f6675">履歷、作品集、投遞紀錄與公開分享頁</text>
+  <text x="126" y="332" font-family="Iowan Old Style, Palatino Linotype, Noto Serif TC, serif" font-size="68" font-weight="700" fill="#162033">Build a shareable CV</text>
+  <text x="126" y="388" font-family="Avenir Next, Noto Sans TC, sans-serif" font-size="25" fill="#4e5867">Organize portfolio assets, bilingual fields, versions, and applications in one workspace.</text>
+  <rect x="126" y="444" width="196" height="48" rx="24" fill="#ad3f2f"/>
+  <text x="224" y="476" text-anchor="middle" font-family="Avenir Next, Noto Sans TC, sans-serif" font-size="18" font-weight="800" fill="#fff">Public Profile</text>
+  <rect x="348" y="444" width="170" height="48" rx="24" fill="#214e74"/>
+  <text x="433" y="476" text-anchor="middle" font-family="Avenir Next, Noto Sans TC, sans-serif" font-size="18" font-weight="800" fill="#fff">Portfolio</text>
+</svg>

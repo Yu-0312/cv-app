@@ -4,6 +4,17 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#0f172a" />
+  <meta name="description" content="CV Studio helps students and job seekers build CVs, learning portfolios, public share pages, and application records in one PWA workspace." />
+  <meta property="og:type" content="profile" />
+  <meta property="og:site_name" content="CV Studio" />
+  <meta property="og:title" content="CV Studio" />
+  <meta property="og:description" content="Build a polished CV, organize portfolio materials, and publish a shareable profile." />
+  <meta property="og:image" content="og-image.svg" />
+  <meta property="og:image:alt" content="CV Studio public share preview" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="CV Studio" />
+  <meta name="twitter:description" content="Build a polished CV, organize portfolio materials, and publish a shareable profile." />
+  <meta name="twitter:image" content="og-image.svg" />
   <title>CV Studio</title>
   <link rel="manifest" href="manifest.json" />
   <link rel="icon" href="icon.svg" type="image/svg+xml" />
@@ -3770,6 +3781,111 @@
       color: var(--muted);
       font-style: italic;
     }
+    .compact-field-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px;
+    }
+    .compact-field-grid input,
+    .compact-field-grid select,
+    .compact-field-grid textarea,
+    .tool-row input,
+    .tool-row select,
+    .tool-row textarea {
+      min-width: 0;
+      padding: 7px 9px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: rgba(255,255,255,0.82);
+      color: var(--ink);
+      font-size: 0.78rem;
+    }
+    .compact-field-grid textarea {
+      min-height: 72px;
+      resize: vertical;
+    }
+    .compact-field-grid .full {
+      grid-column: 1 / -1;
+    }
+    .mini-list {
+      display: grid;
+      gap: 7px;
+      margin-top: 8px;
+    }
+    .mini-list-item {
+      display: grid;
+      gap: 6px;
+      padding: 9px 10px;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: rgba(255,255,255,0.64);
+      font-size: 0.8rem;
+    }
+    .mini-list-item-head {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      align-items: flex-start;
+    }
+    .mini-list-item strong {
+      min-width: 0;
+      color: var(--ink);
+      line-height: 1.35;
+    }
+    .mini-list-item span,
+    .mini-list-item small {
+      color: var(--muted);
+      line-height: 1.45;
+    }
+    .mini-list-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+    .mini-list-actions button,
+    .mini-list-actions a {
+      padding: 4px 9px;
+      border-radius: 999px;
+      font-size: 0.72rem;
+      text-decoration: none;
+    }
+    .asset-thumb {
+      width: 54px;
+      height: 42px;
+      flex: 0 0 auto;
+      border-radius: 8px;
+      object-fit: cover;
+      border: 1px solid var(--line);
+      background: rgba(33,78,116,0.07);
+    }
+    .asset-file-mark {
+      width: 54px;
+      height: 42px;
+      display: grid;
+      place-items: center;
+      border-radius: 8px;
+      border: 1px solid var(--line);
+      background: rgba(33,78,116,0.07);
+      color: var(--accent-2);
+      font-weight: 800;
+      font-size: 0.74rem;
+    }
+    .status-chip {
+      display: inline-flex;
+      align-items: center;
+      width: fit-content;
+      padding: 3px 8px;
+      border-radius: 999px;
+      background: rgba(33,78,116,0.08);
+      color: var(--accent-2);
+      font-size: 0.7rem;
+      font-weight: 800;
+    }
+    @media (max-width: 720px) {
+      .compact-field-grid {
+        grid-template-columns: 1fr;
+      }
+    }
 
     /* QR code */
     #qrCanvas {
@@ -4821,17 +4937,75 @@
               </div>
             </div>
 
-            <!-- Version snapshots -->
+            <!-- CV versions and applications -->
             <div class="editor-tool" style="background:rgba(255,255,255,0.6);border:1px solid var(--line);border-radius:14px;padding:12px 14px;">
-              <strong style="font-size:0.82rem;">版本快照</strong>
-              <p style="font-size:0.75rem;color:var(--muted);margin:4px 0 8px;">針對不同職位保留不同版本（最多 5 個）</p>
-              <div class="tool-row" style="margin-bottom:8px;gap:6px;">
-                <input id="snapshotNameInput" type="text" placeholder="快照名稱…" style="flex:1;min-width:0;padding:5px 9px;border-radius:8px;border:1px solid var(--line);font-size:0.78rem;background:rgba(255,255,255,0.8);" />
-                <button id="saveSnapshotBtn" class="secondary" type="button" style="padding:5px 12px;font-size:0.78rem;white-space:nowrap;">儲存快照</button>
+              <strong style="font-size:0.82rem;">多版本 CV / 投遞紀錄</strong>
+              <p style="font-size:0.75rem;color:var(--muted);margin:4px 0 8px;">為不同職位保存履歷版本，並記錄每次投遞狀態。</p>
+              <div class="compact-field-grid">
+                <input id="snapshotNameInput" type="text" placeholder="版本名稱，例如：前端工程師版" />
+                <input id="snapshotRoleInput" type="text" placeholder="目標職位" />
+                <input id="snapshotCompanyInput" class="full" type="text" placeholder="目標公司 / 學校（選填）" />
+              </div>
+              <div class="tool-row" style="margin:8px 0;">
+                <button id="saveSnapshotBtn" class="secondary" type="button" style="padding:5px 12px;font-size:0.78rem;white-space:nowrap;">儲存版本</button>
               </div>
               <div class="snapshot-list" id="snapshotList">
-                <span class="snapshot-empty">尚無快照。</span>
+                <span class="snapshot-empty">尚無版本。</span>
               </div>
+              <div style="height:1px;background:var(--line);margin:10px 0;"></div>
+              <div class="compact-field-grid">
+                <input id="applicationCompanyInput" type="text" placeholder="公司 / 單位" />
+                <input id="applicationRoleInput" type="text" placeholder="投遞職位 / 申請項目" />
+                <select id="applicationStatusSelect">
+                  <option value="準備中">準備中</option>
+                  <option value="已投遞">已投遞</option>
+                  <option value="面試中">面試中</option>
+                  <option value="已錄取">已錄取</option>
+                  <option value="未錄取">未錄取</option>
+                  <option value="暫緩">暫緩</option>
+                </select>
+                <select id="applicationVersionSelect">
+                  <option value="">未指定版本</option>
+                </select>
+                <input id="applicationDateInput" type="date" />
+                <input id="applicationLinkInput" type="url" placeholder="職缺 / 分享連結（選填）" />
+                <textarea id="applicationNoteInput" class="full" placeholder="備註、聯絡窗口、下一步"></textarea>
+              </div>
+              <div class="tool-row" style="margin:8px 0;">
+                <button id="addApplicationBtn" class="soft" type="button" style="padding:5px 12px;font-size:0.78rem;">新增投遞紀錄</button>
+              </div>
+              <div class="mini-list" id="applicationList">
+                <span class="snapshot-empty">尚無投遞紀錄。</span>
+              </div>
+            </div>
+
+            <!-- Bilingual content mapping -->
+            <div class="editor-tool" style="background:rgba(255,255,255,0.6);border:1px solid var(--line);border-radius:14px;padding:12px 14px;">
+              <strong style="font-size:0.82rem;">雙語內容欄位對照</strong>
+              <p style="font-size:0.75rem;color:var(--muted);margin:4px 0 8px;">可逐欄建立中文與英文內容；履歷標題語言切到 English 時會優先使用英文欄位。</p>
+              <div class="compact-field-grid">
+                <select id="bilingualFieldSelect" class="full">
+                  <option value="name">姓名</option>
+                  <option value="role">標題 / 角色</option>
+                  <option value="location">地點</option>
+                  <option value="website">網站 / 作品集</option>
+                  <option value="summary">摘要</option>
+                  <option value="skills">技能標籤</option>
+                  <option value="highlights">核心亮點</option>
+                  <option value="experience">工作 / 實習經歷</option>
+                  <option value="education">學歷</option>
+                  <option value="projects">專案 / 作品</option>
+                  <option value="awards">獎項 / 證照</option>
+                </select>
+                <textarea id="bilingualZhInput" placeholder="中文內容"></textarea>
+                <textarea id="bilingualEnInput" placeholder="English content"></textarea>
+              </div>
+              <div class="tool-row" style="margin-top:8px;">
+                <button id="saveBilingualBtn" class="secondary" type="button" style="padding:5px 12px;font-size:0.78rem;">儲存對照</button>
+                <button id="syncBilingualFromCurrentBtn" class="soft" type="button" style="padding:5px 12px;font-size:0.78rem;">用目前欄位填入中文</button>
+                <button id="clearBilingualFieldBtn" class="ghost" type="button" style="padding:5px 12px;font-size:0.78rem;">清除此欄</button>
+              </div>
+              <div id="bilingualMappingStatus" class="snapshot-empty" style="display:block;margin-top:8px;">尚未建立雙語對照。</div>
             </div>
 
             <!-- Export / Import + Clear -->
@@ -5393,6 +5567,26 @@
                   <label>封面圖片網址</label>
                   <input id="pfCoverImage" type="url" placeholder="https://..." />
                 </div>
+              </div>
+            </div>
+
+            <div class="section-card" id="pfAssetSection">
+              <h3>附件與素材庫</h3>
+              <p>集中管理作品集圖片、PDF 與補充附件；登入後會上傳到 Supabase Storage，未登入時可暫存圖片素材。</p>
+              <div class="tool-row" style="margin-bottom:8px;">
+                <button id="pfUploadAssetBtn" class="secondary" type="button">上傳附件 / 圖片</button>
+                <input id="pfAssetFileInput" type="file" accept="image/png,image/jpeg,image/webp,image/gif,application/pdf,.pdf,.doc,.docx,.ppt,.pptx,.zip" hidden />
+                <span id="pfAssetUploadStatus" class="snapshot-empty">圖片可直接套到封面或章節。</span>
+              </div>
+              <div class="compact-field-grid">
+                <input id="pfAssetNameInput" type="text" placeholder="素材名稱（選填）" />
+                <input id="pfAssetUrlInput" type="url" placeholder="貼上公開素材 URL" />
+              </div>
+              <div class="tool-row" style="margin-top:8px;">
+                <button id="pfAddAssetUrlBtn" class="soft" type="button" style="padding:6px 12px;font-size:0.78rem;">加入 URL 素材</button>
+              </div>
+              <div id="pfAssetList" class="mini-list">
+                <span class="snapshot-empty">尚無素材。</span>
               </div>
             </div>
 
@@ -5993,11 +6187,34 @@
         "黑": "Black",
         "自訂顏色": "Custom Color",
         "還原預設色": "Reset Default Color",
-        "版本快照": "Version Snapshots",
-        "針對不同職位保留不同版本（最多 5 個）": "Keep different versions for different roles (up to 5).",
-        "快照名稱…": "Snapshot name...",
-        "儲存快照": "Save Snapshot",
-        "尚無快照。": "No snapshots yet.",
+        "多版本 CV / 投遞紀錄": "CV Versions / Application Records",
+        "為不同職位保存履歷版本，並記錄每次投遞狀態。": "Save resume versions for different roles and track each application.",
+        "版本名稱，例如：前端工程師版": "Version name, e.g. Frontend Engineer",
+        "目標職位": "Target role",
+        "目標公司 / 學校（選填）": "Target company / school (optional)",
+        "儲存版本": "Save Version",
+        "尚無版本。": "No versions yet.",
+        "公司 / 單位": "Company / Organization",
+        "投遞職位 / 申請項目": "Role / Application item",
+        "準備中": "Preparing",
+        "已投遞": "Applied",
+        "面試中": "Interviewing",
+        "已錄取": "Accepted",
+        "未錄取": "Rejected",
+        "暫緩": "Paused",
+        "未指定版本": "No version selected",
+        "職缺 / 分享連結（選填）": "Job / share link (optional)",
+        "備註、聯絡窗口、下一步": "Notes, contact, next step",
+        "新增投遞紀錄": "Add Application Record",
+        "尚無投遞紀錄。": "No application records yet.",
+        "雙語內容欄位對照": "Bilingual Content Mapping",
+        "可逐欄建立中文與英文內容；履歷標題語言切到 English 時會優先使用英文欄位。": "Map Chinese and English content field by field; English resume mode uses English values first.",
+        "中文內容": "Chinese content",
+        "English content": "English content",
+        "儲存對照": "Save Mapping",
+        "用目前欄位填入中文": "Fill Chinese From Current Field",
+        "清除此欄": "Clear This Field",
+        "尚未建立雙語對照。": "No bilingual mappings yet.",
         "資料管理": "Data Management",
         "備份或匯入 CV 編輯器資料。PDF CV 請到求職顧問上傳分析。": "Back up or import CV editor data. Upload PDF CVs in Career Advisor for analysis.",
         "匯出 JSON": "Export JSON",
@@ -6143,6 +6360,14 @@
         "選填": "Optional",
         "附註欄位": "Note Field",
         "封面圖片網址": "Cover Image URL",
+        "附件與素材庫": "Attachments and Asset Library",
+        "集中管理作品集圖片、PDF 與補充附件；登入後會上傳到 Supabase Storage，未登入時可暫存圖片素材。": "Manage portfolio images, PDFs, and supporting attachments. Signed-in files upload to Supabase Storage; signed-out image assets can be kept locally.",
+        "上傳附件 / 圖片": "Upload Attachment / Image",
+        "圖片可直接套到封面或章節。": "Images can be applied to the cover or sections.",
+        "素材名稱（選填）": "Asset name (optional)",
+        "貼上公開素材 URL": "Paste public asset URL",
+        "加入 URL 素材": "Add URL Asset",
+        "尚無素材。": "No assets yet.",
         "章節內容": "Chapter Content",
         "每個章節對應一頁內容頁，可加入多個小節（標題 ＋ 內文 ＋ 圖片）。": "Each chapter becomes one content page. Add multiple sections with title, body, and image.",
         "＋ 新增章節": "+ Add Chapter",
@@ -6766,6 +6991,8 @@
       const RESUME_LANGUAGE_KEY = "cv-studio-resume-language-v1";
       const PDF_PAGE_MODE_KEY = "cv-studio-pdf-page-mode-v1";
       const PORTFOLIO_STORAGE_KEY = "pf-studio-local-v4";
+      const APPLICATIONS_KEY = "cv-studio-applications-v1";
+      const BILINGUAL_FIELDS = ["name", "role", "location", "website", "summary", "skills", "highlights", "experience", "education", "projects", "awards"];
       const defaultData = {
         name: "",
         role: "",
@@ -6782,7 +7009,8 @@
         projects: "",
         awards: "",
         importedPdfText: "",
-        importedPdfFileName: ""
+        importedPdfFileName: "",
+        bilingualContent: {}
       };
       const CV_FIELD_PLACEHOLDER_VALUES = {
         name: ["姓名"],
@@ -7419,8 +7647,21 @@
         }
       }
 
+      function normalizeBilingualContent(value) {
+        const source = value && typeof value === "object" ? value : {};
+        return BILINGUAL_FIELDS.reduce((next, field) => {
+          const item = source[field] && typeof source[field] === "object" ? source[field] : {};
+          next[field] = {
+            zh: String(item.zh || ""),
+            en: String(item.en || "")
+          };
+          return next;
+        }, {});
+      }
+
       function normalizeCvData(data) {
         const next = { ...defaultData, ...(data || {}) };
+        next.bilingualContent = normalizeBilingualContent(next.bilingualContent);
         Object.entries(CV_FIELD_PLACEHOLDER_VALUES).forEach(([field, values]) => {
           const current = String(next[field] || "").trim();
           if (values.includes(current)) {
@@ -7516,13 +7757,35 @@
         window.dispatchEvent(new CustomEvent("cv:data-updated", { detail: { source } }));
       }
 
+      function loadPortfolioContentForCloud() {
+        try {
+          return JSON.parse(localStorage.getItem(PORTFOLIO_STORAGE_KEY) || "{}");
+        } catch {
+          return {};
+        }
+      }
+
       function buildProfileContent() {
         return {
           ...normalizeCvData(state.data),
           _layoutPrefs: state.layoutPrefs || {},
           _workflowMode: state.workflowMode || "template-first",
           _resumeLanguage: state.resumeLanguage || "auto",
-          _pdfPageMode: state.pdfPageMode || "auto"
+          _pdfPageMode: state.pdfPageMode || "auto",
+          _portfolioData: loadPortfolioContentForCloud(),
+          _cvVersions: loadSnapshots(),
+          _applicationRecords: loadApplications()
+        };
+      }
+
+      function buildPublicProfileContent(extraMeta = {}) {
+        return {
+          ...normalizeCvData(state.data),
+          _layoutPrefs: state.layoutPrefs || {},
+          _workflowMode: state.workflowMode || "template-first",
+          _resumeLanguage: state.resumeLanguage || "auto",
+          _pdfPageMode: state.pdfPageMode || "auto",
+          _shareSeo: extraMeta
         };
       }
 
@@ -7550,6 +7813,16 @@
         if (persist) {
           saveJson(STORAGE_KEY, state.data);
           saveJson(LAYOUT_KEY, state.layoutPrefs);
+          if (content._portfolioData && typeof content._portfolioData === "object") {
+            saveJson(PORTFOLIO_STORAGE_KEY, content._portfolioData);
+            window.dispatchEvent(new CustomEvent("portfolio:cloud-loaded", { detail: { source } }));
+          }
+          if (Array.isArray(content._cvVersions)) {
+            saveJson(SNAPSHOTS_KEY, content._cvVersions);
+          }
+          if (Array.isArray(content._applicationRecords)) {
+            saveJson(APPLICATIONS_KEY, content._applicationRecords);
+          }
           localStorage.setItem(WORKFLOW_KEY, state.workflowMode);
           localStorage.setItem(RESUME_LANGUAGE_KEY, state.resumeLanguage);
           localStorage.setItem(PDF_PAGE_MODE_KEY, state.pdfPageMode);
@@ -7560,6 +7833,9 @@
         syncWorkflowUi();
         syncLayoutControls();
         updateTemplate(state.template, persist);
+        renderSnapshotList();
+        renderApplicationList();
+        renderBilingualMappingControls();
         updatePreview(true);
         if (persist) {
           notifyCvDataUpdated(source);
@@ -7685,6 +7961,37 @@
       function getResumeLanguage() {
         if (state.resumeLanguage === "zh" || state.resumeLanguage === "en") return state.resumeLanguage;
         return window.cvStudioI18n?.isEnglish?.() ? "en" : "zh";
+      }
+
+      function getContentLanguage() {
+        return getResumeLanguage() === "en" ? "en" : "zh";
+      }
+
+      function getBilingualContent() {
+        state.data.bilingualContent = normalizeBilingualContent(state.data.bilingualContent);
+        return state.data.bilingualContent;
+      }
+
+      function getDisplayFieldValue(field) {
+        const baseValue = state.data[field] || "";
+        if (!BILINGUAL_FIELDS.includes(field)) return baseValue;
+        const lang = getContentLanguage();
+        const mapped = getBilingualContent()[field]?.[lang] || "";
+        return String(mapped).trim() ? mapped : baseValue;
+      }
+
+      function setDisplayFieldValue(field, value) {
+        if (!BILINGUAL_FIELDS.includes(field) || state.resumeLanguage === "auto") {
+          state.data[field] = value;
+          return;
+        }
+        const lang = getContentLanguage();
+        const content = getBilingualContent();
+        content[field] = content[field] || { zh: "", en: "" };
+        content[field][lang] = value;
+        if (lang === "zh") {
+          state.data[field] = value;
+        }
       }
 
       function cvLabel(key) {
@@ -7954,7 +8261,7 @@
       }
 
       function buildAvatar(layoutState) {
-        const initials = (state.data.name || "CV").trim().slice(0, 2).toUpperCase();
+        const initials = (getDisplayFieldValue("name") || "CV").trim().slice(0, 2).toUpperCase();
         return `
           <div class="avatar ${escapeHtml(layoutState.avatarShape)}">
             ${state.data.avatar ? `<img src="${escapeHtml(state.data.avatar)}" alt="avatar" />` : escapeHtml(initials)}
@@ -7993,13 +8300,13 @@
           return `
             <div class="${profileClass}">
               ${buildAvatar(layoutState)}
-              ${ce("name", "h1", "cv-name", state.data.name || "", cvLabel("name"))}
-              ${ce("role", "div", "cv-role", state.data.role || "", cvLabel("role"))}
-              ${hasStandaloneSummary ? "" : ce("summary", "div", "cv-summary", state.data.summary || "", cvLabel("summary"))}
+              ${ce("name", "h1", "cv-name", getDisplayFieldValue("name"), cvLabel("name"))}
+              ${ce("role", "div", "cv-role", getDisplayFieldValue("role"), cvLabel("role"))}
+              ${hasStandaloneSummary ? "" : ce("summary", "div", "cv-summary", getDisplayFieldValue("summary"), cvLabel("summary"))}
             </div>`;
         }
         if (blockId === "summary") {
-          return `<div class="main-block"><h3>${escapeHtml(cvLabel("summary"))}</h3>${ce("summary", "div", "cv-summary", state.data.summary || "", cvLabel("summaryPlaceholder"))}</div>`;
+          return `<div class="main-block"><h3>${escapeHtml(cvLabel("summary"))}</h3>${ce("summary", "div", "cv-summary", getDisplayFieldValue("summary"), cvLabel("summaryPlaceholder"))}</div>`;
         }
         if (blockId === "contacts") {
           const cfields = [
@@ -8009,12 +8316,12 @@
             { f: "website",  ph: "網站 / 作品集" }
           ];
           const items = cfields.map(cf =>
-            `<div class="contact-item" contenteditable="true" data-field="${cf.f}" data-sync="text" spellcheck="false" data-ph="${escapeHtml(uiText(cf.ph))}">${escapeHtml(state.data[cf.f] || "")}</div>`
+            `<div class="contact-item" contenteditable="true" data-field="${cf.f}" data-sync="text" spellcheck="false" data-ph="${escapeHtml(uiText(cf.ph))}">${escapeHtml(getDisplayFieldValue(cf.f))}</div>`
           ).join("");
           return `<div class="aside-block"><h3>${escapeHtml(cvLabel("contacts"))}</h3><div class="contact-list">${items}</div></div>`;
         }
         if (blockId === "skills") {
-          const skillList = splitLines(state.data.skills.replaceAll(",", "\n"));
+          const skillList = splitLines(getDisplayFieldValue("skills").replaceAll(",", "\n"));
           const pills = skillList.length
             ? skillList.map((s, i) =>
                 `<span class="simple-pill" contenteditable="true" data-field="skills" data-sync="list-item" data-li="${i}" spellcheck="false" data-ph="${escapeHtml(cvLabel("skillsPlaceholder"))}">${escapeHtml(s)}</span>`
@@ -8023,7 +8330,7 @@
           return `<div class="aside-block"><h3>${escapeHtml(cvLabel("skills"))}</h3><div class="simple-list">${pills}</div></div>`;
         }
         if (blockId === "highlights") {
-          const lines = splitLines(state.data.highlights);
+          const lines = splitLines(getDisplayFieldValue("highlights"));
           const items = lines.length
             ? lines.map((line, i) =>
                 `<div class="contact-item" contenteditable="true" data-field="highlights" data-sync="list-item" data-li="${i}" spellcheck="false" data-ph="${escapeHtml(cvLabel("highlightsPlaceholder"))}">${escapeHtml(line)}</div>`
@@ -8032,7 +8339,7 @@
           return `<div class="aside-block"><h3>${escapeHtml(cvLabel("highlights"))}</h3><div class="contact-list">${items}</div></div>`;
         }
         if (blockId === "awards") {
-          const lines = splitLines(state.data.awards);
+          const lines = splitLines(getDisplayFieldValue("awards"));
           const items = lines.length
             ? lines.map((line, i) =>
                 `<div class="contact-item" contenteditable="true" data-field="awards" data-sync="list-item" data-li="${i}" spellcheck="false" data-ph="${escapeHtml(cvLabel("awardsPlaceholder"))}">${escapeHtml(line)}</div>`
@@ -8041,13 +8348,13 @@
           return `<div class="aside-block"><h3>${escapeHtml(cvLabel("awards"))}</h3><div class="contact-list">${items}</div></div>`;
         }
         if (blockId === "experience") {
-          return `<div class="main-block"><h3>${escapeHtml(cvLabel("experience"))}</h3><div>${renderEditableTimeline(parseEntries(state.data.experience), "experience", cvLabel("emptyExperience"))}</div><button class="wysiwyg-add-btn" data-add-to="experience" type="button" style="margin-top:8px;">＋ ${escapeHtml(cvLabel("addExperience"))}</button></div>`;
+          return `<div class="main-block"><h3>${escapeHtml(cvLabel("experience"))}</h3><div>${renderEditableTimeline(parseEntries(getDisplayFieldValue("experience")), "experience", cvLabel("emptyExperience"))}</div><button class="wysiwyg-add-btn" data-add-to="experience" type="button" style="margin-top:8px;">＋ ${escapeHtml(cvLabel("addExperience"))}</button></div>`;
         }
         if (blockId === "projects") {
-          return `<div class="main-block"><h3>${escapeHtml(cvLabel("projects"))}</h3><div>${renderEditableTimeline(parseEntries(state.data.projects), "projects", cvLabel("emptyProjects"))}</div><button class="wysiwyg-add-btn" data-add-to="projects" type="button" style="margin-top:8px;">＋ ${escapeHtml(cvLabel("addProject"))}</button></div>`;
+          return `<div class="main-block"><h3>${escapeHtml(cvLabel("projects"))}</h3><div>${renderEditableTimeline(parseEntries(getDisplayFieldValue("projects")), "projects", cvLabel("emptyProjects"))}</div><button class="wysiwyg-add-btn" data-add-to="projects" type="button" style="margin-top:8px;">＋ ${escapeHtml(cvLabel("addProject"))}</button></div>`;
         }
         if (blockId === "education") {
-          return `<div class="main-block"><h3>${escapeHtml(cvLabel("education"))}</h3><div>${renderEditableTimeline(parseEntries(state.data.education), "education", cvLabel("emptyEducation"))}</div><button class="wysiwyg-add-btn" data-add-to="education" type="button" style="margin-top:8px;">＋ ${escapeHtml(cvLabel("addEducation"))}</button></div>`;
+          return `<div class="main-block"><h3>${escapeHtml(cvLabel("education"))}</h3><div>${renderEditableTimeline(parseEntries(getDisplayFieldValue("education")), "education", cvLabel("emptyEducation"))}</div><button class="wysiwyg-add-btn" data-add-to="education" type="button" style="margin-top:8px;">＋ ${escapeHtml(cvLabel("addEducation"))}</button></div>`;
         }
         return "";
       }
@@ -8464,6 +8771,184 @@
         }
       }
 
+      function getDefaultOgImageUrl() {
+        try {
+          return new URL("og-image.svg", getRedirectUrl()).toString();
+        } catch {
+          return "og-image.svg";
+        }
+      }
+
+      function setMetaTag(selector, attrName, attrValue, content) {
+        let node = document.head.querySelector(selector);
+        if (!node) {
+          node = document.createElement("meta");
+          node.setAttribute(attrName, attrValue);
+          document.head.appendChild(node);
+        }
+        node.setAttribute("content", content || "");
+      }
+
+      function setCanonicalUrl(url) {
+        let link = document.head.querySelector('link[rel="canonical"]');
+        if (!link) {
+          link = document.createElement("link");
+          link.rel = "canonical";
+          document.head.appendChild(link);
+        }
+        link.href = url || getCurrentCleanUrl();
+      }
+
+      function buildShareDescription(content = state.data) {
+        const summary = String(content.summary || "").replace(/\s+/g, " ").trim();
+        const role = String(content.role || "").trim();
+        const skills = String(content.skills || "").replace(/\n/g, ", ").trim();
+        return (summary || [role, skills].filter(Boolean).join(" · ") || "A public CV created with CV Studio").slice(0, 180);
+      }
+
+      function applyShareSeoMeta(meta = {}) {
+        const title = meta.title || state.data.name || "CV Studio";
+        const description = meta.description || buildShareDescription();
+        const imageUrl = meta.imageUrl || getDefaultOgImageUrl();
+        const url = meta.url || getCurrentCleanUrl();
+        document.title = meta.documentTitle || `${title} · CV Studio`;
+        setMetaTag('meta[name="description"]', "name", "description", description);
+        setMetaTag('meta[property="og:title"]', "property", "og:title", title);
+        setMetaTag('meta[property="og:description"]', "property", "og:description", description);
+        setMetaTag('meta[property="og:url"]', "property", "og:url", url);
+        setMetaTag('meta[property="og:image"]', "property", "og:image", imageUrl);
+        setMetaTag('meta[property="og:image:alt"]', "property", "og:image:alt", `${title} CV preview`);
+        setMetaTag('meta[name="twitter:title"]', "name", "twitter:title", title);
+        setMetaTag('meta[name="twitter:description"]', "name", "twitter:description", description);
+        setMetaTag('meta[name="twitter:image"]', "name", "twitter:image", imageUrl);
+        setCanonicalUrl(url);
+      }
+
+      function wrapCanvasText(ctx, text, x, y, maxWidth, lineHeight, maxLines = 3) {
+        const words = String(text || "").replace(/\s+/g, " ").trim().split(" ").filter(Boolean);
+        const lines = [];
+        let line = "";
+        words.forEach((word) => {
+          const next = line ? `${line} ${word}` : word;
+          if (ctx.measureText(next).width > maxWidth && line) {
+            lines.push(line);
+            line = word;
+          } else {
+            line = next;
+          }
+        });
+        if (line) lines.push(line);
+        lines.slice(0, maxLines).forEach((item, index) => {
+          const suffix = index === maxLines - 1 && lines.length > maxLines ? "..." : "";
+          ctx.fillText(`${item}${suffix}`, x, y + index * lineHeight);
+        });
+      }
+
+      async function generateShareOgImageBlob(meta = {}) {
+        const canvas = document.createElement("canvas");
+        canvas.width = 1200;
+        canvas.height = 630;
+        const ctx = canvas.getContext("2d");
+        if (!ctx) throw new Error("Canvas unavailable");
+
+        const gradient = ctx.createLinearGradient(0, 0, 1200, 630);
+        gradient.addColorStop(0, "#fffaf4");
+        gradient.addColorStop(0.58, "#f3f5f1");
+        gradient.addColorStop(1, "#e6eef2");
+        ctx.fillStyle = gradient;
+        ctx.fillRect(0, 0, 1200, 630);
+
+        ctx.fillStyle = "#fffefb";
+        ctx.strokeStyle = "#d8cfc2";
+        ctx.lineWidth = 2;
+        ctx.beginPath();
+        ctx.roundRect(82, 76, 1036, 478, 34);
+        ctx.fill();
+        ctx.stroke();
+
+        const accent = ctx.createLinearGradient(126, 124, 210, 208);
+        accent.addColorStop(0, "#ad3f2f");
+        accent.addColorStop(1, "#214e74");
+        ctx.fillStyle = accent;
+        ctx.beginPath();
+        ctx.roundRect(126, 124, 84, 84, 24);
+        ctx.fill();
+        ctx.fillStyle = "#ffffff";
+        ctx.font = "800 30px Avenir Next, Noto Sans TC, sans-serif";
+        ctx.textAlign = "center";
+        ctx.fillText("CV", 168, 178);
+        ctx.textAlign = "left";
+
+        ctx.fillStyle = "#1f2430";
+        ctx.font = "800 30px Avenir Next, Noto Sans TC, sans-serif";
+        ctx.fillText("CV Studio", 246, 160);
+        ctx.fillStyle = "#5f6675";
+        ctx.font = "22px Avenir Next, Noto Sans TC, sans-serif";
+        ctx.fillText("Public CV Share", 246, 200);
+
+        ctx.fillStyle = "#162033";
+        ctx.font = "700 62px Iowan Old Style, Palatino Linotype, Noto Serif TC, serif";
+        wrapCanvasText(ctx, meta.title || state.data.name || "Untitled CV", 126, 326, 880, 68, 2);
+        ctx.fillStyle = "#ad3f2f";
+        ctx.fillRect(126, 378, 76, 5);
+        ctx.fillStyle = "#4e5867";
+        ctx.font = "25px Avenir Next, Noto Sans TC, sans-serif";
+        wrapCanvasText(ctx, meta.description || buildShareDescription(), 126, 435, 900, 36, 3);
+
+        ctx.fillStyle = "#214e74";
+        ctx.beginPath();
+        ctx.roundRect(126, 506, 220, 48, 24);
+        ctx.fill();
+        ctx.fillStyle = "#ffffff";
+        ctx.font = "800 18px Avenir Next, Noto Sans TC, sans-serif";
+        ctx.textAlign = "center";
+        ctx.fillText(meta.templateLabel || "CV Profile", 236, 537);
+
+        return new Promise((resolve, reject) => {
+          canvas.toBlob((blob) => {
+            if (blob) resolve(blob);
+            else reject(new Error("無法產生分享預覽圖。"));
+          }, "image/png", 0.92);
+        });
+      }
+
+      function safeStorageName(name) {
+        return String(name || "asset")
+          .toLowerCase()
+          .replace(/[^a-z0-9._-]+/g, "-")
+          .replace(/^-+|-+$/g, "")
+          .slice(0, 80) || "asset";
+      }
+
+      async function uploadPublicStorageFile(fileOrBlob, pathPrefix, fileName, contentType) {
+        if (!state.user || !state.client?.storage) {
+          throw new Error("請先登入並確認 Supabase Storage 已啟用。");
+        }
+        const storage = state.client.storage.from("cv-images");
+        const path = `${state.user.id}/${pathPrefix}/${Date.now()}-${safeStorageName(fileName)}`;
+        const { error } = await storage.upload(path, fileOrBlob, {
+          cacheControl: "3600",
+          contentType,
+          upsert: true
+        });
+        if (error) throw error;
+        const { data } = storage.getPublicUrl(path);
+        return { path, publicUrl: data?.publicUrl || "" };
+      }
+
+      async function uploadShareOgImage(slug, blob) {
+        const storage = state.client.storage.from("cv-images");
+        const path = `${state.user.id}/share-og/${safeStorageName(slug)}.png`;
+        const { error } = await storage.upload(path, blob, {
+          cacheControl: "3600",
+          contentType: "image/png",
+          upsert: true
+        });
+        if (error) throw error;
+        const { data } = storage.getPublicUrl(path);
+        return data?.publicUrl || "";
+      }
+
       async function copyTextToClipboard(text) {
         if (!text) return false;
         if (navigator.clipboard?.writeText) {
@@ -8499,12 +8984,27 @@
           return;
         }
         const slug = state.shareSlug || generateShareSlug();
+        const shareUrl = getPublicShareUrl(slug);
+        const seoMeta = {
+          title: state.data.name || state.user.user_metadata?.full_name || state.user.email || "CV",
+          description: buildShareDescription(state.data),
+          imageUrl: getDefaultOgImageUrl(),
+          url: shareUrl,
+          templateLabel: templateLabels[state.template] || state.template
+        };
+        try {
+          const blob = await generateShareOgImageBlob(seoMeta);
+          const imageUrl = await uploadShareOgImage(slug, blob);
+          if (imageUrl) seoMeta.imageUrl = imageUrl;
+        } catch {
+          // The share page can still publish with the static fallback image.
+        }
         const payload = {
           user_id: state.user.id,
           slug,
-          title: state.data.name || state.user.user_metadata?.full_name || state.user.email || "CV",
+          title: seoMeta.title,
           template_id: state.template,
-          content: buildProfileContent(),
+          content: buildPublicProfileContent(seoMeta),
           published_at: new Date().toISOString()
         };
         const { error } = await state.client
@@ -8516,7 +9016,8 @@
         }
         state.shareSlug = slug;
         updateActionButtons();
-        const url = getPublicShareUrl(slug);
+        applyShareSeoMeta(seoMeta);
+        const url = shareUrl;
         await copyTextToClipboard(url);
         setMessage(`公開分享頁已發布，連結已準備好：${url}`, "success");
       }
@@ -8578,7 +9079,13 @@
           source: "public-share"
         });
         enterPublicShareMode();
-        document.title = `${data.title || state.data.name || "CV"} · CV Studio`;
+        applyShareSeoMeta({
+          ...(data.content?._shareSeo || {}),
+          title: data.title || data.content?._shareSeo?.title || state.data.name || "CV",
+          description: data.content?._shareSeo?.description || buildShareDescription(data.content || state.data),
+          imageUrl: data.content?._shareSeo?.imageUrl || getDefaultOgImageUrl(),
+          url: getPublicShareUrl(slug)
+        });
         setMessage("正在檢視公開 CV 分享頁。", "success");
         return true;
       }
@@ -9198,6 +9705,7 @@
           node.addEventListener("input", (event) => {
             state.data[field] = event.target.value;
             saveJson(STORAGE_KEY, state.data);
+            if (BILINGUAL_FIELDS.includes(field)) renderBilingualMappingControls();
             updatePreview();
             notifyCvDataUpdated("field-input");
           });
@@ -9454,26 +9962,27 @@
         const text = getEditablePlainText(el);
 
         if (syncType === "text") {
-          state.data[field] = text;
+          setDisplayFieldValue(field, text);
         } else if (syncType === "list-item") {
           const idx = parseInt(el.dataset.li, 10);
           let lines = splitLines(field === "skills"
-            ? state.data[field].replaceAll(",", "\n")
-            : state.data[field]);
+            ? getDisplayFieldValue(field).replaceAll(",", "\n")
+            : getDisplayFieldValue(field));
           if (!isNaN(idx) && idx < lines.length) lines[idx] = text;
-          state.data[field] = field === "skills" ? lines.join(", ") : lines.join("\n");
+          setDisplayFieldValue(field, field === "skills" ? lines.join(", ") : lines.join("\n"));
         } else if (syncType === "entry-field") {
           const ei = parseInt(el.dataset.ei, 10);
           const ep = el.dataset.ep;
-          const entries = parseEntries(state.data[field]);
+          const entries = parseEntries(getDisplayFieldValue(field));
           if (!isNaN(ei) && entries[ei] && ep) entries[ei][ep] = text;
-          state.data[field] = serializeEntries(entries);
+          setDisplayFieldValue(field, serializeEntries(entries));
         }
 
         saveJson(STORAGE_KEY, state.data);
         // keep hidden form inputs in sync
         const inp = $(field);
         if (inp) inp.value = state.data[field] || "";
+        renderBilingualMappingControls();
         notifyCvDataUpdated("wysiwyg-input");
       }
 
@@ -9483,27 +9992,28 @@
         if (!addTo) return;
 
         if (addTo === "skills") {
-          const cur = (state.data.skills || "").trim();
-          state.data.skills = cur ? cur + ", 新技能" : "新技能";
+          const cur = (getDisplayFieldValue("skills") || "").trim();
+          setDisplayFieldValue("skills", cur ? cur + ", 新技能" : "新技能");
         } else if (addTo === "highlights") {
-          const cur = (state.data.highlights || "").trim();
-          state.data.highlights = cur ? cur + "\n新亮點" : "新亮點";
+          const cur = (getDisplayFieldValue("highlights") || "").trim();
+          setDisplayFieldValue("highlights", cur ? cur + "\n新亮點" : "新亮點");
         } else if (addTo === "awards") {
-          const cur = (state.data.awards || "").trim();
-          state.data.awards = cur ? cur + "\n新獎項" : "新獎項";
+          const cur = (getDisplayFieldValue("awards") || "").trim();
+          setDisplayFieldValue("awards", cur ? cur + "\n新獎項" : "新獎項");
         } else if (["experience", "projects", "education"].includes(addTo)) {
           const placeholders = {
             experience:  "新職稱 | 單位 | 日期 | 內容說明",
             projects:    "新專案名 | 類型 | 日期 | 內容說明",
             education:   "學校 / 科系 | 學位 | 日期 | 說明"
           };
-          const cur = (state.data[addTo] || "").trim();
-          state.data[addTo] = cur ? cur + "\n\n" + placeholders[addTo] : placeholders[addTo];
+          const cur = (getDisplayFieldValue(addTo) || "").trim();
+          setDisplayFieldValue(addTo, cur ? cur + "\n\n" + placeholders[addTo] : placeholders[addTo]);
         }
 
         saveJson(STORAGE_KEY, state.data);
         const inp = $(addTo);
         if (inp) inp.value = state.data[addTo] || "";
+        renderBilingualMappingControls();
         updatePreview(true);
         notifyCvDataUpdated("wysiwyg-add");
       }
@@ -9782,10 +10292,10 @@
       }
 
       /* ══════════════════════════════════════════════════════
-         TOOLS – Version Snapshots
+         TOOLS – CV versions and application records
       ══════════════════════════════════════════════════════ */
       const SNAPSHOTS_KEY = "cv-studio-snapshots-v1";
-      const MAX_SNAPSHOTS = 5;
+      const MAX_SNAPSHOTS = 12;
 
       function loadSnapshots() {
         return loadJson(SNAPSHOTS_KEY, []);
@@ -9793,44 +10303,69 @@
 
       function saveSnapshot() {
         const nameInput = $("snapshotNameInput");
+        const roleInput = $("snapshotRoleInput");
+        const companyInput = $("snapshotCompanyInput");
         const name = nameInput ? nameInput.value.trim() : "";
-        if (!name) { setMessage("請先輸入快照名稱。", "error"); return; }
+        if (!name) { setMessage("請先輸入版本名稱。", "error"); return; }
         const snapshots = loadSnapshots();
         if (snapshots.length >= MAX_SNAPSHOTS) {
-          setMessage(`最多只能儲存 ${MAX_SNAPSHOTS} 個快照，請先刪除舊快照。`, "error");
+          setMessage(`最多只能儲存 ${MAX_SNAPSHOTS} 個版本，請先刪除舊版本。`, "error");
           return;
         }
         snapshots.push({
           id: Date.now(),
           name,
+          targetRole: roleInput?.value.trim() || "",
+          targetCompany: companyInput?.value.trim() || "",
           date: new Date().toLocaleString("zh-TW", { month: "numeric", day: "numeric", hour: "2-digit", minute: "2-digit" }),
           template: state.template,
+          layoutPrefs: JSON.parse(JSON.stringify(state.layoutPrefs || {})),
+          resumeLanguage: state.resumeLanguage,
+          pdfPageMode: state.pdfPageMode,
           data: JSON.parse(JSON.stringify(state.data))
         });
         saveJson(SNAPSHOTS_KEY, snapshots);
         if (nameInput) nameInput.value = "";
+        if (roleInput) roleInput.value = "";
+        if (companyInput) companyInput.value = "";
         renderSnapshotList();
-        setMessage(`快照「${name}」已儲存。`, "success");
+        syncApplicationVersionSelect();
+        setMessage(`版本「${name}」已儲存。`, "success");
       }
 
       function restoreSnapshot(id) {
         const snapshots = loadSnapshots();
         const snap = snapshots.find(s => s.id === id);
         if (!snap) return;
-        if (!confirm(`確定要載入快照「${snap.name}」？目前未儲存的變更將被覆蓋。`)) return;
+        if (!confirm(`確定要載入版本「${snap.name}」？目前未儲存的變更將被覆蓋。`)) return;
         pushUndo();
         state.data = { ...state.data, ...snap.data };
+        if (snap.layoutPrefs && typeof snap.layoutPrefs === "object") {
+          state.layoutPrefs = snap.layoutPrefs;
+          saveJson(LAYOUT_KEY, state.layoutPrefs);
+        }
+        if (snap.resumeLanguage) {
+          state.resumeLanguage = snap.resumeLanguage;
+          localStorage.setItem(RESUME_LANGUAGE_KEY, state.resumeLanguage);
+        }
+        if (snap.pdfPageMode) {
+          state.pdfPageMode = snap.pdfPageMode;
+          localStorage.setItem(PDF_PAGE_MODE_KEY, state.pdfPageMode);
+        }
         saveJson(STORAGE_KEY, state.data);
         syncInputs();
         updateTemplate(snap.template || state.template, true);
+        syncLayoutControls();
+        renderBilingualMappingControls();
         updatePreview(true);
-        setMessage(`已載入快照「${snap.name}」。`, "success");
+        setMessage(`已載入版本「${snap.name}」。`, "success");
       }
 
       function deleteSnapshot(id) {
         const snapshots = loadSnapshots().filter(s => s.id !== id);
         saveJson(SNAPSHOTS_KEY, snapshots);
         renderSnapshotList();
+        syncApplicationVersionSelect();
       }
 
       function renderSnapshotList() {
@@ -9838,12 +10373,12 @@
         if (!list) return;
         const snapshots = loadSnapshots();
         if (!snapshots.length) {
-          list.innerHTML = `<span class="snapshot-empty">尚無快照，先輸入名稱再按「儲存快照」。</span>`;
+          list.innerHTML = `<span class="snapshot-empty">尚無版本，先輸入名稱再按「儲存版本」。</span>`;
           return;
         }
         list.innerHTML = snapshots.map(s => `
           <div class="snapshot-item">
-            <span class="snap-name" title="${escapeHtml(s.name)}">${escapeHtml(s.name)}</span>
+            <span class="snap-name" title="${escapeHtml(s.name)}">${escapeHtml(s.name)}${s.targetRole ? ` · ${escapeHtml(s.targetRole)}` : ""}${s.targetCompany ? ` @ ${escapeHtml(s.targetCompany)}` : ""}</span>
             <span class="snap-date">${escapeHtml(s.date)}</span>
             <button class="soft" type="button" onclick="restoreSnap(${s.id})">載入</button>
             <button class="ghost" type="button" onclick="deleteSnap(${s.id})" style="color:var(--danger);">✕</button>
@@ -9852,6 +10387,155 @@
 
       window.restoreSnap = (id) => restoreSnapshot(id);
       window.deleteSnap = (id) => { deleteSnapshot(id); };
+
+      function loadApplications() {
+        return loadJson(APPLICATIONS_KEY, []);
+      }
+
+      function syncApplicationVersionSelect() {
+        const select = $("applicationVersionSelect");
+        if (!select) return;
+        const current = select.value;
+        const options = loadSnapshots().map((snap) =>
+          `<option value="${escapeHtml(String(snap.id))}">${escapeHtml(snap.name)}${snap.targetRole ? ` · ${escapeHtml(snap.targetRole)}` : ""}</option>`
+        ).join("");
+        select.innerHTML = `<option value="">未指定版本</option>${options}`;
+        select.value = [...select.options].some((option) => option.value === current) ? current : "";
+      }
+
+      function addApplicationRecord() {
+        const company = $("applicationCompanyInput")?.value.trim() || "";
+        const role = $("applicationRoleInput")?.value.trim() || "";
+        if (!company && !role) {
+          setMessage("請至少輸入公司 / 單位或投遞職位。", "error");
+          return;
+        }
+        const applications = loadApplications();
+        applications.unshift({
+          id: Date.now(),
+          company,
+          role,
+          status: $("applicationStatusSelect")?.value || "準備中",
+          versionId: $("applicationVersionSelect")?.value || "",
+          date: $("applicationDateInput")?.value || new Date().toISOString().slice(0, 10),
+          link: $("applicationLinkInput")?.value.trim() || "",
+          note: $("applicationNoteInput")?.value.trim() || "",
+          createdAt: new Date().toISOString()
+        });
+        saveJson(APPLICATIONS_KEY, applications);
+        ["applicationCompanyInput", "applicationRoleInput", "applicationDateInput", "applicationLinkInput", "applicationNoteInput"].forEach((id) => {
+          const node = $(id);
+          if (node) node.value = "";
+        });
+        renderApplicationList();
+        setMessage("投遞紀錄已新增。", "success");
+      }
+
+      function deleteApplicationRecord(id) {
+        saveJson(APPLICATIONS_KEY, loadApplications().filter((item) => item.id !== id));
+        renderApplicationList();
+      }
+
+      function renderApplicationList() {
+        const list = $("applicationList");
+        if (!list) return;
+        const snapshots = loadSnapshots();
+        const snapshotById = new Map(snapshots.map((snap) => [String(snap.id), snap]));
+        const applications = loadApplications();
+        if (!applications.length) {
+          list.innerHTML = `<span class="snapshot-empty">尚無投遞紀錄。</span>`;
+          return;
+        }
+        list.innerHTML = applications.map((item) => {
+          const snap = snapshotById.get(String(item.versionId));
+          return `
+            <div class="mini-list-item">
+              <div class="mini-list-item-head">
+                <strong>${escapeHtml(item.company || "未命名單位")} · ${escapeHtml(item.role || "未命名職位")}</strong>
+                <span class="status-chip">${escapeHtml(item.status || "準備中")}</span>
+              </div>
+              <small>${escapeHtml(item.date || "")}${snap ? ` · 使用版本：${escapeHtml(snap.name)}` : ""}</small>
+              ${item.note ? `<span>${escapeHtml(item.note)}</span>` : ""}
+              <div class="mini-list-actions">
+                ${item.link ? `<a class="button-link soft" href="${escapeHtml(item.link)}" target="_blank" rel="noreferrer noopener">開啟連結</a>` : ""}
+                <button class="ghost" type="button" onclick="deleteApplicationRecord(${item.id})" style="color:var(--danger);">刪除</button>
+              </div>
+            </div>`;
+        }).join("");
+      }
+
+      window.deleteApplicationRecord = (id) => deleteApplicationRecord(id);
+
+      const BILINGUAL_FIELD_LABELS = {
+        name: "姓名",
+        role: "標題 / 角色",
+        location: "地點",
+        website: "網站 / 作品集",
+        summary: "摘要",
+        skills: "技能標籤",
+        highlights: "核心亮點",
+        experience: "工作 / 實習經歷",
+        education: "學歷",
+        projects: "專案 / 作品",
+        awards: "獎項 / 證照"
+      };
+
+      function selectedBilingualField() {
+        const field = $("bilingualFieldSelect")?.value || "summary";
+        return BILINGUAL_FIELDS.includes(field) ? field : "summary";
+      }
+
+      function renderBilingualMappingControls() {
+        const field = selectedBilingualField();
+        const content = getBilingualContent();
+        if ($("bilingualZhInput")) $("bilingualZhInput").value = content[field]?.zh || "";
+        if ($("bilingualEnInput")) $("bilingualEnInput").value = content[field]?.en || "";
+        const mapped = BILINGUAL_FIELDS
+          .filter((key) => (content[key]?.zh || "").trim() || (content[key]?.en || "").trim())
+          .map((key) => BILINGUAL_FIELD_LABELS[key] || key);
+        const status = $("bilingualMappingStatus");
+        if (status) {
+          status.textContent = mapped.length
+            ? `已建立 ${mapped.length} 個欄位對照：${mapped.join("、")}`
+            : "尚未建立雙語對照。";
+        }
+      }
+
+      function saveBilingualField() {
+        const field = selectedBilingualField();
+        const content = getBilingualContent();
+        content[field] = {
+          zh: $("bilingualZhInput")?.value || "",
+          en: $("bilingualEnInput")?.value || ""
+        };
+        if (content[field].zh.trim()) {
+          state.data[field] = content[field].zh;
+          const node = $(field);
+          if (node) node.value = state.data[field];
+        }
+        saveJson(STORAGE_KEY, state.data);
+        renderBilingualMappingControls();
+        updatePreview(true);
+        notifyCvDataUpdated("bilingual-content");
+        setMessage(`已儲存「${BILINGUAL_FIELD_LABELS[field]}」的雙語對照。`, "success");
+      }
+
+      function syncBilingualFromCurrent() {
+        const field = selectedBilingualField();
+        const input = $("bilingualZhInput");
+        if (input) input.value = state.data[field] || "";
+      }
+
+      function clearBilingualField() {
+        const field = selectedBilingualField();
+        const content = getBilingualContent();
+        content[field] = { zh: "", en: "" };
+        saveJson(STORAGE_KEY, state.data);
+        renderBilingualMappingControls();
+        updatePreview(true);
+        notifyCvDataUpdated("bilingual-clear");
+        setMessage(`已清除「${BILINGUAL_FIELD_LABELS[field]}」的雙語對照。`, "success");
+      }
 
       /* ══════════════════════════════════════════════════════
          TOOLS – Export / Import JSON
@@ -9862,6 +10546,11 @@
           exportedAt: new Date().toISOString(),
           template: state.template,
           layoutPrefs: state.layoutPrefs,
+          resumeLanguage: state.resumeLanguage,
+          pdfPageMode: state.pdfPageMode,
+          cvVersions: loadSnapshots(),
+          applicationRecords: loadApplications(),
+          portfolioData: loadPortfolioContentForCloud(),
           data: state.data
         };
         const blob = new Blob([JSON.stringify(payload, null, 2)], { type: "application/json" });
@@ -9888,11 +10577,32 @@
               state.layoutPrefs = payload.layoutPrefs;
               saveJson(LAYOUT_KEY, state.layoutPrefs);
             }
+            if (payload.resumeLanguage) {
+              state.resumeLanguage = payload.resumeLanguage;
+              localStorage.setItem(RESUME_LANGUAGE_KEY, state.resumeLanguage);
+            }
+            if (payload.pdfPageMode) {
+              state.pdfPageMode = payload.pdfPageMode;
+              localStorage.setItem(PDF_PAGE_MODE_KEY, state.pdfPageMode);
+            }
+            if (Array.isArray(payload.cvVersions)) {
+              saveJson(SNAPSHOTS_KEY, payload.cvVersions);
+            }
+            if (Array.isArray(payload.applicationRecords)) {
+              saveJson(APPLICATIONS_KEY, payload.applicationRecords);
+            }
+            if (payload.portfolioData && typeof payload.portfolioData === "object") {
+              saveJson(PORTFOLIO_STORAGE_KEY, payload.portfolioData);
+              window.dispatchEvent(new CustomEvent("portfolio:cloud-loaded", { detail: { source: "json-import" } }));
+            }
             saveJson(STORAGE_KEY, state.data);
             syncInputs();
             if (payload.template) updateTemplate(payload.template, true);
             updatePreview(true);
             syncLayoutControls();
+            renderSnapshotList();
+            renderApplicationList();
+            renderBilingualMappingControls();
             notifyCvDataUpdated("json-import");
             setMessage("CV 資料匯入成功。", "success");
           } catch {
@@ -10142,6 +10852,7 @@
         fields.forEach(f => { blank[f] = ""; });
         blank.importedPdfText = "";
         blank.importedPdfFileName = "";
+        blank.bilingualContent = {};
         state.data = { ...state.data, ...blank };
         saveJson(STORAGE_KEY, state.data);
         syncInputs();
@@ -10167,6 +10878,11 @@
 
         // Snapshot
         $("saveSnapshotBtn")?.addEventListener("click", saveSnapshot);
+        $("addApplicationBtn")?.addEventListener("click", addApplicationRecord);
+        $("bilingualFieldSelect")?.addEventListener("change", renderBilingualMappingControls);
+        $("saveBilingualBtn")?.addEventListener("click", saveBilingualField);
+        $("syncBilingualFromCurrentBtn")?.addEventListener("click", syncBilingualFromCurrent);
+        $("clearBilingualFieldBtn")?.addEventListener("click", clearBilingualField);
 
         // Export / Import
         $("exportJsonBtn")?.addEventListener("click", exportJson);
@@ -10213,6 +10929,9 @@
         // Load saved accent & snapshots
         loadSavedAccent();
         renderSnapshotList();
+        syncApplicationVersionSelect();
+        renderApplicationList();
+        renderBilingualMappingControls();
         updateWordCount();
         updateQrCode();
         updateUndoRedoBtns();
@@ -10246,6 +10965,13 @@
         updateActionButtons();
         renderGoogleImpactChecklist();
         renderHomeStatus();
+        applyShareSeoMeta({
+          title: "CV Studio",
+          description: "Build a polished CV, organize portfolio materials, and publish a shareable profile.",
+          imageUrl: getDefaultOgImageUrl(),
+          url: getCurrentCleanUrl(),
+          documentTitle: "CV Studio"
+        });
         window.addEventListener("cv:data-updated", renderHomeStatus);
         window.addEventListener("portfolio:data-updated", renderHomeStatus);
         window.addEventListener("storage", (event) => {
@@ -10276,6 +11002,22 @@
       window.openPdfPreview = openPdfPreview;
       window.openCvPdfImport = openPdfImportPicker;
       window.cvStudioState = state;   /* exposed for career advisor */
+      window.cvStudioCloud = {
+        getUser: () => state.user,
+        getClient: () => state.client,
+        canUpload: () => Boolean(state.user && state.client?.storage),
+        uploadPublicAsset: (file, options = {}) => uploadPublicStorageFile(
+          file,
+          options.pathPrefix || "portfolio-assets",
+          options.fileName || file?.name || "asset",
+          options.contentType || file?.type || "application/octet-stream"
+        ),
+        deletePublicAsset: async (path) => {
+          if (!path || !state.client?.storage) return;
+          await state.client.storage.from("cv-images").remove([path]);
+        },
+        setMessage
+      };
 
       init();
     })();
@@ -10362,6 +11104,7 @@
         school: "",
         coverImageUrl: "",
         accentTheme: "slate",
+        assets: [],
         chapters: [{
           id: uid(),
           title: "",
@@ -10414,6 +11157,18 @@
           studentName: cleanPfPlaceholder(source.studentName),
           school: cleanPfPlaceholder(source.school),
           coverImageUrl: cleanPfPlaceholder(source.coverImageUrl),
+          assets: Array.isArray(source.assets)
+            ? source.assets.map((asset) => ({
+                id: asset.id || uid(),
+                name: cleanPfPlaceholder(asset.name) || "未命名素材",
+                url: cleanPfPlaceholder(asset.url),
+                path: asset.path || "",
+                type: asset.type || "",
+                kind: asset.kind || "",
+                size: Number(asset.size || 0),
+                createdAt: asset.createdAt || new Date().toISOString()
+              })).filter((asset) => asset.url)
+            : [],
           chapters: chapters.map((chapter) => {
             const sections = Array.isArray(chapter.sections) && chapter.sections.length
               ? chapter.sections
@@ -10612,6 +11367,269 @@
         save();
       }
 
+      function isImageAsset(asset) {
+        const type = String(asset?.type || "").toLowerCase();
+        const url = String(asset?.url || "").toLowerCase().split("?")[0];
+        return type.startsWith("image/") || /\.(png|jpe?g|webp|gif|svg)$/.test(url);
+      }
+
+      function portfolioAssetLabel(asset) {
+        if (isImageAsset(asset)) return "圖片";
+        const type = String(asset?.type || "").toLowerCase();
+        if (type.includes("pdf") || /\.pdf(?:$|\?)/i.test(asset?.url || "")) return "PDF";
+        if (type.includes("presentation") || /\.(pptx?|key)(?:$|\?)/i.test(asset?.url || "")) return "簡報";
+        if (type.includes("word") || /\.(docx?|pages)(?:$|\?)/i.test(asset?.url || "")) return "文件";
+        if (type.includes("zip") || /\.zip(?:$|\?)/i.test(asset?.url || "")) return "ZIP";
+        return "附件";
+      }
+
+      function portfolioAssetNameFromUrl(url) {
+        try {
+          const parsed = new URL(url);
+          const pathName = decodeURIComponent(parsed.pathname.split("/").filter(Boolean).pop() || "");
+          return pathName || parsed.hostname || "URL 素材";
+        } catch {
+          return "URL 素材";
+        }
+      }
+
+      function setAssetStatus(message, type = "") {
+        const status = $el("pfAssetUploadStatus");
+        if (!status) return;
+        status.textContent = message || "圖片可直接套到封面或章節。";
+        status.style.color = type === "error" ? "var(--danger)" : type === "success" ? "var(--success)" : "";
+      }
+
+      function addPortfolioAsset(asset) {
+        const next = normalizePfData({
+          ...pf,
+          assets: [{
+            id: asset.id || uid(),
+            name: cleanPfPlaceholder(asset.name) || portfolioAssetNameFromUrl(asset.url),
+            url: cleanPfPlaceholder(asset.url),
+            path: asset.path || "",
+            type: asset.type || "",
+            kind: asset.kind || "",
+            size: Number(asset.size || 0),
+            createdAt: asset.createdAt || new Date().toISOString()
+          }, ...(pf.assets || [])]
+        });
+        pf.assets = next.assets;
+        save();
+        renderAssetList();
+      }
+
+      function renderAssetList() {
+        const list = $el("pfAssetList");
+        if (!list) return;
+        const assets = Array.isArray(pf.assets) ? pf.assets : [];
+        if (!assets.length) {
+          list.innerHTML = `<span class="snapshot-empty">尚無素材。</span>`;
+          setAssetStatus("圖片可直接套到封面或章節。");
+          return;
+        }
+        list.innerHTML = assets.map((asset) => {
+          const label = portfolioAssetLabel(asset);
+          const image = isImageAsset(asset);
+          const preview = image
+            ? `<img class="asset-thumb" src="${esc(asset.url)}" alt="${esc(asset.name || label)}" loading="lazy" />`
+            : `<span class="asset-file-mark">${esc(label)}</span>`;
+          const size = asset.size ? ` · ${(asset.size / 1024 / 1024).toFixed(asset.size > 1024 * 1024 ? 1 : 2)} MB` : "";
+          return `
+            <div class="mini-list-item" data-pf-asset-id="${esc(asset.id)}">
+              <div class="mini-list-item-head">
+                <div style="display:flex;gap:10px;align-items:flex-start;min-width:0;">
+                  ${preview}
+                  <div style="display:grid;gap:3px;min-width:0;">
+                    <strong>${esc(asset.name || label)}</strong>
+                    <small>${esc(label)}${size}</small>
+                  </div>
+                </div>
+                <span class="status-chip">${image ? "可套用" : "附件"}</span>
+              </div>
+              <div class="mini-list-actions">
+                <a class="button-link soft" href="${esc(asset.url)}" target="_blank" rel="noreferrer noopener">開啟</a>
+                ${image ? `<button class="secondary" type="button" data-pf-asset-cover="${esc(asset.id)}">設為封面</button>` : ""}
+                ${image ? `<button class="soft" type="button" data-pf-asset-section="${esc(asset.id)}">套到首章圖片</button>` : ""}
+                <button class="ghost" type="button" data-pf-asset-copy="${esc(asset.id)}">複製 URL</button>
+                <button class="ghost" type="button" data-pf-asset-delete="${esc(asset.id)}" style="color:var(--danger);">刪除</button>
+              </div>
+            </div>`;
+        }).join("");
+        setAssetStatus(`已整理 ${assets.length} 個素材。`);
+      }
+
+      function getPortfolioAsset(assetId) {
+        return (pf.assets || []).find((asset) => String(asset.id) === String(assetId));
+      }
+
+      function applyPortfolioAssetToCover(assetId) {
+        const asset = getPortfolioAsset(assetId);
+        if (!asset || !isImageAsset(asset)) {
+          setAssetStatus("只有圖片素材可以套到封面。", "error");
+          return;
+        }
+        pf.coverImageUrl = asset.url;
+        save();
+        renderEditor();
+        renderPreview();
+        setAssetStatus(`已將「${asset.name || "圖片"}」設為封面。`, "success");
+      }
+
+      function applyPortfolioAssetToFirstSection(assetId) {
+        const asset = getPortfolioAsset(assetId);
+        if (!asset || !isImageAsset(asset)) {
+          setAssetStatus("只有圖片素材可以套到章節圖片。", "error");
+          return;
+        }
+        const chapter = pf.chapters[0] || (pf.chapters[0] = { id: uid(), title: "", sections: [] });
+        const section = chapter.sections[0] || (chapter.sections[0] = { id: uid(), header: "", body: "", imageUrl: "", imageCaption: "" });
+        section.imageUrl = asset.url;
+        if (!section.imageCaption) section.imageCaption = asset.name || "";
+        save();
+        renderEditor();
+        renderPreview();
+        setAssetStatus(`已套用「${asset.name || "圖片"}」到首章圖片。`, "success");
+      }
+
+      async function deletePortfolioAsset(assetId) {
+        const asset = getPortfolioAsset(assetId);
+        if (!asset) return;
+        pf.assets = (pf.assets || []).filter((item) => String(item.id) !== String(assetId));
+        if (asset.path && window.cvStudioCloud?.canUpload?.()) {
+          try {
+            await window.cvStudioCloud.deletePublicAsset(asset.path);
+          } catch {
+            // Keep the local deletion even if remote cleanup is unavailable.
+          }
+        }
+        save();
+        renderAssetList();
+        setAssetStatus(`已刪除「${asset.name || "素材"}」。`, "success");
+      }
+
+      async function copyPortfolioAssetUrl(assetId) {
+        const asset = getPortfolioAsset(assetId);
+        if (!asset?.url) return;
+        try {
+          await navigator.clipboard?.writeText(asset.url);
+          setAssetStatus("素材 URL 已複製。", "success");
+        } catch {
+          window.prompt("請複製素材 URL", asset.url);
+        }
+      }
+
+      function addPortfolioAssetFromUrl() {
+        const urlInput = $el("pfAssetUrlInput");
+        const nameInput = $el("pfAssetNameInput");
+        const url = (urlInput?.value || "").trim();
+        if (!url) {
+          setAssetStatus("請先貼上素材 URL。", "error");
+          return;
+        }
+        try {
+          new URL(url);
+        } catch {
+          setAssetStatus("素材 URL 格式不正確。", "error");
+          return;
+        }
+        addPortfolioAsset({
+          name: (nameInput?.value || "").trim() || portfolioAssetNameFromUrl(url),
+          url,
+          type: /\.(png|jpe?g|webp|gif|svg)(?:$|\?)/i.test(url) ? "image/url" : "url",
+          kind: "url"
+        });
+        if (urlInput) urlInput.value = "";
+        if (nameInput) nameInput.value = "";
+        setAssetStatus("URL 素材已加入。", "success");
+      }
+
+      async function uploadPortfolioAsset(file) {
+        if (!file) return;
+        if (file.size > 12 * 1024 * 1024) {
+          setAssetStatus("附件請控制在 12MB 以內。", "error");
+          return;
+        }
+        const name = ($el("pfAssetNameInput")?.value || "").trim() || file.name;
+        setAssetStatus("正在處理素材...");
+        try {
+          let url = "";
+          let path = "";
+          if (window.cvStudioCloud?.canUpload?.()) {
+            const uploaded = await window.cvStudioCloud.uploadPublicAsset(file, {
+              pathPrefix: "portfolio-assets",
+              fileName: file.name,
+              contentType: file.type || "application/octet-stream"
+            });
+            url = uploaded.publicUrl;
+            path = uploaded.path;
+          } else if (file.type.startsWith("image/")) {
+            url = await new Promise((resolve, reject) => {
+              const reader = new FileReader();
+              reader.onload = () => resolve(String(reader.result || ""));
+              reader.onerror = () => reject(new Error("讀取圖片失敗。"));
+              reader.readAsDataURL(file);
+            });
+          } else {
+            setAssetStatus("非圖片附件需要登入後才能上傳到雲端。", "error");
+            return;
+          }
+          addPortfolioAsset({
+            name,
+            url,
+            path,
+            type: file.type || "application/octet-stream",
+            kind: path ? "storage" : "local",
+            size: file.size
+          });
+          if ($el("pfAssetNameInput")) $el("pfAssetNameInput").value = "";
+          setAssetStatus(path ? "素材已上傳並加入。": "圖片已暫存在本機素材庫。", "success");
+        } catch (error) {
+          setAssetStatus(error.message || "素材處理失敗。", "error");
+        }
+      }
+
+      function attachAssetListeners() {
+        $el("pfUploadAssetBtn")?.addEventListener("click", () => $el("pfAssetFileInput")?.click());
+        $el("pfAssetFileInput")?.addEventListener("change", async (event) => {
+          await uploadPortfolioAsset(event.target.files?.[0]);
+          event.target.value = "";
+        });
+        $el("pfAddAssetUrlBtn")?.addEventListener("click", addPortfolioAssetFromUrl);
+        $el("pfAssetList")?.addEventListener("click", (event) => {
+          const coverBtn = event.target.closest("[data-pf-asset-cover]");
+          if (coverBtn) {
+            applyPortfolioAssetToCover(coverBtn.dataset.pfAssetCover);
+            return;
+          }
+          const sectionBtn = event.target.closest("[data-pf-asset-section]");
+          if (sectionBtn) {
+            applyPortfolioAssetToFirstSection(sectionBtn.dataset.pfAssetSection);
+            return;
+          }
+          const deleteBtn = event.target.closest("[data-pf-asset-delete]");
+          if (deleteBtn) {
+            deletePortfolioAsset(deleteBtn.dataset.pfAssetDelete);
+            return;
+          }
+          const copyBtn = event.target.closest("[data-pf-asset-copy]");
+          if (copyBtn) {
+            copyPortfolioAssetUrl(copyBtn.dataset.pfAssetCopy);
+          }
+        });
+      }
+
+      function reloadPortfolioFromStorage() {
+        try {
+          pf = normalizePfData(JSON.parse(localStorage.getItem(PF_KEY) || "{}"));
+        } catch {
+          pf = normalizePfData(JSON.parse(JSON.stringify(pfDefault)));
+        }
+        renderEditor();
+        renderPreview();
+        renderAssetList();
+      }
+
       function attachPortfolioInlineListeners() {
         const area = $el("pfPreviewArea");
         if (!area || area.dataset.inlineBound === "true") return;
@@ -10696,6 +11714,7 @@
         $el("pfStudentName").value = pf.studentName;
         $el("pfSchool").value      = pf.school;
         $el("pfCoverImage").value  = pf.coverImageUrl;
+        renderAssetList();
 
         $el("pfChapters").innerHTML = pf.chapters.map((ch, ci) => `
           <div class="pf-chapter-block">
@@ -11840,6 +12859,7 @@
         /* Download PDF */
         $el("pfPreviewBtn")?.addEventListener("click", previewPortfolioPdf);
         $el("pfDownloadBtn")?.addEventListener("click", downloadPortfolioPdf);
+        attachAssetListeners();
         $el("pdfPreviewCloseBtn")?.addEventListener("click", closePdfPreview);
         $el("pdfPreviewModal")?.addEventListener("click", (event) => {
           if (event.target === $el("pdfPreviewModal")) closePdfPreview();
@@ -11861,6 +12881,8 @@
 
         renderEditor();
         renderPreview();
+        renderAssetList();
+        window.addEventListener("portfolio:cloud-loaded", reloadPortfolioFromStorage);
         window.addEventListener("cv:language-changed", () => {
           renderEditor();
           renderPreview();

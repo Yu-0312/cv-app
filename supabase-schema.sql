@@ -1,7 +1,9 @@
 -- Run this in Supabase SQL Editor
 -- 1. Enable Google provider in Authentication > Providers
 -- 2. Add your site URL and redirect URL in Authentication > URL Configuration
--- 3. Create the cv-images storage bucket (see bottom of this file)
+-- 3. Create the cv-images storage bucket (see bottom of this file).
+--    The same public bucket stores avatars, generated share preview images,
+--    portfolio images, and portfolio attachments.
 
 create table if not exists public.cv_profiles (
   user_id uuid primary key references auth.users(id) on delete cascade,
@@ -109,7 +111,11 @@ using (auth.uid() = user_id);
 -- ============================================================
 -- STORAGE: cv-images bucket
 -- Run once in Supabase SQL Editor after creating the bucket
--- in Storage > New Bucket (name: cv-images, Public: ON)
+-- in Storage > New Bucket (name: cv-images, Public: ON).
+-- Objects are organized under auth.uid() folders:
+--   {user_id}/avatar-*.*
+--   {user_id}/share-og/*.png
+--   {user_id}/portfolio-assets/*.*
 -- ============================================================
 
 -- Allow any authenticated user to upload into their own folder

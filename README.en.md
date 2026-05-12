@@ -13,8 +13,11 @@
 - **Live Preview** — Type on the left, see results on the right instantly
 - **WYSIWYG Editing** — Click any field directly in the preview pane to edit (no need to switch back to the form)
 - **Cloud Storage** — One-click save and load for authenticated users
+- **CV Versions + Application Tracking** — Save role-specific CV versions and track company, role, status, date, link, and notes
+- **Bilingual Content Mapping** — Maintain Chinese / English values for detailed resume fields, not just section headings
+- **Public Share SEO / OG** — Share pages update SEO metadata and generate Open Graph preview images
 - **PDF Export** — Export your CV with full template styling preserved
-- **Portfolio / Learning Experience** — A dedicated tab for chapter-based portfolios with PDF export
+- **Portfolio / Learning Experience** — A dedicated tab for chapter-based portfolios, asset uploads, attachments, and PDF export
 - **PWA Install** — Install as a desktop or mobile app with offline cache support
 
 ---
@@ -85,6 +88,8 @@ Deployment steps:
 - Fill in your CV details in the left panel; the right panel updates in real time
 - Switch between 28 resume templates using the buttons at the top
 - After signing in, click **Save My CV** to store your data in the cloud
+- Use **CV Versions / Application Records** to save tailored versions and track each application
+- Use **Bilingual Content Mapping** to maintain field-level Chinese / English content
 - Click **Download PDF** to export the current template as a PDF
 - If your browser supports it, click **Install App** to install as a native-like app
 
@@ -98,7 +103,11 @@ When signed in, click any field directly in the CV preview or Portfolio page to 
 
 ### Portfolio / Learning Experience
 
-Switch to the **Portfolio** tab at the top to build a chapter-based portfolio and export it as a PDF.
+Switch to the **Portfolio** tab at the top to build a chapter-based portfolio and export it as a PDF. The asset library can upload images, PDFs, documents, and URL assets; signed-in uploads go to the public `cv-images` Supabase Storage bucket, while signed-out users can keep small image assets locally.
+
+### Public Share Pages
+
+Signed-in users can publish public CV share pages. Publishing updates SEO / Open Graph / Twitter Card metadata and attempts to upload a generated 1200×630 preview image to Storage. If Storage is unavailable, the page falls back to `og-image.svg`.
 
 ---
 
@@ -178,13 +187,10 @@ This project does **not** use the deprecated `google-signin2` / `gapi.auth2` fro
 
 - **Supabase Storage avatar upload**: signed-in users can upload an avatar to the `cv-images` bucket and apply the public URL to the CV.
 - **Public CV share page**: signed-in users can publish, copy, and unpublish a public CV snapshot; visitors can open it with `?share=slug`.
+- **Attachment uploads and portfolio asset management**: Portfolio assets can include images, PDFs, documents, URL assets, and cloud attachments; images can be applied to the cover or sections.
+- **SEO / Open Graph preview images for share pages**: public share pages update SEO / OG / Twitter Card metadata and generate preview images during publishing.
+- **Multiple CV versions and application tracking**: the tools panel can save role-specific versions and record company, role, status, date, link, and notes.
+- **Granular bilingual content mapping**: Chinese / English mappings are supported for profile, summary, skills, highlights, experience, projects, education, and awards fields.
 - **PDF page mode**: export supports automatic pagination or a one-page preference.
 - **Bilingual resume headings**: CV headings can follow the UI language or be fixed to Chinese / English.
 - **Automated GSAT data refresh**: GitHub Actions now refresh University TW and 104 GSAT data weekly.
-
-## Next Ideas
-
-- Attachment uploads and portfolio asset management
-- SEO / Open Graph preview images for share pages
-- Multiple CV versions and application tracking
-- More granular bilingual content mapping

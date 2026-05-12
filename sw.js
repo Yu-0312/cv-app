@@ -1,7 +1,8 @@
-const CACHE_NAME = "cv-studio-cache-v12";
+const CACHE_NAME = "cv-studio-cache-v13";
 const ASSETS = [
   "./manifest.json",
   "./icon.svg",
+  "./og-image.svg",
   "./config.js",
   "./university-data.js",
   "./data/app/gsat-external-data.js",

@@ -65,6 +65,7 @@ async function main() {
     ["manifest.json", "manifest.json"],
     ["sw.js", "sw.js"],
     ["icon.svg", "icon.svg"],
+    ["og-image.svg", "og-image.svg"],
     ["university-data.js", "university-data.js"]
   ];
 
