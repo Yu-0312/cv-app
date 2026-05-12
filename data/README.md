@@ -96,6 +96,19 @@ npm run university-tw:sql
           { "level": "頂", "name": "數學A" }
         ]
       },
+      "criteriaName": "國英數A",
+      "criteriaSubjects": ["國文", "英文", "數學A"],
+      "screeningPower": [
+        { "name": "國英數A", "subjects": ["國文", "英文", "數學A"], "multiplier": 3 }
+      ],
+      "screeningRules": [
+        {
+          "year": 115,
+          "items": [
+            { "label": "國英數A", "subjects": ["國文", "英文", "數學A"], "score": 31 }
+          ]
+        }
+      ],
       "lowScorePreYear": [],
       "lowScoreThisYear": []
     }
@@ -123,6 +136,7 @@ npm run gsat:build
 
 - `browser:capture` 會攔截真實瀏覽器裡的 `landingPoint` / `majorList` 回應。
 - 未登入狀態下，104 目前只顯示前 20 筆，因此要做更完整的擷取仍需要登入態。
+- 前端比較時會優先使用 `screeningRules` / `criteriaSubjects`，也就是各校系指定的倍率篩選科目或科目組合；不再用五科總級分直接排序。
 
 `npm run gsat:build` 會再把 `normalized/*.json` 轉成：
 

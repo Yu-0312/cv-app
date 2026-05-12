@@ -492,6 +492,11 @@ async function main() {
           summary: "Local draft summary"
         });
         window.localStorage.setItem("cv-studio-local-v2", JSON.stringify(window.cvStudioState.data));
+        window.localStorage.setItem("pf-studio-local-v4", JSON.stringify({
+          title: "Local Portfolio",
+          studentName: "Local Draft",
+          chapters: [{ id: "local", title: "Local Chapter", sections: [{ id: "local-sec", header: "Local Section", body: "Local body" }] }]
+        }));
         window.__supabaseTest.setProfile("smoke-user", {
           name: "Cloud Person",
           role: "Cloud Role",
@@ -544,7 +549,11 @@ async function main() {
         return node && /尚未登入/.test(node.textContent || "");
       });
       const restoredName = await page.evaluate(() => window.cvStudioState.data.name);
-      assert.equal(restoredName, "Local Draft");
+      assert.equal(restoredName, "");
+      const signedOutCvStorage = await page.evaluate(() => window.localStorage.getItem("cv-studio-local-v2"));
+      assert.equal(signedOutCvStorage, null);
+      const signedOutPortfolioStorage = await page.evaluate(() => window.localStorage.getItem("pf-studio-local-v4"));
+      assert.equal(signedOutPortfolioStorage, null);
       const signOutOptions = await page.evaluate(() => window.__supabaseTest.lastSignOutOptions);
       const authStorageCleared = await page.evaluate(() => {
         const key = window.__supabaseTest.storageKey;
@@ -578,7 +587,7 @@ async function main() {
         return node && /尚未登入/.test(node.textContent || "");
       });
       const reloadedName = await page.evaluate(() => window.cvStudioState.data.name);
-      assert.equal(reloadedName, "Local Draft");
+      assert.equal(reloadedName, "");
       const staleStorageCleared = await page.evaluate(() => {
         const key = window.__supabaseTest.storageKey;
         return !window.localStorage.getItem(key) && !window.sessionStorage.getItem(key);
@@ -802,8 +811,29 @@ async function main() {
       await page.waitForFunction(() => /English summary with frontend/.test(document.getElementById("cvPaper")?.textContent || ""));
       log("[smoke] 雙語內容已切換");
 
-      await page.$eval("#saveBtn", (node) => node.click());
-      await page.waitForFunction(() => /CV 已成功儲存到雲端/.test(document.getElementById("message")?.textContent || ""));
+      await page.waitForFunction(() => !document.getElementById("saveBtn")?.disabled, { timeout: 5000 }).catch(async (error) => {
+        const buttonDebug = await page.evaluate(() => ({
+          saveDisabled: document.getElementById("saveBtn")?.disabled || false
+        }));
+        throw new Error(`${error.message} buttonDebug=${JSON.stringify(buttonDebug)}`);
+      });
+      await page.click("#saveBtn");
+      await page.waitForFunction(() => /CV 已成功儲存到雲端/.test(document.getElementById("message")?.textContent || "")).catch(async (error) => {
+        const saveDebug = await page.evaluate(() => ({
+          message: document.getElementById("message")?.textContent || "",
+          saveDisabled: document.getElementById("saveBtn")?.disabled || false,
+          saveText: document.getElementById("saveBtn")?.textContent || "",
+          user: window.cvStudioState?.user?.email || "",
+          authBusy: Boolean(window.cvStudioState?.authBusy),
+          hasClient: Boolean(window.cvStudioState?.client),
+          hasSupabaseGlobal: Boolean(window.supabase),
+          hasUrl: Boolean(window.cvStudioState?.config?.supabaseUrl),
+          hasAnon: Boolean(window.cvStudioState?.config?.supabaseAnonKey),
+          profileCount: window.__supabaseTest?.profiles?.length || 0,
+          pageErrors: window.__pageErrors || null
+        }));
+        throw new Error(`${error.message} saveDebug=${JSON.stringify(saveDebug)}`);
+      });
       log("[smoke] 私人雲端 CV 已儲存");
       const savedProfile = await page.evaluate(() => window.__supabaseTest.profiles.at(-1)?.content || {});
       assert.ok(Array.isArray(savedProfile._cvVersions), "雲端私人 CV 應包含版本紀錄");
@@ -943,7 +973,7 @@ async function main() {
       await page.waitForFunction(() => /分析中/.test(document.getElementById("gsatResultsArea")?.textContent || ""), { timeout: 1000 });
       await page.waitForFunction(() => {
         const text = document.getElementById("gsatResultsArea")?.textContent || "";
-        return /五科總分/.test(text) && /本地快照/.test(text);
+        return /已輸入科目級分合計/.test(text) && /本地快照/.test(text);
       }, { timeout: 10000 });
 
       const buttonState = await page.$eval("#gsatAnalyzeBtn", (node) => ({
@@ -986,9 +1016,8 @@ async function main() {
       const resultText = await page.$eval("#gsatResultsArea", (node) => node.textContent || "");
       const scopeSummaryText = await page.$eval("#gsatDataScopeSummary", (node) => node.textContent || "");
       assert.match(sourceText, /本地快照/);
-      assert.match(resultText, /資料覆蓋總覽/);
-      assert.match(resultText, /149 校/);
-      assert.match(resultText, /4,113 系/);
+      assert.match(resultText, /指定科目|採計科目/);
+      assert.match(resultText, /歷年篩選線|歷年均線/);
       assert.match(scopeSummaryText, /校系選項/);
       assert.doesNotMatch(resultText, /暫時沒有歷年切線/);
     });

@@ -1775,13 +1775,18 @@
       height: 104px;
       border-radius: 28px;
       overflow: hidden;
+      position: relative;
       background: linear-gradient(135deg, var(--template-accent), var(--accent-3));
+      border: 0;
       color: #fff;
       display: grid;
       place-items: center;
+      font-family: inherit;
       font-size: 2rem;
       font-weight: 700;
+      line-height: 1;
       margin-bottom: 18px;
+      padding: 0;
     }
 
     .avatar.rounded {
@@ -1797,6 +1802,56 @@
       height: 100%;
       object-fit: cover;
       display: block;
+    }
+
+    .avatar-upload-trigger {
+      cursor: pointer;
+      transition: box-shadow 0.18s ease, transform 0.18s ease;
+    }
+
+    .avatar-upload-trigger:hover {
+      box-shadow: 0 12px 26px rgba(31, 36, 48, 0.18);
+      transform: translateY(-1px);
+    }
+
+    .avatar-upload-trigger:focus-visible {
+      outline: 2px solid var(--template-accent);
+      outline-offset: 3px;
+    }
+
+    .avatar-upload-cue {
+      position: absolute;
+      left: 8px;
+      right: 8px;
+      bottom: 8px;
+      min-height: 26px;
+      border-radius: 999px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(31, 36, 48, 0.78);
+      color: #fff;
+      font-size: 11px;
+      font-weight: 700;
+      opacity: 0;
+      pointer-events: none;
+      transform: translateY(4px);
+      transition: opacity 0.18s ease, transform 0.18s ease;
+      white-space: nowrap;
+    }
+
+    .avatar-upload-trigger:hover .avatar-upload-cue,
+    .avatar-upload-trigger:focus-visible .avatar-upload-cue {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    body.public-share-mode .avatar-upload-trigger {
+      pointer-events: none;
+    }
+
+    body.public-share-mode .avatar-upload-cue {
+      display: none;
     }
 
     .cv-name {
@@ -2093,6 +2148,75 @@
     .message.error {
       border-color: rgba(167, 59, 51, 0.18);
       color: var(--danger);
+    }
+
+    .toast-region {
+      position: fixed;
+      top: 18px;
+      right: 18px;
+      z-index: 3000;
+      display: grid;
+      gap: 10px;
+      width: min(360px, calc(100vw - 32px));
+      pointer-events: none;
+    }
+
+    .toast {
+      padding: 13px 16px;
+      border-radius: 14px;
+      background: rgba(255, 255, 255, 0.96);
+      border: 1px solid rgba(49, 40, 27, 0.1);
+      box-shadow: 0 16px 45px rgba(39, 28, 13, 0.18);
+      color: var(--ink);
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 1.55;
+      animation: toastIn 180ms ease-out both;
+    }
+
+    .toast.success {
+      border-color: rgba(21, 115, 71, 0.24);
+      color: var(--success);
+    }
+
+    .toast.error {
+      border-color: rgba(167, 59, 51, 0.24);
+      color: var(--danger);
+    }
+
+    .toast.leaving {
+      animation: toastOut 160ms ease-in both;
+    }
+
+    @keyframes toastIn {
+      from {
+        opacity: 0;
+        transform: translateY(-8px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes toastOut {
+      from {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      to {
+        opacity: 0;
+        transform: translateY(-8px);
+      }
+    }
+
+    @media (max-width: 640px) {
+      .toast-region {
+        top: 12px;
+        right: 12px;
+        left: 12px;
+        width: auto;
+      }
     }
 
     .install-hint {
@@ -4802,6 +4926,9 @@
     .gsat-source-chip { display: inline-flex; align-items: center; gap: 6px; background: rgba(15,23,42,.05); color: var(--ink); border: 1px solid rgba(15,23,42,.08); border-radius: 999px; padding: 7px 11px; font-size: 12px; font-weight: 700; }
     .gsat-source-chip strong { color: var(--accent); }
     .gsat-sort-note { font-size: 11.5px; color: var(--muted); line-height: 1.6; }
+    .gsat-result-brief { border: 1px solid rgba(33,78,116,.14); background: rgba(33,78,116,.045); border-radius: 10px; padding: 10px 12px; color: var(--muted); font-size: 12px; line-height: 1.65; margin: 0 0 14px; }
+    .gsat-result-brief strong { color: var(--ink); }
+    .gsat-result-brief span { display: inline-block; margin-right: 10px; }
     .gsat-tier-caption { font-size: 11.5px; color: var(--muted); line-height: 1.6; margin: -4px 0 10px; }
     .gsat-inline-list { display: flex; flex-direction: column; gap: 6px; margin-top: 8px; }
     .gsat-inline-item { font-size: 12px; color: var(--ink); line-height: 1.6; }
@@ -4867,6 +4994,8 @@
   </style>
 </head>
 <body>
+  <div id="toastRegion" class="toast-region" aria-live="polite" aria-atomic="true"></div>
+
   <!-- GUIDED TOUR OVERLAY -->
   <div id="tour-overlay" role="dialog" aria-modal="true" aria-label="功能導覽" hidden>
     <div id="tour-backdrop"></div>
@@ -4899,7 +5028,7 @@
           <span class="language-toggle-divider">/</span>
           <span class="language-toggle-next">EN</span>
         </button>
-        <div class="status-pill" id="headerAuthStatus"><strong>尚未登入</strong> · 可先編輯草稿</div>
+        <div class="status-pill" id="headerAuthStatus"><strong>尚未登入</strong> · 登入後保存資料</div>
         <button id="headerLogoutBtn" class="ghost" type="button" hidden>登出</button>
         <a id="headerCanvaBtn" class="canva-btn button-link" href="https://www.canva.com/" data-canva-trigger target="_blank" rel="noreferrer noopener">
           <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
@@ -5138,7 +5267,7 @@
       <aside class="home-panel">
         <h2>資料狀態</h2>
         <ul class="home-note-list">
-          <li><strong>離線</strong><span>PWA 快取可開啟草稿</span></li>
+          <li><strong>離線</strong><span>PWA 快取可開啟頁面</span></li>
           <li><strong>同步</strong><span>Google 登入後啟用</span></li>
           <li><strong>匯出</strong><span>CV 與學習歷程皆支援 PDF</span></li>
         </ul>
@@ -5150,8 +5279,8 @@
     <section class="topbar editor-command-bar" id="editorSection">
       <div class="editor-command-status">
         <div class="editor-command-eyebrow">CV 操作</div>
-        <div class="status-pill" id="authStatus" hidden><strong>尚未登入</strong> · 可先編輯草稿</div>
-        <div class="status-pill" id="syncStatus"><strong>本機草稿</strong> · 尚未同步</div>
+        <div class="status-pill" id="authStatus" hidden><strong>尚未登入</strong> · 登入後保存資料</div>
+        <div class="status-pill" id="syncStatus"><strong>提示詞模式</strong> · 尚未同步</div>
       </div>
       <div class="editor-command-actions">
         <div hidden>
@@ -5739,7 +5868,7 @@
                   <button id="uploadAvatarBtn" class="soft" type="button">上傳頭像</button>
                   <button id="clearAvatarBtn" class="ghost" type="button">清除頭像</button>
                 </div>
-                <div class="helper">登入後可將頭像上傳到 Supabase Storage；未登入時也可先貼圖片網址。</div>
+                <div class="helper">可點右側預覽頭像或按按鈕上傳照片；登入後會存到 Supabase Storage，未登入不會保留個人圖片資料。</div>
               </div>
               <div class="field full">
                 <label>摘要</label>
@@ -5801,7 +5930,7 @@
             </div>
           </div>
 
-          <div id="message" class="message">可先編輯本機草稿；登入後按「儲存 CV」即可同步到雲端。</div>
+          <div id="message" class="message" role="status" aria-live="polite">未登入時只顯示提示詞；登入後按「儲存 CV」即可同步到雲端。</div>
         </div>
       </aside>
 
@@ -6165,7 +6294,7 @@
         <div class="gsat-panel">
           <div>
             <div style="font-size:18px;font-weight:800;color:var(--ink);margin-bottom:4px;">學測落點分析</div>
-            <div style="font-size:13px;color:var(--muted);line-height:1.5;">輸入學測成績，根據近三年歷史資料快速預測落點校系。</div>
+            <div style="font-size:13px;color:var(--muted);line-height:1.5;">輸入學測成績，依各校系指定科目與篩選倍率快速整理落點。</div>
           </div>
 
           <!-- Track -->
@@ -6256,7 +6385,7 @@
                 <circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/>
               </svg>
               <div style="font-size:15px;font-weight:700;color:var(--ink);margin-bottom:8px;">先選範圍，再開始看落點</div>
-              <div style="font-size:14px;color:var(--muted);line-height:1.8;">建議先選大學分類、學校與科系，再填入學測成績。<br>系統會同時整理落點結果、校系背景資料與學習歷程準備方向。</div>
+              <div style="font-size:14px;color:var(--muted);line-height:1.8;">建議先選大學分類、學校與科系，再填入學測成績。<br>系統會優先顯示通過檢定、且最接近指定科目篩選線的校系。</div>
             </div>
           </div>
         </div>
@@ -6321,10 +6450,10 @@
         "CV Studio": "CV Studio",
         "用漂亮版型把履歷整理成可登入、可儲存、可下載的作品頁。": "Turn your CV into a polished page you can sign into, save, and download.",
         "尚未登入": "Not signed in",
-        "可先編輯草稿": "Draft editing available",
+        "登入後保存資料": "Sign in to save data",
         "登出": "Sign out",
         "登出中...": "Signing out...",
-        "正在切回本機草稿": "Returning to local draft",
+        "正在切回提示詞": "Returning to placeholders",
         "連接 Canva": "Connect Canva",
         "Google 登入": "Sign in with Google",
         "Google 登入同步": "Google sync",
@@ -6393,19 +6522,19 @@
         "先篩出校系清單，再決定要強化哪一段材料。": "Shortlist schools first, then decide which materials to strengthen.",
         "資料狀態": "Data Status",
         "離線": "Offline",
-        "PWA 快取可開啟草稿": "PWA cache can open drafts",
+        "PWA 快取可開啟頁面": "PWA cache can open pages",
         "同步": "Sync",
         "Google 登入後啟用": "Enabled after Google sign-in",
         "匯出": "Export",
         "CV 與學習歷程皆支援 PDF": "CV and portfolio both support PDF",
         "CV Studio / Web + App": "CV Studio / Web + App",
         "把履歷、學習歷程與學測分析整理成同一套工作流。": "Bring resumes, learning portfolios, and GSAT planning into one workflow.",
-        "先編輯履歷、補齊學習歷程，再用學測落點快速比對校系方向。首頁現在會直接告訴你下一步做什麼，也保留無登入就能先開始的彈性。": "Edit your resume, complete your learning portfolio, then compare school and department directions with GSAT placement. The home screen points you to the next step while still letting you start without signing in.",
+        "先登入保存資料，再編輯履歷、補齊學習歷程，最後用學測落點快速比對校系方向。首頁現在會直接告訴你下一步做什麼。": "Sign in to save data, then edit your resume, complete your learning portfolio, and compare school and department directions with GSAT placement. The home screen points you to the next step.",
         "開始編輯履歷": "Start Editing Resume",
         "查看學習歷程": "View Learning Portfolio",
         "✦ 功能導覽": "✦ Feature Tour",
         "建議流程": "Suggested Flow",
-        "不用先註冊也能編輯本地草稿；需要跨裝置同步時，再用 Google 登入接手就好。": "You can edit a local draft first. Sign in with Google only when you want cross-device sync.",
+        "登入後資料才會保存；登出會回到提示詞，避免個資殘留在未登入畫面。": "Data is retained only after sign-in; signing out returns to placeholders so personal data is not left on the signed-out screen.",
         "先做履歷": "Start With Resume",
         "直接從模板開始，先把可投遞版本做出來。": "Start from a template and create a version ready to send.",
         "再補歷程": "Then Add Portfolio",
@@ -6481,6 +6610,10 @@
         "開啟外部設計工具": "Open external design tools",
         "CV 操作": "CV Actions",
         "儲存 CV": "Save CV",
+        "儲存中...": "Saving...",
+        "正在儲存 CV 到雲端...": "Saving CV to the cloud...",
+        "請先用 Google 登入，之後就能把 CV 存到雲端。": "Sign in with Google first, then you can save your CV to the cloud.",
+        "Supabase 尚未設定完成。": "Supabase is not configured yet.",
         "發布分享頁": "Publish Share Page",
         "複製分享連結": "Copy Share Link",
         "取消公開": "Unpublish",
@@ -6492,7 +6625,7 @@
         "重做 (Ctrl+Y)": "Redo (Ctrl+Y)",
         "↪ 重做": "↪ Redo",
         "安裝 APP": "Install App",
-        "本機草稿": "Local draft",
+        "提示詞模式": "Placeholder mode",
         "尚未同步": "Not synced",
         "版型瀏覽": "Template Browser",
         "用展開列表挑職位或模板": "Choose roles or templates from expandable lists",
@@ -6667,8 +6800,10 @@
         "頭像圖片網址": "Avatar Image URL",
         "請貼上圖片網址，或先留空": "Paste an image URL, or leave blank for now",
         "上傳頭像": "Upload Avatar",
+        "上傳照片": "Upload Photo",
+        "點擊上傳頭像照片": "Click to upload an avatar photo",
         "清除頭像": "Clear Avatar",
-        "登入後可將頭像上傳到 Supabase Storage；未登入時也可先貼圖片網址。": "After signing in, upload your avatar to Supabase Storage; before signing in, you can paste an image URL.",
+        "可點右側預覽頭像或按按鈕上傳照片；登入後會存到 Supabase Storage，未登入不會保留個人圖片資料。": "Click the avatar in the preview or use the button to upload a photo. Signed-in uploads go to Supabase Storage; signed-out image data is not retained.",
         "摘要": "Summary",
         "請用 2 到 4 句介紹背景、核心能力、代表經驗與求職方向": "Use 2 to 4 sentences to introduce your background, strengths, key experience, and target direction",
         "專業技能與亮點": "Skills and Highlights",
@@ -6687,7 +6822,7 @@
         "請輸入專案名稱 | 類型 / 技術 | 日期 | 專案說明、角色與成果": "Enter project name | type / tech | date | description, role, and outcomes",
         "獎項 / 證照": "Awards / Certifications",
         "請逐行輸入獎項、證照或其他代表性成就": "Enter awards, certificates, or representative achievements line by line",
-        "可先編輯本機草稿；登入後按「儲存 CV」即可同步到雲端。": "You can edit a local draft first. After signing in, click \"Save CV\" to sync to the cloud.",
+        "未登入時只顯示提示詞；登入後按「儲存 CV」即可同步到雲端。": "Signed-out mode only shows placeholders. After signing in, click \"Save CV\" to sync to the cloud.",
         "即時預覽": "Live Preview",
         "這份預覽就是下載 PDF 的內容，也可以直接點選區塊做版面微調。": "This preview is what the PDF will contain. Click blocks directly to tune the layout.",
         "目前模式：先選模板再編輯": "Current Mode: Template First",
@@ -6760,6 +6895,7 @@
         "再點擊按鈕開始分析。": "then click the button to start.",
         "學測落點分析": "GSAT Placement Analysis",
         "輸入學測成績，根據近三年歷史資料快速預測落點校系。": "Enter GSAT scores to quickly estimate target schools and departments from recent historical data.",
+        "輸入學測成績，依各校系指定科目與篩選倍率快速整理落點。": "Enter GSAT scores and compare by each program's specified subjects and screening multipliers.",
         "就讀組別": "Track",
         "自然組": "Science Track",
         "社會組": "Social Studies Track",
@@ -6789,6 +6925,7 @@
         "先選範圍，再開始看落點": "Choose a scope, then view placements",
         "建議先選大學分類、學校與科系，再填入學測成績。": "Choose a university category, school, and department before entering GSAT scores.",
         "系統會同時整理落點結果、校系背景資料與學習歷程準備方向。": "The system will summarize placement results, school background, and portfolio preparation directions.",
+        "系統會優先顯示通過檢定、且最接近指定科目篩選線的校系。": "The system prioritizes programs that pass thresholds and are closest to the specified-subject screening line.",
         "文字格式工具列": "Text Formatting Toolbar",
         "粗體 Ctrl+B": "Bold Ctrl+B",
         "斜體 Ctrl+I": "Italic Ctrl+I",
@@ -6994,6 +7131,8 @@
         "先補上學測成績": "Enter GSAT Scores First",
         "至少輸入目前要採計的五科級分後，再開始落點分析。": "Enter at least the five subject scores being counted before starting placement analysis.",
         "如果還沒決定校系，也可以先維持「全部大學 / 全部科系」快速看整體分布。": "If you have not chosen a school or department, keep \"All Universities / All Departments\" to view the broad distribution.",
+        "至少輸入你要比對的學測科目級分後，再開始落點分析。": "Enter the GSAT subject scores you want to compare before starting placement analysis.",
+        "系統會依各校系採計與倍率篩選科目計算，不用五科總分硬比。": "The system uses each program's counted subjects and multiplier-screening subjects, not a forced five-subject total.",
         "夢幻志願": "Reach",
         "安全志願": "Target",
         "保底志願": "Safety",
@@ -7005,11 +7144,17 @@
         "科系：": "Department: ",
         "資料來源：": "Data source: ",
         "排序說明：夢幻志願會先看最接近門檻的校系，安全與保底則優先顯示差距較小、比較貼近實際填志願順序的選項。": "Sort note: reach options show the closest thresholds first; target and safety options prioritize smaller gaps closer to practical preference order.",
+        "排序說明：先排除未達檢定校系，再依各校系指定科目與歷年篩選線差距分組。": "Sort note: programs that miss thresholds are hidden first, then results are grouped by each program's specified-subject gap to historical screening lines.",
         "門檻未達：": "Threshold not met: ",
         "加權：": "Weighted: ",
         "歷年均線：": "Historical avg: ",
+        "指定科目": "Specified Subjects",
+        "採計科目": "Counted Subjects",
+        "你的級分：": "Your score: ",
+        "歷年篩選線：": "Historical screening line: ",
         "差距：": "Gap: ",
         "五科總分（滿分 75）": "Five-subject total (max 75)",
+        "已輸入科目級分合計（非排序依據）": "Entered subject-score sum (not used for ranking)",
         "本資料為歷年統計估算，": "This uses estimates from historical statistics. ",
         "僅供初步參考": "For preliminary reference only",
         "建議交叉比對": "Please cross-check with",
@@ -7058,8 +7203,8 @@
         "Google authorize URL 已建立": "Google authorize URL created",
         "Google authorize URL 建立失敗": "Failed to create Google authorize URL",
         "目前無法產生 Google authorize URL，通常表示 Supabase URL 格式有誤。": "The Google authorize URL cannot be generated, usually because the Supabase URL format is invalid.",
-        "登出中，正在切回本機草稿模式。": "Signing out and returning to local draft mode.",
-        "已登出，目前回到本機草稿模式。": "Signed out. You are back in local draft mode.",
+        "登出中，正在切回提示詞模式。": "Signing out and returning to placeholder mode.",
+        "已登出，目前回到提示詞模式。": "Signed out. You are back in placeholder mode.",
         "已清除此裝置的登入狀態；雲端登出回報：": "Cleared this device's sign-in state; cloud sign-out reported: "
       });
 
@@ -7071,11 +7216,11 @@
         ["已同步雲端", "Synced to cloud"],
         ["Google 已登入", "Signed in with Google"],
         ["尚未登入", "Not signed in"],
-        ["可先編輯草稿", "Draft editing available"],
-        ["本機草稿", "Local draft"],
+        ["登入後保存資料", "Sign in to save data"],
+        ["提示詞模式", "Placeholder mode"],
         ["尚未同步", "Not synced"],
         ["登出中...", "Signing out..."],
-        ["正在切回本機草稿", "Returning to local draft"],
+        ["正在切回提示詞", "Returning to placeholders"],
         ["全部大學", "All Universities"],
         ["全部科系", "All Departments"],
         ["請先選擇大學", "Choose a university first"],
@@ -7341,6 +7486,7 @@
       const RESUME_LANGUAGE_KEY = "cv-studio-resume-language-v1";
       const PDF_PAGE_MODE_KEY = "cv-studio-pdf-page-mode-v1";
       const PORTFOLIO_STORAGE_KEY = "pf-studio-local-v4";
+      const SNAPSHOTS_KEY = "cv-studio-snapshots-v1";
       const APPLICATIONS_KEY = "cv-studio-applications-v1";
       const BILINGUAL_FIELDS = ["name", "role", "location", "website", "summary", "skills", "highlights", "experience", "education", "projects", "awards"];
       const defaultData = {
@@ -7912,8 +8058,13 @@
         };
       }
 
+      function shouldStartWithSignedOutPlaceholders() {
+        return localStorage.getItem(AUTH_SIGNED_OUT_KEY) === "true"
+          || !localStorage.getItem(CLOUD_PROFILE_ACTIVE_KEY);
+      }
+
       const state = {
-        data: normalizeCvData(loadJson(STORAGE_KEY, defaultData)),
+        data: normalizeCvData(shouldStartWithSignedOutPlaceholders() ? defaultData : loadJson(STORAGE_KEY, defaultData)),
         config: loadInitialConfig(),
         template: localStorage.getItem(TEMPLATE_KEY) || "n-tech",
         workflowMode: localStorage.getItem(WORKFLOW_KEY) || "template-first",
@@ -8021,58 +8172,41 @@
         return next;
       }
 
+      function canPersistPrivateData() {
+        return Boolean(state.user);
+      }
+
       function saveJson(key, value) {
+        if ([STORAGE_KEY, PORTFOLIO_STORAGE_KEY, SNAPSHOTS_KEY, APPLICATIONS_KEY].includes(key) && !canPersistPrivateData()) {
+          localStorage.removeItem(key);
+          return;
+        }
         localStorage.setItem(key, JSON.stringify(value));
       }
 
       function loadSignedOutDraftSnapshot() {
-        try {
-          const raw = localStorage.getItem(SIGNED_OUT_DRAFT_KEY);
-          if (!raw) {
-            return {
-              data: normalizeCvData(defaultData),
-              template: state.config.defaultTemplate || "n-tech",
-              workflowMode: "template-first",
-              resumeLanguage: "auto",
-              pdfPageMode: "auto",
-              layoutPrefs: {}
-            };
-          }
-
-          const parsed = JSON.parse(raw);
-          const data = parsed?.data || parsed || defaultData;
-          return {
-            data: normalizeCvData(data),
-            template: parsed?.template || state.config.defaultTemplate || "n-tech",
-            workflowMode: parsed?.workflowMode || "template-first",
-            resumeLanguage: parsed?.resumeLanguage || "auto",
-            pdfPageMode: parsed?.pdfPageMode || "auto",
-            layoutPrefs: parsed?.layoutPrefs && typeof parsed.layoutPrefs === "object"
-              ? parsed.layoutPrefs
-              : {}
-          };
-        } catch {
-          return {
-            data: normalizeCvData(defaultData),
-            template: state.config.defaultTemplate || "n-tech",
-            workflowMode: "template-first",
-            resumeLanguage: "auto",
-            pdfPageMode: "auto",
-            layoutPrefs: {}
-          };
-        }
+        return {
+          data: normalizeCvData(defaultData),
+          template: state.config.defaultTemplate || "n-tech",
+          workflowMode: "template-first",
+          resumeLanguage: "auto",
+          pdfPageMode: "auto",
+          layoutPrefs: {}
+        };
       }
 
       function preserveSignedOutDraftSnapshot() {
-        if (localStorage.getItem(CLOUD_PROFILE_ACTIVE_KEY)) return;
-        localStorage.setItem(SIGNED_OUT_DRAFT_KEY, JSON.stringify({
-          data: normalizeCvData(state.data),
-          template: state.template || state.config.defaultTemplate || "n-tech",
-          workflowMode: state.workflowMode || "template-first",
-          resumeLanguage: state.resumeLanguage || "auto",
-          pdfPageMode: state.pdfPageMode || "auto",
-          layoutPrefs: state.layoutPrefs || {}
-        }));
+        localStorage.removeItem(SIGNED_OUT_DRAFT_KEY);
+      }
+
+      function clearSignedOutPrivateData() {
+        [
+          STORAGE_KEY,
+          SIGNED_OUT_DRAFT_KEY,
+          PORTFOLIO_STORAGE_KEY,
+          SNAPSHOTS_KEY,
+          APPLICATIONS_KEY
+        ].forEach((key) => localStorage.removeItem(key));
       }
 
       function restoreSignedOutDraftSnapshot() {
@@ -8085,7 +8219,7 @@
         state.layoutPrefs = snapshot.layoutPrefs;
 
         localStorage.removeItem(CLOUD_PROFILE_ACTIVE_KEY);
-        saveJson(STORAGE_KEY, state.data);
+        clearSignedOutPrivateData();
         localStorage.setItem(TEMPLATE_KEY, state.template);
         localStorage.setItem(WORKFLOW_KEY, state.workflowMode);
         localStorage.setItem(RESUME_LANGUAGE_KEY, state.resumeLanguage);
@@ -8096,14 +8230,20 @@
         syncWorkflowUi();
         syncLayoutControls();
         updateTemplate(state.template, false);
+        $("syncStatus").innerHTML = "<strong>提示詞模式</strong> · 尚未同步";
+        renderSnapshotList();
+        renderApplicationList();
+        renderBilingualMappingControls();
         updatePreview(true);
+        window.dispatchEvent(new CustomEvent("portfolio:cloud-loaded", { detail: { source: "signed-out-placeholders" } }));
         notifyCvDataUpdated("signed-out-draft");
       }
 
       function notifyCvDataUpdated(source = "manual") {
         if (!state.user && !state.authBusy && source !== "signed-out-draft") {
-          preserveSignedOutDraftSnapshot();
+          clearSignedOutPrivateData();
         }
+        updateActionButtons();
         window.dispatchEvent(new CustomEvent("cv:data-updated", { detail: { source } }));
       }
 
@@ -8221,10 +8361,31 @@
         return pdf.output("blob");
       }
 
-      function setMessage(text, type = "") {
+      let messageToastTimer = 0;
+
+      function showMessageToast(text, type = "") {
+        const region = $("toastRegion");
+        if (!region || !text) return;
+        window.clearTimeout(messageToastTimer);
+
+        const toast = document.createElement("div");
+        toast.className = `toast${type ? ` ${type}` : ""}`;
+        toast.setAttribute("role", type === "error" ? "alert" : "status");
+        toast.textContent = text;
+        region.replaceChildren(toast);
+        window.cvStudioI18n?.apply?.(toast);
+
+        messageToastTimer = window.setTimeout(() => {
+          toast.classList.add("leaving");
+          window.setTimeout(() => toast.remove(), 180);
+        }, 3600);
+      }
+
+      function setMessage(text, type = "", options = {}) {
         const node = $("message");
         node.textContent = text;
         node.className = `message${type ? ` ${type}` : ""}`;
+        if (options.toast) showMessageToast(text, type);
       }
 
       function sleep(ms) {
@@ -8612,10 +8773,21 @@
 
       function buildAvatar(layoutState) {
         const initials = (getDisplayFieldValue("name") || "CV").trim().slice(0, 2).toUpperCase();
+        const shape = escapeHtml(layoutState.avatarShape);
+        const avatarContent = state.data.avatar ? `<img src="${escapeHtml(state.data.avatar)}" alt="avatar" />` : escapeHtml(initials);
+        if (state.isPublicShare) {
+          return `
+            <div class="avatar ${shape}">
+              ${avatarContent}
+            </div>
+          `;
+        }
+        const uploadLabel = escapeHtml(uiText("點擊上傳頭像照片"));
         return `
-          <div class="avatar ${escapeHtml(layoutState.avatarShape)}">
-            ${state.data.avatar ? `<img src="${escapeHtml(state.data.avatar)}" alt="avatar" />` : escapeHtml(initials)}
-          </div>
+          <button class="avatar ${shape} avatar-upload-trigger" type="button" data-avatar-upload-trigger aria-label="${uploadLabel}" title="${uploadLabel}">
+            ${avatarContent}
+            <span class="avatar-upload-cue">${escapeHtml(uiText("上傳照片"))}</span>
+          </button>
         `;
       }
 
@@ -9419,6 +9591,7 @@
         document.querySelectorAll(".app-page").forEach((page) => page.classList.remove("active"));
         $("page-cv")?.classList.add("active");
         document.querySelectorAll(".app-tab").forEach((tab) => tab.classList.remove("active"));
+        updatePreview(true);
         $("cvPaper")?.querySelectorAll("[contenteditable='true']").forEach((node) => {
           node.setAttribute("contenteditable", "false");
         });
@@ -9457,33 +9630,43 @@
       }
 
       function updateActionButtons() {
-        const readyForLogin = Boolean(getGoogleAuthorizeUrl());
         const readyForCloud = canUseSupabase();
         const canvaUrl = getCanvaConnectUrl();
         const authorizeUrl = getGoogleAuthorizeUrl();
+        const readyForLogin = Boolean(authorizeUrl);
+        const setButtonDisabled = (id, disabled) => {
+          const button = $(id);
+          if (!button) return;
+          button.disabled = Boolean(disabled);
+          if (disabled) {
+            button.setAttribute("disabled", "");
+          } else {
+            button.removeAttribute("disabled");
+          }
+        };
         document.querySelectorAll("[data-login-trigger='google']").forEach((button) => {
           if (button.tagName === "A") {
             button.href = authorizeUrl || "#";
-            button.setAttribute("aria-disabled", "false");
+            button.setAttribute("aria-disabled", readyForLogin ? "false" : "true");
           } else {
-            button.disabled = false;
+            button.disabled = !readyForLogin;
           }
         });
         document.querySelectorAll("[data-canva-trigger]").forEach((button) => {
           button.href = canvaUrl;
           button.setAttribute("aria-disabled", "false");
         });
-        $("logoutBtn").disabled = !state.user || state.authBusy;
-        $("headerLogoutBtn").disabled = !state.user || state.authBusy;
-        $("saveBtn").disabled = !readyForCloud || !state.user || state.authBusy;
-        $("publishShareBtn").disabled = !readyForCloud || !state.user || state.authBusy;
-        $("copyShareBtn").disabled = !state.shareSlug || state.authBusy;
-        $("unpublishShareBtn").disabled = !readyForCloud || !state.user || !state.shareSlug || state.authBusy;
-        $("loadProfileBtn").disabled = !readyForCloud || state.authBusy;
-        $("applyConfigBtn").disabled = false;
-        $("uploadAvatarBtn").disabled = !readyForCloud || !state.user || state.authBusy;
-        $("clearAvatarBtn").disabled = !state.data.avatar || state.authBusy;
-        $("installBtn").disabled = !state.installPrompt;
+        setButtonDisabled("logoutBtn", !state.user || state.authBusy);
+        setButtonDisabled("headerLogoutBtn", !state.user || state.authBusy);
+        setButtonDisabled("saveBtn", !readyForCloud || !state.user || state.authBusy);
+        setButtonDisabled("publishShareBtn", !readyForCloud || !state.user || state.authBusy);
+        setButtonDisabled("copyShareBtn", !state.shareSlug || state.authBusy);
+        setButtonDisabled("unpublishShareBtn", !readyForCloud || !state.user || !state.shareSlug || state.authBusy);
+        setButtonDisabled("loadProfileBtn", !readyForCloud || state.authBusy);
+        setButtonDisabled("applyConfigBtn", false);
+        setButtonDisabled("uploadAvatarBtn", state.authBusy);
+        setButtonDisabled("clearAvatarBtn", !state.data.avatar || state.authBusy);
+        setButtonDisabled("installBtn", !state.installPrompt);
       }
 
       function syncLogoutFeedback() {
@@ -9620,13 +9803,14 @@
 
           if (event === "SIGNED_IN" && state.user) {
             clearSignedOutPreference();
+            localStorage.setItem(CLOUD_PROFILE_ACTIVE_KEY, state.user.id || "true");
             preserveSignedOutDraftSnapshot();
             await loadProfile();
             setMessage("Google 登入成功，已連接到雲端 CV。", "success");
           }
 
           if (event === "SIGNED_OUT") {
-            setMessage("已登出，目前回到本機草稿模式。");
+            setMessage("已登出，目前回到提示詞模式。");
           }
           window.dispatchEvent(new CustomEvent("cv:supabase-auth-changed", {
             detail: { event, user: state.user || null }
@@ -9728,11 +9912,9 @@
         }
         const authCode = getAuthCodeFromUrl();
         const shouldForceSignedOut = hasSignedOutPreference() && !authCode;
-        console.log("[CV Auth] authCode from URL:", authCode);
         state.authDebug.hasCode = Boolean(authCode);
         if (authCode) {
           const { error: exchangeError } = await state.client.auth.exchangeCodeForSession(authCode);
-          console.log("[CV Auth] exchangeCodeForSession error:", exchangeError?.message || "none");
           if (exchangeError) {
             state.authDebug.exchangeStatus = "error";
             state.authDebug.exchangeMessage = exchangeError.message;
@@ -9747,7 +9929,6 @@
           state.authDebug.exchangeMessage = "";
         }
         const { data, error } = await state.client.auth.getSession();
-        console.log("[CV Auth] getSession user:", data?.session?.user?.email || "null", "error:", error?.message || "none");
         if (error) {
           state.authDebug.sessionPresent = false;
           state.authDebug.sessionUser = "";
@@ -9780,6 +9961,7 @@
         updateActionButtons();
         renderAuthDebugPanel();
         if (state.user) {
+          localStorage.setItem(CLOUD_PROFILE_ACTIVE_KEY, state.user.id || "true");
           await loadProfile();
         }
         if (state.pendingAuthMessage) {
@@ -9796,9 +9978,9 @@
         const loginTriggers = document.querySelectorAll("[data-login-trigger='google']");
         const headerLogoutBtn = $("headerLogoutBtn");
         if (state.authBusy) {
-          $("authStatus").innerHTML = "<strong>登出中...</strong> · 正在切回本機草稿";
+          $("authStatus").innerHTML = "<strong>登出中...</strong> · 正在切回提示詞";
           $("headerAuthStatus").classList.remove("user-pill");
-          $("headerAuthStatus").innerHTML = "<strong>登出中...</strong> · 正在切回本機草稿";
+          $("headerAuthStatus").innerHTML = "<strong>登出中...</strong> · 正在切回提示詞";
           loginTriggers.forEach((button) => {
             button.style.display = "none";
           });
@@ -9825,12 +10007,12 @@
           headerLogoutBtn.hidden = false;
         } else {
           $("authStatus").innerHTML = state.authBusy
-            ? "<strong>登出中...</strong> · 正在切回本機草稿"
-            : "<strong>尚未登入</strong> · 可先編輯草稿";
+            ? "<strong>登出中...</strong> · 正在切回提示詞"
+            : "<strong>尚未登入</strong> · 登入後保存資料";
           $("headerAuthStatus").classList.remove("user-pill");
           $("headerAuthStatus").innerHTML = state.authBusy
-            ? "<strong>登出中...</strong> · 正在切回本機草稿"
-            : "<strong>尚未登入</strong> · 可先編輯草稿";
+            ? "<strong>登出中...</strong> · 正在切回提示詞"
+            : "<strong>尚未登入</strong> · 登入後保存資料";
           loginTriggers.forEach((button) => {
             button.style.display = "";
           });
@@ -9880,14 +10062,14 @@
         rememberSignedOutPreference();
         if (!makeClient()) {
           await forceLocalSignedOut("manual-signout-no-client");
-          setMessage("目前沒有可用的雲端登入連線，已切回本機草稿模式。");
+          setMessage("目前沒有可用的雲端登入連線，已切回提示詞模式。");
           return;
         }
         state.authBusy = true;
         updateAuthUi();
         syncLogoutFeedback();
         updateActionButtons();
-        setMessage("登出中，正在切回本機草稿模式。");
+        setMessage("登出中，正在切回提示詞模式。");
         clearAuthRedirectParams();
         let signOutError = null;
         try {
@@ -9901,7 +10083,7 @@
         if (signOutError) {
           setMessage(`已清除此裝置的登入狀態；雲端登出回報：${signOutError.message || signOutError}`, "success");
         } else {
-          setMessage("已登出，目前回到本機草稿模式。", "success");
+          setMessage("已登出，目前回到提示詞模式。", "success");
         }
       }
 
@@ -9926,20 +10108,29 @@
           localStorage.setItem(CLOUD_PROFILE_ACTIVE_KEY, state.user.id || "true");
           setMessage("已從雲端載入 CV。", "success");
         } else {
-          setMessage("目前沒有雲端 CV，可直接從本機草稿開始編輯。");
+          setMessage("目前沒有雲端 CV；登入狀態下可開始編輯並儲存。");
         }
         await loadOwnPublicShare();
       }
 
       async function saveProfile() {
         if (!state.user) {
-          setMessage("請先用 Google 登入，之後就能把 CV 存到雲端。", "error");
+          setMessage("請先用 Google 登入，之後就能把 CV 存到雲端。", "error", { toast: true });
           return;
         }
         if (!state.client) {
-          setMessage("Supabase 尚未設定完成。", "error");
+          setMessage("Supabase 尚未設定完成。", "error", { toast: true });
           return;
         }
+
+        const saveButton = $("saveBtn");
+        const originalSaveLabel = saveButton?.textContent || uiText("儲存 CV");
+        if (saveButton) {
+          saveButton.disabled = true;
+          saveButton.textContent = uiText("儲存中...");
+          saveButton.setAttribute("aria-busy", "true");
+        }
+        setMessage("正在儲存 CV 到雲端...");
 
         const payload = {
           user_id: state.user.id,
@@ -9949,17 +10140,27 @@
           content: buildProfileContent()
         };
 
-        const { error } = await state.client.from("cv_profiles").upsert(payload, {
-          onConflict: "user_id"
-        });
+        try {
+          const { error } = await state.client.from("cv_profiles").upsert(payload, {
+            onConflict: "user_id"
+          });
 
-        if (error) {
-          setMessage(`儲存失敗：${error.message}`, "error");
-          return;
+          if (error) {
+            setMessage(`儲存失敗：${error.message}`, "error", { toast: true });
+            return;
+          }
+
+          $("syncStatus").innerHTML = `<strong>${escapeHtml(templateLabels[state.template])}</strong> · 已同步雲端`;
+          setMessage("CV 已成功儲存到雲端，之後登入同一個 Google 帳號就能繼續編輯。", "success", { toast: true });
+        } catch (error) {
+          setMessage(`儲存失敗：${error?.message || error}`, "error", { toast: true });
+        } finally {
+          if (saveButton) {
+            saveButton.textContent = originalSaveLabel;
+            saveButton.setAttribute("aria-busy", "false");
+          }
+          updateActionButtons();
         }
-
-        $("syncStatus").innerHTML = `<strong>${escapeHtml(templateLabels[state.template])}</strong> · 已同步雲端`;
-        setMessage("CV 已成功儲存到雲端，之後登入同一個 Google 帳號就能繼續編輯。", "success");
       }
 
       function setAvatarUrl(url, source = "avatar") {
@@ -9977,12 +10178,60 @@
         return `${state.user.id}/avatar-${Date.now()}.${extension}`;
       }
 
+      function readFileAsDataUrl(file) {
+        return new Promise((resolve, reject) => {
+          const reader = new FileReader();
+          reader.onload = () => resolve(reader.result);
+          reader.onerror = () => reject(new Error("無法讀取圖片檔案。"));
+          reader.readAsDataURL(file);
+        });
+      }
+
+      function loadImageFromDataUrl(dataUrl) {
+        return new Promise((resolve, reject) => {
+          const image = new Image();
+          image.onload = () => resolve(image);
+          image.onerror = () => reject(new Error("無法載入圖片檔案。"));
+          image.src = dataUrl;
+        });
+      }
+
+      async function createLocalAvatarDataUrl(file) {
+        const dataUrl = await readFileAsDataUrl(file);
+        const image = await loadImageFromDataUrl(dataUrl);
+        const width = image.naturalWidth || image.width;
+        const height = image.naturalHeight || image.height;
+        if (!width || !height) throw new Error("圖片尺寸無法辨識。");
+
+        const canvas = document.createElement("canvas");
+        const targetSize = 512;
+        canvas.width = targetSize;
+        canvas.height = targetSize;
+        const ctx = canvas.getContext("2d");
+        if (!ctx) throw new Error("瀏覽器不支援圖片處理。");
+
+        const sourceSize = Math.min(width, height);
+        const sourceX = Math.max(0, (width - sourceSize) / 2);
+        const sourceY = Math.max(0, (height - sourceSize) / 2);
+        ctx.fillStyle = "#ffffff";
+        ctx.fillRect(0, 0, targetSize, targetSize);
+        ctx.drawImage(image, sourceX, sourceY, sourceSize, sourceSize, 0, 0, targetSize, targetSize);
+        return canvas.toDataURL("image/jpeg", 0.88);
+      }
+
+      async function applyLocalAvatarFile(file, successMessage = "頭像已暫套用到目前登入資料；按「儲存 CV」後會同步到雲端。") {
+        setMessage("正在處理頭像，請稍候...");
+        try {
+          const dataUrl = await createLocalAvatarDataUrl(file);
+          setAvatarUrl(dataUrl, "avatar-local-upload");
+          setMessage(successMessage, "success");
+        } catch (error) {
+          setMessage(`頭像處理失敗：${error.message}`, "error");
+        }
+      }
+
       async function uploadAvatarFile(file) {
         if (!file) return;
-        if (!state.user || !state.client) {
-          setMessage("請先登入後再上傳頭像。", "error");
-          return;
-        }
         if (!file.type.startsWith("image/")) {
           setMessage("請選擇圖片檔案。", "error");
           return;
@@ -9991,9 +10240,13 @@
           setMessage("頭像檔案請控制在 4MB 以內。", "error");
           return;
         }
+        if (!state.user || !state.client) {
+          setMessage("請先登入後再上傳頭像。", "error");
+          return;
+        }
         const storage = state.client.storage?.from?.("cv-images");
         if (!storage) {
-          setMessage("Supabase Storage 尚未啟用，請先確認 cv-images bucket。", "error");
+          await applyLocalAvatarFile(file, "Supabase Storage 尚未啟用，已先暫套用到目前登入資料。");
           return;
         }
         setMessage("正在上傳頭像，請稍候...");
@@ -10017,6 +10270,7 @@
       }
 
       function openAvatarUploadDialog() {
+        if (state.isPublicShare) return;
         $("avatarFileInput")?.click();
       }
 
@@ -10075,6 +10329,13 @@
         } catch (error) {
           setMessage(`PDF 預覽失敗：${error.message}`, "error");
         }
+      }
+
+      function bindClickOnce(id, handler) {
+        const node = $(id);
+        if (!node || node.dataset.clickBound === "true") return;
+        node.dataset.clickBound = "true";
+        node.addEventListener("click", handler);
       }
 
       function attachInputListeners() {
@@ -10203,11 +10464,23 @@
           setMessage(`已重設 ${templateLabels[state.template]} 的排版設定。`, "success");
         });
         $("cvPaper").addEventListener("click", (event) => {
+          const avatarTrigger = event.target.closest("[data-avatar-upload-trigger]");
+          if (avatarTrigger) {
+            event.preventDefault();
+            event.stopImmediatePropagation();
+            setSelectedBlock("profile");
+            openAvatarUploadDialog();
+            return;
+          }
           const block = event.target.closest("[data-block-id]");
           if (!block) return;
           setSelectedBlock(block.dataset.blockId);
         });
         $("cvPaper").addEventListener("dragstart", (event) => {
+          if (event.target.closest("[data-avatar-upload-trigger]")) {
+            event.preventDefault();
+            return;
+          }
           const block = event.target.closest("[data-block-id]");
           if (!block) return;
           state.selectedBlock = block.dataset.blockId;
@@ -10267,16 +10540,18 @@
         });
 
         document.querySelectorAll("[data-login-trigger='google']").forEach((button) => {
+          if (button.dataset.clickBound === "true") return;
+          button.dataset.clickBound = "true";
           button.addEventListener("click", signInWithGoogle);
         });
-        $("headerLogoutBtn").addEventListener("click", signOut);
-        $("logoutBtn").addEventListener("click", signOut);
-        $("saveBtn").addEventListener("click", saveProfile);
-        $("publishShareBtn").addEventListener("click", publishShareProfile);
-        $("copyShareBtn").addEventListener("click", copyShareLink);
-        $("unpublishShareBtn").addEventListener("click", unpublishShareProfile);
-        $("uploadAvatarBtn").addEventListener("click", openAvatarUploadDialog);
-        $("clearAvatarBtn").addEventListener("click", clearAvatar);
+        bindClickOnce("headerLogoutBtn", signOut);
+        bindClickOnce("logoutBtn", signOut);
+        bindClickOnce("saveBtn", saveProfile);
+        bindClickOnce("publishShareBtn", publishShareProfile);
+        bindClickOnce("copyShareBtn", copyShareLink);
+        bindClickOnce("unpublishShareBtn", unpublishShareProfile);
+        bindClickOnce("uploadAvatarBtn", openAvatarUploadDialog);
+        bindClickOnce("clearAvatarBtn", clearAvatar);
         $("avatarFileInput").addEventListener("change", async (event) => {
           const file = event.target.files?.[0];
           event.target.value = "";
@@ -10676,7 +10951,6 @@
       /* ══════════════════════════════════════════════════════
          TOOLS – CV versions and application records
       ══════════════════════════════════════════════════════ */
-      const SNAPSHOTS_KEY = "cv-studio-snapshots-v1";
       const MAX_SNAPSHOTS = 12;
 
       function loadSnapshots() {
@@ -10900,6 +11174,7 @@
         updatePreview(true);
         notifyCvDataUpdated("bilingual-content");
         setMessage(`已儲存「${BILINGUAL_FIELD_LABELS[field]}」的雙語對照。`, "success");
+        updateActionButtons();
       }
 
       function syncBilingualFromCurrent() {
@@ -11151,6 +11426,10 @@
         $("saveBilingualBtn")?.addEventListener("click", saveBilingualField);
         $("syncBilingualFromCurrentBtn")?.addEventListener("click", syncBilingualFromCurrent);
         $("clearBilingualFieldBtn")?.addEventListener("click", clearBilingualField);
+        bindClickOnce("saveBtn", saveProfile);
+        bindClickOnce("publishShareBtn", publishShareProfile);
+        bindClickOnce("copyShareBtn", copyShareLink);
+        bindClickOnce("unpublishShareBtn", unpublishShareProfile);
 
         // Export / Import
         $("exportJsonBtn")?.addEventListener("click", exportJson);
@@ -11202,6 +11481,9 @@
 
       async function init() {
         await ensureDependenciesReady();
+        if (shouldStartWithSignedOutPlaceholders()) {
+          clearSignedOutPrivateData();
+        }
         const authRedirectResult = readAuthRedirectResult();
         if (authRedirectResult) {
           state.pendingAuthMessage = {
@@ -11289,6 +11571,8 @@
       const PF_KEY = "pf-studio-local-v4";
       const PF_TAB_KEY = "cv-studio-active-tab";
       const PF_PRESET_KEY = "pf-studio-preset-v1";
+      const PF_AUTH_SIGNED_OUT_KEY = "cv-studio-auth-signed-out-v1";
+      const PF_CLOUD_PROFILE_ACTIVE_KEY = "cv-studio-cloud-profile-active-v1";
 
       const pfThemes = {
         slate:      { label: "Slate Dossier", shortLabel: "深藍提案", description: "正式、商管、顧問式提案", color: "#404b5a", deep: "#1f2d3d", soft: "#dfe7ef", paper: "#f7f2ea", line: "#c8d2dc", variant: "dossier", font: "sans" },
@@ -11450,8 +11734,18 @@
         };
       }
 
+      function canLoadStoredPortfolio() {
+        return localStorage.getItem(PF_AUTH_SIGNED_OUT_KEY) !== "true"
+          && Boolean(localStorage.getItem(PF_CLOUD_PROFILE_ACTIVE_KEY));
+      }
+
+      function canPersistPortfolio() {
+        return Boolean(window.cvStudioCloud?.getUser?.());
+      }
+
       let pf = (() => {
         try {
+          if (!canLoadStoredPortfolio()) return normalizePfData(JSON.parse(JSON.stringify(pfDefault)));
           const s = localStorage.getItem(PF_KEY);
           return normalizePfData(s ? JSON.parse(s) : JSON.parse(JSON.stringify(pfDefault)));
         } catch { return normalizePfData(JSON.parse(JSON.stringify(pfDefault))); }
@@ -11464,7 +11758,11 @@
       })();
 
       function save() {
-        localStorage.setItem(PF_KEY, JSON.stringify(pf));
+        if (canPersistPortfolio()) {
+          localStorage.setItem(PF_KEY, JSON.stringify(pf));
+        } else {
+          localStorage.removeItem(PF_KEY);
+        }
         window.dispatchEvent(new CustomEvent("portfolio:data-updated"));
       }
       function themePalette() {
@@ -11782,6 +12080,10 @@
       }
 
       function addPortfolioAssetFromUrl() {
+        if (!canPersistPortfolio()) {
+          setAssetStatus("請先登入後再新增素材。", "error");
+          return;
+        }
         const urlInput = $el("pfAssetUrlInput");
         const nameInput = $el("pfAssetNameInput");
         const url = (urlInput?.value || "").trim();
@@ -11808,6 +12110,10 @@
 
       async function uploadPortfolioAsset(file) {
         if (!file) return;
+        if (!window.cvStudioCloud?.canUpload?.()) {
+          setAssetStatus("請先登入後再上傳素材。", "error");
+          return;
+        }
         if (file.size > 12 * 1024 * 1024) {
           setAssetStatus("附件請控制在 12MB 以內。", "error");
           return;
@@ -11817,25 +12123,13 @@
         try {
           let url = "";
           let path = "";
-          if (window.cvStudioCloud?.canUpload?.()) {
-            const uploaded = await window.cvStudioCloud.uploadPublicAsset(file, {
-              pathPrefix: "portfolio-assets",
-              fileName: file.name,
-              contentType: file.type || "application/octet-stream"
-            });
-            url = uploaded.publicUrl;
-            path = uploaded.path;
-          } else if (file.type.startsWith("image/")) {
-            url = await new Promise((resolve, reject) => {
-              const reader = new FileReader();
-              reader.onload = () => resolve(String(reader.result || ""));
-              reader.onerror = () => reject(new Error("讀取圖片失敗。"));
-              reader.readAsDataURL(file);
-            });
-          } else {
-            setAssetStatus("非圖片附件需要登入後才能上傳到雲端。", "error");
-            return;
-          }
+          const uploaded = await window.cvStudioCloud.uploadPublicAsset(file, {
+            pathPrefix: "portfolio-assets",
+            fileName: file.name,
+            contentType: file.type || "application/octet-stream"
+          });
+          url = uploaded.publicUrl;
+          path = uploaded.path;
           addPortfolioAsset({
             name,
             url,
@@ -11845,7 +12139,7 @@
             size: file.size
           });
           if ($el("pfAssetNameInput")) $el("pfAssetNameInput").value = "";
-          setAssetStatus(path ? "素材已上傳並加入。": "圖片已暫存在本機素材庫。", "success");
+          setAssetStatus("素材已上傳並加入。", "success");
         } catch (error) {
           setAssetStatus(error.message || "素材處理失敗。", "error");
         }
@@ -11883,6 +12177,13 @@
 
       function reloadPortfolioFromStorage() {
         try {
+          if (!canLoadStoredPortfolio()) {
+            pf = normalizePfData(JSON.parse(JSON.stringify(pfDefault)));
+            renderEditor();
+            renderPreview();
+            renderAssetList();
+            return;
+          }
           pf = normalizePfData(JSON.parse(localStorage.getItem(PF_KEY) || "{}"));
         } catch {
           pf = normalizePfData(JSON.parse(JSON.stringify(pfDefault)));
@@ -13145,6 +13446,9 @@
         renderPreview();
         renderAssetList();
         window.addEventListener("portfolio:cloud-loaded", reloadPortfolioFromStorage);
+        window.addEventListener("cv:supabase-auth-changed", (event) => {
+          if (!event.detail?.user) reloadPortfolioFromStorage();
+        });
         window.addEventListener("cv:language-changed", () => {
           renderEditor();
           renderPreview();
@@ -15775,8 +16079,11 @@
         return GSAT_DATA_STATE.source === "supabase" ? "Supabase" : "本地快照";
       }
 
-      function buildEmptyResultNote() {
+      function buildEmptyResultNote(meta = {}) {
         const trackText = selectedTrack === "science" ? "自然組" : "社會組";
+        if (meta.totalCandidates && meta.blockedCount === meta.totalCandidates) {
+          return `目前範圍內有 ${formatGsatNumber(meta.totalCandidates)} 筆歷年切線，但依你輸入的級分判斷都未通過校系檢定，因此先不列入夢幻/安全/保底。建議補齊缺少的科目，或改查不採計該科的校系。`;
+        }
         if (selectedUniversity === "all") {
           return "目前這個範圍沒有對應的歷年校系切線。建議先縮小到一個大學分類或指定學校，系統會更容易給你可比較的落點結果。";
         }
@@ -15795,7 +16102,7 @@
         return `目前尚未收錄「${scopeText}」的歷年一階切線，所以這次不會硬算夢幻/安全/保底。下方仍會先提供校系摘要、個申/繁星資料與學習歷程建議。${nextStepText}`;
       }
 
-      function buildEmptyStateHtml() {
+      function buildEmptyStateHtml(meta = {}) {
         const actions = [];
         if (selectedUniversity !== "all" && selectedDepartment !== "all") {
           actions.push({ label: "改看同校全部科系", action: "show-all-departments", university: selectedUniversity });
@@ -15808,10 +16115,13 @@
         }
         actions.push({ label: "清除全部篩選", action: "clear-all-filters", variant: "soft" });
 
+        const title = meta.totalCandidates && meta.blockedCount === meta.totalCandidates
+          ? "目前沒有通過檢定的可列入校系。"
+          : "目前這個範圍沒有可直接計算的歷年切線。";
         return `
           <div class="gsat-empty-note">
-            <strong>目前這個範圍沒有可直接計算的歷年切線。</strong><br>
-            ${escapeGsatHtml(buildEmptyResultNote())}
+            <strong>${escapeGsatHtml(title)}</strong><br>
+            ${escapeGsatHtml(buildEmptyResultNote(meta))}
             ${buildGsatActionButtons(actions)}
           </div>
         `;
@@ -15828,9 +16138,9 @@
       }
 
       function getTierSortCaption(tier) {
-        if (tier === "dream") return "依照最接近歷年均線排序，方便先看最有機會挑戰到的校系。";
-        if (tier === "safety") return "依照與均線差距由小到大排序，先看最貼近實際志願順序的選項。";
-        return "依照與均線差距由小到大排序，避免一開始就被過度保守的選項淹沒。";
+        if (tier === "dream") return "依照指定科目最接近篩選線排序，方便先看最有機會挑戰到的校系。";
+        if (tier === "safety") return "依照指定科目差距由小到大排序，先看最貼近實際志願順序的選項。";
+        return "依照指定科目差距由小到大排序，避免一開始就被過度保守的選項淹沒。";
       }
 
       function clampBandRange(start, end) {
@@ -15891,10 +16201,12 @@
       }
 
       function getResultSummaryText(result) {
-        if (result.gap >= 5) return `比歷年均線高 ${result.gap} 分，可先當成穩健配置。`;
-        if (result.gap >= 0) return `剛好站上歷年均線 ${result.gap} 分，適合列入主力觀察帶。`;
-        if (result.gap > -3) return `和歷年均線只差 ${Math.abs(result.gap)} 分，屬於優先挑戰區。`;
-        return `和歷年均線差 ${Math.abs(result.gap)} 分，建議搭配備審與其他校系一起布局。`;
+        const label = result.summaryLabel || "篩選線";
+        const criteria = result.criteriaLabel || "指定科目";
+        if (result.gap >= 4) return `${criteria} 比歷年${label}高 ${result.gap} 級分，可先當成穩健配置。`;
+        if (result.gap >= 0) return `${criteria} 站上歷年${label} ${result.gap} 級分，適合列入主力觀察帶。`;
+        if (result.gap > -3) return `${criteria} 和歷年${label}只差 ${Math.abs(result.gap)} 級分，屬於優先挑戰區。`;
+        return `${criteria} 和歷年${label}差 ${Math.abs(result.gap)} 級分，建議搭配備審與其他校系一起布局。`;
       }
 
       function buildResultOverviewHtml(tierBuckets) {
@@ -16075,7 +16387,7 @@
             title: "依目前成績的準備方向",
             body: guidanceMap[band],
             example: sample
-              ? `以目前篩到的 ${escapeGsatHtml(sample.u)} ${escapeGsatHtml(sample.d)} 來看，你和歷年均線差 ${sample.gap >= 0 ? "+" : ""}${sample.gap} 分，建議把相關課程或作品放到前面。`
+              ? `以目前篩到的 ${escapeGsatHtml(sample.u)} ${escapeGsatHtml(sample.d)} 來看，你的 ${escapeGsatHtml(sample.criteriaLabel || "指定科目")} 和歷年${escapeGsatHtml(sample.summaryLabel || "篩選線")}差 ${sample.gap >= 0 ? "+" : ""}${sample.gap} 級分，建議把相關課程或作品放到前面。`
               : "若目前沒有對應校系切線資料，仍可先依校型準備通用版學習歷程，再依目標科系微調。",
             tags: band === "high"
               ? ["深度優先", "探究歷程", "辨識度"]
@@ -16257,6 +16569,88 @@
         return Object.entries(w).reduce((s, [k, v]) => s + (scores[k] || 0) * v, 0);
       }
 
+      const GSAT_SUBJECT_SHORT_LABELS = Object.freeze({
+        國文: "國",
+        英文: "英",
+        數學A: "數A",
+        數學B: "數B",
+        社會: "社",
+        自然: "自",
+      });
+
+      function parseGsatSubjectCombo(name = "") {
+        const text = String(name || "")
+          .replace(/\s+/g, "")
+          .replace(/之?級分總和|級分|總和|科/g, "");
+        const subjects = [];
+        let index = 0;
+        while (index < text.length) {
+          const rest = text.slice(index);
+          if (rest.startsWith("國文")) {
+            subjects.push("國文");
+            index += 2;
+          } else if (rest.startsWith("國")) {
+            subjects.push("國文");
+            index += 1;
+          } else if (rest.startsWith("英文")) {
+            subjects.push("英文");
+            index += 2;
+          } else if (rest.startsWith("英")) {
+            subjects.push("英文");
+            index += 1;
+          } else if (/^數學?A/i.test(rest) || rest.startsWith("數甲")) {
+            subjects.push("數學A");
+            index += rest.startsWith("數學") ? 3 : 2;
+          } else if (/^數學?B/i.test(rest) || rest.startsWith("數乙")) {
+            subjects.push("數學B");
+            index += rest.startsWith("數學") ? 3 : 2;
+          } else if (rest.startsWith("社會")) {
+            subjects.push("社會");
+            index += 2;
+          } else if (rest.startsWith("社")) {
+            subjects.push("社會");
+            index += 1;
+          } else if (rest.startsWith("自然")) {
+            subjects.push("自然");
+            index += 2;
+          } else if (rest.startsWith("自")) {
+            subjects.push("自然");
+            index += 1;
+          } else {
+            index += 1;
+          }
+        }
+        return [...new Set(subjects)];
+      }
+
+      function formatSubjectCombo(subjects = []) {
+        return subjects.map((subject) => GSAT_SUBJECT_SHORT_LABELS[subject] || subject).join("");
+      }
+
+      function scoreForSubjects(scores, subjects = []) {
+        return subjects.reduce((sum, subject) => sum + (scores[subject] || 0), 0);
+      }
+
+      function getRecordCriteriaSubjects(record = {}) {
+        if (Array.isArray(record.criteriaSubjects) && record.criteriaSubjects.length) {
+          return record.criteriaSubjects.filter(Boolean);
+        }
+        return Object.keys(record.w || {}).filter((subject) => (record.w || {})[subject] > 0);
+      }
+
+      function getRecordCriteriaLabel(record = {}) {
+        if (record.criteriaName) return record.criteriaName;
+        const subjects = getRecordCriteriaSubjects(record);
+        return formatSubjectCombo(subjects) || "校系指定科目";
+      }
+
+      function roundGsatScore(value, digits = 1) {
+        const num = Number(value);
+        if (!Number.isFinite(num)) return 0;
+        const factor = 10 ** digits;
+        return Math.round(num * factor) / factor;
+      }
+
       function bmLevel(subj, score) {
         const b = BM[subj]; if (!b) return "—";
         if (score >= b.頂標) return "頂標";
@@ -16306,45 +16700,175 @@
         return (scores[subj] || 0) >= b[lv];
       }
 
+      function getThresholdFailures(scores, thresholds = {}) {
+        const entries = Object.entries(thresholds || {});
+        const failures = [];
+        const mathA = thresholds.數學A;
+        const mathB = thresholds.數學B;
+
+        if (mathA && mathB) {
+          const mathPass = meetsThreshold(scores, "數學A", mathA) || meetsThreshold(scores, "數學B", mathB);
+          if (!mathPass) {
+            failures.push(`數學A需${mathA}或數學B需${mathB}（你：數A ${bmLevel("數學A", scores.數學A || 0)}／數B ${bmLevel("數學B", scores.數學B || 0)}）`);
+          }
+        }
+
+        entries.forEach(([subject, level]) => {
+          if ((subject === "數學A" || subject === "數學B") && mathA && mathB) return;
+          if (!meetsThreshold(scores, subject, level)) {
+            failures.push(`${subject}需${level}（你：${bmLevel(subject, scores[subject] || 0)}）`);
+          }
+        });
+
+        return failures;
+      }
+
+      function evaluateScreeningRules(scores, record) {
+        const rules = Array.isArray(record.screeningRules) ? record.screeningRules : [];
+        const evaluatedRules = rules.map((rule) => {
+          const items = (Array.isArray(rule.items) ? rule.items : [])
+            .map((item) => {
+              const subjects = Array.isArray(item.subjects) && item.subjects.length
+                ? item.subjects
+                : parseGsatSubjectCombo(item.label);
+              const cutline = Number(item.score);
+              if (!subjects.length || !Number.isFinite(cutline)) return null;
+              const userScore = scoreForSubjects(scores, subjects);
+              return {
+                label: item.label || formatSubjectCombo(subjects),
+                subjects,
+                cutline,
+                userScore,
+                gap: roundGsatScore(userScore - cutline),
+              };
+            })
+            .filter(Boolean);
+          if (!items.length) return null;
+          const binding = [...items].sort((a, b) => a.gap - b.gap || b.cutline - a.cutline)[0];
+          return {
+            year: rule.year || "",
+            items,
+            binding,
+          };
+        }).filter(Boolean);
+
+        if (!evaluatedRules.length) return null;
+
+        const avgGap = roundGsatScore(
+          evaluatedRules.reduce((sum, rule) => sum + rule.binding.gap, 0) / evaluatedRules.length
+        );
+        const latest = [...evaluatedRules].sort((a, b) => Number(b.year || 0) - Number(a.year || 0))[0];
+        const avgCutline = roundGsatScore(
+          evaluatedRules.reduce((sum, rule) => sum + rule.binding.cutline, 0) / evaluatedRules.length
+        );
+        const historyText = evaluatedRules
+          .slice(0, 3)
+          .map((rule) => `${rule.year ? `${rule.year} ` : ""}${rule.binding.label}${rule.binding.cutline}`)
+          .join("、");
+
+        return {
+          type: "screening",
+          criteriaLabel: latest.binding.label,
+          criteriaSubjects: latest.binding.subjects,
+          userW: roundGsatScore(latest.binding.userScore),
+          avgC: avgCutline,
+          gap: avgGap,
+          historyText,
+          statLabel: "指定科目",
+          cutlineLabel: "歷年篩選線",
+          summaryLabel: "篩選線",
+        };
+      }
+
+      function evaluateDeptRecord(scores, record) {
+        const screening = evaluateScreeningRules(scores, record);
+        if (screening) return screening;
+
+        const userW = weighted(scores, record.w || {});
+        const avgC = Number(record.avgC || 0);
+        const criteriaSubjects = getRecordCriteriaSubjects(record);
+        return {
+          type: "weighted",
+          criteriaLabel: getRecordCriteriaLabel(record),
+          criteriaSubjects,
+          userW: roundGsatScore(userW),
+          avgC: roundGsatScore(avgC),
+          gap: roundGsatScore(userW - avgC),
+          historyText: Array.isArray(record.h) && record.h.length ? record.h.slice(0, 3).join("、") : "",
+          statLabel: "採計科目",
+          cutlineLabel: "歷年均線",
+          summaryLabel: "均線",
+        };
+      }
+
+      function classifyPlacementTier(evaluation) {
+        if (evaluation.gap < 0) return "dream";
+        if (evaluation.gap < 4) return "safety";
+        return "fallback";
+      }
+
       /* ── Main analysis ─────────────────────────────────────────── */
       function analyze() {
         const scores   = getScores();
         const mathKey  = selectedTrack === "science" ? "數學A" : "數學B";
         const total5   = scores.國文 + scores.英文 + scores[mathKey] + scores.社會 + scores.自然;
+        const hasAnyScore = Object.values(scores).some((score) => score > 0);
 
-        if (total5 < 5) {
+        if (!hasAnyScore) {
           $g("gsatResultsArea").innerHTML = `
             <div class="gsat-results-empty">
               <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true" style="color:var(--muted);margin-bottom:16px;display:block;margin-left:auto;margin-right:auto;">
                 <path d="M12 3v18"/><path d="M3 12h18"/><circle cx="12" cy="12" r="9"/>
               </svg>
               <div style="font-size:15px;font-weight:700;color:var(--ink);margin-bottom:8px;">先補上學測成績</div>
-              <div style="font-size:14px;color:var(--muted);line-height:1.8;">至少輸入目前要採計的五科級分後，再開始落點分析。<br>如果還沒決定校系，也可以先維持「全部大學 / 全部科系」快速看整體分布。</div>
+              <div style="font-size:14px;color:var(--muted);line-height:1.8;">至少輸入你要比對的學測科目級分後，再開始落點分析。<br>系統會依各校系採計與倍率篩選科目計算，不用五科總分硬比。</div>
             </div>`;
           return;
         }
 
-        const results = getDeptRecordsForAnalysis(selectedTrack, selectedTierId, selectedUniversity, selectedDepartment)
+        const allResults = getDeptRecordsForAnalysis(selectedTrack, selectedTierId, selectedUniversity, selectedDepartment)
           .map(dep => {
-            const userW  = weighted(scores, dep.w);
-            const avgC   = dep.avgC;
-            const gap    = +(userW - avgC).toFixed(1);
-            const ratio  = userW / avgC;
-            /* 3-tier: 夢幻 = below cutoff, 安全 = up to 25% above, 保底 = 25%+ above */
-            const tier   = ratio < 1.0 ? "dream" : ratio < 1.25 ? "safety" : "fallback";
-            const fails  = Object.entries(dep.th || {})
-              .filter(([s, lv]) => !meetsThreshold(scores, s, lv))
-              .map(([s, lv]) => `${s}需${lv}（你：${bmLevel(s, scores[s] || 0)}）`);
-            return { ...dep, userW: +userW.toFixed(1), avgC: +avgC.toFixed(1), gap, tier, fails };
+            const evaluation = evaluateDeptRecord(scores, dep);
+            const tier = classifyPlacementTier(evaluation);
+            const fails = getThresholdFailures(scores, dep.th || {});
+            return { ...dep, ...evaluation, tier, fails };
           });
+        const results = allResults.filter((result) => !result.fails.length);
 
         const order = { dream:0, safety:1, fallback:2 };
         results.sort((a, b) => order[a.tier] - order[b.tier] || compareWithinTier(a, b));
-        renderResults(results, scores, total5);
+        renderResults(results, scores, total5, {
+          totalCandidates: allResults.length,
+          blockedCount: allResults.length - results.length,
+        });
       }
 
       /* ── Render ────────────────────────────────────────────────── */
-      function renderResults(results, scores, total5) {
+      function getResultDisplayLimit() {
+        if (selectedDepartment !== "all") return 50;
+        if (selectedUniversity !== "all") return 6;
+        return 5;
+      }
+
+      function buildResultBriefHtml(results, tierBuckets, meta = {}) {
+        const displayLimit = getResultDisplayLimit();
+        const hiddenCount = ["dream", "safety", "fallback"].reduce((sum, tier) => {
+          const list = tierBuckets[tier] || [];
+          return sum + Math.max(list.length - displayLimit, 0);
+        }, 0);
+        const parts = [
+          `<span><strong>${formatGsatNumber(results.length)}</strong> 筆通過檢定且可比較</span>`,
+        ];
+        if (meta.blockedCount) {
+          parts.push(`<span><strong>${formatGsatNumber(meta.blockedCount)}</strong> 筆未達檢定已隱藏</span>`);
+        }
+        if (hiddenCount) {
+          parts.push(`<span>每類先顯示最接近的 ${displayLimit} 筆，另有 ${formatGsatNumber(hiddenCount)} 筆收起</span>`);
+        }
+        return `<div class="gsat-result-brief">${parts.join("")}<br>本次比較採各校系指定科目、倍率篩選線或加權科目，不用五科總分直接排名。</div>`;
+      }
+
+      function renderResults(results, scores, total5, meta = {}) {
         const listen  = $g("gsatListen")?.value || "B";
         const { tierText, universityText, departmentText } = getSelectedFilterSummary();
         const subjSet = selectedTrack === "science"
@@ -16381,7 +16905,7 @@
         const metaRowHtml = `
           <div class="gsat-meta-row">
             <div class="gsat-source-chip">資料來源：<strong>${getGsatDataSourceLabel()}</strong></div>
-            <div class="gsat-sort-note">排序說明：夢幻志願會先看最接近門檻的校系，安全與保底則優先顯示差距較小、比較貼近實際填志願順序的選項。</div>
+            <div class="gsat-sort-note">排序說明：先排除未達檢定校系，再依各校系指定科目與歷年篩選線差距分組。</div>
           </div>`;
 
         const tierBuckets = results.reduce((acc, result) => {
@@ -16389,14 +16913,19 @@
           return acc;
         }, { dream: [], safety: [], fallback: [] });
 
+        const displayLimit = getResultDisplayLimit();
         const tierHtml = ["dream","safety","fallback"].map(tier => {
           const list = tierBuckets[tier];
           if (!list.length) return "";
           const cfg = TIER_CFG[tier];
-          const cards = list.map((r, index) => {
+          const visibleList = list.slice(0, displayLimit);
+          const hiddenCount = Math.max(list.length - visibleList.length, 0);
+          const cards = visibleList.map((r, index) => {
             const band = getPreferenceBand(r, index, list.length);
             const warnHtml = r.fails.length
               ? `<div class="gsat-threshold-warning">⚠ 門檻未達：${escapeGsatHtml(r.fails.join("、"))}</div>` : "";
+            const historyHtml = r.historyText
+              ? `<div class="gsat-dept-note">歷年參考：${escapeGsatHtml(r.historyText)}</div>` : "";
             return `<div class="gsat-dept-card${r.fails.length ? " gsat-dept-card--warn" : ""}">
               <div class="dc-header">
                 <span class="dc-badge ${cfg.badge}">${cfg.text}</span>
@@ -16405,10 +16934,12 @@
               </div>
               ${warnHtml}
               <div class="gsat-dept-stats">
-                <span>加權：<strong>${r.userW}</strong></span>
-                <span>歷年均線：<strong>${r.avgC}</strong></span>
+                <span>${escapeGsatHtml(r.statLabel || "採計科目")}：<strong>${escapeGsatHtml(r.criteriaLabel || "未提供")}</strong></span>
+                <span>你的級分：<strong>${r.userW}</strong></span>
+                <span>${escapeGsatHtml(r.cutlineLabel || "歷年均線")}：<strong>${r.avgC}</strong></span>
                 <span>差距：<strong style="color:${r.gap>=0?"#059669":"#dc2626"}">${r.gap>=0?"+":""}${r.gap}</strong></span>
               </div>
+              ${historyHtml}
               <div class="gsat-dept-band">
                 <span class="gsat-band-chip">${escapeGsatHtml(band.chip)}</span>
                 <div class="gsat-band-copy">
@@ -16419,31 +16950,37 @@
               ${r.note ? `<div class="gsat-dept-note">${escapeGsatHtml(r.note)}</div>` : ""}
             </div>`;
           }).join("");
+          const hiddenHtml = hiddenCount
+            ? `<div class="gsat-tier-caption">另有 ${formatGsatNumber(hiddenCount)} 筆 ${cfg.text} 校系已收起；請縮小學校或科系範圍取得更精準清單。</div>`
+            : "";
           return `<div class="gsat-tier-section">
-            <div class="gsat-section-title" style="color:${cfg.color}">${cfg.label}（${list.length}）</div>
+            <div class="gsat-section-title" style="color:${cfg.color}">${cfg.label}（顯示 ${visibleList.length} / ${list.length}）</div>
             <div class="gsat-tier-caption">${getTierSortCaption(tier)}</div>
             <div class="gsat-tier-row">${cards}</div>
+            ${hiddenHtml}
           </div>`;
         }).join("");
 
         const overviewHtml = results.length ? buildResultOverviewHtml(tierBuckets) : "";
-        const emptyStateHtml = results.length ? "" : buildEmptyStateHtml();
-        const dataOverviewHtml = buildGsatDataOverviewHtml();
-        const universityTwInsightHtml = buildUniversityTwInsightHtml();
+        const emptyStateHtml = results.length ? "" : buildEmptyStateHtml(meta);
+        const resultBriefHtml = results.length ? buildResultBriefHtml(results, tierBuckets, meta) : "";
+        const dataOverviewHtml = results.length ? "" : buildGsatDataOverviewHtml();
+        const universityTwInsightHtml = (selectedDepartment !== "all" || !results.length) ? buildUniversityTwInsightHtml() : "";
         const departmentSuggestionHtml = buildDepartmentSuggestionHtml();
-        const strategyHtml = buildStrategyCards(scores, total5, results);
+        const strategyHtml = selectedDepartment !== "all" ? buildStrategyCards(scores, total5, results) : "";
 
         $g("gsatResultsArea").innerHTML = `
           <div style="padding-bottom:40px;">
             <div class="gsat-total-bar">
               <div>
                 <div class="tb-total">${total5}</div>
-                <div class="tb-label">五科總分（滿分 75）・${selectedTrack === "science" ? "自然組" : "社會組"}・英聽 ${escapeGsatHtml(listen)}</div>
+                <div class="tb-label">已輸入科目級分合計（非排序依據）・${selectedTrack === "science" ? "自然組" : "社會組"}・英聽 ${escapeGsatHtml(listen)}</div>
               </div>
             </div>
             <div class="gsat-score-summary" style="margin-bottom:12px;">${scoreCards}</div>
             ${filterSummaryHtml}
             ${metaRowHtml}
+            ${resultBriefHtml}
             ${dataOverviewHtml}
             <div class="gsat-disclaimer">
               ⚠ 本資料為歷年統計估算，<strong>僅供初步參考</strong>。建議交叉比對

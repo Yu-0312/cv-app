@@ -95,9 +95,9 @@ Deployment steps:
 - Click **Download PDF** to export the current template as a PDF
 - If your browser supports it, click **Install App** to install as a native-like app
 
-### Draft Mode (Not Signed In)
+### Placeholder Mode (Not Signed In)
 
-Visitors who are not signed in can freely browse and edit a local draft, but **cannot save to the cloud**. Saving requires signing in.
+Visitors who are not signed in see placeholders only. Personal CV, portfolio, version, and application data are retained only after signing in.
 
 ### WYSIWYG Inline Editing
 

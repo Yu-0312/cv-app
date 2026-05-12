@@ -4,30 +4,79 @@ window.CV_GSAT_EXTERNAL_DEPTS = [
     "d": "化學系",
     "t": "science",
     "w": {
-      "國文": 1,
-      "英文": 1,
-      "數學A": 1.5,
-      "自然": 2
+      "自然": 1
     },
     "th": {
       "自然": "後標"
     },
     "h": [
+      10,
       11,
       10
     ],
-    "note": "來源：104 落點分析・私立・104風險值 110.00000000000001",
-    "source": "104"
+    "note": "來源：104 落點分析・私立・104風險值 110",
+    "source": "104",
+    "criteriaName": "自然",
+    "criteriaSubjects": [
+      "自然"
+    ],
+    "screeningPower": [
+      {
+        "name": "自然",
+        "subjects": [
+          "自然"
+        ],
+        "multiplier": 3
+      }
+    ],
+    "screeningRules": [
+      {
+        "year": 115,
+        "items": [
+          {
+            "label": "自然",
+            "canonicalLabel": "自",
+            "subjects": [
+              "自然"
+            ],
+            "score": 10
+          }
+        ]
+      },
+      {
+        "year": 114,
+        "items": [
+          {
+            "label": "自然",
+            "canonicalLabel": "自",
+            "subjects": [
+              "自然"
+            ],
+            "score": 11
+          }
+        ]
+      },
+      {
+        "year": 113,
+        "items": [
+          {
+            "label": "自然",
+            "canonicalLabel": "自",
+            "subjects": [
+              "自然"
+            ],
+            "score": 10
+          }
+        ]
+      }
+    ]
   },
   {
     "u": "國立中興大學",
     "d": "森林學系木材科學組",
     "t": "science",
     "w": {
-      "國文": 1,
-      "英文": 1.25,
-      "數學A": 1.5,
-      "自然": 1.5
+      "自然": 1
     },
     "th": {
       "國文": "均標",
@@ -37,20 +86,74 @@ window.CV_GSAT_EXTERNAL_DEPTS = [
     },
     "h": [
       11,
+      11,
       9
     ],
-    "note": "來源：104 落點分析・公立・104風險值 110.00000000000001",
-    "source": "104"
+    "note": "來源：104 落點分析・公立・104風險值 110",
+    "source": "104",
+    "criteriaName": "自然",
+    "criteriaSubjects": [
+      "自然"
+    ],
+    "screeningPower": [
+      {
+        "name": "自然",
+        "subjects": [
+          "自然"
+        ],
+        "multiplier": 3.5
+      }
+    ],
+    "screeningRules": [
+      {
+        "year": 115,
+        "items": [
+          {
+            "label": "自然",
+            "canonicalLabel": "自",
+            "subjects": [
+              "自然"
+            ],
+            "score": 11
+          }
+        ]
+      },
+      {
+        "year": 114,
+        "items": [
+          {
+            "label": "自然",
+            "canonicalLabel": "自",
+            "subjects": [
+              "自然"
+            ],
+            "score": 11
+          }
+        ]
+      },
+      {
+        "year": 113,
+        "items": [
+          {
+            "label": "自然",
+            "canonicalLabel": "自",
+            "subjects": [
+              "自然"
+            ],
+            "score": 9
+          }
+        ]
+      }
+    ]
   },
   {
     "u": "國立中興大學",
     "d": "興翼招生C組(化學數學)",
     "t": "science",
     "w": {
-      "國文": 1,
       "英文": 1,
-      "數學A": 1.5,
-      "自然": 2
+      "數學A": 1,
+      "自然": 1
     },
     "th": {
       "英文": "均標",
@@ -58,21 +161,97 @@ window.CV_GSAT_EXTERNAL_DEPTS = [
       "數學A": "均標"
     },
     "h": [
+      28,
       25,
-      28
+      25
     ],
-    "note": "來源：104 落點分析・公立・104風險值 110.00000000000001",
-    "source": "104"
+    "note": "來源：104 落點分析・公立・104風險值 110",
+    "source": "104",
+    "criteriaName": "英數A自",
+    "criteriaSubjects": [
+      "英文",
+      "數學A",
+      "自然"
+    ],
+    "screeningPower": [
+      {
+        "name": "英文",
+        "subjects": [
+          "英文"
+        ],
+        "multiplier": 10
+      },
+      {
+        "name": "自然",
+        "subjects": [
+          "自然"
+        ],
+        "multiplier": 10
+      },
+      {
+        "name": "數A",
+        "subjects": [
+          "數學A"
+        ],
+        "multiplier": 10
+      }
+    ],
+    "screeningRules": [
+      {
+        "year": 115,
+        "items": [
+          {
+            "label": "英數A自",
+            "canonicalLabel": "英數A自",
+            "subjects": [
+              "英文",
+              "數學A",
+              "自然"
+            ],
+            "score": 28
+          }
+        ]
+      },
+      {
+        "year": 114,
+        "items": [
+          {
+            "label": "英數A自",
+            "canonicalLabel": "英數A自",
+            "subjects": [
+              "英文",
+              "數學A",
+              "自然"
+            ],
+            "score": 25
+          }
+        ]
+      },
+      {
+        "year": 113,
+        "items": [
+          {
+            "label": "英數A自",
+            "canonicalLabel": "英數A自",
+            "subjects": [
+              "英文",
+              "數學A",
+              "自然"
+            ],
+            "score": 25
+          }
+        ]
+      }
+    ]
   },
   {
     "u": "國立中興大學",
     "d": "興翼招生D組(化材電資暨工程)",
     "t": "science",
     "w": {
-      "國文": 1,
-      "英文": 1.5,
-      "數學A": 2,
-      "自然": 1.5
+      "英文": 1,
+      "數學A": 1,
+      "自然": 1
     },
     "th": {
       "英文": "均標",
@@ -80,21 +259,96 @@ window.CV_GSAT_EXTERNAL_DEPTS = [
       "數學A": "均標"
     },
     "h": [
+      32,
       30,
-      32
+      30
     ],
-    "note": "來源：104 落點分析・公立・104風險值 110.00000000000001",
-    "source": "104"
+    "note": "來源：104 落點分析・公立・104風險值 110",
+    "source": "104",
+    "criteriaName": "英數A自",
+    "criteriaSubjects": [
+      "英文",
+      "數學A",
+      "自然"
+    ],
+    "screeningPower": [
+      {
+        "name": "英文",
+        "subjects": [
+          "英文"
+        ],
+        "multiplier": 3
+      },
+      {
+        "name": "自然",
+        "subjects": [
+          "自然"
+        ],
+        "multiplier": 3
+      },
+      {
+        "name": "數A",
+        "subjects": [
+          "數學A"
+        ],
+        "multiplier": 3
+      }
+    ],
+    "screeningRules": [
+      {
+        "year": 115,
+        "items": [
+          {
+            "label": "英數A自",
+            "canonicalLabel": "英數A自",
+            "subjects": [
+              "英文",
+              "數學A",
+              "自然"
+            ],
+            "score": 32
+          }
+        ]
+      },
+      {
+        "year": 114,
+        "items": [
+          {
+            "label": "英數A自",
+            "canonicalLabel": "英數A自",
+            "subjects": [
+              "英文",
+              "數學A",
+              "自然"
+            ],
+            "score": 30
+          }
+        ]
+      },
+      {
+        "year": 113,
+        "items": [
+          {
+            "label": "英數A自",
+            "canonicalLabel": "英數A自",
+            "subjects": [
+              "英文",
+              "數學A",
+              "自然"
+            ],
+            "score": 30
+          }
+        ]
+      }
+    ]
   },
   {
     "u": "國立中興大學",
     "d": "興翼招生E組(生物資源暨農業科技)",
     "t": "science",
     "w": {
-      "國文": 1,
-      "英文": 1.25,
-      "數學A": 1.5,
-      "自然": 1.5
+      "英文": 1,
+      "自然": 1
     },
     "th": {
       "英文": "均標",
@@ -104,20 +358,85 @@ window.CV_GSAT_EXTERNAL_DEPTS = [
     },
     "h": [
       19,
+      19,
       18
     ],
-    "note": "來源：104 落點分析・公立・104風險值 110.00000000000001",
-    "source": "104"
+    "note": "來源：104 落點分析・公立・104風險值 110",
+    "source": "104",
+    "criteriaName": "英自",
+    "criteriaSubjects": [
+      "英文",
+      "自然"
+    ],
+    "screeningPower": [
+      {
+        "name": "英文",
+        "subjects": [
+          "英文"
+        ],
+        "multiplier": 5
+      },
+      {
+        "name": "自然",
+        "subjects": [
+          "自然"
+        ],
+        "multiplier": 5
+      }
+    ],
+    "screeningRules": [
+      {
+        "year": 115,
+        "items": [
+          {
+            "label": "英自",
+            "canonicalLabel": "英自",
+            "subjects": [
+              "英文",
+              "自然"
+            ],
+            "score": 19
+          }
+        ]
+      },
+      {
+        "year": 114,
+        "items": [
+          {
+            "label": "英自",
+            "canonicalLabel": "英自",
+            "subjects": [
+              "英文",
+              "自然"
+            ],
+            "score": 19
+          }
+        ]
+      },
+      {
+        "year": 113,
+        "items": [
+          {
+            "label": "英自",
+            "canonicalLabel": "英自",
+            "subjects": [
+              "英文",
+              "自然"
+            ],
+            "score": 18
+          }
+        ]
+      }
+    ]
   },
   {
     "u": "國立中興大學",
     "d": "興翼招生F組(生物科技暨獸醫)",
     "t": "science",
     "w": {
-      "國文": 1.5,
-      "英文": 1.5,
+      "英文": 1,
       "數學A": 1,
-      "自然": 2
+      "自然": 1
     },
     "th": {
       "英文": "均標",
@@ -125,12 +444,88 @@ window.CV_GSAT_EXTERNAL_DEPTS = [
       "數學A": "均標"
     },
     "h": [
+      27,
       23,
-      25,
-      27
+      25
     ],
-    "note": "來源：104 落點分析・公立・104風險值 110.00000000000001",
-    "source": "104"
+    "note": "來源：104 落點分析・公立・104風險值 110",
+    "source": "104",
+    "criteriaName": "英數A自",
+    "criteriaSubjects": [
+      "英文",
+      "數學A",
+      "自然"
+    ],
+    "screeningPower": [
+      {
+        "name": "英文",
+        "subjects": [
+          "英文"
+        ],
+        "multiplier": 5.5
+      },
+      {
+        "name": "自然",
+        "subjects": [
+          "自然"
+        ],
+        "multiplier": 5.5
+      },
+      {
+        "name": "數A",
+        "subjects": [
+          "數學A"
+        ],
+        "multiplier": 5.5
+      }
+    ],
+    "screeningRules": [
+      {
+        "year": 115,
+        "items": [
+          {
+            "label": "英數A自",
+            "canonicalLabel": "英數A自",
+            "subjects": [
+              "英文",
+              "數學A",
+              "自然"
+            ],
+            "score": 27
+          }
+        ]
+      },
+      {
+        "year": 114,
+        "items": [
+          {
+            "label": "英數A自",
+            "canonicalLabel": "英數A自",
+            "subjects": [
+              "英文",
+              "數學A",
+              "自然"
+            ],
+            "score": 23
+          }
+        ]
+      },
+      {
+        "year": 113,
+        "items": [
+          {
+            "label": "英數A自",
+            "canonicalLabel": "英數A自",
+            "subjects": [
+              "英文",
+              "數學A",
+              "自然"
+            ],
+            "score": 25
+          }
+        ]
+      }
+    ]
   },
   {
     "u": "國立臺灣大學",
@@ -138,9 +533,9 @@ window.CV_GSAT_EXTERNAL_DEPTS = [
     "t": "science",
     "w": {
       "國文": 1,
-      "英文": 1.25,
-      "數學A": 1.5,
-      "自然": 1.5
+      "英文": 1,
+      "數學A": 1,
+      "自然": 1
     },
     "th": {
       "國文": "均標",
@@ -149,12 +544,132 @@ window.CV_GSAT_EXTERNAL_DEPTS = [
       "數學A": "前標"
     },
     "h": [
+      43,
       41,
-      42,
-      43
+      42
     ],
-    "note": "來源：104 落點分析・公立・104風險值 110.00000000000001",
-    "source": "104"
+    "note": "來源：104 落點分析・公立・104風險值 110",
+    "source": "104",
+    "criteriaName": "國英數A自",
+    "criteriaSubjects": [
+      "國文",
+      "英文",
+      "數學A",
+      "自然"
+    ],
+    "screeningPower": [
+      {
+        "name": "英文",
+        "subjects": [
+          "英文"
+        ],
+        "multiplier": 4
+      },
+      {
+        "name": "自然",
+        "subjects": [
+          "自然"
+        ],
+        "multiplier": 4
+      },
+      {
+        "name": "數A",
+        "subjects": [
+          "數學A"
+        ],
+        "multiplier": 4
+      },
+      {
+        "name": "國英數A自",
+        "subjects": [
+          "國文",
+          "英文",
+          "數學A",
+          "自然"
+        ],
+        "multiplier": 6
+      }
+    ],
+    "screeningRules": [
+      {
+        "year": 115,
+        "items": [
+          {
+            "label": "國英數A自",
+            "canonicalLabel": "國英數A自",
+            "subjects": [
+              "國文",
+              "英文",
+              "數學A",
+              "自然"
+            ],
+            "score": 43
+          },
+          {
+            "label": "英數A自",
+            "canonicalLabel": "英數A自",
+            "subjects": [
+              "英文",
+              "數學A",
+              "自然"
+            ],
+            "score": 32
+          }
+        ]
+      },
+      {
+        "year": 114,
+        "items": [
+          {
+            "label": "國英數A自",
+            "canonicalLabel": "國英數A自",
+            "subjects": [
+              "國文",
+              "英文",
+              "數學A",
+              "自然"
+            ],
+            "score": 41
+          },
+          {
+            "label": "英數A自",
+            "canonicalLabel": "英數A自",
+            "subjects": [
+              "英文",
+              "數學A",
+              "自然"
+            ],
+            "score": 31
+          }
+        ]
+      },
+      {
+        "year": 113,
+        "items": [
+          {
+            "label": "國英數A自",
+            "canonicalLabel": "國英數A自",
+            "subjects": [
+              "國文",
+              "英文",
+              "數學A",
+              "自然"
+            ],
+            "score": 42
+          },
+          {
+            "label": "英數A自",
+            "canonicalLabel": "英數A自",
+            "subjects": [
+              "英文",
+              "數學A",
+              "自然"
+            ],
+            "score": 34
+          }
+        ]
+      }
+    ]
   },
   {
     "u": "國立臺灣大學",
@@ -162,9 +677,9 @@ window.CV_GSAT_EXTERNAL_DEPTS = [
     "t": "science",
     "w": {
       "國文": 1,
-      "英文": 1.25,
-      "數學A": 1.5,
-      "自然": 1.5
+      "英文": 1,
+      "數學A": 1,
+      "自然": 1
     },
     "th": {
       "國文": "均標",
@@ -173,21 +688,139 @@ window.CV_GSAT_EXTERNAL_DEPTS = [
       "數學A": "均標"
     },
     "h": [
+      41,
       38,
-      41
+      38
     ],
-    "note": "來源：104 落點分析・公立・104風險值 110.00000000000001",
-    "source": "104"
+    "note": "來源：104 落點分析・公立・104風險值 110",
+    "source": "104",
+    "criteriaName": "國英數A自",
+    "criteriaSubjects": [
+      "國文",
+      "英文",
+      "數學A",
+      "自然"
+    ],
+    "screeningPower": [
+      {
+        "name": "英文",
+        "subjects": [
+          "英文"
+        ],
+        "multiplier": 4
+      },
+      {
+        "name": "自然",
+        "subjects": [
+          "自然"
+        ],
+        "multiplier": 4
+      },
+      {
+        "name": "數A",
+        "subjects": [
+          "數學A"
+        ],
+        "multiplier": 4
+      },
+      {
+        "name": "國英數A自",
+        "subjects": [
+          "國文",
+          "英文",
+          "數學A",
+          "自然"
+        ],
+        "multiplier": 6
+      }
+    ],
+    "screeningRules": [
+      {
+        "year": 115,
+        "items": [
+          {
+            "label": "國英數A自",
+            "canonicalLabel": "國英數A自",
+            "subjects": [
+              "國文",
+              "英文",
+              "數學A",
+              "自然"
+            ],
+            "score": 41
+          },
+          {
+            "label": "英數A自",
+            "canonicalLabel": "英數A自",
+            "subjects": [
+              "英文",
+              "數學A",
+              "自然"
+            ],
+            "score": 32
+          }
+        ]
+      },
+      {
+        "year": 114,
+        "items": [
+          {
+            "label": "國英數A自",
+            "canonicalLabel": "國英數A自",
+            "subjects": [
+              "國文",
+              "英文",
+              "數學A",
+              "自然"
+            ],
+            "score": 38
+          },
+          {
+            "label": "英數A自",
+            "canonicalLabel": "英數A自",
+            "subjects": [
+              "英文",
+              "數學A",
+              "自然"
+            ],
+            "score": 30
+          }
+        ]
+      },
+      {
+        "year": 113,
+        "items": [
+          {
+            "label": "國英數A自",
+            "canonicalLabel": "國英數A自",
+            "subjects": [
+              "國文",
+              "英文",
+              "數學A",
+              "自然"
+            ],
+            "score": 38
+          },
+          {
+            "label": "英數A自",
+            "canonicalLabel": "英數A自",
+            "subjects": [
+              "英文",
+              "數學A",
+              "自然"
+            ],
+            "score": 29
+          }
+        ]
+      }
+    ]
   },
   {
     "u": "國立臺灣師範大學",
     "d": "晨光招生(生命科學系)",
     "t": "science",
     "w": {
-      "國文": 1,
-      "英文": 1.25,
-      "數學A": 1.5,
-      "自然": 1.5
+      "自然": 1
     },
     "th": {
       "國文": "均標",
@@ -197,20 +830,82 @@ window.CV_GSAT_EXTERNAL_DEPTS = [
     },
     "h": [
       10,
+      10,
       9
     ],
-    "note": "來源：104 落點分析・公立・104風險值 110.00000000000001",
-    "source": "104"
+    "note": "來源：104 落點分析・公立・104風險值 110",
+    "source": "104",
+    "criteriaName": "自然",
+    "criteriaSubjects": [
+      "自然"
+    ],
+    "screeningPower": [
+      {
+        "name": "自然",
+        "subjects": [
+          "自然"
+        ],
+        "multiplier": 7
+      }
+    ],
+    "screeningRules": [
+      {
+        "year": 115,
+        "items": [
+          {
+            "label": "自然",
+            "canonicalLabel": "自",
+            "subjects": [
+              "自然"
+            ],
+            "score": 10
+          }
+        ]
+      },
+      {
+        "year": 114,
+        "items": [
+          {
+            "label": "自然",
+            "canonicalLabel": "自",
+            "subjects": [
+              "自然"
+            ],
+            "score": 10
+          }
+        ]
+      },
+      {
+        "year": 113,
+        "items": [
+          {
+            "label": "數A",
+            "canonicalLabel": "數A",
+            "subjects": [
+              "數學A"
+            ],
+            "score": 5
+          },
+          {
+            "label": "自然",
+            "canonicalLabel": "自",
+            "subjects": [
+              "自然"
+            ],
+            "score": 9
+          }
+        ]
+      }
+    ]
   },
   {
     "u": "東吳大學",
     "d": "心理學系",
     "t": "social",
     "w": {
-      "國文": 1.25,
-      "英文": 1.5,
-      "數學B": 1,
-      "社會": 1.5
+      "國文": 1,
+      "英文": 1,
+      "數學A": 1
     },
     "th": {
       "國文": "後標",
@@ -218,41 +913,175 @@ window.CV_GSAT_EXTERNAL_DEPTS = [
       "數學A": "後標"
     },
     "h": [
+      31,
       30,
       31
     ],
-    "note": "來源：104 落點分析・私立・104風險值 110.00000000000001",
-    "source": "104"
+    "note": "來源：104 落點分析・私立・104風險值 110",
+    "source": "104",
+    "criteriaName": "國英數A",
+    "criteriaSubjects": [
+      "國文",
+      "英文",
+      "數學A"
+    ],
+    "screeningPower": [
+      {
+        "name": "國英數A",
+        "subjects": [
+          "國文",
+          "英文",
+          "數學A"
+        ],
+        "multiplier": 3
+      }
+    ],
+    "screeningRules": [
+      {
+        "year": 115,
+        "items": [
+          {
+            "label": "國英數A",
+            "canonicalLabel": "國英數A",
+            "subjects": [
+              "國文",
+              "英文",
+              "數學A"
+            ],
+            "score": 31
+          }
+        ]
+      },
+      {
+        "year": 114,
+        "items": [
+          {
+            "label": "國英數A",
+            "canonicalLabel": "國英數A",
+            "subjects": [
+              "國文",
+              "英文",
+              "數學A"
+            ],
+            "score": 30
+          }
+        ]
+      },
+      {
+        "year": 113,
+        "items": [
+          {
+            "label": "國英數A",
+            "canonicalLabel": "國英數A",
+            "subjects": [
+              "國文",
+              "英文",
+              "數學A"
+            ],
+            "score": 31
+          }
+        ]
+      }
+    ]
   },
   {
     "u": "東吳大學",
     "d": "日本語文學系",
     "t": "social",
     "w": {
-      "國文": 1.25,
-      "英文": 2,
+      "國文": 1,
+      "英文": 1,
       "社會": 1
     },
     "th": {
       "國文": "均標"
     },
     "h": [
+      31,
       32,
-      11,
-      31
+      11
     ],
-    "note": "來源：104 落點分析・私立・104風險值 110.00000000000001",
-    "source": "104"
+    "note": "來源：104 落點分析・私立・104風險值 110",
+    "source": "104",
+    "criteriaName": "國英社",
+    "criteriaSubjects": [
+      "國文",
+      "英文",
+      "社會"
+    ],
+    "screeningPower": [
+      {
+        "name": "國英社",
+        "subjects": [
+          "國文",
+          "英文",
+          "社會"
+        ],
+        "multiplier": 3
+      }
+    ],
+    "screeningRules": [
+      {
+        "year": 115,
+        "items": [
+          {
+            "label": "國英社",
+            "canonicalLabel": "國英社",
+            "subjects": [
+              "國文",
+              "英文",
+              "社會"
+            ],
+            "score": 31
+          }
+        ]
+      },
+      {
+        "year": 114,
+        "items": [
+          {
+            "label": "國英社",
+            "canonicalLabel": "國英社",
+            "subjects": [
+              "國文",
+              "英文",
+              "社會"
+            ],
+            "score": 32
+          }
+        ]
+      },
+      {
+        "year": 113,
+        "items": [
+          {
+            "label": "國文",
+            "canonicalLabel": "國",
+            "subjects": [
+              "國文"
+            ],
+            "score": 11
+          },
+          {
+            "label": "英文",
+            "canonicalLabel": "英",
+            "subjects": [
+              "英文"
+            ],
+            "score": 10
+          }
+        ]
+      }
+    ]
   },
   {
     "u": "東吳大學",
     "d": "政治學系",
     "t": "social",
     "w": {
-      "國文": 2,
-      "英文": 1.5,
-      "數學B": 0.5,
-      "社會": 2
+      "國文": 1,
+      "英文": 1,
+      "社會": 1
     },
     "th": {
       "國文": "均標",
@@ -262,55 +1091,273 @@ window.CV_GSAT_EXTERNAL_DEPTS = [
       "數學B": "後標"
     },
     "h": [
+      32,
       33,
-      21,
-      32
+      21
     ],
-    "note": "來源：104 落點分析・私立・104風險值 110.00000000000001",
-    "source": "104"
+    "note": "來源：104 落點分析・私立・104風險值 110",
+    "source": "104",
+    "criteriaName": "國英社",
+    "criteriaSubjects": [
+      "國文",
+      "英文",
+      "社會"
+    ],
+    "screeningPower": [
+      {
+        "name": "國英社",
+        "subjects": [
+          "國文",
+          "英文",
+          "社會"
+        ],
+        "multiplier": 3
+      }
+    ],
+    "screeningRules": [
+      {
+        "year": 115,
+        "items": [
+          {
+            "label": "國英社",
+            "canonicalLabel": "國英社",
+            "subjects": [
+              "國文",
+              "英文",
+              "社會"
+            ],
+            "score": 32
+          }
+        ]
+      },
+      {
+        "year": 114,
+        "items": [
+          {
+            "label": "國英社",
+            "canonicalLabel": "國英社",
+            "subjects": [
+              "國文",
+              "英文",
+              "社會"
+            ],
+            "score": 33
+          }
+        ]
+      },
+      {
+        "year": 113,
+        "items": [
+          {
+            "label": "國文",
+            "canonicalLabel": "國",
+            "subjects": [
+              "國文"
+            ],
+            "score": 12
+          },
+          {
+            "label": "英社",
+            "canonicalLabel": "英社",
+            "subjects": [
+              "英文",
+              "社會"
+            ],
+            "score": 21
+          }
+        ]
+      }
+    ]
   },
   {
     "u": "東吳大學",
     "d": "英文學系",
     "t": "social",
     "w": {
-      "國文": 1.25,
-      "英文": 2,
-      "社會": 1
+      "國文": 1,
+      "英文": 1
     },
     "th": {
       "國文": "均標",
       "英文": "均標"
     },
     "h": [
+      21,
       22,
-      11,
-      21
+      11
     ],
-    "note": "來源：104 落點分析・私立・104風險值 110.00000000000001",
-    "source": "104"
+    "note": "來源：104 落點分析・私立・104風險值 110",
+    "source": "104",
+    "criteriaName": "國英",
+    "criteriaSubjects": [
+      "國文",
+      "英文"
+    ],
+    "screeningPower": [
+      {
+        "name": "國英",
+        "subjects": [
+          "國文",
+          "英文"
+        ],
+        "multiplier": 3
+      }
+    ],
+    "screeningRules": [
+      {
+        "year": 115,
+        "items": [
+          {
+            "label": "國英",
+            "canonicalLabel": "國英",
+            "subjects": [
+              "國文",
+              "英文"
+            ],
+            "score": 21
+          }
+        ]
+      },
+      {
+        "year": 114,
+        "items": [
+          {
+            "label": "國英",
+            "canonicalLabel": "國英",
+            "subjects": [
+              "國文",
+              "英文"
+            ],
+            "score": 22
+          }
+        ]
+      },
+      {
+        "year": 113,
+        "items": [
+          {
+            "label": "國文",
+            "canonicalLabel": "國",
+            "subjects": [
+              "國文"
+            ],
+            "score": 3
+          },
+          {
+            "label": "英文",
+            "canonicalLabel": "英",
+            "subjects": [
+              "英文"
+            ],
+            "score": 11
+          }
+        ]
+      }
+    ]
   },
   {
     "u": "東吳大學",
     "d": "哲學系",
     "t": "social",
     "w": {
-      "國文": 1.25,
-      "英文": 1.5,
-      "數學B": 1,
-      "社會": 1.5
+      "國文": 1
     },
     "th": {
       "國文": "後標",
       "英文": "後標"
     },
     "h": [
+      11,
       10,
-      9,
-      11
+      9
     ],
-    "note": "來源：104 落點分析・私立・104風險值 110.00000000000001",
-    "source": "104"
+    "note": "來源：104 落點分析・私立・104風險值 110",
+    "source": "104",
+    "criteriaName": "國文",
+    "criteriaSubjects": [
+      "國文"
+    ],
+    "screeningPower": [
+      {
+        "name": "國文",
+        "subjects": [
+          "國文"
+        ],
+        "multiplier": 5
+      },
+      {
+        "name": "英文",
+        "subjects": [
+          "英文"
+        ],
+        "multiplier": 3
+      }
+    ],
+    "screeningRules": [
+      {
+        "year": 115,
+        "items": [
+          {
+            "label": "國文",
+            "canonicalLabel": "國",
+            "subjects": [
+              "國文"
+            ],
+            "score": 11
+          },
+          {
+            "label": "英文",
+            "canonicalLabel": "英",
+            "subjects": [
+              "英文"
+            ],
+            "score": 8
+          }
+        ]
+      },
+      {
+        "year": 114,
+        "items": [
+          {
+            "label": "國文",
+            "canonicalLabel": "國",
+            "subjects": [
+              "國文"
+            ],
+            "score": 10
+          },
+          {
+            "label": "英文",
+            "canonicalLabel": "英",
+            "subjects": [
+              "英文"
+            ],
+            "score": 7
+          }
+        ]
+      },
+      {
+        "year": 113,
+        "items": [
+          {
+            "label": "國文",
+            "canonicalLabel": "國",
+            "subjects": [
+              "國文"
+            ],
+            "score": 9
+          },
+          {
+            "label": "英文",
+            "canonicalLabel": "英",
+            "subjects": [
+              "英文"
+            ],
+            "score": 6
+          }
+        ]
+      }
+    ]
   },
   {
     "u": "國立中興大學",
@@ -318,9 +1365,7 @@ window.CV_GSAT_EXTERNAL_DEPTS = [
     "t": "social",
     "w": {
       "國文": 1,
-      "英文": 1.5,
-      "數學B": 1.5,
-      "社會": 1
+      "英文": 1
     },
     "th": {
       "國文": "均標",
@@ -330,20 +1375,85 @@ window.CV_GSAT_EXTERNAL_DEPTS = [
     },
     "h": [
       21,
+      21,
       19
     ],
-    "note": "來源：104 落點分析・公立・104風險值 110.00000000000001",
-    "source": "104"
+    "note": "來源：104 落點分析・公立・104風險值 110",
+    "source": "104",
+    "criteriaName": "國英",
+    "criteriaSubjects": [
+      "國文",
+      "英文"
+    ],
+    "screeningPower": [
+      {
+        "name": "國文",
+        "subjects": [
+          "國文"
+        ],
+        "multiplier": 5.5
+      },
+      {
+        "name": "英文",
+        "subjects": [
+          "英文"
+        ],
+        "multiplier": 5.5
+      }
+    ],
+    "screeningRules": [
+      {
+        "year": 115,
+        "items": [
+          {
+            "label": "國英",
+            "canonicalLabel": "國英",
+            "subjects": [
+              "國文",
+              "英文"
+            ],
+            "score": 21
+          }
+        ]
+      },
+      {
+        "year": 114,
+        "items": [
+          {
+            "label": "國英",
+            "canonicalLabel": "國英",
+            "subjects": [
+              "國文",
+              "英文"
+            ],
+            "score": 21
+          }
+        ]
+      },
+      {
+        "year": 113,
+        "items": [
+          {
+            "label": "國英",
+            "canonicalLabel": "國英",
+            "subjects": [
+              "國文",
+              "英文"
+            ],
+            "score": 19
+          }
+        ]
+      }
+    ]
   },
   {
     "u": "國立中興大學",
     "d": "興翼招生B組(文史法律)",
     "t": "social",
     "w": {
-      "國文": 2,
-      "英文": 1.5,
-      "數學B": 0.5,
-      "社會": 2
+      "國文": 1,
+      "英文": 1,
+      "社會": 1
     },
     "th": {
       "國文": "均標",
@@ -351,22 +1461,95 @@ window.CV_GSAT_EXTERNAL_DEPTS = [
       "社會": "均標"
     },
     "h": [
+      31,
       30,
-      34,
-      31
+      34
     ],
-    "note": "來源：104 落點分析・公立・104風險值 110.00000000000001",
-    "source": "104"
+    "note": "來源：104 落點分析・公立・104風險值 110",
+    "source": "104",
+    "criteriaName": "國英社",
+    "criteriaSubjects": [
+      "國文",
+      "英文",
+      "社會"
+    ],
+    "screeningPower": [
+      {
+        "name": "國文",
+        "subjects": [
+          "國文"
+        ],
+        "multiplier": 8
+      },
+      {
+        "name": "英文",
+        "subjects": [
+          "英文"
+        ],
+        "multiplier": 8
+      },
+      {
+        "name": "社會",
+        "subjects": [
+          "社會"
+        ],
+        "multiplier": 8
+      }
+    ],
+    "screeningRules": [
+      {
+        "year": 115,
+        "items": [
+          {
+            "label": "國英社",
+            "canonicalLabel": "國英社",
+            "subjects": [
+              "國文",
+              "英文",
+              "社會"
+            ],
+            "score": 31
+          }
+        ]
+      },
+      {
+        "year": 114,
+        "items": [
+          {
+            "label": "國英社",
+            "canonicalLabel": "國英社",
+            "subjects": [
+              "國文",
+              "英文",
+              "社會"
+            ],
+            "score": 30
+          }
+        ]
+      },
+      {
+        "year": 113,
+        "items": [
+          {
+            "label": "國英社",
+            "canonicalLabel": "國英社",
+            "subjects": [
+              "國文",
+              "英文",
+              "社會"
+            ],
+            "score": 34
+          }
+        ]
+      }
+    ]
   },
   {
     "u": "國立成功大學",
     "d": "成星招生乙組(管理)",
     "t": "social",
     "w": {
-      "國文": 1,
-      "英文": 1.5,
-      "數學B": 1.5,
-      "社會": 1
+      "英文": 1
     },
     "th": {
       "國文": "均標",
@@ -374,32 +1557,237 @@ window.CV_GSAT_EXTERNAL_DEPTS = [
       "數學B": "均標"
     },
     "h": [
+      9,
       8,
-      9
+      8
     ],
-    "note": "來源：104 落點分析・公立・104風險值 110.00000000000001",
-    "source": "104"
+    "note": "來源：104 落點分析・公立・104風險值 110",
+    "source": "104",
+    "criteriaName": "英文",
+    "criteriaSubjects": [
+      "英文"
+    ],
+    "screeningPower": [
+      {
+        "name": "英文",
+        "subjects": [
+          "英文"
+        ],
+        "multiplier": 8
+      },
+      {
+        "name": "數B",
+        "subjects": [
+          "數學B"
+        ],
+        "multiplier": 4
+      }
+    ],
+    "screeningRules": [
+      {
+        "year": 115,
+        "items": [
+          {
+            "label": "英文",
+            "canonicalLabel": "英",
+            "subjects": [
+              "英文"
+            ],
+            "score": 9
+          },
+          {
+            "label": "數B",
+            "canonicalLabel": "數B",
+            "subjects": [
+              "數學B"
+            ],
+            "score": 5
+          }
+        ]
+      },
+      {
+        "year": 114,
+        "items": [
+          {
+            "label": "英文",
+            "canonicalLabel": "英",
+            "subjects": [
+              "英文"
+            ],
+            "score": 8
+          },
+          {
+            "label": "數B",
+            "canonicalLabel": "數B",
+            "subjects": [
+              "數學B"
+            ],
+            "score": 6
+          }
+        ]
+      },
+      {
+        "year": 113,
+        "items": [
+          {
+            "label": "英文",
+            "canonicalLabel": "英",
+            "subjects": [
+              "英文"
+            ],
+            "score": 8
+          },
+          {
+            "label": "數B",
+            "canonicalLabel": "數B",
+            "subjects": [
+              "數學B"
+            ],
+            "score": 8
+          }
+        ]
+      }
+    ]
   },
   {
     "u": "國立臺灣師範大學",
     "d": "特殊教育學系(公費生)",
     "t": "social",
     "w": {
-      "國文": 1.25,
-      "英文": 1.5,
-      "數學B": 1,
-      "社會": 1.5
+      "國文": 1,
+      "英文": 1
     },
     "th": {
       "國文": "均標",
       "英文": "均標"
     },
     "h": [
+      20,
       19,
-      26,
-      20
+      26
     ],
-    "note": "來源：104 落點分析・公立・104風險值 110.00000000000001",
-    "source": "104"
+    "note": "來源：104 落點分析・公立・104風險值 110",
+    "source": "104",
+    "criteriaName": "國英",
+    "criteriaSubjects": [
+      "國文",
+      "英文"
+    ],
+    "screeningPower": [
+      {
+        "name": "國文",
+        "subjects": [
+          "國文"
+        ],
+        "multiplier": 8
+      },
+      {
+        "name": "英文",
+        "subjects": [
+          "英文"
+        ],
+        "multiplier": 9
+      },
+      {
+        "name": "國英",
+        "subjects": [
+          "國文",
+          "英文"
+        ],
+        "multiplier": 10
+      }
+    ],
+    "screeningRules": [
+      {
+        "year": 115,
+        "items": [
+          {
+            "label": "國英",
+            "canonicalLabel": "國英",
+            "subjects": [
+              "國文",
+              "英文"
+            ],
+            "score": 20
+          },
+          {
+            "label": "英文",
+            "canonicalLabel": "英",
+            "subjects": [
+              "英文"
+            ],
+            "score": 9
+          },
+          {
+            "label": "國文",
+            "canonicalLabel": "國",
+            "subjects": [
+              "國文"
+            ],
+            "score": 11
+          }
+        ]
+      },
+      {
+        "year": 114,
+        "items": [
+          {
+            "label": "國英",
+            "canonicalLabel": "國英",
+            "subjects": [
+              "國文",
+              "英文"
+            ],
+            "score": 19
+          },
+          {
+            "label": "英文",
+            "canonicalLabel": "英",
+            "subjects": [
+              "英文"
+            ],
+            "score": 9
+          },
+          {
+            "label": "國文",
+            "canonicalLabel": "國",
+            "subjects": [
+              "國文"
+            ],
+            "score": 10
+          }
+        ]
+      },
+      {
+        "year": 113,
+        "items": [
+          {
+            "label": "國英",
+            "canonicalLabel": "國英",
+            "subjects": [
+              "國文",
+              "英文"
+            ],
+            "score": 26
+          },
+          {
+            "label": "英文",
+            "canonicalLabel": "英",
+            "subjects": [
+              "英文"
+            ],
+            "score": 12
+          },
+          {
+            "label": "國文",
+            "canonicalLabel": "國",
+            "subjects": [
+              "國文"
+            ],
+            "score": 14
+          }
+        ]
+      }
+    ]
   }
 ];
