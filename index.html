@@ -1258,6 +1258,117 @@
       margin-bottom: 18px;
     }
 
+    .editor-command-bar {
+      align-items: stretch;
+      padding: 12px;
+      background: rgba(255, 250, 244, 0.9);
+      border: 1px solid rgba(49, 40, 27, 0.08);
+      border-radius: 18px;
+      box-shadow: 0 16px 44px rgba(50, 38, 18, 0.08);
+    }
+
+    .editor-command-status {
+      min-width: min(360px, 100%);
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .editor-command-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      min-height: 36px;
+      padding: 0 11px;
+      border-radius: 999px;
+      background: rgba(33, 78, 116, 0.08);
+      color: var(--accent-2);
+      font-size: 0.74rem;
+      font-weight: 800;
+      letter-spacing: 0;
+      white-space: nowrap;
+    }
+
+    .editor-command-actions {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 8px;
+      min-width: min(560px, 100%);
+      flex: 1 1 520px;
+    }
+
+    .editor-command-actions > button,
+    .editor-more-menu > summary {
+      min-height: 40px;
+      padding: 9px 14px;
+      white-space: nowrap;
+    }
+
+    .editor-more-menu {
+      position: relative;
+      flex: 0 0 auto;
+    }
+
+    .editor-more-menu > summary {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      border: 1px solid rgba(49, 40, 27, 0.14);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.8);
+      color: var(--ink);
+      cursor: pointer;
+      list-style: none;
+      user-select: none;
+      transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
+    }
+
+    .editor-more-menu > summary:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 10px 24px rgba(26, 25, 23, 0.08);
+    }
+
+    .editor-more-menu > summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .editor-more-menu > summary::after {
+      content: "⌄";
+      color: var(--muted);
+      font-size: 0.82rem;
+      line-height: 1;
+    }
+
+    .editor-more-menu[open] > summary::after {
+      transform: rotate(180deg);
+    }
+
+    .editor-more-panel {
+      position: absolute;
+      top: calc(100% + 8px);
+      right: 0;
+      z-index: 35;
+      display: grid;
+      gap: 8px;
+      width: 230px;
+      padding: 10px;
+      border: 1px solid rgba(49, 40, 27, 0.1);
+      border-radius: 14px;
+      background: rgba(255, 250, 244, 0.98);
+      box-shadow: 0 18px 50px rgba(50, 38, 18, 0.16);
+    }
+
+    .editor-more-panel button {
+      width: 100%;
+      justify-content: flex-start;
+      border-radius: 10px;
+      padding: 8px 11px;
+      font-size: 0.84rem;
+      text-align: left;
+    }
+
     .topbar-group {
       display: flex;
       flex-wrap: wrap;
@@ -2535,7 +2646,8 @@
       }
 
       .home-dashboard,
-      .home-support-grid {
+      .home-support-grid,
+      .cv-browser-grid {
         grid-template-columns: 1fr;
       }
 
@@ -2632,6 +2744,55 @@
         justify-content: center;
       }
 
+      .editor-command-bar {
+        display: grid;
+      }
+
+      .editor-command-status,
+      .editor-command-actions {
+        width: 100%;
+        min-width: 0;
+      }
+
+      .editor-command-actions {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        justify-content: stretch;
+      }
+
+      .editor-command-actions > button,
+      .editor-more-menu,
+      .editor-more-menu > summary {
+        width: 100%;
+      }
+
+      .editor-more-panel {
+        position: static;
+        width: 100%;
+        margin-top: 8px;
+        grid-column: 1 / -1;
+        box-shadow: none;
+      }
+
+      .cv-studio-head {
+        display: grid;
+        align-items: start;
+      }
+
+      .cv-studio-hint {
+        text-align: left;
+      }
+
+      .cv-browser-section > summary {
+        grid-template-columns: auto minmax(0, 1fr);
+      }
+
+      .cv-browser-state,
+      .cv-browser-section > summary::after {
+        grid-column: 2;
+        justify-self: start;
+      }
+
       .hero-action-note {
         border-radius: 18px;
         align-items: flex-start;
@@ -2689,6 +2850,18 @@
       .hero-kpis,
       .hero-workflow,
       .hero-note-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .editor-command-actions {
+        grid-template-columns: 1fr;
+      }
+
+      .cv-browser-panel {
+        max-height: 320px;
+      }
+
+      .cv-tools-panel {
         grid-template-columns: 1fr;
       }
     }
@@ -3251,16 +3424,35 @@
 
     /* ===== CV STUDIO BAR ===== */
     .cv-studio-bar {
-      display: flex;
-      flex-direction: column;
-      gap: 14px;
-      padding: 16px 20px;
+      display: grid;
+      gap: 10px;
+      padding: 12px;
       background: rgba(255, 250, 244, 0.94);
       backdrop-filter: blur(18px);
       border: 1px solid rgba(49, 40, 27, 0.08);
-      border-radius: 24px;
-      box-shadow: var(--shadow);
+      border-radius: 18px;
+      box-shadow: 0 18px 56px rgba(50, 38, 18, 0.1);
       margin-bottom: 14px;
+    }
+    .cv-studio-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      padding: 2px 4px 6px;
+    }
+    .cv-studio-head strong {
+      display: block;
+      margin-top: 3px;
+      color: var(--template-heading);
+      font-size: 0.98rem;
+      line-height: 1.35;
+    }
+    .cv-studio-hint {
+      color: var(--muted);
+      font-size: 0.78rem;
+      line-height: 1.45;
+      text-align: right;
     }
     .cv-studio-section {
       display: flex;
@@ -3274,23 +3466,135 @@
       color: var(--muted);
       font-weight: 600;
     }
+    .cv-browser-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+    }
+    .cv-browser-section {
+      width: 100%;
+      border: 1px solid rgba(49, 40, 27, 0.1);
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.64);
+      overflow: hidden;
+    }
+    .cv-browser-section > summary {
+      display: grid;
+      grid-template-columns: auto minmax(0, 1fr) auto;
+      gap: 6px 10px;
+      align-items: center;
+      min-height: 58px;
+      padding: 12px 14px;
+      cursor: pointer;
+      list-style: none;
+      user-select: none;
+    }
+    .cv-browser-section > summary::-webkit-details-marker {
+      display: none;
+    }
+    .cv-browser-section > summary::after {
+      content: "展開";
+      grid-column: 3;
+      grid-row: 2;
+      justify-self: end;
+      color: var(--muted);
+      font-size: 0.72rem;
+      font-weight: 800;
+    }
+    .cv-browser-section[open] > summary {
+      border-bottom: 1px solid rgba(49, 40, 27, 0.08);
+      background: rgba(33, 78, 116, 0.05);
+    }
+    .cv-browser-section[open] > summary::after {
+      content: "收合";
+    }
+    .cv-browser-kicker {
+      grid-row: 1 / span 2;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 42px;
+      min-height: 30px;
+      padding: 0 9px;
+      border-radius: 999px;
+      background: rgba(33, 78, 116, 0.08);
+      color: var(--accent-2);
+      font-size: 0.74rem;
+      font-weight: 900;
+      line-height: 1;
+      white-space: nowrap;
+    }
+    .cv-browser-section > summary strong,
+    .cv-browser-section > summary > span:not(.cv-browser-kicker, .cv-browser-state, .word-count-badge) {
+      color: var(--ink);
+      font-size: 0.9rem;
+      font-weight: 800;
+      line-height: 1.25;
+    }
+    .cv-browser-section > summary small {
+      grid-column: 2;
+      color: var(--muted);
+      font-size: 0.75rem;
+      line-height: 1.4;
+    }
+    .cv-browser-state {
+      grid-column: 3;
+      grid-row: 1;
+      justify-self: end;
+      max-width: 170px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      padding: 5px 9px;
+      border-radius: 999px;
+      background: rgba(49, 40, 27, 0.06);
+      color: var(--muted);
+      font-size: 0.72rem;
+      font-weight: 800;
+    }
+    .cv-browser-panel {
+      max-height: 260px;
+      overflow: auto;
+      padding: 12px;
+    }
+    .cv-tools-details {
+      background: rgba(255, 255, 255, 0.58);
+    }
+    .cv-tools-details > summary {
+      grid-template-columns: auto minmax(0, auto) minmax(0, 1fr) auto;
+      min-height: 50px;
+    }
+    .cv-tools-details > summary::after {
+      grid-column: 4;
+      grid-row: 1;
+    }
+    .cv-tools-panel {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 16px;
+      max-height: min(540px, 68vh);
+    }
 
     /* ===== JOB ROLE CHIPS ===== */
     .job-role-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 6px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 8px;
     }
     .job-chip {
       display: inline-flex;
       align-items: center;
+      justify-content: flex-start;
       gap: 5px;
-      padding: 5px 13px;
-      border-radius: 999px;
+      width: 100%;
+      min-height: 38px;
+      padding: 8px 10px;
+      border-radius: 10px;
       border: 1px solid rgba(49, 40, 27, 0.14);
       background: rgba(255, 255, 255, 0.78);
       color: var(--ink);
       font-size: 12.5px;
+      line-height: 1.2;
       cursor: pointer;
       transition: all 0.15s ease;
       transform: none;
@@ -3311,10 +3615,11 @@
 
     /* ===== TEMPLATE STRIP ===== */
     .template-strip {
-      display: flex;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(92px, 1fr));
       gap: 8px;
-      overflow-x: auto;
-      padding-bottom: 6px;
+      overflow: visible;
+      padding: 0;
       scrollbar-width: thin;
       scrollbar-color: rgba(49, 40, 27, 0.14) transparent;
     }
@@ -3322,18 +3627,20 @@
     .template-strip::-webkit-scrollbar-track { background: transparent; }
     .template-strip::-webkit-scrollbar-thumb { background: rgba(49, 40, 27, 0.18); border-radius: 999px; }
     .template-chip {
-      flex: 0 0 auto;
       display: flex;
       flex-direction: column;
       align-items: center;
+      justify-content: center;
       gap: 5px;
+      width: 100%;
+      min-height: 84px;
       padding: 8px 10px;
-      border-radius: 13px;
+      border-radius: 10px;
       border: 1.5px solid rgba(49, 40, 27, 0.1);
       background: rgba(255, 255, 255, 0.78);
       cursor: pointer;
       transition: all 0.15s ease;
-      min-width: 72px;
+      min-width: 0;
       text-align: center;
       position: relative;
       box-shadow: none;
@@ -3364,7 +3671,8 @@
       font-size: 9.5px;
       color: var(--ink);
       font-weight: 600;
-      white-space: nowrap;
+      line-height: 1.2;
+      white-space: normal;
     }
     .rec-dot {
       display: none;
@@ -4839,75 +5147,107 @@
     </div><!-- /page-home -->
 
     <div id="page-cv" class="app-page">
-    <section class="topbar" id="editorSection">
-      <div class="topbar-group">
-        <a id="canvaBtn" class="canva-btn button-link" href="https://www.canva.com/" data-canva-trigger target="_blank" rel="noreferrer noopener">
-          <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
-            <path fill="currentColor" d="M12 2.5c4.9 0 8.95 3.35 8.95 8.59 0 5.53-4.24 10.41-9.82 10.41-4.73 0-8.08-3.48-8.08-7.77 0-4.81 3.81-8.84 8.78-8.84 2.12 0 3.97.74 5.34 2.05l-1.76 1.92c-.98-.92-2.09-1.41-3.48-1.41-3.14 0-5.6 2.59-5.6 5.96 0 2.78 1.95 5.31 4.93 5.31 2.89 0 5.16-2.76 5.16-6.06 0-3.14-2.02-5.66-4.8-5.66-1.53 0-2.79.81-3.67 2.05l-2.1-1.31C7.02 4.42 9.24 2.5 12 2.5Z"/>
-          </svg>
-          連接 Canva
-        </a>
-        <a id="loginBtn" class="primary google-btn button-link" href="#" data-login-trigger="google" aria-disabled="true">
-          <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
-            <path fill="#EA4335" d="M12 10.2v3.9h5.5c-.2 1.2-1.4 3.6-5.5 3.6-3.3 0-6-2.8-6-6.2s2.7-6.2 6-6.2c1.9 0 3.1.8 3.8 1.5l2.6-2.5C16.8 2.8 14.6 2 12 2 6.9 2 2.8 6.3 2.8 11.5S6.9 21 12 21c6.9 0 9.1-4.8 9.1-7.3 0-.5 0-.9-.1-1.3H12Z"/>
-            <path fill="#34A853" d="M2.8 11.5c0 1.7.6 3.4 1.7 4.8l3.3-2.6c-.4-.6-.7-1.4-.7-2.2s.2-1.5.7-2.2L4.5 6.7c-1.1 1.4-1.7 3-1.7 4.8Z"/>
-            <path fill="#4A90E2" d="M12 21c2.5 0 4.7-.8 6.3-2.3l-3.1-2.5c-.8.6-1.8 1-3.2 1-2.5 0-4.6-1.7-5.4-4l-3.4 2.6C5 18.9 8.2 21 12 21Z"/>
-            <path fill="#FBBC05" d="M6.6 13.2c-.2-.6-.3-1.1-.3-1.7s.1-1.2.3-1.7L3.2 7.2C2.4 8.6 2 10 2 11.5s.4 2.9 1.2 4.3l3.4-2.6Z"/>
-          </svg>
-          Google 登入
-        </a>
-        <button id="logoutBtn" class="ghost" type="button">登出</button>
+    <section class="topbar editor-command-bar" id="editorSection">
+      <div class="editor-command-status">
+        <div class="editor-command-eyebrow">CV 操作</div>
+        <div class="status-pill" id="authStatus" hidden><strong>尚未登入</strong> · 可先編輯草稿</div>
+        <div class="status-pill" id="syncStatus"><strong>本機草稿</strong> · 尚未同步</div>
+      </div>
+      <div class="editor-command-actions">
+        <div hidden>
+          <a id="canvaBtn" class="canva-btn button-link" href="https://www.canva.com/" data-canva-trigger target="_blank" rel="noreferrer noopener">
+            <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
+              <path fill="currentColor" d="M12 2.5c4.9 0 8.95 3.35 8.95 8.59 0 5.53-4.24 10.41-9.82 10.41-4.73 0-8.08-3.48-8.08-7.77 0-4.81 3.81-8.84 8.78-8.84 2.12 0 3.97.74 5.34 2.05l-1.76 1.92c-.98-.92-2.09-1.41-3.48-1.41-3.14 0-5.6 2.59-5.6 5.96 0 2.78 1.95 5.31 4.93 5.31 2.89 0 5.16-2.76 5.16-6.06 0-3.14-2.02-5.66-4.8-5.66-1.53 0-2.79.81-3.67 2.05l-2.1-1.31C7.02 4.42 9.24 2.5 12 2.5Z"/>
+            </svg>
+            連接 Canva
+          </a>
+          <a id="loginBtn" class="primary google-btn button-link" href="#" data-login-trigger="google" aria-disabled="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
+              <path fill="#EA4335" d="M12 10.2v3.9h5.5c-.2 1.2-1.4 3.6-5.5 3.6-3.3 0-6-2.8-6-6.2s2.7-6.2 6-6.2c1.9 0 3.1.8 3.8 1.5l2.6-2.5C16.8 2.8 14.6 2 12 2 6.9 2 2.8 6.3 2.8 11.5S6.9 21 12 21c6.9 0 9.1-4.8 9.1-7.3 0-.5 0-.9-.1-1.3H12Z"/>
+              <path fill="#34A853" d="M2.8 11.5c0 1.7.6 3.4 1.7 4.8l3.3-2.6c-.4-.6-.7-1.4-.7-2.2s.2-1.5.7-2.2L4.5 6.7c-1.1 1.4-1.7 3-1.7 4.8Z"/>
+              <path fill="#4A90E2" d="M12 21c2.5 0 4.7-.8 6.3-2.3l-3.1-2.5c-.8.6-1.8 1-3.2 1-2.5 0-4.6-1.7-5.4-4l-3.4 2.6C5 18.9 8.2 21 12 21Z"/>
+              <path fill="#FBBC05" d="M6.6 13.2c-.2-.6-.3-1.1-.3-1.7s.1-1.2.3-1.7L3.2 7.2C2.4 8.6 2 10 2 11.5s.4 2.9 1.2 4.3l3.4-2.6Z"/>
+            </svg>
+            Google 登入
+          </a>
+          <button id="logoutBtn" class="ghost" type="button">登出</button>
+        </div>
         <button id="saveBtn" class="secondary" type="button">儲存 CV</button>
-        <button id="publishShareBtn" class="secondary" type="button">發布分享頁</button>
-        <button id="copyShareBtn" class="soft" type="button" disabled>複製分享連結</button>
-        <button id="unpublishShareBtn" class="ghost" type="button" disabled>取消公開</button>
         <button id="previewPdfBtn" class="secondary" type="button">預覽 PDF</button>
         <button id="downloadPdfBtn" class="soft" type="button">下載 PDF</button>
-        <button id="printCvBtn" class="soft" type="button">列印</button>
-        <button id="undoBtn" class="ghost" type="button" title="復原 (Ctrl+Z)" disabled>↩ 復原</button>
-        <button id="redoBtn" class="ghost" type="button" title="重做 (Ctrl+Y)" disabled>↪ 重做</button>
-        <button id="installBtn" class="ghost" type="button" hidden>安裝 APP</button>
-      </div>
-      <div class="topbar-group">
-        <div class="status-pill" id="authStatus"><strong>尚未登入</strong> · 可先編輯草稿</div>
-        <div class="status-pill" id="syncStatus"><strong>本機草稿</strong> · 尚未同步</div>
+        <details class="editor-more-menu">
+          <summary>更多操作</summary>
+          <div class="editor-more-panel">
+            <button id="publishShareBtn" class="secondary" type="button">發布分享頁</button>
+            <button id="copyShareBtn" class="soft" type="button" disabled>複製分享連結</button>
+            <button id="unpublishShareBtn" class="ghost" type="button" disabled>取消公開</button>
+            <button id="printCvBtn" class="soft" type="button">列印</button>
+            <button id="undoBtn" class="ghost" type="button" title="復原 (Ctrl+Z)" disabled>↩ 復原</button>
+            <button id="redoBtn" class="ghost" type="button" title="重做 (Ctrl+Y)" disabled>↪ 重做</button>
+            <button id="installBtn" class="ghost" type="button" hidden>安裝 APP</button>
+          </div>
+        </details>
       </div>
     </section>
 
     <!-- ===== CV STUDIO BAR ===== -->
     <div class="cv-studio-bar" id="cvStudioBar">
-      <div class="cv-studio-section">
-        <span class="cv-studio-label">依職位推薦模板</span>
-        <div class="job-role-row" id="jobRoleBar">
-          <button class="job-chip" type="button" data-job="software">💻 軟體工程師</button>
-          <button class="job-chip" type="button" data-job="frontend">🖥 前端 / 全端</button>
-          <button class="job-chip" type="button" data-job="data">📊 資料科學</button>
-          <button class="job-chip" type="button" data-job="ux">🎨 UX / 產品設計</button>
-          <button class="job-chip" type="button" data-job="pm">🗂 產品經理</button>
-          <button class="job-chip" type="button" data-job="marketing">📣 行銷 / 品牌</button>
-          <button class="job-chip" type="button" data-job="research">🔬 學術研究</button>
-          <button class="job-chip" type="button" data-job="education">📚 教育 / 老師</button>
-          <button class="job-chip" type="button" data-job="healthcare">🏥 醫療 / 護理</button>
-          <button class="job-chip" type="button" data-job="finance">💰 金融 / 財務</button>
-          <button class="job-chip" type="button" data-job="legal">⚖ 法律 / 顧問</button>
-          <button class="job-chip" type="button" data-job="architecture">🏛 建築 / 工藝</button>
-          <button class="job-chip" type="button" data-job="creative">🎭 藝術 / 創意</button>
-          <button class="job-chip" type="button" data-job="hr">👥 人資 / 管理</button>
+      <div class="cv-studio-head">
+        <div>
+          <span class="cv-studio-label">版型瀏覽</span>
+          <strong>用展開列表挑職位或模板</strong>
         </div>
+        <span class="cv-studio-hint">常用操作保留在上方，其餘功能可展開</span>
       </div>
-      <div class="cv-studio-section">
-        <span class="cv-studio-label">模板選擇（點選即時套用）</span>
-        <div class="template-strip" id="templateStrip"><!-- rendered by JS --></div>
+      <div class="cv-browser-grid">
+        <details class="cv-browser-section" id="roleBrowserDetails">
+          <summary>
+            <span class="cv-browser-kicker">推薦</span>
+            <strong>依職位推薦模板</strong>
+            <small>點選職位後會自動套用推薦模板。</small>
+            <span class="cv-browser-state" id="activeJobSummary">尚未選擇職位</span>
+          </summary>
+          <div class="cv-browser-panel">
+            <div class="job-role-row" id="jobRoleBar">
+              <button class="job-chip" type="button" data-job="software">💻 軟體工程師</button>
+              <button class="job-chip" type="button" data-job="frontend">🖥 前端 / 全端</button>
+              <button class="job-chip" type="button" data-job="data">📊 資料科學</button>
+              <button class="job-chip" type="button" data-job="ux">🎨 UX / 產品設計</button>
+              <button class="job-chip" type="button" data-job="pm">🗂 產品經理</button>
+              <button class="job-chip" type="button" data-job="marketing">📣 行銷 / 品牌</button>
+              <button class="job-chip" type="button" data-job="research">🔬 學術研究</button>
+              <button class="job-chip" type="button" data-job="education">📚 教育 / 老師</button>
+              <button class="job-chip" type="button" data-job="healthcare">🏥 醫療 / 護理</button>
+              <button class="job-chip" type="button" data-job="finance">💰 金融 / 財務</button>
+              <button class="job-chip" type="button" data-job="legal">⚖ 法律 / 顧問</button>
+              <button class="job-chip" type="button" data-job="architecture">🏛 建築 / 工藝</button>
+              <button class="job-chip" type="button" data-job="creative">🎭 藝術 / 創意</button>
+              <button class="job-chip" type="button" data-job="hr">👥 人資 / 管理</button>
+            </div>
+          </div>
+        </details>
+        <details class="cv-browser-section" id="templateBrowserDetails">
+          <summary>
+            <span class="cv-browser-kicker">模板</span>
+            <strong>模板選擇</strong>
+            <small>展開後用清單瀏覽，點選即時套用。</small>
+            <span class="cv-browser-state" id="templateBrowserState">目前模板</span>
+          </summary>
+          <div class="cv-browser-panel">
+            <div class="template-strip" id="templateStrip"><!-- rendered by JS --></div>
+          </div>
+        </details>
       </div>
 
       <!-- ===== TOOLS PANEL ===== -->
       <div class="cv-studio-section">
-        <details id="cvToolsDetails" style="width:100%;">
-          <summary class="cv-studio-label" style="cursor:pointer;user-select:none;list-style:none;display:flex;align-items:center;gap:8px;">
+        <details id="cvToolsDetails" class="cv-browser-section cv-tools-details">
+          <summary>
+            <span class="cv-browser-kicker">工具</span>
             <span>工具列</span>
             <span id="wordCountBadge" class="word-count-badge" style="font-size:0.72rem;">字數 <strong id="wordCountNum">0</strong></span>
           </summary>
-          <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px;margin-top:14px;">
+          <div class="cv-browser-panel cv-tools-panel">
 
             <!-- Word count -->
             <div class="editor-tool" style="background:rgba(255,255,255,0.6);border:1px solid var(--line);border-radius:14px;padding:12px 14px;">
@@ -6141,12 +6481,14 @@
         "跨裝置接續編輯": "Continue across devices",
         "連接 Canva": "Connect Canva",
         "開啟外部設計工具": "Open external design tools",
+        "CV 操作": "CV Actions",
         "儲存 CV": "Save CV",
         "發布分享頁": "Publish Share Page",
         "複製分享連結": "Copy Share Link",
         "取消公開": "Unpublish",
         "預覽 PDF": "Preview PDF",
         "列印": "Print",
+        "更多操作": "More Actions",
         "復原 (Ctrl+Z)": "Undo (Ctrl+Z)",
         "↩ 復原": "↩ Undo",
         "重做 (Ctrl+Y)": "Redo (Ctrl+Y)",
@@ -6154,7 +6496,13 @@
         "安裝 APP": "Install App",
         "本機草稿": "Local draft",
         "尚未同步": "Not synced",
+        "版型瀏覽": "Template Browser",
+        "用展開列表挑職位或模板": "Choose roles or templates from expandable lists",
+        "常用操作保留在上方，其餘功能可展開": "Common actions stay at the top; everything else can expand as needed",
+        "推薦": "Recommended",
         "依職位推薦模板": "Recommend Templates By Role",
+        "點選職位後會自動套用推薦模板。": "Choose a role to apply its recommended template automatically.",
+        "尚未選擇職位": "No role selected",
         "💻 軟體工程師": "💻 Software Engineer",
         "🖥 前端 / 全端": "🖥 Frontend / Full-stack",
         "📊 資料科學": "📊 Data Science",
@@ -6169,7 +6517,12 @@
         "🏛 建築 / 工藝": "🏛 Architecture / Craft",
         "🎭 藝術 / 創意": "🎭 Arts / Creative",
         "👥 人資 / 管理": "👥 HR / Management",
+        "模板": "Templates",
+        "模板選擇": "Template Selection",
         "模板選擇（點選即時套用）": "Template Selection (Click To Apply)",
+        "展開後用清單瀏覽，點選即時套用。": "Open the list to browse and apply instantly.",
+        "目前模板": "Current Template",
+        "工具": "Tools",
         "工具列": "Tools",
         "字數": "Words",
         "字數統計": "Word Count",
@@ -8492,6 +8845,20 @@
         syncWorkflowUi();
       }
 
+      function syncTemplateBrowserState() {
+        const node = $("templateBrowserState");
+        if (!node) return;
+        node.textContent = templateLabels[state.template] || state.template || "目前模板";
+      }
+
+      function syncActiveJobSummary(jobId) {
+        const node = $("activeJobSummary");
+        if (!node) return;
+        node.textContent = jobId && JOB_PRESETS[jobId]
+          ? JOB_PRESETS[jobId].label
+          : "尚未選擇職位";
+      }
+
       function buildTemplateStrip() {
         const strip = $("templateStrip");
         if (!strip) return;
@@ -8511,6 +8878,7 @@
             setMessage(`已切換到 ${templateLabels[btn.dataset.templateChip]}。直接點 CV 內容即可編輯文字。`, "success");
           });
         });
+        syncTemplateBrowserState();
       }
 
       function updateTemplate(templateId, persist = true) {
@@ -8527,6 +8895,7 @@
           localStorage.setItem(TEMPLATE_KEY, templateId);
         }
         $("syncStatus").innerHTML = `<strong>${escapeHtml(templateLabels[templateId] || templateId)}</strong> · 已選模板`;
+        syncTemplateBrowserState();
         updatePreview(true);
         syncLayoutControls();
       }
@@ -10191,11 +10560,13 @@
         if (alreadyActive) {
           // toggle off
           _activeJobChip = null;
+          syncActiveJobSummary(null);
           setMessage("已清除職位推薦。", "");
           return;
         }
 
         _activeJobChip = jobId;
+        syncActiveJobSummary(jobId);
         document.querySelector(`.job-chip[data-job="${jobId}"]`)?.classList.add("active");
 
         // highlight recommended templates in the strip
@@ -10204,6 +10575,7 @@
 
         // auto-apply primary template
         updateTemplate(preset.template);
+        $("templateBrowserDetails").open = true;
 
         // scroll the strip to show the recommended chip
         const recChip = document.querySelector(`.template-chip[data-template-chip="${preset.template}"]`);
@@ -12831,7 +13203,7 @@
           });
         });
         document.querySelector(".feature-card-action[data-guide-action='login']")?.addEventListener("click", () => {
-          document.getElementById("loginBtn")?.scrollIntoView({ behavior: "smooth", block: "center" });
+          document.getElementById("headerLoginBtn")?.scrollIntoView({ behavior: "smooth", block: "center" });
         });
         /* Basic info fields */
         const syncBasic = () => {
