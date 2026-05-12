@@ -6758,6 +6758,7 @@
       const STORAGE_KEY = "cv-studio-local-v2";
       const SIGNED_OUT_DRAFT_KEY = "cv-studio-signed-out-draft-v1";
       const CLOUD_PROFILE_ACTIVE_KEY = "cv-studio-cloud-profile-active-v1";
+      const AUTH_SIGNED_OUT_KEY = "cv-studio-auth-signed-out-v1";
       const CONFIG_KEY = "cv-studio-config-v2";
       const TEMPLATE_KEY = "cv-studio-template-v1";
       const WORKFLOW_KEY = "cv-studio-workflow-v1";
@@ -8390,6 +8391,18 @@
         });
       }
 
+      function hasSignedOutPreference() {
+        return localStorage.getItem(AUTH_SIGNED_OUT_KEY) === "true";
+      }
+
+      function rememberSignedOutPreference() {
+        localStorage.setItem(AUTH_SIGNED_OUT_KEY, "true");
+      }
+
+      function clearSignedOutPreference() {
+        localStorage.removeItem(AUTH_SIGNED_OUT_KEY);
+      }
+
       function getSupabaseCallbackUrl() {
         const supabaseUrl = state.config.supabaseUrl?.trim();
         if (!supabaseUrl) return "";
@@ -8716,8 +8729,14 @@
       function bindAuthListener() {
         if (!state.client || authSubscription) return;
         const { data } = state.client.auth.onAuthStateChange(async (event, session) => {
+          if (event === "SIGNED_IN" && session?.user && hasSignedOutPreference() && !getAuthCodeFromUrl()) {
+            await forceLocalSignedOut("signed-out-preference");
+            setMessage("已維持登出狀態；若要重新同步，請再按 Google 登入。");
+            return;
+          }
           state.user = session?.user || null;
           if (event === "SIGNED_OUT") {
+            rememberSignedOutPreference();
             clearSupabaseSessionStorage();
             applySignedOutState();
             restoreSignedOutDraftSnapshot();
@@ -8727,6 +8746,7 @@
           updateActionButtons();
 
           if (event === "SIGNED_IN" && state.user) {
+            clearSignedOutPreference();
             preserveSignedOutDraftSnapshot();
             await loadProfile();
             setMessage("Google 登入成功，已連接到雲端 CV。", "success");
@@ -8758,6 +8778,29 @@
         state.authDebug.sessionPresent = false;
         state.authDebug.sessionUser = "";
         state.authDebug.sessionError = "Supabase 回傳 session 為空。";
+      }
+
+      async function forceLocalSignedOut(source = "manual") {
+        try {
+          await state.client?.auth?.stopAutoRefresh?.();
+        } catch {
+          // Best-effort only; storage cleanup below is the source of truth.
+        }
+        try {
+          await state.client?.auth?.signOut?.({ scope: "local" });
+        } catch {
+          // The explicit signed-out preference still protects refreshes.
+        }
+        clearSupabaseSessionStorage();
+        applySignedOutState();
+        restoreSignedOutDraftSnapshot();
+        updateAuthUi();
+        syncLogoutFeedback();
+        updateActionButtons();
+        renderAuthDebugPanel();
+        window.dispatchEvent(new CustomEvent("cv:supabase-auth-changed", {
+          detail: { event: "SIGNED_OUT", user: null, source }
+        }));
       }
 
       function makeClient() {
@@ -8811,6 +8854,7 @@
           return;
         }
         const authCode = getAuthCodeFromUrl();
+        const shouldForceSignedOut = hasSignedOutPreference() && !authCode;
         console.log("[CV Auth] authCode from URL:", authCode);
         state.authDebug.hasCode = Boolean(authCode);
         if (authCode) {
@@ -8823,6 +8867,7 @@
           } else {
             state.authDebug.exchangeStatus = "success";
             state.authDebug.exchangeMessage = "已成功完成 code 交換。";
+            clearSignedOutPreference();
           }
         } else {
           state.authDebug.exchangeStatus = "idle";
@@ -8836,6 +8881,12 @@
           state.authDebug.sessionError = error.message;
           renderAuthDebugPanel();
           setMessage(`無法取得登入狀態：${error.message}`, "error");
+          return;
+        }
+        if (data.session && shouldForceSignedOut) {
+          await forceLocalSignedOut("refresh-session");
+          clearAuthRedirectParams();
+          setMessage("已維持登出狀態；若要重新同步，請再按 Google 登入。");
           return;
         }
         state.user = data.session?.user || null;
@@ -8938,6 +8989,7 @@
           }
         }
         setMessage(isFileProtocol ? `正在前往 Google 登入，完成後將跳轉到 ${redirectUrl}` : "正在前往 Google 登入，登入完成後會自動回到這個頁面。");
+        clearSignedOutPreference();
         const { error } = await state.client.auth.signInWithOAuth({
           provider: "google",
           options: {
@@ -8952,11 +9004,9 @@
 
       async function signOut() {
         if (state.authBusy) return;
+        rememberSignedOutPreference();
         if (!makeClient()) {
-          applySignedOutState();
-          updateAuthUi();
-          syncLogoutFeedback();
-          updateActionButtons();
+          await forceLocalSignedOut("manual-signout-no-client");
           setMessage("目前沒有可用的雲端登入連線，已切回本機草稿模式。");
           return;
         }
@@ -8968,27 +9018,13 @@
         clearAuthRedirectParams();
         let signOutError = null;
         try {
-          const { error } = await state.client.auth.signOut();
+          const { error } = await state.client.auth.signOut({ scope: "global" });
           signOutError = error || null;
         } catch (error) {
           signOutError = error;
         }
 
-        if (signOutError) {
-          try {
-            await state.client.auth.signOut({ scope: "local" });
-            signOutError = null;
-          } catch {
-            // Local cleanup below still clears this browser's persisted session.
-          }
-        }
-        clearSupabaseSessionStorage();
-        applySignedOutState();
-        restoreSignedOutDraftSnapshot();
-        updateAuthUi();
-        renderAuthDebugPanel();
-        syncLogoutFeedback();
-        updateActionButtons();
+        await forceLocalSignedOut("manual-signout");
         if (signOutError) {
           setMessage(`已清除此裝置的登入狀態；雲端登出回報：${signOutError.message || signOutError}`, "success");
         } else {

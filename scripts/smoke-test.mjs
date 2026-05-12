@@ -407,6 +407,7 @@ async function main() {
       });
 
       await page.evaluate(async () => {
+        window.localStorage.removeItem("cv-studio-auth-signed-out-v1");
         await window.__supabaseTest.emit("SIGNED_IN", {
           id: "smoke-user",
           email: "smoke@example.com",
@@ -455,9 +456,24 @@ async function main() {
         const key = window.__supabaseTest.storageKey;
         return !window.localStorage.getItem(key) && !window.sessionStorage.getItem(key);
       });
-      assert.equal(signOutOptions, null);
+      assert.deepEqual(signOutOptions, { scope: "local" });
       assert.equal(authStorageCleared, true);
 
+      await page.evaluate(() => {
+        const staleSession = {
+          user: {
+            id: "smoke-user",
+            email: "smoke@example.com",
+            user_metadata: { full_name: "Stale Session" }
+          }
+        };
+        const payload = JSON.stringify({
+          currentSession: staleSession,
+          expires_at: Math.floor(Date.now() / 1000) + 3600
+        });
+        window.localStorage.setItem(window.__supabaseTest.storageKey, payload);
+        window.sessionStorage.setItem(window.__supabaseTest.storageKey, payload);
+      });
       await page.reload({ waitUntil: "domcontentloaded", timeout: 120000 });
       await page.waitForFunction(
         () => Boolean(window.cvStudioState && window.switchCvStudioTab),
@@ -469,8 +485,14 @@ async function main() {
       });
       const reloadedName = await page.evaluate(() => window.cvStudioState.data.name);
       assert.equal(reloadedName, "Local Draft");
+      const staleStorageCleared = await page.evaluate(() => {
+        const key = window.__supabaseTest.storageKey;
+        return !window.localStorage.getItem(key) && !window.sessionStorage.getItem(key);
+      });
+      assert.equal(staleStorageCleared, true);
 
       await page.evaluate(async () => {
+        window.localStorage.removeItem("cv-studio-auth-signed-out-v1");
         await window.__supabaseTest.emit("SIGNED_IN", {
           id: "smoke-user",
           email: "smoke@example.com",
@@ -575,6 +597,7 @@ async function main() {
       assert.match(signedOutUpdatedHome.gsat, /可使用/);
 
       await page.evaluate(async () => {
+        window.localStorage.removeItem("cv-studio-auth-signed-out-v1");
         await window.__supabaseTest.emit("SIGNED_IN", {
           id: "smoke-user",
           email: "smoke@example.com",
