@@ -39,9 +39,47 @@ const SUPABASE_STUB_SOURCE = `
     const profiles = new Map();
     let signOutGate = null;
     let releaseSignOutGate = null;
+    let currentSession = readPersistedSession();
+    let lastSignOutOptions = null;
 
     function resolve(data, error = null) {
       return Promise.resolve({ data, error });
+    }
+
+    function getProjectRef() {
+      try {
+        return new URL(window.CV_STUDIO_CONFIG?.supabaseUrl || "").hostname.split(".")[0] || "test-project";
+      } catch {
+        return "test-project";
+      }
+    }
+
+    function getStorageKey() {
+      return \`sb-\${getProjectRef()}-auth-token\`;
+    }
+
+    function readPersistedSession() {
+      try {
+        const raw = window.localStorage.getItem(getStorageKey()) || window.sessionStorage.getItem(getStorageKey());
+        if (!raw) return null;
+        const parsed = JSON.parse(raw);
+        return parsed?.currentSession || null;
+      } catch {
+        return null;
+      }
+    }
+
+    function persistSession(session) {
+      currentSession = session;
+      if (!session) return;
+      window.localStorage.setItem(getStorageKey(), JSON.stringify({
+        currentSession: session,
+        expires_at: Math.floor(Date.now() / 1000) + 3600
+      }));
+      window.sessionStorage.setItem(getStorageKey(), JSON.stringify({
+        currentSession: session,
+        expires_at: Math.floor(Date.now() / 1000) + 3600
+      }));
     }
 
     function createBuilder(tableName) {
@@ -79,6 +117,12 @@ const SUPABASE_STUB_SOURCE = `
 
     window.__supabaseTest = {
       authListeners,
+      get storageKey() {
+        return getStorageKey();
+      },
+      get lastSignOutOptions() {
+        return lastSignOutOptions;
+      },
       delayNextSignOut() {
         signOutGate = new Promise((resolve) => {
           releaseSignOutGate = resolve;
@@ -92,6 +136,8 @@ const SUPABASE_STUB_SOURCE = `
       },
       async emit(event, user = null) {
         const session = user ? { user } : null;
+        if (event === "SIGNED_IN") persistSession(session);
+        if (event === "SIGNED_OUT") currentSession = null;
         for (const listener of [...authListeners]) {
           await listener(event, session);
         }
@@ -116,7 +162,8 @@ const SUPABASE_STUB_SOURCE = `
               };
             },
             async getSession() {
-              return { data: { session: null }, error: null };
+              currentSession = currentSession || readPersistedSession();
+              return { data: { session: currentSession }, error: null };
             },
             async exchangeCodeForSession() {
               return { error: null };
@@ -124,12 +171,14 @@ const SUPABASE_STUB_SOURCE = `
             async signInWithOAuth() {
               return { error: null };
             },
-            async signOut() {
+            async signOut(options) {
+              lastSignOutOptions = options || null;
               if (signOutGate) {
                 const gate = signOutGate;
                 signOutGate = null;
                 await gate;
               }
+              currentSession = null;
               for (const listener of [...authListeners]) {
                 await listener("SIGNED_OUT", null);
               }
@@ -350,6 +399,23 @@ async function main() {
         const node = document.getElementById("message");
         return node && /已登出/.test(node.textContent || "");
       });
+      await page.waitForFunction(() => {
+        const node = document.getElementById("authStatus");
+        return node && /尚未登入/.test(node.textContent || "");
+      });
+      const signOutOptions = await page.evaluate(() => window.__supabaseTest.lastSignOutOptions);
+      const authStorageCleared = await page.evaluate(() => {
+        const key = window.__supabaseTest.storageKey;
+        return !window.localStorage.getItem(key) && !window.sessionStorage.getItem(key);
+      });
+      assert.equal(signOutOptions, null);
+      assert.equal(authStorageCleared, true);
+
+      await page.reload({ waitUntil: "domcontentloaded", timeout: 120000 });
+      await page.waitForFunction(
+        () => Boolean(window.cvStudioState && window.switchCvStudioTab),
+        { timeout: 120000 }
+      );
       await page.waitForFunction(() => {
         const node = document.getElementById("authStatus");
         return node && /尚未登入/.test(node.textContent || "");

@@ -6410,7 +6410,8 @@
         "Google authorize URL 建立失敗": "Failed to create Google authorize URL",
         "目前無法產生 Google authorize URL，通常表示 Supabase URL 格式有誤。": "The Google authorize URL cannot be generated, usually because the Supabase URL format is invalid.",
         "登出中，正在切回本機草稿模式。": "Signing out and returning to local draft mode.",
-        "已登出，目前回到本機草稿模式。": "Signed out. You are back in local draft mode."
+        "已登出，目前回到本機草稿模式。": "Signed out. You are back in local draft mode.",
+        "已清除此裝置的登入狀態；雲端登出回報：": "Cleared this device's sign-in state; cloud sign-out reported: "
       });
 
       const INLINE_TERMS = Object.freeze([
@@ -6503,6 +6504,7 @@
           [/^PDF 預覽失敗：(.+)$/, (_match, message) => `PDF preview failed: ${message}`],
           [/^登入失敗：(.+)$/, (_match, message) => `Sign-in failed: ${message}`],
           [/^登出失敗：(.+)$/, (_match, message) => `Sign-out failed: ${message}`],
+          [/^已清除此裝置的登入狀態；雲端登出回報：(.+)$/, (_match, message) => `Cleared this device's sign-in state; cloud sign-out reported: ${message}`],
           [/^Google 登入回跳失敗：(.+)$/, (_match, message) => `Google sign-in redirect failed: ${message}`],
           [/^Google 登入回跳處理失敗：(.+)$/, (_match, message) => `Google sign-in redirect handling failed: ${message}`],
           [/^無法取得登入狀態：(.+)$/, (_match, message) => `Could not get sign-in status: ${message}`],
@@ -8071,21 +8073,35 @@
 
       function clearSupabaseSessionStorage() {
         const projectRef = getSupabaseProjectRef();
-        const keysToRemove = [];
+        const supabaseUrl = state.config.supabaseUrl?.trim() || "";
+        const storages = [window.localStorage, window.sessionStorage].filter(Boolean);
 
-        for (let i = 0; i < window.localStorage.length; i += 1) {
-          const key = window.localStorage.key(i);
-          if (!key) continue;
+        storages.forEach((storage) => {
+          const keysToRemove = [];
 
-          const isProjectSessionKey = projectRef && key.startsWith(`sb-${projectRef}-`);
-          const isLegacySessionKey = projectRef && key === `supabase.auth.token`;
-          if (isProjectSessionKey || isLegacySessionKey) {
-            keysToRemove.push(key);
+          for (let i = 0; i < storage.length; i += 1) {
+            const key = storage.key(i);
+            if (!key) continue;
+
+            let value = "";
+            try {
+              value = storage.getItem(key) || "";
+            } catch {
+              value = "";
+            }
+
+            const isProjectSessionKey = projectRef && key.startsWith(`sb-${projectRef}-`);
+            const isProjectAuthKey = projectRef && key.includes(projectRef) && /(?:sb-|supabase|auth)/i.test(key);
+            const isLegacySessionKey = key === "supabase.auth.token";
+            const containsProjectUrl = supabaseUrl && value.includes(supabaseUrl);
+            if (isProjectSessionKey || isProjectAuthKey || isLegacySessionKey || containsProjectUrl) {
+              keysToRemove.push(key);
+            }
           }
-        }
 
-        keysToRemove.forEach((key) => {
-          window.localStorage.removeItem(key);
+          keysToRemove.forEach((key) => {
+            storage.removeItem(key);
+          });
         });
       }
 
@@ -8262,6 +8278,7 @@
         const { data } = state.client.auth.onAuthStateChange(async (event, session) => {
           state.user = session?.user || null;
           if (event === "SIGNED_OUT") {
+            clearSupabaseSessionStorage();
             applySignedOutState();
           }
           updateAuthUi();
@@ -8487,7 +8504,6 @@
 
       async function signOut() {
         if (state.authBusy) return;
-        const previousUser = state.user;
         if (!makeClient()) {
           applySignedOutState();
           updateAuthUi();
@@ -8502,15 +8518,21 @@
         updateActionButtons();
         setMessage("登出中，正在切回本機草稿模式。");
         clearAuthRedirectParams();
-        const { error } = await state.client.auth.signOut({ scope: "local" });
-        if (error) {
-          state.authBusy = false;
-          if (!state.user && previousUser) state.user = previousUser;
-          await refreshSession();
-          syncLogoutFeedback();
-          updateActionButtons();
-          setMessage(`登出失敗：${error.message}`, "error");
-          return;
+        let signOutError = null;
+        try {
+          const { error } = await state.client.auth.signOut();
+          signOutError = error || null;
+        } catch (error) {
+          signOutError = error;
+        }
+
+        if (signOutError) {
+          try {
+            await state.client.auth.signOut({ scope: "local" });
+            signOutError = null;
+          } catch {
+            // Local cleanup below still clears this browser's persisted session.
+          }
         }
         clearSupabaseSessionStorage();
         applySignedOutState();
@@ -8518,7 +8540,11 @@
         renderAuthDebugPanel();
         syncLogoutFeedback();
         updateActionButtons();
-        setMessage("已登出，目前回到本機草稿模式。", "success");
+        if (signOutError) {
+          setMessage(`已清除此裝置的登入狀態；雲端登出回報：${signOutError.message || signOutError}`, "success");
+        } else {
+          setMessage("已登出，目前回到本機草稿模式。", "success");
+        }
       }
 
       async function loadProfile() {
