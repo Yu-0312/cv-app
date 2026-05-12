@@ -901,27 +901,27 @@ async function main() {
       await page.waitForSelector("#page-career.active");
       await page.waitForFunction(() => {
         const node = document.getElementById("careerCvSnippet");
-        return node && /smoke-resume\.pdf/.test(node.textContent || "") && /PDF 原文/.test(node.textContent || "");
+        const text = node?.textContent || "";
+        return node && /熟悉網頁開發與介面優化/.test(text) && !/smoke-resume\.pdf|PDF 原文/.test(text);
       });
-      const uploadEntrypointsReady = await page.evaluate(() => {
+      const uploadEntrypointsRemoved = await page.evaluate(() => {
         return Boolean(
           !document.getElementById("uploadCvPdfBtn") &&
-          document.getElementById("careerUploadCvBtn") &&
-          document.getElementById("importPdfInput") &&
-          typeof window.openCvPdfImport === "function"
+          !document.getElementById("careerUploadCvBtn") &&
+          !document.getElementById("importPdfInput") &&
+          typeof window.openCvPdfImport === "undefined"
         );
       });
-      assert.equal(uploadEntrypointsReady, true);
+      assert.equal(uploadEntrypointsRemoved, true);
 
-      await page.evaluate(() => {
-        window.dispatchEvent(new CustomEvent("career:auto-analyze-uploaded-cv"));
-      });
+      await page.click(".career-mode-tab[data-mode='position']");
       await page.waitForFunction(() => {
         const section = document.getElementById("careerJdSection");
         const button = document.getElementById("careerAnalyzeBtn");
         return section && section.style.display === "none" && button && /分析我適合哪些崗位/.test(button.textContent || "");
       });
 
+      await page.click("#careerAnalyzeBtn");
       await page.waitForFunction(() => {
         const node = document.getElementById("careerResultsArea");
         return node && /請先填入 API Key/.test(node.textContent || "");

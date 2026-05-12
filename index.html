@@ -37,14 +37,10 @@
       injectScriptOnce("https://unpkg.com/html2pdf.js@0.10.1/dist/html2pdf.bundle.min.js");
     };
 
-    window.__loadPdfJsFallback = function __loadPdfJsFallback() {
-      injectScriptOnce("https://unpkg.com/pdfjs-dist@3.11.174/build/pdf.min.js");
-    };
   </script>
   <script src="config.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" onerror="window.__loadSupabaseFallback()"></script>
   <script src="https://cdn.jsdelivr.net/npm/html2pdf.js@0.10.1/dist/html2pdf.bundle.min.js" onerror="window.__loadHtml2pdfFallback()"></script>
-  <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@3.11.174/build/pdf.min.js" onerror="window.__loadPdfJsFallback()"></script>
   <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
   <style>
     :root {
@@ -4350,12 +4346,10 @@
       margin-bottom: 6px;
     }
     .career-cv-actions {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
+      display: block;
       gap: 8px;
       margin-top: 8px;
     }
-    .career-upload-btn,
     .career-link-btn {
       width: 100%;
       min-height: 40px;
@@ -4364,11 +4358,6 @@
       font-size: 12.5px;
       font-weight: 700;
       line-height: 1.25;
-    }
-    .career-upload-btn {
-      background: var(--accent-2);
-      color: #fff;
-      border-color: transparent;
     }
     .career-link-btn {
       background: rgba(255,255,255,0.75);
@@ -4380,12 +4369,6 @@
       color: var(--muted);
       font-size: 11.5px;
       line-height: 1.5;
-    }
-    .career-cv-source {
-      margin-bottom: 6px;
-      color: var(--accent-2);
-      font-size: 11.5px;
-      font-weight: 800;
     }
     .career-textarea {
       width: 100%;
@@ -4962,7 +4945,7 @@
         </button>
         <button class="app-tab" data-tab="career" type="button">
           <strong>求職顧問</strong>
-          <span>上傳 CV、AI 分析、求職信</span>
+          <span>AI 分析、職缺適配、求職信</span>
         </button>
         <button class="app-tab" data-tab="gsat" type="button">
           <strong>學測落點</strong>
@@ -5077,7 +5060,7 @@
             </button>
             <button class="function-item feature-card-action" data-guide-tab="career" type="button">
               <span class="function-item-tag">AI</span>
-              <strong>上傳 CV 給求職顧問</strong>
+              <strong>用求職顧問分析履歷</strong>
               <small>直接分析適合崗位</small>
             </button>
             <button class="function-item feature-card-action" data-guide-tab="gsat" type="button">
@@ -5368,12 +5351,11 @@
             <!-- Export / Import + Clear -->
             <div class="editor-tool" style="background:rgba(255,255,255,0.6);border:1px solid var(--line);border-radius:14px;padding:12px 14px;">
               <strong style="font-size:0.82rem;">資料管理</strong>
-              <p style="font-size:0.75rem;color:var(--muted);margin:4px 0 8px;">備份或匯入 CV 編輯器資料。PDF CV 請到求職顧問上傳分析。</p>
+              <p style="font-size:0.75rem;color:var(--muted);margin:4px 0 8px;">備份或匯入 CV 編輯器資料。</p>
               <div class="tool-row" style="gap:6px;flex-wrap:wrap;">
                 <button id="exportJsonBtn" class="soft" type="button" style="padding:5px 12px;font-size:0.78rem;">匯出 JSON</button>
                 <button id="importJsonBtn" class="soft" type="button" style="padding:5px 12px;font-size:0.78rem;">匯入 JSON</button>
                 <input id="importJsonInput" type="file" accept=".json" hidden />
-                <input id="importPdfInput" type="file" accept=".pdf,application/pdf" hidden />
                 <button id="clearAllBtn" class="ghost" type="button" style="padding:5px 12px;font-size:0.78rem;color:var(--danger);border-color:rgba(167,59,51,0.3);">清除資料</button>
               </div>
             </div>
@@ -6138,10 +6120,9 @@
               <span style="color:var(--muted);font-style:italic;">前往 CV 履歷頁填寫資料後，此處會自動讀取。</span>
             </div>
             <div class="career-cv-actions">
-              <button id="careerUploadCvBtn" class="career-upload-btn" type="button">上傳 CV 並分析</button>
               <button id="careerEditCvBtn" class="career-link-btn" type="button">前往 CV 編輯</button>
             </div>
-            <div class="career-cv-note">上傳 PDF 後只讀取原文給求職顧問，不會回填或改動 CV 編輯器；若已填 API key，會自動啟動「推薦適合崗位」。</div>
+            <div class="career-cv-note">求職顧問會直接讀取 CV 履歷頁已填寫的摘要、技能、經歷、教育與專案資料。</div>
           </div>
 
           <!-- API key -->
@@ -6448,7 +6429,7 @@
         "進度、入口與下一步": "Progress, entry points, and next steps",
         "模板、編輯、PDF 輸出": "Templates, editing, and PDF export",
         "章節、圖片、成果頁": "Chapters, images, and outcome pages",
-        "上傳 CV、AI 分析、求職信": "Upload CV, AI analysis, and cover letters",
+        "AI 分析、職缺適配、求職信": "AI analysis, job fit, and cover letters",
         "校系篩選與落點分析": "Department filtering and placement analysis",
         "不是只能做履歷，也不是只能看落點，而是把學生申請和求職準備整合成同一套入口。": "This is not just a resume builder or a placement checker. It is one entry point for applications and career preparation.",
         "履歷編輯": "Resume Editing",
@@ -6480,7 +6461,7 @@
         "履歷、顧問、落點": "Resume, advisor, placement",
         "建立或修改履歷": "Create or edit a resume",
         "模板、區塊、即時預覽": "Templates, sections, live preview",
-        "上傳 CV 給求職顧問": "Upload CV to Career Advisor",
+        "用求職顧問分析履歷": "Analyze resume with Career Advisor",
         "直接分析適合崗位": "Analyze suitable roles directly",
         "查看學測落點": "View GSAT placement",
         "用校系資料縮小方向": "Narrow choices with department data",
@@ -6586,7 +6567,7 @@
         "清除此欄": "Clear This Field",
         "尚未建立雙語對照。": "No bilingual mappings yet.",
         "資料管理": "Data Management",
-        "備份或匯入 CV 編輯器資料。PDF CV 請到求職顧問上傳分析。": "Back up or import CV editor data. Upload PDF CVs in Career Advisor for analysis.",
+        "備份或匯入 CV 編輯器資料。": "Back up or import CV editor data.",
         "匯出 JSON": "Export JSON",
         "匯入 JSON": "Import JSON",
         "清除資料": "Clear Data",
@@ -6767,9 +6748,8 @@
         "將職缺的完整描述貼在這裡，包含職稱、職責、要求技能、公司介紹等。內容越完整，分析越準確。": "Paste the full job description here, including title, responsibilities, required skills, and company information. More detail improves the analysis.",
         "你的履歷摘要（自動讀取）": "Your Resume Summary (Auto-loaded)",
         "前往 CV 履歷頁填寫資料後，此處會自動讀取。": "Fill in the CV page and this section will load automatically.",
-        "上傳 CV 並分析": "Upload CV and Analyze",
         "前往 CV 編輯": "Go To CV Editor",
-        "上傳 PDF 後只讀取原文給求職顧問，不會回填或改動 CV 編輯器；若已填 API key，會自動啟動「推薦適合崗位」。": "After upload, PDF text is used only by Career Advisor and will not change the CV editor. If an API key is present, role recommendation starts automatically.",
+        "求職顧問會直接讀取 CV 履歷頁已填寫的摘要、技能、經歷、教育與專案資料。": "Career Advisor reads the summary, skills, experience, education, and projects already filled in on the CV page.",
         "Claude API Key": "AI API Key",
         "支援 Anthropic、OpenAI、Google Gemini、Groq，系統自動識別。": "Supports Anthropic, OpenAI, Google Gemini, and Groq with automatic detection.",
         "API Key 僅存於瀏覽器 localStorage，不會上傳至任何伺服器。": "The API key stays in this browser session and is not uploaded to any server.",
@@ -7378,8 +7358,6 @@
         education: "",
         projects: "",
         awards: "",
-        importedPdfText: "",
-        importedPdfFileName: "",
         bilingualContent: {}
       };
       const CV_FIELD_PLACEHOLDER_VALUES = {
@@ -8031,6 +8009,8 @@
 
       function normalizeCvData(data) {
         const next = { ...defaultData, ...(data || {}) };
+        delete next.importedPdfText;
+        delete next.importedPdfFileName;
         next.bilingualContent = normalizeBilingualContent(next.bilingualContent);
         Object.entries(CV_FIELD_PLACEHOLDER_VALUES).forEach(([field, values]) => {
           const current = String(next[field] || "").trim();
@@ -8390,15 +8370,15 @@
         const skillCount = splitLines(String(state.data.skills || "").replaceAll(",", "\n")).length;
         const itemStates = [
           hasCvField("name") && (hasCvField("role") || hasCvField("email") || hasCvField("phone")),
-          hasCvField("summary") || hasCvField("importedPdfText"),
+          hasCvField("summary"),
           skillCount >= 2,
           ["experience", "projects", "education"].some(hasCvEntry),
-          splitLines(state.data.highlights).length > 0 || splitLines(state.data.awards).length > 0 || hasCvField("importedPdfText")
+          splitLines(state.data.highlights).length > 0 || splitLines(state.data.awards).length > 0
         ];
         const completed = itemStates.filter(Boolean).length;
         return {
           score: completed * 10,
-          hasAny: fields.some(hasCvField) || hasCvField("importedPdfText"),
+          hasAny: fields.some(hasCvField),
           complete: completed >= itemStates.length - 1
         };
       }
@@ -11014,118 +10994,6 @@
         reader.readAsText(file);
       }
 
-      function openPdfImportPicker() {
-        $("importPdfInput")?.click();
-      }
-
-      function normalizeResumeText(text) {
-        return String(text || "")
-          .replace(/\u00a0/g, " ")
-          .replace(/\r/g, "")
-          .replace(/[ \t]+\n/g, "\n")
-          .replace(/\n{3,}/g, "\n\n")
-          .replace(/[ \t]{2,}/g, " ")
-          .trim();
-      }
-
-      async function extractPdfText(file) {
-        if (!window.pdfjsLib) {
-          throw new Error("PDF 解析工具尚未載入完成，請稍候再試。");
-        }
-
-        const workerSrc = "https://cdn.jsdelivr.net/npm/pdfjs-dist@3.11.174/build/pdf.worker.min.js";
-        if (window.pdfjsLib.GlobalWorkerOptions?.workerSrc !== workerSrc) {
-          window.pdfjsLib.GlobalWorkerOptions.workerSrc = workerSrc;
-        }
-
-        const buffer = await file.arrayBuffer();
-        const pdf = await window.pdfjsLib.getDocument({ data: buffer }).promise;
-        const pages = [];
-
-        for (let pageNumber = 1; pageNumber <= pdf.numPages; pageNumber += 1) {
-          const page = await pdf.getPage(pageNumber);
-          const content = await page.getTextContent();
-          const lines = [];
-          let currentLine = [];
-
-          content.items.forEach((item) => {
-            const chunk = String(item.str || "").trim();
-            if (chunk) currentLine.push(chunk);
-            if (item.hasEOL && currentLine.length) {
-              lines.push(currentLine.join(" ").trim());
-              currentLine = [];
-            }
-          });
-
-          if (currentLine.length) {
-            lines.push(currentLine.join(" ").trim());
-          }
-
-          const pageText = lines.join("\n").trim();
-          if (pageText) pages.push(pageText);
-        }
-
-        return normalizeResumeText(pages.join("\n\n"));
-      }
-
-      function runCareerAdvisorFromUploadedPdf(fileName) {
-        if (typeof window.switchCvStudioTab === "function") {
-          window.switchCvStudioTab("career");
-        }
-        window.setTimeout(() => {
-          window.dispatchEvent(new CustomEvent("career:auto-analyze-uploaded-cv", {
-            detail: { fileName }
-          }));
-        }, 80);
-      }
-
-      function showCareerUploadStatus(message, type = "loading") {
-        if (typeof window.switchCvStudioTab === "function") {
-          window.switchCvStudioTab("career");
-        }
-        const area = document.getElementById("careerResultsArea");
-        if (!area) return;
-        if (type === "error") {
-          area.innerHTML = `<div style="padding:40px 32px;text-align:center;color:var(--danger);font-size:13.5px;line-height:1.6;">${escapeHtml(message)}</div>`;
-          return;
-        }
-        area.innerHTML = `
-          <div class="career-loading">
-            <div class="career-loading-spinner"></div>
-            <div class="career-loading-text">${escapeHtml(message)}</div>
-          </div>`;
-      }
-
-      async function importPdfForCareerAdvisor(file) {
-        if (!file) return;
-        if (!/\.pdf$/i.test(file.name) && file.type !== "application/pdf") {
-          setMessage("請選擇 PDF 格式的履歷檔案。", "error");
-          showCareerUploadStatus("請選擇 PDF 格式的 CV 檔案。", "error");
-          return;
-        }
-
-        try {
-          setMessage("正在讀取 PDF CV，完成後會直接交給求職顧問分析…", "success");
-          showCareerUploadStatus("正在讀取 PDF CV，完成後會直接啟動求職顧問分析…");
-          const text = await extractPdfText(file);
-          if (!text) {
-            throw new Error("未能從 PDF 中讀取到文字，可能是掃描圖檔型 PDF。");
-          }
-          state.data = {
-            ...state.data,
-            importedPdfText: text,
-            importedPdfFileName: file.name
-          };
-          saveJson(STORAGE_KEY, state.data);
-          notifyCvDataUpdated("career-pdf-upload");
-          setMessage("PDF CV 已上傳，正在切換到求職顧問並啟動 AI 分析。", "success");
-          runCareerAdvisorFromUploadedPdf(file.name);
-        } catch (error) {
-          setMessage(`PDF CV 讀取失敗：${error.message || "請稍後再試。"}`, "error");
-          showCareerUploadStatus(`PDF CV 讀取失敗：${error.message || "請稍後再試。"}`, "error");
-        }
-      }
-
       /* ══════════════════════════════════════════════════════
          TOOLS – Custom Accent Color
       ══════════════════════════════════════════════════════ */
@@ -11252,8 +11120,6 @@
         pushUndo();
         const blank = {};
         fields.forEach(f => { blank[f] = ""; });
-        blank.importedPdfText = "";
-        blank.importedPdfFileName = "";
         blank.bilingualContent = {};
         state.data = { ...state.data, ...blank };
         saveJson(STORAGE_KEY, state.data);
@@ -11293,11 +11159,6 @@
           importJson(e.target.files[0]);
           e.target.value = "";
         });
-        $("importPdfInput")?.addEventListener("change", async (e) => {
-          await importPdfForCareerAdvisor(e.target.files[0]);
-          e.target.value = "";
-        });
-
         // Custom accent color swatches
         document.querySelectorAll(".color-swatch[data-accent]").forEach(el => {
           el.addEventListener("click", () => applyAccentColor(el.dataset.accent));
@@ -11402,7 +11263,6 @@
 
       window.closePdfPreview = closePdfPreview;
       window.openPdfPreview = openPdfPreview;
-      window.openCvPdfImport = openPdfImportPicker;
       window.cvStudioState = state;   /* exposed for career advisor */
       window.cvStudioCloud = {
         getUser: () => state.user,
@@ -13353,12 +13213,6 @@
 
         function getCvSummary() {
           const d = window.cvStudioState?.data || {};
-          if ((d.importedPdfText || "").trim()) {
-            return [
-              d.importedPdfFileName && `PDF 檔名：${d.importedPdfFileName}`,
-              `PDF CV 原文：${d.importedPdfText}`
-            ].filter(Boolean).join("\n\n");
-          }
           const parts = [
             d.name    && `姓名：${d.name}`,
             d.role    && `職稱/目標：${d.role}`,
@@ -13380,9 +13234,7 @@
             el.innerHTML = `<span style="color:var(--muted);font-style:italic;">前往 CV 履歷頁填寫資料後，此處會自動讀取。</span>`;
           } else {
             const preview = summary.slice(0, 240) + (summary.length > 240 ? "…" : "");
-            const pdfFileName = (window.cvStudioState?.data?.importedPdfFileName || "").trim();
             el.innerHTML = `
-              ${pdfFileName ? `<div class="career-cv-source">PDF：${careerText(pdfFileName)}</div>` : ""}
               <div>${careerText(preview)}</div>
             `;
           }
@@ -13974,24 +13826,6 @@
           $c("claudeApiKey").addEventListener("input", () => {
             const val = $c("claudeApiKey").value.trim();
             storeCareerApiKey(val);
-          });
-
-          $c("careerUploadCvBtn")?.addEventListener("click", () => {
-            if (typeof window.openCvPdfImport === "function") {
-              window.openCvPdfImport();
-            } else {
-              document.getElementById("importPdfInput")?.click();
-            }
-          });
-
-          window.addEventListener("career:auto-analyze-uploaded-cv", () => {
-            updateCvSnippet();
-            const positionTab = document.querySelector(".career-mode-tab[data-mode='position']");
-            positionTab?.click();
-            window.setTimeout(() => {
-              const analyzeBtn = $c("careerAnalyzeBtn");
-              if (analyzeBtn && !analyzeBtn.disabled) analyzeBtn.click();
-            }, 60);
           });
 
           $c("careerEditCvBtn")?.addEventListener("click", () => {
