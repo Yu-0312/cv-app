@@ -2921,13 +2921,33 @@
       }
 
       .cv-browser-section > summary {
-        grid-template-columns: auto minmax(0, 1fr);
+        grid-template-columns: 38px minmax(0, 1fr) 18px;
       }
 
-      .cv-browser-state,
-      .cv-browser-section > summary::after {
+      .cv-browser-kicker {
+        grid-row: 1 / span 3;
+      }
+
+      .cv-browser-section > summary small {
+        grid-row: 2;
+      }
+
+      .cv-browser-state {
         grid-column: 2;
+        grid-row: 3;
         justify-self: start;
+        max-width: 100%;
+      }
+
+      .cv-browser-section > summary::after {
+        grid-column: 3;
+        grid-row: 1 / span 3;
+      }
+
+      .job-role-row,
+      .template-strip,
+      .cv-tools-panel {
+        grid-template-columns: 1fr;
       }
 
       .hero-action-note {
@@ -3562,13 +3582,13 @@
     /* ===== CV STUDIO BAR ===== */
     .cv-studio-bar {
       display: grid;
-      gap: 10px;
-      padding: 12px;
-      background: rgba(255, 250, 244, 0.94);
+      gap: 8px;
+      padding: 10px;
+      background: rgba(255, 252, 248, 0.92);
       backdrop-filter: blur(18px);
-      border: 1px solid rgba(49, 40, 27, 0.08);
-      border-radius: 18px;
-      box-shadow: 0 18px 56px rgba(50, 38, 18, 0.1);
+      border: 1px solid rgba(49, 40, 27, 0.1);
+      border-radius: 14px;
+      box-shadow: 0 14px 42px rgba(50, 38, 18, 0.08);
       margin-bottom: 14px;
     }
     .cv-studio-head {
@@ -3576,18 +3596,18 @@
       align-items: center;
       justify-content: space-between;
       gap: 14px;
-      padding: 2px 4px 6px;
+      padding: 2px 4px 4px;
     }
     .cv-studio-head strong {
       display: block;
-      margin-top: 3px;
+      margin-top: 2px;
       color: var(--template-heading);
-      font-size: 0.98rem;
-      line-height: 1.35;
+      font-size: 0.96rem;
+      line-height: 1.3;
     }
     .cv-studio-hint {
       color: var(--muted);
-      font-size: 0.78rem;
+      font-size: 0.76rem;
       line-height: 1.45;
       text-align: right;
     }
@@ -3601,27 +3621,27 @@
       text-transform: uppercase;
       letter-spacing: 0.08em;
       color: var(--muted);
-      font-weight: 600;
+      font-weight: 700;
     }
-    .cv-browser-grid {
+    .cv-browser-grid,
+    .cv-accordion-list {
       display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 10px;
+      gap: 8px;
     }
     .cv-browser-section {
       width: 100%;
       border: 1px solid rgba(49, 40, 27, 0.1);
-      border-radius: 12px;
-      background: rgba(255, 255, 255, 0.64);
+      border-radius: 10px;
+      background: rgba(255, 255, 255, 0.68);
       overflow: hidden;
     }
     .cv-browser-section > summary {
       display: grid;
-      grid-template-columns: auto minmax(0, 1fr) auto;
-      gap: 6px 10px;
+      grid-template-columns: 44px minmax(0, 1fr) minmax(110px, auto) 18px;
+      gap: 8px 12px;
       align-items: center;
-      min-height: 58px;
-      padding: 12px 14px;
+      min-height: 54px;
+      padding: 10px 12px;
       cursor: pointer;
       list-style: none;
       user-select: none;
@@ -3630,33 +3650,34 @@
       display: none;
     }
     .cv-browser-section > summary::after {
-      content: "展開";
-      grid-column: 3;
-      grid-row: 2;
+      content: "⌄";
+      grid-column: 4;
+      grid-row: 1 / span 2;
       justify-self: end;
       color: var(--muted);
-      font-size: 0.72rem;
-      font-weight: 800;
+      font-size: 1rem;
+      line-height: 1;
+      transition: transform 0.18s ease, color 0.18s ease;
     }
     .cv-browser-section[open] > summary {
       border-bottom: 1px solid rgba(49, 40, 27, 0.08);
-      background: rgba(33, 78, 116, 0.05);
+      background: rgba(33, 78, 116, 0.045);
     }
     .cv-browser-section[open] > summary::after {
-      content: "收合";
+      color: var(--accent-2);
+      transform: rotate(180deg);
     }
     .cv-browser-kicker {
       grid-row: 1 / span 2;
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      min-width: 42px;
-      min-height: 30px;
-      padding: 0 9px;
-      border-radius: 999px;
+      width: 36px;
+      height: 34px;
+      border-radius: 8px;
       background: rgba(33, 78, 116, 0.08);
       color: var(--accent-2);
-      font-size: 0.74rem;
+      font-size: 0.78rem;
       font-weight: 900;
       line-height: 1;
       white-space: nowrap;
@@ -3664,8 +3685,8 @@
     .cv-browser-section > summary strong,
     .cv-browser-section > summary > span:not(.cv-browser-kicker, .cv-browser-state, .word-count-badge) {
       color: var(--ink);
-      font-size: 0.9rem;
-      font-weight: 800;
+      font-size: 0.92rem;
+      font-weight: 850;
       line-height: 1.25;
     }
     .cv-browser-section > summary small {
@@ -3673,12 +3694,15 @@
       color: var(--muted);
       font-size: 0.75rem;
       line-height: 1.4;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
     }
     .cv-browser-state {
       grid-column: 3;
-      grid-row: 1;
+      grid-row: 1 / span 2;
       justify-self: end;
-      max-width: 170px;
+      max-width: 240px;
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap;
@@ -3689,21 +3713,17 @@
       font-size: 0.72rem;
       font-weight: 800;
     }
+    .cv-browser-section[open] .cv-browser-state {
+      background: rgba(255, 255, 255, 0.84);
+      color: var(--ink);
+    }
     .cv-browser-panel {
-      max-height: 260px;
+      max-height: min(420px, 58vh);
       overflow: auto;
-      padding: 12px;
+      padding: 10px 12px 12px;
     }
     .cv-tools-details {
       background: rgba(255, 255, 255, 0.58);
-    }
-    .cv-tools-details > summary {
-      grid-template-columns: auto minmax(0, auto) minmax(0, 1fr) auto;
-      min-height: 50px;
-    }
-    .cv-tools-details > summary::after {
-      grid-column: 4;
-      grid-row: 1;
     }
     .cv-tools-panel {
       display: grid;
@@ -3712,48 +3732,94 @@
       max-height: min(540px, 68vh);
     }
 
-    /* ===== JOB ROLE CHIPS ===== */
+    /* ===== JOB ROLE LIST ===== */
     .job-role-row {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
       gap: 8px;
     }
     .job-chip {
-      display: inline-flex;
+      display: grid;
+      grid-template-columns: 30px minmax(0, 1fr) auto;
       align-items: center;
-      justify-content: flex-start;
-      gap: 5px;
+      gap: 9px;
       width: 100%;
-      min-height: 38px;
-      padding: 8px 10px;
-      border-radius: 10px;
-      border: 1px solid rgba(49, 40, 27, 0.14);
+      min-height: 58px;
+      padding: 9px 10px;
+      border-radius: 8px;
+      border: 1px solid rgba(49, 40, 27, 0.12);
       background: rgba(255, 255, 255, 0.78);
       color: var(--ink);
-      font-size: 12.5px;
-      line-height: 1.2;
+      text-align: left;
       cursor: pointer;
-      transition: all 0.15s ease;
+      transition: transform 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
       transform: none;
       box-shadow: none;
     }
     .job-chip:hover {
-      border-color: var(--accent);
+      border-color: rgba(173, 63, 47, 0.36);
       background: rgba(255, 255, 255, 0.96);
       transform: translateY(-1px);
-      box-shadow: 0 4px 12px rgba(173, 63, 47, 0.12);
+      box-shadow: 0 5px 14px rgba(173, 63, 47, 0.1);
     }
     .job-chip.active {
-      background: linear-gradient(135deg, var(--accent), #c26941);
+      border-color: rgba(173, 63, 47, 0.38);
+      background: linear-gradient(135deg, rgba(173, 63, 47, 0.12), rgba(255, 255, 255, 0.92));
+      box-shadow: 0 0 0 3px rgba(173, 63, 47, 0.09);
+    }
+    .job-chip-icon {
+      display: inline-grid;
+      place-items: center;
+      width: 30px;
+      height: 30px;
+      border-radius: 8px;
+      background: rgba(49, 40, 27, 0.055);
+      font-size: 1rem;
+    }
+    .job-chip-main {
+      display: grid;
+      gap: 3px;
+      min-width: 0;
+    }
+    .job-chip-main strong {
+      color: var(--ink);
+      font-size: 0.82rem;
+      font-weight: 850;
+      line-height: 1.25;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .job-chip-main small {
+      color: var(--muted);
+      font-size: 0.7rem;
+      line-height: 1.35;
+      white-space: normal;
+    }
+    .job-chip-template {
+      display: inline-flex;
+      align-items: center;
+      max-width: 92px;
+      min-height: 24px;
+      padding: 0 8px;
+      border-radius: 999px;
+      background: rgba(33, 78, 116, 0.08);
+      color: var(--accent-2);
+      font-size: 0.68rem;
+      font-weight: 850;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .job-chip.active .job-chip-template {
+      background: var(--accent);
       color: #fff;
-      border-color: transparent;
-      box-shadow: 0 4px 16px rgba(173, 63, 47, 0.30);
     }
 
-    /* ===== TEMPLATE STRIP ===== */
+    /* ===== TEMPLATE LIST ===== */
     .template-strip {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(92px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
       gap: 8px;
       overflow: visible;
       padding: 0;
@@ -3764,21 +3830,20 @@
     .template-strip::-webkit-scrollbar-track { background: transparent; }
     .template-strip::-webkit-scrollbar-thumb { background: rgba(49, 40, 27, 0.18); border-radius: 999px; }
     .template-chip {
-      display: flex;
-      flex-direction: column;
+      display: grid;
+      grid-template-columns: 54px minmax(0, 1fr) auto;
       align-items: center;
-      justify-content: center;
-      gap: 5px;
+      gap: 10px;
       width: 100%;
-      min-height: 84px;
-      padding: 8px 10px;
-      border-radius: 10px;
+      min-height: 62px;
+      padding: 9px 10px;
+      border-radius: 8px;
       border: 1.5px solid rgba(49, 40, 27, 0.1);
       background: rgba(255, 255, 255, 0.78);
       cursor: pointer;
-      transition: all 0.15s ease;
+      transition: transform 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
       min-width: 0;
-      text-align: center;
+      text-align: left;
       position: relative;
       box-shadow: none;
       transform: none;
@@ -3786,46 +3851,73 @@
     .template-chip:hover {
       border-color: rgba(33, 78, 116, 0.28);
       transform: translateY(-1px);
-      box-shadow: 0 4px 12px rgba(33, 78, 116, 0.1);
+      box-shadow: 0 5px 14px rgba(33, 78, 116, 0.1);
     }
     .template-chip.active {
       border-color: var(--accent);
       background: #fff;
-      box-shadow: 0 0 0 3px rgba(173, 63, 47, 0.12);
+      box-shadow: 0 0 0 3px rgba(173, 63, 47, 0.1);
       transform: none;
     }
     .chip-swatch {
       width: 52px;
-      height: 30px;
+      height: 34px;
       border-radius: 7px;
       display: grid;
       grid-template-columns: 28% 1fr;
       overflow: hidden;
+      border: 1px solid rgba(49, 40, 27, 0.08);
     }
     .chip-swatch-sidebar { border-radius: 7px 0 0 7px; }
     .chip-swatch-main   { border-radius: 0 7px 7px 0; }
+    .template-chip-body {
+      display: grid;
+      gap: 3px;
+      min-width: 0;
+    }
     .template-chip strong {
-      font-size: 9.5px;
       color: var(--ink);
-      font-weight: 600;
-      line-height: 1.2;
+      font-size: 0.82rem;
+      font-weight: 850;
+      line-height: 1.25;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .template-chip small {
+      color: var(--muted);
+      font-size: 0.7rem;
+      line-height: 1.35;
       white-space: normal;
     }
     .rec-dot {
       display: none;
-      position: absolute;
-      top: -5px;
-      right: -5px;
-      width: 13px;
-      height: 13px;
-      border-radius: 50%;
+      align-items: center;
+      justify-content: center;
+      width: 24px;
+      height: 24px;
+      border-radius: 999px;
       background: var(--accent);
-      border: 2px solid var(--bg);
+      color: #fff;
+      font-size: 0.78rem;
+      font-weight: 900;
+      line-height: 1;
     }
-    .template-chip.recommended .rec-dot   { display: block; }
-    .template-chip.recommended-alt .rec-dot { display: block; background: var(--accent-2); }
-    .template-chip.recommended   { border-color: rgba(173, 63, 47, 0.35); }
-    .template-chip.recommended-alt { border-color: rgba(33, 78, 116, 0.30); }
+    .template-chip.recommended .rec-dot,
+    .template-chip.recommended-alt .rec-dot {
+      display: inline-flex;
+    }
+    .template-chip.recommended .rec-dot::before {
+      content: "★";
+    }
+    .template-chip.recommended-alt .rec-dot {
+      background: var(--accent-2);
+    }
+    .template-chip.recommended-alt .rec-dot::before {
+      content: "●";
+    }
+    .template-chip.recommended   { border-color: rgba(173, 63, 47, 0.38); }
+    .template-chip.recommended-alt { border-color: rgba(33, 78, 116, 0.32); }
 
     /* ===== FLOATING FORMAT TOOLBAR ===== */
     .format-toolbar {
@@ -5323,57 +5415,41 @@
     <div class="cv-studio-bar" id="cvStudioBar">
       <div class="cv-studio-head">
         <div>
-          <span class="cv-studio-label">版型瀏覽</span>
-          <strong>用展開列表挑職位或模板</strong>
+          <span class="cv-studio-label">版型與工具</span>
+          <strong>職位、模板、工具</strong>
         </div>
-        <span class="cv-studio-hint">常用操作保留在上方，其餘功能可展開</span>
+        <span class="cv-studio-hint">上方保留儲存與 PDF，進階選項集中在這裡。</span>
       </div>
-      <div class="cv-browser-grid">
+      <div class="cv-browser-grid cv-accordion-list">
         <details class="cv-browser-section" id="roleBrowserDetails">
           <summary>
-            <span class="cv-browser-kicker">推薦</span>
-            <strong>依職位推薦模板</strong>
-            <small>點選職位後會自動套用推薦模板。</small>
+            <span class="cv-browser-kicker">01</span>
+            <strong>職位推薦</strong>
+            <small>依目標職位套用主模板與備選模板</small>
             <span class="cv-browser-state" id="activeJobSummary">尚未選擇職位</span>
           </summary>
           <div class="cv-browser-panel">
-            <div class="job-role-row" id="jobRoleBar">
-              <button class="job-chip" type="button" data-job="software">💻 軟體工程師</button>
-              <button class="job-chip" type="button" data-job="frontend">🖥 前端 / 全端</button>
-              <button class="job-chip" type="button" data-job="data">📊 資料科學</button>
-              <button class="job-chip" type="button" data-job="ux">🎨 UX / 產品設計</button>
-              <button class="job-chip" type="button" data-job="pm">🗂 產品經理</button>
-              <button class="job-chip" type="button" data-job="marketing">📣 行銷 / 品牌</button>
-              <button class="job-chip" type="button" data-job="research">🔬 學術研究</button>
-              <button class="job-chip" type="button" data-job="education">📚 教育 / 老師</button>
-              <button class="job-chip" type="button" data-job="healthcare">🏥 醫療 / 護理</button>
-              <button class="job-chip" type="button" data-job="finance">💰 金融 / 財務</button>
-              <button class="job-chip" type="button" data-job="legal">⚖ 法律 / 顧問</button>
-              <button class="job-chip" type="button" data-job="architecture">🏛 建築 / 工藝</button>
-              <button class="job-chip" type="button" data-job="creative">🎭 藝術 / 創意</button>
-              <button class="job-chip" type="button" data-job="hr">👥 人資 / 管理</button>
-            </div>
+            <div class="job-role-row" id="jobRoleBar"><!-- rendered by JS --></div>
           </div>
         </details>
         <details class="cv-browser-section" id="templateBrowserDetails">
           <summary>
-            <span class="cv-browser-kicker">模板</span>
+            <span class="cv-browser-kicker">02</span>
             <strong>模板選擇</strong>
-            <small>展開後用清單瀏覽，點選即時套用。</small>
+            <small>所有履歷版型</small>
             <span class="cv-browser-state" id="templateBrowserState">目前模板</span>
           </summary>
           <div class="cv-browser-panel">
             <div class="template-strip" id="templateStrip"><!-- rendered by JS --></div>
           </div>
         </details>
-      </div>
 
-      <!-- ===== TOOLS PANEL ===== -->
-      <div class="cv-studio-section">
+        <!-- ===== TOOLS PANEL ===== -->
         <details id="cvToolsDetails" class="cv-browser-section cv-tools-details">
           <summary>
-            <span class="cv-browser-kicker">工具</span>
+            <span class="cv-browser-kicker">03</span>
             <span>工具列</span>
+            <small>字數、色彩、版本、分享與備份</small>
             <span id="wordCountBadge" class="word-count-badge" style="font-size:0.72rem;">字數 <strong id="wordCountNum">0</strong></span>
           </summary>
           <div class="cv-browser-panel cv-tools-panel">
@@ -5505,7 +5581,6 @@
           </div>
         </details>
       </div>
-      <!-- /TOOLS PANEL -->
 
     </div>
 
@@ -6630,10 +6705,28 @@
         "版型瀏覽": "Template Browser",
         "用展開列表挑職位或模板": "Choose roles or templates from expandable lists",
         "常用操作保留在上方，其餘功能可展開": "Common actions stay at the top; everything else can expand as needed",
+        "版型與工具": "Layout And Tools",
+        "職位、模板、工具": "Roles, Templates, Tools",
+        "上方保留儲存與 PDF，進階選項集中在這裡。": "Save and PDF stay above; advanced options live here.",
         "推薦": "Recommended",
         "依職位推薦模板": "Recommend Templates By Role",
         "點選職位後會自動套用推薦模板。": "Choose a role to apply its recommended template automatically.",
+        "職位推薦": "Role Recommendations",
+        "依目標職位套用主模板與備選模板": "Apply primary and alternate templates by target role",
         "尚未選擇職位": "No role selected",
+        "軟體工程師": "Software Engineer",
+        "前端 / 全端": "Frontend / Full-stack",
+        "資料科學": "Data Science",
+        "產品經理": "Product Manager",
+        "行銷 / 品牌": "Marketing / Brand",
+        "學術研究": "Academic Research",
+        "教育 / 老師": "Education / Teacher",
+        "醫療 / 護理": "Healthcare / Nursing",
+        "金融 / 財務": "Finance",
+        "法律 / 顧問": "Legal / Consulting",
+        "建築 / 工藝": "Architecture / Craft",
+        "藝術 / 創意": "Arts / Creative",
+        "人資 / 管理": "HR / Management",
         "💻 軟體工程師": "💻 Software Engineer",
         "🖥 前端 / 全端": "🖥 Frontend / Full-stack",
         "📊 資料科學": "📊 Data Science",
@@ -6652,9 +6745,11 @@
         "模板選擇": "Template Selection",
         "模板選擇（點選即時套用）": "Template Selection (Click To Apply)",
         "展開後用清單瀏覽，點選即時套用。": "Open the list to browse and apply instantly.",
+        "所有履歷版型": "All Resume Layouts",
         "目前模板": "Current Template",
         "工具": "Tools",
         "工具列": "Tools",
+        "字數、色彩、版本、分享與備份": "Words, Color, Versions, Sharing, Backup",
         "字數": "Words",
         "字數統計": "Word Count",
         "總字數": "Total Words",
@@ -7930,6 +8025,23 @@
         hr:           { label: "人資 / 管理",   template: "linen",      alt: "midnight"   }
       };
 
+      const JOB_PRESET_ICONS = {
+        software: "💻",
+        frontend: "🖥",
+        data: "📊",
+        ux: "🎨",
+        pm: "🗂",
+        marketing: "📣",
+        research: "🔬",
+        education: "📚",
+        healthcare: "🏥",
+        finance: "💰",
+        legal: "⚖",
+        architecture: "🏛",
+        creative: "🎭",
+        hr: "👥"
+      };
+
       /* ── 模板 strip 色票資料 ── */
       const TEMPLATE_STRIP_DATA = [
         { id:"n-tech",      label:"Academic",    s:"#f6ecdf", m:"#fffefb" },
@@ -9119,23 +9231,56 @@
       function syncActiveJobSummary(jobId) {
         const node = $("activeJobSummary");
         if (!node) return;
-        node.textContent = jobId && JOB_PRESETS[jobId]
-          ? JOB_PRESETS[jobId].label
+        const preset = jobId && JOB_PRESETS[jobId];
+        node.textContent = preset
+          ? `${preset.label} · ${templateLabels[preset.template] || preset.template}`
           : "尚未選擇職位";
+      }
+
+      function getTemplateShortLabel(templateId) {
+        return TEMPLATE_STRIP_DATA.find((item) => item.id === templateId)?.label
+          || templateLabels[templateId]
+          || templateId;
+      }
+
+      function buildJobRoleList() {
+        const bar = $("jobRoleBar");
+        if (!bar) return;
+        bar.innerHTML = Object.entries(JOB_PRESETS).map(([id, preset]) => {
+          const primary = getTemplateShortLabel(preset.template);
+          const alternate = getTemplateShortLabel(preset.alt);
+          const isActive = _activeJobChip === id;
+          return `
+          <button class="job-chip${isActive ? " active" : ""}" type="button" data-job="${escapeHtml(id)}" aria-pressed="${isActive ? "true" : "false"}" title="${escapeHtml(`${preset.label} · ${primary} / ${alternate}`)}">
+            <span class="job-chip-icon" aria-hidden="true">${escapeHtml(JOB_PRESET_ICONS[id] || "•")}</span>
+            <span class="job-chip-main">
+              <strong>${escapeHtml(preset.label)}</strong>
+              <small>★ ${escapeHtml(primary)} / ● ${escapeHtml(alternate)}</small>
+            </span>
+            <span class="job-chip-template">${escapeHtml(primary)}</span>
+          </button>`;
+        }).join("");
       }
 
       function buildTemplateStrip() {
         const strip = $("templateStrip");
         if (!strip) return;
-        strip.innerHTML = TEMPLATE_STRIP_DATA.map(c => `
-          <button class="template-chip${state.template === c.id ? " active" : ""}" type="button" data-template-chip="${c.id}" title="${templateLabels[c.id] || c.id}">
+        strip.innerHTML = TEMPLATE_STRIP_DATA.map(c => {
+          const fullLabel = templateLabels[c.id] || c.id;
+          const isActive = state.template === c.id;
+          return `
+          <button class="template-chip${isActive ? " active" : ""}" type="button" data-template-chip="${escapeHtml(c.id)}" aria-pressed="${isActive ? "true" : "false"}" title="${escapeHtml(fullLabel)}">
             <div class="chip-swatch">
-              <div class="chip-swatch-sidebar" style="background:${c.s};"></div>
-              <div class="chip-swatch-main"    style="background:${c.m};"></div>
+              <div class="chip-swatch-sidebar" style="background:${escapeHtml(c.s)};"></div>
+              <div class="chip-swatch-main"    style="background:${escapeHtml(c.m)};"></div>
             </div>
-            <strong>${c.label}</strong>
-            <div class="rec-dot"></div>
-          </button>`).join("");
+            <div class="template-chip-body">
+              <strong>${escapeHtml(c.label)}</strong>
+              <small>${escapeHtml(fullLabel)}</small>
+            </div>
+            <div class="rec-dot" aria-hidden="true"></div>
+          </button>`;
+        }).join("");
         // wire up clicks
         strip.querySelectorAll("[data-template-chip]").forEach(btn => {
           btn.addEventListener("click", () => {
@@ -9154,7 +9299,9 @@
         });
         // update new strip chips
         document.querySelectorAll("[data-template-chip]").forEach((button) => {
-          button.classList.toggle("active", button.dataset.templateChip === templateId);
+          const isActive = button.dataset.templateChip === templateId;
+          button.classList.toggle("active", isActive);
+          button.setAttribute("aria-pressed", isActive ? "true" : "false");
         });
         if (persist) {
           localStorage.setItem(TEMPLATE_KEY, templateId);
@@ -10919,6 +11066,22 @@
       ══════════════════════════════════════════════════════ */
       let _activeJobChip = null;
 
+      function openCvAccordionSection(section) {
+        if (!section) return;
+        document.querySelectorAll("#cvStudioBar .cv-browser-section").forEach((details) => {
+          if (details !== section) details.open = false;
+        });
+        section.open = true;
+      }
+
+      function attachCvAccordionListeners() {
+        document.querySelectorAll("#cvStudioBar .cv-browser-section").forEach((details) => {
+          details.addEventListener("toggle", () => {
+            if (details.open) openCvAccordionSection(details);
+          });
+        });
+      }
+
       function applyJobPreset(jobId) {
         const preset = JOB_PRESETS[jobId];
         if (!preset) return;
@@ -10926,7 +11089,10 @@
         const alreadyActive = _activeJobChip === jobId;
 
         // clear all chip active states and template recommendations
-        document.querySelectorAll(".job-chip").forEach(c => c.classList.remove("active"));
+        document.querySelectorAll(".job-chip").forEach(c => {
+          c.classList.remove("active");
+          c.setAttribute("aria-pressed", "false");
+        });
         document.querySelectorAll(".template-chip").forEach(c => {
           c.classList.remove("recommended", "recommended-alt");
         });
@@ -10941,7 +11107,9 @@
 
         _activeJobChip = jobId;
         syncActiveJobSummary(jobId);
-        document.querySelector(`.job-chip[data-job="${jobId}"]`)?.classList.add("active");
+        const activeChip = document.querySelector(`.job-chip[data-job="${jobId}"]`);
+        activeChip?.classList.add("active");
+        activeChip?.setAttribute("aria-pressed", "true");
 
         // highlight recommended templates in the strip
         document.querySelector(`.template-chip[data-template-chip="${preset.template}"]`)?.classList.add("recommended");
@@ -10949,7 +11117,7 @@
 
         // auto-apply primary template
         updateTemplate(preset.template);
-        $("templateBrowserDetails").open = true;
+        openCvAccordionSection($("templateBrowserDetails"));
 
         // scroll the strip to show the recommended chip
         const recChip = document.querySelector(`.template-chip[data-template-chip="${preset.template}"]`);
@@ -11646,6 +11814,7 @@
         }
         syncInputs();
         syncWorkflowUi();
+        buildJobRoleList();            // ← build role accordion before wiring chips
         buildTemplateStrip();          // ← build strip before updateTemplate
         updateTemplate(state.template || state.config.defaultTemplate || "n-tech", false);
         updatePreview(true);
@@ -11653,6 +11822,7 @@
         attachInputListeners();
         attachWysiwygListeners();      // ← contenteditable sync
         attachFormatToolbar();         // ← floating format toolbar
+        attachCvAccordionListeners();  // ← keep the browser as a true accordion
         attachJobChipListeners();      // ← job preset chips
         attachToolListeners();         // ← tools panel
         bootstrapInstallPrompt();
