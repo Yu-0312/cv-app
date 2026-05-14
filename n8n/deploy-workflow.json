@@ -1,0 +1,404 @@
+{
+  "name": "Deploy CV Studio to GitHub Pages",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "github-push",
+        "options": {}
+      },
+      "id": "node-webhook-push",
+      "name": "Push to main",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [250, 200],
+      "webhookId": "cv-studio-push"
+    },
+    {
+      "parameters": {},
+      "id": "node-manual-trigger",
+      "name": "Manual Dispatch",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [250, 420]
+    },
+    {
+      "parameters": {
+        "mode": "combine",
+        "combinationMode": "mergeByPosition",
+        "options": {}
+      },
+      "id": "node-merge",
+      "name": "Merge Triggers",
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 3,
+      "position": [480, 310]
+    },
+    {
+      "parameters": {
+        "command": "git checkout ${{ $json.ref || 'main' }} && git pull origin main"
+      },
+      "id": "node-checkout",
+      "name": "Checkout Repository",
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [700, 310]
+    },
+    {
+      "parameters": {
+        "command": "node --version && npm --version"
+      },
+      "id": "node-setup-node",
+      "name": "Setup Node.js 20",
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [920, 310]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.github.com/repos/{{ $env.GITHUB_OWNER }}/{{ $env.GITHUB_REPO }}/pages",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "Bearer {{ $env.GITHUB_TOKEN }}"
+            },
+            {
+              "name": "Accept",
+              "value": "application/vnd.github+json"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "node-configure-pages",
+      "name": "Configure GitHub Pages",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [1140, 310]
+    },
+    {
+      "parameters": {
+        "command": "npm ci"
+      },
+      "id": "node-npm-ci",
+      "name": "Install Dependencies",
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [1360, 310]
+    },
+    {
+      "parameters": {
+        "command": "npm run build"
+      },
+      "id": "node-build",
+      "name": "Build Static Site",
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [1580, 310]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.github.com/repos/{{ $env.GITHUB_OWNER }}/{{ $env.GITHUB_REPO }}/actions/artifacts",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "Bearer {{ $env.GITHUB_TOKEN }}"
+            }
+          ]
+        },
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "name",
+              "value": "github-pages"
+            },
+            {
+              "name": "path",
+              "value": "dist"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "node-upload-artifact",
+      "name": "Upload Pages Artifact",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [1800, 310]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.github.com/repos/{{ $env.GITHUB_OWNER }}/{{ $env.GITHUB_REPO }}/pages/deployments",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "Bearer {{ $env.GITHUB_TOKEN }}"
+            },
+            {
+              "name": "Accept",
+              "value": "application/vnd.github+json"
+            }
+          ]
+        },
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "artifact_id",
+              "value": "={{ $json.id }}"
+            },
+            {
+              "name": "pages_build_version",
+              "value": "={{ $json.workflow_run_id }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "node-deploy",
+      "name": "Deploy to GitHub Pages",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [2020, 310]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict"
+          },
+          "conditions": [
+            {
+              "id": "deploy-success-check",
+              "leftValue": "={{ $json.status }}",
+              "rightValue": "built",
+              "operator": {
+                "type": "string",
+                "operation": "equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "id": "node-check-result",
+      "name": "Deployment Successful?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [2240, 310]
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "status",
+              "name": "status",
+              "value": "success",
+              "type": "string"
+            },
+            {
+              "id": "message",
+              "name": "message",
+              "value": "CV Studio deployed successfully to https://yu-0312.github.io/cv-app/",
+              "type": "string"
+            },
+            {
+              "id": "url",
+              "name": "url",
+              "value": "={{ $json.page_url }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "node-success",
+      "name": "Site Live",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [2460, 180]
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "status",
+              "name": "status",
+              "value": "failed",
+              "type": "string"
+            },
+            {
+              "id": "message",
+              "name": "message",
+              "value": "Deployment failed. Check GitHub Actions logs.",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "node-failed",
+      "name": "Deployment Failed",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [2460, 440]
+    }
+  ],
+  "connections": {
+    "Push to main": {
+      "main": [
+        [
+          {
+            "node": "Merge Triggers",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Manual Dispatch": {
+      "main": [
+        [
+          {
+            "node": "Merge Triggers",
+            "type": "main",
+            "index": 1
+          }
+        ]
+      ]
+    },
+    "Merge Triggers": {
+      "main": [
+        [
+          {
+            "node": "Checkout Repository",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Checkout Repository": {
+      "main": [
+        [
+          {
+            "node": "Setup Node.js 20",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Setup Node.js 20": {
+      "main": [
+        [
+          {
+            "node": "Configure GitHub Pages",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Configure GitHub Pages": {
+      "main": [
+        [
+          {
+            "node": "Install Dependencies",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Install Dependencies": {
+      "main": [
+        [
+          {
+            "node": "Build Static Site",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Build Static Site": {
+      "main": [
+        [
+          {
+            "node": "Upload Pages Artifact",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Upload Pages Artifact": {
+      "main": [
+        [
+          {
+            "node": "Deploy to GitHub Pages",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Deploy to GitHub Pages": {
+      "main": [
+        [
+          {
+            "node": "Deployment Successful?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Deployment Successful?": {
+      "main": [
+        [
+          {
+            "node": "Site Live",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Deployment Failed",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "meta": {
+    "instanceId": ""
+  }
+}

@@ -89,6 +89,29 @@ Smoke test 會先建置 `dist/`，再用 headless Chrome 檢查主要流程：
 
 ## 部署到 GitHub Pages
 
+下圖為完整的部署流程（n8n 可匯入版本：[n8n/deploy-workflow.json](n8n/deploy-workflow.json)）：
+
+```mermaid
+flowchart LR
+    A1([Push to main]) --> M{Merge Triggers}
+    A2([Manual Dispatch]) --> M
+    M --> B[Checkout Repository]
+    B --> C[Setup Node.js 20]
+    C --> D[Configure GitHub Pages]
+    D --> E[Install Dependencies\nnpm ci]
+    E --> F[Build Static Site\nnpm run build]
+    F --> G[Upload Pages Artifact\ndist/]
+    G --> H[Deploy to GitHub Pages]
+    H --> I{Success?}
+    I -->|Yes| J([Site Live\nhttps://yu-0312.github.io/cv-app/])
+    I -->|No| K([Deployment Failed\nCheck Actions logs])
+
+    style J fill:#22c55e,color:#fff
+    style K fill:#ef4444,color:#fff
+    style M fill:#f59e0b,color:#fff
+    style I fill:#f59e0b,color:#fff
+```
+
 本專案已內建 `.github/workflows/deploy.yml`。
 
 1. 將 repository 推到 GitHub。
