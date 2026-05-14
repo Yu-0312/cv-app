@@ -5120,7 +5120,7 @@
           <span class="language-toggle-divider">/</span>
           <span class="language-toggle-next">EN</span>
         </button>
-        <div class="status-pill" id="headerAuthStatus"><strong>尚未登入</strong> · 登入後保存資料</div>
+        <div class="status-pill" id="headerAuthStatus"><strong>尚未登入</strong> · 可先編輯草稿</div>
         <button id="headerLogoutBtn" class="ghost" type="button" hidden>登出</button>
         <a id="headerCanvaBtn" class="canva-btn button-link" href="https://www.canva.com/" data-canva-trigger target="_blank" rel="noreferrer noopener">
           <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
@@ -5371,7 +5371,7 @@
     <section class="topbar editor-command-bar" id="editorSection">
       <div class="editor-command-status">
         <div class="editor-command-eyebrow">CV 操作</div>
-        <div class="status-pill" id="authStatus" hidden><strong>尚未登入</strong> · 登入後保存資料</div>
+        <div class="status-pill" id="authStatus" hidden><strong>尚未登入</strong> · 可先編輯草稿</div>
         <div class="status-pill" id="syncStatus"><strong>提示詞模式</strong> · 尚未同步</div>
       </div>
       <div class="editor-command-actions">
@@ -6610,6 +6610,8 @@
         "✦ 功能導覽": "✦ Feature Tour",
         "建議流程": "Suggested Flow",
         "登入後資料才會保存；登出會回到提示詞，避免個資殘留在未登入畫面。": "Data is retained only after sign-in; signing out returns to placeholders so personal data is not left on the signed-out screen.",
+        "可先編輯草稿": "Edit draft first",
+        "未登入可先在此瀏覽器編輯草稿；登入後再同步到雲端。": "You can edit a draft in this browser before signing in, then sync it to the cloud after sign-in.",
         "先做履歷": "Start With Resume",
         "直接從模板開始，先把可投遞版本做出來。": "Start from a template and create a version ready to send.",
         "再補歷程": "Then Add Portfolio",
@@ -8397,25 +8399,62 @@
         localStorage.setItem(key, JSON.stringify(value));
       }
 
-      function loadSignedOutDraftSnapshot() {
+      function normalizeSignedOutDraftSnapshot(value) {
+        const source = isPlainObject(value) ? value : {};
         return {
-          data: normalizeCvData(defaultData),
+          data: normalizeCvData(source.data || defaultData),
+          template: normalizeTemplateId(source.template, state.config.defaultTemplate || "n-tech"),
+          workflowMode: normalizeWorkflowMode(source.workflowMode),
+          resumeLanguage: normalizeResumeLanguage(source.resumeLanguage),
+          pdfPageMode: normalizePdfPageMode(source.pdfPageMode),
+          layoutPrefs: normalizeLayoutPrefs(source.layoutPrefs)
+        };
+      }
+
+      function readSignedOutDraftSnapshot() {
+        try {
+          const raw = localStorage.getItem(SIGNED_OUT_DRAFT_KEY);
+          return raw ? normalizeSignedOutDraftSnapshot(JSON.parse(raw)) : null;
+        } catch {
+          return null;
+        }
+      }
+
+      function buildSignedOutDraftSnapshot() {
+        return normalizeSignedOutDraftSnapshot({
+          data: state.data,
+          template: state.template,
+          workflowMode: state.workflowMode,
+          resumeLanguage: state.resumeLanguage,
+          pdfPageMode: state.pdfPageMode,
+          layoutPrefs: state.layoutPrefs
+        });
+      }
+
+      function saveSignedOutDraftSnapshot(snapshot = buildSignedOutDraftSnapshot()) {
+        localStorage.setItem(SIGNED_OUT_DRAFT_KEY, JSON.stringify(snapshot));
+      }
+
+      function loadSignedOutDraftSnapshot() {
+        return readSignedOutDraftSnapshot() || normalizeSignedOutDraftSnapshot({
+          data: defaultData,
           template: state.config.defaultTemplate || "n-tech",
           workflowMode: "template-first",
           resumeLanguage: "auto",
           pdfPageMode: "auto",
           layoutPrefs: {}
-        };
+        });
       }
 
       function preserveSignedOutDraftSnapshot() {
-        localStorage.removeItem(SIGNED_OUT_DRAFT_KEY);
+        if (localStorage.getItem(SIGNED_OUT_DRAFT_KEY)) {
+          saveSignedOutDraftSnapshot();
+        }
       }
 
       function clearSignedOutPrivateData() {
         [
           STORAGE_KEY,
-          SIGNED_OUT_DRAFT_KEY,
           PORTFOLIO_STORAGE_KEY,
           SNAPSHOTS_KEY,
           APPLICATIONS_KEY
@@ -8423,6 +8462,7 @@
       }
 
       function restoreSignedOutDraftSnapshot() {
+        const hadSignedOutDraft = Boolean(readSignedOutDraftSnapshot());
         const snapshot = loadSignedOutDraftSnapshot();
         state.data = snapshot.data;
         state.template = snapshot.template;
@@ -8433,6 +8473,9 @@
 
         localStorage.removeItem(CLOUD_PROFILE_ACTIVE_KEY);
         clearSignedOutPrivateData();
+        if (hadSignedOutDraft) {
+          saveSignedOutDraftSnapshot(snapshot);
+        }
         localStorage.setItem(TEMPLATE_KEY, state.template);
         localStorage.setItem(WORKFLOW_KEY, state.workflowMode);
         localStorage.setItem(RESUME_LANGUAGE_KEY, state.resumeLanguage);
@@ -8450,10 +8493,14 @@
         updatePreview(true);
         window.dispatchEvent(new CustomEvent("portfolio:cloud-loaded", { detail: { source: "signed-out-placeholders" } }));
         notifyCvDataUpdated("signed-out-draft");
+        if (!hadSignedOutDraft) {
+          localStorage.removeItem(SIGNED_OUT_DRAFT_KEY);
+        }
       }
 
       function notifyCvDataUpdated(source = "manual") {
         if (!state.user && !state.authBusy && source !== "signed-out-draft") {
+          saveSignedOutDraftSnapshot();
           clearSignedOutPrivateData();
         }
         updateActionButtons();
@@ -8945,6 +8992,9 @@
       function persistLayout(templateId, nextLayout) {
         state.layoutPrefs[templateId] = nextLayout;
         saveJson(LAYOUT_KEY, state.layoutPrefs);
+        if (!state.user && !state.authBusy) {
+          saveSignedOutDraftSnapshot();
+        }
       }
 
       function patchCurrentLayout(mutator) {
@@ -9219,6 +9269,9 @@
       function setWorkflowMode(mode) {
         state.workflowMode = mode;
         localStorage.setItem(WORKFLOW_KEY, mode);
+        if (!state.user && !state.authBusy) {
+          saveSignedOutDraftSnapshot();
+        }
         syncWorkflowUi();
       }
 
@@ -9305,6 +9358,9 @@
         });
         if (persist) {
           localStorage.setItem(TEMPLATE_KEY, templateId);
+        }
+        if (persist && !state.user && !state.authBusy) {
+          saveSignedOutDraftSnapshot();
         }
         $("syncStatus").innerHTML = `<strong>${escapeHtml(templateLabels[templateId] || templateId)}</strong> · 已選模板`;
         syncTemplateBrowserState();
@@ -10244,11 +10300,11 @@
         } else {
           $("authStatus").innerHTML = state.authBusy
             ? "<strong>登出中...</strong> · 正在切回提示詞"
-            : "<strong>尚未登入</strong> · 登入後保存資料";
+            : "<strong>尚未登入</strong> · 可先編輯草稿";
           $("headerAuthStatus").classList.remove("user-pill");
           $("headerAuthStatus").innerHTML = state.authBusy
             ? "<strong>登出中...</strong> · 正在切回提示詞"
-            : "<strong>尚未登入</strong> · 登入後保存資料";
+            : "<strong>尚未登入</strong> · 可先編輯草稿";
           loginTriggers.forEach((button) => {
             button.style.display = "";
           });
