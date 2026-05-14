@@ -481,6 +481,41 @@ async function main() {
       });
       const previewText = await page.$eval("#cvPaper", (node) => node.textContent || "");
       assert.doesNotMatch(previewText, /Legacy Cloud Name/);
+
+      await page.evaluate(() => window.switchCvStudioTab("cv"));
+      await page.waitForSelector("#name");
+      await page.$eval("#name", (input, value) => {
+        input.value = value;
+        input.dispatchEvent(new InputEvent("input", { bubbles: true, inputType: "insertText", data: value }));
+      }, "未登入草稿");
+      await page.$eval("#templateBrowserDetails", (node) => {
+        node.open = true;
+      });
+      await page.click('[data-template-chip="dusk"]');
+      await page.waitForFunction(() => {
+        const raw = window.localStorage.getItem("cv-studio-signed-out-draft-v1");
+        if (!raw) return false;
+        const snapshot = JSON.parse(raw);
+        return snapshot?.data?.name === "未登入草稿"
+          && snapshot?.template === "dusk"
+          && !window.localStorage.getItem("cv-studio-local-v2");
+      });
+      await page.reload({ waitUntil: "domcontentloaded", timeout: 120000 });
+      await page.waitForFunction(
+        () => Boolean(window.cvStudioState && window.switchCvStudioTab),
+        { timeout: 120000 }
+      );
+      await page.evaluate(() => window.switchCvStudioTab("cv"));
+      await page.waitForFunction(() => {
+        const paper = document.getElementById("cvPaper");
+        return window.cvStudioState?.data?.name === "未登入草稿"
+          && window.cvStudioState?.template === "dusk"
+          && paper?.dataset?.template === "dusk"
+          && (paper.textContent || "").includes("未登入草稿");
+      });
+      await page.evaluate(() => {
+        window.localStorage.removeItem("cv-studio-signed-out-draft-v1");
+      });
     });
 
     await withStep("登入／登出事件流", async () => {
