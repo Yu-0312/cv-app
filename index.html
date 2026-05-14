@@ -11108,8 +11108,8 @@
         snapshots.push({
           id: String(Date.now()),
           name,
-          targetRole: roleInput?.value.trim() || "",
-          targetCompany: companyInput?.value.trim() || "",
+          targetRole: roleInput?.value?.trim() || "",
+          targetCompany: companyInput?.value?.trim() || "",
           date: new Date().toLocaleString("zh-TW", { month: "numeric", day: "numeric", hour: "2-digit", minute: "2-digit" }),
           template: state.template,
           layoutPrefs: JSON.parse(JSON.stringify(state.layoutPrefs || {})),
@@ -11202,8 +11202,8 @@
       }
 
       function addApplicationRecord() {
-        const company = $("applicationCompanyInput")?.value.trim() || "";
-        const role = $("applicationRoleInput")?.value.trim() || "";
+        const company = $("applicationCompanyInput")?.value?.trim() || "";
+        const role = $("applicationRoleInput")?.value?.trim() || "";
         if (!company && !role) {
           setMessage("請至少輸入公司 / 單位或投遞職位。", "error");
           return;
@@ -11216,8 +11216,8 @@
           status: $("applicationStatusSelect")?.value || "準備中",
           versionId: $("applicationVersionSelect")?.value || "",
           date: $("applicationDateInput")?.value || new Date().toISOString().slice(0, 10),
-          link: normalizeExternalUrl($("applicationLinkInput")?.value.trim() || ""),
-          note: $("applicationNoteInput")?.value.trim() || "",
+          link: normalizeExternalUrl($("applicationLinkInput")?.value?.trim() || ""),
+          note: $("applicationNoteInput")?.value?.trim() || "",
           createdAt: new Date().toISOString()
         });
         saveJson(APPLICATIONS_KEY, applications);
@@ -11631,7 +11631,7 @@
 
       async function init() {
         await ensureDependenciesReady();
-        if (shouldStartWithSignedOutPlaceholders()) {
+        if (shouldStartWithSignedOutPlaceholders(state.config)) {
           clearSignedOutPrivateData();
         }
         const authRedirectResult = readAuthRedirectResult();
@@ -13742,7 +13742,9 @@
             });
             if (!res.ok) { const e = await res.json().catch(() => ({})); throw new Error(e.error?.message || `Anthropic API 錯誤 ${res.status}`); }
             data = await res.json();
-            return data.content[0].text;
+            const anthropicText = data.content?.[0]?.text;
+            if (!anthropicText) throw new Error("Anthropic API 回傳空回應");
+            return anthropicText;
           }
 
           /* ── OpenAI (GPT) ── */
@@ -13764,7 +13766,9 @@
             });
             if (!res.ok) { const e = await res.json().catch(() => ({})); throw new Error(e.error?.message || `OpenAI API 錯誤 ${res.status}`); }
             data = await res.json();
-            return data.choices[0].message.content;
+            const openaiText = data.choices?.[0]?.message?.content;
+            if (!openaiText) throw new Error("OpenAI API 回傳空回應");
+            return openaiText;
           }
 
           /* ── Google Gemini ── */
@@ -13779,7 +13783,9 @@
             });
             if (!res.ok) { const e = await res.json().catch(() => ({})); throw new Error(e.error?.message || `Gemini API 錯誤 ${res.status}`); }
             data = await res.json();
-            return data.candidates[0].content.parts[0].text;
+            const geminiText = data.candidates?.[0]?.content?.parts?.[0]?.text;
+            if (!geminiText) throw new Error("Gemini API 回傳空回應（可能被安全過濾器擋住）");
+            return geminiText;
           }
 
           /* ── Groq ── */
@@ -13801,7 +13807,9 @@
             });
             if (!res.ok) { const e = await res.json().catch(() => ({})); throw new Error(e.error?.message || `Groq API 錯誤 ${res.status}`); }
             data = await res.json();
-            return data.choices[0].message.content;
+            const groqText = data.choices?.[0]?.message?.content;
+            if (!groqText) throw new Error("Groq API 回傳空回應");
+            return groqText;
           }
         }
 
