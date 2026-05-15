@@ -481,8 +481,15 @@ async function main() {
       });
       const previewText = await page.$eval("#cvPaper", (node) => node.textContent || "");
       assert.doesNotMatch(previewText, /Legacy Cloud Name/);
+      const navState = await page.evaluate(() => ({
+        shortcutCount: document.querySelectorAll(".nav-shortcut,[data-tab-shortcut]").length,
+        primaryActionText: document.getElementById("navPrimaryActionBtn")?.textContent || ""
+      }));
+      assert.equal(navState.shortcutCount, 0);
+      assert.match(navState.primaryActionText, /開始履歷/);
 
       await page.evaluate(() => window.switchCvStudioTab("cv"));
+      await page.waitForFunction(() => /下載 PDF/.test(document.getElementById("navPrimaryActionBtn")?.textContent || ""));
       await page.waitForSelector("#cvStudioBar");
       const signedOutBrowserState = await page.evaluate(() => {
         return Array.from(document.querySelectorAll("#cvStudioBar .cv-browser-section")).map((details) => {
@@ -1134,7 +1141,7 @@ async function main() {
         window.localStorage.setItem("cv-studio-local-v2", JSON.stringify(window.cvStudioState.data));
       });
 
-      await page.click("[data-tab-shortcut='career']");
+      await page.evaluate(() => window.switchCvStudioTab("career"));
       await page.waitForSelector("#page-career.active");
       await page.waitForFunction(() => {
         const node = document.getElementById("careerCvSnippet");
@@ -1166,7 +1173,7 @@ async function main() {
     });
 
     await withStep("GSAT 雲端同步逾時 fallback", async () => {
-      await page.click("[data-tab-shortcut='gsat']");
+      await page.evaluate(() => window.switchCvStudioTab("gsat"));
       await page.waitForSelector("#page-gsat.active");
       await page.evaluate(() => window.__supabaseTest.hangNextGsatSnapshotQuery());
 
@@ -1192,7 +1199,7 @@ async function main() {
     });
 
     await withStep("GSAT 正向分析流程", async () => {
-      await page.click("[data-tab-shortcut='gsat']");
+      await page.evaluate(() => window.switchCvStudioTab("gsat"));
       await page.waitForSelector("#page-gsat.active");
 
       const departmentDisabled = await page.$eval("#gsatDepartmentSelect", (node) => node.disabled);
