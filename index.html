@@ -2948,6 +2948,15 @@
         grid-row: 1 / span 3;
       }
 
+      .cv-browser-panel-head {
+        display: grid;
+        gap: 8px;
+      }
+
+      .cv-browser-panel-meta {
+        justify-self: start;
+      }
+
       .job-role-row,
       .template-strip,
       .cv-tools-panel {
@@ -3599,12 +3608,12 @@
     /* ===== CV STUDIO BAR ===== */
     .cv-studio-bar {
       display: grid;
-      gap: 8px;
-      padding: 10px;
+      gap: 10px;
+      padding: 12px;
       background: rgba(255, 252, 248, 0.92);
       backdrop-filter: blur(18px);
       border: 1px solid rgba(49, 40, 27, 0.1);
-      border-radius: 14px;
+      border-radius: 16px;
       box-shadow: 0 14px 42px rgba(50, 38, 18, 0.08);
       margin-bottom: 14px;
     }
@@ -3643,14 +3652,15 @@
     .cv-browser-grid,
     .cv-accordion-list {
       display: grid;
-      gap: 8px;
+      gap: 9px;
     }
     .cv-browser-section {
       width: 100%;
       border: 1px solid rgba(49, 40, 27, 0.1);
-      border-radius: 10px;
+      border-radius: 12px;
       background: rgba(255, 255, 255, 0.68);
       overflow: hidden;
+      scroll-margin-top: 160px;
     }
     .cv-browser-section > summary {
       display: grid;
@@ -3737,10 +3747,48 @@
     .cv-browser-panel {
       max-height: min(420px, 58vh);
       overflow: auto;
-      padding: 10px 12px 12px;
+      padding: 12px;
+      background: rgba(255, 255, 255, 0.42);
     }
     #cvStudioBar .cv-browser-section:not([open]) > .cv-browser-panel {
       display: none !important;
+    }
+    .cv-browser-panel-head {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 10px;
+      padding: 2px 2px 10px;
+      border-bottom: 1px solid rgba(49, 40, 27, 0.08);
+    }
+    .cv-browser-panel-title {
+      display: grid;
+      gap: 3px;
+      min-width: 0;
+    }
+    .cv-browser-panel-title strong {
+      color: var(--ink);
+      font-size: 0.86rem;
+      line-height: 1.3;
+    }
+    .cv-browser-panel-title span {
+      color: var(--muted);
+      font-size: 0.72rem;
+      line-height: 1.45;
+    }
+    .cv-browser-panel-meta {
+      flex: 0 0 auto;
+      display: inline-flex;
+      align-items: center;
+      min-height: 28px;
+      padding: 0 10px;
+      border-radius: 999px;
+      background: rgba(33, 78, 116, 0.08);
+      color: var(--accent-2);
+      font-size: 0.72rem;
+      font-weight: 850;
+      white-space: nowrap;
     }
     .cv-tools-details {
       background: rgba(255, 255, 255, 0.58);
@@ -3748,24 +3796,33 @@
     .cv-tools-panel {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-      gap: 16px;
+      gap: 10px;
       max-height: min(540px, 68vh);
+    }
+    .cv-tools-panel-head {
+      grid-column: 1 / -1;
+      margin-bottom: 0;
+    }
+    .cv-tools-panel .editor-tool,
+    .cv-tools-panel .layout-actions,
+    .cv-tools-panel .section-card {
+      min-width: 0;
     }
 
     /* ===== JOB ROLE LIST ===== */
     .job-role-row {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(218px, 1fr));
       gap: 8px;
     }
     .job-chip {
       display: grid;
-      grid-template-columns: 30px minmax(0, 1fr) auto;
+      grid-template-columns: 30px minmax(0, 1fr);
       align-items: center;
       gap: 9px;
       width: 100%;
-      min-height: 58px;
-      padding: 9px 10px;
+      min-height: 66px;
+      padding: 10px;
       border-radius: 8px;
       border: 1px solid rgba(49, 40, 27, 0.12);
       background: rgba(255, 255, 255, 0.78);
@@ -3817,9 +3874,9 @@
       white-space: normal;
     }
     .job-chip-template {
+      grid-column: 2;
       display: inline-flex;
       align-items: center;
-      max-width: 92px;
       min-height: 24px;
       padding: 0 8px;
       border-radius: 999px;
@@ -3839,7 +3896,7 @@
     /* ===== TEMPLATE LIST ===== */
     .template-strip {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
       gap: 8px;
       overflow: visible;
       padding: 0;
@@ -3851,11 +3908,11 @@
     .template-strip::-webkit-scrollbar-thumb { background: rgba(49, 40, 27, 0.18); border-radius: 999px; }
     .template-chip {
       display: grid;
-      grid-template-columns: 54px minmax(0, 1fr) auto;
+      grid-template-columns: 50px minmax(0, 1fr) 24px;
       align-items: center;
       gap: 10px;
       width: 100%;
-      min-height: 62px;
+      min-height: 64px;
       padding: 9px 10px;
       border-radius: 8px;
       border: 1.5px solid rgba(49, 40, 27, 0.1);
@@ -3880,7 +3937,7 @@
       transform: none;
     }
     .chip-swatch {
-      width: 52px;
+      width: 50px;
       height: 34px;
       border-radius: 7px;
       display: grid;
@@ -5448,6 +5505,13 @@
             <span class="cv-browser-state" id="activeJobSummary">尚未選擇職位</span>
           </summary>
           <div class="cv-browser-panel">
+            <div class="cv-browser-panel-head">
+              <div class="cv-browser-panel-title">
+                <strong>選一個目標職位</strong>
+                <span>會自動套用主模板，並在模板清單標示備選版型。</span>
+              </div>
+              <span class="cv-browser-panel-meta">14 種職位</span>
+            </div>
             <div class="job-role-row" id="jobRoleBar"><!-- rendered by JS --></div>
           </div>
         </details>
@@ -5459,6 +5523,13 @@
             <span class="cv-browser-state" id="templateBrowserState">目前模板</span>
           </summary>
           <div class="cv-browser-panel">
+            <div class="cv-browser-panel-head">
+              <div class="cv-browser-panel-title">
+                <strong>切換履歷視覺風格</strong>
+                <span>點選後即時套用，未登入也會保留在此瀏覽器草稿。</span>
+              </div>
+              <span class="cv-browser-panel-meta">28 款模板</span>
+            </div>
             <div class="template-strip" id="templateStrip"><!-- rendered by JS --></div>
           </div>
         </details>
@@ -5472,6 +5543,13 @@
             <span id="wordCountBadge" class="word-count-badge" style="font-size:0.72rem;">字數 <strong id="wordCountNum">0</strong></span>
           </summary>
           <div class="cv-browser-panel cv-tools-panel">
+            <div class="cv-browser-panel-head cv-tools-panel-head">
+              <div class="cv-browser-panel-title">
+                <strong>編輯、分享與備份工具</strong>
+                <span>常用操作保留在上方，進階工具收在這裡。</span>
+              </div>
+              <span class="cv-browser-panel-meta">進階工具</span>
+            </div>
 
             <!-- Word count -->
             <div class="editor-tool" style="background:rgba(255,255,255,0.6);border:1px solid var(--line);border-radius:14px;padding:12px 14px;">
@@ -6736,6 +6814,9 @@
         "點選職位後會自動套用推薦模板。": "Choose a role to apply its recommended template automatically.",
         "職位推薦": "Role Recommendations",
         "依目標職位套用主模板與備選模板": "Apply primary and alternate templates by target role",
+        "選一個目標職位": "Choose a Target Role",
+        "會自動套用主模板，並在模板清單標示備選版型。": "Applies the primary template and marks the alternate in the template list.",
+        "14 種職位": "14 Roles",
         "尚未選擇職位": "No role selected",
         "軟體工程師": "Software Engineer",
         "前端 / 全端": "Frontend / Full-stack",
@@ -6769,10 +6850,16 @@
         "模板選擇（點選即時套用）": "Template Selection (Click To Apply)",
         "展開後用清單瀏覽，點選即時套用。": "Open the list to browse and apply instantly.",
         "所有履歷版型": "All Resume Layouts",
+        "切換履歷視覺風格": "Switch Resume Visual Style",
+        "點選後即時套用，未登入也會保留在此瀏覽器草稿。": "Applies instantly and is kept in this browser draft before sign-in.",
+        "28 款模板": "28 Templates",
         "目前模板": "Current Template",
         "工具": "Tools",
         "工具列": "Tools",
         "字數、色彩、版本、分享與備份": "Words, Color, Versions, Sharing, Backup",
+        "編輯、分享與備份工具": "Editing, Sharing, and Backup Tools",
+        "常用操作保留在上方，進階工具收在這裡。": "Common actions stay above; advanced tools live here.",
+        "進階工具": "Advanced Tools",
         "字數": "Words",
         "字數統計": "Word Count",
         "總字數": "Total Words",
@@ -11143,18 +11230,28 @@
       ══════════════════════════════════════════════════════ */
       let _activeJobChip = null;
 
-      function openCvAccordionSection(section) {
+      function scrollCvAccordionSectionIntoView(section) {
+        if (!section) return;
+        window.requestAnimationFrame(() => {
+          section.scrollIntoView({ behavior: "smooth", block: "start" });
+        });
+      }
+
+      function openCvAccordionSection(section, scrollIntoView = false) {
         if (!section) return;
         document.querySelectorAll("#cvStudioBar .cv-browser-section").forEach((details) => {
           if (details !== section) details.open = false;
         });
         section.open = true;
+        if (scrollIntoView) {
+          scrollCvAccordionSectionIntoView(section);
+        }
       }
 
       function attachCvAccordionListeners() {
         document.querySelectorAll("#cvStudioBar .cv-browser-section").forEach((details) => {
           details.addEventListener("toggle", () => {
-            if (details.open) openCvAccordionSection(details);
+            if (details.open) openCvAccordionSection(details, true);
           });
         });
       }
@@ -11194,7 +11291,7 @@
 
         // auto-apply primary template
         updateTemplate(preset.template);
-        openCvAccordionSection($("templateBrowserDetails"));
+        openCvAccordionSection($("templateBrowserDetails"), true);
 
         // scroll the strip to show the recommended chip
         const recChip = document.querySelector(`.template-chip[data-template-chip="${preset.template}"]`);

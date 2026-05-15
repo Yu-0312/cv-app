@@ -1,4 +1,4 @@
-const CACHE_NAME = "cv-studio-cache-v14";
+const CACHE_NAME = "cv-studio-cache-v15";
 const ASSETS = [
   "./manifest.json",
   "./icon.svg",
