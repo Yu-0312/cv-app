@@ -69,6 +69,10 @@
 
     * { box-sizing: border-box; }
 
+    [hidden] {
+      display: none !important;
+    }
+
     html { scroll-behavior: smooth; }
 
     body {
@@ -3721,6 +3725,9 @@
       max-height: min(420px, 58vh);
       overflow: auto;
       padding: 10px 12px 12px;
+    }
+    #cvStudioBar .cv-browser-section:not([open]) > .cv-browser-panel {
+      display: none !important;
     }
     .cv-tools-details {
       background: rgba(255, 255, 255, 0.58);

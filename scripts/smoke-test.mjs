@@ -483,6 +483,30 @@ async function main() {
       assert.doesNotMatch(previewText, /Legacy Cloud Name/);
 
       await page.evaluate(() => window.switchCvStudioTab("cv"));
+      await page.waitForSelector("#cvStudioBar");
+      const signedOutBrowserState = await page.evaluate(() => {
+        return Array.from(document.querySelectorAll("#cvStudioBar .cv-browser-section")).map((details) => {
+          const panel = details.querySelector(".cv-browser-panel");
+          return {
+            id: details.id,
+            open: details.open,
+            panelVisible: Boolean(
+              panel
+                && getComputedStyle(panel).display !== "none"
+                && panel.getClientRects().length
+            )
+          };
+        });
+      });
+      assert.deepEqual(
+        signedOutBrowserState,
+        [
+          { id: "roleBrowserDetails", open: false, panelVisible: false },
+          { id: "templateBrowserDetails", open: false, panelVisible: false },
+          { id: "cvToolsDetails", open: false, panelVisible: false }
+        ]
+      );
+
       await page.waitForSelector("#name");
       await page.$eval("#name", (input, value) => {
         input.value = value;
