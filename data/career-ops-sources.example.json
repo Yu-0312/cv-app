@@ -1,0 +1,47 @@
+{
+  "sources": [
+    {
+      "name": "Example Greenhouse board",
+      "adapter": "greenhouse",
+      "url": "https://boards.greenhouse.io/example"
+    },
+    {
+      "name": "Example Lever board",
+      "adapter": "lever",
+      "url": "https://jobs.lever.co/example",
+      "maxDiscovered": 100
+    },
+    {
+      "name": "Example Ashby board",
+      "adapter": "ashby",
+      "url": "https://jobs.ashbyhq.com/example"
+    },
+    {
+      "name": "Example Workable board",
+      "adapter": "workable",
+      "url": "https://apply.workable.com/example"
+    },
+    {
+      "name": "Example SmartRecruiters board",
+      "adapter": "smartrecruiters",
+      "url": "https://jobs.smartrecruiters.com/example",
+      "maxDiscovered": 100
+    },
+    {
+      "name": "Example BambooHR board",
+      "adapter": "bamboohr",
+      "url": "https://example.bamboohr.com/careers"
+    },
+    {
+      "name": "Example company careers page",
+      "type": "company",
+      "url": "https://example.com/careers",
+      "maxDiscovered": 25
+    },
+    {
+      "name": "Example public JobPosting page",
+      "type": "job",
+      "url": "https://example.com/job-posting"
+    }
+  ]
+}

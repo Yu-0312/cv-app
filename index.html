@@ -21,6 +21,15 @@
   <script src="./university-data.js"></script>
   <script src="./data/app/gsat-external-data.js"></script>
   <script src="./data/app/university-tw-app-data.js"></script>
+  <script src="./data/app/career-ops-jobs.js"></script>
+  <script src="./data/app/career-ops-application-kit.js"></script>
+  <script src="./data/app/career-ops-deep-research.js"></script>
+  <script src="./data/app/career-ops-deep-fit.js"></script>
+  <script src="./data/app/career-ops-compensation.js"></script>
+  <script src="./data/app/career-ops-story-bank.js"></script>
+  <script src="./data/app/career-ops-parallel-report.js"></script>
+  <script src="./data/app/career-ops-learning.js"></script>
+  <script src="./data/app/career-ops-modes.js"></script>
   <script>
     function injectScriptOnce(src) {
       if (!src || document.querySelector(`script[src="${src}"]`)) return;
@@ -4955,10 +4964,197 @@
       transition: all 0.15s;
     }
     .career-copy-btn:hover { background: rgba(33,78,116,0.18); }
+    .career-ops-help {
+      background: rgba(216,159,61,0.1);
+      border: 1px solid rgba(216,159,61,0.22);
+      border-radius: 10px;
+      color: #7b5a1d;
+      font-size: 11.5px;
+      line-height: 1.55;
+      padding: 10px 12px;
+      margin-top: 8px;
+    }
+    .career-ops-actions {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 8px;
+      margin-top: 10px;
+    }
+    .career-ops-stats {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+      margin-bottom: 18px;
+    }
+    .career-ops-stat {
+      background: var(--surface-strong);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 14px 16px;
+    }
+    .career-ops-stat span {
+      display: block;
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+    .career-ops-stat strong {
+      display: block;
+      color: var(--ink);
+      font-size: 28px;
+      line-height: 1.1;
+      margin-top: 5px;
+    }
+    .career-ops-grid {
+      display: grid;
+      grid-template-columns: minmax(320px, 0.95fr) minmax(360px, 1.05fr);
+      gap: 16px;
+      align-items: start;
+    }
+    .career-ops-list,
+    .career-ops-detail {
+      display: grid;
+      gap: 10px;
+    }
+    .career-ops-row {
+      width: 100%;
+      text-align: left;
+      background: var(--surface-strong);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 13px 14px;
+      cursor: pointer;
+      transition: border-color 0.16s, transform 0.16s, background 0.16s;
+    }
+    .career-ops-row:hover,
+    .career-ops-row.active {
+      border-color: rgba(173,63,47,0.34);
+      background: #fff;
+      transform: translateY(-1px);
+    }
+    .career-ops-row-head,
+    .career-ops-detail-head {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 12px;
+    }
+    .career-ops-row-title,
+    .career-ops-detail-title {
+      color: var(--ink);
+      font-size: 14.5px;
+      font-weight: 800;
+      line-height: 1.35;
+    }
+    .career-ops-row-meta,
+    .career-ops-detail-meta {
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.5;
+      margin-top: 3px;
+    }
+    .career-ops-score {
+      min-width: 50px;
+      text-align: right;
+      color: var(--accent-2);
+      font-size: 20px;
+      font-weight: 900;
+      line-height: 1;
+    }
+    .career-ops-score small {
+      display: block;
+      color: var(--muted);
+      font-size: 10px;
+      font-weight: 700;
+      margin-top: 3px;
+    }
+    .career-ops-status-row,
+    .career-ops-action-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 12px;
+    }
+    .career-ops-status {
+      min-height: 34px;
+      border: 1px solid var(--line);
+      border-radius: 9px;
+      background: rgba(255,255,255,0.82);
+      color: var(--ink);
+      font: inherit;
+      font-size: 12px;
+      padding: 6px 8px;
+    }
+    .career-ops-mini-btn {
+      min-height: 34px;
+      border-radius: 9px;
+      padding: 6px 10px;
+      font-size: 12px;
+      font-weight: 800;
+    }
+    .career-ops-panel {
+      background: var(--surface-strong);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 18px 20px;
+    }
+    .career-ops-panel h4 {
+      margin: 0 0 10px;
+      color: var(--ink);
+      font-size: 14px;
+    }
+    .career-ops-panel p,
+    .career-ops-panel li {
+      color: var(--ink);
+      font-size: 13px;
+      line-height: 1.65;
+    }
+    .career-ops-panel ul {
+      margin: 0;
+      padding-left: 18px;
+    }
+    .career-ops-empty {
+      background: var(--surface-strong);
+      border: 1px dashed rgba(49,40,27,0.2);
+      border-radius: 16px;
+      color: var(--muted);
+      font-size: 13.5px;
+      line-height: 1.7;
+      padding: 26px;
+      text-align: center;
+    }
+    .career-tailored-pdf {
+      width: 210mm;
+      min-height: 297mm;
+      padding: 16mm 18mm;
+      background: #fff;
+      color: #161a22;
+      font-family: "Noto Sans TC", "Segoe UI", sans-serif;
+      font-size: 10.5pt;
+      line-height: 1.48;
+    }
+    .career-tailored-pdf h1 { margin: 0; font-size: 24pt; line-height: 1.05; }
+    .career-tailored-pdf h2 { margin: 2mm 0 0; font-size: 12pt; color: #214e74; }
+    .career-tailored-pdf h3 {
+      margin: 8mm 0 3mm;
+      padding-bottom: 1.5mm;
+      border-bottom: 0.35mm solid #d7dde5;
+      color: #ad3f2f;
+      font-size: 11pt;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    .career-tailored-pdf .pdf-contact { margin-top: 3mm; color: #5f6675; font-size: 9.5pt; }
+    .career-tailored-pdf .pdf-keywords { display: flex; flex-wrap: wrap; gap: 2mm; margin-top: 3mm; }
+    .career-tailored-pdf .pdf-keywords span { border: 0.25mm solid #d7dde5; border-radius: 99mm; padding: 1mm 2.4mm; font-size: 8.5pt; }
+    .career-tailored-pdf ul { margin: 0; padding-left: 5mm; }
+    .career-tailored-pdf li { margin-bottom: 1.6mm; }
     @media (max-width: 900px) {
       .career-workspace { grid-template-columns: 1fr; }
       .career-panel { border-right: none; border-bottom: 1px solid var(--line); }
-      .career-score-grid, .career-two-col, .career-ats-grid { grid-template-columns: 1fr; }
+      .career-score-grid, .career-two-col, .career-ats-grid, .career-ops-stats, .career-ops-grid { grid-template-columns: 1fr; }
     }
 
     /* ============================================================
@@ -6327,6 +6523,7 @@
               <button class="career-mode-tab" data-mode="position" type="button">推薦適合崗位<br><span style="font-weight:400;font-size:11px;">依你的履歷分析</span></button>
               <button class="career-mode-tab" data-mode="interview" type="button">面試 STAR 準備<br><span style="font-weight:400;font-size:11px;">生成故事庫</span></button>
               <button class="career-mode-tab" data-mode="coverletter" type="button">求職信生成<br><span style="font-weight:400;font-size:11px;">一鍵客製化</span></button>
+              <button class="career-mode-tab" data-mode="ops" type="button">Career Ops<br><span style="font-weight:400;font-size:11px;">批次職缺追蹤</span></button>
             </div>
           </div>
 
@@ -6334,6 +6531,18 @@
           <div id="careerJdSection">
             <div class="career-panel-label">職缺描述 / Job Description</div>
             <textarea id="careerJdInput" class="career-textarea" placeholder="將職缺的完整描述貼在這裡，包含職稱、職責、要求技能、公司介紹等。內容越完整，分析越準確。"></textarea>
+          </div>
+
+          <div id="careerOpsSection" hidden>
+            <div class="career-panel-label">大量職缺匯入</div>
+            <textarea id="careerOpsImportInput" class="career-textarea" placeholder="貼上多筆職缺描述，每筆用 --- 分隔。建議包含公司、職稱、連結、職責與要求技能；只有 URL 的職缺會先進追蹤器，但需要補上描述才能評估。"></textarea>
+            <div class="career-ops-help">支援貼上 JD / URL 清單、匯入後端職缺快照與批次 AI 評估；大量職缺搜集由 worker + source adapters 處理，前端只負責追蹤、排序與客製 PDF。</div>
+            <div class="career-ops-actions">
+              <button id="careerOpsImportBtn" class="career-link-btn" type="button">匯入到追蹤器</button>
+              <button id="careerOpsImportSnapshotBtn" class="career-link-btn" type="button">匯入後端職缺快照</button>
+              <button id="careerOpsRunBatchBtn" class="career-link-btn" type="button">批次評估未評估職缺</button>
+              <button id="careerOpsExportCsvBtn" class="career-link-btn" type="button">匯出追蹤 CSV</button>
+            </div>
           </div>
 
           <!-- CV snapshot preview -->
@@ -6354,7 +6563,7 @@
             <input id="claudeApiKey" class="career-api-input" type="password" placeholder="sk-ant- / sk- / AIza / gsk_..." autocomplete="off" />
             <div class="career-api-note" style="margin-top:8px;">
               支援 Anthropic、OpenAI、Google Gemini、Groq，系統自動識別。<br>
-              API Key 僅存於瀏覽器 localStorage，不會上傳至任何伺服器。
+              API Key 僅存於目前頁籤的 sessionStorage，不會上傳至任何伺服器。
             </div>
           </div>
 
@@ -6997,17 +7206,26 @@
         "生成故事庫": "Generate Story Bank",
         "求職信生成": "Cover Letter",
         "一鍵客製化": "One-click Customization",
+        "Career Ops": "Career Ops",
+        "批次職缺追蹤": "Batch Job Tracking",
         "職缺描述 / Job Description": "Job Description",
         "將職缺的完整描述貼在這裡，包含職稱、職責、要求技能、公司介紹等。內容越完整，分析越準確。": "Paste the full job description here, including title, responsibilities, required skills, and company information. More detail improves the analysis.",
+        "大量職缺匯入": "Bulk Job Import",
+        "貼上多筆職缺描述，每筆用 --- 分隔。建議包含公司、職稱、連結、職責與要求技能；只有 URL 的職缺會先進追蹤器，但需要補上描述才能評估。": "Paste multiple job descriptions separated by ---. Include company, title, link, responsibilities, and skills. URL-only jobs are tracked first and need descriptions before evaluation.",
+        "支援貼上 JD / URL 清單、匯入後端職缺快照與批次 AI 評估；大量職缺搜集由 worker + source adapters 處理，前端只負責追蹤、排序與客製 PDF。": "Supports pasted JDs / URL lists, backend job snapshots, and batch AI evaluation. Large-scale job collection runs through worker source adapters; the frontend handles tracking, ranking, and tailored PDFs.",
+        "匯入到追蹤器": "Import To Tracker",
+        "匯入後端職缺快照": "Import Backend Job Snapshot",
+        "批次評估未評估職缺": "Batch Evaluate Unscored Jobs",
+        "匯出追蹤 CSV": "Export Tracker CSV",
         "你的履歷摘要（自動讀取）": "Your Resume Summary (Auto-loaded)",
         "前往 CV 履歷頁填寫資料後，此處會自動讀取。": "Fill in the CV page and this section will load automatically.",
         "前往 CV 編輯": "Go To CV Editor",
         "求職顧問會直接讀取 CV 履歷頁已填寫的摘要、技能、經歷、教育與專案資料。": "Career Advisor reads the summary, skills, experience, education, and projects already filled in on the CV page.",
         "Claude API Key": "AI API Key",
         "支援 Anthropic、OpenAI、Google Gemini、Groq，系統自動識別。": "Supports Anthropic, OpenAI, Google Gemini, and Groq with automatic detection.",
-        "API Key 僅存於瀏覽器 localStorage，不會上傳至任何伺服器。": "The API key stays in this browser session and is not uploaded to any server.",
+        "API Key 僅存於目前頁籤的 sessionStorage，不會上傳至任何伺服器。": "The API key stays in the current tab's sessionStorage and is not uploaded to any server.",
         "安全模式": "Safe Mode",
-        "API Key 只保留在目前瀏覽器頁籤，不會上傳到 Supabase 或其他雲端資料庫。": "The API key stays only in the current browser tab and is not uploaded to Supabase or any cloud database.",
+        "API Key 只保留在目前瀏覽器頁籤的 sessionStorage，不會上傳到 Supabase 或其他雲端資料庫。": "The API key stays only in the current browser tab's sessionStorage and is not uploaded to Supabase or any cloud database.",
         "分析職位適配度": "Analyze Job Fit",
         "選擇分析模式、填入職缺描述（或直接分析履歷），": "Choose an analysis mode, enter a job description (or analyze the resume directly),",
         "再點擊按鈕開始分析。": "then click the button to start.",
@@ -8545,7 +8763,8 @@
           _pdfPageMode: state.pdfPageMode || "auto",
           _portfolioData: loadPortfolioContentForCloud(),
           _cvVersions: loadSnapshots(),
-          _applicationRecords: loadApplications()
+          _applicationRecords: loadApplications(),
+          _careerOpsJobs: typeof window.cvCareerOpsLoadJobs === "function" ? window.cvCareerOpsLoadJobs() : []
         };
       }
 
@@ -8575,6 +8794,9 @@
         state.resumeLanguage = normalizeResumeLanguage(profileContent._resumeLanguage);
         state.pdfPageMode = normalizePdfPageMode(profileContent._pdfPageMode);
         state.template = normalizeTemplateId(templateId, state.config.defaultTemplate || state.template || "n-tech");
+        if (Array.isArray(profileContent._careerOpsJobs) && typeof window.cvCareerOpsSaveJobs === "function") {
+          window.cvCareerOpsSaveJobs(profileContent._careerOpsJobs, { syncCloud: false });
+        }
 
         if (persist) {
           saveJson(STORAGE_KEY, state.data);
@@ -13909,12 +14131,12 @@
         const CAREER_API_KEY_STORAGE_KEY = "cv-studio-career-api-key-v1";
 
         /* ── helpers ── */
-        function $c(id) { return document.getElementById(id); }
-        function careerEscape(value) {
-          return String(value || "").replace(/[&<>"']/g, (match) => ({
-            "&": "&amp;",
-            "<": "&lt;",
-            ">": "&gt;",
+	        function $c(id) { return document.getElementById(id); }
+	        function careerEscape(value) {
+	          return String(value ?? "").replace(/[&<>"']/g, (match) => ({
+	            "&": "&amp;",
+	            "<": "&lt;",
+	            ">": "&gt;",
             '"': "&quot;",
             "'": "&#39;"
           }[match]));
@@ -14479,22 +14701,1004 @@
               <ul>${careerListItems(r.next_steps)}</ul>
             </div>` : ""}
 
-            ${(tips.platforms || tips.timing || tips.networking) ? `<div class="career-result-section">
-              <h4>🔍 求職實戰建議</h4>
-              ${tips.platforms ? `<p><strong>推薦平台：</strong>${careerText(tips.platforms.join("、"))}</p>` : ""}
-              ${tips.timing    ? `<p><strong>投遞節奏：</strong>${careerText(tips.timing)}</p>` : ""}
-              ${tips.networking? `<p><strong>人脈策略：</strong>${careerText(tips.networking)}</p>` : ""}
-            </div>` : ""}`;
-        }
+	            ${(tips.platforms || tips.timing || tips.networking) ? `<div class="career-result-section">
+	              <h4>🔍 求職實戰建議</h4>
+	              ${tips.platforms ? `<p><strong>推薦平台：</strong>${careerText(tips.platforms.join("、"))}</p>` : ""}
+	              ${tips.timing    ? `<p><strong>投遞節奏：</strong>${careerText(tips.timing)}</p>` : ""}
+	              ${tips.networking? `<p><strong>人脈策略：</strong>${careerText(tips.networking)}</p>` : ""}
+	            </div>` : ""}`;
+	        }
 
-        /* ── init ── */
-        function init() {
-          const MODE_CONFIG = {
-            fit:         { label: "分析職位適配度",     jd: true,  hint: "貼上職缺描述後，點擊「分析職位適配度」" },
-            position:    { label: "分析我適合哪些崗位", jd: false, hint: "點擊按鈕，AI 將根據你的履歷推薦適合崗位" },
-            interview:   { label: "生成 STAR 面試故事", jd: true,  hint: "貼上職缺描述後，點擊按鈕生成面試故事庫" },
-            coverletter: { label: "生成客製化求職信",   jd: true,  hint: "貼上職缺描述後，點擊按鈕一鍵生成求職信" },
-          };
+	        /* ── MODE 5: Career Ops batch pipeline ── */
+	        const CAREER_OPS_STORAGE_KEY = "cv-studio-career-ops-v1";
+	        const CAREER_OPS_STATUSES = ["待評估", "值得投遞", "觀望", "略過", "已投遞", "待追蹤", "面試中", "Offer", "拒絕", "已下架"];
+	        let careerOpsCloudSyncTimer = null;
+	        let careerOpsCloudDisabled = false;
+	        let careerOpsSelectedJobId = "";
+	        let careerOpsReportsLoaded = false;
+	        const careerOpsReports = { sourceStrategy: "", sourceFlex: "", sourceQuality: "", search: "", applicationKit: "", deepResearch: "", deepFit: "", compensation: "", storyBank: "", parallel: "", learning: "", modes: "" };
+
+	        function careerOpsId() {
+	          return `job-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`;
+	        }
+
+	        function careerOpsArray(value) {
+	          return Array.isArray(value) ? value.map(item => String(item || "").trim()).filter(Boolean) : [];
+	        }
+
+	        function careerOpsScore(value) {
+	          const score = Number.parseInt(value, 10);
+	          return Number.isFinite(score) ? Math.max(0, Math.min(100, score)) : "";
+	        }
+
+	        function careerOpsJobKey(job = {}) {
+	          const url = String(job.url || "").trim();
+	          if (url) {
+	            try {
+	              const parsed = new URL(url);
+	              parsed.hash = "";
+	              ["utm_source", "utm_medium", "utm_campaign", "utm_term", "utm_content"].forEach(key => parsed.searchParams.delete(key));
+	              return `url:${parsed.href.toLowerCase()}`;
+	            } catch {}
+	          }
+	          return `text:${[job.company, job.title, job.location].map(item => String(item || "").trim().toLowerCase()).join("|")}`;
+	        }
+
+	        function normalizeCareerOpsJob(job, index = 0) {
+	          const source = job && typeof job === "object" ? job : {};
+	          const evaluation = source.evaluation && typeof source.evaluation === "object" ? source.evaluation : null;
+	          const intelligence = source.intelligence && typeof source.intelligence === "object" ? source.intelligence : null;
+	          const tailored = source.tailored && typeof source.tailored === "object" ? source.tailored : null;
+	          return {
+	            id: String(source.id || `job-${index}`),
+	            jobKey: String(source.jobKey || source.job_key || "").trim(),
+	            title: String(source.title || "").trim().slice(0, 180) || "未命名職缺",
+	            company: String(source.company || "").trim().slice(0, 160),
+	            url: String(source.url || "").trim().slice(0, 600),
+	            location: String(source.location || "").trim().slice(0, 120),
+	            description: String(source.description || "").trim().slice(0, 24000),
+	            source: String(source.source || "").trim().slice(0, 120),
+	            sourceType: String(source.sourceType || source.source_type || "").trim().slice(0, 80),
+	            sourceMarket: String(source.sourceMarket || source.source_market || source.market || "").trim().slice(0, 40),
+	            sourceIndustry: String(source.sourceIndustry || source.source_industry || source.industry || "").trim().slice(0, 80),
+	            sourceStrategy: String(source.sourceStrategy || source.source_strategy || "").trim().slice(0, 80),
+	            sourceTags: careerOpsArray(source.sourceTags || source.source_tags || source.tags).slice(0, 16),
+	            status: CAREER_OPS_STATUSES.includes(source.status) ? source.status : "待評估",
+	            score: careerOpsScore(source.score),
+	            grade: String(source.grade || "").trim().slice(0, 4),
+	            recommendation: String(source.recommendation || "").trim().slice(0, 80),
+	            notes: String(source.notes || "").trim().slice(0, 2000),
+	            contactName: String(source.contactName || source.contact_name || "").trim().slice(0, 120),
+	            contactEmail: String(source.contactEmail || source.contact_email || "").trim().slice(0, 180),
+	            nextFollowUpAt: String(source.nextFollowUpAt || source.next_follow_up_at || "").trim().slice(0, 40),
+	            feedback: ["喜歡", "不喜歡", "中立"].includes(source.feedback) ? source.feedback : "中立",
+	            evaluation,
+	            intelligence,
+	            tailored,
+	            error: String(source.error || "").trim().slice(0, 600),
+	            firstSeenAt: String(source.firstSeenAt || source.first_seen_at || "").trim(),
+	            lastSeenAt: String(source.lastSeenAt || source.last_seen_at || "").trim(),
+	            isNew: Boolean(source.isNew || source.is_new),
+	            isExpired: Boolean(source.isExpired || source.is_expired),
+	            expiredAt: String(source.expiredAt || source.expired_at || "").trim(),
+	            createdAt: String(source.createdAt || new Date().toISOString()),
+	            updatedAt: String(source.updatedAt || source.createdAt || new Date().toISOString()),
+	            evaluatedAt: String(source.evaluatedAt || "")
+	          };
+	        }
+
+	        function loadCareerOpsJobs() {
+	          try {
+	            const raw = localStorage.getItem(CAREER_OPS_STORAGE_KEY);
+	            const parsed = raw ? JSON.parse(raw) : [];
+	            return (Array.isArray(parsed) ? parsed : []).slice(0, 200).map(normalizeCareerOpsJob);
+	          } catch {
+	            return [];
+	          }
+	        }
+
+	        function saveCareerOpsJobs(jobs, options = {}) {
+	          const normalized = jobs.map((job, index) => {
+	            const next = normalizeCareerOpsJob(job, index);
+	            next.jobKey = next.jobKey || careerOpsJobKey(next);
+	            return next;
+	          });
+	          localStorage.setItem(CAREER_OPS_STORAGE_KEY, JSON.stringify(normalized));
+	          if (options.syncCloud !== false) scheduleCareerOpsCloudSync(normalized);
+	        }
+	        window.cvCareerOpsLoadJobs = loadCareerOpsJobs;
+	        window.cvCareerOpsSaveJobs = saveCareerOpsJobs;
+	        window.cvCareerOpsRenderDashboard = renderCareerOpsDashboard;
+
+	        function careerOpsSupabaseReady() {
+	          return Boolean(window.cvStudioState?.user?.id && window.cvStudioState?.client && !careerOpsCloudDisabled);
+	        }
+
+	        function careerOpsToCloudRow(job) {
+	          const normalized = normalizeCareerOpsJob(job);
+	          const metadata = {
+	            error: normalized.error,
+	            createdAt: normalized.createdAt,
+	            updatedAt: normalized.updatedAt,
+	            expiredAt: normalized.expiredAt,
+	            sourceMarket: normalized.sourceMarket,
+	            sourceIndustry: normalized.sourceIndustry,
+	            sourceStrategy: normalized.sourceStrategy,
+	            sourceTags: normalized.sourceTags
+	          };
+	          return {
+	            user_id: window.cvStudioState.user.id,
+	            job_key: normalized.jobKey || careerOpsJobKey(normalized),
+	            title: normalized.title,
+	            company: normalized.company,
+	            url: normalized.url,
+	            location: normalized.location,
+	            description: normalized.description,
+	            source: normalized.source,
+	            source_type: normalized.sourceType,
+	            status: normalized.status,
+	            score: normalized.score === "" ? null : Number(normalized.score),
+	            grade: normalized.grade,
+	            recommendation: normalized.recommendation,
+	            notes: normalized.notes,
+	            contact_name: normalized.contactName,
+	            contact_email: normalized.contactEmail,
+	            next_follow_up_at: normalized.nextFollowUpAt || null,
+	            feedback: normalized.feedback,
+	            evaluation: normalized.evaluation,
+	            tailored: normalized.tailored,
+	            metadata,
+	            first_seen_at: normalized.firstSeenAt || null,
+	            last_seen_at: normalized.lastSeenAt || null,
+	            is_new: normalized.isNew,
+	            is_expired: normalized.isExpired,
+	            evaluated_at: normalized.evaluatedAt || null
+	          };
+	        }
+
+	        function careerOpsFromCloudRow(row, index = 0) {
+	          const metadata = row?.metadata && typeof row.metadata === "object" ? row.metadata : {};
+	          return normalizeCareerOpsJob({
+	            id: row.id || metadata.id || careerOpsId(),
+	            jobKey: row.job_key,
+	            title: row.title,
+	            company: row.company,
+	            url: row.url,
+	            location: row.location,
+	            description: row.description,
+	            source: row.source,
+	            sourceType: row.source_type,
+	            sourceMarket: metadata.sourceMarket,
+	            sourceIndustry: metadata.sourceIndustry,
+	            sourceStrategy: metadata.sourceStrategy,
+	            sourceTags: metadata.sourceTags,
+	            status: row.status,
+	            score: row.score,
+	            grade: row.grade,
+	            recommendation: row.recommendation,
+	            notes: row.notes,
+	            contactName: row.contact_name,
+	            contactEmail: row.contact_email,
+	            nextFollowUpAt: row.next_follow_up_at,
+	            feedback: row.feedback,
+	            evaluation: row.evaluation,
+	            tailored: row.tailored,
+	            error: metadata.error,
+	            firstSeenAt: row.first_seen_at,
+	            lastSeenAt: row.last_seen_at,
+	            isNew: row.is_new,
+	            isExpired: row.is_expired,
+	            expiredAt: metadata.expiredAt,
+	            createdAt: row.created_at || metadata.createdAt,
+	            updatedAt: row.updated_at || metadata.updatedAt,
+	            evaluatedAt: row.evaluated_at
+	          }, index);
+	        }
+
+	        async function syncCareerOpsJobsToCloud(jobs = loadCareerOpsJobs()) {
+	          if (!careerOpsSupabaseReady()) return false;
+	          const rows = jobs.map(careerOpsToCloudRow);
+	          if (!rows.length) return true;
+	          const { error } = await window.cvStudioState.client
+	            .from("cv_career_ops_jobs")
+	            .upsert(rows, { onConflict: "user_id,job_key" });
+	          if (error) {
+	            careerOpsCloudDisabled = /relation .*cv_career_ops_jobs|does not exist/i.test(error.message || "");
+	            if (!careerOpsCloudDisabled) console.warn("[career-ops] cloud sync failed:", error.message);
+	            return false;
+	          }
+	          return true;
+	        }
+
+	        function scheduleCareerOpsCloudSync(jobs = loadCareerOpsJobs()) {
+	          if (!careerOpsSupabaseReady()) return;
+	          window.clearTimeout(careerOpsCloudSyncTimer);
+	          careerOpsCloudSyncTimer = window.setTimeout(() => {
+	            syncCareerOpsJobsToCloud(jobs);
+	          }, 500);
+	        }
+
+	        async function loadCareerOpsJobsFromCloud() {
+	          if (!careerOpsSupabaseReady()) return false;
+	          const { data, error } = await window.cvStudioState.client
+	            .from("cv_career_ops_jobs")
+	            .select("*")
+	            .eq("user_id", window.cvStudioState.user.id)
+	            .order("updated_at", { ascending: false });
+	          if (error) {
+	            careerOpsCloudDisabled = /relation .*cv_career_ops_jobs|does not exist/i.test(error.message || "");
+	            if (!careerOpsCloudDisabled) console.warn("[career-ops] cloud load failed:", error.message);
+	            return false;
+	          }
+	          const cloudJobs = (Array.isArray(data) ? data : []).map(careerOpsFromCloudRow);
+	          if (!cloudJobs.length) {
+	            await syncCareerOpsJobsToCloud();
+	            return true;
+	          }
+	          const merged = [...cloudJobs, ...loadCareerOpsJobs()];
+	          const byKey = new Map();
+	          for (const job of merged) {
+	            const normalized = normalizeCareerOpsJob(job);
+	            normalized.jobKey = normalized.jobKey || careerOpsJobKey(normalized);
+	            const prev = byKey.get(normalized.jobKey);
+	            if (!prev || String(normalized.updatedAt || "").localeCompare(String(prev.updatedAt || "")) > 0) {
+	              byKey.set(normalized.jobKey, normalized);
+	            }
+	          }
+	          saveCareerOpsJobs(Array.from(byKey.values()), { syncCloud: false });
+	          return true;
+	        }
+
+	        async function deleteCareerOpsJobFromCloud(job) {
+	          if (!careerOpsSupabaseReady() || !job) return;
+	          const key = job.jobKey || careerOpsJobKey(job);
+	          await window.cvStudioState.client
+	            .from("cv_career_ops_jobs")
+	            .delete()
+	            .eq("user_id", window.cvStudioState.user.id)
+	            .eq("job_key", key);
+	        }
+
+	        function splitCareerOpsInput(text) {
+	          const raw = String(text || "").trim();
+	          if (!raw) return [];
+	          const separatorChunks = raw.split(/\n\s*-{3,}\s*\n/g).map(chunk => chunk.trim()).filter(Boolean);
+	          if (separatorChunks.length > 1) return separatorChunks;
+	          const urlLines = raw.split(/\n+/).map(line => line.trim()).filter(line => /^https?:\/\//i.test(line));
+	          return urlLines.length > 1 ? urlLines : [raw];
+	        }
+
+	        function inferCareerOpsField(lines, patterns) {
+	          for (const line of lines) {
+	            for (const pattern of patterns) {
+	              const match = line.match(pattern);
+	              if (match?.[1]) return match[1].trim();
+	            }
+	          }
+	          return "";
+	        }
+
+	        function parseCareerOpsChunk(chunk, index) {
+	          const lines = String(chunk || "").split(/\n+/).map(line => line.trim()).filter(Boolean);
+	          const url = (chunk.match(/https?:\/\/[^\s<>"']+/i) || [""])[0].replace(/[),.，。]+$/, "");
+	          const company = inferCareerOpsField(lines, [/^(?:公司|Company|Organization|單位)\s*[:：]\s*(.+)$/i, /^(.+?)\s*(?:徵才|招聘|招募)$/]);
+	          const explicitTitle = inferCareerOpsField(lines, [/^(?:職稱|職缺|Title|Role|Position)\s*[:：]\s*(.+)$/i]);
+	          const firstUsefulLine = lines.find(line =>
+	            !/^https?:\/\//i.test(line) &&
+	            !/^(?:公司|Company|Organization|單位|職稱|職缺|Title|Role|Position|連結|URL)\s*[:：]/i.test(line) &&
+	            line.length <= 90
+	          );
+	          const title = explicitTitle || firstUsefulLine || (url ? `URL 職缺 ${index + 1}` : `匯入職缺 ${index + 1}`);
+	          return normalizeCareerOpsJob({
+	            id: careerOpsId(),
+	            title,
+	            company,
+	            url,
+	            description: chunk.trim(),
+	            status: "待評估",
+	            createdAt: new Date().toISOString(),
+	            updatedAt: new Date().toISOString()
+	          }, index);
+	        }
+
+	        function addCareerOpsJobs(incoming, messagePrefix = "已匯入") {
+	          const normalizedIncoming = (Array.isArray(incoming) ? incoming : []).map((job, index) => normalizeCareerOpsJob({
+	            id: job.id || careerOpsId(),
+	            title: job.title,
+	            company: job.company,
+	            url: job.url,
+	            location: job.location,
+	            source: job.source,
+	            sourceType: job.sourceType,
+	            sourceMarket: job.sourceMarket,
+	            sourceIndustry: job.sourceIndustry,
+	            sourceStrategy: job.sourceStrategy,
+	            sourceTags: job.sourceTags,
+	            jobKey: job.jobKey,
+	            description: [
+	              job.description,
+	              job.employmentType ? `工作型態：${job.employmentType}` : "",
+	              job.datePosted ? `發布日期：${job.datePosted}` : "",
+	              job.validThrough ? `截止日期：${job.validThrough}` : "",
+	              job.isNew ? "快照狀態：新職缺" : "",
+	              job.isExpired ? "快照狀態：已下架" : ""
+	            ].filter(Boolean).join("\n\n"),
+	            status: job.status || (job.isExpired ? "已下架" : "待評估"),
+	            score: job.score,
+	            grade: job.grade,
+	            recommendation: job.recommendation,
+	            evaluation: job.evaluation,
+	            intelligence: job.intelligence,
+	            firstSeenAt: job.firstSeenAt,
+	            lastSeenAt: job.lastSeenAt,
+	            isNew: job.isNew,
+	            isExpired: job.isExpired,
+	            expiredAt: job.expiredAt,
+	            createdAt: job.createdAt || new Date().toISOString(),
+	            updatedAt: new Date().toISOString()
+	          }, index));
+	          if (!normalizedIncoming.length) return 0;
+	          const jobs = loadCareerOpsJobs();
+	          const existingKeys = new Set(jobs.map(job => job.jobKey || careerOpsJobKey(job)));
+	          const additions = normalizedIncoming.filter(job => {
+	            const key = job.jobKey || careerOpsJobKey(job);
+	            if (existingKeys.has(key)) return false;
+	            existingKeys.add(key);
+	            return true;
+	          });
+	          if (!additions.length) return 0;
+	          const next = [...additions, ...jobs].slice(0, 200);
+	          saveCareerOpsJobs(next);
+	          careerOpsSelectedJobId = additions[0].id;
+	          renderCareerOpsDashboard(`${messagePrefix} ${additions.length} 筆職缺。`);
+	          return additions.length;
+	        }
+
+	        function importCareerOpsJobs() {
+	          const input = $c("careerOpsImportInput");
+	          const incoming = splitCareerOpsInput(input?.value || "").map(parseCareerOpsChunk);
+	          if (!incoming.length) {
+	            showError("請先貼上至少一筆職缺描述或 URL。");
+	            return;
+	          }
+	          const added = addCareerOpsJobs(incoming, "已匯入");
+	          if (!added) {
+	            showError("這批職缺看起來都已經在追蹤器裡了。");
+	            return;
+	          }
+	          if (input) input.value = "";
+	        }
+
+	        function importCareerOpsSnapshot() {
+	          const snapshot = window.CV_CAREER_OPS_JOBS || {};
+	          const jobs = Array.isArray(snapshot.jobs) ? snapshot.jobs : [];
+	          if (!jobs.length) {
+	            showError("目前沒有後端職缺快照。請先執行 npm run career-ops:scrape 產生 data/app/career-ops-jobs.js。");
+	            return;
+	          }
+	          const added = addCareerOpsJobs(jobs, "已從後端快照匯入");
+	          if (!added) {
+	            showError("後端快照中的職缺都已經在追蹤器裡了。");
+	          }
+	        }
+
+	        function careerOpsStatusOptions(current) {
+	          return CAREER_OPS_STATUSES.map(status =>
+	            `<option value="${careerText(status)}"${status === current ? " selected" : ""}>${careerText(status)}</option>`
+	          ).join("");
+	        }
+
+	        function careerOpsJobSort(a, b) {
+	          const aScore = a.score === "" ? -1 : Number(a.score);
+	          const bScore = b.score === "" ? -1 : Number(b.score);
+	          if (bScore !== aScore) return bScore - aScore;
+	          return String(b.updatedAt || "").localeCompare(String(a.updatedAt || ""));
+	        }
+
+	        function careerOpsStats(jobs) {
+	          const evaluated = jobs.filter(job => job.score !== "");
+	          const average = evaluated.length
+	            ? Math.round(evaluated.reduce((sum, job) => sum + Number(job.score || 0), 0) / evaluated.length)
+	            : "—";
+	          const best = evaluated.slice().sort(careerOpsJobSort)[0];
+	          const newJobs = jobs.filter(job => job.isNew && !job.isExpired).length;
+	          const expired = jobs.filter(job => job.isExpired || job.status === "已下架").length;
+	          return { total: jobs.length, evaluated: evaluated.length, average, best: best?.score ?? "—", newJobs, expired };
+	        }
+
+	        async function loadCareerOpsReports() {
+	          if (careerOpsReportsLoaded) return;
+	          careerOpsReportsLoaded = true;
+	          const entries = [
+	            ["sourceStrategy", "./data/app/career-ops-source-strategy-report.md"],
+	            ["sourceFlex", "./data/app/career-ops-source-flex-report.md"],
+	            ["sourceQuality", "./data/app/career-ops-source-quality-report.md"],
+	            ["search", "./data/app/career-ops-search-report.md"],
+	            ["applicationKit", "./data/app/career-ops-application-kit.md"],
+	            ["deepResearch", "./data/app/career-ops-deep-research.md"],
+	            ["deepFit", "./data/app/career-ops-deep-fit.md"],
+	            ["compensation", "./data/app/career-ops-compensation.md"],
+	            ["storyBank", "./data/app/career-ops-story-bank.md"],
+	            ["parallel", "./data/app/career-ops-parallel-report.md"],
+	            ["learning", "./data/app/career-ops-learning-report.md"],
+	            ["modes", "./data/app/career-ops-modes-report.md"]
+	          ];
+	          await Promise.all(entries.map(async ([key, url]) => {
+	            try {
+	              const response = await fetch(url, { cache: "no-store" });
+	              if (response.ok) careerOpsReports[key] = await response.text();
+	            } catch {}
+	          }));
+	          renderCareerOpsDashboard();
+	        }
+
+	        function careerOpsReportSummary(markdown, fallback = "") {
+	          const text = String(markdown || "").trim();
+	          if (!text) return fallback;
+	          return text
+	            .split("\n")
+	            .map(line => line.trim())
+	            .filter(line => /^-\s+/.test(line))
+	            .slice(0, 4)
+	            .map(line => line.replace(/^-\s+/, ""))
+	            .join("；");
+	        }
+
+	        function careerOpsSearchStrategy(jobs) {
+	          const snapshotInsights = window.CV_CAREER_OPS_JOBS?.marketInsights || null;
+	          const applicationKit = window.CV_CAREER_OPS_APPLICATION_KIT || {};
+	          const playbooks = careerOpsArray(applicationKit.playbooks?.map?.(item => `${item.priority} ${item.company} ${item.title}`)).slice(0, 5);
+	          const sourceReport = careerOpsReportSummary(careerOpsReports.sourceStrategy);
+	          const sourceFlexReport = careerOpsReportSummary(careerOpsReports.sourceFlex);
+	          const sourceQualityReport = careerOpsReportSummary(careerOpsReports.sourceQuality);
+	          const searchReport = careerOpsReportSummary(careerOpsReports.search);
+	          const kitReport = careerOpsReportSummary(careerOpsReports.applicationKit);
+	          const deepReport = careerOpsReportSummary(careerOpsReports.deepResearch);
+	          const deepFitReport = careerOpsReportSummary(careerOpsReports.deepFit);
+	          const compReport = careerOpsReportSummary(careerOpsReports.compensation);
+	          const storyReport = careerOpsReportSummary(careerOpsReports.storyBank);
+	          const parallelReport = careerOpsReportSummary(careerOpsReports.parallel);
+	          const learningReport = careerOpsReportSummary(careerOpsReports.learning);
+	          const modesReport = careerOpsReportSummary(careerOpsReports.modes);
+	          const deepResearch = window.CV_CAREER_OPS_DEEP_RESEARCH || {};
+	          const deepFit = window.CV_CAREER_OPS_DEEP_FIT || {};
+	          const compensation = window.CV_CAREER_OPS_COMPENSATION || {};
+	          const storyBank = window.CV_CAREER_OPS_STORY_BANK || {};
+	          const parallel = window.CV_CAREER_OPS_PARALLEL || {};
+	          const learning = window.CV_CAREER_OPS_LEARNING || {};
+	          const modes = window.CV_CAREER_OPS_MODES || {};
+	          const dossiers = careerOpsArray(deepResearch.dossiers?.map?.(item => `${item.company} ${item.signals?.slice?.(0, 2)?.join?.("/") || ""}`)).slice(0, 5);
+	          const fitDossiers = careerOpsArray(deepFit.dossiers?.map?.(item => `${item.company} ${item.confidence || ""} ${item.decision || ""}`)).slice(0, 5);
+	          const compPlans = careerOpsArray(compensation.plans?.map?.(item => `${item.company} ${item.leverage || ""}`)).slice(0, 5);
+	          const storyThemes = careerOpsArray(storyBank.storyBank?.stories?.map?.(item => item.theme)).slice(0, 5);
+	          const learnedSkills = careerOpsArray(learning.learning?.preferredSkills?.map?.(item => item.name)).slice(0, 6);
+	          const modeCommands = careerOpsArray(modes.commands?.map?.(item => item.command)).slice(0, 6);
+	          if (snapshotInsights && typeof snapshotInsights === "object") {
+	            const topSkills = careerOpsArray(snapshotInsights.topSkills?.map?.(item => item.name) || snapshotInsights.topSkills).slice(0, 8);
+	            const missing = careerOpsArray(snapshotInsights.missingHighDemand?.map?.(item => item.name) || snapshotInsights.missingHighDemand).slice(0, 6);
+	            const queries = careerOpsArray(snapshotInsights.searchQueries).slice(0, 10);
+	            const rubric = snapshotInsights.rubric?.name || "";
+	            return `
+	              <div class="career-ops-panel">
+	                <h4>海量職缺 Intelligence</h4>
+	                <p>${careerText(`已分析 ${snapshotInsights.activeJobCount || jobs.length} 筆 active 職缺；重複群組 ${snapshotInsights.integrity?.duplicateGroupCount || 0} 組；描述不足 ${snapshotInsights.integrity?.jobsWithoutDescription || 0} 筆。`)}</p>
+	                ${rubric ? `<p>${careerText(`評分 Rubric：${rubric}`)}</p>` : ""}
+	                ${sourceReport ? `<p>${careerText(`Source strategy：${sourceReport}`)}</p>` : ""}
+	                ${sourceFlexReport ? `<p>${careerText(`來源彈性：${sourceFlexReport}`)}</p>` : ""}
+	                ${sourceQualityReport ? `<p>${careerText(`來源品質：${sourceQualityReport}`)}</p>` : ""}
+	                ${searchReport ? `<p>${careerText(`Search adapter：${searchReport}`)}</p>` : ""}
+	                ${dossiers.length ? `<p>${careerText(`深度研究：${dossiers.join("、")}`)}</p>` : deepReport ? `<p>${careerText(`深度研究：${deepReport}`)}</p>` : ""}
+	                ${fitDossiers.length ? `<p>${careerText(`單職缺 deep fit：${fitDossiers.join("、")}`)}</p>` : deepFitReport ? `<p>${careerText(`單職缺 deep fit：${deepFitReport}`)}</p>` : ""}
+	                ${parallel.results?.length ? `<p>${careerText(`平行 worker：concurrency ${parallel.concurrency || "?"}，已處理 ${parallel.results.length} 筆。`)}</p>` : parallelReport ? `<p>${careerText(`平行 worker：${parallelReport}`)}</p>` : ""}
+	                ${compPlans.length ? `<p>${careerText(`薪資 / 談薪：${compPlans.join("、")}`)}</p>` : compReport ? `<p>${careerText(`薪資 / 談薪：${compReport}`)}</p>` : ""}
+	                ${storyThemes.length ? `<p>${careerText(`STAR story bank：${storyThemes.join("、")}`)}</p>` : storyReport ? `<p>${careerText(`STAR story bank：${storyReport}`)}</p>` : ""}
+	                ${learnedSkills.length ? `<p>${careerText(`偏好學習：${learnedSkills.join("、")}`)}</p>` : learningReport ? `<p>${careerText(`偏好學習：${learningReport}`)}</p>` : ""}
+	                ${modeCommands.length ? `<p>${careerText(`Ops 指令層：${modeCommands.join("、")}`)}</p>` : modesReport ? `<p>${careerText(`Ops 指令層：${modesReport}`)}</p>` : ""}
+	                ${topSkills.length ? `<p>${careerText(`市場高頻技能：${topSkills.join("、")}`)}</p>` : ""}
+	                ${missing.length ? `<p>${careerText(`可補強高需求技能：${missing.join("、")}`)}</p>` : ""}
+	                ${queries.length ? `<p>${careerText(`擴張搜尋關鍵字：${queries.join("、")}`)}</p>` : ""}
+	                ${playbooks.length ? `<p>${careerText(`投遞 playbook：${playbooks.join("、")}`)}</p>` : kitReport ? `<p>${careerText(`投遞套件：${kitReport}`)}</p>` : ""}
+	              </div>`;
+	          }
+	          const cv = window.cvStudioState?.data || {};
+	          const skills = String(cv.skills || "")
+	            .split(/\n|,|、|;/)
+	            .map(item => item.trim())
+	            .filter(Boolean)
+	            .slice(0, 8);
+	          const positive = jobs.filter(job => job.feedback === "喜歡" || Number(job.score || 0) >= 78);
+	          const titles = Array.from(new Set([
+	            cv.role,
+	            ...positive.map(job => job.title)
+	          ].map(item => String(item || "").trim()).filter(Boolean))).slice(0, 5);
+	          const companies = Array.from(new Set(positive.map(job => job.company).filter(Boolean))).slice(0, 5);
+	          const terms = Array.from(new Set([...titles, ...skills].filter(Boolean))).slice(0, 10);
+	          return `
+	            <div class="career-ops-panel">
+	              <h4>個人化搜尋策略</h4>
+	              <p>${careerText(terms.length ? `建議用這些關鍵字擴張來源：${terms.join("、")}` : "填寫 CV 的職稱與技能後，這裡會產生搜尋關鍵字。")}</p>
+	              ${companies.length ? `<p>${careerText(`優先追蹤相似公司：${companies.join("、")}`)}</p>` : ""}
+	              <ul>
+	                ${modeCommands.length ? `<li>已載入 Ops 指令層：${careerText(modeCommands.join("、"))}。</li>` : ""}
+	                <li>優先新增 Greenhouse / Lever / Ashby / Workable / SmartRecruiters / BambooHR source adapter。</li>
+	                <li>一般公司 careers 頁用 <code>type: "company"</code>，讓 worker 展開職缺連結。</li>
+	                <li>對喜歡 / 不喜歡的職缺按回饋，後續批次排序會保留偏好訊號。</li>
+	              </ul>
+	            </div>`;
+	        }
+
+	        function renderCareerOpsDashboard(message = "") {
+	          if (!careerOpsReportsLoaded) loadCareerOpsReports();
+	          const jobs = loadCareerOpsJobs().sort(careerOpsJobSort);
+	          if (!jobs.length) {
+	            $c("careerResultsArea").innerHTML = `
+	              <div class="career-ops-empty">
+	                <strong>尚未匯入職缺。</strong><br>
+	                在左側貼上多筆 JD，或貼上職缺 URL 清單；每筆用 --- 分隔。匯入後可以批次評估、排序、追蹤與產生客製 PDF。
+	              </div>`;
+	            return;
+	          }
+	          if (!jobs.some(job => job.id === careerOpsSelectedJobId)) {
+	            careerOpsSelectedJobId = jobs[0].id;
+	          }
+	          const selected = jobs.find(job => job.id === careerOpsSelectedJobId) || jobs[0];
+	          const stats = careerOpsStats(jobs);
+	          const rows = jobs.map(job => {
+	            const active = job.id === selected.id ? " active" : "";
+	            return `
+	              <button class="career-ops-row${active}" type="button" data-career-ops-select="${careerText(job.id)}">
+	                <div class="career-ops-row-head">
+	                  <div>
+	                    <div class="career-ops-row-title">${careerText(job.title)}</div>
+	                    <div class="career-ops-row-meta">${careerText([job.company, job.location, job.status].filter(Boolean).join(" · ") || "未填公司")}</div>
+	                  </div>
+	                  <div class="career-ops-score">${job.score === "" ? "—" : careerText(job.score)}<small>${careerText(job.grade || "未評估")}</small></div>
+	                </div>
+	              </button>`;
+	          }).join("");
+
+	          const ev = selected.evaluation || {};
+	          const intel = selected.intelligence || {};
+	          const overall = ev.overall || {};
+	          const ats = ev.ats_keywords || {};
+	          const risks = careerOpsArray(ev.risks);
+	          const actions = careerOpsArray(ev.next_actions);
+	          const dimensions = careerOpsArray(ev.decision_factors);
+	          const detailBlocks = selected.score === "" ? `
+	            <div class="career-ops-panel">
+	              <h4>待評估內容</h4>
+	              <p>${careerText(selected.description.slice(0, 900) || "此職缺目前只有 URL 或標題。請在左側補上 JD 文字後重新匯入，或刪除後再匯入完整職缺。")}</p>
+	            </div>` : `
+	            <div class="career-ops-panel">
+	              <h4>適配摘要</h4>
+	              <p>${careerText(overall.summary || ev.fit_summary || selected.recommendation || "已完成評估。")}</p>
+	            </div>
+	            ${dimensions.length ? `<div class="career-ops-panel"><h4>決策因子</h4><ul>${careerListItems(dimensions)}</ul></div>` : ""}
+	            ${(ats.found?.length || ats.missing?.length) ? `
+	              <div class="career-ats-grid">
+	                <div class="career-ats-col career-ats-found"><h5>已覆蓋</h5><div class="career-ats-tags">${careerTagItems(ats.found, "career-tag-green")}</div></div>
+	                <div class="career-ats-col career-ats-missing"><h5>缺少</h5><div class="career-ats-tags">${careerTagItems(ats.missing, "career-tag-red")}</div></div>
+	              </div>` : ""}
+	            ${risks.length ? `<div class="career-ops-panel"><h4>風險與缺口</h4><ul>${careerListItems(risks)}</ul></div>` : ""}
+	            ${actions.length ? `<div class="career-ops-panel"><h4>下一步</h4><ul>${careerListItems(actions)}</ul></div>` : ""}`;
+
+	          $c("careerResultsArea").innerHTML = `
+	            ${message ? `<div class="career-result-section"><p>${careerText(message)}</p></div>` : ""}
+	            <div class="career-ops-stats">
+	              <div class="career-ops-stat"><span>職缺總數</span><strong>${careerText(stats.total)}</strong></div>
+	              <div class="career-ops-stat"><span>已評估</span><strong>${careerText(stats.evaluated)}</strong></div>
+	              <div class="career-ops-stat"><span>平均分數</span><strong>${careerText(stats.average)}</strong></div>
+	              <div class="career-ops-stat"><span>新 / 下架</span><strong>${careerText(`${stats.newJobs} / ${stats.expired}`)}</strong></div>
+	            </div>
+	            ${careerOpsSearchStrategy(jobs)}
+	            <div class="career-ops-grid">
+	              <div class="career-ops-list">${rows}</div>
+	              <div class="career-ops-detail">
+	                <div class="career-ops-panel">
+	                  <div class="career-ops-detail-head">
+	                    <div>
+	                      <div class="career-ops-detail-title">${careerText(selected.title)}</div>
+	                      <div class="career-ops-detail-meta">${careerText([selected.company, selected.location].filter(Boolean).join(" · ") || "未填公司")}</div>
+	                      ${selected.url ? `<div class="career-ops-detail-meta"><a href="${careerText(selected.url)}" target="_blank" rel="noreferrer noopener">開啟職缺連結</a></div>` : ""}
+	                    </div>
+	                    <div class="career-ops-score">${selected.score === "" ? "—" : careerText(selected.score)}<small>${careerText(selected.grade || "未評估")}</small></div>
+	                  </div>
+	                  <div class="career-ops-status-row">
+	                    <select class="career-ops-status" data-career-ops-status="${careerText(selected.id)}">${careerOpsStatusOptions(selected.status)}</select>
+	                    <span class="career-prob-badge ${Number(selected.score || 0) >= 80 ? "career-prob-high" : Number(selected.score || 0) >= 60 ? "career-prob-mid" : "career-prob-low"}">${careerText(selected.recommendation || selected.status)}</span>
+	                    ${selected.isNew ? `<span class="career-prob-badge career-prob-high">新職缺</span>` : ""}
+	                    ${selected.isExpired ? `<span class="career-prob-badge career-prob-low">已下架</span>` : ""}
+	                    ${intel.features?.roleFamily ? `<span class="career-prob-badge">${careerText(intel.features.roleFamily)}</span>` : ""}
+	                    ${selected.sourceMarket ? `<span class="career-prob-badge">${careerText(selected.sourceMarket.toUpperCase())}</span>` : ""}
+	                    ${selected.sourceStrategy ? `<span class="career-prob-badge">${careerText(selected.sourceStrategy)}</span>` : ""}
+	                  </div>
+	                  <div class="career-ops-action-row">
+	                    <button class="career-ops-mini-btn soft" type="button" data-career-ops-action="evaluate" data-id="${careerText(selected.id)}">評估此職缺</button>
+	                    <button class="career-ops-mini-btn secondary" type="button" data-career-ops-action="tailor" data-id="${careerText(selected.id)}">${selected.tailored ? "下載客製 PDF" : "產生客製 PDF"}</button>
+	                    <button class="career-ops-mini-btn soft" type="button" data-career-ops-action="deep-research" data-id="${careerText(selected.id)}">AI 深度研究</button>
+	                    <button class="career-ops-mini-btn ghost" type="button" data-career-ops-action="fill" data-id="${careerText(selected.id)}">放入單次分析</button>
+	                    <button class="career-ops-mini-btn ghost" type="button" data-career-ops-action="feedback-like" data-id="${careerText(selected.id)}">喜歡</button>
+	                    <button class="career-ops-mini-btn ghost" type="button" data-career-ops-action="feedback-dislike" data-id="${careerText(selected.id)}">不喜歡</button>
+	                    <button class="career-ops-mini-btn ghost" type="button" data-career-ops-action="delete" data-id="${careerText(selected.id)}" style="color:var(--danger);">刪除</button>
+	                  </div>
+	                  <div class="career-ops-panel" style="margin-top:12px;">
+	                    <h4>投遞 CRM</h4>
+	                    <div class="career-ops-status-row">
+	                      <input data-career-ops-field="contactName" data-id="${careerText(selected.id)}" value="${careerText(selected.contactName)}" placeholder="聯絡人 / Recruiter" />
+	                      <input data-career-ops-field="contactEmail" data-id="${careerText(selected.id)}" value="${careerText(selected.contactEmail)}" placeholder="Email" />
+	                      <input data-career-ops-field="nextFollowUpAt" data-id="${careerText(selected.id)}" value="${careerText(selected.nextFollowUpAt)}" type="date" />
+	                    </div>
+	                    <textarea data-career-ops-field="notes" data-id="${careerText(selected.id)}" class="career-textarea" style="min-height:90px;" placeholder="投遞筆記、面試紀錄、follow-up 內容">${careerText(selected.notes)}</textarea>
+	                    <p>回饋校準：${careerText(selected.feedback)}${selected.firstSeenAt ? ` · 首次看到：${careerText(selected.firstSeenAt.slice(0, 10))}` : ""}${selected.lastSeenAt ? ` · 最近看到：${careerText(selected.lastSeenAt.slice(0, 10))}` : ""}</p>
+	                  </div>
+	                  ${selected.error ? `<p style="color:var(--danger);margin-top:10px;">${careerText(selected.error)}</p>` : ""}
+	                </div>
+	                ${detailBlocks}
+	              </div>
+	            </div>`;
+	        }
+
+	        function getCareerOpsJob(id) {
+	          return loadCareerOpsJobs().find(job => job.id === id);
+	        }
+
+	        function saveCareerOpsJob(nextJob) {
+	          const jobs = loadCareerOpsJobs();
+	          const index = jobs.findIndex(job => job.id === nextJob.id);
+	          if (index >= 0) jobs[index] = normalizeCareerOpsJob({ ...nextJob, updatedAt: new Date().toISOString() });
+	          saveCareerOpsJobs(jobs);
+	        }
+
+	        async function evaluateCareerOpsJob(id, options = {}) {
+	          const job = getCareerOpsJob(id);
+	          if (!job) return null;
+	          const cv = getCvSummary();
+	          if (!cv) {
+	            showError("請先至「CV 履歷」頁填寫你的履歷資料。");
+	            return null;
+	          }
+	          if ((job.description || "").replace(job.url || "", "").trim().length < 80) {
+	            showError("這筆職缺內容太少，請補上完整 JD 後再評估。");
+	            return null;
+	          }
+	          const system = `你是一位 Career Ops 分析師，擅長大量職缺篩選、ATS 關鍵字比對與投遞優先級排序。請根據履歷與職缺，輸出可用於批次追蹤器的 JSON。
+
+請用繁體中文，以 JSON 格式輸出（不加任何說明文字）：
+{
+  "company": "公司名稱，若無法判斷可空白",
+  "title": "標準化職稱",
+  "overall": {
+    "grade": "A",
+    "score": 86,
+    "recommendation": "強烈投遞 / 值得投遞 / 觀望 / 略過",
+    "summary": "2-3句說明為何這筆職缺值得或不值得投入時間"
+  },
+  "decision_factors": ["支持投遞或不投遞的具體因子1", "因子2", "因子3"],
+  "ats_keywords": {
+    "found": ["履歷中已有且職缺重視的關鍵字"],
+    "missing": ["建議補上的高價值關鍵字"]
+  },
+  "risks": ["可能被刷掉或面試被追問的風險"],
+  "next_actions": ["投遞前最該做的行動1", "行動2", "行動3"]
+}`;
+	          const prompt = `履歷：\n\n${cv}\n\n---\n\n職缺：\n公司：${job.company || "未知"}\n職稱：${job.title}\n連結：${job.url || "無"}\n\n${job.description}`;
+	          if (!options.silent) showLoading("正在評估這筆職缺，通常需要 15–30 秒…");
+	          try {
+	            const result = parseJson(await callClaude(system, prompt));
+	            const overall = result.overall || {};
+	            const next = normalizeCareerOpsJob({
+	              ...job,
+	              title: result.title || job.title,
+	              company: result.company || job.company,
+	              score: careerOpsScore(overall.score),
+	              grade: overall.grade || job.grade,
+	              recommendation: overall.recommendation || job.recommendation,
+	              status: job.status === "待評估"
+	                ? Number(overall.score || 0) >= 78
+	                  ? "值得投遞"
+	                  : Number(overall.score || 0) >= 58
+	                    ? "觀望"
+	                    : "略過"
+	                : job.status,
+	              evaluation: result,
+	              error: "",
+	              evaluatedAt: new Date().toISOString()
+	            });
+	            saveCareerOpsJob(next);
+	            if (!options.silent) renderCareerOpsDashboard("評估完成，已更新排行榜。");
+	            return next;
+	          } catch (error) {
+	            saveCareerOpsJob({ ...job, error: error.message || "評估失敗" });
+	            if (!options.silent) showError("評估失敗：" + error.message);
+	            return null;
+	          }
+	        }
+
+	        async function runCareerOpsBatch() {
+	          if (!($c("claudeApiKey")?.value || "").trim()) {
+	            showError("請先填入 API Key（左側面板底部）再批次評估。");
+	            return;
+	          }
+	          const jobs = loadCareerOpsJobs();
+	          const targets = jobs.filter(job => job.score === "" && (job.description || "").replace(job.url || "", "").trim().length >= 80);
+	          if (!targets.length) {
+	            renderCareerOpsDashboard("目前沒有可批次評估的未評估職缺。只有 URL 的職缺需要先補上 JD 文字。");
+	            return;
+	          }
+	          for (let i = 0; i < targets.length; i += 1) {
+	            showLoading(`正在批次評估 ${i + 1} / ${targets.length}：${targets[i].title}`);
+	            await evaluateCareerOpsJob(targets[i].id, { silent: true });
+	          }
+	          renderCareerOpsDashboard(`批次評估完成：已處理 ${targets.length} 筆職缺。`);
+	        }
+
+	        function exportCareerOpsCsv() {
+	          const jobs = loadCareerOpsJobs().sort(careerOpsJobSort);
+	          if (!jobs.length) {
+	            showError("目前沒有可匯出的職缺追蹤資料。");
+	            return;
+	          }
+	          const csvEscape = value => `"${String(value || "").replace(/"/g, '""')}"`;
+	          const rows = [
+	            ["company", "title", "status", "score", "grade", "recommendation", "url", "updatedAt"],
+	            ...jobs.map(job => [job.company, job.title, job.status, job.score, job.grade, job.recommendation, job.url, job.updatedAt])
+	          ];
+	          const blob = new Blob([rows.map(row => row.map(csvEscape).join(",")).join("\n")], { type: "text/csv;charset=utf-8" });
+	          const a = document.createElement("a");
+	          a.href = URL.createObjectURL(blob);
+	          a.download = `career-ops-tracker-${Date.now()}.csv`;
+	          a.click();
+	          URL.revokeObjectURL(a.href);
+	        }
+
+	        function normalizeTailoredPack(pack) {
+	          const source = pack && typeof pack === "object" ? pack : {};
+	          return {
+	            target_title: String(source.target_title || "").trim(),
+	            headline: String(source.headline || "").trim(),
+	            ats_summary: String(source.ats_summary || "").trim(),
+	            skills: careerOpsArray(source.skills),
+	            experience_bullets: careerOpsArray(source.experience_bullets),
+	            project_bullets: careerOpsArray(source.project_bullets),
+	            keyword_pack: careerOpsArray(source.keyword_pack),
+	            cover_letter: String(source.cover_letter || "").trim()
+	          };
+	        }
+
+	        async function generateCareerOpsTailoredPdf(id) {
+	          const job = getCareerOpsJob(id);
+	          if (!job) return;
+	          if (!window.html2pdf) {
+	            showError("PDF 工具尚未載入，請稍後再試。");
+	            return;
+	          }
+	          if (job.tailored) {
+	            await downloadCareerOpsPdf(job, normalizeTailoredPack(job.tailored));
+	            return;
+	          }
+	          const cv = getCvSummary();
+	          if (!cv) {
+	            showError("請先至「CV 履歷」頁填寫你的履歷資料。");
+	            return;
+	          }
+	          if ((job.description || "").replace(job.url || "", "").trim().length < 80) {
+	            showError("這筆職缺內容太少，請補上完整 JD 後再產生客製 PDF。");
+	            return;
+	          }
+	          const system = `你是一位 ATS 履歷改寫顧問。請根據使用者真實履歷與職缺，產生一份可放入 PDF 的客製化履歷內容。不可捏造不存在的經歷、公司、學校、證照或數字；若需要補強，請用保守改寫與關鍵字排序。
+
+請用繁體中文，以 JSON 格式輸出（不加任何說明文字）：
+{
+  "target_title": "針對此職缺的履歷標題",
+  "headline": "一句高命中率定位句",
+  "ats_summary": "3-4句 ATS 友善摘要",
+  "skills": ["優先呈現的技能1", "技能2", "技能3"],
+  "experience_bullets": ["由原履歷改寫、貼合職缺的經歷 bullet"],
+  "project_bullets": ["由原履歷改寫、貼合職缺的專案 bullet"],
+  "keyword_pack": ["應放入履歷的關鍵字"],
+  "cover_letter": "150-220字投遞信草稿"
+}`;
+	          const prompt = `履歷：\n\n${cv}\n\n---\n\n職缺：\n公司：${job.company || "未知"}\n職稱：${job.title}\n連結：${job.url || "無"}\n\n${job.description}`;
+	          showLoading("正在產生客製 ATS PDF，通常需要 20–40 秒…");
+	          try {
+	            const pack = normalizeTailoredPack(parseJson(await callClaude(system, prompt)));
+	            saveCareerOpsJob({ ...job, tailored: pack });
+	            await downloadCareerOpsPdf({ ...job, tailored: pack }, pack);
+	            renderCareerOpsDashboard("客製 PDF 已開始下載。");
+	          } catch (error) {
+	            showError("客製 PDF 生成失敗：" + error.message);
+	          }
+	        }
+
+	        async function downloadCareerOpsPdf(job, pack) {
+	          const data = window.cvStudioState?.data || {};
+	          const contact = [data.email, data.phone, data.location, data.website].filter(Boolean).join(" · ");
+	          const filenameBase = `${data.name || "cv"}-${job.company || ""}-${job.title || "job"}`
+	            .replace(/[^\p{L}\p{N}]+/gu, "-")
+	            .replace(/^-+|-+$/g, "")
+	            .slice(0, 80) || "career-ops-cv";
+	          const node = document.createElement("div");
+	          node.className = "career-tailored-pdf";
+	          node.style.position = "fixed";
+	          node.style.left = "-10000px";
+	          node.style.top = "0";
+	          node.innerHTML = `
+	            <h1>${careerText(data.name || "未命名履歷")}</h1>
+	            <h2>${careerText(pack.target_title || job.title)}</h2>
+	            <div class="pdf-contact">${careerText(contact)}</div>
+	            <div class="pdf-keywords">${careerTagItems(pack.keyword_pack, "", "")}</div>
+	            <h3>Profile</h3>
+	            <p>${careerText(pack.headline || data.role || "")}</p>
+	            <p>${careerText(pack.ats_summary || data.summary || "")}</p>
+	            <h3>Skills</h3>
+	            <ul>${careerListItems(pack.skills.length ? pack.skills : String(data.skills || "").split(/\n|,/))}</ul>
+	            <h3>Experience Focus</h3>
+	            <ul>${careerListItems(pack.experience_bullets.length ? pack.experience_bullets : String(data.experience || "").split(/\n+/).slice(0, 6))}</ul>
+	            <h3>Project Proof</h3>
+	            <ul>${careerListItems(pack.project_bullets.length ? pack.project_bullets : String(data.projects || "").split(/\n+/).slice(0, 6))}</ul>
+	            ${data.education ? `<h3>Education</h3><p>${careerLineBreaks(data.education)}</p>` : ""}
+	            ${pack.cover_letter ? `<h3>Cover Letter Draft</h3><p>${careerLineBreaks(pack.cover_letter)}</p>` : ""}
+	          `;
+	          document.body.appendChild(node);
+	          try {
+	            await window.html2pdf().set({
+	              margin: 0,
+	              filename: `${filenameBase}.pdf`,
+	              image: { type: "jpeg", quality: 0.98 },
+	              html2canvas: { scale: 2, useCORS: true, backgroundColor: "#ffffff" },
+	              jsPDF: { unit: "mm", format: "a4", orientation: "portrait" },
+	              pagebreak: { mode: ["css", "legacy"], avoid: ["h1", "h2", "h3", "li"] }
+	            }).from(node).save();
+	          } finally {
+	            node.remove();
+	          }
+	        }
+
+	        async function runCareerOpsDeepResearch(id) {
+	          const job = getCareerOpsJob(id);
+	          if (!job) return;
+	          if (!($c("claudeApiKey")?.value || "").trim()) {
+	            showError("請先填入 API Key。提醒：網頁 API Key 只會做 AI 深度分析，不會自行全網搜尋；真正搜尋需後端 deep-research script 搭配 Brave/Bing/SerpAPI，或匯入搜尋結果。");
+	            return;
+	          }
+	          const cv = getCvSummary();
+	          if (!cv) {
+	            showError("請先至「CV 履歷」頁填寫你的履歷資料。");
+	            return;
+	          }
+	          const snapshot = window.CV_CAREER_OPS_JOBS || {};
+	          const marketInsights = snapshot.marketInsights || {};
+	          const deepResearch = window.CV_CAREER_OPS_DEEP_RESEARCH || {};
+	          const dossiers = Array.isArray(deepResearch.dossiers) ? deepResearch.dossiers : [];
+	          const dossier = dossiers.find(item =>
+	            String(item.jobKey || "") === String(job.jobKey || "") ||
+	            (item.company && job.company && String(item.company).toLowerCase() === String(job.company).toLowerCase())
+	          ) || null;
+	          const system = `你是一位 Career Ops 深度研究分析師。請根據履歷、職缺、已蒐集的市場快照與後端 deep research dossier，輸出可執行的公司/職缺研究。
+
+重要限制：
+- 如果沒有外部 evidence，請明確標註「尚未接入搜尋 evidence」，不要捏造公司新聞、薪資、融資或內部資訊。
+- 只能基於輸入資料推論；未知就寫需要查證。
+- 請把結果轉成面試、投遞、談薪都能用的行動建議。
+
+請用繁體中文，以 JSON 格式輸出（不加任何說明文字）：
+{
+  "research_depth": "已有搜尋 evidence / 僅基於快照與 JD / 需要補搜尋 API",
+  "company_read": "公司與團隊理解，2-4句",
+  "role_thesis": "此職缺為何值得或不值得投入，2-3句",
+  "evidence_summary": ["可引用 evidence 或目前缺少 evidence 的說明"],
+  "risk_flags": ["需要查證或可能風險"],
+  "opportunity_signals": ["值得把握的訊號"],
+  "interview_questions": ["面試中該問的深入問題"],
+  "cv_positioning": ["履歷/作品集應強調的角度"],
+  "outreach_angle": "給 recruiter/hiring manager 的一句客製化切入點",
+  "next_research_steps": ["下一步該查什麼或該補什麼 source"]
+}`;
+	          const prompt = `履歷：\n${cv}\n\n---\n職缺：\n${JSON.stringify(job, null, 2)}\n\n---\nMarket insights：\n${JSON.stringify(marketInsights, null, 2).slice(0, 5000)}\n\n---\nDeep research dossier：\n${JSON.stringify(dossier || {}, null, 2).slice(0, 7000)}\n\n---\nSource/search reports：\n${careerOpsReports.sourceStrategy.slice(0, 1500)}\n\n${careerOpsReports.search.slice(0, 1500)}\n\n${careerOpsReports.deepResearch.slice(0, 2500)}`;
+	          showLoading("正在做 AI 深度研究。若未設定後端搜尋 API，這會基於現有快照與 evidence 推理，不會自行全網搜尋…");
+	          try {
+	            const result = parseJson(await callClaude(system, prompt));
+	            const next = normalizeCareerOpsJob({
+	              ...job,
+	              evaluation: {
+	                ...(job.evaluation || {}),
+	                deep_research: result
+	              },
+	              notes: [
+	                job.notes,
+	                `AI 深度研究：${result.role_thesis || result.company_read || "已完成"}`
+	              ].filter(Boolean).join("\n\n"),
+	              updatedAt: new Date().toISOString()
+	            });
+	            saveCareerOpsJob(next);
+	            renderCareerOpsDeepResearch(result, next);
+	          } catch (error) {
+	            showError("深度研究失敗：" + error.message);
+	          }
+	        }
+
+	        function renderCareerOpsDeepResearch(result, job) {
+	          $c("careerResultsArea").innerHTML = `
+	            <div class="career-result-section">
+	              <h4>AI 深度研究：${careerText([job.company, job.title].filter(Boolean).join(" · "))}</h4>
+	              <p>${careerText(result.research_depth || "已完成研究")}</p>
+	              ${result.company_read ? `<p>${careerText(result.company_read)}</p>` : ""}
+	              ${result.role_thesis ? `<p><strong>職缺 thesis：</strong>${careerText(result.role_thesis)}</p>` : ""}
+	            </div>
+	            ${result.evidence_summary?.length ? `<div class="career-result-section"><h4>Evidence 摘要</h4><ul>${careerListItems(result.evidence_summary)}</ul></div>` : ""}
+	            ${result.opportunity_signals?.length ? `<div class="career-result-section"><h4>機會訊號</h4><ul>${careerListItems(result.opportunity_signals)}</ul></div>` : ""}
+	            ${result.risk_flags?.length ? `<div class="career-result-section"><h4>風險與待查證</h4><ul>${careerListItems(result.risk_flags)}</ul></div>` : ""}
+	            ${result.interview_questions?.length ? `<div class="career-result-section"><h4>深入面試問題</h4><ul>${careerListItems(result.interview_questions)}</ul></div>` : ""}
+	            ${result.cv_positioning?.length ? `<div class="career-result-section"><h4>履歷定位</h4><ul>${careerListItems(result.cv_positioning)}</ul></div>` : ""}
+	            ${result.outreach_angle ? `<div class="career-result-section"><h4>Outreach 切入點</h4><p>${careerText(result.outreach_angle)}</p></div>` : ""}
+	            ${result.next_research_steps?.length ? `<div class="career-result-section"><h4>下一步研究</h4><ul>${careerListItems(result.next_research_steps)}</ul></div>` : ""}
+	            <div class="career-ops-action-row">
+	              <button class="career-ops-mini-btn ghost" type="button" onclick="window.cvCareerOpsRenderDashboard && window.cvCareerOpsRenderDashboard()">回到 Career Ops</button>
+	            </div>`;
+	        }
+
+	        function handleCareerOpsResultsClick(event) {
+	          const selectButton = event.target.closest("[data-career-ops-select]");
+	          if (selectButton) {
+	            careerOpsSelectedJobId = selectButton.dataset.careerOpsSelect || "";
+	            renderCareerOpsDashboard();
+	            return;
+	          }
+	          const actionButton = event.target.closest("[data-career-ops-action]");
+	          if (!actionButton) return;
+	          const id = actionButton.dataset.id || "";
+	          const action = actionButton.dataset.careerOpsAction;
+	          const job = getCareerOpsJob(id);
+	          if (!job) return;
+	          if (action === "evaluate") {
+	            evaluateCareerOpsJob(id);
+	          } else if (action === "tailor") {
+	            generateCareerOpsTailoredPdf(id);
+	          } else if (action === "deep-research") {
+	            runCareerOpsDeepResearch(id);
+	          } else if (action === "fill") {
+	            const jd = $c("careerJdInput");
+	            if (jd) jd.value = job.description || job.url || "";
+	            document.querySelector(".career-mode-tab[data-mode='fit']")?.click();
+	          } else if (action === "feedback-like" || action === "feedback-dislike") {
+	            saveCareerOpsJob({ ...job, feedback: action === "feedback-like" ? "喜歡" : "不喜歡" });
+	            renderCareerOpsDashboard("偏好回饋已儲存，後續搜尋策略會參考這個訊號。");
+	          } else if (action === "delete") {
+	            if (!confirm(`刪除職缺「${job.title}」？`)) return;
+	            const next = loadCareerOpsJobs().filter(item => item.id !== id);
+	            saveCareerOpsJobs(next);
+	            deleteCareerOpsJobFromCloud(job);
+	            careerOpsSelectedJobId = next[0]?.id || "";
+	            renderCareerOpsDashboard("職缺已刪除。");
+	          }
+	        }
+
+	        function handleCareerOpsResultsChange(event) {
+	          const select = event.target.closest("[data-career-ops-status]");
+	          const field = event.target.closest("[data-career-ops-field]");
+	          if (!select && !field) return;
+	          const id = select?.dataset.careerOpsStatus || field?.dataset.id || "";
+	          const job = getCareerOpsJob(id);
+	          if (!job) return;
+	          if (select) {
+	            saveCareerOpsJob({ ...job, status: select.value });
+	            renderCareerOpsDashboard("狀態已更新。");
+	            return;
+	          }
+	          const fieldName = field.dataset.careerOpsField;
+	          if (!["notes", "contactName", "contactEmail", "nextFollowUpAt"].includes(fieldName)) return;
+	          saveCareerOpsJob({ ...job, [fieldName]: field.value });
+	        }
+
+	        /* ── init ── */
+	        function init() {
+	          const MODE_CONFIG = {
+	            fit:         { label: "分析職位適配度",     jd: true,  hint: "貼上職缺描述後，點擊「分析職位適配度」" },
+	            position:    { label: "分析我適合哪些崗位", jd: false, hint: "點擊按鈕，AI 將根據你的履歷推薦適合崗位" },
+	            interview:   { label: "生成 STAR 面試故事", jd: true,  hint: "貼上職缺描述後，點擊按鈕生成面試故事庫" },
+	            coverletter: { label: "生成客製化求職信",   jd: true,  hint: "貼上職缺描述後，點擊按鈕一鍵生成求職信" },
+	            ops:         { label: "開啟 Career Ops 工作台", jd: false, hint: "匯入多筆職缺後，可批次評估、排序、追蹤並產生客製 PDF。" },
+	          };
 
           /* Mode tabs */
           const modeTabs = document.querySelectorAll(".career-mode-tab");
@@ -14502,39 +15706,53 @@
             tab.addEventListener("click", () => {
               modeTabs.forEach(t => t.classList.remove("active"));
               tab.classList.add("active");
-              const mode = tab.dataset.mode;
-              const cfg = MODE_CONFIG[mode] || MODE_CONFIG.fit;
-              const jdSection = $c("careerJdSection");
-              if (jdSection) jdSection.style.display = cfg.jd ? "" : "none";
-              const btn = $c("careerAnalyzeBtn");
-              btn.textContent = cfg.label;
-              btn.dataset.mode = mode;
-              $c("careerResultsArea").innerHTML = `
-                <div class="career-results-empty">
-                  <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true">
-                    <path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2"/>
-                    <rect x="9" y="3" width="6" height="4" rx="1"/>
-                    <path d="M9 12h6M9 16h4"/>
-                  </svg>
-                  <div>${cfg.hint}</div>
-                </div>`;
-            });
-          });
+	              const mode = tab.dataset.mode;
+	              const cfg = MODE_CONFIG[mode] || MODE_CONFIG.fit;
+	              const jdSection = $c("careerJdSection");
+	              if (jdSection) jdSection.style.display = cfg.jd ? "" : "none";
+	              const opsSection = $c("careerOpsSection");
+	              if (opsSection) opsSection.hidden = mode !== "ops";
+	              const btn = $c("careerAnalyzeBtn");
+	              btn.textContent = cfg.label;
+	              btn.dataset.mode = mode;
+	              if (mode === "ops") {
+	                renderCareerOpsDashboard();
+	              } else {
+	                $c("careerResultsArea").innerHTML = `
+	                  <div class="career-results-empty">
+	                    <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true">
+	                      <path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2"/>
+	                      <rect x="9" y="3" width="6" height="4" rx="1"/>
+	                      <path d="M9 12h6M9 16h4"/>
+	                    </svg>
+	                    <div>${cfg.hint}</div>
+	                  </div>`;
+	              }
+	            });
+	          });
 
           /* Analyze button */
           $c("careerAnalyzeBtn").addEventListener("click", async () => {
             const btn = $c("careerAnalyzeBtn");
             btn.disabled = true;
             try {
-              const mode = btn.dataset.mode;
-              if (mode === "position")    await analyzePosition();
-              else if (mode === "interview")   await analyzeInterviewPrep();
-              else if (mode === "coverletter") await generateCoverLetter();
-              else                             await analyzeJobFit();
-            } finally {
-              btn.disabled = false;
-            }
-          });
+	              const mode = btn.dataset.mode;
+	              if (mode === "position")    await analyzePosition();
+	              else if (mode === "interview")   await analyzeInterviewPrep();
+	              else if (mode === "coverletter") await generateCoverLetter();
+	              else if (mode === "ops")         renderCareerOpsDashboard();
+	              else                             await analyzeJobFit();
+	            } finally {
+	              btn.disabled = false;
+	            }
+	          });
+
+	          $c("careerOpsImportBtn")?.addEventListener("click", importCareerOpsJobs);
+	          $c("careerOpsImportSnapshotBtn")?.addEventListener("click", importCareerOpsSnapshot);
+	          $c("careerOpsRunBatchBtn")?.addEventListener("click", runCareerOpsBatch);
+	          $c("careerOpsExportCsvBtn")?.addEventListener("click", exportCareerOpsCsv);
+	          $c("careerResultsArea")?.addEventListener("click", handleCareerOpsResultsClick);
+	          $c("careerResultsArea")?.addEventListener("change", handleCareerOpsResultsChange);
 
           /* ── API key: cloud save/load ── */
           function loadApiKey() {
@@ -14569,13 +15787,17 @@
             updateCvSnippet();
             if (window.cvStudioState?.user) {
               await clearLegacyCloudApiKey();
+              await loadCareerOpsJobsFromCloud();
+            }
+            if (document.querySelector(".career-mode-tab[data-mode='ops']")?.classList.contains("active")) {
+              renderCareerOpsDashboard();
             }
           }
 
           function updateApiNote() {
             const note = document.querySelector(".career-api-note");
             if (!note) return;
-            note.innerHTML = `支援 Anthropic、OpenAI、Google Gemini、Groq，系統自動識別。<br><strong>安全模式</strong>：API Key 只保留在目前瀏覽器頁籤，不會上傳到 Supabase 或其他雲端資料庫。`;
+            note.innerHTML = `支援 Anthropic、OpenAI、Google Gemini、Groq，系統自動識別。<br><strong>安全模式</strong>：API Key 只保留在目前瀏覽器頁籤的 sessionStorage，不會上傳到 Supabase 或其他雲端資料庫。`;
           }
 
           $c("claudeApiKey").addEventListener("input", () => {

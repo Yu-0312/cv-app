@@ -59,6 +59,80 @@ for delete
 using (auth.uid() = user_id);
 
 -- ============================================================
+-- CAREER OPS TRACKER
+-- Stores the user's normalized job tracker, evaluations, CRM state,
+-- feedback, and tailored application packs. The public job collection
+-- still runs in scripts/career-ops-worker.mjs; this table is only for
+-- each user's private tracking layer.
+-- ============================================================
+
+create table if not exists public.cv_career_ops_jobs (
+  id uuid primary key default gen_random_uuid(),
+  user_id uuid not null references auth.users(id) on delete cascade,
+  job_key text not null,
+  title text not null default '',
+  company text not null default '',
+  url text not null default '',
+  location text not null default '',
+  description text not null default '',
+  source text not null default '',
+  source_type text not null default '',
+  status text not null default '待評估',
+  score integer,
+  grade text not null default '',
+  recommendation text not null default '',
+  notes text not null default '',
+  contact_name text not null default '',
+  contact_email text not null default '',
+  next_follow_up_at timestamptz,
+  feedback text not null default '',
+  evaluation jsonb,
+  tailored jsonb,
+  metadata jsonb not null default '{}'::jsonb,
+  first_seen_at timestamptz,
+  last_seen_at timestamptz,
+  is_new boolean not null default false,
+  is_expired boolean not null default false,
+  evaluated_at timestamptz,
+  created_at timestamptz not null default now(),
+  updated_at timestamptz not null default now(),
+  unique (user_id, job_key)
+);
+
+drop trigger if exists cv_career_ops_jobs_set_updated_at on public.cv_career_ops_jobs;
+create trigger cv_career_ops_jobs_set_updated_at
+before update on public.cv_career_ops_jobs
+for each row
+execute function public.handle_cv_profiles_updated_at();
+
+alter table public.cv_career_ops_jobs enable row level security;
+
+drop policy if exists "Users can view own Career Ops jobs" on public.cv_career_ops_jobs;
+create policy "Users can view own Career Ops jobs"
+on public.cv_career_ops_jobs
+for select
+using (auth.uid() = user_id);
+
+drop policy if exists "Users can insert own Career Ops jobs" on public.cv_career_ops_jobs;
+create policy "Users can insert own Career Ops jobs"
+on public.cv_career_ops_jobs
+for insert
+with check (auth.uid() = user_id);
+
+drop policy if exists "Users can update own Career Ops jobs" on public.cv_career_ops_jobs;
+create policy "Users can update own Career Ops jobs"
+on public.cv_career_ops_jobs
+for update
+using (auth.uid() = user_id)
+with check (auth.uid() = user_id);
+
+drop policy if exists "Users can delete own Career Ops jobs" on public.cv_career_ops_jobs;
+create policy "Users can delete own Career Ops jobs"
+on public.cv_career_ops_jobs
+for delete
+using (auth.uid() = user_id);
+
+-- ============================================================
 -- PUBLIC SHARE PAGES
 -- One public snapshot per user. Owners can publish/update/delete
 -- their own snapshot; anyone can read by slug.

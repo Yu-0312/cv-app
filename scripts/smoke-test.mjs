@@ -1170,6 +1170,33 @@ async function main() {
         const node = document.getElementById("careerResultsArea");
         return node && /請先填入 API Key/.test(node.textContent || "");
       });
+
+      await page.click(".career-mode-tab[data-mode='ops']");
+      await page.waitForFunction(() => {
+        const section = document.getElementById("careerOpsSection");
+        const button = document.getElementById("careerAnalyzeBtn");
+        return section && !section.hidden && button && /Career Ops/.test(button.textContent || "");
+      });
+      await page.$eval("#careerOpsImportInput", (node) => {
+        node.value = `公司：Acme AI\n職稱：Frontend Engineer\n連結：https://example.com/jobs/frontend\n職責：Build dashboards with JavaScript, HTML, CSS, API integrations, accessibility, and analytics.\n要求：Frontend experience, product sense, ATS keyword optimization.\n---\n公司：DataWorks\n職稱：Product Analyst Intern\n職責：Analyze funnels, write SQL dashboards, collaborate with product and design.\n要求：SQL, communication, experimentation.`;
+        node.dispatchEvent(new Event("input", { bubbles: true }));
+      });
+      await page.click("#careerOpsImportBtn");
+      await page.waitForFunction(() => {
+        const area = document.getElementById("careerResultsArea");
+        return area && /已匯入 2 筆職缺/.test(area.textContent || "") && /職缺總數\s*2/.test(area.textContent || "");
+      });
+      await page.$eval(".career-ops-status", (node) => {
+        node.value = "觀望";
+        node.dispatchEvent(new Event("change", { bubbles: true }));
+      });
+      await page.waitForFunction(() => /狀態已更新/.test(document.getElementById("careerResultsArea")?.textContent || ""));
+      await page.click("[data-career-ops-action='fill']");
+      await page.waitForFunction(() => {
+        const section = document.getElementById("careerJdSection");
+        const jd = document.getElementById("careerJdInput");
+        return section && section.style.display !== "none" && /Acme AI|DataWorks/.test(jd?.value || "");
+      });
     });
 
     await withStep("GSAT 雲端同步逾時 fallback", async () => {

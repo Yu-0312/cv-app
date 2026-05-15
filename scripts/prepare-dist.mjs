@@ -102,10 +102,108 @@ async function main() {
     [
       path.join(appTargetDir, "university-tw-app-data.js"),
       "window.CV_UNIVERSITY_TW_DATA = window.CV_UNIVERSITY_TW_DATA || { source: 'fallback', universities: {} };\n"
+    ],
+    [
+      path.join(appTargetDir, "career-ops-jobs.js"),
+      "window.CV_CAREER_OPS_JOBS = window.CV_CAREER_OPS_JOBS || { source: 'fallback', extractedAt: '', sourceCount: 0, jobCount: 0, jobs: [], errors: [] };\n"
+    ],
+    [
+      path.join(appTargetDir, "career-ops-application-kit.js"),
+      "window.CV_CAREER_OPS_APPLICATION_KIT = window.CV_CAREER_OPS_APPLICATION_KIT || { source: 'fallback', generatedAt: '', playbooks: [] };\n"
+    ],
+    [
+      path.join(appTargetDir, "career-ops-deep-research.js"),
+      "window.CV_CAREER_OPS_DEEP_RESEARCH = window.CV_CAREER_OPS_DEEP_RESEARCH || { source: 'fallback', generatedAt: '', dossiers: [], evidence: [], queries: [] };\n"
+    ],
+    [
+      path.join(appTargetDir, "career-ops-deep-fit.js"),
+      "window.CV_CAREER_OPS_DEEP_FIT = window.CV_CAREER_OPS_DEEP_FIT || { source: 'fallback', generatedAt: '', dossiers: [] };\n"
+    ],
+    [
+      path.join(appTargetDir, "career-ops-compensation.js"),
+      "window.CV_CAREER_OPS_COMPENSATION = window.CV_CAREER_OPS_COMPENSATION || { source: 'fallback', generatedAt: '', plans: [] };\n"
+    ],
+    [
+      path.join(appTargetDir, "career-ops-story-bank.js"),
+      "window.CV_CAREER_OPS_STORY_BANK = window.CV_CAREER_OPS_STORY_BANK || { source: 'fallback', generatedAt: '', storyBank: { themes: [], stories: [], gaps: [] } };\n"
+    ],
+    [
+      path.join(appTargetDir, "career-ops-parallel-report.js"),
+      "window.CV_CAREER_OPS_PARALLEL = window.CV_CAREER_OPS_PARALLEL || { source: 'fallback', generatedAt: '', concurrency: 0, results: [], errors: [] };\n"
+    ],
+    [
+      path.join(appTargetDir, "career-ops-learning.js"),
+      "window.CV_CAREER_OPS_LEARNING = window.CV_CAREER_OPS_LEARNING || { source: 'fallback', generatedAt: '', learning: { preferredSkills: [], avoidSignals: [], nextStrategy: [] } };\n"
+    ],
+    [
+      path.join(appTargetDir, "career-ops-modes.js"),
+      "window.CV_CAREER_OPS_MODES = window.CV_CAREER_OPS_MODES || { source: 'fallback', generatedAt: '', commands: [], guardrails: [] };\n"
     ]
   ];
 
   for (const [filePath, content] of fallbackAssets) {
+    const exists = await fileExists(filePath);
+    if (!exists) {
+      await writeFallback(filePath, content);
+    }
+  }
+
+  const fallbackReports = [
+    [
+      path.join(appTargetDir, "career-ops-source-strategy-report.md"),
+      "# Career Ops Source Strategy Report\n\n- Sources: 0\n- Search queries: 0\n"
+    ],
+    [
+      path.join(appTargetDir, "career-ops-search-report.md"),
+      "# Career Ops Search Adapter Report\n\n- Search query signals: 0\n- Discovered search sources: 0\n"
+    ],
+    [
+      path.join(appTargetDir, "career-ops-source-flex-report.md"),
+      "# Career Ops Source Flex Report\n\n- Flex candidates: 0\n- Search queries: 0\n"
+    ],
+    [
+      path.join(appTargetDir, "career-ops-source-quality-report.md"),
+      "# Career Ops Source Quality\n\n- Input active jobs: 0\n- Kept active jobs: 0\n- Filtered active jobs: 0\n"
+    ],
+    [
+      path.join(appTargetDir, "career-ops-source-health-report.md"),
+      "# Career Ops Source Health\n\n- Sources: 0\n- Active jobs: 0\n- Scrape errors: 0\n"
+    ],
+    [
+      path.join(appTargetDir, "career-ops-application-kit.md"),
+      "# Career Ops Application Kit\n\n- Jobs: 0\n"
+    ],
+    [
+      path.join(appTargetDir, "career-ops-deep-research.md"),
+      "# Career Ops Deep Research\n\n- Dossiers: 0\n- Evidence items: 0\n"
+    ],
+    [
+      path.join(appTargetDir, "career-ops-deep-fit.md"),
+      "# Career Ops Deep Fit Report\n\n- Dossiers: 0\n"
+    ],
+    [
+      path.join(appTargetDir, "career-ops-compensation.md"),
+      "# Career Ops Compensation Planner\n\n- Plans: 0\n"
+    ],
+    [
+      path.join(appTargetDir, "career-ops-story-bank.md"),
+      "# Career Ops Story Bank\n\n- Stories: 0\n"
+    ],
+    [
+      path.join(appTargetDir, "career-ops-parallel-report.md"),
+      "# Career Ops Parallel Worker Report\n\n- Jobs processed: 0\n"
+    ],
+    [
+      path.join(appTargetDir, "career-ops-learning-report.md"),
+      "# Career Ops Learning Report\n\n- Active jobs: 0\n- Positive signals: 0\n"
+    ],
+    [
+      path.join(appTargetDir, "career-ops-modes-report.md"),
+      "# Career Ops Modes\n\n- Commands: 0\n- Guardrails: 0\n"
+    ]
+  ];
+
+  for (const [filePath, content] of fallbackReports) {
     const exists = await fileExists(filePath);
     if (!exists) {
       await writeFallback(filePath, content);

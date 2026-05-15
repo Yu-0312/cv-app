@@ -1,0 +1,14 @@
+{
+  "role": "Frontend Engineer",
+  "summary": "Builds accessible product dashboards and data-heavy workflows.",
+  "skills": ["JavaScript", "React", "CSS", "Accessibility", "Analytics", "API"],
+  "experience": "Frontend product work, dashboard development, design systems, performance optimization.",
+  "projects": "Portfolio, CV Studio, data visualization tools.",
+  "preferences": {
+    "targetRoles": ["Frontend Engineer", "Product Engineer", "Full Stack Engineer"],
+    "keywords": ["remote", "dashboard", "design system", "analytics"],
+    "locations": ["Taipei", "Remote"],
+    "companies": [],
+    "avoidKeywords": ["commission-only", "unpaid"]
+  }
+}

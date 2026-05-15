@@ -1,0 +1,8218 @@
+{
+  "source": "career-ops-source-flex",
+  "strategyName": "Career Ops Source Strategy Example",
+  "generatedAt": "2026-05-15T14:42:59.805Z",
+  "targetMarkets": [
+    "tw",
+    "cn",
+    "jp",
+    "kr",
+    "sg",
+    "global"
+  ],
+  "titleFilter": {
+    "positive": [
+      "software engineer",
+      "frontend",
+      "front-end",
+      "backend",
+      "full stack",
+      "full-stack",
+      "product manager",
+      "data analyst",
+      "data scientist",
+      "ai",
+      "machine learning",
+      "engineer",
+      "developer",
+      "工程師",
+      "前端",
+      "後端",
+      "全端",
+      "產品經理",
+      "資料分析",
+      "資料科學",
+      "機器學習",
+      "人工智慧"
+    ],
+    "negative": [
+      "senior director",
+      "vp ",
+      "vice president",
+      "head of",
+      "principal",
+      "staff",
+      "sales",
+      "account executive",
+      "legal",
+      "finance",
+      "資深總監",
+      "副總",
+      "法務",
+      "財務",
+      "業務"
+    ]
+  },
+  "sourceCount": 93,
+  "searchQueryCount": 651,
+  "sources": [
+    {
+      "name": "TSMC",
+      "company": "TSMC",
+      "source": "TSMC",
+      "url": "https://www.tsmc.com/english/careers",
+      "type": "company",
+      "adapter": "",
+      "market": "tw",
+      "industry": "semiconductor",
+      "tags": [
+        "large-enterprise",
+        "semiconductor",
+        "taiwan"
+      ],
+      "sourceStrategy": "tracked-company",
+      "titleFilter": {
+        "positive": [
+          "software engineer",
+          "frontend",
+          "front-end",
+          "backend",
+          "full stack",
+          "full-stack",
+          "product manager",
+          "data analyst",
+          "data scientist",
+          "ai",
+          "machine learning",
+          "engineer",
+          "developer",
+          "工程師",
+          "前端",
+          "後端",
+          "全端",
+          "產品經理",
+          "資料分析",
+          "資料科學",
+          "機器學習",
+          "人工智慧"
+        ],
+        "negative": [
+          "senior director",
+          "vp ",
+          "vice president",
+          "head of",
+          "principal",
+          "staff",
+          "sales",
+          "account executive",
+          "legal",
+          "finance",
+          "資深總監",
+          "副總",
+          "法務",
+          "財務",
+          "業務"
+        ]
+      },
+      "maxDiscovered": 50
+    },
+    {
+      "name": "MediaTek",
+      "company": "MediaTek",
+      "source": "MediaTek",
+      "url": "https://corp.mediatek.com/careers",
+      "type": "company",
+      "adapter": "",
+      "market": "tw",
+      "industry": "semiconductor",
+      "tags": [
+        "large-enterprise",
+        "semiconductor",
+        "taiwan"
+      ],
+      "sourceStrategy": "tracked-company",
+      "titleFilter": {
+        "positive": [
+          "software engineer",
+          "frontend",
+          "front-end",
+          "backend",
+          "full stack",
+          "full-stack",
+          "product manager",
+          "data analyst",
+          "data scientist",
+          "ai",
+          "machine learning",
+          "engineer",
+          "developer",
+          "工程師",
+          "前端",
+          "後端",
+          "全端",
+          "產品經理",
+          "資料分析",
+          "資料科學",
+          "機器學習",
+          "人工智慧"
+        ],
+        "negative": [
+          "senior director",
+          "vp ",
+          "vice president",
+          "head of",
+          "principal",
+          "staff",
+          "sales",
+          "account executive",
+          "legal",
+          "finance",
+          "資深總監",
+          "副總",
+          "法務",
+          "財務",
+          "業務"
+        ]
+      },
+      "maxDiscovered": 50
+    },
+    {
+      "name": "Hon Hai Foxconn",
+      "company": "Hon Hai Foxconn",
+      "source": "Hon Hai Foxconn",
+      "url": "https://www.foxconn.com/en-us/careers",
+      "type": "company",
+      "adapter": "",
+      "market": "tw",
+      "industry": "electronics-manufacturing",
+      "tags": [
+        "large-enterprise",
+        "manufacturing",
+        "taiwan"
+      ],
+      "sourceStrategy": "tracked-company",
+      "titleFilter": {
+        "positive": [
+          "software engineer",
+          "frontend",
+          "front-end",
+          "backend",
+          "full stack",
+          "full-stack",
+          "product manager",
+          "data analyst",
+          "data scientist",
+          "ai",
+          "machine learning",
+          "engineer",
+          "developer",
+          "工程師",
+          "前端",
+          "後端",
+          "全端",
+          "產品經理",
+          "資料分析",
+          "資料科學",
+          "機器學習",
+          "人工智慧"
+        ],
+        "negative": [
+          "senior director",
+          "vp ",
+          "vice president",
+          "head of",
+          "principal",
+          "staff",
+          "sales",
+          "account executive",
+          "legal",
+          "finance",
+          "資深總監",
+          "副總",
+          "法務",
+          "財務",
+          "業務"
+        ]
+      },
+      "maxDiscovered": 40
+    },
+    {
+      "name": "Delta Electronics",
+      "company": "Delta Electronics",
+      "source": "Delta Electronics",
+      "url": "https://www.deltaww.com/en-US/Careers",
+      "type": "company",
+      "adapter": "",
+      "market": "tw",
+      "industry": "electronics",
+      "tags": [
+        "large-enterprise",
+        "electronics",
+        "taiwan"
+      ],
+      "sourceStrategy": "tracked-company",
+      "titleFilter": {
+        "positive": [
+          "software engineer",
+          "frontend",
+          "front-end",
+          "backend",
+          "full stack",
+          "full-stack",
+          "product manager",
+          "data analyst",
+          "data scientist",
+          "ai",
+          "machine learning",
+          "engineer",
+          "developer",
+          "工程師",
+          "前端",
+          "後端",
+          "全端",
+          "產品經理",
+          "資料分析",
+          "資料科學",
+          "機器學習",
+          "人工智慧"
+        ],
+        "negative": [
+          "senior director",
+          "vp ",
+          "vice president",
+          "head of",
+          "principal",
+          "staff",
+          "sales",
+          "account executive",
+          "legal",
+          "finance",
+          "資深總監",
+          "副總",
+          "法務",
+          "財務",
+          "業務"
+        ]
+      },
+      "maxDiscovered": 40
+    },
+    {
+      "name": "ASUS",
+      "company": "ASUS",
+      "source": "ASUS",
+      "url": "https://www.asus.com/careers/",
+      "type": "company",
+      "adapter": "",
+      "market": "tw",
+      "industry": "computer-hardware",
+      "tags": [
+        "large-enterprise",
+        "hardware",
+        "taiwan"
+      ],
+      "sourceStrategy": "tracked-company",
+      "titleFilter": {
+        "positive": [
+          "software engineer",
+          "frontend",
+          "front-end",
+          "backend",
+          "full stack",
+          "full-stack",
+          "product manager",
+          "data analyst",
+          "data scientist",
+          "ai",
+          "machine learning",
+          "engineer",
+          "developer",
+          "工程師",
+          "前端",
+          "後端",
+          "全端",
+          "產品經理",
+          "資料分析",
+          "資料科學",
+          "機器學習",
+          "人工智慧"
+        ],
+        "negative": [
+          "senior director",
+          "vp ",
+          "vice president",
+          "head of",
+          "principal",
+          "staff",
+          "sales",
+          "account executive",
+          "legal",
+          "finance",
+          "資深總監",
+          "副總",
+          "法務",
+          "財務",
+          "業務"
+        ]
+      },
+      "maxDiscovered": 40
+    },
+    {
+      "name": "Acer",
+      "company": "Acer",
+      "source": "Acer",
+      "url": "https://www.acer.com/careers",
+      "type": "company",
+      "adapter": "",
+      "market": "tw",
+      "industry": "computer-hardware",
+      "tags": [
+        "large-enterprise",
+        "hardware",
+        "taiwan"
+      ],
+      "sourceStrategy": "tracked-company",
+      "titleFilter": {
+        "positive": [
+          "software engineer",
+          "frontend",
+          "front-end",
+          "backend",
+          "full stack",
+          "full-stack",
+          "product manager",
+          "data analyst",
+          "data scientist",
+          "ai",
+          "machine learning",
+          "engineer",
+          "developer",
+          "工程師",
+          "前端",
+          "後端",
+          "全端",
+          "產品經理",
+          "資料分析",
+          "資料科學",
+          "機器學習",
+          "人工智慧"
+        ],
+        "negative": [
+          "senior director",
+          "vp ",
+          "vice president",
+          "head of",
+          "principal",
+          "staff",
+          "sales",
+          "account executive",
+          "legal",
+          "finance",
+          "資深總監",
+          "副總",
+          "法務",
+          "財務",
+          "業務"
+        ]
+      },
+      "maxDiscovered": 40
+    },
+    {
+      "name": "Trend Micro",
+      "company": "Trend Micro",
+      "source": "Trend Micro",
+      "url": "https://www.trendmicro.com/en_us/about/careers.html",
+      "type": "company",
+      "adapter": "",
+      "market": "tw",
+      "industry": "cybersecurity",
+      "tags": [
+        "large-enterprise",
+        "security",
+        "taiwan"
+      ],
+      "sourceStrategy": "tracked-company",
+      "titleFilter": {
+        "positive": [
+          "software engineer",
+          "frontend",
+          "front-end",
+          "backend",
+          "full stack",
+          "full-stack",
+          "product manager",
+          "data analyst",
+          "data scientist",
+          "ai",
+          "machine learning",
+          "engineer",
+          "developer",
+          "工程師",
+          "前端",
+          "後端",
+          "全端",
+          "產品經理",
+          "資料分析",
+          "資料科學",
+          "機器學習",
+          "人工智慧"
+        ],
+        "negative": [
+          "senior director",
+          "vp ",
+          "vice president",
+          "head of",
+          "principal",
+          "staff",
+          "sales",
+          "account executive",
+          "legal",
+          "finance",
+          "資深總監",
+          "副總",
+          "法務",
+          "財務",
+          "業務"
+        ]
+      },
+      "maxDiscovered": 40
+    },
+    {
+      "name": "Appier",
+      "company": "Appier",
+      "source": "Appier",
+      "url": "https://www.appier.com/careers",
+      "type": "company",
+      "adapter": "",
+      "market": "tw",
+      "industry": "ai-saas",
+      "tags": [
+        "tech",
+        "ai",
+        "taiwan"
+      ],
+      "sourceStrategy": "tracked-company",
+      "titleFilter": {
+        "positive": [
+          "software engineer",
+          "frontend",
+          "front-end",
+          "backend",
+          "full stack",
+          "full-stack",
+          "product manager",
+          "data analyst",
+          "data scientist",
+          "ai",
+          "machine learning",
+          "engineer",
+          "developer",
+          "工程師",
+          "前端",
+          "後端",
+          "全端",
+          "產品經理",
+          "資料分析",
+          "資料科學",
+          "機器學習",
+          "人工智慧"
+        ],
+        "negative": [
+          "senior director",
+          "vp ",
+          "vice president",
+          "head of",
+          "principal",
+          "staff",
+          "sales",
+          "account executive",
+          "legal",
+          "finance",
+          "資深總監",
+          "副總",
+          "法務",
+          "財務",
+          "業務"
+        ]
+      },
+      "maxDiscovered": 40
+    },
+    {
+      "name": "Gogolook",
+      "company": "Gogolook",
+      "source": "Gogolook",
+      "url": "https://www.gogolook.com/careers",
+      "type": "company",
+      "adapter": "",
+      "market": "tw",
+      "industry": "consumer-security",
+      "tags": [
+        "tech",
+        "security",
+        "taiwan"
+      ],
+      "sourceStrategy": "tracked-company",
+      "titleFilter": {
+        "positive": [
+          "software engineer",
+          "frontend",
+          "front-end",
+          "backend",
+          "full stack",
+          "full-stack",
+          "product manager",
+          "data analyst",
+          "data scientist",
+          "ai",
+          "machine learning",
+          "engineer",
+          "developer",
+          "工程師",
+          "前端",
+          "後端",
+          "全端",
+          "產品經理",
+          "資料分析",
+          "資料科學",
+          "機器學習",
+          "人工智慧"
+        ],
+        "negative": [
+          "senior director",
+          "vp ",
+          "vice president",
+          "head of",
+          "principal",
+          "staff",
+          "sales",
+          "account executive",
+          "legal",
+          "finance",
+          "資深總監",
+          "副總",
+          "法務",
+          "財務",
+          "業務"
+        ]
+      },
+      "maxDiscovered": 30
+    },
+    {
+      "name": "91APP",
+      "company": "91APP",
+      "source": "91APP",
+      "url": "https://www.91app.com/career/",
+      "type": "company",
+      "adapter": "",
+      "market": "tw",
+      "industry": "commerce-saas",
+      "tags": [
+        "tech",
+        "saas",
+        "taiwan"
+      ],
+      "sourceStrategy": "tracked-company",
+      "titleFilter": {
+        "positive": [
+          "software engineer",
+          "frontend",
+          "front-end",
+          "backend",
+          "full stack",
+          "full-stack",
+          "product manager",
+          "data analyst",
+          "data scientist",
+          "ai",
+          "machine learning",
+          "engineer",
+          "developer",
+          "工程師",
+          "前端",
+          "後端",
+          "全端",
+          "產品經理",
+          "資料分析",
+          "資料科學",
+          "機器學習",
+          "人工智慧"
+        ],
+        "negative": [
+          "senior director",
+          "vp ",
+          "vice president",
+          "head of",
+          "principal",
+          "staff",
+          "sales",
+          "account executive",
+          "legal",
+          "finance",
+          "資深總監",
+          "副總",
+          "法務",
+          "財務",
+          "業務"
+        ]
+      },
+      "maxDiscovered": 30
+    },
+    {
+      "name": "Cathay Financial Holdings",
+      "company": "Cathay Financial Holdings",
+      "source": "Cathay Financial Holdings",
+      "url": "https://www.cathayholdings.com/holdings/careers",
+      "type": "company",
+      "adapter": "",
+      "market": "tw",
+      "industry": "financial-services",
+      "tags": [
+        "large-enterprise",
+        "finance",
+        "taiwan"
+      ],
+      "sourceStrategy": "tracked-company",
+      "titleFilter": {
+        "positive": [
+          "software engineer",
+          "frontend",
+          "front-end",
+          "backend",
+          "full stack",
+          "full-stack",
+          "product manager",
+          "data analyst",
+          "data scientist",
+          "ai",
+          "machine learning",
+          "engineer",
+          "developer",
+          "工程師",
+          "前端",
+          "後端",
+          "全端",
+          "產品經理",
+          "資料分析",
+          "資料科學",
+          "機器學習",
+          "人工智慧"
+        ],
+        "negative": [
+          "senior director",
+          "vp ",
+          "vice president",
+          "head of",
+          "principal",
+          "staff",
+          "sales",
+          "account executive",
+          "legal",
+          "finance",
+          "資深總監",
+          "副總",
+          "法務",
+          "財務",
+          "業務"
+        ]
+      },
+      "maxDiscovered": 30
+    },
+    {
+      "name": "Fubon Financial Holdings",
+      "company": "Fubon Financial Holdings",
+      "source": "Fubon Financial Holdings",
+      "url": "https://www.fubon.com/financialholdings/en/career/career.htm",
+      "type": "company",
+      "adapter": "",
+      "market": "tw",
+      "industry": "financial-services",
+      "tags": [
+        "large-enterprise",
+        "finance",
+        "taiwan"
+      ],
+      "sourceStrategy": "tracked-company",
+      "titleFilter": {
+        "positive": [
+          "software engineer",
+          "frontend",
+          "front-end",
+          "backend",
+          "full stack",
+          "full-stack",
+          "product manager",
+          "data analyst",
+          "data scientist",
+          "ai",
+          "machine learning",
+          "engineer",
+          "developer",
+          "工程師",
+          "前端",
+          "後端",
+          "全端",
+          "產品經理",
+          "資料分析",
+          "資料科學",
+          "機器學習",
+          "人工智慧"
+        ],
+        "negative": [
+          "senior director",
+          "vp ",
+          "vice president",
+          "head of",
+          "principal",
+          "staff",
+          "sales",
+          "account executive",
+          "legal",
+          "finance",
+          "資深總監",
+          "副總",
+          "法務",
+          "財務",
+          "業務"
+        ]
+      },
+      "maxDiscovered": 30
+    },
+    {
+      "name": "LINE Taiwan",
+      "company": "LINE Taiwan",
+      "source": "LINE Taiwan",
+      "url": "https://linecorp.com/zh-hant/career/jobs/",
+      "type": "company",
+      "adapter": "",
+      "market": "tw",
+      "industry": "internet",
+      "tags": [
+        "tech",
+        "internet",
+        "taiwan"
+      ],
+      "sourceStrategy": "tracked-company",
+      "titleFilter": {
+        "positive": [
+          "software engineer",
+          "frontend",
+          "front-end",
+          "backend",
+          "full stack",
+          "full-stack",
+          "product manager",
+          "data analyst",
+          "data scientist",
+          "ai",
+          "machine learning",
+          "engineer",
+          "developer",
+          "工程師",
+          "前端",
+          "後端",
+          "全端",
+          "產品經理",
+          "資料分析",
+          "資料科學",
+          "機器學習",
+          "人工智慧"
+        ],
+        "negative": [
+          "senior director",
+          "vp ",
+          "vice president",
+          "head of",
+          "principal",
+          "staff",
+          "sales",
+          "account executive",
+          "legal",
+          "finance",
+          "資深總監",
+          "副總",
+          "法務",
+          "財務",
+          "業務"
+        ]
+      },
+      "maxDiscovered": 40
+    },
+    {
+      "name": "ByteDance",
+      "company": "ByteDance",
+      "source": "ByteDance",
+      "url": "https://jobs.bytedance.com/en/",
+      "type": "company",
+      "adapter": "smartrecruiters",
+      "companyIdentifier": "ByteDance",
+      "market": "cn",
+      "industry": "internet",
+      "tags": [
+        "large-enterprise",
+        "internet",
+        "china"
+      ],
+      "sourceStrategy": "tracked-company",
+      "titleFilter": {
+        "positive": [
+          "software engineer",
+          "frontend",
+          "front-end",
+          "backend",
+          "full stack",
+          "full-stack",
+          "product manager",
+          "data analyst",
+          "data scientist",
+          "ai",
+          "machine learning",
+          "engineer",
+          "developer",
+          "工程師",
+          "前端",
+          "後端",
+          "全端",
+          "產品經理",
+          "資料分析",
+          "資料科學",
+          "機器學習",
+          "人工智慧"
+        ],
+        "negative": [
+          "senior director",
+          "vp ",
+          "vice president",
+          "head of",
+          "principal",
+          "staff",
+          "sales",
+          "account executive",
+          "legal",
+          "finance",
+          "資深總監",
+          "副總",
+          "法務",
+          "財務",
+          "業務"
+        ]
+      },
+      "maxDiscovered": 80
+    },
+    {
+      "name": "Tencent",
+      "company": "Tencent",
+      "source": "Tencent",
+      "url": "https://careers.tencent.com/en-us/",
+      "type": "company",
+      "adapter": "",
+      "market": "cn",
+      "industry": "internet",
+      "tags": [
+        "large-enterprise",
+        "internet",
+        "china"
+      ],
+      "sourceStrategy": "tracked-company",
+      "titleFilter": {
+        "positive": [
+          "software engineer",
+          "frontend",
+          "front-end",
+          "backend",
+          "full stack",
+          "full-stack",
+          "product manager",
+          "data analyst",
+          "data scientist",
+          "ai",
+          "machine learning",
+          "engineer",
+          "developer",
+          "工程師",
+          "前端",
+          "後端",
+          "全端",
+          "產品經理",
+          "資料分析",
+          "資料科學",
+          "機器學習",
+          "人工智慧"
+        ],
+        "negative": [
+          "senior director",
+          "vp ",
+          "vice president",
+          "head of",
+          "principal",
+          "staff",
+          "sales",
+          "account executive",
+          "legal",
+          "finance",
+          "資深總監",
+          "副總",
+          "法務",
+          "財務",
+          "業務"
+        ]
+      },
+      "maxDiscovered": 80
+    },
+    {
+      "name": "Alibaba",
+      "company": "Alibaba",
+      "source": "Alibaba",
+      "url": "https://talent.alibaba.com/",
+      "type": "company",
+      "adapter": "",
+      "market": "cn",
+      "industry": "internet-commerce",
+      "tags": [
+        "large-enterprise",
+        "commerce",
+        "china"
+      ],
+      "sourceStrategy": "tracked-company",
+      "titleFilter": {
+        "positive": [
+          "software engineer",
+          "frontend",
+          "front-end",
+          "backend",
+          "full stack",
+          "full-stack",
+          "product manager",
+          "data analyst",
+          "data scientist",
+          "ai",
+          "machine learning",
+          "engineer",
+          "developer",
+          "工程師",
+          "前端",
+          "後端",
+          "全端",
+          "產品經理",
+          "資料分析",
+          "資料科學",
+          "機器學習",
+          "人工智慧"
+        ],
+        "negative": [
+          "senior director",
+          "vp ",
+          "vice president",
+          "head of",
+          "principal",
+          "staff",
+          "sales",
+          "account executive",
+          "legal",
+          "finance",
+          "資深總監",
+          "副總",
+          "法務",
+          "財務",
+          "業務"
+        ]
+      },
+      "maxDiscovered": 80
+    },
+    {
+      "name": "Huawei",
+      "company": "Huawei",
+      "source": "Huawei",
+      "url": "https://career.huawei.com/reccampportal/portal5/index.html",
+      "type": "company",
+      "adapter": "",
+      "market": "cn",
+      "industry": "telecom-hardware",
+      "tags": [
+        "large-enterprise",
+        "telecom",
+        "china"
+      ],
+      "sourceStrategy": "tracked-company",
+      "titleFilter": {
+        "positive": [
+          "software engineer",
+          "frontend",
+          "front-end",
+          "backend",
+          "full stack",
+          "full-stack",
+          "product manager",
+          "data analyst",
+          "data scientist",
+          "ai",
+          "machine learning",
+          "engineer",
+          "developer",
+          "工程師",
+          "前端",
+          "後端",
+          "全端",
+          "產品經理",
+          "資料分析",
+          "資料科學",
+          "機器學習",
+          "人工智慧"
+        ],
+        "negative": [
+          "senior director",
+          "vp ",
+          "vice president",
+          "head of",
+          "principal",
+          "staff",
+          "sales",
+          "account executive",
+          "legal",
+          "finance",
+          "資深總監",
+          "副總",
+          "法務",
+          "財務",
+          "業務"
+        ]
+      },
+      "maxDiscovered": 80
+    },
+    {
+      "name": "Xiaomi",
+      "company": "Xiaomi",
+      "source": "Xiaomi",
+      "url": "https://hr.xiaomi.com/",
+      "type": "company",
+      "adapter": "",
+      "market": "cn",
+      "industry": "consumer-electronics",
+      "tags": [
+        "large-enterprise",
+        "hardware",
+        "china"
+      ],
+      "sourceStrategy": "tracked-company",
+      "titleFilter": {
+        "positive": [
+          "software engineer",
+          "frontend",
+          "front-end",
+          "backend",
+          "full stack",
+          "full-stack",
+          "product manager",
+          "data analyst",
+          "data scientist",
+          "ai",
+          "machine learning",
+          "engineer",
+          "developer",
+          "工程師",
+          "前端",
+          "後端",
+          "全端",
+          "產品經理",
+          "資料分析",
+          "資料科學",
+          "機器學習",
+          "人工智慧"
+        ],
+        "negative": [
+          "senior director",
+          "vp ",
+          "vice president",
+          "head of",
+          "principal",
+          "staff",
+          "sales",
+          "account executive",
+          "legal",
+          "finance",
+          "資深總監",
+          "副總",
+          "法務",
+          "財務",
+          "業務"
+        ]
+      },
+      "maxDiscovered": 60
+    },
+    {
+      "name": "Meituan",
+      "company": "Meituan",
+      "source": "Meituan",
+      "url": "https://zhaopin.meituan.com/",
+      "type": "company",
+      "adapter": "",
+      "market": "cn",
+      "industry": "local-services",
+      "tags": [
+        "large-enterprise",
+        "local-services",
+        "china"
+      ],
+      "sourceStrategy": "tracked-company",
+      "titleFilter": {
+        "positive": [
+          "software engineer",
+          "frontend",
+          "front-end",
+          "backend",
+          "full stack",
+          "full-stack",
+          "product manager",
+          "data analyst",
+          "data scientist",
+          "ai",
+          "machine learning",
+          "engineer",
+          "developer",
+          "工程師",
+          "前端",
+          "後端",
+          "全端",
+          "產品經理",
+          "資料分析",
+          "資料科學",
+          "機器學習",
+          "人工智慧"
+        ],
+        "negative": [
+          "senior director",
+          "vp ",
+          "vice president",
+          "head of",
+          "principal",
+          "staff",
+          "sales",
+          "account executive",
+          "legal",
+          "finance",
+          "資深總監",
+          "副總",
+          "法務",
+          "財務",
+          "業務"
+        ]
+      },
+      "maxDiscovered": 60
+    },
+    {
+      "name": "JD.com",
+      "company": "JD.com",
+      "source": "JD.com",
+      "url": "https://zhaopin.jd.com/",
+      "type": "company",
+      "adapter": "",
+      "market": "cn",
+      "industry": "ecommerce-logistics",
+      "tags": [
+        "large-enterprise",
+        "commerce",
+        "china"
+      ],
+      "sourceStrategy": "tracked-company",
+      "titleFilter": {
+        "positive": [
+          "software engineer",
+          "frontend",
+          "front-end",
+          "backend",
+          "full stack",
+          "full-stack",
+          "product manager",
+          "data analyst",
+          "data scientist",
+          "ai",
+          "machine learning",
+          "engineer",
+          "developer",
+          "工程師",
+          "前端",
+          "後端",
+          "全端",
+          "產品經理",
+          "資料分析",
+          "資料科學",
+          "機器學習",
+          "人工智慧"
+        ],
+        "negative": [
+          "senior director",
+          "vp ",
+          "vice president",
+          "head of",
+          "principal",
+          "staff",
+          "sales",
+          "account executive",
+          "legal",
+          "finance",
+          "資深總監",
+          "副總",
+          "法務",
+          "財務",
+          "業務"
+        ]
+      },
+      "maxDiscovered": 60
+    },
+    {
+      "name": "Baidu",
+      "company": "Baidu",
+      "source": "Baidu",
+      "url": "https://talent.baidu.com/",
+      "type": "company",
+      "adapter": "",
+      "market": "cn",
+      "industry": "ai-search",
+      "tags": [
+        "large-enterprise",
+        "ai",
+        "china"
+      ],
+      "sourceStrategy": "tracked-company",
+      "titleFilter": {
+        "positive": [
+          "software engineer",
+          "frontend",
+          "front-end",
+          "backend",
+          "full stack",
+          "full-stack",
+          "product manager",
+          "data analyst",
+          "data scientist",
+          "ai",
+          "machine learning",
+          "engineer",
+          "developer",
+          "工程師",
+          "前端",
+          "後端",
+          "全端",
+          "產品經理",
+          "資料分析",
+          "資料科學",
+          "機器學習",
+          "人工智慧"
+        ],
+        "negative": [
+          "senior director",
+          "vp ",
+          "vice president",
+          "head of",
+          "principal",
+          "staff",
+          "sales",
+          "account executive",
+          "legal",
+          "finance",
+          "資深總監",
+          "副總",
+          "法務",
+          "財務",
+          "業務"
+        ]
+      },
+      "maxDiscovered": 60
+    },
+    {
+      "name": "NetEase",
+      "company": "NetEase",
+      "source": "NetEase",
+      "url": "https://hr.163.com/",
+      "type": "company",
+      "adapter": "",
+      "market": "cn",
+      "industry": "internet-gaming",
+      "tags": [
+        "large-enterprise",
+        "internet",
+        "china"
+      ],
+      "sourceStrategy": "tracked-company",
+      "titleFilter": {
+        "positive": [
+          "software engineer",
+          "frontend",
+          "front-end",
+          "backend",
+          "full stack",
+          "full-stack",
+          "product manager",
+          "data analyst",
+          "data scientist",
+          "ai",
+          "machine learning",
+          "engineer",
+          "developer",
+          "工程師",
+          "前端",
+          "後端",
+          "全端",
+          "產品經理",
+          "資料分析",
+          "資料科學",
+          "機器學習",
+          "人工智慧"
+        ],
+        "negative": [
+          "senior director",
+          "vp ",
+          "vice president",
+          "head of",
+          "principal",
+          "staff",
+          "sales",
+          "account executive",
+          "legal",
+          "finance",
+          "資深總監",
+          "副總",
+          "法務",
+          "財務",
+          "業務"
+        ]
+      },
+      "maxDiscovered": 60
+    },
+    {
+      "name": "Trip.com Group",
+      "company": "Trip.com Group",
+      "source": "Trip.com Group",
+      "url": "https://careers.trip.com/",
+      "type": "company",
+      "adapter": "",
+      "market": "cn",
+      "industry": "travel-tech",
+      "tags": [
+        "large-enterprise",
+        "travel",
+        "china"
+      ],
+      "sourceStrategy": "tracked-company",
+      "titleFilter": {
+        "positive": [
+          "software engineer",
+          "frontend",
+          "front-end",
+          "backend",
+          "full stack",
+          "full-stack",
+          "product manager",
+          "data analyst",
+          "data scientist",
+          "ai",
+          "machine learning",
+          "engineer",
+          "developer",
+          "工程師",
+          "前端",
+          "後端",
+          "全端",
+          "產品經理",
+          "資料分析",
+          "資料科學",
+          "機器學習",
+          "人工智慧"
+        ],
+        "negative": [
+          "senior director",
+          "vp ",
+          "vice president",
+          "head of",
+          "principal",
+          "staff",
+          "sales",
+          "account executive",
+          "legal",
+          "finance",
+          "資深總監",
+          "副總",
+          "法務",
+          "財務",
+          "業務"
+        ]
+      },
+      "maxDiscovered": 60
+    },
+    {
+      "name": "Bilibili",
+      "company": "Bilibili",
+      "source": "Bilibili",
+      "url": "https://jobs.bilibili.com/",
+      "type": "company",
+      "adapter": "",
+      "market": "cn",
+      "industry": "media-platform",
+      "tags": [
+        "large-enterprise",
+        "media",
+        "china"
+      ],
+      "sourceStrategy": "tracked-company",
+      "titleFilter": {
+        "positive": [
+          "software engineer",
+          "frontend",
+          "front-end",
+          "backend",
+          "full stack",
+          "full-stack",
+          "product manager",
+          "data analyst",
+          "data scientist",
+          "ai",
+          "machine learning",
+          "engineer",
+          "developer",
+          "工程師",
+          "前端",
+          "後端",
+          "全端",
+          "產品經理",
+          "資料分析",
+          "資料科學",
+          "機器學習",
+          "人工智慧"
+        ],
+        "negative": [
+          "senior director",
+          "vp ",
+          "vice president",
+          "head of",
+          "principal",
+          "staff",
+          "sales",
+          "account executive",
+          "legal",
+          "finance",
+          "資深總監",
+          "副總",
+          "法務",
+          "財務",
+          "業務"
+        ]
+      },
+      "maxDiscovered": 60
+    },
+    {
+      "name": "Sony Japan",
+      "company": "Sony Japan",
+      "source": "Sony Japan",
+      "url": "https://www.sony.com/en/SonyInfo/Careers/japan/",
+      "type": "company",
+      "adapter": "",
+      "market": "jp",
+      "industry": "electronics-entertainment",
+      "tags": [
+        "large-enterprise",
+        "electronics",
+        "japan"
+      ],
+      "sourceStrategy": "tracked-company",
+      "titleFilter": {
+        "positive": [
+          "software engineer",
+          "frontend",
+          "front-end",
+          "backend",
+          "full stack",
+          "full-stack",
+          "product manager",
+          "data analyst",
+          "data scientist",
+          "ai",
+          "machine learning",
+          "engineer",
+          "developer",
+          "工程師",
+          "前端",
+          "後端",
+          "全端",
+          "產品經理",
+          "資料分析",
+          "資料科學",
+          "機器學習",
+          "人工智慧"
+        ],
+        "negative": [
+          "senior director",
+          "vp ",
+          "vice president",
+          "head of",
+          "principal",
+          "staff",
+          "sales",
+          "account executive",
+          "legal",
+          "finance",
+          "資深總監",
+          "副總",
+          "法務",
+          "財務",
+          "業務"
+        ]
+      },
+      "maxDiscovered": 60
+    },
+    {
+      "name": "Toyota Japan",
+      "company": "Toyota Japan",
+      "source": "Toyota Japan",
+      "url": "https://global.toyota/jp/careers/",
+      "type": "company",
+      "adapter": "",
+      "market": "jp",
+      "industry": "automotive",
+      "tags": [
+        "large-enterprise",
+        "automotive",
+        "japan"
+      ],
+      "sourceStrategy": "tracked-company",
+      "titleFilter": {
+        "positive": [
+          "software engineer",
+          "frontend",
+          "front-end",
+          "backend",
+          "full stack",
+          "full-stack",
+          "product manager",
+          "data analyst",
+          "data scientist",
+          "ai",
+          "machine learning",
+          "engineer",
+          "developer",
+          "工程師",
+          "前端",
+          "後端",
+          "全端",
+          "產品經理",
+          "資料分析",
+          "資料科學",
+          "機器學習",
+          "人工智慧"
+        ],
+        "negative": [
+          "senior director",
+          "vp ",
+          "vice president",
+          "head of",
+          "principal",
+          "staff",
+          "sales",
+          "account executive",
+          "legal",
+          "finance",
+          "資深總監",
+          "副總",
+          "法務",
+          "財務",
+          "業務"
+        ]
+      },
+      "maxDiscovered": 60
+    },
+    {
+      "name": "Rakuten",
+      "company": "Rakuten",
+      "source": "Rakuten",
+      "url": "https://corp.rakuten.co.jp/careers/",
+      "type": "company",
+      "adapter": "",
+      "market": "jp",
+      "industry": "internet-commerce",
+      "tags": [
+        "large-enterprise",
+        "internet",
+        "japan"
+      ],
+      "sourceStrategy": "tracked-company",
+      "titleFilter": {
+        "positive": [
+          "software engineer",
+          "frontend",
+          "front-end",
+          "backend",
+          "full stack",
+          "full-stack",
+          "product manager",
+          "data analyst",
+          "data scientist",
+          "ai",
+          "machine learning",
+          "engineer",
+          "developer",
+          "工程師",
+          "前端",
+          "後端",
+          "全端",
+          "產品經理",
+          "資料分析",
+          "資料科學",
+          "機器學習",
+          "人工智慧"
+        ],
+        "negative": [
+          "senior director",
+          "vp ",
+          "vice president",
+          "head of",
+          "principal",
+          "staff",
+          "sales",
+          "account executive",
+          "legal",
+          "finance",
+          "資深總監",
+          "副總",
+          "法務",
+          "財務",
+          "業務"
+        ]
+      },
+      "maxDiscovered": 80
+    },
+    {
+      "name": "Rakuten Mobile",
+      "company": "Rakuten Mobile",
+      "source": "Rakuten Mobile",
+      "url": "https://corp.mobile.rakuten.co.jp/english/recruit/",
+      "type": "company",
+      "adapter": "",
+      "market": "jp",
+      "industry": "telecom",
+      "tags": [
+        "large-enterprise",
+        "telecom",
+        "japan"
+      ],
+      "sourceStrategy": "tracked-company",
+      "titleFilter": {
+        "positive": [
+          "software engineer",
+          "frontend",
+          "front-end",
+          "backend",
+          "full stack",
+          "full-stack",
+          "product manager",
+          "data analyst",
+          "data scientist",
+          "ai",
+          "machine learning",
+          "engineer",
+          "developer",
+          "工程師",
+          "前端",
+          "後端",
+          "全端",
+          "產品經理",
+          "資料分析",
+          "資料科學",
+          "機器學習",
+          "人工智慧"
+        ],
+        "negative": [
+          "senior director",
+          "vp ",
+          "vice president",
+          "head of",
+          "principal",
+          "staff",
+          "sales",
+          "account executive",
+          "legal",
+          "finance",
+          "資深總監",
+          "副總",
+          "法務",
+          "財務",
+          "業務"
+        ]
+      },
+      "maxDiscovered": 50
+    },
+    {
+      "name": "Mitsubishi Heavy Industries",
+      "company": "Mitsubishi Heavy Industries",
+      "source": "Mitsubishi Heavy Industries",
+      "url": "https://www.mhi.com/recruit",
+      "type": "company",
+      "adapter": "",
+      "market": "jp",
+      "industry": "industrial-engineering",
+      "tags": [
+        "large-enterprise",
+        "industrial",
+        "japan"
+      ],
+      "sourceStrategy": "tracked-company",
+      "titleFilter": {
+        "positive": [
+          "software engineer",
+          "frontend",
+          "front-end",
+          "backend",
+          "full stack",
+          "full-stack",
+          "product manager",
+          "data analyst",
+          "data scientist",
+          "ai",
+          "machine learning",
+          "engineer",
+          "developer",
+          "工程師",
+          "前端",
+          "後端",
+          "全端",
+          "產品經理",
+          "資料分析",
+          "資料科學",
+          "機器學習",
+          "人工智慧"
+        ],
+        "negative": [
+          "senior director",
+          "vp ",
+          "vice president",
+          "head of",
+          "principal",
+          "staff",
+          "sales",
+          "account executive",
+          "legal",
+          "finance",
+          "資深總監",
+          "副總",
+          "法務",
+          "財務",
+          "業務"
+        ]
+      },
+      "maxDiscovered": 50
+    },
+    {
+      "name": "Samsung Careers",
+      "company": "Samsung Careers",
+      "source": "Samsung Careers",
+      "url": "https://www.samsungcareers.com/",
+      "type": "company",
+      "adapter": "",
+      "market": "kr",
+      "industry": "electronics",
+      "tags": [
+        "large-enterprise",
+        "electronics",
+        "korea"
+      ],
+      "sourceStrategy": "tracked-company",
+      "titleFilter": {
+        "positive": [
+          "software engineer",
+          "frontend",
+          "front-end",
+          "backend",
+          "full stack",
+          "full-stack",
+          "product manager",
+          "data analyst",
+          "data scientist",
+          "ai",
+          "machine learning",
+          "engineer",
+          "developer",
+          "工程師",
+          "前端",
+          "後端",
+          "全端",
+          "產品經理",
+          "資料分析",
+          "資料科學",
+          "機器學習",
+          "人工智慧"
+        ],
+        "negative": [
+          "senior director",
+          "vp ",
+          "vice president",
+          "head of",
+          "principal",
+          "staff",
+          "sales",
+          "account executive",
+          "legal",
+          "finance",
+          "資深總監",
+          "副總",
+          "法務",
+          "財務",
+          "業務"
+        ]
+      },
+      "maxDiscovered": 80
+    },
+    {
+      "name": "Samsung Workday",
+      "company": "Samsung Workday",
+      "source": "Samsung Workday",
+      "url": "https://sec.wd3.myworkdayjobs.com/Samsung_Careers",
+      "type": "company",
+      "adapter": "workday",
+      "site": "Samsung_Careers",
+      "searchText": "engineer",
+      "market": "kr",
+      "industry": "electronics",
+      "tags": [
+        "large-enterprise",
+        "electronics",
+        "korea",
+        "workday"
+      ],
+      "sourceStrategy": "tracked-company",
+      "titleFilter": {
+        "positive": [
+          "software engineer",
+          "frontend",
+          "front-end",
+          "backend",
+          "full stack",
+          "full-stack",
+          "product manager",
+          "data analyst",
+          "data scientist",
+          "ai",
+          "machine learning",
+          "engineer",
+          "developer",
+          "工程師",
+          "前端",
+          "後端",
+          "全端",
+          "產品經理",
+          "資料分析",
+          "資料科學",
+          "機器學習",
+          "人工智慧"
+        ],
+        "negative": [
+          "senior director",
+          "vp ",
+          "vice president",
+          "head of",
+          "principal",
+          "staff",
+          "sales",
+          "account executive",
+          "legal",
+          "finance",
+          "資深總監",
+          "副總",
+          "法務",
+          "財務",
+          "業務"
+        ]
+      },
+      "maxDiscovered": 80
+    },
+    {
+      "name": "Samsung Research",
+      "company": "Samsung Research",
+      "source": "Samsung Research",
+      "url": "https://research.samsung.com/careers",
+      "type": "company",
+      "adapter": "",
+      "market": "kr",
+      "industry": "research",
+      "tags": [
+        "large-enterprise",
+        "research",
+        "korea"
+      ],
+      "sourceStrategy": "tracked-company",
+      "titleFilter": {
+        "positive": [
+          "software engineer",
+          "frontend",
+          "front-end",
+          "backend",
+          "full stack",
+          "full-stack",
+          "product manager",
+          "data analyst",
+          "data scientist",
+          "ai",
+          "machine learning",
+          "engineer",
+          "developer",
+          "工程師",
+          "前端",
+          "後端",
+          "全端",
+          "產品經理",
+          "資料分析",
+          "資料科學",
+          "機器學習",
+          "人工智慧"
+        ],
+        "negative": [
+          "senior director",
+          "vp ",
+          "vice president",
+          "head of",
+          "principal",
+          "staff",
+          "sales",
+          "account executive",
+          "legal",
+          "finance",
+          "資深總監",
+          "副總",
+          "法務",
+          "財務",
+          "業務"
+        ]
+      },
+      "maxDiscovered": 50
+    },
+    {
+      "name": "NAVER Careers",
+      "company": "NAVER Careers",
+      "source": "NAVER Careers",
+      "url": "https://recruit.navercorp.com/",
+      "type": "company",
+      "adapter": "",
+      "market": "kr",
+      "industry": "internet",
+      "tags": [
+        "large-enterprise",
+        "internet",
+        "korea"
+      ],
+      "sourceStrategy": "tracked-company",
+      "titleFilter": {
+        "positive": [
+          "software engineer",
+          "frontend",
+          "front-end",
+          "backend",
+          "full stack",
+          "full-stack",
+          "product manager",
+          "data analyst",
+          "data scientist",
+          "ai",
+          "machine learning",
+          "engineer",
+          "developer",
+          "工程師",
+          "前端",
+          "後端",
+          "全端",
+          "產品經理",
+          "資料分析",
+          "資料科學",
+          "機器學習",
+          "人工智慧"
+        ],
+        "negative": [
+          "senior director",
+          "vp ",
+          "vice president",
+          "head of",
+          "principal",
+          "staff",
+          "sales",
+          "account executive",
+          "legal",
+          "finance",
+          "資深總監",
+          "副總",
+          "法務",
+          "財務",
+          "業務"
+        ]
+      },
+      "maxDiscovered": 80
+    },
+    {
+      "name": "Kakao Enterprise",
+      "company": "Kakao Enterprise",
+      "source": "Kakao Enterprise",
+      "url": "https://careers.kakaoenterprise.com/",
+      "type": "company",
+      "adapter": "",
+      "market": "kr",
+      "industry": "cloud-ai",
+      "tags": [
+        "large-enterprise",
+        "cloud",
+        "korea"
+      ],
+      "sourceStrategy": "tracked-company",
+      "titleFilter": {
+        "positive": [
+          "software engineer",
+          "frontend",
+          "front-end",
+          "backend",
+          "full stack",
+          "full-stack",
+          "product manager",
+          "data analyst",
+          "data scientist",
+          "ai",
+          "machine learning",
+          "engineer",
+          "developer",
+          "工程師",
+          "前端",
+          "後端",
+          "全端",
+          "產品經理",
+          "資料分析",
+          "資料科學",
+          "機器學習",
+          "人工智慧"
+        ],
+        "negative": [
+          "senior director",
+          "vp ",
+          "vice president",
+          "head of",
+          "principal",
+          "staff",
+          "sales",
+          "account executive",
+          "legal",
+          "finance",
+          "資深總監",
+          "副總",
+          "法務",
+          "財務",
+          "業務"
+        ]
+      },
+      "maxDiscovered": 60
+    },
+    {
+      "name": "LG Careers",
+      "company": "LG Careers",
+      "source": "LG Careers",
+      "url": "https://careers.lg.com/",
+      "type": "company",
+      "adapter": "",
+      "market": "kr",
+      "industry": "conglomerate",
+      "tags": [
+        "large-enterprise",
+        "electronics",
+        "korea"
+      ],
+      "sourceStrategy": "tracked-company",
+      "titleFilter": {
+        "positive": [
+          "software engineer",
+          "frontend",
+          "front-end",
+          "backend",
+          "full stack",
+          "full-stack",
+          "product manager",
+          "data analyst",
+          "data scientist",
+          "ai",
+          "machine learning",
+          "engineer",
+          "developer",
+          "工程師",
+          "前端",
+          "後端",
+          "全端",
+          "產品經理",
+          "資料分析",
+          "資料科學",
+          "機器學習",
+          "人工智慧"
+        ],
+        "negative": [
+          "senior director",
+          "vp ",
+          "vice president",
+          "head of",
+          "principal",
+          "staff",
+          "sales",
+          "account executive",
+          "legal",
+          "finance",
+          "資深總監",
+          "副總",
+          "法務",
+          "財務",
+          "業務"
+        ]
+      },
+      "maxDiscovered": 80
+    },
+    {
+      "name": "DBS Bank",
+      "company": "DBS Bank",
+      "source": "DBS Bank",
+      "url": "https://www.dbs.com/careers/default.page",
+      "type": "company",
+      "adapter": "",
+      "market": "sg",
+      "industry": "financial-services",
+      "tags": [
+        "large-enterprise",
+        "finance",
+        "singapore"
+      ],
+      "sourceStrategy": "tracked-company",
+      "titleFilter": {
+        "positive": [
+          "software engineer",
+          "frontend",
+          "front-end",
+          "backend",
+          "full stack",
+          "full-stack",
+          "product manager",
+          "data analyst",
+          "data scientist",
+          "ai",
+          "machine learning",
+          "engineer",
+          "developer",
+          "工程師",
+          "前端",
+          "後端",
+          "全端",
+          "產品經理",
+          "資料分析",
+          "資料科學",
+          "機器學習",
+          "人工智慧"
+        ],
+        "negative": [
+          "senior director",
+          "vp ",
+          "vice president",
+          "head of",
+          "principal",
+          "staff",
+          "sales",
+          "account executive",
+          "legal",
+          "finance",
+          "資深總監",
+          "副總",
+          "法務",
+          "財務",
+          "業務"
+        ]
+      },
+      "maxDiscovered": 60
+    },
+    {
+      "name": "Grab",
+      "company": "Grab",
+      "source": "Grab",
+      "url": "https://www.grab.careers/en/",
+      "type": "company",
+      "adapter": "smartrecruiters",
+      "companyIdentifier": "Grab",
+      "market": "sg",
+      "industry": "internet-mobility",
+      "tags": [
+        "large-enterprise",
+        "internet",
+        "singapore"
+      ],
+      "sourceStrategy": "tracked-company",
+      "titleFilter": {
+        "positive": [
+          "software engineer",
+          "frontend",
+          "front-end",
+          "backend",
+          "full stack",
+          "full-stack",
+          "product manager",
+          "data analyst",
+          "data scientist",
+          "ai",
+          "machine learning",
+          "engineer",
+          "developer",
+          "工程師",
+          "前端",
+          "後端",
+          "全端",
+          "產品經理",
+          "資料分析",
+          "資料科學",
+          "機器學習",
+          "人工智慧"
+        ],
+        "negative": [
+          "senior director",
+          "vp ",
+          "vice president",
+          "head of",
+          "principal",
+          "staff",
+          "sales",
+          "account executive",
+          "legal",
+          "finance",
+          "資深總監",
+          "副總",
+          "法務",
+          "財務",
+          "業務"
+        ]
+      },
+      "maxDiscovered": 80
+    },
+    {
+      "name": "Sea Group",
+      "company": "Sea Group",
+      "source": "Sea Group",
+      "url": "https://career.sea.com/",
+      "type": "company",
+      "adapter": "",
+      "market": "sg",
+      "industry": "internet-gaming-commerce",
+      "tags": [
+        "large-enterprise",
+        "internet",
+        "singapore"
+      ],
+      "sourceStrategy": "tracked-company",
+      "titleFilter": {
+        "positive": [
+          "software engineer",
+          "frontend",
+          "front-end",
+          "backend",
+          "full stack",
+          "full-stack",
+          "product manager",
+          "data analyst",
+          "data scientist",
+          "ai",
+          "machine learning",
+          "engineer",
+          "developer",
+          "工程師",
+          "前端",
+          "後端",
+          "全端",
+          "產品經理",
+          "資料分析",
+          "資料科學",
+          "機器學習",
+          "人工智慧"
+        ],
+        "negative": [
+          "senior director",
+          "vp ",
+          "vice president",
+          "head of",
+          "principal",
+          "staff",
+          "sales",
+          "account executive",
+          "legal",
+          "finance",
+          "資深總監",
+          "副總",
+          "法務",
+          "財務",
+          "業務"
+        ]
+      },
+      "maxDiscovered": 80
+    },
+    {
+      "name": "GovTech Singapore",
+      "company": "GovTech Singapore",
+      "source": "GovTech Singapore",
+      "url": "https://www.tech.gov.sg/careers/",
+      "type": "company",
+      "adapter": "",
+      "market": "sg",
+      "industry": "public-sector-tech",
+      "tags": [
+        "large-enterprise",
+        "government-tech",
+        "singapore"
+      ],
+      "sourceStrategy": "tracked-company",
+      "titleFilter": {
+        "positive": [
+          "software engineer",
+          "frontend",
+          "front-end",
+          "backend",
+          "full stack",
+          "full-stack",
+          "product manager",
+          "data analyst",
+          "data scientist",
+          "ai",
+          "machine learning",
+          "engineer",
+          "developer",
+          "工程師",
+          "前端",
+          "後端",
+          "全端",
+          "產品經理",
+          "資料分析",
+          "資料科學",
+          "機器學習",
+          "人工智慧"
+        ],
+        "negative": [
+          "senior director",
+          "vp ",
+          "vice president",
+          "head of",
+          "principal",
+          "staff",
+          "sales",
+          "account executive",
+          "legal",
+          "finance",
+          "資深總監",
+          "副總",
+          "法務",
+          "財務",
+          "業務"
+        ]
+      },
+      "maxDiscovered": 60
+    },
+    {
+      "name": "ST Engineering",
+      "company": "ST Engineering",
+      "source": "ST Engineering",
+      "url": "https://stengg.cc/en/careers.html",
+      "type": "company",
+      "adapter": "",
+      "market": "sg",
+      "industry": "engineering-defense",
+      "tags": [
+        "large-enterprise",
+        "engineering",
+        "singapore"
+      ],
+      "sourceStrategy": "tracked-company",
+      "titleFilter": {
+        "positive": [
+          "software engineer",
+          "frontend",
+          "front-end",
+          "backend",
+          "full stack",
+          "full-stack",
+          "product manager",
+          "data analyst",
+          "data scientist",
+          "ai",
+          "machine learning",
+          "engineer",
+          "developer",
+          "工程師",
+          "前端",
+          "後端",
+          "全端",
+          "產品經理",
+          "資料分析",
+          "資料科學",
+          "機器學習",
+          "人工智慧"
+        ],
+        "negative": [
+          "senior director",
+          "vp ",
+          "vice president",
+          "head of",
+          "principal",
+          "staff",
+          "sales",
+          "account executive",
+          "legal",
+          "finance",
+          "資深總監",
+          "副總",
+          "法務",
+          "財務",
+          "業務"
+        ]
+      },
+      "maxDiscovered": 60
+    },
+    {
+      "name": "Singapore Airlines Tech",
+      "company": "Singapore Airlines Tech",
+      "source": "Singapore Airlines Tech",
+      "url": "https://techcareers.singaporeair.com.sg/index.html",
+      "type": "company",
+      "adapter": "",
+      "market": "sg",
+      "industry": "aviation-tech",
+      "tags": [
+        "large-enterprise",
+        "aviation",
+        "singapore"
+      ],
+      "sourceStrategy": "tracked-company",
+      "titleFilter": {
+        "positive": [
+          "software engineer",
+          "frontend",
+          "front-end",
+          "backend",
+          "full stack",
+          "full-stack",
+          "product manager",
+          "data analyst",
+          "data scientist",
+          "ai",
+          "machine learning",
+          "engineer",
+          "developer",
+          "工程師",
+          "前端",
+          "後端",
+          "全端",
+          "產品經理",
+          "資料分析",
+          "資料科學",
+          "機器學習",
+          "人工智慧"
+        ],
+        "negative": [
+          "senior director",
+          "vp ",
+          "vice president",
+          "head of",
+          "principal",
+          "staff",
+          "sales",
+          "account executive",
+          "legal",
+          "finance",
+          "資深總監",
+          "副總",
+          "法務",
+          "財務",
+          "業務"
+        ]
+      },
+      "maxDiscovered": 50
+    },
+    {
+      "name": "UMC",
+      "company": "UMC",
+      "source": "UMC",
+      "url": "https://careers.umc.com/jobsearch.php/index.php",
+      "type": "company",
+      "adapter": "",
+      "market": "tw",
+      "industry": "semiconductor-foundry",
+      "tags": [
+        "large-enterprise",
+        "semiconductor",
+        "taiwan",
+        "internationalized"
+      ],
+      "sourceStrategy": "tracked-company",
+      "titleFilter": {
+        "positive": [
+          "software engineer",
+          "frontend",
+          "front-end",
+          "backend",
+          "full stack",
+          "full-stack",
+          "product manager",
+          "data analyst",
+          "data scientist",
+          "ai",
+          "machine learning",
+          "engineer",
+          "developer",
+          "工程師",
+          "前端",
+          "後端",
+          "全端",
+          "產品經理",
+          "資料分析",
+          "資料科學",
+          "機器學習",
+          "人工智慧"
+        ],
+        "negative": [
+          "senior director",
+          "vp ",
+          "vice president",
+          "head of",
+          "principal",
+          "staff",
+          "sales",
+          "account executive",
+          "legal",
+          "finance",
+          "資深總監",
+          "副總",
+          "法務",
+          "財務",
+          "業務"
+        ]
+      },
+      "maxDiscovered": 100
+    },
+    {
+      "name": "ASE Group",
+      "company": "ASE Group",
+      "source": "ASE Group",
+      "url": "https://ase.aseglobal.com/about-ase/careers/",
+      "type": "company",
+      "adapter": "",
+      "market": "tw",
+      "industry": "semiconductor-packaging",
+      "tags": [
+        "large-enterprise",
+        "semiconductor",
+        "taiwan",
+        "internationalized"
+      ],
+      "sourceStrategy": "tracked-company",
+      "titleFilter": {
+        "positive": [
+          "software engineer",
+          "frontend",
+          "front-end",
+          "backend",
+          "full stack",
+          "full-stack",
+          "product manager",
+          "data analyst",
+          "data scientist",
+          "ai",
+          "machine learning",
+          "engineer",
+          "developer",
+          "工程師",
+          "前端",
+          "後端",
+          "全端",
+          "產品經理",
+          "資料分析",
+          "資料科學",
+          "機器學習",
+          "人工智慧"
+        ],
+        "negative": [
+          "senior director",
+          "vp ",
+          "vice president",
+          "head of",
+          "principal",
+          "staff",
+          "sales",
+          "account executive",
+          "legal",
+          "finance",
+          "資深總監",
+          "副總",
+          "法務",
+          "財務",
+          "業務"
+        ]
+      },
+      "maxDiscovered": 80
+    },
+    {
+      "name": "Advantech",
+      "company": "Advantech",
+      "source": "Advantech",
+      "url": "https://www.advantech.com/en/about/careers",
+      "type": "company",
+      "adapter": "",
+      "market": "tw",
+      "industry": "industrial-iot",
+      "tags": [
+        "large-enterprise",
+        "industrial-iot",
+        "taiwan",
+        "internationalized"
+      ],
+      "sourceStrategy": "tracked-company",
+      "titleFilter": {
+        "positive": [
+          "software engineer",
+          "frontend",
+          "front-end",
+          "backend",
+          "full stack",
+          "full-stack",
+          "product manager",
+          "data analyst",
+          "data scientist",
+          "ai",
+          "machine learning",
+          "engineer",
+          "developer",
+          "工程師",
+          "前端",
+          "後端",
+          "全端",
+          "產品經理",
+          "資料分析",
+          "資料科學",
+          "機器學習",
+          "人工智慧"
+        ],
+        "negative": [
+          "senior director",
+          "vp ",
+          "vice president",
+          "head of",
+          "principal",
+          "staff",
+          "sales",
+          "account executive",
+          "legal",
+          "finance",
+          "資深總監",
+          "副總",
+          "法務",
+          "財務",
+          "業務"
+        ]
+      },
+      "maxDiscovered": 60
+    },
+    {
+      "name": "Garmin Taiwan",
+      "company": "Garmin Taiwan",
+      "source": "Garmin Taiwan",
+      "url": "https://careers.garmin.com/careers-home/jobs?location=Taiwan",
+      "type": "company",
+      "adapter": "",
+      "market": "tw",
+      "industry": "consumer-electronics",
+      "tags": [
+        "multinational",
+        "hardware",
+        "taiwan",
+        "internationalized"
+      ],
+      "sourceStrategy": "tracked-company",
+      "titleFilter": {
+        "positive": [
+          "software engineer",
+          "frontend",
+          "front-end",
+          "backend",
+          "full stack",
+          "full-stack",
+          "product manager",
+          "data analyst",
+          "data scientist",
+          "ai",
+          "machine learning",
+          "engineer",
+          "developer",
+          "工程師",
+          "前端",
+          "後端",
+          "全端",
+          "產品經理",
+          "資料分析",
+          "資料科學",
+          "機器學習",
+          "人工智慧"
+        ],
+        "negative": [
+          "senior director",
+          "vp ",
+          "vice president",
+          "head of",
+          "principal",
+          "staff",
+          "sales",
+          "account executive",
+          "legal",
+          "finance",
+          "資深總監",
+          "副總",
+          "法務",
+          "財務",
+          "業務"
+        ]
+      },
+      "maxDiscovered": 80
+    },
+    {
+      "name": "Google Taiwan",
+      "company": "Google Taiwan",
+      "source": "Google Taiwan",
+      "url": "https://www.google.com/about/careers/applications/jobs/results?distance=50&q=Taiwan",
+      "type": "company",
+      "adapter": "",
+      "market": "tw",
+      "industry": "internet-ai",
+      "tags": [
+        "multinational",
+        "ai",
+        "taiwan",
+        "internationalized"
+      ],
+      "sourceStrategy": "tracked-company",
+      "titleFilter": {
+        "positive": [
+          "software engineer",
+          "frontend",
+          "front-end",
+          "backend",
+          "full stack",
+          "full-stack",
+          "product manager",
+          "data analyst",
+          "data scientist",
+          "ai",
+          "machine learning",
+          "engineer",
+          "developer",
+          "工程師",
+          "前端",
+          "後端",
+          "全端",
+          "產品經理",
+          "資料分析",
+          "資料科學",
+          "機器學習",
+          "人工智慧"
+        ],
+        "negative": [
+          "senior director",
+          "vp ",
+          "vice president",
+          "head of",
+          "principal",
+          "staff",
+          "sales",
+          "account executive",
+          "legal",
+          "finance",
+          "資深總監",
+          "副總",
+          "法務",
+          "財務",
+          "業務"
+        ]
+      },
+      "maxDiscovered": 80
+    },
+    {
+      "name": "Microsoft Taipei",
+      "company": "Microsoft Taipei",
+      "source": "Microsoft Taipei",
+      "url": "https://careers.microsoft.com/v2/global/en/locations/taipei.html",
+      "type": "company",
+      "adapter": "",
+      "market": "tw",
+      "industry": "cloud-ai",
+      "tags": [
+        "multinational",
+        "cloud",
+        "taiwan",
+        "internationalized"
+      ],
+      "sourceStrategy": "tracked-company",
+      "titleFilter": {
+        "positive": [
+          "software engineer",
+          "frontend",
+          "front-end",
+          "backend",
+          "full stack",
+          "full-stack",
+          "product manager",
+          "data analyst",
+          "data scientist",
+          "ai",
+          "machine learning",
+          "engineer",
+          "developer",
+          "工程師",
+          "前端",
+          "後端",
+          "全端",
+          "產品經理",
+          "資料分析",
+          "資料科學",
+          "機器學習",
+          "人工智慧"
+        ],
+        "negative": [
+          "senior director",
+          "vp ",
+          "vice president",
+          "head of",
+          "principal",
+          "staff",
+          "sales",
+          "account executive",
+          "legal",
+          "finance",
+          "資深總監",
+          "副總",
+          "法務",
+          "財務",
+          "業務"
+        ]
+      },
+      "maxDiscovered": 80
+    },
+    {
+      "name": "Apple Taiwan",
+      "company": "Apple Taiwan",
+      "source": "Apple Taiwan",
+      "url": "https://jobs.apple.com/en-us/search?location=taiwan-TWN",
+      "type": "company",
+      "adapter": "",
+      "market": "tw",
+      "industry": "consumer-electronics",
+      "tags": [
+        "multinational",
+        "hardware",
+        "retail",
+        "taiwan",
+        "internationalized"
+      ],
+      "sourceStrategy": "tracked-company",
+      "titleFilter": {
+        "positive": [
+          "software engineer",
+          "frontend",
+          "front-end",
+          "backend",
+          "full stack",
+          "full-stack",
+          "product manager",
+          "data analyst",
+          "data scientist",
+          "ai",
+          "machine learning",
+          "engineer",
+          "developer",
+          "工程師",
+          "前端",
+          "後端",
+          "全端",
+          "產品經理",
+          "資料分析",
+          "資料科學",
+          "機器學習",
+          "人工智慧"
+        ],
+        "negative": [
+          "senior director",
+          "vp ",
+          "vice president",
+          "head of",
+          "principal",
+          "staff",
+          "sales",
+          "account executive",
+          "legal",
+          "finance",
+          "資深總監",
+          "副總",
+          "法務",
+          "財務",
+          "業務"
+        ]
+      },
+      "maxDiscovered": 80
+    },
+    {
+      "name": "NVIDIA Taiwan",
+      "company": "NVIDIA Taiwan",
+      "source": "NVIDIA Taiwan",
+      "url": "https://www.nvidia.com/en-us/about-nvidia/careers/",
+      "type": "company",
+      "adapter": "",
+      "market": "tw",
+      "industry": "ai-semiconductor",
+      "tags": [
+        "multinational",
+        "ai",
+        "semiconductor",
+        "taiwan",
+        "internationalized"
+      ],
+      "sourceStrategy": "tracked-company",
+      "titleFilter": {
+        "positive": [
+          "software engineer",
+          "frontend",
+          "front-end",
+          "backend",
+          "full stack",
+          "full-stack",
+          "product manager",
+          "data analyst",
+          "data scientist",
+          "ai",
+          "machine learning",
+          "engineer",
+          "developer",
+          "工程師",
+          "前端",
+          "後端",
+          "全端",
+          "產品經理",
+          "資料分析",
+          "資料科學",
+          "機器學習",
+          "人工智慧"
+        ],
+        "negative": [
+          "senior director",
+          "vp ",
+          "vice president",
+          "head of",
+          "principal",
+          "staff",
+          "sales",
+          "account executive",
+          "legal",
+          "finance",
+          "資深總監",
+          "副總",
+          "法務",
+          "財務",
+          "業務"
+        ]
+      },
+      "maxDiscovered": 80
+    },
+    {
+      "name": "NVIDIA Workday",
+      "company": "NVIDIA Workday",
+      "source": "NVIDIA Workday",
+      "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite",
+      "type": "company",
+      "adapter": "workday",
+      "site": "NVIDIAExternalCareerSite",
+      "searchText": "Taiwan",
+      "market": "tw",
+      "industry": "ai-semiconductor",
+      "tags": [
+        "multinational",
+        "ai",
+        "semiconductor",
+        "taiwan",
+        "workday",
+        "internationalized"
+      ],
+      "sourceStrategy": "tracked-company",
+      "titleFilter": {
+        "positive": [
+          "software engineer",
+          "frontend",
+          "front-end",
+          "backend",
+          "full stack",
+          "full-stack",
+          "product manager",
+          "data analyst",
+          "data scientist",
+          "ai",
+          "machine learning",
+          "engineer",
+          "developer",
+          "工程師",
+          "前端",
+          "後端",
+          "全端",
+          "產品經理",
+          "資料分析",
+          "資料科學",
+          "機器學習",
+          "人工智慧"
+        ],
+        "negative": [
+          "senior director",
+          "vp ",
+          "vice president",
+          "head of",
+          "principal",
+          "staff",
+          "sales",
+          "account executive",
+          "legal",
+          "finance",
+          "資深總監",
+          "副總",
+          "法務",
+          "財務",
+          "業務"
+        ]
+      },
+      "maxDiscovered": 100
+    },
+    {
+      "name": "ASML Taiwan",
+      "company": "ASML Taiwan",
+      "source": "ASML Taiwan",
+      "url": "https://www.asml.com/en/careers/find-your-job",
+      "type": "company",
+      "adapter": "",
+      "market": "tw",
+      "industry": "semiconductor-equipment",
+      "tags": [
+        "multinational",
+        "semiconductor-equipment",
+        "taiwan",
+        "internationalized"
+      ],
+      "sourceStrategy": "tracked-company",
+      "titleFilter": {
+        "positive": [
+          "software engineer",
+          "frontend",
+          "front-end",
+          "backend",
+          "full stack",
+          "full-stack",
+          "product manager",
+          "data analyst",
+          "data scientist",
+          "ai",
+          "machine learning",
+          "engineer",
+          "developer",
+          "工程師",
+          "前端",
+          "後端",
+          "全端",
+          "產品經理",
+          "資料分析",
+          "資料科學",
+          "機器學習",
+          "人工智慧"
+        ],
+        "negative": [
+          "senior director",
+          "vp ",
+          "vice president",
+          "head of",
+          "principal",
+          "staff",
+          "sales",
+          "account executive",
+          "legal",
+          "finance",
+          "資深總監",
+          "副總",
+          "法務",
+          "財務",
+          "業務"
+        ]
+      },
+      "maxDiscovered": 80
+    },
+    {
+      "name": "Micron Taiwan",
+      "company": "Micron Taiwan",
+      "source": "Micron Taiwan",
+      "url": "https://www.micron.com/about/careers",
+      "type": "company",
+      "adapter": "",
+      "market": "tw",
+      "industry": "semiconductor-memory",
+      "tags": [
+        "multinational",
+        "semiconductor",
+        "taiwan",
+        "internationalized"
+      ],
+      "sourceStrategy": "tracked-company",
+      "titleFilter": {
+        "positive": [
+          "software engineer",
+          "frontend",
+          "front-end",
+          "backend",
+          "full stack",
+          "full-stack",
+          "product manager",
+          "data analyst",
+          "data scientist",
+          "ai",
+          "machine learning",
+          "engineer",
+          "developer",
+          "工程師",
+          "前端",
+          "後端",
+          "全端",
+          "產品經理",
+          "資料分析",
+          "資料科學",
+          "機器學習",
+          "人工智慧"
+        ],
+        "negative": [
+          "senior director",
+          "vp ",
+          "vice president",
+          "head of",
+          "principal",
+          "staff",
+          "sales",
+          "account executive",
+          "legal",
+          "finance",
+          "資深總監",
+          "副總",
+          "法務",
+          "財務",
+          "業務"
+        ]
+      },
+      "maxDiscovered": 80
+    },
+    {
+      "name": "Micron Workday",
+      "company": "Micron Workday",
+      "source": "Micron Workday",
+      "url": "https://micron.wd1.myworkdayjobs.com/External",
+      "type": "company",
+      "adapter": "workday",
+      "site": "External",
+      "searchText": "Taiwan",
+      "market": "tw",
+      "industry": "semiconductor-memory",
+      "tags": [
+        "multinational",
+        "semiconductor",
+        "taiwan",
+        "workday",
+        "internationalized"
+      ],
+      "sourceStrategy": "tracked-company",
+      "titleFilter": {
+        "positive": [
+          "software engineer",
+          "frontend",
+          "front-end",
+          "backend",
+          "full stack",
+          "full-stack",
+          "product manager",
+          "data analyst",
+          "data scientist",
+          "ai",
+          "machine learning",
+          "engineer",
+          "developer",
+          "工程師",
+          "前端",
+          "後端",
+          "全端",
+          "產品經理",
+          "資料分析",
+          "資料科學",
+          "機器學習",
+          "人工智慧"
+        ],
+        "negative": [
+          "senior director",
+          "vp ",
+          "vice president",
+          "head of",
+          "principal",
+          "staff",
+          "sales",
+          "account executive",
+          "legal",
+          "finance",
+          "資深總監",
+          "副總",
+          "法務",
+          "財務",
+          "業務"
+        ]
+      },
+      "maxDiscovered": 100
+    },
+    {
+      "name": "Applied Materials Taiwan",
+      "company": "Applied Materials Taiwan",
+      "source": "Applied Materials Taiwan",
+      "url": "https://www.appliedmaterials.com/us/en/careers.html",
+      "type": "company",
+      "adapter": "",
+      "market": "tw",
+      "industry": "semiconductor-equipment",
+      "tags": [
+        "multinational",
+        "semiconductor-equipment",
+        "taiwan",
+        "internationalized"
+      ],
+      "sourceStrategy": "tracked-company",
+      "titleFilter": {
+        "positive": [
+          "software engineer",
+          "frontend",
+          "front-end",
+          "backend",
+          "full stack",
+          "full-stack",
+          "product manager",
+          "data analyst",
+          "data scientist",
+          "ai",
+          "machine learning",
+          "engineer",
+          "developer",
+          "工程師",
+          "前端",
+          "後端",
+          "全端",
+          "產品經理",
+          "資料分析",
+          "資料科學",
+          "機器學習",
+          "人工智慧"
+        ],
+        "negative": [
+          "senior director",
+          "vp ",
+          "vice president",
+          "head of",
+          "principal",
+          "staff",
+          "sales",
+          "account executive",
+          "legal",
+          "finance",
+          "資深總監",
+          "副總",
+          "法務",
+          "財務",
+          "業務"
+        ]
+      },
+      "maxDiscovered": 80
+    },
+    {
+      "name": "Applied Materials Workday",
+      "company": "Applied Materials Workday",
+      "source": "Applied Materials Workday",
+      "url": "https://amat.wd1.myworkdayjobs.com/External",
+      "type": "company",
+      "adapter": "workday",
+      "site": "External",
+      "searchText": "Taiwan",
+      "market": "tw",
+      "industry": "semiconductor-equipment",
+      "tags": [
+        "multinational",
+        "semiconductor-equipment",
+        "taiwan",
+        "workday",
+        "internationalized"
+      ],
+      "sourceStrategy": "tracked-company",
+      "titleFilter": {
+        "positive": [
+          "software engineer",
+          "frontend",
+          "front-end",
+          "backend",
+          "full stack",
+          "full-stack",
+          "product manager",
+          "data analyst",
+          "data scientist",
+          "ai",
+          "machine learning",
+          "engineer",
+          "developer",
+          "工程師",
+          "前端",
+          "後端",
+          "全端",
+          "產品經理",
+          "資料分析",
+          "資料科學",
+          "機器學習",
+          "人工智慧"
+        ],
+        "negative": [
+          "senior director",
+          "vp ",
+          "vice president",
+          "head of",
+          "principal",
+          "staff",
+          "sales",
+          "account executive",
+          "legal",
+          "finance",
+          "資深總監",
+          "副總",
+          "法務",
+          "財務",
+          "業務"
+        ]
+      },
+      "maxDiscovered": 100
+    },
+    {
+      "name": "Intel Workday Taiwan",
+      "company": "Intel Workday Taiwan",
+      "source": "Intel Workday Taiwan",
+      "url": "https://intel.wd1.myworkdayjobs.com/External",
+      "type": "company",
+      "adapter": "workday",
+      "site": "External",
+      "searchText": "Taiwan",
+      "market": "tw",
+      "industry": "semiconductor",
+      "tags": [
+        "multinational",
+        "semiconductor",
+        "taiwan",
+        "workday",
+        "internationalized"
+      ],
+      "sourceStrategy": "tracked-company",
+      "titleFilter": {
+        "positive": [
+          "software engineer",
+          "frontend",
+          "front-end",
+          "backend",
+          "full stack",
+          "full-stack",
+          "product manager",
+          "data analyst",
+          "data scientist",
+          "ai",
+          "machine learning",
+          "engineer",
+          "developer",
+          "工程師",
+          "前端",
+          "後端",
+          "全端",
+          "產品經理",
+          "資料分析",
+          "資料科學",
+          "機器學習",
+          "人工智慧"
+        ],
+        "negative": [
+          "senior director",
+          "vp ",
+          "vice president",
+          "head of",
+          "principal",
+          "staff",
+          "sales",
+          "account executive",
+          "legal",
+          "finance",
+          "資深總監",
+          "副總",
+          "法務",
+          "財務",
+          "業務"
+        ]
+      },
+      "maxDiscovered": 80
+    },
+    {
+      "name": "Logitech Workday Taiwan",
+      "company": "Logitech Workday Taiwan",
+      "source": "Logitech Workday Taiwan",
+      "url": "https://logitech.wd5.myworkdayjobs.com/Logitech",
+      "type": "company",
+      "adapter": "workday",
+      "site": "Logitech",
+      "searchText": "Taiwan",
+      "market": "tw",
+      "industry": "consumer-electronics",
+      "tags": [
+        "multinational",
+        "hardware",
+        "taiwan",
+        "workday",
+        "internationalized"
+      ],
+      "sourceStrategy": "tracked-company",
+      "titleFilter": {
+        "positive": [
+          "software engineer",
+          "frontend",
+          "front-end",
+          "backend",
+          "full stack",
+          "full-stack",
+          "product manager",
+          "data analyst",
+          "data scientist",
+          "ai",
+          "machine learning",
+          "engineer",
+          "developer",
+          "工程師",
+          "前端",
+          "後端",
+          "全端",
+          "產品經理",
+          "資料分析",
+          "資料科學",
+          "機器學習",
+          "人工智慧"
+        ],
+        "negative": [
+          "senior director",
+          "vp ",
+          "vice president",
+          "head of",
+          "principal",
+          "staff",
+          "sales",
+          "account executive",
+          "legal",
+          "finance",
+          "資深總監",
+          "副總",
+          "法務",
+          "財務",
+          "業務"
+        ]
+      },
+      "maxDiscovered": 60
+    },
+    {
+      "name": "Cardlytics Workday Taiwan",
+      "company": "Cardlytics Workday Taiwan",
+      "source": "Cardlytics Workday Taiwan",
+      "url": "https://cardlytics.wd5.myworkdayjobs.com/CardlyticsExternalCareerSite",
+      "type": "company",
+      "adapter": "workday",
+      "site": "CardlyticsExternalCareerSite",
+      "searchText": "Taiwan",
+      "market": "tw",
+      "industry": "commerce-intelligence",
+      "tags": [
+        "multinational",
+        "analytics",
+        "taiwan",
+        "workday",
+        "internationalized"
+      ],
+      "sourceStrategy": "tracked-company",
+      "titleFilter": {
+        "positive": [
+          "software engineer",
+          "frontend",
+          "front-end",
+          "backend",
+          "full stack",
+          "full-stack",
+          "product manager",
+          "data analyst",
+          "data scientist",
+          "ai",
+          "machine learning",
+          "engineer",
+          "developer",
+          "工程師",
+          "前端",
+          "後端",
+          "全端",
+          "產品經理",
+          "資料分析",
+          "資料科學",
+          "機器學習",
+          "人工智慧"
+        ],
+        "negative": [
+          "senior director",
+          "vp ",
+          "vice president",
+          "head of",
+          "principal",
+          "staff",
+          "sales",
+          "account executive",
+          "legal",
+          "finance",
+          "資深總監",
+          "副總",
+          "法務",
+          "財務",
+          "業務"
+        ]
+      },
+      "maxDiscovered": 50
+    },
+    {
+      "name": "PDD Holdings",
+      "company": "PDD Holdings",
+      "source": "PDD Holdings",
+      "url": "https://careers.pddglobal.com/",
+      "type": "company",
+      "adapter": "",
+      "market": "cn",
+      "industry": "internet-commerce",
+      "tags": [
+        "large-enterprise",
+        "commerce",
+        "china",
+        "internationalized"
+      ],
+      "sourceStrategy": "tracked-company",
+      "titleFilter": {
+        "positive": [
+          "software engineer",
+          "frontend",
+          "front-end",
+          "backend",
+          "full stack",
+          "full-stack",
+          "product manager",
+          "data analyst",
+          "data scientist",
+          "ai",
+          "machine learning",
+          "engineer",
+          "developer",
+          "工程師",
+          "前端",
+          "後端",
+          "全端",
+          "產品經理",
+          "資料分析",
+          "資料科學",
+          "機器學習",
+          "人工智慧"
+        ],
+        "negative": [
+          "senior director",
+          "vp ",
+          "vice president",
+          "head of",
+          "principal",
+          "staff",
+          "sales",
+          "account executive",
+          "legal",
+          "finance",
+          "資深總監",
+          "副總",
+          "法務",
+          "財務",
+          "業務"
+        ]
+      },
+      "maxDiscovered": 80
+    },
+    {
+      "name": "Ant Group",
+      "company": "Ant Group",
+      "source": "Ant Group",
+      "url": "https://www.ant-group.net/career",
+      "type": "company",
+      "adapter": "",
+      "market": "cn",
+      "industry": "fintech-ai",
+      "tags": [
+        "large-enterprise",
+        "fintech",
+        "china",
+        "internationalized"
+      ],
+      "sourceStrategy": "tracked-company",
+      "titleFilter": {
+        "positive": [
+          "software engineer",
+          "frontend",
+          "front-end",
+          "backend",
+          "full stack",
+          "full-stack",
+          "product manager",
+          "data analyst",
+          "data scientist",
+          "ai",
+          "machine learning",
+          "engineer",
+          "developer",
+          "工程師",
+          "前端",
+          "後端",
+          "全端",
+          "產品經理",
+          "資料分析",
+          "資料科學",
+          "機器學習",
+          "人工智慧"
+        ],
+        "negative": [
+          "senior director",
+          "vp ",
+          "vice president",
+          "head of",
+          "principal",
+          "staff",
+          "sales",
+          "account executive",
+          "legal",
+          "finance",
+          "資深總監",
+          "副總",
+          "法務",
+          "財務",
+          "業務"
+        ]
+      },
+      "maxDiscovered": 80
+    },
+    {
+      "name": "Lenovo China",
+      "company": "Lenovo China",
+      "source": "Lenovo China",
+      "url": "https://www.lenovo.com.cn/",
+      "type": "company",
+      "adapter": "",
+      "market": "cn",
+      "industry": "computer-hardware",
+      "tags": [
+        "large-enterprise",
+        "hardware",
+        "china",
+        "internationalized"
+      ],
+      "sourceStrategy": "tracked-company",
+      "titleFilter": {
+        "positive": [
+          "software engineer",
+          "frontend",
+          "front-end",
+          "backend",
+          "full stack",
+          "full-stack",
+          "product manager",
+          "data analyst",
+          "data scientist",
+          "ai",
+          "machine learning",
+          "engineer",
+          "developer",
+          "工程師",
+          "前端",
+          "後端",
+          "全端",
+          "產品經理",
+          "資料分析",
+          "資料科學",
+          "機器學習",
+          "人工智慧"
+        ],
+        "negative": [
+          "senior director",
+          "vp ",
+          "vice president",
+          "head of",
+          "principal",
+          "staff",
+          "sales",
+          "account executive",
+          "legal",
+          "finance",
+          "資深總監",
+          "副總",
+          "法務",
+          "財務",
+          "業務"
+        ]
+      },
+      "maxDiscovered": 60
+    },
+    {
+      "name": "DJI",
+      "company": "DJI",
+      "source": "DJI",
+      "url": "https://www.dji.com/careers",
+      "type": "company",
+      "adapter": "",
+      "market": "cn",
+      "industry": "robotics-drone",
+      "tags": [
+        "large-enterprise",
+        "robotics",
+        "china",
+        "internationalized"
+      ],
+      "sourceStrategy": "tracked-company",
+      "titleFilter": {
+        "positive": [
+          "software engineer",
+          "frontend",
+          "front-end",
+          "backend",
+          "full stack",
+          "full-stack",
+          "product manager",
+          "data analyst",
+          "data scientist",
+          "ai",
+          "machine learning",
+          "engineer",
+          "developer",
+          "工程師",
+          "前端",
+          "後端",
+          "全端",
+          "產品經理",
+          "資料分析",
+          "資料科學",
+          "機器學習",
+          "人工智慧"
+        ],
+        "negative": [
+          "senior director",
+          "vp ",
+          "vice president",
+          "head of",
+          "principal",
+          "staff",
+          "sales",
+          "account executive",
+          "legal",
+          "finance",
+          "資深總監",
+          "副總",
+          "法務",
+          "財務",
+          "業務"
+        ]
+      },
+      "maxDiscovered": 80
+    },
+    {
+      "name": "SHEIN",
+      "company": "SHEIN",
+      "source": "SHEIN",
+      "url": "https://careers.shein.com/",
+      "type": "company",
+      "adapter": "",
+      "market": "cn",
+      "industry": "commerce-fashion",
+      "tags": [
+        "large-enterprise",
+        "commerce",
+        "china",
+        "singapore",
+        "internationalized"
+      ],
+      "sourceStrategy": "tracked-company",
+      "titleFilter": {
+        "positive": [
+          "software engineer",
+          "frontend",
+          "front-end",
+          "backend",
+          "full stack",
+          "full-stack",
+          "product manager",
+          "data analyst",
+          "data scientist",
+          "ai",
+          "machine learning",
+          "engineer",
+          "developer",
+          "工程師",
+          "前端",
+          "後端",
+          "全端",
+          "產品經理",
+          "資料分析",
+          "資料科學",
+          "機器學習",
+          "人工智慧"
+        ],
+        "negative": [
+          "senior director",
+          "vp ",
+          "vice president",
+          "head of",
+          "principal",
+          "staff",
+          "sales",
+          "account executive",
+          "legal",
+          "finance",
+          "資深總監",
+          "副總",
+          "法務",
+          "財務",
+          "業務"
+        ]
+      },
+      "maxDiscovered": 80
+    },
+    {
+      "name": "Microsoft Beijing",
+      "company": "Microsoft Beijing",
+      "source": "Microsoft Beijing",
+      "url": "https://careers.microsoft.com/v2/global/en/locations/beijing.html",
+      "type": "company",
+      "adapter": "",
+      "market": "cn",
+      "industry": "cloud-ai",
+      "tags": [
+        "multinational",
+        "cloud",
+        "china",
+        "internationalized"
+      ],
+      "sourceStrategy": "tracked-company",
+      "titleFilter": {
+        "positive": [
+          "software engineer",
+          "frontend",
+          "front-end",
+          "backend",
+          "full stack",
+          "full-stack",
+          "product manager",
+          "data analyst",
+          "data scientist",
+          "ai",
+          "machine learning",
+          "engineer",
+          "developer",
+          "工程師",
+          "前端",
+          "後端",
+          "全端",
+          "產品經理",
+          "資料分析",
+          "資料科學",
+          "機器學習",
+          "人工智慧"
+        ],
+        "negative": [
+          "senior director",
+          "vp ",
+          "vice president",
+          "head of",
+          "principal",
+          "staff",
+          "sales",
+          "account executive",
+          "legal",
+          "finance",
+          "資深總監",
+          "副總",
+          "法務",
+          "財務",
+          "業務"
+        ]
+      },
+      "maxDiscovered": 80
+    },
+    {
+      "name": "Microsoft Shanghai",
+      "company": "Microsoft Shanghai",
+      "source": "Microsoft Shanghai",
+      "url": "https://careers.microsoft.com/v2/global/en/locations/shanghai.html",
+      "type": "company",
+      "adapter": "",
+      "market": "cn",
+      "industry": "cloud-ai",
+      "tags": [
+        "multinational",
+        "cloud",
+        "china",
+        "internationalized"
+      ],
+      "sourceStrategy": "tracked-company",
+      "titleFilter": {
+        "positive": [
+          "software engineer",
+          "frontend",
+          "front-end",
+          "backend",
+          "full stack",
+          "full-stack",
+          "product manager",
+          "data analyst",
+          "data scientist",
+          "ai",
+          "machine learning",
+          "engineer",
+          "developer",
+          "工程師",
+          "前端",
+          "後端",
+          "全端",
+          "產品經理",
+          "資料分析",
+          "資料科學",
+          "機器學習",
+          "人工智慧"
+        ],
+        "negative": [
+          "senior director",
+          "vp ",
+          "vice president",
+          "head of",
+          "principal",
+          "staff",
+          "sales",
+          "account executive",
+          "legal",
+          "finance",
+          "資深總監",
+          "副總",
+          "法務",
+          "財務",
+          "業務"
+        ]
+      },
+      "maxDiscovered": 80
+    },
+    {
+      "name": "Apple Shanghai",
+      "company": "Apple Shanghai",
+      "source": "Apple Shanghai",
+      "url": "https://www.apple.com/careers/in/work-at-apple/locations/shanghai.html",
+      "type": "company",
+      "adapter": "",
+      "market": "cn",
+      "industry": "consumer-electronics",
+      "tags": [
+        "multinational",
+        "hardware",
+        "china",
+        "internationalized"
+      ],
+      "sourceStrategy": "tracked-company",
+      "titleFilter": {
+        "positive": [
+          "software engineer",
+          "frontend",
+          "front-end",
+          "backend",
+          "full stack",
+          "full-stack",
+          "product manager",
+          "data analyst",
+          "data scientist",
+          "ai",
+          "machine learning",
+          "engineer",
+          "developer",
+          "工程師",
+          "前端",
+          "後端",
+          "全端",
+          "產品經理",
+          "資料分析",
+          "資料科學",
+          "機器學習",
+          "人工智慧"
+        ],
+        "negative": [
+          "senior director",
+          "vp ",
+          "vice president",
+          "head of",
+          "principal",
+          "staff",
+          "sales",
+          "account executive",
+          "legal",
+          "finance",
+          "資深總監",
+          "副總",
+          "法務",
+          "財務",
+          "業務"
+        ]
+      },
+      "maxDiscovered": 80
+    },
+    {
+      "name": "ASSA ABLOY SuccessFactors Taipei Manufacturing Engineer",
+      "company": "ASSA ABLOY SuccessFactors Taipei Manufacturing Engineer",
+      "source": "ASSA ABLOY SuccessFactors Taipei Manufacturing Engineer",
+      "url": "https://assaabloy.jobs2web.com/job/Taipai-Manufacturing-Engineer-Taip/1376286333/",
+      "type": "job",
+      "adapter": "successfactors",
+      "market": "tw",
+      "industry": "identity-security",
+      "tags": [
+        "ats",
+        "successfactors",
+        "engineering",
+        "taiwan",
+        "large-enterprise",
+        "internationalized",
+        "validated-live-source"
+      ],
+      "sourceStrategy": "ats-board",
+      "titleFilter": {
+        "positive": [
+          "software engineer",
+          "frontend",
+          "front-end",
+          "backend",
+          "full stack",
+          "full-stack",
+          "product manager",
+          "data analyst",
+          "data scientist",
+          "ai",
+          "machine learning",
+          "engineer",
+          "developer",
+          "工程師",
+          "前端",
+          "後端",
+          "全端",
+          "產品經理",
+          "資料分析",
+          "資料科學",
+          "機器學習",
+          "人工智慧"
+        ],
+        "negative": [
+          "senior director",
+          "vp ",
+          "vice president",
+          "head of",
+          "principal",
+          "staff",
+          "sales",
+          "account executive",
+          "legal",
+          "finance",
+          "資深總監",
+          "副總",
+          "法務",
+          "財務",
+          "業務"
+        ]
+      },
+      "maxDiscovered": 1
+    },
+    {
+      "name": "ASSA ABLOY SuccessFactors Software Engineer",
+      "company": "ASSA ABLOY SuccessFactors Software Engineer",
+      "source": "ASSA ABLOY SuccessFactors Software Engineer",
+      "url": "https://assaabloy.jobs2web.com/job/New-Haven-Software-Engineer-CT-06511/1366009133/",
+      "type": "job",
+      "adapter": "successfactors",
+      "market": "global",
+      "industry": "access-solutions",
+      "tags": [
+        "ats",
+        "successfactors",
+        "software-engineering",
+        "large-enterprise",
+        "internationalized",
+        "validated-live-source"
+      ],
+      "sourceStrategy": "ats-board",
+      "titleFilter": {
+        "positive": [
+          "software engineer",
+          "frontend",
+          "front-end",
+          "backend",
+          "full stack",
+          "full-stack",
+          "product manager",
+          "data analyst",
+          "data scientist",
+          "ai",
+          "machine learning",
+          "engineer",
+          "developer",
+          "工程師",
+          "前端",
+          "後端",
+          "全端",
+          "產品經理",
+          "資料分析",
+          "資料科學",
+          "機器學習",
+          "人工智慧"
+        ],
+        "negative": [
+          "senior director",
+          "vp ",
+          "vice president",
+          "head of",
+          "principal",
+          "staff",
+          "sales",
+          "account executive",
+          "legal",
+          "finance",
+          "資深總監",
+          "副總",
+          "法務",
+          "財務",
+          "業務"
+        ]
+      },
+      "maxDiscovered": 1
+    },
+    {
+      "name": "ASSA ABLOY SuccessFactors C# Software Engineer",
+      "company": "ASSA ABLOY SuccessFactors C# Software Engineer",
+      "source": "ASSA ABLOY SuccessFactors C# Software Engineer",
+      "url": "https://assaabloy.jobs2web.com/job/M%C3%B6lnlycke-C-Software-Engineer-435-33/1244575801/",
+      "type": "job",
+      "adapter": "successfactors",
+      "market": "global",
+      "industry": "iot-access-solutions",
+      "tags": [
+        "ats",
+        "successfactors",
+        "software-engineering",
+        "iot",
+        "large-enterprise",
+        "internationalized",
+        "validated-live-source"
+      ],
+      "sourceStrategy": "ats-board",
+      "titleFilter": {
+        "positive": [
+          "software engineer",
+          "frontend",
+          "front-end",
+          "backend",
+          "full stack",
+          "full-stack",
+          "product manager",
+          "data analyst",
+          "data scientist",
+          "ai",
+          "machine learning",
+          "engineer",
+          "developer",
+          "工程師",
+          "前端",
+          "後端",
+          "全端",
+          "產品經理",
+          "資料分析",
+          "資料科學",
+          "機器學習",
+          "人工智慧"
+        ],
+        "negative": [
+          "senior director",
+          "vp ",
+          "vice president",
+          "head of",
+          "principal",
+          "staff",
+          "sales",
+          "account executive",
+          "legal",
+          "finance",
+          "資深總監",
+          "副總",
+          "法務",
+          "財務",
+          "業務"
+        ]
+      },
+      "maxDiscovered": 1
+    },
+    {
+      "name": "CONA SuccessFactors IT Development Engineer",
+      "company": "CONA SuccessFactors IT Development Engineer",
+      "source": "CONA SuccessFactors IT Development Engineer",
+      "url": "https://conaservices.jobs2web.com/consolidated/job/Charlotte-IT-Development-Engineer-III-NC-28211/1338172800/",
+      "type": "job",
+      "adapter": "successfactors",
+      "market": "global",
+      "industry": "consumer-goods-technology",
+      "tags": [
+        "ats",
+        "successfactors",
+        "software-engineering",
+        "enterprise-it",
+        "validated-live-source"
+      ],
+      "sourceStrategy": "ats-board",
+      "titleFilter": {
+        "positive": [
+          "software engineer",
+          "frontend",
+          "front-end",
+          "backend",
+          "full stack",
+          "full-stack",
+          "product manager",
+          "data analyst",
+          "data scientist",
+          "ai",
+          "machine learning",
+          "engineer",
+          "developer",
+          "工程師",
+          "前端",
+          "後端",
+          "全端",
+          "產品經理",
+          "資料分析",
+          "資料科學",
+          "機器學習",
+          "人工智慧"
+        ],
+        "negative": [
+          "senior director",
+          "vp ",
+          "vice president",
+          "head of",
+          "principal",
+          "staff",
+          "sales",
+          "account executive",
+          "legal",
+          "finance",
+          "資深總監",
+          "副總",
+          "法務",
+          "財務",
+          "業務"
+        ]
+      },
+      "maxDiscovered": 1
+    },
+    {
+      "name": "CONA SuccessFactors Data Analyst",
+      "company": "CONA SuccessFactors Data Analyst",
+      "source": "CONA SuccessFactors Data Analyst",
+      "url": "https://conaservices.jobs2web.com/consolidated/job/Charlotte-Data-Analyst-NC-28211/1335130500/",
+      "type": "job",
+      "adapter": "successfactors",
+      "market": "global",
+      "industry": "consumer-goods-analytics",
+      "tags": [
+        "ats",
+        "successfactors",
+        "data-analytics",
+        "enterprise-analytics",
+        "validated-live-source"
+      ],
+      "sourceStrategy": "ats-board",
+      "titleFilter": {
+        "positive": [
+          "software engineer",
+          "frontend",
+          "front-end",
+          "backend",
+          "full stack",
+          "full-stack",
+          "product manager",
+          "data analyst",
+          "data scientist",
+          "ai",
+          "machine learning",
+          "engineer",
+          "developer",
+          "工程師",
+          "前端",
+          "後端",
+          "全端",
+          "產品經理",
+          "資料分析",
+          "資料科學",
+          "機器學習",
+          "人工智慧"
+        ],
+        "negative": [
+          "senior director",
+          "vp ",
+          "vice president",
+          "head of",
+          "principal",
+          "staff",
+          "sales",
+          "account executive",
+          "legal",
+          "finance",
+          "資深總監",
+          "副總",
+          "法務",
+          "財務",
+          "業務"
+        ]
+      },
+      "maxDiscovered": 1
+    },
+    {
+      "name": "COEBank SuccessFactors Data & BI Engineer",
+      "company": "COEBank SuccessFactors Data & BI Engineer",
+      "source": "COEBank SuccessFactors Data & BI Engineer",
+      "url": "https://jobs.coebank.org/job/Paris-Data-%26-BI-Engineer/1342367455/",
+      "type": "job",
+      "adapter": "successfactors",
+      "market": "global",
+      "industry": "finance-development",
+      "tags": [
+        "ats",
+        "successfactors",
+        "data",
+        "analytics",
+        "internationalized",
+        "validated-live-source"
+      ],
+      "sourceStrategy": "ats-board",
+      "titleFilter": {
+        "positive": [
+          "software engineer",
+          "frontend",
+          "front-end",
+          "backend",
+          "full stack",
+          "full-stack",
+          "product manager",
+          "data analyst",
+          "data scientist",
+          "ai",
+          "machine learning",
+          "engineer",
+          "developer",
+          "工程師",
+          "前端",
+          "後端",
+          "全端",
+          "產品經理",
+          "資料分析",
+          "資料科學",
+          "機器學習",
+          "人工智慧"
+        ],
+        "negative": [
+          "senior director",
+          "vp ",
+          "vice president",
+          "head of",
+          "principal",
+          "staff",
+          "sales",
+          "account executive",
+          "legal",
+          "finance",
+          "資深總監",
+          "副總",
+          "法務",
+          "財務",
+          "業務"
+        ]
+      },
+      "maxDiscovered": 1
+    },
+    {
+      "name": "Qatar Airways Taleo",
+      "company": "Qatar Airways Taleo",
+      "source": "Qatar Airways Taleo",
+      "url": "https://aa115.taleo.net/careersection/qa_external_cs/jobsearch.ftl",
+      "type": "company",
+      "adapter": "taleo",
+      "market": "global",
+      "industry": "aviation",
+      "tags": [
+        "ats",
+        "taleo",
+        "internationalized",
+        "aviation",
+        "validated-live-source"
+      ],
+      "sourceStrategy": "ats-board",
+      "titleFilter": {
+        "positive": [
+          "software engineer",
+          "frontend",
+          "front-end",
+          "backend",
+          "full stack",
+          "full-stack",
+          "product manager",
+          "data analyst",
+          "data scientist",
+          "ai",
+          "machine learning",
+          "engineer",
+          "developer",
+          "工程師",
+          "前端",
+          "後端",
+          "全端",
+          "產品經理",
+          "資料分析",
+          "資料科學",
+          "機器學習",
+          "人工智慧"
+        ],
+        "negative": [
+          "senior director",
+          "vp ",
+          "vice president",
+          "head of",
+          "principal",
+          "staff",
+          "sales",
+          "account executive",
+          "legal",
+          "finance",
+          "資深總監",
+          "副總",
+          "法務",
+          "財務",
+          "業務"
+        ]
+      },
+      "maxDiscovered": 30
+    },
+    {
+      "name": "TW job board www.104.com.tw",
+      "source": "Source flex job board",
+      "url": "https://www.104.com.tw/jobs/search/",
+      "type": "company",
+      "market": "tw",
+      "tags": [
+        "flex-job-board"
+      ],
+      "sourceStrategy": "flex-job-board",
+      "titleFilter": {
+        "positive": [
+          "software engineer",
+          "frontend",
+          "front-end",
+          "backend",
+          "full stack",
+          "full-stack",
+          "product manager",
+          "data analyst",
+          "data scientist",
+          "ai",
+          "machine learning",
+          "engineer",
+          "developer",
+          "工程師",
+          "前端",
+          "後端",
+          "全端",
+          "產品經理",
+          "資料分析",
+          "資料科學",
+          "機器學習",
+          "人工智慧"
+        ],
+        "negative": [
+          "senior director",
+          "vp ",
+          "vice president",
+          "head of",
+          "principal",
+          "staff",
+          "sales",
+          "account executive",
+          "legal",
+          "finance",
+          "資深總監",
+          "副總",
+          "法務",
+          "財務",
+          "業務"
+        ]
+      },
+      "maxDiscovered": 50
+    },
+    {
+      "name": "TW job board www.1111.com.tw",
+      "source": "Source flex job board",
+      "url": "https://www.1111.com.tw/search/job",
+      "type": "company",
+      "market": "tw",
+      "tags": [
+        "flex-job-board"
+      ],
+      "sourceStrategy": "flex-job-board",
+      "titleFilter": {
+        "positive": [
+          "software engineer",
+          "frontend",
+          "front-end",
+          "backend",
+          "full stack",
+          "full-stack",
+          "product manager",
+          "data analyst",
+          "data scientist",
+          "ai",
+          "machine learning",
+          "engineer",
+          "developer",
+          "工程師",
+          "前端",
+          "後端",
+          "全端",
+          "產品經理",
+          "資料分析",
+          "資料科學",
+          "機器學習",
+          "人工智慧"
+        ],
+        "negative": [
+          "senior director",
+          "vp ",
+          "vice president",
+          "head of",
+          "principal",
+          "staff",
+          "sales",
+          "account executive",
+          "legal",
+          "finance",
+          "資深總監",
+          "副總",
+          "法務",
+          "財務",
+          "業務"
+        ]
+      },
+      "maxDiscovered": 50
+    },
+    {
+      "name": "TW job board www.yourator.co",
+      "source": "Source flex job board",
+      "url": "https://www.yourator.co/companies",
+      "type": "company",
+      "market": "tw",
+      "tags": [
+        "flex-job-board"
+      ],
+      "sourceStrategy": "flex-job-board",
+      "titleFilter": {
+        "positive": [
+          "software engineer",
+          "frontend",
+          "front-end",
+          "backend",
+          "full stack",
+          "full-stack",
+          "product manager",
+          "data analyst",
+          "data scientist",
+          "ai",
+          "machine learning",
+          "engineer",
+          "developer",
+          "工程師",
+          "前端",
+          "後端",
+          "全端",
+          "產品經理",
+          "資料分析",
+          "資料科學",
+          "機器學習",
+          "人工智慧"
+        ],
+        "negative": [
+          "senior director",
+          "vp ",
+          "vice president",
+          "head of",
+          "principal",
+          "staff",
+          "sales",
+          "account executive",
+          "legal",
+          "finance",
+          "資深總監",
+          "副總",
+          "法務",
+          "財務",
+          "業務"
+        ]
+      },
+      "maxDiscovered": 50
+    },
+    {
+      "name": "TW job board www.cakeresume.com",
+      "source": "Source flex job board",
+      "url": "https://www.cakeresume.com/jobs",
+      "type": "company",
+      "market": "tw",
+      "tags": [
+        "flex-job-board"
+      ],
+      "sourceStrategy": "flex-job-board",
+      "titleFilter": {
+        "positive": [
+          "software engineer",
+          "frontend",
+          "front-end",
+          "backend",
+          "full stack",
+          "full-stack",
+          "product manager",
+          "data analyst",
+          "data scientist",
+          "ai",
+          "machine learning",
+          "engineer",
+          "developer",
+          "工程師",
+          "前端",
+          "後端",
+          "全端",
+          "產品經理",
+          "資料分析",
+          "資料科學",
+          "機器學習",
+          "人工智慧"
+        ],
+        "negative": [
+          "senior director",
+          "vp ",
+          "vice president",
+          "head of",
+          "principal",
+          "staff",
+          "sales",
+          "account executive",
+          "legal",
+          "finance",
+          "資深總監",
+          "副總",
+          "法務",
+          "財務",
+          "業務"
+        ]
+      },
+      "maxDiscovered": 50
+    },
+    {
+      "name": "CN job board www.zhipin.com",
+      "source": "Source flex job board",
+      "url": "https://www.zhipin.com/",
+      "type": "company",
+      "market": "cn",
+      "tags": [
+        "flex-job-board"
+      ],
+      "sourceStrategy": "flex-job-board",
+      "titleFilter": {
+        "positive": [
+          "software engineer",
+          "frontend",
+          "front-end",
+          "backend",
+          "full stack",
+          "full-stack",
+          "product manager",
+          "data analyst",
+          "data scientist",
+          "ai",
+          "machine learning",
+          "engineer",
+          "developer",
+          "工程師",
+          "前端",
+          "後端",
+          "全端",
+          "產品經理",
+          "資料分析",
+          "資料科學",
+          "機器學習",
+          "人工智慧"
+        ],
+        "negative": [
+          "senior director",
+          "vp ",
+          "vice president",
+          "head of",
+          "principal",
+          "staff",
+          "sales",
+          "account executive",
+          "legal",
+          "finance",
+          "資深總監",
+          "副總",
+          "法務",
+          "財務",
+          "業務"
+        ]
+      },
+      "maxDiscovered": 50
+    },
+    {
+      "name": "CN job board www.lagou.com",
+      "source": "Source flex job board",
+      "url": "https://www.lagou.com/",
+      "type": "company",
+      "market": "cn",
+      "tags": [
+        "flex-job-board"
+      ],
+      "sourceStrategy": "flex-job-board",
+      "titleFilter": {
+        "positive": [
+          "software engineer",
+          "frontend",
+          "front-end",
+          "backend",
+          "full stack",
+          "full-stack",
+          "product manager",
+          "data analyst",
+          "data scientist",
+          "ai",
+          "machine learning",
+          "engineer",
+          "developer",
+          "工程師",
+          "前端",
+          "後端",
+          "全端",
+          "產品經理",
+          "資料分析",
+          "資料科學",
+          "機器學習",
+          "人工智慧"
+        ],
+        "negative": [
+          "senior director",
+          "vp ",
+          "vice president",
+          "head of",
+          "principal",
+          "staff",
+          "sales",
+          "account executive",
+          "legal",
+          "finance",
+          "資深總監",
+          "副總",
+          "法務",
+          "財務",
+          "業務"
+        ]
+      },
+      "maxDiscovered": 50
+    },
+    {
+      "name": "CN job board www.liepin.com",
+      "source": "Source flex job board",
+      "url": "https://www.liepin.com/",
+      "type": "company",
+      "market": "cn",
+      "tags": [
+        "flex-job-board"
+      ],
+      "sourceStrategy": "flex-job-board",
+      "titleFilter": {
+        "positive": [
+          "software engineer",
+          "frontend",
+          "front-end",
+          "backend",
+          "full stack",
+          "full-stack",
+          "product manager",
+          "data analyst",
+          "data scientist",
+          "ai",
+          "machine learning",
+          "engineer",
+          "developer",
+          "工程師",
+          "前端",
+          "後端",
+          "全端",
+          "產品經理",
+          "資料分析",
+          "資料科學",
+          "機器學習",
+          "人工智慧"
+        ],
+        "negative": [
+          "senior director",
+          "vp ",
+          "vice president",
+          "head of",
+          "principal",
+          "staff",
+          "sales",
+          "account executive",
+          "legal",
+          "finance",
+          "資深總監",
+          "副總",
+          "法務",
+          "財務",
+          "業務"
+        ]
+      },
+      "maxDiscovered": 50
+    },
+    {
+      "name": "CN job board www.kanzhun.com",
+      "source": "Source flex job board",
+      "url": "https://www.kanzhun.com/",
+      "type": "company",
+      "market": "cn",
+      "tags": [
+        "flex-job-board"
+      ],
+      "sourceStrategy": "flex-job-board",
+      "titleFilter": {
+        "positive": [
+          "software engineer",
+          "frontend",
+          "front-end",
+          "backend",
+          "full stack",
+          "full-stack",
+          "product manager",
+          "data analyst",
+          "data scientist",
+          "ai",
+          "machine learning",
+          "engineer",
+          "developer",
+          "工程師",
+          "前端",
+          "後端",
+          "全端",
+          "產品經理",
+          "資料分析",
+          "資料科學",
+          "機器學習",
+          "人工智慧"
+        ],
+        "negative": [
+          "senior director",
+          "vp ",
+          "vice president",
+          "head of",
+          "principal",
+          "staff",
+          "sales",
+          "account executive",
+          "legal",
+          "finance",
+          "資深總監",
+          "副總",
+          "法務",
+          "財務",
+          "業務"
+        ]
+      },
+      "maxDiscovered": 50
+    },
+    {
+      "name": "JP job board japan-dev.com",
+      "source": "Source flex job board",
+      "url": "https://japan-dev.com/jobs",
+      "type": "company",
+      "market": "jp",
+      "tags": [
+        "flex-job-board"
+      ],
+      "sourceStrategy": "flex-job-board",
+      "titleFilter": {
+        "positive": [
+          "software engineer",
+          "frontend",
+          "front-end",
+          "backend",
+          "full stack",
+          "full-stack",
+          "product manager",
+          "data analyst",
+          "data scientist",
+          "ai",
+          "machine learning",
+          "engineer",
+          "developer",
+          "工程師",
+          "前端",
+          "後端",
+          "全端",
+          "產品經理",
+          "資料分析",
+          "資料科學",
+          "機器學習",
+          "人工智慧"
+        ],
+        "negative": [
+          "senior director",
+          "vp ",
+          "vice president",
+          "head of",
+          "principal",
+          "staff",
+          "sales",
+          "account executive",
+          "legal",
+          "finance",
+          "資深總監",
+          "副總",
+          "法務",
+          "財務",
+          "業務"
+        ]
+      },
+      "maxDiscovered": 50
+    },
+    {
+      "name": "JP job board www.tokyodev.com",
+      "source": "Source flex job board",
+      "url": "https://www.tokyodev.com/jobs",
+      "type": "company",
+      "market": "jp",
+      "tags": [
+        "flex-job-board"
+      ],
+      "sourceStrategy": "flex-job-board",
+      "titleFilter": {
+        "positive": [
+          "software engineer",
+          "frontend",
+          "front-end",
+          "backend",
+          "full stack",
+          "full-stack",
+          "product manager",
+          "data analyst",
+          "data scientist",
+          "ai",
+          "machine learning",
+          "engineer",
+          "developer",
+          "工程師",
+          "前端",
+          "後端",
+          "全端",
+          "產品經理",
+          "資料分析",
+          "資料科學",
+          "機器學習",
+          "人工智慧"
+        ],
+        "negative": [
+          "senior director",
+          "vp ",
+          "vice president",
+          "head of",
+          "principal",
+          "staff",
+          "sales",
+          "account executive",
+          "legal",
+          "finance",
+          "資深總監",
+          "副總",
+          "法務",
+          "財務",
+          "業務"
+        ]
+      },
+      "maxDiscovered": 50
+    },
+    {
+      "name": "JP job board www.daijob.com",
+      "source": "Source flex job board",
+      "url": "https://www.daijob.com/en/jobs/search",
+      "type": "company",
+      "market": "jp",
+      "tags": [
+        "flex-job-board"
+      ],
+      "sourceStrategy": "flex-job-board",
+      "titleFilter": {
+        "positive": [
+          "software engineer",
+          "frontend",
+          "front-end",
+          "backend",
+          "full stack",
+          "full-stack",
+          "product manager",
+          "data analyst",
+          "data scientist",
+          "ai",
+          "machine learning",
+          "engineer",
+          "developer",
+          "工程師",
+          "前端",
+          "後端",
+          "全端",
+          "產品經理",
+          "資料分析",
+          "資料科學",
+          "機器學習",
+          "人工智慧"
+        ],
+        "negative": [
+          "senior director",
+          "vp ",
+          "vice president",
+          "head of",
+          "principal",
+          "staff",
+          "sales",
+          "account executive",
+          "legal",
+          "finance",
+          "資深總監",
+          "副總",
+          "法務",
+          "財務",
+          "業務"
+        ]
+      },
+      "maxDiscovered": 50
+    },
+    {
+      "name": "JP job board www.wantedly.com",
+      "source": "Source flex job board",
+      "url": "https://www.wantedly.com/projects",
+      "type": "company",
+      "market": "jp",
+      "tags": [
+        "flex-job-board"
+      ],
+      "sourceStrategy": "flex-job-board",
+      "titleFilter": {
+        "positive": [
+          "software engineer",
+          "frontend",
+          "front-end",
+          "backend",
+          "full stack",
+          "full-stack",
+          "product manager",
+          "data analyst",
+          "data scientist",
+          "ai",
+          "machine learning",
+          "engineer",
+          "developer",
+          "工程師",
+          "前端",
+          "後端",
+          "全端",
+          "產品經理",
+          "資料分析",
+          "資料科學",
+          "機器學習",
+          "人工智慧"
+        ],
+        "negative": [
+          "senior director",
+          "vp ",
+          "vice president",
+          "head of",
+          "principal",
+          "staff",
+          "sales",
+          "account executive",
+          "legal",
+          "finance",
+          "資深總監",
+          "副總",
+          "法務",
+          "財務",
+          "業務"
+        ]
+      },
+      "maxDiscovered": 50
+    },
+    {
+      "name": "KR job board www.wanted.co.kr",
+      "source": "Source flex job board",
+      "url": "https://www.wanted.co.kr/wdlist",
+      "type": "company",
+      "market": "kr",
+      "tags": [
+        "flex-job-board"
+      ],
+      "sourceStrategy": "flex-job-board",
+      "titleFilter": {
+        "positive": [
+          "software engineer",
+          "frontend",
+          "front-end",
+          "backend",
+          "full stack",
+          "full-stack",
+          "product manager",
+          "data analyst",
+          "data scientist",
+          "ai",
+          "machine learning",
+          "engineer",
+          "developer",
+          "工程師",
+          "前端",
+          "後端",
+          "全端",
+          "產品經理",
+          "資料分析",
+          "資料科學",
+          "機器學習",
+          "人工智慧"
+        ],
+        "negative": [
+          "senior director",
+          "vp ",
+          "vice president",
+          "head of",
+          "principal",
+          "staff",
+          "sales",
+          "account executive",
+          "legal",
+          "finance",
+          "資深總監",
+          "副總",
+          "法務",
+          "財務",
+          "業務"
+        ]
+      },
+      "maxDiscovered": 50
+    },
+    {
+      "name": "KR job board www.saramin.co.kr",
+      "source": "Source flex job board",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/list/job-category",
+      "type": "company",
+      "market": "kr",
+      "tags": [
+        "flex-job-board"
+      ],
+      "sourceStrategy": "flex-job-board",
+      "titleFilter": {
+        "positive": [
+          "software engineer",
+          "frontend",
+          "front-end",
+          "backend",
+          "full stack",
+          "full-stack",
+          "product manager",
+          "data analyst",
+          "data scientist",
+          "ai",
+          "machine learning",
+          "engineer",
+          "developer",
+          "工程師",
+          "前端",
+          "後端",
+          "全端",
+          "產品經理",
+          "資料分析",
+          "資料科學",
+          "機器學習",
+          "人工智慧"
+        ],
+        "negative": [
+          "senior director",
+          "vp ",
+          "vice president",
+          "head of",
+          "principal",
+          "staff",
+          "sales",
+          "account executive",
+          "legal",
+          "finance",
+          "資深總監",
+          "副總",
+          "法務",
+          "財務",
+          "業務"
+        ]
+      },
+      "maxDiscovered": 50
+    },
+    {
+      "name": "KR job board www.jumpit.co.kr",
+      "source": "Source flex job board",
+      "url": "https://www.jumpit.co.kr/jobs",
+      "type": "company",
+      "market": "kr",
+      "tags": [
+        "flex-job-board"
+      ],
+      "sourceStrategy": "flex-job-board",
+      "titleFilter": {
+        "positive": [
+          "software engineer",
+          "frontend",
+          "front-end",
+          "backend",
+          "full stack",
+          "full-stack",
+          "product manager",
+          "data analyst",
+          "data scientist",
+          "ai",
+          "machine learning",
+          "engineer",
+          "developer",
+          "工程師",
+          "前端",
+          "後端",
+          "全端",
+          "產品經理",
+          "資料分析",
+          "資料科學",
+          "機器學習",
+          "人工智慧"
+        ],
+        "negative": [
+          "senior director",
+          "vp ",
+          "vice president",
+          "head of",
+          "principal",
+          "staff",
+          "sales",
+          "account executive",
+          "legal",
+          "finance",
+          "資深總監",
+          "副總",
+          "法務",
+          "財務",
+          "業務"
+        ]
+      },
+      "maxDiscovered": 50
+    },
+    {
+      "name": "KR job board programmers.co.kr",
+      "source": "Source flex job board",
+      "url": "https://programmers.co.kr/job",
+      "type": "company",
+      "market": "kr",
+      "tags": [
+        "flex-job-board"
+      ],
+      "sourceStrategy": "flex-job-board",
+      "titleFilter": {
+        "positive": [
+          "software engineer",
+          "frontend",
+          "front-end",
+          "backend",
+          "full stack",
+          "full-stack",
+          "product manager",
+          "data analyst",
+          "data scientist",
+          "ai",
+          "machine learning",
+          "engineer",
+          "developer",
+          "工程師",
+          "前端",
+          "後端",
+          "全端",
+          "產品經理",
+          "資料分析",
+          "資料科學",
+          "機器學習",
+          "人工智慧"
+        ],
+        "negative": [
+          "senior director",
+          "vp ",
+          "vice president",
+          "head of",
+          "principal",
+          "staff",
+          "sales",
+          "account executive",
+          "legal",
+          "finance",
+          "資深總監",
+          "副總",
+          "法務",
+          "財務",
+          "業務"
+        ]
+      },
+      "maxDiscovered": 50
+    },
+    {
+      "name": "SG job board www.mycareersfuture.gov.sg",
+      "source": "Source flex job board",
+      "url": "https://www.mycareersfuture.gov.sg/search",
+      "type": "company",
+      "market": "sg",
+      "tags": [
+        "flex-job-board"
+      ],
+      "sourceStrategy": "flex-job-board",
+      "titleFilter": {
+        "positive": [
+          "software engineer",
+          "frontend",
+          "front-end",
+          "backend",
+          "full stack",
+          "full-stack",
+          "product manager",
+          "data analyst",
+          "data scientist",
+          "ai",
+          "machine learning",
+          "engineer",
+          "developer",
+          "工程師",
+          "前端",
+          "後端",
+          "全端",
+          "產品經理",
+          "資料分析",
+          "資料科學",
+          "機器學習",
+          "人工智慧"
+        ],
+        "negative": [
+          "senior director",
+          "vp ",
+          "vice president",
+          "head of",
+          "principal",
+          "staff",
+          "sales",
+          "account executive",
+          "legal",
+          "finance",
+          "資深總監",
+          "副總",
+          "法務",
+          "財務",
+          "業務"
+        ]
+      },
+      "maxDiscovered": 50
+    },
+    {
+      "name": "SG job board nodeflair.com",
+      "source": "Source flex job board",
+      "url": "https://nodeflair.com/jobs",
+      "type": "company",
+      "market": "sg",
+      "tags": [
+        "flex-job-board"
+      ],
+      "sourceStrategy": "flex-job-board",
+      "titleFilter": {
+        "positive": [
+          "software engineer",
+          "frontend",
+          "front-end",
+          "backend",
+          "full stack",
+          "full-stack",
+          "product manager",
+          "data analyst",
+          "data scientist",
+          "ai",
+          "machine learning",
+          "engineer",
+          "developer",
+          "工程師",
+          "前端",
+          "後端",
+          "全端",
+          "產品經理",
+          "資料分析",
+          "資料科學",
+          "機器學習",
+          "人工智慧"
+        ],
+        "negative": [
+          "senior director",
+          "vp ",
+          "vice president",
+          "head of",
+          "principal",
+          "staff",
+          "sales",
+          "account executive",
+          "legal",
+          "finance",
+          "資深總監",
+          "副總",
+          "法務",
+          "財務",
+          "業務"
+        ]
+      },
+      "maxDiscovered": 50
+    },
+    {
+      "name": "SG job board www.jobstreet.com.sg",
+      "source": "Source flex job board",
+      "url": "https://www.jobstreet.com.sg/jobs",
+      "type": "company",
+      "market": "sg",
+      "tags": [
+        "flex-job-board"
+      ],
+      "sourceStrategy": "flex-job-board",
+      "titleFilter": {
+        "positive": [
+          "software engineer",
+          "frontend",
+          "front-end",
+          "backend",
+          "full stack",
+          "full-stack",
+          "product manager",
+          "data analyst",
+          "data scientist",
+          "ai",
+          "machine learning",
+          "engineer",
+          "developer",
+          "工程師",
+          "前端",
+          "後端",
+          "全端",
+          "產品經理",
+          "資料分析",
+          "資料科學",
+          "機器學習",
+          "人工智慧"
+        ],
+        "negative": [
+          "senior director",
+          "vp ",
+          "vice president",
+          "head of",
+          "principal",
+          "staff",
+          "sales",
+          "account executive",
+          "legal",
+          "finance",
+          "資深總監",
+          "副總",
+          "法務",
+          "財務",
+          "業務"
+        ]
+      },
+      "maxDiscovered": 50
+    },
+    {
+      "name": "SG job board www.glassdoor.sg",
+      "source": "Source flex job board",
+      "url": "https://www.glassdoor.sg/Job/singapore-jobs-SRCH_IL.0,9_IN217.htm",
+      "type": "company",
+      "market": "sg",
+      "tags": [
+        "flex-job-board"
+      ],
+      "sourceStrategy": "flex-job-board",
+      "titleFilter": {
+        "positive": [
+          "software engineer",
+          "frontend",
+          "front-end",
+          "backend",
+          "full stack",
+          "full-stack",
+          "product manager",
+          "data analyst",
+          "data scientist",
+          "ai",
+          "machine learning",
+          "engineer",
+          "developer",
+          "工程師",
+          "前端",
+          "後端",
+          "全端",
+          "產品經理",
+          "資料分析",
+          "資料科學",
+          "機器學習",
+          "人工智慧"
+        ],
+        "negative": [
+          "senior director",
+          "vp ",
+          "vice president",
+          "head of",
+          "principal",
+          "staff",
+          "sales",
+          "account executive",
+          "legal",
+          "finance",
+          "資深總監",
+          "副總",
+          "法務",
+          "財務",
+          "業務"
+        ]
+      },
+      "maxDiscovered": 50
+    }
+  ],
+  "searchQueries": [
+    {
+      "market": "tw",
+      "query": "site:boards.greenhouse.io Taiwan frontend engineer"
+    },
+    {
+      "market": "tw",
+      "query": "site:jobs.lever.co Taipei product manager"
+    },
+    {
+      "market": "tw",
+      "query": "site:jobs.ashbyhq.com Taiwan software engineer"
+    },
+    {
+      "market": "tw",
+      "query": "site:*.com/careers Taipei data analyst"
+    },
+    {
+      "market": "tw",
+      "query": "site:104.com.tw 軟體工程師 台北"
+    },
+    {
+      "market": "tw",
+      "query": "site:yourator.co software engineer Taiwan"
+    },
+    {
+      "market": "tw",
+      "query": "site:careers.umc.com GenAI IT engineer Taiwan"
+    },
+    {
+      "market": "tw",
+      "query": "site:ase.aseglobal.com careers engineer Taiwan"
+    },
+    {
+      "market": "tw",
+      "query": "site:careers.garmin.com Taiwan software engineer"
+    },
+    {
+      "market": "tw",
+      "query": "site:google.com/about/careers/applications/jobs Taiwan software engineer"
+    },
+    {
+      "market": "tw",
+      "query": "site:careers.microsoft.com/v2/global/en/locations/taipei cloud ai engineer"
+    },
+    {
+      "market": "tw",
+      "query": "site:jobs.apple.com Taiwan machine learning hardware engineer"
+    },
+    {
+      "market": "tw",
+      "query": "site:nvidia.com/en-us/about-nvidia/careers Taiwan system software engineer"
+    },
+    {
+      "market": "tw",
+      "query": "site:asml.com/en/careers Taiwan software engineer"
+    },
+    {
+      "market": "tw",
+      "query": "site:micron.com/about/careers Taiwan data engineer"
+    },
+    {
+      "market": "tw",
+      "query": "site:appliedmaterials.com/us/en/careers Taiwan automation engineer"
+    },
+    {
+      "market": "cn",
+      "query": "site:jobs.bytedance.com frontend engineer"
+    },
+    {
+      "market": "cn",
+      "query": "site:careers.tencent.com engineer"
+    },
+    {
+      "market": "cn",
+      "query": "site:talent.alibaba.com product manager"
+    },
+    {
+      "market": "cn",
+      "query": "site:zhaopin.jd.com 前端 工程師"
+    },
+    {
+      "market": "cn",
+      "query": "site:talent.baidu.com machine learning engineer"
+    },
+    {
+      "market": "cn",
+      "query": "site:hr.163.com 後端 工程師"
+    },
+    {
+      "market": "cn",
+      "query": "site:careers.microsoft.com/v2/global/en/locations/beijing software engineer"
+    },
+    {
+      "market": "cn",
+      "query": "site:careers.microsoft.com/v2/global/en/locations/shanghai data platform engineer"
+    },
+    {
+      "market": "cn",
+      "query": "site:jobs.apple.com China machine learning engineer Shanghai"
+    },
+    {
+      "market": "cn",
+      "query": "site:ant-group.net/career AI engineer Hangzhou"
+    },
+    {
+      "market": "cn",
+      "query": "site:careers.pddglobal.com backend engineer Shanghai"
+    },
+    {
+      "market": "cn",
+      "query": "site:dji.com/careers robotics software engineer Shenzhen"
+    },
+    {
+      "market": "cn",
+      "query": "site:careers.shein.com data engineer China Singapore"
+    },
+    {
+      "market": "jp",
+      "query": "site:sony.com/en/SonyInfo/Careers/japan software engineer Tokyo"
+    },
+    {
+      "market": "jp",
+      "query": "site:corp.rakuten.co.jp/careers frontend engineer Tokyo"
+    },
+    {
+      "market": "jp",
+      "query": "site:global.toyota/jp/careers software engineer Japan"
+    },
+    {
+      "market": "kr",
+      "query": "site:samsungcareers.com software engineer Korea"
+    },
+    {
+      "market": "kr",
+      "query": "site:recruit.navercorp.com frontend engineer Korea"
+    },
+    {
+      "market": "kr",
+      "query": "site:careers.kakaoenterprise.com backend engineer Korea"
+    },
+    {
+      "market": "sg",
+      "query": "site:grab.careers Singapore software engineer"
+    },
+    {
+      "market": "sg",
+      "query": "site:career.sea.com Singapore data analyst"
+    },
+    {
+      "market": "sg",
+      "query": "site:tech.gov.sg/careers Singapore product manager"
+    },
+    {
+      "market": "global",
+      "query": "site:jobs.lever.co remote full stack engineer"
+    },
+    {
+      "market": "global",
+      "query": "site:boards.greenhouse.io remote data scientist"
+    },
+    {
+      "market": "tw",
+      "query": "Frontend Engineer Taiwan careers jobs"
+    },
+    {
+      "market": "tw",
+      "query": "Frontend Engineer Taipei careers jobs"
+    },
+    {
+      "market": "tw",
+      "query": "Frontend Engineer Hsinchu careers jobs"
+    },
+    {
+      "market": "tw",
+      "query": "Frontend Engineer Taichung careers jobs"
+    },
+    {
+      "market": "tw",
+      "query": "Frontend Engineer Kaohsiung careers jobs"
+    },
+    {
+      "market": "tw",
+      "query": "site:boards.greenhouse.io Frontend Engineer Taiwan"
+    },
+    {
+      "market": "tw",
+      "query": "site:jobs.lever.co Frontend Engineer Taiwan"
+    },
+    {
+      "market": "tw",
+      "query": "site:jobs.ashbyhq.com Frontend Engineer Taiwan"
+    },
+    {
+      "market": "tw",
+      "query": "site:apply.workable.com Frontend Engineer Taiwan"
+    },
+    {
+      "market": "tw",
+      "query": "site:jobs.smartrecruiters.com Frontend Engineer Taiwan"
+    },
+    {
+      "market": "tw",
+      "query": "Product Engineer Taiwan careers jobs"
+    },
+    {
+      "market": "tw",
+      "query": "Product Engineer Taipei careers jobs"
+    },
+    {
+      "market": "tw",
+      "query": "Product Engineer Hsinchu careers jobs"
+    },
+    {
+      "market": "tw",
+      "query": "Product Engineer Taichung careers jobs"
+    },
+    {
+      "market": "tw",
+      "query": "Product Engineer Kaohsiung careers jobs"
+    },
+    {
+      "market": "tw",
+      "query": "site:boards.greenhouse.io Product Engineer Taiwan"
+    },
+    {
+      "market": "tw",
+      "query": "site:jobs.lever.co Product Engineer Taiwan"
+    },
+    {
+      "market": "tw",
+      "query": "site:jobs.ashbyhq.com Product Engineer Taiwan"
+    },
+    {
+      "market": "tw",
+      "query": "site:apply.workable.com Product Engineer Taiwan"
+    },
+    {
+      "market": "tw",
+      "query": "site:jobs.smartrecruiters.com Product Engineer Taiwan"
+    },
+    {
+      "market": "tw",
+      "query": "Full Stack Engineer Taiwan careers jobs"
+    },
+    {
+      "market": "tw",
+      "query": "Full Stack Engineer Taipei careers jobs"
+    },
+    {
+      "market": "tw",
+      "query": "Full Stack Engineer Hsinchu careers jobs"
+    },
+    {
+      "market": "tw",
+      "query": "Full Stack Engineer Taichung careers jobs"
+    },
+    {
+      "market": "tw",
+      "query": "Full Stack Engineer Kaohsiung careers jobs"
+    },
+    {
+      "market": "tw",
+      "query": "site:boards.greenhouse.io Full Stack Engineer Taiwan"
+    },
+    {
+      "market": "tw",
+      "query": "site:jobs.lever.co Full Stack Engineer Taiwan"
+    },
+    {
+      "market": "tw",
+      "query": "site:jobs.ashbyhq.com Full Stack Engineer Taiwan"
+    },
+    {
+      "market": "tw",
+      "query": "site:apply.workable.com Full Stack Engineer Taiwan"
+    },
+    {
+      "market": "tw",
+      "query": "site:jobs.smartrecruiters.com Full Stack Engineer Taiwan"
+    },
+    {
+      "market": "tw",
+      "query": "frontend engineer Taiwan careers jobs"
+    },
+    {
+      "market": "tw",
+      "query": "frontend engineer Taipei careers jobs"
+    },
+    {
+      "market": "tw",
+      "query": "frontend engineer Hsinchu careers jobs"
+    },
+    {
+      "market": "tw",
+      "query": "frontend engineer Taichung careers jobs"
+    },
+    {
+      "market": "tw",
+      "query": "frontend engineer Kaohsiung careers jobs"
+    },
+    {
+      "market": "tw",
+      "query": "site:boards.greenhouse.io frontend engineer Taiwan"
+    },
+    {
+      "market": "tw",
+      "query": "site:jobs.lever.co frontend engineer Taiwan"
+    },
+    {
+      "market": "tw",
+      "query": "site:jobs.ashbyhq.com frontend engineer Taiwan"
+    },
+    {
+      "market": "tw",
+      "query": "site:apply.workable.com frontend engineer Taiwan"
+    },
+    {
+      "market": "tw",
+      "query": "site:jobs.smartrecruiters.com frontend engineer Taiwan"
+    },
+    {
+      "market": "tw",
+      "query": "front-end engineer Taiwan careers jobs"
+    },
+    {
+      "market": "tw",
+      "query": "front-end engineer Taipei careers jobs"
+    },
+    {
+      "market": "tw",
+      "query": "front-end engineer Hsinchu careers jobs"
+    },
+    {
+      "market": "tw",
+      "query": "front-end engineer Taichung careers jobs"
+    },
+    {
+      "market": "tw",
+      "query": "front-end engineer Kaohsiung careers jobs"
+    },
+    {
+      "market": "tw",
+      "query": "site:boards.greenhouse.io front-end engineer Taiwan"
+    },
+    {
+      "market": "tw",
+      "query": "site:jobs.lever.co front-end engineer Taiwan"
+    },
+    {
+      "market": "tw",
+      "query": "site:jobs.ashbyhq.com front-end engineer Taiwan"
+    },
+    {
+      "market": "tw",
+      "query": "site:apply.workable.com front-end engineer Taiwan"
+    },
+    {
+      "market": "tw",
+      "query": "site:jobs.smartrecruiters.com front-end engineer Taiwan"
+    },
+    {
+      "market": "tw",
+      "query": "web engineer Taiwan careers jobs"
+    },
+    {
+      "market": "tw",
+      "query": "web engineer Taipei careers jobs"
+    },
+    {
+      "market": "tw",
+      "query": "web engineer Hsinchu careers jobs"
+    },
+    {
+      "market": "tw",
+      "query": "web engineer Taichung careers jobs"
+    },
+    {
+      "market": "tw",
+      "query": "web engineer Kaohsiung careers jobs"
+    },
+    {
+      "market": "tw",
+      "query": "site:boards.greenhouse.io web engineer Taiwan"
+    },
+    {
+      "market": "tw",
+      "query": "site:jobs.lever.co web engineer Taiwan"
+    },
+    {
+      "market": "tw",
+      "query": "site:jobs.ashbyhq.com web engineer Taiwan"
+    },
+    {
+      "market": "tw",
+      "query": "site:apply.workable.com web engineer Taiwan"
+    },
+    {
+      "market": "tw",
+      "query": "site:jobs.smartrecruiters.com web engineer Taiwan"
+    },
+    {
+      "market": "tw",
+      "query": "react engineer Taiwan careers jobs"
+    },
+    {
+      "market": "tw",
+      "query": "react engineer Taipei careers jobs"
+    },
+    {
+      "market": "tw",
+      "query": "react engineer Hsinchu careers jobs"
+    },
+    {
+      "market": "tw",
+      "query": "react engineer Taichung careers jobs"
+    },
+    {
+      "market": "tw",
+      "query": "react engineer Kaohsiung careers jobs"
+    },
+    {
+      "market": "tw",
+      "query": "site:boards.greenhouse.io react engineer Taiwan"
+    },
+    {
+      "market": "tw",
+      "query": "site:jobs.lever.co react engineer Taiwan"
+    },
+    {
+      "market": "tw",
+      "query": "site:jobs.ashbyhq.com react engineer Taiwan"
+    },
+    {
+      "market": "tw",
+      "query": "site:apply.workable.com react engineer Taiwan"
+    },
+    {
+      "market": "tw",
+      "query": "site:jobs.smartrecruiters.com react engineer Taiwan"
+    },
+    {
+      "market": "tw",
+      "query": "前端工程師 Taiwan careers jobs"
+    },
+    {
+      "market": "tw",
+      "query": "前端工程師 Taipei careers jobs"
+    },
+    {
+      "market": "tw",
+      "query": "前端工程師 Hsinchu careers jobs"
+    },
+    {
+      "market": "tw",
+      "query": "前端工程師 Taichung careers jobs"
+    },
+    {
+      "market": "tw",
+      "query": "前端工程師 Kaohsiung careers jobs"
+    },
+    {
+      "market": "tw",
+      "query": "site:boards.greenhouse.io 前端工程師 Taiwan"
+    },
+    {
+      "market": "tw",
+      "query": "site:jobs.lever.co 前端工程師 Taiwan"
+    },
+    {
+      "market": "tw",
+      "query": "site:jobs.ashbyhq.com 前端工程師 Taiwan"
+    },
+    {
+      "market": "tw",
+      "query": "site:apply.workable.com 前端工程師 Taiwan"
+    },
+    {
+      "market": "tw",
+      "query": "site:jobs.smartrecruiters.com 前端工程師 Taiwan"
+    },
+    {
+      "market": "tw",
+      "query": "網頁工程師 Taiwan careers jobs"
+    },
+    {
+      "market": "tw",
+      "query": "網頁工程師 Taipei careers jobs"
+    },
+    {
+      "market": "tw",
+      "query": "網頁工程師 Hsinchu careers jobs"
+    },
+    {
+      "market": "tw",
+      "query": "網頁工程師 Taichung careers jobs"
+    },
+    {
+      "market": "tw",
+      "query": "網頁工程師 Kaohsiung careers jobs"
+    },
+    {
+      "market": "tw",
+      "query": "site:boards.greenhouse.io 網頁工程師 Taiwan"
+    },
+    {
+      "market": "tw",
+      "query": "site:jobs.lever.co 網頁工程師 Taiwan"
+    },
+    {
+      "market": "tw",
+      "query": "site:jobs.ashbyhq.com 網頁工程師 Taiwan"
+    },
+    {
+      "market": "tw",
+      "query": "site:apply.workable.com 網頁工程師 Taiwan"
+    },
+    {
+      "market": "tw",
+      "query": "site:jobs.smartrecruiters.com 網頁工程師 Taiwan"
+    },
+    {
+      "market": "tw",
+      "query": "product engineer Taiwan careers jobs"
+    },
+    {
+      "market": "tw",
+      "query": "product engineer Taipei careers jobs"
+    },
+    {
+      "market": "tw",
+      "query": "product engineer Hsinchu careers jobs"
+    },
+    {
+      "market": "tw",
+      "query": "product engineer Taichung careers jobs"
+    },
+    {
+      "market": "tw",
+      "query": "product engineer Kaohsiung careers jobs"
+    },
+    {
+      "market": "tw",
+      "query": "site:boards.greenhouse.io product engineer Taiwan"
+    },
+    {
+      "market": "tw",
+      "query": "site:jobs.lever.co product engineer Taiwan"
+    },
+    {
+      "market": "tw",
+      "query": "site:jobs.ashbyhq.com product engineer Taiwan"
+    },
+    {
+      "market": "tw",
+      "query": "site:apply.workable.com product engineer Taiwan"
+    },
+    {
+      "market": "tw",
+      "query": "site:jobs.smartrecruiters.com product engineer Taiwan"
+    },
+    {
+      "market": "tw",
+      "query": "full stack product engineer Taiwan careers jobs"
+    },
+    {
+      "market": "tw",
+      "query": "full stack product engineer Taipei careers jobs"
+    },
+    {
+      "market": "tw",
+      "query": "full stack product engineer Hsinchu careers jobs"
+    },
+    {
+      "market": "tw",
+      "query": "full stack product engineer Taichung careers jobs"
+    },
+    {
+      "market": "tw",
+      "query": "full stack product engineer Kaohsiung careers jobs"
+    },
+    {
+      "market": "tw",
+      "query": "site:boards.greenhouse.io full stack product engineer Taiwan"
+    },
+    {
+      "market": "tw",
+      "query": "site:jobs.lever.co full stack product engineer Taiwan"
+    },
+    {
+      "market": "tw",
+      "query": "site:jobs.ashbyhq.com full stack product engineer Taiwan"
+    },
+    {
+      "market": "tw",
+      "query": "site:apply.workable.com full stack product engineer Taiwan"
+    },
+    {
+      "market": "tw",
+      "query": "site:jobs.smartrecruiters.com full stack product engineer Taiwan"
+    },
+    {
+      "market": "tw",
+      "query": "產品工程師 Taiwan careers jobs"
+    },
+    {
+      "market": "tw",
+      "query": "產品工程師 Taipei careers jobs"
+    },
+    {
+      "market": "tw",
+      "query": "產品工程師 Hsinchu careers jobs"
+    },
+    {
+      "market": "tw",
+      "query": "產品工程師 Taichung careers jobs"
+    },
+    {
+      "market": "tw",
+      "query": "產品工程師 Kaohsiung careers jobs"
+    },
+    {
+      "market": "tw",
+      "query": "site:boards.greenhouse.io 產品工程師 Taiwan"
+    },
+    {
+      "market": "tw",
+      "query": "site:jobs.lever.co 產品工程師 Taiwan"
+    },
+    {
+      "market": "tw",
+      "query": "site:jobs.ashbyhq.com 產品工程師 Taiwan"
+    },
+    {
+      "market": "tw",
+      "query": "site:apply.workable.com 產品工程師 Taiwan"
+    },
+    {
+      "market": "tw",
+      "query": "site:jobs.smartrecruiters.com 產品工程師 Taiwan"
+    },
+    {
+      "market": "tw",
+      "query": "全端產品工程師 Taiwan careers jobs"
+    },
+    {
+      "market": "tw",
+      "query": "全端產品工程師 Taipei careers jobs"
+    },
+    {
+      "market": "tw",
+      "query": "全端產品工程師 Hsinchu careers jobs"
+    },
+    {
+      "market": "tw",
+      "query": "全端產品工程師 Taichung careers jobs"
+    },
+    {
+      "market": "tw",
+      "query": "全端產品工程師 Kaohsiung careers jobs"
+    },
+    {
+      "market": "tw",
+      "query": "site:boards.greenhouse.io 全端產品工程師 Taiwan"
+    },
+    {
+      "market": "tw",
+      "query": "site:jobs.lever.co 全端產品工程師 Taiwan"
+    },
+    {
+      "market": "tw",
+      "query": "site:jobs.ashbyhq.com 全端產品工程師 Taiwan"
+    },
+    {
+      "market": "tw",
+      "query": "site:apply.workable.com 全端產品工程師 Taiwan"
+    },
+    {
+      "market": "tw",
+      "query": "site:jobs.smartrecruiters.com 全端產品工程師 Taiwan"
+    },
+    {
+      "market": "cn",
+      "query": "Frontend Engineer China careers jobs"
+    },
+    {
+      "market": "cn",
+      "query": "Frontend Engineer Shanghai careers jobs"
+    },
+    {
+      "market": "cn",
+      "query": "Frontend Engineer Beijing careers jobs"
+    },
+    {
+      "market": "cn",
+      "query": "Frontend Engineer Shenzhen careers jobs"
+    },
+    {
+      "market": "cn",
+      "query": "Frontend Engineer Hangzhou careers jobs"
+    },
+    {
+      "market": "cn",
+      "query": "site:boards.greenhouse.io Frontend Engineer China"
+    },
+    {
+      "market": "cn",
+      "query": "site:jobs.lever.co Frontend Engineer China"
+    },
+    {
+      "market": "cn",
+      "query": "site:jobs.ashbyhq.com Frontend Engineer China"
+    },
+    {
+      "market": "cn",
+      "query": "site:apply.workable.com Frontend Engineer China"
+    },
+    {
+      "market": "cn",
+      "query": "site:jobs.smartrecruiters.com Frontend Engineer China"
+    },
+    {
+      "market": "cn",
+      "query": "Product Engineer China careers jobs"
+    },
+    {
+      "market": "cn",
+      "query": "Product Engineer Shanghai careers jobs"
+    },
+    {
+      "market": "cn",
+      "query": "Product Engineer Beijing careers jobs"
+    },
+    {
+      "market": "cn",
+      "query": "Product Engineer Shenzhen careers jobs"
+    },
+    {
+      "market": "cn",
+      "query": "Product Engineer Hangzhou careers jobs"
+    },
+    {
+      "market": "cn",
+      "query": "site:boards.greenhouse.io Product Engineer China"
+    },
+    {
+      "market": "cn",
+      "query": "site:jobs.lever.co Product Engineer China"
+    },
+    {
+      "market": "cn",
+      "query": "site:jobs.ashbyhq.com Product Engineer China"
+    },
+    {
+      "market": "cn",
+      "query": "site:apply.workable.com Product Engineer China"
+    },
+    {
+      "market": "cn",
+      "query": "site:jobs.smartrecruiters.com Product Engineer China"
+    },
+    {
+      "market": "cn",
+      "query": "Full Stack Engineer China careers jobs"
+    },
+    {
+      "market": "cn",
+      "query": "Full Stack Engineer Shanghai careers jobs"
+    },
+    {
+      "market": "cn",
+      "query": "Full Stack Engineer Beijing careers jobs"
+    },
+    {
+      "market": "cn",
+      "query": "Full Stack Engineer Shenzhen careers jobs"
+    },
+    {
+      "market": "cn",
+      "query": "Full Stack Engineer Hangzhou careers jobs"
+    },
+    {
+      "market": "cn",
+      "query": "site:boards.greenhouse.io Full Stack Engineer China"
+    },
+    {
+      "market": "cn",
+      "query": "site:jobs.lever.co Full Stack Engineer China"
+    },
+    {
+      "market": "cn",
+      "query": "site:jobs.ashbyhq.com Full Stack Engineer China"
+    },
+    {
+      "market": "cn",
+      "query": "site:apply.workable.com Full Stack Engineer China"
+    },
+    {
+      "market": "cn",
+      "query": "site:jobs.smartrecruiters.com Full Stack Engineer China"
+    },
+    {
+      "market": "cn",
+      "query": "frontend engineer China careers jobs"
+    },
+    {
+      "market": "cn",
+      "query": "frontend engineer Shanghai careers jobs"
+    },
+    {
+      "market": "cn",
+      "query": "frontend engineer Beijing careers jobs"
+    },
+    {
+      "market": "cn",
+      "query": "frontend engineer Shenzhen careers jobs"
+    },
+    {
+      "market": "cn",
+      "query": "frontend engineer Hangzhou careers jobs"
+    },
+    {
+      "market": "cn",
+      "query": "site:boards.greenhouse.io frontend engineer China"
+    },
+    {
+      "market": "cn",
+      "query": "site:jobs.lever.co frontend engineer China"
+    },
+    {
+      "market": "cn",
+      "query": "site:jobs.ashbyhq.com frontend engineer China"
+    },
+    {
+      "market": "cn",
+      "query": "site:apply.workable.com frontend engineer China"
+    },
+    {
+      "market": "cn",
+      "query": "site:jobs.smartrecruiters.com frontend engineer China"
+    },
+    {
+      "market": "cn",
+      "query": "front-end engineer China careers jobs"
+    },
+    {
+      "market": "cn",
+      "query": "front-end engineer Shanghai careers jobs"
+    },
+    {
+      "market": "cn",
+      "query": "front-end engineer Beijing careers jobs"
+    },
+    {
+      "market": "cn",
+      "query": "front-end engineer Shenzhen careers jobs"
+    },
+    {
+      "market": "cn",
+      "query": "front-end engineer Hangzhou careers jobs"
+    },
+    {
+      "market": "cn",
+      "query": "site:boards.greenhouse.io front-end engineer China"
+    },
+    {
+      "market": "cn",
+      "query": "site:jobs.lever.co front-end engineer China"
+    },
+    {
+      "market": "cn",
+      "query": "site:jobs.ashbyhq.com front-end engineer China"
+    },
+    {
+      "market": "cn",
+      "query": "site:apply.workable.com front-end engineer China"
+    },
+    {
+      "market": "cn",
+      "query": "site:jobs.smartrecruiters.com front-end engineer China"
+    },
+    {
+      "market": "cn",
+      "query": "web engineer China careers jobs"
+    },
+    {
+      "market": "cn",
+      "query": "web engineer Shanghai careers jobs"
+    },
+    {
+      "market": "cn",
+      "query": "web engineer Beijing careers jobs"
+    },
+    {
+      "market": "cn",
+      "query": "web engineer Shenzhen careers jobs"
+    },
+    {
+      "market": "cn",
+      "query": "web engineer Hangzhou careers jobs"
+    },
+    {
+      "market": "cn",
+      "query": "site:boards.greenhouse.io web engineer China"
+    },
+    {
+      "market": "cn",
+      "query": "site:jobs.lever.co web engineer China"
+    },
+    {
+      "market": "cn",
+      "query": "site:jobs.ashbyhq.com web engineer China"
+    },
+    {
+      "market": "cn",
+      "query": "site:apply.workable.com web engineer China"
+    },
+    {
+      "market": "cn",
+      "query": "site:jobs.smartrecruiters.com web engineer China"
+    },
+    {
+      "market": "cn",
+      "query": "react engineer China careers jobs"
+    },
+    {
+      "market": "cn",
+      "query": "react engineer Shanghai careers jobs"
+    },
+    {
+      "market": "cn",
+      "query": "react engineer Beijing careers jobs"
+    },
+    {
+      "market": "cn",
+      "query": "react engineer Shenzhen careers jobs"
+    },
+    {
+      "market": "cn",
+      "query": "react engineer Hangzhou careers jobs"
+    },
+    {
+      "market": "cn",
+      "query": "site:boards.greenhouse.io react engineer China"
+    },
+    {
+      "market": "cn",
+      "query": "site:jobs.lever.co react engineer China"
+    },
+    {
+      "market": "cn",
+      "query": "site:jobs.ashbyhq.com react engineer China"
+    },
+    {
+      "market": "cn",
+      "query": "site:apply.workable.com react engineer China"
+    },
+    {
+      "market": "cn",
+      "query": "site:jobs.smartrecruiters.com react engineer China"
+    },
+    {
+      "market": "cn",
+      "query": "前端工程師 China careers jobs"
+    },
+    {
+      "market": "cn",
+      "query": "前端工程師 Shanghai careers jobs"
+    },
+    {
+      "market": "cn",
+      "query": "前端工程師 Beijing careers jobs"
+    },
+    {
+      "market": "cn",
+      "query": "前端工程師 Shenzhen careers jobs"
+    },
+    {
+      "market": "cn",
+      "query": "前端工程師 Hangzhou careers jobs"
+    },
+    {
+      "market": "cn",
+      "query": "site:boards.greenhouse.io 前端工程師 China"
+    },
+    {
+      "market": "cn",
+      "query": "site:jobs.lever.co 前端工程師 China"
+    },
+    {
+      "market": "cn",
+      "query": "site:jobs.ashbyhq.com 前端工程師 China"
+    },
+    {
+      "market": "cn",
+      "query": "site:apply.workable.com 前端工程師 China"
+    },
+    {
+      "market": "cn",
+      "query": "site:jobs.smartrecruiters.com 前端工程師 China"
+    },
+    {
+      "market": "cn",
+      "query": "網頁工程師 China careers jobs"
+    },
+    {
+      "market": "cn",
+      "query": "網頁工程師 Shanghai careers jobs"
+    },
+    {
+      "market": "cn",
+      "query": "網頁工程師 Beijing careers jobs"
+    },
+    {
+      "market": "cn",
+      "query": "網頁工程師 Shenzhen careers jobs"
+    },
+    {
+      "market": "cn",
+      "query": "網頁工程師 Hangzhou careers jobs"
+    },
+    {
+      "market": "cn",
+      "query": "site:boards.greenhouse.io 網頁工程師 China"
+    },
+    {
+      "market": "cn",
+      "query": "site:jobs.lever.co 網頁工程師 China"
+    },
+    {
+      "market": "cn",
+      "query": "site:jobs.ashbyhq.com 網頁工程師 China"
+    },
+    {
+      "market": "cn",
+      "query": "site:apply.workable.com 網頁工程師 China"
+    },
+    {
+      "market": "cn",
+      "query": "site:jobs.smartrecruiters.com 網頁工程師 China"
+    },
+    {
+      "market": "cn",
+      "query": "product engineer China careers jobs"
+    },
+    {
+      "market": "cn",
+      "query": "product engineer Shanghai careers jobs"
+    },
+    {
+      "market": "cn",
+      "query": "product engineer Beijing careers jobs"
+    },
+    {
+      "market": "cn",
+      "query": "product engineer Shenzhen careers jobs"
+    },
+    {
+      "market": "cn",
+      "query": "product engineer Hangzhou careers jobs"
+    },
+    {
+      "market": "cn",
+      "query": "site:boards.greenhouse.io product engineer China"
+    },
+    {
+      "market": "cn",
+      "query": "site:jobs.lever.co product engineer China"
+    },
+    {
+      "market": "cn",
+      "query": "site:jobs.ashbyhq.com product engineer China"
+    },
+    {
+      "market": "cn",
+      "query": "site:apply.workable.com product engineer China"
+    },
+    {
+      "market": "cn",
+      "query": "site:jobs.smartrecruiters.com product engineer China"
+    },
+    {
+      "market": "cn",
+      "query": "full stack product engineer China careers jobs"
+    },
+    {
+      "market": "cn",
+      "query": "full stack product engineer Shanghai careers jobs"
+    },
+    {
+      "market": "cn",
+      "query": "full stack product engineer Beijing careers jobs"
+    },
+    {
+      "market": "cn",
+      "query": "full stack product engineer Shenzhen careers jobs"
+    },
+    {
+      "market": "cn",
+      "query": "full stack product engineer Hangzhou careers jobs"
+    },
+    {
+      "market": "cn",
+      "query": "site:boards.greenhouse.io full stack product engineer China"
+    },
+    {
+      "market": "cn",
+      "query": "site:jobs.lever.co full stack product engineer China"
+    },
+    {
+      "market": "cn",
+      "query": "site:jobs.ashbyhq.com full stack product engineer China"
+    },
+    {
+      "market": "cn",
+      "query": "site:apply.workable.com full stack product engineer China"
+    },
+    {
+      "market": "cn",
+      "query": "site:jobs.smartrecruiters.com full stack product engineer China"
+    },
+    {
+      "market": "cn",
+      "query": "產品工程師 China careers jobs"
+    },
+    {
+      "market": "cn",
+      "query": "產品工程師 Shanghai careers jobs"
+    },
+    {
+      "market": "cn",
+      "query": "產品工程師 Beijing careers jobs"
+    },
+    {
+      "market": "cn",
+      "query": "產品工程師 Shenzhen careers jobs"
+    },
+    {
+      "market": "cn",
+      "query": "產品工程師 Hangzhou careers jobs"
+    },
+    {
+      "market": "cn",
+      "query": "site:boards.greenhouse.io 產品工程師 China"
+    },
+    {
+      "market": "cn",
+      "query": "site:jobs.lever.co 產品工程師 China"
+    },
+    {
+      "market": "cn",
+      "query": "site:jobs.ashbyhq.com 產品工程師 China"
+    },
+    {
+      "market": "cn",
+      "query": "site:apply.workable.com 產品工程師 China"
+    },
+    {
+      "market": "cn",
+      "query": "site:jobs.smartrecruiters.com 產品工程師 China"
+    },
+    {
+      "market": "cn",
+      "query": "全端產品工程師 China careers jobs"
+    },
+    {
+      "market": "cn",
+      "query": "全端產品工程師 Shanghai careers jobs"
+    },
+    {
+      "market": "cn",
+      "query": "全端產品工程師 Beijing careers jobs"
+    },
+    {
+      "market": "cn",
+      "query": "全端產品工程師 Shenzhen careers jobs"
+    },
+    {
+      "market": "cn",
+      "query": "全端產品工程師 Hangzhou careers jobs"
+    },
+    {
+      "market": "cn",
+      "query": "site:boards.greenhouse.io 全端產品工程師 China"
+    },
+    {
+      "market": "cn",
+      "query": "site:jobs.lever.co 全端產品工程師 China"
+    },
+    {
+      "market": "cn",
+      "query": "site:jobs.ashbyhq.com 全端產品工程師 China"
+    },
+    {
+      "market": "cn",
+      "query": "site:apply.workable.com 全端產品工程師 China"
+    },
+    {
+      "market": "cn",
+      "query": "site:jobs.smartrecruiters.com 全端產品工程師 China"
+    },
+    {
+      "market": "jp",
+      "query": "Frontend Engineer Japan careers jobs"
+    },
+    {
+      "market": "jp",
+      "query": "Frontend Engineer Tokyo careers jobs"
+    },
+    {
+      "market": "jp",
+      "query": "Frontend Engineer Osaka careers jobs"
+    },
+    {
+      "market": "jp",
+      "query": "Frontend Engineer Kyoto careers jobs"
+    },
+    {
+      "market": "jp",
+      "query": "Frontend Engineer Yokohama careers jobs"
+    },
+    {
+      "market": "jp",
+      "query": "site:boards.greenhouse.io Frontend Engineer Japan"
+    },
+    {
+      "market": "jp",
+      "query": "site:jobs.lever.co Frontend Engineer Japan"
+    },
+    {
+      "market": "jp",
+      "query": "site:jobs.ashbyhq.com Frontend Engineer Japan"
+    },
+    {
+      "market": "jp",
+      "query": "site:apply.workable.com Frontend Engineer Japan"
+    },
+    {
+      "market": "jp",
+      "query": "site:jobs.smartrecruiters.com Frontend Engineer Japan"
+    },
+    {
+      "market": "jp",
+      "query": "Product Engineer Japan careers jobs"
+    },
+    {
+      "market": "jp",
+      "query": "Product Engineer Tokyo careers jobs"
+    },
+    {
+      "market": "jp",
+      "query": "Product Engineer Osaka careers jobs"
+    },
+    {
+      "market": "jp",
+      "query": "Product Engineer Kyoto careers jobs"
+    },
+    {
+      "market": "jp",
+      "query": "Product Engineer Yokohama careers jobs"
+    },
+    {
+      "market": "jp",
+      "query": "site:boards.greenhouse.io Product Engineer Japan"
+    },
+    {
+      "market": "jp",
+      "query": "site:jobs.lever.co Product Engineer Japan"
+    },
+    {
+      "market": "jp",
+      "query": "site:jobs.ashbyhq.com Product Engineer Japan"
+    },
+    {
+      "market": "jp",
+      "query": "site:apply.workable.com Product Engineer Japan"
+    },
+    {
+      "market": "jp",
+      "query": "site:jobs.smartrecruiters.com Product Engineer Japan"
+    },
+    {
+      "market": "jp",
+      "query": "Full Stack Engineer Japan careers jobs"
+    },
+    {
+      "market": "jp",
+      "query": "Full Stack Engineer Tokyo careers jobs"
+    },
+    {
+      "market": "jp",
+      "query": "Full Stack Engineer Osaka careers jobs"
+    },
+    {
+      "market": "jp",
+      "query": "Full Stack Engineer Kyoto careers jobs"
+    },
+    {
+      "market": "jp",
+      "query": "Full Stack Engineer Yokohama careers jobs"
+    },
+    {
+      "market": "jp",
+      "query": "site:boards.greenhouse.io Full Stack Engineer Japan"
+    },
+    {
+      "market": "jp",
+      "query": "site:jobs.lever.co Full Stack Engineer Japan"
+    },
+    {
+      "market": "jp",
+      "query": "site:jobs.ashbyhq.com Full Stack Engineer Japan"
+    },
+    {
+      "market": "jp",
+      "query": "site:apply.workable.com Full Stack Engineer Japan"
+    },
+    {
+      "market": "jp",
+      "query": "site:jobs.smartrecruiters.com Full Stack Engineer Japan"
+    },
+    {
+      "market": "jp",
+      "query": "frontend engineer Japan careers jobs"
+    },
+    {
+      "market": "jp",
+      "query": "frontend engineer Tokyo careers jobs"
+    },
+    {
+      "market": "jp",
+      "query": "frontend engineer Osaka careers jobs"
+    },
+    {
+      "market": "jp",
+      "query": "frontend engineer Kyoto careers jobs"
+    },
+    {
+      "market": "jp",
+      "query": "frontend engineer Yokohama careers jobs"
+    },
+    {
+      "market": "jp",
+      "query": "site:boards.greenhouse.io frontend engineer Japan"
+    },
+    {
+      "market": "jp",
+      "query": "site:jobs.lever.co frontend engineer Japan"
+    },
+    {
+      "market": "jp",
+      "query": "site:jobs.ashbyhq.com frontend engineer Japan"
+    },
+    {
+      "market": "jp",
+      "query": "site:apply.workable.com frontend engineer Japan"
+    },
+    {
+      "market": "jp",
+      "query": "site:jobs.smartrecruiters.com frontend engineer Japan"
+    },
+    {
+      "market": "jp",
+      "query": "front-end engineer Japan careers jobs"
+    },
+    {
+      "market": "jp",
+      "query": "front-end engineer Tokyo careers jobs"
+    },
+    {
+      "market": "jp",
+      "query": "front-end engineer Osaka careers jobs"
+    },
+    {
+      "market": "jp",
+      "query": "front-end engineer Kyoto careers jobs"
+    },
+    {
+      "market": "jp",
+      "query": "front-end engineer Yokohama careers jobs"
+    },
+    {
+      "market": "jp",
+      "query": "site:boards.greenhouse.io front-end engineer Japan"
+    },
+    {
+      "market": "jp",
+      "query": "site:jobs.lever.co front-end engineer Japan"
+    },
+    {
+      "market": "jp",
+      "query": "site:jobs.ashbyhq.com front-end engineer Japan"
+    },
+    {
+      "market": "jp",
+      "query": "site:apply.workable.com front-end engineer Japan"
+    },
+    {
+      "market": "jp",
+      "query": "site:jobs.smartrecruiters.com front-end engineer Japan"
+    },
+    {
+      "market": "jp",
+      "query": "web engineer Japan careers jobs"
+    },
+    {
+      "market": "jp",
+      "query": "web engineer Tokyo careers jobs"
+    },
+    {
+      "market": "jp",
+      "query": "web engineer Osaka careers jobs"
+    },
+    {
+      "market": "jp",
+      "query": "web engineer Kyoto careers jobs"
+    },
+    {
+      "market": "jp",
+      "query": "web engineer Yokohama careers jobs"
+    },
+    {
+      "market": "jp",
+      "query": "site:boards.greenhouse.io web engineer Japan"
+    },
+    {
+      "market": "jp",
+      "query": "site:jobs.lever.co web engineer Japan"
+    },
+    {
+      "market": "jp",
+      "query": "site:jobs.ashbyhq.com web engineer Japan"
+    },
+    {
+      "market": "jp",
+      "query": "site:apply.workable.com web engineer Japan"
+    },
+    {
+      "market": "jp",
+      "query": "site:jobs.smartrecruiters.com web engineer Japan"
+    },
+    {
+      "market": "jp",
+      "query": "react engineer Japan careers jobs"
+    },
+    {
+      "market": "jp",
+      "query": "react engineer Tokyo careers jobs"
+    },
+    {
+      "market": "jp",
+      "query": "react engineer Osaka careers jobs"
+    },
+    {
+      "market": "jp",
+      "query": "react engineer Kyoto careers jobs"
+    },
+    {
+      "market": "jp",
+      "query": "react engineer Yokohama careers jobs"
+    },
+    {
+      "market": "jp",
+      "query": "site:boards.greenhouse.io react engineer Japan"
+    },
+    {
+      "market": "jp",
+      "query": "site:jobs.lever.co react engineer Japan"
+    },
+    {
+      "market": "jp",
+      "query": "site:jobs.ashbyhq.com react engineer Japan"
+    },
+    {
+      "market": "jp",
+      "query": "site:apply.workable.com react engineer Japan"
+    },
+    {
+      "market": "jp",
+      "query": "site:jobs.smartrecruiters.com react engineer Japan"
+    },
+    {
+      "market": "jp",
+      "query": "前端工程師 Japan careers jobs"
+    },
+    {
+      "market": "jp",
+      "query": "前端工程師 Tokyo careers jobs"
+    },
+    {
+      "market": "jp",
+      "query": "前端工程師 Osaka careers jobs"
+    },
+    {
+      "market": "jp",
+      "query": "前端工程師 Kyoto careers jobs"
+    },
+    {
+      "market": "jp",
+      "query": "前端工程師 Yokohama careers jobs"
+    },
+    {
+      "market": "jp",
+      "query": "site:boards.greenhouse.io 前端工程師 Japan"
+    },
+    {
+      "market": "jp",
+      "query": "site:jobs.lever.co 前端工程師 Japan"
+    },
+    {
+      "market": "jp",
+      "query": "site:jobs.ashbyhq.com 前端工程師 Japan"
+    },
+    {
+      "market": "jp",
+      "query": "site:apply.workable.com 前端工程師 Japan"
+    },
+    {
+      "market": "jp",
+      "query": "site:jobs.smartrecruiters.com 前端工程師 Japan"
+    },
+    {
+      "market": "jp",
+      "query": "網頁工程師 Japan careers jobs"
+    },
+    {
+      "market": "jp",
+      "query": "網頁工程師 Tokyo careers jobs"
+    },
+    {
+      "market": "jp",
+      "query": "網頁工程師 Osaka careers jobs"
+    },
+    {
+      "market": "jp",
+      "query": "網頁工程師 Kyoto careers jobs"
+    },
+    {
+      "market": "jp",
+      "query": "網頁工程師 Yokohama careers jobs"
+    },
+    {
+      "market": "jp",
+      "query": "site:boards.greenhouse.io 網頁工程師 Japan"
+    },
+    {
+      "market": "jp",
+      "query": "site:jobs.lever.co 網頁工程師 Japan"
+    },
+    {
+      "market": "jp",
+      "query": "site:jobs.ashbyhq.com 網頁工程師 Japan"
+    },
+    {
+      "market": "jp",
+      "query": "site:apply.workable.com 網頁工程師 Japan"
+    },
+    {
+      "market": "jp",
+      "query": "site:jobs.smartrecruiters.com 網頁工程師 Japan"
+    },
+    {
+      "market": "jp",
+      "query": "product engineer Japan careers jobs"
+    },
+    {
+      "market": "jp",
+      "query": "product engineer Tokyo careers jobs"
+    },
+    {
+      "market": "jp",
+      "query": "product engineer Osaka careers jobs"
+    },
+    {
+      "market": "jp",
+      "query": "product engineer Kyoto careers jobs"
+    },
+    {
+      "market": "jp",
+      "query": "product engineer Yokohama careers jobs"
+    },
+    {
+      "market": "jp",
+      "query": "site:boards.greenhouse.io product engineer Japan"
+    },
+    {
+      "market": "jp",
+      "query": "site:jobs.lever.co product engineer Japan"
+    },
+    {
+      "market": "jp",
+      "query": "site:jobs.ashbyhq.com product engineer Japan"
+    },
+    {
+      "market": "jp",
+      "query": "site:apply.workable.com product engineer Japan"
+    },
+    {
+      "market": "jp",
+      "query": "site:jobs.smartrecruiters.com product engineer Japan"
+    },
+    {
+      "market": "jp",
+      "query": "full stack product engineer Japan careers jobs"
+    },
+    {
+      "market": "jp",
+      "query": "full stack product engineer Tokyo careers jobs"
+    },
+    {
+      "market": "jp",
+      "query": "full stack product engineer Osaka careers jobs"
+    },
+    {
+      "market": "jp",
+      "query": "full stack product engineer Kyoto careers jobs"
+    },
+    {
+      "market": "jp",
+      "query": "full stack product engineer Yokohama careers jobs"
+    },
+    {
+      "market": "jp",
+      "query": "site:boards.greenhouse.io full stack product engineer Japan"
+    },
+    {
+      "market": "jp",
+      "query": "site:jobs.lever.co full stack product engineer Japan"
+    },
+    {
+      "market": "jp",
+      "query": "site:jobs.ashbyhq.com full stack product engineer Japan"
+    },
+    {
+      "market": "jp",
+      "query": "site:apply.workable.com full stack product engineer Japan"
+    },
+    {
+      "market": "jp",
+      "query": "site:jobs.smartrecruiters.com full stack product engineer Japan"
+    },
+    {
+      "market": "jp",
+      "query": "產品工程師 Japan careers jobs"
+    },
+    {
+      "market": "jp",
+      "query": "產品工程師 Tokyo careers jobs"
+    },
+    {
+      "market": "jp",
+      "query": "產品工程師 Osaka careers jobs"
+    },
+    {
+      "market": "jp",
+      "query": "產品工程師 Kyoto careers jobs"
+    },
+    {
+      "market": "jp",
+      "query": "產品工程師 Yokohama careers jobs"
+    },
+    {
+      "market": "jp",
+      "query": "site:boards.greenhouse.io 產品工程師 Japan"
+    },
+    {
+      "market": "jp",
+      "query": "site:jobs.lever.co 產品工程師 Japan"
+    },
+    {
+      "market": "jp",
+      "query": "site:jobs.ashbyhq.com 產品工程師 Japan"
+    },
+    {
+      "market": "jp",
+      "query": "site:apply.workable.com 產品工程師 Japan"
+    },
+    {
+      "market": "jp",
+      "query": "site:jobs.smartrecruiters.com 產品工程師 Japan"
+    },
+    {
+      "market": "jp",
+      "query": "全端產品工程師 Japan careers jobs"
+    },
+    {
+      "market": "jp",
+      "query": "全端產品工程師 Tokyo careers jobs"
+    },
+    {
+      "market": "jp",
+      "query": "全端產品工程師 Osaka careers jobs"
+    },
+    {
+      "market": "jp",
+      "query": "全端產品工程師 Kyoto careers jobs"
+    },
+    {
+      "market": "jp",
+      "query": "全端產品工程師 Yokohama careers jobs"
+    },
+    {
+      "market": "jp",
+      "query": "site:boards.greenhouse.io 全端產品工程師 Japan"
+    },
+    {
+      "market": "jp",
+      "query": "site:jobs.lever.co 全端產品工程師 Japan"
+    },
+    {
+      "market": "jp",
+      "query": "site:jobs.ashbyhq.com 全端產品工程師 Japan"
+    },
+    {
+      "market": "jp",
+      "query": "site:apply.workable.com 全端產品工程師 Japan"
+    },
+    {
+      "market": "jp",
+      "query": "site:jobs.smartrecruiters.com 全端產品工程師 Japan"
+    },
+    {
+      "market": "kr",
+      "query": "Frontend Engineer Korea careers jobs"
+    },
+    {
+      "market": "kr",
+      "query": "Frontend Engineer South Korea careers jobs"
+    },
+    {
+      "market": "kr",
+      "query": "Frontend Engineer Seoul careers jobs"
+    },
+    {
+      "market": "kr",
+      "query": "Frontend Engineer Pangyo careers jobs"
+    },
+    {
+      "market": "kr",
+      "query": "Frontend Engineer Busan careers jobs"
+    },
+    {
+      "market": "kr",
+      "query": "site:boards.greenhouse.io Frontend Engineer Korea"
+    },
+    {
+      "market": "kr",
+      "query": "site:jobs.lever.co Frontend Engineer Korea"
+    },
+    {
+      "market": "kr",
+      "query": "site:jobs.ashbyhq.com Frontend Engineer Korea"
+    },
+    {
+      "market": "kr",
+      "query": "site:apply.workable.com Frontend Engineer Korea"
+    },
+    {
+      "market": "kr",
+      "query": "site:jobs.smartrecruiters.com Frontend Engineer Korea"
+    },
+    {
+      "market": "kr",
+      "query": "Product Engineer Korea careers jobs"
+    },
+    {
+      "market": "kr",
+      "query": "Product Engineer South Korea careers jobs"
+    },
+    {
+      "market": "kr",
+      "query": "Product Engineer Seoul careers jobs"
+    },
+    {
+      "market": "kr",
+      "query": "Product Engineer Pangyo careers jobs"
+    },
+    {
+      "market": "kr",
+      "query": "Product Engineer Busan careers jobs"
+    },
+    {
+      "market": "kr",
+      "query": "site:boards.greenhouse.io Product Engineer Korea"
+    },
+    {
+      "market": "kr",
+      "query": "site:jobs.lever.co Product Engineer Korea"
+    },
+    {
+      "market": "kr",
+      "query": "site:jobs.ashbyhq.com Product Engineer Korea"
+    },
+    {
+      "market": "kr",
+      "query": "site:apply.workable.com Product Engineer Korea"
+    },
+    {
+      "market": "kr",
+      "query": "site:jobs.smartrecruiters.com Product Engineer Korea"
+    },
+    {
+      "market": "kr",
+      "query": "Full Stack Engineer Korea careers jobs"
+    },
+    {
+      "market": "kr",
+      "query": "Full Stack Engineer South Korea careers jobs"
+    },
+    {
+      "market": "kr",
+      "query": "Full Stack Engineer Seoul careers jobs"
+    },
+    {
+      "market": "kr",
+      "query": "Full Stack Engineer Pangyo careers jobs"
+    },
+    {
+      "market": "kr",
+      "query": "Full Stack Engineer Busan careers jobs"
+    },
+    {
+      "market": "kr",
+      "query": "site:boards.greenhouse.io Full Stack Engineer Korea"
+    },
+    {
+      "market": "kr",
+      "query": "site:jobs.lever.co Full Stack Engineer Korea"
+    },
+    {
+      "market": "kr",
+      "query": "site:jobs.ashbyhq.com Full Stack Engineer Korea"
+    },
+    {
+      "market": "kr",
+      "query": "site:apply.workable.com Full Stack Engineer Korea"
+    },
+    {
+      "market": "kr",
+      "query": "site:jobs.smartrecruiters.com Full Stack Engineer Korea"
+    },
+    {
+      "market": "kr",
+      "query": "frontend engineer Korea careers jobs"
+    },
+    {
+      "market": "kr",
+      "query": "frontend engineer South Korea careers jobs"
+    },
+    {
+      "market": "kr",
+      "query": "frontend engineer Seoul careers jobs"
+    },
+    {
+      "market": "kr",
+      "query": "frontend engineer Pangyo careers jobs"
+    },
+    {
+      "market": "kr",
+      "query": "frontend engineer Busan careers jobs"
+    },
+    {
+      "market": "kr",
+      "query": "site:boards.greenhouse.io frontend engineer Korea"
+    },
+    {
+      "market": "kr",
+      "query": "site:jobs.lever.co frontend engineer Korea"
+    },
+    {
+      "market": "kr",
+      "query": "site:jobs.ashbyhq.com frontend engineer Korea"
+    },
+    {
+      "market": "kr",
+      "query": "site:apply.workable.com frontend engineer Korea"
+    },
+    {
+      "market": "kr",
+      "query": "site:jobs.smartrecruiters.com frontend engineer Korea"
+    },
+    {
+      "market": "kr",
+      "query": "front-end engineer Korea careers jobs"
+    },
+    {
+      "market": "kr",
+      "query": "front-end engineer South Korea careers jobs"
+    },
+    {
+      "market": "kr",
+      "query": "front-end engineer Seoul careers jobs"
+    },
+    {
+      "market": "kr",
+      "query": "front-end engineer Pangyo careers jobs"
+    },
+    {
+      "market": "kr",
+      "query": "front-end engineer Busan careers jobs"
+    },
+    {
+      "market": "kr",
+      "query": "site:boards.greenhouse.io front-end engineer Korea"
+    },
+    {
+      "market": "kr",
+      "query": "site:jobs.lever.co front-end engineer Korea"
+    },
+    {
+      "market": "kr",
+      "query": "site:jobs.ashbyhq.com front-end engineer Korea"
+    },
+    {
+      "market": "kr",
+      "query": "site:apply.workable.com front-end engineer Korea"
+    },
+    {
+      "market": "kr",
+      "query": "site:jobs.smartrecruiters.com front-end engineer Korea"
+    },
+    {
+      "market": "kr",
+      "query": "web engineer Korea careers jobs"
+    },
+    {
+      "market": "kr",
+      "query": "web engineer South Korea careers jobs"
+    },
+    {
+      "market": "kr",
+      "query": "web engineer Seoul careers jobs"
+    },
+    {
+      "market": "kr",
+      "query": "web engineer Pangyo careers jobs"
+    },
+    {
+      "market": "kr",
+      "query": "web engineer Busan careers jobs"
+    },
+    {
+      "market": "kr",
+      "query": "site:boards.greenhouse.io web engineer Korea"
+    },
+    {
+      "market": "kr",
+      "query": "site:jobs.lever.co web engineer Korea"
+    },
+    {
+      "market": "kr",
+      "query": "site:jobs.ashbyhq.com web engineer Korea"
+    },
+    {
+      "market": "kr",
+      "query": "site:apply.workable.com web engineer Korea"
+    },
+    {
+      "market": "kr",
+      "query": "site:jobs.smartrecruiters.com web engineer Korea"
+    },
+    {
+      "market": "kr",
+      "query": "react engineer Korea careers jobs"
+    },
+    {
+      "market": "kr",
+      "query": "react engineer South Korea careers jobs"
+    },
+    {
+      "market": "kr",
+      "query": "react engineer Seoul careers jobs"
+    },
+    {
+      "market": "kr",
+      "query": "react engineer Pangyo careers jobs"
+    },
+    {
+      "market": "kr",
+      "query": "react engineer Busan careers jobs"
+    },
+    {
+      "market": "kr",
+      "query": "site:boards.greenhouse.io react engineer Korea"
+    },
+    {
+      "market": "kr",
+      "query": "site:jobs.lever.co react engineer Korea"
+    },
+    {
+      "market": "kr",
+      "query": "site:jobs.ashbyhq.com react engineer Korea"
+    },
+    {
+      "market": "kr",
+      "query": "site:apply.workable.com react engineer Korea"
+    },
+    {
+      "market": "kr",
+      "query": "site:jobs.smartrecruiters.com react engineer Korea"
+    },
+    {
+      "market": "kr",
+      "query": "前端工程師 Korea careers jobs"
+    },
+    {
+      "market": "kr",
+      "query": "前端工程師 South Korea careers jobs"
+    },
+    {
+      "market": "kr",
+      "query": "前端工程師 Seoul careers jobs"
+    },
+    {
+      "market": "kr",
+      "query": "前端工程師 Pangyo careers jobs"
+    },
+    {
+      "market": "kr",
+      "query": "前端工程師 Busan careers jobs"
+    },
+    {
+      "market": "kr",
+      "query": "site:boards.greenhouse.io 前端工程師 Korea"
+    },
+    {
+      "market": "kr",
+      "query": "site:jobs.lever.co 前端工程師 Korea"
+    },
+    {
+      "market": "kr",
+      "query": "site:jobs.ashbyhq.com 前端工程師 Korea"
+    },
+    {
+      "market": "kr",
+      "query": "site:apply.workable.com 前端工程師 Korea"
+    },
+    {
+      "market": "kr",
+      "query": "site:jobs.smartrecruiters.com 前端工程師 Korea"
+    },
+    {
+      "market": "kr",
+      "query": "網頁工程師 Korea careers jobs"
+    },
+    {
+      "market": "kr",
+      "query": "網頁工程師 South Korea careers jobs"
+    },
+    {
+      "market": "kr",
+      "query": "網頁工程師 Seoul careers jobs"
+    },
+    {
+      "market": "kr",
+      "query": "網頁工程師 Pangyo careers jobs"
+    },
+    {
+      "market": "kr",
+      "query": "網頁工程師 Busan careers jobs"
+    },
+    {
+      "market": "kr",
+      "query": "site:boards.greenhouse.io 網頁工程師 Korea"
+    },
+    {
+      "market": "kr",
+      "query": "site:jobs.lever.co 網頁工程師 Korea"
+    },
+    {
+      "market": "kr",
+      "query": "site:jobs.ashbyhq.com 網頁工程師 Korea"
+    },
+    {
+      "market": "kr",
+      "query": "site:apply.workable.com 網頁工程師 Korea"
+    },
+    {
+      "market": "kr",
+      "query": "site:jobs.smartrecruiters.com 網頁工程師 Korea"
+    },
+    {
+      "market": "kr",
+      "query": "product engineer Korea careers jobs"
+    },
+    {
+      "market": "kr",
+      "query": "product engineer South Korea careers jobs"
+    },
+    {
+      "market": "kr",
+      "query": "product engineer Seoul careers jobs"
+    },
+    {
+      "market": "kr",
+      "query": "product engineer Pangyo careers jobs"
+    },
+    {
+      "market": "kr",
+      "query": "product engineer Busan careers jobs"
+    },
+    {
+      "market": "kr",
+      "query": "site:boards.greenhouse.io product engineer Korea"
+    },
+    {
+      "market": "kr",
+      "query": "site:jobs.lever.co product engineer Korea"
+    },
+    {
+      "market": "kr",
+      "query": "site:jobs.ashbyhq.com product engineer Korea"
+    },
+    {
+      "market": "kr",
+      "query": "site:apply.workable.com product engineer Korea"
+    },
+    {
+      "market": "kr",
+      "query": "site:jobs.smartrecruiters.com product engineer Korea"
+    },
+    {
+      "market": "kr",
+      "query": "full stack product engineer Korea careers jobs"
+    },
+    {
+      "market": "kr",
+      "query": "full stack product engineer South Korea careers jobs"
+    },
+    {
+      "market": "kr",
+      "query": "full stack product engineer Seoul careers jobs"
+    },
+    {
+      "market": "kr",
+      "query": "full stack product engineer Pangyo careers jobs"
+    },
+    {
+      "market": "kr",
+      "query": "full stack product engineer Busan careers jobs"
+    },
+    {
+      "market": "kr",
+      "query": "site:boards.greenhouse.io full stack product engineer Korea"
+    },
+    {
+      "market": "kr",
+      "query": "site:jobs.lever.co full stack product engineer Korea"
+    },
+    {
+      "market": "kr",
+      "query": "site:jobs.ashbyhq.com full stack product engineer Korea"
+    },
+    {
+      "market": "kr",
+      "query": "site:apply.workable.com full stack product engineer Korea"
+    },
+    {
+      "market": "kr",
+      "query": "site:jobs.smartrecruiters.com full stack product engineer Korea"
+    },
+    {
+      "market": "kr",
+      "query": "產品工程師 Korea careers jobs"
+    },
+    {
+      "market": "kr",
+      "query": "產品工程師 South Korea careers jobs"
+    },
+    {
+      "market": "kr",
+      "query": "產品工程師 Seoul careers jobs"
+    },
+    {
+      "market": "kr",
+      "query": "產品工程師 Pangyo careers jobs"
+    },
+    {
+      "market": "kr",
+      "query": "產品工程師 Busan careers jobs"
+    },
+    {
+      "market": "kr",
+      "query": "site:boards.greenhouse.io 產品工程師 Korea"
+    },
+    {
+      "market": "kr",
+      "query": "site:jobs.lever.co 產品工程師 Korea"
+    },
+    {
+      "market": "kr",
+      "query": "site:jobs.ashbyhq.com 產品工程師 Korea"
+    },
+    {
+      "market": "kr",
+      "query": "site:apply.workable.com 產品工程師 Korea"
+    },
+    {
+      "market": "kr",
+      "query": "site:jobs.smartrecruiters.com 產品工程師 Korea"
+    },
+    {
+      "market": "kr",
+      "query": "全端產品工程師 Korea careers jobs"
+    },
+    {
+      "market": "kr",
+      "query": "全端產品工程師 South Korea careers jobs"
+    },
+    {
+      "market": "kr",
+      "query": "全端產品工程師 Seoul careers jobs"
+    },
+    {
+      "market": "kr",
+      "query": "全端產品工程師 Pangyo careers jobs"
+    },
+    {
+      "market": "kr",
+      "query": "全端產品工程師 Busan careers jobs"
+    },
+    {
+      "market": "kr",
+      "query": "site:boards.greenhouse.io 全端產品工程師 Korea"
+    },
+    {
+      "market": "kr",
+      "query": "site:jobs.lever.co 全端產品工程師 Korea"
+    },
+    {
+      "market": "kr",
+      "query": "site:jobs.ashbyhq.com 全端產品工程師 Korea"
+    },
+    {
+      "market": "kr",
+      "query": "site:apply.workable.com 全端產品工程師 Korea"
+    },
+    {
+      "market": "kr",
+      "query": "site:jobs.smartrecruiters.com 全端產品工程師 Korea"
+    },
+    {
+      "market": "sg",
+      "query": "Frontend Engineer Singapore careers jobs"
+    },
+    {
+      "market": "sg",
+      "query": "Frontend Engineer 新加坡 careers jobs"
+    },
+    {
+      "market": "sg",
+      "query": "site:boards.greenhouse.io Frontend Engineer Singapore"
+    },
+    {
+      "market": "sg",
+      "query": "site:jobs.lever.co Frontend Engineer Singapore"
+    },
+    {
+      "market": "sg",
+      "query": "site:jobs.ashbyhq.com Frontend Engineer Singapore"
+    },
+    {
+      "market": "sg",
+      "query": "site:apply.workable.com Frontend Engineer Singapore"
+    },
+    {
+      "market": "sg",
+      "query": "site:jobs.smartrecruiters.com Frontend Engineer Singapore"
+    },
+    {
+      "market": "sg",
+      "query": "Product Engineer Singapore careers jobs"
+    },
+    {
+      "market": "sg",
+      "query": "Product Engineer 新加坡 careers jobs"
+    },
+    {
+      "market": "sg",
+      "query": "site:boards.greenhouse.io Product Engineer Singapore"
+    },
+    {
+      "market": "sg",
+      "query": "site:jobs.lever.co Product Engineer Singapore"
+    },
+    {
+      "market": "sg",
+      "query": "site:jobs.ashbyhq.com Product Engineer Singapore"
+    },
+    {
+      "market": "sg",
+      "query": "site:apply.workable.com Product Engineer Singapore"
+    },
+    {
+      "market": "sg",
+      "query": "site:jobs.smartrecruiters.com Product Engineer Singapore"
+    },
+    {
+      "market": "sg",
+      "query": "Full Stack Engineer Singapore careers jobs"
+    },
+    {
+      "market": "sg",
+      "query": "Full Stack Engineer 新加坡 careers jobs"
+    },
+    {
+      "market": "sg",
+      "query": "site:boards.greenhouse.io Full Stack Engineer Singapore"
+    },
+    {
+      "market": "sg",
+      "query": "site:jobs.lever.co Full Stack Engineer Singapore"
+    },
+    {
+      "market": "sg",
+      "query": "site:jobs.ashbyhq.com Full Stack Engineer Singapore"
+    },
+    {
+      "market": "sg",
+      "query": "site:apply.workable.com Full Stack Engineer Singapore"
+    },
+    {
+      "market": "sg",
+      "query": "site:jobs.smartrecruiters.com Full Stack Engineer Singapore"
+    },
+    {
+      "market": "sg",
+      "query": "frontend engineer Singapore careers jobs"
+    },
+    {
+      "market": "sg",
+      "query": "frontend engineer 新加坡 careers jobs"
+    },
+    {
+      "market": "sg",
+      "query": "site:boards.greenhouse.io frontend engineer Singapore"
+    },
+    {
+      "market": "sg",
+      "query": "site:jobs.lever.co frontend engineer Singapore"
+    },
+    {
+      "market": "sg",
+      "query": "site:jobs.ashbyhq.com frontend engineer Singapore"
+    },
+    {
+      "market": "sg",
+      "query": "site:apply.workable.com frontend engineer Singapore"
+    },
+    {
+      "market": "sg",
+      "query": "site:jobs.smartrecruiters.com frontend engineer Singapore"
+    },
+    {
+      "market": "sg",
+      "query": "front-end engineer Singapore careers jobs"
+    },
+    {
+      "market": "sg",
+      "query": "front-end engineer 新加坡 careers jobs"
+    },
+    {
+      "market": "sg",
+      "query": "site:boards.greenhouse.io front-end engineer Singapore"
+    },
+    {
+      "market": "sg",
+      "query": "site:jobs.lever.co front-end engineer Singapore"
+    },
+    {
+      "market": "sg",
+      "query": "site:jobs.ashbyhq.com front-end engineer Singapore"
+    },
+    {
+      "market": "sg",
+      "query": "site:apply.workable.com front-end engineer Singapore"
+    },
+    {
+      "market": "sg",
+      "query": "site:jobs.smartrecruiters.com front-end engineer Singapore"
+    },
+    {
+      "market": "sg",
+      "query": "web engineer Singapore careers jobs"
+    },
+    {
+      "market": "sg",
+      "query": "web engineer 新加坡 careers jobs"
+    },
+    {
+      "market": "sg",
+      "query": "site:boards.greenhouse.io web engineer Singapore"
+    },
+    {
+      "market": "sg",
+      "query": "site:jobs.lever.co web engineer Singapore"
+    },
+    {
+      "market": "sg",
+      "query": "site:jobs.ashbyhq.com web engineer Singapore"
+    },
+    {
+      "market": "sg",
+      "query": "site:apply.workable.com web engineer Singapore"
+    },
+    {
+      "market": "sg",
+      "query": "site:jobs.smartrecruiters.com web engineer Singapore"
+    },
+    {
+      "market": "sg",
+      "query": "react engineer Singapore careers jobs"
+    },
+    {
+      "market": "sg",
+      "query": "react engineer 新加坡 careers jobs"
+    },
+    {
+      "market": "sg",
+      "query": "site:boards.greenhouse.io react engineer Singapore"
+    },
+    {
+      "market": "sg",
+      "query": "site:jobs.lever.co react engineer Singapore"
+    },
+    {
+      "market": "sg",
+      "query": "site:jobs.ashbyhq.com react engineer Singapore"
+    },
+    {
+      "market": "sg",
+      "query": "site:apply.workable.com react engineer Singapore"
+    },
+    {
+      "market": "sg",
+      "query": "site:jobs.smartrecruiters.com react engineer Singapore"
+    },
+    {
+      "market": "sg",
+      "query": "前端工程師 Singapore careers jobs"
+    },
+    {
+      "market": "sg",
+      "query": "前端工程師 新加坡 careers jobs"
+    },
+    {
+      "market": "sg",
+      "query": "site:boards.greenhouse.io 前端工程師 Singapore"
+    },
+    {
+      "market": "sg",
+      "query": "site:jobs.lever.co 前端工程師 Singapore"
+    },
+    {
+      "market": "sg",
+      "query": "site:jobs.ashbyhq.com 前端工程師 Singapore"
+    },
+    {
+      "market": "sg",
+      "query": "site:apply.workable.com 前端工程師 Singapore"
+    },
+    {
+      "market": "sg",
+      "query": "site:jobs.smartrecruiters.com 前端工程師 Singapore"
+    },
+    {
+      "market": "sg",
+      "query": "網頁工程師 Singapore careers jobs"
+    },
+    {
+      "market": "sg",
+      "query": "網頁工程師 新加坡 careers jobs"
+    },
+    {
+      "market": "sg",
+      "query": "site:boards.greenhouse.io 網頁工程師 Singapore"
+    },
+    {
+      "market": "sg",
+      "query": "site:jobs.lever.co 網頁工程師 Singapore"
+    },
+    {
+      "market": "sg",
+      "query": "site:jobs.ashbyhq.com 網頁工程師 Singapore"
+    },
+    {
+      "market": "sg",
+      "query": "site:apply.workable.com 網頁工程師 Singapore"
+    },
+    {
+      "market": "sg",
+      "query": "site:jobs.smartrecruiters.com 網頁工程師 Singapore"
+    },
+    {
+      "market": "sg",
+      "query": "product engineer Singapore careers jobs"
+    },
+    {
+      "market": "sg",
+      "query": "product engineer 新加坡 careers jobs"
+    },
+    {
+      "market": "sg",
+      "query": "site:boards.greenhouse.io product engineer Singapore"
+    },
+    {
+      "market": "sg",
+      "query": "site:jobs.lever.co product engineer Singapore"
+    },
+    {
+      "market": "sg",
+      "query": "site:jobs.ashbyhq.com product engineer Singapore"
+    },
+    {
+      "market": "sg",
+      "query": "site:apply.workable.com product engineer Singapore"
+    },
+    {
+      "market": "sg",
+      "query": "site:jobs.smartrecruiters.com product engineer Singapore"
+    },
+    {
+      "market": "sg",
+      "query": "full stack product engineer Singapore careers jobs"
+    },
+    {
+      "market": "sg",
+      "query": "full stack product engineer 新加坡 careers jobs"
+    },
+    {
+      "market": "sg",
+      "query": "site:boards.greenhouse.io full stack product engineer Singapore"
+    },
+    {
+      "market": "sg",
+      "query": "site:jobs.lever.co full stack product engineer Singapore"
+    },
+    {
+      "market": "sg",
+      "query": "site:jobs.ashbyhq.com full stack product engineer Singapore"
+    },
+    {
+      "market": "sg",
+      "query": "site:apply.workable.com full stack product engineer Singapore"
+    },
+    {
+      "market": "sg",
+      "query": "site:jobs.smartrecruiters.com full stack product engineer Singapore"
+    },
+    {
+      "market": "sg",
+      "query": "產品工程師 Singapore careers jobs"
+    },
+    {
+      "market": "sg",
+      "query": "產品工程師 新加坡 careers jobs"
+    },
+    {
+      "market": "sg",
+      "query": "site:boards.greenhouse.io 產品工程師 Singapore"
+    },
+    {
+      "market": "sg",
+      "query": "site:jobs.lever.co 產品工程師 Singapore"
+    },
+    {
+      "market": "sg",
+      "query": "site:jobs.ashbyhq.com 產品工程師 Singapore"
+    },
+    {
+      "market": "sg",
+      "query": "site:apply.workable.com 產品工程師 Singapore"
+    },
+    {
+      "market": "sg",
+      "query": "site:jobs.smartrecruiters.com 產品工程師 Singapore"
+    },
+    {
+      "market": "sg",
+      "query": "全端產品工程師 Singapore careers jobs"
+    },
+    {
+      "market": "sg",
+      "query": "全端產品工程師 新加坡 careers jobs"
+    },
+    {
+      "market": "sg",
+      "query": "site:boards.greenhouse.io 全端產品工程師 Singapore"
+    },
+    {
+      "market": "sg",
+      "query": "site:jobs.lever.co 全端產品工程師 Singapore"
+    },
+    {
+      "market": "sg",
+      "query": "site:jobs.ashbyhq.com 全端產品工程師 Singapore"
+    },
+    {
+      "market": "sg",
+      "query": "site:apply.workable.com 全端產品工程師 Singapore"
+    },
+    {
+      "market": "sg",
+      "query": "site:jobs.smartrecruiters.com 全端產品工程師 Singapore"
+    }
+  ]
+}

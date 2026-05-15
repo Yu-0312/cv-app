@@ -1,0 +1,1404 @@
+{
+  "name": "Career Ops Source Strategy Example",
+  "description": "Starter strategy inspired by career-ops portals.yml: maintain target markets, tracked companies, ATS boards, direct sources, and search queries here, then build data/career-ops-sources.json for the backend worker.",
+  "targetMarkets": [
+    "tw",
+    "cn",
+    "jp",
+    "kr",
+    "sg",
+    "global"
+  ],
+  "titleFilter": {
+    "positive": [
+      "software engineer",
+      "frontend",
+      "front-end",
+      "backend",
+      "full stack",
+      "full-stack",
+      "product manager",
+      "data analyst",
+      "data scientist",
+      "ai",
+      "machine learning",
+      "engineer",
+      "developer",
+      "工程師",
+      "前端",
+      "後端",
+      "全端",
+      "產品經理",
+      "資料分析",
+      "資料科學",
+      "機器學習",
+      "人工智慧"
+    ],
+    "negative": [
+      "senior director",
+      "vp ",
+      "vice president",
+      "head of",
+      "principal",
+      "staff",
+      "sales",
+      "account executive",
+      "legal",
+      "finance",
+      "資深總監",
+      "副總",
+      "法務",
+      "財務",
+      "業務"
+    ]
+  },
+  "trackedCompanies": [
+    {
+      "name": "TSMC",
+      "market": "tw",
+      "industry": "semiconductor",
+      "type": "company",
+      "url": "https://www.tsmc.com/english/careers",
+      "maxDiscovered": 50,
+      "tags": [
+        "large-enterprise",
+        "semiconductor",
+        "taiwan"
+      ]
+    },
+    {
+      "name": "MediaTek",
+      "market": "tw",
+      "industry": "semiconductor",
+      "type": "company",
+      "url": "https://corp.mediatek.com/careers",
+      "maxDiscovered": 50,
+      "tags": [
+        "large-enterprise",
+        "semiconductor",
+        "taiwan"
+      ]
+    },
+    {
+      "name": "Hon Hai Foxconn",
+      "market": "tw",
+      "industry": "electronics-manufacturing",
+      "type": "company",
+      "url": "https://www.foxconn.com/en-us/careers",
+      "maxDiscovered": 40,
+      "tags": [
+        "large-enterprise",
+        "manufacturing",
+        "taiwan"
+      ]
+    },
+    {
+      "name": "Delta Electronics",
+      "market": "tw",
+      "industry": "electronics",
+      "type": "company",
+      "url": "https://www.deltaww.com/en-US/Careers",
+      "maxDiscovered": 40,
+      "tags": [
+        "large-enterprise",
+        "electronics",
+        "taiwan"
+      ]
+    },
+    {
+      "name": "ASUS",
+      "market": "tw",
+      "industry": "computer-hardware",
+      "type": "company",
+      "url": "https://www.asus.com/careers/",
+      "maxDiscovered": 40,
+      "tags": [
+        "large-enterprise",
+        "hardware",
+        "taiwan"
+      ]
+    },
+    {
+      "name": "Acer",
+      "market": "tw",
+      "industry": "computer-hardware",
+      "type": "company",
+      "url": "https://www.acer.com/careers",
+      "maxDiscovered": 40,
+      "tags": [
+        "large-enterprise",
+        "hardware",
+        "taiwan"
+      ]
+    },
+    {
+      "name": "Trend Micro",
+      "market": "tw",
+      "industry": "cybersecurity",
+      "type": "company",
+      "url": "https://www.trendmicro.com/en_us/about/careers.html",
+      "maxDiscovered": 40,
+      "tags": [
+        "large-enterprise",
+        "security",
+        "taiwan"
+      ]
+    },
+    {
+      "name": "Appier",
+      "market": "tw",
+      "industry": "ai-saas",
+      "type": "company",
+      "url": "https://www.appier.com/careers",
+      "maxDiscovered": 40,
+      "tags": [
+        "tech",
+        "ai",
+        "taiwan"
+      ]
+    },
+    {
+      "name": "Gogolook",
+      "market": "tw",
+      "industry": "consumer-security",
+      "type": "company",
+      "url": "https://www.gogolook.com/careers",
+      "maxDiscovered": 30,
+      "tags": [
+        "tech",
+        "security",
+        "taiwan"
+      ]
+    },
+    {
+      "name": "91APP",
+      "market": "tw",
+      "industry": "commerce-saas",
+      "type": "company",
+      "url": "https://www.91app.com/career/",
+      "maxDiscovered": 30,
+      "tags": [
+        "tech",
+        "saas",
+        "taiwan"
+      ]
+    },
+    {
+      "name": "Cathay Financial Holdings",
+      "market": "tw",
+      "industry": "financial-services",
+      "type": "company",
+      "url": "https://www.cathayholdings.com/holdings/careers",
+      "maxDiscovered": 30,
+      "tags": [
+        "large-enterprise",
+        "finance",
+        "taiwan"
+      ]
+    },
+    {
+      "name": "Fubon Financial Holdings",
+      "market": "tw",
+      "industry": "financial-services",
+      "type": "company",
+      "url": "https://www.fubon.com/financialholdings/en/career/career.htm",
+      "maxDiscovered": 30,
+      "tags": [
+        "large-enterprise",
+        "finance",
+        "taiwan"
+      ]
+    },
+    {
+      "name": "LINE Taiwan",
+      "market": "tw",
+      "industry": "internet",
+      "type": "company",
+      "url": "https://linecorp.com/zh-hant/career/jobs/",
+      "maxDiscovered": 40,
+      "tags": [
+        "tech",
+        "internet",
+        "taiwan"
+      ]
+    },
+    {
+      "name": "ByteDance",
+      "market": "cn",
+      "industry": "internet",
+      "type": "company",
+      "adapter": "smartrecruiters",
+      "companyIdentifier": "ByteDance",
+      "url": "https://jobs.bytedance.com/en/",
+      "maxDiscovered": 80,
+      "tags": [
+        "large-enterprise",
+        "internet",
+        "china"
+      ]
+    },
+    {
+      "name": "Tencent",
+      "market": "cn",
+      "industry": "internet",
+      "type": "company",
+      "url": "https://careers.tencent.com/en-us/",
+      "maxDiscovered": 80,
+      "tags": [
+        "large-enterprise",
+        "internet",
+        "china"
+      ]
+    },
+    {
+      "name": "Alibaba",
+      "market": "cn",
+      "industry": "internet-commerce",
+      "type": "company",
+      "url": "https://talent.alibaba.com/",
+      "maxDiscovered": 80,
+      "tags": [
+        "large-enterprise",
+        "commerce",
+        "china"
+      ]
+    },
+    {
+      "name": "Huawei",
+      "market": "cn",
+      "industry": "telecom-hardware",
+      "type": "company",
+      "url": "https://career.huawei.com/reccampportal/portal5/index.html",
+      "maxDiscovered": 80,
+      "tags": [
+        "large-enterprise",
+        "telecom",
+        "china"
+      ]
+    },
+    {
+      "name": "Xiaomi",
+      "market": "cn",
+      "industry": "consumer-electronics",
+      "type": "company",
+      "url": "https://hr.xiaomi.com/",
+      "maxDiscovered": 60,
+      "tags": [
+        "large-enterprise",
+        "hardware",
+        "china"
+      ]
+    },
+    {
+      "name": "Meituan",
+      "market": "cn",
+      "industry": "local-services",
+      "type": "company",
+      "url": "https://zhaopin.meituan.com/",
+      "maxDiscovered": 60,
+      "tags": [
+        "large-enterprise",
+        "local-services",
+        "china"
+      ]
+    },
+    {
+      "name": "JD.com",
+      "market": "cn",
+      "industry": "ecommerce-logistics",
+      "type": "company",
+      "url": "https://zhaopin.jd.com/",
+      "maxDiscovered": 60,
+      "tags": [
+        "large-enterprise",
+        "commerce",
+        "china"
+      ]
+    },
+    {
+      "name": "Baidu",
+      "market": "cn",
+      "industry": "ai-search",
+      "type": "company",
+      "url": "https://talent.baidu.com/",
+      "maxDiscovered": 60,
+      "tags": [
+        "large-enterprise",
+        "ai",
+        "china"
+      ]
+    },
+    {
+      "name": "NetEase",
+      "market": "cn",
+      "industry": "internet-gaming",
+      "type": "company",
+      "url": "https://hr.163.com/",
+      "maxDiscovered": 60,
+      "tags": [
+        "large-enterprise",
+        "internet",
+        "china"
+      ]
+    },
+    {
+      "name": "Trip.com Group",
+      "market": "cn",
+      "industry": "travel-tech",
+      "type": "company",
+      "url": "https://careers.trip.com/",
+      "maxDiscovered": 60,
+      "tags": [
+        "large-enterprise",
+        "travel",
+        "china"
+      ]
+    },
+    {
+      "name": "Bilibili",
+      "market": "cn",
+      "industry": "media-platform",
+      "type": "company",
+      "url": "https://jobs.bilibili.com/",
+      "maxDiscovered": 60,
+      "tags": [
+        "large-enterprise",
+        "media",
+        "china"
+      ]
+    },
+    {
+      "name": "Sony Japan",
+      "market": "jp",
+      "industry": "electronics-entertainment",
+      "type": "company",
+      "url": "https://www.sony.com/en/SonyInfo/Careers/japan/",
+      "maxDiscovered": 60,
+      "tags": [
+        "large-enterprise",
+        "electronics",
+        "japan"
+      ]
+    },
+    {
+      "name": "Toyota Japan",
+      "market": "jp",
+      "industry": "automotive",
+      "type": "company",
+      "url": "https://global.toyota/jp/careers/",
+      "maxDiscovered": 60,
+      "tags": [
+        "large-enterprise",
+        "automotive",
+        "japan"
+      ]
+    },
+    {
+      "name": "Rakuten",
+      "market": "jp",
+      "industry": "internet-commerce",
+      "type": "company",
+      "url": "https://corp.rakuten.co.jp/careers/",
+      "maxDiscovered": 80,
+      "tags": [
+        "large-enterprise",
+        "internet",
+        "japan"
+      ]
+    },
+    {
+      "name": "Rakuten Mobile",
+      "market": "jp",
+      "industry": "telecom",
+      "type": "company",
+      "url": "https://corp.mobile.rakuten.co.jp/english/recruit/",
+      "maxDiscovered": 50,
+      "tags": [
+        "large-enterprise",
+        "telecom",
+        "japan"
+      ]
+    },
+    {
+      "name": "Mitsubishi Heavy Industries",
+      "market": "jp",
+      "industry": "industrial-engineering",
+      "type": "company",
+      "url": "https://www.mhi.com/recruit",
+      "maxDiscovered": 50,
+      "tags": [
+        "large-enterprise",
+        "industrial",
+        "japan"
+      ]
+    },
+    {
+      "name": "Samsung Careers",
+      "market": "kr",
+      "industry": "electronics",
+      "type": "company",
+      "url": "https://www.samsungcareers.com/",
+      "maxDiscovered": 80,
+      "tags": [
+        "large-enterprise",
+        "electronics",
+        "korea"
+      ]
+    },
+    {
+      "name": "Samsung Workday",
+      "market": "kr",
+      "industry": "electronics",
+      "type": "company",
+      "adapter": "workday",
+      "url": "https://sec.wd3.myworkdayjobs.com/Samsung_Careers",
+      "site": "Samsung_Careers",
+      "searchText": "engineer",
+      "maxDiscovered": 80,
+      "tags": [
+        "large-enterprise",
+        "electronics",
+        "korea",
+        "workday"
+      ]
+    },
+    {
+      "name": "Samsung Research",
+      "market": "kr",
+      "industry": "research",
+      "type": "company",
+      "url": "https://research.samsung.com/careers",
+      "maxDiscovered": 50,
+      "tags": [
+        "large-enterprise",
+        "research",
+        "korea"
+      ]
+    },
+    {
+      "name": "NAVER Careers",
+      "market": "kr",
+      "industry": "internet",
+      "type": "company",
+      "url": "https://recruit.navercorp.com/",
+      "maxDiscovered": 80,
+      "tags": [
+        "large-enterprise",
+        "internet",
+        "korea"
+      ]
+    },
+    {
+      "name": "Kakao Enterprise",
+      "market": "kr",
+      "industry": "cloud-ai",
+      "type": "company",
+      "url": "https://careers.kakaoenterprise.com/",
+      "maxDiscovered": 60,
+      "tags": [
+        "large-enterprise",
+        "cloud",
+        "korea"
+      ]
+    },
+    {
+      "name": "LG Careers",
+      "market": "kr",
+      "industry": "conglomerate",
+      "type": "company",
+      "url": "https://careers.lg.com/",
+      "maxDiscovered": 80,
+      "tags": [
+        "large-enterprise",
+        "electronics",
+        "korea"
+      ]
+    },
+    {
+      "name": "DBS Bank",
+      "market": "sg",
+      "industry": "financial-services",
+      "type": "company",
+      "url": "https://www.dbs.com/careers/default.page",
+      "maxDiscovered": 60,
+      "tags": [
+        "large-enterprise",
+        "finance",
+        "singapore"
+      ]
+    },
+    {
+      "name": "Grab",
+      "market": "sg",
+      "industry": "internet-mobility",
+      "type": "company",
+      "adapter": "smartrecruiters",
+      "companyIdentifier": "Grab",
+      "url": "https://www.grab.careers/en/",
+      "maxDiscovered": 80,
+      "tags": [
+        "large-enterprise",
+        "internet",
+        "singapore"
+      ]
+    },
+    {
+      "name": "Sea Group",
+      "market": "sg",
+      "industry": "internet-gaming-commerce",
+      "type": "company",
+      "url": "https://career.sea.com/",
+      "maxDiscovered": 80,
+      "tags": [
+        "large-enterprise",
+        "internet",
+        "singapore"
+      ]
+    },
+    {
+      "name": "GovTech Singapore",
+      "market": "sg",
+      "industry": "public-sector-tech",
+      "type": "company",
+      "url": "https://www.tech.gov.sg/careers/",
+      "maxDiscovered": 60,
+      "tags": [
+        "large-enterprise",
+        "government-tech",
+        "singapore"
+      ]
+    },
+    {
+      "name": "ST Engineering",
+      "market": "sg",
+      "industry": "engineering-defense",
+      "type": "company",
+      "url": "https://stengg.cc/en/careers.html",
+      "maxDiscovered": 60,
+      "tags": [
+        "large-enterprise",
+        "engineering",
+        "singapore"
+      ]
+    },
+    {
+      "name": "Singapore Airlines Tech",
+      "market": "sg",
+      "industry": "aviation-tech",
+      "type": "company",
+      "url": "https://techcareers.singaporeair.com.sg/index.html",
+      "maxDiscovered": 50,
+      "tags": [
+        "large-enterprise",
+        "aviation",
+        "singapore"
+      ]
+    },
+    {
+      "name": "UMC",
+      "market": "tw",
+      "industry": "semiconductor-foundry",
+      "type": "company",
+      "url": "https://careers.umc.com/jobsearch.php/index.php",
+      "maxDiscovered": 100,
+      "tags": [
+        "large-enterprise",
+        "semiconductor",
+        "taiwan",
+        "internationalized"
+      ]
+    },
+    {
+      "name": "ASE Group",
+      "market": "tw",
+      "industry": "semiconductor-packaging",
+      "type": "company",
+      "url": "https://ase.aseglobal.com/about-ase/careers/",
+      "maxDiscovered": 80,
+      "tags": [
+        "large-enterprise",
+        "semiconductor",
+        "taiwan",
+        "internationalized"
+      ]
+    },
+    {
+      "name": "Advantech",
+      "market": "tw",
+      "industry": "industrial-iot",
+      "type": "company",
+      "url": "https://www.advantech.com/en/about/careers",
+      "maxDiscovered": 60,
+      "tags": [
+        "large-enterprise",
+        "industrial-iot",
+        "taiwan",
+        "internationalized"
+      ]
+    },
+    {
+      "name": "Garmin Taiwan",
+      "market": "tw",
+      "industry": "consumer-electronics",
+      "type": "company",
+      "url": "https://careers.garmin.com/careers-home/jobs?location=Taiwan",
+      "maxDiscovered": 80,
+      "tags": [
+        "multinational",
+        "hardware",
+        "taiwan",
+        "internationalized"
+      ]
+    },
+    {
+      "name": "Google Taiwan",
+      "market": "tw",
+      "industry": "internet-ai",
+      "type": "company",
+      "url": "https://www.google.com/about/careers/applications/jobs/results?distance=50&q=Taiwan",
+      "maxDiscovered": 80,
+      "tags": [
+        "multinational",
+        "ai",
+        "taiwan",
+        "internationalized"
+      ]
+    },
+    {
+      "name": "Microsoft Taipei",
+      "market": "tw",
+      "industry": "cloud-ai",
+      "type": "company",
+      "url": "https://careers.microsoft.com/v2/global/en/locations/taipei.html",
+      "maxDiscovered": 80,
+      "tags": [
+        "multinational",
+        "cloud",
+        "taiwan",
+        "internationalized"
+      ]
+    },
+    {
+      "name": "Apple Taiwan",
+      "market": "tw",
+      "industry": "consumer-electronics",
+      "type": "company",
+      "url": "https://jobs.apple.com/en-us/search?location=taiwan-TWN",
+      "maxDiscovered": 80,
+      "tags": [
+        "multinational",
+        "hardware",
+        "retail",
+        "taiwan",
+        "internationalized"
+      ]
+    },
+    {
+      "name": "NVIDIA Taiwan",
+      "market": "tw",
+      "industry": "ai-semiconductor",
+      "type": "company",
+      "url": "https://www.nvidia.com/en-us/about-nvidia/careers/",
+      "maxDiscovered": 80,
+      "tags": [
+        "multinational",
+        "ai",
+        "semiconductor",
+        "taiwan",
+        "internationalized"
+      ]
+    },
+    {
+      "name": "NVIDIA Workday",
+      "market": "tw",
+      "industry": "ai-semiconductor",
+      "type": "company",
+      "adapter": "workday",
+      "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite",
+      "site": "NVIDIAExternalCareerSite",
+      "searchText": "Taiwan",
+      "maxDiscovered": 100,
+      "tags": [
+        "multinational",
+        "ai",
+        "semiconductor",
+        "taiwan",
+        "workday",
+        "internationalized"
+      ]
+    },
+    {
+      "name": "ASML Taiwan",
+      "market": "tw",
+      "industry": "semiconductor-equipment",
+      "type": "company",
+      "url": "https://www.asml.com/en/careers/find-your-job",
+      "maxDiscovered": 80,
+      "tags": [
+        "multinational",
+        "semiconductor-equipment",
+        "taiwan",
+        "internationalized"
+      ]
+    },
+    {
+      "name": "Micron Taiwan",
+      "market": "tw",
+      "industry": "semiconductor-memory",
+      "type": "company",
+      "url": "https://www.micron.com/about/careers",
+      "maxDiscovered": 80,
+      "tags": [
+        "multinational",
+        "semiconductor",
+        "taiwan",
+        "internationalized"
+      ]
+    },
+    {
+      "name": "Micron Workday",
+      "market": "tw",
+      "industry": "semiconductor-memory",
+      "type": "company",
+      "adapter": "workday",
+      "url": "https://micron.wd1.myworkdayjobs.com/External",
+      "site": "External",
+      "searchText": "Taiwan",
+      "maxDiscovered": 100,
+      "tags": [
+        "multinational",
+        "semiconductor",
+        "taiwan",
+        "workday",
+        "internationalized"
+      ]
+    },
+    {
+      "name": "Applied Materials Taiwan",
+      "market": "tw",
+      "industry": "semiconductor-equipment",
+      "type": "company",
+      "url": "https://www.appliedmaterials.com/us/en/careers.html",
+      "maxDiscovered": 80,
+      "tags": [
+        "multinational",
+        "semiconductor-equipment",
+        "taiwan",
+        "internationalized"
+      ]
+    },
+    {
+      "name": "Applied Materials Workday",
+      "market": "tw",
+      "industry": "semiconductor-equipment",
+      "type": "company",
+      "adapter": "workday",
+      "url": "https://amat.wd1.myworkdayjobs.com/External",
+      "site": "External",
+      "searchText": "Taiwan",
+      "maxDiscovered": 100,
+      "tags": [
+        "multinational",
+        "semiconductor-equipment",
+        "taiwan",
+        "workday",
+        "internationalized"
+      ]
+    },
+    {
+      "name": "Intel Workday Taiwan",
+      "market": "tw",
+      "industry": "semiconductor",
+      "type": "company",
+      "adapter": "workday",
+      "url": "https://intel.wd1.myworkdayjobs.com/External",
+      "site": "External",
+      "searchText": "Taiwan",
+      "maxDiscovered": 80,
+      "tags": [
+        "multinational",
+        "semiconductor",
+        "taiwan",
+        "workday",
+        "internationalized"
+      ]
+    },
+    {
+      "name": "Logitech Workday Taiwan",
+      "market": "tw",
+      "industry": "consumer-electronics",
+      "type": "company",
+      "adapter": "workday",
+      "url": "https://logitech.wd5.myworkdayjobs.com/Logitech",
+      "site": "Logitech",
+      "searchText": "Taiwan",
+      "maxDiscovered": 60,
+      "tags": [
+        "multinational",
+        "hardware",
+        "taiwan",
+        "workday",
+        "internationalized"
+      ]
+    },
+    {
+      "name": "Cardlytics Workday Taiwan",
+      "market": "tw",
+      "industry": "commerce-intelligence",
+      "type": "company",
+      "adapter": "workday",
+      "url": "https://cardlytics.wd5.myworkdayjobs.com/CardlyticsExternalCareerSite",
+      "site": "CardlyticsExternalCareerSite",
+      "searchText": "Taiwan",
+      "maxDiscovered": 50,
+      "tags": [
+        "multinational",
+        "analytics",
+        "taiwan",
+        "workday",
+        "internationalized"
+      ]
+    },
+    {
+      "name": "PDD Holdings",
+      "market": "cn",
+      "industry": "internet-commerce",
+      "type": "company",
+      "url": "https://careers.pddglobal.com/",
+      "maxDiscovered": 80,
+      "tags": [
+        "large-enterprise",
+        "commerce",
+        "china",
+        "internationalized"
+      ]
+    },
+    {
+      "name": "Ant Group",
+      "market": "cn",
+      "industry": "fintech-ai",
+      "type": "company",
+      "url": "https://www.ant-group.net/career",
+      "maxDiscovered": 80,
+      "tags": [
+        "large-enterprise",
+        "fintech",
+        "china",
+        "internationalized"
+      ]
+    },
+    {
+      "name": "Lenovo China",
+      "market": "cn",
+      "industry": "computer-hardware",
+      "type": "company",
+      "url": "https://www.lenovo.com.cn/",
+      "maxDiscovered": 60,
+      "tags": [
+        "large-enterprise",
+        "hardware",
+        "china",
+        "internationalized"
+      ]
+    },
+    {
+      "name": "DJI",
+      "market": "cn",
+      "industry": "robotics-drone",
+      "type": "company",
+      "url": "https://www.dji.com/careers",
+      "maxDiscovered": 80,
+      "tags": [
+        "large-enterprise",
+        "robotics",
+        "china",
+        "internationalized"
+      ]
+    },
+    {
+      "name": "SHEIN",
+      "market": "cn",
+      "industry": "commerce-fashion",
+      "type": "company",
+      "url": "https://careers.shein.com/",
+      "maxDiscovered": 80,
+      "tags": [
+        "large-enterprise",
+        "commerce",
+        "china",
+        "singapore",
+        "internationalized"
+      ]
+    },
+    {
+      "name": "Microsoft Beijing",
+      "market": "cn",
+      "industry": "cloud-ai",
+      "type": "company",
+      "url": "https://careers.microsoft.com/v2/global/en/locations/beijing.html",
+      "maxDiscovered": 80,
+      "tags": [
+        "multinational",
+        "cloud",
+        "china",
+        "internationalized"
+      ]
+    },
+    {
+      "name": "Microsoft Shanghai",
+      "market": "cn",
+      "industry": "cloud-ai",
+      "type": "company",
+      "url": "https://careers.microsoft.com/v2/global/en/locations/shanghai.html",
+      "maxDiscovered": 80,
+      "tags": [
+        "multinational",
+        "cloud",
+        "china",
+        "internationalized"
+      ]
+    },
+    {
+      "name": "Apple Shanghai",
+      "market": "cn",
+      "industry": "consumer-electronics",
+      "type": "company",
+      "url": "https://www.apple.com/careers/in/work-at-apple/locations/shanghai.html",
+      "maxDiscovered": 80,
+      "tags": [
+        "multinational",
+        "hardware",
+        "china",
+        "internationalized"
+      ]
+    }
+  ],
+  "atsBoards": [
+    {
+      "name": "ICRC SuccessFactors Manila Shared Services",
+      "enabled": false,
+      "market": "ph",
+      "industry": "international-organization",
+      "adapter": "successfactors",
+      "type": "job",
+      "url": "https://careers.icrc.org/job/Manila-Shared-Services-Centre-HR-Administration-Team-Lead-32197/1386251833/",
+      "maxDiscovered": 1,
+      "tags": [
+        "ats",
+        "successfactors",
+        "operations",
+        "asia",
+        "internationalized",
+        "validated-live-source"
+      ]
+    },
+    {
+      "name": "ASSA ABLOY SuccessFactors Tokyo Technical Support",
+      "enabled": false,
+      "market": "jp",
+      "industry": "access-solutions",
+      "adapter": "successfactors",
+      "type": "job",
+      "url": "https://assaabloy.jobs2web.com/job/Tokyo-Technical-Support-Specialist-103-0015/1091529601/",
+      "maxDiscovered": 1,
+      "tags": [
+        "ats",
+        "successfactors",
+        "technical-support",
+        "japan",
+        "large-enterprise",
+        "internationalized",
+        "validated-live-source"
+      ]
+    },
+    {
+      "name": "ASSA ABLOY SuccessFactors Taipei Manufacturing Engineer",
+      "enabled": true,
+      "market": "tw",
+      "industry": "identity-security",
+      "adapter": "successfactors",
+      "type": "job",
+      "url": "https://assaabloy.jobs2web.com/job/Taipai-Manufacturing-Engineer-Taip/1376286333/",
+      "maxDiscovered": 1,
+      "tags": [
+        "ats",
+        "successfactors",
+        "engineering",
+        "taiwan",
+        "large-enterprise",
+        "internationalized",
+        "validated-live-source"
+      ]
+    },
+    {
+      "name": "ASSA ABLOY SuccessFactors Software Engineer",
+      "enabled": true,
+      "market": "global",
+      "industry": "access-solutions",
+      "adapter": "successfactors",
+      "type": "job",
+      "url": "https://assaabloy.jobs2web.com/job/New-Haven-Software-Engineer-CT-06511/1366009133/",
+      "maxDiscovered": 1,
+      "tags": [
+        "ats",
+        "successfactors",
+        "software-engineering",
+        "large-enterprise",
+        "internationalized",
+        "validated-live-source"
+      ]
+    },
+    {
+      "name": "ASSA ABLOY SuccessFactors C# Software Engineer",
+      "enabled": true,
+      "market": "global",
+      "industry": "iot-access-solutions",
+      "adapter": "successfactors",
+      "type": "job",
+      "url": "https://assaabloy.jobs2web.com/job/M%C3%B6lnlycke-C-Software-Engineer-435-33/1244575801/",
+      "maxDiscovered": 1,
+      "tags": [
+        "ats",
+        "successfactors",
+        "software-engineering",
+        "iot",
+        "large-enterprise",
+        "internationalized",
+        "validated-live-source"
+      ]
+    },
+    {
+      "name": "CONA SuccessFactors IT Development Engineer",
+      "enabled": true,
+      "market": "global",
+      "industry": "consumer-goods-technology",
+      "adapter": "successfactors",
+      "type": "job",
+      "url": "https://conaservices.jobs2web.com/consolidated/job/Charlotte-IT-Development-Engineer-III-NC-28211/1338172800/",
+      "maxDiscovered": 1,
+      "tags": [
+        "ats",
+        "successfactors",
+        "software-engineering",
+        "enterprise-it",
+        "validated-live-source"
+      ]
+    },
+    {
+      "name": "CONA SuccessFactors Data Analyst",
+      "enabled": true,
+      "market": "global",
+      "industry": "consumer-goods-analytics",
+      "adapter": "successfactors",
+      "type": "job",
+      "url": "https://conaservices.jobs2web.com/consolidated/job/Charlotte-Data-Analyst-NC-28211/1335130500/",
+      "maxDiscovered": 1,
+      "tags": [
+        "ats",
+        "successfactors",
+        "data-analytics",
+        "enterprise-analytics",
+        "validated-live-source"
+      ]
+    },
+    {
+      "name": "COEBank SuccessFactors Data & BI Engineer",
+      "enabled": true,
+      "market": "global",
+      "industry": "finance-development",
+      "adapter": "successfactors",
+      "type": "job",
+      "url": "https://jobs.coebank.org/job/Paris-Data-%26-BI-Engineer/1342367455/",
+      "maxDiscovered": 1,
+      "tags": [
+        "ats",
+        "successfactors",
+        "data",
+        "analytics",
+        "internationalized",
+        "validated-live-source"
+      ]
+    },
+    {
+      "name": "Qatar Airways Taleo",
+      "enabled": true,
+      "market": "global",
+      "industry": "aviation",
+      "adapter": "taleo",
+      "url": "https://aa115.taleo.net/careersection/qa_external_cs/jobsearch.ftl",
+      "maxDiscovered": 30,
+      "tags": [
+        "ats",
+        "taleo",
+        "internationalized",
+        "aviation",
+        "validated-live-source"
+      ]
+    },
+    {
+      "name": "Example Greenhouse Board",
+      "enabled": false,
+      "market": "global",
+      "adapter": "greenhouse",
+      "url": "https://boards.greenhouse.io/example",
+      "maxDiscovered": 100,
+      "tags": [
+        "ats",
+        "greenhouse"
+      ]
+    },
+    {
+      "name": "Example Lever Board",
+      "enabled": false,
+      "market": "global",
+      "adapter": "lever",
+      "url": "https://jobs.lever.co/example",
+      "maxDiscovered": 100,
+      "tags": [
+        "ats",
+        "lever"
+      ]
+    },
+    {
+      "name": "Example Ashby Board",
+      "enabled": false,
+      "market": "global",
+      "adapter": "ashby",
+      "url": "https://jobs.ashbyhq.com/example",
+      "maxDiscovered": 100,
+      "tags": [
+        "ats",
+        "ashby"
+      ]
+    },
+    {
+      "name": "Example Workday Board",
+      "enabled": false,
+      "market": "global",
+      "adapter": "workday",
+      "url": "https://example.wd1.myworkdayjobs.com/External",
+      "site": "External",
+      "searchText": "Taiwan",
+      "maxDiscovered": 100,
+      "detailLimit": 20,
+      "tags": [
+        "ats",
+        "workday"
+      ]
+    },
+    {
+      "name": "Example Oracle Recruiting Board",
+      "enabled": false,
+      "market": "global",
+      "adapter": "oracle",
+      "url": "https://example.fa.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1",
+      "siteNumber": "CX_1",
+      "keyword": "software engineer",
+      "maxDiscovered": 100,
+      "tags": [
+        "ats",
+        "oracle"
+      ]
+    },
+    {
+      "name": "Example SuccessFactors Careers Page",
+      "enabled": false,
+      "market": "global",
+      "adapter": "successfactors",
+      "url": "https://example.jobs2web.com/",
+      "maxDiscovered": 80,
+      "tags": [
+        "ats",
+        "successfactors",
+        "rendered-discovery"
+      ]
+    },
+    {
+      "name": "Example Taleo Careers Page",
+      "enabled": false,
+      "market": "global",
+      "adapter": "taleo",
+      "url": "https://example.taleo.net/careersection/external/jobsearch.ftl",
+      "maxDiscovered": 80,
+      "tags": [
+        "ats",
+        "taleo",
+        "rendered-discovery"
+      ]
+    }
+  ],
+  "directSources": [
+    {
+      "name": "Example Direct Job Page",
+      "enabled": false,
+      "market": "global",
+      "type": "job",
+      "url": "https://example.com/jobs/frontend-engineer",
+      "tags": [
+        "direct-job"
+      ]
+    }
+  ],
+  "searchQueries": [
+    {
+      "market": "tw",
+      "query": "site:boards.greenhouse.io Taiwan frontend engineer"
+    },
+    {
+      "market": "tw",
+      "query": "site:jobs.lever.co Taipei product manager"
+    },
+    {
+      "market": "tw",
+      "query": "site:jobs.ashbyhq.com Taiwan software engineer"
+    },
+    {
+      "market": "tw",
+      "query": "site:*.com/careers Taipei data analyst"
+    },
+    {
+      "market": "tw",
+      "query": "site:104.com.tw 軟體工程師 台北"
+    },
+    {
+      "market": "tw",
+      "query": "site:yourator.co software engineer Taiwan"
+    },
+    {
+      "market": "tw",
+      "query": "site:careers.umc.com GenAI IT engineer Taiwan"
+    },
+    {
+      "market": "tw",
+      "query": "site:ase.aseglobal.com careers engineer Taiwan"
+    },
+    {
+      "market": "tw",
+      "query": "site:careers.garmin.com Taiwan software engineer"
+    },
+    {
+      "market": "tw",
+      "query": "site:google.com/about/careers/applications/jobs Taiwan software engineer"
+    },
+    {
+      "market": "tw",
+      "query": "site:careers.microsoft.com/v2/global/en/locations/taipei cloud ai engineer"
+    },
+    {
+      "market": "tw",
+      "query": "site:jobs.apple.com Taiwan machine learning hardware engineer"
+    },
+    {
+      "market": "tw",
+      "query": "site:nvidia.com/en-us/about-nvidia/careers Taiwan system software engineer"
+    },
+    {
+      "market": "tw",
+      "query": "site:asml.com/en/careers Taiwan software engineer"
+    },
+    {
+      "market": "tw",
+      "query": "site:micron.com/about/careers Taiwan data engineer"
+    },
+    {
+      "market": "tw",
+      "query": "site:appliedmaterials.com/us/en/careers Taiwan automation engineer"
+    },
+    {
+      "market": "cn",
+      "query": "site:jobs.bytedance.com frontend engineer"
+    },
+    {
+      "market": "cn",
+      "query": "site:careers.tencent.com engineer"
+    },
+    {
+      "market": "cn",
+      "query": "site:talent.alibaba.com product manager"
+    },
+    {
+      "market": "cn",
+      "query": "site:zhaopin.jd.com 前端 工程師"
+    },
+    {
+      "market": "cn",
+      "query": "site:talent.baidu.com machine learning engineer"
+    },
+    {
+      "market": "cn",
+      "query": "site:hr.163.com 後端 工程師"
+    },
+    {
+      "market": "cn",
+      "query": "site:careers.microsoft.com/v2/global/en/locations/beijing software engineer"
+    },
+    {
+      "market": "cn",
+      "query": "site:careers.microsoft.com/v2/global/en/locations/shanghai data platform engineer"
+    },
+    {
+      "market": "cn",
+      "query": "site:jobs.apple.com China machine learning engineer Shanghai"
+    },
+    {
+      "market": "cn",
+      "query": "site:ant-group.net/career AI engineer Hangzhou"
+    },
+    {
+      "market": "cn",
+      "query": "site:careers.pddglobal.com backend engineer Shanghai"
+    },
+    {
+      "market": "cn",
+      "query": "site:dji.com/careers robotics software engineer Shenzhen"
+    },
+    {
+      "market": "cn",
+      "query": "site:careers.shein.com data engineer China Singapore"
+    },
+    {
+      "market": "jp",
+      "query": "site:sony.com/en/SonyInfo/Careers/japan software engineer Tokyo"
+    },
+    {
+      "market": "jp",
+      "query": "site:corp.rakuten.co.jp/careers frontend engineer Tokyo"
+    },
+    {
+      "market": "jp",
+      "query": "site:global.toyota/jp/careers software engineer Japan"
+    },
+    {
+      "market": "kr",
+      "query": "site:samsungcareers.com software engineer Korea"
+    },
+    {
+      "market": "kr",
+      "query": "site:recruit.navercorp.com frontend engineer Korea"
+    },
+    {
+      "market": "kr",
+      "query": "site:careers.kakaoenterprise.com backend engineer Korea"
+    },
+    {
+      "market": "sg",
+      "query": "site:grab.careers Singapore software engineer"
+    },
+    {
+      "market": "sg",
+      "query": "site:career.sea.com Singapore data analyst"
+    },
+    {
+      "market": "sg",
+      "query": "site:tech.gov.sg/careers Singapore product manager"
+    },
+    {
+      "market": "global",
+      "query": "site:jobs.lever.co remote full stack engineer"
+    },
+    {
+      "market": "global",
+      "query": "site:boards.greenhouse.io remote data scientist"
+    }
+  ]
+}
