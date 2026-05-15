@@ -506,15 +506,32 @@ async function main() {
           { id: "cvToolsDetails", open: false, panelVisible: false }
         ]
       );
+      await page.click("#roleBrowserDetails > summary");
+      await page.waitForFunction(() => {
+        const roleDetails = document.getElementById("roleBrowserDetails");
+        const rolePanel = roleDetails?.querySelector(".cv-browser-panel");
+        if (!roleDetails || !rolePanel) return false;
+        return roleDetails?.open
+          && getComputedStyle(rolePanel).display !== "none"
+          && document.querySelectorAll("#jobRoleBar .job-chip").length >= 10;
+      });
+      await page.click("#templateBrowserDetails > summary");
+      await page.waitForFunction(() => {
+        const roleDetails = document.getElementById("roleBrowserDetails");
+        const templateDetails = document.getElementById("templateBrowserDetails");
+        const templatePanel = templateDetails?.querySelector(".cv-browser-panel");
+        if (!roleDetails || !templateDetails || !templatePanel) return false;
+        return !roleDetails?.open
+          && templateDetails?.open
+          && getComputedStyle(templatePanel).display !== "none"
+          && document.querySelectorAll("#templateStrip .template-chip").length >= 20;
+      });
 
       await page.waitForSelector("#name");
       await page.$eval("#name", (input, value) => {
         input.value = value;
         input.dispatchEvent(new InputEvent("input", { bubbles: true, inputType: "insertText", data: value }));
       }, "未登入草稿");
-      await page.$eval("#templateBrowserDetails", (node) => {
-        node.open = true;
-      });
       await page.click('[data-template-chip="dusk"]');
       await page.waitForFunction(() => {
         const raw = window.localStorage.getItem("cv-studio-signed-out-draft-v1");
