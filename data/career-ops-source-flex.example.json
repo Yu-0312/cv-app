@@ -1,0 +1,64 @@
+{
+  "name": "Career Ops Source Flex Rules",
+  "description": "Expansion rules that make source collection more flexible than a fixed company list. These rules generate extra source candidates and search queries from markets, role aliases, ATS domains, and company career URL patterns.",
+  "markets": [
+    {
+      "code": "tw",
+      "locations": ["Taiwan", "Taipei", "Hsinchu", "Taichung", "Kaohsiung", "台灣", "台北", "新竹"],
+      "jobBoards": [
+        "https://www.104.com.tw/jobs/search/",
+        "https://www.1111.com.tw/search/job",
+        "https://www.yourator.co/companies",
+        "https://www.cakeresume.com/jobs"
+      ]
+    },
+    {
+      "code": "cn",
+      "locations": ["China", "Shanghai", "Beijing", "Shenzhen", "Hangzhou", "中國", "上海", "北京", "深圳", "杭州"],
+      "jobBoards": [
+        "https://www.zhipin.com/",
+        "https://www.lagou.com/",
+        "https://www.liepin.com/",
+        "https://www.kanzhun.com/"
+      ]
+    }
+  ],
+  "roleAliases": [
+    {
+      "canonical": "Frontend Engineer",
+      "aliases": ["frontend engineer", "front-end engineer", "web engineer", "react engineer", "前端工程師", "網頁工程師"]
+    },
+    {
+      "canonical": "Product Engineer",
+      "aliases": ["product engineer", "full stack product engineer", "產品工程師", "全端產品工程師"]
+    },
+    {
+      "canonical": "Data Analyst",
+      "aliases": ["data analyst", "business analyst", "analytics engineer", "資料分析師", "數據分析師"]
+    }
+  ],
+  "atsDomains": [
+    "boards.greenhouse.io",
+    "jobs.lever.co",
+    "jobs.ashbyhq.com",
+    "apply.workable.com",
+    "jobs.smartrecruiters.com"
+  ],
+  "careerPathPatterns": [
+    "/careers",
+    "/career",
+    "/jobs",
+    "/join-us",
+    "/recruiting",
+    "/talent"
+  ],
+  "companyDomains": [
+    {
+      "name": "Example Company",
+      "enabled": false,
+      "market": "global",
+      "domain": "example.com",
+      "industry": "software"
+    }
+  ]
+}

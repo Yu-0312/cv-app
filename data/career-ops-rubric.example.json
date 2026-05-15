@@ -1,0 +1,96 @@
+{
+  "name": "Career Ops 10-Dimension Rubric",
+  "description": "Configurable scoring rubric for high-volume Career Ops comparison. Weights should sum near 1.0 before risk subtraction.",
+  "dimensions": [
+    {
+      "key": "profileMatch",
+      "label": "Profile Match",
+      "weight": 0.2,
+      "description": "How strongly the job matches CV skills, role goals, and preferred companies."
+    },
+    {
+      "key": "atsCoverage",
+      "label": "ATS Coverage",
+      "weight": 0.14,
+      "description": "How many profile keywords are covered by the job description."
+    },
+    {
+      "key": "roleFit",
+      "label": "Role Fit",
+      "weight": 0.12,
+      "description": "Whether title and description match the target role family."
+    },
+    {
+      "key": "seniorityFit",
+      "label": "Seniority Fit",
+      "weight": 0.08,
+      "description": "Whether seniority is plausible for the candidate."
+    },
+    {
+      "key": "locationFit",
+      "label": "Location Fit",
+      "weight": 0.08,
+      "description": "Location, remote, hybrid, and market preference fit."
+    },
+    {
+      "key": "sourceQuality",
+      "label": "Source Quality",
+      "weight": 0.08,
+      "description": "Reliability and richness of the source, prioritizing ATS APIs and structured data."
+    },
+    {
+      "key": "freshness",
+      "label": "Freshness",
+      "weight": 0.08,
+      "description": "Newer active jobs are prioritized over stale or expired listings."
+    },
+    {
+      "key": "compensationSignal",
+      "label": "Compensation Signal",
+      "weight": 0.04,
+      "description": "Salary or compensation transparency signal."
+    },
+    {
+      "key": "growthSignal",
+      "label": "Growth Signal",
+      "weight": 0.1,
+      "description": "Growth, ownership, platform, AI/data, and rare skill upside."
+    },
+    {
+      "key": "applicationEffort",
+      "label": "Application Effort",
+      "weight": 0.08,
+      "description": "Lower effort, clearer apply path, and richer JD improve the score."
+    }
+  ],
+  "riskPenalty": {
+    "key": "riskPenalty",
+    "maxSubtract": 45,
+    "description": "Subtract for expired jobs, low-information postings, and avoid/risk keywords."
+  },
+  "gradeThresholds": {
+    "A": 85,
+    "B": 72,
+    "C": 58,
+    "D": 42,
+    "F": 0
+  },
+  "recommendations": [
+    {
+      "minScore": 82,
+      "label": "強烈投遞"
+    },
+    {
+      "minScore": 70,
+      "label": "值得投遞"
+    },
+    {
+      "minScore": 56,
+      "label": "觀望"
+    },
+    {
+      "minScore": 0,
+      "label": "略過"
+    }
+  ]
+}

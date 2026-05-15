@@ -1,0 +1,319 @@
+{
+  "source": "career-ops-apply-agent",
+  "generatedAt": "2026-05-15T14:46:00.781Z",
+  "inspections": [
+    {
+      "jobKey": "url:https://japan-dev.com/jobs/ai-robot-association/ai-robot-association-airoa-design-engineer-l4xpri",
+      "company": "AI Robot Association (AIRoA)",
+      "title": "Design Engineer",
+      "url": "https://japan-dev.com/jobs/ai-robot-association/ai-robot-association-airoa-design-engineer-l4xpri",
+      "mode": "dry-run",
+      "fields": [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "name",
+          "id": "",
+          "label": "Full name",
+          "required": true,
+          "selector": "input[name=\"name\"]",
+          "suggestedMapping": "profile.name",
+          "fillAction": "fill-from-profile-after-user-review"
+        },
+        {
+          "tag": "input",
+          "type": "email",
+          "name": "email",
+          "id": "",
+          "label": "Email",
+          "required": true,
+          "selector": "input[name=\"email\"]",
+          "suggestedMapping": "profile.email",
+          "fillAction": "fill-from-profile-after-user-review"
+        },
+        {
+          "tag": "input",
+          "type": "file",
+          "name": "resume",
+          "id": "",
+          "label": "Resume / CV",
+          "required": true,
+          "selector": "input[name=\"resume\"]",
+          "suggestedMapping": "tailoredPdf",
+          "fillAction": "upload-user-approved-tailored-pdf"
+        },
+        {
+          "tag": "textarea",
+          "type": "",
+          "name": "cover_letter",
+          "id": "",
+          "label": "Cover letter",
+          "required": false,
+          "selector": "textarea[name=\"cover_letter\"]",
+          "suggestedMapping": "coverLetter",
+          "fillAction": "paste-user-approved-cover-letter"
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "salary_expectation",
+          "id": "",
+          "label": "Salary expectation",
+          "required": false,
+          "selector": "input[name=\"salary_expectation\"]",
+          "suggestedMapping": "compensation.range",
+          "fillAction": "ask-user-after-range-calibration"
+        }
+      ],
+      "fillPlan": [
+        {
+          "selector": "input[name=\"name\"]",
+          "mapping": "profile.name",
+          "action": "fill-from-profile-after-user-review",
+          "requiresUserReview": true
+        },
+        {
+          "selector": "input[name=\"email\"]",
+          "mapping": "profile.email",
+          "action": "fill-from-profile-after-user-review",
+          "requiresUserReview": true
+        },
+        {
+          "selector": "input[name=\"resume\"]",
+          "mapping": "tailoredPdf",
+          "action": "upload-user-approved-tailored-pdf",
+          "requiresUserReview": true
+        },
+        {
+          "selector": "textarea[name=\"cover_letter\"]",
+          "mapping": "coverLetter",
+          "action": "paste-user-approved-cover-letter",
+          "requiresUserReview": true
+        },
+        {
+          "selector": "input[name=\"salary_expectation\"]",
+          "mapping": "compensation.range",
+          "action": "ask-user-after-range-calibration",
+          "requiresUserReview": true
+        }
+      ],
+      "buttons": [],
+      "guardrails": [
+        "Never click final submit.",
+        "Never fabricate legal, education, work authorization, salary, or employment history answers.",
+        "Never store account passwords or one-time codes.",
+        "Stop for user review before any externally visible action.",
+        "Prefer tailored PDF and user-approved cover letter only."
+      ]
+    },
+    {
+      "jobKey": "url:https://japan-dev.com/jobs/geniee/geniee-japan-ai---product-manager-ai-saas-w0yniw",
+      "company": "Geniee",
+      "title": "JAPAN AI - Product Manager, AI SaaS",
+      "url": "https://japan-dev.com/jobs/geniee/geniee-japan-ai---product-manager-ai-saas-w0yniw",
+      "mode": "dry-run",
+      "fields": [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "name",
+          "id": "",
+          "label": "Full name",
+          "required": true,
+          "selector": "input[name=\"name\"]",
+          "suggestedMapping": "profile.name",
+          "fillAction": "fill-from-profile-after-user-review"
+        },
+        {
+          "tag": "input",
+          "type": "email",
+          "name": "email",
+          "id": "",
+          "label": "Email",
+          "required": true,
+          "selector": "input[name=\"email\"]",
+          "suggestedMapping": "profile.email",
+          "fillAction": "fill-from-profile-after-user-review"
+        },
+        {
+          "tag": "input",
+          "type": "file",
+          "name": "resume",
+          "id": "",
+          "label": "Resume / CV",
+          "required": true,
+          "selector": "input[name=\"resume\"]",
+          "suggestedMapping": "tailoredPdf",
+          "fillAction": "upload-user-approved-tailored-pdf"
+        },
+        {
+          "tag": "textarea",
+          "type": "",
+          "name": "cover_letter",
+          "id": "",
+          "label": "Cover letter",
+          "required": false,
+          "selector": "textarea[name=\"cover_letter\"]",
+          "suggestedMapping": "coverLetter",
+          "fillAction": "paste-user-approved-cover-letter"
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "salary_expectation",
+          "id": "",
+          "label": "Salary expectation",
+          "required": false,
+          "selector": "input[name=\"salary_expectation\"]",
+          "suggestedMapping": "compensation.range",
+          "fillAction": "ask-user-after-range-calibration"
+        }
+      ],
+      "fillPlan": [
+        {
+          "selector": "input[name=\"name\"]",
+          "mapping": "profile.name",
+          "action": "fill-from-profile-after-user-review",
+          "requiresUserReview": true
+        },
+        {
+          "selector": "input[name=\"email\"]",
+          "mapping": "profile.email",
+          "action": "fill-from-profile-after-user-review",
+          "requiresUserReview": true
+        },
+        {
+          "selector": "input[name=\"resume\"]",
+          "mapping": "tailoredPdf",
+          "action": "upload-user-approved-tailored-pdf",
+          "requiresUserReview": true
+        },
+        {
+          "selector": "textarea[name=\"cover_letter\"]",
+          "mapping": "coverLetter",
+          "action": "paste-user-approved-cover-letter",
+          "requiresUserReview": true
+        },
+        {
+          "selector": "input[name=\"salary_expectation\"]",
+          "mapping": "compensation.range",
+          "action": "ask-user-after-range-calibration",
+          "requiresUserReview": true
+        }
+      ],
+      "buttons": [],
+      "guardrails": [
+        "Never click final submit.",
+        "Never fabricate legal, education, work authorization, salary, or employment history answers.",
+        "Never store account passwords or one-time codes.",
+        "Stop for user review before any externally visible action.",
+        "Prefer tailored PDF and user-approved cover letter only."
+      ]
+    },
+    {
+      "jobKey": "url:https://japan-dev.com/jobs/ai-robot-association/ai-robot-association-airoa-full-stack-engineer-sliy8x",
+      "company": "AI Robot Association (AIRoA)",
+      "title": "Full Stack Engineer",
+      "url": "https://japan-dev.com/jobs/ai-robot-association/ai-robot-association-airoa-full-stack-engineer-sliy8x",
+      "mode": "dry-run",
+      "fields": [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "name",
+          "id": "",
+          "label": "Full name",
+          "required": true,
+          "selector": "input[name=\"name\"]",
+          "suggestedMapping": "profile.name",
+          "fillAction": "fill-from-profile-after-user-review"
+        },
+        {
+          "tag": "input",
+          "type": "email",
+          "name": "email",
+          "id": "",
+          "label": "Email",
+          "required": true,
+          "selector": "input[name=\"email\"]",
+          "suggestedMapping": "profile.email",
+          "fillAction": "fill-from-profile-after-user-review"
+        },
+        {
+          "tag": "input",
+          "type": "file",
+          "name": "resume",
+          "id": "",
+          "label": "Resume / CV",
+          "required": true,
+          "selector": "input[name=\"resume\"]",
+          "suggestedMapping": "tailoredPdf",
+          "fillAction": "upload-user-approved-tailored-pdf"
+        },
+        {
+          "tag": "textarea",
+          "type": "",
+          "name": "cover_letter",
+          "id": "",
+          "label": "Cover letter",
+          "required": false,
+          "selector": "textarea[name=\"cover_letter\"]",
+          "suggestedMapping": "coverLetter",
+          "fillAction": "paste-user-approved-cover-letter"
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "salary_expectation",
+          "id": "",
+          "label": "Salary expectation",
+          "required": false,
+          "selector": "input[name=\"salary_expectation\"]",
+          "suggestedMapping": "compensation.range",
+          "fillAction": "ask-user-after-range-calibration"
+        }
+      ],
+      "fillPlan": [
+        {
+          "selector": "input[name=\"name\"]",
+          "mapping": "profile.name",
+          "action": "fill-from-profile-after-user-review",
+          "requiresUserReview": true
+        },
+        {
+          "selector": "input[name=\"email\"]",
+          "mapping": "profile.email",
+          "action": "fill-from-profile-after-user-review",
+          "requiresUserReview": true
+        },
+        {
+          "selector": "input[name=\"resume\"]",
+          "mapping": "tailoredPdf",
+          "action": "upload-user-approved-tailored-pdf",
+          "requiresUserReview": true
+        },
+        {
+          "selector": "textarea[name=\"cover_letter\"]",
+          "mapping": "coverLetter",
+          "action": "paste-user-approved-cover-letter",
+          "requiresUserReview": true
+        },
+        {
+          "selector": "input[name=\"salary_expectation\"]",
+          "mapping": "compensation.range",
+          "action": "ask-user-after-range-calibration",
+          "requiresUserReview": true
+        }
+      ],
+      "buttons": [],
+      "guardrails": [
+        "Never click final submit.",
+        "Never fabricate legal, education, work authorization, salary, or employment history answers.",
+        "Never store account passwords or one-time codes.",
+        "Stop for user review before any externally visible action.",
+        "Prefer tailored PDF and user-approved cover letter only."
+      ]
+    }
+  ],
+  "errors": []
+}

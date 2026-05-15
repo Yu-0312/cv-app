@@ -1,4 +1,4 @@
-const CACHE_NAME = "cv-studio-cache-v15";
+const CACHE_NAME = "cv-studio-cache-v16";
 const ASSETS = [
   "./manifest.json",
   "./icon.svg",
@@ -6,7 +6,16 @@ const ASSETS = [
   "./config.js",
   "./university-data.js",
   "./data/app/gsat-external-data.js",
-  "./data/app/university-tw-app-data.js"
+  "./data/app/university-tw-app-data.js",
+  "./data/app/career-ops-jobs.js",
+  "./data/app/career-ops-application-kit.js",
+  "./data/app/career-ops-deep-research.js",
+  "./data/app/career-ops-deep-fit.js",
+  "./data/app/career-ops-compensation.js",
+  "./data/app/career-ops-story-bank.js",
+  "./data/app/career-ops-parallel-report.js",
+  "./data/app/career-ops-learning.js",
+  "./data/app/career-ops-modes.js"
 ];
 const HTML_ASSETS = ["./", "./index.html"];
 const NETWORK_FIRST_ASSETS = ASSETS.map((asset) => asset.replace(/^\./, ""));

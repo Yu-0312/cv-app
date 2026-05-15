@@ -1,0 +1,478 @@
+window.CV_CAREER_OPS_DEEP_RESEARCH = {
+  "source": "career-ops-deep-research",
+  "generatedAt": "2026-05-15T14:46:00.711Z",
+  "searchProvider": "none",
+  "queries": [
+    "Gogolook US Market Intern (ScamAdviser) careers team product funding interview",
+    "Gogolook compensation culture engineering interview",
+    "Cardlytics Workday Taiwan Senior Software Engineer careers team product funding interview",
+    "Cardlytics Workday Taiwan compensation culture engineering interview",
+    "Shizuku AI Software Engineer, Backend careers team product funding interview",
+    "Shizuku AI compensation culture engineering interview",
+    "Shizuku AI MLOps Engineer careers team product funding interview",
+    "PubteX Data Engineer (AI Platform/Data Infrastructure) careers team product funding interview",
+    "PubteX compensation culture engineering interview",
+    "Axelspace Data Scientist / ML Engineer careers team product funding interview",
+    "Axelspace compensation culture engineering interview",
+    "Intel Workday Taiwan Intel Foundry Advanced Device Development Engineer careers team product funding interview",
+    "Intel Workday Taiwan compensation culture engineering interview",
+    "Intel Workday Taiwan Network Systems and Solutions Engineer careers team product funding interview"
+  ],
+  "evidence": [
+    {
+      "title": "",
+      "url": "https://jobs.lever.co/Gogolook/903b657d-9530-4f59-9dea-e9075163f3e6",
+      "snippet": "Gogolook - US Market Intern (ScamAdviser) US Market Intern (ScamAdviser) Taipei Marketing / Intern / Hybrid apply for this job About us Gogolook is a leading TrustTech company founded in 2012 and listed on the Taiwan Stock Exchange in 2025 under the stock code 6902. With \"Build for Trust\" as its core value, the company has expanded its business from Asia to Europe and America. Gogolook’s AI technology is built on the world's largest database of digital scam data, encompassing phone numbers, websites, virtual currency wallet addresses, and other factors. The company provides diverse anti-scam and fintech services for both consumers and businesses. Its anti-scam offerings include the digital anti-scam app \"Whoscall\" and a range of enterprise scam prevention solutions in combination with \"ScamAdviser.\" The Fintech BU empowers consumers through data-driven financial services and inclusive lending: Roo.Cash（袋鼠金融）offers transparent matchmaking for financial products like credit cards, while JUJI（招財麻吉）provides an innovative microloan service for rapid, convenient funding during urgent financial needs. A foundation member of the Global Anti-Scam Alliance (GASA), Gogolook has also teamed up",
+      "provider": "source-page"
+    },
+    {
+      "title": "",
+      "url": "https://www.gogolook.com/careers",
+      "snippet": "Careers Menu By clicking “Accept”, you agree to the storing of cookies on your device to analyze and enhance site usage. View our Privacy Policy for more information. Preferences Deny Accept Privacy Preference Center When you visit websites, they may store or retrieve data in your browser. This storage is often necessary for the basic functionality of the website. The storage may be used for marketing, analytics, and personalization of the site, such as storing your preferences. Privacy is important to us, so you have the option of disabling certain types of storage that may not be necessary for the basic functioning of the website. Blocking categories may impact your experience on the website. Allow All Cookies Reject All Cookies Manage Consent Preferences by Category Essential Always Active These items are required to enable basic website functionality. Marketing Essential These items are used to deliver advertising that is more relevant to you and your interests. They may also be used to limit the number of times you see an advertisement and measure the effectiveness of advertising campaigns. Advertising networks usually place them with the website operator’s permission. Persona",
+      "provider": "source-page"
+    },
+    {
+      "title": "",
+      "url": "https://cardlytics.wd5.myworkdayjobs.com/CardlyticsExternalCareerSite/job/Taipei-City/Senior-Software-Engineer_JR100384",
+      "snippet": "",
+      "provider": "source-page"
+    },
+    {
+      "title": "",
+      "url": "https://cardlytics.wd5.myworkdayjobs.com/CardlyticsExternalCareerSite",
+      "snippet": "",
+      "provider": "source-page"
+    },
+    {
+      "title": "",
+      "url": "https://japan-dev.com/jobs/shizuku-ai/shizuku-ai-software-engineer-backend-zvv206",
+      "snippet": "Software Engineer, Backend at Shizuku AI in Japan | Japan Dev NEWSLETTER Sign Up Dashboard ☰ Search Jobs Company List Blog Found a Job? 🎊 For Employers 日本語 Sign Up My Profile Logout For Employers 日本語 Home Companies Shizuku AI Software Engineer, Backend Shizuku AI Tokyo APPLY NOW &nbsp;➜ 🇯🇵 Residents Only Software Engineer, Backend Tokyo Partial Remote Full-time May 4, 2026 Conditions ¥ 7M ~ ¥ 20M /yr Apply from Japan Only (You must live in Japan to apply) Requirements Language Requirements Japanese: Conversational English: Fluent Minimum Experience Senior or above MISSION Architect, build, and operate the backend infrastructure powering Shizuku’s conversational AI, live streaming, and social media integrations. Design and implement the orchestration layer that seamlessly unifies LLM, TTS, ASR, and other AI capabilities into a cohesive product experience. Deliver sub-300ms response times at 500+ concurrent YouTube viewers, enabling real-time interactive experiences that feel truly alive. ABOUT SHIZUKU Shizuku is a Japan-born AI companion actively engaging audiences on YouTube and X (formerly Twitter). Already running live streams and cultivating a growing community, Shizuku is no",
+      "provider": "source-page"
+    },
+    {
+      "title": "",
+      "url": "https://japan-dev.com/jobs/shizuku-ai/shizuku-ai-mlops-engineer-h06e56",
+      "snippet": "MLOps Engineer at Shizuku AI in Japan | Japan Dev NEWSLETTER Sign Up Dashboard ☰ Search Jobs Company List Blog Found a Job? 🎊 For Employers 日本語 Sign Up My Profile Logout For Employers 日本語 Home Companies Shizuku AI MLOps Engineer Shizuku AI Tokyo APPLY NOW &nbsp;➜ 🇯🇵 Residents Only MLOps Engineer Tokyo Partial Remote Full-time May 4, 2026 Conditions ¥ 8M ~ ¥ 20M /yr Apply from Japan Only (You must live in Japan to apply) Requirements Language Requirements Japanese: Business Level English: Fluent Minimum Experience Senior or above MISSION As the founding MLOps engineer, design and build Shizuku’s ML infrastructure from the ground up. Establish the complete pipeline — from data ingestion through training environments to model serving — creating an internal platform that empowers ML engineers to iterate on models at maximum velocity. Replace individual, siloed development environments with a unified team-scale ML development platform, maximizing the speed of Shizuku’s evolution. ABOUT SHIZUKU Shizuku is a Japan-born AI companion actively engaging audiences on YouTube and X (formerly Twitter). Already running live streams and cultivating a growing community, Shizuku is now entering i",
+      "provider": "source-page"
+    },
+    {
+      "title": "",
+      "url": "https://japan-dev.com/jobs/pubtex/pubtex-data-engineer-ai-platformdata-infrastructure-utur9e",
+      "snippet": "Data Engineer (AI Platform&#x2F;Data Infrastructure) at PubteX in Japan | Japan Dev NEWSLETTER Sign Up Dashboard ☰ Search Jobs Company List Blog Found a Job? 🎊 For Employers 日本語 Sign Up My Profile Logout For Employers 日本語 Home Companies PubteX Data Engineer (AI Platform/Data Infrastr... PubteX Tokyo APPLY NOW &nbsp;➜ 🇯🇵 Residents Only Data Engineer (AI Platform/Data Infrastructure) Tokyo Partial Remote Full-time April 22, 2026 Conditions ¥ 7M ~ ¥ 12M /yr Apply from Japan Only No relocation to Japan (No visa sponsorship from overseas) Requirements Language Requirements Japanese: Business Level English: Business Level Minimum Experience Mid-level or above Responsible for developing and operating a data platform that supports data utilization Job Description Established in March 2022 by Marubeni Group, Kodansha Ltd., Shogakukan Inc., and Shueisha Inc., with the aim of transforming Japan's publishing distribution into a sustainable one through the use of DX, this company will provide data collection infrastructure to the system development members of the AI ​​Supply Chain Solutions Division. The division aims to expand to a size of over 50 people in the future. &nbsp; Job Details Pu",
+      "provider": "source-page"
+    },
+    {
+      "title": "",
+      "url": "https://japan-dev.com/jobs/axelspace/axelspace-earth-observation-data-scientist-9s0x5x",
+      "snippet": "Data Scientist &#x2F; ML Engineer at Axelspace in Japan | Japan Dev NEWSLETTER Sign Up Dashboard ☰ Search Jobs Company List Blog Found a Job? 🎊 For Employers 日本語 Sign Up My Profile Logout For Employers 日本語 Home Companies Axelspace Data Scientist / ML Engineer Axelspace Tokyo APPLY NOW &nbsp;➜ Data Scientist / ML Engineer Tokyo Partial Remote Full-time April 17, 2026 Conditions ¥ 6M ~ ¥ 8.5M /yr Apply from Anywhere 👍 Relocation to Japan 👍 (Overseas visa sponsorship supported) Requirements Language Requirements Japanese: Conversational English: Business Level Minimum Experience Mid-level or above Company Introduction Since our founding in 2008, Axelspace has been driven by the vision “Space within Your Reach.” We have continuously refined our unique micro-satellite technology with the goal of democratizing space technology to a wider population across the globe. AxelGlobe started in 2019 to provide a new Earth observation infrastructure by launching multiple micro-satellites for its higher data frequency. In addition to a satellite launched in 2019, we have successfully launched Japan’s first four mass-produced satellites in 2021. We are currently operating a constellation of five",
+      "provider": "source-page"
+    },
+    {
+      "title": "",
+      "url": "https://intel.wd1.myworkdayjobs.com/External/job/Taiwan-Taipei/Intel-Foundry-Advanced-Device-Development-Engineer_JR0281657",
+      "snippet": "",
+      "provider": "source-page"
+    },
+    {
+      "title": "",
+      "url": "https://intel.wd1.myworkdayjobs.com/External",
+      "snippet": "",
+      "provider": "source-page"
+    },
+    {
+      "title": "",
+      "url": "https://intel.wd1.myworkdayjobs.com/External/job/Taiwan-Taipei/Network-Systems-and-Solutions-Engineer_JR0281554",
+      "snippet": "",
+      "provider": "source-page"
+    }
+  ],
+  "dossiers": [
+    {
+      "jobKey": "url:https://jobs.lever.co/gogolook/903b657d-9530-4f59-9dea-e9075163f3e6",
+      "company": "Gogolook",
+      "title": "US Market Intern (ScamAdviser)",
+      "score": 85,
+      "recommendation": "值得投遞",
+      "evidence": [
+        {
+          "title": "",
+          "url": "https://jobs.lever.co/Gogolook/903b657d-9530-4f59-9dea-e9075163f3e6",
+          "snippet": "Gogolook - US Market Intern (ScamAdviser) US Market Intern (ScamAdviser) Taipei Marketing / Intern / Hybrid apply for this job About us Gogolook is a leading TrustTech company founded in 2012 and listed on the Taiwan Stock Exchange in 2025 under the stock code 6902. With \"Build for Trust\" as its core value, the company has expanded its business from Asia to Europe and America. Gogolook’s AI technology is built on the world's largest database of digital scam data, encompassing phone numbers, websites, virtual currency wallet addresses, and other factors. The company provides diverse anti-scam and fintech services for both consumers and businesses. Its anti-scam offerings include the digital anti-scam app \"Whoscall\" and a range of enterprise scam prevention solutions in combination with \"ScamAdviser.\" The Fintech BU empowers consumers through data-driven financial services and inclusive lending: Roo.Cash（袋鼠金融）offers transparent matchmaking for financial products like credit cards, while JUJI（招財麻吉）provides an innovative microloan service for rapid, convenient funding during urgent financial needs. A foundation member of the Global Anti-Scam Alliance (GASA), Gogolook has also teamed up",
+          "provider": "source-page"
+        },
+        {
+          "title": "",
+          "url": "https://www.gogolook.com/careers",
+          "snippet": "Careers Menu By clicking “Accept”, you agree to the storing of cookies on your device to analyze and enhance site usage. View our Privacy Policy for more information. Preferences Deny Accept Privacy Preference Center When you visit websites, they may store or retrieve data in your browser. This storage is often necessary for the basic functionality of the website. The storage may be used for marketing, analytics, and personalization of the site, such as storing your preferences. Privacy is important to us, so you have the option of disabling certain types of storage that may not be necessary for the basic functioning of the website. Blocking categories may impact your experience on the website. Allow All Cookies Reject All Cookies Manage Consent Preferences by Category Essential Always Active These items are required to enable basic website functionality. Marketing Essential These items are used to deliver advertising that is more relevant to you and your interests. They may also be used to limit the number of times you see an advertisement and measure the effectiveness of advertising campaigns. Advertising networks usually place them with the website operator’s permission. Persona",
+          "provider": "source-page"
+        },
+        {
+          "title": "",
+          "url": "https://japan-dev.com/jobs/shizuku-ai/shizuku-ai-software-engineer-backend-zvv206",
+          "snippet": "Software Engineer, Backend at Shizuku AI in Japan | Japan Dev NEWSLETTER Sign Up Dashboard ☰ Search Jobs Company List Blog Found a Job? 🎊 For Employers 日本語 Sign Up My Profile Logout For Employers 日本語 Home Companies Shizuku AI Software Engineer, Backend Shizuku AI Tokyo APPLY NOW &nbsp;➜ 🇯🇵 Residents Only Software Engineer, Backend Tokyo Partial Remote Full-time May 4, 2026 Conditions ¥ 7M ~ ¥ 20M /yr Apply from Japan Only (You must live in Japan to apply) Requirements Language Requirements Japanese: Conversational English: Fluent Minimum Experience Senior or above MISSION Architect, build, and operate the backend infrastructure powering Shizuku’s conversational AI, live streaming, and social media integrations. Design and implement the orchestration layer that seamlessly unifies LLM, TTS, ASR, and other AI capabilities into a cohesive product experience. Deliver sub-300ms response times at 500+ concurrent YouTube viewers, enabling real-time interactive experiences that feel truly alive. ABOUT SHIZUKU Shizuku is a Japan-born AI companion actively engaging audiences on YouTube and X (formerly Twitter). Already running live streams and cultivating a growing community, Shizuku is no",
+          "provider": "source-page"
+        },
+        {
+          "title": "",
+          "url": "https://japan-dev.com/jobs/shizuku-ai/shizuku-ai-mlops-engineer-h06e56",
+          "snippet": "MLOps Engineer at Shizuku AI in Japan | Japan Dev NEWSLETTER Sign Up Dashboard ☰ Search Jobs Company List Blog Found a Job? 🎊 For Employers 日本語 Sign Up My Profile Logout For Employers 日本語 Home Companies Shizuku AI MLOps Engineer Shizuku AI Tokyo APPLY NOW &nbsp;➜ 🇯🇵 Residents Only MLOps Engineer Tokyo Partial Remote Full-time May 4, 2026 Conditions ¥ 8M ~ ¥ 20M /yr Apply from Japan Only (You must live in Japan to apply) Requirements Language Requirements Japanese: Business Level English: Fluent Minimum Experience Senior or above MISSION As the founding MLOps engineer, design and build Shizuku’s ML infrastructure from the ground up. Establish the complete pipeline — from data ingestion through training environments to model serving — creating an internal platform that empowers ML engineers to iterate on models at maximum velocity. Replace individual, siloed development environments with a unified team-scale ML development platform, maximizing the speed of Shizuku’s evolution. ABOUT SHIZUKU Shizuku is a Japan-born AI companion actively engaging audiences on YouTube and X (formerly Twitter). Already running live streams and cultivating a growing community, Shizuku is now entering i",
+          "provider": "source-page"
+        },
+        {
+          "title": "",
+          "url": "https://japan-dev.com/jobs/pubtex/pubtex-data-engineer-ai-platformdata-infrastructure-utur9e",
+          "snippet": "Data Engineer (AI Platform&#x2F;Data Infrastructure) at PubteX in Japan | Japan Dev NEWSLETTER Sign Up Dashboard ☰ Search Jobs Company List Blog Found a Job? 🎊 For Employers 日本語 Sign Up My Profile Logout For Employers 日本語 Home Companies PubteX Data Engineer (AI Platform/Data Infrastr... PubteX Tokyo APPLY NOW &nbsp;➜ 🇯🇵 Residents Only Data Engineer (AI Platform/Data Infrastructure) Tokyo Partial Remote Full-time April 22, 2026 Conditions ¥ 7M ~ ¥ 12M /yr Apply from Japan Only No relocation to Japan (No visa sponsorship from overseas) Requirements Language Requirements Japanese: Business Level English: Business Level Minimum Experience Mid-level or above Responsible for developing and operating a data platform that supports data utilization Job Description Established in March 2022 by Marubeni Group, Kodansha Ltd., Shogakukan Inc., and Shueisha Inc., with the aim of transforming Japan's publishing distribution into a sustainable one through the use of DX, this company will provide data collection infrastructure to the system development members of the AI ​​Supply Chain Solutions Division. The division aims to expand to a size of over 50 people in the future. &nbsp; Job Details Pu",
+          "provider": "source-page"
+        },
+        {
+          "title": "",
+          "url": "https://japan-dev.com/jobs/axelspace/axelspace-earth-observation-data-scientist-9s0x5x",
+          "snippet": "Data Scientist &#x2F; ML Engineer at Axelspace in Japan | Japan Dev NEWSLETTER Sign Up Dashboard ☰ Search Jobs Company List Blog Found a Job? 🎊 For Employers 日本語 Sign Up My Profile Logout For Employers 日本語 Home Companies Axelspace Data Scientist / ML Engineer Axelspace Tokyo APPLY NOW &nbsp;➜ Data Scientist / ML Engineer Tokyo Partial Remote Full-time April 17, 2026 Conditions ¥ 6M ~ ¥ 8.5M /yr Apply from Anywhere 👍 Relocation to Japan 👍 (Overseas visa sponsorship supported) Requirements Language Requirements Japanese: Conversational English: Business Level Minimum Experience Mid-level or above Company Introduction Since our founding in 2008, Axelspace has been driven by the vision “Space within Your Reach.” We have continuously refined our unique micro-satellite technology with the goal of democratizing space technology to a wider population across the globe. AxelGlobe started in 2019 to provide a new Earth observation infrastructure by launching multiple micro-satellites for its higher data frequency. In addition to a satellite launched in 2019, we have successfully launched Japan’s first four mass-produced satellites in 2021. We are currently operating a constellation of five",
+          "provider": "source-page"
+        }
+      ],
+      "signals": [
+        "AI / data / platform signal",
+        "growth or funding signal",
+        "remote or hybrid signal"
+      ],
+      "researchQuestions": [
+        "What business unit owns the US Market Intern (ScamAdviser) role?",
+        "What measurable outcomes would this team expect in the first 90 days?",
+        "What recent company/product signals change the risk or upside?",
+        "Which CV proof points should be highlighted for this company?"
+      ],
+      "interviewAngles": [
+        "Ask about team success metrics and why the role is open.",
+        "Ask how the company evaluates impact across the first two quarters.",
+        "Prepare one story that maps directly to the highest-scoring ATS keywords."
+      ]
+    },
+    {
+      "jobKey": "url:https://cardlytics.wd5.myworkdayjobs.com/cardlyticsexternalcareersite/job/taipei-city/senior-software-engineer_jr100384",
+      "company": "Cardlytics Workday Taiwan",
+      "title": "Senior Software Engineer",
+      "score": 84,
+      "recommendation": "值得投遞",
+      "evidence": [
+        {
+          "title": "",
+          "url": "https://cardlytics.wd5.myworkdayjobs.com/CardlyticsExternalCareerSite/job/Taipei-City/Senior-Software-Engineer_JR100384",
+          "snippet": "",
+          "provider": "source-page"
+        },
+        {
+          "title": "",
+          "url": "https://cardlytics.wd5.myworkdayjobs.com/CardlyticsExternalCareerSite",
+          "snippet": "",
+          "provider": "source-page"
+        },
+        {
+          "title": "",
+          "url": "https://japan-dev.com/jobs/shizuku-ai/shizuku-ai-software-engineer-backend-zvv206",
+          "snippet": "Software Engineer, Backend at Shizuku AI in Japan | Japan Dev NEWSLETTER Sign Up Dashboard ☰ Search Jobs Company List Blog Found a Job? 🎊 For Employers 日本語 Sign Up My Profile Logout For Employers 日本語 Home Companies Shizuku AI Software Engineer, Backend Shizuku AI Tokyo APPLY NOW &nbsp;➜ 🇯🇵 Residents Only Software Engineer, Backend Tokyo Partial Remote Full-time May 4, 2026 Conditions ¥ 7M ~ ¥ 20M /yr Apply from Japan Only (You must live in Japan to apply) Requirements Language Requirements Japanese: Conversational English: Fluent Minimum Experience Senior or above MISSION Architect, build, and operate the backend infrastructure powering Shizuku’s conversational AI, live streaming, and social media integrations. Design and implement the orchestration layer that seamlessly unifies LLM, TTS, ASR, and other AI capabilities into a cohesive product experience. Deliver sub-300ms response times at 500+ concurrent YouTube viewers, enabling real-time interactive experiences that feel truly alive. ABOUT SHIZUKU Shizuku is a Japan-born AI companion actively engaging audiences on YouTube and X (formerly Twitter). Already running live streams and cultivating a growing community, Shizuku is no",
+          "provider": "source-page"
+        },
+        {
+          "title": "",
+          "url": "https://japan-dev.com/jobs/shizuku-ai/shizuku-ai-mlops-engineer-h06e56",
+          "snippet": "MLOps Engineer at Shizuku AI in Japan | Japan Dev NEWSLETTER Sign Up Dashboard ☰ Search Jobs Company List Blog Found a Job? 🎊 For Employers 日本語 Sign Up My Profile Logout For Employers 日本語 Home Companies Shizuku AI MLOps Engineer Shizuku AI Tokyo APPLY NOW &nbsp;➜ 🇯🇵 Residents Only MLOps Engineer Tokyo Partial Remote Full-time May 4, 2026 Conditions ¥ 8M ~ ¥ 20M /yr Apply from Japan Only (You must live in Japan to apply) Requirements Language Requirements Japanese: Business Level English: Fluent Minimum Experience Senior or above MISSION As the founding MLOps engineer, design and build Shizuku’s ML infrastructure from the ground up. Establish the complete pipeline — from data ingestion through training environments to model serving — creating an internal platform that empowers ML engineers to iterate on models at maximum velocity. Replace individual, siloed development environments with a unified team-scale ML development platform, maximizing the speed of Shizuku’s evolution. ABOUT SHIZUKU Shizuku is a Japan-born AI companion actively engaging audiences on YouTube and X (formerly Twitter). Already running live streams and cultivating a growing community, Shizuku is now entering i",
+          "provider": "source-page"
+        }
+      ],
+      "signals": [
+        "AI / data / platform signal",
+        "growth or funding signal",
+        "remote or hybrid signal"
+      ],
+      "researchQuestions": [
+        "What business unit owns the Senior Software Engineer role?",
+        "What measurable outcomes would this team expect in the first 90 days?",
+        "What recent company/product signals change the risk or upside?",
+        "Which CV proof points should be highlighted for this company?"
+      ],
+      "interviewAngles": [
+        "Ask about team success metrics and why the role is open.",
+        "Ask how the company evaluates impact across the first two quarters.",
+        "Prepare one story that maps directly to the highest-scoring ATS keywords."
+      ]
+    },
+    {
+      "jobKey": "url:https://japan-dev.com/jobs/shizuku-ai/shizuku-ai-software-engineer-backend-zvv206",
+      "company": "Shizuku AI",
+      "title": "Software Engineer, Backend",
+      "score": 84,
+      "recommendation": "值得投遞",
+      "evidence": [
+        {
+          "title": "",
+          "url": "https://cardlytics.wd5.myworkdayjobs.com/CardlyticsExternalCareerSite/job/Taipei-City/Senior-Software-Engineer_JR100384",
+          "snippet": "",
+          "provider": "source-page"
+        },
+        {
+          "title": "",
+          "url": "https://japan-dev.com/jobs/shizuku-ai/shizuku-ai-software-engineer-backend-zvv206",
+          "snippet": "Software Engineer, Backend at Shizuku AI in Japan | Japan Dev NEWSLETTER Sign Up Dashboard ☰ Search Jobs Company List Blog Found a Job? 🎊 For Employers 日本語 Sign Up My Profile Logout For Employers 日本語 Home Companies Shizuku AI Software Engineer, Backend Shizuku AI Tokyo APPLY NOW &nbsp;➜ 🇯🇵 Residents Only Software Engineer, Backend Tokyo Partial Remote Full-time May 4, 2026 Conditions ¥ 7M ~ ¥ 20M /yr Apply from Japan Only (You must live in Japan to apply) Requirements Language Requirements Japanese: Conversational English: Fluent Minimum Experience Senior or above MISSION Architect, build, and operate the backend infrastructure powering Shizuku’s conversational AI, live streaming, and social media integrations. Design and implement the orchestration layer that seamlessly unifies LLM, TTS, ASR, and other AI capabilities into a cohesive product experience. Deliver sub-300ms response times at 500+ concurrent YouTube viewers, enabling real-time interactive experiences that feel truly alive. ABOUT SHIZUKU Shizuku is a Japan-born AI companion actively engaging audiences on YouTube and X (formerly Twitter). Already running live streams and cultivating a growing community, Shizuku is no",
+          "provider": "source-page"
+        },
+        {
+          "title": "",
+          "url": "https://japan-dev.com/jobs/shizuku-ai/shizuku-ai-mlops-engineer-h06e56",
+          "snippet": "MLOps Engineer at Shizuku AI in Japan | Japan Dev NEWSLETTER Sign Up Dashboard ☰ Search Jobs Company List Blog Found a Job? 🎊 For Employers 日本語 Sign Up My Profile Logout For Employers 日本語 Home Companies Shizuku AI MLOps Engineer Shizuku AI Tokyo APPLY NOW &nbsp;➜ 🇯🇵 Residents Only MLOps Engineer Tokyo Partial Remote Full-time May 4, 2026 Conditions ¥ 8M ~ ¥ 20M /yr Apply from Japan Only (You must live in Japan to apply) Requirements Language Requirements Japanese: Business Level English: Fluent Minimum Experience Senior or above MISSION As the founding MLOps engineer, design and build Shizuku’s ML infrastructure from the ground up. Establish the complete pipeline — from data ingestion through training environments to model serving — creating an internal platform that empowers ML engineers to iterate on models at maximum velocity. Replace individual, siloed development environments with a unified team-scale ML development platform, maximizing the speed of Shizuku’s evolution. ABOUT SHIZUKU Shizuku is a Japan-born AI companion actively engaging audiences on YouTube and X (formerly Twitter). Already running live streams and cultivating a growing community, Shizuku is now entering i",
+          "provider": "source-page"
+        }
+      ],
+      "signals": [
+        "AI / data / platform signal",
+        "growth or funding signal",
+        "remote or hybrid signal"
+      ],
+      "researchQuestions": [
+        "What business unit owns the Software Engineer, Backend role?",
+        "What measurable outcomes would this team expect in the first 90 days?",
+        "What recent company/product signals change the risk or upside?",
+        "Which CV proof points should be highlighted for this company?"
+      ],
+      "interviewAngles": [
+        "Ask about team success metrics and why the role is open.",
+        "Ask how the company evaluates impact across the first two quarters.",
+        "Prepare one story that maps directly to the highest-scoring ATS keywords."
+      ]
+    },
+    {
+      "jobKey": "url:https://japan-dev.com/jobs/shizuku-ai/shizuku-ai-mlops-engineer-h06e56",
+      "company": "Shizuku AI",
+      "title": "MLOps Engineer",
+      "score": 84,
+      "recommendation": "值得投遞",
+      "evidence": [
+        {
+          "title": "",
+          "url": "https://japan-dev.com/jobs/shizuku-ai/shizuku-ai-software-engineer-backend-zvv206",
+          "snippet": "Software Engineer, Backend at Shizuku AI in Japan | Japan Dev NEWSLETTER Sign Up Dashboard ☰ Search Jobs Company List Blog Found a Job? 🎊 For Employers 日本語 Sign Up My Profile Logout For Employers 日本語 Home Companies Shizuku AI Software Engineer, Backend Shizuku AI Tokyo APPLY NOW &nbsp;➜ 🇯🇵 Residents Only Software Engineer, Backend Tokyo Partial Remote Full-time May 4, 2026 Conditions ¥ 7M ~ ¥ 20M /yr Apply from Japan Only (You must live in Japan to apply) Requirements Language Requirements Japanese: Conversational English: Fluent Minimum Experience Senior or above MISSION Architect, build, and operate the backend infrastructure powering Shizuku’s conversational AI, live streaming, and social media integrations. Design and implement the orchestration layer that seamlessly unifies LLM, TTS, ASR, and other AI capabilities into a cohesive product experience. Deliver sub-300ms response times at 500+ concurrent YouTube viewers, enabling real-time interactive experiences that feel truly alive. ABOUT SHIZUKU Shizuku is a Japan-born AI companion actively engaging audiences on YouTube and X (formerly Twitter). Already running live streams and cultivating a growing community, Shizuku is no",
+          "provider": "source-page"
+        },
+        {
+          "title": "",
+          "url": "https://japan-dev.com/jobs/shizuku-ai/shizuku-ai-mlops-engineer-h06e56",
+          "snippet": "MLOps Engineer at Shizuku AI in Japan | Japan Dev NEWSLETTER Sign Up Dashboard ☰ Search Jobs Company List Blog Found a Job? 🎊 For Employers 日本語 Sign Up My Profile Logout For Employers 日本語 Home Companies Shizuku AI MLOps Engineer Shizuku AI Tokyo APPLY NOW &nbsp;➜ 🇯🇵 Residents Only MLOps Engineer Tokyo Partial Remote Full-time May 4, 2026 Conditions ¥ 8M ~ ¥ 20M /yr Apply from Japan Only (You must live in Japan to apply) Requirements Language Requirements Japanese: Business Level English: Fluent Minimum Experience Senior or above MISSION As the founding MLOps engineer, design and build Shizuku’s ML infrastructure from the ground up. Establish the complete pipeline — from data ingestion through training environments to model serving — creating an internal platform that empowers ML engineers to iterate on models at maximum velocity. Replace individual, siloed development environments with a unified team-scale ML development platform, maximizing the speed of Shizuku’s evolution. ABOUT SHIZUKU Shizuku is a Japan-born AI companion actively engaging audiences on YouTube and X (formerly Twitter). Already running live streams and cultivating a growing community, Shizuku is now entering i",
+          "provider": "source-page"
+        }
+      ],
+      "signals": [
+        "AI / data / platform signal",
+        "growth or funding signal",
+        "remote or hybrid signal"
+      ],
+      "researchQuestions": [
+        "What business unit owns the MLOps Engineer role?",
+        "What measurable outcomes would this team expect in the first 90 days?",
+        "What recent company/product signals change the risk or upside?",
+        "Which CV proof points should be highlighted for this company?"
+      ],
+      "interviewAngles": [
+        "Ask about team success metrics and why the role is open.",
+        "Ask how the company evaluates impact across the first two quarters.",
+        "Prepare one story that maps directly to the highest-scoring ATS keywords."
+      ]
+    },
+    {
+      "jobKey": "url:https://japan-dev.com/jobs/pubtex/pubtex-data-engineer-ai-platformdata-infrastructure-utur9e",
+      "company": "PubteX",
+      "title": "Data Engineer (AI Platform/Data Infrastructure)",
+      "score": 84,
+      "recommendation": "值得投遞",
+      "evidence": [
+        {
+          "title": "",
+          "url": "https://jobs.lever.co/Gogolook/903b657d-9530-4f59-9dea-e9075163f3e6",
+          "snippet": "Gogolook - US Market Intern (ScamAdviser) US Market Intern (ScamAdviser) Taipei Marketing / Intern / Hybrid apply for this job About us Gogolook is a leading TrustTech company founded in 2012 and listed on the Taiwan Stock Exchange in 2025 under the stock code 6902. With \"Build for Trust\" as its core value, the company has expanded its business from Asia to Europe and America. Gogolook’s AI technology is built on the world's largest database of digital scam data, encompassing phone numbers, websites, virtual currency wallet addresses, and other factors. The company provides diverse anti-scam and fintech services for both consumers and businesses. Its anti-scam offerings include the digital anti-scam app \"Whoscall\" and a range of enterprise scam prevention solutions in combination with \"ScamAdviser.\" The Fintech BU empowers consumers through data-driven financial services and inclusive lending: Roo.Cash（袋鼠金融）offers transparent matchmaking for financial products like credit cards, while JUJI（招財麻吉）provides an innovative microloan service for rapid, convenient funding during urgent financial needs. A foundation member of the Global Anti-Scam Alliance (GASA), Gogolook has also teamed up",
+          "provider": "source-page"
+        },
+        {
+          "title": "",
+          "url": "https://www.gogolook.com/careers",
+          "snippet": "Careers Menu By clicking “Accept”, you agree to the storing of cookies on your device to analyze and enhance site usage. View our Privacy Policy for more information. Preferences Deny Accept Privacy Preference Center When you visit websites, they may store or retrieve data in your browser. This storage is often necessary for the basic functionality of the website. The storage may be used for marketing, analytics, and personalization of the site, such as storing your preferences. Privacy is important to us, so you have the option of disabling certain types of storage that may not be necessary for the basic functioning of the website. Blocking categories may impact your experience on the website. Allow All Cookies Reject All Cookies Manage Consent Preferences by Category Essential Always Active These items are required to enable basic website functionality. Marketing Essential These items are used to deliver advertising that is more relevant to you and your interests. They may also be used to limit the number of times you see an advertisement and measure the effectiveness of advertising campaigns. Advertising networks usually place them with the website operator’s permission. Persona",
+          "provider": "source-page"
+        },
+        {
+          "title": "",
+          "url": "https://japan-dev.com/jobs/shizuku-ai/shizuku-ai-mlops-engineer-h06e56",
+          "snippet": "MLOps Engineer at Shizuku AI in Japan | Japan Dev NEWSLETTER Sign Up Dashboard ☰ Search Jobs Company List Blog Found a Job? 🎊 For Employers 日本語 Sign Up My Profile Logout For Employers 日本語 Home Companies Shizuku AI MLOps Engineer Shizuku AI Tokyo APPLY NOW &nbsp;➜ 🇯🇵 Residents Only MLOps Engineer Tokyo Partial Remote Full-time May 4, 2026 Conditions ¥ 8M ~ ¥ 20M /yr Apply from Japan Only (You must live in Japan to apply) Requirements Language Requirements Japanese: Business Level English: Fluent Minimum Experience Senior or above MISSION As the founding MLOps engineer, design and build Shizuku’s ML infrastructure from the ground up. Establish the complete pipeline — from data ingestion through training environments to model serving — creating an internal platform that empowers ML engineers to iterate on models at maximum velocity. Replace individual, siloed development environments with a unified team-scale ML development platform, maximizing the speed of Shizuku’s evolution. ABOUT SHIZUKU Shizuku is a Japan-born AI companion actively engaging audiences on YouTube and X (formerly Twitter). Already running live streams and cultivating a growing community, Shizuku is now entering i",
+          "provider": "source-page"
+        },
+        {
+          "title": "",
+          "url": "https://japan-dev.com/jobs/pubtex/pubtex-data-engineer-ai-platformdata-infrastructure-utur9e",
+          "snippet": "Data Engineer (AI Platform&#x2F;Data Infrastructure) at PubteX in Japan | Japan Dev NEWSLETTER Sign Up Dashboard ☰ Search Jobs Company List Blog Found a Job? 🎊 For Employers 日本語 Sign Up My Profile Logout For Employers 日本語 Home Companies PubteX Data Engineer (AI Platform/Data Infrastr... PubteX Tokyo APPLY NOW &nbsp;➜ 🇯🇵 Residents Only Data Engineer (AI Platform/Data Infrastructure) Tokyo Partial Remote Full-time April 22, 2026 Conditions ¥ 7M ~ ¥ 12M /yr Apply from Japan Only No relocation to Japan (No visa sponsorship from overseas) Requirements Language Requirements Japanese: Business Level English: Business Level Minimum Experience Mid-level or above Responsible for developing and operating a data platform that supports data utilization Job Description Established in March 2022 by Marubeni Group, Kodansha Ltd., Shogakukan Inc., and Shueisha Inc., with the aim of transforming Japan's publishing distribution into a sustainable one through the use of DX, this company will provide data collection infrastructure to the system development members of the AI ​​Supply Chain Solutions Division. The division aims to expand to a size of over 50 people in the future. &nbsp; Job Details Pu",
+          "provider": "source-page"
+        },
+        {
+          "title": "",
+          "url": "https://japan-dev.com/jobs/axelspace/axelspace-earth-observation-data-scientist-9s0x5x",
+          "snippet": "Data Scientist &#x2F; ML Engineer at Axelspace in Japan | Japan Dev NEWSLETTER Sign Up Dashboard ☰ Search Jobs Company List Blog Found a Job? 🎊 For Employers 日本語 Sign Up My Profile Logout For Employers 日本語 Home Companies Axelspace Data Scientist / ML Engineer Axelspace Tokyo APPLY NOW &nbsp;➜ Data Scientist / ML Engineer Tokyo Partial Remote Full-time April 17, 2026 Conditions ¥ 6M ~ ¥ 8.5M /yr Apply from Anywhere 👍 Relocation to Japan 👍 (Overseas visa sponsorship supported) Requirements Language Requirements Japanese: Conversational English: Business Level Minimum Experience Mid-level or above Company Introduction Since our founding in 2008, Axelspace has been driven by the vision “Space within Your Reach.” We have continuously refined our unique micro-satellite technology with the goal of democratizing space technology to a wider population across the globe. AxelGlobe started in 2019 to provide a new Earth observation infrastructure by launching multiple micro-satellites for its higher data frequency. In addition to a satellite launched in 2019, we have successfully launched Japan’s first four mass-produced satellites in 2021. We are currently operating a constellation of five",
+          "provider": "source-page"
+        }
+      ],
+      "signals": [
+        "AI / data / platform signal",
+        "growth or funding signal",
+        "remote or hybrid signal"
+      ],
+      "researchQuestions": [
+        "What business unit owns the Data Engineer (AI Platform/Data Infrastructure) role?",
+        "What measurable outcomes would this team expect in the first 90 days?",
+        "What recent company/product signals change the risk or upside?",
+        "Which CV proof points should be highlighted for this company?"
+      ],
+      "interviewAngles": [
+        "Ask about team success metrics and why the role is open.",
+        "Ask how the company evaluates impact across the first two quarters.",
+        "Prepare one story that maps directly to the highest-scoring ATS keywords."
+      ]
+    },
+    {
+      "jobKey": "url:https://japan-dev.com/jobs/axelspace/axelspace-earth-observation-data-scientist-9s0x5x",
+      "company": "Axelspace",
+      "title": "Data Scientist / ML Engineer",
+      "score": 84,
+      "recommendation": "值得投遞",
+      "evidence": [
+        {
+          "title": "",
+          "url": "https://jobs.lever.co/Gogolook/903b657d-9530-4f59-9dea-e9075163f3e6",
+          "snippet": "Gogolook - US Market Intern (ScamAdviser) US Market Intern (ScamAdviser) Taipei Marketing / Intern / Hybrid apply for this job About us Gogolook is a leading TrustTech company founded in 2012 and listed on the Taiwan Stock Exchange in 2025 under the stock code 6902. With \"Build for Trust\" as its core value, the company has expanded its business from Asia to Europe and America. Gogolook’s AI technology is built on the world's largest database of digital scam data, encompassing phone numbers, websites, virtual currency wallet addresses, and other factors. The company provides diverse anti-scam and fintech services for both consumers and businesses. Its anti-scam offerings include the digital anti-scam app \"Whoscall\" and a range of enterprise scam prevention solutions in combination with \"ScamAdviser.\" The Fintech BU empowers consumers through data-driven financial services and inclusive lending: Roo.Cash（袋鼠金融）offers transparent matchmaking for financial products like credit cards, while JUJI（招財麻吉）provides an innovative microloan service for rapid, convenient funding during urgent financial needs. A foundation member of the Global Anti-Scam Alliance (GASA), Gogolook has also teamed up",
+          "provider": "source-page"
+        },
+        {
+          "title": "",
+          "url": "https://www.gogolook.com/careers",
+          "snippet": "Careers Menu By clicking “Accept”, you agree to the storing of cookies on your device to analyze and enhance site usage. View our Privacy Policy for more information. Preferences Deny Accept Privacy Preference Center When you visit websites, they may store or retrieve data in your browser. This storage is often necessary for the basic functionality of the website. The storage may be used for marketing, analytics, and personalization of the site, such as storing your preferences. Privacy is important to us, so you have the option of disabling certain types of storage that may not be necessary for the basic functioning of the website. Blocking categories may impact your experience on the website. Allow All Cookies Reject All Cookies Manage Consent Preferences by Category Essential Always Active These items are required to enable basic website functionality. Marketing Essential These items are used to deliver advertising that is more relevant to you and your interests. They may also be used to limit the number of times you see an advertisement and measure the effectiveness of advertising campaigns. Advertising networks usually place them with the website operator’s permission. Persona",
+          "provider": "source-page"
+        },
+        {
+          "title": "",
+          "url": "https://japan-dev.com/jobs/shizuku-ai/shizuku-ai-mlops-engineer-h06e56",
+          "snippet": "MLOps Engineer at Shizuku AI in Japan | Japan Dev NEWSLETTER Sign Up Dashboard ☰ Search Jobs Company List Blog Found a Job? 🎊 For Employers 日本語 Sign Up My Profile Logout For Employers 日本語 Home Companies Shizuku AI MLOps Engineer Shizuku AI Tokyo APPLY NOW &nbsp;➜ 🇯🇵 Residents Only MLOps Engineer Tokyo Partial Remote Full-time May 4, 2026 Conditions ¥ 8M ~ ¥ 20M /yr Apply from Japan Only (You must live in Japan to apply) Requirements Language Requirements Japanese: Business Level English: Fluent Minimum Experience Senior or above MISSION As the founding MLOps engineer, design and build Shizuku’s ML infrastructure from the ground up. Establish the complete pipeline — from data ingestion through training environments to model serving — creating an internal platform that empowers ML engineers to iterate on models at maximum velocity. Replace individual, siloed development environments with a unified team-scale ML development platform, maximizing the speed of Shizuku’s evolution. ABOUT SHIZUKU Shizuku is a Japan-born AI companion actively engaging audiences on YouTube and X (formerly Twitter). Already running live streams and cultivating a growing community, Shizuku is now entering i",
+          "provider": "source-page"
+        },
+        {
+          "title": "",
+          "url": "https://japan-dev.com/jobs/pubtex/pubtex-data-engineer-ai-platformdata-infrastructure-utur9e",
+          "snippet": "Data Engineer (AI Platform&#x2F;Data Infrastructure) at PubteX in Japan | Japan Dev NEWSLETTER Sign Up Dashboard ☰ Search Jobs Company List Blog Found a Job? 🎊 For Employers 日本語 Sign Up My Profile Logout For Employers 日本語 Home Companies PubteX Data Engineer (AI Platform/Data Infrastr... PubteX Tokyo APPLY NOW &nbsp;➜ 🇯🇵 Residents Only Data Engineer (AI Platform/Data Infrastructure) Tokyo Partial Remote Full-time April 22, 2026 Conditions ¥ 7M ~ ¥ 12M /yr Apply from Japan Only No relocation to Japan (No visa sponsorship from overseas) Requirements Language Requirements Japanese: Business Level English: Business Level Minimum Experience Mid-level or above Responsible for developing and operating a data platform that supports data utilization Job Description Established in March 2022 by Marubeni Group, Kodansha Ltd., Shogakukan Inc., and Shueisha Inc., with the aim of transforming Japan's publishing distribution into a sustainable one through the use of DX, this company will provide data collection infrastructure to the system development members of the AI ​​Supply Chain Solutions Division. The division aims to expand to a size of over 50 people in the future. &nbsp; Job Details Pu",
+          "provider": "source-page"
+        },
+        {
+          "title": "",
+          "url": "https://japan-dev.com/jobs/axelspace/axelspace-earth-observation-data-scientist-9s0x5x",
+          "snippet": "Data Scientist &#x2F; ML Engineer at Axelspace in Japan | Japan Dev NEWSLETTER Sign Up Dashboard ☰ Search Jobs Company List Blog Found a Job? 🎊 For Employers 日本語 Sign Up My Profile Logout For Employers 日本語 Home Companies Axelspace Data Scientist / ML Engineer Axelspace Tokyo APPLY NOW &nbsp;➜ Data Scientist / ML Engineer Tokyo Partial Remote Full-time April 17, 2026 Conditions ¥ 6M ~ ¥ 8.5M /yr Apply from Anywhere 👍 Relocation to Japan 👍 (Overseas visa sponsorship supported) Requirements Language Requirements Japanese: Conversational English: Business Level Minimum Experience Mid-level or above Company Introduction Since our founding in 2008, Axelspace has been driven by the vision “Space within Your Reach.” We have continuously refined our unique micro-satellite technology with the goal of democratizing space technology to a wider population across the globe. AxelGlobe started in 2019 to provide a new Earth observation infrastructure by launching multiple micro-satellites for its higher data frequency. In addition to a satellite launched in 2019, we have successfully launched Japan’s first four mass-produced satellites in 2021. We are currently operating a constellation of five",
+          "provider": "source-page"
+        }
+      ],
+      "signals": [
+        "AI / data / platform signal",
+        "growth or funding signal",
+        "remote or hybrid signal"
+      ],
+      "researchQuestions": [
+        "What business unit owns the Data Scientist / ML Engineer role?",
+        "What measurable outcomes would this team expect in the first 90 days?",
+        "What recent company/product signals change the risk or upside?",
+        "Which CV proof points should be highlighted for this company?"
+      ],
+      "interviewAngles": [
+        "Ask about team success metrics and why the role is open.",
+        "Ask how the company evaluates impact across the first two quarters.",
+        "Prepare one story that maps directly to the highest-scoring ATS keywords."
+      ]
+    },
+    {
+      "jobKey": "url:https://intel.wd1.myworkdayjobs.com/external/job/taiwan-taipei/intel-foundry-advanced-device-development-engineer_jr0281657",
+      "company": "Intel Workday Taiwan",
+      "title": "Intel Foundry Advanced Device Development Engineer",
+      "score": 84,
+      "recommendation": "值得投遞",
+      "evidence": [
+        {
+          "title": "",
+          "url": "https://intel.wd1.myworkdayjobs.com/External/job/Taiwan-Taipei/Intel-Foundry-Advanced-Device-Development-Engineer_JR0281657",
+          "snippet": "",
+          "provider": "source-page"
+        },
+        {
+          "title": "",
+          "url": "https://intel.wd1.myworkdayjobs.com/External",
+          "snippet": "",
+          "provider": "source-page"
+        },
+        {
+          "title": "",
+          "url": "https://intel.wd1.myworkdayjobs.com/External/job/Taiwan-Taipei/Network-Systems-and-Solutions-Engineer_JR0281554",
+          "snippet": "",
+          "provider": "source-page"
+        }
+      ],
+      "signals": [],
+      "researchQuestions": [
+        "What business unit owns the Intel Foundry Advanced Device Development Engineer role?",
+        "What measurable outcomes would this team expect in the first 90 days?",
+        "What recent company/product signals change the risk or upside?",
+        "Which CV proof points should be highlighted for this company?"
+      ],
+      "interviewAngles": [
+        "Ask about team success metrics and why the role is open.",
+        "Ask how the company evaluates impact across the first two quarters.",
+        "Prepare one story that maps directly to the highest-scoring ATS keywords."
+      ]
+    },
+    {
+      "jobKey": "url:https://intel.wd1.myworkdayjobs.com/external/job/taiwan-taipei/network-systems-and-solutions-engineer_jr0281554",
+      "company": "Intel Workday Taiwan",
+      "title": "Network Systems and Solutions Engineer",
+      "score": 84,
+      "recommendation": "值得投遞",
+      "evidence": [
+        {
+          "title": "",
+          "url": "https://www.gogolook.com/careers",
+          "snippet": "Careers Menu By clicking “Accept”, you agree to the storing of cookies on your device to analyze and enhance site usage. View our Privacy Policy for more information. Preferences Deny Accept Privacy Preference Center When you visit websites, they may store or retrieve data in your browser. This storage is often necessary for the basic functionality of the website. The storage may be used for marketing, analytics, and personalization of the site, such as storing your preferences. Privacy is important to us, so you have the option of disabling certain types of storage that may not be necessary for the basic functioning of the website. Blocking categories may impact your experience on the website. Allow All Cookies Reject All Cookies Manage Consent Preferences by Category Essential Always Active These items are required to enable basic website functionality. Marketing Essential These items are used to deliver advertising that is more relevant to you and your interests. They may also be used to limit the number of times you see an advertisement and measure the effectiveness of advertising campaigns. Advertising networks usually place them with the website operator’s permission. Persona",
+          "provider": "source-page"
+        },
+        {
+          "title": "",
+          "url": "https://intel.wd1.myworkdayjobs.com/External/job/Taiwan-Taipei/Intel-Foundry-Advanced-Device-Development-Engineer_JR0281657",
+          "snippet": "",
+          "provider": "source-page"
+        },
+        {
+          "title": "",
+          "url": "https://intel.wd1.myworkdayjobs.com/External",
+          "snippet": "",
+          "provider": "source-page"
+        },
+        {
+          "title": "",
+          "url": "https://intel.wd1.myworkdayjobs.com/External/job/Taiwan-Taipei/Network-Systems-and-Solutions-Engineer_JR0281554",
+          "snippet": "",
+          "provider": "source-page"
+        }
+      ],
+      "signals": [
+        "AI / data / platform signal"
+      ],
+      "researchQuestions": [
+        "What business unit owns the Network Systems and Solutions Engineer role?",
+        "What measurable outcomes would this team expect in the first 90 days?",
+        "What recent company/product signals change the risk or upside?",
+        "Which CV proof points should be highlighted for this company?"
+      ],
+      "interviewAngles": [
+        "Ask about team success metrics and why the role is open.",
+        "Ask how the company evaluates impact across the first two quarters.",
+        "Prepare one story that maps directly to the highest-scoring ATS keywords."
+      ]
+    }
+  ],
+  "errors": []
+};

@@ -1,0 +1,66 @@
+{
+  "name": "CV Studio Career Ops Modes",
+  "description": "Slash-command style mode registry that mirrors career-ops command ergonomics while staying compatible with the web app and backend scripts.",
+  "commands": [
+    {
+      "command": "/career-ops scan",
+      "script": "npm run career-ops:parallel-pipeline",
+      "purpose": "Build sources, scan in parallel, normalize jobs, and refresh all reports.",
+      "outputs": ["data/app/career-ops-jobs.json", "data/app/career-ops-parallel-report.md"]
+    },
+    {
+      "command": "/career-ops source-flex",
+      "script": "npm run career-ops:source-flex",
+      "purpose": "Expand source coverage with role aliases, ATS domains, job boards, and career path patterns.",
+      "outputs": ["data/career-ops-sources.json", "data/app/career-ops-source-flex-report.md"]
+    },
+    {
+      "command": "/career-ops quality",
+      "script": "npm run career-ops:quality",
+      "purpose": "Filter or annotate low-quality scraped jobs before scoring and LLM-heavy stages.",
+      "outputs": ["data/app/career-ops-jobs.json", "data/app/career-ops-source-quality-report.md"]
+    },
+    {
+      "command": "/career-ops deep",
+      "script": "npm run career-ops:deep-research && npm run career-ops:deep-fit",
+      "purpose": "Create company/job dossiers and single-job fit dossiers.",
+      "outputs": ["data/app/career-ops-deep-research.md", "data/app/career-ops-deep-fit.md"]
+    },
+    {
+      "command": "/career-ops comp",
+      "script": "npm run career-ops:compensation",
+      "purpose": "Create compensation structures and negotiation scripts.",
+      "outputs": ["data/app/career-ops-compensation.md"]
+    },
+    {
+      "command": "/career-ops stories",
+      "script": "npm run career-ops:story-bank",
+      "purpose": "Create and refresh STAR+Reflection story bank seeds.",
+      "outputs": ["data/app/career-ops-story-bank.md"]
+    },
+    {
+      "command": "/career-ops apply",
+      "script": "npm run career-ops:apply-agent:dry-run",
+      "purpose": "Create a human-in-the-loop application form inspection and fill plan.",
+      "outputs": ["data/app/career-ops-apply-agent-report.md"]
+    },
+    {
+      "command": "/career-ops learn",
+      "script": "npm run career-ops:learn",
+      "purpose": "Learn preferences from scores, statuses, feedback, and source metadata.",
+      "outputs": ["data/app/career-ops-learning-report.md"]
+    },
+    {
+      "command": "/career-ops doctor",
+      "script": "npm run career-ops:doctor",
+      "purpose": "Validate required files, schemas, secrets, and optional browser dependencies.",
+      "outputs": []
+    }
+  ],
+  "guardrails": [
+    "Never submit an application without explicit user confirmation.",
+    "Never invent compensation numbers; require evidence or ask recruiter range questions.",
+    "Never claim company research facts without source evidence.",
+    "Never rewrite the CV with experience the user did not provide."
+  ]
+}
