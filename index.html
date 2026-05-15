@@ -3121,29 +3121,38 @@
       transform: rotate(180deg);
     }
 
-    .nav-shortcuts {
+    .nav-context-actions {
       display: flex;
-      flex-wrap: wrap;
+      flex: 1 1 auto;
+      flex-wrap: nowrap;
       align-items: center;
-      gap: 8px;
+      justify-content: flex-end;
+      gap: 10px;
       min-width: 0;
     }
 
-    .nav-shortcut {
-      padding: 10px 14px;
+    .nav-context-label {
+      color: var(--muted);
+      font-size: 0.78rem;
+      font-weight: 800;
+      white-space: nowrap;
+    }
+
+    .nav-context-action {
+      min-width: 148px;
+      min-height: 46px;
+      padding: 10px 16px;
       border-radius: 8px;
-      border-color: rgba(49,40,27,0.1);
-      background: rgba(255,255,255,0.76);
-      color: var(--ink);
+      border-color: rgba(173,63,47,0.24);
+      background: #fff;
+      color: var(--accent);
       font-size: 0.86rem;
       font-weight: 800;
       box-shadow: 0 10px 24px rgba(50,38,18,0.06);
     }
 
-    .nav-shortcut:hover,
-    .nav-shortcut.active {
-      background: #fff;
-      color: var(--accent);
+    .nav-context-action:hover {
+      background: rgba(173,63,47,0.08);
       transform: translateY(-1px);
     }
 
@@ -3276,12 +3285,16 @@
         grid-template-columns: 1fr;
       }
 
-      .nav-shortcuts {
-        display: grid;
-        grid-template-columns: repeat(3, minmax(0, 1fr));
+      .nav-context-actions {
+        justify-content: stretch;
       }
 
-      .nav-shortcut {
+      .nav-context-label {
+        display: none;
+      }
+
+      .nav-context-action {
+        width: 100%;
         min-height: 42px;
         padding: 9px 8px;
       }
@@ -5153,10 +5166,9 @@
         <strong id="featureMenuCurrent">主畫面</strong>
         <span class="feature-menu-caret" aria-hidden="true">⌄</span>
       </button>
-      <div class="nav-shortcuts" aria-label="常用入口">
-        <button class="nav-shortcut" data-tab-shortcut="cv" type="button">開始履歷</button>
-        <button class="nav-shortcut" data-tab-shortcut="career" type="button">求職顧問</button>
-        <button class="nav-shortcut" data-tab-shortcut="gsat" type="button">學測落點</button>
+      <div class="nav-context-actions" aria-label="目前功能操作">
+        <span class="nav-context-label">主要操作</span>
+        <button id="navPrimaryActionBtn" class="nav-context-action" type="button">開始履歷</button>
       </div>
       <div id="featureMenuPanel" class="app-tabs feature-menu-panel" hidden>
         <button class="app-tab active" data-tab="home" type="button">
@@ -6539,6 +6551,8 @@
         "連接 Canva": "Connect Canva",
         "Google 登入": "Sign in with Google",
         "Google 登入同步": "Google sync",
+        "目前功能操作": "Current feature action",
+        "主要操作": "Primary Action",
         "主畫面": "Home",
         "CV 履歷": "CV Resume",
         "學習歷程": "Learning Portfolio",
@@ -12632,6 +12646,49 @@
         if (current && activeTab) current.textContent = activeTab.textContent || "主畫面";
       }
 
+      function clickActionTarget(targetId) {
+        const target = document.getElementById(targetId);
+        if (!target) return;
+        target.click();
+      }
+
+      const NAV_PRIMARY_ACTIONS = {
+        home: {
+          label: "開始履歷",
+          run: () => {
+            switchTab("cv");
+            window.setTimeout(() => {
+              document.getElementById("editorSection")?.scrollIntoView({ behavior: "smooth", block: "start" });
+            }, 60);
+          }
+        },
+        cv: {
+          label: "下載 PDF",
+          run: () => clickActionTarget("downloadPdfBtn")
+        },
+        portfolio: {
+          label: "下載學習歷程 PDF",
+          run: () => clickActionTarget("pfDownloadBtn")
+        },
+        career: {
+          label: "分析職位適配度",
+          run: () => clickActionTarget("careerAnalyzeBtn")
+        },
+        gsat: {
+          label: "開始落點分析",
+          run: () => clickActionTarget("gsatAnalyzeBtn")
+        }
+      };
+
+      function updateNavPrimaryAction(tabId) {
+        const button = document.getElementById("navPrimaryActionBtn");
+        const action = NAV_PRIMARY_ACTIONS[tabId] || NAV_PRIMARY_ACTIONS.home;
+        if (!button) return;
+        button.dataset.navAction = tabId;
+        button.textContent = action.label;
+        window.cvStudioI18n?.apply?.(button);
+      }
+
       function switchTab(tabId, options = {}) {
         const { updateUrl = true } = options;
         const nextTabId = normalizeTabId(tabId);
@@ -12642,9 +12699,7 @@
         if (page) page.classList.add("active");
         if (tab)  tab.classList.add("active");
         updateFeatureMenuCurrent(nextTabId);
-        document.querySelectorAll(".nav-shortcut").forEach((shortcut) => {
-          shortcut.classList.toggle("active", shortcut.dataset.tabShortcut === nextTabId);
-        });
+        updateNavPrimaryAction(nextTabId);
         setFeatureMenuOpen(false);
         localStorage.setItem(PF_TAB_KEY, nextTabId);
         window.dispatchEvent(new CustomEvent("cv:tab-changed", { detail: { tabId: nextTabId } }));
@@ -13747,8 +13802,10 @@
           btn.addEventListener("click", () => switchTab(btn.dataset.tab));
         });
 
-        document.querySelectorAll("[data-tab-shortcut]").forEach(btn => {
-          btn.addEventListener("click", () => switchTab(btn.dataset.tabShortcut));
+        document.getElementById("navPrimaryActionBtn")?.addEventListener("click", (event) => {
+          const actionKey = normalizeTabId(event.currentTarget.dataset.navAction);
+          const action = NAV_PRIMARY_ACTIONS[actionKey] || NAV_PRIMARY_ACTIONS.home;
+          action.run();
         });
 
         /* Home → CV button */
