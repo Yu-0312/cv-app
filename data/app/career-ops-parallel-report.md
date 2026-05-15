@@ -1,6 +1,6 @@
 # Career Ops Parallel Worker Report
 
-Generated: 2026-05-15T14:46:00.890Z
+Generated: 2026-05-15T23:22:33.235Z
 Concurrency: 4
 Jobs processed: 50
 Errors: 0
@@ -15,7 +15,7 @@ Errors: 0
 
 - Score: 75
 - Grade: B
-- Research evidence: 0
+- Research evidence: 7
 - Keywords: React, design system, engineer, product, dashboards, data, visualization
 - Compensation leverage: medium
 - Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
@@ -30,8 +30,23 @@ Errors: 0
 
 - Score: 74
 - Grade: B
-- Research evidence: 0
+- Research evidence: 8
 - Keywords: React, API, engineer, product, data
+- Compensation leverage: medium
+- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
+
+### Apply Agent Guardrails
+- Never submit without explicit user confirmation.
+- Never fabricate work authorization, salary history, degree, or experience.
+- Never store API keys or credentials in job metadata.
+- Record only application status and user-approved notes.
+
+## P1 Money Forward - Lead Backend Engineer, Digital Bank
+
+- Score: 74
+- Grade: B
+- Research evidence: 2
+- Keywords: API, engineer, product, data
 - Compensation leverage: medium
 - Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
@@ -45,7 +60,7 @@ Errors: 0
 
 - Score: 73
 - Grade: B
-- Research evidence: 0
+- Research evidence: 7
 - Keywords: React, engineer, dashboards, data, visualization
 - Compensation leverage: medium
 - Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
@@ -60,7 +75,7 @@ Errors: 0
 
 - Score: 72
 - Grade: B
-- Research evidence: 5
+- Research evidence: 4
 - Keywords: Analytics, remote, engineer, product, data
 - Compensation leverage: medium
 - Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
@@ -75,7 +90,7 @@ Errors: 0
 
 - Score: 71
 - Grade: C
-- Research evidence: 0
+- Research evidence: 3
 - Keywords: API, engineer, product, data
 - Compensation leverage: low
 - Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
@@ -90,9 +105,54 @@ Errors: 0
 
 - Score: 70
 - Grade: C
-- Research evidence: 0
+- Research evidence: 8
 - Keywords: React, engineer, product, data
 - Compensation leverage: medium
+- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
+
+### Apply Agent Guardrails
+- Never submit without explicit user confirmation.
+- Never fabricate work authorization, salary history, degree, or experience.
+- Never store API keys or credentials in job metadata.
+- Record only application status and user-approved notes.
+
+## P2 Money Forward - Information Systems Engineer, Global IT Division, Tokyo
+
+- Score: 70
+- Grade: C
+- Research evidence: 2
+- Keywords: API, engineer, dashboards, data, visualization
+- Compensation leverage: medium
+- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
+
+### Apply Agent Guardrails
+- Never submit without explicit user confirmation.
+- Never fabricate work authorization, salary history, degree, or experience.
+- Never store API keys or credentials in job metadata.
+- Record only application status and user-approved notes.
+
+## P2 Money Forward - QA Engineer, Money Forward Cloud, Fukuoka
+
+- Score: 70
+- Grade: C
+- Research evidence: 2
+- Keywords: React, API, engineer, product, data
+- Compensation leverage: medium
+- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
+
+### Apply Agent Guardrails
+- Never submit without explicit user confirmation.
+- Never fabricate work authorization, salary history, degree, or experience.
+- Never store API keys or credentials in job metadata.
+- Record only application status and user-approved notes.
+
+## P2 Tokuty - Full Stack Engineer
+
+- Score: 70
+- Grade: C
+- Research evidence: 0
+- Keywords: React, design system, engineer, product
+- Compensation leverage: low
 - Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
 ### Apply Agent Guardrails
@@ -105,7 +165,7 @@ Errors: 0
 
 - Score: 69
 - Grade: C
-- Research evidence: 4
+- Research evidence: 0
 - Keywords: API, engineer, product, data
 - Compensation leverage: low
 - Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
@@ -150,9 +210,9 @@ Errors: 0
 
 - Score: 68
 - Grade: C
-- Research evidence: 0
+- Research evidence: 2
 - Keywords: API, engineer, product
-- Compensation leverage: low
+- Compensation leverage: medium
 - Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
 ### Apply Agent Guardrails
@@ -180,9 +240,9 @@ Errors: 0
 
 - Score: 66
 - Grade: C
-- Research evidence: 0
+- Research evidence: 2
 - Keywords: API, engineer, dashboards, data, visualization
-- Compensation leverage: low
+- Compensation leverage: medium
 - Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
 ### Apply Agent Guardrails
@@ -195,7 +255,7 @@ Errors: 0
 
 - Score: 66
 - Grade: C
-- Research evidence: 3
+- Research evidence: 0
 - Keywords: remote, engineer, product, data
 - Compensation leverage: low
 - Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
@@ -210,9 +270,24 @@ Errors: 0
 
 - Score: 66
 - Grade: C
-- Research evidence: 0
+- Research evidence: 3
 - Keywords: React, design system, engineer, product, data
 - Compensation leverage: low
+- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
+
+### Apply Agent Guardrails
+- Never submit without explicit user confirmation.
+- Never fabricate work authorization, salary history, degree, or experience.
+- Never store API keys or credentials in job metadata.
+- Record only application status and user-approved notes.
+
+## P2 Money Forward - Infrastructure Engineer (SRE-AWS)
+
+- Score: 66
+- Grade: C
+- Research evidence: 2
+- Keywords: React, engineer, product, data
+- Compensation leverage: medium
 - Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
 ### Apply Agent Guardrails
@@ -225,9 +300,24 @@ Errors: 0
 
 - Score: 65
 - Grade: C
-- Research evidence: 6
+- Research evidence: 0
 - Keywords: Analytics, remote, product, data
 - Compensation leverage: low
+- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
+
+### Apply Agent Guardrails
+- Never submit without explicit user confirmation.
+- Never fabricate work authorization, salary history, degree, or experience.
+- Never store API keys or credentials in job metadata.
+- Record only application status and user-approved notes.
+
+## P2 Intel Workday Taiwan - Intel Foundry Advanced Device Development Engineer
+
+- Score: 65
+- Grade: C
+- Research evidence: 0
+- Keywords: Analytics, engineer, product, data
+- Compensation leverage: -
 - Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
 ### Apply Agent Guardrails
@@ -242,7 +332,7 @@ Errors: 0
 - Grade: C
 - Research evidence: 0
 - Keywords: React, API, product, data
-- Compensation leverage: low
+- Compensation leverage: -
 - Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
 ### Apply Agent Guardrails
@@ -255,9 +345,9 @@ Errors: 0
 
 - Score: 65
 - Grade: C
-- Research evidence: 5
+- Research evidence: 0
 - Keywords: React, remote, engineer, data
-- Compensation leverage: low
+- Compensation leverage: -
 - Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
 ### Apply Agent Guardrails
@@ -270,9 +360,9 @@ Errors: 0
 
 - Score: 65
 - Grade: C
-- Research evidence: 0
+- Research evidence: 2
 - Keywords: JavaScript, React, CSS, engineer
-- Compensation leverage: low
+- Compensation leverage: medium
 - Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
 ### Apply Agent Guardrails
@@ -281,13 +371,13 @@ Errors: 0
 - Never store API keys or credentials in job metadata.
 - Record only application status and user-approved notes.
 
-## P2 Intel Workday Taiwan - Intel Foundry Advanced Device Development Engineer
+## P2 Intel Workday Taiwan - Network Systems and Solutions Engineer - Intern
 
-- Score: 65
+- Score: 64
 - Grade: C
-- Research evidence: 3
-- Keywords: Analytics, engineer, product, data
-- Compensation leverage: low
+- Research evidence: 0
+- Keywords: engineer, product, data
+- Compensation leverage: -
 - Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
 ### Apply Agent Guardrails
@@ -302,22 +392,7 @@ Errors: 0
 - Grade: C
 - Research evidence: 0
 - Keywords: API, engineer, product, data
-- Compensation leverage: low
-- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
-
-### Apply Agent Guardrails
-- Never submit without explicit user confirmation.
-- Never fabricate work authorization, salary history, degree, or experience.
-- Never store API keys or credentials in job metadata.
-- Record only application status and user-approved notes.
-
-## P2 Intel Workday Taiwan - Network Systems and Solutions Engineer - Intern
-
-- Score: 64
-- Grade: C
-- Research evidence: 3
-- Keywords: engineer, product, data
-- Compensation leverage: low
+- Compensation leverage: -
 - Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
 ### Apply Agent Guardrails
@@ -345,7 +420,7 @@ Errors: 0
 
 - Score: 63
 - Grade: C
-- Research evidence: 0
+- Research evidence: 7
 - Keywords: Analytics, engineer, product, data
 - Compensation leverage: medium
 - Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
@@ -360,9 +435,9 @@ Errors: 0
 
 - Score: 63
 - Grade: C
-- Research evidence: 0
+- Research evidence: 2
 - Keywords: JavaScript, React, CSS, engineer
-- Compensation leverage: low
+- Compensation leverage: medium
 - Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
 ### Apply Agent Guardrails
@@ -371,12 +446,27 @@ Errors: 0
 - Never store API keys or credentials in job metadata.
 - Record only application status and user-approved notes.
 
-## P2 Logitech Workday Taiwan - Imaging Engineer Technical Manager - Webcam
+## P2 Money Forward - Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka
 
-- Score: 62
+- Score: 63
+- Grade: C
+- Research evidence: 2
+- Keywords: React, engineer, product
+- Compensation leverage: medium
+- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
+
+### Apply Agent Guardrails
+- Never submit without explicit user confirmation.
+- Never fabricate work authorization, salary history, degree, or experience.
+- Never store API keys or credentials in job metadata.
+- Record only application status and user-approved notes.
+
+## P2 PayPay - Cloud Platform Engineer (DB Specialist)
+
+- Score: 63
 - Grade: C
 - Research evidence: 0
-- Keywords: engineer, product, data
+- Keywords: remote, engineer, data
 - Compensation leverage: -
 - Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
@@ -401,11 +491,56 @@ Errors: 0
 - Never store API keys or credentials in job metadata.
 - Record only application status and user-approved notes.
 
+## P2 Applied Materials Workday - Technical Support Engineer - Etch
+
+- Score: 62
+- Grade: C
+- Research evidence: 0
+- Keywords: engineer, product, data
+- Compensation leverage: -
+- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
+
+### Apply Agent Guardrails
+- Never submit without explicit user confirmation.
+- Never fabricate work authorization, salary history, degree, or experience.
+- Never store API keys or credentials in job metadata.
+- Record only application status and user-approved notes.
+
+## P2 Intel Workday Taiwan - Platform Debug Engineer- Intern
+
+- Score: 62
+- Grade: C
+- Research evidence: 0
+- Keywords: engineer, product, data
+- Compensation leverage: -
+- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
+
+### Apply Agent Guardrails
+- Never submit without explicit user confirmation.
+- Never fabricate work authorization, salary history, degree, or experience.
+- Never store API keys or credentials in job metadata.
+- Record only application status and user-approved notes.
+
+## P2 Logitech Workday Taiwan - Imaging Engineer Technical Manager - Webcam
+
+- Score: 62
+- Grade: C
+- Research evidence: 0
+- Keywords: engineer, product, data
+- Compensation leverage: -
+- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
+
+### Apply Agent Guardrails
+- Never submit without explicit user confirmation.
+- Never fabricate work authorization, salary history, degree, or experience.
+- Never store API keys or credentials in job metadata.
+- Record only application status and user-approved notes.
+
 ## P2 Shizuku AI - ML Engineer
 
 - Score: 62
 - Grade: C
-- Research evidence: 3
+- Research evidence: 0
 - Keywords: remote, engineer, data
 - Compensation leverage: low
 - Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
@@ -420,7 +555,7 @@ Errors: 0
 
 - Score: 62
 - Grade: C
-- Research evidence: 3
+- Research evidence: 0
 - Keywords: remote, engineer, data
 - Compensation leverage: low
 - Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
@@ -446,28 +581,13 @@ Errors: 0
 - Never store API keys or credentials in job metadata.
 - Record only application status and user-approved notes.
 
-## P2 Applied Materials Workday - Technical Support Engineer - Etch
-
-- Score: 62
-- Grade: C
-- Research evidence: 0
-- Keywords: engineer, product, data
-- Compensation leverage: -
-- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
-
-### Apply Agent Guardrails
-- Never submit without explicit user confirmation.
-- Never fabricate work authorization, salary history, degree, or experience.
-- Never store API keys or credentials in job metadata.
-- Record only application status and user-approved notes.
-
 ## P2 Money Forward - Data Engineer, Data AI Platform Division, Tokyo
 
 - Score: 62
 - Grade: C
-- Research evidence: 0
+- Research evidence: 2
 - Keywords: Analytics, engineer, product, data
-- Compensation leverage: low
+- Compensation leverage: medium
 - Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
 ### Apply Agent Guardrails
@@ -480,9 +600,9 @@ Errors: 0
 
 - Score: 62
 - Grade: C
-- Research evidence: 0
+- Research evidence: 2
 - Keywords: React, engineer, product, data
-- Compensation leverage: low
+- Compensation leverage: medium
 - Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
 ### Apply Agent Guardrails
@@ -491,13 +611,28 @@ Errors: 0
 - Never store API keys or credentials in job metadata.
 - Record only application status and user-approved notes.
 
-## P2 Intel Workday Taiwan - Platform Debug Engineer- Intern
+## P2 NVIDIA Workday - Senior High Speed SerDes Validation Engineer
 
-- Score: 62
+- Score: 61
 - Grade: C
-- Research evidence: 3
+- Research evidence: 0
+- Keywords: engineer, product
+- Compensation leverage: -
+- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
+
+### Apply Agent Guardrails
+- Never submit without explicit user confirmation.
+- Never fabricate work authorization, salary history, degree, or experience.
+- Never store API keys or credentials in job metadata.
+- Record only application status and user-approved notes.
+
+## P2 Intel Workday Taiwan - Network Systems and Solutions Engineer
+
+- Score: 61
+- Grade: C
+- Research evidence: 0
 - Keywords: engineer, product, data
-- Compensation leverage: low
+- Compensation leverage: -
 - Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
 ### Apply Agent Guardrails
@@ -566,13 +701,13 @@ Errors: 0
 - Never store API keys or credentials in job metadata.
 - Record only application status and user-approved notes.
 
-## P2 NVIDIA Workday - Senior High Speed SerDes Validation Engineer
+## P2 Money Forward - QA Engineer - SDET, Money Forward Kessai Ltd., Fukuoka
 
 - Score: 61
 - Grade: C
-- Research evidence: 0
-- Keywords: engineer, product
-- Compensation leverage: -
+- Research evidence: 2
+- Keywords: engineer, product, data
+- Compensation leverage: medium
 - Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
 ### Apply Agent Guardrails
@@ -581,43 +716,28 @@ Errors: 0
 - Never store API keys or credentials in job metadata.
 - Record only application status and user-approved notes.
 
-## P2 Intel Workday Taiwan - Network Systems and Solutions Engineer
+## P2 Money Forward - Senior Backend Engineer - Ruby on Rails
 
 - Score: 61
 - Grade: C
-- Research evidence: 3
-- Keywords: engineer, product, data
-- Compensation leverage: low
-- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
-
-### Apply Agent Guardrails
-- Never submit without explicit user confirmation.
-- Never fabricate work authorization, salary history, degree, or experience.
-- Never store API keys or credentials in job metadata.
-- Record only application status and user-approved notes.
-
-## P2 Logitech Workday Taiwan - Sr. Mechancial Design Engineer
-
-- Score: 60
-- Grade: C
-- Research evidence: 0
-- Keywords: engineer, product, data
-- Compensation leverage: -
-- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
-
-### Apply Agent Guardrails
-- Never submit without explicit user confirmation.
-- Never fabricate work authorization, salary history, degree, or experience.
-- Never store API keys or credentials in job metadata.
-- Record only application status and user-approved notes.
-
-## P2 Money Forward - Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka
-
-- Score: 60
-- Grade: C
-- Research evidence: 0
+- Research evidence: 2
 - Keywords: React, engineer, product
-- Compensation leverage: low
+- Compensation leverage: medium
+- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
+
+### Apply Agent Guardrails
+- Never submit without explicit user confirmation.
+- Never fabricate work authorization, salary history, degree, or experience.
+- Never store API keys or credentials in job metadata.
+- Record only application status and user-approved notes.
+
+## P2 Money Forward - Security Specialist (Product Security), CISO Office, Tokyo
+
+- Score: 61
+- Grade: C
+- Research evidence: 2
+- Keywords: product, data, visualization
+- Compensation leverage: medium
 - Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
 ### Apply Agent Guardrails
@@ -633,126 +753,6 @@ Errors: 0
 - Research evidence: 0
 - Keywords: engineer, product, data
 - Compensation leverage: -
-- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
-
-### Apply Agent Guardrails
-- Never submit without explicit user confirmation.
-- Never fabricate work authorization, salary history, degree, or experience.
-- Never store API keys or credentials in job metadata.
-- Record only application status and user-approved notes.
-
-## P2 Logitech Workday Taiwan - Lead Mechanical Engineer
-
-- Score: 59
-- Grade: C
-- Research evidence: 0
-- Keywords: engineer, product, data
-- Compensation leverage: -
-- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
-
-### Apply Agent Guardrails
-- Never submit without explicit user confirmation.
-- Never fabricate work authorization, salary history, degree, or experience.
-- Never store API keys or credentials in job metadata.
-- Record only application status and user-approved notes.
-
-## P2 Money Forward - QA Engineer - SDET (Money Forward Kessai / Tokyo)
-
-- Score: 59
-- Grade: C
-- Research evidence: 0
-- Keywords: engineer, product, data
-- Compensation leverage: low
-- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
-
-### Apply Agent Guardrails
-- Never submit without explicit user confirmation.
-- Never fabricate work authorization, salary history, degree, or experience.
-- Never store API keys or credentials in job metadata.
-- Record only application status and user-approved notes.
-
-## P2 Money Forward - QA Engineer - SDET (Money Forward Kessai / Fukuoka)
-
-- Score: 59
-- Grade: C
-- Research evidence: 0
-- Keywords: engineer, product, data
-- Compensation leverage: low
-- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
-
-### Apply Agent Guardrails
-- Never submit without explicit user confirmation.
-- Never fabricate work authorization, salary history, degree, or experience.
-- Never store API keys or credentials in job metadata.
-- Record only application status and user-approved notes.
-
-## P2 Applied Materials Workday - Technical Product Support (TPS) Engineer II - (SCoE) (E2)
-
-- Score: 59
-- Grade: C
-- Research evidence: 0
-- Keywords: engineer, product, data
-- Compensation leverage: -
-- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
-
-### Apply Agent Guardrails
-- Never submit without explicit user confirmation.
-- Never fabricate work authorization, salary history, degree, or experience.
-- Never store API keys or credentials in job metadata.
-- Record only application status and user-approved notes.
-
-## P2 Applied Materials Workday - Technical Product Support (TPS) Engineer III (E3) - MDP
-
-- Score: 59
-- Grade: C
-- Research evidence: 0
-- Keywords: engineer, product, data
-- Compensation leverage: -
-- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
-
-### Apply Agent Guardrails
-- Never submit without explicit user confirmation.
-- Never fabricate work authorization, salary history, degree, or experience.
-- Never store API keys or credentials in job metadata.
-- Record only application status and user-approved notes.
-
-## P2 Money Forward - QA Engineer - SDET, Money Forward Kessai Ltd., Tokyo
-
-- Score: 59
-- Grade: C
-- Research evidence: 0
-- Keywords: engineer, product, data
-- Compensation leverage: low
-- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
-
-### Apply Agent Guardrails
-- Never submit without explicit user confirmation.
-- Never fabricate work authorization, salary history, degree, or experience.
-- Never store API keys or credentials in job metadata.
-- Record only application status and user-approved notes.
-
-## P2 Money Forward - Ruby on Rails engineer - Fukuoka
-
-- Score: 59
-- Grade: C
-- Research evidence: 0
-- Keywords: React, engineer, product
-- Compensation leverage: low
-- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
-
-### Apply Agent Guardrails
-- Never submit without explicit user confirmation.
-- Never fabricate work authorization, salary history, degree, or experience.
-- Never store API keys or credentials in job metadata.
-- Record only application status and user-approved notes.
-
-## P2 Money Forward - AI Engineer, ERP Cross-Functional Engineering Department, Tokyo
-
-- Score: 59
-- Grade: C
-- Research evidence: 0
-- Keywords: API, engineer, product
-- Compensation leverage: low
 - Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
 ### Apply Agent Guardrails

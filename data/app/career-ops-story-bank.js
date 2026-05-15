@@ -1,6 +1,6 @@
 window.CV_CAREER_OPS_STORY_BANK = {
   "source": "career-ops-story-bank",
-  "generatedAt": "2026-05-15T14:46:00.782Z",
+  "generatedAt": "2026-05-15T23:22:33.032Z",
   "storyBank": {
     "themes": [
       "frontend product execution",

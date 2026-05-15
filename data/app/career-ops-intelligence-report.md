@@ -1,11 +1,11 @@
 # Career Ops Intelligence Report
 
-Generated: 2026-05-15T14:45:54.931Z
+Generated: 2026-05-15T23:22:31.858Z
 
-- Active jobs: 276
-- Expired jobs: 276
-- Duplicate groups: 36
-- Jobs without enough description: 136
+- Active jobs: 291
+- Expired jobs: 283
+- Duplicate groups: 40
+- Jobs without enough description: 134
 - Rubric: Career Ops 10-Dimension Rubric
 
 ## Rubric Weights
@@ -21,42 +21,42 @@ Generated: 2026-05-15T14:45:54.931Z
 - applicationEffort: 0.08
 
 ## Top Skills
-- growth: 40
-- operations: 31
-- python: 30
-- aws: 24
-- gcp: 16
-- agents: 15
-- docker: 15
-- terraform: 15
-- go: 14
-- react: 14
-- deep learning: 13
-- typescript: 13
+- growth: 43
+- operations: 42
+- aws: 36
+- python: 34
+- docker: 24
+- terraform: 24
+- agents: 23
+- gcp: 23
+- react: 19
+- typescript: 17
+- go: 16
+- api: 15
 
 ## Missing High-Demand Skills
-- growth: 40
-- operations: 31
-- python: 30
-- aws: 24
-- gcp: 16
-- agents: 15
-- docker: 15
-- terraform: 15
-- go: 14
-- deep learning: 13
+- growth: 43
+- operations: 42
+- aws: 36
+- python: 34
+- docker: 24
+- terraform: 24
+- agents: 23
+- gcp: 23
+- typescript: 17
+- go: 16
 
 ## Role Families
-- Other: 142
-- Backend: 53
-- AI / Data: 32
-- Frontend: 24
-- Operations: 8
+- Other: 139
+- Backend: 61
+- AI / Data: 33
+- Frontend: 32
+- Operations: 9
 - Design: 6
-- Internship: 5
+- Internship: 6
 - Marketing: 3
-- Product: 2
 - Full Stack: 1
+- Product: 1
 
 ## Recommended Search Queries
 - Frontend Engineer
@@ -72,7 +72,7 @@ Generated: 2026-05-15T14:45:54.931Z
 - dashboard
 - growth
 - operations
-- python
 - aws
-- gcp
+- python
+- docker
 

@@ -1,6 +1,6 @@
 {
   "source": "career-ops-compensation",
-  "generatedAt": "2026-05-15T14:46:00.781Z",
+  "generatedAt": "2026-05-15T23:22:32.852Z",
   "plans": [
     {
       "jobKey": "url:https://japan-dev.com/jobs/ai-robot-association/ai-robot-association-airoa-design-engineer-l4xpri",
@@ -12,6 +12,7 @@
       "evidence": {
         "salaryMentions": [],
         "benefitSignals": [
+          "work-mode flexibility",
           "signing / relocation",
           "learning budget"
         ]
@@ -118,6 +119,65 @@
       "targetFrame": "Do not name a number first. Ask for the approved range, level, and total compensation structure before anchoring."
     },
     {
+      "jobKey": "url:https://www.tokyodev.com/companies/moneyforward/jobs/lead-backend-engineer-digital-bank",
+      "company": "Money Forward",
+      "title": "Lead Backend Engineer, Digital Bank",
+      "market": "global",
+      "inferredLevel": "senior-plus",
+      "leverage": "medium",
+      "evidence": {
+        "salaryMentions": [],
+        "benefitSignals": [
+          "equity",
+          "work-mode flexibility",
+          "signing / relocation",
+          "learning budget"
+        ]
+      },
+      "structure": {
+        "baseSalary": [
+          "Need verified market data or recruiter range before setting a numeric anchor."
+        ],
+        "bonus": "Ask whether there is annual bonus, performance bonus, or sign-on bonus.",
+        "equity": "Clarify grant size, vesting schedule, refreshers, and strike/RSU terms.",
+        "benefits": [
+          "Health / insurance coverage",
+          "Paid leave and holidays",
+          "Learning budget or certification support",
+          "Remote/hybrid setup, commute, or relocation support",
+          "Review cycle and promotion timeline"
+        ],
+        "nonCashLevers": [
+          "Title / level calibration",
+          "Start date flexibility",
+          "Remote days",
+          "Equipment budget",
+          "First review at 3 or 6 months",
+          "Conference / learning budget"
+        ]
+      },
+      "negotiationScript": {
+        "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Lead Backend Engineer, Digital Bank package, including base, bonus, equity, and review cycle?",
+        "valueAnchor": "Based on the scope of Lead Backend Engineer, Digital Bank and my fit around API, engineer, product, data, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
+        "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
+        "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
+        "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
+      },
+      "redLines": [
+        "Do not disclose current compensation unless legally appropriate and strategically useful.",
+        "Do not accept verbal-only compensation details; ask for written package components.",
+        "Do not negotiate before confirming level, scope, work mode, and review cycle.",
+        "Do not trade base salary away without valuing the replacement benefit."
+      ],
+      "nextActions": [
+        "Collect market compensation evidence before naming a number.",
+        "Ask recruiter for approved range and level.",
+        "Map the job scope to proof points in the tailored CV.",
+        "Prepare one counter package with base, bonus/equity, and non-cash levers."
+      ],
+      "targetFrame": "Do not name a number first. Ask for the approved range, level, and total compensation structure before anchoring."
+    },
+    {
       "jobKey": "url:https://japan-dev.com/jobs/ai-robot-association/ai-robot-association-airoa-full-stack-engineer-sliy8x",
       "company": "AI Robot Association (AIRoA)",
       "title": "Full Stack Engineer",
@@ -127,6 +187,8 @@
       "evidence": {
         "salaryMentions": [],
         "benefitSignals": [
+          "work-mode flexibility",
+          "signing / relocation",
           "learning budget"
         ]
       },
@@ -183,7 +245,6 @@
       "evidence": {
         "salaryMentions": [],
         "benefitSignals": [
-          "equity",
           "work-mode flexibility",
           "signing / relocation",
           "learning budget"
@@ -194,7 +255,7 @@
           "Need verified market data or recruiter range before setting a numeric anchor."
         ],
         "bonus": "Ask whether there is annual bonus, performance bonus, or sign-on bonus.",
-        "equity": "Clarify grant size, vesting schedule, refreshers, and strike/RSU terms.",
+        "equity": "Ask whether equity, RSU, options, or profit-sharing exists.",
         "benefits": [
           "Health / insurance coverage",
           "Paid leave and holidays",
@@ -242,6 +303,8 @@
       "evidence": {
         "salaryMentions": [],
         "benefitSignals": [
+          "work-mode flexibility",
+          "signing / relocation",
           "learning budget"
         ]
       },
@@ -298,6 +361,7 @@
       "evidence": {
         "salaryMentions": [],
         "benefitSignals": [
+          "work-mode flexibility",
           "signing / relocation",
           "learning budget"
         ]
@@ -346,6 +410,175 @@
       "targetFrame": "Do not name a number first. Ask for the approved range, level, and total compensation structure before anchoring."
     },
     {
+      "jobKey": "url:https://www.tokyodev.com/companies/moneyforward/jobs/information-systems-engineer-global-it-division-tokyo",
+      "company": "Money Forward",
+      "title": "Information Systems Engineer, Global IT Division, Tokyo",
+      "market": "global",
+      "inferredLevel": "senior-plus",
+      "leverage": "low",
+      "evidence": {
+        "salaryMentions": [],
+        "benefitSignals": [
+          "work-mode flexibility",
+          "signing / relocation"
+        ]
+      },
+      "structure": {
+        "baseSalary": [
+          "Need verified market data or recruiter range before setting a numeric anchor."
+        ],
+        "bonus": "Ask whether there is annual bonus, performance bonus, or sign-on bonus.",
+        "equity": "Ask whether equity, RSU, options, or profit-sharing exists.",
+        "benefits": [
+          "Health / insurance coverage",
+          "Paid leave and holidays",
+          "Learning budget or certification support",
+          "Remote/hybrid setup, commute, or relocation support",
+          "Review cycle and promotion timeline"
+        ],
+        "nonCashLevers": [
+          "Title / level calibration",
+          "Start date flexibility",
+          "Remote days",
+          "Equipment budget",
+          "First review at 3 or 6 months",
+          "Conference / learning budget"
+        ]
+      },
+      "negotiationScript": {
+        "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Information Systems Engineer, Global IT Division, Tokyo package, including base, bonus, equity, and review cycle?",
+        "valueAnchor": "Based on the scope of Information Systems Engineer, Global IT Division, Tokyo and my fit around API, engineer, dashboards, data, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
+        "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
+        "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
+        "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
+      },
+      "redLines": [
+        "Do not disclose current compensation unless legally appropriate and strategically useful.",
+        "Do not accept verbal-only compensation details; ask for written package components.",
+        "Do not negotiate before confirming level, scope, work mode, and review cycle.",
+        "Do not trade base salary away without valuing the replacement benefit."
+      ],
+      "nextActions": [
+        "Collect market compensation evidence before naming a number.",
+        "Ask recruiter for approved range and level.",
+        "Map the job scope to proof points in the tailored CV.",
+        "Prepare one counter package with base, bonus/equity, and non-cash levers."
+      ],
+      "targetFrame": "Do not name a number first. Ask for the approved range, level, and total compensation structure before anchoring."
+    },
+    {
+      "jobKey": "url:https://www.tokyodev.com/companies/moneyforward/jobs/qa-engineer-money-forward-cloud-fukuoka",
+      "company": "Money Forward",
+      "title": "QA Engineer, Money Forward Cloud, Fukuoka",
+      "market": "global",
+      "inferredLevel": "senior-plus",
+      "leverage": "low",
+      "evidence": {
+        "salaryMentions": [],
+        "benefitSignals": [
+          "work-mode flexibility",
+          "signing / relocation",
+          "learning budget"
+        ]
+      },
+      "structure": {
+        "baseSalary": [
+          "Need verified market data or recruiter range before setting a numeric anchor."
+        ],
+        "bonus": "Ask whether there is annual bonus, performance bonus, or sign-on bonus.",
+        "equity": "Ask whether equity, RSU, options, or profit-sharing exists.",
+        "benefits": [
+          "Health / insurance coverage",
+          "Paid leave and holidays",
+          "Learning budget or certification support",
+          "Remote/hybrid setup, commute, or relocation support",
+          "Review cycle and promotion timeline"
+        ],
+        "nonCashLevers": [
+          "Title / level calibration",
+          "Start date flexibility",
+          "Remote days",
+          "Equipment budget",
+          "First review at 3 or 6 months",
+          "Conference / learning budget"
+        ]
+      },
+      "negotiationScript": {
+        "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the QA Engineer, Money Forward Cloud, Fukuoka package, including base, bonus, equity, and review cycle?",
+        "valueAnchor": "Based on the scope of QA Engineer, Money Forward Cloud, Fukuoka and my fit around React, API, engineer, product, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
+        "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
+        "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
+        "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
+      },
+      "redLines": [
+        "Do not disclose current compensation unless legally appropriate and strategically useful.",
+        "Do not accept verbal-only compensation details; ask for written package components.",
+        "Do not negotiate before confirming level, scope, work mode, and review cycle.",
+        "Do not trade base salary away without valuing the replacement benefit."
+      ],
+      "nextActions": [
+        "Collect market compensation evidence before naming a number.",
+        "Ask recruiter for approved range and level.",
+        "Map the job scope to proof points in the tailored CV.",
+        "Prepare one counter package with base, bonus/equity, and non-cash levers."
+      ],
+      "targetFrame": "Do not name a number first. Ask for the approved range, level, and total compensation structure before anchoring."
+    },
+    {
+      "jobKey": "url:https://www.tokyodev.com/companies/tokuty/jobs/full-stack-engineer",
+      "company": "Tokuty",
+      "title": "Full Stack Engineer",
+      "market": "global",
+      "inferredLevel": "intern",
+      "leverage": "low",
+      "evidence": {
+        "salaryMentions": [],
+        "benefitSignals": []
+      },
+      "structure": {
+        "baseSalary": [
+          "Need verified market data or recruiter range before setting a numeric anchor."
+        ],
+        "bonus": "Ask whether there is annual bonus, performance bonus, or sign-on bonus.",
+        "equity": "Ask whether equity, RSU, options, or profit-sharing exists.",
+        "benefits": [
+          "Health / insurance coverage",
+          "Paid leave and holidays",
+          "Learning budget or certification support",
+          "Remote/hybrid setup, commute, or relocation support",
+          "Review cycle and promotion timeline"
+        ],
+        "nonCashLevers": [
+          "Title / level calibration",
+          "Start date flexibility",
+          "Remote days",
+          "Equipment budget",
+          "First review at 3 or 6 months",
+          "Conference / learning budget"
+        ]
+      },
+      "negotiationScript": {
+        "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Full Stack Engineer package, including base, bonus, equity, and review cycle?",
+        "valueAnchor": "Based on the scope of Full Stack Engineer and my fit around React, design system, engineer, product, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
+        "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
+        "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
+        "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
+      },
+      "redLines": [
+        "Do not disclose current compensation unless legally appropriate and strategically useful.",
+        "Do not accept verbal-only compensation details; ask for written package components.",
+        "Do not negotiate before confirming level, scope, work mode, and review cycle.",
+        "Do not trade base salary away without valuing the replacement benefit."
+      ],
+      "nextActions": [
+        "Collect market compensation evidence before naming a number.",
+        "Ask recruiter for approved range and level.",
+        "Map the job scope to proof points in the tailored CV.",
+        "Prepare one counter package with base, bonus/equity, and non-cash levers."
+      ],
+      "targetFrame": "Do not name a number first. Ask for the approved range, level, and total compensation structure before anchoring."
+    },
+    {
       "jobKey": "url:https://cardlytics.wd5.myworkdayjobs.com/cardlyticsexternalcareersite/job/taipei-city/senior-software-engineer_jr100384",
       "company": "Cardlytics Workday Taiwan",
       "title": "Senior Software Engineer",
@@ -357,8 +590,7 @@
         "benefitSignals": [
           "equity",
           "work-mode flexibility",
-          "signing / relocation",
-          "learning budget"
+          "signing / relocation"
         ]
       },
       "structure": {
@@ -526,7 +758,9 @@
       "evidence": {
         "salaryMentions": [],
         "benefitSignals": [
-          "equity"
+          "equity",
+          "work-mode flexibility",
+          "signing / relocation"
         ]
       },
       "structure": {
@@ -637,7 +871,10 @@
       "leverage": "low",
       "evidence": {
         "salaryMentions": [],
-        "benefitSignals": []
+        "benefitSignals": [
+          "work-mode flexibility",
+          "signing / relocation"
+        ]
       },
       "structure": {
         "baseSalary": [
@@ -749,7 +986,11 @@
       "leverage": "low",
       "evidence": {
         "salaryMentions": [],
-        "benefitSignals": []
+        "benefitSignals": [
+          "work-mode flexibility",
+          "signing / relocation",
+          "learning budget"
+        ]
       },
       "structure": {
         "baseSalary": [
@@ -795,6 +1036,63 @@
       "targetFrame": "Do not name a number first. Ask for the approved range, level, and total compensation structure before anchoring."
     },
     {
+      "jobKey": "url:https://www.tokyodev.com/companies/moneyforward/jobs/infrastructure-engineer-sre-aws",
+      "company": "Money Forward",
+      "title": "Infrastructure Engineer (SRE-AWS)",
+      "market": "global",
+      "inferredLevel": "mid",
+      "leverage": "low",
+      "evidence": {
+        "salaryMentions": [],
+        "benefitSignals": [
+          "work-mode flexibility",
+          "signing / relocation"
+        ]
+      },
+      "structure": {
+        "baseSalary": [
+          "Need verified market data or recruiter range before setting a numeric anchor."
+        ],
+        "bonus": "Ask whether there is annual bonus, performance bonus, or sign-on bonus.",
+        "equity": "Ask whether equity, RSU, options, or profit-sharing exists.",
+        "benefits": [
+          "Health / insurance coverage",
+          "Paid leave and holidays",
+          "Learning budget or certification support",
+          "Remote/hybrid setup, commute, or relocation support",
+          "Review cycle and promotion timeline"
+        ],
+        "nonCashLevers": [
+          "Title / level calibration",
+          "Start date flexibility",
+          "Remote days",
+          "Equipment budget",
+          "First review at 3 or 6 months",
+          "Conference / learning budget"
+        ]
+      },
+      "negotiationScript": {
+        "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Infrastructure Engineer (SRE-AWS) package, including base, bonus, equity, and review cycle?",
+        "valueAnchor": "Based on the scope of Infrastructure Engineer (SRE-AWS) and my fit around React, engineer, product, data, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
+        "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
+        "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
+        "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
+      },
+      "redLines": [
+        "Do not disclose current compensation unless legally appropriate and strategically useful.",
+        "Do not accept verbal-only compensation details; ask for written package components.",
+        "Do not negotiate before confirming level, scope, work mode, and review cycle.",
+        "Do not trade base salary away without valuing the replacement benefit."
+      ],
+      "nextActions": [
+        "Collect market compensation evidence before naming a number.",
+        "Ask recruiter for approved range and level.",
+        "Map the job scope to proof points in the tailored CV.",
+        "Prepare one counter package with base, bonus/equity, and non-cash levers."
+      ],
+      "targetFrame": "Do not name a number first. Ask for the approved range, level, and total compensation structure before anchoring."
+    },
+    {
       "jobKey": "url:https://jobs.lever.co/gogolook/903b657d-9530-4f59-9dea-e9075163f3e6",
       "company": "Gogolook",
       "title": "US Market Intern (ScamAdviser)",
@@ -809,7 +1107,6 @@
         "benefitSignals": [
           "equity",
           "work-mode flexibility",
-          "signing / relocation",
           "learning budget"
         ]
       },
@@ -856,294 +1153,6 @@
         "Prepare one counter package with base, bonus/equity, and non-cash levers."
       ],
       "targetFrame": "Use posted compensation as the floor for scope calibration; anchor near the upper third only after confirming level and scope."
-    },
-    {
-      "jobKey": "url:https://japan-dev.com/jobs/caddi/caddi-senior-sre-global-product-team-1unsmw",
-      "company": "CADDi",
-      "title": "Senior SRE, Global Product Team",
-      "market": "global",
-      "inferredLevel": "intern",
-      "leverage": "low",
-      "evidence": {
-        "salaryMentions": [],
-        "benefitSignals": [
-          "equity",
-          "signing / relocation",
-          "learning budget"
-        ]
-      },
-      "structure": {
-        "baseSalary": [
-          "Need verified market data or recruiter range before setting a numeric anchor."
-        ],
-        "bonus": "Ask whether there is annual bonus, performance bonus, or sign-on bonus.",
-        "equity": "Clarify grant size, vesting schedule, refreshers, and strike/RSU terms.",
-        "benefits": [
-          "Health / insurance coverage",
-          "Paid leave and holidays",
-          "Learning budget or certification support",
-          "Remote/hybrid setup, commute, or relocation support",
-          "Review cycle and promotion timeline"
-        ],
-        "nonCashLevers": [
-          "Title / level calibration",
-          "Start date flexibility",
-          "Remote days",
-          "Equipment budget",
-          "First review at 3 or 6 months",
-          "Conference / learning budget"
-        ]
-      },
-      "negotiationScript": {
-        "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Senior SRE, Global Product Team package, including base, bonus, equity, and review cycle?",
-        "valueAnchor": "Based on the scope of Senior SRE, Global Product Team and my fit around React, API, product, data, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
-        "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
-        "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
-        "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
-      },
-      "redLines": [
-        "Do not disclose current compensation unless legally appropriate and strategically useful.",
-        "Do not accept verbal-only compensation details; ask for written package components.",
-        "Do not negotiate before confirming level, scope, work mode, and review cycle.",
-        "Do not trade base salary away without valuing the replacement benefit."
-      ],
-      "nextActions": [
-        "Collect market compensation evidence before naming a number.",
-        "Ask recruiter for approved range and level.",
-        "Map the job scope to proof points in the tailored CV.",
-        "Prepare one counter package with base, bonus/equity, and non-cash levers."
-      ],
-      "targetFrame": "Do not name a number first. Ask for the approved range, level, and total compensation structure before anchoring."
-    },
-    {
-      "jobKey": "url:https://japan-dev.com/jobs/pubtex/pubtex-data-engineer-ai-platformdata-infrastructure-utur9e",
-      "company": "PubteX",
-      "title": "Data Engineer (AI Platform/Data Infrastructure)",
-      "market": "global",
-      "inferredLevel": "senior-plus",
-      "leverage": "low",
-      "evidence": {
-        "salaryMentions": [],
-        "benefitSignals": [
-          "equity",
-          "work-mode flexibility",
-          "signing / relocation",
-          "learning budget"
-        ]
-      },
-      "structure": {
-        "baseSalary": [
-          "Need verified market data or recruiter range before setting a numeric anchor."
-        ],
-        "bonus": "Ask whether there is annual bonus, performance bonus, or sign-on bonus.",
-        "equity": "Clarify grant size, vesting schedule, refreshers, and strike/RSU terms.",
-        "benefits": [
-          "Health / insurance coverage",
-          "Paid leave and holidays",
-          "Learning budget or certification support",
-          "Remote/hybrid setup, commute, or relocation support",
-          "Review cycle and promotion timeline"
-        ],
-        "nonCashLevers": [
-          "Title / level calibration",
-          "Start date flexibility",
-          "Remote days",
-          "Equipment budget",
-          "First review at 3 or 6 months",
-          "Conference / learning budget"
-        ]
-      },
-      "negotiationScript": {
-        "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Data Engineer (AI Platform/Data Infrastructure) package, including base, bonus, equity, and review cycle?",
-        "valueAnchor": "Based on the scope of Data Engineer (AI Platform/Data Infrastructure) and my fit around React, remote, engineer, data, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
-        "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
-        "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
-        "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
-      },
-      "redLines": [
-        "Do not disclose current compensation unless legally appropriate and strategically useful.",
-        "Do not accept verbal-only compensation details; ask for written package components.",
-        "Do not negotiate before confirming level, scope, work mode, and review cycle.",
-        "Do not trade base salary away without valuing the replacement benefit."
-      ],
-      "nextActions": [
-        "Collect market compensation evidence before naming a number.",
-        "Ask recruiter for approved range and level.",
-        "Map the job scope to proof points in the tailored CV.",
-        "Prepare one counter package with base, bonus/equity, and non-cash levers."
-      ],
-      "targetFrame": "Do not name a number first. Ask for the approved range, level, and total compensation structure before anchoring."
-    },
-    {
-      "jobKey": "url:https://www.tokyodev.com/companies/moneyforward/jobs/senior-software-engineer-money-forward-cloud-fukuoka-af677db1-c2cb-4d86-886c-cd77430ad611",
-      "company": "Money Forward",
-      "title": "Senior Software Engineer, Money Forward Cloud, Fukuoka",
-      "market": "global",
-      "inferredLevel": "senior-plus",
-      "leverage": "low",
-      "evidence": {
-        "salaryMentions": [],
-        "benefitSignals": [
-          "signing / relocation",
-          "learning budget"
-        ]
-      },
-      "structure": {
-        "baseSalary": [
-          "Need verified market data or recruiter range before setting a numeric anchor."
-        ],
-        "bonus": "Ask whether there is annual bonus, performance bonus, or sign-on bonus.",
-        "equity": "Ask whether equity, RSU, options, or profit-sharing exists.",
-        "benefits": [
-          "Health / insurance coverage",
-          "Paid leave and holidays",
-          "Learning budget or certification support",
-          "Remote/hybrid setup, commute, or relocation support",
-          "Review cycle and promotion timeline"
-        ],
-        "nonCashLevers": [
-          "Title / level calibration",
-          "Start date flexibility",
-          "Remote days",
-          "Equipment budget",
-          "First review at 3 or 6 months",
-          "Conference / learning budget"
-        ]
-      },
-      "negotiationScript": {
-        "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Senior Software Engineer, Money Forward Cloud, Fukuoka package, including base, bonus, equity, and review cycle?",
-        "valueAnchor": "Based on the scope of Senior Software Engineer, Money Forward Cloud, Fukuoka and my fit around JavaScript, React, CSS, engineer, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
-        "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
-        "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
-        "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
-      },
-      "redLines": [
-        "Do not disclose current compensation unless legally appropriate and strategically useful.",
-        "Do not accept verbal-only compensation details; ask for written package components.",
-        "Do not negotiate before confirming level, scope, work mode, and review cycle.",
-        "Do not trade base salary away without valuing the replacement benefit."
-      ],
-      "nextActions": [
-        "Collect market compensation evidence before naming a number.",
-        "Ask recruiter for approved range and level.",
-        "Map the job scope to proof points in the tailored CV.",
-        "Prepare one counter package with base, bonus/equity, and non-cash levers."
-      ],
-      "targetFrame": "Do not name a number first. Ask for the approved range, level, and total compensation structure before anchoring."
-    },
-    {
-      "jobKey": "url:https://intel.wd1.myworkdayjobs.com/external/job/taiwan-taipei/intel-foundry-advanced-device-development-engineer_jr0281657",
-      "company": "Intel Workday Taiwan",
-      "title": "Intel Foundry Advanced Device Development Engineer",
-      "market": "tw",
-      "inferredLevel": "intern",
-      "leverage": "low",
-      "evidence": {
-        "salaryMentions": [],
-        "benefitSignals": [
-          "signing / relocation",
-          "learning budget"
-        ]
-      },
-      "structure": {
-        "baseSalary": [
-          "Need verified market data or recruiter range before setting a numeric anchor."
-        ],
-        "bonus": "Ask whether there is annual bonus, performance bonus, or sign-on bonus.",
-        "equity": "Ask whether equity, RSU, options, or profit-sharing exists.",
-        "benefits": [
-          "Health / insurance coverage",
-          "Paid leave and holidays",
-          "Learning budget or certification support",
-          "Remote/hybrid setup, commute, or relocation support",
-          "Review cycle and promotion timeline"
-        ],
-        "nonCashLevers": [
-          "Title / level calibration",
-          "Start date flexibility",
-          "Remote days",
-          "Equipment budget",
-          "First review at 3 or 6 months",
-          "Conference / learning budget"
-        ]
-      },
-      "negotiationScript": {
-        "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Intel Foundry Advanced Device Development Engineer package, including base, bonus, equity, and review cycle?",
-        "valueAnchor": "Based on the scope of Intel Foundry Advanced Device Development Engineer and my fit around Analytics, engineer, product, data, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
-        "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
-        "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
-        "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
-      },
-      "redLines": [
-        "Do not disclose current compensation unless legally appropriate and strategically useful.",
-        "Do not accept verbal-only compensation details; ask for written package components.",
-        "Do not negotiate before confirming level, scope, work mode, and review cycle.",
-        "Do not trade base salary away without valuing the replacement benefit."
-      ],
-      "nextActions": [
-        "Collect market compensation evidence before naming a number.",
-        "Ask recruiter for approved range and level.",
-        "Map the job scope to proof points in the tailored CV.",
-        "Prepare one counter package with base, bonus/equity, and non-cash levers."
-      ],
-      "targetFrame": "Do not name a number first. Ask for the approved range, level, and total compensation structure before anchoring."
-    },
-    {
-      "jobKey": "url:https://www.tokyodev.com/companies/paypay/jobs/automation-qa-engineer",
-      "company": "PayPay",
-      "title": "Automation QA Engineer",
-      "market": "global",
-      "inferredLevel": "senior-plus",
-      "leverage": "low",
-      "evidence": {
-        "salaryMentions": [],
-        "benefitSignals": [
-          "signing / relocation",
-          "learning budget"
-        ]
-      },
-      "structure": {
-        "baseSalary": [
-          "Need verified market data or recruiter range before setting a numeric anchor."
-        ],
-        "bonus": "Ask whether there is annual bonus, performance bonus, or sign-on bonus.",
-        "equity": "Ask whether equity, RSU, options, or profit-sharing exists.",
-        "benefits": [
-          "Health / insurance coverage",
-          "Paid leave and holidays",
-          "Learning budget or certification support",
-          "Remote/hybrid setup, commute, or relocation support",
-          "Review cycle and promotion timeline"
-        ],
-        "nonCashLevers": [
-          "Title / level calibration",
-          "Start date flexibility",
-          "Remote days",
-          "Equipment budget",
-          "First review at 3 or 6 months",
-          "Conference / learning budget"
-        ]
-      },
-      "negotiationScript": {
-        "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Automation QA Engineer package, including base, bonus, equity, and review cycle?",
-        "valueAnchor": "Based on the scope of Automation QA Engineer and my fit around API, engineer, product, data, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
-        "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
-        "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
-        "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
-      },
-      "redLines": [
-        "Do not disclose current compensation unless legally appropriate and strategically useful.",
-        "Do not accept verbal-only compensation details; ask for written package components.",
-        "Do not negotiate before confirming level, scope, work mode, and review cycle.",
-        "Do not trade base salary away without valuing the replacement benefit."
-      ],
-      "nextActions": [
-        "Collect market compensation evidence before naming a number.",
-        "Ask recruiter for approved range and level.",
-        "Map the job scope to proof points in the tailored CV.",
-        "Prepare one counter package with base, bonus/equity, and non-cash levers."
-      ],
-      "targetFrame": "Do not name a number first. Ask for the approved range, level, and total compensation structure before anchoring."
     }
   ]
 }

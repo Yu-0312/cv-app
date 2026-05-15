@@ -1,31 +1,31 @@
 # Career Ops Learning Report
 
-- Generated: 2026-05-15T14:46:00.783Z
-- Active jobs: 276
-- Positive signals: 102
+- Generated: 2026-05-15T23:22:33.607Z
+- Active jobs: 291
+- Positive signals: 82
 - Negative signals: 13
 - Source coverage: 93 sources / 651 queries / markets tw, cn, jp, kr, sg, global
 
 ## Preferred Skills
 
-- engineer: 679.9
-- data: 329.9
-- product: 302
-- growth: 172.9
-- operations: 125.7
-- aws: 116.1
-- python: 114.3
-- senior: 92.5
-- we: 86.2
-- design: 83
-- gcp: 81.1
-- solutions: 79.7
-- description: 77.9
-- react: 74.6
-- React: 74.6
-- docker: 73.6
-- terraform: 72.3
-- leader: 70.1
+- engineer: 485
+- product: 253.7
+- data: 242.3
+- growth: 128.5
+- aws: 115.2
+- operations: 113.2
+- python: 84.4
+- terraform: 78.3
+- docker: 78.1
+- gcp: 77.8
+- react: 75.1
+- React: 75.1
+- forward: 66.1
+- money: 66.1
+- agents: 62.7
+- typescript: 61.7
+- we: 59.8
+- api: 56.5
 
 ## Avoid Signals
 
@@ -46,22 +46,22 @@
 
 ## Preferred Companies
 
-- Money Forward: 57.6
-- Micron Workday: 49.3
-- NVIDIA Workday: 48.7
-- Intel Workday Taiwan: 47.1
-- Logitech Workday Taiwan: 33.4
-- AI Robot Association (AIRoA): 24.1
-- Applied Materials Workday: 20.8
-- Shizuku AI: 15.5
+- Money Forward: 75.2
+- Intel Workday Taiwan: 26.9
+- Logitech Workday Taiwan: 24.1
+- NVIDIA Workday: 17.8
+- AI Robot Association (AIRoA): 17.4
+- Micron Workday: 14.7
 - Geniee: 11.2
-- Metanomaly: 10.9
-- PayPay: 10.2
-- Mico: 8.4
+- Shizuku AI: 9.5
+- PayPay: 9.3
+- Applied Materials Workday: 9.1
+- Gogolook: 9.1
+- Metanomaly: 8.9
 
 ## Next Strategy
 
-- Expand searches around engineer, data, product, growth, operations.
-- Prioritize sources like tracked-company, tw, flex-job-board, jp.
+- Expand searches around engineer, product, data, growth, aws.
+- Prioritize sources like flex-job-board, jp, tracked-company, tw.
 - Down-rank roles mentioning nvidia, 价格, 参数, 图片, 图片及用户评价等详细信息.
 - Refresh this learning layer after each batch evaluation or feedback session.

@@ -1,39 +1,39 @@
 # Career Ops Source Quality
 
-- Generated: 2026-05-15T14:45:54.167Z
+- Generated: 2026-05-15T23:22:30.550Z
 - Mode: filter
 - Minimum score: 45
-- Input active jobs: 387
-- Kept active jobs: 276
-- Filtered active jobs: 111
-- Quality tiers: high 229 / medium 41 / low 6
+- Input active jobs: 397
+- Kept active jobs: 291
+- Filtered active jobs: 106
+- Quality tiers: high 245 / medium 41 / low 5
 
 ## Filtered Samples
 
-- 25 Grab - Lead Data Engineer, GrabX (Experimentation & Config Management) (thin-description, outside-target-market, low-priority-region)
-- 25 Grab - Senior Site Reliability Engineer (thin-description, outside-target-market, low-priority-region)
-- 25 Grab - Intern, AI Engineer (thin-description, outside-target-market, low-priority-region)
-- 25 Grab - Software Engineer, Mobile (iOS) (thin-description, outside-target-market, low-priority-region)
-- 25 Grab - Software Engineer, Mobile (Android) (thin-description, outside-target-market, low-priority-region)
-- 25 Grab - Software Engineer, Backend (thin-description, outside-target-market, low-priority-region)
-- 25 Grab - Lead Product Manager (thin-description, outside-target-market, low-priority-region)
-- 25 Grab - Intern, Software Engineer Backend (thin-description, outside-target-market, low-priority-region)
-- 25 Grab - Senior Software Engineer in Test (thin-description, outside-target-market, low-priority-region)
-- 25 Grab - Senior Data Engineer, GrabX (Experimentation & Config Management) (thin-description, outside-target-market, low-priority-region)
-- 25 Grab - Senior Data Engineer, GrabX (Experimentation & Config Management) (thin-description, outside-target-market, low-priority-region)
-- 25 Grab - Lead Data Engineer, GrabX (Experimentation & Config Management) (thin-description, outside-target-market, low-priority-region)
+- 43 Samsung Workday - Senior Manager, Technical Operations (outside-target-market, low-priority-region)
+- 43 Samsung Workday - Senior Software Engineer (outside-target-market, low-priority-region)
+- 43 Samsung Workday - Engineer III, Software Process Engineering (outside-target-market, low-priority-region)
+- 43 Samsung Workday - Engineer, Software Quality Engineering (outside-target-market, low-priority-region)
+- 43 Samsung Workday - Software Engineer (outside-target-market, low-priority-region)
+- 43 Samsung Workday - PCS Equipment Engineer (outside-target-market, low-priority-region)
+- 43 Samsung Workday - PCS Pump Engineer (outside-target-market, low-priority-region)
+- 43 Samsung Workday - PCS Equipment Engineer (outside-target-market, low-priority-region)
+- 25 Samsung Workday - PCS Equipment Shift Engineer (thin-description, outside-target-market, low-priority-region)
+- 25 Samsung Workday - Photo Quality Engineer (thin-description, outside-target-market, low-priority-region)
+- 25 Samsung Workday - HVAC Engineer (thin-description, outside-target-market, low-priority-region)
+- 25 Samsung Workday - DFx Engineer (thin-description, outside-target-market, low-priority-region)
 
 ## Kept Samples
 
-- 88 Gogolook - AI Product Intern (B2C & User Growth) - ScamAdviser
-- 88 Gogolook - Content Marketing Intern 內容行銷實習生 (Roo)
-- 88 Gogolook - Design Assistant 設計助理 (Roo)
-- 100 Gogolook - US Market Intern (ScamAdviser)
-- 100 Gogolook - Visual Design Intern 品牌視覺設計實習生
-- 88 Gogolook - 社群行銷實習生 (Roo)
-- 52 Unknown - Corporate Distinguished Engineer - Sony Group Portal
-- 82 Grab - Lead Localization Engineer (L4 Autonomous Systems)
-- 82 Grab - Lead Data Scientist (Dispatch)
-- 82 Grab - Senior Software Engineer, Perception (Robotics)
-- 82 Grab - Senior Software Engineer, Decision & Planning Algorithm (Robotics)
-- 82 Grab - Lead Data Analyst
+- 70 - Delta - Products - Power and System - Delta
+- 70 - Delta - Products - Building Automation - Delta
+- 70 - Delta - Products - Data Center - Delta
+- 70 Trend Micro - Trend Vision One™ - AI-powered Enterprise Cybersecurity Platform
+- 88 Trend Micro - Zero Trust Secure Access | Trend Micro Vision One
+- 70 Trend Micro - Trend Micro
+- 52 Unknown - Retarget high-value users and maximize ROAS with AI | Appier
+- 70 Unknown - AIXPERT - Campaign Automation Cloud | Appier
+- 70 Unknown - AIQUA - AI Personalization Cloud｜Appier
+- 52 Unknown - AIXON - Intelligent Data Augmentation Platform ｜Appier
+- 52 Unknown - AIRIS - Next Generation AI-powered Customer Data Platform｜Appier
+- 70 Unknown - AIRIS + AIQUA - Grow smarter and faster with AI-powered personalization | Appier

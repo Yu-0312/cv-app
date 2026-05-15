@@ -1,6 +1,6 @@
 window.CV_CAREER_OPS_APPLICATION_KIT = {
   "source": "career-ops-application-kit",
-  "generatedAt": "2026-05-15T14:46:00.774Z",
+  "generatedAt": "2026-05-15T23:22:32.081Z",
   "profileRole": "Frontend Engineer",
   "playbooks": [
     {
@@ -62,6 +62,41 @@ window.CV_CAREER_OPS_APPLICATION_KIT = {
       "interviewPrep": [
         "Prepare a 60-second story for why Geniee and why JAPAN AI - Product Manager, AI SaaS.",
         "Prepare evidence for: React, API, engineer, product, data.",
+        "Prepare one STAR story about execution under ambiguity.",
+        "Prepare one STAR story about collaboration and tradeoff decisions.",
+        "Prepare questions about team priorities, success metrics, and hiring timeline."
+      ],
+      "negotiationPrep": [
+        "Wait for a clear offer before anchoring compensation.",
+        "Ask for total compensation breakdown, work mode, title, level, review cycle, and start date.",
+        "Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.",
+        "Use competing priorities and role fit, not personal need, as the negotiation frame."
+      ]
+    },
+    {
+      "jobKey": "url:https://www.tokyodev.com/companies/moneyforward/jobs/lead-backend-engineer-digital-bank",
+      "title": "Lead Backend Engineer, Digital Bank",
+      "company": "Money Forward",
+      "score": "74/B",
+      "priority": "P1",
+      "applyChecklist": [
+        "Open the source URL and confirm the role is still active.",
+        "Generate or refresh the tailored ATS PDF from this job.",
+        "Mirror these keywords honestly: API, engineer, product, data, JavaScript, React, CSS, Accessibility, Analytics",
+        "Do not overclaim missing areas: JavaScript, React, CSS, Accessibility, Analytics, remote",
+        "Log status, recruiter/contact, and next follow-up date in the tracker."
+      ],
+      "outreachEmail": {
+        "subject": "Lead Backend Engineer, Digital Bank application - Money Forward",
+        "body": "Hi Money Forward team,\n\nI am Candidate, and I am interested in the Lead Backend Engineer, Digital Bank role. My background is focused on Frontend Engineer with hands-on work in JavaScript, React, CSS, Accessibility, Analytics.\n\nThe role stood out because it maps closely to my experience with API, engineer, product, data.\n\nI would appreciate the chance to share how my experience can support the team. Thank you for your time.\n\nBest,\nCandidate"
+      },
+      "followUp": {
+        "timing": "3-5 business days after applying or the last recruiter interaction.",
+        "body": "Hi Money Forward team,\n\nI wanted to follow up on my application for the Lead Backend Engineer, Digital Bank role. I remain interested and would be glad to provide any additional context about my background.\n\nThank you again for your time.\n\nBest,\nCandidate"
+      },
+      "interviewPrep": [
+        "Prepare a 60-second story for why Money Forward and why Lead Backend Engineer, Digital Bank.",
+        "Prepare evidence for: API, engineer, product, data.",
         "Prepare one STAR story about execution under ambiguity.",
         "Prepare one STAR story about collaboration and tradeoff decisions.",
         "Prepare questions about team priorities, success metrics, and hiring timeline."
@@ -214,6 +249,111 @@ window.CV_CAREER_OPS_APPLICATION_KIT = {
       ]
     },
     {
+      "jobKey": "url:https://www.tokyodev.com/companies/moneyforward/jobs/information-systems-engineer-global-it-division-tokyo",
+      "title": "Information Systems Engineer, Global IT Division, Tokyo",
+      "company": "Money Forward",
+      "score": "70/C",
+      "priority": "P1",
+      "applyChecklist": [
+        "Open the source URL and confirm the role is still active.",
+        "Generate or refresh the tailored ATS PDF from this job.",
+        "Mirror these keywords honestly: API, engineer, dashboards, data, visualization, JavaScript, React, CSS, Accessibility, Analytics",
+        "Do not overclaim missing areas: JavaScript, React, CSS, Accessibility, Analytics, remote",
+        "Log status, recruiter/contact, and next follow-up date in the tracker."
+      ],
+      "outreachEmail": {
+        "subject": "Information Systems Engineer, Global IT Division, Tokyo application - Money Forward",
+        "body": "Hi Money Forward team,\n\nI am Candidate, and I am interested in the Information Systems Engineer, Global IT Division, Tokyo role. My background is focused on Frontend Engineer with hands-on work in JavaScript, React, CSS, Accessibility, Analytics.\n\nThe role stood out because it maps closely to my experience with API, engineer, dashboards, data, visualization.\n\nI would appreciate the chance to share how my experience can support the team. Thank you for your time.\n\nBest,\nCandidate"
+      },
+      "followUp": {
+        "timing": "3-5 business days after applying or the last recruiter interaction.",
+        "body": "Hi Money Forward team,\n\nI wanted to follow up on my application for the Information Systems Engineer, Global IT Division, Tokyo role. I remain interested and would be glad to provide any additional context about my background.\n\nThank you again for your time.\n\nBest,\nCandidate"
+      },
+      "interviewPrep": [
+        "Prepare a 60-second story for why Money Forward and why Information Systems Engineer, Global IT Division, Tokyo.",
+        "Prepare evidence for: API, engineer, dashboards, data, visualization.",
+        "Prepare one STAR story about execution under ambiguity.",
+        "Prepare one STAR story about collaboration and tradeoff decisions.",
+        "Prepare questions about team priorities, success metrics, and hiring timeline."
+      ],
+      "negotiationPrep": [
+        "Wait for a clear offer before anchoring compensation.",
+        "Ask for total compensation breakdown, work mode, title, level, review cycle, and start date.",
+        "Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.",
+        "Use competing priorities and role fit, not personal need, as the negotiation frame."
+      ]
+    },
+    {
+      "jobKey": "url:https://www.tokyodev.com/companies/moneyforward/jobs/qa-engineer-money-forward-cloud-fukuoka",
+      "title": "QA Engineer, Money Forward Cloud, Fukuoka",
+      "company": "Money Forward",
+      "score": "70/C",
+      "priority": "P1",
+      "applyChecklist": [
+        "Open the source URL and confirm the role is still active.",
+        "Generate or refresh the tailored ATS PDF from this job.",
+        "Mirror these keywords honestly: React, API, engineer, product, data, JavaScript, CSS, Accessibility, Analytics",
+        "Do not overclaim missing areas: JavaScript, CSS, Accessibility, Analytics, remote, dashboard",
+        "Log status, recruiter/contact, and next follow-up date in the tracker."
+      ],
+      "outreachEmail": {
+        "subject": "QA Engineer, Money Forward Cloud, Fukuoka application - Money Forward",
+        "body": "Hi Money Forward team,\n\nI am Candidate, and I am interested in the QA Engineer, Money Forward Cloud, Fukuoka role. My background is focused on Frontend Engineer with hands-on work in JavaScript, React, CSS, Accessibility, Analytics.\n\nThe role stood out because it maps closely to my experience with React, API, engineer, product, data.\n\nI would appreciate the chance to share how my experience can support the team. Thank you for your time.\n\nBest,\nCandidate"
+      },
+      "followUp": {
+        "timing": "3-5 business days after applying or the last recruiter interaction.",
+        "body": "Hi Money Forward team,\n\nI wanted to follow up on my application for the QA Engineer, Money Forward Cloud, Fukuoka role. I remain interested and would be glad to provide any additional context about my background.\n\nThank you again for your time.\n\nBest,\nCandidate"
+      },
+      "interviewPrep": [
+        "Prepare a 60-second story for why Money Forward and why QA Engineer, Money Forward Cloud, Fukuoka.",
+        "Prepare evidence for: React, API, engineer, product, data.",
+        "Prepare one STAR story about execution under ambiguity.",
+        "Prepare one STAR story about collaboration and tradeoff decisions.",
+        "Prepare questions about team priorities, success metrics, and hiring timeline."
+      ],
+      "negotiationPrep": [
+        "Wait for a clear offer before anchoring compensation.",
+        "Ask for total compensation breakdown, work mode, title, level, review cycle, and start date.",
+        "Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.",
+        "Use competing priorities and role fit, not personal need, as the negotiation frame."
+      ]
+    },
+    {
+      "jobKey": "url:https://www.tokyodev.com/companies/tokuty/jobs/full-stack-engineer",
+      "title": "Full Stack Engineer",
+      "company": "Tokuty",
+      "score": "70/C",
+      "priority": "P1",
+      "applyChecklist": [
+        "Open the source URL and confirm the role is still active.",
+        "Generate or refresh the tailored ATS PDF from this job.",
+        "Mirror these keywords honestly: React, design system, engineer, product, JavaScript, CSS, Accessibility, Analytics, API",
+        "Do not overclaim missing areas: JavaScript, CSS, Accessibility, Analytics, API, remote",
+        "Log status, recruiter/contact, and next follow-up date in the tracker."
+      ],
+      "outreachEmail": {
+        "subject": "Full Stack Engineer application - Tokuty",
+        "body": "Hi Tokuty team,\n\nI am Candidate, and I am interested in the Full Stack Engineer role. My background is focused on Frontend Engineer with hands-on work in JavaScript, React, CSS, Accessibility, Analytics.\n\nThe role stood out because it maps closely to my experience with React, design system, engineer, product.\n\nI would appreciate the chance to share how my experience can support the team. Thank you for your time.\n\nBest,\nCandidate"
+      },
+      "followUp": {
+        "timing": "3-5 business days after applying or the last recruiter interaction.",
+        "body": "Hi Tokuty team,\n\nI wanted to follow up on my application for the Full Stack Engineer role. I remain interested and would be glad to provide any additional context about my background.\n\nThank you again for your time.\n\nBest,\nCandidate"
+      },
+      "interviewPrep": [
+        "Prepare a 60-second story for why Tokuty and why Full Stack Engineer.",
+        "Prepare evidence for: React, design system, engineer, product.",
+        "Prepare one STAR story about execution under ambiguity.",
+        "Prepare one STAR story about collaboration and tradeoff decisions.",
+        "Prepare questions about team priorities, success metrics, and hiring timeline."
+      ],
+      "negotiationPrep": [
+        "Wait for a clear offer before anchoring compensation.",
+        "Ask for total compensation breakdown, work mode, title, level, review cycle, and start date.",
+        "Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.",
+        "Use competing priorities and role fit, not personal need, as the negotiation frame."
+      ]
+    },
+    {
       "jobKey": "url:https://cardlytics.wd5.myworkdayjobs.com/cardlyticsexternalcareersite/job/taipei-city/senior-software-engineer_jr100384",
       "title": "Senior Software Engineer",
       "company": "Cardlytics Workday Taiwan",
@@ -272,146 +412,6 @@ window.CV_CAREER_OPS_APPLICATION_KIT = {
       "interviewPrep": [
         "Prepare a 60-second story for why Micron Workday and why Senior Full Stack Software Engineer.",
         "Prepare evidence for: JavaScript, React, Analytics, engineer, data.",
-        "Prepare one STAR story about execution under ambiguity.",
-        "Prepare one STAR story about collaboration and tradeoff decisions.",
-        "Prepare questions about team priorities, success metrics, and hiring timeline."
-      ],
-      "negotiationPrep": [
-        "Wait for a clear offer before anchoring compensation.",
-        "Ask for total compensation breakdown, work mode, title, level, review cycle, and start date.",
-        "Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.",
-        "Use competing priorities and role fit, not personal need, as the negotiation frame."
-      ]
-    },
-    {
-      "jobKey": "url:https://japan-dev.com/jobs/artytech/artytech-tech-lead--cto-candidate-full-stack-25pe6i",
-      "title": "Tech Lead / CTO Candidate (Full-stack)",
-      "company": "Artytech",
-      "score": "68/C",
-      "priority": "P2",
-      "applyChecklist": [
-        "Open the source URL and confirm the role is still active.",
-        "Generate or refresh the tailored ATS PDF from this job.",
-        "Mirror these keywords honestly: JavaScript, React, CSS, engineer, product, Accessibility, Analytics, API",
-        "Do not overclaim missing areas: Accessibility, Analytics, API, remote, dashboard, design system",
-        "Log status, recruiter/contact, and next follow-up date in the tracker."
-      ],
-      "outreachEmail": {
-        "subject": "Tech Lead / CTO Candidate (Full-stack) application - Artytech",
-        "body": "Hi Artytech team,\n\nI am Candidate, and I am interested in the Tech Lead / CTO Candidate (Full-stack) role. My background is focused on Frontend Engineer with hands-on work in JavaScript, React, CSS, Accessibility, Analytics.\n\nThe role stood out because it maps closely to my experience with JavaScript, React, CSS, engineer, product.\n\nI would appreciate the chance to share how my experience can support the team. Thank you for your time.\n\nBest,\nCandidate"
-      },
-      "followUp": {
-        "timing": "3-5 business days after applying or the last recruiter interaction.",
-        "body": "Hi Artytech team,\n\nI wanted to follow up on my application for the Tech Lead / CTO Candidate (Full-stack) role. I remain interested and would be glad to provide any additional context about my background.\n\nThank you again for your time.\n\nBest,\nCandidate"
-      },
-      "interviewPrep": [
-        "Prepare a 60-second story for why Artytech and why Tech Lead / CTO Candidate (Full-stack).",
-        "Prepare evidence for: JavaScript, React, CSS, engineer, product.",
-        "Prepare one STAR story about execution under ambiguity.",
-        "Prepare one STAR story about collaboration and tradeoff decisions.",
-        "Prepare questions about team priorities, success metrics, and hiring timeline."
-      ],
-      "negotiationPrep": [
-        "Wait for a clear offer before anchoring compensation.",
-        "Ask for total compensation breakdown, work mode, title, level, review cycle, and start date.",
-        "Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.",
-        "Use competing priorities and role fit, not personal need, as the negotiation frame."
-      ]
-    },
-    {
-      "jobKey": "url:https://www.tokyodev.com/companies/moneyforward/jobs/backend-engineer-digital-bank",
-      "title": "Backend Engineer, Digital Bank",
-      "company": "Money Forward",
-      "score": "68/C",
-      "priority": "P2",
-      "applyChecklist": [
-        "Open the source URL and confirm the role is still active.",
-        "Generate or refresh the tailored ATS PDF from this job.",
-        "Mirror these keywords honestly: API, engineer, product, JavaScript, React, CSS, Accessibility, Analytics",
-        "Do not overclaim missing areas: JavaScript, React, CSS, Accessibility, Analytics, remote",
-        "Log status, recruiter/contact, and next follow-up date in the tracker."
-      ],
-      "outreachEmail": {
-        "subject": "Backend Engineer, Digital Bank application - Money Forward",
-        "body": "Hi Money Forward team,\n\nI am Candidate, and I am interested in the Backend Engineer, Digital Bank role. My background is focused on Frontend Engineer with hands-on work in JavaScript, React, CSS, Accessibility, Analytics.\n\nThe role stood out because it maps closely to my experience with API, engineer, product.\n\nI would appreciate the chance to share how my experience can support the team. Thank you for your time.\n\nBest,\nCandidate"
-      },
-      "followUp": {
-        "timing": "3-5 business days after applying or the last recruiter interaction.",
-        "body": "Hi Money Forward team,\n\nI wanted to follow up on my application for the Backend Engineer, Digital Bank role. I remain interested and would be glad to provide any additional context about my background.\n\nThank you again for your time.\n\nBest,\nCandidate"
-      },
-      "interviewPrep": [
-        "Prepare a 60-second story for why Money Forward and why Backend Engineer, Digital Bank.",
-        "Prepare evidence for: API, engineer, product.",
-        "Prepare one STAR story about execution under ambiguity.",
-        "Prepare one STAR story about collaboration and tradeoff decisions.",
-        "Prepare questions about team priorities, success metrics, and hiring timeline."
-      ],
-      "negotiationPrep": [
-        "Wait for a clear offer before anchoring compensation.",
-        "Ask for total compensation breakdown, work mode, title, level, review cycle, and start date.",
-        "Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.",
-        "Use competing priorities and role fit, not personal need, as the negotiation frame."
-      ]
-    },
-    {
-      "jobKey": "url:https://japan-dev.com/jobs/moneytree/moneytree-software-engineer-link-scrapers-r26492",
-      "title": "Software Engineer, Link Scrapers (1 Year Contract)",
-      "company": "Moneytree",
-      "score": "67/C",
-      "priority": "P2",
-      "applyChecklist": [
-        "Open the source URL and confirm the role is still active.",
-        "Generate or refresh the tailored ATS PDF from this job.",
-        "Mirror these keywords honestly: JavaScript, remote, engineer, data, React, CSS, Accessibility, Analytics, API",
-        "Do not overclaim missing areas: React, CSS, Accessibility, Analytics, API, dashboard",
-        "Log status, recruiter/contact, and next follow-up date in the tracker."
-      ],
-      "outreachEmail": {
-        "subject": "Software Engineer, Link Scrapers (1 Year Contract) application - Moneytree",
-        "body": "Hi Moneytree team,\n\nI am Candidate, and I am interested in the Software Engineer, Link Scrapers (1 Year Contract) role. My background is focused on Frontend Engineer with hands-on work in JavaScript, React, CSS, Accessibility, Analytics.\n\nThe role stood out because it maps closely to my experience with JavaScript, remote, engineer, data.\n\nI would appreciate the chance to share how my experience can support the team. Thank you for your time.\n\nBest,\nCandidate"
-      },
-      "followUp": {
-        "timing": "3-5 business days after applying or the last recruiter interaction.",
-        "body": "Hi Moneytree team,\n\nI wanted to follow up on my application for the Software Engineer, Link Scrapers (1 Year Contract) role. I remain interested and would be glad to provide any additional context about my background.\n\nThank you again for your time.\n\nBest,\nCandidate"
-      },
-      "interviewPrep": [
-        "Prepare a 60-second story for why Moneytree and why Software Engineer, Link Scrapers (1 Year Contract).",
-        "Prepare evidence for: JavaScript, remote, engineer, data.",
-        "Prepare one STAR story about execution under ambiguity.",
-        "Prepare one STAR story about collaboration and tradeoff decisions.",
-        "Prepare questions about team priorities, success metrics, and hiring timeline."
-      ],
-      "negotiationPrep": [
-        "Wait for a clear offer before anchoring compensation.",
-        "Ask for total compensation breakdown, work mode, title, level, review cycle, and start date.",
-        "Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.",
-        "Use competing priorities and role fit, not personal need, as the negotiation frame."
-      ]
-    },
-    {
-      "jobKey": "url:https://japan-dev.com/jobs/money-forward/money-forward-information-systems-engineer-global-it-division-tokyo-tituum",
-      "title": "Information Systems Engineer (Global IT Division - Tokyo)",
-      "company": "Money Forward",
-      "score": "66/C",
-      "priority": "P2",
-      "applyChecklist": [
-        "Open the source URL and confirm the role is still active.",
-        "Generate or refresh the tailored ATS PDF from this job.",
-        "Mirror these keywords honestly: API, engineer, dashboards, data, visualization, JavaScript, React, CSS, Accessibility, Analytics",
-        "Do not overclaim missing areas: JavaScript, React, CSS, Accessibility, Analytics, remote",
-        "Log status, recruiter/contact, and next follow-up date in the tracker."
-      ],
-      "outreachEmail": {
-        "subject": "Information Systems Engineer (Global IT Division - Tokyo) application - Money Forward",
-        "body": "Hi Money Forward team,\n\nI am Candidate, and I am interested in the Information Systems Engineer (Global IT Division - Tokyo) role. My background is focused on Frontend Engineer with hands-on work in JavaScript, React, CSS, Accessibility, Analytics.\n\nThe role stood out because it maps closely to my experience with API, engineer, dashboards, data, visualization.\n\nI would appreciate the chance to share how my experience can support the team. Thank you for your time.\n\nBest,\nCandidate"
-      },
-      "followUp": {
-        "timing": "3-5 business days after applying or the last recruiter interaction.",
-        "body": "Hi Money Forward team,\n\nI wanted to follow up on my application for the Information Systems Engineer (Global IT Division - Tokyo) role. I remain interested and would be glad to provide any additional context about my background.\n\nThank you again for your time.\n\nBest,\nCandidate"
-      },
-      "interviewPrep": [
-        "Prepare a 60-second story for why Money Forward and why Information Systems Engineer (Global IT Division - Tokyo).",
-        "Prepare evidence for: API, engineer, dashboards, data, visualization.",
         "Prepare one STAR story about execution under ambiguity.",
         "Prepare one STAR story about collaboration and tradeoff decisions.",
         "Prepare questions about team priorities, success metrics, and hiring timeline."
