@@ -1,262 +1,213 @@
 {
   "source": "career-ops-learning",
-  "generatedAt": "2026-05-15T23:22:33.607Z",
+  "generatedAt": "2026-05-16T12:29:29.697Z",
   "learning": {
-    "activeJobCount": 291,
-    "positiveSignalCount": 82,
-    "negativeSignalCount": 13,
+    "activeJobCount": 276,
+    "positiveSignalCount": 101,
+    "negativeSignalCount": 12,
     "preferredSkills": [
       {
         "name": "engineer",
-        "score": 485
-      },
-      {
-        "name": "product",
-        "score": 253.7
+        "score": 340.6
       },
       {
         "name": "data",
-        "score": 242.3
+        "score": 277.4
+      },
+      {
+        "name": "product",
+        "score": 245.3
       },
       {
         "name": "growth",
-        "score": 128.5
-      },
-      {
-        "name": "aws",
-        "score": 115.2
+        "score": 142.7
       },
       {
         "name": "operations",
-        "score": 113.2
+        "score": 118.2
       },
       {
         "name": "python",
-        "score": 84.4
+        "score": 113.6
       },
       {
-        "name": "terraform",
-        "score": 78.3
-      },
-      {
-        "name": "docker",
-        "score": 78.1
+        "name": "aws",
+        "score": 111.8
       },
       {
         "name": "gcp",
-        "score": 77.8
+        "score": 77.9
       },
       {
         "name": "react",
-        "score": 75.1
+        "score": 72.9
       },
       {
         "name": "React",
-        "score": 75.1
+        "score": 72.9
       },
       {
-        "name": "forward",
-        "score": 66.1
+        "name": "docker",
+        "score": 72.6
       },
       {
-        "name": "money",
-        "score": 66.1
+        "name": "terraform",
+        "score": 69.7
       },
       {
-        "name": "agents",
-        "score": 62.7
+        "name": "graphql",
+        "score": 68.6
       },
       {
         "name": "typescript",
-        "score": 61.7
+        "score": 65.8
       },
       {
-        "name": "we",
+        "name": "TypeScript",
+        "score": 65.8
+      },
+      {
+        "name": "node.js",
         "score": 59.8
       },
       {
-        "name": "api",
-        "score": 56.5
+        "name": "go",
+        "score": 56.4
+      },
+      {
+        "name": "agents",
+        "score": 51.7
       }
     ],
-    "avoidSignals": [
-      {
-        "name": "nvidia",
-        "score": 0.6
-      },
-      {
-        "name": "价格",
-        "score": 0.6
-      },
-      {
-        "name": "参数",
-        "score": 0.6
-      },
-      {
-        "name": "图片",
-        "score": 0.6
-      },
-      {
-        "name": "图片及用户评价等详细信息",
-        "score": 0.6
-      },
-      {
-        "name": "多少钱",
-        "score": 0.6
-      },
-      {
-        "name": "官方正品",
-        "score": 0.6
-      },
-      {
-        "name": "用户评价",
-        "score": 0.6
-      },
-      {
-        "name": "联想商城",
-        "score": 0.6
-      },
-      {
-        "name": "developer",
-        "score": 0.4
-      },
-      {
-        "name": "欢迎选购",
-        "score": 0.4
-      },
-      {
-        "name": "ai",
-        "score": 0.3
-      },
-      {
-        "name": "tools",
-        "score": 0.3
-      },
-      {
-        "name": "build",
-        "score": 0.2
-      }
-    ],
+    "avoidSignals": [],
     "preferredCompanies": [
       {
         "name": "Money Forward",
-        "score": 75.2
-      },
-      {
-        "name": "Intel Workday Taiwan",
-        "score": 26.9
-      },
-      {
-        "name": "Logitech Workday Taiwan",
-        "score": 24.1
-      },
-      {
-        "name": "NVIDIA Workday",
-        "score": 17.8
-      },
-      {
-        "name": "AI Robot Association (AIRoA)",
-        "score": 17.4
+        "score": 50.6
       },
       {
         "name": "Micron Workday",
-        "score": 14.7
+        "score": 50.1
       },
       {
-        "name": "Geniee",
-        "score": 11.2
+        "name": "NVIDIA Workday",
+        "score": 48.1
       },
       {
-        "name": "Shizuku AI",
-        "score": 9.5
+        "name": "Intel Workday Taiwan",
+        "score": 46.9
       },
       {
-        "name": "PayPay",
-        "score": 9.3
+        "name": "Logitech Workday Taiwan",
+        "score": 33.1
+      },
+      {
+        "name": "AI Robot Association (AIRoA)",
+        "score": 23.5
       },
       {
         "name": "Applied Materials Workday",
-        "score": 9.1
+        "score": 20.6
       },
       {
-        "name": "Gogolook",
-        "score": 9.1
+        "name": "Shizuku AI",
+        "score": 15.7
+      },
+      {
+        "name": "Geniee",
+        "score": 11.6
       },
       {
         "name": "Metanomaly",
-        "score": 8.9
+        "score": 10.8
+      },
+      {
+        "name": "PayPay",
+        "score": 9.1
+      },
+      {
+        "name": "Mico",
+        "score": 8.4
       }
     ],
     "preferredSources": [
       {
-        "name": "flex-job-board",
-        "score": 170.3
-      },
-      {
-        "name": "jp",
-        "score": 170.3
-      },
-      {
         "name": "tracked-company",
-        "score": 105
+        "score": 209.5
       },
       {
         "name": "tw",
-        "score": 105
+        "score": 209.5
       },
       {
-        "name": "semiconductor",
-        "score": 26.9
+        "name": "flex-job-board",
+        "score": 182.2
       },
       {
-        "name": "consumer-electronics",
-        "score": 24.1
-      },
-      {
-        "name": "ai-semiconductor",
-        "score": 17.8
+        "name": "jp",
+        "score": 182.2
       },
       {
         "name": "semiconductor-memory",
-        "score": 14.7
+        "score": 50.1
       },
       {
-        "name": "consumer-security",
-        "score": 9.1
+        "name": "ai-semiconductor",
+        "score": 48.1
+      },
+      {
+        "name": "semiconductor",
+        "score": 46.9
+      },
+      {
+        "name": "consumer-electronics",
+        "score": 33.1
       },
       {
         "name": "semiconductor-equipment",
-        "score": 9.1
+        "score": 20.6
       },
       {
         "name": "commerce-intelligence",
-        "score": 3.5
+        "score": 5.5
+      },
+      {
+        "name": "consumer-security",
+        "score": 5.2
       }
     ],
     "roleFamilies": [
       {
-        "name": "Frontend",
-        "score": 110.2
+        "name": "Backend",
+        "score": 153
       },
       {
-        "name": "Backend",
-        "score": 102.9
+        "name": "Frontend",
+        "score": 104.6
       },
       {
         "name": "AI / Data",
-        "score": 51.1
+        "score": 85.5
       },
       {
         "name": "Design",
-        "score": 5.7
+        "score": 18.2
       },
       {
         "name": "Operations",
-        "score": 2.9
+        "score": 10.3
+      },
+      {
+        "name": "Other",
+        "score": 7.2
+      },
+      {
+        "name": "Marketing",
+        "score": 5.3
       },
       {
         "name": "Internship",
-        "score": 2.8
+        "score": 4.9
       }
     ],
     "sourceCoverage": {
@@ -272,9 +223,9 @@
       ]
     },
     "nextStrategy": [
-      "Expand searches around engineer, product, data, growth, aws.",
-      "Prioritize sources like flex-job-board, jp, tracked-company, tw.",
-      "Down-rank roles mentioning nvidia, 价格, 参数, 图片, 图片及用户评价等详细信息.",
+      "Expand searches around engineer, data, product, growth, operations.",
+      "Prioritize sources like tracked-company, tw, flex-job-board, jp.",
+      "No strong avoid pattern learned yet.",
       "Refresh this learning layer after each batch evaluation or feedback session."
     ],
     "profilePatchSuggestion": {
@@ -284,35 +235,34 @@
           "dashboard",
           "design system",
           "analytics",
+          "TypeScript",
+          "React",
           "engineer",
-          "product",
           "data",
+          "product",
           "growth",
-          "aws",
           "operations",
           "python",
-          "terraform"
+          "aws",
+          "gcp"
         ],
         "avoidKeywords": [
           "commission-only",
           "unpaid",
-          "nvidia",
-          "价格",
-          "参数",
-          "图片",
-          "图片及用户评价等详细信息",
-          "多少钱",
-          "官方正品",
-          "用户评价"
+          "on-site only"
         ],
         "companies": [
+          "Stripe",
+          "Linear",
+          "Notion",
+          "Vercel",
           "Money Forward",
+          "Micron Workday",
+          "NVIDIA Workday",
           "Intel Workday Taiwan",
           "Logitech Workday Taiwan",
-          "NVIDIA Workday",
           "AI Robot Association (AIRoA)",
-          "Micron Workday",
-          "Geniee",
+          "Applied Materials Workday",
           "Shizuku AI"
         ]
       }

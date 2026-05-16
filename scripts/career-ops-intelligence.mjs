@@ -5,6 +5,9 @@ import fsSync from "node:fs";
 import path from "node:path";
 
 const DEFAULT_JOBS = "data/app/career-ops-jobs.json";
+const DEFAULT_PROFILE = fsSync.existsSync("data/career-ops-profile.json")
+  ? "data/career-ops-profile.json"
+  : "data/career-ops-profile.example.json";
 const DEFAULT_JS_OUT = "data/app/career-ops-jobs.js";
 const DEFAULT_REPORT = "data/app/career-ops-intelligence-report.md";
 const DEFAULT_RUBRIC = fsSync.existsSync("data/career-ops-rubric.json")
@@ -12,8 +15,17 @@ const DEFAULT_RUBRIC = fsSync.existsSync("data/career-ops-rubric.json")
   : "data/career-ops-rubric.example.json";
 
 const STOPWORDS = new Set([
-  "and", "the", "with", "for", "you", "your", "our", "are", "will", "that", "this", "from", "have", "has",
-  "我們", "以及", "或者", "或", "與", "和", "工作", "職缺", "能力", "相關", "負責", "具備", "優先"
+  "a", "an", "as", "at", "be", "by", "do", "go", "he", "if", "in", "is", "it", "me", "my",
+  "no", "of", "on", "or", "so", "to", "up", "us", "we",
+  "and", "are", "but", "can", "did", "for", "had", "has", "her", "him", "his", "how", "its",
+  "may", "not", "our", "out", "own", "she", "the", "was", "who", "why", "you",
+  "also", "been", "each", "from", "have", "here", "into", "just", "more", "most", "such",
+  "than", "that", "them", "then", "they", "this", "time", "very", "well", "were", "what",
+  "when", "will", "with", "work", "year", "your",
+  "about", "after", "being", "could", "every", "given", "great", "large", "other", "shall",
+  "their", "these", "those", "three", "which", "while", "would",
+  "我們", "以及", "或者", "或", "與", "和", "工作", "職缺", "能力", "相關", "負責", "具備", "優先",
+  "可以", "需要", "必須", "希望", "透過", "提供", "進行", "達到", "幫助", "支持"
 ]);
 
 const SKILL_TERMS = [
@@ -54,7 +66,7 @@ Options:
 function parseArgs(argv) {
   const args = {
     jobs: DEFAULT_JOBS,
-    profile: "",
+    profile: DEFAULT_PROFILE,
     rubric: DEFAULT_RUBRIC,
     out: "",
     jsOut: DEFAULT_JS_OUT,
@@ -66,7 +78,7 @@ function parseArgs(argv) {
     const token = argv[i];
     if (token === "--help" || token === "-h") args.help = true;
     else if (token === "--jobs") args.jobs = argv[++i] || DEFAULT_JOBS;
-    else if (token === "--profile") args.profile = argv[++i] || "";
+    else if (token === "--profile") args.profile = argv[++i] || DEFAULT_PROFILE;
     else if (token === "--rubric") args.rubric = argv[++i] || DEFAULT_RUBRIC;
     else if (token === "--out") args.out = argv[++i] || "";
     else if (token === "--js-out") args.jsOut = argv[++i] || DEFAULT_JS_OUT;
@@ -121,7 +133,7 @@ function normalizeProfile(profile) {
     ...array(profile.skills),
     ...array(preferences.keywords),
     ...tokenize([profile.role, profile.summary, profile.experience, profile.projects].join(" "))
-      .filter((term) => SKILL_TERMS.some((known) => known === term || known.includes(term) || term.includes(known)))
+      .filter((term) => term.length >= 3 && SKILL_TERMS.some((known) => known === term || known.includes(term) || term.includes(known)))
   ].map((item) => String(item || "").trim()).filter(Boolean);
   const seenSkills = new Set();
   const skills = rawSkills.filter((skill) => {
@@ -385,6 +397,23 @@ function scoreProfileCompleteness(profile) {
   };
 }
 
+function buildGlobalSkillGaps(jobs, profile) {
+  // Across all active jobs, tally JD skills the profile doesn't cover — weighted by job score.
+  // This gives a learning priority list: skills that appear most in high-score jobs but are absent from the profile.
+  const gapCounts = new Map();
+  for (const job of jobs.filter((j) => !j.isExpired)) {
+    const misses = array(job.intelligence?.features?.jdSkillsMissingFromProfile);
+    const weight = Math.max(0.5, Number(job.score || 50) / 50);
+    for (const skill of misses) {
+      gapCounts.set(skill, (gapCounts.get(skill) || 0) + weight);
+    }
+  }
+  return Array.from(gapCounts.entries())
+    .map(([skill, weightedCount]) => ({ skill, weightedCount: Math.round(weightedCount * 10) / 10 }))
+    .sort((a, b) => b.weightedCount - a.weightedCount || a.skill.localeCompare(b.skill))
+    .slice(0, 15);
+}
+
 function buildInsights(jobs, profile, duplicateGroups, rubric) {
   const active = jobs.filter((job) => !job.isExpired);
   const skillCounts = topSkillCounts(active);
@@ -398,6 +427,11 @@ function buildInsights(jobs, profile, duplicateGroups, rubric) {
   const missingHighDemand = topSkills
     .filter((skill) => !profile.skills.some((profileSkill) => profileSkill.toLowerCase() === skill.name.toLowerCase()))
     .slice(0, 10);
+  const globalSkillGaps = buildGlobalSkillGaps(jobs, profile);
+  // Flag if no preferred companies appeared in results
+  const preferredCompaniesFound = profile.preferredCompanies.length
+    ? active.filter((job) => profile.preferredCompanies.some((c) => includesTerm(job.company || "", c))).length
+    : null;
 
   return {
     generatedAt: new Date().toISOString(),
@@ -419,6 +453,10 @@ function buildInsights(jobs, profile, duplicateGroups, rubric) {
     locations: countBy(active, (job) => String(job.location || "Unknown").split(/[\/,]/)[0].trim() || "Unknown").slice(0, 12),
     sources: countBy(active, (job) => job.source || job.sourceType || "Unknown").slice(0, 12),
     recommendations: countBy(active, (job) => job.recommendation || "待評估"),
+    globalSkillGaps,
+    preferredCompanyAlert: preferredCompaniesFound === 0
+      ? `None of your preferred companies (${profile.preferredCompanies.slice(0, 4).join(", ")}) appeared in current results. Add direct company career page sources to data/career-ops-sources.json.`
+      : null,
     duplicateGroups,
     integrity: {
       duplicateGroupCount: duplicateGroups.length,
@@ -436,37 +474,43 @@ function buildInsights(jobs, profile, duplicateGroups, rubric) {
 
 function enrichJob(job, intelligence) {
   const next = { ...job, intelligence };
-  if (next.score === undefined || next.score === "" || next.evaluation?.source === "career-ops-evaluate-heuristic") {
+  // Always rebuild evaluation so ats_keywords, features, and dimensions stay in sync with the current profile.
+  // Preserve user-set score/grade/status only if it was NOT set by a previous intelligence run
+  // (i.e., allow manual overrides and external evaluator scores to persist).
+  const wasIntelligenceScored = job.evaluation?.source === "career-ops-intelligence";
+  const hasNoScore = job.score === undefined || job.score === "";
+  if (hasNoScore || wasIntelligenceScored || job.evaluation?.source === "career-ops-evaluate-heuristic") {
     next.score = intelligence.score;
     next.grade = intelligence.grade;
     next.recommendation = intelligence.recommendation;
     next.status = next.status && next.status !== "待評估" ? next.status : intelligence.recommendation;
     next.evaluatedAt = new Date().toISOString();
-    next.evaluation = {
-      source: "career-ops-intelligence",
-      overall: {
-        grade: intelligence.grade,
-        score: intelligence.score,
-        recommendation: intelligence.recommendation,
-        summary: `以 ${Object.keys(intelligence.dimensions).length} 個維度比對，命中 ${intelligence.features.profileSkillHits.length} 個履歷技能，市場技能命中 ${intelligence.features.skills.length} 個。`
-      },
-      decision_factors: [
-        `職類：${intelligence.features.roleFamily}；資歷：${intelligence.features.seniority}；模式：${intelligence.features.workMode}`,
-        intelligence.features.profileSkillHits.length ? `履歷技能命中：${intelligence.features.profileSkillHits.slice(0, 8).join("、")}` : "履歷技能命中偏低",
-        intelligence.features.rareHighValueSkills.length ? `稀有高價值技能：${intelligence.features.rareHighValueSkills.join("、")}` : "未偵測到明顯稀有技能訊號"
-      ],
-      ats_keywords: {
-        found: intelligence.features.profileSkillHits.slice(0, 16),
-        missing: intelligence.features.jdSkillsMissingFromProfile.slice(0, 12)
-      },
-      risks: intelligence.features.avoidHits.length
-        ? [`命中風險或排除訊號：${intelligence.features.avoidHits.join("、")}`]
-        : [],
-      next_actions: intelligence.score >= 70
-        ? ["開啟職缺確認仍可投遞", "產生客製 ATS PDF", "用同職類高分職缺校準履歷關鍵字"]
-        : ["先與高分職缺比較，不急著投遞", "補齊 JD 或標記喜歡 / 不喜歡以改善後續排序"]
-    };
   }
+  // Always refresh the evaluation block (features, ats_keywords, risks) — these depend on the current profile
+  next.evaluation = {
+    source: "career-ops-intelligence",
+    overall: {
+      grade: next.grade || intelligence.grade,
+      score: next.score ?? intelligence.score,
+      recommendation: next.recommendation || intelligence.recommendation,
+      summary: `以 ${Object.keys(intelligence.dimensions).length} 個維度比對，命中 ${intelligence.features.profileSkillHits.length} 個履歷技能，市場技能命中 ${intelligence.features.skills.length} 個。`
+    },
+    decision_factors: [
+      `職類：${intelligence.features.roleFamily}；資歷：${intelligence.features.seniority}；模式：${intelligence.features.workMode}`,
+      intelligence.features.profileSkillHits.length ? `履歷技能命中：${intelligence.features.profileSkillHits.slice(0, 8).join("、")}` : "履歷技能命中偏低",
+      intelligence.features.rareHighValueSkills.length ? `稀有高價值技能：${intelligence.features.rareHighValueSkills.join("、")}` : "未偵測到明顯稀有技能訊號"
+    ],
+    ats_keywords: {
+      found: intelligence.features.profileSkillHits.slice(0, 16),
+      missing: intelligence.features.jdSkillsMissingFromProfile.slice(0, 12)
+    },
+    risks: intelligence.features.avoidHits.length
+      ? [`命中風險或排除訊號：${intelligence.features.avoidHits.join("、")}`]
+      : [],
+    next_actions: intelligence.score >= 70
+      ? ["開啟職缺確認仍可投遞", "產生客製 ATS PDF", "用同職類高分職缺校準履歷關鍵字"]
+      : ["先與高分職缺比較，不急著投遞", "補齊 JD 或標記喜歡 / 不喜歡以改善後續排序"]
+  };
   return next;
 }
 
@@ -492,6 +536,10 @@ function buildMarkdownReport(payload) {
     "## Missing High-Demand Skills",
     ...(insights.missingHighDemand || []).slice(0, 10).map((item) => `- ${item.name}: ${item.count}`),
     "",
+    "## Global Skill Gap Priority (weighted by job score)",
+    ...(insights.globalSkillGaps || []).slice(0, 12).map((item) => `- ${item.skill}: ${item.weightedCount}`),
+    "",
+    ...(insights.preferredCompanyAlert ? ["## ⚠ Preferred Company Alert", insights.preferredCompanyAlert, ""] : []),
     "## Role Families",
     ...(insights.roleFamilies || []).map((item) => `- ${item.name}: ${item.count}`),
     "",

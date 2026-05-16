@@ -13,10 +13,12 @@ function printHelp() {
   console.log(`Career Ops story bank
 
 Builds a reusable STAR+Reflection story bank from profile proof points and the
-current job market snapshot.
+current job market snapshot. With an LLM provider, drafts full story content
+directly from your proof points — not just coaching prompts.
 
 Usage:
   node scripts/career-ops-story-bank.mjs --profile data/career-ops-profile.json
+  ANTHROPIC_API_KEY="..." node scripts/career-ops-story-bank.mjs --llm anthropic
 
 Options:
   --jobs <file>       Career Ops jobs snapshot. Default: ${DEFAULT_JOBS}
@@ -24,6 +26,7 @@ Options:
   --out <file>        JSON output. Default: ${DEFAULT_OUT}
   --js-out <file>     Browser JS output. Default: ${DEFAULT_JS_OUT}
   --report-out <file> Markdown report. Default: ${DEFAULT_REPORT}
+  --llm <provider>    none, openai, anthropic, or auto. Default: auto
   --no-js             Skip browser JS output
   --help              Show this help
 `);
@@ -36,6 +39,7 @@ function parseArgs(argv) {
     out: DEFAULT_OUT,
     jsOut: DEFAULT_JS_OUT,
     reportOut: DEFAULT_REPORT,
+    llm: "auto",
     writeJs: true
   };
   for (let i = 0; i < argv.length; i += 1) {
@@ -46,6 +50,7 @@ function parseArgs(argv) {
     else if (token === "--out") args.out = argv[++i] || DEFAULT_OUT;
     else if (token === "--js-out") args.jsOut = argv[++i] || DEFAULT_JS_OUT;
     else if (token === "--report-out") args.reportOut = argv[++i] || DEFAULT_REPORT;
+    else if (token === "--llm") args.llm = String(argv[++i] || "auto").toLowerCase();
     else if (token === "--no-js") args.writeJs = false;
     else throw new Error(`Unknown argument: ${token}`);
   }
@@ -274,6 +279,67 @@ function renderMarkdown(payload) {
   return `${lines.join("\n")}\n`;
 }
 
+function pickLlm(provider) {
+  if (provider === "none") return "none";
+  if ((provider === "auto" || provider === "openai") && process.env.OPENAI_API_KEY) return "openai";
+  if ((provider === "auto" || provider === "anthropic") && process.env.ANTHROPIC_API_KEY) return "anthropic";
+  return provider === "auto" ? "none" : provider;
+}
+
+function parseJsonText(text) {
+  const match = text.match(/```(?:json)?\s*([\s\S]*?)```/) || text.match(/(\{[\s\S]*\})/);
+  try { return JSON.parse(match ? match[1] : text); } catch { return null; }
+}
+
+async function callLlm(provider, system, prompt) {
+  if (provider === "openai") {
+    const res = await fetch("https://api.openai.com/v1/chat/completions", {
+      method: "POST",
+      headers: { "content-type": "application/json", "authorization": `Bearer ${process.env.OPENAI_API_KEY}` },
+      body: JSON.stringify({ model: process.env.OPENAI_MODEL || "gpt-4o", temperature: 0.3,
+        messages: [{ role: "system", content: system }, { role: "user", content: prompt }] })
+    });
+    if (!res.ok) throw new Error(`OpenAI ${res.status}`);
+    return (await res.json()).choices?.[0]?.message?.content || "";
+  }
+  if (provider === "anthropic") {
+    const res = await fetch("https://api.anthropic.com/v1/messages", {
+      method: "POST",
+      headers: { "content-type": "application/json", "x-api-key": process.env.ANTHROPIC_API_KEY, "anthropic-version": "2023-06-01" },
+      body: JSON.stringify({ model: process.env.ANTHROPIC_MODEL || "claude-3-5-sonnet-latest",
+        max_tokens: 1200, temperature: 0.3, system,
+        messages: [{ role: "user", content: prompt }] })
+    });
+    if (!res.ok) throw new Error(`Anthropic ${res.status}`);
+    return (await res.json()).content?.[0]?.text || "";
+  }
+  return "";
+}
+
+async function enrichStoryWithLlm(story, profile, provider) {
+  if (provider === "none") return story;
+  const system = `You are a career coach. Given a proof point from a candidate's resume and a STAR framework guide, write a concise, first-person draft of the full STAR story.
+Output ONLY valid JSON with keys: situation, task, action, result, reflection.
+Each value is 1-3 sentences. Use specific details from the proof point. Do not invent metrics that aren't implied by the proof point.`;
+  const prompt = JSON.stringify({
+    proofPoint: story.sourceProof,
+    theme: story.theme,
+    profileRole: profile.role || "",
+    starGuide: story.star,
+    candidateSkills: array(profile.skills).slice(0, 8)
+  });
+  try {
+    const text = await callLlm(provider, system, prompt);
+    const parsed = parseJsonText(text);
+    if (parsed && parsed.situation) {
+      return { ...story, star: { ...parsed, _source: "llm" } };
+    }
+  } catch (error) {
+    console.warn(`[career-ops] story LLM failed for ${story.id}: ${error.message}`);
+  }
+  return story;
+}
+
 async function writeJson(filePath, data) {
   await fs.mkdir(path.dirname(filePath), { recursive: true });
   await fs.writeFile(filePath, `${JSON.stringify(data, null, 2)}\n`, "utf8");
@@ -289,15 +355,29 @@ async function main() {
   if (args.help) return printHelp();
   const profile = await readJsonIfExists(args.profile);
   const jobsPayload = await readJsonIfExists(args.jobs);
+  const provider = pickLlm(args.llm);
+  const storyBank = buildStoryBank(profile, jobsPayload.jobs || []);
+
+  // When LLM is available, enrich each story from heuristic guides to fully drafted content
+  if (provider !== "none") {
+    console.log(`[career-ops] story bank: enriching ${storyBank.stories.length} stories via ${provider}...`);
+    const enriched = [];
+    for (const story of storyBank.stories) {
+      enriched.push(await enrichStoryWithLlm(story, profile, provider));
+    }
+    storyBank.stories = enriched;
+  }
+
   const payload = {
     source: "career-ops-story-bank",
     generatedAt: new Date().toISOString(),
-    storyBank: buildStoryBank(profile, jobsPayload.jobs || [])
+    llmProvider: provider,
+    storyBank
   };
   await writeJson(args.out, payload);
   if (args.writeJs) await writeText(args.jsOut, `window.CV_CAREER_OPS_STORY_BANK = ${JSON.stringify(payload, null, 2)};\n`);
   await writeText(args.reportOut, renderMarkdown(payload));
-  console.log(`[career-ops] story bank ${payload.storyBank.stories.length} story seed(s) -> ${args.reportOut}`);
+  console.log(`[career-ops] story bank ${storyBank.stories.length} story seed(s), llm=${provider} -> ${args.reportOut}`);
 }
 
 main().catch((error) => {
