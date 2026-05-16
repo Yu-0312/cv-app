@@ -1,10 +1,10 @@
 # Career Ops Intelligence Report
 
-Generated: 2026-05-16T02:50:06.640Z
+Generated: 2026-05-16T12:29:29.523Z
 
 - Active jobs: 276
 - Expired jobs: 0
-- Duplicate groups: 40
+- Duplicate groups: 13
 - Jobs without enough description: 135
 - Rubric: Career Ops 10-Dimension Rubric
 
@@ -46,6 +46,23 @@ Generated: 2026-05-16T02:50:06.640Z
 - go: 14
 - deep learning: 13
 
+## Global Skill Gap Priority (weighted by job score)
+- growth: 44.2
+- python: 36
+- operations: 30.6
+- aws: 28.7
+- gcp: 19.2
+- docker: 18.7
+- terraform: 18.3
+- go: 16.5
+- agents: 15.8
+- deep learning: 14.5
+- java: 13.1
+- machine learning: 13.1
+
+## ⚠ Preferred Company Alert
+None of your preferred companies (Stripe, Linear, Notion, Vercel) appeared in current results. Add direct company career page sources to data/career-ops-sources.json.
+
 ## Role Families
 - Other: 143
 - Backend: 53
@@ -63,13 +80,13 @@ Generated: 2026-05-16T02:50:06.640Z
 - Product Engineer
 - Full Stack Engineer
 - JavaScript
+- TypeScript
 - React
+- Next.js
 - CSS
+- Tailwind
 - Accessibility
 - Analytics
-- API
-- remote
-- dashboard
 - growth
 - operations
 - python

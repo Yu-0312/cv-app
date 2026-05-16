@@ -1,71 +1,14 @@
 window.CV_CAREER_OPS_COMPENSATION = {
   "source": "career-ops-compensation",
-  "generatedAt": "2026-05-15T23:22:32.852Z",
+  "generatedAt": "2026-05-16T12:29:29.594Z",
   "plans": [
-    {
-      "jobKey": "url:https://japan-dev.com/jobs/ai-robot-association/ai-robot-association-airoa-design-engineer-l4xpri",
-      "company": "AI Robot Association (AIRoA)",
-      "title": "Design Engineer",
-      "market": "global",
-      "inferredLevel": "intern",
-      "leverage": "medium",
-      "evidence": {
-        "salaryMentions": [],
-        "benefitSignals": [
-          "work-mode flexibility",
-          "signing / relocation",
-          "learning budget"
-        ]
-      },
-      "structure": {
-        "baseSalary": [
-          "Need verified market data or recruiter range before setting a numeric anchor."
-        ],
-        "bonus": "Ask whether there is annual bonus, performance bonus, or sign-on bonus.",
-        "equity": "Ask whether equity, RSU, options, or profit-sharing exists.",
-        "benefits": [
-          "Health / insurance coverage",
-          "Paid leave and holidays",
-          "Learning budget or certification support",
-          "Remote/hybrid setup, commute, or relocation support",
-          "Review cycle and promotion timeline"
-        ],
-        "nonCashLevers": [
-          "Title / level calibration",
-          "Start date flexibility",
-          "Remote days",
-          "Equipment budget",
-          "First review at 3 or 6 months",
-          "Conference / learning budget"
-        ]
-      },
-      "negotiationScript": {
-        "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Design Engineer package, including base, bonus, equity, and review cycle?",
-        "valueAnchor": "Based on the scope of Design Engineer and my fit around React, design system, engineer, product, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
-        "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
-        "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
-        "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
-      },
-      "redLines": [
-        "Do not disclose current compensation unless legally appropriate and strategically useful.",
-        "Do not accept verbal-only compensation details; ask for written package components.",
-        "Do not negotiate before confirming level, scope, work mode, and review cycle.",
-        "Do not trade base salary away without valuing the replacement benefit."
-      ],
-      "nextActions": [
-        "Collect market compensation evidence before naming a number.",
-        "Ask recruiter for approved range and level.",
-        "Map the job scope to proof points in the tailored CV.",
-        "Prepare one counter package with base, bonus/equity, and non-cash levers."
-      ],
-      "targetFrame": "Do not name a number first. Ask for the approved range, level, and total compensation structure before anchoring."
-    },
     {
       "jobKey": "url:https://japan-dev.com/jobs/geniee/geniee-japan-ai---product-manager-ai-saas-w0yniw",
       "company": "Geniee",
       "title": "JAPAN AI - Product Manager, AI SaaS",
       "market": "global",
-      "inferredLevel": "intern",
+      "inferredLevel": "senior-plus",
+      "candidateLevel": "mid",
       "leverage": "medium",
       "evidence": {
         "salaryMentions": [],
@@ -75,9 +18,19 @@ window.CV_CAREER_OPS_COMPENSATION = {
           "learning budget"
         ]
       },
+      "marketBenchmark": {
+        "currency": "USD",
+        "unit": "annual",
+        "range": "USD 70,000 – 115,000",
+        "midpoint": "USD 90,000",
+        "floor": 70000,
+        "ceiling": 115000,
+        "source": "Arc.dev / Ruby on Remote 2024-2026",
+        "note": "Remote/global rates. Taiwan-based remote developers average ~$54K USD; Japan-based ~$68-115K USD depending on stack."
+      },
       "structure": {
         "baseSalary": [
-          "Need verified market data or recruiter range before setting a numeric anchor."
+          "Market range for mid (GLOBAL): USD 70,000 – 115,000 annual. Source: Arc.dev / Ruby on Remote 2024-2026."
         ],
         "bonus": "Ask whether there is annual bonus, performance bonus, or sign-on bonus.",
         "equity": "Ask whether equity, RSU, options, or profit-sharing exists.",
@@ -99,7 +52,7 @@ window.CV_CAREER_OPS_COMPENSATION = {
       },
       "negotiationScript": {
         "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the JAPAN AI - Product Manager, AI SaaS package, including base, bonus, equity, and review cycle?",
-        "valueAnchor": "Based on the scope of JAPAN AI - Product Manager, AI SaaS and my fit around React, API, engineer, product, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
+        "valueAnchor": "Based on the scope of JAPAN AI - Product Manager, AI SaaS and my fit around TypeScript, React, Next.js, API, I would like to calibrate toward the stronger end of the range if the team sees the level match. My research indicates the GLOBAL midpoint for this level is around USD 90,000 (annual).",
         "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
         "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
         "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
@@ -116,73 +69,15 @@ window.CV_CAREER_OPS_COMPENSATION = {
         "Map the job scope to proof points in the tailored CV.",
         "Prepare one counter package with base, bonus/equity, and non-cash levers."
       ],
-      "targetFrame": "Do not name a number first. Ask for the approved range, level, and total compensation structure before anchoring."
-    },
-    {
-      "jobKey": "url:https://www.tokyodev.com/companies/moneyforward/jobs/lead-backend-engineer-digital-bank",
-      "company": "Money Forward",
-      "title": "Lead Backend Engineer, Digital Bank",
-      "market": "global",
-      "inferredLevel": "senior-plus",
-      "leverage": "medium",
-      "evidence": {
-        "salaryMentions": [],
-        "benefitSignals": [
-          "equity",
-          "work-mode flexibility",
-          "signing / relocation",
-          "learning budget"
-        ]
-      },
-      "structure": {
-        "baseSalary": [
-          "Need verified market data or recruiter range before setting a numeric anchor."
-        ],
-        "bonus": "Ask whether there is annual bonus, performance bonus, or sign-on bonus.",
-        "equity": "Clarify grant size, vesting schedule, refreshers, and strike/RSU terms.",
-        "benefits": [
-          "Health / insurance coverage",
-          "Paid leave and holidays",
-          "Learning budget or certification support",
-          "Remote/hybrid setup, commute, or relocation support",
-          "Review cycle and promotion timeline"
-        ],
-        "nonCashLevers": [
-          "Title / level calibration",
-          "Start date flexibility",
-          "Remote days",
-          "Equipment budget",
-          "First review at 3 or 6 months",
-          "Conference / learning budget"
-        ]
-      },
-      "negotiationScript": {
-        "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Lead Backend Engineer, Digital Bank package, including base, bonus, equity, and review cycle?",
-        "valueAnchor": "Based on the scope of Lead Backend Engineer, Digital Bank and my fit around API, engineer, product, data, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
-        "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
-        "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
-        "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
-      },
-      "redLines": [
-        "Do not disclose current compensation unless legally appropriate and strategically useful.",
-        "Do not accept verbal-only compensation details; ask for written package components.",
-        "Do not negotiate before confirming level, scope, work mode, and review cycle.",
-        "Do not trade base salary away without valuing the replacement benefit."
-      ],
-      "nextActions": [
-        "Collect market compensation evidence before naming a number.",
-        "Ask recruiter for approved range and level.",
-        "Map the job scope to proof points in the tailored CV.",
-        "Prepare one counter package with base, bonus/equity, and non-cash levers."
-      ],
-      "targetFrame": "Do not name a number first. Ask for the approved range, level, and total compensation structure before anchoring."
+      "targetFrame": "Market benchmark for mid in GLOBAL is USD 70,000 – 115,000 (annual). Do not name a number first — ask for the approved range, then anchor near the midpoint or above."
     },
     {
       "jobKey": "url:https://japan-dev.com/jobs/ai-robot-association/ai-robot-association-airoa-full-stack-engineer-sliy8x",
       "company": "AI Robot Association (AIRoA)",
       "title": "Full Stack Engineer",
       "market": "global",
-      "inferredLevel": "intern",
+      "inferredLevel": "mid",
+      "candidateLevel": "mid",
       "leverage": "medium",
       "evidence": {
         "salaryMentions": [],
@@ -192,9 +87,19 @@ window.CV_CAREER_OPS_COMPENSATION = {
           "learning budget"
         ]
       },
+      "marketBenchmark": {
+        "currency": "USD",
+        "unit": "annual",
+        "range": "USD 70,000 – 115,000",
+        "midpoint": "USD 90,000",
+        "floor": 70000,
+        "ceiling": 115000,
+        "source": "Arc.dev / Ruby on Remote 2024-2026",
+        "note": "Remote/global rates. Taiwan-based remote developers average ~$54K USD; Japan-based ~$68-115K USD depending on stack."
+      },
       "structure": {
         "baseSalary": [
-          "Need verified market data or recruiter range before setting a numeric anchor."
+          "Market range for mid (GLOBAL): USD 70,000 – 115,000 annual. Source: Arc.dev / Ruby on Remote 2024-2026."
         ],
         "bonus": "Ask whether there is annual bonus, performance bonus, or sign-on bonus.",
         "equity": "Ask whether equity, RSU, options, or profit-sharing exists.",
@@ -216,7 +121,7 @@ window.CV_CAREER_OPS_COMPENSATION = {
       },
       "negotiationScript": {
         "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Full Stack Engineer package, including base, bonus, equity, and review cycle?",
-        "valueAnchor": "Based on the scope of Full Stack Engineer and my fit around React, engineer, dashboards, data, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
+        "valueAnchor": "Based on the scope of Full Stack Engineer and my fit around React, Next.js, engineer, dashboards., I would like to calibrate toward the stronger end of the range if the team sees the level match. My research indicates the GLOBAL midpoint for this level is around USD 90,000 (annual).",
         "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
         "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
         "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
@@ -233,14 +138,15 @@ window.CV_CAREER_OPS_COMPENSATION = {
         "Map the job scope to proof points in the tailored CV.",
         "Prepare one counter package with base, bonus/equity, and non-cash levers."
       ],
-      "targetFrame": "Do not name a number first. Ask for the approved range, level, and total compensation structure before anchoring."
+      "targetFrame": "Market benchmark for mid in GLOBAL is USD 70,000 – 115,000 (annual). Do not name a number first — ask for the approved range, then anchor near the midpoint or above."
     },
     {
-      "jobKey": "url:https://japan-dev.com/jobs/axelspace/axelspace-earth-observation-data-scientist-9s0x5x",
-      "company": "Axelspace",
-      "title": "Data Scientist / ML Engineer",
+      "jobKey": "url:https://japan-dev.com/jobs/geniee/geniee-japan-airesearch-engineer-llm-d2exun",
+      "company": "Geniee",
+      "title": "JAPAN AI - Research Engineer, LLM",
       "market": "global",
       "inferredLevel": "mid",
+      "candidateLevel": "mid",
       "leverage": "medium",
       "evidence": {
         "salaryMentions": [],
@@ -250,125 +156,19 @@ window.CV_CAREER_OPS_COMPENSATION = {
           "learning budget"
         ]
       },
-      "structure": {
-        "baseSalary": [
-          "Need verified market data or recruiter range before setting a numeric anchor."
-        ],
-        "bonus": "Ask whether there is annual bonus, performance bonus, or sign-on bonus.",
-        "equity": "Ask whether equity, RSU, options, or profit-sharing exists.",
-        "benefits": [
-          "Health / insurance coverage",
-          "Paid leave and holidays",
-          "Learning budget or certification support",
-          "Remote/hybrid setup, commute, or relocation support",
-          "Review cycle and promotion timeline"
-        ],
-        "nonCashLevers": [
-          "Title / level calibration",
-          "Start date flexibility",
-          "Remote days",
-          "Equipment budget",
-          "First review at 3 or 6 months",
-          "Conference / learning budget"
-        ]
-      },
-      "negotiationScript": {
-        "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Data Scientist / ML Engineer package, including base, bonus, equity, and review cycle?",
-        "valueAnchor": "Based on the scope of Data Scientist / ML Engineer and my fit around Analytics, remote, engineer, product, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
-        "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
-        "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
-        "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
-      },
-      "redLines": [
-        "Do not disclose current compensation unless legally appropriate and strategically useful.",
-        "Do not accept verbal-only compensation details; ask for written package components.",
-        "Do not negotiate before confirming level, scope, work mode, and review cycle.",
-        "Do not trade base salary away without valuing the replacement benefit."
-      ],
-      "nextActions": [
-        "Collect market compensation evidence before naming a number.",
-        "Ask recruiter for approved range and level.",
-        "Map the job scope to proof points in the tailored CV.",
-        "Prepare one counter package with base, bonus/equity, and non-cash levers."
-      ],
-      "targetFrame": "Do not name a number first. Ask for the approved range, level, and total compensation structure before anchoring."
-    },
-    {
-      "jobKey": "url:https://japan-dev.com/jobs/metanomaly/metanomaly-growth-engineer-saozy2",
-      "company": "Metanomaly",
-      "title": "Growth Engineer",
-      "market": "global",
-      "inferredLevel": "senior-plus",
-      "leverage": "low",
-      "evidence": {
-        "salaryMentions": [],
-        "benefitSignals": [
-          "work-mode flexibility",
-          "signing / relocation",
-          "learning budget"
-        ]
+      "marketBenchmark": {
+        "currency": "USD",
+        "unit": "annual",
+        "range": "USD 70,000 – 115,000",
+        "midpoint": "USD 90,000",
+        "floor": 70000,
+        "ceiling": 115000,
+        "source": "Arc.dev / Ruby on Remote 2024-2026",
+        "note": "Remote/global rates. Taiwan-based remote developers average ~$54K USD; Japan-based ~$68-115K USD depending on stack."
       },
       "structure": {
         "baseSalary": [
-          "Need verified market data or recruiter range before setting a numeric anchor."
-        ],
-        "bonus": "Ask whether there is annual bonus, performance bonus, or sign-on bonus.",
-        "equity": "Ask whether equity, RSU, options, or profit-sharing exists.",
-        "benefits": [
-          "Health / insurance coverage",
-          "Paid leave and holidays",
-          "Learning budget or certification support",
-          "Remote/hybrid setup, commute, or relocation support",
-          "Review cycle and promotion timeline"
-        ],
-        "nonCashLevers": [
-          "Title / level calibration",
-          "Start date flexibility",
-          "Remote days",
-          "Equipment budget",
-          "First review at 3 or 6 months",
-          "Conference / learning budget"
-        ]
-      },
-      "negotiationScript": {
-        "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Growth Engineer package, including base, bonus, equity, and review cycle?",
-        "valueAnchor": "Based on the scope of Growth Engineer and my fit around API, engineer, product, data, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
-        "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
-        "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
-        "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
-      },
-      "redLines": [
-        "Do not disclose current compensation unless legally appropriate and strategically useful.",
-        "Do not accept verbal-only compensation details; ask for written package components.",
-        "Do not negotiate before confirming level, scope, work mode, and review cycle.",
-        "Do not trade base salary away without valuing the replacement benefit."
-      ],
-      "nextActions": [
-        "Collect market compensation evidence before naming a number.",
-        "Ask recruiter for approved range and level.",
-        "Map the job scope to proof points in the tailored CV.",
-        "Prepare one counter package with base, bonus/equity, and non-cash levers."
-      ],
-      "targetFrame": "Do not name a number first. Ask for the approved range, level, and total compensation structure before anchoring."
-    },
-    {
-      "jobKey": "url:https://japan-dev.com/jobs/geniee/geniee-japan-airesearch-engineer-llm-d2exun",
-      "company": "Geniee",
-      "title": "JAPAN AI - Research Engineer, LLM",
-      "market": "global",
-      "inferredLevel": "intern",
-      "leverage": "low",
-      "evidence": {
-        "salaryMentions": [],
-        "benefitSignals": [
-          "work-mode flexibility",
-          "signing / relocation",
-          "learning budget"
-        ]
-      },
-      "structure": {
-        "baseSalary": [
-          "Need verified market data or recruiter range before setting a numeric anchor."
+          "Market range for mid (GLOBAL): USD 70,000 – 115,000 annual. Source: Arc.dev / Ruby on Remote 2024-2026."
         ],
         "bonus": "Ask whether there is annual bonus, performance bonus, or sign-on bonus.",
         "equity": "Ask whether equity, RSU, options, or profit-sharing exists.",
@@ -390,7 +190,7 @@ window.CV_CAREER_OPS_COMPENSATION = {
       },
       "negotiationScript": {
         "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the JAPAN AI - Research Engineer, LLM package, including base, bonus, equity, and review cycle?",
-        "valueAnchor": "Based on the scope of JAPAN AI - Research Engineer, LLM and my fit around React, engineer, product, data, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
+        "valueAnchor": "Based on the scope of JAPAN AI - Research Engineer, LLM and my fit around TypeScript, React, Next.js, engineer, I would like to calibrate toward the stronger end of the range if the team sees the level match. My research indicates the GLOBAL midpoint for this level is around USD 90,000 (annual).",
         "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
         "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
         "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
@@ -407,72 +207,16 @@ window.CV_CAREER_OPS_COMPENSATION = {
         "Map the job scope to proof points in the tailored CV.",
         "Prepare one counter package with base, bonus/equity, and non-cash levers."
       ],
-      "targetFrame": "Do not name a number first. Ask for the approved range, level, and total compensation structure before anchoring."
+      "targetFrame": "Market benchmark for mid in GLOBAL is USD 70,000 – 115,000 (annual). Do not name a number first — ask for the approved range, then anchor near the midpoint or above."
     },
     {
-      "jobKey": "url:https://www.tokyodev.com/companies/moneyforward/jobs/information-systems-engineer-global-it-division-tokyo",
-      "company": "Money Forward",
-      "title": "Information Systems Engineer, Global IT Division, Tokyo",
+      "jobKey": "url:https://japan-dev.com/jobs/ai-robot-association/ai-robot-association-airoa-design-engineer-l4xpri",
+      "company": "AI Robot Association (AIRoA)",
+      "title": "Design Engineer",
       "market": "global",
-      "inferredLevel": "senior-plus",
-      "leverage": "low",
-      "evidence": {
-        "salaryMentions": [],
-        "benefitSignals": [
-          "work-mode flexibility",
-          "signing / relocation"
-        ]
-      },
-      "structure": {
-        "baseSalary": [
-          "Need verified market data or recruiter range before setting a numeric anchor."
-        ],
-        "bonus": "Ask whether there is annual bonus, performance bonus, or sign-on bonus.",
-        "equity": "Ask whether equity, RSU, options, or profit-sharing exists.",
-        "benefits": [
-          "Health / insurance coverage",
-          "Paid leave and holidays",
-          "Learning budget or certification support",
-          "Remote/hybrid setup, commute, or relocation support",
-          "Review cycle and promotion timeline"
-        ],
-        "nonCashLevers": [
-          "Title / level calibration",
-          "Start date flexibility",
-          "Remote days",
-          "Equipment budget",
-          "First review at 3 or 6 months",
-          "Conference / learning budget"
-        ]
-      },
-      "negotiationScript": {
-        "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Information Systems Engineer, Global IT Division, Tokyo package, including base, bonus, equity, and review cycle?",
-        "valueAnchor": "Based on the scope of Information Systems Engineer, Global IT Division, Tokyo and my fit around API, engineer, dashboards, data, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
-        "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
-        "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
-        "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
-      },
-      "redLines": [
-        "Do not disclose current compensation unless legally appropriate and strategically useful.",
-        "Do not accept verbal-only compensation details; ask for written package components.",
-        "Do not negotiate before confirming level, scope, work mode, and review cycle.",
-        "Do not trade base salary away without valuing the replacement benefit."
-      ],
-      "nextActions": [
-        "Collect market compensation evidence before naming a number.",
-        "Ask recruiter for approved range and level.",
-        "Map the job scope to proof points in the tailored CV.",
-        "Prepare one counter package with base, bonus/equity, and non-cash levers."
-      ],
-      "targetFrame": "Do not name a number first. Ask for the approved range, level, and total compensation structure before anchoring."
-    },
-    {
-      "jobKey": "url:https://www.tokyodev.com/companies/moneyforward/jobs/qa-engineer-money-forward-cloud-fukuoka",
-      "company": "Money Forward",
-      "title": "QA Engineer, Money Forward Cloud, Fukuoka",
-      "market": "global",
-      "inferredLevel": "senior-plus",
-      "leverage": "low",
+      "inferredLevel": "mid",
+      "candidateLevel": "mid",
+      "leverage": "medium",
       "evidence": {
         "salaryMentions": [],
         "benefitSignals": [
@@ -481,9 +225,19 @@ window.CV_CAREER_OPS_COMPENSATION = {
           "learning budget"
         ]
       },
+      "marketBenchmark": {
+        "currency": "USD",
+        "unit": "annual",
+        "range": "USD 70,000 – 115,000",
+        "midpoint": "USD 90,000",
+        "floor": 70000,
+        "ceiling": 115000,
+        "source": "Arc.dev / Ruby on Remote 2024-2026",
+        "note": "Remote/global rates. Taiwan-based remote developers average ~$54K USD; Japan-based ~$68-115K USD depending on stack."
+      },
       "structure": {
         "baseSalary": [
-          "Need verified market data or recruiter range before setting a numeric anchor."
+          "Market range for mid (GLOBAL): USD 70,000 – 115,000 annual. Source: Arc.dev / Ruby on Remote 2024-2026."
         ],
         "bonus": "Ask whether there is annual bonus, performance bonus, or sign-on bonus.",
         "equity": "Ask whether equity, RSU, options, or profit-sharing exists.",
@@ -504,8 +258,8 @@ window.CV_CAREER_OPS_COMPENSATION = {
         ]
       },
       "negotiationScript": {
-        "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the QA Engineer, Money Forward Cloud, Fukuoka package, including base, bonus, equity, and review cycle?",
-        "valueAnchor": "Based on the scope of QA Engineer, Money Forward Cloud, Fukuoka and my fit around React, API, engineer, product, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
+        "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Design Engineer package, including base, bonus, equity, and review cycle?",
+        "valueAnchor": "Based on the scope of Design Engineer and my fit around React, Next.js, Figma, design system, I would like to calibrate toward the stronger end of the range if the team sees the level match. My research indicates the GLOBAL midpoint for this level is around USD 90,000 (annual).",
         "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
         "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
         "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
@@ -522,127 +276,16 @@ window.CV_CAREER_OPS_COMPENSATION = {
         "Map the job scope to proof points in the tailored CV.",
         "Prepare one counter package with base, bonus/equity, and non-cash levers."
       ],
-      "targetFrame": "Do not name a number first. Ask for the approved range, level, and total compensation structure before anchoring."
-    },
-    {
-      "jobKey": "url:https://www.tokyodev.com/companies/tokuty/jobs/full-stack-engineer",
-      "company": "Tokuty",
-      "title": "Full Stack Engineer",
-      "market": "global",
-      "inferredLevel": "intern",
-      "leverage": "low",
-      "evidence": {
-        "salaryMentions": [],
-        "benefitSignals": []
-      },
-      "structure": {
-        "baseSalary": [
-          "Need verified market data or recruiter range before setting a numeric anchor."
-        ],
-        "bonus": "Ask whether there is annual bonus, performance bonus, or sign-on bonus.",
-        "equity": "Ask whether equity, RSU, options, or profit-sharing exists.",
-        "benefits": [
-          "Health / insurance coverage",
-          "Paid leave and holidays",
-          "Learning budget or certification support",
-          "Remote/hybrid setup, commute, or relocation support",
-          "Review cycle and promotion timeline"
-        ],
-        "nonCashLevers": [
-          "Title / level calibration",
-          "Start date flexibility",
-          "Remote days",
-          "Equipment budget",
-          "First review at 3 or 6 months",
-          "Conference / learning budget"
-        ]
-      },
-      "negotiationScript": {
-        "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Full Stack Engineer package, including base, bonus, equity, and review cycle?",
-        "valueAnchor": "Based on the scope of Full Stack Engineer and my fit around React, design system, engineer, product, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
-        "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
-        "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
-        "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
-      },
-      "redLines": [
-        "Do not disclose current compensation unless legally appropriate and strategically useful.",
-        "Do not accept verbal-only compensation details; ask for written package components.",
-        "Do not negotiate before confirming level, scope, work mode, and review cycle.",
-        "Do not trade base salary away without valuing the replacement benefit."
-      ],
-      "nextActions": [
-        "Collect market compensation evidence before naming a number.",
-        "Ask recruiter for approved range and level.",
-        "Map the job scope to proof points in the tailored CV.",
-        "Prepare one counter package with base, bonus/equity, and non-cash levers."
-      ],
-      "targetFrame": "Do not name a number first. Ask for the approved range, level, and total compensation structure before anchoring."
-    },
-    {
-      "jobKey": "url:https://cardlytics.wd5.myworkdayjobs.com/cardlyticsexternalcareersite/job/taipei-city/senior-software-engineer_jr100384",
-      "company": "Cardlytics Workday Taiwan",
-      "title": "Senior Software Engineer",
-      "market": "tw",
-      "inferredLevel": "senior-plus",
-      "leverage": "low",
-      "evidence": {
-        "salaryMentions": [],
-        "benefitSignals": [
-          "equity",
-          "work-mode flexibility",
-          "signing / relocation"
-        ]
-      },
-      "structure": {
-        "baseSalary": [
-          "Need verified market data or recruiter range before setting a numeric anchor."
-        ],
-        "bonus": "Ask whether there is annual bonus, performance bonus, or sign-on bonus.",
-        "equity": "Clarify grant size, vesting schedule, refreshers, and strike/RSU terms.",
-        "benefits": [
-          "Health / insurance coverage",
-          "Paid leave and holidays",
-          "Learning budget or certification support",
-          "Remote/hybrid setup, commute, or relocation support",
-          "Review cycle and promotion timeline"
-        ],
-        "nonCashLevers": [
-          "Title / level calibration",
-          "Start date flexibility",
-          "Remote days",
-          "Equipment budget",
-          "First review at 3 or 6 months",
-          "Conference / learning budget"
-        ]
-      },
-      "negotiationScript": {
-        "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Senior Software Engineer package, including base, bonus, equity, and review cycle?",
-        "valueAnchor": "Based on the scope of Senior Software Engineer and my fit around API, engineer, product, data, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
-        "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
-        "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
-        "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
-      },
-      "redLines": [
-        "Do not disclose current compensation unless legally appropriate and strategically useful.",
-        "Do not accept verbal-only compensation details; ask for written package components.",
-        "Do not negotiate before confirming level, scope, work mode, and review cycle.",
-        "Do not trade base salary away without valuing the replacement benefit."
-      ],
-      "nextActions": [
-        "Collect market compensation evidence before naming a number.",
-        "Ask recruiter for approved range and level.",
-        "Map the job scope to proof points in the tailored CV.",
-        "Prepare one counter package with base, bonus/equity, and non-cash levers."
-      ],
-      "targetFrame": "Do not name a number first. Ask for the approved range, level, and total compensation structure before anchoring."
+      "targetFrame": "Market benchmark for mid in GLOBAL is USD 70,000 – 115,000 (annual). Do not name a number first — ask for the approved range, then anchor near the midpoint or above."
     },
     {
       "jobKey": "url:https://micron.wd1.myworkdayjobs.com/external/job/taichung---aatt-taiwan/senior-full-stack-software-engineer_jr101324",
       "company": "Micron Workday",
       "title": "Senior Full Stack Software Engineer",
       "market": "tw",
-      "inferredLevel": "intern",
-      "leverage": "low",
+      "inferredLevel": "senior",
+      "candidateLevel": "mid",
+      "leverage": "medium",
       "evidence": {
         "salaryMentions": [],
         "benefitSignals": [
@@ -651,9 +294,19 @@ window.CV_CAREER_OPS_COMPENSATION = {
           "learning budget"
         ]
       },
+      "marketBenchmark": {
+        "currency": "NTD",
+        "unit": "monthly",
+        "range": "NTD 55,000 – 90,000",
+        "midpoint": "NTD 70,000",
+        "floor": 55000,
+        "ceiling": 90000,
+        "source": "NodeFlair / PayScale TW 2024-2025",
+        "note": "Taipei market. Annual bonus (1-3 months) is common; multiply monthly by 13-14 for total annual estimate."
+      },
       "structure": {
         "baseSalary": [
-          "Need verified market data or recruiter range before setting a numeric anchor."
+          "Market range for mid (TW): NTD 55,000 – 90,000 monthly. Source: NodeFlair / PayScale TW 2024-2025."
         ],
         "bonus": "Ask whether there is annual bonus, performance bonus, or sign-on bonus.",
         "equity": "Clarify grant size, vesting schedule, refreshers, and strike/RSU terms.",
@@ -675,7 +328,7 @@ window.CV_CAREER_OPS_COMPENSATION = {
       },
       "negotiationScript": {
         "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Senior Full Stack Software Engineer package, including base, bonus, equity, and review cycle?",
-        "valueAnchor": "Based on the scope of Senior Full Stack Software Engineer and my fit around JavaScript, React, Analytics, engineer, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
+        "valueAnchor": "Based on the scope of Senior Full Stack Software Engineer and my fit around JavaScript, TypeScript, React, Analytics, I would like to calibrate toward the stronger end of the range if the team sees the level match. My research indicates the TW midpoint for this level is around NTD 70,000 (monthly).",
         "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
         "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
         "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
@@ -692,7 +345,76 @@ window.CV_CAREER_OPS_COMPENSATION = {
         "Map the job scope to proof points in the tailored CV.",
         "Prepare one counter package with base, bonus/equity, and non-cash levers."
       ],
-      "targetFrame": "Do not name a number first. Ask for the approved range, level, and total compensation structure before anchoring."
+      "targetFrame": "Market benchmark for mid in TW is NTD 55,000 – 90,000 (monthly). Do not name a number first — ask for the approved range, then anchor near the midpoint or above."
+    },
+    {
+      "jobKey": "url:https://japan-dev.com/jobs/money-forward/money-forward-product-reliability-engineer-cre-money-forward-cloud-fukuoka-kgsbzs",
+      "company": "Money Forward",
+      "title": "Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka",
+      "market": "global",
+      "inferredLevel": "mid",
+      "candidateLevel": "mid",
+      "leverage": "medium",
+      "evidence": {
+        "salaryMentions": [],
+        "benefitSignals": [
+          "work-mode flexibility",
+          "signing / relocation",
+          "learning budget"
+        ]
+      },
+      "marketBenchmark": {
+        "currency": "USD",
+        "unit": "annual",
+        "range": "USD 70,000 – 115,000",
+        "midpoint": "USD 90,000",
+        "floor": 70000,
+        "ceiling": 115000,
+        "source": "Arc.dev / Ruby on Remote 2024-2026",
+        "note": "Remote/global rates. Taiwan-based remote developers average ~$54K USD; Japan-based ~$68-115K USD depending on stack."
+      },
+      "structure": {
+        "baseSalary": [
+          "Market range for mid (GLOBAL): USD 70,000 – 115,000 annual. Source: Arc.dev / Ruby on Remote 2024-2026."
+        ],
+        "bonus": "Ask whether there is annual bonus, performance bonus, or sign-on bonus.",
+        "equity": "Ask whether equity, RSU, options, or profit-sharing exists.",
+        "benefits": [
+          "Health / insurance coverage",
+          "Paid leave and holidays",
+          "Learning budget or certification support",
+          "Remote/hybrid setup, commute, or relocation support",
+          "Review cycle and promotion timeline"
+        ],
+        "nonCashLevers": [
+          "Title / level calibration",
+          "Start date flexibility",
+          "Remote days",
+          "Equipment budget",
+          "First review at 3 or 6 months",
+          "Conference / learning budget"
+        ]
+      },
+      "negotiationScript": {
+        "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka package, including base, bonus, equity, and review cycle?",
+        "valueAnchor": "Based on the scope of Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka and my fit around TypeScript, React, Next.js, engineer, I would like to calibrate toward the stronger end of the range if the team sees the level match. My research indicates the GLOBAL midpoint for this level is around USD 90,000 (annual).",
+        "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
+        "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
+        "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
+      },
+      "redLines": [
+        "Do not disclose current compensation unless legally appropriate and strategically useful.",
+        "Do not accept verbal-only compensation details; ask for written package components.",
+        "Do not negotiate before confirming level, scope, work mode, and review cycle.",
+        "Do not trade base salary away without valuing the replacement benefit."
+      ],
+      "nextActions": [
+        "Collect market compensation evidence before naming a number.",
+        "Ask recruiter for approved range and level.",
+        "Map the job scope to proof points in the tailored CV.",
+        "Prepare one counter package with base, bonus/equity, and non-cash levers."
+      ],
+      "targetFrame": "Market benchmark for mid in GLOBAL is USD 70,000 – 115,000 (annual). Do not name a number first — ask for the approved range, then anchor near the midpoint or above."
     },
     {
       "jobKey": "url:https://japan-dev.com/jobs/artytech/artytech-tech-lead--cto-candidate-full-stack-25pe6i",
@@ -700,14 +422,25 @@ window.CV_CAREER_OPS_COMPENSATION = {
       "title": "Tech Lead / CTO Candidate (Full-stack)",
       "market": "global",
       "inferredLevel": "senior-plus",
-      "leverage": "low",
+      "candidateLevel": "mid",
+      "leverage": "medium",
       "evidence": {
         "salaryMentions": [],
         "benefitSignals": []
       },
+      "marketBenchmark": {
+        "currency": "USD",
+        "unit": "annual",
+        "range": "USD 70,000 – 115,000",
+        "midpoint": "USD 90,000",
+        "floor": 70000,
+        "ceiling": 115000,
+        "source": "Arc.dev / Ruby on Remote 2024-2026",
+        "note": "Remote/global rates. Taiwan-based remote developers average ~$54K USD; Japan-based ~$68-115K USD depending on stack."
+      },
       "structure": {
         "baseSalary": [
-          "Need verified market data or recruiter range before setting a numeric anchor."
+          "Market range for mid (GLOBAL): USD 70,000 – 115,000 annual. Source: Arc.dev / Ruby on Remote 2024-2026."
         ],
         "bonus": "Ask whether there is annual bonus, performance bonus, or sign-on bonus.",
         "equity": "Ask whether equity, RSU, options, or profit-sharing exists.",
@@ -729,7 +462,7 @@ window.CV_CAREER_OPS_COMPENSATION = {
       },
       "negotiationScript": {
         "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Tech Lead / CTO Candidate (Full-stack) package, including base, bonus, equity, and review cycle?",
-        "valueAnchor": "Based on the scope of Tech Lead / CTO Candidate (Full-stack) and my fit around JavaScript, React, CSS, engineer, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
+        "valueAnchor": "Based on the scope of Tech Lead / CTO Candidate (Full-stack) and my fit around JavaScript, React, CSS, engineer, I would like to calibrate toward the stronger end of the range if the team sees the level match. My research indicates the GLOBAL midpoint for this level is around USD 90,000 (annual).",
         "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
         "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
         "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
@@ -746,14 +479,15 @@ window.CV_CAREER_OPS_COMPENSATION = {
         "Map the job scope to proof points in the tailored CV.",
         "Prepare one counter package with base, bonus/equity, and non-cash levers."
       ],
-      "targetFrame": "Do not name a number first. Ask for the approved range, level, and total compensation structure before anchoring."
+      "targetFrame": "Market benchmark for mid in GLOBAL is USD 70,000 – 115,000 (annual). Do not name a number first — ask for the approved range, then anchor near the midpoint or above."
     },
     {
-      "jobKey": "url:https://www.tokyodev.com/companies/moneyforward/jobs/backend-engineer-digital-bank",
-      "company": "Money Forward",
-      "title": "Backend Engineer, Digital Bank",
-      "market": "global",
-      "inferredLevel": "senior-plus",
+      "jobKey": "url:https://cardlytics.wd5.myworkdayjobs.com/cardlyticsexternalcareersite/job/taipei-city/senior-software-engineer_jr100384",
+      "company": "Cardlytics Workday Taiwan",
+      "title": "Senior Software Engineer",
+      "market": "tw",
+      "inferredLevel": "senior",
+      "candidateLevel": "mid",
       "leverage": "low",
       "evidence": {
         "salaryMentions": [],
@@ -763,9 +497,19 @@ window.CV_CAREER_OPS_COMPENSATION = {
           "signing / relocation"
         ]
       },
+      "marketBenchmark": {
+        "currency": "NTD",
+        "unit": "monthly",
+        "range": "NTD 55,000 – 90,000",
+        "midpoint": "NTD 70,000",
+        "floor": 55000,
+        "ceiling": 90000,
+        "source": "NodeFlair / PayScale TW 2024-2025",
+        "note": "Taipei market. Annual bonus (1-3 months) is common; multiply monthly by 13-14 for total annual estimate."
+      },
       "structure": {
         "baseSalary": [
-          "Need verified market data or recruiter range before setting a numeric anchor."
+          "Market range for mid (TW): NTD 55,000 – 90,000 monthly. Source: NodeFlair / PayScale TW 2024-2025."
         ],
         "bonus": "Ask whether there is annual bonus, performance bonus, or sign-on bonus.",
         "equity": "Clarify grant size, vesting schedule, refreshers, and strike/RSU terms.",
@@ -786,8 +530,8 @@ window.CV_CAREER_OPS_COMPENSATION = {
         ]
       },
       "negotiationScript": {
-        "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Backend Engineer, Digital Bank package, including base, bonus, equity, and review cycle?",
-        "valueAnchor": "Based on the scope of Backend Engineer, Digital Bank and my fit around API, engineer, product, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
+        "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Senior Software Engineer package, including base, bonus, equity, and review cycle?",
+        "valueAnchor": "Based on the scope of Senior Software Engineer and my fit around TypeScript, API, engineer, product, I would like to calibrate toward the stronger end of the range if the team sees the level match. My research indicates the TW midpoint for this level is around NTD 70,000 (monthly).",
         "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
         "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
         "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
@@ -804,127 +548,15 @@ window.CV_CAREER_OPS_COMPENSATION = {
         "Map the job scope to proof points in the tailored CV.",
         "Prepare one counter package with base, bonus/equity, and non-cash levers."
       ],
-      "targetFrame": "Do not name a number first. Ask for the approved range, level, and total compensation structure before anchoring."
+      "targetFrame": "Market benchmark for mid in TW is NTD 55,000 – 90,000 (monthly). Do not name a number first — ask for the approved range, then anchor near the midpoint or above."
     },
     {
-      "jobKey": "url:https://japan-dev.com/jobs/moneytree/moneytree-software-engineer-link-scrapers-r26492",
-      "company": "Moneytree",
-      "title": "Software Engineer, Link Scrapers (1 Year Contract)",
+      "jobKey": "url:https://japan-dev.com/jobs/axelspace/axelspace-earth-observation-data-scientist-9s0x5x",
+      "company": "Axelspace",
+      "title": "Data Scientist / ML Engineer",
       "market": "global",
       "inferredLevel": "mid",
-      "leverage": "low",
-      "evidence": {
-        "salaryMentions": [],
-        "benefitSignals": [
-          "signing / relocation"
-        ]
-      },
-      "structure": {
-        "baseSalary": [
-          "Need verified market data or recruiter range before setting a numeric anchor."
-        ],
-        "bonus": "Ask whether there is annual bonus, performance bonus, or sign-on bonus.",
-        "equity": "Ask whether equity, RSU, options, or profit-sharing exists.",
-        "benefits": [
-          "Health / insurance coverage",
-          "Paid leave and holidays",
-          "Learning budget or certification support",
-          "Remote/hybrid setup, commute, or relocation support",
-          "Review cycle and promotion timeline"
-        ],
-        "nonCashLevers": [
-          "Title / level calibration",
-          "Start date flexibility",
-          "Remote days",
-          "Equipment budget",
-          "First review at 3 or 6 months",
-          "Conference / learning budget"
-        ]
-      },
-      "negotiationScript": {
-        "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Software Engineer, Link Scrapers (1 Year Contract) package, including base, bonus, equity, and review cycle?",
-        "valueAnchor": "Based on the scope of Software Engineer, Link Scrapers (1 Year Contract) and my fit around JavaScript, remote, engineer, data, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
-        "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
-        "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
-        "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
-      },
-      "redLines": [
-        "Do not disclose current compensation unless legally appropriate and strategically useful.",
-        "Do not accept verbal-only compensation details; ask for written package components.",
-        "Do not negotiate before confirming level, scope, work mode, and review cycle.",
-        "Do not trade base salary away without valuing the replacement benefit."
-      ],
-      "nextActions": [
-        "Collect market compensation evidence before naming a number.",
-        "Ask recruiter for approved range and level.",
-        "Map the job scope to proof points in the tailored CV.",
-        "Prepare one counter package with base, bonus/equity, and non-cash levers."
-      ],
-      "targetFrame": "Do not name a number first. Ask for the approved range, level, and total compensation structure before anchoring."
-    },
-    {
-      "jobKey": "url:https://japan-dev.com/jobs/money-forward/money-forward-information-systems-engineer-global-it-division-tokyo-tituum",
-      "company": "Money Forward",
-      "title": "Information Systems Engineer (Global IT Division - Tokyo)",
-      "market": "global",
-      "inferredLevel": "intern",
-      "leverage": "low",
-      "evidence": {
-        "salaryMentions": [],
-        "benefitSignals": [
-          "work-mode flexibility",
-          "signing / relocation"
-        ]
-      },
-      "structure": {
-        "baseSalary": [
-          "Need verified market data or recruiter range before setting a numeric anchor."
-        ],
-        "bonus": "Ask whether there is annual bonus, performance bonus, or sign-on bonus.",
-        "equity": "Ask whether equity, RSU, options, or profit-sharing exists.",
-        "benefits": [
-          "Health / insurance coverage",
-          "Paid leave and holidays",
-          "Learning budget or certification support",
-          "Remote/hybrid setup, commute, or relocation support",
-          "Review cycle and promotion timeline"
-        ],
-        "nonCashLevers": [
-          "Title / level calibration",
-          "Start date flexibility",
-          "Remote days",
-          "Equipment budget",
-          "First review at 3 or 6 months",
-          "Conference / learning budget"
-        ]
-      },
-      "negotiationScript": {
-        "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Information Systems Engineer (Global IT Division - Tokyo) package, including base, bonus, equity, and review cycle?",
-        "valueAnchor": "Based on the scope of Information Systems Engineer (Global IT Division - Tokyo) and my fit around API, engineer, dashboards, data, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
-        "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
-        "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
-        "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
-      },
-      "redLines": [
-        "Do not disclose current compensation unless legally appropriate and strategically useful.",
-        "Do not accept verbal-only compensation details; ask for written package components.",
-        "Do not negotiate before confirming level, scope, work mode, and review cycle.",
-        "Do not trade base salary away without valuing the replacement benefit."
-      ],
-      "nextActions": [
-        "Collect market compensation evidence before naming a number.",
-        "Ask recruiter for approved range and level.",
-        "Map the job scope to proof points in the tailored CV.",
-        "Prepare one counter package with base, bonus/equity, and non-cash levers."
-      ],
-      "targetFrame": "Do not name a number first. Ask for the approved range, level, and total compensation structure before anchoring."
-    },
-    {
-      "jobKey": "url:https://japan-dev.com/jobs/shizuku-ai/shizuku-ai-software-engineer-backend-zvv206",
-      "company": "Shizuku AI",
-      "title": "Software Engineer, Backend",
-      "market": "global",
-      "inferredLevel": "intern",
+      "candidateLevel": "mid",
       "leverage": "low",
       "evidence": {
         "salaryMentions": [],
@@ -934,9 +566,157 @@ window.CV_CAREER_OPS_COMPENSATION = {
           "learning budget"
         ]
       },
+      "marketBenchmark": {
+        "currency": "USD",
+        "unit": "annual",
+        "range": "USD 70,000 – 115,000",
+        "midpoint": "USD 90,000",
+        "floor": 70000,
+        "ceiling": 115000,
+        "source": "Arc.dev / Ruby on Remote 2024-2026",
+        "note": "Remote/global rates. Taiwan-based remote developers average ~$54K USD; Japan-based ~$68-115K USD depending on stack."
+      },
       "structure": {
         "baseSalary": [
-          "Need verified market data or recruiter range before setting a numeric anchor."
+          "Market range for mid (GLOBAL): USD 70,000 – 115,000 annual. Source: Arc.dev / Ruby on Remote 2024-2026."
+        ],
+        "bonus": "Ask whether there is annual bonus, performance bonus, or sign-on bonus.",
+        "equity": "Ask whether equity, RSU, options, or profit-sharing exists.",
+        "benefits": [
+          "Health / insurance coverage",
+          "Paid leave and holidays",
+          "Learning budget or certification support",
+          "Remote/hybrid setup, commute, or relocation support",
+          "Review cycle and promotion timeline"
+        ],
+        "nonCashLevers": [
+          "Title / level calibration",
+          "Start date flexibility",
+          "Remote days",
+          "Equipment budget",
+          "First review at 3 or 6 months",
+          "Conference / learning budget"
+        ]
+      },
+      "negotiationScript": {
+        "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Data Scientist / ML Engineer package, including base, bonus, equity, and review cycle?",
+        "valueAnchor": "Based on the scope of Data Scientist / ML Engineer and my fit around Analytics, remote, engineer, product, I would like to calibrate toward the stronger end of the range if the team sees the level match. My research indicates the GLOBAL midpoint for this level is around USD 90,000 (annual).",
+        "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
+        "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
+        "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
+      },
+      "redLines": [
+        "Do not disclose current compensation unless legally appropriate and strategically useful.",
+        "Do not accept verbal-only compensation details; ask for written package components.",
+        "Do not negotiate before confirming level, scope, work mode, and review cycle.",
+        "Do not trade base salary away without valuing the replacement benefit."
+      ],
+      "nextActions": [
+        "Collect market compensation evidence before naming a number.",
+        "Ask recruiter for approved range and level.",
+        "Map the job scope to proof points in the tailored CV.",
+        "Prepare one counter package with base, bonus/equity, and non-cash levers."
+      ],
+      "targetFrame": "Market benchmark for mid in GLOBAL is USD 70,000 – 115,000 (annual). Do not name a number first — ask for the approved range, then anchor near the midpoint or above."
+    },
+    {
+      "jobKey": "url:https://japan-dev.com/jobs/metanomaly/metanomaly-growth-engineer-saozy2",
+      "company": "Metanomaly",
+      "title": "Growth Engineer",
+      "market": "global",
+      "inferredLevel": "mid",
+      "candidateLevel": "mid",
+      "leverage": "low",
+      "evidence": {
+        "salaryMentions": [],
+        "benefitSignals": [
+          "work-mode flexibility",
+          "signing / relocation",
+          "learning budget"
+        ]
+      },
+      "marketBenchmark": {
+        "currency": "USD",
+        "unit": "annual",
+        "range": "USD 70,000 – 115,000",
+        "midpoint": "USD 90,000",
+        "floor": 70000,
+        "ceiling": 115000,
+        "source": "Arc.dev / Ruby on Remote 2024-2026",
+        "note": "Remote/global rates. Taiwan-based remote developers average ~$54K USD; Japan-based ~$68-115K USD depending on stack."
+      },
+      "structure": {
+        "baseSalary": [
+          "Market range for mid (GLOBAL): USD 70,000 – 115,000 annual. Source: Arc.dev / Ruby on Remote 2024-2026."
+        ],
+        "bonus": "Ask whether there is annual bonus, performance bonus, or sign-on bonus.",
+        "equity": "Ask whether equity, RSU, options, or profit-sharing exists.",
+        "benefits": [
+          "Health / insurance coverage",
+          "Paid leave and holidays",
+          "Learning budget or certification support",
+          "Remote/hybrid setup, commute, or relocation support",
+          "Review cycle and promotion timeline"
+        ],
+        "nonCashLevers": [
+          "Title / level calibration",
+          "Start date flexibility",
+          "Remote days",
+          "Equipment budget",
+          "First review at 3 or 6 months",
+          "Conference / learning budget"
+        ]
+      },
+      "negotiationScript": {
+        "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Growth Engineer package, including base, bonus, equity, and review cycle?",
+        "valueAnchor": "Based on the scope of Growth Engineer and my fit around API, engineer, product, data, I would like to calibrate toward the stronger end of the range if the team sees the level match. My research indicates the GLOBAL midpoint for this level is around USD 90,000 (annual).",
+        "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
+        "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
+        "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
+      },
+      "redLines": [
+        "Do not disclose current compensation unless legally appropriate and strategically useful.",
+        "Do not accept verbal-only compensation details; ask for written package components.",
+        "Do not negotiate before confirming level, scope, work mode, and review cycle.",
+        "Do not trade base salary away without valuing the replacement benefit."
+      ],
+      "nextActions": [
+        "Collect market compensation evidence before naming a number.",
+        "Ask recruiter for approved range and level.",
+        "Map the job scope to proof points in the tailored CV.",
+        "Prepare one counter package with base, bonus/equity, and non-cash levers."
+      ],
+      "targetFrame": "Market benchmark for mid in GLOBAL is USD 70,000 – 115,000 (annual). Do not name a number first — ask for the approved range, then anchor near the midpoint or above."
+    },
+    {
+      "jobKey": "url:https://japan-dev.com/jobs/shizuku-ai/shizuku-ai-software-engineer-backend-zvv206",
+      "company": "Shizuku AI",
+      "title": "Software Engineer, Backend",
+      "market": "global",
+      "inferredLevel": "senior-plus",
+      "candidateLevel": "mid",
+      "leverage": "low",
+      "evidence": {
+        "salaryMentions": [],
+        "benefitSignals": [
+          "work-mode flexibility",
+          "signing / relocation",
+          "learning budget"
+        ]
+      },
+      "marketBenchmark": {
+        "currency": "USD",
+        "unit": "annual",
+        "range": "USD 70,000 – 115,000",
+        "midpoint": "USD 90,000",
+        "floor": 70000,
+        "ceiling": 115000,
+        "source": "Arc.dev / Ruby on Remote 2024-2026",
+        "note": "Remote/global rates. Taiwan-based remote developers average ~$54K USD; Japan-based ~$68-115K USD depending on stack."
+      },
+      "structure": {
+        "baseSalary": [
+          "Market range for mid (GLOBAL): USD 70,000 – 115,000 annual. Source: Arc.dev / Ruby on Remote 2024-2026."
         ],
         "bonus": "Ask whether there is annual bonus, performance bonus, or sign-on bonus.",
         "equity": "Ask whether equity, RSU, options, or profit-sharing exists.",
@@ -958,7 +738,7 @@ window.CV_CAREER_OPS_COMPENSATION = {
       },
       "negotiationScript": {
         "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Software Engineer, Backend package, including base, bonus, equity, and review cycle?",
-        "valueAnchor": "Based on the scope of Software Engineer, Backend and my fit around remote, engineer, product, data, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
+        "valueAnchor": "Based on the scope of Software Engineer, Backend and my fit around TypeScript, remote, engineer, product, I would like to calibrate toward the stronger end of the range if the team sees the level match. My research indicates the GLOBAL midpoint for this level is around USD 90,000 (annual).",
         "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
         "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
         "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
@@ -975,7 +755,76 @@ window.CV_CAREER_OPS_COMPENSATION = {
         "Map the job scope to proof points in the tailored CV.",
         "Prepare one counter package with base, bonus/equity, and non-cash levers."
       ],
-      "targetFrame": "Do not name a number first. Ask for the approved range, level, and total compensation structure before anchoring."
+      "targetFrame": "Market benchmark for mid in GLOBAL is USD 70,000 – 115,000 (annual). Do not name a number first — ask for the approved range, then anchor near the midpoint or above."
+    },
+    {
+      "jobKey": "url:https://www.tokyodev.com/companies/moneyforward/jobs/backend-engineer-digital-bank",
+      "company": "Money Forward",
+      "title": "Backend Engineer, Digital Bank",
+      "market": "global",
+      "inferredLevel": "mid",
+      "candidateLevel": "mid",
+      "leverage": "low",
+      "evidence": {
+        "salaryMentions": [],
+        "benefitSignals": [
+          "equity",
+          "work-mode flexibility",
+          "signing / relocation"
+        ]
+      },
+      "marketBenchmark": {
+        "currency": "USD",
+        "unit": "annual",
+        "range": "USD 70,000 – 115,000",
+        "midpoint": "USD 90,000",
+        "floor": 70000,
+        "ceiling": 115000,
+        "source": "Arc.dev / Ruby on Remote 2024-2026",
+        "note": "Remote/global rates. Taiwan-based remote developers average ~$54K USD; Japan-based ~$68-115K USD depending on stack."
+      },
+      "structure": {
+        "baseSalary": [
+          "Market range for mid (GLOBAL): USD 70,000 – 115,000 annual. Source: Arc.dev / Ruby on Remote 2024-2026."
+        ],
+        "bonus": "Ask whether there is annual bonus, performance bonus, or sign-on bonus.",
+        "equity": "Clarify grant size, vesting schedule, refreshers, and strike/RSU terms.",
+        "benefits": [
+          "Health / insurance coverage",
+          "Paid leave and holidays",
+          "Learning budget or certification support",
+          "Remote/hybrid setup, commute, or relocation support",
+          "Review cycle and promotion timeline"
+        ],
+        "nonCashLevers": [
+          "Title / level calibration",
+          "Start date flexibility",
+          "Remote days",
+          "Equipment budget",
+          "First review at 3 or 6 months",
+          "Conference / learning budget"
+        ]
+      },
+      "negotiationScript": {
+        "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Backend Engineer, Digital Bank package, including base, bonus, equity, and review cycle?",
+        "valueAnchor": "Based on the scope of Backend Engineer, Digital Bank and my fit around API, engineer, product, I would like to calibrate toward the stronger end of the range if the team sees the level match. My research indicates the GLOBAL midpoint for this level is around USD 90,000 (annual).",
+        "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
+        "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
+        "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
+      },
+      "redLines": [
+        "Do not disclose current compensation unless legally appropriate and strategically useful.",
+        "Do not accept verbal-only compensation details; ask for written package components.",
+        "Do not negotiate before confirming level, scope, work mode, and review cycle.",
+        "Do not trade base salary away without valuing the replacement benefit."
+      ],
+      "nextActions": [
+        "Collect market compensation evidence before naming a number.",
+        "Ask recruiter for approved range and level.",
+        "Map the job scope to proof points in the tailored CV.",
+        "Prepare one counter package with base, bonus/equity, and non-cash levers."
+      ],
+      "targetFrame": "Market benchmark for mid in GLOBAL is USD 70,000 – 115,000 (annual). Do not name a number first — ask for the approved range, then anchor near the midpoint or above."
     },
     {
       "jobKey": "url:https://japan-dev.com/jobs/metanomaly/mewtant-growth-engineer-so4y2r",
@@ -983,6 +832,7 @@ window.CV_CAREER_OPS_COMPENSATION = {
       "title": "Frontend Design Engineer",
       "market": "global",
       "inferredLevel": "mid",
+      "candidateLevel": "mid",
       "leverage": "low",
       "evidence": {
         "salaryMentions": [],
@@ -992,9 +842,19 @@ window.CV_CAREER_OPS_COMPENSATION = {
           "learning budget"
         ]
       },
+      "marketBenchmark": {
+        "currency": "USD",
+        "unit": "annual",
+        "range": "USD 70,000 – 115,000",
+        "midpoint": "USD 90,000",
+        "floor": 70000,
+        "ceiling": 115000,
+        "source": "Arc.dev / Ruby on Remote 2024-2026",
+        "note": "Remote/global rates. Taiwan-based remote developers average ~$54K USD; Japan-based ~$68-115K USD depending on stack."
+      },
       "structure": {
         "baseSalary": [
-          "Need verified market data or recruiter range before setting a numeric anchor."
+          "Market range for mid (GLOBAL): USD 70,000 – 115,000 annual. Source: Arc.dev / Ruby on Remote 2024-2026."
         ],
         "bonus": "Ask whether there is annual bonus, performance bonus, or sign-on bonus.",
         "equity": "Ask whether equity, RSU, options, or profit-sharing exists.",
@@ -1016,7 +876,7 @@ window.CV_CAREER_OPS_COMPENSATION = {
       },
       "negotiationScript": {
         "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Frontend Design Engineer package, including base, bonus, equity, and review cycle?",
-        "valueAnchor": "Based on the scope of Frontend Design Engineer and my fit around React, design system, engineer, product, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
+        "valueAnchor": "Based on the scope of Frontend Design Engineer and my fit around React, Figma, design system, engineer, I would like to calibrate toward the stronger end of the range if the team sees the level match. My research indicates the GLOBAL midpoint for this level is around USD 90,000 (annual).",
         "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
         "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
         "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
@@ -1033,64 +893,7 @@ window.CV_CAREER_OPS_COMPENSATION = {
         "Map the job scope to proof points in the tailored CV.",
         "Prepare one counter package with base, bonus/equity, and non-cash levers."
       ],
-      "targetFrame": "Do not name a number first. Ask for the approved range, level, and total compensation structure before anchoring."
-    },
-    {
-      "jobKey": "url:https://www.tokyodev.com/companies/moneyforward/jobs/infrastructure-engineer-sre-aws",
-      "company": "Money Forward",
-      "title": "Infrastructure Engineer (SRE-AWS)",
-      "market": "global",
-      "inferredLevel": "mid",
-      "leverage": "low",
-      "evidence": {
-        "salaryMentions": [],
-        "benefitSignals": [
-          "work-mode flexibility",
-          "signing / relocation"
-        ]
-      },
-      "structure": {
-        "baseSalary": [
-          "Need verified market data or recruiter range before setting a numeric anchor."
-        ],
-        "bonus": "Ask whether there is annual bonus, performance bonus, or sign-on bonus.",
-        "equity": "Ask whether equity, RSU, options, or profit-sharing exists.",
-        "benefits": [
-          "Health / insurance coverage",
-          "Paid leave and holidays",
-          "Learning budget or certification support",
-          "Remote/hybrid setup, commute, or relocation support",
-          "Review cycle and promotion timeline"
-        ],
-        "nonCashLevers": [
-          "Title / level calibration",
-          "Start date flexibility",
-          "Remote days",
-          "Equipment budget",
-          "First review at 3 or 6 months",
-          "Conference / learning budget"
-        ]
-      },
-      "negotiationScript": {
-        "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Infrastructure Engineer (SRE-AWS) package, including base, bonus, equity, and review cycle?",
-        "valueAnchor": "Based on the scope of Infrastructure Engineer (SRE-AWS) and my fit around React, engineer, product, data, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
-        "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
-        "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
-        "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
-      },
-      "redLines": [
-        "Do not disclose current compensation unless legally appropriate and strategically useful.",
-        "Do not accept verbal-only compensation details; ask for written package components.",
-        "Do not negotiate before confirming level, scope, work mode, and review cycle.",
-        "Do not trade base salary away without valuing the replacement benefit."
-      ],
-      "nextActions": [
-        "Collect market compensation evidence before naming a number.",
-        "Ask recruiter for approved range and level.",
-        "Map the job scope to proof points in the tailored CV.",
-        "Prepare one counter package with base, bonus/equity, and non-cash levers."
-      ],
-      "targetFrame": "Do not name a number first. Ask for the approved range, level, and total compensation structure before anchoring."
+      "targetFrame": "Market benchmark for mid in GLOBAL is USD 70,000 – 115,000 (annual). Do not name a number first — ask for the approved range, then anchor near the midpoint or above."
     },
     {
       "jobKey": "url:https://jobs.lever.co/gogolook/903b657d-9530-4f59-9dea-e9075163f3e6",
@@ -1098,6 +901,7 @@ window.CV_CAREER_OPS_COMPENSATION = {
       "title": "US Market Intern (ScamAdviser)",
       "market": "tw",
       "inferredLevel": "intern",
+      "candidateLevel": "mid",
       "leverage": "low",
       "evidence": {
         "salaryMentions": [
@@ -1109,6 +913,16 @@ window.CV_CAREER_OPS_COMPENSATION = {
           "work-mode flexibility",
           "learning budget"
         ]
+      },
+      "marketBenchmark": {
+        "currency": "NTD",
+        "unit": "monthly",
+        "range": "NTD 55,000 – 90,000",
+        "midpoint": "NTD 70,000",
+        "floor": 55000,
+        "ceiling": 90000,
+        "source": "NodeFlair / PayScale TW 2024-2025",
+        "note": "Taipei market. Annual bonus (1-3 months) is common; multiply monthly by 13-14 for total annual estimate."
       },
       "structure": {
         "baseSalary": [
@@ -1135,7 +949,7 @@ window.CV_CAREER_OPS_COMPENSATION = {
       },
       "negotiationScript": {
         "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the US Market Intern (ScamAdviser) package, including base, bonus, equity, and review cycle?",
-        "valueAnchor": "Based on the scope of US Market Intern (ScamAdviser) and my fit around Analytics, remote, product, data, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
+        "valueAnchor": "Based on the scope of US Market Intern (ScamAdviser) and my fit around Analytics, remote, product, data, I would like to calibrate toward the stronger end of the range if the team sees the level match. My research indicates the TW midpoint for this level is around NTD 70,000 (monthly).",
         "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
         "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
         "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
@@ -1153,6 +967,411 @@ window.CV_CAREER_OPS_COMPENSATION = {
         "Prepare one counter package with base, bonus/equity, and non-cash levers."
       ],
       "targetFrame": "Use posted compensation as the floor for scope calibration; anchor near the upper third only after confirming level and scope."
+    },
+    {
+      "jobKey": "url:https://intel.wd1.myworkdayjobs.com/external/job/taiwan-taipei/intel-foundry-advanced-device-development-engineer_jr0281657",
+      "company": "Intel Workday Taiwan",
+      "title": "Intel Foundry Advanced Device Development Engineer",
+      "market": "tw",
+      "inferredLevel": "intern",
+      "candidateLevel": "mid",
+      "leverage": "low",
+      "evidence": {
+        "salaryMentions": [],
+        "benefitSignals": [
+          "signing / relocation",
+          "learning budget"
+        ]
+      },
+      "marketBenchmark": {
+        "currency": "NTD",
+        "unit": "monthly",
+        "range": "NTD 55,000 – 90,000",
+        "midpoint": "NTD 70,000",
+        "floor": 55000,
+        "ceiling": 90000,
+        "source": "NodeFlair / PayScale TW 2024-2025",
+        "note": "Taipei market. Annual bonus (1-3 months) is common; multiply monthly by 13-14 for total annual estimate."
+      },
+      "structure": {
+        "baseSalary": [
+          "Market range for mid (TW): NTD 55,000 – 90,000 monthly. Source: NodeFlair / PayScale TW 2024-2025."
+        ],
+        "bonus": "Ask whether there is annual bonus, performance bonus, or sign-on bonus.",
+        "equity": "Ask whether equity, RSU, options, or profit-sharing exists.",
+        "benefits": [
+          "Health / insurance coverage",
+          "Paid leave and holidays",
+          "Learning budget or certification support",
+          "Remote/hybrid setup, commute, or relocation support",
+          "Review cycle and promotion timeline"
+        ],
+        "nonCashLevers": [
+          "Title / level calibration",
+          "Start date flexibility",
+          "Remote days",
+          "Equipment budget",
+          "First review at 3 or 6 months",
+          "Conference / learning budget"
+        ]
+      },
+      "negotiationScript": {
+        "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Intel Foundry Advanced Device Development Engineer package, including base, bonus, equity, and review cycle?",
+        "valueAnchor": "Based on the scope of Intel Foundry Advanced Device Development Engineer and my fit around Analytics, engineer, product, data, I would like to calibrate toward the stronger end of the range if the team sees the level match. My research indicates the TW midpoint for this level is around NTD 70,000 (monthly).",
+        "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
+        "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
+        "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
+      },
+      "redLines": [
+        "Do not disclose current compensation unless legally appropriate and strategically useful.",
+        "Do not accept verbal-only compensation details; ask for written package components.",
+        "Do not negotiate before confirming level, scope, work mode, and review cycle.",
+        "Do not trade base salary away without valuing the replacement benefit."
+      ],
+      "nextActions": [
+        "Collect market compensation evidence before naming a number.",
+        "Ask recruiter for approved range and level.",
+        "Map the job scope to proof points in the tailored CV.",
+        "Prepare one counter package with base, bonus/equity, and non-cash levers."
+      ],
+      "targetFrame": "Market benchmark for mid in TW is NTD 55,000 – 90,000 (monthly). Do not name a number first — ask for the approved range, then anchor near the midpoint or above."
+    },
+    {
+      "jobKey": "url:https://nvidia.wd5.myworkdayjobs.com/nvidiaexternalcareersite/job/taiwan-taipei/production-application-engineer--enterprise_jr2017044",
+      "company": "NVIDIA Workday",
+      "title": "Production Application Engineer, Enterprise",
+      "market": "tw",
+      "inferredLevel": "mid",
+      "candidateLevel": "mid",
+      "leverage": "low",
+      "evidence": {
+        "salaryMentions": [],
+        "benefitSignals": []
+      },
+      "marketBenchmark": {
+        "currency": "NTD",
+        "unit": "monthly",
+        "range": "NTD 55,000 – 90,000",
+        "midpoint": "NTD 70,000",
+        "floor": 55000,
+        "ceiling": 90000,
+        "source": "NodeFlair / PayScale TW 2024-2025",
+        "note": "Taipei market. Annual bonus (1-3 months) is common; multiply monthly by 13-14 for total annual estimate."
+      },
+      "structure": {
+        "baseSalary": [
+          "Market range for mid (TW): NTD 55,000 – 90,000 monthly. Source: NodeFlair / PayScale TW 2024-2025."
+        ],
+        "bonus": "Ask whether there is annual bonus, performance bonus, or sign-on bonus.",
+        "equity": "Ask whether equity, RSU, options, or profit-sharing exists.",
+        "benefits": [
+          "Health / insurance coverage",
+          "Paid leave and holidays",
+          "Learning budget or certification support",
+          "Remote/hybrid setup, commute, or relocation support",
+          "Review cycle and promotion timeline"
+        ],
+        "nonCashLevers": [
+          "Title / level calibration",
+          "Start date flexibility",
+          "Remote days",
+          "Equipment budget",
+          "First review at 3 or 6 months",
+          "Conference / learning budget"
+        ]
+      },
+      "negotiationScript": {
+        "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Production Application Engineer, Enterprise package, including base, bonus, equity, and review cycle?",
+        "valueAnchor": "Based on the scope of Production Application Engineer, Enterprise and my fit around engineer, product, I would like to calibrate toward the stronger end of the range if the team sees the level match. My research indicates the TW midpoint for this level is around NTD 70,000 (monthly).",
+        "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
+        "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
+        "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
+      },
+      "redLines": [
+        "Do not disclose current compensation unless legally appropriate and strategically useful.",
+        "Do not accept verbal-only compensation details; ask for written package components.",
+        "Do not negotiate before confirming level, scope, work mode, and review cycle.",
+        "Do not trade base salary away without valuing the replacement benefit."
+      ],
+      "nextActions": [
+        "Collect market compensation evidence before naming a number.",
+        "Ask recruiter for approved range and level.",
+        "Map the job scope to proof points in the tailored CV.",
+        "Prepare one counter package with base, bonus/equity, and non-cash levers."
+      ],
+      "targetFrame": "Market benchmark for mid in TW is NTD 55,000 – 90,000 (monthly). Do not name a number first — ask for the approved range, then anchor near the midpoint or above."
+    },
+    {
+      "jobKey": "url:https://japan-dev.com/jobs/shizuku-ai/shizuku-ai-mlops-engineer-h06e56",
+      "company": "Shizuku AI",
+      "title": "MLOps Engineer",
+      "market": "global",
+      "inferredLevel": "senior-plus",
+      "candidateLevel": "mid",
+      "leverage": "low",
+      "evidence": {
+        "salaryMentions": [],
+        "benefitSignals": [
+          "work-mode flexibility",
+          "signing / relocation",
+          "learning budget"
+        ]
+      },
+      "marketBenchmark": {
+        "currency": "USD",
+        "unit": "annual",
+        "range": "USD 70,000 – 115,000",
+        "midpoint": "USD 90,000",
+        "floor": 70000,
+        "ceiling": 115000,
+        "source": "Arc.dev / Ruby on Remote 2024-2026",
+        "note": "Remote/global rates. Taiwan-based remote developers average ~$54K USD; Japan-based ~$68-115K USD depending on stack."
+      },
+      "structure": {
+        "baseSalary": [
+          "Market range for mid (GLOBAL): USD 70,000 – 115,000 annual. Source: Arc.dev / Ruby on Remote 2024-2026."
+        ],
+        "bonus": "Ask whether there is annual bonus, performance bonus, or sign-on bonus.",
+        "equity": "Ask whether equity, RSU, options, or profit-sharing exists.",
+        "benefits": [
+          "Health / insurance coverage",
+          "Paid leave and holidays",
+          "Learning budget or certification support",
+          "Remote/hybrid setup, commute, or relocation support",
+          "Review cycle and promotion timeline"
+        ],
+        "nonCashLevers": [
+          "Title / level calibration",
+          "Start date flexibility",
+          "Remote days",
+          "Equipment budget",
+          "First review at 3 or 6 months",
+          "Conference / learning budget"
+        ]
+      },
+      "negotiationScript": {
+        "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the MLOps Engineer package, including base, bonus, equity, and review cycle?",
+        "valueAnchor": "Based on the scope of MLOps Engineer and my fit around remote, engineer, data, I would like to calibrate toward the stronger end of the range if the team sees the level match. My research indicates the GLOBAL midpoint for this level is around USD 90,000 (annual).",
+        "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
+        "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
+        "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
+      },
+      "redLines": [
+        "Do not disclose current compensation unless legally appropriate and strategically useful.",
+        "Do not accept verbal-only compensation details; ask for written package components.",
+        "Do not negotiate before confirming level, scope, work mode, and review cycle.",
+        "Do not trade base salary away without valuing the replacement benefit."
+      ],
+      "nextActions": [
+        "Collect market compensation evidence before naming a number.",
+        "Ask recruiter for approved range and level.",
+        "Map the job scope to proof points in the tailored CV.",
+        "Prepare one counter package with base, bonus/equity, and non-cash levers."
+      ],
+      "targetFrame": "Market benchmark for mid in GLOBAL is USD 70,000 – 115,000 (annual). Do not name a number first — ask for the approved range, then anchor near the midpoint or above."
+    },
+    {
+      "jobKey": "url:https://japan-dev.com/jobs/mode/mode-software-engineer-engineering-foundation-1b7ub5",
+      "company": "MODE",
+      "title": "Software Engineer (Engineering Foundation)",
+      "market": "global",
+      "inferredLevel": "mid",
+      "candidateLevel": "mid",
+      "leverage": "low",
+      "evidence": {
+        "salaryMentions": [],
+        "benefitSignals": [
+          "signing / relocation"
+        ]
+      },
+      "marketBenchmark": {
+        "currency": "USD",
+        "unit": "annual",
+        "range": "USD 70,000 – 115,000",
+        "midpoint": "USD 90,000",
+        "floor": 70000,
+        "ceiling": 115000,
+        "source": "Arc.dev / Ruby on Remote 2024-2026",
+        "note": "Remote/global rates. Taiwan-based remote developers average ~$54K USD; Japan-based ~$68-115K USD depending on stack."
+      },
+      "structure": {
+        "baseSalary": [
+          "Market range for mid (GLOBAL): USD 70,000 – 115,000 annual. Source: Arc.dev / Ruby on Remote 2024-2026."
+        ],
+        "bonus": "Ask whether there is annual bonus, performance bonus, or sign-on bonus.",
+        "equity": "Ask whether equity, RSU, options, or profit-sharing exists.",
+        "benefits": [
+          "Health / insurance coverage",
+          "Paid leave and holidays",
+          "Learning budget or certification support",
+          "Remote/hybrid setup, commute, or relocation support",
+          "Review cycle and promotion timeline"
+        ],
+        "nonCashLevers": [
+          "Title / level calibration",
+          "Start date flexibility",
+          "Remote days",
+          "Equipment budget",
+          "First review at 3 or 6 months",
+          "Conference / learning budget"
+        ]
+      },
+      "negotiationScript": {
+        "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Software Engineer (Engineering Foundation) package, including base, bonus, equity, and review cycle?",
+        "valueAnchor": "Based on the scope of Software Engineer (Engineering Foundation) and my fit around engineer, product, I would like to calibrate toward the stronger end of the range if the team sees the level match. My research indicates the GLOBAL midpoint for this level is around USD 90,000 (annual).",
+        "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
+        "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
+        "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
+      },
+      "redLines": [
+        "Do not disclose current compensation unless legally appropriate and strategically useful.",
+        "Do not accept verbal-only compensation details; ask for written package components.",
+        "Do not negotiate before confirming level, scope, work mode, and review cycle.",
+        "Do not trade base salary away without valuing the replacement benefit."
+      ],
+      "nextActions": [
+        "Collect market compensation evidence before naming a number.",
+        "Ask recruiter for approved range and level.",
+        "Map the job scope to proof points in the tailored CV.",
+        "Prepare one counter package with base, bonus/equity, and non-cash levers."
+      ],
+      "targetFrame": "Market benchmark for mid in GLOBAL is USD 70,000 – 115,000 (annual). Do not name a number first — ask for the approved range, then anchor near the midpoint or above."
+    },
+    {
+      "jobKey": "url:https://intel.wd1.myworkdayjobs.com/external/job/taiwan-taipei/network-systems-and-solutions-engineer---intern_jr0282402",
+      "company": "Intel Workday Taiwan",
+      "title": "Network Systems and Solutions Engineer - Intern",
+      "market": "tw",
+      "inferredLevel": "intern",
+      "candidateLevel": "mid",
+      "leverage": "low",
+      "evidence": {
+        "salaryMentions": [],
+        "benefitSignals": [
+          "work-mode flexibility",
+          "learning budget"
+        ]
+      },
+      "marketBenchmark": {
+        "currency": "NTD",
+        "unit": "monthly",
+        "range": "NTD 55,000 – 90,000",
+        "midpoint": "NTD 70,000",
+        "floor": 55000,
+        "ceiling": 90000,
+        "source": "NodeFlair / PayScale TW 2024-2025",
+        "note": "Taipei market. Annual bonus (1-3 months) is common; multiply monthly by 13-14 for total annual estimate."
+      },
+      "structure": {
+        "baseSalary": [
+          "Market range for mid (TW): NTD 55,000 – 90,000 monthly. Source: NodeFlair / PayScale TW 2024-2025."
+        ],
+        "bonus": "Ask whether there is annual bonus, performance bonus, or sign-on bonus.",
+        "equity": "Ask whether equity, RSU, options, or profit-sharing exists.",
+        "benefits": [
+          "Health / insurance coverage",
+          "Paid leave and holidays",
+          "Learning budget or certification support",
+          "Remote/hybrid setup, commute, or relocation support",
+          "Review cycle and promotion timeline"
+        ],
+        "nonCashLevers": [
+          "Title / level calibration",
+          "Start date flexibility",
+          "Remote days",
+          "Equipment budget",
+          "First review at 3 or 6 months",
+          "Conference / learning budget"
+        ]
+      },
+      "negotiationScript": {
+        "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Network Systems and Solutions Engineer - Intern package, including base, bonus, equity, and review cycle?",
+        "valueAnchor": "Based on the scope of Network Systems and Solutions Engineer - Intern and my fit around engineer, product, data, I would like to calibrate toward the stronger end of the range if the team sees the level match. My research indicates the TW midpoint for this level is around NTD 70,000 (monthly).",
+        "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
+        "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
+        "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
+      },
+      "redLines": [
+        "Do not disclose current compensation unless legally appropriate and strategically useful.",
+        "Do not accept verbal-only compensation details; ask for written package components.",
+        "Do not negotiate before confirming level, scope, work mode, and review cycle.",
+        "Do not trade base salary away without valuing the replacement benefit."
+      ],
+      "nextActions": [
+        "Collect market compensation evidence before naming a number.",
+        "Ask recruiter for approved range and level.",
+        "Map the job scope to proof points in the tailored CV.",
+        "Prepare one counter package with base, bonus/equity, and non-cash levers."
+      ],
+      "targetFrame": "Market benchmark for mid in TW is NTD 55,000 – 90,000 (monthly). Do not name a number first — ask for the approved range, then anchor near the midpoint or above."
+    },
+    {
+      "jobKey": "url:https://www.tokyodev.com/companies/paypay/jobs/automation-qa-engineer",
+      "company": "PayPay",
+      "title": "Automation QA Engineer",
+      "market": "global",
+      "inferredLevel": "junior",
+      "candidateLevel": "mid",
+      "leverage": "low",
+      "evidence": {
+        "salaryMentions": [],
+        "benefitSignals": [
+          "signing / relocation",
+          "learning budget"
+        ]
+      },
+      "marketBenchmark": {
+        "currency": "USD",
+        "unit": "annual",
+        "range": "USD 70,000 – 115,000",
+        "midpoint": "USD 90,000",
+        "floor": 70000,
+        "ceiling": 115000,
+        "source": "Arc.dev / Ruby on Remote 2024-2026",
+        "note": "Remote/global rates. Taiwan-based remote developers average ~$54K USD; Japan-based ~$68-115K USD depending on stack."
+      },
+      "structure": {
+        "baseSalary": [
+          "Market range for mid (GLOBAL): USD 70,000 – 115,000 annual. Source: Arc.dev / Ruby on Remote 2024-2026."
+        ],
+        "bonus": "Ask whether there is annual bonus, performance bonus, or sign-on bonus.",
+        "equity": "Ask whether equity, RSU, options, or profit-sharing exists.",
+        "benefits": [
+          "Health / insurance coverage",
+          "Paid leave and holidays",
+          "Learning budget or certification support",
+          "Remote/hybrid setup, commute, or relocation support",
+          "Review cycle and promotion timeline"
+        ],
+        "nonCashLevers": [
+          "Title / level calibration",
+          "Start date flexibility",
+          "Remote days",
+          "Equipment budget",
+          "First review at 3 or 6 months",
+          "Conference / learning budget"
+        ]
+      },
+      "negotiationScript": {
+        "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Automation QA Engineer package, including base, bonus, equity, and review cycle?",
+        "valueAnchor": "Based on the scope of Automation QA Engineer and my fit around API, engineer, product, data, I would like to calibrate toward the stronger end of the range if the team sees the level match. My research indicates the GLOBAL midpoint for this level is around USD 90,000 (annual).",
+        "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
+        "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
+        "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
+      },
+      "redLines": [
+        "Do not disclose current compensation unless legally appropriate and strategically useful.",
+        "Do not accept verbal-only compensation details; ask for written package components.",
+        "Do not negotiate before confirming level, scope, work mode, and review cycle.",
+        "Do not trade base salary away without valuing the replacement benefit."
+      ],
+      "nextActions": [
+        "Collect market compensation evidence before naming a number.",
+        "Ask recruiter for approved range and level.",
+        "Map the job scope to proof points in the tailored CV.",
+        "Prepare one counter package with base, bonus/equity, and non-cash levers."
+      ],
+      "targetFrame": "Market benchmark for mid in GLOBAL is USD 70,000 – 115,000 (annual). Do not name a number first — ask for the approved range, then anchor near the midpoint or above."
     }
   ]
 };

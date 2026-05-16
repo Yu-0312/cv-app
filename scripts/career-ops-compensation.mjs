@@ -10,6 +10,92 @@ const DEFAULT_OUT = "data/app/career-ops-compensation.json";
 const DEFAULT_JS_OUT = "data/app/career-ops-compensation.js";
 const DEFAULT_REPORT = "data/app/career-ops-compensation.md";
 
+// Market salary benchmarks sourced from TokyoDev, Japan-Dev, NodeFlair, PayScale (2024-2025 data).
+// Values are annual figures: JPY for Japan, NTD for Taiwan, USD for Global/Remote.
+// Ranges: [floor, midpoint, ceiling] per level.
+const SALARY_BENCHMARKS = {
+  jp: {
+    currency: "JPY",
+    unit: "annual",
+    source: "TokyoDev / Japan-Dev 2024-2025",
+    levels: {
+      intern:       { min: 2_500_000, mid: 3_500_000, max: 4_500_000 },
+      junior:       { min: 5_000_000, mid: 6_000_000, max: 7_000_000 },
+      mid:          { min: 6_000_000, mid: 8_000_000, max: 10_000_000 },
+      senior:       { min: 8_000_000, mid: 11_000_000, max: 15_000_000 },
+      "senior-plus":{ min: 10_000_000, mid: 14_000_000, max: 20_000_000 }
+    },
+    note: "Tokyo-based international tech companies skew higher (+30-50%). Japanese-headquartered companies average ¥8.5M for mid-level."
+  },
+  tw: {
+    currency: "NTD",
+    unit: "monthly",
+    source: "NodeFlair / PayScale TW 2024-2025",
+    levels: {
+      intern:       { min: 28_000, mid: 32_000, max: 38_000 },
+      junior:       { min: 40_000, mid: 48_000, max: 58_000 },
+      mid:          { min: 55_000, mid: 70_000, max: 90_000 },
+      senior:       { min: 80_000, mid: 100_000, max: 130_000 },
+      "senior-plus":{ min: 110_000, mid: 140_000, max: 180_000 }
+    },
+    note: "Taipei market. Annual bonus (1-3 months) is common; multiply monthly by 13-14 for total annual estimate."
+  },
+  global: {
+    currency: "USD",
+    unit: "annual",
+    source: "Arc.dev / Ruby on Remote 2024-2026",
+    levels: {
+      intern:       { min: 30_000, mid: 40_000, max: 55_000 },
+      junior:       { min: 50_000, mid: 65_000, max: 80_000 },
+      mid:          { min: 70_000, mid: 90_000, max: 115_000 },
+      senior:       { min: 100_000, mid: 125_000, max: 155_000 },
+      "senior-plus":{ min: 130_000, mid: 160_000, max: 210_000 }
+    },
+    note: "Remote/global rates. Taiwan-based remote developers average ~$54K USD; Japan-based ~$68-115K USD depending on stack."
+  }
+};
+
+function formatSalaryBenchmark(market, level) {
+  const marketData = SALARY_BENCHMARKS[market];
+  if (!marketData) return null;
+  const levelData = marketData.levels[level] || marketData.levels.mid;
+  const fmt = (n) => n.toLocaleString("en-US");
+  return {
+    currency: marketData.currency,
+    unit: marketData.unit,
+    range: `${marketData.currency} ${fmt(levelData.min)} – ${fmt(levelData.max)}`,
+    midpoint: `${marketData.currency} ${fmt(levelData.mid)}`,
+    floor: levelData.min,
+    ceiling: levelData.max,
+    source: marketData.source,
+    note: marketData.note
+  };
+}
+
+// Infer candidate's own seniority level from profile text — used to calibrate compensation strategy.
+function inferCandidateLevel(profile) {
+  const text = [
+    String(profile.role || ""),
+    String(profile.summary || ""),
+    String(profile.experience || "")
+  ].join(" ").toLowerCase();
+  // Explicit seniority signals in profile
+  if (/\b(staff|principal|director|head of|vp)\b/i.test(text)) return "senior-plus";
+  if (/\b(senior|sr\.?|lead|architect)\b/i.test(text)) return "senior";
+  if (/\b(junior|entry.?level|associate|新鮮人|初階)\b/i.test(text)) return "junior";
+  if (/\b(intern|internship|實習)\b/i.test(text)) return "intern";
+  // Infer from years of experience mentioned
+  const yearsMatch = text.match(/(\d+)\+?\s*(?:years?|yrs?)\s*(?:of\s+)?(?:experience|exp)/i);
+  if (yearsMatch) {
+    const years = Number.parseInt(yearsMatch[1], 10);
+    if (years >= 8) return "senior-plus";
+    if (years >= 5) return "senior";
+    if (years >= 2) return "mid";
+    return "junior";
+  }
+  return "mid";
+}
+
 function printHelp() {
   console.log(`Career Ops compensation planner
 
@@ -138,12 +224,16 @@ function buildCompPlan(job, profile, research) {
   const evidence = detectCompEvidence(job, dossier);
   const market = inferMarket(job);
   const level = inferLevel(job);
+  const candidateLevel = inferCandidateLevel(profile);
+  const benchmark = formatSalaryBenchmark(market === "unknown" ? "global" : market, candidateLevel);
   const score = Number(job.score || 0);
   const leverage = score >= 85 ? "high" : score >= 72 ? "medium" : "low";
   const hasSalaryEvidence = evidence.salaryMentions.length > 0;
   const targetFrame = hasSalaryEvidence
     ? "Use posted compensation as the floor for scope calibration; anchor near the upper third only after confirming level and scope."
-    : "Do not name a number first. Ask for the approved range, level, and total compensation structure before anchoring.";
+    : benchmark
+      ? `Market benchmark for ${candidateLevel} in ${market === "unknown" ? "global/remote" : market.toUpperCase()} is ${benchmark.range} (${benchmark.unit}). Do not name a number first — ask for the approved range, then anchor near the midpoint or above.`
+      : "Do not name a number first. Ask for the approved range, level, and total compensation structure before anchoring.";
 
   return {
     jobKey: job.jobKey || job.url || `${job.company}:${job.title}`,
@@ -151,10 +241,16 @@ function buildCompPlan(job, profile, research) {
     title: job.title || "",
     market,
     inferredLevel: level,
+    candidateLevel,
     leverage,
     evidence,
+    marketBenchmark: benchmark,
     structure: {
-      baseSalary: hasSalaryEvidence ? evidence.salaryMentions : ["Need verified market data or recruiter range before setting a numeric anchor."],
+      baseSalary: hasSalaryEvidence
+        ? evidence.salaryMentions
+        : benchmark
+          ? [`Market range for ${candidateLevel} (${market === "unknown" ? "global" : market.toUpperCase()}): ${benchmark.range} ${benchmark.unit}. Source: ${benchmark.source}.`]
+          : ["Need verified market data or recruiter range before setting a numeric anchor."],
       bonus: evidence.benefitSignals.includes("bonus") ? "Ask whether bonus is guaranteed, target, or discretionary." : "Ask whether there is annual bonus, performance bonus, or sign-on bonus.",
       equity: evidence.benefitSignals.includes("equity") ? "Clarify grant size, vesting schedule, refreshers, and strike/RSU terms." : "Ask whether equity, RSU, options, or profit-sharing exists.",
       benefits: [
@@ -175,7 +271,7 @@ function buildCompPlan(job, profile, research) {
     },
     negotiationScript: {
       recruiterRangeQuestion: `Before I anchor on a number, could you share the approved range and level for the ${job.title || "role"} package, including base, bonus, equity, and review cycle?`,
-      valueAnchor: `Based on the scope of ${job.title || "this role"} and my fit around ${array(job.evaluation?.ats_keywords?.found || job.intelligence?.features?.profileSkillHits).slice(0, 4).join(", ") || "the core requirements"}, I would like to calibrate toward the stronger end of the range if the team sees the level match.`,
+      valueAnchor: `Based on the scope of ${job.title || "this role"} and my fit around ${array(job.evaluation?.ats_keywords?.found || job.intelligence?.features?.profileSkillHits).slice(0, 4).join(", ") || "the core requirements"}, I would like to calibrate toward the stronger end of the range if the team sees the level match.${benchmark ? ` My research indicates the ${market === "unknown" ? "market" : market.toUpperCase()} midpoint for this level is around ${benchmark.midpoint} (${benchmark.unit}).` : ""}`,
       counterOffer: "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
       pauseLine: "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
       closeLine: "If we can align on the package and review timeline, I would feel confident moving forward."
@@ -212,8 +308,15 @@ function renderMarkdown(payload) {
       `## ${plan.company || "Unknown"} - ${plan.title}`,
       "",
       `- Market: ${plan.market}`,
-      `- Inferred level: ${plan.inferredLevel}`,
+      `- Job level (inferred): ${plan.inferredLevel}`,
+      `- Candidate level (from profile): ${plan.candidateLevel}`,
       `- Leverage: ${plan.leverage}`,
+      ...(plan.marketBenchmark ? [
+        `- Market benchmark (${plan.candidateLevel}): ${plan.marketBenchmark.range} ${plan.marketBenchmark.unit}`,
+        `- Benchmark midpoint: ${plan.marketBenchmark.midpoint}`,
+        `- Benchmark source: ${plan.marketBenchmark.source}`,
+        `- Note: ${plan.marketBenchmark.note}`
+      ] : []),
       `- Target frame: ${plan.targetFrame}`,
       "",
       "### Evidence",
