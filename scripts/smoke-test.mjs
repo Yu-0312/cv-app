@@ -1214,6 +1214,38 @@ async function main() {
         const jd = document.getElementById("careerJdInput");
         return section && section.style.display !== "none" && /Acme AI|DataWorks/.test(jd?.value || "");
       });
+
+      const localDeepFitAudit = await page.evaluate(async () => {
+        const originalUser = window.cvStudioState.user;
+        window.cvStudioState.user = null;
+        try {
+          const result = await window.careerOpsRunLocalDeepFit({
+            role: "Frontend Engineer",
+            skills: ["JavaScript", "React", "CSS", "Figma", "accessibility", "analytics"],
+            preferences: {
+              targetRoles: ["Frontend Engineer", "UI Engineer"],
+              keywords: ["dashboard", "design system"]
+            }
+          }, "", {});
+          window.careerOpsSetTab("deepfit");
+          return {
+            engine: result.summary?.engine,
+            totalResults: result.summary?.totalResults || 0,
+            layerA: result.layerA?.length || 0,
+            layerB: result.layerB?.length || 0,
+            layerC: result.layerC?.length || 0
+          };
+        } finally {
+          window.cvStudioState.user = originalUser;
+        }
+      });
+      assert.equal(localDeepFitAudit.engine, "frontend-local-heuristic");
+      assert.ok(localDeepFitAudit.totalResults >= 50, "本機 Deep Fit 應產生 50 筆以上結果");
+      assert.ok(localDeepFitAudit.layerA > 0, "本機 Deep Fit 應產生 Layer A 結果");
+      await page.waitForFunction(() => {
+        const area = document.getElementById("careerDeepFitArea");
+        return area && /比對總數/.test(area.textContent || "") && /深度評估/.test(area.textContent || "");
+      });
     });
 
     await withStep("GSAT 雲端同步逾時 fallback", async () => {
