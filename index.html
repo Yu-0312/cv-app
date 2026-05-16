@@ -6945,7 +6945,7 @@
           <div id="careerOpsSection" hidden>
             <div class="career-panel-label">大量職缺匯入</div>
             <textarea id="careerOpsImportInput" class="career-textarea" placeholder="貼上多筆職缺描述，每筆用 --- 分隔。建議包含公司、職稱、連結、職責與要求技能；只有 URL 的職缺會先進追蹤器，但需要補上描述才能評估。"></textarea>
-            <div class="career-ops-help">支援貼上 JD / URL 清單、匯入後端職缺快照與批次 AI 評估；大量職缺搜集由 worker + source adapters 處理，前端只負責追蹤、排序與客製 PDF。</div>
+            <div class="career-ops-help">支援貼上 JD / URL 清單、匯入職缺快照與批次 AI 評估；大量職缺搜集可由本機腳本或 GitHub Actions 產生快照，前端可直接追蹤、排序與客製 PDF。</div>
             <div class="career-ops-actions">
               <button id="careerOpsImportBtn" class="career-link-btn" type="button">匯入到追蹤器</button>
               <button id="careerOpsImportSnapshotBtn" class="career-link-btn" type="button">匯入後端職缺快照</button>
@@ -7009,8 +7009,8 @@
           <!-- Tab: Resume Upload -->
           <div id="careerUploadArea" hidden>
             <div style="max-width:560px;margin:0 auto;">
-              <h3 style="margin:0 0 6px;font-size:18px;font-weight:800;color:var(--ink);">上傳履歷，取得 50-100 職缺比對</h3>
-              <p style="margin:0 0 20px;font-size:13px;color:var(--muted);line-height:1.6;">系統會使用左側 API Key 在瀏覽器解析履歷，再比對職缺資料庫並回傳三層結果：深度評估（Layer A）、標準比對（Layer B）、探索訊號（Layer C）。</p>
+              <h3 style="margin:0 0 6px;font-size:18px;font-weight:800;color:var(--ink);">上傳履歷，本機比對 50-100 個職缺</h3>
+              <p style="margin:0 0 20px;font-size:13px;color:var(--muted);line-height:1.6;">系統會使用左側 API Key 在瀏覽器解析履歷，再直接於前端比對職缺資料庫並回傳三層結果：深度評估（Layer A）、標準比對（Layer B）、探索訊號（Layer C）。</p>
               <label class="career-upload-zone" id="careerUploadZone">
                 <input type="file" id="careerResumeFile" accept=".pdf,.txt,.md,.docx" />
                 <svg class="career-upload-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
@@ -7025,7 +7025,7 @@
               <div id="careerUploadStatus" style="margin-top:14px;font-size:13px;color:var(--muted);display:none;"></div>
               <div id="careerUploadProfilePreview" style="margin-top:16px;display:none;"></div>
               <div style="margin-top:20px;">
-                <button id="careerRunAnalysisBtn" class="career-analyze-btn" type="button" style="display:none;">開始分析職缺比對</button>
+                <button id="careerRunAnalysisBtn" class="career-analyze-btn" type="button" style="display:none;">開始本機職缺比對</button>
               </div>
               <div style="margin-top:24px;padding-top:18px;border-top:1px solid var(--line);">
                 <div style="font-size:12px;font-weight:800;letter-spacing:0.06em;text-transform:uppercase;color:var(--muted);margin-bottom:10px;">或直接使用靜態快照分析</div>
@@ -15302,11 +15302,19 @@ Schema:
 	        }
 
 	        /* ── MODE 5: Career Ops batch pipeline ── */
-	        const CAREER_OPS_STORAGE_KEY = "cv-studio-career-ops-v1";
-	        const CAREER_OPS_STATUSES = ["待評估", "值得投遞", "觀望", "略過", "已投遞", "待追蹤", "面試中", "Offer", "拒絕", "已下架"];
-	        let careerOpsCloudSyncTimer = null;
-	        let careerOpsCloudDisabled = false;
-	        let careerOpsSelectedJobId = "";
+		        const CAREER_OPS_STORAGE_KEY = "cv-studio-career-ops-v1";
+		        const CAREER_OPS_STATUSES = ["待評估", "值得投遞", "觀望", "略過", "已投遞", "待追蹤", "面試中", "Offer", "拒絕", "已下架"];
+		        const CAREER_OPS_LOCAL_SKILL_TERMS = [
+		          "javascript", "typescript", "react", "vue", "angular", "next.js", "node.js",
+		          "python", "java", "go", "sql", "postgres", "aws", "docker", "kubernetes",
+		          "graphql", "rest", "api", "html", "css", "tailwind", "figma", "accessibility",
+		          "analytics", "llm", "rag", "agents", "machine learning", "product management",
+		          "crm", "seo", "growth", "operations", "tableau", "power bi", "dashboard",
+		          "design system", "ux", "ui", "data", "automation", "prompt", "research"
+		        ];
+		        let careerOpsCloudSyncTimer = null;
+		        let careerOpsCloudDisabled = false;
+		        let careerOpsSelectedJobId = "";
 	        let careerOpsReportsLoaded = false;
 	        const careerOpsReports = { sourceStrategy: "", sourceFlex: "", sourceQuality: "", search: "", applicationKit: "", deepResearch: "", deepFit: "", compensation: "", storyBank: "", parallel: "", learning: "", modes: "" };
 
@@ -15314,9 +15322,17 @@ Schema:
 	          return `job-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`;
 	        }
 
-	        function careerOpsArray(value) {
-	          return Array.isArray(value) ? value.map(item => String(item || "").trim()).filter(Boolean) : [];
-	        }
+		        function careerOpsArray(value) {
+		          return Array.isArray(value) ? value.map(item => String(item || "").trim()).filter(Boolean) : [];
+		        }
+
+		        function careerOpsProfileArray(value) {
+		          if (Array.isArray(value)) return value.map(item => String(item || "").trim()).filter(Boolean);
+		          return String(value || "")
+		            .split(/[,，、\n;；|/]+/)
+		            .map(item => item.trim())
+		            .filter(Boolean);
+		        }
 
 	        function careerOpsScore(value) {
 	          const score = Number.parseInt(value, 10);
@@ -15516,10 +15532,10 @@ Schema:
 	        }
 
 	        function renderDeepFitDashboard() {
-	          const area = $c("careerDeepFitArea");
-	          if (!area) return;
-	          const df = window.CV_CAREER_OPS_DEEP_FIT;
-	          if (!df || (!df.layerA?.length && !df.dossiers?.length)) {
+		          const area = $c("careerDeepFitArea");
+		          if (!area) return;
+		          const df = window.CV_CAREER_OPS_DEEP_FIT;
+		          if (!df || (!df.layerA?.length && !df.layerB?.length && !df.layerC?.length && !df.dossiers?.length)) {
 	            area.innerHTML = `
 	              <div class="career-ops-empty">
 	                <strong>尚未產生 Deep Fit 分析。</strong><br>
@@ -15588,36 +15604,287 @@ Schema:
 	            </div>`;
 	        }
 
-	        function careerOpsDownloadDeepFitJson() {
-	          const df = window.CV_CAREER_OPS_DEEP_FIT;
-	          if (!df) { alert("尚無 Deep Fit 資料"); return; }
+		        function careerOpsDownloadDeepFitJson() {
+		          const df = window.CV_CAREER_OPS_DEEP_FIT;
+		          if (!df) { alert("尚無 Deep Fit 資料"); return; }
 	          const blob = new Blob([JSON.stringify(df, null, 2)], { type: "application/json" });
 	          const a = document.createElement("a");
 	          a.href = URL.createObjectURL(blob);
 	          a.download = `career-ops-deep-fit-${new Date().toISOString().slice(0, 10)}.json`;
-	          a.click();
-	          URL.revokeObjectURL(a.href);
-	        }
+		          a.click();
+		          URL.revokeObjectURL(a.href);
+		        }
 
-	        async function careerOpsCreateShareLink() {
-	          const client = window.cvStudioState?.client;
-	          const user = window.cvStudioState?.user;
-	          if (!client || !user) {
+		        function careerOpsLocalGrade(score) {
+		          const n = Number(score) || 0;
+		          if (n >= 86) return "A";
+		          if (n >= 72) return "B";
+		          if (n >= 58) return "C";
+		          if (n >= 44) return "D";
+		          return "F";
+		        }
+
+		        function careerOpsLocalDecision(score) {
+		          const n = Number(score) || 0;
+		          if (n >= 82) return "強烈投遞";
+		          if (n >= 70) return "值得投遞";
+		          if (n >= 56) return "觀望比較";
+		          return "除非有策略理由，否則略過";
+		        }
+
+		        function careerOpsLocalProfileTerms(profile = {}) {
+		          const preferences = profile.preferences && typeof profile.preferences === "object" ? profile.preferences : {};
+		          const skills = careerOpsProfileArray(profile.skills).map(item => item.toLowerCase());
+		          const keywords = careerOpsProfileArray(preferences.keywords).map(item => item.toLowerCase());
+		          const targetRoles = careerOpsProfileArray(preferences.targetRoles || preferences.target_roles);
+		          if (!targetRoles.length && profile.role) targetRoles.push(String(profile.role));
+		          const roleTerms = targetRoles.map(item => item.toLowerCase());
+		          return {
+		            skills,
+		            keywords: Array.from(new Set([...skills, ...keywords, ...roleTerms])),
+		            targetRoles: roleTerms
+		          };
+		        }
+
+		        function careerOpsScoreJobAgainstProfile(job, profile) {
+		          const terms = careerOpsLocalProfileTerms(profile);
+		          const text = `${job.title || ""} ${job.description || ""} ${job.company || ""}`.toLowerCase();
+		          const titleLow = String(job.title || "").toLowerCase();
+		          const skillHits = terms.skills.filter(skill => skill && text.includes(skill));
+		          const skillCoverage = terms.skills.length ? Math.round((skillHits.length / terms.skills.length) * 100) : 50;
+		          const roleTokens = terms.targetRoles.flatMap(role => role.split(/[\s,，、/|()（）-]+/).filter(token => token.length >= 3));
+		          const directRoleHit = terms.targetRoles.some(role => titleLow.includes(role));
+		          const tokenRoleHit = roleTokens.some(token => titleLow.includes(token));
+		          const roleFit = terms.targetRoles.length
+		            ? directRoleHit || tokenRoleHit
+		              ? Math.min(100, Math.round(65 + skillCoverage * 0.3))
+		              : Math.max(10, Math.round(skillCoverage * 0.6))
+		            : 50;
+		          const jdSkills = CAREER_OPS_LOCAL_SKILL_TERMS.filter(term => text.includes(term));
+		          const jdSkillsMissingFromProfile = jdSkills.filter(term => !terms.keywords.includes(term)).slice(0, 12);
+		          const profileSkillsNotInJd = terms.skills.filter(skill => !text.includes(skill)).slice(0, 8);
+		          const atsFound = jdSkills.filter(term => terms.keywords.includes(term)).slice(0, 10);
+		          const atsMissing = jdSkills.filter(term => !terms.keywords.includes(term)).slice(0, 10);
+		          const qualityScore = Number(job?.sourceQuality?.score || 0);
+		          const qualityBoost = qualityScore ? Math.round((qualityScore - 70) * 0.08) : 0;
+		          const freshnessBoost = job?.isNew ? 3 : 0;
+		          const score = Math.max(0, Math.min(100, Math.round(skillCoverage * 0.52 + roleFit * 0.48 + qualityBoost + freshnessBoost)));
+
+		          return {
+		            score,
+		            dimensions: { roleFit, skillCoverage },
+		            features: { skills: jdSkills, jdSkillsMissingFromProfile, profileSkillsNotInJd, skillHits },
+		            ats_keywords: { found: atsFound, missing: atsMissing }
+		          };
+		        }
+
+		        function careerOpsBuildLocalDossier(job, profile) {
+		          const intel = careerOpsScoreJobAgainstProfile(job, profile);
+		          const text = `${job.title || ""} ${job.company || ""} ${job.description || ""}`.toLowerCase();
+		          const skills = careerOpsLocalProfileTerms(profile).skills;
+		          const hits = skills.filter(skill => text.includes(skill)).slice(0, 14);
+		          const misses = intel.features.jdSkillsMissingFromProfile.slice(0, 12);
+		          const score = job._score || intel.score;
+		          const decision = careerOpsLocalDecision(score);
+		          const title = job.title || "未命名職缺";
+		          const company = job.company || "未知公司";
+
+		          return {
+		            jobKey: String(job.jobKey || job.url || `${company}:${title}`).trim(),
+		            company,
+		            title,
+		            url: job.url || "",
+		            score,
+		            grade: job.grade || careerOpsLocalGrade(score),
+		            confidence: hits.length >= 6 ? "high" : hits.length >= 3 ? "medium" : "low",
+		            decision,
+		            thesis: `${company} 的 ${title} 屬於「${decision}」：分數 ${score}，命中 ${hits.length} 個履歷關鍵字，主要缺口 ${misses.length} 個。`,
+		            evidence: {
+		              keywordHits: hits,
+		              keywordMisses: misses,
+		              researchSignals: careerOpsArray(job.sourceTags).slice(0, 6),
+		              compensationLeverage: ""
+		            },
+		            concerns: [
+		              !job.description || job.description.length < 300 ? "職缺描述偏短，判斷信心較低。" : "",
+		              job.isExpired ? "快照標記為已下架，投遞前需要確認。" : ""
+		            ].filter(Boolean),
+		            cvStrategy: hits.length
+		              ? [`履歷優先凸顯：${hits.slice(0, 5).join("、")}。`]
+		              : ["投遞前先補上 JD 高頻關鍵字與對應作品證據。"],
+		            interviewStrategy: ["面試時詢問此職位 90 天成功標準、團隊協作方式與實際產品目標。"],
+		            storyHooks: [],
+		            llm: null,
+		            layer: "A"
+		          };
+		        }
+
+		        function careerOpsClassifyLocalJobs(jobs, profile) {
+		          const targetRoles = careerOpsLocalProfileTerms(profile).targetRoles;
+		          const scored = (Array.isArray(jobs) ? jobs : [])
+		            .map((job, index) => normalizeCareerOpsJob(job, index))
+		            .filter(job => !job.isExpired)
+		            .map(normalized => {
+		              normalized.jobKey = normalized.jobKey || careerOpsJobKey(normalized);
+		              const intel = careerOpsScoreJobAgainstProfile(normalized, profile);
+		              const staticScore = normalized.score === "" ? null : Number(normalized.score);
+		              const blendedScore = staticScore == null
+		                ? intel.score
+		                : Math.round(intel.score * 0.75 + staticScore * 0.25);
+		              return { ...normalized, _roleFit: intel.dimensions.roleFit, _score: blendedScore, _intel: intel };
+		            })
+		            .sort((a, b) => b._score - a._score);
+
+		          const layerAJobs = scored.filter(job => !targetRoles.length || job._roleFit >= 68).slice(0, 25);
+		          const layerAKeys = new Set(layerAJobs.map(job => job.jobKey || job.url));
+		          const layerBJobs = scored
+		            .filter(job => !layerAKeys.has(job.jobKey || job.url) && job._roleFit >= 40 && job._roleFit < 68)
+		            .slice(0, 40);
+		          const layerBKeys = new Set(layerBJobs.map(job => job.jobKey || job.url));
+		          const layerCJobs = scored
+		            .filter(job => !layerAKeys.has(job.jobKey || job.url) && !layerBKeys.has(job.jobKey || job.url))
+		            .slice(0, 30);
+		          const profileSkills = careerOpsLocalProfileTerms(profile).skills;
+
+		          return {
+		            activeJobCount: scored.length,
+		            layerA: layerAJobs.map(job => careerOpsBuildLocalDossier(job, profile)),
+		            layerB: layerBJobs.map(job => ({
+		              jobKey: job.jobKey || "",
+		              company: job.company || "",
+		              title: job.title || "",
+		              url: job.url || "",
+		              score: job._score,
+		              grade: job.grade || careerOpsLocalGrade(job._score),
+		              roleFit: job._roleFit,
+		              location: job.location || "",
+		              keywordHits: profileSkills.filter(skill => String(job.description || "").toLowerCase().includes(skill)).slice(0, 8),
+		              keywordMisses: job._intel.features.jdSkillsMissingFromProfile.slice(0, 6),
+		              decision: careerOpsLocalDecision(job._score),
+		              layer: "B"
+		            })),
+		            layerC: layerCJobs.map(job => ({
+		              jobKey: job.jobKey || "",
+		              company: job.company || "",
+		              title: job.title || "",
+		              url: job.url || "",
+		              score: job._score,
+		              grade: job.grade || careerOpsLocalGrade(job._score),
+		              roleFit: job._roleFit,
+		              location: job.location || "",
+		              topGap: job._intel.features.jdSkillsMissingFromProfile[0] || "",
+		              mainGaps: job._intel.features.jdSkillsMissingFromProfile.slice(0, 4),
+		              layer: "C"
+		            }))
+		          };
+		        }
+
+		        async function careerOpsLoadSnapshotJobs() {
+		          const snapshot = window.CV_CAREER_OPS_JOBS || {};
+		          if (Array.isArray(snapshot.jobs) && snapshot.jobs.length) return snapshot.jobs;
+		          const res = await fetch("./data/app/career-ops-jobs.json", { cache: "no-store" });
+		          if (!res.ok) throw new Error("無法讀取職缺快照");
+		          const data = await res.json();
+		          return Array.isArray(data?.jobs) ? data.jobs : [];
+		        }
+
+		        async function careerOpsSaveLocalAnalysisToCloud(result, profileId) {
+		          const client = window.cvStudioState?.client;
+		          const user = window.cvStudioState?.user;
+		          if (!client || !user) return "";
+		          const now = new Date().toISOString();
+		          const snapshot = window.CV_CAREER_OPS_JOBS || {};
+		          const { data, error } = await client
+		            .from("career_ops_analyses")
+		            .insert({
+		              user_id: user.id,
+		              profile_id: profileId || null,
+		              status: "completed",
+		              stage: "completed",
+		              progress: 100,
+		              summary_json: result.summary,
+		              layer_a_json: result.layerA,
+		              layer_b_json: result.layerB,
+		              layer_c_json: result.layerC,
+		              job_snapshot_hash: String(snapshot.extractedAt || snapshot.jobCount || now),
+		              started_at: now,
+		              completed_at: now
+		            })
+		            .select("id")
+		            .single();
+		          if (error) {
+		            console.warn("[career-ops] local analysis cloud save failed:", error.message);
+		            return "";
+		          }
+		          window._careerOpsLastAnalysisId = data?.id || "";
+		          return window._careerOpsLastAnalysisId;
+		        }
+
+		        async function careerOpsLoadActiveProfileFromCloud() {
+		          const client = window.cvStudioState?.client;
+		          const user = window.cvStudioState?.user;
+		          if (!client || !user) return null;
+		          const { data, error } = await client
+		            .from("career_ops_user_profiles")
+		            .select("id,profile_json")
+		            .eq("user_id", user.id)
+		            .eq("is_active", true)
+		            .order("created_at", { ascending: false })
+		            .limit(1);
+		          if (error || !data?.length) return null;
+		          return { id: data[0].id, profile: data[0].profile_json || {} };
+		        }
+
+		        async function careerOpsRunLocalDeepFit(profile, profileId, options = {}) {
+		          const statusEl = options.statusEl || null;
+		          const setStatus = text => { if (statusEl) statusEl.textContent = text; };
+		          setStatus("讀取職缺快照中...");
+		          const jobs = await careerOpsLoadSnapshotJobs();
+		          if (!jobs.length) throw new Error("職缺快照是空的，請先匯入或產生 data/app/career-ops-jobs.js。");
+		          setStatus(`本機評分中... ${jobs.length} 筆職缺`);
+		          await new Promise(resolve => setTimeout(resolve, 0));
+		          const classified = careerOpsClassifyLocalJobs(jobs, profile);
+		          setStatus("整理 Layer A / B / C 結果...");
+		          const summary = {
+		            totalResults: classified.layerA.length + classified.layerB.length + classified.layerC.length,
+		            layerA: classified.layerA.length,
+		            layerB: classified.layerB.length,
+		            layerC: classified.layerC.length,
+		            analyzedJobCount: classified.activeJobCount,
+		            generatedAt: new Date().toISOString(),
+		            engine: "frontend-local-heuristic"
+		          };
+		          const result = { summary, layerA: classified.layerA, layerB: classified.layerB, layerC: classified.layerC };
+		          window.CV_CAREER_OPS_DEEP_FIT = result;
+		          const analysisId = await careerOpsSaveLocalAnalysisToCloud(result, profileId);
+		          result.analysisId = analysisId;
+		          setStatus(analysisId ? "✓ 本機分析完成，結果已儲存，可產生分享連結。" : "✓ 本機分析完成。登入後可儲存並產生分享連結。");
+		          return result;
+		        }
+
+		        async function careerOpsCreateShareLink() {
+		          const client = window.cvStudioState?.client;
+		          const user = window.cvStudioState?.user;
+		          if (!client || !user) {
 	            const df = window.CV_CAREER_OPS_DEEP_FIT;
 	            const s = df?.summary || {};
 	            navigator.clipboard.writeText(`Career Ops 分析：${s.totalResults || 0} 個職缺（A:${s.layerA || 0} B:${s.layerB || 0} C:${s.layerC || 0}）`).catch(() => {});
 	            alert("請先登入以產生分享連結。已複製結果摘要。");
 	            return;
-	          }
-	          try {
-	            const session = (await client.auth.getSession()).data.session;
-	            const { data: analyses } = await client.from("career_ops_analyses").select("id").eq("user_id", user.id).eq("status", "completed").order("completed_at", { ascending: false }).limit(1);
-	            if (!analyses?.length) { alert("請先完成線上分析，再產生分享連結。"); return; }
-	            const res = await fetch(`${window.CV_STUDIO_CONFIG?.supabaseUrl || ""}/functions/v1/career-ops-share-analysis`, {
-	              method: "POST",
-	              headers: { "content-type": "application/json", "authorization": `Bearer ${session?.access_token}` },
-	              body: JSON.stringify({ analysisId: analyses[0].id })
-	            });
+		          }
+		          try {
+		            const session = (await client.auth.getSession()).data.session;
+		            let analysisId = window._careerOpsLastAnalysisId || "";
+		            if (!analysisId) {
+		              const { data: analyses } = await client.from("career_ops_analyses").select("id").eq("user_id", user.id).eq("status", "completed").order("completed_at", { ascending: false }).limit(1);
+		              analysisId = analyses?.[0]?.id || "";
+		            }
+		            if (!analysisId) { alert("請先完成本機分析並儲存結果，再產生分享連結。"); return; }
+		            const res = await fetch(`${window.CV_STUDIO_CONFIG?.supabaseUrl || ""}/functions/v1/career-ops-share-analysis`, {
+		              method: "POST",
+		              headers: { "content-type": "application/json", "authorization": `Bearer ${session?.access_token}` },
+		              body: JSON.stringify({ analysisId })
+		            });
 	            const data = await res.json();
 	            if (data.shareUrl) {
 	              const panel = $c("careerDeepFitSharePanel");
@@ -15625,12 +15892,18 @@ Schema:
 	              if (urlEl) urlEl.textContent = data.shareUrl;
 	              if (panel) panel.style.display = "block";
 	              navigator.clipboard.writeText(data.shareUrl).catch(() => {});
-	            } else { alert(data.error || "產生連結失敗"); }
-	          } catch (err) { alert("產生連結失敗：" + err.message); }
-	        }
+		            } else { alert(data.error || "產生連結失敗"); }
+		          } catch (err) { alert("產生連結失敗：" + err.message); }
+		        }
 
-	        // Preload job health data for the health bar
-	        (async function loadCareerOpsHealth() {
+		        window.careerOpsSetTab = careerOpsSetTab;
+		        window.careerOpsDownloadDeepFitJson = careerOpsDownloadDeepFitJson;
+		        window.careerOpsCreateShareLink = careerOpsCreateShareLink;
+		        window.careerOpsRunLocalDeepFit = careerOpsRunLocalDeepFit;
+		        window.careerOpsClassifyLocalJobs = careerOpsClassifyLocalJobs;
+
+		        // Preload job health data for the health bar
+		        (async function loadCareerOpsHealth() {
 	          try {
 	            const res = await fetch("./data/app/career-ops-job-health.json", { cache: "no-store" });
 	            if (res.ok) window._careerOpsHealthCache = (await res.json())?.health;
@@ -15678,78 +15951,67 @@ Schema:
 	            if (statusEl) { statusEl.style.display = "block"; statusEl.textContent = "解析中…"; }
 	            if (profilePreview) profilePreview.style.display = "none";
 	            if (runBtn) runBtn.style.display = "none";
-	            try {
-	              const client = window.cvStudioState?.client;
-	              const session = (await client?.auth?.getSession?.())?.data?.session;
-	              const user = window.cvStudioState?.user || session?.user;
-	              if (!client || !session || !user) {
-	                if (statusEl) statusEl.textContent = "請先登入以使用線上分析。";
-	                return;
-	              }
-	              const resumeText = await readCareerResumeText(file);
-	              if (statusEl) statusEl.textContent = "使用你的 API Key 解析履歷中…";
-	              const profile = await extractCareerOpsProfileWithUserKey(resumeText);
-	              const saved = await saveCareerOpsProfileToCloud(client, user, profile, resumeText, file);
-	              if (statusEl) statusEl.textContent = "✓ 履歷解析完成";
-	              const p = profile || {};
-	              if (profilePreview) {
-	                profilePreview.style.display = "block";
+		            try {
+		              const client = window.cvStudioState?.client;
+		              const session = (await client?.auth?.getSession?.())?.data?.session;
+		              const user = window.cvStudioState?.user || session?.user;
+		              const resumeText = await readCareerResumeText(file);
+		              if (statusEl) statusEl.textContent = "使用你的 API Key 解析履歷中…";
+		              const profile = await extractCareerOpsProfileWithUserKey(resumeText);
+		              let saved = null;
+		              if (client && session && user) {
+		                try {
+		                  saved = await saveCareerOpsProfileToCloud(client, user, profile, resumeText, file);
+		                } catch (cloudErr) {
+		                  console.warn("[career-ops] profile cloud save failed:", cloudErr.message);
+		                }
+		              }
+		              if (statusEl) statusEl.textContent = saved?.id
+		                ? "✓ 履歷解析完成，已儲存到帳號。"
+		                : "✓ 履歷解析完成，將以本機暫存分析。";
+		              const p = profile || {};
+		              if (profilePreview) {
+		                profilePreview.style.display = "block";
 	                profilePreview.innerHTML = `
 	                  <div style="background:var(--surface-strong);border:1px solid var(--line);border-radius:12px;padding:14px 16px;font-size:12.5px;">
 	                    <div style="font-weight:800;margin-bottom:8px;">${careerText(p.role || "（職稱未偵測）")}</div>
 	                    ${p.skills?.length ? `<div style="color:var(--muted);">技能：${careerText(p.skills.slice(0, 8).join("、"))}</div>` : ""}
 	                    ${p.preferences?.targetRoles?.length ? `<div style="color:var(--muted);margin-top:4px;">目標：${careerText(p.preferences.targetRoles.join("、"))}</div>` : ""}
-	                  </div>`;
-	              }
-	              window._careerOpsExtractedProfileId = saved.id;
-	              if (runBtn) runBtn.style.display = "block";
-	            } catch (err) {
-	              if (statusEl) statusEl.textContent = "解析失敗：" + err.message;
+		                  </div>`;
+		              }
+		              window._careerOpsExtractedProfile = profile;
+		              window._careerOpsExtractedProfileText = resumeText;
+		              window._careerOpsExtractedProfileId = saved?.id || "";
+		              window._careerOpsLastAnalysisId = "";
+		              if (runBtn) runBtn.style.display = "block";
+		            } catch (err) {
+		              if (statusEl) statusEl.textContent = "解析失敗：" + err.message;
 	            }
 	          }
 
-	          runBtn?.addEventListener("click", async () => {
-	            const client = window.cvStudioState?.client;
-	            const session = (await client?.auth?.getSession?.())?.data?.session;
-	            if (!client || !session) { alert("請先登入"); return; }
-	            runBtn.textContent = "排隊分析中…";
-	            runBtn.disabled = true;
-	            try {
-	              const res = await fetch(`${window.CV_STUDIO_CONFIG?.supabaseUrl || ""}/functions/v1/career-ops-run-analysis`, {
-	                method: "POST",
-	                headers: { "content-type": "application/json", "authorization": `Bearer ${session.access_token}` },
-	                body: JSON.stringify({ profileId: window._careerOpsExtractedProfileId })
-	              });
-	              const data = await res.json();
-	              if (!res.ok) throw new Error(data.error || "提交失敗");
-	              if (statusEl) statusEl.textContent = `分析 ID：${data.analysisId}`;
-	              runBtn.textContent = "分析中，請稍候…";
-	              const poll = setInterval(async () => {
-	                try {
-	                  const pr = await fetch(`${window.CV_STUDIO_CONFIG?.supabaseUrl || ""}/functions/v1/career-ops-run-analysis?id=${data.analysisId}`, {
-	                    headers: { "authorization": `Bearer ${session.access_token}` }
-	                  });
-	                  const pd = await pr.json();
-	                  if (statusEl) statusEl.textContent = `進度：${pd.progress || 0}% · 階段：${pd.stage || "—"}`;
-	                  if (pd.status === "completed") {
-	                    clearInterval(poll);
-	                    runBtn.textContent = "分析完成！查看結果";
-	                    if (pd.summary_json) window.CV_CAREER_OPS_DEEP_FIT = { summary: pd.summary_json, layerA: pd.layer_a_json || [], layerB: pd.layer_b_json || [], layerC: pd.layer_c_json || [] };
-	                    careerOpsSetTab("deepfit");
-	                  } else if (pd.status === "failed") {
-	                    clearInterval(poll);
-	                    runBtn.textContent = "分析失敗，請重試";
-	                    runBtn.disabled = false;
-	                    if (statusEl) statusEl.textContent = "失敗原因：" + (pd.error || "未知");
-	                  }
-	                } catch {}
-	              }, 5000);
-	            } catch (err) {
-	              runBtn.textContent = "開始分析職缺比對";
-	              runBtn.disabled = false;
-	              alert("提交失敗：" + err.message);
-	            }
-	          });
+		          runBtn?.addEventListener("click", async () => {
+		            let profile = window._careerOpsExtractedProfile || null;
+		            let profileId = window._careerOpsExtractedProfileId || "";
+		            if (!profile) {
+		              const active = await careerOpsLoadActiveProfileFromCloud();
+		              if (active?.profile) {
+		                profile = active.profile;
+		                profileId = active.id || "";
+		              }
+		            }
+		            if (!profile) { alert("請先上傳履歷並完成解析。"); return; }
+		            runBtn.textContent = "本機分析中…";
+		            runBtn.disabled = true;
+		            try {
+		              await careerOpsRunLocalDeepFit(profile, profileId, { statusEl });
+		              runBtn.textContent = "分析完成！查看結果";
+		              careerOpsSetTab("deepfit");
+		            } catch (err) {
+		              runBtn.textContent = "開始本機職缺比對";
+		              runBtn.disabled = false;
+		              alert("本機分析失敗：" + err.message);
+		            }
+		          });
 	        })();
 
 	        function careerOpsSupabaseReady() {
