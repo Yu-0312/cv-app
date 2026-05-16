@@ -1,9 +1,11 @@
 /**
  * career-ops-extract-profile
  *
- * Supabase Edge Function — accepts an already-extracted Career Ops
- * profile JSON or a plain-text/PDF resume upload, then saves it to
- * career_ops_user_profiles.
+ * Optional Supabase Edge Function — accepts an already-extracted Career
+ * Ops profile JSON or a plain-text/PDF resume upload, then saves it to
+ * career_ops_user_profiles. The hosted BYOK frontend currently parses
+ * resumes in the browser and writes profiles directly via RLS, so this
+ * function is kept as an advanced server-side fallback.
  *
  * BYOK note: LLM extraction is done in the browser with the user's
  * own API key. This function never reads ANTHROPIC_API_KEY and never

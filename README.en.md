@@ -256,7 +256,6 @@ npm run career-ops:quality
 CHROME_PATH="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" npm run career-ops:rendered
 npm run career-ops:deep-research
 npm run career-ops:deep-fit
-npm run career-ops:decision-report
 npm run career-ops:compensation
 npm run career-ops:story-bank
 npm run career-ops:learn
@@ -265,7 +264,7 @@ npm run career-ops:parallel -- --concurrency 6
 npm run career-ops:application-kit -- --profile data/career-ops-profile.json
 ```
 
-`career-ops:search` turns curated search exports into crawlable sources; `career-ops:rendered` is an optional browser-rendered pass for JavaScript-heavy company careers pages; `career-ops:deep-research` writes `data/app/career-ops-deep-research.json`, `.js`, and `.md`, and can use `BRAVE_SEARCH_API_KEY`, `BING_SEARCH_API_KEY`, or `SERPAPI_API_KEY` for real search evidence; `career-ops:decision-report` merges deep fit, research, application kit, compensation, and story bank artifacts into A-F single-job decision dossiers; `career-ops:application-kit` writes apply / outreach / follow-up / interview / negotiation playbooks.
+`career-ops:search` turns curated search exports into crawlable sources; `career-ops:rendered` is an optional browser-rendered pass for JavaScript-heavy company careers pages; `career-ops:deep-research` writes `data/app/career-ops-deep-research.json`, `.js`, and `.md`, and can use `BRAVE_SEARCH_API_KEY`, `BING_SEARCH_API_KEY`, or `SERPAPI_API_KEY` for real search evidence; `career-ops:application-kit` writes apply / outreach / follow-up / interview / negotiation playbooks. `career-ops:decision-report` remains available for local/offline dossiers, but the hosted frontend does not load that static global report.
 
 For the full bounded-concurrency backend, run:
 
@@ -352,6 +351,7 @@ This project does **not** use the deprecated `google-signin2` / `gapi.auth2` fro
 - [ ] Supabase `Site URL` and `Redirect URLs` include the actual callback URL
 - [ ] Google Cloud OAuth's Authorized redirect URIs / origins match Supabase's requirements
 - [ ] End-to-end test in Chrome: Sign in → redirect back → refresh (session persists) → sign out
+- [ ] Career Ops share links require the `career-ops-share-analysis` Edge Function and `SITE_URL`; `career-ops-extract-profile` / `career-ops-run-analysis` are kept only for advanced or legacy queue flows, and the default BYOK browser analysis does not depend on a Railway worker
 
 ---
 

@@ -1,11 +1,16 @@
 /**
  * career-ops-run-analysis
  *
- * Supabase Edge Function — triggers a Career Ops analysis for the
- * authenticated user. Reads the user's active profile from
+ * Optional queue-mode Supabase Edge Function — triggers a Career Ops
+ * analysis for the authenticated user. Reads the user's active profile from
  * career_ops_user_profiles and the shared job snapshot from the
  * static data files, queues the analysis, and lets the worker write
  * results back to career_ops_analyses.
+ *
+ * The default hosted BYOK frontend no longer calls this function; it runs
+ * the three-layer match in the browser and only writes completed results
+ * to Supabase for sharing. Keep this function for deployments that still
+ * want a Railway/Fly.io worker queue.
  *
  * POST /functions/v1/career-ops-run-analysis
  * Body: { "profileId"?: "<uuid>" }  (optional — uses active profile if omitted)
