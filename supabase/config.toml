@@ -1,8 +1,7 @@
 # Supabase project configuration
-# See: https://supabase.com/docs/guides/cli/config
+# See: https://supabase.com/docs/guides/local-development/cli/config
 
-[project]
-id = "your-project-id"   # Replace with your actual project ID from supabase.com
+project_id = "cv-app"
 
 [api]
 enabled = true
@@ -12,7 +11,7 @@ schemas = ["public", "storage", "graphql_public"]
 [db]
 port = 54322
 shadow_port = 54320
-major_version = 15
+major_version = 17
 
 [studio]
 enabled = true
@@ -28,7 +27,7 @@ refresh_token_reuse_interval = 10
 enable_signup = true
 
 [auth.external.google]
-enabled = true
+enabled = false
 # Set SUPABASE_AUTH_GOOGLE_CLIENT_ID and SUPABASE_AUTH_GOOGLE_SECRET in .env
 
 [edge_runtime]
