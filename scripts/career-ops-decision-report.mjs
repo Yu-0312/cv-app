@@ -138,20 +138,30 @@ function profileSignals(profile) {
   ]).slice(0, 16);
 }
 
+function dedupByLower(items) {
+  const seen = new Set();
+  return items.filter((item) => {
+    const key = item.toLowerCase();
+    if (seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
+}
+
 function jobKeywords(job) {
-  return compact([
+  return dedupByLower(compact([
     ...array(job.evaluation?.ats_keywords?.found),
-    ...array(job.intelligence?.features?.skills),
     ...array(job.intelligence?.features?.profileSkillHits),
+    ...array(job.intelligence?.features?.skills),
     ...array(job.keywords)
-  ]).slice(0, 18);
+  ])).slice(0, 18);
 }
 
 function missingKeywords(job) {
-  return compact([
+  return dedupByLower(compact([
     ...array(job.evaluation?.ats_keywords?.missing),
     ...array(job.intelligence?.features?.jdSkillsMissingFromProfile)
-  ]).slice(0, 12);
+  ])).slice(0, 12);
 }
 
 function decisionFor(job, dossier) {

@@ -87,6 +87,109 @@ function topMarketThemes(jobs) {
   return [...themes].slice(0, 10);
 }
 
+// Learning priority tiers based on market demand count
+const LEARNING_TIERS = [
+  { minCount: 10, priority: "P0", label: "高優先", reason: "市場需求極高，補充後可顯著提升評分" },
+  { minCount: 5, priority: "P1", label: "中優先", reason: "市場常見，補充後能擴大適配職缺範圍" },
+  { minCount: 2, priority: "P2", label: "選擇性", reason: "特定領域需求，依目標職缺決定是否補充" },
+  { minCount: 0, priority: "P3", label: "低優先", reason: "出現頻率較低，可放在長期學習清單" }
+];
+
+function buildLearningPlan(jobs, profileSkills) {
+  const skillCounts = new Map();
+  for (const job of array(jobs).filter((j) => !j.isExpired).slice(0, 100)) {
+    const missing = array(job.intelligence?.features?.jdSkillsMissingFromProfile || job.evaluation?.ats_keywords?.missing);
+    for (const skill of missing) {
+      const key = String(skill).toLowerCase().trim();
+      if (!key || key.length < 2) continue;
+      skillCounts.set(key, (skillCounts.get(key) || 0) + 1);
+    }
+  }
+  const profileSet = new Set(profileSkills.map((s) => String(s).toLowerCase()));
+  const candidates = Array.from(skillCounts.entries())
+    .filter(([skill]) => !profileSet.has(skill))
+    .sort((a, b) => b[1] - a[1])
+    .slice(0, 15);
+
+  return candidates.map(([skill, count]) => {
+    const tier = LEARNING_TIERS.find((t) => count >= t.minCount) || LEARNING_TIERS[LEARNING_TIERS.length - 1];
+    return {
+      skill,
+      marketCount: count,
+      priority: tier.priority,
+      priorityLabel: tier.label,
+      reason: tier.reason,
+      suggestion: `在簡歷或 profile 中加入 ${skill} 的實際使用案例，並在 projects 欄位補充相關實作。`
+    };
+  });
+}
+
+// Theme-specific STAR guidance so each story prompt is actionable, not generic.
+const THEME_STAR_GUIDE = {
+  "frontend product execution": {
+    situation: (seed) => `You were tasked with a frontend product challenge. Proof point: "${seed}" — set the scene: what product, what team size, and what was broken or missing?`,
+    task: "What was the specific outcome you were accountable for? Include the success metric (e.g. performance score, user adoption rate, release date).",
+    action: "Walk through the key technical decisions: component architecture, state management tradeoffs, accessibility choices, or API contract design.",
+    result: "Quantify the impact: load time delta, user adoption %, code reduction %, or stakeholder feedback. If no number, describe the quality or velocity improvement."
+  },
+  "data-heavy product decisions": {
+    situation: (seed) => `You were working with a data-intensive product. Proof point: "${seed}" — describe the data volume, the user workflow, and what was difficult to render or interpret.`,
+    task: "What decision did you own? (chart type, data model, aggregation strategy, caching layer, etc.)",
+    action: "Explain how you chose between options, what you built or prototyped, and how you validated your approach with data or users.",
+    result: "State the outcome: query latency, dashboard load time, user comprehension improvement, or reduction in support requests."
+  },
+  "systems and API collaboration": {
+    situation: (seed) => `You collaborated across system boundaries. Proof point: "${seed}" — name the systems, teams, and integration surface area.`,
+    task: "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
+    action: "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
+    result: "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved."
+  },
+  "accessibility and quality": {
+    situation: (seed) => `You led or contributed to an accessibility or quality initiative. Proof point: "${seed}" — what was the starting state and who was affected?`,
+    task: "What standard or target were you working toward (WCAG level, test coverage %, zero-defect milestone)?",
+    action: "Describe the audit process, tooling (axe, Lighthouse, screen reader testing), and how you prioritized fixes across components.",
+    result: "State the outcome: WCAG compliance level achieved, user complaints reduced, or CI gate added to prevent regressions."
+  },
+  "performance and scale": {
+    situation: (seed) => `You tackled a performance or scalability challenge. Proof point: "${seed}" — what was the scale (users, requests/sec, data size) and what was breaking?`,
+    task: "What was the target metric: p95 latency, Lighthouse score, bundle size, or TTFB?",
+    action: "Describe your profiling approach, the root cause you found, and the specific optimization (code splitting, caching, virtualization, CDN config, etc.).",
+    result: "Before/after numbers. If no metric was tracked, explain how you set up measurement and what the next step was."
+  },
+  "cross-functional influence": {
+    situation: (seed) => `You influenced a decision across teams or functions. Proof point: "${seed}" — who were the stakeholders and what was the disagreement or ambiguity?`,
+    task: "What outcome were you trying to drive, and why did it require cross-functional alignment rather than a unilateral call?",
+    action: "Describe how you built your case: data, prototypes, async docs, 1:1s, or demos. What resistance did you encounter?",
+    result: "State the decision that was made, who it impacted, and whether the outcome matched your recommendation."
+  },
+  "AI/data product adoption": {
+    situation: (seed) => `You worked on an AI or data-driven product feature. Proof point: "${seed}" — describe the model/pipeline involved and the user-facing surface.`,
+    task: "What was your role: prompt design, evaluation framework, UI for model outputs, or feedback loop instrumentation?",
+    action: "Explain what you built, how you evaluated quality (accuracy, latency, hallucination rate), and what tradeoffs you made.",
+    result: "Describe adoption (% of users using the feature), quality improvement, or how you reduced user confusion around AI outputs."
+  }
+};
+
+function themeStarGuide(theme, seed) {
+  const guide = THEME_STAR_GUIDE[theme];
+  if (!guide) {
+    return {
+      situation: `Use this proof point to open the story: "${seed}"`,
+      task: "Clarify the goal, constraints, stakeholders, and success metric before answering.",
+      action: "Describe the specific decisions, tradeoffs, and work you personally owned.",
+      result: "State measurable or observable impact. If no metric exists, describe adoption, quality, speed, or learning impact.",
+      reflection: "Explain what you would repeat, what you would improve, and how it applies to the target role."
+    };
+  }
+  return {
+    situation: typeof guide.situation === "function" ? guide.situation(seed) : guide.situation,
+    task: guide.task,
+    action: guide.action,
+    result: guide.result,
+    reflection: "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
+  };
+}
+
 function buildStoryBank(profile, jobs) {
   const proofPoints = [
     ...sentences(profile.experience),
@@ -110,19 +213,15 @@ function buildStoryBank(profile, jobs) {
         "Tell me about a time you handled ambiguity.",
         `How have you applied ${theme}?`
       ],
-      star: {
-        situation: `Use the context from this proof point: ${seed}`,
-        task: "Clarify the goal, constraints, stakeholders, and success metric before answering.",
-        action: "Describe the specific decisions, tradeoffs, and work you personally owned.",
-        result: "State measurable or observable impact. If no metric exists, describe adoption, quality, speed, or learning impact.",
-        reflection: "Explain what you would repeat, what you would improve, and how it applies to the target role."
-      },
+      star: themeStarGuide(theme, seed),
       keywords: [...new Set([theme, ...skills])].slice(0, 8)
     };
   });
+  const learningPlan = buildLearningPlan(jobs, skills);
   return {
     themes,
     stories,
+    learningPlan,
     gaps: [
       "Add exact metrics for each story where possible.",
       "Add one conflict or tradeoff story.",
@@ -133,6 +232,7 @@ function buildStoryBank(profile, jobs) {
 }
 
 function renderMarkdown(payload) {
+  const learningPlan = payload.storyBank.learningPlan || [];
   const lines = [
     "# Career Ops Story Bank",
     "",
@@ -142,7 +242,12 @@ function renderMarkdown(payload) {
     "## Market Themes",
     ...payload.storyBank.themes.map((item) => `- ${item}`),
     "",
-    "## Gaps",
+    "## Learning Plan (Missing High-Demand Skills)",
+    learningPlan.length
+      ? learningPlan.slice(0, 10).map((item) => `- [${item.priority}] ${item.skill} (市場出現 ${item.marketCount} 次) — ${item.priorityLabel}：${item.suggestion}`).join("\n")
+      : "- No significant skill gaps detected.",
+    "",
+    "## Story Gaps",
     ...payload.storyBank.gaps.map((item) => `- ${item}`),
     ""
   ];

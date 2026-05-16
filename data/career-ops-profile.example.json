@@ -1,14 +1,29 @@
 {
+  "name": "Alex Chen",
   "role": "Frontend Engineer",
-  "summary": "Builds accessible product dashboards and data-heavy workflows.",
-  "skills": ["JavaScript", "React", "CSS", "Accessibility", "Analytics", "API"],
-  "experience": "Frontend product work, dashboard development, design systems, performance optimization.",
-  "projects": "Portfolio, CV Studio, data visualization tools.",
+  "summary": "Frontend engineer with 4+ years building accessible, data-heavy product dashboards. Specializes in React component libraries, design system architecture, and performance optimization for analytics-heavy workflows. Comfortable owning the full frontend scope from design token to production deploy.",
+  "skills": [
+    "JavaScript",
+    "TypeScript",
+    "React",
+    "Next.js",
+    "CSS",
+    "Tailwind",
+    "Accessibility",
+    "Analytics",
+    "API",
+    "Figma",
+    "Performance Optimization",
+    "Design Systems"
+  ],
+  "languages": ["English", "Chinese (Traditional)"],
+  "experience": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users. Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%. Collaborated with backend and data teams to design RESTful and GraphQL API contracts. Championed accessibility audit (WCAG 2.1 AA) across three product surfaces. Improved Lighthouse performance score from 54 to 91 through code splitting, lazy loading, and asset optimization.",
+  "projects": "CV Studio — full-stack PWA for CV generation and career intelligence, built with Node.js, Supabase, and vanilla JS; powers automated job scoring and application tracking. Portfolio site — custom static site generator with markdown-first CMS and zero-JS fallback. Data visualization toolkit — reusable D3 + React chart library used across three internal dashboards, covering line, bar, scatter, and heatmap chart types.",
   "preferences": {
     "targetRoles": ["Frontend Engineer", "Product Engineer", "Full Stack Engineer"],
-    "keywords": ["remote", "dashboard", "design system", "analytics"],
+    "keywords": ["remote", "dashboard", "design system", "analytics", "TypeScript", "React"],
     "locations": ["Taipei", "Remote"],
-    "companies": [],
-    "avoidKeywords": ["commission-only", "unpaid"]
+    "companies": ["Stripe", "Linear", "Notion", "Vercel"],
+    "avoidKeywords": ["commission-only", "unpaid", "on-site only"]
   }
 }

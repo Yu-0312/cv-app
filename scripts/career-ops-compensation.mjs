@@ -88,12 +88,22 @@ function inferMarket(job) {
   return "unknown";
 }
 
-function inferLevel(job, profile) {
-  const text = `${profile.role || ""} ${job.title || ""} ${job.description || ""}`.toLowerCase();
-  if (/intern|實習/.test(text)) return "intern";
-  if (/principal|staff|lead|architect|head of|director|資深主管|總監/.test(text)) return "senior-plus";
-  if (/senior|sr\.|資深/.test(text)) return "senior";
-  if (/junior|entry|associate|新鮮人|初階/.test(text)) return "junior";
+function inferLevel(job) {
+  // Infer the seniority level of the JOB (not the candidate) for compensation calibration.
+  // Use only job.title and job.description — do not mix in profile.role, which causes
+  // the candidate's own title to contaminate job-level detection.
+  const title = String(job.title || "").toLowerCase();
+  const desc = String(job.description || "").toLowerCase();
+  // Check title first to avoid substring false matches (e.g. "international" → "intern")
+  if (/\b(intern|internship|實習生?)\b/i.test(title)) return "intern";
+  if (/\b(principal|staff|lead|architect|head of|director|資深主管|總監)\b/i.test(title)) return "senior-plus";
+  if (/\b(senior|sr\.?|資深)\b/i.test(title)) return "senior";
+  if (/\b(junior|entry.?level|associate|新鮮人|初階)\b/i.test(title)) return "junior";
+  // Fall back to description with word boundaries
+  if (/\b(internship|實習生?)\b/i.test(desc)) return "intern";
+  if (/\b(principal|staff|architect|head of|director|資深主管|總監)\b/i.test(desc)) return "senior-plus";
+  if (/\b(senior|sr\.?|資深)\b/i.test(desc)) return "senior";
+  if (/\b(junior|entry.?level|associate|新鮮人|初階)\b/i.test(desc)) return "junior";
   return "mid";
 }
 
@@ -127,7 +137,7 @@ function buildCompPlan(job, profile, research) {
   const dossier = findDossier(job, research);
   const evidence = detectCompEvidence(job, dossier);
   const market = inferMarket(job);
-  const level = inferLevel(job, profile);
+  const level = inferLevel(job);
   const score = Number(job.score || 0);
   const leverage = score >= 85 ? "high" : score >= 72 ? "medium" : "low";
   const hasSalaryEvidence = evidence.salaryMentions.length > 0;
