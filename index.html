@@ -6968,11 +6968,11 @@
 
           <!-- API key -->
           <div>
-            <div class="career-panel-label">Claude API Key</div>
+            <div class="career-panel-label">AI API Key</div>
             <input id="claudeApiKey" class="career-api-input" type="password" placeholder="sk-ant- / sk- / AIza / gsk_..." autocomplete="off" />
             <div class="career-api-note" style="margin-top:8px;">
               支援 Anthropic、OpenAI、Google Gemini、Groq，系統自動識別。<br>
-              API Key 僅存於目前頁籤的 sessionStorage，不會上傳至任何伺服器。
+              API Key 僅存於目前頁籤；呼叫模型時只會送到對應 AI provider，不會寫入 Supabase、Railway 或 GitHub。
             </div>
           </div>
 
@@ -7010,7 +7010,7 @@
           <div id="careerUploadArea" hidden>
             <div style="max-width:560px;margin:0 auto;">
               <h3 style="margin:0 0 6px;font-size:18px;font-weight:800;color:var(--ink);">上傳履歷，取得 50-100 職缺比對</h3>
-              <p style="margin:0 0 20px;font-size:13px;color:var(--muted);line-height:1.6;">系統將解析你的履歷，自動比對職缺資料庫中的所有職缺，並回傳三層結果：深度評估（Layer A）、標準比對（Layer B）、探索訊號（Layer C）。</p>
+              <p style="margin:0 0 20px;font-size:13px;color:var(--muted);line-height:1.6;">系統會使用左側 API Key 在瀏覽器解析履歷，再比對職缺資料庫並回傳三層結果：深度評估（Layer A）、標準比對（Layer B）、探索訊號（Layer C）。</p>
               <label class="career-upload-zone" id="careerUploadZone">
                 <input type="file" id="careerResumeFile" accept=".pdf,.txt,.md,.docx" />
                 <svg class="career-upload-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
@@ -7679,11 +7679,11 @@
         "前往 CV 履歷頁填寫資料後，此處會自動讀取。": "Fill in the CV page and this section will load automatically.",
         "前往 CV 編輯": "Go To CV Editor",
         "求職顧問會直接讀取 CV 履歷頁已填寫的摘要、技能、經歷、教育與專案資料。": "Career Advisor reads the summary, skills, experience, education, and projects already filled in on the CV page.",
-        "Claude API Key": "AI API Key",
+        "AI API Key": "AI API Key",
         "支援 Anthropic、OpenAI、Google Gemini、Groq，系統自動識別。": "Supports Anthropic, OpenAI, Google Gemini, and Groq with automatic detection.",
-        "API Key 僅存於目前頁籤的 sessionStorage，不會上傳至任何伺服器。": "The API key stays in the current tab's sessionStorage and is not uploaded to any server.",
-        "安全模式": "Safe Mode",
-        "API Key 只保留在目前瀏覽器頁籤的 sessionStorage，不會上傳到 Supabase 或其他雲端資料庫。": "The API key stays only in the current browser tab's sessionStorage and is not uploaded to Supabase or any cloud database.",
+        "API Key 僅存於目前頁籤；呼叫模型時只會送到對應 AI provider，不會寫入 Supabase、Railway 或 GitHub。": "The API key stays in the current tab; model calls send it only to the selected AI provider, and it is not written to Supabase, Railway, or GitHub.",
+        "BYOK 安全模式": "BYOK Safe Mode",
+        "API Key 只保留在目前瀏覽器頁籤；呼叫模型時只會送到對應 AI provider，不會寫入 Supabase、Railway 或 GitHub。": "The API key stays only in the current browser tab; model calls send it only to the selected AI provider, and it is not written to Supabase, Railway, or GitHub.",
         "分析職位適配度": "Analyze Job Fit",
         "選擇分析模式、填入職缺描述（或直接分析履歷），": "Choose an analysis mode, enter a job description (or analyze the resume directly),",
         "再點擊按鈕開始分析。": "then click the button to start.",
@@ -14639,6 +14639,131 @@
           } catch {}
         }
 
+        function getCareerApiKey() {
+          const key = ($c("claudeApiKey")?.value || "").trim();
+          if (!key) throw new Error("請先填入 API Key（左側面板底部）");
+          return key;
+        }
+
+        function normalizeResumeText(text) {
+          return String(text || "")
+            .replace(/\u0000/g, " ")
+            .replace(/[ \t]{2,}/g, " ")
+            .replace(/\r\n?/g, "\n")
+            .replace(/\n{3,}/g, "\n\n")
+            .trim();
+        }
+
+        function extractReadableRuns(raw) {
+          const chunks = String(raw || "").match(/[\x20-\x7E\u00A0-\uFFFF]{4,}/g) || [];
+          return normalizeResumeText(chunks.join(" "));
+        }
+
+        function extractTextFromPdfBytes(bytes) {
+          const raw = new TextDecoder("utf-8", { fatal: false }).decode(bytes);
+          const chunks = [];
+          const btEtRegex = /BT([\s\S]*?)ET/g;
+          let match;
+          while ((match = btEtRegex.exec(raw)) !== null) {
+            const block = match[1];
+            const strRegex = /\(([^)\\]*(?:\\.[^)\\]*)*)\)/g;
+            let strMatch;
+            while ((strMatch = strRegex.exec(block)) !== null) {
+              const value = strMatch[1]
+                .replace(/\\n/g, "\n")
+                .replace(/\\r/g, " ")
+                .replace(/\\\(/g, "(")
+                .replace(/\\\)/g, ")");
+              if (value.trim().length > 1) chunks.push(value);
+            }
+          }
+          const pdfText = normalizeResumeText(chunks.join(" "));
+          return pdfText.length > 80 ? pdfText : extractReadableRuns(raw);
+        }
+
+        async function readCareerResumeText(file) {
+          const bytes = new Uint8Array(await file.arrayBuffer());
+          const lowerName = String(file.name || "").toLowerCase();
+          const isPdf = file.type === "application/pdf" || lowerName.endsWith(".pdf");
+          const text = isPdf
+            ? extractTextFromPdfBytes(bytes)
+            : normalizeResumeText(new TextDecoder("utf-8", { fatal: false }).decode(bytes));
+          const readableText = text.length > 80 ? text : extractReadableRuns(text);
+          if (readableText.length < 40) {
+            throw new Error("無法從檔案讀取足夠文字，請改用 TXT / Markdown 或貼上可選取文字的 PDF。");
+          }
+          return readableText.slice(0, 50000);
+        }
+
+        function normalizeCareerOpsExtractedProfile(profile, resumeText) {
+          const source = profile && typeof profile === "object" ? profile : {};
+          const preferences = source.preferences && typeof source.preferences === "object" ? source.preferences : {};
+          const asArray = value => Array.isArray(value)
+            ? value.map(item => String(item || "").trim()).filter(Boolean)
+            : String(value || "").split(/[,，、\n]/).map(item => item.trim()).filter(Boolean);
+          return {
+            role: String(source.role || source.title || "").trim(),
+            summary: String(source.summary || "").trim() || resumeText.slice(0, 300),
+            skills: asArray(source.skills),
+            experience: Array.isArray(source.experience) ? source.experience : [],
+            education: Array.isArray(source.education) ? source.education : [],
+            languages: asArray(source.languages),
+            preferences: {
+              targetRoles: asArray(preferences.targetRoles || preferences.target_roles),
+              targetLocations: asArray(preferences.targetLocations || preferences.target_locations),
+              keywords: asArray(preferences.keywords)
+            }
+          };
+        }
+
+        async function extractCareerOpsProfileWithUserKey(resumeText) {
+          getCareerApiKey();
+          const system = `You are a resume parser. Extract a structured Career Ops profile from the provided resume text.
+Return ONLY valid JSON — no markdown fences, no commentary.
+
+Schema:
+{
+  "role": "current or target job title",
+  "summary": "1-2 sentence professional summary",
+  "skills": ["skill1", "skill2"],
+  "experience": [
+    { "company": "...", "title": "...", "duration": "...", "highlights": ["..."] }
+  ],
+  "education": [{ "institution": "...", "degree": "...", "year": "..." }],
+  "languages": ["English", "Chinese"],
+  "preferences": {
+    "targetRoles": ["Frontend Engineer", "UI Engineer"],
+    "targetLocations": ["Taipei", "Remote"],
+    "keywords": ["React", "TypeScript", "accessibility"]
+  }
+}`;
+          const text = await callClaude(system, `Resume:\n\n${resumeText.slice(0, 12000)}`);
+          return normalizeCareerOpsExtractedProfile(parseJson(text), resumeText);
+        }
+
+        async function saveCareerOpsProfileToCloud(client, user, profile, resumeText, file) {
+          await client
+            .from("career_ops_user_profiles")
+            .update({ is_active: false })
+            .eq("user_id", user.id)
+            .eq("is_active", true);
+
+          const lowerName = String(file?.name || "").toLowerCase();
+          const { data: saved, error } = await client
+            .from("career_ops_user_profiles")
+            .insert({
+              user_id: user.id,
+              source: lowerName.endsWith(".pdf") ? "pdf_upload" : "manual",
+              profile_json: profile,
+              raw_text: resumeText.slice(0, 50000),
+              is_active: true,
+            })
+            .select("id")
+            .single();
+          if (error) throw new Error(error.message);
+          return saved;
+        }
+
         function gradeClass(grade) {
           const g = (grade || "").toUpperCase().charAt(0);
           if (g === "A") return "grade-a";
@@ -14691,8 +14816,7 @@
         }
 
         async function callClaude(systemPrompt, userPrompt) {
-          const key = ($c("claudeApiKey").value || "").trim();
-          if (!key) throw new Error("請先填入 API Key（左側面板底部）");
+          const key = getCareerApiKey();
 
           const provider = detectProvider(key);
           if (!provider) throw new Error("無法識別 API Key 格式，請確認是否來自 Anthropic、OpenAI、Google Gemini 或 Groq");
@@ -15544,27 +15668,30 @@
 
 	          async function processResumeFile(file) {
 	            if (file.size > 10 * 1024 * 1024) { alert("檔案超過 10MB 上限"); return; }
+	            if (!($c("claudeApiKey")?.value || "").trim()) {
+	              if (statusEl) {
+	                statusEl.style.display = "block";
+	                statusEl.textContent = "請先在左側填入自己的 AI API Key。履歷解析會用你的 key 在瀏覽器完成，不會使用站方 token。";
+	              }
+	              return;
+	            }
 	            if (statusEl) { statusEl.style.display = "block"; statusEl.textContent = "解析中…"; }
 	            if (profilePreview) profilePreview.style.display = "none";
 	            if (runBtn) runBtn.style.display = "none";
 	            try {
 	              const client = window.cvStudioState?.client;
 	              const session = (await client?.auth?.getSession?.())?.data?.session;
-	              if (!client || !session) {
+	              const user = window.cvStudioState?.user || session?.user;
+	              if (!client || !session || !user) {
 	                if (statusEl) statusEl.textContent = "請先登入以使用線上分析。";
 	                return;
 	              }
-	              const form = new FormData();
-	              form.append("resume", file);
-	              const res = await fetch(`${window.CV_STUDIO_CONFIG?.supabaseUrl || ""}/functions/v1/career-ops-extract-profile`, {
-	                method: "POST",
-	                headers: { "authorization": `Bearer ${session.access_token}` },
-	                body: form
-	              });
-	              const data = await res.json();
-	              if (!res.ok) throw new Error(data.error || "解析失敗");
+	              const resumeText = await readCareerResumeText(file);
+	              if (statusEl) statusEl.textContent = "使用你的 API Key 解析履歷中…";
+	              const profile = await extractCareerOpsProfileWithUserKey(resumeText);
+	              const saved = await saveCareerOpsProfileToCloud(client, user, profile, resumeText, file);
 	              if (statusEl) statusEl.textContent = "✓ 履歷解析完成";
-	              const p = data.profile || {};
+	              const p = profile || {};
 	              if (profilePreview) {
 	                profilePreview.style.display = "block";
 	                profilePreview.innerHTML = `
@@ -15574,7 +15701,7 @@
 	                    ${p.preferences?.targetRoles?.length ? `<div style="color:var(--muted);margin-top:4px;">目標：${careerText(p.preferences.targetRoles.join("、"))}</div>` : ""}
 	                  </div>`;
 	              }
-	              window._careerOpsExtractedProfileId = data.profileId;
+	              window._careerOpsExtractedProfileId = saved.id;
 	              if (runBtn) runBtn.style.display = "block";
 	            } catch (err) {
 	              if (statusEl) statusEl.textContent = "解析失敗：" + err.message;
@@ -16612,7 +16739,7 @@
           function updateApiNote() {
             const note = document.querySelector(".career-api-note");
             if (!note) return;
-            note.innerHTML = `支援 Anthropic、OpenAI、Google Gemini、Groq，系統自動識別。<br><strong>安全模式</strong>：API Key 只保留在目前瀏覽器頁籤的 sessionStorage，不會上傳到 Supabase 或其他雲端資料庫。`;
+            note.innerHTML = `支援 Anthropic、OpenAI、Google Gemini、Groq，系統自動識別。<br><strong>BYOK 安全模式</strong>：API Key 只保留在目前瀏覽器頁籤；呼叫模型時只會送到對應 AI provider，不會寫入 Supabase、Railway 或 GitHub。`;
           }
 
           $c("claudeApiKey").addEventListener("input", () => {

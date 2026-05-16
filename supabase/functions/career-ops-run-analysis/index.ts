@@ -4,8 +4,8 @@
  * Supabase Edge Function — triggers a Career Ops analysis for the
  * authenticated user. Reads the user's active profile from
  * career_ops_user_profiles and the shared job snapshot from the
- * static data files, runs the intelligence + deep-fit logic,
- * and writes results back to career_ops_analyses.
+ * static data files, queues the analysis, and lets the worker write
+ * results back to career_ops_analyses.
  *
  * POST /functions/v1/career-ops-run-analysis
  * Body: { "profileId"?: "<uuid>" }  (optional — uses active profile if omitted)
@@ -66,7 +66,7 @@ Deno.serve(async (req: Request) => {
     }
     const { data, error } = await supabase
       .from("career_ops_analyses")
-      .select("id, status, stage, progress, error, summary_json, queued_at, started_at, completed_at")
+      .select("id, status, stage, progress, error, summary_json, layer_a_json, layer_b_json, layer_c_json, decision_report_json, queued_at, started_at, completed_at")
       .eq("id", analysisId)
       .eq("user_id", user.id)
       .single();

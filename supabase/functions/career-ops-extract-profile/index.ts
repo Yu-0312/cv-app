@@ -1,9 +1,13 @@
 /**
  * career-ops-extract-profile
  *
- * Supabase Edge Function — accepts a PDF or plain-text resume upload,
- * extracts a structured Career Ops profile JSON via the LLM, and saves
- * it to career_ops_user_profiles.
+ * Supabase Edge Function — accepts an already-extracted Career Ops
+ * profile JSON or a plain-text/PDF resume upload, then saves it to
+ * career_ops_user_profiles.
+ *
+ * BYOK note: LLM extraction is done in the browser with the user's
+ * own API key. This function never reads ANTHROPIC_API_KEY and never
+ * receives or stores a user model key.
  *
  * POST /functions/v1/career-ops-extract-profile
  * Content-Type: multipart/form-data  (field: "resume", file: PDF or TXT)
@@ -14,53 +18,6 @@
  */
 
 import { createClient } from "https://esm.sh/@supabase/supabase-js@2";
-
-const ANTHROPIC_API_URL = "https://api.anthropic.com/v1/messages";
-
-const EXTRACT_SYSTEM = `You are a resume parser. Extract a structured Career Ops profile from the provided resume text.
-Return ONLY valid JSON — no markdown fences, no commentary.
-
-Schema:
-{
-  "role": "current or target job title",
-  "summary": "1-2 sentence professional summary",
-  "skills": ["skill1", "skill2", ...],
-  "experience": [
-    { "company": "...", "title": "...", "duration": "...", "highlights": ["..."] }
-  ],
-  "education": [{ "institution": "...", "degree": "...", "year": "..." }],
-  "languages": ["English", "Chinese", ...],
-  "preferences": {
-    "targetRoles": ["Frontend Engineer", "UI Engineer"],
-    "targetLocations": ["Taipei", "Remote"],
-    "keywords": ["React", "TypeScript", "accessibility"]
-  }
-}`;
-
-async function extractWithLlm(text: string, apiKey: string): Promise<Record<string, unknown>> {
-  const response = await fetch(ANTHROPIC_API_URL, {
-    method: "POST",
-    headers: {
-      "content-type": "application/json",
-      "x-api-key": apiKey,
-      "anthropic-version": "2023-06-01",
-    },
-    body: JSON.stringify({
-      model: "claude-3-5-haiku-latest",
-      max_tokens: 2048,
-      temperature: 0.1,
-      system: EXTRACT_SYSTEM,
-      messages: [{ role: "user", content: `Resume:\n\n${text.slice(0, 12000)}` }],
-    }),
-  });
-  if (!response.ok) {
-    const err = await response.text();
-    throw new Error(`Anthropic API error ${response.status}: ${err}`);
-  }
-  const data = await response.json();
-  const content = data.content?.[0]?.text || "{}";
-  return JSON.parse(content);
-}
 
 async function extractTextFromPdf(bytes: Uint8Array): Promise<string> {
   // Edge Functions can't run native PDF parsers, so we use a simple
@@ -89,6 +46,51 @@ async function extractTextFromPdf(bytes: Uint8Array): Promise<string> {
   return readable.join(" ");
 }
 
+function stringArray(value: unknown): string[] {
+  if (Array.isArray(value)) return value.map((item) => String(item || "").trim()).filter(Boolean);
+  if (typeof value === "string") return value.split(/[,，、\n]/).map((item) => item.trim()).filter(Boolean);
+  return [];
+}
+
+function objectRecord(value: unknown): Record<string, unknown> {
+  return value && typeof value === "object" && !Array.isArray(value) ? value as Record<string, unknown> : {};
+}
+
+function normalizeProfile(input: unknown, resumeText: string): Record<string, unknown> {
+  const source = objectRecord(input);
+  const preferences = objectRecord(source.preferences);
+  return {
+    role: String(source.role || source.title || ""),
+    summary: String(source.summary || resumeText.slice(0, 300)),
+    skills: stringArray(source.skills),
+    experience: Array.isArray(source.experience) ? source.experience : [],
+    education: Array.isArray(source.education) ? source.education : [],
+    languages: stringArray(source.languages),
+    preferences: {
+      targetRoles: stringArray(preferences.targetRoles || preferences.target_roles),
+      targetLocations: stringArray(preferences.targetLocations || preferences.target_locations),
+      keywords: stringArray(preferences.keywords),
+    },
+  };
+}
+
+function heuristicProfile(resumeText: string): Record<string, unknown> {
+  const skillTerms = [
+    "JavaScript", "TypeScript", "React", "Vue", "Next.js", "Node.js", "Python", "SQL",
+    "AWS", "Docker", "Kubernetes", "Figma", "Analytics", "SEO", "CRM", "Product",
+  ];
+  const lower = resumeText.toLowerCase();
+  return {
+    role: "",
+    summary: resumeText.slice(0, 300),
+    skills: skillTerms.filter((skill) => lower.includes(skill.toLowerCase())),
+    experience: [],
+    education: [],
+    languages: [],
+    preferences: { targetRoles: [], targetLocations: [], keywords: [] },
+  };
+}
+
 Deno.serve(async (req: Request) => {
   if (req.method === "OPTIONS") {
     return new Response(null, {
@@ -101,7 +103,6 @@ Deno.serve(async (req: Request) => {
 
   const supabaseUrl = Deno.env.get("SUPABASE_URL")!;
   const supabaseKey = Deno.env.get("SUPABASE_ANON_KEY")!;
-  const anthropicKey = Deno.env.get("ANTHROPIC_API_KEY");
 
   // Authenticate user
   const authHeader = req.headers.get("Authorization");
@@ -117,6 +118,8 @@ Deno.serve(async (req: Request) => {
   }
 
   let resumeText = "";
+  let providedProfile: Record<string, unknown> | null = null;
+  let source = "manual";
   const contentType = req.headers.get("content-type") || "";
 
   try {
@@ -132,39 +135,29 @@ Deno.serve(async (req: Request) => {
       const bytes = new Uint8Array(await file.arrayBuffer());
       if (file.type === "application/pdf" || file.name?.endsWith(".pdf")) {
         resumeText = await extractTextFromPdf(bytes);
+        source = "pdf_upload";
       } else {
         resumeText = new TextDecoder().decode(bytes);
       }
     } else if (contentType.includes("application/json")) {
       const body = await req.json();
-      resumeText = String(body.text || "");
+      resumeText = String(body.text || body.rawText || "");
+      if (body.profile && typeof body.profile === "object") {
+        providedProfile = normalizeProfile(body.profile, resumeText);
+      }
+      source = String(body.source || "manual").slice(0, 40);
     } else {
       resumeText = await req.text();
     }
 
-    if (!resumeText.trim()) {
-      return new Response(JSON.stringify({ error: "Could not extract text from resume" }), {
+    if (!resumeText.trim() && !providedProfile) {
+      return new Response(JSON.stringify({ error: "Missing resume text or extracted profile" }), {
         status: 422,
         headers: { "content-type": "application/json" },
       });
     }
 
-    // Extract structured profile
-    let profile: Record<string, unknown> = {};
-    if (anthropicKey) {
-      profile = await extractWithLlm(resumeText, anthropicKey);
-    } else {
-      // Fallback: minimal heuristic extraction
-      profile = {
-        role: "",
-        summary: resumeText.slice(0, 300),
-        skills: [],
-        experience: [],
-        education: [],
-        languages: [],
-        preferences: { targetRoles: [], targetLocations: [], keywords: [] },
-      };
-    }
+    const profile = providedProfile || heuristicProfile(resumeText);
 
     // Deactivate previous active profiles
     await supabase
@@ -178,7 +171,7 @@ Deno.serve(async (req: Request) => {
       .from("career_ops_user_profiles")
       .insert({
         user_id: user.id,
-        source: contentType.includes("multipart") ? "pdf_upload" : "manual",
+        source,
         profile_json: profile,
         raw_text: resumeText.slice(0, 50000),
         is_active: true,

@@ -169,7 +169,7 @@ Career 分頁會讀取 CV 履歷頁已填寫的摘要、技能、經歷、教育
 
 此功能採用 `career-ops` 類型的評估思路（A-F / 分數、ATS 關鍵字、STAR 面試故事、投遞優先級排序），並內建輕量批次追蹤器、公司招聘頁職缺探索與客製 PDF 產生流程；尚未包含登入型 portal scanner 或跨平台排程 worker。
 
-API Key 只保留在目前瀏覽器頁籤的 `sessionStorage`，不會寫入 Supabase。
+API Key 只保留在目前瀏覽器頁籤的 `sessionStorage`。呼叫模型時只會送到使用者選擇的 AI provider，不會寫入 Supabase、Railway、GitHub Actions 或任何站方資料庫。登入後的履歷上傳 / 50-100 職缺比對也採 BYOK：前端用使用者自己的 key 解析履歷 profile，後端 worker 只做排隊、比對與寫結果，不需要站方 `ANTHROPIC_API_KEY`。
 
 #### Career Ops 對應
 
@@ -187,7 +187,7 @@ API Key 只保留在目前瀏覽器頁籤的 `sessionStorage`，不會寫入 Sup
 | Agent-style pipeline | `scripts/career-ops-pipeline.mjs` 以 source-strategy / search / scanner / evaluation / intelligence / application / compensation / story-bank / parallel stages 串起整條後端流程 | pipeline stage 依資料依賴分段，job-level 處理由 parallel worker 負責 |
 | 平行職缺處理 | `scripts/career-ops-parallel.mjs` 用 bounded concurrency queue 對每筆職缺平行產生 evaluation、research、application、compensation、story、apply-agent plan；`scripts/career-ops-parallel-pipeline.mjs` 會先平行掃 sources，再分段平行跑 research / kit / comp / story / learning / deep-fit | 預設 concurrency 4，可用 `--concurrency` 調整 |
 | 深度公司 / 職缺研究 | `scripts/career-ops-deep-research.mjs` 會整合 ranked jobs、sources、公開職缺頁與可選搜尋 API，產生 company/job dossiers；前端每筆職缺也有「AI 深度研究」按鈕 | 網頁 AI API key 只負責推理，不會自動搜尋全網；真正搜尋需 Brave/Bing/SerpAPI key 或匯入搜尋結果 |
-| 單職缺 deep fit | `scripts/career-ops-deep-fit.mjs` 將履歷、JD、research、compensation、story bank 合成逐筆 dossier；可選 `OPENAI_API_KEY` / `ANTHROPIC_API_KEY` 做後端 LLM review | 沒 LLM key 時用 evidence-based heuristic，避免捏造 |
+| 單職缺 deep fit | `scripts/career-ops-deep-fit.mjs` 將履歷、JD、research、compensation、story bank 合成逐筆 dossier；本機離線跑時可自行選擇是否提供 `OPENAI_API_KEY` / `ANTHROPIC_API_KEY` 做 LLM review | Hosted user flow 採 BYOK profile + worker heuristic，不消耗站方模型 token；沒 LLM key 時用 evidence-based heuristic，避免捏造 |
 | ATS 關鍵字與履歷落差 | 單筆與批次職缺分析 prompt 產出關鍵字、缺口、優先級與摘要 | 不捏造履歷不存在的經歷 |
 | STAR Story Bank | `scripts/career-ops-story-bank.mjs` 由履歷 proof points 與市場 themes 產生 STAR+Reflection story bank | 需要使用者補上真實量化結果，避免過度推論 |
 | 偏好學習 | `scripts/career-ops-learning.mjs` 從 score、status、feedback、source metadata 學習偏好技能、公司、來源與 avoid signals | 需要使用者持續標記喜歡 / 不喜歡與投遞狀態 |

@@ -43,7 +43,9 @@ pipeline stages in-process. Writes results back to career_ops_analyses.
 Environment variables required:
   SUPABASE_URL               Your project URL
   SUPABASE_SERVICE_ROLE_KEY  Service role key (bypasses RLS)
-  ANTHROPIC_API_KEY          (optional) LLM for deep-fit dossiers
+
+No model API key is required here. User-owned keys are used only in the
+browser to extract the resume profile before the analysis is queued.
 
 Options:
   --poll-interval <ms>   Default: ${DEFAULT_POLL_MS}
