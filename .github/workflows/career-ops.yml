@@ -65,7 +65,6 @@ jobs:
             --js-out data/app/career-ops-deep-fit.js \
             --report-out data/app/career-ops-deep-fit.md
           npm run career-ops:learn -- $PROFILE_FLAG
-          npm run career-ops:decision-report -- $PROFILE_FLAG
           npm run career-ops:modes
 
       - name: Post-scrape health check (update expiry stats)
@@ -91,7 +90,6 @@ jobs:
             data/app/career-ops-story-bank.json data/app/career-ops-story-bank.js data/app/career-ops-story-bank.md \
             data/app/career-ops-parallel-report.json data/app/career-ops-parallel-report.js data/app/career-ops-parallel-report.md \
             data/app/career-ops-learning.json data/app/career-ops-learning.js data/app/career-ops-learning-report.md \
-            data/app/career-ops-decision-report.json data/app/career-ops-decision-report.js data/app/career-ops-decision-report.md \
             data/app/career-ops-modes.json data/app/career-ops-modes.js data/app/career-ops-modes-report.md \
             data/app/career-ops-job-health.json data/app/career-ops-job-health-report.md"
           if git diff --quiet -- $CHANGED_FILES; then

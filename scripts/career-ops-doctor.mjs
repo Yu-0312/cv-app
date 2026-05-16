@@ -17,7 +17,6 @@ const OPTIONAL_FILES = [
   "data/app/career-ops-source-quality-report.md",
   "data/app/career-ops-compensation.json",
   "data/app/career-ops-story-bank.json",
-  "data/app/career-ops-decision-report.json",
   "data/app/career-ops-parallel-report.json",
   "data/app/career-ops-learning.json",
   "data/app/career-ops-modes.json"

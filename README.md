@@ -361,7 +361,7 @@ GSAT 分頁整合本地快照資料，支援依學測成績、學校、科系與
 | `npm run career-ops:application-kit` | 對高分職缺產生 apply / outreach / follow-up / interview / negotiation playbook |
 | `npm run career-ops:deep-research` | 產生公司 / 職缺深度研究 dossier，可選接 Brave/Bing/SerpAPI 搜尋 API |
 | `npm run career-ops:deep-fit` | 產生 career-ops 等級單職缺 fit dossier，可選接後端 OpenAI / Anthropic |
-| `npm run career-ops:decision-report` | 合併 deep fit / research / application kit / compensation / story bank，產生 A-F 單職缺決策報告 |
+| `npm run career-ops:decision-report` | 本機 / 離線用：合併 deep fit / research / application kit / compensation / story bank，產生 A-F 單職缺決策報告；hosted 前端預設不載入 |
 | `npm run career-ops:compensation` | 產生薪資結構、總包拆解、談薪問題與 counter scripts |
 | `npm run career-ops:story-bank` | 產生 STAR+Reflection story bank |
 | `npm run career-ops:learn` | 從職缺評分、狀態與回饋學習使用者偏好 |
@@ -479,6 +479,7 @@ CV App/
 - [ ] Chrome 實測登入、刷新、登出、再次刷新
 - [ ] `npm run smoke:test` 通過
 - [ ] GitHub Pages workflow 部署成功
+- [ ] Career Ops 分享連結需要部署 `career-ops-share-analysis` Edge Function 並設定 `SITE_URL`；`career-ops-extract-profile` / `career-ops-run-analysis` 僅為進階或舊 queue flow 保留，預設 BYOK 前端分析不依賴 Railway worker
 
 ## 已完成的後續方向
 
