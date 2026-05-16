@@ -15,12 +15,13 @@ const DEFAULT_REPORT = "data/app/career-ops-deep-fit.md";
 function printHelp() {
   console.log(`Career Ops deep fit evaluator
 
-Produces career-ops-grade single-job fit dossiers. It works heuristically by
-default and can optionally call a backend LLM when OPENAI_API_KEY or
-ANTHROPIC_API_KEY is available.
+Produces career-ops-grade single-job fit dossiers across three layers:
+  Layer A — Full dossiers   (roleFit >= 68, default top 25)
+  Layer B — Standard match  (roleFit 40-67, default top 40)
+  Layer C — Exploratory     (roleFit < 40 or unscored, default top 30)
 
 Usage:
-  node scripts/career-ops-deep-fit.mjs --top 10
+  node scripts/career-ops-deep-fit.mjs --top-a 25 --top-b 40 --top-c 30
   OPENAI_API_KEY="..." node scripts/career-ops-deep-fit.mjs --llm openai
 
 Options:
@@ -32,7 +33,10 @@ Options:
   --out <file>        JSON output. Default: ${DEFAULT_OUT}
   --js-out <file>     Browser JS output. Default: ${DEFAULT_JS_OUT}
   --report-out <file> Markdown report. Default: ${DEFAULT_REPORT}
-  --top <n>           Number of top jobs. Default: 12
+  --top <n>           Shorthand: sets --top-a. Default: 25
+  --top-a <n>         Layer A (full dossier) count. Default: 25
+  --top-b <n>         Layer B (standard match) count. Default: 40
+  --top-c <n>         Layer C (exploratory signal) count. Default: 30
   --llm <provider>    none, openai, anthropic, or auto. Default: auto
   --no-js             Skip browser JS output
   --help              Show this help
@@ -49,7 +53,9 @@ function parseArgs(argv) {
     out: DEFAULT_OUT,
     jsOut: DEFAULT_JS_OUT,
     reportOut: DEFAULT_REPORT,
-    top: 12,
+    topA: 25,
+    topB: 40,
+    topC: 30,
     llm: "auto",
     writeJs: true
   };
@@ -64,7 +70,10 @@ function parseArgs(argv) {
     else if (token === "--out") args.out = argv[++i] || DEFAULT_OUT;
     else if (token === "--js-out") args.jsOut = argv[++i] || DEFAULT_JS_OUT;
     else if (token === "--report-out") args.reportOut = argv[++i] || DEFAULT_REPORT;
-    else if (token === "--top") args.top = Math.max(1, Number.parseInt(argv[++i] || "12", 10) || 12);
+    else if (token === "--top") args.topA = Math.max(1, Number.parseInt(argv[++i] || "25", 10) || 25);
+    else if (token === "--top-a") args.topA = Math.max(1, Number.parseInt(argv[++i] || "25", 10) || 25);
+    else if (token === "--top-b") args.topB = Math.max(0, Number.parseInt(argv[++i] || "40", 10) || 40);
+    else if (token === "--top-c") args.topC = Math.max(0, Number.parseInt(argv[++i] || "30", 10) || 30);
     else if (token === "--llm") args.llm = String(argv[++i] || "auto").toLowerCase();
     else if (token === "--no-js") args.writeJs = false;
     else throw new Error(`Unknown argument: ${token}`);
@@ -84,12 +93,56 @@ function array(value) {
   return Array.isArray(value) ? value : value ? [value] : [];
 }
 
-function rankedJobs(jobs, top) {
+// Layer A: full deep-fit dossiers — top performers with strong role alignment
+function rankedJobsLayerA(jobs, topA, profile) {
+  const targetRoles = array(profile?.preferences?.targetRoles).map((r) => String(r).toLowerCase());
   return array(jobs)
-    .filter((job) => !job.isExpired)
+    .filter((job) => {
+      if (job.isExpired) return false;
+      // Require high role alignment for full dossier treatment
+      if (targetRoles.length && Number(job.intelligence?.dimensions?.roleFit || 0) < 68) return false;
+      return true;
+    })
     .slice()
     .sort((a, b) => Number(b.score || 0) - Number(a.score || 0))
-    .slice(0, top);
+    .slice(0, topA);
+}
+
+// Layer B: standard matches — moderate role alignment, compact card
+function rankedJobsLayerB(jobs, topB, profile, layerAKeys) {
+  const targetRoles = array(profile?.preferences?.targetRoles).map((r) => String(r).toLowerCase());
+  return array(jobs)
+    .filter((job) => {
+      if (job.isExpired) return false;
+      if (layerAKeys.has(jobKey(job))) return false;
+      const roleFit = Number(job.intelligence?.dimensions?.roleFit || 0);
+      // Only include jobs not already in Layer A and with moderate fit
+      if (targetRoles.length && roleFit >= 68) return false;
+      if (targetRoles.length && roleFit < 40) return false;
+      return true;
+    })
+    .slice()
+    .sort((a, b) => Number(b.score || 0) - Number(a.score || 0))
+    .slice(0, topB);
+}
+
+// Layer C: exploratory signals — low fit or unscored, for discovery
+function rankedJobsLayerC(jobs, topC, layerAKeys, layerBKeys) {
+  return array(jobs)
+    .filter((job) => {
+      if (job.isExpired) return false;
+      if (layerAKeys.has(jobKey(job))) return false;
+      if (layerBKeys.has(jobKey(job))) return false;
+      return true;
+    })
+    .slice()
+    .sort((a, b) => Number(b.score || 0) - Number(a.score || 0))
+    .slice(0, topC);
+}
+
+// Legacy alias kept for callers that pass a single --top value
+function rankedJobs(jobs, top, profile) {
+  return rankedJobsLayerA(jobs, top, profile);
 }
 
 function jobKey(job) {
@@ -135,7 +188,8 @@ function heuristicDossier(job, profile, context) {
   const text = `${job.title || ""}\n${job.company || ""}\n${job.location || ""}\n${job.description || ""}`;
   const keywords = profileKeywords(profile);
   const hits = keywords.filter((keyword) => contains(text, keyword)).slice(0, 14);
-  const misses = keywords.filter((keyword) => !contains(text, keyword)).slice(0, 12);
+  // JD skills the profile doesn't cover — actual gaps, not "profile skills JD didn't mention"
+  const misses = array(job.intelligence?.features?.jdSkillsMissingFromProfile || []).slice(0, 12);
   const research = findForJob(context.research.dossiers, job);
   const compensation = findForJob(context.compensation.plans, job);
   const storyHooks = chooseStories(context.storyBank, job);
@@ -180,6 +234,52 @@ function heuristicDossier(job, profile, context) {
     } : null,
     storyHooks,
     llm: null
+  };
+}
+
+// Layer B builder — compact card without LLM overhead
+function standardMatch(job, profile) {
+  const text = `${job.title || ""}\n${job.company || ""}\n${job.description || ""}`;
+  const keywords = profileKeywords(profile);
+  const hits = keywords.filter((keyword) => contains(text, keyword)).slice(0, 8);
+  const misses = array(job.intelligence?.features?.jdSkillsMissingFromProfile || []).slice(0, 6);
+  const score = Number(job.score || 0);
+  const roleFit = Number(job.intelligence?.dimensions?.roleFit || 0);
+  return {
+    jobKey: jobKey(job),
+    company: job.company || "",
+    title: job.title || "",
+    score,
+    grade: job.grade || "",
+    roleFit,
+    url: job.url || "",
+    location: job.location || "",
+    keywordHits: hits,
+    keywordMisses: misses,
+    decision: score >= 70 ? "pursue selectively" : score >= 55 ? "hold / compare" : "skip unless strategic",
+    layer: "B"
+  };
+}
+
+// Layer C builder — minimal signal card for exploratory discovery
+function exploratorySignal(job, profile) {
+  const keywords = profileKeywords(profile);
+  const text = `${job.title || ""}\n${job.description || ""}`;
+  const hits = keywords.filter((keyword) => contains(text, keyword)).slice(0, 4);
+  const misses = array(job.intelligence?.features?.jdSkillsMissingFromProfile || []).slice(0, 4);
+  return {
+    jobKey: jobKey(job),
+    company: job.company || "",
+    title: job.title || "",
+    score: Number(job.score || 0),
+    grade: job.grade || "",
+    roleFit: Number(job.intelligence?.dimensions?.roleFit || 0),
+    url: job.url || "",
+    location: job.location || "",
+    keywordHits: hits,
+    topGap: misses[0] || "",
+    mainGaps: misses,
+    layer: "C"
   };
 }
 
@@ -271,41 +371,71 @@ async function addLlmReview(dossier, job, profile, context, provider) {
 }
 
 function renderReport(payload) {
+  const { summary } = payload;
   const lines = [
     "# Career Ops Deep Fit Report",
     "",
     `Generated: ${payload.generatedAt}`,
     `LLM provider: ${payload.llmProvider}`,
-    `Dossiers: ${payload.dossiers.length}`,
+    `Total results: ${summary.totalResults} (Layer A: ${summary.layerA} dossiers, Layer B: ${summary.layerB} standard, Layer C: ${summary.layerC} exploratory)`,
     ""
   ];
-  for (const dossier of payload.dossiers) {
-    lines.push(
-      `## ${dossier.company || "Unknown"} - ${dossier.title}`,
-      "",
-      `- Score: ${dossier.score || "-"}`,
-      `- Grade: ${dossier.grade || "-"}`,
-      `- Confidence: ${dossier.confidence}`,
-      `- Decision: ${dossier.decision}`,
-      `- Thesis: ${dossier.thesis}`,
-      "",
-      "### Evidence",
-      `- Keyword hits: ${dossier.evidence.keywordHits.join(", ") || "-"}`,
-      `- Keyword misses: ${dossier.evidence.keywordMisses.join(", ") || "-"}`,
-      `- Research signals: ${dossier.evidence.researchSignals.join(", ") || "-"}`,
-      `- Compensation leverage: ${dossier.evidence.compensationLeverage || "-"}`,
-      "",
-      "### Concerns",
-      ...(dossier.concerns.length ? dossier.concerns.map((item) => `- ${item}`) : ["- None flagged"]),
-      "",
-      "### Interview Strategy",
-      ...dossier.interviewStrategy.map((item) => `- ${item}`),
-      "",
-      "### CV Strategy",
-      ...dossier.cvStrategy.map((item) => `- ${item}`),
-      ""
-    );
+
+  if (payload.layerA.length) {
+    lines.push("## Layer A — Full Dossiers (roleFit ≥ 68)", "");
+    for (const dossier of payload.layerA) {
+      lines.push(
+        `### ${dossier.company || "Unknown"} - ${dossier.title}`,
+        "",
+        `- Score: ${dossier.score || "-"}`,
+        `- Grade: ${dossier.grade || "-"}`,
+        `- Confidence: ${dossier.confidence}`,
+        `- Decision: ${dossier.decision}`,
+        `- Thesis: ${dossier.thesis}`,
+        "",
+        "#### Evidence",
+        `- Keyword hits: ${dossier.evidence.keywordHits.join(", ") || "-"}`,
+        `- Keyword misses: ${dossier.evidence.keywordMisses.join(", ") || "-"}`,
+        `- Research signals: ${dossier.evidence.researchSignals.join(", ") || "-"}`,
+        `- Compensation leverage: ${dossier.evidence.compensationLeverage || "-"}`,
+        "",
+        "#### Concerns",
+        ...(dossier.concerns.length ? dossier.concerns.map((item) => `- ${item}`) : ["- None flagged"]),
+        "",
+        "#### Interview Strategy",
+        ...dossier.interviewStrategy.map((item) => `- ${item}`),
+        "",
+        "#### CV Strategy",
+        ...dossier.cvStrategy.map((item) => `- ${item}`),
+        ""
+      );
+    }
   }
+
+  if (payload.layerB.length) {
+    lines.push("## Layer B — Standard Matches (roleFit 40-67)", "");
+    for (const match of payload.layerB) {
+      lines.push(
+        `### ${match.company || "Unknown"} - ${match.title}`,
+        `- Score: ${match.score || "-"} | Grade: ${match.grade || "-"} | RoleFit: ${match.roleFit || "-"}`,
+        `- Decision: ${match.decision}`,
+        `- Keyword hits: ${match.keywordHits.join(", ") || "-"}`,
+        `- Gaps: ${match.keywordMisses.join(", ") || "-"}`,
+        ""
+      );
+    }
+  }
+
+  if (payload.layerC.length) {
+    lines.push("## Layer C — Exploratory Signals (roleFit < 40)", "");
+    for (const signal of payload.layerC) {
+      lines.push(
+        `- **${signal.company || "Unknown"} — ${signal.title}** (score: ${signal.score || "-"}) | Top gap: ${signal.topGap || "none"}`
+      );
+    }
+    lines.push("");
+  }
+
   return `${lines.join("\n")}\n`;
 }
 
@@ -330,21 +460,44 @@ async function main() {
     storyBank: await readJsonIfExists(args.storyBank)
   };
   const provider = pickLlm(args.llm);
-  const dossiers = [];
-  for (const job of rankedJobs(jobsPayload.jobs, args.top)) {
+
+  // Layer A — full dossiers with LLM review (top performers)
+  const layerAJobs = rankedJobsLayerA(jobsPayload.jobs, args.topA, profile);
+  const layerAKeys = new Set(layerAJobs.map(jobKey));
+  const layerADossiers = [];
+  for (const job of layerAJobs) {
     const base = heuristicDossier(job, profile, context);
-    dossiers.push(await addLlmReview(base, job, profile, context, provider));
+    layerADossiers.push(await addLlmReview(base, job, profile, context, provider));
   }
+
+  // Layer B — standard match cards (no LLM, heuristic only)
+  const layerBJobs = rankedJobsLayerB(jobsPayload.jobs, args.topB, profile, layerAKeys);
+  const layerBKeys = new Set(layerBJobs.map(jobKey));
+  const layerBMatches = layerBJobs.map((job) => standardMatch(job, profile));
+
+  // Layer C — exploratory signals (minimal metadata)
+  const layerCJobs = rankedJobsLayerC(jobsPayload.jobs, args.topC, layerAKeys, layerBKeys);
+  const layerCSignals = layerCJobs.map((job) => exploratorySignal(job, profile));
+
   const payload = {
     source: "career-ops-deep-fit",
     generatedAt: new Date().toISOString(),
     llmProvider: provider,
-    dossiers
+    summary: {
+      totalResults: layerADossiers.length + layerBMatches.length + layerCSignals.length,
+      layerA: layerADossiers.length,
+      layerB: layerBMatches.length,
+      layerC: layerCSignals.length
+    },
+    layerA: layerADossiers,
+    layerB: layerBMatches,
+    layerC: layerCSignals,
+    dossiers: layerADossiers // backward-compat alias
   };
   await writeJson(args.out, payload);
   if (args.writeJs) await writeText(args.jsOut, `window.CV_CAREER_OPS_DEEP_FIT = ${JSON.stringify(payload, null, 2)};\n`);
   await writeText(args.reportOut, renderReport(payload));
-  console.log(`[career-ops] deep fit ${dossiers.length} dossier(s), llm=${provider}`);
+  console.log(`[career-ops] deep fit: ${layerADossiers.length} Layer A dossiers, ${layerBMatches.length} Layer B matches, ${layerCSignals.length} Layer C signals (total: ${payload.summary.totalResults}), llm=${provider}`);
 }
 
 main().catch((error) => {

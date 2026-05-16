@@ -150,7 +150,7 @@ function jobKeywords(job) {
 function missingKeywords(job) {
   return compact([
     ...array(job.evaluation?.ats_keywords?.missing),
-    ...array(job.intelligence?.features?.missingProfileSkills)
+    ...array(job.intelligence?.features?.jdSkillsMissingFromProfile)
   ]).slice(0, 12);
 }
 
@@ -240,8 +240,8 @@ function buildDossier(job, profile, context) {
         matchedKeywords: keywords,
         missingKeywords: missing,
         honestGapFrame: missing.length
-          ? `Do not overclaim ${missing.slice(0, 5).join(", ")}. Frame adjacent proof and learning plan instead.`
-          : "No major keyword gap detected from the current artifacts."
+          ? `The JD requires ${missing.slice(0, 5).join(", ")} which are not yet in your profile. Build adjacent proof or add a learning plan for these gaps.`
+          : "No skill gaps detected — your profile covers the JD's key requirements."
       },
       C_levelStrategy: {
         inferredLevel: inferLevel(job, compensation),

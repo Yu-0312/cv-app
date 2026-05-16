@@ -25,6 +25,8 @@ Options:
   --strategy <file>         Source strategy JSON. Default: data/career-ops-source-strategy.json if present
   --rubric <file>           Rubric JSON. Default: ${DEFAULT_RUBRIC}
   --search-results <file>   Curated search results file. Can be repeated
+  --health-threshold <n>    Expiry ratio that triggers auto re-scrape (0-1). Default: 0.30
+  --skip-health             Skip job health monitor check
   --skip-source-flex        Skip flexible source expansion
   --skip-scrape             Skip network scrape
   --skip-quality            Skip source quality gate
@@ -36,6 +38,9 @@ Options:
   --skip-story-bank         Skip STAR story bank generation
   --skip-parallel           Skip job-level parallel worker merge
   --skip-modes              Skip command registry artifact generation
+  --deep-fit-top-a <n>      Layer A dossier count. Default: 25
+  --deep-fit-top-b <n>      Layer B standard match count. Default: 40
+  --deep-fit-top-c <n>      Layer C exploratory count. Default: 30
   --help                    Show this help
 `);
 }
@@ -46,6 +51,8 @@ function parseArgs(argv) {
     strategy: fs.existsSync("data/career-ops-source-strategy.json") ? "data/career-ops-source-strategy.json" : "",
     rubric: DEFAULT_RUBRIC,
     searchResults: [],
+    healthThreshold: 0.30,
+    skipHealth: false,
     skipSourceFlex: false,
     skipScrape: false,
     skipQuality: false,
@@ -56,7 +63,10 @@ function parseArgs(argv) {
     skipCompensation: false,
     skipStoryBank: false,
     skipParallel: false,
-    skipModes: false
+    skipModes: false,
+    deepFitTopA: 25,
+    deepFitTopB: 40,
+    deepFitTopC: 30
   };
   for (let i = 0; i < argv.length; i += 1) {
     const token = argv[i];
@@ -65,6 +75,8 @@ function parseArgs(argv) {
     else if (token === "--strategy") args.strategy = argv[++i] || "";
     else if (token === "--rubric") args.rubric = argv[++i] || args.rubric;
     else if (token === "--search-results") args.searchResults.push(argv[++i] || "");
+    else if (token === "--health-threshold") args.healthThreshold = Math.min(1, Math.max(0, Number.parseFloat(argv[++i] || "0.30") || 0.30));
+    else if (token === "--skip-health") args.skipHealth = true;
     else if (token === "--skip-source-flex") args.skipSourceFlex = true;
     else if (token === "--skip-scrape") args.skipScrape = true;
     else if (token === "--skip-quality") args.skipQuality = true;
@@ -76,6 +88,9 @@ function parseArgs(argv) {
     else if (token === "--skip-story-bank") args.skipStoryBank = true;
     else if (token === "--skip-parallel") args.skipParallel = true;
     else if (token === "--skip-modes") args.skipModes = true;
+    else if (token === "--deep-fit-top-a") args.deepFitTopA = Math.max(1, Number.parseInt(argv[++i] || "25", 10) || 25);
+    else if (token === "--deep-fit-top-b") args.deepFitTopB = Math.max(0, Number.parseInt(argv[++i] || "40", 10) || 40);
+    else if (token === "--deep-fit-top-c") args.deepFitTopC = Math.max(0, Number.parseInt(argv[++i] || "30", 10) || 30);
     else throw new Error(`Unknown argument: ${token}`);
   }
   return args;
@@ -92,6 +107,18 @@ function run(label, command, args) {
 function main() {
   const args = parseArgs(process.argv.slice(2));
   if (args.help) return printHelp();
+
+  // Health check: report job DB status; skip scrape if still healthy
+  if (!args.skipHealth && fs.existsSync("data/app/career-ops-jobs.json")) {
+    run("job health monitor", "node", [
+      "scripts/career-ops-health-monitor.mjs",
+      "--jobs", "data/app/career-ops-jobs.json",
+      "--out", "data/app/career-ops-job-health.json",
+      "--report-out", "data/app/career-ops-job-health-report.md",
+      "--threshold", String(args.healthThreshold)
+      // no --auto-scrape: pipeline will scrape in its own scrape step
+    ]);
+  }
 
   if (args.strategy && fs.existsSync(args.strategy)) {
     run("source-strategy agent", "node", [
@@ -234,7 +261,10 @@ function main() {
     "--story-bank", "data/app/career-ops-story-bank.json",
     "--out", "data/app/career-ops-deep-fit.json",
     "--js-out", "data/app/career-ops-deep-fit.js",
-    "--report-out", "data/app/career-ops-deep-fit.md"
+    "--report-out", "data/app/career-ops-deep-fit.md",
+    "--top-a", String(args.deepFitTopA),
+    "--top-b", String(args.deepFitTopB),
+    "--top-c", String(args.deepFitTopC)
   ]);
 
   run("learning agent", "node", [

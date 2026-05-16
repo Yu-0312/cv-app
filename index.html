@@ -5182,6 +5182,337 @@
       padding: 26px;
       text-align: center;
     }
+    /* ── Deep Fit Dashboard tabs ── */
+    .career-ops-tabs {
+      display: flex;
+      gap: 4px;
+      margin-bottom: 18px;
+      background: var(--surface-strong);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 4px;
+    }
+    .career-ops-tab {
+      flex: 1;
+      padding: 8px 12px;
+      border-radius: 10px;
+      border: none;
+      background: transparent;
+      color: var(--muted);
+      font-size: 12.5px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background 0.15s, color 0.15s;
+      text-align: center;
+    }
+    .career-ops-tab.active {
+      background: #fff;
+      color: var(--ink);
+      box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+    }
+    /* ── Layer badges ── */
+    .career-layer-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      padding: 2px 8px;
+      border-radius: 20px;
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+    .career-layer-a { background: rgba(173,63,47,0.12); color: #ad3f2f; }
+    .career-layer-b { background: rgba(33,78,116,0.12); color: #214e74; }
+    .career-layer-c { background: rgba(99,99,99,0.1); color: #666; }
+    /* ── Layer section headers ── */
+    .career-layer-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin: 22px 0 12px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--line);
+    }
+    .career-layer-header h3 {
+      margin: 0;
+      font-size: 14px;
+      font-weight: 800;
+      color: var(--ink);
+    }
+    .career-layer-header small {
+      color: var(--muted);
+      font-size: 11.5px;
+    }
+    /* ── Layer A dossier cards ── */
+    .career-dossier-card {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      overflow: hidden;
+      margin-bottom: 12px;
+      transition: box-shadow 0.16s;
+    }
+    .career-dossier-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.08); }
+    .career-dossier-head {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 16px 18px 12px;
+      cursor: pointer;
+    }
+    .career-dossier-company {
+      font-size: 11px;
+      font-weight: 800;
+      color: var(--muted);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      margin-bottom: 3px;
+    }
+    .career-dossier-title {
+      font-size: 15px;
+      font-weight: 800;
+      color: var(--ink);
+      line-height: 1.3;
+    }
+    .career-dossier-meta {
+      font-size: 12px;
+      color: var(--muted);
+      margin-top: 4px;
+    }
+    .career-dossier-score {
+      text-align: right;
+      min-width: 54px;
+    }
+    .career-dossier-score-num {
+      font-size: 26px;
+      font-weight: 900;
+      line-height: 1;
+      color: var(--accent-2);
+    }
+    .career-dossier-score-grade {
+      font-size: 11px;
+      color: var(--muted);
+      font-weight: 700;
+      margin-top: 2px;
+    }
+    .career-dossier-body {
+      padding: 0 18px 16px;
+      display: none;
+    }
+    .career-dossier-card.expanded .career-dossier-body { display: block; }
+    .career-dossier-decision {
+      display: inline-block;
+      padding: 3px 10px;
+      border-radius: 20px;
+      font-size: 11px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    .decision-pursue { background: rgba(34,139,34,0.12); color: #1a6b1a; }
+    .decision-selective { background: rgba(33,78,116,0.12); color: #214e74; }
+    .decision-hold { background: rgba(216,159,61,0.15); color: #7b5a1d; }
+    .decision-skip { background: rgba(173,63,47,0.1); color: #ad3f2f; }
+    .career-dossier-thesis {
+      font-size: 12.5px;
+      color: var(--muted);
+      line-height: 1.6;
+      margin-bottom: 12px;
+    }
+    .career-dossier-section {
+      margin-top: 12px;
+    }
+    .career-dossier-section-label {
+      font-size: 10.5px;
+      font-weight: 800;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 6px;
+    }
+    .career-dossier-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+    }
+    .career-dossier-tag {
+      padding: 3px 9px;
+      border-radius: 20px;
+      font-size: 11px;
+      font-weight: 600;
+    }
+    .career-tag-hit { background: rgba(34,139,34,0.1); color: #1a6b1a; }
+    .career-tag-miss { background: rgba(173,63,47,0.1); color: #ad3f2f; }
+    .career-dossier-actions {
+      display: flex;
+      gap: 8px;
+      margin-top: 14px;
+      flex-wrap: wrap;
+    }
+    /* ── Layer B compact rows ── */
+    .career-match-grid {
+      display: grid;
+      gap: 8px;
+    }
+    .career-match-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background: var(--surface-strong);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 11px 14px;
+      text-align: left;
+      cursor: pointer;
+      transition: border-color 0.15s, background 0.15s;
+    }
+    .career-match-row:hover { border-color: rgba(33,78,116,0.3); background: #fff; }
+    .career-match-info { flex: 1; min-width: 0; }
+    .career-match-title {
+      font-size: 13.5px;
+      font-weight: 700;
+      color: var(--ink);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .career-match-meta {
+      font-size: 11.5px;
+      color: var(--muted);
+      margin-top: 2px;
+    }
+    .career-match-score {
+      font-size: 18px;
+      font-weight: 900;
+      color: var(--accent-2);
+      min-width: 36px;
+      text-align: right;
+    }
+    /* ── Layer C grid ── */
+    .career-explore-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 8px;
+    }
+    .career-explore-card {
+      background: var(--surface-strong);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 12px 14px;
+      font-size: 12.5px;
+    }
+    .career-explore-title {
+      font-weight: 700;
+      color: var(--ink);
+      margin-bottom: 2px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .career-explore-company { color: var(--muted); font-size: 11.5px; }
+    .career-explore-gap {
+      margin-top: 6px;
+      font-size: 11px;
+      color: rgba(173,63,47,0.8);
+    }
+    /* ── Health status badge ── */
+    .career-health-bar {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--surface-strong);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 10px 14px;
+      margin-bottom: 16px;
+      font-size: 12px;
+    }
+    .career-health-dot {
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+    .health-healthy { background: #22c55e; }
+    .health-warning { background: #f59e0b; }
+    .health-degraded { background: #ef4444; }
+    .health-critical { background: #7f1d1d; }
+    /* ── Resume upload area ── */
+    .career-upload-zone {
+      border: 2px dashed var(--line);
+      border-radius: 16px;
+      padding: 32px;
+      text-align: center;
+      cursor: pointer;
+      transition: border-color 0.16s, background 0.16s;
+    }
+    .career-upload-zone:hover,
+    .career-upload-zone.dragover {
+      border-color: rgba(33,78,116,0.5);
+      background: rgba(33,78,116,0.04);
+    }
+    .career-upload-zone input { display: none; }
+    .career-upload-icon {
+      width: 40px;
+      height: 40px;
+      margin: 0 auto 12px;
+      color: var(--muted);
+    }
+    .career-upload-label {
+      font-size: 13.5px;
+      font-weight: 700;
+      color: var(--ink);
+      margin-bottom: 4px;
+    }
+    .career-upload-sub {
+      font-size: 12px;
+      color: var(--muted);
+    }
+    /* ── Summary strip ── */
+    .career-deepfit-summary {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+      margin-bottom: 18px;
+    }
+    .career-deepfit-summary-card {
+      background: var(--surface-strong);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 12px 14px;
+      text-align: center;
+    }
+    .career-deepfit-summary-num {
+      font-size: 24px;
+      font-weight: 900;
+      color: var(--ink);
+      line-height: 1;
+    }
+    .career-deepfit-summary-label {
+      font-size: 10.5px;
+      font-weight: 700;
+      color: var(--muted);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      margin-top: 4px;
+    }
+    /* ── Share panel ── */
+    .career-share-panel {
+      background: rgba(33,78,116,0.05);
+      border: 1px solid rgba(33,78,116,0.18);
+      border-radius: 12px;
+      padding: 14px 16px;
+      margin-top: 18px;
+      font-size: 12.5px;
+    }
+    .career-share-url {
+      font-family: monospace;
+      font-size: 11.5px;
+      color: #214e74;
+      word-break: break-all;
+      margin: 8px 0;
+    }
     .career-tailored-pdf {
       width: 210mm;
       min-height: 297mm;
@@ -6653,6 +6984,14 @@
 
         <!-- RIGHT PANEL: Results -->
         <div class="career-results-shell">
+          <!-- Tab switcher -->
+          <div class="career-ops-tabs" id="careerOpsTabs">
+            <button class="career-ops-tab active" type="button" data-career-ops-tab="tracker">職缺追蹤</button>
+            <button class="career-ops-tab" type="button" data-career-ops-tab="deepfit">Deep Fit 分析</button>
+            <button class="career-ops-tab" type="button" data-career-ops-tab="upload">履歷上傳</button>
+          </div>
+
+          <!-- Tab: Job Tracker (existing) -->
           <div id="careerResultsArea">
             <div class="career-results-empty">
               <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true">
@@ -6661,6 +7000,38 @@
                 <path d="M9 12h6M9 16h4"/>
               </svg>
               <div>選擇分析模式、填入職缺描述（或直接分析履歷），<br>再點擊按鈕開始分析。</div>
+            </div>
+          </div>
+
+          <!-- Tab: Deep Fit Dashboard -->
+          <div id="careerDeepFitArea" hidden></div>
+
+          <!-- Tab: Resume Upload -->
+          <div id="careerUploadArea" hidden>
+            <div style="max-width:560px;margin:0 auto;">
+              <h3 style="margin:0 0 6px;font-size:18px;font-weight:800;color:var(--ink);">上傳履歷，取得 50-100 職缺比對</h3>
+              <p style="margin:0 0 20px;font-size:13px;color:var(--muted);line-height:1.6;">系統將解析你的履歷，自動比對職缺資料庫中的所有職缺，並回傳三層結果：深度評估（Layer A）、標準比對（Layer B）、探索訊號（Layer C）。</p>
+              <label class="career-upload-zone" id="careerUploadZone">
+                <input type="file" id="careerResumeFile" accept=".pdf,.txt,.md,.docx" />
+                <svg class="career-upload-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                  <polyline points="14,2 14,8 20,8"/>
+                  <line x1="12" y1="18" x2="12" y2="12"/>
+                  <polyline points="9,15 12,12 15,15"/>
+                </svg>
+                <div class="career-upload-label">拖曳履歷至此，或點擊選擇檔案</div>
+                <div class="career-upload-sub">支援 PDF、TXT、Markdown（最大 10MB）</div>
+              </label>
+              <div id="careerUploadStatus" style="margin-top:14px;font-size:13px;color:var(--muted);display:none;"></div>
+              <div id="careerUploadProfilePreview" style="margin-top:16px;display:none;"></div>
+              <div style="margin-top:20px;">
+                <button id="careerRunAnalysisBtn" class="career-analyze-btn" type="button" style="display:none;">開始分析職缺比對</button>
+              </div>
+              <div style="margin-top:24px;padding-top:18px;border-top:1px solid var(--line);">
+                <div style="font-size:12px;font-weight:800;letter-spacing:0.06em;text-transform:uppercase;color:var(--muted);margin-bottom:10px;">或直接使用靜態快照分析</div>
+                <p style="font-size:12.5px;color:var(--muted);line-height:1.6;margin:0 0 10px;">如果你已在本機跑過 <code>npm run career-ops:pipeline</code>，點下方直接讀取已產生的 Deep Fit 結果：</p>
+                <button id="careerLoadStaticDeepFit" class="career-link-btn" type="button">讀取本機快照結果</button>
+              </div>
             </div>
           </div>
         </div>
@@ -14906,6 +15277,353 @@
 	        window.cvCareerOpsLoadJobs = loadCareerOpsJobs;
 	        window.cvCareerOpsSaveJobs = saveCareerOpsJobs;
 	        window.cvCareerOpsRenderDashboard = renderCareerOpsDashboard;
+
+	        // ──────────────────────────────────────────────────
+	        // DEEP FIT DASHBOARD — Layer A / B / C
+	        // ──────────────────────────────────────────────────
+
+	        let careerOpsActiveTab = "tracker";
+
+	        function careerOpsSetTab(tab) {
+	          careerOpsActiveTab = tab;
+	          document.querySelectorAll("[data-career-ops-tab]").forEach(btn => {
+	            btn.classList.toggle("active", btn.dataset.careerOpsTab === tab);
+	          });
+	          const tracker = $c("careerResultsArea");
+	          const deepfit = $c("careerDeepFitArea");
+	          const upload  = $c("careerUploadArea");
+	          if (tracker) tracker.hidden = tab !== "tracker";
+	          if (deepfit) deepfit.hidden = tab !== "deepfit";
+	          if (upload)  upload.hidden  = tab !== "upload";
+	          if (tab === "deepfit") renderDeepFitDashboard();
+	        }
+
+	        document.addEventListener("click", function(e) {
+	          const tab = e.target.closest("[data-career-ops-tab]");
+	          if (tab) careerOpsSetTab(tab.dataset.careerOpsTab);
+	        });
+
+	        function decisionClass(decision) {
+	          const d = String(decision || "").toLowerCase();
+	          if (d.includes("aggressively")) return "decision-pursue";
+	          if (d.includes("selectively")) return "decision-selective";
+	          if (d.includes("hold")) return "decision-hold";
+	          return "decision-skip";
+	        }
+
+	        function renderTagList(tags, cssClass) {
+	          return (tags || []).map(t => `<span class="career-dossier-tag ${cssClass}">${careerText(t)}</span>`).join("");
+	        }
+
+	        function renderLayerACard(d) {
+	          const url = d.url || "";
+	          const safeKey = careerText(d.jobKey || d.company || "").replace(/[^a-z0-9]/gi, "");
+	          return `
+	            <div class="career-dossier-card" id="dossier-${safeKey}">
+	              <div class="career-dossier-head" onclick="this.closest('.career-dossier-card').classList.toggle('expanded')">
+	                <div>
+	                  <div class="career-dossier-company">${careerText(d.company)}</div>
+	                  <div class="career-dossier-title">${careerText(d.title)}</div>
+	                  <div class="career-dossier-meta">
+	                    <span class="career-layer-badge career-layer-a">Layer A</span>
+	                    ${d.confidence ? `&nbsp;${careerText(d.confidence)} confidence` : ""}
+	                  </div>
+	                </div>
+	                <div class="career-dossier-score">
+	                  <div class="career-dossier-score-num">${careerText(d.score || "—")}</div>
+	                  <div class="career-dossier-score-grade">${careerText(d.grade || "")}</div>
+	                </div>
+	              </div>
+	              <div class="career-dossier-body">
+	                <span class="career-dossier-decision ${decisionClass(d.decision)}">${careerText(d.decision || "")}</span>
+	                <p class="career-dossier-thesis">${careerText(d.thesis || "")}</p>
+	                ${d.evidence?.keywordHits?.length ? `
+	                  <div class="career-dossier-section">
+	                    <div class="career-dossier-section-label">關鍵字命中</div>
+	                    <div class="career-dossier-tags">${renderTagList(d.evidence.keywordHits, "career-tag-hit")}</div>
+	                  </div>` : ""}
+	                ${d.evidence?.keywordMisses?.length ? `
+	                  <div class="career-dossier-section">
+	                    <div class="career-dossier-section-label">技能缺口</div>
+	                    <div class="career-dossier-tags">${renderTagList(d.evidence.keywordMisses, "career-tag-miss")}</div>
+	                  </div>` : ""}
+	                ${d.concerns?.length ? `
+	                  <div class="career-dossier-section">
+	                    <div class="career-dossier-section-label">風險</div>
+	                    <ul style="margin:0;padding-left:16px;font-size:12.5px;color:var(--muted);">${d.concerns.map(c => `<li>${careerText(c)}</li>`).join("")}</ul>
+	                  </div>` : ""}
+	                ${d.cvStrategy?.length ? `
+	                  <div class="career-dossier-section">
+	                    <div class="career-dossier-section-label">履歷策略</div>
+	                    <ul style="margin:0;padding-left:16px;font-size:12.5px;color:var(--muted);">${d.cvStrategy.map(s => `<li>${careerText(s)}</li>`).join("")}</ul>
+	                  </div>` : ""}
+	                <div class="career-dossier-actions">
+	                  ${url ? `<a href="${careerText(url)}" target="_blank" rel="noreferrer noopener" class="career-link-btn">開啟職缺</a>` : ""}
+	                </div>
+	              </div>
+	            </div>`;
+	        }
+
+	        function renderLayerBRow(m) {
+	          const url = m.url || "";
+	          return `
+	            <div class="career-match-row"${url ? ` onclick="window.open('${careerText(url)}','_blank','noreferrer')"` : ""}>
+	              <div class="career-match-info">
+	                <div class="career-match-title">${careerText(m.title)}</div>
+	                <div class="career-match-meta">
+	                  ${careerText([m.company, m.location].filter(Boolean).join(" · "))}
+	                  &nbsp;·&nbsp;<span class="career-layer-badge career-layer-b">Layer B</span>
+	                  ${m.keywordMisses?.length ? `&nbsp;· 缺口：${careerText(m.keywordMisses.slice(0, 2).join(", "))}` : ""}
+	                </div>
+	              </div>
+	              <div class="career-match-score">${careerText(m.score || "—")}</div>
+	            </div>`;
+	        }
+
+	        function renderLayerCCard(s) {
+	          const url = s.url || "";
+	          return `
+	            <div class="career-explore-card">
+	              <div class="career-explore-title" title="${careerText(s.title)}">${careerText(s.title)}</div>
+	              <div class="career-explore-company">${careerText([s.company, s.location].filter(Boolean).join(" · "))}</div>
+	              ${s.topGap ? `<div class="career-explore-gap">缺口：${careerText(s.topGap)}</div>` : ""}
+	              ${url ? `<a href="${careerText(url)}" target="_blank" rel="noreferrer noopener" style="font-size:11px;color:var(--accent-2);text-decoration:none;display:block;margin-top:6px;">開啟 →</a>` : ""}
+	            </div>`;
+	        }
+
+	        function renderDeepFitDashboard() {
+	          const area = $c("careerDeepFitArea");
+	          if (!area) return;
+	          const df = window.CV_CAREER_OPS_DEEP_FIT;
+	          if (!df || (!df.layerA?.length && !df.dossiers?.length)) {
+	            area.innerHTML = `
+	              <div class="career-ops-empty">
+	                <strong>尚未產生 Deep Fit 分析。</strong><br>
+	                在本機執行 <code>npm run career-ops:pipeline</code> 後，結果會自動載入；<br>
+	                或切換到「履歷上傳」頁面，上傳履歷進行線上分析。<br><br>
+	                <button type="button" onclick="careerOpsSetTab('upload')" style="margin-top:10px;padding:8px 20px;border-radius:10px;border:1px solid var(--line);background:#fff;cursor:pointer;font-size:13px;font-weight:700;">前往履歷上傳</button>
+	              </div>`;
+	            return;
+	          }
+
+	          const layerA = df.layerA || df.dossiers || [];
+	          const layerB = df.layerB || [];
+	          const layerC = df.layerC || [];
+	          const summary = df.summary || { totalResults: layerA.length + layerB.length + layerC.length, layerA: layerA.length, layerB: layerB.length, layerC: layerC.length };
+
+	          let healthHtml = "";
+	          const h = window._careerOpsHealthCache;
+	          if (h) {
+	            const dotClass = { healthy: "health-healthy", warning: "health-warning", degraded: "health-degraded", critical: "health-critical" }[h.status] || "health-warning";
+	            healthHtml = `<div class="career-health-bar"><div class="career-health-dot ${dotClass}"></div><span>職缺庫狀態：<strong>${careerText(h.status)}</strong> · 共 ${careerText(h.total)} 筆 · 失效率 ${careerText(h.expiredRatePct)}</span></div>`;
+	          }
+
+	          const layerAHtml = layerA.length ? `
+	            <div class="career-layer-header">
+	              <span class="career-layer-badge career-layer-a">Layer A</span>
+	              <h3>深度評估報告</h3>
+	              <small>${layerA.length} 個 · roleFit ≥ 68</small>
+	            </div>
+	            ${layerA.map(renderLayerACard).join("")}` : "";
+
+	          const layerBHtml = layerB.length ? `
+	            <div class="career-layer-header">
+	              <span class="career-layer-badge career-layer-b">Layer B</span>
+	              <h3>標準比對</h3>
+	              <small>${layerB.length} 個 · roleFit 40–67</small>
+	            </div>
+	            <div class="career-match-grid">${layerB.map(renderLayerBRow).join("")}</div>` : "";
+
+	          const layerCHtml = layerC.length ? `
+	            <div class="career-layer-header">
+	              <span class="career-layer-badge career-layer-c">Layer C</span>
+	              <h3>探索訊號</h3>
+	              <small>${layerC.length} 個 · 低符合度 / 未評分</small>
+	            </div>
+	            <div class="career-explore-grid">${layerC.map(renderLayerCCard).join("")}</div>` : "";
+
+	          area.innerHTML = `
+	            ${healthHtml}
+	            <div class="career-deepfit-summary">
+	              <div class="career-deepfit-summary-card"><div class="career-deepfit-summary-num">${careerText(summary.totalResults)}</div><div class="career-deepfit-summary-label">比對總數</div></div>
+	              <div class="career-deepfit-summary-card"><div class="career-deepfit-summary-num">${careerText(summary.layerA)}</div><div class="career-deepfit-summary-label">深度評估</div></div>
+	              <div class="career-deepfit-summary-card"><div class="career-deepfit-summary-num">${careerText(summary.layerB)}</div><div class="career-deepfit-summary-label">標準比對</div></div>
+	              <div class="career-deepfit-summary-card"><div class="career-deepfit-summary-num">${careerText(summary.layerC)}</div><div class="career-deepfit-summary-label">探索訊號</div></div>
+	            </div>
+	            <div style="display:flex;gap:8px;justify-content:flex-end;margin-bottom:14px;">
+	              <button class="career-link-btn" type="button" onclick="careerOpsDownloadDeepFitJson()">下載 JSON 報告</button>
+	              <button class="career-link-btn" type="button" onclick="careerOpsCreateShareLink()">產生分享連結（7天）</button>
+	            </div>
+	            ${layerAHtml}
+	            ${layerBHtml}
+	            ${layerCHtml}
+	            <div id="careerDeepFitSharePanel" style="display:none;" class="career-share-panel">
+	              <strong>分享連結（7 天有效）</strong>
+	              <div class="career-share-url" id="careerShareUrl"></div>
+	              <button class="career-link-btn" type="button" onclick="navigator.clipboard.writeText($c('careerShareUrl').textContent)">複製連結</button>
+	            </div>`;
+	        }
+
+	        function careerOpsDownloadDeepFitJson() {
+	          const df = window.CV_CAREER_OPS_DEEP_FIT;
+	          if (!df) { alert("尚無 Deep Fit 資料"); return; }
+	          const blob = new Blob([JSON.stringify(df, null, 2)], { type: "application/json" });
+	          const a = document.createElement("a");
+	          a.href = URL.createObjectURL(blob);
+	          a.download = `career-ops-deep-fit-${new Date().toISOString().slice(0, 10)}.json`;
+	          a.click();
+	          URL.revokeObjectURL(a.href);
+	        }
+
+	        async function careerOpsCreateShareLink() {
+	          const client = window.cvStudioState?.client;
+	          const user = window.cvStudioState?.user;
+	          if (!client || !user) {
+	            const df = window.CV_CAREER_OPS_DEEP_FIT;
+	            const s = df?.summary || {};
+	            navigator.clipboard.writeText(`Career Ops 分析：${s.totalResults || 0} 個職缺（A:${s.layerA || 0} B:${s.layerB || 0} C:${s.layerC || 0}）`).catch(() => {});
+	            alert("請先登入以產生分享連結。已複製結果摘要。");
+	            return;
+	          }
+	          try {
+	            const session = (await client.auth.getSession()).data.session;
+	            const { data: analyses } = await client.from("career_ops_analyses").select("id").eq("user_id", user.id).eq("status", "completed").order("completed_at", { ascending: false }).limit(1);
+	            if (!analyses?.length) { alert("請先完成線上分析，再產生分享連結。"); return; }
+	            const res = await fetch(`${window.CV_STUDIO_CONFIG?.supabaseUrl || ""}/functions/v1/career-ops-share-analysis`, {
+	              method: "POST",
+	              headers: { "content-type": "application/json", "authorization": `Bearer ${session?.access_token}` },
+	              body: JSON.stringify({ analysisId: analyses[0].id })
+	            });
+	            const data = await res.json();
+	            if (data.shareUrl) {
+	              const panel = $c("careerDeepFitSharePanel");
+	              const urlEl = $c("careerShareUrl");
+	              if (urlEl) urlEl.textContent = data.shareUrl;
+	              if (panel) panel.style.display = "block";
+	              navigator.clipboard.writeText(data.shareUrl).catch(() => {});
+	            } else { alert(data.error || "產生連結失敗"); }
+	          } catch (err) { alert("產生連結失敗：" + err.message); }
+	        }
+
+	        // Preload job health data for the health bar
+	        (async function loadCareerOpsHealth() {
+	          try {
+	            const res = await fetch("./data/app/career-ops-job-health.json", { cache: "no-store" });
+	            if (res.ok) window._careerOpsHealthCache = (await res.json())?.health;
+	          } catch {}
+	        })();
+
+	        // Resume upload + analysis flow
+	        (function initCareerOpsUpload() {
+	          const zone = $c("careerUploadZone");
+	          const fileInput = $c("careerResumeFile");
+	          const statusEl = $c("careerUploadStatus");
+	          const profilePreview = $c("careerUploadProfilePreview");
+	          const runBtn = $c("careerRunAnalysisBtn");
+	          const loadStaticBtn = $c("careerLoadStaticDeepFit");
+	          if (!zone || !fileInput) return;
+
+	          loadStaticBtn?.addEventListener("click", () => {
+	            if (window.CV_CAREER_OPS_DEEP_FIT) {
+	              careerOpsSetTab("deepfit");
+	            } else {
+	              alert("尚未載入靜態快照。請先執行 npm run career-ops:pipeline，重新整理頁面後再試。");
+	            }
+	          });
+
+	          zone.addEventListener("dragover", e => { e.preventDefault(); zone.classList.add("dragover"); });
+	          zone.addEventListener("dragleave", () => zone.classList.remove("dragover"));
+	          zone.addEventListener("drop", e => {
+	            e.preventDefault(); zone.classList.remove("dragover");
+	            const file = e.dataTransfer.files?.[0];
+	            if (file) processResumeFile(file);
+	          });
+	          fileInput.addEventListener("change", () => {
+	            if (fileInput.files?.[0]) processResumeFile(fileInput.files[0]);
+	          });
+
+	          async function processResumeFile(file) {
+	            if (file.size > 10 * 1024 * 1024) { alert("檔案超過 10MB 上限"); return; }
+	            if (statusEl) { statusEl.style.display = "block"; statusEl.textContent = "解析中…"; }
+	            if (profilePreview) profilePreview.style.display = "none";
+	            if (runBtn) runBtn.style.display = "none";
+	            try {
+	              const client = window.cvStudioState?.client;
+	              const session = (await client?.auth?.getSession?.())?.data?.session;
+	              if (!client || !session) {
+	                if (statusEl) statusEl.textContent = "請先登入以使用線上分析。";
+	                return;
+	              }
+	              const form = new FormData();
+	              form.append("resume", file);
+	              const res = await fetch(`${window.CV_STUDIO_CONFIG?.supabaseUrl || ""}/functions/v1/career-ops-extract-profile`, {
+	                method: "POST",
+	                headers: { "authorization": `Bearer ${session.access_token}` },
+	                body: form
+	              });
+	              const data = await res.json();
+	              if (!res.ok) throw new Error(data.error || "解析失敗");
+	              if (statusEl) statusEl.textContent = "✓ 履歷解析完成";
+	              const p = data.profile || {};
+	              if (profilePreview) {
+	                profilePreview.style.display = "block";
+	                profilePreview.innerHTML = `
+	                  <div style="background:var(--surface-strong);border:1px solid var(--line);border-radius:12px;padding:14px 16px;font-size:12.5px;">
+	                    <div style="font-weight:800;margin-bottom:8px;">${careerText(p.role || "（職稱未偵測）")}</div>
+	                    ${p.skills?.length ? `<div style="color:var(--muted);">技能：${careerText(p.skills.slice(0, 8).join("、"))}</div>` : ""}
+	                    ${p.preferences?.targetRoles?.length ? `<div style="color:var(--muted);margin-top:4px;">目標：${careerText(p.preferences.targetRoles.join("、"))}</div>` : ""}
+	                  </div>`;
+	              }
+	              window._careerOpsExtractedProfileId = data.profileId;
+	              if (runBtn) runBtn.style.display = "block";
+	            } catch (err) {
+	              if (statusEl) statusEl.textContent = "解析失敗：" + err.message;
+	            }
+	          }
+
+	          runBtn?.addEventListener("click", async () => {
+	            const client = window.cvStudioState?.client;
+	            const session = (await client?.auth?.getSession?.())?.data?.session;
+	            if (!client || !session) { alert("請先登入"); return; }
+	            runBtn.textContent = "排隊分析中…";
+	            runBtn.disabled = true;
+	            try {
+	              const res = await fetch(`${window.CV_STUDIO_CONFIG?.supabaseUrl || ""}/functions/v1/career-ops-run-analysis`, {
+	                method: "POST",
+	                headers: { "content-type": "application/json", "authorization": `Bearer ${session.access_token}` },
+	                body: JSON.stringify({ profileId: window._careerOpsExtractedProfileId })
+	              });
+	              const data = await res.json();
+	              if (!res.ok) throw new Error(data.error || "提交失敗");
+	              if (statusEl) statusEl.textContent = `分析 ID：${data.analysisId}`;
+	              runBtn.textContent = "分析中，請稍候…";
+	              const poll = setInterval(async () => {
+	                try {
+	                  const pr = await fetch(`${window.CV_STUDIO_CONFIG?.supabaseUrl || ""}/functions/v1/career-ops-run-analysis?id=${data.analysisId}`, {
+	                    headers: { "authorization": `Bearer ${session.access_token}` }
+	                  });
+	                  const pd = await pr.json();
+	                  if (statusEl) statusEl.textContent = `進度：${pd.progress || 0}% · 階段：${pd.stage || "—"}`;
+	                  if (pd.status === "completed") {
+	                    clearInterval(poll);
+	                    runBtn.textContent = "分析完成！查看結果";
+	                    if (pd.summary_json) window.CV_CAREER_OPS_DEEP_FIT = { summary: pd.summary_json, layerA: pd.layer_a_json || [], layerB: pd.layer_b_json || [], layerC: pd.layer_c_json || [] };
+	                    careerOpsSetTab("deepfit");
+	                  } else if (pd.status === "failed") {
+	                    clearInterval(poll);
+	                    runBtn.textContent = "分析失敗，請重試";
+	                    runBtn.disabled = false;
+	                    if (statusEl) statusEl.textContent = "失敗原因：" + (pd.error || "未知");
+	                  }
+	                } catch {}
+	              }, 5000);
+	            } catch (err) {
+	              runBtn.textContent = "開始分析職缺比對";
+	              runBtn.disabled = false;
+	              alert("提交失敗：" + err.message);
+	            }
+	          });
+	        })();
 
 	        function careerOpsSupabaseReady() {
 	          return Boolean(window.cvStudioState?.user?.id && window.cvStudioState?.client && !careerOpsCloudDisabled);
