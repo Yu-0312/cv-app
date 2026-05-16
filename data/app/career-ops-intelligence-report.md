@@ -1,11 +1,11 @@
 # Career Ops Intelligence Report
 
-Generated: 2026-05-16T12:29:29.523Z
+Generated: 2026-05-16T23:18:53.668Z
 
-- Active jobs: 276
+- Active jobs: 291
 - Expired jobs: 0
-- Duplicate groups: 13
-- Jobs without enough description: 135
+- Duplicate groups: 16
+- Jobs without enough description: 136
 - Rubric: Career Ops 10-Dimension Rubric
 
 ## Rubric Weights
@@ -21,56 +21,56 @@ Generated: 2026-05-16T12:29:29.523Z
 - applicationEffort: 0.08
 
 ## Top Skills
-- growth: 40
-- operations: 31
-- python: 30
-- aws: 24
-- gcp: 16
-- agents: 15
-- docker: 15
-- terraform: 15
-- go: 14
-- react: 14
-- deep learning: 13
-- typescript: 13
+- growth: 44
+- operations: 41
+- aws: 37
+- python: 36
+- agents: 24
+- docker: 24
+- terraform: 24
+- gcp: 23
+- go: 19
+- react: 19
+- typescript: 17
+- api: 14
 
 ## Missing High-Demand Skills
-- growth: 40
-- operations: 31
-- python: 30
-- aws: 24
-- gcp: 16
-- agents: 15
-- docker: 15
-- terraform: 15
-- go: 14
-- deep learning: 13
+- growth: 44
+- operations: 41
+- aws: 37
+- python: 36
+- agents: 24
+- docker: 24
+- terraform: 24
+- gcp: 23
+- go: 19
+- java: 14
 
 ## Global Skill Gap Priority (weighted by job score)
-- growth: 44.2
-- python: 36
-- operations: 30.6
-- aws: 28.7
-- gcp: 19.2
-- docker: 18.7
-- terraform: 18.3
-- go: 16.5
-- agents: 15.8
+- growth: 48.7
+- aws: 43.9
+- python: 42.6
+- operations: 40.4
+- docker: 29.9
+- terraform: 28.5
+- gcp: 27.4
+- agents: 25.6
+- go: 21.6
+- java: 16.7
 - deep learning: 14.5
-- java: 13.1
-- machine learning: 13.1
+- rest: 14.5
 
 ## ⚠ Preferred Company Alert
 None of your preferred companies (Stripe, Linear, Notion, Vercel) appeared in current results. Add direct company career page sources to data/career-ops-sources.json.
 
 ## Role Families
-- Other: 143
-- Backend: 53
-- AI / Data: 32
-- Frontend: 24
+- Other: 142
+- Backend: 62
+- AI / Data: 33
+- Frontend: 29
 - Operations: 8
 - Design: 6
-- Internship: 5
+- Internship: 6
 - Marketing: 3
 - Full Stack: 1
 - Product: 1
@@ -89,7 +89,7 @@ None of your preferred companies (Stripe, Linear, Notion, Vercel) appeared in cu
 - Analytics
 - growth
 - operations
-- python
 - aws
-- gcp
+- python
+- agents
 

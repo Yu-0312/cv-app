@@ -1,15 +1,115 @@
 {
-  "generatedAt": null,
+  "source": "career-ops-health-monitor",
+  "checkedAt": "2026-05-16T23:18:56.180Z",
+  "threshold": 0.3,
   "health": {
-    "total": 0,
-    "active": 0,
+    "total": 291,
+    "active": 291,
     "expired": 0,
     "stale": 0,
     "expiredRate": 0,
     "expiredRatePct": "0%",
-    "avgActiveScore": 0,
-    "bySource": {},
-    "status": "empty"
+    "avgActiveScore": 45,
+    "bySource": {
+      "Source flex job board": {
+        "total": 65,
+        "expired": 0
+      },
+      "Micron Workday": {
+        "total": 69,
+        "expired": 0
+      },
+      "Cardlytics Workday Taiwan": {
+        "total": 1,
+        "expired": 0
+      },
+      "Gogolook": {
+        "total": 6,
+        "expired": 0
+      },
+      "NVIDIA Workday": {
+        "total": 61,
+        "expired": 0
+      },
+      "Intel Workday Taiwan": {
+        "total": 12,
+        "expired": 0
+      },
+      "Logitech Workday Taiwan": {
+        "total": 15,
+        "expired": 0
+      },
+      "Applied Materials Workday": {
+        "total": 5,
+        "expired": 0
+      },
+      "Micron Taiwan": {
+        "total": 2,
+        "expired": 0
+      },
+      "NVIDIA Taiwan": {
+        "total": 22,
+        "expired": 0
+      },
+      "Appier": {
+        "total": 6,
+        "expired": 0
+      },
+      "Garmin Taiwan": {
+        "total": 1,
+        "expired": 0
+      },
+      "Delta Electronics": {
+        "total": 3,
+        "expired": 0
+      },
+      "Trend Micro": {
+        "total": 3,
+        "expired": 0
+      },
+      "COEBank SuccessFactors Data & BI Engineer": {
+        "total": 1,
+        "expired": 0
+      },
+      "Grab": {
+        "total": 5,
+        "expired": 0
+      },
+      "ASSA ABLOY SuccessFactors Taipei Manufacturing Engineer": {
+        "total": 1,
+        "expired": 0
+      },
+      "CONA SuccessFactors IT Development Engineer": {
+        "total": 1,
+        "expired": 0
+      },
+      "Samsung Workday": {
+        "total": 4,
+        "expired": 0
+      },
+      "CONA SuccessFactors Data Analyst": {
+        "total": 1,
+        "expired": 0
+      },
+      "ASSA ABLOY SuccessFactors Software Engineer": {
+        "total": 1,
+        "expired": 0
+      },
+      "ASSA ABLOY SuccessFactors C# Software Engineer": {
+        "total": 1,
+        "expired": 0
+      },
+      "Samsung Research": {
+        "total": 1,
+        "expired": 0
+      },
+      "Lenovo China": {
+        "total": 4,
+        "expired": 0
+      }
+    },
+    "status": "healthy"
   },
+  "needsScrape": false,
   "scrapeTriggered": false
 }

@@ -1,6 +1,6 @@
 # Career Ops Modes
 
-- Generated: 2026-05-15T23:22:33.801Z
+- Generated: 2026-05-16T23:18:56.105Z
 - Registry: CV Studio Career Ops Modes
 - Commands: 9
 - Guardrails: 4

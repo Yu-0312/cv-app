@@ -1,6 +1,6 @@
 window.CV_CAREER_OPS_STORY_BANK = {
   "source": "career-ops-story-bank",
-  "generatedAt": "2026-05-16T12:29:29.656Z",
+  "generatedAt": "2026-05-16T23:18:55.455Z",
   "llmProvider": "none",
   "storyBank": {
     "themes": [
@@ -232,7 +232,7 @@ window.CV_CAREER_OPS_STORY_BANK = {
     "learningPlan": [
       {
         "skill": "growth",
-        "marketCount": 32,
+        "marketCount": 31,
         "priority": "P0",
         "priorityLabel": "高優先",
         "reason": "市場需求極高，補充後可顯著提升評分",
@@ -240,75 +240,67 @@ window.CV_CAREER_OPS_STORY_BANK = {
       },
       {
         "skill": "python",
-        "marketCount": 29,
+        "marketCount": 30,
         "priority": "P0",
         "priorityLabel": "高優先",
         "reason": "市場需求極高，補充後可顯著提升評分",
         "suggestion": "在簡歷或 profile 中加入 python 的實際使用案例，並在 projects 欄位補充相關實作。"
       },
       {
-        "skill": "operations",
-        "marketCount": 20,
-        "priority": "P0",
-        "priorityLabel": "高優先",
-        "reason": "市場需求極高，補充後可顯著提升評分",
-        "suggestion": "在簡歷或 profile 中加入 operations 的實際使用案例，並在 projects 欄位補充相關實作。"
-      },
-      {
         "skill": "aws",
-        "marketCount": 19,
+        "marketCount": 24,
         "priority": "P0",
         "priorityLabel": "高優先",
         "reason": "市場需求極高，補充後可顯著提升評分",
         "suggestion": "在簡歷或 profile 中加入 aws 的實際使用案例，並在 projects 欄位補充相關實作。"
       },
       {
+        "skill": "operations",
+        "marketCount": 23,
+        "priority": "P0",
+        "priorityLabel": "高優先",
+        "reason": "市場需求極高，補充後可顯著提升評分",
+        "suggestion": "在簡歷或 profile 中加入 operations 的實際使用案例，並在 projects 欄位補充相關實作。"
+      },
+      {
         "skill": "docker",
-        "marketCount": 14,
+        "marketCount": 18,
         "priority": "P0",
         "priorityLabel": "高優先",
         "reason": "市場需求極高，補充後可顯著提升評分",
         "suggestion": "在簡歷或 profile 中加入 docker 的實際使用案例，並在 projects 欄位補充相關實作。"
       },
       {
-        "skill": "gcp",
-        "marketCount": 13,
-        "priority": "P0",
-        "priorityLabel": "高優先",
-        "reason": "市場需求極高，補充後可顯著提升評分",
-        "suggestion": "在簡歷或 profile 中加入 gcp 的實際使用案例，並在 projects 欄位補充相關實作。"
-      },
-      {
         "skill": "terraform",
-        "marketCount": 13,
+        "marketCount": 15,
         "priority": "P0",
         "priorityLabel": "高優先",
         "reason": "市場需求極高，補充後可顯著提升評分",
         "suggestion": "在簡歷或 profile 中加入 terraform 的實際使用案例，並在 projects 欄位補充相關實作。"
       },
       {
-        "skill": "deep learning",
-        "marketCount": 13,
-        "priority": "P0",
-        "priorityLabel": "高優先",
-        "reason": "市場需求極高，補充後可顯著提升評分",
-        "suggestion": "在簡歷或 profile 中加入 deep learning 的實際使用案例，並在 projects 欄位補充相關實作。"
-      },
-      {
         "skill": "go",
-        "marketCount": 12,
+        "marketCount": 15,
         "priority": "P0",
         "priorityLabel": "高優先",
         "reason": "市場需求極高，補充後可顯著提升評分",
         "suggestion": "在簡歷或 profile 中加入 go 的實際使用案例，並在 projects 欄位補充相關實作。"
       },
       {
-        "skill": "java",
-        "marketCount": 10,
+        "skill": "gcp",
+        "marketCount": 14,
         "priority": "P0",
         "priorityLabel": "高優先",
         "reason": "市場需求極高，補充後可顯著提升評分",
-        "suggestion": "在簡歷或 profile 中加入 java 的實際使用案例，並在 projects 欄位補充相關實作。"
+        "suggestion": "在簡歷或 profile 中加入 gcp 的實際使用案例，並在 projects 欄位補充相關實作。"
+      },
+      {
+        "skill": "agents",
+        "marketCount": 11,
+        "priority": "P0",
+        "priorityLabel": "高優先",
+        "reason": "市場需求極高，補充後可顯著提升評分",
+        "suggestion": "在簡歷或 profile 中加入 agents 的實際使用案例，並在 projects 欄位補充相關實作。"
       },
       {
         "skill": "machine learning",
@@ -319,6 +311,14 @@ window.CV_CAREER_OPS_STORY_BANK = {
         "suggestion": "在簡歷或 profile 中加入 machine learning 的實際使用案例，並在 projects 欄位補充相關實作。"
       },
       {
+        "skill": "kubernetes",
+        "marketCount": 9,
+        "priority": "P1",
+        "priorityLabel": "中優先",
+        "reason": "市場常見，補充後能擴大適配職缺範圍",
+        "suggestion": "在簡歷或 profile 中加入 kubernetes 的實際使用案例，並在 projects 欄位補充相關實作。"
+      },
+      {
         "skill": "llm",
         "marketCount": 8,
         "priority": "P1",
@@ -327,12 +327,12 @@ window.CV_CAREER_OPS_STORY_BANK = {
         "suggestion": "在簡歷或 profile 中加入 llm 的實際使用案例，並在 projects 欄位補充相關實作。"
       },
       {
-        "skill": "agents",
+        "skill": "java",
         "marketCount": 8,
         "priority": "P1",
         "priorityLabel": "中優先",
         "reason": "市場常見，補充後能擴大適配職缺範圍",
-        "suggestion": "在簡歷或 profile 中加入 agents 的實際使用案例，並在 projects 欄位補充相關實作。"
+        "suggestion": "在簡歷或 profile 中加入 java 的實際使用案例，並在 projects 欄位補充相關實作。"
       },
       {
         "skill": "rest",
@@ -343,12 +343,12 @@ window.CV_CAREER_OPS_STORY_BANK = {
         "suggestion": "在簡歷或 profile 中加入 rest 的實際使用案例，並在 projects 欄位補充相關實作。"
       },
       {
-        "skill": "kubernetes",
-        "marketCount": 7,
+        "skill": "deep learning",
+        "marketCount": 8,
         "priority": "P1",
         "priorityLabel": "中優先",
         "reason": "市場常見，補充後能擴大適配職缺範圍",
-        "suggestion": "在簡歷或 profile 中加入 kubernetes 的實際使用案例，並在 projects 欄位補充相關實作。"
+        "suggestion": "在簡歷或 profile 中加入 deep learning 的實際使用案例，並在 projects 欄位補充相關實作。"
       }
     ],
     "gaps": [

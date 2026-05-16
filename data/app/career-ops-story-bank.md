@@ -1,6 +1,6 @@
 # Career Ops Story Bank
 
-Generated: 2026-05-16T12:29:29.656Z
+Generated: 2026-05-16T23:18:55.455Z
 Stories: 8
 
 ## Market Themes
@@ -12,16 +12,16 @@ Stories: 8
 - performance and scale
 
 ## Learning Plan (Missing High-Demand Skills)
-- [P0] growth (市場出現 32 次) — 高優先：在簡歷或 profile 中加入 growth 的實際使用案例，並在 projects 欄位補充相關實作。
-- [P0] python (市場出現 29 次) — 高優先：在簡歷或 profile 中加入 python 的實際使用案例，並在 projects 欄位補充相關實作。
-- [P0] operations (市場出現 20 次) — 高優先：在簡歷或 profile 中加入 operations 的實際使用案例，並在 projects 欄位補充相關實作。
-- [P0] aws (市場出現 19 次) — 高優先：在簡歷或 profile 中加入 aws 的實際使用案例，並在 projects 欄位補充相關實作。
-- [P0] docker (市場出現 14 次) — 高優先：在簡歷或 profile 中加入 docker 的實際使用案例，並在 projects 欄位補充相關實作。
-- [P0] gcp (市場出現 13 次) — 高優先：在簡歷或 profile 中加入 gcp 的實際使用案例，並在 projects 欄位補充相關實作。
-- [P0] terraform (市場出現 13 次) — 高優先：在簡歷或 profile 中加入 terraform 的實際使用案例，並在 projects 欄位補充相關實作。
-- [P0] deep learning (市場出現 13 次) — 高優先：在簡歷或 profile 中加入 deep learning 的實際使用案例，並在 projects 欄位補充相關實作。
-- [P0] go (市場出現 12 次) — 高優先：在簡歷或 profile 中加入 go 的實際使用案例，並在 projects 欄位補充相關實作。
-- [P0] java (市場出現 10 次) — 高優先：在簡歷或 profile 中加入 java 的實際使用案例，並在 projects 欄位補充相關實作。
+- [P0] growth (市場出現 31 次) — 高優先：在簡歷或 profile 中加入 growth 的實際使用案例，並在 projects 欄位補充相關實作。
+- [P0] python (市場出現 30 次) — 高優先：在簡歷或 profile 中加入 python 的實際使用案例，並在 projects 欄位補充相關實作。
+- [P0] aws (市場出現 24 次) — 高優先：在簡歷或 profile 中加入 aws 的實際使用案例，並在 projects 欄位補充相關實作。
+- [P0] operations (市場出現 23 次) — 高優先：在簡歷或 profile 中加入 operations 的實際使用案例，並在 projects 欄位補充相關實作。
+- [P0] docker (市場出現 18 次) — 高優先：在簡歷或 profile 中加入 docker 的實際使用案例，並在 projects 欄位補充相關實作。
+- [P0] terraform (市場出現 15 次) — 高優先：在簡歷或 profile 中加入 terraform 的實際使用案例，並在 projects 欄位補充相關實作。
+- [P0] go (市場出現 15 次) — 高優先：在簡歷或 profile 中加入 go 的實際使用案例，並在 projects 欄位補充相關實作。
+- [P0] gcp (市場出現 14 次) — 高優先：在簡歷或 profile 中加入 gcp 的實際使用案例，並在 projects 欄位補充相關實作。
+- [P0] agents (市場出現 11 次) — 高優先：在簡歷或 profile 中加入 agents 的實際使用案例，並在 projects 欄位補充相關實作。
+- [P1] machine learning (市場出現 9 次) — 中優先：在簡歷或 profile 中加入 machine learning 的實際使用案例，並在 projects 欄位補充相關實作。
 
 ## Story Gaps
 - Add exact metrics for each story where possible.

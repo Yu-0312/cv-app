@@ -1,117 +1,121 @@
 window.CV_CAREER_OPS_LEARNING = {
   "source": "career-ops-learning",
-  "generatedAt": "2026-05-16T12:29:29.697Z",
+  "generatedAt": "2026-05-16T23:18:55.934Z",
   "learning": {
-    "activeJobCount": 276,
-    "positiveSignalCount": 101,
+    "activeJobCount": 291,
+    "positiveSignalCount": 127,
     "negativeSignalCount": 12,
     "preferredSkills": [
       {
         "name": "engineer",
-        "score": 340.6
+        "score": 430.9
       },
       {
         "name": "data",
-        "score": 277.4
+        "score": 365.2
       },
       {
         "name": "product",
-        "score": 245.3
+        "score": 322.4
       },
       {
         "name": "growth",
-        "score": 142.7
+        "score": 195.1
       },
       {
         "name": "operations",
-        "score": 118.2
-      },
-      {
-        "name": "python",
-        "score": 113.6
+        "score": 162.1
       },
       {
         "name": "aws",
-        "score": 111.8
+        "score": 161.7
       },
       {
-        "name": "gcp",
-        "score": 77.9
-      },
-      {
-        "name": "react",
-        "score": 72.9
-      },
-      {
-        "name": "React",
-        "score": 72.9
+        "name": "python",
+        "score": 150.5
       },
       {
         "name": "docker",
-        "score": 72.6
+        "score": 108.8
       },
       {
         "name": "terraform",
-        "score": 69.7
+        "score": 105.3
       },
       {
-        "name": "graphql",
-        "score": 68.6
-      },
-      {
-        "name": "typescript",
-        "score": 65.8
-      },
-      {
-        "name": "TypeScript",
-        "score": 65.8
-      },
-      {
-        "name": "node.js",
-        "score": 59.8
-      },
-      {
-        "name": "go",
-        "score": 56.4
+        "name": "gcp",
+        "score": 96.5
       },
       {
         "name": "agents",
-        "score": 51.7
+        "score": 94.9
+      },
+      {
+        "name": "react",
+        "score": 89.1
+      },
+      {
+        "name": "React",
+        "score": 89.1
+      },
+      {
+        "name": "graphql",
+        "score": 82.9
+      },
+      {
+        "name": "go",
+        "score": 78.5
+      },
+      {
+        "name": "typescript",
+        "score": 76.5
+      },
+      {
+        "name": "TypeScript",
+        "score": 76.5
+      },
+      {
+        "name": "node.js",
+        "score": 74.1
       }
     ],
     "avoidSignals": [],
     "preferredCompanies": [
       {
         "name": "Money Forward",
-        "score": 50.6
-      },
-      {
-        "name": "Micron Workday",
-        "score": 50.1
+        "score": 107.3
       },
       {
         "name": "NVIDIA Workday",
-        "score": 48.1
+        "score": 69
       },
       {
-        "name": "Intel Workday Taiwan",
-        "score": 46.9
+        "name": "Micron Workday",
+        "score": 66.7
       },
       {
         "name": "Logitech Workday Taiwan",
-        "score": 33.1
+        "score": 45.1
       },
       {
-        "name": "AI Robot Association (AIRoA)",
-        "score": 23.5
+        "name": "Intel Workday Taiwan",
+        "score": 34.9
+      },
+      {
+        "name": "Gogolook",
+        "score": 29.5
       },
       {
         "name": "Applied Materials Workday",
-        "score": 20.6
+        "score": 22.6
       },
       {
-        "name": "Shizuku AI",
-        "score": 15.7
+        "name": "AI Robot Association (AIRoA)",
+        "score": 17.2
+      },
+      {
+        "name": "PayPay",
+        "score": 14.2
       },
       {
         "name": "Geniee",
@@ -122,92 +126,88 @@ window.CV_CAREER_OPS_LEARNING = {
         "score": 10.8
       },
       {
-        "name": "PayPay",
-        "score": 9.1
-      },
-      {
-        "name": "Mico",
-        "score": 8.4
+        "name": "AI&",
+        "score": 9.7
       }
     ],
     "preferredSources": [
       {
-        "name": "tracked-company",
-        "score": 209.5
+        "name": "tw",
+        "score": 277.7
       },
       {
-        "name": "tw",
-        "score": 209.5
+        "name": "tracked-company",
+        "score": 273.2
       },
       {
         "name": "flex-job-board",
-        "score": 182.2
+        "score": 269.1
       },
       {
         "name": "jp",
-        "score": 182.2
-      },
-      {
-        "name": "semiconductor-memory",
-        "score": 50.1
+        "score": 264.7
       },
       {
         "name": "ai-semiconductor",
-        "score": 48.1
+        "score": 69
       },
       {
-        "name": "semiconductor",
-        "score": 46.9
+        "name": "semiconductor-memory",
+        "score": 66.7
       },
       {
         "name": "consumer-electronics",
-        "score": 33.1
+        "score": 45.1
+      },
+      {
+        "name": "semiconductor",
+        "score": 34.9
+      },
+      {
+        "name": "consumer-security",
+        "score": 29.5
       },
       {
         "name": "semiconductor-equipment",
-        "score": 20.6
+        "score": 22.6
       },
       {
         "name": "commerce-intelligence",
         "score": 5.5
-      },
-      {
-        "name": "consumer-security",
-        "score": 5.2
       }
     ],
     "roleFamilies": [
       {
         "name": "Backend",
-        "score": 153
+        "score": 222.2
       },
       {
         "name": "Frontend",
-        "score": 104.6
+        "score": 138
       },
       {
         "name": "AI / Data",
-        "score": 85.5
+        "score": 116.2
       },
       {
         "name": "Design",
-        "score": 18.2
-      },
-      {
-        "name": "Operations",
-        "score": 10.3
+        "score": 24.2
       },
       {
         "name": "Other",
-        "score": 7.2
+        "score": 17
+      },
+      {
+        "name": "Operations",
+        "score": 11.8
       },
       {
         "name": "Marketing",
         "score": 5.3
       },
       {
-        "name": "Internship",
-        "score": 4.9
+        "name": "Full Stack",
+        "score": 4.8
       }
     ],
     "sourceCoverage": {
@@ -224,7 +224,7 @@ window.CV_CAREER_OPS_LEARNING = {
     },
     "nextStrategy": [
       "Expand searches around engineer, data, product, growth, operations.",
-      "Prioritize sources like tracked-company, tw, flex-job-board, jp.",
+      "Prioritize sources like tw, tracked-company, flex-job-board, jp.",
       "No strong avoid pattern learned yet.",
       "Refresh this learning layer after each batch evaluation or feedback session."
     ],
@@ -242,9 +242,9 @@ window.CV_CAREER_OPS_LEARNING = {
           "product",
           "growth",
           "operations",
-          "python",
           "aws",
-          "gcp"
+          "python",
+          "docker"
         ],
         "avoidKeywords": [
           "commission-only",
@@ -257,13 +257,13 @@ window.CV_CAREER_OPS_LEARNING = {
           "Notion",
           "Vercel",
           "Money Forward",
-          "Micron Workday",
           "NVIDIA Workday",
-          "Intel Workday Taiwan",
+          "Micron Workday",
           "Logitech Workday Taiwan",
-          "AI Robot Association (AIRoA)",
+          "Intel Workday Taiwan",
+          "Gogolook",
           "Applied Materials Workday",
-          "Shizuku AI"
+          "AI Robot Association (AIRoA)"
         ]
       }
     }
