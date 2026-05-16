@@ -46,6 +46,7 @@ Options:
   --js-out <file>     Browser snapshot output. Default: ${DEFAULT_JS_OUT}
   --report-out <file> Markdown intelligence report. Default: ${DEFAULT_REPORT}
   --no-js             Skip browser JS output
+  --include-expired   Keep expired jobs in output (default: prune them)
   --help              Show this help
 `);
 }
@@ -58,7 +59,8 @@ function parseArgs(argv) {
     out: "",
     jsOut: DEFAULT_JS_OUT,
     reportOut: DEFAULT_REPORT,
-    writeJs: true
+    writeJs: true,
+    includeExpired: false
   };
   for (let i = 0; i < argv.length; i += 1) {
     const token = argv[i];
@@ -70,6 +72,7 @@ function parseArgs(argv) {
     else if (token === "--js-out") args.jsOut = argv[++i] || DEFAULT_JS_OUT;
     else if (token === "--report-out") args.reportOut = argv[++i] || DEFAULT_REPORT;
     else if (token === "--no-js") args.writeJs = false;
+    else if (token === "--include-expired") args.includeExpired = true;
     else throw new Error(`Unknown argument: ${token}`);
   }
   args.out = args.out || args.jobs;
@@ -244,11 +247,19 @@ function scoreJob(job, profile, corpusSkillCounts, rubric) {
   const text = `${job.title || ""}\n${job.company || ""}\n${job.location || ""}\n${job.description || ""}\n${job.employmentType || ""}`;
   const skills = extractSkills(job);
   const profileSkills = profile.skills.filter((skill) => includesTerm(text, skill));
-  const missingProfileSkills = profile.skills.filter((skill) => !includesTerm(text, skill)).slice(0, 12);
+  // Profile skills the JD doesn't mention — not a gap; JD may use different wording
+  const profileSkillsNotInJd = profile.skills.filter((skill) => !includesTerm(text, skill)).slice(0, 12);
+  // JD skills the profile doesn't claim — these are the actual candidate gaps
+  const jdSkillsMissingFromProfile = skills
+    .filter((skill) => !profile.skills.some((ps) => includesTerm(skill, ps) || includesTerm(ps, skill)))
+    .slice(0, 12);
   const targetRoleHits = profile.targetRoles.filter((role) => includesTerm(`${job.title} ${job.description}`, role));
   const locationHits = profile.preferredLocations.filter((location) => includesTerm(job.location || text, location));
   const companyHits = profile.preferredCompanies.filter((company) => includesTerm(job.company, company));
   const avoidHits = [...profile.avoidKeywords, ...RISK_TERMS].filter((term) => includesTerm(text, term));
+  // Language requirement not covered by profile (e.g. Japanese required but not in profile skills)
+  const requiresUnknownLanguage = /(日語|日本語|JLPT|N[1-5]\b|japanese\s+(required|proficiency|fluency|speaker)|require.*japanese|fluent.*japanese)/i.test(text)
+    && !profile.skills.some((s) => /(japanese|日語|日本語)/i.test(s));
   const rareHighValueSkills = skills.filter((skill) => (corpusSkillCounts.get(skill) || 0) <= 2).slice(0, 8);
   const family = roleFamily(job);
   const level = seniority(job);
@@ -264,7 +275,7 @@ function scoreJob(job, profile, corpusSkillCounts, rubric) {
   const compensationSignal = /(salary|compensation|薪資|待遇|\$|nt\$|twd)/i.test(text) ? 78 : 52;
   const growthSignal = Math.min(100, 48 + GROWTH_TERMS.filter((term) => includesTerm(text, term)).length * 9 + rareHighValueSkills.length * 4);
   const applicationEffort = job.url ? (job.description?.length > 800 ? 86 : 72) : 48;
-  const riskPenalty = Math.min(45, avoidHits.length * 15 + (job.isExpired ? 40 : 0) + (job.description?.length < 120 ? 12 : 0));
+  const riskPenalty = Math.min(45, avoidHits.length * 15 + (job.isExpired ? 40 : 0) + (job.description?.length < 120 ? 12 : 0) + (requiresUnknownLanguage ? 20 : 0));
   const dimensions = {
     profileMatch,
     atsCoverage,
@@ -293,7 +304,9 @@ function scoreJob(job, profile, corpusSkillCounts, rubric) {
       workMode: mode,
       skills,
       profileSkillHits: profileSkills,
-      missingProfileSkills,
+      profileSkillsNotInJd,
+      jdSkillsMissingFromProfile,
+      requiresUnknownLanguage,
       rareHighValueSkills,
       locationHits,
       avoidHits
@@ -405,7 +418,7 @@ function enrichJob(job, intelligence) {
       ],
       ats_keywords: {
         found: intelligence.features.profileSkillHits.slice(0, 16),
-        missing: intelligence.features.missingProfileSkills.slice(0, 12)
+        missing: intelligence.features.jdSkillsMissingFromProfile.slice(0, 12)
       },
       risks: intelligence.features.avoidHits.length
         ? [`命中風險或排除訊號：${intelligence.features.avoidHits.join("、")}`]
@@ -487,19 +500,22 @@ async function main() {
   const enrichedJobs = jobs
     .map((job) => enrichJob(job, scoreJob(job, profile, corpusSkillCounts, rubric)))
     .sort((a, b) => Number(b.score || 0) - Number(a.score || 0));
+  const outputJobs = args.includeExpired ? enrichedJobs : enrichedJobs.filter((job) => !job.isExpired);
+  const prunedCount = enrichedJobs.length - outputJobs.length;
+  if (prunedCount > 0) console.log(`[career-ops] pruned ${prunedCount} expired job(s) from output (use --include-expired to keep)`);
   const nextPayload = {
     ...payload,
     intelligenceAt: new Date().toISOString(),
     intelligenceBy: "career-ops-intelligence",
-    jobCount: enrichedJobs.filter((job) => !job.isExpired).length,
-    jobs: enrichedJobs,
-    marketInsights: buildInsights(enrichedJobs, profile, duplicateGroups, rubric)
+    jobCount: outputJobs.length,
+    jobs: outputJobs,
+    marketInsights: buildInsights(outputJobs, profile, duplicateGroups, rubric)
   };
 
   await writeJson(args.out, nextPayload);
   if (args.writeJs) await writeJs(args.jsOut, nextPayload);
   await writeText(args.reportOut, buildMarkdownReport(nextPayload));
-  console.log(`[career-ops] intelligence ${enrichedJobs.length} job(s) -> ${args.out}`);
+  console.log(`[career-ops] intelligence ${outputJobs.length} job(s) -> ${args.out}`);
   if (args.writeJs) console.log(`[career-ops] wrote ${args.jsOut}`);
   console.log(`[career-ops] wrote ${args.reportOut}`);
 }
