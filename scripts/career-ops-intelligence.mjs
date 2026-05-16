@@ -133,7 +133,9 @@ function normalizeProfile(profile) {
   return {
     role: String(profile.role || "").trim(),
     summary: String(profile.summary || "").trim(),
+    name: String(profile.name || profile.fullName || profile.displayName || "").trim(),
     skills,
+    languages: array(profile.languages).map((l) => String(l).trim()).filter(Boolean),
     targetRoles: array(preferences.targetRoles).map(String),
     preferredLocations: array(preferences.locations).map(String),
     preferredCompanies: array(preferences.companies).map(String),
@@ -158,11 +160,18 @@ function roleFamily(job) {
 }
 
 function seniority(job) {
-  const text = `${job.title || ""} ${job.description || ""}`.toLowerCase();
-  if (/(intern|實習)/i.test(text)) return "Intern";
-  if (/(junior|entry|associate|新鮮人|初階)/i.test(text)) return "Junior";
-  if (/(senior|sr\.|lead|principal|staff|資深|主管)/i.test(text)) return "Senior+";
-  if (/(manager|director|head of|vp|負責人|經理)/i.test(text)) return "Manager+";
+  const title = String(job.title || "").toLowerCase();
+  const desc = String(job.description || "").toLowerCase();
+  // Check title first for precision, then description with word boundaries to avoid false matches like "international"
+  if (/\b(intern|internship|實習生?)\b/i.test(title)) return "Intern";
+  if (/\b(junior|entry.?level|associate|新鮮人|初階)\b/i.test(title)) return "Junior";
+  if (/\b(senior|sr\.|lead|principal|staff|資深|主管)\b/i.test(title)) return "Senior+";
+  if (/\b(manager|director|head of|vp|vice.?president|負責人|經理)\b/i.test(title)) return "Manager+";
+  // Fall back to description with strict word boundaries
+  if (/\b(internship|實習生?)\b/i.test(desc)) return "Intern";
+  if (/\b(junior|entry.?level|associate|新鮮人|初階)\b/i.test(desc)) return "Junior";
+  if (/\b(senior|sr\.|lead|principal|staff|資深|主管)\b/i.test(desc)) return "Senior+";
+  if (/\b(manager|director|head of|vp|vice.?president|負責人|經理)\b/i.test(desc)) return "Manager+";
   return "Mid";
 }
 
@@ -257,9 +266,12 @@ function scoreJob(job, profile, corpusSkillCounts, rubric) {
   const locationHits = profile.preferredLocations.filter((location) => includesTerm(job.location || text, location));
   const companyHits = profile.preferredCompanies.filter((company) => includesTerm(job.company, company));
   const avoidHits = [...profile.avoidKeywords, ...RISK_TERMS].filter((term) => includesTerm(text, term));
-  // Language requirement not covered by profile (e.g. Japanese required but not in profile skills)
-  const requiresUnknownLanguage = /(日語|日本語|JLPT|N[1-5]\b|japanese\s+(required|proficiency|fluency|speaker)|require.*japanese|fluent.*japanese)/i.test(text)
-    && !profile.skills.some((s) => /(japanese|日語|日本語)/i.test(s));
+  // Language requirement not covered by profile languages or skills
+  const profileLanguages = [...profile.languages, ...profile.skills].map((l) => String(l).toLowerCase());
+  const requiresJapanese = /(日語|日本語|JLPT|N[1-5]\b|japanese\s+(required|proficiency|fluency|speaker)|require.*japanese|fluent.*japanese)/i.test(text);
+  const requiresKorean = /(한국어|Korean\s+(required|proficiency|fluency)|require.*korean|fluent.*korean)/i.test(text);
+  const requiresUnknownLanguage = (requiresJapanese && !profileLanguages.some((l) => /(japanese|日語|日本語)/.test(l)))
+    || (requiresKorean && !profileLanguages.some((l) => /(korean|한국어)/.test(l)));
   const rareHighValueSkills = skills.filter((skill) => (corpusSkillCounts.get(skill) || 0) <= 2).slice(0, 8);
   const family = roleFamily(job);
   const level = seniority(job);
@@ -347,6 +359,32 @@ function topSkillCounts(jobs) {
   return counts;
 }
 
+function scoreProfileCompleteness(profile) {
+  const checks = [
+    { key: "name", label: "候選人名字（name）", pass: Boolean(profile.name) },
+    { key: "summary", label: "專業摘要（summary，建議 >50 字）", pass: String(profile.summary || "").length >= 50 },
+    { key: "skills", label: "技能列表（skills，建議 ≥8 項）", pass: (profile.skills || []).length >= 8 },
+    { key: "experience", label: "工作經歷（experience，建議 >100 字）", pass: String(profile.experience || "").length >= 100 },
+    { key: "projects", label: "專案描述（projects，建議 >80 字）", pass: String(profile.projects || "").length >= 80 },
+    { key: "targetRoles", label: "目標職稱（preferences.targetRoles）", pass: (profile.targetRoles || []).length > 0 },
+    { key: "companies", label: "目標公司（preferences.companies）", pass: (profile.preferredCompanies || []).length > 0 },
+    { key: "languages", label: "語言能力（languages）", pass: (profile.languages || []).length > 0 }
+  ];
+  const passed = checks.filter((c) => c.pass).length;
+  const score = Math.round((passed / checks.length) * 100);
+  const missing = checks.filter((c) => !c.pass).map((c) => c.label);
+  return {
+    score,
+    passed,
+    total: checks.length,
+    grade: score >= 87 ? "A" : score >= 62 ? "B" : score >= 37 ? "C" : "D",
+    missing,
+    note: missing.length
+      ? `補充以下 ${missing.length} 個欄位可提升所有 Layer 的輸出品質：${missing.slice(0, 3).join("、")}${missing.length > 3 ? "…" : ""}`
+      : "Profile 欄位完整，輸出品質最佳。"
+  };
+}
+
 function buildInsights(jobs, profile, duplicateGroups, rubric) {
   const active = jobs.filter((job) => !job.isExpired);
   const skillCounts = topSkillCounts(active);
@@ -368,6 +406,7 @@ function buildInsights(jobs, profile, duplicateGroups, rubric) {
       weights: rubric.weights,
       gradeThresholds: rubric.gradeThresholds
     },
+    profileCompleteness: scoreProfileCompleteness(profile),
     activeJobCount: active.length,
     expiredJobCount: jobs.length - active.length,
     evaluatedJobCount: jobs.filter((job) => job.score !== undefined && job.score !== "").length,
