@@ -124,7 +124,7 @@ The Career tab reads the summary, skills, experience, education, and projects al
 
 This feature uses `career-ops`-style evaluation ideas such as A-F scoring, ATS keywords, STAR stories, and application prioritization. It now includes a lightweight batch tracker, company careers-page discovery, and tailored PDF flow, but does not yet include login-based portal scanners or scheduled cross-platform workers.
 
-API keys stay in the current browser tab's `sessionStorage` and are not written to Supabase.
+API keys stay in the current browser tab's `sessionStorage`. Model calls send the key only to the AI provider selected by the user; the key is never written to Supabase, Railway, GitHub Actions, or any app-owned database. The signed-in resume upload / 50-100 job matching flow is BYOK too: the frontend uses the user's own key to extract the resume profile, while the backend worker only queues, matches, and writes results. No app-owned `ANTHROPIC_API_KEY` is required for hosted user analysis.
 
 #### Career Ops Mapping
 
@@ -142,7 +142,7 @@ API keys stay in the current browser tab's `sessionStorage` and are not written 
 | Agent-style pipeline | `scripts/career-ops-pipeline.mjs` runs source-strategy / search / scanner / evaluation / intelligence / application / compensation / story-bank / parallel stages as explicit backend agent steps | Pipeline stages are grouped by data dependency; job-level work is handled by the parallel worker |
 | Parallel job workers | `scripts/career-ops-parallel.mjs` uses a bounded-concurrency queue to produce evaluation, research, application, compensation, story, and apply-agent plans per job; `scripts/career-ops-parallel-pipeline.mjs` parallelizes source scanning first, then runs research / kit / compensation / story / learning / deep-fit in dependency-safe stages | Default concurrency is 4; tune with `--concurrency` |
 | Deep company/job research | `scripts/career-ops-deep-research.mjs` combines ranked jobs, sources, public job pages, and optional search APIs into company/job dossiers; the frontend also has an AI deep-research action per job | The browser AI key powers reasoning only; real web search requires Brave/Bing/SerpAPI keys or imported search results |
-| Single-job deep fit | `scripts/career-ops-deep-fit.mjs` combines profile, JD, research, compensation, and story bank into career-ops-grade fit dossiers; optionally uses backend `OPENAI_API_KEY` / `ANTHROPIC_API_KEY` | Without an LLM key, it stays evidence-based and avoids invention |
+| Single-job deep fit | `scripts/career-ops-deep-fit.mjs` combines profile, JD, research, compensation, and story bank into career-ops-grade fit dossiers; local offline runs may opt into `OPENAI_API_KEY` / `ANTHROPIC_API_KEY` for LLM review | The hosted user flow uses a BYOK profile plus worker heuristics, so it does not spend app-owned model tokens; without an LLM key, it stays evidence-based and avoids invention |
 | ATS keywords and resume gaps | Single-job and batch prompts produce keywords, gaps, priority, and summaries | The app must not invent experience that is not in the CV |
 | STAR story bank | `scripts/career-ops-story-bank.mjs` turns profile proof points and market themes into a STAR+Reflection story bank | The user should fill in real metrics and outcomes |
 | Preference learning | `scripts/career-ops-learning.mjs` learns preferred skills, companies, sources, and avoid signals from scores, statuses, feedback, and source metadata | Needs ongoing like/dislike feedback and application status updates |

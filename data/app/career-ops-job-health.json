@@ -1,0 +1,15 @@
+{
+  "generatedAt": null,
+  "health": {
+    "total": 0,
+    "active": 0,
+    "expired": 0,
+    "stale": 0,
+    "expiredRate": 0,
+    "expiredRatePct": "0%",
+    "avgActiveScore": 0,
+    "bySource": {},
+    "status": "empty"
+  },
+  "scrapeTriggered": false
+}
