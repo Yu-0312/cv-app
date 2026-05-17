@@ -1,89 +1,89 @@
 {
   "source": "career-ops-learning",
-  "generatedAt": "2026-05-16T23:18:55.934Z",
+  "generatedAt": "2026-05-17T23:21:27.521Z",
   "learning": {
-    "activeJobCount": 291,
-    "positiveSignalCount": 127,
+    "activeJobCount": 293,
+    "positiveSignalCount": 126,
     "negativeSignalCount": 12,
     "preferredSkills": [
       {
         "name": "engineer",
-        "score": 430.9
+        "score": 425
       },
       {
         "name": "data",
-        "score": 365.2
+        "score": 359.5
       },
       {
         "name": "product",
-        "score": 322.4
+        "score": 321.3
       },
       {
         "name": "growth",
-        "score": 195.1
+        "score": 194.8
       },
       {
         "name": "operations",
-        "score": 162.1
+        "score": 161.1
       },
       {
         "name": "aws",
-        "score": 161.7
+        "score": 160.5
       },
       {
         "name": "python",
-        "score": 150.5
+        "score": 150
       },
       {
         "name": "docker",
-        "score": 108.8
+        "score": 108
       },
       {
         "name": "terraform",
-        "score": 105.3
+        "score": 104.4
       },
       {
         "name": "gcp",
-        "score": 96.5
+        "score": 95.8
       },
       {
         "name": "agents",
-        "score": 94.9
+        "score": 94.1
       },
       {
         "name": "react",
-        "score": 89.1
+        "score": 88.7
       },
       {
         "name": "React",
-        "score": 89.1
+        "score": 88.7
       },
       {
         "name": "graphql",
-        "score": 82.9
+        "score": 82.3
       },
       {
         "name": "go",
-        "score": 78.5
+        "score": 78.2
       },
       {
         "name": "typescript",
-        "score": 76.5
+        "score": 76.1
       },
       {
         "name": "TypeScript",
-        "score": 76.5
+        "score": 76.1
       },
       {
         "name": "node.js",
-        "score": 74.1
+        "score": 73.5
       }
     ],
     "avoidSignals": [],
     "preferredCompanies": [
       {
         "name": "Money Forward",
-        "score": 107.3
+        "score": 106.2
       },
       {
         "name": "NVIDIA Workday",
@@ -91,7 +91,7 @@
       },
       {
         "name": "Micron Workday",
-        "score": 66.7
+        "score": 62
       },
       {
         "name": "Logitech Workday Taiwan",
@@ -115,7 +115,7 @@
       },
       {
         "name": "PayPay",
-        "score": 14.2
+        "score": 14.1
       },
       {
         "name": "Geniee",
@@ -126,26 +126,26 @@
         "score": 10.8
       },
       {
-        "name": "AI&",
+        "name": "Shizuku AI",
         "score": 9.7
       }
     ],
     "preferredSources": [
       {
         "name": "tw",
-        "score": 277.7
+        "score": 273
       },
       {
         "name": "tracked-company",
-        "score": 273.2
+        "score": 268.5
       },
       {
         "name": "flex-job-board",
-        "score": 269.1
+        "score": 267.5
       },
       {
         "name": "jp",
-        "score": 264.7
+        "score": 263
       },
       {
         "name": "ai-semiconductor",
@@ -153,7 +153,7 @@
       },
       {
         "name": "semiconductor-memory",
-        "score": 66.7
+        "score": 62
       },
       {
         "name": "consumer-electronics",
@@ -179,15 +179,15 @@
     "roleFamilies": [
       {
         "name": "Backend",
-        "score": 222.2
+        "score": 221.5
       },
       {
         "name": "Frontend",
-        "score": 138
+        "score": 137.3
       },
       {
         "name": "AI / Data",
-        "score": 116.2
+        "score": 111.4
       },
       {
         "name": "Design",

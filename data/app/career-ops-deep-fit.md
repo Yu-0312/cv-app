@@ -1,6 +1,6 @@
 # Career Ops Deep Fit Report
 
-Generated: 2026-05-16T23:18:55.765Z
+Generated: 2026-05-17T23:21:27.354Z
 LLM provider: none
 Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 exploratory)
 
@@ -126,36 +126,6 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Use story story-2: data-heavy product decisions.
 - Use story story-3: systems and API collaboration.
 
-### Money Forward - Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka
-
-- Score: 75
-- Grade: B
-- Confidence: medium
-- Decision: pursue selectively
-- Thesis: Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka at Money Forward is pursue selectively because the snapshot score is 75, with 6 profile/role keyword hits and 4 external evidence item(s).
-
-#### Evidence
-- Keyword hits: TypeScript, React, Next.js, API, TypeScript, React
-- Keyword misses: java, swift, kotlin, mysql, firebase, aws, gcp, docker, terraform, rest, agents, growth
-- Research signals: AI / data / platform signal, growth or funding signal, remote or hybrid signal
-- Compensation leverage: medium
-
-#### Concerns
-- Profile keyword coverage is weaker than the target role language.
-
-#### Interview Strategy
-- Ask why the role is open and what success means in the first 90 days.
-- Probe team ownership, roadmap pressure, and cross-functional interfaces.
-- What business unit owns the Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka role?
-- What measurable outcomes would this team expect in the first 90 days?
-- What recent company/product signals change the risk or upside?
-
-#### CV Strategy
-- Lead with proof around: TypeScript, React, Next.js, API, TypeScript, React.
-- Use story story-1: frontend product execution.
-- Use story story-2: data-heavy product decisions.
-- Use story story-3: systems and API collaboration.
-
 ### Micron Workday - Senior Full Stack Software Engineer
 
 - Score: 74
@@ -182,6 +152,36 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 
 #### CV Strategy
 - Lead with proof around: JavaScript, TypeScript, React, Analytics, API, analytics.
+- Use story story-1: frontend product execution.
+- Use story story-2: data-heavy product decisions.
+- Use story story-3: systems and API collaboration.
+
+### Money Forward - Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka
+
+- Score: 73
+- Grade: B
+- Confidence: medium
+- Decision: pursue selectively
+- Thesis: Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka at Money Forward is pursue selectively because the snapshot score is 73, with 6 profile/role keyword hits and 4 external evidence item(s).
+
+#### Evidence
+- Keyword hits: TypeScript, React, Next.js, API, TypeScript, React
+- Keyword misses: java, swift, kotlin, mysql, firebase, aws, gcp, docker, terraform, rest, agents, growth
+- Research signals: AI / data / platform signal, growth or funding signal, remote or hybrid signal
+- Compensation leverage: medium
+
+#### Concerns
+- Profile keyword coverage is weaker than the target role language.
+
+#### Interview Strategy
+- Ask why the role is open and what success means in the first 90 days.
+- Probe team ownership, roadmap pressure, and cross-functional interfaces.
+- What business unit owns the Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka role?
+- What measurable outcomes would this team expect in the first 90 days?
+- What recent company/product signals change the risk or upside?
+
+#### CV Strategy
+- Lead with proof around: TypeScript, React, Next.js, API, TypeScript, React.
 - Use story story-1: frontend product execution.
 - Use story story-2: data-heavy product decisions.
 - Use story story-3: systems and API collaboration.
@@ -246,66 +246,6 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Use story story-2: data-heavy product decisions.
 - Use story story-3: systems and API collaboration.
 
-### Money Forward - Lead Backend Engineer, Digital Bank
-
-- Score: 71
-- Grade: C
-- Confidence: medium
-- Decision: pursue selectively
-- Thesis: Lead Backend Engineer, Digital Bank at Money Forward is pursue selectively because the snapshot score is 71, with 3 profile/role keyword hits and 4 external evidence item(s).
-
-#### Evidence
-- Keyword hits: Frontend Engineer, API, Frontend Engineer
-- Keyword misses: kotlin, aws, docker, rest, agents
-- Research signals: AI / data / platform signal, growth or funding signal, remote or hybrid signal
-- Compensation leverage: medium
-
-#### Concerns
-- Profile keyword coverage is weaker than the target role language.
-
-#### Interview Strategy
-- Ask why the role is open and what success means in the first 90 days.
-- Probe team ownership, roadmap pressure, and cross-functional interfaces.
-- What business unit owns the Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka role?
-- What measurable outcomes would this team expect in the first 90 days?
-- What recent company/product signals change the risk or upside?
-
-#### CV Strategy
-- Lead with proof around: Frontend Engineer, API, Frontend Engineer.
-- Use story story-1: frontend product execution.
-- Use story story-2: data-heavy product decisions.
-- Use story story-3: systems and API collaboration.
-
-### Money Forward - Infrastructure Engineer (SRE-AWS)
-
-- Score: 71
-- Grade: C
-- Confidence: medium
-- Decision: pursue selectively
-- Thesis: Infrastructure Engineer (SRE-AWS) at Money Forward is pursue selectively because the snapshot score is 71, with 5 profile/role keyword hits and 4 external evidence item(s).
-
-#### Evidence
-- Keyword hits: TypeScript, React, Performance Optimization, TypeScript, React
-- Keyword misses: kotlin, mysql, aws, docker, kubernetes, terraform, operations
-- Research signals: AI / data / platform signal, growth or funding signal, remote or hybrid signal
-- Compensation leverage: medium
-
-#### Concerns
-- Profile keyword coverage is weaker than the target role language.
-
-#### Interview Strategy
-- Ask why the role is open and what success means in the first 90 days.
-- Probe team ownership, roadmap pressure, and cross-functional interfaces.
-- What business unit owns the Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka role?
-- What measurable outcomes would this team expect in the first 90 days?
-- What recent company/product signals change the risk or upside?
-
-#### CV Strategy
-- Lead with proof around: TypeScript, React, Performance Optimization, TypeScript, React.
-- Use story story-1: frontend product execution.
-- Use story story-2: data-heavy product decisions.
-- Use story story-3: systems and API collaboration.
-
 ### Cardlytics Workday Taiwan - Senior Software Engineer
 
 - Score: 70
@@ -330,33 +270,6 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 
 #### CV Strategy
 - Lead with proof around: TypeScript, API, TypeScript.
-- Use story story-1: frontend product execution.
-- Use story story-2: data-heavy product decisions.
-- Use story story-3: systems and API collaboration.
-
-### Tokuty - Full Stack Engineer
-
-- Score: 70
-- Grade: C
-- Confidence: low
-- Decision: pursue selectively
-- Thesis: Full Stack Engineer at Tokuty is pursue selectively because the snapshot score is 70, with 6 profile/role keyword hits and 0 external evidence item(s).
-
-#### Evidence
-- Keyword hits: Frontend Engineer, React, design system, React, Frontend Engineer, Full Stack Engineer
-- Keyword misses: -
-- Research signals: -
-- Compensation leverage: low
-
-#### Concerns
-- External company evidence is thin; run deep research with a search API.
-
-#### Interview Strategy
-- Ask why the role is open and what success means in the first 90 days.
-- Probe team ownership, roadmap pressure, and cross-functional interfaces.
-
-#### CV Strategy
-- Lead with proof around: Frontend Engineer, React, design system, React, Frontend Engineer, Full Stack Engineer.
 - Use story story-1: frontend product execution.
 - Use story story-2: data-heavy product decisions.
 - Use story story-3: systems and API collaboration.
@@ -439,6 +352,93 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 
 #### CV Strategy
 - Lead with proof around: Frontend Engineer, API, Frontend Engineer.
+- Use story story-1: frontend product execution.
+- Use story story-2: data-heavy product decisions.
+- Use story story-3: systems and API collaboration.
+
+### Money Forward - Lead Backend Engineer, Digital Bank
+
+- Score: 69
+- Grade: C
+- Confidence: medium
+- Decision: hold / compare
+- Thesis: Lead Backend Engineer, Digital Bank at Money Forward is hold / compare because the snapshot score is 69, with 3 profile/role keyword hits and 4 external evidence item(s).
+
+#### Evidence
+- Keyword hits: Frontend Engineer, API, Frontend Engineer
+- Keyword misses: kotlin, aws, docker, rest, agents
+- Research signals: AI / data / platform signal, growth or funding signal, remote or hybrid signal
+- Compensation leverage: medium
+
+#### Concerns
+- Profile keyword coverage is weaker than the target role language.
+
+#### Interview Strategy
+- Ask why the role is open and what success means in the first 90 days.
+- Probe team ownership, roadmap pressure, and cross-functional interfaces.
+- What business unit owns the Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka role?
+- What measurable outcomes would this team expect in the first 90 days?
+- What recent company/product signals change the risk or upside?
+
+#### CV Strategy
+- Lead with proof around: Frontend Engineer, API, Frontend Engineer.
+- Use story story-1: frontend product execution.
+- Use story story-2: data-heavy product decisions.
+- Use story story-3: systems and API collaboration.
+
+### Money Forward - Infrastructure Engineer (SRE-AWS)
+
+- Score: 69
+- Grade: C
+- Confidence: medium
+- Decision: hold / compare
+- Thesis: Infrastructure Engineer (SRE-AWS) at Money Forward is hold / compare because the snapshot score is 69, with 5 profile/role keyword hits and 4 external evidence item(s).
+
+#### Evidence
+- Keyword hits: TypeScript, React, Performance Optimization, TypeScript, React
+- Keyword misses: kotlin, mysql, aws, docker, kubernetes, terraform, operations
+- Research signals: AI / data / platform signal, growth or funding signal, remote or hybrid signal
+- Compensation leverage: medium
+
+#### Concerns
+- Profile keyword coverage is weaker than the target role language.
+
+#### Interview Strategy
+- Ask why the role is open and what success means in the first 90 days.
+- Probe team ownership, roadmap pressure, and cross-functional interfaces.
+- What business unit owns the Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka role?
+- What measurable outcomes would this team expect in the first 90 days?
+- What recent company/product signals change the risk or upside?
+
+#### CV Strategy
+- Lead with proof around: TypeScript, React, Performance Optimization, TypeScript, React.
+- Use story story-1: frontend product execution.
+- Use story story-2: data-heavy product decisions.
+- Use story story-3: systems and API collaboration.
+
+### Tokuty - Full Stack Engineer
+
+- Score: 69
+- Grade: C
+- Confidence: low
+- Decision: hold / compare
+- Thesis: Full Stack Engineer at Tokuty is hold / compare because the snapshot score is 69, with 6 profile/role keyword hits and 0 external evidence item(s).
+
+#### Evidence
+- Keyword hits: Frontend Engineer, React, design system, React, Frontend Engineer, Full Stack Engineer
+- Keyword misses: -
+- Research signals: -
+- Compensation leverage: low
+
+#### Concerns
+- External company evidence is thin; run deep research with a search API.
+
+#### Interview Strategy
+- Ask why the role is open and what success means in the first 90 days.
+- Probe team ownership, roadmap pressure, and cross-functional interfaces.
+
+#### CV Strategy
+- Lead with proof around: Frontend Engineer, React, design system, React, Frontend Engineer, Full Stack Engineer.
 - Use story story-1: frontend product execution.
 - Use story story-2: data-heavy product decisions.
 - Use story story-3: systems and API collaboration.
@@ -855,12 +855,6 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Keyword hits: -
 - Gaps: -
 
-### COEBank SuccessFactors Data & BI Engineer - Data & BI Engineer Job Details | CEB
-- Score: 40 | Grade: F | RoleFit: 45
-- Decision: skip unless strategic
-- Keyword hits: -
-- Gaps: -
-
 ### NVIDIA Developer - NVIDIA Aerial
 - Score: 39 | Grade: F | RoleFit: 45
 - Decision: skip unless strategic
@@ -921,12 +915,6 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Keyword hits: -
 - Gaps: -
 
-### NVIDIA Workday - Test Development Engineer - DataCenter System Software
-- Score: 37 | Grade: F | RoleFit: 45
-- Decision: skip unless strategic
-- Keyword hits: -
-- Gaps: -
-
 ### NVIDIA Workday - Product Development Lab Engineer
 - Score: 37 | Grade: F | RoleFit: 45
 - Decision: skip unless strategic
@@ -934,6 +922,12 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Gaps: -
 
 ### NVIDIA Workday - Product Development Engineer
+- Score: 37 | Grade: F | RoleFit: 45
+- Decision: skip unless strategic
+- Keyword hits: -
+- Gaps: -
+
+### COEBank SuccessFactors Data & BI Engineer - Data & BI Engineer Job Details | CEB
 - Score: 37 | Grade: F | RoleFit: 45
 - Decision: skip unless strategic
 - Keyword hits: -
@@ -963,11 +957,15 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Keyword hits: -
 - Gaps: -
 
+### NVIDIA Workday - Senior System Level Product Development Engineer
+- Score: 36 | Grade: F | RoleFit: 45
+- Decision: skip unless strategic
+- Keyword hits: -
+- Gaps: -
+
 ## Layer C — Exploratory Signals (roleFit < 40)
 
 - **Money Forward — Data Engineer, Data AI Platform Division, Tokyo** (score: 62) | Top gap: python
-- **Money Forward — Security Specialist (Product Security), CISO Office, Tokyo** (score: 62) | Top gap: aws
-- **PayPay — Cloud Platform Engineer (DB Specialist)** (score: 62) | Top gap: python
 - **PayPay — Automation QA Engineer** (score: 62) | Top gap: docker
 - **NVIDIA Workday — Senior Packaging Development Engineer** (score: 61) | Top gap: deep learning
 - **NVIDIA Workday — Senior High Speed SerDes Validation Engineer** (score: 61) | Top gap: python
@@ -978,6 +976,8 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - **Logitech Workday Taiwan — Sr. Mechancial Design Engineer** (score: 60) | Top gap: none
 - **Logitech Workday Taiwan — Lead Test Development Engineer** (score: 60) | Top gap: none
 - **Money Forward — AI Engineer, ERP Cross-Functional Engineering Department, Tokyo** (score: 60) | Top gap: aws
+- **Money Forward — Security Specialist (Product Security), CISO Office, Tokyo** (score: 60) | Top gap: aws
+- **PayPay — Cloud Platform Engineer (DB Specialist)** (score: 60) | Top gap: python
 - **Gogolook — Design Assistant 設計助理 (Roo)** (score: 59) | Top gap: growth
 - **Applied Materials Workday — Technical Product Support (TPS) Engineer II - (SCoE) (E2)** (score: 59) | Top gap: go
 - **Applied Materials Workday — Technical Product Support (TPS) Engineer III (E3) - MDP** (score: 59) | Top gap: go
@@ -986,7 +986,6 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - **Logitech Workday Taiwan — Lead Mechanical Engineer** (score: 59) | Top gap: none
 - **Logitech Workday Taiwan — Lead Material Engineer** (score: 59) | Top gap: none
 - **Logitech Workday Taiwan — Senior Signal Integration Engineer** (score: 59) | Top gap: none
-- **Mantra — Backend Engineer (Langaku)** (score: 59) | Top gap: python
 - **Gogolook — AI Product Intern (B2C & User Growth) - ScamAdviser** (score: 58) | Top gap: go
 - **Micron Workday — MATERIAL ENGINEER, ADVANCED PACKAGING TECHNOLOGY DEVELOPMENT** (score: 58) | Top gap: none
 - **Gogolook — Content Marketing Intern 內容行銷實習生 (Roo)** (score: 57) | Top gap: html
@@ -995,4 +994,5 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - **Micron Workday — Facilities Document Control Program Engineer** (score: 57) | Top gap: excel
 - **Micron Workday — SR ENGINEER, OMT PROD. OEE** (score: 57) | Top gap: python
 - **Intel Workday Taiwan — Sr. Substrates Development and Ramp Engineer** (score: 57) | Top gap: operations
+- **Intel Workday Taiwan — System Lab AI Solution Graduate Intern** (score: 57) | Top gap: machine learning
 

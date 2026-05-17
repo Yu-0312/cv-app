@@ -1,6 +1,6 @@
 window.CV_CAREER_OPS_DEEP_FIT = {
   "source": "career-ops-deep-fit",
-  "generatedAt": "2026-05-16T23:18:55.765Z",
+  "generatedAt": "2026-05-17T23:21:27.354Z",
   "llmProvider": "none",
   "summary": {
     "totalResults": 95,
@@ -321,89 +321,6 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "llm": null
     },
     {
-      "jobKey": "url:https://www.tokyodev.com/companies/moneyforward/jobs/product-reliability-engineer-cre-money-forward-cloud-fukuoka",
-      "company": "Money Forward",
-      "title": "Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka",
-      "score": 75,
-      "grade": "B",
-      "confidence": "medium",
-      "decision": "pursue selectively",
-      "thesis": "Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka at Money Forward is pursue selectively because the snapshot score is 75, with 6 profile/role keyword hits and 4 external evidence item(s).",
-      "evidence": {
-        "keywordHits": [
-          "TypeScript",
-          "React",
-          "Next.js",
-          "API",
-          "TypeScript",
-          "React"
-        ],
-        "keywordMisses": [
-          "java",
-          "swift",
-          "kotlin",
-          "mysql",
-          "firebase",
-          "aws",
-          "gcp",
-          "docker",
-          "terraform",
-          "rest",
-          "agents",
-          "growth"
-        ],
-        "researchSignals": [
-          "AI / data / platform signal",
-          "growth or funding signal",
-          "remote or hybrid signal"
-        ],
-        "evidenceCount": 4,
-        "compensationLeverage": "medium"
-      },
-      "concerns": [
-        "Profile keyword coverage is weaker than the target role language."
-      ],
-      "interviewStrategy": [
-        "Ask why the role is open and what success means in the first 90 days.",
-        "Probe team ownership, roadmap pressure, and cross-functional interfaces.",
-        "What business unit owns the Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka role?",
-        "What measurable outcomes would this team expect in the first 90 days?",
-        "What recent company/product signals change the risk or upside?"
-      ],
-      "cvStrategy": [
-        "Lead with proof around: TypeScript, React, Next.js, API, TypeScript, React.",
-        "Use story story-1: frontend product execution.",
-        "Use story story-2: data-heavy product decisions.",
-        "Use story story-3: systems and API collaboration."
-      ],
-      "compensationStrategy": {
-        "leverage": "medium",
-        "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka package, including base, bonus, equity, and review cycle?",
-        "valueAnchor": "Based on the scope of Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka and my fit around TypeScript, React, Next.js, engineer, I would like to calibrate toward the stronger end of the range if the team sees the level match. My research indicates the GLOBAL midpoint for this level is around USD 90,000 (annual)."
-      },
-      "storyHooks": [
-        {
-          "id": "story-1",
-          "theme": "frontend product execution",
-          "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
-          "relevance": 3
-        },
-        {
-          "id": "story-2",
-          "theme": "data-heavy product decisions",
-          "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
-          "relevance": 3
-        },
-        {
-          "id": "story-3",
-          "theme": "systems and API collaboration",
-          "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
-          "relevance": 3
-        }
-      ],
-      "llm": null
-    },
-    {
       "jobKey": "url:https://micron.wd1.myworkdayjobs.com/external/job/taichung---aatt-taiwan/senior-full-stack-software-engineer_jr101324",
       "company": "Micron Workday",
       "title": "Senior Full Stack Software Engineer",
@@ -565,6 +482,89 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "llm": null
     },
     {
+      "jobKey": "url:https://www.tokyodev.com/companies/moneyforward/jobs/product-reliability-engineer-cre-money-forward-cloud-fukuoka",
+      "company": "Money Forward",
+      "title": "Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka",
+      "score": 73,
+      "grade": "B",
+      "confidence": "medium",
+      "decision": "pursue selectively",
+      "thesis": "Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka at Money Forward is pursue selectively because the snapshot score is 73, with 6 profile/role keyword hits and 4 external evidence item(s).",
+      "evidence": {
+        "keywordHits": [
+          "TypeScript",
+          "React",
+          "Next.js",
+          "API",
+          "TypeScript",
+          "React"
+        ],
+        "keywordMisses": [
+          "java",
+          "swift",
+          "kotlin",
+          "mysql",
+          "firebase",
+          "aws",
+          "gcp",
+          "docker",
+          "terraform",
+          "rest",
+          "agents",
+          "growth"
+        ],
+        "researchSignals": [
+          "AI / data / platform signal",
+          "growth or funding signal",
+          "remote or hybrid signal"
+        ],
+        "evidenceCount": 4,
+        "compensationLeverage": "medium"
+      },
+      "concerns": [
+        "Profile keyword coverage is weaker than the target role language."
+      ],
+      "interviewStrategy": [
+        "Ask why the role is open and what success means in the first 90 days.",
+        "Probe team ownership, roadmap pressure, and cross-functional interfaces.",
+        "What business unit owns the Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka role?",
+        "What measurable outcomes would this team expect in the first 90 days?",
+        "What recent company/product signals change the risk or upside?"
+      ],
+      "cvStrategy": [
+        "Lead with proof around: TypeScript, React, Next.js, API, TypeScript, React.",
+        "Use story story-1: frontend product execution.",
+        "Use story story-2: data-heavy product decisions.",
+        "Use story story-3: systems and API collaboration."
+      ],
+      "compensationStrategy": {
+        "leverage": "medium",
+        "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka package, including base, bonus, equity, and review cycle?",
+        "valueAnchor": "Based on the scope of Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka and my fit around TypeScript, React, Next.js, engineer, I would like to calibrate toward the stronger end of the range if the team sees the level match. My research indicates the GLOBAL midpoint for this level is around USD 90,000 (annual)."
+      },
+      "storyHooks": [
+        {
+          "id": "story-1",
+          "theme": "frontend product execution",
+          "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
+          "relevance": 3
+        },
+        {
+          "id": "story-2",
+          "theme": "data-heavy product decisions",
+          "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
+          "relevance": 3
+        },
+        {
+          "id": "story-3",
+          "theme": "systems and API collaboration",
+          "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
+          "relevance": 3
+        }
+      ],
+      "llm": null
+    },
+    {
       "jobKey": "url:https://japan-dev.com/jobs/artytech/artytech-tech-lead--cto-candidate-full-stack-25pe6i",
       "company": "Artytech",
       "title": "Tech Lead / CTO Candidate (Full-stack)",
@@ -639,156 +639,6 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "llm": null
     },
     {
-      "jobKey": "url:https://www.tokyodev.com/companies/moneyforward/jobs/lead-backend-engineer-digital-bank",
-      "company": "Money Forward",
-      "title": "Lead Backend Engineer, Digital Bank",
-      "score": 71,
-      "grade": "C",
-      "confidence": "medium",
-      "decision": "pursue selectively",
-      "thesis": "Lead Backend Engineer, Digital Bank at Money Forward is pursue selectively because the snapshot score is 71, with 3 profile/role keyword hits and 4 external evidence item(s).",
-      "evidence": {
-        "keywordHits": [
-          "Frontend Engineer",
-          "API",
-          "Frontend Engineer"
-        ],
-        "keywordMisses": [
-          "kotlin",
-          "aws",
-          "docker",
-          "rest",
-          "agents"
-        ],
-        "researchSignals": [
-          "AI / data / platform signal",
-          "growth or funding signal",
-          "remote or hybrid signal"
-        ],
-        "evidenceCount": 4,
-        "compensationLeverage": "medium"
-      },
-      "concerns": [
-        "Profile keyword coverage is weaker than the target role language."
-      ],
-      "interviewStrategy": [
-        "Ask why the role is open and what success means in the first 90 days.",
-        "Probe team ownership, roadmap pressure, and cross-functional interfaces.",
-        "What business unit owns the Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka role?",
-        "What measurable outcomes would this team expect in the first 90 days?",
-        "What recent company/product signals change the risk or upside?"
-      ],
-      "cvStrategy": [
-        "Lead with proof around: Frontend Engineer, API, Frontend Engineer.",
-        "Use story story-1: frontend product execution.",
-        "Use story story-2: data-heavy product decisions.",
-        "Use story story-3: systems and API collaboration."
-      ],
-      "compensationStrategy": {
-        "leverage": "medium",
-        "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka package, including base, bonus, equity, and review cycle?",
-        "valueAnchor": "Based on the scope of Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka and my fit around TypeScript, React, Next.js, engineer, I would like to calibrate toward the stronger end of the range if the team sees the level match. My research indicates the GLOBAL midpoint for this level is around USD 90,000 (annual)."
-      },
-      "storyHooks": [
-        {
-          "id": "story-1",
-          "theme": "frontend product execution",
-          "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
-          "relevance": 0
-        },
-        {
-          "id": "story-2",
-          "theme": "data-heavy product decisions",
-          "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
-          "relevance": 0
-        },
-        {
-          "id": "story-3",
-          "theme": "systems and API collaboration",
-          "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
-          "relevance": 0
-        }
-      ],
-      "llm": null
-    },
-    {
-      "jobKey": "url:https://www.tokyodev.com/companies/moneyforward/jobs/infrastructure-engineer-sre-aws",
-      "company": "Money Forward",
-      "title": "Infrastructure Engineer (SRE-AWS)",
-      "score": 71,
-      "grade": "C",
-      "confidence": "medium",
-      "decision": "pursue selectively",
-      "thesis": "Infrastructure Engineer (SRE-AWS) at Money Forward is pursue selectively because the snapshot score is 71, with 5 profile/role keyword hits and 4 external evidence item(s).",
-      "evidence": {
-        "keywordHits": [
-          "TypeScript",
-          "React",
-          "Performance Optimization",
-          "TypeScript",
-          "React"
-        ],
-        "keywordMisses": [
-          "kotlin",
-          "mysql",
-          "aws",
-          "docker",
-          "kubernetes",
-          "terraform",
-          "operations"
-        ],
-        "researchSignals": [
-          "AI / data / platform signal",
-          "growth or funding signal",
-          "remote or hybrid signal"
-        ],
-        "evidenceCount": 4,
-        "compensationLeverage": "medium"
-      },
-      "concerns": [
-        "Profile keyword coverage is weaker than the target role language."
-      ],
-      "interviewStrategy": [
-        "Ask why the role is open and what success means in the first 90 days.",
-        "Probe team ownership, roadmap pressure, and cross-functional interfaces.",
-        "What business unit owns the Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka role?",
-        "What measurable outcomes would this team expect in the first 90 days?",
-        "What recent company/product signals change the risk or upside?"
-      ],
-      "cvStrategy": [
-        "Lead with proof around: TypeScript, React, Performance Optimization, TypeScript, React.",
-        "Use story story-1: frontend product execution.",
-        "Use story story-2: data-heavy product decisions.",
-        "Use story story-3: systems and API collaboration."
-      ],
-      "compensationStrategy": {
-        "leverage": "medium",
-        "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka package, including base, bonus, equity, and review cycle?",
-        "valueAnchor": "Based on the scope of Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka and my fit around TypeScript, React, Next.js, engineer, I would like to calibrate toward the stronger end of the range if the team sees the level match. My research indicates the GLOBAL midpoint for this level is around USD 90,000 (annual)."
-      },
-      "storyHooks": [
-        {
-          "id": "story-1",
-          "theme": "frontend product execution",
-          "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
-          "relevance": 2
-        },
-        {
-          "id": "story-2",
-          "theme": "data-heavy product decisions",
-          "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
-          "relevance": 2
-        },
-        {
-          "id": "story-3",
-          "theme": "systems and API collaboration",
-          "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
-          "relevance": 2
-        }
-      ],
-      "llm": null
-    },
-    {
       "jobKey": "url:https://cardlytics.wd5.myworkdayjobs.com/cardlyticsexternalcareersite/job/taipei-city/senior-software-engineer_jr100384",
       "company": "Cardlytics Workday Taiwan",
       "title": "Senior Software Engineer",
@@ -838,69 +688,6 @@ window.CV_CAREER_OPS_DEEP_FIT = {
         "leverage": "low",
         "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Senior Software Engineer package, including base, bonus, equity, and review cycle?",
         "valueAnchor": "Based on the scope of Senior Software Engineer and my fit around TypeScript, API, engineer, product, I would like to calibrate toward the stronger end of the range if the team sees the level match. My research indicates the TW midpoint for this level is around NTD 70,000 (monthly)."
-      },
-      "storyHooks": [
-        {
-          "id": "story-1",
-          "theme": "frontend product execution",
-          "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
-          "relevance": 1
-        },
-        {
-          "id": "story-2",
-          "theme": "data-heavy product decisions",
-          "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
-          "relevance": 1
-        },
-        {
-          "id": "story-3",
-          "theme": "systems and API collaboration",
-          "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
-          "relevance": 1
-        }
-      ],
-      "llm": null
-    },
-    {
-      "jobKey": "url:https://www.tokyodev.com/companies/tokuty/jobs/full-stack-engineer",
-      "company": "Tokuty",
-      "title": "Full Stack Engineer",
-      "score": 70,
-      "grade": "C",
-      "confidence": "low",
-      "decision": "pursue selectively",
-      "thesis": "Full Stack Engineer at Tokuty is pursue selectively because the snapshot score is 70, with 6 profile/role keyword hits and 0 external evidence item(s).",
-      "evidence": {
-        "keywordHits": [
-          "Frontend Engineer",
-          "React",
-          "design system",
-          "React",
-          "Frontend Engineer",
-          "Full Stack Engineer"
-        ],
-        "keywordMisses": [],
-        "researchSignals": [],
-        "evidenceCount": 0,
-        "compensationLeverage": "low"
-      },
-      "concerns": [
-        "External company evidence is thin; run deep research with a search API."
-      ],
-      "interviewStrategy": [
-        "Ask why the role is open and what success means in the first 90 days.",
-        "Probe team ownership, roadmap pressure, and cross-functional interfaces."
-      ],
-      "cvStrategy": [
-        "Lead with proof around: Frontend Engineer, React, design system, React, Frontend Engineer, Full Stack Engineer.",
-        "Use story story-1: frontend product execution.",
-        "Use story story-2: data-heavy product decisions.",
-        "Use story story-3: systems and API collaboration."
-      ],
-      "compensationStrategy": {
-        "leverage": "low",
-        "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Full Stack Engineer package, including base, bonus, equity, and review cycle?",
-        "valueAnchor": "Based on the scope of Full Stack Engineer and my fit around React, design system, engineer, product, I would like to calibrate toward the stronger end of the range if the team sees the level match. My research indicates the GLOBAL midpoint for this level is around USD 90,000 (annual)."
       },
       "storyHooks": [
         {
@@ -1122,6 +909,219 @@ window.CV_CAREER_OPS_DEEP_FIT = {
           "theme": "systems and API collaboration",
           "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
           "relevance": 0
+        }
+      ],
+      "llm": null
+    },
+    {
+      "jobKey": "url:https://www.tokyodev.com/companies/moneyforward/jobs/lead-backend-engineer-digital-bank",
+      "company": "Money Forward",
+      "title": "Lead Backend Engineer, Digital Bank",
+      "score": 69,
+      "grade": "C",
+      "confidence": "medium",
+      "decision": "hold / compare",
+      "thesis": "Lead Backend Engineer, Digital Bank at Money Forward is hold / compare because the snapshot score is 69, with 3 profile/role keyword hits and 4 external evidence item(s).",
+      "evidence": {
+        "keywordHits": [
+          "Frontend Engineer",
+          "API",
+          "Frontend Engineer"
+        ],
+        "keywordMisses": [
+          "kotlin",
+          "aws",
+          "docker",
+          "rest",
+          "agents"
+        ],
+        "researchSignals": [
+          "AI / data / platform signal",
+          "growth or funding signal",
+          "remote or hybrid signal"
+        ],
+        "evidenceCount": 4,
+        "compensationLeverage": "medium"
+      },
+      "concerns": [
+        "Profile keyword coverage is weaker than the target role language."
+      ],
+      "interviewStrategy": [
+        "Ask why the role is open and what success means in the first 90 days.",
+        "Probe team ownership, roadmap pressure, and cross-functional interfaces.",
+        "What business unit owns the Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka role?",
+        "What measurable outcomes would this team expect in the first 90 days?",
+        "What recent company/product signals change the risk or upside?"
+      ],
+      "cvStrategy": [
+        "Lead with proof around: Frontend Engineer, API, Frontend Engineer.",
+        "Use story story-1: frontend product execution.",
+        "Use story story-2: data-heavy product decisions.",
+        "Use story story-3: systems and API collaboration."
+      ],
+      "compensationStrategy": {
+        "leverage": "medium",
+        "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka package, including base, bonus, equity, and review cycle?",
+        "valueAnchor": "Based on the scope of Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka and my fit around TypeScript, React, Next.js, engineer, I would like to calibrate toward the stronger end of the range if the team sees the level match. My research indicates the GLOBAL midpoint for this level is around USD 90,000 (annual)."
+      },
+      "storyHooks": [
+        {
+          "id": "story-1",
+          "theme": "frontend product execution",
+          "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
+          "relevance": 0
+        },
+        {
+          "id": "story-2",
+          "theme": "data-heavy product decisions",
+          "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
+          "relevance": 0
+        },
+        {
+          "id": "story-3",
+          "theme": "systems and API collaboration",
+          "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
+          "relevance": 0
+        }
+      ],
+      "llm": null
+    },
+    {
+      "jobKey": "url:https://www.tokyodev.com/companies/moneyforward/jobs/infrastructure-engineer-sre-aws",
+      "company": "Money Forward",
+      "title": "Infrastructure Engineer (SRE-AWS)",
+      "score": 69,
+      "grade": "C",
+      "confidence": "medium",
+      "decision": "hold / compare",
+      "thesis": "Infrastructure Engineer (SRE-AWS) at Money Forward is hold / compare because the snapshot score is 69, with 5 profile/role keyword hits and 4 external evidence item(s).",
+      "evidence": {
+        "keywordHits": [
+          "TypeScript",
+          "React",
+          "Performance Optimization",
+          "TypeScript",
+          "React"
+        ],
+        "keywordMisses": [
+          "kotlin",
+          "mysql",
+          "aws",
+          "docker",
+          "kubernetes",
+          "terraform",
+          "operations"
+        ],
+        "researchSignals": [
+          "AI / data / platform signal",
+          "growth or funding signal",
+          "remote or hybrid signal"
+        ],
+        "evidenceCount": 4,
+        "compensationLeverage": "medium"
+      },
+      "concerns": [
+        "Profile keyword coverage is weaker than the target role language."
+      ],
+      "interviewStrategy": [
+        "Ask why the role is open and what success means in the first 90 days.",
+        "Probe team ownership, roadmap pressure, and cross-functional interfaces.",
+        "What business unit owns the Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka role?",
+        "What measurable outcomes would this team expect in the first 90 days?",
+        "What recent company/product signals change the risk or upside?"
+      ],
+      "cvStrategy": [
+        "Lead with proof around: TypeScript, React, Performance Optimization, TypeScript, React.",
+        "Use story story-1: frontend product execution.",
+        "Use story story-2: data-heavy product decisions.",
+        "Use story story-3: systems and API collaboration."
+      ],
+      "compensationStrategy": {
+        "leverage": "medium",
+        "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka package, including base, bonus, equity, and review cycle?",
+        "valueAnchor": "Based on the scope of Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka and my fit around TypeScript, React, Next.js, engineer, I would like to calibrate toward the stronger end of the range if the team sees the level match. My research indicates the GLOBAL midpoint for this level is around USD 90,000 (annual)."
+      },
+      "storyHooks": [
+        {
+          "id": "story-1",
+          "theme": "frontend product execution",
+          "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
+          "relevance": 2
+        },
+        {
+          "id": "story-2",
+          "theme": "data-heavy product decisions",
+          "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
+          "relevance": 2
+        },
+        {
+          "id": "story-3",
+          "theme": "systems and API collaboration",
+          "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
+          "relevance": 2
+        }
+      ],
+      "llm": null
+    },
+    {
+      "jobKey": "url:https://www.tokyodev.com/companies/tokuty/jobs/full-stack-engineer",
+      "company": "Tokuty",
+      "title": "Full Stack Engineer",
+      "score": 69,
+      "grade": "C",
+      "confidence": "low",
+      "decision": "hold / compare",
+      "thesis": "Full Stack Engineer at Tokuty is hold / compare because the snapshot score is 69, with 6 profile/role keyword hits and 0 external evidence item(s).",
+      "evidence": {
+        "keywordHits": [
+          "Frontend Engineer",
+          "React",
+          "design system",
+          "React",
+          "Frontend Engineer",
+          "Full Stack Engineer"
+        ],
+        "keywordMisses": [],
+        "researchSignals": [],
+        "evidenceCount": 0,
+        "compensationLeverage": "low"
+      },
+      "concerns": [
+        "External company evidence is thin; run deep research with a search API."
+      ],
+      "interviewStrategy": [
+        "Ask why the role is open and what success means in the first 90 days.",
+        "Probe team ownership, roadmap pressure, and cross-functional interfaces."
+      ],
+      "cvStrategy": [
+        "Lead with proof around: Frontend Engineer, React, design system, React, Frontend Engineer, Full Stack Engineer.",
+        "Use story story-1: frontend product execution.",
+        "Use story story-2: data-heavy product decisions.",
+        "Use story story-3: systems and API collaboration."
+      ],
+      "compensationStrategy": {
+        "leverage": "low",
+        "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Full Stack Engineer package, including base, bonus, equity, and review cycle?",
+        "valueAnchor": "Based on the scope of Full Stack Engineer and my fit around React, design system, engineer, product, I would like to calibrate toward the stronger end of the range if the team sees the level match. My research indicates the GLOBAL midpoint for this level is around USD 90,000 (annual)."
+      },
+      "storyHooks": [
+        {
+          "id": "story-1",
+          "theme": "frontend product execution",
+          "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
+          "relevance": 1
+        },
+        {
+          "id": "story-2",
+          "theme": "data-heavy product decisions",
+          "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
+          "relevance": 1
+        },
+        {
+          "id": "story-3",
+          "theme": "systems and API collaboration",
+          "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
+          "relevance": 1
         }
       ],
       "llm": null
@@ -2093,20 +2093,6 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "layer": "B"
     },
     {
-      "jobKey": "url:https://jobs.coebank.org/job/paris-data-%26-bi-engineer/1342367455/",
-      "company": "COEBank SuccessFactors Data & BI Engineer",
-      "title": "Data & BI Engineer Job Details | CEB",
-      "score": 40,
-      "grade": "F",
-      "roleFit": 45,
-      "url": "https://jobs.coebank.org/job/Paris-Data-%26-BI-Engineer/1342367455/",
-      "location": "",
-      "keywordHits": [],
-      "keywordMisses": [],
-      "decision": "skip unless strategic",
-      "layer": "B"
-    },
-    {
       "jobKey": "url:https://developer.nvidia.com/aerial",
       "company": "NVIDIA Developer",
       "title": "NVIDIA Aerial",
@@ -2247,20 +2233,6 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "layer": "B"
     },
     {
-      "jobKey": "url:https://nvidia.wd5.myworkdayjobs.com/job/taiwan-taipei/test-development-engineer---datacenter-system-software_jr2016293",
-      "company": "NVIDIA Workday",
-      "title": "Test Development Engineer - DataCenter System Software",
-      "score": 37,
-      "grade": "F",
-      "roleFit": 45,
-      "url": "https://nvidia.wd5.myworkdayjobs.com/job/Taiwan-Taipei/Test-Development-Engineer---DataCenter-System-Software_JR2016293",
-      "location": "Taiwan, Taipei",
-      "keywordHits": [],
-      "keywordMisses": [],
-      "decision": "skip unless strategic",
-      "layer": "B"
-    },
-    {
       "jobKey": "url:https://nvidia.wd5.myworkdayjobs.com/job/taiwan-hsinchu/product-development-lab-engineer_jr2016054",
       "company": "NVIDIA Workday",
       "title": "Product Development Lab Engineer",
@@ -2283,6 +2255,20 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "roleFit": 45,
       "url": "https://nvidia.wd5.myworkdayjobs.com/job/Taiwan-Hsinchu/Product-Development-Engineer_JR2017138",
       "location": "Taiwan, Hsinchu",
+      "keywordHits": [],
+      "keywordMisses": [],
+      "decision": "skip unless strategic",
+      "layer": "B"
+    },
+    {
+      "jobKey": "url:https://jobs.coebank.org/job/paris-data-%26-bi-engineer/1342367455/",
+      "company": "COEBank SuccessFactors Data & BI Engineer",
+      "title": "Data & BI Engineer Job Details | CEB",
+      "score": 37,
+      "grade": "F",
+      "roleFit": 45,
+      "url": "https://jobs.coebank.org/job/Paris-Data-%26-BI-Engineer/1342367455/",
+      "location": "",
       "keywordHits": [],
       "keywordMisses": [],
       "decision": "skip unless strategic",
@@ -2343,6 +2329,20 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "keywordMisses": [],
       "decision": "skip unless strategic",
       "layer": "B"
+    },
+    {
+      "jobKey": "url:https://nvidia.wd5.myworkdayjobs.com/job/taiwan-hsinchu/system-level-product-development-engineer_jr2015770",
+      "company": "NVIDIA Workday",
+      "title": "Senior System Level Product Development Engineer",
+      "score": 36,
+      "grade": "F",
+      "roleFit": 45,
+      "url": "https://nvidia.wd5.myworkdayjobs.com/job/Taiwan-Hsinchu/System-Level-Product-Development-Engineer_JR2015770",
+      "location": "Taiwan, Hsinchu",
+      "keywordHits": [],
+      "keywordMisses": [],
+      "decision": "skip unless strategic",
+      "layer": "B"
     }
   ],
   "layerC": [
@@ -2365,46 +2365,6 @@ window.CV_CAREER_OPS_DEEP_FIT = {
         "sql",
         "aws",
         "azure"
-      ],
-      "layer": "C"
-    },
-    {
-      "jobKey": "url:https://www.tokyodev.com/companies/moneyforward/jobs/security-specialist-product-security-ciso-office-tokyo",
-      "company": "Money Forward",
-      "title": "Security Specialist (Product Security), CISO Office, Tokyo",
-      "score": 62,
-      "grade": "C",
-      "roleFit": 68,
-      "url": "https://www.tokyodev.com/companies/moneyforward/jobs/security-specialist-product-security-ciso-office-tokyo",
-      "location": "Minato-ku, Tokyo, JP",
-      "keywordHits": [],
-      "topGap": "aws",
-      "mainGaps": [
-        "aws",
-        "gcp",
-        "azure",
-        "docker"
-      ],
-      "layer": "C"
-    },
-    {
-      "jobKey": "url:https://www.tokyodev.com/companies/paypay/jobs/cloud-platform-engineer-db-specialist",
-      "company": "PayPay",
-      "title": "Cloud Platform Engineer (DB Specialist)",
-      "score": 62,
-      "grade": "C",
-      "roleFit": 68,
-      "url": "https://www.tokyodev.com/companies/paypay/jobs/cloud-platform-engineer-db-specialist",
-      "location": "Minato-ku, Tokyo, JP",
-      "keywordHits": [
-        "remote"
-      ],
-      "topGap": "python",
-      "mainGaps": [
-        "python",
-        "go",
-        "sql",
-        "mysql"
       ],
       "layer": "C"
     },
@@ -2588,6 +2548,46 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "layer": "C"
     },
     {
+      "jobKey": "url:https://www.tokyodev.com/companies/moneyforward/jobs/security-specialist-product-security-ciso-office-tokyo",
+      "company": "Money Forward",
+      "title": "Security Specialist (Product Security), CISO Office, Tokyo",
+      "score": 60,
+      "grade": "C",
+      "roleFit": 68,
+      "url": "https://www.tokyodev.com/companies/moneyforward/jobs/security-specialist-product-security-ciso-office-tokyo",
+      "location": "Minato-ku, Tokyo, JP",
+      "keywordHits": [],
+      "topGap": "aws",
+      "mainGaps": [
+        "aws",
+        "gcp",
+        "azure",
+        "docker"
+      ],
+      "layer": "C"
+    },
+    {
+      "jobKey": "url:https://www.tokyodev.com/companies/paypay/jobs/cloud-platform-engineer-db-specialist",
+      "company": "PayPay",
+      "title": "Cloud Platform Engineer (DB Specialist)",
+      "score": 60,
+      "grade": "C",
+      "roleFit": 68,
+      "url": "https://www.tokyodev.com/companies/paypay/jobs/cloud-platform-engineer-db-specialist",
+      "location": "Minato-ku, Tokyo, JP",
+      "keywordHits": [
+        "remote"
+      ],
+      "topGap": "python",
+      "mainGaps": [
+        "python",
+        "go",
+        "sql",
+        "mysql"
+      ],
+      "layer": "C"
+    },
+    {
       "jobKey": "url:https://jobs.lever.co/gogolook/6bc7a6c3-1e8d-4390-9837-c3af970db9b0",
       "company": "Gogolook",
       "title": "Design Assistant 設計助理 (Roo)",
@@ -2723,25 +2723,6 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       ],
       "topGap": "",
       "mainGaps": [],
-      "layer": "C"
-    },
-    {
-      "jobKey": "url:https://www.tokyodev.com/companies/mantra/jobs/backend-engineer-langaku",
-      "company": "Mantra",
-      "title": "Backend Engineer (Langaku)",
-      "score": 59,
-      "grade": "C",
-      "roleFit": 68,
-      "url": "https://www.tokyodev.com/companies/mantra/jobs/backend-engineer-langaku",
-      "location": "Bunkyo City, Tokyo, JP",
-      "keywordHits": [],
-      "topGap": "python",
-      "mainGaps": [
-        "python",
-        "swift",
-        "aws",
-        "gcp"
-      ],
       "layer": "C"
     },
     {
@@ -2883,6 +2864,23 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "keywordHits": [],
       "topGap": "operations",
       "mainGaps": [
+        "operations"
+      ],
+      "layer": "C"
+    },
+    {
+      "jobKey": "url:https://intel.wd1.myworkdayjobs.com/external/job/taiwan-taipei/system-lab-ai-solution-graduate-intern_jr0283327",
+      "company": "Intel Workday Taiwan",
+      "title": "System Lab AI Solution Graduate Intern",
+      "score": 57,
+      "grade": "D",
+      "roleFit": 68,
+      "url": "https://intel.wd1.myworkdayjobs.com/External/job/Taiwan-Taipei/System-Lab-AI-Solution-Graduate-Intern_JR0283327",
+      "location": "Taiwan, Taipei",
+      "keywordHits": [],
+      "topGap": "machine learning",
+      "mainGaps": [
+        "machine learning",
         "operations"
       ],
       "layer": "C"
@@ -3201,89 +3199,6 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "llm": null
     },
     {
-      "jobKey": "url:https://www.tokyodev.com/companies/moneyforward/jobs/product-reliability-engineer-cre-money-forward-cloud-fukuoka",
-      "company": "Money Forward",
-      "title": "Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka",
-      "score": 75,
-      "grade": "B",
-      "confidence": "medium",
-      "decision": "pursue selectively",
-      "thesis": "Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka at Money Forward is pursue selectively because the snapshot score is 75, with 6 profile/role keyword hits and 4 external evidence item(s).",
-      "evidence": {
-        "keywordHits": [
-          "TypeScript",
-          "React",
-          "Next.js",
-          "API",
-          "TypeScript",
-          "React"
-        ],
-        "keywordMisses": [
-          "java",
-          "swift",
-          "kotlin",
-          "mysql",
-          "firebase",
-          "aws",
-          "gcp",
-          "docker",
-          "terraform",
-          "rest",
-          "agents",
-          "growth"
-        ],
-        "researchSignals": [
-          "AI / data / platform signal",
-          "growth or funding signal",
-          "remote or hybrid signal"
-        ],
-        "evidenceCount": 4,
-        "compensationLeverage": "medium"
-      },
-      "concerns": [
-        "Profile keyword coverage is weaker than the target role language."
-      ],
-      "interviewStrategy": [
-        "Ask why the role is open and what success means in the first 90 days.",
-        "Probe team ownership, roadmap pressure, and cross-functional interfaces.",
-        "What business unit owns the Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka role?",
-        "What measurable outcomes would this team expect in the first 90 days?",
-        "What recent company/product signals change the risk or upside?"
-      ],
-      "cvStrategy": [
-        "Lead with proof around: TypeScript, React, Next.js, API, TypeScript, React.",
-        "Use story story-1: frontend product execution.",
-        "Use story story-2: data-heavy product decisions.",
-        "Use story story-3: systems and API collaboration."
-      ],
-      "compensationStrategy": {
-        "leverage": "medium",
-        "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka package, including base, bonus, equity, and review cycle?",
-        "valueAnchor": "Based on the scope of Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka and my fit around TypeScript, React, Next.js, engineer, I would like to calibrate toward the stronger end of the range if the team sees the level match. My research indicates the GLOBAL midpoint for this level is around USD 90,000 (annual)."
-      },
-      "storyHooks": [
-        {
-          "id": "story-1",
-          "theme": "frontend product execution",
-          "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
-          "relevance": 3
-        },
-        {
-          "id": "story-2",
-          "theme": "data-heavy product decisions",
-          "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
-          "relevance": 3
-        },
-        {
-          "id": "story-3",
-          "theme": "systems and API collaboration",
-          "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
-          "relevance": 3
-        }
-      ],
-      "llm": null
-    },
-    {
       "jobKey": "url:https://micron.wd1.myworkdayjobs.com/external/job/taichung---aatt-taiwan/senior-full-stack-software-engineer_jr101324",
       "company": "Micron Workday",
       "title": "Senior Full Stack Software Engineer",
@@ -3445,6 +3360,89 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "llm": null
     },
     {
+      "jobKey": "url:https://www.tokyodev.com/companies/moneyforward/jobs/product-reliability-engineer-cre-money-forward-cloud-fukuoka",
+      "company": "Money Forward",
+      "title": "Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka",
+      "score": 73,
+      "grade": "B",
+      "confidence": "medium",
+      "decision": "pursue selectively",
+      "thesis": "Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka at Money Forward is pursue selectively because the snapshot score is 73, with 6 profile/role keyword hits and 4 external evidence item(s).",
+      "evidence": {
+        "keywordHits": [
+          "TypeScript",
+          "React",
+          "Next.js",
+          "API",
+          "TypeScript",
+          "React"
+        ],
+        "keywordMisses": [
+          "java",
+          "swift",
+          "kotlin",
+          "mysql",
+          "firebase",
+          "aws",
+          "gcp",
+          "docker",
+          "terraform",
+          "rest",
+          "agents",
+          "growth"
+        ],
+        "researchSignals": [
+          "AI / data / platform signal",
+          "growth or funding signal",
+          "remote or hybrid signal"
+        ],
+        "evidenceCount": 4,
+        "compensationLeverage": "medium"
+      },
+      "concerns": [
+        "Profile keyword coverage is weaker than the target role language."
+      ],
+      "interviewStrategy": [
+        "Ask why the role is open and what success means in the first 90 days.",
+        "Probe team ownership, roadmap pressure, and cross-functional interfaces.",
+        "What business unit owns the Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka role?",
+        "What measurable outcomes would this team expect in the first 90 days?",
+        "What recent company/product signals change the risk or upside?"
+      ],
+      "cvStrategy": [
+        "Lead with proof around: TypeScript, React, Next.js, API, TypeScript, React.",
+        "Use story story-1: frontend product execution.",
+        "Use story story-2: data-heavy product decisions.",
+        "Use story story-3: systems and API collaboration."
+      ],
+      "compensationStrategy": {
+        "leverage": "medium",
+        "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka package, including base, bonus, equity, and review cycle?",
+        "valueAnchor": "Based on the scope of Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka and my fit around TypeScript, React, Next.js, engineer, I would like to calibrate toward the stronger end of the range if the team sees the level match. My research indicates the GLOBAL midpoint for this level is around USD 90,000 (annual)."
+      },
+      "storyHooks": [
+        {
+          "id": "story-1",
+          "theme": "frontend product execution",
+          "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
+          "relevance": 3
+        },
+        {
+          "id": "story-2",
+          "theme": "data-heavy product decisions",
+          "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
+          "relevance": 3
+        },
+        {
+          "id": "story-3",
+          "theme": "systems and API collaboration",
+          "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
+          "relevance": 3
+        }
+      ],
+      "llm": null
+    },
+    {
       "jobKey": "url:https://japan-dev.com/jobs/artytech/artytech-tech-lead--cto-candidate-full-stack-25pe6i",
       "company": "Artytech",
       "title": "Tech Lead / CTO Candidate (Full-stack)",
@@ -3519,156 +3517,6 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "llm": null
     },
     {
-      "jobKey": "url:https://www.tokyodev.com/companies/moneyforward/jobs/lead-backend-engineer-digital-bank",
-      "company": "Money Forward",
-      "title": "Lead Backend Engineer, Digital Bank",
-      "score": 71,
-      "grade": "C",
-      "confidence": "medium",
-      "decision": "pursue selectively",
-      "thesis": "Lead Backend Engineer, Digital Bank at Money Forward is pursue selectively because the snapshot score is 71, with 3 profile/role keyword hits and 4 external evidence item(s).",
-      "evidence": {
-        "keywordHits": [
-          "Frontend Engineer",
-          "API",
-          "Frontend Engineer"
-        ],
-        "keywordMisses": [
-          "kotlin",
-          "aws",
-          "docker",
-          "rest",
-          "agents"
-        ],
-        "researchSignals": [
-          "AI / data / platform signal",
-          "growth or funding signal",
-          "remote or hybrid signal"
-        ],
-        "evidenceCount": 4,
-        "compensationLeverage": "medium"
-      },
-      "concerns": [
-        "Profile keyword coverage is weaker than the target role language."
-      ],
-      "interviewStrategy": [
-        "Ask why the role is open and what success means in the first 90 days.",
-        "Probe team ownership, roadmap pressure, and cross-functional interfaces.",
-        "What business unit owns the Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka role?",
-        "What measurable outcomes would this team expect in the first 90 days?",
-        "What recent company/product signals change the risk or upside?"
-      ],
-      "cvStrategy": [
-        "Lead with proof around: Frontend Engineer, API, Frontend Engineer.",
-        "Use story story-1: frontend product execution.",
-        "Use story story-2: data-heavy product decisions.",
-        "Use story story-3: systems and API collaboration."
-      ],
-      "compensationStrategy": {
-        "leverage": "medium",
-        "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka package, including base, bonus, equity, and review cycle?",
-        "valueAnchor": "Based on the scope of Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka and my fit around TypeScript, React, Next.js, engineer, I would like to calibrate toward the stronger end of the range if the team sees the level match. My research indicates the GLOBAL midpoint for this level is around USD 90,000 (annual)."
-      },
-      "storyHooks": [
-        {
-          "id": "story-1",
-          "theme": "frontend product execution",
-          "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
-          "relevance": 0
-        },
-        {
-          "id": "story-2",
-          "theme": "data-heavy product decisions",
-          "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
-          "relevance": 0
-        },
-        {
-          "id": "story-3",
-          "theme": "systems and API collaboration",
-          "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
-          "relevance": 0
-        }
-      ],
-      "llm": null
-    },
-    {
-      "jobKey": "url:https://www.tokyodev.com/companies/moneyforward/jobs/infrastructure-engineer-sre-aws",
-      "company": "Money Forward",
-      "title": "Infrastructure Engineer (SRE-AWS)",
-      "score": 71,
-      "grade": "C",
-      "confidence": "medium",
-      "decision": "pursue selectively",
-      "thesis": "Infrastructure Engineer (SRE-AWS) at Money Forward is pursue selectively because the snapshot score is 71, with 5 profile/role keyword hits and 4 external evidence item(s).",
-      "evidence": {
-        "keywordHits": [
-          "TypeScript",
-          "React",
-          "Performance Optimization",
-          "TypeScript",
-          "React"
-        ],
-        "keywordMisses": [
-          "kotlin",
-          "mysql",
-          "aws",
-          "docker",
-          "kubernetes",
-          "terraform",
-          "operations"
-        ],
-        "researchSignals": [
-          "AI / data / platform signal",
-          "growth or funding signal",
-          "remote or hybrid signal"
-        ],
-        "evidenceCount": 4,
-        "compensationLeverage": "medium"
-      },
-      "concerns": [
-        "Profile keyword coverage is weaker than the target role language."
-      ],
-      "interviewStrategy": [
-        "Ask why the role is open and what success means in the first 90 days.",
-        "Probe team ownership, roadmap pressure, and cross-functional interfaces.",
-        "What business unit owns the Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka role?",
-        "What measurable outcomes would this team expect in the first 90 days?",
-        "What recent company/product signals change the risk or upside?"
-      ],
-      "cvStrategy": [
-        "Lead with proof around: TypeScript, React, Performance Optimization, TypeScript, React.",
-        "Use story story-1: frontend product execution.",
-        "Use story story-2: data-heavy product decisions.",
-        "Use story story-3: systems and API collaboration."
-      ],
-      "compensationStrategy": {
-        "leverage": "medium",
-        "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka package, including base, bonus, equity, and review cycle?",
-        "valueAnchor": "Based on the scope of Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka and my fit around TypeScript, React, Next.js, engineer, I would like to calibrate toward the stronger end of the range if the team sees the level match. My research indicates the GLOBAL midpoint for this level is around USD 90,000 (annual)."
-      },
-      "storyHooks": [
-        {
-          "id": "story-1",
-          "theme": "frontend product execution",
-          "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
-          "relevance": 2
-        },
-        {
-          "id": "story-2",
-          "theme": "data-heavy product decisions",
-          "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
-          "relevance": 2
-        },
-        {
-          "id": "story-3",
-          "theme": "systems and API collaboration",
-          "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
-          "relevance": 2
-        }
-      ],
-      "llm": null
-    },
-    {
       "jobKey": "url:https://cardlytics.wd5.myworkdayjobs.com/cardlyticsexternalcareersite/job/taipei-city/senior-software-engineer_jr100384",
       "company": "Cardlytics Workday Taiwan",
       "title": "Senior Software Engineer",
@@ -3718,69 +3566,6 @@ window.CV_CAREER_OPS_DEEP_FIT = {
         "leverage": "low",
         "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Senior Software Engineer package, including base, bonus, equity, and review cycle?",
         "valueAnchor": "Based on the scope of Senior Software Engineer and my fit around TypeScript, API, engineer, product, I would like to calibrate toward the stronger end of the range if the team sees the level match. My research indicates the TW midpoint for this level is around NTD 70,000 (monthly)."
-      },
-      "storyHooks": [
-        {
-          "id": "story-1",
-          "theme": "frontend product execution",
-          "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
-          "relevance": 1
-        },
-        {
-          "id": "story-2",
-          "theme": "data-heavy product decisions",
-          "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
-          "relevance": 1
-        },
-        {
-          "id": "story-3",
-          "theme": "systems and API collaboration",
-          "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
-          "relevance": 1
-        }
-      ],
-      "llm": null
-    },
-    {
-      "jobKey": "url:https://www.tokyodev.com/companies/tokuty/jobs/full-stack-engineer",
-      "company": "Tokuty",
-      "title": "Full Stack Engineer",
-      "score": 70,
-      "grade": "C",
-      "confidence": "low",
-      "decision": "pursue selectively",
-      "thesis": "Full Stack Engineer at Tokuty is pursue selectively because the snapshot score is 70, with 6 profile/role keyword hits and 0 external evidence item(s).",
-      "evidence": {
-        "keywordHits": [
-          "Frontend Engineer",
-          "React",
-          "design system",
-          "React",
-          "Frontend Engineer",
-          "Full Stack Engineer"
-        ],
-        "keywordMisses": [],
-        "researchSignals": [],
-        "evidenceCount": 0,
-        "compensationLeverage": "low"
-      },
-      "concerns": [
-        "External company evidence is thin; run deep research with a search API."
-      ],
-      "interviewStrategy": [
-        "Ask why the role is open and what success means in the first 90 days.",
-        "Probe team ownership, roadmap pressure, and cross-functional interfaces."
-      ],
-      "cvStrategy": [
-        "Lead with proof around: Frontend Engineer, React, design system, React, Frontend Engineer, Full Stack Engineer.",
-        "Use story story-1: frontend product execution.",
-        "Use story story-2: data-heavy product decisions.",
-        "Use story story-3: systems and API collaboration."
-      ],
-      "compensationStrategy": {
-        "leverage": "low",
-        "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Full Stack Engineer package, including base, bonus, equity, and review cycle?",
-        "valueAnchor": "Based on the scope of Full Stack Engineer and my fit around React, design system, engineer, product, I would like to calibrate toward the stronger end of the range if the team sees the level match. My research indicates the GLOBAL midpoint for this level is around USD 90,000 (annual)."
       },
       "storyHooks": [
         {
@@ -4002,6 +3787,219 @@ window.CV_CAREER_OPS_DEEP_FIT = {
           "theme": "systems and API collaboration",
           "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
           "relevance": 0
+        }
+      ],
+      "llm": null
+    },
+    {
+      "jobKey": "url:https://www.tokyodev.com/companies/moneyforward/jobs/lead-backend-engineer-digital-bank",
+      "company": "Money Forward",
+      "title": "Lead Backend Engineer, Digital Bank",
+      "score": 69,
+      "grade": "C",
+      "confidence": "medium",
+      "decision": "hold / compare",
+      "thesis": "Lead Backend Engineer, Digital Bank at Money Forward is hold / compare because the snapshot score is 69, with 3 profile/role keyword hits and 4 external evidence item(s).",
+      "evidence": {
+        "keywordHits": [
+          "Frontend Engineer",
+          "API",
+          "Frontend Engineer"
+        ],
+        "keywordMisses": [
+          "kotlin",
+          "aws",
+          "docker",
+          "rest",
+          "agents"
+        ],
+        "researchSignals": [
+          "AI / data / platform signal",
+          "growth or funding signal",
+          "remote or hybrid signal"
+        ],
+        "evidenceCount": 4,
+        "compensationLeverage": "medium"
+      },
+      "concerns": [
+        "Profile keyword coverage is weaker than the target role language."
+      ],
+      "interviewStrategy": [
+        "Ask why the role is open and what success means in the first 90 days.",
+        "Probe team ownership, roadmap pressure, and cross-functional interfaces.",
+        "What business unit owns the Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka role?",
+        "What measurable outcomes would this team expect in the first 90 days?",
+        "What recent company/product signals change the risk or upside?"
+      ],
+      "cvStrategy": [
+        "Lead with proof around: Frontend Engineer, API, Frontend Engineer.",
+        "Use story story-1: frontend product execution.",
+        "Use story story-2: data-heavy product decisions.",
+        "Use story story-3: systems and API collaboration."
+      ],
+      "compensationStrategy": {
+        "leverage": "medium",
+        "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka package, including base, bonus, equity, and review cycle?",
+        "valueAnchor": "Based on the scope of Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka and my fit around TypeScript, React, Next.js, engineer, I would like to calibrate toward the stronger end of the range if the team sees the level match. My research indicates the GLOBAL midpoint for this level is around USD 90,000 (annual)."
+      },
+      "storyHooks": [
+        {
+          "id": "story-1",
+          "theme": "frontend product execution",
+          "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
+          "relevance": 0
+        },
+        {
+          "id": "story-2",
+          "theme": "data-heavy product decisions",
+          "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
+          "relevance": 0
+        },
+        {
+          "id": "story-3",
+          "theme": "systems and API collaboration",
+          "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
+          "relevance": 0
+        }
+      ],
+      "llm": null
+    },
+    {
+      "jobKey": "url:https://www.tokyodev.com/companies/moneyforward/jobs/infrastructure-engineer-sre-aws",
+      "company": "Money Forward",
+      "title": "Infrastructure Engineer (SRE-AWS)",
+      "score": 69,
+      "grade": "C",
+      "confidence": "medium",
+      "decision": "hold / compare",
+      "thesis": "Infrastructure Engineer (SRE-AWS) at Money Forward is hold / compare because the snapshot score is 69, with 5 profile/role keyword hits and 4 external evidence item(s).",
+      "evidence": {
+        "keywordHits": [
+          "TypeScript",
+          "React",
+          "Performance Optimization",
+          "TypeScript",
+          "React"
+        ],
+        "keywordMisses": [
+          "kotlin",
+          "mysql",
+          "aws",
+          "docker",
+          "kubernetes",
+          "terraform",
+          "operations"
+        ],
+        "researchSignals": [
+          "AI / data / platform signal",
+          "growth or funding signal",
+          "remote or hybrid signal"
+        ],
+        "evidenceCount": 4,
+        "compensationLeverage": "medium"
+      },
+      "concerns": [
+        "Profile keyword coverage is weaker than the target role language."
+      ],
+      "interviewStrategy": [
+        "Ask why the role is open and what success means in the first 90 days.",
+        "Probe team ownership, roadmap pressure, and cross-functional interfaces.",
+        "What business unit owns the Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka role?",
+        "What measurable outcomes would this team expect in the first 90 days?",
+        "What recent company/product signals change the risk or upside?"
+      ],
+      "cvStrategy": [
+        "Lead with proof around: TypeScript, React, Performance Optimization, TypeScript, React.",
+        "Use story story-1: frontend product execution.",
+        "Use story story-2: data-heavy product decisions.",
+        "Use story story-3: systems and API collaboration."
+      ],
+      "compensationStrategy": {
+        "leverage": "medium",
+        "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka package, including base, bonus, equity, and review cycle?",
+        "valueAnchor": "Based on the scope of Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka and my fit around TypeScript, React, Next.js, engineer, I would like to calibrate toward the stronger end of the range if the team sees the level match. My research indicates the GLOBAL midpoint for this level is around USD 90,000 (annual)."
+      },
+      "storyHooks": [
+        {
+          "id": "story-1",
+          "theme": "frontend product execution",
+          "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
+          "relevance": 2
+        },
+        {
+          "id": "story-2",
+          "theme": "data-heavy product decisions",
+          "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
+          "relevance": 2
+        },
+        {
+          "id": "story-3",
+          "theme": "systems and API collaboration",
+          "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
+          "relevance": 2
+        }
+      ],
+      "llm": null
+    },
+    {
+      "jobKey": "url:https://www.tokyodev.com/companies/tokuty/jobs/full-stack-engineer",
+      "company": "Tokuty",
+      "title": "Full Stack Engineer",
+      "score": 69,
+      "grade": "C",
+      "confidence": "low",
+      "decision": "hold / compare",
+      "thesis": "Full Stack Engineer at Tokuty is hold / compare because the snapshot score is 69, with 6 profile/role keyword hits and 0 external evidence item(s).",
+      "evidence": {
+        "keywordHits": [
+          "Frontend Engineer",
+          "React",
+          "design system",
+          "React",
+          "Frontend Engineer",
+          "Full Stack Engineer"
+        ],
+        "keywordMisses": [],
+        "researchSignals": [],
+        "evidenceCount": 0,
+        "compensationLeverage": "low"
+      },
+      "concerns": [
+        "External company evidence is thin; run deep research with a search API."
+      ],
+      "interviewStrategy": [
+        "Ask why the role is open and what success means in the first 90 days.",
+        "Probe team ownership, roadmap pressure, and cross-functional interfaces."
+      ],
+      "cvStrategy": [
+        "Lead with proof around: Frontend Engineer, React, design system, React, Frontend Engineer, Full Stack Engineer.",
+        "Use story story-1: frontend product execution.",
+        "Use story story-2: data-heavy product decisions.",
+        "Use story story-3: systems and API collaboration."
+      ],
+      "compensationStrategy": {
+        "leverage": "low",
+        "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Full Stack Engineer package, including base, bonus, equity, and review cycle?",
+        "valueAnchor": "Based on the scope of Full Stack Engineer and my fit around React, design system, engineer, product, I would like to calibrate toward the stronger end of the range if the team sees the level match. My research indicates the GLOBAL midpoint for this level is around USD 90,000 (annual)."
+      },
+      "storyHooks": [
+        {
+          "id": "story-1",
+          "theme": "frontend product execution",
+          "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
+          "relevance": 1
+        },
+        {
+          "id": "story-2",
+          "theme": "data-heavy product decisions",
+          "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
+          "relevance": 1
+        },
+        {
+          "id": "story-3",
+          "theme": "systems and API collaboration",
+          "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
+          "relevance": 1
         }
       ],
       "llm": null

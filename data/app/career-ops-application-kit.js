@@ -1,6 +1,6 @@
 window.CV_CAREER_OPS_APPLICATION_KIT = {
   "source": "career-ops-application-kit",
-  "generatedAt": "2026-05-16T23:18:53.874Z",
+  "generatedAt": "2026-05-17T23:21:25.280Z",
   "profileRole": "Frontend Engineer",
   "playbooks": [
     {
@@ -144,41 +144,6 @@ window.CV_CAREER_OPS_APPLICATION_KIT = {
       ]
     },
     {
-      "jobKey": "url:https://www.tokyodev.com/companies/moneyforward/jobs/product-reliability-engineer-cre-money-forward-cloud-fukuoka",
-      "title": "Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka",
-      "company": "Money Forward",
-      "score": "75/B",
-      "priority": "P1",
-      "applyChecklist": [
-        "Open the source URL and confirm the role is still active.",
-        "Generate or refresh the tailored ATS PDF from this job.",
-        "Mirror these keywords honestly: TypeScript, React, Next.js, engineer, product, graphql, node.js, JavaScript, CSS, Tailwind, Accessibility, Analytics",
-        "Do not overclaim missing areas: java, swift, kotlin, mysql, firebase, aws",
-        "Log status, recruiter/contact, and next follow-up date in the tracker."
-      ],
-      "outreachEmail": {
-        "subject": "Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka application - Money Forward",
-        "body": "Hi Money Forward team,\n\nI am Alex Chen, and I am interested in the Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.\n\nThe role stood out because it maps closely to my experience with TypeScript, React, Next.js, engineer, product.\n\nI would appreciate the chance to share how my experience can support the team. Thank you for your time.\n\nBest,\nAlex Chen"
-      },
-      "followUp": {
-        "timing": "3-5 business days after applying or the last recruiter interaction.",
-        "body": "Hi Money Forward team,\n\nI wanted to follow up on my application for the Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka role. I remain interested and would be glad to provide any additional context about my background.\n\nThank you again for your time.\n\nBest,\nAlex Chen"
-      },
-      "interviewPrep": [
-        "Prepare a 60-second story for why Money Forward and why Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka.",
-        "Prepare evidence for: TypeScript, React, Next.js, engineer, product, graphql.",
-        "Prepare one STAR story about execution under ambiguity.",
-        "Prepare one STAR story about collaboration and tradeoff decisions.",
-        "Prepare questions about team priorities, success metrics, and hiring timeline."
-      ],
-      "negotiationPrep": [
-        "Wait for a clear offer before anchoring compensation.",
-        "Ask for total compensation breakdown, work mode, title, level, review cycle, and start date.",
-        "Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.",
-        "Use competing priorities and role fit, not personal need, as the negotiation frame."
-      ]
-    },
-    {
       "jobKey": "url:https://micron.wd1.myworkdayjobs.com/external/job/taichung---aatt-taiwan/senior-full-stack-software-engineer_jr101324",
       "title": "Senior Full Stack Software Engineer",
       "company": "Micron Workday",
@@ -249,6 +214,41 @@ window.CV_CAREER_OPS_APPLICATION_KIT = {
       ]
     },
     {
+      "jobKey": "url:https://www.tokyodev.com/companies/moneyforward/jobs/product-reliability-engineer-cre-money-forward-cloud-fukuoka",
+      "title": "Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka",
+      "company": "Money Forward",
+      "score": "73/B",
+      "priority": "P1",
+      "applyChecklist": [
+        "Open the source URL and confirm the role is still active.",
+        "Generate or refresh the tailored ATS PDF from this job.",
+        "Mirror these keywords honestly: TypeScript, React, Next.js, engineer, product, graphql, node.js, JavaScript, CSS, Tailwind, Accessibility, Analytics",
+        "Do not overclaim missing areas: java, swift, kotlin, mysql, firebase, aws",
+        "Log status, recruiter/contact, and next follow-up date in the tracker."
+      ],
+      "outreachEmail": {
+        "subject": "Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka application - Money Forward",
+        "body": "Hi Money Forward team,\n\nI am Alex Chen, and I am interested in the Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.\n\nThe role stood out because it maps closely to my experience with TypeScript, React, Next.js, engineer, product.\n\nI would appreciate the chance to share how my experience can support the team. Thank you for your time.\n\nBest,\nAlex Chen"
+      },
+      "followUp": {
+        "timing": "3-5 business days after applying or the last recruiter interaction.",
+        "body": "Hi Money Forward team,\n\nI wanted to follow up on my application for the Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka role. I remain interested and would be glad to provide any additional context about my background.\n\nThank you again for your time.\n\nBest,\nAlex Chen"
+      },
+      "interviewPrep": [
+        "Prepare a 60-second story for why Money Forward and why Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka.",
+        "Prepare evidence for: TypeScript, React, Next.js, engineer, product, graphql.",
+        "Prepare one STAR story about execution under ambiguity.",
+        "Prepare one STAR story about collaboration and tradeoff decisions.",
+        "Prepare questions about team priorities, success metrics, and hiring timeline."
+      ],
+      "negotiationPrep": [
+        "Wait for a clear offer before anchoring compensation.",
+        "Ask for total compensation breakdown, work mode, title, level, review cycle, and start date.",
+        "Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.",
+        "Use competing priorities and role fit, not personal need, as the negotiation frame."
+      ]
+    },
+    {
       "jobKey": "url:https://japan-dev.com/jobs/artytech/artytech-tech-lead--cto-candidate-full-stack-25pe6i",
       "title": "Tech Lead / CTO Candidate (Full-stack)",
       "company": "Artytech",
@@ -272,76 +272,6 @@ window.CV_CAREER_OPS_APPLICATION_KIT = {
       "interviewPrep": [
         "Prepare a 60-second story for why Artytech and why Tech Lead / CTO Candidate (Full-stack).",
         "Prepare evidence for: JavaScript, React, CSS, engineer, product, graphql.",
-        "Prepare one STAR story about execution under ambiguity.",
-        "Prepare one STAR story about collaboration and tradeoff decisions.",
-        "Prepare questions about team priorities, success metrics, and hiring timeline."
-      ],
-      "negotiationPrep": [
-        "Wait for a clear offer before anchoring compensation.",
-        "Ask for total compensation breakdown, work mode, title, level, review cycle, and start date.",
-        "Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.",
-        "Use competing priorities and role fit, not personal need, as the negotiation frame."
-      ]
-    },
-    {
-      "jobKey": "url:https://www.tokyodev.com/companies/moneyforward/jobs/lead-backend-engineer-digital-bank",
-      "title": "Lead Backend Engineer, Digital Bank",
-      "company": "Money Forward",
-      "score": "71/C",
-      "priority": "P1",
-      "applyChecklist": [
-        "Open the source URL and confirm the role is still active.",
-        "Generate or refresh the tailored ATS PDF from this job.",
-        "Mirror these keywords honestly: API, engineer, product, data, JavaScript, TypeScript, React, Next.js, CSS, Tailwind, Accessibility, Analytics",
-        "Do not overclaim missing areas: kotlin, aws, docker, rest, agents",
-        "Log status, recruiter/contact, and next follow-up date in the tracker."
-      ],
-      "outreachEmail": {
-        "subject": "Lead Backend Engineer, Digital Bank application - Money Forward",
-        "body": "Hi Money Forward team,\n\nI am Alex Chen, and I am interested in the Lead Backend Engineer, Digital Bank role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.\n\nThe role stood out because it maps closely to my experience with API, engineer, product, data.\n\nI would appreciate the chance to share how my experience can support the team. Thank you for your time.\n\nBest,\nAlex Chen"
-      },
-      "followUp": {
-        "timing": "3-5 business days after applying or the last recruiter interaction.",
-        "body": "Hi Money Forward team,\n\nI wanted to follow up on my application for the Lead Backend Engineer, Digital Bank role. I remain interested and would be glad to provide any additional context about my background.\n\nThank you again for your time.\n\nBest,\nAlex Chen"
-      },
-      "interviewPrep": [
-        "Prepare a 60-second story for why Money Forward and why Lead Backend Engineer, Digital Bank.",
-        "Prepare evidence for: API, engineer, product, data.",
-        "Prepare one STAR story about execution under ambiguity.",
-        "Prepare one STAR story about collaboration and tradeoff decisions.",
-        "Prepare questions about team priorities, success metrics, and hiring timeline."
-      ],
-      "negotiationPrep": [
-        "Wait for a clear offer before anchoring compensation.",
-        "Ask for total compensation breakdown, work mode, title, level, review cycle, and start date.",
-        "Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.",
-        "Use competing priorities and role fit, not personal need, as the negotiation frame."
-      ]
-    },
-    {
-      "jobKey": "url:https://www.tokyodev.com/companies/moneyforward/jobs/infrastructure-engineer-sre-aws",
-      "title": "Infrastructure Engineer (SRE-AWS)",
-      "company": "Money Forward",
-      "score": "71/C",
-      "priority": "P1",
-      "applyChecklist": [
-        "Open the source URL and confirm the role is still active.",
-        "Generate or refresh the tailored ATS PDF from this job.",
-        "Mirror these keywords honestly: TypeScript, React, Performance Optimization, engineer, product, data, JavaScript, Next.js, CSS, Tailwind, Accessibility, Analytics",
-        "Do not overclaim missing areas: kotlin, mysql, aws, docker, kubernetes, terraform",
-        "Log status, recruiter/contact, and next follow-up date in the tracker."
-      ],
-      "outreachEmail": {
-        "subject": "Infrastructure Engineer (SRE-AWS) application - Money Forward",
-        "body": "Hi Money Forward team,\n\nI am Alex Chen, and I am interested in the Infrastructure Engineer (SRE-AWS) role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.\n\nThe role stood out because it maps closely to my experience with TypeScript, React, Performance Optimization, engineer, product.\n\nI would appreciate the chance to share how my experience can support the team. Thank you for your time.\n\nBest,\nAlex Chen"
-      },
-      "followUp": {
-        "timing": "3-5 business days after applying or the last recruiter interaction.",
-        "body": "Hi Money Forward team,\n\nI wanted to follow up on my application for the Infrastructure Engineer (SRE-AWS) role. I remain interested and would be glad to provide any additional context about my background.\n\nThank you again for your time.\n\nBest,\nAlex Chen"
-      },
-      "interviewPrep": [
-        "Prepare a 60-second story for why Money Forward and why Infrastructure Engineer (SRE-AWS).",
-        "Prepare evidence for: TypeScript, React, Performance Optimization, engineer, product, data.",
         "Prepare one STAR story about execution under ambiguity.",
         "Prepare one STAR story about collaboration and tradeoff decisions.",
         "Prepare questions about team priorities, success metrics, and hiring timeline."
@@ -389,29 +319,99 @@ window.CV_CAREER_OPS_APPLICATION_KIT = {
       ]
     },
     {
-      "jobKey": "url:https://www.tokyodev.com/companies/tokuty/jobs/full-stack-engineer",
-      "title": "Full Stack Engineer",
-      "company": "Tokuty",
-      "score": "70/C",
-      "priority": "P1",
+      "jobKey": "url:https://japan-dev.com/jobs/shizuku-ai/shizuku-ai-software-engineer-backend-zvv206",
+      "title": "Software Engineer, Backend",
+      "company": "Shizuku AI",
+      "score": "69/C",
+      "priority": "P2",
       "applyChecklist": [
         "Open the source URL and confirm the role is still active.",
         "Generate or refresh the tailored ATS PDF from this job.",
-        "Mirror these keywords honestly: React, design system, engineer, product, JavaScript, TypeScript, Next.js, CSS, Tailwind, Accessibility, Analytics, API",
-        "No major missing keyword cluster detected.",
+        "Mirror these keywords honestly: TypeScript, remote, engineer, product, data, JavaScript, React, Next.js, CSS, Tailwind, Accessibility, Analytics",
+        "Do not overclaim missing areas: python, swift, aws, llm",
         "Log status, recruiter/contact, and next follow-up date in the tracker."
       ],
       "outreachEmail": {
-        "subject": "Full Stack Engineer application - Tokuty",
-        "body": "Hi Tokuty team,\n\nI am Alex Chen, and I am interested in the Full Stack Engineer role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.\n\nThe role stood out because it maps closely to my experience with React, design system, engineer, product.\n\nI would appreciate the chance to share how my experience can support the team. Thank you for your time.\n\nBest,\nAlex Chen"
+        "subject": "Software Engineer, Backend application - Shizuku AI",
+        "body": "Hi Shizuku AI team,\n\nI am Alex Chen, and I am interested in the Software Engineer, Backend role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.\n\nThe role stood out because it maps closely to my experience with TypeScript, remote, engineer, product, data.\n\nI would appreciate the chance to share how my experience can support the team. Thank you for your time.\n\nBest,\nAlex Chen"
       },
       "followUp": {
         "timing": "3-5 business days after applying or the last recruiter interaction.",
-        "body": "Hi Tokuty team,\n\nI wanted to follow up on my application for the Full Stack Engineer role. I remain interested and would be glad to provide any additional context about my background.\n\nThank you again for your time.\n\nBest,\nAlex Chen"
+        "body": "Hi Shizuku AI team,\n\nI wanted to follow up on my application for the Software Engineer, Backend role. I remain interested and would be glad to provide any additional context about my background.\n\nThank you again for your time.\n\nBest,\nAlex Chen"
       },
       "interviewPrep": [
-        "Prepare a 60-second story for why Tokuty and why Full Stack Engineer.",
-        "Prepare evidence for: React, design system, engineer, product.",
+        "Prepare a 60-second story for why Shizuku AI and why Software Engineer, Backend.",
+        "Prepare evidence for: TypeScript, remote, engineer, product, data.",
+        "Prepare one STAR story about execution under ambiguity.",
+        "Prepare one STAR story about collaboration and tradeoff decisions.",
+        "Prepare questions about team priorities, success metrics, and hiring timeline."
+      ],
+      "negotiationPrep": [
+        "Wait for a clear offer before anchoring compensation.",
+        "Ask for total compensation breakdown, work mode, title, level, review cycle, and start date.",
+        "Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.",
+        "Use competing priorities and role fit, not personal need, as the negotiation frame."
+      ]
+    },
+    {
+      "jobKey": "url:https://japan-dev.com/jobs/axelspace/axelspace-earth-observation-data-scientist-9s0x5x",
+      "title": "Data Scientist / ML Engineer",
+      "company": "Axelspace",
+      "score": "69/C",
+      "priority": "P2",
+      "applyChecklist": [
+        "Open the source URL and confirm the role is still active.",
+        "Generate or refresh the tailored ATS PDF from this job.",
+        "Mirror these keywords honestly: Analytics, remote, engineer, product, data, JavaScript, TypeScript, React, Next.js, CSS, Tailwind, Accessibility",
+        "Do not overclaim missing areas: python, aws, docker, terraform, machine learning, deep learning",
+        "Log status, recruiter/contact, and next follow-up date in the tracker."
+      ],
+      "outreachEmail": {
+        "subject": "Data Scientist / ML Engineer application - Axelspace",
+        "body": "Hi Axelspace team,\n\nI am Alex Chen, and I am interested in the Data Scientist / ML Engineer role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.\n\nThe role stood out because it maps closely to my experience with Analytics, remote, engineer, product, data.\n\nI would appreciate the chance to share how my experience can support the team. Thank you for your time.\n\nBest,\nAlex Chen"
+      },
+      "followUp": {
+        "timing": "3-5 business days after applying or the last recruiter interaction.",
+        "body": "Hi Axelspace team,\n\nI wanted to follow up on my application for the Data Scientist / ML Engineer role. I remain interested and would be glad to provide any additional context about my background.\n\nThank you again for your time.\n\nBest,\nAlex Chen"
+      },
+      "interviewPrep": [
+        "Prepare a 60-second story for why Axelspace and why Data Scientist / ML Engineer.",
+        "Prepare evidence for: Analytics, remote, engineer, product, data.",
+        "Prepare one STAR story about execution under ambiguity.",
+        "Prepare one STAR story about collaboration and tradeoff decisions.",
+        "Prepare questions about team priorities, success metrics, and hiring timeline."
+      ],
+      "negotiationPrep": [
+        "Wait for a clear offer before anchoring compensation.",
+        "Ask for total compensation breakdown, work mode, title, level, review cycle, and start date.",
+        "Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.",
+        "Use competing priorities and role fit, not personal need, as the negotiation frame."
+      ]
+    },
+    {
+      "jobKey": "url:https://japan-dev.com/jobs/metanomaly/metanomaly-growth-engineer-saozy2",
+      "title": "Growth Engineer",
+      "company": "Metanomaly",
+      "score": "69/C",
+      "priority": "P2",
+      "applyChecklist": [
+        "Open the source URL and confirm the role is still active.",
+        "Generate or refresh the tailored ATS PDF from this job.",
+        "Mirror these keywords honestly: API, engineer, product, data, JavaScript, TypeScript, React, Next.js, CSS, Tailwind, Accessibility, Analytics",
+        "Do not overclaim missing areas: sql, growth",
+        "Log status, recruiter/contact, and next follow-up date in the tracker."
+      ],
+      "outreachEmail": {
+        "subject": "Growth Engineer application - Metanomaly",
+        "body": "Hi Metanomaly team,\n\nI am Alex Chen, and I am interested in the Growth Engineer role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.\n\nThe role stood out because it maps closely to my experience with API, engineer, product, data.\n\nI would appreciate the chance to share how my experience can support the team. Thank you for your time.\n\nBest,\nAlex Chen"
+      },
+      "followUp": {
+        "timing": "3-5 business days after applying or the last recruiter interaction.",
+        "body": "Hi Metanomaly team,\n\nI wanted to follow up on my application for the Growth Engineer role. I remain interested and would be glad to provide any additional context about my background.\n\nThank you again for your time.\n\nBest,\nAlex Chen"
+      },
+      "interviewPrep": [
+        "Prepare a 60-second story for why Metanomaly and why Growth Engineer.",
+        "Prepare evidence for: API, engineer, product, data.",
         "Prepare one STAR story about execution under ambiguity.",
         "Prepare one STAR story about collaboration and tradeoff decisions.",
         "Prepare questions about team priorities, success metrics, and hiring timeline."

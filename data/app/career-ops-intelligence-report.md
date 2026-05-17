@@ -1,11 +1,11 @@
 # Career Ops Intelligence Report
 
-Generated: 2026-05-16T23:18:53.668Z
+Generated: 2026-05-17T23:21:25.087Z
 
-- Active jobs: 291
+- Active jobs: 293
 - Expired jobs: 0
-- Duplicate groups: 16
-- Jobs without enough description: 136
+- Duplicate groups: 17
+- Jobs without enough description: 139
 - Rubric: Career Ops 10-Dimension Rubric
 
 ## Rubric Weights
@@ -47,33 +47,33 @@ Generated: 2026-05-16T23:18:53.668Z
 - java: 14
 
 ## Global Skill Gap Priority (weighted by job score)
-- growth: 48.7
-- aws: 43.9
-- python: 42.6
-- operations: 40.4
-- docker: 29.9
-- terraform: 28.5
-- gcp: 27.4
-- agents: 25.6
-- go: 21.6
-- java: 16.7
+- growth: 48.5
+- aws: 43.4
+- python: 42.4
+- operations: 40.1
+- docker: 29.6
+- terraform: 28.1
+- gcp: 27.1
+- agents: 25.3
+- go: 21.4
+- java: 16.6
 - deep learning: 14.5
-- rest: 14.5
+- rest: 14.4
 
 ## ⚠ Preferred Company Alert
 None of your preferred companies (Stripe, Linear, Notion, Vercel) appeared in current results. Add direct company career page sources to data/career-ops-sources.json.
 
 ## Role Families
-- Other: 142
+- Other: 144
 - Backend: 62
-- AI / Data: 33
+- AI / Data: 32
 - Frontend: 29
 - Operations: 8
 - Design: 6
 - Internship: 6
 - Marketing: 3
+- Product: 2
 - Full Stack: 1
-- Product: 1
 
 ## Recommended Search Queries
 - Frontend Engineer

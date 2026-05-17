@@ -1,6 +1,6 @@
 {
   "source": "career-ops-parallel",
-  "generatedAt": "2026-05-16T23:18:55.657Z",
+  "generatedAt": "2026-05-17T23:21:27.257Z",
   "concurrency": 4,
   "jobCount": 50,
   "results": [
@@ -11,8 +11,8 @@
       "score": 77,
       "grade": "B",
       "priority": "P1",
-      "startedAt": "2026-05-16T23:18:55.631Z",
-      "completedAt": "2026-05-16T23:18:55.634Z",
+      "startedAt": "2026-05-17T23:21:27.231Z",
+      "completedAt": "2026-05-17T23:21:27.233Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -234,8 +234,8 @@
       "score": 76,
       "grade": "B",
       "priority": "P1",
-      "startedAt": "2026-05-16T23:18:55.632Z",
-      "completedAt": "2026-05-16T23:18:55.634Z",
+      "startedAt": "2026-05-17T23:21:27.232Z",
+      "completedAt": "2026-05-17T23:21:27.234Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -457,8 +457,8 @@
       "score": 76,
       "grade": "B",
       "priority": "P1",
-      "startedAt": "2026-05-16T23:18:55.632Z",
-      "completedAt": "2026-05-16T23:18:55.634Z",
+      "startedAt": "2026-05-17T23:21:27.232Z",
+      "completedAt": "2026-05-17T23:21:27.234Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -679,8 +679,8 @@
       "score": 75,
       "grade": "B",
       "priority": "P1",
-      "startedAt": "2026-05-16T23:18:55.632Z",
-      "completedAt": "2026-05-16T23:18:55.635Z",
+      "startedAt": "2026-05-17T23:21:27.232Z",
+      "completedAt": "2026-05-17T23:21:27.234Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -898,236 +898,14 @@
       }
     },
     {
-      "jobKey": "url:https://www.tokyodev.com/companies/moneyforward/jobs/product-reliability-engineer-cre-money-forward-cloud-fukuoka",
-      "company": "Money Forward",
-      "title": "Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka",
-      "score": 75,
-      "grade": "B",
-      "priority": "P1",
-      "startedAt": "2026-05-16T23:18:55.634Z",
-      "completedAt": "2026-05-16T23:18:55.636Z",
-      "workers": {
-        "evaluation": {
-          "recommendation": "值得投遞",
-          "keywords": [
-            "TypeScript",
-            "React",
-            "Next.js",
-            "engineer",
-            "product",
-            "graphql",
-            "node.js"
-          ],
-          "nextActions": [
-            "開啟職缺確認仍可投遞",
-            "產生客製 ATS PDF",
-            "用同職類高分職缺校準履歷關鍵字"
-          ]
-        },
-        "research": {
-          "signals": [
-            "AI / data / platform signal",
-            "growth or funding signal",
-            "remote or hybrid signal"
-          ],
-          "evidenceCount": 4,
-          "questions": [
-            "What business unit owns the Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka role?",
-            "What measurable outcomes would this team expect in the first 90 days?",
-            "What recent company/product signals change the risk or upside?",
-            "Which CV proof points should be highlighted for this company?"
-          ]
-        },
-        "application": {
-          "checklist": [
-            "Confirm posting is active.",
-            "Generate tailored ATS PDF.",
-            "Prepare outreach and follow-up.",
-            "Log status and next follow-up."
-          ]
-        },
-        "compensation": {
-          "jobKey": "url:https://www.tokyodev.com/companies/moneyforward/jobs/product-reliability-engineer-cre-money-forward-cloud-fukuoka",
-          "company": "Money Forward",
-          "title": "Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka",
-          "market": "global",
-          "inferredLevel": "mid",
-          "candidateLevel": "mid",
-          "leverage": "medium",
-          "evidence": {
-            "salaryMentions": [],
-            "benefitSignals": [
-              "work-mode flexibility",
-              "signing / relocation"
-            ]
-          },
-          "marketBenchmark": {
-            "currency": "USD",
-            "unit": "annual",
-            "range": "USD 70,000 – 115,000",
-            "midpoint": "USD 90,000",
-            "floor": 70000,
-            "ceiling": 115000,
-            "source": "Arc.dev / Ruby on Remote 2024-2026",
-            "note": "Remote/global rates. Taiwan-based remote developers average ~$54K USD; Japan-based ~$68-115K USD depending on stack."
-          },
-          "structure": {
-            "baseSalary": [
-              "Market range for mid (GLOBAL): USD 70,000 – 115,000 annual. Source: Arc.dev / Ruby on Remote 2024-2026."
-            ],
-            "bonus": "Ask whether there is annual bonus, performance bonus, or sign-on bonus.",
-            "equity": "Ask whether equity, RSU, options, or profit-sharing exists.",
-            "benefits": [
-              "Health / insurance coverage",
-              "Paid leave and holidays",
-              "Learning budget or certification support",
-              "Remote/hybrid setup, commute, or relocation support",
-              "Review cycle and promotion timeline"
-            ],
-            "nonCashLevers": [
-              "Title / level calibration",
-              "Start date flexibility",
-              "Remote days",
-              "Equipment budget",
-              "First review at 3 or 6 months",
-              "Conference / learning budget"
-            ]
-          },
-          "negotiationScript": {
-            "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka package, including base, bonus, equity, and review cycle?",
-            "valueAnchor": "Based on the scope of Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka and my fit around TypeScript, React, Next.js, engineer, I would like to calibrate toward the stronger end of the range if the team sees the level match. My research indicates the GLOBAL midpoint for this level is around USD 90,000 (annual).",
-            "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
-            "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
-            "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
-          },
-          "redLines": [
-            "Do not disclose current compensation unless legally appropriate and strategically useful.",
-            "Do not accept verbal-only compensation details; ask for written package components.",
-            "Do not negotiate before confirming level, scope, work mode, and review cycle.",
-            "Do not trade base salary away without valuing the replacement benefit."
-          ],
-          "nextActions": [
-            "Collect market compensation evidence before naming a number.",
-            "Ask recruiter for approved range and level.",
-            "Map the job scope to proof points in the tailored CV.",
-            "Prepare one counter package with base, bonus/equity, and non-cash levers."
-          ],
-          "targetFrame": "Market benchmark for mid in GLOBAL is USD 70,000 – 115,000 (annual). Do not name a number first — ask for the approved range, then anchor near the midpoint or above."
-        },
-        "stories": [
-          {
-            "id": "story-1",
-            "theme": "frontend product execution",
-            "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
-            "applicableQuestions": [
-              "Tell me about a project you are proud of.",
-              "Tell me about a time you handled ambiguity.",
-              "How have you applied frontend product execution?"
-            ],
-            "star": {
-              "situation": "You were tasked with a frontend product challenge. Proof point: \"Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.\" — set the scene: what product, what team size, and what was broken or missing?",
-              "task": "What was the specific outcome you were accountable for? Include the success metric (e.g. performance score, user adoption rate, release date).",
-              "action": "Walk through the key technical decisions: component architecture, state management tradeoffs, accessibility choices, or API contract design.",
-              "result": "Quantify the impact: load time delta, user adoption %, code reduction %, or stakeholder feedback. If no number, describe the quality or velocity improvement.",
-              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
-            },
-            "keywords": [
-              "frontend product execution",
-              "JavaScript",
-              "TypeScript",
-              "React",
-              "Next.js",
-              "CSS",
-              "Tailwind",
-              "Accessibility"
-            ],
-            "relevance": 3
-          },
-          {
-            "id": "story-2",
-            "theme": "data-heavy product decisions",
-            "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
-            "applicableQuestions": [
-              "Tell me about a project you are proud of.",
-              "Tell me about a time you handled ambiguity.",
-              "How have you applied data-heavy product decisions?"
-            ],
-            "star": {
-              "situation": "You were working with a data-intensive product. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — describe the data volume, the user workflow, and what was difficult to render or interpret.",
-              "task": "What decision did you own? (chart type, data model, aggregation strategy, caching layer, etc.)",
-              "action": "Explain how you chose between options, what you built or prototyped, and how you validated your approach with data or users.",
-              "result": "State the outcome: query latency, dashboard load time, user comprehension improvement, or reduction in support requests.",
-              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
-            },
-            "keywords": [
-              "data-heavy product decisions",
-              "JavaScript",
-              "TypeScript",
-              "React",
-              "Next.js",
-              "CSS",
-              "Tailwind",
-              "Accessibility"
-            ],
-            "relevance": 3
-          },
-          {
-            "id": "story-3",
-            "theme": "systems and API collaboration",
-            "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
-            "applicableQuestions": [
-              "Tell me about a project you are proud of.",
-              "Tell me about a time you handled ambiguity.",
-              "How have you applied systems and API collaboration?"
-            ],
-            "star": {
-              "situation": "You collaborated across system boundaries. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — name the systems, teams, and integration surface area.",
-              "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
-              "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
-              "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
-              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
-            },
-            "keywords": [
-              "systems and API collaboration",
-              "JavaScript",
-              "TypeScript",
-              "React",
-              "Next.js",
-              "CSS",
-              "Tailwind",
-              "Accessibility"
-            ],
-            "relevance": 3
-          }
-        ],
-        "applyAgent": {
-          "mode": "human-in-the-loop",
-          "url": "https://www.tokyodev.com/companies/moneyforward/jobs/product-reliability-engineer-cre-money-forward-cloud-fukuoka",
-          "steps": [
-            "Open the application URL in a controlled browser session.",
-            "Extract visible form fields and required uploads.",
-            "Map CV profile fields to the form without submitting.",
-            "Prepare tailored PDF and outreach text.",
-            "Stop before final submit and ask the user to review."
-          ],
-          "guardrails": [
-            "Never submit without explicit user confirmation.",
-            "Never fabricate work authorization, salary history, degree, or experience.",
-            "Never store API keys or credentials in job metadata.",
-            "Record only application status and user-approved notes."
-          ]
-        }
-      }
-    },
-    {
       "jobKey": "url:https://micron.wd1.myworkdayjobs.com/external/job/taichung---aatt-taiwan/senior-full-stack-software-engineer_jr101324",
       "company": "Micron Workday",
       "title": "Senior Full Stack Software Engineer",
       "score": 74,
       "grade": "B",
       "priority": "P1",
-      "startedAt": "2026-05-16T23:18:55.634Z",
-      "completedAt": "2026-05-16T23:18:55.636Z",
+      "startedAt": "2026-05-17T23:21:27.233Z",
+      "completedAt": "2026-05-17T23:21:27.236Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -1350,8 +1128,8 @@
       "score": 73,
       "grade": "B",
       "priority": "P1",
-      "startedAt": "2026-05-16T23:18:55.635Z",
-      "completedAt": "2026-05-16T23:18:55.637Z",
+      "startedAt": "2026-05-17T23:21:27.234Z",
+      "completedAt": "2026-05-17T23:21:27.236Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -1393,7 +1171,7 @@
           ]
         },
         "compensation": {
-          "jobKey": "url:https://www.tokyodev.com/companies/moneyforward/jobs/product-reliability-engineer-cre-money-forward-cloud-fukuoka",
+          "jobKey": "url:https://japan-dev.com/jobs/money-forward/money-forward-product-reliability-engineer-cre-money-forward-cloud-fukuoka-kgsbzs",
           "company": "Money Forward",
           "title": "Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka",
           "market": "global",
@@ -1404,7 +1182,8 @@
             "salaryMentions": [],
             "benefitSignals": [
               "work-mode flexibility",
-              "signing / relocation"
+              "signing / relocation",
+              "learning budget"
             ]
           },
           "marketBenchmark": {
@@ -1566,14 +1345,237 @@
       }
     },
     {
+      "jobKey": "url:https://www.tokyodev.com/companies/moneyforward/jobs/product-reliability-engineer-cre-money-forward-cloud-fukuoka",
+      "company": "Money Forward",
+      "title": "Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka",
+      "score": 73,
+      "grade": "B",
+      "priority": "P1",
+      "startedAt": "2026-05-17T23:21:27.234Z",
+      "completedAt": "2026-05-17T23:21:27.236Z",
+      "workers": {
+        "evaluation": {
+          "recommendation": "值得投遞",
+          "keywords": [
+            "TypeScript",
+            "React",
+            "Next.js",
+            "engineer",
+            "product",
+            "graphql",
+            "node.js"
+          ],
+          "nextActions": [
+            "開啟職缺確認仍可投遞",
+            "產生客製 ATS PDF",
+            "用同職類高分職缺校準履歷關鍵字"
+          ]
+        },
+        "research": {
+          "signals": [
+            "AI / data / platform signal",
+            "growth or funding signal",
+            "remote or hybrid signal"
+          ],
+          "evidenceCount": 4,
+          "questions": [
+            "What business unit owns the Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka role?",
+            "What measurable outcomes would this team expect in the first 90 days?",
+            "What recent company/product signals change the risk or upside?",
+            "Which CV proof points should be highlighted for this company?"
+          ]
+        },
+        "application": {
+          "checklist": [
+            "Confirm posting is active.",
+            "Generate tailored ATS PDF.",
+            "Prepare outreach and follow-up.",
+            "Log status and next follow-up."
+          ]
+        },
+        "compensation": {
+          "jobKey": "url:https://japan-dev.com/jobs/money-forward/money-forward-product-reliability-engineer-cre-money-forward-cloud-fukuoka-kgsbzs",
+          "company": "Money Forward",
+          "title": "Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka",
+          "market": "global",
+          "inferredLevel": "mid",
+          "candidateLevel": "mid",
+          "leverage": "medium",
+          "evidence": {
+            "salaryMentions": [],
+            "benefitSignals": [
+              "work-mode flexibility",
+              "signing / relocation",
+              "learning budget"
+            ]
+          },
+          "marketBenchmark": {
+            "currency": "USD",
+            "unit": "annual",
+            "range": "USD 70,000 – 115,000",
+            "midpoint": "USD 90,000",
+            "floor": 70000,
+            "ceiling": 115000,
+            "source": "Arc.dev / Ruby on Remote 2024-2026",
+            "note": "Remote/global rates. Taiwan-based remote developers average ~$54K USD; Japan-based ~$68-115K USD depending on stack."
+          },
+          "structure": {
+            "baseSalary": [
+              "Market range for mid (GLOBAL): USD 70,000 – 115,000 annual. Source: Arc.dev / Ruby on Remote 2024-2026."
+            ],
+            "bonus": "Ask whether there is annual bonus, performance bonus, or sign-on bonus.",
+            "equity": "Ask whether equity, RSU, options, or profit-sharing exists.",
+            "benefits": [
+              "Health / insurance coverage",
+              "Paid leave and holidays",
+              "Learning budget or certification support",
+              "Remote/hybrid setup, commute, or relocation support",
+              "Review cycle and promotion timeline"
+            ],
+            "nonCashLevers": [
+              "Title / level calibration",
+              "Start date flexibility",
+              "Remote days",
+              "Equipment budget",
+              "First review at 3 or 6 months",
+              "Conference / learning budget"
+            ]
+          },
+          "negotiationScript": {
+            "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka package, including base, bonus, equity, and review cycle?",
+            "valueAnchor": "Based on the scope of Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka and my fit around TypeScript, React, Next.js, engineer, I would like to calibrate toward the stronger end of the range if the team sees the level match. My research indicates the GLOBAL midpoint for this level is around USD 90,000 (annual).",
+            "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
+            "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
+            "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
+          },
+          "redLines": [
+            "Do not disclose current compensation unless legally appropriate and strategically useful.",
+            "Do not accept verbal-only compensation details; ask for written package components.",
+            "Do not negotiate before confirming level, scope, work mode, and review cycle.",
+            "Do not trade base salary away without valuing the replacement benefit."
+          ],
+          "nextActions": [
+            "Collect market compensation evidence before naming a number.",
+            "Ask recruiter for approved range and level.",
+            "Map the job scope to proof points in the tailored CV.",
+            "Prepare one counter package with base, bonus/equity, and non-cash levers."
+          ],
+          "targetFrame": "Market benchmark for mid in GLOBAL is USD 70,000 – 115,000 (annual). Do not name a number first — ask for the approved range, then anchor near the midpoint or above."
+        },
+        "stories": [
+          {
+            "id": "story-1",
+            "theme": "frontend product execution",
+            "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
+            "applicableQuestions": [
+              "Tell me about a project you are proud of.",
+              "Tell me about a time you handled ambiguity.",
+              "How have you applied frontend product execution?"
+            ],
+            "star": {
+              "situation": "You were tasked with a frontend product challenge. Proof point: \"Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.\" — set the scene: what product, what team size, and what was broken or missing?",
+              "task": "What was the specific outcome you were accountable for? Include the success metric (e.g. performance score, user adoption rate, release date).",
+              "action": "Walk through the key technical decisions: component architecture, state management tradeoffs, accessibility choices, or API contract design.",
+              "result": "Quantify the impact: load time delta, user adoption %, code reduction %, or stakeholder feedback. If no number, describe the quality or velocity improvement.",
+              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
+            },
+            "keywords": [
+              "frontend product execution",
+              "JavaScript",
+              "TypeScript",
+              "React",
+              "Next.js",
+              "CSS",
+              "Tailwind",
+              "Accessibility"
+            ],
+            "relevance": 3
+          },
+          {
+            "id": "story-2",
+            "theme": "data-heavy product decisions",
+            "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
+            "applicableQuestions": [
+              "Tell me about a project you are proud of.",
+              "Tell me about a time you handled ambiguity.",
+              "How have you applied data-heavy product decisions?"
+            ],
+            "star": {
+              "situation": "You were working with a data-intensive product. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — describe the data volume, the user workflow, and what was difficult to render or interpret.",
+              "task": "What decision did you own? (chart type, data model, aggregation strategy, caching layer, etc.)",
+              "action": "Explain how you chose between options, what you built or prototyped, and how you validated your approach with data or users.",
+              "result": "State the outcome: query latency, dashboard load time, user comprehension improvement, or reduction in support requests.",
+              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
+            },
+            "keywords": [
+              "data-heavy product decisions",
+              "JavaScript",
+              "TypeScript",
+              "React",
+              "Next.js",
+              "CSS",
+              "Tailwind",
+              "Accessibility"
+            ],
+            "relevance": 3
+          },
+          {
+            "id": "story-3",
+            "theme": "systems and API collaboration",
+            "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
+            "applicableQuestions": [
+              "Tell me about a project you are proud of.",
+              "Tell me about a time you handled ambiguity.",
+              "How have you applied systems and API collaboration?"
+            ],
+            "star": {
+              "situation": "You collaborated across system boundaries. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — name the systems, teams, and integration surface area.",
+              "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
+              "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
+              "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
+              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
+            },
+            "keywords": [
+              "systems and API collaboration",
+              "JavaScript",
+              "TypeScript",
+              "React",
+              "Next.js",
+              "CSS",
+              "Tailwind",
+              "Accessibility"
+            ],
+            "relevance": 3
+          }
+        ],
+        "applyAgent": {
+          "mode": "human-in-the-loop",
+          "url": "https://www.tokyodev.com/companies/moneyforward/jobs/product-reliability-engineer-cre-money-forward-cloud-fukuoka",
+          "steps": [
+            "Open the application URL in a controlled browser session.",
+            "Extract visible form fields and required uploads.",
+            "Map CV profile fields to the form without submitting.",
+            "Prepare tailored PDF and outreach text.",
+            "Stop before final submit and ask the user to review."
+          ],
+          "guardrails": [
+            "Never submit without explicit user confirmation.",
+            "Never fabricate work authorization, salary history, degree, or experience.",
+            "Never store API keys or credentials in job metadata.",
+            "Record only application status and user-approved notes."
+          ]
+        }
+      }
+    },
+    {
       "jobKey": "url:https://japan-dev.com/jobs/artytech/artytech-tech-lead--cto-candidate-full-stack-25pe6i",
       "company": "Artytech",
       "title": "Tech Lead / CTO Candidate (Full-stack)",
       "score": 72,
       "grade": "B",
       "priority": "P1",
-      "startedAt": "2026-05-16T23:18:55.635Z",
-      "completedAt": "2026-05-16T23:18:55.637Z",
+      "startedAt": "2026-05-17T23:21:27.234Z",
+      "completedAt": "2026-05-17T23:21:27.237Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -1788,454 +1790,14 @@
       }
     },
     {
-      "jobKey": "url:https://www.tokyodev.com/companies/moneyforward/jobs/lead-backend-engineer-digital-bank",
-      "company": "Money Forward",
-      "title": "Lead Backend Engineer, Digital Bank",
-      "score": 71,
-      "grade": "C",
-      "priority": "P2",
-      "startedAt": "2026-05-16T23:18:55.636Z",
-      "completedAt": "2026-05-16T23:18:55.638Z",
-      "workers": {
-        "evaluation": {
-          "recommendation": "值得投遞",
-          "keywords": [
-            "API",
-            "engineer",
-            "product",
-            "data"
-          ],
-          "nextActions": [
-            "開啟職缺確認仍可投遞",
-            "產生客製 ATS PDF",
-            "用同職類高分職缺校準履歷關鍵字"
-          ]
-        },
-        "research": {
-          "signals": [
-            "AI / data / platform signal",
-            "growth or funding signal",
-            "remote or hybrid signal"
-          ],
-          "evidenceCount": 4,
-          "questions": [
-            "What business unit owns the Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka role?",
-            "What measurable outcomes would this team expect in the first 90 days?",
-            "What recent company/product signals change the risk or upside?",
-            "Which CV proof points should be highlighted for this company?"
-          ]
-        },
-        "application": {
-          "checklist": [
-            "Confirm posting is active.",
-            "Generate tailored ATS PDF.",
-            "Prepare outreach and follow-up.",
-            "Log status and next follow-up."
-          ]
-        },
-        "compensation": {
-          "jobKey": "url:https://www.tokyodev.com/companies/moneyforward/jobs/product-reliability-engineer-cre-money-forward-cloud-fukuoka",
-          "company": "Money Forward",
-          "title": "Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka",
-          "market": "global",
-          "inferredLevel": "mid",
-          "candidateLevel": "mid",
-          "leverage": "medium",
-          "evidence": {
-            "salaryMentions": [],
-            "benefitSignals": [
-              "work-mode flexibility",
-              "signing / relocation"
-            ]
-          },
-          "marketBenchmark": {
-            "currency": "USD",
-            "unit": "annual",
-            "range": "USD 70,000 – 115,000",
-            "midpoint": "USD 90,000",
-            "floor": 70000,
-            "ceiling": 115000,
-            "source": "Arc.dev / Ruby on Remote 2024-2026",
-            "note": "Remote/global rates. Taiwan-based remote developers average ~$54K USD; Japan-based ~$68-115K USD depending on stack."
-          },
-          "structure": {
-            "baseSalary": [
-              "Market range for mid (GLOBAL): USD 70,000 – 115,000 annual. Source: Arc.dev / Ruby on Remote 2024-2026."
-            ],
-            "bonus": "Ask whether there is annual bonus, performance bonus, or sign-on bonus.",
-            "equity": "Ask whether equity, RSU, options, or profit-sharing exists.",
-            "benefits": [
-              "Health / insurance coverage",
-              "Paid leave and holidays",
-              "Learning budget or certification support",
-              "Remote/hybrid setup, commute, or relocation support",
-              "Review cycle and promotion timeline"
-            ],
-            "nonCashLevers": [
-              "Title / level calibration",
-              "Start date flexibility",
-              "Remote days",
-              "Equipment budget",
-              "First review at 3 or 6 months",
-              "Conference / learning budget"
-            ]
-          },
-          "negotiationScript": {
-            "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka package, including base, bonus, equity, and review cycle?",
-            "valueAnchor": "Based on the scope of Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka and my fit around TypeScript, React, Next.js, engineer, I would like to calibrate toward the stronger end of the range if the team sees the level match. My research indicates the GLOBAL midpoint for this level is around USD 90,000 (annual).",
-            "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
-            "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
-            "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
-          },
-          "redLines": [
-            "Do not disclose current compensation unless legally appropriate and strategically useful.",
-            "Do not accept verbal-only compensation details; ask for written package components.",
-            "Do not negotiate before confirming level, scope, work mode, and review cycle.",
-            "Do not trade base salary away without valuing the replacement benefit."
-          ],
-          "nextActions": [
-            "Collect market compensation evidence before naming a number.",
-            "Ask recruiter for approved range and level.",
-            "Map the job scope to proof points in the tailored CV.",
-            "Prepare one counter package with base, bonus/equity, and non-cash levers."
-          ],
-          "targetFrame": "Market benchmark for mid in GLOBAL is USD 70,000 – 115,000 (annual). Do not name a number first — ask for the approved range, then anchor near the midpoint or above."
-        },
-        "stories": [
-          {
-            "id": "story-1",
-            "theme": "frontend product execution",
-            "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
-            "applicableQuestions": [
-              "Tell me about a project you are proud of.",
-              "Tell me about a time you handled ambiguity.",
-              "How have you applied frontend product execution?"
-            ],
-            "star": {
-              "situation": "You were tasked with a frontend product challenge. Proof point: \"Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.\" — set the scene: what product, what team size, and what was broken or missing?",
-              "task": "What was the specific outcome you were accountable for? Include the success metric (e.g. performance score, user adoption rate, release date).",
-              "action": "Walk through the key technical decisions: component architecture, state management tradeoffs, accessibility choices, or API contract design.",
-              "result": "Quantify the impact: load time delta, user adoption %, code reduction %, or stakeholder feedback. If no number, describe the quality or velocity improvement.",
-              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
-            },
-            "keywords": [
-              "frontend product execution",
-              "JavaScript",
-              "TypeScript",
-              "React",
-              "Next.js",
-              "CSS",
-              "Tailwind",
-              "Accessibility"
-            ],
-            "relevance": 0
-          },
-          {
-            "id": "story-2",
-            "theme": "data-heavy product decisions",
-            "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
-            "applicableQuestions": [
-              "Tell me about a project you are proud of.",
-              "Tell me about a time you handled ambiguity.",
-              "How have you applied data-heavy product decisions?"
-            ],
-            "star": {
-              "situation": "You were working with a data-intensive product. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — describe the data volume, the user workflow, and what was difficult to render or interpret.",
-              "task": "What decision did you own? (chart type, data model, aggregation strategy, caching layer, etc.)",
-              "action": "Explain how you chose between options, what you built or prototyped, and how you validated your approach with data or users.",
-              "result": "State the outcome: query latency, dashboard load time, user comprehension improvement, or reduction in support requests.",
-              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
-            },
-            "keywords": [
-              "data-heavy product decisions",
-              "JavaScript",
-              "TypeScript",
-              "React",
-              "Next.js",
-              "CSS",
-              "Tailwind",
-              "Accessibility"
-            ],
-            "relevance": 0
-          },
-          {
-            "id": "story-3",
-            "theme": "systems and API collaboration",
-            "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
-            "applicableQuestions": [
-              "Tell me about a project you are proud of.",
-              "Tell me about a time you handled ambiguity.",
-              "How have you applied systems and API collaboration?"
-            ],
-            "star": {
-              "situation": "You collaborated across system boundaries. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — name the systems, teams, and integration surface area.",
-              "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
-              "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
-              "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
-              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
-            },
-            "keywords": [
-              "systems and API collaboration",
-              "JavaScript",
-              "TypeScript",
-              "React",
-              "Next.js",
-              "CSS",
-              "Tailwind",
-              "Accessibility"
-            ],
-            "relevance": 0
-          }
-        ],
-        "applyAgent": {
-          "mode": "human-in-the-loop",
-          "url": "https://www.tokyodev.com/companies/moneyforward/jobs/lead-backend-engineer-digital-bank",
-          "steps": [
-            "Open the application URL in a controlled browser session.",
-            "Extract visible form fields and required uploads.",
-            "Map CV profile fields to the form without submitting.",
-            "Prepare tailored PDF and outreach text.",
-            "Stop before final submit and ask the user to review."
-          ],
-          "guardrails": [
-            "Never submit without explicit user confirmation.",
-            "Never fabricate work authorization, salary history, degree, or experience.",
-            "Never store API keys or credentials in job metadata.",
-            "Record only application status and user-approved notes."
-          ]
-        }
-      }
-    },
-    {
-      "jobKey": "url:https://www.tokyodev.com/companies/moneyforward/jobs/infrastructure-engineer-sre-aws",
-      "company": "Money Forward",
-      "title": "Infrastructure Engineer (SRE-AWS)",
-      "score": 71,
-      "grade": "C",
-      "priority": "P2",
-      "startedAt": "2026-05-16T23:18:55.636Z",
-      "completedAt": "2026-05-16T23:18:55.639Z",
-      "workers": {
-        "evaluation": {
-          "recommendation": "值得投遞",
-          "keywords": [
-            "TypeScript",
-            "React",
-            "Performance Optimization",
-            "engineer",
-            "product",
-            "data"
-          ],
-          "nextActions": [
-            "開啟職缺確認仍可投遞",
-            "產生客製 ATS PDF",
-            "用同職類高分職缺校準履歷關鍵字"
-          ]
-        },
-        "research": {
-          "signals": [
-            "AI / data / platform signal",
-            "growth or funding signal",
-            "remote or hybrid signal"
-          ],
-          "evidenceCount": 4,
-          "questions": [
-            "What business unit owns the Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka role?",
-            "What measurable outcomes would this team expect in the first 90 days?",
-            "What recent company/product signals change the risk or upside?",
-            "Which CV proof points should be highlighted for this company?"
-          ]
-        },
-        "application": {
-          "checklist": [
-            "Confirm posting is active.",
-            "Generate tailored ATS PDF.",
-            "Prepare outreach and follow-up.",
-            "Log status and next follow-up."
-          ]
-        },
-        "compensation": {
-          "jobKey": "url:https://www.tokyodev.com/companies/moneyforward/jobs/product-reliability-engineer-cre-money-forward-cloud-fukuoka",
-          "company": "Money Forward",
-          "title": "Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka",
-          "market": "global",
-          "inferredLevel": "mid",
-          "candidateLevel": "mid",
-          "leverage": "medium",
-          "evidence": {
-            "salaryMentions": [],
-            "benefitSignals": [
-              "work-mode flexibility",
-              "signing / relocation"
-            ]
-          },
-          "marketBenchmark": {
-            "currency": "USD",
-            "unit": "annual",
-            "range": "USD 70,000 – 115,000",
-            "midpoint": "USD 90,000",
-            "floor": 70000,
-            "ceiling": 115000,
-            "source": "Arc.dev / Ruby on Remote 2024-2026",
-            "note": "Remote/global rates. Taiwan-based remote developers average ~$54K USD; Japan-based ~$68-115K USD depending on stack."
-          },
-          "structure": {
-            "baseSalary": [
-              "Market range for mid (GLOBAL): USD 70,000 – 115,000 annual. Source: Arc.dev / Ruby on Remote 2024-2026."
-            ],
-            "bonus": "Ask whether there is annual bonus, performance bonus, or sign-on bonus.",
-            "equity": "Ask whether equity, RSU, options, or profit-sharing exists.",
-            "benefits": [
-              "Health / insurance coverage",
-              "Paid leave and holidays",
-              "Learning budget or certification support",
-              "Remote/hybrid setup, commute, or relocation support",
-              "Review cycle and promotion timeline"
-            ],
-            "nonCashLevers": [
-              "Title / level calibration",
-              "Start date flexibility",
-              "Remote days",
-              "Equipment budget",
-              "First review at 3 or 6 months",
-              "Conference / learning budget"
-            ]
-          },
-          "negotiationScript": {
-            "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka package, including base, bonus, equity, and review cycle?",
-            "valueAnchor": "Based on the scope of Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka and my fit around TypeScript, React, Next.js, engineer, I would like to calibrate toward the stronger end of the range if the team sees the level match. My research indicates the GLOBAL midpoint for this level is around USD 90,000 (annual).",
-            "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
-            "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
-            "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
-          },
-          "redLines": [
-            "Do not disclose current compensation unless legally appropriate and strategically useful.",
-            "Do not accept verbal-only compensation details; ask for written package components.",
-            "Do not negotiate before confirming level, scope, work mode, and review cycle.",
-            "Do not trade base salary away without valuing the replacement benefit."
-          ],
-          "nextActions": [
-            "Collect market compensation evidence before naming a number.",
-            "Ask recruiter for approved range and level.",
-            "Map the job scope to proof points in the tailored CV.",
-            "Prepare one counter package with base, bonus/equity, and non-cash levers."
-          ],
-          "targetFrame": "Market benchmark for mid in GLOBAL is USD 70,000 – 115,000 (annual). Do not name a number first — ask for the approved range, then anchor near the midpoint or above."
-        },
-        "stories": [
-          {
-            "id": "story-1",
-            "theme": "frontend product execution",
-            "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
-            "applicableQuestions": [
-              "Tell me about a project you are proud of.",
-              "Tell me about a time you handled ambiguity.",
-              "How have you applied frontend product execution?"
-            ],
-            "star": {
-              "situation": "You were tasked with a frontend product challenge. Proof point: \"Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.\" — set the scene: what product, what team size, and what was broken or missing?",
-              "task": "What was the specific outcome you were accountable for? Include the success metric (e.g. performance score, user adoption rate, release date).",
-              "action": "Walk through the key technical decisions: component architecture, state management tradeoffs, accessibility choices, or API contract design.",
-              "result": "Quantify the impact: load time delta, user adoption %, code reduction %, or stakeholder feedback. If no number, describe the quality or velocity improvement.",
-              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
-            },
-            "keywords": [
-              "frontend product execution",
-              "JavaScript",
-              "TypeScript",
-              "React",
-              "Next.js",
-              "CSS",
-              "Tailwind",
-              "Accessibility"
-            ],
-            "relevance": 2
-          },
-          {
-            "id": "story-2",
-            "theme": "data-heavy product decisions",
-            "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
-            "applicableQuestions": [
-              "Tell me about a project you are proud of.",
-              "Tell me about a time you handled ambiguity.",
-              "How have you applied data-heavy product decisions?"
-            ],
-            "star": {
-              "situation": "You were working with a data-intensive product. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — describe the data volume, the user workflow, and what was difficult to render or interpret.",
-              "task": "What decision did you own? (chart type, data model, aggregation strategy, caching layer, etc.)",
-              "action": "Explain how you chose between options, what you built or prototyped, and how you validated your approach with data or users.",
-              "result": "State the outcome: query latency, dashboard load time, user comprehension improvement, or reduction in support requests.",
-              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
-            },
-            "keywords": [
-              "data-heavy product decisions",
-              "JavaScript",
-              "TypeScript",
-              "React",
-              "Next.js",
-              "CSS",
-              "Tailwind",
-              "Accessibility"
-            ],
-            "relevance": 2
-          },
-          {
-            "id": "story-3",
-            "theme": "systems and API collaboration",
-            "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
-            "applicableQuestions": [
-              "Tell me about a project you are proud of.",
-              "Tell me about a time you handled ambiguity.",
-              "How have you applied systems and API collaboration?"
-            ],
-            "star": {
-              "situation": "You collaborated across system boundaries. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — name the systems, teams, and integration surface area.",
-              "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
-              "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
-              "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
-              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
-            },
-            "keywords": [
-              "systems and API collaboration",
-              "JavaScript",
-              "TypeScript",
-              "React",
-              "Next.js",
-              "CSS",
-              "Tailwind",
-              "Accessibility"
-            ],
-            "relevance": 2
-          }
-        ],
-        "applyAgent": {
-          "mode": "human-in-the-loop",
-          "url": "https://www.tokyodev.com/companies/moneyforward/jobs/infrastructure-engineer-sre-aws",
-          "steps": [
-            "Open the application URL in a controlled browser session.",
-            "Extract visible form fields and required uploads.",
-            "Map CV profile fields to the form without submitting.",
-            "Prepare tailored PDF and outreach text.",
-            "Stop before final submit and ask the user to review."
-          ],
-          "guardrails": [
-            "Never submit without explicit user confirmation.",
-            "Never fabricate work authorization, salary history, degree, or experience.",
-            "Never store API keys or credentials in job metadata.",
-            "Record only application status and user-approved notes."
-          ]
-        }
-      }
-    },
-    {
       "jobKey": "url:https://cardlytics.wd5.myworkdayjobs.com/cardlyticsexternalcareersite/job/taipei-city/senior-software-engineer_jr100384",
       "company": "Cardlytics Workday Taiwan",
       "title": "Senior Software Engineer",
       "score": 70,
       "grade": "C",
       "priority": "P2",
-      "startedAt": "2026-05-16T23:18:55.637Z",
-      "completedAt": "2026-05-16T23:18:55.639Z",
+      "startedAt": "2026-05-17T23:21:27.236Z",
+      "completedAt": "2026-05-17T23:21:27.238Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -2440,221 +2002,14 @@
       }
     },
     {
-      "jobKey": "url:https://www.tokyodev.com/companies/tokuty/jobs/full-stack-engineer",
-      "company": "Tokuty",
-      "title": "Full Stack Engineer",
-      "score": 70,
-      "grade": "C",
-      "priority": "P2",
-      "startedAt": "2026-05-16T23:18:55.637Z",
-      "completedAt": "2026-05-16T23:18:55.639Z",
-      "workers": {
-        "evaluation": {
-          "recommendation": "值得投遞",
-          "keywords": [
-            "React",
-            "design system",
-            "engineer",
-            "product"
-          ],
-          "nextActions": [
-            "開啟職缺確認仍可投遞",
-            "產生客製 ATS PDF",
-            "用同職類高分職缺校準履歷關鍵字"
-          ]
-        },
-        "research": {
-          "signals": [],
-          "evidenceCount": 0,
-          "questions": []
-        },
-        "application": {
-          "checklist": [
-            "Confirm posting is active.",
-            "Generate tailored ATS PDF.",
-            "Prepare outreach and follow-up.",
-            "Log status and next follow-up."
-          ]
-        },
-        "compensation": {
-          "jobKey": "url:https://www.tokyodev.com/companies/tokuty/jobs/full-stack-engineer",
-          "company": "Tokuty",
-          "title": "Full Stack Engineer",
-          "market": "global",
-          "inferredLevel": "mid",
-          "candidateLevel": "mid",
-          "leverage": "low",
-          "evidence": {
-            "salaryMentions": [],
-            "benefitSignals": []
-          },
-          "marketBenchmark": {
-            "currency": "USD",
-            "unit": "annual",
-            "range": "USD 70,000 – 115,000",
-            "midpoint": "USD 90,000",
-            "floor": 70000,
-            "ceiling": 115000,
-            "source": "Arc.dev / Ruby on Remote 2024-2026",
-            "note": "Remote/global rates. Taiwan-based remote developers average ~$54K USD; Japan-based ~$68-115K USD depending on stack."
-          },
-          "structure": {
-            "baseSalary": [
-              "Market range for mid (GLOBAL): USD 70,000 – 115,000 annual. Source: Arc.dev / Ruby on Remote 2024-2026."
-            ],
-            "bonus": "Ask whether there is annual bonus, performance bonus, or sign-on bonus.",
-            "equity": "Ask whether equity, RSU, options, or profit-sharing exists.",
-            "benefits": [
-              "Health / insurance coverage",
-              "Paid leave and holidays",
-              "Learning budget or certification support",
-              "Remote/hybrid setup, commute, or relocation support",
-              "Review cycle and promotion timeline"
-            ],
-            "nonCashLevers": [
-              "Title / level calibration",
-              "Start date flexibility",
-              "Remote days",
-              "Equipment budget",
-              "First review at 3 or 6 months",
-              "Conference / learning budget"
-            ]
-          },
-          "negotiationScript": {
-            "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Full Stack Engineer package, including base, bonus, equity, and review cycle?",
-            "valueAnchor": "Based on the scope of Full Stack Engineer and my fit around React, design system, engineer, product, I would like to calibrate toward the stronger end of the range if the team sees the level match. My research indicates the GLOBAL midpoint for this level is around USD 90,000 (annual).",
-            "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
-            "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
-            "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
-          },
-          "redLines": [
-            "Do not disclose current compensation unless legally appropriate and strategically useful.",
-            "Do not accept verbal-only compensation details; ask for written package components.",
-            "Do not negotiate before confirming level, scope, work mode, and review cycle.",
-            "Do not trade base salary away without valuing the replacement benefit."
-          ],
-          "nextActions": [
-            "Collect market compensation evidence before naming a number.",
-            "Ask recruiter for approved range and level.",
-            "Map the job scope to proof points in the tailored CV.",
-            "Prepare one counter package with base, bonus/equity, and non-cash levers."
-          ],
-          "targetFrame": "Market benchmark for mid in GLOBAL is USD 70,000 – 115,000 (annual). Do not name a number first — ask for the approved range, then anchor near the midpoint or above."
-        },
-        "stories": [
-          {
-            "id": "story-1",
-            "theme": "frontend product execution",
-            "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
-            "applicableQuestions": [
-              "Tell me about a project you are proud of.",
-              "Tell me about a time you handled ambiguity.",
-              "How have you applied frontend product execution?"
-            ],
-            "star": {
-              "situation": "You were tasked with a frontend product challenge. Proof point: \"Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.\" — set the scene: what product, what team size, and what was broken or missing?",
-              "task": "What was the specific outcome you were accountable for? Include the success metric (e.g. performance score, user adoption rate, release date).",
-              "action": "Walk through the key technical decisions: component architecture, state management tradeoffs, accessibility choices, or API contract design.",
-              "result": "Quantify the impact: load time delta, user adoption %, code reduction %, or stakeholder feedback. If no number, describe the quality or velocity improvement.",
-              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
-            },
-            "keywords": [
-              "frontend product execution",
-              "JavaScript",
-              "TypeScript",
-              "React",
-              "Next.js",
-              "CSS",
-              "Tailwind",
-              "Accessibility"
-            ],
-            "relevance": 1
-          },
-          {
-            "id": "story-2",
-            "theme": "data-heavy product decisions",
-            "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
-            "applicableQuestions": [
-              "Tell me about a project you are proud of.",
-              "Tell me about a time you handled ambiguity.",
-              "How have you applied data-heavy product decisions?"
-            ],
-            "star": {
-              "situation": "You were working with a data-intensive product. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — describe the data volume, the user workflow, and what was difficult to render or interpret.",
-              "task": "What decision did you own? (chart type, data model, aggregation strategy, caching layer, etc.)",
-              "action": "Explain how you chose between options, what you built or prototyped, and how you validated your approach with data or users.",
-              "result": "State the outcome: query latency, dashboard load time, user comprehension improvement, or reduction in support requests.",
-              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
-            },
-            "keywords": [
-              "data-heavy product decisions",
-              "JavaScript",
-              "TypeScript",
-              "React",
-              "Next.js",
-              "CSS",
-              "Tailwind",
-              "Accessibility"
-            ],
-            "relevance": 1
-          },
-          {
-            "id": "story-3",
-            "theme": "systems and API collaboration",
-            "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
-            "applicableQuestions": [
-              "Tell me about a project you are proud of.",
-              "Tell me about a time you handled ambiguity.",
-              "How have you applied systems and API collaboration?"
-            ],
-            "star": {
-              "situation": "You collaborated across system boundaries. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — name the systems, teams, and integration surface area.",
-              "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
-              "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
-              "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
-              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
-            },
-            "keywords": [
-              "systems and API collaboration",
-              "JavaScript",
-              "TypeScript",
-              "React",
-              "Next.js",
-              "CSS",
-              "Tailwind",
-              "Accessibility"
-            ],
-            "relevance": 1
-          }
-        ],
-        "applyAgent": {
-          "mode": "human-in-the-loop",
-          "url": "https://www.tokyodev.com/companies/tokuty/jobs/full-stack-engineer",
-          "steps": [
-            "Open the application URL in a controlled browser session.",
-            "Extract visible form fields and required uploads.",
-            "Map CV profile fields to the form without submitting.",
-            "Prepare tailored PDF and outreach text.",
-            "Stop before final submit and ask the user to review."
-          ],
-          "guardrails": [
-            "Never submit without explicit user confirmation.",
-            "Never fabricate work authorization, salary history, degree, or experience.",
-            "Never store API keys or credentials in job metadata.",
-            "Record only application status and user-approved notes."
-          ]
-        }
-      }
-    },
-    {
       "jobKey": "url:https://japan-dev.com/jobs/shizuku-ai/shizuku-ai-software-engineer-backend-zvv206",
       "company": "Shizuku AI",
       "title": "Software Engineer, Backend",
       "score": 69,
       "grade": "C",
       "priority": "P2",
-      "startedAt": "2026-05-16T23:18:55.638Z",
-      "completedAt": "2026-05-16T23:18:55.640Z",
+      "startedAt": "2026-05-17T23:21:27.236Z",
+      "completedAt": "2026-05-17T23:21:27.238Z",
       "workers": {
         "evaluation": {
           "recommendation": "觀望",
@@ -2864,8 +2219,8 @@
       "score": 69,
       "grade": "C",
       "priority": "P2",
-      "startedAt": "2026-05-16T23:18:55.639Z",
-      "completedAt": "2026-05-16T23:18:55.640Z",
+      "startedAt": "2026-05-17T23:21:27.236Z",
+      "completedAt": "2026-05-17T23:21:27.238Z",
       "workers": {
         "evaluation": {
           "recommendation": "觀望",
@@ -3074,8 +2429,8 @@
       "score": 69,
       "grade": "C",
       "priority": "P2",
-      "startedAt": "2026-05-16T23:18:55.639Z",
-      "completedAt": "2026-05-16T23:18:55.641Z",
+      "startedAt": "2026-05-17T23:21:27.237Z",
+      "completedAt": "2026-05-17T23:21:27.239Z",
       "workers": {
         "evaluation": {
           "recommendation": "觀望",
@@ -3276,14 +2631,660 @@
       }
     },
     {
+      "jobKey": "url:https://www.tokyodev.com/companies/moneyforward/jobs/lead-backend-engineer-digital-bank",
+      "company": "Money Forward",
+      "title": "Lead Backend Engineer, Digital Bank",
+      "score": 69,
+      "grade": "C",
+      "priority": "P2",
+      "startedAt": "2026-05-17T23:21:27.238Z",
+      "completedAt": "2026-05-17T23:21:27.240Z",
+      "workers": {
+        "evaluation": {
+          "recommendation": "觀望",
+          "keywords": [
+            "API",
+            "engineer",
+            "product",
+            "data"
+          ],
+          "nextActions": [
+            "先與高分職缺比較，不急著投遞",
+            "補齊 JD 或標記喜歡 / 不喜歡以改善後續排序"
+          ]
+        },
+        "research": {
+          "signals": [
+            "AI / data / platform signal",
+            "growth or funding signal",
+            "remote or hybrid signal"
+          ],
+          "evidenceCount": 4,
+          "questions": [
+            "What business unit owns the Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka role?",
+            "What measurable outcomes would this team expect in the first 90 days?",
+            "What recent company/product signals change the risk or upside?",
+            "Which CV proof points should be highlighted for this company?"
+          ]
+        },
+        "application": {
+          "checklist": [
+            "Confirm posting is active.",
+            "Generate tailored ATS PDF.",
+            "Prepare outreach and follow-up.",
+            "Log status and next follow-up."
+          ]
+        },
+        "compensation": {
+          "jobKey": "url:https://japan-dev.com/jobs/money-forward/money-forward-product-reliability-engineer-cre-money-forward-cloud-fukuoka-kgsbzs",
+          "company": "Money Forward",
+          "title": "Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka",
+          "market": "global",
+          "inferredLevel": "mid",
+          "candidateLevel": "mid",
+          "leverage": "medium",
+          "evidence": {
+            "salaryMentions": [],
+            "benefitSignals": [
+              "work-mode flexibility",
+              "signing / relocation",
+              "learning budget"
+            ]
+          },
+          "marketBenchmark": {
+            "currency": "USD",
+            "unit": "annual",
+            "range": "USD 70,000 – 115,000",
+            "midpoint": "USD 90,000",
+            "floor": 70000,
+            "ceiling": 115000,
+            "source": "Arc.dev / Ruby on Remote 2024-2026",
+            "note": "Remote/global rates. Taiwan-based remote developers average ~$54K USD; Japan-based ~$68-115K USD depending on stack."
+          },
+          "structure": {
+            "baseSalary": [
+              "Market range for mid (GLOBAL): USD 70,000 – 115,000 annual. Source: Arc.dev / Ruby on Remote 2024-2026."
+            ],
+            "bonus": "Ask whether there is annual bonus, performance bonus, or sign-on bonus.",
+            "equity": "Ask whether equity, RSU, options, or profit-sharing exists.",
+            "benefits": [
+              "Health / insurance coverage",
+              "Paid leave and holidays",
+              "Learning budget or certification support",
+              "Remote/hybrid setup, commute, or relocation support",
+              "Review cycle and promotion timeline"
+            ],
+            "nonCashLevers": [
+              "Title / level calibration",
+              "Start date flexibility",
+              "Remote days",
+              "Equipment budget",
+              "First review at 3 or 6 months",
+              "Conference / learning budget"
+            ]
+          },
+          "negotiationScript": {
+            "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka package, including base, bonus, equity, and review cycle?",
+            "valueAnchor": "Based on the scope of Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka and my fit around TypeScript, React, Next.js, engineer, I would like to calibrate toward the stronger end of the range if the team sees the level match. My research indicates the GLOBAL midpoint for this level is around USD 90,000 (annual).",
+            "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
+            "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
+            "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
+          },
+          "redLines": [
+            "Do not disclose current compensation unless legally appropriate and strategically useful.",
+            "Do not accept verbal-only compensation details; ask for written package components.",
+            "Do not negotiate before confirming level, scope, work mode, and review cycle.",
+            "Do not trade base salary away without valuing the replacement benefit."
+          ],
+          "nextActions": [
+            "Collect market compensation evidence before naming a number.",
+            "Ask recruiter for approved range and level.",
+            "Map the job scope to proof points in the tailored CV.",
+            "Prepare one counter package with base, bonus/equity, and non-cash levers."
+          ],
+          "targetFrame": "Market benchmark for mid in GLOBAL is USD 70,000 – 115,000 (annual). Do not name a number first — ask for the approved range, then anchor near the midpoint or above."
+        },
+        "stories": [
+          {
+            "id": "story-1",
+            "theme": "frontend product execution",
+            "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
+            "applicableQuestions": [
+              "Tell me about a project you are proud of.",
+              "Tell me about a time you handled ambiguity.",
+              "How have you applied frontend product execution?"
+            ],
+            "star": {
+              "situation": "You were tasked with a frontend product challenge. Proof point: \"Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.\" — set the scene: what product, what team size, and what was broken or missing?",
+              "task": "What was the specific outcome you were accountable for? Include the success metric (e.g. performance score, user adoption rate, release date).",
+              "action": "Walk through the key technical decisions: component architecture, state management tradeoffs, accessibility choices, or API contract design.",
+              "result": "Quantify the impact: load time delta, user adoption %, code reduction %, or stakeholder feedback. If no number, describe the quality or velocity improvement.",
+              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
+            },
+            "keywords": [
+              "frontend product execution",
+              "JavaScript",
+              "TypeScript",
+              "React",
+              "Next.js",
+              "CSS",
+              "Tailwind",
+              "Accessibility"
+            ],
+            "relevance": 0
+          },
+          {
+            "id": "story-2",
+            "theme": "data-heavy product decisions",
+            "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
+            "applicableQuestions": [
+              "Tell me about a project you are proud of.",
+              "Tell me about a time you handled ambiguity.",
+              "How have you applied data-heavy product decisions?"
+            ],
+            "star": {
+              "situation": "You were working with a data-intensive product. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — describe the data volume, the user workflow, and what was difficult to render or interpret.",
+              "task": "What decision did you own? (chart type, data model, aggregation strategy, caching layer, etc.)",
+              "action": "Explain how you chose between options, what you built or prototyped, and how you validated your approach with data or users.",
+              "result": "State the outcome: query latency, dashboard load time, user comprehension improvement, or reduction in support requests.",
+              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
+            },
+            "keywords": [
+              "data-heavy product decisions",
+              "JavaScript",
+              "TypeScript",
+              "React",
+              "Next.js",
+              "CSS",
+              "Tailwind",
+              "Accessibility"
+            ],
+            "relevance": 0
+          },
+          {
+            "id": "story-3",
+            "theme": "systems and API collaboration",
+            "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
+            "applicableQuestions": [
+              "Tell me about a project you are proud of.",
+              "Tell me about a time you handled ambiguity.",
+              "How have you applied systems and API collaboration?"
+            ],
+            "star": {
+              "situation": "You collaborated across system boundaries. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — name the systems, teams, and integration surface area.",
+              "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
+              "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
+              "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
+              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
+            },
+            "keywords": [
+              "systems and API collaboration",
+              "JavaScript",
+              "TypeScript",
+              "React",
+              "Next.js",
+              "CSS",
+              "Tailwind",
+              "Accessibility"
+            ],
+            "relevance": 0
+          }
+        ],
+        "applyAgent": {
+          "mode": "human-in-the-loop",
+          "url": "https://www.tokyodev.com/companies/moneyforward/jobs/lead-backend-engineer-digital-bank",
+          "steps": [
+            "Open the application URL in a controlled browser session.",
+            "Extract visible form fields and required uploads.",
+            "Map CV profile fields to the form without submitting.",
+            "Prepare tailored PDF and outreach text.",
+            "Stop before final submit and ask the user to review."
+          ],
+          "guardrails": [
+            "Never submit without explicit user confirmation.",
+            "Never fabricate work authorization, salary history, degree, or experience.",
+            "Never store API keys or credentials in job metadata.",
+            "Record only application status and user-approved notes."
+          ]
+        }
+      }
+    },
+    {
+      "jobKey": "url:https://www.tokyodev.com/companies/moneyforward/jobs/infrastructure-engineer-sre-aws",
+      "company": "Money Forward",
+      "title": "Infrastructure Engineer (SRE-AWS)",
+      "score": 69,
+      "grade": "C",
+      "priority": "P2",
+      "startedAt": "2026-05-17T23:21:27.238Z",
+      "completedAt": "2026-05-17T23:21:27.240Z",
+      "workers": {
+        "evaluation": {
+          "recommendation": "觀望",
+          "keywords": [
+            "TypeScript",
+            "React",
+            "Performance Optimization",
+            "engineer",
+            "product",
+            "data"
+          ],
+          "nextActions": [
+            "先與高分職缺比較，不急著投遞",
+            "補齊 JD 或標記喜歡 / 不喜歡以改善後續排序"
+          ]
+        },
+        "research": {
+          "signals": [
+            "AI / data / platform signal",
+            "growth or funding signal",
+            "remote or hybrid signal"
+          ],
+          "evidenceCount": 4,
+          "questions": [
+            "What business unit owns the Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka role?",
+            "What measurable outcomes would this team expect in the first 90 days?",
+            "What recent company/product signals change the risk or upside?",
+            "Which CV proof points should be highlighted for this company?"
+          ]
+        },
+        "application": {
+          "checklist": [
+            "Confirm posting is active.",
+            "Generate tailored ATS PDF.",
+            "Prepare outreach and follow-up.",
+            "Log status and next follow-up."
+          ]
+        },
+        "compensation": {
+          "jobKey": "url:https://japan-dev.com/jobs/money-forward/money-forward-product-reliability-engineer-cre-money-forward-cloud-fukuoka-kgsbzs",
+          "company": "Money Forward",
+          "title": "Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka",
+          "market": "global",
+          "inferredLevel": "mid",
+          "candidateLevel": "mid",
+          "leverage": "medium",
+          "evidence": {
+            "salaryMentions": [],
+            "benefitSignals": [
+              "work-mode flexibility",
+              "signing / relocation",
+              "learning budget"
+            ]
+          },
+          "marketBenchmark": {
+            "currency": "USD",
+            "unit": "annual",
+            "range": "USD 70,000 – 115,000",
+            "midpoint": "USD 90,000",
+            "floor": 70000,
+            "ceiling": 115000,
+            "source": "Arc.dev / Ruby on Remote 2024-2026",
+            "note": "Remote/global rates. Taiwan-based remote developers average ~$54K USD; Japan-based ~$68-115K USD depending on stack."
+          },
+          "structure": {
+            "baseSalary": [
+              "Market range for mid (GLOBAL): USD 70,000 – 115,000 annual. Source: Arc.dev / Ruby on Remote 2024-2026."
+            ],
+            "bonus": "Ask whether there is annual bonus, performance bonus, or sign-on bonus.",
+            "equity": "Ask whether equity, RSU, options, or profit-sharing exists.",
+            "benefits": [
+              "Health / insurance coverage",
+              "Paid leave and holidays",
+              "Learning budget or certification support",
+              "Remote/hybrid setup, commute, or relocation support",
+              "Review cycle and promotion timeline"
+            ],
+            "nonCashLevers": [
+              "Title / level calibration",
+              "Start date flexibility",
+              "Remote days",
+              "Equipment budget",
+              "First review at 3 or 6 months",
+              "Conference / learning budget"
+            ]
+          },
+          "negotiationScript": {
+            "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka package, including base, bonus, equity, and review cycle?",
+            "valueAnchor": "Based on the scope of Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka and my fit around TypeScript, React, Next.js, engineer, I would like to calibrate toward the stronger end of the range if the team sees the level match. My research indicates the GLOBAL midpoint for this level is around USD 90,000 (annual).",
+            "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
+            "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
+            "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
+          },
+          "redLines": [
+            "Do not disclose current compensation unless legally appropriate and strategically useful.",
+            "Do not accept verbal-only compensation details; ask for written package components.",
+            "Do not negotiate before confirming level, scope, work mode, and review cycle.",
+            "Do not trade base salary away without valuing the replacement benefit."
+          ],
+          "nextActions": [
+            "Collect market compensation evidence before naming a number.",
+            "Ask recruiter for approved range and level.",
+            "Map the job scope to proof points in the tailored CV.",
+            "Prepare one counter package with base, bonus/equity, and non-cash levers."
+          ],
+          "targetFrame": "Market benchmark for mid in GLOBAL is USD 70,000 – 115,000 (annual). Do not name a number first — ask for the approved range, then anchor near the midpoint or above."
+        },
+        "stories": [
+          {
+            "id": "story-1",
+            "theme": "frontend product execution",
+            "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
+            "applicableQuestions": [
+              "Tell me about a project you are proud of.",
+              "Tell me about a time you handled ambiguity.",
+              "How have you applied frontend product execution?"
+            ],
+            "star": {
+              "situation": "You were tasked with a frontend product challenge. Proof point: \"Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.\" — set the scene: what product, what team size, and what was broken or missing?",
+              "task": "What was the specific outcome you were accountable for? Include the success metric (e.g. performance score, user adoption rate, release date).",
+              "action": "Walk through the key technical decisions: component architecture, state management tradeoffs, accessibility choices, or API contract design.",
+              "result": "Quantify the impact: load time delta, user adoption %, code reduction %, or stakeholder feedback. If no number, describe the quality or velocity improvement.",
+              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
+            },
+            "keywords": [
+              "frontend product execution",
+              "JavaScript",
+              "TypeScript",
+              "React",
+              "Next.js",
+              "CSS",
+              "Tailwind",
+              "Accessibility"
+            ],
+            "relevance": 2
+          },
+          {
+            "id": "story-2",
+            "theme": "data-heavy product decisions",
+            "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
+            "applicableQuestions": [
+              "Tell me about a project you are proud of.",
+              "Tell me about a time you handled ambiguity.",
+              "How have you applied data-heavy product decisions?"
+            ],
+            "star": {
+              "situation": "You were working with a data-intensive product. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — describe the data volume, the user workflow, and what was difficult to render or interpret.",
+              "task": "What decision did you own? (chart type, data model, aggregation strategy, caching layer, etc.)",
+              "action": "Explain how you chose between options, what you built or prototyped, and how you validated your approach with data or users.",
+              "result": "State the outcome: query latency, dashboard load time, user comprehension improvement, or reduction in support requests.",
+              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
+            },
+            "keywords": [
+              "data-heavy product decisions",
+              "JavaScript",
+              "TypeScript",
+              "React",
+              "Next.js",
+              "CSS",
+              "Tailwind",
+              "Accessibility"
+            ],
+            "relevance": 2
+          },
+          {
+            "id": "story-3",
+            "theme": "systems and API collaboration",
+            "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
+            "applicableQuestions": [
+              "Tell me about a project you are proud of.",
+              "Tell me about a time you handled ambiguity.",
+              "How have you applied systems and API collaboration?"
+            ],
+            "star": {
+              "situation": "You collaborated across system boundaries. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — name the systems, teams, and integration surface area.",
+              "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
+              "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
+              "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
+              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
+            },
+            "keywords": [
+              "systems and API collaboration",
+              "JavaScript",
+              "TypeScript",
+              "React",
+              "Next.js",
+              "CSS",
+              "Tailwind",
+              "Accessibility"
+            ],
+            "relevance": 2
+          }
+        ],
+        "applyAgent": {
+          "mode": "human-in-the-loop",
+          "url": "https://www.tokyodev.com/companies/moneyforward/jobs/infrastructure-engineer-sre-aws",
+          "steps": [
+            "Open the application URL in a controlled browser session.",
+            "Extract visible form fields and required uploads.",
+            "Map CV profile fields to the form without submitting.",
+            "Prepare tailored PDF and outreach text.",
+            "Stop before final submit and ask the user to review."
+          ],
+          "guardrails": [
+            "Never submit without explicit user confirmation.",
+            "Never fabricate work authorization, salary history, degree, or experience.",
+            "Never store API keys or credentials in job metadata.",
+            "Record only application status and user-approved notes."
+          ]
+        }
+      }
+    },
+    {
+      "jobKey": "url:https://www.tokyodev.com/companies/tokuty/jobs/full-stack-engineer",
+      "company": "Tokuty",
+      "title": "Full Stack Engineer",
+      "score": 69,
+      "grade": "C",
+      "priority": "P2",
+      "startedAt": "2026-05-17T23:21:27.238Z",
+      "completedAt": "2026-05-17T23:21:27.240Z",
+      "workers": {
+        "evaluation": {
+          "recommendation": "觀望",
+          "keywords": [
+            "React",
+            "design system",
+            "engineer",
+            "product"
+          ],
+          "nextActions": [
+            "先與高分職缺比較，不急著投遞",
+            "補齊 JD 或標記喜歡 / 不喜歡以改善後續排序"
+          ]
+        },
+        "research": {
+          "signals": [],
+          "evidenceCount": 0,
+          "questions": []
+        },
+        "application": {
+          "checklist": [
+            "Confirm posting is active.",
+            "Generate tailored ATS PDF.",
+            "Prepare outreach and follow-up.",
+            "Log status and next follow-up."
+          ]
+        },
+        "compensation": {
+          "jobKey": "url:https://www.tokyodev.com/companies/tokuty/jobs/full-stack-engineer",
+          "company": "Tokuty",
+          "title": "Full Stack Engineer",
+          "market": "global",
+          "inferredLevel": "mid",
+          "candidateLevel": "mid",
+          "leverage": "low",
+          "evidence": {
+            "salaryMentions": [],
+            "benefitSignals": []
+          },
+          "marketBenchmark": {
+            "currency": "USD",
+            "unit": "annual",
+            "range": "USD 70,000 – 115,000",
+            "midpoint": "USD 90,000",
+            "floor": 70000,
+            "ceiling": 115000,
+            "source": "Arc.dev / Ruby on Remote 2024-2026",
+            "note": "Remote/global rates. Taiwan-based remote developers average ~$54K USD; Japan-based ~$68-115K USD depending on stack."
+          },
+          "structure": {
+            "baseSalary": [
+              "Market range for mid (GLOBAL): USD 70,000 – 115,000 annual. Source: Arc.dev / Ruby on Remote 2024-2026."
+            ],
+            "bonus": "Ask whether there is annual bonus, performance bonus, or sign-on bonus.",
+            "equity": "Ask whether equity, RSU, options, or profit-sharing exists.",
+            "benefits": [
+              "Health / insurance coverage",
+              "Paid leave and holidays",
+              "Learning budget or certification support",
+              "Remote/hybrid setup, commute, or relocation support",
+              "Review cycle and promotion timeline"
+            ],
+            "nonCashLevers": [
+              "Title / level calibration",
+              "Start date flexibility",
+              "Remote days",
+              "Equipment budget",
+              "First review at 3 or 6 months",
+              "Conference / learning budget"
+            ]
+          },
+          "negotiationScript": {
+            "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Full Stack Engineer package, including base, bonus, equity, and review cycle?",
+            "valueAnchor": "Based on the scope of Full Stack Engineer and my fit around React, design system, engineer, product, I would like to calibrate toward the stronger end of the range if the team sees the level match. My research indicates the GLOBAL midpoint for this level is around USD 90,000 (annual).",
+            "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
+            "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
+            "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
+          },
+          "redLines": [
+            "Do not disclose current compensation unless legally appropriate and strategically useful.",
+            "Do not accept verbal-only compensation details; ask for written package components.",
+            "Do not negotiate before confirming level, scope, work mode, and review cycle.",
+            "Do not trade base salary away without valuing the replacement benefit."
+          ],
+          "nextActions": [
+            "Collect market compensation evidence before naming a number.",
+            "Ask recruiter for approved range and level.",
+            "Map the job scope to proof points in the tailored CV.",
+            "Prepare one counter package with base, bonus/equity, and non-cash levers."
+          ],
+          "targetFrame": "Market benchmark for mid in GLOBAL is USD 70,000 – 115,000 (annual). Do not name a number first — ask for the approved range, then anchor near the midpoint or above."
+        },
+        "stories": [
+          {
+            "id": "story-1",
+            "theme": "frontend product execution",
+            "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
+            "applicableQuestions": [
+              "Tell me about a project you are proud of.",
+              "Tell me about a time you handled ambiguity.",
+              "How have you applied frontend product execution?"
+            ],
+            "star": {
+              "situation": "You were tasked with a frontend product challenge. Proof point: \"Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.\" — set the scene: what product, what team size, and what was broken or missing?",
+              "task": "What was the specific outcome you were accountable for? Include the success metric (e.g. performance score, user adoption rate, release date).",
+              "action": "Walk through the key technical decisions: component architecture, state management tradeoffs, accessibility choices, or API contract design.",
+              "result": "Quantify the impact: load time delta, user adoption %, code reduction %, or stakeholder feedback. If no number, describe the quality or velocity improvement.",
+              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
+            },
+            "keywords": [
+              "frontend product execution",
+              "JavaScript",
+              "TypeScript",
+              "React",
+              "Next.js",
+              "CSS",
+              "Tailwind",
+              "Accessibility"
+            ],
+            "relevance": 1
+          },
+          {
+            "id": "story-2",
+            "theme": "data-heavy product decisions",
+            "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
+            "applicableQuestions": [
+              "Tell me about a project you are proud of.",
+              "Tell me about a time you handled ambiguity.",
+              "How have you applied data-heavy product decisions?"
+            ],
+            "star": {
+              "situation": "You were working with a data-intensive product. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — describe the data volume, the user workflow, and what was difficult to render or interpret.",
+              "task": "What decision did you own? (chart type, data model, aggregation strategy, caching layer, etc.)",
+              "action": "Explain how you chose between options, what you built or prototyped, and how you validated your approach with data or users.",
+              "result": "State the outcome: query latency, dashboard load time, user comprehension improvement, or reduction in support requests.",
+              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
+            },
+            "keywords": [
+              "data-heavy product decisions",
+              "JavaScript",
+              "TypeScript",
+              "React",
+              "Next.js",
+              "CSS",
+              "Tailwind",
+              "Accessibility"
+            ],
+            "relevance": 1
+          },
+          {
+            "id": "story-3",
+            "theme": "systems and API collaboration",
+            "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
+            "applicableQuestions": [
+              "Tell me about a project you are proud of.",
+              "Tell me about a time you handled ambiguity.",
+              "How have you applied systems and API collaboration?"
+            ],
+            "star": {
+              "situation": "You collaborated across system boundaries. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — name the systems, teams, and integration surface area.",
+              "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
+              "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
+              "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
+              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
+            },
+            "keywords": [
+              "systems and API collaboration",
+              "JavaScript",
+              "TypeScript",
+              "React",
+              "Next.js",
+              "CSS",
+              "Tailwind",
+              "Accessibility"
+            ],
+            "relevance": 1
+          }
+        ],
+        "applyAgent": {
+          "mode": "human-in-the-loop",
+          "url": "https://www.tokyodev.com/companies/tokuty/jobs/full-stack-engineer",
+          "steps": [
+            "Open the application URL in a controlled browser session.",
+            "Extract visible form fields and required uploads.",
+            "Map CV profile fields to the form without submitting.",
+            "Prepare tailored PDF and outreach text.",
+            "Stop before final submit and ask the user to review."
+          ],
+          "guardrails": [
+            "Never submit without explicit user confirmation.",
+            "Never fabricate work authorization, salary history, degree, or experience.",
+            "Never store API keys or credentials in job metadata.",
+            "Record only application status and user-approved notes."
+          ]
+        }
+      }
+    },
+    {
       "jobKey": "url:https://japan-dev.com/jobs/metanomaly/mewtant-growth-engineer-so4y2r",
       "company": "Metanomaly",
       "title": "Frontend Design Engineer",
       "score": 67,
       "grade": "C",
       "priority": "P2",
-      "startedAt": "2026-05-16T23:18:55.639Z",
-      "completedAt": "2026-05-16T23:18:55.641Z",
+      "startedAt": "2026-05-17T23:21:27.239Z",
+      "completedAt": "2026-05-17T23:21:27.240Z",
       "workers": {
         "evaluation": {
           "recommendation": "觀望",
@@ -3492,8 +3493,8 @@
       "score": 67,
       "grade": "C",
       "priority": "P2",
-      "startedAt": "2026-05-16T23:18:55.640Z",
-      "completedAt": "2026-05-16T23:18:55.642Z",
+      "startedAt": "2026-05-17T23:21:27.240Z",
+      "completedAt": "2026-05-17T23:21:27.242Z",
       "workers": {
         "evaluation": {
           "recommendation": "觀望",
@@ -3530,7 +3531,7 @@
           ]
         },
         "compensation": {
-          "jobKey": "url:https://www.tokyodev.com/companies/moneyforward/jobs/product-reliability-engineer-cre-money-forward-cloud-fukuoka",
+          "jobKey": "url:https://japan-dev.com/jobs/money-forward/money-forward-product-reliability-engineer-cre-money-forward-cloud-fukuoka-kgsbzs",
           "company": "Money Forward",
           "title": "Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka",
           "market": "global",
@@ -3541,7 +3542,8 @@
             "salaryMentions": [],
             "benefitSignals": [
               "work-mode flexibility",
-              "signing / relocation"
+              "signing / relocation",
+              "learning budget"
             ]
           },
           "marketBenchmark": {
@@ -3709,8 +3711,8 @@
       "score": 63,
       "grade": "C",
       "priority": "P2",
-      "startedAt": "2026-05-16T23:18:55.640Z",
-      "completedAt": "2026-05-16T23:18:55.642Z",
+      "startedAt": "2026-05-17T23:21:27.240Z",
+      "completedAt": "2026-05-17T23:21:27.242Z",
       "workers": {
         "evaluation": {
           "recommendation": "觀望",
@@ -3923,8 +3925,8 @@
       "score": 63,
       "grade": "C",
       "priority": "P2",
-      "startedAt": "2026-05-16T23:18:55.641Z",
-      "completedAt": "2026-05-16T23:18:55.642Z",
+      "startedAt": "2026-05-17T23:21:27.240Z",
+      "completedAt": "2026-05-17T23:21:27.242Z",
       "workers": {
         "evaluation": {
           "recommendation": "觀望",
@@ -4127,8 +4129,8 @@
       "score": 63,
       "grade": "C",
       "priority": "P2",
-      "startedAt": "2026-05-16T23:18:55.641Z",
-      "completedAt": "2026-05-16T23:18:55.643Z",
+      "startedAt": "2026-05-17T23:21:27.240Z",
+      "completedAt": "2026-05-17T23:21:27.242Z",
       "workers": {
         "evaluation": {
           "recommendation": "觀望",
@@ -4336,8 +4338,8 @@
       "score": 63,
       "grade": "C",
       "priority": "P2",
-      "startedAt": "2026-05-16T23:18:55.642Z",
-      "completedAt": "2026-05-16T23:18:55.644Z",
+      "startedAt": "2026-05-17T23:21:27.242Z",
+      "completedAt": "2026-05-17T23:21:27.244Z",
       "workers": {
         "evaluation": {
           "recommendation": "觀望",
@@ -4545,8 +4547,8 @@
       "score": 63,
       "grade": "C",
       "priority": "P2",
-      "startedAt": "2026-05-16T23:18:55.642Z",
-      "completedAt": "2026-05-16T23:18:55.644Z",
+      "startedAt": "2026-05-17T23:21:27.242Z",
+      "completedAt": "2026-05-17T23:21:27.244Z",
       "workers": {
         "evaluation": {
           "recommendation": "觀望",
@@ -4685,8 +4687,8 @@
       "score": 62,
       "grade": "C",
       "priority": "P2",
-      "startedAt": "2026-05-16T23:18:55.642Z",
-      "completedAt": "2026-05-16T23:18:55.644Z",
+      "startedAt": "2026-05-17T23:21:27.242Z",
+      "completedAt": "2026-05-17T23:21:27.244Z",
       "workers": {
         "evaluation": {
           "recommendation": "觀望",
@@ -4893,8 +4895,8 @@
       "score": 62,
       "grade": "C",
       "priority": "P2",
-      "startedAt": "2026-05-16T23:18:55.643Z",
-      "completedAt": "2026-05-16T23:18:55.645Z",
+      "startedAt": "2026-05-17T23:21:27.242Z",
+      "completedAt": "2026-05-17T23:21:27.244Z",
       "workers": {
         "evaluation": {
           "recommendation": "觀望",
@@ -5034,8 +5036,8 @@
       "score": 62,
       "grade": "C",
       "priority": "P2",
-      "startedAt": "2026-05-16T23:18:55.644Z",
-      "completedAt": "2026-05-16T23:18:55.646Z",
+      "startedAt": "2026-05-17T23:21:27.244Z",
+      "completedAt": "2026-05-17T23:21:27.246Z",
       "workers": {
         "evaluation": {
           "recommendation": "觀望",
@@ -5243,8 +5245,8 @@
       "score": 62,
       "grade": "C",
       "priority": "P2",
-      "startedAt": "2026-05-16T23:18:55.644Z",
-      "completedAt": "2026-05-16T23:18:55.646Z",
+      "startedAt": "2026-05-17T23:21:27.244Z",
+      "completedAt": "2026-05-17T23:21:27.246Z",
       "workers": {
         "evaluation": {
           "recommendation": "觀望",
@@ -5282,7 +5284,7 @@
           ]
         },
         "compensation": {
-          "jobKey": "url:https://www.tokyodev.com/companies/moneyforward/jobs/product-reliability-engineer-cre-money-forward-cloud-fukuoka",
+          "jobKey": "url:https://japan-dev.com/jobs/money-forward/money-forward-product-reliability-engineer-cre-money-forward-cloud-fukuoka-kgsbzs",
           "company": "Money Forward",
           "title": "Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka",
           "market": "global",
@@ -5293,7 +5295,8 @@
             "salaryMentions": [],
             "benefitSignals": [
               "work-mode flexibility",
-              "signing / relocation"
+              "signing / relocation",
+              "learning budget"
             ]
           },
           "marketBenchmark": {
@@ -5455,372 +5458,14 @@
       }
     },
     {
-      "jobKey": "url:https://www.tokyodev.com/companies/moneyforward/jobs/security-specialist-product-security-ciso-office-tokyo",
-      "company": "Money Forward",
-      "title": "Security Specialist (Product Security), CISO Office, Tokyo",
-      "score": 62,
-      "grade": "C",
-      "priority": "P2",
-      "startedAt": "2026-05-16T23:18:55.644Z",
-      "completedAt": "2026-05-16T23:18:55.646Z",
-      "workers": {
-        "evaluation": {
-          "recommendation": "觀望",
-          "keywords": [
-            "product",
-            "data",
-            "visualization"
-          ],
-          "nextActions": [
-            "先與高分職缺比較，不急著投遞",
-            "補齊 JD 或標記喜歡 / 不喜歡以改善後續排序"
-          ]
-        },
-        "research": {
-          "signals": [
-            "AI / data / platform signal",
-            "growth or funding signal",
-            "remote or hybrid signal"
-          ],
-          "evidenceCount": 4,
-          "questions": [
-            "What business unit owns the Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka role?",
-            "What measurable outcomes would this team expect in the first 90 days?",
-            "What recent company/product signals change the risk or upside?",
-            "Which CV proof points should be highlighted for this company?"
-          ]
-        },
-        "application": {
-          "checklist": [
-            "Confirm posting is active.",
-            "Generate tailored ATS PDF.",
-            "Prepare outreach and follow-up.",
-            "Log status and next follow-up."
-          ]
-        },
-        "compensation": {
-          "jobKey": "url:https://www.tokyodev.com/companies/moneyforward/jobs/product-reliability-engineer-cre-money-forward-cloud-fukuoka",
-          "company": "Money Forward",
-          "title": "Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka",
-          "market": "global",
-          "inferredLevel": "mid",
-          "candidateLevel": "mid",
-          "leverage": "medium",
-          "evidence": {
-            "salaryMentions": [],
-            "benefitSignals": [
-              "work-mode flexibility",
-              "signing / relocation"
-            ]
-          },
-          "marketBenchmark": {
-            "currency": "USD",
-            "unit": "annual",
-            "range": "USD 70,000 – 115,000",
-            "midpoint": "USD 90,000",
-            "floor": 70000,
-            "ceiling": 115000,
-            "source": "Arc.dev / Ruby on Remote 2024-2026",
-            "note": "Remote/global rates. Taiwan-based remote developers average ~$54K USD; Japan-based ~$68-115K USD depending on stack."
-          },
-          "structure": {
-            "baseSalary": [
-              "Market range for mid (GLOBAL): USD 70,000 – 115,000 annual. Source: Arc.dev / Ruby on Remote 2024-2026."
-            ],
-            "bonus": "Ask whether there is annual bonus, performance bonus, or sign-on bonus.",
-            "equity": "Ask whether equity, RSU, options, or profit-sharing exists.",
-            "benefits": [
-              "Health / insurance coverage",
-              "Paid leave and holidays",
-              "Learning budget or certification support",
-              "Remote/hybrid setup, commute, or relocation support",
-              "Review cycle and promotion timeline"
-            ],
-            "nonCashLevers": [
-              "Title / level calibration",
-              "Start date flexibility",
-              "Remote days",
-              "Equipment budget",
-              "First review at 3 or 6 months",
-              "Conference / learning budget"
-            ]
-          },
-          "negotiationScript": {
-            "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka package, including base, bonus, equity, and review cycle?",
-            "valueAnchor": "Based on the scope of Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka and my fit around TypeScript, React, Next.js, engineer, I would like to calibrate toward the stronger end of the range if the team sees the level match. My research indicates the GLOBAL midpoint for this level is around USD 90,000 (annual).",
-            "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
-            "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
-            "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
-          },
-          "redLines": [
-            "Do not disclose current compensation unless legally appropriate and strategically useful.",
-            "Do not accept verbal-only compensation details; ask for written package components.",
-            "Do not negotiate before confirming level, scope, work mode, and review cycle.",
-            "Do not trade base salary away without valuing the replacement benefit."
-          ],
-          "nextActions": [
-            "Collect market compensation evidence before naming a number.",
-            "Ask recruiter for approved range and level.",
-            "Map the job scope to proof points in the tailored CV.",
-            "Prepare one counter package with base, bonus/equity, and non-cash levers."
-          ],
-          "targetFrame": "Market benchmark for mid in GLOBAL is USD 70,000 – 115,000 (annual). Do not name a number first — ask for the approved range, then anchor near the midpoint or above."
-        },
-        "stories": [
-          {
-            "id": "story-1",
-            "theme": "frontend product execution",
-            "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
-            "applicableQuestions": [
-              "Tell me about a project you are proud of.",
-              "Tell me about a time you handled ambiguity.",
-              "How have you applied frontend product execution?"
-            ],
-            "star": {
-              "situation": "You were tasked with a frontend product challenge. Proof point: \"Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.\" — set the scene: what product, what team size, and what was broken or missing?",
-              "task": "What was the specific outcome you were accountable for? Include the success metric (e.g. performance score, user adoption rate, release date).",
-              "action": "Walk through the key technical decisions: component architecture, state management tradeoffs, accessibility choices, or API contract design.",
-              "result": "Quantify the impact: load time delta, user adoption %, code reduction %, or stakeholder feedback. If no number, describe the quality or velocity improvement.",
-              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
-            },
-            "keywords": [
-              "frontend product execution",
-              "JavaScript",
-              "TypeScript",
-              "React",
-              "Next.js",
-              "CSS",
-              "Tailwind",
-              "Accessibility"
-            ],
-            "relevance": 0
-          },
-          {
-            "id": "story-2",
-            "theme": "data-heavy product decisions",
-            "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
-            "applicableQuestions": [
-              "Tell me about a project you are proud of.",
-              "Tell me about a time you handled ambiguity.",
-              "How have you applied data-heavy product decisions?"
-            ],
-            "star": {
-              "situation": "You were working with a data-intensive product. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — describe the data volume, the user workflow, and what was difficult to render or interpret.",
-              "task": "What decision did you own? (chart type, data model, aggregation strategy, caching layer, etc.)",
-              "action": "Explain how you chose between options, what you built or prototyped, and how you validated your approach with data or users.",
-              "result": "State the outcome: query latency, dashboard load time, user comprehension improvement, or reduction in support requests.",
-              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
-            },
-            "keywords": [
-              "data-heavy product decisions",
-              "JavaScript",
-              "TypeScript",
-              "React",
-              "Next.js",
-              "CSS",
-              "Tailwind",
-              "Accessibility"
-            ],
-            "relevance": 0
-          },
-          {
-            "id": "story-3",
-            "theme": "systems and API collaboration",
-            "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
-            "applicableQuestions": [
-              "Tell me about a project you are proud of.",
-              "Tell me about a time you handled ambiguity.",
-              "How have you applied systems and API collaboration?"
-            ],
-            "star": {
-              "situation": "You collaborated across system boundaries. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — name the systems, teams, and integration surface area.",
-              "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
-              "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
-              "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
-              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
-            },
-            "keywords": [
-              "systems and API collaboration",
-              "JavaScript",
-              "TypeScript",
-              "React",
-              "Next.js",
-              "CSS",
-              "Tailwind",
-              "Accessibility"
-            ],
-            "relevance": 0
-          }
-        ],
-        "applyAgent": {
-          "mode": "human-in-the-loop",
-          "url": "https://www.tokyodev.com/companies/moneyforward/jobs/security-specialist-product-security-ciso-office-tokyo",
-          "steps": [
-            "Open the application URL in a controlled browser session.",
-            "Extract visible form fields and required uploads.",
-            "Map CV profile fields to the form without submitting.",
-            "Prepare tailored PDF and outreach text.",
-            "Stop before final submit and ask the user to review."
-          ],
-          "guardrails": [
-            "Never submit without explicit user confirmation.",
-            "Never fabricate work authorization, salary history, degree, or experience.",
-            "Never store API keys or credentials in job metadata.",
-            "Record only application status and user-approved notes."
-          ]
-        }
-      }
-    },
-    {
-      "jobKey": "url:https://www.tokyodev.com/companies/paypay/jobs/cloud-platform-engineer-db-specialist",
-      "company": "PayPay",
-      "title": "Cloud Platform Engineer (DB Specialist)",
-      "score": 62,
-      "grade": "C",
-      "priority": "P2",
-      "startedAt": "2026-05-16T23:18:55.645Z",
-      "completedAt": "2026-05-16T23:18:55.646Z",
-      "workers": {
-        "evaluation": {
-          "recommendation": "觀望",
-          "keywords": [
-            "remote",
-            "engineer",
-            "data"
-          ],
-          "nextActions": [
-            "先與高分職缺比較，不急著投遞",
-            "補齊 JD 或標記喜歡 / 不喜歡以改善後續排序"
-          ]
-        },
-        "research": {
-          "signals": [],
-          "evidenceCount": 0,
-          "questions": []
-        },
-        "application": {
-          "checklist": [
-            "Confirm posting is active.",
-            "Generate tailored ATS PDF.",
-            "Prepare outreach and follow-up.",
-            "Log status and next follow-up."
-          ]
-        },
-        "compensation": null,
-        "stories": [
-          {
-            "id": "story-1",
-            "theme": "frontend product execution",
-            "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
-            "applicableQuestions": [
-              "Tell me about a project you are proud of.",
-              "Tell me about a time you handled ambiguity.",
-              "How have you applied frontend product execution?"
-            ],
-            "star": {
-              "situation": "You were tasked with a frontend product challenge. Proof point: \"Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.\" — set the scene: what product, what team size, and what was broken or missing?",
-              "task": "What was the specific outcome you were accountable for? Include the success metric (e.g. performance score, user adoption rate, release date).",
-              "action": "Walk through the key technical decisions: component architecture, state management tradeoffs, accessibility choices, or API contract design.",
-              "result": "Quantify the impact: load time delta, user adoption %, code reduction %, or stakeholder feedback. If no number, describe the quality or velocity improvement.",
-              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
-            },
-            "keywords": [
-              "frontend product execution",
-              "JavaScript",
-              "TypeScript",
-              "React",
-              "Next.js",
-              "CSS",
-              "Tailwind",
-              "Accessibility"
-            ],
-            "relevance": 0
-          },
-          {
-            "id": "story-2",
-            "theme": "data-heavy product decisions",
-            "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
-            "applicableQuestions": [
-              "Tell me about a project you are proud of.",
-              "Tell me about a time you handled ambiguity.",
-              "How have you applied data-heavy product decisions?"
-            ],
-            "star": {
-              "situation": "You were working with a data-intensive product. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — describe the data volume, the user workflow, and what was difficult to render or interpret.",
-              "task": "What decision did you own? (chart type, data model, aggregation strategy, caching layer, etc.)",
-              "action": "Explain how you chose between options, what you built or prototyped, and how you validated your approach with data or users.",
-              "result": "State the outcome: query latency, dashboard load time, user comprehension improvement, or reduction in support requests.",
-              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
-            },
-            "keywords": [
-              "data-heavy product decisions",
-              "JavaScript",
-              "TypeScript",
-              "React",
-              "Next.js",
-              "CSS",
-              "Tailwind",
-              "Accessibility"
-            ],
-            "relevance": 0
-          },
-          {
-            "id": "story-3",
-            "theme": "systems and API collaboration",
-            "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
-            "applicableQuestions": [
-              "Tell me about a project you are proud of.",
-              "Tell me about a time you handled ambiguity.",
-              "How have you applied systems and API collaboration?"
-            ],
-            "star": {
-              "situation": "You collaborated across system boundaries. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — name the systems, teams, and integration surface area.",
-              "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
-              "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
-              "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
-              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
-            },
-            "keywords": [
-              "systems and API collaboration",
-              "JavaScript",
-              "TypeScript",
-              "React",
-              "Next.js",
-              "CSS",
-              "Tailwind",
-              "Accessibility"
-            ],
-            "relevance": 0
-          }
-        ],
-        "applyAgent": {
-          "mode": "human-in-the-loop",
-          "url": "https://www.tokyodev.com/companies/paypay/jobs/cloud-platform-engineer-db-specialist",
-          "steps": [
-            "Open the application URL in a controlled browser session.",
-            "Extract visible form fields and required uploads.",
-            "Map CV profile fields to the form without submitting.",
-            "Prepare tailored PDF and outreach text.",
-            "Stop before final submit and ask the user to review."
-          ],
-          "guardrails": [
-            "Never submit without explicit user confirmation.",
-            "Never fabricate work authorization, salary history, degree, or experience.",
-            "Never store API keys or credentials in job metadata.",
-            "Record only application status and user-approved notes."
-          ]
-        }
-      }
-    },
-    {
       "jobKey": "url:https://www.tokyodev.com/companies/paypay/jobs/automation-qa-engineer",
       "company": "PayPay",
       "title": "Automation QA Engineer",
       "score": 62,
       "grade": "C",
       "priority": "P2",
-      "startedAt": "2026-05-16T23:18:55.646Z",
-      "completedAt": "2026-05-16T23:18:55.648Z",
+      "startedAt": "2026-05-17T23:21:27.244Z",
+      "completedAt": "2026-05-17T23:21:27.246Z",
       "workers": {
         "evaluation": {
           "recommendation": "觀望",
@@ -5961,8 +5606,8 @@
       "score": 61,
       "grade": "C",
       "priority": "P2",
-      "startedAt": "2026-05-16T23:18:55.646Z",
-      "completedAt": "2026-05-16T23:18:55.648Z",
+      "startedAt": "2026-05-17T23:21:27.244Z",
+      "completedAt": "2026-05-17T23:21:27.246Z",
       "workers": {
         "evaluation": {
           "recommendation": "觀望",
@@ -6166,8 +5811,8 @@
       "score": 61,
       "grade": "C",
       "priority": "P2",
-      "startedAt": "2026-05-16T23:18:55.646Z",
-      "completedAt": "2026-05-16T23:18:55.648Z",
+      "startedAt": "2026-05-17T23:21:27.246Z",
+      "completedAt": "2026-05-17T23:21:27.246Z",
       "workers": {
         "evaluation": {
           "recommendation": "觀望",
@@ -6370,8 +6015,8 @@
       "score": 61,
       "grade": "C",
       "priority": "P2",
-      "startedAt": "2026-05-16T23:18:55.646Z",
-      "completedAt": "2026-05-16T23:18:55.649Z",
+      "startedAt": "2026-05-17T23:21:27.246Z",
+      "completedAt": "2026-05-17T23:21:27.247Z",
       "workers": {
         "evaluation": {
           "recommendation": "觀望",
@@ -6511,8 +6156,8 @@
       "score": 61,
       "grade": "C",
       "priority": "P2",
-      "startedAt": "2026-05-16T23:18:55.648Z",
-      "completedAt": "2026-05-16T23:18:55.651Z",
+      "startedAt": "2026-05-17T23:21:27.246Z",
+      "completedAt": "2026-05-17T23:21:27.247Z",
       "workers": {
         "evaluation": {
           "recommendation": "觀望",
@@ -6719,8 +6364,8 @@
       "score": 60,
       "grade": "C",
       "priority": "P2",
-      "startedAt": "2026-05-16T23:18:55.648Z",
-      "completedAt": "2026-05-16T23:18:55.651Z",
+      "startedAt": "2026-05-17T23:21:27.246Z",
+      "completedAt": "2026-05-17T23:21:27.249Z",
       "workers": {
         "evaluation": {
           "recommendation": "觀望",
@@ -6927,8 +6572,8 @@
       "score": 60,
       "grade": "C",
       "priority": "P2",
-      "startedAt": "2026-05-16T23:18:55.648Z",
-      "completedAt": "2026-05-16T23:18:55.651Z",
+      "startedAt": "2026-05-17T23:21:27.246Z",
+      "completedAt": "2026-05-17T23:21:27.249Z",
       "workers": {
         "evaluation": {
           "recommendation": "觀望",
@@ -7135,8 +6780,8 @@
       "score": 60,
       "grade": "C",
       "priority": "P2",
-      "startedAt": "2026-05-16T23:18:55.649Z",
-      "completedAt": "2026-05-16T23:18:55.651Z",
+      "startedAt": "2026-05-17T23:21:27.247Z",
+      "completedAt": "2026-05-17T23:21:27.250Z",
       "workers": {
         "evaluation": {
           "recommendation": "觀望",
@@ -7276,8 +6921,8 @@
       "score": 60,
       "grade": "C",
       "priority": "P2",
-      "startedAt": "2026-05-16T23:18:55.651Z",
-      "completedAt": "2026-05-16T23:18:55.652Z",
+      "startedAt": "2026-05-17T23:21:27.247Z",
+      "completedAt": "2026-05-17T23:21:27.250Z",
       "workers": {
         "evaluation": {
           "recommendation": "觀望",
@@ -7417,8 +7062,8 @@
       "score": 60,
       "grade": "C",
       "priority": "P2",
-      "startedAt": "2026-05-16T23:18:55.651Z",
-      "completedAt": "2026-05-16T23:18:55.652Z",
+      "startedAt": "2026-05-17T23:21:27.249Z",
+      "completedAt": "2026-05-17T23:21:27.251Z",
       "workers": {
         "evaluation": {
           "recommendation": "觀望",
@@ -7455,7 +7100,7 @@
           ]
         },
         "compensation": {
-          "jobKey": "url:https://www.tokyodev.com/companies/moneyforward/jobs/product-reliability-engineer-cre-money-forward-cloud-fukuoka",
+          "jobKey": "url:https://japan-dev.com/jobs/money-forward/money-forward-product-reliability-engineer-cre-money-forward-cloud-fukuoka-kgsbzs",
           "company": "Money Forward",
           "title": "Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka",
           "market": "global",
@@ -7466,7 +7111,8 @@
             "salaryMentions": [],
             "benefitSignals": [
               "work-mode flexibility",
-              "signing / relocation"
+              "signing / relocation",
+              "learning budget"
             ]
           },
           "marketBenchmark": {
@@ -7628,14 +7274,373 @@
       }
     },
     {
+      "jobKey": "url:https://www.tokyodev.com/companies/moneyforward/jobs/security-specialist-product-security-ciso-office-tokyo",
+      "company": "Money Forward",
+      "title": "Security Specialist (Product Security), CISO Office, Tokyo",
+      "score": 60,
+      "grade": "C",
+      "priority": "P2",
+      "startedAt": "2026-05-17T23:21:27.249Z",
+      "completedAt": "2026-05-17T23:21:27.251Z",
+      "workers": {
+        "evaluation": {
+          "recommendation": "觀望",
+          "keywords": [
+            "product",
+            "data",
+            "visualization"
+          ],
+          "nextActions": [
+            "先與高分職缺比較，不急著投遞",
+            "補齊 JD 或標記喜歡 / 不喜歡以改善後續排序"
+          ]
+        },
+        "research": {
+          "signals": [
+            "AI / data / platform signal",
+            "growth or funding signal",
+            "remote or hybrid signal"
+          ],
+          "evidenceCount": 4,
+          "questions": [
+            "What business unit owns the Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka role?",
+            "What measurable outcomes would this team expect in the first 90 days?",
+            "What recent company/product signals change the risk or upside?",
+            "Which CV proof points should be highlighted for this company?"
+          ]
+        },
+        "application": {
+          "checklist": [
+            "Confirm posting is active.",
+            "Generate tailored ATS PDF.",
+            "Prepare outreach and follow-up.",
+            "Log status and next follow-up."
+          ]
+        },
+        "compensation": {
+          "jobKey": "url:https://japan-dev.com/jobs/money-forward/money-forward-product-reliability-engineer-cre-money-forward-cloud-fukuoka-kgsbzs",
+          "company": "Money Forward",
+          "title": "Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka",
+          "market": "global",
+          "inferredLevel": "mid",
+          "candidateLevel": "mid",
+          "leverage": "medium",
+          "evidence": {
+            "salaryMentions": [],
+            "benefitSignals": [
+              "work-mode flexibility",
+              "signing / relocation",
+              "learning budget"
+            ]
+          },
+          "marketBenchmark": {
+            "currency": "USD",
+            "unit": "annual",
+            "range": "USD 70,000 – 115,000",
+            "midpoint": "USD 90,000",
+            "floor": 70000,
+            "ceiling": 115000,
+            "source": "Arc.dev / Ruby on Remote 2024-2026",
+            "note": "Remote/global rates. Taiwan-based remote developers average ~$54K USD; Japan-based ~$68-115K USD depending on stack."
+          },
+          "structure": {
+            "baseSalary": [
+              "Market range for mid (GLOBAL): USD 70,000 – 115,000 annual. Source: Arc.dev / Ruby on Remote 2024-2026."
+            ],
+            "bonus": "Ask whether there is annual bonus, performance bonus, or sign-on bonus.",
+            "equity": "Ask whether equity, RSU, options, or profit-sharing exists.",
+            "benefits": [
+              "Health / insurance coverage",
+              "Paid leave and holidays",
+              "Learning budget or certification support",
+              "Remote/hybrid setup, commute, or relocation support",
+              "Review cycle and promotion timeline"
+            ],
+            "nonCashLevers": [
+              "Title / level calibration",
+              "Start date flexibility",
+              "Remote days",
+              "Equipment budget",
+              "First review at 3 or 6 months",
+              "Conference / learning budget"
+            ]
+          },
+          "negotiationScript": {
+            "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka package, including base, bonus, equity, and review cycle?",
+            "valueAnchor": "Based on the scope of Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka and my fit around TypeScript, React, Next.js, engineer, I would like to calibrate toward the stronger end of the range if the team sees the level match. My research indicates the GLOBAL midpoint for this level is around USD 90,000 (annual).",
+            "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
+            "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
+            "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
+          },
+          "redLines": [
+            "Do not disclose current compensation unless legally appropriate and strategically useful.",
+            "Do not accept verbal-only compensation details; ask for written package components.",
+            "Do not negotiate before confirming level, scope, work mode, and review cycle.",
+            "Do not trade base salary away without valuing the replacement benefit."
+          ],
+          "nextActions": [
+            "Collect market compensation evidence before naming a number.",
+            "Ask recruiter for approved range and level.",
+            "Map the job scope to proof points in the tailored CV.",
+            "Prepare one counter package with base, bonus/equity, and non-cash levers."
+          ],
+          "targetFrame": "Market benchmark for mid in GLOBAL is USD 70,000 – 115,000 (annual). Do not name a number first — ask for the approved range, then anchor near the midpoint or above."
+        },
+        "stories": [
+          {
+            "id": "story-1",
+            "theme": "frontend product execution",
+            "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
+            "applicableQuestions": [
+              "Tell me about a project you are proud of.",
+              "Tell me about a time you handled ambiguity.",
+              "How have you applied frontend product execution?"
+            ],
+            "star": {
+              "situation": "You were tasked with a frontend product challenge. Proof point: \"Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.\" — set the scene: what product, what team size, and what was broken or missing?",
+              "task": "What was the specific outcome you were accountable for? Include the success metric (e.g. performance score, user adoption rate, release date).",
+              "action": "Walk through the key technical decisions: component architecture, state management tradeoffs, accessibility choices, or API contract design.",
+              "result": "Quantify the impact: load time delta, user adoption %, code reduction %, or stakeholder feedback. If no number, describe the quality or velocity improvement.",
+              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
+            },
+            "keywords": [
+              "frontend product execution",
+              "JavaScript",
+              "TypeScript",
+              "React",
+              "Next.js",
+              "CSS",
+              "Tailwind",
+              "Accessibility"
+            ],
+            "relevance": 0
+          },
+          {
+            "id": "story-2",
+            "theme": "data-heavy product decisions",
+            "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
+            "applicableQuestions": [
+              "Tell me about a project you are proud of.",
+              "Tell me about a time you handled ambiguity.",
+              "How have you applied data-heavy product decisions?"
+            ],
+            "star": {
+              "situation": "You were working with a data-intensive product. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — describe the data volume, the user workflow, and what was difficult to render or interpret.",
+              "task": "What decision did you own? (chart type, data model, aggregation strategy, caching layer, etc.)",
+              "action": "Explain how you chose between options, what you built or prototyped, and how you validated your approach with data or users.",
+              "result": "State the outcome: query latency, dashboard load time, user comprehension improvement, or reduction in support requests.",
+              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
+            },
+            "keywords": [
+              "data-heavy product decisions",
+              "JavaScript",
+              "TypeScript",
+              "React",
+              "Next.js",
+              "CSS",
+              "Tailwind",
+              "Accessibility"
+            ],
+            "relevance": 0
+          },
+          {
+            "id": "story-3",
+            "theme": "systems and API collaboration",
+            "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
+            "applicableQuestions": [
+              "Tell me about a project you are proud of.",
+              "Tell me about a time you handled ambiguity.",
+              "How have you applied systems and API collaboration?"
+            ],
+            "star": {
+              "situation": "You collaborated across system boundaries. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — name the systems, teams, and integration surface area.",
+              "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
+              "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
+              "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
+              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
+            },
+            "keywords": [
+              "systems and API collaboration",
+              "JavaScript",
+              "TypeScript",
+              "React",
+              "Next.js",
+              "CSS",
+              "Tailwind",
+              "Accessibility"
+            ],
+            "relevance": 0
+          }
+        ],
+        "applyAgent": {
+          "mode": "human-in-the-loop",
+          "url": "https://www.tokyodev.com/companies/moneyforward/jobs/security-specialist-product-security-ciso-office-tokyo",
+          "steps": [
+            "Open the application URL in a controlled browser session.",
+            "Extract visible form fields and required uploads.",
+            "Map CV profile fields to the form without submitting.",
+            "Prepare tailored PDF and outreach text.",
+            "Stop before final submit and ask the user to review."
+          ],
+          "guardrails": [
+            "Never submit without explicit user confirmation.",
+            "Never fabricate work authorization, salary history, degree, or experience.",
+            "Never store API keys or credentials in job metadata.",
+            "Record only application status and user-approved notes."
+          ]
+        }
+      }
+    },
+    {
+      "jobKey": "url:https://www.tokyodev.com/companies/paypay/jobs/cloud-platform-engineer-db-specialist",
+      "company": "PayPay",
+      "title": "Cloud Platform Engineer (DB Specialist)",
+      "score": 60,
+      "grade": "C",
+      "priority": "P2",
+      "startedAt": "2026-05-17T23:21:27.250Z",
+      "completedAt": "2026-05-17T23:21:27.251Z",
+      "workers": {
+        "evaluation": {
+          "recommendation": "觀望",
+          "keywords": [
+            "remote",
+            "engineer",
+            "data"
+          ],
+          "nextActions": [
+            "先與高分職缺比較，不急著投遞",
+            "補齊 JD 或標記喜歡 / 不喜歡以改善後續排序"
+          ]
+        },
+        "research": {
+          "signals": [],
+          "evidenceCount": 0,
+          "questions": []
+        },
+        "application": {
+          "checklist": [
+            "Confirm posting is active.",
+            "Generate tailored ATS PDF.",
+            "Prepare outreach and follow-up.",
+            "Log status and next follow-up."
+          ]
+        },
+        "compensation": null,
+        "stories": [
+          {
+            "id": "story-1",
+            "theme": "frontend product execution",
+            "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
+            "applicableQuestions": [
+              "Tell me about a project you are proud of.",
+              "Tell me about a time you handled ambiguity.",
+              "How have you applied frontend product execution?"
+            ],
+            "star": {
+              "situation": "You were tasked with a frontend product challenge. Proof point: \"Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.\" — set the scene: what product, what team size, and what was broken or missing?",
+              "task": "What was the specific outcome you were accountable for? Include the success metric (e.g. performance score, user adoption rate, release date).",
+              "action": "Walk through the key technical decisions: component architecture, state management tradeoffs, accessibility choices, or API contract design.",
+              "result": "Quantify the impact: load time delta, user adoption %, code reduction %, or stakeholder feedback. If no number, describe the quality or velocity improvement.",
+              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
+            },
+            "keywords": [
+              "frontend product execution",
+              "JavaScript",
+              "TypeScript",
+              "React",
+              "Next.js",
+              "CSS",
+              "Tailwind",
+              "Accessibility"
+            ],
+            "relevance": 0
+          },
+          {
+            "id": "story-2",
+            "theme": "data-heavy product decisions",
+            "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
+            "applicableQuestions": [
+              "Tell me about a project you are proud of.",
+              "Tell me about a time you handled ambiguity.",
+              "How have you applied data-heavy product decisions?"
+            ],
+            "star": {
+              "situation": "You were working with a data-intensive product. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — describe the data volume, the user workflow, and what was difficult to render or interpret.",
+              "task": "What decision did you own? (chart type, data model, aggregation strategy, caching layer, etc.)",
+              "action": "Explain how you chose between options, what you built or prototyped, and how you validated your approach with data or users.",
+              "result": "State the outcome: query latency, dashboard load time, user comprehension improvement, or reduction in support requests.",
+              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
+            },
+            "keywords": [
+              "data-heavy product decisions",
+              "JavaScript",
+              "TypeScript",
+              "React",
+              "Next.js",
+              "CSS",
+              "Tailwind",
+              "Accessibility"
+            ],
+            "relevance": 0
+          },
+          {
+            "id": "story-3",
+            "theme": "systems and API collaboration",
+            "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
+            "applicableQuestions": [
+              "Tell me about a project you are proud of.",
+              "Tell me about a time you handled ambiguity.",
+              "How have you applied systems and API collaboration?"
+            ],
+            "star": {
+              "situation": "You collaborated across system boundaries. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — name the systems, teams, and integration surface area.",
+              "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
+              "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
+              "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
+              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
+            },
+            "keywords": [
+              "systems and API collaboration",
+              "JavaScript",
+              "TypeScript",
+              "React",
+              "Next.js",
+              "CSS",
+              "Tailwind",
+              "Accessibility"
+            ],
+            "relevance": 0
+          }
+        ],
+        "applyAgent": {
+          "mode": "human-in-the-loop",
+          "url": "https://www.tokyodev.com/companies/paypay/jobs/cloud-platform-engineer-db-specialist",
+          "steps": [
+            "Open the application URL in a controlled browser session.",
+            "Extract visible form fields and required uploads.",
+            "Map CV profile fields to the form without submitting.",
+            "Prepare tailored PDF and outreach text.",
+            "Stop before final submit and ask the user to review."
+          ],
+          "guardrails": [
+            "Never submit without explicit user confirmation.",
+            "Never fabricate work authorization, salary history, degree, or experience.",
+            "Never store API keys or credentials in job metadata.",
+            "Record only application status and user-approved notes."
+          ]
+        }
+      }
+    },
+    {
       "jobKey": "url:https://jobs.lever.co/gogolook/6bc7a6c3-1e8d-4390-9837-c3af970db9b0",
       "company": "Gogolook",
       "title": "Design Assistant 設計助理 (Roo)",
       "score": 59,
       "grade": "C",
       "priority": "P2",
-      "startedAt": "2026-05-16T23:18:55.651Z",
-      "completedAt": "2026-05-16T23:18:55.652Z",
+      "startedAt": "2026-05-17T23:21:27.250Z",
+      "completedAt": "2026-05-17T23:21:27.252Z",
       "workers": {
         "evaluation": {
           "recommendation": "觀望",
@@ -7846,8 +7851,8 @@
       "score": 59,
       "grade": "C",
       "priority": "P2",
-      "startedAt": "2026-05-16T23:18:55.651Z",
-      "completedAt": "2026-05-16T23:18:55.653Z",
+      "startedAt": "2026-05-17T23:21:27.251Z",
+      "completedAt": "2026-05-17T23:21:27.253Z",
       "workers": {
         "evaluation": {
           "recommendation": "觀望",
@@ -7987,8 +7992,8 @@
       "score": 59,
       "grade": "C",
       "priority": "P2",
-      "startedAt": "2026-05-16T23:18:55.652Z",
-      "completedAt": "2026-05-16T23:18:55.653Z",
+      "startedAt": "2026-05-17T23:21:27.251Z",
+      "completedAt": "2026-05-17T23:21:27.253Z",
       "workers": {
         "evaluation": {
           "recommendation": "觀望",
@@ -8128,8 +8133,8 @@
       "score": 59,
       "grade": "C",
       "priority": "P2",
-      "startedAt": "2026-05-16T23:18:55.652Z",
-      "completedAt": "2026-05-16T23:18:55.653Z",
+      "startedAt": "2026-05-17T23:21:27.251Z",
+      "completedAt": "2026-05-17T23:21:27.253Z",
       "workers": {
         "evaluation": {
           "recommendation": "觀望",
@@ -8269,8 +8274,8 @@
       "score": 59,
       "grade": "C",
       "priority": "P2",
-      "startedAt": "2026-05-16T23:18:55.652Z",
-      "completedAt": "2026-05-16T23:18:55.654Z",
+      "startedAt": "2026-05-17T23:21:27.252Z",
+      "completedAt": "2026-05-17T23:21:27.253Z",
       "workers": {
         "evaluation": {
           "recommendation": "觀望",
@@ -8410,8 +8415,8 @@
       "score": 59,
       "grade": "C",
       "priority": "P2",
-      "startedAt": "2026-05-16T23:18:55.653Z",
-      "completedAt": "2026-05-16T23:18:55.655Z",
+      "startedAt": "2026-05-17T23:21:27.253Z",
+      "completedAt": "2026-05-17T23:21:27.255Z",
       "workers": {
         "evaluation": {
           "recommendation": "觀望",
@@ -8551,8 +8556,8 @@
       "score": 59,
       "grade": "C",
       "priority": "P2",
-      "startedAt": "2026-05-16T23:18:55.653Z",
-      "completedAt": "2026-05-16T23:18:55.655Z",
+      "startedAt": "2026-05-17T23:21:27.253Z",
+      "completedAt": "2026-05-17T23:21:27.255Z",
       "workers": {
         "evaluation": {
           "recommendation": "觀望",
@@ -8692,8 +8697,8 @@
       "score": 59,
       "grade": "C",
       "priority": "P2",
-      "startedAt": "2026-05-16T23:18:55.653Z",
-      "completedAt": "2026-05-16T23:18:55.655Z",
+      "startedAt": "2026-05-17T23:21:27.253Z",
+      "completedAt": "2026-05-17T23:21:27.255Z",
       "workers": {
         "evaluation": {
           "recommendation": "觀望",
@@ -8827,155 +8832,14 @@
       }
     },
     {
-      "jobKey": "url:https://www.tokyodev.com/companies/mantra/jobs/backend-engineer-langaku",
-      "company": "Mantra",
-      "title": "Backend Engineer (Langaku)",
-      "score": 59,
-      "grade": "C",
-      "priority": "P2",
-      "startedAt": "2026-05-16T23:18:55.654Z",
-      "completedAt": "2026-05-16T23:18:55.656Z",
-      "workers": {
-        "evaluation": {
-          "recommendation": "觀望",
-          "keywords": [
-            "engineer",
-            "product",
-            "data"
-          ],
-          "nextActions": [
-            "先與高分職缺比較，不急著投遞",
-            "補齊 JD 或標記喜歡 / 不喜歡以改善後續排序"
-          ]
-        },
-        "research": {
-          "signals": [],
-          "evidenceCount": 0,
-          "questions": []
-        },
-        "application": {
-          "checklist": [
-            "Confirm posting is active.",
-            "Generate tailored ATS PDF.",
-            "Prepare outreach and follow-up.",
-            "Log status and next follow-up."
-          ]
-        },
-        "compensation": null,
-        "stories": [
-          {
-            "id": "story-1",
-            "theme": "frontend product execution",
-            "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
-            "applicableQuestions": [
-              "Tell me about a project you are proud of.",
-              "Tell me about a time you handled ambiguity.",
-              "How have you applied frontend product execution?"
-            ],
-            "star": {
-              "situation": "You were tasked with a frontend product challenge. Proof point: \"Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.\" — set the scene: what product, what team size, and what was broken or missing?",
-              "task": "What was the specific outcome you were accountable for? Include the success metric (e.g. performance score, user adoption rate, release date).",
-              "action": "Walk through the key technical decisions: component architecture, state management tradeoffs, accessibility choices, or API contract design.",
-              "result": "Quantify the impact: load time delta, user adoption %, code reduction %, or stakeholder feedback. If no number, describe the quality or velocity improvement.",
-              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
-            },
-            "keywords": [
-              "frontend product execution",
-              "JavaScript",
-              "TypeScript",
-              "React",
-              "Next.js",
-              "CSS",
-              "Tailwind",
-              "Accessibility"
-            ],
-            "relevance": 0
-          },
-          {
-            "id": "story-2",
-            "theme": "data-heavy product decisions",
-            "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
-            "applicableQuestions": [
-              "Tell me about a project you are proud of.",
-              "Tell me about a time you handled ambiguity.",
-              "How have you applied data-heavy product decisions?"
-            ],
-            "star": {
-              "situation": "You were working with a data-intensive product. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — describe the data volume, the user workflow, and what was difficult to render or interpret.",
-              "task": "What decision did you own? (chart type, data model, aggregation strategy, caching layer, etc.)",
-              "action": "Explain how you chose between options, what you built or prototyped, and how you validated your approach with data or users.",
-              "result": "State the outcome: query latency, dashboard load time, user comprehension improvement, or reduction in support requests.",
-              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
-            },
-            "keywords": [
-              "data-heavy product decisions",
-              "JavaScript",
-              "TypeScript",
-              "React",
-              "Next.js",
-              "CSS",
-              "Tailwind",
-              "Accessibility"
-            ],
-            "relevance": 0
-          },
-          {
-            "id": "story-3",
-            "theme": "systems and API collaboration",
-            "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
-            "applicableQuestions": [
-              "Tell me about a project you are proud of.",
-              "Tell me about a time you handled ambiguity.",
-              "How have you applied systems and API collaboration?"
-            ],
-            "star": {
-              "situation": "You collaborated across system boundaries. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — name the systems, teams, and integration surface area.",
-              "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
-              "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
-              "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
-              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
-            },
-            "keywords": [
-              "systems and API collaboration",
-              "JavaScript",
-              "TypeScript",
-              "React",
-              "Next.js",
-              "CSS",
-              "Tailwind",
-              "Accessibility"
-            ],
-            "relevance": 0
-          }
-        ],
-        "applyAgent": {
-          "mode": "human-in-the-loop",
-          "url": "https://www.tokyodev.com/companies/mantra/jobs/backend-engineer-langaku",
-          "steps": [
-            "Open the application URL in a controlled browser session.",
-            "Extract visible form fields and required uploads.",
-            "Map CV profile fields to the form without submitting.",
-            "Prepare tailored PDF and outreach text.",
-            "Stop before final submit and ask the user to review."
-          ],
-          "guardrails": [
-            "Never submit without explicit user confirmation.",
-            "Never fabricate work authorization, salary history, degree, or experience.",
-            "Never store API keys or credentials in job metadata.",
-            "Record only application status and user-approved notes."
-          ]
-        }
-      }
-    },
-    {
       "jobKey": "url:https://jobs.lever.co/gogolook/9b3678dd-c2b3-4174-9dd4-3e696bf1aa14",
       "company": "Gogolook",
       "title": "AI Product Intern (B2C & User Growth) - ScamAdviser",
       "score": 58,
       "grade": "C",
       "priority": "P2",
-      "startedAt": "2026-05-16T23:18:55.655Z",
-      "completedAt": "2026-05-16T23:18:55.657Z",
+      "startedAt": "2026-05-17T23:21:27.253Z",
+      "completedAt": "2026-05-17T23:21:27.255Z",
       "workers": {
         "evaluation": {
           "recommendation": "觀望",
@@ -9186,8 +9050,8 @@
       "score": 58,
       "grade": "C",
       "priority": "P2",
-      "startedAt": "2026-05-16T23:18:55.655Z",
-      "completedAt": "2026-05-16T23:18:55.657Z",
+      "startedAt": "2026-05-17T23:21:27.255Z",
+      "completedAt": "2026-05-17T23:21:27.257Z",
       "workers": {
         "evaluation": {
           "recommendation": "觀望",
@@ -9405,8 +9269,8 @@
       "score": 57,
       "grade": "D",
       "priority": "P3",
-      "startedAt": "2026-05-16T23:18:55.655Z",
-      "completedAt": "2026-05-16T23:18:55.657Z",
+      "startedAt": "2026-05-17T23:21:27.255Z",
+      "completedAt": "2026-05-17T23:21:27.257Z",
       "workers": {
         "evaluation": {
           "recommendation": "觀望",
@@ -9594,6 +9458,218 @@
         "applyAgent": {
           "mode": "human-in-the-loop",
           "url": "https://jobs.lever.co/Gogolook/4b1e7f1d-38cf-4134-80ed-6a7a2eecdb3a",
+          "steps": [
+            "Open the application URL in a controlled browser session.",
+            "Extract visible form fields and required uploads.",
+            "Map CV profile fields to the form without submitting.",
+            "Prepare tailored PDF and outreach text.",
+            "Stop before final submit and ask the user to review."
+          ],
+          "guardrails": [
+            "Never submit without explicit user confirmation.",
+            "Never fabricate work authorization, salary history, degree, or experience.",
+            "Never store API keys or credentials in job metadata.",
+            "Record only application status and user-approved notes."
+          ]
+        }
+      }
+    },
+    {
+      "jobKey": "url:https://jobs.lever.co/gogolook/be51120b-4ecd-4222-b242-8eaa4fc7cc91",
+      "company": "Gogolook",
+      "title": "Visual Design Intern 品牌視覺設計實習生",
+      "score": 57,
+      "grade": "D",
+      "priority": "P3",
+      "startedAt": "2026-05-17T23:21:27.255Z",
+      "completedAt": "2026-05-17T23:21:27.257Z",
+      "workers": {
+        "evaluation": {
+          "recommendation": "觀望",
+          "keywords": [
+            "Figma",
+            "data"
+          ],
+          "nextActions": [
+            "先與高分職缺比較，不急著投遞",
+            "補齊 JD 或標記喜歡 / 不喜歡以改善後續排序"
+          ]
+        },
+        "research": {
+          "signals": [],
+          "evidenceCount": 0,
+          "questions": []
+        },
+        "application": {
+          "checklist": [
+            "Confirm posting is active.",
+            "Generate tailored ATS PDF.",
+            "Prepare outreach and follow-up.",
+            "Log status and next follow-up."
+          ]
+        },
+        "compensation": {
+          "jobKey": "url:https://jobs.lever.co/gogolook/903b657d-9530-4f59-9dea-e9075163f3e6",
+          "company": "Gogolook",
+          "title": "US Market Intern (ScamAdviser)",
+          "market": "tw",
+          "inferredLevel": "intern",
+          "candidateLevel": "mid",
+          "leverage": "low",
+          "evidence": {
+            "salaryMentions": [
+              "USD 7",
+              "NT$210 - NT$210"
+            ],
+            "benefitSignals": [
+              "equity",
+              "work-mode flexibility",
+              "learning budget"
+            ]
+          },
+          "marketBenchmark": {
+            "currency": "NTD",
+            "unit": "monthly",
+            "range": "NTD 55,000 – 90,000",
+            "midpoint": "NTD 70,000",
+            "floor": 55000,
+            "ceiling": 90000,
+            "source": "NodeFlair / PayScale TW 2024-2025",
+            "note": "Taipei market. Annual bonus (1-3 months) is common; multiply monthly by 13-14 for total annual estimate."
+          },
+          "structure": {
+            "baseSalary": [
+              "USD 7",
+              "NT$210 - NT$210"
+            ],
+            "bonus": "Ask whether there is annual bonus, performance bonus, or sign-on bonus.",
+            "equity": "Clarify grant size, vesting schedule, refreshers, and strike/RSU terms.",
+            "benefits": [
+              "Health / insurance coverage",
+              "Paid leave and holidays",
+              "Learning budget or certification support",
+              "Remote/hybrid setup, commute, or relocation support",
+              "Review cycle and promotion timeline"
+            ],
+            "nonCashLevers": [
+              "Title / level calibration",
+              "Start date flexibility",
+              "Remote days",
+              "Equipment budget",
+              "First review at 3 or 6 months",
+              "Conference / learning budget"
+            ]
+          },
+          "negotiationScript": {
+            "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the US Market Intern (ScamAdviser) package, including base, bonus, equity, and review cycle?",
+            "valueAnchor": "Based on the scope of US Market Intern (ScamAdviser) and my fit around Analytics, remote, product, data, I would like to calibrate toward the stronger end of the range if the team sees the level match. My research indicates the TW midpoint for this level is around NTD 70,000 (monthly).",
+            "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
+            "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
+            "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
+          },
+          "redLines": [
+            "Do not disclose current compensation unless legally appropriate and strategically useful.",
+            "Do not accept verbal-only compensation details; ask for written package components.",
+            "Do not negotiate before confirming level, scope, work mode, and review cycle.",
+            "Do not trade base salary away without valuing the replacement benefit."
+          ],
+          "nextActions": [
+            "Verify whether posted compensation is base-only or total compensation.",
+            "Ask recruiter for approved range and level.",
+            "Map the job scope to proof points in the tailored CV.",
+            "Prepare one counter package with base, bonus/equity, and non-cash levers."
+          ],
+          "targetFrame": "Use posted compensation as the floor for scope calibration; anchor near the upper third only after confirming level and scope."
+        },
+        "stories": [
+          {
+            "id": "story-1",
+            "theme": "frontend product execution",
+            "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
+            "applicableQuestions": [
+              "Tell me about a project you are proud of.",
+              "Tell me about a time you handled ambiguity.",
+              "How have you applied frontend product execution?"
+            ],
+            "star": {
+              "situation": "You were tasked with a frontend product challenge. Proof point: \"Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.\" — set the scene: what product, what team size, and what was broken or missing?",
+              "task": "What was the specific outcome you were accountable for? Include the success metric (e.g. performance score, user adoption rate, release date).",
+              "action": "Walk through the key technical decisions: component architecture, state management tradeoffs, accessibility choices, or API contract design.",
+              "result": "Quantify the impact: load time delta, user adoption %, code reduction %, or stakeholder feedback. If no number, describe the quality or velocity improvement.",
+              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
+            },
+            "keywords": [
+              "frontend product execution",
+              "JavaScript",
+              "TypeScript",
+              "React",
+              "Next.js",
+              "CSS",
+              "Tailwind",
+              "Accessibility"
+            ],
+            "relevance": 0
+          },
+          {
+            "id": "story-2",
+            "theme": "data-heavy product decisions",
+            "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
+            "applicableQuestions": [
+              "Tell me about a project you are proud of.",
+              "Tell me about a time you handled ambiguity.",
+              "How have you applied data-heavy product decisions?"
+            ],
+            "star": {
+              "situation": "You were working with a data-intensive product. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — describe the data volume, the user workflow, and what was difficult to render or interpret.",
+              "task": "What decision did you own? (chart type, data model, aggregation strategy, caching layer, etc.)",
+              "action": "Explain how you chose between options, what you built or prototyped, and how you validated your approach with data or users.",
+              "result": "State the outcome: query latency, dashboard load time, user comprehension improvement, or reduction in support requests.",
+              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
+            },
+            "keywords": [
+              "data-heavy product decisions",
+              "JavaScript",
+              "TypeScript",
+              "React",
+              "Next.js",
+              "CSS",
+              "Tailwind",
+              "Accessibility"
+            ],
+            "relevance": 0
+          },
+          {
+            "id": "story-3",
+            "theme": "systems and API collaboration",
+            "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
+            "applicableQuestions": [
+              "Tell me about a project you are proud of.",
+              "Tell me about a time you handled ambiguity.",
+              "How have you applied systems and API collaboration?"
+            ],
+            "star": {
+              "situation": "You collaborated across system boundaries. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — name the systems, teams, and integration surface area.",
+              "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
+              "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
+              "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
+              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
+            },
+            "keywords": [
+              "systems and API collaboration",
+              "JavaScript",
+              "TypeScript",
+              "React",
+              "Next.js",
+              "CSS",
+              "Tailwind",
+              "Accessibility"
+            ],
+            "relevance": 0
+          }
+        ],
+        "applyAgent": {
+          "mode": "human-in-the-loop",
+          "url": "https://jobs.lever.co/Gogolook/be51120b-4ecd-4222-b242-8eaa4fc7cc91",
           "steps": [
             "Open the application URL in a controlled browser session.",
             "Extract visible form fields and required uploads.",

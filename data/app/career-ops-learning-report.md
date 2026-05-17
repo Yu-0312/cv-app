@@ -1,31 +1,31 @@
 # Career Ops Learning Report
 
-- Generated: 2026-05-16T23:18:55.934Z
-- Active jobs: 291
-- Positive signals: 127
+- Generated: 2026-05-17T23:21:27.521Z
+- Active jobs: 293
+- Positive signals: 126
 - Negative signals: 12
 - Source coverage: 93 sources / 651 queries / markets tw, cn, jp, kr, sg, global
 
 ## Preferred Skills
 
-- engineer: 430.9
-- data: 365.2
-- product: 322.4
-- growth: 195.1
-- operations: 162.1
-- aws: 161.7
-- python: 150.5
-- docker: 108.8
-- terraform: 105.3
-- gcp: 96.5
-- agents: 94.9
-- react: 89.1
-- React: 89.1
-- graphql: 82.9
-- go: 78.5
-- typescript: 76.5
-- TypeScript: 76.5
-- node.js: 74.1
+- engineer: 425
+- data: 359.5
+- product: 321.3
+- growth: 194.8
+- operations: 161.1
+- aws: 160.5
+- python: 150
+- docker: 108
+- terraform: 104.4
+- gcp: 95.8
+- agents: 94.1
+- react: 88.7
+- React: 88.7
+- graphql: 82.3
+- go: 78.2
+- typescript: 76.1
+- TypeScript: 76.1
+- node.js: 73.5
 
 ## Avoid Signals
 
@@ -33,18 +33,18 @@
 
 ## Preferred Companies
 
-- Money Forward: 107.3
+- Money Forward: 106.2
 - NVIDIA Workday: 69
-- Micron Workday: 66.7
+- Micron Workday: 62
 - Logitech Workday Taiwan: 45.1
 - Intel Workday Taiwan: 34.9
 - Gogolook: 29.5
 - Applied Materials Workday: 22.6
 - AI Robot Association (AIRoA): 17.2
-- PayPay: 14.2
+- PayPay: 14.1
 - Geniee: 11.6
 - Metanomaly: 10.8
-- AI&: 9.7
+- Shizuku AI: 9.7
 
 ## Next Strategy
 

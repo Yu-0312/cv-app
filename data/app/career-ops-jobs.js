@@ -1,10 +1,10 @@
 window.CV_CAREER_OPS_JOBS = {
   "source": "career-ops-worker",
-  "extractedAt": "2026-05-16T23:18:51.824Z",
+  "extractedAt": "2026-05-17T23:21:23.400Z",
   "sourceCount": 93,
-  "jobCount": 291,
-  "newJobCount": 22,
-  "expiredJobCount": 7,
+  "jobCount": 293,
+  "newJobCount": 6,
+  "expiredJobCount": 4,
   "jobs": [
     {
       "source": "Source flex job board",
@@ -18,7 +18,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "2026-10-15",
       "employmentType": "FULL_TIME",
       "firstSeenAt": "2026-05-15T13:24:47.248Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -38,7 +38,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "B",
       "recommendation": "值得投遞",
       "status": "值得投遞",
-      "evaluatedAt": "2026-05-16T23:18:53.322Z",
+      "evaluatedAt": "2026-05-17T23:21:24.772Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -173,7 +173,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "2026-11-04",
       "employmentType": "FULL_TIME",
       "firstSeenAt": "2026-05-15T04:51:08.174Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -193,7 +193,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "B",
       "recommendation": "值得投遞",
       "status": "觀望",
-      "evaluatedAt": "2026-05-16T23:18:53.264Z",
+      "evaluatedAt": "2026-05-17T23:21:24.716Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -312,7 +312,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "2026-10-15",
       "employmentType": "FULL_TIME",
       "firstSeenAt": "2026-05-15T04:51:08.174Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -334,7 +334,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "B",
       "recommendation": "值得投遞",
       "status": "值得投遞",
-      "evaluatedAt": "2026-05-16T23:18:53.330Z",
+      "evaluatedAt": "2026-05-17T23:21:24.779Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -469,7 +469,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "2026-10-24",
       "employmentType": "FULL_TIME",
       "firstSeenAt": "2026-05-15T04:51:08.174Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -489,7 +489,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "B",
       "recommendation": "值得投遞",
       "status": "值得投遞",
-      "evaluatedAt": "2026-05-16T23:18:53.286Z",
+      "evaluatedAt": "2026-05-17T23:21:24.736Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -599,169 +599,6 @@ window.CV_CAREER_OPS_JOBS = {
       }
     },
     {
-      "source": "Source flex job board",
-      "sourceType": "json-ld",
-      "title": "Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka",
-      "company": "Money Forward",
-      "url": "https://www.tokyodev.com/companies/moneyforward/jobs/product-reliability-engineer-cre-money-forward-cloud-fukuoka",
-      "location": "Minato-ku, Tokyo, JP",
-      "description": "At Money Forward, we provide services that solve financial challenges through the power of technology. Our Fukuoka Development Base is responsible for the development and operation of “ Money Forward Cloud Expense ,” one of our flagship services supporting a wide range of users, from sole proprietors to large corporations.\n\n Since its release, Cloud Expense has grown into a large-scale product that supports businesses of all sizes, from startups to major enterprises. To maintain both “rapid feature delivery” and “high reliability” as we continue to scale, we are looking for a Customer Reliability Engineer (CRE) who embraces proactive operations—going far beyond simple maintenance and support.\n\n We are seeking an engineer who wants to use their technical expertise to untangle complex domain challenges, work at the closest point to our customers, and safeguard system reliability through the power of engineering.\n\n About the Fukuoka Development Base\n\n Since opening in December 2017, Money Forward’s Fukuoka Development Base has steadily expanded alongside a growing community of talented engineers and designers.\n\n In November 2025, we relocated our office to “Fukuoka Daimyo Garden City” to set the stage for our next chapter of growth. We are now aggressively recruiting engineers and designers to help our organization leap forward.\n\n Our local vision is “ Move Forward .” We place the highest priority on growth opportunities for every member, striving to be an energetic hub where everyone can boldly take on new technologies and complex challenges.\n\n UI Turn Support Campaign Ongoing\n\n Money Forward is currently running a campaign to support relocation to our Fukuoka development base! We are offering 500,000 yen to assist with relocation expenses to engineers who join us mid-career and are currently living in Japan (conditions apply).\n\n Please check the details in the following article: Announcement of the Campaign to Support Engineers’ UI Turn Expenses to Fukuoka\n\n Technology Stack\n\n Web Server-Side: Rails, Golang, Node.js, GraphQL\n\n Web Frontend: React, TypeScript, Next.js, Redux, Apollo Client, webpack, Jest\n\n iOS: Swift, SwiftUI, CoreData, Apollo, ReactorKit, Composable Architecture, Bitrise\n\n Android: Java/Kotlin, Android Jetpack (Camera, DataBinding, Navigation, etc.), LiveData/ViewModel, Dagger/Hilt, OkHttp3, Retrofit2, Apollo Android\n\n Database: MySQL (Aurora)\n\n Infrastructure & Middleware: AWS (ALB, EC2, ECS, RDS, S3, SQS, ElastiCache, EKS…), SendGrid, Kinsta, GCP (BigQuery, Firebase, GKE), nginx, Squid, Memcached, Kafka, Logstash, Filebeat, Maxwell, Kibana, Elasticsearch, Fluentd, Envoy, Puma, HAProxy, Docker, Redis, Terraform\n\n Responsibilities\n In this role, you will lead the following initiatives for our B2B SaaS platforms, “Money Forward Cloud Expense” and “Money Forward Cloud Accounts Payable,” bridging the gap between technology and customer satisfaction.\n\n Reliability Engineering\n\n Monitor logs and metrics using tools like Datadog, and define/operate SLOs.\n\n Lead rapid incident response, root cause analysis (RCA), and the implementation of permanent fixes.\n\n Improve the health of the development cycle by automating and streamlining toil (repetitive manual tasks).\n\n Lead investigations and provide technical resolutions for high-difficulty customer inquiries escalated from the Customer Support team.\n\n Drive the standardization and acceleration of support operations using Generative AI and knowledge bases.\n\n Full-Stack Engineering\n\n Develop backend systems using Ruby on Rails and improve front-end experiences with React/TypeScript.\n\n Execute system-wide performance tuning and architectural changes to ensure high scalability.\n\n Cross-functional Product Improvement\n\n Collaborate closely with Customer Support and Product Managers to implement feature improvements based on user feedback.\n\n Propose and execute refactoring and architectural redesigns to eliminate technical debt.\n\n Requirements\n\n At least 5 years of experience and a proven track record in the large-scale development and operation of web applications using Ruby on Rails or other modern languages.\n\n An ownership-driven attitude; the ability to identify both engineering and organizational challenges as your own and take proactive steps toward resolution.\n\n Basic business level Japanese. Please note that the interviews in the selection process will generally be conducted in Japanese, though some English support will be available when necessary.\n\n Basic business level English (equivalent to TOEIC 700 or above)\n\n Nice to haves\n While not specifically required, tell us if you have any of the following.\n\n Experience developing GraphQL or REST APIs.\n\n Practical experience in a CRE (Customer Reliability Engineer) or SRE (Site Reliability Engineer) role.\n\n Experience with monitoring and SLO management using observability tools such as Datadog.\n\n Initiatives in operational improvement or automation utilizing Generative AI (LLMs).\n\n Experience handling technical inquiries within a Customer Support or Technical Support context.\n\n Experience with incident response (handling) and managing post-mortem workflows.\n\n Experience in infrastructure construction and operation using AWS or similar cloud platforms.\n\n Experience in AI development and/or experience in using AI tools to improve development processes.\n\n Money Forward recently announced our AI Strategy roadmap which focuses on improving AI-driven operational efficiencies, as well as integrating AI agents into our products to deliver better value to our users.",
-      "datePosted": "2026-04-08T14:50:24.597+09:00",
-      "validThrough": "",
-      "employmentType": "FULL_TIME",
-      "firstSeenAt": "2026-05-16T23:18:51.813Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
-      "isNew": true,
-      "isExpired": false,
-      "expiredAt": "",
-      "jobKey": "url:https://www.tokyodev.com/companies/moneyforward/jobs/product-reliability-engineer-cre-money-forward-cloud-fukuoka",
-      "sourceMarket": "jp",
-      "sourceIndustry": "",
-      "sourceStrategy": "flex-job-board",
-      "sourceTags": [
-        "flex-job-board"
-      ],
-      "sourceQuality": {
-        "score": 100,
-        "tier": "high",
-        "reasons": []
-      },
-      "score": 75,
-      "grade": "B",
-      "recommendation": "值得投遞",
-      "status": "值得投遞",
-      "evaluatedAt": "2026-05-16T23:18:53.362Z",
-      "evaluation": {
-        "source": "career-ops-intelligence",
-        "overall": {
-          "grade": "B",
-          "score": 75,
-          "recommendation": "值得投遞",
-          "summary": "以 11 個維度比對，命中 7 個履歷技能，市場技能命中 18 個。"
-        },
-        "decision_factors": [
-          "職類：Frontend；資歷：Senior+；模式：Unknown",
-          "履歷技能命中：TypeScript、React、Next.js、engineer、product、graphql、node.js",
-          "未偵測到明顯稀有技能訊號"
-        ],
-        "ats_keywords": {
-          "found": [
-            "TypeScript",
-            "React",
-            "Next.js",
-            "engineer",
-            "product",
-            "graphql",
-            "node.js"
-          ],
-          "missing": [
-            "java",
-            "swift",
-            "kotlin",
-            "mysql",
-            "firebase",
-            "aws",
-            "gcp",
-            "docker",
-            "terraform",
-            "rest",
-            "agents",
-            "growth"
-          ]
-        },
-        "risks": [],
-        "next_actions": [
-          "開啟職缺確認仍可投遞",
-          "產生客製 ATS PDF",
-          "用同職類高分職缺校準履歷關鍵字"
-        ]
-      },
-      "intelligence": {
-        "score": 75,
-        "grade": "B",
-        "recommendation": "值得投遞",
-        "features": {
-          "roleFamily": "Frontend",
-          "seniority": "Senior+",
-          "workMode": "Unknown",
-          "skills": [
-            "typescript",
-            "react",
-            "next.js",
-            "node.js",
-            "java",
-            "swift",
-            "kotlin",
-            "mysql",
-            "firebase",
-            "aws",
-            "gcp",
-            "docker",
-            "terraform",
-            "graphql",
-            "rest",
-            "agents",
-            "growth",
-            "operations"
-          ],
-          "profileSkillHits": [
-            "TypeScript",
-            "React",
-            "Next.js",
-            "engineer",
-            "product",
-            "graphql",
-            "node.js"
-          ],
-          "profileSkillsNotInJd": [
-            "JavaScript",
-            "CSS",
-            "Tailwind",
-            "Accessibility",
-            "Analytics",
-            "API",
-            "Figma",
-            "Performance Optimization",
-            "Design Systems",
-            "remote",
-            "dashboard",
-            "design system"
-          ],
-          "jdSkillsMissingFromProfile": [
-            "java",
-            "swift",
-            "kotlin",
-            "mysql",
-            "firebase",
-            "aws",
-            "gcp",
-            "docker",
-            "terraform",
-            "rest",
-            "agents",
-            "growth"
-          ],
-          "requiresUnknownLanguage": false,
-          "rareHighValueSkills": [],
-          "locationHits": [],
-          "avoidHits": []
-        },
-        "dimensions": {
-          "profileMatch": 98,
-          "atsCoverage": 27,
-          "roleFit": 68,
-          "seniorityFit": 70,
-          "locationFit": 58,
-          "sourceQuality": 78,
-          "freshness": 95,
-          "compensationSignal": 52,
-          "growthSignal": 100,
-          "applicationEffort": 86,
-          "riskPenalty": 0
-        }
-      }
-    },
-    {
       "source": "Micron Workday",
       "sourceType": "adapter:workday",
       "title": "Senior Full Stack Software Engineer",
@@ -773,7 +610,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "Full time",
       "firstSeenAt": "2026-05-15T06:25:26.345Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -797,7 +634,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "B",
       "recommendation": "值得投遞",
       "status": "值得投遞",
-      "evaluatedAt": "2026-05-16T23:18:53.083Z",
+      "evaluatedAt": "2026-05-17T23:21:24.562Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -925,7 +762,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "2026-10-17",
       "employmentType": "FULL_TIME",
       "firstSeenAt": "2026-05-15T13:24:47.248Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -945,7 +782,170 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "B",
       "recommendation": "值得投遞",
       "status": "值得投遞",
-      "evaluatedAt": "2026-05-16T23:18:53.312Z",
+      "evaluatedAt": "2026-05-17T23:21:24.762Z",
+      "evaluation": {
+        "source": "career-ops-intelligence",
+        "overall": {
+          "grade": "B",
+          "score": 73,
+          "recommendation": "值得投遞",
+          "summary": "以 11 個維度比對，命中 7 個履歷技能，市場技能命中 18 個。"
+        },
+        "decision_factors": [
+          "職類：Frontend；資歷：Senior+；模式：Unknown",
+          "履歷技能命中：TypeScript、React、Next.js、engineer、product、graphql、node.js",
+          "未偵測到明顯稀有技能訊號"
+        ],
+        "ats_keywords": {
+          "found": [
+            "TypeScript",
+            "React",
+            "Next.js",
+            "engineer",
+            "product",
+            "graphql",
+            "node.js"
+          ],
+          "missing": [
+            "java",
+            "swift",
+            "kotlin",
+            "mysql",
+            "firebase",
+            "aws",
+            "gcp",
+            "docker",
+            "terraform",
+            "rest",
+            "agents",
+            "growth"
+          ]
+        },
+        "risks": [],
+        "next_actions": [
+          "開啟職缺確認仍可投遞",
+          "產生客製 ATS PDF",
+          "用同職類高分職缺校準履歷關鍵字"
+        ]
+      },
+      "intelligence": {
+        "score": 73,
+        "grade": "B",
+        "recommendation": "值得投遞",
+        "features": {
+          "roleFamily": "Frontend",
+          "seniority": "Senior+",
+          "workMode": "Unknown",
+          "skills": [
+            "typescript",
+            "react",
+            "next.js",
+            "node.js",
+            "java",
+            "swift",
+            "kotlin",
+            "mysql",
+            "firebase",
+            "aws",
+            "gcp",
+            "docker",
+            "terraform",
+            "graphql",
+            "rest",
+            "agents",
+            "growth",
+            "operations"
+          ],
+          "profileSkillHits": [
+            "TypeScript",
+            "React",
+            "Next.js",
+            "engineer",
+            "product",
+            "graphql",
+            "node.js"
+          ],
+          "profileSkillsNotInJd": [
+            "JavaScript",
+            "CSS",
+            "Tailwind",
+            "Accessibility",
+            "Analytics",
+            "API",
+            "Figma",
+            "Performance Optimization",
+            "Design Systems",
+            "remote",
+            "dashboard",
+            "design system"
+          ],
+          "jdSkillsMissingFromProfile": [
+            "java",
+            "swift",
+            "kotlin",
+            "mysql",
+            "firebase",
+            "aws",
+            "gcp",
+            "docker",
+            "terraform",
+            "rest",
+            "agents",
+            "growth"
+          ],
+          "requiresUnknownLanguage": false,
+          "rareHighValueSkills": [],
+          "locationHits": [],
+          "avoidHits": []
+        },
+        "dimensions": {
+          "profileMatch": 98,
+          "atsCoverage": 27,
+          "roleFit": 68,
+          "seniorityFit": 70,
+          "locationFit": 58,
+          "sourceQuality": 78,
+          "freshness": 76,
+          "compensationSignal": 52,
+          "growthSignal": 100,
+          "applicationEffort": 86,
+          "riskPenalty": 0
+        }
+      }
+    },
+    {
+      "source": "Source flex job board",
+      "sourceType": "json-ld",
+      "title": "Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka",
+      "company": "Money Forward",
+      "url": "https://www.tokyodev.com/companies/moneyforward/jobs/product-reliability-engineer-cre-money-forward-cloud-fukuoka",
+      "location": "Minato-ku, Tokyo, JP",
+      "description": "At Money Forward, we provide services that solve financial challenges through the power of technology. Our Fukuoka Development Base is responsible for the development and operation of “ Money Forward Cloud Expense ,” one of our flagship services supporting a wide range of users, from sole proprietors to large corporations.\n\n Since its release, Cloud Expense has grown into a large-scale product that supports businesses of all sizes, from startups to major enterprises. To maintain both “rapid feature delivery” and “high reliability” as we continue to scale, we are looking for a Customer Reliability Engineer (CRE) who embraces proactive operations—going far beyond simple maintenance and support.\n\n We are seeking an engineer who wants to use their technical expertise to untangle complex domain challenges, work at the closest point to our customers, and safeguard system reliability through the power of engineering.\n\n About the Fukuoka Development Base\n\n Since opening in December 2017, Money Forward’s Fukuoka Development Base has steadily expanded alongside a growing community of talented engineers and designers.\n\n In November 2025, we relocated our office to “Fukuoka Daimyo Garden City” to set the stage for our next chapter of growth. We are now aggressively recruiting engineers and designers to help our organization leap forward.\n\n Our local vision is “ Move Forward .” We place the highest priority on growth opportunities for every member, striving to be an energetic hub where everyone can boldly take on new technologies and complex challenges.\n\n UI Turn Support Campaign Ongoing\n\n Money Forward is currently running a campaign to support relocation to our Fukuoka development base! We are offering 500,000 yen to assist with relocation expenses to engineers who join us mid-career and are currently living in Japan (conditions apply).\n\n Please check the details in the following article: Announcement of the Campaign to Support Engineers’ UI Turn Expenses to Fukuoka\n\n Technology Stack\n\n Web Server-Side: Rails, Golang, Node.js, GraphQL\n\n Web Frontend: React, TypeScript, Next.js, Redux, Apollo Client, webpack, Jest\n\n iOS: Swift, SwiftUI, CoreData, Apollo, ReactorKit, Composable Architecture, Bitrise\n\n Android: Java/Kotlin, Android Jetpack (Camera, DataBinding, Navigation, etc.), LiveData/ViewModel, Dagger/Hilt, OkHttp3, Retrofit2, Apollo Android\n\n Database: MySQL (Aurora)\n\n Infrastructure & Middleware: AWS (ALB, EC2, ECS, RDS, S3, SQS, ElastiCache, EKS…), SendGrid, Kinsta, GCP (BigQuery, Firebase, GKE), nginx, Squid, Memcached, Kafka, Logstash, Filebeat, Maxwell, Kibana, Elasticsearch, Fluentd, Envoy, Puma, HAProxy, Docker, Redis, Terraform\n\n Responsibilities\n In this role, you will lead the following initiatives for our B2B SaaS platforms, “Money Forward Cloud Expense” and “Money Forward Cloud Accounts Payable,” bridging the gap between technology and customer satisfaction.\n\n Reliability Engineering\n\n Monitor logs and metrics using tools like Datadog, and define/operate SLOs.\n\n Lead rapid incident response, root cause analysis (RCA), and the implementation of permanent fixes.\n\n Improve the health of the development cycle by automating and streamlining toil (repetitive manual tasks).\n\n Lead investigations and provide technical resolutions for high-difficulty customer inquiries escalated from the Customer Support team.\n\n Drive the standardization and acceleration of support operations using Generative AI and knowledge bases.\n\n Full-Stack Engineering\n\n Develop backend systems using Ruby on Rails and improve front-end experiences with React/TypeScript.\n\n Execute system-wide performance tuning and architectural changes to ensure high scalability.\n\n Cross-functional Product Improvement\n\n Collaborate closely with Customer Support and Product Managers to implement feature improvements based on user feedback.\n\n Propose and execute refactoring and architectural redesigns to eliminate technical debt.\n\n Requirements\n\n At least 5 years of experience and a proven track record in the large-scale development and operation of web applications using Ruby on Rails or other modern languages.\n\n An ownership-driven attitude; the ability to identify both engineering and organizational challenges as your own and take proactive steps toward resolution.\n\n Basic business level Japanese. Please note that the interviews in the selection process will generally be conducted in Japanese, though some English support will be available when necessary.\n\n Basic business level English (equivalent to TOEIC 700 or above)\n\n Nice to haves\n While not specifically required, tell us if you have any of the following.\n\n Experience developing GraphQL or REST APIs.\n\n Practical experience in a CRE (Customer Reliability Engineer) or SRE (Site Reliability Engineer) role.\n\n Experience with monitoring and SLO management using observability tools such as Datadog.\n\n Initiatives in operational improvement or automation utilizing Generative AI (LLMs).\n\n Experience handling technical inquiries within a Customer Support or Technical Support context.\n\n Experience with incident response (handling) and managing post-mortem workflows.\n\n Experience in infrastructure construction and operation using AWS or similar cloud platforms.\n\n Experience in AI development and/or experience in using AI tools to improve development processes.\n\n Money Forward recently announced our AI Strategy roadmap which focuses on improving AI-driven operational efficiencies, as well as integrating AI agents into our products to deliver better value to our users.",
+      "datePosted": "2026-04-08T14:50:24.597+09:00",
+      "validThrough": "",
+      "employmentType": "FULL_TIME",
+      "firstSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
+      "isNew": false,
+      "isExpired": false,
+      "expiredAt": "",
+      "jobKey": "url:https://www.tokyodev.com/companies/moneyforward/jobs/product-reliability-engineer-cre-money-forward-cloud-fukuoka",
+      "sourceMarket": "jp",
+      "sourceIndustry": "",
+      "sourceStrategy": "flex-job-board",
+      "sourceTags": [
+        "flex-job-board"
+      ],
+      "sourceQuality": {
+        "score": 100,
+        "tier": "high",
+        "reasons": []
+      },
+      "score": 73,
+      "grade": "B",
+      "recommendation": "值得投遞",
+      "status": "值得投遞",
+      "evaluatedAt": "2026-05-17T23:21:24.809Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -1088,7 +1088,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "2026-10-24",
       "employmentType": "FULL_TIME",
       "firstSeenAt": "2026-05-15T04:51:08.174Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -1108,7 +1108,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "B",
       "recommendation": "值得投遞",
       "status": "值得投遞",
-      "evaluatedAt": "2026-05-16T23:18:53.284Z",
+      "evaluatedAt": "2026-05-17T23:21:24.735Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -1221,279 +1221,6 @@ window.CV_CAREER_OPS_JOBS = {
       }
     },
     {
-      "source": "Source flex job board",
-      "sourceType": "json-ld",
-      "title": "Lead Backend Engineer, Digital Bank",
-      "company": "Money Forward",
-      "url": "https://www.tokyodev.com/companies/moneyforward/jobs/lead-backend-engineer-digital-bank",
-      "location": "Minato-ku, Tokyo, JP",
-      "description": "Under the mission of “Money Forward. Move your life forward,” Money Forward aims to resolve the financial concerns and anxieties of individuals and businesses through the power of technology.\n\n We have partnered with Sumitomo Mitsui Financial Group, Inc. and Sumitomo Mitsui Banking Corporation to establish a new company in preparation for the launch of a new digital bank.\n\n We are currently seeking candidates for the position of Lead Backend Engineer as part of this initiative.\n\n This position involves employment with Money Forward, Inc., and a secondment to the new company (SMBC Money Forward Bank Preparatory Corporation). The evaluation system and employee benefits will follow the policies of Money Forward, Inc.\n\n Who we are?\n\n We are a startup team partnering with Sumitomo Mitsui Financial Group and Sumitomo Mitsui Banking Corporation to establish a new digital bank. Our mission is to build embedded financial products from the ground up, with a strong focus on supporting small and medium-sized businesses (SMBs).\n\n Development Structure\n\n We operate in a small, fast-moving team while collaborating closely with Money Forward Group companies (MFV and MFI).\n\nThe team consists of cross-functional members Product Managers, Backend Engineers, Frontend Engineers, QA Engineers, and SRE working together with tight communication throughout the development process.\n\n Technology Stack and Tools Used\n\n Kotlin, Spring Boot, Gradle, jOOQ, Liquibase, Kotest/JUnit, Karate/Rest Assured\n\n Redis, Postgresql\n\n Docker, AWS ECS\n\n AWS SQS, SNS, EventBridge\n\n Mambu cloud banking platform\n\n GitHub, Backstage, Amazon ECR\n\n Claude Code, GitHub Actions, ArgoCD, Sonar Cloud, Detekt, AeyeScan\n\n ChatGPT, Copilot, Gemni\n\n Responsibilities\n As a Software Engineer in the Application Development Team, you will leverage Mambu, a leading cloud banking platform for neobanks and challenger banks, to build one of the most reliable and agile banking systems in the industry. Our goal is to shape the future of digital banking in Japan, making it more accessible and user-friendly than ever before.\n\n Acquire domain knowledge in digital banking, including deposits, loans, clearing and settlement, basic accounting, domestic exchange, and Zengin network.\n\n Promote development as a Scrum team leader\n\n Actively engage with product owners to define requirements.\n\n Develop, test, and deploy code that meets non-functional quality gates such as static code analysis, software composition analysis, SAST, and DAST, while maintaining numerical accuracy.\n\n Design and build high-performance, scalable microservices centered around APIs.\n\n Pursue test automation and continuous improvement, including API testing.\n\n Take responsibility for the entire software development lifecycle.\n\n Requirements\n\n Experience in understanding the background and intent of business requirements and independently defining application specifications.\n\n Ability to proactively design specifications and move forward even when requirements are not fully finalized.\n\n Knowledge or hands-on experience in at least one banking domain area, such as customer management, core banking systems, AML, compliance, accounting, or knowledge and experience in the banking domain, such as Zengin connection.\n\n 7 or more years of deep experience, or a proven track record of leading the design and development of large-scale, mission-critical systems.\n\n Proven track record of leading technical recommendations (considering feasibility and technical risks) on product requirements based on domain knowledge.\n\n Proven track record of driving technical selection, formulating design policies, and leading the elimination of technical debt in microservice architecture.\n\n Proven track record of designing and implementing systems to ensure the integrity of complex financial transactions and resolving database performance bottlenecks.\n\n Experience in leading the formulation of testing strategies (e.g., unit, integration, load, contract testing) and the introduction/improvement of test automation frameworks.\n\n Experience in production-level service operation and design based on cost optimization and reliability (SRE principles) in major cloud environments (e.g., AWS).\n\n Bachelor’s or Master’s degree in Computer Science or a related field, or equivalent practical experience.\n\n Japanese: Business level\n\n English: Business level (TOEIC score of 700 or above)\n\n Nice to haves\n While not specifically required, tell us if you have any of the following.\n\n Experience in designing systems that comply with complex financial regulations and security requirements (e.g., PCI DSS, FISC Security Guidelines).\n\n Experience in leading data model design for journal entry and balance management in core banking systems based on double-entry bookkeeping knowledge.\n\n Knowledge and experience in designing interfaces for cooperation with domestic settlement networks (e.g., Zengin Net) and CCPs (Clearing Organizations).\n\n Experience in introducing and establishing a culture of DevOps/SRE across teams and improving incident response and post-mortem processes.\n\n Experience contributing to the recruitment and development of engineers (mentoring, evaluation, training).\n\n Experience in formulating a technical selection roadmap and explaining/proposing technical strategy to management and product teams.\n\n Proven track record of formulating concrete strategies for improving development efficiency using AI and driving technical standardization and adoption within the team.\n\n Money Forward recently announced our AI Strategy roadmap which focuses on improving AI-driven operational efficiencies, as well as integrating AI agents into our products to deliver better value to our users.",
-      "datePosted": "2026-01-09T16:34:22.217+09:00",
-      "validThrough": "",
-      "employmentType": "FULL_TIME",
-      "firstSeenAt": "2026-05-16T23:18:51.813Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
-      "isNew": true,
-      "isExpired": false,
-      "expiredAt": "",
-      "jobKey": "url:https://www.tokyodev.com/companies/moneyforward/jobs/lead-backend-engineer-digital-bank",
-      "sourceMarket": "jp",
-      "sourceIndustry": "",
-      "sourceStrategy": "flex-job-board",
-      "sourceTags": [
-        "flex-job-board"
-      ],
-      "sourceQuality": {
-        "score": 100,
-        "tier": "high",
-        "reasons": []
-      },
-      "score": 71,
-      "grade": "C",
-      "recommendation": "值得投遞",
-      "status": "值得投遞",
-      "evaluatedAt": "2026-05-16T23:18:53.394Z",
-      "evaluation": {
-        "source": "career-ops-intelligence",
-        "overall": {
-          "grade": "C",
-          "score": 71,
-          "recommendation": "值得投遞",
-          "summary": "以 11 個維度比對，命中 4 個履歷技能，市場技能命中 6 個。"
-        },
-        "decision_factors": [
-          "職類：Frontend；資歷：Senior+；模式：Unknown",
-          "履歷技能命中：API、engineer、product、data",
-          "未偵測到明顯稀有技能訊號"
-        ],
-        "ats_keywords": {
-          "found": [
-            "API",
-            "engineer",
-            "product",
-            "data"
-          ],
-          "missing": [
-            "kotlin",
-            "aws",
-            "docker",
-            "rest",
-            "agents"
-          ]
-        },
-        "risks": [],
-        "next_actions": [
-          "開啟職缺確認仍可投遞",
-          "產生客製 ATS PDF",
-          "用同職類高分職缺校準履歷關鍵字"
-        ]
-      },
-      "intelligence": {
-        "score": 71,
-        "grade": "C",
-        "recommendation": "值得投遞",
-        "features": {
-          "roleFamily": "Frontend",
-          "seniority": "Senior+",
-          "workMode": "Unknown",
-          "skills": [
-            "kotlin",
-            "aws",
-            "docker",
-            "rest",
-            "api",
-            "agents"
-          ],
-          "profileSkillHits": [
-            "API",
-            "engineer",
-            "product",
-            "data"
-          ],
-          "profileSkillsNotInJd": [
-            "JavaScript",
-            "TypeScript",
-            "React",
-            "Next.js",
-            "CSS",
-            "Tailwind",
-            "Accessibility",
-            "Analytics",
-            "Figma",
-            "Performance Optimization",
-            "Design Systems",
-            "remote"
-          ],
-          "jdSkillsMissingFromProfile": [
-            "kotlin",
-            "aws",
-            "docker",
-            "rest",
-            "agents"
-          ],
-          "requiresUnknownLanguage": false,
-          "rareHighValueSkills": [],
-          "locationHits": [],
-          "avoidHits": []
-        },
-        "dimensions": {
-          "profileMatch": 74,
-          "atsCoverage": 15,
-          "roleFit": 92,
-          "seniorityFit": 70,
-          "locationFit": 58,
-          "sourceQuality": 78,
-          "freshness": 95,
-          "compensationSignal": 52,
-          "growthSignal": 100,
-          "applicationEffort": 86,
-          "riskPenalty": 0
-        }
-      }
-    },
-    {
-      "source": "Source flex job board",
-      "sourceType": "json-ld",
-      "title": "Infrastructure Engineer (SRE-AWS)",
-      "company": "Money Forward",
-      "url": "https://www.tokyodev.com/companies/moneyforward/jobs/infrastructure-engineer-sre-aws",
-      "location": "Minato-ku, Tokyo, JP",
-      "description": "Under our mission, “Money Forward. Move your life forward”, Money Forward offers a range of services, including the automatic household accounting and asset management service “Money Forward ME” and the business-oriented cloud service “Money Forward Cloud,” which are used by many users. For these services, utilizing various user data collected through a technology called “Account Aggregation” is essential.\n\n The Account Aggregation Team develops systems to collect user data. The collected data becomes more valuable information through our products and is returned to the users.\n\n However, we believe that the collected user data could have more diverse use cases for each user. The data collected from various sources is also connected to the users’ lives. By enabling users to use their data more conveniently, we aim to move their lives forward. With this vision, we are now developing a new product. We are looking for an infrastructure engineer who will work with us to optimize the development and operation of this product.\n\n Technical Stack\n\n Languages: Kotlin, TypeScript, React\n\n Infrastructure: AWS, Kubernetes, Terraform\n\n Database: MySQL\n\n Middleware: Docker, Nginx, Consul, Redis\n\n Platform: AWS, On-premises\n\n Tools\n\n Repository Management: GitHub\n\n Monitoring: DataDog, Rollbar\n\n Communication: Slack, Zoom\n\n Ticket Management: JIRA\n\n Responsibilities\n\n Designing, building, and operating cloud (AWS) and on-premises infrastructure.\n\n Establishment of metrics, monitoring, and alerts using tools like Datadog, as well as incident response (including troubleshooting, recovery, incident management, and post-mortems).\n\n Performance evaluation of applications and infrastructure.\n\n Performance optimization and the creation of systems to support it.\n\n Development of systems for incident response, detection, and prevention.\n\n Enhancement of service reliability, including the definition and management of SLIs/SLOs for continuous performance improvement.\n\n Security operations and compliance management for the entire infrastructure.\n\n Designing, building, and operating platforms to maximize the productivity of development teams(CI/CD, development environments, and testing environments).\n\n Conducting availability and reliability reviews from the design phase onward.\n\n Addressing financial industry-specific regulatory requirements.\n\n Requirements\n\n 3+ years of practical experience in design and operation in SRE, DevOps, or infrastructure domains\n\n Basic knowledge and work experience with Linux, Network, Security, etc.\n\n Experience in using/designing/operating AWS\n\n Experience with container orchestration systems like Kubernetes or ECS\n\n Experience in building and utilizing monitoring environments with tools for monitoring and observability.\n\n Experience with Infrastructure as Code (IaC) (tools like Terraform, etc.)\n\n Development experience with peer reviews using Git, such as Pull Requests\n\n Nice to haves\n While not specifically required, tell us if you have any of the following.\n\n Strategic planning skills (Ability to understand company and business challenges, define a clear direction for your organization, and present a rational path to stakeholders.)\n\n Experience in building and operating Kubernetes in a multi-tenant environment\n\n Experience in handling failures in web services\n\n Experience as an SRE in a web service company\n\n Experience in operating large-scale services on AWS\n\n Experience in building CI/CD pipelines\n\n Experience in implementing and operating monitoring for web services\n\n Experience in capacity planning and tuning for web services\n\n Experience in operating MySQL (experience with version upgrades, knowledge of replication, etc.)\n\n Experience in AI development or development using AI tools\n\n The ability to grasp the gist of technical discussions in Japanese is a plus. Speaking ability is not required.",
-      "datePosted": "2026-01-06T14:30:23.217+09:00",
-      "validThrough": "",
-      "employmentType": "FULL_TIME",
-      "firstSeenAt": "2026-05-16T23:18:51.813Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
-      "isNew": true,
-      "isExpired": false,
-      "expiredAt": "",
-      "jobKey": "url:https://www.tokyodev.com/companies/moneyforward/jobs/infrastructure-engineer-sre-aws",
-      "sourceMarket": "jp",
-      "sourceIndustry": "",
-      "sourceStrategy": "flex-job-board",
-      "sourceTags": [
-        "flex-job-board"
-      ],
-      "sourceQuality": {
-        "score": 100,
-        "tier": "high",
-        "reasons": []
-      },
-      "score": 71,
-      "grade": "C",
-      "recommendation": "值得投遞",
-      "status": "值得投遞",
-      "evaluatedAt": "2026-05-16T23:18:53.411Z",
-      "evaluation": {
-        "source": "career-ops-intelligence",
-        "overall": {
-          "grade": "C",
-          "score": 71,
-          "recommendation": "值得投遞",
-          "summary": "以 11 個維度比對，命中 6 個履歷技能，市場技能命中 9 個。"
-        },
-        "decision_factors": [
-          "職類：Frontend；資歷：Mid；模式：Unknown",
-          "履歷技能命中：TypeScript、React、Performance Optimization、engineer、product、data",
-          "未偵測到明顯稀有技能訊號"
-        ],
-        "ats_keywords": {
-          "found": [
-            "TypeScript",
-            "React",
-            "Performance Optimization",
-            "engineer",
-            "product",
-            "data"
-          ],
-          "missing": [
-            "kotlin",
-            "mysql",
-            "aws",
-            "docker",
-            "kubernetes",
-            "terraform",
-            "operations"
-          ]
-        },
-        "risks": [],
-        "next_actions": [
-          "開啟職缺確認仍可投遞",
-          "產生客製 ATS PDF",
-          "用同職類高分職缺校準履歷關鍵字"
-        ]
-      },
-      "intelligence": {
-        "score": 71,
-        "grade": "C",
-        "recommendation": "值得投遞",
-        "features": {
-          "roleFamily": "Frontend",
-          "seniority": "Mid",
-          "workMode": "Unknown",
-          "skills": [
-            "typescript",
-            "react",
-            "kotlin",
-            "mysql",
-            "aws",
-            "docker",
-            "kubernetes",
-            "terraform",
-            "operations"
-          ],
-          "profileSkillHits": [
-            "TypeScript",
-            "React",
-            "Performance Optimization",
-            "engineer",
-            "product",
-            "data"
-          ],
-          "profileSkillsNotInJd": [
-            "JavaScript",
-            "Next.js",
-            "CSS",
-            "Tailwind",
-            "Accessibility",
-            "Analytics",
-            "API",
-            "Figma",
-            "Design Systems",
-            "remote",
-            "dashboard",
-            "design system"
-          ],
-          "jdSkillsMissingFromProfile": [
-            "kotlin",
-            "mysql",
-            "aws",
-            "docker",
-            "kubernetes",
-            "terraform",
-            "operations"
-          ],
-          "requiresUnknownLanguage": false,
-          "rareHighValueSkills": [],
-          "locationHits": [],
-          "avoidHits": []
-        },
-        "dimensions": {
-          "profileMatch": 84,
-          "atsCoverage": 23,
-          "roleFit": 68,
-          "seniorityFit": 82,
-          "locationFit": 58,
-          "sourceQuality": 78,
-          "freshness": 95,
-          "compensationSignal": 52,
-          "growthSignal": 84,
-          "applicationEffort": 86,
-          "riskPenalty": 0
-        }
-      }
-    },
-    {
       "source": "Cardlytics Workday Taiwan",
       "sourceType": "adapter:workday",
       "title": "Senior Software Engineer",
@@ -1505,7 +1232,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "Full time",
       "firstSeenAt": "2026-05-15T06:24:08.007Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -1529,7 +1256,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "C",
       "recommendation": "值得投遞",
       "status": "值得投遞",
-      "evaluatedAt": "2026-05-16T23:18:53.210Z",
+      "evaluatedAt": "2026-05-17T23:21:24.666Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -1654,120 +1381,6 @@ window.CV_CAREER_OPS_JOBS = {
     {
       "source": "Source flex job board",
       "sourceType": "json-ld",
-      "title": "Full Stack Engineer",
-      "company": "Tokuty",
-      "url": "https://www.tokyodev.com/companies/tokuty/jobs/full-stack-engineer",
-      "location": "Minato-ku, Tokyo, JP",
-      "description": "In this role, you’ll work across the stack, using both Ruby on Rails and React.js, joining our team of two backend engineers, two frontend engineers, and one product manager.\n\n While you’ll initially work with the team to define requirements and design system architecture, once that’s settled, a designer will clearly specify the tasks, and provide you with a UI to implement. Throughout the implementation, you’ll be expected to work independently, but will be able to consult with other team members of course. DevOps related tasks will generally fall outside the scope of this role.\n\n Communication happens primarily via chat in Japanese. We do have one international member who is fluent in English as well, so you’ll be able to mix in English when needed.\n\n Requirements\n\n 2+ year of experience with React.js and/or Ruby on Rails\n\n Bachelor’s degree in Computer Science or a related field",
-      "datePosted": "2026-05-12T08:48:39.550+09:00",
-      "validThrough": "",
-      "employmentType": "FULL_TIME",
-      "firstSeenAt": "2026-05-16T23:18:51.813Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
-      "isNew": true,
-      "isExpired": false,
-      "expiredAt": "",
-      "jobKey": "url:https://www.tokyodev.com/companies/tokuty/jobs/full-stack-engineer",
-      "sourceMarket": "jp",
-      "sourceIndustry": "",
-      "sourceStrategy": "flex-job-board",
-      "sourceTags": [
-        "flex-job-board"
-      ],
-      "sourceQuality": {
-        "score": 100,
-        "tier": "high",
-        "reasons": []
-      },
-      "score": 70,
-      "grade": "C",
-      "recommendation": "值得投遞",
-      "status": "值得投遞",
-      "evaluatedAt": "2026-05-16T23:18:53.426Z",
-      "evaluation": {
-        "source": "career-ops-intelligence",
-        "overall": {
-          "grade": "C",
-          "score": 70,
-          "recommendation": "值得投遞",
-          "summary": "以 11 個維度比對，命中 4 個履歷技能，市場技能命中 1 個。"
-        },
-        "decision_factors": [
-          "職類：Frontend；資歷：Manager+；模式：Unknown",
-          "履歷技能命中：React、design system、engineer、product",
-          "未偵測到明顯稀有技能訊號"
-        ],
-        "ats_keywords": {
-          "found": [
-            "React",
-            "design system",
-            "engineer",
-            "product"
-          ],
-          "missing": []
-        },
-        "risks": [],
-        "next_actions": [
-          "開啟職缺確認仍可投遞",
-          "產生客製 ATS PDF",
-          "用同職類高分職缺校準履歷關鍵字"
-        ]
-      },
-      "intelligence": {
-        "score": 70,
-        "grade": "C",
-        "recommendation": "值得投遞",
-        "features": {
-          "roleFamily": "Frontend",
-          "seniority": "Manager+",
-          "workMode": "Unknown",
-          "skills": [
-            "react"
-          ],
-          "profileSkillHits": [
-            "React",
-            "design system",
-            "engineer",
-            "product"
-          ],
-          "profileSkillsNotInJd": [
-            "JavaScript",
-            "TypeScript",
-            "Next.js",
-            "CSS",
-            "Tailwind",
-            "Accessibility",
-            "Analytics",
-            "API",
-            "Figma",
-            "Performance Optimization",
-            "Design Systems",
-            "remote"
-          ],
-          "jdSkillsMissingFromProfile": [],
-          "requiresUnknownLanguage": false,
-          "rareHighValueSkills": [],
-          "locationHits": [],
-          "avoidHits": []
-        },
-        "dimensions": {
-          "profileMatch": 92,
-          "atsCoverage": 15,
-          "roleFit": 92,
-          "seniorityFit": 82,
-          "locationFit": 58,
-          "sourceQuality": 78,
-          "freshness": 95,
-          "compensationSignal": 52,
-          "growthSignal": 48,
-          "applicationEffort": 86,
-          "riskPenalty": 0
-        }
-      }
-    },
-    {
-      "source": "Source flex job board",
-      "sourceType": "json-ld",
       "title": "Software Engineer, Backend",
       "company": "Shizuku AI",
       "url": "https://japan-dev.com/jobs/shizuku-ai/shizuku-ai-software-engineer-backend-zvv206",
@@ -1777,7 +1390,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "2026-11-04",
       "employmentType": "FULL_TIME",
       "firstSeenAt": "2026-05-15T04:51:08.174Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -1797,7 +1410,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "C",
       "recommendation": "觀望",
       "status": "觀望",
-      "evaluatedAt": "2026-05-16T23:18:53.253Z",
+      "evaluatedAt": "2026-05-17T23:21:24.706Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -1906,7 +1519,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "2026-10-17",
       "employmentType": "FULL_TIME",
       "firstSeenAt": "2026-05-15T04:51:08.174Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -1926,7 +1539,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "C",
       "recommendation": "觀望",
       "status": "觀望",
-      "evaluatedAt": "2026-05-16T23:18:53.295Z",
+      "evaluatedAt": "2026-05-17T23:21:24.746Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -2055,7 +1668,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "2026-10-15",
       "employmentType": "FULL_TIME",
       "firstSeenAt": "2026-05-15T04:51:08.174Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -2075,7 +1688,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "C",
       "recommendation": "觀望",
       "status": "值得投遞",
-      "evaluatedAt": "2026-05-16T23:18:53.313Z",
+      "evaluatedAt": "2026-05-17T23:21:24.764Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -2167,6 +1780,390 @@ window.CV_CAREER_OPS_JOBS = {
     {
       "source": "Source flex job board",
       "sourceType": "json-ld",
+      "title": "Lead Backend Engineer, Digital Bank",
+      "company": "Money Forward",
+      "url": "https://www.tokyodev.com/companies/moneyforward/jobs/lead-backend-engineer-digital-bank",
+      "location": "Minato-ku, Tokyo, JP",
+      "description": "Under the mission of “Money Forward. Move your life forward,” Money Forward aims to resolve the financial concerns and anxieties of individuals and businesses through the power of technology.\n\n We have partnered with Sumitomo Mitsui Financial Group, Inc. and Sumitomo Mitsui Banking Corporation to establish a new company in preparation for the launch of a new digital bank.\n\n We are currently seeking candidates for the position of Lead Backend Engineer as part of this initiative.\n\n This position involves employment with Money Forward, Inc., and a secondment to the new company (SMBC Money Forward Bank Preparatory Corporation). The evaluation system and employee benefits will follow the policies of Money Forward, Inc.\n\n Who we are?\n\n We are a startup team partnering with Sumitomo Mitsui Financial Group and Sumitomo Mitsui Banking Corporation to establish a new digital bank. Our mission is to build embedded financial products from the ground up, with a strong focus on supporting small and medium-sized businesses (SMBs).\n\n Development Structure\n\n We operate in a small, fast-moving team while collaborating closely with Money Forward Group companies (MFV and MFI).\n\nThe team consists of cross-functional members Product Managers, Backend Engineers, Frontend Engineers, QA Engineers, and SRE working together with tight communication throughout the development process.\n\n Technology Stack and Tools Used\n\n Kotlin, Spring Boot, Gradle, jOOQ, Liquibase, Kotest/JUnit, Karate/Rest Assured\n\n Redis, Postgresql\n\n Docker, AWS ECS\n\n AWS SQS, SNS, EventBridge\n\n Mambu cloud banking platform\n\n GitHub, Backstage, Amazon ECR\n\n Claude Code, GitHub Actions, ArgoCD, Sonar Cloud, Detekt, AeyeScan\n\n ChatGPT, Copilot, Gemni\n\n Responsibilities\n As a Software Engineer in the Application Development Team, you will leverage Mambu, a leading cloud banking platform for neobanks and challenger banks, to build one of the most reliable and agile banking systems in the industry. Our goal is to shape the future of digital banking in Japan, making it more accessible and user-friendly than ever before.\n\n Acquire domain knowledge in digital banking, including deposits, loans, clearing and settlement, basic accounting, domestic exchange, and Zengin network.\n\n Promote development as a Scrum team leader\n\n Actively engage with product owners to define requirements.\n\n Develop, test, and deploy code that meets non-functional quality gates such as static code analysis, software composition analysis, SAST, and DAST, while maintaining numerical accuracy.\n\n Design and build high-performance, scalable microservices centered around APIs.\n\n Pursue test automation and continuous improvement, including API testing.\n\n Take responsibility for the entire software development lifecycle.\n\n Requirements\n\n Experience in understanding the background and intent of business requirements and independently defining application specifications.\n\n Ability to proactively design specifications and move forward even when requirements are not fully finalized.\n\n Knowledge or hands-on experience in at least one banking domain area, such as customer management, core banking systems, AML, compliance, accounting, or knowledge and experience in the banking domain, such as Zengin connection.\n\n 7 or more years of deep experience, or a proven track record of leading the design and development of large-scale, mission-critical systems.\n\n Proven track record of leading technical recommendations (considering feasibility and technical risks) on product requirements based on domain knowledge.\n\n Proven track record of driving technical selection, formulating design policies, and leading the elimination of technical debt in microservice architecture.\n\n Proven track record of designing and implementing systems to ensure the integrity of complex financial transactions and resolving database performance bottlenecks.\n\n Experience in leading the formulation of testing strategies (e.g., unit, integration, load, contract testing) and the introduction/improvement of test automation frameworks.\n\n Experience in production-level service operation and design based on cost optimization and reliability (SRE principles) in major cloud environments (e.g., AWS).\n\n Bachelor’s or Master’s degree in Computer Science or a related field, or equivalent practical experience.\n\n Japanese: Business level\n\n English: Business level (TOEIC score of 700 or above)\n\n Nice to haves\n While not specifically required, tell us if you have any of the following.\n\n Experience in designing systems that comply with complex financial regulations and security requirements (e.g., PCI DSS, FISC Security Guidelines).\n\n Experience in leading data model design for journal entry and balance management in core banking systems based on double-entry bookkeeping knowledge.\n\n Knowledge and experience in designing interfaces for cooperation with domestic settlement networks (e.g., Zengin Net) and CCPs (Clearing Organizations).\n\n Experience in introducing and establishing a culture of DevOps/SRE across teams and improving incident response and post-mortem processes.\n\n Experience contributing to the recruitment and development of engineers (mentoring, evaluation, training).\n\n Experience in formulating a technical selection roadmap and explaining/proposing technical strategy to management and product teams.\n\n Proven track record of formulating concrete strategies for improving development efficiency using AI and driving technical standardization and adoption within the team.\n\n Money Forward recently announced our AI Strategy roadmap which focuses on improving AI-driven operational efficiencies, as well as integrating AI agents into our products to deliver better value to our users.",
+      "datePosted": "2026-01-09T16:34:22.217+09:00",
+      "validThrough": "",
+      "employmentType": "FULL_TIME",
+      "firstSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
+      "isNew": false,
+      "isExpired": false,
+      "expiredAt": "",
+      "jobKey": "url:https://www.tokyodev.com/companies/moneyforward/jobs/lead-backend-engineer-digital-bank",
+      "sourceMarket": "jp",
+      "sourceIndustry": "",
+      "sourceStrategy": "flex-job-board",
+      "sourceTags": [
+        "flex-job-board"
+      ],
+      "sourceQuality": {
+        "score": 100,
+        "tier": "high",
+        "reasons": []
+      },
+      "score": 69,
+      "grade": "C",
+      "recommendation": "觀望",
+      "status": "值得投遞",
+      "evaluatedAt": "2026-05-17T23:21:24.839Z",
+      "evaluation": {
+        "source": "career-ops-intelligence",
+        "overall": {
+          "grade": "C",
+          "score": 69,
+          "recommendation": "觀望",
+          "summary": "以 11 個維度比對，命中 4 個履歷技能，市場技能命中 6 個。"
+        },
+        "decision_factors": [
+          "職類：Frontend；資歷：Senior+；模式：Unknown",
+          "履歷技能命中：API、engineer、product、data",
+          "未偵測到明顯稀有技能訊號"
+        ],
+        "ats_keywords": {
+          "found": [
+            "API",
+            "engineer",
+            "product",
+            "data"
+          ],
+          "missing": [
+            "kotlin",
+            "aws",
+            "docker",
+            "rest",
+            "agents"
+          ]
+        },
+        "risks": [],
+        "next_actions": [
+          "先與高分職缺比較，不急著投遞",
+          "補齊 JD 或標記喜歡 / 不喜歡以改善後續排序"
+        ]
+      },
+      "intelligence": {
+        "score": 69,
+        "grade": "C",
+        "recommendation": "觀望",
+        "features": {
+          "roleFamily": "Frontend",
+          "seniority": "Senior+",
+          "workMode": "Unknown",
+          "skills": [
+            "kotlin",
+            "aws",
+            "docker",
+            "rest",
+            "api",
+            "agents"
+          ],
+          "profileSkillHits": [
+            "API",
+            "engineer",
+            "product",
+            "data"
+          ],
+          "profileSkillsNotInJd": [
+            "JavaScript",
+            "TypeScript",
+            "React",
+            "Next.js",
+            "CSS",
+            "Tailwind",
+            "Accessibility",
+            "Analytics",
+            "Figma",
+            "Performance Optimization",
+            "Design Systems",
+            "remote"
+          ],
+          "jdSkillsMissingFromProfile": [
+            "kotlin",
+            "aws",
+            "docker",
+            "rest",
+            "agents"
+          ],
+          "requiresUnknownLanguage": false,
+          "rareHighValueSkills": [],
+          "locationHits": [],
+          "avoidHits": []
+        },
+        "dimensions": {
+          "profileMatch": 74,
+          "atsCoverage": 15,
+          "roleFit": 92,
+          "seniorityFit": 70,
+          "locationFit": 58,
+          "sourceQuality": 78,
+          "freshness": 76,
+          "compensationSignal": 52,
+          "growthSignal": 100,
+          "applicationEffort": 86,
+          "riskPenalty": 0
+        }
+      }
+    },
+    {
+      "source": "Source flex job board",
+      "sourceType": "json-ld",
+      "title": "Infrastructure Engineer (SRE-AWS)",
+      "company": "Money Forward",
+      "url": "https://www.tokyodev.com/companies/moneyforward/jobs/infrastructure-engineer-sre-aws",
+      "location": "Minato-ku, Tokyo, JP",
+      "description": "Under our mission, “Money Forward. Move your life forward”, Money Forward offers a range of services, including the automatic household accounting and asset management service “Money Forward ME” and the business-oriented cloud service “Money Forward Cloud,” which are used by many users. For these services, utilizing various user data collected through a technology called “Account Aggregation” is essential.\n\n The Account Aggregation Team develops systems to collect user data. The collected data becomes more valuable information through our products and is returned to the users.\n\n However, we believe that the collected user data could have more diverse use cases for each user. The data collected from various sources is also connected to the users’ lives. By enabling users to use their data more conveniently, we aim to move their lives forward. With this vision, we are now developing a new product. We are looking for an infrastructure engineer who will work with us to optimize the development and operation of this product.\n\n Technical Stack\n\n Languages: Kotlin, TypeScript, React\n\n Infrastructure: AWS, Kubernetes, Terraform\n\n Database: MySQL\n\n Middleware: Docker, Nginx, Consul, Redis\n\n Platform: AWS, On-premises\n\n Tools\n\n Repository Management: GitHub\n\n Monitoring: DataDog, Rollbar\n\n Communication: Slack, Zoom\n\n Ticket Management: JIRA\n\n Responsibilities\n\n Designing, building, and operating cloud (AWS) and on-premises infrastructure.\n\n Establishment of metrics, monitoring, and alerts using tools like Datadog, as well as incident response (including troubleshooting, recovery, incident management, and post-mortems).\n\n Performance evaluation of applications and infrastructure.\n\n Performance optimization and the creation of systems to support it.\n\n Development of systems for incident response, detection, and prevention.\n\n Enhancement of service reliability, including the definition and management of SLIs/SLOs for continuous performance improvement.\n\n Security operations and compliance management for the entire infrastructure.\n\n Designing, building, and operating platforms to maximize the productivity of development teams(CI/CD, development environments, and testing environments).\n\n Conducting availability and reliability reviews from the design phase onward.\n\n Addressing financial industry-specific regulatory requirements.\n\n Requirements\n\n 3+ years of practical experience in design and operation in SRE, DevOps, or infrastructure domains\n\n Basic knowledge and work experience with Linux, Network, Security, etc.\n\n Experience in using/designing/operating AWS\n\n Experience with container orchestration systems like Kubernetes or ECS\n\n Experience in building and utilizing monitoring environments with tools for monitoring and observability.\n\n Experience with Infrastructure as Code (IaC) (tools like Terraform, etc.)\n\n Development experience with peer reviews using Git, such as Pull Requests\n\n Nice to haves\n While not specifically required, tell us if you have any of the following.\n\n Strategic planning skills (Ability to understand company and business challenges, define a clear direction for your organization, and present a rational path to stakeholders.)\n\n Experience in building and operating Kubernetes in a multi-tenant environment\n\n Experience in handling failures in web services\n\n Experience as an SRE in a web service company\n\n Experience in operating large-scale services on AWS\n\n Experience in building CI/CD pipelines\n\n Experience in implementing and operating monitoring for web services\n\n Experience in capacity planning and tuning for web services\n\n Experience in operating MySQL (experience with version upgrades, knowledge of replication, etc.)\n\n Experience in AI development or development using AI tools\n\n The ability to grasp the gist of technical discussions in Japanese is a plus. Speaking ability is not required.",
+      "datePosted": "2026-01-06T14:30:23.217+09:00",
+      "validThrough": "",
+      "employmentType": "FULL_TIME",
+      "firstSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
+      "isNew": false,
+      "isExpired": false,
+      "expiredAt": "",
+      "jobKey": "url:https://www.tokyodev.com/companies/moneyforward/jobs/infrastructure-engineer-sre-aws",
+      "sourceMarket": "jp",
+      "sourceIndustry": "",
+      "sourceStrategy": "flex-job-board",
+      "sourceTags": [
+        "flex-job-board"
+      ],
+      "sourceQuality": {
+        "score": 100,
+        "tier": "high",
+        "reasons": []
+      },
+      "score": 69,
+      "grade": "C",
+      "recommendation": "觀望",
+      "status": "值得投遞",
+      "evaluatedAt": "2026-05-17T23:21:24.855Z",
+      "evaluation": {
+        "source": "career-ops-intelligence",
+        "overall": {
+          "grade": "C",
+          "score": 69,
+          "recommendation": "觀望",
+          "summary": "以 11 個維度比對，命中 6 個履歷技能，市場技能命中 9 個。"
+        },
+        "decision_factors": [
+          "職類：Frontend；資歷：Mid；模式：Unknown",
+          "履歷技能命中：TypeScript、React、Performance Optimization、engineer、product、data",
+          "未偵測到明顯稀有技能訊號"
+        ],
+        "ats_keywords": {
+          "found": [
+            "TypeScript",
+            "React",
+            "Performance Optimization",
+            "engineer",
+            "product",
+            "data"
+          ],
+          "missing": [
+            "kotlin",
+            "mysql",
+            "aws",
+            "docker",
+            "kubernetes",
+            "terraform",
+            "operations"
+          ]
+        },
+        "risks": [],
+        "next_actions": [
+          "先與高分職缺比較，不急著投遞",
+          "補齊 JD 或標記喜歡 / 不喜歡以改善後續排序"
+        ]
+      },
+      "intelligence": {
+        "score": 69,
+        "grade": "C",
+        "recommendation": "觀望",
+        "features": {
+          "roleFamily": "Frontend",
+          "seniority": "Mid",
+          "workMode": "Unknown",
+          "skills": [
+            "typescript",
+            "react",
+            "kotlin",
+            "mysql",
+            "aws",
+            "docker",
+            "kubernetes",
+            "terraform",
+            "operations"
+          ],
+          "profileSkillHits": [
+            "TypeScript",
+            "React",
+            "Performance Optimization",
+            "engineer",
+            "product",
+            "data"
+          ],
+          "profileSkillsNotInJd": [
+            "JavaScript",
+            "Next.js",
+            "CSS",
+            "Tailwind",
+            "Accessibility",
+            "Analytics",
+            "API",
+            "Figma",
+            "Design Systems",
+            "remote",
+            "dashboard",
+            "design system"
+          ],
+          "jdSkillsMissingFromProfile": [
+            "kotlin",
+            "mysql",
+            "aws",
+            "docker",
+            "kubernetes",
+            "terraform",
+            "operations"
+          ],
+          "requiresUnknownLanguage": false,
+          "rareHighValueSkills": [],
+          "locationHits": [],
+          "avoidHits": []
+        },
+        "dimensions": {
+          "profileMatch": 84,
+          "atsCoverage": 23,
+          "roleFit": 68,
+          "seniorityFit": 82,
+          "locationFit": 58,
+          "sourceQuality": 78,
+          "freshness": 76,
+          "compensationSignal": 52,
+          "growthSignal": 84,
+          "applicationEffort": 86,
+          "riskPenalty": 0
+        }
+      }
+    },
+    {
+      "source": "Source flex job board",
+      "sourceType": "json-ld",
+      "title": "Full Stack Engineer",
+      "company": "Tokuty",
+      "url": "https://www.tokyodev.com/companies/tokuty/jobs/full-stack-engineer",
+      "location": "Minato-ku, Tokyo, JP",
+      "description": "In this role, you’ll work across the stack, using both Ruby on Rails and React.js, joining our team of two backend engineers, two frontend engineers, and one product manager.\n\n While you’ll initially work with the team to define requirements and design system architecture, once that’s settled, a designer will clearly specify the tasks, and provide you with a UI to implement. Throughout the implementation, you’ll be expected to work independently, but will be able to consult with other team members of course. DevOps related tasks will generally fall outside the scope of this role.\n\n Communication happens primarily via chat in Japanese. We do have one international member who is fluent in English as well, so you’ll be able to mix in English when needed.\n\n Requirements\n\n 2+ year of experience with React.js and/or Ruby on Rails\n\n Bachelor’s degree in Computer Science or a related field",
+      "datePosted": "2026-05-12T08:48:39.550+09:00",
+      "validThrough": "",
+      "employmentType": "FULL_TIME",
+      "firstSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
+      "isNew": false,
+      "isExpired": false,
+      "expiredAt": "",
+      "jobKey": "url:https://www.tokyodev.com/companies/tokuty/jobs/full-stack-engineer",
+      "sourceMarket": "jp",
+      "sourceIndustry": "",
+      "sourceStrategy": "flex-job-board",
+      "sourceTags": [
+        "flex-job-board"
+      ],
+      "sourceQuality": {
+        "score": 100,
+        "tier": "high",
+        "reasons": []
+      },
+      "score": 69,
+      "grade": "C",
+      "recommendation": "觀望",
+      "status": "值得投遞",
+      "evaluatedAt": "2026-05-17T23:21:24.868Z",
+      "evaluation": {
+        "source": "career-ops-intelligence",
+        "overall": {
+          "grade": "C",
+          "score": 69,
+          "recommendation": "觀望",
+          "summary": "以 11 個維度比對，命中 4 個履歷技能，市場技能命中 1 個。"
+        },
+        "decision_factors": [
+          "職類：Frontend；資歷：Manager+；模式：Unknown",
+          "履歷技能命中：React、design system、engineer、product",
+          "未偵測到明顯稀有技能訊號"
+        ],
+        "ats_keywords": {
+          "found": [
+            "React",
+            "design system",
+            "engineer",
+            "product"
+          ],
+          "missing": []
+        },
+        "risks": [],
+        "next_actions": [
+          "先與高分職缺比較，不急著投遞",
+          "補齊 JD 或標記喜歡 / 不喜歡以改善後續排序"
+        ]
+      },
+      "intelligence": {
+        "score": 69,
+        "grade": "C",
+        "recommendation": "觀望",
+        "features": {
+          "roleFamily": "Frontend",
+          "seniority": "Manager+",
+          "workMode": "Unknown",
+          "skills": [
+            "react"
+          ],
+          "profileSkillHits": [
+            "React",
+            "design system",
+            "engineer",
+            "product"
+          ],
+          "profileSkillsNotInJd": [
+            "JavaScript",
+            "TypeScript",
+            "Next.js",
+            "CSS",
+            "Tailwind",
+            "Accessibility",
+            "Analytics",
+            "API",
+            "Figma",
+            "Performance Optimization",
+            "Design Systems",
+            "remote"
+          ],
+          "jdSkillsMissingFromProfile": [],
+          "requiresUnknownLanguage": false,
+          "rareHighValueSkills": [],
+          "locationHits": [],
+          "avoidHits": []
+        },
+        "dimensions": {
+          "profileMatch": 92,
+          "atsCoverage": 15,
+          "roleFit": 92,
+          "seniorityFit": 82,
+          "locationFit": 58,
+          "sourceQuality": 78,
+          "freshness": 76,
+          "compensationSignal": 52,
+          "growthSignal": 48,
+          "applicationEffort": 86,
+          "riskPenalty": 0
+        }
+      }
+    },
+    {
+      "source": "Source flex job board",
+      "sourceType": "json-ld",
       "title": "Frontend Design Engineer",
       "company": "Metanomaly",
       "url": "https://japan-dev.com/jobs/metanomaly/mewtant-growth-engineer-so4y2r",
@@ -2176,7 +2173,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "2026-10-15",
       "employmentType": "FULL_TIME",
       "firstSeenAt": "2026-05-15T04:51:08.174Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -2196,7 +2193,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "C",
       "recommendation": "觀望",
       "status": "值得投遞",
-      "evaluatedAt": "2026-05-16T23:18:53.315Z",
+      "evaluatedAt": "2026-05-17T23:21:24.765Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -2294,7 +2291,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "FULL_TIME",
       "firstSeenAt": "2026-05-15T04:51:38.896Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -2314,7 +2311,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "C",
       "recommendation": "觀望",
       "status": "值得投遞",
-      "evaluatedAt": "2026-05-16T23:18:53.398Z",
+      "evaluatedAt": "2026-05-17T23:21:24.843Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -2434,7 +2431,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "Intern",
       "firstSeenAt": "2026-05-15T06:25:26.345Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -2456,7 +2453,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "C",
       "recommendation": "觀望",
       "status": "值得投遞",
-      "evaluatedAt": "2026-05-16T23:18:52.954Z",
+      "evaluatedAt": "2026-05-17T23:21:24.447Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -2562,7 +2559,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "Full time",
       "firstSeenAt": "2026-05-15T11:59:22.604Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -2587,7 +2584,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "C",
       "recommendation": "觀望",
       "status": "值得投遞",
-      "evaluatedAt": "2026-05-16T23:18:53.010Z",
+      "evaluatedAt": "2026-05-17T23:21:24.498Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -2676,7 +2673,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "Full time",
       "firstSeenAt": "2026-05-15T12:00:02.765Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -2700,7 +2697,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "C",
       "recommendation": "觀望",
       "status": "觀望",
-      "evaluatedAt": "2026-05-16T23:18:53.135Z",
+      "evaluatedAt": "2026-05-17T23:21:24.600Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -2806,7 +2803,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "2026-11-04",
       "employmentType": "FULL_TIME",
       "firstSeenAt": "2026-05-15T04:51:08.174Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -2826,7 +2823,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "C",
       "recommendation": "觀望",
       "status": "觀望",
-      "evaluatedAt": "2026-05-16T23:18:53.258Z",
+      "evaluatedAt": "2026-05-17T23:21:24.711Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -2939,7 +2936,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "2026-10-17",
       "employmentType": "FULL_TIME",
       "firstSeenAt": "2026-05-15T04:51:08.174Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -2959,7 +2956,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "C",
       "recommendation": "觀望",
       "status": "值得投遞",
-      "evaluatedAt": "2026-05-16T23:18:53.299Z",
+      "evaluatedAt": "2026-05-17T23:21:24.750Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -3061,7 +3058,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "Full time",
       "firstSeenAt": "2026-05-15T12:00:02.765Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -3085,7 +3082,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "C",
       "recommendation": "觀望",
       "status": "觀望",
-      "evaluatedAt": "2026-05-16T23:18:53.148Z",
+      "evaluatedAt": "2026-05-17T23:21:24.611Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -3194,7 +3191,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "Full time",
       "firstSeenAt": "2026-05-15T12:00:32.241Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -3218,7 +3215,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "C",
       "recommendation": "觀望",
       "status": "值得投遞",
-      "evaluatedAt": "2026-05-16T23:18:53.193Z",
+      "evaluatedAt": "2026-05-17T23:21:24.652Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -3307,7 +3304,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "2026-11-04",
       "employmentType": "FULL_TIME",
       "firstSeenAt": "2026-05-15T04:51:08.174Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -3327,7 +3324,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "C",
       "recommendation": "觀望",
       "status": "觀望",
-      "evaluatedAt": "2026-05-16T23:18:53.249Z",
+      "evaluatedAt": "2026-05-17T23:21:24.701Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -3443,7 +3440,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "FULL_TIME",
       "firstSeenAt": "2026-05-15T04:51:38.896Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -3463,7 +3460,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "C",
       "recommendation": "觀望",
       "status": "值得投遞",
-      "evaluatedAt": "2026-05-16T23:18:53.389Z",
+      "evaluatedAt": "2026-05-17T23:21:24.834Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -3578,275 +3575,6 @@ window.CV_CAREER_OPS_JOBS = {
     {
       "source": "Source flex job board",
       "sourceType": "json-ld",
-      "title": "Security Specialist (Product Security), CISO Office, Tokyo",
-      "company": "Money Forward",
-      "url": "https://www.tokyodev.com/companies/moneyforward/jobs/security-specialist-product-security-ciso-office-tokyo",
-      "location": "Minato-ku, Tokyo, JP",
-      "description": "At Money Forward, we develop a wide range of popular services, including our automated personal financial management tool “Money Forward ME” and the “Money Forward Cloud” suite for businesses. Our ecosystem is powered by advanced technologies such as “Account Aggregation” and our single sign-on system, “Money Forward ID.”\n\n As our services handle sensitive financial data, we maintain the highest standards of security. The CISO Office works closely with our business units to ensure and enhance the security of our products. This includes the governance and visualization of major cloud platforms like AWS and GCP, as well as the design, implementation, and operation of common security features such as WAF. Additionally, the CISO Office is responsible for strengthening the security of our internal information systems.\n\n To provide a safe and secure experience for even more users, we are looking for a Security Specialist to join our team.\n\n About the CISO Office\n\n Our mission is to “Maximize the value delivered to our customers through security.” We define and create the ideal security state for the entire Money Forward Group.\n\n Preventing service downtime and information leakage is, of course, critical. However, that is only one part of what we value. Excessive security measures can slow down development, potentially reducing or delaying the value we provide to our customers. As security professionals, we constantly ask ourselves how we can maximize customer value and implement the most optimized security solutions to achieve that goal.\n\n Security Principles\n\n We consider the ideal state of security and our organization through three core themes:\n\n Embedded security in business strategy. Security does not exist in a vacuum. We design security measures in alignment with business strategies, taking into account the current business phase, costs, projected revenue, and potential loss in the event of a risk.\n\n Advanced balancing between security and experience. The highest level of security is not always the “right” answer. Over-securing can increase costs and compromise user convenience. We must assess risks and always consider the most suitable security measures. Instead of simply avoiding risk, we sometimes choose to take calculated risks to pursue maximum user value. To achieve a sophisticated balance between convenience and security, we actively promote automation and autonomous systems.\n\n Autonomous and scalable organization of security. As the Money Forward Group grows into a larger development organization, we aim to deliver even greater value. If the CISO Office handles every single security function, we will become a bottleneck and fail to scale. Each development department must be able to build secure services autonomously. The CISO Office focuses on building the frameworks and providing the support necessary to enable this autonomy.\n\n Responsibilities\n In this position, you will leverage your knowledge and experience in coding and infrastructure to maintain and enhance the security of Money Forward in collaboration with developers and IT infrastructure teams. As a Product Security Specialist, you will drive the following initiatives alongside other security specialists in the CISO Office:\n\n Establishment of security guardrails for AWS, Azure, and GCP environments.\n\n In-house security consulting: Providing technical advice on security and conducting architecture reviews for our developers.\n\n Vulnerability assessments and penetration testing: Performing or supporting security evaluations.\n\n Vulnerability intelligence: Collecting and verifying vulnerability information, including OSINT (Open Source Intelligence).\n\n Security tool development: Developing tools and scripts to automate or enhance security.\n\n Framework implementation: Implementing and deploying security frameworks such as NIST CSF and CIS Controls.\n\n DevSecOps implementation: Integrating security into modern development workflows, including K8s, Docker, and CI/CD pipelines.\n\n Requirements\n\n Foundational understanding of computer science, including networking, operating systems, data structures, and cryptography.\n\n Experience in software development with at least one programming language, or hands-on experience practicing Security by Design.\n\n Business-level English communication skills.\n\n Knowledge or experience in any of the following areas:\n\n Vulnerability assessment\n\n Penetration testing or Red Teaming operations\n\n Forensics, malware analysis, or incident response\n\n Cloud security\n\n Architecture reviews\n\n Building and operating DevSecOps workflows\n\n Implementation and operation of security solutions (e.g., WAF, IDS/IPS, SIEM)\n\n Nice to haves\n While not specifically required, tell us if you have any of the following.\n\n Business-level Japanese communication skills.\n\n Experience participating in CTFs (Capture The Flag).\n\n Experience in bug hunting or obtaining CVEs (Common Vulnerabilities and Exposures).\n\n Relevant certifications such as CISSP, CISM, OSCP, GCIH, etc.\n\n Deep understanding of Authentication and Authorization (e.g., OIDC, OAuth).\n\n Experience in security-related operations within the Financial or Fintech industry (e.g., knowledge of FISC guidelines).\n\n Experience in AI development and/or experience in using AI tools to improve development processes.\n\n Money Forward recently announced our AI Strategy roadmap which focuses on improving AI-driven operational efficiencies, as well as integrating AI agents into our products to deliver better value to our users.",
-      "datePosted": "2026-01-09T13:27:46.916+09:00",
-      "validThrough": "",
-      "employmentType": "FULL_TIME",
-      "firstSeenAt": "2026-05-16T23:18:51.813Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
-      "isNew": true,
-      "isExpired": false,
-      "expiredAt": "",
-      "jobKey": "url:https://www.tokyodev.com/companies/moneyforward/jobs/security-specialist-product-security-ciso-office-tokyo",
-      "sourceMarket": "jp",
-      "sourceIndustry": "",
-      "sourceStrategy": "flex-job-board",
-      "sourceTags": [
-        "flex-job-board"
-      ],
-      "sourceQuality": {
-        "score": 100,
-        "tier": "high",
-        "reasons": []
-      },
-      "score": 62,
-      "grade": "C",
-      "recommendation": "觀望",
-      "status": "觀望",
-      "evaluatedAt": "2026-05-16T23:18:53.404Z",
-      "evaluation": {
-        "source": "career-ops-intelligence",
-        "overall": {
-          "grade": "C",
-          "score": 62,
-          "recommendation": "觀望",
-          "summary": "以 11 個維度比對，命中 3 個履歷技能，市場技能命中 6 個。"
-        },
-        "decision_factors": [
-          "職類：Backend；資歷：Mid；模式：Unknown",
-          "履歷技能命中：product、data、visualization",
-          "未偵測到明顯稀有技能訊號"
-        ],
-        "ats_keywords": {
-          "found": [
-            "product",
-            "data",
-            "visualization"
-          ],
-          "missing": [
-            "aws",
-            "gcp",
-            "azure",
-            "docker",
-            "agents",
-            "operations"
-          ]
-        },
-        "risks": [],
-        "next_actions": [
-          "先與高分職缺比較，不急著投遞",
-          "補齊 JD 或標記喜歡 / 不喜歡以改善後續排序"
-        ]
-      },
-      "intelligence": {
-        "score": 62,
-        "grade": "C",
-        "recommendation": "觀望",
-        "features": {
-          "roleFamily": "Backend",
-          "seniority": "Mid",
-          "workMode": "Unknown",
-          "skills": [
-            "aws",
-            "gcp",
-            "azure",
-            "docker",
-            "agents",
-            "operations"
-          ],
-          "profileSkillHits": [
-            "product",
-            "data",
-            "visualization"
-          ],
-          "profileSkillsNotInJd": [
-            "JavaScript",
-            "TypeScript",
-            "React",
-            "Next.js",
-            "CSS",
-            "Tailwind",
-            "Accessibility",
-            "Analytics",
-            "API",
-            "Figma",
-            "Performance Optimization",
-            "Design Systems"
-          ],
-          "jdSkillsMissingFromProfile": [
-            "aws",
-            "gcp",
-            "azure",
-            "docker",
-            "agents",
-            "operations"
-          ],
-          "requiresUnknownLanguage": false,
-          "rareHighValueSkills": [],
-          "locationHits": [],
-          "avoidHits": []
-        },
-        "dimensions": {
-          "profileMatch": 42,
-          "atsCoverage": 12,
-          "roleFit": 68,
-          "seniorityFit": 82,
-          "locationFit": 58,
-          "sourceQuality": 78,
-          "freshness": 95,
-          "compensationSignal": 52,
-          "growthSignal": 93,
-          "applicationEffort": 86,
-          "riskPenalty": 0
-        }
-      }
-    },
-    {
-      "source": "Source flex job board",
-      "sourceType": "json-ld",
-      "title": "Cloud Platform Engineer (DB Specialist)",
-      "company": "PayPay",
-      "url": "https://www.tokyodev.com/companies/paypay/jobs/cloud-platform-engineer-db-specialist",
-      "location": "Minato-ku, Tokyo, JP",
-      "description": "PayPay is looking for Cloud Platform Engineers who specialize in databases at scale on mission critical systems.\n\n Tech Stack\n\n Python, Shell, Go, SQL, PL/SQL\n\n Aurora, MySQL, PostgreSQL, TiDB, Redis, Valkey, DynamoDB\n\n AWS\n\n GitHub, Terraform, Jenkins, Ansible, Flyway\n\n Victoria Metrics, Grafana, Prometheus\n\n Slack, Zoom, Jira, Confluence\n\n Responsibilities\n\n Database operations, including monitoring, configuration management, upgrade, scaling, backup, and data migration.\n\n Iterate on database operations to improve quality and efficiency\n\n Troubleshoot stability and performance problems\n\n Contribute to documentation for communicating knowledge, experience and for effective decision-making\n\n Research and test new tools in database ecosystems, and adopt them in PayPay Group.\n\n Requirements\n\n More than 5 years of DBA experience with a minimum of 3 years MySQL or PostgreSQL experience.\n\n More than 3 years of AWS experience in recent years\n\n Hands-on experience with Infra as Code (IaC - terraform)\n\n Interested in new technologies and willing to improve operational quality and efficiency\n\n Familiar with shell and programming language for scripting (Python, Go,…)\n\n Nice to haves\n While not specifically required, tell us if you have any of the following.\n\n Experience in automating operations related to Database or AWS.\n\n Familiarity with Jenkins, Ansible, Docker, Kubernetes\n\n Working experience in a full remote environment\n\n Experience in operating distributed systems\n\n Experience working with NoSQL such as Redis, Valkey and DynamoDB\n\n Experience working with NewSQL databases (like TiDB)\n\n Experience with DBs cost reduction\n\n Experience with DBs Disaster Recovery strategies",
-      "datePosted": "2026-02-04T16:51:09.511+09:00",
-      "validThrough": "",
-      "employmentType": "FULL_TIME",
-      "firstSeenAt": "2026-05-16T23:18:51.813Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
-      "isNew": true,
-      "isExpired": false,
-      "expiredAt": "",
-      "jobKey": "url:https://www.tokyodev.com/companies/paypay/jobs/cloud-platform-engineer-db-specialist",
-      "sourceMarket": "jp",
-      "sourceIndustry": "",
-      "sourceStrategy": "flex-job-board",
-      "sourceTags": [
-        "flex-job-board"
-      ],
-      "sourceQuality": {
-        "score": 100,
-        "tier": "high",
-        "reasons": []
-      },
-      "score": 62,
-      "grade": "C",
-      "recommendation": "觀望",
-      "status": "值得投遞",
-      "evaluatedAt": "2026-05-16T23:18:53.429Z",
-      "evaluation": {
-        "source": "career-ops-intelligence",
-        "overall": {
-          "grade": "C",
-          "score": 62,
-          "recommendation": "觀望",
-          "summary": "以 11 個維度比對，命中 3 個履歷技能，市場技能命中 9 個。"
-        },
-        "decision_factors": [
-          "職類：Backend；資歷：Mid；模式：Remote",
-          "履歷技能命中：remote、engineer、data",
-          "未偵測到明顯稀有技能訊號"
-        ],
-        "ats_keywords": {
-          "found": [
-            "remote",
-            "engineer",
-            "data"
-          ],
-          "missing": [
-            "python",
-            "go",
-            "sql",
-            "mysql",
-            "aws",
-            "docker",
-            "kubernetes",
-            "terraform",
-            "operations"
-          ]
-        },
-        "risks": [],
-        "next_actions": [
-          "先與高分職缺比較，不急著投遞",
-          "補齊 JD 或標記喜歡 / 不喜歡以改善後續排序"
-        ]
-      },
-      "intelligence": {
-        "score": 62,
-        "grade": "C",
-        "recommendation": "觀望",
-        "features": {
-          "roleFamily": "Backend",
-          "seniority": "Mid",
-          "workMode": "Remote",
-          "skills": [
-            "python",
-            "go",
-            "sql",
-            "mysql",
-            "aws",
-            "docker",
-            "kubernetes",
-            "terraform",
-            "operations"
-          ],
-          "profileSkillHits": [
-            "remote",
-            "engineer",
-            "data"
-          ],
-          "profileSkillsNotInJd": [
-            "JavaScript",
-            "TypeScript",
-            "React",
-            "Next.js",
-            "CSS",
-            "Tailwind",
-            "Accessibility",
-            "Analytics",
-            "API",
-            "Figma",
-            "Performance Optimization",
-            "Design Systems"
-          ],
-          "jdSkillsMissingFromProfile": [
-            "python",
-            "go",
-            "sql",
-            "mysql",
-            "aws",
-            "docker",
-            "kubernetes",
-            "terraform",
-            "operations"
-          ],
-          "requiresUnknownLanguage": false,
-          "rareHighValueSkills": [],
-          "locationHits": [],
-          "avoidHits": []
-        },
-        "dimensions": {
-          "profileMatch": 42,
-          "atsCoverage": 12,
-          "roleFit": 68,
-          "seniorityFit": 82,
-          "locationFit": 82,
-          "sourceQuality": 78,
-          "freshness": 95,
-          "compensationSignal": 52,
-          "growthSignal": 75,
-          "applicationEffort": 86,
-          "riskPenalty": 0
-        }
-      }
-    },
-    {
-      "source": "Source flex job board",
-      "sourceType": "json-ld",
       "title": "Automation QA Engineer",
       "company": "PayPay",
       "url": "https://www.tokyodev.com/companies/paypay/jobs/automation-qa-engineer",
@@ -3856,7 +3584,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "FULL_TIME",
       "firstSeenAt": "2026-05-15T04:51:38.896Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -3876,7 +3604,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "C",
       "recommendation": "觀望",
       "status": "值得投遞",
-      "evaluatedAt": "2026-05-16T23:18:53.432Z",
+      "evaluatedAt": "2026-05-17T23:21:24.874Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -3989,7 +3717,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "Full time",
       "firstSeenAt": "2026-05-15T11:59:22.604Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -4014,7 +3742,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "C",
       "recommendation": "觀望",
       "status": "觀望",
-      "evaluatedAt": "2026-05-16T23:18:52.988Z",
+      "evaluatedAt": "2026-05-17T23:21:24.479Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -4115,7 +3843,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "Full time",
       "firstSeenAt": "2026-05-15T11:59:22.604Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -4140,7 +3868,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "C",
       "recommendation": "觀望",
       "status": "觀望",
-      "evaluatedAt": "2026-05-16T23:18:53.007Z",
+      "evaluatedAt": "2026-05-17T23:21:24.496Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -4239,7 +3967,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "Full time",
       "firstSeenAt": "2026-05-15T11:59:52.258Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -4263,7 +3991,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "C",
       "recommendation": "觀望",
       "status": "觀望",
-      "evaluatedAt": "2026-05-16T23:18:53.109Z",
+      "evaluatedAt": "2026-05-17T23:21:24.580Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -4364,7 +4092,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "Part time",
       "firstSeenAt": "2026-05-15T12:00:02.765Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -4388,7 +4116,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "C",
       "recommendation": "觀望",
       "status": "觀望",
-      "evaluatedAt": "2026-05-16T23:18:53.138Z",
+      "evaluatedAt": "2026-05-17T23:21:24.602Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -4485,7 +4213,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "Full time",
       "firstSeenAt": "2026-05-15T12:00:02.765Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -4509,7 +4237,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "C",
       "recommendation": "觀望",
       "status": "觀望",
-      "evaluatedAt": "2026-05-16T23:18:53.132Z",
+      "evaluatedAt": "2026-05-17T23:21:24.597Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -4598,7 +4326,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "Full time",
       "firstSeenAt": "2026-05-15T12:00:02.765Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -4622,7 +4350,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "C",
       "recommendation": "觀望",
       "status": "觀望",
-      "evaluatedAt": "2026-05-16T23:18:53.142Z",
+      "evaluatedAt": "2026-05-17T23:21:24.605Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -4713,7 +4441,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "Full time",
       "firstSeenAt": "2026-05-15T12:00:32.241Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -4737,7 +4465,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "C",
       "recommendation": "觀望",
       "status": "值得投遞",
-      "evaluatedAt": "2026-05-16T23:18:53.179Z",
+      "evaluatedAt": "2026-05-17T23:21:24.638Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -4826,7 +4554,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "Full time",
       "firstSeenAt": "2026-05-15T12:00:32.241Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -4850,7 +4578,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "C",
       "recommendation": "觀望",
       "status": "值得投遞",
-      "evaluatedAt": "2026-05-16T23:18:53.187Z",
+      "evaluatedAt": "2026-05-17T23:21:24.646Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -4939,7 +4667,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "FULL_TIME",
       "firstSeenAt": "2026-05-15T04:51:38.896Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -4959,7 +4687,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "C",
       "recommendation": "觀望",
       "status": "值得投遞",
-      "evaluatedAt": "2026-05-16T23:18:53.371Z",
+      "evaluatedAt": "2026-05-17T23:21:24.818Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -5062,6 +4790,275 @@ window.CV_CAREER_OPS_JOBS = {
       }
     },
     {
+      "source": "Source flex job board",
+      "sourceType": "json-ld",
+      "title": "Security Specialist (Product Security), CISO Office, Tokyo",
+      "company": "Money Forward",
+      "url": "https://www.tokyodev.com/companies/moneyforward/jobs/security-specialist-product-security-ciso-office-tokyo",
+      "location": "Minato-ku, Tokyo, JP",
+      "description": "At Money Forward, we develop a wide range of popular services, including our automated personal financial management tool “Money Forward ME” and the “Money Forward Cloud” suite for businesses. Our ecosystem is powered by advanced technologies such as “Account Aggregation” and our single sign-on system, “Money Forward ID.”\n\n As our services handle sensitive financial data, we maintain the highest standards of security. The CISO Office works closely with our business units to ensure and enhance the security of our products. This includes the governance and visualization of major cloud platforms like AWS and GCP, as well as the design, implementation, and operation of common security features such as WAF. Additionally, the CISO Office is responsible for strengthening the security of our internal information systems.\n\n To provide a safe and secure experience for even more users, we are looking for a Security Specialist to join our team.\n\n About the CISO Office\n\n Our mission is to “Maximize the value delivered to our customers through security.” We define and create the ideal security state for the entire Money Forward Group.\n\n Preventing service downtime and information leakage is, of course, critical. However, that is only one part of what we value. Excessive security measures can slow down development, potentially reducing or delaying the value we provide to our customers. As security professionals, we constantly ask ourselves how we can maximize customer value and implement the most optimized security solutions to achieve that goal.\n\n Security Principles\n\n We consider the ideal state of security and our organization through three core themes:\n\n Embedded security in business strategy. Security does not exist in a vacuum. We design security measures in alignment with business strategies, taking into account the current business phase, costs, projected revenue, and potential loss in the event of a risk.\n\n Advanced balancing between security and experience. The highest level of security is not always the “right” answer. Over-securing can increase costs and compromise user convenience. We must assess risks and always consider the most suitable security measures. Instead of simply avoiding risk, we sometimes choose to take calculated risks to pursue maximum user value. To achieve a sophisticated balance between convenience and security, we actively promote automation and autonomous systems.\n\n Autonomous and scalable organization of security. As the Money Forward Group grows into a larger development organization, we aim to deliver even greater value. If the CISO Office handles every single security function, we will become a bottleneck and fail to scale. Each development department must be able to build secure services autonomously. The CISO Office focuses on building the frameworks and providing the support necessary to enable this autonomy.\n\n Responsibilities\n In this position, you will leverage your knowledge and experience in coding and infrastructure to maintain and enhance the security of Money Forward in collaboration with developers and IT infrastructure teams. As a Product Security Specialist, you will drive the following initiatives alongside other security specialists in the CISO Office:\n\n Establishment of security guardrails for AWS, Azure, and GCP environments.\n\n In-house security consulting: Providing technical advice on security and conducting architecture reviews for our developers.\n\n Vulnerability assessments and penetration testing: Performing or supporting security evaluations.\n\n Vulnerability intelligence: Collecting and verifying vulnerability information, including OSINT (Open Source Intelligence).\n\n Security tool development: Developing tools and scripts to automate or enhance security.\n\n Framework implementation: Implementing and deploying security frameworks such as NIST CSF and CIS Controls.\n\n DevSecOps implementation: Integrating security into modern development workflows, including K8s, Docker, and CI/CD pipelines.\n\n Requirements\n\n Foundational understanding of computer science, including networking, operating systems, data structures, and cryptography.\n\n Experience in software development with at least one programming language, or hands-on experience practicing Security by Design.\n\n Business-level English communication skills.\n\n Knowledge or experience in any of the following areas:\n\n Vulnerability assessment\n\n Penetration testing or Red Teaming operations\n\n Forensics, malware analysis, or incident response\n\n Cloud security\n\n Architecture reviews\n\n Building and operating DevSecOps workflows\n\n Implementation and operation of security solutions (e.g., WAF, IDS/IPS, SIEM)\n\n Nice to haves\n While not specifically required, tell us if you have any of the following.\n\n Business-level Japanese communication skills.\n\n Experience participating in CTFs (Capture The Flag).\n\n Experience in bug hunting or obtaining CVEs (Common Vulnerabilities and Exposures).\n\n Relevant certifications such as CISSP, CISM, OSCP, GCIH, etc.\n\n Deep understanding of Authentication and Authorization (e.g., OIDC, OAuth).\n\n Experience in security-related operations within the Financial or Fintech industry (e.g., knowledge of FISC guidelines).\n\n Experience in AI development and/or experience in using AI tools to improve development processes.\n\n Money Forward recently announced our AI Strategy roadmap which focuses on improving AI-driven operational efficiencies, as well as integrating AI agents into our products to deliver better value to our users.",
+      "datePosted": "2026-01-09T13:27:46.916+09:00",
+      "validThrough": "",
+      "employmentType": "FULL_TIME",
+      "firstSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
+      "isNew": false,
+      "isExpired": false,
+      "expiredAt": "",
+      "jobKey": "url:https://www.tokyodev.com/companies/moneyforward/jobs/security-specialist-product-security-ciso-office-tokyo",
+      "sourceMarket": "jp",
+      "sourceIndustry": "",
+      "sourceStrategy": "flex-job-board",
+      "sourceTags": [
+        "flex-job-board"
+      ],
+      "sourceQuality": {
+        "score": 100,
+        "tier": "high",
+        "reasons": []
+      },
+      "score": 60,
+      "grade": "C",
+      "recommendation": "觀望",
+      "status": "觀望",
+      "evaluatedAt": "2026-05-17T23:21:24.847Z",
+      "evaluation": {
+        "source": "career-ops-intelligence",
+        "overall": {
+          "grade": "C",
+          "score": 60,
+          "recommendation": "觀望",
+          "summary": "以 11 個維度比對，命中 3 個履歷技能，市場技能命中 6 個。"
+        },
+        "decision_factors": [
+          "職類：Backend；資歷：Mid；模式：Unknown",
+          "履歷技能命中：product、data、visualization",
+          "未偵測到明顯稀有技能訊號"
+        ],
+        "ats_keywords": {
+          "found": [
+            "product",
+            "data",
+            "visualization"
+          ],
+          "missing": [
+            "aws",
+            "gcp",
+            "azure",
+            "docker",
+            "agents",
+            "operations"
+          ]
+        },
+        "risks": [],
+        "next_actions": [
+          "先與高分職缺比較，不急著投遞",
+          "補齊 JD 或標記喜歡 / 不喜歡以改善後續排序"
+        ]
+      },
+      "intelligence": {
+        "score": 60,
+        "grade": "C",
+        "recommendation": "觀望",
+        "features": {
+          "roleFamily": "Backend",
+          "seniority": "Mid",
+          "workMode": "Unknown",
+          "skills": [
+            "aws",
+            "gcp",
+            "azure",
+            "docker",
+            "agents",
+            "operations"
+          ],
+          "profileSkillHits": [
+            "product",
+            "data",
+            "visualization"
+          ],
+          "profileSkillsNotInJd": [
+            "JavaScript",
+            "TypeScript",
+            "React",
+            "Next.js",
+            "CSS",
+            "Tailwind",
+            "Accessibility",
+            "Analytics",
+            "API",
+            "Figma",
+            "Performance Optimization",
+            "Design Systems"
+          ],
+          "jdSkillsMissingFromProfile": [
+            "aws",
+            "gcp",
+            "azure",
+            "docker",
+            "agents",
+            "operations"
+          ],
+          "requiresUnknownLanguage": false,
+          "rareHighValueSkills": [],
+          "locationHits": [],
+          "avoidHits": []
+        },
+        "dimensions": {
+          "profileMatch": 42,
+          "atsCoverage": 12,
+          "roleFit": 68,
+          "seniorityFit": 82,
+          "locationFit": 58,
+          "sourceQuality": 78,
+          "freshness": 76,
+          "compensationSignal": 52,
+          "growthSignal": 93,
+          "applicationEffort": 86,
+          "riskPenalty": 0
+        }
+      }
+    },
+    {
+      "source": "Source flex job board",
+      "sourceType": "json-ld",
+      "title": "Cloud Platform Engineer (DB Specialist)",
+      "company": "PayPay",
+      "url": "https://www.tokyodev.com/companies/paypay/jobs/cloud-platform-engineer-db-specialist",
+      "location": "Minato-ku, Tokyo, JP",
+      "description": "PayPay is looking for Cloud Platform Engineers who specialize in databases at scale on mission critical systems.\n\n Tech Stack\n\n Python, Shell, Go, SQL, PL/SQL\n\n Aurora, MySQL, PostgreSQL, TiDB, Redis, Valkey, DynamoDB\n\n AWS\n\n GitHub, Terraform, Jenkins, Ansible, Flyway\n\n Victoria Metrics, Grafana, Prometheus\n\n Slack, Zoom, Jira, Confluence\n\n Responsibilities\n\n Database operations, including monitoring, configuration management, upgrade, scaling, backup, and data migration.\n\n Iterate on database operations to improve quality and efficiency\n\n Troubleshoot stability and performance problems\n\n Contribute to documentation for communicating knowledge, experience and for effective decision-making\n\n Research and test new tools in database ecosystems, and adopt them in PayPay Group.\n\n Requirements\n\n More than 5 years of DBA experience with a minimum of 3 years MySQL or PostgreSQL experience.\n\n More than 3 years of AWS experience in recent years\n\n Hands-on experience with Infra as Code (IaC - terraform)\n\n Interested in new technologies and willing to improve operational quality and efficiency\n\n Familiar with shell and programming language for scripting (Python, Go,…)\n\n Nice to haves\n While not specifically required, tell us if you have any of the following.\n\n Experience in automating operations related to Database or AWS.\n\n Familiarity with Jenkins, Ansible, Docker, Kubernetes\n\n Working experience in a full remote environment\n\n Experience in operating distributed systems\n\n Experience working with NoSQL such as Redis, Valkey and DynamoDB\n\n Experience working with NewSQL databases (like TiDB)\n\n Experience with DBs cost reduction\n\n Experience with DBs Disaster Recovery strategies",
+      "datePosted": "2026-02-04T16:51:09.511+09:00",
+      "validThrough": "",
+      "employmentType": "FULL_TIME",
+      "firstSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
+      "isNew": false,
+      "isExpired": false,
+      "expiredAt": "",
+      "jobKey": "url:https://www.tokyodev.com/companies/paypay/jobs/cloud-platform-engineer-db-specialist",
+      "sourceMarket": "jp",
+      "sourceIndustry": "",
+      "sourceStrategy": "flex-job-board",
+      "sourceTags": [
+        "flex-job-board"
+      ],
+      "sourceQuality": {
+        "score": 100,
+        "tier": "high",
+        "reasons": []
+      },
+      "score": 60,
+      "grade": "C",
+      "recommendation": "觀望",
+      "status": "值得投遞",
+      "evaluatedAt": "2026-05-17T23:21:24.871Z",
+      "evaluation": {
+        "source": "career-ops-intelligence",
+        "overall": {
+          "grade": "C",
+          "score": 60,
+          "recommendation": "觀望",
+          "summary": "以 11 個維度比對，命中 3 個履歷技能，市場技能命中 9 個。"
+        },
+        "decision_factors": [
+          "職類：Backend；資歷：Mid；模式：Remote",
+          "履歷技能命中：remote、engineer、data",
+          "未偵測到明顯稀有技能訊號"
+        ],
+        "ats_keywords": {
+          "found": [
+            "remote",
+            "engineer",
+            "data"
+          ],
+          "missing": [
+            "python",
+            "go",
+            "sql",
+            "mysql",
+            "aws",
+            "docker",
+            "kubernetes",
+            "terraform",
+            "operations"
+          ]
+        },
+        "risks": [],
+        "next_actions": [
+          "先與高分職缺比較，不急著投遞",
+          "補齊 JD 或標記喜歡 / 不喜歡以改善後續排序"
+        ]
+      },
+      "intelligence": {
+        "score": 60,
+        "grade": "C",
+        "recommendation": "觀望",
+        "features": {
+          "roleFamily": "Backend",
+          "seniority": "Mid",
+          "workMode": "Remote",
+          "skills": [
+            "python",
+            "go",
+            "sql",
+            "mysql",
+            "aws",
+            "docker",
+            "kubernetes",
+            "terraform",
+            "operations"
+          ],
+          "profileSkillHits": [
+            "remote",
+            "engineer",
+            "data"
+          ],
+          "profileSkillsNotInJd": [
+            "JavaScript",
+            "TypeScript",
+            "React",
+            "Next.js",
+            "CSS",
+            "Tailwind",
+            "Accessibility",
+            "Analytics",
+            "API",
+            "Figma",
+            "Performance Optimization",
+            "Design Systems"
+          ],
+          "jdSkillsMissingFromProfile": [
+            "python",
+            "go",
+            "sql",
+            "mysql",
+            "aws",
+            "docker",
+            "kubernetes",
+            "terraform",
+            "operations"
+          ],
+          "requiresUnknownLanguage": false,
+          "rareHighValueSkills": [],
+          "locationHits": [],
+          "avoidHits": []
+        },
+        "dimensions": {
+          "profileMatch": 42,
+          "atsCoverage": 12,
+          "roleFit": 68,
+          "seniorityFit": 82,
+          "locationFit": 82,
+          "sourceQuality": 78,
+          "freshness": 76,
+          "compensationSignal": 52,
+          "growthSignal": 75,
+          "applicationEffort": 86,
+          "riskPenalty": 0
+        }
+      }
+    },
+    {
       "source": "Gogolook",
       "sourceType": "json-ld",
       "title": "Design Assistant 設計助理 (Roo)",
@@ -5073,7 +5070,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "Part Time",
       "firstSeenAt": "2026-05-15T06:25:26.345Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -5097,7 +5094,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "C",
       "recommendation": "觀望",
       "status": "值得投遞",
-      "evaluatedAt": "2026-05-16T23:18:52.949Z",
+      "evaluatedAt": "2026-05-17T23:21:24.443Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -5193,7 +5190,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "Full time",
       "firstSeenAt": "2026-05-15T11:59:52.258Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -5217,7 +5214,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "C",
       "recommendation": "觀望",
       "status": "值得投遞",
-      "evaluatedAt": "2026-05-16T23:18:53.112Z",
+      "evaluatedAt": "2026-05-17T23:21:24.583Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -5315,7 +5312,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "Full time",
       "firstSeenAt": "2026-05-15T13:25:09.242Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -5339,7 +5336,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "C",
       "recommendation": "觀望",
       "status": "值得投遞",
-      "evaluatedAt": "2026-05-16T23:18:53.115Z",
+      "evaluatedAt": "2026-05-17T23:21:24.587Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -5437,7 +5434,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "Full time",
       "firstSeenAt": "2026-05-15T13:25:09.242Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -5461,7 +5458,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "C",
       "recommendation": "觀望",
       "status": "值得投遞",
-      "evaluatedAt": "2026-05-16T23:18:53.120Z",
+      "evaluatedAt": "2026-05-17T23:21:24.590Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -5559,7 +5556,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "Full time",
       "firstSeenAt": "2026-05-15T12:00:32.241Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -5583,7 +5580,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "C",
       "recommendation": "觀望",
       "status": "值得投遞",
-      "evaluatedAt": "2026-05-16T23:18:53.155Z",
+      "evaluatedAt": "2026-05-17T23:21:24.618Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -5682,7 +5679,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "Full time",
       "firstSeenAt": "2026-05-15T12:00:32.241Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -5706,7 +5703,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "C",
       "recommendation": "觀望",
       "status": "值得投遞",
-      "evaluatedAt": "2026-05-16T23:18:53.162Z",
+      "evaluatedAt": "2026-05-17T23:21:24.624Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -5795,7 +5792,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "Full time",
       "firstSeenAt": "2026-05-15T12:00:32.241Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -5819,7 +5816,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "C",
       "recommendation": "觀望",
       "status": "觀望",
-      "evaluatedAt": "2026-05-16T23:18:53.167Z",
+      "evaluatedAt": "2026-05-17T23:21:24.628Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -5908,7 +5905,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "Full time",
       "firstSeenAt": "2026-05-15T12:00:32.241Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -5932,7 +5929,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "C",
       "recommendation": "觀望",
       "status": "值得投遞",
-      "evaluatedAt": "2026-05-16T23:18:53.172Z",
+      "evaluatedAt": "2026-05-17T23:21:24.633Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -6010,136 +6007,6 @@ window.CV_CAREER_OPS_JOBS = {
       }
     },
     {
-      "source": "Source flex job board",
-      "sourceType": "json-ld",
-      "title": "Backend Engineer (Langaku)",
-      "company": "Mantra",
-      "url": "https://www.tokyodev.com/companies/mantra/jobs/backend-engineer-langaku",
-      "location": "Bunkyo City, Tokyo, JP",
-      "description": "At Mantra, we developed “ Langaku ,” a smartphone English learning app that combines manga and technology. To further evolve this growing product, we are seeking app engineers to help us development and maintain the backend of our mobile applications.\n\n Technical Stack\n\n Frontend: Swift (iOS), Flutter (Android)\n\n Backend: Python\n\n Infrastructure: AWS, GCP\n\n Responsibilities\n\n Develop and maintain the backend for mobile applications.\n\n Enhance productivity and quality through automation of testing and operations.\n\n Build, maintain, and operate infrastructure and data analysis platforms.\n\n Analyzing user challenges and validating hypotheses\n\n Collaborate with product managers and designers to design user experiences and features that solve user problems.\n\n Building and managing development schedules and making technical decisions\n\n Requirements\n\n 3+ years of experience in backend development for mobile applications.\n\n Experience with databases.\n\n Nice to haves\n While not specifically required, tell us if you have any of the following.\n\n Experience in data analysis and building data analysis platforms.\n\n Experience in building and operating infrastructure using AWS.\n\n Knowledge and experience with server-side development using Django.\n\n Experience in developing consumer-facing mobile applications.\n\n Basic knowledge and experience in machine learning.",
-      "datePosted": "2025-07-30T15:22:01.021+09:00",
-      "validThrough": "",
-      "employmentType": "FULL_TIME",
-      "firstSeenAt": "2026-05-16T23:18:51.813Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
-      "isNew": true,
-      "isExpired": false,
-      "expiredAt": "",
-      "jobKey": "url:https://www.tokyodev.com/companies/mantra/jobs/backend-engineer-langaku",
-      "sourceMarket": "jp",
-      "sourceIndustry": "",
-      "sourceStrategy": "flex-job-board",
-      "sourceTags": [
-        "flex-job-board"
-      ],
-      "sourceQuality": {
-        "score": 100,
-        "tier": "high",
-        "reasons": []
-      },
-      "score": 59,
-      "grade": "C",
-      "recommendation": "觀望",
-      "status": "值得投遞",
-      "evaluatedAt": "2026-05-16T23:18:53.434Z",
-      "evaluation": {
-        "source": "career-ops-intelligence",
-        "overall": {
-          "grade": "C",
-          "score": 59,
-          "recommendation": "觀望",
-          "summary": "以 11 個維度比對，命中 3 個履歷技能，市場技能命中 6 個。"
-        },
-        "decision_factors": [
-          "職類：Frontend；資歷：Mid；模式：Unknown",
-          "履歷技能命中：engineer、product、data",
-          "未偵測到明顯稀有技能訊號"
-        ],
-        "ats_keywords": {
-          "found": [
-            "engineer",
-            "product",
-            "data"
-          ],
-          "missing": [
-            "python",
-            "swift",
-            "aws",
-            "gcp",
-            "machine learning",
-            "operations"
-          ]
-        },
-        "risks": [],
-        "next_actions": [
-          "先與高分職缺比較，不急著投遞",
-          "補齊 JD 或標記喜歡 / 不喜歡以改善後續排序"
-        ]
-      },
-      "intelligence": {
-        "score": 59,
-        "grade": "C",
-        "recommendation": "觀望",
-        "features": {
-          "roleFamily": "Frontend",
-          "seniority": "Mid",
-          "workMode": "Unknown",
-          "skills": [
-            "python",
-            "swift",
-            "aws",
-            "gcp",
-            "machine learning",
-            "operations"
-          ],
-          "profileSkillHits": [
-            "engineer",
-            "product",
-            "data"
-          ],
-          "profileSkillsNotInJd": [
-            "JavaScript",
-            "TypeScript",
-            "React",
-            "Next.js",
-            "CSS",
-            "Tailwind",
-            "Accessibility",
-            "Analytics",
-            "API",
-            "Figma",
-            "Performance Optimization",
-            "Design Systems"
-          ],
-          "jdSkillsMissingFromProfile": [
-            "python",
-            "swift",
-            "aws",
-            "gcp",
-            "machine learning",
-            "operations"
-          ],
-          "requiresUnknownLanguage": false,
-          "rareHighValueSkills": [],
-          "locationHits": [],
-          "avoidHits": []
-        },
-        "dimensions": {
-          "profileMatch": 42,
-          "atsCoverage": 12,
-          "roleFit": 68,
-          "seniorityFit": 82,
-          "locationFit": 58,
-          "sourceQuality": 78,
-          "freshness": 95,
-          "compensationSignal": 52,
-          "growthSignal": 66,
-          "applicationEffort": 86,
-          "riskPenalty": 0
-        }
-      }
-    },
-    {
       "source": "Gogolook",
       "sourceType": "json-ld",
       "title": "AI Product Intern (B2C & User Growth) - ScamAdviser",
@@ -6151,7 +6018,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "Intern",
       "firstSeenAt": "2026-05-15T13:25:28.318Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -6175,7 +6042,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "C",
       "recommendation": "觀望",
       "status": "值得投遞",
-      "evaluatedAt": "2026-05-16T23:18:52.943Z",
+      "evaluatedAt": "2026-05-17T23:21:24.438Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -6285,7 +6152,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "Full time",
       "firstSeenAt": "2026-05-15T06:25:26.345Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -6309,7 +6176,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "C",
       "recommendation": "觀望",
       "status": "值得投遞",
-      "evaluatedAt": "2026-05-16T23:18:53.053Z",
+      "evaluatedAt": "2026-05-17T23:21:24.536Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -6398,7 +6265,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "Intern",
       "firstSeenAt": "2026-05-15T06:25:26.345Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -6422,7 +6289,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "D",
       "recommendation": "觀望",
       "status": "值得投遞",
-      "evaluatedAt": "2026-05-16T23:18:52.946Z",
+      "evaluatedAt": "2026-05-17T23:21:24.440Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -6526,7 +6393,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "Intern",
       "firstSeenAt": "2026-05-15T06:25:26.345Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -6548,7 +6415,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "D",
       "recommendation": "觀望",
       "status": "值得投遞",
-      "evaluatedAt": "2026-05-16T23:18:52.957Z",
+      "evaluatedAt": "2026-05-17T23:21:24.450Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -6644,7 +6511,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "Full time",
       "firstSeenAt": "2026-05-15T11:59:22.604Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -6669,7 +6536,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "D",
       "recommendation": "觀望",
       "status": "值得投遞",
-      "evaluatedAt": "2026-05-16T23:18:52.984Z",
+      "evaluatedAt": "2026-05-17T23:21:24.475Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -6758,7 +6625,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "Full time",
       "firstSeenAt": "2026-05-15T12:00:32.241Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -6782,7 +6649,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "D",
       "recommendation": "觀望",
       "status": "值得投遞",
-      "evaluatedAt": "2026-05-16T23:18:53.028Z",
+      "evaluatedAt": "2026-05-17T23:21:24.519Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -6878,7 +6745,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "Full time",
       "firstSeenAt": "2026-05-15T06:25:26.345Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -6902,7 +6769,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "D",
       "recommendation": "觀望",
       "status": "觀望",
-      "evaluatedAt": "2026-05-16T23:18:53.078Z",
+      "evaluatedAt": "2026-05-17T23:21:24.558Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -7001,7 +6868,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "Full time",
       "firstSeenAt": "2026-05-15T12:00:02.765Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -7025,7 +6892,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "D",
       "recommendation": "觀望",
       "status": "觀望",
-      "evaluatedAt": "2026-05-16T23:18:53.143Z",
+      "evaluatedAt": "2026-05-17T23:21:24.607Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -7120,7 +6987,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "Full time",
       "firstSeenAt": "2026-05-15T12:00:02.765Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -7144,7 +7011,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "D",
       "recommendation": "觀望",
       "status": "觀望",
-      "evaluatedAt": "2026-05-16T23:18:53.149Z",
+      "evaluatedAt": "2026-05-17T23:21:24.612Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -7243,7 +7110,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "Full time",
       "firstSeenAt": "2026-05-15T12:00:02.765Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -7267,7 +7134,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "D",
       "recommendation": "觀望",
       "status": "觀望",
-      "evaluatedAt": "2026-05-16T23:18:53.150Z",
+      "evaluatedAt": "2026-05-17T23:21:24.613Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -7356,7 +7223,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "Full time",
       "firstSeenAt": "2026-05-15T12:00:02.765Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -7380,7 +7247,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "D",
       "recommendation": "觀望",
       "status": "觀望",
-      "evaluatedAt": "2026-05-16T23:18:53.151Z",
+      "evaluatedAt": "2026-05-17T23:21:24.614Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -7467,20 +7334,20 @@ window.CV_CAREER_OPS_JOBS = {
     {
       "source": "Source flex job board",
       "sourceType": "json-ld",
-      "title": "Compute - Forward Deployment Engineer",
-      "company": "AI&",
-      "url": "https://www.tokyodev.com/companies/aiand/jobs/compute-forward-deployment-engineer",
-      "location": "Yokohama, Kanagawa, JP",
-      "description": "As a Field Development Engineer for our Compute Platform, you are the technical partner that helps customers get the most out of ai&’s PaaS infrastructure. Our compute platform is built for simplicity — developers and engineering teams should be able to deploy web applications, APIs, backend services, and AI workloads without managing the infrastructure underneath. Your job is to make that promise real for every customer you work with.\n\n You will work across a diverse customer base — from startups shipping their first production application to enterprises migrating complex workloads onto ai& infrastructure. You will own the technical relationship, architect the deployment, and stay close through go-live and beyond. You bring the platform expertise, the deployment patterns, and the hands-on technical depth to meet customers wherever they are and get them to production fast.\n\n This is a peer-level technical role. You are not handing customers a documentation link. You are sitting with their engineering team, understanding their stack, and designing the solution together. When things break you diagnose them. When customers do not know the best path forward you show them one. And everything you learn in the field comes back into ai& to make the platform better.\n\n Responsibilities\n\n Solution Architecture & Deployment Design Design deployment architectures on ai&’s compute platform that fit the customer’s application, team, and scale requirements. Own the solution from initial scoping through production deployment.\n\n Technical Customer Engagement Lead technical onboarding, architecture reviews, and deep-dive sessions with customer engineering teams. Operate as a technical peer to developers, platform engineers, and CTOs at both startups and enterprises.\n\n Platform Onboarding Get customers live on ai& compute quickly and correctly. Manage the technical onboarding process, resolve blockers, and ensure the first deployment experience sets the right foundation.\n\n Proof of Concept & Migration Support Lead technical POCs for enterprise prospects. Help customers migrate existing workloads from other platforms onto ai& infrastructure, identifying risks early and managing the transition cleanly.\n\n Performance & Scalability Guidance Advise customers on how to configure and optimize their deployments for performance, cost, and reliability. Help them understand how to scale on the platform as their usage grows.\n\n AI & ML Workload Support For customers deploying AI and ML workloads, provide additional technical guidance on model serving, inference optimization, and integration with ai&’s broader AI platform capabilities.\n\n Technical Troubleshooting Own issue resolution across the customer lifecycle. Diagnose problems at any layer — application, runtime, networking, infrastructure — and drive resolution quickly with internal engineering teams.\n\n Customer Feedback & Product Input Capture the technical signal you gather in the field and bring it back to the product and engineering teams. The friction customers hit, the features they need, the patterns that keep coming up — all of it should flow back into how we build.\n\n Reference Architectures & Enablement Produce reference architectures, deployment guides, and example configurations that help customers move faster and scale your expertise across the customer base.\n\n Requirements\n\n PaaS & Cloud Platform Experience You have worked with PaaS or cloud infrastructure platforms — Heroku, Render, Railway, AWS Elastic Beanstalk, Google App Engine, or similar. You understand how developers deploy applications on managed platforms and where they run into trouble.\n\n Application Deployment Depth Strong understanding of how web applications, APIs, and backend services are deployed and operated in production. You know about containerization, runtime environments, networking, databases, and the full stack that surrounds an application.\n\n Solutions Architecture Track Record You have designed and delivered end-to-end technical solutions for customers in a customer-facing technical role. You think in systems, you own the architecture, and you see deployments through to production.\n\n Enterprise & Startup Customer Fluency Comfortable working across both enterprise and startup environments. You adjust your approach depending on who you are talking to — a solo founder moving fast or a platform team at a large enterprise moving carefully.\n\n Troubleshooting Across the Stack You can diagnose problems at any layer — application code, runtime configuration, networking, infrastructure. You do not need to hand off to understand what is happening.\n\n AI & ML Familiarity Working familiarity with AI and ML workloads is a plus. You do not need to be an ML engineer but you should be comfortable having a technical conversation about model deployment and inference when the customer needs it.\n\n Relevant Tooling Strong command of at least one backend language. Familiarity with containers, CI/CD pipelines, cloud networking, and deployment tooling. Python proficiency is a plus.\n\n Great Team Spirit A mission-driven approach to engineering, valuing clear communication, hands-on execution, and collective success over individual silos.",
-      "datePosted": "2026-05-17T07:49:02.648+09:00",
+      "title": "Backend Engineer (Langaku)",
+      "company": "Mantra",
+      "url": "https://www.tokyodev.com/companies/mantra/jobs/backend-engineer-langaku",
+      "location": "Bunkyo City, Tokyo, JP",
+      "description": "At Mantra, we developed “ Langaku ,” a smartphone English learning app that combines manga and technology. To further evolve this growing product, we are seeking app engineers to help us development and maintain the backend of our mobile applications.\n\n Technical Stack\n\n Frontend: Swift (iOS), Flutter (Android)\n\n Backend: Python\n\n Infrastructure: AWS, GCP\n\n Responsibilities\n\n Develop and maintain the backend for mobile applications.\n\n Enhance productivity and quality through automation of testing and operations.\n\n Build, maintain, and operate infrastructure and data analysis platforms.\n\n Analyzing user challenges and validating hypotheses\n\n Collaborate with product managers and designers to design user experiences and features that solve user problems.\n\n Building and managing development schedules and making technical decisions\n\n Requirements\n\n 3+ years of experience in backend development for mobile applications.\n\n Experience with databases.\n\n Nice to haves\n While not specifically required, tell us if you have any of the following.\n\n Experience in data analysis and building data analysis platforms.\n\n Experience in building and operating infrastructure using AWS.\n\n Knowledge and experience with server-side development using Django.\n\n Experience in developing consumer-facing mobile applications.\n\n Basic knowledge and experience in machine learning.",
+      "datePosted": "2025-07-30T15:22:01.021+09:00",
       "validThrough": "",
       "employmentType": "FULL_TIME",
       "firstSeenAt": "2026-05-16T23:18:51.813Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
-      "isNew": true,
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
+      "isNew": false,
       "isExpired": false,
       "expiredAt": "",
-      "jobKey": "url:https://www.tokyodev.com/companies/aiand/jobs/compute-forward-deployment-engineer",
+      "jobKey": "url:https://www.tokyodev.com/companies/mantra/jobs/backend-engineer-langaku",
       "sourceMarket": "jp",
       "sourceIndustry": "",
       "sourceStrategy": "flex-job-board",
@@ -7496,29 +7363,33 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "D",
       "recommendation": "觀望",
       "status": "值得投遞",
-      "evaluatedAt": "2026-05-16T23:18:53.334Z",
+      "evaluatedAt": "2026-05-17T23:21:24.876Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
           "grade": "D",
           "score": 57,
           "recommendation": "觀望",
-          "summary": "以 11 個維度比對，命中 2 個履歷技能，市場技能命中 3 個。"
+          "summary": "以 11 個維度比對，命中 3 個履歷技能，市場技能命中 6 個。"
         },
         "decision_factors": [
-          "職類：Backend；資歷：Senior+；模式：Unknown",
-          "履歷技能命中：engineer、product",
+          "職類：Frontend；資歷：Mid；模式：Unknown",
+          "履歷技能命中：engineer、product、data",
           "未偵測到明顯稀有技能訊號"
         ],
         "ats_keywords": {
           "found": [
             "engineer",
-            "product"
+            "product",
+            "data"
           ],
           "missing": [
             "python",
-            "go",
-            "aws"
+            "swift",
+            "aws",
+            "gcp",
+            "machine learning",
+            "operations"
           ]
         },
         "risks": [],
@@ -7532,17 +7403,21 @@ window.CV_CAREER_OPS_JOBS = {
         "grade": "D",
         "recommendation": "觀望",
         "features": {
-          "roleFamily": "Backend",
-          "seniority": "Senior+",
+          "roleFamily": "Frontend",
+          "seniority": "Mid",
           "workMode": "Unknown",
           "skills": [
             "python",
-            "go",
-            "aws"
+            "swift",
+            "aws",
+            "gcp",
+            "machine learning",
+            "operations"
           ],
           "profileSkillHits": [
             "engineer",
-            "product"
+            "product",
+            "data"
           ],
           "profileSkillsNotInJd": [
             "JavaScript",
@@ -7560,265 +7435,11 @@ window.CV_CAREER_OPS_JOBS = {
           ],
           "jdSkillsMissingFromProfile": [
             "python",
-            "go",
-            "aws"
-          ],
-          "requiresUnknownLanguage": false,
-          "rareHighValueSkills": [],
-          "locationHits": [],
-          "avoidHits": []
-        },
-        "dimensions": {
-          "profileMatch": 28,
-          "atsCoverage": 8,
-          "roleFit": 68,
-          "seniorityFit": 70,
-          "locationFit": 58,
-          "sourceQuality": 78,
-          "freshness": 95,
-          "compensationSignal": 52,
-          "growthSignal": 93,
-          "applicationEffort": 86,
-          "riskPenalty": 0
-        }
-      }
-    },
-    {
-      "source": "Source flex job board",
-      "sourceType": "json-ld",
-      "title": "AI - Forward Deployment Engineer",
-      "company": "AI&",
-      "url": "https://www.tokyodev.com/companies/aiand/jobs/ai-forward-deployment-engineer",
-      "location": "Yokohama, Kanagawa, JP",
-      "description": "As a Field Development Engineer at ai&, you are the most technical person in the customer relationship. You combine deep platform knowledge with the ability to go into any enterprise environment, understand what they are trying to build, and architect the solution that gets them there on ai& infrastructure.\n\n You will work with the most technically demanding customers we have, enterprises deploying AI at scale, startups pushing the boundaries of what agents can do, and engineering teams that need a peer-level technical partner, not a salesperson. You will own the solution architecture end to end: understanding the customer’s stack, designing the integration, driving deployment, and staying close through production. You will also build a distributed inference and compute architecture with a customer’s ML team and sitting down with their platform engineers to debug a latency issue in the serving layer.\n\n This role carries significant influence. The architectures you design become reference patterns. The feedback you bring back shapes the product roadmap. And the trust you build with customers becomes the foundation of long-term partnerships. We want someone who takes that seriously and operates with the technical depth and customer instinct to back it up.\n\n Responsibilities\n\n Solution Architecture Design end-to-end technical architectures that integrate ai&’s agent and inference platform into customer environments. Own the solution from initial scoping through deployment, ensuring it is correct, scalable, and production-ready.\n\n Technical Customer Engagement Serve as the primary technical point of contact for enterprise customers. Lead deep-dive architecture sessions, proof-of-concept engagements, and technical reviews. Operate as a peer to the customer’s most senior engineers.\n\n Platform Expertise Develop and maintain deep expertise across the full ai& platform — inference serving, model capabilities, agentic frameworks, and infrastructure. Be the person who knows it better than anyone outside the company.\n\n Proof of Concept & Benchmarking Lead technical proof-of-concept engagements with customers. Design benchmarks that demonstrate platform performance against customer workloads and use the results to guide architectural recommendations.\n\n Agentic Workflow Design Help customers architect and deploy agentic workflows on ai& infrastructure. Translate complex customer use cases into concrete, well-scoped implementation plans and build alongside them where needed.\n\n Technical Troubleshooting & Escalation Own technical issue resolution across the customer lifecycle. Diagnose problems at any layer of the stack, drive resolution with internal engineering teams, and communicate status clearly to the customer throughout.\n\n Customer Feedback & Roadmap Input Systematically capture and communicate the technical signal you gather in the field. Be the voice of the customer inside ai& and ensure product and engineering decisions are informed by real deployment experience.\n\n Reference Architecture & Enablement Produce reference architectures, integration guides, and example implementations that scale your expertise beyond the customers you directly touch.\n\n Requirements\n\n Solution Architecture Experience You have designed and delivered end-to-end technical solutions for enterprise customers in a solutions architect, field engineer, or equivalent role. You think in systems and you own the architecture through to production.\n\n AI Infrastructure Depth Deep familiarity with AI inference infrastructure, serving frameworks, and the systems that surround them. You understand how models are deployed, how serving stacks are built, and where they break under real workloads.\n\n Agentic Systems Knowledge You have worked with agentic frameworks and you understand the architectural patterns that make agent-based systems reliable at scale. You can design solutions that use ai&’s agentic platform to solve real customer problems.\n\n Enterprise Customer Fluency You have worked with demanding enterprise customers and you know how to earn the trust of senior technical stakeholders. You communicate with precision, handle ambiguity well, and push back constructively when needed.\n\n Performance & Benchmarking Experience designing and running technical benchmarks that demonstrate platform performance against real workloads. You know how to set up a POC that answers the right questions.\n\n Full-Stack Technical Range Comfortable across APIs, backend infrastructure, cloud environments, and ML systems. You can diagnose problems at any layer and you do not need to hand off to understand what is happening.\n\n Relevant Tooling Strong command of Python. Familiarity with inference frameworks, agentic libraries, REST APIs, and cloud deployment environments.\n\n Great Team Spirit A mission-driven approach to engineering, valuing clear communication, hands-on execution, and collective success over individual silos.",
-      "datePosted": "2026-05-17T07:48:42.081+09:00",
-      "validThrough": "",
-      "employmentType": "FULL_TIME",
-      "firstSeenAt": "2026-05-16T23:18:51.813Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
-      "isNew": true,
-      "isExpired": false,
-      "expiredAt": "",
-      "jobKey": "url:https://www.tokyodev.com/companies/aiand/jobs/ai-forward-deployment-engineer",
-      "sourceMarket": "jp",
-      "sourceIndustry": "",
-      "sourceStrategy": "flex-job-board",
-      "sourceTags": [
-        "flex-job-board"
-      ],
-      "sourceQuality": {
-        "score": 100,
-        "tier": "high",
-        "reasons": []
-      },
-      "score": 57,
-      "grade": "D",
-      "recommendation": "觀望",
-      "status": "值得投遞",
-      "evaluatedAt": "2026-05-16T23:18:53.339Z",
-      "evaluation": {
-        "source": "career-ops-intelligence",
-        "overall": {
-          "grade": "D",
-          "score": 57,
-          "recommendation": "觀望",
-          "summary": "以 11 個維度比對，命中 2 個履歷技能，市場技能命中 4 個。"
-        },
-        "decision_factors": [
-          "職類：Backend；資歷：Senior+；模式：Unknown",
-          "履歷技能命中：engineer、product",
-          "未偵測到明顯稀有技能訊號"
-        ],
-        "ats_keywords": {
-          "found": [
-            "engineer",
-            "product"
-          ],
-          "missing": [
-            "python",
-            "go",
-            "rest",
-            "agents"
-          ]
-        },
-        "risks": [],
-        "next_actions": [
-          "先與高分職缺比較，不急著投遞",
-          "補齊 JD 或標記喜歡 / 不喜歡以改善後續排序"
-        ]
-      },
-      "intelligence": {
-        "score": 57,
-        "grade": "D",
-        "recommendation": "觀望",
-        "features": {
-          "roleFamily": "Backend",
-          "seniority": "Senior+",
-          "workMode": "Unknown",
-          "skills": [
-            "python",
-            "go",
-            "rest",
-            "agents"
-          ],
-          "profileSkillHits": [
-            "engineer",
-            "product"
-          ],
-          "profileSkillsNotInJd": [
-            "JavaScript",
-            "TypeScript",
-            "React",
-            "Next.js",
-            "CSS",
-            "Tailwind",
-            "Accessibility",
-            "Analytics",
-            "API",
-            "Figma",
-            "Performance Optimization",
-            "Design Systems"
-          ],
-          "jdSkillsMissingFromProfile": [
-            "python",
-            "go",
-            "rest",
-            "agents"
-          ],
-          "requiresUnknownLanguage": false,
-          "rareHighValueSkills": [],
-          "locationHits": [],
-          "avoidHits": []
-        },
-        "dimensions": {
-          "profileMatch": 28,
-          "atsCoverage": 8,
-          "roleFit": 68,
-          "seniorityFit": 70,
-          "locationFit": 58,
-          "sourceQuality": 78,
-          "freshness": 95,
-          "compensationSignal": 52,
-          "growthSignal": 93,
-          "applicationEffort": 86,
-          "riskPenalty": 0
-        }
-      }
-    },
-    {
-      "source": "Source flex job board",
-      "sourceType": "json-ld",
-      "title": "Senior Ruby on Rails Developer",
-      "company": "ANDPAD",
-      "url": "https://www.tokyodev.com/companies/andpad/jobs/senior-ruby-on-rails-developer",
-      "location": "Chiyoda-ku, Tokyo, JP",
-      "description": "We are seeking a Senior Ruby on Rails Developer (AWS, Backend) who can join our team and develop the application in cooperation with the product manager. Working in the form of Squad, a small team can quickly and consistently engage in everything from design to development, testing and operation.\n\n Also, there are a lot of opportunities to work with new languages ​​and frameworks other than the main language in an international environment. As an innovator, you will contribute to promoting new ways of working in the architecture and construction industry through product development.\n\n Tech Stack\n\n Development Language: Ruby (on Rails)\n\n Infrastructure: AWS, GCP\n\n CI/CD：Circle CI / Codebuild\n\n DB: Amazon Aurora (MySQL compatible edition), Elasticsearch, DynamoDB\n\n Configuration management: Ansible\n\n Deploy / Build: CodePipeline, CodeBuild, CircleCI, GitHub Actions\n\n IaC: Packer, Terraform\n\n Monitoring: Datadog, bugsnag\n\n Others: swagger, Docker, ZenHub, Figma, Slack / Jira\n\n Responsibilities\n\n Design, develop, test, operate, and refactor products using Ruby on Rails.\n\n Propose and implement new features and improvement ideas.\n\n Collaborate with product managers and designers to define requirements and specifications.\n\n Architecture design based on requirements, middleware selection\n\n Continuously learn about technical trends and industry best practices and apply them to the product.\n\n Measurement of effects for quality improvement and implementation of service improvement measures\n\n Requirements\n\n Empathy for Andpad’s mission and values\n\n 5+ years of experience in developing and operating Web services using Ruby on Rails\n\n Experience as a technical lead throughout the full project development lifecycle Knowledge and development experience with database systems\n\n Experience using cloud platforms (AWS, GCP, Azure, etc.)\n\n Experience in API design, development, and documentation\n\n Understanding of the software development lifecycle\n\n Programming, debugging, and testing skills\n\n Good at communicating in Japanese\n\n Nice to haves\n While not specifically required, tell us if you have any of the following.\n\n Experience of discovering problems from logs and solving problems\n\n Experience in developing systems using container technologies such as Docker and Kubernetes\n\n Experience in designing architecture based on application requirements and selecting middleware\n\n Experience of publishing and contributing OSS\n\n External technical output experience (writing, technical blog, stage, etc.)",
-      "datePosted": "2024-11-01T07:48:33.777+09:00",
-      "validThrough": "",
-      "employmentType": "FULL_TIME",
-      "firstSeenAt": "2026-05-16T23:18:51.813Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
-      "isNew": true,
-      "isExpired": false,
-      "expiredAt": "",
-      "jobKey": "url:https://www.tokyodev.com/companies/andpad/jobs/senior-ruby-on-rails-developer",
-      "sourceMarket": "jp",
-      "sourceIndustry": "",
-      "sourceStrategy": "flex-job-board",
-      "sourceTags": [
-        "flex-job-board"
-      ],
-      "sourceQuality": {
-        "score": 100,
-        "tier": "high",
-        "reasons": []
-      },
-      "score": 57,
-      "grade": "D",
-      "recommendation": "觀望",
-      "status": "值得投遞",
-      "evaluatedAt": "2026-05-16T23:18:53.341Z",
-      "evaluation": {
-        "source": "career-ops-intelligence",
-        "overall": {
-          "grade": "D",
-          "score": 57,
-          "recommendation": "觀望",
-          "summary": "以 11 個維度比對，命中 3 個履歷技能，市場技能命中 9 個。"
-        },
-        "decision_factors": [
-          "職類：Backend；資歷：Senior+；模式：Unknown",
-          "履歷技能命中：API、Figma、product",
-          "未偵測到明顯稀有技能訊號"
-        ],
-        "ats_keywords": {
-          "found": [
-            "API",
-            "Figma",
-            "product"
-          ],
-          "missing": [
-            "mysql",
+            "swift",
             "aws",
             "gcp",
-            "azure",
-            "docker",
-            "kubernetes",
-            "terraform"
-          ]
-        },
-        "risks": [],
-        "next_actions": [
-          "先與高分職缺比較，不急著投遞",
-          "補齊 JD 或標記喜歡 / 不喜歡以改善後續排序"
-        ]
-      },
-      "intelligence": {
-        "score": 57,
-        "grade": "D",
-        "recommendation": "觀望",
-        "features": {
-          "roleFamily": "Backend",
-          "seniority": "Senior+",
-          "workMode": "Unknown",
-          "skills": [
-            "mysql",
-            "aws",
-            "gcp",
-            "azure",
-            "docker",
-            "kubernetes",
-            "terraform",
-            "api",
-            "figma"
-          ],
-          "profileSkillHits": [
-            "API",
-            "Figma",
-            "product"
-          ],
-          "profileSkillsNotInJd": [
-            "JavaScript",
-            "TypeScript",
-            "React",
-            "Next.js",
-            "CSS",
-            "Tailwind",
-            "Accessibility",
-            "Analytics",
-            "Performance Optimization",
-            "Design Systems",
-            "remote",
-            "dashboard"
-          ],
-          "jdSkillsMissingFromProfile": [
-            "mysql",
-            "aws",
-            "gcp",
-            "azure",
-            "docker",
-            "kubernetes",
-            "terraform"
+            "machine learning",
+            "operations"
           ],
           "requiresUnknownLanguage": false,
           "rareHighValueSkills": [],
@@ -7829,131 +7450,12 @@ window.CV_CAREER_OPS_JOBS = {
           "profileMatch": 42,
           "atsCoverage": 12,
           "roleFit": 68,
-          "seniorityFit": 70,
-          "locationFit": 58,
-          "sourceQuality": 78,
-          "freshness": 95,
-          "compensationSignal": 52,
-          "growthSignal": 57,
-          "applicationEffort": 86,
-          "riskPenalty": 0
-        }
-      }
-    },
-    {
-      "source": "Source flex job board",
-      "sourceType": "json-ld",
-      "title": "Security Specialist - Product Security, Digital Bank",
-      "company": "Money Forward",
-      "url": "https://www.tokyodev.com/companies/moneyforward/jobs/security-specialist-product-security-digital-bank",
-      "location": "Minato-ku, Tokyo, JP",
-      "description": "We are a startup team partnering with Sumitomo Mitsui Banking Corporation to establish a new digital bank. This initiative aims to deliver more user-friendly, cost-effective, and timely financial services, providing an innovative back-office experience and creating financial flows that contribute to the growth of the Japanese economy.\n\n This position leverages knowledge and experience in coding, infrastructure, etc., to collaborate with developers and information systems personnel to maintain and enhance the security of the digital bank.\n\n Responsibilities\n\n Establishing security guardrails for cloud environments\n\n In-house security consulting: Providing technical advice on security to in-house developers, architecture reviews, etc.\n\n Development of security-related tools and scripts\n\n Implementation and deployment of frameworks such as NIST CSF, CIS Controls\n\n Implementation of DevSecOps, including K8s, Docker, CI/CD\n\n Requirements\n\n Basic understanding of computer science, including networks, OS, data structures, cryptographic theory\n\n Development experience in any programming language or practical experience in security-by-design\n\n Knowledge or experience in any of the following\n\n Vulnerability assessment\n\n Cloud security\n\n Experience in building and operating DevSecOps\n\n Experience in building and operating security solutions such as WAF, IDS/IPS, SIEM\n\n Nice to haves\n While not specifically required, tell us if you have any of the following.\n\n Experience in CTF\n\n Experience in bug hunting, obtaining CVEs\n\n Certifications such as CISSP, CISM, OSCP, GCIH\n\n Deep understanding of authentication and authorization, OIDC, OAuth\n\n Experience in security-related work in the financial or Fintech industry, such as FISC\n\n Experience in AI development and/or experience in using AI tools to improve development processes.\n\n Money Forward recently announced our AI Strategy roadmap which focuses on improving AI-driven operational efficiencies, as well as integrating AI agents into our products to deliver better value to our users.",
-      "datePosted": "2025-10-10T13:41:50.948+09:00",
-      "validThrough": "",
-      "employmentType": "FULL_TIME",
-      "firstSeenAt": "2026-05-16T23:18:51.813Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
-      "isNew": true,
-      "isExpired": false,
-      "expiredAt": "",
-      "jobKey": "url:https://www.tokyodev.com/companies/moneyforward/jobs/security-specialist-product-security-digital-bank",
-      "sourceMarket": "jp",
-      "sourceIndustry": "",
-      "sourceStrategy": "flex-job-board",
-      "sourceTags": [
-        "flex-job-board"
-      ],
-      "sourceQuality": {
-        "score": 100,
-        "tier": "high",
-        "reasons": []
-      },
-      "score": 57,
-      "grade": "D",
-      "recommendation": "觀望",
-      "status": "值得投遞",
-      "evaluatedAt": "2026-05-16T23:18:53.419Z",
-      "evaluation": {
-        "source": "career-ops-intelligence",
-        "overall": {
-          "grade": "D",
-          "score": 57,
-          "recommendation": "觀望",
-          "summary": "以 11 個維度比對，命中 2 個履歷技能，市場技能命中 3 個。"
-        },
-        "decision_factors": [
-          "職類：Backend；資歷：Mid；模式：Unknown",
-          "履歷技能命中：product、data",
-          "未偵測到明顯稀有技能訊號"
-        ],
-        "ats_keywords": {
-          "found": [
-            "product",
-            "data"
-          ],
-          "missing": [
-            "docker",
-            "agents",
-            "growth"
-          ]
-        },
-        "risks": [],
-        "next_actions": [
-          "先與高分職缺比較，不急著投遞",
-          "補齊 JD 或標記喜歡 / 不喜歡以改善後續排序"
-        ]
-      },
-      "intelligence": {
-        "score": 57,
-        "grade": "D",
-        "recommendation": "觀望",
-        "features": {
-          "roleFamily": "Backend",
-          "seniority": "Mid",
-          "workMode": "Unknown",
-          "skills": [
-            "docker",
-            "agents",
-            "growth"
-          ],
-          "profileSkillHits": [
-            "product",
-            "data"
-          ],
-          "profileSkillsNotInJd": [
-            "JavaScript",
-            "TypeScript",
-            "React",
-            "Next.js",
-            "CSS",
-            "Tailwind",
-            "Accessibility",
-            "Analytics",
-            "API",
-            "Figma",
-            "Performance Optimization",
-            "Design Systems"
-          ],
-          "jdSkillsMissingFromProfile": [
-            "docker",
-            "agents",
-            "growth"
-          ],
-          "requiresUnknownLanguage": false,
-          "rareHighValueSkills": [],
-          "locationHits": [],
-          "avoidHits": []
-        },
-        "dimensions": {
-          "profileMatch": 28,
-          "atsCoverage": 8,
-          "roleFit": 68,
           "seniorityFit": 82,
           "locationFit": 58,
           "sourceQuality": 78,
-          "freshness": 95,
+          "freshness": 76,
           "compensationSignal": 52,
-          "growthSignal": 84,
+          "growthSignal": 66,
           "applicationEffort": 86,
           "riskPenalty": 0
         }
@@ -7971,7 +7473,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "Intern",
       "firstSeenAt": "2026-05-15T06:25:26.345Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -7995,7 +7497,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "D",
       "recommendation": "觀望",
       "status": "值得投遞",
-      "evaluatedAt": "2026-05-16T23:18:52.960Z",
+      "evaluatedAt": "2026-05-17T23:21:24.453Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -8091,7 +7593,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "Full time",
       "firstSeenAt": "2026-05-15T11:59:22.604Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -8116,7 +7618,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "D",
       "recommendation": "觀望",
       "status": "值得投遞",
-      "evaluatedAt": "2026-05-16T23:18:52.970Z",
+      "evaluatedAt": "2026-05-17T23:21:24.463Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -8205,6 +7707,117 @@ window.CV_CAREER_OPS_JOBS = {
     {
       "source": "Micron Workday",
       "sourceType": "adapter:workday",
+      "title": "PEE PROCESS SHIFT ENGINEER",
+      "company": "Micron Workday",
+      "url": "https://micron.wd1.myworkdayjobs.com/External/job/Taichung---Fab-16-Taiwan/PEE-PROCESS-SHIFT-ENGINEER_JR99945",
+      "location": "Taichung - Fab 16, Taiwan",
+      "description": "Our vision is to transform how the world uses information to enrich life for all .\n Micron Technology is a world leader in innovating memory and storage solutions that accelerate the transformation of information into intelligence, inspiring the world to learn, communicate and advance faster than ever.\n\n Responsibilities and Tasks:\n• Establish and improve process condition and technology.\n• Upgrade process capability and reduce production cost.\n• Establish and modify process management projects.\n• Set up process parameters for a variety of semiconductor equipment.\n• Evaluation, promotion and planning of new equipment / materials.\n• Abnormal analysis and improvement.\n\n About Micron Technology, Inc.\n We are an industry leader in innovative memory and storage solutions transforming how the world uses information to enrich life   for all . With a relentless focus on our customers, technology leadership, and manufacturing and operational excellence, Micron delivers a rich portfolio of high-performance DRAM, NAND, and NOR memory and storage products through our Micron® and Crucial® brands. Every day, the innovations that our people create fuel the data economy, enabling advances in artificial intelligence and 5G applications that unleash opportunities — from the data center to the intelligent edge and across the client and mobile user experience.\n\n To learn more, please visit micron.com/careers\n\n All qualified applicants will receive consideration for employment without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, veteran or disability status.\n\n To request assistance with the application process and/or for reasonable accommodations,   please contact at hrsupport_taiwan@micron.com .\n\n Micron Prohibits the use of child labor and complies with all applicable laws, rules, regulations, and other international and industry labor standards.\n\n Micron does not charge candidates any recruitment fees or unlawfully collect any other payment from candidates as consideration for their employment with Micron.\n\n AI alert: Candidates are encouraged to use AI tools to enhance their resume and/or application materials. However, all information provided must be accurate and reflect the candidate's true skills and experiences. Misuse of AI to fabricate or misrepresent qualifications will result in immediate disqualification.   \n\n Fraud alert: Micron advises job seekers to be cautious of unsolicited job offers and to verify the authenticity of any communication claiming to be from Micron by checking the official Micron careers website in the About Micron Technology, Inc.\n\nTime type: Full time\n\nJob requisition id: JR99945",
+      "datePosted": "2026-05-17",
+      "validThrough": "",
+      "employmentType": "Full time",
+      "firstSeenAt": "2026-05-17T23:21:23.392Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
+      "isNew": true,
+      "isExpired": false,
+      "expiredAt": "",
+      "jobKey": "url:https://micron.wd1.myworkdayjobs.com/external/job/taichung---fab-16-taiwan/pee-process-shift-engineer_jr99945",
+      "sourceMarket": "tw",
+      "sourceIndustry": "semiconductor-memory",
+      "sourceStrategy": "tracked-company",
+      "sourceTags": [
+        "multinational",
+        "semiconductor",
+        "taiwan",
+        "workday",
+        "internationalized"
+      ],
+      "sourceQuality": {
+        "score": 100,
+        "tier": "high",
+        "reasons": []
+      },
+      "score": 56,
+      "grade": "D",
+      "recommendation": "觀望",
+      "status": "值得投遞",
+      "evaluatedAt": "2026-05-17T23:21:24.510Z",
+      "evaluation": {
+        "source": "career-ops-intelligence",
+        "overall": {
+          "grade": "D",
+          "score": 56,
+          "recommendation": "觀望",
+          "summary": "以 11 個維度比對，命中 2 個履歷技能，市場技能命中 0 個。"
+        },
+        "decision_factors": [
+          "職類：AI / Data；資歷：Mid；模式：Unknown",
+          "履歷技能命中：engineer、data",
+          "未偵測到明顯稀有技能訊號"
+        ],
+        "ats_keywords": {
+          "found": [
+            "engineer",
+            "data"
+          ],
+          "missing": []
+        },
+        "risks": [],
+        "next_actions": [
+          "先與高分職缺比較，不急著投遞",
+          "補齊 JD 或標記喜歡 / 不喜歡以改善後續排序"
+        ]
+      },
+      "intelligence": {
+        "score": 56,
+        "grade": "D",
+        "recommendation": "觀望",
+        "features": {
+          "roleFamily": "AI / Data",
+          "seniority": "Mid",
+          "workMode": "Unknown",
+          "skills": [],
+          "profileSkillHits": [
+            "engineer",
+            "data"
+          ],
+          "profileSkillsNotInJd": [
+            "JavaScript",
+            "TypeScript",
+            "React",
+            "Next.js",
+            "CSS",
+            "Tailwind",
+            "Accessibility",
+            "Analytics",
+            "API",
+            "Figma",
+            "Performance Optimization",
+            "Design Systems"
+          ],
+          "jdSkillsMissingFromProfile": [],
+          "requiresUnknownLanguage": false,
+          "rareHighValueSkills": [],
+          "locationHits": [],
+          "avoidHits": []
+        },
+        "dimensions": {
+          "profileMatch": 28,
+          "atsCoverage": 8,
+          "roleFit": 68,
+          "seniorityFit": 82,
+          "locationFit": 58,
+          "sourceQuality": 90,
+          "freshness": 95,
+          "compensationSignal": 52,
+          "growthSignal": 66,
+          "applicationEffort": 86,
+          "riskPenalty": 0
+        }
+      }
+    },
+    {
+      "source": "Micron Workday",
+      "sourceType": "adapter:workday",
       "title": "Facility Construction Project Engineer",
       "company": "Micron Workday",
       "url": "https://micron.wd1.myworkdayjobs.com/External/job/Taichung---Fab-16-Taiwan/Facility-Construction-Project-Engineer_JR94935",
@@ -8214,7 +7827,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "Full time",
       "firstSeenAt": "2026-05-15T12:00:32.241Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -8238,7 +7851,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "D",
       "recommendation": "觀望",
       "status": "值得投遞",
-      "evaluatedAt": "2026-05-16T23:18:53.035Z",
+      "evaluatedAt": "2026-05-17T23:21:24.523Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -8325,7 +7938,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "Full time",
       "firstSeenAt": "2026-05-15T06:25:26.345Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -8349,7 +7962,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "D",
       "recommendation": "觀望",
       "status": "觀望",
-      "evaluatedAt": "2026-05-16T23:18:53.043Z",
+      "evaluatedAt": "2026-05-17T23:21:24.527Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -8436,7 +8049,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "Full time",
       "firstSeenAt": "2026-05-15T06:25:26.345Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -8460,7 +8073,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "D",
       "recommendation": "觀望",
       "status": "值得投遞",
-      "evaluatedAt": "2026-05-16T23:18:53.050Z",
+      "evaluatedAt": "2026-05-17T23:21:24.533Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -8547,7 +8160,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "Full time",
       "firstSeenAt": "2026-05-15T06:25:26.345Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -8571,7 +8184,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "D",
       "recommendation": "觀望",
       "status": "值得投遞",
-      "evaluatedAt": "2026-05-16T23:18:53.060Z",
+      "evaluatedAt": "2026-05-17T23:21:24.542Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -8660,7 +8273,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "Full time",
       "firstSeenAt": "2026-05-15T06:25:26.345Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -8684,7 +8297,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "D",
       "recommendation": "觀望",
       "status": "值得投遞",
-      "evaluatedAt": "2026-05-16T23:18:53.067Z",
+      "evaluatedAt": "2026-05-17T23:21:24.548Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -8773,7 +8386,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "Full time",
       "firstSeenAt": "2026-05-15T06:25:26.345Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -8797,7 +8410,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "D",
       "recommendation": "觀望",
       "status": "值得投遞",
-      "evaluatedAt": "2026-05-16T23:18:53.074Z",
+      "evaluatedAt": "2026-05-17T23:21:24.554Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -8886,7 +8499,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "2026-11-15",
       "employmentType": "FULL_TIME",
       "firstSeenAt": "2026-05-15T13:24:47.248Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -8906,7 +8519,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "D",
       "recommendation": "觀望",
       "status": "值得投遞",
-      "evaluatedAt": "2026-05-16T23:18:53.227Z",
+      "evaluatedAt": "2026-05-17T23:21:24.683Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -9052,7 +8665,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "2026-11-14",
       "employmentType": "FULL_TIME",
       "firstSeenAt": "2026-05-15T04:51:08.174Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -9072,7 +8685,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "D",
       "recommendation": "觀望",
       "status": "值得投遞",
-      "evaluatedAt": "2026-05-16T23:18:53.238Z",
+      "evaluatedAt": "2026-05-17T23:21:24.692Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -9165,7 +8778,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "2026-11-14",
       "employmentType": "FULL_TIME",
       "firstSeenAt": "2026-05-15T04:51:08.174Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -9185,7 +8798,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "D",
       "recommendation": "觀望",
       "status": "值得投遞",
-      "evaluatedAt": "2026-05-16T23:18:53.241Z",
+      "evaluatedAt": "2026-05-17T23:21:24.695Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -9278,7 +8891,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "2026-11-04",
       "employmentType": "FULL_TIME",
       "firstSeenAt": "2026-05-15T04:51:08.174Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -9298,7 +8911,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "D",
       "recommendation": "觀望",
       "status": "值得投遞",
-      "evaluatedAt": "2026-05-16T23:18:53.260Z",
+      "evaluatedAt": "2026-05-17T23:21:24.711Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -9391,7 +9004,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "2026-11-04",
       "employmentType": "FULL_TIME",
       "firstSeenAt": "2026-05-15T04:51:08.174Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -9411,7 +9024,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "D",
       "recommendation": "觀望",
       "status": "觀望",
-      "evaluatedAt": "2026-05-16T23:18:53.268Z",
+      "evaluatedAt": "2026-05-17T23:21:24.720Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -9525,7 +9138,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "2026-11-01",
       "employmentType": "FULL_TIME",
       "firstSeenAt": "2026-05-15T04:51:08.174Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -9545,7 +9158,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "D",
       "recommendation": "觀望",
       "status": "值得投遞",
-      "evaluatedAt": "2026-05-16T23:18:53.274Z",
+      "evaluatedAt": "2026-05-17T23:21:24.726Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -9633,6 +9246,366 @@ window.CV_CAREER_OPS_JOBS = {
       }
     },
     {
+      "source": "Source flex job board",
+      "sourceType": "json-ld",
+      "title": "Compute - Forward Deployment Engineer",
+      "company": "AI&",
+      "url": "https://www.tokyodev.com/companies/aiand/jobs/compute-forward-deployment-engineer",
+      "location": "Yokohama, Kanagawa, JP",
+      "description": "As a Field Development Engineer for our Compute Platform, you are the technical partner that helps customers get the most out of ai&’s PaaS infrastructure. Our compute platform is built for simplicity — developers and engineering teams should be able to deploy web applications, APIs, backend services, and AI workloads without managing the infrastructure underneath. Your job is to make that promise real for every customer you work with.\n\n You will work across a diverse customer base — from startups shipping their first production application to enterprises migrating complex workloads onto ai& infrastructure. You will own the technical relationship, architect the deployment, and stay close through go-live and beyond. You bring the platform expertise, the deployment patterns, and the hands-on technical depth to meet customers wherever they are and get them to production fast.\n\n This is a peer-level technical role. You are not handing customers a documentation link. You are sitting with their engineering team, understanding their stack, and designing the solution together. When things break you diagnose them. When customers do not know the best path forward you show them one. And everything you learn in the field comes back into ai& to make the platform better.\n\n Responsibilities\n\n Solution Architecture & Deployment Design Design deployment architectures on ai&’s compute platform that fit the customer’s application, team, and scale requirements. Own the solution from initial scoping through production deployment.\n\n Technical Customer Engagement Lead technical onboarding, architecture reviews, and deep-dive sessions with customer engineering teams. Operate as a technical peer to developers, platform engineers, and CTOs at both startups and enterprises.\n\n Platform Onboarding Get customers live on ai& compute quickly and correctly. Manage the technical onboarding process, resolve blockers, and ensure the first deployment experience sets the right foundation.\n\n Proof of Concept & Migration Support Lead technical POCs for enterprise prospects. Help customers migrate existing workloads from other platforms onto ai& infrastructure, identifying risks early and managing the transition cleanly.\n\n Performance & Scalability Guidance Advise customers on how to configure and optimize their deployments for performance, cost, and reliability. Help them understand how to scale on the platform as their usage grows.\n\n AI & ML Workload Support For customers deploying AI and ML workloads, provide additional technical guidance on model serving, inference optimization, and integration with ai&’s broader AI platform capabilities.\n\n Technical Troubleshooting Own issue resolution across the customer lifecycle. Diagnose problems at any layer — application, runtime, networking, infrastructure — and drive resolution quickly with internal engineering teams.\n\n Customer Feedback & Product Input Capture the technical signal you gather in the field and bring it back to the product and engineering teams. The friction customers hit, the features they need, the patterns that keep coming up — all of it should flow back into how we build.\n\n Reference Architectures & Enablement Produce reference architectures, deployment guides, and example configurations that help customers move faster and scale your expertise across the customer base.\n\n Requirements\n\n PaaS & Cloud Platform Experience You have worked with PaaS or cloud infrastructure platforms — Heroku, Render, Railway, AWS Elastic Beanstalk, Google App Engine, or similar. You understand how developers deploy applications on managed platforms and where they run into trouble.\n\n Application Deployment Depth Strong understanding of how web applications, APIs, and backend services are deployed and operated in production. You know about containerization, runtime environments, networking, databases, and the full stack that surrounds an application.\n\n Solutions Architecture Track Record You have designed and delivered end-to-end technical solutions for customers in a customer-facing technical role. You think in systems, you own the architecture, and you see deployments through to production.\n\n Enterprise & Startup Customer Fluency Comfortable working across both enterprise and startup environments. You adjust your approach depending on who you are talking to — a solo founder moving fast or a platform team at a large enterprise moving carefully.\n\n Troubleshooting Across the Stack You can diagnose problems at any layer — application code, runtime configuration, networking, infrastructure. You do not need to hand off to understand what is happening.\n\n AI & ML Familiarity Working familiarity with AI and ML workloads is a plus. You do not need to be an ML engineer but you should be comfortable having a technical conversation about model deployment and inference when the customer needs it.\n\n Relevant Tooling Strong command of at least one backend language. Familiarity with containers, CI/CD pipelines, cloud networking, and deployment tooling. Python proficiency is a plus.\n\n Great Team Spirit A mission-driven approach to engineering, valuing clear communication, hands-on execution, and collective success over individual silos.",
+      "datePosted": "2026-05-17T07:49:02.648+09:00",
+      "validThrough": "",
+      "employmentType": "FULL_TIME",
+      "firstSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
+      "isNew": false,
+      "isExpired": false,
+      "expiredAt": "",
+      "jobKey": "url:https://www.tokyodev.com/companies/aiand/jobs/compute-forward-deployment-engineer",
+      "sourceMarket": "jp",
+      "sourceIndustry": "",
+      "sourceStrategy": "flex-job-board",
+      "sourceTags": [
+        "flex-job-board"
+      ],
+      "sourceQuality": {
+        "score": 100,
+        "tier": "high",
+        "reasons": []
+      },
+      "score": 56,
+      "grade": "D",
+      "recommendation": "觀望",
+      "status": "值得投遞",
+      "evaluatedAt": "2026-05-17T23:21:24.784Z",
+      "evaluation": {
+        "source": "career-ops-intelligence",
+        "overall": {
+          "grade": "D",
+          "score": 56,
+          "recommendation": "觀望",
+          "summary": "以 11 個維度比對，命中 2 個履歷技能，市場技能命中 3 個。"
+        },
+        "decision_factors": [
+          "職類：Backend；資歷：Senior+；模式：Unknown",
+          "履歷技能命中：engineer、product",
+          "未偵測到明顯稀有技能訊號"
+        ],
+        "ats_keywords": {
+          "found": [
+            "engineer",
+            "product"
+          ],
+          "missing": [
+            "python",
+            "go",
+            "aws"
+          ]
+        },
+        "risks": [],
+        "next_actions": [
+          "先與高分職缺比較，不急著投遞",
+          "補齊 JD 或標記喜歡 / 不喜歡以改善後續排序"
+        ]
+      },
+      "intelligence": {
+        "score": 56,
+        "grade": "D",
+        "recommendation": "觀望",
+        "features": {
+          "roleFamily": "Backend",
+          "seniority": "Senior+",
+          "workMode": "Unknown",
+          "skills": [
+            "python",
+            "go",
+            "aws"
+          ],
+          "profileSkillHits": [
+            "engineer",
+            "product"
+          ],
+          "profileSkillsNotInJd": [
+            "JavaScript",
+            "TypeScript",
+            "React",
+            "Next.js",
+            "CSS",
+            "Tailwind",
+            "Accessibility",
+            "Analytics",
+            "API",
+            "Figma",
+            "Performance Optimization",
+            "Design Systems"
+          ],
+          "jdSkillsMissingFromProfile": [
+            "python",
+            "go",
+            "aws"
+          ],
+          "requiresUnknownLanguage": false,
+          "rareHighValueSkills": [],
+          "locationHits": [],
+          "avoidHits": []
+        },
+        "dimensions": {
+          "profileMatch": 28,
+          "atsCoverage": 8,
+          "roleFit": 68,
+          "seniorityFit": 70,
+          "locationFit": 58,
+          "sourceQuality": 78,
+          "freshness": 76,
+          "compensationSignal": 52,
+          "growthSignal": 93,
+          "applicationEffort": 86,
+          "riskPenalty": 0
+        }
+      }
+    },
+    {
+      "source": "Source flex job board",
+      "sourceType": "json-ld",
+      "title": "AI - Forward Deployment Engineer",
+      "company": "AI&",
+      "url": "https://www.tokyodev.com/companies/aiand/jobs/ai-forward-deployment-engineer",
+      "location": "Yokohama, Kanagawa, JP",
+      "description": "As a Field Development Engineer at ai&, you are the most technical person in the customer relationship. You combine deep platform knowledge with the ability to go into any enterprise environment, understand what they are trying to build, and architect the solution that gets them there on ai& infrastructure.\n\n You will work with the most technically demanding customers we have, enterprises deploying AI at scale, startups pushing the boundaries of what agents can do, and engineering teams that need a peer-level technical partner, not a salesperson. You will own the solution architecture end to end: understanding the customer’s stack, designing the integration, driving deployment, and staying close through production. You will also build a distributed inference and compute architecture with a customer’s ML team and sitting down with their platform engineers to debug a latency issue in the serving layer.\n\n This role carries significant influence. The architectures you design become reference patterns. The feedback you bring back shapes the product roadmap. And the trust you build with customers becomes the foundation of long-term partnerships. We want someone who takes that seriously and operates with the technical depth and customer instinct to back it up.\n\n Responsibilities\n\n Solution Architecture Design end-to-end technical architectures that integrate ai&’s agent and inference platform into customer environments. Own the solution from initial scoping through deployment, ensuring it is correct, scalable, and production-ready.\n\n Technical Customer Engagement Serve as the primary technical point of contact for enterprise customers. Lead deep-dive architecture sessions, proof-of-concept engagements, and technical reviews. Operate as a peer to the customer’s most senior engineers.\n\n Platform Expertise Develop and maintain deep expertise across the full ai& platform — inference serving, model capabilities, agentic frameworks, and infrastructure. Be the person who knows it better than anyone outside the company.\n\n Proof of Concept & Benchmarking Lead technical proof-of-concept engagements with customers. Design benchmarks that demonstrate platform performance against customer workloads and use the results to guide architectural recommendations.\n\n Agentic Workflow Design Help customers architect and deploy agentic workflows on ai& infrastructure. Translate complex customer use cases into concrete, well-scoped implementation plans and build alongside them where needed.\n\n Technical Troubleshooting & Escalation Own technical issue resolution across the customer lifecycle. Diagnose problems at any layer of the stack, drive resolution with internal engineering teams, and communicate status clearly to the customer throughout.\n\n Customer Feedback & Roadmap Input Systematically capture and communicate the technical signal you gather in the field. Be the voice of the customer inside ai& and ensure product and engineering decisions are informed by real deployment experience.\n\n Reference Architecture & Enablement Produce reference architectures, integration guides, and example implementations that scale your expertise beyond the customers you directly touch.\n\n Requirements\n\n Solution Architecture Experience You have designed and delivered end-to-end technical solutions for enterprise customers in a solutions architect, field engineer, or equivalent role. You think in systems and you own the architecture through to production.\n\n AI Infrastructure Depth Deep familiarity with AI inference infrastructure, serving frameworks, and the systems that surround them. You understand how models are deployed, how serving stacks are built, and where they break under real workloads.\n\n Agentic Systems Knowledge You have worked with agentic frameworks and you understand the architectural patterns that make agent-based systems reliable at scale. You can design solutions that use ai&’s agentic platform to solve real customer problems.\n\n Enterprise Customer Fluency You have worked with demanding enterprise customers and you know how to earn the trust of senior technical stakeholders. You communicate with precision, handle ambiguity well, and push back constructively when needed.\n\n Performance & Benchmarking Experience designing and running technical benchmarks that demonstrate platform performance against real workloads. You know how to set up a POC that answers the right questions.\n\n Full-Stack Technical Range Comfortable across APIs, backend infrastructure, cloud environments, and ML systems. You can diagnose problems at any layer and you do not need to hand off to understand what is happening.\n\n Relevant Tooling Strong command of Python. Familiarity with inference frameworks, agentic libraries, REST APIs, and cloud deployment environments.\n\n Great Team Spirit A mission-driven approach to engineering, valuing clear communication, hands-on execution, and collective success over individual silos.",
+      "datePosted": "2026-05-17T07:48:42.081+09:00",
+      "validThrough": "",
+      "employmentType": "FULL_TIME",
+      "firstSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
+      "isNew": false,
+      "isExpired": false,
+      "expiredAt": "",
+      "jobKey": "url:https://www.tokyodev.com/companies/aiand/jobs/ai-forward-deployment-engineer",
+      "sourceMarket": "jp",
+      "sourceIndustry": "",
+      "sourceStrategy": "flex-job-board",
+      "sourceTags": [
+        "flex-job-board"
+      ],
+      "sourceQuality": {
+        "score": 100,
+        "tier": "high",
+        "reasons": []
+      },
+      "score": 56,
+      "grade": "D",
+      "recommendation": "觀望",
+      "status": "值得投遞",
+      "evaluatedAt": "2026-05-17T23:21:24.788Z",
+      "evaluation": {
+        "source": "career-ops-intelligence",
+        "overall": {
+          "grade": "D",
+          "score": 56,
+          "recommendation": "觀望",
+          "summary": "以 11 個維度比對，命中 2 個履歷技能，市場技能命中 4 個。"
+        },
+        "decision_factors": [
+          "職類：Backend；資歷：Senior+；模式：Unknown",
+          "履歷技能命中：engineer、product",
+          "未偵測到明顯稀有技能訊號"
+        ],
+        "ats_keywords": {
+          "found": [
+            "engineer",
+            "product"
+          ],
+          "missing": [
+            "python",
+            "go",
+            "rest",
+            "agents"
+          ]
+        },
+        "risks": [],
+        "next_actions": [
+          "先與高分職缺比較，不急著投遞",
+          "補齊 JD 或標記喜歡 / 不喜歡以改善後續排序"
+        ]
+      },
+      "intelligence": {
+        "score": 56,
+        "grade": "D",
+        "recommendation": "觀望",
+        "features": {
+          "roleFamily": "Backend",
+          "seniority": "Senior+",
+          "workMode": "Unknown",
+          "skills": [
+            "python",
+            "go",
+            "rest",
+            "agents"
+          ],
+          "profileSkillHits": [
+            "engineer",
+            "product"
+          ],
+          "profileSkillsNotInJd": [
+            "JavaScript",
+            "TypeScript",
+            "React",
+            "Next.js",
+            "CSS",
+            "Tailwind",
+            "Accessibility",
+            "Analytics",
+            "API",
+            "Figma",
+            "Performance Optimization",
+            "Design Systems"
+          ],
+          "jdSkillsMissingFromProfile": [
+            "python",
+            "go",
+            "rest",
+            "agents"
+          ],
+          "requiresUnknownLanguage": false,
+          "rareHighValueSkills": [],
+          "locationHits": [],
+          "avoidHits": []
+        },
+        "dimensions": {
+          "profileMatch": 28,
+          "atsCoverage": 8,
+          "roleFit": 68,
+          "seniorityFit": 70,
+          "locationFit": 58,
+          "sourceQuality": 78,
+          "freshness": 76,
+          "compensationSignal": 52,
+          "growthSignal": 93,
+          "applicationEffort": 86,
+          "riskPenalty": 0
+        }
+      }
+    },
+    {
+      "source": "Source flex job board",
+      "sourceType": "json-ld",
+      "title": "Security Specialist - Product Security, Digital Bank",
+      "company": "Money Forward",
+      "url": "https://www.tokyodev.com/companies/moneyforward/jobs/security-specialist-product-security-digital-bank",
+      "location": "Minato-ku, Tokyo, JP",
+      "description": "We are a startup team partnering with Sumitomo Mitsui Banking Corporation to establish a new digital bank. This initiative aims to deliver more user-friendly, cost-effective, and timely financial services, providing an innovative back-office experience and creating financial flows that contribute to the growth of the Japanese economy.\n\n This position leverages knowledge and experience in coding, infrastructure, etc., to collaborate with developers and information systems personnel to maintain and enhance the security of the digital bank.\n\n Responsibilities\n\n Establishing security guardrails for cloud environments\n\n In-house security consulting: Providing technical advice on security to in-house developers, architecture reviews, etc.\n\n Development of security-related tools and scripts\n\n Implementation and deployment of frameworks such as NIST CSF, CIS Controls\n\n Implementation of DevSecOps, including K8s, Docker, CI/CD\n\n Requirements\n\n Basic understanding of computer science, including networks, OS, data structures, cryptographic theory\n\n Development experience in any programming language or practical experience in security-by-design\n\n Knowledge or experience in any of the following\n\n Vulnerability assessment\n\n Cloud security\n\n Experience in building and operating DevSecOps\n\n Experience in building and operating security solutions such as WAF, IDS/IPS, SIEM\n\n Nice to haves\n While not specifically required, tell us if you have any of the following.\n\n Experience in CTF\n\n Experience in bug hunting, obtaining CVEs\n\n Certifications such as CISSP, CISM, OSCP, GCIH\n\n Deep understanding of authentication and authorization, OIDC, OAuth\n\n Experience in security-related work in the financial or Fintech industry, such as FISC\n\n Experience in AI development and/or experience in using AI tools to improve development processes.\n\n Money Forward recently announced our AI Strategy roadmap which focuses on improving AI-driven operational efficiencies, as well as integrating AI agents into our products to deliver better value to our users.",
+      "datePosted": "2025-10-10T13:41:50.948+09:00",
+      "validThrough": "",
+      "employmentType": "FULL_TIME",
+      "firstSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
+      "isNew": false,
+      "isExpired": false,
+      "expiredAt": "",
+      "jobKey": "url:https://www.tokyodev.com/companies/moneyforward/jobs/security-specialist-product-security-digital-bank",
+      "sourceMarket": "jp",
+      "sourceIndustry": "",
+      "sourceStrategy": "flex-job-board",
+      "sourceTags": [
+        "flex-job-board"
+      ],
+      "sourceQuality": {
+        "score": 100,
+        "tier": "high",
+        "reasons": []
+      },
+      "score": 56,
+      "grade": "D",
+      "recommendation": "觀望",
+      "status": "值得投遞",
+      "evaluatedAt": "2026-05-17T23:21:24.862Z",
+      "evaluation": {
+        "source": "career-ops-intelligence",
+        "overall": {
+          "grade": "D",
+          "score": 56,
+          "recommendation": "觀望",
+          "summary": "以 11 個維度比對，命中 2 個履歷技能，市場技能命中 3 個。"
+        },
+        "decision_factors": [
+          "職類：Backend；資歷：Mid；模式：Unknown",
+          "履歷技能命中：product、data",
+          "未偵測到明顯稀有技能訊號"
+        ],
+        "ats_keywords": {
+          "found": [
+            "product",
+            "data"
+          ],
+          "missing": [
+            "docker",
+            "agents",
+            "growth"
+          ]
+        },
+        "risks": [],
+        "next_actions": [
+          "先與高分職缺比較，不急著投遞",
+          "補齊 JD 或標記喜歡 / 不喜歡以改善後續排序"
+        ]
+      },
+      "intelligence": {
+        "score": 56,
+        "grade": "D",
+        "recommendation": "觀望",
+        "features": {
+          "roleFamily": "Backend",
+          "seniority": "Mid",
+          "workMode": "Unknown",
+          "skills": [
+            "docker",
+            "agents",
+            "growth"
+          ],
+          "profileSkillHits": [
+            "product",
+            "data"
+          ],
+          "profileSkillsNotInJd": [
+            "JavaScript",
+            "TypeScript",
+            "React",
+            "Next.js",
+            "CSS",
+            "Tailwind",
+            "Accessibility",
+            "Analytics",
+            "API",
+            "Figma",
+            "Performance Optimization",
+            "Design Systems"
+          ],
+          "jdSkillsMissingFromProfile": [
+            "docker",
+            "agents",
+            "growth"
+          ],
+          "requiresUnknownLanguage": false,
+          "rareHighValueSkills": [],
+          "locationHits": [],
+          "avoidHits": []
+        },
+        "dimensions": {
+          "profileMatch": 28,
+          "atsCoverage": 8,
+          "roleFit": 68,
+          "seniorityFit": 82,
+          "locationFit": 58,
+          "sourceQuality": 78,
+          "freshness": 76,
+          "compensationSignal": 52,
+          "growthSignal": 84,
+          "applicationEffort": 86,
+          "riskPenalty": 0
+        }
+      }
+    },
+    {
       "source": "NVIDIA Workday",
       "sourceType": "adapter:workday",
       "title": "Senior Silicon Photonics Test Engineer",
@@ -9644,7 +9617,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "Full time",
       "firstSeenAt": "2026-05-15T11:59:22.604Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -9669,7 +9642,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "D",
       "recommendation": "略過",
       "status": "值得投遞",
-      "evaluatedAt": "2026-05-16T23:18:53.011Z",
+      "evaluatedAt": "2026-05-17T23:21:24.499Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -9762,7 +9735,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "Full time",
       "firstSeenAt": "2026-05-15T12:00:32.241Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -9786,7 +9759,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "D",
       "recommendation": "略過",
       "status": "值得投遞",
-      "evaluatedAt": "2026-05-16T23:18:53.023Z",
+      "evaluatedAt": "2026-05-17T23:21:24.514Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -9879,7 +9852,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "Full time",
       "firstSeenAt": "2026-05-15T06:25:26.345Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -9903,7 +9876,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "D",
       "recommendation": "略過",
       "status": "觀望",
-      "evaluatedAt": "2026-05-16T23:18:53.087Z",
+      "evaluatedAt": "2026-05-17T23:21:24.566Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -9979,228 +9952,6 @@ window.CV_CAREER_OPS_JOBS = {
       }
     },
     {
-      "source": "Micron Workday",
-      "sourceType": "adapter:workday",
-      "title": "MTB HBM Manufacturing Engineer",
-      "company": "Micron Workday",
-      "url": "https://micron.wd1.myworkdayjobs.com/External/job/Taichung---MTB-Taiwan/MTB-HBM-Manufacturing-Engineer_JR101669-1",
-      "location": "Taichung - MTB, Taiwan",
-      "description": "Our vision is to transform how the world uses information to enrich life for all .\n Micron Technology is a world leader in innovating memory and storage solutions that accelerate the transformation of information into intelligence, inspiring the world to learn, communicate and advance faster than ever.\n\n Responsibilities and Tasks:\n• Establish and improve process condition and technology.\n• Upgrade process capability and reduce production cost.\n• Establish and modify process management projects.\n• Set up process parameters for a variety of semiconductor equipment.\n• Evaluation, promotion and planning of new equipment / materials.\n• Abnormal analysis and improvement.\n\n About Micron Technology, Inc.\n We are an industry leader in innovative memory and storage solutions transforming how the world uses information to enrich life   for all . With a relentless focus on our customers, technology leadership, and manufacturing and operational excellence, Micron delivers a rich portfolio of high-performance DRAM, NAND, and NOR memory and storage products through our Micron® and Crucial® brands. Every day, the innovations that our people create fuel the data economy, enabling advances in artificial intelligence and 5G applications that unleash opportunities — from the data center to the intelligent edge and across the client and mobile user experience.\n\n To learn more, please visit micron.com/careers\n\n All qualified applicants will receive consideration for employment without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, veteran or disability status.\n\n To request assistance with the application process and/or for reasonable accommodations,   please contact at hrsupport_taiwan@micron.com .\n\n Micron Prohibits the use of child labor and complies with all applicable laws, rules, regulations, and other international and industry labor standards.\n\n Micron does not charge candidates any recruitment fees or unlawfully collect any other payment from candidates as consideration for their employment with Micron.\n\n AI alert: Candidates are encouraged to use AI tools to enhance their resume and/or application materials. However, all information provided must be accurate and reflect the candidate's true skills and experiences. Misuse of AI to fabricate or misrepresent qualifications will result in immediate disqualification.   \n\n Fraud alert: Micron advises job seekers to be cautious of unsolicited job offers and to verify the authenticity of any communication claiming to be from Micron by checking the official Micron careers website in the About Micron Technology, Inc.\n\nTime type: Full time\n\nJob requisition id: JR101669",
-      "datePosted": "2026-05-15",
-      "validThrough": "",
-      "employmentType": "Full time",
-      "firstSeenAt": "2026-05-15T06:25:26.345Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
-      "isNew": false,
-      "isExpired": false,
-      "expiredAt": "",
-      "jobKey": "url:https://micron.wd1.myworkdayjobs.com/external/job/taichung---mtb-taiwan/mtb-hbm-manufacturing-engineer_jr101669-1",
-      "sourceMarket": "tw",
-      "sourceIndustry": "semiconductor-memory",
-      "sourceStrategy": "tracked-company",
-      "sourceTags": [
-        "multinational",
-        "semiconductor",
-        "taiwan",
-        "workday",
-        "internationalized"
-      ],
-      "sourceQuality": {
-        "score": 100,
-        "tier": "high",
-        "reasons": []
-      },
-      "score": 55,
-      "grade": "D",
-      "recommendation": "略過",
-      "status": "值得投遞",
-      "evaluatedAt": "2026-05-16T23:18:53.090Z",
-      "evaluation": {
-        "source": "career-ops-intelligence",
-        "overall": {
-          "grade": "D",
-          "score": 55,
-          "recommendation": "略過",
-          "summary": "以 11 個維度比對，命中 2 個履歷技能，市場技能命中 0 個。"
-        },
-        "decision_factors": [
-          "職類：AI / Data；資歷：Mid；模式：Unknown",
-          "履歷技能命中：engineer、data",
-          "未偵測到明顯稀有技能訊號"
-        ],
-        "ats_keywords": {
-          "found": [
-            "engineer",
-            "data"
-          ],
-          "missing": []
-        },
-        "risks": [],
-        "next_actions": [
-          "先與高分職缺比較，不急著投遞",
-          "補齊 JD 或標記喜歡 / 不喜歡以改善後續排序"
-        ]
-      },
-      "intelligence": {
-        "score": 55,
-        "grade": "D",
-        "recommendation": "略過",
-        "features": {
-          "roleFamily": "AI / Data",
-          "seniority": "Mid",
-          "workMode": "Unknown",
-          "skills": [],
-          "profileSkillHits": [
-            "engineer",
-            "data"
-          ],
-          "profileSkillsNotInJd": [
-            "JavaScript",
-            "TypeScript",
-            "React",
-            "Next.js",
-            "CSS",
-            "Tailwind",
-            "Accessibility",
-            "Analytics",
-            "API",
-            "Figma",
-            "Performance Optimization",
-            "Design Systems"
-          ],
-          "jdSkillsMissingFromProfile": [],
-          "requiresUnknownLanguage": false,
-          "rareHighValueSkills": [],
-          "locationHits": [],
-          "avoidHits": []
-        },
-        "dimensions": {
-          "profileMatch": 28,
-          "atsCoverage": 8,
-          "roleFit": 68,
-          "seniorityFit": 82,
-          "locationFit": 58,
-          "sourceQuality": 90,
-          "freshness": 76,
-          "compensationSignal": 52,
-          "growthSignal": 66,
-          "applicationEffort": 86,
-          "riskPenalty": 0
-        }
-      }
-    },
-    {
-      "source": "Micron Workday",
-      "sourceType": "adapter:workday",
-      "title": "MTB MFG System Engineer",
-      "company": "Micron Workday",
-      "url": "https://micron.wd1.myworkdayjobs.com/External/job/Taichung---MTB-Taiwan/MTB-MFG-System-Engineer_JR101675",
-      "location": "Taichung - MTB, Taiwan",
-      "description": "Our vision is to transform how the world uses information to enrich life for all .\n Micron Technology is a world leader in innovating memory and storage solutions that accelerate the transformation of information into intelligence, inspiring the world to learn, communicate and advance faster than ever.\n\n Responsibilities and Tasks:\n• Establish and improve process condition and technology.\n• Upgrade process capability and reduce production cost.\n• Establish and modify process management projects.\n• Set up process parameters for a variety of semiconductor equipment.\n• Evaluation, promotion and planning of new equipment / materials.\n• Abnormal analysis and improvement.\n\n About Micron Technology, Inc.\n We are an industry leader in innovative memory and storage solutions transforming how the world uses information to enrich life   for all . With a relentless focus on our customers, technology leadership, and manufacturing and operational excellence, Micron delivers a rich portfolio of high-performance DRAM, NAND, and NOR memory and storage products through our Micron® and Crucial® brands. Every day, the innovations that our people create fuel the data economy, enabling advances in artificial intelligence and 5G applications that unleash opportunities — from the data center to the intelligent edge and across the client and mobile user experience.\n\n To learn more, please visit micron.com/careers\n\n All qualified applicants will receive consideration for employment without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, veteran or disability status.\n\n To request assistance with the application process and/or for reasonable accommodations,   please contact at hrsupport_taiwan@micron.com .\n\n Micron Prohibits the use of child labor and complies with all applicable laws, rules, regulations, and other international and industry labor standards.\n\n Micron does not charge candidates any recruitment fees or unlawfully collect any other payment from candidates as consideration for their employment with Micron.\n\n AI alert: Candidates are encouraged to use AI tools to enhance their resume and/or application materials. However, all information provided must be accurate and reflect the candidate's true skills and experiences. Misuse of AI to fabricate or misrepresent qualifications will result in immediate disqualification.   \n\n Fraud alert: Micron advises job seekers to be cautious of unsolicited job offers and to verify the authenticity of any communication claiming to be from Micron by checking the official Micron careers website in the About Micron Technology, Inc.\n\nTime type: Full time\n\nJob requisition id: JR101675",
-      "datePosted": "2026-05-15",
-      "validThrough": "",
-      "employmentType": "Full time",
-      "firstSeenAt": "2026-05-15T06:25:26.345Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
-      "isNew": false,
-      "isExpired": false,
-      "expiredAt": "",
-      "jobKey": "url:https://micron.wd1.myworkdayjobs.com/external/job/taichung---mtb-taiwan/mtb-mfg-system-engineer_jr101675",
-      "sourceMarket": "tw",
-      "sourceIndustry": "semiconductor-memory",
-      "sourceStrategy": "tracked-company",
-      "sourceTags": [
-        "multinational",
-        "semiconductor",
-        "taiwan",
-        "workday",
-        "internationalized"
-      ],
-      "sourceQuality": {
-        "score": 100,
-        "tier": "high",
-        "reasons": []
-      },
-      "score": 55,
-      "grade": "D",
-      "recommendation": "略過",
-      "status": "值得投遞",
-      "evaluatedAt": "2026-05-16T23:18:53.092Z",
-      "evaluation": {
-        "source": "career-ops-intelligence",
-        "overall": {
-          "grade": "D",
-          "score": 55,
-          "recommendation": "略過",
-          "summary": "以 11 個維度比對，命中 2 個履歷技能，市場技能命中 0 個。"
-        },
-        "decision_factors": [
-          "職類：AI / Data；資歷：Mid；模式：Unknown",
-          "履歷技能命中：engineer、data",
-          "未偵測到明顯稀有技能訊號"
-        ],
-        "ats_keywords": {
-          "found": [
-            "engineer",
-            "data"
-          ],
-          "missing": []
-        },
-        "risks": [],
-        "next_actions": [
-          "先與高分職缺比較，不急著投遞",
-          "補齊 JD 或標記喜歡 / 不喜歡以改善後續排序"
-        ]
-      },
-      "intelligence": {
-        "score": 55,
-        "grade": "D",
-        "recommendation": "略過",
-        "features": {
-          "roleFamily": "AI / Data",
-          "seniority": "Mid",
-          "workMode": "Unknown",
-          "skills": [],
-          "profileSkillHits": [
-            "engineer",
-            "data"
-          ],
-          "profileSkillsNotInJd": [
-            "JavaScript",
-            "TypeScript",
-            "React",
-            "Next.js",
-            "CSS",
-            "Tailwind",
-            "Accessibility",
-            "Analytics",
-            "API",
-            "Figma",
-            "Performance Optimization",
-            "Design Systems"
-          ],
-          "jdSkillsMissingFromProfile": [],
-          "requiresUnknownLanguage": false,
-          "rareHighValueSkills": [],
-          "locationHits": [],
-          "avoidHits": []
-        },
-        "dimensions": {
-          "profileMatch": 28,
-          "atsCoverage": 8,
-          "roleFit": 68,
-          "seniorityFit": 82,
-          "locationFit": 58,
-          "sourceQuality": 90,
-          "freshness": 76,
-          "compensationSignal": 52,
-          "growthSignal": 66,
-          "applicationEffort": 86,
-          "riskPenalty": 0
-        }
-      }
-    },
-    {
       "source": "Intel Workday Taiwan",
       "sourceType": "adapter:workday",
       "title": "Senior Substrate Program Managers",
@@ -10212,7 +9963,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "Full time",
       "firstSeenAt": "2026-05-15T12:00:02.765Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -10236,7 +9987,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "D",
       "recommendation": "略過",
       "status": "觀望",
-      "evaluatedAt": "2026-05-16T23:18:53.134Z",
+      "evaluatedAt": "2026-05-17T23:21:24.598Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -10329,7 +10080,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "Full time",
       "firstSeenAt": "2026-05-15T12:00:02.765Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -10353,7 +10104,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "D",
       "recommendation": "略過",
       "status": "觀望",
-      "evaluatedAt": "2026-05-16T23:18:53.140Z",
+      "evaluatedAt": "2026-05-17T23:21:24.604Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -10449,7 +10200,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "Full time",
       "firstSeenAt": "2026-05-15T12:00:32.241Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -10473,7 +10224,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "D",
       "recommendation": "略過",
       "status": "觀望",
-      "evaluatedAt": "2026-05-16T23:18:53.183Z",
+      "evaluatedAt": "2026-05-17T23:21:24.642Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -10560,7 +10311,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "Full time",
       "firstSeenAt": "2026-05-15T12:00:32.241Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -10584,7 +10335,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "D",
       "recommendation": "略過",
       "status": "值得投遞",
-      "evaluatedAt": "2026-05-16T23:18:53.200Z",
+      "evaluatedAt": "2026-05-17T23:21:24.657Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -10678,7 +10429,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "2026-10-27",
       "employmentType": "FULL_TIME",
       "firstSeenAt": "2026-05-15T04:51:08.174Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -10698,7 +10449,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "D",
       "recommendation": "略過",
       "status": "值得投遞",
-      "evaluatedAt": "2026-05-16T23:18:53.282Z",
+      "evaluatedAt": "2026-05-17T23:21:24.732Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -10782,6 +10533,141 @@ window.CV_CAREER_OPS_JOBS = {
     {
       "source": "Source flex job board",
       "sourceType": "json-ld",
+      "title": "Senior Ruby on Rails Developer",
+      "company": "ANDPAD",
+      "url": "https://www.tokyodev.com/companies/andpad/jobs/senior-ruby-on-rails-developer",
+      "location": "Chiyoda-ku, Tokyo, JP",
+      "description": "We are seeking a Senior Ruby on Rails Developer (AWS, Backend) who can join our team and develop the application in cooperation with the product manager. Working in the form of Squad, a small team can quickly and consistently engage in everything from design to development, testing and operation.\n\n Also, there are a lot of opportunities to work with new languages ​​and frameworks other than the main language in an international environment. As an innovator, you will contribute to promoting new ways of working in the architecture and construction industry through product development.\n\n Tech Stack\n\n Development Language: Ruby (on Rails)\n\n Infrastructure: AWS, GCP\n\n CI/CD：Circle CI / Codebuild\n\n DB: Amazon Aurora (MySQL compatible edition), Elasticsearch, DynamoDB\n\n Configuration management: Ansible\n\n Deploy / Build: CodePipeline, CodeBuild, CircleCI, GitHub Actions\n\n IaC: Packer, Terraform\n\n Monitoring: Datadog, bugsnag\n\n Others: swagger, Docker, ZenHub, Figma, Slack / Jira\n\n Responsibilities\n\n Design, develop, test, operate, and refactor products using Ruby on Rails.\n\n Propose and implement new features and improvement ideas.\n\n Collaborate with product managers and designers to define requirements and specifications.\n\n Architecture design based on requirements, middleware selection\n\n Continuously learn about technical trends and industry best practices and apply them to the product.\n\n Measurement of effects for quality improvement and implementation of service improvement measures\n\n Requirements\n\n Empathy for Andpad’s mission and values\n\n 5+ years of experience in developing and operating Web services using Ruby on Rails\n\n Experience as a technical lead throughout the full project development lifecycle Knowledge and development experience with database systems\n\n Experience using cloud platforms (AWS, GCP, Azure, etc.)\n\n Experience in API design, development, and documentation\n\n Understanding of the software development lifecycle\n\n Programming, debugging, and testing skills\n\n Good at communicating in Japanese\n\n Nice to haves\n While not specifically required, tell us if you have any of the following.\n\n Experience of discovering problems from logs and solving problems\n\n Experience in developing systems using container technologies such as Docker and Kubernetes\n\n Experience in designing architecture based on application requirements and selecting middleware\n\n Experience of publishing and contributing OSS\n\n External technical output experience (writing, technical blog, stage, etc.)",
+      "datePosted": "2024-11-01T07:48:33.777+09:00",
+      "validThrough": "",
+      "employmentType": "FULL_TIME",
+      "firstSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
+      "isNew": false,
+      "isExpired": false,
+      "expiredAt": "",
+      "jobKey": "url:https://www.tokyodev.com/companies/andpad/jobs/senior-ruby-on-rails-developer",
+      "sourceMarket": "jp",
+      "sourceIndustry": "",
+      "sourceStrategy": "flex-job-board",
+      "sourceTags": [
+        "flex-job-board"
+      ],
+      "sourceQuality": {
+        "score": 100,
+        "tier": "high",
+        "reasons": []
+      },
+      "score": 55,
+      "grade": "D",
+      "recommendation": "略過",
+      "status": "值得投遞",
+      "evaluatedAt": "2026-05-17T23:21:24.790Z",
+      "evaluation": {
+        "source": "career-ops-intelligence",
+        "overall": {
+          "grade": "D",
+          "score": 55,
+          "recommendation": "略過",
+          "summary": "以 11 個維度比對，命中 3 個履歷技能，市場技能命中 9 個。"
+        },
+        "decision_factors": [
+          "職類：Backend；資歷：Senior+；模式：Unknown",
+          "履歷技能命中：API、Figma、product",
+          "未偵測到明顯稀有技能訊號"
+        ],
+        "ats_keywords": {
+          "found": [
+            "API",
+            "Figma",
+            "product"
+          ],
+          "missing": [
+            "mysql",
+            "aws",
+            "gcp",
+            "azure",
+            "docker",
+            "kubernetes",
+            "terraform"
+          ]
+        },
+        "risks": [],
+        "next_actions": [
+          "先與高分職缺比較，不急著投遞",
+          "補齊 JD 或標記喜歡 / 不喜歡以改善後續排序"
+        ]
+      },
+      "intelligence": {
+        "score": 55,
+        "grade": "D",
+        "recommendation": "略過",
+        "features": {
+          "roleFamily": "Backend",
+          "seniority": "Senior+",
+          "workMode": "Unknown",
+          "skills": [
+            "mysql",
+            "aws",
+            "gcp",
+            "azure",
+            "docker",
+            "kubernetes",
+            "terraform",
+            "api",
+            "figma"
+          ],
+          "profileSkillHits": [
+            "API",
+            "Figma",
+            "product"
+          ],
+          "profileSkillsNotInJd": [
+            "JavaScript",
+            "TypeScript",
+            "React",
+            "Next.js",
+            "CSS",
+            "Tailwind",
+            "Accessibility",
+            "Analytics",
+            "Performance Optimization",
+            "Design Systems",
+            "remote",
+            "dashboard"
+          ],
+          "jdSkillsMissingFromProfile": [
+            "mysql",
+            "aws",
+            "gcp",
+            "azure",
+            "docker",
+            "kubernetes",
+            "terraform"
+          ],
+          "requiresUnknownLanguage": false,
+          "rareHighValueSkills": [],
+          "locationHits": [],
+          "avoidHits": []
+        },
+        "dimensions": {
+          "profileMatch": 42,
+          "atsCoverage": 12,
+          "roleFit": 68,
+          "seniorityFit": 70,
+          "locationFit": 58,
+          "sourceQuality": 78,
+          "freshness": 76,
+          "compensationSignal": 52,
+          "growthSignal": 57,
+          "applicationEffort": 86,
+          "riskPenalty": 0
+        }
+      }
+    },
+    {
+      "source": "Source flex job board",
+      "sourceType": "json-ld",
       "title": "Platform Engineer, Platform and Reliability Engineering Department",
       "company": "Money Forward",
       "url": "https://www.tokyodev.com/companies/moneyforward/jobs/platform-engineer-platform-and-reliability-engineering-department",
@@ -10791,7 +10677,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "FULL_TIME",
       "firstSeenAt": "2026-05-15T04:51:38.896Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -10811,7 +10697,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "D",
       "recommendation": "略過",
       "status": "值得投遞",
-      "evaluatedAt": "2026-05-16T23:18:53.382Z",
+      "evaluatedAt": "2026-05-17T23:21:24.827Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -10905,166 +10791,6 @@ window.CV_CAREER_OPS_JOBS = {
       }
     },
     {
-      "source": "Source flex job board",
-      "sourceType": "json-ld",
-      "title": "QA Engineer, Money Forward Cloud, Fukuoka",
-      "company": "Money Forward",
-      "url": "https://www.tokyodev.com/companies/moneyforward/jobs/qa-engineer-money-forward-cloud-fukuoka",
-      "location": "Minato-ku, Tokyo, JP",
-      "description": "At the Money Forward Fukuoka development base, we are developing various services, including the business-oriented cloud service “Money Forward Cloud,” to solve a wide range of financial issues.\n\n As we continue to add new products and features, rapid development and quality assurance to satisfy our customers have become urgent needs.\n\n While speed is being ensured through Agile development, quality assurance in short cycles is still a work in progress, and we are continuously improving through trial and error.\n\n As the number of product users increases and the organization expands, we are seeking someone who can drive product quality improvement as a QA engineer.\n\n UI Turn Support Campaign Ongoing\n\n Money Forward is currently running a campaign to support relocation to our Fukuoka development base! We are offering 500,000 yen to assist with relocation expenses to engineers who join us mid-career and are currently living in Japan (conditions apply).\n\n Technology Stack\n\n Web Server-Side: Rails, Golang, Node.js, GraphQL\n\n Web Frontend: React, TypeScript, Next.js, Redux, Apollo Client, webpack, Jest\n\n iOS: Swift, SwiftUI, CoreData, Apollo, ReactorKit, Composable Architecture, Bitrise\n\n Android: Java/Kotlin, Android Jetpack (Camera, DataBinding, Navigation, etc.), LiveData/ViewModel, Dagger/Hilt, OkHttp3, Retrofit2, Apollo Android\n\n Database: MySQL (Aurora)\n\n Infrastructure & Middleware:\n\n AWS (ALB, EC2, ECS, RDS, S3, SQS, ElastiCache, EKS…)\n\n SendGrid, Kinsta\n\n GCP (BigQuery, Firebase, GKE)\n\n nginx, Squid, Memcached, Kafka, Logstash, Filebeat, Maxwell, Kibana, Elasticsearch, Fluentd, Envoy, Puma, HAProxy, Docker, Redis, Terraform\n\n Tools Used\n\n Business Platform: Marketo, Salesforce, HubSpot\n\n Repository Management: GitHub\n\n CI/CD: CircleCI, Bitrise, ArgoCD, CodeBuild, GitHub Actions\n\n Development Environment: Vagrant, Docker, Terraform Enterprise\n\n Monitoring: DataDog, Rollbar, Bugsnag, Sentry, New Relic\n\n Communication: Slack\n\n Ticket Management: Jira, Asana, Trello, Backlog\n\n Security & Automation: OWASP ZAP, Burp Suite, Sider (Brakeman), Snyk, VAddy, Dockle, Trivy\n\n Responsibilities\n You will be responsible for a wide range of tasks, including building and executing test strategies in the ERP domain of the back-office SaaS “Money Forward Cloud,” as well as project management operations.\n\n Specific duties include:\n\n Formulating test plans to meet customer requirements and product goals\n\n Quality analysis, quality improvement, and defect analysis\n\n Improvement of test processes\n\n Improvement of development processes\n\n Improvement of operational efficiency\n\n Promotion of test automation (strategy formulation, implementation, and improvement)\n\n Requirements\n\n Over 3 years of experience as a QA engineer\n\n ISTQB or JSTQB Foundation Level certification, or equivalent knowledge\n\n Experience in formulating and executing test strategies with a focus on QCD and the test pyramid\n\n Proactive attitude towards quality improvement\n\n Ability to question existing processes and methods, actively identify and propose solutions to issues, and lead stakeholders such as PdM/Eng. towards improvement and resolution\n\n Basic business level English (equivalent to TOEIC 700 or above)\n\n Nice to haves\n While not specifically required, tell us if you have any of the following.\n\n QA experience in a business company\n\n Experience in quality planning, quality analysis, and quality improvement\n\n Experience in improving development processes\n\n JCSQE Software Quality Engineer Certification at the basic or intermediate level or higher\n\n JSTQB Certified Tester Advanced Level or higher\n\n Experience using various testing tools\n\n Experience in automating UI tests or API tests\n\n Technical knowledge in the development of web or smartphone applications, and experience as an engineer\n\n Experience in building/maintaining CI environments\n\n Ability to analyze logs and data to identify issues\n\n Practical experience in software development, including reading and writing source code, with some knowledge or experience in software development (approximately 2-3 years)\n\n Japanese proficiency is not required but a willingness to learn is preferred.\n\n English is primarily used in our development environment. However, there are a few situations and tasks where communicating in Japanese is necessary. We would like to encourage individuals who are currently learning Japanese or have a strong desire to learn to join our team.",
-      "datePosted": "2026-02-04T16:55:36.412+09:00",
-      "validThrough": "",
-      "employmentType": "FULL_TIME",
-      "firstSeenAt": "2026-05-16T23:18:51.813Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
-      "isNew": true,
-      "isExpired": false,
-      "expiredAt": "",
-      "jobKey": "url:https://www.tokyodev.com/companies/moneyforward/jobs/qa-engineer-money-forward-cloud-fukuoka",
-      "sourceMarket": "jp",
-      "sourceIndustry": "",
-      "sourceStrategy": "flex-job-board",
-      "sourceTags": [
-        "flex-job-board"
-      ],
-      "sourceQuality": {
-        "score": 100,
-        "tier": "high",
-        "reasons": []
-      },
-      "score": 55,
-      "grade": "D",
-      "recommendation": "略過",
-      "status": "值得投遞",
-      "evaluatedAt": "2026-05-16T23:18:53.386Z",
-      "evaluation": {
-        "source": "career-ops-intelligence",
-        "overall": {
-          "grade": "D",
-          "score": 55,
-          "recommendation": "略過",
-          "summary": "以 11 個維度比對，命中 9 個履歷技能，市場技能命中 16 個。"
-        },
-        "decision_factors": [
-          "職類：Frontend；資歷：Senior+；模式：Unknown",
-          "履歷技能命中：TypeScript、React、Next.js、API、engineer、product、data、graphql",
-          "未偵測到明顯稀有技能訊號"
-        ],
-        "ats_keywords": {
-          "found": [
-            "TypeScript",
-            "React",
-            "Next.js",
-            "API",
-            "engineer",
-            "product",
-            "data",
-            "graphql",
-            "node.js"
-          ],
-          "missing": [
-            "java",
-            "swift",
-            "kotlin",
-            "mysql",
-            "firebase",
-            "aws",
-            "gcp",
-            "docker",
-            "terraform",
-            "operations"
-          ]
-        },
-        "risks": [],
-        "next_actions": [
-          "先與高分職缺比較，不急著投遞",
-          "補齊 JD 或標記喜歡 / 不喜歡以改善後續排序"
-        ]
-      },
-      "intelligence": {
-        "score": 55,
-        "grade": "D",
-        "recommendation": "略過",
-        "features": {
-          "roleFamily": "Frontend",
-          "seniority": "Senior+",
-          "workMode": "Unknown",
-          "skills": [
-            "typescript",
-            "react",
-            "next.js",
-            "node.js",
-            "java",
-            "swift",
-            "kotlin",
-            "mysql",
-            "firebase",
-            "aws",
-            "gcp",
-            "docker",
-            "terraform",
-            "graphql",
-            "api",
-            "operations"
-          ],
-          "profileSkillHits": [
-            "TypeScript",
-            "React",
-            "Next.js",
-            "API",
-            "engineer",
-            "product",
-            "data",
-            "graphql",
-            "node.js"
-          ],
-          "profileSkillsNotInJd": [
-            "JavaScript",
-            "CSS",
-            "Tailwind",
-            "Accessibility",
-            "Analytics",
-            "Figma",
-            "Performance Optimization",
-            "Design Systems",
-            "remote",
-            "dashboard",
-            "design system",
-            "dashboards."
-          ],
-          "jdSkillsMissingFromProfile": [
-            "java",
-            "swift",
-            "kotlin",
-            "mysql",
-            "firebase",
-            "aws",
-            "gcp",
-            "docker",
-            "terraform",
-            "operations"
-          ],
-          "requiresUnknownLanguage": true,
-          "rareHighValueSkills": [],
-          "locationHits": [],
-          "avoidHits": []
-        },
-        "dimensions": {
-          "profileMatch": 100,
-          "atsCoverage": 35,
-          "roleFit": 68,
-          "seniorityFit": 70,
-          "locationFit": 58,
-          "sourceQuality": 78,
-          "freshness": 95,
-          "compensationSignal": 52,
-          "growthSignal": 84,
-          "applicationEffort": 86,
-          "riskPenalty": 20
-        }
-      }
-    },
-    {
       "source": "NVIDIA Workday",
       "sourceType": "adapter:workday",
       "title": "Senior System Software Engineer, Client Embedded Controller",
@@ -11076,7 +10802,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "Full time",
       "firstSeenAt": "2026-05-15T11:59:22.604Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -11101,7 +10827,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "D",
       "recommendation": "略過",
       "status": "值得投遞",
-      "evaluatedAt": "2026-05-16T23:18:52.973Z",
+      "evaluatedAt": "2026-05-17T23:21:24.465Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -11194,7 +10920,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "Full time",
       "firstSeenAt": "2026-05-15T11:59:22.604Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -11219,7 +10945,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "D",
       "recommendation": "略過",
       "status": "觀望",
-      "evaluatedAt": "2026-05-16T23:18:52.979Z",
+      "evaluatedAt": "2026-05-17T23:21:24.471Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -11318,7 +11044,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "Full time",
       "firstSeenAt": "2026-05-15T11:59:22.604Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -11343,7 +11069,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "D",
       "recommendation": "略過",
       "status": "觀望",
-      "evaluatedAt": "2026-05-16T23:18:52.982Z",
+      "evaluatedAt": "2026-05-17T23:21:24.473Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -11442,7 +11168,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "Full time",
       "firstSeenAt": "2026-05-15T11:59:22.604Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -11467,7 +11193,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "D",
       "recommendation": "略過",
       "status": "觀望",
-      "evaluatedAt": "2026-05-16T23:18:52.994Z",
+      "evaluatedAt": "2026-05-17T23:21:24.484Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -11563,7 +11289,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "Full time",
       "firstSeenAt": "2026-05-15T11:59:22.604Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -11588,7 +11314,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "D",
       "recommendation": "略過",
       "status": "觀望",
-      "evaluatedAt": "2026-05-16T23:18:53.005Z",
+      "evaluatedAt": "2026-05-17T23:21:24.494Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -11687,7 +11413,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "Full time",
       "firstSeenAt": "2026-05-15T11:59:52.258Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -11711,7 +11437,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "D",
       "recommendation": "略過",
       "status": "值得投遞",
-      "evaluatedAt": "2026-05-16T23:18:53.125Z",
+      "evaluatedAt": "2026-05-17T23:21:24.593Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -11807,7 +11533,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "Full time",
       "firstSeenAt": "2026-05-15T12:00:02.765Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -11831,7 +11557,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "D",
       "recommendation": "略過",
       "status": "觀望",
-      "evaluatedAt": "2026-05-16T23:18:53.139Z",
+      "evaluatedAt": "2026-05-17T23:21:24.603Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -11916,119 +11642,6 @@ window.CV_CAREER_OPS_JOBS = {
       }
     },
     {
-      "source": "Source flex job board",
-      "sourceType": "json-ld",
-      "title": "Research Scientist (Robotics)",
-      "company": "AI Robot Association",
-      "url": "https://www.tokyodev.com/companies/ai-robot-association/jobs/research-scientist-robotics",
-      "location": "Bunkyo-ku, Tokyo, JP",
-      "description": "For researchers, this means an opportunity to:\n\n Work on fundamental challenges in robotics and AI: multimodal learning, tactile-rich manipulation, sim-to-real transfer, and large-scale benchmarking.\n\n Access state-of-the-art infrastructure: hundreds of humanoid robots, GPU clusters, high-fidelity simulators, and a global-scale evaluation pipeline.\n\n Collaborate with leading experts across academia and industry, and publish results that will shape the next decade of robotics.\n\n Contribute to an initiative that will redefine the future of embodied AI—with all results made open to the world.\n\n As we prepare for our official launch on October 1, 2025, we are assembling a world-class team ready to pioneer the next era of robotics.\n\n We invite ambitious researchers and engineers to join us in this bold challenge to rewrite the history of robotics.\n\n Responsibilities\n\n Designing and building scalable data collection systems that operate across hundreds of humanoid and mobile robots.\n\n Developing semi-autonomous teleoperation systems that ensure low latency, high controllability, and minimal operator workload.\n\n Creating automated pipelines to deploy trained models and rigorously evaluate them in both simulation and real-world robotic platforms.\n\n Working closely with the Vision-Language-Action (VLA) team to seamlessly integrate and deploy cutting-edge models onto physical robots.\n\n Requirements\n\n Ph.D. in Robotics, Mechanical Engineering, Computer Science, or a related field, or M.S. with 3+ years of equivalent industry or research experience.\n\n Extensive hands-on experience with physical robotic platforms (e.g., mobile robots, manipulators such as UR5, Franka Emika, HSR, or humanoids like Spot).\n\n Demonstrated ability to control real robots using ROS / ROS2, including full-stack integration and deployment.\n\n Solid understanding and implementation experience in teleoperation, AR/VR interfaces, and leader–follower architectures.\n\n Strong programming proficiency in C++ and Python, with ability to contribute production-level code and perform system-level integration.\n\n Proven ability to work both independently and collaboratively in multidisciplinary research and engineering teams.\n\n Note:\n\n Candidates focused solely on theoretical research (e.g., reinforcement learning or explainable AI) without practical robotics experience will not be considered.\n\n However, candidates do not necessarily need to meet every single qualification to be considered for this role.\n\n Nice to haves\n While not specifically required, tell us if you have any of the following.\n\n Publication record in top-tier robotics conferences or journals (RSS, CoRL, ICRA, IROS, TRO, IJRR).\n\n Publications limited to CVPR, ICCV, or NeurIPS could be considered AI-centric and scored lower for this position.\n\n Experience implementing advanced control strategies on hardware (impedance control, force/torque control, admittance control, or model predictive control).\n\n Practical experience with tactile sensing or contact-rich manipulation.\n\n Experience leading or contributing to large-scale robot data collection or fleet management systems.\n\n Familiarity with robotic simulators (Isaac Sim, MuJoCo, or PyBullet) for training and evaluation.\n\n Experience integrating Sim2Real transfer or Vision–Language–Action (VLA) models onto real robotic systems.",
-      "datePosted": "2025-12-24T15:11:03.669+09:00",
-      "validThrough": "",
-      "employmentType": "FULL_TIME",
-      "firstSeenAt": "2026-05-16T23:18:51.813Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
-      "isNew": true,
-      "isExpired": false,
-      "expiredAt": "",
-      "jobKey": "url:https://www.tokyodev.com/companies/ai-robot-association/jobs/research-scientist-robotics",
-      "sourceMarket": "jp",
-      "sourceIndustry": "",
-      "sourceStrategy": "flex-job-board",
-      "sourceTags": [
-        "flex-job-board"
-      ],
-      "sourceQuality": {
-        "score": 55,
-        "tier": "medium",
-        "reasons": [
-          "landing-or-search-title"
-        ]
-      },
-      "score": 54,
-      "grade": "D",
-      "recommendation": "略過",
-      "status": "值得投遞",
-      "evaluatedAt": "2026-05-16T23:18:53.422Z",
-      "evaluation": {
-        "source": "career-ops-intelligence",
-        "overall": {
-          "grade": "D",
-          "score": 54,
-          "recommendation": "略過",
-          "summary": "以 11 個維度比對，命中 1 個履歷技能，市場技能命中 1 個。"
-        },
-        "decision_factors": [
-          "職類：Backend；資歷：Mid；模式：Unknown",
-          "履歷技能命中：data",
-          "未偵測到明顯稀有技能訊號"
-        ],
-        "ats_keywords": {
-          "found": [
-            "data"
-          ],
-          "missing": [
-            "python"
-          ]
-        },
-        "risks": [],
-        "next_actions": [
-          "先與高分職缺比較，不急著投遞",
-          "補齊 JD 或標記喜歡 / 不喜歡以改善後續排序"
-        ]
-      },
-      "intelligence": {
-        "score": 54,
-        "grade": "D",
-        "recommendation": "略過",
-        "features": {
-          "roleFamily": "Backend",
-          "seniority": "Mid",
-          "workMode": "Unknown",
-          "skills": [
-            "python"
-          ],
-          "profileSkillHits": [
-            "data"
-          ],
-          "profileSkillsNotInJd": [
-            "JavaScript",
-            "TypeScript",
-            "React",
-            "Next.js",
-            "CSS",
-            "Tailwind",
-            "Accessibility",
-            "Analytics",
-            "API",
-            "Figma",
-            "Performance Optimization",
-            "Design Systems"
-          ],
-          "jdSkillsMissingFromProfile": [
-            "python"
-          ],
-          "requiresUnknownLanguage": false,
-          "rareHighValueSkills": [],
-          "locationHits": [],
-          "avoidHits": []
-        },
-        "dimensions": {
-          "profileMatch": 14,
-          "atsCoverage": 4,
-          "roleFit": 68,
-          "seniorityFit": 82,
-          "locationFit": 58,
-          "sourceQuality": 78,
-          "freshness": 95,
-          "compensationSignal": 52,
-          "growthSignal": 84,
-          "applicationEffort": 86,
-          "riskPenalty": 0
-        }
-      }
-    },
-    {
       "source": "NVIDIA Workday",
       "sourceType": "adapter:workday",
       "title": "Senior Mixed Signal Design Verification Engineer",
@@ -12040,7 +11653,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "Full time",
       "firstSeenAt": "2026-05-15T11:59:22.604Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -12065,7 +11678,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "D",
       "recommendation": "略過",
       "status": "值得投遞",
-      "evaluatedAt": "2026-05-16T23:18:52.976Z",
+      "evaluatedAt": "2026-05-17T23:21:24.468Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -12152,7 +11765,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "Full time",
       "firstSeenAt": "2026-05-15T11:59:22.604Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -12177,7 +11790,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "D",
       "recommendation": "略過",
       "status": "值得投遞",
-      "evaluatedAt": "2026-05-16T23:18:53.000Z",
+      "evaluatedAt": "2026-05-17T23:21:24.489Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -12273,7 +11886,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "Full time",
       "firstSeenAt": "2026-05-15T12:00:32.241Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -12297,7 +11910,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "D",
       "recommendation": "略過",
       "status": "值得投遞",
-      "evaluatedAt": "2026-05-16T23:18:53.204Z",
+      "evaluatedAt": "2026-05-17T23:21:24.661Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -12388,7 +12001,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "2026-10-30",
       "employmentType": "FULL_TIME",
       "firstSeenAt": "2026-05-15T04:51:08.174Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -12408,7 +12021,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "D",
       "recommendation": "略過",
       "status": "值得投遞",
-      "evaluatedAt": "2026-05-16T23:18:53.276Z",
+      "evaluatedAt": "2026-05-17T23:21:24.727Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -12501,7 +12114,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "2026-10-17",
       "employmentType": "FULL_TIME",
       "firstSeenAt": "2026-05-15T13:24:47.248Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -12521,7 +12134,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "D",
       "recommendation": "略過",
       "status": "觀望",
-      "evaluatedAt": "2026-05-16T23:18:53.305Z",
+      "evaluatedAt": "2026-05-17T23:21:24.755Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -12659,20 +12272,20 @@ window.CV_CAREER_OPS_JOBS = {
     {
       "source": "Source flex job board",
       "sourceType": "json-ld",
-      "title": "Senior Backend Engineer - Ruby on Rails",
+      "title": "QA Engineer, Money Forward Cloud, Fukuoka",
       "company": "Money Forward",
-      "url": "https://www.tokyodev.com/companies/moneyforward/jobs/senior-backend-engineer-ruby-on-rails",
+      "url": "https://www.tokyodev.com/companies/moneyforward/jobs/qa-engineer-money-forward-cloud-fukuoka",
       "location": "Minato-ku, Tokyo, JP",
-      "description": "As a Backend Engineer, you will lead the development of “Money Forward Business Card” a cashless platform that promotes cashless transactions through a variety of payment methods, including card and wallet payments, and streamlines back-office operations.\n\n As the scale of the product expands in the future, it will be necessary to provide new functions quickly to meet user needs while at the same time maintaining stable operations and high service quality.\n\n To achieve this, not only development speed but also application design and team development methods are important.\n\n Therefore, we are looking for someone knowledgeable and experienced in web application construction and development methods.\n\n Technology Stack\n\n Backend: Ruby on Rails, Golang, Node.js, GraphQL\n\n Frontend: React, Typescript, Next.js, Redux, Apollo Client, Jest\n\n iOS: Swift, SwiftUI, CoreData, Apollo, ReactorKit, Composable Architecture, Bitrise\n\n Android: Java/Kotlin, Android Jetpack (Camera, DataBinding, Navigation etc.), LiveData/ViewModel, Dagger/Hilt, OkHttp3, Retrofit2, Apollo Android\n\n Database：MySQL(Aurora)\n\n Infra, Middleware：AWS(ALB, EC2, ECS, RDS, S3, SQS, ElastiCache, EKS等), sendgrid, kinsta, GCP (BigQuery, Firebase, GKE), nginx, squid, memcached, kafka, elasticsearch, Fluentd, envoy, Puma,Docker, Redis, Terraform\n\n Responsibilities\n\n Develop products and their functions with Ruby.\n\n Understand business requirements and design high-level architecture.\n\n Create system requirements that include functional and non-functional requirements.\n\n Write and test codes.\n\n Review codes.\n\n Educate team members, like hands-on coding.\n\n Collaborate with team members, Engineering Manager, Product Manager, and other stakeholders.\n\n Promote globalization of the team.\n\n Requirements\n\n Computer Science / Engineering Bachelor’s degree or related technical field.\n\n 3+ years of software development experience.\n\n Experience with Ruby on Rails\n\n Deep understanding of web service development.\n\n Successful track record of developing quality software products and shipping production-ready software.\n\n Experience with working in an Agile/Scrum team.\n\n Team player.\n\n Strong interpersonal skills.\n\n Experience in AI development or development using AI tools\n\n English: Business level (TOEIC 700+ equivalent) — Capable of participating in meetings and\n\n Japanese: JLPT N5 or higher",
-      "datePosted": "2026-04-03T10:16:06.857+09:00",
+      "description": "At the Money Forward Fukuoka development base, we are developing various services, including the business-oriented cloud service “Money Forward Cloud,” to solve a wide range of financial issues.\n\n As we continue to add new products and features, rapid development and quality assurance to satisfy our customers have become urgent needs.\n\n While speed is being ensured through Agile development, quality assurance in short cycles is still a work in progress, and we are continuously improving through trial and error.\n\n As the number of product users increases and the organization expands, we are seeking someone who can drive product quality improvement as a QA engineer.\n\n UI Turn Support Campaign Ongoing\n\n Money Forward is currently running a campaign to support relocation to our Fukuoka development base! We are offering 500,000 yen to assist with relocation expenses to engineers who join us mid-career and are currently living in Japan (conditions apply).\n\n Technology Stack\n\n Web Server-Side: Rails, Golang, Node.js, GraphQL\n\n Web Frontend: React, TypeScript, Next.js, Redux, Apollo Client, webpack, Jest\n\n iOS: Swift, SwiftUI, CoreData, Apollo, ReactorKit, Composable Architecture, Bitrise\n\n Android: Java/Kotlin, Android Jetpack (Camera, DataBinding, Navigation, etc.), LiveData/ViewModel, Dagger/Hilt, OkHttp3, Retrofit2, Apollo Android\n\n Database: MySQL (Aurora)\n\n Infrastructure & Middleware:\n\n AWS (ALB, EC2, ECS, RDS, S3, SQS, ElastiCache, EKS…)\n\n SendGrid, Kinsta\n\n GCP (BigQuery, Firebase, GKE)\n\n nginx, Squid, Memcached, Kafka, Logstash, Filebeat, Maxwell, Kibana, Elasticsearch, Fluentd, Envoy, Puma, HAProxy, Docker, Redis, Terraform\n\n Tools Used\n\n Business Platform: Marketo, Salesforce, HubSpot\n\n Repository Management: GitHub\n\n CI/CD: CircleCI, Bitrise, ArgoCD, CodeBuild, GitHub Actions\n\n Development Environment: Vagrant, Docker, Terraform Enterprise\n\n Monitoring: DataDog, Rollbar, Bugsnag, Sentry, New Relic\n\n Communication: Slack\n\n Ticket Management: Jira, Asana, Trello, Backlog\n\n Security & Automation: OWASP ZAP, Burp Suite, Sider (Brakeman), Snyk, VAddy, Dockle, Trivy\n\n Responsibilities\n You will be responsible for a wide range of tasks, including building and executing test strategies in the ERP domain of the back-office SaaS “Money Forward Cloud,” as well as project management operations.\n\n Specific duties include:\n\n Formulating test plans to meet customer requirements and product goals\n\n Quality analysis, quality improvement, and defect analysis\n\n Improvement of test processes\n\n Improvement of development processes\n\n Improvement of operational efficiency\n\n Promotion of test automation (strategy formulation, implementation, and improvement)\n\n Requirements\n\n Over 3 years of experience as a QA engineer\n\n ISTQB or JSTQB Foundation Level certification, or equivalent knowledge\n\n Experience in formulating and executing test strategies with a focus on QCD and the test pyramid\n\n Proactive attitude towards quality improvement\n\n Ability to question existing processes and methods, actively identify and propose solutions to issues, and lead stakeholders such as PdM/Eng. towards improvement and resolution\n\n Basic business level English (equivalent to TOEIC 700 or above)\n\n Nice to haves\n While not specifically required, tell us if you have any of the following.\n\n QA experience in a business company\n\n Experience in quality planning, quality analysis, and quality improvement\n\n Experience in improving development processes\n\n JCSQE Software Quality Engineer Certification at the basic or intermediate level or higher\n\n JSTQB Certified Tester Advanced Level or higher\n\n Experience using various testing tools\n\n Experience in automating UI tests or API tests\n\n Technical knowledge in the development of web or smartphone applications, and experience as an engineer\n\n Experience in building/maintaining CI environments\n\n Ability to analyze logs and data to identify issues\n\n Practical experience in software development, including reading and writing source code, with some knowledge or experience in software development (approximately 2-3 years)\n\n Japanese proficiency is not required but a willingness to learn is preferred.\n\n English is primarily used in our development environment. However, there are a few situations and tasks where communicating in Japanese is necessary. We would like to encourage individuals who are currently learning Japanese or have a strong desire to learn to join our team.",
+      "datePosted": "2026-02-04T16:55:36.412+09:00",
       "validThrough": "",
       "employmentType": "FULL_TIME",
       "firstSeenAt": "2026-05-16T23:18:51.813Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
-      "isNew": true,
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
+      "isNew": false,
       "isExpired": false,
       "expiredAt": "",
-      "jobKey": "url:https://www.tokyodev.com/companies/moneyforward/jobs/senior-backend-engineer-ruby-on-rails",
+      "jobKey": "url:https://www.tokyodev.com/companies/moneyforward/jobs/qa-engineer-money-forward-cloud-fukuoka",
       "sourceMarket": "jp",
       "sourceIndustry": "",
       "sourceStrategy": "flex-job-board",
@@ -12687,19 +12300,19 @@ window.CV_CAREER_OPS_JOBS = {
       "score": 53,
       "grade": "D",
       "recommendation": "略過",
-      "status": "觀望",
-      "evaluatedAt": "2026-05-16T23:18:53.365Z",
+      "status": "值得投遞",
+      "evaluatedAt": "2026-05-17T23:21:24.831Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
           "grade": "D",
           "score": 53,
           "recommendation": "略過",
-          "summary": "以 11 個維度比對，命中 7 個履歷技能，市場技能命中 15 個。"
+          "summary": "以 11 個維度比對，命中 9 個履歷技能，市場技能命中 16 個。"
         },
         "decision_factors": [
           "職類：Frontend；資歷：Senior+；模式：Unknown",
-          "履歷技能命中：TypeScript、React、Next.js、engineer、product、graphql、node.js",
+          "履歷技能命中：TypeScript、React、Next.js、API、engineer、product、data、graphql",
           "未偵測到明顯稀有技能訊號"
         ],
         "ats_keywords": {
@@ -12707,8 +12320,10 @@ window.CV_CAREER_OPS_JOBS = {
             "TypeScript",
             "React",
             "Next.js",
+            "API",
             "engineer",
             "product",
+            "data",
             "graphql",
             "node.js"
           ],
@@ -12754,14 +12369,17 @@ window.CV_CAREER_OPS_JOBS = {
             "docker",
             "terraform",
             "graphql",
+            "api",
             "operations"
           ],
           "profileSkillHits": [
             "TypeScript",
             "React",
             "Next.js",
+            "API",
             "engineer",
             "product",
+            "data",
             "graphql",
             "node.js"
           ],
@@ -12771,13 +12389,13 @@ window.CV_CAREER_OPS_JOBS = {
             "Tailwind",
             "Accessibility",
             "Analytics",
-            "API",
             "Figma",
             "Performance Optimization",
             "Design Systems",
             "remote",
             "dashboard",
-            "design system"
+            "design system",
+            "dashboards."
           ],
           "jdSkillsMissingFromProfile": [
             "java",
@@ -12797,13 +12415,13 @@ window.CV_CAREER_OPS_JOBS = {
           "avoidHits": []
         },
         "dimensions": {
-          "profileMatch": 98,
-          "atsCoverage": 27,
+          "profileMatch": 100,
+          "atsCoverage": 35,
           "roleFit": 68,
           "seniorityFit": 70,
           "locationFit": 58,
           "sourceQuality": 78,
-          "freshness": 95,
+          "freshness": 76,
           "compensationSignal": 52,
           "growthSignal": 84,
           "applicationEffort": 86,
@@ -12823,7 +12441,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "FULL_TIME",
       "firstSeenAt": "2026-05-15T13:25:09.242Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -12843,7 +12461,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "D",
       "recommendation": "略過",
       "status": "觀望",
-      "evaluatedAt": "2026-05-16T23:18:53.408Z",
+      "evaluatedAt": "2026-05-17T23:21:24.851Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -12989,7 +12607,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "Full time",
       "firstSeenAt": "2026-05-15T11:59:22.604Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -13014,7 +12632,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "D",
       "recommendation": "略過",
       "status": "值得投遞",
-      "evaluatedAt": "2026-05-16T23:18:52.991Z",
+      "evaluatedAt": "2026-05-17T23:21:24.481Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -13111,7 +12729,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "Full time",
       "firstSeenAt": "2026-05-15T06:25:26.345Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -13135,7 +12753,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "D",
       "recommendation": "略過",
       "status": "值得投遞",
-      "evaluatedAt": "2026-05-16T23:18:53.046Z",
+      "evaluatedAt": "2026-05-17T23:21:24.530Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -13211,6 +12829,119 @@ window.CV_CAREER_OPS_JOBS = {
     {
       "source": "Source flex job board",
       "sourceType": "json-ld",
+      "title": "Research Scientist (Robotics)",
+      "company": "AI Robot Association",
+      "url": "https://www.tokyodev.com/companies/ai-robot-association/jobs/research-scientist-robotics",
+      "location": "Bunkyo-ku, Tokyo, JP",
+      "description": "For researchers, this means an opportunity to:\n\n Work on fundamental challenges in robotics and AI: multimodal learning, tactile-rich manipulation, sim-to-real transfer, and large-scale benchmarking.\n\n Access state-of-the-art infrastructure: hundreds of humanoid robots, GPU clusters, high-fidelity simulators, and a global-scale evaluation pipeline.\n\n Collaborate with leading experts across academia and industry, and publish results that will shape the next decade of robotics.\n\n Contribute to an initiative that will redefine the future of embodied AI—with all results made open to the world.\n\n As we prepare for our official launch on October 1, 2025, we are assembling a world-class team ready to pioneer the next era of robotics.\n\n We invite ambitious researchers and engineers to join us in this bold challenge to rewrite the history of robotics.\n\n Responsibilities\n\n Designing and building scalable data collection systems that operate across hundreds of humanoid and mobile robots.\n\n Developing semi-autonomous teleoperation systems that ensure low latency, high controllability, and minimal operator workload.\n\n Creating automated pipelines to deploy trained models and rigorously evaluate them in both simulation and real-world robotic platforms.\n\n Working closely with the Vision-Language-Action (VLA) team to seamlessly integrate and deploy cutting-edge models onto physical robots.\n\n Requirements\n\n Ph.D. in Robotics, Mechanical Engineering, Computer Science, or a related field, or M.S. with 3+ years of equivalent industry or research experience.\n\n Extensive hands-on experience with physical robotic platforms (e.g., mobile robots, manipulators such as UR5, Franka Emika, HSR, or humanoids like Spot).\n\n Demonstrated ability to control real robots using ROS / ROS2, including full-stack integration and deployment.\n\n Solid understanding and implementation experience in teleoperation, AR/VR interfaces, and leader–follower architectures.\n\n Strong programming proficiency in C++ and Python, with ability to contribute production-level code and perform system-level integration.\n\n Proven ability to work both independently and collaboratively in multidisciplinary research and engineering teams.\n\n Note:\n\n Candidates focused solely on theoretical research (e.g., reinforcement learning or explainable AI) without practical robotics experience will not be considered.\n\n However, candidates do not necessarily need to meet every single qualification to be considered for this role.\n\n Nice to haves\n While not specifically required, tell us if you have any of the following.\n\n Publication record in top-tier robotics conferences or journals (RSS, CoRL, ICRA, IROS, TRO, IJRR).\n\n Publications limited to CVPR, ICCV, or NeurIPS could be considered AI-centric and scored lower for this position.\n\n Experience implementing advanced control strategies on hardware (impedance control, force/torque control, admittance control, or model predictive control).\n\n Practical experience with tactile sensing or contact-rich manipulation.\n\n Experience leading or contributing to large-scale robot data collection or fleet management systems.\n\n Familiarity with robotic simulators (Isaac Sim, MuJoCo, or PyBullet) for training and evaluation.\n\n Experience integrating Sim2Real transfer or Vision–Language–Action (VLA) models onto real robotic systems.",
+      "datePosted": "2025-12-24T15:11:03.669+09:00",
+      "validThrough": "",
+      "employmentType": "FULL_TIME",
+      "firstSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
+      "isNew": false,
+      "isExpired": false,
+      "expiredAt": "",
+      "jobKey": "url:https://www.tokyodev.com/companies/ai-robot-association/jobs/research-scientist-robotics",
+      "sourceMarket": "jp",
+      "sourceIndustry": "",
+      "sourceStrategy": "flex-job-board",
+      "sourceTags": [
+        "flex-job-board"
+      ],
+      "sourceQuality": {
+        "score": 55,
+        "tier": "medium",
+        "reasons": [
+          "landing-or-search-title"
+        ]
+      },
+      "score": 52,
+      "grade": "D",
+      "recommendation": "略過",
+      "status": "值得投遞",
+      "evaluatedAt": "2026-05-17T23:21:24.865Z",
+      "evaluation": {
+        "source": "career-ops-intelligence",
+        "overall": {
+          "grade": "D",
+          "score": 52,
+          "recommendation": "略過",
+          "summary": "以 11 個維度比對，命中 1 個履歷技能，市場技能命中 1 個。"
+        },
+        "decision_factors": [
+          "職類：Backend；資歷：Mid；模式：Unknown",
+          "履歷技能命中：data",
+          "未偵測到明顯稀有技能訊號"
+        ],
+        "ats_keywords": {
+          "found": [
+            "data"
+          ],
+          "missing": [
+            "python"
+          ]
+        },
+        "risks": [],
+        "next_actions": [
+          "先與高分職缺比較，不急著投遞",
+          "補齊 JD 或標記喜歡 / 不喜歡以改善後續排序"
+        ]
+      },
+      "intelligence": {
+        "score": 52,
+        "grade": "D",
+        "recommendation": "略過",
+        "features": {
+          "roleFamily": "Backend",
+          "seniority": "Mid",
+          "workMode": "Unknown",
+          "skills": [
+            "python"
+          ],
+          "profileSkillHits": [
+            "data"
+          ],
+          "profileSkillsNotInJd": [
+            "JavaScript",
+            "TypeScript",
+            "React",
+            "Next.js",
+            "CSS",
+            "Tailwind",
+            "Accessibility",
+            "Analytics",
+            "API",
+            "Figma",
+            "Performance Optimization",
+            "Design Systems"
+          ],
+          "jdSkillsMissingFromProfile": [
+            "python"
+          ],
+          "requiresUnknownLanguage": false,
+          "rareHighValueSkills": [],
+          "locationHits": [],
+          "avoidHits": []
+        },
+        "dimensions": {
+          "profileMatch": 14,
+          "atsCoverage": 4,
+          "roleFit": 68,
+          "seniorityFit": 82,
+          "locationFit": 58,
+          "sourceQuality": 78,
+          "freshness": 76,
+          "compensationSignal": 52,
+          "growthSignal": 84,
+          "applicationEffort": 86,
+          "riskPenalty": 0
+        }
+      }
+    },
+    {
+      "source": "Source flex job board",
+      "sourceType": "json-ld",
       "title": "Research Scientist (VLAs)",
       "company": "AI Robot Association",
       "url": "https://www.tokyodev.com/companies/ai-robot-association/jobs/research-scientist-vlas",
@@ -13220,7 +12951,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "FULL_TIME",
       "firstSeenAt": "2026-05-15T13:25:09.242Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -13242,7 +12973,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "D",
       "recommendation": "略過",
       "status": "值得投遞",
-      "evaluatedAt": "2026-05-16T23:18:53.425Z",
+      "evaluatedAt": "2026-05-17T23:21:24.867Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -13342,7 +13073,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "Full time",
       "firstSeenAt": "2026-05-15T11:59:22.604Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -13367,7 +13098,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "D",
       "recommendation": "略過",
       "status": "觀望",
-      "evaluatedAt": "2026-05-16T23:18:52.996Z",
+      "evaluatedAt": "2026-05-17T23:21:24.486Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -13461,7 +13192,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "Full time",
       "firstSeenAt": "2026-05-15T11:59:22.604Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -13486,7 +13217,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "D",
       "recommendation": "略過",
       "status": "觀望",
-      "evaluatedAt": "2026-05-16T23:18:53.002Z",
+      "evaluatedAt": "2026-05-17T23:21:24.491Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -13574,20 +13305,20 @@ window.CV_CAREER_OPS_JOBS = {
     {
       "source": "Source flex job board",
       "sourceType": "json-ld",
-      "title": "Information Systems Engineer, Global IT Division, Tokyo",
+      "title": "Senior Backend Engineer - Ruby on Rails",
       "company": "Money Forward",
-      "url": "https://www.tokyodev.com/companies/moneyforward/jobs/information-systems-engineer-global-it-division-tokyo",
+      "url": "https://www.tokyodev.com/companies/moneyforward/jobs/senior-backend-engineer-ruby-on-rails",
       "location": "Minato-ku, Tokyo, JP",
-      "description": "Money Forward is continuing to grow with the aim of becoming a global Big Tech company. In addition, M&A, joint venture establishment, and spin-outs are active. We are looking for someone who can contribute to improving employee convenience, operational efficiency, and strengthening governance by utilizing engineering in employee ID and information system management operations to support Money Forward’s non-linear growth with information systems.\n\n Job satisfaction\n\n You will support the ID lifecycle, including HR data linkage, in the company’s foundational area of employee IDs, and strengthen operations through external service linkage and in-house development of peripheral tools.\n\n You will gain experience in continuously reducing manual work, exception handling, and reliance on specific individuals through linkage, automation, and visualization, transitioning from “human-centric operations” to “system-centric operations.”\n\n You will be able to work on improvement themes while interacting with various SaaS across the entire company, and you will easily feel a sense of accomplishment as user feedback and appreciation are received closely.\n\n Depending on your skills, you can gradually take on challenges in strengthening governance and larger improvements and projects, using linkage, automation, and visualization initiatives as a stepping stone.\n\n Expected role\n\n This role is responsible for transitioning ID/SaaS operations from “human-centric” to “system-centric” through in-house development of peripheral tools and integration with external services, thereby simultaneously enhancing convenience, efficiency, and control. We expect you to translate operational challenges into technically solvable forms and create a state where continuous improvement can be sustained.\n\n Reduce the reliance on individual expertise, manual tasks, and exception handling in operations, and elevate them to reproducible operations.\n\n Drive operational improvements and decision-making forward with data and visualization.\n\n Create robust, operable integrations and systems that are resilient to changes and failures.\n\n Tools Used\n\n Office Suite: Google Workspace\n\n Communication: Slack, Zoom\n\n Documentation: Notion\n\n Collaboration: Jira, Miro, Figma, etc.\n\n IdP: Entra ID (formerly Azure Active Directory)\n\n Public Cloud: AWS, GCP\n\n Repository Management: Github\n\n Responsibilities\n\n Integration and maintenance of employee ID management (ID lifecycle), including HR system integration\n\n Maintenance and improvement of integration processes (API/batch, etc.) related to reflecting new hires, departures, and transfers based on HR data\n\n Development of operations that assume exceptions and failures (retry, error notification, manual recovery procedures, log maintenance)\n\n Investigation and resolution of data inconsistencies, and adaptation to specification changes\n\n Collection, visualization, and reporting of SaaS usage\n\n Collection and formatting of data such as SaaS usage, license consumption, and activity (API/admin screen output/logs, etc.)\n\n Aggregation and visualization in a form that can be continuously operated (regular reports, dashboards, fixed-point observation)\n\n Implementation support for operational actions based on visualization results (extraction of inventory candidates, notifications, identification of reduction candidates, etc.)\n\n Improvement of ID integration and provisioning operations based on Entra ID\n\n Improvement of user/group management, provisioning operations, and exception handling (root cause analysis, recurrence prevention)\n\n Development of related operational procedures and decision criteria as needed\n\n Streamlining inquiry handling\n\n Organization of inquiry content, templating, and development and maintenance of FAQs/knowledge\n\n Creation of small tools/scripts as needed, and automation of initial triage and guidance (including in-house agents)\n\n Investigation and consideration of introducing SaaS-attached AI functions (as needed)\n\n Information gathering on additional functions, and organization of issues from a security/compliance perspective\n\n Coordination with relevant departments to incorporate into operational rules and usage guides\n\n Requirements\n\n Experience in implementing and operating external system integrations\n\n Experience handling REST API, Webhook, batch processing, job scheduling, and authentication (OAuth, etc.)\n\n Experience operating while adapting to specification changes and failures of integrated systems\n\n Fundamentals of reliability design for operations\n\n Experience handling any of the following in practice: retry, idempotency, timeout, rate limiting, error classification, monitoring/notification, and log design\n\n Data handling and formatting skills\n\n Experience handling extraction/aggregation with SQL, formatting CSV/JSON, and detecting differences in business operations\n\n Experience improving operations with small in-house tools/scripts\n　- Example: automation of aggregation, periodic report delivery, alerts, inventory candidate extraction, semi-automation of applications, etc.\n\n Ability to understand business operations, organize requirements, and implement them into operations\n\n Ability to design not just for “it works,” but also for exceptions, rework, and handover\n\n Japanese Language Requirements: Native/ JLPT N1\n\n English Language Requirements: Able to handle meetings and text communication in English immediately after joining the company.\n\n Nice to haves\n While not specifically required, tell us if you have any of the following.\n\n Basic understanding of Entra ID / SSO / Provisioning (SCIM)\n\n Basic knowledge of authentication and authorization (SSO, MFA, provisioning, etc.)\n\n Experience using cloud / IaC / CI/CD, etc. 　　　\n\n E.g., AWS, GitHub, GitHub Actions, Terraform\n\n Frontend experience (ability to create simple UIs and admin screens)\n\n Experience building visualization platforms (BI tools, etc.) and dashboards\n\n Experience using iPaaS/ETL (e.g., Workato, Zapier, Make, Power Automate, etc.) and data integration platforms\n\n Experience in AI development and/or experience in using AI tools to improve development processes.\n\n Money Forward recently announced our AI Strategy roadmap which focuses on improving AI-driven operational efficiencies, as well as integrating AI agents into our products to deliver better value to our users.",
-      "datePosted": "2026-05-15T10:28:24.888+09:00",
+      "description": "As a Backend Engineer, you will lead the development of “Money Forward Business Card” a cashless platform that promotes cashless transactions through a variety of payment methods, including card and wallet payments, and streamlines back-office operations.\n\n As the scale of the product expands in the future, it will be necessary to provide new functions quickly to meet user needs while at the same time maintaining stable operations and high service quality.\n\n To achieve this, not only development speed but also application design and team development methods are important.\n\n Therefore, we are looking for someone knowledgeable and experienced in web application construction and development methods.\n\n Technology Stack\n\n Backend: Ruby on Rails, Golang, Node.js, GraphQL\n\n Frontend: React, Typescript, Next.js, Redux, Apollo Client, Jest\n\n iOS: Swift, SwiftUI, CoreData, Apollo, ReactorKit, Composable Architecture, Bitrise\n\n Android: Java/Kotlin, Android Jetpack (Camera, DataBinding, Navigation etc.), LiveData/ViewModel, Dagger/Hilt, OkHttp3, Retrofit2, Apollo Android\n\n Database：MySQL(Aurora)\n\n Infra, Middleware：AWS(ALB, EC2, ECS, RDS, S3, SQS, ElastiCache, EKS等), sendgrid, kinsta, GCP (BigQuery, Firebase, GKE), nginx, squid, memcached, kafka, elasticsearch, Fluentd, envoy, Puma,Docker, Redis, Terraform\n\n Responsibilities\n\n Develop products and their functions with Ruby.\n\n Understand business requirements and design high-level architecture.\n\n Create system requirements that include functional and non-functional requirements.\n\n Write and test codes.\n\n Review codes.\n\n Educate team members, like hands-on coding.\n\n Collaborate with team members, Engineering Manager, Product Manager, and other stakeholders.\n\n Promote globalization of the team.\n\n Requirements\n\n Computer Science / Engineering Bachelor’s degree or related technical field.\n\n 3+ years of software development experience.\n\n Experience with Ruby on Rails\n\n Deep understanding of web service development.\n\n Successful track record of developing quality software products and shipping production-ready software.\n\n Experience with working in an Agile/Scrum team.\n\n Team player.\n\n Strong interpersonal skills.\n\n Experience in AI development or development using AI tools\n\n English: Business level (TOEIC 700+ equivalent) — Capable of participating in meetings and\n\n Japanese: JLPT N5 or higher",
+      "datePosted": "2026-04-03T10:16:06.857+09:00",
       "validThrough": "",
       "employmentType": "FULL_TIME",
       "firstSeenAt": "2026-05-16T23:18:51.813Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
-      "isNew": true,
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
+      "isNew": false,
       "isExpired": false,
       "expiredAt": "",
-      "jobKey": "url:https://www.tokyodev.com/companies/moneyforward/jobs/information-systems-engineer-global-it-division-tokyo",
+      "jobKey": "url:https://www.tokyodev.com/companies/moneyforward/jobs/senior-backend-engineer-ruby-on-rails",
       "sourceMarket": "jp",
       "sourceIndustry": "",
       "sourceStrategy": "flex-job-board",
@@ -13602,40 +13333,41 @@ window.CV_CAREER_OPS_JOBS = {
       "score": 51,
       "grade": "D",
       "recommendation": "略過",
-      "status": "值得投遞",
-      "evaluatedAt": "2026-05-16T23:18:53.347Z",
+      "status": "觀望",
+      "evaluatedAt": "2026-05-17T23:21:24.812Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
           "grade": "D",
           "score": 51,
           "recommendation": "略過",
-          "summary": "以 11 個維度比對，命中 6 個履歷技能，市場技能命中 12 個。"
+          "summary": "以 11 個維度比對，命中 7 個履歷技能，市場技能命中 15 個。"
         },
         "decision_factors": [
-          "職類：Frontend；資歷：Mid；模式：Unknown",
-          "履歷技能命中：API、Figma、engineer、data、visualization、dashboards",
+          "職類：Frontend；資歷：Senior+；模式：Unknown",
+          "履歷技能命中：TypeScript、React、Next.js、engineer、product、graphql、node.js",
           "未偵測到明顯稀有技能訊號"
         ],
         "ats_keywords": {
           "found": [
-            "API",
-            "Figma",
+            "TypeScript",
+            "React",
+            "Next.js",
             "engineer",
-            "data",
-            "visualization",
-            "dashboards"
+            "product",
+            "graphql",
+            "node.js"
           ],
           "missing": [
-            "sql",
+            "java",
+            "swift",
+            "kotlin",
+            "mysql",
+            "firebase",
             "aws",
             "gcp",
-            "azure",
+            "docker",
             "terraform",
-            "rest",
-            "etl",
-            "agents",
-            "growth",
             "operations"
           ]
         },
@@ -13651,54 +13383,58 @@ window.CV_CAREER_OPS_JOBS = {
         "recommendation": "略過",
         "features": {
           "roleFamily": "Frontend",
-          "seniority": "Mid",
+          "seniority": "Senior+",
           "workMode": "Unknown",
           "skills": [
-            "sql",
+            "typescript",
+            "react",
+            "next.js",
+            "node.js",
+            "java",
+            "swift",
+            "kotlin",
+            "mysql",
+            "firebase",
             "aws",
             "gcp",
-            "azure",
+            "docker",
             "terraform",
-            "rest",
-            "api",
-            "figma",
-            "etl",
-            "agents",
-            "growth",
+            "graphql",
             "operations"
           ],
           "profileSkillHits": [
-            "API",
-            "Figma",
-            "engineer",
-            "data",
-            "visualization",
-            "dashboards"
-          ],
-          "profileSkillsNotInJd": [
-            "JavaScript",
             "TypeScript",
             "React",
             "Next.js",
+            "engineer",
+            "product",
+            "graphql",
+            "node.js"
+          ],
+          "profileSkillsNotInJd": [
+            "JavaScript",
             "CSS",
             "Tailwind",
             "Accessibility",
             "Analytics",
+            "API",
+            "Figma",
             "Performance Optimization",
             "Design Systems",
             "remote",
-            "dashboard"
+            "dashboard",
+            "design system"
           ],
           "jdSkillsMissingFromProfile": [
-            "sql",
+            "java",
+            "swift",
+            "kotlin",
+            "mysql",
+            "firebase",
             "aws",
             "gcp",
-            "azure",
+            "docker",
             "terraform",
-            "rest",
-            "etl",
-            "agents",
-            "growth",
             "operations"
           ],
           "requiresUnknownLanguage": true,
@@ -13707,13 +13443,13 @@ window.CV_CAREER_OPS_JOBS = {
           "avoidHits": []
         },
         "dimensions": {
-          "profileMatch": 84,
-          "atsCoverage": 23,
+          "profileMatch": 98,
+          "atsCoverage": 27,
           "roleFit": 68,
-          "seniorityFit": 82,
+          "seniorityFit": 70,
           "locationFit": 58,
           "sourceQuality": 78,
-          "freshness": 95,
+          "freshness": 76,
           "compensationSignal": 52,
           "growthSignal": 84,
           "applicationEffort": 86,
@@ -13733,7 +13469,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "FULL_TIME",
       "firstSeenAt": "2026-05-15T04:51:38.896Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -13753,7 +13489,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "D",
       "recommendation": "略過",
       "status": "觀望",
-      "evaluatedAt": "2026-05-16T23:18:53.368Z",
+      "evaluatedAt": "2026-05-17T23:21:24.814Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -13891,7 +13627,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "FULL_TIME",
       "firstSeenAt": "2026-05-15T04:51:38.896Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -13911,7 +13647,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "D",
       "recommendation": "略過",
       "status": "值得投遞",
-      "evaluatedAt": "2026-05-16T23:18:53.427Z",
+      "evaluatedAt": "2026-05-17T23:21:24.869Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -14031,7 +13767,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "Full time",
       "firstSeenAt": "2026-05-15T11:59:22.604Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -14056,7 +13792,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "D",
       "recommendation": "略過",
       "status": "值得投遞",
-      "evaluatedAt": "2026-05-16T23:18:52.974Z",
+      "evaluatedAt": "2026-05-17T23:21:24.466Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -14147,10 +13883,10 @@ window.CV_CAREER_OPS_JOBS = {
       "location": "TW",
       "description": "Established in 1987 and headquartered in Taiwan, TSMC pioneered the pure-play foundry business model with an exclusive focus on manufacturing its customers’ products. As of 2024, TSMC serves more than 500 customers and manufactures over 11,000 products for high-performance computing, smartphones, the Internet of Things (IoT), automotive, and digital consumer electronics. It is the world’s largest provider of logic ICs, with an annual capacity of 16 million 12-inch equivalent wafers. TSMC operates fabs in Taiwan as well as manufacturing subsidiaries in Washington State, Japan and China, and the Company began construction on a specialty technology fab in Dresden, Germany, in 2024. In Arizona, TSMC is building three fabs, with the first starting 4nm production in 2025, the second by 2028, and the third by the end of the decade.\n\nRole:\n\n tsmc is seeking a Front-End/Mobile Software Engineer to join our team and help build the next generation of web solutions, mobile applications to support tsmc world-class super manufacture, engineering and business systems enabling.\n\n Responsibilities:\n\n 1. Implement the features and web/mobile user interfaces of tsmc software products\n\n 2. Develop state of the art code\n\n 3. Continue refactoring existing applications\n\n 4. Contribute to write tests to ensure software quality\n\n 5. Apply software design principles to ensure software quality\n\n 6. Ensure sustainability and performance of software applications\n\n 7. Willing to learn new IT technology",
       "datePosted": "2022-01-06T03:41:12.147800Z",
-      "validThrough": "2026-08-14T08:08:50.156Z",
+      "validThrough": "2026-08-17T09:09:12.055Z",
       "employmentType": "FULL_TIME",
       "firstSeenAt": "2026-05-15T03:52:21.093Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -14170,7 +13906,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "D",
       "recommendation": "略過",
       "status": "值得投遞",
-      "evaluatedAt": "2026-05-16T23:18:53.217Z",
+      "evaluatedAt": "2026-05-17T23:21:24.673Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -14255,7 +13991,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "2026-11-14",
       "employmentType": "FULL_TIME",
       "firstSeenAt": "2026-05-15T04:51:08.174Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -14275,7 +14011,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "D",
       "recommendation": "略過",
       "status": "值得投遞",
-      "evaluatedAt": "2026-05-16T23:18:53.235Z",
+      "evaluatedAt": "2026-05-17T23:21:24.690Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -14405,7 +14141,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "2026-10-27",
       "employmentType": "FULL_TIME",
       "firstSeenAt": "2026-05-15T04:51:08.174Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -14425,7 +14161,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "D",
       "recommendation": "略過",
       "status": "值得投遞",
-      "evaluatedAt": "2026-05-16T23:18:53.279Z",
+      "evaluatedAt": "2026-05-17T23:21:24.729Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -14525,16 +14261,166 @@ window.CV_CAREER_OPS_JOBS = {
     {
       "source": "Source flex job board",
       "sourceType": "json-ld",
+      "title": "Information Systems Engineer, Global IT Division, Tokyo",
+      "company": "Money Forward",
+      "url": "https://www.tokyodev.com/companies/moneyforward/jobs/information-systems-engineer-global-it-division-tokyo",
+      "location": "Minato-ku, Tokyo, JP",
+      "description": "Money Forward is continuing to grow with the aim of becoming a global Big Tech company. In addition, M&A, joint venture establishment, and spin-outs are active. We are looking for someone who can contribute to improving employee convenience, operational efficiency, and strengthening governance by utilizing engineering in employee ID and information system management operations to support Money Forward’s non-linear growth with information systems.\n\n Job satisfaction\n\n You will support the ID lifecycle, including HR data linkage, in the company’s foundational area of employee IDs, and strengthen operations through external service linkage and in-house development of peripheral tools.\n\n You will gain experience in continuously reducing manual work, exception handling, and reliance on specific individuals through linkage, automation, and visualization, transitioning from “human-centric operations” to “system-centric operations.”\n\n You will be able to work on improvement themes while interacting with various SaaS across the entire company, and you will easily feel a sense of accomplishment as user feedback and appreciation are received closely.\n\n Depending on your skills, you can gradually take on challenges in strengthening governance and larger improvements and projects, using linkage, automation, and visualization initiatives as a stepping stone.\n\n Expected role\n\n This role is responsible for transitioning ID/SaaS operations from “human-centric” to “system-centric” through in-house development of peripheral tools and integration with external services, thereby simultaneously enhancing convenience, efficiency, and control. We expect you to translate operational challenges into technically solvable forms and create a state where continuous improvement can be sustained.\n\n Reduce the reliance on individual expertise, manual tasks, and exception handling in operations, and elevate them to reproducible operations.\n\n Drive operational improvements and decision-making forward with data and visualization.\n\n Create robust, operable integrations and systems that are resilient to changes and failures.\n\n Tools Used\n\n Office Suite: Google Workspace\n\n Communication: Slack, Zoom\n\n Documentation: Notion\n\n Collaboration: Jira, Miro, Figma, etc.\n\n IdP: Entra ID (formerly Azure Active Directory)\n\n Public Cloud: AWS, GCP\n\n Repository Management: Github\n\n Responsibilities\n\n Integration and maintenance of employee ID management (ID lifecycle), including HR system integration\n\n Maintenance and improvement of integration processes (API/batch, etc.) related to reflecting new hires, departures, and transfers based on HR data\n\n Development of operations that assume exceptions and failures (retry, error notification, manual recovery procedures, log maintenance)\n\n Investigation and resolution of data inconsistencies, and adaptation to specification changes\n\n Collection, visualization, and reporting of SaaS usage\n\n Collection and formatting of data such as SaaS usage, license consumption, and activity (API/admin screen output/logs, etc.)\n\n Aggregation and visualization in a form that can be continuously operated (regular reports, dashboards, fixed-point observation)\n\n Implementation support for operational actions based on visualization results (extraction of inventory candidates, notifications, identification of reduction candidates, etc.)\n\n Improvement of ID integration and provisioning operations based on Entra ID\n\n Improvement of user/group management, provisioning operations, and exception handling (root cause analysis, recurrence prevention)\n\n Development of related operational procedures and decision criteria as needed\n\n Streamlining inquiry handling\n\n Organization of inquiry content, templating, and development and maintenance of FAQs/knowledge\n\n Creation of small tools/scripts as needed, and automation of initial triage and guidance (including in-house agents)\n\n Investigation and consideration of introducing SaaS-attached AI functions (as needed)\n\n Information gathering on additional functions, and organization of issues from a security/compliance perspective\n\n Coordination with relevant departments to incorporate into operational rules and usage guides\n\n Requirements\n\n Experience in implementing and operating external system integrations\n\n Experience handling REST API, Webhook, batch processing, job scheduling, and authentication (OAuth, etc.)\n\n Experience operating while adapting to specification changes and failures of integrated systems\n\n Fundamentals of reliability design for operations\n\n Experience handling any of the following in practice: retry, idempotency, timeout, rate limiting, error classification, monitoring/notification, and log design\n\n Data handling and formatting skills\n\n Experience handling extraction/aggregation with SQL, formatting CSV/JSON, and detecting differences in business operations\n\n Experience improving operations with small in-house tools/scripts\n　- Example: automation of aggregation, periodic report delivery, alerts, inventory candidate extraction, semi-automation of applications, etc.\n\n Ability to understand business operations, organize requirements, and implement them into operations\n\n Ability to design not just for “it works,” but also for exceptions, rework, and handover\n\n Japanese Language Requirements: Native/ JLPT N1\n\n English Language Requirements: Able to handle meetings and text communication in English immediately after joining the company.\n\n Nice to haves\n While not specifically required, tell us if you have any of the following.\n\n Basic understanding of Entra ID / SSO / Provisioning (SCIM)\n\n Basic knowledge of authentication and authorization (SSO, MFA, provisioning, etc.)\n\n Experience using cloud / IaC / CI/CD, etc. 　　　\n\n E.g., AWS, GitHub, GitHub Actions, Terraform\n\n Frontend experience (ability to create simple UIs and admin screens)\n\n Experience building visualization platforms (BI tools, etc.) and dashboards\n\n Experience using iPaaS/ETL (e.g., Workato, Zapier, Make, Power Automate, etc.) and data integration platforms\n\n Experience in AI development and/or experience in using AI tools to improve development processes.\n\n Money Forward recently announced our AI Strategy roadmap which focuses on improving AI-driven operational efficiencies, as well as integrating AI agents into our products to deliver better value to our users.",
+      "datePosted": "2026-05-15T10:28:24.888+09:00",
+      "validThrough": "",
+      "employmentType": "FULL_TIME",
+      "firstSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
+      "isNew": false,
+      "isExpired": false,
+      "expiredAt": "",
+      "jobKey": "url:https://www.tokyodev.com/companies/moneyforward/jobs/information-systems-engineer-global-it-division-tokyo",
+      "sourceMarket": "jp",
+      "sourceIndustry": "",
+      "sourceStrategy": "flex-job-board",
+      "sourceTags": [
+        "flex-job-board"
+      ],
+      "sourceQuality": {
+        "score": 100,
+        "tier": "high",
+        "reasons": []
+      },
+      "score": 49,
+      "grade": "D",
+      "recommendation": "略過",
+      "status": "值得投遞",
+      "evaluatedAt": "2026-05-17T23:21:24.795Z",
+      "evaluation": {
+        "source": "career-ops-intelligence",
+        "overall": {
+          "grade": "D",
+          "score": 49,
+          "recommendation": "略過",
+          "summary": "以 11 個維度比對，命中 6 個履歷技能，市場技能命中 12 個。"
+        },
+        "decision_factors": [
+          "職類：Frontend；資歷：Mid；模式：Unknown",
+          "履歷技能命中：API、Figma、engineer、data、visualization、dashboards",
+          "未偵測到明顯稀有技能訊號"
+        ],
+        "ats_keywords": {
+          "found": [
+            "API",
+            "Figma",
+            "engineer",
+            "data",
+            "visualization",
+            "dashboards"
+          ],
+          "missing": [
+            "sql",
+            "aws",
+            "gcp",
+            "azure",
+            "terraform",
+            "rest",
+            "etl",
+            "agents",
+            "growth",
+            "operations"
+          ]
+        },
+        "risks": [],
+        "next_actions": [
+          "先與高分職缺比較，不急著投遞",
+          "補齊 JD 或標記喜歡 / 不喜歡以改善後續排序"
+        ]
+      },
+      "intelligence": {
+        "score": 49,
+        "grade": "D",
+        "recommendation": "略過",
+        "features": {
+          "roleFamily": "Frontend",
+          "seniority": "Mid",
+          "workMode": "Unknown",
+          "skills": [
+            "sql",
+            "aws",
+            "gcp",
+            "azure",
+            "terraform",
+            "rest",
+            "api",
+            "figma",
+            "etl",
+            "agents",
+            "growth",
+            "operations"
+          ],
+          "profileSkillHits": [
+            "API",
+            "Figma",
+            "engineer",
+            "data",
+            "visualization",
+            "dashboards"
+          ],
+          "profileSkillsNotInJd": [
+            "JavaScript",
+            "TypeScript",
+            "React",
+            "Next.js",
+            "CSS",
+            "Tailwind",
+            "Accessibility",
+            "Analytics",
+            "Performance Optimization",
+            "Design Systems",
+            "remote",
+            "dashboard"
+          ],
+          "jdSkillsMissingFromProfile": [
+            "sql",
+            "aws",
+            "gcp",
+            "azure",
+            "terraform",
+            "rest",
+            "etl",
+            "agents",
+            "growth",
+            "operations"
+          ],
+          "requiresUnknownLanguage": true,
+          "rareHighValueSkills": [],
+          "locationHits": [],
+          "avoidHits": []
+        },
+        "dimensions": {
+          "profileMatch": 84,
+          "atsCoverage": 23,
+          "roleFit": 68,
+          "seniorityFit": 82,
+          "locationFit": 58,
+          "sourceQuality": 78,
+          "freshness": 76,
+          "compensationSignal": 52,
+          "growthSignal": 84,
+          "applicationEffort": 86,
+          "riskPenalty": 20
+        }
+      }
+    },
+    {
+      "source": "Source flex job board",
+      "sourceType": "json-ld",
       "title": "【全遠端兼職機會】Media Search Analyst （台灣職缺 / work from home / 在家工作 )",
       "company": "Telus Digital",
       "url": "https://www.cake.me/companies/telus-international/jobs/4743bc",
-      "location": "臺北市, 臺北市, TW",
+      "location": "台灣, 台灣, TW",
       "description": "想要在下班後增加收入嗎? 這份工作很適合你!\n\n只有你有電腦，任何時間你都可以自由安排工作，每個專案用時約20分鐘，依照工作難易度、用時長度，換算時薪報酬在7~8美金之間\n\n如果有興趣，歡迎直接到我們的招募網站投遞履歷吧!\n\n【歡迎按照以下步驟至官網投遞履歷，請留意務必使用電腦及Edge進行投遞及後續測驗】\n\n1.請使用 搜尋下列網址:\n\n https://www.telusinternational.ai/cmp/contributor/jobs/available/126334?utm_source=104&utm_medium=Ads&utm_campaign=SHTSean_APAC_Paid+Site_104_Ads_126334\n\n2.找到Media Search Analyst，並點選Apply申請，後續請依指示進行即可\n\n歡迎參考這篇貼文，裡面彙整了可能會有的問題：\nhttps://www.dcard.tw/f/job/p/255418190?cid=BE99D92E-EF2F-441F-B149-A7CE9C76D925\n\n----------------------------------------------------------------------------------------\n工作職責\n\n準備好告別枯燥的傳統9到5工作，迎接一個充滿動態和挑戰的工作環境，並且由你自己掌控工作時間嗎？這個職位讓你能夠靈活安排時間，並使用創新的網頁評估工具來完成各種有趣的工作任務。\n\n媒體搜尋分析師的一天：\n\n在這個角色中，你將進行對多樣化任務類別的全面評估，包括音樂、影片以及家庭智能音響等，涵蓋各種媒體領域。\n你將分析並評估App Store內容的搜尋結果，並利用線上工具進行研究，通過應用市場專業知識，結合提供的指引來評估查詢的準確性與意圖，進而判斷與任務相關資料在特定市場中的相關性與目的。\n\n加入我們，成為我們社群中的一份子，與我們一同顛覆數位媒體內容的未來！\n\n---\n\nTELUS國際人工智慧社群\n\n我們的全球人工智慧社群是一個充滿活力的網絡，擁有超過一百萬來自不同背景的貢獻者，這些貢獻者幫助我們的客戶收集、增強、訓練、翻譯和本地化內容，打造更優質的人工智慧模型。加入我們成長中的社群，並在支援全球最大品牌的機器學習模型中發揮影響力。\n\n---\n\n資格要求\n\n此職位不需要先前的專業經驗，但在參與此專案之前，你需要通過基本要求並進行標準的評估過程。這是一份長期的兼職工作，並且你的工作將在協議期間接受我們標準的品質保證檢查。\n\n基本要求\n\n- 必須具備完整的英語及繁體中文語言專業能力。\n- 近一年來居住在台灣，並且對台灣的當前及歷史商業、媒體、體育、新聞、社交媒體及文化事務有一定了解。\n- 熟悉當前應用程式、音樂和影片的流行趨勢，對網路研究有濃厚興趣。\n- 擁有與Apple ID相關聯的電子郵件地址，並具備使用Apple產品的經驗與知識。\n- 能夠靈活應對各類型的任務，包含地圖、新聞、音頻任務和相關性等。\n- 每日可穩定使用寬頻網路、電腦及相關軟體。\n- 能夠獨立工作，並能適應創新方法與流程，擁有極高的細節關注力及出色的溝通能力。\n- 優先考慮具有高中文憑或以上學歷的候選人，但我們也歡迎擁有卓越技能和才華的候選人。",
       "datePosted": "2025-03-16T10:02:04.821084Z",
-      "validThrough": "2026-08-15T16:32:22.063Z",
+      "validThrough": "2026-08-17T10:11:32.882Z",
       "employmentType": "PART_TIME",
       "firstSeenAt": "2026-05-15T03:52:21.093Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -14556,7 +14442,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "D",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:53.218Z",
+      "evaluatedAt": "2026-05-17T23:21:24.675Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -14628,125 +14514,6 @@ window.CV_CAREER_OPS_JOBS = {
     {
       "source": "Source flex job board",
       "sourceType": "json-ld",
-      "title": "Entra ID and ID Management specialist, Digital Bank, Tokyo",
-      "company": "Money Forward",
-      "url": "https://www.tokyodev.com/companies/moneyforward/jobs/entra-id-and-id-management-specialist-digital-bank-tokyo",
-      "location": "Minato-ku, Tokyo, JP",
-      "description": "We have partnered with Sumitomo Mitsui Financial Group, Inc. and Sumitomo Mitsui Banking Corporation to establish a new company in preparation for the launch of a new digital bank.\n\n We are currently seeking candidates for the position of Entra Id and ID Management specialist as part of this initiative.\n\n ※ This position involves employment with Money Forward, Inc., and a secondment to the new company (SMBC Money Forward Bank Preparatory Corporation). The evaluation system and employee benefits will follow the policies of Money Forward, Inc.\n\n In this role, you’ll be the “go to person” for all things EntraID and related technologies. Keep up with Microsoft’s latest technologies to maintain and improve our ID management system. Participate in projects such as the introduction of new SaaS and group join, and design, build, and operate Entra ID as needed.\n\n Tools Used\n\n Collaboration tools: Slack, Zoom, Jira, Confluence, Miro, etc.\n\n Entra ID (formerly Azure Active Directory)\n\n Github\n\n Terraform\n\n AWS\n\n Responsibilities\n\n Develop management policies and overall design for user principals, service principals, and dynamic groups.\n\n Design, implement, and operate Infrastructure as Code systems using Github and Terraform.\n\n Collaborate with our security specialists to implement security designs using CIS Controls and CIS Benchmarks.\n\n Implement ID management, group management, and SAML/SCIM.\n\n Drive the integration project of the company’s ID management system for group join.\n\n Requirements\n\n 3+ years experience in managing and operating Entra ID or Azure Active Directory.\n\n Understanding of Identity and Access Management principles and concepts\n\n Basic scripting skills.\n\n Understanding of authentication protocols such as SAML, SCIM, and OAuth.\n\n Experience working in an Agile project team.\n\n English: Business level (equivalent to TOEIC score of 700 or above)\n\n Note: Since the scope of work includes overseas locations, meetings and text communications will occur in both Japanese and English.\n\n Candidates who do not possess a qualification equivalent to a TOEIC score of 700 or above will be required to take a company-designated test during the selection process (generally expected after the first interview)\n\n Nice to haves\n While not specifically required, tell us if you have any of the following.\n\n Experience in managing and operating Azure, knowledge of ISMS.\n\n Knowledge and experience with Terraform.\n\n 3+ of experience of managing projects of various complexity with multiple stakeholders.\n\n Microsoft SC-300 Certification (Identity and Access Administrator Associate) or equivalent knowledge and experience.\n\n Experience in AI development and/or experience in using AI tools to improve development processes.\n\n Money Forward recently announced our AI Strategy roadmap which focuses on improving AI-driven operational efficiencies, as well as integrating AI agents into our products to deliver better value to our users.",
-      "datePosted": "2026-03-06T16:46:22.618+09:00",
-      "validThrough": "",
-      "employmentType": "FULL_TIME",
-      "firstSeenAt": "2026-05-16T23:18:51.813Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
-      "isNew": true,
-      "isExpired": false,
-      "expiredAt": "",
-      "jobKey": "url:https://www.tokyodev.com/companies/moneyforward/jobs/entra-id-and-id-management-specialist-digital-bank-tokyo",
-      "sourceMarket": "jp",
-      "sourceIndustry": "",
-      "sourceStrategy": "flex-job-board",
-      "sourceTags": [
-        "flex-job-board"
-      ],
-      "sourceQuality": {
-        "score": 100,
-        "tier": "high",
-        "reasons": []
-      },
-      "score": 48,
-      "grade": "D",
-      "recommendation": "略過",
-      "status": "值得投遞",
-      "evaluatedAt": "2026-05-16T23:18:53.374Z",
-      "evaluation": {
-        "source": "career-ops-intelligence",
-        "overall": {
-          "grade": "D",
-          "score": 48,
-          "recommendation": "略過",
-          "summary": "以 11 個維度比對，命中 0 個履歷技能，市場技能命中 5 個。"
-        },
-        "decision_factors": [
-          "職類：Backend；資歷：Junior；模式：Unknown",
-          "履歷技能命中偏低",
-          "未偵測到明顯稀有技能訊號"
-        ],
-        "ats_keywords": {
-          "found": [],
-          "missing": [
-            "go",
-            "aws",
-            "azure",
-            "terraform",
-            "agents"
-          ]
-        },
-        "risks": [],
-        "next_actions": [
-          "先與高分職缺比較，不急著投遞",
-          "補齊 JD 或標記喜歡 / 不喜歡以改善後續排序"
-        ]
-      },
-      "intelligence": {
-        "score": 48,
-        "grade": "D",
-        "recommendation": "略過",
-        "features": {
-          "roleFamily": "Backend",
-          "seniority": "Junior",
-          "workMode": "Unknown",
-          "skills": [
-            "go",
-            "aws",
-            "azure",
-            "terraform",
-            "agents"
-          ],
-          "profileSkillHits": [],
-          "profileSkillsNotInJd": [
-            "JavaScript",
-            "TypeScript",
-            "React",
-            "Next.js",
-            "CSS",
-            "Tailwind",
-            "Accessibility",
-            "Analytics",
-            "API",
-            "Figma",
-            "Performance Optimization",
-            "Design Systems"
-          ],
-          "jdSkillsMissingFromProfile": [
-            "go",
-            "aws",
-            "azure",
-            "terraform",
-            "agents"
-          ],
-          "requiresUnknownLanguage": false,
-          "rareHighValueSkills": [],
-          "locationHits": [],
-          "avoidHits": []
-        },
-        "dimensions": {
-          "profileMatch": 0,
-          "atsCoverage": 0,
-          "roleFit": 68,
-          "seniorityFit": 82,
-          "locationFit": 58,
-          "sourceQuality": 78,
-          "freshness": 95,
-          "compensationSignal": 52,
-          "growthSignal": 57,
-          "applicationEffort": 86,
-          "riskPenalty": 0
-        }
-      }
-    },
-    {
-      "source": "Source flex job board",
-      "sourceType": "json-ld",
       "title": "Backend Engineer (Golang)",
       "company": "Money Forward",
       "url": "https://www.tokyodev.com/companies/moneyforward/jobs/backend-engineer-golang",
@@ -14756,7 +14523,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "FULL_TIME",
       "firstSeenAt": "2026-05-15T04:51:38.896Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -14776,7 +14543,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "D",
       "recommendation": "略過",
       "status": "值得投遞",
-      "evaluatedAt": "2026-05-16T23:18:53.418Z",
+      "evaluatedAt": "2026-05-17T23:21:24.861Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -14904,7 +14671,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "",
       "firstSeenAt": "2026-05-15T06:25:04.793Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -14930,7 +14697,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "D",
       "recommendation": "略過",
       "status": "觀望",
-      "evaluatedAt": "2026-05-16T23:18:53.019Z",
+      "evaluatedAt": "2026-05-17T23:21:24.508Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -15015,7 +14782,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "2026-10-22",
       "employmentType": "FULL_TIME",
       "firstSeenAt": "2026-05-15T13:24:47.248Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -15035,7 +14802,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "D",
       "recommendation": "略過",
       "status": "值得投遞",
-      "evaluatedAt": "2026-05-16T23:18:53.290Z",
+      "evaluatedAt": "2026-05-17T23:21:24.741Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -15166,7 +14933,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "Full time",
       "firstSeenAt": "2026-05-15T11:59:22.604Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -15191,7 +14958,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "D",
       "recommendation": "略過",
       "status": "值得投遞",
-      "evaluatedAt": "2026-05-16T23:18:52.968Z",
+      "evaluatedAt": "2026-05-17T23:21:24.460Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -15276,7 +15043,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "",
       "firstSeenAt": "2026-05-15T11:59:22.604Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -15303,7 +15070,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "D",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:53.013Z",
+      "evaluatedAt": "2026-05-17T23:21:24.501Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -15390,7 +15157,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "",
       "firstSeenAt": "2026-05-15T11:59:22.604Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -15417,7 +15184,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "D",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:53.013Z",
+      "evaluatedAt": "2026-05-17T23:21:24.501Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -15504,7 +15271,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "",
       "firstSeenAt": "2026-05-15T11:59:22.604Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -15531,7 +15298,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "D",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:53.014Z",
+      "evaluatedAt": "2026-05-17T23:21:24.503Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -15614,11 +15381,11 @@ window.CV_CAREER_OPS_JOBS = {
       "url": "https://nvidia.wd5.myworkdayjobs.com/job/Taiwan-Hsinchu/Senior-Product-Engineer_JR2014219",
       "location": "Taiwan, Hsinchu",
       "description": "",
-      "datePosted": "Posted 23 Days Ago",
+      "datePosted": "Posted 24 Days Ago",
       "validThrough": "",
       "employmentType": "",
       "firstSeenAt": "2026-05-15T11:59:22.604Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -15645,7 +15412,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "D",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:53.016Z",
+      "evaluatedAt": "2026-05-17T23:21:24.505Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -15732,7 +15499,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "2026-08-05T23:00:51.808Z",
       "employmentType": "FULL_TIME",
       "firstSeenAt": "2026-05-15T03:52:21.093Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -15754,7 +15521,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "D",
       "recommendation": "略過",
       "status": "觀望",
-      "evaluatedAt": "2026-05-16T23:18:53.221Z",
+      "evaluatedAt": "2026-05-17T23:21:24.677Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -15839,7 +15606,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "2026-11-04",
       "employmentType": "FULL_TIME",
       "firstSeenAt": "2026-05-15T04:51:08.174Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -15859,7 +15626,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "D",
       "recommendation": "略過",
       "status": "觀望",
-      "evaluatedAt": "2026-05-16T23:18:53.273Z",
+      "evaluatedAt": "2026-05-17T23:21:24.725Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -15960,6 +15727,125 @@ window.CV_CAREER_OPS_JOBS = {
       }
     },
     {
+      "source": "Source flex job board",
+      "sourceType": "json-ld",
+      "title": "Entra ID and ID Management specialist, Digital Bank, Tokyo",
+      "company": "Money Forward",
+      "url": "https://www.tokyodev.com/companies/moneyforward/jobs/entra-id-and-id-management-specialist-digital-bank-tokyo",
+      "location": "Minato-ku, Tokyo, JP",
+      "description": "We have partnered with Sumitomo Mitsui Financial Group, Inc. and Sumitomo Mitsui Banking Corporation to establish a new company in preparation for the launch of a new digital bank.\n\n We are currently seeking candidates for the position of Entra Id and ID Management specialist as part of this initiative.\n\n ※ This position involves employment with Money Forward, Inc., and a secondment to the new company (SMBC Money Forward Bank Preparatory Corporation). The evaluation system and employee benefits will follow the policies of Money Forward, Inc.\n\n In this role, you’ll be the “go to person” for all things EntraID and related technologies. Keep up with Microsoft’s latest technologies to maintain and improve our ID management system. Participate in projects such as the introduction of new SaaS and group join, and design, build, and operate Entra ID as needed.\n\n Tools Used\n\n Collaboration tools: Slack, Zoom, Jira, Confluence, Miro, etc.\n\n Entra ID (formerly Azure Active Directory)\n\n Github\n\n Terraform\n\n AWS\n\n Responsibilities\n\n Develop management policies and overall design for user principals, service principals, and dynamic groups.\n\n Design, implement, and operate Infrastructure as Code systems using Github and Terraform.\n\n Collaborate with our security specialists to implement security designs using CIS Controls and CIS Benchmarks.\n\n Implement ID management, group management, and SAML/SCIM.\n\n Drive the integration project of the company’s ID management system for group join.\n\n Requirements\n\n 3+ years experience in managing and operating Entra ID or Azure Active Directory.\n\n Understanding of Identity and Access Management principles and concepts\n\n Basic scripting skills.\n\n Understanding of authentication protocols such as SAML, SCIM, and OAuth.\n\n Experience working in an Agile project team.\n\n English: Business level (equivalent to TOEIC score of 700 or above)\n\n Note: Since the scope of work includes overseas locations, meetings and text communications will occur in both Japanese and English.\n\n Candidates who do not possess a qualification equivalent to a TOEIC score of 700 or above will be required to take a company-designated test during the selection process (generally expected after the first interview)\n\n Nice to haves\n While not specifically required, tell us if you have any of the following.\n\n Experience in managing and operating Azure, knowledge of ISMS.\n\n Knowledge and experience with Terraform.\n\n 3+ of experience of managing projects of various complexity with multiple stakeholders.\n\n Microsoft SC-300 Certification (Identity and Access Administrator Associate) or equivalent knowledge and experience.\n\n Experience in AI development and/or experience in using AI tools to improve development processes.\n\n Money Forward recently announced our AI Strategy roadmap which focuses on improving AI-driven operational efficiencies, as well as integrating AI agents into our products to deliver better value to our users.",
+      "datePosted": "2026-03-06T16:46:22.618+09:00",
+      "validThrough": "",
+      "employmentType": "FULL_TIME",
+      "firstSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
+      "isNew": false,
+      "isExpired": false,
+      "expiredAt": "",
+      "jobKey": "url:https://www.tokyodev.com/companies/moneyforward/jobs/entra-id-and-id-management-specialist-digital-bank-tokyo",
+      "sourceMarket": "jp",
+      "sourceIndustry": "",
+      "sourceStrategy": "flex-job-board",
+      "sourceTags": [
+        "flex-job-board"
+      ],
+      "sourceQuality": {
+        "score": 100,
+        "tier": "high",
+        "reasons": []
+      },
+      "score": 46,
+      "grade": "D",
+      "recommendation": "略過",
+      "status": "值得投遞",
+      "evaluatedAt": "2026-05-17T23:21:24.820Z",
+      "evaluation": {
+        "source": "career-ops-intelligence",
+        "overall": {
+          "grade": "D",
+          "score": 46,
+          "recommendation": "略過",
+          "summary": "以 11 個維度比對，命中 0 個履歷技能，市場技能命中 5 個。"
+        },
+        "decision_factors": [
+          "職類：Backend；資歷：Junior；模式：Unknown",
+          "履歷技能命中偏低",
+          "未偵測到明顯稀有技能訊號"
+        ],
+        "ats_keywords": {
+          "found": [],
+          "missing": [
+            "go",
+            "aws",
+            "azure",
+            "terraform",
+            "agents"
+          ]
+        },
+        "risks": [],
+        "next_actions": [
+          "先與高分職缺比較，不急著投遞",
+          "補齊 JD 或標記喜歡 / 不喜歡以改善後續排序"
+        ]
+      },
+      "intelligence": {
+        "score": 46,
+        "grade": "D",
+        "recommendation": "略過",
+        "features": {
+          "roleFamily": "Backend",
+          "seniority": "Junior",
+          "workMode": "Unknown",
+          "skills": [
+            "go",
+            "aws",
+            "azure",
+            "terraform",
+            "agents"
+          ],
+          "profileSkillHits": [],
+          "profileSkillsNotInJd": [
+            "JavaScript",
+            "TypeScript",
+            "React",
+            "Next.js",
+            "CSS",
+            "Tailwind",
+            "Accessibility",
+            "Analytics",
+            "API",
+            "Figma",
+            "Performance Optimization",
+            "Design Systems"
+          ],
+          "jdSkillsMissingFromProfile": [
+            "go",
+            "aws",
+            "azure",
+            "terraform",
+            "agents"
+          ],
+          "requiresUnknownLanguage": false,
+          "rareHighValueSkills": [],
+          "locationHits": [],
+          "avoidHits": []
+        },
+        "dimensions": {
+          "profileMatch": 0,
+          "atsCoverage": 0,
+          "roleFit": 68,
+          "seniorityFit": 82,
+          "locationFit": 58,
+          "sourceQuality": 78,
+          "freshness": 76,
+          "compensationSignal": 52,
+          "growthSignal": 57,
+          "applicationEffort": 86,
+          "riskPenalty": 0
+        }
+      }
+    },
+    {
       "source": "NVIDIA Taiwan",
       "sourceType": "discovered-link",
       "title": "The NVIDIA Spectrum Ethernet Platform",
@@ -15971,7 +15857,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "",
       "firstSeenAt": "2026-05-15T06:25:26.345Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -15998,7 +15884,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "D",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:52.963Z",
+      "evaluatedAt": "2026-05-17T23:21:24.456Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -16083,7 +15969,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "",
       "firstSeenAt": "2026-05-15T06:25:04.793Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -16108,7 +15994,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "D",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:52.939Z",
+      "evaluatedAt": "2026-05-17T23:21:24.434Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -16193,7 +16079,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "",
       "firstSeenAt": "2026-05-15T06:25:26.345Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -16220,7 +16106,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "D",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:52.963Z",
+      "evaluatedAt": "2026-05-17T23:21:24.455Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -16305,7 +16191,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "",
       "firstSeenAt": "2026-05-15T06:25:26.345Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -16332,7 +16218,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "D",
       "recommendation": "略過",
       "status": "觀望",
-      "evaluatedAt": "2026-05-16T23:18:52.963Z",
+      "evaluatedAt": "2026-05-17T23:21:24.456Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -16417,7 +16303,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "",
       "firstSeenAt": "2026-05-15T06:25:26.345Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -16444,7 +16330,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "D",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:52.965Z",
+      "evaluatedAt": "2026-05-17T23:21:24.457Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -16529,7 +16415,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "",
       "firstSeenAt": "2026-05-15T06:25:04.793Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -16554,7 +16440,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "D",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:52.937Z",
+      "evaluatedAt": "2026-05-17T23:21:24.432Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -16635,7 +16521,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "",
       "firstSeenAt": "2026-05-15T06:25:04.793Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -16660,7 +16546,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "D",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:52.938Z",
+      "evaluatedAt": "2026-05-17T23:21:24.432Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -16747,7 +16633,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "",
       "firstSeenAt": "2026-05-15T06:25:26.345Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -16774,7 +16660,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "D",
       "recommendation": "略過",
       "status": "觀望",
-      "evaluatedAt": "2026-05-16T23:18:52.965Z",
+      "evaluatedAt": "2026-05-17T23:21:24.458Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -16859,7 +16745,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "",
       "firstSeenAt": "2026-05-15T06:25:26.345Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -16885,7 +16771,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "D",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:52.962Z",
+      "evaluatedAt": "2026-05-17T23:21:24.455Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -16966,7 +16852,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "",
       "firstSeenAt": "2026-05-15T06:25:26.345Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -16993,7 +16879,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "D",
       "recommendation": "略過",
       "status": "觀望",
-      "evaluatedAt": "2026-05-16T23:18:52.965Z",
+      "evaluatedAt": "2026-05-17T23:21:24.457Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -17074,7 +16960,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "",
       "firstSeenAt": "2026-05-15T06:25:26.345Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -17101,7 +16987,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "D",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:52.965Z",
+      "evaluatedAt": "2026-05-17T23:21:24.458Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -17171,127 +17057,6 @@ window.CV_CAREER_OPS_JOBS = {
       }
     },
     {
-      "source": "Source flex job board",
-      "sourceType": "json-ld",
-      "title": "QA Engineer - SDET, Money Forward Kessai Ltd., Fukuoka",
-      "company": "Money Forward",
-      "url": "https://www.tokyodev.com/companies/moneyforward/jobs/qa-engineer-sdet-money-forward-kessai-ltd-fukuoka",
-      "location": "Minato-ku, Tokyo, JP",
-      "description": "The cashless payment service “Money Forward Business Card” provides business cards for sole proprietors and corporations as a primary payment method. Our goal is to promote a cashless society through a wide range of payment solutions, starting with card payments.\n\n “Money Forward Business Card” is a cashless platform designed to streamline back-office operations. Users can issue an unlimited number of physical and virtual cards for specific purposes, such as expense reimbursement or procurement, allowing them to consolidate all business expenses into their business card account.\n\n Since its launch in September 2021, the service has shown steady growth. To build an even more robust business for the future, ensuring high quality has become an urgent priority.\n\nWe are looking for someone who wants to move beyond the traditional QA framework and join us in exploring new safety nets for the AI era—someone who is ready to take on the challenge of building a system that achieves both high speed and high reliability at the same time.\n\n *This position will be employed by Money Forward and be seconded to Money Forward Kessai.\n\n Responsibilities\n\n Test planning, test design/execution, bug reporting, and post-release verification.\n\n Test automation (unit/integration/system levels) and orchestration utilizing AI agents\n\n Quality assurance design from the prototyping stage (Shift-Left approach).\n\n Formulating mid-to-long-term test strategies (including unit, integration, and system testing, as well as functional and non-functional requirements and automation).\n\n Defect data collection, measurement, analysis, and development of countermeasures for continuous quality improvement.\n\n Standardization or improvement of development and testing processes.\n\n Requirements\n\n Foundational knowledge and experience in software testing (equivalent to or higher than JSTQB Foundation Level).\n\n Experience in leading test strategy from formulation to execution, guided by QCD principles and the “Test Pyramid” approach in automation.\n\n Professional experience as a QA engineer for Web and Mobile services.\n\n Experience in cross-organizational test process standardization or improvement.\n\n Japanese: JLPT N3 level (Able to handle internal communication using translation tools for both text and conversation).\n\n English: Equivalent to TOEIC 700+ (Able to participate in meetings and communicate via text in English immediately upon joining).\n\n Nice to haves\n While not specifically required, tell us if you have any of the following.\n\n Knowledge and hands-on experience with software processes in Agile development, such as Scrum and DevOps.\n\n A strong sense of responsibility toward product quality and a mindset that finds fulfillment in achieving it.\n\n A proactive attitude toward communication with diverse stakeholders across various departments.\n\n Experience in AI development and/or experience in using AI tools to improve development processes.\n\n Money Forward recently announced our AI Strategy roadmap which focuses on improving AI-driven operational efficiencies, as well as integrating AI agents into our products to deliver better value to our users.\n\n Interested in next-generation QA strategies centered on a “Shift-Left” approach.\n\n Motivated by close communication with global team members and eager to embrace international QA standards.\n\n Seeking to explore innovative quality assurance approaches, moving beyond traditional QA frameworks.",
-      "datePosted": "2026-05-14T12:35:43.970+09:00",
-      "validThrough": "",
-      "employmentType": "FULL_TIME",
-      "firstSeenAt": "2026-05-16T23:18:51.813Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
-      "isNew": true,
-      "isExpired": false,
-      "expiredAt": "",
-      "jobKey": "url:https://www.tokyodev.com/companies/moneyforward/jobs/qa-engineer-sdet-money-forward-kessai-ltd-fukuoka",
-      "sourceMarket": "jp",
-      "sourceIndustry": "",
-      "sourceStrategy": "flex-job-board",
-      "sourceTags": [
-        "flex-job-board"
-      ],
-      "sourceQuality": {
-        "score": 100,
-        "tier": "high",
-        "reasons": []
-      },
-      "score": 42,
-      "grade": "D",
-      "recommendation": "略過",
-      "status": "值得投遞",
-      "evaluatedAt": "2026-05-16T23:18:53.354Z",
-      "evaluation": {
-        "source": "career-ops-intelligence",
-        "overall": {
-          "grade": "D",
-          "score": 42,
-          "recommendation": "略過",
-          "summary": "以 11 個維度比對，命中 3 個履歷技能，市場技能命中 3 個。"
-        },
-        "decision_factors": [
-          "職類：AI / Data；資歷：Mid；模式：Unknown",
-          "履歷技能命中：engineer、product、data",
-          "未偵測到明顯稀有技能訊號"
-        ],
-        "ats_keywords": {
-          "found": [
-            "engineer",
-            "product",
-            "data"
-          ],
-          "missing": [
-            "agents",
-            "growth",
-            "operations"
-          ]
-        },
-        "risks": [],
-        "next_actions": [
-          "先與高分職缺比較，不急著投遞",
-          "補齊 JD 或標記喜歡 / 不喜歡以改善後續排序"
-        ]
-      },
-      "intelligence": {
-        "score": 42,
-        "grade": "D",
-        "recommendation": "略過",
-        "features": {
-          "roleFamily": "AI / Data",
-          "seniority": "Mid",
-          "workMode": "Unknown",
-          "skills": [
-            "agents",
-            "growth",
-            "operations"
-          ],
-          "profileSkillHits": [
-            "engineer",
-            "product",
-            "data"
-          ],
-          "profileSkillsNotInJd": [
-            "JavaScript",
-            "TypeScript",
-            "React",
-            "Next.js",
-            "CSS",
-            "Tailwind",
-            "Accessibility",
-            "Analytics",
-            "API",
-            "Figma",
-            "Performance Optimization",
-            "Design Systems"
-          ],
-          "jdSkillsMissingFromProfile": [
-            "agents",
-            "growth",
-            "operations"
-          ],
-          "requiresUnknownLanguage": true,
-          "rareHighValueSkills": [],
-          "locationHits": [],
-          "avoidHits": []
-        },
-        "dimensions": {
-          "profileMatch": 42,
-          "atsCoverage": 12,
-          "roleFit": 68,
-          "seniorityFit": 82,
-          "locationFit": 58,
-          "sourceQuality": 78,
-          "freshness": 95,
-          "compensationSignal": 52,
-          "growthSignal": 93,
-          "applicationEffort": 86,
-          "riskPenalty": 20
-        }
-      }
-    },
-    {
       "source": "Delta Electronics",
       "sourceType": "discovered-link",
       "title": "Products - Building Automation - Delta",
@@ -17303,7 +17068,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "",
       "firstSeenAt": "2026-05-15T06:25:04.793Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -17328,7 +17093,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:52.923Z",
+      "evaluatedAt": "2026-05-17T23:21:24.419Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -17409,7 +17174,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "",
       "firstSeenAt": "2026-05-15T06:25:26.345Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -17436,7 +17201,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:52.963Z",
+      "evaluatedAt": "2026-05-17T23:21:24.456Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -17517,7 +17282,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "",
       "firstSeenAt": "2026-05-15T11:59:22.604Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -17544,7 +17309,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:53.013Z",
+      "evaluatedAt": "2026-05-17T23:21:24.501Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -17631,7 +17396,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "",
       "firstSeenAt": "2026-05-15T06:25:04.793Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -17656,7 +17421,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:52.895Z",
+      "evaluatedAt": "2026-05-17T23:21:24.391Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -17737,7 +17502,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "",
       "firstSeenAt": "2026-05-15T06:24:14.186Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -17761,7 +17526,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:52.936Z",
+      "evaluatedAt": "2026-05-17T23:21:24.431Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -17842,7 +17607,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "",
       "firstSeenAt": "2026-05-15T06:25:04.793Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -17868,7 +17633,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "觀望",
-      "evaluatedAt": "2026-05-16T23:18:52.938Z",
+      "evaluatedAt": "2026-05-17T23:21:24.433Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -17960,7 +17725,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "",
       "firstSeenAt": "2026-05-15T06:25:26.345Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -17987,7 +17752,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:52.963Z",
+      "evaluatedAt": "2026-05-17T23:21:24.455Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -18068,7 +17833,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "",
       "firstSeenAt": "2026-05-15T06:25:26.345Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -18095,7 +17860,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:52.964Z",
+      "evaluatedAt": "2026-05-17T23:21:24.457Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -18176,7 +17941,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "",
       "firstSeenAt": "2026-05-15T06:25:26.345Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -18202,7 +17967,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:52.964Z",
+      "evaluatedAt": "2026-05-17T23:21:24.457Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -18292,7 +18057,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "",
       "firstSeenAt": "2026-05-15T06:25:26.345Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -18319,7 +18084,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:52.965Z",
+      "evaluatedAt": "2026-05-17T23:21:24.457Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -18400,7 +18165,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "",
       "firstSeenAt": "2026-05-15T06:25:26.345Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -18427,7 +18192,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:52.966Z",
+      "evaluatedAt": "2026-05-17T23:21:24.458Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -18508,7 +18273,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "",
       "firstSeenAt": "2026-05-15T06:25:26.345Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -18535,7 +18300,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:52.967Z",
+      "evaluatedAt": "2026-05-17T23:21:24.459Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -18616,7 +18381,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "",
       "firstSeenAt": "2026-05-15T11:59:22.604Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -18643,7 +18408,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:53.012Z",
+      "evaluatedAt": "2026-05-17T23:21:24.500Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -18736,7 +18501,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "",
       "firstSeenAt": "2026-05-15T06:25:04.793Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -18763,7 +18528,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:53.019Z",
+      "evaluatedAt": "2026-05-17T23:21:24.507Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -18833,120 +18598,6 @@ window.CV_CAREER_OPS_JOBS = {
       }
     },
     {
-      "source": "COEBank SuccessFactors Data & BI Engineer",
-      "sourceType": "adapter:successfactors",
-      "title": "Data & BI Engineer Job Details | CEB",
-      "company": "COEBank SuccessFactors Data & BI Engineer",
-      "url": "https://jobs.coebank.org/job/Paris-Data-%26-BI-Engineer/1342367455/",
-      "location": "",
-      "description": "Paris Data & BI Engineer",
-      "datePosted": "",
-      "validThrough": "",
-      "employmentType": "",
-      "firstSeenAt": "2026-05-16T23:18:51.813Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
-      "isNew": true,
-      "isExpired": false,
-      "expiredAt": "",
-      "jobKey": "url:https://jobs.coebank.org/job/paris-data-%26-bi-engineer/1342367455/",
-      "sourceMarket": "global",
-      "sourceIndustry": "finance-development",
-      "sourceStrategy": "ats-board",
-      "sourceTags": [
-        "ats",
-        "successfactors",
-        "data",
-        "analytics",
-        "internationalized",
-        "validated-live-source"
-      ],
-      "sourceQuality": {
-        "score": 82,
-        "tier": "high",
-        "reasons": [
-          "thin-description"
-        ]
-      },
-      "score": 40,
-      "grade": "F",
-      "recommendation": "略過",
-      "status": "觀望",
-      "evaluatedAt": "2026-05-16T23:18:53.212Z",
-      "evaluation": {
-        "source": "career-ops-intelligence",
-        "overall": {
-          "grade": "F",
-          "score": 40,
-          "recommendation": "略過",
-          "summary": "以 11 個維度比對，命中 2 個履歷技能，市場技能命中 0 個。"
-        },
-        "decision_factors": [
-          "職類：Other；資歷：Mid；模式：Unknown",
-          "履歷技能命中：engineer、data",
-          "未偵測到明顯稀有技能訊號"
-        ],
-        "ats_keywords": {
-          "found": [
-            "engineer",
-            "data"
-          ],
-          "missing": []
-        },
-        "risks": [],
-        "next_actions": [
-          "先與高分職缺比較，不急著投遞",
-          "補齊 JD 或標記喜歡 / 不喜歡以改善後續排序"
-        ]
-      },
-      "intelligence": {
-        "score": 40,
-        "grade": "F",
-        "recommendation": "略過",
-        "features": {
-          "roleFamily": "Other",
-          "seniority": "Mid",
-          "workMode": "Unknown",
-          "skills": [],
-          "profileSkillHits": [
-            "engineer",
-            "data"
-          ],
-          "profileSkillsNotInJd": [
-            "JavaScript",
-            "TypeScript",
-            "React",
-            "Next.js",
-            "CSS",
-            "Tailwind",
-            "Accessibility",
-            "Analytics",
-            "API",
-            "Figma",
-            "Performance Optimization",
-            "Design Systems"
-          ],
-          "jdSkillsMissingFromProfile": [],
-          "requiresUnknownLanguage": false,
-          "rareHighValueSkills": [],
-          "locationHits": [],
-          "avoidHits": []
-        },
-        "dimensions": {
-          "profileMatch": 28,
-          "atsCoverage": 8,
-          "roleFit": 45,
-          "seniorityFit": 82,
-          "locationFit": 58,
-          "sourceQuality": 90,
-          "freshness": 95,
-          "compensationSignal": 52,
-          "growthSignal": 57,
-          "applicationEffort": 72,
-          "riskPenalty": 12
-        }
-      }
-    },
-    {
       "source": "Source flex job board",
       "sourceType": "json-ld",
       "title": "QA Engineer - SDET (Money Forward Kessai / Tokyo)",
@@ -18958,7 +18609,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "2026-11-13",
       "employmentType": "FULL_TIME",
       "firstSeenAt": "2026-05-15T04:51:08.174Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -18978,7 +18629,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "值得投遞",
-      "evaluatedAt": "2026-05-16T23:18:53.242Z",
+      "evaluatedAt": "2026-05-17T23:21:24.696Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -19079,7 +18730,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "2026-11-13",
       "employmentType": "FULL_TIME",
       "firstSeenAt": "2026-05-15T04:51:08.174Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -19099,7 +18750,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "值得投遞",
-      "evaluatedAt": "2026-05-16T23:18:53.244Z",
+      "evaluatedAt": "2026-05-17T23:21:24.697Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -19200,7 +18851,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "FULL_TIME",
       "firstSeenAt": "2026-05-15T04:51:38.896Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -19220,7 +18871,128 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "值得投遞",
-      "evaluatedAt": "2026-05-16T23:18:53.350Z",
+      "evaluatedAt": "2026-05-17T23:21:24.798Z",
+      "evaluation": {
+        "source": "career-ops-intelligence",
+        "overall": {
+          "grade": "F",
+          "score": 40,
+          "recommendation": "略過",
+          "summary": "以 11 個維度比對，命中 3 個履歷技能，市場技能命中 3 個。"
+        },
+        "decision_factors": [
+          "職類：AI / Data；資歷：Mid；模式：Unknown",
+          "履歷技能命中：engineer、product、data",
+          "未偵測到明顯稀有技能訊號"
+        ],
+        "ats_keywords": {
+          "found": [
+            "engineer",
+            "product",
+            "data"
+          ],
+          "missing": [
+            "agents",
+            "growth",
+            "operations"
+          ]
+        },
+        "risks": [],
+        "next_actions": [
+          "先與高分職缺比較，不急著投遞",
+          "補齊 JD 或標記喜歡 / 不喜歡以改善後續排序"
+        ]
+      },
+      "intelligence": {
+        "score": 40,
+        "grade": "F",
+        "recommendation": "略過",
+        "features": {
+          "roleFamily": "AI / Data",
+          "seniority": "Mid",
+          "workMode": "Unknown",
+          "skills": [
+            "agents",
+            "growth",
+            "operations"
+          ],
+          "profileSkillHits": [
+            "engineer",
+            "product",
+            "data"
+          ],
+          "profileSkillsNotInJd": [
+            "JavaScript",
+            "TypeScript",
+            "React",
+            "Next.js",
+            "CSS",
+            "Tailwind",
+            "Accessibility",
+            "Analytics",
+            "API",
+            "Figma",
+            "Performance Optimization",
+            "Design Systems"
+          ],
+          "jdSkillsMissingFromProfile": [
+            "agents",
+            "growth",
+            "operations"
+          ],
+          "requiresUnknownLanguage": true,
+          "rareHighValueSkills": [],
+          "locationHits": [],
+          "avoidHits": []
+        },
+        "dimensions": {
+          "profileMatch": 42,
+          "atsCoverage": 12,
+          "roleFit": 68,
+          "seniorityFit": 82,
+          "locationFit": 58,
+          "sourceQuality": 78,
+          "freshness": 76,
+          "compensationSignal": 52,
+          "growthSignal": 93,
+          "applicationEffort": 86,
+          "riskPenalty": 20
+        }
+      }
+    },
+    {
+      "source": "Source flex job board",
+      "sourceType": "json-ld",
+      "title": "QA Engineer - SDET, Money Forward Kessai Ltd., Fukuoka",
+      "company": "Money Forward",
+      "url": "https://www.tokyodev.com/companies/moneyforward/jobs/qa-engineer-sdet-money-forward-kessai-ltd-fukuoka",
+      "location": "Minato-ku, Tokyo, JP",
+      "description": "The cashless payment service “Money Forward Business Card” provides business cards for sole proprietors and corporations as a primary payment method. Our goal is to promote a cashless society through a wide range of payment solutions, starting with card payments.\n\n “Money Forward Business Card” is a cashless platform designed to streamline back-office operations. Users can issue an unlimited number of physical and virtual cards for specific purposes, such as expense reimbursement or procurement, allowing them to consolidate all business expenses into their business card account.\n\n Since its launch in September 2021, the service has shown steady growth. To build an even more robust business for the future, ensuring high quality has become an urgent priority.\n\nWe are looking for someone who wants to move beyond the traditional QA framework and join us in exploring new safety nets for the AI era—someone who is ready to take on the challenge of building a system that achieves both high speed and high reliability at the same time.\n\n *This position will be employed by Money Forward and be seconded to Money Forward Kessai.\n\n Responsibilities\n\n Test planning, test design/execution, bug reporting, and post-release verification.\n\n Test automation (unit/integration/system levels) and orchestration utilizing AI agents\n\n Quality assurance design from the prototyping stage (Shift-Left approach).\n\n Formulating mid-to-long-term test strategies (including unit, integration, and system testing, as well as functional and non-functional requirements and automation).\n\n Defect data collection, measurement, analysis, and development of countermeasures for continuous quality improvement.\n\n Standardization or improvement of development and testing processes.\n\n Requirements\n\n Foundational knowledge and experience in software testing (equivalent to or higher than JSTQB Foundation Level).\n\n Experience in leading test strategy from formulation to execution, guided by QCD principles and the “Test Pyramid” approach in automation.\n\n Professional experience as a QA engineer for Web and Mobile services.\n\n Experience in cross-organizational test process standardization or improvement.\n\n Japanese: JLPT N3 level (Able to handle internal communication using translation tools for both text and conversation).\n\n English: Equivalent to TOEIC 700+ (Able to participate in meetings and communicate via text in English immediately upon joining).\n\n Nice to haves\n While not specifically required, tell us if you have any of the following.\n\n Knowledge and hands-on experience with software processes in Agile development, such as Scrum and DevOps.\n\n A strong sense of responsibility toward product quality and a mindset that finds fulfillment in achieving it.\n\n A proactive attitude toward communication with diverse stakeholders across various departments.\n\n Experience in AI development and/or experience in using AI tools to improve development processes.\n\n Money Forward recently announced our AI Strategy roadmap which focuses on improving AI-driven operational efficiencies, as well as integrating AI agents into our products to deliver better value to our users.\n\n Interested in next-generation QA strategies centered on a “Shift-Left” approach.\n\n Motivated by close communication with global team members and eager to embrace international QA standards.\n\n Seeking to explore innovative quality assurance approaches, moving beyond traditional QA frameworks.",
+      "datePosted": "2026-05-14T12:35:43.970+09:00",
+      "validThrough": "",
+      "employmentType": "FULL_TIME",
+      "firstSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
+      "isNew": false,
+      "isExpired": false,
+      "expiredAt": "",
+      "jobKey": "url:https://www.tokyodev.com/companies/moneyforward/jobs/qa-engineer-sdet-money-forward-kessai-ltd-fukuoka",
+      "sourceMarket": "jp",
+      "sourceIndustry": "",
+      "sourceStrategy": "flex-job-board",
+      "sourceTags": [
+        "flex-job-board"
+      ],
+      "sourceQuality": {
+        "score": 100,
+        "tier": "high",
+        "reasons": []
+      },
+      "score": 40,
+      "grade": "F",
+      "recommendation": "略過",
+      "status": "值得投遞",
+      "evaluatedAt": "2026-05-17T23:21:24.801Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -19321,7 +19093,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "FULL_TIME",
       "firstSeenAt": "2026-05-15T04:51:38.896Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -19341,7 +19113,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "值得投遞",
-      "evaluatedAt": "2026-05-16T23:18:53.431Z",
+      "evaluatedAt": "2026-05-17T23:21:24.873Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -19442,7 +19214,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "",
       "firstSeenAt": "2026-05-15T06:25:26.345Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -19469,7 +19241,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:52.966Z",
+      "evaluatedAt": "2026-05-17T23:21:24.458Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -19539,142 +19311,6 @@ window.CV_CAREER_OPS_JOBS = {
       }
     },
     {
-      "source": "Source flex job board",
-      "sourceType": "json-ld",
-      "title": "ML Engineer, ML Platform, Tokyo",
-      "company": "Money Forward",
-      "url": "https://www.tokyodev.com/companies/moneyforward/jobs/ml-engineer-ml-platform-tokyo",
-      "location": "Minato-ku, Tokyo, JP",
-      "description": "This position leads the implementation and operation of credit assessment models for Money Forward Kessai (MFK) and the Digital Bank project.\n\n You will migrate models from the PoC phase to a bank-grade production environment, establish continuous quality management through MLOps, and drive implementation of fairness and transparency based on the principles of Responsible AI.\n\n Background\n\n Initial validation of the credit assessment models is largely complete. As the next phase, we are accelerating both “integration into banking systems” and “building a strict operational setup.” As a hands-on leader, you will be expected to drive solutions to the following challenges:\n\n Migration to production: Smoothly migrate from the verification environment (Databricks) to the production environment (SageMaker), and build a robust CI/CD pipeline that removes uncertainty.\n\n Bank-grade quality assurance: Implement XAI (e.g., SHAP, counterfactuals) to explain lending decisions, and detect/mitigate model bias to ensure fairness.\n\n Efficient processing of large-scale data: Optimize training and inference cycles by introducing distributed learning/processing (e.g., pandas UDF / Spark) leveraging the characteristics of accounting transaction data.\n\n Technology Stack\n\n Platform: AWS (SageMaker, Lambda, ECS, S3, etc.), Databricks\n\n Data: Python (FastAPI, etc.), SQL, Apache Airflow / Step Functions\n\n DevOps: Terraform, GitHub Actions, CodePipeline\n\n Communication: Slack, Notion\n\n Responsibilities\n\n Design and implement ML workflows\n\n Build an end-to-end ML pipeline integrating Databricks and Amazon SageMaker.\n\n Implement and enhance credit assessment models\n\n Implement scalable model training using large datasets (e.g., Parquet).\n\n Introduce fairness and explainability (XAI)\n\n Implement bias evaluation using statistical methods (e.g., statistical parity) and algorithms to visualize decision rationales.\n\n Model operation and monitoring\n\n Continuously monitor performance degradation and environmental changes (concept drift), and operate retraining workflows.\n\n Requirements\n\n Experience operating ML models in production\n\n Practical experience across the full lifecycle from development to deployment and post-release monitoring.\n\n Experience in data processing and development with Python\n\n Practical use of ML libraries (pandas, scikit-learn, etc.) and backend frameworks.\n\n Technical leadership experience\n\n Experience conducting design reviews and setting technical direction in a small team.\n\n Fundamental data engineering knowledge\n\n Experience using RDBMS/SQL and building data pipelines on cloud platforms (e.g., AWS).\n\n Business level Japanese (equivalent to JLPT N2 or above). Please note that the interviews in the selection process will be conducted in Japanese.\n\n Basic business level English (equivalent to TOEIC 700 or above)\n\n Nice to haves\n While not specifically required, tell us if you have any of the following.\n\n Knowledge of AI fairness and explainability\n\n Understanding of fairness metrics and use of tools such as SageMaker Clarify.\n\n Experience with distributed processing at scale\n\n Performance tuning experience using Apache Spark, pandas UDF, etc.\n\n Knowledge of the financial domain\n\n Experience developing systems in banking/credit operations, or in environments compliant with security standards such as FISC.",
-      "datePosted": "2026-04-08T14:57:54.120+09:00",
-      "validThrough": "",
-      "employmentType": "FULL_TIME",
-      "firstSeenAt": "2026-05-16T23:18:51.813Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
-      "isNew": true,
-      "isExpired": false,
-      "expiredAt": "",
-      "jobKey": "url:https://www.tokyodev.com/companies/moneyforward/jobs/ml-engineer-ml-platform-tokyo",
-      "sourceMarket": "jp",
-      "sourceIndustry": "",
-      "sourceStrategy": "flex-job-board",
-      "sourceTags": [
-        "flex-job-board"
-      ],
-      "sourceQuality": {
-        "score": 100,
-        "tier": "high",
-        "reasons": []
-      },
-      "score": 39,
-      "grade": "F",
-      "recommendation": "略過",
-      "status": "值得投遞",
-      "evaluatedAt": "2026-05-16T23:18:53.357Z",
-      "evaluation": {
-        "source": "career-ops-intelligence",
-        "overall": {
-          "grade": "F",
-          "score": 39,
-          "recommendation": "略過",
-          "summary": "以 11 個維度比對，命中 2 個履歷技能，市場技能命中 8 個。"
-        },
-        "decision_factors": [
-          "職類：Backend；資歷：Mid；模式：Unknown",
-          "履歷技能命中：engineer、data",
-          "稀有高價值技能：scikit"
-        ],
-        "ats_keywords": {
-          "found": [
-            "engineer",
-            "data"
-          ],
-          "missing": [
-            "python",
-            "sql",
-            "aws",
-            "terraform",
-            "airflow",
-            "spark",
-            "scikit",
-            "operations"
-          ]
-        },
-        "risks": [],
-        "next_actions": [
-          "先與高分職缺比較，不急著投遞",
-          "補齊 JD 或標記喜歡 / 不喜歡以改善後續排序"
-        ]
-      },
-      "intelligence": {
-        "score": 39,
-        "grade": "F",
-        "recommendation": "略過",
-        "features": {
-          "roleFamily": "Backend",
-          "seniority": "Mid",
-          "workMode": "Unknown",
-          "skills": [
-            "python",
-            "sql",
-            "aws",
-            "terraform",
-            "airflow",
-            "spark",
-            "scikit",
-            "operations"
-          ],
-          "profileSkillHits": [
-            "engineer",
-            "data"
-          ],
-          "profileSkillsNotInJd": [
-            "JavaScript",
-            "TypeScript",
-            "React",
-            "Next.js",
-            "CSS",
-            "Tailwind",
-            "Accessibility",
-            "Analytics",
-            "API",
-            "Figma",
-            "Performance Optimization",
-            "Design Systems"
-          ],
-          "jdSkillsMissingFromProfile": [
-            "python",
-            "sql",
-            "aws",
-            "terraform",
-            "airflow",
-            "spark",
-            "scikit",
-            "operations"
-          ],
-          "requiresUnknownLanguage": true,
-          "rareHighValueSkills": [
-            "scikit"
-          ],
-          "locationHits": [],
-          "avoidHits": []
-        },
-        "dimensions": {
-          "profileMatch": 28,
-          "atsCoverage": 8,
-          "roleFit": 68,
-          "seniorityFit": 82,
-          "locationFit": 58,
-          "sourceQuality": 78,
-          "freshness": 95,
-          "compensationSignal": 52,
-          "growthSignal": 97,
-          "applicationEffort": 86,
-          "riskPenalty": 20
-        }
-      }
-    },
-    {
       "source": "NVIDIA Workday",
       "sourceType": "adapter:workday",
       "title": "Developer Technology Engineer, HPC and AI",
@@ -19686,7 +19322,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "",
       "firstSeenAt": "2026-05-15T11:59:22.604Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -19713,7 +19349,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:53.014Z",
+      "evaluatedAt": "2026-05-17T23:21:24.503Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -19796,11 +19432,11 @@ window.CV_CAREER_OPS_JOBS = {
       "url": "https://micron.wd1.myworkdayjobs.com/job/Taichung---MTB-Taiwan/MTB-Automation-OPS-Engineer_JR100725",
       "location": "Taichung - MTB, Taiwan",
       "description": "Time type: Full time",
-      "datePosted": "Posted Yesterday",
+      "datePosted": "Posted 2 Days Ago",
       "validThrough": "",
       "employmentType": "Full time",
       "firstSeenAt": "2026-05-15T06:25:26.345Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -19826,7 +19462,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:53.093Z",
+      "evaluatedAt": "2026-05-17T23:21:24.567Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -19907,11 +19543,11 @@ window.CV_CAREER_OPS_JOBS = {
       "url": "https://micron.wd1.myworkdayjobs.com/job/Taichung---AATT-Taiwan/IT-SOFTWARE-ENGINEER---PROBE-DATA-COLLECTION_JR100855",
       "location": "Taichung - AATT, Taiwan",
       "description": "Time type: Full time",
-      "datePosted": "Posted 2 Days Ago",
+      "datePosted": "Posted 3 Days Ago",
       "validThrough": "",
       "employmentType": "Full time",
       "firstSeenAt": "2026-05-15T12:00:32.241Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -19937,7 +19573,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:53.094Z",
+      "evaluatedAt": "2026-05-17T23:21:24.569Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -20020,11 +19656,11 @@ window.CV_CAREER_OPS_JOBS = {
       "url": "https://micron.wd1.myworkdayjobs.com/job/Taichung---MTB-Taiwan/Assembly---Test-Quality---Data-Engineer_JR100364",
       "location": "Taichung - MTB, Taiwan",
       "description": "Time type: Full time",
-      "datePosted": "Posted 2 Days Ago",
+      "datePosted": "Posted 3 Days Ago",
       "validThrough": "",
       "employmentType": "Full time",
       "firstSeenAt": "2026-05-15T12:00:32.241Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -20050,7 +19686,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:53.096Z",
+      "evaluatedAt": "2026-05-17T23:21:24.570Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -20133,11 +19769,11 @@ window.CV_CAREER_OPS_JOBS = {
       "url": "https://micron.wd1.myworkdayjobs.com/job/Taoyuan---Fab-11-Taiwan/SR-DATA-SCIENTIST--SMAI-OI_JR88638-1",
       "location": "Taoyuan - Fab 11, Taiwan",
       "description": "Time type: Full time",
-      "datePosted": "Posted 2 Days Ago",
+      "datePosted": "Posted 3 Days Ago",
       "validThrough": "",
       "employmentType": "Full time",
       "firstSeenAt": "2026-05-15T12:00:32.241Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -20163,7 +19799,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:53.096Z",
+      "evaluatedAt": "2026-05-17T23:21:24.570Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -20248,7 +19884,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "Full-time",
       "firstSeenAt": "2026-05-15T04:51:24.165Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -20272,7 +19908,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:52.962Z",
+      "evaluatedAt": "2026-05-17T23:21:24.454Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -20357,7 +19993,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "",
       "firstSeenAt": "2026-05-15T11:59:22.604Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -20384,7 +20020,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "觀望",
-      "evaluatedAt": "2026-05-16T23:18:53.012Z",
+      "evaluatedAt": "2026-05-17T23:21:24.500Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -20471,7 +20107,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "",
       "firstSeenAt": "2026-05-15T11:59:22.604Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -20498,7 +20134,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "觀望",
-      "evaluatedAt": "2026-05-16T23:18:53.012Z",
+      "evaluatedAt": "2026-05-17T23:21:24.500Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -20585,7 +20221,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "",
       "firstSeenAt": "2026-05-15T11:59:22.604Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -20612,7 +20248,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:53.012Z",
+      "evaluatedAt": "2026-05-17T23:21:24.501Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -20699,7 +20335,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "",
       "firstSeenAt": "2026-05-15T11:59:22.604Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -20726,7 +20362,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:53.013Z",
+      "evaluatedAt": "2026-05-17T23:21:24.501Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -20809,11 +20445,11 @@ window.CV_CAREER_OPS_JOBS = {
       "url": "https://nvidia.wd5.myworkdayjobs.com/job/Taiwan-Taipei/System-Design-Power-Validation-Engineer_JR2016309",
       "location": "Taiwan, Taipei",
       "description": "",
-      "datePosted": "Posted 30 Days Ago",
+      "datePosted": "Posted 30+ Days Ago",
       "validThrough": "",
       "employmentType": "",
       "firstSeenAt": "2026-05-15T11:59:22.604Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -20840,7 +20476,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "觀望",
-      "evaluatedAt": "2026-05-16T23:18:53.015Z",
+      "evaluatedAt": "2026-05-17T23:21:24.504Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -20923,11 +20559,11 @@ window.CV_CAREER_OPS_JOBS = {
       "url": "https://nvidia.wd5.myworkdayjobs.com/job/Taiwan-Taipei/Board-Design-Engineer--LDE---New-College-Graduate_JR2016978-1",
       "location": "Taiwan, Taipei",
       "description": "",
-      "datePosted": "Posted 23 Days Ago",
+      "datePosted": "Posted 24 Days Ago",
       "validThrough": "",
       "employmentType": "",
       "firstSeenAt": "2026-05-15T11:59:22.604Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -20954,121 +20590,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:53.016Z",
-      "evaluation": {
-        "source": "career-ops-intelligence",
-        "overall": {
-          "grade": "F",
-          "score": 37,
-          "recommendation": "略過",
-          "summary": "以 11 個維度比對，命中 1 個履歷技能，市場技能命中 0 個。"
-        },
-        "decision_factors": [
-          "職類：Other；資歷：Mid；模式：Unknown",
-          "履歷技能命中：engineer",
-          "未偵測到明顯稀有技能訊號"
-        ],
-        "ats_keywords": {
-          "found": [
-            "engineer"
-          ],
-          "missing": []
-        },
-        "risks": [],
-        "next_actions": [
-          "先與高分職缺比較，不急著投遞",
-          "補齊 JD 或標記喜歡 / 不喜歡以改善後續排序"
-        ]
-      },
-      "intelligence": {
-        "score": 37,
-        "grade": "F",
-        "recommendation": "略過",
-        "features": {
-          "roleFamily": "Other",
-          "seniority": "Mid",
-          "workMode": "Unknown",
-          "skills": [],
-          "profileSkillHits": [
-            "engineer"
-          ],
-          "profileSkillsNotInJd": [
-            "JavaScript",
-            "TypeScript",
-            "React",
-            "Next.js",
-            "CSS",
-            "Tailwind",
-            "Accessibility",
-            "Analytics",
-            "API",
-            "Figma",
-            "Performance Optimization",
-            "Design Systems"
-          ],
-          "jdSkillsMissingFromProfile": [],
-          "requiresUnknownLanguage": false,
-          "rareHighValueSkills": [],
-          "locationHits": [
-            "Taipei"
-          ],
-          "avoidHits": []
-        },
-        "dimensions": {
-          "profileMatch": 14,
-          "atsCoverage": 4,
-          "roleFit": 45,
-          "seniorityFit": 82,
-          "locationFit": 95,
-          "sourceQuality": 90,
-          "freshness": 76,
-          "compensationSignal": 52,
-          "growthSignal": 48,
-          "applicationEffort": 72,
-          "riskPenalty": 12
-        }
-      }
-    },
-    {
-      "source": "NVIDIA Workday",
-      "sourceType": "adapter:workday",
-      "title": "Test Development Engineer - DataCenter System Software",
-      "company": "NVIDIA Workday",
-      "url": "https://nvidia.wd5.myworkdayjobs.com/job/Taiwan-Taipei/Test-Development-Engineer---DataCenter-System-Software_JR2016293",
-      "location": "Taiwan, Taipei",
-      "description": "",
-      "datePosted": "Posted 23 Days Ago",
-      "validThrough": "",
-      "employmentType": "",
-      "firstSeenAt": "2026-05-15T11:59:22.604Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
-      "isNew": false,
-      "isExpired": false,
-      "expiredAt": "",
-      "jobKey": "url:https://nvidia.wd5.myworkdayjobs.com/job/taiwan-taipei/test-development-engineer---datacenter-system-software_jr2016293",
-      "sourceMarket": "tw",
-      "sourceIndustry": "ai-semiconductor",
-      "sourceStrategy": "tracked-company",
-      "sourceTags": [
-        "multinational",
-        "ai",
-        "semiconductor",
-        "taiwan",
-        "workday",
-        "internationalized"
-      ],
-      "sourceQuality": {
-        "score": 82,
-        "tier": "high",
-        "reasons": [
-          "thin-description"
-        ]
-      },
-      "score": 37,
-      "grade": "F",
-      "recommendation": "略過",
-      "status": "觀望",
-      "evaluatedAt": "2026-05-16T23:18:53.016Z",
+      "evaluatedAt": "2026-05-17T23:21:24.504Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -21151,11 +20673,11 @@ window.CV_CAREER_OPS_JOBS = {
       "url": "https://nvidia.wd5.myworkdayjobs.com/job/Taiwan-Hsinchu/Product-Development-Lab-Engineer_JR2016054",
       "location": "Taiwan, Hsinchu",
       "description": "",
-      "datePosted": "Posted 5 Days Ago",
+      "datePosted": "Posted 6 Days Ago",
       "validThrough": "",
       "employmentType": "",
       "firstSeenAt": "2026-05-15T11:59:22.604Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -21182,7 +20704,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:53.018Z",
+      "evaluatedAt": "2026-05-17T23:21:24.506Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -21265,11 +20787,11 @@ window.CV_CAREER_OPS_JOBS = {
       "url": "https://nvidia.wd5.myworkdayjobs.com/job/Taiwan-Hsinchu/Product-Development-Engineer_JR2017138",
       "location": "Taiwan, Hsinchu",
       "description": "",
-      "datePosted": "Posted 5 Days Ago",
+      "datePosted": "Posted 6 Days Ago",
       "validThrough": "",
       "employmentType": "",
       "firstSeenAt": "2026-05-15T11:59:22.604Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -21296,7 +20818,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:53.018Z",
+      "evaluatedAt": "2026-05-17T23:21:24.507Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -21379,11 +20901,11 @@ window.CV_CAREER_OPS_JOBS = {
       "url": "https://micron.wd1.myworkdayjobs.com/job/Taichung---MTB-Taiwan/MTB-Operations-Intelligence-Engineer_JR100324",
       "location": "Taichung - MTB, Taiwan",
       "description": "Time type: Full time",
-      "datePosted": "Posted Yesterday",
+      "datePosted": "Posted 2 Days Ago",
       "validThrough": "",
       "employmentType": "Full time",
       "firstSeenAt": "2026-05-15T06:25:26.345Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -21409,7 +20931,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:53.093Z",
+      "evaluatedAt": "2026-05-17T23:21:24.567Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -21496,11 +21018,11 @@ window.CV_CAREER_OPS_JOBS = {
       "url": "https://micron.wd1.myworkdayjobs.com/job/Taichung---MTB-Taiwan/MTB-Operations-Intelligence-Engineer_JR101494",
       "location": "Taichung - MTB, Taiwan",
       "description": "Time type: Full time",
-      "datePosted": "Posted Yesterday",
+      "datePosted": "Posted 2 Days Ago",
       "validThrough": "",
       "employmentType": "Full time",
       "firstSeenAt": "2026-05-15T06:25:26.345Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -21526,7 +21048,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:53.093Z",
+      "evaluatedAt": "2026-05-17T23:21:24.567Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -21606,6 +21128,256 @@ window.CV_CAREER_OPS_JOBS = {
       }
     },
     {
+      "source": "COEBank SuccessFactors Data & BI Engineer",
+      "sourceType": "adapter:successfactors",
+      "title": "Data & BI Engineer Job Details | CEB",
+      "company": "COEBank SuccessFactors Data & BI Engineer",
+      "url": "https://jobs.coebank.org/job/Paris-Data-%26-BI-Engineer/1342367455/",
+      "location": "",
+      "description": "Paris Data & BI Engineer",
+      "datePosted": "",
+      "validThrough": "",
+      "employmentType": "",
+      "firstSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
+      "isNew": false,
+      "isExpired": false,
+      "expiredAt": "",
+      "jobKey": "url:https://jobs.coebank.org/job/paris-data-%26-bi-engineer/1342367455/",
+      "sourceMarket": "global",
+      "sourceIndustry": "finance-development",
+      "sourceStrategy": "ats-board",
+      "sourceTags": [
+        "ats",
+        "successfactors",
+        "data",
+        "analytics",
+        "internationalized",
+        "validated-live-source"
+      ],
+      "sourceQuality": {
+        "score": 82,
+        "tier": "high",
+        "reasons": [
+          "thin-description"
+        ]
+      },
+      "score": 37,
+      "grade": "F",
+      "recommendation": "略過",
+      "status": "略過",
+      "evaluatedAt": "2026-05-17T23:21:24.669Z",
+      "evaluation": {
+        "source": "career-ops-intelligence",
+        "overall": {
+          "grade": "F",
+          "score": 37,
+          "recommendation": "略過",
+          "summary": "以 11 個維度比對，命中 2 個履歷技能，市場技能命中 0 個。"
+        },
+        "decision_factors": [
+          "職類：Other；資歷：Mid；模式：Unknown",
+          "履歷技能命中：engineer、data",
+          "未偵測到明顯稀有技能訊號"
+        ],
+        "ats_keywords": {
+          "found": [
+            "engineer",
+            "data"
+          ],
+          "missing": []
+        },
+        "risks": [],
+        "next_actions": [
+          "先與高分職缺比較，不急著投遞",
+          "補齊 JD 或標記喜歡 / 不喜歡以改善後續排序"
+        ]
+      },
+      "intelligence": {
+        "score": 37,
+        "grade": "F",
+        "recommendation": "略過",
+        "features": {
+          "roleFamily": "Other",
+          "seniority": "Mid",
+          "workMode": "Unknown",
+          "skills": [],
+          "profileSkillHits": [
+            "engineer",
+            "data"
+          ],
+          "profileSkillsNotInJd": [
+            "JavaScript",
+            "TypeScript",
+            "React",
+            "Next.js",
+            "CSS",
+            "Tailwind",
+            "Accessibility",
+            "Analytics",
+            "API",
+            "Figma",
+            "Performance Optimization",
+            "Design Systems"
+          ],
+          "jdSkillsMissingFromProfile": [],
+          "requiresUnknownLanguage": false,
+          "rareHighValueSkills": [],
+          "locationHits": [],
+          "avoidHits": []
+        },
+        "dimensions": {
+          "profileMatch": 28,
+          "atsCoverage": 8,
+          "roleFit": 45,
+          "seniorityFit": 82,
+          "locationFit": 58,
+          "sourceQuality": 90,
+          "freshness": 64,
+          "compensationSignal": 52,
+          "growthSignal": 57,
+          "applicationEffort": 72,
+          "riskPenalty": 12
+        }
+      }
+    },
+    {
+      "source": "Source flex job board",
+      "sourceType": "json-ld",
+      "title": "ML Engineer, ML Platform, Tokyo",
+      "company": "Money Forward",
+      "url": "https://www.tokyodev.com/companies/moneyforward/jobs/ml-engineer-ml-platform-tokyo",
+      "location": "Minato-ku, Tokyo, JP",
+      "description": "This position leads the implementation and operation of credit assessment models for Money Forward Kessai (MFK) and the Digital Bank project.\n\n You will migrate models from the PoC phase to a bank-grade production environment, establish continuous quality management through MLOps, and drive implementation of fairness and transparency based on the principles of Responsible AI.\n\n Background\n\n Initial validation of the credit assessment models is largely complete. As the next phase, we are accelerating both “integration into banking systems” and “building a strict operational setup.” As a hands-on leader, you will be expected to drive solutions to the following challenges:\n\n Migration to production: Smoothly migrate from the verification environment (Databricks) to the production environment (SageMaker), and build a robust CI/CD pipeline that removes uncertainty.\n\n Bank-grade quality assurance: Implement XAI (e.g., SHAP, counterfactuals) to explain lending decisions, and detect/mitigate model bias to ensure fairness.\n\n Efficient processing of large-scale data: Optimize training and inference cycles by introducing distributed learning/processing (e.g., pandas UDF / Spark) leveraging the characteristics of accounting transaction data.\n\n Technology Stack\n\n Platform: AWS (SageMaker, Lambda, ECS, S3, etc.), Databricks\n\n Data: Python (FastAPI, etc.), SQL, Apache Airflow / Step Functions\n\n DevOps: Terraform, GitHub Actions, CodePipeline\n\n Communication: Slack, Notion\n\n Responsibilities\n\n Design and implement ML workflows\n\n Build an end-to-end ML pipeline integrating Databricks and Amazon SageMaker.\n\n Implement and enhance credit assessment models\n\n Implement scalable model training using large datasets (e.g., Parquet).\n\n Introduce fairness and explainability (XAI)\n\n Implement bias evaluation using statistical methods (e.g., statistical parity) and algorithms to visualize decision rationales.\n\n Model operation and monitoring\n\n Continuously monitor performance degradation and environmental changes (concept drift), and operate retraining workflows.\n\n Requirements\n\n Experience operating ML models in production\n\n Practical experience across the full lifecycle from development to deployment and post-release monitoring.\n\n Experience in data processing and development with Python\n\n Practical use of ML libraries (pandas, scikit-learn, etc.) and backend frameworks.\n\n Technical leadership experience\n\n Experience conducting design reviews and setting technical direction in a small team.\n\n Fundamental data engineering knowledge\n\n Experience using RDBMS/SQL and building data pipelines on cloud platforms (e.g., AWS).\n\n Business level Japanese (equivalent to JLPT N2 or above). Please note that the interviews in the selection process will be conducted in Japanese.\n\n Basic business level English (equivalent to TOEIC 700 or above)\n\n Nice to haves\n While not specifically required, tell us if you have any of the following.\n\n Knowledge of AI fairness and explainability\n\n Understanding of fairness metrics and use of tools such as SageMaker Clarify.\n\n Experience with distributed processing at scale\n\n Performance tuning experience using Apache Spark, pandas UDF, etc.\n\n Knowledge of the financial domain\n\n Experience developing systems in banking/credit operations, or in environments compliant with security standards such as FISC.",
+      "datePosted": "2026-04-08T14:57:54.120+09:00",
+      "validThrough": "",
+      "employmentType": "FULL_TIME",
+      "firstSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
+      "isNew": false,
+      "isExpired": false,
+      "expiredAt": "",
+      "jobKey": "url:https://www.tokyodev.com/companies/moneyforward/jobs/ml-engineer-ml-platform-tokyo",
+      "sourceMarket": "jp",
+      "sourceIndustry": "",
+      "sourceStrategy": "flex-job-board",
+      "sourceTags": [
+        "flex-job-board"
+      ],
+      "sourceQuality": {
+        "score": 100,
+        "tier": "high",
+        "reasons": []
+      },
+      "score": 37,
+      "grade": "F",
+      "recommendation": "略過",
+      "status": "值得投遞",
+      "evaluatedAt": "2026-05-17T23:21:24.805Z",
+      "evaluation": {
+        "source": "career-ops-intelligence",
+        "overall": {
+          "grade": "F",
+          "score": 37,
+          "recommendation": "略過",
+          "summary": "以 11 個維度比對，命中 2 個履歷技能，市場技能命中 8 個。"
+        },
+        "decision_factors": [
+          "職類：Backend；資歷：Mid；模式：Unknown",
+          "履歷技能命中：engineer、data",
+          "稀有高價值技能：scikit"
+        ],
+        "ats_keywords": {
+          "found": [
+            "engineer",
+            "data"
+          ],
+          "missing": [
+            "python",
+            "sql",
+            "aws",
+            "terraform",
+            "airflow",
+            "spark",
+            "scikit",
+            "operations"
+          ]
+        },
+        "risks": [],
+        "next_actions": [
+          "先與高分職缺比較，不急著投遞",
+          "補齊 JD 或標記喜歡 / 不喜歡以改善後續排序"
+        ]
+      },
+      "intelligence": {
+        "score": 37,
+        "grade": "F",
+        "recommendation": "略過",
+        "features": {
+          "roleFamily": "Backend",
+          "seniority": "Mid",
+          "workMode": "Unknown",
+          "skills": [
+            "python",
+            "sql",
+            "aws",
+            "terraform",
+            "airflow",
+            "spark",
+            "scikit",
+            "operations"
+          ],
+          "profileSkillHits": [
+            "engineer",
+            "data"
+          ],
+          "profileSkillsNotInJd": [
+            "JavaScript",
+            "TypeScript",
+            "React",
+            "Next.js",
+            "CSS",
+            "Tailwind",
+            "Accessibility",
+            "Analytics",
+            "API",
+            "Figma",
+            "Performance Optimization",
+            "Design Systems"
+          ],
+          "jdSkillsMissingFromProfile": [
+            "python",
+            "sql",
+            "aws",
+            "terraform",
+            "airflow",
+            "spark",
+            "scikit",
+            "operations"
+          ],
+          "requiresUnknownLanguage": true,
+          "rareHighValueSkills": [
+            "scikit"
+          ],
+          "locationHits": [],
+          "avoidHits": []
+        },
+        "dimensions": {
+          "profileMatch": 28,
+          "atsCoverage": 8,
+          "roleFit": 68,
+          "seniorityFit": 82,
+          "locationFit": 58,
+          "sourceQuality": 78,
+          "freshness": 76,
+          "compensationSignal": 52,
+          "growthSignal": 97,
+          "applicationEffort": 86,
+          "riskPenalty": 20
+        }
+      }
+    },
+    {
       "source": "NVIDIA Workday",
       "sourceType": "adapter:workday",
       "title": "Senior Product Test Engineer",
@@ -21617,7 +21389,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "",
       "firstSeenAt": "2026-05-15T11:59:22.604Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -21644,7 +21416,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:53.011Z",
+      "evaluatedAt": "2026-05-17T23:21:24.499Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -21727,11 +21499,11 @@ window.CV_CAREER_OPS_JOBS = {
       "url": "https://nvidia.wd5.myworkdayjobs.com/job/Taiwan-Taipei/Senior-Test-Development-Engineer---DataCenter-System-Software_JR2014207",
       "location": "Taiwan, Taipei",
       "description": "",
-      "datePosted": "Posted 11 Days Ago",
+      "datePosted": "Posted 12 Days Ago",
       "validThrough": "",
       "employmentType": "",
       "firstSeenAt": "2026-05-15T11:59:22.604Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -21758,7 +21530,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "觀望",
-      "evaluatedAt": "2026-05-16T23:18:53.011Z",
+      "evaluatedAt": "2026-05-17T23:21:24.500Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -21841,11 +21613,11 @@ window.CV_CAREER_OPS_JOBS = {
       "url": "https://nvidia.wd5.myworkdayjobs.com/job/Taiwan-Taipei/Senior-System-BIOS-Firmware-Developer--Client-Product_JR2013134",
       "location": "Taiwan, Taipei",
       "description": "",
-      "datePosted": "Posted 3 Days Ago",
+      "datePosted": "Posted 4 Days Ago",
       "validThrough": "",
       "employmentType": "",
       "firstSeenAt": "2026-05-15T11:59:22.604Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -21872,7 +21644,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:53.012Z",
+      "evaluatedAt": "2026-05-17T23:21:24.500Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -21959,7 +21731,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "",
       "firstSeenAt": "2026-05-15T11:59:22.604Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -21986,7 +21758,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:53.015Z",
+      "evaluatedAt": "2026-05-17T23:21:24.503Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -22069,11 +21841,11 @@ window.CV_CAREER_OPS_JOBS = {
       "url": "https://nvidia.wd5.myworkdayjobs.com/job/Taiwan-Hsinchu/System-Level-Product-Development-Engineer_JR2015770",
       "location": "Taiwan, Hsinchu",
       "description": "",
-      "datePosted": "Posted 18 Days Ago",
+      "datePosted": "Posted 19 Days Ago",
       "validThrough": "",
       "employmentType": "",
       "firstSeenAt": "2026-05-15T11:59:22.604Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -22100,7 +21872,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "觀望",
-      "evaluatedAt": "2026-05-16T23:18:53.016Z",
+      "evaluatedAt": "2026-05-17T23:21:24.504Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -22183,11 +21955,11 @@ window.CV_CAREER_OPS_JOBS = {
       "url": "https://nvidia.wd5.myworkdayjobs.com/job/Taiwan-Taipei/Senior-System-Reliability-Engineer_JR2016586",
       "location": "Taiwan, Taipei",
       "description": "",
-      "datePosted": "Posted 23 Days Ago",
+      "datePosted": "Posted 24 Days Ago",
       "validThrough": "",
       "employmentType": "",
       "firstSeenAt": "2026-05-15T11:59:22.604Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -22214,7 +21986,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:53.016Z",
+      "evaluatedAt": "2026-05-17T23:21:24.505Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -22297,11 +22069,11 @@ window.CV_CAREER_OPS_JOBS = {
       "url": "https://nvidia.wd5.myworkdayjobs.com/job/Taiwan-Hsinchu/Senior-Product-Development-Engineer-for-Mechanical-Assembly_JR2015313",
       "location": "Taiwan, Hsinchu",
       "description": "",
-      "datePosted": "Posted 23 Days Ago",
+      "datePosted": "Posted 24 Days Ago",
       "validThrough": "",
       "employmentType": "",
       "firstSeenAt": "2026-05-15T11:59:22.604Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -22328,7 +22100,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:53.016Z",
+      "evaluatedAt": "2026-05-17T23:21:24.505Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -22406,16 +22178,130 @@ window.CV_CAREER_OPS_JOBS = {
     {
       "source": "NVIDIA Workday",
       "sourceType": "adapter:workday",
+      "title": "Senior Test Development Engineer - DataCenter System Software",
+      "company": "NVIDIA Workday",
+      "url": "https://nvidia.wd5.myworkdayjobs.com/job/Taiwan-Taipei/Test-Development-Engineer---DataCenter-System-Software_JR2016293",
+      "location": "Taiwan, Taipei",
+      "description": "",
+      "datePosted": "Posted Today",
+      "validThrough": "",
+      "employmentType": "",
+      "firstSeenAt": "2026-05-15T11:59:22.604Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
+      "isNew": false,
+      "isExpired": false,
+      "expiredAt": "",
+      "jobKey": "url:https://nvidia.wd5.myworkdayjobs.com/job/taiwan-taipei/test-development-engineer---datacenter-system-software_jr2016293",
+      "sourceMarket": "tw",
+      "sourceIndustry": "ai-semiconductor",
+      "sourceStrategy": "tracked-company",
+      "sourceTags": [
+        "multinational",
+        "ai",
+        "semiconductor",
+        "taiwan",
+        "workday",
+        "internationalized"
+      ],
+      "sourceQuality": {
+        "score": 82,
+        "tier": "high",
+        "reasons": [
+          "thin-description"
+        ]
+      },
+      "score": 36,
+      "grade": "F",
+      "recommendation": "略過",
+      "status": "觀望",
+      "evaluatedAt": "2026-05-17T23:21:24.505Z",
+      "evaluation": {
+        "source": "career-ops-intelligence",
+        "overall": {
+          "grade": "F",
+          "score": 36,
+          "recommendation": "略過",
+          "summary": "以 11 個維度比對，命中 1 個履歷技能，市場技能命中 0 個。"
+        },
+        "decision_factors": [
+          "職類：Other；資歷：Senior+；模式：Unknown",
+          "履歷技能命中：engineer",
+          "未偵測到明顯稀有技能訊號"
+        ],
+        "ats_keywords": {
+          "found": [
+            "engineer"
+          ],
+          "missing": []
+        },
+        "risks": [],
+        "next_actions": [
+          "先與高分職缺比較，不急著投遞",
+          "補齊 JD 或標記喜歡 / 不喜歡以改善後續排序"
+        ]
+      },
+      "intelligence": {
+        "score": 36,
+        "grade": "F",
+        "recommendation": "略過",
+        "features": {
+          "roleFamily": "Other",
+          "seniority": "Senior+",
+          "workMode": "Unknown",
+          "skills": [],
+          "profileSkillHits": [
+            "engineer"
+          ],
+          "profileSkillsNotInJd": [
+            "JavaScript",
+            "TypeScript",
+            "React",
+            "Next.js",
+            "CSS",
+            "Tailwind",
+            "Accessibility",
+            "Analytics",
+            "API",
+            "Figma",
+            "Performance Optimization",
+            "Design Systems"
+          ],
+          "jdSkillsMissingFromProfile": [],
+          "requiresUnknownLanguage": false,
+          "rareHighValueSkills": [],
+          "locationHits": [
+            "Taipei"
+          ],
+          "avoidHits": []
+        },
+        "dimensions": {
+          "profileMatch": 14,
+          "atsCoverage": 4,
+          "roleFit": 45,
+          "seniorityFit": 70,
+          "locationFit": 95,
+          "sourceQuality": 90,
+          "freshness": 76,
+          "compensationSignal": 52,
+          "growthSignal": 48,
+          "applicationEffort": 72,
+          "riskPenalty": 12
+        }
+      }
+    },
+    {
+      "source": "NVIDIA Workday",
+      "sourceType": "adapter:workday",
       "title": "Senior Firmware Application Engineer",
       "company": "NVIDIA Workday",
       "url": "https://nvidia.wd5.myworkdayjobs.com/job/Taiwan-Taipei/Senior-Firmware-Application-Engineer_JR2016895",
       "location": "Taiwan, Taipei",
       "description": "",
-      "datePosted": "Posted 17 Days Ago",
+      "datePosted": "Posted 18 Days Ago",
       "validThrough": "",
       "employmentType": "",
       "firstSeenAt": "2026-05-15T11:59:22.604Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -22442,7 +22328,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:53.017Z",
+      "evaluatedAt": "2026-05-17T23:21:24.505Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -22525,11 +22411,11 @@ window.CV_CAREER_OPS_JOBS = {
       "url": "https://nvidia.wd5.myworkdayjobs.com/job/Taiwan-Taipei/Senior-BMC-Firmware-Development-Engineer_JR2016900-1",
       "location": "Taiwan, Taipei",
       "description": "",
-      "datePosted": "Posted 17 Days Ago",
+      "datePosted": "Posted 18 Days Ago",
       "validThrough": "",
       "employmentType": "",
       "firstSeenAt": "2026-05-15T11:59:22.604Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -22556,7 +22442,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:53.017Z",
+      "evaluatedAt": "2026-05-17T23:21:24.506Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -22639,11 +22525,11 @@ window.CV_CAREER_OPS_JOBS = {
       "url": "https://nvidia.wd5.myworkdayjobs.com/job/Taiwan-Taipei/Senior-Tool-and-Test-Development-Engineer---DataCenter-System-Software_JR2016827",
       "location": "Taiwan, Taipei",
       "description": "",
-      "datePosted": "Posted 15 Days Ago",
+      "datePosted": "Posted 16 Days Ago",
       "validThrough": "",
       "employmentType": "",
       "firstSeenAt": "2026-05-15T11:59:22.604Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -22670,7 +22556,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "觀望",
-      "evaluatedAt": "2026-05-16T23:18:53.017Z",
+      "evaluatedAt": "2026-05-17T23:21:24.506Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -22753,11 +22639,11 @@ window.CV_CAREER_OPS_JOBS = {
       "url": "https://nvidia.wd5.myworkdayjobs.com/job/Taiwan-Taipei/Senior-System-Application-Engineer_JR2017960",
       "location": "Taiwan, Taipei",
       "description": "",
-      "datePosted": "Posted 3 Days Ago",
+      "datePosted": "Posted 4 Days Ago",
       "validThrough": "",
       "employmentType": "",
       "firstSeenAt": "2026-05-15T11:59:22.604Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -22784,7 +22670,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "觀望",
-      "evaluatedAt": "2026-05-16T23:18:53.018Z",
+      "evaluatedAt": "2026-05-17T23:21:24.507Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -22871,7 +22757,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "",
       "firstSeenAt": "2026-05-15T13:50:36.342Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -22899,7 +22785,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:53.211Z",
+      "evaluatedAt": "2026-05-17T23:21:24.668Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -22986,7 +22872,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "",
       "firstSeenAt": "2026-05-15T13:50:07.176Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -23012,7 +22898,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "觀望",
-      "evaluatedAt": "2026-05-16T23:18:53.212Z",
+      "evaluatedAt": "2026-05-17T23:21:24.668Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -23105,7 +22991,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "",
       "firstSeenAt": "2026-05-15T06:25:04.793Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -23130,7 +23016,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:52.935Z",
+      "evaluatedAt": "2026-05-17T23:21:24.430Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -23215,7 +23101,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "Full-time",
       "firstSeenAt": "2026-05-15T04:51:24.165Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -23239,7 +23125,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:52.962Z",
+      "evaluatedAt": "2026-05-17T23:21:24.455Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -23324,7 +23210,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "",
       "firstSeenAt": "2026-05-15T06:25:26.345Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -23351,7 +23237,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:52.966Z",
+      "evaluatedAt": "2026-05-17T23:21:24.459Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -23432,11 +23318,11 @@ window.CV_CAREER_OPS_JOBS = {
       "url": "https://nvidia.wd5.myworkdayjobs.com/job/Taiwan-Hsinchu/SOC-AI-Application-Engineer---AI-Services--Agents-and-Knowledge-Systems_JR2016498",
       "location": "Taiwan, Hsinchu",
       "description": "",
-      "datePosted": "Posted 30 Days Ago",
+      "datePosted": "Posted 30+ Days Ago",
       "validThrough": "",
       "employmentType": "",
       "firstSeenAt": "2026-05-15T11:59:22.604Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -23463,7 +23349,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:53.015Z",
+      "evaluatedAt": "2026-05-17T23:21:24.504Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -23545,129 +23431,20 @@ window.CV_CAREER_OPS_JOBS = {
     {
       "source": "Micron Workday",
       "sourceType": "adapter:workday",
-      "title": "Summer Intern – ASIC Design Flow Exploration with AI",
+      "title": "MTB HBM Manufacturing Engineer",
       "company": "Micron Workday",
-      "url": "https://micron.wd1.myworkdayjobs.com/job/Taipei---MTT-office-Taiwan/Summer-Intern---ASIC-Design-Flow-Exploration-with-AI_JR86293",
-      "location": "Taipei - MTT office, Taiwan",
+      "url": "https://micron.wd1.myworkdayjobs.com/job/Taichung---MTB-Taiwan/MTB-HBM-Manufacturing-Engineer_JR101669-1",
+      "location": "Taichung - MTB, Taiwan",
       "description": "Time type: Full time",
-      "datePosted": "Posted 4 Days Ago",
+      "datePosted": "Posted 2 Days Ago",
       "validThrough": "",
       "employmentType": "Full time",
-      "firstSeenAt": "2026-05-15T12:00:32.241Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
-      "isNew": false,
-      "isExpired": false,
-      "expiredAt": "",
-      "jobKey": "url:https://micron.wd1.myworkdayjobs.com/job/taipei---mtt-office-taiwan/summer-intern---asic-design-flow-exploration-with-ai_jr86293",
-      "sourceMarket": "tw",
-      "sourceIndustry": "semiconductor-memory",
-      "sourceStrategy": "tracked-company",
-      "sourceTags": [
-        "multinational",
-        "semiconductor",
-        "taiwan",
-        "workday",
-        "internationalized"
-      ],
-      "sourceQuality": {
-        "score": 82,
-        "tier": "high",
-        "reasons": [
-          "thin-description"
-        ]
-      },
-      "score": 35,
-      "grade": "F",
-      "recommendation": "略過",
-      "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:53.098Z",
-      "evaluation": {
-        "source": "career-ops-intelligence",
-        "overall": {
-          "grade": "F",
-          "score": 35,
-          "recommendation": "略過",
-          "summary": "以 11 個維度比對，命中 0 個履歷技能，市場技能命中 0 個。"
-        },
-        "decision_factors": [
-          "職類：Internship；資歷：Intern；模式：Unknown",
-          "履歷技能命中偏低",
-          "未偵測到明顯稀有技能訊號"
-        ],
-        "ats_keywords": {
-          "found": [],
-          "missing": []
-        },
-        "risks": [],
-        "next_actions": [
-          "先與高分職缺比較，不急著投遞",
-          "補齊 JD 或標記喜歡 / 不喜歡以改善後續排序"
-        ]
-      },
-      "intelligence": {
-        "score": 35,
-        "grade": "F",
-        "recommendation": "略過",
-        "features": {
-          "roleFamily": "Internship",
-          "seniority": "Intern",
-          "workMode": "Unknown",
-          "skills": [],
-          "profileSkillHits": [],
-          "profileSkillsNotInJd": [
-            "JavaScript",
-            "TypeScript",
-            "React",
-            "Next.js",
-            "CSS",
-            "Tailwind",
-            "Accessibility",
-            "Analytics",
-            "API",
-            "Figma",
-            "Performance Optimization",
-            "Design Systems"
-          ],
-          "jdSkillsMissingFromProfile": [],
-          "requiresUnknownLanguage": false,
-          "rareHighValueSkills": [],
-          "locationHits": [
-            "Taipei"
-          ],
-          "avoidHits": []
-        },
-        "dimensions": {
-          "profileMatch": 0,
-          "atsCoverage": 0,
-          "roleFit": 68,
-          "seniorityFit": 55,
-          "locationFit": 95,
-          "sourceQuality": 90,
-          "freshness": 76,
-          "compensationSignal": 52,
-          "growthSignal": 57,
-          "applicationEffort": 72,
-          "riskPenalty": 12
-        }
-      }
-    },
-    {
-      "source": "Micron Workday",
-      "sourceType": "adapter:workday",
-      "title": "ENGINEER, FECOS CPIE PI",
-      "company": "Micron Workday",
-      "url": "https://micron.wd1.myworkdayjobs.com/job/Taichung---Fab-16-Taiwan/ENGINEER--FECOS-CPIE-PI_JR99822",
-      "location": "Taichung - Fab 16, Taiwan",
-      "description": "Time type: Full time",
-      "datePosted": "Posted 5 Days Ago",
-      "validThrough": "",
-      "employmentType": "Full time",
-      "firstSeenAt": "2026-05-16T23:18:51.813Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "firstSeenAt": "2026-05-17T23:21:23.392Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": true,
       "isExpired": false,
       "expiredAt": "",
-      "jobKey": "url:https://micron.wd1.myworkdayjobs.com/job/taichung---fab-16-taiwan/engineer--fecos-cpie-pi_jr99822",
+      "jobKey": "url:https://micron.wd1.myworkdayjobs.com/job/taichung---mtb-taiwan/mtb-hbm-manufacturing-engineer_jr101669-1",
       "sourceMarket": "tw",
       "sourceIndustry": "semiconductor-memory",
       "sourceStrategy": "tracked-company",
@@ -23689,7 +23466,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "觀望",
-      "evaluatedAt": "2026-05-16T23:18:53.104Z",
+      "evaluatedAt": "2026-05-17T23:21:24.566Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -23763,6 +23540,333 @@ window.CV_CAREER_OPS_JOBS = {
       }
     },
     {
+      "source": "Micron Workday",
+      "sourceType": "adapter:workday",
+      "title": "MTB MFG System Engineer",
+      "company": "Micron Workday",
+      "url": "https://micron.wd1.myworkdayjobs.com/job/Taichung---MTB-Taiwan/MTB-MFG-System-Engineer_JR101675",
+      "location": "Taichung - MTB, Taiwan",
+      "description": "Time type: Full time",
+      "datePosted": "Posted 2 Days Ago",
+      "validThrough": "",
+      "employmentType": "Full time",
+      "firstSeenAt": "2026-05-17T23:21:23.392Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
+      "isNew": true,
+      "isExpired": false,
+      "expiredAt": "",
+      "jobKey": "url:https://micron.wd1.myworkdayjobs.com/job/taichung---mtb-taiwan/mtb-mfg-system-engineer_jr101675",
+      "sourceMarket": "tw",
+      "sourceIndustry": "semiconductor-memory",
+      "sourceStrategy": "tracked-company",
+      "sourceTags": [
+        "multinational",
+        "semiconductor",
+        "taiwan",
+        "workday",
+        "internationalized"
+      ],
+      "sourceQuality": {
+        "score": 82,
+        "tier": "high",
+        "reasons": [
+          "thin-description"
+        ]
+      },
+      "score": 35,
+      "grade": "F",
+      "recommendation": "略過",
+      "status": "觀望",
+      "evaluatedAt": "2026-05-17T23:21:24.566Z",
+      "evaluation": {
+        "source": "career-ops-intelligence",
+        "overall": {
+          "grade": "F",
+          "score": 35,
+          "recommendation": "略過",
+          "summary": "以 11 個維度比對，命中 1 個履歷技能，市場技能命中 0 個。"
+        },
+        "decision_factors": [
+          "職類：Other；資歷：Mid；模式：Unknown",
+          "履歷技能命中：engineer",
+          "未偵測到明顯稀有技能訊號"
+        ],
+        "ats_keywords": {
+          "found": [
+            "engineer"
+          ],
+          "missing": []
+        },
+        "risks": [],
+        "next_actions": [
+          "先與高分職缺比較，不急著投遞",
+          "補齊 JD 或標記喜歡 / 不喜歡以改善後續排序"
+        ]
+      },
+      "intelligence": {
+        "score": 35,
+        "grade": "F",
+        "recommendation": "略過",
+        "features": {
+          "roleFamily": "Other",
+          "seniority": "Mid",
+          "workMode": "Unknown",
+          "skills": [],
+          "profileSkillHits": [
+            "engineer"
+          ],
+          "profileSkillsNotInJd": [
+            "JavaScript",
+            "TypeScript",
+            "React",
+            "Next.js",
+            "CSS",
+            "Tailwind",
+            "Accessibility",
+            "Analytics",
+            "API",
+            "Figma",
+            "Performance Optimization",
+            "Design Systems"
+          ],
+          "jdSkillsMissingFromProfile": [],
+          "requiresUnknownLanguage": false,
+          "rareHighValueSkills": [],
+          "locationHits": [],
+          "avoidHits": []
+        },
+        "dimensions": {
+          "profileMatch": 14,
+          "atsCoverage": 4,
+          "roleFit": 45,
+          "seniorityFit": 82,
+          "locationFit": 58,
+          "sourceQuality": 90,
+          "freshness": 95,
+          "compensationSignal": 52,
+          "growthSignal": 48,
+          "applicationEffort": 72,
+          "riskPenalty": 12
+        }
+      }
+    },
+    {
+      "source": "Micron Workday",
+      "sourceType": "adapter:workday",
+      "title": "Summer Intern – ASIC Design Flow Exploration with AI",
+      "company": "Micron Workday",
+      "url": "https://micron.wd1.myworkdayjobs.com/job/Taipei---MTT-office-Taiwan/Summer-Intern---ASIC-Design-Flow-Exploration-with-AI_JR86293",
+      "location": "Taipei - MTT office, Taiwan",
+      "description": "Time type: Full time",
+      "datePosted": "Posted 5 Days Ago",
+      "validThrough": "",
+      "employmentType": "Full time",
+      "firstSeenAt": "2026-05-15T12:00:32.241Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
+      "isNew": false,
+      "isExpired": false,
+      "expiredAt": "",
+      "jobKey": "url:https://micron.wd1.myworkdayjobs.com/job/taipei---mtt-office-taiwan/summer-intern---asic-design-flow-exploration-with-ai_jr86293",
+      "sourceMarket": "tw",
+      "sourceIndustry": "semiconductor-memory",
+      "sourceStrategy": "tracked-company",
+      "sourceTags": [
+        "multinational",
+        "semiconductor",
+        "taiwan",
+        "workday",
+        "internationalized"
+      ],
+      "sourceQuality": {
+        "score": 82,
+        "tier": "high",
+        "reasons": [
+          "thin-description"
+        ]
+      },
+      "score": 35,
+      "grade": "F",
+      "recommendation": "略過",
+      "status": "略過",
+      "evaluatedAt": "2026-05-17T23:21:24.571Z",
+      "evaluation": {
+        "source": "career-ops-intelligence",
+        "overall": {
+          "grade": "F",
+          "score": 35,
+          "recommendation": "略過",
+          "summary": "以 11 個維度比對，命中 0 個履歷技能，市場技能命中 0 個。"
+        },
+        "decision_factors": [
+          "職類：Internship；資歷：Intern；模式：Unknown",
+          "履歷技能命中偏低",
+          "未偵測到明顯稀有技能訊號"
+        ],
+        "ats_keywords": {
+          "found": [],
+          "missing": []
+        },
+        "risks": [],
+        "next_actions": [
+          "先與高分職缺比較，不急著投遞",
+          "補齊 JD 或標記喜歡 / 不喜歡以改善後續排序"
+        ]
+      },
+      "intelligence": {
+        "score": 35,
+        "grade": "F",
+        "recommendation": "略過",
+        "features": {
+          "roleFamily": "Internship",
+          "seniority": "Intern",
+          "workMode": "Unknown",
+          "skills": [],
+          "profileSkillHits": [],
+          "profileSkillsNotInJd": [
+            "JavaScript",
+            "TypeScript",
+            "React",
+            "Next.js",
+            "CSS",
+            "Tailwind",
+            "Accessibility",
+            "Analytics",
+            "API",
+            "Figma",
+            "Performance Optimization",
+            "Design Systems"
+          ],
+          "jdSkillsMissingFromProfile": [],
+          "requiresUnknownLanguage": false,
+          "rareHighValueSkills": [],
+          "locationHits": [
+            "Taipei"
+          ],
+          "avoidHits": []
+        },
+        "dimensions": {
+          "profileMatch": 0,
+          "atsCoverage": 0,
+          "roleFit": 68,
+          "seniorityFit": 55,
+          "locationFit": 95,
+          "sourceQuality": 90,
+          "freshness": 76,
+          "compensationSignal": 52,
+          "growthSignal": 57,
+          "applicationEffort": 72,
+          "riskPenalty": 12
+        }
+      }
+    },
+    {
+      "source": "Source flex job board",
+      "sourceType": "discovered-link",
+      "title": "[스탠바이랩(주)] Product Manager (프로덕트 매니저, PM)(D-22) - 사람인",
+      "company": "사람인",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=list&rec_idx=53722382",
+      "location": "",
+      "description": "스탠바이랩(주), Product Manager (프로덕트 매니저, PM), 경력:경력, 학력:고등학교졸업이상, 면접 후 결정, 마감일:2026-06-09, 홈페이지:https://www.standby.kr",
+      "datePosted": "",
+      "validThrough": "",
+      "employmentType": "",
+      "firstSeenAt": "2026-05-17T23:21:23.392Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
+      "isNew": true,
+      "isExpired": false,
+      "expiredAt": "",
+      "jobKey": "url:https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=list&rec_idx=53722382",
+      "sourceMarket": "kr",
+      "sourceIndustry": "",
+      "sourceStrategy": "flex-job-board",
+      "sourceTags": [
+        "flex-job-board"
+      ],
+      "sourceQuality": {
+        "score": 82,
+        "tier": "high",
+        "reasons": [
+          "thin-description"
+        ]
+      },
+      "score": 35,
+      "grade": "F",
+      "recommendation": "略過",
+      "status": "略過",
+      "evaluatedAt": "2026-05-17T23:21:24.876Z",
+      "evaluation": {
+        "source": "career-ops-intelligence",
+        "overall": {
+          "grade": "F",
+          "score": 35,
+          "recommendation": "略過",
+          "summary": "以 11 個維度比對，命中 1 個履歷技能，市場技能命中 0 個。"
+        },
+        "decision_factors": [
+          "職類：Product；資歷：Manager+；模式：Unknown",
+          "履歷技能命中：product",
+          "未偵測到明顯稀有技能訊號"
+        ],
+        "ats_keywords": {
+          "found": [
+            "product"
+          ],
+          "missing": []
+        },
+        "risks": [],
+        "next_actions": [
+          "先與高分職缺比較，不急著投遞",
+          "補齊 JD 或標記喜歡 / 不喜歡以改善後續排序"
+        ]
+      },
+      "intelligence": {
+        "score": 35,
+        "grade": "F",
+        "recommendation": "略過",
+        "features": {
+          "roleFamily": "Product",
+          "seniority": "Manager+",
+          "workMode": "Unknown",
+          "skills": [],
+          "profileSkillHits": [
+            "product"
+          ],
+          "profileSkillsNotInJd": [
+            "JavaScript",
+            "TypeScript",
+            "React",
+            "Next.js",
+            "CSS",
+            "Tailwind",
+            "Accessibility",
+            "Analytics",
+            "API",
+            "Figma",
+            "Performance Optimization",
+            "Design Systems"
+          ],
+          "jdSkillsMissingFromProfile": [],
+          "requiresUnknownLanguage": false,
+          "rareHighValueSkills": [],
+          "locationHits": [],
+          "avoidHits": []
+        },
+        "dimensions": {
+          "profileMatch": 14,
+          "atsCoverage": 4,
+          "roleFit": 68,
+          "seniorityFit": 82,
+          "locationFit": 58,
+          "sourceQuality": 55,
+          "freshness": 95,
+          "compensationSignal": 52,
+          "growthSignal": 48,
+          "applicationEffort": 72,
+          "riskPenalty": 12
+        }
+      }
+    },
+    {
       "source": "Samsung Workday",
       "sourceType": "adapter:workday",
       "title": "Analog Design Engineer",
@@ -23774,7 +23878,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "",
       "firstSeenAt": "2026-05-15T11:59:52.258Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -23799,7 +23903,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:52.961Z",
+      "evaluatedAt": "2026-05-17T23:21:24.453Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -23884,7 +23988,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "",
       "firstSeenAt": "2026-05-15T11:59:52.258Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -23909,7 +24013,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:52.961Z",
+      "evaluatedAt": "2026-05-17T23:21:24.453Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -23994,7 +24098,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "",
       "firstSeenAt": "2026-05-15T11:59:52.258Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -24019,7 +24123,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:52.961Z",
+      "evaluatedAt": "2026-05-17T23:21:24.453Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -24104,7 +24208,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "",
       "firstSeenAt": "2026-05-15T11:59:52.258Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -24129,7 +24233,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:52.961Z",
+      "evaluatedAt": "2026-05-17T23:21:24.453Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -24214,7 +24318,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "Full-time",
       "firstSeenAt": "2026-05-15T04:51:24.165Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -24238,7 +24342,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:52.961Z",
+      "evaluatedAt": "2026-05-17T23:21:24.454Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -24323,7 +24427,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "",
       "firstSeenAt": "2026-05-15T11:59:22.604Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -24350,7 +24454,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:53.011Z",
+      "evaluatedAt": "2026-05-17T23:21:24.499Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -24435,7 +24539,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "",
       "firstSeenAt": "2026-05-15T11:59:22.604Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -24462,7 +24566,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:53.012Z",
+      "evaluatedAt": "2026-05-17T23:21:24.501Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -24547,7 +24651,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "",
       "firstSeenAt": "2026-05-15T11:59:22.604Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -24574,7 +24678,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:53.013Z",
+      "evaluatedAt": "2026-05-17T23:21:24.502Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -24659,7 +24763,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "",
       "firstSeenAt": "2026-05-15T11:59:22.604Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -24686,7 +24790,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:53.013Z",
+      "evaluatedAt": "2026-05-17T23:21:24.502Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -24771,7 +24875,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "",
       "firstSeenAt": "2026-05-15T11:59:22.604Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -24798,7 +24902,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:53.014Z",
+      "evaluatedAt": "2026-05-17T23:21:24.502Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -24883,7 +24987,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "",
       "firstSeenAt": "2026-05-15T11:59:22.604Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -24910,7 +25014,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:53.015Z",
+      "evaluatedAt": "2026-05-17T23:21:24.504Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -24991,11 +25095,11 @@ window.CV_CAREER_OPS_JOBS = {
       "url": "https://nvidia.wd5.myworkdayjobs.com/job/Taiwan-Hsinchu/SLT-Test-Engineer_JR2017506",
       "location": "Taiwan, Hsinchu",
       "description": "",
-      "datePosted": "Posted 5 Days Ago",
+      "datePosted": "Posted 6 Days Ago",
       "validThrough": "",
       "employmentType": "",
       "firstSeenAt": "2026-05-15T11:59:22.604Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -25022,7 +25126,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:53.017Z",
+      "evaluatedAt": "2026-05-17T23:21:24.506Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -25103,11 +25207,11 @@ window.CV_CAREER_OPS_JOBS = {
       "url": "https://nvidia.wd5.myworkdayjobs.com/job/Taiwan-Hsinchu/Manufacturing-Test-Engineer--ICT_JR2017824",
       "location": "Taiwan, Hsinchu",
       "description": "",
-      "datePosted": "Posted Yesterday",
+      "datePosted": "Posted 2 Days Ago",
       "validThrough": "",
       "employmentType": "",
       "firstSeenAt": "2026-05-15T11:59:22.604Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -25134,7 +25238,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:53.018Z",
+      "evaluatedAt": "2026-05-17T23:21:24.507Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -25215,11 +25319,11 @@ window.CV_CAREER_OPS_JOBS = {
       "url": "https://micron.wd1.myworkdayjobs.com/job/Taichung---MTB-Taiwan/HBM-EQUIPMENT-ENGINEER_JR100923",
       "location": "Taichung - MTB, Taiwan",
       "description": "Time type: Full time",
-      "datePosted": "Posted Yesterday",
+      "datePosted": "Posted 2 Days Ago",
       "validThrough": "",
       "employmentType": "Full time",
       "firstSeenAt": "2026-05-15T06:25:26.345Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -25245,7 +25349,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:53.092Z",
+      "evaluatedAt": "2026-05-17T23:21:24.567Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -25326,11 +25430,11 @@ window.CV_CAREER_OPS_JOBS = {
       "url": "https://micron.wd1.myworkdayjobs.com/job/Taichung---MTB-Taiwan/Engineer--HBM-MRDA-EQUIPMENT_JR100647",
       "location": "Taichung - MTB, Taiwan",
       "description": "Time type: Full time",
-      "datePosted": "Posted Yesterday",
+      "datePosted": "Posted 2 Days Ago",
       "validThrough": "",
       "employmentType": "Full time",
       "firstSeenAt": "2026-05-15T06:25:26.345Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -25356,7 +25460,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:53.092Z",
+      "evaluatedAt": "2026-05-17T23:21:24.567Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -25437,11 +25541,11 @@ window.CV_CAREER_OPS_JOBS = {
       "url": "https://micron.wd1.myworkdayjobs.com/job/Taichung---MTB-Taiwan/Engineering-Excellence-Engineer-2_JR100291",
       "location": "Taichung - MTB, Taiwan",
       "description": "Time type: Full time",
-      "datePosted": "Posted Yesterday",
+      "datePosted": "Posted 2 Days Ago",
       "validThrough": "",
       "employmentType": "Full time",
       "firstSeenAt": "2026-05-15T06:25:26.345Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -25467,7 +25571,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:53.093Z",
+      "evaluatedAt": "2026-05-17T23:21:24.567Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -25548,11 +25652,11 @@ window.CV_CAREER_OPS_JOBS = {
       "url": "https://micron.wd1.myworkdayjobs.com/job/Taichung---MTB-Taiwan/MTB-MFG-System-Engineer_JR101286",
       "location": "Taichung - MTB, Taiwan",
       "description": "Time type: Full time",
-      "datePosted": "Posted Yesterday",
+      "datePosted": "Posted 2 Days Ago",
       "validThrough": "",
       "employmentType": "Full time",
       "firstSeenAt": "2026-05-15T06:25:26.345Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -25578,7 +25682,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:53.093Z",
+      "evaluatedAt": "2026-05-17T23:21:24.568Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -25659,11 +25763,11 @@ window.CV_CAREER_OPS_JOBS = {
       "url": "https://micron.wd1.myworkdayjobs.com/job/Taichung---Fab-16-Taiwan/Facilities-Cost-Management-Engineer_JR96009",
       "location": "Taichung - Fab 16, Taiwan",
       "description": "Time type: Full time",
-      "datePosted": "Posted Yesterday",
+      "datePosted": "Posted 2 Days Ago",
       "validThrough": "",
       "employmentType": "Full time",
       "firstSeenAt": "2026-05-15T06:25:26.345Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -25689,7 +25793,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:53.094Z",
+      "evaluatedAt": "2026-05-17T23:21:24.568Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -25770,11 +25874,11 @@ window.CV_CAREER_OPS_JOBS = {
       "url": "https://micron.wd1.myworkdayjobs.com/job/Taoyuan---Fab-11-Taiwan/Photo-Track-Shift-Equipment-Engineer_JR90489",
       "location": "Taoyuan - Fab 11, Taiwan",
       "description": "Time type: Full time",
-      "datePosted": "Posted Yesterday",
+      "datePosted": "Posted 2 Days Ago",
       "validThrough": "",
       "employmentType": "Full time",
       "firstSeenAt": "2026-05-15T06:25:26.345Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -25800,7 +25904,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:53.094Z",
+      "evaluatedAt": "2026-05-17T23:21:24.568Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -25881,11 +25985,11 @@ window.CV_CAREER_OPS_JOBS = {
       "url": "https://micron.wd1.myworkdayjobs.com/job/Taichung---Fab-16-Taiwan/SR-ENGINEER--DEMQRA-COMPUTE-RMA_JR101134",
       "location": "Taichung - Fab 16, Taiwan",
       "description": "Time type: Full time",
-      "datePosted": "Posted Yesterday",
+      "datePosted": "Posted 2 Days Ago",
       "validThrough": "",
       "employmentType": "Full time",
       "firstSeenAt": "2026-05-15T06:25:26.345Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -25911,7 +26015,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:53.094Z",
+      "evaluatedAt": "2026-05-17T23:21:24.568Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -25992,11 +26096,11 @@ window.CV_CAREER_OPS_JOBS = {
       "url": "https://micron.wd1.myworkdayjobs.com/job/Taoyuan---Fab-11-Taiwan/SR-ENGINEER--OMT-MQC-PCT-TY_JR98395",
       "location": "Taoyuan - Fab 11, Taiwan",
       "description": "Time type: Full time",
-      "datePosted": "Posted 2 Days Ago",
+      "datePosted": "Posted 3 Days Ago",
       "validThrough": "",
       "employmentType": "Full time",
       "firstSeenAt": "2026-05-15T12:00:32.241Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -26022,7 +26126,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:53.094Z",
+      "evaluatedAt": "2026-05-17T23:21:24.568Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -26103,11 +26207,11 @@ window.CV_CAREER_OPS_JOBS = {
       "url": "https://micron.wd1.myworkdayjobs.com/job/Taichung---Fab-16-Taiwan/TEST-SOLUTIONS-ENGINEER_JR97683",
       "location": "Taichung - Fab 16, Taiwan",
       "description": "Time type: Full time",
-      "datePosted": "Posted 2 Days Ago",
+      "datePosted": "Posted 3 Days Ago",
       "validThrough": "",
       "employmentType": "Full time",
       "firstSeenAt": "2026-05-15T12:00:32.241Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -26133,7 +26237,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:53.094Z",
+      "evaluatedAt": "2026-05-17T23:21:24.569Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -26214,11 +26318,11 @@ window.CV_CAREER_OPS_JOBS = {
       "url": "https://micron.wd1.myworkdayjobs.com/job/Taichung---Fab-16-Taiwan/APTD-Operational-Excellence-Engineer_JR100321",
       "location": "Taichung - Fab 16, Taiwan",
       "description": "Time type: Full time",
-      "datePosted": "Posted 2 Days Ago",
+      "datePosted": "Posted 3 Days Ago",
       "validThrough": "",
       "employmentType": "Full time",
       "firstSeenAt": "2026-05-15T12:00:32.241Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -26244,7 +26348,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:53.095Z",
+      "evaluatedAt": "2026-05-17T23:21:24.569Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -26325,11 +26429,11 @@ window.CV_CAREER_OPS_JOBS = {
       "url": "https://micron.wd1.myworkdayjobs.com/job/Taichung---Fab-16-Taiwan/PMO-Cost-Engineer_JR99185-1",
       "location": "Taichung - Fab 16, Taiwan",
       "description": "Time type: Full time",
-      "datePosted": "Posted 2 Days Ago",
+      "datePosted": "Posted 3 Days Ago",
       "validThrough": "",
       "employmentType": "Full time",
       "firstSeenAt": "2026-05-15T12:00:32.241Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -26355,7 +26459,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:53.095Z",
+      "evaluatedAt": "2026-05-17T23:21:24.569Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -26436,11 +26540,11 @@ window.CV_CAREER_OPS_JOBS = {
       "url": "https://micron.wd1.myworkdayjobs.com/job/Miaoli---Tongluo-Taiwan/IQC-SR-Engineer_JR88023",
       "location": "Miaoli - Tongluo, Taiwan",
       "description": "Time type: Full time",
-      "datePosted": "Posted 2 Days Ago",
+      "datePosted": "Posted 3 Days Ago",
       "validThrough": "",
       "employmentType": "Full time",
       "firstSeenAt": "2026-05-15T12:00:32.241Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -26466,7 +26570,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:53.095Z",
+      "evaluatedAt": "2026-05-17T23:21:24.569Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -26547,11 +26651,11 @@ window.CV_CAREER_OPS_JOBS = {
       "url": "https://micron.wd1.myworkdayjobs.com/job/Taichung---MTB-Taiwan/Shift-Engineer--MTB-PWF-CVD-PVD_JR96316",
       "location": "Taichung - MTB, Taiwan",
       "description": "Time type: Full time",
-      "datePosted": "Posted 2 Days Ago",
+      "datePosted": "Posted 3 Days Ago",
       "validThrough": "",
       "employmentType": "Full time",
       "firstSeenAt": "2026-05-15T12:00:32.241Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -26577,7 +26681,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:53.095Z",
+      "evaluatedAt": "2026-05-17T23:21:24.569Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -26658,11 +26762,11 @@ window.CV_CAREER_OPS_JOBS = {
       "url": "https://micron.wd1.myworkdayjobs.com/job/Taoyuan---Fab-11-Taiwan/GAS-CHEMICAL-ENGINEER_JR93983",
       "location": "Taoyuan - Fab 11, Taiwan",
       "description": "Time type: Full time",
-      "datePosted": "Posted 2 Days Ago",
+      "datePosted": "Posted 3 Days Ago",
       "validThrough": "",
       "employmentType": "Full time",
       "firstSeenAt": "2026-05-15T12:00:32.241Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -26688,7 +26792,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:53.095Z",
+      "evaluatedAt": "2026-05-17T23:21:24.570Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -26769,11 +26873,11 @@ window.CV_CAREER_OPS_JOBS = {
       "url": "https://micron.wd1.myworkdayjobs.com/job/Taichung---Fab-16-Taiwan/Facility-Tool-Installation-Engineer_JR95366",
       "location": "Taichung - Fab 16, Taiwan",
       "description": "Time type: Full time",
-      "datePosted": "Posted 3 Days Ago",
+      "datePosted": "Posted 4 Days Ago",
       "validThrough": "",
       "employmentType": "Full time",
       "firstSeenAt": "2026-05-15T12:00:32.241Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -26799,7 +26903,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:53.096Z",
+      "evaluatedAt": "2026-05-17T23:21:24.570Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -26880,11 +26984,11 @@ window.CV_CAREER_OPS_JOBS = {
       "url": "https://micron.wd1.myworkdayjobs.com/job/Miaoli---Tongluo-Taiwan/XMLNAME----Environmental-Engineer_JR101391",
       "location": "Miaoli - Tongluo, Taiwan",
       "description": "Time type: Full time",
-      "datePosted": "Posted 3 Days Ago",
+      "datePosted": "Posted 4 Days Ago",
       "validThrough": "",
       "employmentType": "Full time",
       "firstSeenAt": "2026-05-15T12:00:32.241Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -26910,7 +27014,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:53.096Z",
+      "evaluatedAt": "2026-05-17T23:21:24.570Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -26991,11 +27095,11 @@ window.CV_CAREER_OPS_JOBS = {
       "url": "https://micron.wd1.myworkdayjobs.com/job/Taichung---MTB-Taiwan/Facility-engineer_JR96557",
       "location": "Taichung - MTB, Taiwan",
       "description": "Time type: Full time",
-      "datePosted": "Posted 3 Days Ago",
+      "datePosted": "Posted 4 Days Ago",
       "validThrough": "",
       "employmentType": "Full time",
       "firstSeenAt": "2026-05-15T12:00:32.241Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -27021,7 +27125,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:53.097Z",
+      "evaluatedAt": "2026-05-17T23:21:24.571Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -27102,11 +27206,11 @@ window.CV_CAREER_OPS_JOBS = {
       "url": "https://micron.wd1.myworkdayjobs.com/job/Taichung---MTB-Taiwan/Facility-engineer_JR96558",
       "location": "Taichung - MTB, Taiwan",
       "description": "Time type: Full time",
-      "datePosted": "Posted 3 Days Ago",
+      "datePosted": "Posted 4 Days Ago",
       "validThrough": "",
       "employmentType": "Full time",
       "firstSeenAt": "2026-05-15T12:00:32.241Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -27132,7 +27236,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:53.097Z",
+      "evaluatedAt": "2026-05-17T23:21:24.571Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -27213,11 +27317,11 @@ window.CV_CAREER_OPS_JOBS = {
       "url": "https://micron.wd1.myworkdayjobs.com/job/Miaoli---Tongluo-Taiwan/F16-Metrology-Application-Engineer_JR96059",
       "location": "Miaoli - Tongluo, Taiwan",
       "description": "Time type: Full time",
-      "datePosted": "Posted 3 Days Ago",
+      "datePosted": "Posted 4 Days Ago",
       "validThrough": "",
       "employmentType": "Full time",
       "firstSeenAt": "2026-05-15T12:00:32.241Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -27243,7 +27347,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:53.097Z",
+      "evaluatedAt": "2026-05-17T23:21:24.571Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -27324,11 +27428,11 @@ window.CV_CAREER_OPS_JOBS = {
       "url": "https://micron.wd1.myworkdayjobs.com/job/Taichung---MTB-Taiwan/Shift-Engineer--MTB-PWF-THINNING_JR99086-1",
       "location": "Taichung - MTB, Taiwan",
       "description": "Time type: Full time",
-      "datePosted": "Posted 4 Days Ago",
+      "datePosted": "Posted 5 Days Ago",
       "validThrough": "",
       "employmentType": "Full time",
       "firstSeenAt": "2026-05-15T12:00:32.241Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -27354,7 +27458,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:53.098Z",
+      "evaluatedAt": "2026-05-17T23:21:24.572Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -27435,11 +27539,11 @@ window.CV_CAREER_OPS_JOBS = {
       "url": "https://micron.wd1.myworkdayjobs.com/job/Taichung---MTB-Taiwan/Shift-Engineer--MTB-PWF-THINNING_JR99089",
       "location": "Taichung - MTB, Taiwan",
       "description": "Time type: Full time",
-      "datePosted": "Posted 4 Days Ago",
+      "datePosted": "Posted 5 Days Ago",
       "validThrough": "",
       "employmentType": "Full time",
       "firstSeenAt": "2026-05-15T12:00:32.241Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -27465,7 +27569,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:53.098Z",
+      "evaluatedAt": "2026-05-17T23:21:24.572Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -27546,11 +27650,11 @@ window.CV_CAREER_OPS_JOBS = {
       "url": "https://micron.wd1.myworkdayjobs.com/job/Taichung---MTB-Taiwan/Shift-Engineer--MTB-DRY-ETCH_JR99083",
       "location": "Taichung - MTB, Taiwan",
       "description": "Time type: Full time",
-      "datePosted": "Posted 4 Days Ago",
+      "datePosted": "Posted 5 Days Ago",
       "validThrough": "",
       "employmentType": "Full time",
       "firstSeenAt": "2026-05-15T12:00:32.241Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -27576,7 +27680,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:53.099Z",
+      "evaluatedAt": "2026-05-17T23:21:24.572Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -27657,11 +27761,11 @@ window.CV_CAREER_OPS_JOBS = {
       "url": "https://micron.wd1.myworkdayjobs.com/job/Taichung---MTB-Taiwan/Shift-Engineer--MTB-DRY-ETCH_JR99084-1",
       "location": "Taichung - MTB, Taiwan",
       "description": "Time type: Full time",
-      "datePosted": "Posted 4 Days Ago",
+      "datePosted": "Posted 5 Days Ago",
       "validThrough": "",
       "employmentType": "Full time",
       "firstSeenAt": "2026-05-15T12:00:32.241Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -27687,7 +27791,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:53.099Z",
+      "evaluatedAt": "2026-05-17T23:21:24.572Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -27768,11 +27872,11 @@ window.CV_CAREER_OPS_JOBS = {
       "url": "https://micron.wd1.myworkdayjobs.com/job/Taichung---MTB-Taiwan/Shift-Engineer--MTB-PWF-WET_JR96205-1",
       "location": "Taichung - MTB, Taiwan",
       "description": "Time type: Full time",
-      "datePosted": "Posted 4 Days Ago",
+      "datePosted": "Posted 5 Days Ago",
       "validThrough": "",
       "employmentType": "Full time",
       "firstSeenAt": "2026-05-15T12:00:32.241Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -27798,7 +27902,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:53.099Z",
+      "evaluatedAt": "2026-05-17T23:21:24.572Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -27879,11 +27983,11 @@ window.CV_CAREER_OPS_JOBS = {
       "url": "https://micron.wd1.myworkdayjobs.com/job/Taichung---MTB-Taiwan/PDE-HBM-NPI-Technician_JR99915",
       "location": "Taichung - MTB, Taiwan",
       "description": "Time type: Full time",
-      "datePosted": "Posted 4 Days Ago",
+      "datePosted": "Posted 5 Days Ago",
       "validThrough": "",
       "employmentType": "Full time",
       "firstSeenAt": "2026-05-15T12:00:32.241Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -27909,7 +28013,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:53.099Z",
+      "evaluatedAt": "2026-05-17T23:21:24.573Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -27990,11 +28094,11 @@ window.CV_CAREER_OPS_JOBS = {
       "url": "https://micron.wd1.myworkdayjobs.com/job/Taichung---Fab-16-Taiwan/Taiwan-Equipment-Engineer_JR91341",
       "location": "Taichung - Fab 16, Taiwan",
       "description": "Time type: Full time",
-      "datePosted": "Posted 4 Days Ago",
+      "datePosted": "Posted 5 Days Ago",
       "validThrough": "",
       "employmentType": "Full time",
       "firstSeenAt": "2026-05-15T12:00:32.241Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -28020,7 +28124,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:53.100Z",
+      "evaluatedAt": "2026-05-17T23:21:24.573Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -28101,11 +28205,11 @@ window.CV_CAREER_OPS_JOBS = {
       "url": "https://micron.wd1.myworkdayjobs.com/job/Taichung---Fab-16-Taiwan/ENGINEER--IE-AMHS_JR94437",
       "location": "Taichung - Fab 16, Taiwan",
       "description": "Time type: Full time",
-      "datePosted": "Posted 4 Days Ago",
+      "datePosted": "Posted 5 Days Ago",
       "validThrough": "",
       "employmentType": "Full time",
       "firstSeenAt": "2026-05-15T12:00:32.241Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -28131,7 +28235,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:53.100Z",
+      "evaluatedAt": "2026-05-17T23:21:24.573Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -28212,11 +28316,11 @@ window.CV_CAREER_OPS_JOBS = {
       "url": "https://micron.wd1.myworkdayjobs.com/job/Miaoli---Tongluo-Taiwan/Engineer--IE-AMHS_JR96733",
       "location": "Miaoli - Tongluo, Taiwan",
       "description": "Time type: Full time",
-      "datePosted": "Posted 4 Days Ago",
+      "datePosted": "Posted 5 Days Ago",
       "validThrough": "",
       "employmentType": "Full time",
       "firstSeenAt": "2026-05-15T12:00:32.241Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -28242,7 +28346,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:53.100Z",
+      "evaluatedAt": "2026-05-17T23:21:24.573Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -28323,11 +28427,11 @@ window.CV_CAREER_OPS_JOBS = {
       "url": "https://micron.wd1.myworkdayjobs.com/job/Miaoli---Tongluo-Taiwan/Engineer--IE-AMHS_JR96732",
       "location": "Miaoli - Tongluo, Taiwan",
       "description": "Time type: Full time",
-      "datePosted": "Posted 4 Days Ago",
+      "datePosted": "Posted 5 Days Ago",
       "validThrough": "",
       "employmentType": "Full time",
       "firstSeenAt": "2026-05-15T12:00:32.241Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -28353,7 +28457,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:53.100Z",
+      "evaluatedAt": "2026-05-17T23:21:24.574Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -28434,11 +28538,11 @@ window.CV_CAREER_OPS_JOBS = {
       "url": "https://micron.wd1.myworkdayjobs.com/job/Miaoli---Tongluo-Taiwan/Engineer--IE-AMHS_JR96731",
       "location": "Miaoli - Tongluo, Taiwan",
       "description": "Time type: Full time",
-      "datePosted": "Posted 4 Days Ago",
+      "datePosted": "Posted 5 Days Ago",
       "validThrough": "",
       "employmentType": "Full time",
       "firstSeenAt": "2026-05-15T12:00:32.241Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -28464,7 +28568,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:53.100Z",
+      "evaluatedAt": "2026-05-17T23:21:24.574Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -28545,11 +28649,11 @@ window.CV_CAREER_OPS_JOBS = {
       "url": "https://micron.wd1.myworkdayjobs.com/job/Miaoli---Tongluo-Taiwan/Engineer--IE-AMHS_JR96724",
       "location": "Miaoli - Tongluo, Taiwan",
       "description": "Time type: Full time",
-      "datePosted": "Posted 4 Days Ago",
+      "datePosted": "Posted 5 Days Ago",
       "validThrough": "",
       "employmentType": "Full time",
       "firstSeenAt": "2026-05-15T12:00:32.241Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -28575,7 +28679,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:53.100Z",
+      "evaluatedAt": "2026-05-17T23:21:24.574Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -28656,11 +28760,11 @@ window.CV_CAREER_OPS_JOBS = {
       "url": "https://micron.wd1.myworkdayjobs.com/job/Miaoli---Tongluo-Taiwan/Engineer--IE-AMHS_JR96730",
       "location": "Miaoli - Tongluo, Taiwan",
       "description": "Time type: Full time",
-      "datePosted": "Posted 4 Days Ago",
+      "datePosted": "Posted 5 Days Ago",
       "validThrough": "",
       "employmentType": "Full time",
       "firstSeenAt": "2026-05-15T12:00:32.241Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -28686,7 +28790,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:53.101Z",
+      "evaluatedAt": "2026-05-17T23:21:24.574Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -28767,11 +28871,11 @@ window.CV_CAREER_OPS_JOBS = {
       "url": "https://micron.wd1.myworkdayjobs.com/job/Miaoli---Tongluo-Taiwan/Engineer--IE-AMHS_JR96720",
       "location": "Miaoli - Tongluo, Taiwan",
       "description": "Time type: Full time",
-      "datePosted": "Posted 4 Days Ago",
+      "datePosted": "Posted 5 Days Ago",
       "validThrough": "",
       "employmentType": "Full time",
       "firstSeenAt": "2026-05-15T12:00:32.241Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -28797,7 +28901,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:53.101Z",
+      "evaluatedAt": "2026-05-17T23:21:24.574Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -28878,11 +28982,11 @@ window.CV_CAREER_OPS_JOBS = {
       "url": "https://micron.wd1.myworkdayjobs.com/job/Miaoli---Tongluo-Taiwan/XMLNAME---Facilities-Engineer-_JR101173",
       "location": "Miaoli - Tongluo, Taiwan",
       "description": "",
-      "datePosted": "Posted 5 Days Ago",
+      "datePosted": "Posted 6 Days Ago",
       "validThrough": "",
       "employmentType": "",
       "firstSeenAt": "2026-05-15T12:00:32.241Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -28908,7 +29012,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:53.101Z",
+      "evaluatedAt": "2026-05-17T23:21:24.575Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -28989,11 +29093,11 @@ window.CV_CAREER_OPS_JOBS = {
       "url": "https://micron.wd1.myworkdayjobs.com/job/Miaoli---Tongluo-Taiwan/XMLNAME----Environmental-Engineer_JR101353",
       "location": "Miaoli - Tongluo, Taiwan",
       "description": "Time type: Full time",
-      "datePosted": "Posted 5 Days Ago",
+      "datePosted": "Posted 6 Days Ago",
       "validThrough": "",
       "employmentType": "Full time",
       "firstSeenAt": "2026-05-15T12:00:32.241Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -29019,7 +29123,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:53.102Z",
+      "evaluatedAt": "2026-05-17T23:21:24.575Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -29100,11 +29204,11 @@ window.CV_CAREER_OPS_JOBS = {
       "url": "https://micron.wd1.myworkdayjobs.com/job/Taichung---MTB-Taiwan/ENGINEER--MTB-PQA-LAB_JR90993",
       "location": "Taichung - MTB, Taiwan",
       "description": "Time type: Full time",
-      "datePosted": "Posted 5 Days Ago",
+      "datePosted": "Posted 6 Days Ago",
       "validThrough": "",
       "employmentType": "Full time",
       "firstSeenAt": "2026-05-15T12:00:32.241Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -29130,7 +29234,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:53.103Z",
+      "evaluatedAt": "2026-05-17T23:21:24.575Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -29211,11 +29315,11 @@ window.CV_CAREER_OPS_JOBS = {
       "url": "https://micron.wd1.myworkdayjobs.com/job/Taichung---MTB-Taiwan/MTB-PROCESS-INTEGRATION-ENGINEER_JR98592",
       "location": "Taichung - MTB, Taiwan",
       "description": "Time type: Full time",
-      "datePosted": "Posted 5 Days Ago",
+      "datePosted": "Posted 6 Days Ago",
       "validThrough": "",
       "employmentType": "Full time",
       "firstSeenAt": "2026-05-15T12:00:32.241Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -29241,7 +29345,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:53.103Z",
+      "evaluatedAt": "2026-05-17T23:21:24.576Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -29322,11 +29426,11 @@ window.CV_CAREER_OPS_JOBS = {
       "url": "https://micron.wd1.myworkdayjobs.com/job/Taichung---MTB-Taiwan/MTB-PROCESS-INTEGRATION-ENGINEER_JR98587",
       "location": "Taichung - MTB, Taiwan",
       "description": "Time type: Full time",
-      "datePosted": "Posted 5 Days Ago",
+      "datePosted": "Posted 6 Days Ago",
       "validThrough": "",
       "employmentType": "Full time",
       "firstSeenAt": "2026-05-15T12:00:32.241Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -29352,7 +29456,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:53.103Z",
+      "evaluatedAt": "2026-05-17T23:21:24.576Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -29433,11 +29537,11 @@ window.CV_CAREER_OPS_JOBS = {
       "url": "https://micron.wd1.myworkdayjobs.com/job/Taichung---MTB-Taiwan/SR-MTB-PIE-ENGINEER_JR98585",
       "location": "Taichung - MTB, Taiwan",
       "description": "Time type: Full time",
-      "datePosted": "Posted 5 Days Ago",
+      "datePosted": "Posted 6 Days Ago",
       "validThrough": "",
       "employmentType": "Full time",
       "firstSeenAt": "2026-05-15T12:00:32.241Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -29463,7 +29567,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:53.103Z",
+      "evaluatedAt": "2026-05-17T23:21:24.576Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -29544,11 +29648,11 @@ window.CV_CAREER_OPS_JOBS = {
       "url": "https://micron.wd1.myworkdayjobs.com/job/Miaoli---Tongluo-Taiwan/Metrology-Operation-Engineer_JR92030",
       "location": "Miaoli - Tongluo, Taiwan",
       "description": "Time type: Full time",
-      "datePosted": "Posted 5 Days Ago",
+      "datePosted": "Posted 6 Days Ago",
       "validThrough": "",
       "employmentType": "Full time",
       "firstSeenAt": "2026-05-15T12:00:32.241Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -29574,7 +29678,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:53.103Z",
+      "evaluatedAt": "2026-05-17T23:21:24.576Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -29655,11 +29759,11 @@ window.CV_CAREER_OPS_JOBS = {
       "url": "https://micron.wd1.myworkdayjobs.com/job/Miaoli---Tongluo-Taiwan/ENGINEER--OMT-RAM-RDA-PROCESS_JR95810-1",
       "location": "Miaoli - Tongluo, Taiwan",
       "description": "Time type: Full time",
-      "datePosted": "Posted 5 Days Ago",
+      "datePosted": "Posted 6 Days Ago",
       "validThrough": "",
       "employmentType": "Full time",
       "firstSeenAt": "2026-05-15T12:00:32.241Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -29685,7 +29789,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:53.104Z",
+      "evaluatedAt": "2026-05-17T23:21:24.576Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -29766,11 +29870,11 @@ window.CV_CAREER_OPS_JOBS = {
       "url": "https://micron.wd1.myworkdayjobs.com/job/Taichung---Fab-16-Taiwan/FAC-SITE-SERVICE-ENGINEER_JR95247",
       "location": "Taichung - Fab 16, Taiwan",
       "description": "Time type: Full time",
-      "datePosted": "Posted 5 Days Ago",
+      "datePosted": "Posted 6 Days Ago",
       "validThrough": "",
       "employmentType": "Full time",
       "firstSeenAt": "2026-05-15T12:00:32.241Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -29796,7 +29900,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:53.104Z",
+      "evaluatedAt": "2026-05-17T23:21:24.577Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -29877,11 +29981,11 @@ window.CV_CAREER_OPS_JOBS = {
       "url": "https://micron.wd1.myworkdayjobs.com/job/Taichung---Fab-16-Taiwan/SHIFT-ENGINEER--MTB-PWF-ENGINEERING_JR96224",
       "location": "Taichung - Fab 16, Taiwan",
       "description": "Time type: Full time",
-      "datePosted": "Posted 5 Days Ago",
+      "datePosted": "Posted 6 Days Ago",
       "validThrough": "",
       "employmentType": "Full time",
       "firstSeenAt": "2026-05-15T12:00:32.241Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -29907,7 +30011,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:53.104Z",
+      "evaluatedAt": "2026-05-17T23:21:24.577Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -29992,7 +30096,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "",
       "firstSeenAt": "2026-05-15T12:00:32.241Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -30018,7 +30122,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:53.205Z",
+      "evaluatedAt": "2026-05-17T23:21:24.662Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -30103,7 +30207,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "",
       "firstSeenAt": "2026-05-15T13:50:36.342Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -30129,7 +30233,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:53.212Z",
+      "evaluatedAt": "2026-05-17T23:21:24.669Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -30214,7 +30318,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "",
       "firstSeenAt": "2026-05-15T06:25:04.793Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -30240,7 +30344,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:52.938Z",
+      "evaluatedAt": "2026-05-17T23:21:24.433Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -30325,7 +30429,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "Full-time",
       "firstSeenAt": "2026-05-15T04:51:24.165Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -30349,7 +30453,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:52.962Z",
+      "evaluatedAt": "2026-05-17T23:21:24.454Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -30434,7 +30538,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "Full-time",
       "firstSeenAt": "2026-05-15T04:51:24.165Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -30458,7 +30562,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:52.962Z",
+      "evaluatedAt": "2026-05-17T23:21:24.454Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -30543,7 +30647,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "",
       "firstSeenAt": "2026-05-15T06:25:26.345Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -30570,7 +30674,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:52.964Z",
+      "evaluatedAt": "2026-05-17T23:21:24.456Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -30655,7 +30759,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "",
       "firstSeenAt": "2026-05-15T11:59:22.604Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -30682,7 +30786,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:53.013Z",
+      "evaluatedAt": "2026-05-17T23:21:24.502Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -30767,7 +30871,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "",
       "firstSeenAt": "2026-05-15T11:59:22.604Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -30794,7 +30898,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:53.014Z",
+      "evaluatedAt": "2026-05-17T23:21:24.502Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -30879,7 +30983,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "",
       "firstSeenAt": "2026-05-15T11:59:22.604Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -30906,7 +31010,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:53.014Z",
+      "evaluatedAt": "2026-05-17T23:21:24.503Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -30991,7 +31095,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "",
       "firstSeenAt": "2026-05-15T11:59:22.604Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -31018,7 +31122,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:53.014Z",
+      "evaluatedAt": "2026-05-17T23:21:24.503Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -31099,11 +31203,11 @@ window.CV_CAREER_OPS_JOBS = {
       "url": "https://nvidia.wd5.myworkdayjobs.com/job/Taiwan-Hsinchu/Senior-Process-Engineer_JR2016283",
       "location": "Taiwan, Hsinchu",
       "description": "",
-      "datePosted": "Posted 26 Days Ago",
+      "datePosted": "Posted 27 Days Ago",
       "validThrough": "",
       "employmentType": "",
       "firstSeenAt": "2026-05-15T11:59:22.604Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -31130,7 +31234,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:53.015Z",
+      "evaluatedAt": "2026-05-17T23:21:24.503Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -31211,11 +31315,11 @@ window.CV_CAREER_OPS_JOBS = {
       "url": "https://nvidia.wd5.myworkdayjobs.com/job/Taiwan-Hsinchu/Senior-Test-Methodology-Engineer_JR2016728",
       "location": "Taiwan, Hsinchu",
       "description": "",
-      "datePosted": "Posted 16 Days Ago",
+      "datePosted": "Posted 17 Days Ago",
       "validThrough": "",
       "employmentType": "",
       "firstSeenAt": "2026-05-15T11:59:22.604Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -31242,7 +31346,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:53.017Z",
+      "evaluatedAt": "2026-05-17T23:21:24.506Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -31323,11 +31427,11 @@ window.CV_CAREER_OPS_JOBS = {
       "url": "https://nvidia.wd5.myworkdayjobs.com/job/Taiwan-Hsinchu/Senior-Chip-Assembly-Manufacturing-Development-Engineer_JR2015098",
       "location": "Taiwan, Hsinchu",
       "description": "",
-      "datePosted": "Posted 16 Days Ago",
+      "datePosted": "Posted 17 Days Ago",
       "validThrough": "",
       "employmentType": "",
       "firstSeenAt": "2026-05-15T11:59:22.604Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -31354,7 +31458,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:53.017Z",
+      "evaluatedAt": "2026-05-17T23:21:24.506Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -31435,11 +31539,11 @@ window.CV_CAREER_OPS_JOBS = {
       "url": "https://micron.wd1.myworkdayjobs.com/job/Taichung---Fab-16-Taiwan/Senior-Engineer--Assembly---Test-Central-QA_JR99970",
       "location": "Taichung - Fab 16, Taiwan",
       "description": "Time type: Full time",
-      "datePosted": "Posted 3 Days Ago",
+      "datePosted": "Posted 4 Days Ago",
       "validThrough": "",
       "employmentType": "Full time",
       "firstSeenAt": "2026-05-15T12:00:32.241Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -31465,7 +31569,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:53.097Z",
+      "evaluatedAt": "2026-05-17T23:21:24.571Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -31546,11 +31650,11 @@ window.CV_CAREER_OPS_JOBS = {
       "url": "https://logitech.wd5.myworkdayjobs.com/job/Hsinchu-Taiwan/Senior-Imaging-QA-Engineer_146040",
       "location": "Hsinchu, Taiwan",
       "description": "",
-      "datePosted": "Posted 23 Days Ago",
+      "datePosted": "Posted 24 Days Ago",
       "validThrough": "",
       "employmentType": "",
       "firstSeenAt": "2026-05-15T12:00:32.241Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -31576,7 +31680,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:53.205Z",
+      "evaluatedAt": "2026-05-17T23:21:24.662Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -31661,7 +31765,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "",
       "firstSeenAt": "2026-05-15T13:51:00.043Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -31688,7 +31792,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:53.211Z",
+      "evaluatedAt": "2026-05-17T23:21:24.668Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -31773,7 +31877,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "",
       "firstSeenAt": "2026-05-15T13:50:52.583Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -31801,7 +31905,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:53.212Z",
+      "evaluatedAt": "2026-05-17T23:21:24.668Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -31875,31 +31979,27 @@ window.CV_CAREER_OPS_JOBS = {
       }
     },
     {
-      "source": "Micron Workday",
-      "sourceType": "adapter:workday",
-      "title": "PHOTO TRACK ENG. PE (AI automation)",
-      "company": "Micron Workday",
-      "url": "https://micron.wd1.myworkdayjobs.com/job/Taichung---Fab-16-Taiwan/PHOTO-TRACK-ENG-PE--AI-automation-_JR95008",
-      "location": "Taichung - Fab 16, Taiwan",
-      "description": "Time type: Full time",
-      "datePosted": "Posted 5 Days Ago",
+      "source": "Source flex job board",
+      "sourceType": "discovered-link",
+      "title": "[(주)필라넷] Microsoft Engineer 경력자(D-21) - 사람인",
+      "company": "사람인",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=list&rec_idx=53822317",
+      "location": "",
+      "description": "(주)필라넷, Microsoft Engineer 경력자, 경력:경력 4~10년, 학력:고등학교졸업이상, 면접 후 결정, 마감일:2026-06-08, 홈페이지:www.feelanet.com",
+      "datePosted": "",
       "validThrough": "",
-      "employmentType": "Full time",
-      "firstSeenAt": "2026-05-15T12:00:32.241Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
-      "isNew": false,
+      "employmentType": "",
+      "firstSeenAt": "2026-05-17T23:21:23.392Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
+      "isNew": true,
       "isExpired": false,
       "expiredAt": "",
-      "jobKey": "url:https://micron.wd1.myworkdayjobs.com/job/taichung---fab-16-taiwan/photo-track-eng-pe--ai-automation-_jr95008",
-      "sourceMarket": "tw",
-      "sourceIndustry": "semiconductor-memory",
-      "sourceStrategy": "tracked-company",
+      "jobKey": "url:https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=list&rec_idx=53822317",
+      "sourceMarket": "kr",
+      "sourceIndustry": "",
+      "sourceStrategy": "flex-job-board",
       "sourceTags": [
-        "multinational",
-        "semiconductor",
-        "taiwan",
-        "workday",
-        "internationalized"
+        "flex-job-board"
       ],
       "sourceQuality": {
         "score": 82,
@@ -31908,26 +32008,28 @@ window.CV_CAREER_OPS_JOBS = {
           "thin-description"
         ]
       },
-      "score": 32,
+      "score": 33,
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:53.104Z",
+      "evaluatedAt": "2026-05-17T23:21:24.877Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
           "grade": "F",
-          "score": 32,
+          "score": 33,
           "recommendation": "略過",
-          "summary": "以 11 個維度比對，命中 0 個履歷技能，市場技能命中 0 個。"
+          "summary": "以 11 個維度比對，命中 1 個履歷技能，市場技能命中 0 個。"
         },
         "decision_factors": [
           "職類：Other；資歷：Mid；模式：Unknown",
-          "履歷技能命中偏低",
+          "履歷技能命中：engineer",
           "未偵測到明顯稀有技能訊號"
         ],
         "ats_keywords": {
-          "found": [],
+          "found": [
+            "engineer"
+          ],
           "missing": []
         },
         "risks": [],
@@ -31937,7 +32039,7 @@ window.CV_CAREER_OPS_JOBS = {
         ]
       },
       "intelligence": {
-        "score": 32,
+        "score": 33,
         "grade": "F",
         "recommendation": "略過",
         "features": {
@@ -31945,7 +32047,9 @@ window.CV_CAREER_OPS_JOBS = {
           "seniority": "Mid",
           "workMode": "Unknown",
           "skills": [],
-          "profileSkillHits": [],
+          "profileSkillHits": [
+            "engineer"
+          ],
           "profileSkillsNotInJd": [
             "JavaScript",
             "TypeScript",
@@ -31967,15 +32071,15 @@ window.CV_CAREER_OPS_JOBS = {
           "avoidHits": []
         },
         "dimensions": {
-          "profileMatch": 0,
-          "atsCoverage": 0,
+          "profileMatch": 14,
+          "atsCoverage": 4,
           "roleFit": 45,
           "seniorityFit": 82,
           "locationFit": 58,
-          "sourceQuality": 90,
-          "freshness": 76,
+          "sourceQuality": 55,
+          "freshness": 95,
           "compensationSignal": 52,
-          "growthSignal": 66,
+          "growthSignal": 48,
           "applicationEffort": 72,
           "riskPenalty": 12
         }
@@ -31989,11 +32093,11 @@ window.CV_CAREER_OPS_JOBS = {
       "url": "https://logitech.wd5.myworkdayjobs.com/job/Hsinchu-Taiwan/XMLNAME--Summer-Internship--Automation-Developer-Intern_146256",
       "location": "Hsinchu, Taiwan",
       "description": "",
-      "datePosted": "Posted 2 Days Ago",
+      "datePosted": "Posted 3 Days Ago",
       "validThrough": "",
       "employmentType": "",
       "firstSeenAt": "2026-05-15T12:00:32.241Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -32019,7 +32123,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:53.205Z",
+      "evaluatedAt": "2026-05-17T23:21:24.662Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -32096,11 +32200,11 @@ window.CV_CAREER_OPS_JOBS = {
       "url": "https://logitech.wd5.myworkdayjobs.com/job/Hsinchu-Taiwan/XMLNAME--Summer-Internship--Field-Quality-Analyst-Intern--AI---System-Integration-_146242",
       "location": "Hsinchu, Taiwan",
       "description": "",
-      "datePosted": "Posted 12 Days Ago",
+      "datePosted": "Posted 13 Days Ago",
       "validThrough": "",
       "employmentType": "",
       "firstSeenAt": "2026-05-15T06:25:26.345Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -32126,7 +32230,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:53.205Z",
+      "evaluatedAt": "2026-05-17T23:21:24.662Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -32203,11 +32307,11 @@ window.CV_CAREER_OPS_JOBS = {
       "url": "https://logitech.wd5.myworkdayjobs.com/job/Hsinchu-Taiwan/XMLNAME--Summer-Internship--ESW-AI-Automemtion-Intern_146498",
       "location": "Hsinchu, Taiwan",
       "description": "",
-      "datePosted": "Posted 12 Days Ago",
+      "datePosted": "Posted 13 Days Ago",
       "validThrough": "",
       "employmentType": "",
       "firstSeenAt": "2026-05-15T06:25:26.345Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -32233,7 +32337,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:53.205Z",
+      "evaluatedAt": "2026-05-17T23:21:24.662Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -32314,7 +32418,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "",
       "firstSeenAt": "2026-05-15T06:25:04.793Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -32340,7 +32444,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:52.937Z",
+      "evaluatedAt": "2026-05-17T23:21:24.432Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -32423,11 +32527,11 @@ window.CV_CAREER_OPS_JOBS = {
       "url": "https://micron.wd1.myworkdayjobs.com/job/Miaoli---Tongluo-Taiwan/XMLNAME---_JR101352-1",
       "location": "Miaoli - Tongluo, Taiwan",
       "description": "Time type: Full time",
-      "datePosted": "Posted 5 Days Ago",
+      "datePosted": "Posted 6 Days Ago",
       "validThrough": "",
       "employmentType": "Full time",
       "firstSeenAt": "2026-05-15T12:00:32.241Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -32453,7 +32557,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:53.102Z",
+      "evaluatedAt": "2026-05-17T23:21:24.575Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -32534,7 +32638,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "",
       "firstSeenAt": "2026-05-15T06:25:26.345Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -32562,7 +32666,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:52.966Z",
+      "evaluatedAt": "2026-05-17T23:21:24.459Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -32633,56 +32737,55 @@ window.CV_CAREER_OPS_JOBS = {
     },
     {
       "source": "Source flex job board",
-      "sourceType": "json-ld",
-      "title": "IT support specialist, Digital Bank, Tokyo",
-      "company": "Money Forward",
-      "url": "https://www.tokyodev.com/companies/moneyforward/jobs/it-support-specialist-digital-bank-tokyo",
-      "location": "Minato-ku, Tokyo, JP",
-      "description": "We have partnered with Sumitomo Mitsui Financial Group, Inc. and Sumitomo Mitsui Banking Corporation to establish a new company in preparation for the launch of a new digital bank.\n\n We are currently seeking candidates for the position of IT support specialist as part of this initiative.\n\n ※ This position involves employment with Money Forward, Inc., and a secondment to the new company (SMBC Money Forward Bank Preparatory Corporation). The evaluation system and employee benefits will follow the policies of Money Forward, Inc.\n\n Technology Stack and Tools Used\n\n Slack\n\n EntraID\n\n Microsoft 365\n\n Atlassian Jira\n\n Atlassian Confluence\n\n Responsibilities\n\n Provide daily IT support within the company, including computer hardware, VOIP phones, smartphones, tablets, SaaS, etc.\n\n Handle daily permission and account management workflow requests\n\n Communicate efficiently via text chat and verbally, collaborating with relevant internal and external members throughout the process\n\n Take ownership of incoming IT requests and tickets from opening of a ticket to its resolution, ensuring accurate issue resolution is captured\n\n Onboarding and offboarding users\n\nProcure, manage, operate, install, apply patches/upgrades, replace, and repair IT software/hardware\n\n Demonstrate solid troubleshooting skills for identifying the root cause of issues in order to provide the most suitable way to resolve them\n\n You will be the go to person within the team around the end user facing technologies that the Global IT team is currently supporting\n\n The team embraces a user focused support experience when it comes to helping users\n\n Requirements\n\n Three or more years experience in IT Support / Help Desk duties\n\n Use of a ticket-based incident management systems (example: ServiceNow, ZenDesk, Jira Service Management)\n\n Support and troubleshooting devices running macOS and/or Windows 11\n\n Support for mobile devices like iOS, iPadOS, Android\n\n Basic hardware diagnostics and repairs skills\n\n Basic knowledge of IT security practices and policy\n\n A working knowledge of Generative AI, and AI from an end user perspective, and have experience using it in a corporate environment\n\n Ability to work across the organization with agility and communication skills\n\n Excellent written and verbal communication skills\n\n Flexible mindset to adapt and grow in a dynamic and innovative environment\n\n Able to work in an networked organization\n\n Japanese: Business level - JLPT 2 or equivalent\n\n The role includes supporting Japanese speaking only users\n\n The role requires handling tickets and workflow requests that are written in Japanese\n\n English: Basic business level (equivalent to TOEIC 700 points or higher)\n\n As the scope of work includes overseas locations and communicating with English speaking users, meetings and text communication will occur in both Japanese and English\n\n Those without qualifications equivalent to TOEIC 700 points or higher will be required to take a company-designated test during the selection process (typically after the first interview)\n\n Nice to haves\n While not specifically required, tell us if you have any of the following.\n\n Document creation and updates, such as operational procedures\n\n Five or more years experience in supporting and troubleshooting macOS/iOS devices\n\n Experience working in IT startups, ventures or multinational corporations\n\n Experience using MDM tools (Jamf Pro and/or MS Intune)\n\n Experience operating groupware like Google Workspace, EntraID\n\n Experience in IT asset management\n\n Automation of routine tasks through the use of scripting languages, and/or low and no-code solutions\n\n Procurement and asset management of IT equipment and licenses\n\n Vendor management experience\n\n Knowledge of internal networks, DNS, DHCP, and troubleshooting wired/wireless LAN\n\n CompTIA A+ certification or equivalent knowledge/experience\n\n ITIL 4 Foundation certification or equivalent knowledge/experience\n\n Experience in AI development and/or experience in using AI tools to improve development processes.\n\n Money Forward recently announced our AI Strategy roadmap which focuses on improving AI-driven operational efficiencies, as well as integrating AI agents into our products to deliver better value to our users.",
-      "datePosted": "2026-03-06T16:40:30.291+09:00",
+      "sourceType": "discovered-link",
+      "title": "[(주)송영철공작소] AI 영상 제작 및 영상 기획 채용(D-23) - 사람인",
+      "company": "사람인",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=list&rec_idx=53860764",
+      "location": "",
+      "description": "(주)송영철공작소, AI 영상 제작 및 영상 기획 채용, 경력:신입/경력, 학력:대학졸업(2,3년)이상, 면접 후 결정, 마감일:2026-06-10, 홈페이지:",
+      "datePosted": "",
       "validThrough": "",
-      "employmentType": "FULL_TIME",
-      "firstSeenAt": "2026-05-16T23:18:51.813Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "employmentType": "",
+      "firstSeenAt": "2026-05-17T23:21:23.392Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": true,
       "isExpired": false,
       "expiredAt": "",
-      "jobKey": "url:https://www.tokyodev.com/companies/moneyforward/jobs/it-support-specialist-digital-bank-tokyo",
-      "sourceMarket": "jp",
+      "jobKey": "url:https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=list&rec_idx=53860764",
+      "sourceMarket": "kr",
       "sourceIndustry": "",
       "sourceStrategy": "flex-job-board",
       "sourceTags": [
         "flex-job-board"
       ],
       "sourceQuality": {
-        "score": 100,
+        "score": 82,
         "tier": "high",
-        "reasons": []
+        "reasons": [
+          "thin-description"
+        ]
       },
       "score": 30,
       "grade": "F",
       "recommendation": "略過",
-      "status": "觀望",
-      "evaluatedAt": "2026-05-16T23:18:53.378Z",
+      "status": "略過",
+      "evaluatedAt": "2026-05-17T23:21:24.877Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
           "grade": "F",
           "score": 30,
           "recommendation": "略過",
-          "summary": "以 11 個維度比對，命中 0 個履歷技能，市場技能命中 2 個。"
+          "summary": "以 11 個維度比對，命中 0 個履歷技能，市場技能命中 0 個。"
         },
         "decision_factors": [
-          "職類：Internship；資歷：Mid；模式：Unknown",
+          "職類：Other；資歷：Mid；模式：Unknown",
           "履歷技能命中偏低",
           "未偵測到明顯稀有技能訊號"
         ],
         "ats_keywords": {
           "found": [],
-          "missing": [
-            "go",
-            "agents"
-          ]
+          "missing": []
         },
         "risks": [],
         "next_actions": [
@@ -32695,13 +32798,10 @@ window.CV_CAREER_OPS_JOBS = {
         "grade": "F",
         "recommendation": "略過",
         "features": {
-          "roleFamily": "Internship",
+          "roleFamily": "Other",
           "seniority": "Mid",
           "workMode": "Unknown",
-          "skills": [
-            "go",
-            "agents"
-          ],
+          "skills": [],
           "profileSkillHits": [],
           "profileSkillsNotInJd": [
             "JavaScript",
@@ -32717,11 +32817,8 @@ window.CV_CAREER_OPS_JOBS = {
             "Performance Optimization",
             "Design Systems"
           ],
-          "jdSkillsMissingFromProfile": [
-            "go",
-            "agents"
-          ],
-          "requiresUnknownLanguage": true,
+          "jdSkillsMissingFromProfile": [],
+          "requiresUnknownLanguage": false,
           "rareHighValueSkills": [],
           "locationHits": [],
           "avoidHits": []
@@ -32729,120 +32826,15 @@ window.CV_CAREER_OPS_JOBS = {
         "dimensions": {
           "profileMatch": 0,
           "atsCoverage": 0,
-          "roleFit": 68,
-          "seniorityFit": 82,
-          "locationFit": 58,
-          "sourceQuality": 78,
-          "freshness": 95,
-          "compensationSignal": 52,
-          "growthSignal": 75,
-          "applicationEffort": 86,
-          "riskPenalty": 20
-        }
-      }
-    },
-    {
-      "source": "Source flex job board",
-      "sourceType": "json-ld",
-      "title": "QA Manager, Digital Bank",
-      "company": "Money Forward",
-      "url": "https://www.tokyodev.com/companies/moneyforward/jobs/qa-manager-digital-bank",
-      "location": "Minato-ku, Tokyo, JP",
-      "description": "At Money Forward, we have initiated a new venture in collaboration with Sumitomo Mitsui Financial Group and Sumitomo Mitsui Banking Corporation to explore the provision of BaaS (Banking as a Service) and digital banking solutions.\n\n We are currently seeking a QA Manager for this initiative.\n\n Responsibilities\n\n QA organization management, including recruitment and development (members across multiple locations: Japan and Vietnam)\n\n Formulation of test strategies (unit testing, integration testing, system testing, functional/non-functional requirements, including automation)\n\n Collection, measurement, analysis, and consideration of defect data for continuous quality improvement\n\n Standardization of development and testing processes\n\n Requirements\n\n Over 3 years of experience in QA management\n\n Experience managing a team composed of 5 or more members\n\n Experience in formulating and executing test strategies with a focus on QCD (Quality, Cost, Delivery)\n\n Bachelor’s degree in information processing or computer science, or equivalent knowledge\n\n Possession of ISTQB or JSTQB Foundation Level certification, or equivalent knowledge; ISTQB Advanced Level is a plus\n\n Interest and enthusiasm for communication in a global development environment\n\n Business level Japanese (N2 or above)\n\n Nice to haves\n While not specifically required, tell us if you have any of the following.\n\n Experience in AI development or using AI tools for development",
-      "datePosted": "2026-01-06T14:27:23.980+09:00",
-      "validThrough": "",
-      "employmentType": "FULL_TIME",
-      "firstSeenAt": "2026-05-16T23:18:51.813Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
-      "isNew": true,
-      "isExpired": false,
-      "expiredAt": "",
-      "jobKey": "url:https://www.tokyodev.com/companies/moneyforward/jobs/qa-manager-digital-bank",
-      "sourceMarket": "jp",
-      "sourceIndustry": "",
-      "sourceStrategy": "flex-job-board",
-      "sourceTags": [
-        "flex-job-board"
-      ],
-      "sourceQuality": {
-        "score": 100,
-        "tier": "high",
-        "reasons": []
-      },
-      "score": 30,
-      "grade": "F",
-      "recommendation": "略過",
-      "status": "值得投遞",
-      "evaluatedAt": "2026-05-16T23:18:53.413Z",
-      "evaluation": {
-        "source": "career-ops-intelligence",
-        "overall": {
-          "grade": "F",
-          "score": 30,
-          "recommendation": "略過",
-          "summary": "以 11 個維度比對，命中 1 個履歷技能，市場技能命中 0 個。"
-        },
-        "decision_factors": [
-          "職類：Other；資歷：Manager+；模式：Unknown",
-          "履歷技能命中：data",
-          "未偵測到明顯稀有技能訊號"
-        ],
-        "ats_keywords": {
-          "found": [
-            "data"
-          ],
-          "missing": []
-        },
-        "risks": [],
-        "next_actions": [
-          "先與高分職缺比較，不急著投遞",
-          "補齊 JD 或標記喜歡 / 不喜歡以改善後續排序"
-        ]
-      },
-      "intelligence": {
-        "score": 30,
-        "grade": "F",
-        "recommendation": "略過",
-        "features": {
-          "roleFamily": "Other",
-          "seniority": "Manager+",
-          "workMode": "Unknown",
-          "skills": [],
-          "profileSkillHits": [
-            "data"
-          ],
-          "profileSkillsNotInJd": [
-            "JavaScript",
-            "TypeScript",
-            "React",
-            "Next.js",
-            "CSS",
-            "Tailwind",
-            "Accessibility",
-            "Analytics",
-            "API",
-            "Figma",
-            "Performance Optimization",
-            "Design Systems"
-          ],
-          "jdSkillsMissingFromProfile": [],
-          "requiresUnknownLanguage": true,
-          "rareHighValueSkills": [],
-          "locationHits": [],
-          "avoidHits": []
-        },
-        "dimensions": {
-          "profileMatch": 14,
-          "atsCoverage": 4,
           "roleFit": 45,
           "seniorityFit": 82,
           "locationFit": 58,
-          "sourceQuality": 78,
+          "sourceQuality": 55,
           "freshness": 95,
           "compensationSignal": 52,
-          "growthSignal": 75,
-          "applicationEffort": 86,
-          "riskPenalty": 20
+          "growthSignal": 57,
+          "applicationEffort": 72,
+          "riskPenalty": 12
         }
       }
     },
@@ -32858,7 +32850,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "",
       "firstSeenAt": "2026-05-15T06:24:14.186Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -32883,7 +32875,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:52.935Z",
+      "evaluatedAt": "2026-05-17T23:21:24.430Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -32964,7 +32956,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "2026-10-30",
       "employmentType": "FULL_TIME",
       "firstSeenAt": "2026-05-15T04:51:08.174Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -32984,7 +32976,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "值得投遞",
-      "evaluatedAt": "2026-05-16T23:18:53.276Z",
+      "evaluatedAt": "2026-05-17T23:21:24.727Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -33064,6 +33056,111 @@ window.CV_CAREER_OPS_JOBS = {
       }
     },
     {
+      "source": "Source flex job board",
+      "sourceType": "json-ld",
+      "title": "QA Manager, Digital Bank",
+      "company": "Money Forward",
+      "url": "https://www.tokyodev.com/companies/moneyforward/jobs/qa-manager-digital-bank",
+      "location": "Minato-ku, Tokyo, JP",
+      "description": "At Money Forward, we have initiated a new venture in collaboration with Sumitomo Mitsui Financial Group and Sumitomo Mitsui Banking Corporation to explore the provision of BaaS (Banking as a Service) and digital banking solutions.\n\n We are currently seeking a QA Manager for this initiative.\n\n Responsibilities\n\n QA organization management, including recruitment and development (members across multiple locations: Japan and Vietnam)\n\n Formulation of test strategies (unit testing, integration testing, system testing, functional/non-functional requirements, including automation)\n\n Collection, measurement, analysis, and consideration of defect data for continuous quality improvement\n\n Standardization of development and testing processes\n\n Requirements\n\n Over 3 years of experience in QA management\n\n Experience managing a team composed of 5 or more members\n\n Experience in formulating and executing test strategies with a focus on QCD (Quality, Cost, Delivery)\n\n Bachelor’s degree in information processing or computer science, or equivalent knowledge\n\n Possession of ISTQB or JSTQB Foundation Level certification, or equivalent knowledge; ISTQB Advanced Level is a plus\n\n Interest and enthusiasm for communication in a global development environment\n\n Business level Japanese (N2 or above)\n\n Nice to haves\n While not specifically required, tell us if you have any of the following.\n\n Experience in AI development or using AI tools for development",
+      "datePosted": "2026-01-06T14:27:23.980+09:00",
+      "validThrough": "",
+      "employmentType": "FULL_TIME",
+      "firstSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
+      "isNew": false,
+      "isExpired": false,
+      "expiredAt": "",
+      "jobKey": "url:https://www.tokyodev.com/companies/moneyforward/jobs/qa-manager-digital-bank",
+      "sourceMarket": "jp",
+      "sourceIndustry": "",
+      "sourceStrategy": "flex-job-board",
+      "sourceTags": [
+        "flex-job-board"
+      ],
+      "sourceQuality": {
+        "score": 100,
+        "tier": "high",
+        "reasons": []
+      },
+      "score": 29,
+      "grade": "F",
+      "recommendation": "略過",
+      "status": "值得投遞",
+      "evaluatedAt": "2026-05-17T23:21:24.856Z",
+      "evaluation": {
+        "source": "career-ops-intelligence",
+        "overall": {
+          "grade": "F",
+          "score": 29,
+          "recommendation": "略過",
+          "summary": "以 11 個維度比對，命中 1 個履歷技能，市場技能命中 0 個。"
+        },
+        "decision_factors": [
+          "職類：Other；資歷：Manager+；模式：Unknown",
+          "履歷技能命中：data",
+          "未偵測到明顯稀有技能訊號"
+        ],
+        "ats_keywords": {
+          "found": [
+            "data"
+          ],
+          "missing": []
+        },
+        "risks": [],
+        "next_actions": [
+          "先與高分職缺比較，不急著投遞",
+          "補齊 JD 或標記喜歡 / 不喜歡以改善後續排序"
+        ]
+      },
+      "intelligence": {
+        "score": 29,
+        "grade": "F",
+        "recommendation": "略過",
+        "features": {
+          "roleFamily": "Other",
+          "seniority": "Manager+",
+          "workMode": "Unknown",
+          "skills": [],
+          "profileSkillHits": [
+            "data"
+          ],
+          "profileSkillsNotInJd": [
+            "JavaScript",
+            "TypeScript",
+            "React",
+            "Next.js",
+            "CSS",
+            "Tailwind",
+            "Accessibility",
+            "Analytics",
+            "API",
+            "Figma",
+            "Performance Optimization",
+            "Design Systems"
+          ],
+          "jdSkillsMissingFromProfile": [],
+          "requiresUnknownLanguage": true,
+          "rareHighValueSkills": [],
+          "locationHits": [],
+          "avoidHits": []
+        },
+        "dimensions": {
+          "profileMatch": 14,
+          "atsCoverage": 4,
+          "roleFit": 45,
+          "seniorityFit": 82,
+          "locationFit": 58,
+          "sourceQuality": 78,
+          "freshness": 76,
+          "compensationSignal": 52,
+          "growthSignal": 75,
+          "applicationEffort": 86,
+          "riskPenalty": 20
+        }
+      }
+    },
+    {
       "source": "Trend Micro",
       "sourceType": "discovered-link",
       "title": "Trend Micro",
@@ -33075,7 +33172,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "",
       "firstSeenAt": "2026-05-15T06:24:14.186Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -33100,7 +33197,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:52.936Z",
+      "evaluatedAt": "2026-05-17T23:21:24.431Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -33181,7 +33278,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "",
       "firstSeenAt": "2026-05-15T06:25:26.345Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -33208,7 +33305,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:52.965Z",
+      "evaluatedAt": "2026-05-17T23:21:24.458Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -33278,6 +33375,116 @@ window.CV_CAREER_OPS_JOBS = {
       }
     },
     {
+      "source": "Source flex job board",
+      "sourceType": "json-ld",
+      "title": "IT support specialist, Digital Bank, Tokyo",
+      "company": "Money Forward",
+      "url": "https://www.tokyodev.com/companies/moneyforward/jobs/it-support-specialist-digital-bank-tokyo",
+      "location": "Minato-ku, Tokyo, JP",
+      "description": "We have partnered with Sumitomo Mitsui Financial Group, Inc. and Sumitomo Mitsui Banking Corporation to establish a new company in preparation for the launch of a new digital bank.\n\n We are currently seeking candidates for the position of IT support specialist as part of this initiative.\n\n ※ This position involves employment with Money Forward, Inc., and a secondment to the new company (SMBC Money Forward Bank Preparatory Corporation). The evaluation system and employee benefits will follow the policies of Money Forward, Inc.\n\n Technology Stack and Tools Used\n\n Slack\n\n EntraID\n\n Microsoft 365\n\n Atlassian Jira\n\n Atlassian Confluence\n\n Responsibilities\n\n Provide daily IT support within the company, including computer hardware, VOIP phones, smartphones, tablets, SaaS, etc.\n\n Handle daily permission and account management workflow requests\n\n Communicate efficiently via text chat and verbally, collaborating with relevant internal and external members throughout the process\n\n Take ownership of incoming IT requests and tickets from opening of a ticket to its resolution, ensuring accurate issue resolution is captured\n\n Onboarding and offboarding users\n\nProcure, manage, operate, install, apply patches/upgrades, replace, and repair IT software/hardware\n\n Demonstrate solid troubleshooting skills for identifying the root cause of issues in order to provide the most suitable way to resolve them\n\n You will be the go to person within the team around the end user facing technologies that the Global IT team is currently supporting\n\n The team embraces a user focused support experience when it comes to helping users\n\n Requirements\n\n Three or more years experience in IT Support / Help Desk duties\n\n Use of a ticket-based incident management systems (example: ServiceNow, ZenDesk, Jira Service Management)\n\n Support and troubleshooting devices running macOS and/or Windows 11\n\n Support for mobile devices like iOS, iPadOS, Android\n\n Basic hardware diagnostics and repairs skills\n\n Basic knowledge of IT security practices and policy\n\n A working knowledge of Generative AI, and AI from an end user perspective, and have experience using it in a corporate environment\n\n Ability to work across the organization with agility and communication skills\n\n Excellent written and verbal communication skills\n\n Flexible mindset to adapt and grow in a dynamic and innovative environment\n\n Able to work in an networked organization\n\n Japanese: Business level - JLPT 2 or equivalent\n\n The role includes supporting Japanese speaking only users\n\n The role requires handling tickets and workflow requests that are written in Japanese\n\n English: Basic business level (equivalent to TOEIC 700 points or higher)\n\n As the scope of work includes overseas locations and communicating with English speaking users, meetings and text communication will occur in both Japanese and English\n\n Those without qualifications equivalent to TOEIC 700 points or higher will be required to take a company-designated test during the selection process (typically after the first interview)\n\n Nice to haves\n While not specifically required, tell us if you have any of the following.\n\n Document creation and updates, such as operational procedures\n\n Five or more years experience in supporting and troubleshooting macOS/iOS devices\n\n Experience working in IT startups, ventures or multinational corporations\n\n Experience using MDM tools (Jamf Pro and/or MS Intune)\n\n Experience operating groupware like Google Workspace, EntraID\n\n Experience in IT asset management\n\n Automation of routine tasks through the use of scripting languages, and/or low and no-code solutions\n\n Procurement and asset management of IT equipment and licenses\n\n Vendor management experience\n\n Knowledge of internal networks, DNS, DHCP, and troubleshooting wired/wireless LAN\n\n CompTIA A+ certification or equivalent knowledge/experience\n\n ITIL 4 Foundation certification or equivalent knowledge/experience\n\n Experience in AI development and/or experience in using AI tools to improve development processes.\n\n Money Forward recently announced our AI Strategy roadmap which focuses on improving AI-driven operational efficiencies, as well as integrating AI agents into our products to deliver better value to our users.",
+      "datePosted": "2026-03-06T16:40:30.291+09:00",
+      "validThrough": "",
+      "employmentType": "FULL_TIME",
+      "firstSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
+      "isNew": false,
+      "isExpired": false,
+      "expiredAt": "",
+      "jobKey": "url:https://www.tokyodev.com/companies/moneyforward/jobs/it-support-specialist-digital-bank-tokyo",
+      "sourceMarket": "jp",
+      "sourceIndustry": "",
+      "sourceStrategy": "flex-job-board",
+      "sourceTags": [
+        "flex-job-board"
+      ],
+      "sourceQuality": {
+        "score": 100,
+        "tier": "high",
+        "reasons": []
+      },
+      "score": 28,
+      "grade": "F",
+      "recommendation": "略過",
+      "status": "觀望",
+      "evaluatedAt": "2026-05-17T23:21:24.824Z",
+      "evaluation": {
+        "source": "career-ops-intelligence",
+        "overall": {
+          "grade": "F",
+          "score": 28,
+          "recommendation": "略過",
+          "summary": "以 11 個維度比對，命中 0 個履歷技能，市場技能命中 2 個。"
+        },
+        "decision_factors": [
+          "職類：Internship；資歷：Mid；模式：Unknown",
+          "履歷技能命中偏低",
+          "未偵測到明顯稀有技能訊號"
+        ],
+        "ats_keywords": {
+          "found": [],
+          "missing": [
+            "go",
+            "agents"
+          ]
+        },
+        "risks": [],
+        "next_actions": [
+          "先與高分職缺比較，不急著投遞",
+          "補齊 JD 或標記喜歡 / 不喜歡以改善後續排序"
+        ]
+      },
+      "intelligence": {
+        "score": 28,
+        "grade": "F",
+        "recommendation": "略過",
+        "features": {
+          "roleFamily": "Internship",
+          "seniority": "Mid",
+          "workMode": "Unknown",
+          "skills": [
+            "go",
+            "agents"
+          ],
+          "profileSkillHits": [],
+          "profileSkillsNotInJd": [
+            "JavaScript",
+            "TypeScript",
+            "React",
+            "Next.js",
+            "CSS",
+            "Tailwind",
+            "Accessibility",
+            "Analytics",
+            "API",
+            "Figma",
+            "Performance Optimization",
+            "Design Systems"
+          ],
+          "jdSkillsMissingFromProfile": [
+            "go",
+            "agents"
+          ],
+          "requiresUnknownLanguage": true,
+          "rareHighValueSkills": [],
+          "locationHits": [],
+          "avoidHits": []
+        },
+        "dimensions": {
+          "profileMatch": 0,
+          "atsCoverage": 0,
+          "roleFit": 68,
+          "seniorityFit": 82,
+          "locationFit": 58,
+          "sourceQuality": 78,
+          "freshness": 76,
+          "compensationSignal": 52,
+          "growthSignal": 75,
+          "applicationEffort": 86,
+          "riskPenalty": 20
+        }
+      }
+    },
+    {
       "source": "Samsung Research",
       "sourceType": "discovered-link",
       "title": "Samsung Developer",
@@ -33289,7 +33496,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "",
       "firstSeenAt": "2026-05-15T06:25:04.793Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -33314,7 +33521,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:52.961Z",
+      "evaluatedAt": "2026-05-17T23:21:24.454Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -33395,7 +33602,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "",
       "firstSeenAt": "2026-05-15T06:25:26.345Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -33422,7 +33629,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:52.966Z",
+      "evaluatedAt": "2026-05-17T23:21:24.459Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -33503,7 +33710,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "",
       "firstSeenAt": "2026-05-15T06:25:26.345Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -33530,7 +33737,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:52.966Z",
+      "evaluatedAt": "2026-05-17T23:21:24.459Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -33611,7 +33818,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "",
       "firstSeenAt": "2026-05-15T06:25:26.345Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -33638,7 +33845,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:52.967Z",
+      "evaluatedAt": "2026-05-17T23:21:24.460Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -33719,7 +33926,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "",
       "firstSeenAt": "2026-05-15T06:25:26.345Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -33745,7 +33952,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:53.210Z",
+      "evaluatedAt": "2026-05-17T23:21:24.667Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -33826,7 +34033,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "",
       "firstSeenAt": "2026-05-15T06:25:26.345Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -33852,7 +34059,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:53.210Z",
+      "evaluatedAt": "2026-05-17T23:21:24.667Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -33933,7 +34140,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "",
       "firstSeenAt": "2026-05-15T06:25:26.345Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -33959,7 +34166,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:53.211Z",
+      "evaluatedAt": "2026-05-17T23:21:24.667Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -34040,7 +34247,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "",
       "firstSeenAt": "2026-05-15T06:25:26.345Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -34066,7 +34273,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:53.211Z",
+      "evaluatedAt": "2026-05-17T23:21:24.668Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -34147,7 +34354,7 @@ window.CV_CAREER_OPS_JOBS = {
       "validThrough": "",
       "employmentType": "",
       "firstSeenAt": "2026-05-15T04:51:38.896Z",
-      "lastSeenAt": "2026-05-16T23:18:51.813Z",
+      "lastSeenAt": "2026-05-17T23:21:23.392Z",
       "isNew": false,
       "isExpired": false,
       "expiredAt": "",
@@ -34169,7 +34376,7 @@ window.CV_CAREER_OPS_JOBS = {
       "grade": "F",
       "recommendation": "略過",
       "status": "略過",
-      "evaluatedAt": "2026-05-16T23:18:53.435Z",
+      "evaluatedAt": "2026-05-17T23:21:24.877Z",
       "evaluation": {
         "source": "career-ops-intelligence",
         "overall": {
@@ -34301,10 +34508,6 @@ window.CV_CAREER_OPS_JOBS = {
       "message": "HTTP 404"
     },
     {
-      "url": "https://www.liepin.com/",
-      "message": "fetch failed"
-    },
-    {
       "url": "https://programmers.co.kr/job",
       "message": "HTTP 404"
     },
@@ -34319,11 +34522,11 @@ window.CV_CAREER_OPS_JOBS = {
   ],
   "qualityGate": {
     "source": "career-ops-source-quality",
-    "generatedAt": "2026-05-16T23:18:52.068Z",
+    "generatedAt": "2026-05-17T23:21:23.599Z",
     "mode": "filter",
     "minScore": 45,
-    "inputJobCount": 398,
-    "keptJobCount": 291,
+    "inputJobCount": 400,
+    "keptJobCount": 293,
     "filteredJobCount": 107,
     "filteredSamples": [
       {
@@ -34452,12 +34655,12 @@ window.CV_CAREER_OPS_JOBS = {
       }
     ]
   },
-  "evaluatedAt": "2026-05-16T23:18:52.330Z",
+  "evaluatedAt": "2026-05-17T23:21:23.857Z",
   "evaluatedBy": "career-ops-evaluate-heuristic",
-  "intelligenceAt": "2026-05-16T23:18:53.446Z",
+  "intelligenceAt": "2026-05-17T23:21:24.886Z",
   "intelligenceBy": "career-ops-intelligence",
   "marketInsights": {
-    "generatedAt": "2026-05-16T23:18:53.668Z",
+    "generatedAt": "2026-05-17T23:21:25.087Z",
     "rubric": {
       "name": "Career Ops 10-Dimension Rubric",
       "weights": {
@@ -34491,9 +34694,9 @@ window.CV_CAREER_OPS_JOBS = {
       ],
       "note": "補充以下 2 個欄位可提升所有 Layer 的輸出品質：工作經歷（experience，建議 >100 字）、專案描述（projects，建議 >80 字）"
     },
-    "activeJobCount": 291,
+    "activeJobCount": 293,
     "expiredJobCount": 0,
-    "evaluatedJobCount": 291,
+    "evaluatedJobCount": 293,
     "topSkills": [
       {
         "name": "growth",
@@ -34711,7 +34914,7 @@ window.CV_CAREER_OPS_JOBS = {
     "roleFamilies": [
       {
         "name": "Other",
-        "count": 142
+        "count": 144
       },
       {
         "name": "Backend",
@@ -34719,7 +34922,7 @@ window.CV_CAREER_OPS_JOBS = {
       },
       {
         "name": "AI / Data",
-        "count": 33
+        "count": 32
       },
       {
         "name": "Frontend",
@@ -34742,11 +34945,11 @@ window.CV_CAREER_OPS_JOBS = {
         "count": 3
       },
       {
-        "name": "Full Stack",
-        "count": 1
+        "name": "Product",
+        "count": 2
       },
       {
-        "name": "Product",
+        "name": "Full Stack",
         "count": 1
       }
     ],
@@ -34757,7 +34960,7 @@ window.CV_CAREER_OPS_JOBS = {
       },
       {
         "name": "Senior+",
-        "count": 85
+        "count": 86
       },
       {
         "name": "Intern",
@@ -34765,7 +34968,7 @@ window.CV_CAREER_OPS_JOBS = {
       },
       {
         "name": "Manager+",
-        "count": 14
+        "count": 15
       },
       {
         "name": "Junior",
@@ -34775,7 +34978,7 @@ window.CV_CAREER_OPS_JOBS = {
     "workModes": [
       {
         "name": "Unknown",
-        "count": 241
+        "count": 243
       },
       {
         "name": "Remote",
@@ -34797,7 +35000,7 @@ window.CV_CAREER_OPS_JOBS = {
       },
       {
         "name": "Unknown",
-        "count": 53
+        "count": 56
       },
       {
         "name": "Minato-ku",
@@ -34813,7 +35016,7 @@ window.CV_CAREER_OPS_JOBS = {
       },
       {
         "name": "Taichung - Fab 16",
-        "count": 21
+        "count": 20
       },
       {
         "name": "Hsinchu",
@@ -34843,11 +35046,11 @@ window.CV_CAREER_OPS_JOBS = {
     "sources": [
       {
         "name": "Micron Workday",
-        "count": 69
+        "count": 68
       },
       {
         "name": "Source flex job board",
-        "count": 65
+        "count": 68
       },
       {
         "name": "NVIDIA Workday",
@@ -34893,57 +35096,57 @@ window.CV_CAREER_OPS_JOBS = {
     "recommendations": [
       {
         "name": "略過",
-        "count": 215
+        "count": 217
       },
       {
         "name": "觀望",
-        "count": 64
+        "count": 67
       },
       {
         "name": "值得投遞",
-        "count": 12
+        "count": 9
       }
     ],
     "globalSkillGaps": [
       {
         "skill": "growth",
-        "weightedCount": 48.7
+        "weightedCount": 48.5
       },
       {
         "skill": "aws",
-        "weightedCount": 43.9
+        "weightedCount": 43.4
       },
       {
         "skill": "python",
-        "weightedCount": 42.6
+        "weightedCount": 42.4
       },
       {
         "skill": "operations",
-        "weightedCount": 40.4
+        "weightedCount": 40.1
       },
       {
         "skill": "docker",
-        "weightedCount": 29.9
+        "weightedCount": 29.6
       },
       {
         "skill": "terraform",
-        "weightedCount": 28.5
+        "weightedCount": 28.1
       },
       {
         "skill": "gcp",
-        "weightedCount": 27.4
+        "weightedCount": 27.1
       },
       {
         "skill": "agents",
-        "weightedCount": 25.6
+        "weightedCount": 25.3
       },
       {
         "skill": "go",
-        "weightedCount": 21.6
+        "weightedCount": 21.4
       },
       {
         "skill": "java",
-        "weightedCount": 16.7
+        "weightedCount": 16.6
       },
       {
         "skill": "deep learning",
@@ -34951,19 +35154,19 @@ window.CV_CAREER_OPS_JOBS = {
       },
       {
         "skill": "rest",
-        "weightedCount": 14.5
-      },
-      {
-        "skill": "sql",
         "weightedCount": 14.4
       },
       {
-        "skill": "machine learning",
+        "skill": "sql",
         "weightedCount": 14.3
       },
       {
+        "skill": "machine learning",
+        "weightedCount": 14.2
+      },
+      {
         "skill": "mysql",
-        "weightedCount": 14
+        "weightedCount": 13.7
       }
     ],
     "preferredCompanyAlert": "None of your preferred companies (Stripe, Linear, Notion, Vercel) appeared in current results. Add direct company career page sources to data/career-ops-sources.json.",
@@ -35026,11 +35229,21 @@ window.CV_CAREER_OPS_JOBS = {
       },
       {
         "company": "Micron Workday",
-        "title": "MTB MFG System Engineer",
+        "title": "MTB HBM Manufacturing Engineer",
         "count": 2,
         "urls": [
-          "https://micron.wd1.myworkdayjobs.com/External/job/Taichung---MTB-Taiwan/MTB-MFG-System-Engineer_JR101675",
-          "https://micron.wd1.myworkdayjobs.com/job/Taichung---MTB-Taiwan/MTB-MFG-System-Engineer_JR101286"
+          "https://micron.wd1.myworkdayjobs.com/job/Taichung---MTB-Taiwan/MTB-HBM-Manufacturing-Engineer_JR101669-1",
+          "https://micron.wd1.myworkdayjobs.com/External/job/Taichung---MTB-Taiwan/MTB-HBM-Manufacturing-Engineer_JR101669-1"
+        ]
+      },
+      {
+        "company": "Micron Workday",
+        "title": "MTB MFG System Engineer",
+        "count": 3,
+        "urls": [
+          "https://micron.wd1.myworkdayjobs.com/job/Taichung---MTB-Taiwan/MTB-MFG-System-Engineer_JR101675",
+          "https://micron.wd1.myworkdayjobs.com/job/Taichung---MTB-Taiwan/MTB-MFG-System-Engineer_JR101286",
+          "https://micron.wd1.myworkdayjobs.com/External/job/Taichung---MTB-Taiwan/MTB-MFG-System-Engineer_JR101675"
         ]
       },
       {
@@ -35119,9 +35332,9 @@ window.CV_CAREER_OPS_JOBS = {
       }
     ],
     "integrity": {
-      "duplicateGroupCount": 16,
+      "duplicateGroupCount": 17,
       "jobsWithoutUrl": 0,
-      "jobsWithoutDescription": 136,
+      "jobsWithoutDescription": 139,
       "expiredCount": 0
     },
     "searchQueries": [

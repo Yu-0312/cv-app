@@ -1,14 +1,14 @@
 # Career Ops Job Health Report
 
-Generated: 2026-05-16T23:18:56.181Z
+Generated: 2026-05-17T23:21:27.757Z
 Status: ✅ **HEALTHY**
 
 ## Summary
 
 | Metric | Value |
 |--------|-------|
-| Total jobs | 291 |
-| Active | 291 |
+| Total jobs | 293 |
+| Active | 293 |
 | Expired | 0 (0%) |
 | Stale (>14d) | 0 |
 | Avg active score | 45 |
@@ -19,8 +19,8 @@ Status: ✅ **HEALTHY**
 
 | Source | Total | Expired | Expiry % |
 |--------|-------|---------|---------|
-| Micron Workday | 69 | 0 | 0% |
-| Source flex job board | 65 | 0 | 0% |
+| Source flex job board | 68 | 0 | 0% |
+| Micron Workday | 68 | 0 | 0% |
 | NVIDIA Workday | 61 | 0 | 0% |
 | NVIDIA Taiwan | 22 | 0 | 0% |
 | Logitech Workday Taiwan | 15 | 0 | 0% |

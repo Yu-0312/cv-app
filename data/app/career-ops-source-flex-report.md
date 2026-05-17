@@ -1,6 +1,6 @@
 # Career Ops Source Flex Report
 
-- Generated at: 2026-05-16T23:11:13.757Z
+- Generated at: 2026-05-17T23:13:48.510Z
 - Total sources: 93
 - Flex candidates: 20
 - Search queries: 651
