@@ -4,6 +4,7 @@ node_modules/
 .netlify
 dist/
 dist.zip
+supabase/.temp/
 template-reference-*.pdf
 config.js
 .claude/worktrees/

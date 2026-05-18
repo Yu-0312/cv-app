@@ -138,20 +138,41 @@ function profileSignals(profile) {
   ]).slice(0, 16);
 }
 
+function dedupByLower(items) {
+  const seen = new Set();
+  return items.filter((item) => {
+    const key = item.toLowerCase();
+    if (seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
+}
+
+// Skills from profile that actually appear in this job's JD (profile ∩ JD).
+// Deliberately excludes features.skills (all JD skills) to prevent overlap with missingKeywords.
 function jobKeywords(job) {
-  return compact([
+  return dedupByLower(compact([
     ...array(job.evaluation?.ats_keywords?.found),
-    ...array(job.intelligence?.features?.skills),
     ...array(job.intelligence?.features?.profileSkillHits),
     ...array(job.keywords)
-  ]).slice(0, 18);
+  ])).slice(0, 18);
+}
+
+// All skills the JD mentions — used for ATS mirroring in section E, not for match display.
+function allJdKeywords(job) {
+  return dedupByLower(compact([
+    ...array(job.intelligence?.features?.profileSkillHits),
+    ...array(job.intelligence?.features?.skills),
+    ...array(job.evaluation?.ats_keywords?.found),
+    ...array(job.intelligence?.features?.jdSkillsMissingFromProfile)
+  ])).slice(0, 20);
 }
 
 function missingKeywords(job) {
-  return compact([
+  return dedupByLower(compact([
     ...array(job.evaluation?.ats_keywords?.missing),
-    ...array(job.intelligence?.features?.missingProfileSkills)
-  ]).slice(0, 12);
+    ...array(job.intelligence?.features?.jdSkillsMissingFromProfile)
+  ])).slice(0, 12);
 }
 
 function decisionFor(job, dossier) {
@@ -211,6 +232,7 @@ function buildDossier(job, profile, context) {
   const decision = decisionFor(job, deepFit);
   const keywords = jobKeywords(job);
   const missing = missingKeywords(job);
+  const atsKeywords = allJdKeywords(job);
   const evidenceCount = array(research?.evidence).length || Number(deepFit?.evidence?.evidenceCount || 0);
   const sourceQuality = job.sourceQuality?.score || job.qualityScore || "";
   const title = text(job.title || deepFit?.title);
@@ -240,8 +262,8 @@ function buildDossier(job, profile, context) {
         matchedKeywords: keywords,
         missingKeywords: missing,
         honestGapFrame: missing.length
-          ? `Do not overclaim ${missing.slice(0, 5).join(", ")}. Frame adjacent proof and learning plan instead.`
-          : "No major keyword gap detected from the current artifacts."
+          ? `The JD requires ${missing.slice(0, 5).join(", ")} which are not yet in your profile. Build adjacent proof or add a learning plan for these gaps.`
+          : "No skill gaps detected — your profile covers the JD's key requirements."
       },
       C_levelStrategy: {
         inferredLevel: inferLevel(job, compensation),
@@ -259,7 +281,7 @@ function buildDossier(job, profile, context) {
         counterScript: compensation?.negotiationScript?.counter || ""
       },
       E_cvAndPdfPlan: {
-        atsKeywordsToMirror: keywords.slice(0, 12),
+        atsKeywordsToMirror: atsKeywords.slice(0, 14),
         bulletsToStrengthen: compact([
           deepFit?.cvStrategy?.[0],
           playbook?.applyChecklist?.find((item) => /keyword|Mirror/i.test(item)),

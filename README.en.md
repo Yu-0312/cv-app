@@ -124,7 +124,7 @@ The Career tab reads the summary, skills, experience, education, and projects al
 
 This feature uses `career-ops`-style evaluation ideas such as A-F scoring, ATS keywords, STAR stories, and application prioritization. It now includes a lightweight batch tracker, company careers-page discovery, and tailored PDF flow, but does not yet include login-based portal scanners or scheduled cross-platform workers.
 
-API keys stay in the current browser tab's `sessionStorage` and are not written to Supabase.
+API keys stay in the current browser tab's `sessionStorage`. Model calls send the key only to the AI provider selected by the user; the key is never written to Supabase, Railway, GitHub Actions, or any app-owned database. The resume upload / 50-100 job matching flow is BYOK too: the frontend uses the user's own key to extract the resume profile, then reads `data/app/career-ops-jobs.js` and runs the three-layer heuristic match in the browser. Signed-in users only write completed results to Supabase for sharing, so no app-owned `ANTHROPIC_API_KEY` or Railway worker is required for hosted user analysis.
 
 #### Career Ops Mapping
 
@@ -133,7 +133,7 @@ API keys stay in the current browser tab's `sessionStorage` and are not written 
 | Automation | `.github/workflows/career-ops.yml` can build daily snapshots or run manually; if `data/career-ops-source-strategy.json` exists, it builds sources first | Requires a source strategy or `data/career-ops-sources.json` in the repo |
 | Large-scale job collection | `scripts/career-ops-build-sources.mjs` + `scripts/career-ops-worker.mjs` + `scripts/career-ops-source-adapters.mjs`, with source strategy support, Greenhouse / Lever / Ashby / Workable / SmartRecruiters / BambooHR / Workday / Oracle / SuccessFactors / Taleo / MyCareersFuture adapters, company careers-page discovery, and direct job-page extraction | Login-only portals should continue as adapters |
 | Job normalization and lifecycle | `data/app/career-ops-jobs.json` / `.js` snapshots with unified fields plus `jobKey`, `isNew`, `isExpired`, `firstSeenAt`, and `lastSeenAt` | The frontend reads only normalized snapshots |
-| High-volume screening and ranking | Career Ops panel bulk import, batch AI evaluation, score / grade / status ranking, CSV export; `scripts/career-ops-evaluate.mjs` supports backend heuristic scoring; `scripts/career-ops-intelligence.mjs` adds dedupe signals, feature extraction, multidimensional scoring, clustering, and market insights | Frontend AI evaluation requires a user-provided API key; backend intelligence can run offline |
+| High-volume screening and ranking | Career Ops panel bulk import, batch AI evaluation, score / grade / status ranking, CSV export; resume-upload 50-100 job matching runs locally in the frontend; `scripts/career-ops-evaluate.mjs` supports backend heuristic scoring; `scripts/career-ops-intelligence.mjs` adds dedupe signals, feature extraction, multidimensional scoring, clustering, and market insights | Frontend AI evaluation requires a user-provided API key; backend intelligence can run offline |
 | 10-dimension rubric | `data/career-ops-rubric.example.json` defines profile match, ATS coverage, role fit, seniority, location, source quality, freshness, compensation, growth, application effort, and risk subtraction | Copy and tune weights for different users or markets |
 | Search adapter | `scripts/career-ops-search-adapter.mjs` converts exported search-result JSON / HTML / URL lists into worker sources while preserving search query strategy signals | Does not scrape Google/Bing directly; use a compliant search API or curated export |
 | Flexible source expansion | `scripts/career-ops-source-flex.mjs` expands sources and queries from markets, role aliases, ATS domains, job boards, and company career path patterns | Generated candidates still need validation by adapters/scanners |
@@ -142,7 +142,7 @@ API keys stay in the current browser tab's `sessionStorage` and are not written 
 | Agent-style pipeline | `scripts/career-ops-pipeline.mjs` runs source-strategy / search / scanner / evaluation / intelligence / application / compensation / story-bank / parallel stages as explicit backend agent steps | Pipeline stages are grouped by data dependency; job-level work is handled by the parallel worker |
 | Parallel job workers | `scripts/career-ops-parallel.mjs` uses a bounded-concurrency queue to produce evaluation, research, application, compensation, story, and apply-agent plans per job; `scripts/career-ops-parallel-pipeline.mjs` parallelizes source scanning first, then runs research / kit / compensation / story / learning / deep-fit in dependency-safe stages | Default concurrency is 4; tune with `--concurrency` |
 | Deep company/job research | `scripts/career-ops-deep-research.mjs` combines ranked jobs, sources, public job pages, and optional search APIs into company/job dossiers; the frontend also has an AI deep-research action per job | The browser AI key powers reasoning only; real web search requires Brave/Bing/SerpAPI keys or imported search results |
-| Single-job deep fit | `scripts/career-ops-deep-fit.mjs` combines profile, JD, research, compensation, and story bank into career-ops-grade fit dossiers; optionally uses backend `OPENAI_API_KEY` / `ANTHROPIC_API_KEY` | Without an LLM key, it stays evidence-based and avoids invention |
+| Single-job deep fit | `scripts/career-ops-deep-fit.mjs` combines profile, JD, research, compensation, and story bank into career-ops-grade fit dossiers; the hosted user flow uses a BYOK profile plus frontend-local heuristics for Layer A/B/C results | It does not spend app-owned model tokens; without an LLM key, it stays evidence-based and avoids invention |
 | ATS keywords and resume gaps | Single-job and batch prompts produce keywords, gaps, priority, and summaries | The app must not invent experience that is not in the CV |
 | STAR story bank | `scripts/career-ops-story-bank.mjs` turns profile proof points and market themes into a STAR+Reflection story bank | The user should fill in real metrics and outcomes |
 | Preference learning | `scripts/career-ops-learning.mjs` learns preferred skills, companies, sources, and avoid signals from scores, statuses, feedback, and source metadata | Needs ongoing like/dislike feedback and application status updates |
@@ -156,6 +156,8 @@ API keys stay in the current browser tab's `sessionStorage` and are not written 
 #### Career Ops Worker
 
 To build a backend job snapshot, the recommended path is to maintain a source strategy first. This mirrors the upstream `career-ops` `portals.yml` idea: keep markets, tracked companies, ATS boards, search expansion queries, role keywords, and exclusion terms in a backend strategy file instead of the frontend.
+
+The default hosted flow does not need Railway: the frontend reads the generated job snapshot, uses the user's own AI key to parse the resume, and completes the three-layer match in the browser. `scripts/career-ops-saas-worker.mjs` / `railway.json` are kept only for advanced deployments that want a backend queue or always-on worker.
 
 ```bash
 cp data/career-ops-source-strategy.example.json data/career-ops-source-strategy.json
@@ -264,7 +266,6 @@ npm run career-ops:quality
 CHROME_PATH="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" npm run career-ops:rendered
 npm run career-ops:deep-research
 npm run career-ops:deep-fit
-npm run career-ops:decision-report
 npm run career-ops:compensation
 npm run career-ops:story-bank
 npm run career-ops:learn
@@ -273,7 +274,7 @@ npm run career-ops:parallel -- --concurrency 6
 npm run career-ops:application-kit -- --profile data/career-ops-profile.json
 ```
 
-`career-ops:search` turns curated search exports into crawlable sources; `career-ops:rendered` is an optional browser-rendered pass for JavaScript-heavy company careers pages; `career-ops:deep-research` writes `data/app/career-ops-deep-research.json`, `.js`, and `.md`, and can use `BRAVE_SEARCH_API_KEY`, `BING_SEARCH_API_KEY`, or `SERPAPI_API_KEY` for real search evidence; `career-ops:decision-report` merges deep fit, research, application kit, compensation, and story bank artifacts into A-F single-job decision dossiers; `career-ops:application-kit` writes apply / outreach / follow-up / interview / negotiation playbooks.
+`career-ops:search` turns curated search exports into crawlable sources; `career-ops:rendered` is an optional browser-rendered pass for JavaScript-heavy company careers pages; `career-ops:deep-research` writes `data/app/career-ops-deep-research.json`, `.js`, and `.md`, and can use `BRAVE_SEARCH_API_KEY`, `BING_SEARCH_API_KEY`, or `SERPAPI_API_KEY` for real search evidence; `career-ops:application-kit` writes apply / outreach / follow-up / interview / negotiation playbooks. `career-ops:decision-report` remains available for local/offline dossiers, but the hosted frontend does not load that static global report.
 
 For the full bounded-concurrency backend, run:
 
@@ -329,15 +330,18 @@ Frontend Freelancer | Self-employed | 2023 - 2024 | Built brand websites and eve
 CV-App/
 ├── .github/
 │   └── workflows/
-│       └── deploy.yml       # GitHub Actions auto-deployment workflow
-├── index.html               # Main application file (UI, styles, and logic all-in-one)
-├── sw.js                    # Service Worker for PWA offline caching
-├── manifest.json            # PWA install configuration
-├── icon.svg                 # App icon
-├── supabase-schema.sql      # Database schema and RLS policies
-├── config.js                # Local Supabase config (not committed)
-├── config.example.js        # Config template
-└── package.json             # npm config and build script
+│       └── deploy.yml           # GitHub Actions auto-deployment workflow
+├── scripts/
+│   └── lib/
+│       └── utils.mjs            # Shared helpers: CLI arg parsing, fetchWithRetry, ensureDir, randomDelay
+├── index.html                   # Main application file (UI, styles, and logic all-in-one)
+├── sw.js                        # Service Worker for PWA offline caching
+├── manifest.json                # PWA install configuration
+├── icon.svg                     # App icon
+├── supabase-schema.sql          # Database schema and RLS policies
+├── config.js                    # Local Supabase config (not committed)
+├── config.example.js            # Config template
+└── package.json                 # npm config and build script
 ```
 
 ---
@@ -360,6 +364,7 @@ This project does **not** use the deprecated `google-signin2` / `gapi.auth2` fro
 - [ ] Supabase `Site URL` and `Redirect URLs` include the actual callback URL
 - [ ] Google Cloud OAuth's Authorized redirect URIs / origins match Supabase's requirements
 - [ ] End-to-end test in Chrome: Sign in → redirect back → refresh (session persists) → sign out
+- [ ] Career Ops share links require the `career-ops-share-analysis` Edge Function and `SITE_URL`; `career-ops-extract-profile` / `career-ops-run-analysis` are kept only for advanced or legacy queue flows, and the default BYOK browser analysis does not depend on a Railway worker
 
 ---
 
@@ -373,4 +378,5 @@ This project does **not** use the deprecated `google-signin2` / `gapi.auth2` fro
 - **Granular bilingual content mapping**: Chinese / English mappings are supported for profile, summary, skills, highlights, experience, projects, education, and awards fields.
 - **PDF page mode**: export supports automatic pagination or a one-page preference.
 - **Bilingual resume headings**: CV headings can follow the UI language or be fixed to Chinese / English.
-- **Automated GSAT data refresh**: GitHub Actions now refresh University TW and 104 GSAT data weekly.
+- **Automated GSAT data refresh**: GitHub Actions now refresh University TW and 104 GSAT data weekly, including UAC minimum registration standards as a second data source alongside 104 five-percentile scores.
+- **Shared script utilities**: extracted a `scripts/lib/utils.mjs` module (CLI arg parsing, `fetchWithRetry` with exponential back-off and per-request timeout, `ensureDir`, `randomDelay`) to eliminate ~100 lines of duplication across GSAT data scripts.

@@ -13,10 +13,12 @@ function printHelp() {
   console.log(`Career Ops story bank
 
 Builds a reusable STAR+Reflection story bank from profile proof points and the
-current job market snapshot.
+current job market snapshot. With an LLM provider, drafts full story content
+directly from your proof points — not just coaching prompts.
 
 Usage:
   node scripts/career-ops-story-bank.mjs --profile data/career-ops-profile.json
+  ANTHROPIC_API_KEY="..." node scripts/career-ops-story-bank.mjs --llm anthropic
 
 Options:
   --jobs <file>       Career Ops jobs snapshot. Default: ${DEFAULT_JOBS}
@@ -24,6 +26,7 @@ Options:
   --out <file>        JSON output. Default: ${DEFAULT_OUT}
   --js-out <file>     Browser JS output. Default: ${DEFAULT_JS_OUT}
   --report-out <file> Markdown report. Default: ${DEFAULT_REPORT}
+  --llm <provider>    none, openai, anthropic, or auto. Default: auto
   --no-js             Skip browser JS output
   --help              Show this help
 `);
@@ -36,6 +39,7 @@ function parseArgs(argv) {
     out: DEFAULT_OUT,
     jsOut: DEFAULT_JS_OUT,
     reportOut: DEFAULT_REPORT,
+    llm: "auto",
     writeJs: true
   };
   for (let i = 0; i < argv.length; i += 1) {
@@ -46,6 +50,7 @@ function parseArgs(argv) {
     else if (token === "--out") args.out = argv[++i] || DEFAULT_OUT;
     else if (token === "--js-out") args.jsOut = argv[++i] || DEFAULT_JS_OUT;
     else if (token === "--report-out") args.reportOut = argv[++i] || DEFAULT_REPORT;
+    else if (token === "--llm") args.llm = String(argv[++i] || "auto").toLowerCase();
     else if (token === "--no-js") args.writeJs = false;
     else throw new Error(`Unknown argument: ${token}`);
   }
@@ -62,19 +67,6 @@ async function readJsonIfExists(filePath) {
 
 function array(value) {
   return Array.isArray(value) ? value : value ? [value] : [];
-}
-
-function unique(items) {
-  const seen = new Set();
-  const output = [];
-  for (const item of array(items).flat()) {
-    const value = String(item || "").trim();
-    const key = value.toLowerCase();
-    if (!value || seen.has(key)) continue;
-    seen.add(key);
-    output.push(value);
-  }
-  return output;
 }
 
 function sentences(value) {
@@ -100,149 +92,152 @@ function topMarketThemes(jobs) {
   return [...themes].slice(0, 10);
 }
 
-function storyQuestions(theme) {
-  return [
-    "Tell me about a project you are proud of.",
-    "Tell me about a time you handled ambiguity.",
-    `How have you applied ${theme}?`
-  ];
-}
+// Learning priority tiers based on market demand count
+const LEARNING_TIERS = [
+  { minCount: 10, priority: "P0", label: "高優先", reason: "市場需求極高，補充後可顯著提升評分" },
+  { minCount: 5, priority: "P1", label: "中優先", reason: "市場常見，補充後能擴大適配職缺範圍" },
+  { minCount: 2, priority: "P2", label: "選擇性", reason: "特定領域需求，依目標職缺決定是否補充" },
+  { minCount: 0, priority: "P3", label: "低優先", reason: "出現頻率較低，可放在長期學習清單" }
+];
 
-function storyHasConcreteContent(story) {
-  const star = story?.star || {};
-  const joined = [star.situation, star.task, star.action, star.result, star.reflection].join(" ");
-  if (/Use the context from this proof point|Clarify the goal|Describe the specific decisions|State measurable/i.test(joined)) {
-    return false;
+function buildLearningPlan(jobs, profileSkills) {
+  const skillCounts = new Map();
+  for (const job of array(jobs).filter((j) => !j.isExpired).slice(0, 100)) {
+    const missing = array(job.intelligence?.features?.jdSkillsMissingFromProfile || job.evaluation?.ats_keywords?.missing);
+    for (const skill of missing) {
+      const key = String(skill).toLowerCase().trim();
+      if (!key || key.length < 2) continue;
+      skillCounts.set(key, (skillCounts.get(key) || 0) + 1);
+    }
   }
-  return [star.situation, star.task, star.action, star.result].every((item) => String(item || "").trim().length >= 20);
+  const profileSet = new Set(profileSkills.map((s) => String(s).toLowerCase()));
+  const candidates = Array.from(skillCounts.entries())
+    .filter(([skill]) => !profileSet.has(skill))
+    .sort((a, b) => b[1] - a[1])
+    .slice(0, 15);
+
+  return candidates.map(([skill, count]) => {
+    const tier = LEARNING_TIERS.find((t) => count >= t.minCount) || LEARNING_TIERS[LEARNING_TIERS.length - 1];
+    return {
+      skill,
+      marketCount: count,
+      priority: tier.priority,
+      priorityLabel: tier.label,
+      reason: tier.reason,
+      suggestion: `在簡歷或 profile 中加入 ${skill} 的實際使用案例，並在 projects 欄位補充相關實作。`
+    };
+  });
 }
 
-function dedupeStories(stories) {
-  const seen = new Set();
-  const output = [];
-  for (const story of stories) {
-    const key = [
-      story.theme,
-      story.sourceProof,
-      story.star?.situation,
-      story.star?.result
-    ].map((item) => String(item || "").toLowerCase().replace(/\s+/g, " ").trim()).join("|");
-    if (!key || seen.has(key)) continue;
-    seen.add(key);
-    output.push({ ...story, id: `story-${output.length + 1}` });
+// Theme-specific STAR guidance so each story prompt is actionable, not generic.
+const THEME_STAR_GUIDE = {
+  "frontend product execution": {
+    situation: (seed) => `You were tasked with a frontend product challenge. Proof point: "${seed}" — set the scene: what product, what team size, and what was broken or missing?`,
+    task: "What was the specific outcome you were accountable for? Include the success metric (e.g. performance score, user adoption rate, release date).",
+    action: "Walk through the key technical decisions: component architecture, state management tradeoffs, accessibility choices, or API contract design.",
+    result: "Quantify the impact: load time delta, user adoption %, code reduction %, or stakeholder feedback. If no number, describe the quality or velocity improvement."
+  },
+  "data-heavy product decisions": {
+    situation: (seed) => `You were working with a data-intensive product. Proof point: "${seed}" — describe the data volume, the user workflow, and what was difficult to render or interpret.`,
+    task: "What decision did you own? (chart type, data model, aggregation strategy, caching layer, etc.)",
+    action: "Explain how you chose between options, what you built or prototyped, and how you validated your approach with data or users.",
+    result: "State the outcome: query latency, dashboard load time, user comprehension improvement, or reduction in support requests."
+  },
+  "systems and API collaboration": {
+    situation: (seed) => `You collaborated across system boundaries. Proof point: "${seed}" — name the systems, teams, and integration surface area.`,
+    task: "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
+    action: "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
+    result: "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved."
+  },
+  "accessibility and quality": {
+    situation: (seed) => `You led or contributed to an accessibility or quality initiative. Proof point: "${seed}" — what was the starting state and who was affected?`,
+    task: "What standard or target were you working toward (WCAG level, test coverage %, zero-defect milestone)?",
+    action: "Describe the audit process, tooling (axe, Lighthouse, screen reader testing), and how you prioritized fixes across components.",
+    result: "State the outcome: WCAG compliance level achieved, user complaints reduced, or CI gate added to prevent regressions."
+  },
+  "performance and scale": {
+    situation: (seed) => `You tackled a performance or scalability challenge. Proof point: "${seed}" — what was the scale (users, requests/sec, data size) and what was breaking?`,
+    task: "What was the target metric: p95 latency, Lighthouse score, bundle size, or TTFB?",
+    action: "Describe your profiling approach, the root cause you found, and the specific optimization (code splitting, caching, virtualization, CDN config, etc.).",
+    result: "Before/after numbers. If no metric was tracked, explain how you set up measurement and what the next step was."
+  },
+  "cross-functional influence": {
+    situation: (seed) => `You influenced a decision across teams or functions. Proof point: "${seed}" — who were the stakeholders and what was the disagreement or ambiguity?`,
+    task: "What outcome were you trying to drive, and why did it require cross-functional alignment rather than a unilateral call?",
+    action: "Describe how you built your case: data, prototypes, async docs, 1:1s, or demos. What resistance did you encounter?",
+    result: "State the decision that was made, who it impacted, and whether the outcome matched your recommendation."
+  },
+  "AI/data product adoption": {
+    situation: (seed) => `You worked on an AI or data-driven product feature. Proof point: "${seed}" — describe the model/pipeline involved and the user-facing surface.`,
+    task: "What was your role: prompt design, evaluation framework, UI for model outputs, or feedback loop instrumentation?",
+    action: "Explain what you built, how you evaluated quality (accuracy, latency, hallucination rate), and what tradeoffs you made.",
+    result: "Describe adoption (% of users using the feature), quality improvement, or how you reduced user confusion around AI outputs."
   }
-  return output;
-}
+};
 
-function normalizeExplicitStory(item, index, skills, themes) {
-  const theme = String(item.theme || themes[index % Math.max(1, themes.length)] || skills[index % Math.max(1, skills.length)] || "execution under ambiguity");
-  const star = item.star && typeof item.star === "object" ? item.star : item;
-  const title = String(item.title || item.sourceProof || theme);
-  const result = String(star.result || item.result || "").trim();
-  const sourceProof = String(item.sourceProof || (result ? `${title}: ${result}` : title)).trim();
-  const normalized = {
-    id: String(item.id || `story-${index + 1}`),
-    theme,
-    sourceProof,
-    applicableQuestions: array(item.applicableQuestions).length ? array(item.applicableQuestions).map(String) : storyQuestions(theme),
-    star: {
-      situation: String(star.situation || item.situation || "").trim(),
-      task: String(star.task || item.task || "").trim(),
-      action: String(star.action || item.action || "").trim(),
-      result,
-      reflection: String(star.reflection || item.reflection || `This story is strongest when positioned around ${theme} with the metrics and tradeoffs made explicit.`).trim()
-    },
-    metrics: unique(item.metrics || star.metrics || []),
-    keywords: unique([theme, item.keywords, skills]).slice(0, 12)
-  };
-  return storyHasConcreteContent(normalized) ? normalized : null;
-}
-
-function proofPointToStory(item, index, skills, themes) {
-  const theme = String(item.theme || themes[index % Math.max(1, themes.length)] || skills[index % Math.max(1, skills.length)] || "execution under ambiguity");
-  const title = String(item.title || item.name || `Proof point ${index + 1}`);
-  const metrics = unique(item.metrics || []);
-  const result = String(item.result || item.impact || (metrics.length ? `Delivered measurable impact: ${metrics.join(", ")}.` : "")).trim();
-  const story = {
-    id: `story-${index + 1}`,
-    theme,
-    sourceProof: result ? `${title}: ${result}` : title,
-    applicableQuestions: array(item.applicableQuestions).length ? array(item.applicableQuestions).map(String) : storyQuestions(theme),
-    star: {
-      situation: String(item.situation || `The team needed to improve ${title} while keeping existing product work stable.`).trim(),
-      task: String(item.task || `Own the plan for ${title}, define the success metric, and align stakeholders on delivery tradeoffs.`).trim(),
-      action: String(item.action || `Used ${skills.slice(0, 6).join(", ") || "role-relevant skills"} to break the work into measurable increments, ship the highest-value changes first, and review outcomes with the team.`).trim(),
-      result,
-      reflection: String(item.reflection || `This story demonstrates ${theme}, measurable ownership, and the ability to turn project context into an interview-ready example.`).trim()
-    },
-    metrics,
-    keywords: unique([theme, item.keywords, skills]).slice(0, 12)
-  };
-  return storyHasConcreteContent(story) ? story : null;
-}
-
-function sentenceToStory(seed, index, skills, themes) {
-  const theme = themes[index % Math.max(1, themes.length)] || skills[index % Math.max(1, skills.length)] || "execution under ambiguity";
+function themeStarGuide(theme, seed) {
+  const guide = THEME_STAR_GUIDE[theme];
+  if (!guide) {
+    return {
+      situation: `Use this proof point to open the story: "${seed}"`,
+      task: "Clarify the goal, constraints, stakeholders, and success metric before answering.",
+      action: "Describe the specific decisions, tradeoffs, and work you personally owned.",
+      result: "State measurable or observable impact. If no metric exists, describe adoption, quality, speed, or learning impact.",
+      reflection: "Explain what you would repeat, what you would improve, and how it applies to the target role."
+    };
+  }
   return {
-    id: `story-${index + 1}`,
-    theme,
-    sourceProof: seed,
-    applicableQuestions: storyQuestions(theme),
-    star: {
-      situation: `A role-relevant project required progress on ${theme} with imperfect information and multiple stakeholders.`,
-      task: `Turn the project context into a clear plan, choose the success signal, and keep execution tied to the target role.`,
-      action: `Applied ${skills.slice(0, 6).join(", ") || "core role skills"} to clarify scope, sequence the work, and communicate tradeoffs during delivery.`,
-      result: `Produced a reusable proof point from the profile: ${seed}`,
-      reflection: `Replace this fallback with a richer proof point when real private user data is available.`
-    },
-    metrics: [],
-    keywords: unique([theme, skills]).slice(0, 12)
+    situation: typeof guide.situation === "function" ? guide.situation(seed) : guide.situation,
+    task: guide.task,
+    action: guide.action,
+    result: guide.result,
+    reflection: "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
   };
 }
 
 function buildStoryBank(profile, jobs) {
-  const skills = unique(array(profile.skills || profile.preferences?.keywords)).slice(0, 24);
-  const themes = topMarketThemes(jobs);
-  const explicitStorySource = array(profile.starStories).length ? profile.starStories : profile.stories;
-  const proofPointSource = array(profile.proofPoints).length ? profile.proofPoints : profile.projectHighlights;
-  const explicitStories = array(explicitStorySource)
-    .map((item, index) => normalizeExplicitStory(item, index, skills, themes))
-    .filter(Boolean);
-  const proofPointStories = array(proofPointSource)
-    .map((item, index) => proofPointToStory(item, explicitStories.length + index, skills, themes))
-    .filter(Boolean);
-  const fallbackProofPoints = [
+  const proofPoints = [
     ...sentences(profile.experience),
     ...sentences(profile.projects),
-    ...sentences(profile.summary),
-    ...sentences(profile.description)
+    ...sentences(profile.summary)
   ];
-  const seeds = fallbackProofPoints.length ? fallbackProofPoints : [
+  const skills = array(profile.skills || profile.preferences?.keywords).map(String).slice(0, 12);
+  const themes = topMarketThemes(jobs);
+  const seeds = proofPoints.length ? proofPoints : [
     `Built work related to ${skills.slice(0, 4).join(", ") || profile.role || "the target role"}.`,
     `Improved a product, workflow, or project outcome using ${skills.slice(0, 3).join(", ") || "core skills"}.`
   ];
-  let stories = dedupeStories([...explicitStories, ...proofPointStories]);
-  if (stories.length < 8) {
-    const sentenceStories = seeds
-      .map((seed, index) => sentenceToStory(seed, stories.length + index, skills, themes));
-    stories = dedupeStories([...stories, ...sentenceStories]);
-  }
-  stories = stories.slice(0, 12);
-  const metricBacked = stories.filter((story) => array(story.metrics).length || /\d/.test(story.star?.result || "")).length;
+  const stories = seeds.slice(0, 8).map((seed, index) => {
+    const theme = themes[index % Math.max(1, themes.length)] || skills[index % Math.max(1, skills.length)] || "execution under ambiguity";
+    return {
+      id: `story-${index + 1}`,
+      theme,
+      sourceProof: seed,
+      applicableQuestions: [
+        "Tell me about a project you are proud of.",
+        "Tell me about a time you handled ambiguity.",
+        `How have you applied ${theme}?`
+      ],
+      star: themeStarGuide(theme, seed),
+      keywords: [...new Set([theme, ...skills])].slice(0, 8)
+    };
+  });
+  const learningPlan = buildLearningPlan(jobs, skills);
   return {
     themes,
     stories,
+    learningPlan,
     gaps: [
-      metricBacked === stories.length
-        ? "All generated stories include numeric or metric-backed results; keep them updated when replacing synthetic data with private user data."
-        : "Add exact metrics to any fallback story before using it in an interview.",
-      "Tailor the opening sentence of each story to the target company and job description.",
-      "Keep one conflict/tradeoff story, one failure/recovery story, and one leadership/influence story ready."
+      "Add exact metrics for each story where possible.",
+      "Add one conflict or tradeoff story.",
+      "Add one failure/recovery story.",
+      "Add one leadership or influence story even if the role is not managerial."
     ]
   };
 }
 
 function renderMarkdown(payload) {
+  const learningPlan = payload.storyBank.learningPlan || [];
   const lines = [
     "# Career Ops Story Bank",
     "",
@@ -252,7 +247,12 @@ function renderMarkdown(payload) {
     "## Market Themes",
     ...payload.storyBank.themes.map((item) => `- ${item}`),
     "",
-    "## Gaps",
+    "## Learning Plan (Missing High-Demand Skills)",
+    learningPlan.length
+      ? learningPlan.slice(0, 10).map((item) => `- [${item.priority}] ${item.skill} (市場出現 ${item.marketCount} 次) — ${item.priorityLabel}：${item.suggestion}`).join("\n")
+      : "- No significant skill gaps detected.",
+    "",
+    "## Story Gaps",
     ...payload.storyBank.gaps.map((item) => `- ${item}`),
     ""
   ];
@@ -272,13 +272,72 @@ function renderMarkdown(payload) {
       `- R: ${story.star.result}`,
       `- Reflection: ${story.star.reflection}`,
       "",
-      story.metrics?.length ? `Metrics: ${story.metrics.join("; ")}` : "",
-      story.metrics?.length ? "" : "",
       `Keywords: ${story.keywords.join(", ")}`,
       ""
     );
   }
   return `${lines.join("\n")}\n`;
+}
+
+function pickLlm(provider) {
+  if (provider === "none") return "none";
+  if ((provider === "auto" || provider === "openai") && process.env.OPENAI_API_KEY) return "openai";
+  if ((provider === "auto" || provider === "anthropic") && process.env.ANTHROPIC_API_KEY) return "anthropic";
+  return provider === "auto" ? "none" : provider;
+}
+
+function parseJsonText(text) {
+  const match = text.match(/```(?:json)?\s*([\s\S]*?)```/) || text.match(/(\{[\s\S]*\})/);
+  try { return JSON.parse(match ? match[1] : text); } catch { return null; }
+}
+
+async function callLlm(provider, system, prompt) {
+  if (provider === "openai") {
+    const res = await fetch("https://api.openai.com/v1/chat/completions", {
+      method: "POST",
+      headers: { "content-type": "application/json", "authorization": `Bearer ${process.env.OPENAI_API_KEY}` },
+      body: JSON.stringify({ model: process.env.OPENAI_MODEL || "gpt-4o", temperature: 0.3,
+        messages: [{ role: "system", content: system }, { role: "user", content: prompt }] })
+    });
+    if (!res.ok) throw new Error(`OpenAI ${res.status}`);
+    return (await res.json()).choices?.[0]?.message?.content || "";
+  }
+  if (provider === "anthropic") {
+    const res = await fetch("https://api.anthropic.com/v1/messages", {
+      method: "POST",
+      headers: { "content-type": "application/json", "x-api-key": process.env.ANTHROPIC_API_KEY, "anthropic-version": "2023-06-01" },
+      body: JSON.stringify({ model: process.env.ANTHROPIC_MODEL || "claude-3-5-sonnet-latest",
+        max_tokens: 1200, temperature: 0.3, system,
+        messages: [{ role: "user", content: prompt }] })
+    });
+    if (!res.ok) throw new Error(`Anthropic ${res.status}`);
+    return (await res.json()).content?.[0]?.text || "";
+  }
+  return "";
+}
+
+async function enrichStoryWithLlm(story, profile, provider) {
+  if (provider === "none") return story;
+  const system = `You are a career coach. Given a proof point from a candidate's resume and a STAR framework guide, write a concise, first-person draft of the full STAR story.
+Output ONLY valid JSON with keys: situation, task, action, result, reflection.
+Each value is 1-3 sentences. Use specific details from the proof point. Do not invent metrics that aren't implied by the proof point.`;
+  const prompt = JSON.stringify({
+    proofPoint: story.sourceProof,
+    theme: story.theme,
+    profileRole: profile.role || "",
+    starGuide: story.star,
+    candidateSkills: array(profile.skills).slice(0, 8)
+  });
+  try {
+    const text = await callLlm(provider, system, prompt);
+    const parsed = parseJsonText(text);
+    if (parsed && parsed.situation) {
+      return { ...story, star: { ...parsed, _source: "llm" } };
+    }
+  } catch (error) {
+    console.warn(`[career-ops] story LLM failed for ${story.id}: ${error.message}`);
+  }
+  return story;
 }
 
 async function writeJson(filePath, data) {
@@ -296,15 +355,29 @@ async function main() {
   if (args.help) return printHelp();
   const profile = await readJsonIfExists(args.profile);
   const jobsPayload = await readJsonIfExists(args.jobs);
+  const provider = pickLlm(args.llm);
+  const storyBank = buildStoryBank(profile, jobsPayload.jobs || []);
+
+  // When LLM is available, enrich each story from heuristic guides to fully drafted content
+  if (provider !== "none") {
+    console.log(`[career-ops] story bank: enriching ${storyBank.stories.length} stories via ${provider}...`);
+    const enriched = [];
+    for (const story of storyBank.stories) {
+      enriched.push(await enrichStoryWithLlm(story, profile, provider));
+    }
+    storyBank.stories = enriched;
+  }
+
   const payload = {
     source: "career-ops-story-bank",
     generatedAt: new Date().toISOString(),
-    storyBank: buildStoryBank(profile, jobsPayload.jobs || [])
+    llmProvider: provider,
+    storyBank
   };
   await writeJson(args.out, payload);
   if (args.writeJs) await writeText(args.jsOut, `window.CV_CAREER_OPS_STORY_BANK = ${JSON.stringify(payload, null, 2)};\n`);
   await writeText(args.reportOut, renderMarkdown(payload));
-  console.log(`[career-ops] story bank ${payload.storyBank.stories.length} story seed(s) -> ${args.reportOut}`);
+  console.log(`[career-ops] story bank ${storyBank.stories.length} story seed(s), llm=${provider} -> ${args.reportOut}`);
 }
 
 main().catch((error) => {

@@ -81,13 +81,34 @@ function countWeighted(items, getter, weightGetter) {
     .sort((a, b) => b.score - a.score || a.name.localeCompare(b.name));
 }
 
+// Recognized skill/tech terms for filtering description tokens — mirrors intelligence.mjs SKILL_TERMS
+const SKILL_TERMS = new Set([
+  "javascript", "typescript", "react", "vue", "angular", "next.js", "node.js", "python", "java", "go", "rust",
+  "swift", "kotlin", "sql", "postgres", "mysql", "supabase", "firebase", "aws", "gcp", "azure", "docker",
+  "kubernetes", "terraform", "graphql", "rest", "api", "html", "css", "tailwind", "figma", "accessibility",
+  "analytics", "dashboard", "data visualization", "etl", "airflow", "spark", "dbt", "llm", "rag", "agents",
+  "prompt engineering", "machine learning", "deep learning", "nlp", "computer vision", "pytorch", "tensorflow",
+  "scikit", "product management", "crm", "seo", "growth", "sales", "operations", "excel", "tableau", "power bi",
+  "中文", "英文", "資料分析", "數據分析", "前端", "後端", "全端", "產品", "設計系統", "無障礙", "機器學習", "人工智慧"
+]);
+
+const STOPWORDS = new Set([
+  "a", "an", "and", "are", "as", "at", "be", "been", "being", "but", "by", "can", "do", "does",
+  "for", "from", "had", "has", "have", "he", "her", "him", "his", "how", "if", "in", "into",
+  "is", "it", "its", "me", "my", "no", "not", "of", "on", "or", "our", "out", "shall", "she",
+  "so", "that", "the", "their", "them", "then", "there", "they", "this", "those", "through",
+  "to", "up", "us", "was", "we", "were", "what", "when", "where", "which", "while", "who",
+  "will", "with", "would", "you", "your",
+  "我們", "以及", "或者", "工作", "職缺", "可以", "能夠", "需要", "必須", "相關", "負責", "具備", "優先"
+]);
+
 function tokenize(value) {
   return [...new Set(String(value || "")
     .toLowerCase()
     .replace(/[^\p{L}\p{N}+#.-]+/gu, " ")
     .split(/\s+/)
     .map((item) => item.trim())
-    .filter((item) => item.length >= 2 && !/^(and|the|with|for|you|your|our|are|is|was|were|from|into|that|this|will|shall|of|as|to|in|on|at|by|or|an|a|我們|以及|或者|工作|職缺)$/.test(item)))];
+    .filter((item) => item.length >= 2 && !STOPWORDS.has(item)))];
 }
 
 function jobWeight(job) {
@@ -101,15 +122,25 @@ function buildLearning(jobsPayload, profile, sourcesPayload) {
   const jobs = array(jobsPayload.jobs).filter((job) => !job.isExpired);
   const positive = jobs.filter((job) => jobWeight(job) > 2.5);
   const negative = jobs.filter((job) => jobWeight(job) < 0);
-  const preferredSkills = countWeighted(positive, (job) => [
-    ...array(job.intelligence?.features?.skills),
-    ...array(job.evaluation?.ats_keywords?.found),
-    ...tokenize(`${job.title || ""} ${job.description || ""}`).slice(0, 20)
-  ], jobWeight).slice(0, 18);
-  const avoidSignals = countWeighted(negative, (job) => [
-    ...array(job.intelligence?.features?.avoidHits),
-    ...tokenize(`${job.title || ""} ${job.description || ""}`).slice(0, 16)
-  ], (job) => Math.abs(jobWeight(job))).slice(0, 14);
+  const preferredSkills = countWeighted(positive, (job) => {
+    // Only count recognized skill terms — avoids company name fragments and prose noise.
+    // Structured signals (features.skills, ats_keywords.found) are already filtered by intelligence.
+    // For title tokens, only include items that match SKILL_TERMS to prevent noise like "we", "money".
+    const titleTokens = tokenize(job.title || "").filter((t) => SKILL_TERMS.has(t));
+    return [
+      ...array(job.intelligence?.features?.skills),
+      ...array(job.evaluation?.ats_keywords?.found),
+      ...titleTokens
+    ];
+  }, jobWeight).slice(0, 18);
+  const avoidSignals = countWeighted(negative, (job) => {
+    // For avoid signals, only count structured avoidHits and skill terms from title — not raw description
+    const titleSkills = tokenize(job.title || "").filter((t) => SKILL_TERMS.has(t));
+    return [
+      ...array(job.intelligence?.features?.avoidHits),
+      ...titleSkills
+    ];
+  }, (job) => Math.abs(jobWeight(job))).slice(0, 14);
   const preferredCompanies = countWeighted(positive, (job) => [job.company], jobWeight).slice(0, 12);
   const preferredSources = countWeighted(positive, (job) => [job.sourceStrategy, job.sourceMarket, job.sourceIndustry], jobWeight).slice(0, 12);
   const roleFamilies = countWeighted(positive, (job) => [job.intelligence?.features?.roleFamily], jobWeight).slice(0, 8);
