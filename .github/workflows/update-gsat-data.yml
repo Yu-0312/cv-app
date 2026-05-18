@@ -11,6 +11,7 @@ permissions:
 jobs:
   refresh-gsat-data:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -34,7 +35,12 @@ jobs:
         run: |
           npm run gsat:104:standard
           npm run gsat:104:major-list
-          npm run gsat:build
+
+      - name: Fetch UAC minimum registration standards
+        run: npm run gsat:uac
+
+      - name: Build GSAT app data
+        run: npm run gsat:build
 
       - name: Commit updated data
         run: |

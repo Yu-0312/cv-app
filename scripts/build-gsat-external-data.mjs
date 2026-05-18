@@ -2,6 +2,7 @@
 
 import fs from "node:fs/promises";
 import path from "node:path";
+import { createArgParser, ensureDir } from "./lib/utils.mjs";
 
 const SUBJECT_ALIASES = new Map([
   ["國", "國文"],
@@ -58,17 +59,33 @@ const SUBJECT_SHORT_LABELS = new Map([
   ["自然", "自"]
 ]);
 
-const args = process.argv.slice(2);
+const STANDARD_LEVEL_KEYS = new Map([
+  ["top", "頂標"],
+  ["pre", "前標"],
+  ["avage", "均標"],
+  ["post", "後標"],
+  ["bottom", "底標"]
+]);
 
-function getFlag(name, fallback = null) {
-  const idx = args.indexOf(name);
-  if (idx === -1 || idx === args.length - 1) return fallback;
-  return args[idx + 1];
-}
+const STANDARD_SUBJECT_KEYS = new Map([
+  ["chinese", "國文"],
+  ["english", "英文"],
+  ["mathA", "數學A"],
+  ["mathB", "數學B"],
+  ["natural", "自然"],
+  ["society", "社會"]
+]);
 
-function hasFlag(name) {
-  return args.includes(name);
-}
+const UAC_SUBJECT_KEYS = new Map([
+  ["chinese", "國文"],
+  ["english", "英文"],
+  ["mathA", "數學A"],
+  ["mathB", "數學B"],
+  ["natural", "自然"],
+  ["society", "社會"]
+]);
+
+const { args, getFlag, hasFlag } = createArgParser(process.argv.slice(2));
 
 function printHelp() {
   console.log(`
@@ -87,8 +104,76 @@ GSAT 外部資料建置工具
 `);
 }
 
-async function ensureDir(filePath) {
-  await fs.mkdir(path.dirname(filePath), { recursive: true });
+
+function parseStandardsJson(raw) {
+  const result = new Map();
+  const yearEntries = [];
+  if (raw?.data?.currentYear) yearEntries.push(raw.data.currentYear);
+  if (raw?.data?.preYear) yearEntries.push(raw.data.preYear);
+  for (const entry of yearEntries) {
+    const year = entry.year;
+    if (!year) continue;
+    const yearMap = {};
+    for (const [levelKey, levelLabel] of STANDARD_LEVEL_KEYS) {
+      const levelData = entry.score?.[levelKey] ?? {};
+      for (const [subjectKey, subjectName] of STANDARD_SUBJECT_KEYS) {
+        const score = Number(levelData[subjectKey]);
+        if (Number.isFinite(score)) {
+          if (!yearMap[subjectName]) yearMap[subjectName] = {};
+          yearMap[subjectName][levelLabel] = score;
+        }
+      }
+    }
+    result.set(year, yearMap);
+  }
+  return result;
+}
+
+function parseUacJson(raw) {
+  if (!Array.isArray(raw?.combinations)) return new Map();
+  const result = new Map();
+  for (const combo of raw.combinations) {
+    const subjects = Array.isArray(combo.subjects) ? combo.subjects : [];
+    const key = subjects.slice().sort().join("+");
+    if (!key) continue;
+    result.set(key, {
+      subjects,
+      minScore: combo.minScore ?? null,
+      year: combo.year ?? null
+    });
+  }
+  return result;
+}
+
+function buildThScores(thresholds, scoreYear, standardsMap) {
+  if (!standardsMap?.size || !thresholds) return {};
+  const yearData =
+    standardsMap.get(scoreYear) ??
+    standardsMap.get([...standardsMap.keys()].sort((a, b) => b - a)[0]);
+  if (!yearData) return {};
+  const thScores = {};
+  for (const [subject, levelLabel] of Object.entries(thresholds)) {
+    const score = yearData[subject]?.[levelLabel];
+    if (score != null) thScores[subject] = score;
+  }
+  return thScores;
+}
+
+function buildScoreContext(thresholds, thScores) {
+  if (!thresholds || !Object.keys(thresholds).length) return "";
+  return Object.entries(thresholds)
+    .map(([subject, levelLabel]) => {
+      const score = thScores?.[subject];
+      return score != null ? `${subject}≥${score}（${levelLabel}）` : `${subject}${levelLabel}`;
+    })
+    .join("、");
+}
+
+function matchUacScore(weights, uacMap) {
+  if (!uacMap?.size || !weights) return null;
+  const subjects = Object.keys(weights).sort();
+  const key = subjects.join("+");
+  return uacMap.get(key) ?? null;
 }
 
 async function collectInputFiles(inputPath) {
@@ -383,7 +468,7 @@ function buildNote(record) {
   return base.join("・");
 }
 
-function toAppRecord(record) {
+function toAppRecord(record, { standardsMap = null, uacMap = null } = {}) {
   const track = inferTrack(record);
   if (!track) {
     return { skipped: true, reason: "無法判斷自然組或社會組" };
@@ -402,15 +487,24 @@ function toAppRecord(record) {
     return { skipped: true, reason: "缺少校名或系名" };
   }
 
+  const weights = inferWeights(record, track);
+  const thresholds = buildThresholds(record);
+  const thScores = buildThScores(thresholds, record.scoreYear, standardsMap);
+  const scoreContext = buildScoreContext(thresholds, thScores);
+  const uacRef = matchUacScore(weights, uacMap);
+
   return {
     skipped: false,
     value: {
       u: schoolName,
       d: departmentName,
       t: track,
-      w: inferWeights(record, track),
-      th: buildThresholds(record),
+      w: weights,
+      th: thresholds,
+      thScores,
+      scoreContext,
       h: history,
+      uacRef: uacRef ? { minScore: uacRef.minScore, subjects: uacRef.subjects, year: uacRef.year } : null,
       note: buildNote(record),
       source: "104",
       criteriaName: primary?.label || "",
@@ -444,10 +538,26 @@ async function build() {
   const jsOut = getFlag("--js-out");
   const jsonOut = getFlag("--json-out");
   const reportOut = getFlag("--report-out");
+  const standardsJsonPath = getFlag("--standards-json");
+  const uacJsonPath = getFlag("--uac-json");
 
   if (!inputPath) throw new Error("缺少 normalized JSON 路徑");
   if (!jsOut || !jsonOut || !reportOut) {
     throw new Error("請提供 --js-out、--json-out、--report-out");
+  }
+
+  let standardsMap = null;
+  if (standardsJsonPath) {
+    const raw = JSON.parse(await fs.readFile(standardsJsonPath, "utf8"));
+    standardsMap = parseStandardsJson(raw);
+    console.log(`已載入五標資料：${standardsJsonPath}（${standardsMap.size} 個學年度）`);
+  }
+
+  let uacMap = null;
+  if (uacJsonPath) {
+    const raw = JSON.parse(await fs.readFile(uacJsonPath, "utf8"));
+    uacMap = parseUacJson(raw);
+    console.log(`已載入分發委員會資料：${uacJsonPath}（${uacMap.size} 個科目組合）`);
   }
 
   const inputFiles = await collectInputFiles(inputPath);
@@ -458,7 +568,7 @@ async function build() {
     const payload = JSON.parse(await fs.readFile(file, "utf8"));
     const majors = Array.isArray(payload?.majors) ? payload.majors : [];
     for (const major of majors) {
-      const converted = toAppRecord(major);
+      const converted = toAppRecord(major, { standardsMap, uacMap });
       if (converted.skipped) {
         skipped.push({
           sourceFile: path.basename(file),
@@ -480,6 +590,10 @@ async function build() {
     `輸入檔數：${inputFiles.length}`,
     `成功筆數：${merged.length}`,
     `跳過筆數：${skipped.length}`,
+    `五標來源：${standardsJsonPath ?? "未提供"}`,
+    `分發委員會來源：${uacJsonPath ?? "未提供"}`,
+    `含實際門檻分數（thScores）：${standardsMap ? "是" : "否"}`,
+    `含分發最低登記分（uacRef）：${uacMap ? "是" : "否"}`,
     "",
     "## 輸入來源",
     ...inputFiles.map((file) => `- ${file}`),
