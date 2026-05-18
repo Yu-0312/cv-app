@@ -113,6 +113,8 @@ function normalizeSource(item, group, strategy) {
     language: String(item?.language || item?.lang || "").trim() || undefined,
     searchText: String(item?.searchText || "").trim() || undefined,
     keyword: String(item?.keyword || "").trim() || undefined,
+    jobUrlPattern: String(item?.jobUrlPattern || "").trim() || undefined,
+    sitemapFilePattern: String(item?.sitemapFilePattern || "").trim() || undefined,
     appliedFacets: item?.appliedFacets && typeof item.appliedFacets === "object" ? item.appliedFacets : undefined,
     market: String(item?.market || item?.region || "global").trim().toLowerCase(),
     industry: String(item?.industry || "").trim(),
@@ -121,6 +123,7 @@ function normalizeSource(item, group, strategy) {
     titleFilter: item?.titleFilter || strategy.titleFilter || undefined,
     discover: item?.discover === undefined ? undefined : Boolean(item.discover),
     maxDiscovered: Number.isFinite(Number(item?.maxDiscovered)) ? Math.max(0, Number(item.maxDiscovered)) : undefined,
+    maxSitemapFiles: Number.isFinite(Number(item?.maxSitemapFiles)) ? Math.max(1, Number(item.maxSitemapFiles)) : undefined,
     detailLimit: Number.isFinite(Number(item?.detailLimit)) ? Math.max(0, Number(item.detailLimit)) : undefined
   };
 }

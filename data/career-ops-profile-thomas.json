@@ -1,0 +1,29 @@
+{
+  "name": "Thomas Davis",
+  "fullName": "Thomas Davis",
+  "role": "Product Engineer",
+  "targetRole": "Senior Product Engineer",
+  "summary": "Full stack developer with 15+ years of experience building products at startups and open source initiatives. Currently specializing in generative AI applications, LLM pipelines, and AI agent infrastructure. Creator of JSON Resume (5k+ stars) and cdnjs (serving hundreds of billions of requests monthly).",
+  "skills": [
+    "TypeScript", "JavaScript", "React", "Next.js", "Node.js",
+    "Go", "Python", "PostgreSQL", "Supabase", "Redis",
+    "OpenAI API", "Anthropic API", "Google Gemini", "LLM pipelines",
+    "Vector Search", "RAG", "MCP", "AI Agents",
+    "GCP", "Kubernetes", "Docker", "AWS", "Vercel",
+    "GraphQL", "REST API", "System Design", "Open Source"
+  ],
+  "experience": "15+ years full stack development. Product Engineer (AI Focus) at multiple startups (2020-present). Senior JavaScript Developer at Tokenized and Blockbid. CTO at Earbits. Developer at Electronic Frontier Foundation. Built cdnjs (serves 100B+ requests/month), JSON Resume (community open standard, 5k+ stars), AI Discord bot (80+ tools), custom GPT training system with Vulkan backend.",
+  "projects": "JSON Resume (open source resume standard), cdnjs (open source JS CDN), Omega (self-evolving AI Discord bot), Alpha (custom GPT training in TypeScript with Vulkan), TPMJS (Tool Package Manager for AI Agents), Blocks (AI coding validator).",
+  "education": "University of Queensland — Software Engineering (incomplete)",
+  "location": "Melbourne, AU",
+  "preferences": {
+    "targetRoles": ["Product Engineer", "Senior Product Engineer", "Staff Engineer", "Full Stack Engineer", "AI Engineer"],
+    "keywords": ["AI", "LLM", "remote", "startup", "open source", "agent", "product"],
+    "locations": ["Remote", "Melbourne", "San Francisco", "Tokyo"],
+    "companies": [],
+    "avoidKeywords": ["commission-only", "unpaid", "junior"],
+    "salaryMin": 150000,
+    "northStar": "Build AI-first products with meaningful open-source impact",
+    "remote": true
+  }
+}

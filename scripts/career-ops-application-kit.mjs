@@ -93,6 +93,89 @@ function subjectLine(job) {
   return `${job.title || "Role"} application - ${job.company || "Career Team"}`;
 }
 
+// ── ATS Keyword Injection (16-step pipeline inspired by career-ops pdf.md) ────
+function buildAtsInjection(job, profile) {
+  const found   = array(job.evaluation?.ats_keywords?.found || job.intelligence?.features?.profileSkillHits);
+  const missing = array(job.evaluation?.ats_keywords?.missing || job.intelligence?.features?.missingProfileSkills);
+  const skills  = profileSkills(profile);
+
+  // Step 1: Extract top JD keywords (from found + extras in JD)
+  const jdText = `${job.title || ""} ${job.description || ""}`.toLowerCase();
+  const jdKeywords = Array.from(new Set([
+    ...found,
+    ...skills.filter((s) => jdText.includes(s.toLowerCase())),
+  ])).slice(0, 20);
+
+  // Step 2: Separate hard skills vs soft skills
+  const SOFT_TERMS = ["communication", "leadership", "collaboration", "problem solving", "adaptable", "proactive", "detail-oriented", "analytical"];
+  const hardKeywords = jdKeywords.filter((k) => !SOFT_TERMS.some((s) => k.toLowerCase().includes(s)));
+  const softKeywords = jdKeywords.filter((k) => SOFT_TERMS.some((s) => k.toLowerCase().includes(s)));
+
+  // Step 3: Detect role archetype — title-first (high precision), then career-ops 6 archetypes
+  const titleText = (job.title || "").toLowerCase();
+  const text = `${job.title || ""} ${job.description || ""}`.toLowerCase();
+  const archetype =
+    // Title-first: job title is the strongest archetype signal
+    /(product manager|product lead|product owner|program manager|technical pm)/i.test(titleText) ? "Technical AI PM" :
+    /(solutions? architect|platform architect|integration architect)/i.test(titleText) ? "AI Solutions Architect" :
+    /(full.?stack)/i.test(titleText) ? "Full Stack Engineer" :
+    /(backend|back.end|server.?side engineer)/i.test(titleText) ? "Backend Engineer" :
+    /(frontend|front.end|ui engineer)/i.test(titleText) ? "Frontend Engineer" :
+    // Content-based career-ops archetypes
+    /(observabilit|evals?\b|llmops|mlops|model serv|llm infra|pipeline.*monitor|inference pipeline)/i.test(text) ? "AI Platform / LLMOps" :
+    /(multi.?agent|agentic|agent framework|hitl|human.?in.?the.?loop)/i.test(text) ? "Agentic / Automation" :
+    /(prd\b|product discovery|product owner|product architect)/i.test(text) ? "Technical AI PM" :
+    /(enterprise integrat|integration architect|system.?architecture design)/i.test(text) ? "AI Solutions Architect" :
+    /(forward.?deploy|client.?facing|field (engineer|team)|solution engineer)/i.test(text) ? "AI Forward Deployed" :
+    /(ai transformation|change management.*ai|ai.*enablement|ai champion)/i.test(text) ? "AI Transformation" :
+    // General tech fallbacks
+    /(frontend|react|vue|angular|ui engineer)/i.test(text) ? "Frontend Engineer" :
+    /(backend|api|node\.?js|python\b|go\b|java\b|server.?side)/i.test(text) ? "Backend Engineer" :
+    /(full.?stack|全端)/i.test(text) ? "Full Stack Engineer" :
+    /(data scientist|deep learning|machine learning|llm\b|ai engineer)/i.test(text) ? "AI/Data Engineer" :
+    /(ux\b|designer|figma|design system)/i.test(text) ? "UX Designer" :
+    /(marketing|growth hacking|seo\b|行銷)/i.test(text) ? "Marketing" :
+    String(job.intelligence?.features?.roleFamily || "General Engineer");
+
+  // Step 4: Build summary rewrite direction
+  const summaryRewriteHints = [
+    hardKeywords.length ? `在 Professional Summary 中自然帶入：${hardKeywords.slice(0, 5).join("、")}` : null,
+    `使用職位語言：「${archetype}」方向的動詞和術語`,
+    missing.length ? `【你已有但此 JD 未要求】可視情況選擇性提及：${missing.slice(0, 5).join("、")}` : null,
+  ].filter(Boolean);
+
+  // Step 5: ATS formatting rules
+  const atsRules = [
+    "單欄排版，避免 sidebar 雙欄（ATS parser 容易亂序）",
+    "使用標準 header：Professional Summary, Work Experience, Skills, Education",
+    "不使用巢狀表格或文字框",
+    "確保 PDF 文字可被選取（不可光柵化輸出）",
+    "UTF-8 編碼，移除 em dash / smart quote / zero-width space",
+    "關鍵技能在 Skills section 明確列出，不要只藏在 bullet 裡",
+  ];
+
+  // Step 6: Ethicality guardrails
+  const guardrails = [
+    "NEVER add skills the candidate lacks",
+    "Only reformulate real experience with exact JD vocabulary",
+    `Example: if candidate has 'API development', it can become '${hardKeywords[0] || "REST API design"}'`,
+  ];
+
+  return {
+    jdKeywords: jdKeywords.slice(0, 15),
+    hardKeywords: hardKeywords.slice(0, 10),
+    softKeywords,
+    missingKeywords: missing.slice(0, 8),
+    archetype,
+    summaryRewriteHints,
+    atsRules,
+    guardrails,
+    keywordCoveragePercent: jdKeywords.length
+      ? Math.round((hardKeywords.length / Math.min(jdKeywords.length, 15)) * 100)
+      : 0,
+  };
+}
+
 function buildPlaybook(job, profile) {
   const name = profileName(profile);
   const role = profileRole(profile);
@@ -103,20 +186,27 @@ function buildPlaybook(job, profile) {
   const company = job.company || "the company";
   const title = job.title || role;
   const score = job.score === undefined || job.score === "" ? "unscored" : `${job.score}/${job.grade || ""}`;
+  const atsInjection = buildAtsInjection(job, profile);
+  const blockG = job.blockG || job.dimensions?.legitimacy || null;
 
   return {
     jobKey: job.jobKey || job.url || `${company}:${title}`,
     title,
     company,
     score,
-    priority: Number(job.score || 0) >= 82 ? "P0" : Number(job.score || 0) >= 70 ? "P1" : "P2",
+    rating: job.rating || null,
+    blockG: blockG ? { tier: blockG.tier, confidence: blockG.confidence } : null,
+    priority: Number(job.score || 0) >= 80 ? "P0" : Number(job.score || 0) >= 70 ? "P1" : "P2",
+    atsInjection,
     applyChecklist: [
       "Open the source URL and confirm the role is still active.",
+      blockG?.tier === "Suspicious" ? "⚠ Block G: Suspicious — verify legitimacy on company official site before applying." : null,
+      blockG?.tier === "Proceed with Caution" ? "⚠ Block G: Proceed with Caution — double-check recruiter identity." : null,
       "Generate or refresh the tailored ATS PDF from this job.",
-      keywordPack.length ? `Mirror these keywords honestly: ${keywordPack.join(", ")}` : "Add only keywords that are already supported by the CV.",
+      atsInjection.hardKeywords.length ? `Mirror these JD keywords honestly in your CV: ${atsInjection.hardKeywords.slice(0, 8).join(", ")}` : "Add only keywords already supported by the CV.",
       missing.length ? `Do not overclaim missing areas: ${missing.join(", ")}` : "No major missing keyword cluster detected.",
-      "Log status, recruiter/contact, and next follow-up date in the tracker."
-    ],
+      "Log status, recruiter/contact, and next follow-up date in the tracker.",
+    ].filter(Boolean),
     outreachEmail: {
       subject: subjectLine(job),
       body: [
@@ -183,6 +273,16 @@ function renderMarkdown(payload) {
       `- Priority: ${playbook.priority}`,
       `- Score: ${playbook.score}`,
       `- Subject: ${playbook.outreachEmail.subject}`,
+      "",
+      `- Block G: ${playbook.blockG?.tier || "High Confidence"}`,
+      playbook.rating ? `- Rating: ${playbook.rating.toFixed(1)}/5.0` : "",
+      "",
+      "### ATS Keyword Injection",
+      `- Archetype: ${playbook.atsInjection?.archetype || "-"}`,
+      `- Coverage: ${playbook.atsInjection?.keywordCoveragePercent || 0}%`,
+      `- JD Keywords: ${(playbook.atsInjection?.hardKeywords || []).slice(0, 8).join(", ") || "-"}`,
+      ...(playbook.atsInjection?.summaryRewriteHints || []).map((h) => `- ${h}`),
+      `- Missing (do NOT fabricate): ${(playbook.atsInjection?.missingKeywords || []).join(", ") || "none"}`,
       "",
       "### Apply Checklist",
       ...playbook.applyChecklist.map((item) => `- ${item}`),

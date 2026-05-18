@@ -24,6 +24,38 @@
       "machine learning",
       "engineer",
       "developer",
+      "designer",
+      "analyst",
+      "consultant",
+      "project manager",
+      "program manager",
+      "operations",
+      "business operations",
+      "customer success",
+      "account manager",
+      "sales",
+      "account executive",
+      "business development",
+      "marketing",
+      "growth",
+      "content",
+      "finance",
+      "financial analyst",
+      "accountant",
+      "legal",
+      "counsel",
+      "human resources",
+      "hr",
+      "recruiter",
+      "talent acquisition",
+      "supply chain",
+      "manufacturing",
+      "quality engineer",
+      "process engineer",
+      "hardware engineer",
+      "firmware engineer",
+      "mechanical engineer",
+      "electrical engineer",
       "工程師",
       "前端",
       "後端",
@@ -32,7 +64,27 @@
       "資料分析",
       "資料科學",
       "機器學習",
-      "人工智慧"
+      "人工智慧",
+      "設計師",
+      "分析師",
+      "顧問",
+      "專案經理",
+      "營運",
+      "行銷",
+      "業務",
+      "客戶成功",
+      "財務",
+      "會計",
+      "法務",
+      "人資",
+      "招募",
+      "供應鏈",
+      "製程",
+      "品質",
+      "韌體",
+      "硬體",
+      "機構",
+      "電機"
     ],
     "negative": [
       "senior director",
@@ -41,15 +93,8 @@
       "head of",
       "principal",
       "staff",
-      "sales",
-      "account executive",
-      "legal",
-      "finance",
       "資深總監",
-      "副總",
-      "法務",
-      "財務",
-      "業務"
+      "副總"
     ]
   },
   "trackedCompanies": [
@@ -1391,6 +1436,26 @@
     {
       "market": "sg",
       "query": "site:tech.gov.sg/careers Singapore product manager"
+    },
+    {
+      "market": "sg",
+      "query": "site:mycareersfuture.gov.sg Singapore software engineer"
+    },
+    {
+      "market": "sg",
+      "query": "site:sg.indeed.com Singapore software engineer"
+    },
+    {
+      "market": "sg",
+      "query": "site:sg.indeed.com Singapore frontend engineer"
+    },
+    {
+      "market": "sg",
+      "query": "site:jobstreet.com.sg Singapore data analyst product manager"
+    },
+    {
+      "market": "sg",
+      "query": "site:nodeflair.com Singapore software engineer"
     },
     {
       "market": "global",

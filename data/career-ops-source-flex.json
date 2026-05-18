@@ -1,10 +1,123 @@
 {
   "name": "Career Ops Source Flex Rules",
-  "description": "Expansion rules that make source collection more flexible than a fixed company list. These rules generate extra source candidates and search queries from markets, role aliases, ATS domains, and company career URL patterns.",
+  "description": "Expansion rules that make source collection more flexible than a fixed company list. These rules generate extra source candidates and search queries from markets, role aliases, ATS domains, job boards, seed sources, and company career URL patterns.",
+  "titleFilter": {
+    "positive": [
+      "senior frontend engineer",
+      "frontend engineer",
+      "front-end engineer",
+      "web engineer",
+      "backend engineer",
+      "full stack engineer",
+      "full-stack engineer",
+      "product engineer",
+      "software developer",
+      "application developer",
+      "platform engineer",
+      "cloud engineer",
+      "devops engineer",
+      "site reliability engineer",
+      "sre",
+      "data engineer",
+      "analytics engineer",
+      "ai engineer",
+      "ml engineer",
+      "machine learning engineer",
+      "product manager",
+      "product designer",
+      "ux designer",
+      "ui designer",
+      "project manager",
+      "program manager",
+      "business analyst",
+      "financial analyst",
+      "accountant",
+      "consultant",
+      "strategy analyst",
+      "operations manager",
+      "business operations",
+      "customer success manager",
+      "account manager",
+      "account executive",
+      "business development",
+      "sales manager",
+      "marketing manager",
+      "growth marketer",
+      "content strategist",
+      "hr specialist",
+      "recruiter",
+      "talent acquisition",
+      "legal counsel",
+      "supply chain",
+      "manufacturing engineer",
+      "process engineer",
+      "quality engineer",
+      "hardware engineer",
+      "firmware engineer",
+      "mechanical engineer",
+      "electrical engineer",
+      "entwickler",
+      "ingenieur",
+      "ingénieur logiciel",
+      "développeur",
+      "開発",
+      "ソフトウェアエンジニア",
+      "프론트엔드",
+      "백엔드",
+      "개발자",
+      "วิศวกรซอฟต์แวร์",
+      "kỹ sư phần mềm",
+      "設計師",
+      "專案經理",
+      "分析師",
+      "顧問",
+      "營運",
+      "行銷",
+      "業務",
+      "客戶成功",
+      "財務",
+      "會計",
+      "人資",
+      "招募",
+      "法務",
+      "供應鏈",
+      "製程",
+      "品質",
+      "硬體",
+      "韌體",
+      "機構",
+      "電機",
+      "software engineer",
+      "new graduate",
+      "graduate program",
+      "graduate school",
+      "masters",
+      "master",
+      "phd",
+      "postdoc",
+      "research assistant",
+      "researcher",
+      "研究所",
+      "研究助理",
+      "研究員",
+      "博士",
+      "碩士",
+      "修士",
+      "博士課程",
+      "研究職",
+      "大学院",
+      "大学院生",
+      "校系",
+      "招生"
+    ]
+  },
   "markets": [
     {
       "code": "tw",
       "locations": ["Taiwan", "Taipei", "Hsinchu", "Taichung", "Kaohsiung", "台灣", "台北", "新竹"],
+      "titleFilter": {
+        "locationPositive": ["Taiwan", "Taipei", "Hsinchu", "Taichung", "Kaohsiung", "台灣", "台北", "新竹"]
+      },
       "jobBoards": [
         "https://www.104.com.tw/jobs/search/",
         "https://www.1111.com.tw/search/job",
@@ -15,6 +128,9 @@
     {
       "code": "cn",
       "locations": ["China", "Shanghai", "Beijing", "Shenzhen", "Hangzhou", "中國", "上海", "北京", "深圳", "杭州"],
+      "titleFilter": {
+        "locationPositive": ["China", "Shanghai", "Beijing", "Shenzhen", "Hangzhou", "中國", "上海", "北京", "深圳", "杭州"]
+      },
       "jobBoards": [
         "https://www.zhipin.com/",
         "https://www.lagou.com/",
@@ -25,6 +141,9 @@
     {
       "code": "jp",
       "locations": ["Japan", "Tokyo", "Osaka", "Kyoto", "Yokohama", "日本", "東京", "大阪"],
+      "titleFilter": {
+        "locationPositive": ["Japan", "Tokyo", "Osaka", "Kyoto", "Yokohama", "日本", "東京", "大阪"]
+      },
       "jobBoards": [
         "https://japan-dev.com/jobs",
         "https://www.tokyodev.com/jobs",
@@ -35,6 +154,9 @@
     {
       "code": "kr",
       "locations": ["Korea", "South Korea", "Seoul", "Pangyo", "Busan", "韓國", "首爾"],
+      "titleFilter": {
+        "locationPositive": ["Korea", "South Korea", "Seoul", "Pangyo", "Busan", "韓國", "首爾", "서울"]
+      },
       "jobBoards": [
         "https://www.wanted.co.kr/wdlist",
         "https://www.saramin.co.kr/zf_user/jobs/list/job-category",
@@ -45,34 +167,1124 @@
     {
       "code": "sg",
       "locations": ["Singapore", "新加坡"],
+      "titleFilter": {
+        "locationPositive": ["Singapore", "新加坡"]
+      },
       "jobBoards": [
         "https://www.mycareersfuture.gov.sg/search",
         "https://nodeflair.com/jobs",
         "https://www.jobstreet.com.sg/jobs",
         "https://www.glassdoor.sg/Job/singapore-jobs-SRCH_IL.0,9_IN217.htm"
       ]
+    },
+    {
+      "code": "us",
+      "locations": ["United States", "San Francisco", "Seattle", "New York", "Austin", "Boston", "Remote US"],
+      "titleFilter": {
+        "locationPositive": ["United States", "USA", "US", "US Remote", "US-Remote", "Remote US", "Remote (US)", "Remote in US", "Remote in United States", "San Francisco", "SF", "SFO", "Seattle", "SEA", "New York", "New York City", "NYC", "Austin", "Boston", "Chicago", "Atlanta", "Washington DC", "California"]
+      },
+      "jobBoards": [
+        "https://www.workatastartup.com/jobs",
+        "https://wellfound.com/jobs",
+        "https://builtin.com/jobs",
+        "https://www.dice.com/jobs"
+      ]
+    },
+    {
+      "code": "ca",
+      "locations": ["Canada", "Toronto", "Vancouver", "Montreal", "Waterloo", "Remote Canada"],
+      "titleFilter": {
+        "locationPositive": ["Canada", "Toronto", "Vancouver", "Montreal", "Waterloo", "Remote Canada", "Remote-Canada", "Remote (Canada)", "Remote in Canada", "CAN-Remote"]
+      },
+      "jobBoards": [
+        "https://www.jobbank.gc.ca/jobsearch",
+        "https://www.eluta.ca/search",
+        "https://wellfound.com/jobs"
+      ]
+    },
+    {
+      "code": "uk",
+      "locations": ["United Kingdom", "London", "Cambridge", "Manchester", "Edinburgh", "Remote UK"],
+      "titleFilter": {
+        "locationPositive": ["United Kingdom", "UK", "London", "London, UK", "Cambridge", "Manchester", "Edinburgh", "Remote UK", "Remote (UK)"]
+      },
+      "jobBoards": [
+        "https://wellfound.com/jobs",
+        "https://otta.com/jobs",
+        "https://www.cwjobs.co.uk/jobs"
+      ]
+    },
+    {
+      "code": "de",
+      "locations": ["Germany", "Berlin", "Munich", "Hamburg", "Frankfurt", "Remote Germany"],
+      "titleFilter": {
+        "locationPositive": ["Germany", "Deutschland", "Berlin", "Munich", "München", "Hamburg", "Frankfurt", "Remote Germany"]
+      },
+      "jobBoards": [
+        "https://www.honeypot.io/en/jobs",
+        "https://germantechjobs.de/en/jobs/all",
+        "https://wellfound.com/jobs"
+      ]
+    },
+    {
+      "code": "nl",
+      "locations": ["Netherlands", "Amsterdam", "Eindhoven", "Rotterdam", "Utrecht"],
+      "titleFilter": {
+        "locationPositive": ["Netherlands", "Nederland", "Amsterdam", "Eindhoven", "Rotterdam", "Utrecht"]
+      },
+      "jobBoards": [
+        "https://www.iamexpat.nl/career/jobs-netherlands",
+        "https://www.honeypot.io/en/jobs",
+        "https://wellfound.com/jobs"
+      ]
+    },
+    {
+      "code": "fr",
+      "locations": ["France", "Paris", "Lyon", "Toulouse", "Nantes"],
+      "titleFilter": {
+        "locationPositive": ["France", "Paris", "Lyon", "Toulouse", "Nantes"]
+      },
+      "jobBoards": [
+        "https://www.welcometothejungle.com/en/jobs",
+        "https://www.honeypot.io/en/jobs",
+        "https://wellfound.com/jobs"
+      ]
+    },
+    {
+      "code": "au",
+      "locations": ["Australia", "Sydney", "Melbourne", "Brisbane", "Perth", "Remote Australia"],
+      "titleFilter": {
+        "locationPositive": ["Australia", "Sydney", "Melbourne", "Brisbane", "Perth", "Remote Australia"]
+      },
+      "jobBoards": [
+        "https://www.seek.com.au/software-engineer-jobs",
+        "https://www.work180.com/en-au/jobs",
+        "https://wellfound.com/jobs"
+      ]
+    },
+    {
+      "code": "in",
+      "locations": ["India", "Bengaluru", "Bangalore", "Hyderabad", "Pune", "Mumbai", "Gurugram"],
+      "titleFilter": {
+        "locationPositive": ["India", "Bengaluru", "Bangalore", "Hyderabad", "Pune", "Mumbai", "Gurugram", "Gurgaon"]
+      },
+      "jobBoards": [
+        "https://wellfound.com/jobs",
+        "https://www.instahyre.com/jobs/",
+        "https://cutshort.io/jobs"
+      ]
+    },
+    {
+      "code": "hk",
+      "locations": ["Hong Kong", "香港"],
+      "titleFilter": {
+        "locationPositive": ["Hong Kong", "香港"]
+      },
+      "jobBoards": [
+        "https://hk.jobsdb.com/jobs",
+        "https://www.cpjobs.com/hk/jobs",
+        "https://wellfound.com/jobs"
+      ]
+    },
+    {
+      "code": "ph",
+      "locations": ["Philippines", "Manila", "Taguig", "Makati", "Quezon City"],
+      "titleFilter": {
+        "locationPositive": ["Philippines", "Manila", "Taguig", "Makati", "Quezon City"]
+      },
+      "jobBoards": [
+        "https://www.jobstreet.com.ph/jobs",
+        "https://www.kalibrr.com/job-board",
+        "https://wellfound.com/jobs"
+      ]
+    },
+    {
+      "code": "my",
+      "locations": ["Malaysia", "Kuala Lumpur", "Selangor", "Penang", "Petaling Jaya"],
+      "titleFilter": {
+        "locationPositive": ["Malaysia", "Kuala Lumpur", "Selangor", "Penang", "Petaling Jaya"]
+      },
+      "jobBoards": [
+        "https://www.jobstreet.com.my/jobs",
+        "https://www.hiredly.com/jobs",
+        "https://wellfound.com/jobs"
+      ]
+    },
+    {
+      "code": "id",
+      "locations": ["Indonesia", "Jakarta", "Bandung", "Surabaya", "Yogyakarta"],
+      "titleFilter": {
+        "locationPositive": ["Indonesia", "Jakarta", "Bandung", "Surabaya", "Yogyakarta"]
+      },
+      "jobBoards": [
+        "https://www.jobstreet.co.id/jobs",
+        "https://www.kalibrr.com/job-board",
+        "https://wellfound.com/jobs"
+      ]
+    },
+    {
+      "code": "vn",
+      "locations": ["Vietnam", "Ho Chi Minh", "Hanoi", "Da Nang", "Việt Nam"],
+      "titleFilter": {
+        "locationPositive": ["Vietnam", "Viet Nam", "Ho Chi Minh", "Hanoi", "Ha Noi", "Da Nang", "Việt Nam"]
+      },
+      "jobBoards": [
+        "https://www.vietnamworks.com/jobs",
+        "https://topdev.vn/it-jobs",
+        "https://wellfound.com/jobs"
+      ]
+    },
+    {
+      "code": "th",
+      "locations": ["Thailand", "Bangkok", "Chiang Mai"],
+      "titleFilter": {
+        "locationPositive": ["Thailand", "Bangkok", "Chiang Mai", "ประเทศไทย", "กรุงเทพ"]
+      },
+      "jobBoards": [
+        "https://th.jobsdb.com/jobs",
+        "https://www.jobtopgun.com/en/jobs",
+        "https://wellfound.com/jobs"
+      ]
+    },
+    {
+      "code": "ie",
+      "locations": ["Ireland", "Dublin", "Cork", "Galway"],
+      "titleFilter": {
+        "locationPositive": ["Ireland", "Dublin", "Cork", "Galway"]
+      },
+      "jobBoards": [
+        "https://wellfound.com/jobs",
+        "https://www.jobs.ie/jobs/technology"
+      ]
+    },
+    {
+      "code": "se",
+      "locations": ["Sweden", "Stockholm", "Gothenburg", "Malmö"],
+      "titleFilter": {
+        "locationPositive": ["Sweden", "Sverige", "Stockholm", "Gothenburg", "Göteborg", "Malmö"]
+      },
+      "jobBoards": [
+        "https://wellfound.com/jobs",
+        "https://www.thelocal.se/jobs"
+      ]
+    },
+    {
+      "code": "dk",
+      "locations": ["Denmark", "Copenhagen", "Aarhus"],
+      "titleFilter": {
+        "locationPositive": ["Denmark", "Danmark", "Copenhagen", "København", "Aarhus"]
+      },
+      "jobBoards": [
+        "https://wellfound.com/jobs",
+        "https://www.thelocal.dk/jobs"
+      ]
+    },
+    {
+      "code": "no",
+      "locations": ["Norway", "Oslo", "Bergen", "Trondheim"],
+      "titleFilter": {
+        "locationPositive": ["Norway", "Norge", "Oslo", "Bergen", "Trondheim"]
+      },
+      "jobBoards": [
+        "https://wellfound.com/jobs",
+        "https://www.thelocal.no/jobs"
+      ]
+    },
+    {
+      "code": "fi",
+      "locations": ["Finland", "Helsinki", "Espoo", "Tampere"],
+      "titleFilter": {
+        "locationPositive": ["Finland", "Suomi", "Helsinki", "Espoo", "Tampere"]
+      },
+      "jobBoards": [
+        "https://wellfound.com/jobs"
+      ]
+    },
+    {
+      "code": "ch",
+      "locations": ["Switzerland", "Zurich", "Geneva", "Lausanne"],
+      "titleFilter": {
+        "locationPositive": ["Switzerland", "Schweiz", "Suisse", "Zurich", "Zürich", "Geneva", "Genève", "Lausanne"]
+      },
+      "jobBoards": [
+        "https://wellfound.com/jobs",
+        "https://www.swissdevjobs.ch/jobs/all"
+      ]
+    },
+    {
+      "code": "es",
+      "locations": ["Spain", "Madrid", "Barcelona", "Valencia"],
+      "titleFilter": {
+        "locationPositive": ["Spain", "España", "Madrid", "Barcelona", "Valencia"]
+      },
+      "jobBoards": [
+        "https://wellfound.com/jobs",
+        "https://www.infojobs.net/jobsearch/search-results/list.xhtml?keyword=software%20engineer"
+      ]
+    },
+    {
+      "code": "it",
+      "locations": ["Italy", "Milan", "Rome", "Turin"],
+      "titleFilter": {
+        "locationPositive": ["Italy", "Italia", "Milan", "Milano", "Rome", "Roma", "Turin", "Torino"]
+      },
+      "jobBoards": [
+        "https://wellfound.com/jobs",
+        "https://www.thelocal.it/jobs"
+      ]
+    },
+    {
+      "code": "pl",
+      "locations": ["Poland", "Warsaw", "Krakow", "Wroclaw", "Gdansk"],
+      "titleFilter": {
+        "locationPositive": ["Poland", "Polska", "Warsaw", "Warszawa", "Krakow", "Kraków", "Wroclaw", "Wrocław", "Gdansk", "Gdańsk"]
+      },
+      "jobBoards": [
+        "https://wellfound.com/jobs",
+        "https://justjoin.it"
+      ]
+    },
+    {
+      "code": "pt",
+      "locations": ["Portugal", "Lisbon", "Porto"],
+      "titleFilter": {
+        "locationPositive": ["Portugal", "Lisbon", "Lisboa", "Porto"]
+      },
+      "jobBoards": [
+        "https://wellfound.com/jobs"
+      ]
+    },
+    {
+      "code": "cz",
+      "locations": ["Czechia", "Prague", "Brno"],
+      "titleFilter": {
+        "locationPositive": ["Czechia", "Czech Republic", "Prague", "Praha", "Brno"]
+      },
+      "jobBoards": [
+        "https://wellfound.com/jobs"
+      ]
+    },
+    {
+      "code": "br",
+      "locations": ["Brazil", "São Paulo", "Rio de Janeiro", "Belo Horizonte"],
+      "titleFilter": {
+        "locationPositive": ["Brazil", "Brasil", "São Paulo", "Sao Paulo", "Rio de Janeiro", "Belo Horizonte"]
+      },
+      "jobBoards": [
+        "https://wellfound.com/jobs",
+        "https://programathor.com.br/jobs"
+      ]
+    },
+    {
+      "code": "mx",
+      "locations": ["Mexico", "Mexico City", "Guadalajara", "Monterrey"],
+      "titleFilter": {
+        "locationPositive": ["Mexico", "México", "Mexico City", "Ciudad de México", "CDMX", "Guadalajara", "Monterrey"]
+      },
+      "jobBoards": [
+        "https://wellfound.com/jobs",
+        "https://www.occ.com.mx/empleos/de-software-engineer/"
+      ]
+    },
+    {
+      "code": "il",
+      "locations": ["Israel", "Tel Aviv", "Jerusalem", "Haifa"],
+      "titleFilter": {
+        "locationPositive": ["Israel", "Tel Aviv", "Jerusalem", "Haifa"]
+      },
+      "jobBoards": [
+        "https://wellfound.com/jobs"
+      ]
+    },
+    {
+      "code": "ae",
+      "locations": ["United Arab Emirates", "Dubai", "Abu Dhabi"],
+      "titleFilter": {
+        "locationPositive": ["United Arab Emirates", "UAE", "Dubai", "Abu Dhabi"]
+      },
+      "jobBoards": [
+        "https://wellfound.com/jobs"
+      ]
+    },
+    {
+      "code": "nz",
+      "locations": ["New Zealand", "Auckland", "Wellington", "Christchurch"],
+      "titleFilter": {
+        "locationPositive": ["New Zealand", "Auckland", "Wellington", "Christchurch"]
+      },
+      "jobBoards": [
+        "https://www.seek.co.nz/software-engineer-jobs",
+        "https://wellfound.com/jobs"
+      ]
+    },
+    {
+      "code": "za",
+      "locations": ["South Africa", "Cape Town", "Johannesburg", "Pretoria"],
+      "titleFilter": {
+        "locationPositive": ["South Africa", "Cape Town", "Johannesburg", "Pretoria"]
+      },
+      "jobBoards": [
+        "https://wellfound.com/jobs",
+        "https://www.offerzen.com/jobs"
+      ]
     }
   ],
   "roleAliases": [
     {
       "canonical": "Frontend Engineer",
-      "aliases": ["frontend engineer", "front-end engineer", "web engineer", "react engineer", "前端工程師", "網頁工程師"]
+      "aliases": ["frontend engineer", "front-end engineer", "web engineer", "react engineer", "vue engineer", "next.js engineer", "前端工程師", "網頁工程師"]
     },
     {
-      "canonical": "Product Engineer",
-      "aliases": ["product engineer", "full stack product engineer", "產品工程師", "全端產品工程師"]
+      "canonical": "Backend Engineer",
+      "aliases": ["backend engineer", "back-end engineer", "api engineer", "node.js engineer", "platform engineer", "後端工程師", "平台工程師"]
+    },
+    {
+      "canonical": "Full Stack Engineer",
+      "aliases": ["full stack engineer", "full-stack engineer", "product engineer", "software engineer", "軟體工程師", "全端工程師", "產品工程師"]
     },
     {
       "canonical": "Data Analyst",
-      "aliases": ["data analyst", "business analyst", "analytics engineer", "資料分析師", "數據分析師"]
+      "aliases": ["data analyst", "business analyst", "analytics engineer", "data engineer", "資料分析師", "數據分析師", "資料工程師"]
+    },
+    {
+      "canonical": "AI Engineer",
+      "aliases": ["ai engineer", "machine learning engineer", "ml engineer", "applied scientist", "人工智慧工程師", "機器學習工程師"]
+    },
+    {
+      "canonical": "Product Manager",
+      "aliases": ["product manager", "technical product manager", "growth product manager", "產品經理", "技術產品經理"]
+    },
+    {
+      "canonical": "Business / Operations",
+      "aliases": ["business analyst", "operations manager", "business operations", "program manager", "project manager", "strategy analyst", "營運", "專案經理", "分析師"]
+    },
+    {
+      "canonical": "Sales / Customer Success",
+      "aliases": ["account executive", "account manager", "business development", "sales manager", "customer success manager", "solutions consultant", "業務", "客戶成功"]
+    },
+    {
+      "canonical": "Marketing / Growth",
+      "aliases": ["marketing manager", "growth marketer", "content strategist", "seo specialist", "brand manager", "行銷", "內容"]
+    },
+    {
+      "canonical": "Finance / Legal / People",
+      "aliases": ["financial analyst", "accountant", "legal counsel", "hr specialist", "recruiter", "talent acquisition", "財務", "會計", "法務", "人資", "招募"]
+    },
+    {
+      "canonical": "Hardware / Manufacturing",
+      "aliases": ["hardware engineer", "firmware engineer", "mechanical engineer", "electrical engineer", "process engineer", "quality engineer", "manufacturing engineer", "supply chain", "硬體工程師", "韌體工程師", "機構工程師", "電機工程師", "製程工程師", "品質工程師", "供應鏈"]
     }
   ],
   "atsDomains": [
     "boards.greenhouse.io",
+    "job-boards.greenhouse.io",
     "jobs.lever.co",
     "jobs.ashbyhq.com",
     "apply.workable.com",
-    "jobs.smartrecruiters.com"
+    "jobs.smartrecruiters.com",
+    "bamboohr.com",
+    "myworkdayjobs.com",
+    "myworkdaysite.com",
+    "oraclecloud.com",
+    "jobs2web.com",
+    "taleo.net"
+  ],
+  "sourceSeeds": [
+    {
+      "name": "TaiwanJobs Open Data",
+      "adapter": "taiwanjobs",
+      "url": "https://free.taiwanjobs.gov.tw/WebService_Taipei/Webservice.ashx?count=1000&T=CSV",
+      "market": "tw",
+      "maxDiscovered": 1000,
+      "titleFilterMode": "replace",
+      "titleFilter": {
+        "positive": []
+      },
+      "tags": ["job-board", "open-data", "taiwan", "broad-market-index"],
+      "sourceStrategy": "market-open-data"
+    },
+    {
+      "name": "1111 Taiwan Broad Listings",
+      "enabled": false,
+      "adapter": "1111",
+      "url": "https://www.1111.com.tw/search/job?page=1",
+      "market": "tw",
+      "maxDiscovered": 5000,
+      "titleFilterMode": "replace",
+      "titleFilter": {
+        "positive": []
+      },
+      "tags": ["job-board", "taiwan", "broad-market-index", "public-html"],
+      "sourceStrategy": "market-job-board"
+    },
+    {
+      "name": "1111 Taiwan Software Data Product",
+      "enabled": false,
+      "adapter": "1111",
+      "url": "https://www.1111.com.tw/search/job?ks=%E8%BB%9F%E9%AB%94%20%E8%B3%87%E6%96%99%20%E7%94%A2%E5%93%81&page=1",
+      "keyword": "軟體 資料 產品",
+      "market": "tw",
+      "maxDiscovered": 1500,
+      "titleFilterMode": "replace",
+      "titleFilter": {
+        "positive": []
+      },
+      "tags": ["job-board", "taiwan", "tech", "data", "product", "public-html"],
+      "sourceStrategy": "market-job-board"
+    },
+    {
+      "name": "1111 Taiwan Internship Research",
+      "enabled": false,
+      "adapter": "1111",
+      "url": "https://www.1111.com.tw/search/job?ks=%E5%AF%A6%E7%BF%92%20%E7%A0%94%E7%A9%B6%E5%8A%A9%E7%90%86&page=1",
+      "keyword": "實習 研究助理",
+      "market": "tw",
+      "maxDiscovered": 1000,
+      "titleFilterMode": "replace",
+      "titleFilter": {
+        "positive": []
+      },
+      "tags": ["job-board", "taiwan", "internship", "research", "graduate-school", "public-html"],
+      "sourceStrategy": "market-job-board"
+    },
+    {
+      "name": "1111 Taiwan Job Sitemap",
+      "adapter": "sitemap",
+      "url": "https://www.1111.com.tw/sitemap/sitemap.xml",
+      "market": "tw",
+      "maxDiscovered": 20000,
+      "maxSitemapFiles": 12,
+      "sitemapFilePattern": "sitemap_[0-9]+_new\\.xml$",
+      "jobUrlPattern": "/job/[0-9]+/",
+      "titleFilterMode": "replace",
+      "titleFilter": {
+        "positive": []
+      },
+      "tags": ["job-board", "taiwan", "sitemap-volume", "broad-market-index"],
+      "sourceStrategy": "market-sitemap"
+    },
+    {
+      "name": "Tencent Careers China",
+      "adapter": "tencent",
+      "url": "https://careers.tencent.com/tencentcareer/api/post/Query",
+      "market": "cn",
+      "maxDiscovered": 1500,
+      "titleFilterMode": "replace",
+      "titleFilter": {
+        "positive": []
+      },
+      "tags": ["company-api", "china", "broad-market-index"],
+      "sourceStrategy": "market-company-api"
+    },
+    {
+      "name": "Boss Zhipin Shanghai Software",
+      "adapter": "boss-zhipin",
+      "url": "https://www.zhipin.com/web/geek/job?query=%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E5%B8%88&city=101020100&page=1",
+      "market": "cn",
+      "maxDiscovered": 80,
+      "tags": ["job-board", "china", "best-effort-public-html"],
+      "sourceStrategy": "market-job-board"
+    },
+    {
+      "name": "58 Tongcheng Shanghai Software",
+      "adapter": "58",
+      "url": "https://sh.58.com/job/?key=%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E5%B8%88",
+      "market": "cn",
+      "maxDiscovered": 80,
+      "tags": ["job-board", "china", "best-effort-public-html"],
+      "sourceStrategy": "market-job-board"
+    },
+    {
+      "name": "MyCareersFuture Singapore Software",
+      "adapter": "mycareersfuture",
+      "url": "https://www.mycareersfuture.gov.sg/search?search=software%20engineer",
+      "apiUrl": "https://api.mycareersfuture.gov.sg/v2/jobs",
+      "keyword": "software engineer",
+      "market": "sg",
+      "maxDiscovered": 150,
+      "titleFilterMode": "replace",
+      "titleFilter": {
+        "positive": []
+      },
+      "tags": ["job-board", "government", "singapore", "broad-market-index"],
+      "sourceStrategy": "market-public-api"
+    },
+    {
+      "name": "MyCareersFuture Singapore Graduate Research",
+      "adapter": "mycareersfuture",
+      "url": "https://www.mycareersfuture.gov.sg/search?search=graduate%20research",
+      "apiUrl": "https://api.mycareersfuture.gov.sg/v2/jobs",
+      "keyword": "graduate research",
+      "market": "sg",
+      "maxDiscovered": 100,
+      "titleFilterMode": "replace",
+      "titleFilter": {
+        "positive": []
+      },
+      "tags": ["job-board", "government", "singapore", "graduate-school", "research"],
+      "sourceStrategy": "market-public-api"
+    },
+    {
+      "name": "MyCareersFuture Singapore Frontend Full Stack",
+      "adapter": "mycareersfuture",
+      "url": "https://www.mycareersfuture.gov.sg/search?search=frontend%20engineer",
+      "apiUrl": "https://api.mycareersfuture.gov.sg/v2/jobs",
+      "keyword": "frontend engineer",
+      "market": "sg",
+      "maxDiscovered": 100,
+      "titleFilterMode": "replace",
+      "titleFilter": {
+        "positive": []
+      },
+      "tags": ["job-board", "government", "singapore", "frontend", "full-stack", "broad-market-index"],
+      "sourceStrategy": "market-public-api"
+    },
+    {
+      "name": "MyCareersFuture Singapore AI Data",
+      "adapter": "mycareersfuture",
+      "url": "https://www.mycareersfuture.gov.sg/search?search=machine%20learning",
+      "apiUrl": "https://api.mycareersfuture.gov.sg/v2/jobs",
+      "keyword": "machine learning",
+      "market": "sg",
+      "maxDiscovered": 100,
+      "titleFilterMode": "replace",
+      "titleFilter": {
+        "positive": []
+      },
+      "tags": ["job-board", "government", "singapore", "ai", "data", "broad-market-index"],
+      "sourceStrategy": "market-public-api"
+    },
+    {
+      "name": "MyCareersFuture Singapore Product",
+      "adapter": "mycareersfuture",
+      "url": "https://www.mycareersfuture.gov.sg/search?search=product%20manager",
+      "apiUrl": "https://api.mycareersfuture.gov.sg/v2/jobs",
+      "keyword": "product manager",
+      "market": "sg",
+      "maxDiscovered": 80,
+      "titleFilterMode": "replace",
+      "titleFilter": {
+        "positive": []
+      },
+      "tags": ["job-board", "government", "singapore", "product", "broad-market-index"],
+      "sourceStrategy": "market-public-api"
+    },
+    {
+      "name": "MyCareersFuture Singapore Business Operations",
+      "adapter": "mycareersfuture",
+      "url": "https://www.mycareersfuture.gov.sg/search?search=business%20analyst",
+      "apiUrl": "https://api.mycareersfuture.gov.sg/v2/jobs",
+      "keyword": "business analyst",
+      "market": "sg",
+      "maxDiscovered": 80,
+      "titleFilterMode": "replace",
+      "titleFilter": {
+        "positive": []
+      },
+      "tags": ["job-board", "government", "singapore", "business-operations", "broad-market-index"],
+      "sourceStrategy": "market-public-api"
+    },
+    {
+      "name": "Indeed Singapore Manual Search",
+      "enabled": false,
+      "url": "https://sg.indeed.com/jobs?q=software+engineer&l=Singapore",
+      "market": "sg",
+      "maxDiscovered": 0,
+      "tags": ["job-board", "singapore", "indeed", "manual-browser"],
+      "sourceStrategy": "manual-search-signal"
+    },
+    {
+      "name": "Meet.jobs Global Public API",
+      "adapter": "meetjobs",
+      "url": "https://api.meet.jobs/api/v1/jobs",
+      "market": "global",
+      "maxDiscovered": 200,
+      "titleFilterMode": "replace",
+      "titleFilter": {
+        "positive": []
+      },
+      "tags": ["job-board", "global", "public-api", "cross-border"],
+      "sourceStrategy": "market-public-api"
+    },
+    {
+      "name": "Remote OK Global Remote Jobs",
+      "adapter": "remoteok",
+      "url": "https://remoteok.com/api",
+      "market": "global",
+      "maxDiscovered": 1000,
+      "titleFilterMode": "replace",
+      "titleFilter": {
+        "positive": []
+      },
+      "tags": ["job-board", "global", "remote", "public-api"],
+      "sourceStrategy": "market-public-api"
+    },
+    {
+      "name": "Remotive Global Remote Jobs",
+      "adapter": "remotive",
+      "url": "https://remotive.com/api/remote-jobs",
+      "market": "global",
+      "maxDiscovered": 1000,
+      "titleFilterMode": "replace",
+      "titleFilter": {
+        "positive": []
+      },
+      "tags": ["job-board", "global", "remote", "public-api"],
+      "sourceStrategy": "market-public-api"
+    },
+    {
+      "name": "Arbeitnow Global Job Board",
+      "enabled": false,
+      "adapter": "arbeitnow",
+      "url": "https://www.arbeitnow.com/api/job-board-api",
+      "market": "global",
+      "maxDiscovered": 3000,
+      "titleFilterMode": "replace",
+      "titleFilter": {
+        "positive": []
+      },
+      "tags": ["job-board", "global", "public-api", "europe"],
+      "sourceStrategy": "market-public-api"
+    },
+    {
+      "name": "The Muse Global Public Jobs",
+      "adapter": "themuse",
+      "url": "https://www.themuse.com/api/public/jobs?page=1",
+      "market": "global",
+      "maxDiscovered": 1900,
+      "titleFilterMode": "replace",
+      "titleFilter": {
+        "positive": []
+      },
+      "tags": ["job-board", "global", "public-api", "broad-market-index"],
+      "sourceStrategy": "market-public-api"
+    },
+    {
+      "name": "The Muse Global Software Engineering",
+      "adapter": "themuse",
+      "url": "https://www.themuse.com/api/public/jobs?page=1&category=Software%20Engineering",
+      "market": "global",
+      "maxDiscovered": 1900,
+      "titleFilterMode": "replace",
+      "titleFilter": {
+        "positive": []
+      },
+      "tags": ["job-board", "global", "public-api", "software-engineering"],
+      "sourceStrategy": "market-public-api"
+    },
+    {
+      "name": "The Muse Global Data Analytics",
+      "adapter": "themuse",
+      "url": "https://www.themuse.com/api/public/jobs?page=1&category=Data%20and%20Analytics",
+      "market": "global",
+      "maxDiscovered": 1900,
+      "titleFilterMode": "replace",
+      "titleFilter": {
+        "positive": []
+      },
+      "tags": ["job-board", "global", "public-api", "data-analytics"],
+      "sourceStrategy": "market-public-api"
+    },
+    {
+      "name": "The Muse Global Remote Jobs",
+      "adapter": "themuse",
+      "url": "https://www.themuse.com/api/public/jobs?page=1&location=Remote",
+      "market": "global",
+      "maxDiscovered": 1900,
+      "titleFilterMode": "replace",
+      "titleFilter": {
+        "positive": []
+      },
+      "tags": ["job-board", "global", "public-api", "remote"],
+      "sourceStrategy": "market-public-api"
+    },
+    {
+      "name": "The Muse Global Entry Level",
+      "enabled": false,
+      "adapter": "themuse",
+      "url": "https://www.themuse.com/api/public/jobs?page=1&level=Entry%20Level",
+      "market": "global",
+      "maxDiscovered": 1900,
+      "titleFilterMode": "replace",
+      "titleFilter": {
+        "positive": []
+      },
+      "tags": ["job-board", "global", "public-api", "entry-level"],
+      "sourceStrategy": "market-public-api"
+    },
+    {
+      "name": "The Muse Global Mid Level",
+      "enabled": false,
+      "adapter": "themuse",
+      "url": "https://www.themuse.com/api/public/jobs?page=1&level=Mid%20Level",
+      "market": "global",
+      "maxDiscovered": 1900,
+      "titleFilterMode": "replace",
+      "titleFilter": {
+        "positive": []
+      },
+      "tags": ["job-board", "global", "public-api", "mid-level"],
+      "sourceStrategy": "market-public-api"
+    },
+    {
+      "name": "The Muse Global Senior Level",
+      "enabled": false,
+      "adapter": "themuse",
+      "url": "https://www.themuse.com/api/public/jobs?page=1&level=Senior%20Level",
+      "market": "global",
+      "maxDiscovered": 1900,
+      "titleFilterMode": "replace",
+      "titleFilter": {
+        "positive": []
+      },
+      "tags": ["job-board", "global", "public-api", "senior-level"],
+      "sourceStrategy": "market-public-api"
+    },
+    {
+      "name": "The Muse Global Sales",
+      "enabled": false,
+      "adapter": "themuse",
+      "url": "https://www.themuse.com/api/public/jobs?page=1&category=Sales",
+      "market": "global",
+      "maxDiscovered": 1900,
+      "titleFilterMode": "replace",
+      "titleFilter": {
+        "positive": []
+      },
+      "tags": ["job-board", "global", "public-api", "sales"],
+      "sourceStrategy": "market-public-api"
+    },
+    {
+      "name": "Daijob Japan Broad Listings",
+      "adapter": "daijob",
+      "url": "https://www.daijob.com/en/jobs/search_result?job_search_form_hidden=1&job_post_language=1",
+      "market": "jp",
+      "maxDiscovered": 520,
+      "titleFilterMode": "replace",
+      "titleFilter": {
+        "positive": []
+      },
+      "tags": ["job-board", "japan", "broad-market-index"],
+      "sourceStrategy": "market-job-board"
+    },
+    {
+      "name": "Japan Dev English Tech Jobs",
+      "adapter": "japan-dev",
+      "url": "https://japan-dev.com/jobs",
+      "market": "jp",
+      "maxDiscovered": 120,
+      "titleFilterMode": "replace",
+      "titleFilter": {
+        "positive": []
+      },
+      "tags": ["job-board", "japan", "english-tech"],
+      "sourceStrategy": "market-job-board"
+    },
+    {
+      "name": "JREC-IN Japan Researcher and Postdoc",
+      "adapter": "jrecin",
+      "url": "https://jrecin.jst.go.jp/seek/SeekJorSearch?fn=0&jobkind=00015",
+      "market": "jp",
+      "maxDiscovered": 340,
+      "titleFilterMode": "replace",
+      "titleFilter": {
+        "positive": []
+      },
+      "tags": ["job-board", "japan", "research", "graduate-school", "broad-market-index"],
+      "sourceStrategy": "market-research-opportunity"
+    },
+    {
+      "name": "Mynavi Tenshoku Japan Sitemap",
+      "adapter": "sitemap",
+      "url": "https://tenshoku.mynavi.jp/sitemap/sitemap_index.xml",
+      "market": "jp",
+      "maxDiscovered": 15000,
+      "maxSitemapFiles": 4,
+      "sitemapFilePattern": "sitemap_jobs_.*\\.xml\\.gz$",
+      "jobUrlPattern": "/jobinfo-\\d+",
+      "titleFilterMode": "replace",
+      "titleFilter": {
+        "positive": []
+      },
+      "tags": ["job-board", "japan", "sitemap-volume", "broad-market-index"],
+      "sourceStrategy": "market-sitemap"
+    },
+    {
+      "name": "doda Japan Job Detail Sitemap",
+      "adapter": "sitemap",
+      "url": "https://doda.jp/sitemap_index.xml",
+      "market": "jp",
+      "maxDiscovered": 10000,
+      "maxSitemapFiles": 14,
+      "sitemapFilePattern": "sitemap_JobSearchDetail_\\d+\\.xml\\.gz$",
+      "jobUrlPattern": "/DodaFront/View/JobSearchDetail/",
+      "titleFilterMode": "replace",
+      "titleFilter": {
+        "positive": []
+      },
+      "tags": ["job-board", "japan", "sitemap-volume", "broad-market-index"],
+      "sourceStrategy": "market-sitemap"
+    },
+    {
+      "name": "JAC Recruitment Japan Detail Sitemap",
+      "adapter": "sitemap",
+      "url": "https://www.jac-recruitment.jp/sitemap.xml",
+      "market": "jp",
+      "maxDiscovered": 5000,
+      "maxSitemapFiles": 3,
+      "sitemapFilePattern": "detail-sitemap\\.xml$",
+      "jobUrlPattern": "/search/NJB\\d+/",
+      "titleFilterMode": "replace",
+      "titleFilter": {
+        "positive": []
+      },
+      "tags": ["job-board", "japan", "sitemap-volume", "experienced"],
+      "sourceStrategy": "market-sitemap"
+    },
+    {
+      "name": "Zhaopin China Job Sitemap",
+      "adapter": "sitemap",
+      "url": "https://www.zhaopin.com/sitemap/zhaopin.xml",
+      "market": "cn",
+      "maxDiscovered": 30000,
+      "maxSitemapFiles": 4,
+      "sitemapFilePattern": "/zhaopin\\d+\\.xml$",
+      "jobUrlPattern": "/zhaopin/[a-f0-9]{12,}/",
+      "titleFilterMode": "replace",
+      "titleFilter": {
+        "positive": []
+      },
+      "tags": ["job-board", "china", "sitemap-volume", "broad-market-index"],
+      "sourceStrategy": "market-sitemap"
+    },
+    {
+      "name": "Cloudflare Greenhouse",
+      "adapter": "greenhouse",
+      "url": "https://boards.greenhouse.io/cloudflare",
+      "markets": ["us", "ca", "uk", "ie", "de", "nl", "fr", "es", "it", "se", "dk", "no", "pl", "pt", "au", "nz", "in", "sg", "jp"],
+      "maxDiscovered": 160,
+      "tags": ["ats", "greenhouse", "validated-live-source", "global-tech"]
+    },
+    {
+      "name": "GitLab Greenhouse",
+      "adapter": "greenhouse",
+      "url": "https://boards.greenhouse.io/gitlab",
+      "market": "global",
+      "maxDiscovered": 180,
+      "tags": ["ats", "greenhouse", "validated-live-source", "remote-first"]
+    },
+    {
+      "name": "Databricks Greenhouse",
+      "adapter": "greenhouse",
+      "url": "https://boards.greenhouse.io/databricks",
+      "markets": ["us", "ca", "uk", "ie", "de", "nl", "fr", "es", "it", "se", "pl", "au", "in", "sg"],
+      "maxDiscovered": 200,
+      "tags": ["ats", "greenhouse", "validated-live-source", "data-ai"]
+    },
+    {
+      "name": "Stripe Greenhouse",
+      "adapter": "greenhouse",
+      "url": "https://boards.greenhouse.io/stripe",
+      "markets": ["us", "ca", "uk", "ie", "de", "nl", "fr", "es", "it", "se", "pl", "au", "in", "sg", "jp", "br", "mx"],
+      "maxDiscovered": 160,
+      "tags": ["ats", "greenhouse", "validated-live-source", "fintech"]
+    },
+    {
+      "name": "Figma Greenhouse",
+      "adapter": "greenhouse",
+      "url": "https://boards.greenhouse.io/figma",
+      "markets": ["us", "uk", "jp"],
+      "maxDiscovered": 120,
+      "tags": ["ats", "greenhouse", "validated-live-source", "design-saas"]
+    },
+    {
+      "name": "Airbnb Greenhouse",
+      "adapter": "greenhouse",
+      "url": "https://boards.greenhouse.io/airbnb",
+      "markets": ["us", "ca", "uk", "ie", "de", "fr", "es", "it", "br", "mx", "in"],
+      "maxDiscovered": 120,
+      "tags": ["ats", "greenhouse", "validated-live-source", "marketplace"]
+    },
+    {
+      "name": "Anthropic Greenhouse",
+      "adapter": "greenhouse",
+      "url": "https://boards.greenhouse.io/anthropic",
+      "markets": ["us", "ca", "uk", "ie", "ch", "de", "fr", "in", "jp", "sg", "kr", "au"],
+      "maxDiscovered": 200,
+      "tags": ["ats", "greenhouse", "validated-live-source", "ai"]
+    },
+    {
+      "name": "Canonical Greenhouse",
+      "adapter": "greenhouse",
+      "url": "https://boards.greenhouse.io/canonical",
+      "markets": ["global", "us", "ca", "uk", "ie", "de", "nl", "fr", "es", "it", "se", "dk", "fi", "ch", "pl", "pt", "cz", "in", "au", "br", "mx", "jp", "sg", "za"],
+      "maxDiscovered": 220,
+      "tags": ["ats", "greenhouse", "validated-live-source", "remote-first", "linux"]
+    },
+    {
+      "name": "Mozilla Greenhouse",
+      "adapter": "greenhouse",
+      "url": "https://boards.greenhouse.io/mozilla",
+      "markets": ["us", "ca", "uk", "de", "fr"],
+      "maxDiscovered": 100,
+      "tags": ["ats", "greenhouse", "validated-live-source", "open-web"]
+    },
+    {
+      "name": "Vercel Greenhouse",
+      "adapter": "greenhouse",
+      "url": "https://boards.greenhouse.io/vercel",
+      "markets": ["global", "us", "ca", "uk", "de", "nl", "fr", "es", "br", "sg", "jp"],
+      "maxDiscovered": 140,
+      "tags": ["ats", "greenhouse", "validated-live-source", "developer-tools"]
+    },
+    {
+      "name": "MongoDB Greenhouse",
+      "adapter": "greenhouse",
+      "url": "https://boards.greenhouse.io/mongodb",
+      "markets": ["us", "ca", "uk", "ie", "de", "nl", "fr", "es", "it", "se", "pl", "au", "in", "sg", "jp", "kr"],
+      "maxDiscovered": 220,
+      "tags": ["ats", "greenhouse", "validated-live-source", "database"]
+    },
+    {
+      "name": "Reddit Greenhouse",
+      "adapter": "greenhouse",
+      "url": "https://boards.greenhouse.io/reddit",
+      "markets": ["us", "ca", "uk", "ie", "au"],
+      "maxDiscovered": 140,
+      "tags": ["ats", "greenhouse", "validated-live-source", "community-platform"]
+    },
+    {
+      "name": "Asana Greenhouse",
+      "adapter": "greenhouse",
+      "url": "https://boards.greenhouse.io/asana",
+      "markets": ["us", "ca", "uk", "ie", "de", "fr", "jp", "au"],
+      "maxDiscovered": 140,
+      "tags": ["ats", "greenhouse", "validated-live-source", "productivity-saas"]
+    },
+    {
+      "name": "Roblox Greenhouse",
+      "adapter": "greenhouse",
+      "url": "https://boards.greenhouse.io/roblox",
+      "markets": ["us", "ca", "uk", "jp"],
+      "maxDiscovered": 180,
+      "tags": ["ats", "greenhouse", "validated-live-source", "gaming-platform"]
+    },
+    {
+      "name": "Linear Ashby",
+      "adapter": "ashby",
+      "url": "https://jobs.ashbyhq.com/Linear",
+      "market": "global",
+      "maxDiscovered": 80,
+      "tags": ["ats", "ashby", "validated-live-source", "productivity-saas"]
+    },
+    {
+      "name": "ElevenLabs Ashby",
+      "adapter": "ashby",
+      "url": "https://jobs.ashbyhq.com/elevenlabs",
+      "markets": ["us", "uk", "de", "fr", "es", "pl", "in", "jp"],
+      "maxDiscovered": 120,
+      "tags": ["ats", "ashby", "validated-live-source", "ai-audio"]
+    },
+    {
+      "name": "Cursor Ashby",
+      "adapter": "ashby",
+      "url": "https://jobs.ashbyhq.com/Cursor",
+      "markets": ["global", "us", "ca", "uk"],
+      "maxDiscovered": 100,
+      "tags": ["ats", "ashby", "validated-live-source", "developer-tools", "ai"]
+    },
+    {
+      "name": "Mistral AI Ashby",
+      "adapter": "ashby",
+      "url": "https://jobs.ashbyhq.com/mistral",
+      "markets": ["fr", "uk", "us", "ca", "sg"],
+      "maxDiscovered": 160,
+      "tags": ["ats", "ashby", "validated-live-source", "ai"]
+    },
+    {
+      "name": "Replit Ashby",
+      "adapter": "ashby",
+      "url": "https://jobs.ashbyhq.com/replit",
+      "markets": ["us", "ca", "global"],
+      "maxDiscovered": 100,
+      "tags": ["ats", "ashby", "validated-live-source", "developer-tools"]
+    },
+    {
+      "name": "Perplexity Ashby",
+      "adapter": "ashby",
+      "url": "https://jobs.ashbyhq.com/perplexity",
+      "market": "us",
+      "maxDiscovered": 100,
+      "tags": ["ats", "ashby", "validated-live-source", "ai-search"]
+    },
+    {
+      "name": "Notion Ashby",
+      "adapter": "ashby",
+      "url": "https://jobs.ashbyhq.com/notion",
+      "markets": ["us", "jp", "in", "kr"],
+      "maxDiscovered": 120,
+      "tags": ["ats", "ashby", "validated-live-source", "productivity-saas"]
+    },
+    {
+      "name": "Ramp Ashby",
+      "adapter": "ashby",
+      "url": "https://jobs.ashbyhq.com/ramp",
+      "markets": ["us", "ca", "uk"],
+      "maxDiscovered": 120,
+      "tags": ["ats", "ashby", "validated-live-source", "fintech"]
+    },
+    {
+      "name": "Modal Ashby",
+      "adapter": "ashby",
+      "url": "https://jobs.ashbyhq.com/modal",
+      "market": "us",
+      "maxDiscovered": 80,
+      "tags": ["ats", "ashby", "validated-live-source", "ai-infra"]
+    },
+    {
+      "name": "Supabase Ashby",
+      "adapter": "ashby",
+      "url": "https://jobs.ashbyhq.com/supabase",
+      "markets": ["global", "us", "ca", "uk", "de", "fr", "au", "sg"],
+      "maxDiscovered": 100,
+      "tags": ["ats", "ashby", "validated-live-source", "developer-tools", "remote-first"]
+    },
+    {
+      "name": "Sentry Ashby",
+      "adapter": "ashby",
+      "url": "https://jobs.ashbyhq.com/sentry",
+      "markets": ["us", "ca", "uk", "de", "nl", "fr", "au"],
+      "maxDiscovered": 100,
+      "tags": ["ats", "ashby", "validated-live-source", "developer-tools"]
+    },
+    {
+      "name": "PostHog Ashby",
+      "adapter": "ashby",
+      "url": "https://jobs.ashbyhq.com/posthog",
+      "markets": ["global", "us", "uk", "de", "es", "fr", "in"],
+      "maxDiscovered": 80,
+      "tags": ["ats", "ashby", "validated-live-source", "analytics", "remote-first"]
+    },
+    {
+      "name": "Grab SmartRecruiters",
+      "adapter": "smartrecruiters",
+      "companyIdentifier": "Grab",
+      "url": "https://jobs.smartrecruiters.com/Grab",
+      "markets": ["sg", "id", "my", "ph", "vn", "th"],
+      "maxDiscovered": 100,
+      "tags": ["ats", "smartrecruiters", "validated-live-source", "southeast-asia"]
+    },
+    {
+      "name": "NVIDIA Workday",
+      "adapter": "workday",
+      "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite",
+      "site": "NVIDIAExternalCareerSite",
+      "searchText": "{location}",
+      "markets": ["tw", "us", "ca", "uk", "ie", "de", "fr", "nl", "es", "it", "se", "dk", "fi", "ch", "pl", "cz", "au", "nz", "in", "sg", "jp", "kr", "il"],
+      "maxDiscovered": 80,
+      "detailLimit": 20,
+      "tags": ["ats", "workday", "validated-live-source", "ai-semiconductor"]
+    }
   ],
   "careerPathPatterns": [
     "/careers",

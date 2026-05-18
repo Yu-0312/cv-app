@@ -131,7 +131,7 @@ API keys stay in the current browser tab's `sessionStorage`. Model calls send th
 | Career Ops capability | Implementation in this project | Boundary |
 |---|---|---|
 | Automation | `.github/workflows/career-ops.yml` can build daily snapshots or run manually; if `data/career-ops-source-strategy.json` exists, it builds sources first | Requires a source strategy or `data/career-ops-sources.json` in the repo |
-| Large-scale job collection | `scripts/career-ops-build-sources.mjs` + `scripts/career-ops-worker.mjs` + `scripts/career-ops-source-adapters.mjs`, with source strategy support, Greenhouse / Lever / Ashby / Workable / SmartRecruiters / BambooHR / Workday / Oracle / SuccessFactors / Taleo adapters, company careers-page discovery, and direct job-page extraction | Login-only portals should continue as adapters |
+| Large-scale job collection | `scripts/career-ops-build-sources.mjs` + `scripts/career-ops-worker.mjs` + `scripts/career-ops-source-adapters.mjs`, with source strategy support, Greenhouse / Lever / Ashby / Workable / SmartRecruiters / BambooHR / Workday / Oracle / SuccessFactors / Taleo / MyCareersFuture adapters, company careers-page discovery, and direct job-page extraction | Login-only portals should continue as adapters |
 | Job normalization and lifecycle | `data/app/career-ops-jobs.json` / `.js` snapshots with unified fields plus `jobKey`, `isNew`, `isExpired`, `firstSeenAt`, and `lastSeenAt` | The frontend reads only normalized snapshots |
 | High-volume screening and ranking | Career Ops panel bulk import, batch AI evaluation, score / grade / status ranking, CSV export; resume-upload 50-100 job matching runs locally in the frontend; `scripts/career-ops-evaluate.mjs` supports backend heuristic scoring; `scripts/career-ops-intelligence.mjs` adds dedupe signals, feature extraction, multidimensional scoring, clustering, and market insights | Frontend AI evaluation requires a user-provided API key; backend intelligence can run offline |
 | 10-dimension rubric | `data/career-ops-rubric.example.json` defines profile match, ATS coverage, role fit, seniority, location, source quality, freshness, compensation, growth, application effort, and risk subtraction | Copy and tune weights for different users or markets |
@@ -164,7 +164,7 @@ cp data/career-ops-source-strategy.example.json data/career-ops-source-strategy.
 npm run career-ops:sources:build
 ```
 
-`data/career-ops-source-strategy.example.json` includes a starter strategy. The active strategy currently covers large enterprises in Taiwan, China, Japan, Korea, and Singapore, plus sample Greenhouse / Lever / Ashby boards, a direct-source example, and search expansion queries. The builder writes:
+`data/career-ops-source-strategy.example.json` includes a starter strategy. The active strategy plus `data/career-ops-source-flex.json` now covers Taiwan, China, Japan, Korea, Singapore, the United States, Canada, the United Kingdom, Ireland, Germany, the Netherlands, France, Spain, Italy, the Nordics, Switzerland, Poland, Portugal, Czechia, Australia, New Zealand, India, Hong Kong, the Philippines, Malaysia, Indonesia, Vietnam, Thailand, Brazil, Mexico, Israel, the UAE, South Africa, and global / remote sources. The source layer includes company career pages, Greenhouse / Lever / Ashby / SmartRecruiters / Workday ATS boards, direct-source examples, and search expansion queries. The builder writes:
 
 - `data/career-ops-sources.json`
 - `data/app/career-ops-source-strategy-report.md`
@@ -231,7 +231,17 @@ The worker writes:
 - `data/app/career-ops-jobs.json`
 - `data/app/career-ops-jobs.js`
 
-The Career Ops panel can import that snapshot with **Import Backend Job Snapshot**. Greenhouse, Lever, Ashby, Workable, SmartRecruiters, BambooHR, Workday, Oracle, SuccessFactors, and Taleo use source adapters in `scripts/career-ops-source-adapters.mjs` and fetch public jobs APIs or public job pages, keeping platform rules out of the frontend. If `adapter` is omitted, the worker can still auto-detect common platform URLs. `type: "company"` expands likely job links from a generic company recruiting page. `type: "job"` treats the URL as a single job page and skips discovery. `titleFilter`, `market`, `industry`, and `tags` from the source strategy are preserved in the snapshot, so irrelevant roles can be filtered backend-side while source context stays available for analysis. The worker currently extracts public API / `JobPosting` JSON-LD / meta data; login-only portals, paginated search results, and more platform-specific APIs should continue as explicit adapters so credentials, rate limits, and platform terms stay out of the frontend.
+The Career Ops panel can import that snapshot with **Import Backend Job Snapshot**. Greenhouse, Lever, Ashby, Workable, SmartRecruiters, BambooHR, Workday, Oracle, SuccessFactors, Taleo, and MyCareersFuture use source adapters in `scripts/career-ops-source-adapters.mjs` and fetch public jobs APIs or public job pages, keeping platform rules out of the frontend. If `adapter` is omitted, the worker can still auto-detect common platform URLs. `type: "company"` expands likely job links from a generic company recruiting page. `type: "job"` treats the URL as a single job page and skips discovery. `titleFilter`, `market`, `industry`, and `tags` from the source strategy are preserved in the snapshot, so irrelevant roles can be filtered backend-side while source context stays available for analysis. The worker currently extracts public API / `JobPosting` JSON-LD / meta data; login-only portals, paginated search results, and more platform-specific APIs should continue as explicit adapters so credentials, rate limits, and platform terms stay out of the frontend.
+
+GitHub Actions runs `.github/workflows/career-ops.yml` daily at 06:17 Asia/Taipei. It executes `npm run career-ops:daily`, deploys a refreshed GitHub Pages artifact, and also refreshes the Singapore snapshot when `data/career-ops-singapore-sources.json` exists. When the Career Ops panel opens, the frontend merges tracked jobs with the latest snapshot at most once per day, updating `lastSeenAt`, `isExpired`, descriptions, and market fields while preserving user-owned status, notes, contacts, feedback, and tailored materials. The main snapshot can exceed GitHub's single-file commit limit, so the scheduled job deploys the latest artifact instead of writing the large generated snapshot back into git history.
+
+For a smaller Singapore expansion snapshot, run:
+
+```bash
+npm run career-ops:sg:scrape
+```
+
+This writes `data/app/career-ops-singapore-jobs.json` and `.js`. The Career Ops panel imports it with **Import Singapore Job Snapshot**; Indeed SG, JobStreet SG, and NodeFlair are kept as search signals and browser links.
 
 To run backend batch scoring, copy `data/career-ops-profile.example.json` to `data/career-ops-profile.json`, then run:
 

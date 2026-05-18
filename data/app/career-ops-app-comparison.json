@@ -1,0 +1,443 @@
+{
+  "generatedAt": "2026-05-16T15:21:33.031Z",
+  "profile": {
+    "schemaVersion": "career-ops-profile-example-v5.1",
+    "activeProfileId": "synthetic-active-frontend-senior",
+    "profileCorpusCount": 1000,
+    "topLevelKeyCount": 46,
+    "activeProfileKeyCount": 47,
+    "populatedCvFields": [
+      "name",
+      "role",
+      "email",
+      "phone",
+      "location",
+      "website",
+      "summary",
+      "skills",
+      "highlights",
+      "experience",
+      "education",
+      "projects",
+      "awards"
+    ],
+    "appProjectionLengths": {
+      "name": 26,
+      "role": 24,
+      "email": 43,
+      "phone": 28,
+      "location": 6,
+      "website": 61,
+      "avatar": 0,
+      "summary": 729,
+      "skills": 1640,
+      "highlights": 2567,
+      "experience": 2549,
+      "education": 93,
+      "projects": 1481,
+      "awards": 338
+    },
+    "structuredFields": [
+      "workExperience",
+      "employmentHistory",
+      "skillExperience",
+      "skillMatrix",
+      "educationDetails",
+      "educationHistory",
+      "compensationExpectations",
+      "personalLinks",
+      "workAuthorization",
+      "languageProficiencies",
+      "proofPoints",
+      "starStories",
+      "resumeText",
+      "preferences",
+      "ats"
+    ],
+    "skillsCount": 48,
+    "proofPointCount": 4,
+    "starStoryCount": 8
+  },
+  "careerOps": {
+    "source": "career-ops-parallel-pipeline",
+    "jobs": 552,
+    "activeJobs": 276,
+    "expiredJobs": 276,
+    "evaluatedJobs": 276,
+    "averageScore": 58,
+    "gradeDistribution": [
+      {
+        "name": "D",
+        "count": 159
+      },
+      {
+        "name": "C",
+        "count": 90
+      },
+      {
+        "name": "B",
+        "count": 27
+      }
+    ],
+    "recommendationDistribution": [
+      {
+        "name": "略過",
+        "count": 151
+      },
+      {
+        "name": "觀望",
+        "count": 71
+      },
+      {
+        "name": "值得投遞",
+        "count": 54
+      }
+    ],
+    "blockGDistribution": [
+      {
+        "name": "High Confidence",
+        "count": 276
+      }
+    ],
+    "topJobs": [
+      {
+        "score": 77,
+        "grade": "B",
+        "recommendation": "值得投遞",
+        "company": "Money Forward",
+        "title": "Backend Engineer, Digital Bank",
+        "blockG": "High Confidence",
+        "cvMatch": 63,
+        "northStar": 89
+      },
+      {
+        "score": 77,
+        "grade": "B",
+        "recommendation": "值得投遞",
+        "company": "CADDi",
+        "title": "Senior SRE, Global Product Team",
+        "blockG": "High Confidence",
+        "cvMatch": 69,
+        "northStar": 63
+      },
+      {
+        "score": 76,
+        "grade": "B",
+        "recommendation": "值得投遞",
+        "company": "Metanomaly",
+        "title": "Growth Engineer",
+        "blockG": "High Confidence",
+        "cvMatch": 60,
+        "northStar": 89
+      },
+      {
+        "score": 75,
+        "grade": "B",
+        "recommendation": "值得投遞",
+        "company": "Geniee",
+        "title": "JAPAN AI - Product Manager, AI SaaS",
+        "blockG": "High Confidence",
+        "cvMatch": 64,
+        "northStar": 79
+      },
+      {
+        "score": 75,
+        "grade": "B",
+        "recommendation": "值得投遞",
+        "company": "AI Robot Association (AIRoA)",
+        "title": "Full Stack Engineer",
+        "blockG": "High Confidence",
+        "cvMatch": 63,
+        "northStar": 79
+      },
+      {
+        "score": 75,
+        "grade": "B",
+        "recommendation": "值得投遞",
+        "company": "Geniee",
+        "title": "JAPAN AI - Research Engineer, LLM",
+        "blockG": "High Confidence",
+        "cvMatch": 64,
+        "northStar": 79
+      },
+      {
+        "score": 75,
+        "grade": "B",
+        "recommendation": "值得投遞",
+        "company": "Money Forward",
+        "title": "Senior Software Engineer, Money Forward Cloud, Fukuoka",
+        "blockG": "High Confidence",
+        "cvMatch": 70,
+        "northStar": 73
+      },
+      {
+        "score": 75,
+        "grade": "B",
+        "recommendation": "值得投遞",
+        "company": "MODE",
+        "title": "Software Engineer (Engineering Foundation)",
+        "blockG": "High Confidence",
+        "cvMatch": 62,
+        "northStar": 79
+      },
+      {
+        "score": 74,
+        "grade": "B",
+        "recommendation": "值得投遞",
+        "company": "Axelspace",
+        "title": "Data Scientist / ML Engineer",
+        "blockG": "High Confidence",
+        "cvMatch": 63,
+        "northStar": 73
+      },
+      {
+        "score": 73,
+        "grade": "B",
+        "recommendation": "值得投遞",
+        "company": "AI Robot Association (AIRoA)",
+        "title": "Design Engineer",
+        "blockG": "High Confidence",
+        "cvMatch": 66,
+        "northStar": 63
+      },
+      {
+        "score": 73,
+        "grade": "B",
+        "recommendation": "值得投遞",
+        "company": "Cardlytics Workday Taiwan",
+        "title": "Senior Software Engineer",
+        "blockG": "High Confidence",
+        "cvMatch": 61,
+        "northStar": 69
+      },
+      {
+        "score": 73,
+        "grade": "B",
+        "recommendation": "值得投遞",
+        "company": "Artytech",
+        "title": "Tech Lead / CTO Candidate (Full-stack)",
+        "blockG": "High Confidence",
+        "cvMatch": 64,
+        "northStar": 69
+      }
+    ],
+    "marketInsights": {
+      "topSkills": [
+        {
+          "name": "growth",
+          "count": 40
+        },
+        {
+          "name": "operations",
+          "count": 31
+        },
+        {
+          "name": "python",
+          "count": 30
+        },
+        {
+          "name": "aws",
+          "count": 24
+        },
+        {
+          "name": "gcp",
+          "count": 16
+        },
+        {
+          "name": "agents",
+          "count": 15
+        },
+        {
+          "name": "docker",
+          "count": 15
+        },
+        {
+          "name": "terraform",
+          "count": 15
+        },
+        {
+          "name": "go",
+          "count": 14
+        },
+        {
+          "name": "react",
+          "count": 14
+        },
+        {
+          "name": "deep learning",
+          "count": 13
+        },
+        {
+          "name": "typescript",
+          "count": 13
+        }
+      ],
+      "missingHighDemand": [
+        {
+          "name": "growth",
+          "count": 40
+        },
+        {
+          "name": "python",
+          "count": 30
+        },
+        {
+          "name": "aws",
+          "count": 24
+        },
+        {
+          "name": "gcp",
+          "count": 16
+        },
+        {
+          "name": "agents",
+          "count": 15
+        },
+        {
+          "name": "terraform",
+          "count": 15
+        },
+        {
+          "name": "go",
+          "count": 14
+        },
+        {
+          "name": "deep learning",
+          "count": 13
+        },
+        {
+          "name": "java",
+          "count": 11
+        },
+        {
+          "name": "machine learning",
+          "count": 11
+        }
+      ],
+      "searchQueries": [
+        "Senior Frontend Engineer",
+        "Frontend Engineer",
+        "Product Engineer",
+        "Senior Product Engineer",
+        "Frontend Platform Engineer",
+        "Full Stack Engineer",
+        "JavaScript",
+        "TypeScript",
+        "React",
+        "Next.js",
+        "Vue",
+        "Nuxt",
+        "Svelte",
+        "Node.js",
+        "growth",
+        "python",
+        "aws",
+        "gcp"
+      ],
+      "roleFamilies": [
+        {
+          "name": "Other",
+          "count": 142
+        },
+        {
+          "name": "Backend",
+          "count": 53
+        },
+        {
+          "name": "AI / Data",
+          "count": 32
+        },
+        {
+          "name": "Frontend",
+          "count": 24
+        },
+        {
+          "name": "Operations",
+          "count": 8
+        },
+        {
+          "name": "Design",
+          "count": 6
+        },
+        {
+          "name": "Internship",
+          "count": 5
+        },
+        {
+          "name": "Marketing",
+          "count": 3
+        },
+        {
+          "name": "Product",
+          "count": 2
+        },
+        {
+          "name": "Full Stack",
+          "count": 1
+        }
+      ],
+      "integrity": {
+        "duplicateGroupCount": 36,
+        "jobsWithoutUrl": 0,
+        "jobsWithoutDescription": 136,
+        "expiredCount": 276
+      }
+    }
+  },
+  "app": {
+    "cvFields": [
+      "name",
+      "role",
+      "email",
+      "phone",
+      "location",
+      "website",
+      "avatar",
+      "summary",
+      "skills",
+      "highlights",
+      "experience",
+      "education",
+      "projects",
+      "awards"
+    ],
+    "trackerLimit": 1000,
+    "importedJobsFromSnapshot": 552,
+    "frontendAiRequiresApiKey": true
+  },
+  "comparison": {
+    "generatedAt": "2026-05-16T15:21:33.031Z",
+    "featureDifferences": [
+      {
+        "area": "Profile ingestion",
+        "app": "CV Studio imports the active Career Ops profile into 14 resume fields and flattens structured evidence into readable resume sections.",
+        "careerOps": "Career Ops scripts read the profile JSON directly and use structured fields such as preferences, proofPoints, starStories, compensation, and work authorization.",
+        "implication": "The app is better for editing/presentation; backend artifacts are better for structured scoring and repeatable reporting."
+      },
+      {
+        "area": "Profile corpus",
+        "app": "The app uses one active profile at a time.",
+        "careerOps": "The example file contains 1000 synthetic profiles, but default pipeline runs against the top-level active profile unless a profile-selection workflow is added.",
+        "implication": "The 1000-profile corpus is test data; it is not automatically batch-evaluated by the current app UI."
+      },
+      {
+        "area": "Job volume",
+        "app": "Career Ops tracker can now hold up to 1000 imported jobs and displays imported backend scores.",
+        "careerOps": "The backend snapshot contains 552 total jobs / 276 active jobs, with quality gates, intelligence, and reports.",
+        "implication": "552 jobs can be shown in the app from this snapshot; backend remains the source of truth for full pipeline generation."
+      },
+      {
+        "area": "Scoring",
+        "app": "Frontend scoring calls a browser-provided AI key and may vary by provider/model/prompt.",
+        "careerOps": "Backend scoring is deterministic heuristic 6D + Block G unless LLM review is explicitly enabled.",
+        "implication": "Use backend scores for stable comparisons; use app AI for human-facing explanation and tailoring."
+      }
+    ],
+    "resultDifferences": [
+      "Career Ops currently evaluates 276/276 active jobs with average score 58.",
+      "Top backend recommendation is Money Forward - Backend Engineer, Digital Bank at 77/100.",
+      "App import preserves backend score/grade/recommendation for display, but app-side re-evaluation would require an API key and can diverge from deterministic backend results.",
+      "The profile has 15 structured Career Ops field groups; after app import those become resume text sections rather than separate scoring dimensions."
+    ]
+  }
+}

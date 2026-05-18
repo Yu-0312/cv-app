@@ -108,6 +108,10 @@ async function main() {
       "window.CV_CAREER_OPS_JOBS = window.CV_CAREER_OPS_JOBS || { source: 'fallback', extractedAt: '', sourceCount: 0, jobCount: 0, jobs: [], errors: [] };\n"
     ],
     [
+      path.join(appTargetDir, "career-ops-singapore-jobs.js"),
+      "window.CV_CAREER_OPS_SINGAPORE_JOBS = window.CV_CAREER_OPS_SINGAPORE_JOBS || { source: 'fallback', extractedAt: '', sourceCount: 0, jobCount: 0, jobs: [], errors: [] };\n"
+    ],
+    [
       path.join(appTargetDir, "career-ops-application-kit.js"),
       "window.CV_CAREER_OPS_APPLICATION_KIT = window.CV_CAREER_OPS_APPLICATION_KIT || { source: 'fallback', generatedAt: '', playbooks: [] };\n"
     ],

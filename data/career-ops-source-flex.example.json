@@ -1,6 +1,9 @@
 {
   "name": "Career Ops Source Flex Rules",
-  "description": "Expansion rules that make source collection more flexible than a fixed company list. These rules generate extra source candidates and search queries from markets, role aliases, ATS domains, and company career URL patterns.",
+  "description": "Expansion rules that make source collection more flexible than a fixed company list. These rules generate extra source candidates and search queries from markets, role aliases, ATS domains, job boards, seed sources, and company career URL patterns.",
+  "titleFilter": {
+    "positive": ["backend engineer", "full stack engineer", "ai engineer", "product manager"]
+  },
   "markets": [
     {
       "code": "tw",
@@ -20,6 +23,28 @@
         "https://www.lagou.com/",
         "https://www.liepin.com/",
         "https://www.kanzhun.com/"
+      ]
+    },
+    {
+      "code": "us",
+      "locations": ["United States", "San Francisco", "Seattle", "New York", "Remote US"],
+      "titleFilter": {
+        "locationPositive": ["United States", "US", "San Francisco", "Seattle", "New York", "Remote US", "Remote (US)", "US-Remote"]
+      },
+      "jobBoards": [
+        "https://www.workatastartup.com/jobs",
+        "https://wellfound.com/jobs"
+      ]
+    },
+    {
+      "code": "uk",
+      "locations": ["United Kingdom", "London", "Cambridge", "Remote UK"],
+      "titleFilter": {
+        "locationPositive": ["United Kingdom", "UK", "London", "Cambridge", "Remote UK", "Remote (UK)"]
+      },
+      "jobBoards": [
+        "https://wellfound.com/jobs",
+        "https://otta.com/jobs"
       ]
     }
   ],
@@ -42,7 +67,31 @@
     "jobs.lever.co",
     "jobs.ashbyhq.com",
     "apply.workable.com",
-    "jobs.smartrecruiters.com"
+    "jobs.smartrecruiters.com",
+    "myworkdayjobs.com"
+  ],
+  "sourceSeeds": [
+    {
+      "name": "Example Greenhouse Global Board",
+      "enabled": false,
+      "adapter": "greenhouse",
+      "url": "https://boards.greenhouse.io/example",
+      "markets": ["us", "uk"],
+      "maxDiscovered": 100,
+      "tags": ["ats", "greenhouse"]
+    },
+    {
+      "name": "Example Workday Country Search",
+      "enabled": false,
+      "adapter": "workday",
+      "url": "https://example.wd1.myworkdayjobs.com/External",
+      "site": "External",
+      "searchText": "{location}",
+      "markets": ["tw", "us"],
+      "maxDiscovered": 100,
+      "detailLimit": 20,
+      "tags": ["ats", "workday"]
+    }
   ],
   "careerPathPatterns": [
     "/careers",

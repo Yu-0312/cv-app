@@ -176,12 +176,12 @@ API Key 只保留在目前瀏覽器頁籤的 `sessionStorage`。呼叫模型時�
 | Career Ops 能力 | 本專案對應實作 | 邊界 |
 |---|---|---|
 | 自動化排程 | `.github/workflows/career-ops.yml` 每日產生職缺快照，可手動 dispatch；若存在 `data/career-ops-source-strategy.json` 會先 build sources | 需要在 repo 放置 source strategy 或 `data/career-ops-sources.json` |
-| 大量職缺搜集 | `scripts/career-ops-build-sources.mjs` + `scripts/career-ops-worker.mjs` + `scripts/career-ops-source-adapters.mjs`，支援 source strategy、Greenhouse / Lever / Ashby / Workable / SmartRecruiters / BambooHR / Workday / Oracle / SuccessFactors / Taleo adapter、公司 careers 頁探索與單一職缺頁擷取 | 登入型 portal 繼續新增 adapter |
+| 大量職缺搜集 | `scripts/career-ops-build-sources.mjs` + `scripts/career-ops-worker.mjs` + `scripts/career-ops-source-adapters.mjs`，支援 source strategy、Greenhouse / Lever / Ashby / Workable / SmartRecruiters / BambooHR / Workday / Oracle / SuccessFactors / Taleo / MyCareersFuture adapter、公司 careers 頁探索與單一職缺頁擷取 | 登入型 portal 繼續新增 adapter |
 | 職缺正規化與生命週期 | `data/app/career-ops-jobs.json` / `.js` 快照，統一 `title`、`company`、`url`、`location`、`description`、`sourceType`，並標記 `jobKey`、`isNew`、`isExpired`、`firstSeenAt`、`lastSeenAt` | 前端只讀 normalized snapshot |
 | 海量篩選與排序 | Career Ops 面板批次匯入、批次 AI 評估、分數 / grade / status 排序與 CSV 匯出；履歷上傳後的 50-100 職缺比對會在前端本機完成；`scripts/career-ops-evaluate.mjs` 可在後端批次 heuristic scoring；`scripts/career-ops-intelligence.mjs` 會做去重訊號、特徵抽取、多維分數、分群與市場洞察 | 前端 AI 評估需要使用者提供 API key；後端 intelligence 可離線跑 |
 | 10 維度 Rubric | `data/career-ops-rubric.example.json` 定義 profile match、ATS coverage、role fit、seniority、location、source quality、freshness、compensation、growth、application effort 與風險扣分 | 可複製後依不同使用者或市場調權重 |
 | Search adapter | `scripts/career-ops-search-adapter.mjs` 可把匯出的搜尋結果 JSON / HTML / URL list 轉成 worker sources，並保留 search query strategy signals | 不直接抓 Google/Bing；建議接合法搜尋 API 或手動匯入結果 |
-| 來源彈性擴展 | `scripts/career-ops-source-flex.mjs` 依市場、role aliases、ATS domains、job boards、company career path patterns 擴展 sources / queries | 用規則擴展候選，不代表每個候選都一定可抓 |
+| 來源彈性擴展 | `scripts/career-ops-source-flex.mjs` 依市場、role aliases、ATS domains、job boards、seed sources、company career path patterns 擴展 sources / queries | 用規則擴展候選，不代表每個候選都一定可抓 |
 | Source quality gate | `scripts/career-ops-source-quality.mjs` 在評分前排除 job board landing page、描述不足、公司/職稱不明、非目標市場等低品質資料 | 預設過濾低於 45 分的 active jobs，可用 `--annotate-only` 只標記不刪除 |
 | Rendered careers discovery | `scripts/career-ops-rendered-discover.mjs` 可選擇用本機 Chrome render JS-heavy careers page，產生補充 source 清單 | 需設定 `CHROME_PATH` 或 `PUPPETEER_EXECUTABLE_PATH` |
 | Agent-style pipeline | `scripts/career-ops-pipeline.mjs` 以 source-strategy / search / scanner / evaluation / intelligence / application / compensation / story-bank / parallel stages 串起整條後端流程 | pipeline stage 依資料依賴分段，job-level 處理由 parallel worker 負責 |
@@ -209,7 +209,7 @@ cp data/career-ops-source-strategy.example.json data/career-ops-source-strategy.
 npm run career-ops:sources:build
 ```
 
-`data/career-ops-source-strategy.example.json` 已內建一份 starter strategy，實際策略檔目前包含台灣、中國、日本、韓國、新加坡大型企業、Greenhouse / Lever / Ashby 範例 board、direct source 範例與 search expansion queries。Builder 會產生：
+`data/career-ops-source-strategy.example.json` 已內建一份 starter strategy；實際策略檔搭配 `data/career-ops-source-flex.json` 可覆蓋台灣、中國、日本、韓國、新加坡、美國、加拿大、英國、愛爾蘭、德國、荷蘭、法國、西班牙、義大利、瑞典、丹麥、挪威、芬蘭、瑞士、波蘭、葡萄牙、捷克、澳洲、紐西蘭、印度、香港、菲律賓、馬來西亞、印尼、越南、泰國、巴西、墨西哥、以色列、阿聯、南非與 global / remote 來源。來源層包含大型企業 career page、Greenhouse / Lever / Ashby / SmartRecruiters / Workday 等 ATS board、direct source 範例與 search expansion queries。Builder 會產生：
 
 - `data/career-ops-sources.json`
 - `data/app/career-ops-source-strategy-report.md`
@@ -276,7 +276,17 @@ npm run career-ops:scrape
 - `data/app/career-ops-jobs.json`
 - `data/app/career-ops-jobs.js`
 
-前端 Career Ops 面板的「匯入後端職缺快照」會讀取這份快照並加入追蹤器。Greenhouse、Lever、Ashby、Workable、SmartRecruiters、BambooHR、Workday、Oracle、SuccessFactors、Taleo 會透過 `scripts/career-ops-source-adapters.mjs` 的 source adapter 走公開職缺 API 或公開職缺頁解析，平台規則不會塞進前端；若未指定 `adapter`，worker 也會從常見平台 URL 自動偵測。`type: "company"` 會從一般公司招聘頁展開可能的職缺連結；`type: "job"` 則視為單一職缺頁，不再展開。由 source strategy 帶下來的 `titleFilter`、`market`、`industry`、`tags` 會保留到快照，可先在後端排除不相關職缺並保留來源脈絡。此 worker 目前擷取公開頁面的 API / `JobPosting` JSON-LD / meta 資料；需要登入的 portal、搜尋結果翻頁與更多平台專屬 API 建議繼續新增 adapter，避免把憑證、速率限制與平台條款混在前端。
+前端 Career Ops 面板的「匯入後端職缺快照」會讀取這份快照並加入追蹤器。Greenhouse、Lever、Ashby、Workable、SmartRecruiters、BambooHR、Workday、Oracle、SuccessFactors、Taleo、MyCareersFuture 會透過 `scripts/career-ops-source-adapters.mjs` 的 source adapter 走公開職缺 API 或公開職缺頁解析，平台規則不會塞進前端；若未指定 `adapter`，worker 也會從常見平台 URL 自動偵測。`type: "company"` 會從一般公司招聘頁展開可能的職缺連結；`type: "job"` 則視為單一職缺頁，不再展開。由 source strategy 帶下來的 `titleFilter`、`market`、`industry`、`tags` 會保留到快照，可先在後端排除不相關職缺並保留來源脈絡。此 worker 目前擷取公開頁面的 API / `JobPosting` JSON-LD / meta 資料；需要登入的 portal、搜尋結果翻頁與更多平台專屬 API 建議繼續新增 adapter，避免把憑證、速率限制與平台條款混在前端。
+
+GitHub Actions 會每天 06:17（Asia/Taipei）執行 `.github/workflows/career-ops.yml`，跑 `npm run career-ops:daily` 重新掃描、評分並部署最新 GitHub Pages artifact；若存在 `data/career-ops-singapore-sources.json`，也會同步更新新加坡職缺快照。前端開啟 Career Ops 時會一天最多一次把已追蹤職缺與最新快照合併，更新 `lastSeenAt`、`isExpired`、職缺描述與市場欄位，同時保留使用者的狀態、筆記、聯絡人、回饋與客製化資料。主快照可能超過 GitHub 單檔 commit 限制，因此排程部署最新 artifact，不把大型快照寫回 git 歷史。
+
+若只想擴張新加坡職缺，可以用較小的 MyCareersFuture 公開 API 快照：
+
+```bash
+npm run career-ops:sg:scrape
+```
+
+這會輸出 `data/app/career-ops-singapore-jobs.json` 與 `.js`，前端 Career Ops 面板可用「匯入新加坡職缺快照」加入追蹤器；Indeed SG、JobStreet SG、NodeFlair 目前作為搜尋訊號與瀏覽器入口保留。
 
 若要在後端批次評估快照，可複製 `data/career-ops-profile.example.json` 為 `data/career-ops-profile.json` 後執行：
 
@@ -354,10 +364,11 @@ GSAT 分頁整合本地快照資料，支援依學測成績、學校、科系與
 | `npm run career-ops:sources:help` | 查看 Career Ops source strategy builder 參數 |
 | `npm run career-ops:sources:build` | 依 `data/career-ops-source-strategy.json` 產生 `data/career-ops-sources.json` 與 strategy report |
 | `npm run career-ops:search` | 將搜尋結果 JSON / HTML / URL list 轉成 source 清單，可合併回 `data/career-ops-sources.json` |
-| `npm run career-ops:source-flex` | 用市場、role aliases、ATS domains、job boards 擴展來源彈性 |
+| `npm run career-ops:source-flex` | 用市場、role aliases、ATS domains、job boards、seed sources 擴展來源彈性 |
 | `npm run career-ops:quality` | 在評分前過濾 / 標記低品質來源與 job board landing pages |
 | `npm run career-ops:rendered` | 可選的 Chrome rendered careers-page discovery，補強 JS-heavy 企業招聘頁 |
 | `npm run career-ops:scrape` | 依 `data/career-ops-sources.json` 抓取公開職缺頁並產生前端快照 |
+| `npm run career-ops:sg:scrape` | 抓取新加坡 MyCareersFuture 公開 API，產生新加坡專用前端快照 |
 | `npm run career-ops:evaluate` | 依 `data/career-ops-profile.example.json` 對職缺快照做後端批次評分 |
 | `npm run career-ops:intelligence` | 對職缺快照做多維比對、分群、市場洞察與 report 產生 |
 | `npm run career-ops:application-kit` | 對高分職缺產生 apply / outreach / follow-up / interview / negotiation playbook |

@@ -3,6 +3,7 @@
 import fs from "node:fs/promises";
 import path from "node:path";
 import { resolveSourceAdapter } from "./career-ops-source-adapters.mjs";
+import { inferJobMarketMetadata } from "./lib/career-ops-market.mjs";
 
 const DEFAULT_JSON_OUT = "data/app/career-ops-jobs.json";
 const DEFAULT_JS_OUT = "data/app/career-ops-jobs.js";
@@ -24,6 +25,7 @@ Options:
   --url <url>          Add one public job URL. Can be repeated.
   --json-out <file>    Output normalized JSON. Default: ${DEFAULT_JSON_OUT}
   --js-out <file>      Output browser JS snapshot. Default: ${DEFAULT_JS_OUT}
+  --js-global <name>   Browser global for JS snapshot. Default: CV_CAREER_OPS_JOBS
   --previous <file>    Previous snapshot for new/expired lifecycle detection. Default: json-out if it exists
   --include-expired    Keep expired jobs from the previous snapshot in the new output
   --limit <n>          Maximum URLs to fetch
@@ -48,6 +50,7 @@ function parseArgs(argv) {
     source: "",
     jsonOut: DEFAULT_JSON_OUT,
     jsOut: DEFAULT_JS_OUT,
+    jsGlobal: "CV_CAREER_OPS_JOBS",
     previous: "",
     includeExpired: false,
     limit: 0,
@@ -68,6 +71,8 @@ function parseArgs(argv) {
       args.jsonOut = argv[++i] || DEFAULT_JSON_OUT;
     } else if (token === "--js-out") {
       args.jsOut = argv[++i] || DEFAULT_JS_OUT;
+    } else if (token === "--js-global") {
+      args.jsGlobal = argv[++i] || "CV_CAREER_OPS_JOBS";
     } else if (token === "--previous") {
       args.previous = argv[++i] || "";
     } else if (token === "--include-expired") {
@@ -168,6 +173,8 @@ async function readSourceFile(filePath) {
       language: String(item?.language || item?.lang || "").trim(),
       searchText: String(item?.searchText || "").trim(),
       keyword: String(item?.keyword || "").trim(),
+      jobUrlPattern: String(item?.jobUrlPattern || "").trim(),
+      sitemapFilePattern: String(item?.sitemapFilePattern || "").trim(),
       appliedFacets: item?.appliedFacets && typeof item.appliedFacets === "object" ? item.appliedFacets : undefined,
       region: String(item?.region || "").trim().toLowerCase(),
       apiUrl: item?.apiUrl || "",
@@ -179,6 +186,7 @@ async function readSourceFile(filePath) {
       titleFilter: item?.titleFilter || globalTitleFilter,
       discover: item?.discover === undefined ? undefined : Boolean(item.discover),
       maxDiscovered: Number.isFinite(Number(item?.maxDiscovered)) ? Math.max(0, Number(item.maxDiscovered)) : undefined,
+      maxSitemapFiles: Number.isFinite(Number(item?.maxSitemapFiles)) ? Math.max(1, Number(item.maxSitemapFiles)) : undefined,
       detailLimit: Number.isFinite(Number(item?.detailLimit)) ? Math.max(0, Number(item.detailLimit)) : undefined
     };
   });
@@ -334,7 +342,7 @@ function jobLinkScore(link) {
 
   if (/(greenhouse\.io|lever\.co|ashbyhq\.com|workable\.com|smartrecruiters\.com|bamboohr\.com|recruitee\.com|teamtailor\.com|jobs\.ashbyhq\.com)/i.test(url)) score += 6;
   if (/(\/jobs?\/|\/careers?\/|\/positions?\/|\/openings?\/|\/recruit|\/join-us|\/job-detail|\/job_post|\/apply)/i.test(parsed.pathname)) score += 4;
-  if (/(engineer|developer|designer|manager|analyst|scientist|specialist|intern|frontend|backend|full[- ]?stack|product|marketing|sales|operations|職缺|職位|工程師|設計師|分析師|實習|招募|加入|工作)/i.test(text)) score += 4;
+  if (/(engineer|developer|designer|manager|analyst|scientist|specialist|intern|frontend|backend|full[- ]?stack|product|marketing|sales|operations|vacancy|opening|opportunity|entwickler|ingenieur|ingénieur|développeur|desarrollador|職缺|職位|工程師|設計師|分析師|實習|招募|加入|工作|開発|採用|求人|채용|개발자|엔지니어|งาน|ตำแหน่งงาน|việc|viec|tuyển dụng|kerja|lowongan)/i.test(text)) score += 4;
   if (/(privacy|terms|policy|cookie|blog|news|press|about|contact|login|signin|signup|facebook|instagram|twitter|linkedin\.com\/company)/i.test(text)) score -= 8;
   if (parsed.hash && !parsed.pathname.replace(/\/+$/, "")) score -= 4;
 
@@ -391,28 +399,39 @@ function normalizeJobFromJsonLd(node, pageUrl, source = "") {
   });
 }
 
+function cleanJobString(value) {
+  return String(value || "").replace(/[\u0000-\u0008\u000B\u000C\u000E-\u001F\u007F]/g, "").trim();
+}
+
 function normalizeJob(job) {
   const normalized = {
-    source: String(job.source || "").trim(),
-    sourceType: String(job.sourceType || "").trim(),
-    title: String(job.title || "").trim().slice(0, 180) || "未命名職缺",
-    company: String(job.company || "").trim().slice(0, 160),
+    source: cleanJobString(job.source),
+    sourceType: cleanJobString(job.sourceType),
+    title: cleanJobString(job.title).slice(0, 180) || "未命名職缺",
+    company: cleanJobString(job.company).slice(0, 160),
     url: normalizeUrl(job.url),
-    location: String(job.location || "").trim().slice(0, 160),
-    description: String(job.description || "").trim().slice(0, 24000),
-    datePosted: String(job.datePosted || "").trim().slice(0, 80),
-    validThrough: String(job.validThrough || "").trim().slice(0, 80),
-    employmentType: String(job.employmentType || "").trim().slice(0, 120),
-    firstSeenAt: String(job.firstSeenAt || "").trim(),
-    lastSeenAt: String(job.lastSeenAt || "").trim(),
+    location: cleanJobString(job.location).slice(0, 160),
+    description: cleanJobString(job.description).slice(0, 24000),
+    datePosted: cleanJobString(job.datePosted).slice(0, 80),
+    validThrough: cleanJobString(job.validThrough).slice(0, 80),
+    employmentType: cleanJobString(job.employmentType).slice(0, 120),
+    firstSeenAt: cleanJobString(job.firstSeenAt),
+    lastSeenAt: cleanJobString(job.lastSeenAt),
     isNew: Boolean(job.isNew),
     isExpired: Boolean(job.isExpired),
-    expiredAt: String(job.expiredAt || "").trim(),
-    jobKey: String(job.jobKey || "").trim(),
-    sourceMarket: String(job.sourceMarket || "").trim().toLowerCase(),
-    sourceIndustry: String(job.sourceIndustry || "").trim(),
-    sourceStrategy: String(job.sourceStrategy || "").trim(),
-    sourceTags: Array.isArray(job.sourceTags) ? job.sourceTags.map((tag) => String(tag || "").trim()).filter(Boolean) : []
+    expiredAt: cleanJobString(job.expiredAt),
+    jobKey: cleanJobString(job.jobKey),
+    sourceConfiguredMarket: cleanJobString(job.sourceConfiguredMarket).toLowerCase(),
+    sourceMarket: cleanJobString(job.sourceMarket).toLowerCase(),
+    market: cleanJobString(job.market || job.sourceMarket).toLowerCase(),
+    country: cleanJobString(job.country),
+    countryCode: cleanJobString(job.countryCode).toUpperCase(),
+    region: cleanJobString(job.region),
+    sourceCountry: cleanJobString(job.sourceCountry || job.country),
+    sourceCountryCode: cleanJobString(job.sourceCountryCode || job.countryCode).toUpperCase(),
+    sourceIndustry: cleanJobString(job.sourceIndustry),
+    sourceStrategy: cleanJobString(job.sourceStrategy),
+    sourceTags: Array.isArray(job.sourceTags) ? job.sourceTags.map((tag) => cleanJobString(tag)).filter(Boolean) : []
   };
   normalized.jobKey = normalized.jobKey || stableJobKey(normalized);
   return normalized;
@@ -489,9 +508,10 @@ function passesJobFilter(job, filter = {}) {
 }
 
 function enrichJobWithSource(job, source) {
+  const marketMetadata = inferJobMarketMetadata(job, source);
   return normalizeJob({
     ...job,
-    sourceMarket: source.market,
+    ...marketMetadata,
     sourceIndustry: source.industry,
     sourceStrategy: source.sourceStrategy,
     sourceTags: source.tags
@@ -594,14 +614,16 @@ async function scrapeSource(source, options) {
 
 async function writeJson(filePath, data) {
   await fs.mkdir(path.dirname(filePath), { recursive: true });
-  await fs.writeFile(filePath, `${JSON.stringify(data, null, 2)}\n`, "utf8");
+  await fs.writeFile(filePath, `${JSON.stringify(data)}\n`, "utf8");
 }
 
 async function writeJs(filePath, data) {
   await fs.mkdir(path.dirname(filePath), { recursive: true });
+  const globalName = String(data?.jsGlobal || "").trim();
+  const safeGlobalName = /^[A-Za-z_$][A-Za-z0-9_$]*$/.test(globalName) ? globalName : "CV_CAREER_OPS_JOBS";
   await fs.writeFile(
     filePath,
-    `window.CV_CAREER_OPS_JOBS = ${JSON.stringify(data, null, 2)};\n`,
+    `window.${safeGlobalName} = ${JSON.stringify({ ...data, jsGlobal: undefined })};\n`,
     "utf8"
   );
 }
@@ -654,7 +676,7 @@ async function main() {
   };
 
   await writeJson(args.jsonOut, payload);
-  await writeJs(args.jsOut, payload);
+  await writeJs(args.jsOut, { ...payload, jsGlobal: args.jsGlobal });
   console.log(`[career-ops] wrote ${args.jsonOut}`);
   console.log(`[career-ops] wrote ${args.jsOut}`);
 }

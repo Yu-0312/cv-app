@@ -33,6 +33,9 @@ Options:
   --report-out <file>    Markdown report. Default: ${DEFAULT_REPORT}
   --concurrency <n>      Parallel job workers. Default: 4
   --top <n>              Max active jobs to process. Default: 50
+  --state-file <file>    TSV state file for crash recovery. Default: data/career-ops-batch-state.tsv
+  --retry-failed         Re-process failed jobs from the state file
+  --dry-run              Print which jobs would run without executing
   --no-js                Skip browser JS output
   --help                 Show this help
 `);
@@ -50,6 +53,9 @@ function parseArgs(argv) {
     reportOut: DEFAULT_REPORT,
     concurrency: 4,
     top: 50,
+    stateFile: "data/career-ops-batch-state.tsv",
+    retryFailed: false,
+    dryRun: false,
     writeJs: true
   };
   for (let i = 0; i < argv.length; i += 1) {
@@ -63,8 +69,11 @@ function parseArgs(argv) {
     else if (token === "--out") args.out = argv[++i] || DEFAULT_OUT;
     else if (token === "--js-out") args.jsOut = argv[++i] || DEFAULT_JS_OUT;
     else if (token === "--report-out") args.reportOut = argv[++i] || DEFAULT_REPORT;
+    else if (token === "--state-file") args.stateFile = argv[++i] || "data/career-ops-batch-state.tsv";
     else if (token === "--concurrency") args.concurrency = Math.max(1, Number.parseInt(argv[++i] || "4", 10) || 4);
     else if (token === "--top") args.top = Math.max(1, Number.parseInt(argv[++i] || "50", 10) || 50);
+    else if (token === "--retry-failed") args.retryFailed = true;
+    else if (token === "--dry-run") args.dryRun = true;
     else if (token === "--no-js") args.writeJs = false;
     else throw new Error(`Unknown argument: ${token}`);
   }
@@ -77,6 +86,39 @@ async function readJsonIfExists(filePath) {
   } catch {
     return {};
   }
+}
+
+// ── TSV state file helpers (crash recovery) ──────────────────────────────────
+// Format: url\tstatus\tstartedAt\tcompletedAt\tscore\tgrade\terror
+const STATE_HEADER = "url\tstatus\tstartedAt\tcompletedAt\tscore\tgrade\terror";
+
+async function readStateFile(filePath) {
+  try {
+    const text = await fs.readFile(filePath, "utf8");
+    const rows = text.trim().split("\n").slice(1); // skip header
+    const map = new Map();
+    for (const row of rows) {
+      const [url, status, startedAt, completedAt, score, grade, ...errorParts] = row.split("\t");
+      if (url) map.set(url, { url, status, startedAt, completedAt, score, grade, error: errorParts.join("\t") || "" });
+    }
+    return map;
+  } catch {
+    return new Map();
+  }
+}
+
+async function writeStateFile(filePath, stateMap) {
+  await fs.mkdir(path.dirname(filePath), { recursive: true });
+  const rows = [STATE_HEADER];
+  for (const s of stateMap.values()) {
+    rows.push([s.url, s.status, s.startedAt, s.completedAt || "", s.score || "", s.grade || "", s.error || ""].join("\t"));
+  }
+  await fs.writeFile(filePath, rows.join("\n") + "\n", "utf8");
+}
+
+async function upsertState(filePath, stateMap, entry) {
+  stateMap.set(entry.url, entry);
+  await writeStateFile(filePath, stateMap);
 }
 
 function array(value) {
@@ -186,21 +228,70 @@ async function processJob(job, context) {
   };
 }
 
-async function runPool(items, concurrency, worker) {
+async function runPool(items, concurrency, worker, { stateFile, stateMap, retryFailed, dryRun } = {}) {
   const results = new Array(items.length);
   const errors = [];
   let index = 0;
+
   async function next() {
     while (index < items.length) {
       const current = index;
       index += 1;
+      const item = items[current];
+      const url = String(item.url || item.jobKey || `${item.company}:${item.title}`);
+
+      // Crash recovery: skip already-completed jobs unless retryFailed
+      if (stateMap) {
+        const prev = stateMap.get(url);
+        if (prev?.status === "completed" && !retryFailed) {
+          console.log(`[career-ops] skip (already done): ${item.title || url}`);
+          continue;
+        }
+        if (prev?.status === "failed" && !retryFailed) {
+          console.log(`[career-ops] skip (prev failed, use --retry-failed to retry): ${item.title || url}`);
+          continue;
+        }
+      }
+
+      if (dryRun) {
+        console.log(`[career-ops] dry-run: would process "${item.title}" at ${url}`);
+        continue;
+      }
+
+      // Mark in-progress
+      if (stateMap && stateFile) {
+        await upsertState(stateFile, stateMap, { url, status: "running", startedAt: new Date().toISOString() });
+      }
+
       try {
-        results[current] = await worker(items[current], current);
+        results[current] = await worker(item, current);
+        // Mark completed
+        if (stateMap && stateFile) {
+          await upsertState(stateFile, stateMap, {
+            url,
+            status: "completed",
+            startedAt: stateMap.get(url)?.startedAt || new Date().toISOString(),
+            completedAt: new Date().toISOString(),
+            score: String(item.score || ""),
+            grade: String(item.grade || ""),
+            error: "",
+          });
+        }
       } catch (error) {
-        errors.push({
-          index: current,
-          message: error instanceof Error ? error.message : String(error)
-        });
+        const msg = error instanceof Error ? error.message : String(error);
+        errors.push({ index: current, message: msg });
+        // Mark failed
+        if (stateMap && stateFile) {
+          await upsertState(stateFile, stateMap, {
+            url,
+            status: "failed",
+            startedAt: stateMap.get(url)?.startedAt || new Date().toISOString(),
+            completedAt: new Date().toISOString(),
+            score: "",
+            grade: "",
+            error: msg,
+          });
+        }
       }
     }
   }
@@ -267,7 +358,24 @@ async function main() {
     storyBank: await readJsonIfExists(args.storyBank)
   };
   const jobs = rankedJobs(jobsPayload.jobs, args.top);
-  const { results, errors } = await runPool(jobs, args.concurrency, (job) => processJob(job, context));
+
+  // State-file crash recovery
+  const stateMap = await readStateFile(args.stateFile);
+  const prevCompleted = [...stateMap.values()].filter((s) => s.status === "completed").length;
+  if (prevCompleted > 0 && !args.retryFailed) {
+    console.log(`[career-ops] state file: ${prevCompleted} jobs already completed — skipping. Use --retry-failed to reprocess.`);
+  }
+
+  if (args.dryRun) {
+    console.log(`[career-ops] dry-run mode: ${jobs.length} job(s) eligible.`);
+  }
+
+  const { results, errors } = await runPool(jobs, args.concurrency, (job) => processJob(job, context), {
+    stateFile: args.stateFile,
+    stateMap,
+    retryFailed: args.retryFailed,
+    dryRun: args.dryRun,
+  });
   const payload = {
     source: "career-ops-parallel",
     generatedAt: new Date().toISOString(),
