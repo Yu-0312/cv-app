@@ -320,15 +320,18 @@ Frontend Freelancer | Self-employed | 2023 - 2024 | Built brand websites and eve
 CV-App/
 ├── .github/
 │   └── workflows/
-│       └── deploy.yml       # GitHub Actions auto-deployment workflow
-├── index.html               # Main application file (UI, styles, and logic all-in-one)
-├── sw.js                    # Service Worker for PWA offline caching
-├── manifest.json            # PWA install configuration
-├── icon.svg                 # App icon
-├── supabase-schema.sql      # Database schema and RLS policies
-├── config.js                # Local Supabase config (not committed)
-├── config.example.js        # Config template
-└── package.json             # npm config and build script
+│       └── deploy.yml           # GitHub Actions auto-deployment workflow
+├── scripts/
+│   └── lib/
+│       └── utils.mjs            # Shared helpers: CLI arg parsing, fetchWithRetry, ensureDir, randomDelay
+├── index.html                   # Main application file (UI, styles, and logic all-in-one)
+├── sw.js                        # Service Worker for PWA offline caching
+├── manifest.json                # PWA install configuration
+├── icon.svg                     # App icon
+├── supabase-schema.sql          # Database schema and RLS policies
+├── config.js                    # Local Supabase config (not committed)
+├── config.example.js            # Config template
+└── package.json                 # npm config and build script
 ```
 
 ---
@@ -365,4 +368,5 @@ This project does **not** use the deprecated `google-signin2` / `gapi.auth2` fro
 - **Granular bilingual content mapping**: Chinese / English mappings are supported for profile, summary, skills, highlights, experience, projects, education, and awards fields.
 - **PDF page mode**: export supports automatic pagination or a one-page preference.
 - **Bilingual resume headings**: CV headings can follow the UI language or be fixed to Chinese / English.
-- **Automated GSAT data refresh**: GitHub Actions now refresh University TW and 104 GSAT data weekly.
+- **Automated GSAT data refresh**: GitHub Actions now refresh University TW and 104 GSAT data weekly, including UAC minimum registration standards as a second data source alongside 104 five-percentile scores.
+- **Shared script utilities**: extracted a `scripts/lib/utils.mjs` module (CLI arg parsing, `fetchWithRetry` with exponential back-off and per-request timeout, `ensureDir`, `randomDelay`) to eliminate ~100 lines of duplication across GSAT data scripts.

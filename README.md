@@ -347,7 +347,9 @@ GSAT 分頁整合本地快照資料，支援依學測成績、學校、科系與
 | `npm run university-tw:sql` | 產生 Supabase / PostgreSQL seed SQL |
 | `npm run gsat:104:standard` | 下載 104 公開五標資料 |
 | `npm run gsat:104:major-list` | 用指定分數抓取 104 校系列表 |
-| `npm run gsat:build` | 整理 GSAT external data 給前端載入 |
+| `npm run gsat:uac:help` | 查看 UAC 最低登記標準抓取工具參數 |
+| `npm run gsat:uac` | 從大學分發委員會抓取採計科目組合最低登記標準資料 |
+| `npm run gsat:build` | 整合 104 五標、UAC 最低標準與 University TW 資料，產生前端可載入的 GSAT external data |
 | `npm run career-ops:help` | 查看 Career Ops 職缺 worker 參數 |
 | `npm run career-ops:sources:help` | 查看 Career Ops source strategy builder 參數 |
 | `npm run career-ops:sources:build` | 依 `data/career-ops-source-strategy.json` 產生 `data/career-ops-sources.json` 與 strategy report |
@@ -403,13 +405,16 @@ supabase-university-tw-schema.sql
 data/sql/university-tw-seed.sql
 ```
 
-### 104 學測資料
+### 104 學測資料 + UAC 最低登記標準
 
 ```bash
 npm run gsat:104:standard
 npm run gsat:104:major-list
+npm run gsat:uac
 npm run gsat:build
 ```
+
+`gsat:uac` 會從大學分發委員會官網抓取採計科目組合最低登記標準，輸出 `data/normalized/uac-standards-115.json`；`gsat:build` 會同時整合 104 五標、UAC 資料與 University TW 快照，產生前端所需的 `data/app/gsat-external-data.*`。若 UAC 頁面暫時無法取得，build 仍可在沒有 `--uac-json` 資料的情況下完成。
 
 也支援 browser capture 與 HAR 轉換流程：
 
@@ -448,6 +453,8 @@ CV App/
 │   ├── raw/
 │   └── sql/
 ├── scripts/
+│   └── lib/
+│       └── utils.mjs          ← 共用工具：CLI 參數解析、fetchWithRetry、ensureDir、randomDelay
 ├── index.html
 ├── sw.js
 ├── manifest.json
@@ -491,4 +498,5 @@ CV App/
 - **更細緻的雙語內容欄位對照**：支援姓名、角色、地點、摘要、技能、經歷、專案、學歷與獎項等欄位的中英對照內容。
 - **PDF 分頁選項**：支援自動分頁與盡量單頁兩種輸出模式，降低長履歷匯出時的版面壓縮。
 - **中英履歷標題切換**：CV 區塊標題可跟隨介面語言，也可固定中文或 English。
-- **自動化學測資料更新**：新增 GitHub Actions 排程，每週更新 University TW 與 104 學測資料。
+- **自動化學測資料更新**：新增 GitHub Actions 排程，每週更新 University TW 與 104 學測資料，並額外整合大學分發委員會（UAC）採計科目組合最低登記標準作為第二資料來源。
+- **共用腳本工具模組**：抽取 `scripts/lib/utils.mjs`（CLI 參數解析、指數退避 `fetchWithRetry`、`ensureDir`、`randomDelay`），消除 GSAT 資料腳本間約 100 行重複程式碼。
