@@ -1,0 +1,103 @@
+{
+  "source": "career-ops-singapore-sources",
+  "description": "Singapore-focused public job sources for a smaller Career Ops snapshot. MyCareersFuture uses a public API; Indeed, JobStreet, and NodeFlair are kept as frontend/manual search links because their public pages can reject non-browser worker requests.",
+  "targetMarkets": ["sg"],
+  "titleFilter": {
+    "positive": [],
+    "locationPositive": ["Singapore", "新加坡"]
+  },
+  "sources": [
+    {
+      "name": "MyCareersFuture Singapore Software Engineering",
+      "adapter": "mycareersfuture",
+      "url": "https://www.mycareersfuture.gov.sg/search?search=software%20engineer",
+      "apiUrl": "https://api.mycareersfuture.gov.sg/v2/jobs",
+      "keyword": "software engineer",
+      "market": "sg",
+      "maxDiscovered": 120,
+      "titleFilter": { "positive": [], "locationPositive": ["Singapore", "新加坡"] },
+      "tags": ["job-board", "government", "singapore", "software", "public-api"],
+      "sourceStrategy": "sg-public-api"
+    },
+    {
+      "name": "MyCareersFuture Singapore Frontend Full Stack",
+      "adapter": "mycareersfuture",
+      "url": "https://www.mycareersfuture.gov.sg/search?search=frontend%20engineer",
+      "apiUrl": "https://api.mycareersfuture.gov.sg/v2/jobs",
+      "keyword": "frontend engineer",
+      "market": "sg",
+      "maxDiscovered": 100,
+      "titleFilter": { "positive": [], "locationPositive": ["Singapore", "新加坡"] },
+      "tags": ["job-board", "government", "singapore", "frontend", "full-stack", "public-api"],
+      "sourceStrategy": "sg-public-api"
+    },
+    {
+      "name": "MyCareersFuture Singapore AI Data",
+      "adapter": "mycareersfuture",
+      "url": "https://www.mycareersfuture.gov.sg/search?search=machine%20learning",
+      "apiUrl": "https://api.mycareersfuture.gov.sg/v2/jobs",
+      "keyword": "machine learning",
+      "market": "sg",
+      "maxDiscovered": 100,
+      "titleFilter": { "positive": [], "locationPositive": ["Singapore", "新加坡"] },
+      "tags": ["job-board", "government", "singapore", "ai", "data", "public-api"],
+      "sourceStrategy": "sg-public-api"
+    },
+    {
+      "name": "MyCareersFuture Singapore Product",
+      "adapter": "mycareersfuture",
+      "url": "https://www.mycareersfuture.gov.sg/search?search=product%20manager",
+      "apiUrl": "https://api.mycareersfuture.gov.sg/v2/jobs",
+      "keyword": "product manager",
+      "market": "sg",
+      "maxDiscovered": 80,
+      "titleFilter": { "positive": [], "locationPositive": ["Singapore", "新加坡"] },
+      "tags": ["job-board", "government", "singapore", "product", "public-api"],
+      "sourceStrategy": "sg-public-api"
+    },
+    {
+      "name": "MyCareersFuture Singapore Business Operations",
+      "adapter": "mycareersfuture",
+      "url": "https://www.mycareersfuture.gov.sg/search?search=business%20analyst",
+      "apiUrl": "https://api.mycareersfuture.gov.sg/v2/jobs",
+      "keyword": "business analyst",
+      "market": "sg",
+      "maxDiscovered": 80,
+      "titleFilter": { "positive": [], "locationPositive": ["Singapore", "新加坡"] },
+      "tags": ["job-board", "government", "singapore", "business-operations", "public-api"],
+      "sourceStrategy": "sg-public-api"
+    },
+    {
+      "name": "MyCareersFuture Singapore Graduate Internship",
+      "adapter": "mycareersfuture",
+      "url": "https://www.mycareersfuture.gov.sg/search?search=intern",
+      "apiUrl": "https://api.mycareersfuture.gov.sg/v2/jobs",
+      "keyword": "intern",
+      "market": "sg",
+      "maxDiscovered": 80,
+      "titleFilter": { "positive": [], "locationPositive": ["Singapore", "新加坡"] },
+      "tags": ["job-board", "government", "singapore", "graduate", "internship", "public-api"],
+      "sourceStrategy": "sg-public-api"
+    }
+  ],
+  "manualSearchLinks": [
+    {
+      "name": "Indeed Singapore",
+      "url": "https://sg.indeed.com/jobs?q=software+engineer&l=Singapore",
+      "market": "sg",
+      "tags": ["job-board", "singapore", "indeed", "manual-browser"]
+    },
+    {
+      "name": "JobStreet Singapore",
+      "url": "https://www.jobstreet.com.sg/software-engineer-jobs",
+      "market": "sg",
+      "tags": ["job-board", "singapore", "jobstreet", "manual-browser"]
+    },
+    {
+      "name": "NodeFlair Singapore",
+      "url": "https://nodeflair.com/jobs?query=software%20engineer&location=Singapore",
+      "market": "sg",
+      "tags": ["job-board", "singapore", "nodeflair", "manual-browser"]
+    }
+  ]
+}

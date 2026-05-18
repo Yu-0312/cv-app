@@ -84,7 +84,24 @@ function inferMarket(job) {
   const text = `${job.sourceMarket || ""} ${job.location || ""} ${job.description || ""}`.toLowerCase();
   if (/\bcn\b|china|beijing|shanghai|shenzhen|hangzhou|中國|北京|上海|深圳|杭州/.test(text)) return "cn";
   if (/\btw\b|taiwan|taipei|hsinchu|taichung|kaohsiung|台灣|臺灣|台北|臺北|新竹/.test(text)) return "tw";
-  if (/remote|global|us|united states|singapore/.test(text)) return "global";
+  if (/\bjp\b|japan|tokyo|osaka|kyoto|日本|東京|大阪/.test(text)) return "jp";
+  if (/\bkr\b|korea|south korea|seoul|韓國|首爾/.test(text)) return "kr";
+  if (/\bsg\b|singapore|新加坡/.test(text)) return "sg";
+  if (/\bus\b|usa|united states|san francisco|new york|seattle|austin|boston/.test(text)) return "us";
+  if (/\bca\b|canada|toronto|vancouver|montreal|waterloo/.test(text)) return "ca";
+  if (/\buk\b|united kingdom|london|cambridge|manchester/.test(text)) return "uk";
+  if (/\bde\b|germany|berlin|munich|münchen|hamburg/.test(text)) return "de";
+  if (/\bnl\b|netherlands|amsterdam|eindhoven|rotterdam/.test(text)) return "nl";
+  if (/\bfr\b|france|paris|lyon/.test(text)) return "fr";
+  if (/\bau\b|australia|sydney|melbourne|brisbane/.test(text)) return "au";
+  if (/\bin\b|india|bengaluru|bangalore|hyderabad|pune|mumbai/.test(text)) return "in";
+  if (/\bhk\b|hong kong|香港/.test(text)) return "hk";
+  if (/\bph\b|philippines|manila|taguig|makati/.test(text)) return "ph";
+  if (/\bmy\b|malaysia|kuala lumpur|penang/.test(text)) return "my";
+  if (/\bid\b|indonesia|jakarta|bandung|surabaya/.test(text)) return "id";
+  if (/\bvn\b|vietnam|viet nam|ho chi minh|hanoi/.test(text)) return "vn";
+  if (/\bth\b|thailand|bangkok/.test(text)) return "th";
+  if (/remote|global/.test(text)) return "global";
   return "unknown";
 }
 

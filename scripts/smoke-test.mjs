@@ -780,14 +780,18 @@ async function main() {
 
       const initialHome = await page.evaluate(() => ({
         title: document.getElementById("homeStatusTitle")?.textContent || "",
+        label: document.getElementById("homeProgressLabel")?.textContent || "",
         progress: document.getElementById("homeProgressValue")?.textContent || "",
+        note: document.getElementById("homeProgressNote")?.textContent || "",
         sync: document.getElementById("homeSyncState")?.textContent || "",
         cv: document.getElementById("homeTaskCvState")?.textContent || "",
         portfolio: document.getElementById("homeTaskPortfolioState")?.textContent || "",
         gsat: document.getElementById("homeTaskGsatState")?.textContent || ""
       }));
       assert.match(initialHome.title, /功能概覽/);
+      assert.match(initialHome.label, /各功能獨立判斷/);
       assert.match(initialHome.progress, /登入後/);
+      assert.match(initialHome.note, /不會把所有工具加總/);
       assert.match(initialHome.sync, /未登入/);
       assert.match(initialHome.cv, /可使用/);
       assert.match(initialHome.portfolio, /可使用/);
@@ -842,6 +846,7 @@ async function main() {
       await page.waitForFunction(() => /登入後/.test(document.getElementById("homeProgressValue")?.textContent || ""));
       const signedOutUpdatedHome = await page.evaluate(() => ({
         title: document.getElementById("homeStatusTitle")?.textContent || "",
+        label: document.getElementById("homeProgressLabel")?.textContent || "",
         progress: document.getElementById("homeProgressValue")?.textContent || "",
         sync: document.getElementById("homeSyncState")?.textContent || "",
         cv: document.getElementById("homeTaskCvState")?.textContent || "",
@@ -849,6 +854,7 @@ async function main() {
         gsat: document.getElementById("homeTaskGsatState")?.textContent || ""
       }));
       assert.match(signedOutUpdatedHome.title, /功能概覽/);
+      assert.match(signedOutUpdatedHome.label, /各功能獨立判斷/);
       assert.match(signedOutUpdatedHome.progress, /登入後/);
       assert.match(signedOutUpdatedHome.sync, /未登入/);
       assert.match(signedOutUpdatedHome.cv, /可使用/);
@@ -864,22 +870,32 @@ async function main() {
         });
       });
       await page.waitForFunction(() => {
-        const value = Number.parseInt(document.getElementById("homeProgressValue")?.textContent || "0", 10);
-        return value >= 85;
+        const values = ["homeTaskCvPercent", "homeTaskPortfolioPercent", "homeTaskGsatPercent"]
+          .map((id) => Number.parseInt(document.getElementById(id)?.textContent || "0", 10));
+        return values.every((value) => value >= 80);
       });
       const signedInHome = await page.evaluate(() => ({
         title: document.getElementById("homeStatusTitle")?.textContent || "",
+        label: document.getElementById("homeProgressLabel")?.textContent || "",
         progress: document.getElementById("homeProgressValue")?.textContent || "",
         sync: document.getElementById("homeSyncState")?.textContent || "",
         cv: document.getElementById("homeTaskCvState")?.textContent || "",
+        cvPercent: document.getElementById("homeTaskCvPercent")?.textContent || "",
         portfolio: document.getElementById("homeTaskPortfolioState")?.textContent || "",
-        gsat: document.getElementById("homeTaskGsatState")?.textContent || ""
+        portfolioPercent: document.getElementById("homeTaskPortfolioPercent")?.textContent || "",
+        gsat: document.getElementById("homeTaskGsatState")?.textContent || "",
+        gsatPercent: document.getElementById("homeTaskGsatPercent")?.textContent || ""
       }));
-      assert.match(signedInHome.title, /目前進度/);
+      assert.match(signedInHome.title, /功能完整度/);
+      assert.match(signedInHome.label, /各功能獨立判斷/);
+      assert.match(signedInHome.progress, /分開判斷/);
       assert.match(signedInHome.sync, /雲端已連線/);
       assert.match(signedInHome.cv, /資料完整/);
+      assert.match(signedInHome.cvPercent, /100%/);
       assert.match(signedInHome.portfolio, /已整理/);
+      assert.match(signedInHome.portfolioPercent, /100%/);
       assert.match(signedInHome.gsat, /可分析/);
+      assert.match(signedInHome.gsatPercent, /100%/);
 
       await page.click("[data-language-toggle]");
       await page.waitForFunction(() => /Finish one sendable/.test(document.querySelector(".home-title")?.textContent || ""));

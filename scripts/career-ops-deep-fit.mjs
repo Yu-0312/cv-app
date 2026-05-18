@@ -21,7 +21,9 @@ ANTHROPIC_API_KEY is available.
 
 Usage:
   node scripts/career-ops-deep-fit.mjs --top 10
-  OPENAI_API_KEY="..." node scripts/career-ops-deep-fit.mjs --llm openai
+  OPENAI_API_KEY="..."    node scripts/career-ops-deep-fit.mjs --llm openai
+  ANTHROPIC_API_KEY="..." node scripts/career-ops-deep-fit.mjs --llm anthropic
+  GEMINI_API_KEY="..."    node scripts/career-ops-deep-fit.mjs --llm gemini
 
 Options:
   --jobs <file>       Jobs snapshot. Default: ${DEFAULT_JOBS}
@@ -33,7 +35,7 @@ Options:
   --js-out <file>     Browser JS output. Default: ${DEFAULT_JS_OUT}
   --report-out <file> Markdown report. Default: ${DEFAULT_REPORT}
   --top <n>           Number of top jobs. Default: 12
-  --llm <provider>    none, openai, anthropic, or auto. Default: auto
+  --llm <provider>    none, openai, anthropic, gemini, or auto. Default: auto
   --no-js             Skip browser JS output
   --help              Show this help
 `);
@@ -187,6 +189,7 @@ function pickLlm(provider) {
   if (provider === "none") return "none";
   if ((provider === "auto" || provider === "openai") && process.env.OPENAI_API_KEY) return "openai";
   if ((provider === "auto" || provider === "anthropic") && process.env.ANTHROPIC_API_KEY) return "anthropic";
+  if ((provider === "auto" || provider === "gemini") && process.env.GEMINI_API_KEY) return "gemini";
   return provider === "auto" ? "none" : provider;
 }
 
@@ -225,7 +228,7 @@ async function callLlm(provider, system, prompt) {
         "anthropic-version": "2023-06-01"
       },
       body: JSON.stringify({
-        model: process.env.ANTHROPIC_MODEL || "claude-3-5-sonnet-latest",
+        model: process.env.ANTHROPIC_MODEL || "claude-opus-4-6",
         max_tokens: 1800,
         temperature: 0.2,
         system,
@@ -235,6 +238,23 @@ async function callLlm(provider, system, prompt) {
     if (!response.ok) throw new Error(`Anthropic ${response.status}`);
     const data = await response.json();
     return data.content?.[0]?.text || "";
+  }
+  if (provider === "gemini") {
+    const model = process.env.GEMINI_MODEL || "gemini-2.5-flash";
+    const response = await fetch(
+      `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${process.env.GEMINI_API_KEY}`,
+      {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({
+          contents: [{ role: "user", parts: [{ text: `${system}\n\n${prompt}` }] }],
+          generationConfig: { maxOutputTokens: 1800, temperature: 0.2 },
+        }),
+      }
+    );
+    if (!response.ok) throw new Error(`Gemini ${response.status}`);
+    const data = await response.json();
+    return data.candidates?.[0]?.content?.parts?.[0]?.text || "";
   }
   return "";
 }

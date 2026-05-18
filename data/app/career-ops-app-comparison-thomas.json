@@ -1,0 +1,418 @@
+{
+  "generatedAt": "2026-05-16T16:03:43.524Z",
+  "profile": {
+    "schemaVersion": "",
+    "activeProfileId": "Thomas Davis",
+    "profileCorpusCount": 0,
+    "topLevelKeyCount": 11,
+    "activeProfileKeyCount": 11,
+    "populatedCvFields": [
+      "name",
+      "role",
+      "location",
+      "summary",
+      "skills",
+      "experience",
+      "education",
+      "projects"
+    ],
+    "appProjectionLengths": {
+      "name": 12,
+      "role": 23,
+      "email": 0,
+      "phone": 0,
+      "location": 13,
+      "website": 0,
+      "avatar": 0,
+      "summary": 303,
+      "skills": 266,
+      "highlights": 0,
+      "experience": 383,
+      "education": 60,
+      "projects": 237,
+      "awards": 0
+    },
+    "structuredFields": [
+      "preferences"
+    ],
+    "skillsCount": 27,
+    "proofPointCount": 0,
+    "starStoryCount": 0
+  },
+  "careerOps": {
+    "source": "career-ops-parallel-pipeline",
+    "jobs": 552,
+    "activeJobs": 276,
+    "expiredJobs": 276,
+    "evaluatedJobs": 276,
+    "averageScore": 58,
+    "gradeDistribution": [
+      {
+        "name": "D",
+        "count": 162
+      },
+      {
+        "name": "C",
+        "count": 87
+      },
+      {
+        "name": "B",
+        "count": 27
+      }
+    ],
+    "recommendationDistribution": [
+      {
+        "name": "略過",
+        "count": 154
+      },
+      {
+        "name": "觀望",
+        "count": 89
+      },
+      {
+        "name": "值得投遞",
+        "count": 33
+      }
+    ],
+    "blockGDistribution": [
+      {
+        "name": "High Confidence",
+        "count": 276
+      }
+    ],
+    "topJobs": [
+      {
+        "score": 78,
+        "grade": "B",
+        "recommendation": "值得投遞",
+        "company": "CADDi",
+        "title": "Senior SRE, Global Product Team",
+        "blockG": "High Confidence",
+        "cvMatch": 73,
+        "northStar": 63
+      },
+      {
+        "score": 78,
+        "grade": "B",
+        "recommendation": "值得投遞",
+        "company": "Geniee",
+        "title": "JAPAN AI - Product Manager, AI SaaS",
+        "blockG": "High Confidence",
+        "cvMatch": 76,
+        "northStar": 79
+      },
+      {
+        "score": 78,
+        "grade": "B",
+        "recommendation": "值得投遞",
+        "company": "Geniee",
+        "title": "JAPAN AI - Research Engineer, LLM",
+        "blockG": "High Confidence",
+        "cvMatch": 75,
+        "northStar": 79
+      },
+      {
+        "score": 76,
+        "grade": "B",
+        "recommendation": "值得投遞",
+        "company": "AI Robot Association (AIRoA)",
+        "title": "Full Stack Engineer",
+        "blockG": "High Confidence",
+        "cvMatch": 68,
+        "northStar": 79
+      },
+      {
+        "score": 76,
+        "grade": "B",
+        "recommendation": "值得投遞",
+        "company": "Money Forward",
+        "title": "Senior Software Engineer, Money Forward Cloud, Fukuoka",
+        "blockG": "High Confidence",
+        "cvMatch": 74,
+        "northStar": 73
+      },
+      {
+        "score": 76,
+        "grade": "B",
+        "recommendation": "值得投遞",
+        "company": "MODE",
+        "title": "Software Engineer (Engineering Foundation)",
+        "blockG": "High Confidence",
+        "cvMatch": 66,
+        "northStar": 79
+      },
+      {
+        "score": 76,
+        "grade": "B",
+        "recommendation": "值得投遞",
+        "company": "Money Forward",
+        "title": "AI Engineer, ERP Cross-Functional Engineering Department, Tokyo",
+        "blockG": "High Confidence",
+        "cvMatch": 68,
+        "northStar": 79
+      },
+      {
+        "score": 75,
+        "grade": "B",
+        "recommendation": "值得投遞",
+        "company": "Money Forward",
+        "title": "Backend Engineer, Digital Bank",
+        "blockG": "High Confidence",
+        "cvMatch": 69,
+        "northStar": 73
+      },
+      {
+        "score": 75,
+        "grade": "B",
+        "recommendation": "值得投遞",
+        "company": "Money Forward",
+        "title": "Ruby on Rails engineer - Fukuoka",
+        "blockG": "High Confidence",
+        "cvMatch": 75,
+        "northStar": 69
+      },
+      {
+        "score": 75,
+        "grade": "B",
+        "recommendation": "值得投遞",
+        "company": "Micron Workday",
+        "title": "Senior Full Stack Software Engineer",
+        "blockG": "High Confidence",
+        "cvMatch": 67,
+        "northStar": 79
+      },
+      {
+        "score": 74,
+        "grade": "B",
+        "recommendation": "值得投遞",
+        "company": "Axelspace",
+        "title": "Data Scientist / ML Engineer",
+        "blockG": "High Confidence",
+        "cvMatch": 64,
+        "northStar": 73
+      },
+      {
+        "score": 74,
+        "grade": "B",
+        "recommendation": "值得投遞",
+        "company": "Artytech",
+        "title": "Tech Lead / CTO Candidate (Full-stack)",
+        "blockG": "High Confidence",
+        "cvMatch": 68,
+        "northStar": 69
+      }
+    ],
+    "marketInsights": {
+      "topSkills": [
+        {
+          "name": "growth",
+          "count": 40
+        },
+        {
+          "name": "operations",
+          "count": 31
+        },
+        {
+          "name": "python",
+          "count": 30
+        },
+        {
+          "name": "aws",
+          "count": 24
+        },
+        {
+          "name": "gcp",
+          "count": 16
+        },
+        {
+          "name": "agents",
+          "count": 15
+        },
+        {
+          "name": "docker",
+          "count": 15
+        },
+        {
+          "name": "terraform",
+          "count": 15
+        },
+        {
+          "name": "go",
+          "count": 14
+        },
+        {
+          "name": "react",
+          "count": 14
+        },
+        {
+          "name": "deep learning",
+          "count": 13
+        },
+        {
+          "name": "typescript",
+          "count": 13
+        }
+      ],
+      "missingHighDemand": [
+        {
+          "name": "growth",
+          "count": 40
+        },
+        {
+          "name": "operations",
+          "count": 31
+        },
+        {
+          "name": "terraform",
+          "count": 15
+        },
+        {
+          "name": "deep learning",
+          "count": 13
+        },
+        {
+          "name": "analytics",
+          "count": 11
+        },
+        {
+          "name": "api",
+          "count": 11
+        },
+        {
+          "name": "java",
+          "count": 11
+        },
+        {
+          "name": "machine learning",
+          "count": 11
+        }
+      ],
+      "searchQueries": [
+        "Product Engineer",
+        "Senior Product Engineer",
+        "Staff Engineer",
+        "Full Stack Engineer",
+        "AI Engineer",
+        "TypeScript",
+        "JavaScript",
+        "React",
+        "Next.js",
+        "Node.js",
+        "Go",
+        "Python",
+        "PostgreSQL",
+        "growth",
+        "operations",
+        "terraform",
+        "deep learning",
+        "analytics"
+      ],
+      "roleFamilies": [
+        {
+          "name": "Other",
+          "count": 142
+        },
+        {
+          "name": "Backend",
+          "count": 53
+        },
+        {
+          "name": "AI / Data",
+          "count": 32
+        },
+        {
+          "name": "Frontend",
+          "count": 24
+        },
+        {
+          "name": "Operations",
+          "count": 8
+        },
+        {
+          "name": "Design",
+          "count": 6
+        },
+        {
+          "name": "Internship",
+          "count": 5
+        },
+        {
+          "name": "Marketing",
+          "count": 3
+        },
+        {
+          "name": "Product",
+          "count": 2
+        },
+        {
+          "name": "Full Stack",
+          "count": 1
+        }
+      ],
+      "integrity": {
+        "duplicateGroupCount": 36,
+        "jobsWithoutUrl": 0,
+        "jobsWithoutDescription": 136,
+        "expiredCount": 276
+      }
+    }
+  },
+  "app": {
+    "cvFields": [
+      "name",
+      "role",
+      "email",
+      "phone",
+      "location",
+      "website",
+      "avatar",
+      "summary",
+      "skills",
+      "highlights",
+      "experience",
+      "education",
+      "projects",
+      "awards"
+    ],
+    "trackerLimit": 1000,
+    "importedJobsFromSnapshot": 552,
+    "frontendLocalEngine": true,
+    "frontendAiRequiresApiKey": false,
+    "optionalAiEvaluationRequiresApiKey": true
+  },
+  "comparison": {
+    "generatedAt": "2026-05-16T16:03:43.524Z",
+    "featureDifferences": [
+      {
+        "area": "Profile ingestion",
+        "app": "CV Studio imports the active Career Ops profile into 14 resume fields and flattens structured evidence into readable resume sections.",
+        "careerOps": "Career Ops scripts read the profile JSON directly and use structured fields such as preferences, proofPoints, starStories, compensation, and work authorization.",
+        "implication": "The app is better for editing/presentation; backend artifacts are better for structured scoring and repeatable reporting."
+      },
+      {
+        "area": "Profile corpus",
+        "app": "The app uses one active profile at a time.",
+        "careerOps": "This real profile is a single-profile file, so the pipeline runs directly against the top-level resume fields.",
+        "implication": "There is no profile corpus gap for this input; the main difference is whether structured fields stay separate or become resume text."
+      },
+      {
+        "area": "Job volume",
+        "app": "Career Ops tracker can now hold up to 1000 imported jobs and displays imported backend scores.",
+        "careerOps": "The backend snapshot contains 552 total jobs / 276 active jobs, with quality gates, intelligence, and reports.",
+        "implication": "552 jobs can be shown in the app from this snapshot; backend remains the source of truth for full pipeline generation."
+      },
+      {
+        "area": "Scoring",
+        "app": "The app now has a browser-local 6D + Block G analysis engine for tracker jobs, plus optional AI evaluation when an API key is provided.",
+        "careerOps": "Backend scoring is deterministic heuristic 6D + Block G unless LLM review is explicitly enabled.",
+        "implication": "Use backend scores for repeatable pipeline reports; use the app engine for interactive web scoring and quick re-scoring without terminal work."
+      }
+    ],
+    "resultDifferences": [
+      "Career Ops currently evaluates 276/276 active jobs with average score 58.",
+      "Top backend recommendation is CADDi - Senior SRE, Global Product Team at 78/100.",
+      "App import preserves backend score/grade/recommendation for display, and the browser-local engine can re-score jobs interactively; scores can still diverge because the frontend and backend engines are separate implementations.",
+      "The profile has 1 structured Career Ops field groups; after app import those become resume text sections rather than separate scoring dimensions."
+    ]
+  }
+}

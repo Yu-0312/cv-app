@@ -13,7 +13,8 @@ function printHelp() {
   console.log(`Career Ops source flex expander
 
 Expands a fixed source list into flexible candidates and search queries using
-markets, role aliases, ATS domains, job boards, and company career URL patterns.
+markets, role aliases, ATS domains, job boards, explicit seed sources, and
+company career URL patterns.
 
 Usage:
   node scripts/career-ops-source-flex.mjs
@@ -26,7 +27,7 @@ Options:
   --out <file>       Output sources JSON. Default: ${DEFAULT_OUT}
   --report-out <file> Markdown report. Default: ${DEFAULT_REPORT}
   --market <code>    Include one market. Can be repeated
-  --limit <n>        Limit generated candidate sources. Default: 200
+  --limit <n>        Limit generated candidate sources. Default: 400
   --help             Show this help
 `);
 }
@@ -39,7 +40,7 @@ function parseArgs(argv) {
     out: DEFAULT_OUT,
     reportOut: DEFAULT_REPORT,
     markets: [],
-    limit: 200
+    limit: 400
   };
   for (let i = 0; i < argv.length; i += 1) {
     const token = argv[i];
@@ -53,7 +54,7 @@ function parseArgs(argv) {
       const market = String(argv[++i] || "").trim().toLowerCase();
       if (market) args.markets.push(market);
     } else if (token === "--limit") {
-      args.limit = Math.max(1, Number.parseInt(argv[++i] || "200", 10) || 200);
+      args.limit = Math.max(1, Number.parseInt(argv[++i] || "400", 10) || 400);
     } else throw new Error(`Unknown argument: ${token}`);
   }
   return args;
@@ -69,6 +70,21 @@ async function readJsonIfExists(filePath) {
 
 function array(value) {
   return Array.isArray(value) ? value : value ? [value] : [];
+}
+
+function uniqueStrings(...lists) {
+  const seen = new Set();
+  const out = [];
+  for (const list of lists) {
+    for (const item of array(list)) {
+      const text = String(item || "").trim();
+      const key = text.toLowerCase();
+      if (!text || seen.has(key)) continue;
+      seen.add(key);
+      out.push(text);
+    }
+  }
+  return out;
 }
 
 function normalizeUrl(value) {
@@ -91,7 +107,54 @@ function inferAdapter(url) {
   if (host.includes("myworkdayjobs.com") || host.includes("myworkdaysite.com")) return "workday";
   if (host.includes("oraclecloud.com") || host.includes("taleo.net")) return host.includes("taleo.net") ? "taleo" : "oracle";
   if (host.includes("successfactors.com") || host.includes("jobs2web.com")) return "successfactors";
+  if (host.includes("taiwanjobs.gov.tw")) return "taiwanjobs";
+  if (host.includes("careers.tencent.com")) return "tencent";
+  if (host.includes("mycareersfuture.gov.sg")) return "mycareersfuture";
+  if (host.includes("remoteok.com")) return "remoteok";
+  if (host.includes("remotive.com")) return "remotive";
+  if (host.includes("arbeitnow.com")) return "arbeitnow";
+  if (host.includes("themuse.com")) return "themuse";
+  if (host.includes("meet.jobs")) return "meetjobs";
+  if (host.includes("japan-dev.com")) return "japan-dev";
+  if (host.includes("jrecin.jst.go.jp")) return "jrecin";
+  if (host.includes("daijob.com")) return "daijob";
+  if (host.includes("zhipin.com")) return "boss-zhipin";
+  if (host.endsWith("58.com") || host.includes(".58.com")) return "58";
+  if (host.endsWith("1111.com.tw") || host.includes(".1111.com.tw")) return "1111";
+  if (/sitemap/i.test(url)) return "sitemap";
   return "";
+}
+
+function mergeTitleFilters(...filters) {
+  const merged = {};
+  for (const filter of filters) {
+    if (!filter || typeof filter !== "object") continue;
+    for (const [key, value] of Object.entries(filter)) {
+      const values = uniqueStrings(merged[key], value);
+      if (values.length) merged[key] = values;
+    }
+  }
+  return merged;
+}
+
+function sourceTitleFilter(baseFilter, marketFilter, source) {
+  const mode = String(source?.titleFilterMode || "").trim().toLowerCase();
+  if (mode === "replace") return source?.titleFilter && typeof source.titleFilter === "object" ? source.titleFilter : {};
+  if (mode === "market") return mergeTitleFilters(marketFilter, source?.titleFilter);
+  return mergeTitleFilters(baseFilter, marketFilter, source?.titleFilter);
+}
+
+function marketByCode(rules) {
+  return new Map(array(rules.markets).map((market) => [String(market.code || "").toLowerCase(), market]));
+}
+
+function replaceMarketTokens(value, market, marketCode) {
+  if (typeof value !== "string") return value;
+  const firstLocation = String(array(market?.locations)[0] || marketCode || "").trim();
+  return value
+    .replaceAll("{market}", marketCode)
+    .replaceAll("{marketCode}", marketCode)
+    .replaceAll("{location}", firstLocation);
 }
 
 function profileRoles(profile, rules) {
@@ -145,16 +208,78 @@ function buildFlexCandidates(existingSources, profile, rules, args) {
         industry: company.industry || "",
         tags: ["flex-company-pattern"],
         sourceStrategy: "flex-company-pattern",
-        titleFilter,
+        titleFilter: mergeTitleFilters(titleFilter, company.titleFilter),
         maxDiscovered: 30
+      });
+    }
+  }
+
+  const marketsByCode = marketByCode(rules);
+  for (const seed of array(rules.sourceSeeds).filter((item) => item?.enabled !== false)) {
+    const requestedMarkets = seed.markets !== undefined ? seed.markets : seed.market || "global";
+    const marketCodes = uniqueStrings(requestedMarkets)
+      .map((item) => item.toLowerCase())
+      .filter((marketCode) => !args.markets.length || args.markets.includes(marketCode));
+    for (const marketCode of marketCodes.length ? marketCodes : ["global"]) {
+      const market = marketsByCode.get(marketCode) || { code: marketCode };
+      const rawUrl = replaceMarketTokens(seed.url || "", market, marketCode);
+      const normalizedUrl = normalizeUrl(rawUrl);
+      if (!normalizedUrl) continue;
+      let url = normalizedUrl;
+      if (seed.scopeUrlByMarket !== false && marketCodes.length > 1) {
+        const parsed = new URL(url);
+        parsed.searchParams.set("cv_market", marketCode);
+        url = parsed.href;
+      }
+      const name = replaceMarketTokens(seed.name || seed.company || "Seed source", market, marketCode);
+      candidates.push({
+        name: marketCode === "global" ? name : `${name} ${marketCode.toUpperCase()}`,
+        company: replaceMarketTokens(seed.company || seed.name || "", market, marketCode),
+        source: replaceMarketTokens(seed.source || seed.company || seed.name || "Source seed", market, marketCode),
+        url,
+        type: String(seed.type || "company").trim().toLowerCase(),
+        adapter: String(seed.adapter || inferAdapter(url)).trim().toLowerCase(),
+        apiUrl: replaceMarketTokens(seed.apiUrl || "", market, marketCode) || undefined,
+        companyIdentifier: replaceMarketTokens(seed.companyIdentifier || "", market, marketCode) || undefined,
+        board: replaceMarketTokens(seed.board || "", market, marketCode) || undefined,
+        boardName: replaceMarketTokens(seed.boardName || "", market, marketCode) || undefined,
+        boardToken: replaceMarketTokens(seed.boardToken || "", market, marketCode) || undefined,
+        site: replaceMarketTokens(seed.site || "", market, marketCode) || undefined,
+        slug: replaceMarketTokens(seed.slug || "", market, marketCode) || undefined,
+        tenant: replaceMarketTokens(seed.tenant || seed.workdayTenant || "", market, marketCode) || undefined,
+        workdayTenant: replaceMarketTokens(seed.workdayTenant || "", market, marketCode) || undefined,
+        workdaySite: replaceMarketTokens(seed.workdaySite || "", market, marketCode) || undefined,
+        siteNumber: replaceMarketTokens(seed.siteNumber || seed.oracleSiteNumber || "", market, marketCode) || undefined,
+        oracleSiteNumber: replaceMarketTokens(seed.oracleSiteNumber || "", market, marketCode) || undefined,
+        language: replaceMarketTokens(seed.language || seed.lang || "", market, marketCode) || undefined,
+        searchText: replaceMarketTokens(seed.searchText || market.searchText || "", market, marketCode) || undefined,
+        keyword: replaceMarketTokens(seed.keyword || "", market, marketCode) || undefined,
+        jobUrlPattern: replaceMarketTokens(seed.jobUrlPattern || "", market, marketCode) || undefined,
+        sitemapFilePattern: replaceMarketTokens(seed.sitemapFilePattern || "", market, marketCode) || undefined,
+        appliedFacets: seed.appliedFacets && typeof seed.appliedFacets === "object" ? seed.appliedFacets : undefined,
+        market: marketCode,
+        industry: String(seed.industry || "").trim(),
+        tags: uniqueStrings(seed.tags, ["flex-seed-source"]),
+        sourceStrategy: seed.sourceStrategy || "flex-seed-source",
+        titleFilter: sourceTitleFilter(titleFilter, market.titleFilter, seed),
+        discover: seed.discover === undefined ? undefined : Boolean(seed.discover),
+        maxDiscovered: Number.isFinite(Number(seed.maxDiscovered)) ? Math.max(0, Number(seed.maxDiscovered)) : 60,
+        maxSitemapFiles: Number.isFinite(Number(seed.maxSitemapFiles)) ? Math.max(1, Number(seed.maxSitemapFiles)) : undefined,
+        detailLimit: Number.isFinite(Number(seed.detailLimit)) ? Math.max(0, Number(seed.detailLimit)) : undefined
       });
     }
   }
 
   for (const market of markets) {
     for (const board of array(market.jobBoards)) {
-      const url = normalizeUrl(board);
-      if (!url) continue;
+      const normalizedUrl = normalizeUrl(board);
+      if (!normalizedUrl) continue;
+      let url = normalizedUrl;
+      if (market.scopeJobBoardByMarket !== false) {
+        const parsed = new URL(url);
+        parsed.searchParams.set("cv_market", market.code);
+        url = parsed.href;
+      }
       candidates.push({
         name: `${market.code.toUpperCase()} job board ${new URL(url).hostname}`,
         source: "Source flex job board",
@@ -163,7 +288,7 @@ function buildFlexCandidates(existingSources, profile, rules, args) {
         market: market.code,
         tags: ["flex-job-board"],
         sourceStrategy: "flex-job-board",
-        titleFilter,
+        titleFilter: mergeTitleFilters(titleFilter, market.titleFilter),
         maxDiscovered: 50
       });
     }
@@ -184,11 +309,20 @@ function buildFlexCandidates(existingSources, profile, rules, args) {
   const merged = new Map();
   for (const source of array(existingSources.sources)) {
     const key = sourceKey(source);
-    if (key) merged.set(key, source);
+    if (key) {
+      merged.set(key, {
+        ...source,
+        titleFilter: mergeTitleFilters(titleFilter, source.titleFilter)
+      });
+    }
   }
   for (const source of candidates.slice(0, args.limit)) {
     const key = sourceKey(source);
-    if (key && !merged.has(key)) merged.set(key, source);
+    if (!key) continue;
+    const existing = merged.get(key);
+    if (!existing || String(existing.sourceStrategy || "").startsWith("flex-")) {
+      merged.set(key, source);
+    }
   }
 
   return {
@@ -205,6 +339,7 @@ function renderReport(payload, generatedCandidates) {
   return `# Career Ops Source Flex Report
 
 - Generated at: ${payload.generatedAt}
+- Target markets: ${array(payload.targetMarkets).join(", ") || "-"}
 - Total sources: ${payload.sourceCount}
 - Flex candidates: ${generatedCandidates.length}
 - Search queries: ${payload.searchQueryCount}
@@ -237,11 +372,18 @@ async function main() {
   const existingSources = await readJsonIfExists(args.sources);
   const profile = await readJsonIfExists(args.profile);
   const rules = await readJsonIfExists(args.rules);
+  existingSources.titleFilter = mergeTitleFilters(existingSources.titleFilter, rules.titleFilter);
   const expanded = buildFlexCandidates(existingSources, profile, rules, args);
+  const targetMarkets = uniqueStrings(
+    existingSources.targetMarkets,
+    expanded.sources.map((source) => source.market),
+    expanded.searchQueries.map((query) => query.market)
+  );
   const payload = {
     ...existingSources,
     source: "career-ops-source-flex",
     generatedAt: new Date().toISOString(),
+    targetMarkets,
     sourceCount: expanded.sources.length,
     searchQueryCount: expanded.searchQueries.length,
     sources: expanded.sources,

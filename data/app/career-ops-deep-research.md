@@ -1,27 +1,22 @@
 # Career Ops Deep Research
 
-Generated: 2026-05-15T14:46:00.711Z
+Generated: 2026-05-16T15:20:32.507Z
 Search provider: none
 Queries: 14
-Evidence items: 11
+Evidence items: 6
 Dossiers: 8
 
-## Gogolook - US Market Intern (ScamAdviser)
+## Money Forward - Backend Engineer, Digital Bank
 
-- Score: 85
+- Score: 77
 - Recommendation: 值得投遞
 - Signals: AI / data / platform signal, growth or funding signal, remote or hybrid signal
 
 ### Evidence
-- source-page: https://jobs.lever.co/Gogolook/903b657d-9530-4f59-9dea-e9075163f3e6 — Gogolook - US Market Intern (ScamAdviser) US Market Intern (ScamAdviser) Taipei Marketing / Intern / Hybrid apply for this job About us Gogolook is a leading TrustTech company foun
-- source-page: https://www.gogolook.com/careers — Careers Menu By clicking “Accept”, you agree to the storing of cookies on your device to analyze and enhance site usage. View our Privacy Policy for more information. Preferences D
-- source-page: https://japan-dev.com/jobs/shizuku-ai/shizuku-ai-software-engineer-backend-zvv206 — Software Engineer, Backend at Shizuku AI in Japan | Japan Dev NEWSLETTER Sign Up Dashboard ☰ Search Jobs Company List Blog Found a Job? 🎊 For Employers 日本語 Sign Up My Profile Logo
-- source-page: https://japan-dev.com/jobs/shizuku-ai/shizuku-ai-mlops-engineer-h06e56 — MLOps Engineer at Shizuku AI in Japan | Japan Dev NEWSLETTER Sign Up Dashboard ☰ Search Jobs Company List Blog Found a Job? 🎊 For Employers 日本語 Sign Up My Profile Logout For Emplo
-- source-page: https://japan-dev.com/jobs/pubtex/pubtex-data-engineer-ai-platformdata-infrastructure-utur9e — Data Engineer (AI Platform&#x2F;Data Infrastructure) at PubteX in Japan | Japan Dev NEWSLETTER Sign Up Dashboard ☰ Search Jobs Company List Blog Found a Job? 🎊 For Employers 日本語 S
-- source-page: https://japan-dev.com/jobs/axelspace/axelspace-earth-observation-data-scientist-9s0x5x — Data Scientist &#x2F; ML Engineer at Axelspace in Japan | Japan Dev NEWSLETTER Sign Up Dashboard ☰ Search Jobs Company List Blog Found a Job? 🎊 For Employers 日本語 Sign Up My Profil
+- source-page: https://japan-dev.com/jobs/metanomaly/metanomaly-growth-engineer-saozy2 — Growth Engineer at Metanomaly in Japan | Japan Dev NEWSLETTER Sign Up Dashboard ☰ Search Jobs Company List Blog Found a Job? 🎊 For Employers 日本語 Sign Up My Profile Logout For Empl
 
 ### Research Questions
-- What business unit owns the US Market Intern (ScamAdviser) role?
+- What business unit owns the Backend Engineer, Digital Bank role?
 - What measurable outcomes would this team expect in the first 90 days?
 - What recent company/product signals change the risk or upside?
 - Which CV proof points should be highlighted for this company?
@@ -31,20 +26,19 @@ Dossiers: 8
 - Ask how the company evaluates impact across the first two quarters.
 - Prepare one story that maps directly to the highest-scoring ATS keywords.
 
-## Cardlytics Workday Taiwan - Senior Software Engineer
+## CADDi - Senior SRE, Global Product Team
 
-- Score: 84
+- Score: 77
 - Recommendation: 值得投遞
 - Signals: AI / data / platform signal, growth or funding signal, remote or hybrid signal
 
 ### Evidence
-- source-page: https://cardlytics.wd5.myworkdayjobs.com/CardlyticsExternalCareerSite/job/Taipei-City/Senior-Software-Engineer_JR100384
-- source-page: https://cardlytics.wd5.myworkdayjobs.com/CardlyticsExternalCareerSite
-- source-page: https://japan-dev.com/jobs/shizuku-ai/shizuku-ai-software-engineer-backend-zvv206 — Software Engineer, Backend at Shizuku AI in Japan | Japan Dev NEWSLETTER Sign Up Dashboard ☰ Search Jobs Company List Blog Found a Job? 🎊 For Employers 日本語 Sign Up My Profile Logo
-- source-page: https://japan-dev.com/jobs/shizuku-ai/shizuku-ai-mlops-engineer-h06e56 — MLOps Engineer at Shizuku AI in Japan | Japan Dev NEWSLETTER Sign Up Dashboard ☰ Search Jobs Company List Blog Found a Job? 🎊 For Employers 日本語 Sign Up My Profile Logout For Emplo
+- source-page: https://japan-dev.com/jobs/caddi/caddi-senior-sre-global-product-team-1unsmw — Senior SRE, Global Product Team at CADDi in Japan | Japan Dev NEWSLETTER Sign Up Dashboard ☰ Search Jobs Company List Blog Found a Job? 🎊 For Employers 日本語 Sign Up My Profile Logo
+- source-page: https://japan-dev.com/jobs/geniee/geniee-japan-ai---product-manager-ai-saas-w0yniw — JAPAN AI - Product Manager, AI SaaS at Geniee in Japan | Japan Dev NEWSLETTER Sign Up Dashboard ☰ Search Jobs Company List Blog Found a Job? 🎊 For Employers 日本語 Sign Up My Profile
+- source-page: https://japan-dev.com/jobs/geniee/geniee-japan-airesearch-engineer-llm-d2exun — JAPAN AI - Research Engineer, LLM at Geniee in Japan | Japan Dev NEWSLETTER Sign Up Dashboard ☰ Search Jobs Company List Blog Found a Job? 🎊 For Employers 日本語 Sign Up My Profile L
 
 ### Research Questions
-- What business unit owns the Senior Software Engineer role?
+- What business unit owns the Senior SRE, Global Product Team role?
 - What measurable outcomes would this team expect in the first 90 days?
 - What recent company/product signals change the risk or upside?
 - Which CV proof points should be highlighted for this company?
@@ -54,19 +48,19 @@ Dossiers: 8
 - Ask how the company evaluates impact across the first two quarters.
 - Prepare one story that maps directly to the highest-scoring ATS keywords.
 
-## Shizuku AI - Software Engineer, Backend
+## Metanomaly - Growth Engineer
 
-- Score: 84
+- Score: 76
 - Recommendation: 值得投遞
 - Signals: AI / data / platform signal, growth or funding signal, remote or hybrid signal
 
 ### Evidence
-- source-page: https://cardlytics.wd5.myworkdayjobs.com/CardlyticsExternalCareerSite/job/Taipei-City/Senior-Software-Engineer_JR100384
-- source-page: https://japan-dev.com/jobs/shizuku-ai/shizuku-ai-software-engineer-backend-zvv206 — Software Engineer, Backend at Shizuku AI in Japan | Japan Dev NEWSLETTER Sign Up Dashboard ☰ Search Jobs Company List Blog Found a Job? 🎊 For Employers 日本語 Sign Up My Profile Logo
-- source-page: https://japan-dev.com/jobs/shizuku-ai/shizuku-ai-mlops-engineer-h06e56 — MLOps Engineer at Shizuku AI in Japan | Japan Dev NEWSLETTER Sign Up Dashboard ☰ Search Jobs Company List Blog Found a Job? 🎊 For Employers 日本語 Sign Up My Profile Logout For Emplo
+- source-page: https://japan-dev.com/jobs/metanomaly/metanomaly-growth-engineer-saozy2 — Growth Engineer at Metanomaly in Japan | Japan Dev NEWSLETTER Sign Up Dashboard ☰ Search Jobs Company List Blog Found a Job? 🎊 For Employers 日本語 Sign Up My Profile Logout For Empl
+- source-page: https://japan-dev.com/jobs/geniee/geniee-japan-ai---product-manager-ai-saas-w0yniw — JAPAN AI - Product Manager, AI SaaS at Geniee in Japan | Japan Dev NEWSLETTER Sign Up Dashboard ☰ Search Jobs Company List Blog Found a Job? 🎊 For Employers 日本語 Sign Up My Profile
+- source-page: https://japan-dev.com/jobs/geniee/geniee-japan-airesearch-engineer-llm-d2exun — JAPAN AI - Research Engineer, LLM at Geniee in Japan | Japan Dev NEWSLETTER Sign Up Dashboard ☰ Search Jobs Company List Blog Found a Job? 🎊 For Employers 日本語 Sign Up My Profile L
 
 ### Research Questions
-- What business unit owns the Software Engineer, Backend role?
+- What business unit owns the Growth Engineer role?
 - What measurable outcomes would this team expect in the first 90 days?
 - What recent company/product signals change the risk or upside?
 - Which CV proof points should be highlighted for this company?
@@ -76,18 +70,22 @@ Dossiers: 8
 - Ask how the company evaluates impact across the first two quarters.
 - Prepare one story that maps directly to the highest-scoring ATS keywords.
 
-## Shizuku AI - MLOps Engineer
+## Geniee - JAPAN AI - Product Manager, AI SaaS
 
-- Score: 84
+- Score: 75
 - Recommendation: 值得投遞
 - Signals: AI / data / platform signal, growth or funding signal, remote or hybrid signal
 
 ### Evidence
-- source-page: https://japan-dev.com/jobs/shizuku-ai/shizuku-ai-software-engineer-backend-zvv206 — Software Engineer, Backend at Shizuku AI in Japan | Japan Dev NEWSLETTER Sign Up Dashboard ☰ Search Jobs Company List Blog Found a Job? 🎊 For Employers 日本語 Sign Up My Profile Logo
-- source-page: https://japan-dev.com/jobs/shizuku-ai/shizuku-ai-mlops-engineer-h06e56 — MLOps Engineer at Shizuku AI in Japan | Japan Dev NEWSLETTER Sign Up Dashboard ☰ Search Jobs Company List Blog Found a Job? 🎊 For Employers 日本語 Sign Up My Profile Logout For Emplo
+- source-page: https://japan-dev.com/jobs/caddi/caddi-senior-sre-global-product-team-1unsmw — Senior SRE, Global Product Team at CADDi in Japan | Japan Dev NEWSLETTER Sign Up Dashboard ☰ Search Jobs Company List Blog Found a Job? 🎊 For Employers 日本語 Sign Up My Profile Logo
+- source-page: https://japan-dev.com/jobs/metanomaly/metanomaly-growth-engineer-saozy2 — Growth Engineer at Metanomaly in Japan | Japan Dev NEWSLETTER Sign Up Dashboard ☰ Search Jobs Company List Blog Found a Job? 🎊 For Employers 日本語 Sign Up My Profile Logout For Empl
+- source-page: https://japan-dev.com/jobs/geniee/geniee-japan-ai---product-manager-ai-saas-w0yniw — JAPAN AI - Product Manager, AI SaaS at Geniee in Japan | Japan Dev NEWSLETTER Sign Up Dashboard ☰ Search Jobs Company List Blog Found a Job? 🎊 For Employers 日本語 Sign Up My Profile
+- source-page: https://japan-dev.com/jobs/ai-robot-association/ai-robot-association-airoa-full-stack-engineer-sliy8x — Full Stack Engineer at AI Robot Association (AIRoA) in Japan | Japan Dev NEWSLETTER Sign Up Dashboard ☰ Search Jobs Company List Blog Found a Job? 🎊 For Employers 日本語 Sign Up My P
+- source-page: https://japan-dev.com/jobs/geniee/geniee-japan-airesearch-engineer-llm-d2exun — JAPAN AI - Research Engineer, LLM at Geniee in Japan | Japan Dev NEWSLETTER Sign Up Dashboard ☰ Search Jobs Company List Blog Found a Job? 🎊 For Employers 日本語 Sign Up My Profile L
+- source-page: https://japan-dev.com/jobs/mode/mode-software-engineer-engineering-foundation-1b7ub5 — Software Engineer (Engineering Foundation) at MODE in Japan | Japan Dev NEWSLETTER Sign Up Dashboard ☰ Search Jobs Company List Blog Found a Job? 🎊 For Employers 日本語 Sign Up My Pr
 
 ### Research Questions
-- What business unit owns the MLOps Engineer role?
+- What business unit owns the JAPAN AI - Product Manager, AI SaaS role?
 - What measurable outcomes would this team expect in the first 90 days?
 - What recent company/product signals change the risk or upside?
 - Which CV proof points should be highlighted for this company?
@@ -97,21 +95,22 @@ Dossiers: 8
 - Ask how the company evaluates impact across the first two quarters.
 - Prepare one story that maps directly to the highest-scoring ATS keywords.
 
-## PubteX - Data Engineer (AI Platform/Data Infrastructure)
+## AI Robot Association (AIRoA) - Full Stack Engineer
 
-- Score: 84
+- Score: 75
 - Recommendation: 值得投遞
 - Signals: AI / data / platform signal, growth or funding signal, remote or hybrid signal
 
 ### Evidence
-- source-page: https://jobs.lever.co/Gogolook/903b657d-9530-4f59-9dea-e9075163f3e6 — Gogolook - US Market Intern (ScamAdviser) US Market Intern (ScamAdviser) Taipei Marketing / Intern / Hybrid apply for this job About us Gogolook is a leading TrustTech company foun
-- source-page: https://www.gogolook.com/careers — Careers Menu By clicking “Accept”, you agree to the storing of cookies on your device to analyze and enhance site usage. View our Privacy Policy for more information. Preferences D
-- source-page: https://japan-dev.com/jobs/shizuku-ai/shizuku-ai-mlops-engineer-h06e56 — MLOps Engineer at Shizuku AI in Japan | Japan Dev NEWSLETTER Sign Up Dashboard ☰ Search Jobs Company List Blog Found a Job? 🎊 For Employers 日本語 Sign Up My Profile Logout For Emplo
-- source-page: https://japan-dev.com/jobs/pubtex/pubtex-data-engineer-ai-platformdata-infrastructure-utur9e — Data Engineer (AI Platform&#x2F;Data Infrastructure) at PubteX in Japan | Japan Dev NEWSLETTER Sign Up Dashboard ☰ Search Jobs Company List Blog Found a Job? 🎊 For Employers 日本語 S
-- source-page: https://japan-dev.com/jobs/axelspace/axelspace-earth-observation-data-scientist-9s0x5x — Data Scientist &#x2F; ML Engineer at Axelspace in Japan | Japan Dev NEWSLETTER Sign Up Dashboard ☰ Search Jobs Company List Blog Found a Job? 🎊 For Employers 日本語 Sign Up My Profil
+- source-page: https://japan-dev.com/jobs/caddi/caddi-senior-sre-global-product-team-1unsmw — Senior SRE, Global Product Team at CADDi in Japan | Japan Dev NEWSLETTER Sign Up Dashboard ☰ Search Jobs Company List Blog Found a Job? 🎊 For Employers 日本語 Sign Up My Profile Logo
+- source-page: https://japan-dev.com/jobs/metanomaly/metanomaly-growth-engineer-saozy2 — Growth Engineer at Metanomaly in Japan | Japan Dev NEWSLETTER Sign Up Dashboard ☰ Search Jobs Company List Blog Found a Job? 🎊 For Employers 日本語 Sign Up My Profile Logout For Empl
+- source-page: https://japan-dev.com/jobs/geniee/geniee-japan-ai---product-manager-ai-saas-w0yniw — JAPAN AI - Product Manager, AI SaaS at Geniee in Japan | Japan Dev NEWSLETTER Sign Up Dashboard ☰ Search Jobs Company List Blog Found a Job? 🎊 For Employers 日本語 Sign Up My Profile
+- source-page: https://japan-dev.com/jobs/ai-robot-association/ai-robot-association-airoa-full-stack-engineer-sliy8x — Full Stack Engineer at AI Robot Association (AIRoA) in Japan | Japan Dev NEWSLETTER Sign Up Dashboard ☰ Search Jobs Company List Blog Found a Job? 🎊 For Employers 日本語 Sign Up My P
+- source-page: https://japan-dev.com/jobs/geniee/geniee-japan-airesearch-engineer-llm-d2exun — JAPAN AI - Research Engineer, LLM at Geniee in Japan | Japan Dev NEWSLETTER Sign Up Dashboard ☰ Search Jobs Company List Blog Found a Job? 🎊 For Employers 日本語 Sign Up My Profile L
+- source-page: https://japan-dev.com/jobs/mode/mode-software-engineer-engineering-foundation-1b7ub5 — Software Engineer (Engineering Foundation) at MODE in Japan | Japan Dev NEWSLETTER Sign Up Dashboard ☰ Search Jobs Company List Blog Found a Job? 🎊 For Employers 日本語 Sign Up My Pr
 
 ### Research Questions
-- What business unit owns the Data Engineer (AI Platform/Data Infrastructure) role?
+- What business unit owns the Full Stack Engineer role?
 - What measurable outcomes would this team expect in the first 90 days?
 - What recent company/product signals change the risk or upside?
 - Which CV proof points should be highlighted for this company?
@@ -121,21 +120,22 @@ Dossiers: 8
 - Ask how the company evaluates impact across the first two quarters.
 - Prepare one story that maps directly to the highest-scoring ATS keywords.
 
-## Axelspace - Data Scientist / ML Engineer
+## Geniee - JAPAN AI - Research Engineer, LLM
 
-- Score: 84
+- Score: 75
 - Recommendation: 值得投遞
 - Signals: AI / data / platform signal, growth or funding signal, remote or hybrid signal
 
 ### Evidence
-- source-page: https://jobs.lever.co/Gogolook/903b657d-9530-4f59-9dea-e9075163f3e6 — Gogolook - US Market Intern (ScamAdviser) US Market Intern (ScamAdviser) Taipei Marketing / Intern / Hybrid apply for this job About us Gogolook is a leading TrustTech company foun
-- source-page: https://www.gogolook.com/careers — Careers Menu By clicking “Accept”, you agree to the storing of cookies on your device to analyze and enhance site usage. View our Privacy Policy for more information. Preferences D
-- source-page: https://japan-dev.com/jobs/shizuku-ai/shizuku-ai-mlops-engineer-h06e56 — MLOps Engineer at Shizuku AI in Japan | Japan Dev NEWSLETTER Sign Up Dashboard ☰ Search Jobs Company List Blog Found a Job? 🎊 For Employers 日本語 Sign Up My Profile Logout For Emplo
-- source-page: https://japan-dev.com/jobs/pubtex/pubtex-data-engineer-ai-platformdata-infrastructure-utur9e — Data Engineer (AI Platform&#x2F;Data Infrastructure) at PubteX in Japan | Japan Dev NEWSLETTER Sign Up Dashboard ☰ Search Jobs Company List Blog Found a Job? 🎊 For Employers 日本語 S
-- source-page: https://japan-dev.com/jobs/axelspace/axelspace-earth-observation-data-scientist-9s0x5x — Data Scientist &#x2F; ML Engineer at Axelspace in Japan | Japan Dev NEWSLETTER Sign Up Dashboard ☰ Search Jobs Company List Blog Found a Job? 🎊 For Employers 日本語 Sign Up My Profil
+- source-page: https://japan-dev.com/jobs/caddi/caddi-senior-sre-global-product-team-1unsmw — Senior SRE, Global Product Team at CADDi in Japan | Japan Dev NEWSLETTER Sign Up Dashboard ☰ Search Jobs Company List Blog Found a Job? 🎊 For Employers 日本語 Sign Up My Profile Logo
+- source-page: https://japan-dev.com/jobs/metanomaly/metanomaly-growth-engineer-saozy2 — Growth Engineer at Metanomaly in Japan | Japan Dev NEWSLETTER Sign Up Dashboard ☰ Search Jobs Company List Blog Found a Job? 🎊 For Employers 日本語 Sign Up My Profile Logout For Empl
+- source-page: https://japan-dev.com/jobs/geniee/geniee-japan-ai---product-manager-ai-saas-w0yniw — JAPAN AI - Product Manager, AI SaaS at Geniee in Japan | Japan Dev NEWSLETTER Sign Up Dashboard ☰ Search Jobs Company List Blog Found a Job? 🎊 For Employers 日本語 Sign Up My Profile
+- source-page: https://japan-dev.com/jobs/ai-robot-association/ai-robot-association-airoa-full-stack-engineer-sliy8x — Full Stack Engineer at AI Robot Association (AIRoA) in Japan | Japan Dev NEWSLETTER Sign Up Dashboard ☰ Search Jobs Company List Blog Found a Job? 🎊 For Employers 日本語 Sign Up My P
+- source-page: https://japan-dev.com/jobs/geniee/geniee-japan-airesearch-engineer-llm-d2exun — JAPAN AI - Research Engineer, LLM at Geniee in Japan | Japan Dev NEWSLETTER Sign Up Dashboard ☰ Search Jobs Company List Blog Found a Job? 🎊 For Employers 日本語 Sign Up My Profile L
+- source-page: https://japan-dev.com/jobs/mode/mode-software-engineer-engineering-foundation-1b7ub5 — Software Engineer (Engineering Foundation) at MODE in Japan | Japan Dev NEWSLETTER Sign Up Dashboard ☰ Search Jobs Company List Blog Found a Job? 🎊 For Employers 日本語 Sign Up My Pr
 
 ### Research Questions
-- What business unit owns the Data Scientist / ML Engineer role?
+- What business unit owns the JAPAN AI - Research Engineer, LLM role?
 - What measurable outcomes would this team expect in the first 90 days?
 - What recent company/product signals change the risk or upside?
 - Which CV proof points should be highlighted for this company?
@@ -145,19 +145,19 @@ Dossiers: 8
 - Ask how the company evaluates impact across the first two quarters.
 - Prepare one story that maps directly to the highest-scoring ATS keywords.
 
-## Intel Workday Taiwan - Intel Foundry Advanced Device Development Engineer
+## Money Forward - Senior Software Engineer, Money Forward Cloud, Fukuoka
 
-- Score: 84
+- Score: 75
 - Recommendation: 值得投遞
-- Signals: No strong signal detected
+- Signals: AI / data / platform signal, growth or funding signal, remote or hybrid signal
 
 ### Evidence
-- source-page: https://intel.wd1.myworkdayjobs.com/External/job/Taiwan-Taipei/Intel-Foundry-Advanced-Device-Development-Engineer_JR0281657
-- source-page: https://intel.wd1.myworkdayjobs.com/External
-- source-page: https://intel.wd1.myworkdayjobs.com/External/job/Taiwan-Taipei/Network-Systems-and-Solutions-Engineer_JR0281554
+- source-page: https://japan-dev.com/jobs/caddi/caddi-senior-sre-global-product-team-1unsmw — Senior SRE, Global Product Team at CADDi in Japan | Japan Dev NEWSLETTER Sign Up Dashboard ☰ Search Jobs Company List Blog Found a Job? 🎊 For Employers 日本語 Sign Up My Profile Logo
+- source-page: https://japan-dev.com/jobs/geniee/geniee-japan-ai---product-manager-ai-saas-w0yniw — JAPAN AI - Product Manager, AI SaaS at Geniee in Japan | Japan Dev NEWSLETTER Sign Up Dashboard ☰ Search Jobs Company List Blog Found a Job? 🎊 For Employers 日本語 Sign Up My Profile
+- source-page: https://japan-dev.com/jobs/geniee/geniee-japan-airesearch-engineer-llm-d2exun — JAPAN AI - Research Engineer, LLM at Geniee in Japan | Japan Dev NEWSLETTER Sign Up Dashboard ☰ Search Jobs Company List Blog Found a Job? 🎊 For Employers 日本語 Sign Up My Profile L
 
 ### Research Questions
-- What business unit owns the Intel Foundry Advanced Device Development Engineer role?
+- What business unit owns the Senior Software Engineer, Money Forward Cloud, Fukuoka role?
 - What measurable outcomes would this team expect in the first 90 days?
 - What recent company/product signals change the risk or upside?
 - Which CV proof points should be highlighted for this company?
@@ -167,20 +167,18 @@ Dossiers: 8
 - Ask how the company evaluates impact across the first two quarters.
 - Prepare one story that maps directly to the highest-scoring ATS keywords.
 
-## Intel Workday Taiwan - Network Systems and Solutions Engineer
+## MODE - Software Engineer (Engineering Foundation)
 
-- Score: 84
+- Score: 75
 - Recommendation: 值得投遞
-- Signals: AI / data / platform signal
+- Signals: AI / data / platform signal, growth or funding signal, remote or hybrid signal
 
 ### Evidence
-- source-page: https://www.gogolook.com/careers — Careers Menu By clicking “Accept”, you agree to the storing of cookies on your device to analyze and enhance site usage. View our Privacy Policy for more information. Preferences D
-- source-page: https://intel.wd1.myworkdayjobs.com/External/job/Taiwan-Taipei/Intel-Foundry-Advanced-Device-Development-Engineer_JR0281657
-- source-page: https://intel.wd1.myworkdayjobs.com/External
-- source-page: https://intel.wd1.myworkdayjobs.com/External/job/Taiwan-Taipei/Network-Systems-and-Solutions-Engineer_JR0281554
+- source-page: https://japan-dev.com/jobs/ai-robot-association/ai-robot-association-airoa-full-stack-engineer-sliy8x — Full Stack Engineer at AI Robot Association (AIRoA) in Japan | Japan Dev NEWSLETTER Sign Up Dashboard ☰ Search Jobs Company List Blog Found a Job? 🎊 For Employers 日本語 Sign Up My P
+- source-page: https://japan-dev.com/jobs/mode/mode-software-engineer-engineering-foundation-1b7ub5 — Software Engineer (Engineering Foundation) at MODE in Japan | Japan Dev NEWSLETTER Sign Up Dashboard ☰ Search Jobs Company List Blog Found a Job? 🎊 For Employers 日本語 Sign Up My Pr
 
 ### Research Questions
-- What business unit owns the Network Systems and Solutions Engineer role?
+- What business unit owns the Software Engineer (Engineering Foundation) role?
 - What measurable outcomes would this team expect in the first 90 days?
 - What recent company/product signals change the risk or upside?
 - Which CV proof points should be highlighted for this company?
@@ -189,4 +187,9 @@ Dossiers: 8
 - Ask about team success metrics and why the role is open.
 - Ask how the company evaluates impact across the first two quarters.
 - Prepare one story that maps directly to the highest-scoring ATS keywords.
+
+## Errors
+
+- https://www.tokyodev.com/companies/moneyforward/jobs/backend-engineer-digital-bank: HTTP 403
+- https://www.tokyodev.com/companies/moneyforward/jobs/senior-software-engineer-money-forward-cloud-fukuoka-af677db1-c2cb-4d86-886c-cd77430ad611: HTTP 403
 

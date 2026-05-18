@@ -1,78 +1,107 @@
-# Career Ops Intelligence Report
+# Career Ops Intelligence Report (v2 — 6D + Block G)
 
-Generated: 2026-05-15T14:45:54.931Z
+Generated: 2026-05-18T12:33:44.279Z
 
-- Active jobs: 276
-- Expired jobs: 276
-- Duplicate groups: 36
-- Jobs without enough description: 136
+- Active jobs: 92789
+- Expired jobs: 304
+- Duplicate groups: 3331
+- Jobs without enough description: 405
 - Rubric: Career Ops 10-Dimension Rubric
 
-## Rubric Weights
-- profileMatch: 0.2
-- atsCoverage: 0.14
-- roleFit: 0.12
-- seniorityFit: 0.08
-- locationFit: 0.08
-- sourceQuality: 0.08
-- freshness: 0.08
-- compensationSignal: 0.04
-- growthSignal: 0.1
-- applicationEffort: 0.08
+## Scoring Model (6 Dimensions + Block G)
+- cvMatch: 0.25
+- northStar: 0.2
+- compensation: 0.15
+- culture: 0.15
+- redFlags: 0.15
+- effort: 0.1
+
+## Block G Legitimacy Summary
+- High Confidence: 92998
+- Proceed with Caution: 95
+- Suspicious: 0
 
 ## Top Skills
-- growth: 40
-- operations: 31
-- python: 30
-- aws: 24
-- gcp: 16
-- agents: 15
-- docker: 15
-- terraform: 15
-- go: 14
-- react: 14
-- deep learning: 13
-- typescript: 13
+- api: 6692
+- growth: 4057
+- operations: 3736
+- analytics: 2967
+- sales: 2620
+- python: 2023
+- go: 1746
+- sql: 1402
+- excel: 1202
+- aws: 1029
+- machine learning: 866
+- azure: 811
 
 ## Missing High-Demand Skills
-- growth: 40
-- operations: 31
-- python: 30
-- aws: 24
-- gcp: 16
-- agents: 15
-- docker: 15
-- terraform: 15
-- go: 14
-- deep learning: 13
+- growth: 4057
+- python: 2023
+- go: 1746
+- sql: 1402
+- excel: 1202
+- aws: 1029
+- machine learning: 866
+- azure: 811
+- java: 759
+- spark: 591
 
 ## Role Families
-- Other: 142
-- Backend: 53
-- AI / Data: 32
-- Frontend: 24
-- Operations: 8
-- Design: 6
-- Internship: 5
-- Marketing: 3
-- Product: 2
-- Full Stack: 1
+- Backend: 88092
+- Other: 2341
+- Frontend: 701
+- AI / Data: 583
+- Sales: 458
+- Design: 197
+- Marketing: 166
+- Operations: 121
+- Product: 75
+- Internship: 43
+
+## Market Coverage
+- cn: 31568
+- jp: 30580
+- tw: 21341
+- us: 3728
+- global: 2767
+- in: 681
+- sg: 273
+- ca: 264
+- uk: 262
+- ie: 168
+- fr: 137
+- au: 136
+- br: 121
+- mx: 120
+- de: 119
+- pl: 102
+- nl: 86
+- kr: 53
+- es: 49
+- my: 35
+- il: 29
+- ch: 27
+- ph: 26
+- se: 23
 
 ## Recommended Search Queries
+- Senior Frontend Engineer
 - Frontend Engineer
 - Product Engineer
+- Senior Product Engineer
+- Frontend Platform Engineer
 - Full Stack Engineer
 - JavaScript
+- TypeScript
 - React
-- CSS
-- Accessibility
-- Analytics
-- API
-- remote
-- dashboard
+- Next.js
+- Vue
+- Nuxt
+- Svelte
+- Node.js
 - growth
-- operations
 - python
-- aws
-- gcp
+- go
+- sql
 

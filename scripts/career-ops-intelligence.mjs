@@ -28,6 +28,19 @@ const SKILL_TERMS = [
 
 const GROWTH_TERMS = ["scale", "scalable", "growth", "0-1", "startup", "founding", "ownership", "lead", "platform", "data", "ai", "llm", "automation", "成長", "新創", "平台", "資料", "自動化"];
 const RISK_TERMS = ["unpaid", "commission-only", "volunteer", "internship unpaid", "must be local", "on-site only", "無薪", "純抽成", "責任制"];
+const LEGITIMACY_RED = ["apply now via whatsapp", "wire transfer", "send bank", "advance fee", "buy equipment", "training fee", "deposit required", "salary upfront", "whatsapp only", "telegram only"];
+const LEGITIMACY_YELLOW = ["work from home guaranteed", "no experience needed", "earn up to", "must pay", "no interview", "quick hire"];
+const COMP_TERMS = ["salary", "compensation", "薪資", "薪水", "待遇", "年薪", "月薪"];
+
+// career-ops v2: 6 named dimensions + Block G
+const DIM_WEIGHTS_V2 = {
+  cvMatch:      0.25,
+  northStar:    0.20,
+  compensation: 0.15,
+  culture:      0.15,
+  redFlags:     0.15,
+  effort:       0.10,
+};
 
 function printHelp() {
   console.log(`Career Ops intelligence layer
@@ -178,24 +191,22 @@ function extractSkills(job) {
 
 function normalizeRubric(rubric) {
   const dimensions = Array.isArray(rubric?.dimensions) ? rubric.dimensions : [];
-  const weights = new Map();
+  const fallbackWeights = {
+    cvMatch:      0.25,
+    northStar:    0.20,
+    compensation: 0.15,
+    culture:      0.15,
+    redFlags:     0.15,
+    effort:       0.10,
+  };
+  const weights = new Map(Object.entries(fallbackWeights));
   for (const dimension of dimensions) {
     const key = String(dimension?.key || "").trim();
     const weight = Number(dimension?.weight);
-    if (key && Number.isFinite(weight)) weights.set(key, weight);
+    if (key && Object.prototype.hasOwnProperty.call(fallbackWeights, key) && Number.isFinite(weight)) {
+      weights.set(key, weight);
+    }
   }
-  const fallbackWeights = {
-    profileMatch: 0.22,
-    atsCoverage: 0.16,
-    roleFit: 0.14,
-    seniorityFit: 0.08,
-    locationFit: 0.1,
-    sourceQuality: 0.08,
-    freshness: 0.08,
-    compensationSignal: 0.04,
-    growthSignal: 0.08,
-    applicationEffort: 0.02
-  };
   const gradeThresholds = rubric?.gradeThresholds && typeof rubric.gradeThresholds === "object"
     ? rubric.gradeThresholds
     : { A: 85, B: 72, C: 58, D: 42, F: 0 };
@@ -205,17 +216,14 @@ function normalizeRubric(rubric) {
       .filter((item) => item.label)
       .sort((a, b) => b.minScore - a.minScore)
     : [
-      { minScore: 82, label: "強烈投遞" },
+      { minScore: 80, label: "強烈投遞" },
       { minScore: 70, label: "值得投遞" },
       { minScore: 56, label: "觀望" },
       { minScore: 0, label: "略過" }
     ];
   return {
     name: String(rubric?.name || "Career Ops default rubric").trim(),
-    weights: {
-      ...fallbackWeights,
-      ...Object.fromEntries(weights.entries())
-    },
+    weights: Object.fromEntries(weights.entries()),
     gradeThresholds,
     recommendations
   };
@@ -240,65 +248,132 @@ function weightedScore(dimensions, rubric) {
   return Math.round(total - Number(dimensions.riskPenalty || 0));
 }
 
-function scoreJob(job, profile, corpusSkillCounts, rubric) {
-  const text = `${job.title || ""}\n${job.company || ""}\n${job.location || ""}\n${job.description || ""}\n${job.employmentType || ""}`;
-  const skills = extractSkills(job);
-  const profileSkills = profile.skills.filter((skill) => includesTerm(text, skill));
-  const missingProfileSkills = profile.skills.filter((skill) => !includesTerm(text, skill)).slice(0, 12);
-  const targetRoleHits = profile.targetRoles.filter((role) => includesTerm(`${job.title} ${job.description}`, role));
-  const locationHits = profile.preferredLocations.filter((location) => includesTerm(job.location || text, location));
-  const companyHits = profile.preferredCompanies.filter((company) => includesTerm(job.company, company));
-  const avoidHits = [...profile.avoidKeywords, ...RISK_TERMS].filter((term) => includesTerm(text, term));
-  const rareHighValueSkills = skills.filter((skill) => (corpusSkillCounts.get(skill) || 0) <= 2).slice(0, 8);
-  const family = roleFamily(job);
-  const level = seniority(job);
-  const mode = workMode(job);
+// ── Block G legitimacy ──────────────────────────────────────────────────────
+function computeBlockG(job) {
+  const text = `${job.title || ""} ${job.company || ""} ${job.description || ""}`.toLowerCase();
+  const url  = String(job.url || "").toLowerCase();
+  const redHits    = LEGITIMACY_RED.filter((t) => text.includes(t));
+  const yellowHits = LEGITIMACY_YELLOW.filter((t) => text.includes(t));
+  const noUrl      = !job.url;
+  const suspiciousDomain = url && !/(greenhouse|lever|ashby|workable|bamboohr|smartrecruiters|indeed|linkedin|104|yourator|cakeresume)/i.test(url);
+  if (redHits.length >= 2 || (redHits.length >= 1 && noUrl)) {
+    return { tier: "Suspicious", confidence: "low", redHits, yellowHits };
+  }
+  if (redHits.length === 1 || yellowHits.length >= 2 || (noUrl && yellowHits.length >= 1) || (suspiciousDomain && yellowHits.length >= 1)) {
+    return { tier: "Proceed with Caution", confidence: "medium", redHits, yellowHits };
+  }
+  return { tier: "High Confidence", confidence: "high", redHits, yellowHits };
+}
 
-  const profileMatch = Math.min(100, profileSkills.length * 14 + targetRoleHits.length * 18 + companyHits.length * 10);
-  const atsCoverage = profile.skills.length ? Math.round((profileSkills.length / profile.skills.length) * 100) : Math.min(100, skills.length * 12);
-  const roleFit = targetRoleHits.length ? 92 : profile.role && includesTerm(`${job.title} ${job.description}`, profile.role) ? 86 : family === "Other" ? 45 : 68;
-  const seniorityFit = level === "Intern" && !/intern|實習/i.test(profile.role) ? 55 : level === "Senior+" ? 70 : 82;
-  const locationFit = locationHits.length || (profile.remote && mode === "Remote") ? 95 : mode === "Remote" ? 82 : profile.preferredLocations.length ? 58 : 70;
-  const sourceQuality = /^adapter:/i.test(job.sourceType || "") ? 90 : job.sourceType === "json-ld" ? 78 : job.description?.length > 800 ? 72 : 55;
-  const freshness = job.isExpired ? 0 : job.isNew ? 95 : job.datePosted ? 76 : 64;
-  const compensationSignal = /(salary|compensation|薪資|待遇|\$|nt\$|twd)/i.test(text) ? 78 : 52;
-  const growthSignal = Math.min(100, 48 + GROWTH_TERMS.filter((term) => includesTerm(text, term)).length * 9 + rareHighValueSkills.length * 4);
-  const applicationEffort = job.url ? (job.description?.length > 800 ? 86 : 72) : 48;
-  const riskPenalty = Math.min(45, avoidHits.length * 15 + (job.isExpired ? 40 : 0) + (job.description?.length < 120 ? 12 : 0));
-  const dimensions = {
-    profileMatch,
-    atsCoverage,
-    roleFit,
-    seniorityFit,
-    locationFit,
-    sourceQuality,
-    freshness,
-    compensationSignal,
-    growthSignal,
-    applicationEffort,
-    riskPenalty
+// ── 6-dimension score (career-ops v2 model) ─────────────────────────────────
+function score6D(job, profile, corpusSkillCounts) {
+  const text = `${job.title || ""}\n${job.company || ""}\n${job.location || ""}\n${job.description || ""}\n${job.employmentType || ""}`;
+  const skills           = extractSkills(job);
+  const profileSkills    = profile.skills.filter((s) => includesTerm(text, s));
+  const missingProfileSkills = profile.skills.filter((s) => !includesTerm(text, s)).slice(0, 12);
+  const targetRoleHits   = profile.targetRoles.filter((r) => includesTerm(`${job.title} ${job.description}`, r));
+  const locationHits     = profile.preferredLocations.filter((l) => includesTerm(job.location || text, l));
+  const companyHits      = profile.preferredCompanies.filter((c) => includesTerm(job.company, c));
+  const avoidHits        = [...profile.avoidKeywords, ...RISK_TERMS].filter((t) => includesTerm(text, t));
+  const rareHighValueSkills = skills.filter((s) => (corpusSkillCounts.get(s) || 0) <= 2).slice(0, 8);
+  const family   = roleFamily(job);
+  const level    = seniority(job);
+  const mode     = workMode(job);
+  const growthHits = GROWTH_TERMS.filter((t) => includesTerm(text, t));
+
+  // --- dim: CV Match ---
+  const atsRaw     = profile.skills.length ? Math.round((profileSkills.length / profile.skills.length) * 100) : Math.min(100, skills.length * 12);
+  const profileRaw = Math.min(100, profileSkills.length * 14 + targetRoleHits.length * 18 + companyHits.length * 10);
+  const cvMatchScore = Math.round((atsRaw * 0.45 + profileRaw * 0.55));
+
+  // --- dim: North Star ---
+  const roleFitRaw = targetRoleHits.length ? 92 : profile.role && includesTerm(`${job.title} ${job.description}`, profile.role) ? 86 : family === "Other" ? 45 : 68;
+  const senFitRaw  = level === "Intern" && !/intern|實習/i.test(profile.role) ? 55 : level === "Senior+" ? 70 : 82;
+  const northStarScore = Math.round(roleFitRaw * 0.65 + senFitRaw * 0.35);
+
+  // --- dim: Compensation ---
+  const hasSalary = COMP_TERMS.some((t) => new RegExp(t, "i").test(text));
+  const hasRange  = /\d/.test(String(job.salary || job.compensation || ""));
+  const compensationScore = hasSalary ? (hasRange ? 90 : 72) : 45;
+
+  // --- dim: Culture Signals ---
+  const freshness       = job.isExpired ? 0 : job.isNew ? 95 : job.datePosted ? 76 : 64;
+  const locationFitRaw  = locationHits.length || (profile.remote && mode === "Remote") ? 95 : mode === "Remote" ? 82 : profile.preferredLocations.length ? 58 : 70;
+  const growthRaw       = Math.min(100, 48 + growthHits.length * 9 + rareHighValueSkills.length * 4);
+  const cultureScore    = Math.round(freshness * 0.35 + locationFitRaw * 0.30 + growthRaw * 0.35);
+
+  // --- dim: Red Flags (inverted: 100 = clean) ---
+  const riskHits    = RISK_TERMS.filter((t) => includesTerm(text, t));
+  const riskPenalty = Math.min(80, avoidHits.length * 12 + riskHits.length * 18 + (job.isExpired ? 40 : 0) + (job.description?.length < 120 ? 15 : 0));
+  const redFlagsScore = Math.max(0, 100 - riskPenalty);
+
+  // --- dim: Application Effort ---
+  const sourceQ  = /^adapter:/i.test(job.sourceType || "") ? 90 : job.sourceType === "json-ld" ? 78 : job.description?.length > 800 ? 72 : 55;
+  const effortScore = Math.round((job.url ? (job.description?.length > 800 ? 88 : 72) : 48) * 0.5 + sourceQ * 0.5);
+
+  const dim6 = {
+    cvMatch:      { score: cvMatchScore,      grade: grade6D(cvMatchScore),      label: "CV Match",                   profileSkillHits: profileSkills, atsCoverage: atsRaw },
+    northStar:    { score: northStarScore,    grade: grade6D(northStarScore),    label: "North Star Alignment",       targetRoleHits, roleFit: roleFitRaw },
+    compensation: { score: compensationScore, grade: grade6D(compensationScore), label: "Compensation Competitiveness", hasSalary, hasRange },
+    culture:      { score: cultureScore,      grade: grade6D(cultureScore),      label: "Culture Signals",            growthHits, workMode: mode },
+    redFlags:     { score: redFlagsScore,     grade: grade6D(redFlagsScore),     label: "Red Flags",                  avoidHits, riskHits },
+    effort:       { score: effortScore,       grade: grade6D(effortScore),       label: "Application Effort" },
   };
-  const weighted = weightedScore(dimensions, rubric);
-  const score = Math.max(0, Math.min(100, weighted));
-  const grade = gradeFromScore(score, rubric.gradeThresholds);
-  const recommendation = recommendationFromScore(score, rubric.recommendations);
+
+  const rawScore = Math.round(
+    cvMatchScore      * DIM_WEIGHTS_V2.cvMatch      +
+    northStarScore    * DIM_WEIGHTS_V2.northStar     +
+    compensationScore * DIM_WEIGHTS_V2.compensation  +
+    cultureScore      * DIM_WEIGHTS_V2.culture       +
+    redFlagsScore     * DIM_WEIGHTS_V2.redFlags      +
+    effortScore       * DIM_WEIGHTS_V2.effort
+  );
+  const score  = Math.max(0, Math.min(100, rawScore));
+  const rating = Math.round(((score / 100) * 4 + 1) * 10) / 10;
 
   return {
     score,
-    grade,
-    recommendation,
+    rating,
+    grade: gradeFromScore(score, { A: 85, B: 72, C: 58, D: 42, F: 0 }),
+    recommendation: score >= 80 ? "強烈投遞" : score >= 70 ? "值得投遞" : score >= 56 ? "觀望" : "略過",
     features: {
       roleFamily: family,
-      seniority: level,
-      workMode: mode,
+      seniority:  level,
+      workMode:   mode,
       skills,
       profileSkillHits: profileSkills,
       missingProfileSkills,
       rareHighValueSkills,
       locationHits,
-      avoidHits
+      avoidHits,
     },
-    dimensions
+    dimensions: dim6,
+    blockG: computeBlockG(job),
+  };
+}
+
+function grade6D(score) {
+  if (score >= 87) return "A";
+  if (score >= 74) return "B";
+  if (score >= 60) return "C";
+  if (score >= 44) return "D";
+  return "F";
+}
+
+function scoreJob(job, profile, corpusSkillCounts, rubric) {
+  // Use 6D model; rubric is kept for gradeThresholds / recommendations override
+  const result = score6D(job, profile, corpusSkillCounts);
+
+  // Allow rubric overrides for grade thresholds
+  const thresholds = rubric?.gradeThresholds || { A: 85, B: 72, C: 58, D: 42, F: 0 };
+  const recs = Array.isArray(rubric?.recommendations) && rubric.recommendations.length
+    ? rubric.recommendations
+    : [{ minScore: 80, label: "強烈投遞" }, { minScore: 70, label: "值得投遞" }, { minScore: 56, label: "觀望" }, { minScore: 0, label: "略過" }];
+
+  return {
+    ...result,
+    grade: gradeFromScore(result.score, thresholds),
+    recommendation: recommendationFromScore(result.score, recs),
   };
 }
 
@@ -364,6 +439,8 @@ function buildInsights(jobs, profile, duplicateGroups, rubric) {
     roleFamilies: countBy(active, roleFamily).slice(0, 10),
     seniority: countBy(active, seniority),
     workModes: countBy(active, workMode),
+    markets: countBy(active, (job) => job.sourceMarket || job.market || job.countryCode || "Unknown").slice(0, 24),
+    countries: countBy(active, (job) => job.country || job.countryCode || job.sourceCountry || "Unknown").slice(0, 24),
     locations: countBy(active, (job) => String(job.location || "Unknown").split(/[\/,]/)[0].trim() || "Unknown").slice(0, 12),
     sources: countBy(active, (job) => job.source || job.sourceType || "Unknown").slice(0, 12),
     recommendations: countBy(active, (job) => job.recommendation || "待評估"),
@@ -384,35 +461,50 @@ function buildInsights(jobs, profile, duplicateGroups, rubric) {
 
 function enrichJob(job, intelligence) {
   const next = { ...job, intelligence };
-  if (next.score === undefined || next.score === "" || next.evaluation?.source === "career-ops-evaluate-heuristic") {
-    next.score = intelligence.score;
-    next.grade = intelligence.grade;
+  const shouldOverwrite = next.score === undefined || next.score === ""
+    || next.evaluation?.source === "career-ops-evaluate-heuristic"
+    || next.evaluation?.source === "career-ops-evaluate-v2";
+  if (shouldOverwrite) {
+    next.score  = intelligence.score;
+    next.rating = intelligence.rating;
+    next.grade  = intelligence.grade;
     next.recommendation = intelligence.recommendation;
     next.status = next.status && next.status !== "待評估" ? next.status : intelligence.recommendation;
     next.evaluatedAt = new Date().toISOString();
+    next.blockG  = intelligence.blockG;
+    next.dimensions = intelligence.dimensions;
+    const dims6 = intelligence.dimensions || {};
+    const f = intelligence.features || {};
     next.evaluation = {
-      source: "career-ops-intelligence",
+      source: "career-ops-intelligence-v2",
       overall: {
         grade: intelligence.grade,
         score: intelligence.score,
+        rating: intelligence.rating,
         recommendation: intelligence.recommendation,
-        summary: `以 ${Object.keys(intelligence.dimensions).length} 個維度比對，命中 ${intelligence.features.profileSkillHits.length} 個履歷技能，市場技能命中 ${intelligence.features.skills.length} 個。`
+        legitimacyTier: intelligence.blockG?.tier || "High Confidence",
+        summary: `6D 評分 ${intelligence.score}/100（${(intelligence.rating || 0).toFixed(1)}/5.0），Block G：${intelligence.blockG?.tier || "—"}。命中 ${f.profileSkillHits?.length || 0} 個履歷技能。`,
       },
+      dimensions_summary: Object.entries(dims6).map(([key, d]) => `${d.label || key}：${d.grade}（${d.score}）`),
       decision_factors: [
-        `職類：${intelligence.features.roleFamily}；資歷：${intelligence.features.seniority}；模式：${intelligence.features.workMode}`,
-        intelligence.features.profileSkillHits.length ? `履歷技能命中：${intelligence.features.profileSkillHits.slice(0, 8).join("、")}` : "履歷技能命中偏低",
-        intelligence.features.rareHighValueSkills.length ? `稀有高價值技能：${intelligence.features.rareHighValueSkills.join("、")}` : "未偵測到明顯稀有技能訊號"
-      ],
+        `職類：${f.roleFamily}；資歷：${f.seniority}；模式：${f.workMode}`,
+        f.profileSkillHits?.length ? `CV Match 命中：${f.profileSkillHits.slice(0, 8).join("、")}` : "CV Match 命中偏低",
+        dims6.northStar?.targetRoleHits?.length ? `North Star 目標職位命中：${dims6.northStar.targetRoleHits.slice(0, 4).join("、")}` : "",
+        dims6.culture?.growthHits?.length ? `Culture 成長訊號：${dims6.culture.growthHits.slice(0, 5).join("、")}` : "",
+        f.rareHighValueSkills?.length ? `稀有高價值技能：${f.rareHighValueSkills.join("、")}` : "",
+      ].filter(Boolean),
       ats_keywords: {
-        found: intelligence.features.profileSkillHits.slice(0, 16),
-        missing: intelligence.features.missingProfileSkills.slice(0, 12)
+        found: f.profileSkillHits?.slice(0, 16) || [],
+        missing: f.missingProfileSkills?.slice(0, 12) || [],
       },
-      risks: intelligence.features.avoidHits.length
-        ? [`命中風險或排除訊號：${intelligence.features.avoidHits.join("、")}`]
-        : [],
+      risks: [
+        ...(intelligence.blockG?.tier !== "High Confidence" ? [`Block G：${intelligence.blockG?.tier}`] : []),
+        ...(f.avoidHits?.length ? [`排除訊號：${f.avoidHits.join("、")}`] : []),
+        ...(dims6.redFlags?.riskHits?.length ? [`風險訊號：${dims6.redFlags.riskHits.join("、")}`] : []),
+      ],
       next_actions: intelligence.score >= 70
-        ? ["開啟職缺確認仍可投遞", "產生客製 ATS PDF", "用同職類高分職缺校準履歷關鍵字"]
-        : ["先與高分職缺比較，不急著投遞", "補齊 JD 或標記喜歡 / 不喜歡以改善後續排序"]
+        ? ["開啟職缺確認仍可投遞", "產生客製 ATS PDF（keyword injection）", "用同職類高分職缺校準關鍵字", "準備 STAR 故事與 cover letter hook"]
+        : ["先與高分職缺比較，不急著投遞", "補齊 JD 或標記喜歡 / 不喜歡以改善後續排序"],
     };
   }
   return next;
@@ -420,8 +512,11 @@ function enrichJob(job, intelligence) {
 
 function buildMarkdownReport(payload) {
   const insights = payload.marketInsights || {};
+  const jobs = Array.isArray(payload.jobs) ? payload.jobs : [];
+  const suspicious = jobs.filter((j) => j.blockG?.tier === "Suspicious").length;
+  const caution    = jobs.filter((j) => j.blockG?.tier === "Proceed with Caution").length;
   const lines = [
-    "# Career Ops Intelligence Report",
+    "# Career Ops Intelligence Report (v2 — 6D + Block G)",
     "",
     `Generated: ${insights.generatedAt || payload.intelligenceAt || ""}`,
     "",
@@ -429,10 +524,15 @@ function buildMarkdownReport(payload) {
     `- Expired jobs: ${insights.expiredJobCount ?? 0}`,
     `- Duplicate groups: ${insights.integrity?.duplicateGroupCount ?? 0}`,
     `- Jobs without enough description: ${insights.integrity?.jobsWithoutDescription ?? 0}`,
-    `- Rubric: ${insights.rubric?.name || "Career Ops default rubric"}`,
+    `- Rubric: ${insights.rubric?.name || "career-ops 6D v2"}`,
     "",
-    "## Rubric Weights",
+    "## Scoring Model (6 Dimensions + Block G)",
     ...Object.entries(insights.rubric?.weights || {}).map(([key, value]) => `- ${key}: ${value}`),
+    "",
+    "## Block G Legitimacy Summary",
+    `- High Confidence: ${jobs.length - suspicious - caution}`,
+    `- Proceed with Caution: ${caution}`,
+    `- Suspicious: ${suspicious}`,
     "",
     "## Top Skills",
     ...(insights.topSkills || []).slice(0, 12).map((item) => `- ${item.name}: ${item.count}`),
@@ -442,6 +542,9 @@ function buildMarkdownReport(payload) {
     "",
     "## Role Families",
     ...(insights.roleFamilies || []).map((item) => `- ${item.name}: ${item.count}`),
+    "",
+    "## Market Coverage",
+    ...(insights.markets || []).map((item) => `- ${item.name}: ${item.count}`),
     "",
     "## Recommended Search Queries",
     ...(insights.searchQueries || []).map((item) => `- ${item}`),
@@ -461,12 +564,12 @@ async function readJsonIfExists(filePath) {
 
 async function writeJson(filePath, data) {
   await fs.mkdir(path.dirname(filePath), { recursive: true });
-  await fs.writeFile(filePath, `${JSON.stringify(data, null, 2)}\n`, "utf8");
+  await fs.writeFile(filePath, `${JSON.stringify(data)}\n`, "utf8");
 }
 
 async function writeJs(filePath, data) {
   await fs.mkdir(path.dirname(filePath), { recursive: true });
-  await fs.writeFile(filePath, `window.CV_CAREER_OPS_JOBS = ${JSON.stringify(data, null, 2)};\n`, "utf8");
+  await fs.writeFile(filePath, `window.CV_CAREER_OPS_JOBS = ${JSON.stringify(data)};\n`, "utf8");
 }
 
 async function writeText(filePath, text) {

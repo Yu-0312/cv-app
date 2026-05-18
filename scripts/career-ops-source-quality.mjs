@@ -2,36 +2,23 @@
 
 import fs from "node:fs/promises";
 import path from "node:path";
+import { MARKET_LOCATION_TERMS, marketCodes } from "./lib/career-ops-market.mjs";
 
 const DEFAULT_JOBS = "data/app/career-ops-jobs.json";
 const DEFAULT_JS_OUT = "data/app/career-ops-jobs.js";
 const DEFAULT_REPORT = "data/app/career-ops-source-quality-report.md";
 
-const DEFAULT_TARGET_MARKETS = ["tw", "cn", "jp", "kr", "sg", "global"];
+const DEFAULT_TARGET_MARKETS = [...marketCodes(), "global"];
 const TARGET_LOCATION_TERMS = [
-  "taiwan", "taipei", "hsinchu", "taichung", "kaohsiung", "台灣", "台北", "新竹", "tw",
-  "china", "beijing", "shanghai", "shenzhen", "hangzhou", "中國", "北京", "上海", "深圳", "cn",
-  "japan", "tokyo", "osaka", "kyoto", "日本", "東京", "大阪", "jp",
-  "korea", "seoul", "pangyo", "south korea", "韓國", "首爾", "kr",
-  "singapore", "新加坡", "sg",
-  "remote", "hybrid", "global"
+  ...new Set([
+    ...Object.values(MARKET_LOCATION_TERMS).flat(),
+    "remote",
+    "hybrid",
+    "global"
+  ])
 ];
-const MARKET_LOCATION_TERMS = {
-  tw: ["taiwan", "taipei", "hsinchu", "taichung", "kaohsiung", "taoyuan", "tainan", "台灣", "台北", "新竹", "台中", "高雄", "桃園", "台南"],
-  cn: ["china", "beijing", "shanghai", "shenzhen", "hangzhou", "suzhou", "guangzhou", "chengdu", "中國", "北京", "上海", "深圳", "杭州", "蘇州", "广州", "成都"],
-  jp: ["japan", "tokyo", "osaka", "kyoto", "yokohama", "日本", "東京", "大阪", "京都", "横浜"],
-  kr: ["korea", "south korea", "seoul", "pangyo", "suwon", "yongin", "韓國", "首爾", "서울", "수원"],
-  sg: ["singapore", "新加坡", "singapore city"]
-};
 const OUTSIDE_LOCATION_TERMS = [
-  "id", "indonesia", "jakarta", "surabaya", "republic of indonesia",
-  "my", "malaysia", "kuala lumpur",
-  "hk", "hong kong", "香港",
-  "vn", "vietnam", "thailand", "philippines",
-  "united states", "usa", "u.s.", "us-", "california", "new york", "texas", "arizona",
-  "boise", "phoenix", "san jose", "santa clara", "austin", "cupertino", "mountain view",
-  "india", "bengaluru", "bangalore", "hyderabad", "pune", "canada", "toronto",
-  "germany", "france", "switzerland", "zurich", "united kingdom", "london"
+  "saudi arabia", "riyadh"
 ];
 const LANDING_PAGE_TERMS = [
   "jobs", "careers", "companies", "employers", "recruitment", "staffing", "resources",
@@ -40,7 +27,7 @@ const LANDING_PAGE_TERMS = [
 ];
 const JOB_PATH_TERMS = [
   "/job/", "/jobs/", "/job_detail/", "/companies/", "/careers/", "/recruit/", "/positions/",
-  ".shtml", "jobdetail", "job-detail"
+  ".shtml", "jobdetail", "job-detail", "jobsearchdetail", "jobinfo-", "/zhaopin/", "/search/njb"
 ];
 
 function printHelp() {
@@ -274,8 +261,8 @@ async function main() {
   if (args.help) return printHelp();
   const payload = JSON.parse(await fs.readFile(args.jobs, "utf8"));
   const next = applyQuality(payload, args);
-  await writeText(args.out, `${JSON.stringify(next, null, 2)}\n`);
-  if (args.writeJs) await writeText(args.jsOut, `window.CV_CAREER_OPS_JOBS = ${JSON.stringify(next, null, 2)};\n`);
+  await writeText(args.out, `${JSON.stringify(next)}\n`);
+  if (args.writeJs) await writeText(args.jsOut, `window.CV_CAREER_OPS_JOBS = ${JSON.stringify(next)};\n`);
   await writeText(args.reportOut, renderReport(next));
   console.log(`[career-ops] source quality kept ${next.qualityGate.keptJobCount}/${next.qualityGate.inputJobCount} active job(s), filtered ${next.qualityGate.filteredJobCount}`);
 }

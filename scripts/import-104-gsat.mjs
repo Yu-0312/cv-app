@@ -2,6 +2,7 @@
 
 import fs from "node:fs/promises";
 import path from "node:path";
+import { createArgParser, ensureDir, fetchWithRetry, randomDelay } from "./lib/utils.mjs";
 
 const API_ORIGIN = "https://student.104.com.tw";
 const STANDARD_SCORE_ENDPOINT = `${API_ORIGIN}/api/v1.0/hs/standardScore`;
@@ -12,7 +13,7 @@ const SUPPORTED_MAJOR_ENDPOINTS = [
   "/api/v1.0/ast/majorList"
 ];
 
-const args = process.argv.slice(2);
+const { args, getFlag, hasFlag, getNumberFlag } = createArgParser(process.argv.slice(2));
 const command = args[0];
 
 function printHelp() {
@@ -39,21 +40,6 @@ function printHelp() {
 `);
 }
 
-function getFlag(name, fallback = null) {
-  const index = args.indexOf(name);
-  if (index === -1 || index === args.length - 1) {
-    return fallback;
-  }
-  return args[index + 1];
-}
-
-function hasFlag(name) {
-  return args.includes(name);
-}
-
-async function ensureDir(filePath) {
-  await fs.mkdir(path.dirname(filePath), { recursive: true });
-}
 
 function decodeHarText(content = {}) {
   if (!content.text) return null;
@@ -188,15 +174,6 @@ function extractMajorList(responseJson) {
   return [];
 }
 
-function getNumberFlag(name, fallback = null) {
-  const value = getFlag(name, null);
-  if (value === null || value === undefined) return fallback;
-  const parsed = Number(value);
-  if (!Number.isFinite(parsed)) {
-    throw new Error(`${name} 必須是數字`);
-  }
-  return parsed;
-}
 
 function getOptionalScore(name, fallback = 0) {
   const value = getFlag(name, null);
@@ -278,14 +255,9 @@ function withCookies(headers, cookieJar) {
   };
 }
 
-async function fetchJson(url, options = {}, cookieJar = null) {
-  const response = await fetch(url, options);
-  if (!response.ok) {
-    throw new Error(`104 API 請求失敗：${response.status} ${response.statusText}`);
-  }
-  if (cookieJar) {
-    mergeCookieJar(cookieJar, response);
-  }
+async function fetchJson(url, options = {}, cookieJar = null, config = {}) {
+  const response = await fetchWithRetry(url, options, { ...config, label: "104 API 請求" });
+  if (cookieJar) mergeCookieJar(cookieJar, response);
   return response.json();
 }
 
@@ -336,14 +308,21 @@ async function fetchMajorListDirect() {
   const { scoreYear, roleType, score } = buildDirectScorePayload();
   const limit = getNumberFlag("--limit", 100);
   const maxPages = getNumberFlag("--max-pages", null);
+  const pageDelayMin = getNumberFlag("--page-delay-min", 1500);
+  const pageDelayMax = getNumberFlag("--page-delay-max", 3000);
   const includeRecommend = hasFlag("--include-recommend");
   const origin = `${API_ORIGIN}/hs/apply/result/`;
   const cookieJar = new Map();
   const baseHeaders = {
+    "accept": "application/json, text/plain, */*",
+    "accept-language": "zh-TW,zh;q=0.9,en-US;q=0.8,en;q=0.7",
     "content-type": "application/json",
-    origin: API_ORIGIN,
-    referer: origin,
-    "user-agent": "Mozilla/5.0"
+    "origin": API_ORIGIN,
+    "referer": origin,
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "same-origin",
+    "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
   };
 
   const landingPayload = {
@@ -434,6 +413,7 @@ async function fetchMajorListDirect() {
     if (!rawMajors.length || total === null || nextOffset >= total) break;
     if (maxPages !== null && pageCount >= maxPages) break;
     offset = nextOffset;
+    await randomDelay(pageDelayMin, pageDelayMax);
   }
 
   if (includeRecommend) {

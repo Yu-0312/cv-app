@@ -1,67 +1,54 @@
 # Career Ops Learning Report
 
-- Generated: 2026-05-15T14:46:00.783Z
+- Generated: 2026-05-16T15:20:31.172Z
 - Active jobs: 276
-- Positive signals: 102
-- Negative signals: 13
+- Positive signals: 113
+- Negative signals: 0
 - Source coverage: 93 sources / 651 queries / markets tw, cn, jp, kr, sg, global
 
 ## Preferred Skills
 
-- engineer: 679.9
-- data: 329.9
-- product: 302
-- growth: 172.9
-- operations: 125.7
-- aws: 116.1
-- python: 114.3
-- senior: 92.5
-- we: 86.2
-- design: 83
-- gcp: 81.1
-- solutions: 79.7
-- description: 77.9
-- react: 74.6
-- React: 74.6
-- docker: 73.6
-- terraform: 72.3
-- leader: 70.1
+- engineer: 806.5
+- to: 451
+- or: 442.1
+- engineering: 402.9
+- at: 366
+- product: 338.3
+- performance: 279.8
+- operations: 245.8
+- growth: 191.5
+- platform: 185
+- python: 130.8
+- aws: 126.3
+- senior: 116.9
+- CI/CD: 111.7
+- design: 108.1
+- api: 106.5
+- we: 101.1
+- frontend: 99.6
 
 ## Avoid Signals
 
-- nvidia: 0.6
-- 价格: 0.6
-- 参数: 0.6
-- 图片: 0.6
-- 图片及用户评价等详细信息: 0.6
-- 多少钱: 0.6
-- 官方正品: 0.6
-- 用户评价: 0.6
-- 联想商城: 0.6
-- developer: 0.4
-- 欢迎选购: 0.4
-- ai: 0.3
-- tools: 0.3
-- build: 0.2
+- None learned yet
 
 ## Preferred Companies
 
-- Money Forward: 57.6
-- Micron Workday: 49.3
-- NVIDIA Workday: 48.7
-- Intel Workday Taiwan: 47.1
-- Logitech Workday Taiwan: 33.4
-- AI Robot Association (AIRoA): 24.1
-- Applied Materials Workday: 20.8
-- Shizuku AI: 15.5
-- Geniee: 11.2
-- Metanomaly: 10.9
-- PayPay: 10.2
-- Mico: 8.4
+- NVIDIA Workday: 82.5
+- Money Forward: 64.7
+- Micron Workday: 56.6
+- Intel Workday Taiwan: 53.6
+- Logitech Workday Taiwan: 38.9
+- AI Robot Association (AIRoA): 25.8
+- Applied Materials Workday: 23.5
+- Shizuku AI: 16.6
+- Synspective: 12
+- Geniee: 11.5
+- Metanomaly: 11.4
+- PayPay: 11.1
 
 ## Next Strategy
 
-- Expand searches around engineer, data, product, growth, operations.
-- Prioritize sources like tracked-company, tw, flex-job-board, jp.
-- Down-rank roles mentioning nvidia, 价格, 参数, 图片, 图片及用户评价等详细信息.
+- Expand searches around engineer, to, or, engineering, at.
+- Prioritize sources like tw, tracked-company, flex-job-board, jp.
+- No strong avoid pattern learned yet.
 - Refresh this learning layer after each batch evaluation or feedback session.

@@ -1,39 +1,39 @@
 # Career Ops Source Quality
 
-- Generated: 2026-05-15T14:45:54.167Z
+- Generated: 2026-05-18T12:31:22.111Z
 - Mode: filter
 - Minimum score: 45
-- Input active jobs: 387
-- Kept active jobs: 276
-- Filtered active jobs: 111
-- Quality tiers: high 229 / medium 41 / low 6
+- Input active jobs: 93613
+- Kept active jobs: 92789
+- Filtered active jobs: 824
+- Quality tiers: high 87357 / medium 5333 / low 99
 
 ## Filtered Samples
 
-- 25 Grab - Lead Data Engineer, GrabX (Experimentation & Config Management) (thin-description, outside-target-market, low-priority-region)
-- 25 Grab - Senior Site Reliability Engineer (thin-description, outside-target-market, low-priority-region)
-- 25 Grab - Intern, AI Engineer (thin-description, outside-target-market, low-priority-region)
-- 25 Grab - Software Engineer, Mobile (iOS) (thin-description, outside-target-market, low-priority-region)
-- 25 Grab - Software Engineer, Mobile (Android) (thin-description, outside-target-market, low-priority-region)
-- 25 Grab - Software Engineer, Backend (thin-description, outside-target-market, low-priority-region)
-- 25 Grab - Lead Product Manager (thin-description, outside-target-market, low-priority-region)
-- 25 Grab - Intern, Software Engineer Backend (thin-description, outside-target-market, low-priority-region)
-- 25 Grab - Senior Software Engineer in Test (thin-description, outside-target-market, low-priority-region)
-- 25 Grab - Senior Data Engineer, GrabX (Experimentation & Config Management) (thin-description, outside-target-market, low-priority-region)
-- 25 Grab - Senior Data Engineer, GrabX (Experimentation & Config Management) (thin-description, outside-target-market, low-priority-region)
-- 25 Grab - Lead Data Engineer, GrabX (Experimentation & Config Management) (thin-description, outside-target-market, low-priority-region)
+- 43 Cohere - Forward Deployed Engineer Agentic Platform (outside-target-market, low-priority-region)
+- 43 Pearl - Operations Manager A379 (outside-target-market, low-priority-region)
+- 43 Obsidian Security - Software Engineer (outside-target-market, low-priority-region)
+- 43 Avalere Health - Account Supervisor (outside-target-market, low-priority-region)
+- 43 Bennie - Customer Experience Manager (outside-target-market, low-priority-region)
+- 43 GiveDirectly - Senior Manager Business Operations (outside-target-market, low-priority-region)
+- 43 HireHawk - Business Immigration Paralegal LATAM (outside-target-market, low-priority-region)
+- 43 HireHawk - Appointment Setter Mexico (outside-target-market, low-priority-region)
+- 43 ContinuumGlobal, Inc - Chief Revenue Officer (outside-target-market, low-priority-region)
+- 43 Wealthsimple Technologies - Senior AI System Software Developer (outside-target-market, low-priority-region)
+- 43 Contact Government Services, LLC - Contract Mandarin Document Review Attorney (outside-target-market, low-priority-region)
+- 43 Emora Health - Operations and Support Associate (outside-target-market, low-priority-region)
 
 ## Kept Samples
 
-- 88 Gogolook - AI Product Intern (B2C & User Growth) - ScamAdviser
-- 88 Gogolook - Content Marketing Intern 內容行銷實習生 (Roo)
-- 88 Gogolook - Design Assistant 設計助理 (Roo)
-- 100 Gogolook - US Market Intern (ScamAdviser)
-- 100 Gogolook - Visual Design Intern 品牌視覺設計實習生
-- 88 Gogolook - 社群行銷實習生 (Roo)
-- 52 Unknown - Corporate Distinguished Engineer - Sony Group Portal
-- 82 Grab - Lead Localization Engineer (L4 Autonomous Systems)
-- 82 Grab - Lead Data Scientist (Dispatch)
-- 82 Grab - Senior Software Engineer, Perception (Robotics)
-- 82 Grab - Senior Software Engineer, Decision & Planning Algorithm (Robotics)
-- 82 Grab - Lead Data Analyst
+- 100 Canonical Greenhouse - Web Frontend Engineer - JS, CSS, React, Flutter
+- 100 Figma Greenhouse - Software Engineer, Data Infrastructure
+- 100 Mistral AI Ashby - Engineering Manager
+- 100 Vercel Greenhouse - Site Engineer
+- 100 Figma Greenhouse - Software Engineer, Developer Experience
+- 100 Asana Greenhouse - Senior Software Engineer, Admin Area
+- 100 Asana Greenhouse - Senior Software Engineer, Payment Platform
+- 88 Mistral AI Ashby - Engineering Program Manager
+- 88 Mistral AI Ashby - Applied AI Engineer, Fullstack Software Engineer - EMEA
+- 100 Mistral AI Ashby - Software Engineer, DevEx
+- 88 Ramp Ashby - Design Engineer
+- 88 Ramp Ashby - Senior Software Engineer | GTM Platform, Frontend

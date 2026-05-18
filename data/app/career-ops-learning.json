@@ -1,270 +1,213 @@
 {
   "source": "career-ops-learning",
-  "generatedAt": "2026-05-15T14:46:00.783Z",
+  "generatedAt": "2026-05-16T15:20:31.172Z",
   "learning": {
     "activeJobCount": 276,
-    "positiveSignalCount": 102,
-    "negativeSignalCount": 13,
+    "positiveSignalCount": 113,
+    "negativeSignalCount": 0,
     "preferredSkills": [
       {
         "name": "engineer",
-        "score": 679.9
+        "score": 806.5
       },
       {
-        "name": "data",
-        "score": 329.9
+        "name": "to",
+        "score": 451
+      },
+      {
+        "name": "or",
+        "score": 442.1
+      },
+      {
+        "name": "engineering",
+        "score": 402.9
+      },
+      {
+        "name": "at",
+        "score": 366
       },
       {
         "name": "product",
-        "score": 302
+        "score": 338.3
       },
       {
-        "name": "growth",
-        "score": 172.9
+        "name": "performance",
+        "score": 279.8
       },
       {
         "name": "operations",
-        "score": 125.7
+        "score": 245.8
       },
       {
-        "name": "aws",
-        "score": 116.1
+        "name": "growth",
+        "score": 191.5
+      },
+      {
+        "name": "platform",
+        "score": 185
       },
       {
         "name": "python",
-        "score": 114.3
+        "score": 130.8
+      },
+      {
+        "name": "aws",
+        "score": 126.3
       },
       {
         "name": "senior",
-        "score": 92.5
+        "score": 116.9
       },
       {
-        "name": "we",
-        "score": 86.2
+        "name": "CI/CD",
+        "score": 111.7
       },
       {
         "name": "design",
-        "score": 83
+        "score": 108.1
       },
       {
-        "name": "gcp",
-        "score": 81.1
+        "name": "api",
+        "score": 106.5
       },
       {
-        "name": "solutions",
-        "score": 79.7
+        "name": "we",
+        "score": 101.1
       },
       {
-        "name": "description",
-        "score": 77.9
-      },
-      {
-        "name": "react",
-        "score": 74.6
-      },
-      {
-        "name": "React",
-        "score": 74.6
-      },
-      {
-        "name": "docker",
-        "score": 73.6
-      },
-      {
-        "name": "terraform",
-        "score": 72.3
-      },
-      {
-        "name": "leader",
-        "score": 70.1
+        "name": "frontend",
+        "score": 99.6
       }
     ],
-    "avoidSignals": [
-      {
-        "name": "nvidia",
-        "score": 0.6
-      },
-      {
-        "name": "价格",
-        "score": 0.6
-      },
-      {
-        "name": "参数",
-        "score": 0.6
-      },
-      {
-        "name": "图片",
-        "score": 0.6
-      },
-      {
-        "name": "图片及用户评价等详细信息",
-        "score": 0.6
-      },
-      {
-        "name": "多少钱",
-        "score": 0.6
-      },
-      {
-        "name": "官方正品",
-        "score": 0.6
-      },
-      {
-        "name": "用户评价",
-        "score": 0.6
-      },
-      {
-        "name": "联想商城",
-        "score": 0.6
-      },
-      {
-        "name": "developer",
-        "score": 0.4
-      },
-      {
-        "name": "欢迎选购",
-        "score": 0.4
-      },
-      {
-        "name": "ai",
-        "score": 0.3
-      },
-      {
-        "name": "tools",
-        "score": 0.3
-      },
-      {
-        "name": "build",
-        "score": 0.2
-      }
-    ],
+    "avoidSignals": [],
     "preferredCompanies": [
       {
+        "name": "NVIDIA Workday",
+        "score": 82.5
+      },
+      {
         "name": "Money Forward",
-        "score": 57.6
+        "score": 64.7
       },
       {
         "name": "Micron Workday",
-        "score": 49.3
-      },
-      {
-        "name": "NVIDIA Workday",
-        "score": 48.7
+        "score": 56.6
       },
       {
         "name": "Intel Workday Taiwan",
-        "score": 47.1
+        "score": 53.6
       },
       {
         "name": "Logitech Workday Taiwan",
-        "score": 33.4
+        "score": 38.9
       },
       {
         "name": "AI Robot Association (AIRoA)",
-        "score": 24.1
+        "score": 25.8
       },
       {
         "name": "Applied Materials Workday",
-        "score": 20.8
+        "score": 23.5
       },
       {
         "name": "Shizuku AI",
-        "score": 15.5
+        "score": 16.6
+      },
+      {
+        "name": "Synspective",
+        "score": 12
       },
       {
         "name": "Geniee",
-        "score": 11.2
+        "score": 11.5
       },
       {
         "name": "Metanomaly",
-        "score": 10.9
+        "score": 11.4
       },
       {
         "name": "PayPay",
-        "score": 10.2
-      },
-      {
-        "name": "Mico",
-        "score": 8.4
+        "score": 11.1
       }
     ],
     "preferredSources": [
       {
-        "name": "tracked-company",
-        "score": 209.9
+        "name": "tw",
+        "score": 269.3
       },
       {
-        "name": "tw",
-        "score": 209.9
+        "name": "tracked-company",
+        "score": 266.3
       },
       {
         "name": "flex-job-board",
-        "score": 192.4
+        "score": 219.7
       },
       {
         "name": "jp",
-        "score": 192.4
-      },
-      {
-        "name": "semiconductor-memory",
-        "score": 49.3
+        "score": 216.7
       },
       {
         "name": "ai-semiconductor",
-        "score": 48.7
+        "score": 82.5
+      },
+      {
+        "name": "semiconductor-memory",
+        "score": 56.6
       },
       {
         "name": "semiconductor",
-        "score": 47.1
+        "score": 53.6
       },
       {
         "name": "consumer-electronics",
-        "score": 33.4
+        "score": 38.9
       },
       {
         "name": "semiconductor-equipment",
-        "score": 20.8
+        "score": 23.5
       },
       {
         "name": "commerce-intelligence",
-        "score": 5.5
+        "score": 5.7
       },
       {
         "name": "consumer-security",
-        "score": 5.3
+        "score": 5.5
       }
     ],
     "roleFamilies": [
       {
         "name": "Backend",
-        "score": 155.3
+        "score": 179.4
       },
       {
         "name": "Frontend",
-        "score": 107.6
+        "score": 120.6
       },
       {
         "name": "AI / Data",
-        "score": 90.7
-      },
-      {
-        "name": "Design",
-        "score": 18.3
-      },
-      {
-        "name": "Operations",
-        "score": 10.3
+        "score": 103.9
       },
       {
         "name": "Other",
-        "score": 7.4
+        "score": 29.7
+      },
+      {
+        "name": "Design",
+        "score": 21.9
+      },
+      {
+        "name": "Operations",
+        "score": 15.4
       },
       {
         "name": "Marketing",
-        "score": 5.4
+        "score": 6.5
       },
       {
         "name": "Internship",
-        "score": 4.8
+        "score": 5.5
       }
     ],
     "sourceCoverage": {
@@ -280,43 +223,46 @@
       ]
     },
     "nextStrategy": [
-      "Expand searches around engineer, data, product, growth, operations.",
-      "Prioritize sources like tracked-company, tw, flex-job-board, jp.",
-      "Down-rank roles mentioning nvidia, 价格, 参数, 图片, 图片及用户评价等详细信息.",
+      "Expand searches around engineer, to, or, engineering, at.",
+      "Prioritize sources like tw, tracked-company, flex-job-board, jp.",
+      "No strong avoid pattern learned yet.",
       "Refresh this learning layer after each batch evaluation or feedback session."
     ],
     "profilePatchSuggestion": {
       "preferences": {
         "keywords": [
           "remote",
-          "dashboard",
+          "frontend",
+          "product engineer",
+          "typescript",
+          "react",
+          "next.js",
+          "vue",
+          "figma",
           "design system",
+          "dashboard",
           "analytics",
-          "engineer",
-          "data",
-          "product",
-          "growth",
-          "operations",
-          "aws",
-          "python",
-          "senior"
+          "accessibility",
+          "performance",
+          "playwright",
+          "storybook",
+          "a/b testing",
+          "core web vitals",
+          "saas"
         ],
         "avoidKeywords": [
           "commission-only",
           "unpaid",
-          "nvidia",
-          "价格",
-          "参数",
-          "图片",
-          "图片及用户评价等详细信息",
-          "多少钱",
-          "官方正品",
-          "用户评价"
+          "training fee",
+          "deposit required",
+          "no interview",
+          "whatsapp only",
+          "legacy jQuery only"
         ],
         "companies": [
+          "NVIDIA Workday",
           "Money Forward",
           "Micron Workday",
-          "NVIDIA Workday",
           "Intel Workday Taiwan",
           "Logitech Workday Taiwan",
           "AI Robot Association (AIRoA)",

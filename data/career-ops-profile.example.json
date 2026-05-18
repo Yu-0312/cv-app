@@ -1,14 +1,4584 @@
 {
+  "id": "synthetic-active-frontend-senior",
+  "displayName": "Synthetic Active Candidate",
+  "synthetic": true,
+  "source": "generated-anonymous-submission-quality-resume",
+  "dataPolicy": "Synthetic resume-quality sample. Uses reserved example/test domains and fictional employers; no real person is represented.",
   "role": "Frontend Engineer",
-  "summary": "Builds accessible product dashboards and data-heavy workflows.",
-  "skills": ["JavaScript", "React", "CSS", "Accessibility", "Analytics", "API"],
-  "experience": "Frontend product work, dashboard development, design systems, performance optimization.",
-  "projects": "Portfolio, CV Studio, data visualization tools.",
+  "targetRole": "Senior Frontend Engineer",
+  "seniority": "Senior",
+  "headline": "Senior Frontend Product Engineer | TypeScript, React, Next.js, Vue, Figma, Design Systems, Analytics",
+  "summary": "Senior frontend and product engineer with 7+ years building TypeScript, React, Next.js, Vue, and design-system-heavy SaaS products. Led dashboard, onboarding, and checkout initiatives that improved activation by 18%, reduced page load time by 41%, raised accessibility coverage to WCAG AA, and cut support tickets by 23%. Strong ATS keyword coverage across JavaScript, TypeScript, React, Next.js, Vue, Nuxt, Figma, Storybook, Tailwind CSS, GraphQL, REST API, Playwright, Vitest, product analytics, A/B testing, and Core Web Vitals. Comfortable owning ambiguous product problems from discovery through launch, including user research, cross-functional planning, implementation, instrumentation, rollout, and post-launch iteration.",
+  "professionalSummary": "Senior frontend and product engineer with 7+ years building TypeScript, React, Next.js, Vue, and design-system-heavy SaaS products. Led dashboard, onboarding, and checkout initiatives that improved activation by 18%, reduced page load time by 41%, raised accessibility coverage to WCAG AA, and cut support tickets by 23%. Strong ATS keyword coverage across JavaScript, TypeScript, React, Next.js, Vue, Nuxt, Figma, Storybook, Tailwind CSS, GraphQL, REST API, Playwright, Vitest, product analytics, A/B testing, and Core Web Vitals. Comfortable owning ambiguous product problems from discovery through launch, including user research, cross-functional planning, implementation, instrumentation, rollout, and post-launch iteration.",
+  "description": "ATS-rich synthetic active profile used by Career Ops examples. It is deliberately written like a real senior frontend/product engineering profile, with broad market keywords, quantified outcomes, project context, and concrete STAR stories, but it contains no scraped resume text, no contact details, and no real-person identifiers.",
+  "basics": {
+    "name": "Synthetic Active Candidate",
+    "label": "Senior Frontend Engineer",
+    "email": "active-senior-frontend-profile@example.test",
+    "phone": "+886 900 000 000 (synthetic)",
+    "location": {
+      "city": "Taipei",
+      "region": "Example Region",
+      "countryCode": "XX"
+    },
+    "website": "https://portfolio.example.test/active-senior-frontend-profile",
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "active-senior-frontend-profile",
+        "url": "https://linkedin.example.test/in/active-senior-frontend-profile"
+      },
+      {
+        "network": "GitHub",
+        "username": "active-senior-frontend-profile",
+        "url": "https://github.example.test/active-senior-frontend-profile"
+      },
+      {
+        "network": "Portfolio",
+        "username": "active-senior-frontend-profile",
+        "url": "https://portfolio.example.test/active-senior-frontend-profile"
+      }
+    ]
+  },
+  "contact": {
+    "name": "Synthetic Active Candidate",
+    "label": "Senior Frontend Engineer",
+    "email": "active-senior-frontend-profile@example.test",
+    "phone": "+886 900 000 000 (synthetic)",
+    "location": {
+      "city": "Taipei",
+      "region": "Example Region",
+      "countryCode": "XX"
+    },
+    "website": "https://portfolio.example.test/active-senior-frontend-profile",
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "active-senior-frontend-profile",
+        "url": "https://linkedin.example.test/in/active-senior-frontend-profile"
+      },
+      {
+        "network": "GitHub",
+        "username": "active-senior-frontend-profile",
+        "url": "https://github.example.test/active-senior-frontend-profile"
+      },
+      {
+        "network": "Portfolio",
+        "username": "active-senior-frontend-profile",
+        "url": "https://portfolio.example.test/active-senior-frontend-profile"
+      }
+    ]
+  },
+  "location": "Taipei",
+  "skills": [
+    "JavaScript",
+    "TypeScript",
+    "React",
+    "Next.js",
+    "Vue",
+    "Nuxt",
+    "Svelte",
+    "Node.js",
+    "HTML",
+    "CSS",
+    "Sass",
+    "Tailwind CSS",
+    "CSS Modules",
+    "Vite",
+    "Webpack",
+    "Storybook",
+    "Figma",
+    "Design Systems",
+    "Design Tokens",
+    "Accessibility",
+    "WCAG AA",
+    "ARIA",
+    "Core Web Vitals",
+    "Performance Optimization",
+    "Responsive Design",
+    "GraphQL",
+    "REST API",
+    "OpenAPI",
+    "PostgreSQL",
+    "Supabase",
+    "Firebase",
+    "Prisma",
+    "Vercel",
+    "Docker",
+    "GitHub Actions",
+    "CI/CD",
+    "Playwright",
+    "Cypress",
+    "Vitest",
+    "Jest",
+    "Testing Library",
+    "Product Analytics",
+    "Amplitude",
+    "Mixpanel",
+    "GA4",
+    "A/B Testing",
+    "Data Visualization",
+    "ECharts"
+  ],
+  "skillGroups": {
+    "technical": [
+      "JavaScript",
+      "TypeScript",
+      "React",
+      "Next.js",
+      "Vue",
+      "Node.js",
+      "Figma",
+      "PostgreSQL",
+      "Docker",
+      "Playwright",
+      "Cypress"
+    ],
+    "product": [
+      "Design Systems",
+      "Design Tokens",
+      "Accessibility",
+      "Responsive Design",
+      "Testing Library",
+      "Product Analytics",
+      "A/B Testing"
+    ],
+    "domain": [
+      "Nuxt",
+      "Svelte",
+      "HTML",
+      "CSS",
+      "Sass",
+      "Tailwind CSS",
+      "CSS Modules",
+      "Vite",
+      "Webpack",
+      "Storybook",
+      "WCAG AA",
+      "ARIA",
+      "Core Web Vitals",
+      "Performance Optimization",
+      "GraphQL",
+      "REST API"
+    ]
+  },
+  "experience": "Senior Frontend Engineer at Northstar Analytics Example: Led reusable design system rollout using JavaScript, TypeScript, React, Next.js, improving activation by 23% for roughly 1,200 users or internal workflow participants. Built measurement and rollout practices across React, Next.js, Vue, Nuxt, reducing release defect rate by 16% and making weekly decision reviews faster for 38 stakeholders. Partnered with engineering, support, and sales to turn ambiguous requirements into scoped milestones, acceptance criteria, dashboards, and launch notes. Created reusable documentation, QA checklists, and handoff templates that shortened onboarding for new contributors by 31%. Frontend Engineer at Orbit Systems Example: Owned self-serve analytics dashboard using Nuxt, Svelte, Node.js, HTML, improving retention by 34% for roughly 1,709 users or internal workflow participants. Built measurement and rollout practices across Node.js, HTML, CSS, Sass, reducing support volume by 27% and making weekly decision reviews faster for 55 stakeholders. Partnered with security, QA, and platform to turn ambiguous requirements into scoped milestones, acceptance criteria, dashboards, and launch notes. Created reusable documentation, QA checklists, and handoff templates that shortened onboarding for new contributors by 16%. Software Engineer at Beacon Works Example: Rebuilt checkout performance rebuild using Sass, Tailwind CSS, CSS Modules, Vite, improving conversion by 14% for roughly 2,218 users or internal workflow participants. Built measurement and rollout practices across CSS Modules, Vite, Webpack, Storybook, reducing forecast variance by 15% and making weekly decision reviews faster for 14 stakeholders. Partnered with customer success, operations, and leadership to turn ambiguous requirements into scoped milestones, acceptance criteria, dashboards, and launch notes. Created reusable documentation, QA checklists, and handoff templates that shortened onboarding for new contributors by 27%.",
+  "workExperience": [
+    {
+      "company": "Northstar Analytics Example",
+      "position": "Senior Frontend Engineer",
+      "employmentType": "Full-time",
+      "location": "Taipei",
+      "startDate": "2023-01",
+      "endDate": "Present",
+      "industry": "B2B SaaS",
+      "summary": "Senior Frontend Engineer for a B2B SaaS team, owning reusable design system rollout and cross-functional delivery with product, design, and data stakeholders.",
+      "highlights": [
+        "Led reusable design system rollout using JavaScript, TypeScript, React, Next.js, improving activation by 23% for roughly 1,200 users or internal workflow participants.",
+        "Built measurement and rollout practices across React, Next.js, Vue, Nuxt, reducing release defect rate by 16% and making weekly decision reviews faster for 38 stakeholders.",
+        "Partnered with engineering, support, and sales to turn ambiguous requirements into scoped milestones, acceptance criteria, dashboards, and launch notes.",
+        "Created reusable documentation, QA checklists, and handoff templates that shortened onboarding for new contributors by 31%."
+      ],
+      "technologies": [
+        "JavaScript",
+        "TypeScript",
+        "React",
+        "Next.js",
+        "Vue",
+        "Nuxt",
+        "Svelte"
+      ],
+      "metrics": [
+        "23% activation improvement",
+        "16% reduction in release defect rate",
+        "38 stakeholders supported"
+      ]
+    },
+    {
+      "company": "Orbit Systems Example",
+      "position": "Frontend Engineer",
+      "employmentType": "Full-time",
+      "location": "Remote",
+      "startDate": "2020-02",
+      "endDate": "2023-08",
+      "industry": "fintech",
+      "summary": "Frontend Engineer for a fintech team, owning self-serve analytics dashboard and cross-functional delivery with engineering, support, and sales stakeholders.",
+      "highlights": [
+        "Owned self-serve analytics dashboard using Nuxt, Svelte, Node.js, HTML, improving retention by 34% for roughly 1,709 users or internal workflow participants.",
+        "Built measurement and rollout practices across Node.js, HTML, CSS, Sass, reducing support volume by 27% and making weekly decision reviews faster for 55 stakeholders.",
+        "Partnered with security, QA, and platform to turn ambiguous requirements into scoped milestones, acceptance criteria, dashboards, and launch notes.",
+        "Created reusable documentation, QA checklists, and handoff templates that shortened onboarding for new contributors by 16%."
+      ],
+      "technologies": [
+        "Nuxt",
+        "Svelte",
+        "Node.js",
+        "HTML",
+        "CSS",
+        "Sass",
+        "Tailwind CSS"
+      ],
+      "metrics": [
+        "34% retention improvement",
+        "27% reduction in support volume",
+        "55 stakeholders supported"
+      ]
+    },
+    {
+      "company": "Beacon Works Example",
+      "position": "Software Engineer",
+      "employmentType": "Full-time",
+      "location": "Singapore",
+      "startDate": "2017-03",
+      "endDate": "2020-09",
+      "industry": "healthtech",
+      "summary": "Software Engineer for a healthtech team, owning checkout performance rebuild and cross-functional delivery with security, QA, and platform stakeholders.",
+      "highlights": [
+        "Rebuilt checkout performance rebuild using Sass, Tailwind CSS, CSS Modules, Vite, improving conversion by 14% for roughly 2,218 users or internal workflow participants.",
+        "Built measurement and rollout practices across CSS Modules, Vite, Webpack, Storybook, reducing forecast variance by 15% and making weekly decision reviews faster for 14 stakeholders.",
+        "Partnered with customer success, operations, and leadership to turn ambiguous requirements into scoped milestones, acceptance criteria, dashboards, and launch notes.",
+        "Created reusable documentation, QA checklists, and handoff templates that shortened onboarding for new contributors by 27%."
+      ],
+      "technologies": [
+        "Sass",
+        "Tailwind CSS",
+        "CSS Modules",
+        "Vite",
+        "Webpack",
+        "Storybook",
+        "Figma"
+      ],
+      "metrics": [
+        "14% conversion improvement",
+        "15% reduction in forecast variance",
+        "14 stakeholders supported"
+      ]
+    }
+  ],
+  "projects": "reusable design system rollout - Improved the primary workflow metric by 14%, reduced follow-up support or rework by 8%, and created reusable documentation for future launches. Includes problem framing, constraints, implementation notes, rollout plan, and post-launch measurement. | self-serve analytics dashboard - Improved the primary workflow metric by 15%, reduced follow-up support or rework by 9%, and created reusable documentation for future launches. Includes problem framing, constraints, implementation notes, rollout plan, and post-launch measurement. | checkout performance rebuild - Improved the primary workflow metric by 16%, reduced follow-up support or rework by 10%, and created reusable documentation for future launches. Includes problem framing, constraints, implementation notes, rollout plan, and post-launch measurement.",
+  "portfolioProjects": [
+    {
+      "name": "reusable design system rollout",
+      "role": "Senior Frontend Engineer",
+      "description": "Portfolio-ready case study showing how JavaScript, TypeScript, React, Next.js, Vue were applied to a realistic Frontend Engineer problem.",
+      "highlights": [
+        "Improved the primary workflow metric by 14%, reduced follow-up support or rework by 8%, and created reusable documentation for future launches.",
+        "Includes problem framing, constraints, implementation notes, rollout plan, and post-launch measurement."
+      ],
+      "metrics": [
+        "14% primary workflow improvement",
+        "8% reduction in support or rework",
+        "6-week delivery window"
+      ],
+      "keywords": [
+        "JavaScript",
+        "TypeScript",
+        "React",
+        "Next.js",
+        "Vue",
+        "Nuxt",
+        "Svelte",
+        "Node.js",
+        "HTML"
+      ],
+      "url": "https://portfolio.example.test/case-study/0001-1"
+    },
+    {
+      "name": "self-serve analytics dashboard",
+      "role": "Senior Frontend Engineer",
+      "description": "Portfolio-ready case study showing how TypeScript, React, Next.js, Vue, Nuxt were applied to a realistic Frontend Engineer problem.",
+      "highlights": [
+        "Improved the primary workflow metric by 15%, reduced follow-up support or rework by 9%, and created reusable documentation for future launches.",
+        "Includes problem framing, constraints, implementation notes, rollout plan, and post-launch measurement."
+      ],
+      "metrics": [
+        "15% primary workflow improvement",
+        "9% reduction in support or rework",
+        "7-week delivery window"
+      ],
+      "keywords": [
+        "TypeScript",
+        "React",
+        "Next.js",
+        "Vue",
+        "Nuxt",
+        "Svelte",
+        "Node.js",
+        "HTML",
+        "CSS"
+      ],
+      "url": "https://portfolio.example.test/case-study/0001-2"
+    },
+    {
+      "name": "checkout performance rebuild",
+      "role": "Senior Frontend Engineer",
+      "description": "Portfolio-ready case study showing how React, Next.js, Vue, Nuxt, Svelte were applied to a realistic Frontend Engineer problem.",
+      "highlights": [
+        "Improved the primary workflow metric by 16%, reduced follow-up support or rework by 10%, and created reusable documentation for future launches.",
+        "Includes problem framing, constraints, implementation notes, rollout plan, and post-launch measurement."
+      ],
+      "metrics": [
+        "16% primary workflow improvement",
+        "10% reduction in support or rework",
+        "8-week delivery window"
+      ],
+      "keywords": [
+        "React",
+        "Next.js",
+        "Vue",
+        "Nuxt",
+        "Svelte",
+        "Node.js",
+        "HTML",
+        "CSS",
+        "Sass"
+      ],
+      "url": "https://portfolio.example.test/case-study/0001-3"
+    }
+  ],
+  "projectHighlights": [
+    {
+      "name": "reusable design system rollout",
+      "impact": "Improved the primary workflow metric by 14%, reduced follow-up support or rework by 8%, and created reusable documentation for future launches.",
+      "metrics": [
+        "14% primary workflow improvement",
+        "8% reduction in support or rework",
+        "6-week delivery window"
+      ]
+    },
+    {
+      "name": "self-serve analytics dashboard",
+      "impact": "Improved the primary workflow metric by 15%, reduced follow-up support or rework by 9%, and created reusable documentation for future launches.",
+      "metrics": [
+        "15% primary workflow improvement",
+        "9% reduction in support or rework",
+        "7-week delivery window"
+      ]
+    },
+    {
+      "name": "checkout performance rebuild",
+      "impact": "Improved the primary workflow metric by 16%, reduced follow-up support or rework by 10%, and created reusable documentation for future launches.",
+      "metrics": [
+        "16% primary workflow improvement",
+        "10% reduction in support or rework",
+        "8-week delivery window"
+      ]
+    }
+  ],
+  "proofPoints": [
+    {
+      "id": "active-proof-1",
+      "title": "Design system migration",
+      "theme": "design systems and accessibility",
+      "situation": "A B2B SaaS product had duplicated UI patterns across five product areas, inconsistent accessibility behavior, and slow feature delivery because every team rebuilt common states differently.",
+      "task": "Lead the component migration plan, align design and engineering tokens, and prove that the system improved speed and quality without blocking roadmap work.",
+      "action": "Audited 118 screens, grouped recurring patterns into 46 reusable components, partnered with design in Figma, added Storybook states, wrote TypeScript props contracts, and introduced WCAG AA checks plus Playwright visual smoke tests.",
+      "result": "Reduced average UI implementation time by 32%, lifted WCAG AA coverage from 71% to 94%, and cut design QA rework by 28% within two quarters.",
+      "metrics": [
+        "46 reusable components",
+        "32% faster UI implementation",
+        "94% WCAG AA coverage",
+        "28% less design QA rework"
+      ],
+      "keywords": [
+        "TypeScript",
+        "React",
+        "Storybook",
+        "Figma",
+        "Design Systems",
+        "Accessibility",
+        "WCAG AA",
+        "Playwright"
+      ],
+      "applicableQuestions": [
+        "Tell me about a project you are proud of.",
+        "How have you improved engineering quality?",
+        "Tell me about a time you influenced multiple teams."
+      ]
+    },
+    {
+      "id": "active-proof-2",
+      "title": "Analytics dashboard rebuild",
+      "theme": "performance and data-heavy workflows",
+      "situation": "Customer success teams relied on a slow analytics dashboard that loaded too much client-side data and made account reviews painful during live calls.",
+      "task": "Rebuild the highest-traffic dashboard experience while preserving existing permissions, filters, and customer-facing metrics.",
+      "action": "Moved the flow to Next.js and TypeScript, split queries by intent, added API-level pagination, introduced loading skeletons, instrumented Core Web Vitals, and worked with data analysts to validate metric parity.",
+      "result": "Reduced median load time from 4.8s to 2.1s, improved weekly active usage by 21%, and lowered dashboard-related support tickets by 23%.",
+      "metrics": [
+        "4.8s to 2.1s median load time",
+        "21% higher weekly active usage",
+        "23% fewer support tickets"
+      ],
+      "keywords": [
+        "Next.js",
+        "TypeScript",
+        "React",
+        "Core Web Vitals",
+        "Analytics",
+        "Dashboard",
+        "REST API",
+        "Product Analytics"
+      ],
+      "applicableQuestions": [
+        "Tell me about a performance project.",
+        "How do you use data to prioritize?",
+        "Describe a complex technical tradeoff."
+      ]
+    },
+    {
+      "id": "active-proof-3",
+      "title": "Self-serve onboarding optimization",
+      "theme": "product experimentation and activation",
+      "situation": "Trial users were dropping before reaching the first meaningful dashboard insight, and the team lacked clear event data to identify the friction.",
+      "task": "Instrument the onboarding funnel, identify the largest drop-off points, and ship experiments that improved activation without increasing support load.",
+      "action": "Defined activation events with product and data, added Amplitude tracking, redesigned the setup checklist in Figma, implemented guided defaults in React, and ran five A/B tests across copy, ordering, and template selection.",
+      "result": "Improved activation by 18%, increased template completion by 26%, and produced an experiment readout that became the team standard for onboarding work.",
+      "metrics": [
+        "18% activation lift",
+        "26% higher template completion",
+        "5 A/B tests shipped"
+      ],
+      "keywords": [
+        "A/B Testing",
+        "Amplitude",
+        "React",
+        "Figma",
+        "Product Analytics",
+        "User Research",
+        "Onboarding"
+      ],
+      "applicableQuestions": [
+        "Tell me about a time you improved a metric.",
+        "How do you validate product decisions?",
+        "Tell me about handling ambiguity."
+      ]
+    },
+    {
+      "id": "active-proof-4",
+      "title": "Checkout reliability program",
+      "theme": "quality and revenue protection",
+      "situation": "Revenue-critical checkout paths had intermittent regressions because manual QA could not cover all plan, coupon, tax, and payment state combinations before each release.",
+      "task": "Create automated coverage for the highest-risk checkout paths and make failures actionable for developers before release freeze.",
+      "action": "Mapped 22 revenue-critical scenarios, added Playwright tests with seeded test accounts, mocked third-party payment edge cases, and created a release dashboard in GitHub Actions for pass rate, flake rate, and defect trends.",
+      "result": "Reduced release-blocking checkout defects by 29%, cut manual regression time by 11 hours per release, and improved confidence for weekly deployments.",
+      "metrics": [
+        "22 critical paths covered",
+        "29% fewer release-blocking defects",
+        "11 hours saved per release"
+      ],
+      "keywords": [
+        "Playwright",
+        "GitHub Actions",
+        "Testing",
+        "Stripe API",
+        "CI/CD",
+        "Release Quality",
+        "TypeScript"
+      ],
+      "applicableQuestions": [
+        "Tell me about preventing a production issue.",
+        "How do you decide what to automate?",
+        "Describe a time you improved team reliability."
+      ]
+    }
+  ],
+  "starStories": [
+    {
+      "id": "story-1",
+      "theme": "design systems and accessibility",
+      "sourceProof": "Design system migration: Reduced average UI implementation time by 32%, lifted WCAG AA coverage from 71% to 94%, and cut design QA rework by 28% within two quarters.",
+      "applicableQuestions": [
+        "Tell me about a project you are proud of.",
+        "How have you improved engineering quality?",
+        "Tell me about a time you influenced multiple teams."
+      ],
+      "star": {
+        "situation": "A B2B SaaS product had duplicated UI patterns across five product areas, inconsistent accessibility behavior, and slow feature delivery because every team rebuilt common states differently.",
+        "task": "Lead the component migration plan, align design and engineering tokens, and prove that the system improved speed and quality without blocking roadmap work.",
+        "action": "Audited 118 screens, grouped recurring patterns into 46 reusable components, partnered with design in Figma, added Storybook states, wrote TypeScript props contracts, and introduced WCAG AA checks plus Playwright visual smoke tests.",
+        "result": "Reduced average UI implementation time by 32%, lifted WCAG AA coverage from 71% to 94%, and cut design QA rework by 28% within two quarters.",
+        "reflection": "This story is strongest when positioned around design systems and accessibility: it shows ownership, measurable execution, and a repeatable operating habit rather than a one-off task."
+      },
+      "metrics": [
+        "46 reusable components",
+        "32% faster UI implementation",
+        "94% WCAG AA coverage",
+        "28% less design QA rework"
+      ],
+      "keywords": [
+        "TypeScript",
+        "React",
+        "Storybook",
+        "Figma",
+        "Design Systems",
+        "Accessibility",
+        "WCAG AA",
+        "Playwright"
+      ]
+    },
+    {
+      "id": "story-2",
+      "theme": "performance and data-heavy workflows",
+      "sourceProof": "Analytics dashboard rebuild: Reduced median load time from 4.8s to 2.1s, improved weekly active usage by 21%, and lowered dashboard-related support tickets by 23%.",
+      "applicableQuestions": [
+        "Tell me about a performance project.",
+        "How do you use data to prioritize?",
+        "Describe a complex technical tradeoff."
+      ],
+      "star": {
+        "situation": "Customer success teams relied on a slow analytics dashboard that loaded too much client-side data and made account reviews painful during live calls.",
+        "task": "Rebuild the highest-traffic dashboard experience while preserving existing permissions, filters, and customer-facing metrics.",
+        "action": "Moved the flow to Next.js and TypeScript, split queries by intent, added API-level pagination, introduced loading skeletons, instrumented Core Web Vitals, and worked with data analysts to validate metric parity.",
+        "result": "Reduced median load time from 4.8s to 2.1s, improved weekly active usage by 21%, and lowered dashboard-related support tickets by 23%.",
+        "reflection": "This story is strongest when positioned around performance and data-heavy workflows: it shows ownership, measurable execution, and a repeatable operating habit rather than a one-off task."
+      },
+      "metrics": [
+        "4.8s to 2.1s median load time",
+        "21% higher weekly active usage",
+        "23% fewer support tickets"
+      ],
+      "keywords": [
+        "Next.js",
+        "TypeScript",
+        "React",
+        "Core Web Vitals",
+        "Analytics",
+        "Dashboard",
+        "REST API",
+        "Product Analytics"
+      ]
+    },
+    {
+      "id": "story-3",
+      "theme": "product experimentation and activation",
+      "sourceProof": "Self-serve onboarding optimization: Improved activation by 18%, increased template completion by 26%, and produced an experiment readout that became the team standard for onboarding work.",
+      "applicableQuestions": [
+        "Tell me about a time you improved a metric.",
+        "How do you validate product decisions?",
+        "Tell me about handling ambiguity."
+      ],
+      "star": {
+        "situation": "Trial users were dropping before reaching the first meaningful dashboard insight, and the team lacked clear event data to identify the friction.",
+        "task": "Instrument the onboarding funnel, identify the largest drop-off points, and ship experiments that improved activation without increasing support load.",
+        "action": "Defined activation events with product and data, added Amplitude tracking, redesigned the setup checklist in Figma, implemented guided defaults in React, and ran five A/B tests across copy, ordering, and template selection.",
+        "result": "Improved activation by 18%, increased template completion by 26%, and produced an experiment readout that became the team standard for onboarding work.",
+        "reflection": "This story is strongest when positioned around product experimentation and activation: it shows ownership, measurable execution, and a repeatable operating habit rather than a one-off task."
+      },
+      "metrics": [
+        "18% activation lift",
+        "26% higher template completion",
+        "5 A/B tests shipped"
+      ],
+      "keywords": [
+        "A/B Testing",
+        "Amplitude",
+        "React",
+        "Figma",
+        "Product Analytics",
+        "User Research",
+        "Onboarding"
+      ]
+    },
+    {
+      "id": "story-4",
+      "theme": "quality and revenue protection",
+      "sourceProof": "Checkout reliability program: Reduced release-blocking checkout defects by 29%, cut manual regression time by 11 hours per release, and improved confidence for weekly deployments.",
+      "applicableQuestions": [
+        "Tell me about preventing a production issue.",
+        "How do you decide what to automate?",
+        "Describe a time you improved team reliability."
+      ],
+      "star": {
+        "situation": "Revenue-critical checkout paths had intermittent regressions because manual QA could not cover all plan, coupon, tax, and payment state combinations before each release.",
+        "task": "Create automated coverage for the highest-risk checkout paths and make failures actionable for developers before release freeze.",
+        "action": "Mapped 22 revenue-critical scenarios, added Playwright tests with seeded test accounts, mocked third-party payment edge cases, and created a release dashboard in GitHub Actions for pass rate, flake rate, and defect trends.",
+        "result": "Reduced release-blocking checkout defects by 29%, cut manual regression time by 11 hours per release, and improved confidence for weekly deployments.",
+        "reflection": "This story is strongest when positioned around quality and revenue protection: it shows ownership, measurable execution, and a repeatable operating habit rather than a one-off task."
+      },
+      "metrics": [
+        "22 critical paths covered",
+        "29% fewer release-blocking defects",
+        "11 hours saved per release"
+      ],
+      "keywords": [
+        "Playwright",
+        "GitHub Actions",
+        "Testing",
+        "Stripe API",
+        "CI/CD",
+        "Release Quality",
+        "TypeScript"
+      ]
+    },
+    {
+      "id": "story-5",
+      "theme": "cross-functional roadmap tradeoff",
+      "sourceProof": "Negotiated scope for dashboard rebuild while preserving enterprise reporting commitments.",
+      "applicableQuestions": [
+        "Tell me about a conflict or tradeoff.",
+        "How do you manage stakeholders?",
+        "Tell me about a time you said no."
+      ],
+      "star": {
+        "situation": "Sales needed a custom reporting promise for an enterprise renewal while product and engineering were already committed to the dashboard rebuild.",
+        "task": "Protect the strategic rebuild timeline while giving sales and customer success a credible path for the renewal risk.",
+        "action": "Facilitated a scope review, separated must-have renewal fields from nice-to-have customization, proposed a config-based reporting template, and documented delivery risk with product, sales, and support leads.",
+        "result": "Kept the rebuild on schedule, supported the renewal with a two-week template release, and avoided roughly 6 weeks of one-off custom work.",
+        "reflection": "The reusable template became a better product path than a custom branch, and the story shows judgment under commercial pressure."
+      },
+      "metrics": [
+        "6 weeks of custom work avoided",
+        "2-week template release",
+        "0 rebuild schedule slip"
+      ],
+      "keywords": [
+        "Stakeholder Management",
+        "Roadmap",
+        "Product Engineering",
+        "Enterprise SaaS",
+        "Tradeoff"
+      ]
+    },
+    {
+      "id": "story-6",
+      "theme": "failure recovery and learning",
+      "sourceProof": "Recovered from an onboarding experiment that initially reduced completion for smaller teams.",
+      "applicableQuestions": [
+        "Tell me about a failure.",
+        "What did you learn from a bad result?",
+        "How do you respond when data contradicts your hypothesis?"
+      ],
+      "star": {
+        "situation": "An onboarding experiment designed for enterprise teams added too many setup steps for smaller teams and reduced completion in that segment.",
+        "task": "Diagnose the failed experiment quickly, protect the overall activation metric, and avoid overcorrecting based on one aggregate number.",
+        "action": "Segmented results by company size, interviewed five affected users, rolled back the extra setup step for small teams, and created separate onboarding defaults by segment.",
+        "result": "Recovered the lost completion within one release, then lifted small-team activation by 12% with the segmented flow.",
+        "reflection": "The lesson was to segment earlier and treat onboarding as a set of user paths, not a single universal funnel."
+      },
+      "metrics": [
+        "5 user interviews",
+        "1-release recovery",
+        "12% small-team activation lift"
+      ],
+      "keywords": [
+        "Experimentation",
+        "A/B Testing",
+        "User Research",
+        "Activation",
+        "Product Analytics"
+      ]
+    },
+    {
+      "id": "story-7",
+      "theme": "mentoring and technical leadership",
+      "sourceProof": "Raised team frontend standards through review guides, pairing, and shared component ownership.",
+      "applicableQuestions": [
+        "Tell me about mentoring.",
+        "How do you raise engineering standards?",
+        "How do you scale your impact?"
+      ],
+      "star": {
+        "situation": "Frontend quality depended heavily on a few senior reviewers, creating bottlenecks and inconsistent implementation decisions.",
+        "task": "Help the team make better frontend decisions without routing every question through one person.",
+        "action": "Created review checklists for accessibility and performance, paired with three engineers on TypeScript patterns, and rotated component ownership through weekly office hours.",
+        "result": "Reduced review cycle time by 24%, increased component reuse across four squads, and helped two engineers independently lead complex UI releases.",
+        "reflection": "The durable win was changing the system of review, not just answering more questions."
+      },
+      "metrics": [
+        "24% faster review cycles",
+        "4 squads using shared patterns",
+        "2 engineers leading releases"
+      ],
+      "keywords": [
+        "Mentoring",
+        "Code Review",
+        "TypeScript",
+        "Design Systems",
+        "Frontend Architecture"
+      ]
+    },
+    {
+      "id": "story-8",
+      "theme": "AI-assisted workflow adoption",
+      "sourceProof": "Built a support-summary prototype that reduced manual account review prep.",
+      "applicableQuestions": [
+        "How have you used AI in product work?",
+        "Tell me about adopting a new technology.",
+        "How do you evaluate AI quality?"
+      ],
+      "star": {
+        "situation": "Customer success managers spent significant time reading scattered notes before account review meetings.",
+        "task": "Prototype an AI-assisted summary workflow with enough quality checks to be useful without overpromising automation.",
+        "action": "Connected ticket and account notes to a retrieval flow, designed review states in React, added confidence labels, and evaluated summaries against 40 historical account reviews.",
+        "result": "Saved an estimated 6 hours per manager per month, reached 82% reviewer acceptance on first-pass summaries, and identified guardrails for unsupported claims.",
+        "reflection": "The strongest adoption came from keeping humans in the loop and measuring usefulness, not just model output fluency."
+      },
+      "metrics": [
+        "6 hours saved per manager per month",
+        "82% first-pass acceptance",
+        "40 historical reviews evaluated"
+      ],
+      "keywords": [
+        "AI",
+        "LLM",
+        "RAG",
+        "React",
+        "Evaluation",
+        "Customer Success",
+        "Workflow Automation"
+      ]
+    }
+  ],
+  "education": "Example University of Applied Technology - B.S. Computer Science",
+  "educationHistory": [
+    {
+      "institution": "Example University of Applied Technology",
+      "area": "B.S. Computer Science",
+      "studyType": "Bachelor",
+      "startDate": "2009-09",
+      "endDate": "2013-06",
+      "courses": [
+        "Data Structures",
+        "Human-Computer Interaction",
+        "Statistics"
+      ],
+      "graduationYear": 2013,
+      "location": "Example City",
+      "honors": "Dean's List (synthetic)",
+      "relevantCoursework": [
+        "Data Structures",
+        "Human-Computer Interaction",
+        "Statistics",
+        "Software Engineering"
+      ]
+    }
+  ],
+  "certifications": [
+    {
+      "name": "AWS Certified Cloud Practitioner",
+      "issuer": "Example Credential Provider",
+      "date": "2021-01",
+      "url": "https://credentials.example.test/0001-1"
+    },
+    {
+      "name": "Figma Design Systems Certificate",
+      "issuer": "Example Credential Provider",
+      "date": "2022-02",
+      "url": "https://credentials.example.test/0001-2"
+    },
+    {
+      "name": "Kubernetes Application Developer Foundation",
+      "issuer": "Example Credential Provider",
+      "date": "2023-03",
+      "url": "https://credentials.example.test/0001-3"
+    }
+  ],
+  "languages": [
+    "Mandarin Chinese",
+    "English",
+    "Japanese"
+  ],
+  "awards": [
+    {
+      "title": "Synthetic Impact Recognition",
+      "issuer": "Example Company",
+      "date": "2022-12",
+      "summary": "Recognized for measurable improvements in activation."
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "Example Community Tech Mentors",
+      "role": "Mentor",
+      "highlights": [
+        "Reviewed portfolios and mock interviews for early-career professionals."
+      ]
+    }
+  ],
   "preferences": {
-    "targetRoles": ["Frontend Engineer", "Product Engineer", "Full Stack Engineer"],
-    "keywords": ["remote", "dashboard", "design system", "analytics"],
-    "locations": ["Taipei", "Remote"],
+    "targetRoles": [
+      "Senior Frontend Engineer",
+      "Frontend Engineer",
+      "Product Engineer",
+      "Senior Product Engineer",
+      "Frontend Platform Engineer",
+      "Full Stack Engineer"
+    ],
+    "keywords": [
+      "remote",
+      "frontend",
+      "product engineer",
+      "typescript",
+      "react",
+      "next.js",
+      "vue",
+      "figma",
+      "design system",
+      "dashboard",
+      "analytics",
+      "accessibility",
+      "performance",
+      "playwright",
+      "storybook",
+      "a/b testing",
+      "core web vitals",
+      "saas",
+      "platform",
+      "user research",
+      "data visualization",
+      "graphql",
+      "rest api",
+      "tailwind css",
+      "JavaScript",
+      "Nuxt",
+      "Svelte",
+      "Node.js",
+      "HTML",
+      "CSS",
+      "Sass",
+      "CSS Modules",
+      "Vite",
+      "Webpack",
+      "Design Systems",
+      "Design Tokens"
+    ],
+    "locations": [
+      "Taipei",
+      "Remote",
+      "Singapore",
+      "Tokyo",
+      "Melbourne"
+    ],
     "companies": [],
-    "avoidKeywords": ["commission-only", "unpaid"]
-  }
+    "avoidKeywords": [
+      "commission-only",
+      "unpaid",
+      "training fee",
+      "deposit required",
+      "no interview",
+      "whatsapp only",
+      "legacy jQuery only"
+    ],
+    "salaryMin": 128000,
+    "northStar": "Build accessible, fast, measurable product experiences that connect strong frontend craft with business outcomes.",
+    "remote": true
+  },
+  "ats": {
+    "keywordDensity": "very high",
+    "primaryKeywords": [
+      "JavaScript",
+      "TypeScript",
+      "React",
+      "Next.js",
+      "Vue",
+      "Nuxt",
+      "Svelte",
+      "Node.js",
+      "HTML",
+      "CSS",
+      "Sass",
+      "Tailwind CSS",
+      "CSS Modules",
+      "Vite",
+      "Webpack",
+      "Storybook",
+      "Figma",
+      "Design Systems",
+      "Design Tokens",
+      "Accessibility",
+      "WCAG AA",
+      "ARIA",
+      "Core Web Vitals",
+      "Performance Optimization",
+      "Responsive Design",
+      "GraphQL",
+      "REST API",
+      "OpenAPI",
+      "PostgreSQL",
+      "Supabase",
+      "Firebase",
+      "Prisma",
+      "Vercel",
+      "Docker",
+      "GitHub Actions",
+      "CI/CD",
+      "Playwright",
+      "Cypress",
+      "Vitest",
+      "Jest",
+      "Testing Library",
+      "Product Analytics",
+      "Amplitude",
+      "Mixpanel",
+      "GA4",
+      "A/B Testing",
+      "Data Visualization",
+      "ECharts",
+      "remote",
+      "frontend",
+      "product engineer",
+      "design system",
+      "dashboard",
+      "analytics",
+      "performance",
+      "saas",
+      "platform",
+      "user research"
+    ],
+    "roleKeywords": [
+      "Frontend Engineer",
+      "Senior Frontend Engineer",
+      "Product Engineer",
+      "Senior Product Engineer",
+      "Frontend Platform Engineer",
+      "Full Stack Engineer"
+    ],
+    "evidenceLevel": "8 quantified STAR stories, 3 roles, 3 portfolio projects",
+    "hasQuantifiedStories": true,
+    "atsReady": true,
+    "parserFriendlySections": [
+      "basics",
+      "professionalSummary",
+      "skills",
+      "workExperience",
+      "portfolioProjects",
+      "educationHistory",
+      "certifications",
+      "employmentHistory",
+      "skillExperience",
+      "educationDetails",
+      "compensationExpectations",
+      "personalLinks",
+      "workAuthorization",
+      "languageProficiencies"
+    ],
+    "hasStructuredEmploymentHistory": true,
+    "hasSkillYears": true,
+    "hasCompensationAnchors": true,
+    "hasWorkAuthorization": true,
+    "hasLanguageTestLevels": true,
+    "hasPersonalLinks": true
+  },
+  "resumeText": "Synthetic Active Candidate - Senior Frontend Product Engineer | TypeScript, React, Next.js, Vue, Figma, Design Systems, Analytics\nactive-senior-frontend-profile@example.test | https://portfolio.example.test/active-senior-frontend-profile | Taipei\n\nSUMMARY\nSenior frontend and product engineer with 7+ years building TypeScript, React, Next.js, Vue, and design-system-heavy SaaS products. Led dashboard, onboarding, and checkout initiatives that improved activation by 18%, reduced page load time by 41%, raised accessibility coverage to WCAG AA, and cut support tickets by 23%. Strong ATS keyword coverage across JavaScript, TypeScript, React, Next.js, Vue, Nuxt, Figma, Storybook, Tailwind CSS, GraphQL, REST API, Playwright, Vitest, product analytics, A/B testing, and Core Web Vitals. Comfortable owning ambiguous product problems from discovery through launch, including user research, cross-functional planning, implementation, instrumentation, rollout, and post-launch iteration.\n\nSKILLS\nJavaScript, TypeScript, React, Next.js, Vue, Nuxt, Svelte, Node.js, HTML, CSS, Sass, Tailwind CSS, CSS Modules, Vite, Webpack, Storybook, Figma, Design Systems, Design Tokens, Accessibility, WCAG AA, ARIA, Core Web Vitals, Performance Optimization, Responsive Design, GraphQL, REST API, OpenAPI, PostgreSQL, Supabase, Firebase, Prisma, Vercel, Docker, GitHub Actions, CI/CD, Playwright, Cypress, Vitest, Jest, Testing Library, Product Analytics, Amplitude, Mixpanel, GA4, A/B Testing, Data Visualization, ECharts\n\nEXPERIENCE\nSenior Frontend Engineer, Northstar Analytics Example (2023-01 - Present)\n- Led reusable design system rollout using JavaScript, TypeScript, React, Next.js, improving activation by 23% for roughly 1,200 users or internal workflow participants.\n- Built measurement and rollout practices across React, Next.js, Vue, Nuxt, reducing release defect rate by 16% and making weekly decision reviews faster for 38 stakeholders.\n- Partnered with engineering, support, and sales to turn ambiguous requirements into scoped milestones, acceptance criteria, dashboards, and launch notes.\n- Created reusable documentation, QA checklists, and handoff templates that shortened onboarding for new contributors by 31%.\n\nFrontend Engineer, Orbit Systems Example (2020-02 - 2023-08)\n- Owned self-serve analytics dashboard using Nuxt, Svelte, Node.js, HTML, improving retention by 34% for roughly 1,709 users or internal workflow participants.\n- Built measurement and rollout practices across Node.js, HTML, CSS, Sass, reducing support volume by 27% and making weekly decision reviews faster for 55 stakeholders.\n- Partnered with security, QA, and platform to turn ambiguous requirements into scoped milestones, acceptance criteria, dashboards, and launch notes.\n- Created reusable documentation, QA checklists, and handoff templates that shortened onboarding for new contributors by 16%.\n\nSoftware Engineer, Beacon Works Example (2017-03 - 2020-09)\n- Rebuilt checkout performance rebuild using Sass, Tailwind CSS, CSS Modules, Vite, improving conversion by 14% for roughly 2,218 users or internal workflow participants.\n- Built measurement and rollout practices across CSS Modules, Vite, Webpack, Storybook, reducing forecast variance by 15% and making weekly decision reviews faster for 14 stakeholders.\n- Partnered with customer success, operations, and leadership to turn ambiguous requirements into scoped milestones, acceptance criteria, dashboards, and launch notes.\n- Created reusable documentation, QA checklists, and handoff templates that shortened onboarding for new contributors by 27%.\n\nPROJECTS\n- reusable design system rollout: Improved the primary workflow metric by 14%, reduced follow-up support or rework by 8%, and created reusable documentation for future launches. Includes problem framing, constraints, implementation notes, rollout plan, and post-launch measurement.\n- self-serve analytics dashboard: Improved the primary workflow metric by 15%, reduced follow-up support or rework by 9%, and created reusable documentation for future launches. Includes problem framing, constraints, implementation notes, rollout plan, and post-launch measurement.\n- checkout performance rebuild: Improved the primary workflow metric by 16%, reduced follow-up support or rework by 10%, and created reusable documentation for future launches. Includes problem framing, constraints, implementation notes, rollout plan, and post-launch measurement.\n\nEDUCATION\nBachelor, B.S. Computer Science, Example University of Applied Technology\n\nCERTIFICATIONS\nAWS Certified Cloud Practitioner, Figma Design Systems Certificate, Kubernetes Application Developer Foundation\n\nSELECTED SKILL DEPTH\nJavaScript (Expert, 10.3 yrs), TypeScript (Expert, 10.1 yrs), React (Expert, 9.6 yrs), Next.js (Expert, 10.3 yrs), Vue (Expert, 10.1 yrs), Nuxt (Expert, 9.6 yrs), Svelte (Expert, 10.3 yrs), Node.js (Expert, 10.1 yrs), HTML (Expert, 9.6 yrs), CSS (Expert, 10.3 yrs), Sass (Advanced, 3.1 yrs), Tailwind CSS (Advanced, 3.3 yrs), CSS Modules (Advanced, 3.5 yrs), Vite (Advanced, 3.7 yrs), Webpack (Advanced, 3.9 yrs), Storybook (Advanced, 4.1 yrs), Figma (Expert, 4.3 yrs), Design Systems (Advanced, 4.5 yrs)\n\nLANGUAGE LEVELS\nMandarin Chinese: Native or bilingual; English: Upper-intermediate to advanced [92/6.5]; Japanese: Business Japanese [N1]\n\nWORK AUTHORIZATION\nTaiwan authorized. Japan: Eligible for Engineer/Specialist in Humanities/International Services work-visa path in synthetic scenario. Notice: 30 days.\n\nCOMPENSATION EXPECTATIONS\nTaiwan TWD 137000-184000/month; Japan JPY 9000000-12000000/year; Remote USD 115000-151000/year.\n\nPERSONAL LINKS\nLinkedIn: https://linkedin.example.test/in/active-senior-frontend-profile | GitHub: https://github.example.test/active-senior-frontend-profile | Portfolio: https://portfolio.example.test/active-senior-frontend-profile",
+  "employmentHistory": [
+    {
+      "company": "Northstar Analytics Example",
+      "position": "Senior Frontend Engineer",
+      "employmentType": "Full-time",
+      "location": "Taipei",
+      "startDate": "2023-01",
+      "endDate": "Present",
+      "industry": "B2B SaaS",
+      "summary": "Senior Frontend Engineer for a B2B SaaS team, owning reusable design system rollout and cross-functional delivery with product, design, and data stakeholders.",
+      "highlights": [
+        "Led reusable design system rollout using JavaScript, TypeScript, React, Next.js, improving activation by 23% for roughly 1,200 users or internal workflow participants.",
+        "Built measurement and rollout practices across React, Next.js, Vue, Nuxt, reducing release defect rate by 16% and making weekly decision reviews faster for 38 stakeholders.",
+        "Partnered with engineering, support, and sales to turn ambiguous requirements into scoped milestones, acceptance criteria, dashboards, and launch notes.",
+        "Created reusable documentation, QA checklists, and handoff templates that shortened onboarding for new contributors by 31%."
+      ],
+      "technologies": [
+        "JavaScript",
+        "TypeScript",
+        "React",
+        "Next.js",
+        "Vue",
+        "Nuxt",
+        "Svelte"
+      ],
+      "metrics": [
+        "23% activation improvement",
+        "16% reduction in release defect rate",
+        "38 stakeholders supported"
+      ],
+      "achievements": [
+        "Led reusable design system rollout using JavaScript, TypeScript, React, Next.js, improving activation by 23% for roughly 1,200 users or internal workflow participants.",
+        "Built measurement and rollout practices across React, Next.js, Vue, Nuxt, reducing release defect rate by 16% and making weekly decision reviews faster for 38 stakeholders.",
+        "Partnered with engineering, support, and sales to turn ambiguous requirements into scoped milestones, acceptance criteria, dashboards, and launch notes.",
+        "Created reusable documentation, QA checklists, and handoff templates that shortened onboarding for new contributors by 31%."
+      ],
+      "startYear": 2023,
+      "endYear": null,
+      "durationMonths": 40,
+      "durationYears": 3.3
+    },
+    {
+      "company": "Orbit Systems Example",
+      "position": "Frontend Engineer",
+      "employmentType": "Full-time",
+      "location": "Remote",
+      "startDate": "2020-02",
+      "endDate": "2023-08",
+      "industry": "fintech",
+      "summary": "Frontend Engineer for a fintech team, owning self-serve analytics dashboard and cross-functional delivery with engineering, support, and sales stakeholders.",
+      "highlights": [
+        "Owned self-serve analytics dashboard using Nuxt, Svelte, Node.js, HTML, improving retention by 34% for roughly 1,709 users or internal workflow participants.",
+        "Built measurement and rollout practices across Node.js, HTML, CSS, Sass, reducing support volume by 27% and making weekly decision reviews faster for 55 stakeholders.",
+        "Partnered with security, QA, and platform to turn ambiguous requirements into scoped milestones, acceptance criteria, dashboards, and launch notes.",
+        "Created reusable documentation, QA checklists, and handoff templates that shortened onboarding for new contributors by 16%."
+      ],
+      "technologies": [
+        "Nuxt",
+        "Svelte",
+        "Node.js",
+        "HTML",
+        "CSS",
+        "Sass",
+        "Tailwind CSS"
+      ],
+      "metrics": [
+        "34% retention improvement",
+        "27% reduction in support volume",
+        "55 stakeholders supported"
+      ],
+      "achievements": [
+        "Owned self-serve analytics dashboard using Nuxt, Svelte, Node.js, HTML, improving retention by 34% for roughly 1,709 users or internal workflow participants.",
+        "Built measurement and rollout practices across Node.js, HTML, CSS, Sass, reducing support volume by 27% and making weekly decision reviews faster for 55 stakeholders.",
+        "Partnered with security, QA, and platform to turn ambiguous requirements into scoped milestones, acceptance criteria, dashboards, and launch notes.",
+        "Created reusable documentation, QA checklists, and handoff templates that shortened onboarding for new contributors by 16%."
+      ],
+      "startYear": 2020,
+      "endYear": 2023,
+      "durationMonths": 42,
+      "durationYears": 3.5
+    },
+    {
+      "company": "Beacon Works Example",
+      "position": "Software Engineer",
+      "employmentType": "Full-time",
+      "location": "Singapore",
+      "startDate": "2017-03",
+      "endDate": "2020-09",
+      "industry": "healthtech",
+      "summary": "Software Engineer for a healthtech team, owning checkout performance rebuild and cross-functional delivery with security, QA, and platform stakeholders.",
+      "highlights": [
+        "Rebuilt checkout performance rebuild using Sass, Tailwind CSS, CSS Modules, Vite, improving conversion by 14% for roughly 2,218 users or internal workflow participants.",
+        "Built measurement and rollout practices across CSS Modules, Vite, Webpack, Storybook, reducing forecast variance by 15% and making weekly decision reviews faster for 14 stakeholders.",
+        "Partnered with customer success, operations, and leadership to turn ambiguous requirements into scoped milestones, acceptance criteria, dashboards, and launch notes.",
+        "Created reusable documentation, QA checklists, and handoff templates that shortened onboarding for new contributors by 27%."
+      ],
+      "technologies": [
+        "Sass",
+        "Tailwind CSS",
+        "CSS Modules",
+        "Vite",
+        "Webpack",
+        "Storybook",
+        "Figma"
+      ],
+      "metrics": [
+        "14% conversion improvement",
+        "15% reduction in forecast variance",
+        "14 stakeholders supported"
+      ],
+      "achievements": [
+        "Rebuilt checkout performance rebuild using Sass, Tailwind CSS, CSS Modules, Vite, improving conversion by 14% for roughly 2,218 users or internal workflow participants.",
+        "Built measurement and rollout practices across CSS Modules, Vite, Webpack, Storybook, reducing forecast variance by 15% and making weekly decision reviews faster for 14 stakeholders.",
+        "Partnered with customer success, operations, and leadership to turn ambiguous requirements into scoped milestones, acceptance criteria, dashboards, and launch notes.",
+        "Created reusable documentation, QA checklists, and handoff templates that shortened onboarding for new contributors by 27%."
+      ],
+      "startYear": 2017,
+      "endYear": 2020,
+      "durationMonths": 42,
+      "durationYears": 3.5
+    }
+  ],
+  "careerTimeline": {
+    "totalYears": 10.3,
+    "currentTenureYears": 3.3,
+    "companiesCount": 3,
+    "hasPromotionPattern": true,
+    "trajectory": [
+      {
+        "company": "Northstar Analytics Example",
+        "title": "Senior Frontend Engineer",
+        "startDate": "2023-01",
+        "endDate": "Present",
+        "durationMonths": 40,
+        "durationYears": 3.3,
+        "seniorityRank": 3,
+        "progressionOrder": 1
+      },
+      {
+        "company": "Orbit Systems Example",
+        "title": "Frontend Engineer",
+        "startDate": "2020-02",
+        "endDate": "2023-08",
+        "durationMonths": 42,
+        "durationYears": 3.5,
+        "seniorityRank": 2,
+        "progressionOrder": 2
+      },
+      {
+        "company": "Beacon Works Example",
+        "title": "Software Engineer",
+        "startDate": "2017-03",
+        "endDate": "2020-09",
+        "durationMonths": 42,
+        "durationYears": 3.5,
+        "seniorityRank": 2,
+        "progressionOrder": 3
+      }
+    ]
+  },
+  "totalYearsOfExperience": 10.3,
+  "skillExperience": [
+    {
+      "skill": "JavaScript",
+      "category": "technical",
+      "proficiency": "Expert",
+      "yearsOfExperience": 10.3,
+      "lastUsed": "2026",
+      "firstUsed": "2015",
+      "evidence": [
+        "Senior Frontend Engineer at Northstar Analytics Example",
+        "Used directly in Senior Frontend Engineer for a B2B SaaS team, owning reusable design system rollout and cross-functional delivery with product, design, and data stakeholders."
+      ],
+      "contexts": [
+        "B2B SaaS",
+        "Frontend Engineer",
+        "Senior Frontend Engineer"
+      ]
+    },
+    {
+      "skill": "TypeScript",
+      "category": "technical",
+      "proficiency": "Expert",
+      "yearsOfExperience": 10.1,
+      "lastUsed": "2026",
+      "firstUsed": "2015",
+      "evidence": [
+        "Frontend Engineer at Orbit Systems Example"
+      ],
+      "contexts": [
+        "fintech",
+        "Frontend Engineer",
+        "Senior Frontend Engineer"
+      ]
+    },
+    {
+      "skill": "React",
+      "category": "technical",
+      "proficiency": "Expert",
+      "yearsOfExperience": 9.6,
+      "lastUsed": "2026",
+      "firstUsed": "2016",
+      "evidence": [
+        "Software Engineer at Beacon Works Example"
+      ],
+      "contexts": [
+        "healthtech",
+        "Frontend Engineer",
+        "Senior Frontend Engineer"
+      ]
+    },
+    {
+      "skill": "Next.js",
+      "category": "technical",
+      "proficiency": "Expert",
+      "yearsOfExperience": 10.3,
+      "lastUsed": "2026",
+      "firstUsed": "2015",
+      "evidence": [
+        "Senior Frontend Engineer at Northstar Analytics Example",
+        "Used directly in Senior Frontend Engineer for a B2B SaaS team, owning reusable design system rollout and cross-functional delivery with product, design, and data stakeholders."
+      ],
+      "contexts": [
+        "B2B SaaS",
+        "Frontend Engineer",
+        "Senior Frontend Engineer"
+      ]
+    },
+    {
+      "skill": "Vue",
+      "category": "technical",
+      "proficiency": "Expert",
+      "yearsOfExperience": 10.1,
+      "lastUsed": "2026",
+      "firstUsed": "2015",
+      "evidence": [
+        "Frontend Engineer at Orbit Systems Example"
+      ],
+      "contexts": [
+        "fintech",
+        "Frontend Engineer",
+        "Senior Frontend Engineer"
+      ]
+    },
+    {
+      "skill": "Nuxt",
+      "category": "domain",
+      "proficiency": "Expert",
+      "yearsOfExperience": 9.6,
+      "lastUsed": "2026",
+      "firstUsed": "2016",
+      "evidence": [
+        "Software Engineer at Beacon Works Example"
+      ],
+      "contexts": [
+        "healthtech",
+        "Frontend Engineer",
+        "Senior Frontend Engineer"
+      ]
+    },
+    {
+      "skill": "Svelte",
+      "category": "domain",
+      "proficiency": "Expert",
+      "yearsOfExperience": 10.3,
+      "lastUsed": "2026",
+      "firstUsed": "2015",
+      "evidence": [
+        "Senior Frontend Engineer at Northstar Analytics Example",
+        "Used directly in Senior Frontend Engineer for a B2B SaaS team, owning reusable design system rollout and cross-functional delivery with product, design, and data stakeholders."
+      ],
+      "contexts": [
+        "B2B SaaS",
+        "Frontend Engineer",
+        "Senior Frontend Engineer"
+      ]
+    },
+    {
+      "skill": "Node.js",
+      "category": "technical",
+      "proficiency": "Expert",
+      "yearsOfExperience": 10.1,
+      "lastUsed": "2026",
+      "firstUsed": "2015",
+      "evidence": [
+        "Frontend Engineer at Orbit Systems Example",
+        "Used directly in Frontend Engineer for a fintech team, owning self-serve analytics dashboard and cross-functional delivery with engineering, support, and sales stakeholders."
+      ],
+      "contexts": [
+        "fintech",
+        "Frontend Engineer",
+        "Senior Frontend Engineer"
+      ]
+    },
+    {
+      "skill": "HTML",
+      "category": "domain",
+      "proficiency": "Expert",
+      "yearsOfExperience": 9.6,
+      "lastUsed": "2026",
+      "firstUsed": "2016",
+      "evidence": [
+        "Software Engineer at Beacon Works Example"
+      ],
+      "contexts": [
+        "healthtech",
+        "Frontend Engineer",
+        "Senior Frontend Engineer"
+      ]
+    },
+    {
+      "skill": "CSS",
+      "category": "domain",
+      "proficiency": "Expert",
+      "yearsOfExperience": 10.3,
+      "lastUsed": "2026",
+      "firstUsed": "2015",
+      "evidence": [
+        "Senior Frontend Engineer at Northstar Analytics Example"
+      ],
+      "contexts": [
+        "B2B SaaS",
+        "Frontend Engineer",
+        "Senior Frontend Engineer"
+      ]
+    },
+    {
+      "skill": "Sass",
+      "category": "domain",
+      "proficiency": "Advanced",
+      "yearsOfExperience": 3.1,
+      "lastUsed": "2026",
+      "firstUsed": "2022",
+      "evidence": [
+        "Frontend Engineer at Orbit Systems Example",
+        "Used directly in Frontend Engineer for a fintech team, owning self-serve analytics dashboard and cross-functional delivery with engineering, support, and sales stakeholders."
+      ],
+      "contexts": [
+        "fintech",
+        "Frontend Engineer",
+        "Senior Frontend Engineer"
+      ]
+    },
+    {
+      "skill": "Tailwind CSS",
+      "category": "domain",
+      "proficiency": "Advanced",
+      "yearsOfExperience": 3.3,
+      "lastUsed": "2026",
+      "firstUsed": "2022",
+      "evidence": [
+        "Software Engineer at Beacon Works Example",
+        "Used directly in Software Engineer for a healthtech team, owning checkout performance rebuild and cross-functional delivery with security, QA, and platform stakeholders."
+      ],
+      "contexts": [
+        "healthtech",
+        "Frontend Engineer",
+        "Senior Frontend Engineer"
+      ]
+    },
+    {
+      "skill": "CSS Modules",
+      "category": "domain",
+      "proficiency": "Advanced",
+      "yearsOfExperience": 3.5,
+      "lastUsed": "2026",
+      "firstUsed": "2022",
+      "evidence": [
+        "Senior Frontend Engineer at Northstar Analytics Example"
+      ],
+      "contexts": [
+        "B2B SaaS",
+        "Frontend Engineer",
+        "Senior Frontend Engineer"
+      ]
+    },
+    {
+      "skill": "Vite",
+      "category": "domain",
+      "proficiency": "Advanced",
+      "yearsOfExperience": 3.7,
+      "lastUsed": "2026",
+      "firstUsed": "2022",
+      "evidence": [
+        "Frontend Engineer at Orbit Systems Example"
+      ],
+      "contexts": [
+        "fintech",
+        "Frontend Engineer",
+        "Senior Frontend Engineer"
+      ]
+    },
+    {
+      "skill": "Webpack",
+      "category": "domain",
+      "proficiency": "Advanced",
+      "yearsOfExperience": 3.9,
+      "lastUsed": "2026",
+      "firstUsed": "2022",
+      "evidence": [
+        "Software Engineer at Beacon Works Example",
+        "Used directly in Software Engineer for a healthtech team, owning checkout performance rebuild and cross-functional delivery with security, QA, and platform stakeholders."
+      ],
+      "contexts": [
+        "healthtech",
+        "Frontend Engineer",
+        "Senior Frontend Engineer"
+      ]
+    },
+    {
+      "skill": "Storybook",
+      "category": "domain",
+      "proficiency": "Advanced",
+      "yearsOfExperience": 4.1,
+      "lastUsed": "2026",
+      "firstUsed": "2021",
+      "evidence": [
+        "Senior Frontend Engineer at Northstar Analytics Example"
+      ],
+      "contexts": [
+        "B2B SaaS",
+        "Frontend Engineer",
+        "Senior Frontend Engineer"
+      ]
+    },
+    {
+      "skill": "Figma",
+      "category": "product-business",
+      "proficiency": "Expert",
+      "yearsOfExperience": 4.3,
+      "lastUsed": "2026",
+      "firstUsed": "2021",
+      "evidence": [
+        "Frontend Engineer at Orbit Systems Example"
+      ],
+      "contexts": [
+        "fintech",
+        "Frontend Engineer",
+        "Senior Frontend Engineer"
+      ]
+    },
+    {
+      "skill": "Design Systems",
+      "category": "product-business",
+      "proficiency": "Advanced",
+      "yearsOfExperience": 4.5,
+      "lastUsed": "2026",
+      "firstUsed": "2021",
+      "evidence": [
+        "Software Engineer at Beacon Works Example"
+      ],
+      "contexts": [
+        "healthtech",
+        "Frontend Engineer",
+        "Senior Frontend Engineer"
+      ]
+    },
+    {
+      "skill": "Design Tokens",
+      "category": "product-business",
+      "proficiency": "Advanced",
+      "yearsOfExperience": 4.7,
+      "lastUsed": "2026",
+      "firstUsed": "2021",
+      "evidence": [
+        "Senior Frontend Engineer at Northstar Analytics Example"
+      ],
+      "contexts": [
+        "B2B SaaS",
+        "Frontend Engineer",
+        "Senior Frontend Engineer"
+      ]
+    },
+    {
+      "skill": "Accessibility",
+      "category": "product-business",
+      "proficiency": "Advanced",
+      "yearsOfExperience": 4.9,
+      "lastUsed": "2026",
+      "firstUsed": "2021",
+      "evidence": [
+        "Frontend Engineer at Orbit Systems Example"
+      ],
+      "contexts": [
+        "fintech",
+        "Frontend Engineer",
+        "Senior Frontend Engineer"
+      ]
+    },
+    {
+      "skill": "WCAG AA",
+      "category": "domain",
+      "proficiency": "Advanced",
+      "yearsOfExperience": 5.1,
+      "lastUsed": "2026",
+      "firstUsed": "2020",
+      "evidence": [
+        "Software Engineer at Beacon Works Example"
+      ],
+      "contexts": [
+        "healthtech",
+        "Frontend Engineer",
+        "Senior Frontend Engineer"
+      ]
+    },
+    {
+      "skill": "ARIA",
+      "category": "domain",
+      "proficiency": "Advanced",
+      "yearsOfExperience": 5.3,
+      "lastUsed": "2026",
+      "firstUsed": "2020",
+      "evidence": [
+        "Senior Frontend Engineer at Northstar Analytics Example"
+      ],
+      "contexts": [
+        "B2B SaaS",
+        "Frontend Engineer",
+        "Senior Frontend Engineer"
+      ]
+    },
+    {
+      "skill": "Core Web Vitals",
+      "category": "domain",
+      "proficiency": "Advanced",
+      "yearsOfExperience": 5.5,
+      "lastUsed": "2026",
+      "firstUsed": "2020",
+      "evidence": [
+        "Frontend Engineer at Orbit Systems Example"
+      ],
+      "contexts": [
+        "fintech",
+        "Frontend Engineer",
+        "Senior Frontend Engineer"
+      ]
+    },
+    {
+      "skill": "Performance Optimization",
+      "category": "domain",
+      "proficiency": "Advanced",
+      "yearsOfExperience": 5.7,
+      "lastUsed": "2026",
+      "firstUsed": "2020",
+      "evidence": [
+        "Software Engineer at Beacon Works Example"
+      ],
+      "contexts": [
+        "healthtech",
+        "Frontend Engineer",
+        "Senior Frontend Engineer"
+      ]
+    },
+    {
+      "skill": "Responsive Design",
+      "category": "product-business",
+      "proficiency": "Advanced",
+      "yearsOfExperience": 5.9,
+      "lastUsed": "2026",
+      "firstUsed": "2020",
+      "evidence": [
+        "Senior Frontend Engineer at Northstar Analytics Example"
+      ],
+      "contexts": [
+        "B2B SaaS",
+        "Frontend Engineer",
+        "Senior Frontend Engineer"
+      ]
+    },
+    {
+      "skill": "GraphQL",
+      "category": "technical",
+      "proficiency": "Expert",
+      "yearsOfExperience": 6.1,
+      "lastUsed": "2026",
+      "firstUsed": "2019",
+      "evidence": [
+        "Frontend Engineer at Orbit Systems Example"
+      ],
+      "contexts": [
+        "fintech",
+        "Frontend Engineer",
+        "Senior Frontend Engineer"
+      ]
+    },
+    {
+      "skill": "REST API",
+      "category": "technical",
+      "proficiency": "Expert",
+      "yearsOfExperience": 6.3,
+      "lastUsed": "2026",
+      "firstUsed": "2019",
+      "evidence": [
+        "Software Engineer at Beacon Works Example"
+      ],
+      "contexts": [
+        "healthtech",
+        "Frontend Engineer",
+        "Senior Frontend Engineer"
+      ]
+    },
+    {
+      "skill": "OpenAPI",
+      "category": "technical",
+      "proficiency": "Expert",
+      "yearsOfExperience": 6.5,
+      "lastUsed": "2026",
+      "firstUsed": "2019",
+      "evidence": [
+        "Senior Frontend Engineer at Northstar Analytics Example"
+      ],
+      "contexts": [
+        "B2B SaaS",
+        "Frontend Engineer",
+        "Senior Frontend Engineer"
+      ]
+    },
+    {
+      "skill": "PostgreSQL",
+      "category": "technical",
+      "proficiency": "Expert",
+      "yearsOfExperience": 6.7,
+      "lastUsed": "2026",
+      "firstUsed": "2019",
+      "evidence": [
+        "Frontend Engineer at Orbit Systems Example"
+      ],
+      "contexts": [
+        "fintech",
+        "Frontend Engineer",
+        "Senior Frontend Engineer"
+      ]
+    },
+    {
+      "skill": "Supabase",
+      "category": "domain",
+      "proficiency": "Expert",
+      "yearsOfExperience": 6.9,
+      "lastUsed": "2026",
+      "firstUsed": "2019",
+      "evidence": [
+        "Software Engineer at Beacon Works Example"
+      ],
+      "contexts": [
+        "healthtech",
+        "Frontend Engineer",
+        "Senior Frontend Engineer"
+      ]
+    },
+    {
+      "skill": "Firebase",
+      "category": "domain",
+      "proficiency": "Expert",
+      "yearsOfExperience": 7.1,
+      "lastUsed": "2026",
+      "firstUsed": "2018",
+      "evidence": [
+        "Senior Frontend Engineer at Northstar Analytics Example"
+      ],
+      "contexts": [
+        "B2B SaaS",
+        "Frontend Engineer",
+        "Senior Frontend Engineer"
+      ]
+    },
+    {
+      "skill": "Prisma",
+      "category": "domain",
+      "proficiency": "Expert",
+      "yearsOfExperience": 7.3,
+      "lastUsed": "2026",
+      "firstUsed": "2018",
+      "evidence": [
+        "Frontend Engineer at Orbit Systems Example"
+      ],
+      "contexts": [
+        "fintech",
+        "Frontend Engineer",
+        "Senior Frontend Engineer"
+      ]
+    },
+    {
+      "skill": "Vercel",
+      "category": "domain",
+      "proficiency": "Expert",
+      "yearsOfExperience": 7.5,
+      "lastUsed": "2026",
+      "firstUsed": "2018",
+      "evidence": [
+        "Software Engineer at Beacon Works Example"
+      ],
+      "contexts": [
+        "healthtech",
+        "Frontend Engineer",
+        "Senior Frontend Engineer"
+      ]
+    },
+    {
+      "skill": "Docker",
+      "category": "technical",
+      "proficiency": "Expert",
+      "yearsOfExperience": 7.7,
+      "lastUsed": "2026",
+      "firstUsed": "2018",
+      "evidence": [
+        "Senior Frontend Engineer at Northstar Analytics Example"
+      ],
+      "contexts": [
+        "B2B SaaS",
+        "Frontend Engineer",
+        "Senior Frontend Engineer"
+      ]
+    },
+    {
+      "skill": "GitHub Actions",
+      "category": "domain",
+      "proficiency": "Expert",
+      "yearsOfExperience": 7.9,
+      "lastUsed": "2026",
+      "firstUsed": "2018",
+      "evidence": [
+        "Frontend Engineer at Orbit Systems Example"
+      ],
+      "contexts": [
+        "fintech",
+        "Frontend Engineer",
+        "Senior Frontend Engineer"
+      ]
+    },
+    {
+      "skill": "CI/CD",
+      "category": "domain",
+      "proficiency": "Expert",
+      "yearsOfExperience": 8.1,
+      "lastUsed": "2026",
+      "firstUsed": "2017",
+      "evidence": [
+        "Software Engineer at Beacon Works Example"
+      ],
+      "contexts": [
+        "healthtech",
+        "Frontend Engineer",
+        "Senior Frontend Engineer"
+      ]
+    },
+    {
+      "skill": "Playwright",
+      "category": "technical",
+      "proficiency": "Expert",
+      "yearsOfExperience": 8.3,
+      "lastUsed": "2026",
+      "firstUsed": "2017",
+      "evidence": [
+        "Senior Frontend Engineer at Northstar Analytics Example"
+      ],
+      "contexts": [
+        "B2B SaaS",
+        "Frontend Engineer",
+        "Senior Frontend Engineer"
+      ]
+    },
+    {
+      "skill": "Cypress",
+      "category": "technical",
+      "proficiency": "Expert",
+      "yearsOfExperience": 8.5,
+      "lastUsed": "2026",
+      "firstUsed": "2017",
+      "evidence": [
+        "Frontend Engineer at Orbit Systems Example"
+      ],
+      "contexts": [
+        "fintech",
+        "Frontend Engineer",
+        "Senior Frontend Engineer"
+      ]
+    },
+    {
+      "skill": "Vitest",
+      "category": "domain",
+      "proficiency": "Expert",
+      "yearsOfExperience": 8.7,
+      "lastUsed": "2026",
+      "firstUsed": "2017",
+      "evidence": [
+        "Software Engineer at Beacon Works Example"
+      ],
+      "contexts": [
+        "healthtech",
+        "Frontend Engineer",
+        "Senior Frontend Engineer"
+      ]
+    },
+    {
+      "skill": "Jest",
+      "category": "domain",
+      "proficiency": "Expert",
+      "yearsOfExperience": 8.9,
+      "lastUsed": "2026",
+      "firstUsed": "2017",
+      "evidence": [
+        "Senior Frontend Engineer at Northstar Analytics Example"
+      ],
+      "contexts": [
+        "B2B SaaS",
+        "Frontend Engineer",
+        "Senior Frontend Engineer"
+      ]
+    },
+    {
+      "skill": "Testing Library",
+      "category": "product-business",
+      "proficiency": "Expert",
+      "yearsOfExperience": 9.1,
+      "lastUsed": "2026",
+      "firstUsed": "2016",
+      "evidence": [
+        "Frontend Engineer at Orbit Systems Example"
+      ],
+      "contexts": [
+        "fintech",
+        "Frontend Engineer",
+        "Senior Frontend Engineer"
+      ]
+    },
+    {
+      "skill": "Product Analytics",
+      "category": "product-business",
+      "proficiency": "Expert",
+      "yearsOfExperience": 9.3,
+      "lastUsed": "2026",
+      "firstUsed": "2016",
+      "evidence": [
+        "Software Engineer at Beacon Works Example"
+      ],
+      "contexts": [
+        "healthtech",
+        "Frontend Engineer",
+        "Senior Frontend Engineer"
+      ]
+    },
+    {
+      "skill": "Amplitude",
+      "category": "domain",
+      "proficiency": "Expert",
+      "yearsOfExperience": 9.5,
+      "lastUsed": "2026",
+      "firstUsed": "2016",
+      "evidence": [
+        "Senior Frontend Engineer at Northstar Analytics Example"
+      ],
+      "contexts": [
+        "B2B SaaS",
+        "Frontend Engineer",
+        "Senior Frontend Engineer"
+      ]
+    },
+    {
+      "skill": "Mixpanel",
+      "category": "domain",
+      "proficiency": "Expert",
+      "yearsOfExperience": 9.7,
+      "lastUsed": "2026",
+      "firstUsed": "2016",
+      "evidence": [
+        "Frontend Engineer at Orbit Systems Example"
+      ],
+      "contexts": [
+        "fintech",
+        "Frontend Engineer",
+        "Senior Frontend Engineer"
+      ]
+    },
+    {
+      "skill": "GA4",
+      "category": "domain",
+      "proficiency": "Expert",
+      "yearsOfExperience": 9.9,
+      "lastUsed": "2026",
+      "firstUsed": "2016",
+      "evidence": [
+        "Software Engineer at Beacon Works Example"
+      ],
+      "contexts": [
+        "healthtech",
+        "Frontend Engineer",
+        "Senior Frontend Engineer"
+      ]
+    },
+    {
+      "skill": "A/B Testing",
+      "category": "product-business",
+      "proficiency": "Expert",
+      "yearsOfExperience": 10.1,
+      "lastUsed": "2026",
+      "firstUsed": "2015",
+      "evidence": [
+        "Senior Frontend Engineer at Northstar Analytics Example"
+      ],
+      "contexts": [
+        "B2B SaaS",
+        "Frontend Engineer",
+        "Senior Frontend Engineer"
+      ]
+    },
+    {
+      "skill": "Data Visualization",
+      "category": "domain",
+      "proficiency": "Expert",
+      "yearsOfExperience": 10.3,
+      "lastUsed": "2026",
+      "firstUsed": "2015",
+      "evidence": [
+        "Frontend Engineer at Orbit Systems Example"
+      ],
+      "contexts": [
+        "fintech",
+        "Frontend Engineer",
+        "Senior Frontend Engineer"
+      ]
+    },
+    {
+      "skill": "ECharts",
+      "category": "domain",
+      "proficiency": "Expert",
+      "yearsOfExperience": 10.3,
+      "lastUsed": "2026",
+      "firstUsed": "2015",
+      "evidence": [
+        "Software Engineer at Beacon Works Example"
+      ],
+      "contexts": [
+        "healthtech",
+        "Frontend Engineer",
+        "Senior Frontend Engineer"
+      ]
+    }
+  ],
+  "skillMatrix": [
+    {
+      "skill": "JavaScript",
+      "category": "technical",
+      "proficiency": "Expert",
+      "yearsOfExperience": 10.3,
+      "lastUsed": "2026",
+      "firstUsed": "2015",
+      "evidence": [
+        "Senior Frontend Engineer at Northstar Analytics Example",
+        "Used directly in Senior Frontend Engineer for a B2B SaaS team, owning reusable design system rollout and cross-functional delivery with product, design, and data stakeholders."
+      ],
+      "contexts": [
+        "B2B SaaS",
+        "Frontend Engineer",
+        "Senior Frontend Engineer"
+      ]
+    },
+    {
+      "skill": "TypeScript",
+      "category": "technical",
+      "proficiency": "Expert",
+      "yearsOfExperience": 10.1,
+      "lastUsed": "2026",
+      "firstUsed": "2015",
+      "evidence": [
+        "Frontend Engineer at Orbit Systems Example"
+      ],
+      "contexts": [
+        "fintech",
+        "Frontend Engineer",
+        "Senior Frontend Engineer"
+      ]
+    },
+    {
+      "skill": "React",
+      "category": "technical",
+      "proficiency": "Expert",
+      "yearsOfExperience": 9.6,
+      "lastUsed": "2026",
+      "firstUsed": "2016",
+      "evidence": [
+        "Software Engineer at Beacon Works Example"
+      ],
+      "contexts": [
+        "healthtech",
+        "Frontend Engineer",
+        "Senior Frontend Engineer"
+      ]
+    },
+    {
+      "skill": "Next.js",
+      "category": "technical",
+      "proficiency": "Expert",
+      "yearsOfExperience": 10.3,
+      "lastUsed": "2026",
+      "firstUsed": "2015",
+      "evidence": [
+        "Senior Frontend Engineer at Northstar Analytics Example",
+        "Used directly in Senior Frontend Engineer for a B2B SaaS team, owning reusable design system rollout and cross-functional delivery with product, design, and data stakeholders."
+      ],
+      "contexts": [
+        "B2B SaaS",
+        "Frontend Engineer",
+        "Senior Frontend Engineer"
+      ]
+    },
+    {
+      "skill": "Vue",
+      "category": "technical",
+      "proficiency": "Expert",
+      "yearsOfExperience": 10.1,
+      "lastUsed": "2026",
+      "firstUsed": "2015",
+      "evidence": [
+        "Frontend Engineer at Orbit Systems Example"
+      ],
+      "contexts": [
+        "fintech",
+        "Frontend Engineer",
+        "Senior Frontend Engineer"
+      ]
+    },
+    {
+      "skill": "Nuxt",
+      "category": "domain",
+      "proficiency": "Expert",
+      "yearsOfExperience": 9.6,
+      "lastUsed": "2026",
+      "firstUsed": "2016",
+      "evidence": [
+        "Software Engineer at Beacon Works Example"
+      ],
+      "contexts": [
+        "healthtech",
+        "Frontend Engineer",
+        "Senior Frontend Engineer"
+      ]
+    },
+    {
+      "skill": "Svelte",
+      "category": "domain",
+      "proficiency": "Expert",
+      "yearsOfExperience": 10.3,
+      "lastUsed": "2026",
+      "firstUsed": "2015",
+      "evidence": [
+        "Senior Frontend Engineer at Northstar Analytics Example",
+        "Used directly in Senior Frontend Engineer for a B2B SaaS team, owning reusable design system rollout and cross-functional delivery with product, design, and data stakeholders."
+      ],
+      "contexts": [
+        "B2B SaaS",
+        "Frontend Engineer",
+        "Senior Frontend Engineer"
+      ]
+    },
+    {
+      "skill": "Node.js",
+      "category": "technical",
+      "proficiency": "Expert",
+      "yearsOfExperience": 10.1,
+      "lastUsed": "2026",
+      "firstUsed": "2015",
+      "evidence": [
+        "Frontend Engineer at Orbit Systems Example",
+        "Used directly in Frontend Engineer for a fintech team, owning self-serve analytics dashboard and cross-functional delivery with engineering, support, and sales stakeholders."
+      ],
+      "contexts": [
+        "fintech",
+        "Frontend Engineer",
+        "Senior Frontend Engineer"
+      ]
+    },
+    {
+      "skill": "HTML",
+      "category": "domain",
+      "proficiency": "Expert",
+      "yearsOfExperience": 9.6,
+      "lastUsed": "2026",
+      "firstUsed": "2016",
+      "evidence": [
+        "Software Engineer at Beacon Works Example"
+      ],
+      "contexts": [
+        "healthtech",
+        "Frontend Engineer",
+        "Senior Frontend Engineer"
+      ]
+    },
+    {
+      "skill": "CSS",
+      "category": "domain",
+      "proficiency": "Expert",
+      "yearsOfExperience": 10.3,
+      "lastUsed": "2026",
+      "firstUsed": "2015",
+      "evidence": [
+        "Senior Frontend Engineer at Northstar Analytics Example"
+      ],
+      "contexts": [
+        "B2B SaaS",
+        "Frontend Engineer",
+        "Senior Frontend Engineer"
+      ]
+    },
+    {
+      "skill": "Sass",
+      "category": "domain",
+      "proficiency": "Advanced",
+      "yearsOfExperience": 3.1,
+      "lastUsed": "2026",
+      "firstUsed": "2022",
+      "evidence": [
+        "Frontend Engineer at Orbit Systems Example",
+        "Used directly in Frontend Engineer for a fintech team, owning self-serve analytics dashboard and cross-functional delivery with engineering, support, and sales stakeholders."
+      ],
+      "contexts": [
+        "fintech",
+        "Frontend Engineer",
+        "Senior Frontend Engineer"
+      ]
+    },
+    {
+      "skill": "Tailwind CSS",
+      "category": "domain",
+      "proficiency": "Advanced",
+      "yearsOfExperience": 3.3,
+      "lastUsed": "2026",
+      "firstUsed": "2022",
+      "evidence": [
+        "Software Engineer at Beacon Works Example",
+        "Used directly in Software Engineer for a healthtech team, owning checkout performance rebuild and cross-functional delivery with security, QA, and platform stakeholders."
+      ],
+      "contexts": [
+        "healthtech",
+        "Frontend Engineer",
+        "Senior Frontend Engineer"
+      ]
+    },
+    {
+      "skill": "CSS Modules",
+      "category": "domain",
+      "proficiency": "Advanced",
+      "yearsOfExperience": 3.5,
+      "lastUsed": "2026",
+      "firstUsed": "2022",
+      "evidence": [
+        "Senior Frontend Engineer at Northstar Analytics Example"
+      ],
+      "contexts": [
+        "B2B SaaS",
+        "Frontend Engineer",
+        "Senior Frontend Engineer"
+      ]
+    },
+    {
+      "skill": "Vite",
+      "category": "domain",
+      "proficiency": "Advanced",
+      "yearsOfExperience": 3.7,
+      "lastUsed": "2026",
+      "firstUsed": "2022",
+      "evidence": [
+        "Frontend Engineer at Orbit Systems Example"
+      ],
+      "contexts": [
+        "fintech",
+        "Frontend Engineer",
+        "Senior Frontend Engineer"
+      ]
+    },
+    {
+      "skill": "Webpack",
+      "category": "domain",
+      "proficiency": "Advanced",
+      "yearsOfExperience": 3.9,
+      "lastUsed": "2026",
+      "firstUsed": "2022",
+      "evidence": [
+        "Software Engineer at Beacon Works Example",
+        "Used directly in Software Engineer for a healthtech team, owning checkout performance rebuild and cross-functional delivery with security, QA, and platform stakeholders."
+      ],
+      "contexts": [
+        "healthtech",
+        "Frontend Engineer",
+        "Senior Frontend Engineer"
+      ]
+    },
+    {
+      "skill": "Storybook",
+      "category": "domain",
+      "proficiency": "Advanced",
+      "yearsOfExperience": 4.1,
+      "lastUsed": "2026",
+      "firstUsed": "2021",
+      "evidence": [
+        "Senior Frontend Engineer at Northstar Analytics Example"
+      ],
+      "contexts": [
+        "B2B SaaS",
+        "Frontend Engineer",
+        "Senior Frontend Engineer"
+      ]
+    },
+    {
+      "skill": "Figma",
+      "category": "product-business",
+      "proficiency": "Expert",
+      "yearsOfExperience": 4.3,
+      "lastUsed": "2026",
+      "firstUsed": "2021",
+      "evidence": [
+        "Frontend Engineer at Orbit Systems Example"
+      ],
+      "contexts": [
+        "fintech",
+        "Frontend Engineer",
+        "Senior Frontend Engineer"
+      ]
+    },
+    {
+      "skill": "Design Systems",
+      "category": "product-business",
+      "proficiency": "Advanced",
+      "yearsOfExperience": 4.5,
+      "lastUsed": "2026",
+      "firstUsed": "2021",
+      "evidence": [
+        "Software Engineer at Beacon Works Example"
+      ],
+      "contexts": [
+        "healthtech",
+        "Frontend Engineer",
+        "Senior Frontend Engineer"
+      ]
+    },
+    {
+      "skill": "Design Tokens",
+      "category": "product-business",
+      "proficiency": "Advanced",
+      "yearsOfExperience": 4.7,
+      "lastUsed": "2026",
+      "firstUsed": "2021",
+      "evidence": [
+        "Senior Frontend Engineer at Northstar Analytics Example"
+      ],
+      "contexts": [
+        "B2B SaaS",
+        "Frontend Engineer",
+        "Senior Frontend Engineer"
+      ]
+    },
+    {
+      "skill": "Accessibility",
+      "category": "product-business",
+      "proficiency": "Advanced",
+      "yearsOfExperience": 4.9,
+      "lastUsed": "2026",
+      "firstUsed": "2021",
+      "evidence": [
+        "Frontend Engineer at Orbit Systems Example"
+      ],
+      "contexts": [
+        "fintech",
+        "Frontend Engineer",
+        "Senior Frontend Engineer"
+      ]
+    },
+    {
+      "skill": "WCAG AA",
+      "category": "domain",
+      "proficiency": "Advanced",
+      "yearsOfExperience": 5.1,
+      "lastUsed": "2026",
+      "firstUsed": "2020",
+      "evidence": [
+        "Software Engineer at Beacon Works Example"
+      ],
+      "contexts": [
+        "healthtech",
+        "Frontend Engineer",
+        "Senior Frontend Engineer"
+      ]
+    },
+    {
+      "skill": "ARIA",
+      "category": "domain",
+      "proficiency": "Advanced",
+      "yearsOfExperience": 5.3,
+      "lastUsed": "2026",
+      "firstUsed": "2020",
+      "evidence": [
+        "Senior Frontend Engineer at Northstar Analytics Example"
+      ],
+      "contexts": [
+        "B2B SaaS",
+        "Frontend Engineer",
+        "Senior Frontend Engineer"
+      ]
+    },
+    {
+      "skill": "Core Web Vitals",
+      "category": "domain",
+      "proficiency": "Advanced",
+      "yearsOfExperience": 5.5,
+      "lastUsed": "2026",
+      "firstUsed": "2020",
+      "evidence": [
+        "Frontend Engineer at Orbit Systems Example"
+      ],
+      "contexts": [
+        "fintech",
+        "Frontend Engineer",
+        "Senior Frontend Engineer"
+      ]
+    },
+    {
+      "skill": "Performance Optimization",
+      "category": "domain",
+      "proficiency": "Advanced",
+      "yearsOfExperience": 5.7,
+      "lastUsed": "2026",
+      "firstUsed": "2020",
+      "evidence": [
+        "Software Engineer at Beacon Works Example"
+      ],
+      "contexts": [
+        "healthtech",
+        "Frontend Engineer",
+        "Senior Frontend Engineer"
+      ]
+    },
+    {
+      "skill": "Responsive Design",
+      "category": "product-business",
+      "proficiency": "Advanced",
+      "yearsOfExperience": 5.9,
+      "lastUsed": "2026",
+      "firstUsed": "2020",
+      "evidence": [
+        "Senior Frontend Engineer at Northstar Analytics Example"
+      ],
+      "contexts": [
+        "B2B SaaS",
+        "Frontend Engineer",
+        "Senior Frontend Engineer"
+      ]
+    },
+    {
+      "skill": "GraphQL",
+      "category": "technical",
+      "proficiency": "Expert",
+      "yearsOfExperience": 6.1,
+      "lastUsed": "2026",
+      "firstUsed": "2019",
+      "evidence": [
+        "Frontend Engineer at Orbit Systems Example"
+      ],
+      "contexts": [
+        "fintech",
+        "Frontend Engineer",
+        "Senior Frontend Engineer"
+      ]
+    },
+    {
+      "skill": "REST API",
+      "category": "technical",
+      "proficiency": "Expert",
+      "yearsOfExperience": 6.3,
+      "lastUsed": "2026",
+      "firstUsed": "2019",
+      "evidence": [
+        "Software Engineer at Beacon Works Example"
+      ],
+      "contexts": [
+        "healthtech",
+        "Frontend Engineer",
+        "Senior Frontend Engineer"
+      ]
+    },
+    {
+      "skill": "OpenAPI",
+      "category": "technical",
+      "proficiency": "Expert",
+      "yearsOfExperience": 6.5,
+      "lastUsed": "2026",
+      "firstUsed": "2019",
+      "evidence": [
+        "Senior Frontend Engineer at Northstar Analytics Example"
+      ],
+      "contexts": [
+        "B2B SaaS",
+        "Frontend Engineer",
+        "Senior Frontend Engineer"
+      ]
+    },
+    {
+      "skill": "PostgreSQL",
+      "category": "technical",
+      "proficiency": "Expert",
+      "yearsOfExperience": 6.7,
+      "lastUsed": "2026",
+      "firstUsed": "2019",
+      "evidence": [
+        "Frontend Engineer at Orbit Systems Example"
+      ],
+      "contexts": [
+        "fintech",
+        "Frontend Engineer",
+        "Senior Frontend Engineer"
+      ]
+    },
+    {
+      "skill": "Supabase",
+      "category": "domain",
+      "proficiency": "Expert",
+      "yearsOfExperience": 6.9,
+      "lastUsed": "2026",
+      "firstUsed": "2019",
+      "evidence": [
+        "Software Engineer at Beacon Works Example"
+      ],
+      "contexts": [
+        "healthtech",
+        "Frontend Engineer",
+        "Senior Frontend Engineer"
+      ]
+    },
+    {
+      "skill": "Firebase",
+      "category": "domain",
+      "proficiency": "Expert",
+      "yearsOfExperience": 7.1,
+      "lastUsed": "2026",
+      "firstUsed": "2018",
+      "evidence": [
+        "Senior Frontend Engineer at Northstar Analytics Example"
+      ],
+      "contexts": [
+        "B2B SaaS",
+        "Frontend Engineer",
+        "Senior Frontend Engineer"
+      ]
+    },
+    {
+      "skill": "Prisma",
+      "category": "domain",
+      "proficiency": "Expert",
+      "yearsOfExperience": 7.3,
+      "lastUsed": "2026",
+      "firstUsed": "2018",
+      "evidence": [
+        "Frontend Engineer at Orbit Systems Example"
+      ],
+      "contexts": [
+        "fintech",
+        "Frontend Engineer",
+        "Senior Frontend Engineer"
+      ]
+    },
+    {
+      "skill": "Vercel",
+      "category": "domain",
+      "proficiency": "Expert",
+      "yearsOfExperience": 7.5,
+      "lastUsed": "2026",
+      "firstUsed": "2018",
+      "evidence": [
+        "Software Engineer at Beacon Works Example"
+      ],
+      "contexts": [
+        "healthtech",
+        "Frontend Engineer",
+        "Senior Frontend Engineer"
+      ]
+    },
+    {
+      "skill": "Docker",
+      "category": "technical",
+      "proficiency": "Expert",
+      "yearsOfExperience": 7.7,
+      "lastUsed": "2026",
+      "firstUsed": "2018",
+      "evidence": [
+        "Senior Frontend Engineer at Northstar Analytics Example"
+      ],
+      "contexts": [
+        "B2B SaaS",
+        "Frontend Engineer",
+        "Senior Frontend Engineer"
+      ]
+    },
+    {
+      "skill": "GitHub Actions",
+      "category": "domain",
+      "proficiency": "Expert",
+      "yearsOfExperience": 7.9,
+      "lastUsed": "2026",
+      "firstUsed": "2018",
+      "evidence": [
+        "Frontend Engineer at Orbit Systems Example"
+      ],
+      "contexts": [
+        "fintech",
+        "Frontend Engineer",
+        "Senior Frontend Engineer"
+      ]
+    },
+    {
+      "skill": "CI/CD",
+      "category": "domain",
+      "proficiency": "Expert",
+      "yearsOfExperience": 8.1,
+      "lastUsed": "2026",
+      "firstUsed": "2017",
+      "evidence": [
+        "Software Engineer at Beacon Works Example"
+      ],
+      "contexts": [
+        "healthtech",
+        "Frontend Engineer",
+        "Senior Frontend Engineer"
+      ]
+    },
+    {
+      "skill": "Playwright",
+      "category": "technical",
+      "proficiency": "Expert",
+      "yearsOfExperience": 8.3,
+      "lastUsed": "2026",
+      "firstUsed": "2017",
+      "evidence": [
+        "Senior Frontend Engineer at Northstar Analytics Example"
+      ],
+      "contexts": [
+        "B2B SaaS",
+        "Frontend Engineer",
+        "Senior Frontend Engineer"
+      ]
+    },
+    {
+      "skill": "Cypress",
+      "category": "technical",
+      "proficiency": "Expert",
+      "yearsOfExperience": 8.5,
+      "lastUsed": "2026",
+      "firstUsed": "2017",
+      "evidence": [
+        "Frontend Engineer at Orbit Systems Example"
+      ],
+      "contexts": [
+        "fintech",
+        "Frontend Engineer",
+        "Senior Frontend Engineer"
+      ]
+    },
+    {
+      "skill": "Vitest",
+      "category": "domain",
+      "proficiency": "Expert",
+      "yearsOfExperience": 8.7,
+      "lastUsed": "2026",
+      "firstUsed": "2017",
+      "evidence": [
+        "Software Engineer at Beacon Works Example"
+      ],
+      "contexts": [
+        "healthtech",
+        "Frontend Engineer",
+        "Senior Frontend Engineer"
+      ]
+    },
+    {
+      "skill": "Jest",
+      "category": "domain",
+      "proficiency": "Expert",
+      "yearsOfExperience": 8.9,
+      "lastUsed": "2026",
+      "firstUsed": "2017",
+      "evidence": [
+        "Senior Frontend Engineer at Northstar Analytics Example"
+      ],
+      "contexts": [
+        "B2B SaaS",
+        "Frontend Engineer",
+        "Senior Frontend Engineer"
+      ]
+    },
+    {
+      "skill": "Testing Library",
+      "category": "product-business",
+      "proficiency": "Expert",
+      "yearsOfExperience": 9.1,
+      "lastUsed": "2026",
+      "firstUsed": "2016",
+      "evidence": [
+        "Frontend Engineer at Orbit Systems Example"
+      ],
+      "contexts": [
+        "fintech",
+        "Frontend Engineer",
+        "Senior Frontend Engineer"
+      ]
+    },
+    {
+      "skill": "Product Analytics",
+      "category": "product-business",
+      "proficiency": "Expert",
+      "yearsOfExperience": 9.3,
+      "lastUsed": "2026",
+      "firstUsed": "2016",
+      "evidence": [
+        "Software Engineer at Beacon Works Example"
+      ],
+      "contexts": [
+        "healthtech",
+        "Frontend Engineer",
+        "Senior Frontend Engineer"
+      ]
+    },
+    {
+      "skill": "Amplitude",
+      "category": "domain",
+      "proficiency": "Expert",
+      "yearsOfExperience": 9.5,
+      "lastUsed": "2026",
+      "firstUsed": "2016",
+      "evidence": [
+        "Senior Frontend Engineer at Northstar Analytics Example"
+      ],
+      "contexts": [
+        "B2B SaaS",
+        "Frontend Engineer",
+        "Senior Frontend Engineer"
+      ]
+    },
+    {
+      "skill": "Mixpanel",
+      "category": "domain",
+      "proficiency": "Expert",
+      "yearsOfExperience": 9.7,
+      "lastUsed": "2026",
+      "firstUsed": "2016",
+      "evidence": [
+        "Frontend Engineer at Orbit Systems Example"
+      ],
+      "contexts": [
+        "fintech",
+        "Frontend Engineer",
+        "Senior Frontend Engineer"
+      ]
+    },
+    {
+      "skill": "GA4",
+      "category": "domain",
+      "proficiency": "Expert",
+      "yearsOfExperience": 9.9,
+      "lastUsed": "2026",
+      "firstUsed": "2016",
+      "evidence": [
+        "Software Engineer at Beacon Works Example"
+      ],
+      "contexts": [
+        "healthtech",
+        "Frontend Engineer",
+        "Senior Frontend Engineer"
+      ]
+    },
+    {
+      "skill": "A/B Testing",
+      "category": "product-business",
+      "proficiency": "Expert",
+      "yearsOfExperience": 10.1,
+      "lastUsed": "2026",
+      "firstUsed": "2015",
+      "evidence": [
+        "Senior Frontend Engineer at Northstar Analytics Example"
+      ],
+      "contexts": [
+        "B2B SaaS",
+        "Frontend Engineer",
+        "Senior Frontend Engineer"
+      ]
+    },
+    {
+      "skill": "Data Visualization",
+      "category": "domain",
+      "proficiency": "Expert",
+      "yearsOfExperience": 10.3,
+      "lastUsed": "2026",
+      "firstUsed": "2015",
+      "evidence": [
+        "Frontend Engineer at Orbit Systems Example"
+      ],
+      "contexts": [
+        "fintech",
+        "Frontend Engineer",
+        "Senior Frontend Engineer"
+      ]
+    },
+    {
+      "skill": "ECharts",
+      "category": "domain",
+      "proficiency": "Expert",
+      "yearsOfExperience": 10.3,
+      "lastUsed": "2026",
+      "firstUsed": "2015",
+      "evidence": [
+        "Software Engineer at Beacon Works Example"
+      ],
+      "contexts": [
+        "healthtech",
+        "Frontend Engineer",
+        "Senior Frontend Engineer"
+      ]
+    }
+  ],
+  "educationDetails": [
+    {
+      "institution": "Example University of Applied Technology",
+      "area": "B.S. Computer Science",
+      "studyType": "Bachelor",
+      "startDate": "2009-09",
+      "endDate": "2013-06",
+      "courses": [
+        "Data Structures",
+        "Human-Computer Interaction",
+        "Statistics"
+      ],
+      "graduationYear": 2013,
+      "location": "Example City",
+      "honors": "Dean's List (synthetic)",
+      "relevantCoursework": [
+        "Data Structures",
+        "Human-Computer Interaction",
+        "Statistics",
+        "Software Engineering"
+      ]
+    }
+  ],
+  "graduationYear": 2013,
+  "compensationExpectations": {
+    "preferredCurrency": "TWD",
+    "negotiable": true,
+    "taiwan": {
+      "currency": "TWD",
+      "minMonthly": 137000,
+      "targetMonthly": 156000,
+      "maxMonthly": 184000,
+      "minAnnual": 1781000,
+      "targetAnnual": 2028000,
+      "maxAnnual": 2392000,
+      "acceptableWorkModes": [
+        "remote",
+        "hybrid",
+        "onsite Taipei"
+      ]
+    },
+    "japan": {
+      "currency": "JPY",
+      "minAnnual": 9000000,
+      "targetAnnual": 10000000,
+      "maxAnnual": 12000000,
+      "tokyoAdjustment": "+8% for mostly-onsite Tokyo roles",
+      "acceptableWorkModes": [
+        "remote Japan",
+        "hybrid Tokyo",
+        "relocation with support"
+      ]
+    },
+    "remote": {
+      "currency": "USD",
+      "minAnnual": 115000,
+      "targetAnnual": 128000,
+      "maxAnnual": 151000,
+      "acceptableRegions": [
+        "APAC remote",
+        "global contractor",
+        "US/EU async-friendly"
+      ]
+    },
+    "equityPreference": "meaningful equity acceptable if cash floor is met",
+    "notes": "Synthetic compensation anchor for testing. Numbers are not market advice."
+  },
+  "salaryExpectations": {
+    "preferredCurrency": "TWD",
+    "negotiable": true,
+    "taiwan": {
+      "currency": "TWD",
+      "minMonthly": 137000,
+      "targetMonthly": 156000,
+      "maxMonthly": 184000,
+      "minAnnual": 1781000,
+      "targetAnnual": 2028000,
+      "maxAnnual": 2392000,
+      "acceptableWorkModes": [
+        "remote",
+        "hybrid",
+        "onsite Taipei"
+      ]
+    },
+    "japan": {
+      "currency": "JPY",
+      "minAnnual": 9000000,
+      "targetAnnual": 10000000,
+      "maxAnnual": 12000000,
+      "tokyoAdjustment": "+8% for mostly-onsite Tokyo roles",
+      "acceptableWorkModes": [
+        "remote Japan",
+        "hybrid Tokyo",
+        "relocation with support"
+      ]
+    },
+    "remote": {
+      "currency": "USD",
+      "minAnnual": 115000,
+      "targetAnnual": 128000,
+      "maxAnnual": 151000,
+      "acceptableRegions": [
+        "APAC remote",
+        "global contractor",
+        "US/EU async-friendly"
+      ]
+    },
+    "equityPreference": "meaningful equity acceptable if cash floor is met",
+    "notes": "Synthetic compensation anchor for testing. Numbers are not market advice."
+  },
+  "personalLinks": {
+    "linkedin": "https://linkedin.example.test/in/active-senior-frontend-profile",
+    "github": "https://github.example.test/active-senior-frontend-profile",
+    "portfolio": "https://portfolio.example.test/active-senior-frontend-profile",
+    "caseStudies": [
+      "https://portfolio.example.test/case-study/0001-1",
+      "https://portfolio.example.test/case-study/0001-2",
+      "https://portfolio.example.test/case-study/0001-3"
+    ],
+    "resumePdf": "https://portfolio.example.test/synthetic-active-frontend-senior/resume.pdf",
+    "publicSignalNote": "Reserved example/test links for synthetic data only; useful for testing external-signal fields without real profiles."
+  },
+  "links": {
+    "linkedin": "https://linkedin.example.test/in/active-senior-frontend-profile",
+    "github": "https://github.example.test/active-senior-frontend-profile",
+    "portfolio": "https://portfolio.example.test/active-senior-frontend-profile",
+    "caseStudies": [
+      "https://portfolio.example.test/case-study/0001-1",
+      "https://portfolio.example.test/case-study/0001-2",
+      "https://portfolio.example.test/case-study/0001-3"
+    ],
+    "resumePdf": "https://portfolio.example.test/synthetic-active-frontend-senior/resume.pdf",
+    "publicSignalNote": "Reserved example/test links for synthetic data only; useful for testing external-signal fields without real profiles."
+  },
+  "workAuthorization": {
+    "currentResidency": "Taipei",
+    "taiwan": {
+      "authorized": true,
+      "status": "Authorized to work in Taiwan",
+      "sponsorshipRequired": false
+    },
+    "japan": {
+      "interested": true,
+      "canWorkInJapan": true,
+      "visaStatus": "Eligible for Engineer/Specialist in Humanities/International Services work-visa path in synthetic scenario",
+      "sponsorshipRequired": false,
+      "willingToRelocateTokyo": true,
+      "remoteJapanOnly": false,
+      "earliestStartAfterOfferDays": 30
+    },
+    "remote": {
+      "canWorkRemote": true,
+      "preferredTimeZones": [
+        "UTC+8",
+        "UTC+9",
+        "UTC+10"
+      ],
+      "contractorFriendly": false,
+      "employerOfRecordRequired": true
+    },
+    "noticePeriodDays": 30,
+    "travelAvailability": "up to 20%"
+  },
+  "visaAndMobility": {
+    "currentResidency": "Taipei",
+    "taiwan": {
+      "authorized": true,
+      "status": "Authorized to work in Taiwan",
+      "sponsorshipRequired": false
+    },
+    "japan": {
+      "interested": true,
+      "canWorkInJapan": true,
+      "visaStatus": "Eligible for Engineer/Specialist in Humanities/International Services work-visa path in synthetic scenario",
+      "sponsorshipRequired": false,
+      "willingToRelocateTokyo": true,
+      "remoteJapanOnly": false,
+      "earliestStartAfterOfferDays": 30
+    },
+    "remote": {
+      "canWorkRemote": true,
+      "preferredTimeZones": [
+        "UTC+8",
+        "UTC+9",
+        "UTC+10"
+      ],
+      "contractorFriendly": false,
+      "employerOfRecordRequired": true
+    },
+    "noticePeriodDays": 30,
+    "travelAvailability": "up to 20%"
+  },
+  "languageProficiencies": [
+    {
+      "language": "Mandarin Chinese",
+      "nativeName": "中文",
+      "level": "Native or bilingual",
+      "cefr": "C2",
+      "businessUsable": true,
+      "tests": []
+    },
+    {
+      "language": "English",
+      "level": "Upper-intermediate to advanced",
+      "cefr": "B2",
+      "businessUsable": true,
+      "tests": [
+        {
+          "name": "TOEFL iBT",
+          "score": 92,
+          "takenYear": 2023
+        },
+        {
+          "name": "IELTS Academic",
+          "score": 6.5,
+          "takenYear": 2022
+        }
+      ]
+    },
+    {
+      "language": "Japanese",
+      "nativeName": "日本語",
+      "level": "Business Japanese",
+      "cefr": "C1",
+      "businessUsable": true,
+      "tests": [
+        {
+          "name": "JLPT",
+          "level": "N1",
+          "takenYear": 2022
+        }
+      ]
+    }
+  ],
+  "languageLevels": [
+    {
+      "language": "Mandarin Chinese",
+      "nativeName": "中文",
+      "level": "Native or bilingual",
+      "cefr": "C2",
+      "businessUsable": true,
+      "tests": []
+    },
+    {
+      "language": "English",
+      "level": "Upper-intermediate to advanced",
+      "cefr": "B2",
+      "businessUsable": true,
+      "tests": [
+        {
+          "name": "TOEFL iBT",
+          "score": 92,
+          "takenYear": 2023
+        },
+        {
+          "name": "IELTS Academic",
+          "score": 6.5,
+          "takenYear": 2022
+        }
+      ]
+    },
+    {
+      "language": "Japanese",
+      "nativeName": "日本語",
+      "level": "Business Japanese",
+      "cefr": "C1",
+      "businessUsable": true,
+      "tests": [
+        {
+          "name": "JLPT",
+          "level": "N1",
+          "takenYear": 2022
+        }
+      ]
+    }
+  ],
+  "schemaVersion": "career-ops-profile-example-v6-sharded",
+  "datasetMetadata": {
+    "recordCount": 100000,
+    "requestedRecordCount": 100000,
+    "requestedQuality": "submission-quality synthetic resumes",
+    "dataPolicy": "Synthetic profiles only. No scraped resumes, contact details, personal emails, phone numbers, real addresses, real schools, real employers, or real-person identifiers are included. All contacts use reserved example/test domains or explicit synthetic markers.",
+    "intendedUse": "Local testing of Career Ops ATS matching, scoring, resume parsing, story-bank generation, reporting, and profile-selection workflows.",
+    "generatedAt": "2026-05-18",
+    "activeProfileNote": "Top-level active profile now includes structured employment history, skill years, compensation anchors, personal links, Japan-ready work authorization, and JLPT/TOEFL/IELTS language evidence.",
+    "profileArrayNote": "Full 100,000-profile corpus moved to data/career-ops-profiles/*.json shards. This example file keeps only the active profile plus profileDataset metadata for compatibility with existing single-profile pipelines.",
+    "requestedCompletenessUpgrade": "employment history, skill years, education details, compensation anchors, personal links, work authorization, and language test levels",
+    "compensationNote": "v5.1 adjusted Japan compensation anchors to realistic synthetic annual JPY ranges and explicit Japanese language status for every profile.",
+    "shardCount": 200,
+    "shardSize": 500,
+    "storageMode": "sharded",
+    "detailSchemaVersion": "career-ops-profile-detail-v2",
+    "detailPolicy": "Synthetic profile detail v2 adds wider seniority, quality, score-bias, compensation-bias, evidence-density, risk, and gap distributions so ranking and ATS workflows see high-signal and low-signal resumes."
+  },
+  "profileDataset": {
+    "format": "sharded-json",
+    "manifest": "data/career-ops-profiles/manifest.json",
+    "directory": "data/career-ops-profiles",
+    "totalRecords": 100000,
+    "shardSize": 500,
+    "shardCount": 200,
+    "totalBytes": 6791644295,
+    "shards": [
+      {
+        "index": 1,
+        "path": "data/career-ops-profiles/career-ops-profiles-0001.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-00001",
+        "lastProfileId": "synthetic-resume-00500",
+        "byteSize": 34177388
+      },
+      {
+        "index": 2,
+        "path": "data/career-ops-profiles/career-ops-profiles-0002.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-00501",
+        "lastProfileId": "synthetic-resume-01000",
+        "byteSize": 34195873
+      },
+      {
+        "index": 3,
+        "path": "data/career-ops-profiles/career-ops-profiles-0003.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-01001",
+        "lastProfileId": "synthetic-resume-01500",
+        "byteSize": 33662982
+      },
+      {
+        "index": 4,
+        "path": "data/career-ops-profiles/career-ops-profiles-0004.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-01501",
+        "lastProfileId": "synthetic-resume-02000",
+        "byteSize": 34255941
+      },
+      {
+        "index": 5,
+        "path": "data/career-ops-profiles/career-ops-profiles-0005.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-02001",
+        "lastProfileId": "synthetic-resume-02500",
+        "byteSize": 34017497
+      },
+      {
+        "index": 6,
+        "path": "data/career-ops-profiles/career-ops-profiles-0006.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-02501",
+        "lastProfileId": "synthetic-resume-03000",
+        "byteSize": 33810518
+      },
+      {
+        "index": 7,
+        "path": "data/career-ops-profiles/career-ops-profiles-0007.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-03001",
+        "lastProfileId": "synthetic-resume-03500",
+        "byteSize": 33905573
+      },
+      {
+        "index": 8,
+        "path": "data/career-ops-profiles/career-ops-profiles-0008.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-03501",
+        "lastProfileId": "synthetic-resume-04000",
+        "byteSize": 34440970
+      },
+      {
+        "index": 9,
+        "path": "data/career-ops-profiles/career-ops-profiles-0009.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-04001",
+        "lastProfileId": "synthetic-resume-04500",
+        "byteSize": 33644588
+      },
+      {
+        "index": 10,
+        "path": "data/career-ops-profiles/career-ops-profiles-0010.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-04501",
+        "lastProfileId": "synthetic-resume-05000",
+        "byteSize": 33667329
+      },
+      {
+        "index": 11,
+        "path": "data/career-ops-profiles/career-ops-profiles-0011.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-05001",
+        "lastProfileId": "synthetic-resume-05500",
+        "byteSize": 34058402
+      },
+      {
+        "index": 12,
+        "path": "data/career-ops-profiles/career-ops-profiles-0012.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-05501",
+        "lastProfileId": "synthetic-resume-06000",
+        "byteSize": 34175408
+      },
+      {
+        "index": 13,
+        "path": "data/career-ops-profiles/career-ops-profiles-0013.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-06001",
+        "lastProfileId": "synthetic-resume-06500",
+        "byteSize": 33479950
+      },
+      {
+        "index": 14,
+        "path": "data/career-ops-profiles/career-ops-profiles-0014.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-06501",
+        "lastProfileId": "synthetic-resume-07000",
+        "byteSize": 33805241
+      },
+      {
+        "index": 15,
+        "path": "data/career-ops-profiles/career-ops-profiles-0015.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-07001",
+        "lastProfileId": "synthetic-resume-07500",
+        "byteSize": 34342687
+      },
+      {
+        "index": 16,
+        "path": "data/career-ops-profiles/career-ops-profiles-0016.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-07501",
+        "lastProfileId": "synthetic-resume-08000",
+        "byteSize": 33501018
+      },
+      {
+        "index": 17,
+        "path": "data/career-ops-profiles/career-ops-profiles-0017.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-08001",
+        "lastProfileId": "synthetic-resume-08500",
+        "byteSize": 33692789
+      },
+      {
+        "index": 18,
+        "path": "data/career-ops-profiles/career-ops-profiles-0018.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-08501",
+        "lastProfileId": "synthetic-resume-09000",
+        "byteSize": 33693020
+      },
+      {
+        "index": 19,
+        "path": "data/career-ops-profiles/career-ops-profiles-0019.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-09001",
+        "lastProfileId": "synthetic-resume-09500",
+        "byteSize": 33638733
+      },
+      {
+        "index": 20,
+        "path": "data/career-ops-profiles/career-ops-profiles-0020.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-09501",
+        "lastProfileId": "synthetic-resume-10000",
+        "byteSize": 33357246
+      },
+      {
+        "index": 21,
+        "path": "data/career-ops-profiles/career-ops-profiles-0021.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-10001",
+        "lastProfileId": "synthetic-resume-10500",
+        "byteSize": 33596584
+      },
+      {
+        "index": 22,
+        "path": "data/career-ops-profiles/career-ops-profiles-0022.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-10501",
+        "lastProfileId": "synthetic-resume-11000",
+        "byteSize": 34027499
+      },
+      {
+        "index": 23,
+        "path": "data/career-ops-profiles/career-ops-profiles-0023.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-11001",
+        "lastProfileId": "synthetic-resume-11500",
+        "byteSize": 33773831
+      },
+      {
+        "index": 24,
+        "path": "data/career-ops-profiles/career-ops-profiles-0024.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-11501",
+        "lastProfileId": "synthetic-resume-12000",
+        "byteSize": 34020575
+      },
+      {
+        "index": 25,
+        "path": "data/career-ops-profiles/career-ops-profiles-0025.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-12001",
+        "lastProfileId": "synthetic-resume-12500",
+        "byteSize": 34487834
+      },
+      {
+        "index": 26,
+        "path": "data/career-ops-profiles/career-ops-profiles-0026.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-12501",
+        "lastProfileId": "synthetic-resume-13000",
+        "byteSize": 33976922
+      },
+      {
+        "index": 27,
+        "path": "data/career-ops-profiles/career-ops-profiles-0027.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-13001",
+        "lastProfileId": "synthetic-resume-13500",
+        "byteSize": 34320707
+      },
+      {
+        "index": 28,
+        "path": "data/career-ops-profiles/career-ops-profiles-0028.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-13501",
+        "lastProfileId": "synthetic-resume-14000",
+        "byteSize": 34314415
+      },
+      {
+        "index": 29,
+        "path": "data/career-ops-profiles/career-ops-profiles-0029.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-14001",
+        "lastProfileId": "synthetic-resume-14500",
+        "byteSize": 33476379
+      },
+      {
+        "index": 30,
+        "path": "data/career-ops-profiles/career-ops-profiles-0030.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-14501",
+        "lastProfileId": "synthetic-resume-15000",
+        "byteSize": 34018434
+      },
+      {
+        "index": 31,
+        "path": "data/career-ops-profiles/career-ops-profiles-0031.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-15001",
+        "lastProfileId": "synthetic-resume-15500",
+        "byteSize": 33722157
+      },
+      {
+        "index": 32,
+        "path": "data/career-ops-profiles/career-ops-profiles-0032.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-15501",
+        "lastProfileId": "synthetic-resume-16000",
+        "byteSize": 34321094
+      },
+      {
+        "index": 33,
+        "path": "data/career-ops-profiles/career-ops-profiles-0033.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-16001",
+        "lastProfileId": "synthetic-resume-16500",
+        "byteSize": 33375786
+      },
+      {
+        "index": 34,
+        "path": "data/career-ops-profiles/career-ops-profiles-0034.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-16501",
+        "lastProfileId": "synthetic-resume-17000",
+        "byteSize": 33659853
+      },
+      {
+        "index": 35,
+        "path": "data/career-ops-profiles/career-ops-profiles-0035.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-17001",
+        "lastProfileId": "synthetic-resume-17500",
+        "byteSize": 34153233
+      },
+      {
+        "index": 36,
+        "path": "data/career-ops-profiles/career-ops-profiles-0036.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-17501",
+        "lastProfileId": "synthetic-resume-18000",
+        "byteSize": 33694625
+      },
+      {
+        "index": 37,
+        "path": "data/career-ops-profiles/career-ops-profiles-0037.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-18001",
+        "lastProfileId": "synthetic-resume-18500",
+        "byteSize": 34434916
+      },
+      {
+        "index": 38,
+        "path": "data/career-ops-profiles/career-ops-profiles-0038.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-18501",
+        "lastProfileId": "synthetic-resume-19000",
+        "byteSize": 33870455
+      },
+      {
+        "index": 39,
+        "path": "data/career-ops-profiles/career-ops-profiles-0039.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-19001",
+        "lastProfileId": "synthetic-resume-19500",
+        "byteSize": 34243368
+      },
+      {
+        "index": 40,
+        "path": "data/career-ops-profiles/career-ops-profiles-0040.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-19501",
+        "lastProfileId": "synthetic-resume-20000",
+        "byteSize": 34070297
+      },
+      {
+        "index": 41,
+        "path": "data/career-ops-profiles/career-ops-profiles-0041.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-20001",
+        "lastProfileId": "synthetic-resume-20500",
+        "byteSize": 33063305
+      },
+      {
+        "index": 42,
+        "path": "data/career-ops-profiles/career-ops-profiles-0042.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-20501",
+        "lastProfileId": "synthetic-resume-21000",
+        "byteSize": 34427200
+      },
+      {
+        "index": 43,
+        "path": "data/career-ops-profiles/career-ops-profiles-0043.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-21001",
+        "lastProfileId": "synthetic-resume-21500",
+        "byteSize": 33660251
+      },
+      {
+        "index": 44,
+        "path": "data/career-ops-profiles/career-ops-profiles-0044.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-21501",
+        "lastProfileId": "synthetic-resume-22000",
+        "byteSize": 33577860
+      },
+      {
+        "index": 45,
+        "path": "data/career-ops-profiles/career-ops-profiles-0045.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-22001",
+        "lastProfileId": "synthetic-resume-22500",
+        "byteSize": 33897993
+      },
+      {
+        "index": 46,
+        "path": "data/career-ops-profiles/career-ops-profiles-0046.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-22501",
+        "lastProfileId": "synthetic-resume-23000",
+        "byteSize": 33998265
+      },
+      {
+        "index": 47,
+        "path": "data/career-ops-profiles/career-ops-profiles-0047.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-23001",
+        "lastProfileId": "synthetic-resume-23500",
+        "byteSize": 34244780
+      },
+      {
+        "index": 48,
+        "path": "data/career-ops-profiles/career-ops-profiles-0048.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-23501",
+        "lastProfileId": "synthetic-resume-24000",
+        "byteSize": 33857529
+      },
+      {
+        "index": 49,
+        "path": "data/career-ops-profiles/career-ops-profiles-0049.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-24001",
+        "lastProfileId": "synthetic-resume-24500",
+        "byteSize": 34740835
+      },
+      {
+        "index": 50,
+        "path": "data/career-ops-profiles/career-ops-profiles-0050.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-24501",
+        "lastProfileId": "synthetic-resume-25000",
+        "byteSize": 34279818
+      },
+      {
+        "index": 51,
+        "path": "data/career-ops-profiles/career-ops-profiles-0051.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-25001",
+        "lastProfileId": "synthetic-resume-25500",
+        "byteSize": 33630190
+      },
+      {
+        "index": 52,
+        "path": "data/career-ops-profiles/career-ops-profiles-0052.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-25501",
+        "lastProfileId": "synthetic-resume-26000",
+        "byteSize": 34271541
+      },
+      {
+        "index": 53,
+        "path": "data/career-ops-profiles/career-ops-profiles-0053.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-26001",
+        "lastProfileId": "synthetic-resume-26500",
+        "byteSize": 33943326
+      },
+      {
+        "index": 54,
+        "path": "data/career-ops-profiles/career-ops-profiles-0054.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-26501",
+        "lastProfileId": "synthetic-resume-27000",
+        "byteSize": 33997249
+      },
+      {
+        "index": 55,
+        "path": "data/career-ops-profiles/career-ops-profiles-0055.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-27001",
+        "lastProfileId": "synthetic-resume-27500",
+        "byteSize": 34127221
+      },
+      {
+        "index": 56,
+        "path": "data/career-ops-profiles/career-ops-profiles-0056.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-27501",
+        "lastProfileId": "synthetic-resume-28000",
+        "byteSize": 33612073
+      },
+      {
+        "index": 57,
+        "path": "data/career-ops-profiles/career-ops-profiles-0057.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-28001",
+        "lastProfileId": "synthetic-resume-28500",
+        "byteSize": 33450764
+      },
+      {
+        "index": 58,
+        "path": "data/career-ops-profiles/career-ops-profiles-0058.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-28501",
+        "lastProfileId": "synthetic-resume-29000",
+        "byteSize": 34200249
+      },
+      {
+        "index": 59,
+        "path": "data/career-ops-profiles/career-ops-profiles-0059.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-29001",
+        "lastProfileId": "synthetic-resume-29500",
+        "byteSize": 33944014
+      },
+      {
+        "index": 60,
+        "path": "data/career-ops-profiles/career-ops-profiles-0060.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-29501",
+        "lastProfileId": "synthetic-resume-30000",
+        "byteSize": 34237515
+      },
+      {
+        "index": 61,
+        "path": "data/career-ops-profiles/career-ops-profiles-0061.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-30001",
+        "lastProfileId": "synthetic-resume-30500",
+        "byteSize": 34643417
+      },
+      {
+        "index": 62,
+        "path": "data/career-ops-profiles/career-ops-profiles-0062.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-30501",
+        "lastProfileId": "synthetic-resume-31000",
+        "byteSize": 34183394
+      },
+      {
+        "index": 63,
+        "path": "data/career-ops-profiles/career-ops-profiles-0063.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-31001",
+        "lastProfileId": "synthetic-resume-31500",
+        "byteSize": 34079397
+      },
+      {
+        "index": 64,
+        "path": "data/career-ops-profiles/career-ops-profiles-0064.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-31501",
+        "lastProfileId": "synthetic-resume-32000",
+        "byteSize": 33987042
+      },
+      {
+        "index": 65,
+        "path": "data/career-ops-profiles/career-ops-profiles-0065.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-32001",
+        "lastProfileId": "synthetic-resume-32500",
+        "byteSize": 33322229
+      },
+      {
+        "index": 66,
+        "path": "data/career-ops-profiles/career-ops-profiles-0066.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-32501",
+        "lastProfileId": "synthetic-resume-33000",
+        "byteSize": 34028927
+      },
+      {
+        "index": 67,
+        "path": "data/career-ops-profiles/career-ops-profiles-0067.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-33001",
+        "lastProfileId": "synthetic-resume-33500",
+        "byteSize": 34194195
+      },
+      {
+        "index": 68,
+        "path": "data/career-ops-profiles/career-ops-profiles-0068.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-33501",
+        "lastProfileId": "synthetic-resume-34000",
+        "byteSize": 34175686
+      },
+      {
+        "index": 69,
+        "path": "data/career-ops-profiles/career-ops-profiles-0069.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-34001",
+        "lastProfileId": "synthetic-resume-34500",
+        "byteSize": 33948122
+      },
+      {
+        "index": 70,
+        "path": "data/career-ops-profiles/career-ops-profiles-0070.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-34501",
+        "lastProfileId": "synthetic-resume-35000",
+        "byteSize": 34344569
+      },
+      {
+        "index": 71,
+        "path": "data/career-ops-profiles/career-ops-profiles-0071.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-35001",
+        "lastProfileId": "synthetic-resume-35500",
+        "byteSize": 34459180
+      },
+      {
+        "index": 72,
+        "path": "data/career-ops-profiles/career-ops-profiles-0072.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-35501",
+        "lastProfileId": "synthetic-resume-36000",
+        "byteSize": 33499784
+      },
+      {
+        "index": 73,
+        "path": "data/career-ops-profiles/career-ops-profiles-0073.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-36001",
+        "lastProfileId": "synthetic-resume-36500",
+        "byteSize": 34248405
+      },
+      {
+        "index": 74,
+        "path": "data/career-ops-profiles/career-ops-profiles-0074.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-36501",
+        "lastProfileId": "synthetic-resume-37000",
+        "byteSize": 33769124
+      },
+      {
+        "index": 75,
+        "path": "data/career-ops-profiles/career-ops-profiles-0075.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-37001",
+        "lastProfileId": "synthetic-resume-37500",
+        "byteSize": 34098662
+      },
+      {
+        "index": 76,
+        "path": "data/career-ops-profiles/career-ops-profiles-0076.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-37501",
+        "lastProfileId": "synthetic-resume-38000",
+        "byteSize": 33831869
+      },
+      {
+        "index": 77,
+        "path": "data/career-ops-profiles/career-ops-profiles-0077.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-38001",
+        "lastProfileId": "synthetic-resume-38500",
+        "byteSize": 33851519
+      },
+      {
+        "index": 78,
+        "path": "data/career-ops-profiles/career-ops-profiles-0078.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-38501",
+        "lastProfileId": "synthetic-resume-39000",
+        "byteSize": 34320636
+      },
+      {
+        "index": 79,
+        "path": "data/career-ops-profiles/career-ops-profiles-0079.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-39001",
+        "lastProfileId": "synthetic-resume-39500",
+        "byteSize": 33964965
+      },
+      {
+        "index": 80,
+        "path": "data/career-ops-profiles/career-ops-profiles-0080.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-39501",
+        "lastProfileId": "synthetic-resume-40000",
+        "byteSize": 33750402
+      },
+      {
+        "index": 81,
+        "path": "data/career-ops-profiles/career-ops-profiles-0081.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-40001",
+        "lastProfileId": "synthetic-resume-40500",
+        "byteSize": 34303170
+      },
+      {
+        "index": 82,
+        "path": "data/career-ops-profiles/career-ops-profiles-0082.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-40501",
+        "lastProfileId": "synthetic-resume-41000",
+        "byteSize": 33597847
+      },
+      {
+        "index": 83,
+        "path": "data/career-ops-profiles/career-ops-profiles-0083.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-41001",
+        "lastProfileId": "synthetic-resume-41500",
+        "byteSize": 34302661
+      },
+      {
+        "index": 84,
+        "path": "data/career-ops-profiles/career-ops-profiles-0084.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-41501",
+        "lastProfileId": "synthetic-resume-42000",
+        "byteSize": 33868940
+      },
+      {
+        "index": 85,
+        "path": "data/career-ops-profiles/career-ops-profiles-0085.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-42001",
+        "lastProfileId": "synthetic-resume-42500",
+        "byteSize": 33874007
+      },
+      {
+        "index": 86,
+        "path": "data/career-ops-profiles/career-ops-profiles-0086.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-42501",
+        "lastProfileId": "synthetic-resume-43000",
+        "byteSize": 34609778
+      },
+      {
+        "index": 87,
+        "path": "data/career-ops-profiles/career-ops-profiles-0087.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-43001",
+        "lastProfileId": "synthetic-resume-43500",
+        "byteSize": 34106681
+      },
+      {
+        "index": 88,
+        "path": "data/career-ops-profiles/career-ops-profiles-0088.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-43501",
+        "lastProfileId": "synthetic-resume-44000",
+        "byteSize": 33995560
+      },
+      {
+        "index": 89,
+        "path": "data/career-ops-profiles/career-ops-profiles-0089.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-44001",
+        "lastProfileId": "synthetic-resume-44500",
+        "byteSize": 33943928
+      },
+      {
+        "index": 90,
+        "path": "data/career-ops-profiles/career-ops-profiles-0090.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-44501",
+        "lastProfileId": "synthetic-resume-45000",
+        "byteSize": 33890260
+      },
+      {
+        "index": 91,
+        "path": "data/career-ops-profiles/career-ops-profiles-0091.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-45001",
+        "lastProfileId": "synthetic-resume-45500",
+        "byteSize": 34367626
+      },
+      {
+        "index": 92,
+        "path": "data/career-ops-profiles/career-ops-profiles-0092.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-45501",
+        "lastProfileId": "synthetic-resume-46000",
+        "byteSize": 34305344
+      },
+      {
+        "index": 93,
+        "path": "data/career-ops-profiles/career-ops-profiles-0093.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-46001",
+        "lastProfileId": "synthetic-resume-46500",
+        "byteSize": 34097375
+      },
+      {
+        "index": 94,
+        "path": "data/career-ops-profiles/career-ops-profiles-0094.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-46501",
+        "lastProfileId": "synthetic-resume-47000",
+        "byteSize": 33665937
+      },
+      {
+        "index": 95,
+        "path": "data/career-ops-profiles/career-ops-profiles-0095.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-47001",
+        "lastProfileId": "synthetic-resume-47500",
+        "byteSize": 34223525
+      },
+      {
+        "index": 96,
+        "path": "data/career-ops-profiles/career-ops-profiles-0096.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-47501",
+        "lastProfileId": "synthetic-resume-48000",
+        "byteSize": 33240510
+      },
+      {
+        "index": 97,
+        "path": "data/career-ops-profiles/career-ops-profiles-0097.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-48001",
+        "lastProfileId": "synthetic-resume-48500",
+        "byteSize": 34260185
+      },
+      {
+        "index": 98,
+        "path": "data/career-ops-profiles/career-ops-profiles-0098.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-48501",
+        "lastProfileId": "synthetic-resume-49000",
+        "byteSize": 34186786
+      },
+      {
+        "index": 99,
+        "path": "data/career-ops-profiles/career-ops-profiles-0099.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-49001",
+        "lastProfileId": "synthetic-resume-49500",
+        "byteSize": 33740655
+      },
+      {
+        "index": 100,
+        "path": "data/career-ops-profiles/career-ops-profiles-0100.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-49501",
+        "lastProfileId": "synthetic-resume-50000",
+        "byteSize": 33815072
+      },
+      {
+        "index": 101,
+        "path": "data/career-ops-profiles/career-ops-profiles-0101.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-50001",
+        "lastProfileId": "synthetic-resume-50500",
+        "byteSize": 33215370
+      },
+      {
+        "index": 102,
+        "path": "data/career-ops-profiles/career-ops-profiles-0102.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-50501",
+        "lastProfileId": "synthetic-resume-51000",
+        "byteSize": 33662717
+      },
+      {
+        "index": 103,
+        "path": "data/career-ops-profiles/career-ops-profiles-0103.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-51001",
+        "lastProfileId": "synthetic-resume-51500",
+        "byteSize": 34166258
+      },
+      {
+        "index": 104,
+        "path": "data/career-ops-profiles/career-ops-profiles-0104.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-51501",
+        "lastProfileId": "synthetic-resume-52000",
+        "byteSize": 33541697
+      },
+      {
+        "index": 105,
+        "path": "data/career-ops-profiles/career-ops-profiles-0105.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-52001",
+        "lastProfileId": "synthetic-resume-52500",
+        "byteSize": 34176624
+      },
+      {
+        "index": 106,
+        "path": "data/career-ops-profiles/career-ops-profiles-0106.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-52501",
+        "lastProfileId": "synthetic-resume-53000",
+        "byteSize": 34385297
+      },
+      {
+        "index": 107,
+        "path": "data/career-ops-profiles/career-ops-profiles-0107.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-53001",
+        "lastProfileId": "synthetic-resume-53500",
+        "byteSize": 33547390
+      },
+      {
+        "index": 108,
+        "path": "data/career-ops-profiles/career-ops-profiles-0108.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-53501",
+        "lastProfileId": "synthetic-resume-54000",
+        "byteSize": 33412958
+      },
+      {
+        "index": 109,
+        "path": "data/career-ops-profiles/career-ops-profiles-0109.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-54001",
+        "lastProfileId": "synthetic-resume-54500",
+        "byteSize": 33650386
+      },
+      {
+        "index": 110,
+        "path": "data/career-ops-profiles/career-ops-profiles-0110.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-54501",
+        "lastProfileId": "synthetic-resume-55000",
+        "byteSize": 34462752
+      },
+      {
+        "index": 111,
+        "path": "data/career-ops-profiles/career-ops-profiles-0111.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-55001",
+        "lastProfileId": "synthetic-resume-55500",
+        "byteSize": 33722557
+      },
+      {
+        "index": 112,
+        "path": "data/career-ops-profiles/career-ops-profiles-0112.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-55501",
+        "lastProfileId": "synthetic-resume-56000",
+        "byteSize": 33545047
+      },
+      {
+        "index": 113,
+        "path": "data/career-ops-profiles/career-ops-profiles-0113.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-56001",
+        "lastProfileId": "synthetic-resume-56500",
+        "byteSize": 33741782
+      },
+      {
+        "index": 114,
+        "path": "data/career-ops-profiles/career-ops-profiles-0114.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-56501",
+        "lastProfileId": "synthetic-resume-57000",
+        "byteSize": 34302981
+      },
+      {
+        "index": 115,
+        "path": "data/career-ops-profiles/career-ops-profiles-0115.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-57001",
+        "lastProfileId": "synthetic-resume-57500",
+        "byteSize": 34179431
+      },
+      {
+        "index": 116,
+        "path": "data/career-ops-profiles/career-ops-profiles-0116.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-57501",
+        "lastProfileId": "synthetic-resume-58000",
+        "byteSize": 34142706
+      },
+      {
+        "index": 117,
+        "path": "data/career-ops-profiles/career-ops-profiles-0117.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-58001",
+        "lastProfileId": "synthetic-resume-58500",
+        "byteSize": 33861207
+      },
+      {
+        "index": 118,
+        "path": "data/career-ops-profiles/career-ops-profiles-0118.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-58501",
+        "lastProfileId": "synthetic-resume-59000",
+        "byteSize": 34402595
+      },
+      {
+        "index": 119,
+        "path": "data/career-ops-profiles/career-ops-profiles-0119.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-59001",
+        "lastProfileId": "synthetic-resume-59500",
+        "byteSize": 34680575
+      },
+      {
+        "index": 120,
+        "path": "data/career-ops-profiles/career-ops-profiles-0120.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-59501",
+        "lastProfileId": "synthetic-resume-60000",
+        "byteSize": 34038363
+      },
+      {
+        "index": 121,
+        "path": "data/career-ops-profiles/career-ops-profiles-0121.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-60001",
+        "lastProfileId": "synthetic-resume-60500",
+        "byteSize": 33784825
+      },
+      {
+        "index": 122,
+        "path": "data/career-ops-profiles/career-ops-profiles-0122.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-60501",
+        "lastProfileId": "synthetic-resume-61000",
+        "byteSize": 33568447
+      },
+      {
+        "index": 123,
+        "path": "data/career-ops-profiles/career-ops-profiles-0123.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-61001",
+        "lastProfileId": "synthetic-resume-61500",
+        "byteSize": 33926116
+      },
+      {
+        "index": 124,
+        "path": "data/career-ops-profiles/career-ops-profiles-0124.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-61501",
+        "lastProfileId": "synthetic-resume-62000",
+        "byteSize": 34237014
+      },
+      {
+        "index": 125,
+        "path": "data/career-ops-profiles/career-ops-profiles-0125.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-62001",
+        "lastProfileId": "synthetic-resume-62500",
+        "byteSize": 33701873
+      },
+      {
+        "index": 126,
+        "path": "data/career-ops-profiles/career-ops-profiles-0126.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-62501",
+        "lastProfileId": "synthetic-resume-63000",
+        "byteSize": 34226174
+      },
+      {
+        "index": 127,
+        "path": "data/career-ops-profiles/career-ops-profiles-0127.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-63001",
+        "lastProfileId": "synthetic-resume-63500",
+        "byteSize": 33567506
+      },
+      {
+        "index": 128,
+        "path": "data/career-ops-profiles/career-ops-profiles-0128.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-63501",
+        "lastProfileId": "synthetic-resume-64000",
+        "byteSize": 34175451
+      },
+      {
+        "index": 129,
+        "path": "data/career-ops-profiles/career-ops-profiles-0129.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-64001",
+        "lastProfileId": "synthetic-resume-64500",
+        "byteSize": 33720067
+      },
+      {
+        "index": 130,
+        "path": "data/career-ops-profiles/career-ops-profiles-0130.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-64501",
+        "lastProfileId": "synthetic-resume-65000",
+        "byteSize": 33900355
+      },
+      {
+        "index": 131,
+        "path": "data/career-ops-profiles/career-ops-profiles-0131.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-65001",
+        "lastProfileId": "synthetic-resume-65500",
+        "byteSize": 34070744
+      },
+      {
+        "index": 132,
+        "path": "data/career-ops-profiles/career-ops-profiles-0132.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-65501",
+        "lastProfileId": "synthetic-resume-66000",
+        "byteSize": 33797458
+      },
+      {
+        "index": 133,
+        "path": "data/career-ops-profiles/career-ops-profiles-0133.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-66001",
+        "lastProfileId": "synthetic-resume-66500",
+        "byteSize": 33462233
+      },
+      {
+        "index": 134,
+        "path": "data/career-ops-profiles/career-ops-profiles-0134.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-66501",
+        "lastProfileId": "synthetic-resume-67000",
+        "byteSize": 34368573
+      },
+      {
+        "index": 135,
+        "path": "data/career-ops-profiles/career-ops-profiles-0135.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-67001",
+        "lastProfileId": "synthetic-resume-67500",
+        "byteSize": 33684447
+      },
+      {
+        "index": 136,
+        "path": "data/career-ops-profiles/career-ops-profiles-0136.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-67501",
+        "lastProfileId": "synthetic-resume-68000",
+        "byteSize": 34223141
+      },
+      {
+        "index": 137,
+        "path": "data/career-ops-profiles/career-ops-profiles-0137.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-68001",
+        "lastProfileId": "synthetic-resume-68500",
+        "byteSize": 33668960
+      },
+      {
+        "index": 138,
+        "path": "data/career-ops-profiles/career-ops-profiles-0138.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-68501",
+        "lastProfileId": "synthetic-resume-69000",
+        "byteSize": 34071820
+      },
+      {
+        "index": 139,
+        "path": "data/career-ops-profiles/career-ops-profiles-0139.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-69001",
+        "lastProfileId": "synthetic-resume-69500",
+        "byteSize": 34518944
+      },
+      {
+        "index": 140,
+        "path": "data/career-ops-profiles/career-ops-profiles-0140.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-69501",
+        "lastProfileId": "synthetic-resume-70000",
+        "byteSize": 34130947
+      },
+      {
+        "index": 141,
+        "path": "data/career-ops-profiles/career-ops-profiles-0141.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-70001",
+        "lastProfileId": "synthetic-resume-70500",
+        "byteSize": 33814071
+      },
+      {
+        "index": 142,
+        "path": "data/career-ops-profiles/career-ops-profiles-0142.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-70501",
+        "lastProfileId": "synthetic-resume-71000",
+        "byteSize": 34000266
+      },
+      {
+        "index": 143,
+        "path": "data/career-ops-profiles/career-ops-profiles-0143.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-71001",
+        "lastProfileId": "synthetic-resume-71500",
+        "byteSize": 34231576
+      },
+      {
+        "index": 144,
+        "path": "data/career-ops-profiles/career-ops-profiles-0144.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-71501",
+        "lastProfileId": "synthetic-resume-72000",
+        "byteSize": 34645089
+      },
+      {
+        "index": 145,
+        "path": "data/career-ops-profiles/career-ops-profiles-0145.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-72001",
+        "lastProfileId": "synthetic-resume-72500",
+        "byteSize": 33407023
+      },
+      {
+        "index": 146,
+        "path": "data/career-ops-profiles/career-ops-profiles-0146.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-72501",
+        "lastProfileId": "synthetic-resume-73000",
+        "byteSize": 34171435
+      },
+      {
+        "index": 147,
+        "path": "data/career-ops-profiles/career-ops-profiles-0147.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-73001",
+        "lastProfileId": "synthetic-resume-73500",
+        "byteSize": 33885203
+      },
+      {
+        "index": 148,
+        "path": "data/career-ops-profiles/career-ops-profiles-0148.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-73501",
+        "lastProfileId": "synthetic-resume-74000",
+        "byteSize": 33967622
+      },
+      {
+        "index": 149,
+        "path": "data/career-ops-profiles/career-ops-profiles-0149.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-74001",
+        "lastProfileId": "synthetic-resume-74500",
+        "byteSize": 34190367
+      },
+      {
+        "index": 150,
+        "path": "data/career-ops-profiles/career-ops-profiles-0150.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-74501",
+        "lastProfileId": "synthetic-resume-75000",
+        "byteSize": 34376938
+      },
+      {
+        "index": 151,
+        "path": "data/career-ops-profiles/career-ops-profiles-0151.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-75001",
+        "lastProfileId": "synthetic-resume-75500",
+        "byteSize": 33865481
+      },
+      {
+        "index": 152,
+        "path": "data/career-ops-profiles/career-ops-profiles-0152.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-75501",
+        "lastProfileId": "synthetic-resume-76000",
+        "byteSize": 33714635
+      },
+      {
+        "index": 153,
+        "path": "data/career-ops-profiles/career-ops-profiles-0153.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-76001",
+        "lastProfileId": "synthetic-resume-76500",
+        "byteSize": 34233751
+      },
+      {
+        "index": 154,
+        "path": "data/career-ops-profiles/career-ops-profiles-0154.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-76501",
+        "lastProfileId": "synthetic-resume-77000",
+        "byteSize": 33966989
+      },
+      {
+        "index": 155,
+        "path": "data/career-ops-profiles/career-ops-profiles-0155.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-77001",
+        "lastProfileId": "synthetic-resume-77500",
+        "byteSize": 33488108
+      },
+      {
+        "index": 156,
+        "path": "data/career-ops-profiles/career-ops-profiles-0156.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-77501",
+        "lastProfileId": "synthetic-resume-78000",
+        "byteSize": 33859265
+      },
+      {
+        "index": 157,
+        "path": "data/career-ops-profiles/career-ops-profiles-0157.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-78001",
+        "lastProfileId": "synthetic-resume-78500",
+        "byteSize": 33822965
+      },
+      {
+        "index": 158,
+        "path": "data/career-ops-profiles/career-ops-profiles-0158.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-78501",
+        "lastProfileId": "synthetic-resume-79000",
+        "byteSize": 34042182
+      },
+      {
+        "index": 159,
+        "path": "data/career-ops-profiles/career-ops-profiles-0159.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-79001",
+        "lastProfileId": "synthetic-resume-79500",
+        "byteSize": 34261020
+      },
+      {
+        "index": 160,
+        "path": "data/career-ops-profiles/career-ops-profiles-0160.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-79501",
+        "lastProfileId": "synthetic-resume-80000",
+        "byteSize": 33821594
+      },
+      {
+        "index": 161,
+        "path": "data/career-ops-profiles/career-ops-profiles-0161.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-80001",
+        "lastProfileId": "synthetic-resume-80500",
+        "byteSize": 34229436
+      },
+      {
+        "index": 162,
+        "path": "data/career-ops-profiles/career-ops-profiles-0162.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-80501",
+        "lastProfileId": "synthetic-resume-81000",
+        "byteSize": 34141971
+      },
+      {
+        "index": 163,
+        "path": "data/career-ops-profiles/career-ops-profiles-0163.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-81001",
+        "lastProfileId": "synthetic-resume-81500",
+        "byteSize": 33767971
+      },
+      {
+        "index": 164,
+        "path": "data/career-ops-profiles/career-ops-profiles-0164.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-81501",
+        "lastProfileId": "synthetic-resume-82000",
+        "byteSize": 33725322
+      },
+      {
+        "index": 165,
+        "path": "data/career-ops-profiles/career-ops-profiles-0165.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-82001",
+        "lastProfileId": "synthetic-resume-82500",
+        "byteSize": 33205120
+      },
+      {
+        "index": 166,
+        "path": "data/career-ops-profiles/career-ops-profiles-0166.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-82501",
+        "lastProfileId": "synthetic-resume-83000",
+        "byteSize": 34263767
+      },
+      {
+        "index": 167,
+        "path": "data/career-ops-profiles/career-ops-profiles-0167.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-83001",
+        "lastProfileId": "synthetic-resume-83500",
+        "byteSize": 33808191
+      },
+      {
+        "index": 168,
+        "path": "data/career-ops-profiles/career-ops-profiles-0168.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-83501",
+        "lastProfileId": "synthetic-resume-84000",
+        "byteSize": 34069760
+      },
+      {
+        "index": 169,
+        "path": "data/career-ops-profiles/career-ops-profiles-0169.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-84001",
+        "lastProfileId": "synthetic-resume-84500",
+        "byteSize": 33859241
+      },
+      {
+        "index": 170,
+        "path": "data/career-ops-profiles/career-ops-profiles-0170.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-84501",
+        "lastProfileId": "synthetic-resume-85000",
+        "byteSize": 33907915
+      },
+      {
+        "index": 171,
+        "path": "data/career-ops-profiles/career-ops-profiles-0171.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-85001",
+        "lastProfileId": "synthetic-resume-85500",
+        "byteSize": 33847865
+      },
+      {
+        "index": 172,
+        "path": "data/career-ops-profiles/career-ops-profiles-0172.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-85501",
+        "lastProfileId": "synthetic-resume-86000",
+        "byteSize": 33945947
+      },
+      {
+        "index": 173,
+        "path": "data/career-ops-profiles/career-ops-profiles-0173.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-86001",
+        "lastProfileId": "synthetic-resume-86500",
+        "byteSize": 33868758
+      },
+      {
+        "index": 174,
+        "path": "data/career-ops-profiles/career-ops-profiles-0174.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-86501",
+        "lastProfileId": "synthetic-resume-87000",
+        "byteSize": 34702627
+      },
+      {
+        "index": 175,
+        "path": "data/career-ops-profiles/career-ops-profiles-0175.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-87001",
+        "lastProfileId": "synthetic-resume-87500",
+        "byteSize": 34218492
+      },
+      {
+        "index": 176,
+        "path": "data/career-ops-profiles/career-ops-profiles-0176.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-87501",
+        "lastProfileId": "synthetic-resume-88000",
+        "byteSize": 34115452
+      },
+      {
+        "index": 177,
+        "path": "data/career-ops-profiles/career-ops-profiles-0177.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-88001",
+        "lastProfileId": "synthetic-resume-88500",
+        "byteSize": 34226774
+      },
+      {
+        "index": 178,
+        "path": "data/career-ops-profiles/career-ops-profiles-0178.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-88501",
+        "lastProfileId": "synthetic-resume-89000",
+        "byteSize": 33608638
+      },
+      {
+        "index": 179,
+        "path": "data/career-ops-profiles/career-ops-profiles-0179.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-89001",
+        "lastProfileId": "synthetic-resume-89500",
+        "byteSize": 34405816
+      },
+      {
+        "index": 180,
+        "path": "data/career-ops-profiles/career-ops-profiles-0180.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-89501",
+        "lastProfileId": "synthetic-resume-90000",
+        "byteSize": 33616180
+      },
+      {
+        "index": 181,
+        "path": "data/career-ops-profiles/career-ops-profiles-0181.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-90001",
+        "lastProfileId": "synthetic-resume-90500",
+        "byteSize": 33821909
+      },
+      {
+        "index": 182,
+        "path": "data/career-ops-profiles/career-ops-profiles-0182.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-90501",
+        "lastProfileId": "synthetic-resume-91000",
+        "byteSize": 34415052
+      },
+      {
+        "index": 183,
+        "path": "data/career-ops-profiles/career-ops-profiles-0183.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-91001",
+        "lastProfileId": "synthetic-resume-91500",
+        "byteSize": 33410789
+      },
+      {
+        "index": 184,
+        "path": "data/career-ops-profiles/career-ops-profiles-0184.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-91501",
+        "lastProfileId": "synthetic-resume-92000",
+        "byteSize": 33670440
+      },
+      {
+        "index": 185,
+        "path": "data/career-ops-profiles/career-ops-profiles-0185.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-92001",
+        "lastProfileId": "synthetic-resume-92500",
+        "byteSize": 33922114
+      },
+      {
+        "index": 186,
+        "path": "data/career-ops-profiles/career-ops-profiles-0186.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-92501",
+        "lastProfileId": "synthetic-resume-93000",
+        "byteSize": 33648624
+      },
+      {
+        "index": 187,
+        "path": "data/career-ops-profiles/career-ops-profiles-0187.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-93001",
+        "lastProfileId": "synthetic-resume-93500",
+        "byteSize": 34027543
+      },
+      {
+        "index": 188,
+        "path": "data/career-ops-profiles/career-ops-profiles-0188.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-93501",
+        "lastProfileId": "synthetic-resume-94000",
+        "byteSize": 33871086
+      },
+      {
+        "index": 189,
+        "path": "data/career-ops-profiles/career-ops-profiles-0189.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-94001",
+        "lastProfileId": "synthetic-resume-94500",
+        "byteSize": 33445827
+      },
+      {
+        "index": 190,
+        "path": "data/career-ops-profiles/career-ops-profiles-0190.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-94501",
+        "lastProfileId": "synthetic-resume-95000",
+        "byteSize": 33768951
+      },
+      {
+        "index": 191,
+        "path": "data/career-ops-profiles/career-ops-profiles-0191.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-95001",
+        "lastProfileId": "synthetic-resume-95500",
+        "byteSize": 34644022
+      },
+      {
+        "index": 192,
+        "path": "data/career-ops-profiles/career-ops-profiles-0192.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-95501",
+        "lastProfileId": "synthetic-resume-96000",
+        "byteSize": 33621697
+      },
+      {
+        "index": 193,
+        "path": "data/career-ops-profiles/career-ops-profiles-0193.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-96001",
+        "lastProfileId": "synthetic-resume-96500",
+        "byteSize": 34147593
+      },
+      {
+        "index": 194,
+        "path": "data/career-ops-profiles/career-ops-profiles-0194.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-96501",
+        "lastProfileId": "synthetic-resume-97000",
+        "byteSize": 34254857
+      },
+      {
+        "index": 195,
+        "path": "data/career-ops-profiles/career-ops-profiles-0195.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-97001",
+        "lastProfileId": "synthetic-resume-97500",
+        "byteSize": 33301339
+      },
+      {
+        "index": 196,
+        "path": "data/career-ops-profiles/career-ops-profiles-0196.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-97501",
+        "lastProfileId": "synthetic-resume-98000",
+        "byteSize": 34102720
+      },
+      {
+        "index": 197,
+        "path": "data/career-ops-profiles/career-ops-profiles-0197.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-98001",
+        "lastProfileId": "synthetic-resume-98500",
+        "byteSize": 33998892
+      },
+      {
+        "index": 198,
+        "path": "data/career-ops-profiles/career-ops-profiles-0198.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-98501",
+        "lastProfileId": "synthetic-resume-99000",
+        "byteSize": 33760717
+      },
+      {
+        "index": 199,
+        "path": "data/career-ops-profiles/career-ops-profiles-0199.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-99001",
+        "lastProfileId": "synthetic-resume-99500",
+        "byteSize": 33493132
+      },
+      {
+        "index": 200,
+        "path": "data/career-ops-profiles/career-ops-profiles-0200.json",
+        "count": 500,
+        "firstProfileId": "synthetic-resume-99501",
+        "lastProfileId": "synthetic-resume-100000",
+        "byteSize": 34030914
+      }
+    ]
+  },
+  "activeProfileId": "synthetic-active-frontend-senior"
 }

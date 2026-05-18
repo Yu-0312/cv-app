@@ -9,3 +9,7 @@ config.js
 .claude/worktrees/
 data/raw/104-browser-capture.json
 data/normalized/104-gsat-115-browser.json
+data/career-ops-profiles/
+data/app/*-results.csv
+data/app/*-results.jsonl
+data/app/gsat-score-synthetic-*.csv

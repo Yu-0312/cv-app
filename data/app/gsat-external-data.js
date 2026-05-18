@@ -9,11 +9,16 @@ window.CV_GSAT_EXTERNAL_DEPTS = [
     "th": {
       "自然": "後標"
     },
+    "thScores": {
+      "自然": 7
+    },
+    "scoreContext": "自然≥7（後標）",
     "h": [
       10,
       11,
       10
     ],
+    "uacRef": null,
     "note": "來源：104 落點分析・私立・104風險值 110",
     "source": "104",
     "criteriaName": "自然",
@@ -84,11 +89,19 @@ window.CV_GSAT_EXTERNAL_DEPTS = [
       "自然": "均標",
       "數學B": "均標"
     },
+    "thScores": {
+      "國文": 10,
+      "英文": 8,
+      "自然": 9,
+      "數學B": 5
+    },
+    "scoreContext": "國文≥10（均標）、英文≥8（均標）、自然≥9（均標）、數學B≥5（均標）",
     "h": [
       11,
       11,
       9
     ],
+    "uacRef": null,
     "note": "來源：104 落點分析・公立・104風險值 110",
     "source": "104",
     "criteriaName": "自然",
@@ -160,11 +173,18 @@ window.CV_GSAT_EXTERNAL_DEPTS = [
       "自然": "均標",
       "數學A": "均標"
     },
+    "thScores": {
+      "英文": 8,
+      "自然": 9,
+      "數學A": 8
+    },
+    "scoreContext": "英文≥8（均標）、自然≥9（均標）、數學A≥8（均標）",
     "h": [
       28,
       25,
       25
     ],
+    "uacRef": null,
     "note": "來源：104 落點分析・公立・104風險值 110",
     "source": "104",
     "criteriaName": "英數A自",
@@ -258,11 +278,18 @@ window.CV_GSAT_EXTERNAL_DEPTS = [
       "自然": "均標",
       "數學A": "均標"
     },
+    "thScores": {
+      "英文": 8,
+      "自然": 9,
+      "數學A": 8
+    },
+    "scoreContext": "英文≥8（均標）、自然≥9（均標）、數學A≥8（均標）",
     "h": [
       32,
       30,
       30
     ],
+    "uacRef": null,
     "note": "來源：104 落點分析・公立・104風險值 110",
     "source": "104",
     "criteriaName": "英數A自",
@@ -356,11 +383,19 @@ window.CV_GSAT_EXTERNAL_DEPTS = [
       "數學A": "均標",
       "數學B": "均標"
     },
+    "thScores": {
+      "英文": 8,
+      "自然": 9,
+      "數學A": 8,
+      "數學B": 5
+    },
+    "scoreContext": "英文≥8（均標）、自然≥9（均標）、數學A≥8（均標）、數學B≥5（均標）",
     "h": [
       19,
       19,
       18
     ],
+    "uacRef": null,
     "note": "來源：104 落點分析・公立・104風險值 110",
     "source": "104",
     "criteriaName": "英自",
@@ -443,11 +478,18 @@ window.CV_GSAT_EXTERNAL_DEPTS = [
       "自然": "均標",
       "數學A": "均標"
     },
+    "thScores": {
+      "英文": 8,
+      "自然": 9,
+      "數學A": 8
+    },
+    "scoreContext": "英文≥8（均標）、自然≥9（均標）、數學A≥8（均標）",
     "h": [
       27,
       23,
       25
     ],
+    "uacRef": null,
     "note": "來源：104 落點分析・公立・104風險值 110",
     "source": "104",
     "criteriaName": "英數A自",
@@ -543,11 +585,19 @@ window.CV_GSAT_EXTERNAL_DEPTS = [
       "自然": "前標",
       "數學A": "前標"
     },
+    "thScores": {
+      "國文": 10,
+      "英文": 8,
+      "自然": 12,
+      "數學A": 10
+    },
+    "scoreContext": "國文≥10（均標）、英文≥8（均標）、自然≥12（前標）、數學A≥10（前標）",
     "h": [
       43,
       41,
       42
     ],
+    "uacRef": null,
     "note": "來源：104 落點分析・公立・104風險值 110",
     "source": "104",
     "criteriaName": "國英數A自",
@@ -687,11 +737,19 @@ window.CV_GSAT_EXTERNAL_DEPTS = [
       "自然": "均標",
       "數學A": "均標"
     },
+    "thScores": {
+      "國文": 10,
+      "英文": 8,
+      "自然": 9,
+      "數學A": 8
+    },
+    "scoreContext": "國文≥10（均標）、英文≥8（均標）、自然≥9（均標）、數學A≥8（均標）",
     "h": [
       41,
       38,
       38
     ],
+    "uacRef": null,
     "note": "來源：104 落點分析・公立・104風險值 110",
     "source": "104",
     "criteriaName": "國英數A自",
@@ -828,11 +886,19 @@ window.CV_GSAT_EXTERNAL_DEPTS = [
       "數學A": "後標",
       "數學B": "後標"
     },
+    "thScores": {
+      "國文": 10,
+      "英文": 8,
+      "數學A": 5,
+      "數學B": 3
+    },
+    "scoreContext": "國文≥10（均標）、英文≥8（均標）、數學A≥5（後標）、數學B≥3（後標）",
     "h": [
       10,
       10,
       9
     ],
+    "uacRef": null,
     "note": "來源：104 落點分析・公立・104風險值 110",
     "source": "104",
     "criteriaName": "自然",
@@ -912,11 +978,18 @@ window.CV_GSAT_EXTERNAL_DEPTS = [
       "英文": "後標",
       "數學A": "後標"
     },
+    "thScores": {
+      "國文": 9,
+      "英文": 5,
+      "數學A": 5
+    },
+    "scoreContext": "國文≥9（後標）、英文≥5（後標）、數學A≥5（後標）",
     "h": [
       31,
       30,
       31
     ],
+    "uacRef": null,
     "note": "來源：104 落點分析・私立・104風險值 110",
     "source": "104",
     "criteriaName": "國英數A",
@@ -996,11 +1069,16 @@ window.CV_GSAT_EXTERNAL_DEPTS = [
     "th": {
       "國文": "均標"
     },
+    "thScores": {
+      "國文": 10
+    },
+    "scoreContext": "國文≥10（均標）",
     "h": [
       31,
       32,
       11
     ],
+    "uacRef": null,
     "note": "來源：104 落點分析・私立・104風險值 110",
     "source": "104",
     "criteriaName": "國英社",
@@ -1090,11 +1168,20 @@ window.CV_GSAT_EXTERNAL_DEPTS = [
       "數學A": "後標",
       "數學B": "後標"
     },
+    "thScores": {
+      "國文": 10,
+      "英文": 5,
+      "社會": 8,
+      "數學A": 5,
+      "數學B": 3
+    },
+    "scoreContext": "國文≥10（均標）、英文≥5（後標）、社會≥8（後標）、數學A≥5（後標）、數學B≥3（後標）",
     "h": [
       32,
       33,
       21
     ],
+    "uacRef": null,
     "note": "來源：104 落點分析・私立・104風險值 110",
     "source": "104",
     "criteriaName": "國英社",
@@ -1181,11 +1268,17 @@ window.CV_GSAT_EXTERNAL_DEPTS = [
       "國文": "均標",
       "英文": "均標"
     },
+    "thScores": {
+      "國文": 10,
+      "英文": 8
+    },
+    "scoreContext": "國文≥10（均標）、英文≥8（均標）",
     "h": [
       21,
       22,
       11
     ],
+    "uacRef": null,
     "note": "來源：104 落點分析・私立・104風險值 110",
     "source": "104",
     "criteriaName": "國英",
@@ -1266,11 +1359,17 @@ window.CV_GSAT_EXTERNAL_DEPTS = [
       "國文": "後標",
       "英文": "後標"
     },
+    "thScores": {
+      "國文": 9,
+      "英文": 5
+    },
+    "scoreContext": "國文≥9（後標）、英文≥5（後標）",
     "h": [
       11,
       10,
       9
     ],
+    "uacRef": null,
     "note": "來源：104 落點分析・私立・104風險值 110",
     "source": "104",
     "criteriaName": "國文",
@@ -1373,11 +1472,19 @@ window.CV_GSAT_EXTERNAL_DEPTS = [
       "數學A": "均標",
       "數學B": "均標"
     },
+    "thScores": {
+      "國文": 10,
+      "英文": 8,
+      "數學A": 8,
+      "數學B": 5
+    },
+    "scoreContext": "國文≥10（均標）、英文≥8（均標）、數學A≥8（均標）、數學B≥5（均標）",
     "h": [
       21,
       21,
       19
     ],
+    "uacRef": null,
     "note": "來源：104 落點分析・公立・104風險值 110",
     "source": "104",
     "criteriaName": "國英",
@@ -1460,11 +1567,18 @@ window.CV_GSAT_EXTERNAL_DEPTS = [
       "英文": "均標",
       "社會": "均標"
     },
+    "thScores": {
+      "國文": 10,
+      "英文": 8,
+      "社會": 10
+    },
+    "scoreContext": "國文≥10（均標）、英文≥8（均標）、社會≥10（均標）",
     "h": [
       31,
       30,
       34
     ],
+    "uacRef": null,
     "note": "來源：104 落點分析・公立・104風險值 110",
     "source": "104",
     "criteriaName": "國英社",
@@ -1556,11 +1670,18 @@ window.CV_GSAT_EXTERNAL_DEPTS = [
       "英文": "均標",
       "數學B": "均標"
     },
+    "thScores": {
+      "國文": 10,
+      "英文": 8,
+      "數學B": 5
+    },
+    "scoreContext": "國文≥10（均標）、英文≥8（均標）、數學B≥5（均標）",
     "h": [
       9,
       8,
       8
     ],
+    "uacRef": null,
     "note": "來源：104 落點分析・公立・104風險值 110",
     "source": "104",
     "criteriaName": "英文",
@@ -1661,11 +1782,16 @@ window.CV_GSAT_EXTERNAL_DEPTS = [
     "th": {
       "英文": "後標"
     },
+    "thScores": {
+      "英文": 5
+    },
+    "scoreContext": "英文≥5（後標）",
     "h": [
       28,
       26,
       26
     ],
+    "uacRef": null,
     "note": "來源：104 落點分析・公立・104風險值 110",
     "source": "104",
     "criteriaName": "國英社",
@@ -1745,11 +1871,16 @@ window.CV_GSAT_EXTERNAL_DEPTS = [
     "th": {
       "英文": "後標"
     },
+    "thScores": {
+      "英文": 5
+    },
+    "scoreContext": "英文≥5（後標）",
     "h": [
       30,
       28,
       30
     ],
+    "uacRef": null,
     "note": "來源：104 落點分析・公立・104風險值 110",
     "source": "104",
     "criteriaName": "國英社",
@@ -1829,11 +1960,17 @@ window.CV_GSAT_EXTERNAL_DEPTS = [
       "國文": "均標",
       "英文": "均標"
     },
+    "thScores": {
+      "國文": 10,
+      "英文": 8
+    },
+    "scoreContext": "國文≥10（均標）、英文≥8（均標）",
     "h": [
       20,
       19,
       26
     ],
+    "uacRef": null,
     "note": "來源：104 落點分析・公立・104風險值 110",
     "source": "104",
     "criteriaName": "國英",

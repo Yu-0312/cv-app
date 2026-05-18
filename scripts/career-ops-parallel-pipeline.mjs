@@ -29,10 +29,12 @@ Options:
   --strategy <file>     Source strategy JSON. Default: data/career-ops-source-strategy.json
   --rubric <file>       Rubric JSON. Default: ${DEFAULT_RUBRIC}
   --sources <file>      Sources JSON. Default: data/career-ops-sources.json
+  --market <code>       Include one market during source build/flex. Can be repeated
   --concurrency <n>     Parallel source-scan workers. Default: min(4, CPU count)
   --skip-source-build   Do not build sources from strategy first
   --skip-source-flex    Do not expand sources with flex rules
   --skip-scrape         Skip parallel network scrape
+  --scan-only           Stop after source build/flex and parallel scrape merge
   --skip-quality        Do not run source quality gate
   --skip-modes          Do not generate command registry artifacts
   --include-expired     Preserve expired jobs from previous snapshot
@@ -46,10 +48,12 @@ function parseArgs(argv) {
     strategy: "data/career-ops-source-strategy.json",
     rubric: DEFAULT_RUBRIC,
     sources: "data/career-ops-sources.json",
+    markets: [],
     concurrency: Math.max(1, Math.min(4, os.cpus().length || 2)),
     skipSourceBuild: false,
     skipSourceFlex: false,
     skipScrape: false,
+    scanOnly: false,
     skipQuality: false,
     skipModes: false,
     includeExpired: false
@@ -61,10 +65,15 @@ function parseArgs(argv) {
     else if (token === "--strategy") args.strategy = argv[++i] || args.strategy;
     else if (token === "--rubric") args.rubric = argv[++i] || args.rubric;
     else if (token === "--sources") args.sources = argv[++i] || args.sources;
+    else if (token === "--market") {
+      const market = String(argv[++i] || "").trim().toLowerCase();
+      if (market) args.markets.push(market);
+    }
     else if (token === "--concurrency") args.concurrency = Math.max(1, Number.parseInt(argv[++i] || "4", 10) || 4);
     else if (token === "--skip-source-build") args.skipSourceBuild = true;
     else if (token === "--skip-source-flex") args.skipSourceFlex = true;
     else if (token === "--skip-scrape") args.skipScrape = true;
+    else if (token === "--scan-only") args.scanOnly = true;
     else if (token === "--skip-quality") args.skipQuality = true;
     else if (token === "--skip-modes") args.skipModes = true;
     else if (token === "--include-expired") args.includeExpired = true;
@@ -106,6 +115,10 @@ function chunkArray(items, count) {
   const chunks = Array.from({ length: Math.max(1, count) }, () => []);
   items.forEach((item, index) => chunks[index % chunks.length].push(item));
   return chunks.filter((chunk) => chunk.length);
+}
+
+function marketArgs(markets) {
+  return markets.flatMap((market) => ["--market", market]);
 }
 
 function stableJobKey(job) {
@@ -208,7 +221,8 @@ async function main() {
       "scripts/career-ops-build-sources.mjs",
       "--strategy", args.strategy,
       "--out", args.sources,
-      "--report-out", "data/app/career-ops-source-strategy-report.md"
+      "--report-out", "data/app/career-ops-source-strategy-report.md",
+      ...marketArgs(args.markets)
     ]);
   }
 
@@ -219,7 +233,8 @@ async function main() {
       "--profile", args.profile,
       "--rules", "data/career-ops-source-flex.json",
       "--out", args.sources,
-      "--report-out", "data/app/career-ops-source-flex-report.md"
+      "--report-out", "data/app/career-ops-source-flex-report.md",
+      ...marketArgs(args.markets)
     ]);
   }
 
@@ -262,6 +277,8 @@ async function main() {
       errors: merged.errors
     }));
   }
+
+  if (args.scanOnly) return;
 
   if (!args.skipQuality) {
     await runSequential("source quality", "node", [
