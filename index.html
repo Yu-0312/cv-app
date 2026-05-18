@@ -21,7 +21,6 @@
   <script src="./university-data.js"></script>
   <script src="./data/app/gsat-external-data.js"></script>
   <script src="./data/app/university-tw-app-data.js"></script>
-  <script src="./data/app/career-ops-jobs.js"></script>
   <script src="./data/app/career-ops-singapore-jobs.js"></script>
   <script src="./data/app/career-ops-application-kit.js"></script>
   <script src="./data/app/career-ops-deep-research.js"></script>
@@ -5183,6 +5182,54 @@
       gap: 12px;
       margin-bottom: 18px;
     }
+    .career-ops-filterbar {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 12px;
+      padding: 12px 14px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: rgba(255,255,255,0.7);
+    }
+    .career-ops-filter-title {
+      display: grid;
+      gap: 3px;
+      min-width: 0;
+    }
+    .career-ops-filter-title strong {
+      color: var(--ink);
+      font-size: 13px;
+      line-height: 1.3;
+    }
+    .career-ops-filter-title span {
+      color: var(--muted);
+      font-size: 11.5px;
+      line-height: 1.45;
+    }
+    .career-ops-filter-field {
+      display: grid;
+      gap: 5px;
+      min-width: min(260px, 100%);
+    }
+    .career-ops-filter-field label {
+      color: var(--muted);
+      font-size: 10.5px;
+      font-weight: 850;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+    .career-ops-filter-field select {
+      min-height: 36px;
+      border: 1px solid var(--line);
+      border-radius: 9px;
+      background: rgba(255,255,255,0.92);
+      color: var(--ink);
+      font: inherit;
+      font-size: 12px;
+      padding: 7px 10px;
+    }
     .career-ops-stat {
       background: var(--surface-strong);
       border: 1px solid var(--line);
@@ -5400,6 +5447,7 @@
       .career-workspace { grid-template-columns: 1fr; }
       .career-panel { border-right: none; border-bottom: 1px solid var(--line); }
 	      .career-score-grid, .career-two-col, .career-ats-grid, .career-ops-stats, .career-ops-grid, .career-ops-threshold-strip, .career-ops-ag-grid { grid-template-columns: 1fr; }
+	      .career-ops-filterbar { align-items: stretch; flex-direction: column; }
     }
 
     /* ============================================================
@@ -6835,13 +6883,14 @@
           <div id="careerOpsSection" hidden>
             <div class="career-panel-label">大量職缺匯入</div>
             <textarea id="careerOpsImportInput" class="career-textarea" placeholder="貼上多筆職缺描述，每筆用 --- 分隔。建議包含公司、職稱、連結、職責與要求技能；只有 URL 的職缺會先進追蹤器，但需要補上描述才能評估。"></textarea>
-            <div class="career-ops-help">支援貼上 JD / URL 清單、匯入後端職缺快照與批次 AI 評估；本機引擎會同步產生 GitHub career-ops 風格 A-G 報告、4.0/5 投遞門檻、Block G 合法性與客製化行動。</div>
+            <div class="career-ops-help">支援貼上 JD / URL 清單、匯入後端職缺快照、全職缺池找最佳與批次 AI 評估；本機引擎會同步產生 GitHub career-ops 風格 A-G 報告、4.0/5 投遞門檻、Block G 合法性與客製化行動。</div>
             <div class="career-ops-actions">
               <button id="careerOpsImportBtn" class="career-link-btn" type="button">匯入到追蹤器</button>
               <button id="careerOpsImportSnapshotBtn" class="career-link-btn" type="button">匯入後端職缺快照</button>
               <button id="careerOpsSyncSnapshotBtn" class="career-link-btn" type="button">同步今日快照</button>
               <button id="careerOpsImportSingaporeBtn" class="career-link-btn" type="button">匯入新加坡職缺快照</button>
               <button id="careerOpsRunLocalEngineBtn" class="career-link-btn" type="button">本機分析引擎</button>
+              <button id="careerOpsRunFullPoolBtn" class="career-link-btn" type="button">全職缺找最佳</button>
               <button id="careerOpsRunBatchBtn" class="career-link-btn" type="button">AI 批次評估</button>
               <button id="careerOpsExportCsvBtn" class="career-link-btn" type="button">匯出追蹤 CSV</button>
             </div>
@@ -15620,14 +15669,23 @@
 
 	        /* ── MODE 5: Career Ops batch pipeline ── */
 	        const CAREER_OPS_STORAGE_KEY = "cv-studio-career-ops-v1";
+	        const CAREER_OPS_COUNTRY_FILTER_KEY = "cv-studio-career-ops-country-filter-v1";
 	        const CAREER_OPS_SNAPSHOT_SYNC_KEY = "cv-studio-career-ops-snapshot-sync-v1";
 	        const CAREER_OPS_SNAPSHOT_SYNC_INTERVAL_MS = 24 * 60 * 60 * 1000;
 	        const CAREER_OPS_TRACKER_LIMIT = 1000;
+	        const CAREER_OPS_FULL_POOL_IMPORT_LIMIT = 250;
 	        const CAREER_OPS_STATUSES = ["待評估", "強烈投遞", "值得投遞", "觀望", "略過", "已投遞", "待追蹤", "面試中", "Offer", "拒絕", "已下架"];
 	        const CAREER_OPS_PROGRESS_STATUSES = new Set(["已投遞", "待追蹤", "面試中", "Offer", "拒絕"]);
 	        let careerOpsCloudSyncTimer = null;
 	        let careerOpsCloudDisabled = false;
 	        let careerOpsSelectedJobId = "";
+	        let careerOpsCountryFilter = (() => {
+	          try {
+	            return localStorage.getItem(CAREER_OPS_COUNTRY_FILTER_KEY) || "all";
+	          } catch {
+	            return "all";
+	          }
+	        })();
 	        let careerOpsReportsLoaded = false;
 	        const careerOpsReports = { sourceStrategy: "", sourceFlex: "", sourceQuality: "", search: "", applicationKit: "", deepResearch: "", deepFit: "", compensation: "", storyBank: "", parallel: "", learning: "", modes: "" };
 
@@ -16799,7 +16857,8 @@
 	            : `每日快照已檢查：${result.matched}/${result.total} 筆追蹤職缺已是最新${date}。`;
 	        }
 
-	        function syncCareerOpsSnapshotNow() {
+	        async function syncCareerOpsSnapshotNow() {
+	          await loadCareerOpsFullPoolSnapshot();
 	          const result = syncCareerOpsTrackedJobsWithSnapshot({ force: true });
 	          if (result.status === "missing-snapshot") {
 	            showError("目前沒有後端職缺快照。請先執行每日 Career Ops 更新流程。");
@@ -16929,6 +16988,48 @@
 	          return additions.length;
 	        }
 
+	        function mergeCareerOpsRankedJobs(rankedJobs) {
+	          const currentJobs = loadCareerOpsJobs();
+	          const currentByKey = new Map();
+	          currentJobs.forEach((job) => {
+	            const normalized = normalizeCareerOpsJob(job);
+	            const key = normalized.jobKey || careerOpsJobKey(normalized);
+	            if (key) currentByKey.set(key, normalized);
+	          });
+	          const rankedKeys = new Set();
+	          const now = new Date().toISOString();
+	          const mergedRanked = rankedJobs.map((job, index) => {
+	            const ranked = normalizeCareerOpsJob({
+	              ...job,
+	              id: job.id || careerOpsId(),
+	              jobKey: job.jobKey || careerOpsJobKey(job),
+	              updatedAt: now
+	            }, index);
+	            const key = ranked.jobKey || careerOpsJobKey(ranked);
+	            rankedKeys.add(key);
+	            const existing = currentByKey.get(key);
+	            if (!existing) return ranked;
+	            return normalizeCareerOpsJob({
+	              ...ranked,
+	              id: existing.id,
+	              status: CAREER_OPS_PROGRESS_STATUSES.has(existing.status) ? existing.status : ranked.status,
+	              notes: existing.notes,
+	              contactName: existing.contactName,
+	              contactEmail: existing.contactEmail,
+	              nextFollowUpAt: existing.nextFollowUpAt,
+	              feedback: existing.feedback,
+	              tailored: existing.tailored || ranked.tailored,
+	              createdAt: existing.createdAt || ranked.createdAt,
+	              updatedAt: now
+	            }, index);
+	          });
+	          const rest = currentJobs.filter((job) => !rankedKeys.has(job.jobKey || careerOpsJobKey(job)));
+	          const next = [...mergedRanked, ...rest].slice(0, CAREER_OPS_TRACKER_LIMIT);
+	          saveCareerOpsJobs(next);
+	          careerOpsSelectedJobId = mergedRanked[0]?.id || careerOpsSelectedJobId;
+	          return { merged: mergedRanked.length, total: next.length };
+	        }
+
 	        function importCareerOpsJobs() {
 	          const input = $c("careerOpsImportInput");
 	          const incoming = splitCareerOpsInput(input?.value || "").map(parseCareerOpsChunk);
@@ -16944,8 +17045,8 @@
 	          if (input) input.value = "";
 	        }
 
-	        function importCareerOpsSnapshot() {
-	          const snapshot = window.CV_CAREER_OPS_JOBS || {};
+	        async function importCareerOpsSnapshot() {
+	          const snapshot = await loadCareerOpsFullPoolSnapshot();
 	          const jobs = Array.isArray(snapshot.jobs) ? snapshot.jobs : [];
 	          if (!jobs.length) {
 	            showError("目前沒有後端職缺快照。請先執行 npm run career-ops:scrape 產生 data/app/career-ops-jobs.js。");
@@ -16963,7 +17064,9 @@
 	          try {
 	            const response = await fetch("./data/app/career-ops-singapore-jobs.json", { cache: "no-store" });
 	            if (!response.ok) return {};
-	            return await response.json();
+	            const snapshot = await response.json();
+	            window.CV_CAREER_OPS_SINGAPORE_JOBS = snapshot;
+	            return snapshot;
 	          } catch {
 	            return {};
 	          }
@@ -16988,6 +17091,102 @@
 	          }
 	        }
 
+	        async function loadCareerOpsFullPoolSnapshot() {
+	          const globalSnapshot = window.CV_CAREER_OPS_JOBS || {};
+	          if (Array.isArray(globalSnapshot.jobs) && globalSnapshot.jobs.length) return globalSnapshot;
+	          try {
+	            const response = await fetch("./data/app/career-ops-jobs.json", { cache: "no-store" });
+	            if (!response.ok) return {};
+	            const snapshot = await response.json();
+	            window.CV_CAREER_OPS_JOBS = snapshot;
+	            return snapshot;
+	          } catch {
+	            return {};
+	          }
+	        }
+
+	        function careerOpsFullPoolEligibleJobs(snapshot) {
+	          const snapshotJobs = Array.isArray(snapshot?.jobs) ? snapshot.jobs : [];
+	          return snapshotJobs
+	            .map((job, index) => {
+	              const normalized = normalizeCareerOpsJob(job, index);
+	              normalized.jobKey = normalized.jobKey || careerOpsJobKey(normalized);
+	              return normalized;
+	            })
+	            .filter(job => !job.isExpired && (job.description || "").replace(job.url || "", "").trim().length >= 80);
+	        }
+
+	        function careerOpsFullPoolRankScore(result, job) {
+	          const dims = result.dimensions || {};
+	          const features = result.features || {};
+	          const blockG = result.blockG?.tier || "";
+	          const blockBonus = blockG === "High Confidence" ? 200 : blockG === "Proceed with Caution" ? 0 : -1000;
+	          const salaryBonus = Number(dims.compensation?.score || 0) >= 72 ? 30 : 0;
+	          return Number(result.score || 0) * 10000 +
+	            Number(dims.cvMatch?.score || 0) * 45 +
+	            Number(dims.northStar?.score || 0) * 35 +
+	            Number(dims.culture?.score || 0) * 12 +
+	            Number(dims.redFlags?.score || 0) * 10 +
+	            Number(dims.effort?.score || 0) * 8 +
+	            careerOpsArray(features.profileSkillHits).length * 120 +
+	            careerOpsArray(dims.northStar?.targetRoleHits).length * 100 +
+	            careerOpsArray(features.rareHighValueSkills).length * 80 +
+	            careerOpsArray(features.locationHits).length * 40 +
+	            careerOpsArray(features.companyHits).length * 50 -
+	            careerOpsArray(features.missingProfileSkills).length * 12 +
+	            blockBonus +
+	            careerOpsDescriptionQuality(job).score +
+	            salaryBonus +
+	            (job.isNew ? 25 : 0) +
+	            (job.url ? 10 : 0);
+	        }
+
+	        async function runCareerOpsFullPoolRanker() {
+	          const cv = getCvSummary();
+	          if (!cv) {
+	            showError("請先至「CV 履歷」頁填寫或匯入一筆履歷，再掃完整職缺池。");
+	            return;
+	          }
+	          showLoading("正在載入完整職缺池，準備用這份履歷尋找最佳職缺…");
+	          const snapshot = await loadCareerOpsFullPoolSnapshot();
+	          const eligible = careerOpsFullPoolEligibleJobs(snapshot);
+	          if (!eligible.length) {
+	            showError("目前沒有可評分的後端職缺快照。請先執行 Career Ops 更新流程產生 data/app/career-ops-jobs.json / .js。");
+	            return;
+	          }
+	          const profile = careerOpsLocalProfile();
+	          const skillCounts = careerOpsSkillCounts(eligible);
+	          const ranked = [];
+	          const startedAt = Date.now();
+	          for (let i = 0; i < eligible.length; i += 1) {
+	            const job = eligible[i];
+	            const result = careerOpsScoreLocalJob(job, profile, skillCounts);
+	            ranked.push({ job, score: result.score, rating: result.rating, grade: result.grade, rankScore: careerOpsFullPoolRankScore(result, job) });
+	            if (i && i % 2000 === 0) {
+	              showLoading(`正在掃描完整職缺池 ${i.toLocaleString()} / ${eligible.length.toLocaleString()}，目前最高分 ${Math.max(...ranked.slice(-2000).map(item => item.score))}…`);
+	              await new Promise(resolve => setTimeout(resolve, 0));
+	            }
+	          }
+	          ranked.sort((a, b) =>
+	            b.score - a.score ||
+	            b.rankScore - a.rankScore ||
+	            String(a.job.company || "").localeCompare(String(b.job.company || "")) ||
+	            String(a.job.title || "").localeCompare(String(b.job.title || ""))
+	          );
+	          const topCount = Math.min(CAREER_OPS_FULL_POOL_IMPORT_LIMIT, ranked.length, CAREER_OPS_TRACKER_LIMIT);
+	          const topJobs = ranked.slice(0, topCount).map((item, index) => applyCareerOpsLocalEngineToJob({
+	            ...item.job,
+	            id: `full-pool-${Date.now()}-${index}`,
+	            jobKey: item.job.jobKey || careerOpsJobKey(item.job)
+	          }, profile, skillCounts));
+	          const mergeResult = mergeCareerOpsRankedJobs(topJobs);
+	          const elapsedSeconds = Math.round((Date.now() - startedAt) / 100) / 10;
+	          const best = topJobs[0];
+	          renderCareerOpsDashboard(
+	            `全職缺池掃描完成：已用目前履歷評分 ${eligible.length.toLocaleString()} 筆職缺，耗時 ${elapsedSeconds} 秒；已把 Top ${mergeResult.merged} 放入 tracker。最佳職缺：${best?.company || ""} / ${best?.title || ""}（${best?.score || "—"}/100）。`
+	          );
+	        }
+
 	        function careerOpsStatusOptions(current) {
 	          return CAREER_OPS_STATUSES.map(status =>
 	            `<option value="${careerText(status)}"${status === current ? " selected" : ""}>${careerText(status)}</option>`
@@ -16999,6 +17198,77 @@
 	          const bScore = b.score === "" ? -1 : Number(b.score);
 	          if (bScore !== aScore) return bScore - aScore;
 	          return String(b.updatedAt || "").localeCompare(String(a.updatedAt || ""));
+	        }
+
+	        const CAREER_OPS_COUNTRY_NAME_TO_CODE = {
+	          "australia": "AU",
+	          "canada": "CA",
+	          "france": "FR",
+	          "germany": "DE",
+	          "india": "IN",
+	          "ireland": "IE",
+	          "italy": "IT",
+	          "japan": "JP",
+	          "netherlands": "NL",
+	          "singapore": "SG",
+	          "spain": "ES",
+	          "taiwan": "TW",
+	          "united kingdom": "GB",
+	          "uk": "GB",
+	          "united states": "US",
+	          "united states of america": "US",
+	          "usa": "US"
+	        };
+
+	        function careerOpsCountryKey(job = {}) {
+	          const countryCode = String(job.countryCode || job.sourceCountryCode || job.country_code || job.source_country_code || "").trim().toUpperCase();
+	          if (countryCode) return countryCode;
+	          const market = String(job.sourceMarket || job.market || "").trim().toUpperCase();
+	          if (/^[A-Z]{2}$/.test(market)) return market;
+	          const country = String(job.country || job.sourceCountry || job.source_country || "").trim();
+	          if (country) return CAREER_OPS_COUNTRY_NAME_TO_CODE[country.toLowerCase()] || country;
+	          const location = String(job.location || "").toLowerCase();
+	          for (const [name, code] of Object.entries(CAREER_OPS_COUNTRY_NAME_TO_CODE)) {
+	            if (location.includes(name)) return code;
+	          }
+	          return "unknown";
+	        }
+
+	        function careerOpsCountryLabelFromJob(job = {}, fallback = "") {
+	          const country = String(job.country || job.sourceCountry || job.source_country || "").trim();
+	          const code = String(job.countryCode || job.sourceCountryCode || job.country_code || job.source_country_code || fallback || "").trim().toUpperCase();
+	          if (country && code && country.toUpperCase() !== code) return `${country} (${code})`;
+	          return country || code || (fallback === "unknown" ? "未標示國家" : String(fallback || "未標示國家"));
+	        }
+
+	        function careerOpsCountryFilterOptions(jobs) {
+	          const groups = new Map();
+	          jobs.forEach(job => {
+	            const key = careerOpsCountryKey(job);
+	            if (!groups.has(key)) {
+	              groups.set(key, { value: key, label: careerOpsCountryLabelFromJob(job, key), count: 0 });
+	            }
+	            groups.get(key).count += 1;
+	          });
+	          return Array.from(groups.values()).sort((a, b) =>
+	            b.count - a.count || a.label.localeCompare(b.label)
+	          );
+	        }
+
+	        function careerOpsJobsForCountry(jobs) {
+	          if (!careerOpsCountryFilter || careerOpsCountryFilter === "all") return jobs;
+	          return jobs.filter(job => careerOpsCountryKey(job) === careerOpsCountryFilter);
+	        }
+
+	        function saveCareerOpsCountryFilter(value) {
+	          careerOpsCountryFilter = value || "all";
+	          try {
+	            if (careerOpsCountryFilter === "all") {
+	              localStorage.removeItem(CAREER_OPS_COUNTRY_FILTER_KEY);
+	            } else {
+	              localStorage.setItem(CAREER_OPS_COUNTRY_FILTER_KEY, careerOpsCountryFilter);
+	            }
+	          } catch {}
 	        }
 
 	        function careerOpsJobMarketLabel(job = {}) {
@@ -17286,8 +17556,8 @@
 
 	        function renderCareerOpsDashboard(message = "") {
 	          if (!careerOpsReportsLoaded) loadCareerOpsReports();
-	          const jobs = loadCareerOpsJobs().sort(careerOpsJobSort);
-	          if (!jobs.length) {
+	          const allJobs = loadCareerOpsJobs().sort(careerOpsJobSort);
+	          if (!allJobs.length) {
 	            $c("careerResultsArea").innerHTML = `
 	              <div class="career-ops-empty">
 	                <strong>尚未匯入職缺。</strong><br>
@@ -17295,11 +17565,27 @@
 	              </div>`;
 	            return;
 	          }
+	          const countryOptions = careerOpsCountryFilterOptions(allJobs);
+	          if (careerOpsCountryFilter !== "all" && !countryOptions.some(option => option.value === careerOpsCountryFilter)) {
+	            saveCareerOpsCountryFilter("all");
+	          }
+	          const jobs = careerOpsJobsForCountry(allJobs);
 	          if (!jobs.some(job => job.id === careerOpsSelectedJobId)) {
 	            careerOpsSelectedJobId = jobs[0].id;
 	          }
 	          const selected = jobs.find(job => job.id === careerOpsSelectedJobId) || jobs[0];
 	          const stats = careerOpsStats(jobs);
+	          const selectedCountryOption = countryOptions.find(option => option.value === careerOpsCountryFilter);
+	          const countryOptionsHtml = [
+	            `<option value="all"${careerOpsCountryFilter === "all" ? " selected" : ""}>全部國家（${allJobs.length}）</option>`,
+	            ...countryOptions.map(option =>
+	              `<option value="${careerText(option.value)}"${option.value === careerOpsCountryFilter ? " selected" : ""}>${careerText(option.label)}（${careerText(option.count)}）</option>`
+	            )
+	          ].join("");
+	          const countryFilterLabel = careerOpsCountryFilter === "all" ? "全部國家" : selectedCountryOption?.label || careerOpsCountryFilter;
+	          const countryFilterSummary = careerOpsCountryFilter === "all"
+	            ? `顯示 ${allJobs.length.toLocaleString()} 筆職缺`
+	            : `顯示 ${jobs.length.toLocaleString()} / ${allJobs.length.toLocaleString()} 筆職缺`;
 	          const rows = jobs.map(job => {
 	            const active = job.id === selected.id ? " active" : "";
 	            const bgTier = job.blockG?.tier;
@@ -17398,6 +17684,16 @@
 
 	          $c("careerResultsArea").innerHTML = `
 	            ${message ? `<div class="career-result-section"><p>${careerText(message)}</p></div>` : ""}
+	            <div class="career-ops-filterbar">
+	              <div class="career-ops-filter-title">
+	                <strong>${careerText(countryFilterLabel)}</strong>
+	                <span>${careerText(countryFilterSummary)}</span>
+	              </div>
+	              <div class="career-ops-filter-field">
+	                <label for="careerOpsCountryFilter">國家</label>
+	                <select id="careerOpsCountryFilter" data-career-ops-country-filter>${countryOptionsHtml}</select>
+	              </div>
+	            </div>
 	            <div class="career-ops-stats">
 	              <div class="career-ops-stat"><span>職缺總數</span><strong>${careerText(stats.total)}</strong></div>
 	              <div class="career-ops-stat"><span>已評估</span><strong>${careerText(stats.evaluated)}</strong></div>
@@ -17959,6 +18255,14 @@
 	        }
 
 	        function handleCareerOpsResultsChange(event) {
+	          const countryFilter = event.target.closest("[data-career-ops-country-filter]");
+	          if (countryFilter) {
+	            saveCareerOpsCountryFilter(countryFilter.value || "all");
+	            const jobs = careerOpsJobsForCountry(loadCareerOpsJobs().sort(careerOpsJobSort));
+	            careerOpsSelectedJobId = jobs[0]?.id || "";
+	            renderCareerOpsDashboard();
+	            return;
+	          }
 	          const select = event.target.closest("[data-career-ops-status]");
 	          const field = event.target.closest("[data-career-ops-field]");
 	          if (!select && !field) return;
@@ -18041,6 +18345,7 @@
 	          $c("careerOpsSyncSnapshotBtn")?.addEventListener("click", syncCareerOpsSnapshotNow);
 	          $c("careerOpsImportSingaporeBtn")?.addEventListener("click", importCareerOpsSingaporeSnapshot);
 	          $c("careerOpsRunLocalEngineBtn")?.addEventListener("click", runCareerOpsLocalEngine);
+	          $c("careerOpsRunFullPoolBtn")?.addEventListener("click", runCareerOpsFullPoolRanker);
 	          $c("careerOpsRunBatchBtn")?.addEventListener("click", runCareerOpsBatch);
 	          $c("careerOpsExportCsvBtn")?.addEventListener("click", exportCareerOpsCsv);
 	          $c("careerResultsArea")?.addEventListener("click", handleCareerOpsResultsClick);

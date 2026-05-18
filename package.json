@@ -67,6 +67,7 @@
     "career-ops:compare-app": "node scripts/career-ops-app-compare.mjs",
     "career-ops:big-sim": "node scripts/career-ops-big-sim.mjs",
     "career-ops:big-app-compare": "node scripts/career-ops-big-app-compare.mjs",
+    "career-ops:rank-jobs": "node scripts/career-ops-rank-jobs.mjs",
     "career-ops:profiles:generate": "node scripts/generate-career-ops-profiles.mjs --rows 100000",
     "career-ops:profiles:regenerate": "node scripts/generate-career-ops-profiles.mjs --rows 100000 --force",
     "build": "node scripts/prepare-dist.mjs",
