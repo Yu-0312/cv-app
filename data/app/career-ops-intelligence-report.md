@@ -1,107 +1,95 @@
-# Career Ops Intelligence Report (v2 — 6D + Block G)
+# Career Ops Intelligence Report
 
-Generated: 2026-05-18T12:33:44.279Z
+Generated: 2026-05-17T23:21:25.087Z
 
-- Active jobs: 92789
-- Expired jobs: 304
-- Duplicate groups: 3331
-- Jobs without enough description: 405
+- Active jobs: 293
+- Expired jobs: 0
+- Duplicate groups: 17
+- Jobs without enough description: 139
 - Rubric: Career Ops 10-Dimension Rubric
 
-## Scoring Model (6 Dimensions + Block G)
-- cvMatch: 0.25
-- northStar: 0.2
-- compensation: 0.15
-- culture: 0.15
-- redFlags: 0.15
-- effort: 0.1
-
-## Block G Legitimacy Summary
-- High Confidence: 92998
-- Proceed with Caution: 95
-- Suspicious: 0
+## Rubric Weights
+- profileMatch: 0.2
+- atsCoverage: 0.14
+- roleFit: 0.12
+- seniorityFit: 0.08
+- locationFit: 0.08
+- sourceQuality: 0.08
+- freshness: 0.08
+- compensationSignal: 0.04
+- growthSignal: 0.1
+- applicationEffort: 0.08
 
 ## Top Skills
-- api: 6692
-- growth: 4057
-- operations: 3736
-- analytics: 2967
-- sales: 2620
-- python: 2023
-- go: 1746
-- sql: 1402
-- excel: 1202
-- aws: 1029
-- machine learning: 866
-- azure: 811
+- growth: 44
+- operations: 41
+- aws: 37
+- python: 36
+- agents: 24
+- docker: 24
+- terraform: 24
+- gcp: 23
+- go: 19
+- react: 19
+- typescript: 17
+- api: 14
 
 ## Missing High-Demand Skills
-- growth: 4057
-- python: 2023
-- go: 1746
-- sql: 1402
-- excel: 1202
-- aws: 1029
-- machine learning: 866
-- azure: 811
-- java: 759
-- spark: 591
+- growth: 44
+- operations: 41
+- aws: 37
+- python: 36
+- agents: 24
+- docker: 24
+- terraform: 24
+- gcp: 23
+- go: 19
+- java: 14
+
+## Global Skill Gap Priority (weighted by job score)
+- growth: 48.5
+- aws: 43.4
+- python: 42.4
+- operations: 40.1
+- docker: 29.6
+- terraform: 28.1
+- gcp: 27.1
+- agents: 25.3
+- go: 21.4
+- java: 16.6
+- deep learning: 14.5
+- rest: 14.4
+
+## ⚠ Preferred Company Alert
+None of your preferred companies (Stripe, Linear, Notion, Vercel) appeared in current results. Add direct company career page sources to data/career-ops-sources.json.
 
 ## Role Families
-- Backend: 88092
-- Other: 2341
-- Frontend: 701
-- AI / Data: 583
-- Sales: 458
-- Design: 197
-- Marketing: 166
-- Operations: 121
-- Product: 75
-- Internship: 43
-
-## Market Coverage
-- cn: 31568
-- jp: 30580
-- tw: 21341
-- us: 3728
-- global: 2767
-- in: 681
-- sg: 273
-- ca: 264
-- uk: 262
-- ie: 168
-- fr: 137
-- au: 136
-- br: 121
-- mx: 120
-- de: 119
-- pl: 102
-- nl: 86
-- kr: 53
-- es: 49
-- my: 35
-- il: 29
-- ch: 27
-- ph: 26
-- se: 23
+- Other: 144
+- Backend: 62
+- AI / Data: 32
+- Frontend: 29
+- Operations: 8
+- Design: 6
+- Internship: 6
+- Marketing: 3
+- Product: 2
+- Full Stack: 1
 
 ## Recommended Search Queries
-- Senior Frontend Engineer
 - Frontend Engineer
 - Product Engineer
-- Senior Product Engineer
-- Frontend Platform Engineer
 - Full Stack Engineer
 - JavaScript
 - TypeScript
 - React
 - Next.js
-- Vue
-- Nuxt
-- Svelte
-- Node.js
+- CSS
+- Tailwind
+- Accessibility
+- Analytics
 - growth
+- operations
+- aws
 - python
-- go
-- sql
+- agents
 

@@ -1,178 +1,175 @@
 # Career Ops Story Bank
 
-Generated: 2026-05-17T00:09:29.900Z
+Generated: 2026-05-17T23:21:27.066Z
 Stories: 8
 
 ## Market Themes
 - frontend product execution
 - data-heavy product decisions
 - systems and API collaboration
-- performance and scale
 - cross-functional influence
 - AI/data product adoption
+- performance and scale
 
-## Gaps
-- All generated stories include numeric or metric-backed results; keep them updated when replacing synthetic data with private user data.
-- Tailor the opening sentence of each story to the target company and job description.
-- Keep one conflict/tradeoff story, one failure/recovery story, and one leadership/influence story ready.
+## Learning Plan (Missing High-Demand Skills)
+- [P0] growth (市場出現 32 次) — 高優先：在簡歷或 profile 中加入 growth 的實際使用案例，並在 projects 欄位補充相關實作。
+- [P0] python (市場出現 29 次) — 高優先：在簡歷或 profile 中加入 python 的實際使用案例，並在 projects 欄位補充相關實作。
+- [P0] aws (市場出現 26 次) — 高優先：在簡歷或 profile 中加入 aws 的實際使用案例，並在 projects 欄位補充相關實作。
+- [P0] operations (市場出現 23 次) — 高優先：在簡歷或 profile 中加入 operations 的實際使用案例，並在 projects 欄位補充相關實作。
+- [P0] docker (市場出現 20 次) — 高優先：在簡歷或 profile 中加入 docker 的實際使用案例，並在 projects 欄位補充相關實作。
+- [P0] terraform (市場出現 17 次) — 高優先：在簡歷或 profile 中加入 terraform 的實際使用案例，並在 projects 欄位補充相關實作。
+- [P0] gcp (市場出現 16 次) — 高優先：在簡歷或 profile 中加入 gcp 的實際使用案例，並在 projects 欄位補充相關實作。
+- [P0] go (市場出現 15 次) — 高優先：在簡歷或 profile 中加入 go 的實際使用案例，並在 projects 欄位補充相關實作。
+- [P0] agents (市場出現 12 次) — 高優先：在簡歷或 profile 中加入 agents 的實際使用案例，並在 projects 欄位補充相關實作。
+- [P0] java (市場出現 10 次) — 高優先：在簡歷或 profile 中加入 java 的實際使用案例，並在 projects 欄位補充相關實作。
 
-## story-1: design systems and accessibility
+## Story Gaps
+- Add exact metrics for each story where possible.
+- Add one conflict or tradeoff story.
+- Add one failure/recovery story.
+- Add one leadership or influence story even if the role is not managerial.
 
-Source proof: Design system migration: Reduced average UI implementation time by 32%, lifted WCAG AA coverage from 71% to 94%, and cut design QA rework by 28% within two quarters.
+## story-1: frontend product execution
+
+Source proof: Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.
 
 ### Questions
 - Tell me about a project you are proud of.
-- How have you improved engineering quality?
-- Tell me about a time you influenced multiple teams.
+- Tell me about a time you handled ambiguity.
+- How have you applied frontend product execution?
 
 ### STAR+Reflection
-- S: A B2B SaaS product had duplicated UI patterns across five product areas, inconsistent accessibility behavior, and slow feature delivery because every team rebuilt common states differently.
-- T: Lead the component migration plan, align design and engineering tokens, and prove that the system improved speed and quality without blocking roadmap work.
-- A: Audited 118 screens, grouped recurring patterns into 46 reusable components, partnered with design in Figma, added Storybook states, wrote TypeScript props contracts, and introduced WCAG AA checks plus Playwright visual smoke tests.
-- R: Reduced average UI implementation time by 32%, lifted WCAG AA coverage from 71% to 94%, and cut design QA rework by 28% within two quarters.
-- Reflection: This story is strongest when positioned around design systems and accessibility: it shows ownership, measurable execution, and a repeatable operating habit rather than a one-off task.
+- S: You were tasked with a frontend product challenge. Proof point: "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users." — set the scene: what product, what team size, and what was broken or missing?
+- T: What was the specific outcome you were accountable for? Include the success metric (e.g. performance score, user adoption rate, release date).
+- A: Walk through the key technical decisions: component architecture, state management tradeoffs, accessibility choices, or API contract design.
+- R: Quantify the impact: load time delta, user adoption %, code reduction %, or stakeholder feedback. If no number, describe the quality or velocity improvement.
+- Reflection: Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges.
 
-Metrics: 46 reusable components; 32% faster UI implementation; 94% WCAG AA coverage; 28% less design QA rework
+Keywords: frontend product execution, JavaScript, TypeScript, React, Next.js, CSS, Tailwind, Accessibility
 
-Keywords: design systems and accessibility, TypeScript, React, Storybook, Figma, Design Systems, Accessibility, WCAG AA, Playwright, JavaScript, Next.js, Vue
+## story-2: data-heavy product decisions
 
-## story-2: performance and data-heavy workflows
-
-Source proof: Analytics dashboard rebuild: Reduced median load time from 4.8s to 2.1s, improved weekly active usage by 21%, and lowered dashboard-related support tickets by 23%.
+Source proof: Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.
 
 ### Questions
-- Tell me about a performance project.
-- How do you use data to prioritize?
-- Describe a complex technical tradeoff.
+- Tell me about a project you are proud of.
+- Tell me about a time you handled ambiguity.
+- How have you applied data-heavy product decisions?
 
 ### STAR+Reflection
-- S: Customer success teams relied on a slow analytics dashboard that loaded too much client-side data and made account reviews painful during live calls.
-- T: Rebuild the highest-traffic dashboard experience while preserving existing permissions, filters, and customer-facing metrics.
-- A: Moved the flow to Next.js and TypeScript, split queries by intent, added API-level pagination, introduced loading skeletons, instrumented Core Web Vitals, and worked with data analysts to validate metric parity.
-- R: Reduced median load time from 4.8s to 2.1s, improved weekly active usage by 21%, and lowered dashboard-related support tickets by 23%.
-- Reflection: This story is strongest when positioned around performance and data-heavy workflows: it shows ownership, measurable execution, and a repeatable operating habit rather than a one-off task.
+- S: You were working with a data-intensive product. Proof point: "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%." — describe the data volume, the user workflow, and what was difficult to render or interpret.
+- T: What decision did you own? (chart type, data model, aggregation strategy, caching layer, etc.)
+- A: Explain how you chose between options, what you built or prototyped, and how you validated your approach with data or users.
+- R: State the outcome: query latency, dashboard load time, user comprehension improvement, or reduction in support requests.
+- Reflection: Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges.
 
-Metrics: 4.8s to 2.1s median load time; 21% higher weekly active usage; 23% fewer support tickets
+Keywords: data-heavy product decisions, JavaScript, TypeScript, React, Next.js, CSS, Tailwind, Accessibility
 
-Keywords: performance and data-heavy workflows, Next.js, TypeScript, React, Core Web Vitals, Analytics, Dashboard, REST API, Product Analytics, JavaScript, Vue, Nuxt
+## story-3: systems and API collaboration
 
-## story-3: product experimentation and activation
-
-Source proof: Self-serve onboarding optimization: Improved activation by 18%, increased template completion by 26%, and produced an experiment readout that became the team standard for onboarding work.
+Source proof: Collaborated with backend and data teams to design RESTful and GraphQL API contracts.
 
 ### Questions
-- Tell me about a time you improved a metric.
-- How do you validate product decisions?
-- Tell me about handling ambiguity.
+- Tell me about a project you are proud of.
+- Tell me about a time you handled ambiguity.
+- How have you applied systems and API collaboration?
 
 ### STAR+Reflection
-- S: Trial users were dropping before reaching the first meaningful dashboard insight, and the team lacked clear event data to identify the friction.
-- T: Instrument the onboarding funnel, identify the largest drop-off points, and ship experiments that improved activation without increasing support load.
-- A: Defined activation events with product and data, added Amplitude tracking, redesigned the setup checklist in Figma, implemented guided defaults in React, and ran five A/B tests across copy, ordering, and template selection.
-- R: Improved activation by 18%, increased template completion by 26%, and produced an experiment readout that became the team standard for onboarding work.
-- Reflection: This story is strongest when positioned around product experimentation and activation: it shows ownership, measurable execution, and a repeatable operating habit rather than a one-off task.
+- S: You collaborated across system boundaries. Proof point: "Collaborated with backend and data teams to design RESTful and GraphQL API contracts." — name the systems, teams, and integration surface area.
+- T: What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?
+- A: Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.
+- R: State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.
+- Reflection: Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges.
 
-Metrics: 18% activation lift; 26% higher template completion; 5 A/B tests shipped
+Keywords: systems and API collaboration, JavaScript, TypeScript, React, Next.js, CSS, Tailwind, Accessibility
 
-Keywords: product experimentation and activation, A/B Testing, Amplitude, React, Figma, Product Analytics, User Research, Onboarding, JavaScript, TypeScript, Next.js, Vue
+## story-4: cross-functional influence
 
-## story-4: quality and revenue protection
-
-Source proof: Checkout reliability program: Reduced release-blocking checkout defects by 29%, cut manual regression time by 11 hours per release, and improved confidence for weekly deployments.
+Source proof: Championed accessibility audit (WCAG 2.1 AA) across three product surfaces.
 
 ### Questions
-- Tell me about preventing a production issue.
-- How do you decide what to automate?
-- Describe a time you improved team reliability.
+- Tell me about a project you are proud of.
+- Tell me about a time you handled ambiguity.
+- How have you applied cross-functional influence?
 
 ### STAR+Reflection
-- S: Revenue-critical checkout paths had intermittent regressions because manual QA could not cover all plan, coupon, tax, and payment state combinations before each release.
-- T: Create automated coverage for the highest-risk checkout paths and make failures actionable for developers before release freeze.
-- A: Mapped 22 revenue-critical scenarios, added Playwright tests with seeded test accounts, mocked third-party payment edge cases, and created a release dashboard in GitHub Actions for pass rate, flake rate, and defect trends.
-- R: Reduced release-blocking checkout defects by 29%, cut manual regression time by 11 hours per release, and improved confidence for weekly deployments.
-- Reflection: This story is strongest when positioned around quality and revenue protection: it shows ownership, measurable execution, and a repeatable operating habit rather than a one-off task.
+- S: You influenced a decision across teams or functions. Proof point: "Championed accessibility audit (WCAG 2.1 AA) across three product surfaces." — who were the stakeholders and what was the disagreement or ambiguity?
+- T: What outcome were you trying to drive, and why did it require cross-functional alignment rather than a unilateral call?
+- A: Describe how you built your case: data, prototypes, async docs, 1:1s, or demos. What resistance did you encounter?
+- R: State the decision that was made, who it impacted, and whether the outcome matched your recommendation.
+- Reflection: Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges.
 
-Metrics: 22 critical paths covered; 29% fewer release-blocking defects; 11 hours saved per release
+Keywords: cross-functional influence, JavaScript, TypeScript, React, Next.js, CSS, Tailwind, Accessibility
 
-Keywords: quality and revenue protection, Playwright, GitHub Actions, Testing, Stripe API, CI/CD, Release Quality, TypeScript, JavaScript, React, Next.js, Vue
+## story-5: AI/data product adoption
 
-## story-5: cross-functional roadmap tradeoff
-
-Source proof: Negotiated scope for dashboard rebuild while preserving enterprise reporting commitments.
+Source proof: Improved Lighthouse performance score from 54 to 91 through code splitting, lazy loading, and asset optimization.
 
 ### Questions
-- Tell me about a conflict or tradeoff.
-- How do you manage stakeholders?
-- Tell me about a time you said no.
+- Tell me about a project you are proud of.
+- Tell me about a time you handled ambiguity.
+- How have you applied AI/data product adoption?
 
 ### STAR+Reflection
-- S: Sales needed a custom reporting promise for an enterprise renewal while product and engineering were already committed to the dashboard rebuild.
-- T: Protect the strategic rebuild timeline while giving sales and customer success a credible path for the renewal risk.
-- A: Facilitated a scope review, separated must-have renewal fields from nice-to-have customization, proposed a config-based reporting template, and documented delivery risk with product, sales, and support leads.
-- R: Kept the rebuild on schedule, supported the renewal with a two-week template release, and avoided roughly 6 weeks of one-off custom work.
-- Reflection: The reusable template became a better product path than a custom branch, and the story shows judgment under commercial pressure.
+- S: You worked on an AI or data-driven product feature. Proof point: "Improved Lighthouse performance score from 54 to 91 through code splitting, lazy loading, and asset optimization." — describe the model/pipeline involved and the user-facing surface.
+- T: What was your role: prompt design, evaluation framework, UI for model outputs, or feedback loop instrumentation?
+- A: Explain what you built, how you evaluated quality (accuracy, latency, hallucination rate), and what tradeoffs you made.
+- R: Describe adoption (% of users using the feature), quality improvement, or how you reduced user confusion around AI outputs.
+- Reflection: Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges.
 
-Metrics: 6 weeks of custom work avoided; 2-week template release; 0 rebuild schedule slip
+Keywords: AI/data product adoption, JavaScript, TypeScript, React, Next.js, CSS, Tailwind, Accessibility
 
-Keywords: cross-functional roadmap tradeoff, Stakeholder Management, Roadmap, Product Engineering, Enterprise SaaS, Tradeoff, JavaScript, TypeScript, React, Next.js, Vue, Nuxt
+## story-6: performance and scale
 
-## story-6: failure recovery and learning
-
-Source proof: Recovered from an onboarding experiment that initially reduced completion for smaller teams.
+Source proof: CV Studio — full-stack PWA for CV generation and career intelligence, built with Node.js, Supabase, and vanilla JS; powers automated job scoring and application tracking.
 
 ### Questions
-- Tell me about a failure.
-- What did you learn from a bad result?
-- How do you respond when data contradicts your hypothesis?
+- Tell me about a project you are proud of.
+- Tell me about a time you handled ambiguity.
+- How have you applied performance and scale?
 
 ### STAR+Reflection
-- S: An onboarding experiment designed for enterprise teams added too many setup steps for smaller teams and reduced completion in that segment.
-- T: Diagnose the failed experiment quickly, protect the overall activation metric, and avoid overcorrecting based on one aggregate number.
-- A: Segmented results by company size, interviewed five affected users, rolled back the extra setup step for small teams, and created separate onboarding defaults by segment.
-- R: Recovered the lost completion within one release, then lifted small-team activation by 12% with the segmented flow.
-- Reflection: The lesson was to segment earlier and treat onboarding as a set of user paths, not a single universal funnel.
+- S: You tackled a performance or scalability challenge. Proof point: "CV Studio — full-stack PWA for CV generation and career intelligence, built with Node.js, Supabase, and vanilla JS; powers automated job scoring and application tracking." — what was the scale (users, requests/sec, data size) and what was breaking?
+- T: What was the target metric: p95 latency, Lighthouse score, bundle size, or TTFB?
+- A: Describe your profiling approach, the root cause you found, and the specific optimization (code splitting, caching, virtualization, CDN config, etc.).
+- R: Before/after numbers. If no metric was tracked, explain how you set up measurement and what the next step was.
+- Reflection: Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges.
 
-Metrics: 5 user interviews; 1-release recovery; 12% small-team activation lift
+Keywords: performance and scale, JavaScript, TypeScript, React, Next.js, CSS, Tailwind, Accessibility
 
-Keywords: failure recovery and learning, Experimentation, A/B Testing, User Research, Activation, Product Analytics, JavaScript, TypeScript, React, Next.js, Vue, Nuxt
+## story-7: frontend product execution
 
-## story-7: mentoring and technical leadership
-
-Source proof: Raised team frontend standards through review guides, pairing, and shared component ownership.
+Source proof: Portfolio site — custom static site generator with markdown-first CMS and zero-JS fallback.
 
 ### Questions
-- Tell me about mentoring.
-- How do you raise engineering standards?
-- How do you scale your impact?
+- Tell me about a project you are proud of.
+- Tell me about a time you handled ambiguity.
+- How have you applied frontend product execution?
 
 ### STAR+Reflection
-- S: Frontend quality depended heavily on a few senior reviewers, creating bottlenecks and inconsistent implementation decisions.
-- T: Help the team make better frontend decisions without routing every question through one person.
-- A: Created review checklists for accessibility and performance, paired with three engineers on TypeScript patterns, and rotated component ownership through weekly office hours.
-- R: Reduced review cycle time by 24%, increased component reuse across four squads, and helped two engineers independently lead complex UI releases.
-- Reflection: The durable win was changing the system of review, not just answering more questions.
+- S: You were tasked with a frontend product challenge. Proof point: "Portfolio site — custom static site generator with markdown-first CMS and zero-JS fallback." — set the scene: what product, what team size, and what was broken or missing?
+- T: What was the specific outcome you were accountable for? Include the success metric (e.g. performance score, user adoption rate, release date).
+- A: Walk through the key technical decisions: component architecture, state management tradeoffs, accessibility choices, or API contract design.
+- R: Quantify the impact: load time delta, user adoption %, code reduction %, or stakeholder feedback. If no number, describe the quality or velocity improvement.
+- Reflection: Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges.
 
-Metrics: 24% faster review cycles; 4 squads using shared patterns; 2 engineers leading releases
+Keywords: frontend product execution, JavaScript, TypeScript, React, Next.js, CSS, Tailwind, Accessibility
 
-Keywords: mentoring and technical leadership, Mentoring, Code Review, TypeScript, Design Systems, Frontend Architecture, JavaScript, React, Next.js, Vue, Nuxt, Svelte
+## story-8: data-heavy product decisions
 
-## story-8: AI-assisted workflow adoption
-
-Source proof: Built a support-summary prototype that reduced manual account review prep.
+Source proof: Data visualization toolkit — reusable D3 + React chart library used across three internal dashboards, covering line, bar, scatter, and heatmap chart types.
 
 ### Questions
-- How have you used AI in product work?
-- Tell me about adopting a new technology.
-- How do you evaluate AI quality?
+- Tell me about a project you are proud of.
+- Tell me about a time you handled ambiguity.
+- How have you applied data-heavy product decisions?
 
 ### STAR+Reflection
-- S: Customer success managers spent significant time reading scattered notes before account review meetings.
-- T: Prototype an AI-assisted summary workflow with enough quality checks to be useful without overpromising automation.
-- A: Connected ticket and account notes to a retrieval flow, designed review states in React, added confidence labels, and evaluated summaries against 40 historical account reviews.
-- R: Saved an estimated 6 hours per manager per month, reached 82% reviewer acceptance on first-pass summaries, and identified guardrails for unsupported claims.
-- Reflection: The strongest adoption came from keeping humans in the loop and measuring usefulness, not just model output fluency.
+- S: You were working with a data-intensive product. Proof point: "Data visualization toolkit — reusable D3 + React chart library used across three internal dashboards, covering line, bar, scatter, and heatmap chart types." — describe the data volume, the user workflow, and what was difficult to render or interpret.
+- T: What decision did you own? (chart type, data model, aggregation strategy, caching layer, etc.)
+- A: Explain how you chose between options, what you built or prototyped, and how you validated your approach with data or users.
+- R: State the outcome: query latency, dashboard load time, user comprehension improvement, or reduction in support requests.
+- Reflection: Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges.
 
-Metrics: 6 hours saved per manager per month; 82% first-pass acceptance; 40 historical reviews evaluated
-
-Keywords: AI-assisted workflow adoption, AI, LLM, RAG, React, Evaluation, Customer Success, Workflow Automation, JavaScript, TypeScript, Next.js, Vue
+Keywords: data-heavy product decisions, JavaScript, TypeScript, React, Next.js, CSS, Tailwind, Accessibility
 

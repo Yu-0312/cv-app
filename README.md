@@ -169,7 +169,7 @@ Career 分頁會讀取 CV 履歷頁已填寫的摘要、技能、經歷、教育
 
 此功能採用 `career-ops` 類型的評估思路（A-F / 分數、ATS 關鍵字、STAR 面試故事、投遞優先級排序），並內建輕量批次追蹤器、公司招聘頁職缺探索與客製 PDF 產生流程；尚未包含登入型 portal scanner 或跨平台排程 worker。
 
-API Key 只保留在目前瀏覽器頁籤的 `sessionStorage`，不會寫入 Supabase。
+API Key 只保留在目前瀏覽器頁籤的 `sessionStorage`。呼叫模型時只會送到使用者選擇的 AI provider，不會寫入 Supabase、Railway、GitHub Actions 或任何站方資料庫。履歷上傳 / 50-100 職缺比對也採 BYOK：前端用使用者自己的 key 解析履歷 profile，接著直接在瀏覽器讀取 `data/app/career-ops-jobs.js` 進行三層 heuristic 比對；登入時才把完成結果寫入 Supabase 供分享，不需要站方 `ANTHROPIC_API_KEY` 或 Railway worker。
 
 #### Career Ops 對應
 
@@ -178,7 +178,7 @@ API Key 只保留在目前瀏覽器頁籤的 `sessionStorage`，不會寫入 Sup
 | 自動化排程 | `.github/workflows/career-ops.yml` 每日產生職缺快照，可手動 dispatch；若存在 `data/career-ops-source-strategy.json` 會先 build sources | 需要在 repo 放置 source strategy 或 `data/career-ops-sources.json` |
 | 大量職缺搜集 | `scripts/career-ops-build-sources.mjs` + `scripts/career-ops-worker.mjs` + `scripts/career-ops-source-adapters.mjs`，支援 source strategy、Greenhouse / Lever / Ashby / Workable / SmartRecruiters / BambooHR / Workday / Oracle / SuccessFactors / Taleo / MyCareersFuture adapter、公司 careers 頁探索與單一職缺頁擷取 | 登入型 portal 繼續新增 adapter |
 | 職缺正規化與生命週期 | `data/app/career-ops-jobs.json` / `.js` 快照，統一 `title`、`company`、`url`、`location`、`description`、`sourceType`，並標記 `jobKey`、`isNew`、`isExpired`、`firstSeenAt`、`lastSeenAt` | 前端只讀 normalized snapshot |
-| 海量篩選與排序 | Career Ops 面板批次匯入、批次 AI 評估、分數 / grade / status 排序與 CSV 匯出；`scripts/career-ops-evaluate.mjs` 可在後端批次 heuristic scoring；`scripts/career-ops-intelligence.mjs` 會做去重訊號、特徵抽取、多維分數、分群與市場洞察 | 前端 AI 評估需要使用者提供 API key；後端 intelligence 可離線跑 |
+| 海量篩選與排序 | Career Ops 面板批次匯入、批次 AI 評估、分數 / grade / status 排序與 CSV 匯出；履歷上傳後的 50-100 職缺比對會在前端本機完成；`scripts/career-ops-evaluate.mjs` 可在後端批次 heuristic scoring；`scripts/career-ops-intelligence.mjs` 會做去重訊號、特徵抽取、多維分數、分群與市場洞察 | 前端 AI 評估需要使用者提供 API key；後端 intelligence 可離線跑 |
 | 10 維度 Rubric | `data/career-ops-rubric.example.json` 定義 profile match、ATS coverage、role fit、seniority、location、source quality、freshness、compensation、growth、application effort 與風險扣分 | 可複製後依不同使用者或市場調權重 |
 | Search adapter | `scripts/career-ops-search-adapter.mjs` 可把匯出的搜尋結果 JSON / HTML / URL list 轉成 worker sources，並保留 search query strategy signals | 不直接抓 Google/Bing；建議接合法搜尋 API 或手動匯入結果 |
 | 來源彈性擴展 | `scripts/career-ops-source-flex.mjs` 依市場、role aliases、ATS domains、job boards、seed sources、company career path patterns 擴展 sources / queries | 用規則擴展候選，不代表每個候選都一定可抓 |
@@ -187,7 +187,7 @@ API Key 只保留在目前瀏覽器頁籤的 `sessionStorage`，不會寫入 Sup
 | Agent-style pipeline | `scripts/career-ops-pipeline.mjs` 以 source-strategy / search / scanner / evaluation / intelligence / application / compensation / story-bank / parallel stages 串起整條後端流程 | pipeline stage 依資料依賴分段，job-level 處理由 parallel worker 負責 |
 | 平行職缺處理 | `scripts/career-ops-parallel.mjs` 用 bounded concurrency queue 對每筆職缺平行產生 evaluation、research、application、compensation、story、apply-agent plan；`scripts/career-ops-parallel-pipeline.mjs` 會先平行掃 sources，再分段平行跑 research / kit / comp / story / learning / deep-fit | 預設 concurrency 4，可用 `--concurrency` 調整 |
 | 深度公司 / 職缺研究 | `scripts/career-ops-deep-research.mjs` 會整合 ranked jobs、sources、公開職缺頁與可選搜尋 API，產生 company/job dossiers；前端每筆職缺也有「AI 深度研究」按鈕 | 網頁 AI API key 只負責推理，不會自動搜尋全網；真正搜尋需 Brave/Bing/SerpAPI key 或匯入搜尋結果 |
-| 單職缺 deep fit | `scripts/career-ops-deep-fit.mjs` 將履歷、JD、research、compensation、story bank 合成逐筆 dossier；可選 `OPENAI_API_KEY` / `ANTHROPIC_API_KEY` 做後端 LLM review | 沒 LLM key 時用 evidence-based heuristic，避免捏造 |
+| 單職缺 deep fit | `scripts/career-ops-deep-fit.mjs` 將履歷、JD、research、compensation、story bank 合成逐筆 dossier；Hosted user flow 會用 BYOK profile + 前端本機 heuristic 產生 Layer A/B/C 結果 | 不消耗站方模型 token；沒 LLM key 時用 evidence-based heuristic，避免捏造 |
 | ATS 關鍵字與履歷落差 | 單筆與批次職缺分析 prompt 產出關鍵字、缺口、優先級與摘要 | 不捏造履歷不存在的經歷 |
 | STAR Story Bank | `scripts/career-ops-story-bank.mjs` 由履歷 proof points 與市場 themes 產生 STAR+Reflection story bank | 需要使用者補上真實量化結果，避免過度推論 |
 | 偏好學習 | `scripts/career-ops-learning.mjs` 從 score、status、feedback、source metadata 學習偏好技能、公司、來源與 avoid signals | 需要使用者持續標記喜歡 / 不喜歡與投遞狀態 |
@@ -201,6 +201,8 @@ API Key 只保留在目前瀏覽器頁籤的 `sessionStorage`，不會寫入 Sup
 #### Career Ops worker
 
 若要建立「後端職缺快照」，建議先用 source strategy 維護來源清單，這一層對應上游 `career-ops` 的 `portals.yml` 思路：把市場、企業、ATS board、搜尋擴張 query、角色關鍵字與排除字集中在策略檔，而不是塞進前端。
+
+預設 hosted 流程不需要 Railway：前端會讀取已產生的職缺快照，使用使用者自己的 AI key 解析履歷，並在瀏覽器本機完成三層比對。`scripts/career-ops-saas-worker.mjs` / `railway.json` 僅保留給需要後端 queue 或長駐 worker 的進階部署。
 
 ```bash
 cp data/career-ops-source-strategy.example.json data/career-ops-source-strategy.json
@@ -366,7 +368,9 @@ GSAT 分頁整合本地快照資料，支援依學測成績、學校、科系與
 | `npm run university-tw:sql` | 產生 Supabase / PostgreSQL seed SQL |
 | `npm run gsat:104:standard` | 下載 104 公開五標資料 |
 | `npm run gsat:104:major-list` | 用指定分數抓取 104 校系列表 |
-| `npm run gsat:build` | 整理 GSAT external data 給前端載入 |
+| `npm run gsat:uac:help` | 查看 UAC 最低登記標準抓取工具參數 |
+| `npm run gsat:uac` | 從大學分發委員會抓取採計科目組合最低登記標準資料 |
+| `npm run gsat:build` | 整合 104 五標、UAC 最低標準與 University TW 資料，產生前端可載入的 GSAT external data |
 | `npm run career-ops:help` | 查看 Career Ops 職缺 worker 參數 |
 | `npm run career-ops:sources:help` | 查看 Career Ops source strategy builder 參數 |
 | `npm run career-ops:sources:build` | 依 `data/career-ops-source-strategy.json` 產生 `data/career-ops-sources.json` 與 strategy report |
@@ -383,7 +387,7 @@ GSAT 分頁整合本地快照資料，支援依學測成績、學校、科系與
 | `npm run career-ops:application-kit` | 對高分職缺產生 apply / outreach / follow-up / interview / negotiation playbook |
 | `npm run career-ops:deep-research` | 產生公司 / 職缺深度研究 dossier，可選接 Brave/Bing/SerpAPI 搜尋 API |
 | `npm run career-ops:deep-fit` | 產生 career-ops 等級單職缺 fit dossier，可選接後端 OpenAI / Anthropic |
-| `npm run career-ops:decision-report` | 合併 deep fit / research / application kit / compensation / story bank，產生 A-F 單職缺決策報告 |
+| `npm run career-ops:decision-report` | 本機 / 離線用：合併 deep fit / research / application kit / compensation / story bank，產生 A-F 單職缺決策報告；hosted 前端預設不載入 |
 | `npm run career-ops:compensation` | 產生薪資結構、總包拆解、談薪問題與 counter scripts |
 | `npm run career-ops:story-bank` | 產生 STAR+Reflection story bank |
 | `npm run career-ops:learn` | 從職缺評分、狀態與回饋學習使用者偏好 |
@@ -425,13 +429,16 @@ supabase-university-tw-schema.sql
 data/sql/university-tw-seed.sql
 ```
 
-### 104 學測資料
+### 104 學測資料 + UAC 最低登記標準
 
 ```bash
 npm run gsat:104:standard
 npm run gsat:104:major-list
+npm run gsat:uac
 npm run gsat:build
 ```
+
+`gsat:uac` 會從大學分發委員會官網抓取採計科目組合最低登記標準，輸出 `data/normalized/uac-standards-115.json`；`gsat:build` 會同時整合 104 五標、UAC 資料與 University TW 快照，產生前端所需的 `data/app/gsat-external-data.*`。若 UAC 頁面暫時無法取得，build 仍可在沒有 `--uac-json` 資料的情況下完成。
 
 也支援 browser capture 與 HAR 轉換流程：
 
@@ -470,6 +477,8 @@ CV App/
 │   ├── raw/
 │   └── sql/
 ├── scripts/
+│   └── lib/
+│       └── utils.mjs          ← 共用工具：CLI 參數解析、fetchWithRetry、ensureDir、randomDelay
 ├── index.html
 ├── sw.js
 ├── manifest.json
@@ -501,6 +510,7 @@ CV App/
 - [ ] Chrome 實測登入、刷新、登出、再次刷新
 - [ ] `npm run smoke:test` 通過
 - [ ] GitHub Pages workflow 部署成功
+- [ ] Career Ops 分享連結需要部署 `career-ops-share-analysis` Edge Function 並設定 `SITE_URL`；`career-ops-extract-profile` / `career-ops-run-analysis` 僅為進階或舊 queue flow 保留，預設 BYOK 前端分析不依賴 Railway worker
 
 ## 已完成的後續方向
 
@@ -512,4 +522,5 @@ CV App/
 - **更細緻的雙語內容欄位對照**：支援姓名、角色、地點、摘要、技能、經歷、專案、學歷與獎項等欄位的中英對照內容。
 - **PDF 分頁選項**：支援自動分頁與盡量單頁兩種輸出模式，降低長履歷匯出時的版面壓縮。
 - **中英履歷標題切換**：CV 區塊標題可跟隨介面語言，也可固定中文或 English。
-- **自動化學測資料更新**：新增 GitHub Actions 排程，每週更新 University TW 與 104 學測資料。
+- **自動化學測資料更新**：新增 GitHub Actions 排程，每週更新 University TW 與 104 學測資料，並額外整合大學分發委員會（UAC）採計科目組合最低登記標準作為第二資料來源。
+- **共用腳本工具模組**：抽取 `scripts/lib/utils.mjs`（CLI 參數解析、指數退避 `fetchWithRetry`、`ensureDir`、`randomDelay`），消除 GSAT 資料腳本間約 100 行重複程式碼。

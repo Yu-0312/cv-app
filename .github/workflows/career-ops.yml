@@ -3,44 +3,81 @@ name: Career Ops Snapshot
 on:
   workflow_dispatch:
   schedule:
-    # Runs daily at 06:17 Asia/Taipei.
     - cron: "17 22 * * *"
 
 permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-concurrency:
-  group: pages
-  cancel-in-progress: true
+  contents: write
 
 jobs:
   career-ops:
-    name: Build Career Ops snapshot
     runs-on: ubuntu-latest
-    timeout-minutes: 360
     if: github.ref == 'refs/heads/main'
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: npm
       - name: Install dependencies
-        run: npm ci
-      - name: Configure GitHub Pages
-        uses: actions/configure-pages@v5
-      - name: Build Career Ops job snapshot
+        run: npm install
+
+      - name: Job health check (report expiry rate before scrape)
         run: |
-          if [ -f data/career-ops-source-strategy.json ] || [ -f data/career-ops-sources.json ]; then
-            npm run career-ops:daily -- --concurrency 4
-          else
-            echo "No Career Ops source strategy or sources file found; using existing snapshot."
+          if [ -f data/app/career-ops-jobs.json ]; then
+            node scripts/career-ops-health-monitor.mjs \
+              --jobs data/app/career-ops-jobs.json \
+              --out data/app/career-ops-job-health.json \
+              --report-out data/app/career-ops-job-health-report.md \
+              --threshold 0.30
           fi
+
+      - name: Build sources and scrape jobs
+        run: |
+          if [ -f data/career-ops-source-strategy.json ]; then
+            npm run career-ops:sources:build
+          fi
+          if [ -f data/career-ops-source-flex.json ]; then
+            npm run career-ops:source-flex
+          fi
+          if [ ! -f data/career-ops-sources.json ]; then
+            echo "data/career-ops-sources.json not found; skipping."
+            exit 0
+          fi
+          npm run career-ops:scrape -- --include-expired
+          npm run career-ops:quality
           if [ -f data/career-ops-singapore-sources.json ]; then
             npm run career-ops:sg:scrape
           fi
+
+      - name: Run analysis pipeline
+        run: |
+          PROFILE_FLAG=""
+          if [ -f data/career-ops-profile.json ]; then
+            PROFILE_FLAG="--profile data/career-ops-profile.json"
+          fi
+          npm run career-ops:evaluate -- $PROFILE_FLAG
+          npm run career-ops:intelligence -- $PROFILE_FLAG
+          npm run career-ops:application-kit -- $PROFILE_FLAG
+          npm run career-ops:deep-research -- $PROFILE_FLAG
+          npm run career-ops:compensation -- $PROFILE_FLAG
+          npm run career-ops:story-bank -- $PROFILE_FLAG
+          npm run career-ops:parallel -- $PROFILE_FLAG
+          # Deep fit: Layer A (25), Layer B (40), Layer C (30) = up to 95 results
+          node scripts/career-ops-deep-fit.mjs $PROFILE_FLAG \
+            --top-a 25 --top-b 40 --top-c 30 \
+            --out data/app/career-ops-deep-fit.json \
+            --js-out data/app/career-ops-deep-fit.js \
+            --report-out data/app/career-ops-deep-fit.md
+          npm run career-ops:learn -- $PROFILE_FLAG
+          npm run career-ops:modes
+
+      - name: Post-scrape health check (update expiry stats)
+        run: |
+          node scripts/career-ops-health-monitor.mjs \
+            --jobs data/app/career-ops-jobs.json \
+            --out data/app/career-ops-job-health.json \
+            --report-out data/app/career-ops-job-health-report.md \
+            --threshold 0.30
+
       - name: Publish Career Ops snapshot to Supabase Storage
         env:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
@@ -53,20 +90,33 @@ jobs:
             exit 1
           fi
           npm run career-ops:snapshot:publish -- --jobs-per-shard 1000
-      - name: Build static site
-        run: npm run build
-      - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: dist
 
-  deploy:
-    needs: career-ops
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+      - name: Commit updated snapshot
+        run: |
+          CHANGED_FILES="data/career-ops-sources.json \
+            data/app/career-ops-singapore-jobs.json data/app/career-ops-singapore-jobs.js \
+            data/app/career-ops-intelligence-report.md \
+            data/app/career-ops-source-strategy-report.md \
+            data/app/career-ops-source-flex-report.md \
+            data/app/career-ops-source-quality-report.md \
+            data/app/career-ops-application-kit.json data/app/career-ops-application-kit.js data/app/career-ops-application-kit.md \
+            data/app/career-ops-deep-research.json data/app/career-ops-deep-research.js data/app/career-ops-deep-research.md \
+            data/app/career-ops-deep-fit.json data/app/career-ops-deep-fit.js data/app/career-ops-deep-fit.md \
+            data/app/career-ops-compensation.json data/app/career-ops-compensation.js data/app/career-ops-compensation.md \
+            data/app/career-ops-story-bank.json data/app/career-ops-story-bank.js data/app/career-ops-story-bank.md \
+            data/app/career-ops-parallel-report.json data/app/career-ops-parallel-report.js data/app/career-ops-parallel-report.md \
+            data/app/career-ops-learning.json data/app/career-ops-learning.js data/app/career-ops-learning-report.md \
+            data/app/career-ops-modes.json data/app/career-ops-modes.js data/app/career-ops-modes-report.md \
+            data/app/career-ops-job-health.json data/app/career-ops-job-health-report.md"
+          if git diff --quiet -- $CHANGED_FILES; then
+            echo "No Career Ops snapshot changes."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A -- $CHANGED_FILES
+          if [ -f data/app/career-ops-source-strategy-report.md ]; then
+            git add data/app/career-ops-source-strategy-report.md
+          fi
+          git commit -m "Update Career Ops snapshot"
+          git push

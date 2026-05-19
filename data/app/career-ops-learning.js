@@ -1,213 +1,213 @@
 window.CV_CAREER_OPS_LEARNING = {
   "source": "career-ops-learning",
-  "generatedAt": "2026-05-16T15:20:31.172Z",
+  "generatedAt": "2026-05-17T23:21:27.521Z",
   "learning": {
-    "activeJobCount": 276,
-    "positiveSignalCount": 113,
-    "negativeSignalCount": 0,
+    "activeJobCount": 293,
+    "positiveSignalCount": 126,
+    "negativeSignalCount": 12,
     "preferredSkills": [
       {
         "name": "engineer",
-        "score": 806.5
+        "score": 425
       },
       {
-        "name": "to",
-        "score": 451
-      },
-      {
-        "name": "or",
-        "score": 442.1
-      },
-      {
-        "name": "engineering",
-        "score": 402.9
-      },
-      {
-        "name": "at",
-        "score": 366
+        "name": "data",
+        "score": 359.5
       },
       {
         "name": "product",
-        "score": 338.3
-      },
-      {
-        "name": "performance",
-        "score": 279.8
-      },
-      {
-        "name": "operations",
-        "score": 245.8
+        "score": 321.3
       },
       {
         "name": "growth",
-        "score": 191.5
+        "score": 194.8
       },
       {
-        "name": "platform",
-        "score": 185
-      },
-      {
-        "name": "python",
-        "score": 130.8
+        "name": "operations",
+        "score": 161.1
       },
       {
         "name": "aws",
-        "score": 126.3
+        "score": 160.5
       },
       {
-        "name": "senior",
-        "score": 116.9
+        "name": "python",
+        "score": 150
       },
       {
-        "name": "CI/CD",
-        "score": 111.7
+        "name": "docker",
+        "score": 108
       },
       {
-        "name": "design",
-        "score": 108.1
+        "name": "terraform",
+        "score": 104.4
       },
       {
-        "name": "api",
-        "score": 106.5
+        "name": "gcp",
+        "score": 95.8
       },
       {
-        "name": "we",
-        "score": 101.1
+        "name": "agents",
+        "score": 94.1
       },
       {
-        "name": "frontend",
-        "score": 99.6
+        "name": "react",
+        "score": 88.7
+      },
+      {
+        "name": "React",
+        "score": 88.7
+      },
+      {
+        "name": "graphql",
+        "score": 82.3
+      },
+      {
+        "name": "go",
+        "score": 78.2
+      },
+      {
+        "name": "typescript",
+        "score": 76.1
+      },
+      {
+        "name": "TypeScript",
+        "score": 76.1
+      },
+      {
+        "name": "node.js",
+        "score": 73.5
       }
     ],
     "avoidSignals": [],
     "preferredCompanies": [
       {
-        "name": "NVIDIA Workday",
-        "score": 82.5
+        "name": "Money Forward",
+        "score": 106.2
       },
       {
-        "name": "Money Forward",
-        "score": 64.7
+        "name": "NVIDIA Workday",
+        "score": 69
       },
       {
         "name": "Micron Workday",
-        "score": 56.6
-      },
-      {
-        "name": "Intel Workday Taiwan",
-        "score": 53.6
+        "score": 62
       },
       {
         "name": "Logitech Workday Taiwan",
-        "score": 38.9
+        "score": 45.1
       },
       {
-        "name": "AI Robot Association (AIRoA)",
-        "score": 25.8
+        "name": "Intel Workday Taiwan",
+        "score": 34.9
+      },
+      {
+        "name": "Gogolook",
+        "score": 29.5
       },
       {
         "name": "Applied Materials Workday",
-        "score": 23.5
+        "score": 22.6
       },
       {
-        "name": "Shizuku AI",
-        "score": 16.6
-      },
-      {
-        "name": "Synspective",
-        "score": 12
-      },
-      {
-        "name": "Geniee",
-        "score": 11.5
-      },
-      {
-        "name": "Metanomaly",
-        "score": 11.4
+        "name": "AI Robot Association (AIRoA)",
+        "score": 17.2
       },
       {
         "name": "PayPay",
-        "score": 11.1
+        "score": 14.1
+      },
+      {
+        "name": "Geniee",
+        "score": 11.6
+      },
+      {
+        "name": "Metanomaly",
+        "score": 10.8
+      },
+      {
+        "name": "Shizuku AI",
+        "score": 9.7
       }
     ],
     "preferredSources": [
       {
         "name": "tw",
-        "score": 269.3
+        "score": 273
       },
       {
         "name": "tracked-company",
-        "score": 266.3
+        "score": 268.5
       },
       {
         "name": "flex-job-board",
-        "score": 219.7
+        "score": 267.5
       },
       {
         "name": "jp",
-        "score": 216.7
+        "score": 263
       },
       {
         "name": "ai-semiconductor",
-        "score": 82.5
+        "score": 69
       },
       {
         "name": "semiconductor-memory",
-        "score": 56.6
-      },
-      {
-        "name": "semiconductor",
-        "score": 53.6
+        "score": 62
       },
       {
         "name": "consumer-electronics",
-        "score": 38.9
+        "score": 45.1
       },
       {
-        "name": "semiconductor-equipment",
-        "score": 23.5
-      },
-      {
-        "name": "commerce-intelligence",
-        "score": 5.7
+        "name": "semiconductor",
+        "score": 34.9
       },
       {
         "name": "consumer-security",
+        "score": 29.5
+      },
+      {
+        "name": "semiconductor-equipment",
+        "score": 22.6
+      },
+      {
+        "name": "commerce-intelligence",
         "score": 5.5
       }
     ],
     "roleFamilies": [
       {
         "name": "Backend",
-        "score": 179.4
+        "score": 221.5
       },
       {
         "name": "Frontend",
-        "score": 120.6
+        "score": 137.3
       },
       {
         "name": "AI / Data",
-        "score": 103.9
-      },
-      {
-        "name": "Other",
-        "score": 29.7
+        "score": 111.4
       },
       {
         "name": "Design",
-        "score": 21.9
+        "score": 24.2
+      },
+      {
+        "name": "Other",
+        "score": 17
       },
       {
         "name": "Operations",
-        "score": 15.4
+        "score": 11.8
       },
       {
         "name": "Marketing",
-        "score": 6.5
+        "score": 5.3
       },
       {
-        "name": "Internship",
-        "score": 5.5
+        "name": "Full Stack",
+        "score": 4.8
       }
     ],
     "sourceCoverage": {
@@ -223,7 +223,7 @@ window.CV_CAREER_OPS_LEARNING = {
       ]
     },
     "nextStrategy": [
-      "Expand searches around engineer, to, or, engineering, at.",
+      "Expand searches around engineer, data, product, growth, operations.",
       "Prioritize sources like tw, tracked-company, flex-job-board, jp.",
       "No strong avoid pattern learned yet.",
       "Refresh this learning layer after each batch evaluation or feedback session."
@@ -232,42 +232,38 @@ window.CV_CAREER_OPS_LEARNING = {
       "preferences": {
         "keywords": [
           "remote",
-          "frontend",
-          "product engineer",
-          "typescript",
-          "react",
-          "next.js",
-          "vue",
-          "figma",
-          "design system",
           "dashboard",
+          "design system",
           "analytics",
-          "accessibility",
-          "performance",
-          "playwright",
-          "storybook",
-          "a/b testing",
-          "core web vitals",
-          "saas"
+          "TypeScript",
+          "React",
+          "engineer",
+          "data",
+          "product",
+          "growth",
+          "operations",
+          "aws",
+          "python",
+          "docker"
         ],
         "avoidKeywords": [
           "commission-only",
           "unpaid",
-          "training fee",
-          "deposit required",
-          "no interview",
-          "whatsapp only",
-          "legacy jQuery only"
+          "on-site only"
         ],
         "companies": [
-          "NVIDIA Workday",
+          "Stripe",
+          "Linear",
+          "Notion",
+          "Vercel",
           "Money Forward",
+          "NVIDIA Workday",
           "Micron Workday",
-          "Intel Workday Taiwan",
           "Logitech Workday Taiwan",
-          "AI Robot Association (AIRoA)",
+          "Intel Workday Taiwan",
+          "Gogolook",
           "Applied Materials Workday",
-          "Shizuku AI"
+          "AI Robot Association (AIRoA)"
         ]
       }
     }
