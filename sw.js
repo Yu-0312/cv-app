@@ -1,4 +1,4 @@
-const CACHE_NAME = "cv-studio-cache-v16";
+const CACHE_NAME = "cv-studio-cache-v17";
 const ASSETS = [
   "./manifest.json",
   "./icon.svg",
@@ -8,6 +8,7 @@ const ASSETS = [
   "./data/app/gsat-external-data.js",
   "./data/app/university-tw-app-data.js",
   "./data/app/career-ops-jobs.js",
+  "./data/app/career-ops-singapore-jobs.js",
   "./data/app/career-ops-application-kit.js",
   "./data/app/career-ops-deep-research.js",
   "./data/app/career-ops-deep-fit.js",
@@ -30,7 +31,7 @@ function isNetworkFirstAsset(requestUrl) {
 
 function cacheSuccessfulResponse(cacheKey, response) {
   if (!response.ok) return;
-  caches.open(CACHE_NAME).then((cache) => cache.put(cacheKey, response.clone()));
+  caches.open(CACHE_NAME).then((cache) => cache.put(cacheKey, response.clone())).catch(() => {});
 }
 
 self.addEventListener("install", (event) => {
