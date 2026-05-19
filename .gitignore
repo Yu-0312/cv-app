@@ -10,6 +10,19 @@ config.js
 .claude/worktrees/
 data/raw/104-browser-capture.json
 data/normalized/104-gsat-115-browser.json
+data/career-ops-profiles/
+data/app/career-ops-jobs.json
+data/app/career-ops-jobs.js
+data/app/career-ops-combined-jobs.json
+data/app/career-ops-combined-jobs.js
+data/app/*-results.csv
+data/app/*-results.jsonl
+data/app/career-ops-snapshot/
+data/app/gsat-score-synthetic-*.csv
+data/app/gsat-score-synthetic-*.csv.gz
+data/app/gsat-score-synthetic-*-summary.json
+data/app/career-ops-jobs-thomas.*
+data/app/career-ops-intelligence-thomas-report.md
 
 # Promotional assets (not part of app runtime)
 promo-video/

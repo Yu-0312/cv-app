@@ -29,14 +29,34 @@ async function fileExists(filePath) {
   }
 }
 
-async function copyDirRecursive(from, to) {
+const includeLargeAppData = process.env.CV_STUDIO_INCLUDE_LARGE_APP_DATA === "1";
+
+function normalizedRelativePath(relativePath) {
+  return String(relativePath || "").split(path.sep).join("/");
+}
+
+function shouldSkipLargeAppData(relativePath) {
+  if (includeLargeAppData) return false;
+  const normalized = normalizedRelativePath(relativePath);
+  const name = path.basename(normalized);
+  return normalized === "career-ops-snapshot"
+    || normalized.startsWith("career-ops-snapshot/")
+    || normalized === "career-ops-jobs.json"
+    || normalized === "career-ops-jobs.js"
+    || /-results\.(csv|jsonl)(\.gz)?$/i.test(name)
+    || /^gsat-score-synthetic-.*\.csv(\.gz)?$/i.test(name);
+}
+
+async function copyDirRecursive(from, to, options = {}, relativeBase = "") {
   await ensureDir(to);
   const entries = await fs.readdir(from, { withFileTypes: true });
   for (const entry of entries) {
     const src = path.join(from, entry.name);
     const dest = path.join(to, entry.name);
+    const relativePath = path.join(relativeBase, entry.name);
+    if (options.skipLargeAppData && shouldSkipLargeAppData(relativePath)) continue;
     if (entry.isDirectory()) {
-      await copyDirRecursive(src, dest);
+      await copyDirRecursive(src, dest, options, relativePath);
     } else {
       await fs.copyFile(src, dest);
     }
@@ -89,7 +109,7 @@ async function main() {
   const appSourceDir = path.join(root, "data", "app");
   const appTargetDir = path.join(distDir, "data", "app");
   try {
-    await copyDirRecursive(appSourceDir, appTargetDir);
+    await copyDirRecursive(appSourceDir, appTargetDir, { skipLargeAppData: true });
   } catch (error) {
     if (error?.code !== "ENOENT") throw error;
   }
@@ -104,8 +124,16 @@ async function main() {
       "window.CV_UNIVERSITY_TW_DATA = window.CV_UNIVERSITY_TW_DATA || { source: 'fallback', universities: {} };\n"
     ],
     [
+      path.join(appTargetDir, "career-ops-jobs.json"),
+      JSON.stringify({ source: "fallback", extractedAt: "", sourceCount: 0, jobCount: 0, jobs: [], errors: [] }, null, 2) + "\n"
+    ],
+    [
       path.join(appTargetDir, "career-ops-jobs.js"),
       "window.CV_CAREER_OPS_JOBS = window.CV_CAREER_OPS_JOBS || { source: 'fallback', extractedAt: '', sourceCount: 0, jobCount: 0, jobs: [], errors: [] };\n"
+    ],
+    [
+      path.join(appTargetDir, "career-ops-singapore-jobs.js"),
+      "window.CV_CAREER_OPS_SINGAPORE_JOBS = window.CV_CAREER_OPS_SINGAPORE_JOBS || { source: 'fallback', extractedAt: '', sourceCount: 0, jobCount: 0, jobs: [], errors: [] };\n"
     ],
     [
       path.join(appTargetDir, "career-ops-application-kit.js"),

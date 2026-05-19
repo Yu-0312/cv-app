@@ -1,3 +1,6 @@
+import { isKnownMarketSearch } from "./lib/career-ops-market.mjs";
+import { gunzipSync } from "node:zlib";
+
 function cleanText(value) {
   return String(value || "").trim();
 }
@@ -228,8 +231,7 @@ async function fetchWorkdayJson(url, timeoutMs, init = {}) {
 }
 
 function isWorkdayLocationSearch(text) {
-  return /^(taiwan|china|japan|korea|singapore|taipei|hsinchu|taichung|tainan|kaohsiung|shanghai|beijing|shenzhen|hangzhou|seoul|tokyo)$/i
-    .test(cleanText(text));
+  return isKnownMarketSearch(cleanText(text));
 }
 
 function matchesWorkdaySearch(job, source) {
@@ -420,7 +422,958 @@ function normalizeAshbyJob(job, source, toolkit) {
   });
 }
 
+function parseCsvRows(text) {
+  const rows = [];
+  let row = [];
+  let field = "";
+  let quoted = false;
+  const input = String(text || "");
+
+  for (let i = 0; i < input.length; i += 1) {
+    const char = input[i];
+    const next = input[i + 1];
+    if (quoted) {
+      if (char === "\"" && next === "\"") {
+        field += "\"";
+        i += 1;
+      } else if (char === "\"") {
+        quoted = false;
+      } else {
+        field += char;
+      }
+      continue;
+    }
+    if (char === "\"") {
+      quoted = true;
+    } else if (char === ",") {
+      row.push(field);
+      field = "";
+    } else if (char === "\n") {
+      row.push(field);
+      rows.push(row);
+      row = [];
+      field = "";
+    } else if (char !== "\r") {
+      field += char;
+    }
+  }
+  if (field || row.length) {
+    row.push(field);
+    rows.push(row);
+  }
+
+  const headers = rows.shift()?.map((header) => cleanText(header)) || [];
+  return rows
+    .filter((values) => values.some((value) => cleanText(value)))
+    .map((values) => Object.fromEntries(headers.map((header, index) => [header, cleanText(values[index])])));
+}
+
+function addSearchParams(url, params) {
+  const parsed = new URL(url);
+  for (const [key, value] of Object.entries(params)) {
+    if (value !== undefined && value !== null && value !== "") parsed.searchParams.set(key, String(value));
+  }
+  return parsed.href;
+}
+
+function sourceMax(source, options, fallback, cap = Number.MAX_SAFE_INTEGER) {
+  return Math.min(cap, Math.max(1, Number(source.maxDiscovered ?? options.maxDiscovered ?? fallback) || fallback));
+}
+
+function decodeUrlAttribute(value) {
+  return cleanText(value)
+    .replace(/&amp;/gi, "&")
+    .replace(/&quot;/gi, "\"")
+    .replace(/&#39;/gi, "'");
+}
+
+function uniqueDetailLinks(html, baseUrl, pattern) {
+  const seen = new Set();
+  const links = [];
+  for (const match of String(html || "").matchAll(/<a\b[^>]*\bhref\s*=\s*["']([^"']+)["'][^>]*>/gi)) {
+    try {
+      const url = new URL(decodeUrlAttribute(match[1]), baseUrl);
+      url.hash = "";
+      const href = url.href;
+      if (!pattern.test(url.pathname) && !pattern.test(href)) continue;
+      if (seen.has(href)) continue;
+      seen.add(href);
+      links.push(href);
+    } catch {}
+  }
+  return links;
+}
+
+async function scrapeDetailLinks(links, source, options, toolkit, adapterId) {
+  const jobs = [];
+  for (const url of links) {
+    try {
+      if (typeof toolkit.scrapeJobPage === "function") {
+        jobs.push(...await toolkit.scrapeJobPage({ ...source, url, type: "job", source: sourceName(source) }, options, `adapter:${adapterId}`));
+      } else {
+        const html = await toolkit.fetchText(url, options.timeoutMs);
+        jobs.push(...htmlJobsFromPage(html, source, toolkit, url, `adapter:${adapterId}`));
+      }
+    } catch {}
+  }
+  return jobs;
+}
+
+function normalizeTaiwanJobsRow(row, source, toolkit) {
+  const salary = [
+    row.SALARYCD,
+    row.NT_L && row.NT_U ? `${row.NT_L}-${row.NT_U}` : row.NT_L || row.NT_U
+  ].filter(Boolean).join(" ");
+  const description = [
+    row.JOB_DETAIL,
+    row.CJOB_NAME1 || row.CJOB_NAME2 ? `Category: ${[row.CJOB_NAME1, row.CJOB_NAME2].filter(Boolean).join(" / ")}` : "",
+    row.JOB_PERSON ? `Openings: ${row.JOB_PERSON}` : "",
+    row.EXPERIENCE ? `Experience: ${row.EXPERIENCE}` : "",
+    row.WKTIME ? `Schedule: ${row.WKTIME}` : "",
+    salary ? `Salary: ${salary}` : "",
+    row.EDGRDESC ? `Education: ${row.EDGRDESC}` : ""
+  ].filter(Boolean).join("\n\n");
+  return toolkit.normalizeJob({
+    source: sourceName(source) || "TaiwanJobs",
+    sourceType: "adapter:taiwanjobs",
+    title: row.OCCU_DESC,
+    company: row.COMPNAME,
+    url: row.URL_QUERY,
+    location: row.CITYNAME,
+    description,
+    datePosted: row.TRANDATE,
+    validThrough: row.STOP_DATE,
+    employmentType: row.WK_TYPE
+  });
+}
+
+function normalizeTencentJob(job, source, toolkit) {
+  const description = [
+    toolkit.stripHtml(job.Responsibility || job.responsibility || ""),
+    toolkit.stripHtml(job.Requirement || job.requirement || ""),
+    job.BGName ? `BG: ${job.BGName}` : "",
+    job.ProductName ? `Product: ${job.ProductName}` : "",
+    job.CategoryName ? `Category: ${job.CategoryName}` : "",
+    job.RequireWorkYearsName ? `Experience: ${job.RequireWorkYearsName}` : ""
+  ].filter(Boolean).join("\n\n");
+  return toolkit.normalizeJob({
+    source: sourceName(source) || "Tencent Careers",
+    sourceType: "adapter:tencent",
+    title: job.RecruitPostName || job.PostName,
+    company: sourceName(source) || "Tencent",
+    url: job.PostURL || (job.PostId ? `https://careers.tencent.com/jobdesc.html?postId=${encodeURIComponent(job.PostId)}` : ""),
+    location: [job.CountryName, job.LocationName].filter(Boolean).join(" / "),
+    description,
+    datePosted: job.LastUpdateTime,
+    employmentType: [job.CategoryName, job.BGName, job.ProductName].filter(Boolean).join(" / ")
+  });
+}
+
+function normalizeMyCareersFutureJob(job, source, toolkit) {
+  const company = job.hiringCompany?.name || job.postedCompany?.name || "";
+  const address = job.address || {};
+  const districts = Array.isArray(address.districts)
+    ? address.districts.map((item) => item.location || item.region).filter(Boolean).join(" / ")
+    : "";
+  const country = address.overseasCountry || (districts ? "Singapore" : "");
+  const location = [
+    address.building,
+    address.street,
+    districts,
+    country
+  ].filter(Boolean).join(", ");
+  const description = [
+    toolkit.stripHtml(job.description || ""),
+    Array.isArray(job.skills) && job.skills.length ? `Skills: ${job.skills.map((item) => item.skill).filter(Boolean).join(", ")}` : "",
+    Array.isArray(job.categories) && job.categories.length ? `Categories: ${job.categories.map((item) => item.category).filter(Boolean).join(", ")}` : "",
+    job.numberOfVacancies ? `Vacancies: ${job.numberOfVacancies}` : "",
+    job.minimumYearsExperience !== undefined && job.minimumYearsExperience !== null ? `Minimum experience: ${job.minimumYearsExperience} years` : ""
+  ].filter(Boolean).join("\n\n");
+  return toolkit.normalizeJob({
+    source: sourceName(source) || "MyCareersFuture",
+    sourceType: "adapter:mycareersfuture",
+    title: job.title,
+    company,
+    url: job.uuid ? `https://www.mycareersfuture.gov.sg/job/${encodeURIComponent(job.uuid)}` : "",
+    location,
+    description,
+    datePosted: job.metadata?.newPostingDate || job.metadata?.originalPostingDate || job.metadata?.createdAt,
+    validThrough: job.metadata?.expiryDate,
+    employmentType: Array.isArray(job.employmentTypes) ? job.employmentTypes.map((item) => item.employmentType).filter(Boolean).join(" / ") : ""
+  });
+}
+
+function compactPlainDescription(value, toolkit, maxLength = 6000) {
+  return toolkit.stripHtml(value || "").replace(/\u0000/g, "").replace(/\n{3,}/g, "\n\n").trim().slice(0, maxLength);
+}
+
+function normalizeRemoteOkJob(job, source, toolkit) {
+  const salary = [job.salary_min, job.salary_max].filter((item) => item !== undefined && item !== null && item !== "").join("-");
+  const description = [
+    compactPlainDescription(job.description, toolkit),
+    Array.isArray(job.tags) && job.tags.length ? `Tags: ${job.tags.join(", ")}` : "",
+    salary ? `Salary: ${salary}` : "",
+    "Source attribution: Remote OK"
+  ].filter(Boolean).join("\n\n");
+  return toolkit.normalizeJob({
+    source: sourceName(source) || "Remote OK",
+    sourceType: "adapter:remoteok",
+    title: job.position,
+    company: job.company,
+    url: job.url || job.apply_url,
+    location: job.location || "Remote / Global",
+    description,
+    datePosted: job.date,
+    employmentType: Array.isArray(job.tags) ? job.tags.slice(0, 8).join(" / ") : "Remote"
+  });
+}
+
+function normalizeRemotiveJob(job, source, toolkit) {
+  const description = [
+    compactPlainDescription(job.description, toolkit),
+    Array.isArray(job.tags) && job.tags.length ? `Tags: ${job.tags.join(", ")}` : "",
+    job.category ? `Category: ${job.category}` : "",
+    job.salary ? `Salary: ${job.salary}` : "",
+    "Source attribution: Remotive"
+  ].filter(Boolean).join("\n\n");
+  return toolkit.normalizeJob({
+    source: sourceName(source) || "Remotive",
+    sourceType: "adapter:remotive",
+    title: job.title,
+    company: job.company_name,
+    url: job.url,
+    location: job.candidate_required_location || "Remote / Global",
+    description,
+    datePosted: job.publication_date,
+    employmentType: [job.job_type, job.category].filter(Boolean).join(" / ")
+  });
+}
+
+function normalizeArbeitnowJob(job, source, toolkit) {
+  const description = [
+    compactPlainDescription(job.description, toolkit),
+    Array.isArray(job.tags) && job.tags.length ? `Tags: ${job.tags.join(", ")}` : "",
+    Array.isArray(job.job_types) && job.job_types.length ? `Job types: ${job.job_types.join(", ")}` : "",
+    job.remote ? "Remote-friendly listing" : ""
+  ].filter(Boolean).join("\n\n");
+  return toolkit.normalizeJob({
+    source: sourceName(source) || "Arbeitnow",
+    sourceType: "adapter:arbeitnow",
+    title: job.title,
+    company: job.company_name,
+    url: job.url,
+    location: [job.location, job.remote ? "Remote" : ""].filter(Boolean).join(" / ") || "Global",
+    description,
+    datePosted: job.created_at ? new Date(Number(job.created_at) * 1000).toISOString() : "",
+    employmentType: Array.isArray(job.job_types) ? job.job_types.join(" / ") : ""
+  });
+}
+
+function normalizeTheMuseJob(job, source, toolkit) {
+  const locations = Array.isArray(job.locations) ? job.locations.map((item) => item.name).filter(Boolean).join(" / ") : "";
+  const categories = Array.isArray(job.categories) ? job.categories.map((item) => item.name).filter(Boolean).join(", ") : "";
+  const levels = Array.isArray(job.levels) ? job.levels.map((item) => item.name).filter(Boolean).join(", ") : "";
+  const description = [
+    compactPlainDescription(job.contents, toolkit, 5000),
+    categories ? `Categories: ${categories}` : "",
+    levels ? `Levels: ${levels}` : "",
+    "Source attribution: The Muse public jobs API"
+  ].filter(Boolean).join("\n\n");
+  return toolkit.normalizeJob({
+    source: sourceName(source) || "The Muse",
+    sourceType: "adapter:themuse",
+    title: job.name,
+    company: job.company?.name,
+    url: job.refs?.landing_page,
+    location: locations || "Global",
+    description,
+    datePosted: job.publication_date,
+    employmentType: [job.type, categories, levels].filter(Boolean).join(" / ")
+  });
+}
+
+function normalizeMeetJobsJob(job, source, toolkit) {
+  const address = job.address || {};
+  const place = address.place || {};
+  const salary = job.salary
+    ? [job.salary.currency, job.salary.minimum, job.salary.maximum, job.salary.paid_period].filter(Boolean).join(" ")
+    : "";
+  const skills = Array.isArray(job.required_skills) ? job.required_skills.map((item) => item.name || item).filter(Boolean).join(", ") : "";
+  const slug = cleanText(job.slug);
+  const description = [
+    compactPlainDescription(job.description, toolkit),
+    skills ? `Required skills: ${skills}` : "",
+    salary ? `Salary: ${salary}` : "",
+    job.plan_name ? `Plan: ${job.plan_name}` : "",
+    "Source attribution: Meet.jobs public API"
+  ].filter(Boolean).join("\n\n");
+  return toolkit.normalizeJob({
+    source: sourceName(source) || "Meet.jobs",
+    sourceType: "adapter:meetjobs",
+    title: job.title,
+    company: job.employer?.name || job.external_employer_name,
+    url: job.url || (job.id ? `https://meet.jobs/zh-TW/jobs/${encodeURIComponent(job.id)}${slug ? `-${encodeURIComponent(slug)}` : ""}` : ""),
+    location: [place.country || address.handwriting_country, place.city || address.handwriting_city, address.handwriting_street].filter(Boolean).join(", ") || "Global",
+    description,
+    datePosted: job.published_at || job.updated_at,
+    validThrough: job.deadline_at || "",
+    employmentType: [job.work_type, job.contract_type].filter(Boolean).join(" / ")
+  });
+}
+
+function normalizeJrecInDetail(html, source, toolkit, pageUrl, fallbackTitle = "") {
+  const text = toolkit.stripHtml(html);
+  const lines = text.split("\n").map((line) => cleanText(line)).filter(Boolean);
+  const id = (pageUrl.match(/[?&]id=([^&]+)/i) || [])[1] || "";
+  const idIndex = id ? lines.findIndex((line) => line === id) : -1;
+  const title = idIndex > 0 ? lines[idIndex - 1] : fallbackTitle;
+  const datePosted = (text.match(/更新日\s*:?\s*([0-9０-９]{4}年[0-9０-９]{1,2}月[0-9０-９]{1,2}日)/) || [])[1] || "";
+  const validThrough = (text.match(/募集終了日\s*:?\s*([0-9０-９]{4}年[0-9０-９]{1,2}月[0-9０-９]{1,2}日)/) || [])[1] || "";
+  const locationIndex = lines.findIndex((line) => line === "勤務地 :");
+  const location = locationIndex >= 0 ? lines[locationIndex + 1] || "" : "";
+  const company = idIndex >= 0
+    ? lines.slice(idIndex + 1, idIndex + 8).find((line) => !/^https?:\/\//i.test(line) && !/^(国立大学|公立大学|私立大学|研究開発法人|民間企業|その他機関)$/.test(line)) || ""
+    : "";
+  const contentStart = lines.findIndex((line) => line === "業務内容");
+  const description = (contentStart >= 0 ? lines.slice(contentStart, contentStart + 140) : lines.slice(0, 180)).join("\n");
+  const jobKindIndex = lines.findIndex((line) => line === "職種");
+  const employmentType = jobKindIndex >= 0 ? lines.slice(jobKindIndex + 1, jobKindIndex + 8).join(" / ") : "";
+  return toolkit.normalizeJob({
+    source: sourceName(source) || "JREC-IN",
+    sourceType: "adapter:jrecin",
+    title,
+    company,
+    url: pageUrl,
+    location,
+    description,
+    datePosted,
+    validThrough,
+    employmentType
+  });
+}
+
+function pagedUrl(source, page) {
+  const url = normalizeUrl(source.url);
+  const parsed = new URL(url);
+  parsed.searchParams.set("page", String(page));
+  return parsed.href;
+}
+
+function attributeValue(tag, name) {
+  const escaped = String(name || "").replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  const match = String(tag || "").match(new RegExp(`\\b${escaped}\\s*=\\s*["']([^"']*)["']`, "i"));
+  return decodeXmlText(match?.[1] || "");
+}
+
+function yearMonthDayFromTaiwanListDate(value) {
+  const match = String(value || "").match(/([0-9]{1,2})\s*\/\s*([0-9]{1,2})/);
+  if (!match) return "";
+  const now = new Date();
+  const month = Number(match[1]);
+  const day = Number(match[2]);
+  if (!month || !day) return "";
+  return `${now.getFullYear()}-${String(month).padStart(2, "0")}-${String(day).padStart(2, "0")}`;
+}
+
+async function fetch1111Html(url, timeoutMs) {
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), timeoutMs);
+  try {
+    const response = await fetch(url, {
+      signal: controller.signal,
+      headers: {
+        "accept": "text/html,*/*;q=0.8",
+        "accept-language": "zh-TW,zh;q=0.9,en;q=0.8",
+        "cache-control": "no-cache",
+        "user-agent": "Mozilla/5.0 CV-Studio-Career-Ops/1.0"
+      }
+    });
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    return await response.text();
+  } finally {
+    clearTimeout(timer);
+  }
+}
+
+async function fetchPublicApiJson(url, timeoutMs) {
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), timeoutMs);
+  try {
+    const response = await fetch(url, {
+      signal: controller.signal,
+      headers: {
+        "accept": "application/json,text/plain,*/*",
+        "accept-language": "en-US,en;q=0.9,zh-TW;q=0.8,zh;q=0.7",
+        "cache-control": "no-cache",
+        "user-agent": "Mozilla/5.0 CV-Studio-Career-Ops/1.0"
+      }
+    });
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    return await response.json();
+  } finally {
+    clearTimeout(timer);
+  }
+}
+
+function extract1111Cards(html, pageUrl, source, toolkit) {
+  const text = String(html || "");
+  const starts = [...text.matchAll(/<div\b[^>]*class=["'][^"']*\bjob-card\b[^"']*["'][^>]*\bdata-purpose=["'](\d+)["'][^>]*>/gi)]
+    .map((match) => ({ index: match.index || 0, id: match[1] }));
+  const jobs = [];
+  for (let index = 0; index < starts.length; index += 1) {
+    const start = starts[index];
+    const end = starts[index + 1]?.index || text.indexOf("<!--]-->", start.index + 1);
+    const segment = text.slice(start.index, end > start.index ? end : start.index + 16000);
+    const jobAnchor = segment.match(/<a\b[^>]*href=["']([^"']*\/job\/\d+[^"']*)["'][^>]*>/i);
+    const parsedJobUrl = new URL(jobAnchor?.[1] ? decodeUrlAttribute(jobAnchor[1]) : `/job/${start.id}`, pageUrl);
+    parsedJobUrl.search = "";
+    const jobUrl = normalizeUrl(parsedJobUrl.href);
+    if (!jobUrl) continue;
+    const title = attributeValue(jobAnchor?.[0] || "", "title") || toolkit.stripHtml(jobAnchor?.[0] || "");
+    const companyAnchor = segment.match(/<a\b[^>]*href=["'][^"']*\/corp\/[^"']*["'][^>]*>/i);
+    const company = attributeValue(companyAnchor?.[0] || "", "title") || "";
+    const conditions = [...segment.matchAll(/<(?:a|h4)\b[^>]*class=["'][^"']*job-card-condition__text[^"']*["'][^>]*>([\s\S]*?)<\/(?:a|h4)>/gi)]
+      .map((match) => toolkit.stripHtml(match[1]).replace(/\s+/g, " ").trim())
+      .filter(Boolean);
+    const paragraphs = [...segment.matchAll(/<p\b[^>]*>([\s\S]*?)<\/p>/gi)]
+      .map((match) => toolkit.stripHtml(match[1]).replace(/\s+/g, " ").trim())
+      .filter(Boolean)
+      .sort((a, b) => b.length - a.length);
+    const summary = toolkit.stripHtml((segment.match(/<div\b[^>]*class=["'][^"']*job-summary[^"']*["'][^>]*>([\s\S]*?)<\/div>/i) || [])[1] || "");
+    const location = conditions.find((item) => /(?:台北|新北|基隆|桃園|新竹|苗栗|台中|彰化|南投|雲林|嘉義|台南|高雄|屏東|宜蘭|花蓮|台東|澎湖|金門|連江|台灣)/.test(item)) || "台灣";
+    const descriptionParts = [
+      paragraphs[0] || "",
+      conditions.length ? `條件：${conditions.join(" / ")}` : "",
+      summary ? `更新與應徵摘要：${summary}` : "",
+      `此職缺由 1111 人力銀行公開搜尋頁匯入，保留原始職缺 URL 供後續查看、去重與排序。`
+    ].filter(Boolean);
+    jobs.push(toolkit.normalizeJob({
+      source: sourceName(source) || "1111",
+      sourceType: "adapter:1111",
+      title,
+      company,
+      url: jobUrl,
+      location,
+      description: descriptionParts.join("\n\n"),
+      datePosted: yearMonthDayFromTaiwanListDate(summary || segment),
+      employmentType: conditions.slice(1).join(" / ")
+    }));
+  }
+  return jobs;
+}
+
+function decodeXmlText(value) {
+  return cleanText(value)
+    .replace(/&amp;/gi, "&")
+    .replace(/&lt;/gi, "<")
+    .replace(/&gt;/gi, ">")
+    .replace(/&quot;/gi, "\"")
+    .replace(/&#39;/gi, "'")
+    .replace(/&#(\d+);/g, (_match, code) => String.fromCharCode(Number(code)))
+    .replace(/&#x([a-f0-9]+);/gi, (_match, code) => String.fromCharCode(Number.parseInt(code, 16)));
+}
+
+function parseSitemapEntries(xml) {
+  const text = String(xml || "");
+  const blocks = [...text.matchAll(/<(url|sitemap)\b[^>]*>([\s\S]*?)<\/\1>/gi)];
+  if (!blocks.length) {
+    return [...text.matchAll(/<loc>\s*([\s\S]*?)\s*<\/loc>/gi)]
+      .map((match) => ({ loc: decodeXmlText(match[1]), lastmod: "" }))
+      .filter((entry) => entry.loc);
+  }
+  return blocks
+    .map((match) => {
+      const body = match[2] || "";
+      return {
+        loc: decodeXmlText((body.match(/<loc>\s*([\s\S]*?)\s*<\/loc>/i) || [])[1] || ""),
+        lastmod: decodeXmlText((body.match(/<lastmod>\s*([\s\S]*?)\s*<\/lastmod>/i) || [])[1] || ""),
+        kind: match[1].toLowerCase()
+      };
+    })
+    .filter((entry) => entry.loc);
+}
+
+function compileOptionalRegex(pattern) {
+  const text = cleanText(pattern);
+  if (!text) return null;
+  try {
+    return new RegExp(text, "i");
+  } catch {
+    return null;
+  }
+}
+
+function defaultSitemapJobPattern(url) {
+  const normalized = normalizeUrl(url);
+  if (!normalized) return /(\/job|jobinfo-|JobSearchDetail|\/search\/NJB|\/zhaopin\/)/i;
+  const host = new URL(normalized).hostname.toLowerCase();
+  if (host.includes("tenshoku.mynavi.jp")) return /\/jobinfo-\d+/i;
+  if (host.includes("doda.jp")) return /\/DodaFront\/View\/JobSearchDetail\//i;
+  if (host.includes("jac-recruitment.jp")) return /\/search\/NJB\d+\/?$/i;
+  if (host.includes("zhaopin.com")) return /\/zhaopin\/[a-f0-9]{12,}\//i;
+  if (host.includes("yolo-japan.com")) return /\/recruit\/job\//i;
+  return /(\/job|\/jobs|jobinfo-|JobSearchDetail|\/search\/NJB|\/zhaopin\/)/i;
+}
+
+function looksLikeSitemapUrl(url) {
+  const normalized = normalizeUrl(url);
+  if (!normalized) return false;
+  const parsed = new URL(normalized);
+  return /\.(xml|xml\.gz)$/i.test(parsed.pathname) || /sitemap/i.test(parsed.pathname);
+}
+
+function canonicalSitemapJobUrl(value) {
+  const normalized = normalizeUrl(value);
+  if (!normalized) return "";
+  const parsed = new URL(normalized);
+  parsed.hash = "";
+  if (/doda\.jp$/i.test(parsed.hostname)) {
+    const match = parsed.pathname.match(/^(\/DodaFront\/View\/JobSearchDetail\/j_jid__\d+\/)/i);
+    if (match) {
+      parsed.pathname = match[1];
+      parsed.search = "";
+    }
+  }
+  return parsed.href;
+}
+
+async function fetchSitemapText(url, timeoutMs) {
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), timeoutMs);
+  try {
+    const response = await fetch(url, {
+      signal: controller.signal,
+      headers: {
+        "accept": "application/xml,text/xml,application/x-gzip,*/*;q=0.8",
+        "accept-language": "en-US,en;q=0.9,zh-TW;q=0.8,zh;q=0.7,ja;q=0.6",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36 CV-Studio-Career-Ops/1.0"
+      }
+    });
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    let buffer = Buffer.from(await response.arrayBuffer());
+    if (buffer[0] === 0x1f && buffer[1] === 0x8b) buffer = gunzipSync(buffer);
+    return buffer.toString("utf8").replace(/^\uFEFF/, "");
+  } finally {
+    clearTimeout(timer);
+  }
+}
+
+async function collectSitemapJobEntries(source, options) {
+  const max = sourceMax(source, options, 5000, 100000);
+  const maxSitemapFiles = Math.max(1, Number(source.maxSitemapFiles ?? 30) || 30);
+  const jobPattern = compileOptionalRegex(source.jobUrlPattern) || defaultSitemapJobPattern(source.url);
+  const sitemapFilePattern = compileOptionalRegex(source.sitemapFilePattern);
+  const queue = [normalizeUrl(source.url)].filter(Boolean);
+  const seenSitemaps = new Set();
+  const seenJobs = new Set();
+  const jobs = [];
+
+  while (queue.length && seenSitemaps.size < maxSitemapFiles && jobs.length < max) {
+    const sitemapUrl = queue.shift();
+    if (!sitemapUrl || seenSitemaps.has(sitemapUrl)) continue;
+    seenSitemaps.add(sitemapUrl);
+    const xml = await fetchSitemapText(sitemapUrl, options.timeoutMs);
+    const entries = parseSitemapEntries(xml);
+    for (const entry of entries) {
+      const loc = normalizeUrl(entry.loc);
+      if (!loc) continue;
+      if (entry.kind === "sitemap" || looksLikeSitemapUrl(loc)) {
+        if ((!sitemapFilePattern || sitemapFilePattern.test(loc)) && !seenSitemaps.has(loc)) queue.push(loc);
+        continue;
+      }
+      if (!jobPattern.test(loc)) continue;
+      const url = canonicalSitemapJobUrl(loc);
+      if (!url || seenJobs.has(url)) continue;
+      seenJobs.add(url);
+      jobs.push({ ...entry, loc: url });
+      if (jobs.length >= max) break;
+    }
+  }
+
+  return jobs;
+}
+
+function sitemapTitleFromUrl(url, source) {
+  const parsed = new URL(url);
+  const text = decodeURIComponent(parsed.pathname);
+  const sourceLabel = sourceName(source) || parsed.hostname;
+  const dodaId = (text.match(/j_jid__(\d+)/i) || [])[1] || "";
+  if (dodaId) return `${sourceLabel} opening ${dodaId}`;
+  const mynaviId = (text.match(/jobinfo-(\d+)/i) || [])[1] || "";
+  if (mynaviId) return `${sourceLabel} opening ${mynaviId}`;
+  const jacId = (text.match(/\/search\/([^/]+)\/?$/i) || [])[1] || "";
+  if (jacId) return `${sourceLabel} opening ${jacId}`;
+  const zhaopinId = (text.match(/\/zhaopin\/([^/]+)\/?$/i) || [])[1] || "";
+  if (zhaopinId) return `${sourceLabel} opening ${zhaopinId.slice(0, 12)}`;
+  const slug = text.split("/").filter(Boolean).pop() || parsed.hostname;
+  return `${sourceLabel} opening ${slug.replace(/[-_]+/g, " ").slice(0, 80)}`;
+}
+
+function defaultMarketLocation(market) {
+  return ({
+    tw: "Taiwan",
+    cn: "China",
+    sg: "Singapore",
+    jp: "Japan",
+    us: "United States",
+    ca: "Canada",
+    uk: "United Kingdom"
+  })[String(market || "").toLowerCase()] || String(market || "Global").toUpperCase();
+}
+
+function normalizeSitemapJob(entry, source, toolkit) {
+  const marketLocation = defaultMarketLocation(source.market);
+  const label = sourceName(source) || "Public sitemap";
+  const description = [
+    `Public sitemap job-detail record from ${label}.`,
+    `This URL-level posting was imported from an XML sitemap to broaden market coverage for ${marketLocation}.`,
+    "It preserves the canonical live posting URL for downstream ranking, dedupe, and follow-up detail scraping while remaining transparent that company and full job-description fields may need enrichment from the source page.",
+    entry.lastmod ? `Sitemap last modified: ${entry.lastmod}.` : ""
+  ].filter(Boolean).join(" ");
+  return toolkit.normalizeJob({
+    source: label,
+    sourceType: "adapter:sitemap",
+    title: sitemapTitleFromUrl(entry.loc, source),
+    company: label,
+    url: entry.loc,
+    location: marketLocation,
+    description,
+    datePosted: entry.lastmod,
+    employmentType: "Public sitemap listing"
+  });
+}
+
 export const SOURCE_ADAPTERS = [
+  {
+    id: "sitemap",
+    match(source) {
+      return source.adapter === "sitemap" || /sitemap/i.test(source.url || "");
+    },
+    async scrape(source, options, toolkit) {
+      const max = sourceMax(source, options, 5000, 100000);
+      const detailLimit = Math.min(max, Math.max(0, Number(source.detailLimit ?? 0) || 0));
+      const entries = await collectSitemapJobEntries(source, options);
+      if (!detailLimit) return entries.slice(0, max).map((entry) => normalizeSitemapJob(entry, source, toolkit));
+      const jobs = [];
+      for (const entry of entries.slice(0, max)) {
+        if (jobs.length < detailLimit) {
+          try {
+            const scraped = await toolkit.scrapeJobPage({ ...source, url: entry.loc, type: "job", source: sourceName(source) }, options, "adapter:sitemap-detail");
+            if (scraped.length) {
+              jobs.push(...scraped);
+              continue;
+            }
+          } catch {}
+        }
+        jobs.push(normalizeSitemapJob(entry, source, toolkit));
+      }
+      return jobs;
+    }
+  },
+  {
+    id: "taiwanjobs",
+    match(source) {
+      return source.adapter === "taiwanjobs" || hostMatches(source.url || source.apiUrl, /(^|\.)taiwanjobs\.gov\.tw$/i);
+    },
+    async scrape(source, options, toolkit) {
+      const max = sourceMax(source, options, 1000, 1000);
+      const apiUrl = addSearchParams(source.apiUrl || source.url || "https://free.taiwanjobs.gov.tw/WebService_Taipei/Webservice.ashx", {
+        count: max,
+        T: "CSV"
+      });
+      const csv = await toolkit.fetchText(apiUrl, options.timeoutMs);
+      return parseCsvRows(csv).slice(0, max).map((row) => normalizeTaiwanJobsRow(row, source, toolkit));
+    }
+  },
+  {
+    id: "tencent",
+    match(source) {
+      return source.adapter === "tencent" || hostMatches(source.url || source.apiUrl, /(^|\.)careers\.tencent\.com$/i);
+    },
+    async scrape(source, options, toolkit) {
+      const max = sourceMax(source, options, 1200, 3000);
+      const pageSize = Math.min(100, max);
+      const rows = [];
+      const apiUrl = source.apiUrl || "https://careers.tencent.com/tencentcareer/api/post/Query";
+      const query = cleanText(source.searchText || source.keyword);
+      for (let pageIndex = 1; rows.length < max; pageIndex += 1) {
+        const url = addSearchParams(apiUrl, {
+          timestamp: Date.now(),
+          keyword: query,
+          pageIndex,
+          pageSize,
+          language: source.language || "zh-cn",
+          area: source.area || "cn"
+        });
+        const payload = await toolkit.fetchJson(url, options.timeoutMs);
+        const posts = Array.isArray(payload?.Data?.Posts) ? payload.Data.Posts : [];
+        rows.push(...posts);
+        const total = Number(payload?.Data?.Count || 0);
+        if (!posts.length || posts.length < pageSize || (total && rows.length >= total)) break;
+      }
+      return rows.slice(0, max).map((job) => normalizeTencentJob(job, source, toolkit));
+    }
+  },
+  {
+    id: "mycareersfuture",
+    match(source) {
+      return source.adapter === "mycareersfuture" || hostMatches(source.url || source.apiUrl, /(^|\.)mycareersfuture\.gov\.sg$/i);
+    },
+    async scrape(source, options, toolkit) {
+      const max = sourceMax(source, options, 200, 1000);
+      const limit = Math.min(50, max);
+      const rows = [];
+      const baseUrl = source.apiUrl || "https://api.mycareersfuture.gov.sg/v2/jobs";
+      const search = cleanText(source.searchText || source.keyword || (source.url ? new URL(source.url).searchParams.get("search") : ""));
+      for (let page = 0; rows.length < max; page += 1) {
+        const url = addSearchParams(baseUrl, { limit, page, search });
+        const payload = await toolkit.fetchJson(url, options.timeoutMs);
+        const results = Array.isArray(payload?.results) ? payload.results : [];
+        rows.push(...results);
+        const total = Number(payload?.total || 0);
+        if (!results.length || results.length < limit || (total && rows.length >= total)) break;
+      }
+      return rows.slice(0, max).map((job) => normalizeMyCareersFutureJob(job, source, toolkit));
+    }
+  },
+  {
+    id: "remoteok",
+    match(source) {
+      return source.adapter === "remoteok" || hostMatches(source.url || source.apiUrl, /(^|\.)remoteok\.com$/i);
+    },
+    async scrape(source, options, toolkit) {
+      const max = sourceMax(source, options, 1000, 5000);
+      const payload = await toolkit.fetchJson(source.apiUrl || source.url || "https://remoteok.com/api", options.timeoutMs);
+      const rows = Array.isArray(payload) ? payload.filter((job) => job?.position && job?.url) : [];
+      return rows.slice(0, max).map((job) => normalizeRemoteOkJob(job, source, toolkit));
+    }
+  },
+  {
+    id: "remotive",
+    match(source) {
+      return source.adapter === "remotive" || hostMatches(source.url || source.apiUrl, /(^|\.)remotive\.com$/i);
+    },
+    async scrape(source, options, toolkit) {
+      const max = sourceMax(source, options, 1000, 5000);
+      const payload = await toolkit.fetchJson(source.apiUrl || source.url || "https://remotive.com/api/remote-jobs", options.timeoutMs);
+      const rows = Array.isArray(payload?.jobs) ? payload.jobs : [];
+      return rows.slice(0, max).map((job) => normalizeRemotiveJob(job, source, toolkit));
+    }
+  },
+  {
+    id: "arbeitnow",
+    match(source) {
+      return source.adapter === "arbeitnow" || hostMatches(source.url || source.apiUrl, /(^|\.)arbeitnow\.com$/i);
+    },
+    async scrape(source, options, toolkit) {
+      const max = sourceMax(source, options, 2000, 10000);
+      let url = source.apiUrl || source.url || "https://www.arbeitnow.com/api/job-board-api";
+      const first = new URL(url);
+      first.searchParams.set("limit", String(Math.min(100, max)));
+      url = first.href;
+      const rows = [];
+      const seenPages = new Set();
+      while (url && rows.length < max && !seenPages.has(url)) {
+        seenPages.add(url);
+        let payload;
+        try {
+          payload = await fetchPublicApiJson(url, options.timeoutMs);
+        } catch (error) {
+          if (rows.length) break;
+          throw error;
+        }
+        const pageRows = Array.isArray(payload?.data) ? payload.data : [];
+        rows.push(...pageRows);
+        url = payload?.links?.next || "";
+        if (!pageRows.length) break;
+      }
+      return rows.slice(0, max).map((job) => normalizeArbeitnowJob(job, source, toolkit));
+    }
+  },
+  {
+    id: "themuse",
+    match(source) {
+      return source.adapter === "themuse" || hostMatches(source.url || source.apiUrl, /(^|\.)themuse\.com$/i);
+    },
+    async scrape(source, options, toolkit) {
+      const max = sourceMax(source, options, 12000, 50000);
+      const rows = [];
+      const baseUrl = source.apiUrl || source.url || "https://www.themuse.com/api/public/jobs?page=1";
+      for (let page = 1; rows.length < max; page += 1) {
+        const parsed = new URL(baseUrl);
+        parsed.searchParams.set("page", String(page));
+        let payload;
+        try {
+          payload = await fetchPublicApiJson(parsed.href, options.timeoutMs);
+        } catch (error) {
+          if (rows.length) break;
+          throw error;
+        }
+        const pageRows = Array.isArray(payload?.results) ? payload.results : [];
+        rows.push(...pageRows);
+        if (!pageRows.length || page >= Number(payload?.page_count || page)) break;
+      }
+      return rows.slice(0, max).map((job) => normalizeTheMuseJob(job, source, toolkit));
+    }
+  },
+  {
+    id: "meetjobs",
+    match(source) {
+      return source.adapter === "meetjobs" || hostMatches(source.url || source.apiUrl, /(^|\.)meet\.jobs$/i);
+    },
+    async scrape(source, options, toolkit) {
+      const max = sourceMax(source, options, 100, 1000);
+      const rows = [];
+      const baseUrl = source.apiUrl || source.url || "https://api.meet.jobs/api/v1/jobs";
+      for (let page = 1; rows.length < max; page += 1) {
+        const parsed = new URL(baseUrl);
+        parsed.searchParams.set("page", String(page));
+        const payload = await toolkit.fetchJson(parsed.href, options.timeoutMs);
+        const pageRows = Array.isArray(payload?.collection) ? payload.collection : [];
+        rows.push(...pageRows);
+        const totalPages = Number(payload?.paginator?.total_pages || page);
+        if (!pageRows.length || page >= totalPages) break;
+      }
+      return rows.slice(0, max).map((job) => normalizeMeetJobsJob(job, source, toolkit));
+    }
+  },
+  {
+    id: "japan-dev",
+    match(source) {
+      return source.adapter === "japan-dev" || hostMatches(source.url, /(^|\.)japan-dev\.com$/i);
+    },
+    async scrape(source, options, toolkit) {
+      const max = sourceMax(source, options, 120, 400);
+      const html = await toolkit.fetchText(source.url, options.timeoutMs);
+      const links = uniqueDetailLinks(html, source.url, /\/jobs\/[^/?#]+\/[^/?#]+/i).slice(0, max);
+      return scrapeDetailLinks(links, source, options, toolkit, "japan-dev");
+    }
+  },
+  {
+    id: "jrecin",
+    match(source) {
+      return source.adapter === "jrecin" || hostMatches(source.url, /(^|\.)jrecin\.jst\.go\.jp$/i);
+    },
+    async scrape(source, options, toolkit) {
+      const max = sourceMax(source, options, 320, 1000);
+      const links = [];
+      const titles = new Map();
+      const seen = new Set();
+      for (let page = 1; links.length < max; page += 1) {
+        const url = addSearchParams(source.url || "https://jrecin.jst.go.jp/seek/SeekJorSearch?fn=0", {
+          page,
+          dispcount: 50
+        });
+        const html = await toolkit.fetchText(url, options.timeoutMs);
+        const pageLinks = uniqueDetailLinks(html, url, /\/seek\/SeekJorDetail/i);
+        if (!pageLinks.length) break;
+        for (const match of String(html).matchAll(/<a\b[^>]*\bhref\s*=\s*["']([^"']*SeekJorDetail[^"']*)["'][^>]*>([\s\S]*?)<\/a>/gi)) {
+          try {
+            const detailUrl = new URL(decodeUrlAttribute(match[1]), url).href;
+            titles.set(detailUrl, toolkit.stripHtml(match[2]).replace(/\s+/g, " ").trim());
+          } catch {}
+        }
+        let added = 0;
+        for (const link of pageLinks) {
+          if (seen.has(link)) continue;
+          seen.add(link);
+          links.push(link);
+          added += 1;
+          if (links.length >= max) break;
+        }
+        if (added === 0) break;
+      }
+      const jobs = [];
+      for (const link of links.slice(0, max)) {
+        try {
+          const html = await toolkit.fetchText(link, options.timeoutMs);
+          jobs.push(normalizeJrecInDetail(html, source, toolkit, link, titles.get(link) || ""));
+        } catch {}
+      }
+      return jobs;
+    }
+  },
+  {
+    id: "daijob",
+    match(source) {
+      return source.adapter === "daijob" || hostMatches(source.url, /(^|\.)daijob\.com$/i);
+    },
+    async scrape(source, options, toolkit) {
+      const max = sourceMax(source, options, 500, 800);
+      const links = [];
+      const seen = new Set();
+      const pageCount = Math.ceil(max / 20) + 2;
+      for (let page = 1; page <= pageCount && links.length < max; page += 1) {
+        const url = pagedUrl(source, page);
+        const html = await toolkit.fetchText(url, options.timeoutMs);
+        const pageLinks = uniqueDetailLinks(html, url, /\/jobs\/detail\/\d+/i);
+        let added = 0;
+        for (const link of pageLinks) {
+          if (seen.has(link)) continue;
+          seen.add(link);
+          links.push(link);
+          added += 1;
+          if (links.length >= max) break;
+        }
+        if (!pageLinks.length || added === 0) break;
+      }
+      return scrapeDetailLinks(links.slice(0, max), source, options, toolkit, "daijob");
+    }
+  },
+  {
+    id: "boss-zhipin",
+    match(source) {
+      return source.adapter === "boss-zhipin" || hostMatches(source.url, /(^|\.)zhipin\.com$/i);
+    },
+    async scrape(source, options, toolkit) {
+      return scrapeHtmlCareerAdapter(source, options, toolkit, "boss-zhipin", /(\/job_detail\/|\/gongsi\/job\/)/i);
+    }
+  },
+  {
+    id: "58",
+    match(source) {
+      return source.adapter === "58" || hostMatches(source.url, /(^|\.)58\.com$/i);
+    },
+    async scrape(source, options, toolkit) {
+      return scrapeHtmlCareerAdapter(source, options, toolkit, "58", /(\/zhaopin\/|\/job\/|\.shtml)/i);
+    }
+  },
+  {
+    id: "1111",
+    match(source) {
+      return source.adapter === "1111" || hostMatches(source.url, /(^|\.)1111\.com\.tw$/i);
+    },
+    async scrape(source, options, toolkit) {
+      const max = sourceMax(source, options, 800, 10000);
+      const seen = new Set();
+      const jobs = [];
+      const baseUrl = normalizeUrl(source.url || "https://www.1111.com.tw/search/job?page=1");
+      const keyword = cleanText(source.keyword || "");
+      if (!baseUrl) throw new Error("1111 source needs a public search URL.");
+      const startPage = Number(new URL(baseUrl).searchParams.get("page") || 1) || 1;
+      const pageCap = startPage + Math.ceil(max / 10) + 8;
+      for (let page = startPage; page < pageCap && jobs.length < max; page += 1) {
+        const parsed = new URL(baseUrl);
+        parsed.searchParams.set("page", String(page));
+        if (keyword) parsed.searchParams.set("ks", keyword);
+        const pageUrl = parsed.href;
+        const html = await fetch1111Html(pageUrl, options.timeoutMs);
+        const pageJobs = extract1111Cards(html, pageUrl, source, toolkit);
+        if (!pageJobs.length) break;
+        let added = 0;
+        for (const job of pageJobs) {
+          const key = normalizeUrl(job.url).toLowerCase();
+          if (!key || seen.has(key)) continue;
+          seen.add(key);
+          jobs.push(job);
+          added += 1;
+          if (jobs.length >= max) break;
+        }
+        if (added === 0) break;
+      }
+      return jobs;
+    }
+  },
   {
     id: "greenhouse",
     match(source) {

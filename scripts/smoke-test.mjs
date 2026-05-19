@@ -34,6 +34,51 @@ const MIME_TYPES = {
   ".md": "text/markdown; charset=utf-8"
 };
 
+const CAREER_OPS_SNAPSHOT_FIXTURE_JOBS = Array.from({ length: 72 }, (_, index) => {
+  const group = index % 3;
+  const common = {
+    jobKey: `smoke-career-ops-${index + 1}`,
+    company: group === 0 ? "Acme AI" : group === 1 ? "Design Data Labs" : "OpsWorks",
+    url: `https://example.com/jobs/smoke-${index + 1}`,
+    location: "Taipei / Remote",
+    sourceType: "smoke-fixture",
+    isExpired: false
+  };
+  if (group === 0) {
+    return {
+      ...common,
+      title: `Frontend Engineer ${index + 1}`,
+      description: "Build dashboard interfaces with JavaScript, React, CSS, Figma, accessibility, analytics, API integrations, and design system patterns for product teams."
+    };
+  }
+  if (group === 1) {
+    return {
+      ...common,
+      url: `https://example.com/jobs/product-${index + 1}?ref=designer's-choice`,
+      title: `Product Experience Developer ${index + 1}`,
+      description: "Create customer-facing dashboard workflows with JavaScript, React, CSS, Figma prototypes, accessibility reviews, analytics instrumentation, and API integrations."
+    };
+  }
+  return {
+    ...common,
+    title: `Operations Coordinator ${index + 1}`,
+    description: "Coordinate hiring operations, stakeholder communication, process documentation, vendor follow-up, calendar logistics, and reporting for business teams."
+  };
+});
+
+const CAREER_OPS_SNAPSHOT_FIXTURE = {
+  source: "smoke-career-ops-snapshot",
+  generatedAt: "2026-05-19T00:00:00.000Z",
+  extractedAt: "2026-05-19T00:00:00.000Z",
+  jobCount: CAREER_OPS_SNAPSHOT_FIXTURE_JOBS.length,
+  shards: [{ path: "jobs-0001.json" }]
+};
+
+const CAREER_OPS_SNAPSHOT_SHARD_FIXTURE = {
+  source: "smoke-career-ops-snapshot-shard",
+  jobs: CAREER_OPS_SNAPSHOT_FIXTURE_JOBS
+};
+
 const SUPABASE_STUB_SOURCE = `
   (() => {
     const authListeners = [];
@@ -431,6 +476,22 @@ async function main() {
       });
       return;
     }
+    if (/\/data\/app\/career-ops-snapshot\/manifest\.json(?:[?#]|$)/.test(url)) {
+      request.respond({
+        status: 200,
+        contentType: "application/json; charset=utf-8",
+        body: JSON.stringify(CAREER_OPS_SNAPSHOT_FIXTURE)
+      });
+      return;
+    }
+    if (/\/data\/app\/career-ops-snapshot\/jobs-0001\.json(?:[?#]|$)/.test(url)) {
+      request.respond({
+        status: 200,
+        contentType: "application/json; charset=utf-8",
+        body: JSON.stringify(CAREER_OPS_SNAPSHOT_SHARD_FIXTURE)
+      });
+      return;
+    }
     request.continue();
   });
 
@@ -780,14 +841,18 @@ async function main() {
 
       const initialHome = await page.evaluate(() => ({
         title: document.getElementById("homeStatusTitle")?.textContent || "",
+        label: document.getElementById("homeProgressLabel")?.textContent || "",
         progress: document.getElementById("homeProgressValue")?.textContent || "",
+        note: document.getElementById("homeProgressNote")?.textContent || "",
         sync: document.getElementById("homeSyncState")?.textContent || "",
         cv: document.getElementById("homeTaskCvState")?.textContent || "",
         portfolio: document.getElementById("homeTaskPortfolioState")?.textContent || "",
         gsat: document.getElementById("homeTaskGsatState")?.textContent || ""
       }));
       assert.match(initialHome.title, /功能概覽/);
+      assert.match(initialHome.label, /各功能獨立判斷/);
       assert.match(initialHome.progress, /登入後/);
+      assert.match(initialHome.note, /不會把所有工具加總/);
       assert.match(initialHome.sync, /未登入/);
       assert.match(initialHome.cv, /可使用/);
       assert.match(initialHome.portfolio, /可使用/);
@@ -842,6 +907,7 @@ async function main() {
       await page.waitForFunction(() => /登入後/.test(document.getElementById("homeProgressValue")?.textContent || ""));
       const signedOutUpdatedHome = await page.evaluate(() => ({
         title: document.getElementById("homeStatusTitle")?.textContent || "",
+        label: document.getElementById("homeProgressLabel")?.textContent || "",
         progress: document.getElementById("homeProgressValue")?.textContent || "",
         sync: document.getElementById("homeSyncState")?.textContent || "",
         cv: document.getElementById("homeTaskCvState")?.textContent || "",
@@ -849,6 +915,7 @@ async function main() {
         gsat: document.getElementById("homeTaskGsatState")?.textContent || ""
       }));
       assert.match(signedOutUpdatedHome.title, /功能概覽/);
+      assert.match(signedOutUpdatedHome.label, /各功能獨立判斷/);
       assert.match(signedOutUpdatedHome.progress, /登入後/);
       assert.match(signedOutUpdatedHome.sync, /未登入/);
       assert.match(signedOutUpdatedHome.cv, /可使用/);
@@ -864,22 +931,32 @@ async function main() {
         });
       });
       await page.waitForFunction(() => {
-        const value = Number.parseInt(document.getElementById("homeProgressValue")?.textContent || "0", 10);
-        return value >= 85;
+        const values = ["homeTaskCvPercent", "homeTaskPortfolioPercent", "homeTaskGsatPercent"]
+          .map((id) => Number.parseInt(document.getElementById(id)?.textContent || "0", 10));
+        return values.every((value) => value >= 80);
       });
       const signedInHome = await page.evaluate(() => ({
         title: document.getElementById("homeStatusTitle")?.textContent || "",
+        label: document.getElementById("homeProgressLabel")?.textContent || "",
         progress: document.getElementById("homeProgressValue")?.textContent || "",
         sync: document.getElementById("homeSyncState")?.textContent || "",
         cv: document.getElementById("homeTaskCvState")?.textContent || "",
+        cvPercent: document.getElementById("homeTaskCvPercent")?.textContent || "",
         portfolio: document.getElementById("homeTaskPortfolioState")?.textContent || "",
-        gsat: document.getElementById("homeTaskGsatState")?.textContent || ""
+        portfolioPercent: document.getElementById("homeTaskPortfolioPercent")?.textContent || "",
+        gsat: document.getElementById("homeTaskGsatState")?.textContent || "",
+        gsatPercent: document.getElementById("homeTaskGsatPercent")?.textContent || ""
       }));
-      assert.match(signedInHome.title, /目前進度/);
+      assert.match(signedInHome.title, /功能完整度/);
+      assert.match(signedInHome.label, /各功能獨立判斷/);
+      assert.match(signedInHome.progress, /分開判斷/);
       assert.match(signedInHome.sync, /雲端已連線/);
       assert.match(signedInHome.cv, /資料完整/);
+      assert.match(signedInHome.cvPercent, /100%/);
       assert.match(signedInHome.portfolio, /已整理/);
+      assert.match(signedInHome.portfolioPercent, /100%/);
       assert.match(signedInHome.gsat, /可分析/);
+      assert.match(signedInHome.gsatPercent, /100%/);
 
       await page.click("[data-language-toggle]");
       await page.waitForFunction(() => /Finish one sendable/.test(document.querySelector(".home-title")?.textContent || ""));
@@ -1215,6 +1292,75 @@ async function main() {
         return section && section.style.display !== "none" && /Acme AI|DataWorks/.test(jd?.value || "");
       });
 
+      await page.click("[data-career-ops-tab='deepfit']");
+      await page.waitForFunction(() => {
+        const area = document.getElementById("careerDeepFitArea");
+        return area && /尚未產生你的 Deep Fit 分析/.test(area.textContent || "");
+      });
+      const initialDeepFitAudit = await page.evaluate(() => {
+        const area = document.getElementById("careerDeepFitArea");
+        return {
+          activeTotalResults: window.CV_CAREER_OPS_DEEP_FIT?.summary?.totalResults || 0,
+          deepFitSource: window._careerOpsDeepFitSource || "",
+          text: area?.textContent || ""
+        };
+      });
+      assert.equal(initialDeepFitAudit.activeTotalResults, 0, "未上傳履歷前不應顯示內建 Deep Fit 結果");
+      assert.equal(initialDeepFitAudit.deepFitSource, "", "未上傳履歷前不應標記 Deep Fit 來源");
+      assert.doesNotMatch(initialDeepFitAudit.text, /比對總數|JAPAN AI|Product Manager/, "未上傳履歷前不應渲染內建快照職缺");
+
+      await page.evaluate(() => {
+        window.CV_CAREER_OPS_DEEP_FIT = {
+          summary: { totalResults: 1, layerA: 1, layerB: 0, layerC: 0 },
+          layerA: [{
+            company: "Previous Co",
+            title: "Previous Deep Fit",
+            score: 88,
+            grade: "A",
+            decision: "pursue selectively",
+            thesis: "Previously active user-generated result."
+          }],
+          layerB: [],
+          layerC: []
+        };
+        window._careerOpsDeepFitSource = "user-upload";
+        window.careerOpsSetTab("upload");
+      });
+      await page.click("#careerLoadStaticDeepFit");
+      const staticSnapshotLoadAudit = await page.evaluate(() => ({
+        activeTab: document.querySelector(".career-ops-tab.active")?.dataset.careerOpsTab || "",
+        activeTotalResults: window.CV_CAREER_OPS_DEEP_FIT?.summary?.totalResults || 0,
+        deepFitSource: window._careerOpsDeepFitSource || "",
+        status: document.getElementById("careerStaticSnapshotStatus")?.textContent || "",
+        viewVisible: getComputedStyle(document.getElementById("careerViewStaticDeepFit")).display !== "none"
+      }));
+      assert.equal(staticSnapshotLoadAudit.activeTab, "upload", "讀取靜態快照不應直接切到 Deep Fit");
+      assert.equal(staticSnapshotLoadAudit.activeTotalResults, 1, "讀取靜態快照不應覆蓋目前的 Deep Fit 結果");
+      assert.equal(staticSnapshotLoadAudit.deepFitSource, "user-upload", "讀取靜態快照不應改變目前結果來源");
+      assert.match(staticSnapshotLoadAudit.status, /尚未切換畫面/);
+      assert.equal(staticSnapshotLoadAudit.viewVisible, true, "讀取後應顯示查看快照結果按鈕");
+      await page.click("#careerViewStaticDeepFit");
+      await page.waitForFunction(() => {
+        const activeTab = document.querySelector(".career-ops-tab.active")?.dataset.careerOpsTab || "";
+        const area = document.getElementById("careerDeepFitArea");
+        return activeTab === "deepfit" && /本機靜態快照結果/.test(area?.textContent || "");
+      });
+      const staticSnapshotViewAudit = await page.evaluate(() => ({
+        activeTab: document.querySelector(".career-ops-tab.active")?.dataset.careerOpsTab || "",
+        activeTotalResults: window.CV_CAREER_OPS_DEEP_FIT?.summary?.totalResults || 0,
+        deepFitSource: window._careerOpsDeepFitSource || ""
+      }));
+      assert.equal(staticSnapshotViewAudit.activeTab, "deepfit");
+      assert.notEqual(staticSnapshotViewAudit.activeTotalResults, 1, "查看快照結果才應切換到靜態 Deep Fit");
+      assert.equal(staticSnapshotViewAudit.deepFitSource, "static");
+
+      await page.evaluate(() => {
+        window.CV_CAREER_OPS_JOBS = { source: "fallback", jobs: [] };
+        window.CV_STUDIO_CONFIG = {
+          ...(window.CV_STUDIO_CONFIG || {}),
+          careerOpsSnapshotManifestUrl: `${window.location.origin}/data/app/career-ops-snapshot/manifest.json`
+        };
+      });
       const localDeepFitAudit = await page.evaluate(async () => {
         const originalUser = window.cvStudioState.user;
         window.cvStudioState.user = null;
@@ -1233,19 +1379,33 @@ async function main() {
             totalResults: result.summary?.totalResults || 0,
             layerA: result.layerA?.length || 0,
             layerB: result.layerB?.length || 0,
-            layerC: result.layerC?.length || 0
+            layerC: result.layerC?.length || 0,
+            snapshotStorageMode: window.CV_CAREER_OPS_JOBS?.snapshotStorageMode || ""
           };
         } finally {
           window.cvStudioState.user = originalUser;
         }
       });
       assert.equal(localDeepFitAudit.engine, "frontend-local-heuristic");
+      assert.equal(localDeepFitAudit.snapshotStorageMode, "sharded");
       assert.ok(localDeepFitAudit.totalResults >= 50, "本機 Deep Fit 應產生 50 筆以上結果");
       assert.ok(localDeepFitAudit.layerA > 0, "本機 Deep Fit 應產生 Layer A 結果");
+      assert.ok(localDeepFitAudit.layerB > 0, "本機 Deep Fit 應產生 Layer B 結果");
       await page.waitForFunction(() => {
         const area = document.getElementById("careerDeepFitArea");
         return area && /比對總數/.test(area.textContent || "") && /深度評估/.test(area.textContent || "");
       });
+      const layerBLinkAudit = await page.evaluate(() => {
+        const row = document.querySelector("#careerDeepFitArea .career-match-row");
+        return {
+          tagName: row?.tagName || "",
+          href: row?.getAttribute("href") || "",
+          onclick: row?.getAttribute("onclick") || ""
+        };
+      });
+      assert.equal(layerBLinkAudit.tagName, "A", "Layer B 職缺列應使用安全連結元素");
+      assert.match(layerBLinkAudit.href, /^https:\/\/example\.com\/jobs\//);
+      assert.equal(layerBLinkAudit.onclick, "", "Layer B 職缺列不應使用 inline onclick");
     });
 
     await withStep("GSAT 雲端同步逾時 fallback", async () => {

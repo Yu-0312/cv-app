@@ -24,6 +24,7 @@ Options:
   --profile <file>          Profile JSON. Default: ${DEFAULT_PROFILE}
   --strategy <file>         Source strategy JSON. Default: data/career-ops-source-strategy.json if present
   --rubric <file>           Rubric JSON. Default: ${DEFAULT_RUBRIC}
+  --market <code>           Include one market during source build/flex. Can be repeated
   --search-results <file>   Curated search results file. Can be repeated
   --health-threshold <n>    Expiry ratio that triggers auto re-scrape (0-1). Default: 0.30
   --skip-health             Skip job health monitor check
@@ -50,6 +51,7 @@ function parseArgs(argv) {
     profile: DEFAULT_PROFILE,
     strategy: fs.existsSync("data/career-ops-source-strategy.json") ? "data/career-ops-source-strategy.json" : "",
     rubric: DEFAULT_RUBRIC,
+    markets: [],
     searchResults: [],
     healthThreshold: 0.30,
     skipHealth: false,
@@ -74,6 +76,10 @@ function parseArgs(argv) {
     else if (token === "--profile") args.profile = argv[++i] || args.profile;
     else if (token === "--strategy") args.strategy = argv[++i] || "";
     else if (token === "--rubric") args.rubric = argv[++i] || args.rubric;
+    else if (token === "--market") {
+      const market = String(argv[++i] || "").trim().toLowerCase();
+      if (market) args.markets.push(market);
+    }
     else if (token === "--search-results") args.searchResults.push(argv[++i] || "");
     else if (token === "--health-threshold") args.healthThreshold = Math.min(1, Math.max(0, Number.parseFloat(argv[++i] || "0.30") || 0.30));
     else if (token === "--skip-health") args.skipHealth = true;
@@ -104,6 +110,10 @@ function run(label, command, args) {
   }
 }
 
+function marketArgs(markets) {
+  return markets.flatMap((market) => ["--market", market]);
+}
+
 function main() {
   const args = parseArgs(process.argv.slice(2));
   if (args.help) return printHelp();
@@ -125,7 +135,8 @@ function main() {
       "scripts/career-ops-build-sources.mjs",
       "--strategy", args.strategy,
       "--out", "data/career-ops-sources.json",
-      "--report-out", "data/app/career-ops-source-strategy-report.md"
+      "--report-out", "data/app/career-ops-source-strategy-report.md",
+      ...marketArgs(args.markets)
     ]);
   }
 
@@ -136,7 +147,8 @@ function main() {
       "--profile", args.profile,
       "--rules", "data/career-ops-source-flex.json",
       "--out", "data/career-ops-sources.json",
-      "--report-out", "data/app/career-ops-source-flex-report.md"
+      "--report-out", "data/app/career-ops-source-flex-report.md",
+      ...marketArgs(args.markets)
     ]);
   }
 
