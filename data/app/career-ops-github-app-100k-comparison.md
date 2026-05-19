@@ -1,9 +1,12 @@
 # 100k Resume Scoring: CV App vs GitHub career-ops
 
-Generated: 2026-05-18T13:00:18.119Z
+Generated: 2026-05-19T03:22:28.991Z
 
 ## Execution
 - Profiles scored: 100000
+- Snapshot jobs: 93093
+- Snapshot app-eligible jobs: 92430
+- App tracker limit: 1000
 - App imported jobs: 1000
 - App eligible jobs compared: 998
 - Pairwise scoring rows: 99800000
@@ -90,4 +93,5 @@ Generated: 2026-05-18T13:00:18.119Z
 - Original GitHub career-ops is prompt/agent driven and does not ship a bulk 100k profile scoring API.
 - This run uses the upstream public 1-5 rubric shape as a deterministic scorer so the full 100k corpus can be evaluated locally and repeatably.
 - The comparison uses the same app-eligible job set for both scorers to isolate scoring/function differences from data-source differences.
+- Per-profile Traditional Chinese JSONL output writes one resume result per line.
 - No pairwise CSV was written because 100000 profiles x app-eligible jobs would create a very large row-level artifact.

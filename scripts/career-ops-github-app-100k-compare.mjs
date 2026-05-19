@@ -4,13 +4,18 @@ import fs from "node:fs";
 import fsp from "node:fs/promises";
 import path from "node:path";
 import { spawnSync } from "node:child_process";
+import { once } from "node:events";
+import { finished } from "node:stream/promises";
+import { createGzip } from "node:zlib";
 
 const DEFAULT_MANIFEST = "data/career-ops-profiles/manifest.json";
 const DEFAULT_JOBS = "data/app/career-ops-jobs.json";
 const DEFAULT_OUT = "data/app/career-ops-github-app-100k-comparison.json";
 const DEFAULT_REPORT_OUT = "data/app/career-ops-github-app-100k-comparison.md";
+const DEFAULT_ZH_REPORT_OUT = "data/app/career-ops-github-app-100k-comparison.zh-TW.md";
+const DEFAULT_PROFILE_RESULTS_OUT = "data/app/career-ops-github-app-100k-profile-results.zh-TW.jsonl.gz";
 const DEFAULT_UPSTREAM_REPO = "/tmp/career-ops-upstream";
-const APP_TRACKER_LIMIT = 1000;
+const DEFAULT_APP_TRACKER_LIMIT = 1000;
 
 const SCORE_WEIGHTS = { cvMatch: 0.25, northStar: 0.20, compensation: 0.15, culture: 0.15, redFlags: 0.15, effort: 0.10 };
 const GITHUB_WEIGHTS = { cvMatch: 0.30, northStar: 0.25, compensation: 0.15, culture: 0.15, redFlags: 0.15 };
@@ -60,9 +65,16 @@ Options:
   --jobs <file>              CV Studio Career Ops jobs snapshot. Default: ${DEFAULT_JOBS}
   --limit-profiles <n>       Profiles to score. Default: all records in manifest
   --limit-jobs <n>           Limit app-eligible jobs after import filtering
+  --app-tracker-limit <n>    Simulate frontend tracker import cap. Default: ${DEFAULT_APP_TRACKER_LIMIT}
+  --all-jobs                 Score every app-eligible job in the snapshot
   --upstream-repo <path>     Local clone of santifer/career-ops. Default: ${DEFAULT_UPSTREAM_REPO}
   --out <file>               Summary JSON output. Default: ${DEFAULT_OUT}
   --report-out <file>        Markdown report output. Default: ${DEFAULT_REPORT_OUT}
+  --zh-report-out <file>     Traditional Chinese Markdown report. Default: ${DEFAULT_ZH_REPORT_OUT}
+  --profile-results-out <file>
+                              Per-profile Traditional Chinese JSONL or JSONL.GZ output.
+                              Default: ${DEFAULT_PROFILE_RESULTS_OUT}
+  --no-profile-results       Skip per-profile output
   --help                     Show this help
 `);
 }
@@ -73,9 +85,12 @@ function parseArgs(argv) {
     jobs: DEFAULT_JOBS,
     limitProfiles: 0,
     limitJobs: 0,
+    appTrackerLimit: DEFAULT_APP_TRACKER_LIMIT,
     upstreamRepo: DEFAULT_UPSTREAM_REPO,
     out: DEFAULT_OUT,
-    reportOut: DEFAULT_REPORT_OUT
+    reportOut: DEFAULT_REPORT_OUT,
+    zhReportOut: DEFAULT_ZH_REPORT_OUT,
+    profileResultsOut: DEFAULT_PROFILE_RESULTS_OUT
   };
   for (let i = 0; i < argv.length; i += 1) {
     const token = argv[i];
@@ -84,9 +99,14 @@ function parseArgs(argv) {
     else if (token === "--jobs") args.jobs = argv[++i] || DEFAULT_JOBS;
     else if (token === "--limit-profiles") args.limitProfiles = Number(argv[++i] || 0);
     else if (token === "--limit-jobs") args.limitJobs = Number(argv[++i] || 0);
+    else if (token === "--app-tracker-limit") args.appTrackerLimit = Number(argv[++i] || DEFAULT_APP_TRACKER_LIMIT);
+    else if (token === "--all-jobs") args.appTrackerLimit = 0;
     else if (token === "--upstream-repo") args.upstreamRepo = argv[++i] || DEFAULT_UPSTREAM_REPO;
     else if (token === "--out") args.out = argv[++i] || DEFAULT_OUT;
     else if (token === "--report-out") args.reportOut = argv[++i] || DEFAULT_REPORT_OUT;
+    else if (token === "--zh-report-out") args.zhReportOut = argv[++i] || DEFAULT_ZH_REPORT_OUT;
+    else if (token === "--profile-results-out") args.profileResultsOut = argv[++i] || DEFAULT_PROFILE_RESULTS_OUT;
+    else if (token === "--no-profile-results") args.profileResultsOut = "";
     else throw new Error(`Unknown argument: ${token}`);
   }
   return args;
@@ -356,9 +376,13 @@ function appJobEligible(job) {
   return !job.isExpired && String(job.description || "").replace(String(job.url || ""), "").trim().length >= 80;
 }
 
-function prepareJobs(jobsPayload, limitJobs) {
+function prepareJobs(jobsPayload, limitJobs, appTrackerLimit) {
   const allSnapshotJobs = Array.isArray(jobsPayload.jobs) ? jobsPayload.jobs : [];
-  const importedJobs = allSnapshotJobs.slice(0, APP_TRACKER_LIMIT).map(normalizeAppJob);
+  const normalizedJobs = allSnapshotJobs.map(normalizeAppJob);
+  const importLimit = Number.isFinite(appTrackerLimit) && appTrackerLimit > 0
+    ? Math.floor(appTrackerLimit)
+    : 0;
+  const importedJobs = importLimit > 0 ? normalizedJobs.slice(0, importLimit) : normalizedJobs;
   let jobs = importedJobs.filter(appJobEligible);
   if (Number.isFinite(limitJobs) && limitJobs > 0) jobs = jobs.slice(0, limitJobs);
   const skillCounts = new Map();
@@ -398,7 +422,9 @@ function prepareJobs(jobsPayload, limitJobs) {
     jobs: prepared,
     coverage: {
       snapshotJobs: allSnapshotJobs.length,
-      snapshotActiveJobs: allSnapshotJobs.filter((job) => !job.isExpired).length,
+      snapshotActiveJobs: normalizedJobs.filter((job) => !job.isExpired).length,
+      snapshotEligibleJobs: normalizedJobs.filter(appJobEligible).length,
+      appTrackerLimit: importLimit || null,
       appImportedJobs: importedJobs.length,
       appActiveJobs: importedJobs.filter((job) => !job.isExpired).length,
       appEligibleJobs: prepared.length
@@ -529,6 +555,22 @@ function average(value, count, digits = 2) {
   return Math.round((value / count) * factor) / factor;
 }
 
+function formatNumber(value) {
+  return new Intl.NumberFormat("en-US").format(Number(value || 0));
+}
+
+function signed(value) {
+  return `${Number(value) >= 0 ? "+" : ""}${value}`;
+}
+
+function pct(value, count) {
+  return count ? Math.round((value / count) * 10000) / 100 : 0;
+}
+
+function mdCell(value) {
+  return String(value ?? "").replace(/\|/g, "\\|");
+}
+
 function pushTop(list, item, limit) {
   const abs = item.absRatingDelta;
   if (list.length < limit) {
@@ -539,6 +581,20 @@ function pushTop(list, item, limit) {
   if (abs <= list[list.length - 1].absRatingDelta) return;
   list[list.length - 1] = item;
   list.sort((a, b) => b.absRatingDelta - a.absRatingDelta || b.githubRating - a.githubRating);
+}
+
+function pushTopScoredJob(list, item, limit, scoreKey) {
+  if (!limit) return;
+  if (list.length < limit) {
+    list.push(item);
+    list.sort((a, b) => b[scoreKey] - a[scoreKey] || b.appScore - a.appScore || a.title.localeCompare(b.title));
+    return;
+  }
+  const last = list[list.length - 1];
+  if (item[scoreKey] < last[scoreKey]) return;
+  if (item[scoreKey] === last[scoreKey] && item.appScore <= last.appScore) return;
+  list[list.length - 1] = item;
+  list.sort((a, b) => b[scoreKey] - a[scoreKey] || b.appScore - a.appScore || a.title.localeCompare(b.title));
 }
 
 function addJobAgg(map, job, appScore, githubScore100, appAction, githubAction) {
@@ -597,9 +653,215 @@ function summarizeRoles(map) {
     .slice(0, 30);
 }
 
+function labelGithubRecommendation(value) {
+  return {
+    "apply-immediately": "立即投遞",
+    "worth-applying": "值得投遞",
+    "selective-only": "選擇性投遞",
+    "recommend-against": "不建議投遞"
+  }[value] || String(value || "");
+}
+
+function labelBlockG(value) {
+  return {
+    "High Confidence": "高可信",
+    "Proceed with Caution": "謹慎確認",
+    "Suspicious": "可疑，建議略過"
+  }[value] || String(value || "");
+}
+
+function compactJobForProfile(job, result, delta100, ratingDelta) {
+  return {
+    jobId: job.jobKey,
+    company: job.company,
+    title: job.title,
+    location: job.location,
+    url: job.url,
+    appScore: result.appScore,
+    appRating: result.appRating,
+    appGrade: result.appGrade,
+    appRecommendation: result.appRecommendation,
+    githubScore100: result.githubScore100,
+    githubRating: result.githubRating,
+    githubGrade: result.githubGrade,
+    githubRecommendation: result.githubRecommendation,
+    delta100,
+    ratingDelta,
+    absRatingDelta: Math.abs(ratingDelta),
+    appBlockG: result.appBlockG,
+    githubBlockG: result.githubBlockG
+  };
+}
+
+function jobForZhOutput(item) {
+  return {
+    "職缺ID": item.jobId,
+    "公司": item.company,
+    "職缺": item.title,
+    "地點": item.location,
+    "網址": item.url,
+    "CV App分數": item.appScore,
+    "CV App評等": item.appRating,
+    "CV App等級": item.appGrade,
+    "CV App建議": item.appRecommendation,
+    "GitHub分數": item.githubScore100,
+    "GitHub評等": item.githubRating,
+    "GitHub等級": item.githubGrade,
+    "GitHub建議": labelGithubRecommendation(item.githubRecommendation),
+    "分數差": item.delta100,
+    "評等差": item.ratingDelta,
+    "App風險判斷": labelBlockG(item.appBlockG),
+    "GitHub風險判斷": labelBlockG(item.githubBlockG)
+  };
+}
+
+function createProfileStats(rows) {
+  return {
+    rows,
+    appScoreSum: 0,
+    githubScoreSum: 0,
+    appRatingSum: 0,
+    githubRatingSum: 0,
+    delta100Sum: 0,
+    absDelta100Sum: 0,
+    deltaRatingSum: 0,
+    absDeltaRatingSum: 0,
+    maxAbsDeltaRating: 0,
+    ratingExact: 0,
+    withinPoint1: 0,
+    withinPoint3: 0,
+    withinPoint5: 0,
+    gradeMatch: 0,
+    actionMatch: 0,
+    blockGMatch: 0,
+    appGrades: new Map(),
+    githubGrades: new Map(),
+    appRec: new Map(),
+    githubRec: new Map(),
+    topDivergences: [],
+    topAppJobs: [],
+    topGithubJobs: []
+  };
+}
+
+function updateProfileStats(stats, profile, job, result, delta100, ratingDelta, compactJob) {
+  const absDelta100 = Math.abs(delta100);
+  const absRatingDelta = Math.abs(ratingDelta);
+  stats.appScoreSum += result.appScore;
+  stats.githubScoreSum += result.githubScore100;
+  stats.appRatingSum += result.appRating;
+  stats.githubRatingSum += result.githubRating;
+  stats.delta100Sum += delta100;
+  stats.absDelta100Sum += absDelta100;
+  stats.deltaRatingSum += ratingDelta;
+  stats.absDeltaRatingSum += absRatingDelta;
+  if (absRatingDelta > stats.maxAbsDeltaRating) stats.maxAbsDeltaRating = absRatingDelta;
+  if (ratingDelta === 0) stats.ratingExact += 1;
+  if (absRatingDelta <= 0.1) stats.withinPoint1 += 1;
+  if (absRatingDelta <= 0.3) stats.withinPoint3 += 1;
+  if (absRatingDelta <= 0.5) stats.withinPoint5 += 1;
+  if (result.appGrade === result.githubGrade) stats.gradeMatch += 1;
+  if (result.appAction === result.githubAction) stats.actionMatch += 1;
+  if (result.appBlockG === result.githubBlockG) stats.blockGMatch += 1;
+  increment(stats.appGrades, result.appGrade);
+  increment(stats.githubGrades, result.githubGrade);
+  increment(stats.appRec, result.appRecommendation);
+  increment(stats.githubRec, result.githubRecommendation);
+  pushTop(stats.topDivergences, {
+    profileId: profile.id,
+    profileRole: profile.role,
+    jobId: job.jobKey,
+    company: job.company,
+    title: job.title,
+    appRating: result.appRating,
+    githubRating: result.githubRating,
+    ratingDelta,
+    absRatingDelta,
+    appScore: result.appScore,
+    githubScore100: result.githubScore100,
+    appGrade: result.appGrade,
+    githubGrade: result.githubGrade,
+    appRecommendation: result.appRecommendation,
+    githubRecommendation: result.githubRecommendation
+  }, 5);
+  pushTopScoredJob(stats.topAppJobs, compactJob, 5, "appScore");
+  pushTopScoredJob(stats.topGithubJobs, compactJob, 5, "githubScore100");
+}
+
+function profileResultZh(profile, stats) {
+  const rows = stats.rows;
+  return {
+    "履歷ID": profile.id,
+    "姓名": profile.name,
+    "目標職稱": profile.role,
+    "評分職缺數": rows,
+    "CV App": {
+      "平均分數": average(stats.appScoreSum, rows),
+      "平均評等": average(stats.appRatingSum, rows),
+      "等級分布": compactCounts(stats.appGrades),
+      "建議分布": compactCounts(stats.appRec),
+      "最佳職缺Top5": stats.topAppJobs.map(jobForZhOutput)
+    },
+    "GitHub career-ops": {
+      "平均分數": average(stats.githubScoreSum, rows),
+      "平均評等": average(stats.githubRatingSum, rows),
+      "等級分布": compactCounts(stats.githubGrades),
+      "建議分布": Object.fromEntries(Object.entries(compactCounts(stats.githubRec)).map(([key, value]) => [labelGithubRecommendation(key), value])),
+      "最佳職缺Top5": stats.topGithubJobs.map(jobForZhOutput)
+    },
+    "差距比較": {
+      "平均分數差_CVApp減GitHub": average(stats.delta100Sum, rows),
+      "平均絕對分數差": average(stats.absDelta100Sum, rows),
+      "平均評等差_CVApp減GitHub": average(stats.deltaRatingSum, rows),
+      "平均絕對評等差": average(stats.absDeltaRatingSum, rows),
+      "最大絕對評等差": Math.round(stats.maxAbsDeltaRating * 10) / 10,
+      "評等完全相同率": pct(stats.ratingExact, rows),
+      "評等差距0_1以內率": pct(stats.withinPoint1, rows),
+      "評等差距0_3以內率": pct(stats.withinPoint3, rows),
+      "等級相同率": pct(stats.gradeMatch, rows),
+      "投遞建議相同率": pct(stats.actionMatch, rows),
+      "BlockG風險判斷相同率": pct(stats.blockGMatch, rows),
+      "最大差距Top5": stats.topDivergences.map((item) => ({
+        "公司": item.company,
+        "職缺": item.title,
+        "CV App分數": item.appScore,
+        "CV App評等": item.appRating,
+        "CV App等級": item.appGrade,
+        "CV App建議": item.appRecommendation,
+        "GitHub分數": item.githubScore100,
+        "GitHub評等": item.githubRating,
+        "GitHub等級": item.githubGrade,
+        "GitHub建議": labelGithubRecommendation(item.githubRecommendation),
+        "評等差": item.ratingDelta
+      }))
+    }
+  };
+}
+
 async function ensureDir(filePath) {
   const dir = path.dirname(filePath);
   if (dir && dir !== ".") await fsp.mkdir(dir, { recursive: true });
+}
+
+function createJsonlWriter(filePath) {
+  if (!filePath) return null;
+  const output = fs.createWriteStream(filePath);
+  const gzip = filePath.endsWith(".gz") ? createGzip({ level: 6 }) : null;
+  const stream = gzip || output;
+  if (gzip) gzip.pipe(output);
+  return { filePath, output, stream };
+}
+
+async function writeJsonl(writer, value) {
+  if (!writer) return;
+  const ok = writer.stream.write(`${JSON.stringify(value)}\n`);
+  if (!ok) await once(writer.stream, "drain");
+}
+
+async function closeJsonlWriter(writer) {
+  if (!writer) return;
+  writer.stream.end();
+  await finished(writer.output);
 }
 
 function upstreamMetadata(repoPath) {
@@ -653,6 +915,9 @@ function renderReport(summary) {
     "",
     "## Execution",
     `- Profiles scored: ${summary.coverage.profileCount}`,
+    `- Snapshot jobs: ${summary.coverage.snapshotJobs}`,
+    `- Snapshot app-eligible jobs: ${summary.coverage.snapshotEligibleJobs}`,
+    `- App tracker limit: ${summary.coverage.appTrackerLimit || "none"}`,
     `- App imported jobs: ${summary.coverage.appImportedJobs}`,
     `- App eligible jobs compared: ${summary.coverage.appEligibleJobs}`,
     `- Pairwise scoring rows: ${summary.coverage.comparedRows}`,
@@ -709,7 +974,96 @@ function renderReport(summary) {
   ].join("\n");
 }
 
+function renderZhReport(summary) {
+  const d = summary.resultDifferences;
+  const coverage = summary.coverage;
+  const fullPoolRows = Number(coverage.profileCount || 0) * Number(coverage.snapshotEligibleJobs || 0);
+  return [
+    "# 10 萬份履歷評分比較：CV App vs GitHub career-ops",
+    "",
+    `產生時間：${summary.generatedAt}`,
+    "",
+    "## 執行範圍",
+    "",
+    `- 履歷資料：${formatNumber(coverage.profileCount)} 份，來自 \`${summary.inputs.manifest}\``,
+    `- 職缺快照：${formatNumber(coverage.snapshotJobs)} 筆，其中 ${formatNumber(coverage.snapshotEligibleJobs)} 筆符合 app 評分條件`,
+    `- App 等效匯入上限：${coverage.appTrackerLimit ? formatNumber(coverage.appTrackerLimit) : "無上限"}`,
+    `- 實際共同比較職缺：${formatNumber(coverage.appEligibleJobs)} 筆`,
+    `- 總配對評分列數：${formatNumber(coverage.comparedRows)}`,
+    `- 每份履歷分開結果：\`${summary.outputs.profileResults || "未產生"}\``,
+    `- GitHub career-ops：\`santifer/career-ops\` main，commit \`${summary.upstream.commit ? summary.upstream.commit.slice(0, 12) : "未找到"}\``,
+    "",
+    "## 結果差距",
+    "",
+    `- CV App 平均分：${summary.app.averageScore100}/100，換算 ${summary.app.averageRating5}/5`,
+    `- GitHub career-ops rubric-compatible 平均分：${summary.githubCareerOps.averageScore100}/100，換算 ${summary.githubCareerOps.averageRating5}/5`,
+    `- 平均差距：App ${d.averageDelta100 >= 0 ? "高" : "低"} ${Math.abs(d.averageDelta100)} 分，約${d.averageDeltaRating5 >= 0 ? "高" : "低"} ${Math.abs(d.averageDeltaRating5)} rating`,
+    `- 平均絕對差距：${d.averageAbsDelta100} 分，約 ${d.averageAbsDeltaRating5} rating`,
+    `- 最大 rating 差距：${d.maxAbsDeltaRating5}`,
+    `- rating 完全相同：${d.ratingExactMatchRate}%`,
+    `- rating 差距在 0.1 以內：${d.withinPoint1Rate}%`,
+    `- rating 差距在 0.3 以內：${d.withinPoint3Rate}%`,
+    `- rating 差距在 0.5 以內：${d.withinPoint5Rate}%`,
+    `- grade 相同：${d.gradeMatchRate}%`,
+    `- 投遞行動建議相同：${d.actionMatchRate}%`,
+    `- Block G 合法性/風險判斷相同：${d.blockGMatchRate}%`,
+    "",
+    "## 分布差異",
+    "",
+    "### CV App",
+    "",
+    `- 等級：${Object.entries(summary.app.gradeDistribution).map(([key, value]) => `${key} ${formatNumber(value)}`).join("、")}`,
+    `- 建議：${Object.entries(summary.app.recommendationDistribution).map(([key, value]) => `${key} ${formatNumber(value)}`).join("、")}`,
+    "",
+    "### GitHub career-ops rubric-compatible",
+    "",
+    `- 等級：${Object.entries(summary.githubCareerOps.gradeDistribution).map(([key, value]) => `${key} ${formatNumber(value)}`).join("、")}`,
+    `- 建議：${Object.entries(summary.githubCareerOps.recommendationDistribution).map(([key, value]) => `${labelGithubRecommendation(key)} ${formatNumber(value)}`).join("、")}`,
+    "",
+    "## 主要觀察",
+    "",
+    `- App 整體比 GitHub career-ops rubric-compatible scorer ${d.averageDelta100 >= 0 ? "樂觀" : "保守"}，平均差距 ${Math.abs(d.averageDelta100)}/100。`,
+    `- 兩者的分數尺度很接近，${d.withinPoint3Rate}% 配對落在 0.3 rating 差距以內。`,
+    `- 行動建議相同率是 ${d.actionMatchRate}%；差異主要來自 GitHub career-ops 對低於 4.0/5 的職缺較保守。`,
+    `- Block G 風險判斷相同率是 ${d.blockGMatchRate}%，代表兩邊對可疑職缺的規則沒有明顯分歧。`,
+    "",
+    "## 差距最大的職缺",
+    "",
+    ...d.jobsByAverageDelta.slice(0, 10).map((item) =>
+      `- ${item.company} / ${item.title}：App 平均${item.averageDelta100 >= 0 ? "高" : "低"} ${Math.abs(item.averageDelta100)} 分，行動建議不同 ${formatNumber(item.actionDiffCount)} 次`
+    ),
+    "",
+    "## 差距最大的履歷角色",
+    "",
+    ...d.rolesByAverageDelta.slice(0, 10).map((item) =>
+      `- ${item.role}：${formatNumber(item.profiles)} 份履歷、${formatNumber(item.rows)} 列評分，App 平均${item.averageDelta100 >= 0 ? "高" : "低"} ${Math.abs(item.averageDelta100)} 分`
+    ),
+    "",
+    "## 功能差距",
+    "",
+    "| 面向 | CV App | GitHub career-ops | 差異 |",
+    "|---|---|---|---|",
+    ...summary.featureDifferences.map((item) =>
+      `| ${mdCell(item.area)} | ${mdCell(item.app)} | ${mdCell(item.githubCareerOps)} | ${mdCell(item.difference)} |`
+    ),
+    "",
+    "## 全職缺限制",
+    "",
+    `目前快照不是剛好 100,000 個職缺，而是 ${formatNumber(coverage.snapshotJobs)} 筆，其中 ${formatNumber(coverage.snapshotEligibleJobs)} 筆符合評分條件。若用 ${formatNumber(coverage.profileCount)} 份履歷乘上全部符合條件職缺，會產生約 ${formatNumber(fullPoolRows)} 筆配對評分；本次為了對齊前台 app tracker 行為，使用 ${coverage.appTrackerLimit ? formatNumber(coverage.appTrackerLimit) : "全量"} 筆匯入上限後的共同職缺集合。`,
+    "",
+    "## 注意事項",
+    "",
+    "- 原版 GitHub career-ops 是 agent/prompt 工作流，沒有內建 10 萬份履歷的批量評分 API。",
+    "- 本次 GitHub 分數使用上游公開 1-5 rubric 形狀做 deterministic scorer，以便完整、可重跑地比較 10 萬份資料。",
+    "- 每份履歷的分開結果在 JSONL.GZ 中，每一行就是一份履歷的 App/GitHub 平均、差距、最佳職缺與最大差距職缺。"
+  ].join("\n");
+}
+
 function featureDifferences(coverage, upstream) {
+  const appCoverage = coverage.appTrackerLimit
+    ? `App tracker 上限是 ${coverage.appTrackerLimit} jobs；本次共同比較 ${coverage.appEligibleJobs} 筆 app-eligible jobs。`
+    : `本次使用全職缺模式，從 ${coverage.snapshotJobs} 筆快照中納入 ${coverage.appEligibleJobs} 筆 app-eligible jobs。`;
+
   return [
     {
       area: "資料模型",
@@ -719,7 +1073,7 @@ function featureDifferences(coverage, upstream) {
     },
     {
       area: "職缺 coverage",
-      app: `App tracker 上限是 ${APP_TRACKER_LIMIT} jobs；本次共同比較 ${coverage.appEligibleJobs} 筆 app-eligible jobs。`,
+      app: appCoverage,
       githubCareerOps: `上游模板目前約 ${upstream.portalTemplate.enabledTrackedCompanies}/${upstream.portalTemplate.trackedCompanies} enabled companies + ${upstream.portalTemplate.enabledSearchQueries}/${upstream.portalTemplate.searchQueries} enabled search queries，但 repo 不附即時 jobs snapshot。`,
       difference: "結果比較使用同一批 app jobs 以排除資料來源差；功能比較則列出上游 scan/pipeline 能力。"
     },
@@ -750,7 +1104,7 @@ async function main() {
 
   const [manifest, jobsPayload] = await Promise.all([readJson(args.manifest), readJson(args.jobs)]);
   const upstream = upstreamMetadata(args.upstreamRepo);
-  const { jobs, coverage: jobCoverage } = prepareJobs(jobsPayload, args.limitJobs);
+  const { jobs, coverage: jobCoverage } = prepareJobs(jobsPayload, args.limitJobs, args.appTrackerLimit);
   if (!jobs.length) throw new Error("No app-eligible jobs found.");
 
   const profileLimit = Number.isFinite(args.limitProfiles) && args.limitProfiles > 0
@@ -772,6 +1126,14 @@ async function main() {
     avoidHits: new Uint16Array(jobs.length)
   };
 
+  await Promise.all([
+    ensureDir(args.out),
+    ensureDir(args.reportOut),
+    ensureDir(args.zhReportOut),
+    args.profileResultsOut ? ensureDir(args.profileResultsOut) : Promise.resolve()
+  ]);
+  const profileResultsWriter = createJsonlWriter(args.profileResultsOut);
+
   const appGrades = new Map();
   const githubGrades = new Map();
   const appRec = new Map();
@@ -783,6 +1145,7 @@ async function main() {
   const topDivergences = [];
 
   let profileCount = 0;
+  let profileResultsWritten = 0;
   let comparedRows = 0;
   let appScoreSum = 0;
   let githubScoreSum = 0;
@@ -809,6 +1172,7 @@ async function main() {
       if (profileCount >= profileLimit) break;
       const profile = profileFromStructured(rawProfile, profileCount);
       const counts = scoreRowsForProfile(profile, jobs, presence, reusable);
+      const profileStats = createProfileStats(counts.n);
       profileCount += 1;
 
       for (let index = 0; index < counts.n; index += 1) {
@@ -818,6 +1182,7 @@ async function main() {
         const absDelta100 = Math.abs(delta100);
         const ratingDelta = Math.round((result.appRating - result.githubRating) * 10) / 10;
         const absRatingDelta = Math.abs(ratingDelta);
+        const compactJob = compactJobForProfile(job, result, delta100, ratingDelta);
 
         comparedRows += 1;
         appScoreSum += result.appScore;
@@ -845,6 +1210,7 @@ async function main() {
         increment(githubBlockG, result.githubBlockG);
         addJobAgg(jobsAgg, job, result.appScore, result.githubScore100, result.appAction, result.githubAction);
         addRoleAgg(rolesAgg, profile, result.appScore, result.githubScore100, result.appAction, result.githubAction);
+        updateProfileStats(profileStats, profile, job, result, delta100, ratingDelta, compactJob);
         pushTop(topDivergences, {
           profileId: profile.id,
           profileRole: profile.role,
@@ -863,10 +1229,14 @@ async function main() {
           githubRecommendation: result.githubRecommendation
         }, 50);
       }
+
+      await writeJsonl(profileResultsWriter, profileResultZh(profile, profileStats));
+      if (profileResultsWriter) profileResultsWritten += 1;
     }
     const elapsed = Math.round((Date.now() - startedAt) / 1000);
     console.log(`[career-ops] profiles ${profileCount}/${profileLimit} rows ${comparedRows} elapsed ${elapsed}s`);
   }
+  await closeJsonlWriter(profileResultsWriter);
 
   const rate = (value) => comparedRows ? Math.round((value / comparedRows) * 10000) / 100 : 0;
   const summary = {
@@ -881,11 +1251,14 @@ async function main() {
     },
     outputs: {
       json: args.out,
-      report: args.reportOut
+      report: args.reportOut,
+      zhReport: args.zhReportOut,
+      profileResults: args.profileResultsOut || ""
     },
     upstream,
     coverage: {
       profileCount,
+      profileResultsWritten,
       ...jobCoverage,
       comparedRows
     },
@@ -925,16 +1298,21 @@ async function main() {
       "Original GitHub career-ops is prompt/agent driven and does not ship a bulk 100k profile scoring API.",
       "This run uses the upstream public 1-5 rubric shape as a deterministic scorer so the full 100k corpus can be evaluated locally and repeatably.",
       "The comparison uses the same app-eligible job set for both scorers to isolate scoring/function differences from data-source differences.",
+      "Per-profile Traditional Chinese JSONL output writes one resume result per line.",
       "No pairwise CSV was written because 100000 profiles x app-eligible jobs would create a very large row-level artifact."
     ]
   };
 
-  await Promise.all([ensureDir(args.out), ensureDir(args.reportOut)]);
-  await fsp.writeFile(args.out, `${JSON.stringify(summary, null, 2)}\n`, "utf8");
-  await fsp.writeFile(args.reportOut, `${renderReport(summary)}\n`, "utf8");
+  await Promise.all([
+    fsp.writeFile(args.out, `${JSON.stringify(summary, null, 2)}\n`, "utf8"),
+    fsp.writeFile(args.reportOut, `${renderReport(summary)}\n`, "utf8"),
+    fsp.writeFile(args.zhReportOut, `${renderZhReport(summary)}\n`, "utf8")
+  ]);
   console.log(`[career-ops] compared ${comparedRows} row(s)`);
   console.log(`[career-ops] summary -> ${args.out}`);
   console.log(`[career-ops] report -> ${args.reportOut}`);
+  console.log(`[career-ops] zh report -> ${args.zhReportOut}`);
+  if (args.profileResultsOut) console.log(`[career-ops] per-profile zh jsonl -> ${args.profileResultsOut}`);
 }
 
 main().catch((error) => {
