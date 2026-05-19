@@ -79,9 +79,13 @@
     "career-ops:saas-worker": "node scripts/career-ops-saas-worker.mjs",
     "build": "node scripts/prepare-dist.mjs",
     "deploy:prepare": "npm run build",
-    "smoke:test": "npm run build && node scripts/smoke-test.mjs"
+    "smoke:test": "npm run build && node scripts/smoke-test.mjs",
+    "career-ops:upstream:import": "node scripts/career-ops-import-upstream-portals.mjs",
+    "career-ops:upstream:scrape": "node scripts/career-ops-worker.mjs --source data/career-ops-upstream-sources.json --json-out data/app/career-ops-upstream-jobs.json --js-out data/app/career-ops-upstream-jobs.js",
+    "career-ops:merge-pools": "node scripts/career-ops-merge-job-pools.mjs"
   },
   "devDependencies": {
+    "js-yaml": "^4.1.1",
     "puppeteer-core": "^24.43.0"
   }
 }

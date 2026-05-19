@@ -5927,6 +5927,885 @@
       }
     }
   </style>
+  <style id="app-redesign-2026">
+    /* ============================================================
+       CV Studio 2026 app shell
+       ============================================================ */
+    :root {
+      --bg: #eef3f5;
+      --bg-strong: #dde7ea;
+      --surface: #ffffff;
+      --surface-strong: #f8fafb;
+      --ink: #14212b;
+      --muted: #62727f;
+      --line: rgba(20, 33, 43, 0.12);
+      --accent: #0f766e;
+      --accent-2: #285a9f;
+      --accent-3: #c47a13;
+      --success: #16794c;
+      --danger: #b42335;
+      --shadow: 0 12px 28px rgba(20, 33, 43, 0.08);
+      --radius: 8px;
+      --paper: #ffffff;
+      --paper-line: #d9e1e5;
+    }
+
+    html {
+      background: var(--bg);
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans TC", "PingFang TC", sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      min-height: 100vh;
+    }
+
+    button,
+    input,
+    textarea,
+    select,
+    a.button-link {
+      font-family: inherit;
+    }
+
+    button,
+    a.button-link {
+      border-radius: 8px;
+      box-shadow: none;
+      transform: none;
+      transition: background 0.15s ease, border-color 0.15s ease, color 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    button:hover,
+    a.button-link:hover {
+      transform: none;
+      box-shadow: none;
+    }
+
+    button.primary,
+    button.secondary,
+    a.button-link.primary,
+    .home-action.primary,
+    .career-analyze-btn,
+    .gsat-analyze-btn {
+      background: var(--accent);
+      color: #fff;
+    }
+
+    button.secondary,
+    a.button-link.secondary,
+    .home-action.secondary {
+      background: var(--accent-2);
+      color: #fff;
+    }
+
+    button.soft,
+    button.ghost,
+    a.button-link.soft,
+    .home-action.tertiary {
+      background: var(--surface);
+      border-color: var(--line);
+      color: var(--ink);
+    }
+
+    button.primary:hover,
+    button.secondary:hover,
+    a.button-link.primary:hover,
+    a.button-link.secondary:hover,
+    .home-action.primary:hover,
+    .home-action.secondary:hover,
+    .career-analyze-btn:hover,
+    .gsat-analyze-btn:hover {
+      background: #0b5f59;
+      opacity: 1;
+    }
+
+    button.secondary:hover,
+    a.button-link.secondary:hover,
+    .home-action.secondary:hover {
+      background: #214b85;
+    }
+
+    .shell.app-shell {
+      width: 100%;
+      min-height: 100vh;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      grid-template-columns: 292px minmax(0, 1fr);
+      align-items: stretch;
+    }
+
+    .app-chrome {
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      min-height: 0;
+      display: grid;
+      grid-template-rows: auto 1fr;
+      gap: 16px;
+      overflow-y: auto;
+      padding: 18px 14px;
+      background: #ffffff;
+      border-right: 1px solid var(--line);
+    }
+
+    .app-main {
+      min-width: 0;
+      padding: 20px;
+    }
+
+    .app-page {
+      width: min(100%, 1480px);
+      margin: 0 auto;
+    }
+
+    .page-header {
+      position: static;
+      display: grid;
+      gap: 16px;
+      align-items: start;
+      padding: 0;
+      margin: 0;
+      background: transparent;
+      border: 0;
+      border-radius: 0;
+      box-shadow: none;
+      backdrop-filter: none;
+    }
+
+    .brand {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 42px minmax(0, 1fr);
+      gap: 11px;
+      align-items: center;
+    }
+
+    .brand-mark {
+      width: 42px;
+      height: 42px;
+      border-radius: 8px;
+      background: var(--ink);
+      box-shadow: none;
+      letter-spacing: 0;
+    }
+
+    .brand-copy strong {
+      color: var(--ink);
+      font-size: 0.96rem;
+      line-height: 1.25;
+    }
+
+    .brand-copy span {
+      margin-top: 2px;
+      color: var(--muted);
+      font-size: 0.78rem;
+      line-height: 1.45;
+    }
+
+    .header-actions {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 8px;
+      align-items: stretch;
+      justify-content: stretch;
+      width: 100%;
+    }
+
+    .header-actions > *,
+    .header-actions button,
+    .header-actions .button-link {
+      width: 100%;
+      min-width: 0;
+      min-height: 38px;
+      justify-content: center;
+      font-size: 0.82rem;
+    }
+
+    .language-toggle,
+    .google-btn,
+    .canva-btn {
+      box-shadow: none;
+      background: var(--surface-strong);
+      border-color: var(--line);
+      color: var(--ink);
+    }
+
+    .canva-btn {
+      background: #f4f7fb;
+      color: #174ea6;
+    }
+
+    .status-pill {
+      width: 100%;
+      border-radius: 8px;
+      background: var(--surface-strong);
+      border: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.78rem;
+      line-height: 1.35;
+      padding: 9px 10px;
+    }
+
+    .status-pill strong {
+      color: var(--ink);
+    }
+
+    .app-nav-shell {
+      display: grid;
+      grid-template-rows: auto auto 1fr;
+      align-content: start;
+      gap: 10px;
+      margin: 0;
+      z-index: 15;
+    }
+
+    .feature-menu-trigger {
+      width: 100%;
+      min-width: 0;
+      padding: 10px 11px;
+      border-radius: 8px;
+      border-color: var(--line);
+      background: var(--surface-strong);
+      box-shadow: none;
+      backdrop-filter: none;
+    }
+
+    .feature-menu-label {
+      color: var(--muted);
+      font-size: 0.72rem;
+    }
+
+    .feature-menu-trigger strong {
+      color: var(--ink);
+      font-size: 0.92rem;
+    }
+
+    .feature-menu-caret {
+      color: var(--accent);
+    }
+
+    .feature-menu-panel {
+      position: static;
+      width: 100%;
+      padding: 0;
+      border: 0;
+      border-radius: 0;
+      background: transparent;
+      box-shadow: none;
+      backdrop-filter: none;
+    }
+
+    .app-tabs {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 6px;
+    }
+
+    .app-tab {
+      min-height: 58px;
+      display: grid;
+      grid-template-columns: 34px minmax(0, 1fr);
+      align-items: center;
+      align-content: center;
+      gap: 10px;
+      padding: 9px 10px;
+      border-radius: 8px;
+      border: 1px solid transparent;
+      background: transparent;
+      color: var(--muted);
+      text-align: left;
+    }
+
+    .app-tab-icon {
+      width: 34px;
+      height: 34px;
+      display: grid;
+      place-items: center;
+      border-radius: 8px;
+      background: #edf3f5;
+      color: var(--muted);
+      font-size: 0.68rem;
+      font-weight: 850;
+      line-height: 1;
+    }
+
+    .app-tab-copy {
+      display: grid;
+      gap: 2px;
+      min-width: 0;
+    }
+
+    .app-tab strong {
+      color: var(--ink);
+      font-size: 0.9rem;
+      line-height: 1.2;
+    }
+
+    .app-tab span {
+      color: var(--muted);
+      font-size: 0.74rem;
+      line-height: 1.35;
+    }
+
+    .app-tab:hover {
+      background: #f4f8f9;
+      border-color: var(--line);
+      color: var(--ink);
+    }
+
+    .app-tab.active {
+      background: #edf8f6;
+      border-color: rgba(15, 118, 110, 0.22);
+      box-shadow: inset 3px 0 0 var(--accent);
+    }
+
+    .app-tab.active .app-tab-icon {
+      background: var(--accent);
+      color: #fff;
+    }
+
+    .nav-context-actions {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 7px;
+      align-items: stretch;
+      justify-content: stretch;
+      margin-top: 4px;
+    }
+
+    .nav-context-label {
+      color: var(--muted);
+      font-size: 0.72rem;
+      font-weight: 800;
+    }
+
+    .nav-context-action {
+      width: 100%;
+      min-width: 0;
+      min-height: 40px;
+      padding: 9px 10px;
+      border-radius: 8px;
+      border-color: rgba(15, 118, 110, 0.22);
+      background: var(--accent);
+      color: #fff;
+      font-size: 0.82rem;
+      box-shadow: none;
+    }
+
+    #page-home {
+      --home-ink: var(--ink);
+      --home-muted: var(--muted);
+      --home-line: var(--line);
+      --home-panel: var(--surface);
+      --home-teal: var(--accent);
+      --home-green: #16794c;
+      color: var(--ink);
+    }
+
+    #page-home.app-page.active {
+      display: grid;
+      grid-template-columns: minmax(0, 1.04fr) minmax(320px, 0.96fr);
+      gap: 12px;
+      align-items: start;
+    }
+
+    .home-dashboard {
+      display: contents;
+    }
+
+    .home-intro,
+    .home-status-panel,
+    .home-panel,
+    .feature-card,
+    .home-function-hub,
+    .function-group,
+    .function-item,
+    .panel,
+    .section-card,
+    .editor-command-bar,
+    .cv-studio-bar,
+    .cv-browser-section,
+    .career-panel,
+    .career-results-shell,
+    .career-result-section,
+    .career-pos-card,
+    .career-ops-panel,
+    .career-ops-row,
+    .career-ops-stat,
+    .career-ops-filterbar,
+    .career-dossier-card,
+    .career-match-row,
+    .career-explore-card,
+    .career-deepfit-summary-card,
+    .gsat-panel,
+    .gsat-results-shell,
+    .gsat-score-card,
+    .gsat-dept-card,
+    .gsat-strategy-card,
+    .gsat-overview-card,
+    .gsat-data-card {
+      border-radius: 8px;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      box-shadow: none;
+    }
+
+    .home-intro {
+      grid-column: 1;
+      grid-row: 1;
+      min-height: 0;
+      padding: 20px;
+      gap: 22px;
+      justify-content: start;
+      align-self: flex-start;
+    }
+
+    .home-status-panel {
+      grid-column: 2;
+      grid-row: 1 / span 2;
+    }
+
+    .home-function-hub {
+      grid-column: 1;
+      grid-row: 2;
+      margin-bottom: 0;
+    }
+
+    .home-support-grid {
+      grid-column: 1 / -1;
+    }
+
+    .home-title {
+      max-width: none;
+      margin-top: 10px;
+      color: var(--ink);
+      font-size: 1.8rem;
+      line-height: 1.2;
+      font-weight: 820;
+    }
+
+    .home-lead {
+      max-width: 68ch;
+      margin-top: 9px;
+      color: var(--muted);
+      font-size: 0.92rem;
+      line-height: 1.65;
+    }
+
+    .home-kicker,
+    .feature-card-tag,
+    .function-item-tag {
+      border-radius: 8px;
+      background: #e6f3f1;
+      color: var(--accent);
+      font-size: 0.72rem;
+      letter-spacing: 0;
+    }
+
+    .home-actions {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 8px;
+    }
+
+    .home-action,
+    .feature-card-action,
+    .function-item {
+      border-radius: 8px;
+    }
+
+    .home-status-panel {
+      padding: 18px;
+      gap: 14px;
+      background: var(--surface);
+    }
+
+    .home-task {
+      border-radius: 8px;
+      background: var(--surface-strong);
+      border-color: var(--line);
+    }
+
+    .home-task-mark {
+      border-radius: 8px;
+      background: #e6f3f1;
+      color: var(--accent);
+    }
+
+    .home-mini-stat {
+      border-radius: 8px;
+      background: #f4f7f8;
+      border-color: var(--line);
+    }
+
+    .home-function-hub,
+    .home-panel {
+      padding: 16px;
+    }
+
+    .home-function-head h2 {
+      font-size: 1.06rem;
+      line-height: 1.35;
+    }
+
+    .function-group summary {
+      min-height: 50px;
+      padding: 11px 12px;
+    }
+
+    .function-grid {
+      gap: 8px;
+      padding: 10px;
+    }
+
+    .function-item {
+      min-height: 104px;
+      background: var(--surface);
+    }
+
+    .topbar,
+    .editor-command-bar {
+      margin-bottom: 12px;
+    }
+
+    .editor-command-bar,
+    .cv-studio-bar {
+      padding: 10px;
+      background: var(--surface);
+    }
+
+    .editor-command-eyebrow,
+    .cv-browser-kicker,
+    .cv-browser-panel-meta,
+    .word-count-badge,
+    .layout-badge,
+    .status-chip {
+      border-radius: 8px;
+      background: #e9f1f7;
+      color: var(--accent-2);
+    }
+
+    .editor-more-menu > summary,
+    .editor-more-panel,
+    .cv-browser-state,
+    .template-chip,
+    .job-chip,
+    .mode-button,
+    .editor-tool,
+    .compact-field-grid input,
+    .compact-field-grid select,
+    .compact-field-grid textarea,
+    .tool-row input,
+    .tool-row select,
+    .tool-row textarea,
+    .field input,
+    .field textarea,
+    .field select {
+      border-radius: 8px;
+      background: var(--surface);
+      border-color: var(--line);
+    }
+
+    .cv-browser-section > summary {
+      min-height: 50px;
+    }
+
+    .cv-browser-section[open] > summary {
+      background: #f1f7f8;
+    }
+
+    .workspace,
+    .portfolio-workspace {
+      gap: 12px;
+    }
+
+    .preview-shell,
+    .preview-frame {
+      padding: 14px;
+      background: var(--surface);
+      border-radius: 8px;
+    }
+
+    .preview-frame {
+      background: #f4f7f8;
+    }
+
+    .cv-paper {
+      border-radius: 8px;
+      box-shadow: 0 16px 32px rgba(20, 33, 43, 0.12);
+    }
+
+    .portfolio-preview-area {
+      gap: 12px;
+    }
+
+    #pfPreviewSection {
+      max-height: calc(100vh - 40px) !important;
+      padding: 0 !important;
+    }
+
+    .career-workspace,
+    .gsat-workspace {
+      min-height: calc(100vh - 40px);
+      height: auto;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      overflow: hidden;
+      background: var(--surface);
+      box-shadow: none;
+    }
+
+    .career-panel,
+    .gsat-panel {
+      background: var(--surface);
+      border: 0;
+      border-right: 1px solid var(--line);
+    }
+
+    .career-results-shell,
+    .gsat-results-shell {
+      background: #f4f7f8;
+      border: 0;
+    }
+
+    .career-mode-tab,
+    .career-link-btn,
+    .career-textarea,
+    .career-api-input,
+    .career-ops-tab,
+    .career-ops-status,
+    .career-ops-mini-btn,
+    .gsat-score-input,
+    .gsat-track-btn,
+    .gsat-action-btn {
+      border-radius: 8px;
+    }
+
+    .career-mode-tab.active,
+    .gsat-track-btn.active,
+    .career-ops-tab.active {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #fff;
+      box-shadow: none;
+    }
+
+    .career-ops-tabs {
+      border-radius: 8px;
+      background: var(--surface);
+    }
+
+    .career-score-overall,
+    .career-score-card,
+    .career-level-box,
+    .career-ats-col,
+    .career-star-card,
+    .career-letter-body,
+    .career-upload-zone,
+    .career-health-bar,
+    .career-share-panel,
+    .gsat-total-bar,
+    .gsat-filter-pill,
+    .gsat-result-brief,
+    .gsat-scope-summary,
+    .gsat-empty-note,
+    .gsat-overview-band {
+      border-radius: 8px;
+    }
+
+    .career-ops-help,
+    .gsat-disclaimer {
+      border-radius: 8px;
+      background: #fff7e8;
+      border-color: rgba(196, 122, 19, 0.28);
+      color: #7a4b08;
+    }
+
+    .hero,
+    .hero::before,
+    .hero::after {
+      background: var(--surface);
+      box-shadow: none;
+    }
+
+    .shell *,
+    .pdf-preview-modal *,
+    #tour-overlay * {
+      letter-spacing: 0 !important;
+    }
+
+    @media (min-width: 1041px) {
+      #featureMenuPanel[hidden] {
+        display: grid !important;
+      }
+
+      .feature-menu-trigger .feature-menu-caret {
+        display: none;
+      }
+    }
+
+    @media (max-width: 1200px) {
+      .shell.app-shell {
+        grid-template-columns: 260px minmax(0, 1fr);
+      }
+
+      .app-main {
+        padding: 16px;
+      }
+
+      .career-workspace,
+      .gsat-workspace {
+        grid-template-columns: 330px minmax(0, 1fr);
+      }
+    }
+
+    @media (max-width: 1040px) {
+      .shell.app-shell {
+        display: block;
+        min-height: 100vh;
+        padding: 12px;
+      }
+
+      .app-chrome {
+        position: static;
+        top: auto;
+        z-index: 80;
+        height: auto;
+        max-height: calc(100vh - 24px);
+        display: grid;
+        grid-template-rows: auto auto;
+        padding: 12px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        overflow-y: auto;
+      }
+
+      .page-header {
+        grid-template-columns: minmax(0, 1fr);
+      }
+
+      .header-actions {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .header-actions .status-pill {
+        grid-column: 1 / -1;
+      }
+
+      .app-main {
+        padding: 12px 0 0;
+      }
+
+      .feature-menu-panel {
+        position: static;
+        margin-top: 0;
+      }
+
+      .home-dashboard,
+      .home-support-grid,
+      .career-workspace,
+      .gsat-workspace {
+        grid-template-columns: 1fr;
+      }
+
+      #page-home.app-page.active {
+        display: block;
+      }
+
+      .career-panel,
+      .gsat-panel {
+        border-right: 0;
+        border-bottom: 1px solid var(--line);
+      }
+    }
+
+    @media (max-width: 720px) {
+      .shell.app-shell {
+        padding: 8px;
+      }
+
+      .header-actions,
+      .home-actions,
+      .home-mini-stats,
+      .home-path-grid,
+      .function-grid,
+      .career-mode-tabs,
+      .career-ops-stats,
+      .career-ops-grid,
+      .career-score-grid,
+      .career-two-col,
+      .career-ats-grid,
+      .career-deepfit-summary,
+      .gsat-score-grid,
+      .gsat-score-summary {
+        grid-template-columns: 1fr;
+      }
+
+      .home-title {
+        font-size: 1.45rem;
+      }
+
+      .home-intro,
+      .home-status-panel,
+      .home-function-hub,
+      .home-panel,
+      .career-panel,
+      .career-results-shell,
+      .gsat-panel,
+      .gsat-results-shell {
+        padding: 14px;
+      }
+
+      .editor-command-actions {
+        grid-template-columns: 1fr;
+      }
+
+      .cv-browser-section > summary {
+        grid-template-columns: 34px minmax(0, 1fr) 18px;
+      }
+
+      .cv-browser-state {
+        grid-column: 2;
+        grid-row: 3;
+        justify-self: start;
+      }
+    }
+
+    body.public-share-mode .app-shell {
+      display: block;
+      padding: 18px;
+    }
+
+    body.public-share-mode .app-chrome {
+      display: none !important;
+    }
+
+    body.public-share-mode .app-main {
+      padding: 0;
+    }
+
+    @media print {
+      .app-chrome,
+      .app-main > .app-page:not(#page-cv),
+      #page-cv > *:not(.workspace),
+      .preview-toolbar {
+        display: none !important;
+      }
+
+      .shell.app-shell,
+      .app-main,
+      #page-cv,
+      #page-cv .workspace {
+        display: block !important;
+        width: auto !important;
+        min-height: 0 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+      }
+    }
+  </style>
 </head>
 <body>
   <div id="toastRegion" class="toast-region" aria-live="polite" aria-atomic="true"></div>
@@ -5948,13 +6827,14 @@
     </div>
   </div>
 
-  <main class="shell">
+  <main class="shell app-shell">
+    <aside class="app-chrome" aria-label="全域工作區">
     <header class="page-header">
       <div class="brand">
         <div class="brand-mark">CV</div>
         <div class="brand-copy">
           <strong>CV Studio</strong>
-          <span>用漂亮版型把履歷整理成可登入、可儲存、可下載的作品頁。</span>
+          <span>履歷、作品集、求職追蹤與落點分析工作台。</span>
         </div>
       </div>
       <div class="header-actions">
@@ -5985,7 +6865,7 @@
 
     <nav class="app-nav-shell" aria-label="主要功能">
       <button id="featureMenuBtn" class="feature-menu-trigger" type="button" aria-expanded="false" aria-controls="featureMenuPanel">
-        <span class="feature-menu-label">功能中心</span>
+        <span class="feature-menu-label">目前工作區</span>
         <strong id="featureMenuCurrent">主畫面</strong>
         <span class="feature-menu-caret" aria-hidden="true">⌄</span>
       </button>
@@ -5995,35 +6875,52 @@
       </div>
       <div id="featureMenuPanel" class="app-tabs feature-menu-panel" hidden>
         <button class="app-tab active" data-tab="home" type="button">
-          <strong>主畫面</strong>
-          <span>進度、入口與下一步</span>
+          <span class="app-tab-icon" aria-hidden="true">01</span>
+          <span class="app-tab-copy">
+            <strong>總覽</strong>
+            <span>進度、入口與下一步</span>
+          </span>
         </button>
         <button class="app-tab" data-tab="cv" type="button">
-          <strong>CV 履歷</strong>
-          <span>模板、編輯、PDF 輸出</span>
+          <span class="app-tab-icon" aria-hidden="true">CV</span>
+          <span class="app-tab-copy">
+            <strong>CV 履歷</strong>
+            <span>模板、編輯、PDF 輸出</span>
+          </span>
         </button>
         <button class="app-tab" data-tab="portfolio" type="button">
-          <strong>學習歷程</strong>
-          <span>章節、圖片、成果頁</span>
+          <span class="app-tab-icon" aria-hidden="true">PF</span>
+          <span class="app-tab-copy">
+            <strong>學習歷程</strong>
+            <span>章節、圖片、成果頁</span>
+          </span>
         </button>
         <button class="app-tab" data-tab="career" type="button">
-          <strong>求職顧問</strong>
-          <span>AI 分析、職缺適配、求職信</span>
+          <span class="app-tab-icon" aria-hidden="true">AI</span>
+          <span class="app-tab-copy">
+            <strong>Career Ops</strong>
+            <span>AI 分析、職缺適配、求職信</span>
+          </span>
         </button>
         <button class="app-tab" data-tab="gsat" type="button">
-          <strong>學測落點</strong>
-          <span>校系篩選與落點分析</span>
+          <span class="app-tab-icon" aria-hidden="true">GS</span>
+          <span class="app-tab-copy">
+            <strong>學測落點</strong>
+            <span>校系篩選與落點分析</span>
+          </span>
         </button>
       </div>
     </nav>
+    </aside>
 
+    <section class="app-main" aria-label="目前功能內容">
     <div id="page-home" class="app-page active">
     <section class="home-dashboard" aria-label="CV Studio 主畫面">
       <div class="home-intro">
         <div>
-          <span class="home-kicker">CV Studio 工作台</span>
+          <span class="home-kicker">申請工作台</span>
           <h1 class="home-title">今天先完成一版可送出的申請資料。</h1>
-          <p class="home-lead">履歷、學習歷程、學測落點與同步狀態集中在同一個入口；登入後才會顯示個人進度。</p>
+          <p class="home-lead">履歷、學習歷程、職缺追蹤與學測落點集中在同一個工作台；每個模組保留自己的進度與輸出。</p>
         </div>
         <div class="home-actions">
           <button id="startEditingBtn" class="home-action primary" type="button">開始履歷</button>
@@ -6120,8 +7017,8 @@
     <section class="home-function-hub" aria-label="功能中心">
       <div class="home-function-head">
         <div>
-          <span class="home-kicker">功能中心</span>
-          <h2>依照任務展開，不必一次看完所有工具。</h2>
+          <span class="home-kicker">任務入口</span>
+          <h2>選一條路徑開始。</h2>
         </div>
         <button id="openFeatureMenuBtn" class="home-action tertiary" type="button">展開全部功能</button>
       </div>
@@ -7428,6 +8325,7 @@
       </div>
     </div><!-- /page-gsat -->
 
+    </section>
   </main>
 
   <!-- ===== FLOATING FORMAT TOOLBAR ===== -->
@@ -14173,8 +15071,9 @@
         const trigger = document.getElementById("featureMenuBtn");
         const panel = document.getElementById("featureMenuPanel");
         if (!trigger || !panel) return;
-        trigger.setAttribute("aria-expanded", open ? "true" : "false");
-        panel.hidden = !open;
+        const persistentNav = window.matchMedia?.("(min-width: 1041px)")?.matches;
+        trigger.setAttribute("aria-expanded", persistentNav || open ? "true" : "false");
+        panel.hidden = persistentNav ? false : !open;
       }
 
       function updateFeatureMenuCurrent(tabId) {
@@ -15332,6 +16231,9 @@
 
         document.addEventListener("keydown", (event) => {
           if (event.key === "Escape") setFeatureMenuOpen(false);
+        });
+        window.addEventListener("resize", () => {
+          setFeatureMenuOpen(false);
         });
 
         /* Tab buttons */
