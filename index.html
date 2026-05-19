@@ -21,7 +21,6 @@
   <script src="./university-data.js"></script>
   <script src="./data/app/gsat-external-data.js"></script>
   <script src="./data/app/university-tw-app-data.js"></script>
-  <script src="./data/app/career-ops-jobs.js"></script>
   <script src="./data/app/career-ops-singapore-jobs.js"></script>
   <script src="./data/app/career-ops-application-kit.js"></script>
   <script src="./data/app/career-ops-deep-research.js"></script>
@@ -5183,6 +5182,54 @@
       gap: 12px;
       margin-bottom: 18px;
     }
+    .career-ops-filterbar {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 12px;
+      padding: 12px 14px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: rgba(255,255,255,0.7);
+    }
+    .career-ops-filter-title {
+      display: grid;
+      gap: 3px;
+      min-width: 0;
+    }
+    .career-ops-filter-title strong {
+      color: var(--ink);
+      font-size: 13px;
+      line-height: 1.3;
+    }
+    .career-ops-filter-title span {
+      color: var(--muted);
+      font-size: 11.5px;
+      line-height: 1.45;
+    }
+    .career-ops-filter-field {
+      display: grid;
+      gap: 5px;
+      min-width: min(260px, 100%);
+    }
+    .career-ops-filter-field label {
+      color: var(--muted);
+      font-size: 10.5px;
+      font-weight: 850;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+    .career-ops-filter-field select {
+      min-height: 36px;
+      border: 1px solid var(--line);
+      border-radius: 9px;
+      background: rgba(255,255,255,0.92);
+      color: var(--ink);
+      font: inherit;
+      font-size: 12px;
+      padding: 7px 10px;
+    }
     .career-ops-stat {
       background: var(--surface-strong);
       border: 1px solid var(--line);
@@ -5434,7 +5481,7 @@
     }
     /* ── Layer A dossier cards ── */
     .career-dossier-card {
-      background: #fff;
+      background: var(--surface-strong);
       border: 1px solid var(--line);
       border-radius: 16px;
       overflow: hidden;
@@ -5465,6 +5512,10 @@
       line-height: 1.3;
     }
     .career-dossier-meta {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 5px 8px;
       font-size: 12px;
       color: var(--muted);
       margin-top: 4px;
@@ -5541,67 +5592,82 @@
     /* ── Layer B compact rows ── */
     .career-match-grid {
       display: grid;
-      gap: 8px;
+      gap: 12px;
     }
     .career-match-row {
       display: flex;
       align-items: center;
-      gap: 12px;
+      justify-content: space-between;
+      gap: 18px;
       background: var(--surface-strong);
       border: 1px solid var(--line);
-      border-radius: 12px;
-      padding: 11px 14px;
+      border-radius: 16px;
+      padding: 16px 18px;
       text-align: left;
-      cursor: pointer;
+      cursor: default;
+      color: inherit;
+      text-decoration: none;
       transition: border-color 0.15s, background 0.15s;
     }
+    a.career-match-row { cursor: pointer; }
     .career-match-row:hover { border-color: rgba(33,78,116,0.3); background: #fff; }
     .career-match-info { flex: 1; min-width: 0; }
     .career-match-title {
-      font-size: 13.5px;
-      font-weight: 700;
+      font-size: 15px;
+      font-weight: 800;
       color: var(--ink);
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
+      line-height: 1.3;
     }
     .career-match-meta {
-      font-size: 11.5px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 5px 8px;
+      font-size: 12px;
       color: var(--muted);
-      margin-top: 2px;
+      line-height: 1.45;
+      margin-top: 4px;
+    }
+    .career-meta-dot {
+      color: rgba(95, 102, 117, 0.62);
     }
     .career-match-score {
-      font-size: 18px;
+      font-size: 26px;
       font-weight: 900;
+      line-height: 1;
       color: var(--accent-2);
-      min-width: 36px;
+      min-width: 54px;
       text-align: right;
     }
     /* ── Layer C grid ── */
     .career-explore-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-      gap: 8px;
+      grid-template-columns: 1fr;
+      gap: 12px;
     }
     .career-explore-card {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
       background: var(--surface-strong);
       border: 1px solid var(--line);
-      border-radius: 12px;
-      padding: 12px 14px;
-      font-size: 12.5px;
+      border-radius: 16px;
+      padding: 16px 18px;
+      color: inherit;
+      font-size: 12px;
+      text-align: left;
+      text-decoration: none;
     }
     .career-explore-title {
-      font-weight: 700;
+      font-size: 15px;
+      font-weight: 800;
       color: var(--ink);
-      margin-bottom: 2px;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
+      line-height: 1.3;
     }
-    .career-explore-company { color: var(--muted); font-size: 11.5px; }
+    .career-explore-company { color: var(--muted); font-size: 12px; line-height: 1.45; }
     .career-explore-gap {
-      margin-top: 6px;
-      font-size: 11px;
+      font-size: 12px;
       color: rgba(173,63,47,0.8);
     }
     /* ── Health status badge ── */
@@ -5627,35 +5693,146 @@
     .health-degraded { background: #ef4444; }
     .health-critical { background: #7f1d1d; }
     /* ── Resume upload area ── */
+    .career-upload-card {
+      width: min(680px, 100%);
+      margin: 0 auto;
+    }
+    .career-upload-title {
+      margin: 0 0 8px;
+      color: var(--ink);
+      font-size: 18px;
+      font-weight: 800;
+      line-height: 1.35;
+    }
+    .career-upload-copy {
+      margin: 0 0 18px;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.65;
+    }
     .career-upload-zone {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      min-height: 190px;
       border: 2px dashed var(--line);
       border-radius: 16px;
-      padding: 32px;
+      padding: 32px 24px;
+      background: rgba(255, 250, 244, 0.58);
       text-align: center;
       cursor: pointer;
-      transition: border-color 0.16s, background 0.16s;
+      transition: border-color 0.16s, background 0.16s, transform 0.16s;
     }
     .career-upload-zone:hover,
     .career-upload-zone.dragover {
       border-color: rgba(33,78,116,0.5);
       background: rgba(33,78,116,0.04);
+      transform: translateY(-1px);
+    }
+    .career-upload-zone.has-file {
+      border-color: rgba(21, 115, 71, 0.42);
+      background: rgba(21, 115, 71, 0.05);
     }
     .career-upload-zone input { display: none; }
     .career-upload-icon {
-      width: 40px;
-      height: 40px;
-      margin: 0 auto 12px;
+      width: 42px;
+      height: 42px;
+      margin-bottom: 14px;
       color: var(--muted);
+      flex: 0 0 auto;
     }
     .career-upload-label {
-      font-size: 13.5px;
-      font-weight: 700;
+      font-size: 15px;
+      font-weight: 800;
       color: var(--ink);
-      margin-bottom: 4px;
+      line-height: 1.35;
+      margin-bottom: 5px;
     }
     .career-upload-sub {
       font-size: 12px;
       color: var(--muted);
+      line-height: 1.5;
+    }
+    .career-upload-status {
+      margin-top: 14px;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.55;
+    }
+    .career-selected-file {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      margin-top: 14px;
+      padding: 12px 14px;
+      border: 1px solid rgba(21, 115, 71, 0.22);
+      border-radius: 12px;
+      background: rgba(21, 115, 71, 0.06);
+    }
+    .career-selected-file-main {
+      min-width: 0;
+    }
+    .career-selected-file-name {
+      color: var(--ink);
+      font-size: 13px;
+      font-weight: 800;
+      line-height: 1.35;
+      overflow-wrap: anywhere;
+    }
+    .career-selected-file-meta {
+      margin-top: 3px;
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.45;
+    }
+    .career-selected-file-state {
+      flex: 0 0 auto;
+      border-radius: 999px;
+      padding: 4px 9px;
+      background: rgba(21, 115, 71, 0.12);
+      color: var(--success);
+      font-size: 11px;
+      font-weight: 800;
+      white-space: nowrap;
+    }
+    .career-upload-profile-preview {
+      margin-top: 16px;
+    }
+    .career-upload-actions {
+      display: grid;
+      gap: 10px;
+      margin-top: 20px;
+    }
+    .career-upload-dev-snapshot {
+      margin-top: 24px;
+      padding-top: 18px;
+      border-top: 1px solid var(--line);
+    }
+    .career-upload-dev-title {
+      margin-bottom: 10px;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+    .career-upload-dev-copy {
+      margin: 0 0 10px;
+      color: var(--muted);
+      font-size: 12.5px;
+      line-height: 1.6;
+    }
+    .career-upload-dev-actions {
+      display: grid;
+      gap: 8px;
+    }
+    .career-upload-static-status {
+      margin-top: 10px;
+      color: var(--muted);
+      font-size: 12.5px;
+      line-height: 1.55;
     }
     /* ── Summary strip ── */
     .career-deepfit-summary {
@@ -5731,6 +5908,7 @@
       .career-workspace { grid-template-columns: 1fr; }
       .career-panel { border-right: none; border-bottom: 1px solid var(--line); }
 	      .career-score-grid, .career-two-col, .career-ats-grid, .career-ops-stats, .career-ops-grid, .career-ops-threshold-strip, .career-ops-ag-grid { grid-template-columns: 1fr; }
+	      .career-ops-filterbar { align-items: stretch; flex-direction: column; }
     }
 
     /* ============================================================
@@ -5876,6 +6054,946 @@
       }
     }
   </style>
+  <style id="app-redesign-2026">
+    /* ============================================================
+       CV Studio 2026 app shell
+       ============================================================ */
+    :root {
+      --bg: #eef3f5;
+      --bg-strong: #dde7ea;
+      --surface: #ffffff;
+      --surface-strong: #f8fafb;
+      --ink: #14212b;
+      --muted: #62727f;
+      --line: rgba(20, 33, 43, 0.12);
+      --accent: #0f766e;
+      --accent-2: #285a9f;
+      --accent-3: #c47a13;
+      --success: #16794c;
+      --danger: #b42335;
+      --shadow: 0 12px 28px rgba(20, 33, 43, 0.08);
+      --radius: 8px;
+      --paper: #ffffff;
+      --paper-line: #d9e1e5;
+    }
+
+    html {
+      background: var(--bg);
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans TC", "PingFang TC", sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      min-height: 100vh;
+    }
+
+    button,
+    input,
+    textarea,
+    select,
+    a.button-link {
+      font-family: inherit;
+    }
+
+    button,
+    a.button-link {
+      border-radius: 8px;
+      box-shadow: none;
+      transform: none;
+      transition: background 0.15s ease, border-color 0.15s ease, color 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    button:hover,
+    a.button-link:hover {
+      transform: none;
+      box-shadow: none;
+    }
+
+    button.primary,
+    button.secondary,
+    a.button-link.primary,
+    .home-action.primary,
+    .career-analyze-btn,
+    .gsat-analyze-btn {
+      background: var(--accent);
+      color: #fff;
+    }
+
+    button.secondary,
+    a.button-link.secondary,
+    .home-action.secondary {
+      background: var(--accent-2);
+      color: #fff;
+    }
+
+    button.soft,
+    button.ghost,
+    a.button-link.soft,
+    .home-action.tertiary {
+      background: var(--surface);
+      border-color: var(--line);
+      color: var(--ink);
+    }
+
+    button.primary:hover,
+    button.secondary:hover,
+    a.button-link.primary:hover,
+    a.button-link.secondary:hover,
+    .home-action.primary:hover,
+    .home-action.secondary:hover,
+    .career-analyze-btn:hover,
+    .gsat-analyze-btn:hover {
+      background: #0b5f59;
+      opacity: 1;
+    }
+
+    button.secondary:hover,
+    a.button-link.secondary:hover,
+    .home-action.secondary:hover {
+      background: #214b85;
+    }
+
+    .shell.app-shell {
+      width: 100%;
+      min-height: 100vh;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      grid-template-columns: 292px minmax(0, 1fr);
+      align-items: stretch;
+    }
+
+    .app-chrome {
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      min-height: 0;
+      display: grid;
+      grid-template-rows: auto 1fr;
+      gap: 16px;
+      overflow-y: auto;
+      padding: 18px 14px;
+      background: #ffffff;
+      border-right: 1px solid var(--line);
+    }
+
+    .app-main {
+      min-width: 0;
+      padding: 20px;
+    }
+
+    .app-page {
+      width: min(100%, 1480px);
+      margin: 0 auto;
+    }
+
+    .page-header {
+      position: static;
+      display: grid;
+      gap: 16px;
+      align-items: start;
+      padding: 0;
+      margin: 0;
+      background: transparent;
+      border: 0;
+      border-radius: 0;
+      box-shadow: none;
+      backdrop-filter: none;
+    }
+
+    .brand {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 42px minmax(0, 1fr);
+      gap: 11px;
+      align-items: center;
+    }
+
+    .brand-mark {
+      width: 42px;
+      height: 42px;
+      border-radius: 8px;
+      background: var(--ink);
+      box-shadow: none;
+      letter-spacing: 0;
+    }
+
+    .brand-copy strong {
+      color: var(--ink);
+      font-size: 0.96rem;
+      line-height: 1.25;
+    }
+
+    .brand-copy span {
+      margin-top: 2px;
+      color: var(--muted);
+      font-size: 0.78rem;
+      line-height: 1.45;
+    }
+
+    .header-actions {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 8px;
+      align-items: stretch;
+      justify-content: stretch;
+      width: 100%;
+    }
+
+    .header-actions > *,
+    .header-actions button,
+    .header-actions .button-link {
+      width: 100%;
+      min-width: 0;
+      min-height: 38px;
+      justify-content: center;
+      font-size: 0.82rem;
+    }
+
+    .language-toggle,
+    .google-btn,
+    .canva-btn {
+      box-shadow: none;
+      background: var(--surface-strong);
+      border-color: var(--line);
+      color: var(--ink);
+    }
+
+    .canva-btn {
+      background: #f4f7fb;
+      color: #174ea6;
+    }
+
+    .status-pill {
+      width: 100%;
+      border-radius: 8px;
+      background: var(--surface-strong);
+      border: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.78rem;
+      line-height: 1.35;
+      padding: 9px 10px;
+    }
+
+    .status-pill strong {
+      color: var(--ink);
+    }
+
+    .app-nav-shell {
+      display: grid;
+      grid-template-rows: auto auto 1fr;
+      align-content: start;
+      gap: 10px;
+      margin: 0;
+      z-index: 15;
+    }
+
+    .feature-menu-trigger {
+      width: 100%;
+      min-width: 0;
+      padding: 10px 11px;
+      border-radius: 8px;
+      border-color: var(--line);
+      background: var(--surface-strong);
+      box-shadow: none;
+      backdrop-filter: none;
+    }
+
+    .feature-menu-label {
+      color: var(--muted);
+      font-size: 0.72rem;
+    }
+
+    .feature-menu-trigger strong {
+      color: var(--ink);
+      font-size: 0.92rem;
+    }
+
+    .feature-menu-caret {
+      color: var(--accent);
+    }
+
+    .feature-menu-panel {
+      position: static;
+      width: 100%;
+      padding: 0;
+      border: 0;
+      border-radius: 0;
+      background: transparent;
+      box-shadow: none;
+      backdrop-filter: none;
+    }
+
+    .app-tabs {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 6px;
+    }
+
+    .app-tab {
+      min-height: 58px;
+      display: grid;
+      grid-template-columns: 34px minmax(0, 1fr);
+      align-items: center;
+      align-content: center;
+      gap: 10px;
+      padding: 9px 10px;
+      border-radius: 8px;
+      border: 1px solid transparent;
+      background: transparent;
+      color: var(--muted);
+      text-align: left;
+    }
+
+    .app-tab-icon {
+      width: 34px;
+      height: 34px;
+      display: grid;
+      place-items: center;
+      border-radius: 8px;
+      background: #edf3f5;
+      color: var(--muted);
+      font-size: 0.68rem;
+      font-weight: 850;
+      line-height: 1;
+    }
+
+    .app-tab-copy {
+      display: grid;
+      gap: 2px;
+      min-width: 0;
+    }
+
+    .app-tab strong {
+      color: var(--ink);
+      font-size: 0.9rem;
+      line-height: 1.2;
+    }
+
+    .app-tab span {
+      color: var(--muted);
+      font-size: 0.74rem;
+      line-height: 1.35;
+    }
+
+    .app-tab:hover {
+      background: #f4f8f9;
+      border-color: var(--line);
+      color: var(--ink);
+    }
+
+    .app-tab.active {
+      background: #edf8f6;
+      border-color: rgba(15, 118, 110, 0.22);
+      box-shadow: inset 3px 0 0 var(--accent);
+    }
+
+    .app-tab.active .app-tab-icon {
+      background: var(--accent);
+      color: #fff;
+    }
+
+    .nav-context-actions {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 7px;
+      align-items: stretch;
+      justify-content: stretch;
+      margin-top: 4px;
+    }
+
+    .nav-context-label {
+      color: var(--muted);
+      font-size: 0.72rem;
+      font-weight: 800;
+    }
+
+    .nav-context-action {
+      width: 100%;
+      min-width: 0;
+      min-height: 40px;
+      padding: 9px 10px;
+      border-radius: 8px;
+      border-color: rgba(15, 118, 110, 0.22);
+      background: var(--accent);
+      color: #fff;
+      font-size: 0.82rem;
+      box-shadow: none;
+    }
+
+    #page-home {
+      --home-ink: var(--ink);
+      --home-muted: var(--muted);
+      --home-line: var(--line);
+      --home-panel: var(--surface);
+      --home-teal: var(--accent);
+      --home-green: #16794c;
+      color: var(--ink);
+    }
+
+    #page-home.app-page.active {
+      display: grid;
+      grid-template-columns: minmax(0, 1.04fr) minmax(320px, 0.96fr);
+      gap: 12px;
+      align-items: start;
+    }
+
+    .home-dashboard {
+      display: contents;
+    }
+
+    .home-intro,
+    .home-status-panel,
+    .home-panel,
+    .feature-card,
+    .home-function-hub,
+    .function-group,
+    .function-item,
+    .panel,
+    .section-card,
+    .editor-command-bar,
+    .cv-studio-bar,
+    .cv-browser-section,
+    .career-panel,
+    .career-results-shell,
+    .career-result-section,
+    .career-pos-card,
+    .career-ops-panel,
+    .career-ops-row,
+    .career-ops-stat,
+    .career-ops-filterbar,
+    .career-dossier-card,
+    .career-match-row,
+    .career-explore-card,
+    .career-deepfit-summary-card,
+    .gsat-panel,
+    .gsat-results-shell,
+    .gsat-score-card,
+    .gsat-dept-card,
+    .gsat-strategy-card,
+    .gsat-overview-card,
+    .gsat-data-card {
+      border-radius: 8px;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      box-shadow: none;
+    }
+
+    .home-intro {
+      grid-column: 1;
+      grid-row: 1;
+      min-height: 0;
+      padding: 20px;
+      gap: 22px;
+      justify-content: start;
+      align-self: flex-start;
+    }
+
+    .home-status-panel {
+      grid-column: 2;
+      grid-row: 1 / span 2;
+    }
+
+    .home-function-hub {
+      grid-column: 1;
+      grid-row: 2;
+      margin-bottom: 0;
+    }
+
+    .home-support-grid {
+      grid-column: 1 / -1;
+    }
+
+    .home-title {
+      max-width: none;
+      margin-top: 10px;
+      color: var(--ink);
+      font-size: 1.8rem;
+      line-height: 1.2;
+      font-weight: 820;
+    }
+
+    .home-lead {
+      max-width: 68ch;
+      margin-top: 9px;
+      color: var(--muted);
+      font-size: 0.92rem;
+      line-height: 1.65;
+    }
+
+    .home-kicker,
+    .feature-card-tag,
+    .function-item-tag {
+      border-radius: 8px;
+      background: #e6f3f1;
+      color: var(--accent);
+      font-size: 0.72rem;
+      letter-spacing: 0;
+    }
+
+    .home-actions {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 8px;
+    }
+
+    .home-action,
+    .feature-card-action,
+    .function-item {
+      border-radius: 8px;
+    }
+
+    .home-status-panel {
+      padding: 18px;
+      gap: 14px;
+      background: var(--surface);
+    }
+
+    .home-task {
+      border-radius: 8px;
+      background: var(--surface-strong);
+      border-color: var(--line);
+    }
+
+    .home-task-mark {
+      border-radius: 8px;
+      background: #e6f3f1;
+      color: var(--accent);
+    }
+
+    .home-mini-stat {
+      border-radius: 8px;
+      background: #f4f7f8;
+      border-color: var(--line);
+    }
+
+    .home-function-hub,
+    .home-panel {
+      padding: 16px;
+    }
+
+    .home-function-head h2 {
+      font-size: 1.06rem;
+      line-height: 1.35;
+    }
+
+    .function-group summary {
+      min-height: 50px;
+      padding: 11px 12px;
+    }
+
+    .function-grid {
+      gap: 8px;
+      padding: 10px;
+    }
+
+    .function-item {
+      min-height: 104px;
+      background: var(--surface);
+    }
+
+    .topbar,
+    .editor-command-bar {
+      margin-bottom: 12px;
+    }
+
+    .editor-command-bar,
+    .cv-studio-bar {
+      padding: 10px;
+      background: var(--surface);
+    }
+
+    .editor-command-eyebrow,
+    .cv-browser-kicker,
+    .cv-browser-panel-meta,
+    .word-count-badge,
+    .layout-badge,
+    .status-chip {
+      border-radius: 8px;
+      background: #e9f1f7;
+      color: var(--accent-2);
+    }
+
+    .editor-more-menu > summary,
+    .editor-more-panel,
+    .cv-browser-state,
+    .template-chip,
+    .job-chip,
+    .mode-button,
+    .editor-tool,
+    .compact-field-grid input,
+    .compact-field-grid select,
+    .compact-field-grid textarea,
+    .tool-row input,
+    .tool-row select,
+    .tool-row textarea,
+    .field input,
+    .field textarea,
+    .field select {
+      border-radius: 8px;
+      background: var(--surface);
+      border-color: var(--line);
+    }
+
+    .cv-browser-section > summary {
+      min-height: 50px;
+    }
+
+    .cv-browser-section[open] > summary {
+      background: #f1f7f8;
+    }
+
+    .workspace,
+    .portfolio-workspace {
+      gap: 12px;
+    }
+
+    .preview-shell,
+    .preview-frame {
+      padding: 14px;
+      background: var(--surface);
+      border-radius: 8px;
+    }
+
+    .preview-frame {
+      background: #f4f7f8;
+    }
+
+    .cv-paper {
+      border-radius: 8px;
+      box-shadow: 0 16px 32px rgba(20, 33, 43, 0.12);
+    }
+
+    .portfolio-preview-area {
+      gap: 12px;
+    }
+
+    #pfPreviewSection {
+      max-height: calc(100vh - 40px) !important;
+      padding: 0 !important;
+    }
+
+    .career-workspace,
+    .gsat-workspace {
+      min-height: calc(100vh - 40px);
+      height: auto;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      overflow: hidden;
+      background: var(--surface);
+      box-shadow: none;
+    }
+
+    .career-panel,
+    .gsat-panel {
+      background: var(--surface);
+      border: 0;
+      border-right: 1px solid var(--line);
+    }
+
+    .career-results-shell,
+    .gsat-results-shell {
+      background: #f4f7f8;
+      border: 0;
+    }
+
+    .career-mode-tab,
+    .career-link-btn,
+    .career-textarea,
+    .career-api-input,
+    .career-ops-tab,
+    .career-ops-status,
+    .career-ops-mini-btn,
+    .gsat-score-input,
+    .gsat-track-btn,
+    .gsat-action-btn {
+      border-radius: 8px;
+    }
+
+    .career-mode-tab.active,
+    .gsat-track-btn.active,
+    .career-ops-tab.active {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #fff;
+      box-shadow: none;
+    }
+
+    .career-ops-tabs {
+      border-radius: 8px;
+      background: var(--surface);
+    }
+
+    .career-score-overall,
+    .career-score-card,
+    .career-level-box,
+    .career-ats-col,
+    .career-star-card,
+    .career-letter-body,
+    .career-upload-zone,
+    .career-health-bar,
+    .career-share-panel,
+    .gsat-total-bar,
+    .gsat-filter-pill,
+    .gsat-result-brief,
+    .gsat-scope-summary,
+    .gsat-empty-note,
+    .gsat-overview-band {
+      border-radius: 8px;
+    }
+
+    .career-ops-help,
+    .gsat-disclaimer {
+      border-radius: 8px;
+      background: #fff7e8;
+      border-color: rgba(196, 122, 19, 0.28);
+      color: #7a4b08;
+    }
+
+    .career-dossier-card,
+    .career-match-row,
+    .career-explore-card {
+      background: rgba(255, 250, 244, 0.96);
+      border: 1px solid rgba(49, 40, 27, 0.12);
+      border-radius: 16px;
+      box-shadow: none;
+      transition: background 0.16s ease, border-color 0.16s ease, box-shadow 0.16s ease, transform 0.16s ease;
+    }
+
+    .career-dossier-card:hover,
+    .career-match-row:hover,
+    .career-explore-card:hover {
+      background: #fffefb;
+      border-color: rgba(33, 78, 116, 0.24);
+      box-shadow: 0 10px 28px rgba(50, 38, 18, 0.08);
+    }
+
+    .career-match-row:hover,
+    .career-explore-card:hover {
+      transform: translateY(-1px);
+    }
+
+    .career-dossier-head,
+    .career-match-row,
+    .career-explore-card {
+      min-height: 80px;
+    }
+
+    .hero,
+    .hero::before,
+    .hero::after {
+      background: var(--surface);
+      box-shadow: none;
+    }
+
+    .shell *,
+    .pdf-preview-modal *,
+    #tour-overlay * {
+      letter-spacing: 0 !important;
+    }
+
+    @media (min-width: 1041px) {
+      #featureMenuPanel[hidden] {
+        display: grid !important;
+      }
+
+      .feature-menu-trigger .feature-menu-caret {
+        display: none;
+      }
+    }
+
+    @media (max-width: 1200px) {
+      .shell.app-shell {
+        grid-template-columns: 260px minmax(0, 1fr);
+      }
+
+      .app-main {
+        padding: 16px;
+      }
+
+      .career-workspace,
+      .gsat-workspace {
+        grid-template-columns: 330px minmax(0, 1fr);
+      }
+    }
+
+    @media (max-width: 1040px) {
+      .shell.app-shell {
+        display: block;
+        min-height: 100vh;
+        padding: 12px;
+      }
+
+      .app-chrome {
+        position: static;
+        top: auto;
+        z-index: 80;
+        height: auto;
+        max-height: calc(100vh - 24px);
+        display: grid;
+        grid-template-rows: auto auto;
+        padding: 12px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        overflow-y: auto;
+      }
+
+      .page-header {
+        grid-template-columns: minmax(0, 1fr);
+      }
+
+      .header-actions {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .header-actions .status-pill {
+        grid-column: 1 / -1;
+      }
+
+      .app-main {
+        padding: 12px 0 0;
+      }
+
+      .feature-menu-panel {
+        position: static;
+        margin-top: 0;
+      }
+
+      .home-dashboard,
+      .home-support-grid,
+      .career-workspace,
+      .gsat-workspace {
+        grid-template-columns: 1fr;
+      }
+
+      #page-home.app-page.active {
+        display: block;
+      }
+
+      .career-panel,
+      .gsat-panel {
+        border-right: 0;
+        border-bottom: 1px solid var(--line);
+      }
+    }
+
+    @media (max-width: 720px) {
+      .shell.app-shell {
+        padding: 8px;
+      }
+
+      .header-actions,
+      .home-actions,
+      .home-mini-stats,
+      .home-path-grid,
+      .function-grid,
+      .career-mode-tabs,
+      .career-ops-stats,
+      .career-ops-grid,
+      .career-score-grid,
+      .career-two-col,
+      .career-ats-grid,
+      .career-deepfit-summary,
+      .gsat-score-grid,
+      .gsat-score-summary {
+        grid-template-columns: 1fr;
+      }
+
+      .home-title {
+        font-size: 1.45rem;
+      }
+
+      .home-intro,
+      .home-status-panel,
+      .home-function-hub,
+      .home-panel,
+      .career-panel,
+      .career-results-shell,
+      .gsat-panel,
+      .gsat-results-shell {
+        padding: 14px;
+      }
+
+      .editor-command-actions {
+        grid-template-columns: 1fr;
+      }
+
+      .cv-browser-section > summary {
+        grid-template-columns: 34px minmax(0, 1fr) 18px;
+      }
+
+      .cv-browser-state {
+        grid-column: 2;
+        grid-row: 3;
+        justify-self: start;
+      }
+
+      .career-dossier-head,
+      .career-match-row,
+      .career-explore-card {
+        align-items: flex-start;
+        min-height: auto;
+        padding: 14px;
+      }
+
+      .career-match-score {
+        min-width: 44px;
+        font-size: 22px;
+      }
+
+      .career-upload-title {
+        font-size: 16px;
+      }
+
+      .career-upload-zone {
+        min-height: 160px;
+        padding: 24px 16px;
+      }
+
+      .career-upload-icon {
+        width: 36px;
+        height: 36px;
+      }
+
+      .career-selected-file {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+    }
+
+    body.public-share-mode .app-shell {
+      display: block;
+      padding: 18px;
+    }
+
+    body.public-share-mode .app-chrome {
+      display: none !important;
+    }
+
+    body.public-share-mode .app-main {
+      padding: 0;
+    }
+
+    @media print {
+      .app-chrome,
+      .app-main > .app-page:not(#page-cv),
+      #page-cv > *:not(.workspace),
+      .preview-toolbar {
+        display: none !important;
+      }
+
+      .shell.app-shell,
+      .app-main,
+      #page-cv,
+      #page-cv .workspace {
+        display: block !important;
+        width: auto !important;
+        min-height: 0 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+      }
+    }
+  </style>
 </head>
 <body>
   <div id="toastRegion" class="toast-region" aria-live="polite" aria-atomic="true"></div>
@@ -5897,13 +7015,14 @@
     </div>
   </div>
 
-  <main class="shell">
+  <main class="shell app-shell">
+    <aside class="app-chrome" aria-label="全域工作區">
     <header class="page-header">
       <div class="brand">
         <div class="brand-mark">CV</div>
         <div class="brand-copy">
           <strong>CV Studio</strong>
-          <span>用漂亮版型把履歷整理成可登入、可儲存、可下載的作品頁。</span>
+          <span>履歷、作品集、求職追蹤與落點分析工作台。</span>
         </div>
       </div>
       <div class="header-actions">
@@ -5934,7 +7053,7 @@
 
     <nav class="app-nav-shell" aria-label="主要功能">
       <button id="featureMenuBtn" class="feature-menu-trigger" type="button" aria-expanded="false" aria-controls="featureMenuPanel">
-        <span class="feature-menu-label">功能中心</span>
+        <span class="feature-menu-label">目前工作區</span>
         <strong id="featureMenuCurrent">主畫面</strong>
         <span class="feature-menu-caret" aria-hidden="true">⌄</span>
       </button>
@@ -5944,35 +7063,52 @@
       </div>
       <div id="featureMenuPanel" class="app-tabs feature-menu-panel" hidden>
         <button class="app-tab active" data-tab="home" type="button">
-          <strong>主畫面</strong>
-          <span>進度、入口與下一步</span>
+          <span class="app-tab-icon" aria-hidden="true">01</span>
+          <span class="app-tab-copy">
+            <strong>總覽</strong>
+            <span>進度、入口與下一步</span>
+          </span>
         </button>
         <button class="app-tab" data-tab="cv" type="button">
-          <strong>CV 履歷</strong>
-          <span>模板、編輯、PDF 輸出</span>
+          <span class="app-tab-icon" aria-hidden="true">CV</span>
+          <span class="app-tab-copy">
+            <strong>CV 履歷</strong>
+            <span>模板、編輯、PDF 輸出</span>
+          </span>
         </button>
         <button class="app-tab" data-tab="portfolio" type="button">
-          <strong>學習歷程</strong>
-          <span>章節、圖片、成果頁</span>
+          <span class="app-tab-icon" aria-hidden="true">PF</span>
+          <span class="app-tab-copy">
+            <strong>學習歷程</strong>
+            <span>章節、圖片、成果頁</span>
+          </span>
         </button>
         <button class="app-tab" data-tab="career" type="button">
-          <strong>求職顧問</strong>
-          <span>AI 分析、職缺適配、求職信</span>
+          <span class="app-tab-icon" aria-hidden="true">AI</span>
+          <span class="app-tab-copy">
+            <strong>Career Ops</strong>
+            <span>AI 分析、職缺適配、求職信</span>
+          </span>
         </button>
         <button class="app-tab" data-tab="gsat" type="button">
-          <strong>學測落點</strong>
-          <span>校系篩選與落點分析</span>
+          <span class="app-tab-icon" aria-hidden="true">GS</span>
+          <span class="app-tab-copy">
+            <strong>學測落點</strong>
+            <span>校系篩選與落點分析</span>
+          </span>
         </button>
       </div>
     </nav>
+    </aside>
 
+    <section class="app-main" aria-label="目前功能內容">
     <div id="page-home" class="app-page active">
     <section class="home-dashboard" aria-label="CV Studio 主畫面">
       <div class="home-intro">
         <div>
-          <span class="home-kicker">CV Studio 工作台</span>
+          <span class="home-kicker">申請工作台</span>
           <h1 class="home-title">今天先完成一版可送出的申請資料。</h1>
-          <p class="home-lead">履歷、學習歷程、學測落點與同步狀態集中在同一個入口；登入後才會顯示個人進度。</p>
+          <p class="home-lead">履歷、學習歷程、職缺追蹤與學測落點集中在同一個工作台；每個模組保留自己的進度與輸出。</p>
         </div>
         <div class="home-actions">
           <button id="startEditingBtn" class="home-action primary" type="button">開始履歷</button>
@@ -6069,8 +7205,8 @@
     <section class="home-function-hub" aria-label="功能中心">
       <div class="home-function-head">
         <div>
-          <span class="home-kicker">功能中心</span>
-          <h2>依照任務展開，不必一次看完所有工具。</h2>
+          <span class="home-kicker">任務入口</span>
+          <h2>選一條路徑開始。</h2>
         </div>
         <button id="openFeatureMenuBtn" class="home-action tertiary" type="button">展開全部功能</button>
       </div>
@@ -7166,13 +8302,14 @@
           <div id="careerOpsSection" hidden>
             <div class="career-panel-label">大量職缺匯入</div>
             <textarea id="careerOpsImportInput" class="career-textarea" placeholder="貼上多筆職缺描述，每筆用 --- 分隔。建議包含公司、職稱、連結、職責與要求技能；只有 URL 的職缺會先進追蹤器，但需要補上描述才能評估。"></textarea>
-            <div class="career-ops-help">支援貼上 JD / URL 清單、匯入後端職缺快照與批次 AI 評估；本機引擎會同步產生 GitHub career-ops 風格 A-G 報告、4.0/5 投遞門檻、Block G 合法性與客製化行動。</div>
+            <div class="career-ops-help">支援貼上 JD / URL 清單、匯入後端職缺快照、全職缺池找最佳與批次 AI 評估；本機引擎會同步產生 GitHub career-ops 風格 A-G 報告、4.0/5 投遞門檻、Block G 合法性與客製化行動。</div>
             <div class="career-ops-actions">
               <button id="careerOpsImportBtn" class="career-link-btn" type="button">匯入到追蹤器</button>
               <button id="careerOpsImportSnapshotBtn" class="career-link-btn" type="button">匯入後端職缺快照</button>
               <button id="careerOpsSyncSnapshotBtn" class="career-link-btn" type="button">同步今日快照</button>
               <button id="careerOpsImportSingaporeBtn" class="career-link-btn" type="button">匯入新加坡職缺快照</button>
               <button id="careerOpsRunLocalEngineBtn" class="career-link-btn" type="button">本機分析引擎</button>
+              <button id="careerOpsRunFullPoolBtn" class="career-link-btn" type="button">全職缺找最佳</button>
               <button id="careerOpsRunBatchBtn" class="career-link-btn" type="button">AI 批次評估</button>
               <button id="careerOpsExportCsvBtn" class="career-link-btn" type="button">匯出追蹤 CSV</button>
             </div>
@@ -7239,9 +8376,9 @@
 
           <!-- Tab: Resume Upload -->
           <div id="careerUploadArea" hidden>
-            <div style="max-width:560px;margin:0 auto;">
-              <h3 style="margin:0 0 6px;font-size:18px;font-weight:800;color:var(--ink);">上傳履歷，本機比對 50-100 個職缺</h3>
-              <p style="margin:0 0 20px;font-size:13px;color:var(--muted);line-height:1.6;">系統會使用左側 API Key 在瀏覽器解析履歷，再直接於前端比對職缺資料庫並回傳三層結果：深度評估（Layer A）、標準比對（Layer B）、探索訊號（Layer C）。</p>
+            <div class="career-upload-card">
+              <h3 class="career-upload-title">上傳履歷，本機比對 50-100 個職缺</h3>
+              <p class="career-upload-copy">系統會使用左側 API Key 在瀏覽器解析履歷，再直接於前端比對職缺資料庫並回傳三層結果：深度評估（Layer A）、標準比對（Layer B）、探索訊號（Layer C）。</p>
               <label class="career-upload-zone" id="careerUploadZone">
                 <input type="file" id="careerResumeFile" accept=".pdf,.txt,.md,.docx" />
                 <svg class="career-upload-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
@@ -7253,15 +8390,21 @@
                 <div class="career-upload-label">拖曳履歷至此，或點擊選擇檔案</div>
                 <div class="career-upload-sub">支援 PDF、TXT、Markdown（最大 10MB）</div>
               </label>
-              <div id="careerUploadStatus" style="margin-top:14px;font-size:13px;color:var(--muted);display:none;"></div>
-              <div id="careerUploadProfilePreview" style="margin-top:16px;display:none;"></div>
-              <div style="margin-top:20px;">
+              <div id="careerSelectedResumeFile" class="career-selected-file" style="display:none;"></div>
+              <div id="careerUploadStatus" class="career-upload-status" style="display:none;"></div>
+              <div id="careerUploadProfilePreview" class="career-upload-profile-preview" style="display:none;"></div>
+              <div class="career-upload-actions">
+                <button id="careerParseResumeBtn" class="career-link-btn" type="button" style="display:none;">解析已選履歷</button>
                 <button id="careerRunAnalysisBtn" class="career-analyze-btn" type="button" style="display:none;">開始本機職缺比對</button>
               </div>
-              <div style="margin-top:24px;padding-top:18px;border-top:1px solid var(--line);">
-                <div style="font-size:12px;font-weight:800;letter-spacing:0.06em;text-transform:uppercase;color:var(--muted);margin-bottom:10px;">或直接使用靜態快照分析</div>
-                <p style="font-size:12.5px;color:var(--muted);line-height:1.6;margin:0 0 10px;">如果你已在本機跑過 <code>npm run career-ops:pipeline</code>，點下方直接讀取已產生的 Deep Fit 結果：</p>
-                <button id="careerLoadStaticDeepFit" class="career-link-btn" type="button">讀取本機快照結果</button>
+              <div class="career-upload-dev-snapshot">
+                <div class="career-upload-dev-title">開發 / 本機快照（非你的履歷）</div>
+                <p class="career-upload-dev-copy">這只會讀取專案內建的舊 Deep Fit 快照，用來檢查版面；不代表目前上傳履歷的分析結果。</p>
+                <div class="career-upload-dev-actions">
+                  <button id="careerLoadStaticDeepFit" class="career-link-btn" type="button">讀取本機快照結果</button>
+                  <button id="careerViewStaticDeepFit" class="career-link-btn" type="button" style="display:none;">查看快照結果</button>
+                </div>
+                <div id="careerStaticSnapshotStatus" class="career-upload-static-status" style="display:none;"></div>
               </div>
             </div>
           </div>
@@ -7376,6 +8519,7 @@
       </div>
     </div><!-- /page-gsat -->
 
+    </section>
   </main>
 
   <!-- ===== FLOATING FORMAT TOOLBAR ===== -->
@@ -14121,8 +15265,9 @@
         const trigger = document.getElementById("featureMenuBtn");
         const panel = document.getElementById("featureMenuPanel");
         if (!trigger || !panel) return;
-        trigger.setAttribute("aria-expanded", open ? "true" : "false");
-        panel.hidden = !open;
+        const persistentNav = window.matchMedia?.("(min-width: 1041px)")?.matches;
+        trigger.setAttribute("aria-expanded", persistentNav || open ? "true" : "false");
+        panel.hidden = persistentNav ? false : !open;
       }
 
       function updateFeatureMenuCurrent(tabId) {
@@ -15281,6 +16426,9 @@
         document.addEventListener("keydown", (event) => {
           if (event.key === "Escape") setFeatureMenuOpen(false);
         });
+        window.addEventListener("resize", () => {
+          setFeatureMenuOpen(false);
+        });
 
         /* Tab buttons */
         document.querySelectorAll(".app-tab").forEach(btn => {
@@ -16115,9 +17263,11 @@ Schema:
 
 	        /* ── MODE 5: Career Ops batch pipeline ── */
 	        const CAREER_OPS_STORAGE_KEY = "cv-studio-career-ops-v1";
+	        const CAREER_OPS_COUNTRY_FILTER_KEY = "cv-studio-career-ops-country-filter-v1";
 	        const CAREER_OPS_SNAPSHOT_SYNC_KEY = "cv-studio-career-ops-snapshot-sync-v1";
 	        const CAREER_OPS_SNAPSHOT_SYNC_INTERVAL_MS = 24 * 60 * 60 * 1000;
 	        const CAREER_OPS_TRACKER_LIMIT = 1000;
+	        const CAREER_OPS_FULL_POOL_IMPORT_LIMIT = 250;
 	        const CAREER_OPS_STATUSES = ["待評估", "強烈投遞", "值得投遞", "觀望", "略過", "已投遞", "待追蹤", "面試中", "Offer", "拒絕", "已下架"];
 	        const CAREER_OPS_PROGRESS_STATUSES = new Set(["已投遞", "待追蹤", "面試中", "Offer", "拒絕"]);
 	        const CAREER_OPS_LOCAL_SKILL_TERMS = [
@@ -16131,6 +17281,13 @@ Schema:
 	        let careerOpsCloudSyncTimer = null;
 	        let careerOpsCloudDisabled = false;
 	        let careerOpsSelectedJobId = "";
+	        let careerOpsCountryFilter = (() => {
+	          try {
+	            return localStorage.getItem(CAREER_OPS_COUNTRY_FILTER_KEY) || "all";
+	          } catch {
+	            return "all";
+	          }
+	        })();
 	        let careerOpsReportsLoaded = false;
 	        const careerOpsReports = { sourceStrategy: "", sourceFlex: "", sourceQuality: "", search: "", applicationKit: "", deepResearch: "", deepFit: "", compensation: "", storyBank: "", parallel: "", learning: "", modes: "" };
 
@@ -17019,6 +18176,21 @@ Schema:
 	        // DEEP FIT DASHBOARD — Layer A / B / C
 	        // ──────────────────────────────────────────────────
 
+	        const careerOpsBundledDeepFitSnapshot = window.CV_CAREER_OPS_DEEP_FIT || null;
+	        let careerOpsStaticDeepFitSnapshot = careerOpsBundledDeepFitSnapshot;
+	        if (careerOpsStaticDeepFitSnapshot) {
+	          window._careerOpsBundledDeepFitSnapshot = careerOpsStaticDeepFitSnapshot;
+	          window._careerOpsStaticDeepFitSnapshot = careerOpsStaticDeepFitSnapshot;
+	          window.CV_CAREER_OPS_DEEP_FIT = null;
+	        }
+
+	        function careerOpsGetStaticDeepFitSnapshot() {
+	          return careerOpsStaticDeepFitSnapshot
+	            || window._careerOpsStaticDeepFitSnapshot
+	            || window._careerOpsBundledDeepFitSnapshot
+	            || null;
+	        }
+
 	        let careerOpsActiveTab = "tracker";
 
 	        function careerOpsSetTab(tab) {
@@ -17052,6 +18224,13 @@ Schema:
 	          return (tags || []).map(t => `<span class="career-dossier-tag ${cssClass}">${careerText(t)}</span>`).join("");
 	        }
 
+	        function renderLayerMetaItems(items) {
+	          return items
+	            .filter(Boolean)
+	            .map(item => `<span>${item}</span>`)
+	            .join(`<span class="career-meta-dot">·</span>`);
+	        }
+
 	        function renderLayerACard(d) {
 	          const url = d.url || "";
 	          const safeKey = careerText(d.jobKey || d.company || "").replace(/[^a-z0-9]/gi, "");
@@ -17063,7 +18242,7 @@ Schema:
 	                  <div class="career-dossier-title">${careerText(d.title)}</div>
 	                  <div class="career-dossier-meta">
 	                    <span class="career-layer-badge career-layer-a">Layer A</span>
-	                    ${d.confidence ? `&nbsp;${careerText(d.confidence)} confidence` : ""}
+	                    ${d.confidence ? `<span>${careerText(d.confidence)} confidence</span>` : ""}
 	                  </div>
 	                </div>
 	                <div class="career-dossier-score">
@@ -17103,29 +18282,42 @@ Schema:
 
 	        function renderLayerBRow(m) {
 	          const url = m.url || "";
-	          return `
-	            <div class="career-match-row"${url ? ` onclick="window.open('${careerText(url)}','_blank','noreferrer')"` : ""}>
+	          const content = `
 	              <div class="career-match-info">
 	                <div class="career-match-title">${careerText(m.title)}</div>
 	                <div class="career-match-meta">
-	                  ${careerText([m.company, m.location].filter(Boolean).join(" · "))}
-	                  &nbsp;·&nbsp;<span class="career-layer-badge career-layer-b">Layer B</span>
-	                  ${m.keywordMisses?.length ? `&nbsp;· 缺口：${careerText(m.keywordMisses.slice(0, 2).join(", "))}` : ""}
+	                  ${renderLayerMetaItems([
+	                    careerText(m.company || ""),
+	                    careerText(m.location || ""),
+	                    `<span class="career-layer-badge career-layer-b">Layer B</span>`,
+	                    m.keywordMisses?.length ? `缺口：${careerText(m.keywordMisses.slice(0, 2).join(", "))}` : ""
+	                  ])}
 	                </div>
 	              </div>
-	              <div class="career-match-score">${careerText(m.score || "—")}</div>
-	            </div>`;
+	              <div class="career-match-score">${careerText(m.score || "—")}</div>`;
+	          return url
+	            ? `<a class="career-match-row" href="${careerText(url)}" target="_blank" rel="noreferrer noopener">${content}</a>`
+	            : `<div class="career-match-row">${content}</div>`;
 	        }
 
 	        function renderLayerCCard(s) {
 	          const url = s.url || "";
-	          return `
-	            <div class="career-explore-card">
+	          const content = `
+	            <div class="career-match-info">
 	              <div class="career-explore-title" title="${careerText(s.title)}">${careerText(s.title)}</div>
-	              <div class="career-explore-company">${careerText([s.company, s.location].filter(Boolean).join(" · "))}</div>
-	              ${s.topGap ? `<div class="career-explore-gap">缺口：${careerText(s.topGap)}</div>` : ""}
-	              ${url ? `<a href="${careerText(url)}" target="_blank" rel="noreferrer noopener" style="font-size:11px;color:var(--accent-2);text-decoration:none;display:block;margin-top:6px;">開啟 →</a>` : ""}
-	            </div>`;
+	              <div class="career-match-meta">
+	                ${renderLayerMetaItems([
+	                  careerText(s.company || ""),
+	                  careerText(s.location || ""),
+	                  `<span class="career-layer-badge career-layer-c">Layer C</span>`,
+	                  s.topGap ? `<span class="career-explore-gap">缺口：${careerText(s.topGap)}</span>` : ""
+	                ])}
+	              </div>
+	            </div>
+	            <div class="career-match-score">${careerText(s.score || "—")}</div>`;
+	          return url
+	            ? `<a class="career-explore-card" href="${careerText(url)}" target="_blank" rel="noreferrer noopener">${content}</a>`
+	            : `<div class="career-explore-card">${content}</div>`;
 	        }
 
 	        function renderDeepFitDashboard() {
@@ -17136,8 +18328,8 @@ Schema:
 	            area.innerHTML = `
 	              <div class="career-ops-empty">
 	                <strong>尚未產生 Deep Fit 分析。</strong><br>
-	                在本機執行 <code>npm run career-ops:pipeline</code> 後，結果會自動載入；<br>
-	                或切換到「履歷上傳」頁面，上傳履歷進行線上分析。<br><br>
+	                請先切換到「履歷上傳」，上傳你的履歷並按「開始本機職缺比對」。<br>
+	                內建靜態快照不會自動顯示；需要檢查舊快照時，可在履歷上傳頁手動讀取。<br><br>
 	                <button type="button" onclick="careerOpsSetTab('upload')" style="margin-top:10px;padding:8px 20px;border-radius:10px;border:1px solid var(--line);background:#fff;cursor:pointer;font-size:13px;font-weight:700;">前往履歷上傳</button>
 	              </div>`;
 	            return;
@@ -17154,6 +18346,9 @@ Schema:
 	            const dotClass = { healthy: "health-healthy", warning: "health-warning", degraded: "health-degraded", critical: "health-critical" }[h.status] || "health-warning";
 	            healthHtml = `<div class="career-health-bar"><div class="career-health-dot ${dotClass}"></div><span>職缺庫狀態：<strong>${careerText(h.status)}</strong> · 共 ${careerText(h.total)} 筆 · 失效率 ${careerText(h.expiredRatePct)}</span></div>`;
 	          }
+	          const sourceNoteHtml = window._careerOpsDeepFitSource === "static"
+	            ? `<div class="career-ops-help" style="margin:0 0 14px;">目前顯示的是本機靜態快照結果，不是你上傳履歷後產生的 Deep Fit。</div>`
+	            : "";
 
 	          const layerAHtml = layerA.length ? `
 	            <div class="career-layer-header">
@@ -17180,6 +18375,7 @@ Schema:
 	            <div class="career-explore-grid">${layerC.map(renderLayerCCard).join("")}</div>` : "";
 
 	          area.innerHTML = `
+	            ${sourceNoteHtml}
 	            ${healthHtml}
 	            <div class="career-deepfit-summary">
 	              <div class="career-deepfit-summary-card"><div class="career-deepfit-summary-num">${careerText(summary.totalResults)}</div><div class="career-deepfit-summary-label">比對總數</div></div>
@@ -17376,13 +18572,9 @@ Schema:
 		          };
 		        }
 
-		        async function careerOpsLoadSnapshotJobs() {
-		          const snapshot = window.CV_CAREER_OPS_JOBS || {};
-		          if (Array.isArray(snapshot.jobs) && snapshot.jobs.length) return snapshot.jobs;
-		          const res = await fetch("./data/app/career-ops-jobs.json", { cache: "no-store" });
-		          if (!res.ok) throw new Error("無法讀取職缺快照");
-		          const data = await res.json();
-		          return Array.isArray(data?.jobs) ? data.jobs : [];
+		        async function careerOpsLoadSnapshotJobs(options = {}) {
+		          const snapshot = await loadCareerOpsFullPoolSnapshot(options);
+		          return Array.isArray(snapshot?.jobs) ? snapshot.jobs : [];
 		        }
 
 		        async function careerOpsSaveLocalAnalysisToCloud(result, profileId) {
@@ -17453,6 +18645,7 @@ Schema:
 		          };
 		          const result = { summary, layerA: classified.layerA, layerB: classified.layerB, layerC: classified.layerC };
 		          window.CV_CAREER_OPS_DEEP_FIT = result;
+		          window._careerOpsDeepFitSource = "user-upload";
 		          const analysisId = await careerOpsSaveLocalAnalysisToCloud(result, profileId);
 		          result.analysisId = analysisId;
 		          setStatus(analysisId ? "✓ 本機分析完成，結果已儲存，可產生分享連結。" : "✓ 本機分析完成。登入後可儲存並產生分享連結。");
@@ -17512,17 +18705,77 @@ Schema:
 	          const zone = $c("careerUploadZone");
 	          const fileInput = $c("careerResumeFile");
 	          const statusEl = $c("careerUploadStatus");
+	          const selectedFileEl = $c("careerSelectedResumeFile");
+	          const parseBtn = $c("careerParseResumeBtn");
 	          const profilePreview = $c("careerUploadProfilePreview");
 	          const runBtn = $c("careerRunAnalysisBtn");
 	          const loadStaticBtn = $c("careerLoadStaticDeepFit");
+	          const viewStaticBtn = $c("careerViewStaticDeepFit");
+	          const staticStatusEl = $c("careerStaticSnapshotStatus");
 	          if (!zone || !fileInput) return;
 
+	          function careerOpsFormatFileSize(bytes) {
+	            const size = Number(bytes || 0);
+	            if (size >= 1024 * 1024) return `${(size / 1024 / 1024).toFixed(size >= 10 * 1024 * 1024 ? 0 : 1)} MB`;
+	            if (size >= 1024) return `${Math.round(size / 1024)} KB`;
+	            return `${size} B`;
+	          }
+
+	          function showCareerSelectedFile(file, state = "已收到") {
+	            if (!file) return;
+	            zone.classList.add("has-file");
+	            const lowerName = String(file.name || "").toLowerCase();
+	            const type = lowerName.endsWith(".pdf")
+	              ? "PDF"
+	              : lowerName.endsWith(".md")
+	                ? "Markdown"
+	                : lowerName.endsWith(".txt")
+	                  ? "TXT"
+	                  : file.type || "檔案";
+	            if (selectedFileEl) {
+	              selectedFileEl.style.display = "flex";
+	              selectedFileEl.innerHTML = `
+	                <div class="career-selected-file-main">
+	                  <div class="career-selected-file-name">${careerText(file.name || "未命名履歷")}</div>
+	                  <div class="career-selected-file-meta">${careerText(type)} · ${careerText(careerOpsFormatFileSize(file.size))}</div>
+	                </div>
+	                <div class="career-selected-file-state">${careerText(state)}</div>`;
+	            }
+	          }
+
+	          function setCareerUploadStatus(message) {
+	            if (!statusEl) return;
+	            statusEl.style.display = "block";
+	            statusEl.textContent = message;
+	          }
+
+	          function setCareerStaticSnapshotStatus(message) {
+	            if (!staticStatusEl) return;
+	            staticStatusEl.style.display = "block";
+	            staticStatusEl.textContent = message;
+	          }
+
 	          loadStaticBtn?.addEventListener("click", () => {
-	            if (window.CV_CAREER_OPS_DEEP_FIT) {
-	              careerOpsSetTab("deepfit");
+	            const snapshot = careerOpsGetStaticDeepFitSnapshot();
+	            if (snapshot) {
+	              careerOpsStaticDeepFitSnapshot = snapshot;
+	              window._careerOpsStaticDeepFitSnapshot = snapshot;
+	              if (viewStaticBtn) viewStaticBtn.style.display = "block";
+	              setCareerStaticSnapshotStatus("已讀取本機快照，尚未切換畫面。這不是你上傳履歷的分析結果；需要檢查版面時，再按「查看快照結果」。");
 	            } else {
 	              alert("尚未載入靜態快照。請先執行 npm run career-ops:pipeline，重新整理頁面後再試。");
 	            }
+	          });
+
+	          viewStaticBtn?.addEventListener("click", () => {
+	            const snapshot = careerOpsGetStaticDeepFitSnapshot();
+	            if (!snapshot) {
+	              setCareerStaticSnapshotStatus("尚未讀取本機快照，請先按「讀取本機快照結果」。");
+	              return;
+	            }
+	            window.CV_CAREER_OPS_DEEP_FIT = snapshot;
+	            window._careerOpsDeepFitSource = "static";
+	            careerOpsSetTab("deepfit");
 	          });
 
 	          zone.addEventListener("dragover", e => { e.preventDefault(); zone.classList.add("dragover"); });
@@ -17538,22 +18791,35 @@ Schema:
 
 	          async function processResumeFile(file) {
 	            if (file.size > 10 * 1024 * 1024) { alert("檔案超過 10MB 上限"); return; }
-	            if (!($c("claudeApiKey")?.value || "").trim()) {
-	              if (statusEl) {
-	                statusEl.style.display = "block";
-	                statusEl.textContent = "請先在左側填入自己的 AI API Key。履歷解析會用你的 key 在瀏覽器完成，不會使用站方 token。";
-	              }
-	              return;
+	            window._careerOpsPendingResumeFile = file;
+	            showCareerSelectedFile(file, "已收到");
+	            setCareerUploadStatus(`已收到 ${file.name || "履歷檔案"}（${careerOpsFormatFileSize(file.size)}）。`);
+	            if (parseBtn) {
+	              parseBtn.style.display = "block";
+	              parseBtn.disabled = false;
+	              parseBtn.textContent = "解析已選履歷";
 	            }
-	            if (statusEl) { statusEl.style.display = "block"; statusEl.textContent = "解析中…"; }
 	            if (profilePreview) profilePreview.style.display = "none";
 	            if (runBtn) runBtn.style.display = "none";
+	            window.CV_CAREER_OPS_DEEP_FIT = null;
+	            window._careerOpsDeepFitSource = "";
+	            window._careerOpsLastAnalysisId = "";
+	            if (!($c("claudeApiKey")?.value || "").trim()) {
+	              setCareerUploadStatus(`已收到 ${file.name || "履歷檔案"}。請先在左側填入自己的 AI API Key，再按「解析已選履歷」。履歷解析會用你的 key 在瀏覽器完成，不會使用站方 token。`);
+	              return;
+	            }
+	            showCareerSelectedFile(file, "解析中");
+	            setCareerUploadStatus(`已收到 ${file.name || "履歷檔案"}，正在解析…`);
+	            if (parseBtn) {
+	              parseBtn.disabled = true;
+	              parseBtn.textContent = "解析中…";
+	            }
 		            try {
 		              const client = window.cvStudioState?.client;
 		              const session = (await client?.auth?.getSession?.())?.data?.session;
 		              const user = window.cvStudioState?.user || session?.user;
 		              const resumeText = await readCareerResumeText(file);
-		              if (statusEl) statusEl.textContent = "使用你的 API Key 解析履歷中…";
+		              setCareerUploadStatus("使用你的 API Key 解析履歷中…");
 		              const profile = await extractCareerOpsProfileWithUserKey(resumeText);
 		              let saved = null;
 		              if (client && session && user) {
@@ -17563,9 +18829,10 @@ Schema:
 		                  console.warn("[career-ops] profile cloud save failed:", cloudErr.message);
 		                }
 		              }
-		              if (statusEl) statusEl.textContent = saved?.id
+		              showCareerSelectedFile(file, "解析完成");
+		              setCareerUploadStatus(saved?.id
 		                ? "✓ 履歷解析完成，已儲存到帳號。"
-		                : "✓ 履歷解析完成，將以本機暫存分析。";
+		                : "✓ 履歷解析完成，將以本機暫存分析。");
 		              const p = profile || {};
 		              if (profilePreview) {
 		                profilePreview.style.display = "block";
@@ -17580,11 +18847,26 @@ Schema:
 		              window._careerOpsExtractedProfileText = resumeText;
 		              window._careerOpsExtractedProfileId = saved?.id || "";
 		              window._careerOpsLastAnalysisId = "";
+		              if (parseBtn) parseBtn.style.display = "none";
 		              if (runBtn) runBtn.style.display = "block";
 		            } catch (err) {
-		              if (statusEl) statusEl.textContent = "解析失敗：" + err.message;
+		              showCareerSelectedFile(file, "解析失敗");
+		              setCareerUploadStatus("解析失敗：" + err.message);
+		              if (parseBtn) {
+		                parseBtn.disabled = false;
+		                parseBtn.textContent = "重新解析已選履歷";
+		              }
 	            }
 	          }
+
+	          parseBtn?.addEventListener("click", () => {
+	            const file = window._careerOpsPendingResumeFile;
+	            if (!file) {
+	              setCareerUploadStatus("請先選擇一份履歷檔案。");
+	              return;
+	            }
+	            processResumeFile(file);
+	          });
 
 		          runBtn?.addEventListener("click", async () => {
 		            let profile = window._careerOpsExtractedProfile || null;
@@ -17906,7 +19188,8 @@ Schema:
 	            : `每日快照已檢查：${result.matched}/${result.total} 筆追蹤職缺已是最新${date}。`;
 	        }
 
-	        function syncCareerOpsSnapshotNow() {
+	        async function syncCareerOpsSnapshotNow() {
+	          await loadCareerOpsFullPoolSnapshot();
 	          const result = syncCareerOpsTrackedJobsWithSnapshot({ force: true });
 	          if (result.status === "missing-snapshot") {
 	            showError("目前沒有後端職缺快照。請先執行每日 Career Ops 更新流程。");
@@ -18036,6 +19319,48 @@ Schema:
 	          return additions.length;
 	        }
 
+	        function mergeCareerOpsRankedJobs(rankedJobs) {
+	          const currentJobs = loadCareerOpsJobs();
+	          const currentByKey = new Map();
+	          currentJobs.forEach((job) => {
+	            const normalized = normalizeCareerOpsJob(job);
+	            const key = normalized.jobKey || careerOpsJobKey(normalized);
+	            if (key) currentByKey.set(key, normalized);
+	          });
+	          const rankedKeys = new Set();
+	          const now = new Date().toISOString();
+	          const mergedRanked = rankedJobs.map((job, index) => {
+	            const ranked = normalizeCareerOpsJob({
+	              ...job,
+	              id: job.id || careerOpsId(),
+	              jobKey: job.jobKey || careerOpsJobKey(job),
+	              updatedAt: now
+	            }, index);
+	            const key = ranked.jobKey || careerOpsJobKey(ranked);
+	            rankedKeys.add(key);
+	            const existing = currentByKey.get(key);
+	            if (!existing) return ranked;
+	            return normalizeCareerOpsJob({
+	              ...ranked,
+	              id: existing.id,
+	              status: CAREER_OPS_PROGRESS_STATUSES.has(existing.status) ? existing.status : ranked.status,
+	              notes: existing.notes,
+	              contactName: existing.contactName,
+	              contactEmail: existing.contactEmail,
+	              nextFollowUpAt: existing.nextFollowUpAt,
+	              feedback: existing.feedback,
+	              tailored: existing.tailored || ranked.tailored,
+	              createdAt: existing.createdAt || ranked.createdAt,
+	              updatedAt: now
+	            }, index);
+	          });
+	          const rest = currentJobs.filter((job) => !rankedKeys.has(job.jobKey || careerOpsJobKey(job)));
+	          const next = [...mergedRanked, ...rest].slice(0, CAREER_OPS_TRACKER_LIMIT);
+	          saveCareerOpsJobs(next);
+	          careerOpsSelectedJobId = mergedRanked[0]?.id || careerOpsSelectedJobId;
+	          return { merged: mergedRanked.length, total: next.length };
+	        }
+
 	        function importCareerOpsJobs() {
 	          const input = $c("careerOpsImportInput");
 	          const incoming = splitCareerOpsInput(input?.value || "").map(parseCareerOpsChunk);
@@ -18051,8 +19376,8 @@ Schema:
 	          if (input) input.value = "";
 	        }
 
-	        function importCareerOpsSnapshot() {
-	          const snapshot = window.CV_CAREER_OPS_JOBS || {};
+	        async function importCareerOpsSnapshot() {
+	          const snapshot = await loadCareerOpsFullPoolSnapshot();
 	          const jobs = Array.isArray(snapshot.jobs) ? snapshot.jobs : [];
 	          if (!jobs.length) {
 	            showError("目前沒有後端職缺快照。請先執行 npm run career-ops:scrape 產生 data/app/career-ops-jobs.js。");
@@ -18070,7 +19395,9 @@ Schema:
 	          try {
 	            const response = await fetch("./data/app/career-ops-singapore-jobs.json", { cache: "no-store" });
 	            if (!response.ok) return {};
-	            return await response.json();
+	            const snapshot = await response.json();
+	            window.CV_CAREER_OPS_SINGAPORE_JOBS = snapshot;
+	            return snapshot;
 	          } catch {
 	            return {};
 	          }
@@ -18095,6 +19422,236 @@ Schema:
 	          }
 	        }
 
+	        function careerOpsSnapshotManifestUrls() {
+	          const config = window.CV_STUDIO_CONFIG || {};
+	          const urls = [];
+	          const directUrl = String(config.careerOpsSnapshotManifestUrl || "").trim();
+	          if (directUrl) urls.push(directUrl);
+	          const supabaseUrl = String(config.supabaseUrl || "").trim().replace(/\/+$/g, "");
+	          const bucket = String(config.careerOpsSnapshotBucket || "career-ops-snapshots").trim();
+	          const prefix = String(config.careerOpsSnapshotPrefix || "career-ops/latest").trim().replace(/^\/+|\/+$/g, "");
+	          if (supabaseUrl && !supabaseUrl.includes("your-project") && bucket) {
+	            const objectPath = [prefix, "manifest.json"].filter(Boolean).map(part =>
+	              String(part).split("/").filter(Boolean).map(encodeURIComponent).join("/")
+	            ).join("/");
+	            urls.push(`${supabaseUrl}/storage/v1/object/public/${encodeURIComponent(bucket)}/${objectPath}`);
+	          }
+	          urls.push("./data/app/career-ops-snapshot/manifest.json");
+	          return Array.from(new Set(urls));
+	        }
+
+	        async function careerOpsFetchJson(url) {
+	          const response = await fetch(url, { cache: "no-store", mode: "cors" });
+	          if (!response.ok) throw new Error(`HTTP ${response.status}`);
+	          const retry = response.clone();
+	          try {
+	            return await response.json();
+	          } catch (error) {
+	            if (!/\.gz(?:[?#]|$)/i.test(String(url || "")) || typeof DecompressionStream === "undefined") {
+	              throw error;
+	            }
+	            const stream = new Blob([await retry.arrayBuffer()]).stream().pipeThrough(new DecompressionStream("gzip"));
+	            const text = await new Response(stream).text();
+	            return JSON.parse(text);
+	          }
+	        }
+
+	        function careerOpsResolveShardUrl(manifestUrl, shardPath) {
+	          try {
+	            return new URL(shardPath, new URL(".", new URL(manifestUrl, window.location.href))).href;
+	          } catch {
+	            return shardPath;
+	          }
+	        }
+
+	        async function loadCareerOpsShardedSnapshot(manifestUrl, options = {}) {
+	          const manifest = await careerOpsFetchJson(manifestUrl);
+	          const shards = Array.isArray(manifest.shards) ? manifest.shards : [];
+	          if (!shards.length) return {};
+	          const shardJobsByIndex = new Array(shards.length);
+	          let nextShardIndex = 0;
+	          let loadedShardCount = 0;
+	          let loadedJobs = 0;
+	          const shardConcurrency = Math.max(1, Math.min(6, Number(options.shardConcurrency || 4)));
+	          async function loadNextShard() {
+	            while (nextShardIndex < shards.length) {
+	              const index = nextShardIndex;
+	              nextShardIndex += 1;
+	              const shard = shards[index] || {};
+	              const shardPath = shard.path || shard.file;
+	              if (!shardPath) continue;
+	              const shardUrl = careerOpsResolveShardUrl(manifestUrl, shardPath);
+	              const payload = await careerOpsFetchJson(shardUrl);
+	              const shardJobs = Array.isArray(payload.jobs) ? payload.jobs : [];
+	              shardJobsByIndex[index] = shardJobs;
+	              loadedShardCount += 1;
+	              loadedJobs += shardJobs.length;
+	              if (typeof options.onProgress === "function") {
+	                options.onProgress({
+	                  loadedJobs,
+	                  totalJobs: manifest.jobCount || 0,
+	                  shardIndex: loadedShardCount,
+	                  shardCount: shards.length
+	                });
+	              }
+	              if (loadedShardCount % shardConcurrency === 0) await new Promise(resolve => setTimeout(resolve, 0));
+	            }
+	          }
+	          const workers = Array.from({ length: Math.min(shardConcurrency, shards.length) }, () => loadNextShard());
+	          await Promise.all(workers);
+	          const jobs = shardJobsByIndex.flatMap(items => Array.isArray(items) ? items : []);
+	          return {
+	            ...(manifest.sourceSnapshot || {}),
+	            source: manifest.source || "career-ops-snapshot-manifest",
+	            extractedAt: manifest.extractedAt || manifest.generatedAt || "",
+	            generatedAt: manifest.generatedAt || "",
+	            jobCount: jobs.length,
+	            jobs,
+	            snapshotManifest: manifest,
+	            snapshotManifestUrl: manifestUrl,
+	            snapshotStorageMode: "sharded"
+	          };
+	        }
+
+	        async function loadCareerOpsFullPoolSnapshot(options = {}) {
+	          const globalSnapshot = window.CV_CAREER_OPS_JOBS || {};
+	          if (Array.isArray(globalSnapshot.jobs) && globalSnapshot.jobs.length) return globalSnapshot;
+	          for (const manifestUrl of careerOpsSnapshotManifestUrls()) {
+	            try {
+	              const sharded = await loadCareerOpsShardedSnapshot(manifestUrl, options);
+	              if (Array.isArray(sharded.jobs) && sharded.jobs.length) {
+	                window.CV_CAREER_OPS_JOBS = sharded;
+	                return sharded;
+	              }
+	            } catch (error) {
+	              console.warn("[career-ops] snapshot manifest unavailable", manifestUrl, error);
+	            }
+	          }
+	          try {
+	            const response = await fetch("./data/app/career-ops-jobs.json", { cache: "no-store" });
+	            if (!response.ok) return {};
+	            const snapshot = await response.json();
+	            snapshot.snapshotStorageMode = "local-json";
+	            window.CV_CAREER_OPS_JOBS = snapshot;
+	            return snapshot;
+	          } catch {
+	            return {};
+	          }
+	        }
+
+	        function careerOpsFullPoolEligibleJobs(snapshot) {
+	          const snapshotJobs = Array.isArray(snapshot?.jobs) ? snapshot.jobs : [];
+	          return snapshotJobs
+	            .map((job, index) => {
+	              const normalized = normalizeCareerOpsJob(job, index);
+	              normalized.jobKey = normalized.jobKey || careerOpsJobKey(normalized);
+	              return normalized;
+	            })
+	            .filter(job => !job.isExpired && (job.description || "").replace(job.url || "", "").trim().length >= 80);
+	        }
+
+	        function careerOpsFullPoolRankScore(result, job) {
+	          const dims = result.dimensions || {};
+	          const features = result.features || {};
+	          const blockG = result.blockG?.tier || "";
+	          const blockBonus = blockG === "High Confidence" ? 200 : blockG === "Proceed with Caution" ? 0 : -1000;
+	          const salaryBonus = Number(dims.compensation?.score || 0) >= 72 ? 30 : 0;
+	          return Number(result.score || 0) * 10000 +
+	            Number(dims.cvMatch?.score || 0) * 45 +
+	            Number(dims.northStar?.score || 0) * 35 +
+	            Number(dims.culture?.score || 0) * 12 +
+	            Number(dims.redFlags?.score || 0) * 10 +
+	            Number(dims.effort?.score || 0) * 8 +
+	            careerOpsArray(features.profileSkillHits).length * 120 +
+	            careerOpsArray(dims.northStar?.targetRoleHits).length * 100 +
+	            careerOpsArray(features.rareHighValueSkills).length * 80 +
+	            careerOpsArray(features.locationHits).length * 40 +
+	            careerOpsArray(features.companyHits).length * 50 -
+	            careerOpsArray(features.missingProfileSkills).length * 12 +
+	            blockBonus +
+	            careerOpsDescriptionQuality(job).score +
+	            salaryBonus +
+	            (job.isNew ? 25 : 0) +
+	            (job.url ? 10 : 0);
+	        }
+
+	        function careerOpsFullPoolCandidateCompare(a, b) {
+	          return b.score - a.score ||
+	            b.rankScore - a.rankScore ||
+	            String(a.job.company || "").localeCompare(String(b.job.company || "")) ||
+	            String(a.job.title || "").localeCompare(String(b.job.title || ""));
+	        }
+
+	        function careerOpsTrimFullPoolCandidates(candidates, limit) {
+	          if (candidates.length <= limit) return candidates;
+	          candidates.sort(careerOpsFullPoolCandidateCompare);
+	          candidates.length = limit;
+	          return candidates;
+	        }
+
+	        async function runCareerOpsFullPoolRanker() {
+	          const cv = getCvSummary();
+	          if (!cv) {
+	            showError("請先至「CV 履歷」頁填寫或匯入一筆履歷，再掃完整職缺池。");
+	            return;
+	          }
+	          showLoading("正在載入完整職缺池，準備用這份履歷尋找最佳職缺…");
+	          const snapshot = await loadCareerOpsFullPoolSnapshot({
+	            onProgress: ({ loadedJobs, totalJobs, shardIndex, shardCount }) => {
+	              const totalText = totalJobs ? ` / ${Number(totalJobs).toLocaleString()}` : "";
+	              showLoading(`正在載入遠端職缺分片 ${shardIndex.toLocaleString()} / ${shardCount.toLocaleString()}，已載入 ${loadedJobs.toLocaleString()}${totalText} 筆…`);
+	            }
+	          });
+	          const eligible = careerOpsFullPoolEligibleJobs(snapshot);
+	          if (!eligible.length) {
+	            showError("目前沒有可評分的後端職缺快照。請先確認 Supabase Storage manifest 已產生，或執行 Career Ops 更新流程產生 data/app/career-ops-jobs.json / .js。");
+	            return;
+	          }
+	          const profile = careerOpsLocalProfile();
+	          const skillCounts = careerOpsSkillCounts(eligible);
+	          const topLimit = Math.min(CAREER_OPS_FULL_POOL_IMPORT_LIMIT, CAREER_OPS_TRACKER_LIMIT);
+	          const ranked = [];
+	          let chunkBestScore = 0;
+	          const startedAt = Date.now();
+	          for (let i = 0; i < eligible.length; i += 1) {
+	            const job = eligible[i];
+	            const result = careerOpsScoreLocalJob(job, profile, skillCounts);
+	            const candidate = {
+	              job,
+	              result,
+	              score: result.score,
+	              rating: result.rating,
+	              grade: result.grade,
+	              rankScore: careerOpsFullPoolRankScore(result, job)
+	            };
+	            ranked.push(candidate);
+	            chunkBestScore = Math.max(chunkBestScore, result.score);
+	            if (ranked.length > topLimit * 4) {
+	              careerOpsTrimFullPoolCandidates(ranked, topLimit);
+	            }
+	            if (i && i % 2000 === 0) {
+	              showLoading(`正在掃描完整職缺池 ${i.toLocaleString()} / ${eligible.length.toLocaleString()}，目前最高分 ${chunkBestScore}…`);
+	              chunkBestScore = 0;
+	              await new Promise(resolve => setTimeout(resolve, 0));
+	            }
+	          }
+	          careerOpsTrimFullPoolCandidates(ranked, topLimit);
+	          const topCount = Math.min(topLimit, ranked.length);
+	          const runId = Date.now();
+	          const topJobs = ranked.slice(0, topCount).map((item, index) => applyCareerOpsLocalEngineToJob({
+	            ...item.job,
+	            id: `full-pool-${runId}-${index}`,
+	            jobKey: item.job.jobKey || careerOpsJobKey(item.job)
+	          }, profile, skillCounts, { result: item.result }));
+	          const mergeResult = mergeCareerOpsRankedJobs(topJobs);
+	          const elapsedSeconds = Math.round((Date.now() - startedAt) / 100) / 10;
+	          const best = topJobs[0];
+	          const sourceLabel = snapshot.snapshotStorageMode === "sharded" ? "遠端分片快照" : "本機快照";
+	          renderCareerOpsDashboard(
+	            `全職缺池掃描完成：已從${sourceLabel}用目前履歷評分 ${eligible.length.toLocaleString()} 筆職缺，耗時 ${elapsedSeconds} 秒；已把 Top ${mergeResult.merged} 放入 tracker。最佳職缺：${best?.company || ""} / ${best?.title || ""}（${best?.score || "—"}/100）。`
+	          );
+	        }
+
 	        function careerOpsStatusOptions(current) {
 	          return CAREER_OPS_STATUSES.map(status =>
 	            `<option value="${careerText(status)}"${status === current ? " selected" : ""}>${careerText(status)}</option>`
@@ -18106,6 +19663,77 @@ Schema:
 	          const bScore = b.score === "" ? -1 : Number(b.score);
 	          if (bScore !== aScore) return bScore - aScore;
 	          return String(b.updatedAt || "").localeCompare(String(a.updatedAt || ""));
+	        }
+
+	        const CAREER_OPS_COUNTRY_NAME_TO_CODE = {
+	          "australia": "AU",
+	          "canada": "CA",
+	          "france": "FR",
+	          "germany": "DE",
+	          "india": "IN",
+	          "ireland": "IE",
+	          "italy": "IT",
+	          "japan": "JP",
+	          "netherlands": "NL",
+	          "singapore": "SG",
+	          "spain": "ES",
+	          "taiwan": "TW",
+	          "united kingdom": "GB",
+	          "uk": "GB",
+	          "united states": "US",
+	          "united states of america": "US",
+	          "usa": "US"
+	        };
+
+	        function careerOpsCountryKey(job = {}) {
+	          const countryCode = String(job.countryCode || job.sourceCountryCode || job.country_code || job.source_country_code || "").trim().toUpperCase();
+	          if (countryCode) return countryCode;
+	          const market = String(job.sourceMarket || job.market || "").trim().toUpperCase();
+	          if (/^[A-Z]{2}$/.test(market)) return market;
+	          const country = String(job.country || job.sourceCountry || job.source_country || "").trim();
+	          if (country) return CAREER_OPS_COUNTRY_NAME_TO_CODE[country.toLowerCase()] || country;
+	          const location = String(job.location || "").toLowerCase();
+	          for (const [name, code] of Object.entries(CAREER_OPS_COUNTRY_NAME_TO_CODE)) {
+	            if (location.includes(name)) return code;
+	          }
+	          return "unknown";
+	        }
+
+	        function careerOpsCountryLabelFromJob(job = {}, fallback = "") {
+	          const country = String(job.country || job.sourceCountry || job.source_country || "").trim();
+	          const code = String(job.countryCode || job.sourceCountryCode || job.country_code || job.source_country_code || fallback || "").trim().toUpperCase();
+	          if (country && code && country.toUpperCase() !== code) return `${country} (${code})`;
+	          return country || code || (fallback === "unknown" ? "未標示國家" : String(fallback || "未標示國家"));
+	        }
+
+	        function careerOpsCountryFilterOptions(jobs) {
+	          const groups = new Map();
+	          jobs.forEach(job => {
+	            const key = careerOpsCountryKey(job);
+	            if (!groups.has(key)) {
+	              groups.set(key, { value: key, label: careerOpsCountryLabelFromJob(job, key), count: 0 });
+	            }
+	            groups.get(key).count += 1;
+	          });
+	          return Array.from(groups.values()).sort((a, b) =>
+	            b.count - a.count || a.label.localeCompare(b.label)
+	          );
+	        }
+
+	        function careerOpsJobsForCountry(jobs) {
+	          if (!careerOpsCountryFilter || careerOpsCountryFilter === "all") return jobs;
+	          return jobs.filter(job => careerOpsCountryKey(job) === careerOpsCountryFilter);
+	        }
+
+	        function saveCareerOpsCountryFilter(value) {
+	          careerOpsCountryFilter = value || "all";
+	          try {
+	            if (careerOpsCountryFilter === "all") {
+	              localStorage.removeItem(CAREER_OPS_COUNTRY_FILTER_KEY);
+	            } else {
+	              localStorage.setItem(CAREER_OPS_COUNTRY_FILTER_KEY, careerOpsCountryFilter);
+	            }
+	          } catch {}
 	        }
 
 	        function careerOpsJobMarketLabel(job = {}) {
@@ -18393,8 +20021,8 @@ Schema:
 
 	        function renderCareerOpsDashboard(message = "") {
 	          if (!careerOpsReportsLoaded) loadCareerOpsReports();
-	          const jobs = loadCareerOpsJobs().sort(careerOpsJobSort);
-	          if (!jobs.length) {
+	          const allJobs = loadCareerOpsJobs().sort(careerOpsJobSort);
+	          if (!allJobs.length) {
 	            $c("careerResultsArea").innerHTML = `
 	              <div class="career-ops-empty">
 	                <strong>尚未匯入職缺。</strong><br>
@@ -18402,11 +20030,27 @@ Schema:
 	              </div>`;
 	            return;
 	          }
+	          const countryOptions = careerOpsCountryFilterOptions(allJobs);
+	          if (careerOpsCountryFilter !== "all" && !countryOptions.some(option => option.value === careerOpsCountryFilter)) {
+	            saveCareerOpsCountryFilter("all");
+	          }
+	          const jobs = careerOpsJobsForCountry(allJobs);
 	          if (!jobs.some(job => job.id === careerOpsSelectedJobId)) {
 	            careerOpsSelectedJobId = jobs[0].id;
 	          }
 	          const selected = jobs.find(job => job.id === careerOpsSelectedJobId) || jobs[0];
 	          const stats = careerOpsStats(jobs);
+	          const selectedCountryOption = countryOptions.find(option => option.value === careerOpsCountryFilter);
+	          const countryOptionsHtml = [
+	            `<option value="all"${careerOpsCountryFilter === "all" ? " selected" : ""}>全部國家（${allJobs.length}）</option>`,
+	            ...countryOptions.map(option =>
+	              `<option value="${careerText(option.value)}"${option.value === careerOpsCountryFilter ? " selected" : ""}>${careerText(option.label)}（${careerText(option.count)}）</option>`
+	            )
+	          ].join("");
+	          const countryFilterLabel = careerOpsCountryFilter === "all" ? "全部國家" : selectedCountryOption?.label || careerOpsCountryFilter;
+	          const countryFilterSummary = careerOpsCountryFilter === "all"
+	            ? `顯示 ${allJobs.length.toLocaleString()} 筆職缺`
+	            : `顯示 ${jobs.length.toLocaleString()} / ${allJobs.length.toLocaleString()} 筆職缺`;
 	          const rows = jobs.map(job => {
 	            const active = job.id === selected.id ? " active" : "";
 	            const bgTier = job.blockG?.tier;
@@ -18505,6 +20149,16 @@ Schema:
 
 	          $c("careerResultsArea").innerHTML = `
 	            ${message ? `<div class="career-result-section"><p>${careerText(message)}</p></div>` : ""}
+	            <div class="career-ops-filterbar">
+	              <div class="career-ops-filter-title">
+	                <strong>${careerText(countryFilterLabel)}</strong>
+	                <span>${careerText(countryFilterSummary)}</span>
+	              </div>
+	              <div class="career-ops-filter-field">
+	                <label for="careerOpsCountryFilter">國家</label>
+	                <select id="careerOpsCountryFilter" data-career-ops-country-filter>${countryOptionsHtml}</select>
+	              </div>
+	            </div>
 	            <div class="career-ops-stats">
 	              <div class="career-ops-stat"><span>職缺總數</span><strong>${careerText(stats.total)}</strong></div>
 	              <div class="career-ops-stat"><span>已評估</span><strong>${careerText(stats.evaluated)}</strong></div>
@@ -18578,7 +20232,7 @@ Schema:
 	        }
 
 	        function applyCareerOpsLocalEngineToJob(job, profile, skillCounts, options = {}) {
-	          const result = careerOpsScoreLocalJob(job, profile, skillCounts);
+	          const result = options.result || careerOpsScoreLocalJob(job, profile, skillCounts);
 	          const originalReport = careerOpsBuildOriginalStyleReport(job, profile, result);
 	          const autoStatuses = ["待評估", "值得投遞", "強烈投遞", "觀望", "略過", ""];
 	          const status = job.isExpired
@@ -19066,6 +20720,14 @@ Schema:
 	        }
 
 	        function handleCareerOpsResultsChange(event) {
+	          const countryFilter = event.target.closest("[data-career-ops-country-filter]");
+	          if (countryFilter) {
+	            saveCareerOpsCountryFilter(countryFilter.value || "all");
+	            const jobs = careerOpsJobsForCountry(loadCareerOpsJobs().sort(careerOpsJobSort));
+	            careerOpsSelectedJobId = jobs[0]?.id || "";
+	            renderCareerOpsDashboard();
+	            return;
+	          }
 	          const select = event.target.closest("[data-career-ops-status]");
 	          const field = event.target.closest("[data-career-ops-field]");
 	          if (!select && !field) return;
@@ -19148,6 +20810,7 @@ Schema:
 	          $c("careerOpsSyncSnapshotBtn")?.addEventListener("click", syncCareerOpsSnapshotNow);
 	          $c("careerOpsImportSingaporeBtn")?.addEventListener("click", importCareerOpsSingaporeSnapshot);
 	          $c("careerOpsRunLocalEngineBtn")?.addEventListener("click", runCareerOpsLocalEngine);
+	          $c("careerOpsRunFullPoolBtn")?.addEventListener("click", runCareerOpsFullPoolRanker);
 	          $c("careerOpsRunBatchBtn")?.addEventListener("click", runCareerOpsBatch);
 	          $c("careerOpsExportCsvBtn")?.addEventListener("click", exportCareerOpsCsv);
 	          $c("careerResultsArea")?.addEventListener("click", handleCareerOpsResultsClick);

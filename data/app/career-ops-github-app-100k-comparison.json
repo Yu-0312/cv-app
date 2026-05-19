@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-18T13:00:18.119Z",
+  "generatedAt": "2026-05-19T03:22:28.991Z",
   "executionMode": "full-corpus-summary; github-career-ops-rubric-compatible-deterministic-scorer",
   "inputs": {
     "manifest": "data/career-ops-profiles/manifest.json",
@@ -10,7 +10,9 @@
   },
   "outputs": {
     "json": "data/app/career-ops-github-app-100k-comparison.json",
-    "report": "data/app/career-ops-github-app-100k-comparison.md"
+    "report": "data/app/career-ops-github-app-100k-comparison.md",
+    "zhReport": "data/app/career-ops-github-app-100k-comparison.zh-TW.md",
+    "profileResults": "data/app/career-ops-github-app-100k-profile-results.zh-TW.jsonl.gz"
   },
   "upstream": {
     "repoPath": "/tmp/career-ops-upstream",
@@ -26,8 +28,11 @@
   },
   "coverage": {
     "profileCount": 100000,
+    "profileResultsWritten": 100000,
     "snapshotJobs": 93093,
     "snapshotActiveJobs": 92789,
+    "snapshotEligibleJobs": 92430,
+    "appTrackerLimit": 1000,
     "appImportedJobs": 1000,
     "appActiveJobs": 998,
     "appEligibleJobs": 998,
@@ -1492,6 +1497,7 @@
     "Original GitHub career-ops is prompt/agent driven and does not ship a bulk 100k profile scoring API.",
     "This run uses the upstream public 1-5 rubric shape as a deterministic scorer so the full 100k corpus can be evaluated locally and repeatably.",
     "The comparison uses the same app-eligible job set for both scorers to isolate scoring/function differences from data-source differences.",
+    "Per-profile Traditional Chinese JSONL output writes one resume result per line.",
     "No pairwise CSV was written because 100000 profiles x app-eligible jobs would create a very large row-level artifact."
   ]
 }

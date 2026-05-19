@@ -22,6 +22,7 @@
 
 import fs from "node:fs/promises";
 import path from "node:path";
+import { fileURLToPath } from "node:url";
 
 // ── helpers ──────────────────────────────────────────────────────────────────
 
@@ -77,7 +78,7 @@ function includes(text, term) {
 
 // ── profile normalisation ────────────────────────────────────────────────────
 
-function normalizeProfile(profile) {
+export function normalizeProfile(profile) {
   const prefs = (profile.preferences && typeof profile.preferences === "object") ? profile.preferences : {};
   const keywords = tokenize([
     profile.role,
@@ -302,7 +303,7 @@ function recommendation(score, legitimacyTier) {
 
 // ── main evaluator ────────────────────────────────────────────────────────────
 
-function evaluateJob(job, profile) {
+export function evaluateJob(job, profile) {
   const cvMatch      = scoreCvMatch(job, profile);
   const northStar    = scoreNorthStar(job, profile);
   const compensation = scoreCompensation(job);
@@ -441,7 +442,9 @@ async function main() {
   console.log(`[career-ops] evaluated ${evaluated.length} job(s) with 6D+BlockG -> ${out}`);
 }
 
-main().catch((error) => {
-  console.error(error instanceof Error ? error.message : error);
-  process.exitCode = 1;
-});
+if (process.argv[1] && fileURLToPath(import.meta.url) === path.resolve(process.argv[1])) {
+  main().catch((error) => {
+    console.error(error instanceof Error ? error.message : error);
+    process.exitCode = 1;
+  });
+}

@@ -70,15 +70,22 @@
     "career-ops:compare-app": "node scripts/career-ops-app-compare.mjs",
     "career-ops:big-sim": "node scripts/career-ops-big-sim.mjs",
     "career-ops:big-app-compare": "node scripts/career-ops-big-app-compare.mjs",
+    "career-ops:rank-jobs": "node scripts/career-ops-rank-jobs.mjs",
+    "career-ops:snapshot:shard": "node scripts/career-ops-snapshot-shards.mjs",
+    "career-ops:snapshot:publish": "node scripts/career-ops-snapshot-shards.mjs --upload",
     "career-ops:profiles:generate": "node scripts/generate-career-ops-profiles.mjs --rows 100000",
     "career-ops:profiles:regenerate": "node scripts/generate-career-ops-profiles.mjs --rows 100000 --force",
     "career-ops:saas-worker:help": "node scripts/career-ops-saas-worker.mjs --help",
     "career-ops:saas-worker": "node scripts/career-ops-saas-worker.mjs",
     "build": "node scripts/prepare-dist.mjs",
     "deploy:prepare": "npm run build",
-    "smoke:test": "npm run build && node scripts/smoke-test.mjs"
+    "smoke:test": "npm run build && node scripts/smoke-test.mjs",
+    "career-ops:upstream:import": "node scripts/career-ops-import-upstream-portals.mjs",
+    "career-ops:upstream:scrape": "node scripts/career-ops-worker.mjs --source data/career-ops-upstream-sources.json --json-out data/app/career-ops-upstream-jobs.json --js-out data/app/career-ops-upstream-jobs.js",
+    "career-ops:merge-pools": "node scripts/career-ops-merge-job-pools.mjs"
   },
   "devDependencies": {
+    "js-yaml": "^4.1.1",
     "puppeteer-core": "^24.43.0"
   }
 }

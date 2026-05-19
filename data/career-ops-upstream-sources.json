@@ -1,0 +1,2116 @@
+{
+  "source": "career-ops-upstream-portals",
+  "generatedAt": "2026-05-19T03:50:05.280Z",
+  "upstreamPortals": "/tmp/career-ops-upstream/templates/portals.example.yml",
+  "titleFilter": {
+    "positive": [
+      "AI",
+      "ML",
+      "LLM",
+      "Agent",
+      "Agentic",
+      "GenAI",
+      "Generative AI",
+      "NLP",
+      "LLMOps",
+      "MLOps",
+      "Voice AI",
+      "Conversational AI",
+      "Speech",
+      "KI",
+      "Künstliche Intelligenz",
+      "KI Engineer",
+      "KI Trainer",
+      "Dozent",
+      "Weiterbildung",
+      "Platform Engineer",
+      "Solutions Architect",
+      "Solutions Engineer",
+      "Forward Deployed",
+      "Deployed Engineer",
+      "Customer Engineer",
+      "Integration Engineer",
+      "Product Manager",
+      "Technical PM",
+      "Automation",
+      "Hyperautomation",
+      "Low-Code",
+      "No-Code",
+      "GTM Engineer",
+      "RevOps",
+      "Business Systems",
+      "Internal Tools",
+      "Transformation"
+    ],
+    "negative": [
+      "Junior",
+      "Intern",
+      ".NET",
+      "Java",
+      "iOS",
+      "Android",
+      "PHP",
+      "Ruby",
+      "Embedded",
+      "Firmware",
+      "FPGA",
+      "ASIC",
+      "Blockchain",
+      "Web3",
+      "Crypto",
+      "Salesforce Admin",
+      "SAP",
+      "Oracle EBS",
+      "Mainframe",
+      "COBOL"
+    ],
+    "seniorityBoost": [
+      "Senior",
+      "Staff",
+      "Principal",
+      "Lead",
+      "Head",
+      "Director"
+    ]
+  },
+  "sourceCount": 82,
+  "totalSourceCountBeforeLimit": 82,
+  "searchQueryCount": 87,
+  "sources": [
+    {
+      "name": "Anthropic",
+      "company": "Anthropic",
+      "source": "Anthropic",
+      "url": "https://job-boards.greenhouse.io/anthropic",
+      "adapter": "greenhouse",
+      "apiUrl": "https://boards-api.greenhouse.io/v1/boards/anthropic/jobs",
+      "type": "greenhouse",
+      "market": "upstream",
+      "industry": "career-ops-upstream",
+      "tags": [
+        "career-ops-upstream",
+        "greenhouse"
+      ],
+      "sourceStrategy": "career-ops-upstream",
+      "maxDiscovered": 250,
+      "notes": "",
+      "boardToken": "anthropic"
+    },
+    {
+      "name": "PolyAI",
+      "company": "PolyAI",
+      "source": "PolyAI",
+      "url": "https://job-boards.eu.greenhouse.io/polyai",
+      "adapter": "greenhouse",
+      "apiUrl": "https://boards-api.greenhouse.io/v1/boards/polyai/jobs",
+      "type": "greenhouse",
+      "market": "upstream",
+      "industry": "career-ops-upstream",
+      "tags": [
+        "career-ops-upstream",
+        "greenhouse"
+      ],
+      "sourceStrategy": "career-ops-upstream",
+      "maxDiscovered": 250,
+      "notes": "UK. Voice AI for enterprise contact centers.",
+      "boardToken": "polyai"
+    },
+    {
+      "name": "Parloa",
+      "company": "Parloa",
+      "source": "Parloa",
+      "url": "https://job-boards.eu.greenhouse.io/parloa",
+      "adapter": "greenhouse",
+      "apiUrl": "https://boards-api.greenhouse.io/v1/boards/parloa/jobs",
+      "type": "greenhouse",
+      "market": "upstream",
+      "industry": "career-ops-upstream",
+      "tags": [
+        "career-ops-upstream",
+        "greenhouse"
+      ],
+      "sourceStrategy": "career-ops-upstream",
+      "maxDiscovered": 250,
+      "notes": "Berlin EMEA. Voice AI enterprise.",
+      "boardToken": "parloa"
+    },
+    {
+      "name": "Intercom",
+      "company": "Intercom",
+      "source": "Intercom",
+      "url": "https://job-boards.greenhouse.io/intercom",
+      "adapter": "greenhouse",
+      "apiUrl": "https://boards-api.greenhouse.io/v1/boards/intercom/jobs",
+      "type": "greenhouse",
+      "market": "upstream",
+      "industry": "career-ops-upstream",
+      "tags": [
+        "career-ops-upstream",
+        "greenhouse"
+      ],
+      "sourceStrategy": "career-ops-upstream",
+      "maxDiscovered": 250,
+      "notes": "Dublin EMEA. Fin AI agent.",
+      "boardToken": "intercom"
+    },
+    {
+      "name": "Hume AI",
+      "company": "Hume AI",
+      "source": "Hume AI",
+      "url": "https://job-boards.greenhouse.io/humeai",
+      "adapter": "greenhouse",
+      "apiUrl": "https://boards-api.greenhouse.io/v1/boards/humeai/jobs",
+      "type": "greenhouse",
+      "market": "upstream",
+      "industry": "career-ops-upstream",
+      "tags": [
+        "career-ops-upstream",
+        "greenhouse"
+      ],
+      "sourceStrategy": "career-ops-upstream",
+      "maxDiscovered": 250,
+      "notes": "NYC. Empathic voice AI.",
+      "boardToken": "humeai"
+    },
+    {
+      "name": "ElevenLabs",
+      "company": "ElevenLabs",
+      "source": "ElevenLabs",
+      "url": "https://jobs.ashbyhq.com/elevenlabs",
+      "adapter": "ashby",
+      "type": "ashby",
+      "market": "upstream",
+      "industry": "career-ops-upstream",
+      "tags": [
+        "career-ops-upstream",
+        "ashby"
+      ],
+      "sourceStrategy": "career-ops-upstream",
+      "maxDiscovered": 250,
+      "notes": "Voice AI TTS leader.",
+      "boardName": "elevenlabs"
+    },
+    {
+      "name": "Deepgram",
+      "company": "Deepgram",
+      "source": "Deepgram",
+      "url": "https://jobs.ashbyhq.com/deepgram",
+      "adapter": "ashby",
+      "type": "ashby",
+      "market": "upstream",
+      "industry": "career-ops-upstream",
+      "tags": [
+        "career-ops-upstream",
+        "ashby"
+      ],
+      "sourceStrategy": "career-ops-upstream",
+      "maxDiscovered": 250,
+      "notes": "STT/TTS APIs.",
+      "boardName": "deepgram"
+    },
+    {
+      "name": "Vapi",
+      "company": "Vapi",
+      "source": "Vapi",
+      "url": "https://jobs.ashbyhq.com/vapi",
+      "adapter": "ashby",
+      "type": "ashby",
+      "market": "upstream",
+      "industry": "career-ops-upstream",
+      "tags": [
+        "career-ops-upstream",
+        "ashby"
+      ],
+      "sourceStrategy": "career-ops-upstream",
+      "maxDiscovered": 250,
+      "notes": "Voice AI infrastructure.",
+      "boardName": "vapi"
+    },
+    {
+      "name": "Bland AI",
+      "company": "Bland AI",
+      "source": "Bland AI",
+      "url": "https://jobs.ashbyhq.com/bland",
+      "adapter": "ashby",
+      "type": "ashby",
+      "market": "upstream",
+      "industry": "career-ops-upstream",
+      "tags": [
+        "career-ops-upstream",
+        "ashby"
+      ],
+      "sourceStrategy": "career-ops-upstream",
+      "maxDiscovered": 250,
+      "notes": "Voice phone agents. $65M Series B.",
+      "boardName": "bland"
+    },
+    {
+      "name": "Airtable",
+      "company": "Airtable",
+      "source": "Airtable",
+      "url": "https://job-boards.greenhouse.io/airtable",
+      "adapter": "greenhouse",
+      "apiUrl": "https://boards-api.greenhouse.io/v1/boards/airtable/jobs",
+      "type": "greenhouse",
+      "market": "upstream",
+      "industry": "career-ops-upstream",
+      "tags": [
+        "career-ops-upstream",
+        "greenhouse"
+      ],
+      "sourceStrategy": "career-ops-upstream",
+      "maxDiscovered": 250,
+      "notes": "No-code + AI platform.",
+      "boardToken": "airtable"
+    },
+    {
+      "name": "Vercel",
+      "company": "Vercel",
+      "source": "Vercel",
+      "url": "https://job-boards.greenhouse.io/vercel",
+      "adapter": "greenhouse",
+      "apiUrl": "https://boards-api.greenhouse.io/v1/boards/vercel/jobs",
+      "type": "greenhouse",
+      "market": "upstream",
+      "industry": "career-ops-upstream",
+      "tags": [
+        "career-ops-upstream",
+        "greenhouse"
+      ],
+      "sourceStrategy": "career-ops-upstream",
+      "maxDiscovered": 250,
+      "notes": "AI SDK, v0.dev. Frontend AI tooling.",
+      "boardToken": "vercel"
+    },
+    {
+      "name": "Temporal",
+      "company": "Temporal",
+      "source": "Temporal",
+      "url": "https://job-boards.greenhouse.io/temporal",
+      "adapter": "greenhouse",
+      "apiUrl": "https://boards-api.greenhouse.io/v1/boards/temporal/jobs",
+      "type": "greenhouse",
+      "market": "upstream",
+      "industry": "career-ops-upstream",
+      "tags": [
+        "career-ops-upstream",
+        "greenhouse"
+      ],
+      "sourceStrategy": "career-ops-upstream",
+      "maxDiscovered": 250,
+      "notes": "Workflow orchestration.",
+      "boardToken": "temporal"
+    },
+    {
+      "name": "Arize AI",
+      "company": "Arize AI",
+      "source": "Arize AI",
+      "url": "https://job-boards.greenhouse.io/arizeai",
+      "adapter": "greenhouse",
+      "apiUrl": "https://boards-api.greenhouse.io/v1/boards/arizeai/jobs",
+      "type": "greenhouse",
+      "market": "upstream",
+      "industry": "career-ops-upstream",
+      "tags": [
+        "career-ops-upstream",
+        "greenhouse"
+      ],
+      "sourceStrategy": "career-ops-upstream",
+      "maxDiscovered": 250,
+      "notes": "LLMOps / AI observability.",
+      "boardToken": "arizeai"
+    },
+    {
+      "name": "RunPod",
+      "company": "RunPod",
+      "source": "RunPod",
+      "url": "https://job-boards.greenhouse.io/runpod",
+      "adapter": "greenhouse",
+      "apiUrl": "https://boards-api.greenhouse.io/v1/boards/runpod/jobs",
+      "type": "greenhouse",
+      "market": "upstream",
+      "industry": "career-ops-upstream",
+      "tags": [
+        "career-ops-upstream",
+        "greenhouse"
+      ],
+      "sourceStrategy": "career-ops-upstream",
+      "maxDiscovered": 250,
+      "notes": "GPU cloud for AI.",
+      "boardToken": "runpod"
+    },
+    {
+      "name": "Weights & Biases (CoreWeave)",
+      "company": "Weights & Biases (CoreWeave)",
+      "source": "Weights & Biases (CoreWeave)",
+      "url": "https://job-boards.greenhouse.io/coreweave",
+      "adapter": "greenhouse",
+      "apiUrl": "https://boards-api.greenhouse.io/v1/boards/coreweave/jobs",
+      "type": "greenhouse",
+      "market": "upstream",
+      "industry": "career-ops-upstream",
+      "tags": [
+        "career-ops-upstream",
+        "greenhouse"
+      ],
+      "sourceStrategy": "career-ops-upstream",
+      "maxDiscovered": 250,
+      "notes": "Acquired by CoreWeave (announced March 2025, closed May 2025). W&B roles now live on CoreWeave's Greenhouse board. Old Lever URL (jobs.lever.co/wandb) returns 404.",
+      "boardToken": "coreweave"
+    },
+    {
+      "name": "Glean",
+      "company": "Glean",
+      "source": "Glean",
+      "url": "https://job-boards.greenhouse.io/gleanwork",
+      "adapter": "greenhouse",
+      "apiUrl": "https://boards-api.greenhouse.io/v1/boards/gleanwork/jobs",
+      "type": "greenhouse",
+      "market": "upstream",
+      "industry": "career-ops-upstream",
+      "tags": [
+        "career-ops-upstream",
+        "greenhouse"
+      ],
+      "sourceStrategy": "career-ops-upstream",
+      "maxDiscovered": 250,
+      "notes": "Enterprise AI search.",
+      "boardToken": "gleanwork"
+    },
+    {
+      "name": "Ada",
+      "company": "Ada",
+      "source": "Ada",
+      "url": "https://job-boards.greenhouse.io/ada",
+      "adapter": "greenhouse",
+      "type": "greenhouse",
+      "market": "upstream",
+      "industry": "career-ops-upstream",
+      "tags": [
+        "career-ops-upstream",
+        "greenhouse"
+      ],
+      "sourceStrategy": "career-ops-upstream",
+      "maxDiscovered": 250,
+      "notes": "Toronto + remote. AI customer service.",
+      "boardToken": "ada"
+    },
+    {
+      "name": "Sierra",
+      "company": "Sierra",
+      "source": "Sierra",
+      "url": "https://jobs.ashbyhq.com/sierra",
+      "adapter": "ashby",
+      "type": "ashby",
+      "market": "upstream",
+      "industry": "career-ops-upstream",
+      "tags": [
+        "career-ops-upstream",
+        "ashby"
+      ],
+      "sourceStrategy": "career-ops-upstream",
+      "maxDiscovered": 250,
+      "notes": "Bret Taylor (ex-CEO Salesforce). AI customer agents.",
+      "boardName": "sierra"
+    },
+    {
+      "name": "Decagon",
+      "company": "Decagon",
+      "source": "Decagon",
+      "url": "https://jobs.ashbyhq.com/decagon",
+      "adapter": "ashby",
+      "type": "ashby",
+      "market": "upstream",
+      "industry": "career-ops-upstream",
+      "tags": [
+        "career-ops-upstream",
+        "ashby"
+      ],
+      "sourceStrategy": "career-ops-upstream",
+      "maxDiscovered": 250,
+      "notes": "AI customer support agents.",
+      "boardName": "decagon"
+    },
+    {
+      "name": "Lindy",
+      "company": "Lindy",
+      "source": "Lindy",
+      "url": "https://jobs.ashbyhq.com/lindy",
+      "adapter": "ashby",
+      "type": "ashby",
+      "market": "upstream",
+      "industry": "career-ops-upstream",
+      "tags": [
+        "career-ops-upstream",
+        "ashby"
+      ],
+      "sourceStrategy": "career-ops-upstream",
+      "maxDiscovered": 250,
+      "notes": "AI agent management platform.",
+      "boardName": "lindy"
+    },
+    {
+      "name": "Speechmatics",
+      "company": "Speechmatics",
+      "source": "Speechmatics",
+      "url": "https://job-boards.greenhouse.io/speechmatics",
+      "adapter": "greenhouse",
+      "apiUrl": "https://boards-api.greenhouse.io/v1/boards/speechmatics/jobs",
+      "type": "greenhouse",
+      "market": "upstream",
+      "industry": "career-ops-upstream",
+      "tags": [
+        "career-ops-upstream",
+        "greenhouse"
+      ],
+      "sourceStrategy": "career-ops-upstream",
+      "maxDiscovered": 250,
+      "notes": "Cambridge UK. Speech recognition platform.",
+      "boardToken": "speechmatics"
+    },
+    {
+      "name": "n8n",
+      "company": "n8n",
+      "source": "n8n",
+      "url": "https://jobs.ashbyhq.com/n8n",
+      "adapter": "ashby",
+      "type": "ashby",
+      "market": "upstream",
+      "industry": "career-ops-upstream",
+      "tags": [
+        "career-ops-upstream",
+        "ashby"
+      ],
+      "sourceStrategy": "career-ops-upstream",
+      "maxDiscovered": 250,
+      "notes": "Berlin + remote EU/US. Workflow automation.",
+      "boardName": "n8n"
+    },
+    {
+      "name": "Zapier",
+      "company": "Zapier",
+      "source": "Zapier",
+      "url": "https://jobs.ashbyhq.com/zapier",
+      "adapter": "ashby",
+      "type": "ashby",
+      "market": "upstream",
+      "industry": "career-ops-upstream",
+      "tags": [
+        "career-ops-upstream",
+        "ashby"
+      ],
+      "sourceStrategy": "career-ops-upstream",
+      "maxDiscovered": 250,
+      "notes": "Remote-first. Automation platform leader.",
+      "boardName": "zapier"
+    },
+    {
+      "name": "Boomi",
+      "company": "Boomi",
+      "source": "Boomi",
+      "url": "https://job-boards.greenhouse.io/boomilp",
+      "adapter": "greenhouse",
+      "apiUrl": "https://boards-api.greenhouse.io/v1/boards/boomilp/jobs",
+      "type": "greenhouse",
+      "market": "upstream",
+      "industry": "career-ops-upstream",
+      "tags": [
+        "career-ops-upstream",
+        "greenhouse"
+      ],
+      "sourceStrategy": "career-ops-upstream",
+      "maxDiscovered": 250,
+      "notes": "Integration and automation platform.",
+      "boardToken": "boomilp"
+    },
+    {
+      "name": "Cohere",
+      "company": "Cohere",
+      "source": "Cohere",
+      "url": "https://jobs.ashbyhq.com/cohere",
+      "adapter": "ashby",
+      "type": "ashby",
+      "market": "upstream",
+      "industry": "career-ops-upstream",
+      "tags": [
+        "career-ops-upstream",
+        "ashby"
+      ],
+      "sourceStrategy": "career-ops-upstream",
+      "maxDiscovered": 250,
+      "notes": "AI/LLM provider. Toronto + remote.",
+      "boardName": "cohere"
+    },
+    {
+      "name": "LangChain",
+      "company": "LangChain",
+      "source": "LangChain",
+      "url": "https://jobs.ashbyhq.com/langchain",
+      "adapter": "ashby",
+      "type": "ashby",
+      "market": "upstream",
+      "industry": "career-ops-upstream",
+      "tags": [
+        "career-ops-upstream",
+        "ashby"
+      ],
+      "sourceStrategy": "career-ops-upstream",
+      "maxDiscovered": 250,
+      "notes": "LangChain/LangSmith framework.",
+      "boardName": "langchain"
+    },
+    {
+      "name": "Pinecone",
+      "company": "Pinecone",
+      "source": "Pinecone",
+      "url": "https://jobs.ashbyhq.com/pinecone",
+      "adapter": "ashby",
+      "type": "ashby",
+      "market": "upstream",
+      "industry": "career-ops-upstream",
+      "tags": [
+        "career-ops-upstream",
+        "ashby"
+      ],
+      "sourceStrategy": "career-ops-upstream",
+      "maxDiscovered": 250,
+      "notes": "Vector database.",
+      "boardName": "pinecone"
+    },
+    {
+      "name": "Mistral AI",
+      "company": "Mistral AI",
+      "source": "Mistral AI",
+      "url": "https://jobs.lever.co/mistral",
+      "adapter": "lever",
+      "type": "lever",
+      "market": "upstream",
+      "industry": "career-ops-upstream",
+      "tags": [
+        "career-ops-upstream",
+        "lever"
+      ],
+      "sourceStrategy": "career-ops-upstream",
+      "maxDiscovered": 250,
+      "notes": "Paris. European AI lab.",
+      "site": "mistral"
+    },
+    {
+      "name": "Palantir",
+      "company": "Palantir",
+      "source": "Palantir",
+      "url": "https://jobs.lever.co/palantir",
+      "adapter": "lever",
+      "type": "lever",
+      "market": "upstream",
+      "industry": "career-ops-upstream",
+      "tags": [
+        "career-ops-upstream",
+        "lever"
+      ],
+      "sourceStrategy": "career-ops-upstream",
+      "maxDiscovered": 250,
+      "notes": "FDE roles. Mostly US/London.",
+      "site": "palantir"
+    },
+    {
+      "name": "Later",
+      "company": "Later",
+      "source": "Later",
+      "url": "https://job-boards.greenhouse.io/later",
+      "adapter": "greenhouse",
+      "apiUrl": "https://boards-api.greenhouse.io/v1/boards/later/jobs",
+      "type": "greenhouse",
+      "market": "upstream",
+      "industry": "career-ops-upstream",
+      "tags": [
+        "career-ops-upstream",
+        "greenhouse"
+      ],
+      "sourceStrategy": "career-ops-upstream",
+      "maxDiscovered": 250,
+      "notes": "Vancouver/Toronto. Social media and creator platform.",
+      "boardToken": "later"
+    },
+    {
+      "name": "Safari AI",
+      "company": "Safari AI",
+      "source": "Safari AI",
+      "url": "https://job-boards.greenhouse.io/safariai",
+      "adapter": "greenhouse",
+      "apiUrl": "https://boards-api.greenhouse.io/v1/boards/safariai/jobs",
+      "type": "greenhouse",
+      "market": "upstream",
+      "industry": "career-ops-upstream",
+      "tags": [
+        "career-ops-upstream",
+        "greenhouse"
+      ],
+      "sourceStrategy": "career-ops-upstream",
+      "maxDiscovered": 250,
+      "notes": "Miami HQ / Vancouver engineering. Computer vision AI for operations in the physical economy.",
+      "boardToken": "safariai"
+    },
+    {
+      "name": "Hootsuite",
+      "company": "Hootsuite",
+      "source": "Hootsuite",
+      "url": "https://job-boards.greenhouse.io/hootsuite",
+      "adapter": "greenhouse",
+      "apiUrl": "https://boards-api.greenhouse.io/v1/boards/hootsuite/jobs",
+      "type": "greenhouse",
+      "market": "upstream",
+      "industry": "career-ops-upstream",
+      "tags": [
+        "career-ops-upstream",
+        "greenhouse"
+      ],
+      "sourceStrategy": "career-ops-upstream",
+      "maxDiscovered": 250,
+      "notes": "Vancouver. Social media management platform.",
+      "boardToken": "hootsuite"
+    },
+    {
+      "name": "Klue",
+      "company": "Klue",
+      "source": "Klue",
+      "url": "https://jobs.ashbyhq.com/klue",
+      "adapter": "ashby",
+      "type": "ashby",
+      "market": "upstream",
+      "industry": "career-ops-upstream",
+      "tags": [
+        "career-ops-upstream",
+        "ashby"
+      ],
+      "sourceStrategy": "career-ops-upstream",
+      "maxDiscovered": 250,
+      "notes": "Vancouver. Competitive intelligence SaaS.",
+      "boardName": "klue"
+    },
+    {
+      "name": "Glacis AI",
+      "company": "Glacis AI",
+      "source": "Glacis AI",
+      "url": "https://jobs.ashbyhq.com/glacis-ai",
+      "adapter": "ashby",
+      "type": "ashby",
+      "market": "upstream",
+      "industry": "career-ops-upstream",
+      "tags": [
+        "career-ops-upstream",
+        "ashby"
+      ],
+      "sourceStrategy": "career-ops-upstream",
+      "maxDiscovered": 250,
+      "notes": "Ho Chi Minh City. AI agents for supply chain and logistics workflows.",
+      "boardName": "glacis-ai"
+    },
+    {
+      "name": "Sanctuary AI",
+      "company": "Sanctuary AI",
+      "source": "Sanctuary AI",
+      "url": "https://jobs.lever.co/sanctuary",
+      "adapter": "lever",
+      "type": "lever",
+      "market": "upstream",
+      "industry": "career-ops-upstream",
+      "tags": [
+        "career-ops-upstream",
+        "lever"
+      ],
+      "sourceStrategy": "career-ops-upstream",
+      "maxDiscovered": 250,
+      "notes": "Vancouver. Humanoid robotics and embodied AI.",
+      "site": "sanctuary"
+    },
+    {
+      "name": "Semios",
+      "company": "Semios",
+      "source": "Semios",
+      "url": "https://apply.workable.com/semios/",
+      "adapter": "workable",
+      "type": "workable",
+      "market": "upstream",
+      "industry": "career-ops-upstream",
+      "tags": [
+        "career-ops-upstream",
+        "workable"
+      ],
+      "sourceStrategy": "career-ops-upstream",
+      "maxDiscovered": 250,
+      "notes": "Vancouver. Agtech and crop intelligence platform.",
+      "account": "semios"
+    },
+    {
+      "name": "Factorial",
+      "company": "Factorial",
+      "source": "Factorial",
+      "url": "https://job-boards.greenhouse.io/factorial",
+      "adapter": "greenhouse",
+      "type": "greenhouse",
+      "market": "upstream",
+      "industry": "career-ops-upstream",
+      "tags": [
+        "career-ops-upstream",
+        "greenhouse"
+      ],
+      "sourceStrategy": "career-ops-upstream",
+      "maxDiscovered": 250,
+      "notes": "Barcelona. HR SaaS unicorn.",
+      "boardToken": "factorial"
+    },
+    {
+      "name": "Attio",
+      "company": "Attio",
+      "source": "Attio",
+      "url": "https://jobs.ashbyhq.com/attio",
+      "adapter": "ashby",
+      "type": "ashby",
+      "market": "upstream",
+      "industry": "career-ops-upstream",
+      "tags": [
+        "career-ops-upstream",
+        "ashby"
+      ],
+      "sourceStrategy": "career-ops-upstream",
+      "maxDiscovered": 250,
+      "notes": "Remote EU. AI-native CRM. Series B $52M.",
+      "boardName": "attio"
+    },
+    {
+      "name": "Tinybird",
+      "company": "Tinybird",
+      "source": "Tinybird",
+      "url": "https://jobs.ashbyhq.com/tinybird",
+      "adapter": "ashby",
+      "type": "ashby",
+      "market": "upstream",
+      "industry": "career-ops-upstream",
+      "tags": [
+        "career-ops-upstream",
+        "ashby"
+      ],
+      "sourceStrategy": "career-ops-upstream",
+      "maxDiscovered": 250,
+      "notes": "Remote. Real-time data platform.",
+      "boardName": "tinybird"
+    },
+    {
+      "name": "Clarity AI",
+      "company": "Clarity AI",
+      "source": "Clarity AI",
+      "url": "https://jobs.lever.co/clarity-ai",
+      "adapter": "lever",
+      "type": "lever",
+      "market": "upstream",
+      "industry": "career-ops-upstream",
+      "tags": [
+        "career-ops-upstream",
+        "lever"
+      ],
+      "sourceStrategy": "career-ops-upstream",
+      "maxDiscovered": 250,
+      "notes": "Madrid/Remote. Sustainability analytics with AI.",
+      "site": "clarity-ai"
+    },
+    {
+      "name": "Travelperk",
+      "company": "Travelperk",
+      "source": "Travelperk",
+      "url": "https://jobs.ashbyhq.com/travelperk",
+      "adapter": "ashby",
+      "type": "ashby",
+      "market": "upstream",
+      "industry": "career-ops-upstream",
+      "tags": [
+        "career-ops-upstream",
+        "ashby"
+      ],
+      "sourceStrategy": "career-ops-upstream",
+      "maxDiscovered": 250,
+      "notes": "Barcelona. Business travel unicorn.",
+      "boardName": "travelperk"
+    },
+    {
+      "name": "Aleph Alpha",
+      "company": "Aleph Alpha",
+      "source": "Aleph Alpha",
+      "url": "https://jobs.ashbyhq.com/AlephAlpha",
+      "adapter": "ashby",
+      "type": "ashby",
+      "market": "upstream",
+      "industry": "career-ops-upstream",
+      "tags": [
+        "career-ops-upstream",
+        "ashby"
+      ],
+      "sourceStrategy": "career-ops-upstream",
+      "maxDiscovered": 250,
+      "notes": "Heidelberg DE. Sovereign European LLM provider, enterprise & government focus.",
+      "boardName": "AlephAlpha"
+    },
+    {
+      "name": "DeepL",
+      "company": "DeepL",
+      "source": "DeepL",
+      "url": "https://jobs.ashbyhq.com/DeepL",
+      "adapter": "ashby",
+      "type": "ashby",
+      "market": "upstream",
+      "industry": "career-ops-upstream",
+      "tags": [
+        "career-ops-upstream",
+        "ashby"
+      ],
+      "sourceStrategy": "career-ops-upstream",
+      "maxDiscovered": 250,
+      "notes": "Cologne DE. Translation & language AI. 60+ open roles, EU/DACH heavy.",
+      "boardName": "DeepL"
+    },
+    {
+      "name": "Black Forest Labs",
+      "company": "Black Forest Labs",
+      "source": "Black Forest Labs",
+      "url": "https://job-boards.greenhouse.io/blackforestlabs",
+      "adapter": "greenhouse",
+      "apiUrl": "https://boards-api.greenhouse.io/v1/boards/blackforestlabs/jobs",
+      "type": "greenhouse",
+      "market": "upstream",
+      "industry": "career-ops-upstream",
+      "tags": [
+        "career-ops-upstream",
+        "greenhouse"
+      ],
+      "sourceStrategy": "career-ops-upstream",
+      "maxDiscovered": 250,
+      "notes": "Freiburg DE / SF. FLUX image models, ex-Stable Diffusion team.",
+      "boardToken": "blackforestlabs"
+    },
+    {
+      "name": "Helsing",
+      "company": "Helsing",
+      "source": "Helsing",
+      "url": "https://job-boards.greenhouse.io/helsing",
+      "adapter": "greenhouse",
+      "apiUrl": "https://boards-api.greenhouse.io/v1/boards/helsing/jobs",
+      "type": "greenhouse",
+      "market": "upstream",
+      "industry": "career-ops-upstream",
+      "tags": [
+        "career-ops-upstream",
+        "greenhouse"
+      ],
+      "sourceStrategy": "career-ops-upstream",
+      "maxDiscovered": 250,
+      "notes": "Munich / Berlin / London / Paris. Defence AI unicorn. 100+ roles, ML & FDE.",
+      "boardToken": "helsing"
+    },
+    {
+      "name": "Celonis",
+      "company": "Celonis",
+      "source": "Celonis",
+      "url": "https://job-boards.greenhouse.io/celonis",
+      "adapter": "greenhouse",
+      "apiUrl": "https://boards-api.greenhouse.io/v1/boards/celonis/jobs",
+      "type": "greenhouse",
+      "market": "upstream",
+      "industry": "career-ops-upstream",
+      "tags": [
+        "career-ops-upstream",
+        "greenhouse"
+      ],
+      "sourceStrategy": "career-ops-upstream",
+      "maxDiscovered": 250,
+      "notes": "Munich / NYC. Process intelligence, Applied AI Engineer roles, Field CTOs.",
+      "boardToken": "celonis"
+    },
+    {
+      "name": "Contentful",
+      "company": "Contentful",
+      "source": "Contentful",
+      "url": "https://job-boards.greenhouse.io/contentful",
+      "adapter": "greenhouse",
+      "apiUrl": "https://boards-api.greenhouse.io/v1/boards/contentful/jobs",
+      "type": "greenhouse",
+      "market": "upstream",
+      "industry": "career-ops-upstream",
+      "tags": [
+        "career-ops-upstream",
+        "greenhouse"
+      ],
+      "sourceStrategy": "career-ops-upstream",
+      "maxDiscovered": 250,
+      "notes": "Berlin / Denver. Headless CMS, AI content workflows.",
+      "boardToken": "contentful"
+    },
+    {
+      "name": "GetYourGuide",
+      "company": "GetYourGuide",
+      "source": "GetYourGuide",
+      "url": "https://job-boards.greenhouse.io/getyourguide",
+      "adapter": "greenhouse",
+      "apiUrl": "https://boards-api.greenhouse.io/v1/boards/getyourguide/jobs",
+      "type": "greenhouse",
+      "market": "upstream",
+      "industry": "career-ops-upstream",
+      "tags": [
+        "career-ops-upstream",
+        "greenhouse"
+      ],
+      "sourceStrategy": "career-ops-upstream",
+      "maxDiscovered": 250,
+      "notes": "Berlin. Travel marketplace, ML & data platform roles.",
+      "boardToken": "getyourguide"
+    },
+    {
+      "name": "HelloFresh",
+      "company": "HelloFresh",
+      "source": "HelloFresh",
+      "url": "https://job-boards.greenhouse.io/hellofresh",
+      "adapter": "greenhouse",
+      "apiUrl": "https://boards-api.greenhouse.io/v1/boards/hellofresh/jobs",
+      "type": "greenhouse",
+      "market": "upstream",
+      "industry": "career-ops-upstream",
+      "tags": [
+        "career-ops-upstream",
+        "greenhouse"
+      ],
+      "sourceStrategy": "career-ops-upstream",
+      "maxDiscovered": 250,
+      "notes": "Berlin. Meal kit unicorn, large data/ML org.",
+      "boardToken": "hellofresh"
+    },
+    {
+      "name": "N26",
+      "company": "N26",
+      "source": "N26",
+      "url": "https://job-boards.greenhouse.io/n26",
+      "adapter": "greenhouse",
+      "apiUrl": "https://boards-api.greenhouse.io/v1/boards/n26/jobs",
+      "type": "greenhouse",
+      "market": "upstream",
+      "industry": "career-ops-upstream",
+      "tags": [
+        "career-ops-upstream",
+        "greenhouse"
+      ],
+      "sourceStrategy": "career-ops-upstream",
+      "maxDiscovered": 250,
+      "notes": "Berlin / Barcelona. Mobile bank, ~50 roles, ML & risk.",
+      "boardToken": "n26"
+    },
+    {
+      "name": "Trade Republic",
+      "company": "Trade Republic",
+      "source": "Trade Republic",
+      "url": "https://job-boards.greenhouse.io/traderepublicbank",
+      "adapter": "greenhouse",
+      "apiUrl": "https://boards-api.greenhouse.io/v1/boards/traderepublicbank/jobs",
+      "type": "greenhouse",
+      "market": "upstream",
+      "industry": "career-ops-upstream",
+      "tags": [
+        "career-ops-upstream",
+        "greenhouse"
+      ],
+      "sourceStrategy": "career-ops-upstream",
+      "maxDiscovered": 250,
+      "notes": "Berlin / London / Paris. Neobroker, ~50 roles, platform & data.",
+      "boardToken": "traderepublicbank"
+    },
+    {
+      "name": "SumUp",
+      "company": "SumUp",
+      "source": "SumUp",
+      "url": "https://job-boards.greenhouse.io/sumup",
+      "adapter": "greenhouse",
+      "apiUrl": "https://boards-api.greenhouse.io/v1/boards/sumup/jobs",
+      "type": "greenhouse",
+      "market": "upstream",
+      "industry": "career-ops-upstream",
+      "tags": [
+        "career-ops-upstream",
+        "greenhouse"
+      ],
+      "sourceStrategy": "career-ops-upstream",
+      "maxDiscovered": 250,
+      "notes": "Berlin / London. Payments fintech, EU + LATAM hiring.",
+      "boardToken": "sumup"
+    },
+    {
+      "name": "Qonto",
+      "company": "Qonto",
+      "source": "Qonto",
+      "url": "https://jobs.lever.co/qonto",
+      "adapter": "lever",
+      "type": "lever",
+      "market": "upstream",
+      "industry": "career-ops-upstream",
+      "tags": [
+        "career-ops-upstream",
+        "lever"
+      ],
+      "sourceStrategy": "career-ops-upstream",
+      "maxDiscovered": 250,
+      "notes": "Paris / Berlin / Barcelona / Milan. SMB neobank, MLOps for AI Product roles.",
+      "site": "qonto"
+    },
+    {
+      "name": "Forto",
+      "company": "Forto",
+      "source": "Forto",
+      "url": "https://jobs.lever.co/forto",
+      "adapter": "lever",
+      "type": "lever",
+      "market": "upstream",
+      "industry": "career-ops-upstream",
+      "tags": [
+        "career-ops-upstream",
+        "lever"
+      ],
+      "sourceStrategy": "career-ops-upstream",
+      "maxDiscovered": 250,
+      "notes": "Berlin DE. Digital freight forwarder, product & data roles, German + English.",
+      "site": "forto"
+    },
+    {
+      "name": "Lakera",
+      "company": "Lakera",
+      "source": "Lakera",
+      "url": "https://jobs.ashbyhq.com/lakera.ai",
+      "adapter": "ashby",
+      "type": "ashby",
+      "market": "upstream",
+      "industry": "career-ops-upstream",
+      "tags": [
+        "career-ops-upstream",
+        "ashby"
+      ],
+      "sourceStrategy": "career-ops-upstream",
+      "maxDiscovered": 250,
+      "notes": "Zurich CH / SF. AI security & guardrails. Has Forward Deployed Engineer roles.",
+      "boardName": "lakera.ai"
+    },
+    {
+      "name": "Scandit",
+      "company": "Scandit",
+      "source": "Scandit",
+      "url": "https://job-boards.greenhouse.io/scandit",
+      "adapter": "greenhouse",
+      "apiUrl": "https://boards-api.greenhouse.io/v1/boards/scandit/jobs",
+      "type": "greenhouse",
+      "market": "upstream",
+      "industry": "career-ops-upstream",
+      "tags": [
+        "career-ops-upstream",
+        "greenhouse"
+      ],
+      "sourceStrategy": "career-ops-upstream",
+      "maxDiscovered": 250,
+      "notes": "Zurich CH. Computer vision / smart data capture, ML roles.",
+      "boardToken": "scandit"
+    },
+    {
+      "name": "Cradle",
+      "company": "Cradle",
+      "source": "Cradle",
+      "url": "https://jobs.ashbyhq.com/cradlebio",
+      "adapter": "ashby",
+      "type": "ashby",
+      "market": "upstream",
+      "industry": "career-ops-upstream",
+      "tags": [
+        "career-ops-upstream",
+        "ashby"
+      ],
+      "sourceStrategy": "career-ops-upstream",
+      "maxDiscovered": 250,
+      "notes": "Zurich CH / Amsterdam. AI-guided protein design, ML researcher roles.",
+      "boardName": "cradlebio"
+    },
+    {
+      "name": "Hugging Face",
+      "company": "Hugging Face",
+      "source": "Hugging Face",
+      "url": "https://apply.workable.com/huggingface/",
+      "adapter": "workable",
+      "type": "workable",
+      "market": "upstream",
+      "industry": "career-ops-upstream",
+      "tags": [
+        "career-ops-upstream",
+        "workable"
+      ],
+      "sourceStrategy": "career-ops-upstream",
+      "maxDiscovered": 250,
+      "notes": "Paris / NYC / Remote. ML hub & open-source models.",
+      "account": "huggingface"
+    },
+    {
+      "name": "Photoroom",
+      "company": "Photoroom",
+      "source": "Photoroom",
+      "url": "https://jobs.ashbyhq.com/photoroom",
+      "adapter": "ashby",
+      "type": "ashby",
+      "market": "upstream",
+      "industry": "career-ops-upstream",
+      "tags": [
+        "career-ops-upstream",
+        "ashby"
+      ],
+      "sourceStrategy": "career-ops-upstream",
+      "maxDiscovered": 250,
+      "notes": "Paris FR. AI photo editor, Head of CV / Head of ML roles.",
+      "boardName": "photoroom"
+    },
+    {
+      "name": "Pigment",
+      "company": "Pigment",
+      "source": "Pigment",
+      "url": "https://jobs.lever.co/pigment",
+      "adapter": "lever",
+      "type": "lever",
+      "market": "upstream",
+      "industry": "career-ops-upstream",
+      "tags": [
+        "career-ops-upstream",
+        "lever"
+      ],
+      "sourceStrategy": "career-ops-upstream",
+      "maxDiscovered": 250,
+      "notes": "Paris FR / NYC / London. AI-powered FP&A planning platform.",
+      "site": "pigment"
+    },
+    {
+      "name": "Wayve",
+      "company": "Wayve",
+      "source": "Wayve",
+      "url": "https://job-boards.greenhouse.io/wayve",
+      "adapter": "greenhouse",
+      "apiUrl": "https://boards-api.greenhouse.io/v1/boards/wayve/jobs",
+      "type": "greenhouse",
+      "market": "upstream",
+      "industry": "career-ops-upstream",
+      "tags": [
+        "career-ops-upstream",
+        "greenhouse"
+      ],
+      "sourceStrategy": "career-ops-upstream",
+      "maxDiscovered": 250,
+      "notes": "London UK. Embodied AI for self-driving, ML & robotics roles.",
+      "boardToken": "wayve"
+    },
+    {
+      "name": "Isomorphic Labs",
+      "company": "Isomorphic Labs",
+      "source": "Isomorphic Labs",
+      "url": "https://job-boards.greenhouse.io/isomorphiclabs",
+      "adapter": "greenhouse",
+      "apiUrl": "https://boards-api.greenhouse.io/v1/boards/isomorphiclabs/jobs",
+      "type": "greenhouse",
+      "market": "upstream",
+      "industry": "career-ops-upstream",
+      "tags": [
+        "career-ops-upstream",
+        "greenhouse"
+      ],
+      "sourceStrategy": "career-ops-upstream",
+      "maxDiscovered": 250,
+      "notes": "London / Lausanne / Cambridge MA. DeepMind spin-out for drug discovery AI.",
+      "boardToken": "isomorphiclabs"
+    },
+    {
+      "name": "PhysicsX",
+      "company": "PhysicsX",
+      "source": "PhysicsX",
+      "url": "https://job-boards.greenhouse.io/physicsx",
+      "adapter": "greenhouse",
+      "apiUrl": "https://boards-api.greenhouse.io/v1/boards/physicsx/jobs",
+      "type": "greenhouse",
+      "market": "upstream",
+      "industry": "career-ops-upstream",
+      "tags": [
+        "career-ops-upstream",
+        "greenhouse"
+      ],
+      "sourceStrategy": "career-ops-upstream",
+      "maxDiscovered": 250,
+      "notes": "London UK. Physics-informed ML for engineering, ~40 roles.",
+      "boardToken": "physicsx"
+    },
+    {
+      "name": "Stability AI",
+      "company": "Stability AI",
+      "source": "Stability AI",
+      "url": "https://job-boards.greenhouse.io/stabilityai",
+      "adapter": "greenhouse",
+      "apiUrl": "https://boards-api.greenhouse.io/v1/boards/stabilityai/jobs",
+      "type": "greenhouse",
+      "market": "upstream",
+      "industry": "career-ops-upstream",
+      "tags": [
+        "career-ops-upstream",
+        "greenhouse"
+      ],
+      "sourceStrategy": "career-ops-upstream",
+      "maxDiscovered": 250,
+      "notes": "London / SF. Generative AI image/video research lab.",
+      "boardToken": "stabilityai"
+    },
+    {
+      "name": "Synthesia",
+      "company": "Synthesia",
+      "source": "Synthesia",
+      "url": "https://jobs.ashbyhq.com/synthesia",
+      "adapter": "ashby",
+      "type": "ashby",
+      "market": "upstream",
+      "industry": "career-ops-upstream",
+      "tags": [
+        "career-ops-upstream",
+        "ashby"
+      ],
+      "sourceStrategy": "career-ops-upstream",
+      "maxDiscovered": 250,
+      "notes": "London UK. AI video generation for enterprise, $4B valuation.",
+      "boardName": "synthesia"
+    },
+    {
+      "name": "Faculty",
+      "company": "Faculty",
+      "source": "Faculty",
+      "url": "https://jobs.ashbyhq.com/faculty",
+      "adapter": "ashby",
+      "type": "ashby",
+      "market": "upstream",
+      "industry": "career-ops-upstream",
+      "tags": [
+        "career-ops-upstream",
+        "ashby"
+      ],
+      "sourceStrategy": "career-ops-upstream",
+      "maxDiscovered": 250,
+      "notes": "London UK. Applied AI consultancy. 80+ roles, AI Safety / MLE / Delivery.",
+      "boardName": "faculty"
+    },
+    {
+      "name": "Causaly",
+      "company": "Causaly",
+      "source": "Causaly",
+      "url": "https://jobs.ashbyhq.com/causaly",
+      "adapter": "ashby",
+      "type": "ashby",
+      "market": "upstream",
+      "industry": "career-ops-upstream",
+      "tags": [
+        "career-ops-upstream",
+        "ashby"
+      ],
+      "sourceStrategy": "career-ops-upstream",
+      "maxDiscovered": 250,
+      "notes": "London / Athens. Biomedical knowledge graph + AI.",
+      "boardName": "causaly"
+    },
+    {
+      "name": "Lovable",
+      "company": "Lovable",
+      "source": "Lovable",
+      "url": "https://jobs.ashbyhq.com/lovable",
+      "adapter": "ashby",
+      "type": "ashby",
+      "market": "upstream",
+      "industry": "career-ops-upstream",
+      "tags": [
+        "career-ops-upstream",
+        "ashby"
+      ],
+      "sourceStrategy": "career-ops-upstream",
+      "maxDiscovered": 250,
+      "notes": "Stockholm SE. AI app builder (text-to-app), 80+ open roles.",
+      "boardName": "lovable"
+    },
+    {
+      "name": "Legora",
+      "company": "Legora",
+      "source": "Legora",
+      "url": "https://jobs.ashbyhq.com/legora",
+      "adapter": "ashby",
+      "type": "ashby",
+      "market": "upstream",
+      "industry": "career-ops-upstream",
+      "tags": [
+        "career-ops-upstream",
+        "ashby"
+      ],
+      "sourceStrategy": "career-ops-upstream",
+      "maxDiscovered": 250,
+      "notes": "Stockholm SE / NYC / London. AI-native legal workspace.",
+      "boardName": "legora"
+    },
+    {
+      "name": "Spotify",
+      "company": "Spotify",
+      "source": "Spotify",
+      "url": "https://jobs.lever.co/spotify",
+      "adapter": "lever",
+      "type": "lever",
+      "market": "upstream",
+      "industry": "career-ops-upstream",
+      "tags": [
+        "career-ops-upstream",
+        "lever"
+      ],
+      "sourceStrategy": "career-ops-upstream",
+      "maxDiscovered": 250,
+      "notes": "Stockholm SE / NYC / London. Audio platform, large ML/personalization org.",
+      "site": "spotify"
+    },
+    {
+      "name": "Vinted",
+      "company": "Vinted",
+      "source": "Vinted",
+      "url": "https://jobs.lever.co/vinted",
+      "adapter": "lever",
+      "type": "lever",
+      "market": "upstream",
+      "industry": "career-ops-upstream",
+      "tags": [
+        "career-ops-upstream",
+        "lever"
+      ],
+      "sourceStrategy": "career-ops-upstream",
+      "maxDiscovered": 250,
+      "notes": "Vilnius LT / Berlin. C2C marketplace unicorn, data science & ML roles.",
+      "site": "vinted"
+    },
+    {
+      "name": "Amplemarket",
+      "company": "Amplemarket",
+      "source": "Amplemarket",
+      "url": "https://job-boards.greenhouse.io/amplemarket",
+      "adapter": "greenhouse",
+      "apiUrl": "https://boards-api.greenhouse.io/v1/boards/amplemarket/jobs",
+      "type": "greenhouse",
+      "market": "upstream",
+      "industry": "career-ops-upstream",
+      "tags": [
+        "career-ops-upstream",
+        "greenhouse"
+      ],
+      "sourceStrategy": "career-ops-upstream",
+      "maxDiscovered": 250,
+      "notes": "Lisbon PT / Remote. AI-native sales platform.",
+      "boardToken": "amplemarket"
+    },
+    {
+      "name": "Perplexity",
+      "company": "Perplexity",
+      "source": "Perplexity",
+      "url": "https://jobs.ashbyhq.com/perplexity",
+      "adapter": "ashby",
+      "type": "ashby",
+      "market": "upstream",
+      "industry": "career-ops-upstream",
+      "tags": [
+        "career-ops-upstream",
+        "ashby"
+      ],
+      "sourceStrategy": "career-ops-upstream",
+      "maxDiscovered": 250,
+      "notes": "AI-native search and enterprise AI platform.",
+      "boardName": "perplexity"
+    },
+    {
+      "name": "Clay Labs",
+      "company": "Clay Labs",
+      "source": "Clay Labs",
+      "url": "https://jobs.ashbyhq.com/claylabs",
+      "adapter": "ashby",
+      "type": "ashby",
+      "market": "upstream",
+      "industry": "career-ops-upstream",
+      "tags": [
+        "career-ops-upstream",
+        "ashby"
+      ],
+      "sourceStrategy": "career-ops-upstream",
+      "maxDiscovered": 250,
+      "notes": "AI-native GTM and workflow automation platform.",
+      "boardName": "claylabs"
+    },
+    {
+      "name": "Runway",
+      "company": "Runway",
+      "source": "Runway",
+      "url": "https://job-boards.greenhouse.io/runwayml",
+      "adapter": "greenhouse",
+      "apiUrl": "https://boards-api.greenhouse.io/v1/boards/runwayml/jobs",
+      "type": "greenhouse",
+      "market": "upstream",
+      "industry": "career-ops-upstream",
+      "tags": [
+        "career-ops-upstream",
+        "greenhouse"
+      ],
+      "sourceStrategy": "career-ops-upstream",
+      "maxDiscovered": 250,
+      "notes": "Generative AI video and creative tooling platform.",
+      "boardToken": "runwayml"
+    },
+    {
+      "name": "Hightouch",
+      "company": "Hightouch",
+      "source": "Hightouch",
+      "url": "https://job-boards.greenhouse.io/hightouch",
+      "adapter": "greenhouse",
+      "apiUrl": "https://boards-api.greenhouse.io/v1/boards/hightouch/jobs",
+      "type": "greenhouse",
+      "market": "upstream",
+      "industry": "career-ops-upstream",
+      "tags": [
+        "career-ops-upstream",
+        "greenhouse"
+      ],
+      "sourceStrategy": "career-ops-upstream",
+      "maxDiscovered": 250,
+      "notes": "Data activation platform with AI agents and solutions engineering roles.",
+      "boardToken": "hightouch"
+    },
+    {
+      "name": "WorkOS",
+      "company": "WorkOS",
+      "source": "WorkOS",
+      "url": "https://jobs.ashbyhq.com/workos",
+      "adapter": "ashby",
+      "type": "ashby",
+      "market": "upstream",
+      "industry": "career-ops-upstream",
+      "tags": [
+        "career-ops-upstream",
+        "ashby"
+      ],
+      "sourceStrategy": "career-ops-upstream",
+      "maxDiscovered": 250,
+      "notes": "Developer tools and enterprise-ready auth/platform APIs.",
+      "boardName": "workos"
+    },
+    {
+      "name": "Supabase",
+      "company": "Supabase",
+      "source": "Supabase",
+      "url": "https://jobs.ashbyhq.com/supabase",
+      "adapter": "ashby",
+      "type": "ashby",
+      "market": "upstream",
+      "industry": "career-ops-upstream",
+      "tags": [
+        "career-ops-upstream",
+        "ashby"
+      ],
+      "sourceStrategy": "career-ops-upstream",
+      "maxDiscovered": 250,
+      "notes": "Open-source Firebase alternative. Remote-first. Postgres + Auth + Storage. Strong DevRel/DX hiring.",
+      "boardName": "supabase"
+    },
+    {
+      "name": "Resend",
+      "company": "Resend",
+      "source": "Resend",
+      "url": "https://jobs.ashbyhq.com/resend",
+      "adapter": "ashby",
+      "type": "ashby",
+      "market": "upstream",
+      "industry": "career-ops-upstream",
+      "tags": [
+        "career-ops-upstream",
+        "ashby"
+      ],
+      "sourceStrategy": "career-ops-upstream",
+      "maxDiscovered": 250,
+      "notes": "Email API for developers. Remote-first. DX/DevRel focused.",
+      "boardName": "resend"
+    },
+    {
+      "name": "Clerk",
+      "company": "Clerk",
+      "source": "Clerk",
+      "url": "https://jobs.ashbyhq.com/clerk",
+      "adapter": "ashby",
+      "type": "ashby",
+      "market": "upstream",
+      "industry": "career-ops-upstream",
+      "tags": [
+        "career-ops-upstream",
+        "ashby"
+      ],
+      "sourceStrategy": "career-ops-upstream",
+      "maxDiscovered": 250,
+      "notes": "Auth & user management for developers. SE / TAM / PM roles.",
+      "boardName": "clerk"
+    },
+    {
+      "name": "Inngest",
+      "company": "Inngest",
+      "source": "Inngest",
+      "url": "https://jobs.ashbyhq.com/inngest",
+      "adapter": "ashby",
+      "type": "ashby",
+      "market": "upstream",
+      "industry": "career-ops-upstream",
+      "tags": [
+        "career-ops-upstream",
+        "ashby"
+      ],
+      "sourceStrategy": "career-ops-upstream",
+      "maxDiscovered": 250,
+      "notes": "Durable workflow engine for serverless. DX/DevRel/Engineering hiring.",
+      "boardName": "inngest"
+    },
+    {
+      "name": "PlanetScale",
+      "company": "PlanetScale",
+      "source": "PlanetScale",
+      "url": "https://job-boards.greenhouse.io/planetscale",
+      "adapter": "greenhouse",
+      "apiUrl": "https://boards-api.greenhouse.io/v1/boards/planetscale/jobs",
+      "type": "greenhouse",
+      "market": "upstream",
+      "industry": "career-ops-upstream",
+      "tags": [
+        "career-ops-upstream",
+        "greenhouse"
+      ],
+      "sourceStrategy": "career-ops-upstream",
+      "maxDiscovered": 250,
+      "notes": "Serverless MySQL platform. Customer Engineering, Engineering, Sales.",
+      "boardToken": "planetscale"
+    }
+  ],
+  "searchQueries": [
+    {
+      "market": "upstream",
+      "name": "Ashby — AI PM",
+      "query": "site:jobs.ashbyhq.com \"AI Product Manager\" OR \"Senior Product Manager AI\" remote",
+      "source": "career-ops-upstream"
+    },
+    {
+      "market": "upstream",
+      "name": "Ashby — Solutions Architect",
+      "query": "site:jobs.ashbyhq.com \"Solutions Architect\" AI OR automation remote",
+      "source": "career-ops-upstream"
+    },
+    {
+      "market": "upstream",
+      "name": "Ashby — AI Engineer",
+      "query": "site:jobs.ashbyhq.com \"AI Engineer\" OR \"LLM Engineer\" OR \"Forward Deployed\" remote",
+      "source": "career-ops-upstream"
+    },
+    {
+      "market": "upstream",
+      "name": "Ashby — Agentic",
+      "query": "site:jobs.ashbyhq.com \"Agentic\" OR \"AI Agent\" OR \"Automation Architect\" remote",
+      "source": "career-ops-upstream"
+    },
+    {
+      "market": "upstream",
+      "name": "Greenhouse — AI PM",
+      "query": "site:boards.greenhouse.io OR site:job-boards.greenhouse.io \"AI Product Manager\" OR \"Senior Product Manager\" AI remote",
+      "source": "career-ops-upstream"
+    },
+    {
+      "market": "upstream",
+      "name": "Greenhouse — SA & FDE",
+      "query": "site:boards.greenhouse.io OR site:job-boards.greenhouse.io \"Solutions Architect\" OR \"Forward Deployed\" AI remote",
+      "source": "career-ops-upstream"
+    },
+    {
+      "market": "upstream",
+      "name": "Greenhouse — AI Engineer",
+      "query": "site:boards.greenhouse.io OR site:job-boards.greenhouse.io \"AI Engineer\" OR \"LLM\" OR \"Agentic\" remote",
+      "source": "career-ops-upstream"
+    },
+    {
+      "market": "upstream",
+      "name": "Workable — AI Roles",
+      "query": "site:apply.workable.com \"AI\" \"Product Manager\" OR \"Solutions Architect\" OR \"AI Engineer\" remote",
+      "source": "career-ops-upstream"
+    },
+    {
+      "market": "upstream",
+      "name": "Ashby — No-Code & Automation",
+      "query": "site:jobs.ashbyhq.com \"no-code\" OR \"low-code\" OR \"automation engineer\" OR \"n8n\" OR \"Make\" OR \"Airtable\" remote senior",
+      "source": "career-ops-upstream"
+    },
+    {
+      "market": "upstream",
+      "name": "Greenhouse — No-Code & Automation",
+      "query": "site:job-boards.greenhouse.io \"no-code\" OR \"low-code\" OR \"automation engineer\" OR \"business systems\" senior remote",
+      "source": "career-ops-upstream"
+    },
+    {
+      "market": "upstream",
+      "name": "GTM Engineer — All portals",
+      "query": "\"GTM Engineer\" OR \"RevOps Engineer\" OR \"Growth Engineer\" automation Airtable OR Make OR Clay remote",
+      "source": "career-ops-upstream"
+    },
+    {
+      "market": "upstream",
+      "name": "Voice AI — FDE & SA",
+      "query": "site:job-boards.greenhouse.io OR site:jobs.ashbyhq.com \"Voice AI\" OR \"Conversational AI\" OR \"Speech\" \"Solutions\" OR \"Forward Deployed\" OR \"Customer Engineer\"",
+      "source": "career-ops-upstream"
+    },
+    {
+      "market": "upstream",
+      "name": "Voice AI — AI Engineer",
+      "query": "site:job-boards.greenhouse.io OR site:jobs.ashbyhq.com \"Voice\" OR \"Speech\" \"AI Engineer\" OR \"Deployment\" OR \"Integration\"",
+      "source": "career-ops-upstream"
+    },
+    {
+      "market": "upstream",
+      "name": "Contact Center AI — SA & SE",
+      "query": "\"contact center\" OR \"customer service\" \"AI\" \"Solutions Architect\" OR \"Solutions Engineer\" OR \"Forward Deployed\" remote",
+      "source": "career-ops-upstream"
+    },
+    {
+      "market": "upstream",
+      "name": "FDE & Deployed Engineer — All portals",
+      "query": "\"Forward Deployed Engineer\" OR \"Deployed Engineer\" OR \"Deployment Engineer\" AI site:job-boards.greenhouse.io OR site:jobs.ashbyhq.com OR site:jobs.lever.co",
+      "source": "career-ops-upstream"
+    },
+    {
+      "market": "upstream",
+      "name": "Remotive — AI/DevRel/SA/FDE",
+      "query": "site:remotive.com \"AI Engineer\" OR \"Developer Advocate\" OR \"Solutions Architect\" OR \"Forward Deployed\" OR \"DevRel\" Europe",
+      "source": "career-ops-upstream"
+    },
+    {
+      "market": "upstream",
+      "name": "WeWorkRemotely — AI & DX",
+      "query": "site:weworkremotely.com \"AI\" OR \"DevRel\" OR \"Solutions Engineer\" OR \"Forward Deployed\" OR \"Founding Engineer\"",
+      "source": "career-ops-upstream"
+    },
+    {
+      "market": "upstream",
+      "name": "Working Nomads — AI/DevRel/SA",
+      "query": "site:workingnomads.com \"AI Engineer\" OR \"Developer Advocate\" OR \"Solutions Architect\" OR \"Forward Deployed\"",
+      "source": "career-ops-upstream"
+    },
+    {
+      "market": "upstream",
+      "name": "EU Remote Jobs — AI/DevRel/SA",
+      "query": "site:euremotejobs.com \"AI\" OR \"DevRel\" OR \"Solutions Architect\" OR \"Forward Deployed\" OR \"Founding Engineer\"",
+      "source": "career-ops-upstream"
+    },
+    {
+      "market": "upstream",
+      "name": "RemoteOK — AI/DevRel/SA",
+      "query": "site:remoteok.com \"AI Engineer\" OR \"Developer Advocate\" OR \"Solutions Architect\" OR \"Forward Deployed\" OR \"Founding Engineer\"",
+      "source": "career-ops-upstream"
+    },
+    {
+      "market": "upstream",
+      "name": "ai-jobs.net — DevRel/SA/FDE",
+      "query": "site:ai-jobs.net \"Developer Advocate\" OR \"Solutions Architect\" OR \"Forward Deployed\" OR \"DevRel\" remote Europe",
+      "source": "career-ops-upstream"
+    },
+    {
+      "market": "upstream",
+      "name": "ai-jobs.net — Founding/Applied AI",
+      "query": "site:ai-jobs.net \"Founding Engineer\" OR \"Applied AI Engineer\" OR \"Founding\" remote",
+      "source": "career-ops-upstream"
+    },
+    {
+      "market": "upstream",
+      "name": "fwddeploy.com — Forward Deployed roles",
+      "query": "site:fwddeploy.com \"Forward Deployed\" OR \"Deployed Engineer\" remote Europe OR EMEA",
+      "source": "career-ops-upstream"
+    },
+    {
+      "market": "upstream",
+      "name": "YC Jobs — DevRel/SA/FDE/Founding",
+      "query": "site:ycombinator.com/jobs OR site:workatastartup.com \"Forward Deployed\" OR \"Developer Advocate\" OR \"Founding Engineer\" OR \"Solutions Architect\" remote",
+      "source": "career-ops-upstream"
+    },
+    {
+      "market": "upstream",
+      "name": "YC Jobs — Applied AI",
+      "query": "site:workatastartup.com \"Applied AI\" OR \"AI Engineer\" OR \"AI Agent\" remote Europe",
+      "source": "career-ops-upstream"
+    },
+    {
+      "market": "upstream",
+      "name": "Manfred — Tech Senior España",
+      "query": "site:getmanfred.com/en/job-offers \"Solutions Architect\" OR \"DevRel\" OR \"Forward Deployed\" OR \"AI Engineer\" OR \"Founding\"",
+      "source": "career-ops-upstream"
+    },
+    {
+      "market": "upstream",
+      "name": "Manfred — Remote AI/Senior",
+      "query": "site:getmanfred.com \"remote\" \"AI\" OR \"Senior\" OR \"Staff\" OR \"Lead\"",
+      "source": "career-ops-upstream"
+    },
+    {
+      "market": "upstream",
+      "name": "Tecnoempleo — España IT",
+      "query": "site:tecnoempleo.com \"AI Engineer\" OR \"Solutions Architect\" OR \"DevRel\" OR \"Forward Deployed\" OR \"Founding Engineer\"",
+      "source": "career-ops-upstream"
+    },
+    {
+      "market": "upstream",
+      "name": "Tecnoempleo — Remoto Senior",
+      "query": "site:tecnoempleo.com \"remoto\" OR \"remote\" Senior \"AI\" OR \"Architect\" OR \"Lead\"",
+      "source": "career-ops-upstream"
+    },
+    {
+      "market": "upstream",
+      "name": "JobFluent — Spain startups",
+      "query": "site:jobfluent.com Madrid OR Barcelona \"AI\" OR \"Engineer\" OR \"Solutions\" OR \"DevRel\"",
+      "source": "career-ops-upstream"
+    },
+    {
+      "market": "upstream",
+      "name": "Welcome to the Jungle — Spain tech",
+      "query": "site:welcometothejungle.com Spain OR Madrid OR Barcelona \"AI Engineer\" OR \"Solutions Architect\" OR \"DevRel\" OR \"Forward Deployed\"",
+      "source": "career-ops-upstream"
+    },
+    {
+      "market": "upstream",
+      "name": "DevRelX Jobs",
+      "query": "site:devrelx.com/jobs remote OR Europe OR EMEA",
+      "source": "career-ops-upstream"
+    },
+    {
+      "market": "upstream",
+      "name": "TrueUp — DevRel roles",
+      "query": "site:trueup.io/devrel OR site:trueup.io \"Developer Advocate\" OR \"DevRel\" remote Europe",
+      "source": "career-ops-upstream"
+    },
+    {
+      "market": "upstream",
+      "name": "Remote Rocketship — DevRel",
+      "query": "site:remoterocketship.com/jobs/developer-relations OR site:remoterocketship.com \"DevRel\" remote",
+      "source": "career-ops-upstream"
+    },
+    {
+      "market": "upstream",
+      "name": "DevRel Job board",
+      "query": "site:devreljob.com remote OR Europe OR EMEA",
+      "source": "career-ops-upstream"
+    },
+    {
+      "market": "upstream",
+      "name": "Himalayas — Remote AI/Dev-tools",
+      "query": "site:himalayas.app \"AI Engineer\" OR \"Solutions Architect\" OR \"Developer Advocate\" OR \"Forward Deployed\" OR \"Founding Engineer\" Europe",
+      "source": "career-ops-upstream"
+    },
+    {
+      "market": "upstream",
+      "name": "Jooble — España Tech Senior",
+      "query": "site:jooble.org \"AI Engineer\" OR \"Solutions Architect\" OR \"DevRel\" Madrid OR remote España",
+      "source": "career-ops-upstream"
+    },
+    {
+      "market": "upstream",
+      "name": "EU Data Jobs — AI/ML Europe",
+      "query": "site:eudatajobs.com \"AI\" OR \"ML\" OR \"Data\" \"Engineer\" OR \"Architect\" remote Europe",
+      "source": "career-ops-upstream"
+    },
+    {
+      "market": "upstream",
+      "name": "HN Who's Hiring — Remote AI",
+      "query": "site:news.ycombinator.com OR site:hnrss.org \"AI Engineer\" OR \"Forward Deployed\" OR \"DevRel\" OR \"Founding Engineer\" remote",
+      "source": "career-ops-upstream"
+    },
+    {
+      "market": "upstream",
+      "name": "OpenAI — scan query",
+      "query": "site:openai.com/careers \"Solutions\" OR \"Forward Deployed\" OR \"AI Engineer\"",
+      "source": "career-ops-upstream-company"
+    },
+    {
+      "market": "upstream",
+      "name": "ElevenLabs — scan query",
+      "query": "site:jobs.ashbyhq.com/elevenlabs",
+      "source": "career-ops-upstream-company"
+    },
+    {
+      "market": "upstream",
+      "name": "Deepgram — scan query",
+      "query": "site:deepgram.com/careers OR \"deepgram\" \"Solutions\" OR \"AI Engineer\" site:jobs.ashbyhq.com",
+      "source": "career-ops-upstream-company"
+    },
+    {
+      "market": "upstream",
+      "name": "Vapi — scan query",
+      "query": "site:jobs.ashbyhq.com/vapi",
+      "source": "career-ops-upstream-company"
+    },
+    {
+      "market": "upstream",
+      "name": "Bland AI — scan query",
+      "query": "site:jobs.ashbyhq.com/bland",
+      "source": "career-ops-upstream-company"
+    },
+    {
+      "market": "upstream",
+      "name": "Retool — scan query",
+      "query": "site:retool.com/careers \"Deployed\" OR \"AI\" OR \"Solutions\"",
+      "source": "career-ops-upstream-company"
+    },
+    {
+      "market": "upstream",
+      "name": "Ada — scan query",
+      "query": "\"ada.cx\" OR \"ada\" \"AI\" \"Solutions\" OR \"Engineer\" site:jobs.ashbyhq.com OR site:job-boards.greenhouse.io",
+      "source": "career-ops-upstream-company"
+    },
+    {
+      "market": "upstream",
+      "name": "LivePerson — scan query",
+      "query": "site:liveperson.com/careers OR \"liveperson\" \"Solutions\" OR \"AI\" site:job-boards.greenhouse.io",
+      "source": "career-ops-upstream-company"
+    },
+    {
+      "market": "upstream",
+      "name": "Sierra — scan query",
+      "query": "\"sierra.ai\" \"AI\" \"Forward Deployed\" OR \"Applied\" OR \"Solutions\" site:jobs.ashbyhq.com",
+      "source": "career-ops-upstream-company"
+    },
+    {
+      "market": "upstream",
+      "name": "Decagon — scan query",
+      "query": "\"decagon\" \"AI\" \"Forward Deployed\" OR \"Solutions\" site:jobs.ashbyhq.com",
+      "source": "career-ops-upstream-company"
+    },
+    {
+      "market": "upstream",
+      "name": "Talkdesk — scan query",
+      "query": "site:talkdesk.com/careers \"AI\" OR \"Solutions Architect\" OR \"AI Engineer\"",
+      "source": "career-ops-upstream-company"
+    },
+    {
+      "market": "upstream",
+      "name": "Twilio — scan query",
+      "query": "site:twilio.com/company/jobs \"AI\" OR \"Voice\" \"Solutions\" OR \"Architect\"",
+      "source": "career-ops-upstream-company"
+    },
+    {
+      "market": "upstream",
+      "name": "Dialpad — scan query",
+      "query": "\"dialpad\" \"AI\" \"Solutions\" OR \"Engineer\" site:job-boards.greenhouse.io OR site:jobs.ashbyhq.com",
+      "source": "career-ops-upstream-company"
+    },
+    {
+      "market": "upstream",
+      "name": "Gong — scan query",
+      "query": "site:gong.io/careers \"AI\" OR \"Solutions\" OR \"Architect\"",
+      "source": "career-ops-upstream-company"
+    },
+    {
+      "market": "upstream",
+      "name": "Genesys — scan query",
+      "query": "site:genesys.com/careers \"AI\" \"Solutions Architect\" OR \"AI Engineer\"",
+      "source": "career-ops-upstream-company"
+    },
+    {
+      "market": "upstream",
+      "name": "Salesforce — scan query",
+      "query": "site:careers.salesforce.com \"Forward Deployed\" OR \"AI Engineer\" OR \"Agentforce\"",
+      "source": "career-ops-upstream-company"
+    },
+    {
+      "market": "upstream",
+      "name": "Langfuse — scan query",
+      "query": "\"langfuse\" careers OR jobs \"engineer\" OR \"solutions\"",
+      "source": "career-ops-upstream-company"
+    },
+    {
+      "market": "upstream",
+      "name": "Lindy — scan query",
+      "query": "\"lindy.ai\" \"AI\" \"Forward Deployed\" OR \"Solutions\" site:jobs.ashbyhq.com",
+      "source": "career-ops-upstream-company"
+    },
+    {
+      "market": "upstream",
+      "name": "Cognigy — scan query",
+      "query": "\"cognigy\" careers \"AI\" OR \"Solutions\" OR \"Engineer\"",
+      "source": "career-ops-upstream-company"
+    },
+    {
+      "market": "upstream",
+      "name": "n8n — scan query",
+      "query": "site:jobs.ashbyhq.com/n8n",
+      "source": "career-ops-upstream-company"
+    },
+    {
+      "market": "upstream",
+      "name": "Zapier — scan query",
+      "query": "site:jobs.ashbyhq.com/zapier",
+      "source": "career-ops-upstream-company"
+    },
+    {
+      "market": "upstream",
+      "name": "Make.com (Celonis) — scan query",
+      "query": "site:make.com/en/careers OR \"make.com\" \"engineer\" OR \"solutions\" site:jobs.ashbyhq.com",
+      "source": "career-ops-upstream-company"
+    },
+    {
+      "market": "upstream",
+      "name": "Semios — scan query",
+      "query": "site:apply.workable.com/semios",
+      "source": "career-ops-upstream-company"
+    },
+    {
+      "market": "upstream",
+      "name": "Factorial — scan query",
+      "query": "site:jobs.greenhouse.io/factorial",
+      "source": "career-ops-upstream-company"
+    },
+    {
+      "market": "upstream",
+      "name": "Attio — scan query",
+      "query": "site:attio.com/careers OR site:jobs.ashbyhq.com/attio",
+      "source": "career-ops-upstream-company"
+    },
+    {
+      "market": "upstream",
+      "name": "Tinybird — scan query",
+      "query": "site:tinybird.co/careers OR site:jobs.ashbyhq.com/tinybird",
+      "source": "career-ops-upstream-company"
+    },
+    {
+      "market": "upstream",
+      "name": "Clarity AI — scan query",
+      "query": "site:clarity.ai/careers OR site:jobs.lever.co/clarity-ai",
+      "source": "career-ops-upstream-company"
+    },
+    {
+      "market": "upstream",
+      "name": "Travelperk — scan query",
+      "query": "site:jobs.ashbyhq.com/travelperk",
+      "source": "career-ops-upstream-company"
+    },
+    {
+      "market": "upstream",
+      "name": "Aleph Alpha — scan query",
+      "query": "site:jobs.ashbyhq.com/AlephAlpha",
+      "source": "career-ops-upstream-company"
+    },
+    {
+      "market": "upstream",
+      "name": "DeepL — scan query",
+      "query": "site:jobs.ashbyhq.com/DeepL",
+      "source": "career-ops-upstream-company"
+    },
+    {
+      "market": "upstream",
+      "name": "Lakera — scan query",
+      "query": "site:jobs.ashbyhq.com/lakera.ai",
+      "source": "career-ops-upstream-company"
+    },
+    {
+      "market": "upstream",
+      "name": "Cradle — scan query",
+      "query": "site:jobs.ashbyhq.com/cradlebio",
+      "source": "career-ops-upstream-company"
+    },
+    {
+      "market": "upstream",
+      "name": "Hugging Face — scan query",
+      "query": "site:apply.workable.com/huggingface",
+      "source": "career-ops-upstream-company"
+    },
+    {
+      "market": "upstream",
+      "name": "Photoroom — scan query",
+      "query": "site:jobs.ashbyhq.com/photoroom",
+      "source": "career-ops-upstream-company"
+    },
+    {
+      "market": "upstream",
+      "name": "Synthesia — scan query",
+      "query": "site:jobs.ashbyhq.com/synthesia OR site:job-boards.greenhouse.io/synthesia",
+      "source": "career-ops-upstream-company"
+    },
+    {
+      "market": "upstream",
+      "name": "Faculty — scan query",
+      "query": "site:jobs.ashbyhq.com/faculty",
+      "source": "career-ops-upstream-company"
+    },
+    {
+      "market": "upstream",
+      "name": "Causaly — scan query",
+      "query": "site:jobs.ashbyhq.com/causaly",
+      "source": "career-ops-upstream-company"
+    },
+    {
+      "market": "upstream",
+      "name": "Lovable — scan query",
+      "query": "site:jobs.ashbyhq.com/lovable",
+      "source": "career-ops-upstream-company"
+    },
+    {
+      "market": "upstream",
+      "name": "Legora — scan query",
+      "query": "site:jobs.ashbyhq.com/legora",
+      "source": "career-ops-upstream-company"
+    },
+    {
+      "market": "upstream",
+      "name": "Perplexity — scan query",
+      "query": "‘site:jobs.ashbyhq.com/perplexity \"AI\" OR \"Applied AI\" OR \"Forward Deployed\" OR \"Engineer\"’",
+      "source": "career-ops-upstream-company"
+    },
+    {
+      "market": "upstream",
+      "name": "Clay Labs — scan query",
+      "query": "site:jobs.ashbyhq.com/claylabs \"AI\" OR \"Developer Experience\" OR \"Growth\" OR \"Engineer\"",
+      "source": "career-ops-upstream-company"
+    },
+    {
+      "market": "upstream",
+      "name": "WorkOS — scan query",
+      "query": "site:jobs.ashbyhq.com/workos \"Solutions Engineer\" OR \"Developer Success\" OR \"Engineer\"",
+      "source": "career-ops-upstream-company"
+    },
+    {
+      "market": "upstream",
+      "name": "Supabase — scan query",
+      "query": "site:jobs.ashbyhq.com/supabase",
+      "source": "career-ops-upstream-company"
+    },
+    {
+      "market": "upstream",
+      "name": "Resend — scan query",
+      "query": "site:jobs.ashbyhq.com/resend",
+      "source": "career-ops-upstream-company"
+    },
+    {
+      "market": "upstream",
+      "name": "Clerk — scan query",
+      "query": "site:jobs.ashbyhq.com/clerk",
+      "source": "career-ops-upstream-company"
+    },
+    {
+      "market": "upstream",
+      "name": "Inngest — scan query",
+      "query": "site:jobs.ashbyhq.com/inngest",
+      "source": "career-ops-upstream-company"
+    },
+    {
+      "market": "upstream",
+      "name": "Zep AI — scan query",
+      "query": "\"Zep\" \"Forward Deployed\" OR \"Developer Relations\" OR \"Founding\" site:workatastartup.com OR site:getzep.com",
+      "source": "career-ops-upstream-company"
+    },
+    {
+      "market": "upstream",
+      "name": "Maxim AI — scan query",
+      "query": "\"Maxim AI\" OR \"getmaxim\" careers \"engineer\" OR \"product\"",
+      "source": "career-ops-upstream-company"
+    }
+  ]
+}
