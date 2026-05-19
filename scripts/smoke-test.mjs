@@ -1293,6 +1293,51 @@ async function main() {
       });
 
       await page.evaluate(() => {
+        window.CV_CAREER_OPS_DEEP_FIT = {
+          summary: { totalResults: 1, layerA: 1, layerB: 0, layerC: 0 },
+          layerA: [{
+            company: "Previous Co",
+            title: "Previous Deep Fit",
+            score: 88,
+            grade: "A",
+            decision: "pursue selectively",
+            thesis: "Previously active user-generated result."
+          }],
+          layerB: [],
+          layerC: []
+        };
+        window._careerOpsDeepFitSource = "user-upload";
+        window.careerOpsSetTab("upload");
+      });
+      await page.click("#careerLoadStaticDeepFit");
+      const staticSnapshotLoadAudit = await page.evaluate(() => ({
+        activeTab: document.querySelector(".career-ops-tab.active")?.dataset.careerOpsTab || "",
+        activeTotalResults: window.CV_CAREER_OPS_DEEP_FIT?.summary?.totalResults || 0,
+        deepFitSource: window._careerOpsDeepFitSource || "",
+        status: document.getElementById("careerStaticSnapshotStatus")?.textContent || "",
+        viewVisible: getComputedStyle(document.getElementById("careerViewStaticDeepFit")).display !== "none"
+      }));
+      assert.equal(staticSnapshotLoadAudit.activeTab, "upload", "讀取靜態快照不應直接切到 Deep Fit");
+      assert.equal(staticSnapshotLoadAudit.activeTotalResults, 1, "讀取靜態快照不應覆蓋目前的 Deep Fit 結果");
+      assert.equal(staticSnapshotLoadAudit.deepFitSource, "user-upload", "讀取靜態快照不應改變目前結果來源");
+      assert.match(staticSnapshotLoadAudit.status, /尚未切換畫面/);
+      assert.equal(staticSnapshotLoadAudit.viewVisible, true, "讀取後應顯示查看快照結果按鈕");
+      await page.click("#careerViewStaticDeepFit");
+      await page.waitForFunction(() => {
+        const activeTab = document.querySelector(".career-ops-tab.active")?.dataset.careerOpsTab || "";
+        const area = document.getElementById("careerDeepFitArea");
+        return activeTab === "deepfit" && /本機靜態快照結果/.test(area?.textContent || "");
+      });
+      const staticSnapshotViewAudit = await page.evaluate(() => ({
+        activeTab: document.querySelector(".career-ops-tab.active")?.dataset.careerOpsTab || "",
+        activeTotalResults: window.CV_CAREER_OPS_DEEP_FIT?.summary?.totalResults || 0,
+        deepFitSource: window._careerOpsDeepFitSource || ""
+      }));
+      assert.equal(staticSnapshotViewAudit.activeTab, "deepfit");
+      assert.notEqual(staticSnapshotViewAudit.activeTotalResults, 1, "查看快照結果才應切換到靜態 Deep Fit");
+      assert.equal(staticSnapshotViewAudit.deepFitSource, "static");
+
+      await page.evaluate(() => {
         window.CV_CAREER_OPS_JOBS = { source: "fallback", jobs: [] };
         window.CV_STUDIO_CONFIG = {
           ...(window.CV_STUDIO_CONFIG || {}),

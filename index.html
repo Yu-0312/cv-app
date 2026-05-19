@@ -5481,7 +5481,7 @@
     }
     /* ── Layer A dossier cards ── */
     .career-dossier-card {
-      background: #fff;
+      background: var(--surface-strong);
       border: 1px solid var(--line);
       border-radius: 16px;
       overflow: hidden;
@@ -5512,6 +5512,10 @@
       line-height: 1.3;
     }
     .career-dossier-meta {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 5px 8px;
       font-size: 12px;
       color: var(--muted);
       margin-top: 4px;
@@ -5588,16 +5592,17 @@
     /* ── Layer B compact rows ── */
     .career-match-grid {
       display: grid;
-      gap: 8px;
+      gap: 12px;
     }
     .career-match-row {
       display: flex;
       align-items: center;
-      gap: 12px;
+      justify-content: space-between;
+      gap: 18px;
       background: var(--surface-strong);
       border: 1px solid var(--line);
-      border-radius: 12px;
-      padding: 11px 14px;
+      border-radius: 16px;
+      padding: 16px 18px;
       text-align: left;
       cursor: default;
       color: inherit;
@@ -5608,50 +5613,61 @@
     .career-match-row:hover { border-color: rgba(33,78,116,0.3); background: #fff; }
     .career-match-info { flex: 1; min-width: 0; }
     .career-match-title {
-      font-size: 13.5px;
-      font-weight: 700;
+      font-size: 15px;
+      font-weight: 800;
       color: var(--ink);
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
+      line-height: 1.3;
     }
     .career-match-meta {
-      font-size: 11.5px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 5px 8px;
+      font-size: 12px;
       color: var(--muted);
-      margin-top: 2px;
+      line-height: 1.45;
+      margin-top: 4px;
+    }
+    .career-meta-dot {
+      color: rgba(95, 102, 117, 0.62);
     }
     .career-match-score {
-      font-size: 18px;
+      font-size: 26px;
       font-weight: 900;
+      line-height: 1;
       color: var(--accent-2);
-      min-width: 36px;
+      min-width: 54px;
       text-align: right;
     }
     /* ── Layer C grid ── */
     .career-explore-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-      gap: 8px;
+      grid-template-columns: 1fr;
+      gap: 12px;
     }
     .career-explore-card {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
       background: var(--surface-strong);
       border: 1px solid var(--line);
-      border-radius: 12px;
-      padding: 12px 14px;
-      font-size: 12.5px;
+      border-radius: 16px;
+      padding: 16px 18px;
+      color: inherit;
+      font-size: 12px;
+      text-align: left;
+      text-decoration: none;
     }
     .career-explore-title {
-      font-weight: 700;
+      font-size: 15px;
+      font-weight: 800;
       color: var(--ink);
-      margin-bottom: 2px;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
+      line-height: 1.3;
     }
-    .career-explore-company { color: var(--muted); font-size: 11.5px; }
+    .career-explore-company { color: var(--muted); font-size: 12px; line-height: 1.45; }
     .career-explore-gap {
-      margin-top: 6px;
-      font-size: 11px;
+      font-size: 12px;
       color: rgba(173,63,47,0.8);
     }
     /* ── Health status badge ── */
@@ -5677,35 +5693,146 @@
     .health-degraded { background: #ef4444; }
     .health-critical { background: #7f1d1d; }
     /* ── Resume upload area ── */
+    .career-upload-card {
+      width: min(680px, 100%);
+      margin: 0 auto;
+    }
+    .career-upload-title {
+      margin: 0 0 8px;
+      color: var(--ink);
+      font-size: 18px;
+      font-weight: 800;
+      line-height: 1.35;
+    }
+    .career-upload-copy {
+      margin: 0 0 18px;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.65;
+    }
     .career-upload-zone {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      min-height: 190px;
       border: 2px dashed var(--line);
       border-radius: 16px;
-      padding: 32px;
+      padding: 32px 24px;
+      background: rgba(255, 250, 244, 0.58);
       text-align: center;
       cursor: pointer;
-      transition: border-color 0.16s, background 0.16s;
+      transition: border-color 0.16s, background 0.16s, transform 0.16s;
     }
     .career-upload-zone:hover,
     .career-upload-zone.dragover {
       border-color: rgba(33,78,116,0.5);
       background: rgba(33,78,116,0.04);
+      transform: translateY(-1px);
+    }
+    .career-upload-zone.has-file {
+      border-color: rgba(21, 115, 71, 0.42);
+      background: rgba(21, 115, 71, 0.05);
     }
     .career-upload-zone input { display: none; }
     .career-upload-icon {
-      width: 40px;
-      height: 40px;
-      margin: 0 auto 12px;
+      width: 42px;
+      height: 42px;
+      margin-bottom: 14px;
       color: var(--muted);
+      flex: 0 0 auto;
     }
     .career-upload-label {
-      font-size: 13.5px;
-      font-weight: 700;
+      font-size: 15px;
+      font-weight: 800;
       color: var(--ink);
-      margin-bottom: 4px;
+      line-height: 1.35;
+      margin-bottom: 5px;
     }
     .career-upload-sub {
       font-size: 12px;
       color: var(--muted);
+      line-height: 1.5;
+    }
+    .career-upload-status {
+      margin-top: 14px;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.55;
+    }
+    .career-selected-file {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      margin-top: 14px;
+      padding: 12px 14px;
+      border: 1px solid rgba(21, 115, 71, 0.22);
+      border-radius: 12px;
+      background: rgba(21, 115, 71, 0.06);
+    }
+    .career-selected-file-main {
+      min-width: 0;
+    }
+    .career-selected-file-name {
+      color: var(--ink);
+      font-size: 13px;
+      font-weight: 800;
+      line-height: 1.35;
+      overflow-wrap: anywhere;
+    }
+    .career-selected-file-meta {
+      margin-top: 3px;
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.45;
+    }
+    .career-selected-file-state {
+      flex: 0 0 auto;
+      border-radius: 999px;
+      padding: 4px 9px;
+      background: rgba(21, 115, 71, 0.12);
+      color: var(--success);
+      font-size: 11px;
+      font-weight: 800;
+      white-space: nowrap;
+    }
+    .career-upload-profile-preview {
+      margin-top: 16px;
+    }
+    .career-upload-actions {
+      display: grid;
+      gap: 10px;
+      margin-top: 20px;
+    }
+    .career-upload-dev-snapshot {
+      margin-top: 24px;
+      padding-top: 18px;
+      border-top: 1px solid var(--line);
+    }
+    .career-upload-dev-title {
+      margin-bottom: 10px;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+    .career-upload-dev-copy {
+      margin: 0 0 10px;
+      color: var(--muted);
+      font-size: 12.5px;
+      line-height: 1.6;
+    }
+    .career-upload-dev-actions {
+      display: grid;
+      gap: 8px;
+    }
+    .career-upload-static-status {
+      margin-top: 10px;
+      color: var(--muted);
+      font-size: 12.5px;
+      line-height: 1.55;
     }
     /* ── Summary strip ── */
     .career-deepfit-summary {
@@ -6623,6 +6750,35 @@
       color: #7a4b08;
     }
 
+    .career-dossier-card,
+    .career-match-row,
+    .career-explore-card {
+      background: rgba(255, 250, 244, 0.96);
+      border: 1px solid rgba(49, 40, 27, 0.12);
+      border-radius: 16px;
+      box-shadow: none;
+      transition: background 0.16s ease, border-color 0.16s ease, box-shadow 0.16s ease, transform 0.16s ease;
+    }
+
+    .career-dossier-card:hover,
+    .career-match-row:hover,
+    .career-explore-card:hover {
+      background: #fffefb;
+      border-color: rgba(33, 78, 116, 0.24);
+      box-shadow: 0 10px 28px rgba(50, 38, 18, 0.08);
+    }
+
+    .career-match-row:hover,
+    .career-explore-card:hover {
+      transform: translateY(-1px);
+    }
+
+    .career-dossier-head,
+    .career-match-row,
+    .career-explore-card {
+      min-height: 80px;
+    }
+
     .hero,
     .hero::before,
     .hero::after {
@@ -6770,6 +6926,38 @@
         grid-column: 2;
         grid-row: 3;
         justify-self: start;
+      }
+
+      .career-dossier-head,
+      .career-match-row,
+      .career-explore-card {
+        align-items: flex-start;
+        min-height: auto;
+        padding: 14px;
+      }
+
+      .career-match-score {
+        min-width: 44px;
+        font-size: 22px;
+      }
+
+      .career-upload-title {
+        font-size: 16px;
+      }
+
+      .career-upload-zone {
+        min-height: 160px;
+        padding: 24px 16px;
+      }
+
+      .career-upload-icon {
+        width: 36px;
+        height: 36px;
+      }
+
+      .career-selected-file {
+        align-items: flex-start;
+        flex-direction: column;
       }
     }
 
@@ -8188,9 +8376,9 @@
 
           <!-- Tab: Resume Upload -->
           <div id="careerUploadArea" hidden>
-            <div style="max-width:560px;margin:0 auto;">
-              <h3 style="margin:0 0 6px;font-size:18px;font-weight:800;color:var(--ink);">上傳履歷，本機比對 50-100 個職缺</h3>
-              <p style="margin:0 0 20px;font-size:13px;color:var(--muted);line-height:1.6;">系統會使用左側 API Key 在瀏覽器解析履歷，再直接於前端比對職缺資料庫並回傳三層結果：深度評估（Layer A）、標準比對（Layer B）、探索訊號（Layer C）。</p>
+            <div class="career-upload-card">
+              <h3 class="career-upload-title">上傳履歷，本機比對 50-100 個職缺</h3>
+              <p class="career-upload-copy">系統會使用左側 API Key 在瀏覽器解析履歷，再直接於前端比對職缺資料庫並回傳三層結果：深度評估（Layer A）、標準比對（Layer B）、探索訊號（Layer C）。</p>
               <label class="career-upload-zone" id="careerUploadZone">
                 <input type="file" id="careerResumeFile" accept=".pdf,.txt,.md,.docx" />
                 <svg class="career-upload-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
@@ -8202,15 +8390,21 @@
                 <div class="career-upload-label">拖曳履歷至此，或點擊選擇檔案</div>
                 <div class="career-upload-sub">支援 PDF、TXT、Markdown（最大 10MB）</div>
               </label>
-              <div id="careerUploadStatus" style="margin-top:14px;font-size:13px;color:var(--muted);display:none;"></div>
-              <div id="careerUploadProfilePreview" style="margin-top:16px;display:none;"></div>
-              <div style="margin-top:20px;">
+              <div id="careerSelectedResumeFile" class="career-selected-file" style="display:none;"></div>
+              <div id="careerUploadStatus" class="career-upload-status" style="display:none;"></div>
+              <div id="careerUploadProfilePreview" class="career-upload-profile-preview" style="display:none;"></div>
+              <div class="career-upload-actions">
+                <button id="careerParseResumeBtn" class="career-link-btn" type="button" style="display:none;">解析已選履歷</button>
                 <button id="careerRunAnalysisBtn" class="career-analyze-btn" type="button" style="display:none;">開始本機職缺比對</button>
               </div>
-              <div style="margin-top:24px;padding-top:18px;border-top:1px solid var(--line);">
-                <div style="font-size:12px;font-weight:800;letter-spacing:0.06em;text-transform:uppercase;color:var(--muted);margin-bottom:10px;">或直接使用靜態快照分析</div>
-                <p style="font-size:12.5px;color:var(--muted);line-height:1.6;margin:0 0 10px;">如果你已在本機跑過 <code>npm run career-ops:pipeline</code>，點下方直接讀取已產生的 Deep Fit 結果：</p>
-                <button id="careerLoadStaticDeepFit" class="career-link-btn" type="button">讀取本機快照結果</button>
+              <div class="career-upload-dev-snapshot">
+                <div class="career-upload-dev-title">開發 / 本機快照（非你的履歷）</div>
+                <p class="career-upload-dev-copy">這只會讀取專案內建的舊 Deep Fit 快照，用來檢查版面；不代表目前上傳履歷的分析結果。</p>
+                <div class="career-upload-dev-actions">
+                  <button id="careerLoadStaticDeepFit" class="career-link-btn" type="button">讀取本機快照結果</button>
+                  <button id="careerViewStaticDeepFit" class="career-link-btn" type="button" style="display:none;">查看快照結果</button>
+                </div>
+                <div id="careerStaticSnapshotStatus" class="career-upload-static-status" style="display:none;"></div>
               </div>
             </div>
           </div>
@@ -17982,6 +18176,21 @@ Schema:
 	        // DEEP FIT DASHBOARD — Layer A / B / C
 	        // ──────────────────────────────────────────────────
 
+	        const careerOpsBundledDeepFitSnapshot = window.CV_CAREER_OPS_DEEP_FIT || null;
+	        let careerOpsStaticDeepFitSnapshot = careerOpsBundledDeepFitSnapshot;
+	        if (careerOpsStaticDeepFitSnapshot) {
+	          window._careerOpsBundledDeepFitSnapshot = careerOpsStaticDeepFitSnapshot;
+	          window._careerOpsStaticDeepFitSnapshot = careerOpsStaticDeepFitSnapshot;
+	          window.CV_CAREER_OPS_DEEP_FIT = null;
+	        }
+
+	        function careerOpsGetStaticDeepFitSnapshot() {
+	          return careerOpsStaticDeepFitSnapshot
+	            || window._careerOpsStaticDeepFitSnapshot
+	            || window._careerOpsBundledDeepFitSnapshot
+	            || null;
+	        }
+
 	        let careerOpsActiveTab = "tracker";
 
 	        function careerOpsSetTab(tab) {
@@ -18015,6 +18224,13 @@ Schema:
 	          return (tags || []).map(t => `<span class="career-dossier-tag ${cssClass}">${careerText(t)}</span>`).join("");
 	        }
 
+	        function renderLayerMetaItems(items) {
+	          return items
+	            .filter(Boolean)
+	            .map(item => `<span>${item}</span>`)
+	            .join(`<span class="career-meta-dot">·</span>`);
+	        }
+
 	        function renderLayerACard(d) {
 	          const url = d.url || "";
 	          const safeKey = careerText(d.jobKey || d.company || "").replace(/[^a-z0-9]/gi, "");
@@ -18026,7 +18242,7 @@ Schema:
 	                  <div class="career-dossier-title">${careerText(d.title)}</div>
 	                  <div class="career-dossier-meta">
 	                    <span class="career-layer-badge career-layer-a">Layer A</span>
-	                    ${d.confidence ? `&nbsp;${careerText(d.confidence)} confidence` : ""}
+	                    ${d.confidence ? `<span>${careerText(d.confidence)} confidence</span>` : ""}
 	                  </div>
 	                </div>
 	                <div class="career-dossier-score">
@@ -18070,9 +18286,12 @@ Schema:
 	              <div class="career-match-info">
 	                <div class="career-match-title">${careerText(m.title)}</div>
 	                <div class="career-match-meta">
-	                  ${careerText([m.company, m.location].filter(Boolean).join(" · "))}
-	                  &nbsp;·&nbsp;<span class="career-layer-badge career-layer-b">Layer B</span>
-	                  ${m.keywordMisses?.length ? `&nbsp;· 缺口：${careerText(m.keywordMisses.slice(0, 2).join(", "))}` : ""}
+	                  ${renderLayerMetaItems([
+	                    careerText(m.company || ""),
+	                    careerText(m.location || ""),
+	                    `<span class="career-layer-badge career-layer-b">Layer B</span>`,
+	                    m.keywordMisses?.length ? `缺口：${careerText(m.keywordMisses.slice(0, 2).join(", "))}` : ""
+	                  ])}
 	                </div>
 	              </div>
 	              <div class="career-match-score">${careerText(m.score || "—")}</div>`;
@@ -18083,13 +18302,22 @@ Schema:
 
 	        function renderLayerCCard(s) {
 	          const url = s.url || "";
-	          return `
-	            <div class="career-explore-card">
+	          const content = `
+	            <div class="career-match-info">
 	              <div class="career-explore-title" title="${careerText(s.title)}">${careerText(s.title)}</div>
-	              <div class="career-explore-company">${careerText([s.company, s.location].filter(Boolean).join(" · "))}</div>
-	              ${s.topGap ? `<div class="career-explore-gap">缺口：${careerText(s.topGap)}</div>` : ""}
-	              ${url ? `<a href="${careerText(url)}" target="_blank" rel="noreferrer noopener" style="font-size:11px;color:var(--accent-2);text-decoration:none;display:block;margin-top:6px;">開啟 →</a>` : ""}
-	            </div>`;
+	              <div class="career-match-meta">
+	                ${renderLayerMetaItems([
+	                  careerText(s.company || ""),
+	                  careerText(s.location || ""),
+	                  `<span class="career-layer-badge career-layer-c">Layer C</span>`,
+	                  s.topGap ? `<span class="career-explore-gap">缺口：${careerText(s.topGap)}</span>` : ""
+	                ])}
+	              </div>
+	            </div>
+	            <div class="career-match-score">${careerText(s.score || "—")}</div>`;
+	          return url
+	            ? `<a class="career-explore-card" href="${careerText(url)}" target="_blank" rel="noreferrer noopener">${content}</a>`
+	            : `<div class="career-explore-card">${content}</div>`;
 	        }
 
 	        function renderDeepFitDashboard() {
@@ -18100,8 +18328,8 @@ Schema:
 	            area.innerHTML = `
 	              <div class="career-ops-empty">
 	                <strong>尚未產生 Deep Fit 分析。</strong><br>
-	                在本機執行 <code>npm run career-ops:pipeline</code> 後，結果會自動載入；<br>
-	                或切換到「履歷上傳」頁面，上傳履歷進行線上分析。<br><br>
+	                請先切換到「履歷上傳」，上傳你的履歷並按「開始本機職缺比對」。<br>
+	                內建靜態快照不會自動顯示；需要檢查舊快照時，可在履歷上傳頁手動讀取。<br><br>
 	                <button type="button" onclick="careerOpsSetTab('upload')" style="margin-top:10px;padding:8px 20px;border-radius:10px;border:1px solid var(--line);background:#fff;cursor:pointer;font-size:13px;font-weight:700;">前往履歷上傳</button>
 	              </div>`;
 	            return;
@@ -18118,6 +18346,9 @@ Schema:
 	            const dotClass = { healthy: "health-healthy", warning: "health-warning", degraded: "health-degraded", critical: "health-critical" }[h.status] || "health-warning";
 	            healthHtml = `<div class="career-health-bar"><div class="career-health-dot ${dotClass}"></div><span>職缺庫狀態：<strong>${careerText(h.status)}</strong> · 共 ${careerText(h.total)} 筆 · 失效率 ${careerText(h.expiredRatePct)}</span></div>`;
 	          }
+	          const sourceNoteHtml = window._careerOpsDeepFitSource === "static"
+	            ? `<div class="career-ops-help" style="margin:0 0 14px;">目前顯示的是本機靜態快照結果，不是你上傳履歷後產生的 Deep Fit。</div>`
+	            : "";
 
 	          const layerAHtml = layerA.length ? `
 	            <div class="career-layer-header">
@@ -18144,6 +18375,7 @@ Schema:
 	            <div class="career-explore-grid">${layerC.map(renderLayerCCard).join("")}</div>` : "";
 
 	          area.innerHTML = `
+	            ${sourceNoteHtml}
 	            ${healthHtml}
 	            <div class="career-deepfit-summary">
 	              <div class="career-deepfit-summary-card"><div class="career-deepfit-summary-num">${careerText(summary.totalResults)}</div><div class="career-deepfit-summary-label">比對總數</div></div>
@@ -18413,6 +18645,7 @@ Schema:
 		          };
 		          const result = { summary, layerA: classified.layerA, layerB: classified.layerB, layerC: classified.layerC };
 		          window.CV_CAREER_OPS_DEEP_FIT = result;
+		          window._careerOpsDeepFitSource = "user-upload";
 		          const analysisId = await careerOpsSaveLocalAnalysisToCloud(result, profileId);
 		          result.analysisId = analysisId;
 		          setStatus(analysisId ? "✓ 本機分析完成，結果已儲存，可產生分享連結。" : "✓ 本機分析完成。登入後可儲存並產生分享連結。");
@@ -18472,17 +18705,77 @@ Schema:
 	          const zone = $c("careerUploadZone");
 	          const fileInput = $c("careerResumeFile");
 	          const statusEl = $c("careerUploadStatus");
+	          const selectedFileEl = $c("careerSelectedResumeFile");
+	          const parseBtn = $c("careerParseResumeBtn");
 	          const profilePreview = $c("careerUploadProfilePreview");
 	          const runBtn = $c("careerRunAnalysisBtn");
 	          const loadStaticBtn = $c("careerLoadStaticDeepFit");
+	          const viewStaticBtn = $c("careerViewStaticDeepFit");
+	          const staticStatusEl = $c("careerStaticSnapshotStatus");
 	          if (!zone || !fileInput) return;
 
+	          function careerOpsFormatFileSize(bytes) {
+	            const size = Number(bytes || 0);
+	            if (size >= 1024 * 1024) return `${(size / 1024 / 1024).toFixed(size >= 10 * 1024 * 1024 ? 0 : 1)} MB`;
+	            if (size >= 1024) return `${Math.round(size / 1024)} KB`;
+	            return `${size} B`;
+	          }
+
+	          function showCareerSelectedFile(file, state = "已收到") {
+	            if (!file) return;
+	            zone.classList.add("has-file");
+	            const lowerName = String(file.name || "").toLowerCase();
+	            const type = lowerName.endsWith(".pdf")
+	              ? "PDF"
+	              : lowerName.endsWith(".md")
+	                ? "Markdown"
+	                : lowerName.endsWith(".txt")
+	                  ? "TXT"
+	                  : file.type || "檔案";
+	            if (selectedFileEl) {
+	              selectedFileEl.style.display = "flex";
+	              selectedFileEl.innerHTML = `
+	                <div class="career-selected-file-main">
+	                  <div class="career-selected-file-name">${careerText(file.name || "未命名履歷")}</div>
+	                  <div class="career-selected-file-meta">${careerText(type)} · ${careerText(careerOpsFormatFileSize(file.size))}</div>
+	                </div>
+	                <div class="career-selected-file-state">${careerText(state)}</div>`;
+	            }
+	          }
+
+	          function setCareerUploadStatus(message) {
+	            if (!statusEl) return;
+	            statusEl.style.display = "block";
+	            statusEl.textContent = message;
+	          }
+
+	          function setCareerStaticSnapshotStatus(message) {
+	            if (!staticStatusEl) return;
+	            staticStatusEl.style.display = "block";
+	            staticStatusEl.textContent = message;
+	          }
+
 	          loadStaticBtn?.addEventListener("click", () => {
-	            if (window.CV_CAREER_OPS_DEEP_FIT) {
-	              careerOpsSetTab("deepfit");
+	            const snapshot = careerOpsGetStaticDeepFitSnapshot();
+	            if (snapshot) {
+	              careerOpsStaticDeepFitSnapshot = snapshot;
+	              window._careerOpsStaticDeepFitSnapshot = snapshot;
+	              if (viewStaticBtn) viewStaticBtn.style.display = "block";
+	              setCareerStaticSnapshotStatus("已讀取本機快照，尚未切換畫面。這不是你上傳履歷的分析結果；需要檢查版面時，再按「查看快照結果」。");
 	            } else {
 	              alert("尚未載入靜態快照。請先執行 npm run career-ops:pipeline，重新整理頁面後再試。");
 	            }
+	          });
+
+	          viewStaticBtn?.addEventListener("click", () => {
+	            const snapshot = careerOpsGetStaticDeepFitSnapshot();
+	            if (!snapshot) {
+	              setCareerStaticSnapshotStatus("尚未讀取本機快照，請先按「讀取本機快照結果」。");
+	              return;
+	            }
+	            window.CV_CAREER_OPS_DEEP_FIT = snapshot;
+	            window._careerOpsDeepFitSource = "static";
+	            careerOpsSetTab("deepfit");
 	          });
 
 	          zone.addEventListener("dragover", e => { e.preventDefault(); zone.classList.add("dragover"); });
@@ -18498,22 +18791,35 @@ Schema:
 
 	          async function processResumeFile(file) {
 	            if (file.size > 10 * 1024 * 1024) { alert("檔案超過 10MB 上限"); return; }
-	            if (!($c("claudeApiKey")?.value || "").trim()) {
-	              if (statusEl) {
-	                statusEl.style.display = "block";
-	                statusEl.textContent = "請先在左側填入自己的 AI API Key。履歷解析會用你的 key 在瀏覽器完成，不會使用站方 token。";
-	              }
-	              return;
+	            window._careerOpsPendingResumeFile = file;
+	            showCareerSelectedFile(file, "已收到");
+	            setCareerUploadStatus(`已收到 ${file.name || "履歷檔案"}（${careerOpsFormatFileSize(file.size)}）。`);
+	            if (parseBtn) {
+	              parseBtn.style.display = "block";
+	              parseBtn.disabled = false;
+	              parseBtn.textContent = "解析已選履歷";
 	            }
-	            if (statusEl) { statusEl.style.display = "block"; statusEl.textContent = "解析中…"; }
 	            if (profilePreview) profilePreview.style.display = "none";
 	            if (runBtn) runBtn.style.display = "none";
+	            window.CV_CAREER_OPS_DEEP_FIT = null;
+	            window._careerOpsDeepFitSource = "";
+	            window._careerOpsLastAnalysisId = "";
+	            if (!($c("claudeApiKey")?.value || "").trim()) {
+	              setCareerUploadStatus(`已收到 ${file.name || "履歷檔案"}。請先在左側填入自己的 AI API Key，再按「解析已選履歷」。履歷解析會用你的 key 在瀏覽器完成，不會使用站方 token。`);
+	              return;
+	            }
+	            showCareerSelectedFile(file, "解析中");
+	            setCareerUploadStatus(`已收到 ${file.name || "履歷檔案"}，正在解析…`);
+	            if (parseBtn) {
+	              parseBtn.disabled = true;
+	              parseBtn.textContent = "解析中…";
+	            }
 		            try {
 		              const client = window.cvStudioState?.client;
 		              const session = (await client?.auth?.getSession?.())?.data?.session;
 		              const user = window.cvStudioState?.user || session?.user;
 		              const resumeText = await readCareerResumeText(file);
-		              if (statusEl) statusEl.textContent = "使用你的 API Key 解析履歷中…";
+		              setCareerUploadStatus("使用你的 API Key 解析履歷中…");
 		              const profile = await extractCareerOpsProfileWithUserKey(resumeText);
 		              let saved = null;
 		              if (client && session && user) {
@@ -18523,9 +18829,10 @@ Schema:
 		                  console.warn("[career-ops] profile cloud save failed:", cloudErr.message);
 		                }
 		              }
-		              if (statusEl) statusEl.textContent = saved?.id
+		              showCareerSelectedFile(file, "解析完成");
+		              setCareerUploadStatus(saved?.id
 		                ? "✓ 履歷解析完成，已儲存到帳號。"
-		                : "✓ 履歷解析完成，將以本機暫存分析。";
+		                : "✓ 履歷解析完成，將以本機暫存分析。");
 		              const p = profile || {};
 		              if (profilePreview) {
 		                profilePreview.style.display = "block";
@@ -18540,11 +18847,26 @@ Schema:
 		              window._careerOpsExtractedProfileText = resumeText;
 		              window._careerOpsExtractedProfileId = saved?.id || "";
 		              window._careerOpsLastAnalysisId = "";
+		              if (parseBtn) parseBtn.style.display = "none";
 		              if (runBtn) runBtn.style.display = "block";
 		            } catch (err) {
-		              if (statusEl) statusEl.textContent = "解析失敗：" + err.message;
+		              showCareerSelectedFile(file, "解析失敗");
+		              setCareerUploadStatus("解析失敗：" + err.message);
+		              if (parseBtn) {
+		                parseBtn.disabled = false;
+		                parseBtn.textContent = "重新解析已選履歷";
+		              }
 	            }
 	          }
+
+	          parseBtn?.addEventListener("click", () => {
+	            const file = window._careerOpsPendingResumeFile;
+	            if (!file) {
+	              setCareerUploadStatus("請先選擇一份履歷檔案。");
+	              return;
+	            }
+	            processResumeFile(file);
+	          });
 
 		          runBtn?.addEventListener("click", async () => {
 		            let profile = window._careerOpsExtractedProfile || null;
@@ -19253,6 +19575,20 @@ Schema:
 	            (job.url ? 10 : 0);
 	        }
 
+	        function careerOpsFullPoolCandidateCompare(a, b) {
+	          return b.score - a.score ||
+	            b.rankScore - a.rankScore ||
+	            String(a.job.company || "").localeCompare(String(b.job.company || "")) ||
+	            String(a.job.title || "").localeCompare(String(b.job.title || ""));
+	        }
+
+	        function careerOpsTrimFullPoolCandidates(candidates, limit) {
+	          if (candidates.length <= limit) return candidates;
+	          candidates.sort(careerOpsFullPoolCandidateCompare);
+	          candidates.length = limit;
+	          return candidates;
+	        }
+
 	        async function runCareerOpsFullPoolRanker() {
 	          const cv = getCvSummary();
 	          if (!cv) {
@@ -19273,29 +19609,40 @@ Schema:
 	          }
 	          const profile = careerOpsLocalProfile();
 	          const skillCounts = careerOpsSkillCounts(eligible);
+	          const topLimit = Math.min(CAREER_OPS_FULL_POOL_IMPORT_LIMIT, CAREER_OPS_TRACKER_LIMIT);
 	          const ranked = [];
+	          let chunkBestScore = 0;
 	          const startedAt = Date.now();
 	          for (let i = 0; i < eligible.length; i += 1) {
 	            const job = eligible[i];
 	            const result = careerOpsScoreLocalJob(job, profile, skillCounts);
-	            ranked.push({ job, score: result.score, rating: result.rating, grade: result.grade, rankScore: careerOpsFullPoolRankScore(result, job) });
+	            const candidate = {
+	              job,
+	              result,
+	              score: result.score,
+	              rating: result.rating,
+	              grade: result.grade,
+	              rankScore: careerOpsFullPoolRankScore(result, job)
+	            };
+	            ranked.push(candidate);
+	            chunkBestScore = Math.max(chunkBestScore, result.score);
+	            if (ranked.length > topLimit * 4) {
+	              careerOpsTrimFullPoolCandidates(ranked, topLimit);
+	            }
 	            if (i && i % 2000 === 0) {
-	              showLoading(`正在掃描完整職缺池 ${i.toLocaleString()} / ${eligible.length.toLocaleString()}，目前最高分 ${Math.max(...ranked.slice(-2000).map(item => item.score))}…`);
+	              showLoading(`正在掃描完整職缺池 ${i.toLocaleString()} / ${eligible.length.toLocaleString()}，目前最高分 ${chunkBestScore}…`);
+	              chunkBestScore = 0;
 	              await new Promise(resolve => setTimeout(resolve, 0));
 	            }
 	          }
-	          ranked.sort((a, b) =>
-	            b.score - a.score ||
-	            b.rankScore - a.rankScore ||
-	            String(a.job.company || "").localeCompare(String(b.job.company || "")) ||
-	            String(a.job.title || "").localeCompare(String(b.job.title || ""))
-	          );
-	          const topCount = Math.min(CAREER_OPS_FULL_POOL_IMPORT_LIMIT, ranked.length, CAREER_OPS_TRACKER_LIMIT);
+	          careerOpsTrimFullPoolCandidates(ranked, topLimit);
+	          const topCount = Math.min(topLimit, ranked.length);
+	          const runId = Date.now();
 	          const topJobs = ranked.slice(0, topCount).map((item, index) => applyCareerOpsLocalEngineToJob({
 	            ...item.job,
-	            id: `full-pool-${Date.now()}-${index}`,
+	            id: `full-pool-${runId}-${index}`,
 	            jobKey: item.job.jobKey || careerOpsJobKey(item.job)
-	          }, profile, skillCounts));
+	          }, profile, skillCounts, { result: item.result }));
 	          const mergeResult = mergeCareerOpsRankedJobs(topJobs);
 	          const elapsedSeconds = Math.round((Date.now() - startedAt) / 100) / 10;
 	          const best = topJobs[0];
@@ -19885,7 +20232,7 @@ Schema:
 	        }
 
 	        function applyCareerOpsLocalEngineToJob(job, profile, skillCounts, options = {}) {
-	          const result = careerOpsScoreLocalJob(job, profile, skillCounts);
+	          const result = options.result || careerOpsScoreLocalJob(job, profile, skillCounts);
 	          const originalReport = careerOpsBuildOriginalStyleReport(job, profile, result);
 	          const autoStatuses = ["待評估", "值得投遞", "強烈投遞", "觀望", "略過", ""];
 	          const status = job.isExpired
