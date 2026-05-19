@@ -276,7 +276,18 @@ npm run career-ops:scrape
 
 前端 Career Ops 面板的「匯入後端職缺快照」會讀取這份快照並加入追蹤器。Greenhouse、Lever、Ashby、Workable、SmartRecruiters、BambooHR、Workday、Oracle、SuccessFactors、Taleo、MyCareersFuture 會透過 `scripts/career-ops-source-adapters.mjs` 的 source adapter 走公開職缺 API 或公開職缺頁解析，平台規則不會塞進前端；若未指定 `adapter`，worker 也會從常見平台 URL 自動偵測。`type: "company"` 會從一般公司招聘頁展開可能的職缺連結；`type: "job"` 則視為單一職缺頁，不再展開。由 source strategy 帶下來的 `titleFilter`、`market`、`industry`、`tags` 會保留到快照，可先在後端排除不相關職缺並保留來源脈絡。此 worker 目前擷取公開頁面的 API / `JobPosting` JSON-LD / meta 資料；需要登入的 portal、搜尋結果翻頁與更多平台專屬 API 建議繼續新增 adapter，避免把憑證、速率限制與平台條款混在前端。
 
-GitHub Actions 會每天 06:17（Asia/Taipei）執行 `.github/workflows/career-ops.yml`，跑 `npm run career-ops:daily` 重新掃描、評分並部署最新 GitHub Pages artifact；若存在 `data/career-ops-singapore-sources.json`，也會同步更新新加坡職缺快照。前端開啟 Career Ops 時會一天最多一次把已追蹤職缺與最新快照合併，更新 `lastSeenAt`、`isExpired`、職缺描述與市場欄位，同時保留使用者的狀態、筆記、聯絡人、回饋與客製化資料。主快照可能超過 GitHub 單檔 commit 限制，因此排程部署最新 artifact，不把大型快照寫回 git 歷史。
+GitHub Actions 會每天 06:17（Asia/Taipei）執行 `.github/workflows/career-ops.yml`，跑 `npm run career-ops:daily` 重新掃描、評分；若存在 `data/career-ops-singapore-sources.json`，也會同步更新新加坡職缺快照。接著 `npm run career-ops:snapshot:publish` 會產生 `manifest.json` 與 `jobs-0001.json.gz` 這類 gzip 分片，先上傳分片、最後上傳 manifest 到 Supabase Storage。前端會優先讀 `careerOpsSnapshotManifestUrl`，或用 `supabaseUrl` + `careerOpsSnapshotBucket` + `careerOpsSnapshotPrefix` 推出 manifest URL，再逐片下載完整職缺池。開啟 Career Ops 時，App 一天最多一次把已追蹤職缺與最新快照合併，更新 `lastSeenAt`、`isExpired`、職缺描述與市場欄位，同時保留使用者的狀態、筆記、聯絡人、回饋與客製化資料。
+
+部署前請在 GitHub repository secrets 設定 `SUPABASE_URL` 與 `SUPABASE_SERVICE_ROLE_KEY`。可選擇用 repository variables 覆蓋 `CAREER_OPS_STORAGE_BUCKET`（預設 `career-ops-snapshots`）與 `CAREER_OPS_STORAGE_PREFIX`（預設 `career-ops/latest`）。`npm run build` 預設不會把 `data/app/career-ops-jobs.json`、`career-ops-jobs.js` 或本機分片目錄塞進 GitHub Pages artifact，避免 Pages / git 歷史背 100MiB 以上的大檔。
+
+本機產生與發布分片：
+
+```bash
+npm run career-ops:snapshot:shard
+SUPABASE_URL="https://your-project.supabase.co" \
+SUPABASE_SERVICE_ROLE_KEY="..." \
+npm run career-ops:snapshot:publish
+```
 
 若只想擴張新加坡職缺，可以用較小的 MyCareersFuture 公開 API 快照：
 
@@ -364,6 +375,8 @@ GSAT 分頁整合本地快照資料，支援依學測成績、學校、科系與
 | `npm run career-ops:quality` | 在評分前過濾 / 標記低品質來源與 job board landing pages |
 | `npm run career-ops:rendered` | 可選的 Chrome rendered careers-page discovery，補強 JS-heavy 企業招聘頁 |
 | `npm run career-ops:scrape` | 依 `data/career-ops-sources.json` 抓取公開職缺頁並產生前端快照 |
+| `npm run career-ops:snapshot:shard` | 將 `career-ops-jobs.json` 切成 `manifest.json` + `.json.gz` 分片 |
+| `npm run career-ops:snapshot:publish` | 將 Career Ops 分片快照上傳到 Supabase Storage |
 | `npm run career-ops:sg:scrape` | 抓取新加坡 MyCareersFuture 公開 API，產生新加坡專用前端快照 |
 | `npm run career-ops:evaluate` | 依 `data/career-ops-profile.example.json` 對職缺快照做後端批次評分 |
 | `npm run career-ops:intelligence` | 對職缺快照做多維比對、分群、市場洞察與 report 產生 |

@@ -5,5 +5,8 @@ window.CV_STUDIO_CONFIG = {
   supabaseUrl: "https://your-project.supabase.co",
   supabaseAnonKey: "your-anon-key",
   siteUrl: "",          // 留空會自動使用目前網址；或填入固定的 GitHub Pages 網址
+  careerOpsSnapshotManifestUrl: "", // 選填：完整 Supabase Storage manifest URL
+  careerOpsSnapshotBucket: "career-ops-snapshots",
+  careerOpsSnapshotPrefix: "career-ops/latest",
   defaultTemplate: "n-tech"
 };

@@ -48,6 +48,8 @@ function main() {
   checks.push({ type: "secret", name: "BRAVE_SEARCH_API_KEY", ok: Boolean(process.env.BRAVE_SEARCH_API_KEY), optional: true });
   checks.push({ type: "secret", name: "BING_SEARCH_API_KEY", ok: Boolean(process.env.BING_SEARCH_API_KEY), optional: true });
   checks.push({ type: "secret", name: "SERPAPI_API_KEY", ok: Boolean(process.env.SERPAPI_API_KEY), optional: true });
+  checks.push({ type: "secret", name: "SUPABASE_URL", ok: Boolean(process.env.SUPABASE_URL), optional: true });
+  checks.push({ type: "secret", name: "SUPABASE_SERVICE_ROLE_KEY", ok: Boolean(process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.SUPABASE_SERVICE_KEY), optional: true });
   checks.push({ type: "browser", name: "CHROME_PATH / PUPPETEER_EXECUTABLE_PATH", ok: Boolean(process.env.CHROME_PATH || process.env.PUPPETEER_EXECUTABLE_PATH), optional: true });
 
   const failed = checks.filter((check) => !check.ok && !check.optional && check.type !== "optional-file");

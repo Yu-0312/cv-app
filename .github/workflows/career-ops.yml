@@ -41,6 +41,18 @@ jobs:
           if [ -f data/career-ops-singapore-sources.json ]; then
             npm run career-ops:sg:scrape
           fi
+      - name: Publish Career Ops snapshot to Supabase Storage
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          CAREER_OPS_STORAGE_BUCKET: ${{ vars.CAREER_OPS_STORAGE_BUCKET }}
+          CAREER_OPS_STORAGE_PREFIX: ${{ vars.CAREER_OPS_STORAGE_PREFIX }}
+        run: |
+          if [ -z "$SUPABASE_URL" ] || [ -z "$SUPABASE_SERVICE_ROLE_KEY" ]; then
+            echo "::error::Missing SUPABASE_URL or SUPABASE_SERVICE_ROLE_KEY repository secret."
+            exit 1
+          fi
+          npm run career-ops:snapshot:publish -- --jobs-per-shard 1000
       - name: Build static site
         run: npm run build
       - name: Upload Pages artifact

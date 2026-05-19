@@ -231,7 +231,18 @@ The worker writes:
 
 The Career Ops panel can import that snapshot with **Import Backend Job Snapshot**. Greenhouse, Lever, Ashby, Workable, SmartRecruiters, BambooHR, Workday, Oracle, SuccessFactors, Taleo, and MyCareersFuture use source adapters in `scripts/career-ops-source-adapters.mjs` and fetch public jobs APIs or public job pages, keeping platform rules out of the frontend. If `adapter` is omitted, the worker can still auto-detect common platform URLs. `type: "company"` expands likely job links from a generic company recruiting page. `type: "job"` treats the URL as a single job page and skips discovery. `titleFilter`, `market`, `industry`, and `tags` from the source strategy are preserved in the snapshot, so irrelevant roles can be filtered backend-side while source context stays available for analysis. The worker currently extracts public API / `JobPosting` JSON-LD / meta data; login-only portals, paginated search results, and more platform-specific APIs should continue as explicit adapters so credentials, rate limits, and platform terms stay out of the frontend.
 
-GitHub Actions runs `.github/workflows/career-ops.yml` daily at 06:17 Asia/Taipei. It executes `npm run career-ops:daily`, deploys a refreshed GitHub Pages artifact, and also refreshes the Singapore snapshot when `data/career-ops-singapore-sources.json` exists. When the Career Ops panel opens, the frontend merges tracked jobs with the latest snapshot at most once per day, updating `lastSeenAt`, `isExpired`, descriptions, and market fields while preserving user-owned status, notes, contacts, feedback, and tailored materials. The main snapshot can exceed GitHub's single-file commit limit, so the scheduled job deploys the latest artifact instead of writing the large generated snapshot back into git history.
+GitHub Actions runs `.github/workflows/career-ops.yml` daily at 06:17 Asia/Taipei. It executes `npm run career-ops:daily`, refreshes the Singapore snapshot when `data/career-ops-singapore-sources.json` exists, then runs `npm run career-ops:snapshot:publish`. The publisher creates `manifest.json` plus gzip shards such as `jobs-0001.json.gz`, uploads shards first, and uploads the manifest last to Supabase Storage. The frontend first tries `careerOpsSnapshotManifestUrl`, then derives the manifest URL from `supabaseUrl` + `careerOpsSnapshotBucket` + `careerOpsSnapshotPrefix`, and downloads the full job pool shard by shard. When the Career Ops panel opens, tracked jobs are merged with the latest snapshot at most once per day, updating `lastSeenAt`, `isExpired`, descriptions, and market fields while preserving user-owned status, notes, contacts, feedback, and tailored materials.
+
+Before enabling the workflow, set GitHub repository secrets `SUPABASE_URL` and `SUPABASE_SERVICE_ROLE_KEY`. Optional repository variables `CAREER_OPS_STORAGE_BUCKET` and `CAREER_OPS_STORAGE_PREFIX` override the defaults `career-ops-snapshots` and `career-ops/latest`. `npm run build` skips `data/app/career-ops-jobs.json`, `career-ops-jobs.js`, and the local shard directory by default so GitHub Pages and git history do not carry 100MiB+ generated snapshots.
+
+Local shard generation and publishing:
+
+```bash
+npm run career-ops:snapshot:shard
+SUPABASE_URL="https://your-project.supabase.co" \
+SUPABASE_SERVICE_ROLE_KEY="..." \
+npm run career-ops:snapshot:publish
+```
 
 For a smaller Singapore expansion snapshot, run:
 
