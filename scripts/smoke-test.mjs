@@ -1292,6 +1292,23 @@ async function main() {
         return section && section.style.display !== "none" && /Acme AI|DataWorks/.test(jd?.value || "");
       });
 
+      await page.click("[data-career-ops-tab='deepfit']");
+      await page.waitForFunction(() => {
+        const area = document.getElementById("careerDeepFitArea");
+        return area && /尚未產生你的 Deep Fit 分析/.test(area.textContent || "");
+      });
+      const initialDeepFitAudit = await page.evaluate(() => {
+        const area = document.getElementById("careerDeepFitArea");
+        return {
+          activeTotalResults: window.CV_CAREER_OPS_DEEP_FIT?.summary?.totalResults || 0,
+          deepFitSource: window._careerOpsDeepFitSource || "",
+          text: area?.textContent || ""
+        };
+      });
+      assert.equal(initialDeepFitAudit.activeTotalResults, 0, "未上傳履歷前不應顯示內建 Deep Fit 結果");
+      assert.equal(initialDeepFitAudit.deepFitSource, "", "未上傳履歷前不應標記 Deep Fit 來源");
+      assert.doesNotMatch(initialDeepFitAudit.text, /比對總數|JAPAN AI|Product Manager/, "未上傳履歷前不應渲染內建快照職缺");
+
       await page.evaluate(() => {
         window.CV_CAREER_OPS_DEEP_FIT = {
           summary: { totalResults: 1, layerA: 1, layerB: 0, layerC: 0 },
