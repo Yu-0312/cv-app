@@ -5599,9 +5599,12 @@
       border-radius: 12px;
       padding: 11px 14px;
       text-align: left;
-      cursor: pointer;
+      cursor: default;
+      color: inherit;
+      text-decoration: none;
       transition: border-color 0.15s, background 0.15s;
     }
+    a.career-match-row { cursor: pointer; }
     .career-match-row:hover { border-color: rgba(33,78,116,0.3); background: #fff; }
     .career-match-info { flex: 1; min-width: 0; }
     .career-match-title {
@@ -17161,8 +17164,7 @@ Schema:
 
 	        function renderLayerBRow(m) {
 	          const url = m.url || "";
-	          return `
-	            <div class="career-match-row"${url ? ` onclick="window.open('${careerText(url)}','_blank','noreferrer')"` : ""}>
+	          const content = `
 	              <div class="career-match-info">
 	                <div class="career-match-title">${careerText(m.title)}</div>
 	                <div class="career-match-meta">
@@ -17171,8 +17173,10 @@ Schema:
 	                  ${m.keywordMisses?.length ? `&nbsp;· 缺口：${careerText(m.keywordMisses.slice(0, 2).join(", "))}` : ""}
 	                </div>
 	              </div>
-	              <div class="career-match-score">${careerText(m.score || "—")}</div>
-	            </div>`;
+	              <div class="career-match-score">${careerText(m.score || "—")}</div>`;
+	          return url
+	            ? `<a class="career-match-row" href="${careerText(url)}" target="_blank" rel="noreferrer noopener">${content}</a>`
+	            : `<div class="career-match-row">${content}</div>`;
 	        }
 
 	        function renderLayerCCard(s) {
@@ -17434,13 +17438,9 @@ Schema:
 		          };
 		        }
 
-		        async function careerOpsLoadSnapshotJobs() {
-		          const snapshot = window.CV_CAREER_OPS_JOBS || {};
-		          if (Array.isArray(snapshot.jobs) && snapshot.jobs.length) return snapshot.jobs;
-		          const res = await fetch("./data/app/career-ops-jobs.json", { cache: "no-store" });
-		          if (!res.ok) throw new Error("無法讀取職缺快照");
-		          const data = await res.json();
-		          return Array.isArray(data?.jobs) ? data.jobs : [];
+		        async function careerOpsLoadSnapshotJobs(options = {}) {
+		          const snapshot = await loadCareerOpsFullPoolSnapshot(options);
+		          return Array.isArray(snapshot?.jobs) ? snapshot.jobs : [];
 		        }
 
 		        async function careerOpsSaveLocalAnalysisToCloud(result, profileId) {
@@ -18244,25 +18244,38 @@ Schema:
 	          const manifest = await careerOpsFetchJson(manifestUrl);
 	          const shards = Array.isArray(manifest.shards) ? manifest.shards : [];
 	          if (!shards.length) return {};
-	          const jobs = [];
-	          for (let index = 0; index < shards.length; index += 1) {
-	            const shard = shards[index] || {};
-	            const shardPath = shard.path || shard.file;
-	            if (!shardPath) continue;
-	            const shardUrl = careerOpsResolveShardUrl(manifestUrl, shardPath);
-	            const payload = await careerOpsFetchJson(shardUrl);
-	            const shardJobs = Array.isArray(payload.jobs) ? payload.jobs : [];
-	            jobs.push(...shardJobs);
-	            if (typeof options.onProgress === "function") {
-	              options.onProgress({
-	                loadedJobs: jobs.length,
-	                totalJobs: manifest.jobCount || 0,
-	                shardIndex: index + 1,
-	                shardCount: shards.length
-	              });
+	          const shardJobsByIndex = new Array(shards.length);
+	          let nextShardIndex = 0;
+	          let loadedShardCount = 0;
+	          let loadedJobs = 0;
+	          const shardConcurrency = Math.max(1, Math.min(6, Number(options.shardConcurrency || 4)));
+	          async function loadNextShard() {
+	            while (nextShardIndex < shards.length) {
+	              const index = nextShardIndex;
+	              nextShardIndex += 1;
+	              const shard = shards[index] || {};
+	              const shardPath = shard.path || shard.file;
+	              if (!shardPath) continue;
+	              const shardUrl = careerOpsResolveShardUrl(manifestUrl, shardPath);
+	              const payload = await careerOpsFetchJson(shardUrl);
+	              const shardJobs = Array.isArray(payload.jobs) ? payload.jobs : [];
+	              shardJobsByIndex[index] = shardJobs;
+	              loadedShardCount += 1;
+	              loadedJobs += shardJobs.length;
+	              if (typeof options.onProgress === "function") {
+	                options.onProgress({
+	                  loadedJobs,
+	                  totalJobs: manifest.jobCount || 0,
+	                  shardIndex: loadedShardCount,
+	                  shardCount: shards.length
+	                });
+	              }
+	              if (loadedShardCount % shardConcurrency === 0) await new Promise(resolve => setTimeout(resolve, 0));
 	            }
-	            if (index % 3 === 2) await new Promise(resolve => setTimeout(resolve, 0));
 	          }
+	          const workers = Array.from({ length: Math.min(shardConcurrency, shards.length) }, () => loadNextShard());
+	          await Promise.all(workers);
+	          const jobs = shardJobsByIndex.flatMap(items => Array.isArray(items) ? items : []);
 	          return {
 	            ...(manifest.sourceSnapshot || {}),
 	            source: manifest.source || "career-ops-snapshot-manifest",
