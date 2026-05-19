@@ -10,3 +10,16 @@ config.js
 .claude/worktrees/
 data/raw/104-browser-capture.json
 data/normalized/104-gsat-115-browser.json
+
+# Promotional assets (not part of app runtime)
+promo-video/
+social-assets/
+
+# n8n automation config (unused)
+n8n/
+
+# Dev-only / dry-run test artifacts
+data/app/career-ops-apply-agent-report.*
+data/app/career-ops-decision-report.*
+data/app/career-ops-search-report.md
+data/app/gsat-external-report.md
