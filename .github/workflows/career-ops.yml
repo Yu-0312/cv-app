@@ -78,10 +78,22 @@ jobs:
             --report-out data/app/career-ops-job-health-report.md \
             --threshold 0.30
 
+      - name: Publish Career Ops snapshot to Supabase Storage
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          CAREER_OPS_STORAGE_BUCKET: ${{ vars.CAREER_OPS_STORAGE_BUCKET }}
+          CAREER_OPS_STORAGE_PREFIX: ${{ vars.CAREER_OPS_STORAGE_PREFIX }}
+        run: |
+          if [ -z "$SUPABASE_URL" ] || [ -z "$SUPABASE_SERVICE_ROLE_KEY" ]; then
+            echo "::error::Missing SUPABASE_URL or SUPABASE_SERVICE_ROLE_KEY repository secret."
+            exit 1
+          fi
+          npm run career-ops:snapshot:publish -- --jobs-per-shard 1000
+
       - name: Commit updated snapshot
         run: |
           CHANGED_FILES="data/career-ops-sources.json \
-            data/app/career-ops-jobs.json data/app/career-ops-jobs.js \
             data/app/career-ops-singapore-jobs.json data/app/career-ops-singapore-jobs.js \
             data/app/career-ops-intelligence-report.md \
             data/app/career-ops-source-strategy-report.md \

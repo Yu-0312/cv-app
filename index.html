@@ -18198,13 +18198,103 @@ Schema:
 	          }
 	        }
 
-	        async function loadCareerOpsFullPoolSnapshot() {
+	        function careerOpsSnapshotManifestUrls() {
+	          const config = window.CV_STUDIO_CONFIG || {};
+	          const urls = [];
+	          const directUrl = String(config.careerOpsSnapshotManifestUrl || "").trim();
+	          if (directUrl) urls.push(directUrl);
+	          const supabaseUrl = String(config.supabaseUrl || "").trim().replace(/\/+$/g, "");
+	          const bucket = String(config.careerOpsSnapshotBucket || "career-ops-snapshots").trim();
+	          const prefix = String(config.careerOpsSnapshotPrefix || "career-ops/latest").trim().replace(/^\/+|\/+$/g, "");
+	          if (supabaseUrl && !supabaseUrl.includes("your-project") && bucket) {
+	            const objectPath = [prefix, "manifest.json"].filter(Boolean).map(part =>
+	              String(part).split("/").filter(Boolean).map(encodeURIComponent).join("/")
+	            ).join("/");
+	            urls.push(`${supabaseUrl}/storage/v1/object/public/${encodeURIComponent(bucket)}/${objectPath}`);
+	          }
+	          urls.push("./data/app/career-ops-snapshot/manifest.json");
+	          return Array.from(new Set(urls));
+	        }
+
+	        async function careerOpsFetchJson(url) {
+	          const response = await fetch(url, { cache: "no-store", mode: "cors" });
+	          if (!response.ok) throw new Error(`HTTP ${response.status}`);
+	          const retry = response.clone();
+	          try {
+	            return await response.json();
+	          } catch (error) {
+	            if (!/\.gz(?:[?#]|$)/i.test(String(url || "")) || typeof DecompressionStream === "undefined") {
+	              throw error;
+	            }
+	            const stream = new Blob([await retry.arrayBuffer()]).stream().pipeThrough(new DecompressionStream("gzip"));
+	            const text = await new Response(stream).text();
+	            return JSON.parse(text);
+	          }
+	        }
+
+	        function careerOpsResolveShardUrl(manifestUrl, shardPath) {
+	          try {
+	            return new URL(shardPath, new URL(".", new URL(manifestUrl, window.location.href))).href;
+	          } catch {
+	            return shardPath;
+	          }
+	        }
+
+	        async function loadCareerOpsShardedSnapshot(manifestUrl, options = {}) {
+	          const manifest = await careerOpsFetchJson(manifestUrl);
+	          const shards = Array.isArray(manifest.shards) ? manifest.shards : [];
+	          if (!shards.length) return {};
+	          const jobs = [];
+	          for (let index = 0; index < shards.length; index += 1) {
+	            const shard = shards[index] || {};
+	            const shardPath = shard.path || shard.file;
+	            if (!shardPath) continue;
+	            const shardUrl = careerOpsResolveShardUrl(manifestUrl, shardPath);
+	            const payload = await careerOpsFetchJson(shardUrl);
+	            const shardJobs = Array.isArray(payload.jobs) ? payload.jobs : [];
+	            jobs.push(...shardJobs);
+	            if (typeof options.onProgress === "function") {
+	              options.onProgress({
+	                loadedJobs: jobs.length,
+	                totalJobs: manifest.jobCount || 0,
+	                shardIndex: index + 1,
+	                shardCount: shards.length
+	              });
+	            }
+	            if (index % 3 === 2) await new Promise(resolve => setTimeout(resolve, 0));
+	          }
+	          return {
+	            ...(manifest.sourceSnapshot || {}),
+	            source: manifest.source || "career-ops-snapshot-manifest",
+	            extractedAt: manifest.extractedAt || manifest.generatedAt || "",
+	            generatedAt: manifest.generatedAt || "",
+	            jobCount: jobs.length,
+	            jobs,
+	            snapshotManifest: manifest,
+	            snapshotManifestUrl: manifestUrl,
+	            snapshotStorageMode: "sharded"
+	          };
+	        }
+
+	        async function loadCareerOpsFullPoolSnapshot(options = {}) {
 	          const globalSnapshot = window.CV_CAREER_OPS_JOBS || {};
 	          if (Array.isArray(globalSnapshot.jobs) && globalSnapshot.jobs.length) return globalSnapshot;
+	          for (const manifestUrl of careerOpsSnapshotManifestUrls()) {
+	            try {
+	              const sharded = await loadCareerOpsShardedSnapshot(manifestUrl, options);
+	              if (Array.isArray(sharded.jobs) && sharded.jobs.length) {
+	                window.CV_CAREER_OPS_JOBS = sharded;
+	                return sharded;
+	              }
+	            } catch (error) {
+	              console.warn("[career-ops] snapshot manifest unavailable", manifestUrl, error);
+	            }
+	          }
 	          try {
 	            const response = await fetch("./data/app/career-ops-jobs.json", { cache: "no-store" });
 	            if (!response.ok) return {};
 	            const snapshot = await response.json();
+	            snapshot.snapshotStorageMode = "local-json";
 	            window.CV_CAREER_OPS_JOBS = snapshot;
 	            return snapshot;
 	          } catch {
@@ -18255,10 +18345,15 @@ Schema:
 	            return;
 	          }
 	          showLoading("正在載入完整職缺池，準備用這份履歷尋找最佳職缺…");
-	          const snapshot = await loadCareerOpsFullPoolSnapshot();
+	          const snapshot = await loadCareerOpsFullPoolSnapshot({
+	            onProgress: ({ loadedJobs, totalJobs, shardIndex, shardCount }) => {
+	              const totalText = totalJobs ? ` / ${Number(totalJobs).toLocaleString()}` : "";
+	              showLoading(`正在載入遠端職缺分片 ${shardIndex.toLocaleString()} / ${shardCount.toLocaleString()}，已載入 ${loadedJobs.toLocaleString()}${totalText} 筆…`);
+	            }
+	          });
 	          const eligible = careerOpsFullPoolEligibleJobs(snapshot);
 	          if (!eligible.length) {
-	            showError("目前沒有可評分的後端職缺快照。請先執行 Career Ops 更新流程產生 data/app/career-ops-jobs.json / .js。");
+	            showError("目前沒有可評分的後端職缺快照。請先確認 Supabase Storage manifest 已產生，或執行 Career Ops 更新流程產生 data/app/career-ops-jobs.json / .js。");
 	            return;
 	          }
 	          const profile = careerOpsLocalProfile();
@@ -18289,8 +18384,9 @@ Schema:
 	          const mergeResult = mergeCareerOpsRankedJobs(topJobs);
 	          const elapsedSeconds = Math.round((Date.now() - startedAt) / 100) / 10;
 	          const best = topJobs[0];
+	          const sourceLabel = snapshot.snapshotStorageMode === "sharded" ? "遠端分片快照" : "本機快照";
 	          renderCareerOpsDashboard(
-	            `全職缺池掃描完成：已用目前履歷評分 ${eligible.length.toLocaleString()} 筆職缺，耗時 ${elapsedSeconds} 秒；已把 Top ${mergeResult.merged} 放入 tracker。最佳職缺：${best?.company || ""} / ${best?.title || ""}（${best?.score || "—"}/100）。`
+	            `全職缺池掃描完成：已從${sourceLabel}用目前履歷評分 ${eligible.length.toLocaleString()} 筆職缺，耗時 ${elapsedSeconds} 秒；已把 Top ${mergeResult.merged} 放入 tracker。最佳職缺：${best?.company || ""} / ${best?.title || ""}（${best?.score || "—"}/100）。`
 	          );
 	        }
 

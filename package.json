@@ -71,6 +71,8 @@
     "career-ops:big-sim": "node scripts/career-ops-big-sim.mjs",
     "career-ops:big-app-compare": "node scripts/career-ops-big-app-compare.mjs",
     "career-ops:rank-jobs": "node scripts/career-ops-rank-jobs.mjs",
+    "career-ops:snapshot:shard": "node scripts/career-ops-snapshot-shards.mjs",
+    "career-ops:snapshot:publish": "node scripts/career-ops-snapshot-shards.mjs --upload",
     "career-ops:profiles:generate": "node scripts/generate-career-ops-profiles.mjs --rows 100000",
     "career-ops:profiles:regenerate": "node scripts/generate-career-ops-profiles.mjs --rows 100000 --force",
     "career-ops:saas-worker:help": "node scripts/career-ops-saas-worker.mjs --help",
