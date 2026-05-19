@@ -296,25 +296,23 @@ async function main() {
     "--profile", args.profile,
     "--out", "data/app/career-ops-jobs.json"
   ]);
-  await Promise.all([
-    runProcess("intelligence", "node", [
-      "scripts/career-ops-intelligence.mjs",
-      "--jobs", "data/app/career-ops-jobs.json",
-      "--profile", args.profile,
-      "--rubric", args.rubric,
-      "--out", "data/app/career-ops-jobs.json",
-      "--js-out", "data/app/career-ops-jobs.js",
-      "--report-out", "data/app/career-ops-intelligence-report.md"
-    ]),
-    runProcess("deep research", "node", [
-      "scripts/career-ops-deep-research.mjs",
-      "--jobs", "data/app/career-ops-jobs.json",
-      "--profile", args.profile,
-      "--sources", args.sources,
-      "--out", "data/app/career-ops-deep-research.json",
-      "--js-out", "data/app/career-ops-deep-research.js",
-      "--report-out", "data/app/career-ops-deep-research.md"
-    ])
+  await runSequential("intelligence", "node", [
+    "scripts/career-ops-intelligence.mjs",
+    "--jobs", "data/app/career-ops-jobs.json",
+    "--profile", args.profile,
+    "--rubric", args.rubric,
+    "--out", "data/app/career-ops-jobs.json",
+    "--js-out", "data/app/career-ops-jobs.js",
+    "--report-out", "data/app/career-ops-intelligence-report.md"
+  ]);
+  await runProcess("deep research", "node", [
+    "scripts/career-ops-deep-research.mjs",
+    "--jobs", "data/app/career-ops-jobs.json",
+    "--profile", args.profile,
+    "--sources", args.sources,
+    "--out", "data/app/career-ops-deep-research.json",
+    "--js-out", "data/app/career-ops-deep-research.js",
+    "--report-out", "data/app/career-ops-deep-research.md"
   ]);
   await Promise.all([
     runProcess("application kit", "node", [

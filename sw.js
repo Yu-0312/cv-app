@@ -31,7 +31,7 @@ function isNetworkFirstAsset(requestUrl) {
 
 function cacheSuccessfulResponse(cacheKey, response) {
   if (!response.ok) return;
-  caches.open(CACHE_NAME).then((cache) => cache.put(cacheKey, response.clone()));
+  caches.open(CACHE_NAME).then((cache) => cache.put(cacheKey, response.clone())).catch(() => {});
 }
 
 self.addEventListener("install", (event) => {
