@@ -185,8 +185,11 @@ npm run career-ops:parallel-pipeline -- --concurrency 6
 
 ```bash
 npm run career-ops:snapshot:shard
-SUPABASE_URL="..." SUPABASE_SERVICE_ROLE_KEY="..." npm run career-ops:snapshot:publish
+SUPABASE_SERVICE_ROLE_KEY="..." npm run career-ops:snapshot:publish
+npm run build && npm run runtime:data:verify
 ```
+
+`career-ops:snapshot:publish` 會從 `config.js` 讀取 `supabaseUrl`、`careerOpsSnapshotBucket`、`careerOpsSnapshotPrefix`，也可以用 `SUPABASE_URL`、`CAREER_OPS_STORAGE_BUCKET`、`CAREER_OPS_STORAGE_PREFIX` 覆蓋。GitHub Actions 需要 repo secret `SUPABASE_SERVICE_ROLE_KEY`；`Deploy to GitHub Pages` 會在發布前執行 `runtime:data:verify`，若 Supabase Storage 的 manifest 或 shard 缺失就會阻擋部署。
 
 新加坡職缺（MyCareersFuture 公開 API）：
 

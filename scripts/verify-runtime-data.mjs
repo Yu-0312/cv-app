@@ -2,6 +2,7 @@
 
 import fs from "node:fs/promises";
 import path from "node:path";
+import vm from "node:vm";
 import { gunzipSync } from "node:zlib";
 
 const DEFAULT_DIST = "dist";
@@ -53,6 +54,16 @@ async function readText(filePath) {
 
 async function readJson(filePath) {
   return JSON.parse(await readText(filePath));
+}
+
+async function readJsGlobal(filePath, globalName) {
+  const script = await readText(filePath);
+  const sandbox = {
+    window: {},
+    console: { log() {}, warn() {}, error() {} }
+  };
+  vm.runInNewContext(script, sandbox, { filename: filePath, timeout: 5000 });
+  return sandbox.window?.[globalName];
 }
 
 function countArray(value) {
@@ -238,6 +249,109 @@ async function verifyJsonData(distDir) {
   return results;
 }
 
+async function verifyJsData(distDir, jsonResults) {
+  const jsonCounts = new Map(jsonResults.map((item) => [item.file, item.count]));
+  const checks = [
+    {
+      file: "data/app/gsat-external-data.js",
+      jsonFile: "data/app/gsat-external-data.json",
+      globalName: "CV_GSAT_EXTERNAL_DEPTS",
+      label: "GSAT external data script",
+      count: (data) => countArray(data)
+    },
+    {
+      file: "data/app/university-tw-app-data.js",
+      jsonFile: "data/app/university-tw-app-data.json",
+      globalName: "CV_UNIVERSITY_TW_DATA",
+      label: "University TW data script",
+      count: (data) => countObject(data?.universities)
+    },
+    {
+      file: "data/app/career-ops-singapore-jobs.js",
+      jsonFile: "data/app/career-ops-singapore-jobs.json",
+      globalName: "CV_CAREER_OPS_SINGAPORE_JOBS",
+      label: "Career Ops Singapore jobs script",
+      count: (data) => countArray(data?.jobs)
+    },
+    {
+      file: "data/app/career-ops-application-kit.js",
+      jsonFile: "data/app/career-ops-application-kit.json",
+      globalName: "CV_CAREER_OPS_APPLICATION_KIT",
+      label: "Career Ops application kit script",
+      count: (data) => countArray(data?.playbooks)
+    },
+    {
+      file: "data/app/career-ops-deep-research.js",
+      jsonFile: "data/app/career-ops-deep-research.json",
+      globalName: "CV_CAREER_OPS_DEEP_RESEARCH",
+      label: "Career Ops deep research script",
+      count: (data) => countArray(data?.dossiers)
+    },
+    {
+      file: "data/app/career-ops-deep-fit.js",
+      jsonFile: "data/app/career-ops-deep-fit.json",
+      globalName: "CV_CAREER_OPS_DEEP_FIT",
+      label: "Career Ops bundled deep fit script",
+      count: (data) => countArray(data?.dossiers)
+    },
+    {
+      file: "data/app/career-ops-compensation.js",
+      jsonFile: "data/app/career-ops-compensation.json",
+      globalName: "CV_CAREER_OPS_COMPENSATION",
+      label: "Career Ops compensation script",
+      count: (data) => countArray(data?.plans)
+    },
+    {
+      file: "data/app/career-ops-story-bank.js",
+      jsonFile: "data/app/career-ops-story-bank.json",
+      globalName: "CV_CAREER_OPS_STORY_BANK",
+      label: "Career Ops story bank script",
+      count: (data) => countArray(data?.storyBank?.stories)
+    },
+    {
+      file: "data/app/career-ops-parallel-report.js",
+      jsonFile: "data/app/career-ops-parallel-report.json",
+      globalName: "CV_CAREER_OPS_PARALLEL",
+      label: "Career Ops parallel report script",
+      count: (data) => countArray(data?.results)
+    },
+    {
+      file: "data/app/career-ops-learning.js",
+      jsonFile: "data/app/career-ops-learning.json",
+      globalName: "CV_CAREER_OPS_LEARNING",
+      label: "Career Ops learning script",
+      count: (data) => Number(data?.learning?.activeJobCount || 0)
+    },
+    {
+      file: "data/app/career-ops-modes.js",
+      jsonFile: "data/app/career-ops-modes.json",
+      globalName: "CV_CAREER_OPS_MODES",
+      label: "Career Ops modes script",
+      count: (data) => countArray(data?.commands)
+    }
+  ];
+
+  const results = [];
+  for (const check of checks) {
+    const filePath = path.join(distDir, check.file);
+    const data = await readJsGlobal(filePath, check.globalName);
+    const count = check.count(data);
+    const jsonCount = jsonCounts.get(check.jsonFile);
+    results.push({
+      ...check,
+      count,
+      size: await fileSize(filePath)
+    });
+    if (!count) {
+      throw new Error(`${check.label} is empty (${check.file})`);
+    }
+    if (typeof jsonCount === "number" && jsonCount !== count) {
+      throw new Error(`${check.label} count mismatch: JSON has ${jsonCount}, JS has ${count} (${check.file})`);
+    }
+  }
+  return results;
+}
+
 async function verifyNoLargeUnexpectedFiles(distDir) {
   const appDir = path.join(distDir, "data", "app");
   const entries = await fs.readdir(appDir, { withFileTypes: true });
@@ -266,6 +380,10 @@ async function main() {
   await verifyNoLargeUnexpectedFiles(args.dist);
   const dataResults = await verifyJsonData(args.dist);
   for (const item of dataResults) {
+    console.log(`[runtime-data] OK ${item.label}: ${item.count.toLocaleString()} (${item.size.toLocaleString()} bytes)`);
+  }
+  const scriptResults = await verifyJsData(args.dist, dataResults);
+  for (const item of scriptResults) {
     console.log(`[runtime-data] OK ${item.label}: ${item.count.toLocaleString()} (${item.size.toLocaleString()} bytes)`);
   }
 
