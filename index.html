@@ -21,6 +21,7 @@
   <script src="./university-data.js"></script>
   <script src="./data/app/gsat-external-data.js"></script>
   <script src="./data/app/university-tw-app-data.js"></script>
+  <script src="./data/app/career-ops-upstream-jobs.js"></script>
   <script src="./data/app/career-ops-singapore-jobs.js"></script>
   <script src="./data/app/career-ops-application-kit.js"></script>
   <script src="./data/app/career-ops-deep-research.js"></script>
@@ -11070,7 +11071,7 @@
       }
 
       function clone(value) {
-        return JSON.parse(JSON.stringify(value));
+        return structuredClone(value);
       }
 
       function splitLines(text) {
@@ -13874,10 +13875,10 @@
           targetCompany: companyInput?.value?.trim() || "",
           date: new Date().toLocaleString("zh-TW", { month: "numeric", day: "numeric", hour: "2-digit", minute: "2-digit" }),
           template: state.template,
-          layoutPrefs: JSON.parse(JSON.stringify(state.layoutPrefs || {})),
+          layoutPrefs: structuredClone(state.layoutPrefs || {}),
           resumeLanguage: state.resumeLanguage,
           pdfPageMode: state.pdfPageMode,
-          data: JSON.parse(JSON.stringify(state.data))
+          data: structuredClone(state.data)
         });
         saveJson(SNAPSHOTS_KEY, snapshots);
         if (nameInput) nameInput.value = "";
@@ -14836,10 +14837,10 @@
 
       let pf = (() => {
         try {
-          if (!canLoadStoredPortfolio()) return normalizePfData(JSON.parse(JSON.stringify(pfDefault)));
+          if (!canLoadStoredPortfolio()) return normalizePfData(structuredClone(pfDefault));
           const s = localStorage.getItem(PF_KEY);
-          return normalizePfData(s ? JSON.parse(s) : JSON.parse(JSON.stringify(pfDefault)));
-        } catch { return normalizePfData(JSON.parse(JSON.stringify(pfDefault))); }
+          return normalizePfData(s ? JSON.parse(s) : structuredClone(pfDefault));
+        } catch { return normalizePfData(structuredClone(pfDefault)); }
       })();
       let pfActivePreset = (() => {
         try {
@@ -15269,7 +15270,7 @@
       function reloadPortfolioFromStorage() {
         try {
           if (!canLoadStoredPortfolio()) {
-            pf = normalizePfData(JSON.parse(JSON.stringify(pfDefault)));
+            pf = normalizePfData(structuredClone(pfDefault));
             pfActivePreset = null;
             localStorage.removeItem(PF_PRESET_KEY);
             renderEditor();
@@ -15279,7 +15280,7 @@
           }
           pf = normalizePfData(JSON.parse(localStorage.getItem(PF_KEY) || "{}"));
         } catch {
-          pf = normalizePfData(JSON.parse(JSON.stringify(pfDefault)));
+          pf = normalizePfData(structuredClone(pfDefault));
         }
         renderEditor();
         renderPreview();
