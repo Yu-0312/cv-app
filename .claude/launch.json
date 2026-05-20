@@ -3,8 +3,8 @@
   "configurations": [
     {
       "name": "CV App Worktree",
-      "runtimeExecutable": "python3",
-      "runtimeArgs": ["-m", "http.server", "8790", "--directory", "/Users/maxwang/Desktop/CV App/.claude/worktrees/clever-babbage"],
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["serve", "-p", "8790", "/Users/maxwang/Desktop/CV App/.claude/worktrees/elastic-banach-1ca3dd"],
       "port": 8790
     }
   ]
