@@ -39,10 +39,13 @@ function shouldSkipLargeAppData(relativePath) {
   if (includeLargeAppData) return false;
   const normalized = normalizedRelativePath(relativePath);
   const name = path.basename(normalized);
-  return normalized === "career-ops-snapshot"
+  return name === ".DS_Store"
+    || normalized === "career-ops-snapshot"
     || normalized.startsWith("career-ops-snapshot/")
     || normalized === "career-ops-jobs.json"
     || normalized === "career-ops-jobs.js"
+    || /^career-ops-(combined|upstream)-jobs\.(json|js)$/i.test(name)
+    || /^career-ops-jobs-thomas\.(json|js)$/i.test(name)
     || /-results\.(csv|jsonl)(\.gz)?$/i.test(name)
     || /^gsat-score-synthetic-.*\.csv(\.gz)?$/i.test(name);
 }
