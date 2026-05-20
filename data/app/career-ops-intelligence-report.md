@@ -1,11 +1,11 @@
 # Career Ops Intelligence Report
 
-Generated: 2026-05-17T23:21:25.087Z
+Generated: 2026-05-20T00:58:01.563Z
 
-- Active jobs: 293
+- Active jobs: 84260
 - Expired jobs: 0
-- Duplicate groups: 17
-- Jobs without enough description: 139
+- Duplicate groups: 3458
+- Jobs without enough description: 407
 - Rubric: Career Ops 10-Dimension Rubric
 
 ## Rubric Weights
@@ -21,59 +21,56 @@ Generated: 2026-05-17T23:21:25.087Z
 - applicationEffort: 0.08
 
 ## Top Skills
-- growth: 44
-- operations: 41
-- aws: 37
-- python: 36
-- agents: 24
-- docker: 24
-- terraform: 24
-- gcp: 23
-- go: 19
-- react: 19
-- typescript: 17
-- api: 14
+- api: 7594
+- growth: 4677
+- operations: 4222
+- analytics: 3379
+- sales: 3171
+- python: 2246
+- go: 1999
+- sql: 1573
+- excel: 1534
+- aws: 1184
+- machine learning: 1023
+- azure: 909
 
 ## Missing High-Demand Skills
-- growth: 44
-- operations: 41
-- aws: 37
-- python: 36
-- agents: 24
-- docker: 24
-- terraform: 24
-- gcp: 23
-- go: 19
-- java: 14
+- growth: 4677
+- operations: 4222
+- sales: 3171
+- python: 2246
+- go: 1999
+- sql: 1573
+- excel: 1534
+- aws: 1184
+- machine learning: 1023
+- azure: 909
 
 ## Global Skill Gap Priority (weighted by job score)
-- growth: 48.5
-- aws: 43.4
-- python: 42.4
-- operations: 40.1
-- docker: 29.6
-- terraform: 28.1
-- gcp: 27.1
-- agents: 25.3
-- go: 21.4
-- java: 16.6
-- deep learning: 14.5
-- rest: 14.4
-
-## ⚠ Preferred Company Alert
-None of your preferred companies (Stripe, Linear, Notion, Vercel) appeared in current results. Add direct company career page sources to data/career-ops-sources.json.
+- growth: 7446.9
+- operations: 6682.2
+- sales: 4964
+- python: 3649.6
+- go: 3185.6
+- sql: 2559
+- excel: 2397.4
+- aws: 1937.5
+- machine learning: 1660.5
+- java: 1492.5
+- azure: 1483.5
+- spark: 1284.1
 
 ## Role Families
-- Other: 144
-- Backend: 62
-- AI / Data: 32
-- Frontend: 29
-- Operations: 8
-- Design: 6
-- Internship: 6
-- Marketing: 3
-- Product: 2
-- Full Stack: 1
+- Backend: 79129
+- Other: 2343
+- Frontend: 842
+- AI / Data: 694
+- Sales: 493
+- Marketing: 217
+- Design: 201
+- Product: 144
+- Operations: 139
+- Internship: 47
 
 ## Recommended Search Queries
 - Frontend Engineer
@@ -89,7 +86,7 @@ None of your preferred companies (Stripe, Linear, Notion, Vercel) appeared in cu
 - Analytics
 - growth
 - operations
-- aws
+- sales
 - python
-- agents
+- go
 

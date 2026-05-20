@@ -1,54 +1,24 @@
 # Career Ops Deep Fit Report
 
-Generated: 2026-05-17T23:21:27.354Z
+Generated: 2026-05-20T00:58:36.158Z
 LLM provider: none
 Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 exploratory)
 
 ## Layer A — Full Dossiers (roleFit ≥ 68)
 
-### Geniee - JAPAN AI - Product Manager, AI SaaS
+### VANGUARD SOFTWARE PTE. LTD. - Expert Frontend Engineer (React.JS & React Native)
 
-- Score: 77
-- Grade: B
+- Score: 95
+- Grade: A
 - Confidence: high
-- Decision: pursue selectively
-- Thesis: JAPAN AI - Product Manager, AI SaaS at Geniee is pursue selectively because the snapshot score is 77, with 7 profile/role keyword hits and 7 external evidence item(s).
+- Decision: pursue aggressively
+- Thesis: Expert Frontend Engineer (React.JS & React Native) at VANGUARD SOFTWARE PTE. LTD. is pursue aggressively because the snapshot score is 95, with 13 profile/role keyword hits and 5 external evidence item(s).
 
 #### Evidence
-- Keyword hits: TypeScript, React, Next.js, API, TypeScript, React, Product Engineer
-- Keyword misses: python, aws, gcp, azure, docker, terraform, llm, rag, growth, operations
-- Research signals: AI / data / platform signal, growth or funding signal, remote or hybrid signal
-- Compensation leverage: medium
-
-#### Concerns
-- Profile keyword coverage is weaker than the target role language.
-
-#### Interview Strategy
-- Ask why the role is open and what success means in the first 90 days.
-- Probe team ownership, roadmap pressure, and cross-functional interfaces.
-- What business unit owns the JAPAN AI - Product Manager, AI SaaS role?
-- What measurable outcomes would this team expect in the first 90 days?
-- What recent company/product signals change the risk or upside?
-
-#### CV Strategy
-- Lead with proof around: TypeScript, React, Next.js, API, TypeScript, React.
-- Use story story-1: frontend product execution.
-- Use story story-2: data-heavy product decisions.
-- Use story story-3: systems and API collaboration.
-
-### AI Robot Association (AIRoA) - Full Stack Engineer
-
-- Score: 76
-- Grade: B
-- Confidence: high
-- Decision: pursue selectively
-- Thesis: Full Stack Engineer at AI Robot Association (AIRoA) is pursue selectively because the snapshot score is 76, with 6 profile/role keyword hits and 7 external evidence item(s).
-
-#### Evidence
-- Keyword hits: React, Next.js, API, dashboard, React, Full Stack Engineer
-- Keyword misses: python, go, aws, gcp, terraform
-- Research signals: AI / data / platform signal, growth or funding signal, remote or hybrid signal
-- Compensation leverage: medium
+- Keyword hits: Frontend Engineer, JavaScript, TypeScript, React, Next.js, CSS, Accessibility, API, Design Systems, design system, TypeScript, React, Frontend Engineer
+- Keyword misses: html, growth
+- Research signals: -
+- Compensation leverage: high
 
 #### Concerns
 - None flagged
@@ -56,29 +26,29 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 #### Interview Strategy
 - Ask why the role is open and what success means in the first 90 days.
 - Probe team ownership, roadmap pressure, and cross-functional interfaces.
-- What business unit owns the Full Stack Engineer role?
+- What business unit owns the Expert Frontend Engineer (React.JS & React Native) role?
 - What measurable outcomes would this team expect in the first 90 days?
 - What recent company/product signals change the risk or upside?
 
 #### CV Strategy
-- Lead with proof around: React, Next.js, API, dashboard, React, Full Stack Engineer.
+- Lead with proof around: Frontend Engineer, JavaScript, TypeScript, React, Next.js, CSS.
 - Use story story-1: frontend product execution.
-- Use story story-2: data-heavy product decisions.
-- Use story story-3: systems and API collaboration.
+- Use story story-2: systems and API collaboration.
+- Use story story-3: accessibility and quality.
 
-### Geniee - JAPAN AI - Research Engineer, LLM
+### BIFROST PTE. LTD. - Frontend Engineer
 
-- Score: 76
-- Grade: B
-- Confidence: high
-- Decision: pursue selectively
-- Thesis: JAPAN AI - Research Engineer, LLM at Geniee is pursue selectively because the snapshot score is 76, with 7 profile/role keyword hits and 7 external evidence item(s).
+- Score: 95
+- Grade: A
+- Confidence: medium
+- Decision: pursue aggressively
+- Thesis: Frontend Engineer at BIFROST PTE. LTD. is pursue aggressively because the snapshot score is 95, with 7 profile/role keyword hits and 1 external evidence item(s).
 
 #### Evidence
-- Keyword hits: TypeScript, React, Next.js, API, TypeScript, React, Product Engineer
-- Keyword misses: python, gcp, docker, llm, agents, prompt engineering, machine learning, nlp, pytorch, growth, operations
-- Research signals: AI / data / platform signal, growth or funding signal, remote or hybrid signal
-- Compensation leverage: medium
+- Keyword hits: Frontend Engineer, JavaScript, React, CSS, API, React, Frontend Engineer
+- Keyword misses: vue, angular, python, java, go, mysql, aws, gcp, azure, docker, computer vision, growth
+- Research signals: AI / data / platform signal, remote or hybrid signal
+- Compensation leverage: high
 
 #### Concerns
 - Profile keyword coverage is weaker than the target role language.
@@ -86,29 +56,59 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 #### Interview Strategy
 - Ask why the role is open and what success means in the first 90 days.
 - Probe team ownership, roadmap pressure, and cross-functional interfaces.
-- What business unit owns the JAPAN AI - Product Manager, AI SaaS role?
+- What business unit owns the Frontend Engineer role?
 - What measurable outcomes would this team expect in the first 90 days?
 - What recent company/product signals change the risk or upside?
 
 #### CV Strategy
-- Lead with proof around: TypeScript, React, Next.js, API, TypeScript, React.
+- Lead with proof around: Frontend Engineer, JavaScript, React, CSS, API, React.
 - Use story story-1: frontend product execution.
-- Use story story-2: data-heavy product decisions.
-- Use story story-3: systems and API collaboration.
+- Use story story-2: systems and API collaboration.
+- Use story story-3: accessibility and quality.
 
-### AI Robot Association (AIRoA) - Design Engineer
+### BIFROST PTE. LTD. - Frontend Engineer
 
-- Score: 75
-- Grade: B
-- Confidence: high
-- Decision: pursue selectively
-- Thesis: Design Engineer at AI Robot Association (AIRoA) is pursue selectively because the snapshot score is 75, with 6 profile/role keyword hits and 7 external evidence item(s).
+- Score: 95
+- Grade: A
+- Confidence: medium
+- Decision: pursue aggressively
+- Thesis: Frontend Engineer at BIFROST PTE. LTD. is pursue aggressively because the snapshot score is 95, with 7 profile/role keyword hits and 1 external evidence item(s).
 
 #### Evidence
-- Keyword hits: React, Next.js, Figma, dashboard, design system, React
-- Keyword misses: vue, angular, operations
-- Research signals: AI / data / platform signal, growth or funding signal, remote or hybrid signal
-- Compensation leverage: medium
+- Keyword hits: Frontend Engineer, JavaScript, React, CSS, API, React, Frontend Engineer
+- Keyword misses: vue, angular, python, java, go, mysql, aws, gcp, azure, docker, computer vision, growth
+- Research signals: AI / data / platform signal, remote or hybrid signal
+- Compensation leverage: high
+
+#### Concerns
+- Profile keyword coverage is weaker than the target role language.
+
+#### Interview Strategy
+- Ask why the role is open and what success means in the first 90 days.
+- Probe team ownership, roadmap pressure, and cross-functional interfaces.
+- What business unit owns the Frontend Engineer role?
+- What measurable outcomes would this team expect in the first 90 days?
+- What recent company/product signals change the risk or upside?
+
+#### CV Strategy
+- Lead with proof around: Frontend Engineer, JavaScript, React, CSS, API, React.
+- Use story story-1: frontend product execution.
+- Use story story-2: systems and API collaboration.
+- Use story story-3: accessibility and quality.
+
+### TIKTOK PTE. LTD. - Frontend Software Engineer (Payment), TikTok Live - Singapore
+
+- Score: 95
+- Grade: A
+- Confidence: medium
+- Decision: pursue aggressively
+- Thesis: Frontend Software Engineer (Payment), TikTok Live - Singapore at TIKTOK PTE. LTD. is pursue aggressively because the snapshot score is 95, with 6 profile/role keyword hits and 1 external evidence item(s).
+
+#### Evidence
+- Keyword hits: Frontend Engineer, JavaScript, CSS, API, remote, Frontend Engineer
+- Keyword misses: html, growth
+- Research signals: AI / data / platform signal, remote or hybrid signal
+- Compensation leverage: high
 
 #### Concerns
 - None flagged
@@ -116,29 +116,29 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 #### Interview Strategy
 - Ask why the role is open and what success means in the first 90 days.
 - Probe team ownership, roadmap pressure, and cross-functional interfaces.
-- What business unit owns the Full Stack Engineer role?
+- What business unit owns the Frontend Software Engineer (Payment), TikTok Live - Singapore role?
 - What measurable outcomes would this team expect in the first 90 days?
 - What recent company/product signals change the risk or upside?
 
 #### CV Strategy
-- Lead with proof around: React, Next.js, Figma, dashboard, design system, React.
+- Lead with proof around: Frontend Engineer, JavaScript, CSS, API, remote, Frontend Engineer.
 - Use story story-1: frontend product execution.
-- Use story story-2: data-heavy product decisions.
-- Use story story-3: systems and API collaboration.
+- Use story story-2: systems and API collaboration.
+- Use story story-3: accessibility and quality.
 
-### Micron Workday - Senior Full Stack Software Engineer
+### TIKTOK PTE. LTD. - Frontend Software Engineer (Payment) - TikTok Live - Singapore
 
-- Score: 74
-- Grade: B
-- Confidence: high
-- Decision: pursue selectively
-- Thesis: Senior Full Stack Software Engineer at Micron Workday is pursue selectively because the snapshot score is 74, with 8 profile/role keyword hits and 7 external evidence item(s).
+- Score: 95
+- Grade: A
+- Confidence: medium
+- Decision: pursue aggressively
+- Thesis: Frontend Software Engineer (Payment) - TikTok Live - Singapore at TIKTOK PTE. LTD. is pursue aggressively because the snapshot score is 95, with 6 profile/role keyword hits and 1 external evidence item(s).
 
 #### Evidence
-- Keyword hits: JavaScript, TypeScript, React, Analytics, API, analytics, TypeScript, React
-- Keyword misses: angular, python, java, docker, kubernetes, machine learning, computer vision
-- Research signals: AI / data / platform signal, growth or funding signal, remote or hybrid signal
-- Compensation leverage: medium
+- Keyword hits: Frontend Engineer, JavaScript, CSS, API, remote, Frontend Engineer
+- Keyword misses: html, growth
+- Research signals: AI / data / platform signal, remote or hybrid signal
+- Compensation leverage: high
 
 #### Concerns
 - None flagged
@@ -146,59 +146,59 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 #### Interview Strategy
 - Ask why the role is open and what success means in the first 90 days.
 - Probe team ownership, roadmap pressure, and cross-functional interfaces.
-- What business unit owns the Senior Full Stack Software Engineer role?
+- What business unit owns the Frontend Software Engineer (Payment), TikTok Live - Singapore role?
 - What measurable outcomes would this team expect in the first 90 days?
 - What recent company/product signals change the risk or upside?
 
 #### CV Strategy
-- Lead with proof around: JavaScript, TypeScript, React, Analytics, API, analytics.
+- Lead with proof around: Frontend Engineer, JavaScript, CSS, API, remote, Frontend Engineer.
 - Use story story-1: frontend product execution.
-- Use story story-2: data-heavy product decisions.
-- Use story story-3: systems and API collaboration.
+- Use story story-2: systems and API collaboration.
+- Use story story-3: accessibility and quality.
 
-### Money Forward - Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka
+### Disney - Lead Software Engineer
 
-- Score: 73
-- Grade: B
+- Score: 95
+- Grade: A
 - Confidence: medium
-- Decision: pursue selectively
-- Thesis: Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka at Money Forward is pursue selectively because the snapshot score is 73, with 6 profile/role keyword hits and 4 external evidence item(s).
+- Decision: pursue aggressively
+- Thesis: Lead Software Engineer at Disney is pursue aggressively because the snapshot score is 95, with 5 profile/role keyword hits and 1 external evidence item(s).
 
 #### Evidence
-- Keyword hits: TypeScript, React, Next.js, API, TypeScript, React
-- Keyword misses: java, swift, kotlin, mysql, firebase, aws, gcp, docker, terraform, rest, agents, growth
-- Research signals: AI / data / platform signal, growth or funding signal, remote or hybrid signal
-- Compensation leverage: medium
+- Keyword hits: JavaScript, TypeScript, API, TypeScript, Product Engineer
+- Keyword misses: rust, aws
+- Research signals: AI / data / platform signal
+- Compensation leverage: high
 
 #### Concerns
-- Profile keyword coverage is weaker than the target role language.
+- None flagged
 
 #### Interview Strategy
 - Ask why the role is open and what success means in the first 90 days.
 - Probe team ownership, roadmap pressure, and cross-functional interfaces.
-- What business unit owns the Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka role?
+- What business unit owns the Lead Software Engineer role?
 - What measurable outcomes would this team expect in the first 90 days?
 - What recent company/product signals change the risk or upside?
 
 #### CV Strategy
-- Lead with proof around: TypeScript, React, Next.js, API, TypeScript, React.
+- Lead with proof around: JavaScript, TypeScript, API, TypeScript, Product Engineer.
 - Use story story-1: frontend product execution.
-- Use story story-2: data-heavy product decisions.
-- Use story story-3: systems and API collaboration.
+- Use story story-2: systems and API collaboration.
+- Use story story-3: accessibility and quality.
 
-### Money Forward - Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka
+### Bank of America - Principal Engineer - GBS IND
 
-- Score: 73
-- Grade: B
+- Score: 95
+- Grade: A
 - Confidence: medium
-- Decision: pursue selectively
-- Thesis: Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka at Money Forward is pursue selectively because the snapshot score is 73, with 6 profile/role keyword hits and 4 external evidence item(s).
+- Decision: pursue aggressively
+- Thesis: Principal Engineer - GBS IND at Bank of America is pursue aggressively because the snapshot score is 95, with 2 profile/role keyword hits and 1 external evidence item(s).
 
 #### Evidence
-- Keyword hits: TypeScript, React, Next.js, API, TypeScript, React
-- Keyword misses: java, swift, kotlin, mysql, firebase, aws, gcp, docker, terraform, rest, agents, growth
-- Research signals: AI / data / platform signal, growth or funding signal, remote or hybrid signal
-- Compensation leverage: medium
+- Keyword hits: API, Full Stack Engineer
+- Keyword misses: azure, agents, growth, operations
+- Research signals: AI / data / platform signal
+- Compensation leverage: high
 
 #### Concerns
 - Profile keyword coverage is weaker than the target role language.
@@ -206,427 +206,92 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 #### Interview Strategy
 - Ask why the role is open and what success means in the first 90 days.
 - Probe team ownership, roadmap pressure, and cross-functional interfaces.
-- What business unit owns the Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka role?
+- What business unit owns the Principal Engineer - GBS IND role?
 - What measurable outcomes would this team expect in the first 90 days?
 - What recent company/product signals change the risk or upside?
 
 #### CV Strategy
-- Lead with proof around: TypeScript, React, Next.js, API, TypeScript, React.
+- Lead with proof around: API, Full Stack Engineer.
 - Use story story-1: frontend product execution.
-- Use story story-2: data-heavy product decisions.
-- Use story story-3: systems and API collaboration.
+- Use story story-2: systems and API collaboration.
+- Use story story-3: accessibility and quality.
 
-### Artytech - Tech Lead / CTO Candidate (Full-stack)
+### Uber - Sr Software Engineer, Frontend (Web)
 
-- Score: 72
-- Grade: B
+- Score: 95
+- Grade: A
 - Confidence: medium
-- Decision: pursue selectively
-- Thesis: Tech Lead / CTO Candidate (Full-stack) at Artytech is pursue selectively because the snapshot score is 72, with 4 profile/role keyword hits and 4 external evidence item(s).
+- Decision: pursue aggressively
+- Thesis: Sr Software Engineer, Frontend (Web) at Uber is pursue aggressively because the snapshot score is 95, with 11 profile/role keyword hits and 1 external evidence item(s).
 
 #### Evidence
-- Keyword hits: JavaScript, React, CSS, React
-- Keyword misses: vue, aws, html, crm, growth
-- Research signals: AI / data / platform signal, growth or funding signal, remote or hybrid signal
-- Compensation leverage: medium
+- Keyword hits: Frontend Engineer, JavaScript, TypeScript, React, CSS, API, Performance Optimization, remote, TypeScript, React, Frontend Engineer
+- Keyword misses: angular, python, go, html, growth
+- Research signals: AI / data / platform signal, remote or hybrid signal
+- Compensation leverage: high
 
 #### Concerns
-- Profile keyword coverage is weaker than the target role language.
+- None flagged
 
 #### Interview Strategy
 - Ask why the role is open and what success means in the first 90 days.
 - Probe team ownership, roadmap pressure, and cross-functional interfaces.
-- What business unit owns the Tech Lead / CTO Candidate (Full-stack) role?
+- What business unit owns the Sr Software Engineer, Frontend (Web) role?
 - What measurable outcomes would this team expect in the first 90 days?
 - What recent company/product signals change the risk or upside?
 
 #### CV Strategy
-- Lead with proof around: JavaScript, React, CSS, React.
+- Lead with proof around: Frontend Engineer, JavaScript, TypeScript, React, CSS, API.
 - Use story story-1: frontend product execution.
-- Use story story-2: data-heavy product decisions.
-- Use story story-3: systems and API collaboration.
+- Use story story-2: systems and API collaboration.
+- Use story story-3: accessibility and quality.
 
-### Cardlytics Workday Taiwan - Senior Software Engineer
+### Uber - Software Engineer II - Frontend
 
-- Score: 70
-- Grade: C
+- Score: 95
+- Grade: A
 - Confidence: medium
-- Decision: pursue selectively
-- Thesis: Senior Software Engineer at Cardlytics Workday Taiwan is pursue selectively because the snapshot score is 70, with 3 profile/role keyword hits and 0 external evidence item(s).
+- Decision: pursue aggressively
+- Thesis: Software Engineer II - Frontend at Uber is pursue aggressively because the snapshot score is 95, with 10 profile/role keyword hits and 1 external evidence item(s).
 
 #### Evidence
-- Keyword hits: TypeScript, API, TypeScript
-- Keyword misses: python, java, go, aws, terraform, airflow, spark, llm, rag, prompt engineering, growth
-- Research signals: -
-- Compensation leverage: low
+- Keyword hits: Frontend Engineer, JavaScript, TypeScript, React, CSS, API, remote, TypeScript, React, Frontend Engineer
+- Keyword misses: angular, python, go, html, growth
+- Research signals: AI / data / platform signal, remote or hybrid signal
+- Compensation leverage: high
 
 #### Concerns
-- External company evidence is thin; run deep research with a search API.
-- Profile keyword coverage is weaker than the target role language.
+- None flagged
 
 #### Interview Strategy
 - Ask why the role is open and what success means in the first 90 days.
 - Probe team ownership, roadmap pressure, and cross-functional interfaces.
-
-#### CV Strategy
-- Lead with proof around: TypeScript, API, TypeScript.
-- Use story story-1: frontend product execution.
-- Use story story-2: data-heavy product decisions.
-- Use story story-3: systems and API collaboration.
-
-### Shizuku AI - Software Engineer, Backend
-
-- Score: 69
-- Grade: C
-- Confidence: medium
-- Decision: hold / compare
-- Thesis: Software Engineer, Backend at Shizuku AI is hold / compare because the snapshot score is 69, with 4 profile/role keyword hits and 0 external evidence item(s).
-
-#### Evidence
-- Keyword hits: TypeScript, API, remote, TypeScript
-- Keyword misses: python, swift, aws, llm
-- Research signals: -
-- Compensation leverage: low
-
-#### Concerns
-- External company evidence is thin; run deep research with a search API.
-
-#### Interview Strategy
-- Ask why the role is open and what success means in the first 90 days.
-- Probe team ownership, roadmap pressure, and cross-functional interfaces.
-
-#### CV Strategy
-- Lead with proof around: TypeScript, API, remote, TypeScript.
-- Use story story-1: frontend product execution.
-- Use story story-2: data-heavy product decisions.
-- Use story story-3: systems and API collaboration.
-
-### Axelspace - Data Scientist / ML Engineer
-
-- Score: 69
-- Grade: C
-- Confidence: medium
-- Decision: hold / compare
-- Thesis: Data Scientist / ML Engineer at Axelspace is hold / compare because the snapshot score is 69, with 4 profile/role keyword hits and 0 external evidence item(s).
-
-#### Evidence
-- Keyword hits: Analytics, API, remote, analytics
-- Keyword misses: python, aws, docker, terraform, machine learning, deep learning, computer vision, pytorch, tensorflow, operations
-- Research signals: -
-- Compensation leverage: low
-
-#### Concerns
-- External company evidence is thin; run deep research with a search API.
-- Profile keyword coverage is weaker than the target role language.
-
-#### Interview Strategy
-- Ask why the role is open and what success means in the first 90 days.
-- Probe team ownership, roadmap pressure, and cross-functional interfaces.
-
-#### CV Strategy
-- Lead with proof around: Analytics, API, remote, analytics.
-- Use story story-1: frontend product execution.
-- Use story story-2: data-heavy product decisions.
-- Use story story-3: systems and API collaboration.
-
-### Metanomaly - Growth Engineer
-
-- Score: 69
-- Grade: C
-- Confidence: medium
-- Decision: hold / compare
-- Thesis: Growth Engineer at Metanomaly is hold / compare because the snapshot score is 69, with 3 profile/role keyword hits and 0 external evidence item(s).
-
-#### Evidence
-- Keyword hits: Frontend Engineer, API, Frontend Engineer
-- Keyword misses: sql, growth
-- Research signals: -
-- Compensation leverage: low
-
-#### Concerns
-- External company evidence is thin; run deep research with a search API.
-
-#### Interview Strategy
-- Ask why the role is open and what success means in the first 90 days.
-- Probe team ownership, roadmap pressure, and cross-functional interfaces.
-
-#### CV Strategy
-- Lead with proof around: Frontend Engineer, API, Frontend Engineer.
-- Use story story-1: frontend product execution.
-- Use story story-2: data-heavy product decisions.
-- Use story story-3: systems and API collaboration.
-
-### Money Forward - Lead Backend Engineer, Digital Bank
-
-- Score: 69
-- Grade: C
-- Confidence: medium
-- Decision: hold / compare
-- Thesis: Lead Backend Engineer, Digital Bank at Money Forward is hold / compare because the snapshot score is 69, with 3 profile/role keyword hits and 4 external evidence item(s).
-
-#### Evidence
-- Keyword hits: Frontend Engineer, API, Frontend Engineer
-- Keyword misses: kotlin, aws, docker, rest, agents
-- Research signals: AI / data / platform signal, growth or funding signal, remote or hybrid signal
-- Compensation leverage: medium
-
-#### Concerns
-- Profile keyword coverage is weaker than the target role language.
-
-#### Interview Strategy
-- Ask why the role is open and what success means in the first 90 days.
-- Probe team ownership, roadmap pressure, and cross-functional interfaces.
-- What business unit owns the Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka role?
+- What business unit owns the Sr Software Engineer, Frontend (Web) role?
 - What measurable outcomes would this team expect in the first 90 days?
 - What recent company/product signals change the risk or upside?
 
 #### CV Strategy
-- Lead with proof around: Frontend Engineer, API, Frontend Engineer.
+- Lead with proof around: Frontend Engineer, JavaScript, TypeScript, React, CSS, API.
 - Use story story-1: frontend product execution.
-- Use story story-2: data-heavy product decisions.
-- Use story story-3: systems and API collaboration.
+- Use story story-2: systems and API collaboration.
+- Use story story-3: accessibility and quality.
 
-### Money Forward - Infrastructure Engineer (SRE-AWS)
+### Modern Animal, Inc. - Senior Product Engineer
 
-- Score: 69
-- Grade: C
+- Score: 95
+- Grade: A
 - Confidence: medium
-- Decision: hold / compare
-- Thesis: Infrastructure Engineer (SRE-AWS) at Money Forward is hold / compare because the snapshot score is 69, with 5 profile/role keyword hits and 4 external evidence item(s).
-
-#### Evidence
-- Keyword hits: TypeScript, React, Performance Optimization, TypeScript, React
-- Keyword misses: kotlin, mysql, aws, docker, kubernetes, terraform, operations
-- Research signals: AI / data / platform signal, growth or funding signal, remote or hybrid signal
-- Compensation leverage: medium
-
-#### Concerns
-- Profile keyword coverage is weaker than the target role language.
-
-#### Interview Strategy
-- Ask why the role is open and what success means in the first 90 days.
-- Probe team ownership, roadmap pressure, and cross-functional interfaces.
-- What business unit owns the Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka role?
-- What measurable outcomes would this team expect in the first 90 days?
-- What recent company/product signals change the risk or upside?
-
-#### CV Strategy
-- Lead with proof around: TypeScript, React, Performance Optimization, TypeScript, React.
-- Use story story-1: frontend product execution.
-- Use story story-2: data-heavy product decisions.
-- Use story story-3: systems and API collaboration.
-
-### Tokuty - Full Stack Engineer
-
-- Score: 69
-- Grade: C
-- Confidence: low
-- Decision: hold / compare
-- Thesis: Full Stack Engineer at Tokuty is hold / compare because the snapshot score is 69, with 6 profile/role keyword hits and 0 external evidence item(s).
-
-#### Evidence
-- Keyword hits: Frontend Engineer, React, design system, React, Frontend Engineer, Full Stack Engineer
-- Keyword misses: -
-- Research signals: -
-- Compensation leverage: low
-
-#### Concerns
-- External company evidence is thin; run deep research with a search API.
-
-#### Interview Strategy
-- Ask why the role is open and what success means in the first 90 days.
-- Probe team ownership, roadmap pressure, and cross-functional interfaces.
-
-#### CV Strategy
-- Lead with proof around: Frontend Engineer, React, design system, React, Frontend Engineer, Full Stack Engineer.
-- Use story story-1: frontend product execution.
-- Use story story-2: data-heavy product decisions.
-- Use story story-3: systems and API collaboration.
-
-### Metanomaly - Frontend Design Engineer
-
-- Score: 67
-- Grade: C
-- Confidence: medium
-- Decision: hold / compare
-- Thesis: Frontend Design Engineer at Metanomaly is hold / compare because the snapshot score is 67, with 4 profile/role keyword hits and 0 external evidence item(s).
-
-#### Evidence
-- Keyword hits: React, Figma, design system, React
-- Keyword misses: -
-- Research signals: -
-- Compensation leverage: low
-
-#### Concerns
-- External company evidence is thin; run deep research with a search API.
-
-#### Interview Strategy
-- Ask why the role is open and what success means in the first 90 days.
-- Probe team ownership, roadmap pressure, and cross-functional interfaces.
-
-#### CV Strategy
-- Lead with proof around: React, Figma, design system, React.
-- Use story story-1: frontend product execution.
-- Use story story-2: data-heavy product decisions.
-- Use story story-3: systems and API collaboration.
-
-### Money Forward - Backend Engineer, Digital Bank
-
-- Score: 67
-- Grade: C
-- Confidence: medium
-- Decision: hold / compare
-- Thesis: Backend Engineer, Digital Bank at Money Forward is hold / compare because the snapshot score is 67, with 3 profile/role keyword hits and 4 external evidence item(s).
-
-#### Evidence
-- Keyword hits: Frontend Engineer, API, Frontend Engineer
-- Keyword misses: java, kotlin, sql, aws, gcp, azure, docker, rest, agents
-- Research signals: AI / data / platform signal, growth or funding signal, remote or hybrid signal
-- Compensation leverage: medium
-
-#### Concerns
-- Profile keyword coverage is weaker than the target role language.
-
-#### Interview Strategy
-- Ask why the role is open and what success means in the first 90 days.
-- Probe team ownership, roadmap pressure, and cross-functional interfaces.
-- What business unit owns the Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka role?
-- What measurable outcomes would this team expect in the first 90 days?
-- What recent company/product signals change the risk or upside?
-
-#### CV Strategy
-- Lead with proof around: Frontend Engineer, API, Frontend Engineer.
-- Use story story-1: frontend product execution.
-- Use story story-2: data-heavy product decisions.
-- Use story story-3: systems and API collaboration.
-
-### Gogolook - US Market Intern (ScamAdviser)
-
-- Score: 63
-- Grade: C
-- Confidence: medium
-- Decision: hold / compare
-- Thesis: US Market Intern (ScamAdviser) at Gogolook is hold / compare because the snapshot score is 63, with 4 profile/role keyword hits and 0 external evidence item(s).
-
-#### Evidence
-- Keyword hits: Analytics, API, remote, analytics
-- Keyword misses: go, growth, operations
-- Research signals: -
-- Compensation leverage: low
-
-#### Concerns
-- External company evidence is thin; run deep research with a search API.
-
-#### Interview Strategy
-- Ask why the role is open and what success means in the first 90 days.
-- Probe team ownership, roadmap pressure, and cross-functional interfaces.
-
-#### CV Strategy
-- Lead with proof around: Analytics, API, remote, analytics.
-- Use story story-1: frontend product execution.
-- Use story story-2: data-heavy product decisions.
-- Use story story-3: systems and API collaboration.
-
-### NVIDIA Workday - Production Application Engineer, Enterprise
-
-- Score: 63
-- Grade: C
-- Confidence: medium
-- Decision: hold / compare
-- Thesis: Production Application Engineer, Enterprise at NVIDIA Workday is hold / compare because the snapshot score is 63, with 1 profile/role keyword hits and 0 external evidence item(s).
-
-#### Evidence
-- Keyword hits: Product Engineer
-- Keyword misses: -
-- Research signals: -
-- Compensation leverage: low
-
-#### Concerns
-- External company evidence is thin; run deep research with a search API.
-
-#### Interview Strategy
-- Ask why the role is open and what success means in the first 90 days.
-- Probe team ownership, roadmap pressure, and cross-functional interfaces.
-
-#### CV Strategy
-- Lead with proof around: Product Engineer.
-- Use story story-1: frontend product execution.
-- Use story story-2: data-heavy product decisions.
-- Use story story-3: systems and API collaboration.
-
-### Intel Workday Taiwan - Intel Foundry Advanced Device Development Engineer
-
-- Score: 63
-- Grade: C
-- Confidence: medium
-- Decision: hold / compare
-- Thesis: Intel Foundry Advanced Device Development Engineer at Intel Workday Taiwan is hold / compare because the snapshot score is 63, with 2 profile/role keyword hits and 0 external evidence item(s).
-
-#### Evidence
-- Keyword hits: Analytics, analytics
-- Keyword misses: python, sql, machine learning
-- Research signals: -
-- Compensation leverage: low
-
-#### Concerns
-- External company evidence is thin; run deep research with a search API.
-- Profile keyword coverage is weaker than the target role language.
-
-#### Interview Strategy
-- Ask why the role is open and what success means in the first 90 days.
-- Probe team ownership, roadmap pressure, and cross-functional interfaces.
-
-#### CV Strategy
-- Lead with proof around: Analytics, analytics.
-- Use story story-1: frontend product execution.
-- Use story story-2: data-heavy product decisions.
-- Use story story-3: systems and API collaboration.
-
-### Shizuku AI - MLOps Engineer
-
-- Score: 63
-- Grade: C
-- Confidence: medium
-- Decision: hold / compare
-- Thesis: MLOps Engineer at Shizuku AI is hold / compare because the snapshot score is 63, with 2 profile/role keyword hits and 0 external evidence item(s).
-
-#### Evidence
-- Keyword hits: API, remote
-- Keyword misses: python, aws, gcp, docker, kubernetes, terraform, nlp
-- Research signals: -
-- Compensation leverage: low
-
-#### Concerns
-- External company evidence is thin; run deep research with a search API.
-- Profile keyword coverage is weaker than the target role language.
-
-#### Interview Strategy
-- Ask why the role is open and what success means in the first 90 days.
-- Probe team ownership, roadmap pressure, and cross-functional interfaces.
-
-#### CV Strategy
-- Lead with proof around: API, remote.
-- Use story story-1: frontend product execution.
-- Use story story-2: data-heavy product decisions.
-- Use story story-3: systems and API collaboration.
-
-### MODE - Software Engineer (Engineering Foundation)
-
-- Score: 63
-- Grade: C
-- Confidence: medium
-- Decision: hold / compare
-- Thesis: Software Engineer (Engineering Foundation) at MODE is hold / compare because the snapshot score is 63, with 2 profile/role keyword hits and 0 external evidence item(s).
+- Decision: pursue aggressively
+- Thesis: Senior Product Engineer at Modern Animal, Inc. is pursue aggressively because the snapshot score is 95, with 2 profile/role keyword hits and 0 external evidence item(s).
 
 #### Evidence
 - Keyword hits: API, Product Engineer
-- Keyword misses: go, aws, llm, operations
+- Keyword misses: operations
 - Research signals: -
-- Compensation leverage: -
+- Compensation leverage: high
 
 #### Concerns
 - External company evidence is thin; run deep research with a search API.
-- Profile keyword coverage is weaker than the target role language.
 
 #### Interview Strategy
 - Ask why the role is open and what success means in the first 90 days.
@@ -635,22 +300,49 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 #### CV Strategy
 - Lead with proof around: API, Product Engineer.
 - Use story story-1: frontend product execution.
-- Use story story-2: data-heavy product decisions.
-- Use story story-3: systems and API collaboration.
+- Use story story-2: systems and API collaboration.
+- Use story story-3: accessibility and quality.
 
-### Intel Workday Taiwan - Network Systems and Solutions Engineer - Intern
+### GitLab - Senior Backend Engineer(Go), Continuous Delivery
 
-- Score: 62
-- Grade: C
+- Score: 95
+- Grade: A
 - Confidence: medium
-- Decision: hold / compare
-- Thesis: Network Systems and Solutions Engineer - Intern at Intel Workday Taiwan is hold / compare because the snapshot score is 62, with 0 profile/role keyword hits and 0 external evidence item(s).
+- Decision: pursue aggressively
+- Thesis: Senior Backend Engineer(Go), Continuous Delivery at GitLab is pursue aggressively because the snapshot score is 95, with 4 profile/role keyword hits and 0 external evidence item(s).
 
 #### Evidence
-- Keyword hits: -
-- Keyword misses: python, java, llm, machine learning, growth
+- Keyword hits: Frontend Engineer, API, remote, Frontend Engineer
+- Keyword misses: go, docker, kubernetes
 - Research signals: -
-- Compensation leverage: low
+- Compensation leverage: high
+
+#### Concerns
+- External company evidence is thin; run deep research with a search API.
+
+#### Interview Strategy
+- Ask why the role is open and what success means in the first 90 days.
+- Probe team ownership, roadmap pressure, and cross-functional interfaces.
+
+#### CV Strategy
+- Lead with proof around: Frontend Engineer, API, remote, Frontend Engineer.
+- Use story story-1: frontend product execution.
+- Use story story-2: systems and API collaboration.
+- Use story story-3: accessibility and quality.
+
+### Money Forward - Lead Backend Engineer, Digital Bank
+
+- Score: 95
+- Grade: A
+- Confidence: medium
+- Decision: pursue aggressively
+- Thesis: Lead Backend Engineer, Digital Bank at Money Forward is pursue aggressively because the snapshot score is 95, with 3 profile/role keyword hits and 0 external evidence item(s).
+
+#### Evidence
+- Keyword hits: Frontend Engineer, API, Frontend Engineer
+- Keyword misses: kotlin, aws, docker, rest, agents
+- Research signals: -
+- Compensation leverage: high
 
 #### Concerns
 - External company evidence is thin; run deep research with a search API.
@@ -661,24 +353,24 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Probe team ownership, roadmap pressure, and cross-functional interfaces.
 
 #### CV Strategy
-- Add stronger role-specific keywords before applying.
+- Lead with proof around: Frontend Engineer, API, Frontend Engineer.
 - Use story story-1: frontend product execution.
-- Use story story-2: data-heavy product decisions.
-- Use story story-3: systems and API collaboration.
+- Use story story-2: systems and API collaboration.
+- Use story story-3: accessibility and quality.
 
-### Logitech Workday Taiwan - Imaging Engineer Technical Manager - Webcam
+### ALPHA X TECHNOLOGY PTE. LTD. - Frontend Engineer
 
-- Score: 62
-- Grade: C
+- Score: 94
+- Grade: A
 - Confidence: medium
-- Decision: hold / compare
-- Thesis: Imaging Engineer Technical Manager - Webcam at Logitech Workday Taiwan is hold / compare because the snapshot score is 62, with 1 profile/role keyword hits and 0 external evidence item(s).
+- Decision: pursue aggressively
+- Thesis: Frontend Engineer at ALPHA X TECHNOLOGY PTE. LTD. is pursue aggressively because the snapshot score is 94, with 10 profile/role keyword hits and 0 external evidence item(s).
 
 #### Evidence
-- Keyword hits: remote
-- Keyword misses: -
+- Keyword hits: Frontend Engineer, JavaScript, TypeScript, React, CSS, API, Figma, TypeScript, React, Frontend Engineer
+- Keyword misses: vue, rest
 - Research signals: -
-- Compensation leverage: -
+- Compensation leverage: high
 
 #### Concerns
 - External company evidence is thin; run deep research with a search API.
@@ -688,24 +380,24 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Probe team ownership, roadmap pressure, and cross-functional interfaces.
 
 #### CV Strategy
-- Lead with proof around: remote.
+- Lead with proof around: Frontend Engineer, JavaScript, TypeScript, React, CSS, API.
 - Use story story-1: frontend product execution.
-- Use story story-2: data-heavy product decisions.
-- Use story story-3: systems and API collaboration.
+- Use story story-2: systems and API collaboration.
+- Use story story-3: accessibility and quality.
 
-### Shizuku AI - ML Engineer
+### MICRON SEMICONDUCTOR ASIA OPERATIONS PTE. LTD. - Principal/Staff ML/AI Engineer, Product Engineering, STPG
 
-- Score: 62
-- Grade: C
+- Score: 94
+- Grade: A
 - Confidence: medium
-- Decision: hold / compare
-- Thesis: ML Engineer at Shizuku AI is hold / compare because the snapshot score is 62, with 2 profile/role keyword hits and 0 external evidence item(s).
+- Decision: pursue aggressively
+- Thesis: Principal/Staff ML/AI Engineer, Product Engineering, STPG at MICRON SEMICONDUCTOR ASIA OPERATIONS PTE. LTD. is pursue aggressively because the snapshot score is 94, with 3 profile/role keyword hits and 0 external evidence item(s).
 
 #### Evidence
-- Keyword hits: API, remote
-- Keyword misses: go, aws, gcp, deep learning, nlp, computer vision, pytorch, operations
+- Keyword hits: Analytics, analytics, Product Engineer
+- Keyword misses: python, aws, azure, llm, agents, machine learning, pytorch, tensorflow, scikit, growth, operations
 - Research signals: -
-- Compensation leverage: low
+- Compensation leverage: high
 
 #### Concerns
 - External company evidence is thin; run deep research with a search API.
@@ -716,283 +408,594 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Probe team ownership, roadmap pressure, and cross-functional interfaces.
 
 #### CV Strategy
-- Lead with proof around: API, remote.
+- Lead with proof around: Analytics, analytics, Product Engineer.
 - Use story story-1: frontend product execution.
-- Use story story-2: data-heavy product decisions.
-- Use story story-3: systems and API collaboration.
+- Use story story-2: systems and API collaboration.
+- Use story story-3: accessibility and quality.
+
+### GlossGenius - Staff Software Engineer, Frontend
+
+- Score: 94
+- Grade: A
+- Confidence: medium
+- Decision: pursue aggressively
+- Thesis: Staff Software Engineer, Frontend at GlossGenius is pursue aggressively because the snapshot score is 94, with 13 profile/role keyword hits and 0 external evidence item(s).
+
+#### Evidence
+- Keyword hits: Frontend Engineer, JavaScript, TypeScript, React, CSS, Accessibility, API, Performance Optimization, Design Systems, design system, TypeScript, React, Frontend Engineer
+- Keyword misses: go
+- Research signals: -
+- Compensation leverage: high
+
+#### Concerns
+- External company evidence is thin; run deep research with a search API.
+
+#### Interview Strategy
+- Ask why the role is open and what success means in the first 90 days.
+- Probe team ownership, roadmap pressure, and cross-functional interfaces.
+
+#### CV Strategy
+- Lead with proof around: Frontend Engineer, JavaScript, TypeScript, React, CSS, Accessibility.
+- Use story story-1: frontend product execution.
+- Use story story-2: systems and API collaboration.
+- Use story story-3: accessibility and quality.
+
+### GlossGenius - Staff Software Engineer, Frontend
+
+- Score: 94
+- Grade: A
+- Confidence: medium
+- Decision: pursue aggressively
+- Thesis: Staff Software Engineer, Frontend at GlossGenius is pursue aggressively because the snapshot score is 94, with 13 profile/role keyword hits and 0 external evidence item(s).
+
+#### Evidence
+- Keyword hits: Frontend Engineer, JavaScript, TypeScript, React, CSS, Accessibility, API, Performance Optimization, Design Systems, design system, TypeScript, React, Frontend Engineer
+- Keyword misses: go
+- Research signals: -
+- Compensation leverage: high
+
+#### Concerns
+- External company evidence is thin; run deep research with a search API.
+
+#### Interview Strategy
+- Ask why the role is open and what success means in the first 90 days.
+- Probe team ownership, roadmap pressure, and cross-functional interfaces.
+
+#### CV Strategy
+- Lead with proof around: Frontend Engineer, JavaScript, TypeScript, React, CSS, Accessibility.
+- Use story story-1: frontend product execution.
+- Use story story-2: systems and API collaboration.
+- Use story story-3: accessibility and quality.
+
+### GlossGenius - Staff Software Engineer, Frontend
+
+- Score: 94
+- Grade: A
+- Confidence: medium
+- Decision: pursue aggressively
+- Thesis: Staff Software Engineer, Frontend at GlossGenius is pursue aggressively because the snapshot score is 94, with 13 profile/role keyword hits and 0 external evidence item(s).
+
+#### Evidence
+- Keyword hits: Frontend Engineer, JavaScript, TypeScript, React, CSS, Accessibility, API, Performance Optimization, Design Systems, design system, TypeScript, React, Frontend Engineer
+- Keyword misses: go
+- Research signals: -
+- Compensation leverage: high
+
+#### Concerns
+- External company evidence is thin; run deep research with a search API.
+
+#### Interview Strategy
+- Ask why the role is open and what success means in the first 90 days.
+- Probe team ownership, roadmap pressure, and cross-functional interfaces.
+
+#### CV Strategy
+- Lead with proof around: Frontend Engineer, JavaScript, TypeScript, React, CSS, Accessibility.
+- Use story story-1: frontend product execution.
+- Use story story-2: systems and API collaboration.
+- Use story story-3: accessibility and quality.
+
+### Equinix, Inc - Senior Director, Equinix Fabric Product Management
+
+- Score: 94
+- Grade: A
+- Confidence: medium
+- Decision: pursue aggressively
+- Thesis: Senior Director, Equinix Fabric Product Management at Equinix, Inc is pursue aggressively because the snapshot score is 94, with 5 profile/role keyword hits and 0 external evidence item(s).
+
+#### Evidence
+- Keyword hits: Analytics, API, remote, analytics, Product Engineer
+- Keyword misses: go, growth
+- Research signals: -
+- Compensation leverage: high
+
+#### Concerns
+- External company evidence is thin; run deep research with a search API.
+
+#### Interview Strategy
+- Ask why the role is open and what success means in the first 90 days.
+- Probe team ownership, roadmap pressure, and cross-functional interfaces.
+
+#### CV Strategy
+- Lead with proof around: Analytics, API, remote, analytics, Product Engineer.
+- Use story story-1: frontend product execution.
+- Use story story-2: systems and API collaboration.
+- Use story story-3: accessibility and quality.
+
+### Treasure Data - Senior Software Engineer - Ruby on Rails
+
+- Score: 94
+- Grade: A
+- Confidence: medium
+- Decision: pursue aggressively
+- Thesis: Senior Software Engineer - Ruby on Rails at Treasure Data is pursue aggressively because the snapshot score is 94, with 8 profile/role keyword hits and 0 external evidence item(s).
+
+#### Evidence
+- Keyword hits: Frontend Engineer, TypeScript, React, API, Performance Optimization, TypeScript, React, Frontend Engineer
+- Keyword misses: sql, aws, growth
+- Research signals: -
+- Compensation leverage: high
+
+#### Concerns
+- External company evidence is thin; run deep research with a search API.
+
+#### Interview Strategy
+- Ask why the role is open and what success means in the first 90 days.
+- Probe team ownership, roadmap pressure, and cross-functional interfaces.
+
+#### CV Strategy
+- Lead with proof around: Frontend Engineer, TypeScript, React, API, Performance Optimization, TypeScript.
+- Use story story-1: frontend product execution.
+- Use story story-2: systems and API collaboration.
+- Use story story-3: accessibility and quality.
+
+### Databricks Greenhouse - Director,Technical Solutions (Big Data/ AI)
+
+- Score: 94
+- Grade: A
+- Confidence: medium
+- Decision: pursue aggressively
+- Thesis: Director,Technical Solutions (Big Data/ AI) at Databricks Greenhouse is pursue aggressively because the snapshot score is 94, with 4 profile/role keyword hits and 0 external evidence item(s).
+
+#### Evidence
+- Keyword hits: Analytics, Performance Optimization, analytics, Product Engineer
+- Keyword misses: spark, machine learning, sales, operations, excel
+- Research signals: -
+- Compensation leverage: high
+
+#### Concerns
+- External company evidence is thin; run deep research with a search API.
+- Profile keyword coverage is weaker than the target role language.
+
+#### Interview Strategy
+- Ask why the role is open and what success means in the first 90 days.
+- Probe team ownership, roadmap pressure, and cross-functional interfaces.
+
+#### CV Strategy
+- Lead with proof around: Analytics, Performance Optimization, analytics, Product Engineer.
+- Use story story-1: frontend product execution.
+- Use story story-2: systems and API collaboration.
+- Use story story-3: accessibility and quality.
+
+### Money Forward - Backend Engineer, Digital Bank
+
+- Score: 94
+- Grade: A
+- Confidence: medium
+- Decision: pursue aggressively
+- Thesis: Backend Engineer, Digital Bank at Money Forward is pursue aggressively because the snapshot score is 94, with 3 profile/role keyword hits and 0 external evidence item(s).
+
+#### Evidence
+- Keyword hits: Frontend Engineer, API, Frontend Engineer
+- Keyword misses: java, kotlin, sql, aws, gcp, azure, docker, rest, agents
+- Research signals: -
+- Compensation leverage: high
+
+#### Concerns
+- External company evidence is thin; run deep research with a search API.
+- Profile keyword coverage is weaker than the target role language.
+
+#### Interview Strategy
+- Ask why the role is open and what success means in the first 90 days.
+- Probe team ownership, roadmap pressure, and cross-functional interfaces.
+
+#### CV Strategy
+- Lead with proof around: Frontend Engineer, API, Frontend Engineer.
+- Use story story-1: frontend product execution.
+- Use story story-2: systems and API collaboration.
+- Use story story-3: accessibility and quality.
+
+### Uber - Data Engineer II
+
+- Score: 93
+- Grade: A
+- Confidence: medium
+- Decision: pursue aggressively
+- Thesis: Data Engineer II at Uber is pursue aggressively because the snapshot score is 93, with 6 profile/role keyword hits and 1 external evidence item(s).
+
+#### Evidence
+- Keyword hits: Analytics, API, Performance Optimization, remote, analytics, Product Engineer
+- Keyword misses: python, java, go, spark, machine learning, growth
+- Research signals: AI / data / platform signal, remote or hybrid signal
+- Compensation leverage: high
+
+#### Concerns
+- None flagged
+
+#### Interview Strategy
+- Ask why the role is open and what success means in the first 90 days.
+- Probe team ownership, roadmap pressure, and cross-functional interfaces.
+- What business unit owns the Sr Software Engineer, Frontend (Web) role?
+- What measurable outcomes would this team expect in the first 90 days?
+- What recent company/product signals change the risk or upside?
+
+#### CV Strategy
+- Lead with proof around: Analytics, API, Performance Optimization, remote, analytics, Product Engineer.
+- Use story story-1: frontend product execution.
+- Use story story-2: systems and API collaboration.
+- Use story story-3: accessibility and quality.
+
+### Uber - Data Engineer 2
+
+- Score: 93
+- Grade: A
+- Confidence: medium
+- Decision: pursue aggressively
+- Thesis: Data Engineer 2 at Uber is pursue aggressively because the snapshot score is 93, with 6 profile/role keyword hits and 1 external evidence item(s).
+
+#### Evidence
+- Keyword hits: Analytics, API, Performance Optimization, remote, analytics, Product Engineer
+- Keyword misses: python, java, go, spark, machine learning, growth
+- Research signals: AI / data / platform signal, remote or hybrid signal
+- Compensation leverage: high
+
+#### Concerns
+- None flagged
+
+#### Interview Strategy
+- Ask why the role is open and what success means in the first 90 days.
+- Probe team ownership, roadmap pressure, and cross-functional interfaces.
+- What business unit owns the Sr Software Engineer, Frontend (Web) role?
+- What measurable outcomes would this team expect in the first 90 days?
+- What recent company/product signals change the risk or upside?
+
+#### CV Strategy
+- Lead with proof around: Analytics, API, Performance Optimization, remote, analytics, Product Engineer.
+- Use story story-1: frontend product execution.
+- Use story story-2: systems and API collaboration.
+- Use story story-3: accessibility and quality.
+
+### Uber - Data Engineer II
+
+- Score: 93
+- Grade: A
+- Confidence: medium
+- Decision: pursue aggressively
+- Thesis: Data Engineer II at Uber is pursue aggressively because the snapshot score is 93, with 6 profile/role keyword hits and 1 external evidence item(s).
+
+#### Evidence
+- Keyword hits: Analytics, API, Performance Optimization, remote, analytics, Product Engineer
+- Keyword misses: python, java, go, spark, machine learning, growth
+- Research signals: AI / data / platform signal, remote or hybrid signal
+- Compensation leverage: high
+
+#### Concerns
+- None flagged
+
+#### Interview Strategy
+- Ask why the role is open and what success means in the first 90 days.
+- Probe team ownership, roadmap pressure, and cross-functional interfaces.
+- What business unit owns the Sr Software Engineer, Frontend (Web) role?
+- What measurable outcomes would this team expect in the first 90 days?
+- What recent company/product signals change the risk or upside?
+
+#### CV Strategy
+- Lead with proof around: Analytics, API, Performance Optimization, remote, analytics, Product Engineer.
+- Use story story-1: frontend product execution.
+- Use story story-2: systems and API collaboration.
+- Use story story-3: accessibility and quality.
+
+### Uber - Data Engineer 2
+
+- Score: 93
+- Grade: A
+- Confidence: medium
+- Decision: pursue aggressively
+- Thesis: Data Engineer 2 at Uber is pursue aggressively because the snapshot score is 93, with 6 profile/role keyword hits and 1 external evidence item(s).
+
+#### Evidence
+- Keyword hits: Analytics, API, Performance Optimization, remote, analytics, Product Engineer
+- Keyword misses: python, java, go, spark, machine learning, growth
+- Research signals: AI / data / platform signal, remote or hybrid signal
+- Compensation leverage: high
+
+#### Concerns
+- None flagged
+
+#### Interview Strategy
+- Ask why the role is open and what success means in the first 90 days.
+- Probe team ownership, roadmap pressure, and cross-functional interfaces.
+- What business unit owns the Sr Software Engineer, Frontend (Web) role?
+- What measurable outcomes would this team expect in the first 90 days?
+- What recent company/product signals change the risk or upside?
+
+#### CV Strategy
+- Lead with proof around: Analytics, API, Performance Optimization, remote, analytics, Product Engineer.
+- Use story story-1: frontend product execution.
+- Use story story-2: systems and API collaboration.
+- Use story story-3: accessibility and quality.
 
 ## Layer B — Standard Matches (roleFit 40-67)
 
+### NVIDIA Workday - Senior Solution Architect - Telco Network Automation
+- Score: 81 | Grade: B | RoleFit: 45
+- Decision: pursue selectively
+- Keyword hits: Analytics, analytics
+- Gaps: deep learning
+
+### NVIDIA Workday - Senior Perception Engineer, Obstacle Foundation Models - Autonomous Vehicles
+- Score: 80 | Grade: B | RoleFit: 45
+- Decision: pursue selectively
+- Keyword hits: -
+- Gaps: python, deep learning, computer vision, pytorch
+
+### Cursor Ashby - Strategic Account Executive, Life Sciences
+- Score: 79 | Grade: B | RoleFit: 45
+- Decision: pursue selectively
+- Keyword hits: -
+- Gaps: sales
+
+### NVIDIA Workday - Senior Software Engineer Aerial Platform
+- Score: 79 | Grade: B | RoleFit: 45
+- Decision: pursue selectively
+- Keyword hits: -
+- Gaps: python
+
+### GOLDTECH RESOURCES PTE LTD - Technical Business Analyst – Power Platform
+- Score: 78 | Grade: B | RoleFit: 45
+- Decision: pursue selectively
+- Keyword hits: -
+- Gaps: go, sql, power bi
+
+### Databricks Greenhouse - Sr. Technical Enablement Specialist
+- Score: 78 | Grade: B | RoleFit: 45
+- Decision: pursue selectively
+- Keyword hits: Analytics, analytics
+- Gaps: spark, excel
+
 ### NVIDIA Workday - Senior Mixed Signal Circuit Design Engineer
-- Score: 53 | Grade: D | RoleFit: 45
-- Decision: skip unless strategic
+- Score: 77 | Grade: B | RoleFit: 45
+- Decision: pursue selectively
 - Keyword hits: -
 - Gaps: go, excel
 
-### Ultra Tendency - Data Engineer
-- Score: 51 | Grade: D | RoleFit: 45
-- Decision: skip unless strategic
-- Keyword hits: -
-- Gaps: python, java, sql, aws, gcp, azure
-
-### NVIDIA Workday - Senior Package Engineer
-- Score: 46 | Grade: D | RoleFit: 45
-- Decision: skip unless strategic
-- Keyword hits: -
-- Gaps: -
-
-### Lam Research - (FINAL CALL!) 2026 May Hiring Roadshow in Malaysia 🇲🇾｜Working in Lam Research Taiwan!
-- Score: 46 | Grade: D | RoleFit: 45
-- Decision: skip unless strategic
-- Keyword hits: -
-- Gaps: -
-
-### NVIDIA - The NVIDIA Spectrum Ethernet Platform
-- Score: 45 | Grade: D | RoleFit: 45
-- Decision: skip unless strategic
-- Keyword hits: -
-- Gaps: -
-
-### Unknown - AIRIS + AIQUA - Grow smarter and faster with AI-powered personalization | Appier
-- Score: 44 | Grade: D | RoleFit: 45
-- Decision: skip unless strategic
-- Keyword hits: -
-- Gaps: -
-
-### NVIDIA Data Center Products - NVIDIA Data Center Products: Next Wave of AI Innovation
-- Score: 44 | Grade: D | RoleFit: 45
-- Decision: skip unless strategic
-- Keyword hits: -
-- Gaps: -
-
-### NVIDIA - NVIDIA OVX Systems
-- Score: 44 | Grade: D | RoleFit: 45
-- Decision: skip unless strategic
-- Keyword hits: -
-- Gaps: -
-
-### NVIDIA - NVIDIA NeMo
-- Score: 44 | Grade: D | RoleFit: 45
-- Decision: skip unless strategic
-- Keyword hits: -
-- Gaps: -
-
-### NVIDIA Developer - NVIDIA CUDA-X Data Science
-- Score: 43 | Grade: D | RoleFit: 45
-- Decision: skip unless strategic
-- Keyword hits: -
-- Gaps: -
-
-### - Delta - Products - Building Automation - Delta
-- Score: 41 | Grade: F | RoleFit: 45
-- Decision: skip unless strategic
-- Keyword hits: -
-- Gaps: -
-
-### NVIDIA - NVIDIA IGX Platform
-- Score: 41 | Grade: F | RoleFit: 45
-- Decision: skip unless strategic
-- Keyword hits: -
-- Gaps: -
-
-### - Delta - Products - Power and System - Delta
-- Score: 40 | Grade: F | RoleFit: 45
-- Decision: skip unless strategic
-- Keyword hits: -
-- Gaps: -
-
-### Trend Micro - Zero Trust Secure Access | Trend Micro Vision One
-- Score: 40 | Grade: F | RoleFit: 45
-- Decision: skip unless strategic
-- Keyword hits: -
-- Gaps: -
-
-### Unknown - AIRIS - Next Generation AI-powered Customer Data Platform｜Appier
-- Score: 40 | Grade: F | RoleFit: 45
-- Decision: skip unless strategic
+### Databricks Greenhouse - Candidate Experience Coordinator (6-month contract)
+- Score: 77 | Grade: B | RoleFit: 45
+- Decision: pursue selectively
 - Keyword hits: Analytics, analytics
-- Gaps: -
+- Gaps: spark, excel
 
-### NVIDIA - RTX AI PCs | Next-Level AI Performance
-- Score: 40 | Grade: F | RoleFit: 45
-- Decision: skip unless strategic
+### NVIDIA Workday - Senior CPU Performance Developer Technology Engineer
+- Score: 77 | Grade: B | RoleFit: 45
+- Decision: pursue selectively
 - Keyword hits: -
 - Gaps: -
 
-### NVIDIA Networking Software - NVIDIA Networking Software for AI Platforms
-- Score: 40 | Grade: F | RoleFit: 45
-- Decision: skip unless strategic
+### Roblox Greenhouse - Senior Software Engineer - Release
+- Score: 76 | Grade: B | RoleFit: 45
+- Decision: pursue selectively
+- Keyword hits: TypeScript, TypeScript
+- Gaps: python
+
+### NVIDIA Workday - Senior VLSI CDC Engineer
+- Score: 76 | Grade: B | RoleFit: 45
+- Decision: pursue selectively
+- Keyword hits: dashboard
+- Gaps: python
+
+### Roblox Greenhouse - Senior QA Engineer, Game Engine
+- Score: 75 | Grade: B | RoleFit: 45
+- Decision: pursue selectively
+- Keyword hits: -
+- Gaps: python
+
+### Roblox Greenhouse - Senior QA Engineer, Interactivity
+- Score: 75 | Grade: B | RoleFit: 45
+- Decision: pursue selectively
+- Keyword hits: -
+- Gaps: python
+
+### Roblox Greenhouse - Human Evaluator, Marketplace (Contract)
+- Score: 74 | Grade: B | RoleFit: 45
+- Decision: pursue selectively
+- Keyword hits: remote
+- Gaps: sql
+
+### Roblox Greenhouse - Human Evaluator, Studio (Contract)
+- Score: 74 | Grade: B | RoleFit: 45
+- Decision: pursue selectively
+- Keyword hits: remote
+- Gaps: -
+
+### Roblox Greenhouse - Senior QA Engineer (Audio, Video, Communication)
+- Score: 74 | Grade: B | RoleFit: 45
+- Decision: pursue selectively
+- Keyword hits: -
+- Gaps: python
+
+### Roblox Greenhouse - Senior QA Engineer, AVC
+- Score: 74 | Grade: B | RoleFit: 45
+- Decision: pursue selectively
+- Keyword hits: -
+- Gaps: python
+
+### ElevenLabs Ashby - Audio Engineering (Freelance)
+- Score: 74 | Grade: B | RoleFit: 45
+- Decision: pursue selectively
+- Keyword hits: remote
+- Gaps: -
+
+### Cursor Ashby - Associate Field Engineer
+- Score: 74 | Grade: B | RoleFit: 45
+- Decision: pursue selectively
+- Keyword hits: -
+- Gaps: go
+
+### HIVEBOTICS PTE. LTD. - Robotics Software Engineer Trainee
+- Score: 73 | Grade: B | RoleFit: 45
+- Decision: pursue selectively
+- Keyword hits: -
+- Gaps: java
+
+### DCONSTRUCT ROBOTICS PTE. LTD. - C/C++ Software Engineer
+- Score: 73 | Grade: B | RoleFit: 45
+- Decision: pursue selectively
 - Keyword hits: -
 - Gaps: -
 
-### NVIDIA DGX Spark - NVIDIA DGX Spark: AI Supercomputer on Your Desk
-- Score: 40 | Grade: F | RoleFit: 45
-- Decision: skip unless strategic
-- Keyword hits: -
-- Gaps: spark, agents
-
-### NVIDIA - NVIDIA DGX Station: Ultimate AI Supercomputer
-- Score: 40 | Grade: F | RoleFit: 45
-- Decision: skip unless strategic
+### DCONSTRUCT ROBOTICS PTE. LTD. - Robotics Software Engineer
+- Score: 73 | Grade: B | RoleFit: 45
+- Decision: pursue selectively
 - Keyword hits: -
 - Gaps: -
 
-### NVIDIA Developer - NVIDIA Isaac ROS
-- Score: 40 | Grade: F | RoleFit: 45
-- Decision: skip unless strategic
+### DCONSTRUCT ROBOTICS PTE. LTD. - Software Engineer
+- Score: 73 | Grade: B | RoleFit: 45
+- Decision: pursue selectively
+- Keyword hits: -
+- Gaps: computer vision
+
+### Roblox Greenhouse - Senior Software Engineer, App Performance
+- Score: 73 | Grade: B | RoleFit: 45
+- Decision: pursue selectively
 - Keyword hits: -
 - Gaps: -
 
-### NVIDIA - NVIDIA Solutions for Computer-Aided Engineering (CAE)
-- Score: 40 | Grade: F | RoleFit: 45
-- Decision: skip unless strategic
+### NVIDIA Workday - Senior Software Engineer Aerial  – Wireless RAN Algorithms Development
+- Score: 73 | Grade: B | RoleFit: 45
+- Decision: pursue selectively
+- Keyword hits: -
+- Gaps: python, deep learning
+
+### NVIDIA Workday - Senior Software Engineer Aerial  – Wireless RAN Algorithms Development
+- Score: 73 | Grade: B | RoleFit: 45
+- Decision: pursue selectively
+- Keyword hits: -
+- Gaps: python, deep learning
+
+### NVIDIA Workday - Senior VLSI Integration Engineer
+- Score: 73 | Grade: B | RoleFit: 45
+- Decision: pursue selectively
+- Keyword hits: -
+- Gaps: python
+
+### NVIDIA Workday - VLSI Integration Engineer
+- Score: 73 | Grade: B | RoleFit: 45
+- Decision: pursue selectively
+- Keyword hits: -
+- Gaps: python
+
+### Invisible Agency - Business Owners Freelance AI Trainer Project
+- Score: 72 | Grade: B | RoleFit: 45
+- Decision: pursue selectively
+- Keyword hits: remote
+- Gaps: -
+
+### Bennie - Customer Experience Manager
+- Score: 72 | Grade: B | RoleFit: 45
+- Decision: pursue selectively
+- Keyword hits: remote
+- Gaps: -
+
+### Infosys Limited - [New Grads Oct 2026] IT consultant *Working in Tokyo ◆Recent graduates welcome
+- Score: 72 | Grade: B | RoleFit: 45
+- Decision: pursue selectively
 - Keyword hits: -
 - Gaps: -
 
-### Unknown - GDDR7, GDDR6X, GDDR6 Memory | Graphic Memory | Micron Technology, Inc.
-- Score: 40 | Grade: F | RoleFit: 45
-- Decision: skip unless strategic
+### ROKKO SYSTEMS PTE. LTD. - Software Engineer II
+- Score: 71 | Grade: C | RoleFit: 45
+- Decision: pursue selectively
+- Keyword hits: -
+- Gaps: computer vision
+
+### AEM SINGAPORE PTE. LTD. - Software Engineer (Test Automation / C++)
+- Score: 71 | Grade: C | RoleFit: 45
+- Decision: pursue selectively
+- Keyword hits: -
+- Gaps: java
+
+### DCI CONSULTANTS PRIVATE LIMITED - Software Engineer (.net) - MC
+- Score: 71 | Grade: C | RoleFit: 45
+- Decision: pursue selectively
+- Keyword hits: -
+- Gaps: java, go
+
+### MI EQUIPMENT PTE. LTD. - Senior Software Engineer
+- Score: 71 | Grade: C | RoleFit: 45
+- Decision: pursue selectively
 - Keyword hits: -
 - Gaps: -
 
-### NVIDIA Developer - NVIDIA Aerial
-- Score: 39 | Grade: F | RoleFit: 45
-- Decision: skip unless strategic
+### CERTIS TECHNOLOGY (SINGAPORE) PTE. LTD. - Senior/Software Engineer (Technical Lead)
+- Score: 71 | Grade: C | RoleFit: 45
+- Decision: pursue selectively
+- Keyword hits: JavaScript
+- Gaps: python, java
+
+### ClinChoice - Senior Manager Biostatistician Consultant US
+- Score: 71 | Grade: C | RoleFit: 45
+- Decision: pursue selectively
+- Keyword hits: remote
+- Gaps: -
+
+### Contact Government Services, LLC - Contract Mandarin Document Review Attorney
+- Score: 71 | Grade: C | RoleFit: 45
+- Decision: pursue selectively
+- Keyword hits: remote
+- Gaps: -
+
+### I-PEX Inc. - [2027 New Graduates] Generalist Positions in Science and Engineering
+- Score: 71 | Grade: C | RoleFit: 45
+- Decision: pursue selectively
 - Keyword hits: -
 - Gaps: -
 
-### NVIDIA Workday - Developer Technology Engineer, HPC and AI
-- Score: 38 | Grade: F | RoleFit: 45
-- Decision: skip unless strategic
+### NVIDIA Workday - Senior Formal Verification Engineer
+- Score: 71 | Grade: C | RoleFit: 45
+- Decision: pursue selectively
 - Keyword hits: -
-- Gaps: -
-
-### Micron Workday - IT SOFTWARE ENGINEER - PROBE DATA COLLECTION
-- Score: 38 | Grade: F | RoleFit: 45
-- Decision: skip unless strategic
-- Keyword hits: -
-- Gaps: -
-
-### Micron Workday - Assembly & Test Quality & Data Engineer
-- Score: 38 | Grade: F | RoleFit: 45
-- Decision: skip unless strategic
-- Keyword hits: -
-- Gaps: -
-
-### NVIDIA Workday - System Design Engineer
-- Score: 37 | Grade: F | RoleFit: 45
-- Decision: skip unless strategic
-- Keyword hits: -
-- Gaps: -
-
-### NVIDIA Workday - System Design Validation Engineer
-- Score: 37 | Grade: F | RoleFit: 45
-- Decision: skip unless strategic
-- Keyword hits: -
-- Gaps: -
-
-### NVIDIA Workday - MCU Firmware Engineer
-- Score: 37 | Grade: F | RoleFit: 45
-- Decision: skip unless strategic
-- Keyword hits: -
-- Gaps: -
-
-### NVIDIA Workday - GPU Firmware Engineer
-- Score: 37 | Grade: F | RoleFit: 45
-- Decision: skip unless strategic
-- Keyword hits: -
-- Gaps: -
-
-### NVIDIA Workday - System Design Power Validation Engineer
-- Score: 37 | Grade: F | RoleFit: 45
-- Decision: skip unless strategic
-- Keyword hits: -
-- Gaps: -
-
-### NVIDIA Workday - Board Design Engineer, LDE - New College Graduate
-- Score: 37 | Grade: F | RoleFit: 45
-- Decision: skip unless strategic
-- Keyword hits: -
-- Gaps: -
-
-### NVIDIA Workday - Product Development Lab Engineer
-- Score: 37 | Grade: F | RoleFit: 45
-- Decision: skip unless strategic
-- Keyword hits: -
-- Gaps: -
-
-### NVIDIA Workday - Product Development Engineer
-- Score: 37 | Grade: F | RoleFit: 45
-- Decision: skip unless strategic
-- Keyword hits: -
-- Gaps: -
-
-### COEBank SuccessFactors Data & BI Engineer - Data & BI Engineer Job Details | CEB
-- Score: 37 | Grade: F | RoleFit: 45
-- Decision: skip unless strategic
-- Keyword hits: -
-- Gaps: -
-
-### NVIDIA Workday - Senior Product Test Engineer
-- Score: 36 | Grade: F | RoleFit: 45
-- Decision: skip unless strategic
-- Keyword hits: -
-- Gaps: -
-
-### NVIDIA Workday - Senior Test Development Engineer - DataCenter System Software
-- Score: 36 | Grade: F | RoleFit: 45
-- Decision: skip unless strategic
-- Keyword hits: -
-- Gaps: -
-
-### NVIDIA Workday - Senior System BIOS Firmware Developer, Client Product
-- Score: 36 | Grade: F | RoleFit: 45
-- Decision: skip unless strategic
-- Keyword hits: -
-- Gaps: -
-
-### NVIDIA Workday - Senior Embedded Graphic Software Engineer
-- Score: 36 | Grade: F | RoleFit: 45
-- Decision: skip unless strategic
-- Keyword hits: -
-- Gaps: -
-
-### NVIDIA Workday - Senior System Level Product Development Engineer
-- Score: 36 | Grade: F | RoleFit: 45
-- Decision: skip unless strategic
-- Keyword hits: -
-- Gaps: -
+- Gaps: deep learning
 
 ## Layer C — Exploratory Signals (roleFit < 40)
 
-- **Money Forward — Data Engineer, Data AI Platform Division, Tokyo** (score: 62) | Top gap: python
-- **PayPay — Automation QA Engineer** (score: 62) | Top gap: docker
-- **NVIDIA Workday — Senior Packaging Development Engineer** (score: 61) | Top gap: deep learning
-- **NVIDIA Workday — Senior High Speed SerDes Validation Engineer** (score: 61) | Top gap: python
-- **Applied Materials Workday — Technical Support Engineer - Etch** (score: 61) | Top gap: go
-- **Intel Workday Taiwan — Platform Debug Engineer- Intern** (score: 61) | Top gap: python
-- **Intel Workday Taiwan — Customer Yield Engineer – Foundry Engineering (Taiwan)** (score: 60) | Top gap: none
-- **Intel Workday Taiwan — Network Systems and Solutions Engineer** (score: 60) | Top gap: none
-- **Logitech Workday Taiwan — Sr. Mechancial Design Engineer** (score: 60) | Top gap: none
-- **Logitech Workday Taiwan — Lead Test Development Engineer** (score: 60) | Top gap: none
-- **Money Forward — AI Engineer, ERP Cross-Functional Engineering Department, Tokyo** (score: 60) | Top gap: aws
-- **Money Forward — Security Specialist (Product Security), CISO Office, Tokyo** (score: 60) | Top gap: aws
-- **PayPay — Cloud Platform Engineer (DB Specialist)** (score: 60) | Top gap: python
-- **Gogolook — Design Assistant 設計助理 (Roo)** (score: 59) | Top gap: growth
-- **Applied Materials Workday — Technical Product Support (TPS) Engineer II - (SCoE) (E2)** (score: 59) | Top gap: go
-- **Applied Materials Workday — Technical Product Support (TPS) Engineer III (E3) - MDP** (score: 59) | Top gap: go
-- **Applied Materials Workday — Technical Product Support (TPS) Engineer III - (E3)** (score: 59) | Top gap: go
-- **Logitech Workday Taiwan — Lead Imaging Embedded Software Engineer  (Contractor)** (score: 59) | Top gap: python
-- **Logitech Workday Taiwan — Lead Mechanical Engineer** (score: 59) | Top gap: none
-- **Logitech Workday Taiwan — Lead Material Engineer** (score: 59) | Top gap: none
-- **Logitech Workday Taiwan — Senior Signal Integration Engineer** (score: 59) | Top gap: none
-- **Gogolook — AI Product Intern (B2C & User Growth) - ScamAdviser** (score: 58) | Top gap: go
-- **Micron Workday — MATERIAL ENGINEER, ADVANCED PACKAGING TECHNOLOGY DEVELOPMENT** (score: 58) | Top gap: none
-- **Gogolook — Content Marketing Intern 內容行銷實習生 (Roo)** (score: 57) | Top gap: html
-- **Gogolook — Visual Design Intern 品牌視覺設計實習生** (score: 57) | Top gap: growth
-- **NVIDIA Workday — Senior Design Engineer, Coherent High Speed Interconnect** (score: 57) | Top gap: none
-- **Micron Workday — Facilities Document Control Program Engineer** (score: 57) | Top gap: excel
-- **Micron Workday — SR ENGINEER, OMT PROD. OEE** (score: 57) | Top gap: python
-- **Intel Workday Taiwan — Sr. Substrates Development and Ramp Engineer** (score: 57) | Top gap: operations
-- **Intel Workday Taiwan — System Lab AI Solution Graduate Intern** (score: 57) | Top gap: machine learning
+- **Pilotly — Product Engineer II** (score: 93) | Top gap: aws
+- **Capital One — Distinguished Engineer (Remote - Eligible)** (score: 93) | Top gap: python
+- **Stripe Greenhouse — Android Engineer, Terminal Developer Productivity** (score: 93) | Top gap: java
+- **Stripe Greenhouse — Frontend Platform Engineer, JavaScript Infrastructure** (score: 93) | Top gap: none
+- **Figma Greenhouse — Software Engineer, AI Product (London, United Kingdom)** (score: 93) | Top gap: llm
+- **Airbnb Greenhouse — Senior Software Engineer, Quality Platform** (score: 93) | Top gap: python
+- **Airbnb Greenhouse — Senior Web Automation Engineer, Quality Platform** (score: 93) | Top gap: agents
+- **MongoDB Greenhouse — Senior Software Engineer, Observability** (score: 93) | Top gap: java
+- **LAI GAMES PTE. LTD. — Fullstack Software Engineer Intern** (score: 92) | Top gap: python
+- **Capgemini Singapore  PTE. LTD. — Senior Frontend Engineer** (score: 92) | Top gap: operations
+- **NEUTRON PTE. LTD. — Frontend Engineer (Web & Mobile)** (score: 92) | Top gap: aws
+- **Exadel — Senior Full-Stack Software Engineer (Python/Node.js, React)** (score: 92) | Top gap: vue
+- **Uber — Sr Staff Engineer - Web Platform** (score: 92) | Top gap: growth
+- **Exadel — Senior Full-Stack Software Engineer (Node.js, React)** (score: 92) | Top gap: vue
+- **Uber — Engineering Manager II** (score: 92) | Top gap: growth
+- **Uber — Senior Rider Web Software Engineer** (score: 92) | Top gap: vue
+- **Rent the Runway — Software Engineer III - Full Stack** (score: 92) | Top gap: java
+- **Flexport — Engineering Manager, Autonomous Freight Systems** (score: 92) | Top gap: java
+- **Bank of America — Software Engineer III - GBS IND** (score: 92) | Top gap: python
+- **Genmab — Senior Data Product Engineer, Commercial** (score: 92) | Top gap: sql
+- **Experian — Full Stack Staff Engineer - GraphQL** (score: 92) | Top gap: java
+- **Allstate — Lead AI Cloud Platform Engineer** (score: 92) | Top gap: python
+- **Equinix, Inc — Staff Software Engineer** (score: 92) | Top gap: python
+- **Zillow — Senior Engineering Manager** (score: 92) | Top gap: python
+- **Esri — Sr. Product Engineer - Web Services** (score: 92) | Top gap: python
+- **GitLab Greenhouse — Senior Backend Engineer (Ruby on Rails), Plan: Knowledge** (score: 92) | Top gap: agents
+- **Stripe Greenhouse — Learning Architect** (score: 92) | Top gap: growth
+- **Canonical Greenhouse — Security Software Engineer** (score: 92) | Top gap: python
+- **Vercel Greenhouse — Site Engineer** (score: 92) | Top gap: agents
+- **ElevenLabs Ashby — Safety Engineer** (score: 92) | Top gap: python
 

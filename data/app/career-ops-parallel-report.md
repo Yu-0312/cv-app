@@ -1,8 +1,8 @@
 # Career Ops Parallel Worker Report
 
-Generated: 2026-05-17T23:21:27.257Z
+Generated: 2026-05-20T00:58:32.573Z
 Concurrency: 4
-Jobs processed: 50
+Jobs processed: 49
 Errors: 0
 
 ## Worker Design
@@ -11,29 +11,14 @@ Errors: 0
 - Independent worker outputs: evaluation, research, application, compensation, story bank, apply-agent plan.
 - Human-in-the-loop guardrails for apply automation.
 
-## P1 Geniee - JAPAN AI - Product Manager, AI SaaS
+## P0 VANGUARD SOFTWARE PTE. LTD. - Expert Frontend Engineer (React.JS & React Native)
 
-- Score: 77
-- Grade: B
-- Research evidence: 7
-- Keywords: TypeScript, React, Next.js, API, engineer, product, data
-- Compensation leverage: medium
-- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
-
-### Apply Agent Guardrails
-- Never submit without explicit user confirmation.
-- Never fabricate work authorization, salary history, degree, or experience.
-- Never store API keys or credentials in job metadata.
-- Record only application status and user-approved notes.
-
-## P1 AI Robot Association (AIRoA) - Full Stack Engineer
-
-- Score: 76
-- Grade: B
-- Research evidence: 7
-- Keywords: React, Next.js, engineer, dashboards., data, visualization, dashboards
-- Compensation leverage: medium
-- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
+- Score: 95
+- Grade: A
+- Research evidence: 5
+- Keywords: JavaScript, TypeScript, React, Next.js, CSS, Accessibility, Design Systems, design system, engineer, product
+- Compensation leverage: high
+- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
 
 ### Apply Agent Guardrails
 - Never submit without explicit user confirmation.
@@ -41,29 +26,14 @@ Errors: 0
 - Never store API keys or credentials in job metadata.
 - Record only application status and user-approved notes.
 
-## P1 Geniee - JAPAN AI - Research Engineer, LLM
+## P0 BIFROST PTE. LTD. - Frontend Engineer
 
-- Score: 76
-- Grade: B
-- Research evidence: 7
-- Keywords: TypeScript, React, Next.js, engineer, product, data
-- Compensation leverage: medium
-- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
-
-### Apply Agent Guardrails
-- Never submit without explicit user confirmation.
-- Never fabricate work authorization, salary history, degree, or experience.
-- Never store API keys or credentials in job metadata.
-- Record only application status and user-approved notes.
-
-## P1 AI Robot Association (AIRoA) - Design Engineer
-
-- Score: 75
-- Grade: B
-- Research evidence: 7
-- Keywords: React, Next.js, Figma, design system, engineer, product, data, visualization, dashboards
-- Compensation leverage: medium
-- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
+- Score: 95
+- Grade: A
+- Research evidence: 1
+- Keywords: JavaScript, React, engineer, product, data, restful, graphql, node.js
+- Compensation leverage: high
+- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
 
 ### Apply Agent Guardrails
 - Never submit without explicit user confirmation.
@@ -71,29 +41,14 @@ Errors: 0
 - Never store API keys or credentials in job metadata.
 - Record only application status and user-approved notes.
 
-## P1 Micron Workday - Senior Full Stack Software Engineer
+## P0 BIFROST PTE. LTD. - Frontend Engineer
 
-- Score: 74
-- Grade: B
-- Research evidence: 7
-- Keywords: JavaScript, TypeScript, React, Analytics, engineer, data, restful
-- Compensation leverage: medium
-- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
-
-### Apply Agent Guardrails
-- Never submit without explicit user confirmation.
-- Never fabricate work authorization, salary history, degree, or experience.
-- Never store API keys or credentials in job metadata.
-- Record only application status and user-approved notes.
-
-## P1 Money Forward - Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka
-
-- Score: 73
-- Grade: B
-- Research evidence: 4
-- Keywords: TypeScript, React, Next.js, engineer, product, graphql, node.js
-- Compensation leverage: medium
-- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
+- Score: 95
+- Grade: A
+- Research evidence: 1
+- Keywords: JavaScript, React, engineer, product, data, restful, graphql, node.js
+- Compensation leverage: high
+- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
 
 ### Apply Agent Guardrails
 - Never submit without explicit user confirmation.
@@ -101,29 +56,14 @@ Errors: 0
 - Never store API keys or credentials in job metadata.
 - Record only application status and user-approved notes.
 
-## P1 Money Forward - Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka
+## P0 TIKTOK PTE. LTD. - Frontend Software Engineer (Payment), TikTok Live - Singapore
 
-- Score: 73
-- Grade: B
-- Research evidence: 4
-- Keywords: TypeScript, React, Next.js, engineer, product, graphql, node.js
-- Compensation leverage: medium
-- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
-
-### Apply Agent Guardrails
-- Never submit without explicit user confirmation.
-- Never fabricate work authorization, salary history, degree, or experience.
-- Never store API keys or credentials in job metadata.
-- Record only application status and user-approved notes.
-
-## P1 Artytech - Tech Lead / CTO Candidate (Full-stack)
-
-- Score: 72
-- Grade: B
-- Research evidence: 4
-- Keywords: JavaScript, React, CSS, engineer, product, graphql, node.js
-- Compensation leverage: medium
-- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
+- Score: 95
+- Grade: A
+- Research evidence: 1
+- Keywords: JavaScript, CSS, remote, engineer, product, data
+- Compensation leverage: high
+- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
 
 ### Apply Agent Guardrails
 - Never submit without explicit user confirmation.
@@ -131,29 +71,14 @@ Errors: 0
 - Never store API keys or credentials in job metadata.
 - Record only application status and user-approved notes.
 
-## P2 Cardlytics Workday Taiwan - Senior Software Engineer
+## P0 TIKTOK PTE. LTD. - Frontend Software Engineer (Payment) - TikTok Live - Singapore
 
-- Score: 70
-- Grade: C
-- Research evidence: 0
-- Keywords: TypeScript, API, engineer, product, data
-- Compensation leverage: low
-- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
-
-### Apply Agent Guardrails
-- Never submit without explicit user confirmation.
-- Never fabricate work authorization, salary history, degree, or experience.
-- Never store API keys or credentials in job metadata.
-- Record only application status and user-approved notes.
-
-## P2 Shizuku AI - Software Engineer, Backend
-
-- Score: 69
-- Grade: C
-- Research evidence: 0
-- Keywords: TypeScript, remote, engineer, product, data
-- Compensation leverage: low
-- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
+- Score: 95
+- Grade: A
+- Research evidence: 1
+- Keywords: JavaScript, CSS, remote, engineer, product, data
+- Compensation leverage: high
+- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
 
 ### Apply Agent Guardrails
 - Never submit without explicit user confirmation.
@@ -161,14 +86,14 @@ Errors: 0
 - Never store API keys or credentials in job metadata.
 - Record only application status and user-approved notes.
 
-## P2 Axelspace - Data Scientist / ML Engineer
+## P0 Disney - Lead Software Engineer
 
-- Score: 69
-- Grade: C
-- Research evidence: 0
-- Keywords: Analytics, remote, engineer, product, data
-- Compensation leverage: low
-- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
+- Score: 95
+- Grade: A
+- Research evidence: 1
+- Keywords: JavaScript, TypeScript, API, engineer, product, data
+- Compensation leverage: high
+- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
 
 ### Apply Agent Guardrails
 - Never submit without explicit user confirmation.
@@ -176,14 +101,59 @@ Errors: 0
 - Never store API keys or credentials in job metadata.
 - Record only application status and user-approved notes.
 
-## P2 Metanomaly - Growth Engineer
+## P0 Bank of America - Principal Engineer - GBS IND
 
-- Score: 69
-- Grade: C
+- Score: 95
+- Grade: A
+- Research evidence: 1
+- Keywords: API, engineer, data
+- Compensation leverage: high
+- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
+
+### Apply Agent Guardrails
+- Never submit without explicit user confirmation.
+- Never fabricate work authorization, salary history, degree, or experience.
+- Never store API keys or credentials in job metadata.
+- Record only application status and user-approved notes.
+
+## P0 Uber - Sr Software Engineer, Frontend (Web)
+
+- Score: 95
+- Grade: A
+- Research evidence: 1
+- Keywords: JavaScript, TypeScript, React, CSS, API, Performance Optimization, engineer, product, data
+- Compensation leverage: high
+- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
+
+### Apply Agent Guardrails
+- Never submit without explicit user confirmation.
+- Never fabricate work authorization, salary history, degree, or experience.
+- Never store API keys or credentials in job metadata.
+- Record only application status and user-approved notes.
+
+## P0 Uber - Software Engineer II - Frontend
+
+- Score: 95
+- Grade: A
+- Research evidence: 1
+- Keywords: JavaScript, TypeScript, React, CSS, API, engineer, product, data
+- Compensation leverage: high
+- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
+
+### Apply Agent Guardrails
+- Never submit without explicit user confirmation.
+- Never fabricate work authorization, salary history, degree, or experience.
+- Never store API keys or credentials in job metadata.
+- Record only application status and user-approved notes.
+
+## P0 Modern Animal, Inc. - Senior Product Engineer
+
+- Score: 95
+- Grade: A
 - Research evidence: 0
 - Keywords: API, engineer, product, data
-- Compensation leverage: low
-- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
+- Compensation leverage: high
+- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
 
 ### Apply Agent Guardrails
 - Never submit without explicit user confirmation.
@@ -191,14 +161,29 @@ Errors: 0
 - Never store API keys or credentials in job metadata.
 - Record only application status and user-approved notes.
 
-## P2 Money Forward - Lead Backend Engineer, Digital Bank
+## P0 GitLab - Senior Backend Engineer(Go), Continuous Delivery
 
-- Score: 69
-- Grade: C
-- Research evidence: 4
+- Score: 95
+- Grade: A
+- Research evidence: 0
+- Keywords: API, remote, engineer, product, data
+- Compensation leverage: high
+- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
+
+### Apply Agent Guardrails
+- Never submit without explicit user confirmation.
+- Never fabricate work authorization, salary history, degree, or experience.
+- Never store API keys or credentials in job metadata.
+- Record only application status and user-approved notes.
+
+## P0 Money Forward - Lead Backend Engineer, Digital Bank
+
+- Score: 95
+- Grade: A
+- Research evidence: 0
 - Keywords: API, engineer, product, data
-- Compensation leverage: medium
-- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
+- Compensation leverage: high
+- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
 
 ### Apply Agent Guardrails
 - Never submit without explicit user confirmation.
@@ -206,29 +191,14 @@ Errors: 0
 - Never store API keys or credentials in job metadata.
 - Record only application status and user-approved notes.
 
-## P2 Money Forward - Infrastructure Engineer (SRE-AWS)
+## P0 ALPHA X TECHNOLOGY PTE. LTD. - Frontend Engineer
 
-- Score: 69
-- Grade: C
-- Research evidence: 4
-- Keywords: TypeScript, React, Performance Optimization, engineer, product, data
-- Compensation leverage: medium
-- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
-
-### Apply Agent Guardrails
-- Never submit without explicit user confirmation.
-- Never fabricate work authorization, salary history, degree, or experience.
-- Never store API keys or credentials in job metadata.
-- Record only application status and user-approved notes.
-
-## P2 Tokuty - Full Stack Engineer
-
-- Score: 69
-- Grade: C
+- Score: 94
+- Grade: A
 - Research evidence: 0
-- Keywords: React, design system, engineer, product
-- Compensation leverage: low
-- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
+- Keywords: JavaScript, TypeScript, React, API, Figma, engineer, data, graphql, visualization
+- Compensation leverage: high
+- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
 
 ### Apply Agent Guardrails
 - Never submit without explicit user confirmation.
@@ -236,74 +206,14 @@ Errors: 0
 - Never store API keys or credentials in job metadata.
 - Record only application status and user-approved notes.
 
-## P2 Metanomaly - Frontend Design Engineer
+## P0 MICRON SEMICONDUCTOR ASIA OPERATIONS PTE. LTD. - Principal/Staff ML/AI Engineer, Product Engineering, STPG
 
-- Score: 67
-- Grade: C
-- Research evidence: 0
-- Keywords: React, Figma, design system, engineer, product, data
-- Compensation leverage: low
-- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
-
-### Apply Agent Guardrails
-- Never submit without explicit user confirmation.
-- Never fabricate work authorization, salary history, degree, or experience.
-- Never store API keys or credentials in job metadata.
-- Record only application status and user-approved notes.
-
-## P2 Money Forward - Backend Engineer, Digital Bank
-
-- Score: 67
-- Grade: C
-- Research evidence: 4
-- Keywords: API, engineer, product
-- Compensation leverage: medium
-- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
-
-### Apply Agent Guardrails
-- Never submit without explicit user confirmation.
-- Never fabricate work authorization, salary history, degree, or experience.
-- Never store API keys or credentials in job metadata.
-- Record only application status and user-approved notes.
-
-## P2 Gogolook - US Market Intern (ScamAdviser)
-
-- Score: 63
-- Grade: C
-- Research evidence: 0
-- Keywords: Analytics, remote, product, data
-- Compensation leverage: low
-- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
-
-### Apply Agent Guardrails
-- Never submit without explicit user confirmation.
-- Never fabricate work authorization, salary history, degree, or experience.
-- Never store API keys or credentials in job metadata.
-- Record only application status and user-approved notes.
-
-## P2 NVIDIA Workday - Production Application Engineer, Enterprise
-
-- Score: 63
-- Grade: C
-- Research evidence: 0
-- Keywords: engineer, product
-- Compensation leverage: low
-- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
-
-### Apply Agent Guardrails
-- Never submit without explicit user confirmation.
-- Never fabricate work authorization, salary history, degree, or experience.
-- Never store API keys or credentials in job metadata.
-- Record only application status and user-approved notes.
-
-## P2 Intel Workday Taiwan - Intel Foundry Advanced Device Development Engineer
-
-- Score: 63
-- Grade: C
+- Score: 94
+- Grade: A
 - Research evidence: 0
 - Keywords: Analytics, engineer, product, data
-- Compensation leverage: low
-- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
+- Compensation leverage: high
+- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
 
 ### Apply Agent Guardrails
 - Never submit without explicit user confirmation.
@@ -311,14 +221,14 @@ Errors: 0
 - Never store API keys or credentials in job metadata.
 - Record only application status and user-approved notes.
 
-## P2 Shizuku AI - MLOps Engineer
+## P0 GlossGenius - Staff Software Engineer, Frontend
 
-- Score: 63
-- Grade: C
+- Score: 94
+- Grade: A
 - Research evidence: 0
-- Keywords: remote, engineer, data
-- Compensation leverage: low
-- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
+- Keywords: JavaScript, TypeScript, React, CSS, Accessibility, API, Performance Optimization, Design Systems, design system, engineer
+- Compensation leverage: high
+- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
 
 ### Apply Agent Guardrails
 - Never submit without explicit user confirmation.
@@ -326,14 +236,149 @@ Errors: 0
 - Never store API keys or credentials in job metadata.
 - Record only application status and user-approved notes.
 
-## P2 MODE - Software Engineer (Engineering Foundation)
+## P0 GlossGenius - Staff Software Engineer, Frontend
 
-- Score: 63
-- Grade: C
+- Score: 94
+- Grade: A
 - Research evidence: 0
-- Keywords: engineer, product
+- Keywords: JavaScript, TypeScript, React, CSS, Accessibility, API, Performance Optimization, Design Systems, design system, engineer
+- Compensation leverage: high
+- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
+
+### Apply Agent Guardrails
+- Never submit without explicit user confirmation.
+- Never fabricate work authorization, salary history, degree, or experience.
+- Never store API keys or credentials in job metadata.
+- Record only application status and user-approved notes.
+
+## P0 GlossGenius - Staff Software Engineer, Frontend
+
+- Score: 94
+- Grade: A
+- Research evidence: 0
+- Keywords: JavaScript, TypeScript, React, CSS, Accessibility, API, Performance Optimization, Design Systems, design system, engineer
+- Compensation leverage: high
+- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
+
+### Apply Agent Guardrails
+- Never submit without explicit user confirmation.
+- Never fabricate work authorization, salary history, degree, or experience.
+- Never store API keys or credentials in job metadata.
+- Record only application status and user-approved notes.
+
+## P0 Equinix, Inc - Senior Director, Equinix Fabric Product Management
+
+- Score: 94
+- Grade: A
+- Research evidence: 0
+- Keywords: Analytics, API, remote, product, data
+- Compensation leverage: high
+- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
+
+### Apply Agent Guardrails
+- Never submit without explicit user confirmation.
+- Never fabricate work authorization, salary history, degree, or experience.
+- Never store API keys or credentials in job metadata.
+- Record only application status and user-approved notes.
+
+## P0 Treasure Data - Senior Software Engineer - Ruby on Rails
+
+- Score: 94
+- Grade: A
+- Research evidence: 0
+- Keywords: TypeScript, React, API, Performance Optimization, engineer, product, data
+- Compensation leverage: high
+- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
+
+### Apply Agent Guardrails
+- Never submit without explicit user confirmation.
+- Never fabricate work authorization, salary history, degree, or experience.
+- Never store API keys or credentials in job metadata.
+- Record only application status and user-approved notes.
+
+## P0 Databricks Greenhouse - Director,Technical Solutions (Big Data/ AI)
+
+- Score: 94
+- Grade: A
+- Research evidence: 0
+- Keywords: Analytics, Performance Optimization, product, data
+- Compensation leverage: high
+- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
+
+### Apply Agent Guardrails
+- Never submit without explicit user confirmation.
+- Never fabricate work authorization, salary history, degree, or experience.
+- Never store API keys or credentials in job metadata.
+- Record only application status and user-approved notes.
+
+## P0 Uber - Data Engineer II
+
+- Score: 93
+- Grade: A
+- Research evidence: 1
+- Keywords: Analytics, API, Performance Optimization, engineer, product, data
+- Compensation leverage: high
+- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
+
+### Apply Agent Guardrails
+- Never submit without explicit user confirmation.
+- Never fabricate work authorization, salary history, degree, or experience.
+- Never store API keys or credentials in job metadata.
+- Record only application status and user-approved notes.
+
+## P0 Uber - Data Engineer 2
+
+- Score: 93
+- Grade: A
+- Research evidence: 1
+- Keywords: Analytics, API, Performance Optimization, engineer, product, data
+- Compensation leverage: high
+- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
+
+### Apply Agent Guardrails
+- Never submit without explicit user confirmation.
+- Never fabricate work authorization, salary history, degree, or experience.
+- Never store API keys or credentials in job metadata.
+- Record only application status and user-approved notes.
+
+## P0 Uber - Data Engineer II
+
+- Score: 93
+- Grade: A
+- Research evidence: 1
+- Keywords: Analytics, API, Performance Optimization, engineer, product, data
+- Compensation leverage: high
+- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
+
+### Apply Agent Guardrails
+- Never submit without explicit user confirmation.
+- Never fabricate work authorization, salary history, degree, or experience.
+- Never store API keys or credentials in job metadata.
+- Record only application status and user-approved notes.
+
+## P0 Uber - Data Engineer 2
+
+- Score: 93
+- Grade: A
+- Research evidence: 1
+- Keywords: Analytics, API, Performance Optimization, engineer, product, data
+- Compensation leverage: high
+- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
+
+### Apply Agent Guardrails
+- Never submit without explicit user confirmation.
+- Never fabricate work authorization, salary history, degree, or experience.
+- Never store API keys or credentials in job metadata.
+- Record only application status and user-approved notes.
+
+## P0 Pilotly - Product Engineer II
+
+- Score: 93
+- Grade: A
+- Research evidence: 0
+- Keywords: JavaScript, React, CSS, API, remote, dashboard, engineer, product, data
 - Compensation leverage: -
-- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
+- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
 
 ### Apply Agent Guardrails
 - Never submit without explicit user confirmation.
@@ -341,29 +386,14 @@ Errors: 0
 - Never store API keys or credentials in job metadata.
 - Record only application status and user-approved notes.
 
-## P2 Intel Workday Taiwan - Network Systems and Solutions Engineer - Intern
+## P0 Capital One - Distinguished Engineer (Remote - Eligible)
 
-- Score: 62
-- Grade: C
+- Score: 93
+- Grade: A
 - Research evidence: 0
-- Keywords: engineer, product, data
-- Compensation leverage: low
-- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
-
-### Apply Agent Guardrails
-- Never submit without explicit user confirmation.
-- Never fabricate work authorization, salary history, degree, or experience.
-- Never store API keys or credentials in job metadata.
-- Record only application status and user-approved notes.
-
-## P2 Logitech Workday Taiwan - Imaging Engineer Technical Manager - Webcam
-
-- Score: 62
-- Grade: C
-- Research evidence: 0
-- Keywords: engineer, product, data
+- Keywords: JavaScript, TypeScript, API, remote, engineer, product, data
 - Compensation leverage: -
-- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
+- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
 
 ### Apply Agent Guardrails
 - Never submit without explicit user confirmation.
@@ -371,44 +401,14 @@ Errors: 0
 - Never store API keys or credentials in job metadata.
 - Record only application status and user-approved notes.
 
-## P2 Shizuku AI - ML Engineer
+## P0 Stripe Greenhouse - Android Engineer, Terminal Developer Productivity
 
-- Score: 62
-- Grade: C
+- Score: 93
+- Grade: A
 - Research evidence: 0
-- Keywords: remote, engineer, data
-- Compensation leverage: low
-- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
-
-### Apply Agent Guardrails
-- Never submit without explicit user confirmation.
-- Never fabricate work authorization, salary history, degree, or experience.
-- Never store API keys or credentials in job metadata.
-- Record only application status and user-approved notes.
-
-## P2 Money Forward - Data Engineer, Data AI Platform Division, Tokyo
-
-- Score: 62
-- Grade: C
-- Research evidence: 4
-- Keywords: Analytics, engineer, product, data
-- Compensation leverage: medium
-- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
-
-### Apply Agent Guardrails
-- Never submit without explicit user confirmation.
-- Never fabricate work authorization, salary history, degree, or experience.
-- Never store API keys or credentials in job metadata.
-- Record only application status and user-approved notes.
-
-## P2 PayPay - Automation QA Engineer
-
-- Score: 62
-- Grade: C
-- Research evidence: 0
-- Keywords: API, engineer, product, data
+- Keywords: API, remote, engineer, product
 - Compensation leverage: -
-- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
+- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
 
 ### Apply Agent Guardrails
 - Never submit without explicit user confirmation.
@@ -416,44 +416,14 @@ Errors: 0
 - Never store API keys or credentials in job metadata.
 - Record only application status and user-approved notes.
 
-## P2 NVIDIA Workday - Senior Packaging Development Engineer
+## P0 Stripe Greenhouse - Frontend Platform Engineer, JavaScript Infrastructure
 
-- Score: 61
-- Grade: C
+- Score: 93
+- Grade: A
 - Research evidence: 0
-- Keywords: engineer, product, data
-- Compensation leverage: low
-- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
-
-### Apply Agent Guardrails
-- Never submit without explicit user confirmation.
-- Never fabricate work authorization, salary history, degree, or experience.
-- Never store API keys or credentials in job metadata.
-- Record only application status and user-approved notes.
-
-## P2 NVIDIA Workday - Senior High Speed SerDes Validation Engineer
-
-- Score: 61
-- Grade: C
-- Research evidence: 0
-- Keywords: engineer, product
-- Compensation leverage: low
-- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
-
-### Apply Agent Guardrails
-- Never submit without explicit user confirmation.
-- Never fabricate work authorization, salary history, degree, or experience.
-- Never store API keys or credentials in job metadata.
-- Record only application status and user-approved notes.
-
-## P2 Applied Materials Workday - Technical Support Engineer - Etch
-
-- Score: 61
-- Grade: C
-- Research evidence: 0
-- Keywords: engineer, product, data
+- Keywords: JavaScript, TypeScript, React, remote, engineer, product
 - Compensation leverage: -
-- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
+- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
 
 ### Apply Agent Guardrails
 - Never submit without explicit user confirmation.
@@ -461,59 +431,14 @@ Errors: 0
 - Never store API keys or credentials in job metadata.
 - Record only application status and user-approved notes.
 
-## P2 Intel Workday Taiwan - Platform Debug Engineer- Intern
+## P0 Figma Greenhouse - Software Engineer, AI Product (London, United Kingdom)
 
-- Score: 61
-- Grade: C
+- Score: 93
+- Grade: A
 - Research evidence: 0
-- Keywords: engineer, product, data
-- Compensation leverage: low
-- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
-
-### Apply Agent Guardrails
-- Never submit without explicit user confirmation.
-- Never fabricate work authorization, salary history, degree, or experience.
-- Never store API keys or credentials in job metadata.
-- Record only application status and user-approved notes.
-
-## P2 Intel Workday Taiwan - Customer Yield Engineer – Foundry Engineering (Taiwan)
-
-- Score: 60
-- Grade: C
-- Research evidence: 0
-- Keywords: engineer, data, visualization
-- Compensation leverage: low
-- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
-
-### Apply Agent Guardrails
-- Never submit without explicit user confirmation.
-- Never fabricate work authorization, salary history, degree, or experience.
-- Never store API keys or credentials in job metadata.
-- Record only application status and user-approved notes.
-
-## P2 Intel Workday Taiwan - Network Systems and Solutions Engineer
-
-- Score: 60
-- Grade: C
-- Research evidence: 0
-- Keywords: engineer, product, data
-- Compensation leverage: low
-- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
-
-### Apply Agent Guardrails
-- Never submit without explicit user confirmation.
-- Never fabricate work authorization, salary history, degree, or experience.
-- Never store API keys or credentials in job metadata.
-- Record only application status and user-approved notes.
-
-## P2 Logitech Workday Taiwan - Sr. Mechancial Design Engineer
-
-- Score: 60
-- Grade: C
-- Research evidence: 0
-- Keywords: engineer, product, data
+- Keywords: TypeScript, React, Figma, engineer, product, data
 - Compensation leverage: -
-- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
+- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
 
 ### Apply Agent Guardrails
 - Never submit without explicit user confirmation.
@@ -521,14 +446,14 @@ Errors: 0
 - Never store API keys or credentials in job metadata.
 - Record only application status and user-approved notes.
 
-## P2 Logitech Workday Taiwan - Lead Test Development Engineer
+## P0 Airbnb Greenhouse - Senior Software Engineer, Quality Platform
 
-- Score: 60
-- Grade: C
+- Score: 93
+- Grade: A
 - Research evidence: 0
-- Keywords: engineer, product, data
+- Keywords: TypeScript, Design Systems, design system, engineer, product, data
 - Compensation leverage: -
-- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
+- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
 
 ### Apply Agent Guardrails
 - Never submit without explicit user confirmation.
@@ -536,44 +461,14 @@ Errors: 0
 - Never store API keys or credentials in job metadata.
 - Record only application status and user-approved notes.
 
-## P2 Money Forward - AI Engineer, ERP Cross-Functional Engineering Department, Tokyo
+## P0 Airbnb Greenhouse - Senior Web Automation Engineer, Quality Platform
 
-- Score: 60
-- Grade: C
-- Research evidence: 4
-- Keywords: API, engineer, product
-- Compensation leverage: medium
-- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
-
-### Apply Agent Guardrails
-- Never submit without explicit user confirmation.
-- Never fabricate work authorization, salary history, degree, or experience.
-- Never store API keys or credentials in job metadata.
-- Record only application status and user-approved notes.
-
-## P2 Money Forward - Security Specialist (Product Security), CISO Office, Tokyo
-
-- Score: 60
-- Grade: C
-- Research evidence: 4
-- Keywords: product, data, visualization
-- Compensation leverage: medium
-- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
-
-### Apply Agent Guardrails
-- Never submit without explicit user confirmation.
-- Never fabricate work authorization, salary history, degree, or experience.
-- Never store API keys or credentials in job metadata.
-- Record only application status and user-approved notes.
-
-## P2 PayPay - Cloud Platform Engineer (DB Specialist)
-
-- Score: 60
-- Grade: C
+- Score: 93
+- Grade: A
 - Research evidence: 0
-- Keywords: remote, engineer, data
+- Keywords: JavaScript, TypeScript, engineer, product
 - Compensation leverage: -
-- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
+- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
 
 ### Apply Agent Guardrails
 - Never submit without explicit user confirmation.
@@ -581,29 +476,14 @@ Errors: 0
 - Never store API keys or credentials in job metadata.
 - Record only application status and user-approved notes.
 
-## P2 Gogolook - Design Assistant 設計助理 (Roo)
+## P0 MongoDB Greenhouse - Senior Software Engineer, Observability
 
-- Score: 59
-- Grade: C
+- Score: 93
+- Grade: A
 - Research evidence: 0
-- Keywords: Figma, data
-- Compensation leverage: low
-- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
-
-### Apply Agent Guardrails
-- Never submit without explicit user confirmation.
-- Never fabricate work authorization, salary history, degree, or experience.
-- Never store API keys or credentials in job metadata.
-- Record only application status and user-approved notes.
-
-## P2 Applied Materials Workday - Technical Product Support (TPS) Engineer II - (SCoE) (E2)
-
-- Score: 59
-- Grade: C
-- Research evidence: 0
-- Keywords: engineer, product, data
+- Keywords: TypeScript, React, engineer, product, data, node.js
 - Compensation leverage: -
-- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
+- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
 
 ### Apply Agent Guardrails
 - Never submit without explicit user confirmation.
@@ -611,14 +491,14 @@ Errors: 0
 - Never store API keys or credentials in job metadata.
 - Record only application status and user-approved notes.
 
-## P2 Applied Materials Workday - Technical Product Support (TPS) Engineer III (E3) - MDP
+## P0 LAI GAMES PTE. LTD. - Fullstack Software Engineer Intern
 
-- Score: 59
-- Grade: C
+- Score: 92
+- Grade: A
 - Research evidence: 0
-- Keywords: engineer, product, data
+- Keywords: JavaScript, React, API, remote, engineer, product, data
 - Compensation leverage: -
-- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
+- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
 
 ### Apply Agent Guardrails
 - Never submit without explicit user confirmation.
@@ -626,14 +506,14 @@ Errors: 0
 - Never store API keys or credentials in job metadata.
 - Record only application status and user-approved notes.
 
-## P2 Applied Materials Workday - Technical Product Support (TPS) Engineer III - (E3)
+## P0 Capgemini Singapore  PTE. LTD. - Senior Frontend Engineer
 
-- Score: 59
-- Grade: C
+- Score: 92
+- Grade: A
 - Research evidence: 0
-- Keywords: engineer, product, data
+- Keywords: JavaScript, TypeScript, React, CSS, Accessibility, Performance Optimization, Design Systems, design system, engineer, product
 - Compensation leverage: -
-- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
+- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
 
 ### Apply Agent Guardrails
 - Never submit without explicit user confirmation.
@@ -641,14 +521,14 @@ Errors: 0
 - Never store API keys or credentials in job metadata.
 - Record only application status and user-approved notes.
 
-## P2 Logitech Workday Taiwan - Lead Imaging Embedded Software Engineer  (Contractor)
+## P0 NEUTRON PTE. LTD. - Frontend Engineer (Web & Mobile)
 
-- Score: 59
-- Grade: C
+- Score: 92
+- Grade: A
 - Research evidence: 0
-- Keywords: API, engineer, product
+- Keywords: JavaScript, TypeScript, React, Performance Optimization, engineer, product, data, restful, graphql
 - Compensation leverage: -
-- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
+- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
 
 ### Apply Agent Guardrails
 - Never submit without explicit user confirmation.
@@ -656,14 +536,14 @@ Errors: 0
 - Never store API keys or credentials in job metadata.
 - Record only application status and user-approved notes.
 
-## P2 Logitech Workday Taiwan - Lead Mechanical Engineer
+## P0 Exadel - Senior Full-Stack Software Engineer (Python/Node.js, React)
 
-- Score: 59
-- Grade: C
+- Score: 92
+- Grade: A
 - Research evidence: 0
-- Keywords: engineer, product, data
+- Keywords: React, Next.js, API, remote, engineer, product, data, node.js
 - Compensation leverage: -
-- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
+- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
 
 ### Apply Agent Guardrails
 - Never submit without explicit user confirmation.
@@ -671,14 +551,29 @@ Errors: 0
 - Never store API keys or credentials in job metadata.
 - Record only application status and user-approved notes.
 
-## P2 Logitech Workday Taiwan - Lead Material Engineer
+## P0 Uber - Sr Staff Engineer - Web Platform
 
-- Score: 59
-- Grade: C
+- Score: 92
+- Grade: A
+- Research evidence: 1
+- Keywords: TypeScript, React, Next.js, API, engineer, product, data, graphql
+- Compensation leverage: high
+- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
+
+### Apply Agent Guardrails
+- Never submit without explicit user confirmation.
+- Never fabricate work authorization, salary history, degree, or experience.
+- Never store API keys or credentials in job metadata.
+- Record only application status and user-approved notes.
+
+## P0 Exadel - Senior Full-Stack Software Engineer (Node.js, React)
+
+- Score: 92
+- Grade: A
 - Research evidence: 0
-- Keywords: engineer, product, data
+- Keywords: React, Next.js, API, remote, engineer, product, data, node.js
 - Compensation leverage: -
-- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
+- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
 
 ### Apply Agent Guardrails
 - Never submit without explicit user confirmation.
@@ -686,14 +581,44 @@ Errors: 0
 - Never store API keys or credentials in job metadata.
 - Record only application status and user-approved notes.
 
-## P2 Logitech Workday Taiwan - Senior Signal Integration Engineer
+## P0 Uber - Engineering Manager II
 
-- Score: 59
-- Grade: C
+- Score: 92
+- Grade: A
+- Research evidence: 1
+- Keywords: API, product, data
+- Compensation leverage: high
+- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
+
+### Apply Agent Guardrails
+- Never submit without explicit user confirmation.
+- Never fabricate work authorization, salary history, degree, or experience.
+- Never store API keys or credentials in job metadata.
+- Record only application status and user-approved notes.
+
+## P0 Uber - Senior Rider Web Software Engineer
+
+- Score: 92
+- Grade: A
+- Research evidence: 1
+- Keywords: JavaScript, TypeScript, React, Next.js, CSS, API, engineer, product, data, graphql
+- Compensation leverage: high
+- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
+
+### Apply Agent Guardrails
+- Never submit without explicit user confirmation.
+- Never fabricate work authorization, salary history, degree, or experience.
+- Never store API keys or credentials in job metadata.
+- Record only application status and user-approved notes.
+
+## P0 Rent the Runway - Software Engineer III - Full Stack
+
+- Score: 92
+- Grade: A
 - Research evidence: 0
-- Keywords: engineer, product, data
+- Keywords: JavaScript, API, engineer, product
 - Compensation leverage: -
-- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
+- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
 
 ### Apply Agent Guardrails
 - Never submit without explicit user confirmation.
@@ -701,14 +626,14 @@ Errors: 0
 - Never store API keys or credentials in job metadata.
 - Record only application status and user-approved notes.
 
-## P2 Gogolook - AI Product Intern (B2C & User Growth) - ScamAdviser
+## P0 Flexport - Engineering Manager, Autonomous Freight Systems
 
-- Score: 58
-- Grade: C
+- Score: 92
+- Grade: A
 - Research evidence: 0
-- Keywords: product, data
-- Compensation leverage: low
-- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
+- Keywords: React, API, product, data
+- Compensation leverage: -
+- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
 
 ### Apply Agent Guardrails
 - Never submit without explicit user confirmation.
@@ -716,14 +641,14 @@ Errors: 0
 - Never store API keys or credentials in job metadata.
 - Record only application status and user-approved notes.
 
-## P2 Micron Workday - MATERIAL ENGINEER, ADVANCED PACKAGING TECHNOLOGY DEVELOPMENT
+## P0 Bank of America - Software Engineer III - GBS IND
 
-- Score: 58
-- Grade: C
-- Research evidence: 7
-- Keywords: engineer, product, data
-- Compensation leverage: medium
-- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
+- Score: 92
+- Grade: A
+- Research evidence: 1
+- Keywords: Accessibility, API, engineer, product, data
+- Compensation leverage: high
+- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
 
 ### Apply Agent Guardrails
 - Never submit without explicit user confirmation.
@@ -731,14 +656,14 @@ Errors: 0
 - Never store API keys or credentials in job metadata.
 - Record only application status and user-approved notes.
 
-## P3 Gogolook - Content Marketing Intern 內容行銷實習生 (Roo)
+## P0 Genmab - Senior Data Product Engineer, Commercial
 
-- Score: 57
-- Grade: D
+- Score: 92
+- Grade: A
 - Research evidence: 0
-- Keywords: Analytics, data
-- Compensation leverage: low
-- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
+- Keywords: Analytics, API, engineer, product, dashboards., data, dashboards
+- Compensation leverage: -
+- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
 
 ### Apply Agent Guardrails
 - Never submit without explicit user confirmation.
@@ -746,14 +671,74 @@ Errors: 0
 - Never store API keys or credentials in job metadata.
 - Record only application status and user-approved notes.
 
-## P3 Gogolook - Visual Design Intern 品牌視覺設計實習生
+## P0 Experian - Full Stack Staff Engineer - GraphQL
 
-- Score: 57
-- Grade: D
+- Score: 92
+- Grade: A
 - Research evidence: 0
-- Keywords: Figma, data
-- Compensation leverage: low
-- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
+- Keywords: TypeScript, React, API, remote, engineer, data, graphql, node.js
+- Compensation leverage: -
+- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
+
+### Apply Agent Guardrails
+- Never submit without explicit user confirmation.
+- Never fabricate work authorization, salary history, degree, or experience.
+- Never store API keys or credentials in job metadata.
+- Record only application status and user-approved notes.
+
+## P0 Allstate - Lead AI Cloud Platform Engineer
+
+- Score: 92
+- Grade: A
+- Research evidence: 0
+- Keywords: Analytics, API, remote, engineer, product, data
+- Compensation leverage: -
+- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
+
+### Apply Agent Guardrails
+- Never submit without explicit user confirmation.
+- Never fabricate work authorization, salary history, degree, or experience.
+- Never store API keys or credentials in job metadata.
+- Record only application status and user-approved notes.
+
+## P0 Equinix, Inc - Staff Software Engineer
+
+- Score: 92
+- Grade: A
+- Research evidence: 0
+- Keywords: TypeScript, React, API, remote, engineer, product, data
+- Compensation leverage: high
+- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
+
+### Apply Agent Guardrails
+- Never submit without explicit user confirmation.
+- Never fabricate work authorization, salary history, degree, or experience.
+- Never store API keys or credentials in job metadata.
+- Record only application status and user-approved notes.
+
+## P0 Zillow - Senior Engineering Manager
+
+- Score: 92
+- Grade: A
+- Research evidence: 0
+- Keywords: Analytics, API, remote, product, data
+- Compensation leverage: -
+- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
+
+### Apply Agent Guardrails
+- Never submit without explicit user confirmation.
+- Never fabricate work authorization, salary history, degree, or experience.
+- Never store API keys or credentials in job metadata.
+- Record only application status and user-approved notes.
+
+## P0 Esri - Sr. Product Engineer - Web Services
+
+- Score: 92
+- Grade: A
+- Research evidence: 0
+- Keywords: JavaScript, TypeScript, API, remote, engineer, product, data, restful
+- Compensation leverage: -
+- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
 
 ### Apply Agent Guardrails
 - Never submit without explicit user confirmation.

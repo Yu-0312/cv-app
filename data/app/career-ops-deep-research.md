@@ -1,27 +1,26 @@
 # Career Ops Deep Research
 
-Generated: 2026-05-17T23:21:26.450Z
+Generated: 2026-05-20T00:58:21.858Z
 Search provider: none
-Queries: 12
-Evidence items: 9
+Queries: 13
+Evidence items: 7
 Dossiers: 8
 
-## Geniee - JAPAN AI - Product Manager, AI SaaS
+## VANGUARD SOFTWARE PTE. LTD. - Expert Frontend Engineer (React.JS & React Native)
 
-- Score: 77
+- Score: 95
 - Recommendation: 值得投遞
-- Signals: AI / data / platform signal, growth or funding signal, remote or hybrid signal
+- Signals: No strong signal detected
 
 ### Evidence
-- source-page: https://japan-dev.com/jobs/geniee/geniee-japan-ai---product-manager-ai-saas-w0yniw — JAPAN AI - Product Manager, AI SaaS at Geniee in Japan | Japan Dev NEWSLETTER Sign Up Dashboard ☰ Search Jobs Company List Blog Found a Job? 🎊 For Employers 日本語 Sign Up My Profile
-- source-page: https://japan-dev.com/jobs/ai-robot-association/ai-robot-association-airoa-full-stack-engineer-sliy8x — Full Stack Engineer at AI Robot Association (AIRoA) in Japan | Japan Dev NEWSLETTER Sign Up Dashboard ☰ Search Jobs Company List Blog Found a Job? 🎊 For Employers 日本語 Sign Up My P
-- source-page: https://japan-dev.com/jobs/geniee/geniee-japan-airesearch-engineer-llm-d2exun — JAPAN AI - Research Engineer, LLM at Geniee in Japan | Japan Dev NEWSLETTER Sign Up Dashboard ☰ Search Jobs Company List Blog Found a Job? 🎊 For Employers 日本語 Sign Up My Profile L
-- source-page: https://japan-dev.com/jobs/ai-robot-association/ai-robot-association-airoa-design-engineer-l4xpri — Design Engineer at AI Robot Association (AIRoA) in Japan | Japan Dev NEWSLETTER Sign Up Dashboard ☰ Search Jobs Company List Blog Found a Job? 🎊 For Employers 日本語 Sign Up My Profi
-- source-page: https://japan-dev.com/jobs/money-forward/money-forward-product-reliability-engineer-cre-money-forward-cloud-fukuoka-kgsbzs — Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka at Money Forward in Japan | Japan Dev NEWSLETTER Sign Up Dashboard ☰ Search Jobs Company List Blog Found a Job? 🎊 
-- source-page: https://www.tokyodev.com/companies/moneyforward/jobs/product-reliability-engineer-cre-money-forward-cloud-fukuoka — Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka - Money Forward | TokyoDev Jobs Companies Articles Community ••• Companies Articles Get the newsletter Community Po
+- source-page: https://www.mycareersfuture.gov.sg/job/07eafbe6994e2090a0c2a6a6a6111e62 — MyCareersFuture Singapore
+- source-page: https://www.mycareersfuture.gov.sg/job/ddc648c00fcb0cb0d717f2878ba8bc29 — MyCareersFuture Singapore
+- source-page: https://www.mycareersfuture.gov.sg/job/820f670accd3b1a25b791a4f3507dcf4 — MyCareersFuture Singapore
+- source-page: https://www.mycareersfuture.gov.sg/job/8d78864dfd9812b42055dfb7ddd5058e — MyCareersFuture Singapore
+- source-page: https://www.mycareersfuture.gov.sg/job/d90a32999a849424269dfae3f20b3460 — MyCareersFuture Singapore
 
 ### Research Questions
-- What business unit owns the JAPAN AI - Product Manager, AI SaaS role?
+- What business unit owns the Expert Frontend Engineer (React.JS & React Native) role?
 - What measurable outcomes would this team expect in the first 90 days?
 - What recent company/product signals change the risk or upside?
 - Which CV proof points should be highlighted for this company?
@@ -31,22 +30,17 @@ Dossiers: 8
 - Ask how the company evaluates impact across the first two quarters.
 - Prepare one story that maps directly to the highest-scoring ATS keywords.
 
-## AI Robot Association (AIRoA) - Full Stack Engineer
+## BIFROST PTE. LTD. - Frontend Engineer
 
-- Score: 76
+- Score: 95
 - Recommendation: 值得投遞
-- Signals: AI / data / platform signal, growth or funding signal, remote or hybrid signal
+- Signals: AI / data / platform signal, remote or hybrid signal
 
 ### Evidence
-- source-page: https://japan-dev.com/jobs/geniee/geniee-japan-ai---product-manager-ai-saas-w0yniw — JAPAN AI - Product Manager, AI SaaS at Geniee in Japan | Japan Dev NEWSLETTER Sign Up Dashboard ☰ Search Jobs Company List Blog Found a Job? 🎊 For Employers 日本語 Sign Up My Profile
-- source-page: https://japan-dev.com/jobs/ai-robot-association/ai-robot-association-airoa-full-stack-engineer-sliy8x — Full Stack Engineer at AI Robot Association (AIRoA) in Japan | Japan Dev NEWSLETTER Sign Up Dashboard ☰ Search Jobs Company List Blog Found a Job? 🎊 For Employers 日本語 Sign Up My P
-- source-page: https://japan-dev.com/jobs/geniee/geniee-japan-airesearch-engineer-llm-d2exun — JAPAN AI - Research Engineer, LLM at Geniee in Japan | Japan Dev NEWSLETTER Sign Up Dashboard ☰ Search Jobs Company List Blog Found a Job? 🎊 For Employers 日本語 Sign Up My Profile L
-- source-page: https://japan-dev.com/jobs/ai-robot-association/ai-robot-association-airoa-design-engineer-l4xpri — Design Engineer at AI Robot Association (AIRoA) in Japan | Japan Dev NEWSLETTER Sign Up Dashboard ☰ Search Jobs Company List Blog Found a Job? 🎊 For Employers 日本語 Sign Up My Profi
-- source-page: https://micron.wd1.myworkdayjobs.com/External/job/Taichung---AATT-Taiwan/Senior-Full-Stack-Software-Engineer_JR101324
-- source-page: https://japan-dev.com/jobs/money-forward/money-forward-product-reliability-engineer-cre-money-forward-cloud-fukuoka-kgsbzs — Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka at Money Forward in Japan | Japan Dev NEWSLETTER Sign Up Dashboard ☰ Search Jobs Company List Blog Found a Job? 🎊 
+- source-page: https://www.themuse.com/jobs/uber/sr-software-engineer-frontend-web-8fc2b7 — Sr Software Engineer, Frontend (Web) at Uber | The Muse | The Muse Skip to main content The Muse Logo A logo with &amp;quat;the muse&amp;quat; in dark blue text. Newsletter Jobs Ac
 
 ### Research Questions
-- What business unit owns the Full Stack Engineer role?
+- What business unit owns the Frontend Engineer role?
 - What measurable outcomes would this team expect in the first 90 days?
 - What recent company/product signals change the risk or upside?
 - Which CV proof points should be highlighted for this company?
@@ -56,22 +50,17 @@ Dossiers: 8
 - Ask how the company evaluates impact across the first two quarters.
 - Prepare one story that maps directly to the highest-scoring ATS keywords.
 
-## Geniee - JAPAN AI - Research Engineer, LLM
+## BIFROST PTE. LTD. - Frontend Engineer
 
-- Score: 76
+- Score: 95
 - Recommendation: 值得投遞
-- Signals: AI / data / platform signal, growth or funding signal, remote or hybrid signal
+- Signals: AI / data / platform signal, remote or hybrid signal
 
 ### Evidence
-- source-page: https://japan-dev.com/jobs/geniee/geniee-japan-ai---product-manager-ai-saas-w0yniw — JAPAN AI - Product Manager, AI SaaS at Geniee in Japan | Japan Dev NEWSLETTER Sign Up Dashboard ☰ Search Jobs Company List Blog Found a Job? 🎊 For Employers 日本語 Sign Up My Profile
-- source-page: https://japan-dev.com/jobs/ai-robot-association/ai-robot-association-airoa-full-stack-engineer-sliy8x — Full Stack Engineer at AI Robot Association (AIRoA) in Japan | Japan Dev NEWSLETTER Sign Up Dashboard ☰ Search Jobs Company List Blog Found a Job? 🎊 For Employers 日本語 Sign Up My P
-- source-page: https://japan-dev.com/jobs/geniee/geniee-japan-airesearch-engineer-llm-d2exun — JAPAN AI - Research Engineer, LLM at Geniee in Japan | Japan Dev NEWSLETTER Sign Up Dashboard ☰ Search Jobs Company List Blog Found a Job? 🎊 For Employers 日本語 Sign Up My Profile L
-- source-page: https://japan-dev.com/jobs/ai-robot-association/ai-robot-association-airoa-design-engineer-l4xpri — Design Engineer at AI Robot Association (AIRoA) in Japan | Japan Dev NEWSLETTER Sign Up Dashboard ☰ Search Jobs Company List Blog Found a Job? 🎊 For Employers 日本語 Sign Up My Profi
-- source-page: https://japan-dev.com/jobs/money-forward/money-forward-product-reliability-engineer-cre-money-forward-cloud-fukuoka-kgsbzs — Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka at Money Forward in Japan | Japan Dev NEWSLETTER Sign Up Dashboard ☰ Search Jobs Company List Blog Found a Job? 🎊 
-- source-page: https://www.tokyodev.com/companies/moneyforward/jobs/product-reliability-engineer-cre-money-forward-cloud-fukuoka — Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka - Money Forward | TokyoDev Jobs Companies Articles Community ••• Companies Articles Get the newsletter Community Po
+- source-page: https://www.themuse.com/jobs/uber/sr-software-engineer-frontend-web-8fc2b7 — Sr Software Engineer, Frontend (Web) at Uber | The Muse | The Muse Skip to main content The Muse Logo A logo with &amp;quat;the muse&amp;quat; in dark blue text. Newsletter Jobs Ac
 
 ### Research Questions
-- What business unit owns the JAPAN AI - Research Engineer, LLM role?
+- What business unit owns the Frontend Engineer role?
 - What measurable outcomes would this team expect in the first 90 days?
 - What recent company/product signals change the risk or upside?
 - Which CV proof points should be highlighted for this company?
@@ -81,22 +70,17 @@ Dossiers: 8
 - Ask how the company evaluates impact across the first two quarters.
 - Prepare one story that maps directly to the highest-scoring ATS keywords.
 
-## AI Robot Association (AIRoA) - Design Engineer
+## TIKTOK PTE. LTD. - Frontend Software Engineer (Payment), TikTok Live - Singapore
 
-- Score: 75
+- Score: 95
 - Recommendation: 值得投遞
-- Signals: AI / data / platform signal, growth or funding signal, remote or hybrid signal
+- Signals: AI / data / platform signal, remote or hybrid signal
 
 ### Evidence
-- source-page: https://japan-dev.com/jobs/geniee/geniee-japan-ai---product-manager-ai-saas-w0yniw — JAPAN AI - Product Manager, AI SaaS at Geniee in Japan | Japan Dev NEWSLETTER Sign Up Dashboard ☰ Search Jobs Company List Blog Found a Job? 🎊 For Employers 日本語 Sign Up My Profile
-- source-page: https://japan-dev.com/jobs/ai-robot-association/ai-robot-association-airoa-full-stack-engineer-sliy8x — Full Stack Engineer at AI Robot Association (AIRoA) in Japan | Japan Dev NEWSLETTER Sign Up Dashboard ☰ Search Jobs Company List Blog Found a Job? 🎊 For Employers 日本語 Sign Up My P
-- source-page: https://japan-dev.com/jobs/geniee/geniee-japan-airesearch-engineer-llm-d2exun — JAPAN AI - Research Engineer, LLM at Geniee in Japan | Japan Dev NEWSLETTER Sign Up Dashboard ☰ Search Jobs Company List Blog Found a Job? 🎊 For Employers 日本語 Sign Up My Profile L
-- source-page: https://japan-dev.com/jobs/ai-robot-association/ai-robot-association-airoa-design-engineer-l4xpri — Design Engineer at AI Robot Association (AIRoA) in Japan | Japan Dev NEWSLETTER Sign Up Dashboard ☰ Search Jobs Company List Blog Found a Job? 🎊 For Employers 日本語 Sign Up My Profi
-- source-page: https://micron.wd1.myworkdayjobs.com/External/job/Taichung---AATT-Taiwan/Senior-Full-Stack-Software-Engineer_JR101324
-- source-page: https://japan-dev.com/jobs/money-forward/money-forward-product-reliability-engineer-cre-money-forward-cloud-fukuoka-kgsbzs — Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka at Money Forward in Japan | Japan Dev NEWSLETTER Sign Up Dashboard ☰ Search Jobs Company List Blog Found a Job? 🎊 
+- source-page: https://www.themuse.com/jobs/uber/sr-software-engineer-frontend-web-8fc2b7 — Sr Software Engineer, Frontend (Web) at Uber | The Muse | The Muse Skip to main content The Muse Logo A logo with &amp;quat;the muse&amp;quat; in dark blue text. Newsletter Jobs Ac
 
 ### Research Questions
-- What business unit owns the Design Engineer role?
+- What business unit owns the Frontend Software Engineer (Payment), TikTok Live - Singapore role?
 - What measurable outcomes would this team expect in the first 90 days?
 - What recent company/product signals change the risk or upside?
 - Which CV proof points should be highlighted for this company?
@@ -106,22 +90,17 @@ Dossiers: 8
 - Ask how the company evaluates impact across the first two quarters.
 - Prepare one story that maps directly to the highest-scoring ATS keywords.
 
-## Micron Workday - Senior Full Stack Software Engineer
+## TIKTOK PTE. LTD. - Frontend Software Engineer (Payment) - TikTok Live - Singapore
 
-- Score: 74
+- Score: 95
 - Recommendation: 值得投遞
-- Signals: AI / data / platform signal, growth or funding signal, remote or hybrid signal
+- Signals: AI / data / platform signal, remote or hybrid signal
 
 ### Evidence
-- source-page: https://japan-dev.com/jobs/geniee/geniee-japan-ai---product-manager-ai-saas-w0yniw — JAPAN AI - Product Manager, AI SaaS at Geniee in Japan | Japan Dev NEWSLETTER Sign Up Dashboard ☰ Search Jobs Company List Blog Found a Job? 🎊 For Employers 日本語 Sign Up My Profile
-- source-page: https://japan-dev.com/jobs/geniee/geniee-japan-airesearch-engineer-llm-d2exun — JAPAN AI - Research Engineer, LLM at Geniee in Japan | Japan Dev NEWSLETTER Sign Up Dashboard ☰ Search Jobs Company List Blog Found a Job? 🎊 For Employers 日本語 Sign Up My Profile L
-- source-page: https://micron.wd1.myworkdayjobs.com/External/job/Taichung---AATT-Taiwan/Senior-Full-Stack-Software-Engineer_JR101324
-- source-page: https://micron.wd1.myworkdayjobs.com/External
-- source-page: https://japan-dev.com/jobs/money-forward/money-forward-product-reliability-engineer-cre-money-forward-cloud-fukuoka-kgsbzs — Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka at Money Forward in Japan | Japan Dev NEWSLETTER Sign Up Dashboard ☰ Search Jobs Company List Blog Found a Job? 🎊 
-- source-page: https://www.tokyodev.com/companies/moneyforward/jobs/product-reliability-engineer-cre-money-forward-cloud-fukuoka — Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka - Money Forward | TokyoDev Jobs Companies Articles Community ••• Companies Articles Get the newsletter Community Po
+- source-page: https://www.themuse.com/jobs/uber/sr-software-engineer-frontend-web-8fc2b7 — Sr Software Engineer, Frontend (Web) at Uber | The Muse | The Muse Skip to main content The Muse Logo A logo with &amp;quat;the muse&amp;quat; in dark blue text. Newsletter Jobs Ac
 
 ### Research Questions
-- What business unit owns the Senior Full Stack Software Engineer role?
+- What business unit owns the Frontend Software Engineer (Payment) - TikTok Live - Singapore role?
 - What measurable outcomes would this team expect in the first 90 days?
 - What recent company/product signals change the risk or upside?
 - Which CV proof points should be highlighted for this company?
@@ -131,20 +110,17 @@ Dossiers: 8
 - Ask how the company evaluates impact across the first two quarters.
 - Prepare one story that maps directly to the highest-scoring ATS keywords.
 
-## Money Forward - Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka
+## Disney - Lead Software Engineer
 
-- Score: 73
+- Score: 95
 - Recommendation: 值得投遞
-- Signals: AI / data / platform signal, growth or funding signal, remote or hybrid signal
+- Signals: AI / data / platform signal
 
 ### Evidence
-- source-page: https://japan-dev.com/jobs/geniee/geniee-japan-ai---product-manager-ai-saas-w0yniw — JAPAN AI - Product Manager, AI SaaS at Geniee in Japan | Japan Dev NEWSLETTER Sign Up Dashboard ☰ Search Jobs Company List Blog Found a Job? 🎊 For Employers 日本語 Sign Up My Profile
-- source-page: https://japan-dev.com/jobs/money-forward/money-forward-product-reliability-engineer-cre-money-forward-cloud-fukuoka-kgsbzs — Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka at Money Forward in Japan | Japan Dev NEWSLETTER Sign Up Dashboard ☰ Search Jobs Company List Blog Found a Job? 🎊 
-- source-page: https://www.tokyodev.com/companies/moneyforward/jobs/product-reliability-engineer-cre-money-forward-cloud-fukuoka — Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka - Money Forward | TokyoDev Jobs Companies Articles Community ••• Companies Articles Get the newsletter Community Po
-- source-page: https://japan-dev.com/jobs/artytech/artytech-tech-lead--cto-candidate-full-stack-25pe6i — Tech Lead &#x2F; CTO Candidate (Full-stack) at Artytech in Japan | Japan Dev NEWSLETTER Sign Up Dashboard ☰ Search Jobs Company List Blog Found a Job? 🎊 For Employers 日本語 Sign Up 
+- source-page: https://www.themuse.com/jobs/bankofamerica/principal-engineer-gbs-ind-783d05 — Principal Engineer - GBS IND at Bank of America | The Muse | The Muse Skip to main content The Muse Logo A logo with &amp;quat;the muse&amp;quat; in dark blue text. Newsletter Jobs
 
 ### Research Questions
-- What business unit owns the Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka role?
+- What business unit owns the Lead Software Engineer role?
 - What measurable outcomes would this team expect in the first 90 days?
 - What recent company/product signals change the risk or upside?
 - Which CV proof points should be highlighted for this company?
@@ -154,20 +130,17 @@ Dossiers: 8
 - Ask how the company evaluates impact across the first two quarters.
 - Prepare one story that maps directly to the highest-scoring ATS keywords.
 
-## Money Forward - Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka
+## Bank of America - Principal Engineer - GBS IND
 
-- Score: 73
+- Score: 95
 - Recommendation: 值得投遞
-- Signals: AI / data / platform signal, growth or funding signal, remote or hybrid signal
+- Signals: AI / data / platform signal
 
 ### Evidence
-- source-page: https://japan-dev.com/jobs/geniee/geniee-japan-ai---product-manager-ai-saas-w0yniw — JAPAN AI - Product Manager, AI SaaS at Geniee in Japan | Japan Dev NEWSLETTER Sign Up Dashboard ☰ Search Jobs Company List Blog Found a Job? 🎊 For Employers 日本語 Sign Up My Profile
-- source-page: https://japan-dev.com/jobs/money-forward/money-forward-product-reliability-engineer-cre-money-forward-cloud-fukuoka-kgsbzs — Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka at Money Forward in Japan | Japan Dev NEWSLETTER Sign Up Dashboard ☰ Search Jobs Company List Blog Found a Job? 🎊 
-- source-page: https://www.tokyodev.com/companies/moneyforward/jobs/product-reliability-engineer-cre-money-forward-cloud-fukuoka — Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka - Money Forward | TokyoDev Jobs Companies Articles Community ••• Companies Articles Get the newsletter Community Po
-- source-page: https://japan-dev.com/jobs/artytech/artytech-tech-lead--cto-candidate-full-stack-25pe6i — Tech Lead &#x2F; CTO Candidate (Full-stack) at Artytech in Japan | Japan Dev NEWSLETTER Sign Up Dashboard ☰ Search Jobs Company List Blog Found a Job? 🎊 For Employers 日本語 Sign Up 
+- source-page: https://www.themuse.com/jobs/bankofamerica/principal-engineer-gbs-ind-783d05 — Principal Engineer - GBS IND at Bank of America | The Muse | The Muse Skip to main content The Muse Logo A logo with &amp;quat;the muse&amp;quat; in dark blue text. Newsletter Jobs
 
 ### Research Questions
-- What business unit owns the Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka role?
+- What business unit owns the Principal Engineer - GBS IND role?
 - What measurable outcomes would this team expect in the first 90 days?
 - What recent company/product signals change the risk or upside?
 - Which CV proof points should be highlighted for this company?
@@ -177,20 +150,17 @@ Dossiers: 8
 - Ask how the company evaluates impact across the first two quarters.
 - Prepare one story that maps directly to the highest-scoring ATS keywords.
 
-## Artytech - Tech Lead / CTO Candidate (Full-stack)
+## Uber - Sr Software Engineer, Frontend (Web)
 
-- Score: 72
+- Score: 95
 - Recommendation: 值得投遞
-- Signals: AI / data / platform signal, growth or funding signal, remote or hybrid signal
+- Signals: AI / data / platform signal, remote or hybrid signal
 
 ### Evidence
-- source-page: https://japan-dev.com/jobs/geniee/geniee-japan-ai---product-manager-ai-saas-w0yniw — JAPAN AI - Product Manager, AI SaaS at Geniee in Japan | Japan Dev NEWSLETTER Sign Up Dashboard ☰ Search Jobs Company List Blog Found a Job? 🎊 For Employers 日本語 Sign Up My Profile
-- source-page: https://japan-dev.com/jobs/geniee/geniee-japan-airesearch-engineer-llm-d2exun — JAPAN AI - Research Engineer, LLM at Geniee in Japan | Japan Dev NEWSLETTER Sign Up Dashboard ☰ Search Jobs Company List Blog Found a Job? 🎊 For Employers 日本語 Sign Up My Profile L
-- source-page: https://www.tokyodev.com/companies/moneyforward/jobs/product-reliability-engineer-cre-money-forward-cloud-fukuoka — Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka - Money Forward | TokyoDev Jobs Companies Articles Community ••• Companies Articles Get the newsletter Community Po
-- source-page: https://japan-dev.com/jobs/artytech/artytech-tech-lead--cto-candidate-full-stack-25pe6i — Tech Lead &#x2F; CTO Candidate (Full-stack) at Artytech in Japan | Japan Dev NEWSLETTER Sign Up Dashboard ☰ Search Jobs Company List Blog Found a Job? 🎊 For Employers 日本語 Sign Up 
+- source-page: https://www.themuse.com/jobs/uber/sr-software-engineer-frontend-web-8fc2b7 — Sr Software Engineer, Frontend (Web) at Uber | The Muse | The Muse Skip to main content The Muse Logo A logo with &amp;quat;the muse&amp;quat; in dark blue text. Newsletter Jobs Ac
 
 ### Research Questions
-- What business unit owns the Tech Lead / CTO Candidate (Full-stack) role?
+- What business unit owns the Sr Software Engineer, Frontend (Web) role?
 - What measurable outcomes would this team expect in the first 90 days?
 - What recent company/product signals change the risk or upside?
 - Which CV proof points should be highlighted for this company?
@@ -199,4 +169,8 @@ Dossiers: 8
 - Ask about team success metrics and why the role is open.
 - Ask how the company evaluates impact across the first two quarters.
 - Prepare one story that maps directly to the highest-scoring ATS keywords.
+
+## Errors
+
+- https://www.themuse.com/jobs/disney/lead-software-engineer-944f62: HTTP 404
 

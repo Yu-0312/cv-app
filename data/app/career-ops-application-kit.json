@@ -1,32 +1,89 @@
 {
   "source": "career-ops-application-kit",
-  "generatedAt": "2026-05-17T23:21:25.280Z",
+  "generatedAt": "2026-05-20T00:58:15.140Z",
   "profileRole": "Frontend Engineer",
   "playbooks": [
     {
-      "jobKey": "url:https://japan-dev.com/jobs/geniee/geniee-japan-ai---product-manager-ai-saas-w0yniw",
-      "title": "JAPAN AI - Product Manager, AI SaaS",
-      "company": "Geniee",
-      "score": "77/B",
-      "priority": "P1",
+      "jobKey": "url:https://www.mycareersfuture.gov.sg/job/07eafbe6994e2090a0c2a6a6a6111e62",
+      "title": "Expert Frontend Engineer (React.JS & React Native)",
+      "company": "VANGUARD SOFTWARE PTE. LTD.",
+      "score": "95/A",
+      "rating": 4.8,
+      "blockG": {
+        "tier": "High Confidence",
+        "confidence": "medium"
+      },
+      "priority": "P0",
+      "atsInjection": {
+        "jdKeywords": [
+          "JavaScript",
+          "TypeScript",
+          "React",
+          "Next.js",
+          "CSS",
+          "Accessibility",
+          "Design Systems",
+          "design system",
+          "engineer",
+          "product",
+          "API"
+        ],
+        "hardKeywords": [
+          "JavaScript",
+          "TypeScript",
+          "React",
+          "Next.js",
+          "CSS",
+          "Accessibility",
+          "Design Systems",
+          "design system",
+          "engineer",
+          "product"
+        ],
+        "softKeywords": [],
+        "missingKeywords": [
+          "html",
+          "growth"
+        ],
+        "archetype": "Frontend Engineer",
+        "summaryRewriteHints": [
+          "在 Professional Summary 中自然帶入：JavaScript、TypeScript、React、Next.js、CSS",
+          "使用職位語言：「Frontend Engineer」方向的動詞和術語",
+          "【你已有但此 JD 未要求】可視情況選擇性提及：html、growth"
+        ],
+        "atsRules": [
+          "單欄排版，避免 sidebar 雙欄（ATS parser 容易亂序）",
+          "使用標準 header：Professional Summary, Work Experience, Skills, Education",
+          "不使用巢狀表格或文字框",
+          "確保 PDF 文字可被選取（不可光柵化輸出）",
+          "UTF-8 編碼，移除 em dash / smart quote / zero-width space",
+          "關鍵技能在 Skills section 明確列出，不要只藏在 bullet 裡"
+        ],
+        "guardrails": [
+          "NEVER add skills the candidate lacks",
+          "Only reformulate real experience with exact JD vocabulary",
+          "Example: if candidate has 'API development', it can become 'JavaScript'"
+        ],
+        "keywordCoveragePercent": 100
+      },
       "applyChecklist": [
         "Open the source URL and confirm the role is still active.",
         "Generate or refresh the tailored ATS PDF from this job.",
-        "Mirror these keywords honestly: TypeScript, React, Next.js, API, engineer, product, data, JavaScript, CSS, Tailwind, Accessibility, Analytics",
-        "Do not overclaim missing areas: python, aws, gcp, azure, docker, terraform",
+        "Mirror these JD keywords honestly in your CV: JavaScript, TypeScript, React, Next.js, CSS, Accessibility, Design Systems, design system",
+        "Do not overclaim missing areas: html, growth",
         "Log status, recruiter/contact, and next follow-up date in the tracker."
       ],
       "outreachEmail": {
-        "subject": "JAPAN AI - Product Manager, AI SaaS application - Geniee",
-        "body": "Hi Geniee team,\n\nI am Alex Chen, and I am interested in the JAPAN AI - Product Manager, AI SaaS role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.\n\nThe role stood out because it maps closely to my experience with TypeScript, React, Next.js, API, engineer.\n\nI would appreciate the chance to share how my experience can support the team. Thank you for your time.\n\nBest,\nAlex Chen"
+        "subject": "Expert Frontend Engineer (React.JS & React Native) application - VANGUARD SOFTWARE PTE. LTD.",
+        "body": "Hi VANGUARD SOFTWARE PTE. LTD. team,\n\nI am Alex Chen, and I am interested in the Expert Frontend Engineer (React.JS & React Native) role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.\n\nThe role stood out because it maps closely to my experience with JavaScript, TypeScript, React, Next.js, CSS.\n\nI would appreciate the chance to share how my experience can support the team. Thank you for your time.\n\nBest,\nAlex Chen"
       },
       "followUp": {
         "timing": "3-5 business days after applying or the last recruiter interaction.",
-        "body": "Hi Geniee team,\n\nI wanted to follow up on my application for the JAPAN AI - Product Manager, AI SaaS role. I remain interested and would be glad to provide any additional context about my background.\n\nThank you again for your time.\n\nBest,\nAlex Chen"
+        "body": "Hi VANGUARD SOFTWARE PTE. LTD. team,\n\nI wanted to follow up on my application for the Expert Frontend Engineer (React.JS & React Native) role. I remain interested and would be glad to provide any additional context about my background.\n\nThank you again for your time.\n\nBest,\nAlex Chen"
       },
       "interviewPrep": [
-        "Prepare a 60-second story for why Geniee and why JAPAN AI - Product Manager, AI SaaS.",
-        "Prepare evidence for: TypeScript, React, Next.js, API, engineer, product.",
+        "Prepare a 60-second story for why VANGUARD SOFTWARE PTE. LTD. and why Expert Frontend Engineer (React.JS & React Native).",
+        "Prepare evidence for: JavaScript, TypeScript, React, Next.js, CSS, Accessibility.",
         "Prepare one STAR story about execution under ambiguity.",
         "Prepare one STAR story about collaboration and tradeoff decisions.",
         "Prepare questions about team priorities, success metrics, and hiring timeline."
@@ -39,29 +96,91 @@
       ]
     },
     {
-      "jobKey": "url:https://japan-dev.com/jobs/ai-robot-association/ai-robot-association-airoa-full-stack-engineer-sliy8x",
-      "title": "Full Stack Engineer",
-      "company": "AI Robot Association (AIRoA)",
-      "score": "76/B",
-      "priority": "P1",
+      "jobKey": "url:https://www.mycareersfuture.gov.sg/job/ddc648c00fcb0cb0d717f2878ba8bc29",
+      "title": "Frontend Engineer",
+      "company": "BIFROST PTE. LTD.",
+      "score": "95/A",
+      "rating": 4.8,
+      "blockG": {
+        "tier": "High Confidence",
+        "confidence": "medium"
+      },
+      "priority": "P0",
+      "atsInjection": {
+        "jdKeywords": [
+          "JavaScript",
+          "React",
+          "engineer",
+          "product",
+          "data",
+          "restful",
+          "graphql",
+          "node.js",
+          "CSS",
+          "API"
+        ],
+        "hardKeywords": [
+          "JavaScript",
+          "React",
+          "engineer",
+          "product",
+          "data",
+          "restful",
+          "graphql",
+          "node.js",
+          "CSS",
+          "API"
+        ],
+        "softKeywords": [],
+        "missingKeywords": [
+          "vue",
+          "angular",
+          "python",
+          "java",
+          "go",
+          "mysql",
+          "aws",
+          "gcp"
+        ],
+        "archetype": "Frontend Engineer",
+        "summaryRewriteHints": [
+          "在 Professional Summary 中自然帶入：JavaScript、React、engineer、product、data",
+          "使用職位語言：「Frontend Engineer」方向的動詞和術語",
+          "【你已有但此 JD 未要求】可視情況選擇性提及：vue、angular、python、java、go"
+        ],
+        "atsRules": [
+          "單欄排版，避免 sidebar 雙欄（ATS parser 容易亂序）",
+          "使用標準 header：Professional Summary, Work Experience, Skills, Education",
+          "不使用巢狀表格或文字框",
+          "確保 PDF 文字可被選取（不可光柵化輸出）",
+          "UTF-8 編碼，移除 em dash / smart quote / zero-width space",
+          "關鍵技能在 Skills section 明確列出，不要只藏在 bullet 裡"
+        ],
+        "guardrails": [
+          "NEVER add skills the candidate lacks",
+          "Only reformulate real experience with exact JD vocabulary",
+          "Example: if candidate has 'API development', it can become 'JavaScript'"
+        ],
+        "keywordCoveragePercent": 100
+      },
       "applyChecklist": [
         "Open the source URL and confirm the role is still active.",
         "Generate or refresh the tailored ATS PDF from this job.",
-        "Mirror these keywords honestly: React, Next.js, engineer, dashboards., data, visualization, dashboards, JavaScript, TypeScript, CSS, Tailwind, Accessibility",
-        "Do not overclaim missing areas: python, go, aws, gcp, terraform",
+        "Mirror these JD keywords honestly in your CV: JavaScript, React, engineer, product, data, restful, graphql, node.js",
+        "Do not overclaim missing areas: vue, angular, python, java, go, mysql",
         "Log status, recruiter/contact, and next follow-up date in the tracker."
       ],
       "outreachEmail": {
-        "subject": "Full Stack Engineer application - AI Robot Association (AIRoA)",
-        "body": "Hi AI Robot Association (AIRoA) team,\n\nI am Alex Chen, and I am interested in the Full Stack Engineer role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.\n\nThe role stood out because it maps closely to my experience with React, Next.js, engineer, dashboards., data.\n\nI would appreciate the chance to share how my experience can support the team. Thank you for your time.\n\nBest,\nAlex Chen"
+        "subject": "Frontend Engineer application - BIFROST PTE. LTD.",
+        "body": "Hi BIFROST PTE. LTD. team,\n\nI am Alex Chen, and I am interested in the Frontend Engineer role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.\n\nThe role stood out because it maps closely to my experience with JavaScript, React, engineer, product, data.\n\nI would appreciate the chance to share how my experience can support the team. Thank you for your time.\n\nBest,\nAlex Chen"
       },
       "followUp": {
         "timing": "3-5 business days after applying or the last recruiter interaction.",
-        "body": "Hi AI Robot Association (AIRoA) team,\n\nI wanted to follow up on my application for the Full Stack Engineer role. I remain interested and would be glad to provide any additional context about my background.\n\nThank you again for your time.\n\nBest,\nAlex Chen"
+        "body": "Hi BIFROST PTE. LTD. team,\n\nI wanted to follow up on my application for the Frontend Engineer role. I remain interested and would be glad to provide any additional context about my background.\n\nThank you again for your time.\n\nBest,\nAlex Chen"
       },
       "interviewPrep": [
-        "Prepare a 60-second story for why AI Robot Association (AIRoA) and why Full Stack Engineer.",
-        "Prepare evidence for: React, Next.js, engineer, dashboards., data, visualization.",
+        "Prepare a 60-second story for why BIFROST PTE. LTD. and why Frontend Engineer.",
+        "Prepare evidence for: JavaScript, React, engineer, product, data, restful.",
         "Prepare one STAR story about execution under ambiguity.",
         "Prepare one STAR story about collaboration and tradeoff decisions.",
         "Prepare questions about team priorities, success metrics, and hiring timeline."
@@ -74,29 +193,91 @@
       ]
     },
     {
-      "jobKey": "url:https://japan-dev.com/jobs/geniee/geniee-japan-airesearch-engineer-llm-d2exun",
-      "title": "JAPAN AI - Research Engineer, LLM",
-      "company": "Geniee",
-      "score": "76/B",
-      "priority": "P1",
+      "jobKey": "url:https://www.mycareersfuture.gov.sg/job/820f670accd3b1a25b791a4f3507dcf4",
+      "title": "Frontend Engineer",
+      "company": "BIFROST PTE. LTD.",
+      "score": "95/A",
+      "rating": 4.8,
+      "blockG": {
+        "tier": "High Confidence",
+        "confidence": "medium"
+      },
+      "priority": "P0",
+      "atsInjection": {
+        "jdKeywords": [
+          "JavaScript",
+          "React",
+          "engineer",
+          "product",
+          "data",
+          "restful",
+          "graphql",
+          "node.js",
+          "CSS",
+          "API"
+        ],
+        "hardKeywords": [
+          "JavaScript",
+          "React",
+          "engineer",
+          "product",
+          "data",
+          "restful",
+          "graphql",
+          "node.js",
+          "CSS",
+          "API"
+        ],
+        "softKeywords": [],
+        "missingKeywords": [
+          "vue",
+          "angular",
+          "python",
+          "java",
+          "go",
+          "mysql",
+          "aws",
+          "gcp"
+        ],
+        "archetype": "Frontend Engineer",
+        "summaryRewriteHints": [
+          "在 Professional Summary 中自然帶入：JavaScript、React、engineer、product、data",
+          "使用職位語言：「Frontend Engineer」方向的動詞和術語",
+          "【你已有但此 JD 未要求】可視情況選擇性提及：vue、angular、python、java、go"
+        ],
+        "atsRules": [
+          "單欄排版，避免 sidebar 雙欄（ATS parser 容易亂序）",
+          "使用標準 header：Professional Summary, Work Experience, Skills, Education",
+          "不使用巢狀表格或文字框",
+          "確保 PDF 文字可被選取（不可光柵化輸出）",
+          "UTF-8 編碼，移除 em dash / smart quote / zero-width space",
+          "關鍵技能在 Skills section 明確列出，不要只藏在 bullet 裡"
+        ],
+        "guardrails": [
+          "NEVER add skills the candidate lacks",
+          "Only reformulate real experience with exact JD vocabulary",
+          "Example: if candidate has 'API development', it can become 'JavaScript'"
+        ],
+        "keywordCoveragePercent": 100
+      },
       "applyChecklist": [
         "Open the source URL and confirm the role is still active.",
         "Generate or refresh the tailored ATS PDF from this job.",
-        "Mirror these keywords honestly: TypeScript, React, Next.js, engineer, product, data, JavaScript, CSS, Tailwind, Accessibility, Analytics, API",
-        "Do not overclaim missing areas: python, gcp, docker, llm, agents, prompt engineering",
+        "Mirror these JD keywords honestly in your CV: JavaScript, React, engineer, product, data, restful, graphql, node.js",
+        "Do not overclaim missing areas: vue, angular, python, java, go, mysql",
         "Log status, recruiter/contact, and next follow-up date in the tracker."
       ],
       "outreachEmail": {
-        "subject": "JAPAN AI - Research Engineer, LLM application - Geniee",
-        "body": "Hi Geniee team,\n\nI am Alex Chen, and I am interested in the JAPAN AI - Research Engineer, LLM role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.\n\nThe role stood out because it maps closely to my experience with TypeScript, React, Next.js, engineer, product.\n\nI would appreciate the chance to share how my experience can support the team. Thank you for your time.\n\nBest,\nAlex Chen"
+        "subject": "Frontend Engineer application - BIFROST PTE. LTD.",
+        "body": "Hi BIFROST PTE. LTD. team,\n\nI am Alex Chen, and I am interested in the Frontend Engineer role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.\n\nThe role stood out because it maps closely to my experience with JavaScript, React, engineer, product, data.\n\nI would appreciate the chance to share how my experience can support the team. Thank you for your time.\n\nBest,\nAlex Chen"
       },
       "followUp": {
         "timing": "3-5 business days after applying or the last recruiter interaction.",
-        "body": "Hi Geniee team,\n\nI wanted to follow up on my application for the JAPAN AI - Research Engineer, LLM role. I remain interested and would be glad to provide any additional context about my background.\n\nThank you again for your time.\n\nBest,\nAlex Chen"
+        "body": "Hi BIFROST PTE. LTD. team,\n\nI wanted to follow up on my application for the Frontend Engineer role. I remain interested and would be glad to provide any additional context about my background.\n\nThank you again for your time.\n\nBest,\nAlex Chen"
       },
       "interviewPrep": [
-        "Prepare a 60-second story for why Geniee and why JAPAN AI - Research Engineer, LLM.",
-        "Prepare evidence for: TypeScript, React, Next.js, engineer, product, data.",
+        "Prepare a 60-second story for why BIFROST PTE. LTD. and why Frontend Engineer.",
+        "Prepare evidence for: JavaScript, React, engineer, product, data, restful.",
         "Prepare one STAR story about execution under ambiguity.",
         "Prepare one STAR story about collaboration and tradeoff decisions.",
         "Prepare questions about team priorities, success metrics, and hiring timeline."
@@ -109,29 +290,79 @@
       ]
     },
     {
-      "jobKey": "url:https://japan-dev.com/jobs/ai-robot-association/ai-robot-association-airoa-design-engineer-l4xpri",
-      "title": "Design Engineer",
-      "company": "AI Robot Association (AIRoA)",
-      "score": "75/B",
-      "priority": "P1",
+      "jobKey": "url:https://www.mycareersfuture.gov.sg/job/8d78864dfd9812b42055dfb7ddd5058e",
+      "title": "Frontend Software Engineer (Payment), TikTok Live - Singapore",
+      "company": "TIKTOK PTE. LTD.",
+      "score": "95/A",
+      "rating": 4.8,
+      "blockG": {
+        "tier": "High Confidence",
+        "confidence": "medium"
+      },
+      "priority": "P0",
+      "atsInjection": {
+        "jdKeywords": [
+          "JavaScript",
+          "CSS",
+          "remote",
+          "engineer",
+          "product",
+          "data",
+          "API"
+        ],
+        "hardKeywords": [
+          "JavaScript",
+          "CSS",
+          "remote",
+          "engineer",
+          "product",
+          "data",
+          "API"
+        ],
+        "softKeywords": [],
+        "missingKeywords": [
+          "html",
+          "growth"
+        ],
+        "archetype": "Frontend Engineer",
+        "summaryRewriteHints": [
+          "在 Professional Summary 中自然帶入：JavaScript、CSS、remote、engineer、product",
+          "使用職位語言：「Frontend Engineer」方向的動詞和術語",
+          "【你已有但此 JD 未要求】可視情況選擇性提及：html、growth"
+        ],
+        "atsRules": [
+          "單欄排版，避免 sidebar 雙欄（ATS parser 容易亂序）",
+          "使用標準 header：Professional Summary, Work Experience, Skills, Education",
+          "不使用巢狀表格或文字框",
+          "確保 PDF 文字可被選取（不可光柵化輸出）",
+          "UTF-8 編碼，移除 em dash / smart quote / zero-width space",
+          "關鍵技能在 Skills section 明確列出，不要只藏在 bullet 裡"
+        ],
+        "guardrails": [
+          "NEVER add skills the candidate lacks",
+          "Only reformulate real experience with exact JD vocabulary",
+          "Example: if candidate has 'API development', it can become 'JavaScript'"
+        ],
+        "keywordCoveragePercent": 100
+      },
       "applyChecklist": [
         "Open the source URL and confirm the role is still active.",
         "Generate or refresh the tailored ATS PDF from this job.",
-        "Mirror these keywords honestly: React, Next.js, Figma, design system, engineer, product, data, visualization, JavaScript, TypeScript, CSS, Tailwind",
-        "Do not overclaim missing areas: vue, angular, operations",
+        "Mirror these JD keywords honestly in your CV: JavaScript, CSS, remote, engineer, product, data, API",
+        "Do not overclaim missing areas: html, growth",
         "Log status, recruiter/contact, and next follow-up date in the tracker."
       ],
       "outreachEmail": {
-        "subject": "Design Engineer application - AI Robot Association (AIRoA)",
-        "body": "Hi AI Robot Association (AIRoA) team,\n\nI am Alex Chen, and I am interested in the Design Engineer role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.\n\nThe role stood out because it maps closely to my experience with React, Next.js, Figma, design system, engineer.\n\nI would appreciate the chance to share how my experience can support the team. Thank you for your time.\n\nBest,\nAlex Chen"
+        "subject": "Frontend Software Engineer (Payment), TikTok Live - Singapore application - TIKTOK PTE. LTD.",
+        "body": "Hi TIKTOK PTE. LTD. team,\n\nI am Alex Chen, and I am interested in the Frontend Software Engineer (Payment), TikTok Live - Singapore role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.\n\nThe role stood out because it maps closely to my experience with JavaScript, CSS, remote, engineer, product.\n\nI would appreciate the chance to share how my experience can support the team. Thank you for your time.\n\nBest,\nAlex Chen"
       },
       "followUp": {
         "timing": "3-5 business days after applying or the last recruiter interaction.",
-        "body": "Hi AI Robot Association (AIRoA) team,\n\nI wanted to follow up on my application for the Design Engineer role. I remain interested and would be glad to provide any additional context about my background.\n\nThank you again for your time.\n\nBest,\nAlex Chen"
+        "body": "Hi TIKTOK PTE. LTD. team,\n\nI wanted to follow up on my application for the Frontend Software Engineer (Payment), TikTok Live - Singapore role. I remain interested and would be glad to provide any additional context about my background.\n\nThank you again for your time.\n\nBest,\nAlex Chen"
       },
       "interviewPrep": [
-        "Prepare a 60-second story for why AI Robot Association (AIRoA) and why Design Engineer.",
-        "Prepare evidence for: React, Next.js, Figma, design system, engineer, product.",
+        "Prepare a 60-second story for why TIKTOK PTE. LTD. and why Frontend Software Engineer (Payment), TikTok Live - Singapore.",
+        "Prepare evidence for: JavaScript, CSS, remote, engineer, product, data.",
         "Prepare one STAR story about execution under ambiguity.",
         "Prepare one STAR story about collaboration and tradeoff decisions.",
         "Prepare questions about team priorities, success metrics, and hiring timeline."
@@ -144,29 +375,79 @@
       ]
     },
     {
-      "jobKey": "url:https://micron.wd1.myworkdayjobs.com/external/job/taichung---aatt-taiwan/senior-full-stack-software-engineer_jr101324",
-      "title": "Senior Full Stack Software Engineer",
-      "company": "Micron Workday",
-      "score": "74/B",
-      "priority": "P1",
+      "jobKey": "url:https://www.mycareersfuture.gov.sg/job/d90a32999a849424269dfae3f20b3460",
+      "title": "Frontend Software Engineer (Payment) - TikTok Live - Singapore",
+      "company": "TIKTOK PTE. LTD.",
+      "score": "95/A",
+      "rating": 4.8,
+      "blockG": {
+        "tier": "High Confidence",
+        "confidence": "medium"
+      },
+      "priority": "P0",
+      "atsInjection": {
+        "jdKeywords": [
+          "JavaScript",
+          "CSS",
+          "remote",
+          "engineer",
+          "product",
+          "data",
+          "API"
+        ],
+        "hardKeywords": [
+          "JavaScript",
+          "CSS",
+          "remote",
+          "engineer",
+          "product",
+          "data",
+          "API"
+        ],
+        "softKeywords": [],
+        "missingKeywords": [
+          "html",
+          "growth"
+        ],
+        "archetype": "Frontend Engineer",
+        "summaryRewriteHints": [
+          "在 Professional Summary 中自然帶入：JavaScript、CSS、remote、engineer、product",
+          "使用職位語言：「Frontend Engineer」方向的動詞和術語",
+          "【你已有但此 JD 未要求】可視情況選擇性提及：html、growth"
+        ],
+        "atsRules": [
+          "單欄排版，避免 sidebar 雙欄（ATS parser 容易亂序）",
+          "使用標準 header：Professional Summary, Work Experience, Skills, Education",
+          "不使用巢狀表格或文字框",
+          "確保 PDF 文字可被選取（不可光柵化輸出）",
+          "UTF-8 編碼，移除 em dash / smart quote / zero-width space",
+          "關鍵技能在 Skills section 明確列出，不要只藏在 bullet 裡"
+        ],
+        "guardrails": [
+          "NEVER add skills the candidate lacks",
+          "Only reformulate real experience with exact JD vocabulary",
+          "Example: if candidate has 'API development', it can become 'JavaScript'"
+        ],
+        "keywordCoveragePercent": 100
+      },
       "applyChecklist": [
         "Open the source URL and confirm the role is still active.",
         "Generate or refresh the tailored ATS PDF from this job.",
-        "Mirror these keywords honestly: JavaScript, TypeScript, React, Analytics, engineer, data, restful, Next.js, CSS, Tailwind, Accessibility, API",
-        "Do not overclaim missing areas: angular, python, java, docker, kubernetes, machine learning",
+        "Mirror these JD keywords honestly in your CV: JavaScript, CSS, remote, engineer, product, data, API",
+        "Do not overclaim missing areas: html, growth",
         "Log status, recruiter/contact, and next follow-up date in the tracker."
       ],
       "outreachEmail": {
-        "subject": "Senior Full Stack Software Engineer application - Micron Workday",
-        "body": "Hi Micron Workday team,\n\nI am Alex Chen, and I am interested in the Senior Full Stack Software Engineer role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.\n\nThe role stood out because it maps closely to my experience with JavaScript, TypeScript, React, Analytics, engineer.\n\nI would appreciate the chance to share how my experience can support the team. Thank you for your time.\n\nBest,\nAlex Chen"
+        "subject": "Frontend Software Engineer (Payment) - TikTok Live - Singapore application - TIKTOK PTE. LTD.",
+        "body": "Hi TIKTOK PTE. LTD. team,\n\nI am Alex Chen, and I am interested in the Frontend Software Engineer (Payment) - TikTok Live - Singapore role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.\n\nThe role stood out because it maps closely to my experience with JavaScript, CSS, remote, engineer, product.\n\nI would appreciate the chance to share how my experience can support the team. Thank you for your time.\n\nBest,\nAlex Chen"
       },
       "followUp": {
         "timing": "3-5 business days after applying or the last recruiter interaction.",
-        "body": "Hi Micron Workday team,\n\nI wanted to follow up on my application for the Senior Full Stack Software Engineer role. I remain interested and would be glad to provide any additional context about my background.\n\nThank you again for your time.\n\nBest,\nAlex Chen"
+        "body": "Hi TIKTOK PTE. LTD. team,\n\nI wanted to follow up on my application for the Frontend Software Engineer (Payment) - TikTok Live - Singapore role. I remain interested and would be glad to provide any additional context about my background.\n\nThank you again for your time.\n\nBest,\nAlex Chen"
       },
       "interviewPrep": [
-        "Prepare a 60-second story for why Micron Workday and why Senior Full Stack Software Engineer.",
-        "Prepare evidence for: JavaScript, TypeScript, React, Analytics, engineer, data.",
+        "Prepare a 60-second story for why TIKTOK PTE. LTD. and why Frontend Software Engineer (Payment) - TikTok Live - Singapore.",
+        "Prepare evidence for: JavaScript, CSS, remote, engineer, product, data.",
         "Prepare one STAR story about execution under ambiguity.",
         "Prepare one STAR story about collaboration and tradeoff decisions.",
         "Prepare questions about team priorities, success metrics, and hiring timeline."
@@ -179,238 +460,581 @@
       ]
     },
     {
-      "jobKey": "url:https://japan-dev.com/jobs/money-forward/money-forward-product-reliability-engineer-cre-money-forward-cloud-fukuoka-kgsbzs",
-      "title": "Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka",
+      "jobKey": "url:https://www.themuse.com/jobs/disney/lead-software-engineer-944f62",
+      "title": "Lead Software Engineer",
+      "company": "Disney",
+      "score": "95/A",
+      "rating": 4.8,
+      "blockG": {
+        "tier": "Proceed with Caution",
+        "confidence": "medium"
+      },
+      "priority": "P0",
+      "atsInjection": {
+        "jdKeywords": [
+          "JavaScript",
+          "TypeScript",
+          "API",
+          "engineer",
+          "product",
+          "data"
+        ],
+        "hardKeywords": [
+          "JavaScript",
+          "TypeScript",
+          "API",
+          "engineer",
+          "product",
+          "data"
+        ],
+        "softKeywords": [],
+        "missingKeywords": [
+          "rust",
+          "aws"
+        ],
+        "archetype": "Backend Engineer",
+        "summaryRewriteHints": [
+          "在 Professional Summary 中自然帶入：JavaScript、TypeScript、API、engineer、product",
+          "使用職位語言：「Backend Engineer」方向的動詞和術語",
+          "【你已有但此 JD 未要求】可視情況選擇性提及：rust、aws"
+        ],
+        "atsRules": [
+          "單欄排版，避免 sidebar 雙欄（ATS parser 容易亂序）",
+          "使用標準 header：Professional Summary, Work Experience, Skills, Education",
+          "不使用巢狀表格或文字框",
+          "確保 PDF 文字可被選取（不可光柵化輸出）",
+          "UTF-8 編碼，移除 em dash / smart quote / zero-width space",
+          "關鍵技能在 Skills section 明確列出，不要只藏在 bullet 裡"
+        ],
+        "guardrails": [
+          "NEVER add skills the candidate lacks",
+          "Only reformulate real experience with exact JD vocabulary",
+          "Example: if candidate has 'API development', it can become 'JavaScript'"
+        ],
+        "keywordCoveragePercent": 100
+      },
+      "applyChecklist": [
+        "Open the source URL and confirm the role is still active.",
+        "⚠ Block G: Proceed with Caution — double-check recruiter identity.",
+        "Generate or refresh the tailored ATS PDF from this job.",
+        "Mirror these JD keywords honestly in your CV: JavaScript, TypeScript, API, engineer, product, data",
+        "Do not overclaim missing areas: rust, aws",
+        "Log status, recruiter/contact, and next follow-up date in the tracker."
+      ],
+      "outreachEmail": {
+        "subject": "Lead Software Engineer application - Disney",
+        "body": "Hi Disney team,\n\nI am Alex Chen, and I am interested in the Lead Software Engineer role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.\n\nThe role stood out because it maps closely to my experience with JavaScript, TypeScript, API, engineer, product.\n\nI would appreciate the chance to share how my experience can support the team. Thank you for your time.\n\nBest,\nAlex Chen"
+      },
+      "followUp": {
+        "timing": "3-5 business days after applying or the last recruiter interaction.",
+        "body": "Hi Disney team,\n\nI wanted to follow up on my application for the Lead Software Engineer role. I remain interested and would be glad to provide any additional context about my background.\n\nThank you again for your time.\n\nBest,\nAlex Chen"
+      },
+      "interviewPrep": [
+        "Prepare a 60-second story for why Disney and why Lead Software Engineer.",
+        "Prepare evidence for: JavaScript, TypeScript, API, engineer, product, data.",
+        "Prepare one STAR story about execution under ambiguity.",
+        "Prepare one STAR story about collaboration and tradeoff decisions.",
+        "Prepare questions about team priorities, success metrics, and hiring timeline."
+      ],
+      "negotiationPrep": [
+        "Wait for a clear offer before anchoring compensation.",
+        "Ask for total compensation breakdown, work mode, title, level, review cycle, and start date.",
+        "Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.",
+        "Use competing priorities and role fit, not personal need, as the negotiation frame."
+      ]
+    },
+    {
+      "jobKey": "url:https://www.themuse.com/jobs/bankofamerica/principal-engineer-gbs-ind-783d05",
+      "title": "Principal Engineer - GBS IND",
+      "company": "Bank of America",
+      "score": "95/A",
+      "rating": 4.8,
+      "blockG": {
+        "tier": "High Confidence",
+        "confidence": "medium"
+      },
+      "priority": "P0",
+      "atsInjection": {
+        "jdKeywords": [
+          "API",
+          "engineer",
+          "data"
+        ],
+        "hardKeywords": [
+          "API",
+          "engineer",
+          "data"
+        ],
+        "softKeywords": [],
+        "missingKeywords": [
+          "azure",
+          "agents",
+          "growth",
+          "operations"
+        ],
+        "archetype": "Agentic / Automation",
+        "summaryRewriteHints": [
+          "在 Professional Summary 中自然帶入：API、engineer、data",
+          "使用職位語言：「Agentic / Automation」方向的動詞和術語",
+          "【你已有但此 JD 未要求】可視情況選擇性提及：azure、agents、growth、operations"
+        ],
+        "atsRules": [
+          "單欄排版，避免 sidebar 雙欄（ATS parser 容易亂序）",
+          "使用標準 header：Professional Summary, Work Experience, Skills, Education",
+          "不使用巢狀表格或文字框",
+          "確保 PDF 文字可被選取（不可光柵化輸出）",
+          "UTF-8 編碼，移除 em dash / smart quote / zero-width space",
+          "關鍵技能在 Skills section 明確列出，不要只藏在 bullet 裡"
+        ],
+        "guardrails": [
+          "NEVER add skills the candidate lacks",
+          "Only reformulate real experience with exact JD vocabulary",
+          "Example: if candidate has 'API development', it can become 'API'"
+        ],
+        "keywordCoveragePercent": 100
+      },
+      "applyChecklist": [
+        "Open the source URL and confirm the role is still active.",
+        "Generate or refresh the tailored ATS PDF from this job.",
+        "Mirror these JD keywords honestly in your CV: API, engineer, data",
+        "Do not overclaim missing areas: azure, agents, growth, operations",
+        "Log status, recruiter/contact, and next follow-up date in the tracker."
+      ],
+      "outreachEmail": {
+        "subject": "Principal Engineer - GBS IND application - Bank of America",
+        "body": "Hi Bank of America team,\n\nI am Alex Chen, and I am interested in the Principal Engineer - GBS IND role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.\n\nThe role stood out because it maps closely to my experience with API, engineer, data.\n\nI would appreciate the chance to share how my experience can support the team. Thank you for your time.\n\nBest,\nAlex Chen"
+      },
+      "followUp": {
+        "timing": "3-5 business days after applying or the last recruiter interaction.",
+        "body": "Hi Bank of America team,\n\nI wanted to follow up on my application for the Principal Engineer - GBS IND role. I remain interested and would be glad to provide any additional context about my background.\n\nThank you again for your time.\n\nBest,\nAlex Chen"
+      },
+      "interviewPrep": [
+        "Prepare a 60-second story for why Bank of America and why Principal Engineer - GBS IND.",
+        "Prepare evidence for: API, engineer, data.",
+        "Prepare one STAR story about execution under ambiguity.",
+        "Prepare one STAR story about collaboration and tradeoff decisions.",
+        "Prepare questions about team priorities, success metrics, and hiring timeline."
+      ],
+      "negotiationPrep": [
+        "Wait for a clear offer before anchoring compensation.",
+        "Ask for total compensation breakdown, work mode, title, level, review cycle, and start date.",
+        "Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.",
+        "Use competing priorities and role fit, not personal need, as the negotiation frame."
+      ]
+    },
+    {
+      "jobKey": "url:https://www.themuse.com/jobs/uber/sr-software-engineer-frontend-web-8fc2b7",
+      "title": "Sr Software Engineer, Frontend (Web)",
+      "company": "Uber",
+      "score": "95/A",
+      "rating": 4.8,
+      "blockG": {
+        "tier": "High Confidence",
+        "confidence": "medium"
+      },
+      "priority": "P0",
+      "atsInjection": {
+        "jdKeywords": [
+          "JavaScript",
+          "TypeScript",
+          "React",
+          "CSS",
+          "API",
+          "Performance Optimization",
+          "engineer",
+          "product",
+          "data"
+        ],
+        "hardKeywords": [
+          "JavaScript",
+          "TypeScript",
+          "React",
+          "CSS",
+          "API",
+          "Performance Optimization",
+          "engineer",
+          "product",
+          "data"
+        ],
+        "softKeywords": [],
+        "missingKeywords": [
+          "angular",
+          "python",
+          "go",
+          "html",
+          "growth"
+        ],
+        "archetype": "Frontend Engineer",
+        "summaryRewriteHints": [
+          "在 Professional Summary 中自然帶入：JavaScript、TypeScript、React、CSS、API",
+          "使用職位語言：「Frontend Engineer」方向的動詞和術語",
+          "【你已有但此 JD 未要求】可視情況選擇性提及：angular、python、go、html、growth"
+        ],
+        "atsRules": [
+          "單欄排版，避免 sidebar 雙欄（ATS parser 容易亂序）",
+          "使用標準 header：Professional Summary, Work Experience, Skills, Education",
+          "不使用巢狀表格或文字框",
+          "確保 PDF 文字可被選取（不可光柵化輸出）",
+          "UTF-8 編碼，移除 em dash / smart quote / zero-width space",
+          "關鍵技能在 Skills section 明確列出，不要只藏在 bullet 裡"
+        ],
+        "guardrails": [
+          "NEVER add skills the candidate lacks",
+          "Only reformulate real experience with exact JD vocabulary",
+          "Example: if candidate has 'API development', it can become 'JavaScript'"
+        ],
+        "keywordCoveragePercent": 100
+      },
+      "applyChecklist": [
+        "Open the source URL and confirm the role is still active.",
+        "Generate or refresh the tailored ATS PDF from this job.",
+        "Mirror these JD keywords honestly in your CV: JavaScript, TypeScript, React, CSS, API, Performance Optimization, engineer, product",
+        "Do not overclaim missing areas: angular, python, go, html, growth",
+        "Log status, recruiter/contact, and next follow-up date in the tracker."
+      ],
+      "outreachEmail": {
+        "subject": "Sr Software Engineer, Frontend (Web) application - Uber",
+        "body": "Hi Uber team,\n\nI am Alex Chen, and I am interested in the Sr Software Engineer, Frontend (Web) role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.\n\nThe role stood out because it maps closely to my experience with JavaScript, TypeScript, React, CSS, API.\n\nI would appreciate the chance to share how my experience can support the team. Thank you for your time.\n\nBest,\nAlex Chen"
+      },
+      "followUp": {
+        "timing": "3-5 business days after applying or the last recruiter interaction.",
+        "body": "Hi Uber team,\n\nI wanted to follow up on my application for the Sr Software Engineer, Frontend (Web) role. I remain interested and would be glad to provide any additional context about my background.\n\nThank you again for your time.\n\nBest,\nAlex Chen"
+      },
+      "interviewPrep": [
+        "Prepare a 60-second story for why Uber and why Sr Software Engineer, Frontend (Web).",
+        "Prepare evidence for: JavaScript, TypeScript, React, CSS, API, Performance Optimization.",
+        "Prepare one STAR story about execution under ambiguity.",
+        "Prepare one STAR story about collaboration and tradeoff decisions.",
+        "Prepare questions about team priorities, success metrics, and hiring timeline."
+      ],
+      "negotiationPrep": [
+        "Wait for a clear offer before anchoring compensation.",
+        "Ask for total compensation breakdown, work mode, title, level, review cycle, and start date.",
+        "Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.",
+        "Use competing priorities and role fit, not personal need, as the negotiation frame."
+      ]
+    },
+    {
+      "jobKey": "url:https://www.themuse.com/jobs/uber/software-engineer-ii-frontend-3e411c",
+      "title": "Software Engineer II - Frontend",
+      "company": "Uber",
+      "score": "95/A",
+      "rating": 4.8,
+      "blockG": {
+        "tier": "High Confidence",
+        "confidence": "medium"
+      },
+      "priority": "P0",
+      "atsInjection": {
+        "jdKeywords": [
+          "JavaScript",
+          "TypeScript",
+          "React",
+          "CSS",
+          "API",
+          "engineer",
+          "product",
+          "data"
+        ],
+        "hardKeywords": [
+          "JavaScript",
+          "TypeScript",
+          "React",
+          "CSS",
+          "API",
+          "engineer",
+          "product",
+          "data"
+        ],
+        "softKeywords": [],
+        "missingKeywords": [
+          "angular",
+          "python",
+          "go",
+          "html",
+          "growth"
+        ],
+        "archetype": "Frontend Engineer",
+        "summaryRewriteHints": [
+          "在 Professional Summary 中自然帶入：JavaScript、TypeScript、React、CSS、API",
+          "使用職位語言：「Frontend Engineer」方向的動詞和術語",
+          "【你已有但此 JD 未要求】可視情況選擇性提及：angular、python、go、html、growth"
+        ],
+        "atsRules": [
+          "單欄排版，避免 sidebar 雙欄（ATS parser 容易亂序）",
+          "使用標準 header：Professional Summary, Work Experience, Skills, Education",
+          "不使用巢狀表格或文字框",
+          "確保 PDF 文字可被選取（不可光柵化輸出）",
+          "UTF-8 編碼，移除 em dash / smart quote / zero-width space",
+          "關鍵技能在 Skills section 明確列出，不要只藏在 bullet 裡"
+        ],
+        "guardrails": [
+          "NEVER add skills the candidate lacks",
+          "Only reformulate real experience with exact JD vocabulary",
+          "Example: if candidate has 'API development', it can become 'JavaScript'"
+        ],
+        "keywordCoveragePercent": 100
+      },
+      "applyChecklist": [
+        "Open the source URL and confirm the role is still active.",
+        "Generate or refresh the tailored ATS PDF from this job.",
+        "Mirror these JD keywords honestly in your CV: JavaScript, TypeScript, React, CSS, API, engineer, product, data",
+        "Do not overclaim missing areas: angular, python, go, html, growth",
+        "Log status, recruiter/contact, and next follow-up date in the tracker."
+      ],
+      "outreachEmail": {
+        "subject": "Software Engineer II - Frontend application - Uber",
+        "body": "Hi Uber team,\n\nI am Alex Chen, and I am interested in the Software Engineer II - Frontend role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.\n\nThe role stood out because it maps closely to my experience with JavaScript, TypeScript, React, CSS, API.\n\nI would appreciate the chance to share how my experience can support the team. Thank you for your time.\n\nBest,\nAlex Chen"
+      },
+      "followUp": {
+        "timing": "3-5 business days after applying or the last recruiter interaction.",
+        "body": "Hi Uber team,\n\nI wanted to follow up on my application for the Software Engineer II - Frontend role. I remain interested and would be glad to provide any additional context about my background.\n\nThank you again for your time.\n\nBest,\nAlex Chen"
+      },
+      "interviewPrep": [
+        "Prepare a 60-second story for why Uber and why Software Engineer II - Frontend.",
+        "Prepare evidence for: JavaScript, TypeScript, React, CSS, API, engineer.",
+        "Prepare one STAR story about execution under ambiguity.",
+        "Prepare one STAR story about collaboration and tradeoff decisions.",
+        "Prepare questions about team priorities, success metrics, and hiring timeline."
+      ],
+      "negotiationPrep": [
+        "Wait for a clear offer before anchoring compensation.",
+        "Ask for total compensation breakdown, work mode, title, level, review cycle, and start date.",
+        "Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.",
+        "Use competing priorities and role fit, not personal need, as the negotiation frame."
+      ]
+    },
+    {
+      "jobKey": "url:https://www.themuse.com/jobs/modernanimalinc/senior-product-engineer",
+      "title": "Senior Product Engineer",
+      "company": "Modern Animal, Inc.",
+      "score": "95/A",
+      "rating": 4.8,
+      "blockG": {
+        "tier": "High Confidence",
+        "confidence": "medium"
+      },
+      "priority": "P0",
+      "atsInjection": {
+        "jdKeywords": [
+          "API",
+          "engineer",
+          "product",
+          "data"
+        ],
+        "hardKeywords": [
+          "API",
+          "engineer",
+          "product",
+          "data"
+        ],
+        "softKeywords": [],
+        "missingKeywords": [
+          "operations"
+        ],
+        "archetype": "Backend Engineer",
+        "summaryRewriteHints": [
+          "在 Professional Summary 中自然帶入：API、engineer、product、data",
+          "使用職位語言：「Backend Engineer」方向的動詞和術語",
+          "【你已有但此 JD 未要求】可視情況選擇性提及：operations"
+        ],
+        "atsRules": [
+          "單欄排版，避免 sidebar 雙欄（ATS parser 容易亂序）",
+          "使用標準 header：Professional Summary, Work Experience, Skills, Education",
+          "不使用巢狀表格或文字框",
+          "確保 PDF 文字可被選取（不可光柵化輸出）",
+          "UTF-8 編碼，移除 em dash / smart quote / zero-width space",
+          "關鍵技能在 Skills section 明確列出，不要只藏在 bullet 裡"
+        ],
+        "guardrails": [
+          "NEVER add skills the candidate lacks",
+          "Only reformulate real experience with exact JD vocabulary",
+          "Example: if candidate has 'API development', it can become 'API'"
+        ],
+        "keywordCoveragePercent": 100
+      },
+      "applyChecklist": [
+        "Open the source URL and confirm the role is still active.",
+        "Generate or refresh the tailored ATS PDF from this job.",
+        "Mirror these JD keywords honestly in your CV: API, engineer, product, data",
+        "Do not overclaim missing areas: operations",
+        "Log status, recruiter/contact, and next follow-up date in the tracker."
+      ],
+      "outreachEmail": {
+        "subject": "Senior Product Engineer application - Modern Animal, Inc.",
+        "body": "Hi Modern Animal, Inc. team,\n\nI am Alex Chen, and I am interested in the Senior Product Engineer role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.\n\nThe role stood out because it maps closely to my experience with API, engineer, product, data.\n\nI would appreciate the chance to share how my experience can support the team. Thank you for your time.\n\nBest,\nAlex Chen"
+      },
+      "followUp": {
+        "timing": "3-5 business days after applying or the last recruiter interaction.",
+        "body": "Hi Modern Animal, Inc. team,\n\nI wanted to follow up on my application for the Senior Product Engineer role. I remain interested and would be glad to provide any additional context about my background.\n\nThank you again for your time.\n\nBest,\nAlex Chen"
+      },
+      "interviewPrep": [
+        "Prepare a 60-second story for why Modern Animal, Inc. and why Senior Product Engineer.",
+        "Prepare evidence for: API, engineer, product, data.",
+        "Prepare one STAR story about execution under ambiguity.",
+        "Prepare one STAR story about collaboration and tradeoff decisions.",
+        "Prepare questions about team priorities, success metrics, and hiring timeline."
+      ],
+      "negotiationPrep": [
+        "Wait for a clear offer before anchoring compensation.",
+        "Ask for total compensation breakdown, work mode, title, level, review cycle, and start date.",
+        "Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.",
+        "Use competing priorities and role fit, not personal need, as the negotiation frame."
+      ]
+    },
+    {
+      "jobKey": "url:https://www.themuse.com/jobs/gitlab/senior-backend-engineergo-continuous-delivery",
+      "title": "Senior Backend Engineer(Go), Continuous Delivery",
+      "company": "GitLab",
+      "score": "95/A",
+      "rating": 4.8,
+      "blockG": {
+        "tier": "High Confidence",
+        "confidence": "medium"
+      },
+      "priority": "P0",
+      "atsInjection": {
+        "jdKeywords": [
+          "API",
+          "remote",
+          "engineer",
+          "product",
+          "data"
+        ],
+        "hardKeywords": [
+          "API",
+          "remote",
+          "engineer",
+          "product",
+          "data"
+        ],
+        "softKeywords": [],
+        "missingKeywords": [
+          "go",
+          "docker",
+          "kubernetes"
+        ],
+        "archetype": "Backend Engineer",
+        "summaryRewriteHints": [
+          "在 Professional Summary 中自然帶入：API、remote、engineer、product、data",
+          "使用職位語言：「Backend Engineer」方向的動詞和術語",
+          "【你已有但此 JD 未要求】可視情況選擇性提及：go、docker、kubernetes"
+        ],
+        "atsRules": [
+          "單欄排版，避免 sidebar 雙欄（ATS parser 容易亂序）",
+          "使用標準 header：Professional Summary, Work Experience, Skills, Education",
+          "不使用巢狀表格或文字框",
+          "確保 PDF 文字可被選取（不可光柵化輸出）",
+          "UTF-8 編碼，移除 em dash / smart quote / zero-width space",
+          "關鍵技能在 Skills section 明確列出，不要只藏在 bullet 裡"
+        ],
+        "guardrails": [
+          "NEVER add skills the candidate lacks",
+          "Only reformulate real experience with exact JD vocabulary",
+          "Example: if candidate has 'API development', it can become 'API'"
+        ],
+        "keywordCoveragePercent": 100
+      },
+      "applyChecklist": [
+        "Open the source URL and confirm the role is still active.",
+        "Generate or refresh the tailored ATS PDF from this job.",
+        "Mirror these JD keywords honestly in your CV: API, remote, engineer, product, data",
+        "Do not overclaim missing areas: go, docker, kubernetes",
+        "Log status, recruiter/contact, and next follow-up date in the tracker."
+      ],
+      "outreachEmail": {
+        "subject": "Senior Backend Engineer(Go), Continuous Delivery application - GitLab",
+        "body": "Hi GitLab team,\n\nI am Alex Chen, and I am interested in the Senior Backend Engineer(Go), Continuous Delivery role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.\n\nThe role stood out because it maps closely to my experience with API, remote, engineer, product, data.\n\nI would appreciate the chance to share how my experience can support the team. Thank you for your time.\n\nBest,\nAlex Chen"
+      },
+      "followUp": {
+        "timing": "3-5 business days after applying or the last recruiter interaction.",
+        "body": "Hi GitLab team,\n\nI wanted to follow up on my application for the Senior Backend Engineer(Go), Continuous Delivery role. I remain interested and would be glad to provide any additional context about my background.\n\nThank you again for your time.\n\nBest,\nAlex Chen"
+      },
+      "interviewPrep": [
+        "Prepare a 60-second story for why GitLab and why Senior Backend Engineer(Go), Continuous Delivery.",
+        "Prepare evidence for: API, remote, engineer, product, data.",
+        "Prepare one STAR story about execution under ambiguity.",
+        "Prepare one STAR story about collaboration and tradeoff decisions.",
+        "Prepare questions about team priorities, success metrics, and hiring timeline."
+      ],
+      "negotiationPrep": [
+        "Wait for a clear offer before anchoring compensation.",
+        "Ask for total compensation breakdown, work mode, title, level, review cycle, and start date.",
+        "Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.",
+        "Use competing priorities and role fit, not personal need, as the negotiation frame."
+      ]
+    },
+    {
+      "jobKey": "url:https://www.tokyodev.com/companies/moneyforward/jobs/lead-backend-engineer-digital-bank",
+      "title": "Lead Backend Engineer, Digital Bank",
       "company": "Money Forward",
-      "score": "73/B",
-      "priority": "P1",
+      "score": "95/A",
+      "rating": 4.8,
+      "blockG": {
+        "tier": "Proceed with Caution",
+        "confidence": "medium"
+      },
+      "priority": "P0",
+      "atsInjection": {
+        "jdKeywords": [
+          "API",
+          "engineer",
+          "product",
+          "data"
+        ],
+        "hardKeywords": [
+          "API",
+          "engineer",
+          "product",
+          "data"
+        ],
+        "softKeywords": [],
+        "missingKeywords": [
+          "kotlin",
+          "aws",
+          "docker",
+          "rest",
+          "agents"
+        ],
+        "archetype": "Backend Engineer",
+        "summaryRewriteHints": [
+          "在 Professional Summary 中自然帶入：API、engineer、product、data",
+          "使用職位語言：「Backend Engineer」方向的動詞和術語",
+          "【你已有但此 JD 未要求】可視情況選擇性提及：kotlin、aws、docker、rest、agents"
+        ],
+        "atsRules": [
+          "單欄排版，避免 sidebar 雙欄（ATS parser 容易亂序）",
+          "使用標準 header：Professional Summary, Work Experience, Skills, Education",
+          "不使用巢狀表格或文字框",
+          "確保 PDF 文字可被選取（不可光柵化輸出）",
+          "UTF-8 編碼，移除 em dash / smart quote / zero-width space",
+          "關鍵技能在 Skills section 明確列出，不要只藏在 bullet 裡"
+        ],
+        "guardrails": [
+          "NEVER add skills the candidate lacks",
+          "Only reformulate real experience with exact JD vocabulary",
+          "Example: if candidate has 'API development', it can become 'API'"
+        ],
+        "keywordCoveragePercent": 100
+      },
       "applyChecklist": [
         "Open the source URL and confirm the role is still active.",
+        "⚠ Block G: Proceed with Caution — double-check recruiter identity.",
         "Generate or refresh the tailored ATS PDF from this job.",
-        "Mirror these keywords honestly: TypeScript, React, Next.js, engineer, product, graphql, node.js, JavaScript, CSS, Tailwind, Accessibility, Analytics",
-        "Do not overclaim missing areas: java, swift, kotlin, mysql, firebase, aws",
+        "Mirror these JD keywords honestly in your CV: API, engineer, product, data",
+        "Do not overclaim missing areas: kotlin, aws, docker, rest, agents",
         "Log status, recruiter/contact, and next follow-up date in the tracker."
       ],
       "outreachEmail": {
-        "subject": "Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka application - Money Forward",
-        "body": "Hi Money Forward team,\n\nI am Alex Chen, and I am interested in the Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.\n\nThe role stood out because it maps closely to my experience with TypeScript, React, Next.js, engineer, product.\n\nI would appreciate the chance to share how my experience can support the team. Thank you for your time.\n\nBest,\nAlex Chen"
+        "subject": "Lead Backend Engineer, Digital Bank application - Money Forward",
+        "body": "Hi Money Forward team,\n\nI am Alex Chen, and I am interested in the Lead Backend Engineer, Digital Bank role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.\n\nThe role stood out because it maps closely to my experience with API, engineer, product, data.\n\nI would appreciate the chance to share how my experience can support the team. Thank you for your time.\n\nBest,\nAlex Chen"
       },
       "followUp": {
         "timing": "3-5 business days after applying or the last recruiter interaction.",
-        "body": "Hi Money Forward team,\n\nI wanted to follow up on my application for the Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka role. I remain interested and would be glad to provide any additional context about my background.\n\nThank you again for your time.\n\nBest,\nAlex Chen"
+        "body": "Hi Money Forward team,\n\nI wanted to follow up on my application for the Lead Backend Engineer, Digital Bank role. I remain interested and would be glad to provide any additional context about my background.\n\nThank you again for your time.\n\nBest,\nAlex Chen"
       },
       "interviewPrep": [
-        "Prepare a 60-second story for why Money Forward and why Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka.",
-        "Prepare evidence for: TypeScript, React, Next.js, engineer, product, graphql.",
-        "Prepare one STAR story about execution under ambiguity.",
-        "Prepare one STAR story about collaboration and tradeoff decisions.",
-        "Prepare questions about team priorities, success metrics, and hiring timeline."
-      ],
-      "negotiationPrep": [
-        "Wait for a clear offer before anchoring compensation.",
-        "Ask for total compensation breakdown, work mode, title, level, review cycle, and start date.",
-        "Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.",
-        "Use competing priorities and role fit, not personal need, as the negotiation frame."
-      ]
-    },
-    {
-      "jobKey": "url:https://www.tokyodev.com/companies/moneyforward/jobs/product-reliability-engineer-cre-money-forward-cloud-fukuoka",
-      "title": "Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka",
-      "company": "Money Forward",
-      "score": "73/B",
-      "priority": "P1",
-      "applyChecklist": [
-        "Open the source URL and confirm the role is still active.",
-        "Generate or refresh the tailored ATS PDF from this job.",
-        "Mirror these keywords honestly: TypeScript, React, Next.js, engineer, product, graphql, node.js, JavaScript, CSS, Tailwind, Accessibility, Analytics",
-        "Do not overclaim missing areas: java, swift, kotlin, mysql, firebase, aws",
-        "Log status, recruiter/contact, and next follow-up date in the tracker."
-      ],
-      "outreachEmail": {
-        "subject": "Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka application - Money Forward",
-        "body": "Hi Money Forward team,\n\nI am Alex Chen, and I am interested in the Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.\n\nThe role stood out because it maps closely to my experience with TypeScript, React, Next.js, engineer, product.\n\nI would appreciate the chance to share how my experience can support the team. Thank you for your time.\n\nBest,\nAlex Chen"
-      },
-      "followUp": {
-        "timing": "3-5 business days after applying or the last recruiter interaction.",
-        "body": "Hi Money Forward team,\n\nI wanted to follow up on my application for the Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka role. I remain interested and would be glad to provide any additional context about my background.\n\nThank you again for your time.\n\nBest,\nAlex Chen"
-      },
-      "interviewPrep": [
-        "Prepare a 60-second story for why Money Forward and why Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka.",
-        "Prepare evidence for: TypeScript, React, Next.js, engineer, product, graphql.",
-        "Prepare one STAR story about execution under ambiguity.",
-        "Prepare one STAR story about collaboration and tradeoff decisions.",
-        "Prepare questions about team priorities, success metrics, and hiring timeline."
-      ],
-      "negotiationPrep": [
-        "Wait for a clear offer before anchoring compensation.",
-        "Ask for total compensation breakdown, work mode, title, level, review cycle, and start date.",
-        "Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.",
-        "Use competing priorities and role fit, not personal need, as the negotiation frame."
-      ]
-    },
-    {
-      "jobKey": "url:https://japan-dev.com/jobs/artytech/artytech-tech-lead--cto-candidate-full-stack-25pe6i",
-      "title": "Tech Lead / CTO Candidate (Full-stack)",
-      "company": "Artytech",
-      "score": "72/B",
-      "priority": "P1",
-      "applyChecklist": [
-        "Open the source URL and confirm the role is still active.",
-        "Generate or refresh the tailored ATS PDF from this job.",
-        "Mirror these keywords honestly: JavaScript, React, CSS, engineer, product, graphql, node.js, TypeScript, Next.js, Tailwind, Accessibility, Analytics",
-        "Do not overclaim missing areas: vue, aws, html, crm, growth",
-        "Log status, recruiter/contact, and next follow-up date in the tracker."
-      ],
-      "outreachEmail": {
-        "subject": "Tech Lead / CTO Candidate (Full-stack) application - Artytech",
-        "body": "Hi Artytech team,\n\nI am Alex Chen, and I am interested in the Tech Lead / CTO Candidate (Full-stack) role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.\n\nThe role stood out because it maps closely to my experience with JavaScript, React, CSS, engineer, product.\n\nI would appreciate the chance to share how my experience can support the team. Thank you for your time.\n\nBest,\nAlex Chen"
-      },
-      "followUp": {
-        "timing": "3-5 business days after applying or the last recruiter interaction.",
-        "body": "Hi Artytech team,\n\nI wanted to follow up on my application for the Tech Lead / CTO Candidate (Full-stack) role. I remain interested and would be glad to provide any additional context about my background.\n\nThank you again for your time.\n\nBest,\nAlex Chen"
-      },
-      "interviewPrep": [
-        "Prepare a 60-second story for why Artytech and why Tech Lead / CTO Candidate (Full-stack).",
-        "Prepare evidence for: JavaScript, React, CSS, engineer, product, graphql.",
-        "Prepare one STAR story about execution under ambiguity.",
-        "Prepare one STAR story about collaboration and tradeoff decisions.",
-        "Prepare questions about team priorities, success metrics, and hiring timeline."
-      ],
-      "negotiationPrep": [
-        "Wait for a clear offer before anchoring compensation.",
-        "Ask for total compensation breakdown, work mode, title, level, review cycle, and start date.",
-        "Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.",
-        "Use competing priorities and role fit, not personal need, as the negotiation frame."
-      ]
-    },
-    {
-      "jobKey": "url:https://cardlytics.wd5.myworkdayjobs.com/cardlyticsexternalcareersite/job/taipei-city/senior-software-engineer_jr100384",
-      "title": "Senior Software Engineer",
-      "company": "Cardlytics Workday Taiwan",
-      "score": "70/C",
-      "priority": "P1",
-      "applyChecklist": [
-        "Open the source URL and confirm the role is still active.",
-        "Generate or refresh the tailored ATS PDF from this job.",
-        "Mirror these keywords honestly: TypeScript, API, engineer, product, data, JavaScript, React, Next.js, CSS, Tailwind, Accessibility, Analytics",
-        "Do not overclaim missing areas: python, java, go, aws, terraform, airflow",
-        "Log status, recruiter/contact, and next follow-up date in the tracker."
-      ],
-      "outreachEmail": {
-        "subject": "Senior Software Engineer application - Cardlytics Workday Taiwan",
-        "body": "Hi Cardlytics Workday Taiwan team,\n\nI am Alex Chen, and I am interested in the Senior Software Engineer role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.\n\nThe role stood out because it maps closely to my experience with TypeScript, API, engineer, product, data.\n\nI would appreciate the chance to share how my experience can support the team. Thank you for your time.\n\nBest,\nAlex Chen"
-      },
-      "followUp": {
-        "timing": "3-5 business days after applying or the last recruiter interaction.",
-        "body": "Hi Cardlytics Workday Taiwan team,\n\nI wanted to follow up on my application for the Senior Software Engineer role. I remain interested and would be glad to provide any additional context about my background.\n\nThank you again for your time.\n\nBest,\nAlex Chen"
-      },
-      "interviewPrep": [
-        "Prepare a 60-second story for why Cardlytics Workday Taiwan and why Senior Software Engineer.",
-        "Prepare evidence for: TypeScript, API, engineer, product, data.",
-        "Prepare one STAR story about execution under ambiguity.",
-        "Prepare one STAR story about collaboration and tradeoff decisions.",
-        "Prepare questions about team priorities, success metrics, and hiring timeline."
-      ],
-      "negotiationPrep": [
-        "Wait for a clear offer before anchoring compensation.",
-        "Ask for total compensation breakdown, work mode, title, level, review cycle, and start date.",
-        "Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.",
-        "Use competing priorities and role fit, not personal need, as the negotiation frame."
-      ]
-    },
-    {
-      "jobKey": "url:https://japan-dev.com/jobs/shizuku-ai/shizuku-ai-software-engineer-backend-zvv206",
-      "title": "Software Engineer, Backend",
-      "company": "Shizuku AI",
-      "score": "69/C",
-      "priority": "P2",
-      "applyChecklist": [
-        "Open the source URL and confirm the role is still active.",
-        "Generate or refresh the tailored ATS PDF from this job.",
-        "Mirror these keywords honestly: TypeScript, remote, engineer, product, data, JavaScript, React, Next.js, CSS, Tailwind, Accessibility, Analytics",
-        "Do not overclaim missing areas: python, swift, aws, llm",
-        "Log status, recruiter/contact, and next follow-up date in the tracker."
-      ],
-      "outreachEmail": {
-        "subject": "Software Engineer, Backend application - Shizuku AI",
-        "body": "Hi Shizuku AI team,\n\nI am Alex Chen, and I am interested in the Software Engineer, Backend role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.\n\nThe role stood out because it maps closely to my experience with TypeScript, remote, engineer, product, data.\n\nI would appreciate the chance to share how my experience can support the team. Thank you for your time.\n\nBest,\nAlex Chen"
-      },
-      "followUp": {
-        "timing": "3-5 business days after applying or the last recruiter interaction.",
-        "body": "Hi Shizuku AI team,\n\nI wanted to follow up on my application for the Software Engineer, Backend role. I remain interested and would be glad to provide any additional context about my background.\n\nThank you again for your time.\n\nBest,\nAlex Chen"
-      },
-      "interviewPrep": [
-        "Prepare a 60-second story for why Shizuku AI and why Software Engineer, Backend.",
-        "Prepare evidence for: TypeScript, remote, engineer, product, data.",
-        "Prepare one STAR story about execution under ambiguity.",
-        "Prepare one STAR story about collaboration and tradeoff decisions.",
-        "Prepare questions about team priorities, success metrics, and hiring timeline."
-      ],
-      "negotiationPrep": [
-        "Wait for a clear offer before anchoring compensation.",
-        "Ask for total compensation breakdown, work mode, title, level, review cycle, and start date.",
-        "Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.",
-        "Use competing priorities and role fit, not personal need, as the negotiation frame."
-      ]
-    },
-    {
-      "jobKey": "url:https://japan-dev.com/jobs/axelspace/axelspace-earth-observation-data-scientist-9s0x5x",
-      "title": "Data Scientist / ML Engineer",
-      "company": "Axelspace",
-      "score": "69/C",
-      "priority": "P2",
-      "applyChecklist": [
-        "Open the source URL and confirm the role is still active.",
-        "Generate or refresh the tailored ATS PDF from this job.",
-        "Mirror these keywords honestly: Analytics, remote, engineer, product, data, JavaScript, TypeScript, React, Next.js, CSS, Tailwind, Accessibility",
-        "Do not overclaim missing areas: python, aws, docker, terraform, machine learning, deep learning",
-        "Log status, recruiter/contact, and next follow-up date in the tracker."
-      ],
-      "outreachEmail": {
-        "subject": "Data Scientist / ML Engineer application - Axelspace",
-        "body": "Hi Axelspace team,\n\nI am Alex Chen, and I am interested in the Data Scientist / ML Engineer role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.\n\nThe role stood out because it maps closely to my experience with Analytics, remote, engineer, product, data.\n\nI would appreciate the chance to share how my experience can support the team. Thank you for your time.\n\nBest,\nAlex Chen"
-      },
-      "followUp": {
-        "timing": "3-5 business days after applying or the last recruiter interaction.",
-        "body": "Hi Axelspace team,\n\nI wanted to follow up on my application for the Data Scientist / ML Engineer role. I remain interested and would be glad to provide any additional context about my background.\n\nThank you again for your time.\n\nBest,\nAlex Chen"
-      },
-      "interviewPrep": [
-        "Prepare a 60-second story for why Axelspace and why Data Scientist / ML Engineer.",
-        "Prepare evidence for: Analytics, remote, engineer, product, data.",
-        "Prepare one STAR story about execution under ambiguity.",
-        "Prepare one STAR story about collaboration and tradeoff decisions.",
-        "Prepare questions about team priorities, success metrics, and hiring timeline."
-      ],
-      "negotiationPrep": [
-        "Wait for a clear offer before anchoring compensation.",
-        "Ask for total compensation breakdown, work mode, title, level, review cycle, and start date.",
-        "Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.",
-        "Use competing priorities and role fit, not personal need, as the negotiation frame."
-      ]
-    },
-    {
-      "jobKey": "url:https://japan-dev.com/jobs/metanomaly/metanomaly-growth-engineer-saozy2",
-      "title": "Growth Engineer",
-      "company": "Metanomaly",
-      "score": "69/C",
-      "priority": "P2",
-      "applyChecklist": [
-        "Open the source URL and confirm the role is still active.",
-        "Generate or refresh the tailored ATS PDF from this job.",
-        "Mirror these keywords honestly: API, engineer, product, data, JavaScript, TypeScript, React, Next.js, CSS, Tailwind, Accessibility, Analytics",
-        "Do not overclaim missing areas: sql, growth",
-        "Log status, recruiter/contact, and next follow-up date in the tracker."
-      ],
-      "outreachEmail": {
-        "subject": "Growth Engineer application - Metanomaly",
-        "body": "Hi Metanomaly team,\n\nI am Alex Chen, and I am interested in the Growth Engineer role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.\n\nThe role stood out because it maps closely to my experience with API, engineer, product, data.\n\nI would appreciate the chance to share how my experience can support the team. Thank you for your time.\n\nBest,\nAlex Chen"
-      },
-      "followUp": {
-        "timing": "3-5 business days after applying or the last recruiter interaction.",
-        "body": "Hi Metanomaly team,\n\nI wanted to follow up on my application for the Growth Engineer role. I remain interested and would be glad to provide any additional context about my background.\n\nThank you again for your time.\n\nBest,\nAlex Chen"
-      },
-      "interviewPrep": [
-        "Prepare a 60-second story for why Metanomaly and why Growth Engineer.",
+        "Prepare a 60-second story for why Money Forward and why Lead Backend Engineer, Digital Bank.",
         "Prepare evidence for: API, engineer, product, data.",
         "Prepare one STAR story about execution under ambiguity.",
         "Prepare one STAR story about collaboration and tradeoff decisions.",

@@ -1,10 +1,10 @@
 # Career Ops Source Strategy Report
 
 - Strategy: Career Ops Source Strategy Example
-- Built at: 2026-05-17T23:13:48.339Z
+- Built at: 2026-05-20T00:31:01.640Z
 - Markets: all
 - Sources: 73
-- Search queries: 40
+- Search queries: 45
 
 ## Sources by Market
 
@@ -146,5 +146,10 @@ These queries are intentionally kept as strategy signals. Add a search adapter o
 | sg | site:grab.careers Singapore software engineer |
 | sg | site:career.sea.com Singapore data analyst |
 | sg | site:tech.gov.sg/careers Singapore product manager |
+| sg | site:mycareersfuture.gov.sg Singapore software engineer |
+| sg | site:sg.indeed.com Singapore software engineer |
+| sg | site:sg.indeed.com Singapore frontend engineer |
+| sg | site:jobstreet.com.sg Singapore data analyst product manager |
+| sg | site:nodeflair.com Singapore software engineer |
 | global | site:jobs.lever.co remote full stack engineer |
 | global | site:boards.greenhouse.io remote data scientist |

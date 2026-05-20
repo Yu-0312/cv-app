@@ -1,230 +1,265 @@
 window.CV_CAREER_OPS_LEARNING = {
   "source": "career-ops-learning",
-  "generatedAt": "2026-05-17T23:21:27.521Z",
+  "generatedAt": "2026-05-20T00:58:39.739Z",
   "learning": {
-    "activeJobCount": 293,
-    "positiveSignalCount": 126,
-    "negativeSignalCount": 12,
+    "activeJobCount": 84260,
+    "positiveSignalCount": 81782,
+    "negativeSignalCount": 0,
     "preferredSkills": [
       {
-        "name": "engineer",
-        "score": 425
+        "name": "data",
+        "score": 36300.5
       },
       {
-        "name": "data",
-        "score": 359.5
+        "name": "api",
+        "score": 35437.2
+      },
+      {
+        "name": "API",
+        "score": 35409.3
       },
       {
         "name": "product",
-        "score": 321.3
+        "score": 27991.2
       },
       {
         "name": "growth",
-        "score": 194.8
+        "score": 24076.2
       },
       {
         "name": "operations",
-        "score": 161.1
+        "score": 22763
       },
       {
-        "name": "aws",
-        "score": 160.5
+        "name": "analytics",
+        "score": 19176.6
+      },
+      {
+        "name": "Analytics",
+        "score": 18279.7
+      },
+      {
+        "name": "remote",
+        "score": 17756.6
+      },
+      {
+        "name": "sales",
+        "score": 16903
+      },
+      {
+        "name": "engineer",
+        "score": 16418.8
       },
       {
         "name": "python",
-        "score": 150
-      },
-      {
-        "name": "docker",
-        "score": 108
-      },
-      {
-        "name": "terraform",
-        "score": 104.4
-      },
-      {
-        "name": "gcp",
-        "score": 95.8
-      },
-      {
-        "name": "agents",
-        "score": 94.1
-      },
-      {
-        "name": "react",
-        "score": 88.7
-      },
-      {
-        "name": "React",
-        "score": 88.7
-      },
-      {
-        "name": "graphql",
-        "score": 82.3
+        "score": 12173.7
       },
       {
         "name": "go",
-        "score": 78.2
+        "score": 10103
       },
       {
-        "name": "typescript",
-        "score": 76.1
+        "name": "sql",
+        "score": 8486.2
       },
       {
-        "name": "TypeScript",
-        "score": 76.1
+        "name": "excel",
+        "score": 7585.7
       },
       {
-        "name": "node.js",
-        "score": 73.5
+        "name": "aws",
+        "score": 6566.1
+      },
+      {
+        "name": "machine learning",
+        "score": 5502.6
+      },
+      {
+        "name": "java",
+        "score": 5258
       }
     ],
     "avoidSignals": [],
     "preferredCompanies": [
       {
-        "name": "Money Forward",
-        "score": 106.2
+        "name": "Zhaopin China Job Sitemap",
+        "score": 94500
       },
       {
-        "name": "NVIDIA Workday",
-        "score": 69
+        "name": "1111 Taiwan Job Sitemap",
+        "score": 63000
       },
       {
-        "name": "Micron Workday",
-        "score": 62
+        "name": "Mynavi Tenshoku Japan Sitemap",
+        "score": 46500
       },
       {
-        "name": "Logitech Workday Taiwan",
-        "score": 45.1
+        "name": "JAC Recruitment Japan Detail Sitemap",
+        "score": 15500
       },
       {
-        "name": "Intel Workday Taiwan",
-        "score": 34.9
+        "name": "SpaceX",
+        "score": 2801.2
       },
       {
-        "name": "Gogolook",
-        "score": 29.5
+        "name": "Databricks Greenhouse",
+        "score": 2573.8
       },
       {
-        "name": "Applied Materials Workday",
-        "score": 22.6
+        "name": "Uber",
+        "score": 2500.2
       },
       {
-        "name": "AI Robot Association (AIRoA)",
-        "score": 17.2
+        "name": "Walmart",
+        "score": 2467.1
       },
       {
-        "name": "PayPay",
-        "score": 14.1
+        "name": "GE Vernova",
+        "score": 2067.1
       },
       {
-        "name": "Geniee",
-        "score": 11.6
+        "name": "Stripe Greenhouse",
+        "score": 1702.3
       },
       {
-        "name": "Metanomaly",
-        "score": 10.8
+        "name": "Bank of America",
+        "score": 1686.9
       },
       {
-        "name": "Shizuku AI",
-        "score": 9.7
+        "name": "MongoDB Greenhouse",
+        "score": 1334.5
       }
     ],
     "preferredSources": [
       {
+        "name": "market-sitemap",
+        "score": 219500
+      },
+      {
+        "name": "cn",
+        "score": 95056.4
+      },
+      {
         "name": "tw",
-        "score": 273
-      },
-      {
-        "name": "tracked-company",
-        "score": 268.5
-      },
-      {
-        "name": "flex-job-board",
-        "score": 267.5
+        "score": 64576.8
       },
       {
         "name": "jp",
-        "score": 263
+        "score": 64156.2
       },
       {
-        "name": "ai-semiconductor",
-        "score": 69
+        "name": "market-public-api",
+        "score": 36345
       },
       {
-        "name": "semiconductor-memory",
-        "score": 62
+        "name": "global",
+        "score": 20347.5
       },
       {
-        "name": "consumer-electronics",
-        "score": 45.1
+        "name": "us",
+        "score": 16290.6
       },
       {
-        "name": "semiconductor",
-        "score": 34.9
+        "name": "flex-seed-source",
+        "score": 14359.2
       },
       {
-        "name": "consumer-security",
-        "score": 29.5
+        "name": "in",
+        "score": 3452
       },
       {
-        "name": "semiconductor-equipment",
-        "score": 22.6
+        "name": "sg",
+        "score": 2857.2
       },
       {
-        "name": "commerce-intelligence",
-        "score": 5.5
+        "name": "uk",
+        "score": 1102
+      },
+      {
+        "name": "ca",
+        "score": 1078.4
       }
     ],
     "roleFamilies": [
       {
         "name": "Backend",
-        "score": 221.5
+        "score": 262183.7
       },
       {
         "name": "Frontend",
-        "score": 137.3
+        "score": 4456.8
       },
       {
         "name": "AI / Data",
-        "score": 111.4
+        "score": 2851.6
       },
       {
-        "name": "Design",
-        "score": 24.2
+        "name": "Sales",
+        "score": 1244.2
       },
       {
         "name": "Other",
-        "score": 17
-      },
-      {
-        "name": "Operations",
-        "score": 11.8
+        "score": 949
       },
       {
         "name": "Marketing",
-        "score": 5.3
+        "score": 813.2
       },
       {
-        "name": "Full Stack",
-        "score": 4.8
+        "name": "Design",
+        "score": 540.7
+      },
+      {
+        "name": "Product",
+        "score": 528.5
       }
     ],
     "sourceCoverage": {
-      "sourceCount": 93,
-      "searchQueryCount": 651,
+      "sourceCount": 421,
+      "searchQueryCount": 10557,
       "markets": [
         "tw",
         "cn",
         "jp",
         "kr",
         "sg",
-        "global"
+        "global",
+        "us",
+        "ca",
+        "uk",
+        "ie",
+        "de",
+        "nl",
+        "fr",
+        "es",
+        "it",
+        "se",
+        "dk",
+        "no",
+        "pl",
+        "pt",
+        "au",
+        "nz",
+        "in",
+        "br",
+        "mx",
+        "ch",
+        "fi",
+        "cz",
+        "za",
+        "id",
+        "my",
+        "ph",
+        "vn",
+        "th",
+        "il",
+        "hk",
+        "ae"
       ]
     },
     "nextStrategy": [
-      "Expand searches around engineer, data, product, growth, operations.",
-      "Prioritize sources like tw, tracked-company, flex-job-board, jp.",
+      "Expand searches around data, api, API, product, growth.",
+      "Prioritize sources like market-sitemap, cn, tw, jp.",
       "No strong avoid pattern learned yet.",
       "Refresh this learning layer after each batch evaluation or feedback session."
     ],
@@ -237,14 +272,13 @@ window.CV_CAREER_OPS_LEARNING = {
           "analytics",
           "TypeScript",
           "React",
-          "engineer",
           "data",
+          "api",
+          "API",
           "product",
           "growth",
           "operations",
-          "aws",
-          "python",
-          "docker"
+          "Analytics"
         ],
         "avoidKeywords": [
           "commission-only",
@@ -256,14 +290,14 @@ window.CV_CAREER_OPS_LEARNING = {
           "Linear",
           "Notion",
           "Vercel",
-          "Money Forward",
-          "NVIDIA Workday",
-          "Micron Workday",
-          "Logitech Workday Taiwan",
-          "Intel Workday Taiwan",
-          "Gogolook",
-          "Applied Materials Workday",
-          "AI Robot Association (AIRoA)"
+          "Zhaopin China Job Sitemap",
+          "1111 Taiwan Job Sitemap",
+          "Mynavi Tenshoku Japan Sitemap",
+          "JAC Recruitment Japan Detail Sitemap",
+          "SpaceX",
+          "Databricks Greenhouse",
+          "Uber",
+          "Walmart"
         ]
       }
     }

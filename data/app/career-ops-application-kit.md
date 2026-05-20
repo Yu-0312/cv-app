@@ -1,6 +1,6 @@
 # Career Ops Application Kit
 
-Generated: 2026-05-17T23:21:25.280Z
+Generated: 2026-05-20T00:58:15.140Z
 Jobs: 12
 
 ## Pipeline
@@ -10,26 +10,38 @@ Jobs: 12
 - Interview: map JD keywords to STAR stories and questions.
 - Negotiation: total-comp package and role-level calibration after offer.
 
-## Geniee - JAPAN AI - Product Manager, AI SaaS
+## VANGUARD SOFTWARE PTE. LTD. - Expert Frontend Engineer (React.JS & React Native)
 
-- Priority: P1
-- Score: 77/B
-- Subject: JAPAN AI - Product Manager, AI SaaS application - Geniee
+- Priority: P0
+- Score: 95/A
+- Subject: Expert Frontend Engineer (React.JS & React Native) application - VANGUARD SOFTWARE PTE. LTD.
+
+- Block G: High Confidence
+- Rating: 4.8/5.0
+
+### ATS Keyword Injection
+- Archetype: Frontend Engineer
+- Coverage: 100%
+- JD Keywords: JavaScript, TypeScript, React, Next.js, CSS, Accessibility, Design Systems, design system
+- 在 Professional Summary 中自然帶入：JavaScript、TypeScript、React、Next.js、CSS
+- 使用職位語言：「Frontend Engineer」方向的動詞和術語
+- 【你已有但此 JD 未要求】可視情況選擇性提及：html、growth
+- Missing (do NOT fabricate): html, growth
 
 ### Apply Checklist
 - Open the source URL and confirm the role is still active.
 - Generate or refresh the tailored ATS PDF from this job.
-- Mirror these keywords honestly: TypeScript, React, Next.js, API, engineer, product, data, JavaScript, CSS, Tailwind, Accessibility, Analytics
-- Do not overclaim missing areas: python, aws, gcp, azure, docker, terraform
+- Mirror these JD keywords honestly in your CV: JavaScript, TypeScript, React, Next.js, CSS, Accessibility, Design Systems, design system
+- Do not overclaim missing areas: html, growth
 - Log status, recruiter/contact, and next follow-up date in the tracker.
 
 ### Outreach Email
 ```text
-Hi Geniee team,
+Hi VANGUARD SOFTWARE PTE. LTD. team,
 
-I am Alex Chen, and I am interested in the JAPAN AI - Product Manager, AI SaaS role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.
+I am Alex Chen, and I am interested in the Expert Frontend Engineer (React.JS & React Native) role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.
 
-The role stood out because it maps closely to my experience with TypeScript, React, Next.js, API, engineer.
+The role stood out because it maps closely to my experience with JavaScript, TypeScript, React, Next.js, CSS.
 
 I would appreciate the chance to share how my experience can support the team. Thank you for your time.
 
@@ -40,9 +52,9 @@ Alex Chen
 ### Follow-up
 Timing: 3-5 business days after applying or the last recruiter interaction.
 ```text
-Hi Geniee team,
+Hi VANGUARD SOFTWARE PTE. LTD. team,
 
-I wanted to follow up on my application for the JAPAN AI - Product Manager, AI SaaS role. I remain interested and would be glad to provide any additional context about my background.
+I wanted to follow up on my application for the Expert Frontend Engineer (React.JS & React Native) role. I remain interested and would be glad to provide any additional context about my background.
 
 Thank you again for your time.
 
@@ -51,8 +63,8 @@ Alex Chen
 ```
 
 ### Interview Prep
-- Prepare a 60-second story for why Geniee and why JAPAN AI - Product Manager, AI SaaS.
-- Prepare evidence for: TypeScript, React, Next.js, API, engineer, product.
+- Prepare a 60-second story for why VANGUARD SOFTWARE PTE. LTD. and why Expert Frontend Engineer (React.JS & React Native).
+- Prepare evidence for: JavaScript, TypeScript, React, Next.js, CSS, Accessibility.
 - Prepare one STAR story about execution under ambiguity.
 - Prepare one STAR story about collaboration and tradeoff decisions.
 - Prepare questions about team priorities, success metrics, and hiring timeline.
@@ -63,26 +75,38 @@ Alex Chen
 - Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.
 - Use competing priorities and role fit, not personal need, as the negotiation frame.
 
-## AI Robot Association (AIRoA) - Full Stack Engineer
+## BIFROST PTE. LTD. - Frontend Engineer
 
-- Priority: P1
-- Score: 76/B
-- Subject: Full Stack Engineer application - AI Robot Association (AIRoA)
+- Priority: P0
+- Score: 95/A
+- Subject: Frontend Engineer application - BIFROST PTE. LTD.
+
+- Block G: High Confidence
+- Rating: 4.8/5.0
+
+### ATS Keyword Injection
+- Archetype: Frontend Engineer
+- Coverage: 100%
+- JD Keywords: JavaScript, React, engineer, product, data, restful, graphql, node.js
+- 在 Professional Summary 中自然帶入：JavaScript、React、engineer、product、data
+- 使用職位語言：「Frontend Engineer」方向的動詞和術語
+- 【你已有但此 JD 未要求】可視情況選擇性提及：vue、angular、python、java、go
+- Missing (do NOT fabricate): vue, angular, python, java, go, mysql, aws, gcp
 
 ### Apply Checklist
 - Open the source URL and confirm the role is still active.
 - Generate or refresh the tailored ATS PDF from this job.
-- Mirror these keywords honestly: React, Next.js, engineer, dashboards., data, visualization, dashboards, JavaScript, TypeScript, CSS, Tailwind, Accessibility
-- Do not overclaim missing areas: python, go, aws, gcp, terraform
+- Mirror these JD keywords honestly in your CV: JavaScript, React, engineer, product, data, restful, graphql, node.js
+- Do not overclaim missing areas: vue, angular, python, java, go, mysql
 - Log status, recruiter/contact, and next follow-up date in the tracker.
 
 ### Outreach Email
 ```text
-Hi AI Robot Association (AIRoA) team,
+Hi BIFROST PTE. LTD. team,
 
-I am Alex Chen, and I am interested in the Full Stack Engineer role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.
+I am Alex Chen, and I am interested in the Frontend Engineer role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.
 
-The role stood out because it maps closely to my experience with React, Next.js, engineer, dashboards., data.
+The role stood out because it maps closely to my experience with JavaScript, React, engineer, product, data.
 
 I would appreciate the chance to share how my experience can support the team. Thank you for your time.
 
@@ -93,9 +117,9 @@ Alex Chen
 ### Follow-up
 Timing: 3-5 business days after applying or the last recruiter interaction.
 ```text
-Hi AI Robot Association (AIRoA) team,
+Hi BIFROST PTE. LTD. team,
 
-I wanted to follow up on my application for the Full Stack Engineer role. I remain interested and would be glad to provide any additional context about my background.
+I wanted to follow up on my application for the Frontend Engineer role. I remain interested and would be glad to provide any additional context about my background.
 
 Thank you again for your time.
 
@@ -104,8 +128,8 @@ Alex Chen
 ```
 
 ### Interview Prep
-- Prepare a 60-second story for why AI Robot Association (AIRoA) and why Full Stack Engineer.
-- Prepare evidence for: React, Next.js, engineer, dashboards., data, visualization.
+- Prepare a 60-second story for why BIFROST PTE. LTD. and why Frontend Engineer.
+- Prepare evidence for: JavaScript, React, engineer, product, data, restful.
 - Prepare one STAR story about execution under ambiguity.
 - Prepare one STAR story about collaboration and tradeoff decisions.
 - Prepare questions about team priorities, success metrics, and hiring timeline.
@@ -116,26 +140,38 @@ Alex Chen
 - Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.
 - Use competing priorities and role fit, not personal need, as the negotiation frame.
 
-## Geniee - JAPAN AI - Research Engineer, LLM
+## BIFROST PTE. LTD. - Frontend Engineer
 
-- Priority: P1
-- Score: 76/B
-- Subject: JAPAN AI - Research Engineer, LLM application - Geniee
+- Priority: P0
+- Score: 95/A
+- Subject: Frontend Engineer application - BIFROST PTE. LTD.
+
+- Block G: High Confidence
+- Rating: 4.8/5.0
+
+### ATS Keyword Injection
+- Archetype: Frontend Engineer
+- Coverage: 100%
+- JD Keywords: JavaScript, React, engineer, product, data, restful, graphql, node.js
+- 在 Professional Summary 中自然帶入：JavaScript、React、engineer、product、data
+- 使用職位語言：「Frontend Engineer」方向的動詞和術語
+- 【你已有但此 JD 未要求】可視情況選擇性提及：vue、angular、python、java、go
+- Missing (do NOT fabricate): vue, angular, python, java, go, mysql, aws, gcp
 
 ### Apply Checklist
 - Open the source URL and confirm the role is still active.
 - Generate or refresh the tailored ATS PDF from this job.
-- Mirror these keywords honestly: TypeScript, React, Next.js, engineer, product, data, JavaScript, CSS, Tailwind, Accessibility, Analytics, API
-- Do not overclaim missing areas: python, gcp, docker, llm, agents, prompt engineering
+- Mirror these JD keywords honestly in your CV: JavaScript, React, engineer, product, data, restful, graphql, node.js
+- Do not overclaim missing areas: vue, angular, python, java, go, mysql
 - Log status, recruiter/contact, and next follow-up date in the tracker.
 
 ### Outreach Email
 ```text
-Hi Geniee team,
+Hi BIFROST PTE. LTD. team,
 
-I am Alex Chen, and I am interested in the JAPAN AI - Research Engineer, LLM role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.
+I am Alex Chen, and I am interested in the Frontend Engineer role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.
 
-The role stood out because it maps closely to my experience with TypeScript, React, Next.js, engineer, product.
+The role stood out because it maps closely to my experience with JavaScript, React, engineer, product, data.
 
 I would appreciate the chance to share how my experience can support the team. Thank you for your time.
 
@@ -146,9 +182,9 @@ Alex Chen
 ### Follow-up
 Timing: 3-5 business days after applying or the last recruiter interaction.
 ```text
-Hi Geniee team,
+Hi BIFROST PTE. LTD. team,
 
-I wanted to follow up on my application for the JAPAN AI - Research Engineer, LLM role. I remain interested and would be glad to provide any additional context about my background.
+I wanted to follow up on my application for the Frontend Engineer role. I remain interested and would be glad to provide any additional context about my background.
 
 Thank you again for your time.
 
@@ -157,8 +193,8 @@ Alex Chen
 ```
 
 ### Interview Prep
-- Prepare a 60-second story for why Geniee and why JAPAN AI - Research Engineer, LLM.
-- Prepare evidence for: TypeScript, React, Next.js, engineer, product, data.
+- Prepare a 60-second story for why BIFROST PTE. LTD. and why Frontend Engineer.
+- Prepare evidence for: JavaScript, React, engineer, product, data, restful.
 - Prepare one STAR story about execution under ambiguity.
 - Prepare one STAR story about collaboration and tradeoff decisions.
 - Prepare questions about team priorities, success metrics, and hiring timeline.
@@ -169,26 +205,38 @@ Alex Chen
 - Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.
 - Use competing priorities and role fit, not personal need, as the negotiation frame.
 
-## AI Robot Association (AIRoA) - Design Engineer
+## TIKTOK PTE. LTD. - Frontend Software Engineer (Payment), TikTok Live - Singapore
 
-- Priority: P1
-- Score: 75/B
-- Subject: Design Engineer application - AI Robot Association (AIRoA)
+- Priority: P0
+- Score: 95/A
+- Subject: Frontend Software Engineer (Payment), TikTok Live - Singapore application - TIKTOK PTE. LTD.
+
+- Block G: High Confidence
+- Rating: 4.8/5.0
+
+### ATS Keyword Injection
+- Archetype: Frontend Engineer
+- Coverage: 100%
+- JD Keywords: JavaScript, CSS, remote, engineer, product, data, API
+- 在 Professional Summary 中自然帶入：JavaScript、CSS、remote、engineer、product
+- 使用職位語言：「Frontend Engineer」方向的動詞和術語
+- 【你已有但此 JD 未要求】可視情況選擇性提及：html、growth
+- Missing (do NOT fabricate): html, growth
 
 ### Apply Checklist
 - Open the source URL and confirm the role is still active.
 - Generate or refresh the tailored ATS PDF from this job.
-- Mirror these keywords honestly: React, Next.js, Figma, design system, engineer, product, data, visualization, JavaScript, TypeScript, CSS, Tailwind
-- Do not overclaim missing areas: vue, angular, operations
+- Mirror these JD keywords honestly in your CV: JavaScript, CSS, remote, engineer, product, data, API
+- Do not overclaim missing areas: html, growth
 - Log status, recruiter/contact, and next follow-up date in the tracker.
 
 ### Outreach Email
 ```text
-Hi AI Robot Association (AIRoA) team,
+Hi TIKTOK PTE. LTD. team,
 
-I am Alex Chen, and I am interested in the Design Engineer role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.
+I am Alex Chen, and I am interested in the Frontend Software Engineer (Payment), TikTok Live - Singapore role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.
 
-The role stood out because it maps closely to my experience with React, Next.js, Figma, design system, engineer.
+The role stood out because it maps closely to my experience with JavaScript, CSS, remote, engineer, product.
 
 I would appreciate the chance to share how my experience can support the team. Thank you for your time.
 
@@ -199,9 +247,9 @@ Alex Chen
 ### Follow-up
 Timing: 3-5 business days after applying or the last recruiter interaction.
 ```text
-Hi AI Robot Association (AIRoA) team,
+Hi TIKTOK PTE. LTD. team,
 
-I wanted to follow up on my application for the Design Engineer role. I remain interested and would be glad to provide any additional context about my background.
+I wanted to follow up on my application for the Frontend Software Engineer (Payment), TikTok Live - Singapore role. I remain interested and would be glad to provide any additional context about my background.
 
 Thank you again for your time.
 
@@ -210,8 +258,8 @@ Alex Chen
 ```
 
 ### Interview Prep
-- Prepare a 60-second story for why AI Robot Association (AIRoA) and why Design Engineer.
-- Prepare evidence for: React, Next.js, Figma, design system, engineer, product.
+- Prepare a 60-second story for why TIKTOK PTE. LTD. and why Frontend Software Engineer (Payment), TikTok Live - Singapore.
+- Prepare evidence for: JavaScript, CSS, remote, engineer, product, data.
 - Prepare one STAR story about execution under ambiguity.
 - Prepare one STAR story about collaboration and tradeoff decisions.
 - Prepare questions about team priorities, success metrics, and hiring timeline.
@@ -222,26 +270,38 @@ Alex Chen
 - Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.
 - Use competing priorities and role fit, not personal need, as the negotiation frame.
 
-## Micron Workday - Senior Full Stack Software Engineer
+## TIKTOK PTE. LTD. - Frontend Software Engineer (Payment) - TikTok Live - Singapore
 
-- Priority: P1
-- Score: 74/B
-- Subject: Senior Full Stack Software Engineer application - Micron Workday
+- Priority: P0
+- Score: 95/A
+- Subject: Frontend Software Engineer (Payment) - TikTok Live - Singapore application - TIKTOK PTE. LTD.
+
+- Block G: High Confidence
+- Rating: 4.8/5.0
+
+### ATS Keyword Injection
+- Archetype: Frontend Engineer
+- Coverage: 100%
+- JD Keywords: JavaScript, CSS, remote, engineer, product, data, API
+- 在 Professional Summary 中自然帶入：JavaScript、CSS、remote、engineer、product
+- 使用職位語言：「Frontend Engineer」方向的動詞和術語
+- 【你已有但此 JD 未要求】可視情況選擇性提及：html、growth
+- Missing (do NOT fabricate): html, growth
 
 ### Apply Checklist
 - Open the source URL and confirm the role is still active.
 - Generate or refresh the tailored ATS PDF from this job.
-- Mirror these keywords honestly: JavaScript, TypeScript, React, Analytics, engineer, data, restful, Next.js, CSS, Tailwind, Accessibility, API
-- Do not overclaim missing areas: angular, python, java, docker, kubernetes, machine learning
+- Mirror these JD keywords honestly in your CV: JavaScript, CSS, remote, engineer, product, data, API
+- Do not overclaim missing areas: html, growth
 - Log status, recruiter/contact, and next follow-up date in the tracker.
 
 ### Outreach Email
 ```text
-Hi Micron Workday team,
+Hi TIKTOK PTE. LTD. team,
 
-I am Alex Chen, and I am interested in the Senior Full Stack Software Engineer role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.
+I am Alex Chen, and I am interested in the Frontend Software Engineer (Payment) - TikTok Live - Singapore role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.
 
-The role stood out because it maps closely to my experience with JavaScript, TypeScript, React, Analytics, engineer.
+The role stood out because it maps closely to my experience with JavaScript, CSS, remote, engineer, product.
 
 I would appreciate the chance to share how my experience can support the team. Thank you for your time.
 
@@ -252,9 +312,9 @@ Alex Chen
 ### Follow-up
 Timing: 3-5 business days after applying or the last recruiter interaction.
 ```text
-Hi Micron Workday team,
+Hi TIKTOK PTE. LTD. team,
 
-I wanted to follow up on my application for the Senior Full Stack Software Engineer role. I remain interested and would be glad to provide any additional context about my background.
+I wanted to follow up on my application for the Frontend Software Engineer (Payment) - TikTok Live - Singapore role. I remain interested and would be glad to provide any additional context about my background.
 
 Thank you again for your time.
 
@@ -263,8 +323,8 @@ Alex Chen
 ```
 
 ### Interview Prep
-- Prepare a 60-second story for why Micron Workday and why Senior Full Stack Software Engineer.
-- Prepare evidence for: JavaScript, TypeScript, React, Analytics, engineer, data.
+- Prepare a 60-second story for why TIKTOK PTE. LTD. and why Frontend Software Engineer (Payment) - TikTok Live - Singapore.
+- Prepare evidence for: JavaScript, CSS, remote, engineer, product, data.
 - Prepare one STAR story about execution under ambiguity.
 - Prepare one STAR story about collaboration and tradeoff decisions.
 - Prepare questions about team priorities, success metrics, and hiring timeline.
@@ -275,26 +335,39 @@ Alex Chen
 - Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.
 - Use competing priorities and role fit, not personal need, as the negotiation frame.
 
-## Money Forward - Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka
+## Disney - Lead Software Engineer
 
-- Priority: P1
-- Score: 73/B
-- Subject: Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka application - Money Forward
+- Priority: P0
+- Score: 95/A
+- Subject: Lead Software Engineer application - Disney
+
+- Block G: Proceed with Caution
+- Rating: 4.8/5.0
+
+### ATS Keyword Injection
+- Archetype: Backend Engineer
+- Coverage: 100%
+- JD Keywords: JavaScript, TypeScript, API, engineer, product, data
+- 在 Professional Summary 中自然帶入：JavaScript、TypeScript、API、engineer、product
+- 使用職位語言：「Backend Engineer」方向的動詞和術語
+- 【你已有但此 JD 未要求】可視情況選擇性提及：rust、aws
+- Missing (do NOT fabricate): rust, aws
 
 ### Apply Checklist
 - Open the source URL and confirm the role is still active.
+- ⚠ Block G: Proceed with Caution — double-check recruiter identity.
 - Generate or refresh the tailored ATS PDF from this job.
-- Mirror these keywords honestly: TypeScript, React, Next.js, engineer, product, graphql, node.js, JavaScript, CSS, Tailwind, Accessibility, Analytics
-- Do not overclaim missing areas: java, swift, kotlin, mysql, firebase, aws
+- Mirror these JD keywords honestly in your CV: JavaScript, TypeScript, API, engineer, product, data
+- Do not overclaim missing areas: rust, aws
 - Log status, recruiter/contact, and next follow-up date in the tracker.
 
 ### Outreach Email
 ```text
-Hi Money Forward team,
+Hi Disney team,
 
-I am Alex Chen, and I am interested in the Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.
+I am Alex Chen, and I am interested in the Lead Software Engineer role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.
 
-The role stood out because it maps closely to my experience with TypeScript, React, Next.js, engineer, product.
+The role stood out because it maps closely to my experience with JavaScript, TypeScript, API, engineer, product.
 
 I would appreciate the chance to share how my experience can support the team. Thank you for your time.
 
@@ -305,9 +378,9 @@ Alex Chen
 ### Follow-up
 Timing: 3-5 business days after applying or the last recruiter interaction.
 ```text
-Hi Money Forward team,
+Hi Disney team,
 
-I wanted to follow up on my application for the Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka role. I remain interested and would be glad to provide any additional context about my background.
+I wanted to follow up on my application for the Lead Software Engineer role. I remain interested and would be glad to provide any additional context about my background.
 
 Thank you again for your time.
 
@@ -316,8 +389,8 @@ Alex Chen
 ```
 
 ### Interview Prep
-- Prepare a 60-second story for why Money Forward and why Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka.
-- Prepare evidence for: TypeScript, React, Next.js, engineer, product, graphql.
+- Prepare a 60-second story for why Disney and why Lead Software Engineer.
+- Prepare evidence for: JavaScript, TypeScript, API, engineer, product, data.
 - Prepare one STAR story about execution under ambiguity.
 - Prepare one STAR story about collaboration and tradeoff decisions.
 - Prepare questions about team priorities, success metrics, and hiring timeline.
@@ -328,26 +401,38 @@ Alex Chen
 - Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.
 - Use competing priorities and role fit, not personal need, as the negotiation frame.
 
-## Money Forward - Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka
+## Bank of America - Principal Engineer - GBS IND
 
-- Priority: P1
-- Score: 73/B
-- Subject: Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka application - Money Forward
+- Priority: P0
+- Score: 95/A
+- Subject: Principal Engineer - GBS IND application - Bank of America
+
+- Block G: High Confidence
+- Rating: 4.8/5.0
+
+### ATS Keyword Injection
+- Archetype: Agentic / Automation
+- Coverage: 100%
+- JD Keywords: API, engineer, data
+- 在 Professional Summary 中自然帶入：API、engineer、data
+- 使用職位語言：「Agentic / Automation」方向的動詞和術語
+- 【你已有但此 JD 未要求】可視情況選擇性提及：azure、agents、growth、operations
+- Missing (do NOT fabricate): azure, agents, growth, operations
 
 ### Apply Checklist
 - Open the source URL and confirm the role is still active.
 - Generate or refresh the tailored ATS PDF from this job.
-- Mirror these keywords honestly: TypeScript, React, Next.js, engineer, product, graphql, node.js, JavaScript, CSS, Tailwind, Accessibility, Analytics
-- Do not overclaim missing areas: java, swift, kotlin, mysql, firebase, aws
+- Mirror these JD keywords honestly in your CV: API, engineer, data
+- Do not overclaim missing areas: azure, agents, growth, operations
 - Log status, recruiter/contact, and next follow-up date in the tracker.
 
 ### Outreach Email
 ```text
-Hi Money Forward team,
+Hi Bank of America team,
 
-I am Alex Chen, and I am interested in the Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.
+I am Alex Chen, and I am interested in the Principal Engineer - GBS IND role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.
 
-The role stood out because it maps closely to my experience with TypeScript, React, Next.js, engineer, product.
+The role stood out because it maps closely to my experience with API, engineer, data.
 
 I would appreciate the chance to share how my experience can support the team. Thank you for your time.
 
@@ -358,9 +443,9 @@ Alex Chen
 ### Follow-up
 Timing: 3-5 business days after applying or the last recruiter interaction.
 ```text
-Hi Money Forward team,
+Hi Bank of America team,
 
-I wanted to follow up on my application for the Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka role. I remain interested and would be glad to provide any additional context about my background.
+I wanted to follow up on my application for the Principal Engineer - GBS IND role. I remain interested and would be glad to provide any additional context about my background.
 
 Thank you again for your time.
 
@@ -369,8 +454,8 @@ Alex Chen
 ```
 
 ### Interview Prep
-- Prepare a 60-second story for why Money Forward and why Product Reliability Engineer (CRE), Money Forward Cloud, Fukuoka.
-- Prepare evidence for: TypeScript, React, Next.js, engineer, product, graphql.
+- Prepare a 60-second story for why Bank of America and why Principal Engineer - GBS IND.
+- Prepare evidence for: API, engineer, data.
 - Prepare one STAR story about execution under ambiguity.
 - Prepare one STAR story about collaboration and tradeoff decisions.
 - Prepare questions about team priorities, success metrics, and hiring timeline.
@@ -381,26 +466,38 @@ Alex Chen
 - Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.
 - Use competing priorities and role fit, not personal need, as the negotiation frame.
 
-## Artytech - Tech Lead / CTO Candidate (Full-stack)
+## Uber - Sr Software Engineer, Frontend (Web)
 
-- Priority: P1
-- Score: 72/B
-- Subject: Tech Lead / CTO Candidate (Full-stack) application - Artytech
+- Priority: P0
+- Score: 95/A
+- Subject: Sr Software Engineer, Frontend (Web) application - Uber
+
+- Block G: High Confidence
+- Rating: 4.8/5.0
+
+### ATS Keyword Injection
+- Archetype: Frontend Engineer
+- Coverage: 100%
+- JD Keywords: JavaScript, TypeScript, React, CSS, API, Performance Optimization, engineer, product
+- 在 Professional Summary 中自然帶入：JavaScript、TypeScript、React、CSS、API
+- 使用職位語言：「Frontend Engineer」方向的動詞和術語
+- 【你已有但此 JD 未要求】可視情況選擇性提及：angular、python、go、html、growth
+- Missing (do NOT fabricate): angular, python, go, html, growth
 
 ### Apply Checklist
 - Open the source URL and confirm the role is still active.
 - Generate or refresh the tailored ATS PDF from this job.
-- Mirror these keywords honestly: JavaScript, React, CSS, engineer, product, graphql, node.js, TypeScript, Next.js, Tailwind, Accessibility, Analytics
-- Do not overclaim missing areas: vue, aws, html, crm, growth
+- Mirror these JD keywords honestly in your CV: JavaScript, TypeScript, React, CSS, API, Performance Optimization, engineer, product
+- Do not overclaim missing areas: angular, python, go, html, growth
 - Log status, recruiter/contact, and next follow-up date in the tracker.
 
 ### Outreach Email
 ```text
-Hi Artytech team,
+Hi Uber team,
 
-I am Alex Chen, and I am interested in the Tech Lead / CTO Candidate (Full-stack) role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.
+I am Alex Chen, and I am interested in the Sr Software Engineer, Frontend (Web) role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.
 
-The role stood out because it maps closely to my experience with JavaScript, React, CSS, engineer, product.
+The role stood out because it maps closely to my experience with JavaScript, TypeScript, React, CSS, API.
 
 I would appreciate the chance to share how my experience can support the team. Thank you for your time.
 
@@ -411,9 +508,9 @@ Alex Chen
 ### Follow-up
 Timing: 3-5 business days after applying or the last recruiter interaction.
 ```text
-Hi Artytech team,
+Hi Uber team,
 
-I wanted to follow up on my application for the Tech Lead / CTO Candidate (Full-stack) role. I remain interested and would be glad to provide any additional context about my background.
+I wanted to follow up on my application for the Sr Software Engineer, Frontend (Web) role. I remain interested and would be glad to provide any additional context about my background.
 
 Thank you again for your time.
 
@@ -422,8 +519,8 @@ Alex Chen
 ```
 
 ### Interview Prep
-- Prepare a 60-second story for why Artytech and why Tech Lead / CTO Candidate (Full-stack).
-- Prepare evidence for: JavaScript, React, CSS, engineer, product, graphql.
+- Prepare a 60-second story for why Uber and why Sr Software Engineer, Frontend (Web).
+- Prepare evidence for: JavaScript, TypeScript, React, CSS, API, Performance Optimization.
 - Prepare one STAR story about execution under ambiguity.
 - Prepare one STAR story about collaboration and tradeoff decisions.
 - Prepare questions about team priorities, success metrics, and hiring timeline.
@@ -434,26 +531,38 @@ Alex Chen
 - Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.
 - Use competing priorities and role fit, not personal need, as the negotiation frame.
 
-## Cardlytics Workday Taiwan - Senior Software Engineer
+## Uber - Software Engineer II - Frontend
 
-- Priority: P1
-- Score: 70/C
-- Subject: Senior Software Engineer application - Cardlytics Workday Taiwan
+- Priority: P0
+- Score: 95/A
+- Subject: Software Engineer II - Frontend application - Uber
+
+- Block G: High Confidence
+- Rating: 4.8/5.0
+
+### ATS Keyword Injection
+- Archetype: Frontend Engineer
+- Coverage: 100%
+- JD Keywords: JavaScript, TypeScript, React, CSS, API, engineer, product, data
+- 在 Professional Summary 中自然帶入：JavaScript、TypeScript、React、CSS、API
+- 使用職位語言：「Frontend Engineer」方向的動詞和術語
+- 【你已有但此 JD 未要求】可視情況選擇性提及：angular、python、go、html、growth
+- Missing (do NOT fabricate): angular, python, go, html, growth
 
 ### Apply Checklist
 - Open the source URL and confirm the role is still active.
 - Generate or refresh the tailored ATS PDF from this job.
-- Mirror these keywords honestly: TypeScript, API, engineer, product, data, JavaScript, React, Next.js, CSS, Tailwind, Accessibility, Analytics
-- Do not overclaim missing areas: python, java, go, aws, terraform, airflow
+- Mirror these JD keywords honestly in your CV: JavaScript, TypeScript, React, CSS, API, engineer, product, data
+- Do not overclaim missing areas: angular, python, go, html, growth
 - Log status, recruiter/contact, and next follow-up date in the tracker.
 
 ### Outreach Email
 ```text
-Hi Cardlytics Workday Taiwan team,
+Hi Uber team,
 
-I am Alex Chen, and I am interested in the Senior Software Engineer role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.
+I am Alex Chen, and I am interested in the Software Engineer II - Frontend role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.
 
-The role stood out because it maps closely to my experience with TypeScript, API, engineer, product, data.
+The role stood out because it maps closely to my experience with JavaScript, TypeScript, React, CSS, API.
 
 I would appreciate the chance to share how my experience can support the team. Thank you for your time.
 
@@ -464,9 +573,9 @@ Alex Chen
 ### Follow-up
 Timing: 3-5 business days after applying or the last recruiter interaction.
 ```text
-Hi Cardlytics Workday Taiwan team,
+Hi Uber team,
 
-I wanted to follow up on my application for the Senior Software Engineer role. I remain interested and would be glad to provide any additional context about my background.
+I wanted to follow up on my application for the Software Engineer II - Frontend role. I remain interested and would be glad to provide any additional context about my background.
 
 Thank you again for your time.
 
@@ -475,8 +584,8 @@ Alex Chen
 ```
 
 ### Interview Prep
-- Prepare a 60-second story for why Cardlytics Workday Taiwan and why Senior Software Engineer.
-- Prepare evidence for: TypeScript, API, engineer, product, data.
+- Prepare a 60-second story for why Uber and why Software Engineer II - Frontend.
+- Prepare evidence for: JavaScript, TypeScript, React, CSS, API, engineer.
 - Prepare one STAR story about execution under ambiguity.
 - Prepare one STAR story about collaboration and tradeoff decisions.
 - Prepare questions about team priorities, success metrics, and hiring timeline.
@@ -487,130 +596,36 @@ Alex Chen
 - Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.
 - Use competing priorities and role fit, not personal need, as the negotiation frame.
 
-## Shizuku AI - Software Engineer, Backend
+## Modern Animal, Inc. - Senior Product Engineer
 
-- Priority: P2
-- Score: 69/C
-- Subject: Software Engineer, Backend application - Shizuku AI
+- Priority: P0
+- Score: 95/A
+- Subject: Senior Product Engineer application - Modern Animal, Inc.
 
-### Apply Checklist
-- Open the source URL and confirm the role is still active.
-- Generate or refresh the tailored ATS PDF from this job.
-- Mirror these keywords honestly: TypeScript, remote, engineer, product, data, JavaScript, React, Next.js, CSS, Tailwind, Accessibility, Analytics
-- Do not overclaim missing areas: python, swift, aws, llm
-- Log status, recruiter/contact, and next follow-up date in the tracker.
+- Block G: High Confidence
+- Rating: 4.8/5.0
 
-### Outreach Email
-```text
-Hi Shizuku AI team,
-
-I am Alex Chen, and I am interested in the Software Engineer, Backend role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.
-
-The role stood out because it maps closely to my experience with TypeScript, remote, engineer, product, data.
-
-I would appreciate the chance to share how my experience can support the team. Thank you for your time.
-
-Best,
-Alex Chen
-```
-
-### Follow-up
-Timing: 3-5 business days after applying or the last recruiter interaction.
-```text
-Hi Shizuku AI team,
-
-I wanted to follow up on my application for the Software Engineer, Backend role. I remain interested and would be glad to provide any additional context about my background.
-
-Thank you again for your time.
-
-Best,
-Alex Chen
-```
-
-### Interview Prep
-- Prepare a 60-second story for why Shizuku AI and why Software Engineer, Backend.
-- Prepare evidence for: TypeScript, remote, engineer, product, data.
-- Prepare one STAR story about execution under ambiguity.
-- Prepare one STAR story about collaboration and tradeoff decisions.
-- Prepare questions about team priorities, success metrics, and hiring timeline.
-
-### Negotiation Prep
-- Wait for a clear offer before anchoring compensation.
-- Ask for total compensation breakdown, work mode, title, level, review cycle, and start date.
-- Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.
-- Use competing priorities and role fit, not personal need, as the negotiation frame.
-
-## Axelspace - Data Scientist / ML Engineer
-
-- Priority: P2
-- Score: 69/C
-- Subject: Data Scientist / ML Engineer application - Axelspace
+### ATS Keyword Injection
+- Archetype: Backend Engineer
+- Coverage: 100%
+- JD Keywords: API, engineer, product, data
+- 在 Professional Summary 中自然帶入：API、engineer、product、data
+- 使用職位語言：「Backend Engineer」方向的動詞和術語
+- 【你已有但此 JD 未要求】可視情況選擇性提及：operations
+- Missing (do NOT fabricate): operations
 
 ### Apply Checklist
 - Open the source URL and confirm the role is still active.
 - Generate or refresh the tailored ATS PDF from this job.
-- Mirror these keywords honestly: Analytics, remote, engineer, product, data, JavaScript, TypeScript, React, Next.js, CSS, Tailwind, Accessibility
-- Do not overclaim missing areas: python, aws, docker, terraform, machine learning, deep learning
+- Mirror these JD keywords honestly in your CV: API, engineer, product, data
+- Do not overclaim missing areas: operations
 - Log status, recruiter/contact, and next follow-up date in the tracker.
 
 ### Outreach Email
 ```text
-Hi Axelspace team,
+Hi Modern Animal, Inc. team,
 
-I am Alex Chen, and I am interested in the Data Scientist / ML Engineer role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.
-
-The role stood out because it maps closely to my experience with Analytics, remote, engineer, product, data.
-
-I would appreciate the chance to share how my experience can support the team. Thank you for your time.
-
-Best,
-Alex Chen
-```
-
-### Follow-up
-Timing: 3-5 business days after applying or the last recruiter interaction.
-```text
-Hi Axelspace team,
-
-I wanted to follow up on my application for the Data Scientist / ML Engineer role. I remain interested and would be glad to provide any additional context about my background.
-
-Thank you again for your time.
-
-Best,
-Alex Chen
-```
-
-### Interview Prep
-- Prepare a 60-second story for why Axelspace and why Data Scientist / ML Engineer.
-- Prepare evidence for: Analytics, remote, engineer, product, data.
-- Prepare one STAR story about execution under ambiguity.
-- Prepare one STAR story about collaboration and tradeoff decisions.
-- Prepare questions about team priorities, success metrics, and hiring timeline.
-
-### Negotiation Prep
-- Wait for a clear offer before anchoring compensation.
-- Ask for total compensation breakdown, work mode, title, level, review cycle, and start date.
-- Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.
-- Use competing priorities and role fit, not personal need, as the negotiation frame.
-
-## Metanomaly - Growth Engineer
-
-- Priority: P2
-- Score: 69/C
-- Subject: Growth Engineer application - Metanomaly
-
-### Apply Checklist
-- Open the source URL and confirm the role is still active.
-- Generate or refresh the tailored ATS PDF from this job.
-- Mirror these keywords honestly: API, engineer, product, data, JavaScript, TypeScript, React, Next.js, CSS, Tailwind, Accessibility, Analytics
-- Do not overclaim missing areas: sql, growth
-- Log status, recruiter/contact, and next follow-up date in the tracker.
-
-### Outreach Email
-```text
-Hi Metanomaly team,
-
-I am Alex Chen, and I am interested in the Growth Engineer role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.
+I am Alex Chen, and I am interested in the Senior Product Engineer role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.
 
 The role stood out because it maps closely to my experience with API, engineer, product, data.
 
@@ -623,9 +638,9 @@ Alex Chen
 ### Follow-up
 Timing: 3-5 business days after applying or the last recruiter interaction.
 ```text
-Hi Metanomaly team,
+Hi Modern Animal, Inc. team,
 
-I wanted to follow up on my application for the Growth Engineer role. I remain interested and would be glad to provide any additional context about my background.
+I wanted to follow up on my application for the Senior Product Engineer role. I remain interested and would be glad to provide any additional context about my background.
 
 Thank you again for your time.
 
@@ -634,7 +649,138 @@ Alex Chen
 ```
 
 ### Interview Prep
-- Prepare a 60-second story for why Metanomaly and why Growth Engineer.
+- Prepare a 60-second story for why Modern Animal, Inc. and why Senior Product Engineer.
+- Prepare evidence for: API, engineer, product, data.
+- Prepare one STAR story about execution under ambiguity.
+- Prepare one STAR story about collaboration and tradeoff decisions.
+- Prepare questions about team priorities, success metrics, and hiring timeline.
+
+### Negotiation Prep
+- Wait for a clear offer before anchoring compensation.
+- Ask for total compensation breakdown, work mode, title, level, review cycle, and start date.
+- Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.
+- Use competing priorities and role fit, not personal need, as the negotiation frame.
+
+## GitLab - Senior Backend Engineer(Go), Continuous Delivery
+
+- Priority: P0
+- Score: 95/A
+- Subject: Senior Backend Engineer(Go), Continuous Delivery application - GitLab
+
+- Block G: High Confidence
+- Rating: 4.8/5.0
+
+### ATS Keyword Injection
+- Archetype: Backend Engineer
+- Coverage: 100%
+- JD Keywords: API, remote, engineer, product, data
+- 在 Professional Summary 中自然帶入：API、remote、engineer、product、data
+- 使用職位語言：「Backend Engineer」方向的動詞和術語
+- 【你已有但此 JD 未要求】可視情況選擇性提及：go、docker、kubernetes
+- Missing (do NOT fabricate): go, docker, kubernetes
+
+### Apply Checklist
+- Open the source URL and confirm the role is still active.
+- Generate or refresh the tailored ATS PDF from this job.
+- Mirror these JD keywords honestly in your CV: API, remote, engineer, product, data
+- Do not overclaim missing areas: go, docker, kubernetes
+- Log status, recruiter/contact, and next follow-up date in the tracker.
+
+### Outreach Email
+```text
+Hi GitLab team,
+
+I am Alex Chen, and I am interested in the Senior Backend Engineer(Go), Continuous Delivery role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.
+
+The role stood out because it maps closely to my experience with API, remote, engineer, product, data.
+
+I would appreciate the chance to share how my experience can support the team. Thank you for your time.
+
+Best,
+Alex Chen
+```
+
+### Follow-up
+Timing: 3-5 business days after applying or the last recruiter interaction.
+```text
+Hi GitLab team,
+
+I wanted to follow up on my application for the Senior Backend Engineer(Go), Continuous Delivery role. I remain interested and would be glad to provide any additional context about my background.
+
+Thank you again for your time.
+
+Best,
+Alex Chen
+```
+
+### Interview Prep
+- Prepare a 60-second story for why GitLab and why Senior Backend Engineer(Go), Continuous Delivery.
+- Prepare evidence for: API, remote, engineer, product, data.
+- Prepare one STAR story about execution under ambiguity.
+- Prepare one STAR story about collaboration and tradeoff decisions.
+- Prepare questions about team priorities, success metrics, and hiring timeline.
+
+### Negotiation Prep
+- Wait for a clear offer before anchoring compensation.
+- Ask for total compensation breakdown, work mode, title, level, review cycle, and start date.
+- Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.
+- Use competing priorities and role fit, not personal need, as the negotiation frame.
+
+## Money Forward - Lead Backend Engineer, Digital Bank
+
+- Priority: P0
+- Score: 95/A
+- Subject: Lead Backend Engineer, Digital Bank application - Money Forward
+
+- Block G: Proceed with Caution
+- Rating: 4.8/5.0
+
+### ATS Keyword Injection
+- Archetype: Backend Engineer
+- Coverage: 100%
+- JD Keywords: API, engineer, product, data
+- 在 Professional Summary 中自然帶入：API、engineer、product、data
+- 使用職位語言：「Backend Engineer」方向的動詞和術語
+- 【你已有但此 JD 未要求】可視情況選擇性提及：kotlin、aws、docker、rest、agents
+- Missing (do NOT fabricate): kotlin, aws, docker, rest, agents
+
+### Apply Checklist
+- Open the source URL and confirm the role is still active.
+- ⚠ Block G: Proceed with Caution — double-check recruiter identity.
+- Generate or refresh the tailored ATS PDF from this job.
+- Mirror these JD keywords honestly in your CV: API, engineer, product, data
+- Do not overclaim missing areas: kotlin, aws, docker, rest, agents
+- Log status, recruiter/contact, and next follow-up date in the tracker.
+
+### Outreach Email
+```text
+Hi Money Forward team,
+
+I am Alex Chen, and I am interested in the Lead Backend Engineer, Digital Bank role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.
+
+The role stood out because it maps closely to my experience with API, engineer, product, data.
+
+I would appreciate the chance to share how my experience can support the team. Thank you for your time.
+
+Best,
+Alex Chen
+```
+
+### Follow-up
+Timing: 3-5 business days after applying or the last recruiter interaction.
+```text
+Hi Money Forward team,
+
+I wanted to follow up on my application for the Lead Backend Engineer, Digital Bank role. I remain interested and would be glad to provide any additional context about my background.
+
+Thank you again for your time.
+
+Best,
+Alex Chen
+```
+
+### Interview Prep
+- Prepare a 60-second story for why Money Forward and why Lead Backend Engineer, Digital Bank.
 - Prepare evidence for: API, engineer, product, data.
 - Prepare one STAR story about execution under ambiguity.
 - Prepare one STAR story about collaboration and tradeoff decisions.
