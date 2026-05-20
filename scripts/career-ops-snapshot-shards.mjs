@@ -10,6 +10,7 @@ const DEFAULT_OUT_DIR = "data/app/career-ops-snapshot";
 const DEFAULT_JOBS_PER_SHARD = 1000;
 const DEFAULT_BUCKET = "career-ops-snapshots";
 const DEFAULT_PREFIX = "career-ops/latest";
+const DEFAULT_CONFIG = "config.js";
 const gzip = promisify(gzipCallback);
 
 function printHelp() {
@@ -33,13 +34,14 @@ Options:
   --allow-missing-credentials     Skip upload instead of failing when Supabase env is absent
   --bucket <name>                 Supabase Storage bucket. Default: env CAREER_OPS_STORAGE_BUCKET or ${DEFAULT_BUCKET}
   --prefix <path>                 Object prefix. Default: env CAREER_OPS_STORAGE_PREFIX or ${DEFAULT_PREFIX}
+  --config <file>                 Config file for Supabase URL/bucket/prefix fallback. Default: ${DEFAULT_CONFIG}
   --private-bucket                Create bucket as private when it does not exist. Default: public
   --cache-control <seconds>       Upload cache-control seconds. Default: 60
   --help                          Show this help
 
 Environment for upload:
-  SUPABASE_URL
-  SUPABASE_SERVICE_ROLE_KEY
+  SUPABASE_URL                    Optional when config.js has supabaseUrl
+  SUPABASE_SERVICE_ROLE_KEY       Required for bucket creation and uploads
   CAREER_OPS_STORAGE_BUCKET       Optional bucket override
   CAREER_OPS_STORAGE_PREFIX       Optional object prefix override
 `);
@@ -52,8 +54,9 @@ function parseArgs(argv) {
     jobsPerShard: DEFAULT_JOBS_PER_SHARD,
     upload: false,
     allowMissingCredentials: false,
-    bucket: process.env.CAREER_OPS_STORAGE_BUCKET || DEFAULT_BUCKET,
-    prefix: process.env.CAREER_OPS_STORAGE_PREFIX || DEFAULT_PREFIX,
+    bucket: process.env.CAREER_OPS_STORAGE_BUCKET || "",
+    prefix: process.env.CAREER_OPS_STORAGE_PREFIX || "",
+    config: DEFAULT_CONFIG,
     publicBucket: true,
     cacheControl: "60",
     gzipShards: true
@@ -70,6 +73,7 @@ function parseArgs(argv) {
     else if (token === "--allow-missing-credentials") args.allowMissingCredentials = true;
     else if (token === "--bucket") args.bucket = argv[++i] || args.bucket;
     else if (token === "--prefix") args.prefix = argv[++i] || args.prefix;
+    else if (token === "--config") args.config = argv[++i] || DEFAULT_CONFIG;
     else if (token === "--private-bucket") args.publicBucket = false;
     else if (token === "--cache-control") args.cacheControl = String(argv[++i] || args.cacheControl);
     else throw new Error(`Unknown argument: ${token}`);
@@ -123,6 +127,25 @@ function encodeObjectPath(value) {
     .filter(Boolean)
     .map((part) => encodeURIComponent(part))
     .join("/");
+}
+
+function configString(configText, key, fallback = "") {
+  const pattern = new RegExp(`${key}\\s*:\\s*["'\`]([^"'\`]*)["'\`]`);
+  return configText.match(pattern)?.[1] || fallback;
+}
+
+async function readConfigHints(configPath) {
+  try {
+    const configText = await fs.readFile(configPath, "utf8");
+    return {
+      supabaseUrl: configString(configText, "supabaseUrl"),
+      bucket: configString(configText, "careerOpsSnapshotBucket"),
+      prefix: configString(configText, "careerOpsSnapshotPrefix")
+    };
+  } catch (error) {
+    if (error?.code === "ENOENT") return {};
+    throw error;
+  }
 }
 
 async function ensureDir(dirPath) {
@@ -219,15 +242,16 @@ async function readShardContents(outDir, shards) {
   return files;
 }
 
-function supabaseConfig(args) {
-  const supabaseUrl = String(process.env.SUPABASE_URL || "").replace(/\/+$/g, "");
+async function supabaseConfig(args) {
+  const hints = await readConfigHints(args.config);
+  const supabaseUrl = String(process.env.SUPABASE_URL || hints.supabaseUrl || "").replace(/\/+$/g, "");
   const serviceRoleKey = process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.SUPABASE_SERVICE_KEY || "";
   if (!supabaseUrl || !serviceRoleKey) return null;
   return {
     supabaseUrl,
     serviceRoleKey,
-    bucket: args.bucket,
-    prefix: args.prefix,
+    bucket: args.bucket || hints.bucket || DEFAULT_BUCKET,
+    prefix: String(args.prefix || hints.prefix || DEFAULT_PREFIX).replace(/^\/+|\/+$/g, ""),
     publicBucket: args.publicBucket,
     cacheControl: args.cacheControl
   };
@@ -287,13 +311,13 @@ async function uploadFile(config, item) {
 }
 
 async function uploadFiles(args, files) {
-  const config = supabaseConfig(args);
+  const config = await supabaseConfig(args);
   if (!config) {
     if (args.allowMissingCredentials) {
       console.warn("[career-ops] Supabase credentials missing; shard files generated locally and upload skipped.");
       return null;
     }
-    throw new Error("Missing SUPABASE_URL or SUPABASE_SERVICE_ROLE_KEY for --upload.");
+    throw new Error("Missing Supabase upload credentials. Provide SUPABASE_SERVICE_ROLE_KEY and either SUPABASE_URL or config.js supabaseUrl.");
   }
   await ensureBucket(config);
   for (const item of files) {

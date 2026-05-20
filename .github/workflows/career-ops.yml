@@ -91,6 +91,11 @@ jobs:
           fi
           npm run career-ops:snapshot:publish -- --jobs-per-shard 1000
 
+      - name: Verify runtime data availability
+        run: |
+          npm run build
+          npm run runtime:data:verify
+
       - name: Commit updated snapshot
         run: |
           CHANGED_FILES="data/career-ops-sources.json \
