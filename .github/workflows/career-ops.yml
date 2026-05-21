@@ -22,37 +22,37 @@ jobs:
 
       - name: Job health check (report expiry rate before scrape)
         run: |
-          if [ -f data/app/career-ops-jobs.json ]; then
-            node scripts/career-ops-health-monitor.mjs \
-              --jobs data/app/career-ops-jobs.json \
-              --out data/app/career-ops-job-health.json \
-              --report-out data/app/career-ops-job-health-report.md \
+          if [ -f tooling/data/app/career-ops-jobs.json ]; then
+            node tooling/scripts/career-ops-health-monitor.mjs \
+              --jobs tooling/data/app/career-ops-jobs.json \
+              --out tooling/data/app/career-ops-job-health.json \
+              --report-out tooling/data/app/career-ops-job-health-report.md \
               --threshold 0.30
           fi
 
       - name: Build sources and scrape jobs
         run: |
-          if [ -f data/career-ops-source-strategy.json ]; then
+          if [ -f tooling/data/career-ops-source-strategy.json ]; then
             npm run career-ops:sources:build
           fi
-          if [ -f data/career-ops-source-flex.json ]; then
+          if [ -f tooling/data/career-ops-source-flex.json ]; then
             npm run career-ops:source-flex
           fi
-          if [ ! -f data/career-ops-sources.json ]; then
-            echo "data/career-ops-sources.json not found; skipping."
+          if [ ! -f tooling/data/career-ops-sources.json ]; then
+            echo "tooling/data/career-ops-sources.json not found; skipping."
             exit 0
           fi
           npm run career-ops:scrape -- --include-expired
           npm run career-ops:quality
-          if [ -f data/career-ops-singapore-sources.json ]; then
+          if [ -f tooling/data/career-ops-singapore-sources.json ]; then
             npm run career-ops:sg:scrape
           fi
 
       - name: Run analysis pipeline
         run: |
           PROFILE_FLAG=""
-          if [ -f data/career-ops-profile.json ]; then
-            PROFILE_FLAG="--profile data/career-ops-profile.json"
+          if [ -f tooling/data/career-ops-profile.json ]; then
+            PROFILE_FLAG="--profile tooling/data/career-ops-profile.json"
           fi
           npm run career-ops:evaluate -- $PROFILE_FLAG
           npm run career-ops:intelligence -- $PROFILE_FLAG
@@ -62,20 +62,20 @@ jobs:
           npm run career-ops:story-bank -- $PROFILE_FLAG
           npm run career-ops:parallel -- $PROFILE_FLAG
           # Deep fit: Layer A (25), Layer B (40), Layer C (30) = up to 95 results
-          node scripts/career-ops-deep-fit.mjs $PROFILE_FLAG \
+          node tooling/scripts/career-ops-deep-fit.mjs $PROFILE_FLAG \
             --top-a 25 --top-b 40 --top-c 30 \
-            --out data/app/career-ops-deep-fit.json \
-            --js-out data/app/career-ops-deep-fit.js \
-            --report-out data/app/career-ops-deep-fit.md
+            --out tooling/data/app/career-ops-deep-fit.json \
+            --js-out tooling/data/app/career-ops-deep-fit.js \
+            --report-out tooling/data/app/career-ops-deep-fit.md
           npm run career-ops:learn -- $PROFILE_FLAG
           npm run career-ops:modes
 
       - name: Post-scrape health check (update expiry stats)
         run: |
-          node scripts/career-ops-health-monitor.mjs \
-            --jobs data/app/career-ops-jobs.json \
-            --out data/app/career-ops-job-health.json \
-            --report-out data/app/career-ops-job-health-report.md \
+          node tooling/scripts/career-ops-health-monitor.mjs \
+            --jobs tooling/data/app/career-ops-jobs.json \
+            --out tooling/data/app/career-ops-job-health.json \
+            --report-out tooling/data/app/career-ops-job-health-report.md \
             --threshold 0.30
 
       - name: Publish Career Ops snapshot to Supabase Storage
@@ -98,21 +98,21 @@ jobs:
 
       - name: Commit updated snapshot
         run: |
-          CHANGED_FILES="data/career-ops-sources.json \
-            data/app/career-ops-singapore-jobs.json data/app/career-ops-singapore-jobs.js \
-            data/app/career-ops-intelligence-report.md \
-            data/app/career-ops-source-strategy-report.md \
-            data/app/career-ops-source-flex-report.md \
-            data/app/career-ops-source-quality-report.md \
-            data/app/career-ops-application-kit.json data/app/career-ops-application-kit.js data/app/career-ops-application-kit.md \
-            data/app/career-ops-deep-research.json data/app/career-ops-deep-research.js data/app/career-ops-deep-research.md \
-            data/app/career-ops-deep-fit.json data/app/career-ops-deep-fit.js data/app/career-ops-deep-fit.md \
-            data/app/career-ops-compensation.json data/app/career-ops-compensation.js data/app/career-ops-compensation.md \
-            data/app/career-ops-story-bank.json data/app/career-ops-story-bank.js data/app/career-ops-story-bank.md \
-            data/app/career-ops-parallel-report.json data/app/career-ops-parallel-report.js data/app/career-ops-parallel-report.md \
-            data/app/career-ops-learning.json data/app/career-ops-learning.js data/app/career-ops-learning-report.md \
-            data/app/career-ops-modes.json data/app/career-ops-modes.js data/app/career-ops-modes-report.md \
-            data/app/career-ops-job-health.json data/app/career-ops-job-health-report.md"
+          CHANGED_FILES="tooling/data/career-ops-sources.json \
+            tooling/data/app/career-ops-singapore-jobs.json tooling/data/app/career-ops-singapore-jobs.js \
+            tooling/data/app/career-ops-intelligence-report.md \
+            tooling/data/app/career-ops-source-strategy-report.md \
+            tooling/data/app/career-ops-source-flex-report.md \
+            tooling/data/app/career-ops-source-quality-report.md \
+            tooling/data/app/career-ops-application-kit.json tooling/data/app/career-ops-application-kit.js tooling/data/app/career-ops-application-kit.md \
+            tooling/data/app/career-ops-deep-research.json tooling/data/app/career-ops-deep-research.js tooling/data/app/career-ops-deep-research.md \
+            tooling/data/app/career-ops-deep-fit.json tooling/data/app/career-ops-deep-fit.js tooling/data/app/career-ops-deep-fit.md \
+            tooling/data/app/career-ops-compensation.json tooling/data/app/career-ops-compensation.js tooling/data/app/career-ops-compensation.md \
+            tooling/data/app/career-ops-story-bank.json tooling/data/app/career-ops-story-bank.js tooling/data/app/career-ops-story-bank.md \
+            tooling/data/app/career-ops-parallel-report.json tooling/data/app/career-ops-parallel-report.js tooling/data/app/career-ops-parallel-report.md \
+            tooling/data/app/career-ops-learning.json tooling/data/app/career-ops-learning.js tooling/data/app/career-ops-learning-report.md \
+            tooling/data/app/career-ops-modes.json tooling/data/app/career-ops-modes.js tooling/data/app/career-ops-modes-report.md \
+            tooling/data/app/career-ops-job-health.json tooling/data/app/career-ops-job-health-report.md"
           if git diff --quiet -- $CHANGED_FILES; then
             echo "No Career Ops snapshot changes."
             exit 0
@@ -120,8 +120,8 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -A -- $CHANGED_FILES
-          if [ -f data/app/career-ops-source-strategy-report.md ]; then
-            git add data/app/career-ops-source-strategy-report.md
+          if [ -f tooling/data/app/career-ops-source-strategy-report.md ]; then
+            git add tooling/data/app/career-ops-source-strategy-report.md
           fi
           git commit -m "Update Career Ops snapshot"
           git push
