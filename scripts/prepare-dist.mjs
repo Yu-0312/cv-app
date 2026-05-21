@@ -169,6 +169,10 @@ async function main() {
     [
       path.join(appTargetDir, "career-ops-modes.js"),
       "window.CV_CAREER_OPS_MODES = window.CV_CAREER_OPS_MODES || { source: 'fallback', generatedAt: '', commands: [], guardrails: [] };\n"
+    ],
+    [
+      path.join(appTargetDir, "career-ops-job-health.json"),
+      JSON.stringify({ source: "fallback", checkedAt: "", threshold: 0.3, health: { total: 0, active: 0, expired: 0, stale: 0, expiredRate: 0, expiredRatePct: "0%", avgActiveScore: 0, bySource: {}, status: "empty" }, needsScrape: false, scrapeTriggered: false }, null, 2) + "\n"
     ]
   ];
 
