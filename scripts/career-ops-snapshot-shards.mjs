@@ -292,6 +292,12 @@ async function ensureBucket(config) {
   });
   if (response.ok || response.status === 409) return;
   const body = await response.text().catch(() => "");
+  // Supabase returns HTTP 400 with JSON body {statusCode:"409", error:"Duplicate"}
+  // when the bucket already exists — treat this as a non-error (bucket is ready).
+  try {
+    const json = JSON.parse(body);
+    if (String(json.statusCode) === "409" || json.error === "Duplicate") return;
+  } catch {}
   throw new Error(`Supabase bucket create failed ${response.status}: ${body.slice(0, 500)}`);
 }
 

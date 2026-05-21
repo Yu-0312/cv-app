@@ -98,9 +98,6 @@ function runProcess(label, command, args) {
   });
 }
 
-async function runSequential(label, command, args) {
-  await runProcess(label, command, args);
-}
 
 async function readJson(filePath) {
   return JSON.parse(await fs.readFile(filePath, "utf8"));
@@ -217,7 +214,7 @@ async function main() {
   const startedAt = new Date().toISOString();
 
   if (!args.skipSourceBuild && fsSync.existsSync(args.strategy)) {
-    await runSequential("source-strategy", "node", [
+    await runProcess("source-strategy", "node", [
       "scripts/career-ops-build-sources.mjs",
       "--strategy", args.strategy,
       "--out", args.sources,
@@ -227,7 +224,7 @@ async function main() {
   }
 
   if (!args.skipSourceFlex && fsSync.existsSync("data/career-ops-source-flex.json")) {
-    await runSequential("source-flex", "node", [
+    await runProcess("source-flex", "node", [
       "scripts/career-ops-source-flex.mjs",
       "--sources", args.sources,
       "--profile", args.profile,
@@ -281,7 +278,7 @@ async function main() {
   if (args.scanOnly) return;
 
   if (!args.skipQuality) {
-    await runSequential("source quality", "node", [
+    await runProcess("source quality", "node", [
       "scripts/career-ops-source-quality.mjs",
       "--jobs", "data/app/career-ops-jobs.json",
       "--out", "data/app/career-ops-jobs.json",
@@ -290,13 +287,13 @@ async function main() {
     ]);
   }
 
-  await runSequential("evaluation", "node", [
+  await runProcess("evaluation", "node", [
     "scripts/career-ops-evaluate.mjs",
     "--jobs", "data/app/career-ops-jobs.json",
     "--profile", args.profile,
     "--out", "data/app/career-ops-jobs.json"
   ]);
-  await runSequential("intelligence", "node", [
+  await runProcess("intelligence", "node", [
     "scripts/career-ops-intelligence.mjs",
     "--jobs", "data/app/career-ops-jobs.json",
     "--profile", args.profile,
@@ -376,7 +373,7 @@ async function main() {
     ])
   ]);
 
-  await runSequential("decision report", "node", [
+  await runProcess("decision report", "node", [
     "scripts/career-ops-decision-report.mjs",
     "--jobs", "data/app/career-ops-jobs.json",
     "--profile", args.profile,
@@ -391,7 +388,7 @@ async function main() {
   ]);
 
   if (!args.skipModes) {
-    await runSequential("modes", "node", [
+    await runProcess("modes", "node", [
       "scripts/career-ops-modes.mjs",
       "--in", "data/career-ops-modes.json",
       "--out", "data/app/career-ops-modes.json",

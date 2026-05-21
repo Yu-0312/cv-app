@@ -1,4 +1,4 @@
-const CACHE_NAME = "cv-studio-cache-v17";
+const CACHE_NAME = "cv-studio-cache-v18";
 const ASSETS = [
   "./manifest.json",
   "./icon.svg",
@@ -42,6 +42,8 @@ self.addEventListener("install", (event) => {
           fetch(url, { cache: "no-cache" }).then((response) => {
             if (response.ok) {
               cache.put(url, response.clone());
+            } else {
+              console.warn(`[SW] install: non-OK response for ${url} (${response.status})`);
             }
             return response;
           }).catch(() => {})
