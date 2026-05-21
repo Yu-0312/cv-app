@@ -5,6 +5,10 @@ on:
   schedule:
     - cron: "17 22 * * *"
 
+concurrency:
+  group: career-ops-snapshot
+  cancel-in-progress: false
+
 permissions:
   contents: write
 
@@ -124,4 +128,5 @@ jobs:
             git add tooling/data/app/career-ops-source-strategy-report.md
           fi
           git commit -m "Update Career Ops snapshot"
+          git pull --rebase origin main
           git push
