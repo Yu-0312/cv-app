@@ -102,30 +102,12 @@ jobs:
 
       - name: Commit updated snapshot
         run: |
-          CHANGED_FILES="data/career-ops-sources.json \
-            data/app/career-ops-singapore-jobs.json data/app/career-ops-singapore-jobs.js \
-            data/app/career-ops-intelligence-report.md \
-            data/app/career-ops-source-strategy-report.md \
-            data/app/career-ops-source-flex-report.md \
-            data/app/career-ops-source-quality-report.md \
-            data/app/career-ops-application-kit.json data/app/career-ops-application-kit.js data/app/career-ops-application-kit.md \
-            data/app/career-ops-deep-research.json data/app/career-ops-deep-research.js data/app/career-ops-deep-research.md \
-            data/app/career-ops-deep-fit.json data/app/career-ops-deep-fit.js data/app/career-ops-deep-fit.md \
-            data/app/career-ops-compensation.json data/app/career-ops-compensation.js data/app/career-ops-compensation.md \
-            data/app/career-ops-story-bank.json data/app/career-ops-story-bank.js data/app/career-ops-story-bank.md \
-            data/app/career-ops-parallel-report.json data/app/career-ops-parallel-report.js data/app/career-ops-parallel-report.md \
-            data/app/career-ops-learning.json data/app/career-ops-learning.js data/app/career-ops-learning-report.md \
-            data/app/career-ops-modes.json data/app/career-ops-modes.js data/app/career-ops-modes-report.md \
-            data/app/career-ops-job-health.json data/app/career-ops-job-health-report.md"
-          if git diff --quiet -- $CHANGED_FILES; then
-            echo "No Career Ops snapshot changes."
-            exit 0
-          fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A -- $CHANGED_FILES
-          if [ -f data/app/career-ops-source-strategy-report.md ]; then
-            git add data/app/career-ops-source-strategy-report.md
+          git add -u -- data
+          if git diff --cached --quiet; then
+            echo "No Career Ops snapshot changes."
+            exit 0
           fi
           git commit -m "Update Career Ops snapshot"
           git pull --rebase origin main
