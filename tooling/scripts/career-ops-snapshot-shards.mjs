@@ -11,6 +11,8 @@ const DEFAULT_JOBS_PER_SHARD = 1000;
 const DEFAULT_BUCKET = "career-ops-snapshots";
 const DEFAULT_PREFIX = "career-ops/latest";
 const DEFAULT_CONFIG = "config.js";
+const UPLOAD_RETRY_DELAYS_MS = [1000, 3000, 7000];
+const UPLOAD_THROTTLE_MS = 250;
 const gzip = promisify(gzipCallback);
 
 function printHelp() {
@@ -93,6 +95,10 @@ function byteLength(text) {
 
 function bufferLength(value) {
   return Buffer.isBuffer(value) ? value.byteLength : byteLength(String(value || ""));
+}
+
+function sleep(ms) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
 function descriptionLength(job = {}) {
@@ -268,9 +274,17 @@ async function supabaseRequest(config, endpoint, options = {}) {
   });
   if (!response.ok) {
     const body = await response.text().catch(() => "");
-    throw new Error(`Supabase Storage request failed ${response.status} ${endpoint}: ${body.slice(0, 500)}`);
+    const error = new Error(`Supabase Storage request failed ${response.status} ${endpoint}: ${body.slice(0, 500)}`);
+    error.status = response.status;
+    error.body = body;
+    throw error;
   }
   return response;
+}
+
+function isRetryableStorageError(error) {
+  if ([408, 429, 500, 502, 503, 504].includes(error?.status)) return true;
+  return error?.status === 400 && /<html|bad request/i.test(String(error.body || ""));
 }
 
 async function ensureBucket(config) {
@@ -304,16 +318,26 @@ async function ensureBucket(config) {
 async function uploadFile(config, item) {
   const objectPath = uploadPath(config.prefix, item.file);
   const endpoint = `/storage/v1/object/${encodeURIComponent(config.bucket)}/${encodeObjectPath(objectPath)}`;
-  await supabaseRequest(config, endpoint, {
-    method: "POST",
-    headers: {
-      "cache-control": config.cacheControl,
-      "content-type": item.contentType || "application/json",
-      ...(item.contentEncoding ? { "content-encoding": item.contentEncoding } : {}),
-      "x-upsert": "true"
-    },
-    body: item.content
-  });
+  for (let attempt = 0; attempt <= UPLOAD_RETRY_DELAYS_MS.length; attempt += 1) {
+    try {
+      await supabaseRequest(config, endpoint, {
+        method: "POST",
+        headers: {
+          "cache-control": config.cacheControl,
+          "content-type": item.contentType || "application/json",
+          ...(item.contentEncoding ? { "content-encoding": item.contentEncoding } : {}),
+          "x-upsert": "true"
+        },
+        body: item.content
+      });
+      return;
+    } catch (error) {
+      const delay = UPLOAD_RETRY_DELAYS_MS[attempt];
+      if (!delay || !isRetryableStorageError(error)) throw error;
+      console.warn(`[career-ops] upload retry ${attempt + 1}/${UPLOAD_RETRY_DELAYS_MS.length} for ${objectPath}: ${error.message}`);
+      await sleep(delay);
+    }
+  }
 }
 
 async function uploadFiles(args, files) {
@@ -329,6 +353,7 @@ async function uploadFiles(args, files) {
   for (const item of files) {
     await uploadFile(config, item);
     console.log(`[career-ops] uploaded ${uploadPath(config.prefix, item.file)} (${bufferLength(item.content)} bytes)`);
+    await sleep(UPLOAD_THROTTLE_MS);
   }
   return `${config.supabaseUrl}/storage/v1/object/public/${encodeURIComponent(config.bucket)}/${encodeObjectPath(uploadPath(config.prefix, "manifest.json"))}`;
 }

@@ -1,16 +1,17 @@
 # Career Ops Source Quality
 
-- Generated: 2026-05-20T00:54:58.128Z
+- Generated: 2026-05-22T01:53:55.319Z
 - Mode: filter
 - Minimum score: 45
-- Input active jobs: 84429
-- Kept active jobs: 84260
-- Filtered active jobs: 169
-- Quality tiers: high 78791 / medium 5373 / low 96
+- Input active jobs: 83429
+- Kept active jobs: 83277
+- Filtered active jobs: 152
+- Quality tiers: high 77928 / medium 5256 / low 93
 
 ## Filtered Samples
 
 - 0 Unknown - Group Human Resources | DBS Bank (missing-company, landing-or-search-title, thin-description, job-board-landing-url)
+- 37 Grab - Lead Product Manager, Food - Search and Personalization (landing-or-search-title, thin-description)
 - 37 Grab - Lead Product Manager, Food - Search and Personalization (landing-or-search-title, thin-description)
 - 37 Apple - Careers at Apple: Join our community and culture. (landing-or-search-title, thin-description)
 - 19 Unknown - TW-Operations Expert - Jobs - Careers at Apple (missing-company, landing-or-search-title, thin-description)
@@ -21,7 +22,6 @@
 - 19 Unknown - SoC - ATE Test Engineer - Jobs - Careers at Apple (missing-company, landing-or-search-title, thin-description)
 - 19 Unknown - Camera Electrical System Integration Engineer - Camera Hardware - Jobs - Careers at Apple (missing-company, landing-or-search-title, thin-description)
 - 19 Unknown - Display Reliability Engineer - Jobs - Careers at Apple (missing-company, landing-or-search-title, thin-description)
-- 19 Unknown - SoC Packaging Engineer - Jobs - Careers at Apple (missing-company, landing-or-search-title, thin-description)
 
 ## Kept Samples
 

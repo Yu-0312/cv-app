@@ -1,11 +1,11 @@
 # Career Ops Intelligence Report
 
-Generated: 2026-05-20T00:58:01.563Z
+Generated: 2026-05-22T01:55:42.608Z
 
-- Active jobs: 84260
+- Active jobs: 83277
 - Expired jobs: 0
-- Duplicate groups: 3458
-- Jobs without enough description: 407
+- Duplicate groups: 3428
+- Jobs without enough description: 404
 - Rubric: Career Ops 10-Dimension Rubric
 
 ## Rubric Weights
@@ -21,56 +21,56 @@ Generated: 2026-05-20T00:58:01.563Z
 - applicationEffort: 0.08
 
 ## Top Skills
-- api: 7594
-- growth: 4677
-- operations: 4222
-- analytics: 3379
-- sales: 3171
-- python: 2246
-- go: 1999
-- sql: 1573
-- excel: 1534
-- aws: 1184
-- machine learning: 1023
-- azure: 909
+- api: 7591
+- growth: 4660
+- operations: 4254
+- analytics: 3381
+- sales: 3124
+- python: 2283
+- go: 2009
+- sql: 1579
+- excel: 1521
+- aws: 1196
+- machine learning: 1034
+- azure: 931
 
 ## Missing High-Demand Skills
-- growth: 4677
-- operations: 4222
-- sales: 3171
-- python: 2246
-- go: 1999
-- sql: 1573
-- excel: 1534
-- aws: 1184
-- machine learning: 1023
-- azure: 909
+- growth: 4660
+- operations: 4254
+- sales: 3124
+- python: 2283
+- go: 2009
+- sql: 1579
+- excel: 1521
+- aws: 1196
+- machine learning: 1034
+- azure: 931
 
 ## Global Skill Gap Priority (weighted by job score)
-- growth: 7446.9
-- operations: 6682.2
-- sales: 4964
-- python: 3649.6
-- go: 3185.6
-- sql: 2559
-- excel: 2397.4
-- aws: 1937.5
-- machine learning: 1660.5
-- java: 1492.5
-- azure: 1483.5
-- spark: 1284.1
+- growth: 7421.2
+- operations: 6738.3
+- sales: 4899.3
+- python: 3710.5
+- go: 3205.3
+- sql: 2566.5
+- excel: 2378.5
+- aws: 1955
+- machine learning: 1678.3
+- azure: 1518.6
+- java: 1467.5
+- spark: 1270
 
 ## Role Families
-- Backend: 79129
-- Other: 2343
-- Frontend: 842
+- Backend: 79151
+- Other: 1694
+- Frontend: 836
 - AI / Data: 694
-- Sales: 493
-- Marketing: 217
-- Design: 201
-- Product: 144
-- Operations: 139
-- Internship: 47
+- Sales: 357
+- Product: 150
+- Marketing: 143
+- Design: 130
+- Operations: 79
+- Internship: 33
 
 ## Recommended Search Queries
 - Frontend Engineer

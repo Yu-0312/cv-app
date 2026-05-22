@@ -1,6 +1,6 @@
 {
   "source": "career-ops-deep-fit",
-  "generatedAt": "2026-05-20T00:58:36.158Z",
+  "generatedAt": "2026-05-22T01:56:16.584Z",
   "llmProvider": "none",
   "summary": {
     "totalResults": 95,
@@ -875,6 +875,77 @@
       "llm": null
     },
     {
+      "jobKey": "url:https://www.mycareersfuture.gov.sg/job/1ff5b9800085aabdc76396a96bf09117",
+      "company": "AIRWALLEX (SINGAPORE) PTE. LTD.",
+      "title": "Senior Frontend Engineer, Regulatory Reporting",
+      "score": 94,
+      "grade": "A",
+      "confidence": "medium",
+      "decision": "pursue aggressively",
+      "thesis": "Senior Frontend Engineer, Regulatory Reporting at AIRWALLEX (SINGAPORE) PTE. LTD. is pursue aggressively because the snapshot score is 94, with 9 profile/role keyword hits and 0 external evidence item(s).",
+      "evidence": {
+        "keywordHits": [
+          "Frontend Engineer",
+          "TypeScript",
+          "React",
+          "API",
+          "dashboard",
+          "design system",
+          "TypeScript",
+          "React",
+          "Frontend Engineer"
+        ],
+        "keywordMisses": [
+          "rest",
+          "llm",
+          "agents",
+          "operations"
+        ],
+        "researchSignals": [],
+        "evidenceCount": 0,
+        "compensationLeverage": "high"
+      },
+      "concerns": [
+        "External company evidence is thin; run deep research with a search API."
+      ],
+      "interviewStrategy": [
+        "Ask why the role is open and what success means in the first 90 days.",
+        "Probe team ownership, roadmap pressure, and cross-functional interfaces."
+      ],
+      "cvStrategy": [
+        "Lead with proof around: Frontend Engineer, TypeScript, React, API, dashboard, design system.",
+        "Use story story-1: frontend product execution.",
+        "Use story story-2: systems and API collaboration.",
+        "Use story story-3: accessibility and quality."
+      ],
+      "compensationStrategy": {
+        "leverage": "high",
+        "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Senior Frontend Engineer, Regulatory Reporting package, including base, bonus, equity, and review cycle?",
+        "valueAnchor": "Based on the scope of Senior Frontend Engineer, Regulatory Reporting and my fit around TypeScript, React, API, design system, I would like to calibrate toward the stronger end of the range if the team sees the level match."
+      },
+      "storyHooks": [
+        {
+          "id": "story-1",
+          "theme": "frontend product execution",
+          "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
+          "relevance": 2
+        },
+        {
+          "id": "story-2",
+          "theme": "systems and API collaboration",
+          "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
+          "relevance": 2
+        },
+        {
+          "id": "story-3",
+          "theme": "accessibility and quality",
+          "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
+          "relevance": 2
+        }
+      ],
+      "llm": null
+    },
+    {
       "jobKey": "url:https://www.mycareersfuture.gov.sg/job/7fdbc2ddd10823e30828ded216db87b6",
       "company": "ALPHA X TECHNOLOGY PTE. LTD.",
       "title": "Frontend Engineer",
@@ -1229,71 +1300,6 @@
           "theme": "accessibility and quality",
           "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
           "relevance": 5
-        }
-      ],
-      "llm": null
-    },
-    {
-      "jobKey": "url:https://www.themuse.com/jobs/equinixinc/senior-director-equinix-fabric-product-management-119dbd",
-      "company": "Equinix, Inc",
-      "title": "Senior Director, Equinix Fabric Product Management",
-      "score": 94,
-      "grade": "A",
-      "confidence": "medium",
-      "decision": "pursue aggressively",
-      "thesis": "Senior Director, Equinix Fabric Product Management at Equinix, Inc is pursue aggressively because the snapshot score is 94, with 5 profile/role keyword hits and 0 external evidence item(s).",
-      "evidence": {
-        "keywordHits": [
-          "Analytics",
-          "API",
-          "remote",
-          "analytics",
-          "Product Engineer"
-        ],
-        "keywordMisses": [
-          "go",
-          "growth"
-        ],
-        "researchSignals": [],
-        "evidenceCount": 0,
-        "compensationLeverage": "high"
-      },
-      "concerns": [
-        "External company evidence is thin; run deep research with a search API."
-      ],
-      "interviewStrategy": [
-        "Ask why the role is open and what success means in the first 90 days.",
-        "Probe team ownership, roadmap pressure, and cross-functional interfaces."
-      ],
-      "cvStrategy": [
-        "Lead with proof around: Analytics, API, remote, analytics, Product Engineer.",
-        "Use story story-1: frontend product execution.",
-        "Use story story-2: systems and API collaboration.",
-        "Use story story-3: accessibility and quality."
-      ],
-      "compensationStrategy": {
-        "leverage": "high",
-        "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Senior Director, Equinix Fabric Product Management package, including base, bonus, equity, and review cycle?",
-        "valueAnchor": "Based on the scope of Senior Director, Equinix Fabric Product Management and my fit around Analytics, API, remote, product, I would like to calibrate toward the stronger end of the range if the team sees the level match."
-      },
-      "storyHooks": [
-        {
-          "id": "story-1",
-          "theme": "frontend product execution",
-          "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
-          "relevance": 0
-        },
-        {
-          "id": "story-2",
-          "theme": "systems and API collaboration",
-          "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
-          "relevance": 0
-        },
-        {
-          "id": "story-3",
-          "theme": "accessibility and quality",
-          "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
-          "relevance": 0
         }
       ],
       "llm": null
@@ -1729,75 +1735,65 @@
       "llm": null
     },
     {
-      "jobKey": "url:https://www.themuse.com/jobs/uber/data-engineer-2-bd48b3",
-      "company": "Uber",
-      "title": "Data Engineer 2",
+      "jobKey": "url:https://www.themuse.com/jobs/pilotly/product-engineer-ii-8b1aeb",
+      "company": "Pilotly",
+      "title": "Product Engineer II",
       "score": 93,
       "grade": "A",
       "confidence": "medium",
       "decision": "pursue aggressively",
-      "thesis": "Data Engineer 2 at Uber is pursue aggressively because the snapshot score is 93, with 6 profile/role keyword hits and 1 external evidence item(s).",
+      "thesis": "Product Engineer II at Pilotly is pursue aggressively because the snapshot score is 93, with 8 profile/role keyword hits and 0 external evidence item(s).",
       "evidence": {
         "keywordHits": [
-          "Analytics",
+          "JavaScript",
+          "React",
+          "CSS",
           "API",
-          "Performance Optimization",
           "remote",
-          "analytics",
+          "dashboard",
+          "React",
           "Product Engineer"
         ],
         "keywordMisses": [
-          "python",
-          "java",
-          "go",
-          "spark",
-          "machine learning",
+          "aws",
           "growth"
         ],
-        "researchSignals": [
-          "AI / data / platform signal",
-          "remote or hybrid signal"
-        ],
-        "evidenceCount": 1,
-        "compensationLeverage": "high"
+        "researchSignals": [],
+        "evidenceCount": 0,
+        "compensationLeverage": ""
       },
-      "concerns": [],
+      "concerns": [
+        "External company evidence is thin; run deep research with a search API."
+      ],
       "interviewStrategy": [
         "Ask why the role is open and what success means in the first 90 days.",
-        "Probe team ownership, roadmap pressure, and cross-functional interfaces.",
-        "What business unit owns the Sr Software Engineer, Frontend (Web) role?",
-        "What measurable outcomes would this team expect in the first 90 days?",
-        "What recent company/product signals change the risk or upside?"
+        "Probe team ownership, roadmap pressure, and cross-functional interfaces."
       ],
       "cvStrategy": [
-        "Lead with proof around: Analytics, API, Performance Optimization, remote, analytics, Product Engineer.",
+        "Lead with proof around: JavaScript, React, CSS, API, remote, dashboard.",
         "Use story story-1: frontend product execution.",
         "Use story story-2: systems and API collaboration.",
         "Use story story-3: accessibility and quality."
       ],
-      "compensationStrategy": {
-        "leverage": "high",
-        "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Sr Software Engineer, Frontend (Web) package, including base, bonus, equity, and review cycle?",
-        "valueAnchor": "Based on the scope of Sr Software Engineer, Frontend (Web) and my fit around JavaScript, TypeScript, React, CSS, I would like to calibrate toward the stronger end of the range if the team sees the level match."
-      },
+      "compensationStrategy": null,
       "storyHooks": [
         {
           "id": "story-1",
           "theme": "frontend product execution",
           "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
-          "relevance": 0
+          "relevance": 3
         },
         {
           "id": "story-2",
           "theme": "systems and API collaboration",
           "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
-          "relevance": 0
+          "relevance": 3
         },
         {
           "id": "story-3",
           "theme": "accessibility and quality",
           "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
-          "relevance": 0
+          "relevance": 3
         }
       ],
       "llm": null
@@ -1959,6 +1955,41 @@
       "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Switzerland-Remote/Senior-CPU-Performance-Developer-Technology-Engineer_JR2003570",
       "location": "Switzerland, Remote",
       "keywordHits": [],
+      "keywordMisses": [],
+      "decision": "pursue selectively",
+      "layer": "B"
+    },
+    {
+      "jobKey": "url:https://justjoin.it/job-offer/anitech-solutions-business-analyst-krakow-analytics",
+      "company": "Anitech Solutions",
+      "title": "Business Analyst",
+      "score": 77,
+      "grade": "B",
+      "roleFit": 45,
+      "url": "https://justjoin.it/job-offer/anitech-solutions-business-analyst-krakow-analytics",
+      "location": "Kraków, PL",
+      "keywordHits": [
+        "Accessibility",
+        "remote"
+      ],
+      "keywordMisses": [
+        "python"
+      ],
+      "decision": "pursue selectively",
+      "layer": "B"
+    },
+    {
+      "jobKey": "url:https://www.mycareersfuture.gov.sg/job/02e92e6234a40935a164b9187431e39c",
+      "company": "GOERTEK SINGAPORE PTE. LTD.",
+      "title": "Automation & Control Software Engineer",
+      "score": 76,
+      "grade": "B",
+      "roleFit": 45,
+      "url": "https://www.mycareersfuture.gov.sg/job/02e92e6234a40935a164b9187431e39c",
+      "location": "ROBINSON ROAD, D01 Marina, Raffles Place, People's Park, Cecil, Singapore",
+      "keywordHits": [
+        "Performance Optimization"
+      ],
       "keywordMisses": [],
       "decision": "pursue selectively",
       "layer": "B"
@@ -2154,7 +2185,7 @@
       "grade": "B",
       "roleFit": 45,
       "url": "https://www.mycareersfuture.gov.sg/job/510e5192a1fc21cc803116e946a130e8",
-      "location": "PIXEL, CENTRAL EXCHANGE GREEN, D05 Clementi New Town, Hong Leong Garden, Pasir Panjang, Singapore",
+      "location": "PIXEL, CENTRAL EXCHANGE GREEN, D05 Pasir Panjang, Hong Leong Garden, Clementi New Town, Singapore",
       "keywordHits": [],
       "keywordMisses": [],
       "decision": "pursue selectively",
@@ -2168,7 +2199,7 @@
       "grade": "B",
       "roleFit": 45,
       "url": "https://www.mycareersfuture.gov.sg/job/c536b387528bb52786d7e68180a14399",
-      "location": "PIXEL, CENTRAL EXCHANGE GREEN, D05 Clementi New Town, Hong Leong Garden, Pasir Panjang, Singapore",
+      "location": "PIXEL, CENTRAL EXCHANGE GREEN, D05 Pasir Panjang, Hong Leong Garden, Clementi New Town, Singapore",
       "keywordHits": [],
       "keywordMisses": [],
       "decision": "pursue selectively",
@@ -2182,7 +2213,7 @@
       "grade": "B",
       "roleFit": 45,
       "url": "https://www.mycareersfuture.gov.sg/job/e3c6ae4e9767884e77b91ddce85fef27",
-      "location": "PIXEL, CENTRAL EXCHANGE GREEN, D05 Clementi New Town, Hong Leong Garden, Pasir Panjang, Singapore",
+      "location": "PIXEL, CENTRAL EXCHANGE GREEN, D05 Pasir Panjang, Hong Leong Garden, Clementi New Town, Singapore",
       "keywordHits": [],
       "keywordMisses": [
         "computer vision"
@@ -2205,13 +2236,13 @@
       "layer": "B"
     },
     {
-      "jobKey": "url:https://nvidia.wd5.myworkdayjobs.com/nvidiaexternalcareersite/job/sweden-lund/senior-software-engineer-aerial----wireless-ran-algorithms-development_jr2016071",
+      "jobKey": "url:https://nvidia.wd5.myworkdayjobs.com/nvidiaexternalcareersite/job/sweden-lund/senior-software-engineer-aerial----wireless-ran-algorithms-development_jr2018617",
       "company": "NVIDIA Workday",
       "title": "Senior Software Engineer Aerial  – Wireless RAN Algorithms Development",
       "score": 73,
       "grade": "B",
       "roleFit": 45,
-      "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Sweden-Lund/Senior-Software-Engineer-Aerial----Wireless-RAN-Algorithms-Development_JR2016071",
+      "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Sweden-Lund/Senior-Software-Engineer-Aerial----Wireless-RAN-Algorithms-Development_JR2018617",
       "location": "Sweden, Lund",
       "keywordHits": [],
       "keywordMisses": [
@@ -2303,20 +2334,6 @@
       "layer": "B"
     },
     {
-      "jobKey": "url:https://www.daijob.com/en/jobs/detail/1342339",
-      "company": "Infosys Limited",
-      "title": "[New Grads Oct 2026] IT consultant *Working in Tokyo ◆Recent graduates welcome",
-      "score": 72,
-      "grade": "B",
-      "roleFit": 45,
-      "url": "https://www.daijob.com/en/jobs/detail/1342339",
-      "location": "Tokyo, JP",
-      "keywordHits": [],
-      "keywordMisses": [],
-      "decision": "pursue selectively",
-      "layer": "B"
-    },
-    {
       "jobKey": "url:https://www.mycareersfuture.gov.sg/job/ae4fc6a36d3fca6888653d1b7fdf3105",
       "company": "ROKKO SYSTEMS PTE. LTD.",
       "title": "Software Engineer II",
@@ -2340,7 +2357,7 @@
       "grade": "C",
       "roleFit": 45,
       "url": "https://www.mycareersfuture.gov.sg/job/33abfb48b7dbc8a488e51dc230aca990",
-      "location": "SERANGOON NORTH AVENUE 4, D19 Serangoon Garden, Hougang, Sengkang, Punggol, Singapore",
+      "location": "SERANGOON NORTH AVENUE 4, D19 Hougang, Sengkang, Serangoon Garden, Punggol, Singapore",
       "keywordHits": [],
       "keywordMisses": [
         "java"
@@ -2373,28 +2390,9 @@
       "grade": "C",
       "roleFit": 45,
       "url": "https://www.mycareersfuture.gov.sg/job/bc3abc9fa4fad50ac13e2573d4787f29",
-      "location": "TELETECH PARK, SCIENCE PARK ROAD, D05 Clementi New Town, Hong Leong Garden, Pasir Panjang, Singapore",
+      "location": "TELETECH PARK, SCIENCE PARK ROAD, D05 Pasir Panjang, Hong Leong Garden, Clementi New Town, Singapore",
       "keywordHits": [],
       "keywordMisses": [],
-      "decision": "pursue selectively",
-      "layer": "B"
-    },
-    {
-      "jobKey": "url:https://www.mycareersfuture.gov.sg/job/cf0cb4c983a453044ad8946539b9f6ab",
-      "company": "CERTIS TECHNOLOGY (SINGAPORE) PTE. LTD.",
-      "title": "Senior/Software Engineer (Technical Lead)",
-      "score": 71,
-      "grade": "C",
-      "roleFit": 45,
-      "url": "https://www.mycareersfuture.gov.sg/job/cf0cb4c983a453044ad8946539b9f6ab",
-      "location": "Islandwide, Singapore",
-      "keywordHits": [
-        "JavaScript"
-      ],
-      "keywordMisses": [
-        "python",
-        "java"
-      ],
       "decision": "pursue selectively",
       "layer": "B"
     },
@@ -2431,20 +2429,6 @@
       "layer": "B"
     },
     {
-      "jobKey": "url:https://www.daijob.com/en/jobs/detail/1521847",
-      "company": "I-PEX Inc.",
-      "title": "[2027 New Graduates] Generalist Positions in Science and Engineering",
-      "score": 71,
-      "grade": "C",
-      "roleFit": 45,
-      "url": "https://www.daijob.com/en/jobs/detail/1521847",
-      "location": "Fukuoka, JP / Shimane, JP",
-      "keywordHits": [],
-      "keywordMisses": [],
-      "decision": "pursue selectively",
-      "layer": "B"
-    },
-    {
       "jobKey": "url:https://nvidia.wd5.myworkdayjobs.com/nvidiaexternalcareersite/job/india-gurugram/senior-formal-verification-engineer_jr2015691",
       "company": "NVIDIA Workday",
       "title": "Senior Formal Verification Engineer",
@@ -2459,31 +2443,23 @@
       ],
       "decision": "pursue selectively",
       "layer": "B"
+    },
+    {
+      "jobKey": "url:https://www.tokyodev.com/companies/moneyforward/jobs/qa-manager-digital-bank",
+      "company": "Money Forward",
+      "title": "QA Manager, Digital Bank",
+      "score": 71,
+      "grade": "C",
+      "roleFit": 45,
+      "url": "https://www.tokyodev.com/companies/moneyforward/jobs/qa-manager-digital-bank",
+      "location": "Minato-ku, Tokyo, JP",
+      "keywordHits": [],
+      "keywordMisses": [],
+      "decision": "pursue selectively",
+      "layer": "B"
     }
   ],
   "layerC": [
-    {
-      "jobKey": "url:https://www.themuse.com/jobs/pilotly/product-engineer-ii-8b1aeb",
-      "company": "Pilotly",
-      "title": "Product Engineer II",
-      "score": 93,
-      "grade": "A",
-      "roleFit": 92,
-      "url": "https://www.themuse.com/jobs/pilotly/product-engineer-ii-8b1aeb",
-      "location": "Flexible / Remote / Los Angeles, CA / Oakland, CA",
-      "keywordHits": [
-        "JavaScript",
-        "React",
-        "CSS",
-        "API"
-      ],
-      "topGap": "aws",
-      "mainGaps": [
-        "aws",
-        "growth"
-      ],
-      "layer": "C"
-    },
     {
       "jobKey": "url:https://www.themuse.com/jobs/capitalone/distinguished-engineer-remote-eligible-9d0012",
       "company": "Capital One",
@@ -2641,26 +2617,23 @@
       "layer": "C"
     },
     {
-      "jobKey": "url:https://www.mycareersfuture.gov.sg/job/25c762cbd685451d97014c0a61bf9c05",
-      "company": "LAI GAMES PTE. LTD.",
-      "title": "Fullstack Software Engineer Intern",
+      "jobKey": "url:https://www.mycareersfuture.gov.sg/job/db68a91faa7ec8b31abbace9d5a47f3a",
+      "company": "Capgemini Singapore  PTE. LTD.",
+      "title": "Senior Frontend Engineer",
       "score": 92,
       "grade": "A",
       "roleFit": 92,
-      "url": "https://www.mycareersfuture.gov.sg/job/25c762cbd685451d97014c0a61bf9c05",
-      "location": "HARBOURSIDE BUILDING 2, BOON LEAT TERRACE, D05 Clementi New Town, Hong Leong Garden, Pasir Panjang, Singapore",
+      "url": "https://www.mycareersfuture.gov.sg/job/db68a91faa7ec8b31abbace9d5a47f3a",
+      "location": "MARINA BAY FINANCIAL CENTRE, MARINA BOULEVARD, D01 Marina, Raffles Place, People's Park, Cecil, Singapore",
       "keywordHits": [
         "Frontend Engineer",
         "JavaScript",
-        "React",
-        "CSS"
+        "TypeScript",
+        "React"
       ],
-      "topGap": "python",
+      "topGap": "operations",
       "mainGaps": [
-        "python",
-        "sql",
-        "postgres",
-        "mysql"
+        "operations"
       ],
       "layer": "C"
     },
@@ -2672,7 +2645,7 @@
       "grade": "A",
       "roleFit": 92,
       "url": "https://www.mycareersfuture.gov.sg/job/2b468daba24e9fbb0c4c7b960e0fb56a",
-      "location": "MARINA BAY FINANCIAL CENTRE, MARINA BOULEVARD, D01 Cecil, Marina, People’s Park, Raffles Place, Singapore",
+      "location": "MARINA BAY FINANCIAL CENTRE, MARINA BOULEVARD, D01 Marina, Raffles Place, People's Park, Cecil, Singapore",
       "keywordHits": [
         "Frontend Engineer",
         "JavaScript",
@@ -2693,7 +2666,7 @@
       "grade": "A",
       "roleFit": 92,
       "url": "https://www.mycareersfuture.gov.sg/job/f4ccef9bc104923b67a0c63e48698c7e",
-      "location": "CENTRAL PLAZA, TIONG BAHRU ROAD, D03 Queenstown, Tiong Bahru, Singapore",
+      "location": "CENTRAL PLAZA, TIONG BAHRU ROAD, D03 Queenstown, Bukit Merah, Tiong Bahru, Singapore",
       "keywordHits": [
         "Frontend Engineer",
         "JavaScript",
@@ -2892,26 +2865,26 @@
       "layer": "C"
     },
     {
-      "jobKey": "url:https://www.themuse.com/jobs/genmab/senior-data-product-engineer-commercial",
-      "company": "Genmab",
-      "title": "Senior Data Product Engineer, Commercial",
+      "jobKey": "url:https://www.themuse.com/jobs/apple/machine-learning-engineer-mlops-evaluation-f7a50f",
+      "company": "Apple",
+      "title": "Machine Learning Engineer (MLOps), Evaluation",
       "score": 92,
       "grade": "A",
       "roleFit": 92,
-      "url": "https://www.themuse.com/jobs/genmab/senior-data-product-engineer-commercial",
-      "location": "Princeton, NJ",
+      "url": "https://www.themuse.com/jobs/apple/machine-learning-engineer-mlops-evaluation-f7a50f",
+      "location": "Cupertino, CA",
       "keywordHits": [
+        "Frontend Engineer",
         "Analytics",
         "API",
-        "dashboard",
         "analytics"
       ],
       "topGap": "sql",
       "mainGaps": [
         "sql",
         "aws",
-        "terraform",
-        "airflow"
+        "gcp",
+        "azure"
       ],
       "layer": "C"
     },
@@ -3147,6 +3120,30 @@
         "sql",
         "aws",
         "gcp"
+      ],
+      "layer": "C"
+    },
+    {
+      "jobKey": "url:https://jobs.ashbyhq.com/posthog/20ab9628-20ff-4ae3-bd6a-46ae7e9dc6b8",
+      "company": "PostHog Ashby",
+      "title": "Product Engineer",
+      "score": 92,
+      "grade": "A",
+      "roleFit": 92,
+      "url": "https://jobs.ashbyhq.com/posthog/20ab9628-20ff-4ae3-bd6a-46ae7e9dc6b8",
+      "location": "Remote",
+      "keywordHits": [
+        "TypeScript",
+        "React",
+        "Analytics",
+        "remote"
+      ],
+      "topGap": "python",
+      "mainGaps": [
+        "python",
+        "go",
+        "sql",
+        "html"
       ],
       "layer": "C"
     }
@@ -4018,6 +4015,77 @@
       "llm": null
     },
     {
+      "jobKey": "url:https://www.mycareersfuture.gov.sg/job/1ff5b9800085aabdc76396a96bf09117",
+      "company": "AIRWALLEX (SINGAPORE) PTE. LTD.",
+      "title": "Senior Frontend Engineer, Regulatory Reporting",
+      "score": 94,
+      "grade": "A",
+      "confidence": "medium",
+      "decision": "pursue aggressively",
+      "thesis": "Senior Frontend Engineer, Regulatory Reporting at AIRWALLEX (SINGAPORE) PTE. LTD. is pursue aggressively because the snapshot score is 94, with 9 profile/role keyword hits and 0 external evidence item(s).",
+      "evidence": {
+        "keywordHits": [
+          "Frontend Engineer",
+          "TypeScript",
+          "React",
+          "API",
+          "dashboard",
+          "design system",
+          "TypeScript",
+          "React",
+          "Frontend Engineer"
+        ],
+        "keywordMisses": [
+          "rest",
+          "llm",
+          "agents",
+          "operations"
+        ],
+        "researchSignals": [],
+        "evidenceCount": 0,
+        "compensationLeverage": "high"
+      },
+      "concerns": [
+        "External company evidence is thin; run deep research with a search API."
+      ],
+      "interviewStrategy": [
+        "Ask why the role is open and what success means in the first 90 days.",
+        "Probe team ownership, roadmap pressure, and cross-functional interfaces."
+      ],
+      "cvStrategy": [
+        "Lead with proof around: Frontend Engineer, TypeScript, React, API, dashboard, design system.",
+        "Use story story-1: frontend product execution.",
+        "Use story story-2: systems and API collaboration.",
+        "Use story story-3: accessibility and quality."
+      ],
+      "compensationStrategy": {
+        "leverage": "high",
+        "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Senior Frontend Engineer, Regulatory Reporting package, including base, bonus, equity, and review cycle?",
+        "valueAnchor": "Based on the scope of Senior Frontend Engineer, Regulatory Reporting and my fit around TypeScript, React, API, design system, I would like to calibrate toward the stronger end of the range if the team sees the level match."
+      },
+      "storyHooks": [
+        {
+          "id": "story-1",
+          "theme": "frontend product execution",
+          "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
+          "relevance": 2
+        },
+        {
+          "id": "story-2",
+          "theme": "systems and API collaboration",
+          "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
+          "relevance": 2
+        },
+        {
+          "id": "story-3",
+          "theme": "accessibility and quality",
+          "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
+          "relevance": 2
+        }
+      ],
+      "llm": null
+    },
+    {
       "jobKey": "url:https://www.mycareersfuture.gov.sg/job/7fdbc2ddd10823e30828ded216db87b6",
       "company": "ALPHA X TECHNOLOGY PTE. LTD.",
       "title": "Frontend Engineer",
@@ -4372,71 +4440,6 @@
           "theme": "accessibility and quality",
           "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
           "relevance": 5
-        }
-      ],
-      "llm": null
-    },
-    {
-      "jobKey": "url:https://www.themuse.com/jobs/equinixinc/senior-director-equinix-fabric-product-management-119dbd",
-      "company": "Equinix, Inc",
-      "title": "Senior Director, Equinix Fabric Product Management",
-      "score": 94,
-      "grade": "A",
-      "confidence": "medium",
-      "decision": "pursue aggressively",
-      "thesis": "Senior Director, Equinix Fabric Product Management at Equinix, Inc is pursue aggressively because the snapshot score is 94, with 5 profile/role keyword hits and 0 external evidence item(s).",
-      "evidence": {
-        "keywordHits": [
-          "Analytics",
-          "API",
-          "remote",
-          "analytics",
-          "Product Engineer"
-        ],
-        "keywordMisses": [
-          "go",
-          "growth"
-        ],
-        "researchSignals": [],
-        "evidenceCount": 0,
-        "compensationLeverage": "high"
-      },
-      "concerns": [
-        "External company evidence is thin; run deep research with a search API."
-      ],
-      "interviewStrategy": [
-        "Ask why the role is open and what success means in the first 90 days.",
-        "Probe team ownership, roadmap pressure, and cross-functional interfaces."
-      ],
-      "cvStrategy": [
-        "Lead with proof around: Analytics, API, remote, analytics, Product Engineer.",
-        "Use story story-1: frontend product execution.",
-        "Use story story-2: systems and API collaboration.",
-        "Use story story-3: accessibility and quality."
-      ],
-      "compensationStrategy": {
-        "leverage": "high",
-        "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Senior Director, Equinix Fabric Product Management package, including base, bonus, equity, and review cycle?",
-        "valueAnchor": "Based on the scope of Senior Director, Equinix Fabric Product Management and my fit around Analytics, API, remote, product, I would like to calibrate toward the stronger end of the range if the team sees the level match."
-      },
-      "storyHooks": [
-        {
-          "id": "story-1",
-          "theme": "frontend product execution",
-          "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
-          "relevance": 0
-        },
-        {
-          "id": "story-2",
-          "theme": "systems and API collaboration",
-          "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
-          "relevance": 0
-        },
-        {
-          "id": "story-3",
-          "theme": "accessibility and quality",
-          "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
-          "relevance": 0
         }
       ],
       "llm": null
@@ -4872,75 +4875,65 @@
       "llm": null
     },
     {
-      "jobKey": "url:https://www.themuse.com/jobs/uber/data-engineer-2-bd48b3",
-      "company": "Uber",
-      "title": "Data Engineer 2",
+      "jobKey": "url:https://www.themuse.com/jobs/pilotly/product-engineer-ii-8b1aeb",
+      "company": "Pilotly",
+      "title": "Product Engineer II",
       "score": 93,
       "grade": "A",
       "confidence": "medium",
       "decision": "pursue aggressively",
-      "thesis": "Data Engineer 2 at Uber is pursue aggressively because the snapshot score is 93, with 6 profile/role keyword hits and 1 external evidence item(s).",
+      "thesis": "Product Engineer II at Pilotly is pursue aggressively because the snapshot score is 93, with 8 profile/role keyword hits and 0 external evidence item(s).",
       "evidence": {
         "keywordHits": [
-          "Analytics",
+          "JavaScript",
+          "React",
+          "CSS",
           "API",
-          "Performance Optimization",
           "remote",
-          "analytics",
+          "dashboard",
+          "React",
           "Product Engineer"
         ],
         "keywordMisses": [
-          "python",
-          "java",
-          "go",
-          "spark",
-          "machine learning",
+          "aws",
           "growth"
         ],
-        "researchSignals": [
-          "AI / data / platform signal",
-          "remote or hybrid signal"
-        ],
-        "evidenceCount": 1,
-        "compensationLeverage": "high"
+        "researchSignals": [],
+        "evidenceCount": 0,
+        "compensationLeverage": ""
       },
-      "concerns": [],
+      "concerns": [
+        "External company evidence is thin; run deep research with a search API."
+      ],
       "interviewStrategy": [
         "Ask why the role is open and what success means in the first 90 days.",
-        "Probe team ownership, roadmap pressure, and cross-functional interfaces.",
-        "What business unit owns the Sr Software Engineer, Frontend (Web) role?",
-        "What measurable outcomes would this team expect in the first 90 days?",
-        "What recent company/product signals change the risk or upside?"
+        "Probe team ownership, roadmap pressure, and cross-functional interfaces."
       ],
       "cvStrategy": [
-        "Lead with proof around: Analytics, API, Performance Optimization, remote, analytics, Product Engineer.",
+        "Lead with proof around: JavaScript, React, CSS, API, remote, dashboard.",
         "Use story story-1: frontend product execution.",
         "Use story story-2: systems and API collaboration.",
         "Use story story-3: accessibility and quality."
       ],
-      "compensationStrategy": {
-        "leverage": "high",
-        "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Sr Software Engineer, Frontend (Web) package, including base, bonus, equity, and review cycle?",
-        "valueAnchor": "Based on the scope of Sr Software Engineer, Frontend (Web) and my fit around JavaScript, TypeScript, React, CSS, I would like to calibrate toward the stronger end of the range if the team sees the level match."
-      },
+      "compensationStrategy": null,
       "storyHooks": [
         {
           "id": "story-1",
           "theme": "frontend product execution",
           "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
-          "relevance": 0
+          "relevance": 3
         },
         {
           "id": "story-2",
           "theme": "systems and API collaboration",
           "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
-          "relevance": 0
+          "relevance": 3
         },
         {
           "id": "story-3",
           "theme": "accessibility and quality",
           "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
-          "relevance": 0
+          "relevance": 3
         }
       ],
       "llm": null

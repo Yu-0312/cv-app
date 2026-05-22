@@ -7,7 +7,7 @@ const ASSETS = [
   "./university-data.js",
   "./data/app/gsat-external-data.js",
   "./data/app/university-tw-app-data.js",
-  "./data/app/career-ops-jobs.js",
+  "./data/app/career-ops-upstream-jobs.js",
   "./data/app/career-ops-singapore-jobs.js",
   "./data/app/career-ops-application-kit.js",
   "./data/app/career-ops-deep-research.js",
@@ -46,7 +46,9 @@ self.addEventListener("install", (event) => {
               console.warn(`[SW] install: non-OK response for ${url} (${response.status})`);
             }
             return response;
-          }).catch(() => {})
+          }).catch((err) => {
+            console.warn(`[SW] install: failed to cache ${url}`, err);
+          })
         )
       )
     )
