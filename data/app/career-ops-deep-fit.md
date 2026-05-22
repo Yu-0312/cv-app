@@ -1,6 +1,6 @@
 # Career Ops Deep Fit Report
 
-Generated: 2026-05-20T00:58:36.158Z
+Generated: 2026-05-22T01:56:16.584Z
 LLM provider: none
 Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 exploratory)
 
@@ -358,6 +358,33 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Use story story-2: systems and API collaboration.
 - Use story story-3: accessibility and quality.
 
+### AIRWALLEX (SINGAPORE) PTE. LTD. - Senior Frontend Engineer, Regulatory Reporting
+
+- Score: 94
+- Grade: A
+- Confidence: medium
+- Decision: pursue aggressively
+- Thesis: Senior Frontend Engineer, Regulatory Reporting at AIRWALLEX (SINGAPORE) PTE. LTD. is pursue aggressively because the snapshot score is 94, with 9 profile/role keyword hits and 0 external evidence item(s).
+
+#### Evidence
+- Keyword hits: Frontend Engineer, TypeScript, React, API, dashboard, design system, TypeScript, React, Frontend Engineer
+- Keyword misses: rest, llm, agents, operations
+- Research signals: -
+- Compensation leverage: high
+
+#### Concerns
+- External company evidence is thin; run deep research with a search API.
+
+#### Interview Strategy
+- Ask why the role is open and what success means in the first 90 days.
+- Probe team ownership, roadmap pressure, and cross-functional interfaces.
+
+#### CV Strategy
+- Lead with proof around: Frontend Engineer, TypeScript, React, API, dashboard, design system.
+- Use story story-1: frontend product execution.
+- Use story story-2: systems and API collaboration.
+- Use story story-3: accessibility and quality.
+
 ### ALPHA X TECHNOLOGY PTE. LTD. - Frontend Engineer
 
 - Score: 94
@@ -490,33 +517,6 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 
 #### CV Strategy
 - Lead with proof around: Frontend Engineer, JavaScript, TypeScript, React, CSS, Accessibility.
-- Use story story-1: frontend product execution.
-- Use story story-2: systems and API collaboration.
-- Use story story-3: accessibility and quality.
-
-### Equinix, Inc - Senior Director, Equinix Fabric Product Management
-
-- Score: 94
-- Grade: A
-- Confidence: medium
-- Decision: pursue aggressively
-- Thesis: Senior Director, Equinix Fabric Product Management at Equinix, Inc is pursue aggressively because the snapshot score is 94, with 5 profile/role keyword hits and 0 external evidence item(s).
-
-#### Evidence
-- Keyword hits: Analytics, API, remote, analytics, Product Engineer
-- Keyword misses: go, growth
-- Research signals: -
-- Compensation leverage: high
-
-#### Concerns
-- External company evidence is thin; run deep research with a search API.
-
-#### Interview Strategy
-- Ask why the role is open and what success means in the first 90 days.
-- Probe team ownership, roadmap pressure, and cross-functional interfaces.
-
-#### CV Strategy
-- Lead with proof around: Analytics, API, remote, analytics, Product Engineer.
 - Use story story-1: frontend product execution.
 - Use story story-2: systems and API collaboration.
 - Use story story-3: accessibility and quality.
@@ -694,32 +694,29 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Use story story-2: systems and API collaboration.
 - Use story story-3: accessibility and quality.
 
-### Uber - Data Engineer 2
+### Pilotly - Product Engineer II
 
 - Score: 93
 - Grade: A
 - Confidence: medium
 - Decision: pursue aggressively
-- Thesis: Data Engineer 2 at Uber is pursue aggressively because the snapshot score is 93, with 6 profile/role keyword hits and 1 external evidence item(s).
+- Thesis: Product Engineer II at Pilotly is pursue aggressively because the snapshot score is 93, with 8 profile/role keyword hits and 0 external evidence item(s).
 
 #### Evidence
-- Keyword hits: Analytics, API, Performance Optimization, remote, analytics, Product Engineer
-- Keyword misses: python, java, go, spark, machine learning, growth
-- Research signals: AI / data / platform signal, remote or hybrid signal
-- Compensation leverage: high
+- Keyword hits: JavaScript, React, CSS, API, remote, dashboard, React, Product Engineer
+- Keyword misses: aws, growth
+- Research signals: -
+- Compensation leverage: -
 
 #### Concerns
-- None flagged
+- External company evidence is thin; run deep research with a search API.
 
 #### Interview Strategy
 - Ask why the role is open and what success means in the first 90 days.
 - Probe team ownership, roadmap pressure, and cross-functional interfaces.
-- What business unit owns the Sr Software Engineer, Frontend (Web) role?
-- What measurable outcomes would this team expect in the first 90 days?
-- What recent company/product signals change the risk or upside?
 
 #### CV Strategy
-- Lead with proof around: Analytics, API, Performance Optimization, remote, analytics, Product Engineer.
+- Lead with proof around: JavaScript, React, CSS, API, remote, dashboard.
 - Use story story-1: frontend product execution.
 - Use story story-2: systems and API collaboration.
 - Use story story-3: accessibility and quality.
@@ -778,6 +775,18 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Score: 77 | Grade: B | RoleFit: 45
 - Decision: pursue selectively
 - Keyword hits: -
+- Gaps: -
+
+### Anitech Solutions - Business Analyst
+- Score: 77 | Grade: B | RoleFit: 45
+- Decision: pursue selectively
+- Keyword hits: Accessibility, remote
+- Gaps: python
+
+### GOERTEK SINGAPORE PTE. LTD. - Automation & Control Software Engineer
+- Score: 76 | Grade: B | RoleFit: 45
+- Decision: pursue selectively
+- Keyword hits: Performance Optimization
 - Gaps: -
 
 ### Roblox Greenhouse - Senior Software Engineer - Release
@@ -906,12 +915,6 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Keyword hits: remote
 - Gaps: -
 
-### Infosys Limited - [New Grads Oct 2026] IT consultant *Working in Tokyo ◆Recent graduates welcome
-- Score: 72 | Grade: B | RoleFit: 45
-- Decision: pursue selectively
-- Keyword hits: -
-- Gaps: -
-
 ### ROKKO SYSTEMS PTE. LTD. - Software Engineer II
 - Score: 71 | Grade: C | RoleFit: 45
 - Decision: pursue selectively
@@ -936,12 +939,6 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Keyword hits: -
 - Gaps: -
 
-### CERTIS TECHNOLOGY (SINGAPORE) PTE. LTD. - Senior/Software Engineer (Technical Lead)
-- Score: 71 | Grade: C | RoleFit: 45
-- Decision: pursue selectively
-- Keyword hits: JavaScript
-- Gaps: python, java
-
 ### ClinChoice - Senior Manager Biostatistician Consultant US
 - Score: 71 | Grade: C | RoleFit: 45
 - Decision: pursue selectively
@@ -954,21 +951,20 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Keyword hits: remote
 - Gaps: -
 
-### I-PEX Inc. - [2027 New Graduates] Generalist Positions in Science and Engineering
-- Score: 71 | Grade: C | RoleFit: 45
-- Decision: pursue selectively
-- Keyword hits: -
-- Gaps: -
-
 ### NVIDIA Workday - Senior Formal Verification Engineer
 - Score: 71 | Grade: C | RoleFit: 45
 - Decision: pursue selectively
 - Keyword hits: -
 - Gaps: deep learning
 
+### Money Forward - QA Manager, Digital Bank
+- Score: 71 | Grade: C | RoleFit: 45
+- Decision: pursue selectively
+- Keyword hits: -
+- Gaps: -
+
 ## Layer C — Exploratory Signals (roleFit < 40)
 
-- **Pilotly — Product Engineer II** (score: 93) | Top gap: aws
 - **Capital One — Distinguished Engineer (Remote - Eligible)** (score: 93) | Top gap: python
 - **Stripe Greenhouse — Android Engineer, Terminal Developer Productivity** (score: 93) | Top gap: java
 - **Stripe Greenhouse — Frontend Platform Engineer, JavaScript Infrastructure** (score: 93) | Top gap: none
@@ -976,7 +972,7 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - **Airbnb Greenhouse — Senior Software Engineer, Quality Platform** (score: 93) | Top gap: python
 - **Airbnb Greenhouse — Senior Web Automation Engineer, Quality Platform** (score: 93) | Top gap: agents
 - **MongoDB Greenhouse — Senior Software Engineer, Observability** (score: 93) | Top gap: java
-- **LAI GAMES PTE. LTD. — Fullstack Software Engineer Intern** (score: 92) | Top gap: python
+- **Capgemini Singapore  PTE. LTD. — Senior Frontend Engineer** (score: 92) | Top gap: operations
 - **Capgemini Singapore  PTE. LTD. — Senior Frontend Engineer** (score: 92) | Top gap: operations
 - **NEUTRON PTE. LTD. — Frontend Engineer (Web & Mobile)** (score: 92) | Top gap: aws
 - **Exadel — Senior Full-Stack Software Engineer (Python/Node.js, React)** (score: 92) | Top gap: vue
@@ -987,7 +983,7 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - **Rent the Runway — Software Engineer III - Full Stack** (score: 92) | Top gap: java
 - **Flexport — Engineering Manager, Autonomous Freight Systems** (score: 92) | Top gap: java
 - **Bank of America — Software Engineer III - GBS IND** (score: 92) | Top gap: python
-- **Genmab — Senior Data Product Engineer, Commercial** (score: 92) | Top gap: sql
+- **Apple — Machine Learning Engineer (MLOps), Evaluation** (score: 92) | Top gap: sql
 - **Experian — Full Stack Staff Engineer - GraphQL** (score: 92) | Top gap: java
 - **Allstate — Lead AI Cloud Platform Engineer** (score: 92) | Top gap: python
 - **Equinix, Inc — Staff Software Engineer** (score: 92) | Top gap: python
@@ -998,4 +994,5 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - **Canonical Greenhouse — Security Software Engineer** (score: 92) | Top gap: python
 - **Vercel Greenhouse — Site Engineer** (score: 92) | Top gap: agents
 - **ElevenLabs Ashby — Safety Engineer** (score: 92) | Top gap: python
+- **PostHog Ashby — Product Engineer** (score: 92) | Top gap: python
 

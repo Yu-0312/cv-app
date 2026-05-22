@@ -1,6 +1,6 @@
 # Career Ops Compensation Planner
 
-Generated: 2026-05-20T00:58:25.419Z
+Generated: 2026-05-22T01:56:08.191Z
 Plans: 20
 
 ## Operating Rule
@@ -448,6 +448,40 @@ Do not invent salary numbers. Use verified ranges, recruiter-provided ranges, or
 - Map the job scope to proof points in the tailored CV.
 - Prepare one counter package with base, bonus/equity, and non-cash levers.
 
+## AIRWALLEX (SINGAPORE) PTE. LTD. - Senior Frontend Engineer, Regulatory Reporting
+
+- Market: sg
+- Job level (inferred): senior
+- Candidate level (from profile): mid
+- Leverage: high
+- Target frame: Do not name a number first. Ask for the approved range, level, and total compensation structure before anchoring.
+
+### Evidence
+- No verified salary mention found.
+
+### Structure
+- Base: Need verified market data or recruiter range before setting a numeric anchor.
+- Bonus: Ask whether there is annual bonus, performance bonus, or sign-on bonus.
+- Equity: Ask whether equity, RSU, options, or profit-sharing exists.
+- Benefit: Health / insurance coverage
+- Benefit: Paid leave and holidays
+- Benefit: Learning budget or certification support
+- Benefit: Remote/hybrid setup, commute, or relocation support
+- Benefit: Review cycle and promotion timeline
+
+### Scripts
+- Range question: Before I anchor on a number, could you share the approved range and level for the Senior Frontend Engineer, Regulatory Reporting package, including base, bonus, equity, and review cycle?
+- Value anchor: Based on the scope of Senior Frontend Engineer, Regulatory Reporting and my fit around TypeScript, React, API, design system, I would like to calibrate toward the stronger end of the range if the team sees the level match.
+- Counter: Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?
+- Pause: I appreciate the details. I would like to review the full package and come back with a thoughtful response.
+- Close: If we can align on the package and review timeline, I would feel confident moving forward.
+
+### Next Actions
+- Collect market compensation evidence before naming a number.
+- Ask recruiter for approved range and level.
+- Map the job scope to proof points in the tailored CV.
+- Prepare one counter package with base, bonus/equity, and non-cash levers.
+
 ## ALPHA X TECHNOLOGY PTE. LTD. - Frontend Engineer
 
 - Market: cn
@@ -613,40 +647,6 @@ Do not invent salary numbers. Use verified ranges, recruiter-provided ranges, or
 ### Scripts
 - Range question: Before I anchor on a number, could you share the approved range and level for the Staff Software Engineer, Frontend package, including base, bonus, equity, and review cycle?
 - Value anchor: Based on the scope of Staff Software Engineer, Frontend and my fit around JavaScript, TypeScript, React, CSS, I would like to calibrate toward the stronger end of the range if the team sees the level match.
-- Counter: Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?
-- Pause: I appreciate the details. I would like to review the full package and come back with a thoughtful response.
-- Close: If we can align on the package and review timeline, I would feel confident moving forward.
-
-### Next Actions
-- Collect market compensation evidence before naming a number.
-- Ask recruiter for approved range and level.
-- Map the job scope to proof points in the tailored CV.
-- Prepare one counter package with base, bonus/equity, and non-cash levers.
-
-## Equinix, Inc - Senior Director, Equinix Fabric Product Management
-
-- Market: us
-- Job level (inferred): senior-plus
-- Candidate level (from profile): mid
-- Leverage: high
-- Target frame: Do not name a number first. Ask for the approved range, level, and total compensation structure before anchoring.
-
-### Evidence
-- No verified salary mention found.
-
-### Structure
-- Base: Need verified market data or recruiter range before setting a numeric anchor.
-- Bonus: Ask whether there is annual bonus, performance bonus, or sign-on bonus.
-- Equity: Ask whether equity, RSU, options, or profit-sharing exists.
-- Benefit: Health / insurance coverage
-- Benefit: Paid leave and holidays
-- Benefit: Learning budget or certification support
-- Benefit: Remote/hybrid setup, commute, or relocation support
-- Benefit: Review cycle and promotion timeline
-
-### Scripts
-- Range question: Before I anchor on a number, could you share the approved range and level for the Senior Director, Equinix Fabric Product Management package, including base, bonus, equity, and review cycle?
-- Value anchor: Based on the scope of Senior Director, Equinix Fabric Product Management and my fit around Analytics, API, remote, product, I would like to calibrate toward the stronger end of the range if the team sees the level match.
 - Counter: Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?
 - Pause: I appreciate the details. I would like to review the full package and come back with a thoughtful response.
 - Close: If we can align on the package and review timeline, I would feel confident moving forward.

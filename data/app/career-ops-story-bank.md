@@ -1,6 +1,6 @@
 # Career Ops Story Bank
 
-Generated: 2026-05-20T00:58:28.960Z
+Generated: 2026-05-22T01:56:10.974Z
 Stories: 8
 
 ## Market Themes
@@ -14,15 +14,15 @@ Stories: 8
 
 ## Learning Plan (Missing High-Demand Skills)
 - [P0] growth (市場出現 46 次) — 高優先：在簡歷或 profile 中加入 growth 的實際使用案例，並在 projects 欄位補充相關實作。
-- [P0] python (市場出現 39 次) — 高優先：在簡歷或 profile 中加入 python 的實際使用案例，並在 projects 欄位補充相關實作。
-- [P0] go (市場出現 34 次) — 高優先：在簡歷或 profile 中加入 go 的實際使用案例，並在 projects 欄位補充相關實作。
+- [P0] python (市場出現 37 次) — 高優先：在簡歷或 profile 中加入 python 的實際使用案例，並在 projects 欄位補充相關實作。
+- [P0] go (市場出現 32 次) — 高優先：在簡歷或 profile 中加入 go 的實際使用案例，並在 projects 欄位補充相關實作。
 - [P0] aws (市場出現 29 次) — 高優先：在簡歷或 profile 中加入 aws 的實際使用案例，並在 projects 欄位補充相關實作。
-- [P0] java (市場出現 25 次) — 高優先：在簡歷或 profile 中加入 java 的實際使用案例，並在 projects 欄位補充相關實作。
+- [P0] java (市場出現 23 次) — 高優先：在簡歷或 profile 中加入 java 的實際使用案例，並在 projects 欄位補充相關實作。
+- [P0] operations (市場出現 23 次) — 高優先：在簡歷或 profile 中加入 operations 的實際使用案例，並在 projects 欄位補充相關實作。
 - [P0] agents (市場出現 22 次) — 高優先：在簡歷或 profile 中加入 agents 的實際使用案例，並在 projects 欄位補充相關實作。
-- [P0] operations (市場出現 20 次) — 高優先：在簡歷或 profile 中加入 operations 的實際使用案例，並在 projects 欄位補充相關實作。
+- [P0] sales (市場出現 18 次) — 高優先：在簡歷或 profile 中加入 sales 的實際使用案例，並在 projects 欄位補充相關實作。
 - [P0] sql (市場出現 17 次) — 高優先：在簡歷或 profile 中加入 sql 的實際使用案例，並在 projects 欄位補充相關實作。
-- [P0] sales (市場出現 17 次) — 高優先：在簡歷或 profile 中加入 sales 的實際使用案例，並在 projects 欄位補充相關實作。
-- [P0] azure (市場出現 15 次) — 高優先：在簡歷或 profile 中加入 azure 的實際使用案例，並在 projects 欄位補充相關實作。
+- [P0] azure (市場出現 16 次) — 高優先：在簡歷或 profile 中加入 azure 的實際使用案例，並在 projects 欄位補充相關實作。
 
 ## Story Gaps
 - Add exact metrics for each story where possible.

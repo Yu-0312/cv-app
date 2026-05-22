@@ -1,6 +1,6 @@
 # Career Ops Parallel Worker Report
 
-Generated: 2026-05-20T00:58:32.573Z
+Generated: 2026-05-22T01:56:13.806Z
 Concurrency: 4
 Jobs processed: 49
 Errors: 0
@@ -191,6 +191,21 @@ Errors: 0
 - Never store API keys or credentials in job metadata.
 - Record only application status and user-approved notes.
 
+## P0 AIRWALLEX (SINGAPORE) PTE. LTD. - Senior Frontend Engineer, Regulatory Reporting
+
+- Score: 94
+- Grade: A
+- Research evidence: 0
+- Keywords: TypeScript, React, API, design system, engineer, data, graphql, node.js, dashboards
+- Compensation leverage: high
+- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
+
+### Apply Agent Guardrails
+- Never submit without explicit user confirmation.
+- Never fabricate work authorization, salary history, degree, or experience.
+- Never store API keys or credentials in job metadata.
+- Record only application status and user-approved notes.
+
 ## P0 ALPHA X TECHNOLOGY PTE. LTD. - Frontend Engineer
 
 - Score: 94
@@ -266,21 +281,6 @@ Errors: 0
 - Never store API keys or credentials in job metadata.
 - Record only application status and user-approved notes.
 
-## P0 Equinix, Inc - Senior Director, Equinix Fabric Product Management
-
-- Score: 94
-- Grade: A
-- Research evidence: 0
-- Keywords: Analytics, API, remote, product, data
-- Compensation leverage: high
-- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
-
-### Apply Agent Guardrails
-- Never submit without explicit user confirmation.
-- Never fabricate work authorization, salary history, degree, or experience.
-- Never store API keys or credentials in job metadata.
-- Record only application status and user-approved notes.
-
 ## P0 Treasure Data - Senior Software Engineer - Ruby on Rails
 
 - Score: 94
@@ -342,21 +342,6 @@ Errors: 0
 - Record only application status and user-approved notes.
 
 ## P0 Uber - Data Engineer II
-
-- Score: 93
-- Grade: A
-- Research evidence: 1
-- Keywords: Analytics, API, Performance Optimization, engineer, product, data
-- Compensation leverage: high
-- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
-
-### Apply Agent Guardrails
-- Never submit without explicit user confirmation.
-- Never fabricate work authorization, salary history, degree, or experience.
-- Never store API keys or credentials in job metadata.
-- Record only application status and user-approved notes.
-
-## P0 Uber - Data Engineer 2
 
 - Score: 93
 - Grade: A
@@ -491,12 +476,12 @@ Errors: 0
 - Never store API keys or credentials in job metadata.
 - Record only application status and user-approved notes.
 
-## P0 LAI GAMES PTE. LTD. - Fullstack Software Engineer Intern
+## P0 Capgemini Singapore  PTE. LTD. - Senior Frontend Engineer
 
 - Score: 92
 - Grade: A
 - Research evidence: 0
-- Keywords: JavaScript, React, API, remote, engineer, product, data
+- Keywords: JavaScript, TypeScript, React, CSS, Accessibility, Performance Optimization, Design Systems, design system, engineer, product
 - Compensation leverage: -
 - Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
 
@@ -656,12 +641,12 @@ Errors: 0
 - Never store API keys or credentials in job metadata.
 - Record only application status and user-approved notes.
 
-## P0 Genmab - Senior Data Product Engineer, Commercial
+## P0 Apple - Machine Learning Engineer (MLOps), Evaluation
 
 - Score: 92
 - Grade: A
 - Research evidence: 0
-- Keywords: Analytics, API, engineer, product, dashboards., data, dashboards
+- Keywords: Analytics, API, engineer, product, data
 - Compensation leverage: -
 - Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
 
@@ -707,7 +692,7 @@ Errors: 0
 - Grade: A
 - Research evidence: 0
 - Keywords: TypeScript, React, API, remote, engineer, product, data
-- Compensation leverage: high
+- Compensation leverage: -
 - Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
 
 ### Apply Agent Guardrails
@@ -737,6 +722,21 @@ Errors: 0
 - Grade: A
 - Research evidence: 0
 - Keywords: JavaScript, TypeScript, API, remote, engineer, product, data, restful
+- Compensation leverage: -
+- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
+
+### Apply Agent Guardrails
+- Never submit without explicit user confirmation.
+- Never fabricate work authorization, salary history, degree, or experience.
+- Never store API keys or credentials in job metadata.
+- Record only application status and user-approved notes.
+
+## P0 GitLab Greenhouse - Senior Backend Engineer (Ruby on Rails), Plan: Knowledge
+
+- Score: 92
+- Grade: A
+- Research evidence: 0
+- Keywords: remote, engineer, product, data, graphql
 - Compensation leverage: -
 - Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
 
