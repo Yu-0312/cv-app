@@ -4,10 +4,10 @@ import fs from "node:fs/promises";
 import path from "node:path";
 import { evaluateJob, normalizeProfile } from "./career-ops-evaluate.mjs";
 
-const DEFAULT_JOBS = "data/app/career-ops-jobs.json";
-const DEFAULT_PROFILE = "data/career-ops-profile.example.json";
-const DEFAULT_OUT = "data/app/career-ops-full-pool-ranking.json";
-const DEFAULT_REPORT_OUT = "data/app/career-ops-full-pool-ranking.md";
+const DEFAULT_JOBS = "tooling/data/app/career-ops-jobs.json";
+const DEFAULT_PROFILE = "tooling/data/career-ops-profile.example.json";
+const DEFAULT_OUT = "tooling/data/app/career-ops-full-pool-ranking.json";
+const DEFAULT_REPORT_OUT = "tooling/data/app/career-ops-full-pool-ranking.md";
 const DEFAULT_TOP = 250;
 
 function printHelp() {

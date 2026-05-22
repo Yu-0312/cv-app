@@ -6,12 +6,12 @@ import fsSync from "node:fs";
 import os from "node:os";
 import path from "node:path";
 
-const DEFAULT_PROFILE = fsSync.existsSync("data/career-ops-profile.json")
-  ? "data/career-ops-profile.json"
-  : "data/career-ops-profile.example.json";
-const DEFAULT_RUBRIC = fsSync.existsSync("data/career-ops-rubric.json")
-  ? "data/career-ops-rubric.json"
-  : "data/career-ops-rubric.example.json";
+const DEFAULT_PROFILE = fsSync.existsSync("tooling/data/career-ops-profile.json")
+  ? "tooling/data/career-ops-profile.json"
+  : "tooling/data/career-ops-profile.example.json";
+const DEFAULT_RUBRIC = fsSync.existsSync("tooling/data/career-ops-rubric.json")
+  ? "tooling/data/career-ops-rubric.json"
+  : "tooling/data/career-ops-rubric.example.json";
 
 function printHelp() {
   console.log(`Career Ops parallel pipeline
@@ -45,9 +45,9 @@ Options:
 function parseArgs(argv) {
   const args = {
     profile: DEFAULT_PROFILE,
-    strategy: "data/career-ops-source-strategy.json",
+    strategy: "tooling/data/career-ops-source-strategy.json",
     rubric: DEFAULT_RUBRIC,
-    sources: "data/career-ops-sources.json",
+    sources: "tooling/data/career-ops-sources.json",
     markets: [],
     concurrency: Math.max(1, Math.min(4, os.cpus().length || 2)),
     skipSourceBuild: false,
@@ -218,19 +218,19 @@ async function main() {
       "scripts/career-ops-build-sources.mjs",
       "--strategy", args.strategy,
       "--out", args.sources,
-      "--report-out", "data/app/career-ops-source-strategy-report.md",
+      "--report-out", "tooling/data/app/career-ops-source-strategy-report.md",
       ...marketArgs(args.markets)
     ]);
   }
 
-  if (!args.skipSourceFlex && fsSync.existsSync("data/career-ops-source-flex.json")) {
+  if (!args.skipSourceFlex && fsSync.existsSync("tooling/data/career-ops-source-flex.json")) {
     await runProcess("source-flex", "node", [
       "scripts/career-ops-source-flex.mjs",
       "--sources", args.sources,
       "--profile", args.profile,
-      "--rules", "data/career-ops-source-flex.json",
+      "--rules", "tooling/data/career-ops-source-flex.json",
       "--out", args.sources,
-      "--report-out", "data/app/career-ops-source-flex-report.md",
+      "--report-out", "tooling/data/app/career-ops-source-flex-report.md",
       ...marketArgs(args.markets)
     ]);
   }
@@ -261,10 +261,10 @@ async function main() {
         "--include-expired"
       ]);
     }));
-    const merged = await mergeWorkerOutputs(outputFiles, "data/app/career-ops-jobs.json", args.includeExpired);
-    await writeJson("data/app/career-ops-jobs.json", merged);
-    await writeBrowserJs("data/app/career-ops-jobs.js", merged);
-    await writeReport("data/app/career-ops-parallel-report.md", renderParallelReport({
+    const merged = await mergeWorkerOutputs(outputFiles, "tooling/data/app/career-ops-jobs.json", args.includeExpired);
+    await writeJson("tooling/data/app/career-ops-jobs.json", merged);
+    await writeBrowserJs("tooling/data/app/career-ops-jobs.js", merged);
+    await writeReport("tooling/data/app/career-ops-parallel-report.md", renderParallelReport({
       startedAt,
       finishedAt: new Date().toISOString(),
       concurrency: args.concurrency,
@@ -280,120 +280,120 @@ async function main() {
   if (!args.skipQuality) {
     await runProcess("source quality", "node", [
       "scripts/career-ops-source-quality.mjs",
-      "--jobs", "data/app/career-ops-jobs.json",
-      "--out", "data/app/career-ops-jobs.json",
-      "--js-out", "data/app/career-ops-jobs.js",
-      "--report-out", "data/app/career-ops-source-quality-report.md"
+      "--jobs", "tooling/data/app/career-ops-jobs.json",
+      "--out", "tooling/data/app/career-ops-jobs.json",
+      "--js-out", "tooling/data/app/career-ops-jobs.js",
+      "--report-out", "tooling/data/app/career-ops-source-quality-report.md"
     ]);
   }
 
   await runProcess("evaluation", "node", [
     "scripts/career-ops-evaluate.mjs",
-    "--jobs", "data/app/career-ops-jobs.json",
+    "--jobs", "tooling/data/app/career-ops-jobs.json",
     "--profile", args.profile,
-    "--out", "data/app/career-ops-jobs.json"
+    "--out", "tooling/data/app/career-ops-jobs.json"
   ]);
   await runProcess("intelligence", "node", [
     "scripts/career-ops-intelligence.mjs",
-    "--jobs", "data/app/career-ops-jobs.json",
+    "--jobs", "tooling/data/app/career-ops-jobs.json",
     "--profile", args.profile,
     "--rubric", args.rubric,
-    "--out", "data/app/career-ops-jobs.json",
-    "--js-out", "data/app/career-ops-jobs.js",
-    "--report-out", "data/app/career-ops-intelligence-report.md"
+    "--out", "tooling/data/app/career-ops-jobs.json",
+    "--js-out", "tooling/data/app/career-ops-jobs.js",
+    "--report-out", "tooling/data/app/career-ops-intelligence-report.md"
   ]);
   await runProcess("deep research", "node", [
     "scripts/career-ops-deep-research.mjs",
-    "--jobs", "data/app/career-ops-jobs.json",
+    "--jobs", "tooling/data/app/career-ops-jobs.json",
     "--profile", args.profile,
     "--sources", args.sources,
-    "--out", "data/app/career-ops-deep-research.json",
-    "--js-out", "data/app/career-ops-deep-research.js",
-    "--report-out", "data/app/career-ops-deep-research.md"
+    "--out", "tooling/data/app/career-ops-deep-research.json",
+    "--js-out", "tooling/data/app/career-ops-deep-research.js",
+    "--report-out", "tooling/data/app/career-ops-deep-research.md"
   ]);
   await Promise.all([
     runProcess("application kit", "node", [
       "scripts/career-ops-application-kit.mjs",
-      "--jobs", "data/app/career-ops-jobs.json",
+      "--jobs", "tooling/data/app/career-ops-jobs.json",
       "--profile", args.profile,
-      "--out", "data/app/career-ops-application-kit.json",
-      "--js-out", "data/app/career-ops-application-kit.js",
-      "--report-out", "data/app/career-ops-application-kit.md"
+      "--out", "tooling/data/app/career-ops-application-kit.json",
+      "--js-out", "tooling/data/app/career-ops-application-kit.js",
+      "--report-out", "tooling/data/app/career-ops-application-kit.md"
     ]),
     runProcess("compensation", "node", [
       "scripts/career-ops-compensation.mjs",
-      "--jobs", "data/app/career-ops-jobs.json",
+      "--jobs", "tooling/data/app/career-ops-jobs.json",
       "--profile", args.profile
     ]),
     runProcess("story bank", "node", [
       "scripts/career-ops-story-bank.mjs",
-      "--jobs", "data/app/career-ops-jobs.json",
+      "--jobs", "tooling/data/app/career-ops-jobs.json",
       "--profile", args.profile
     ]),
     runProcess("apply agent", "node", [
       "scripts/career-ops-apply-agent.mjs",
-      "--jobs", "data/app/career-ops-jobs.json",
+      "--jobs", "tooling/data/app/career-ops-jobs.json",
       "--dry-run",
-      "--out", "data/app/career-ops-apply-agent-report.json",
-      "--report-out", "data/app/career-ops-apply-agent-report.md"
+      "--out", "tooling/data/app/career-ops-apply-agent-report.json",
+      "--report-out", "tooling/data/app/career-ops-apply-agent-report.md"
     ]),
     runProcess("learning", "node", [
       "scripts/career-ops-learning.mjs",
-      "--jobs", "data/app/career-ops-jobs.json",
+      "--jobs", "tooling/data/app/career-ops-jobs.json",
       "--profile", args.profile,
       "--sources", args.sources,
-      "--out", "data/app/career-ops-learning.json",
-      "--js-out", "data/app/career-ops-learning.js",
-      "--report-out", "data/app/career-ops-learning-report.md"
+      "--out", "tooling/data/app/career-ops-learning.json",
+      "--js-out", "tooling/data/app/career-ops-learning.js",
+      "--report-out", "tooling/data/app/career-ops-learning-report.md"
     ])
   ]);
   await Promise.all([
     runProcess("deep fit", "node", [
       "scripts/career-ops-deep-fit.mjs",
-      "--jobs", "data/app/career-ops-jobs.json",
+      "--jobs", "tooling/data/app/career-ops-jobs.json",
       "--profile", args.profile,
-      "--research", "data/app/career-ops-deep-research.json",
-      "--compensation", "data/app/career-ops-compensation.json",
-      "--story-bank", "data/app/career-ops-story-bank.json",
-      "--out", "data/app/career-ops-deep-fit.json",
-      "--js-out", "data/app/career-ops-deep-fit.js",
-      "--report-out", "data/app/career-ops-deep-fit.md"
+      "--research", "tooling/data/app/career-ops-deep-research.json",
+      "--compensation", "tooling/data/app/career-ops-compensation.json",
+      "--story-bank", "tooling/data/app/career-ops-story-bank.json",
+      "--out", "tooling/data/app/career-ops-deep-fit.json",
+      "--js-out", "tooling/data/app/career-ops-deep-fit.js",
+      "--report-out", "tooling/data/app/career-ops-deep-fit.md"
     ]),
     runProcess("job-level parallel merge", "node", [
       "scripts/career-ops-parallel.mjs",
-      "--jobs", "data/app/career-ops-jobs.json",
+      "--jobs", "tooling/data/app/career-ops-jobs.json",
       "--profile", args.profile,
-      "--research", "data/app/career-ops-deep-research.json",
-      "--compensation", "data/app/career-ops-compensation.json",
-      "--story-bank", "data/app/career-ops-story-bank.json",
-      "--out", "data/app/career-ops-parallel-report.json",
-      "--js-out", "data/app/career-ops-parallel-report.js",
-      "--report-out", "data/app/career-ops-parallel-report.md",
+      "--research", "tooling/data/app/career-ops-deep-research.json",
+      "--compensation", "tooling/data/app/career-ops-compensation.json",
+      "--story-bank", "tooling/data/app/career-ops-story-bank.json",
+      "--out", "tooling/data/app/career-ops-parallel-report.json",
+      "--js-out", "tooling/data/app/career-ops-parallel-report.js",
+      "--report-out", "tooling/data/app/career-ops-parallel-report.md",
       "--concurrency", String(args.concurrency)
     ])
   ]);
 
   await runProcess("decision report", "node", [
     "scripts/career-ops-decision-report.mjs",
-    "--jobs", "data/app/career-ops-jobs.json",
+    "--jobs", "tooling/data/app/career-ops-jobs.json",
     "--profile", args.profile,
-    "--research", "data/app/career-ops-deep-research.json",
-    "--compensation", "data/app/career-ops-compensation.json",
-    "--story-bank", "data/app/career-ops-story-bank.json",
-    "--application-kit", "data/app/career-ops-application-kit.json",
-    "--deep-fit", "data/app/career-ops-deep-fit.json",
-    "--out", "data/app/career-ops-decision-report.json",
-    "--js-out", "data/app/career-ops-decision-report.js",
-    "--report-out", "data/app/career-ops-decision-report.md"
+    "--research", "tooling/data/app/career-ops-deep-research.json",
+    "--compensation", "tooling/data/app/career-ops-compensation.json",
+    "--story-bank", "tooling/data/app/career-ops-story-bank.json",
+    "--application-kit", "tooling/data/app/career-ops-application-kit.json",
+    "--deep-fit", "tooling/data/app/career-ops-deep-fit.json",
+    "--out", "tooling/data/app/career-ops-decision-report.json",
+    "--js-out", "tooling/data/app/career-ops-decision-report.js",
+    "--report-out", "tooling/data/app/career-ops-decision-report.md"
   ]);
 
   if (!args.skipModes) {
     await runProcess("modes", "node", [
       "scripts/career-ops-modes.mjs",
-      "--in", "data/career-ops-modes.json",
-      "--out", "data/app/career-ops-modes.json",
-      "--js-out", "data/app/career-ops-modes.js",
-      "--report-out", "data/app/career-ops-modes-report.md"
+      "--in", "tooling/data/career-ops-modes.json",
+      "--out", "tooling/data/app/career-ops-modes.json",
+      "--js-out", "tooling/data/app/career-ops-modes.js",
+      "--report-out", "tooling/data/app/career-ops-modes-report.md"
     ]);
   }
 }

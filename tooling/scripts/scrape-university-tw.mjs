@@ -4,7 +4,7 @@ import fs from "node:fs/promises";
 import path from "node:path";
 
 const BASE_URL = "https://university-tw.ldkrsi.men";
-const DEFAULT_OUT = "data/raw/university-tw-site.json";
+const DEFAULT_OUT = "tooling/data/raw/university-tw-site.json";
 const DEFAULT_CONCURRENCY = 8;
 
 const args = process.argv.slice(2);

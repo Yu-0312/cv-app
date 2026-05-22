@@ -7,6 +7,7 @@ dist.zip
 supabase/.temp/
 template-reference-*.pdf
 config.js
+!app/config.js
 .claude/worktrees/
 data/raw/104-browser-capture.json
 data/normalized/104-gsat-115-browser.json
@@ -23,6 +24,22 @@ data/app/gsat-score-synthetic-*.csv.gz
 data/app/gsat-score-synthetic-*-summary.json
 data/app/career-ops-jobs-thomas.*
 data/app/career-ops-intelligence-thomas-report.md
+tooling/data/raw/104-browser-capture.json
+tooling/data/normalized/104-gsat-115-browser.json
+tooling/data/career-ops-profiles/
+tooling/data/app/career-ops-jobs.json
+tooling/data/app/career-ops-jobs.js
+tooling/data/app/career-ops-combined-jobs.json
+tooling/data/app/career-ops-combined-jobs.js
+tooling/data/app/*-results.csv
+tooling/data/app/*-results.jsonl
+tooling/data/app/career-ops-snapshot/
+tooling/data/app/gsat-score-synthetic-*.csv
+tooling/data/app/gsat-score-synthetic-*.csv.gz
+tooling/data/app/gsat-score-synthetic-*-summary.json
+tooling/data/app/career-ops-jobs-thomas.*
+tooling/data/app/career-ops-intelligence-thomas-report.md
+tooling/skills/
 
 # Promotional assets (not part of app runtime)
 promo-video/
@@ -36,3 +53,7 @@ data/app/career-ops-apply-agent-report.*
 data/app/career-ops-decision-report.*
 data/app/career-ops-search-report.md
 data/app/gsat-external-report.md
+tooling/data/app/career-ops-apply-agent-report.*
+tooling/data/app/career-ops-decision-report.*
+tooling/data/app/career-ops-search-report.md
+tooling/data/app/gsat-external-report.md

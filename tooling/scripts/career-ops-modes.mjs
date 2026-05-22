@@ -3,10 +3,10 @@
 import fs from "node:fs/promises";
 import path from "node:path";
 
-const DEFAULT_IN = "data/career-ops-modes.json";
-const DEFAULT_OUT = "data/app/career-ops-modes.json";
-const DEFAULT_JS_OUT = "data/app/career-ops-modes.js";
-const DEFAULT_REPORT = "data/app/career-ops-modes-report.md";
+const DEFAULT_IN = "tooling/data/career-ops-modes.json";
+const DEFAULT_OUT = "tooling/data/app/career-ops-modes.json";
+const DEFAULT_JS_OUT = "tooling/data/app/career-ops-modes.js";
+const DEFAULT_REPORT = "tooling/data/app/career-ops-modes-report.md";
 
 function printHelp() {
   console.log(`Career Ops modes registry

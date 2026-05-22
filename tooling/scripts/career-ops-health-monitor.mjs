@@ -17,9 +17,9 @@ import fsSync from "node:fs";
 import path from "node:path";
 import { spawnSync } from "node:child_process";
 
-const DEFAULT_JOBS = "data/app/career-ops-jobs.json";
-const DEFAULT_OUT = "data/app/career-ops-job-health.json";
-const DEFAULT_REPORT = "data/app/career-ops-job-health-report.md";
+const DEFAULT_JOBS = "tooling/data/app/career-ops-jobs.json";
+const DEFAULT_OUT = "tooling/data/app/career-ops-job-health.json";
+const DEFAULT_REPORT = "tooling/data/app/career-ops-job-health-report.md";
 const DEFAULT_THRESHOLD = 0.30;
 
 function printHelp() {
@@ -45,9 +45,9 @@ Options:
 }
 
 function parseArgs(argv) {
-  const defaultProfile = fsSync.existsSync("data/career-ops-profile.json")
-    ? "data/career-ops-profile.json"
-    : "data/career-ops-profile.example.json";
+  const defaultProfile = fsSync.existsSync("tooling/data/career-ops-profile.json")
+    ? "tooling/data/career-ops-profile.json"
+    : "tooling/data/career-ops-profile.example.json";
 
   const args = {
     jobs: DEFAULT_JOBS,
@@ -206,8 +206,8 @@ function triggerReScrape(args) {
     "--skip-parallel",
     "--skip-modes"
   ];
-  if (fsSync.existsSync("data/career-ops-source-strategy.json")) {
-    pipelineArgs.push("--strategy", "data/career-ops-source-strategy.json");
+  if (fsSync.existsSync("tooling/data/career-ops-source-strategy.json")) {
+    pipelineArgs.push("--strategy", "tooling/data/career-ops-source-strategy.json");
   }
   const result = spawnSync("node", pipelineArgs, { stdio: "inherit", shell: false });
   if (result.status !== 0) {

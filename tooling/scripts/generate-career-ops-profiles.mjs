@@ -4,8 +4,8 @@ import fs from "node:fs";
 import fsp from "node:fs/promises";
 import path from "node:path";
 
-const DEFAULT_MANIFEST = "data/career-ops-profiles/manifest.json";
-const DEFAULT_PROFILE = "data/career-ops-profile.example.json";
+const DEFAULT_MANIFEST = "tooling/data/career-ops-profiles/manifest.json";
+const DEFAULT_PROFILE = "tooling/data/career-ops-profile.example.json";
 const DEFAULT_ROWS = 100000;
 const DEFAULT_SHARD_SIZE = 500;
 const DETAIL_SCHEMA_VERSION = "career-ops-profile-detail-v2";

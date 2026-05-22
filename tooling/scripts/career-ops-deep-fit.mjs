@@ -3,14 +3,14 @@
 import fs from "node:fs/promises";
 import path from "node:path";
 
-const DEFAULT_JOBS = "data/app/career-ops-jobs.json";
-const DEFAULT_PROFILE = "data/career-ops-profile.example.json";
-const DEFAULT_RESEARCH = "data/app/career-ops-deep-research.json";
-const DEFAULT_COMP = "data/app/career-ops-compensation.json";
-const DEFAULT_STORY = "data/app/career-ops-story-bank.json";
-const DEFAULT_OUT = "data/app/career-ops-deep-fit.json";
-const DEFAULT_JS_OUT = "data/app/career-ops-deep-fit.js";
-const DEFAULT_REPORT = "data/app/career-ops-deep-fit.md";
+const DEFAULT_JOBS = "tooling/data/app/career-ops-jobs.json";
+const DEFAULT_PROFILE = "tooling/data/career-ops-profile.example.json";
+const DEFAULT_RESEARCH = "tooling/data/app/career-ops-deep-research.json";
+const DEFAULT_COMP = "tooling/data/app/career-ops-compensation.json";
+const DEFAULT_STORY = "tooling/data/app/career-ops-story-bank.json";
+const DEFAULT_OUT = "tooling/data/app/career-ops-deep-fit.json";
+const DEFAULT_JS_OUT = "tooling/data/app/career-ops-deep-fit.js";
+const DEFAULT_REPORT = "tooling/data/app/career-ops-deep-fit.md";
 
 function printHelp() {
   console.log(`Career Ops deep fit evaluator

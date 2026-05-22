@@ -10,7 +10,7 @@ import puppeteer from "puppeteer-core";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-const ROOT_DIR = path.resolve(__dirname, "..");
+const ROOT_DIR = path.resolve(__dirname, "../..");
 const DIST_DIR = path.join(ROOT_DIR, "dist");
 const CHROME_CANDIDATES = [
   process.env.CHROME_PATH,
@@ -740,6 +740,40 @@ async function main() {
       });
       assert.equal(staleStorageCleared, true);
 
+      await page.evaluate(async () => {
+        window.localStorage.removeItem("cv-studio-auth-signed-out-v1");
+        await window.__supabaseTest.emit("SIGNED_IN", {
+          id: "smoke-user",
+          email: "smoke@example.com",
+          user_metadata: { full_name: "Smoke Tester" }
+        });
+        const auth = window.cvStudioState.client.auth;
+        const originalSignOut = auth.signOut.bind(auth);
+        window.__restoreSmokeSignOut = () => {
+          auth.signOut = originalSignOut;
+        };
+        auth.signOut = async (options) => {
+          if (options?.scope === "global") return new Promise(() => {});
+          return originalSignOut(options);
+        };
+      });
+      await page.waitForFunction(() => /Smoke Tester/.test(document.getElementById("authStatus")?.textContent || ""));
+      await page.click("#headerLogoutBtn");
+      await page.waitForFunction(() => /已清除此裝置的登入狀態/.test(document.getElementById("message")?.textContent || ""), { timeout: 8000 });
+      const hungGlobalLogoutState = await page.evaluate(() => ({
+        authText: document.getElementById("authStatus")?.textContent || "",
+        headerText: document.getElementById("headerAuthStatus")?.textContent || "",
+        authBusy: Boolean(window.cvStudioState?.authBusy),
+        user: window.cvStudioState?.user?.id || "",
+        authStorageCleared: !window.localStorage.getItem(window.__supabaseTest.storageKey) && !window.sessionStorage.getItem(window.__supabaseTest.storageKey)
+      }));
+      assert.match(hungGlobalLogoutState.authText, /尚未登入/);
+      assert.match(hungGlobalLogoutState.headerText, /尚未登入/);
+      assert.equal(hungGlobalLogoutState.authBusy, false);
+      assert.equal(hungGlobalLogoutState.user, "");
+      assert.equal(hungGlobalLogoutState.authStorageCleared, true);
+      await page.evaluate(() => window.__restoreSmokeSignOut?.());
+
       await page.evaluateOnNewDocument(() => {
         const privateTokens = ["Stale Cached Person", "Stale Cached Portfolio"];
         window.__cvPrivacyLeakSeen = false;
@@ -849,14 +883,14 @@ async function main() {
         portfolio: document.getElementById("homeTaskPortfolioState")?.textContent || "",
         gsat: document.getElementById("homeTaskGsatState")?.textContent || ""
       }));
-      assert.match(initialHome.title, /功能概覽/);
+      assert.match(initialHome.title, /功能完整度/);
       assert.match(initialHome.label, /各功能獨立判斷/);
-      assert.match(initialHome.progress, /登入後/);
-      assert.match(initialHome.note, /不會把所有工具加總/);
-      assert.match(initialHome.sync, /未登入/);
-      assert.match(initialHome.cv, /可使用/);
-      assert.match(initialHome.portfolio, /可使用/);
-      assert.match(initialHome.gsat, /可使用/);
+      assert.match(initialHome.progress, /分開判斷/);
+      assert.match(initialHome.note, /瀏覽器草稿進度/);
+      assert.match(initialHome.sync, /本機草稿/);
+      assert.match(initialHome.cv, /可編輯/);
+      assert.match(initialHome.portfolio, /待整理/);
+      assert.match(initialHome.gsat, /待輸入/);
 
       await page.evaluate(() => {
         Object.assign(window.cvStudioState.data, {
@@ -904,7 +938,7 @@ async function main() {
         window.dispatchEvent(new CustomEvent("portfolio:data-updated"));
       });
 
-      await page.waitForFunction(() => /登入後/.test(document.getElementById("homeProgressValue")?.textContent || ""));
+      await page.waitForFunction(() => /分開判斷/.test(document.getElementById("homeProgressValue")?.textContent || ""));
       const signedOutUpdatedHome = await page.evaluate(() => ({
         title: document.getElementById("homeStatusTitle")?.textContent || "",
         label: document.getElementById("homeProgressLabel")?.textContent || "",
@@ -914,13 +948,13 @@ async function main() {
         portfolio: document.getElementById("homeTaskPortfolioState")?.textContent || "",
         gsat: document.getElementById("homeTaskGsatState")?.textContent || ""
       }));
-      assert.match(signedOutUpdatedHome.title, /功能概覽/);
+      assert.match(signedOutUpdatedHome.title, /功能完整度/);
       assert.match(signedOutUpdatedHome.label, /各功能獨立判斷/);
-      assert.match(signedOutUpdatedHome.progress, /登入後/);
-      assert.match(signedOutUpdatedHome.sync, /未登入/);
-      assert.match(signedOutUpdatedHome.cv, /可使用/);
-      assert.match(signedOutUpdatedHome.portfolio, /可使用/);
-      assert.match(signedOutUpdatedHome.gsat, /可使用/);
+      assert.match(signedOutUpdatedHome.progress, /分開判斷/);
+      assert.match(signedOutUpdatedHome.sync, /本機草稿/);
+      assert.match(signedOutUpdatedHome.cv, /資料完整/);
+      assert.match(signedOutUpdatedHome.portfolio, /已整理/);
+      assert.match(signedOutUpdatedHome.gsat, /可分析/);
 
       await page.evaluate(async () => {
         window.localStorage.removeItem("cv-studio-auth-signed-out-v1");
@@ -978,7 +1012,7 @@ async function main() {
       await page.evaluate(async () => {
         await window.__supabaseTest.emit("SIGNED_OUT");
       });
-      await page.waitForFunction(() => /未登入/.test(document.getElementById("homeSyncState")?.textContent || ""));
+      await page.waitForFunction(() => /本機草稿/.test(document.getElementById("homeSyncState")?.textContent || ""));
     });
 
     await withStep("CV 版本、雙語與公開分享隱私", async () => {
@@ -1326,6 +1360,7 @@ async function main() {
         window._careerOpsDeepFitSource = "user-upload";
         window.careerOpsSetTab("upload");
       });
+      await page.$eval(".career-upload-dev-snapshot", (node) => { node.open = true; });
       await page.click("#careerLoadStaticDeepFit");
       const staticSnapshotLoadAudit = await page.evaluate(() => ({
         activeTab: document.querySelector(".career-ops-tab.active")?.dataset.careerOpsTab || "",
@@ -1339,11 +1374,12 @@ async function main() {
       assert.equal(staticSnapshotLoadAudit.deepFitSource, "user-upload", "讀取靜態快照不應改變目前結果來源");
       assert.match(staticSnapshotLoadAudit.status, /尚未切換畫面/);
       assert.equal(staticSnapshotLoadAudit.viewVisible, true, "讀取後應顯示查看快照結果按鈕");
+      await page.evaluate(() => { window.confirm = () => true; });
       await page.click("#careerViewStaticDeepFit");
       await page.waitForFunction(() => {
         const activeTab = document.querySelector(".career-ops-tab.active")?.dataset.careerOpsTab || "";
         const area = document.getElementById("careerDeepFitArea");
-        return activeTab === "deepfit" && /本機靜態快照結果/.test(area?.textContent || "");
+        return activeTab === "deepfit" && /示範快照結果/.test(area?.textContent || "");
       });
       const staticSnapshotViewAudit = await page.evaluate(() => ({
         activeTab: document.querySelector(".career-ops-tab.active")?.dataset.careerOpsTab || "",
@@ -1391,6 +1427,54 @@ async function main() {
       assert.ok(localDeepFitAudit.totalResults >= 50, "本機 Deep Fit 應產生 50 筆以上結果");
       assert.ok(localDeepFitAudit.layerA > 0, "本機 Deep Fit 應產生 Layer A 結果");
       assert.ok(localDeepFitAudit.layerB > 0, "本機 Deep Fit 應產生 Layer B 結果");
+      const studentFitAudit = await page.evaluate(() => {
+        const result = window.careerOpsClassifyLocalJobs([
+          {
+            title: "Expert Frontend Engineer",
+            company: "Mega Corp",
+            description: "Lead React architecture, mentor senior engineers, own platform strategy.",
+            score: 98,
+            isExpired: false
+          },
+          {
+            title: "Lead Software Engineer",
+            company: "Big Bank",
+            description: "Lead engineering roadmap, own distributed systems and senior stakeholder delivery.",
+            score: 96,
+            isExpired: false
+          },
+          {
+            title: "Frontend Intern",
+            company: "Campus Lab",
+            description: "Internship for students building HTML, CSS, JavaScript pages with mentor support.",
+            score: 60,
+            isExpired: false
+          },
+          {
+            title: "Junior Web Assistant",
+            company: "Local Studio",
+            description: "Entry-level role for web students using HTML, CSS, JavaScript and Figma.",
+            score: 62,
+            isExpired: false
+          }
+        ], {
+          role: "高中生",
+          summary: "高中生，正在準備作品集，會 HTML CSS JavaScript。",
+          skills: ["HTML", "CSS", "JavaScript"],
+          education: [{ institution: "測試高中", degree: "高中在學" }],
+          preferences: { targetRoles: ["Frontend Intern", "Junior Web Assistant"] }
+        });
+        const titles = [...(result.layerA || []), ...(result.layerB || []), ...(result.layerC || [])].map((job) => job.title);
+        return {
+          candidateStage: result.candidateStageLabel,
+          filtered: result.filteredSeniorityMismatches,
+          titles
+        };
+      });
+      assert.match(studentFitAudit.candidateStage, /學生/);
+      assert.ok(studentFitAudit.filtered >= 2, "學生履歷應排除明顯高階職缺");
+      assert.ok(studentFitAudit.titles.some((title) => /Intern|Junior/.test(title)), "學生履歷應保留實習 / 初階職缺");
+      assert.doesNotMatch(studentFitAudit.titles.join(" "), /Expert|Lead/, "學生履歷不應顯示高階職缺");
       await page.waitForFunction(() => {
         const area = document.getElementById("careerDeepFitArea");
         return area && /比對總數/.test(area.textContent || "") && /深度評估/.test(area.textContent || "");

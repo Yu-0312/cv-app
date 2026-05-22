@@ -5,8 +5,8 @@ import path from "node:path";
 import { resolveSourceAdapter } from "./career-ops-source-adapters.mjs";
 import { inferJobMarketMetadata } from "./lib/career-ops-market.mjs";
 
-const DEFAULT_JSON_OUT = "data/app/career-ops-jobs.json";
-const DEFAULT_JS_OUT = "data/app/career-ops-jobs.js";
+const DEFAULT_JSON_OUT = "tooling/data/app/career-ops-jobs.json";
+const DEFAULT_JS_OUT = "tooling/data/app/career-ops-jobs.js";
 const DEFAULT_TIMEOUT_MS = 18000;
 
 function printHelp() {

@@ -3,12 +3,12 @@
 import fs from "node:fs/promises";
 import path from "node:path";
 
-const DEFAULT_JOBS = "data/app/career-ops-jobs.json";
-const DEFAULT_PROFILE = "data/career-ops-profile.example.json";
-const DEFAULT_SOURCES = "data/career-ops-sources.json";
-const DEFAULT_OUT = "data/app/career-ops-deep-research.json";
-const DEFAULT_JS_OUT = "data/app/career-ops-deep-research.js";
-const DEFAULT_REPORT = "data/app/career-ops-deep-research.md";
+const DEFAULT_JOBS = "tooling/data/app/career-ops-jobs.json";
+const DEFAULT_PROFILE = "tooling/data/career-ops-profile.example.json";
+const DEFAULT_SOURCES = "tooling/data/career-ops-sources.json";
+const DEFAULT_OUT = "tooling/data/app/career-ops-deep-research.json";
+const DEFAULT_JS_OUT = "tooling/data/app/career-ops-deep-research.js";
+const DEFAULT_REPORT = "tooling/data/app/career-ops-deep-research.md";
 
 function printHelp() {
   console.log(`Career Ops deep research

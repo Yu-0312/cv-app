@@ -10,8 +10,8 @@ import { createArgParser, ensureDir } from "./lib/utils.mjs";
 const DEFAULT_ROWS = 1_000_000;
 const DEFAULT_YEAR = 115;
 const DEFAULT_SEED = "gsat-score-synthetic-v1";
-const DEFAULT_OUT = "data/app/gsat-score-synthetic-115.csv";
-const DEFAULT_SUMMARY_OUT = "data/app/gsat-score-synthetic-115-summary.json";
+const DEFAULT_OUT = "tooling/data/app/gsat-score-synthetic-115.csv";
+const DEFAULT_SUMMARY_OUT = "tooling/data/app/gsat-score-synthetic-115-summary.json";
 
 const SUBJECTS = ["chinese", "english", "math_a", "math_b", "society", "natural"];
 const SCORE_COLUMNS = new Set(SUBJECTS);

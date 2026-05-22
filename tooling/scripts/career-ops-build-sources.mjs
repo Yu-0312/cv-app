@@ -3,9 +3,9 @@
 import fs from "node:fs/promises";
 import path from "node:path";
 
-const DEFAULT_STRATEGY = "data/career-ops-source-strategy.json";
-const DEFAULT_OUT = "data/career-ops-sources.json";
-const DEFAULT_REPORT_OUT = "data/app/career-ops-source-strategy-report.md";
+const DEFAULT_STRATEGY = "tooling/data/career-ops-source-strategy.json";
+const DEFAULT_OUT = "tooling/data/career-ops-sources.json";
+const DEFAULT_REPORT_OUT = "tooling/data/app/career-ops-source-strategy-report.md";
 
 function printHelp() {
   console.log(`Career Ops source strategy builder

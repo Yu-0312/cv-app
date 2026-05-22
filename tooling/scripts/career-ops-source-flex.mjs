@@ -3,11 +3,11 @@
 import fs from "node:fs/promises";
 import path from "node:path";
 
-const DEFAULT_SOURCES = "data/career-ops-sources.json";
-const DEFAULT_PROFILE = "data/career-ops-profile.example.json";
-const DEFAULT_RULES = "data/career-ops-source-flex.json";
-const DEFAULT_OUT = "data/career-ops-sources.json";
-const DEFAULT_REPORT = "data/app/career-ops-source-flex-report.md";
+const DEFAULT_SOURCES = "tooling/data/career-ops-sources.json";
+const DEFAULT_PROFILE = "tooling/data/career-ops-profile.example.json";
+const DEFAULT_RULES = "tooling/data/career-ops-source-flex.json";
+const DEFAULT_OUT = "tooling/data/career-ops-sources.json";
+const DEFAULT_REPORT = "tooling/data/app/career-ops-source-flex-report.md";
 
 function printHelp() {
   console.log(`Career Ops source flex expander
