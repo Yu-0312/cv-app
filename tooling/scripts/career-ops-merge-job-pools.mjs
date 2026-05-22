@@ -3,11 +3,11 @@
 import fs from "node:fs/promises";
 import path from "node:path";
 
-const DEFAULT_MAIN = "data/app/career-ops-jobs.json";
-const DEFAULT_UPSTREAM = "data/app/career-ops-upstream-jobs.json";
-const DEFAULT_OUT = "data/app/career-ops-combined-jobs.json";
-const DEFAULT_JS_OUT = "data/app/career-ops-combined-jobs.js";
-const DEFAULT_REPORT_OUT = "data/app/career-ops-combined-jobs-report.md";
+const DEFAULT_MAIN = "tooling/data/app/career-ops-jobs.json";
+const DEFAULT_UPSTREAM = "tooling/data/app/career-ops-upstream-jobs.json";
+const DEFAULT_OUT = "tooling/data/app/career-ops-combined-jobs.json";
+const DEFAULT_JS_OUT = "tooling/data/app/career-ops-combined-jobs.js";
+const DEFAULT_REPORT_OUT = "tooling/data/app/career-ops-combined-jobs-report.md";
 const DEFAULT_TOP_LIMIT = 1000;
 
 const TRACKING_PARAMS = [

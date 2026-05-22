@@ -5,8 +5,8 @@ import path from "node:path";
 import { promisify } from "node:util";
 import { gzip as gzipCallback } from "node:zlib";
 
-const DEFAULT_INPUT = "data/app/career-ops-jobs.json";
-const DEFAULT_OUT_DIR = "data/app/career-ops-snapshot";
+const DEFAULT_INPUT = "tooling/data/app/career-ops-jobs.json";
+const DEFAULT_OUT_DIR = "tooling/data/app/career-ops-snapshot";
 const DEFAULT_JOBS_PER_SHARD = 1000;
 const DEFAULT_BUCKET = "career-ops-snapshots";
 const DEFAULT_PREFIX = "career-ops/latest";

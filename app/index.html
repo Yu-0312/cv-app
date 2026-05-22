@@ -5824,6 +5824,76 @@
       color: #b91c1c;
       content: "!";
     }
+    .career-upload-status.is-processing {
+      border-color: rgba(216, 159, 61, 0.32);
+      background: rgba(216, 159, 61, 0.08);
+      color: #7c4d0d;
+    }
+    .career-upload-status.is-processing::before {
+      width: 20px;
+      height: 20px;
+      border: 2px solid rgba(216, 159, 61, 0.25);
+      border-top-color: #a0610b;
+      background: transparent;
+      color: transparent;
+      content: "";
+      animation: careerUploadSpin 0.85s linear infinite;
+    }
+    @keyframes careerUploadSpin {
+      to { transform: rotate(360deg); }
+    }
+    .career-upload-progress {
+      display: grid;
+      gap: 8px;
+      width: 100%;
+    }
+    .career-upload-progress-main {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      color: var(--ink);
+      font-weight: 800;
+      line-height: 1.45;
+    }
+    .career-upload-progress-main span {
+      flex: 0 0 auto;
+      color: #8a5a14;
+      font-size: 12px;
+      font-weight: 800;
+      white-space: nowrap;
+    }
+    .career-upload-progress-note {
+      color: var(--muted);
+      font-size: 12.5px;
+      line-height: 1.55;
+    }
+    .career-upload-progress-steps {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    .career-upload-progress-steps li {
+      border: 1px solid rgba(49, 40, 27, 0.12);
+      border-radius: 999px;
+      padding: 3px 8px;
+      background: rgba(255, 255, 255, 0.55);
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 800;
+    }
+    .career-upload-progress-steps li.is-done {
+      border-color: rgba(21, 115, 71, 0.2);
+      background: rgba(21, 115, 71, 0.08);
+      color: var(--success);
+    }
+    .career-upload-progress-steps li.is-active {
+      border-color: rgba(216, 159, 61, 0.32);
+      background: rgba(216, 159, 61, 0.14);
+      color: #7c4d0d;
+    }
     .career-selected-file {
       display: flex;
       align-items: center;
@@ -5873,6 +5943,14 @@
       margin-top: 24px;
       padding-top: 18px;
       border-top: 1px solid var(--line);
+    }
+    .career-upload-dev-snapshot summary {
+      cursor: pointer;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 800;
+      text-transform: uppercase;
+      list-style-position: inside;
     }
     .career-upload-dev-title {
       margin-bottom: 10px;
@@ -8461,15 +8539,16 @@
                 <button id="careerParseResumeBtn" class="career-link-btn" type="button" style="display:none;">解析已選履歷</button>
                 <button id="careerRunAnalysisBtn" class="career-analyze-btn" type="button" style="display:none;">開始本機職缺比對</button>
               </div>
-              <div class="career-upload-dev-snapshot">
-                <div class="career-upload-dev-title">開發 / 本機快照（非你的履歷）</div>
-                <p class="career-upload-dev-copy">這只會讀取專案內建的舊 Deep Fit 快照，用來檢查版面；不代表目前上傳履歷的分析結果。</p>
+              <details class="career-upload-dev-snapshot">
+                <summary>示範快照（非你的履歷，預設不使用）</summary>
+                <div class="career-upload-dev-title">開發 / 本機快照</div>
+                <p class="career-upload-dev-copy">這只會讀取專案內建的舊 Deep Fit 快照，用來檢查版面；不會混入目前上傳履歷的分析結果。</p>
                 <div class="career-upload-dev-actions">
-                  <button id="careerLoadStaticDeepFit" class="career-link-btn" type="button">讀取本機快照結果</button>
-                  <button id="careerViewStaticDeepFit" class="career-link-btn" type="button" style="display:none;">查看快照結果</button>
+                  <button id="careerLoadStaticDeepFit" class="career-link-btn" type="button">讀取示範快照</button>
+                  <button id="careerViewStaticDeepFit" class="career-link-btn" type="button" style="display:none;">查看示範快照</button>
                 </div>
                 <div id="careerStaticSnapshotStatus" class="career-upload-static-status" style="display:none;"></div>
-              </div>
+              </details>
             </div>
           </div>
         </div>
@@ -8657,6 +8736,7 @@
         "✦ 學測落點": "✦ GSAT Placement",
         "CV Studio 工作台": "CV Studio Workspace",
         "今天先完成一版可送出的申請資料。": "Finish one sendable application set today.",
+        "履歷、學習歷程、職缺追蹤與學測落點集中在同一個工作台；每個模組保留自己的進度與輸出。": "Resume, portfolio, job tracking, and GSAT placement live in one workspace; each module keeps its own progress and outputs.",
         "履歷、學習歷程、學測落點與同步狀態集中在同一個入口；登入後才會顯示個人進度。": "Resume, portfolio, GSAT planning, and sync status are gathered in one place; personal progress appears only after sign-in.",
         "開始履歷": "Start Resume",
         "整理歷程": "Organize Portfolio",
@@ -8671,9 +8751,11 @@
         "登入後更新": "Updates after sign-in",
         "選擇你要使用的功能；完整度不會把所有工具加總。": "Choose the feature you need; completeness is not totaled across every tool.",
         "只看你正在使用的功能，不把所有工具加總成申請進度。": "Only the feature you use matters; tools are not combined into one application progress score.",
+        "未登入也會顯示此瀏覽器草稿進度；登入後同一個畫面改為雲端同步。": "Signed-out mode still shows this browser draft progress; after sign-in, the same screen switches to cloud sync.",
         "登入後": "After sign-in",
         "可開始": "Ready to Start",
         "未登入": "Not signed in",
+        "本機草稿": "Local draft",
         "雲端已連線": "Cloud Connected",
         "同步中": "Syncing",
         "申請資料": "Application Set",
@@ -11315,29 +11397,48 @@
         const templateCount = $("homeTemplateCount");
         if (templateCount) templateCount.textContent = String(Object.keys(templateDefinitions).length);
         const workspaceCount = $("homeWorkspaceCount");
-        if (workspaceCount) workspaceCount.textContent = state.user ? "4" : "3";
+        if (workspaceCount) workspaceCount.textContent = "4";
         const exportFormat = $("homeExportFormat");
         if (exportFormat) exportFormat.textContent = "PDF";
       }
 
       function renderSignedOutHomeStatus() {
+        const cv = getCvHomeProgress();
+        const portfolio = getPortfolioHomeProgress();
+        const gsat = getGsatHomeProgress();
+
         const progressNode = $("homeProgress");
         if (progressNode) {
-          progressNode.dataset.progress = "0";
-          progressNode.setAttribute("aria-label", uiText("各功能獨立判斷"));
+          progressNode.dataset.progress = "feature-based";
+          progressNode.setAttribute(
+            "aria-label",
+            `${uiText("各功能獨立判斷")}：${uiText("CV 履歷")} ${cv.percent}%，${uiText("學習歷程")} ${portfolio.percent}%，${uiText("學測落點")} ${gsat.percent}%`
+          );
         }
 
-        setHomeText("homeStatusTitle", "功能概覽");
-        setHomeText("homeSyncState", state.authBusy ? "同步中" : "未登入");
+        setHomeText("homeStatusTitle", "功能完整度");
+        setHomeText("homeSyncState", state.authBusy ? "同步中" : "本機草稿");
         setHomeText("homeProgressLabel", "各功能獨立判斷");
-        setHomeText("homeProgressValue", "登入後更新");
-        setHomeText("homeProgressNote", "選擇你要使用的功能；完整度不會把所有工具加總。");
-        setHomeTaskState("homeTaskCvState", "可使用", "pending");
-        setHomeTaskState("homeTaskPortfolioState", "可使用", "pending");
-        setHomeTaskState("homeTaskGsatState", "可使用", "pending");
-        setHomeTaskProgress("homeTaskCvFill", "homeTaskCvPercent", 0, "CV 履歷完整度");
-        setHomeTaskProgress("homeTaskPortfolioFill", "homeTaskPortfolioPercent", 0, "學習歷程完整度");
-        setHomeTaskProgress("homeTaskGsatFill", "homeTaskGsatPercent", 0, "學測落點完整度");
+        setHomeText("homeProgressValue", "分開判斷");
+        setHomeText("homeProgressNote", "未登入也會顯示此瀏覽器草稿進度；登入後同一個畫面改為雲端同步。");
+        setHomeTaskProgress("homeTaskCvFill", "homeTaskCvPercent", cv.percent, "CV 履歷完整度");
+        setHomeTaskProgress("homeTaskPortfolioFill", "homeTaskPortfolioPercent", portfolio.percent, "學習歷程完整度");
+        setHomeTaskProgress("homeTaskGsatFill", "homeTaskGsatPercent", gsat.percent, "學測落點完整度");
+        setHomeTaskState(
+          "homeTaskCvState",
+          cv.complete ? "資料完整" : cv.hasAny ? "進行中" : "可編輯",
+          cv.complete ? "done" : cv.hasAny ? "active" : "pending"
+        );
+        setHomeTaskState(
+          "homeTaskPortfolioState",
+          portfolio.complete ? "已整理" : portfolio.hasAny ? "進行中" : "待整理",
+          portfolio.complete ? "done" : portfolio.hasAny ? "active" : "pending"
+        );
+        setHomeTaskState(
+          "homeTaskGsatState",
+          gsat.ready ? "可分析" : gsat.hasAny ? "進行中" : "待輸入",
+          gsat.ready ? "done" : gsat.hasAny ? "active" : "pending"
+        );
         updateHomeFeatureCounters();
 
         const page = $("page-home");
@@ -12569,14 +12670,23 @@
         state.authDebug.sessionError = "Supabase 回傳 session 為空。";
       }
 
+      function authOperationTimeout(promise, timeoutMs, label) {
+        return Promise.race([
+          Promise.resolve(promise),
+          new Promise((_, reject) => {
+            window.setTimeout(() => reject(new Error(`${label}逾時`)), timeoutMs);
+          })
+        ]);
+      }
+
       async function forceLocalSignedOut(source = "manual") {
         try {
-          await state.client?.auth?.stopAutoRefresh?.();
+          await authOperationTimeout(state.client?.auth?.stopAutoRefresh?.(), 1200, "停止自動刷新");
         } catch {
           // Best-effort only; storage cleanup below is the source of truth.
         }
         try {
-          await state.client?.auth?.signOut?.({ scope: "local" });
+          await authOperationTimeout(state.client?.auth?.signOut?.({ scope: "local" }), 1800, "本機登出");
         } catch {
           // The explicit signed-out preference still protects refreshes.
         }
@@ -12809,7 +12919,11 @@
         clearAuthRedirectParams();
         let signOutError = null;
         try {
-          const { error } = await state.client.auth.signOut({ scope: "global" });
+          const { error } = await authOperationTimeout(
+            state.client.auth.signOut({ scope: "global" }),
+            3500,
+            "雲端登出"
+          );
           signOutError = error || null;
         } catch (error) {
           signOutError = error;
@@ -16836,6 +16950,22 @@ Schema:
           return null;
         }
 
+        const CAREER_AI_REQUEST_TIMEOUT_MS = 90000;
+        async function careerFetchWithTimeout(url, options = {}, timeoutMs = CAREER_AI_REQUEST_TIMEOUT_MS) {
+          const controller = new AbortController();
+          const timer = setTimeout(() => controller.abort(), timeoutMs);
+          try {
+            return await fetch(url, { ...options, signal: controller.signal });
+          } catch (error) {
+            if (error?.name === "AbortError") {
+              throw new Error("AI 回覆逾時，請確認 API Key / 網路狀態後再試。");
+            }
+            throw error;
+          } finally {
+            clearTimeout(timer);
+          }
+        }
+
         async function callClaude(systemPrompt, userPrompt) {
           const key = getCareerApiKey();
 
@@ -16850,7 +16980,7 @@ Schema:
 
           /* ── Anthropic / Claude ── */
           if (provider === "anthropic") {
-            res = await fetch("https://api.anthropic.com/v1/messages", {
+            res = await careerFetchWithTimeout("https://api.anthropic.com/v1/messages", {
               method: "POST",
               headers: {
                 "Content-Type": "application/json",
@@ -16874,7 +17004,7 @@ Schema:
 
           /* ── OpenAI (GPT) ── */
           if (provider === "openai") {
-            res = await fetch("https://api.openai.com/v1/chat/completions", {
+            res = await careerFetchWithTimeout("https://api.openai.com/v1/chat/completions", {
               method: "POST",
               headers: {
                 "Content-Type": "application/json",
@@ -16898,7 +17028,7 @@ Schema:
 
           /* ── Google Gemini ── */
           if (provider === "gemini") {
-            res = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-pro:generateContent?key=${key}`, {
+            res = await careerFetchWithTimeout(`https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-pro:generateContent?key=${key}`, {
               method: "POST",
               headers: { "Content-Type": "application/json" },
               body: JSON.stringify({
@@ -16915,7 +17045,7 @@ Schema:
 
           /* ── Groq ── */
           if (provider === "groq") {
-            res = await fetch("https://api.groq.com/openai/v1/chat/completions", {
+            res = await careerFetchWithTimeout("https://api.groq.com/openai/v1/chat/completions", {
               method: "POST",
               headers: {
                 "Content-Type": "application/json",
@@ -17722,7 +17852,7 @@ Schema:
 	          if (/(intern|實習)/i.test(text)) return "Intern";
 	          if (/(junior|entry|associate|新鮮人|初階)/i.test(text)) return "Junior";
 	          if (/(manager|director|head of|vp|負責人|經理)/i.test(text)) return "Manager+";
-	          if (/(senior|sr\.|lead|principal|staff|資深|主管)/i.test(text)) return "Senior+";
+	          if (/(senior|sr\.|lead|principal|staff|expert|architect|資深|專家|架構師|主管)/i.test(text)) return "Senior+";
 	          return "Mid";
 	        }
 
@@ -18443,9 +18573,12 @@ Schema:
 	            const dotClass = { healthy: "health-healthy", warning: "health-warning", degraded: "health-degraded", critical: "health-critical" }[h.status] || "health-warning";
 	            healthHtml = `<div class="career-health-bar"><div class="career-health-dot ${dotClass}"></div><span>職缺庫狀態：<strong>${careerText(h.status)}</strong> · 共 ${careerText(h.total)} 筆 · 失效率 ${careerText(h.expiredRatePct)}</span></div>`;
 	          }
-	          const sourceNoteHtml = window._careerOpsDeepFitSource === "static"
-	            ? `<div class="career-ops-help" style="margin:0 0 14px;">目前顯示的是本機靜態快照結果，不是你上傳履歷後產生的 Deep Fit。</div>`
-	            : "";
+	          const source = window._careerOpsDeepFitSource || "";
+	          const sourceNoteHtml = source === "static"
+	            ? `<div class="career-ops-help" style="margin:0 0 14px;">目前顯示的是示範快照結果，不是你上傳履歷後產生的 Deep Fit。上傳新履歷會立即清除這個畫面。</div>`
+	            : source === "user-upload"
+	              ? `<div class="career-ops-help" style="margin:0 0 14px;">目前顯示的是你上傳履歷的本機分析。${summary.candidateStage ? `候選人層級：${careerText(summary.candidateStage)}；` : ""}${summary.filteredSeniorityMismatches ? `已排除 ${careerText(summary.filteredSeniorityMismatches)} 個明顯高於履歷層級的職缺。` : "職缺已依履歷層級重新排序。"}</div>`
+	              : "";
 
 	          const layerAHtml = layerA.length ? `
 	            <div class="career-layer-header">
@@ -18536,6 +18669,110 @@ Schema:
 		          };
 		        }
 
+		        function careerOpsProfileEvidenceText(profile = {}) {
+		          const preferences = profile.preferences && typeof profile.preferences === "object" ? profile.preferences : {};
+		          return [
+		            profile.role,
+		            profile.title,
+		            profile.summary,
+		            profile.headline,
+		            profile.description,
+		            profile.seniority,
+		            profile.currentRole,
+		            profile.targetRole,
+		            careerOpsStructuredWorkText(profile),
+		            careerOpsStructuredProjectText(profile),
+		            careerOpsValueArray(profile.education || profile.educationDetails)
+		              .map(item => typeof item === "object"
+		                ? [item.institution, item.school, item.degree, item.studyType, item.area, item.year, item.graduationYear].map(careerOpsStructuredText).join(" ")
+		                : careerOpsStructuredText(item))
+		              .join(" "),
+		            careerOpsProfileArray(preferences.targetRoles || preferences.target_roles).join(" ")
+		          ].map(careerOpsStructuredText).filter(Boolean).join("\n");
+		        }
+
+		        function careerOpsInferCandidateStage(profile = {}) {
+		          const text = careerOpsProfileEvidenceText(profile).toLowerCase();
+		          const experienceItems = careerOpsValueArray(profile.experience || profile.workExperience || profile.employmentHistory || profile.careerTimeline)
+		            .filter(item => careerOpsStructuredText(item).length || (item && typeof item === "object"));
+		          const hasWorkExperience = experienceItems.some(item => {
+		            const itemText = (item && typeof item === "object"
+		              ? [item.position, item.title, item.role, item.company, item.organization, item.summary, careerOpsValueArray(item.highlights || item.bullets || item.responsibilities).join(" ")]
+		                .map(careerOpsStructuredText)
+		                .filter(Boolean)
+		                .join(" ")
+		              : careerOpsStructuredText(item)).toLowerCase();
+		            return itemText && !/(student club|社團|school project|coursework|課程|專題)/i.test(itemText);
+		          });
+		          const highSchoolSignal = /(高中|高職|senior high|high school|secondary school|學生履歷|高中生)/i.test(text);
+		          const studentSignal = /(student|undergraduate|fresh graduate|new grad|新鮮人|實習|intern|trainee|學生|大學|university|college)/i.test(text);
+		          const seniorSignal = /(senior|sr\.|lead|principal|staff|expert|architect|manager|director|head of|資深|專家|架構師|主管|經理)/i.test(text);
+		          const juniorSignal = /(junior|entry|associate|assistant|初階|助理|實習|intern|trainee|新鮮人)/i.test(text);
+		          if ((highSchoolSignal || studentSignal) && !seniorSignal) return "student";
+		          if (juniorSignal) return "entry";
+		          if (seniorSignal) return "senior";
+		          if (!hasWorkExperience) return "entry";
+		          return "mid";
+		        }
+
+		        function careerOpsCandidateStageLabel(stage) {
+		          if (stage === "student") return "學生 / 初階";
+		          if (stage === "entry") return "初階";
+		          if (stage === "senior") return "資深";
+		          return "中階";
+		        }
+
+		        function careerOpsIsEarlyCandidateStage(stage) {
+		          return stage === "student" || stage === "entry";
+		        }
+
+		        function careerOpsCandidateSeniorityFit(job, candidateStage) {
+		          const seniority = careerOpsSeniority(job);
+		          const text = `${job.title || ""} ${job.description || ""} ${job.employmentType || ""}`.toLowerCase();
+		          const studentFriendly = /(intern|internship|trainee|graduate|new grad|entry[- ]?level|junior|associate|assistant|part[- ]?time|student|實習|新鮮人|初階|助理|工讀|學生|校園|儲備)/i.test(text);
+		          let score = 76;
+		          let suitable = true;
+		          let reason = "";
+		          if (candidateStage === "student") {
+		            if (studentFriendly || seniority === "Intern") score = 96;
+		            else if (seniority === "Junior") score = 86;
+		            else if (seniority === "Mid") score = 48;
+		            else {
+		              score = 10;
+		              suitable = false;
+		              reason = "此職缺偏資深或管理職，已從學生 / 初階履歷主結果排除。";
+		            }
+		          } else if (candidateStage === "entry") {
+		            if (studentFriendly || seniority === "Intern" || seniority === "Junior") score = 92;
+		            else if (seniority === "Mid") score = 62;
+		            else {
+		              score = 18;
+		              suitable = false;
+		              reason = "此職缺層級高於初階履歷，已降低排序。";
+		            }
+		          } else if (candidateStage === "senior") {
+		            if (seniority === "Senior+" || seniority === "Manager+" || seniority === "Mid") score = 90;
+		            else score = 58;
+		          } else {
+		            if (seniority === "Senior+" || seniority === "Manager+") score = 55;
+		            else if (seniority === "Intern") score = 54;
+		            else score = 82;
+		          }
+		          return { seniority, score, suitable, reason };
+		        }
+
+		        function careerOpsBlendProfileScore(intelScore, staticScore, seniorityFit) {
+		          const cleanIntelScore = Math.max(0, Math.min(100, Number(intelScore) || 0));
+		          const fitScore = Math.max(0, Math.min(100, Number(seniorityFit?.score) || 50));
+		          const cleanStaticScore = Number.isFinite(staticScore)
+		            ? Math.max(0, Math.min(100, seniorityFit?.suitable ? staticScore : Math.min(staticScore, 45)))
+		            : null;
+		          const base = cleanStaticScore == null
+		            ? cleanIntelScore
+		            : Math.round(cleanIntelScore * 0.85 + cleanStaticScore * 0.15);
+		          return Math.max(0, Math.min(100, Math.round(base * 0.76 + fitScore * 0.24)));
+		        }
+
 		        function careerOpsScoreJobAgainstProfile(job, profile) {
 		          const terms = careerOpsLocalProfileTerms(profile);
 		          const text = `${job.title || ""} ${job.description || ""} ${job.company || ""}`.toLowerCase();
@@ -18578,6 +18815,8 @@ Schema:
 		          const decision = careerOpsLocalDecision(score);
 		          const title = job.title || "未命名職缺";
 		          const company = job.company || "未知公司";
+		          const seniorityFit = job._seniorityFit || null;
+		          const levelNote = seniorityFit?.seniority ? `職缺層級 ${seniorityFit.seniority}，候選人層級適配 ${seniorityFit.score}/100。` : "";
 
 		          return {
 		            jobKey: String(job.jobKey || job.url || `${company}:${title}`).trim(),
@@ -18588,7 +18827,7 @@ Schema:
 		            grade: job.grade || careerOpsLocalGrade(score),
 		            confidence: hits.length >= 6 ? "high" : hits.length >= 3 ? "medium" : "low",
 		            decision,
-		            thesis: `${company} 的 ${title} 屬於「${decision}」：分數 ${score}，命中 ${hits.length} 個履歷關鍵字，主要缺口 ${misses.length} 個。`,
+		            thesis: `${company} 的 ${title} 屬於「${decision}」：分數 ${score}，命中 ${hits.length} 個履歷關鍵字，主要缺口 ${misses.length} 個。${levelNote ? ` ${levelNote}` : ""}`,
 		            evidence: {
 		              keywordHits: hits,
 		              keywordMisses: misses,
@@ -18596,6 +18835,7 @@ Schema:
 		              compensationLeverage: ""
 		            },
 		            concerns: [
+		              seniorityFit?.reason || "",
 		              !job.description || job.description.length < 300 ? "職缺描述偏短，判斷信心較低。" : "",
 		              job.isExpired ? "快照標記為已下架，投遞前需要確認。" : ""
 		            ].filter(Boolean),
@@ -18611,6 +18851,8 @@ Schema:
 
 		        function careerOpsClassifyLocalJobs(jobs, profile) {
 		          const targetRoles = careerOpsLocalProfileTerms(profile).targetRoles;
+		          const candidateStage = careerOpsInferCandidateStage(profile);
+		          const earlyCandidate = careerOpsIsEarlyCandidateStage(candidateStage);
 		          const scored = (Array.isArray(jobs) ? jobs : [])
 		            .map((job, index) => normalizeCareerOpsJob(job, index))
 		            .filter(job => !job.isExpired)
@@ -18618,26 +18860,49 @@ Schema:
 		              normalized.jobKey = normalized.jobKey || careerOpsJobKey(normalized);
 		              const intel = careerOpsScoreJobAgainstProfile(normalized, profile);
 		              const staticScore = normalized.score === "" ? null : Number(normalized.score);
-		              const blendedScore = staticScore == null
-		                ? intel.score
-		                : Math.round(intel.score * 0.75 + staticScore * 0.25);
-		              return { ...normalized, _roleFit: intel.dimensions.roleFit, _score: blendedScore, _intel: intel };
+		              const seniorityFit = careerOpsCandidateSeniorityFit(normalized, candidateStage);
+		              const blendedScore = careerOpsBlendProfileScore(intel.score, staticScore, seniorityFit);
+		              const roleFit = Math.round(intel.dimensions.roleFit * 0.74 + seniorityFit.score * 0.26);
+		              return {
+		                ...normalized,
+		                _roleFit: roleFit,
+		                _score: blendedScore,
+		                _intel: intel,
+		                _candidateStage: candidateStage,
+		                _seniorityFit: seniorityFit
+		              };
 		            })
 		            .sort((a, b) => b._score - a._score);
 
-		          const layerAJobs = scored.filter(job => !targetRoles.length || job._roleFit >= 68).slice(0, 25);
+		          const candidatePool = earlyCandidate
+		            ? scored.filter(job => job._seniorityFit?.suitable)
+		            : scored;
+		          const pool = candidatePool.length >= 10
+		            ? candidatePool
+		            : scored.filter(job => !["Senior+", "Manager+"].includes(job._seniorityFit?.seniority));
+		          const filteredSeniorityMismatches = Math.max(0, scored.length - pool.length);
+		          const layerAJobs = pool
+		            .filter(job => {
+		              const strongRoleFit = job._roleFit >= 68;
+		              const entryStretchFit = candidateStage === "entry" && job._roleFit >= 74 && job._score >= 64;
+		              return strongRoleFit && (!earlyCandidate || job._seniorityFit?.score >= 70 || entryStretchFit);
+		            })
+		            .slice(0, 25);
 		          const layerAKeys = new Set(layerAJobs.map(job => job.jobKey || job.url));
-		          const layerBJobs = scored
+		          const layerBJobs = pool
 		            .filter(job => !layerAKeys.has(job.jobKey || job.url) && job._roleFit >= 40 && job._roleFit < 68)
 		            .slice(0, 40);
 		          const layerBKeys = new Set(layerBJobs.map(job => job.jobKey || job.url));
-		          const layerCJobs = scored
+		          const layerCJobs = pool
 		            .filter(job => !layerAKeys.has(job.jobKey || job.url) && !layerBKeys.has(job.jobKey || job.url))
 		            .slice(0, 30);
 		          const profileSkills = careerOpsLocalProfileTerms(profile).skills;
 
 		          return {
 		            activeJobCount: scored.length,
+		            candidateStage,
+		            candidateStageLabel: careerOpsCandidateStageLabel(candidateStage),
+		            filteredSeniorityMismatches,
 		            layerA: layerAJobs.map(job => careerOpsBuildLocalDossier(job, profile)),
 		            layerB: layerBJobs.map(job => ({
 		              jobKey: job.jobKey || "",
@@ -18647,6 +18912,7 @@ Schema:
 		              score: job._score,
 		              grade: job.grade || careerOpsLocalGrade(job._score),
 		              roleFit: job._roleFit,
+		              seniority: job._seniorityFit?.seniority || "",
 		              location: job.location || "",
 		              keywordHits: profileSkills.filter(skill => String(job.description || "").toLowerCase().includes(skill)).slice(0, 8),
 		              keywordMisses: job._intel.features.jdSkillsMissingFromProfile.slice(0, 6),
@@ -18661,6 +18927,7 @@ Schema:
 		              score: job._score,
 		              grade: job.grade || careerOpsLocalGrade(job._score),
 		              roleFit: job._roleFit,
+		              seniority: job._seniorityFit?.seniority || "",
 		              location: job.location || "",
 		              topGap: job._intel.features.jdSkillsMissingFromProfile[0] || "",
 		              mainGaps: job._intel.features.jdSkillsMissingFromProfile.slice(0, 4),
@@ -18737,6 +19004,8 @@ Schema:
 		            layerB: classified.layerB.length,
 		            layerC: classified.layerC.length,
 		            analyzedJobCount: classified.activeJobCount,
+		            candidateStage: classified.candidateStageLabel,
+		            filteredSeniorityMismatches: classified.filteredSeniorityMismatches,
 		            generatedAt: new Date().toISOString(),
 		            engine: "frontend-local-heuristic"
 		          };
@@ -18810,12 +19079,66 @@ Schema:
 	          const viewStaticBtn = $c("careerViewStaticDeepFit");
 	          const staticStatusEl = $c("careerStaticSnapshotStatus");
 	          if (!zone || !fileInput) return;
+	          const careerUploadProgressSteps = ["讀取檔案", "解析文字", "AI 抽取資料", "儲存 / 暫存", "準備比對"];
+	          let careerUploadProgressTimer = null;
+	          let careerUploadProgressStartedAt = 0;
+	          let careerUploadProgressStage = "";
+	          let careerUploadProgressIndex = 0;
 
 	          function careerOpsFormatFileSize(bytes) {
 	            const size = Number(bytes || 0);
 	            if (size >= 1024 * 1024) return `${(size / 1024 / 1024).toFixed(size >= 10 * 1024 * 1024 ? 0 : 1)} MB`;
 	            if (size >= 1024) return `${Math.round(size / 1024)} KB`;
 	            return `${size} B`;
+	          }
+
+	          function stopCareerUploadProgress() {
+	            if (careerUploadProgressTimer) {
+	              clearInterval(careerUploadProgressTimer);
+	              careerUploadProgressTimer = null;
+	            }
+	          }
+
+	          function renderCareerUploadProgressStatus() {
+	            if (!statusEl) return;
+	            const elapsed = careerUploadProgressStartedAt
+	              ? Math.max(0, Math.round((Date.now() - careerUploadProgressStartedAt) / 1000))
+	              : 0;
+	            const note = elapsed >= 45
+	              ? "模型仍在處理。如果超過 90 秒沒有完成，通常是 API provider 回覆逾時或網路被阻擋。"
+	              : elapsed >= 18
+	                ? "仍在等待模型回覆，頁面沒有卡住；請先不要重複上傳同一份履歷。"
+	                : "正在處理中，完成後會自動顯示履歷摘要與「開始本機職缺比對」。";
+	            const steps = careerUploadProgressSteps.map((step, index) => {
+	              const cls = index < careerUploadProgressIndex ? "is-done" : index === careerUploadProgressIndex ? "is-active" : "";
+	              return `<li class="${cls}">${careerText(step)}</li>`;
+	            }).join("");
+	            statusEl.className = "career-upload-status is-processing";
+	            statusEl.style.display = "flex";
+	            statusEl.innerHTML = `
+	              <div class="career-upload-progress">
+	                <div class="career-upload-progress-main">
+	                  <strong>${careerText(careerUploadProgressStage)}</strong>
+	                  <span>${careerText(`${elapsed} 秒`)}</span>
+	                </div>
+	                <ul class="career-upload-progress-steps" aria-label="解析進度">${steps}</ul>
+	                <div class="career-upload-progress-note">${careerText(note)}</div>
+	              </div>`;
+	          }
+
+	          function startCareerUploadProgress(stage, index = 0) {
+	            stopCareerUploadProgress();
+	            careerUploadProgressStartedAt = Date.now();
+	            careerUploadProgressStage = stage;
+	            careerUploadProgressIndex = index;
+	            renderCareerUploadProgressStatus();
+	            careerUploadProgressTimer = setInterval(renderCareerUploadProgressStatus, 1000);
+	          }
+
+	          function setCareerUploadProgress(stage, index = careerUploadProgressIndex) {
+	            careerUploadProgressStage = stage;
+	            careerUploadProgressIndex = index;
+	            renderCareerUploadProgressStatus();
 	          }
 
 	          function showCareerSelectedFile(file, state = "已收到") {
@@ -18842,6 +19165,7 @@ Schema:
 
 	          function setCareerUploadStatus(message, type = "info") {
 	            if (!statusEl) return;
+	            stopCareerUploadProgress();
 	            statusEl.className = "career-upload-status";
 	            if (type) statusEl.classList.add(`is-${type}`);
 	            statusEl.style.display = "flex";
@@ -18854,13 +19178,25 @@ Schema:
 	            staticStatusEl.textContent = message;
 	          }
 
+	          function resetDeepFitForNewResume(file) {
+	            window.CV_CAREER_OPS_DEEP_FIT = null;
+	            window._careerOpsDeepFitSource = "";
+	            window._careerOpsLastAnalysisId = "";
+	            if (viewStaticBtn) viewStaticBtn.style.display = "none";
+	            if (staticStatusEl) {
+	              staticStatusEl.style.display = "block";
+	              staticStatusEl.textContent = `已清除舊 Deep Fit / 示範快照畫面，下一次結果會以 ${file?.name || "這份履歷"} 重新產生。`;
+	            }
+	            if (careerOpsActiveTab === "deepfit") renderDeepFitDashboard();
+	          }
+
 	          loadStaticBtn?.addEventListener("click", () => {
 	            const snapshot = careerOpsGetStaticDeepFitSnapshot();
 	            if (snapshot) {
 	              careerOpsStaticDeepFitSnapshot = snapshot;
 	              window._careerOpsStaticDeepFitSnapshot = snapshot;
 	              if (viewStaticBtn) viewStaticBtn.style.display = "block";
-	              setCareerStaticSnapshotStatus("已讀取本機快照，尚未切換畫面。這不是你上傳履歷的分析結果；需要檢查版面時，再按「查看快照結果」。");
+	              setCareerStaticSnapshotStatus("已讀取示範快照，尚未切換畫面。這不是你上傳履歷的分析結果；需要檢查版面時，再按「查看示範快照」。");
 	            } else {
 	              alert("尚未載入靜態快照。請先執行 npm run career-ops:pipeline，重新整理頁面後再試。");
 	            }
@@ -18869,9 +19205,10 @@ Schema:
 	          viewStaticBtn?.addEventListener("click", () => {
 	            const snapshot = careerOpsGetStaticDeepFitSnapshot();
 	            if (!snapshot) {
-	              setCareerStaticSnapshotStatus("尚未讀取本機快照，請先按「讀取本機快照結果」。");
+	              setCareerStaticSnapshotStatus("尚未讀取示範快照，請先按「讀取示範快照」。");
 	              return;
 	            }
+	            if (!window.confirm("這會切到示範快照結果，內容不會代表你目前上傳的履歷。要繼續嗎？")) return;
 	            window.CV_CAREER_OPS_DEEP_FIT = snapshot;
 	            window._careerOpsDeepFitSource = "static";
 	            careerOpsSetTab("deepfit");
@@ -18903,15 +19240,13 @@ Schema:
 	            }
 	            if (profilePreview) profilePreview.style.display = "none";
 	            if (runBtn) runBtn.style.display = "none";
-	            window.CV_CAREER_OPS_DEEP_FIT = null;
-	            window._careerOpsDeepFitSource = "";
-	            window._careerOpsLastAnalysisId = "";
+	            resetDeepFitForNewResume(file);
 	            if (!($c("claudeApiKey")?.value || "").trim()) {
 	              setCareerUploadStatus(`上傳成功：已收到 ${file.name || "履歷檔案"}。請先在左側填入自己的 AI API Key，再按「解析已選履歷」。履歷解析會用你的 key 在瀏覽器完成，不會使用站方 token。`, "success");
 	              return;
 	            }
 	            showCareerSelectedFile(file, "解析中");
-	            setCareerUploadStatus(`已收到 ${file.name || "履歷檔案"}，正在解析…`);
+	            startCareerUploadProgress(`已收到 ${file.name || "履歷檔案"}，準備讀取履歷文字`, 0);
 	            if (parseBtn) {
 	              parseBtn.disabled = true;
 	              parseBtn.textContent = "解析中…";
@@ -18921,9 +19256,10 @@ Schema:
 		              const session = (await client?.auth?.getSession?.())?.data?.session;
 		              const user = window.cvStudioState?.user || session?.user;
 		              const resumeText = await readCareerResumeText(file);
-		              setCareerUploadStatus("使用你的 API Key 解析履歷中…");
+		              setCareerUploadProgress("已讀取履歷文字，正在使用你的 API Key 解析履歷", 2);
 		              const profile = await extractCareerOpsProfileWithUserKey(resumeText);
 		              let saved = null;
+		              setCareerUploadProgress("解析完成，正在儲存 / 暫存履歷 profile", 3);
 		              if (client && session && user) {
 		                try {
 		                  saved = await saveCareerOpsProfileToCloud(client, user, profile, resumeText, file);
@@ -18931,6 +19267,7 @@ Schema:
 		                  console.warn("[career-ops] profile cloud save failed:", cloudErr.message);
 		                }
 		              }
+		              setCareerUploadProgress("履歷 profile 準備完成，可以開始本機職缺比對", 4);
 		              showCareerSelectedFile(file, "解析完成");
 		              setCareerUploadStatus(saved?.id
 		                ? "✓ 履歷解析完成，已儲存到帳號。"

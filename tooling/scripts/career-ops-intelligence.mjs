@@ -4,15 +4,15 @@ import fs from "node:fs/promises";
 import fsSync from "node:fs";
 import path from "node:path";
 
-const DEFAULT_JOBS = "data/app/career-ops-jobs.json";
-const DEFAULT_PROFILE = fsSync.existsSync("data/career-ops-profile.json")
-  ? "data/career-ops-profile.json"
-  : "data/career-ops-profile.example.json";
-const DEFAULT_JS_OUT = "data/app/career-ops-jobs.js";
-const DEFAULT_REPORT = "data/app/career-ops-intelligence-report.md";
-const DEFAULT_RUBRIC = fsSync.existsSync("data/career-ops-rubric.json")
-  ? "data/career-ops-rubric.json"
-  : "data/career-ops-rubric.example.json";
+const DEFAULT_JOBS = "tooling/data/app/career-ops-jobs.json";
+const DEFAULT_PROFILE = fsSync.existsSync("tooling/data/career-ops-profile.json")
+  ? "tooling/data/career-ops-profile.json"
+  : "tooling/data/career-ops-profile.example.json";
+const DEFAULT_JS_OUT = "tooling/data/app/career-ops-jobs.js";
+const DEFAULT_REPORT = "tooling/data/app/career-ops-intelligence-report.md";
+const DEFAULT_RUBRIC = fsSync.existsSync("tooling/data/career-ops-rubric.json")
+  ? "tooling/data/career-ops-rubric.json"
+  : "tooling/data/career-ops-rubric.example.json";
 
 const STOPWORDS = new Set([
   "a", "an", "as", "at", "be", "by", "do", "go", "he", "if", "in", "is", "it", "me", "my",

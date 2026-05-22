@@ -3,12 +3,12 @@
 import fs from "node:fs/promises";
 import path from "node:path";
 
-const DEFAULT_JOBS = "data/app/career-ops-jobs.json";
-const DEFAULT_PROFILE = "data/career-ops-profile.example.json";
-const DEFAULT_RESEARCH = "data/app/career-ops-deep-research.json";
-const DEFAULT_OUT = "data/app/career-ops-compensation.json";
-const DEFAULT_JS_OUT = "data/app/career-ops-compensation.js";
-const DEFAULT_REPORT = "data/app/career-ops-compensation.md";
+const DEFAULT_JOBS = "tooling/data/app/career-ops-jobs.json";
+const DEFAULT_PROFILE = "tooling/data/career-ops-profile.example.json";
+const DEFAULT_RESEARCH = "tooling/data/app/career-ops-deep-research.json";
+const DEFAULT_OUT = "tooling/data/app/career-ops-compensation.json";
+const DEFAULT_JS_OUT = "tooling/data/app/career-ops-compensation.js";
+const DEFAULT_REPORT = "tooling/data/app/career-ops-compensation.md";
 
 // Market salary benchmarks sourced from TokyoDev, Japan-Dev, NodeFlair, PayScale (2024-2025 data).
 // Values are annual figures: JPY for Japan, NTD for Taiwan, USD for Global/Remote.

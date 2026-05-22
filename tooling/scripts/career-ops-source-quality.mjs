@@ -4,9 +4,9 @@ import fs from "node:fs/promises";
 import path from "node:path";
 import { MARKET_LOCATION_TERMS, marketCodes } from "./lib/career-ops-market.mjs";
 
-const DEFAULT_JOBS = "data/app/career-ops-jobs.json";
-const DEFAULT_JS_OUT = "data/app/career-ops-jobs.js";
-const DEFAULT_REPORT = "data/app/career-ops-source-quality-report.md";
+const DEFAULT_JOBS = "tooling/data/app/career-ops-jobs.json";
+const DEFAULT_JS_OUT = "tooling/data/app/career-ops-jobs.js";
+const DEFAULT_REPORT = "tooling/data/app/career-ops-source-quality-report.md";
 
 const DEFAULT_TARGET_MARKETS = [...marketCodes(), "global"];
 const TARGET_LOCATION_TERMS = [

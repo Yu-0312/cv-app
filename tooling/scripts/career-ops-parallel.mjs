@@ -3,14 +3,14 @@
 import fs from "node:fs/promises";
 import path from "node:path";
 
-const DEFAULT_JOBS = "data/app/career-ops-jobs.json";
-const DEFAULT_PROFILE = "data/career-ops-profile.example.json";
-const DEFAULT_RESEARCH = "data/app/career-ops-deep-research.json";
-const DEFAULT_COMP = "data/app/career-ops-compensation.json";
-const DEFAULT_STORY = "data/app/career-ops-story-bank.json";
-const DEFAULT_OUT = "data/app/career-ops-parallel-report.json";
-const DEFAULT_JS_OUT = "data/app/career-ops-parallel-report.js";
-const DEFAULT_REPORT = "data/app/career-ops-parallel-report.md";
+const DEFAULT_JOBS = "tooling/data/app/career-ops-jobs.json";
+const DEFAULT_PROFILE = "tooling/data/career-ops-profile.example.json";
+const DEFAULT_RESEARCH = "tooling/data/app/career-ops-deep-research.json";
+const DEFAULT_COMP = "tooling/data/app/career-ops-compensation.json";
+const DEFAULT_STORY = "tooling/data/app/career-ops-story-bank.json";
+const DEFAULT_OUT = "tooling/data/app/career-ops-parallel-report.json";
+const DEFAULT_JS_OUT = "tooling/data/app/career-ops-parallel-report.js";
+const DEFAULT_REPORT = "tooling/data/app/career-ops-parallel-report.md";
 
 function printHelp() {
   console.log(`Career Ops parallel worker runner
@@ -53,7 +53,7 @@ function parseArgs(argv) {
     reportOut: DEFAULT_REPORT,
     concurrency: 4,
     top: 50,
-    stateFile: "data/career-ops-batch-state.tsv",
+    stateFile: "tooling/data/career-ops-batch-state.tsv",
     retryFailed: false,
     dryRun: false,
     writeJs: true
@@ -69,7 +69,7 @@ function parseArgs(argv) {
     else if (token === "--out") args.out = argv[++i] || DEFAULT_OUT;
     else if (token === "--js-out") args.jsOut = argv[++i] || DEFAULT_JS_OUT;
     else if (token === "--report-out") args.reportOut = argv[++i] || DEFAULT_REPORT;
-    else if (token === "--state-file") args.stateFile = argv[++i] || "data/career-ops-batch-state.tsv";
+    else if (token === "--state-file") args.stateFile = argv[++i] || "tooling/data/career-ops-batch-state.tsv";
     else if (token === "--concurrency") args.concurrency = Math.max(1, Number.parseInt(argv[++i] || "4", 10) || 4);
     else if (token === "--top") args.top = Math.max(1, Number.parseInt(argv[++i] || "50", 10) || 50);
     else if (token === "--retry-failed") args.retryFailed = true;

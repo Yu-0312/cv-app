@@ -3,10 +3,10 @@
 import fs from "node:fs/promises";
 import path from "node:path";
 
-const DEFAULT_SOURCES = "data/career-ops-sources.json";
-const DEFAULT_JOBS = "data/app/career-ops-jobs.json";
-const DEFAULT_OUT = "data/app/career-ops-source-health.json";
-const DEFAULT_REPORT = "data/app/career-ops-source-health-report.md";
+const DEFAULT_SOURCES = "tooling/data/career-ops-sources.json";
+const DEFAULT_JOBS = "tooling/data/app/career-ops-jobs.json";
+const DEFAULT_OUT = "tooling/data/app/career-ops-source-health.json";
+const DEFAULT_REPORT = "tooling/data/app/career-ops-source-health-report.md";
 
 function printHelp() {
   console.log(`Career Ops source health

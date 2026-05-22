@@ -3,23 +3,23 @@
 import fs from "node:fs";
 
 const REQUIRED_FILES = [
-  "data/career-ops-source-strategy.json",
-  "data/career-ops-modes.json",
-  "data/career-ops-rubric.json",
-  "data/career-ops-sources.json",
-  "data/app/career-ops-jobs.json",
-  "data/app/career-ops-jobs.js"
+  "tooling/data/career-ops-source-strategy.json",
+  "tooling/data/career-ops-modes.json",
+  "tooling/data/career-ops-rubric.json",
+  "tooling/data/career-ops-sources.json",
+  "tooling/data/app/career-ops-jobs.json",
+  "tooling/data/app/career-ops-jobs.js"
 ];
 
 const OPTIONAL_FILES = [
-  "data/career-ops-profile.json",
-  "data/app/career-ops-deep-research.json",
-  "data/app/career-ops-source-quality-report.md",
-  "data/app/career-ops-compensation.json",
-  "data/app/career-ops-story-bank.json",
-  "data/app/career-ops-parallel-report.json",
-  "data/app/career-ops-learning.json",
-  "data/app/career-ops-modes.json"
+  "tooling/data/career-ops-profile.json",
+  "tooling/data/app/career-ops-deep-research.json",
+  "tooling/data/app/career-ops-source-quality-report.md",
+  "tooling/data/app/career-ops-compensation.json",
+  "tooling/data/app/career-ops-story-bank.json",
+  "tooling/data/app/career-ops-parallel-report.json",
+  "tooling/data/app/career-ops-learning.json",
+  "tooling/data/app/career-ops-modes.json"
 ];
 
 function readJson(filePath) {
@@ -38,9 +38,9 @@ function main() {
   for (const filePath of OPTIONAL_FILES) {
     checks.push({ type: "optional-file", name: filePath, ok: fs.existsSync(filePath) });
   }
-  const sources = readJson("data/career-ops-sources.json");
-  const jobs = readJson("data/app/career-ops-jobs.json");
-  const modes = readJson("data/career-ops-modes.json");
+  const sources = readJson("tooling/data/career-ops-sources.json");
+  const jobs = readJson("tooling/data/app/career-ops-jobs.json");
+  const modes = readJson("tooling/data/career-ops-modes.json");
   checks.push({ type: "schema", name: "sources array", ok: Array.isArray(sources?.sources), detail: `${sources?.sources?.length || 0} source(s)` });
   checks.push({ type: "schema", name: "jobs array", ok: Array.isArray(jobs?.jobs), detail: `${jobs?.jobs?.length || 0} job(s)` });
   checks.push({ type: "schema", name: "modes commands", ok: Array.isArray(modes?.commands), detail: `${modes?.commands?.length || 0} command(s)` });

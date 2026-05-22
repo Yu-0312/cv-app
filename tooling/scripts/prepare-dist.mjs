@@ -4,6 +4,7 @@ import fs from "node:fs/promises";
 import path from "node:path";
 
 const root = process.cwd();
+const appDir = path.join(root, "app");
 const distDir = path.join(root, "dist");
 
 async function ensureDir(dirPath) {
@@ -93,15 +94,15 @@ async function main() {
   ];
 
   for (const [relativePath, label] of requiredFiles) {
-    await requireFile(path.join(root, relativePath), label);
-    await fs.copyFile(path.join(root, relativePath), path.join(distDir, relativePath));
+    await requireFile(path.join(appDir, relativePath), label);
+    await fs.copyFile(path.join(appDir, relativePath), path.join(distDir, relativePath));
   }
 
-  await fs.copyFile(path.join(root, "index.html"), path.join(distDir, "404.html"));
+  await fs.copyFile(path.join(appDir, "index.html"), path.join(distDir, "404.html"));
   await fs.writeFile(path.join(distDir, ".nojekyll"), "", "utf8");
 
   const configTarget = path.join(distDir, "config.js");
-  const copiedConfig = await copyFileIfExists(path.join(root, "config.js"), configTarget);
+  const copiedConfig = await copyFileIfExists(path.join(appDir, "config.js"), configTarget);
   if (!copiedConfig) {
     await writeFallback(
       configTarget,
@@ -109,7 +110,7 @@ async function main() {
     );
   }
 
-  const appSourceDir = path.join(root, "data", "app");
+  const appSourceDir = path.join(root, "tooling", "data", "app");
   const appTargetDir = path.join(distDir, "data", "app");
   try {
     await copyDirRecursive(appSourceDir, appTargetDir, { skipLargeAppData: true });

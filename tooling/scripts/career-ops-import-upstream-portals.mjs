@@ -5,8 +5,8 @@ import path from "node:path";
 import yaml from "js-yaml";
 
 const DEFAULT_PORTALS = "/tmp/career-ops-upstream/templates/portals.example.yml";
-const DEFAULT_OUT = "data/career-ops-upstream-sources.json";
-const DEFAULT_REPORT_OUT = "data/app/career-ops-upstream-sources-report.md";
+const DEFAULT_OUT = "tooling/data/career-ops-upstream-sources.json";
+const DEFAULT_REPORT_OUT = "tooling/data/app/career-ops-upstream-sources-report.md";
 
 function printHelp() {
   console.log(`Career Ops upstream portals importer

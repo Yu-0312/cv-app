@@ -3,9 +3,9 @@
 import fs from "node:fs/promises";
 import path from "node:path";
 
-const DEFAULT_JOBS = "data/app/career-ops-jobs.json";
-const DEFAULT_OUT = "data/app/career-ops-apply-agent-report.json";
-const DEFAULT_REPORT = "data/app/career-ops-apply-agent-report.md";
+const DEFAULT_JOBS = "tooling/data/app/career-ops-jobs.json";
+const DEFAULT_OUT = "tooling/data/app/career-ops-apply-agent-report.json";
+const DEFAULT_REPORT = "tooling/data/app/career-ops-apply-agent-report.md";
 
 function printHelp() {
   console.log(`Career Ops apply agent
