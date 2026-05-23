@@ -33,8 +33,9 @@ Options:
   --report-out <file>    Markdown report. Default: ${DEFAULT_REPORT}
   --concurrency <n>      Parallel job workers. Default: 4
   --top <n>              Max active jobs to process. Default: 50
-  --state-file <file>    TSV state file for crash recovery. Default: data/career-ops-batch-state.tsv
-  --retry-failed         Re-process failed jobs from the state file
+  --state-file <file>    TSV state file for crash recovery. Default: tooling/data/career-ops-batch-state.tsv
+  --resume               Skip jobs already completed in the state file
+  --retry-failed         Re-process failed jobs when using --resume
   --dry-run              Print which jobs would run without executing
   --no-js                Skip browser JS output
   --help                 Show this help
@@ -54,6 +55,7 @@ function parseArgs(argv) {
     concurrency: 4,
     top: 50,
     stateFile: "tooling/data/career-ops-batch-state.tsv",
+    resume: false,
     retryFailed: false,
     dryRun: false,
     writeJs: true
@@ -70,6 +72,7 @@ function parseArgs(argv) {
     else if (token === "--js-out") args.jsOut = argv[++i] || DEFAULT_JS_OUT;
     else if (token === "--report-out") args.reportOut = argv[++i] || DEFAULT_REPORT;
     else if (token === "--state-file") args.stateFile = argv[++i] || "tooling/data/career-ops-batch-state.tsv";
+    else if (token === "--resume") args.resume = true;
     else if (token === "--concurrency") args.concurrency = Math.max(1, Number.parseInt(argv[++i] || "4", 10) || 4);
     else if (token === "--top") args.top = Math.max(1, Number.parseInt(argv[++i] || "50", 10) || 50);
     else if (token === "--retry-failed") args.retryFailed = true;
@@ -228,7 +231,7 @@ async function processJob(job, context) {
   };
 }
 
-async function runPool(items, concurrency, worker, { stateFile, stateMap, retryFailed, dryRun } = {}) {
+async function runPool(items, concurrency, worker, { stateFile, stateMap, resume, retryFailed, dryRun } = {}) {
   const results = new Array(items.length);
   const errors = [];
   let index = 0;
@@ -240,10 +243,10 @@ async function runPool(items, concurrency, worker, { stateFile, stateMap, retryF
       const item = items[current];
       const url = String(item.url || item.jobKey || `${item.company}:${item.title}`);
 
-      // Crash recovery: skip already-completed jobs unless retryFailed
-      if (stateMap) {
+      // Crash recovery is opt-in so daily runs always produce fresh reports.
+      if (resume && stateMap) {
         const prev = stateMap.get(url);
-        if (prev?.status === "completed" && !retryFailed) {
+        if (prev?.status === "completed") {
           console.log(`[career-ops] skip (already done): ${item.title || url}`);
           continue;
         }
@@ -362,8 +365,8 @@ async function main() {
   // State-file crash recovery
   const stateMap = await readStateFile(args.stateFile);
   const prevCompleted = [...stateMap.values()].filter((s) => s.status === "completed").length;
-  if (prevCompleted > 0 && !args.retryFailed) {
-    console.log(`[career-ops] state file: ${prevCompleted} jobs already completed — skipping. Use --retry-failed to reprocess.`);
+  if (prevCompleted > 0 && args.resume) {
+    console.log(`[career-ops] state file: ${prevCompleted} jobs already completed — resuming. Omit --resume to reprocess.`);
   }
 
   if (args.dryRun) {
@@ -373,9 +376,13 @@ async function main() {
   const { results, errors } = await runPool(jobs, args.concurrency, (job) => processJob(job, context), {
     stateFile: args.stateFile,
     stateMap,
+    resume: args.resume,
     retryFailed: args.retryFailed,
     dryRun: args.dryRun,
   });
+
+  if (args.dryRun) return;
+
   const payload = {
     source: "career-ops-parallel",
     generatedAt: new Date().toISOString(),
