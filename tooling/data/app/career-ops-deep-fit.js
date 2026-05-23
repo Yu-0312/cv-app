@@ -1,6 +1,6 @@
 window.CV_CAREER_OPS_DEEP_FIT = {
   "source": "career-ops-deep-fit",
-  "generatedAt": "2026-05-23T03:21:47.442Z",
+  "generatedAt": "2026-05-23T23:40:50.828Z",
   "llmProvider": "none",
   "summary": {
     "totalResults": 95,
@@ -1852,26 +1852,6 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "layer": "B"
     },
     {
-      "jobKey": "url:https://justjoin.it/job-offer/strategicsiq-sharepoint-developers---warsaw---poland---onsite-warszawa-other",
-      "company": "Strategicsiq",
-      "title": "Sharepoint Developers - Warsaw - Poland - Onsite",
-      "score": 79,
-      "grade": "B",
-      "roleFit": 45,
-      "url": "https://justjoin.it/job-offer/strategicsiq-sharepoint-developers---warsaw---poland---onsite-warszawa-other",
-      "location": "Warszawa, PL",
-      "keywordHits": [
-        "Performance Optimization",
-        "Design Systems",
-        "design system"
-      ],
-      "keywordMisses": [
-        "angular"
-      ],
-      "decision": "pursue selectively",
-      "layer": "B"
-    },
-    {
       "jobKey": "url:https://www.mycareersfuture.gov.sg/job/4147cafc2b176836d58de73b12729cf5",
       "company": "GOLDTECH RESOURCES PTE LTD",
       "title": "Technical Business Analyst – Power Platform",
@@ -1905,6 +1885,26 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "keywordMisses": [
         "spark",
         "excel"
+      ],
+      "decision": "pursue selectively",
+      "layer": "B"
+    },
+    {
+      "jobKey": "url:https://justjoin.it/job-offer/n-ix-senior-scala-engineer-krakow-scala-15ebf7dd",
+      "company": "N-iX",
+      "title": "Senior Scala Engineer",
+      "score": 78,
+      "grade": "B",
+      "roleFit": 45,
+      "url": "https://justjoin.it/job-offer/n-ix-senior-scala-engineer-krakow-scala-15ebf7dd",
+      "location": "Kraków, PL",
+      "keywordHits": [
+        "Analytics",
+        "analytics"
+      ],
+      "keywordMisses": [
+        "docker",
+        "kubernetes"
       ],
       "decision": "pursue selectively",
       "layer": "B"
@@ -1977,28 +1977,6 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "layer": "B"
     },
     {
-      "jobKey": "url:https://remoteok.com/remote-jobs/remote-analytics-engineer-upto-125-hr-mercor-1131797",
-      "company": "Mercor",
-      "title": "Analytics Engineer Upto $125 hr",
-      "score": 76,
-      "grade": "B",
-      "roleFit": 45,
-      "url": "https://remoteok.com/remote-jobs/remote-analytics-engineer-upto-125-hr-mercor-1131797",
-      "location": "Toronto, Toronto, Ontario, Canada",
-      "keywordHits": [
-        "Analytics",
-        "remote",
-        "analytics"
-      ],
-      "keywordMisses": [
-        "etl",
-        "airflow",
-        "dbt"
-      ],
-      "decision": "pursue selectively",
-      "layer": "B"
-    },
-    {
       "jobKey": "url:https://careers.roblox.com/jobs/7923586?gh_jid=7923586",
       "company": "Roblox Greenhouse",
       "title": "Senior Software Engineer - Release",
@@ -2010,24 +1988,6 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "keywordHits": [
         "TypeScript",
         "TypeScript"
-      ],
-      "keywordMisses": [
-        "python"
-      ],
-      "decision": "pursue selectively",
-      "layer": "B"
-    },
-    {
-      "jobKey": "url:https://nvidia.wd5.myworkdayjobs.com/nvidiaexternalcareersite/job/israel-tel-aviv/senior-vlsi-cdc-engineer_jr2002639",
-      "company": "NVIDIA Workday",
-      "title": "Senior VLSI CDC Engineer",
-      "score": 76,
-      "grade": "B",
-      "roleFit": 45,
-      "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Israel-Tel-Aviv/Senior-VLSI-CDC-Engineer_JR2002639",
-      "location": "Israel, Tel Aviv",
-      "keywordHits": [
-        "dashboard"
       ],
       "keywordMisses": [
         "python"
@@ -2257,38 +2217,6 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "layer": "B"
     },
     {
-      "jobKey": "url:https://nvidia.wd5.myworkdayjobs.com/nvidiaexternalcareersite/job/israel-tel-aviv/senior-vlsi-integration-engineer_jr1989467",
-      "company": "NVIDIA Workday",
-      "title": "Senior VLSI Integration Engineer",
-      "score": 73,
-      "grade": "B",
-      "roleFit": 45,
-      "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Israel-Tel-Aviv/Senior-VLSI-Integration-Engineer_JR1989467",
-      "location": "Israel, Tel Aviv",
-      "keywordHits": [],
-      "keywordMisses": [
-        "python"
-      ],
-      "decision": "pursue selectively",
-      "layer": "B"
-    },
-    {
-      "jobKey": "url:https://nvidia.wd5.myworkdayjobs.com/nvidiaexternalcareersite/job/israel-tel-aviv/vlsi-integration-engineer_jr2011207",
-      "company": "NVIDIA Workday",
-      "title": "VLSI Integration Engineer",
-      "score": 73,
-      "grade": "B",
-      "roleFit": 45,
-      "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Israel-Tel-Aviv/VLSI-Integration-Engineer_JR2011207",
-      "location": "Israel, Tel Aviv",
-      "keywordHits": [],
-      "keywordMisses": [
-        "python"
-      ],
-      "decision": "pursue selectively",
-      "layer": "B"
-    },
-    {
       "jobKey": "url:https://remoteok.com/remote-jobs/remote-loss-prevention-specialist-the-home-depot-canada-1131717",
       "company": "The Home Depot Canada",
       "title": "Loss Prevention Specialist",
@@ -2368,6 +2296,25 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "layer": "B"
     },
     {
+      "jobKey": "url:https://www.mycareersfuture.gov.sg/job/cf0cb4c983a453044ad8946539b9f6ab",
+      "company": "CERTIS TECHNOLOGY (SINGAPORE) PTE. LTD.",
+      "title": "Senior/Software Engineer (Technical Lead)",
+      "score": 71,
+      "grade": "C",
+      "roleFit": 45,
+      "url": "https://www.mycareersfuture.gov.sg/job/cf0cb4c983a453044ad8946539b9f6ab",
+      "location": "Islandwide, Singapore",
+      "keywordHits": [
+        "JavaScript"
+      ],
+      "keywordMisses": [
+        "python",
+        "java"
+      ],
+      "decision": "pursue selectively",
+      "layer": "B"
+    },
+    {
       "jobKey": "url:https://nvidia.wd5.myworkdayjobs.com/nvidiaexternalcareersite/job/india-gurugram/senior-formal-verification-engineer_jr2015691",
       "company": "NVIDIA Workday",
       "title": "Senior Formal Verification Engineer",
@@ -2398,23 +2345,6 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "layer": "B"
     },
     {
-      "jobKey": "url:https://justjoin.it/job-offer/kubo-cybersecurity-engineer-warszawa-security",
-      "company": "KUBO",
-      "title": "Cybersecurity Engineer",
-      "score": 70,
-      "grade": "C",
-      "roleFit": 45,
-      "url": "https://justjoin.it/job-offer/kubo-cybersecurity-engineer-warszawa-security",
-      "location": "Warszawa, PL",
-      "keywordHits": [],
-      "keywordMisses": [
-        "python",
-        "java"
-      ],
-      "decision": "pursue selectively",
-      "layer": "B"
-    },
-    {
       "jobKey": "url:https://nvidia.wd5.myworkdayjobs.com/nvidiaexternalcareersite/job/taiwan-hsinchu/senior-package-engineer_jr2016717-1",
       "company": "NVIDIA Workday",
       "title": "Senior Package Engineer",
@@ -2441,6 +2371,68 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "keywordMisses": [
         "computer vision"
       ],
+      "decision": "hold / compare",
+      "layer": "B"
+    },
+    {
+      "jobKey": "url:https://www.mycareersfuture.gov.sg/job/2b52c3da2fca4b2ff0aa29c8691b483a",
+      "company": "MANPOWER STAFFING SERVICES (SINGAPORE) PTE LTD",
+      "title": "Software Engineer C++/C#",
+      "score": 68,
+      "grade": "C",
+      "roleFit": 45,
+      "url": "https://www.mycareersfuture.gov.sg/job/2b52c3da2fca4b2ff0aa29c8691b483a",
+      "location": "Islandwide, Singapore",
+      "keywordHits": [],
+      "keywordMisses": [],
+      "decision": "hold / compare",
+      "layer": "B"
+    },
+    {
+      "jobKey": "url:https://remoteok.com/remote-jobs/remote-virtual-assistant-panelist-rgampt-solutions-1131861",
+      "company": "RG&amp;T Solutions",
+      "title": "Virtual Assistant Panelist",
+      "score": 68,
+      "grade": "C",
+      "roleFit": 45,
+      "url": "https://remoteok.com/remote-jobs/remote-virtual-assistant-panelist-rgampt-solutions-1131861",
+      "location": "Quad Cities Metropolitan Area,",
+      "keywordHits": [
+        "remote"
+      ],
+      "keywordMisses": [],
+      "decision": "hold / compare",
+      "layer": "B"
+    },
+    {
+      "jobKey": "url:https://remoteok.com/remote-jobs/remote-asset-protection-specialist-burnaby-the-home-depot-canada-1131715",
+      "company": "The Home Depot Canada",
+      "title": "Asset Protection Specialist BURNABY",
+      "score": 68,
+      "grade": "C",
+      "roleFit": 45,
+      "url": "https://remoteok.com/remote-jobs/remote-asset-protection-specialist-burnaby-the-home-depot-canada-1131715",
+      "location": "Burnaby,",
+      "keywordHits": [
+        "remote"
+      ],
+      "keywordMisses": [],
+      "decision": "hold / compare",
+      "layer": "B"
+    },
+    {
+      "jobKey": "url:https://remoteok.com/remote-jobs/remote-janitor-engineer-neutrality-1131716",
+      "company": "Neutrality",
+      "title": "Janitor Engineer",
+      "score": 68,
+      "grade": "C",
+      "roleFit": 45,
+      "url": "https://remoteok.com/remote-jobs/remote-janitor-engineer-neutrality-1131716",
+      "location": "Vaughan,",
+      "keywordHits": [
+        "remote"
+      ],
+      "keywordMisses": [],
       "decision": "hold / compare",
       "layer": "B"
     }
@@ -2782,30 +2774,6 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "layer": "C"
     },
     {
-      "jobKey": "url:https://www.themuse.com/jobs/experian/full-stack-staff-engineer-graphql-61354b",
-      "company": "Experian",
-      "title": "Full Stack Staff Engineer - GraphQL",
-      "score": 92,
-      "grade": "A",
-      "roleFit": 92,
-      "url": "https://www.themuse.com/jobs/experian/full-stack-staff-engineer-graphql-61354b",
-      "location": "Alajuela, Costa Rica / Flexible / Remote",
-      "keywordHits": [
-        "TypeScript",
-        "React",
-        "API",
-        "remote"
-      ],
-      "topGap": "java",
-      "mainGaps": [
-        "java",
-        "aws",
-        "gcp",
-        "azure"
-      ],
-      "layer": "C"
-    },
-    {
       "jobKey": "url:https://www.themuse.com/jobs/allstate/lead-ai-cloud-platform-engineer-799e2a",
       "company": "Allstate",
       "title": "Lead AI Cloud Platform Engineer",
@@ -3126,6 +3094,30 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       ],
       "topGap": "",
       "mainGaps": [],
+      "layer": "C"
+    },
+    {
+      "jobKey": "url:https://job-boards.greenhouse.io/canonical/jobs/5150422",
+      "company": "Canonical Greenhouse",
+      "title": "Web Frontend Engineer - JS, CSS, React, Flutter",
+      "score": 91,
+      "grade": "A",
+      "roleFit": 92,
+      "url": "https://job-boards.greenhouse.io/canonical/jobs/5150422",
+      "location": "Home based - Worldwide",
+      "keywordHits": [
+        "Frontend Engineer",
+        "TypeScript",
+        "React",
+        "CSS"
+      ],
+      "topGap": "docker",
+      "mainGaps": [
+        "docker",
+        "kubernetes",
+        "rest",
+        "operations"
+      ],
       "layer": "C"
     }
   ],

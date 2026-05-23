@@ -1,31 +1,31 @@
 # Career Ops Learning Report
 
-- Generated: 2026-05-23T03:21:50.880Z
-- Active jobs: 83276
-- Positive signals: 81450
+- Generated: 2026-05-23T23:40:54.265Z
+- Active jobs: 83312
+- Positive signals: 81480
 - Negative signals: 0
 - Source coverage: 421 sources / 10557 queries / markets tw, cn, jp, kr, sg, global, us, ca, uk, ie, de, nl, fr, es, it, se, dk, no, pl, pt, au, nz, in, br, mx, ch, fi, cz, za, id, my, ph, vn, th, il, hk, ae
 
 ## Preferred Skills
 
-- data: 36205.4
-- api: 35527.6
-- API: 35505.7
-- product: 27848.4
-- growth: 23905.1
-- operations: 23134.4
-- analytics: 19118.3
-- Analytics: 18205.5
-- remote: 17623.9
-- engineer: 16777.8
-- sales: 16543.6
-- python: 12352.9
-- go: 9922.6
-- sql: 8384.4
-- excel: 7456.7
-- aws: 6489.3
-- machine learning: 5523.8
-- java: 5127.5
+- data: 36330.7
+- api: 35525.1
+- API: 35503.2
+- product: 27942.4
+- growth: 24086.2
+- operations: 23236
+- analytics: 19099.4
+- Analytics: 18182.3
+- remote: 17642.9
+- sales: 16871.9
+- engineer: 16690
+- python: 12261.1
+- go: 9948.3
+- sql: 8386.3
+- excel: 7507.8
+- aws: 6518.8
+- machine learning: 5515.1
+- java: 5162.8
 
 ## Avoid Signals
 
@@ -40,10 +40,10 @@
 - SpaceX: 3107.9
 - Databricks Greenhouse: 2536.1
 - Uber: 2482.4
-- GE Vernova: 2231
-- Walmart: 2219.7
-- Bank of America: 1818.5
-- Stripe Greenhouse: 1773.4
+- Walmart: 2321.8
+- GE Vernova: 2205.7
+- Bank of America: 1814.1
+- Stripe Greenhouse: 1777.2
 - MongoDB Greenhouse: 1343.9
 
 ## Next Strategy

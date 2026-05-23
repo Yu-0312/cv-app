@@ -1,6 +1,6 @@
 # Career Ops Deep Fit Report
 
-Generated: 2026-05-23T03:21:47.442Z
+Generated: 2026-05-23T23:40:50.828Z
 LLM provider: none
 Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 exploratory)
 
@@ -745,12 +745,6 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Keyword hits: -
 - Gaps: python
 
-### Strategicsiq - Sharepoint Developers - Warsaw - Poland - Onsite
-- Score: 79 | Grade: B | RoleFit: 45
-- Decision: pursue selectively
-- Keyword hits: Performance Optimization, Design Systems, design system
-- Gaps: angular
-
 ### GOLDTECH RESOURCES PTE LTD - Technical Business Analyst – Power Platform
 - Score: 78 | Grade: B | RoleFit: 45
 - Decision: pursue selectively
@@ -762,6 +756,12 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Decision: pursue selectively
 - Keyword hits: Analytics, analytics
 - Gaps: spark, excel
+
+### N-iX - Senior Scala Engineer
+- Score: 78 | Grade: B | RoleFit: 45
+- Decision: pursue selectively
+- Keyword hits: Analytics, analytics
+- Gaps: docker, kubernetes
 
 ### NVIDIA Workday - Senior Mixed Signal Circuit Design Engineer
 - Score: 77 | Grade: B | RoleFit: 45
@@ -787,22 +787,10 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Keyword hits: Performance Optimization
 - Gaps: -
 
-### Mercor - Analytics Engineer Upto $125 hr
-- Score: 76 | Grade: B | RoleFit: 45
-- Decision: pursue selectively
-- Keyword hits: Analytics, remote, analytics
-- Gaps: etl, airflow, dbt
-
 ### Roblox Greenhouse - Senior Software Engineer - Release
 - Score: 76 | Grade: B | RoleFit: 45
 - Decision: pursue selectively
 - Keyword hits: TypeScript, TypeScript
-- Gaps: python
-
-### NVIDIA Workday - Senior VLSI CDC Engineer
-- Score: 76 | Grade: B | RoleFit: 45
-- Decision: pursue selectively
-- Keyword hits: dashboard
 - Gaps: python
 
 ### Roblox Greenhouse - Senior QA Engineer, Game Engine
@@ -889,18 +877,6 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Keyword hits: -
 - Gaps: python, deep learning
 
-### NVIDIA Workday - Senior VLSI Integration Engineer
-- Score: 73 | Grade: B | RoleFit: 45
-- Decision: pursue selectively
-- Keyword hits: -
-- Gaps: python
-
-### NVIDIA Workday - VLSI Integration Engineer
-- Score: 73 | Grade: B | RoleFit: 45
-- Decision: pursue selectively
-- Keyword hits: -
-- Gaps: python
-
 ### The Home Depot Canada - Loss Prevention Specialist
 - Score: 72 | Grade: B | RoleFit: 45
 - Decision: pursue selectively
@@ -931,6 +907,12 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Keyword hits: -
 - Gaps: -
 
+### CERTIS TECHNOLOGY (SINGAPORE) PTE. LTD. - Senior/Software Engineer (Technical Lead)
+- Score: 71 | Grade: C | RoleFit: 45
+- Decision: pursue selectively
+- Keyword hits: JavaScript
+- Gaps: python, java
+
 ### NVIDIA Workday - Senior Formal Verification Engineer
 - Score: 71 | Grade: C | RoleFit: 45
 - Decision: pursue selectively
@@ -943,12 +925,6 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Keyword hits: -
 - Gaps: -
 
-### KUBO - Cybersecurity Engineer
-- Score: 70 | Grade: C | RoleFit: 45
-- Decision: pursue selectively
-- Keyword hits: -
-- Gaps: python, java
-
 ### NVIDIA Workday - Senior Package Engineer
 - Score: 69 | Grade: C | RoleFit: 45
 - Decision: hold / compare
@@ -960,6 +936,30 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Decision: hold / compare
 - Keyword hits: -
 - Gaps: computer vision
+
+### MANPOWER STAFFING SERVICES (SINGAPORE) PTE LTD - Software Engineer C++/C#
+- Score: 68 | Grade: C | RoleFit: 45
+- Decision: hold / compare
+- Keyword hits: -
+- Gaps: -
+
+### RG&amp;T Solutions - Virtual Assistant Panelist
+- Score: 68 | Grade: C | RoleFit: 45
+- Decision: hold / compare
+- Keyword hits: remote
+- Gaps: -
+
+### The Home Depot Canada - Asset Protection Specialist BURNABY
+- Score: 68 | Grade: C | RoleFit: 45
+- Decision: hold / compare
+- Keyword hits: remote
+- Gaps: -
+
+### Neutrality - Janitor Engineer
+- Score: 68 | Grade: C | RoleFit: 45
+- Decision: hold / compare
+- Keyword hits: remote
+- Gaps: -
 
 ## Layer C — Exploratory Signals (roleFit < 40)
 
@@ -978,7 +978,6 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - **Rent the Runway — Software Engineer III - Full Stack** (score: 92) | Top gap: java
 - **Flexport — Engineering Manager, Autonomous Freight Systems** (score: 92) | Top gap: java
 - **Bank of America — Software Engineer III - GBS IND** (score: 92) | Top gap: python
-- **Experian — Full Stack Staff Engineer - GraphQL** (score: 92) | Top gap: java
 - **Allstate — Lead AI Cloud Platform Engineer** (score: 92) | Top gap: python
 - **Equinix, Inc — Staff Software Engineer** (score: 92) | Top gap: python
 - **Zillow — Senior Engineering Manager** (score: 92) | Top gap: python
@@ -993,4 +992,5 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - **EPAM Systems — Senior Data Engineer (Palantir)** (score: 91) | Top gap: python
 - **Allstate — Product Engineer - Java Spring Boot w/ Full Stack Option** (score: 91) | Top gap: python
 - **Stripe Greenhouse — Full Stack Engineer, Support Experience** (score: 91) | Top gap: none
+- **Canonical Greenhouse — Web Frontend Engineer - JS, CSS, React, Flutter** (score: 91) | Top gap: docker
 

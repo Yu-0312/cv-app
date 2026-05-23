@@ -1,10 +1,10 @@
 {
   "source": "career-ops-health-monitor",
-  "checkedAt": "2026-05-23T03:21:54.769Z",
+  "checkedAt": "2026-05-23T23:40:58.202Z",
   "threshold": 0.3,
   "health": {
-    "total": 83276,
-    "active": 83276,
+    "total": 83312,
+    "active": 83312,
     "expired": 0,
     "stale": 0,
     "expiredRate": 0,
@@ -12,23 +12,23 @@
     "avgActiveScore": 65,
     "bySource": {
       "MyCareersFuture Singapore Frontend Full Stack": {
-        "total": 38,
+        "total": 37,
         "expired": 0
       },
       "The Muse Global Public Jobs": {
-        "total": 1881,
+        "total": 1883,
         "expired": 0
       },
       "The Muse Global Software Engineering": {
-        "total": 1737,
+        "total": 1734,
         "expired": 0
       },
       "The Muse Global Remote Jobs": {
-        "total": 1816,
+        "total": 1814,
         "expired": 0
       },
       "Source flex job board": {
-        "total": 119,
+        "total": 120,
         "expired": 0
       },
       "Japan Dev English Tech Jobs": {
@@ -40,11 +40,11 @@
         "expired": 0
       },
       "The Muse Global Data Analytics": {
-        "total": 1831,
+        "total": 1828,
         "expired": 0
       },
       "Stripe Greenhouse": {
-        "total": 382,
+        "total": 383,
         "expired": 0
       },
       "Figma Greenhouse": {
@@ -80,7 +80,7 @@
         "expired": 0
       },
       "Asana Greenhouse": {
-        "total": 76,
+        "total": 77,
         "expired": 0
       },
       "Replit Ashby": {
@@ -89,6 +89,10 @@
       },
       "Supabase Ashby": {
         "total": 40,
+        "expired": 0
+      },
+      "Remotive Global Remote Jobs": {
+        "total": 18,
         "expired": 0
       },
       "Reddit Greenhouse": {
@@ -139,20 +143,16 @@
         "total": 29,
         "expired": 0
       },
-      "Remotive Global Remote Jobs": {
-        "total": 19,
+      "NVIDIA Workday": {
+        "total": 287,
         "expired": 0
       },
       "Perplexity Ashby": {
         "total": 15,
         "expired": 0
       },
-      "NVIDIA Workday": {
-        "total": 286,
-        "expired": 0
-      },
       "Remote OK Global Remote Jobs": {
-        "total": 74,
+        "total": 100,
         "expired": 0
       },
       "Linear Ashby": {
@@ -172,7 +172,7 @@
         "expired": 0
       },
       "Daijob Japan Broad Listings": {
-        "total": 95,
+        "total": 108,
         "expired": 0
       },
       "Mozilla Greenhouse": {
@@ -199,10 +199,6 @@
         "total": 4,
         "expired": 0
       },
-      "Microsoft Shanghai": {
-        "total": 2,
-        "expired": 0
-      },
       "JREC-IN Japan Researcher and Postdoc": {
         "total": 340,
         "expired": 0
@@ -217,6 +213,10 @@
       },
       "Tencent Careers China": {
         "total": 1480,
+        "expired": 0
+      },
+      "Microsoft Shanghai": {
+        "total": 2,
         "expired": 0
       },
       "Tencent": {
@@ -276,7 +276,7 @@
         "expired": 0
       },
       "Grab": {
-        "total": 46,
+        "total": 47,
         "expired": 0
       },
       "Lenovo China": {
