@@ -102,30 +102,16 @@ jobs:
 
       - name: Commit updated snapshot
         run: |
-          CHANGED_FILES="tooling/data/career-ops-sources.json \
-            tooling/data/app/career-ops-singapore-jobs.json tooling/data/app/career-ops-singapore-jobs.js \
-            tooling/data/app/career-ops-intelligence-report.md \
-            tooling/data/app/career-ops-source-strategy-report.md \
-            tooling/data/app/career-ops-source-flex-report.md \
-            tooling/data/app/career-ops-source-quality-report.md \
-            tooling/data/app/career-ops-application-kit.json tooling/data/app/career-ops-application-kit.js tooling/data/app/career-ops-application-kit.md \
-            tooling/data/app/career-ops-deep-research.json tooling/data/app/career-ops-deep-research.js tooling/data/app/career-ops-deep-research.md \
-            tooling/data/app/career-ops-deep-fit.json tooling/data/app/career-ops-deep-fit.js tooling/data/app/career-ops-deep-fit.md \
-            tooling/data/app/career-ops-compensation.json tooling/data/app/career-ops-compensation.js tooling/data/app/career-ops-compensation.md \
-            tooling/data/app/career-ops-story-bank.json tooling/data/app/career-ops-story-bank.js tooling/data/app/career-ops-story-bank.md \
-            tooling/data/app/career-ops-parallel-report.json tooling/data/app/career-ops-parallel-report.js tooling/data/app/career-ops-parallel-report.md \
-            tooling/data/app/career-ops-learning.json tooling/data/app/career-ops-learning.js tooling/data/app/career-ops-learning-report.md \
-            tooling/data/app/career-ops-modes.json tooling/data/app/career-ops-modes.js tooling/data/app/career-ops-modes-report.md \
-            tooling/data/app/career-ops-job-health.json tooling/data/app/career-ops-job-health-report.md"
-          if git diff --quiet -- $CHANGED_FILES; then
+          if git diff --quiet -- tooling/data; then
             echo "No Career Ops snapshot changes."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A -- $CHANGED_FILES
-          if [ -f tooling/data/app/career-ops-source-strategy-report.md ]; then
-            git add tooling/data/app/career-ops-source-strategy-report.md
+          git add -u -- tooling/data
+          if git diff --cached --quiet; then
+            echo "No tracked Career Ops snapshot changes."
+            exit 0
           fi
           git commit -m "Update Career Ops snapshot"
           git pull --rebase origin main
