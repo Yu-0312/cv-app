@@ -1,6 +1,6 @@
 window.CV_CAREER_OPS_DEEP_FIT = {
   "source": "career-ops-deep-fit",
-  "generatedAt": "2026-05-23T01:52:24.060Z",
+  "generatedAt": "2026-05-23T03:21:47.442Z",
   "llmProvider": "none",
   "summary": {
     "totalResults": 95,
@@ -2429,17 +2429,17 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "layer": "B"
     },
     {
-      "jobKey": "url:https://www.mycareersfuture.gov.sg/job/869a94b2b62184e463f3ffa9fae26f72",
-      "company": "SENG JOO HUAT PTE. LTD.",
-      "title": "Project Manager",
-      "score": 69,
+      "jobKey": "url:https://www.mycareersfuture.gov.sg/job/81f9bb29c103df7096eba6ad76e03154",
+      "company": "ROKKO SYSTEMS PTE. LTD.",
+      "title": "Software Engineer I",
+      "score": 68,
       "grade": "C",
       "roleFit": 45,
-      "url": "https://www.mycareersfuture.gov.sg/job/869a94b2b62184e463f3ffa9fae26f72",
-      "location": "LORONG BAKAR BATU, D13 Macpherson, Braddell, Singapore",
+      "url": "https://www.mycareersfuture.gov.sg/job/81f9bb29c103df7096eba6ad76e03154",
+      "location": "KAKI BUKIT ROAD 2, D14 Geylang, Eunos, Singapore",
       "keywordHits": [],
       "keywordMisses": [
-        "excel"
+        "computer vision"
       ],
       "decision": "hold / compare",
       "layer": "B"

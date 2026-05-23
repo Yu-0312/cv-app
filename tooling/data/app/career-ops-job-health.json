@@ -1,10 +1,10 @@
 {
   "source": "career-ops-health-monitor",
-  "checkedAt": "2026-05-23T01:52:30.032Z",
+  "checkedAt": "2026-05-23T03:21:54.769Z",
   "threshold": 0.3,
   "health": {
-    "total": 83279,
-    "active": 83279,
+    "total": 83276,
+    "active": 83276,
     "expired": 0,
     "stale": 0,
     "expiredRate": 0,
@@ -28,7 +28,7 @@
         "expired": 0
       },
       "Source flex job board": {
-        "total": 123,
+        "total": 119,
         "expired": 0
       },
       "Japan Dev English Tech Jobs": {
@@ -152,7 +152,7 @@
         "expired": 0
       },
       "Remote OK Global Remote Jobs": {
-        "total": 71,
+        "total": 74,
         "expired": 0
       },
       "Linear Ashby": {
@@ -172,7 +172,7 @@
         "expired": 0
       },
       "Daijob Japan Broad Listings": {
-        "total": 97,
+        "total": 95,
         "expired": 0
       },
       "Mozilla Greenhouse": {

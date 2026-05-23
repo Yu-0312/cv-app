@@ -1,10 +1,10 @@
 # Career Ops Intelligence Report
 
-Generated: 2026-05-23T01:51:50.669Z
+Generated: 2026-05-23T03:21:14.428Z
 
-- Active jobs: 83279
+- Active jobs: 83276
 - Expired jobs: 0
-- Duplicate groups: 3437
+- Duplicate groups: 3438
 - Jobs without enough description: 403
 - Rubric: Career Ops 10-Dimension Rubric
 
@@ -21,55 +21,55 @@ Generated: 2026-05-23T01:51:50.669Z
 - applicationEffort: 0.08
 
 ## Top Skills
-- api: 7580
-- growth: 4668
-- operations: 4281
+- api: 7583
+- growth: 4656
+- operations: 4282
 - analytics: 3364
-- sales: 3097
-- python: 2284
-- go: 1967
-- sql: 1557
-- excel: 1524
+- sales: 3091
+- python: 2285
+- go: 1964
+- sql: 1558
+- excel: 1518
 - aws: 1174
 - machine learning: 1027
-- azure: 927
+- azure: 926
 
 ## Missing High-Demand Skills
-- growth: 4668
-- operations: 4281
-- sales: 3097
-- python: 2284
-- go: 1967
-- sql: 1557
-- excel: 1524
+- growth: 4656
+- operations: 4282
+- sales: 3091
+- python: 2285
+- go: 1964
+- sql: 1558
+- excel: 1518
 - aws: 1174
 - machine learning: 1027
-- azure: 927
+- azure: 926
 
 ## Global Skill Gap Priority (weighted by job score)
-- growth: 7426.6
-- operations: 6782.5
-- sales: 4853.6
-- python: 3708.5
-- go: 3136.5
-- sql: 2530.7
-- excel: 2381.6
+- growth: 7408.6
+- operations: 6783.4
+- sales: 4843.9
+- python: 3709.8
+- go: 3132.1
+- sql: 2532
+- excel: 2373.2
 - aws: 1919.7
 - machine learning: 1665
-- azure: 1512.5
-- java: 1462.8
+- azure: 1511.2
+- java: 1462.7
 - spark: 1260.2
 
 ## Role Families
 - Backend: 79115
-- Other: 1706
+- Other: 1705
 - Frontend: 829
-- AI / Data: 690
-- Sales: 370
-- Marketing: 177
-- Product: 149
-- Design: 135
-- Operations: 74
+- AI / Data: 691
+- Sales: 369
+- Marketing: 174
+- Product: 147
+- Design: 136
+- Operations: 76
 - Internship: 24
 
 ## Recommended Search Queries

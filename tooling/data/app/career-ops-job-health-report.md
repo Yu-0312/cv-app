@@ -1,14 +1,14 @@
 # Career Ops Job Health Report
 
-Generated: 2026-05-23T01:52:30.033Z
+Generated: 2026-05-23T03:21:54.771Z
 Status: ✅ **HEALTHY**
 
 ## Summary
 
 | Metric | Value |
 |--------|-------|
-| Total jobs | 83279 |
-| Active | 83279 |
+| Total jobs | 83276 |
+| Active | 83276 |
 | Expired | 0 (0%) |
 | Stale (>14d) | 0 |
 | Avg active score | 65 |
@@ -37,6 +37,6 @@ Status: ✅ **HEALTHY**
 | Roblox Greenhouse | 174 | 0 | 0% |
 | MyCareersFuture Singapore Software | 150 | 0 | 0% |
 | Airbnb Greenhouse | 141 | 0 | 0% |
-| Source flex job board | 123 | 0 | 0% |
+| Source flex job board | 119 | 0 | 0% |
 | Figma Greenhouse | 110 | 0 | 0% |
 

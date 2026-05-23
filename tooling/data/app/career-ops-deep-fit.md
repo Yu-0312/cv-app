@@ -1,6 +1,6 @@
 # Career Ops Deep Fit Report
 
-Generated: 2026-05-23T01:52:24.060Z
+Generated: 2026-05-23T03:21:47.442Z
 LLM provider: none
 Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 exploratory)
 
@@ -955,11 +955,11 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Keyword hits: -
 - Gaps: -
 
-### SENG JOO HUAT PTE. LTD. - Project Manager
-- Score: 69 | Grade: C | RoleFit: 45
+### ROKKO SYSTEMS PTE. LTD. - Software Engineer I
+- Score: 68 | Grade: C | RoleFit: 45
 - Decision: hold / compare
 - Keyword hits: -
-- Gaps: excel
+- Gaps: computer vision
 
 ## Layer C — Exploratory Signals (roleFit < 40)
 
