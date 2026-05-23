@@ -1,10 +1,10 @@
 {
   "source": "career-ops-health-monitor",
-  "checkedAt": "2026-05-22T01:56:22.555Z",
+  "checkedAt": "2026-05-23T01:52:30.032Z",
   "threshold": 0.3,
   "health": {
-    "total": 83277,
-    "active": 83277,
+    "total": 83279,
+    "active": 83279,
     "expired": 0,
     "stale": 0,
     "expiredRate": 0,
@@ -12,43 +12,39 @@
     "avgActiveScore": 65,
     "bySource": {
       "MyCareersFuture Singapore Frontend Full Stack": {
-        "total": 41,
+        "total": 38,
         "expired": 0
       },
       "The Muse Global Public Jobs": {
-        "total": 1878,
+        "total": 1881,
         "expired": 0
       },
       "The Muse Global Software Engineering": {
-        "total": 1743,
+        "total": 1737,
         "expired": 0
       },
       "The Muse Global Remote Jobs": {
-        "total": 1804,
+        "total": 1816,
         "expired": 0
       },
       "Source flex job board": {
-        "total": 104,
-        "expired": 0
-      },
-      "MyCareersFuture Singapore AI Data": {
-        "total": 95,
+        "total": 123,
         "expired": 0
       },
       "Japan Dev English Tech Jobs": {
-        "total": 48,
+        "total": 49,
         "expired": 0
       },
       "Databricks Greenhouse": {
-        "total": 449,
+        "total": 447,
         "expired": 0
       },
       "The Muse Global Data Analytics": {
-        "total": 1837,
+        "total": 1831,
         "expired": 0
       },
       "Stripe Greenhouse": {
-        "total": 387,
+        "total": 382,
         "expired": 0
       },
       "Figma Greenhouse": {
@@ -60,7 +56,7 @@
         "expired": 0
       },
       "MongoDB Greenhouse": {
-        "total": 264,
+        "total": 266,
         "expired": 0
       },
       "GitLab Greenhouse": {
@@ -68,7 +64,7 @@
         "expired": 0
       },
       "Canonical Greenhouse": {
-        "total": 254,
+        "total": 252,
         "expired": 0
       },
       "Vercel Greenhouse": {
@@ -76,11 +72,11 @@
         "expired": 0
       },
       "ElevenLabs Ashby": {
-        "total": 94,
+        "total": 96,
         "expired": 0
       },
       "PostHog Ashby": {
-        "total": 12,
+        "total": 13,
         "expired": 0
       },
       "Asana Greenhouse": {
@@ -88,7 +84,7 @@
         "expired": 0
       },
       "Replit Ashby": {
-        "total": 55,
+        "total": 54,
         "expired": 0
       },
       "Supabase Ashby": {
@@ -96,19 +92,19 @@
         "expired": 0
       },
       "Reddit Greenhouse": {
-        "total": 98,
+        "total": 101,
         "expired": 0
       },
       "Roblox Greenhouse": {
-        "total": 172,
+        "total": 174,
         "expired": 0
       },
       "Cursor Ashby": {
-        "total": 73,
+        "total": 70,
         "expired": 0
       },
       "Ramp Ashby": {
-        "total": 97,
+        "total": 102,
         "expired": 0
       },
       "Gogolook": {
@@ -116,11 +112,7 @@
         "expired": 0
       },
       "Samsung Workday": {
-        "total": 65,
-        "expired": 0
-      },
-      "Micron Workday": {
-        "total": 68,
+        "total": 69,
         "expired": 0
       },
       "Cardlytics Workday Taiwan": {
@@ -129,6 +121,10 @@
       },
       "MyCareersFuture Singapore Software": {
         "total": 150,
+        "expired": 0
+      },
+      "MyCareersFuture Singapore AI Data": {
+        "total": 95,
         "expired": 0
       },
       "MyCareersFuture Singapore Product": {
@@ -143,20 +139,20 @@
         "total": 29,
         "expired": 0
       },
-      "Remote OK Global Remote Jobs": {
-        "total": 98,
-        "expired": 0
-      },
       "Remotive Global Remote Jobs": {
-        "total": 20,
+        "total": 19,
         "expired": 0
       },
       "Perplexity Ashby": {
-        "total": 16,
+        "total": 15,
         "expired": 0
       },
       "NVIDIA Workday": {
-        "total": 290,
+        "total": 286,
+        "expired": 0
+      },
+      "Remote OK Global Remote Jobs": {
+        "total": 71,
         "expired": 0
       },
       "Linear Ashby": {
@@ -168,7 +164,7 @@
         "expired": 0
       },
       "Logitech Workday Taiwan": {
-        "total": 20,
+        "total": 21,
         "expired": 0
       },
       "MyCareersFuture Singapore Business Operations": {
@@ -176,11 +172,15 @@
         "expired": 0
       },
       "Daijob Japan Broad Listings": {
-        "total": 88,
+        "total": 97,
         "expired": 0
       },
       "Mozilla Greenhouse": {
         "total": 28,
+        "expired": 0
+      },
+      "Micron Workday": {
+        "total": 65,
         "expired": 0
       },
       "Applied Materials Workday": {
@@ -216,7 +216,11 @@
         "expired": 0
       },
       "Tencent Careers China": {
-        "total": 1474,
+        "total": 1480,
+        "expired": 0
+      },
+      "Tencent": {
+        "total": 20,
         "expired": 0
       },
       "NVIDIA Taiwan": {
@@ -237,10 +241,6 @@
       },
       "Delta Electronics": {
         "total": 7,
-        "expired": 0
-      },
-      "Tencent": {
-        "total": 26,
         "expired": 0
       },
       "1111 Taiwan Job Sitemap": {
@@ -267,20 +267,16 @@
         "total": 4,
         "expired": 0
       },
-      "Grab": {
-        "total": 47,
-        "expired": 0
-      },
       "CONA SuccessFactors IT Development Engineer": {
         "total": 1,
         "expired": 0
       },
-      "Grab SmartRecruiters": {
-        "total": 8,
-        "expired": 0
-      },
       "Rakuten": {
         "total": 2,
+        "expired": 0
+      },
+      "Grab": {
+        "total": 46,
         "expired": 0
       },
       "Lenovo China": {
@@ -289,6 +285,10 @@
       },
       "COEBank SuccessFactors Data & BI Engineer": {
         "total": 1,
+        "expired": 0
+      },
+      "Grab SmartRecruiters": {
+        "total": 8,
         "expired": 0
       },
       "ASSA ABLOY SuccessFactors Taipei Manufacturing Engineer": {
@@ -300,6 +300,10 @@
         "expired": 0
       },
       "ASSA ABLOY SuccessFactors C# Software Engineer": {
+        "total": 1,
+        "expired": 0
+      },
+      "CONA SuccessFactors Data Analyst": {
         "total": 1,
         "expired": 0
       },
@@ -320,7 +324,7 @@
         "expired": 0
       },
       "UMC": {
-        "total": 83,
+        "total": 85,
         "expired": 0
       },
       "Apple Taiwan": {

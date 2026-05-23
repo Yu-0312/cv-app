@@ -1,6 +1,6 @@
 # Career Ops Compensation Planner
 
-Generated: 2026-05-22T01:56:08.191Z
+Generated: 2026-05-23T01:52:15.588Z
 Plans: 20
 
 ## Operating Rule
@@ -40,7 +40,7 @@ Do not invent salary numbers. Use verified ranges, recruiter-provided ranges, or
 - Map the job scope to proof points in the tailored CV.
 - Prepare one counter package with base, bonus/equity, and non-cash levers.
 
-## BIFROST PTE. LTD. - Frontend Engineer
+## GIC PRIVATE LIMITED - AVP, Frontend Engineer, Technology Group(17140)
 
 - Market: sg
 - Job level (inferred): mid
@@ -50,15 +50,13 @@ Do not invent salary numbers. Use verified ranges, recruiter-provided ranges, or
 
 ### Evidence
 - No verified salary mention found.
-- Benefit signal: bonus
-- Benefit signal: work-mode flexibility
-- Benefit signal: signing / relocation
+- Benefit signal: equity
 - Benefit signal: learning budget
 
 ### Structure
 - Base: Need verified market data or recruiter range before setting a numeric anchor.
-- Bonus: Ask whether bonus is guaranteed, target, or discretionary.
-- Equity: Ask whether equity, RSU, options, or profit-sharing exists.
+- Bonus: Ask whether there is annual bonus, performance bonus, or sign-on bonus.
+- Equity: Clarify grant size, vesting schedule, refreshers, and strike/RSU terms.
 - Benefit: Health / insurance coverage
 - Benefit: Paid leave and holidays
 - Benefit: Learning budget or certification support
@@ -66,8 +64,8 @@ Do not invent salary numbers. Use verified ranges, recruiter-provided ranges, or
 - Benefit: Review cycle and promotion timeline
 
 ### Scripts
-- Range question: Before I anchor on a number, could you share the approved range and level for the Frontend Engineer package, including base, bonus, equity, and review cycle?
-- Value anchor: Based on the scope of Frontend Engineer and my fit around JavaScript, React, engineer, product, I would like to calibrate toward the stronger end of the range if the team sees the level match.
+- Range question: Before I anchor on a number, could you share the approved range and level for the AVP, Frontend Engineer, Technology Group(17140) package, including base, bonus, equity, and review cycle?
+- Value anchor: Based on the scope of AVP, Frontend Engineer, Technology Group(17140) and my fit around TypeScript, React, Accessibility, engineer, I would like to calibrate toward the stronger end of the range if the team sees the level match.
 - Counter: Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?
 - Pause: I appreciate the details. I would like to review the full package and come back with a thoughtful response.
 - Close: If we can align on the package and review timeline, I would feel confident moving forward.
@@ -407,6 +405,40 @@ Do not invent salary numbers. Use verified ranges, recruiter-provided ranges, or
 - Map the job scope to proof points in the tailored CV.
 - Prepare one counter package with base, bonus/equity, and non-cash levers.
 
+## Equinix, Inc - Senior Associate Engineer (Java Backend)
+
+- Market: us
+- Job level (inferred): senior
+- Candidate level (from profile): mid
+- Leverage: high
+- Target frame: Do not name a number first. Ask for the approved range, level, and total compensation structure before anchoring.
+
+### Evidence
+- No verified salary mention found.
+
+### Structure
+- Base: Need verified market data or recruiter range before setting a numeric anchor.
+- Bonus: Ask whether there is annual bonus, performance bonus, or sign-on bonus.
+- Equity: Ask whether equity, RSU, options, or profit-sharing exists.
+- Benefit: Health / insurance coverage
+- Benefit: Paid leave and holidays
+- Benefit: Learning budget or certification support
+- Benefit: Remote/hybrid setup, commute, or relocation support
+- Benefit: Review cycle and promotion timeline
+
+### Scripts
+- Range question: Before I anchor on a number, could you share the approved range and level for the Senior Associate Engineer (Java Backend) package, including base, bonus, equity, and review cycle?
+- Value anchor: Based on the scope of Senior Associate Engineer (Java Backend) and my fit around API, remote, engineer, product, I would like to calibrate toward the stronger end of the range if the team sees the level match.
+- Counter: Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?
+- Pause: I appreciate the details. I would like to review the full package and come back with a thoughtful response.
+- Close: If we can align on the package and review timeline, I would feel confident moving forward.
+
+### Next Actions
+- Collect market compensation evidence before naming a number.
+- Ask recruiter for approved range and level.
+- Map the job scope to proof points in the tailored CV.
+- Prepare one counter package with base, bonus/equity, and non-cash levers.
+
 ## Money Forward - Lead Backend Engineer, Digital Bank
 
 - Market: jp
@@ -506,41 +538,6 @@ Do not invent salary numbers. Use verified ranges, recruiter-provided ranges, or
 ### Scripts
 - Range question: Before I anchor on a number, could you share the approved range and level for the Frontend Engineer package, including base, bonus, equity, and review cycle?
 - Value anchor: Based on the scope of Frontend Engineer and my fit around JavaScript, TypeScript, React, API, I would like to calibrate toward the stronger end of the range if the team sees the level match.
-- Counter: Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?
-- Pause: I appreciate the details. I would like to review the full package and come back with a thoughtful response.
-- Close: If we can align on the package and review timeline, I would feel confident moving forward.
-
-### Next Actions
-- Collect market compensation evidence before naming a number.
-- Ask recruiter for approved range and level.
-- Map the job scope to proof points in the tailored CV.
-- Prepare one counter package with base, bonus/equity, and non-cash levers.
-
-## MICRON SEMICONDUCTOR ASIA OPERATIONS PTE. LTD. - Principal/Staff ML/AI Engineer, Product Engineering, STPG
-
-- Market: sg
-- Job level (inferred): senior-plus
-- Candidate level (from profile): mid
-- Leverage: high
-- Target frame: Do not name a number first. Ask for the approved range, level, and total compensation structure before anchoring.
-
-### Evidence
-- No verified salary mention found.
-- Benefit signal: learning budget
-
-### Structure
-- Base: Need verified market data or recruiter range before setting a numeric anchor.
-- Bonus: Ask whether there is annual bonus, performance bonus, or sign-on bonus.
-- Equity: Ask whether equity, RSU, options, or profit-sharing exists.
-- Benefit: Health / insurance coverage
-- Benefit: Paid leave and holidays
-- Benefit: Learning budget or certification support
-- Benefit: Remote/hybrid setup, commute, or relocation support
-- Benefit: Review cycle and promotion timeline
-
-### Scripts
-- Range question: Before I anchor on a number, could you share the approved range and level for the Principal/Staff ML/AI Engineer, Product Engineering, STPG package, including base, bonus, equity, and review cycle?
-- Value anchor: Based on the scope of Principal/Staff ML/AI Engineer, Product Engineering, STPG and my fit around Analytics, engineer, product, data, I would like to calibrate toward the stronger end of the range if the team sees the level match.
 - Counter: Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?
 - Pause: I appreciate the details. I would like to review the full package and come back with a thoughtful response.
 - Close: If we can align on the package and review timeline, I would feel confident moving forward.

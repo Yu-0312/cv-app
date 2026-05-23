@@ -1,6 +1,6 @@
 # Career Ops Application Kit
 
-Generated: 2026-05-22T01:56:00.219Z
+Generated: 2026-05-23T01:52:05.769Z
 Jobs: 12
 
 ## Pipeline
@@ -75,11 +75,11 @@ Alex Chen
 - Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.
 - Use competing priorities and role fit, not personal need, as the negotiation frame.
 
-## BIFROST PTE. LTD. - Frontend Engineer
+## GIC PRIVATE LIMITED - AVP, Frontend Engineer, Technology Group(17140)
 
 - Priority: P0
 - Score: 95/A
-- Subject: Frontend Engineer application - BIFROST PTE. LTD.
+- Subject: AVP, Frontend Engineer, Technology Group(17140) application - GIC PRIVATE LIMITED
 
 - Block G: High Confidence
 - Rating: 4.8/5.0
@@ -87,26 +87,26 @@ Alex Chen
 ### ATS Keyword Injection
 - Archetype: Frontend Engineer
 - Coverage: 100%
-- JD Keywords: JavaScript, React, engineer, product, data, restful, graphql, node.js
-- 在 Professional Summary 中自然帶入：JavaScript、React、engineer、product、data
+- JD Keywords: TypeScript, React, Accessibility, engineer, product, data, restful, graphql
+- 在 Professional Summary 中自然帶入：TypeScript、React、Accessibility、engineer、product
 - 使用職位語言：「Frontend Engineer」方向的動詞和術語
-- 【你已有但此 JD 未要求】可視情況選擇性提及：vue、angular、python、java、go
-- Missing (do NOT fabricate): vue, angular, python, java, go, mysql, aws, gcp
+- 【你已有但此 JD 未要求】可視情況選擇性提及：aws、docker、kubernetes、rest、llm
+- Missing (do NOT fabricate): aws, docker, kubernetes, rest, llm, rag, agents, growth
 
 ### Apply Checklist
 - Open the source URL and confirm the role is still active.
 - Generate or refresh the tailored ATS PDF from this job.
-- Mirror these JD keywords honestly in your CV: JavaScript, React, engineer, product, data, restful, graphql, node.js
-- Do not overclaim missing areas: vue, angular, python, java, go, mysql
+- Mirror these JD keywords honestly in your CV: TypeScript, React, Accessibility, engineer, product, data, restful, graphql
+- Do not overclaim missing areas: aws, docker, kubernetes, rest, llm, rag
 - Log status, recruiter/contact, and next follow-up date in the tracker.
 
 ### Outreach Email
 ```text
-Hi BIFROST PTE. LTD. team,
+Hi GIC PRIVATE LIMITED team,
 
-I am Alex Chen, and I am interested in the Frontend Engineer role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.
+I am Alex Chen, and I am interested in the AVP, Frontend Engineer, Technology Group(17140) role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.
 
-The role stood out because it maps closely to my experience with JavaScript, React, engineer, product, data.
+The role stood out because it maps closely to my experience with TypeScript, React, Accessibility, engineer, product.
 
 I would appreciate the chance to share how my experience can support the team. Thank you for your time.
 
@@ -117,9 +117,9 @@ Alex Chen
 ### Follow-up
 Timing: 3-5 business days after applying or the last recruiter interaction.
 ```text
-Hi BIFROST PTE. LTD. team,
+Hi GIC PRIVATE LIMITED team,
 
-I wanted to follow up on my application for the Frontend Engineer role. I remain interested and would be glad to provide any additional context about my background.
+I wanted to follow up on my application for the AVP, Frontend Engineer, Technology Group(17140) role. I remain interested and would be glad to provide any additional context about my background.
 
 Thank you again for your time.
 
@@ -128,8 +128,8 @@ Alex Chen
 ```
 
 ### Interview Prep
-- Prepare a 60-second story for why BIFROST PTE. LTD. and why Frontend Engineer.
-- Prepare evidence for: JavaScript, React, engineer, product, data, restful.
+- Prepare a 60-second story for why GIC PRIVATE LIMITED and why AVP, Frontend Engineer, Technology Group(17140).
+- Prepare evidence for: TypeScript, React, Accessibility, engineer, product, data.
 - Prepare one STAR story about execution under ambiguity.
 - Prepare one STAR story about collaboration and tradeoff decisions.
 - Prepare questions about team priorities, success metrics, and hiring timeline.
@@ -726,39 +726,38 @@ Alex Chen
 - Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.
 - Use competing priorities and role fit, not personal need, as the negotiation frame.
 
-## Money Forward - Lead Backend Engineer, Digital Bank
+## Equinix, Inc - Senior Associate Engineer (Java Backend)
 
 - Priority: P0
 - Score: 95/A
-- Subject: Lead Backend Engineer, Digital Bank application - Money Forward
+- Subject: Senior Associate Engineer (Java Backend) application - Equinix, Inc
 
-- Block G: Proceed with Caution
+- Block G: High Confidence
 - Rating: 4.8/5.0
 
 ### ATS Keyword Injection
 - Archetype: Backend Engineer
 - Coverage: 100%
-- JD Keywords: API, engineer, product, data
-- 在 Professional Summary 中自然帶入：API、engineer、product、data
+- JD Keywords: API, remote, engineer, product
+- 在 Professional Summary 中自然帶入：API、remote、engineer、product
 - 使用職位語言：「Backend Engineer」方向的動詞和術語
-- 【你已有但此 JD 未要求】可視情況選擇性提及：kotlin、aws、docker、rest、agents
-- Missing (do NOT fabricate): kotlin, aws, docker, rest, agents
+- 【你已有但此 JD 未要求】可視情況選擇性提及：java、sql、operations、excel
+- Missing (do NOT fabricate): java, sql, operations, excel
 
 ### Apply Checklist
 - Open the source URL and confirm the role is still active.
-- ⚠ Block G: Proceed with Caution — double-check recruiter identity.
 - Generate or refresh the tailored ATS PDF from this job.
-- Mirror these JD keywords honestly in your CV: API, engineer, product, data
-- Do not overclaim missing areas: kotlin, aws, docker, rest, agents
+- Mirror these JD keywords honestly in your CV: API, remote, engineer, product
+- Do not overclaim missing areas: java, sql, operations, excel
 - Log status, recruiter/contact, and next follow-up date in the tracker.
 
 ### Outreach Email
 ```text
-Hi Money Forward team,
+Hi Equinix, Inc team,
 
-I am Alex Chen, and I am interested in the Lead Backend Engineer, Digital Bank role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.
+I am Alex Chen, and I am interested in the Senior Associate Engineer (Java Backend) role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.
 
-The role stood out because it maps closely to my experience with API, engineer, product, data.
+The role stood out because it maps closely to my experience with API, remote, engineer, product.
 
 I would appreciate the chance to share how my experience can support the team. Thank you for your time.
 
@@ -769,9 +768,9 @@ Alex Chen
 ### Follow-up
 Timing: 3-5 business days after applying or the last recruiter interaction.
 ```text
-Hi Money Forward team,
+Hi Equinix, Inc team,
 
-I wanted to follow up on my application for the Lead Backend Engineer, Digital Bank role. I remain interested and would be glad to provide any additional context about my background.
+I wanted to follow up on my application for the Senior Associate Engineer (Java Backend) role. I remain interested and would be glad to provide any additional context about my background.
 
 Thank you again for your time.
 
@@ -780,8 +779,8 @@ Alex Chen
 ```
 
 ### Interview Prep
-- Prepare a 60-second story for why Money Forward and why Lead Backend Engineer, Digital Bank.
-- Prepare evidence for: API, engineer, product, data.
+- Prepare a 60-second story for why Equinix, Inc and why Senior Associate Engineer (Java Backend).
+- Prepare evidence for: API, remote, engineer, product.
 - Prepare one STAR story about execution under ambiguity.
 - Prepare one STAR story about collaboration and tradeoff decisions.
 - Prepare questions about team priorities, success metrics, and hiring timeline.

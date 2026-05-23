@@ -1,6 +1,6 @@
 window.CV_CAREER_OPS_APPLICATION_KIT = {
   "source": "career-ops-application-kit",
-  "generatedAt": "2026-05-22T01:56:00.219Z",
+  "generatedAt": "2026-05-23T01:52:05.769Z",
   "profileRole": "Frontend Engineer",
   "playbooks": [
     {
@@ -96,9 +96,9 @@ window.CV_CAREER_OPS_APPLICATION_KIT = {
       ]
     },
     {
-      "jobKey": "url:https://www.mycareersfuture.gov.sg/job/ddc648c00fcb0cb0d717f2878ba8bc29",
-      "title": "Frontend Engineer",
-      "company": "BIFROST PTE. LTD.",
+      "jobKey": "url:https://www.mycareersfuture.gov.sg/job/5b1506b45072ca274d8b7690ff8aee48",
+      "title": "AVP, Frontend Engineer, Technology Group(17140)",
+      "company": "GIC PRIVATE LIMITED",
       "score": "95/A",
       "rating": 4.8,
       "blockG": {
@@ -108,45 +108,46 @@ window.CV_CAREER_OPS_APPLICATION_KIT = {
       "priority": "P0",
       "atsInjection": {
         "jdKeywords": [
-          "JavaScript",
+          "TypeScript",
           "React",
+          "Accessibility",
           "engineer",
           "product",
           "data",
           "restful",
           "graphql",
           "node.js",
-          "CSS",
+          "dashboards",
           "API"
         ],
         "hardKeywords": [
-          "JavaScript",
+          "TypeScript",
           "React",
+          "Accessibility",
           "engineer",
           "product",
           "data",
           "restful",
           "graphql",
           "node.js",
-          "CSS",
-          "API"
+          "dashboards"
         ],
         "softKeywords": [],
         "missingKeywords": [
-          "vue",
-          "angular",
-          "python",
-          "java",
-          "go",
-          "mysql",
           "aws",
-          "gcp"
+          "docker",
+          "kubernetes",
+          "rest",
+          "llm",
+          "rag",
+          "agents",
+          "growth"
         ],
         "archetype": "Frontend Engineer",
         "summaryRewriteHints": [
-          "在 Professional Summary 中自然帶入：JavaScript、React、engineer、product、data",
+          "在 Professional Summary 中自然帶入：TypeScript、React、Accessibility、engineer、product",
           "使用職位語言：「Frontend Engineer」方向的動詞和術語",
-          "【你已有但此 JD 未要求】可視情況選擇性提及：vue、angular、python、java、go"
+          "【你已有但此 JD 未要求】可視情況選擇性提及：aws、docker、kubernetes、rest、llm"
         ],
         "atsRules": [
           "單欄排版，避免 sidebar 雙欄（ATS parser 容易亂序）",
@@ -159,28 +160,28 @@ window.CV_CAREER_OPS_APPLICATION_KIT = {
         "guardrails": [
           "NEVER add skills the candidate lacks",
           "Only reformulate real experience with exact JD vocabulary",
-          "Example: if candidate has 'API development', it can become 'JavaScript'"
+          "Example: if candidate has 'API development', it can become 'TypeScript'"
         ],
         "keywordCoveragePercent": 100
       },
       "applyChecklist": [
         "Open the source URL and confirm the role is still active.",
         "Generate or refresh the tailored ATS PDF from this job.",
-        "Mirror these JD keywords honestly in your CV: JavaScript, React, engineer, product, data, restful, graphql, node.js",
-        "Do not overclaim missing areas: vue, angular, python, java, go, mysql",
+        "Mirror these JD keywords honestly in your CV: TypeScript, React, Accessibility, engineer, product, data, restful, graphql",
+        "Do not overclaim missing areas: aws, docker, kubernetes, rest, llm, rag",
         "Log status, recruiter/contact, and next follow-up date in the tracker."
       ],
       "outreachEmail": {
-        "subject": "Frontend Engineer application - BIFROST PTE. LTD.",
-        "body": "Hi BIFROST PTE. LTD. team,\n\nI am Alex Chen, and I am interested in the Frontend Engineer role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.\n\nThe role stood out because it maps closely to my experience with JavaScript, React, engineer, product, data.\n\nI would appreciate the chance to share how my experience can support the team. Thank you for your time.\n\nBest,\nAlex Chen"
+        "subject": "AVP, Frontend Engineer, Technology Group(17140) application - GIC PRIVATE LIMITED",
+        "body": "Hi GIC PRIVATE LIMITED team,\n\nI am Alex Chen, and I am interested in the AVP, Frontend Engineer, Technology Group(17140) role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.\n\nThe role stood out because it maps closely to my experience with TypeScript, React, Accessibility, engineer, product.\n\nI would appreciate the chance to share how my experience can support the team. Thank you for your time.\n\nBest,\nAlex Chen"
       },
       "followUp": {
         "timing": "3-5 business days after applying or the last recruiter interaction.",
-        "body": "Hi BIFROST PTE. LTD. team,\n\nI wanted to follow up on my application for the Frontend Engineer role. I remain interested and would be glad to provide any additional context about my background.\n\nThank you again for your time.\n\nBest,\nAlex Chen"
+        "body": "Hi GIC PRIVATE LIMITED team,\n\nI wanted to follow up on my application for the AVP, Frontend Engineer, Technology Group(17140) role. I remain interested and would be glad to provide any additional context about my background.\n\nThank you again for your time.\n\nBest,\nAlex Chen"
       },
       "interviewPrep": [
-        "Prepare a 60-second story for why BIFROST PTE. LTD. and why Frontend Engineer.",
-        "Prepare evidence for: JavaScript, React, engineer, product, data, restful.",
+        "Prepare a 60-second story for why GIC PRIVATE LIMITED and why AVP, Frontend Engineer, Technology Group(17140).",
+        "Prepare evidence for: TypeScript, React, Accessibility, engineer, product, data.",
         "Prepare one STAR story about execution under ambiguity.",
         "Prepare one STAR story about collaboration and tradeoff decisions.",
         "Prepare questions about team priorities, success metrics, and hiring timeline."
@@ -193,7 +194,7 @@ window.CV_CAREER_OPS_APPLICATION_KIT = {
       ]
     },
     {
-      "jobKey": "url:https://www.mycareersfuture.gov.sg/job/820f670accd3b1a25b791a4f3507dcf4",
+      "jobKey": "url:https://www.mycareersfuture.gov.sg/job/ddc648c00fcb0cb0d717f2878ba8bc29",
       "title": "Frontend Engineer",
       "company": "BIFROST PTE. LTD.",
       "score": "95/A",
@@ -965,42 +966,41 @@ window.CV_CAREER_OPS_APPLICATION_KIT = {
       ]
     },
     {
-      "jobKey": "url:https://www.tokyodev.com/companies/moneyforward/jobs/lead-backend-engineer-digital-bank",
-      "title": "Lead Backend Engineer, Digital Bank",
-      "company": "Money Forward",
+      "jobKey": "url:https://www.themuse.com/jobs/equinixinc/senior-associate-engineer-java-backend",
+      "title": "Senior Associate Engineer (Java Backend)",
+      "company": "Equinix, Inc",
       "score": "95/A",
       "rating": 4.8,
       "blockG": {
-        "tier": "Proceed with Caution",
+        "tier": "High Confidence",
         "confidence": "medium"
       },
       "priority": "P0",
       "atsInjection": {
         "jdKeywords": [
           "API",
+          "remote",
           "engineer",
-          "product",
-          "data"
+          "product"
         ],
         "hardKeywords": [
           "API",
+          "remote",
           "engineer",
-          "product",
-          "data"
+          "product"
         ],
         "softKeywords": [],
         "missingKeywords": [
-          "kotlin",
-          "aws",
-          "docker",
-          "rest",
-          "agents"
+          "java",
+          "sql",
+          "operations",
+          "excel"
         ],
         "archetype": "Backend Engineer",
         "summaryRewriteHints": [
-          "在 Professional Summary 中自然帶入：API、engineer、product、data",
+          "在 Professional Summary 中自然帶入：API、remote、engineer、product",
           "使用職位語言：「Backend Engineer」方向的動詞和術語",
-          "【你已有但此 JD 未要求】可視情況選擇性提及：kotlin、aws、docker、rest、agents"
+          "【你已有但此 JD 未要求】可視情況選擇性提及：java、sql、operations、excel"
         ],
         "atsRules": [
           "單欄排版，避免 sidebar 雙欄（ATS parser 容易亂序）",
@@ -1019,23 +1019,22 @@ window.CV_CAREER_OPS_APPLICATION_KIT = {
       },
       "applyChecklist": [
         "Open the source URL and confirm the role is still active.",
-        "⚠ Block G: Proceed with Caution — double-check recruiter identity.",
         "Generate or refresh the tailored ATS PDF from this job.",
-        "Mirror these JD keywords honestly in your CV: API, engineer, product, data",
-        "Do not overclaim missing areas: kotlin, aws, docker, rest, agents",
+        "Mirror these JD keywords honestly in your CV: API, remote, engineer, product",
+        "Do not overclaim missing areas: java, sql, operations, excel",
         "Log status, recruiter/contact, and next follow-up date in the tracker."
       ],
       "outreachEmail": {
-        "subject": "Lead Backend Engineer, Digital Bank application - Money Forward",
-        "body": "Hi Money Forward team,\n\nI am Alex Chen, and I am interested in the Lead Backend Engineer, Digital Bank role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.\n\nThe role stood out because it maps closely to my experience with API, engineer, product, data.\n\nI would appreciate the chance to share how my experience can support the team. Thank you for your time.\n\nBest,\nAlex Chen"
+        "subject": "Senior Associate Engineer (Java Backend) application - Equinix, Inc",
+        "body": "Hi Equinix, Inc team,\n\nI am Alex Chen, and I am interested in the Senior Associate Engineer (Java Backend) role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.\n\nThe role stood out because it maps closely to my experience with API, remote, engineer, product.\n\nI would appreciate the chance to share how my experience can support the team. Thank you for your time.\n\nBest,\nAlex Chen"
       },
       "followUp": {
         "timing": "3-5 business days after applying or the last recruiter interaction.",
-        "body": "Hi Money Forward team,\n\nI wanted to follow up on my application for the Lead Backend Engineer, Digital Bank role. I remain interested and would be glad to provide any additional context about my background.\n\nThank you again for your time.\n\nBest,\nAlex Chen"
+        "body": "Hi Equinix, Inc team,\n\nI wanted to follow up on my application for the Senior Associate Engineer (Java Backend) role. I remain interested and would be glad to provide any additional context about my background.\n\nThank you again for your time.\n\nBest,\nAlex Chen"
       },
       "interviewPrep": [
-        "Prepare a 60-second story for why Money Forward and why Lead Backend Engineer, Digital Bank.",
-        "Prepare evidence for: API, engineer, product, data.",
+        "Prepare a 60-second story for why Equinix, Inc and why Senior Associate Engineer (Java Backend).",
+        "Prepare evidence for: API, remote, engineer, product.",
         "Prepare one STAR story about execution under ambiguity.",
         "Prepare one STAR story about collaboration and tradeoff decisions.",
         "Prepare questions about team priorities, success metrics, and hiring timeline."
