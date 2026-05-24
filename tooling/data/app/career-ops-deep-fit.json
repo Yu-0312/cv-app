@@ -1,6 +1,6 @@
 {
   "source": "career-ops-deep-fit",
-  "generatedAt": "2026-05-23T23:40:50.828Z",
+  "generatedAt": "2026-05-24T23:46:38.396Z",
   "llmProvider": "none",
   "summary": {
     "totalResults": 95,
@@ -1890,26 +1890,6 @@
       "layer": "B"
     },
     {
-      "jobKey": "url:https://justjoin.it/job-offer/n-ix-senior-scala-engineer-krakow-scala-15ebf7dd",
-      "company": "N-iX",
-      "title": "Senior Scala Engineer",
-      "score": 78,
-      "grade": "B",
-      "roleFit": 45,
-      "url": "https://justjoin.it/job-offer/n-ix-senior-scala-engineer-krakow-scala-15ebf7dd",
-      "location": "Kraków, PL",
-      "keywordHits": [
-        "Analytics",
-        "analytics"
-      ],
-      "keywordMisses": [
-        "docker",
-        "kubernetes"
-      ],
-      "decision": "pursue selectively",
-      "layer": "B"
-    },
-    {
       "jobKey": "url:https://nvidia.wd5.myworkdayjobs.com/nvidiaexternalcareersite/job/taiwan-hsinchu/senior-mixed-signal-circuit-design-engineer_jr2015519",
       "company": "NVIDIA Workday",
       "title": "Senior Mixed Signal Circuit Design Engineer",
@@ -2186,6 +2166,22 @@
       "layer": "B"
     },
     {
+      "jobKey": "url:https://remoteok.com/remote-jobs/remote-hr-assistant-aisle-and-abroad-1132138",
+      "company": "Aisle and Abroad",
+      "title": "HR Assistant",
+      "score": 73,
+      "grade": "B",
+      "roleFit": 45,
+      "url": "https://remoteok.com/remote-jobs/remote-hr-assistant-aisle-and-abroad-1132138",
+      "location": "Pennsylvania, Pennsylvania, United States",
+      "keywordHits": [
+        "remote"
+      ],
+      "keywordMisses": [],
+      "decision": "pursue selectively",
+      "layer": "B"
+    },
+    {
       "jobKey": "url:https://careers.roblox.com/jobs/7360413?gh_jid=7360413",
       "company": "Roblox Greenhouse",
       "title": "Senior Software Engineer, App Performance",
@@ -2217,14 +2213,30 @@
       "layer": "B"
     },
     {
-      "jobKey": "url:https://remoteok.com/remote-jobs/remote-loss-prevention-specialist-the-home-depot-canada-1131717",
-      "company": "The Home Depot Canada",
-      "title": "Loss Prevention Specialist",
+      "jobKey": "url:https://remoteok.com/remote-jobs/remote-hr-assistant-aisle-and-abroad-1132144",
+      "company": "Aisle and Abroad",
+      "title": "HR Assistant",
       "score": 72,
       "grade": "B",
       "roleFit": 45,
-      "url": "https://remoteok.com/remote-jobs/remote-loss-prevention-specialist-the-home-depot-canada-1131717",
-      "location": "Kitchener,",
+      "url": "https://remoteok.com/remote-jobs/remote-hr-assistant-aisle-and-abroad-1132144",
+      "location": "Texas, Texas, United States",
+      "keywordHits": [
+        "remote"
+      ],
+      "keywordMisses": [],
+      "decision": "pursue selectively",
+      "layer": "B"
+    },
+    {
+      "jobKey": "url:https://remoteok.com/remote-jobs/remote-virtual-assistant-aisle-and-abroad-1131984",
+      "company": "Aisle and Abroad",
+      "title": "Virtual Assistant",
+      "score": 72,
+      "grade": "B",
+      "roleFit": 45,
+      "url": "https://remoteok.com/remote-jobs/remote-virtual-assistant-aisle-and-abroad-1131984",
+      "location": "New York, New York, United States",
       "keywordHits": [
         "remote"
       ],
@@ -2345,6 +2357,38 @@
       "layer": "B"
     },
     {
+      "jobKey": "url:https://remoteok.com/remote-jobs/remote-word-document-specialist-fully-mercor-1132066",
+      "company": "Mercor",
+      "title": "Word Document Specialist Fully",
+      "score": 70,
+      "grade": "C",
+      "roleFit": 45,
+      "url": "https://remoteok.com/remote-jobs/remote-word-document-specialist-fully-mercor-1132066",
+      "location": "London, London, England, United Kingdom",
+      "keywordHits": [
+        "remote"
+      ],
+      "keywordMisses": [],
+      "decision": "pursue selectively",
+      "layer": "B"
+    },
+    {
+      "jobKey": "url:https://remoteok.com/remote-jobs/remote-customer-service-representative-rgampt-solutions-1132174",
+      "company": "RG&amp;T Solutions",
+      "title": "Customer Service Representative",
+      "score": 70,
+      "grade": "C",
+      "roleFit": 45,
+      "url": "https://remoteok.com/remote-jobs/remote-customer-service-representative-rgampt-solutions-1132174",
+      "location": "Quad Cities Metropolitan Area,",
+      "keywordHits": [
+        "remote"
+      ],
+      "keywordMisses": [],
+      "decision": "pursue selectively",
+      "layer": "B"
+    },
+    {
       "jobKey": "url:https://nvidia.wd5.myworkdayjobs.com/nvidiaexternalcareersite/job/taiwan-hsinchu/senior-package-engineer_jr2016717-1",
       "company": "NVIDIA Workday",
       "title": "Senior Package Engineer",
@@ -2384,54 +2428,6 @@
       "url": "https://www.mycareersfuture.gov.sg/job/2b52c3da2fca4b2ff0aa29c8691b483a",
       "location": "Islandwide, Singapore",
       "keywordHits": [],
-      "keywordMisses": [],
-      "decision": "hold / compare",
-      "layer": "B"
-    },
-    {
-      "jobKey": "url:https://remoteok.com/remote-jobs/remote-virtual-assistant-panelist-rgampt-solutions-1131861",
-      "company": "RG&amp;T Solutions",
-      "title": "Virtual Assistant Panelist",
-      "score": 68,
-      "grade": "C",
-      "roleFit": 45,
-      "url": "https://remoteok.com/remote-jobs/remote-virtual-assistant-panelist-rgampt-solutions-1131861",
-      "location": "Quad Cities Metropolitan Area,",
-      "keywordHits": [
-        "remote"
-      ],
-      "keywordMisses": [],
-      "decision": "hold / compare",
-      "layer": "B"
-    },
-    {
-      "jobKey": "url:https://remoteok.com/remote-jobs/remote-asset-protection-specialist-burnaby-the-home-depot-canada-1131715",
-      "company": "The Home Depot Canada",
-      "title": "Asset Protection Specialist BURNABY",
-      "score": 68,
-      "grade": "C",
-      "roleFit": 45,
-      "url": "https://remoteok.com/remote-jobs/remote-asset-protection-specialist-burnaby-the-home-depot-canada-1131715",
-      "location": "Burnaby,",
-      "keywordHits": [
-        "remote"
-      ],
-      "keywordMisses": [],
-      "decision": "hold / compare",
-      "layer": "B"
-    },
-    {
-      "jobKey": "url:https://remoteok.com/remote-jobs/remote-janitor-engineer-neutrality-1131716",
-      "company": "Neutrality",
-      "title": "Janitor Engineer",
-      "score": 68,
-      "grade": "C",
-      "roleFit": 45,
-      "url": "https://remoteok.com/remote-jobs/remote-janitor-engineer-neutrality-1131716",
-      "location": "Vaughan,",
-      "keywordHits": [
-        "remote"
-      ],
       "keywordMisses": [],
       "decision": "hold / compare",
       "layer": "B"
