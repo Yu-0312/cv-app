@@ -1,6 +1,6 @@
 # Career Ops Deep Fit Report
 
-Generated: 2026-05-24T23:46:38.396Z
+Generated: 2026-05-26T00:05:01.300Z
 LLM provider: none
 Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 exploratory)
 
@@ -521,6 +521,34 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Use story story-2: systems and API collaboration.
 - Use story story-3: accessibility and quality.
 
+### Cubastion Consulting K.K. - Bilingual Full Stack Engineer
+
+- Score: 94
+- Grade: A
+- Confidence: medium
+- Decision: pursue aggressively
+- Thesis: Bilingual Full Stack Engineer at Cubastion Consulting K.K. is pursue aggressively because the snapshot score is 94, with 2 profile/role keyword hits and 0 external evidence item(s).
+
+#### Evidence
+- Keyword hits: API, Full Stack Engineer
+- Keyword misses: mysql, aws, gcp, azure, docker, kubernetes, llm
+- Research signals: -
+- Compensation leverage: high
+
+#### Concerns
+- External company evidence is thin; run deep research with a search API.
+- Profile keyword coverage is weaker than the target role language.
+
+#### Interview Strategy
+- Ask why the role is open and what success means in the first 90 days.
+- Probe team ownership, roadmap pressure, and cross-functional interfaces.
+
+#### CV Strategy
+- Lead with proof around: API, Full Stack Engineer.
+- Use story story-1: frontend product execution.
+- Use story story-2: systems and API collaboration.
+- Use story story-3: accessibility and quality.
+
 ### Treasure Data - Senior Software Engineer - Ruby on Rails
 
 - Score: 94
@@ -560,7 +588,7 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Keyword hits: Analytics, Performance Optimization, analytics, Product Engineer
 - Keyword misses: spark, machine learning, sales, operations, excel
 - Research signals: -
-- Compensation leverage: high
+- Compensation leverage: -
 
 #### Concerns
 - External company evidence is thin; run deep research with a search API.
@@ -691,34 +719,6 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Use story story-2: systems and API collaboration.
 - Use story story-3: accessibility and quality.
 
-### Capital One - Distinguished Engineer (Remote - Eligible)
-
-- Score: 93
-- Grade: A
-- Confidence: medium
-- Decision: pursue aggressively
-- Thesis: Distinguished Engineer (Remote - Eligible) at Capital One is pursue aggressively because the snapshot score is 93, with 6 profile/role keyword hits and 0 external evidence item(s).
-
-#### Evidence
-- Keyword hits: JavaScript, TypeScript, API, remote, TypeScript, Product Engineer
-- Keyword misses: python, java, go, swift, aws, azure, machine learning
-- Research signals: -
-- Compensation leverage: -
-
-#### Concerns
-- External company evidence is thin; run deep research with a search API.
-- Profile keyword coverage is weaker than the target role language.
-
-#### Interview Strategy
-- Ask why the role is open and what success means in the first 90 days.
-- Probe team ownership, roadmap pressure, and cross-functional interfaces.
-
-#### CV Strategy
-- Lead with proof around: JavaScript, TypeScript, API, remote, TypeScript, Product Engineer.
-- Use story story-1: frontend product execution.
-- Use story story-2: systems and API collaboration.
-- Use story story-3: accessibility and quality.
-
 ## Layer B — Standard Matches (roleFit 40-67)
 
 ### NVIDIA Workday - Senior Solution Architect - Telco Network Automation
@@ -785,6 +785,12 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Score: 76 | Grade: B | RoleFit: 45
 - Decision: pursue selectively
 - Keyword hits: TypeScript, TypeScript
+- Gaps: python
+
+### NVIDIA Workday - Senior VLSI CDC Engineer
+- Score: 76 | Grade: B | RoleFit: 45
+- Decision: pursue selectively
+- Keyword hits: dashboard
 - Gaps: python
 
 ### Roblox Greenhouse - Senior QA Engineer, Game Engine
@@ -859,12 +865,6 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Keyword hits: -
 - Gaps: computer vision
 
-### Aisle and Abroad - HR Assistant
-- Score: 73 | Grade: B | RoleFit: 45
-- Decision: pursue selectively
-- Keyword hits: remote
-- Gaps: -
-
 ### Roblox Greenhouse - Senior Software Engineer, App Performance
 - Score: 73 | Grade: B | RoleFit: 45
 - Decision: pursue selectively
@@ -877,17 +877,17 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Keyword hits: -
 - Gaps: python, deep learning
 
-### Aisle and Abroad - HR Assistant
-- Score: 72 | Grade: B | RoleFit: 45
+### NVIDIA Workday - Senior VLSI Integration Engineer
+- Score: 73 | Grade: B | RoleFit: 45
 - Decision: pursue selectively
-- Keyword hits: remote
-- Gaps: -
+- Keyword hits: -
+- Gaps: python
 
-### Aisle and Abroad - Virtual Assistant
-- Score: 72 | Grade: B | RoleFit: 45
+### NVIDIA Workday - VLSI Integration Engineer
+- Score: 73 | Grade: B | RoleFit: 45
 - Decision: pursue selectively
-- Keyword hits: remote
-- Gaps: -
+- Keyword hits: -
+- Gaps: python
 
 ### ROKKO SYSTEMS PTE. LTD. - Software Engineer II
 - Score: 71 | Grade: C | RoleFit: 45
@@ -937,10 +937,10 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Keyword hits: remote
 - Gaps: -
 
-### RG&amp;T Solutions - Customer Service Representative
+### RECRUIT EXPERT PTE. LTD. - Bench Test Engineer (IP/RF, Embedded C/C++/LabVIEW/FPGA)
 - Score: 70 | Grade: C | RoleFit: 45
 - Decision: pursue selectively
-- Keyword hits: remote
+- Keyword hits: -
 - Gaps: -
 
 ### NVIDIA Workday - Senior Package Engineer
@@ -963,6 +963,7 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 
 ## Layer C — Exploratory Signals (roleFit < 40)
 
+- **Capital One — Distinguished Engineer (Remote - Eligible)** (score: 93) | Top gap: python
 - **Stripe Greenhouse — Android Engineer, Terminal Developer Productivity** (score: 93) | Top gap: java
 - **Stripe Greenhouse — Frontend Platform Engineer, JavaScript Infrastructure** (score: 93) | Top gap: none
 - **Figma Greenhouse — Software Engineer, AI Product (London, United Kingdom)** (score: 93) | Top gap: llm
@@ -992,5 +993,4 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - **EPAM Systems — Senior Data Engineer (Palantir)** (score: 91) | Top gap: python
 - **Allstate — Product Engineer - Java Spring Boot w/ Full Stack Option** (score: 91) | Top gap: python
 - **Stripe Greenhouse — Full Stack Engineer, Support Experience** (score: 91) | Top gap: none
-- **Canonical Greenhouse — Web Frontend Engineer - JS, CSS, React, Flutter** (score: 91) | Top gap: docker
 

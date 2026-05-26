@@ -1,6 +1,6 @@
 window.CV_CAREER_OPS_DEEP_FIT = {
   "source": "career-ops-deep-fit",
-  "generatedAt": "2026-05-24T23:46:38.396Z",
+  "generatedAt": "2026-05-26T00:05:01.300Z",
   "llmProvider": "none",
   "summary": {
     "totalResults": 95,
@@ -1292,6 +1292,74 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "llm": null
     },
     {
+      "jobKey": "url:https://www.daijob.com/en/jobs/detail/1523157",
+      "company": "Cubastion Consulting K.K.",
+      "title": "Bilingual Full Stack Engineer",
+      "score": 94,
+      "grade": "A",
+      "confidence": "medium",
+      "decision": "pursue aggressively",
+      "thesis": "Bilingual Full Stack Engineer at Cubastion Consulting K.K. is pursue aggressively because the snapshot score is 94, with 2 profile/role keyword hits and 0 external evidence item(s).",
+      "evidence": {
+        "keywordHits": [
+          "API",
+          "Full Stack Engineer"
+        ],
+        "keywordMisses": [
+          "mysql",
+          "aws",
+          "gcp",
+          "azure",
+          "docker",
+          "kubernetes",
+          "llm"
+        ],
+        "researchSignals": [],
+        "evidenceCount": 0,
+        "compensationLeverage": "high"
+      },
+      "concerns": [
+        "External company evidence is thin; run deep research with a search API.",
+        "Profile keyword coverage is weaker than the target role language."
+      ],
+      "interviewStrategy": [
+        "Ask why the role is open and what success means in the first 90 days.",
+        "Probe team ownership, roadmap pressure, and cross-functional interfaces."
+      ],
+      "cvStrategy": [
+        "Lead with proof around: API, Full Stack Engineer.",
+        "Use story story-1: frontend product execution.",
+        "Use story story-2: systems and API collaboration.",
+        "Use story story-3: accessibility and quality."
+      ],
+      "compensationStrategy": {
+        "leverage": "high",
+        "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Bilingual Full Stack Engineer package, including base, bonus, equity, and review cycle?",
+        "valueAnchor": "Based on the scope of Bilingual Full Stack Engineer and my fit around API, engineer, product, data, I would like to calibrate toward the stronger end of the range if the team sees the level match. My research indicates the JP midpoint for this level is around JPY 8,000,000 (annual)."
+      },
+      "storyHooks": [
+        {
+          "id": "story-1",
+          "theme": "frontend product execution",
+          "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
+          "relevance": 0
+        },
+        {
+          "id": "story-2",
+          "theme": "systems and API collaboration",
+          "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
+          "relevance": 0
+        },
+        {
+          "id": "story-3",
+          "theme": "accessibility and quality",
+          "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
+          "relevance": 0
+        }
+      ],
+      "llm": null
+    },
+    {
       "jobKey": "url:https://japan-dev.com/jobs/treasure-data/treasure-data-senior-software-engineer---ruby-on-rails-a4dp9q",
       "company": "Treasure Data",
       "title": "Senior Software Engineer - Ruby on Rails",
@@ -1385,7 +1453,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
         ],
         "researchSignals": [],
         "evidenceCount": 0,
-        "compensationLeverage": "high"
+        "compensationLeverage": ""
       },
       "concerns": [
         "External company evidence is thin; run deep research with a search API.",
@@ -1401,11 +1469,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
         "Use story story-2: systems and API collaboration.",
         "Use story story-3: accessibility and quality."
       ],
-      "compensationStrategy": {
-        "leverage": "high",
-        "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Director,Technical Solutions (Big Data/ AI) package, including base, bonus, equity, and review cycle?",
-        "valueAnchor": "Based on the scope of Director,Technical Solutions (Big Data/ AI) and my fit around Analytics, Performance Optimization, product, data, I would like to calibrate toward the stronger end of the range if the team sees the level match."
-      },
+      "compensationStrategy": null,
       "storyHooks": [
         {
           "id": "story-1",
@@ -1710,74 +1774,6 @@ window.CV_CAREER_OPS_DEEP_FIT = {
         }
       ],
       "llm": null
-    },
-    {
-      "jobKey": "url:https://www.themuse.com/jobs/capitalone/distinguished-engineer-remote-eligible-9d0012",
-      "company": "Capital One",
-      "title": "Distinguished Engineer (Remote - Eligible)",
-      "score": 93,
-      "grade": "A",
-      "confidence": "medium",
-      "decision": "pursue aggressively",
-      "thesis": "Distinguished Engineer (Remote - Eligible) at Capital One is pursue aggressively because the snapshot score is 93, with 6 profile/role keyword hits and 0 external evidence item(s).",
-      "evidence": {
-        "keywordHits": [
-          "JavaScript",
-          "TypeScript",
-          "API",
-          "remote",
-          "TypeScript",
-          "Product Engineer"
-        ],
-        "keywordMisses": [
-          "python",
-          "java",
-          "go",
-          "swift",
-          "aws",
-          "azure",
-          "machine learning"
-        ],
-        "researchSignals": [],
-        "evidenceCount": 0,
-        "compensationLeverage": ""
-      },
-      "concerns": [
-        "External company evidence is thin; run deep research with a search API.",
-        "Profile keyword coverage is weaker than the target role language."
-      ],
-      "interviewStrategy": [
-        "Ask why the role is open and what success means in the first 90 days.",
-        "Probe team ownership, roadmap pressure, and cross-functional interfaces."
-      ],
-      "cvStrategy": [
-        "Lead with proof around: JavaScript, TypeScript, API, remote, TypeScript, Product Engineer.",
-        "Use story story-1: frontend product execution.",
-        "Use story story-2: systems and API collaboration.",
-        "Use story story-3: accessibility and quality."
-      ],
-      "compensationStrategy": null,
-      "storyHooks": [
-        {
-          "id": "story-1",
-          "theme": "frontend product execution",
-          "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
-          "relevance": 2
-        },
-        {
-          "id": "story-2",
-          "theme": "systems and API collaboration",
-          "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
-          "relevance": 2
-        },
-        {
-          "id": "story-3",
-          "theme": "accessibility and quality",
-          "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
-          "relevance": 2
-        }
-      ],
-      "llm": null
     }
   ],
   "layerB": [
@@ -1976,6 +1972,24 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "layer": "B"
     },
     {
+      "jobKey": "url:https://nvidia.wd5.myworkdayjobs.com/nvidiaexternalcareersite/job/israel-tel-aviv/senior-vlsi-cdc-engineer_jr2002639",
+      "company": "NVIDIA Workday",
+      "title": "Senior VLSI CDC Engineer",
+      "score": 76,
+      "grade": "B",
+      "roleFit": 45,
+      "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Israel-Tel-Aviv/Senior-VLSI-CDC-Engineer_JR2002639",
+      "location": "Israel, Tel Aviv",
+      "keywordHits": [
+        "dashboard"
+      ],
+      "keywordMisses": [
+        "python"
+      ],
+      "decision": "pursue selectively",
+      "layer": "B"
+    },
+    {
       "jobKey": "url:https://careers.roblox.com/jobs/7412400?gh_jid=7412400",
       "company": "Roblox Greenhouse",
       "title": "Senior QA Engineer, Game Engine",
@@ -2166,22 +2180,6 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "layer": "B"
     },
     {
-      "jobKey": "url:https://remoteok.com/remote-jobs/remote-hr-assistant-aisle-and-abroad-1132138",
-      "company": "Aisle and Abroad",
-      "title": "HR Assistant",
-      "score": 73,
-      "grade": "B",
-      "roleFit": 45,
-      "url": "https://remoteok.com/remote-jobs/remote-hr-assistant-aisle-and-abroad-1132138",
-      "location": "Pennsylvania, Pennsylvania, United States",
-      "keywordHits": [
-        "remote"
-      ],
-      "keywordMisses": [],
-      "decision": "pursue selectively",
-      "layer": "B"
-    },
-    {
       "jobKey": "url:https://careers.roblox.com/jobs/7360413?gh_jid=7360413",
       "company": "Roblox Greenhouse",
       "title": "Senior Software Engineer, App Performance",
@@ -2213,34 +2211,34 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "layer": "B"
     },
     {
-      "jobKey": "url:https://remoteok.com/remote-jobs/remote-hr-assistant-aisle-and-abroad-1132144",
-      "company": "Aisle and Abroad",
-      "title": "HR Assistant",
-      "score": 72,
+      "jobKey": "url:https://nvidia.wd5.myworkdayjobs.com/nvidiaexternalcareersite/job/israel-tel-aviv/senior-vlsi-integration-engineer_jr1989467",
+      "company": "NVIDIA Workday",
+      "title": "Senior VLSI Integration Engineer",
+      "score": 73,
       "grade": "B",
       "roleFit": 45,
-      "url": "https://remoteok.com/remote-jobs/remote-hr-assistant-aisle-and-abroad-1132144",
-      "location": "Texas, Texas, United States",
-      "keywordHits": [
-        "remote"
+      "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Israel-Tel-Aviv/Senior-VLSI-Integration-Engineer_JR1989467",
+      "location": "Israel, Tel Aviv",
+      "keywordHits": [],
+      "keywordMisses": [
+        "python"
       ],
-      "keywordMisses": [],
       "decision": "pursue selectively",
       "layer": "B"
     },
     {
-      "jobKey": "url:https://remoteok.com/remote-jobs/remote-virtual-assistant-aisle-and-abroad-1131984",
-      "company": "Aisle and Abroad",
-      "title": "Virtual Assistant",
-      "score": 72,
+      "jobKey": "url:https://nvidia.wd5.myworkdayjobs.com/nvidiaexternalcareersite/job/israel-tel-aviv/vlsi-integration-engineer_jr2011207",
+      "company": "NVIDIA Workday",
+      "title": "VLSI Integration Engineer",
+      "score": 73,
       "grade": "B",
       "roleFit": 45,
-      "url": "https://remoteok.com/remote-jobs/remote-virtual-assistant-aisle-and-abroad-1131984",
-      "location": "New York, New York, United States",
-      "keywordHits": [
-        "remote"
+      "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Israel-Tel-Aviv/VLSI-Integration-Engineer_JR2011207",
+      "location": "Israel, Tel Aviv",
+      "keywordHits": [],
+      "keywordMisses": [
+        "python"
       ],
-      "keywordMisses": [],
       "decision": "pursue selectively",
       "layer": "B"
     },
@@ -2373,17 +2371,15 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "layer": "B"
     },
     {
-      "jobKey": "url:https://remoteok.com/remote-jobs/remote-customer-service-representative-rgampt-solutions-1132174",
-      "company": "RG&amp;T Solutions",
-      "title": "Customer Service Representative",
+      "jobKey": "url:https://www.mycareersfuture.gov.sg/job/b319565f32dbfc71962d9276803a4b20",
+      "company": "RECRUIT EXPERT PTE. LTD.",
+      "title": "Bench Test Engineer (IP/RF, Embedded C/C++/LabVIEW/FPGA)",
       "score": 70,
       "grade": "C",
       "roleFit": 45,
-      "url": "https://remoteok.com/remote-jobs/remote-customer-service-representative-rgampt-solutions-1132174",
-      "location": "Quad Cities Metropolitan Area,",
-      "keywordHits": [
-        "remote"
-      ],
+      "url": "https://www.mycareersfuture.gov.sg/job/b319565f32dbfc71962d9276803a4b20",
+      "location": "PLUS, CECIL STREET, D01 Marina, Raffles Place, People's Park, Cecil, Singapore",
+      "keywordHits": [],
       "keywordMisses": [],
       "decision": "pursue selectively",
       "layer": "B"
@@ -2434,6 +2430,30 @@ window.CV_CAREER_OPS_DEEP_FIT = {
     }
   ],
   "layerC": [
+    {
+      "jobKey": "url:https://www.themuse.com/jobs/capitalone/distinguished-engineer-remote-eligible-9d0012",
+      "company": "Capital One",
+      "title": "Distinguished Engineer (Remote - Eligible)",
+      "score": 93,
+      "grade": "A",
+      "roleFit": 92,
+      "url": "https://www.themuse.com/jobs/capitalone/distinguished-engineer-remote-eligible-9d0012",
+      "location": "Cambridge, MA / Flexible / Remote / McLean, VA / New York, NY / Richmond, VA",
+      "keywordHits": [
+        "JavaScript",
+        "TypeScript",
+        "API",
+        "remote"
+      ],
+      "topGap": "python",
+      "mainGaps": [
+        "python",
+        "java",
+        "go",
+        "swift"
+      ],
+      "layer": "C"
+    },
     {
       "jobKey": "url:https://stripe.com/jobs/search?gh_jid=7550154",
       "company": "Stripe Greenhouse",
@@ -3090,30 +3110,6 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       ],
       "topGap": "",
       "mainGaps": [],
-      "layer": "C"
-    },
-    {
-      "jobKey": "url:https://job-boards.greenhouse.io/canonical/jobs/5150422",
-      "company": "Canonical Greenhouse",
-      "title": "Web Frontend Engineer - JS, CSS, React, Flutter",
-      "score": 91,
-      "grade": "A",
-      "roleFit": 92,
-      "url": "https://job-boards.greenhouse.io/canonical/jobs/5150422",
-      "location": "Home based - Worldwide",
-      "keywordHits": [
-        "Frontend Engineer",
-        "TypeScript",
-        "React",
-        "CSS"
-      ],
-      "topGap": "docker",
-      "mainGaps": [
-        "docker",
-        "kubernetes",
-        "rest",
-        "operations"
-      ],
       "layer": "C"
     }
   ],
@@ -4401,6 +4397,74 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "llm": null
     },
     {
+      "jobKey": "url:https://www.daijob.com/en/jobs/detail/1523157",
+      "company": "Cubastion Consulting K.K.",
+      "title": "Bilingual Full Stack Engineer",
+      "score": 94,
+      "grade": "A",
+      "confidence": "medium",
+      "decision": "pursue aggressively",
+      "thesis": "Bilingual Full Stack Engineer at Cubastion Consulting K.K. is pursue aggressively because the snapshot score is 94, with 2 profile/role keyword hits and 0 external evidence item(s).",
+      "evidence": {
+        "keywordHits": [
+          "API",
+          "Full Stack Engineer"
+        ],
+        "keywordMisses": [
+          "mysql",
+          "aws",
+          "gcp",
+          "azure",
+          "docker",
+          "kubernetes",
+          "llm"
+        ],
+        "researchSignals": [],
+        "evidenceCount": 0,
+        "compensationLeverage": "high"
+      },
+      "concerns": [
+        "External company evidence is thin; run deep research with a search API.",
+        "Profile keyword coverage is weaker than the target role language."
+      ],
+      "interviewStrategy": [
+        "Ask why the role is open and what success means in the first 90 days.",
+        "Probe team ownership, roadmap pressure, and cross-functional interfaces."
+      ],
+      "cvStrategy": [
+        "Lead with proof around: API, Full Stack Engineer.",
+        "Use story story-1: frontend product execution.",
+        "Use story story-2: systems and API collaboration.",
+        "Use story story-3: accessibility and quality."
+      ],
+      "compensationStrategy": {
+        "leverage": "high",
+        "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Bilingual Full Stack Engineer package, including base, bonus, equity, and review cycle?",
+        "valueAnchor": "Based on the scope of Bilingual Full Stack Engineer and my fit around API, engineer, product, data, I would like to calibrate toward the stronger end of the range if the team sees the level match. My research indicates the JP midpoint for this level is around JPY 8,000,000 (annual)."
+      },
+      "storyHooks": [
+        {
+          "id": "story-1",
+          "theme": "frontend product execution",
+          "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
+          "relevance": 0
+        },
+        {
+          "id": "story-2",
+          "theme": "systems and API collaboration",
+          "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
+          "relevance": 0
+        },
+        {
+          "id": "story-3",
+          "theme": "accessibility and quality",
+          "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
+          "relevance": 0
+        }
+      ],
+      "llm": null
+    },
+    {
       "jobKey": "url:https://japan-dev.com/jobs/treasure-data/treasure-data-senior-software-engineer---ruby-on-rails-a4dp9q",
       "company": "Treasure Data",
       "title": "Senior Software Engineer - Ruby on Rails",
@@ -4494,7 +4558,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
         ],
         "researchSignals": [],
         "evidenceCount": 0,
-        "compensationLeverage": "high"
+        "compensationLeverage": ""
       },
       "concerns": [
         "External company evidence is thin; run deep research with a search API.",
@@ -4510,11 +4574,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
         "Use story story-2: systems and API collaboration.",
         "Use story story-3: accessibility and quality."
       ],
-      "compensationStrategy": {
-        "leverage": "high",
-        "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Director,Technical Solutions (Big Data/ AI) package, including base, bonus, equity, and review cycle?",
-        "valueAnchor": "Based on the scope of Director,Technical Solutions (Big Data/ AI) and my fit around Analytics, Performance Optimization, product, data, I would like to calibrate toward the stronger end of the range if the team sees the level match."
-      },
+      "compensationStrategy": null,
       "storyHooks": [
         {
           "id": "story-1",
@@ -4816,74 +4876,6 @@ window.CV_CAREER_OPS_DEEP_FIT = {
           "theme": "accessibility and quality",
           "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
           "relevance": 3
-        }
-      ],
-      "llm": null
-    },
-    {
-      "jobKey": "url:https://www.themuse.com/jobs/capitalone/distinguished-engineer-remote-eligible-9d0012",
-      "company": "Capital One",
-      "title": "Distinguished Engineer (Remote - Eligible)",
-      "score": 93,
-      "grade": "A",
-      "confidence": "medium",
-      "decision": "pursue aggressively",
-      "thesis": "Distinguished Engineer (Remote - Eligible) at Capital One is pursue aggressively because the snapshot score is 93, with 6 profile/role keyword hits and 0 external evidence item(s).",
-      "evidence": {
-        "keywordHits": [
-          "JavaScript",
-          "TypeScript",
-          "API",
-          "remote",
-          "TypeScript",
-          "Product Engineer"
-        ],
-        "keywordMisses": [
-          "python",
-          "java",
-          "go",
-          "swift",
-          "aws",
-          "azure",
-          "machine learning"
-        ],
-        "researchSignals": [],
-        "evidenceCount": 0,
-        "compensationLeverage": ""
-      },
-      "concerns": [
-        "External company evidence is thin; run deep research with a search API.",
-        "Profile keyword coverage is weaker than the target role language."
-      ],
-      "interviewStrategy": [
-        "Ask why the role is open and what success means in the first 90 days.",
-        "Probe team ownership, roadmap pressure, and cross-functional interfaces."
-      ],
-      "cvStrategy": [
-        "Lead with proof around: JavaScript, TypeScript, API, remote, TypeScript, Product Engineer.",
-        "Use story story-1: frontend product execution.",
-        "Use story story-2: systems and API collaboration.",
-        "Use story story-3: accessibility and quality."
-      ],
-      "compensationStrategy": null,
-      "storyHooks": [
-        {
-          "id": "story-1",
-          "theme": "frontend product execution",
-          "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
-          "relevance": 2
-        },
-        {
-          "id": "story-2",
-          "theme": "systems and API collaboration",
-          "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
-          "relevance": 2
-        },
-        {
-          "id": "story-3",
-          "theme": "accessibility and quality",
-          "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
-          "relevance": 2
         }
       ],
       "llm": null
