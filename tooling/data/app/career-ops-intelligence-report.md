@@ -1,11 +1,11 @@
 # Career Ops Intelligence Report
 
-Generated: 2026-05-26T00:04:25.849Z
+Generated: 2026-05-27T00:04:49.636Z
 
-- Active jobs: 83238
+- Active jobs: 83261
 - Expired jobs: 0
-- Duplicate groups: 3428
-- Jobs without enough description: 396
+- Duplicate groups: 3435
+- Jobs without enough description: 414
 - Rubric: Career Ops 10-Dimension Rubric
 
 ## Rubric Weights
@@ -21,56 +21,56 @@ Generated: 2026-05-26T00:04:25.849Z
 - applicationEffort: 0.08
 
 ## Top Skills
-- api: 7580
-- growth: 4573
-- operations: 4243
-- analytics: 3373
-- sales: 3095
-- python: 2281
-- go: 1984
-- sql: 1564
-- excel: 1513
-- aws: 1181
+- api: 7582
+- growth: 4574
+- operations: 4201
+- analytics: 3378
+- sales: 3106
+- python: 2291
+- go: 1992
+- sql: 1596
+- excel: 1517
+- aws: 1193
 - machine learning: 1021
-- azure: 926
+- azure: 942
 
 ## Missing High-Demand Skills
-- growth: 4573
-- operations: 4243
-- sales: 3095
-- python: 2281
-- go: 1984
-- sql: 1564
-- excel: 1513
-- aws: 1181
+- growth: 4574
+- operations: 4201
+- sales: 3106
+- python: 2291
+- go: 1992
+- sql: 1596
+- excel: 1517
+- aws: 1193
 - machine learning: 1021
-- azure: 926
+- azure: 942
 
 ## Global Skill Gap Priority (weighted by job score)
-- growth: 7276.4
-- operations: 6723.2
-- sales: 4850
-- python: 3702.7
-- go: 3161.8
-- sql: 2541
-- excel: 2369.5
-- aws: 1929.3
-- machine learning: 1657.1
-- azure: 1509.9
-- java: 1450.6
-- spark: 1262.1
+- growth: 7272.4
+- operations: 6656.1
+- sales: 4862.5
+- python: 3720.7
+- go: 3175.9
+- sql: 2592.8
+- excel: 2373.7
+- aws: 1948.8
+- machine learning: 1654.3
+- azure: 1536.9
+- java: 1424.1
+- spark: 1272.9
 
 ## Role Families
-- Backend: 79107
-- Other: 1707
-- Frontend: 826
-- AI / Data: 677
-- Sales: 369
-- Product: 159
-- Marketing: 140
-- Design: 139
-- Operations: 74
-- Internship: 30
+- Backend: 79109
+- Other: 1712
+- Frontend: 828
+- AI / Data: 678
+- Sales: 373
+- Marketing: 165
+- Product: 147
+- Design: 146
+- Operations: 70
+- Internship: 24
 
 ## Recommended Search Queries
 - Frontend Engineer

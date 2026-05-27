@@ -1,14 +1,14 @@
 # Career Ops Job Health Report
 
-Generated: 2026-05-26T00:05:08.919Z
+Generated: 2026-05-27T00:05:30.687Z
 Status: ✅ **HEALTHY**
 
 ## Summary
 
 | Metric | Value |
 |--------|-------|
-| Total jobs | 83238 |
-| Active | 83238 |
+| Total jobs | 83261 |
+| Active | 83261 |
 | Expired | 0 (0%) |
 | Stale (>14d) | 0 |
 | Avg active score | 65 |
@@ -24,19 +24,19 @@ Status: ✅ **HEALTHY**
 | Mynavi Tenshoku Japan Sitemap | 15000 | 0 | 0% |
 | JAC Recruitment Japan Detail Sitemap | 5000 | 0 | 0% |
 | The Muse Global Public Jobs | 1883 | 0 | 0% |
-| The Muse Global Data Analytics | 1831 | 0 | 0% |
-| The Muse Global Remote Jobs | 1811 | 0 | 0% |
-| The Muse Global Software Engineering | 1737 | 0 | 0% |
-| Tencent Careers China | 1479 | 0 | 0% |
+| The Muse Global Data Analytics | 1830 | 0 | 0% |
+| The Muse Global Remote Jobs | 1812 | 0 | 0% |
+| The Muse Global Software Engineering | 1734 | 0 | 0% |
+| Tencent Careers China | 1472 | 0 | 0% |
 | Databricks Greenhouse | 447 | 0 | 0% |
-| Stripe Greenhouse | 383 | 0 | 0% |
+| Stripe Greenhouse | 381 | 0 | 0% |
 | JREC-IN Japan Researcher and Postdoc | 340 | 0 | 0% |
-| NVIDIA Workday | 284 | 0 | 0% |
-| MongoDB Greenhouse | 263 | 0 | 0% |
+| NVIDIA Workday | 291 | 0 | 0% |
+| MongoDB Greenhouse | 267 | 0 | 0% |
 | Canonical Greenhouse | 252 | 0 | 0% |
 | Roblox Greenhouse | 174 | 0 | 0% |
 | MyCareersFuture Singapore Software | 150 | 0 | 0% |
 | Airbnb Greenhouse | 139 | 0 | 0% |
-| Source flex job board | 114 | 0 | 0% |
+| Source flex job board | 111 | 0 | 0% |
 | Figma Greenhouse | 110 | 0 | 0% |
 

@@ -1,18 +1,16 @@
 # Career Ops Source Quality
 
-- Generated: 2026-05-26T00:02:07.500Z
+- Generated: 2026-05-27T00:02:31.231Z
 - Mode: filter
 - Minimum score: 45
-- Input active jobs: 83379
-- Kept active jobs: 83238
-- Filtered active jobs: 141
-- Quality tiers: high 77894 / medium 5249 / low 95
+- Input active jobs: 83405
+- Kept active jobs: 83261
+- Filtered active jobs: 144
+- Quality tiers: high 77909 / medium 5257 / low 95
 
 ## Filtered Samples
 
 - 0 Unknown - Group Human Resources | DBS Bank (missing-company, landing-or-search-title, thin-description, job-board-landing-url)
-- 37 Grab - Lead Product Manager, Food - Search and Personalization (landing-or-search-title, thin-description)
-- 37 Grab - Lead Product Manager, Food - Search and Personalization (landing-or-search-title, thin-description)
 - 37 Apple - Careers at Apple: Join our community and culture. (landing-or-search-title, thin-description)
 - 19 Unknown - TW-Operations Expert - Jobs - Careers at Apple (missing-company, landing-or-search-title, thin-description)
 - 19 Unknown - Select Location - Jobs - Careers at Apple (missing-company, landing-or-search-title, thin-description)
@@ -22,6 +20,8 @@
 - 19 Unknown - SoC - ATE Test Engineer - Jobs - Careers at Apple (missing-company, landing-or-search-title, thin-description)
 - 19 Unknown - Camera Electrical System Integration Engineer - Camera Hardware - Jobs - Careers at Apple (missing-company, landing-or-search-title, thin-description)
 - 19 Unknown - Display Reliability Engineer - Jobs - Careers at Apple (missing-company, landing-or-search-title, thin-description)
+- 19 Unknown - SoC Packaging Engineer - Jobs - Careers at Apple (missing-company, landing-or-search-title, thin-description)
+- 19 Unknown - Operation Test Engineer - Machine Learning - Jobs - Careers at Apple (missing-company, landing-or-search-title, thin-description)
 
 ## Kept Samples
 
