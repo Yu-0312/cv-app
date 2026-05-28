@@ -1,6 +1,6 @@
 window.CV_CAREER_OPS_APPLICATION_KIT = {
   "source": "career-ops-application-kit",
-  "generatedAt": "2026-05-27T00:05:02.991Z",
+  "generatedAt": "2026-05-28T00:10:21.583Z",
   "profileRole": "Frontend Engineer",
   "playbooks": [
     {
@@ -806,13 +806,13 @@ window.CV_CAREER_OPS_APPLICATION_KIT = {
       ]
     },
     {
-      "jobKey": "url:https://www.themuse.com/jobs/modernanimalinc/senior-product-engineer",
-      "title": "Senior Product Engineer",
-      "company": "Modern Animal, Inc.",
+      "jobKey": "url:https://www.tokyodev.com/companies/moneyforward/jobs/lead-backend-engineer-digital-bank",
+      "title": "Lead Backend Engineer, Digital Bank",
+      "company": "Money Forward",
       "score": "95/A",
       "rating": 4.8,
       "blockG": {
-        "tier": "High Confidence",
+        "tier": "Proceed with Caution",
         "confidence": "medium"
       },
       "priority": "P0",
@@ -831,13 +831,17 @@ window.CV_CAREER_OPS_APPLICATION_KIT = {
         ],
         "softKeywords": [],
         "missingKeywords": [
-          "operations"
+          "kotlin",
+          "aws",
+          "docker",
+          "rest",
+          "agents"
         ],
         "archetype": "Backend Engineer",
         "summaryRewriteHints": [
           "在 Professional Summary 中自然帶入：API、engineer、product、data",
           "使用職位語言：「Backend Engineer」方向的動詞和術語",
-          "【你已有但此 JD 未要求】可視情況選擇性提及：operations"
+          "【你已有但此 JD 未要求】可視情況選擇性提及：kotlin、aws、docker、rest、agents"
         ],
         "atsRules": [
           "單欄排版，避免 sidebar 雙欄（ATS parser 容易亂序）",
@@ -856,21 +860,22 @@ window.CV_CAREER_OPS_APPLICATION_KIT = {
       },
       "applyChecklist": [
         "Open the source URL and confirm the role is still active.",
+        "⚠ Block G: Proceed with Caution — double-check recruiter identity.",
         "Generate or refresh the tailored ATS PDF from this job.",
         "Mirror these JD keywords honestly in your CV: API, engineer, product, data",
-        "Do not overclaim missing areas: operations",
+        "Do not overclaim missing areas: kotlin, aws, docker, rest, agents",
         "Log status, recruiter/contact, and next follow-up date in the tracker."
       ],
       "outreachEmail": {
-        "subject": "Senior Product Engineer application - Modern Animal, Inc.",
-        "body": "Hi Modern Animal, Inc. team,\n\nI am Alex Chen, and I am interested in the Senior Product Engineer role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.\n\nThe role stood out because it maps closely to my experience with API, engineer, product, data.\n\nI would appreciate the chance to share how my experience can support the team. Thank you for your time.\n\nBest,\nAlex Chen"
+        "subject": "Lead Backend Engineer, Digital Bank application - Money Forward",
+        "body": "Hi Money Forward team,\n\nI am Alex Chen, and I am interested in the Lead Backend Engineer, Digital Bank role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.\n\nThe role stood out because it maps closely to my experience with API, engineer, product, data.\n\nI would appreciate the chance to share how my experience can support the team. Thank you for your time.\n\nBest,\nAlex Chen"
       },
       "followUp": {
         "timing": "3-5 business days after applying or the last recruiter interaction.",
-        "body": "Hi Modern Animal, Inc. team,\n\nI wanted to follow up on my application for the Senior Product Engineer role. I remain interested and would be glad to provide any additional context about my background.\n\nThank you again for your time.\n\nBest,\nAlex Chen"
+        "body": "Hi Money Forward team,\n\nI wanted to follow up on my application for the Lead Backend Engineer, Digital Bank role. I remain interested and would be glad to provide any additional context about my background.\n\nThank you again for your time.\n\nBest,\nAlex Chen"
       },
       "interviewPrep": [
-        "Prepare a 60-second story for why Modern Animal, Inc. and why Senior Product Engineer.",
+        "Prepare a 60-second story for why Money Forward and why Lead Backend Engineer, Digital Bank.",
         "Prepare evidence for: API, engineer, product, data.",
         "Prepare one STAR story about execution under ambiguity.",
         "Prepare one STAR story about collaboration and tradeoff decisions.",
@@ -884,10 +889,10 @@ window.CV_CAREER_OPS_APPLICATION_KIT = {
       ]
     },
     {
-      "jobKey": "url:https://www.themuse.com/jobs/gitlab/senior-backend-engineergo-continuous-delivery",
-      "title": "Senior Backend Engineer(Go), Continuous Delivery",
-      "company": "GitLab",
-      "score": "95/A",
+      "jobKey": "url:https://www.mycareersfuture.gov.sg/job/1ff5b9800085aabdc76396a96bf09117",
+      "title": "Senior Frontend Engineer, Regulatory Reporting",
+      "company": "AIRWALLEX (SINGAPORE) PTE. LTD.",
+      "score": "94/A",
       "rating": 4.8,
       "blockG": {
         "tier": "High Confidence",
@@ -896,30 +901,39 @@ window.CV_CAREER_OPS_APPLICATION_KIT = {
       "priority": "P0",
       "atsInjection": {
         "jdKeywords": [
+          "TypeScript",
+          "React",
           "API",
-          "remote",
+          "design system",
           "engineer",
-          "product",
-          "data"
+          "data",
+          "graphql",
+          "node.js",
+          "dashboards"
         ],
         "hardKeywords": [
+          "TypeScript",
+          "React",
           "API",
-          "remote",
+          "design system",
           "engineer",
-          "product",
-          "data"
+          "data",
+          "graphql",
+          "node.js",
+          "dashboards"
         ],
         "softKeywords": [],
         "missingKeywords": [
-          "go",
-          "docker",
-          "kubernetes"
+          "rest",
+          "llm",
+          "agents",
+          "operations"
         ],
-        "archetype": "Backend Engineer",
+        "archetype": "Frontend Engineer",
         "summaryRewriteHints": [
-          "在 Professional Summary 中自然帶入：API、remote、engineer、product、data",
-          "使用職位語言：「Backend Engineer」方向的動詞和術語",
-          "【你已有但此 JD 未要求】可視情況選擇性提及：go、docker、kubernetes"
+          "在 Professional Summary 中自然帶入：TypeScript、React、API、design system、engineer",
+          "使用職位語言：「Frontend Engineer」方向的動詞和術語",
+          "【你已有但此 JD 未要求】可視情況選擇性提及：rest、llm、agents、operations"
         ],
         "atsRules": [
           "單欄排版，避免 sidebar 雙欄（ATS parser 容易亂序）",
@@ -932,28 +946,28 @@ window.CV_CAREER_OPS_APPLICATION_KIT = {
         "guardrails": [
           "NEVER add skills the candidate lacks",
           "Only reformulate real experience with exact JD vocabulary",
-          "Example: if candidate has 'API development', it can become 'API'"
+          "Example: if candidate has 'API development', it can become 'TypeScript'"
         ],
         "keywordCoveragePercent": 100
       },
       "applyChecklist": [
         "Open the source URL and confirm the role is still active.",
         "Generate or refresh the tailored ATS PDF from this job.",
-        "Mirror these JD keywords honestly in your CV: API, remote, engineer, product, data",
-        "Do not overclaim missing areas: go, docker, kubernetes",
+        "Mirror these JD keywords honestly in your CV: TypeScript, React, API, design system, engineer, data, graphql, node.js",
+        "Do not overclaim missing areas: rest, llm, agents, operations",
         "Log status, recruiter/contact, and next follow-up date in the tracker."
       ],
       "outreachEmail": {
-        "subject": "Senior Backend Engineer(Go), Continuous Delivery application - GitLab",
-        "body": "Hi GitLab team,\n\nI am Alex Chen, and I am interested in the Senior Backend Engineer(Go), Continuous Delivery role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.\n\nThe role stood out because it maps closely to my experience with API, remote, engineer, product, data.\n\nI would appreciate the chance to share how my experience can support the team. Thank you for your time.\n\nBest,\nAlex Chen"
+        "subject": "Senior Frontend Engineer, Regulatory Reporting application - AIRWALLEX (SINGAPORE) PTE. LTD.",
+        "body": "Hi AIRWALLEX (SINGAPORE) PTE. LTD. team,\n\nI am Alex Chen, and I am interested in the Senior Frontend Engineer, Regulatory Reporting role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.\n\nThe role stood out because it maps closely to my experience with TypeScript, React, API, design system, engineer.\n\nI would appreciate the chance to share how my experience can support the team. Thank you for your time.\n\nBest,\nAlex Chen"
       },
       "followUp": {
         "timing": "3-5 business days after applying or the last recruiter interaction.",
-        "body": "Hi GitLab team,\n\nI wanted to follow up on my application for the Senior Backend Engineer(Go), Continuous Delivery role. I remain interested and would be glad to provide any additional context about my background.\n\nThank you again for your time.\n\nBest,\nAlex Chen"
+        "body": "Hi AIRWALLEX (SINGAPORE) PTE. LTD. team,\n\nI wanted to follow up on my application for the Senior Frontend Engineer, Regulatory Reporting role. I remain interested and would be glad to provide any additional context about my background.\n\nThank you again for your time.\n\nBest,\nAlex Chen"
       },
       "interviewPrep": [
-        "Prepare a 60-second story for why GitLab and why Senior Backend Engineer(Go), Continuous Delivery.",
-        "Prepare evidence for: API, remote, engineer, product, data.",
+        "Prepare a 60-second story for why AIRWALLEX (SINGAPORE) PTE. LTD. and why Senior Frontend Engineer, Regulatory Reporting.",
+        "Prepare evidence for: TypeScript, React, API, design system, engineer, data.",
         "Prepare one STAR story about execution under ambiguity.",
         "Prepare one STAR story about collaboration and tradeoff decisions.",
         "Prepare questions about team priorities, success metrics, and hiring timeline."
@@ -966,10 +980,10 @@ window.CV_CAREER_OPS_APPLICATION_KIT = {
       ]
     },
     {
-      "jobKey": "url:https://www.themuse.com/jobs/equinixinc/senior-associate-engineer-java-backend",
-      "title": "Senior Associate Engineer (Java Backend)",
-      "company": "Equinix, Inc",
-      "score": "95/A",
+      "jobKey": "url:https://www.mycareersfuture.gov.sg/job/7fdbc2ddd10823e30828ded216db87b6",
+      "title": "Frontend Engineer",
+      "company": "ALPHA X TECHNOLOGY PTE. LTD.",
+      "score": "94/A",
       "rating": 4.8,
       "blockG": {
         "tier": "High Confidence",
@@ -978,29 +992,39 @@ window.CV_CAREER_OPS_APPLICATION_KIT = {
       "priority": "P0",
       "atsInjection": {
         "jdKeywords": [
+          "JavaScript",
+          "TypeScript",
+          "React",
           "API",
-          "remote",
+          "Figma",
           "engineer",
-          "product"
+          "data",
+          "graphql",
+          "visualization",
+          "CSS"
         ],
         "hardKeywords": [
+          "JavaScript",
+          "TypeScript",
+          "React",
           "API",
-          "remote",
+          "Figma",
           "engineer",
-          "product"
+          "data",
+          "graphql",
+          "visualization",
+          "CSS"
         ],
         "softKeywords": [],
         "missingKeywords": [
-          "java",
-          "sql",
-          "operations",
-          "excel"
+          "vue",
+          "rest"
         ],
-        "archetype": "Backend Engineer",
+        "archetype": "Frontend Engineer",
         "summaryRewriteHints": [
-          "在 Professional Summary 中自然帶入：API、remote、engineer、product",
-          "使用職位語言：「Backend Engineer」方向的動詞和術語",
-          "【你已有但此 JD 未要求】可視情況選擇性提及：java、sql、operations、excel"
+          "在 Professional Summary 中自然帶入：JavaScript、TypeScript、React、API、Figma",
+          "使用職位語言：「Frontend Engineer」方向的動詞和術語",
+          "【你已有但此 JD 未要求】可視情況選擇性提及：vue、rest"
         ],
         "atsRules": [
           "單欄排版，避免 sidebar 雙欄（ATS parser 容易亂序）",
@@ -1013,28 +1037,28 @@ window.CV_CAREER_OPS_APPLICATION_KIT = {
         "guardrails": [
           "NEVER add skills the candidate lacks",
           "Only reformulate real experience with exact JD vocabulary",
-          "Example: if candidate has 'API development', it can become 'API'"
+          "Example: if candidate has 'API development', it can become 'JavaScript'"
         ],
         "keywordCoveragePercent": 100
       },
       "applyChecklist": [
         "Open the source URL and confirm the role is still active.",
         "Generate or refresh the tailored ATS PDF from this job.",
-        "Mirror these JD keywords honestly in your CV: API, remote, engineer, product",
-        "Do not overclaim missing areas: java, sql, operations, excel",
+        "Mirror these JD keywords honestly in your CV: JavaScript, TypeScript, React, API, Figma, engineer, data, graphql",
+        "Do not overclaim missing areas: vue, rest",
         "Log status, recruiter/contact, and next follow-up date in the tracker."
       ],
       "outreachEmail": {
-        "subject": "Senior Associate Engineer (Java Backend) application - Equinix, Inc",
-        "body": "Hi Equinix, Inc team,\n\nI am Alex Chen, and I am interested in the Senior Associate Engineer (Java Backend) role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.\n\nThe role stood out because it maps closely to my experience with API, remote, engineer, product.\n\nI would appreciate the chance to share how my experience can support the team. Thank you for your time.\n\nBest,\nAlex Chen"
+        "subject": "Frontend Engineer application - ALPHA X TECHNOLOGY PTE. LTD.",
+        "body": "Hi ALPHA X TECHNOLOGY PTE. LTD. team,\n\nI am Alex Chen, and I am interested in the Frontend Engineer role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.\n\nThe role stood out because it maps closely to my experience with JavaScript, TypeScript, React, API, Figma.\n\nI would appreciate the chance to share how my experience can support the team. Thank you for your time.\n\nBest,\nAlex Chen"
       },
       "followUp": {
         "timing": "3-5 business days after applying or the last recruiter interaction.",
-        "body": "Hi Equinix, Inc team,\n\nI wanted to follow up on my application for the Senior Associate Engineer (Java Backend) role. I remain interested and would be glad to provide any additional context about my background.\n\nThank you again for your time.\n\nBest,\nAlex Chen"
+        "body": "Hi ALPHA X TECHNOLOGY PTE. LTD. team,\n\nI wanted to follow up on my application for the Frontend Engineer role. I remain interested and would be glad to provide any additional context about my background.\n\nThank you again for your time.\n\nBest,\nAlex Chen"
       },
       "interviewPrep": [
-        "Prepare a 60-second story for why Equinix, Inc and why Senior Associate Engineer (Java Backend).",
-        "Prepare evidence for: API, remote, engineer, product.",
+        "Prepare a 60-second story for why ALPHA X TECHNOLOGY PTE. LTD. and why Frontend Engineer.",
+        "Prepare evidence for: JavaScript, TypeScript, React, API, Figma, engineer.",
         "Prepare one STAR story about execution under ambiguity.",
         "Prepare one STAR story about collaboration and tradeoff decisions.",
         "Prepare questions about team priorities, success metrics, and hiring timeline."

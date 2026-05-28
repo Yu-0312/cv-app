@@ -1,6 +1,6 @@
 window.CV_CAREER_OPS_COMPENSATION = {
   "source": "career-ops-compensation",
-  "generatedAt": "2026-05-27T00:05:12.709Z",
+  "generatedAt": "2026-05-28T00:10:33.374Z",
   "plans": [
     {
       "jobKey": "url:https://www.mycareersfuture.gov.sg/job/07eafbe6994e2090a0c2a6a6a6111e62",
@@ -548,178 +548,6 @@ window.CV_CAREER_OPS_COMPENSATION = {
       "targetFrame": "Do not name a number first. Ask for the approved range, level, and total compensation structure before anchoring."
     },
     {
-      "jobKey": "url:https://www.themuse.com/jobs/modernanimalinc/senior-product-engineer",
-      "company": "Modern Animal, Inc.",
-      "title": "Senior Product Engineer",
-      "market": "us",
-      "inferredLevel": "senior",
-      "candidateLevel": "mid",
-      "leverage": "high",
-      "evidence": {
-        "salaryMentions": [],
-        "benefitSignals": [
-          "learning budget"
-        ]
-      },
-      "marketBenchmark": null,
-      "structure": {
-        "baseSalary": [
-          "Need verified market data or recruiter range before setting a numeric anchor."
-        ],
-        "bonus": "Ask whether there is annual bonus, performance bonus, or sign-on bonus.",
-        "equity": "Ask whether equity, RSU, options, or profit-sharing exists.",
-        "benefits": [
-          "Health / insurance coverage",
-          "Paid leave and holidays",
-          "Learning budget or certification support",
-          "Remote/hybrid setup, commute, or relocation support",
-          "Review cycle and promotion timeline"
-        ],
-        "nonCashLevers": [
-          "Title / level calibration",
-          "Start date flexibility",
-          "Remote days",
-          "Equipment budget",
-          "First review at 3 or 6 months",
-          "Conference / learning budget"
-        ]
-      },
-      "negotiationScript": {
-        "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Senior Product Engineer package, including base, bonus, equity, and review cycle?",
-        "valueAnchor": "Based on the scope of Senior Product Engineer and my fit around API, engineer, product, data, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
-        "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
-        "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
-        "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
-      },
-      "redLines": [
-        "Do not disclose current compensation unless legally appropriate and strategically useful.",
-        "Do not accept verbal-only compensation details; ask for written package components.",
-        "Do not negotiate before confirming level, scope, work mode, and review cycle.",
-        "Do not trade base salary away without valuing the replacement benefit."
-      ],
-      "nextActions": [
-        "Collect market compensation evidence before naming a number.",
-        "Ask recruiter for approved range and level.",
-        "Map the job scope to proof points in the tailored CV.",
-        "Prepare one counter package with base, bonus/equity, and non-cash levers."
-      ],
-      "targetFrame": "Do not name a number first. Ask for the approved range, level, and total compensation structure before anchoring."
-    },
-    {
-      "jobKey": "url:https://www.themuse.com/jobs/gitlab/senior-backend-engineergo-continuous-delivery",
-      "company": "GitLab",
-      "title": "Senior Backend Engineer(Go), Continuous Delivery",
-      "market": "us",
-      "inferredLevel": "senior",
-      "candidateLevel": "mid",
-      "leverage": "high",
-      "evidence": {
-        "salaryMentions": [],
-        "benefitSignals": [
-          "work-mode flexibility"
-        ]
-      },
-      "marketBenchmark": null,
-      "structure": {
-        "baseSalary": [
-          "Need verified market data or recruiter range before setting a numeric anchor."
-        ],
-        "bonus": "Ask whether there is annual bonus, performance bonus, or sign-on bonus.",
-        "equity": "Ask whether equity, RSU, options, or profit-sharing exists.",
-        "benefits": [
-          "Health / insurance coverage",
-          "Paid leave and holidays",
-          "Learning budget or certification support",
-          "Remote/hybrid setup, commute, or relocation support",
-          "Review cycle and promotion timeline"
-        ],
-        "nonCashLevers": [
-          "Title / level calibration",
-          "Start date flexibility",
-          "Remote days",
-          "Equipment budget",
-          "First review at 3 or 6 months",
-          "Conference / learning budget"
-        ]
-      },
-      "negotiationScript": {
-        "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Senior Backend Engineer(Go), Continuous Delivery package, including base, bonus, equity, and review cycle?",
-        "valueAnchor": "Based on the scope of Senior Backend Engineer(Go), Continuous Delivery and my fit around API, remote, engineer, product, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
-        "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
-        "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
-        "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
-      },
-      "redLines": [
-        "Do not disclose current compensation unless legally appropriate and strategically useful.",
-        "Do not accept verbal-only compensation details; ask for written package components.",
-        "Do not negotiate before confirming level, scope, work mode, and review cycle.",
-        "Do not trade base salary away without valuing the replacement benefit."
-      ],
-      "nextActions": [
-        "Collect market compensation evidence before naming a number.",
-        "Ask recruiter for approved range and level.",
-        "Map the job scope to proof points in the tailored CV.",
-        "Prepare one counter package with base, bonus/equity, and non-cash levers."
-      ],
-      "targetFrame": "Do not name a number first. Ask for the approved range, level, and total compensation structure before anchoring."
-    },
-    {
-      "jobKey": "url:https://www.themuse.com/jobs/equinixinc/senior-associate-engineer-java-backend",
-      "company": "Equinix, Inc",
-      "title": "Senior Associate Engineer (Java Backend)",
-      "market": "us",
-      "inferredLevel": "senior",
-      "candidateLevel": "mid",
-      "leverage": "high",
-      "evidence": {
-        "salaryMentions": [],
-        "benefitSignals": []
-      },
-      "marketBenchmark": null,
-      "structure": {
-        "baseSalary": [
-          "Need verified market data or recruiter range before setting a numeric anchor."
-        ],
-        "bonus": "Ask whether there is annual bonus, performance bonus, or sign-on bonus.",
-        "equity": "Ask whether equity, RSU, options, or profit-sharing exists.",
-        "benefits": [
-          "Health / insurance coverage",
-          "Paid leave and holidays",
-          "Learning budget or certification support",
-          "Remote/hybrid setup, commute, or relocation support",
-          "Review cycle and promotion timeline"
-        ],
-        "nonCashLevers": [
-          "Title / level calibration",
-          "Start date flexibility",
-          "Remote days",
-          "Equipment budget",
-          "First review at 3 or 6 months",
-          "Conference / learning budget"
-        ]
-      },
-      "negotiationScript": {
-        "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Senior Associate Engineer (Java Backend) package, including base, bonus, equity, and review cycle?",
-        "valueAnchor": "Based on the scope of Senior Associate Engineer (Java Backend) and my fit around API, remote, engineer, product, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
-        "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
-        "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
-        "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
-      },
-      "redLines": [
-        "Do not disclose current compensation unless legally appropriate and strategically useful.",
-        "Do not accept verbal-only compensation details; ask for written package components.",
-        "Do not negotiate before confirming level, scope, work mode, and review cycle.",
-        "Do not trade base salary away without valuing the replacement benefit."
-      ],
-      "nextActions": [
-        "Collect market compensation evidence before naming a number.",
-        "Ask recruiter for approved range and level.",
-        "Map the job scope to proof points in the tailored CV.",
-        "Prepare one counter package with base, bonus/equity, and non-cash levers."
-      ],
-      "targetFrame": "Do not name a number first. Ask for the approved range, level, and total compensation structure before anchoring."
-    },
-    {
       "jobKey": "url:https://www.tokyodev.com/companies/moneyforward/jobs/lead-backend-engineer-digital-bank",
       "company": "Money Forward",
       "title": "Lead Backend Engineer, Digital Bank",
@@ -1183,6 +1011,190 @@ window.CV_CAREER_OPS_COMPENSATION = {
       "negotiationScript": {
         "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Director,Technical Solutions (Big Data/ AI) package, including base, bonus, equity, and review cycle?",
         "valueAnchor": "Based on the scope of Director,Technical Solutions (Big Data/ AI) and my fit around Analytics, Performance Optimization, product, data, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
+        "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
+        "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
+        "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
+      },
+      "redLines": [
+        "Do not disclose current compensation unless legally appropriate and strategically useful.",
+        "Do not accept verbal-only compensation details; ask for written package components.",
+        "Do not negotiate before confirming level, scope, work mode, and review cycle.",
+        "Do not trade base salary away without valuing the replacement benefit."
+      ],
+      "nextActions": [
+        "Collect market compensation evidence before naming a number.",
+        "Ask recruiter for approved range and level.",
+        "Map the job scope to proof points in the tailored CV.",
+        "Prepare one counter package with base, bonus/equity, and non-cash levers."
+      ],
+      "targetFrame": "Do not name a number first. Ask for the approved range, level, and total compensation structure before anchoring."
+    },
+    {
+      "jobKey": "url:https://www.tokyodev.com/companies/moneyforward/jobs/backend-engineer-digital-bank",
+      "company": "Money Forward",
+      "title": "Backend Engineer, Digital Bank",
+      "market": "jp",
+      "inferredLevel": "mid",
+      "candidateLevel": "mid",
+      "leverage": "high",
+      "evidence": {
+        "salaryMentions": [],
+        "benefitSignals": [
+          "equity"
+        ]
+      },
+      "marketBenchmark": {
+        "currency": "JPY",
+        "unit": "annual",
+        "range": "JPY 6,000,000 – 10,000,000",
+        "midpoint": "JPY 8,000,000",
+        "floor": 6000000,
+        "ceiling": 10000000,
+        "source": "TokyoDev / Japan-Dev 2024-2025",
+        "note": "Tokyo-based international tech companies skew higher (+30-50%). Japanese-headquartered companies average ¥8.5M for mid-level."
+      },
+      "structure": {
+        "baseSalary": [
+          "Market range for mid (JP): JPY 6,000,000 – 10,000,000 annual. Source: TokyoDev / Japan-Dev 2024-2025."
+        ],
+        "bonus": "Ask whether there is annual bonus, performance bonus, or sign-on bonus.",
+        "equity": "Clarify grant size, vesting schedule, refreshers, and strike/RSU terms.",
+        "benefits": [
+          "Health / insurance coverage",
+          "Paid leave and holidays",
+          "Learning budget or certification support",
+          "Remote/hybrid setup, commute, or relocation support",
+          "Review cycle and promotion timeline"
+        ],
+        "nonCashLevers": [
+          "Title / level calibration",
+          "Start date flexibility",
+          "Remote days",
+          "Equipment budget",
+          "First review at 3 or 6 months",
+          "Conference / learning budget"
+        ]
+      },
+      "negotiationScript": {
+        "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Backend Engineer, Digital Bank package, including base, bonus, equity, and review cycle?",
+        "valueAnchor": "Based on the scope of Backend Engineer, Digital Bank and my fit around API, engineer, product, I would like to calibrate toward the stronger end of the range if the team sees the level match. My research indicates the JP midpoint for this level is around JPY 8,000,000 (annual).",
+        "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
+        "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
+        "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
+      },
+      "redLines": [
+        "Do not disclose current compensation unless legally appropriate and strategically useful.",
+        "Do not accept verbal-only compensation details; ask for written package components.",
+        "Do not negotiate before confirming level, scope, work mode, and review cycle.",
+        "Do not trade base salary away without valuing the replacement benefit."
+      ],
+      "nextActions": [
+        "Collect market compensation evidence before naming a number.",
+        "Ask recruiter for approved range and level.",
+        "Map the job scope to proof points in the tailored CV.",
+        "Prepare one counter package with base, bonus/equity, and non-cash levers."
+      ],
+      "targetFrame": "Market benchmark for mid in JP is JPY 6,000,000 – 10,000,000 (annual). Do not name a number first — ask for the approved range, then anchor near the midpoint or above."
+    },
+    {
+      "jobKey": "url:https://www.themuse.com/jobs/uber/data-engineer-ii-61805b",
+      "company": "Uber",
+      "title": "Data Engineer II",
+      "market": "us",
+      "inferredLevel": "mid",
+      "candidateLevel": "mid",
+      "leverage": "high",
+      "evidence": {
+        "salaryMentions": [],
+        "benefitSignals": [
+          "work-mode flexibility",
+          "learning budget"
+        ]
+      },
+      "marketBenchmark": null,
+      "structure": {
+        "baseSalary": [
+          "Need verified market data or recruiter range before setting a numeric anchor."
+        ],
+        "bonus": "Ask whether there is annual bonus, performance bonus, or sign-on bonus.",
+        "equity": "Ask whether equity, RSU, options, or profit-sharing exists.",
+        "benefits": [
+          "Health / insurance coverage",
+          "Paid leave and holidays",
+          "Learning budget or certification support",
+          "Remote/hybrid setup, commute, or relocation support",
+          "Review cycle and promotion timeline"
+        ],
+        "nonCashLevers": [
+          "Title / level calibration",
+          "Start date flexibility",
+          "Remote days",
+          "Equipment budget",
+          "First review at 3 or 6 months",
+          "Conference / learning budget"
+        ]
+      },
+      "negotiationScript": {
+        "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Data Engineer II package, including base, bonus, equity, and review cycle?",
+        "valueAnchor": "Based on the scope of Data Engineer II and my fit around Analytics, API, Performance Optimization, engineer, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
+        "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
+        "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
+        "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
+      },
+      "redLines": [
+        "Do not disclose current compensation unless legally appropriate and strategically useful.",
+        "Do not accept verbal-only compensation details; ask for written package components.",
+        "Do not negotiate before confirming level, scope, work mode, and review cycle.",
+        "Do not trade base salary away without valuing the replacement benefit."
+      ],
+      "nextActions": [
+        "Collect market compensation evidence before naming a number.",
+        "Ask recruiter for approved range and level.",
+        "Map the job scope to proof points in the tailored CV.",
+        "Prepare one counter package with base, bonus/equity, and non-cash levers."
+      ],
+      "targetFrame": "Do not name a number first. Ask for the approved range, level, and total compensation structure before anchoring."
+    },
+    {
+      "jobKey": "url:https://www.themuse.com/jobs/apple/aiml-site-lead-lead-researcher-foundation-models-e51089",
+      "company": "Apple",
+      "title": "AIML - Site Lead & Lead Researcher, Foundation Models",
+      "market": "us",
+      "inferredLevel": "senior-plus",
+      "candidateLevel": "mid",
+      "leverage": "high",
+      "evidence": {
+        "salaryMentions": [],
+        "benefitSignals": [
+          "learning budget"
+        ]
+      },
+      "marketBenchmark": null,
+      "structure": {
+        "baseSalary": [
+          "Need verified market data or recruiter range before setting a numeric anchor."
+        ],
+        "bonus": "Ask whether there is annual bonus, performance bonus, or sign-on bonus.",
+        "equity": "Ask whether equity, RSU, options, or profit-sharing exists.",
+        "benefits": [
+          "Health / insurance coverage",
+          "Paid leave and holidays",
+          "Learning budget or certification support",
+          "Remote/hybrid setup, commute, or relocation support",
+          "Review cycle and promotion timeline"
+        ],
+        "nonCashLevers": [
+          "Title / level calibration",
+          "Start date flexibility",
+          "Remote days",
+          "Equipment budget",
+          "First review at 3 or 6 months",
+          "Conference / learning budget"
+        ]
+      },
+      "negotiationScript": {
+        "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the AIML - Site Lead & Lead Researcher, Foundation Models package, including base, bonus, equity, and review cycle?",
+        "valueAnchor": "Based on the scope of AIML - Site Lead & Lead Researcher, Foundation Models and my fit around Analytics, API, product, data, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
         "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
         "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
         "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."

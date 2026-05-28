@@ -1,11 +1,11 @@
 # Career Ops Intelligence Report
 
-Generated: 2026-05-27T00:04:49.636Z
+Generated: 2026-05-28T00:10:07.561Z
 
-- Active jobs: 83261
+- Active jobs: 83300
 - Expired jobs: 0
-- Duplicate groups: 3435
-- Jobs without enough description: 414
+- Duplicate groups: 3436
+- Jobs without enough description: 419
 - Rubric: Career Ops 10-Dimension Rubric
 
 ## Rubric Weights
@@ -21,56 +21,56 @@ Generated: 2026-05-27T00:04:49.636Z
 - applicationEffort: 0.08
 
 ## Top Skills
-- api: 7582
-- growth: 4574
-- operations: 4201
-- analytics: 3378
-- sales: 3106
-- python: 2291
-- go: 1992
-- sql: 1596
-- excel: 1517
-- aws: 1193
-- machine learning: 1021
-- azure: 942
+- api: 7577
+- growth: 4588
+- operations: 4234
+- analytics: 3355
+- sales: 3115
+- python: 2263
+- go: 1993
+- sql: 1597
+- excel: 1535
+- aws: 1194
+- machine learning: 1009
+- azure: 950
 
 ## Missing High-Demand Skills
-- growth: 4574
-- operations: 4201
-- sales: 3106
-- python: 2291
-- go: 1992
-- sql: 1596
-- excel: 1517
-- aws: 1193
-- machine learning: 1021
-- azure: 942
+- growth: 4588
+- operations: 4234
+- sales: 3115
+- python: 2263
+- go: 1993
+- sql: 1597
+- excel: 1535
+- aws: 1194
+- machine learning: 1009
+- azure: 950
 
 ## Global Skill Gap Priority (weighted by job score)
-- growth: 7272.4
-- operations: 6656.1
-- sales: 4862.5
-- python: 3720.7
-- go: 3175.9
-- sql: 2592.8
-- excel: 2373.7
-- aws: 1948.8
-- machine learning: 1654.3
-- azure: 1536.9
-- java: 1424.1
-- spark: 1272.9
+- growth: 7298.4
+- operations: 6708.9
+- sales: 4880.5
+- python: 3674
+- go: 3177
+- sql: 2594.7
+- excel: 2399.9
+- aws: 1951.9
+- machine learning: 1637.3
+- azure: 1550
+- java: 1421.6
+- spark: 1266.8
 
 ## Role Families
-- Backend: 79109
-- Other: 1712
-- Frontend: 828
-- AI / Data: 678
-- Sales: 373
-- Marketing: 165
-- Product: 147
-- Design: 146
-- Operations: 70
-- Internship: 24
+- Backend: 79123
+- Other: 1737
+- Frontend: 820
+- AI / Data: 680
+- Sales: 367
+- Marketing: 163
+- Product: 149
+- Design: 145
+- Operations: 76
+- Internship: 29
 
 ## Recommended Search Queries
 - Frontend Engineer

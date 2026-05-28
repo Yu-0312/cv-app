@@ -1,10 +1,10 @@
 {
   "source": "career-ops-health-monitor",
-  "checkedAt": "2026-05-27T00:05:30.686Z",
+  "checkedAt": "2026-05-28T00:10:51.673Z",
   "threshold": 0.3,
   "health": {
-    "total": 83261,
-    "active": 83261,
+    "total": 83300,
+    "active": 83300,
     "expired": 0,
     "stale": 0,
     "expiredRate": 0,
@@ -20,15 +20,11 @@
         "expired": 0
       },
       "The Muse Global Software Engineering": {
-        "total": 1734,
-        "expired": 0
-      },
-      "The Muse Global Remote Jobs": {
-        "total": 1812,
+        "total": 1733,
         "expired": 0
       },
       "Source flex job board": {
-        "total": 111,
+        "total": 122,
         "expired": 0
       },
       "Japan Dev English Tech Jobs": {
@@ -36,19 +32,23 @@
         "expired": 0
       },
       "Databricks Greenhouse": {
-        "total": 447,
+        "total": 445,
         "expired": 0
       },
       "The Muse Global Data Analytics": {
-        "total": 1830,
+        "total": 1832,
+        "expired": 0
+      },
+      "The Muse Global Remote Jobs": {
+        "total": 1820,
         "expired": 0
       },
       "Stripe Greenhouse": {
-        "total": 381,
+        "total": 382,
         "expired": 0
       },
       "Figma Greenhouse": {
-        "total": 110,
+        "total": 109,
         "expired": 0
       },
       "Airbnb Greenhouse": {
@@ -56,31 +56,31 @@
         "expired": 0
       },
       "MongoDB Greenhouse": {
-        "total": 267,
+        "total": 273,
         "expired": 0
       },
       "GitLab Greenhouse": {
-        "total": 108,
+        "total": 107,
         "expired": 0
       },
       "Canonical Greenhouse": {
-        "total": 252,
+        "total": 251,
         "expired": 0
       },
       "Vercel Greenhouse": {
-        "total": 57,
+        "total": 55,
         "expired": 0
       },
       "ElevenLabs Ashby": {
-        "total": 99,
+        "total": 98,
         "expired": 0
       },
       "PostHog Ashby": {
-        "total": 13,
+        "total": 12,
         "expired": 0
       },
       "Asana Greenhouse": {
-        "total": 81,
+        "total": 82,
         "expired": 0
       },
       "MyCareersFuture Singapore Software": {
@@ -88,7 +88,7 @@
         "expired": 0
       },
       "Replit Ashby": {
-        "total": 59,
+        "total": 61,
         "expired": 0
       },
       "Supabase Ashby": {
@@ -100,19 +100,19 @@
         "expired": 0
       },
       "Remotive Global Remote Jobs": {
-        "total": 16,
+        "total": 15,
         "expired": 0
       },
       "Reddit Greenhouse": {
-        "total": 103,
+        "total": 95,
         "expired": 0
       },
       "Roblox Greenhouse": {
-        "total": 174,
+        "total": 168,
         "expired": 0
       },
       "Cursor Ashby": {
-        "total": 66,
+        "total": 67,
         "expired": 0
       },
       "Notion Ashby": {
@@ -120,19 +120,11 @@
         "expired": 0
       },
       "Ramp Ashby": {
-        "total": 102,
-        "expired": 0
-      },
-      "Gogolook": {
-        "total": 11,
+        "total": 103,
         "expired": 0
       },
       "Samsung Workday": {
         "total": 69,
-        "expired": 0
-      },
-      "Micron Workday": {
-        "total": 67,
         "expired": 0
       },
       "Cardlytics Workday Taiwan": {
@@ -147,16 +139,28 @@
         "total": 28,
         "expired": 0
       },
+      "Micron Workday": {
+        "total": 71,
+        "expired": 0
+      },
       "Perplexity Ashby": {
         "total": 15,
         "expired": 0
       },
       "NVIDIA Workday": {
-        "total": 291,
+        "total": 292,
+        "expired": 0
+      },
+      "Cloudflare Greenhouse": {
+        "total": 1,
         "expired": 0
       },
       "Linear Ashby": {
         "total": 13,
+        "expired": 0
+      },
+      "Microsoft Taipei": {
+        "total": 3,
         "expired": 0
       },
       "Intel Workday Taiwan": {
@@ -172,15 +176,19 @@
         "expired": 0
       },
       "Daijob Japan Broad Listings": {
-        "total": 101,
+        "total": 100,
         "expired": 0
       },
       "Mozilla Greenhouse": {
-        "total": 28,
+        "total": 23,
         "expired": 0
       },
       "Remote OK Global Remote Jobs": {
-        "total": 55,
+        "total": 84,
+        "expired": 0
+      },
+      "Gogolook": {
+        "total": 10,
         "expired": 0
       },
       "Applied Materials Workday": {
@@ -188,10 +196,6 @@
         "expired": 0
       },
       "Microsoft Beijing": {
-        "total": 2,
-        "expired": 0
-      },
-      "Microsoft Taipei": {
         "total": 2,
         "expired": 0
       },
@@ -216,7 +220,11 @@
         "expired": 0
       },
       "Tencent Careers China": {
-        "total": 1472,
+        "total": 1482,
+        "expired": 0
+      },
+      "Tencent": {
+        "total": 18,
         "expired": 0
       },
       "NVIDIA Taiwan": {
@@ -225,10 +233,6 @@
       },
       "Appier": {
         "total": 6,
-        "expired": 0
-      },
-      "Tencent": {
-        "total": 28,
         "expired": 0
       },
       "ASML Taiwan": {
@@ -279,16 +283,12 @@
         "total": 2,
         "expired": 0
       },
-      "Lenovo China": {
-        "total": 5,
-        "expired": 0
-      },
       "COEBank SuccessFactors Data & BI Engineer": {
         "total": 1,
         "expired": 0
       },
       "Grab SmartRecruiters": {
-        "total": 9,
+        "total": 11,
         "expired": 0
       },
       "ASSA ABLOY SuccessFactors Taipei Manufacturing Engineer": {
@@ -324,11 +324,15 @@
         "expired": 0
       },
       "UMC": {
-        "total": 85,
+        "total": 86,
         "expired": 0
       },
       "Apple Taiwan": {
         "total": 1,
+        "expired": 0
+      },
+      "Lenovo China": {
+        "total": 4,
         "expired": 0
       }
     },

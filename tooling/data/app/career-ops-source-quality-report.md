@@ -1,12 +1,12 @@
 # Career Ops Source Quality
 
-- Generated: 2026-05-27T00:02:31.231Z
+- Generated: 2026-05-28T00:07:48.862Z
 - Mode: filter
 - Minimum score: 45
-- Input active jobs: 83405
-- Kept active jobs: 83261
-- Filtered active jobs: 144
-- Quality tiers: high 77909 / medium 5257 / low 95
+- Input active jobs: 83442
+- Kept active jobs: 83300
+- Filtered active jobs: 142
+- Quality tiers: high 77953 / medium 5251 / low 96
 
 ## Filtered Samples
 
@@ -16,12 +16,12 @@
 - 19 Unknown - Select Location - Jobs - Careers at Apple (missing-company, landing-or-search-title, thin-description)
 - 19 Unknown - IC Packaging Engineer - Jobs - Careers at Apple (missing-company, landing-or-search-title, thin-description)
 - 19 Unknown - AI System Engineer - Jobs - Careers at Apple (missing-company, landing-or-search-title, thin-description)
-- 19 Unknown - Process & Integration Engineer - TFT Display Technology - Jobs - Careers at Apple (missing-company, landing-or-search-title, thin-description)
 - 19 Unknown - SoC - ATE Test Engineer - Jobs - Careers at Apple (missing-company, landing-or-search-title, thin-description)
 - 19 Unknown - Camera Electrical System Integration Engineer - Camera Hardware - Jobs - Careers at Apple (missing-company, landing-or-search-title, thin-description)
 - 19 Unknown - Display Reliability Engineer - Jobs - Careers at Apple (missing-company, landing-or-search-title, thin-description)
 - 19 Unknown - SoC Packaging Engineer - Jobs - Careers at Apple (missing-company, landing-or-search-title, thin-description)
 - 19 Unknown - Operation Test Engineer - Machine Learning - Jobs - Careers at Apple (missing-company, landing-or-search-title, thin-description)
+- 19 Unknown - Senior Equipment Integration & Automation Engineer - Jobs - Careers at Apple (missing-company, landing-or-search-title, thin-description)
 
 ## Kept Samples
 
