@@ -1,12 +1,12 @@
 # Career Ops Source Quality
 
-- Generated: 2026-05-28T00:07:48.862Z
+- Generated: 2026-05-29T00:28:04.731Z
 - Mode: filter
 - Minimum score: 45
-- Input active jobs: 83442
-- Kept active jobs: 83300
-- Filtered active jobs: 142
-- Quality tiers: high 77953 / medium 5251 / low 96
+- Input active jobs: 83075
+- Kept active jobs: 82939
+- Filtered active jobs: 136
+- Quality tiers: high 77601 / medium 5242 / low 96
 
 ## Filtered Samples
 
@@ -16,12 +16,12 @@
 - 19 Unknown - Select Location - Jobs - Careers at Apple (missing-company, landing-or-search-title, thin-description)
 - 19 Unknown - IC Packaging Engineer - Jobs - Careers at Apple (missing-company, landing-or-search-title, thin-description)
 - 19 Unknown - AI System Engineer - Jobs - Careers at Apple (missing-company, landing-or-search-title, thin-description)
+- 19 Unknown - Process & Integration Engineer - TFT Display Technology - Jobs - Careers at Apple (missing-company, landing-or-search-title, thin-description)
 - 19 Unknown - SoC - ATE Test Engineer - Jobs - Careers at Apple (missing-company, landing-or-search-title, thin-description)
 - 19 Unknown - Camera Electrical System Integration Engineer - Camera Hardware - Jobs - Careers at Apple (missing-company, landing-or-search-title, thin-description)
 - 19 Unknown - Display Reliability Engineer - Jobs - Careers at Apple (missing-company, landing-or-search-title, thin-description)
 - 19 Unknown - SoC Packaging Engineer - Jobs - Careers at Apple (missing-company, landing-or-search-title, thin-description)
 - 19 Unknown - Operation Test Engineer - Machine Learning - Jobs - Careers at Apple (missing-company, landing-or-search-title, thin-description)
-- 19 Unknown - Senior Equipment Integration & Automation Engineer - Jobs - Careers at Apple (missing-company, landing-or-search-title, thin-description)
 
 ## Kept Samples
 
@@ -32,8 +32,8 @@
 - 70 - Delta - Company - Global Operations - Delta
 - 70 - Delta - Investors - Analyst Meetings - Delta
 - 70 - Delta - Delta’s Sales and Purchase T&Cs
-- 70 Trend Micro - Trend Vision One™ - AI-powered Enterprise Cybersecurity Platform
-- 70 Trend Micro - Trend Vision One™ Security Operations (SecOps) (Formerly XDR)
-- 70 Trend Micro - Trend Vision One™ XDR for Networks
-- 88 Trend Micro - Zero Trust Secure Access | Trend Micro Vision One
-- 70 Trend Micro - Trend Micro
+- 70 TrendAI - TrendAI Vision One™ – The Cybersecurity Enterprise Platform
+- 52 Unknown - Retarget high-value users and maximize ROAS with AI | Appier
+- 70 Unknown - AIXPERT - Campaign Automation Cloud | Appier
+- 70 Unknown - AIQUA - AI Personalization Cloud｜Appier
+- 52 Unknown - AIXON - Intelligent Data Augmentation Platform ｜Appier

@@ -1,6 +1,6 @@
 window.CV_CAREER_OPS_DEEP_FIT = {
   "source": "career-ops-deep-fit",
-  "generatedAt": "2026-05-28T00:10:44.161Z",
+  "generatedAt": "2026-05-29T00:30:48.252Z",
   "llmProvider": "none",
   "summary": {
     "totalResults": 95,
@@ -1308,6 +1308,74 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "llm": null
     },
     {
+      "jobKey": "url:https://www.themuse.com/jobs/uber/director-marketplace-central-operations-mobility-emea",
+      "company": "Uber",
+      "title": "Director, Marketplace Central Operations Mobility EMEA",
+      "score": 93,
+      "grade": "A",
+      "confidence": "medium",
+      "decision": "pursue aggressively",
+      "thesis": "Director, Marketplace Central Operations Mobility EMEA at Uber is pursue aggressively because the snapshot score is 93, with 4 profile/role keyword hits and 1 external evidence item(s).",
+      "evidence": {
+        "keywordHits": [
+          "Analytics",
+          "API",
+          "analytics",
+          "Product Engineer"
+        ],
+        "keywordMisses": [
+          "growth",
+          "operations"
+        ],
+        "researchSignals": [
+          "AI / data / platform signal",
+          "remote or hybrid signal"
+        ],
+        "evidenceCount": 1,
+        "compensationLeverage": "high"
+      },
+      "concerns": [],
+      "interviewStrategy": [
+        "Ask why the role is open and what success means in the first 90 days.",
+        "Probe team ownership, roadmap pressure, and cross-functional interfaces.",
+        "What business unit owns the Sr Software Engineer, Frontend (Web) role?",
+        "What measurable outcomes would this team expect in the first 90 days?",
+        "What recent company/product signals change the risk or upside?"
+      ],
+      "cvStrategy": [
+        "Lead with proof around: Analytics, API, analytics, Product Engineer.",
+        "Use story story-1: frontend product execution.",
+        "Use story story-2: systems and API collaboration.",
+        "Use story story-3: accessibility and quality."
+      ],
+      "compensationStrategy": {
+        "leverage": "high",
+        "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Sr Software Engineer, Frontend (Web) package, including base, bonus, equity, and review cycle?",
+        "valueAnchor": "Based on the scope of Sr Software Engineer, Frontend (Web) and my fit around JavaScript, TypeScript, React, CSS, I would like to calibrate toward the stronger end of the range if the team sees the level match."
+      },
+      "storyHooks": [
+        {
+          "id": "story-1",
+          "theme": "frontend product execution",
+          "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
+          "relevance": 0
+        },
+        {
+          "id": "story-2",
+          "theme": "systems and API collaboration",
+          "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
+          "relevance": 0
+        },
+        {
+          "id": "story-3",
+          "theme": "accessibility and quality",
+          "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
+          "relevance": 0
+        }
+      ],
+      "llm": null
+    },
+    {
       "jobKey": "url:https://www.themuse.com/jobs/uber/data-engineer-ii-61805b",
       "company": "Uber",
       "title": "Data Engineer II",
@@ -1358,76 +1426,6 @@ window.CV_CAREER_OPS_DEEP_FIT = {
         "leverage": "high",
         "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Sr Software Engineer, Frontend (Web) package, including base, bonus, equity, and review cycle?",
         "valueAnchor": "Based on the scope of Sr Software Engineer, Frontend (Web) and my fit around JavaScript, TypeScript, React, CSS, I would like to calibrate toward the stronger end of the range if the team sees the level match."
-      },
-      "storyHooks": [
-        {
-          "id": "story-1",
-          "theme": "frontend product execution",
-          "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
-          "relevance": 0
-        },
-        {
-          "id": "story-2",
-          "theme": "systems and API collaboration",
-          "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
-          "relevance": 0
-        },
-        {
-          "id": "story-3",
-          "theme": "accessibility and quality",
-          "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
-          "relevance": 0
-        }
-      ],
-      "llm": null
-    },
-    {
-      "jobKey": "url:https://www.themuse.com/jobs/apple/aiml-site-lead-lead-researcher-foundation-models-e51089",
-      "company": "Apple",
-      "title": "AIML - Site Lead & Lead Researcher, Foundation Models",
-      "score": 93,
-      "grade": "A",
-      "confidence": "medium",
-      "decision": "pursue aggressively",
-      "thesis": "AIML - Site Lead & Lead Researcher, Foundation Models at Apple is pursue aggressively because the snapshot score is 93, with 4 profile/role keyword hits and 0 external evidence item(s).",
-      "evidence": {
-        "keywordHits": [
-          "Analytics",
-          "API",
-          "analytics",
-          "Product Engineer"
-        ],
-        "keywordMisses": [
-          "python",
-          "agents",
-          "machine learning",
-          "deep learning",
-          "pytorch",
-          "tensorflow",
-          "growth"
-        ],
-        "researchSignals": [],
-        "evidenceCount": 0,
-        "compensationLeverage": "high"
-      },
-      "concerns": [
-        "External company evidence is thin; run deep research with a search API.",
-        "Profile keyword coverage is weaker than the target role language."
-      ],
-      "interviewStrategy": [
-        "Ask why the role is open and what success means in the first 90 days.",
-        "Probe team ownership, roadmap pressure, and cross-functional interfaces."
-      ],
-      "cvStrategy": [
-        "Lead with proof around: Analytics, API, analytics, Product Engineer.",
-        "Use story story-1: frontend product execution.",
-        "Use story story-2: systems and API collaboration.",
-        "Use story story-3: accessibility and quality."
-      ],
-      "compensationStrategy": {
-        "leverage": "high",
-        "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the AIML - Site Lead & Lead Researcher, Foundation Models package, including base, bonus, equity, and review cycle?",
-        "valueAnchor": "Based on the scope of AIML - Site Lead & Lead Researcher, Foundation Models and my fit around Analytics, API, product, data, I would like to calibrate toward the stronger end of the range if the team sees the level match."
       },
       "storyHooks": [
         {
@@ -1848,26 +1846,6 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "layer": "B"
     },
     {
-      "jobKey": "url:https://justjoin.it/job-offer/strategicsiq-sharepoint-developers---warsaw---poland---onsite-warszawa-other",
-      "company": "Strategicsiq",
-      "title": "Sharepoint Developers - Warsaw - Poland - Onsite",
-      "score": 79,
-      "grade": "B",
-      "roleFit": 45,
-      "url": "https://justjoin.it/job-offer/strategicsiq-sharepoint-developers---warsaw---poland---onsite-warszawa-other",
-      "location": "Warszawa, PL",
-      "keywordHits": [
-        "Performance Optimization",
-        "Design Systems",
-        "design system"
-      ],
-      "keywordMisses": [
-        "angular"
-      ],
-      "decision": "pursue selectively",
-      "layer": "B"
-    },
-    {
       "jobKey": "url:https://www.mycareersfuture.gov.sg/job/4147cafc2b176836d58de73b12729cf5",
       "company": "GOLDTECH RESOURCES PTE LTD",
       "title": "Technical Business Analyst – Power Platform",
@@ -1901,6 +1879,26 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "keywordMisses": [
         "spark",
         "excel"
+      ],
+      "decision": "pursue selectively",
+      "layer": "B"
+    },
+    {
+      "jobKey": "url:https://justjoin.it/job-offer/n-ix-senior-scala-engineer-krakow-scala-15ebf7dd",
+      "company": "N-iX",
+      "title": "Senior Scala Engineer",
+      "score": 78,
+      "grade": "B",
+      "roleFit": 45,
+      "url": "https://justjoin.it/job-offer/n-ix-senior-scala-engineer-krakow-scala-15ebf7dd",
+      "location": "Kraków, PL",
+      "keywordHits": [
+        "Analytics",
+        "analytics"
+      ],
+      "keywordMisses": [
+        "docker",
+        "kubernetes"
       ],
       "decision": "pursue selectively",
       "layer": "B"
@@ -1983,25 +1981,6 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "location": "Israel, Tel Aviv",
       "keywordHits": [
         "dashboard"
-      ],
-      "keywordMisses": [
-        "python"
-      ],
-      "decision": "pursue selectively",
-      "layer": "B"
-    },
-    {
-      "jobKey": "url:https://justjoin.it/job-offer/anitech-solutions-business-analyst-krakow-analytics",
-      "company": "Anitech Solutions",
-      "title": "Business Analyst",
-      "score": 76,
-      "grade": "B",
-      "roleFit": 45,
-      "url": "https://justjoin.it/job-offer/anitech-solutions-business-analyst-krakow-analytics",
-      "location": "Kraków, PL",
-      "keywordHits": [
-        "Accessibility",
-        "remote"
       ],
       "keywordMisses": [
         "python"
@@ -2108,22 +2087,6 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "layer": "B"
     },
     {
-      "jobKey": "url:https://jobs.ashbyhq.com/elevenlabs/4389da7f-b5c9-4660-aaf2-d097f4caba07",
-      "company": "ElevenLabs Ashby",
-      "title": "Audio Engineering (Freelance)",
-      "score": 74,
-      "grade": "B",
-      "roleFit": 45,
-      "url": "https://jobs.ashbyhq.com/elevenlabs/4389da7f-b5c9-4660-aaf2-d097f4caba07",
-      "location": "London / Poland / New York",
-      "keywordHits": [
-        "remote"
-      ],
-      "keywordMisses": [],
-      "decision": "pursue selectively",
-      "layer": "B"
-    },
-    {
       "jobKey": "url:https://jobs.ashbyhq.com/cursor/01fdd3d5-be8c-47d5-a317-bfe797739670",
       "company": "Cursor Ashby",
       "title": "Associate Field Engineer",
@@ -2152,20 +2115,6 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "keywordMisses": [
         "java"
       ],
-      "decision": "pursue selectively",
-      "layer": "B"
-    },
-    {
-      "jobKey": "url:https://www.mycareersfuture.gov.sg/job/510e5192a1fc21cc803116e946a130e8",
-      "company": "DCONSTRUCT ROBOTICS PTE. LTD.",
-      "title": "C/C++ Software Engineer",
-      "score": 73,
-      "grade": "B",
-      "roleFit": 45,
-      "url": "https://www.mycareersfuture.gov.sg/job/510e5192a1fc21cc803116e946a130e8",
-      "location": "PIXEL, CENTRAL EXCHANGE GREEN, D05 Pasir Panjang, Hong Leong Garden, Clementi New Town, Singapore",
-      "keywordHits": [],
-      "keywordMisses": [],
       "decision": "pursue selectively",
       "layer": "B"
     },
@@ -2241,38 +2190,6 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "keywordHits": [],
       "keywordMisses": [
         "python"
-      ],
-      "decision": "pursue selectively",
-      "layer": "B"
-    },
-    {
-      "jobKey": "url:https://www.mycareersfuture.gov.sg/job/93d889544f1bafb1f942dbbd7de5bd32",
-      "company": "EXYTE SINGAPORE PTE. LTD.",
-      "title": "Senior Engineer Electrical",
-      "score": 73,
-      "grade": "B",
-      "roleFit": 45,
-      "url": "https://www.mycareersfuture.gov.sg/job/93d889544f1bafb1f942dbbd7de5bd32",
-      "location": "INTERNATIONAL BUSINESS PARK, D22 Jurong, Jurong Island, Tuas, Singapore",
-      "keywordHits": [],
-      "keywordMisses": [
-        "excel"
-      ],
-      "decision": "pursue selectively",
-      "layer": "B"
-    },
-    {
-      "jobKey": "url:https://www.mycareersfuture.gov.sg/job/ae4fc6a36d3fca6888653d1b7fdf3105",
-      "company": "ROKKO SYSTEMS PTE. LTD.",
-      "title": "Software Engineer II",
-      "score": 71,
-      "grade": "C",
-      "roleFit": 45,
-      "url": "https://www.mycareersfuture.gov.sg/job/ae4fc6a36d3fca6888653d1b7fdf3105",
-      "location": "KAKI BUKIT ROAD 2, D14 Geylang, Eunos, Singapore",
-      "keywordHits": [],
-      "keywordMisses": [
-        "computer vision"
       ],
       "decision": "pursue selectively",
       "layer": "B"
@@ -2374,39 +2291,6 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "layer": "B"
     },
     {
-      "jobKey": "url:https://www.mycareersfuture.gov.sg/job/4700569e4b88e311f82132d53f4d502d",
-      "company": "EXYTE SINGAPORE PTE. LTD.",
-      "title": "Engineer Electrical",
-      "score": 71,
-      "grade": "C",
-      "roleFit": 45,
-      "url": "https://www.mycareersfuture.gov.sg/job/4700569e4b88e311f82132d53f4d502d",
-      "location": "INTERNATIONAL BUSINESS PARK, D22 Jurong, Jurong Island, Tuas, Singapore",
-      "keywordHits": [],
-      "keywordMisses": [
-        "excel"
-      ],
-      "decision": "pursue selectively",
-      "layer": "B"
-    },
-    {
-      "jobKey": "url:https://justjoin.it/job-offer/kubo-cybersecurity-engineer-warszawa-security",
-      "company": "KUBO",
-      "title": "Cybersecurity Engineer",
-      "score": 70,
-      "grade": "C",
-      "roleFit": 45,
-      "url": "https://justjoin.it/job-offer/kubo-cybersecurity-engineer-warszawa-security",
-      "location": "Warszawa, PL",
-      "keywordHits": [],
-      "keywordMisses": [
-        "python",
-        "java"
-      ],
-      "decision": "pursue selectively",
-      "layer": "B"
-    },
-    {
       "jobKey": "url:https://nvidia.wd5.myworkdayjobs.com/nvidiaexternalcareersite/job/taiwan-hsinchu/senior-package-engineer_jr2016717-1",
       "company": "NVIDIA Workday",
       "title": "Senior Package Engineer",
@@ -2421,18 +2305,130 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "layer": "B"
     },
     {
-      "jobKey": "url:https://www.mycareersfuture.gov.sg/job/81f9bb29c103df7096eba6ad76e03154",
-      "company": "ROKKO SYSTEMS PTE. LTD.",
-      "title": "Software Engineer I",
+      "jobKey": "url:https://www.mycareersfuture.gov.sg/job/1257c075e18e83dae5b4ffb504184f1c",
+      "company": "NK EDUCATION PTE. LTD.",
+      "title": "Teacher manager",
+      "score": 69,
+      "grade": "C",
+      "roleFit": 45,
+      "url": "https://www.mycareersfuture.gov.sg/job/1257c075e18e83dae5b4ffb504184f1c",
+      "location": "Islandwide, Singapore",
+      "keywordHits": [],
+      "keywordMisses": [],
+      "decision": "hold / compare",
+      "layer": "B"
+    },
+    {
+      "jobKey": "url:https://www.mycareersfuture.gov.sg/job/1b482841ca8e957ced9ec52dafc387fe",
+      "company": "NK EDU (FARRER PARK) PTE. LTD.",
+      "title": "Teacher manager",
+      "score": 69,
+      "grade": "C",
+      "roleFit": 45,
+      "url": "https://www.mycareersfuture.gov.sg/job/1b482841ca8e957ced9ec52dafc387fe",
+      "location": "Islandwide, Singapore",
+      "keywordHits": [],
+      "keywordMisses": [],
+      "decision": "hold / compare",
+      "layer": "B"
+    },
+    {
+      "jobKey": "url:https://justjoin.it/job-offer/emagine-polska-release-documentation-manager-warsaw-pm",
+      "company": "emagine Polska",
+      "title": "Release & Documentation Manager",
+      "score": 69,
+      "grade": "C",
+      "roleFit": 45,
+      "url": "https://justjoin.it/job-offer/emagine-polska-release-documentation-manager-warsaw-pm",
+      "location": "Warsaw, PL",
+      "keywordHits": [
+        "remote"
+      ],
+      "keywordMisses": [],
+      "decision": "hold / compare",
+      "layer": "B"
+    },
+    {
+      "jobKey": "url:https://remoteok.com/remote-jobs/remote-expressions-of-interest-fraser-coast-regional-council-1132404",
+      "company": "Fraser Coast Regional Council",
+      "title": "Expressions of Interest",
       "score": 68,
       "grade": "C",
       "roleFit": 45,
-      "url": "https://www.mycareersfuture.gov.sg/job/81f9bb29c103df7096eba6ad76e03154",
-      "location": "KAKI BUKIT ROAD 2, D14 Geylang, Eunos, Singapore",
-      "keywordHits": [],
-      "keywordMisses": [
-        "computer vision"
+      "url": "https://remoteok.com/remote-jobs/remote-expressions-of-interest-fraser-coast-regional-council-1132404",
+      "location": "Hervey Bay,",
+      "keywordHits": [
+        "remote"
       ],
+      "keywordMisses": [],
+      "decision": "hold / compare",
+      "layer": "B"
+    },
+    {
+      "jobKey": "url:https://remoteok.com/remote-jobs/remote-mex-cajero-sucursal-universia-mexico-1132372",
+      "company": "Universia MÃ©xico",
+      "title": "MEX Cajero Sucursal",
+      "score": 68,
+      "grade": "C",
+      "roleFit": 45,
+      "url": "https://remoteok.com/remote-jobs/remote-mex-cajero-sucursal-universia-mexico-1132372",
+      "location": "Abasolo, Abasolo, Guanajuato, MÃ©xico",
+      "keywordHits": [
+        "remote"
+      ],
+      "keywordMisses": [
+        "excel"
+      ],
+      "decision": "hold / compare",
+      "layer": "B"
+    },
+    {
+      "jobKey": "url:https://remoteok.com/remote-jobs/remote-advogado-junior-trabalhista-gasparini-barbosa-e-freire-advogados-1132370",
+      "company": "Gasparini, Barbosa e Freire Advogados",
+      "title": "Advogado JÃºnior Trabalhista",
+      "score": 68,
+      "grade": "C",
+      "roleFit": 45,
+      "url": "https://remoteok.com/remote-jobs/remote-advogado-junior-trabalhista-gasparini-barbosa-e-freire-advogados-1132370",
+      "location": "SÃ£o Paulo, SÃ£o Paulo, SÃ£o Paulo, Brasil",
+      "keywordHits": [
+        "remote"
+      ],
+      "keywordMisses": [
+        "excel"
+      ],
+      "decision": "hold / compare",
+      "layer": "B"
+    },
+    {
+      "jobKey": "url:https://remoteok.com/remote-jobs/remote-mex-cajero-dual-universia-mexico-1132250",
+      "company": "Universia MÃ©xico",
+      "title": "MEX Cajero Dual",
+      "score": 68,
+      "grade": "C",
+      "roleFit": 45,
+      "url": "https://remoteok.com/remote-jobs/remote-mex-cajero-dual-universia-mexico-1132250",
+      "location": "Las Lajitas, Las Lajitas, Salta, Argentina",
+      "keywordHits": [
+        "remote"
+      ],
+      "keywordMisses": [],
+      "decision": "hold / compare",
+      "layer": "B"
+    },
+    {
+      "jobKey": "url:https://remoteok.com/remote-jobs/remote-entrenador-a-deportivo-apprentus-1132460",
+      "company": "Apprentus",
+      "title": "Entrenador a Deportivo",
+      "score": 67,
+      "grade": "C",
+      "roleFit": 45,
+      "url": "https://remoteok.com/remote-jobs/remote-entrenador-a-deportivo-apprentus-1132460",
+      "location": "Granada,",
+      "keywordHits": [
+        "remote"
+      ],
+      "keywordMisses": [],
       "decision": "hold / compare",
       "layer": "B"
     }
@@ -2851,54 +2847,6 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "layer": "C"
     },
     {
-      "jobKey": "url:https://jobs.ashbyhq.com/elevenlabs/3b57cc5c-f019-4a0b-a5ff-e1046e4f1fa1",
-      "company": "ElevenLabs Ashby",
-      "title": "Safety Engineer",
-      "score": 92,
-      "grade": "A",
-      "roleFit": 92,
-      "url": "https://jobs.ashbyhq.com/elevenlabs/3b57cc5c-f019-4a0b-a5ff-e1046e4f1fa1",
-      "location": "United Kingdom / United States / Dublin / London / Warsaw / New York / San Francisco / Tokyo / Poland / Los Angeles / Washington, D.C. / Boston",
-      "keywordHits": [
-        "React",
-        "API",
-        "remote",
-        "React"
-      ],
-      "topGap": "python",
-      "mainGaps": [
-        "python",
-        "sql",
-        "aws",
-        "gcp"
-      ],
-      "layer": "C"
-    },
-    {
-      "jobKey": "url:https://jobs.ashbyhq.com/posthog/20ab9628-20ff-4ae3-bd6a-46ae7e9dc6b8",
-      "company": "PostHog Ashby",
-      "title": "Product Engineer",
-      "score": 92,
-      "grade": "A",
-      "roleFit": 92,
-      "url": "https://jobs.ashbyhq.com/posthog/20ab9628-20ff-4ae3-bd6a-46ae7e9dc6b8",
-      "location": "Remote",
-      "keywordHits": [
-        "TypeScript",
-        "React",
-        "Analytics",
-        "remote"
-      ],
-      "topGap": "python",
-      "mainGaps": [
-        "python",
-        "go",
-        "sql",
-        "html"
-      ],
-      "layer": "C"
-    },
-    {
       "jobKey": "url:https://www.themuse.com/jobs/uber/graduate-2026-software-engineer-i-chile",
       "company": "Uber",
       "title": "Graduate 2026 Software Engineer I, Chile",
@@ -3054,37 +3002,13 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "layer": "C"
     },
     {
-      "jobKey": "url:https://www.tokyodev.com/companies/givery/jobs/full-stack-engineer-python-typescript",
-      "company": "Givery",
-      "title": "Full Stack Engineer (Python, TypeScript)",
-      "score": 91,
-      "grade": "A",
-      "roleFit": 92,
-      "url": "https://www.tokyodev.com/companies/givery/jobs/full-stack-engineer-python-typescript",
-      "location": "Shibuya, Tokyo, JP",
-      "keywordHits": [
-        "TypeScript",
-        "React",
-        "CSS",
-        "API"
-      ],
-      "topGap": "python",
-      "mainGaps": [
-        "python",
-        "sql",
-        "aws",
-        "html"
-      ],
-      "layer": "C"
-    },
-    {
-      "jobKey": "url:https://www.mycareersfuture.gov.sg/job/481cd6f051d14bf67a2025ca0fa2a23f",
+      "jobKey": "url:https://www.mycareersfuture.gov.sg/job/f2bf90a5913eb4a0eaba21a457afd7d9",
       "company": "HAMSA APAC (SINGAPORE) PTE. LTD.",
-      "title": "Software Engineer - AI, Blockchain, Cryptographer verticals",
+      "title": "Software Engineer",
       "score": 90,
       "grade": "A",
       "roleFit": 92,
-      "url": "https://www.mycareersfuture.gov.sg/job/481cd6f051d14bf67a2025ca0fa2a23f",
+      "url": "https://www.mycareersfuture.gov.sg/job/f2bf90a5913eb4a0eaba21a457afd7d9",
       "location": "Islandwide, Singapore",
       "keywordHits": [
         "API",
@@ -3096,6 +3020,54 @@ window.CV_CAREER_OPS_DEEP_FIT = {
         "sql",
         "aws",
         "azure"
+      ],
+      "layer": "C"
+    },
+    {
+      "jobKey": "url:https://remotive.com/remote-jobs/product/staff-product-engineer-campinas-2090902",
+      "company": "LawnStarter",
+      "title": "Staff Product Engineer (Campinas)",
+      "score": 90,
+      "grade": "A",
+      "roleFit": 92,
+      "url": "https://remotive.com/remote-jobs/product/staff-product-engineer-campinas-2090902",
+      "location": "Brazil",
+      "keywordHits": [
+        "TypeScript",
+        "React",
+        "API",
+        "remote"
+      ],
+      "topGap": "aws",
+      "mainGaps": [
+        "aws",
+        "rest",
+        "agents",
+        "growth"
+      ],
+      "layer": "C"
+    },
+    {
+      "jobKey": "url:https://remotive.com/remote-jobs/product/staff-product-engineer-sao-paulo-2090890",
+      "company": "LawnStarter",
+      "title": "Staff Product Engineer (São Paulo)",
+      "score": 90,
+      "grade": "A",
+      "roleFit": 92,
+      "url": "https://remotive.com/remote-jobs/product/staff-product-engineer-sao-paulo-2090890",
+      "location": "Brazil",
+      "keywordHits": [
+        "TypeScript",
+        "React",
+        "API",
+        "remote"
+      ],
+      "topGap": "aws",
+      "mainGaps": [
+        "aws",
+        "rest",
+        "agents",
+        "growth"
       ],
       "layer": "C"
     },
@@ -3119,6 +3091,30 @@ window.CV_CAREER_OPS_DEEP_FIT = {
         "java",
         "kotlin",
         "llm"
+      ],
+      "layer": "C"
+    },
+    {
+      "jobKey": "url:https://www.themuse.com/jobs/merge/software-engineer-d18712",
+      "company": "Merge",
+      "title": "Software Engineer",
+      "score": 90,
+      "grade": "A",
+      "roleFit": 92,
+      "url": "https://www.themuse.com/jobs/merge/software-engineer-d18712",
+      "location": "San Francisco, CA",
+      "keywordHits": [
+        "TypeScript",
+        "React",
+        "API",
+        "TypeScript"
+      ],
+      "topGap": "python",
+      "mainGaps": [
+        "python",
+        "go",
+        "sql",
+        "postgres"
       ],
       "layer": "C"
     }
@@ -4423,6 +4419,74 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "llm": null
     },
     {
+      "jobKey": "url:https://www.themuse.com/jobs/uber/director-marketplace-central-operations-mobility-emea",
+      "company": "Uber",
+      "title": "Director, Marketplace Central Operations Mobility EMEA",
+      "score": 93,
+      "grade": "A",
+      "confidence": "medium",
+      "decision": "pursue aggressively",
+      "thesis": "Director, Marketplace Central Operations Mobility EMEA at Uber is pursue aggressively because the snapshot score is 93, with 4 profile/role keyword hits and 1 external evidence item(s).",
+      "evidence": {
+        "keywordHits": [
+          "Analytics",
+          "API",
+          "analytics",
+          "Product Engineer"
+        ],
+        "keywordMisses": [
+          "growth",
+          "operations"
+        ],
+        "researchSignals": [
+          "AI / data / platform signal",
+          "remote or hybrid signal"
+        ],
+        "evidenceCount": 1,
+        "compensationLeverage": "high"
+      },
+      "concerns": [],
+      "interviewStrategy": [
+        "Ask why the role is open and what success means in the first 90 days.",
+        "Probe team ownership, roadmap pressure, and cross-functional interfaces.",
+        "What business unit owns the Sr Software Engineer, Frontend (Web) role?",
+        "What measurable outcomes would this team expect in the first 90 days?",
+        "What recent company/product signals change the risk or upside?"
+      ],
+      "cvStrategy": [
+        "Lead with proof around: Analytics, API, analytics, Product Engineer.",
+        "Use story story-1: frontend product execution.",
+        "Use story story-2: systems and API collaboration.",
+        "Use story story-3: accessibility and quality."
+      ],
+      "compensationStrategy": {
+        "leverage": "high",
+        "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Sr Software Engineer, Frontend (Web) package, including base, bonus, equity, and review cycle?",
+        "valueAnchor": "Based on the scope of Sr Software Engineer, Frontend (Web) and my fit around JavaScript, TypeScript, React, CSS, I would like to calibrate toward the stronger end of the range if the team sees the level match."
+      },
+      "storyHooks": [
+        {
+          "id": "story-1",
+          "theme": "frontend product execution",
+          "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
+          "relevance": 0
+        },
+        {
+          "id": "story-2",
+          "theme": "systems and API collaboration",
+          "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
+          "relevance": 0
+        },
+        {
+          "id": "story-3",
+          "theme": "accessibility and quality",
+          "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
+          "relevance": 0
+        }
+      ],
+      "llm": null
+    },
+    {
       "jobKey": "url:https://www.themuse.com/jobs/uber/data-engineer-ii-61805b",
       "company": "Uber",
       "title": "Data Engineer II",
@@ -4473,76 +4537,6 @@ window.CV_CAREER_OPS_DEEP_FIT = {
         "leverage": "high",
         "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Sr Software Engineer, Frontend (Web) package, including base, bonus, equity, and review cycle?",
         "valueAnchor": "Based on the scope of Sr Software Engineer, Frontend (Web) and my fit around JavaScript, TypeScript, React, CSS, I would like to calibrate toward the stronger end of the range if the team sees the level match."
-      },
-      "storyHooks": [
-        {
-          "id": "story-1",
-          "theme": "frontend product execution",
-          "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
-          "relevance": 0
-        },
-        {
-          "id": "story-2",
-          "theme": "systems and API collaboration",
-          "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
-          "relevance": 0
-        },
-        {
-          "id": "story-3",
-          "theme": "accessibility and quality",
-          "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
-          "relevance": 0
-        }
-      ],
-      "llm": null
-    },
-    {
-      "jobKey": "url:https://www.themuse.com/jobs/apple/aiml-site-lead-lead-researcher-foundation-models-e51089",
-      "company": "Apple",
-      "title": "AIML - Site Lead & Lead Researcher, Foundation Models",
-      "score": 93,
-      "grade": "A",
-      "confidence": "medium",
-      "decision": "pursue aggressively",
-      "thesis": "AIML - Site Lead & Lead Researcher, Foundation Models at Apple is pursue aggressively because the snapshot score is 93, with 4 profile/role keyword hits and 0 external evidence item(s).",
-      "evidence": {
-        "keywordHits": [
-          "Analytics",
-          "API",
-          "analytics",
-          "Product Engineer"
-        ],
-        "keywordMisses": [
-          "python",
-          "agents",
-          "machine learning",
-          "deep learning",
-          "pytorch",
-          "tensorflow",
-          "growth"
-        ],
-        "researchSignals": [],
-        "evidenceCount": 0,
-        "compensationLeverage": "high"
-      },
-      "concerns": [
-        "External company evidence is thin; run deep research with a search API.",
-        "Profile keyword coverage is weaker than the target role language."
-      ],
-      "interviewStrategy": [
-        "Ask why the role is open and what success means in the first 90 days.",
-        "Probe team ownership, roadmap pressure, and cross-functional interfaces."
-      ],
-      "cvStrategy": [
-        "Lead with proof around: Analytics, API, analytics, Product Engineer.",
-        "Use story story-1: frontend product execution.",
-        "Use story story-2: systems and API collaboration.",
-        "Use story story-3: accessibility and quality."
-      ],
-      "compensationStrategy": {
-        "leverage": "high",
-        "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the AIML - Site Lead & Lead Researcher, Foundation Models package, including base, bonus, equity, and review cycle?",
-        "valueAnchor": "Based on the scope of AIML - Site Lead & Lead Researcher, Foundation Models and my fit around Analytics, API, product, data, I would like to calibrate toward the stronger end of the range if the team sees the level match."
       },
       "storyHooks": [
         {

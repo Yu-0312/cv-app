@@ -1,6 +1,6 @@
 # Career Ops Parallel Worker Report
 
-Generated: 2026-05-28T00:10:40.607Z
+Generated: 2026-05-29T00:30:44.861Z
 Concurrency: 4
 Jobs processed: 50
 Errors: 0
@@ -281,12 +281,12 @@ Errors: 0
 - Never store API keys or credentials in job metadata.
 - Record only application status and user-approved notes.
 
-## P0 Uber - Data Engineer II
+## P0 Uber - Director, Marketplace Central Operations Mobility EMEA
 
 - Score: 93
 - Grade: A
 - Research evidence: 1
-- Keywords: Analytics, API, Performance Optimization, engineer, product, data
+- Keywords: Analytics, API, product, data
 - Compensation leverage: high
 - Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
 
@@ -296,12 +296,12 @@ Errors: 0
 - Never store API keys or credentials in job metadata.
 - Record only application status and user-approved notes.
 
-## P0 Apple - AIML - Site Lead & Lead Researcher, Foundation Models
+## P0 Uber - Data Engineer II
 
 - Score: 93
 - Grade: A
-- Research evidence: 0
-- Keywords: Analytics, API, product, data
+- Research evidence: 1
+- Keywords: Analytics, API, Performance Optimization, engineer, product, data
 - Compensation leverage: high
 - Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
 
@@ -656,36 +656,6 @@ Errors: 0
 - Never store API keys or credentials in job metadata.
 - Record only application status and user-approved notes.
 
-## P0 ElevenLabs Ashby - Safety Engineer
-
-- Score: 92
-- Grade: A
-- Research evidence: 0
-- Keywords: React, remote, engineer, product, data
-- Compensation leverage: -
-- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
-
-### Apply Agent Guardrails
-- Never submit without explicit user confirmation.
-- Never fabricate work authorization, salary history, degree, or experience.
-- Never store API keys or credentials in job metadata.
-- Record only application status and user-approved notes.
-
-## P0 PostHog Ashby - Product Engineer
-
-- Score: 92
-- Grade: A
-- Research evidence: 0
-- Keywords: TypeScript, React, Analytics, remote, design system, engineer, product, data
-- Compensation leverage: -
-- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
-
-### Apply Agent Guardrails
-- Never submit without explicit user confirmation.
-- Never fabricate work authorization, salary history, degree, or experience.
-- Never store API keys or credentials in job metadata.
-- Record only application status and user-approved notes.
-
 ## P0 Uber - Graduate 2026 Software Engineer I, Chile
 
 - Score: 91
@@ -752,6 +722,36 @@ Errors: 0
 - Grade: A
 - Research evidence: 0
 - Keywords: TypeScript, React, CSS, Accessibility, API, remote, engineer, product, data
+- Compensation leverage: -
+- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
+
+### Apply Agent Guardrails
+- Never submit without explicit user confirmation.
+- Never fabricate work authorization, salary history, degree, or experience.
+- Never store API keys or credentials in job metadata.
+- Record only application status and user-approved notes.
+
+## P0 Asana Greenhouse - Senior Engineering Manager, Payment Platform
+
+- Score: 91
+- Grade: A
+- Research evidence: 0
+- Keywords: TypeScript, product, data
+- Compensation leverage: -
+- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
+
+### Apply Agent Guardrails
+- Never submit without explicit user confirmation.
+- Never fabricate work authorization, salary history, degree, or experience.
+- Never store API keys or credentials in job metadata.
+- Record only application status and user-approved notes.
+
+## P0 Asana Greenhouse - Senior Software Engineer, AI Chat
+
+- Score: 91
+- Grade: A
+- Research evidence: 0
+- Keywords: API, engineer, product, data
 - Compensation leverage: -
 - Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
 

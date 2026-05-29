@@ -1,6 +1,6 @@
 # Career Ops Deep Fit Report
 
-Generated: 2026-05-28T00:10:44.161Z
+Generated: 2026-05-29T00:30:48.252Z
 LLM provider: none
 Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 exploratory)
 
@@ -522,6 +522,36 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Use story story-2: systems and API collaboration.
 - Use story story-3: accessibility and quality.
 
+### Uber - Director, Marketplace Central Operations Mobility EMEA
+
+- Score: 93
+- Grade: A
+- Confidence: medium
+- Decision: pursue aggressively
+- Thesis: Director, Marketplace Central Operations Mobility EMEA at Uber is pursue aggressively because the snapshot score is 93, with 4 profile/role keyword hits and 1 external evidence item(s).
+
+#### Evidence
+- Keyword hits: Analytics, API, analytics, Product Engineer
+- Keyword misses: growth, operations
+- Research signals: AI / data / platform signal, remote or hybrid signal
+- Compensation leverage: high
+
+#### Concerns
+- None flagged
+
+#### Interview Strategy
+- Ask why the role is open and what success means in the first 90 days.
+- Probe team ownership, roadmap pressure, and cross-functional interfaces.
+- What business unit owns the Sr Software Engineer, Frontend (Web) role?
+- What measurable outcomes would this team expect in the first 90 days?
+- What recent company/product signals change the risk or upside?
+
+#### CV Strategy
+- Lead with proof around: Analytics, API, analytics, Product Engineer.
+- Use story story-1: frontend product execution.
+- Use story story-2: systems and API collaboration.
+- Use story story-3: accessibility and quality.
+
 ### Uber - Data Engineer II
 
 - Score: 93
@@ -548,34 +578,6 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 
 #### CV Strategy
 - Lead with proof around: Analytics, API, Performance Optimization, remote, analytics, Product Engineer.
-- Use story story-1: frontend product execution.
-- Use story story-2: systems and API collaboration.
-- Use story story-3: accessibility and quality.
-
-### Apple - AIML - Site Lead & Lead Researcher, Foundation Models
-
-- Score: 93
-- Grade: A
-- Confidence: medium
-- Decision: pursue aggressively
-- Thesis: AIML - Site Lead & Lead Researcher, Foundation Models at Apple is pursue aggressively because the snapshot score is 93, with 4 profile/role keyword hits and 0 external evidence item(s).
-
-#### Evidence
-- Keyword hits: Analytics, API, analytics, Product Engineer
-- Keyword misses: python, agents, machine learning, deep learning, pytorch, tensorflow, growth
-- Research signals: -
-- Compensation leverage: high
-
-#### Concerns
-- External company evidence is thin; run deep research with a search API.
-- Profile keyword coverage is weaker than the target role language.
-
-#### Interview Strategy
-- Ask why the role is open and what success means in the first 90 days.
-- Probe team ownership, roadmap pressure, and cross-functional interfaces.
-
-#### CV Strategy
-- Lead with proof around: Analytics, API, analytics, Product Engineer.
 - Use story story-1: frontend product execution.
 - Use story story-2: systems and API collaboration.
 - Use story story-3: accessibility and quality.
@@ -743,12 +745,6 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Keyword hits: -
 - Gaps: python
 
-### Strategicsiq - Sharepoint Developers - Warsaw - Poland - Onsite
-- Score: 79 | Grade: B | RoleFit: 45
-- Decision: pursue selectively
-- Keyword hits: Performance Optimization, Design Systems, design system
-- Gaps: angular
-
 ### GOLDTECH RESOURCES PTE LTD - Technical Business Analyst – Power Platform
 - Score: 78 | Grade: B | RoleFit: 45
 - Decision: pursue selectively
@@ -760,6 +756,12 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Decision: pursue selectively
 - Keyword hits: Analytics, analytics
 - Gaps: spark, excel
+
+### N-iX - Senior Scala Engineer
+- Score: 78 | Grade: B | RoleFit: 45
+- Decision: pursue selectively
+- Keyword hits: Analytics, analytics
+- Gaps: docker, kubernetes
 
 ### NVIDIA Workday - Senior Mixed Signal Circuit Design Engineer
 - Score: 77 | Grade: B | RoleFit: 45
@@ -789,12 +791,6 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Score: 76 | Grade: B | RoleFit: 45
 - Decision: pursue selectively
 - Keyword hits: dashboard
-- Gaps: python
-
-### Anitech Solutions - Business Analyst
-- Score: 76 | Grade: B | RoleFit: 45
-- Decision: pursue selectively
-- Keyword hits: Accessibility, remote
 - Gaps: python
 
 ### Roblox Greenhouse - Senior QA Engineer, Game Engine
@@ -833,12 +829,6 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Keyword hits: -
 - Gaps: python
 
-### ElevenLabs Ashby - Audio Engineering (Freelance)
-- Score: 74 | Grade: B | RoleFit: 45
-- Decision: pursue selectively
-- Keyword hits: remote
-- Gaps: -
-
 ### Cursor Ashby - Associate Field Engineer
 - Score: 74 | Grade: B | RoleFit: 45
 - Decision: pursue selectively
@@ -850,12 +840,6 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Decision: pursue selectively
 - Keyword hits: -
 - Gaps: java
-
-### DCONSTRUCT ROBOTICS PTE. LTD. - C/C++ Software Engineer
-- Score: 73 | Grade: B | RoleFit: 45
-- Decision: pursue selectively
-- Keyword hits: -
-- Gaps: -
 
 ### DCONSTRUCT ROBOTICS PTE. LTD. - Robotics Software Engineer
 - Score: 73 | Grade: B | RoleFit: 45
@@ -886,18 +870,6 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Decision: pursue selectively
 - Keyword hits: -
 - Gaps: python
-
-### EXYTE SINGAPORE PTE. LTD. - Senior Engineer Electrical
-- Score: 73 | Grade: B | RoleFit: 45
-- Decision: pursue selectively
-- Keyword hits: -
-- Gaps: excel
-
-### ROKKO SYSTEMS PTE. LTD. - Software Engineer II
-- Score: 71 | Grade: C | RoleFit: 45
-- Decision: pursue selectively
-- Keyword hits: -
-- Gaps: computer vision
 
 ### AEM SINGAPORE PTE. LTD. - Software Engineer (Test Automation / C++)
 - Score: 71 | Grade: C | RoleFit: 45
@@ -935,29 +907,59 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Keyword hits: -
 - Gaps: -
 
-### EXYTE SINGAPORE PTE. LTD. - Engineer Electrical
-- Score: 71 | Grade: C | RoleFit: 45
-- Decision: pursue selectively
-- Keyword hits: -
-- Gaps: excel
-
-### KUBO - Cybersecurity Engineer
-- Score: 70 | Grade: C | RoleFit: 45
-- Decision: pursue selectively
-- Keyword hits: -
-- Gaps: python, java
-
 ### NVIDIA Workday - Senior Package Engineer
 - Score: 69 | Grade: C | RoleFit: 45
 - Decision: hold / compare
 - Keyword hits: -
 - Gaps: -
 
-### ROKKO SYSTEMS PTE. LTD. - Software Engineer I
-- Score: 68 | Grade: C | RoleFit: 45
+### NK EDUCATION PTE. LTD. - Teacher manager
+- Score: 69 | Grade: C | RoleFit: 45
 - Decision: hold / compare
 - Keyword hits: -
-- Gaps: computer vision
+- Gaps: -
+
+### NK EDU (FARRER PARK) PTE. LTD. - Teacher manager
+- Score: 69 | Grade: C | RoleFit: 45
+- Decision: hold / compare
+- Keyword hits: -
+- Gaps: -
+
+### emagine Polska - Release & Documentation Manager
+- Score: 69 | Grade: C | RoleFit: 45
+- Decision: hold / compare
+- Keyword hits: remote
+- Gaps: -
+
+### Fraser Coast Regional Council - Expressions of Interest
+- Score: 68 | Grade: C | RoleFit: 45
+- Decision: hold / compare
+- Keyword hits: remote
+- Gaps: -
+
+### Universia MÃ©xico - MEX Cajero Sucursal
+- Score: 68 | Grade: C | RoleFit: 45
+- Decision: hold / compare
+- Keyword hits: remote
+- Gaps: excel
+
+### Gasparini, Barbosa e Freire Advogados - Advogado JÃºnior Trabalhista
+- Score: 68 | Grade: C | RoleFit: 45
+- Decision: hold / compare
+- Keyword hits: remote
+- Gaps: excel
+
+### Universia MÃ©xico - MEX Cajero Dual
+- Score: 68 | Grade: C | RoleFit: 45
+- Decision: hold / compare
+- Keyword hits: remote
+- Gaps: -
+
+### Apprentus - Entrenador a Deportivo
+- Score: 67 | Grade: C | RoleFit: 45
+- Decision: hold / compare
+- Keyword hits: remote
+- Gaps: -
 
 ## Layer C — Exploratory Signals (roleFit < 40)
 
@@ -979,8 +981,6 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - **Stripe Greenhouse — Learning Architect** (score: 92) | Top gap: growth
 - **Canonical Greenhouse — Security Software Engineer** (score: 92) | Top gap: python
 - **Vercel Greenhouse — Site Engineer** (score: 92) | Top gap: agents
-- **ElevenLabs Ashby — Safety Engineer** (score: 92) | Top gap: python
-- **PostHog Ashby — Product Engineer** (score: 92) | Top gap: python
 - **Uber — Graduate 2026 Software Engineer I, Chile** (score: 91) | Top gap: python
 - **EPAM Systems — Senior Data Engineer (Palantir)** (score: 91) | Top gap: python
 - **Allstate — Product Engineer - Java Spring Boot w/ Full Stack Option** (score: 91) | Top gap: python
@@ -988,7 +988,9 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - **Canonical Greenhouse — Web Frontend Engineer - JS, CSS, React, Flutter** (score: 91) | Top gap: docker
 - **Asana Greenhouse — Senior Engineering Manager, Payment Platform** (score: 91) | Top gap: kubernetes
 - **Asana Greenhouse — Senior Software Engineer, AI Chat** (score: 91) | Top gap: sales
-- **Givery — Full Stack Engineer (Python, TypeScript)** (score: 91) | Top gap: python
-- **HAMSA APAC (SINGAPORE) PTE. LTD. — Software Engineer - AI, Blockchain, Cryptographer verticals** (score: 90) | Top gap: java
+- **HAMSA APAC (SINGAPORE) PTE. LTD. — Software Engineer** (score: 90) | Top gap: java
+- **LawnStarter — Staff Product Engineer (Campinas)** (score: 90) | Top gap: aws
+- **LawnStarter — Staff Product Engineer (São Paulo)** (score: 90) | Top gap: aws
 - **DoorDash — UX Design Engineer, Content Tooling** (score: 90) | Top gap: java
+- **Merge — Software Engineer** (score: 90) | Top gap: python
 
