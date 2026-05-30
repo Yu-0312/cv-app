@@ -1,6 +1,6 @@
 # Career Ops Deep Fit Report
 
-Generated: 2026-05-30T00:15:05.466Z
+Generated: 2026-05-30T23:47:12.321Z
 LLM provider: none
 Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 exploratory)
 
@@ -17,7 +17,7 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 #### Evidence
 - Keyword hits: Frontend Engineer, JavaScript, TypeScript, React, Next.js, CSS, Accessibility, API, Design Systems, design system, TypeScript, React, Frontend Engineer
 - Keyword misses: html, growth
-- Research signals: -
+- Research signals: AI / data / platform signal, remote or hybrid signal
 - Compensation leverage: high
 
 #### Concerns
@@ -47,7 +47,7 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 #### Evidence
 - Keyword hits: Frontend Engineer, TypeScript, React, Accessibility, API, dashboard, TypeScript, React, Frontend Engineer
 - Keyword misses: aws, docker, kubernetes, rest, llm, rag, agents, growth, operations
-- Research signals: -
+- Research signals: AI / data / platform signal, remote or hybrid signal
 - Compensation leverage: high
 
 #### Concerns
@@ -92,66 +92,6 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 
 #### CV Strategy
 - Lead with proof around: Frontend Engineer, JavaScript, React, CSS, API, React.
-- Use story story-1: frontend product execution.
-- Use story story-2: systems and API collaboration.
-- Use story story-3: accessibility and quality.
-
-### TIKTOK PTE. LTD. - Frontend Software Engineer (Payment), TikTok Live - Singapore
-
-- Score: 95
-- Grade: A
-- Confidence: medium
-- Decision: pursue aggressively
-- Thesis: Frontend Software Engineer (Payment), TikTok Live - Singapore at TIKTOK PTE. LTD. is pursue aggressively because the snapshot score is 95, with 6 profile/role keyword hits and 1 external evidence item(s).
-
-#### Evidence
-- Keyword hits: Frontend Engineer, JavaScript, CSS, API, remote, Frontend Engineer
-- Keyword misses: html, growth
-- Research signals: AI / data / platform signal, remote or hybrid signal
-- Compensation leverage: high
-
-#### Concerns
-- None flagged
-
-#### Interview Strategy
-- Ask why the role is open and what success means in the first 90 days.
-- Probe team ownership, roadmap pressure, and cross-functional interfaces.
-- What business unit owns the Frontend Software Engineer (Payment), TikTok Live - Singapore role?
-- What measurable outcomes would this team expect in the first 90 days?
-- What recent company/product signals change the risk or upside?
-
-#### CV Strategy
-- Lead with proof around: Frontend Engineer, JavaScript, CSS, API, remote, Frontend Engineer.
-- Use story story-1: frontend product execution.
-- Use story story-2: systems and API collaboration.
-- Use story story-3: accessibility and quality.
-
-### TIKTOK PTE. LTD. - Frontend Software Engineer (Payment) - TikTok Live - Singapore
-
-- Score: 95
-- Grade: A
-- Confidence: medium
-- Decision: pursue aggressively
-- Thesis: Frontend Software Engineer (Payment) - TikTok Live - Singapore at TIKTOK PTE. LTD. is pursue aggressively because the snapshot score is 95, with 6 profile/role keyword hits and 1 external evidence item(s).
-
-#### Evidence
-- Keyword hits: Frontend Engineer, JavaScript, CSS, API, remote, Frontend Engineer
-- Keyword misses: html, growth
-- Research signals: AI / data / platform signal, remote or hybrid signal
-- Compensation leverage: high
-
-#### Concerns
-- None flagged
-
-#### Interview Strategy
-- Ask why the role is open and what success means in the first 90 days.
-- Probe team ownership, roadmap pressure, and cross-functional interfaces.
-- What business unit owns the Frontend Software Engineer (Payment), TikTok Live - Singapore role?
-- What measurable outcomes would this team expect in the first 90 days?
-- What recent company/product signals change the risk or upside?
-
-#### CV Strategy
-- Lead with proof around: Frontend Engineer, JavaScript, CSS, API, remote, Frontend Engineer.
 - Use story story-1: frontend product execution.
 - Use story story-2: systems and API collaboration.
 - Use story story-3: accessibility and quality.
@@ -252,21 +192,23 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Grade: A
 - Confidence: medium
 - Decision: pursue aggressively
-- Thesis: Software Engineer Mid-level (Java Full Stack) at USAA is pursue aggressively because the snapshot score is 95, with 5 profile/role keyword hits and 0 external evidence item(s).
+- Thesis: Software Engineer Mid-level (Java Full Stack) at USAA is pursue aggressively because the snapshot score is 95, with 5 profile/role keyword hits and 4 external evidence item(s).
 
 #### Evidence
 - Keyword hits: JavaScript, CSS, API, remote, Full Stack Engineer
 - Keyword misses: python, java, go, swift, kotlin, sql, aws, docker, html, operations
-- Research signals: -
+- Research signals: AI / data / platform signal, remote or hybrid signal
 - Compensation leverage: high
 
 #### Concerns
-- External company evidence is thin; run deep research with a search API.
 - Profile keyword coverage is weaker than the target role language.
 
 #### Interview Strategy
 - Ask why the role is open and what success means in the first 90 days.
 - Probe team ownership, roadmap pressure, and cross-functional interfaces.
+- What business unit owns the Software Engineer Mid-level (Java Full Stack) role?
+- What measurable outcomes would this team expect in the first 90 days?
+- What recent company/product signals change the risk or upside?
 
 #### CV Strategy
 - Lead with proof around: JavaScript, CSS, API, remote, Full Stack Engineer.
@@ -280,21 +222,23 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Grade: A
 - Confidence: medium
 - Decision: pursue aggressively
-- Thesis: Software Engineer Mid-level (Java Full Stack) at USAA is pursue aggressively because the snapshot score is 95, with 5 profile/role keyword hits and 0 external evidence item(s).
+- Thesis: Software Engineer Mid-level (Java Full Stack) at USAA is pursue aggressively because the snapshot score is 95, with 5 profile/role keyword hits and 4 external evidence item(s).
 
 #### Evidence
 - Keyword hits: JavaScript, CSS, API, remote, Full Stack Engineer
 - Keyword misses: python, java, go, swift, kotlin, sql, aws, docker, html, operations
-- Research signals: -
+- Research signals: AI / data / platform signal, remote or hybrid signal
 - Compensation leverage: high
 
 #### Concerns
-- External company evidence is thin; run deep research with a search API.
 - Profile keyword coverage is weaker than the target role language.
 
 #### Interview Strategy
 - Ask why the role is open and what success means in the first 90 days.
 - Probe team ownership, roadmap pressure, and cross-functional interfaces.
+- What business unit owns the Software Engineer Mid-level (Java Full Stack) role?
+- What measurable outcomes would this team expect in the first 90 days?
+- What recent company/product signals change the risk or upside?
 
 #### CV Strategy
 - Lead with proof around: JavaScript, CSS, API, remote, Full Stack Engineer.
@@ -308,21 +252,23 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Grade: A
 - Confidence: medium
 - Decision: pursue aggressively
-- Thesis: Software Engineer Mid-level (Java Full Stack) at USAA is pursue aggressively because the snapshot score is 95, with 5 profile/role keyword hits and 0 external evidence item(s).
+- Thesis: Software Engineer Mid-level (Java Full Stack) at USAA is pursue aggressively because the snapshot score is 95, with 5 profile/role keyword hits and 4 external evidence item(s).
 
 #### Evidence
 - Keyword hits: JavaScript, CSS, API, remote, Full Stack Engineer
 - Keyword misses: python, java, go, swift, kotlin, sql, aws, docker, html, operations
-- Research signals: -
+- Research signals: AI / data / platform signal, remote or hybrid signal
 - Compensation leverage: high
 
 #### Concerns
-- External company evidence is thin; run deep research with a search API.
 - Profile keyword coverage is weaker than the target role language.
 
 #### Interview Strategy
 - Ask why the role is open and what success means in the first 90 days.
 - Probe team ownership, roadmap pressure, and cross-functional interfaces.
+- What business unit owns the Software Engineer Mid-level (Java Full Stack) role?
+- What measurable outcomes would this team expect in the first 90 days?
+- What recent company/product signals change the risk or upside?
 
 #### CV Strategy
 - Lead with proof around: JavaScript, CSS, API, remote, Full Stack Engineer.
@@ -336,21 +282,23 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Grade: A
 - Confidence: medium
 - Decision: pursue aggressively
-- Thesis: Software Engineer Mid-level (Java Full Stack) at USAA is pursue aggressively because the snapshot score is 95, with 5 profile/role keyword hits and 0 external evidence item(s).
+- Thesis: Software Engineer Mid-level (Java Full Stack) at USAA is pursue aggressively because the snapshot score is 95, with 5 profile/role keyword hits and 4 external evidence item(s).
 
 #### Evidence
 - Keyword hits: JavaScript, CSS, API, remote, Full Stack Engineer
 - Keyword misses: python, java, go, swift, kotlin, sql, aws, docker, html, operations
-- Research signals: -
+- Research signals: AI / data / platform signal, remote or hybrid signal
 - Compensation leverage: high
 
 #### Concerns
-- External company evidence is thin; run deep research with a search API.
 - Profile keyword coverage is weaker than the target role language.
 
 #### Interview Strategy
 - Ask why the role is open and what success means in the first 90 days.
 - Probe team ownership, roadmap pressure, and cross-functional interfaces.
+- What business unit owns the Software Engineer Mid-level (Java Full Stack) role?
+- What measurable outcomes would this team expect in the first 90 days?
+- What recent company/product signals change the risk or upside?
 
 #### CV Strategy
 - Lead with proof around: JavaScript, CSS, API, remote, Full Stack Engineer.
@@ -590,7 +538,7 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Keyword hits: Analytics, Performance Optimization, analytics, Product Engineer
 - Keyword misses: spark, machine learning, sales, operations, excel
 - Research signals: -
-- Compensation leverage: -
+- Compensation leverage: high
 
 #### Concerns
 - External company evidence is thin; run deep research with a search API.
@@ -721,6 +669,61 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Use story story-2: systems and API collaboration.
 - Use story story-3: accessibility and quality.
 
+### Capital One - Distinguished Engineer (Remote - Eligible)
+
+- Score: 93
+- Grade: A
+- Confidence: medium
+- Decision: pursue aggressively
+- Thesis: Distinguished Engineer (Remote - Eligible) at Capital One is pursue aggressively because the snapshot score is 93, with 6 profile/role keyword hits and 0 external evidence item(s).
+
+#### Evidence
+- Keyword hits: JavaScript, TypeScript, API, remote, TypeScript, Product Engineer
+- Keyword misses: python, java, go, swift, aws, azure, machine learning
+- Research signals: -
+- Compensation leverage: -
+
+#### Concerns
+- External company evidence is thin; run deep research with a search API.
+- Profile keyword coverage is weaker than the target role language.
+
+#### Interview Strategy
+- Ask why the role is open and what success means in the first 90 days.
+- Probe team ownership, roadmap pressure, and cross-functional interfaces.
+
+#### CV Strategy
+- Lead with proof around: JavaScript, TypeScript, API, remote, TypeScript, Product Engineer.
+- Use story story-1: frontend product execution.
+- Use story story-2: systems and API collaboration.
+- Use story story-3: accessibility and quality.
+
+### Stripe Greenhouse - Android Engineer, Terminal Developer Productivity
+
+- Score: 93
+- Grade: A
+- Confidence: medium
+- Decision: pursue aggressively
+- Thesis: Android Engineer, Terminal Developer Productivity at Stripe Greenhouse is pursue aggressively because the snapshot score is 93, with 3 profile/role keyword hits and 0 external evidence item(s).
+
+#### Evidence
+- Keyword hits: API, remote, Product Engineer
+- Keyword misses: java, go, kotlin
+- Research signals: -
+- Compensation leverage: -
+
+#### Concerns
+- External company evidence is thin; run deep research with a search API.
+
+#### Interview Strategy
+- Ask why the role is open and what success means in the first 90 days.
+- Probe team ownership, roadmap pressure, and cross-functional interfaces.
+
+#### CV Strategy
+- Lead with proof around: API, remote, Product Engineer.
+- Use story story-1: frontend product execution.
+- Use story story-2: systems and API collaboration.
+- Use story story-3: accessibility and quality.
+
 ## Layer B — Standard Matches (roleFit 40-67)
 
 ### NVIDIA Workday - Senior Solution Architect - Telco Network Automation
@@ -783,12 +786,6 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Keyword hits: Performance Optimization
 - Gaps: -
 
-### NVIDIA Workday - Senior VLSI CDC Engineer
-- Score: 76 | Grade: B | RoleFit: 45
-- Decision: pursue selectively
-- Keyword hits: dashboard
-- Gaps: python
-
 ### Roblox Greenhouse - Senior QA Engineer, Game Engine
 - Score: 75 | Grade: B | RoleFit: 45
 - Decision: pursue selectively
@@ -825,12 +822,6 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Keyword hits: remote
 - Gaps: -
 
-### HIVEBOTICS PTE. LTD. - Robotics Software Engineer Trainee
-- Score: 73 | Grade: B | RoleFit: 45
-- Decision: pursue selectively
-- Keyword hits: -
-- Gaps: java
-
 ### DCONSTRUCT ROBOTICS PTE. LTD. - Robotics Software Engineer
 - Score: 73 | Grade: B | RoleFit: 45
 - Decision: pursue selectively
@@ -849,18 +840,6 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Keyword hits: -
 - Gaps: -
 
-### NVIDIA Workday - Senior VLSI Integration Engineer
-- Score: 73 | Grade: B | RoleFit: 45
-- Decision: pursue selectively
-- Keyword hits: -
-- Gaps: python
-
-### NVIDIA Workday - VLSI Integration Engineer
-- Score: 73 | Grade: B | RoleFit: 45
-- Decision: pursue selectively
-- Keyword hits: -
-- Gaps: python
-
 ### AEM SINGAPORE PTE. LTD. - Software Engineer (Test Automation / C++)
 - Score: 71 | Grade: C | RoleFit: 45
 - Decision: pursue selectively
@@ -873,17 +852,23 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Keyword hits: -
 - Gaps: java, go
 
-### MI EQUIPMENT PTE. LTD. - Senior Software Engineer
-- Score: 71 | Grade: C | RoleFit: 45
-- Decision: pursue selectively
-- Keyword hits: -
-- Gaps: -
-
 ### CERTIS TECHNOLOGY (SINGAPORE) PTE. LTD. - Senior/Software Engineer (Technical Lead)
 - Score: 71 | Grade: C | RoleFit: 45
 - Decision: pursue selectively
 - Keyword hits: JavaScript
 - Gaps: python, java
+
+### AEM SINGAPORE PTE. LTD. - Embedded Software Engineer
+- Score: 71 | Grade: C | RoleFit: 45
+- Decision: pursue selectively
+- Keyword hits: -
+- Gaps: python
+
+### National Legal Aid &amp; Defender Association - Paralegal
+- Score: 71 | Grade: C | RoleFit: 45
+- Decision: pursue selectively
+- Keyword hits: remote
+- Gaps: -
 
 ### NVIDIA Workday - Senior Formal Verification Engineer
 - Score: 71 | Grade: C | RoleFit: 45
@@ -903,29 +888,23 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Keyword hits: -
 - Gaps: -
 
+### Dana Incorporated - General Production
+- Score: 69 | Grade: C | RoleFit: 45
+- Decision: hold / compare
+- Keyword hits: remote
+- Gaps: -
+
 ### ALLEGIS GROUP SINGAPORE PRIVATE LIMITED - Business Analyst
 - Score: 68 | Grade: C | RoleFit: 45
 - Decision: hold / compare
 - Keyword hits: -
 - Gaps: -
 
-### Fraser Coast Regional Council - Expressions of Interest
+### Humans of Agriculture - Expressions of Interest
 - Score: 68 | Grade: C | RoleFit: 45
 - Decision: hold / compare
 - Keyword hits: remote
 - Gaps: -
-
-### Universia MÃ©xico - MEX Cajero Sucursal
-- Score: 68 | Grade: C | RoleFit: 45
-- Decision: hold / compare
-- Keyword hits: remote
-- Gaps: excel
-
-### Gasparini, Barbosa e Freire Advogados - Advogado JÃºnior Trabalhista
-- Score: 68 | Grade: C | RoleFit: 45
-- Decision: hold / compare
-- Keyword hits: remote
-- Gaps: excel
 
 ### ベクターリスクマネジメント株式会社 - [Desk work using English and Korean] Foreign-affiliated operator | Monthly salary example of 450,000 yen or more | No experience necessary | Security Controller
 - Score: 68 | Grade: C | RoleFit: 45
@@ -939,16 +918,10 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Keyword hits: -
 - Gaps: -
 
-### ADSAN LAW LLC - Conveyancing Secretary
-- Score: 68 | Grade: C | RoleFit: 45
-- Decision: hold / compare
-- Keyword hits: -
-- Gaps: -
-
-### confidential - Manufacturing engineer (Nwe graduated in 2027)
+### Gabinete de RecolocaciÃ³n Industrial - Formador A Para Aula Virtual â EconomÃ­a Circular
 - Score: 67 | Grade: C | RoleFit: 45
 - Decision: hold / compare
-- Keyword hits: -
+- Keyword hits: remote
 - Gaps: -
 
 ### Fujisoft Co., Ltd. - [In-vehicle Software System Engineer] N2 level or higher welcome / Annual salary of 4.5 million yen or more / Career advancement / Atsugi City, Kanagawa Prefecture
@@ -963,10 +936,38 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Keyword hits: -
 - Gaps: -
 
+### Princess Cruise Lines ltd. (Carnival Japan, Inc) - Activity Staff (Japanese / English speaking Emcee)
+- Score: 67 | Grade: C | RoleFit: 45
+- Decision: hold / compare
+- Keyword hits: -
+- Gaps: -
+
+### NVIDIA - NVIDIA OVX Systems
+- Score: 66 | Grade: C | RoleFit: 45
+- Decision: hold / compare
+- Keyword hits: -
+- Gaps: -
+
+### Tencent Careers China - 腾讯投资-Fund Investment Associate / Associate Director
+- Score: 66 | Grade: C | RoleFit: 45
+- Decision: hold / compare
+- Keyword hits: -
+- Gaps: -
+
+### å£ä¸°äº¨å©ç½®ä¸æéå¬å¸ - è£äºé¿ç§ä¹¦ å¹¿å·éå¢åå
+- Score: 66 | Grade: C | RoleFit: 45
+- Decision: hold / compare
+- Keyword hits: remote
+- Gaps: -
+
+### US Army Corps of Engineers - Interdisciplinary
+- Score: 66 | Grade: C | RoleFit: 45
+- Decision: hold / compare
+- Keyword hits: remote
+- Gaps: -
+
 ## Layer C — Exploratory Signals (roleFit < 40)
 
-- **Capital One — Distinguished Engineer (Remote - Eligible)** (score: 93) | Top gap: python
-- **Stripe Greenhouse — Android Engineer, Terminal Developer Productivity** (score: 93) | Top gap: java
 - **Figma Greenhouse — Software Engineer, AI Product (London, United Kingdom)** (score: 93) | Top gap: llm
 - **Airbnb Greenhouse — Senior Software Engineer, Quality Platform** (score: 93) | Top gap: python
 - **Airbnb Greenhouse — Senior Web Automation Engineer, Quality Platform** (score: 93) | Top gap: agents
@@ -995,4 +996,6 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - **Canonical Greenhouse — Web Frontend Engineer - JS, CSS, React, Flutter** (score: 91) | Top gap: docker
 - **Asana Greenhouse — Senior Engineering Manager, Payment Platform** (score: 91) | Top gap: kubernetes
 - **Asana Greenhouse — Senior Software Engineer, AI Chat** (score: 91) | Top gap: sales
+- **Asana Greenhouse — Senior Software Engineer, APIs** (score: 91) | Top gap: agents
+- **HAMSA APAC (SINGAPORE) PTE. LTD. — Software Engineer** (score: 90) | Top gap: java
 

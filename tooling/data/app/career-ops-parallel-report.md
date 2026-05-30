@@ -1,6 +1,6 @@
 # Career Ops Parallel Worker Report
 
-Generated: 2026-05-30T00:15:01.964Z
+Generated: 2026-05-30T23:47:08.926Z
 Concurrency: 4
 Jobs processed: 50
 Errors: 0
@@ -47,36 +47,6 @@ Errors: 0
 - Grade: A
 - Research evidence: 1
 - Keywords: JavaScript, React, engineer, product, data, restful, graphql, node.js
-- Compensation leverage: high
-- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
-
-### Apply Agent Guardrails
-- Never submit without explicit user confirmation.
-- Never fabricate work authorization, salary history, degree, or experience.
-- Never store API keys or credentials in job metadata.
-- Record only application status and user-approved notes.
-
-## P0 TIKTOK PTE. LTD. - Frontend Software Engineer (Payment), TikTok Live - Singapore
-
-- Score: 95
-- Grade: A
-- Research evidence: 1
-- Keywords: JavaScript, CSS, remote, engineer, product, data
-- Compensation leverage: high
-- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
-
-### Apply Agent Guardrails
-- Never submit without explicit user confirmation.
-- Never fabricate work authorization, salary history, degree, or experience.
-- Never store API keys or credentials in job metadata.
-- Record only application status and user-approved notes.
-
-## P0 TIKTOK PTE. LTD. - Frontend Software Engineer (Payment) - TikTok Live - Singapore
-
-- Score: 95
-- Grade: A
-- Research evidence: 1
-- Keywords: JavaScript, CSS, remote, engineer, product, data
 - Compensation leverage: high
 - Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
 
@@ -135,7 +105,7 @@ Errors: 0
 
 - Score: 95
 - Grade: A
-- Research evidence: 0
+- Research evidence: 4
 - Keywords: JavaScript, CSS, API, remote, engineer, data
 - Compensation leverage: high
 - Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
@@ -150,7 +120,7 @@ Errors: 0
 
 - Score: 95
 - Grade: A
-- Research evidence: 0
+- Research evidence: 4
 - Keywords: JavaScript, CSS, API, remote, engineer, data
 - Compensation leverage: high
 - Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
@@ -165,7 +135,7 @@ Errors: 0
 
 - Score: 95
 - Grade: A
-- Research evidence: 0
+- Research evidence: 4
 - Keywords: JavaScript, CSS, API, remote, engineer, data
 - Compensation leverage: high
 - Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
@@ -180,7 +150,7 @@ Errors: 0
 
 - Score: 95
 - Grade: A
-- Research evidence: 0
+- Research evidence: 4
 - Keywords: JavaScript, CSS, API, remote, engineer, data
 - Compensation leverage: high
 - Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
@@ -317,7 +287,7 @@ Errors: 0
 - Grade: A
 - Research evidence: 0
 - Keywords: Analytics, Performance Optimization, product, data
-- Compensation leverage: -
+- Compensation leverage: high
 - Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
 
 ### Apply Agent Guardrails
@@ -752,6 +722,36 @@ Errors: 0
 - Grade: A
 - Research evidence: 0
 - Keywords: JavaScript, TypeScript, Analytics, API, engineer, product, data
+- Compensation leverage: -
+- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
+
+### Apply Agent Guardrails
+- Never submit without explicit user confirmation.
+- Never fabricate work authorization, salary history, degree, or experience.
+- Never store API keys or credentials in job metadata.
+- Record only application status and user-approved notes.
+
+## P0 Allstate - Product Engineer - Java Spring Boot w/ Full Stack Option
+
+- Score: 91
+- Grade: A
+- Research evidence: 0
+- Keywords: TypeScript, React, API, remote, engineer, product, data, restful
+- Compensation leverage: -
+- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
+
+### Apply Agent Guardrails
+- Never submit without explicit user confirmation.
+- Never fabricate work authorization, salary history, degree, or experience.
+- Never store API keys or credentials in job metadata.
+- Record only application status and user-approved notes.
+
+## P0 Stripe Greenhouse - Full Stack Engineer, Support Experience
+
+- Score: 91
+- Grade: A
+- Research evidence: 0
+- Keywords: React, engineer, product
 - Compensation leverage: -
 - Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
 
