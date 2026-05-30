@@ -1,12 +1,12 @@
 # Career Ops Source Quality
 
-- Generated: 2026-05-29T00:28:04.731Z
+- Generated: 2026-05-30T00:12:19.663Z
 - Mode: filter
 - Minimum score: 45
-- Input active jobs: 83075
-- Kept active jobs: 82939
-- Filtered active jobs: 136
-- Quality tiers: high 77601 / medium 5242 / low 96
+- Input active jobs: 83459
+- Kept active jobs: 83305
+- Filtered active jobs: 154
+- Quality tiers: high 77960 / medium 5247 / low 98
 
 ## Filtered Samples
 
@@ -14,8 +14,8 @@
 - 37 Apple - Careers at Apple: Join our community and culture. (landing-or-search-title, thin-description)
 - 19 Unknown - TW-Operations Expert - Jobs - Careers at Apple (missing-company, landing-or-search-title, thin-description)
 - 19 Unknown - Select Location - Jobs - Careers at Apple (missing-company, landing-or-search-title, thin-description)
-- 19 Unknown - IC Packaging Engineer - Jobs - Careers at Apple (missing-company, landing-or-search-title, thin-description)
 - 19 Unknown - AI System Engineer - Jobs - Careers at Apple (missing-company, landing-or-search-title, thin-description)
+- 19 Unknown - IC Packaging Engineer - Jobs - Careers at Apple (missing-company, landing-or-search-title, thin-description)
 - 19 Unknown - Process & Integration Engineer - TFT Display Technology - Jobs - Careers at Apple (missing-company, landing-or-search-title, thin-description)
 - 19 Unknown - SoC - ATE Test Engineer - Jobs - Careers at Apple (missing-company, landing-or-search-title, thin-description)
 - 19 Unknown - Camera Electrical System Integration Engineer - Camera Hardware - Jobs - Careers at Apple (missing-company, landing-or-search-title, thin-description)
@@ -32,7 +32,7 @@
 - 70 - Delta - Company - Global Operations - Delta
 - 70 - Delta - Investors - Analyst Meetings - Delta
 - 70 - Delta - Delta’s Sales and Purchase T&Cs
-- 70 TrendAI - TrendAI Vision One™ – The Cybersecurity Enterprise Platform
+- 70 TrendAI - The Cybersecurity Enterprise Platform | TrendAI (US)
 - 52 Unknown - Retarget high-value users and maximize ROAS with AI | Appier
 - 70 Unknown - AIXPERT - Campaign Automation Cloud | Appier
 - 70 Unknown - AIQUA - AI Personalization Cloud｜Appier

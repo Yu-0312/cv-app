@@ -1,6 +1,6 @@
 {
   "source": "career-ops-deep-fit",
-  "generatedAt": "2026-05-29T00:30:48.252Z",
+  "generatedAt": "2026-05-30T00:15:05.466Z",
   "llmProvider": "none",
   "summary": {
     "totalResults": 95,
@@ -384,6 +384,84 @@
       "llm": null
     },
     {
+      "jobKey": "url:https://www.themuse.com/jobs/uber/sr-software-engineer-frontend-web-8fc2b7",
+      "company": "Uber",
+      "title": "Sr Software Engineer, Frontend (Web)",
+      "score": 95,
+      "grade": "A",
+      "confidence": "medium",
+      "decision": "pursue aggressively",
+      "thesis": "Sr Software Engineer, Frontend (Web) at Uber is pursue aggressively because the snapshot score is 95, with 11 profile/role keyword hits and 1 external evidence item(s).",
+      "evidence": {
+        "keywordHits": [
+          "Frontend Engineer",
+          "JavaScript",
+          "TypeScript",
+          "React",
+          "CSS",
+          "API",
+          "Performance Optimization",
+          "remote",
+          "TypeScript",
+          "React",
+          "Frontend Engineer"
+        ],
+        "keywordMisses": [
+          "angular",
+          "python",
+          "go",
+          "html",
+          "growth"
+        ],
+        "researchSignals": [
+          "AI / data / platform signal",
+          "remote or hybrid signal"
+        ],
+        "evidenceCount": 1,
+        "compensationLeverage": "high"
+      },
+      "concerns": [],
+      "interviewStrategy": [
+        "Ask why the role is open and what success means in the first 90 days.",
+        "Probe team ownership, roadmap pressure, and cross-functional interfaces.",
+        "What business unit owns the Sr Software Engineer, Frontend (Web) role?",
+        "What measurable outcomes would this team expect in the first 90 days?",
+        "What recent company/product signals change the risk or upside?"
+      ],
+      "cvStrategy": [
+        "Lead with proof around: Frontend Engineer, JavaScript, TypeScript, React, CSS, API.",
+        "Use story story-1: frontend product execution.",
+        "Use story story-2: systems and API collaboration.",
+        "Use story story-3: accessibility and quality."
+      ],
+      "compensationStrategy": {
+        "leverage": "high",
+        "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Sr Software Engineer, Frontend (Web) package, including base, bonus, equity, and review cycle?",
+        "valueAnchor": "Based on the scope of Sr Software Engineer, Frontend (Web) and my fit around JavaScript, TypeScript, React, CSS, I would like to calibrate toward the stronger end of the range if the team sees the level match."
+      },
+      "storyHooks": [
+        {
+          "id": "story-1",
+          "theme": "frontend product execution",
+          "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
+          "relevance": 4
+        },
+        {
+          "id": "story-2",
+          "theme": "systems and API collaboration",
+          "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
+          "relevance": 4
+        },
+        {
+          "id": "story-3",
+          "theme": "accessibility and quality",
+          "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
+          "relevance": 4
+        }
+      ],
+      "llm": null
+    },
+    {
       "jobKey": "url:https://www.themuse.com/jobs/disney/lead-software-engineer-944f62",
       "company": "Disney",
       "title": "Lead Software Engineer",
@@ -521,79 +599,297 @@
       "llm": null
     },
     {
-      "jobKey": "url:https://www.themuse.com/jobs/uber/sr-software-engineer-frontend-web-8fc2b7",
-      "company": "Uber",
-      "title": "Sr Software Engineer, Frontend (Web)",
+      "jobKey": "url:https://www.themuse.com/jobs/usaa/software-engineer-midlevel-java-full-stack-adab58",
+      "company": "USAA",
+      "title": "Software Engineer Mid-level (Java Full Stack)",
       "score": 95,
       "grade": "A",
       "confidence": "medium",
       "decision": "pursue aggressively",
-      "thesis": "Sr Software Engineer, Frontend (Web) at Uber is pursue aggressively because the snapshot score is 95, with 11 profile/role keyword hits and 1 external evidence item(s).",
+      "thesis": "Software Engineer Mid-level (Java Full Stack) at USAA is pursue aggressively because the snapshot score is 95, with 5 profile/role keyword hits and 0 external evidence item(s).",
       "evidence": {
         "keywordHits": [
-          "Frontend Engineer",
           "JavaScript",
-          "TypeScript",
-          "React",
           "CSS",
           "API",
-          "Performance Optimization",
           "remote",
-          "TypeScript",
-          "React",
-          "Frontend Engineer"
+          "Full Stack Engineer"
         ],
         "keywordMisses": [
-          "angular",
           "python",
+          "java",
           "go",
+          "swift",
+          "kotlin",
+          "sql",
+          "aws",
+          "docker",
           "html",
-          "growth"
+          "operations"
         ],
-        "researchSignals": [
-          "AI / data / platform signal",
-          "remote or hybrid signal"
-        ],
-        "evidenceCount": 1,
+        "researchSignals": [],
+        "evidenceCount": 0,
         "compensationLeverage": "high"
       },
-      "concerns": [],
+      "concerns": [
+        "External company evidence is thin; run deep research with a search API.",
+        "Profile keyword coverage is weaker than the target role language."
+      ],
       "interviewStrategy": [
         "Ask why the role is open and what success means in the first 90 days.",
-        "Probe team ownership, roadmap pressure, and cross-functional interfaces.",
-        "What business unit owns the Sr Software Engineer, Frontend (Web) role?",
-        "What measurable outcomes would this team expect in the first 90 days?",
-        "What recent company/product signals change the risk or upside?"
+        "Probe team ownership, roadmap pressure, and cross-functional interfaces."
       ],
       "cvStrategy": [
-        "Lead with proof around: Frontend Engineer, JavaScript, TypeScript, React, CSS, API.",
+        "Lead with proof around: JavaScript, CSS, API, remote, Full Stack Engineer.",
         "Use story story-1: frontend product execution.",
         "Use story story-2: systems and API collaboration.",
         "Use story story-3: accessibility and quality."
       ],
       "compensationStrategy": {
         "leverage": "high",
-        "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Sr Software Engineer, Frontend (Web) package, including base, bonus, equity, and review cycle?",
-        "valueAnchor": "Based on the scope of Sr Software Engineer, Frontend (Web) and my fit around JavaScript, TypeScript, React, CSS, I would like to calibrate toward the stronger end of the range if the team sees the level match."
+        "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Software Engineer Mid-level (Java Full Stack) package, including base, bonus, equity, and review cycle?",
+        "valueAnchor": "Based on the scope of Software Engineer Mid-level (Java Full Stack) and my fit around JavaScript, CSS, API, remote, I would like to calibrate toward the stronger end of the range if the team sees the level match."
       },
       "storyHooks": [
         {
           "id": "story-1",
           "theme": "frontend product execution",
           "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
-          "relevance": 4
+          "relevance": 2
         },
         {
           "id": "story-2",
           "theme": "systems and API collaboration",
           "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
-          "relevance": 4
+          "relevance": 2
         },
         {
           "id": "story-3",
           "theme": "accessibility and quality",
           "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
-          "relevance": 4
+          "relevance": 2
+        }
+      ],
+      "llm": null
+    },
+    {
+      "jobKey": "url:https://www.themuse.com/jobs/usaa/software-engineer-midlevel-java-full-stack-461216",
+      "company": "USAA",
+      "title": "Software Engineer Mid-level (Java Full Stack)",
+      "score": 95,
+      "grade": "A",
+      "confidence": "medium",
+      "decision": "pursue aggressively",
+      "thesis": "Software Engineer Mid-level (Java Full Stack) at USAA is pursue aggressively because the snapshot score is 95, with 5 profile/role keyword hits and 0 external evidence item(s).",
+      "evidence": {
+        "keywordHits": [
+          "JavaScript",
+          "CSS",
+          "API",
+          "remote",
+          "Full Stack Engineer"
+        ],
+        "keywordMisses": [
+          "python",
+          "java",
+          "go",
+          "swift",
+          "kotlin",
+          "sql",
+          "aws",
+          "docker",
+          "html",
+          "operations"
+        ],
+        "researchSignals": [],
+        "evidenceCount": 0,
+        "compensationLeverage": "high"
+      },
+      "concerns": [
+        "External company evidence is thin; run deep research with a search API.",
+        "Profile keyword coverage is weaker than the target role language."
+      ],
+      "interviewStrategy": [
+        "Ask why the role is open and what success means in the first 90 days.",
+        "Probe team ownership, roadmap pressure, and cross-functional interfaces."
+      ],
+      "cvStrategy": [
+        "Lead with proof around: JavaScript, CSS, API, remote, Full Stack Engineer.",
+        "Use story story-1: frontend product execution.",
+        "Use story story-2: systems and API collaboration.",
+        "Use story story-3: accessibility and quality."
+      ],
+      "compensationStrategy": {
+        "leverage": "high",
+        "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Software Engineer Mid-level (Java Full Stack) package, including base, bonus, equity, and review cycle?",
+        "valueAnchor": "Based on the scope of Software Engineer Mid-level (Java Full Stack) and my fit around JavaScript, CSS, API, remote, I would like to calibrate toward the stronger end of the range if the team sees the level match."
+      },
+      "storyHooks": [
+        {
+          "id": "story-1",
+          "theme": "frontend product execution",
+          "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
+          "relevance": 2
+        },
+        {
+          "id": "story-2",
+          "theme": "systems and API collaboration",
+          "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
+          "relevance": 2
+        },
+        {
+          "id": "story-3",
+          "theme": "accessibility and quality",
+          "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
+          "relevance": 2
+        }
+      ],
+      "llm": null
+    },
+    {
+      "jobKey": "url:https://www.themuse.com/jobs/usaa/software-engineer-midlevel-java-full-stack-91f31e",
+      "company": "USAA",
+      "title": "Software Engineer Mid-level (Java Full Stack)",
+      "score": 95,
+      "grade": "A",
+      "confidence": "medium",
+      "decision": "pursue aggressively",
+      "thesis": "Software Engineer Mid-level (Java Full Stack) at USAA is pursue aggressively because the snapshot score is 95, with 5 profile/role keyword hits and 0 external evidence item(s).",
+      "evidence": {
+        "keywordHits": [
+          "JavaScript",
+          "CSS",
+          "API",
+          "remote",
+          "Full Stack Engineer"
+        ],
+        "keywordMisses": [
+          "python",
+          "java",
+          "go",
+          "swift",
+          "kotlin",
+          "sql",
+          "aws",
+          "docker",
+          "html",
+          "operations"
+        ],
+        "researchSignals": [],
+        "evidenceCount": 0,
+        "compensationLeverage": "high"
+      },
+      "concerns": [
+        "External company evidence is thin; run deep research with a search API.",
+        "Profile keyword coverage is weaker than the target role language."
+      ],
+      "interviewStrategy": [
+        "Ask why the role is open and what success means in the first 90 days.",
+        "Probe team ownership, roadmap pressure, and cross-functional interfaces."
+      ],
+      "cvStrategy": [
+        "Lead with proof around: JavaScript, CSS, API, remote, Full Stack Engineer.",
+        "Use story story-1: frontend product execution.",
+        "Use story story-2: systems and API collaboration.",
+        "Use story story-3: accessibility and quality."
+      ],
+      "compensationStrategy": {
+        "leverage": "high",
+        "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Software Engineer Mid-level (Java Full Stack) package, including base, bonus, equity, and review cycle?",
+        "valueAnchor": "Based on the scope of Software Engineer Mid-level (Java Full Stack) and my fit around JavaScript, CSS, API, remote, I would like to calibrate toward the stronger end of the range if the team sees the level match."
+      },
+      "storyHooks": [
+        {
+          "id": "story-1",
+          "theme": "frontend product execution",
+          "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
+          "relevance": 2
+        },
+        {
+          "id": "story-2",
+          "theme": "systems and API collaboration",
+          "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
+          "relevance": 2
+        },
+        {
+          "id": "story-3",
+          "theme": "accessibility and quality",
+          "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
+          "relevance": 2
+        }
+      ],
+      "llm": null
+    },
+    {
+      "jobKey": "url:https://www.themuse.com/jobs/usaa/software-engineer-midlevel-java-full-stack-daf10c",
+      "company": "USAA",
+      "title": "Software Engineer Mid-level (Java Full Stack)",
+      "score": 95,
+      "grade": "A",
+      "confidence": "medium",
+      "decision": "pursue aggressively",
+      "thesis": "Software Engineer Mid-level (Java Full Stack) at USAA is pursue aggressively because the snapshot score is 95, with 5 profile/role keyword hits and 0 external evidence item(s).",
+      "evidence": {
+        "keywordHits": [
+          "JavaScript",
+          "CSS",
+          "API",
+          "remote",
+          "Full Stack Engineer"
+        ],
+        "keywordMisses": [
+          "python",
+          "java",
+          "go",
+          "swift",
+          "kotlin",
+          "sql",
+          "aws",
+          "docker",
+          "html",
+          "operations"
+        ],
+        "researchSignals": [],
+        "evidenceCount": 0,
+        "compensationLeverage": "high"
+      },
+      "concerns": [
+        "External company evidence is thin; run deep research with a search API.",
+        "Profile keyword coverage is weaker than the target role language."
+      ],
+      "interviewStrategy": [
+        "Ask why the role is open and what success means in the first 90 days.",
+        "Probe team ownership, roadmap pressure, and cross-functional interfaces."
+      ],
+      "cvStrategy": [
+        "Lead with proof around: JavaScript, CSS, API, remote, Full Stack Engineer.",
+        "Use story story-1: frontend product execution.",
+        "Use story story-2: systems and API collaboration.",
+        "Use story story-3: accessibility and quality."
+      ],
+      "compensationStrategy": {
+        "leverage": "high",
+        "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Software Engineer Mid-level (Java Full Stack) package, including base, bonus, equity, and review cycle?",
+        "valueAnchor": "Based on the scope of Software Engineer Mid-level (Java Full Stack) and my fit around JavaScript, CSS, API, remote, I would like to calibrate toward the stronger end of the range if the team sees the level match."
+      },
+      "storyHooks": [
+        {
+          "id": "story-1",
+          "theme": "frontend product execution",
+          "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
+          "relevance": 2
+        },
+        {
+          "id": "story-2",
+          "theme": "systems and API collaboration",
+          "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
+          "relevance": 2
+        },
+        {
+          "id": "story-3",
+          "theme": "accessibility and quality",
+          "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
+          "relevance": 2
         }
       ],
       "llm": null
@@ -1193,7 +1489,7 @@
         ],
         "researchSignals": [],
         "evidenceCount": 0,
-        "compensationLeverage": "high"
+        "compensationLeverage": ""
       },
       "concerns": [
         "External company evidence is thin; run deep research with a search API.",
@@ -1209,11 +1505,7 @@
         "Use story story-2: systems and API collaboration.",
         "Use story story-3: accessibility and quality."
       ],
-      "compensationStrategy": {
-        "leverage": "high",
-        "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Director,Technical Solutions (Big Data/ AI) package, including base, bonus, equity, and review cycle?",
-        "valueAnchor": "Based on the scope of Director,Technical Solutions (Big Data/ AI) and my fit around Analytics, Performance Optimization, product, data, I would like to calibrate toward the stronger end of the range if the team sees the level match."
-      },
+      "compensationStrategy": null,
       "storyHooks": [
         {
           "id": "story-1",
@@ -1512,266 +1804,6 @@
         }
       ],
       "llm": null
-    },
-    {
-      "jobKey": "url:https://www.themuse.com/jobs/capitalone/distinguished-engineer-remote-eligible-9d0012",
-      "company": "Capital One",
-      "title": "Distinguished Engineer (Remote - Eligible)",
-      "score": 93,
-      "grade": "A",
-      "confidence": "medium",
-      "decision": "pursue aggressively",
-      "thesis": "Distinguished Engineer (Remote - Eligible) at Capital One is pursue aggressively because the snapshot score is 93, with 6 profile/role keyword hits and 0 external evidence item(s).",
-      "evidence": {
-        "keywordHits": [
-          "JavaScript",
-          "TypeScript",
-          "API",
-          "remote",
-          "TypeScript",
-          "Product Engineer"
-        ],
-        "keywordMisses": [
-          "python",
-          "java",
-          "go",
-          "swift",
-          "aws",
-          "azure",
-          "machine learning"
-        ],
-        "researchSignals": [],
-        "evidenceCount": 0,
-        "compensationLeverage": ""
-      },
-      "concerns": [
-        "External company evidence is thin; run deep research with a search API.",
-        "Profile keyword coverage is weaker than the target role language."
-      ],
-      "interviewStrategy": [
-        "Ask why the role is open and what success means in the first 90 days.",
-        "Probe team ownership, roadmap pressure, and cross-functional interfaces."
-      ],
-      "cvStrategy": [
-        "Lead with proof around: JavaScript, TypeScript, API, remote, TypeScript, Product Engineer.",
-        "Use story story-1: frontend product execution.",
-        "Use story story-2: systems and API collaboration.",
-        "Use story story-3: accessibility and quality."
-      ],
-      "compensationStrategy": null,
-      "storyHooks": [
-        {
-          "id": "story-1",
-          "theme": "frontend product execution",
-          "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
-          "relevance": 2
-        },
-        {
-          "id": "story-2",
-          "theme": "systems and API collaboration",
-          "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
-          "relevance": 2
-        },
-        {
-          "id": "story-3",
-          "theme": "accessibility and quality",
-          "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
-          "relevance": 2
-        }
-      ],
-      "llm": null
-    },
-    {
-      "jobKey": "url:https://stripe.com/jobs/search?gh_jid=7550154",
-      "company": "Stripe Greenhouse",
-      "title": "Android Engineer, Terminal Developer Productivity",
-      "score": 93,
-      "grade": "A",
-      "confidence": "medium",
-      "decision": "pursue aggressively",
-      "thesis": "Android Engineer, Terminal Developer Productivity at Stripe Greenhouse is pursue aggressively because the snapshot score is 93, with 3 profile/role keyword hits and 0 external evidence item(s).",
-      "evidence": {
-        "keywordHits": [
-          "API",
-          "remote",
-          "Product Engineer"
-        ],
-        "keywordMisses": [
-          "java",
-          "go",
-          "kotlin"
-        ],
-        "researchSignals": [],
-        "evidenceCount": 0,
-        "compensationLeverage": ""
-      },
-      "concerns": [
-        "External company evidence is thin; run deep research with a search API."
-      ],
-      "interviewStrategy": [
-        "Ask why the role is open and what success means in the first 90 days.",
-        "Probe team ownership, roadmap pressure, and cross-functional interfaces."
-      ],
-      "cvStrategy": [
-        "Lead with proof around: API, remote, Product Engineer.",
-        "Use story story-1: frontend product execution.",
-        "Use story story-2: systems and API collaboration.",
-        "Use story story-3: accessibility and quality."
-      ],
-      "compensationStrategy": null,
-      "storyHooks": [
-        {
-          "id": "story-1",
-          "theme": "frontend product execution",
-          "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
-          "relevance": 0
-        },
-        {
-          "id": "story-2",
-          "theme": "systems and API collaboration",
-          "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
-          "relevance": 0
-        },
-        {
-          "id": "story-3",
-          "theme": "accessibility and quality",
-          "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
-          "relevance": 0
-        }
-      ],
-      "llm": null
-    },
-    {
-      "jobKey": "url:https://boards.greenhouse.io/figma/jobs/5551697004?gh_jid=5551697004",
-      "company": "Figma Greenhouse",
-      "title": "Software Engineer, AI Product (London, United Kingdom)",
-      "score": 93,
-      "grade": "A",
-      "confidence": "medium",
-      "decision": "pursue aggressively",
-      "thesis": "Software Engineer, AI Product (London, United Kingdom) at Figma Greenhouse is pursue aggressively because the snapshot score is 93, with 7 profile/role keyword hits and 0 external evidence item(s).",
-      "evidence": {
-        "keywordHits": [
-          "TypeScript",
-          "React",
-          "API",
-          "Figma",
-          "TypeScript",
-          "React",
-          "Product Engineer"
-        ],
-        "keywordMisses": [
-          "llm",
-          "agents"
-        ],
-        "researchSignals": [],
-        "evidenceCount": 0,
-        "compensationLeverage": ""
-      },
-      "concerns": [
-        "External company evidence is thin; run deep research with a search API."
-      ],
-      "interviewStrategy": [
-        "Ask why the role is open and what success means in the first 90 days.",
-        "Probe team ownership, roadmap pressure, and cross-functional interfaces."
-      ],
-      "cvStrategy": [
-        "Lead with proof around: TypeScript, React, API, Figma, TypeScript, React.",
-        "Use story story-1: frontend product execution.",
-        "Use story story-2: systems and API collaboration.",
-        "Use story story-3: accessibility and quality."
-      ],
-      "compensationStrategy": null,
-      "storyHooks": [
-        {
-          "id": "story-1",
-          "theme": "frontend product execution",
-          "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
-          "relevance": 2
-        },
-        {
-          "id": "story-2",
-          "theme": "systems and API collaboration",
-          "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
-          "relevance": 2
-        },
-        {
-          "id": "story-3",
-          "theme": "accessibility and quality",
-          "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
-          "relevance": 2
-        }
-      ],
-      "llm": null
-    },
-    {
-      "jobKey": "url:https://careers.airbnb.com/positions/7380149?gh_jid=7380149",
-      "company": "Airbnb Greenhouse",
-      "title": "Senior Software Engineer, Quality Platform",
-      "score": 93,
-      "grade": "A",
-      "confidence": "medium",
-      "decision": "pursue aggressively",
-      "thesis": "Senior Software Engineer, Quality Platform at Airbnb Greenhouse is pursue aggressively because the snapshot score is 93, with 6 profile/role keyword hits and 0 external evidence item(s).",
-      "evidence": {
-        "keywordHits": [
-          "TypeScript",
-          "API",
-          "Design Systems",
-          "design system",
-          "TypeScript",
-          "Product Engineer"
-        ],
-        "keywordMisses": [
-          "python",
-          "java",
-          "swift",
-          "kotlin",
-          "llm",
-          "rag",
-          "agents",
-          "prompt engineering"
-        ],
-        "researchSignals": [],
-        "evidenceCount": 0,
-        "compensationLeverage": ""
-      },
-      "concerns": [
-        "External company evidence is thin; run deep research with a search API.",
-        "Profile keyword coverage is weaker than the target role language."
-      ],
-      "interviewStrategy": [
-        "Ask why the role is open and what success means in the first 90 days.",
-        "Probe team ownership, roadmap pressure, and cross-functional interfaces."
-      ],
-      "cvStrategy": [
-        "Lead with proof around: TypeScript, API, Design Systems, design system, TypeScript, Product Engineer.",
-        "Use story story-1: frontend product execution.",
-        "Use story story-2: systems and API collaboration.",
-        "Use story story-3: accessibility and quality."
-      ],
-      "compensationStrategy": null,
-      "storyHooks": [
-        {
-          "id": "story-1",
-          "theme": "frontend product execution",
-          "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
-          "relevance": 1
-        },
-        {
-          "id": "story-2",
-          "theme": "systems and API collaboration",
-          "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
-          "relevance": 1
-        },
-        {
-          "id": "story-3",
-          "theme": "accessibility and quality",
-          "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
-          "relevance": 1
-        }
-      ],
-      "llm": null
     }
   ],
   "layerB": [
@@ -1879,26 +1911,6 @@
       "keywordMisses": [
         "spark",
         "excel"
-      ],
-      "decision": "pursue selectively",
-      "layer": "B"
-    },
-    {
-      "jobKey": "url:https://justjoin.it/job-offer/n-ix-senior-scala-engineer-krakow-scala-15ebf7dd",
-      "company": "N-iX",
-      "title": "Senior Scala Engineer",
-      "score": 78,
-      "grade": "B",
-      "roleFit": 45,
-      "url": "https://justjoin.it/job-offer/n-ix-senior-scala-engineer-krakow-scala-15ebf7dd",
-      "location": "Kraków, PL",
-      "keywordHits": [
-        "Analytics",
-        "analytics"
-      ],
-      "keywordMisses": [
-        "docker",
-        "kubernetes"
       ],
       "decision": "pursue selectively",
       "layer": "B"
@@ -2021,24 +2033,6 @@
       "layer": "B"
     },
     {
-      "jobKey": "url:https://careers.roblox.com/jobs/7702683?gh_jid=7702683",
-      "company": "Roblox Greenhouse",
-      "title": "Human Evaluator, Marketplace (Contract)",
-      "score": 74,
-      "grade": "B",
-      "roleFit": 45,
-      "url": "https://careers.roblox.com/jobs/7702683?gh_jid=7702683",
-      "location": "United States",
-      "keywordHits": [
-        "remote"
-      ],
-      "keywordMisses": [
-        "sql"
-      ],
-      "decision": "pursue selectively",
-      "layer": "B"
-    },
-    {
       "jobKey": "url:https://careers.roblox.com/jobs/7697520?gh_jid=7697520",
       "company": "Roblox Greenhouse",
       "title": "Human Evaluator, Studio (Contract)",
@@ -2087,18 +2081,18 @@
       "layer": "B"
     },
     {
-      "jobKey": "url:https://jobs.ashbyhq.com/cursor/01fdd3d5-be8c-47d5-a317-bfe797739670",
-      "company": "Cursor Ashby",
-      "title": "Associate Field Engineer",
+      "jobKey": "url:https://jobs.ashbyhq.com/elevenlabs/4389da7f-b5c9-4660-aaf2-d097f4caba07",
+      "company": "ElevenLabs Ashby",
+      "title": "Audio Engineering (Freelance)",
       "score": 74,
       "grade": "B",
       "roleFit": 45,
-      "url": "https://jobs.ashbyhq.com/Cursor/01fdd3d5-be8c-47d5-a317-bfe797739670",
-      "location": "San Francisco",
-      "keywordHits": [],
-      "keywordMisses": [
-        "go"
+      "url": "https://jobs.ashbyhq.com/elevenlabs/4389da7f-b5c9-4660-aaf2-d097f4caba07",
+      "location": "London / Poland / New York",
+      "keywordHits": [
+        "remote"
       ],
+      "keywordMisses": [],
       "decision": "pursue selectively",
       "layer": "B"
     },
@@ -2305,45 +2299,15 @@
       "layer": "B"
     },
     {
-      "jobKey": "url:https://www.mycareersfuture.gov.sg/job/1257c075e18e83dae5b4ffb504184f1c",
-      "company": "NK EDUCATION PTE. LTD.",
-      "title": "Teacher manager",
-      "score": 69,
+      "jobKey": "url:https://www.mycareersfuture.gov.sg/job/df66ce76abde75f18bb53c9075e78fac",
+      "company": "ALLEGIS GROUP SINGAPORE PRIVATE LIMITED",
+      "title": "Business Analyst",
+      "score": 68,
       "grade": "C",
       "roleFit": 45,
-      "url": "https://www.mycareersfuture.gov.sg/job/1257c075e18e83dae5b4ffb504184f1c",
+      "url": "https://www.mycareersfuture.gov.sg/job/df66ce76abde75f18bb53c9075e78fac",
       "location": "Islandwide, Singapore",
       "keywordHits": [],
-      "keywordMisses": [],
-      "decision": "hold / compare",
-      "layer": "B"
-    },
-    {
-      "jobKey": "url:https://www.mycareersfuture.gov.sg/job/1b482841ca8e957ced9ec52dafc387fe",
-      "company": "NK EDU (FARRER PARK) PTE. LTD.",
-      "title": "Teacher manager",
-      "score": 69,
-      "grade": "C",
-      "roleFit": 45,
-      "url": "https://www.mycareersfuture.gov.sg/job/1b482841ca8e957ced9ec52dafc387fe",
-      "location": "Islandwide, Singapore",
-      "keywordHits": [],
-      "keywordMisses": [],
-      "decision": "hold / compare",
-      "layer": "B"
-    },
-    {
-      "jobKey": "url:https://justjoin.it/job-offer/emagine-polska-release-documentation-manager-warsaw-pm",
-      "company": "emagine Polska",
-      "title": "Release & Documentation Manager",
-      "score": 69,
-      "grade": "C",
-      "roleFit": 45,
-      "url": "https://justjoin.it/job-offer/emagine-polska-release-documentation-manager-warsaw-pm",
-      "location": "Warsaw, PL",
-      "keywordHits": [
-        "remote"
-      ],
       "keywordMisses": [],
       "decision": "hold / compare",
       "layer": "B"
@@ -2401,39 +2365,182 @@
       "layer": "B"
     },
     {
-      "jobKey": "url:https://remoteok.com/remote-jobs/remote-mex-cajero-dual-universia-mexico-1132250",
-      "company": "Universia MÃ©xico",
-      "title": "MEX Cajero Dual",
+      "jobKey": "url:https://www.daijob.com/en/jobs/detail/1528676",
+      "company": "ベクターリスクマネジメント株式会社",
+      "title": "[Desk work using English and Korean] Foreign-affiliated operator | Monthly salary example of 450,000 yen or more | No experience necessary | Security Controller",
       "score": 68,
       "grade": "C",
       "roleFit": 45,
-      "url": "https://remoteok.com/remote-jobs/remote-mex-cajero-dual-universia-mexico-1132250",
-      "location": "Las Lajitas, Las Lajitas, Salta, Argentina",
-      "keywordHits": [
-        "remote"
-      ],
+      "url": "https://www.daijob.com/en/jobs/detail/1528676",
+      "location": "Shibuya, Tokyo, JP / Tokyo, JP / JP",
+      "keywordHits": [],
       "keywordMisses": [],
       "decision": "hold / compare",
       "layer": "B"
     },
     {
-      "jobKey": "url:https://remoteok.com/remote-jobs/remote-entrenador-a-deportivo-apprentus-1132460",
-      "company": "Apprentus",
-      "title": "Entrenador a Deportivo",
+      "jobKey": "url:https://www.daijob.com/en/jobs/detail/1438377",
+      "company": "株式会社YDM",
+      "title": "◆◇◆Design of medical equipment◆Utilize your English skills◆Top share in domestic market for dental equipment◆Medical equipment manufacturer◆",
+      "score": 68,
+      "grade": "C",
+      "roleFit": 45,
+      "url": "https://www.daijob.com/en/jobs/detail/1438377",
+      "location": "Others, Saitama, JP",
+      "keywordHits": [],
+      "keywordMisses": [],
+      "decision": "hold / compare",
+      "layer": "B"
+    },
+    {
+      "jobKey": "url:https://www.mycareersfuture.gov.sg/job/b1c872782aceb41655fa77bd8a759ac3",
+      "company": "ADSAN LAW LLC",
+      "title": "Conveyancing Secretary",
+      "score": 68,
+      "grade": "C",
+      "roleFit": 45,
+      "url": "https://www.mycareersfuture.gov.sg/job/b1c872782aceb41655fa77bd8a759ac3",
+      "location": "THE CONCOURSE, BEACH ROAD, D07 Middle Road, Golden Mile, Singapore",
+      "keywordHits": [],
+      "keywordMisses": [],
+      "decision": "hold / compare",
+      "layer": "B"
+    },
+    {
+      "jobKey": "url:https://www.daijob.com/en/jobs/detail/1496552",
+      "company": "confidential",
+      "title": "Manufacturing engineer (Nwe graduated in 2027)",
       "score": 67,
       "grade": "C",
       "roleFit": 45,
-      "url": "https://remoteok.com/remote-jobs/remote-entrenador-a-deportivo-apprentus-1132460",
-      "location": "Granada,",
-      "keywordHits": [
-        "remote"
-      ],
+      "url": "https://www.daijob.com/en/jobs/detail/1496552",
+      "location": "JP",
+      "keywordHits": [],
+      "keywordMisses": [],
+      "decision": "hold / compare",
+      "layer": "B"
+    },
+    {
+      "jobKey": "url:https://www.daijob.com/en/jobs/detail/1483003",
+      "company": "Fujisoft Co., Ltd.",
+      "title": "[In-vehicle Software System Engineer] N2 level or higher welcome / Annual salary of 4.5 million yen or more / Career advancement / Atsugi City, Kanagawa Prefecture",
+      "score": 67,
+      "grade": "C",
+      "roleFit": 45,
+      "url": "https://www.daijob.com/en/jobs/detail/1483003",
+      "location": "Kanagawa, JP",
+      "keywordHits": [],
+      "keywordMisses": [],
+      "decision": "hold / compare",
+      "layer": "B"
+    },
+    {
+      "jobKey": "url:https://www.daijob.com/en/jobs/detail/1500672",
+      "company": "Princess Cruise Lines ltd. (Carnival Japan, Inc)",
+      "title": "Junior Assistant Purser / Guest Services Officer",
+      "score": 67,
+      "grade": "C",
+      "roleFit": 45,
+      "url": "https://www.daijob.com/en/jobs/detail/1500672",
+      "location": "JP / KR",
+      "keywordHits": [],
       "keywordMisses": [],
       "decision": "hold / compare",
       "layer": "B"
     }
   ],
   "layerC": [
+    {
+      "jobKey": "url:https://www.themuse.com/jobs/capitalone/distinguished-engineer-remote-eligible-9d0012",
+      "company": "Capital One",
+      "title": "Distinguished Engineer (Remote - Eligible)",
+      "score": 93,
+      "grade": "A",
+      "roleFit": 92,
+      "url": "https://www.themuse.com/jobs/capitalone/distinguished-engineer-remote-eligible-9d0012",
+      "location": "Cambridge, MA / Flexible / Remote / McLean, VA / New York, NY / Richmond, VA",
+      "keywordHits": [
+        "JavaScript",
+        "TypeScript",
+        "API",
+        "remote"
+      ],
+      "topGap": "python",
+      "mainGaps": [
+        "python",
+        "java",
+        "go",
+        "swift"
+      ],
+      "layer": "C"
+    },
+    {
+      "jobKey": "url:https://stripe.com/jobs/search?gh_jid=7550154",
+      "company": "Stripe Greenhouse",
+      "title": "Android Engineer, Terminal Developer Productivity",
+      "score": 93,
+      "grade": "A",
+      "roleFit": 92,
+      "url": "https://stripe.com/jobs/search?gh_jid=7550154",
+      "location": "San Francisco, Seattle, Remote in US",
+      "keywordHits": [
+        "API",
+        "Product Engineer"
+      ],
+      "topGap": "java",
+      "mainGaps": [
+        "java",
+        "go",
+        "kotlin"
+      ],
+      "layer": "C"
+    },
+    {
+      "jobKey": "url:https://boards.greenhouse.io/figma/jobs/5551697004?gh_jid=5551697004",
+      "company": "Figma Greenhouse",
+      "title": "Software Engineer, AI Product (London, United Kingdom)",
+      "score": 93,
+      "grade": "A",
+      "roleFit": 92,
+      "url": "https://boards.greenhouse.io/figma/jobs/5551697004?gh_jid=5551697004",
+      "location": "London, England",
+      "keywordHits": [
+        "TypeScript",
+        "React",
+        "API",
+        "Figma"
+      ],
+      "topGap": "llm",
+      "mainGaps": [
+        "llm",
+        "agents"
+      ],
+      "layer": "C"
+    },
+    {
+      "jobKey": "url:https://careers.airbnb.com/positions/7380149?gh_jid=7380149",
+      "company": "Airbnb Greenhouse",
+      "title": "Senior Software Engineer, Quality Platform",
+      "score": 93,
+      "grade": "A",
+      "roleFit": 92,
+      "url": "https://careers.airbnb.com/positions/7380149?gh_jid=7380149",
+      "location": "Brazil",
+      "keywordHits": [
+        "TypeScript",
+        "API",
+        "Design Systems",
+        "design system"
+      ],
+      "topGap": "python",
+      "mainGaps": [
+        "python",
+        "java",
+        "swift",
+        "kotlin"
+      ],
+      "layer": "C"
+    },
     {
       "jobKey": "url:https://careers.airbnb.com/positions/7863467?gh_jid=7863467",
       "company": "Airbnb Greenhouse",
@@ -2562,30 +2669,6 @@
       "mainGaps": [
         "growth",
         "operations"
-      ],
-      "layer": "C"
-    },
-    {
-      "jobKey": "url:https://www.themuse.com/jobs/uber/senior-rider-web-software-engineer",
-      "company": "Uber",
-      "title": "Senior Rider Web Software Engineer",
-      "score": 92,
-      "grade": "A",
-      "roleFit": 92,
-      "url": "https://www.themuse.com/jobs/uber/senior-rider-web-software-engineer",
-      "location": "Sunnyvale, CA",
-      "keywordHits": [
-        "JavaScript",
-        "TypeScript",
-        "React",
-        "Next.js"
-      ],
-      "topGap": "vue",
-      "mainGaps": [
-        "vue",
-        "angular",
-        "html",
-        "growth"
       ],
       "layer": "C"
     },
@@ -2778,23 +2861,25 @@
       "layer": "C"
     },
     {
-      "jobKey": "url:https://stripe.com/jobs/search?gh_jid=7773831",
+      "jobKey": "url:https://stripe.com/jobs/search?gh_jid=7964956",
       "company": "Stripe Greenhouse",
-      "title": "Learning Architect",
+      "title": "Full Stack Engineer, Growth",
       "score": 92,
       "grade": "A",
       "roleFit": 92,
-      "url": "https://stripe.com/jobs/search?gh_jid=7773831",
-      "location": "SF or NYC",
+      "url": "https://stripe.com/jobs/search?gh_jid=7964956",
+      "location": "Singapore",
       "keywordHits": [
-        "API",
-        "Figma",
-        "Product Engineer"
+        "JavaScript",
+        "React",
+        "CSS",
+        "API"
       ],
-      "topGap": "growth",
+      "topGap": "go",
       "mainGaps": [
-        "growth",
-        "operations"
+        "go",
+        "machine learning",
+        "growth"
       ],
       "layer": "C"
     },
@@ -2843,6 +2928,54 @@
         "seo",
         "growth",
         "sales"
+      ],
+      "layer": "C"
+    },
+    {
+      "jobKey": "url:https://jobs.ashbyhq.com/elevenlabs/3b57cc5c-f019-4a0b-a5ff-e1046e4f1fa1",
+      "company": "ElevenLabs Ashby",
+      "title": "Safety Engineer",
+      "score": 92,
+      "grade": "A",
+      "roleFit": 92,
+      "url": "https://jobs.ashbyhq.com/elevenlabs/3b57cc5c-f019-4a0b-a5ff-e1046e4f1fa1",
+      "location": "United Kingdom / United States / Dublin / London / Warsaw / New York / San Francisco / Tokyo / Poland / Los Angeles / Washington, D.C. / Boston",
+      "keywordHits": [
+        "React",
+        "API",
+        "remote",
+        "React"
+      ],
+      "topGap": "python",
+      "mainGaps": [
+        "python",
+        "sql",
+        "aws",
+        "gcp"
+      ],
+      "layer": "C"
+    },
+    {
+      "jobKey": "url:https://jobs.ashbyhq.com/posthog/20ab9628-20ff-4ae3-bd6a-46ae7e9dc6b8",
+      "company": "PostHog Ashby",
+      "title": "Product Engineer",
+      "score": 92,
+      "grade": "A",
+      "roleFit": 92,
+      "url": "https://jobs.ashbyhq.com/posthog/20ab9628-20ff-4ae3-bd6a-46ae7e9dc6b8",
+      "location": "Remote",
+      "keywordHits": [
+        "TypeScript",
+        "React",
+        "Analytics",
+        "remote"
+      ],
+      "topGap": "python",
+      "mainGaps": [
+        "python",
+        "go",
+        "sql",
+        "html"
       ],
       "layer": "C"
     },
@@ -2983,13 +3116,13 @@
       "layer": "C"
     },
     {
-      "jobKey": "url:https://www.asana.com/jobs/apply/7904715?gh_jid=7904715",
+      "jobKey": "url:https://www.asana.com/jobs/apply/7962348?gh_jid=7962348",
       "company": "Asana Greenhouse",
       "title": "Senior Software Engineer, AI Chat",
       "score": 91,
       "grade": "A",
       "roleFit": 92,
-      "url": "https://www.asana.com/jobs/apply/7904715?gh_jid=7904715",
+      "url": "https://www.asana.com/jobs/apply/7962348?gh_jid=7962348",
       "location": "Vancouver, BC",
       "keywordHits": [
         "API",
@@ -2998,123 +3131,6 @@
       "topGap": "sales",
       "mainGaps": [
         "sales"
-      ],
-      "layer": "C"
-    },
-    {
-      "jobKey": "url:https://www.mycareersfuture.gov.sg/job/f2bf90a5913eb4a0eaba21a457afd7d9",
-      "company": "HAMSA APAC (SINGAPORE) PTE. LTD.",
-      "title": "Software Engineer",
-      "score": 90,
-      "grade": "A",
-      "roleFit": 92,
-      "url": "https://www.mycareersfuture.gov.sg/job/f2bf90a5913eb4a0eaba21a457afd7d9",
-      "location": "Islandwide, Singapore",
-      "keywordHits": [
-        "API",
-        "Product Engineer"
-      ],
-      "topGap": "java",
-      "mainGaps": [
-        "java",
-        "sql",
-        "aws",
-        "azure"
-      ],
-      "layer": "C"
-    },
-    {
-      "jobKey": "url:https://remotive.com/remote-jobs/product/staff-product-engineer-campinas-2090902",
-      "company": "LawnStarter",
-      "title": "Staff Product Engineer (Campinas)",
-      "score": 90,
-      "grade": "A",
-      "roleFit": 92,
-      "url": "https://remotive.com/remote-jobs/product/staff-product-engineer-campinas-2090902",
-      "location": "Brazil",
-      "keywordHits": [
-        "TypeScript",
-        "React",
-        "API",
-        "remote"
-      ],
-      "topGap": "aws",
-      "mainGaps": [
-        "aws",
-        "rest",
-        "agents",
-        "growth"
-      ],
-      "layer": "C"
-    },
-    {
-      "jobKey": "url:https://remotive.com/remote-jobs/product/staff-product-engineer-sao-paulo-2090890",
-      "company": "LawnStarter",
-      "title": "Staff Product Engineer (São Paulo)",
-      "score": 90,
-      "grade": "A",
-      "roleFit": 92,
-      "url": "https://remotive.com/remote-jobs/product/staff-product-engineer-sao-paulo-2090890",
-      "location": "Brazil",
-      "keywordHits": [
-        "TypeScript",
-        "React",
-        "API",
-        "remote"
-      ],
-      "topGap": "aws",
-      "mainGaps": [
-        "aws",
-        "rest",
-        "agents",
-        "growth"
-      ],
-      "layer": "C"
-    },
-    {
-      "jobKey": "url:https://www.themuse.com/jobs/doordash/ux-design-engineer-content-tooling",
-      "company": "DoorDash",
-      "title": "UX Design Engineer, Content Tooling",
-      "score": 90,
-      "grade": "A",
-      "roleFit": 92,
-      "url": "https://www.themuse.com/jobs/doordash/ux-design-engineer-content-tooling",
-      "location": "New York, NY / San Francisco, CA / Seattle, WA / Sunnyvale, CA",
-      "keywordHits": [
-        "Frontend Engineer",
-        "JavaScript",
-        "TypeScript",
-        "React"
-      ],
-      "topGap": "java",
-      "mainGaps": [
-        "java",
-        "kotlin",
-        "llm"
-      ],
-      "layer": "C"
-    },
-    {
-      "jobKey": "url:https://www.themuse.com/jobs/merge/software-engineer-d18712",
-      "company": "Merge",
-      "title": "Software Engineer",
-      "score": 90,
-      "grade": "A",
-      "roleFit": 92,
-      "url": "https://www.themuse.com/jobs/merge/software-engineer-d18712",
-      "location": "San Francisco, CA",
-      "keywordHits": [
-        "TypeScript",
-        "React",
-        "API",
-        "TypeScript"
-      ],
-      "topGap": "python",
-      "mainGaps": [
-        "python",
-        "go",
-        "sql",
-        "postgres"
       ],
       "layer": "C"
     }
@@ -3495,6 +3511,84 @@
       "llm": null
     },
     {
+      "jobKey": "url:https://www.themuse.com/jobs/uber/sr-software-engineer-frontend-web-8fc2b7",
+      "company": "Uber",
+      "title": "Sr Software Engineer, Frontend (Web)",
+      "score": 95,
+      "grade": "A",
+      "confidence": "medium",
+      "decision": "pursue aggressively",
+      "thesis": "Sr Software Engineer, Frontend (Web) at Uber is pursue aggressively because the snapshot score is 95, with 11 profile/role keyword hits and 1 external evidence item(s).",
+      "evidence": {
+        "keywordHits": [
+          "Frontend Engineer",
+          "JavaScript",
+          "TypeScript",
+          "React",
+          "CSS",
+          "API",
+          "Performance Optimization",
+          "remote",
+          "TypeScript",
+          "React",
+          "Frontend Engineer"
+        ],
+        "keywordMisses": [
+          "angular",
+          "python",
+          "go",
+          "html",
+          "growth"
+        ],
+        "researchSignals": [
+          "AI / data / platform signal",
+          "remote or hybrid signal"
+        ],
+        "evidenceCount": 1,
+        "compensationLeverage": "high"
+      },
+      "concerns": [],
+      "interviewStrategy": [
+        "Ask why the role is open and what success means in the first 90 days.",
+        "Probe team ownership, roadmap pressure, and cross-functional interfaces.",
+        "What business unit owns the Sr Software Engineer, Frontend (Web) role?",
+        "What measurable outcomes would this team expect in the first 90 days?",
+        "What recent company/product signals change the risk or upside?"
+      ],
+      "cvStrategy": [
+        "Lead with proof around: Frontend Engineer, JavaScript, TypeScript, React, CSS, API.",
+        "Use story story-1: frontend product execution.",
+        "Use story story-2: systems and API collaboration.",
+        "Use story story-3: accessibility and quality."
+      ],
+      "compensationStrategy": {
+        "leverage": "high",
+        "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Sr Software Engineer, Frontend (Web) package, including base, bonus, equity, and review cycle?",
+        "valueAnchor": "Based on the scope of Sr Software Engineer, Frontend (Web) and my fit around JavaScript, TypeScript, React, CSS, I would like to calibrate toward the stronger end of the range if the team sees the level match."
+      },
+      "storyHooks": [
+        {
+          "id": "story-1",
+          "theme": "frontend product execution",
+          "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
+          "relevance": 4
+        },
+        {
+          "id": "story-2",
+          "theme": "systems and API collaboration",
+          "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
+          "relevance": 4
+        },
+        {
+          "id": "story-3",
+          "theme": "accessibility and quality",
+          "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
+          "relevance": 4
+        }
+      ],
+      "llm": null
+    },
+    {
       "jobKey": "url:https://www.themuse.com/jobs/disney/lead-software-engineer-944f62",
       "company": "Disney",
       "title": "Lead Software Engineer",
@@ -3632,79 +3726,297 @@
       "llm": null
     },
     {
-      "jobKey": "url:https://www.themuse.com/jobs/uber/sr-software-engineer-frontend-web-8fc2b7",
-      "company": "Uber",
-      "title": "Sr Software Engineer, Frontend (Web)",
+      "jobKey": "url:https://www.themuse.com/jobs/usaa/software-engineer-midlevel-java-full-stack-adab58",
+      "company": "USAA",
+      "title": "Software Engineer Mid-level (Java Full Stack)",
       "score": 95,
       "grade": "A",
       "confidence": "medium",
       "decision": "pursue aggressively",
-      "thesis": "Sr Software Engineer, Frontend (Web) at Uber is pursue aggressively because the snapshot score is 95, with 11 profile/role keyword hits and 1 external evidence item(s).",
+      "thesis": "Software Engineer Mid-level (Java Full Stack) at USAA is pursue aggressively because the snapshot score is 95, with 5 profile/role keyword hits and 0 external evidence item(s).",
       "evidence": {
         "keywordHits": [
-          "Frontend Engineer",
           "JavaScript",
-          "TypeScript",
-          "React",
           "CSS",
           "API",
-          "Performance Optimization",
           "remote",
-          "TypeScript",
-          "React",
-          "Frontend Engineer"
+          "Full Stack Engineer"
         ],
         "keywordMisses": [
-          "angular",
           "python",
+          "java",
           "go",
+          "swift",
+          "kotlin",
+          "sql",
+          "aws",
+          "docker",
           "html",
-          "growth"
+          "operations"
         ],
-        "researchSignals": [
-          "AI / data / platform signal",
-          "remote or hybrid signal"
-        ],
-        "evidenceCount": 1,
+        "researchSignals": [],
+        "evidenceCount": 0,
         "compensationLeverage": "high"
       },
-      "concerns": [],
+      "concerns": [
+        "External company evidence is thin; run deep research with a search API.",
+        "Profile keyword coverage is weaker than the target role language."
+      ],
       "interviewStrategy": [
         "Ask why the role is open and what success means in the first 90 days.",
-        "Probe team ownership, roadmap pressure, and cross-functional interfaces.",
-        "What business unit owns the Sr Software Engineer, Frontend (Web) role?",
-        "What measurable outcomes would this team expect in the first 90 days?",
-        "What recent company/product signals change the risk or upside?"
+        "Probe team ownership, roadmap pressure, and cross-functional interfaces."
       ],
       "cvStrategy": [
-        "Lead with proof around: Frontend Engineer, JavaScript, TypeScript, React, CSS, API.",
+        "Lead with proof around: JavaScript, CSS, API, remote, Full Stack Engineer.",
         "Use story story-1: frontend product execution.",
         "Use story story-2: systems and API collaboration.",
         "Use story story-3: accessibility and quality."
       ],
       "compensationStrategy": {
         "leverage": "high",
-        "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Sr Software Engineer, Frontend (Web) package, including base, bonus, equity, and review cycle?",
-        "valueAnchor": "Based on the scope of Sr Software Engineer, Frontend (Web) and my fit around JavaScript, TypeScript, React, CSS, I would like to calibrate toward the stronger end of the range if the team sees the level match."
+        "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Software Engineer Mid-level (Java Full Stack) package, including base, bonus, equity, and review cycle?",
+        "valueAnchor": "Based on the scope of Software Engineer Mid-level (Java Full Stack) and my fit around JavaScript, CSS, API, remote, I would like to calibrate toward the stronger end of the range if the team sees the level match."
       },
       "storyHooks": [
         {
           "id": "story-1",
           "theme": "frontend product execution",
           "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
-          "relevance": 4
+          "relevance": 2
         },
         {
           "id": "story-2",
           "theme": "systems and API collaboration",
           "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
-          "relevance": 4
+          "relevance": 2
         },
         {
           "id": "story-3",
           "theme": "accessibility and quality",
           "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
-          "relevance": 4
+          "relevance": 2
+        }
+      ],
+      "llm": null
+    },
+    {
+      "jobKey": "url:https://www.themuse.com/jobs/usaa/software-engineer-midlevel-java-full-stack-461216",
+      "company": "USAA",
+      "title": "Software Engineer Mid-level (Java Full Stack)",
+      "score": 95,
+      "grade": "A",
+      "confidence": "medium",
+      "decision": "pursue aggressively",
+      "thesis": "Software Engineer Mid-level (Java Full Stack) at USAA is pursue aggressively because the snapshot score is 95, with 5 profile/role keyword hits and 0 external evidence item(s).",
+      "evidence": {
+        "keywordHits": [
+          "JavaScript",
+          "CSS",
+          "API",
+          "remote",
+          "Full Stack Engineer"
+        ],
+        "keywordMisses": [
+          "python",
+          "java",
+          "go",
+          "swift",
+          "kotlin",
+          "sql",
+          "aws",
+          "docker",
+          "html",
+          "operations"
+        ],
+        "researchSignals": [],
+        "evidenceCount": 0,
+        "compensationLeverage": "high"
+      },
+      "concerns": [
+        "External company evidence is thin; run deep research with a search API.",
+        "Profile keyword coverage is weaker than the target role language."
+      ],
+      "interviewStrategy": [
+        "Ask why the role is open and what success means in the first 90 days.",
+        "Probe team ownership, roadmap pressure, and cross-functional interfaces."
+      ],
+      "cvStrategy": [
+        "Lead with proof around: JavaScript, CSS, API, remote, Full Stack Engineer.",
+        "Use story story-1: frontend product execution.",
+        "Use story story-2: systems and API collaboration.",
+        "Use story story-3: accessibility and quality."
+      ],
+      "compensationStrategy": {
+        "leverage": "high",
+        "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Software Engineer Mid-level (Java Full Stack) package, including base, bonus, equity, and review cycle?",
+        "valueAnchor": "Based on the scope of Software Engineer Mid-level (Java Full Stack) and my fit around JavaScript, CSS, API, remote, I would like to calibrate toward the stronger end of the range if the team sees the level match."
+      },
+      "storyHooks": [
+        {
+          "id": "story-1",
+          "theme": "frontend product execution",
+          "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
+          "relevance": 2
+        },
+        {
+          "id": "story-2",
+          "theme": "systems and API collaboration",
+          "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
+          "relevance": 2
+        },
+        {
+          "id": "story-3",
+          "theme": "accessibility and quality",
+          "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
+          "relevance": 2
+        }
+      ],
+      "llm": null
+    },
+    {
+      "jobKey": "url:https://www.themuse.com/jobs/usaa/software-engineer-midlevel-java-full-stack-91f31e",
+      "company": "USAA",
+      "title": "Software Engineer Mid-level (Java Full Stack)",
+      "score": 95,
+      "grade": "A",
+      "confidence": "medium",
+      "decision": "pursue aggressively",
+      "thesis": "Software Engineer Mid-level (Java Full Stack) at USAA is pursue aggressively because the snapshot score is 95, with 5 profile/role keyword hits and 0 external evidence item(s).",
+      "evidence": {
+        "keywordHits": [
+          "JavaScript",
+          "CSS",
+          "API",
+          "remote",
+          "Full Stack Engineer"
+        ],
+        "keywordMisses": [
+          "python",
+          "java",
+          "go",
+          "swift",
+          "kotlin",
+          "sql",
+          "aws",
+          "docker",
+          "html",
+          "operations"
+        ],
+        "researchSignals": [],
+        "evidenceCount": 0,
+        "compensationLeverage": "high"
+      },
+      "concerns": [
+        "External company evidence is thin; run deep research with a search API.",
+        "Profile keyword coverage is weaker than the target role language."
+      ],
+      "interviewStrategy": [
+        "Ask why the role is open and what success means in the first 90 days.",
+        "Probe team ownership, roadmap pressure, and cross-functional interfaces."
+      ],
+      "cvStrategy": [
+        "Lead with proof around: JavaScript, CSS, API, remote, Full Stack Engineer.",
+        "Use story story-1: frontend product execution.",
+        "Use story story-2: systems and API collaboration.",
+        "Use story story-3: accessibility and quality."
+      ],
+      "compensationStrategy": {
+        "leverage": "high",
+        "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Software Engineer Mid-level (Java Full Stack) package, including base, bonus, equity, and review cycle?",
+        "valueAnchor": "Based on the scope of Software Engineer Mid-level (Java Full Stack) and my fit around JavaScript, CSS, API, remote, I would like to calibrate toward the stronger end of the range if the team sees the level match."
+      },
+      "storyHooks": [
+        {
+          "id": "story-1",
+          "theme": "frontend product execution",
+          "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
+          "relevance": 2
+        },
+        {
+          "id": "story-2",
+          "theme": "systems and API collaboration",
+          "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
+          "relevance": 2
+        },
+        {
+          "id": "story-3",
+          "theme": "accessibility and quality",
+          "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
+          "relevance": 2
+        }
+      ],
+      "llm": null
+    },
+    {
+      "jobKey": "url:https://www.themuse.com/jobs/usaa/software-engineer-midlevel-java-full-stack-daf10c",
+      "company": "USAA",
+      "title": "Software Engineer Mid-level (Java Full Stack)",
+      "score": 95,
+      "grade": "A",
+      "confidence": "medium",
+      "decision": "pursue aggressively",
+      "thesis": "Software Engineer Mid-level (Java Full Stack) at USAA is pursue aggressively because the snapshot score is 95, with 5 profile/role keyword hits and 0 external evidence item(s).",
+      "evidence": {
+        "keywordHits": [
+          "JavaScript",
+          "CSS",
+          "API",
+          "remote",
+          "Full Stack Engineer"
+        ],
+        "keywordMisses": [
+          "python",
+          "java",
+          "go",
+          "swift",
+          "kotlin",
+          "sql",
+          "aws",
+          "docker",
+          "html",
+          "operations"
+        ],
+        "researchSignals": [],
+        "evidenceCount": 0,
+        "compensationLeverage": "high"
+      },
+      "concerns": [
+        "External company evidence is thin; run deep research with a search API.",
+        "Profile keyword coverage is weaker than the target role language."
+      ],
+      "interviewStrategy": [
+        "Ask why the role is open and what success means in the first 90 days.",
+        "Probe team ownership, roadmap pressure, and cross-functional interfaces."
+      ],
+      "cvStrategy": [
+        "Lead with proof around: JavaScript, CSS, API, remote, Full Stack Engineer.",
+        "Use story story-1: frontend product execution.",
+        "Use story story-2: systems and API collaboration.",
+        "Use story story-3: accessibility and quality."
+      ],
+      "compensationStrategy": {
+        "leverage": "high",
+        "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Software Engineer Mid-level (Java Full Stack) package, including base, bonus, equity, and review cycle?",
+        "valueAnchor": "Based on the scope of Software Engineer Mid-level (Java Full Stack) and my fit around JavaScript, CSS, API, remote, I would like to calibrate toward the stronger end of the range if the team sees the level match."
+      },
+      "storyHooks": [
+        {
+          "id": "story-1",
+          "theme": "frontend product execution",
+          "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
+          "relevance": 2
+        },
+        {
+          "id": "story-2",
+          "theme": "systems and API collaboration",
+          "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
+          "relevance": 2
+        },
+        {
+          "id": "story-3",
+          "theme": "accessibility and quality",
+          "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
+          "relevance": 2
         }
       ],
       "llm": null
@@ -4304,7 +4616,7 @@
         ],
         "researchSignals": [],
         "evidenceCount": 0,
-        "compensationLeverage": "high"
+        "compensationLeverage": ""
       },
       "concerns": [
         "External company evidence is thin; run deep research with a search API.",
@@ -4320,11 +4632,7 @@
         "Use story story-2: systems and API collaboration.",
         "Use story story-3: accessibility and quality."
       ],
-      "compensationStrategy": {
-        "leverage": "high",
-        "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Director,Technical Solutions (Big Data/ AI) package, including base, bonus, equity, and review cycle?",
-        "valueAnchor": "Based on the scope of Director,Technical Solutions (Big Data/ AI) and my fit around Analytics, Performance Optimization, product, data, I would like to calibrate toward the stronger end of the range if the team sees the level match."
-      },
+      "compensationStrategy": null,
       "storyHooks": [
         {
           "id": "story-1",
@@ -4620,266 +4928,6 @@
           "theme": "accessibility and quality",
           "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
           "relevance": 3
-        }
-      ],
-      "llm": null
-    },
-    {
-      "jobKey": "url:https://www.themuse.com/jobs/capitalone/distinguished-engineer-remote-eligible-9d0012",
-      "company": "Capital One",
-      "title": "Distinguished Engineer (Remote - Eligible)",
-      "score": 93,
-      "grade": "A",
-      "confidence": "medium",
-      "decision": "pursue aggressively",
-      "thesis": "Distinguished Engineer (Remote - Eligible) at Capital One is pursue aggressively because the snapshot score is 93, with 6 profile/role keyword hits and 0 external evidence item(s).",
-      "evidence": {
-        "keywordHits": [
-          "JavaScript",
-          "TypeScript",
-          "API",
-          "remote",
-          "TypeScript",
-          "Product Engineer"
-        ],
-        "keywordMisses": [
-          "python",
-          "java",
-          "go",
-          "swift",
-          "aws",
-          "azure",
-          "machine learning"
-        ],
-        "researchSignals": [],
-        "evidenceCount": 0,
-        "compensationLeverage": ""
-      },
-      "concerns": [
-        "External company evidence is thin; run deep research with a search API.",
-        "Profile keyword coverage is weaker than the target role language."
-      ],
-      "interviewStrategy": [
-        "Ask why the role is open and what success means in the first 90 days.",
-        "Probe team ownership, roadmap pressure, and cross-functional interfaces."
-      ],
-      "cvStrategy": [
-        "Lead with proof around: JavaScript, TypeScript, API, remote, TypeScript, Product Engineer.",
-        "Use story story-1: frontend product execution.",
-        "Use story story-2: systems and API collaboration.",
-        "Use story story-3: accessibility and quality."
-      ],
-      "compensationStrategy": null,
-      "storyHooks": [
-        {
-          "id": "story-1",
-          "theme": "frontend product execution",
-          "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
-          "relevance": 2
-        },
-        {
-          "id": "story-2",
-          "theme": "systems and API collaboration",
-          "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
-          "relevance": 2
-        },
-        {
-          "id": "story-3",
-          "theme": "accessibility and quality",
-          "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
-          "relevance": 2
-        }
-      ],
-      "llm": null
-    },
-    {
-      "jobKey": "url:https://stripe.com/jobs/search?gh_jid=7550154",
-      "company": "Stripe Greenhouse",
-      "title": "Android Engineer, Terminal Developer Productivity",
-      "score": 93,
-      "grade": "A",
-      "confidence": "medium",
-      "decision": "pursue aggressively",
-      "thesis": "Android Engineer, Terminal Developer Productivity at Stripe Greenhouse is pursue aggressively because the snapshot score is 93, with 3 profile/role keyword hits and 0 external evidence item(s).",
-      "evidence": {
-        "keywordHits": [
-          "API",
-          "remote",
-          "Product Engineer"
-        ],
-        "keywordMisses": [
-          "java",
-          "go",
-          "kotlin"
-        ],
-        "researchSignals": [],
-        "evidenceCount": 0,
-        "compensationLeverage": ""
-      },
-      "concerns": [
-        "External company evidence is thin; run deep research with a search API."
-      ],
-      "interviewStrategy": [
-        "Ask why the role is open and what success means in the first 90 days.",
-        "Probe team ownership, roadmap pressure, and cross-functional interfaces."
-      ],
-      "cvStrategy": [
-        "Lead with proof around: API, remote, Product Engineer.",
-        "Use story story-1: frontend product execution.",
-        "Use story story-2: systems and API collaboration.",
-        "Use story story-3: accessibility and quality."
-      ],
-      "compensationStrategy": null,
-      "storyHooks": [
-        {
-          "id": "story-1",
-          "theme": "frontend product execution",
-          "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
-          "relevance": 0
-        },
-        {
-          "id": "story-2",
-          "theme": "systems and API collaboration",
-          "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
-          "relevance": 0
-        },
-        {
-          "id": "story-3",
-          "theme": "accessibility and quality",
-          "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
-          "relevance": 0
-        }
-      ],
-      "llm": null
-    },
-    {
-      "jobKey": "url:https://boards.greenhouse.io/figma/jobs/5551697004?gh_jid=5551697004",
-      "company": "Figma Greenhouse",
-      "title": "Software Engineer, AI Product (London, United Kingdom)",
-      "score": 93,
-      "grade": "A",
-      "confidence": "medium",
-      "decision": "pursue aggressively",
-      "thesis": "Software Engineer, AI Product (London, United Kingdom) at Figma Greenhouse is pursue aggressively because the snapshot score is 93, with 7 profile/role keyword hits and 0 external evidence item(s).",
-      "evidence": {
-        "keywordHits": [
-          "TypeScript",
-          "React",
-          "API",
-          "Figma",
-          "TypeScript",
-          "React",
-          "Product Engineer"
-        ],
-        "keywordMisses": [
-          "llm",
-          "agents"
-        ],
-        "researchSignals": [],
-        "evidenceCount": 0,
-        "compensationLeverage": ""
-      },
-      "concerns": [
-        "External company evidence is thin; run deep research with a search API."
-      ],
-      "interviewStrategy": [
-        "Ask why the role is open and what success means in the first 90 days.",
-        "Probe team ownership, roadmap pressure, and cross-functional interfaces."
-      ],
-      "cvStrategy": [
-        "Lead with proof around: TypeScript, React, API, Figma, TypeScript, React.",
-        "Use story story-1: frontend product execution.",
-        "Use story story-2: systems and API collaboration.",
-        "Use story story-3: accessibility and quality."
-      ],
-      "compensationStrategy": null,
-      "storyHooks": [
-        {
-          "id": "story-1",
-          "theme": "frontend product execution",
-          "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
-          "relevance": 2
-        },
-        {
-          "id": "story-2",
-          "theme": "systems and API collaboration",
-          "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
-          "relevance": 2
-        },
-        {
-          "id": "story-3",
-          "theme": "accessibility and quality",
-          "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
-          "relevance": 2
-        }
-      ],
-      "llm": null
-    },
-    {
-      "jobKey": "url:https://careers.airbnb.com/positions/7380149?gh_jid=7380149",
-      "company": "Airbnb Greenhouse",
-      "title": "Senior Software Engineer, Quality Platform",
-      "score": 93,
-      "grade": "A",
-      "confidence": "medium",
-      "decision": "pursue aggressively",
-      "thesis": "Senior Software Engineer, Quality Platform at Airbnb Greenhouse is pursue aggressively because the snapshot score is 93, with 6 profile/role keyword hits and 0 external evidence item(s).",
-      "evidence": {
-        "keywordHits": [
-          "TypeScript",
-          "API",
-          "Design Systems",
-          "design system",
-          "TypeScript",
-          "Product Engineer"
-        ],
-        "keywordMisses": [
-          "python",
-          "java",
-          "swift",
-          "kotlin",
-          "llm",
-          "rag",
-          "agents",
-          "prompt engineering"
-        ],
-        "researchSignals": [],
-        "evidenceCount": 0,
-        "compensationLeverage": ""
-      },
-      "concerns": [
-        "External company evidence is thin; run deep research with a search API.",
-        "Profile keyword coverage is weaker than the target role language."
-      ],
-      "interviewStrategy": [
-        "Ask why the role is open and what success means in the first 90 days.",
-        "Probe team ownership, roadmap pressure, and cross-functional interfaces."
-      ],
-      "cvStrategy": [
-        "Lead with proof around: TypeScript, API, Design Systems, design system, TypeScript, Product Engineer.",
-        "Use story story-1: frontend product execution.",
-        "Use story story-2: systems and API collaboration.",
-        "Use story story-3: accessibility and quality."
-      ],
-      "compensationStrategy": null,
-      "storyHooks": [
-        {
-          "id": "story-1",
-          "theme": "frontend product execution",
-          "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
-          "relevance": 1
-        },
-        {
-          "id": "story-2",
-          "theme": "systems and API collaboration",
-          "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
-          "relevance": 1
-        },
-        {
-          "id": "story-3",
-          "theme": "accessibility and quality",
-          "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
-          "relevance": 1
         }
       ],
       "llm": null

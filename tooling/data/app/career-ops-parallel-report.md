@@ -1,6 +1,6 @@
 # Career Ops Parallel Worker Report
 
-Generated: 2026-05-29T00:30:44.861Z
+Generated: 2026-05-30T00:15:01.964Z
 Concurrency: 4
 Jobs processed: 50
 Errors: 0
@@ -86,6 +86,21 @@ Errors: 0
 - Never store API keys or credentials in job metadata.
 - Record only application status and user-approved notes.
 
+## P0 Uber - Sr Software Engineer, Frontend (Web)
+
+- Score: 95
+- Grade: A
+- Research evidence: 1
+- Keywords: JavaScript, TypeScript, React, CSS, API, Performance Optimization, engineer, product, data
+- Compensation leverage: high
+- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
+
+### Apply Agent Guardrails
+- Never submit without explicit user confirmation.
+- Never fabricate work authorization, salary history, degree, or experience.
+- Never store API keys or credentials in job metadata.
+- Record only application status and user-approved notes.
+
 ## P0 Disney - Lead Software Engineer
 
 - Score: 95
@@ -116,12 +131,57 @@ Errors: 0
 - Never store API keys or credentials in job metadata.
 - Record only application status and user-approved notes.
 
-## P0 Uber - Sr Software Engineer, Frontend (Web)
+## P0 USAA - Software Engineer Mid-level (Java Full Stack)
 
 - Score: 95
 - Grade: A
-- Research evidence: 1
-- Keywords: JavaScript, TypeScript, React, CSS, API, Performance Optimization, engineer, product, data
+- Research evidence: 0
+- Keywords: JavaScript, CSS, API, remote, engineer, data
+- Compensation leverage: high
+- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
+
+### Apply Agent Guardrails
+- Never submit without explicit user confirmation.
+- Never fabricate work authorization, salary history, degree, or experience.
+- Never store API keys or credentials in job metadata.
+- Record only application status and user-approved notes.
+
+## P0 USAA - Software Engineer Mid-level (Java Full Stack)
+
+- Score: 95
+- Grade: A
+- Research evidence: 0
+- Keywords: JavaScript, CSS, API, remote, engineer, data
+- Compensation leverage: high
+- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
+
+### Apply Agent Guardrails
+- Never submit without explicit user confirmation.
+- Never fabricate work authorization, salary history, degree, or experience.
+- Never store API keys or credentials in job metadata.
+- Record only application status and user-approved notes.
+
+## P0 USAA - Software Engineer Mid-level (Java Full Stack)
+
+- Score: 95
+- Grade: A
+- Research evidence: 0
+- Keywords: JavaScript, CSS, API, remote, engineer, data
+- Compensation leverage: high
+- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
+
+### Apply Agent Guardrails
+- Never submit without explicit user confirmation.
+- Never fabricate work authorization, salary history, degree, or experience.
+- Never store API keys or credentials in job metadata.
+- Record only application status and user-approved notes.
+
+## P0 USAA - Software Engineer Mid-level (Java Full Stack)
+
+- Score: 95
+- Grade: A
+- Research evidence: 0
+- Keywords: JavaScript, CSS, API, remote, engineer, data
 - Compensation leverage: high
 - Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
 
@@ -257,7 +317,7 @@ Errors: 0
 - Grade: A
 - Research evidence: 0
 - Keywords: Analytics, Performance Optimization, product, data
-- Compensation leverage: high
+- Compensation leverage: -
 - Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
 
 ### Apply Agent Guardrails
@@ -476,21 +536,6 @@ Errors: 0
 - Never store API keys or credentials in job metadata.
 - Record only application status and user-approved notes.
 
-## P0 Uber - Senior Rider Web Software Engineer
-
-- Score: 92
-- Grade: A
-- Research evidence: 1
-- Keywords: JavaScript, TypeScript, React, Next.js, CSS, API, engineer, product, data, graphql
-- Compensation leverage: high
-- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
-
-### Apply Agent Guardrails
-- Never submit without explicit user confirmation.
-- Never fabricate work authorization, salary history, degree, or experience.
-- Never store API keys or credentials in job metadata.
-- Record only application status and user-approved notes.
-
 ## P0 Rent the Runway - Software Engineer III - Full Stack
 
 - Score: 92
@@ -611,12 +656,12 @@ Errors: 0
 - Never store API keys or credentials in job metadata.
 - Record only application status and user-approved notes.
 
-## P0 Stripe Greenhouse - Learning Architect
+## P0 Stripe Greenhouse - Full Stack Engineer, Growth
 
 - Score: 92
 - Grade: A
 - Research evidence: 0
-- Keywords: Figma, engineer, product, data
+- Keywords: JavaScript, React, CSS, dashboard, engineer, product, data, dashboards
 - Compensation leverage: -
 - Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
 
@@ -656,6 +701,36 @@ Errors: 0
 - Never store API keys or credentials in job metadata.
 - Record only application status and user-approved notes.
 
+## P0 ElevenLabs Ashby - Safety Engineer
+
+- Score: 92
+- Grade: A
+- Research evidence: 0
+- Keywords: React, remote, engineer, product, data
+- Compensation leverage: -
+- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
+
+### Apply Agent Guardrails
+- Never submit without explicit user confirmation.
+- Never fabricate work authorization, salary history, degree, or experience.
+- Never store API keys or credentials in job metadata.
+- Record only application status and user-approved notes.
+
+## P0 PostHog Ashby - Product Engineer
+
+- Score: 92
+- Grade: A
+- Research evidence: 0
+- Keywords: TypeScript, React, Analytics, remote, design system, engineer, product, data
+- Compensation leverage: -
+- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
+
+### Apply Agent Guardrails
+- Never submit without explicit user confirmation.
+- Never fabricate work authorization, salary history, degree, or experience.
+- Never store API keys or credentials in job metadata.
+- Record only application status and user-approved notes.
+
 ## P0 Uber - Graduate 2026 Software Engineer I, Chile
 
 - Score: 91
@@ -677,81 +752,6 @@ Errors: 0
 - Grade: A
 - Research evidence: 0
 - Keywords: JavaScript, TypeScript, Analytics, API, engineer, product, data
-- Compensation leverage: -
-- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
-
-### Apply Agent Guardrails
-- Never submit without explicit user confirmation.
-- Never fabricate work authorization, salary history, degree, or experience.
-- Never store API keys or credentials in job metadata.
-- Record only application status and user-approved notes.
-
-## P0 Allstate - Product Engineer - Java Spring Boot w/ Full Stack Option
-
-- Score: 91
-- Grade: A
-- Research evidence: 0
-- Keywords: TypeScript, React, API, remote, engineer, product, data, restful
-- Compensation leverage: -
-- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
-
-### Apply Agent Guardrails
-- Never submit without explicit user confirmation.
-- Never fabricate work authorization, salary history, degree, or experience.
-- Never store API keys or credentials in job metadata.
-- Record only application status and user-approved notes.
-
-## P0 Stripe Greenhouse - Full Stack Engineer, Support Experience
-
-- Score: 91
-- Grade: A
-- Research evidence: 0
-- Keywords: React, engineer, product
-- Compensation leverage: -
-- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
-
-### Apply Agent Guardrails
-- Never submit without explicit user confirmation.
-- Never fabricate work authorization, salary history, degree, or experience.
-- Never store API keys or credentials in job metadata.
-- Record only application status and user-approved notes.
-
-## P0 Canonical Greenhouse - Web Frontend Engineer - JS, CSS, React, Flutter
-
-- Score: 91
-- Grade: A
-- Research evidence: 0
-- Keywords: TypeScript, React, CSS, Accessibility, API, remote, engineer, product, data
-- Compensation leverage: -
-- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
-
-### Apply Agent Guardrails
-- Never submit without explicit user confirmation.
-- Never fabricate work authorization, salary history, degree, or experience.
-- Never store API keys or credentials in job metadata.
-- Record only application status and user-approved notes.
-
-## P0 Asana Greenhouse - Senior Engineering Manager, Payment Platform
-
-- Score: 91
-- Grade: A
-- Research evidence: 0
-- Keywords: TypeScript, product, data
-- Compensation leverage: -
-- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
-
-### Apply Agent Guardrails
-- Never submit without explicit user confirmation.
-- Never fabricate work authorization, salary history, degree, or experience.
-- Never store API keys or credentials in job metadata.
-- Record only application status and user-approved notes.
-
-## P0 Asana Greenhouse - Senior Software Engineer, AI Chat
-
-- Score: 91
-- Grade: A
-- Research evidence: 0
-- Keywords: API, engineer, product, data
 - Compensation leverage: -
 - Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
 

@@ -1,6 +1,6 @@
 # Career Ops Application Kit
 
-Generated: 2026-05-29T00:30:26.929Z
+Generated: 2026-05-30T00:14:45.651Z
 Jobs: 12
 
 ## Pipeline
@@ -335,6 +335,71 @@ Alex Chen
 - Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.
 - Use competing priorities and role fit, not personal need, as the negotiation frame.
 
+## Uber - Sr Software Engineer, Frontend (Web)
+
+- Priority: P0
+- Score: 95/A
+- Subject: Sr Software Engineer, Frontend (Web) application - Uber
+
+- Block G: High Confidence
+- Rating: 4.8/5.0
+
+### ATS Keyword Injection
+- Archetype: Frontend Engineer
+- Coverage: 100%
+- JD Keywords: JavaScript, TypeScript, React, CSS, API, Performance Optimization, engineer, product
+- 在 Professional Summary 中自然帶入：JavaScript、TypeScript、React、CSS、API
+- 使用職位語言：「Frontend Engineer」方向的動詞和術語
+- 【你已有但此 JD 未要求】可視情況選擇性提及：angular、python、go、html、growth
+- Missing (do NOT fabricate): angular, python, go, html, growth
+
+### Apply Checklist
+- Open the source URL and confirm the role is still active.
+- Generate or refresh the tailored ATS PDF from this job.
+- Mirror these JD keywords honestly in your CV: JavaScript, TypeScript, React, CSS, API, Performance Optimization, engineer, product
+- Do not overclaim missing areas: angular, python, go, html, growth
+- Log status, recruiter/contact, and next follow-up date in the tracker.
+
+### Outreach Email
+```text
+Hi Uber team,
+
+I am Alex Chen, and I am interested in the Sr Software Engineer, Frontend (Web) role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.
+
+The role stood out because it maps closely to my experience with JavaScript, TypeScript, React, CSS, API.
+
+I would appreciate the chance to share how my experience can support the team. Thank you for your time.
+
+Best,
+Alex Chen
+```
+
+### Follow-up
+Timing: 3-5 business days after applying or the last recruiter interaction.
+```text
+Hi Uber team,
+
+I wanted to follow up on my application for the Sr Software Engineer, Frontend (Web) role. I remain interested and would be glad to provide any additional context about my background.
+
+Thank you again for your time.
+
+Best,
+Alex Chen
+```
+
+### Interview Prep
+- Prepare a 60-second story for why Uber and why Sr Software Engineer, Frontend (Web).
+- Prepare evidence for: JavaScript, TypeScript, React, CSS, API, Performance Optimization.
+- Prepare one STAR story about execution under ambiguity.
+- Prepare one STAR story about collaboration and tradeoff decisions.
+- Prepare questions about team priorities, success metrics, and hiring timeline.
+
+### Negotiation Prep
+- Wait for a clear offer before anchoring compensation.
+- Ask for total compensation breakdown, work mode, title, level, review cycle, and start date.
+- Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.
+- Use competing priorities and role fit, not personal need, as the negotiation frame.
+
 ## Disney - Lead Software Engineer
 
 - Priority: P0
@@ -466,38 +531,38 @@ Alex Chen
 - Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.
 - Use competing priorities and role fit, not personal need, as the negotiation frame.
 
-## Uber - Sr Software Engineer, Frontend (Web)
+## USAA - Software Engineer Mid-level (Java Full Stack)
 
 - Priority: P0
 - Score: 95/A
-- Subject: Sr Software Engineer, Frontend (Web) application - Uber
+- Subject: Software Engineer Mid-level (Java Full Stack) application - USAA
 
 - Block G: High Confidence
 - Rating: 4.8/5.0
 
 ### ATS Keyword Injection
-- Archetype: Frontend Engineer
+- Archetype: Full Stack Engineer
 - Coverage: 100%
-- JD Keywords: JavaScript, TypeScript, React, CSS, API, Performance Optimization, engineer, product
-- 在 Professional Summary 中自然帶入：JavaScript、TypeScript、React、CSS、API
-- 使用職位語言：「Frontend Engineer」方向的動詞和術語
-- 【你已有但此 JD 未要求】可視情況選擇性提及：angular、python、go、html、growth
-- Missing (do NOT fabricate): angular, python, go, html, growth
+- JD Keywords: JavaScript, CSS, API, remote, engineer, data
+- 在 Professional Summary 中自然帶入：JavaScript、CSS、API、remote、engineer
+- 使用職位語言：「Full Stack Engineer」方向的動詞和術語
+- 【你已有但此 JD 未要求】可視情況選擇性提及：python、java、go、swift、kotlin
+- Missing (do NOT fabricate): python, java, go, swift, kotlin, sql, aws, docker
 
 ### Apply Checklist
 - Open the source URL and confirm the role is still active.
 - Generate or refresh the tailored ATS PDF from this job.
-- Mirror these JD keywords honestly in your CV: JavaScript, TypeScript, React, CSS, API, Performance Optimization, engineer, product
-- Do not overclaim missing areas: angular, python, go, html, growth
+- Mirror these JD keywords honestly in your CV: JavaScript, CSS, API, remote, engineer, data
+- Do not overclaim missing areas: python, java, go, swift, kotlin, sql
 - Log status, recruiter/contact, and next follow-up date in the tracker.
 
 ### Outreach Email
 ```text
-Hi Uber team,
+Hi USAA team,
 
-I am Alex Chen, and I am interested in the Sr Software Engineer, Frontend (Web) role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.
+I am Alex Chen, and I am interested in the Software Engineer Mid-level (Java Full Stack) role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.
 
-The role stood out because it maps closely to my experience with JavaScript, TypeScript, React, CSS, API.
+The role stood out because it maps closely to my experience with JavaScript, CSS, API, remote, engineer.
 
 I would appreciate the chance to share how my experience can support the team. Thank you for your time.
 
@@ -508,9 +573,9 @@ Alex Chen
 ### Follow-up
 Timing: 3-5 business days after applying or the last recruiter interaction.
 ```text
-Hi Uber team,
+Hi USAA team,
 
-I wanted to follow up on my application for the Sr Software Engineer, Frontend (Web) role. I remain interested and would be glad to provide any additional context about my background.
+I wanted to follow up on my application for the Software Engineer Mid-level (Java Full Stack) role. I remain interested and would be glad to provide any additional context about my background.
 
 Thank you again for your time.
 
@@ -519,8 +584,8 @@ Alex Chen
 ```
 
 ### Interview Prep
-- Prepare a 60-second story for why Uber and why Sr Software Engineer, Frontend (Web).
-- Prepare evidence for: JavaScript, TypeScript, React, CSS, API, Performance Optimization.
+- Prepare a 60-second story for why USAA and why Software Engineer Mid-level (Java Full Stack).
+- Prepare evidence for: JavaScript, CSS, API, remote, engineer, data.
 - Prepare one STAR story about execution under ambiguity.
 - Prepare one STAR story about collaboration and tradeoff decisions.
 - Prepare questions about team priorities, success metrics, and hiring timeline.
@@ -531,38 +596,38 @@ Alex Chen
 - Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.
 - Use competing priorities and role fit, not personal need, as the negotiation frame.
 
-## Uber - Software Engineer II - Frontend
+## USAA - Software Engineer Mid-level (Java Full Stack)
 
 - Priority: P0
 - Score: 95/A
-- Subject: Software Engineer II - Frontend application - Uber
+- Subject: Software Engineer Mid-level (Java Full Stack) application - USAA
 
 - Block G: High Confidence
 - Rating: 4.8/5.0
 
 ### ATS Keyword Injection
-- Archetype: Frontend Engineer
+- Archetype: Full Stack Engineer
 - Coverage: 100%
-- JD Keywords: JavaScript, TypeScript, React, CSS, API, engineer, product, data
-- 在 Professional Summary 中自然帶入：JavaScript、TypeScript、React、CSS、API
-- 使用職位語言：「Frontend Engineer」方向的動詞和術語
-- 【你已有但此 JD 未要求】可視情況選擇性提及：angular、python、go、html、growth
-- Missing (do NOT fabricate): angular, python, go, html, growth
+- JD Keywords: JavaScript, CSS, API, remote, engineer, data
+- 在 Professional Summary 中自然帶入：JavaScript、CSS、API、remote、engineer
+- 使用職位語言：「Full Stack Engineer」方向的動詞和術語
+- 【你已有但此 JD 未要求】可視情況選擇性提及：python、java、go、swift、kotlin
+- Missing (do NOT fabricate): python, java, go, swift, kotlin, sql, aws, docker
 
 ### Apply Checklist
 - Open the source URL and confirm the role is still active.
 - Generate or refresh the tailored ATS PDF from this job.
-- Mirror these JD keywords honestly in your CV: JavaScript, TypeScript, React, CSS, API, engineer, product, data
-- Do not overclaim missing areas: angular, python, go, html, growth
+- Mirror these JD keywords honestly in your CV: JavaScript, CSS, API, remote, engineer, data
+- Do not overclaim missing areas: python, java, go, swift, kotlin, sql
 - Log status, recruiter/contact, and next follow-up date in the tracker.
 
 ### Outreach Email
 ```text
-Hi Uber team,
+Hi USAA team,
 
-I am Alex Chen, and I am interested in the Software Engineer II - Frontend role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.
+I am Alex Chen, and I am interested in the Software Engineer Mid-level (Java Full Stack) role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.
 
-The role stood out because it maps closely to my experience with JavaScript, TypeScript, React, CSS, API.
+The role stood out because it maps closely to my experience with JavaScript, CSS, API, remote, engineer.
 
 I would appreciate the chance to share how my experience can support the team. Thank you for your time.
 
@@ -573,9 +638,9 @@ Alex Chen
 ### Follow-up
 Timing: 3-5 business days after applying or the last recruiter interaction.
 ```text
-Hi Uber team,
+Hi USAA team,
 
-I wanted to follow up on my application for the Software Engineer II - Frontend role. I remain interested and would be glad to provide any additional context about my background.
+I wanted to follow up on my application for the Software Engineer Mid-level (Java Full Stack) role. I remain interested and would be glad to provide any additional context about my background.
 
 Thank you again for your time.
 
@@ -584,8 +649,8 @@ Alex Chen
 ```
 
 ### Interview Prep
-- Prepare a 60-second story for why Uber and why Software Engineer II - Frontend.
-- Prepare evidence for: JavaScript, TypeScript, React, CSS, API, engineer.
+- Prepare a 60-second story for why USAA and why Software Engineer Mid-level (Java Full Stack).
+- Prepare evidence for: JavaScript, CSS, API, remote, engineer, data.
 - Prepare one STAR story about execution under ambiguity.
 - Prepare one STAR story about collaboration and tradeoff decisions.
 - Prepare questions about team priorities, success metrics, and hiring timeline.
@@ -596,39 +661,38 @@ Alex Chen
 - Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.
 - Use competing priorities and role fit, not personal need, as the negotiation frame.
 
-## Money Forward - Lead Backend Engineer, Digital Bank
+## USAA - Software Engineer Mid-level (Java Full Stack)
 
 - Priority: P0
 - Score: 95/A
-- Subject: Lead Backend Engineer, Digital Bank application - Money Forward
+- Subject: Software Engineer Mid-level (Java Full Stack) application - USAA
 
-- Block G: Proceed with Caution
+- Block G: High Confidence
 - Rating: 4.8/5.0
 
 ### ATS Keyword Injection
-- Archetype: Backend Engineer
+- Archetype: Full Stack Engineer
 - Coverage: 100%
-- JD Keywords: API, engineer, product, data
-- 在 Professional Summary 中自然帶入：API、engineer、product、data
-- 使用職位語言：「Backend Engineer」方向的動詞和術語
-- 【你已有但此 JD 未要求】可視情況選擇性提及：kotlin、aws、docker、rest、agents
-- Missing (do NOT fabricate): kotlin, aws, docker, rest, agents
+- JD Keywords: JavaScript, CSS, API, remote, engineer, data
+- 在 Professional Summary 中自然帶入：JavaScript、CSS、API、remote、engineer
+- 使用職位語言：「Full Stack Engineer」方向的動詞和術語
+- 【你已有但此 JD 未要求】可視情況選擇性提及：python、java、go、swift、kotlin
+- Missing (do NOT fabricate): python, java, go, swift, kotlin, sql, aws, docker
 
 ### Apply Checklist
 - Open the source URL and confirm the role is still active.
-- ⚠ Block G: Proceed with Caution — double-check recruiter identity.
 - Generate or refresh the tailored ATS PDF from this job.
-- Mirror these JD keywords honestly in your CV: API, engineer, product, data
-- Do not overclaim missing areas: kotlin, aws, docker, rest, agents
+- Mirror these JD keywords honestly in your CV: JavaScript, CSS, API, remote, engineer, data
+- Do not overclaim missing areas: python, java, go, swift, kotlin, sql
 - Log status, recruiter/contact, and next follow-up date in the tracker.
 
 ### Outreach Email
 ```text
-Hi Money Forward team,
+Hi USAA team,
 
-I am Alex Chen, and I am interested in the Lead Backend Engineer, Digital Bank role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.
+I am Alex Chen, and I am interested in the Software Engineer Mid-level (Java Full Stack) role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.
 
-The role stood out because it maps closely to my experience with API, engineer, product, data.
+The role stood out because it maps closely to my experience with JavaScript, CSS, API, remote, engineer.
 
 I would appreciate the chance to share how my experience can support the team. Thank you for your time.
 
@@ -639,9 +703,9 @@ Alex Chen
 ### Follow-up
 Timing: 3-5 business days after applying or the last recruiter interaction.
 ```text
-Hi Money Forward team,
+Hi USAA team,
 
-I wanted to follow up on my application for the Lead Backend Engineer, Digital Bank role. I remain interested and would be glad to provide any additional context about my background.
+I wanted to follow up on my application for the Software Engineer Mid-level (Java Full Stack) role. I remain interested and would be glad to provide any additional context about my background.
 
 Thank you again for your time.
 
@@ -650,8 +714,8 @@ Alex Chen
 ```
 
 ### Interview Prep
-- Prepare a 60-second story for why Money Forward and why Lead Backend Engineer, Digital Bank.
-- Prepare evidence for: API, engineer, product, data.
+- Prepare a 60-second story for why USAA and why Software Engineer Mid-level (Java Full Stack).
+- Prepare evidence for: JavaScript, CSS, API, remote, engineer, data.
 - Prepare one STAR story about execution under ambiguity.
 - Prepare one STAR story about collaboration and tradeoff decisions.
 - Prepare questions about team priorities, success metrics, and hiring timeline.
@@ -662,38 +726,38 @@ Alex Chen
 - Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.
 - Use competing priorities and role fit, not personal need, as the negotiation frame.
 
-## AIRWALLEX (SINGAPORE) PTE. LTD. - Senior Frontend Engineer, Regulatory Reporting
+## USAA - Software Engineer Mid-level (Java Full Stack)
 
 - Priority: P0
-- Score: 94/A
-- Subject: Senior Frontend Engineer, Regulatory Reporting application - AIRWALLEX (SINGAPORE) PTE. LTD.
+- Score: 95/A
+- Subject: Software Engineer Mid-level (Java Full Stack) application - USAA
 
 - Block G: High Confidence
 - Rating: 4.8/5.0
 
 ### ATS Keyword Injection
-- Archetype: Frontend Engineer
+- Archetype: Full Stack Engineer
 - Coverage: 100%
-- JD Keywords: TypeScript, React, API, design system, engineer, data, graphql, node.js
-- 在 Professional Summary 中自然帶入：TypeScript、React、API、design system、engineer
-- 使用職位語言：「Frontend Engineer」方向的動詞和術語
-- 【你已有但此 JD 未要求】可視情況選擇性提及：rest、llm、agents、operations
-- Missing (do NOT fabricate): rest, llm, agents, operations
+- JD Keywords: JavaScript, CSS, API, remote, engineer, data
+- 在 Professional Summary 中自然帶入：JavaScript、CSS、API、remote、engineer
+- 使用職位語言：「Full Stack Engineer」方向的動詞和術語
+- 【你已有但此 JD 未要求】可視情況選擇性提及：python、java、go、swift、kotlin
+- Missing (do NOT fabricate): python, java, go, swift, kotlin, sql, aws, docker
 
 ### Apply Checklist
 - Open the source URL and confirm the role is still active.
 - Generate or refresh the tailored ATS PDF from this job.
-- Mirror these JD keywords honestly in your CV: TypeScript, React, API, design system, engineer, data, graphql, node.js
-- Do not overclaim missing areas: rest, llm, agents, operations
+- Mirror these JD keywords honestly in your CV: JavaScript, CSS, API, remote, engineer, data
+- Do not overclaim missing areas: python, java, go, swift, kotlin, sql
 - Log status, recruiter/contact, and next follow-up date in the tracker.
 
 ### Outreach Email
 ```text
-Hi AIRWALLEX (SINGAPORE) PTE. LTD. team,
+Hi USAA team,
 
-I am Alex Chen, and I am interested in the Senior Frontend Engineer, Regulatory Reporting role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.
+I am Alex Chen, and I am interested in the Software Engineer Mid-level (Java Full Stack) role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.
 
-The role stood out because it maps closely to my experience with TypeScript, React, API, design system, engineer.
+The role stood out because it maps closely to my experience with JavaScript, CSS, API, remote, engineer.
 
 I would appreciate the chance to share how my experience can support the team. Thank you for your time.
 
@@ -704,74 +768,9 @@ Alex Chen
 ### Follow-up
 Timing: 3-5 business days after applying or the last recruiter interaction.
 ```text
-Hi AIRWALLEX (SINGAPORE) PTE. LTD. team,
+Hi USAA team,
 
-I wanted to follow up on my application for the Senior Frontend Engineer, Regulatory Reporting role. I remain interested and would be glad to provide any additional context about my background.
-
-Thank you again for your time.
-
-Best,
-Alex Chen
-```
-
-### Interview Prep
-- Prepare a 60-second story for why AIRWALLEX (SINGAPORE) PTE. LTD. and why Senior Frontend Engineer, Regulatory Reporting.
-- Prepare evidence for: TypeScript, React, API, design system, engineer, data.
-- Prepare one STAR story about execution under ambiguity.
-- Prepare one STAR story about collaboration and tradeoff decisions.
-- Prepare questions about team priorities, success metrics, and hiring timeline.
-
-### Negotiation Prep
-- Wait for a clear offer before anchoring compensation.
-- Ask for total compensation breakdown, work mode, title, level, review cycle, and start date.
-- Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.
-- Use competing priorities and role fit, not personal need, as the negotiation frame.
-
-## ALPHA X TECHNOLOGY PTE. LTD. - Frontend Engineer
-
-- Priority: P0
-- Score: 94/A
-- Subject: Frontend Engineer application - ALPHA X TECHNOLOGY PTE. LTD.
-
-- Block G: High Confidence
-- Rating: 4.8/5.0
-
-### ATS Keyword Injection
-- Archetype: Frontend Engineer
-- Coverage: 100%
-- JD Keywords: JavaScript, TypeScript, React, API, Figma, engineer, data, graphql
-- 在 Professional Summary 中自然帶入：JavaScript、TypeScript、React、API、Figma
-- 使用職位語言：「Frontend Engineer」方向的動詞和術語
-- 【你已有但此 JD 未要求】可視情況選擇性提及：vue、rest
-- Missing (do NOT fabricate): vue, rest
-
-### Apply Checklist
-- Open the source URL and confirm the role is still active.
-- Generate or refresh the tailored ATS PDF from this job.
-- Mirror these JD keywords honestly in your CV: JavaScript, TypeScript, React, API, Figma, engineer, data, graphql
-- Do not overclaim missing areas: vue, rest
-- Log status, recruiter/contact, and next follow-up date in the tracker.
-
-### Outreach Email
-```text
-Hi ALPHA X TECHNOLOGY PTE. LTD. team,
-
-I am Alex Chen, and I am interested in the Frontend Engineer role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.
-
-The role stood out because it maps closely to my experience with JavaScript, TypeScript, React, API, Figma.
-
-I would appreciate the chance to share how my experience can support the team. Thank you for your time.
-
-Best,
-Alex Chen
-```
-
-### Follow-up
-Timing: 3-5 business days after applying or the last recruiter interaction.
-```text
-Hi ALPHA X TECHNOLOGY PTE. LTD. team,
-
-I wanted to follow up on my application for the Frontend Engineer role. I remain interested and would be glad to provide any additional context about my background.
+I wanted to follow up on my application for the Software Engineer Mid-level (Java Full Stack) role. I remain interested and would be glad to provide any additional context about my background.
 
 Thank you again for your time.
 
@@ -780,8 +779,8 @@ Alex Chen
 ```
 
 ### Interview Prep
-- Prepare a 60-second story for why ALPHA X TECHNOLOGY PTE. LTD. and why Frontend Engineer.
-- Prepare evidence for: JavaScript, TypeScript, React, API, Figma, engineer.
+- Prepare a 60-second story for why USAA and why Software Engineer Mid-level (Java Full Stack).
+- Prepare evidence for: JavaScript, CSS, API, remote, engineer, data.
 - Prepare one STAR story about execution under ambiguity.
 - Prepare one STAR story about collaboration and tradeoff decisions.
 - Prepare questions about team priorities, success metrics, and hiring timeline.

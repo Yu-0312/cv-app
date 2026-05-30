@@ -1,6 +1,6 @@
 # Career Ops Deep Fit Report
 
-Generated: 2026-05-29T00:30:48.252Z
+Generated: 2026-05-30T00:15:05.466Z
 LLM provider: none
 Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 exploratory)
 
@@ -156,6 +156,36 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Use story story-2: systems and API collaboration.
 - Use story story-3: accessibility and quality.
 
+### Uber - Sr Software Engineer, Frontend (Web)
+
+- Score: 95
+- Grade: A
+- Confidence: medium
+- Decision: pursue aggressively
+- Thesis: Sr Software Engineer, Frontend (Web) at Uber is pursue aggressively because the snapshot score is 95, with 11 profile/role keyword hits and 1 external evidence item(s).
+
+#### Evidence
+- Keyword hits: Frontend Engineer, JavaScript, TypeScript, React, CSS, API, Performance Optimization, remote, TypeScript, React, Frontend Engineer
+- Keyword misses: angular, python, go, html, growth
+- Research signals: AI / data / platform signal, remote or hybrid signal
+- Compensation leverage: high
+
+#### Concerns
+- None flagged
+
+#### Interview Strategy
+- Ask why the role is open and what success means in the first 90 days.
+- Probe team ownership, roadmap pressure, and cross-functional interfaces.
+- What business unit owns the Sr Software Engineer, Frontend (Web) role?
+- What measurable outcomes would this team expect in the first 90 days?
+- What recent company/product signals change the risk or upside?
+
+#### CV Strategy
+- Lead with proof around: Frontend Engineer, JavaScript, TypeScript, React, CSS, API.
+- Use story story-1: frontend product execution.
+- Use story story-2: systems and API collaboration.
+- Use story story-3: accessibility and quality.
+
 ### Disney - Lead Software Engineer
 
 - Score: 95
@@ -216,32 +246,114 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Use story story-2: systems and API collaboration.
 - Use story story-3: accessibility and quality.
 
-### Uber - Sr Software Engineer, Frontend (Web)
+### USAA - Software Engineer Mid-level (Java Full Stack)
 
 - Score: 95
 - Grade: A
 - Confidence: medium
 - Decision: pursue aggressively
-- Thesis: Sr Software Engineer, Frontend (Web) at Uber is pursue aggressively because the snapshot score is 95, with 11 profile/role keyword hits and 1 external evidence item(s).
+- Thesis: Software Engineer Mid-level (Java Full Stack) at USAA is pursue aggressively because the snapshot score is 95, with 5 profile/role keyword hits and 0 external evidence item(s).
 
 #### Evidence
-- Keyword hits: Frontend Engineer, JavaScript, TypeScript, React, CSS, API, Performance Optimization, remote, TypeScript, React, Frontend Engineer
-- Keyword misses: angular, python, go, html, growth
-- Research signals: AI / data / platform signal, remote or hybrid signal
+- Keyword hits: JavaScript, CSS, API, remote, Full Stack Engineer
+- Keyword misses: python, java, go, swift, kotlin, sql, aws, docker, html, operations
+- Research signals: -
 - Compensation leverage: high
 
 #### Concerns
-- None flagged
+- External company evidence is thin; run deep research with a search API.
+- Profile keyword coverage is weaker than the target role language.
 
 #### Interview Strategy
 - Ask why the role is open and what success means in the first 90 days.
 - Probe team ownership, roadmap pressure, and cross-functional interfaces.
-- What business unit owns the Sr Software Engineer, Frontend (Web) role?
-- What measurable outcomes would this team expect in the first 90 days?
-- What recent company/product signals change the risk or upside?
 
 #### CV Strategy
-- Lead with proof around: Frontend Engineer, JavaScript, TypeScript, React, CSS, API.
+- Lead with proof around: JavaScript, CSS, API, remote, Full Stack Engineer.
+- Use story story-1: frontend product execution.
+- Use story story-2: systems and API collaboration.
+- Use story story-3: accessibility and quality.
+
+### USAA - Software Engineer Mid-level (Java Full Stack)
+
+- Score: 95
+- Grade: A
+- Confidence: medium
+- Decision: pursue aggressively
+- Thesis: Software Engineer Mid-level (Java Full Stack) at USAA is pursue aggressively because the snapshot score is 95, with 5 profile/role keyword hits and 0 external evidence item(s).
+
+#### Evidence
+- Keyword hits: JavaScript, CSS, API, remote, Full Stack Engineer
+- Keyword misses: python, java, go, swift, kotlin, sql, aws, docker, html, operations
+- Research signals: -
+- Compensation leverage: high
+
+#### Concerns
+- External company evidence is thin; run deep research with a search API.
+- Profile keyword coverage is weaker than the target role language.
+
+#### Interview Strategy
+- Ask why the role is open and what success means in the first 90 days.
+- Probe team ownership, roadmap pressure, and cross-functional interfaces.
+
+#### CV Strategy
+- Lead with proof around: JavaScript, CSS, API, remote, Full Stack Engineer.
+- Use story story-1: frontend product execution.
+- Use story story-2: systems and API collaboration.
+- Use story story-3: accessibility and quality.
+
+### USAA - Software Engineer Mid-level (Java Full Stack)
+
+- Score: 95
+- Grade: A
+- Confidence: medium
+- Decision: pursue aggressively
+- Thesis: Software Engineer Mid-level (Java Full Stack) at USAA is pursue aggressively because the snapshot score is 95, with 5 profile/role keyword hits and 0 external evidence item(s).
+
+#### Evidence
+- Keyword hits: JavaScript, CSS, API, remote, Full Stack Engineer
+- Keyword misses: python, java, go, swift, kotlin, sql, aws, docker, html, operations
+- Research signals: -
+- Compensation leverage: high
+
+#### Concerns
+- External company evidence is thin; run deep research with a search API.
+- Profile keyword coverage is weaker than the target role language.
+
+#### Interview Strategy
+- Ask why the role is open and what success means in the first 90 days.
+- Probe team ownership, roadmap pressure, and cross-functional interfaces.
+
+#### CV Strategy
+- Lead with proof around: JavaScript, CSS, API, remote, Full Stack Engineer.
+- Use story story-1: frontend product execution.
+- Use story story-2: systems and API collaboration.
+- Use story story-3: accessibility and quality.
+
+### USAA - Software Engineer Mid-level (Java Full Stack)
+
+- Score: 95
+- Grade: A
+- Confidence: medium
+- Decision: pursue aggressively
+- Thesis: Software Engineer Mid-level (Java Full Stack) at USAA is pursue aggressively because the snapshot score is 95, with 5 profile/role keyword hits and 0 external evidence item(s).
+
+#### Evidence
+- Keyword hits: JavaScript, CSS, API, remote, Full Stack Engineer
+- Keyword misses: python, java, go, swift, kotlin, sql, aws, docker, html, operations
+- Research signals: -
+- Compensation leverage: high
+
+#### Concerns
+- External company evidence is thin; run deep research with a search API.
+- Profile keyword coverage is weaker than the target role language.
+
+#### Interview Strategy
+- Ask why the role is open and what success means in the first 90 days.
+- Probe team ownership, roadmap pressure, and cross-functional interfaces.
+
+#### CV Strategy
+- Lead with proof around: JavaScript, CSS, API, remote, Full Stack Engineer.
 - Use story story-1: frontend product execution.
 - Use story story-2: systems and API collaboration.
 - Use story story-3: accessibility and quality.
@@ -478,7 +590,7 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Keyword hits: Analytics, Performance Optimization, analytics, Product Engineer
 - Keyword misses: spark, machine learning, sales, operations, excel
 - Research signals: -
-- Compensation leverage: high
+- Compensation leverage: -
 
 #### Concerns
 - External company evidence is thin; run deep research with a search API.
@@ -609,116 +721,6 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Use story story-2: systems and API collaboration.
 - Use story story-3: accessibility and quality.
 
-### Capital One - Distinguished Engineer (Remote - Eligible)
-
-- Score: 93
-- Grade: A
-- Confidence: medium
-- Decision: pursue aggressively
-- Thesis: Distinguished Engineer (Remote - Eligible) at Capital One is pursue aggressively because the snapshot score is 93, with 6 profile/role keyword hits and 0 external evidence item(s).
-
-#### Evidence
-- Keyword hits: JavaScript, TypeScript, API, remote, TypeScript, Product Engineer
-- Keyword misses: python, java, go, swift, aws, azure, machine learning
-- Research signals: -
-- Compensation leverage: -
-
-#### Concerns
-- External company evidence is thin; run deep research with a search API.
-- Profile keyword coverage is weaker than the target role language.
-
-#### Interview Strategy
-- Ask why the role is open and what success means in the first 90 days.
-- Probe team ownership, roadmap pressure, and cross-functional interfaces.
-
-#### CV Strategy
-- Lead with proof around: JavaScript, TypeScript, API, remote, TypeScript, Product Engineer.
-- Use story story-1: frontend product execution.
-- Use story story-2: systems and API collaboration.
-- Use story story-3: accessibility and quality.
-
-### Stripe Greenhouse - Android Engineer, Terminal Developer Productivity
-
-- Score: 93
-- Grade: A
-- Confidence: medium
-- Decision: pursue aggressively
-- Thesis: Android Engineer, Terminal Developer Productivity at Stripe Greenhouse is pursue aggressively because the snapshot score is 93, with 3 profile/role keyword hits and 0 external evidence item(s).
-
-#### Evidence
-- Keyword hits: API, remote, Product Engineer
-- Keyword misses: java, go, kotlin
-- Research signals: -
-- Compensation leverage: -
-
-#### Concerns
-- External company evidence is thin; run deep research with a search API.
-
-#### Interview Strategy
-- Ask why the role is open and what success means in the first 90 days.
-- Probe team ownership, roadmap pressure, and cross-functional interfaces.
-
-#### CV Strategy
-- Lead with proof around: API, remote, Product Engineer.
-- Use story story-1: frontend product execution.
-- Use story story-2: systems and API collaboration.
-- Use story story-3: accessibility and quality.
-
-### Figma Greenhouse - Software Engineer, AI Product (London, United Kingdom)
-
-- Score: 93
-- Grade: A
-- Confidence: medium
-- Decision: pursue aggressively
-- Thesis: Software Engineer, AI Product (London, United Kingdom) at Figma Greenhouse is pursue aggressively because the snapshot score is 93, with 7 profile/role keyword hits and 0 external evidence item(s).
-
-#### Evidence
-- Keyword hits: TypeScript, React, API, Figma, TypeScript, React, Product Engineer
-- Keyword misses: llm, agents
-- Research signals: -
-- Compensation leverage: -
-
-#### Concerns
-- External company evidence is thin; run deep research with a search API.
-
-#### Interview Strategy
-- Ask why the role is open and what success means in the first 90 days.
-- Probe team ownership, roadmap pressure, and cross-functional interfaces.
-
-#### CV Strategy
-- Lead with proof around: TypeScript, React, API, Figma, TypeScript, React.
-- Use story story-1: frontend product execution.
-- Use story story-2: systems and API collaboration.
-- Use story story-3: accessibility and quality.
-
-### Airbnb Greenhouse - Senior Software Engineer, Quality Platform
-
-- Score: 93
-- Grade: A
-- Confidence: medium
-- Decision: pursue aggressively
-- Thesis: Senior Software Engineer, Quality Platform at Airbnb Greenhouse is pursue aggressively because the snapshot score is 93, with 6 profile/role keyword hits and 0 external evidence item(s).
-
-#### Evidence
-- Keyword hits: TypeScript, API, Design Systems, design system, TypeScript, Product Engineer
-- Keyword misses: python, java, swift, kotlin, llm, rag, agents, prompt engineering
-- Research signals: -
-- Compensation leverage: -
-
-#### Concerns
-- External company evidence is thin; run deep research with a search API.
-- Profile keyword coverage is weaker than the target role language.
-
-#### Interview Strategy
-- Ask why the role is open and what success means in the first 90 days.
-- Probe team ownership, roadmap pressure, and cross-functional interfaces.
-
-#### CV Strategy
-- Lead with proof around: TypeScript, API, Design Systems, design system, TypeScript, Product Engineer.
-- Use story story-1: frontend product execution.
-- Use story story-2: systems and API collaboration.
-- Use story story-3: accessibility and quality.
-
 ## Layer B — Standard Matches (roleFit 40-67)
 
 ### NVIDIA Workday - Senior Solution Architect - Telco Network Automation
@@ -756,12 +758,6 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Decision: pursue selectively
 - Keyword hits: Analytics, analytics
 - Gaps: spark, excel
-
-### N-iX - Senior Scala Engineer
-- Score: 78 | Grade: B | RoleFit: 45
-- Decision: pursue selectively
-- Keyword hits: Analytics, analytics
-- Gaps: docker, kubernetes
 
 ### NVIDIA Workday - Senior Mixed Signal Circuit Design Engineer
 - Score: 77 | Grade: B | RoleFit: 45
@@ -805,12 +801,6 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Keyword hits: -
 - Gaps: python
 
-### Roblox Greenhouse - Human Evaluator, Marketplace (Contract)
-- Score: 74 | Grade: B | RoleFit: 45
-- Decision: pursue selectively
-- Keyword hits: remote
-- Gaps: sql
-
 ### Roblox Greenhouse - Human Evaluator, Studio (Contract)
 - Score: 74 | Grade: B | RoleFit: 45
 - Decision: pursue selectively
@@ -829,11 +819,11 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Keyword hits: -
 - Gaps: python
 
-### Cursor Ashby - Associate Field Engineer
+### ElevenLabs Ashby - Audio Engineering (Freelance)
 - Score: 74 | Grade: B | RoleFit: 45
 - Decision: pursue selectively
-- Keyword hits: -
-- Gaps: go
+- Keyword hits: remote
+- Gaps: -
 
 ### HIVEBOTICS PTE. LTD. - Robotics Software Engineer Trainee
 - Score: 73 | Grade: B | RoleFit: 45
@@ -913,22 +903,10 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Keyword hits: -
 - Gaps: -
 
-### NK EDUCATION PTE. LTD. - Teacher manager
-- Score: 69 | Grade: C | RoleFit: 45
+### ALLEGIS GROUP SINGAPORE PRIVATE LIMITED - Business Analyst
+- Score: 68 | Grade: C | RoleFit: 45
 - Decision: hold / compare
 - Keyword hits: -
-- Gaps: -
-
-### NK EDU (FARRER PARK) PTE. LTD. - Teacher manager
-- Score: 69 | Grade: C | RoleFit: 45
-- Decision: hold / compare
-- Keyword hits: -
-- Gaps: -
-
-### emagine Polska - Release & Documentation Manager
-- Score: 69 | Grade: C | RoleFit: 45
-- Decision: hold / compare
-- Keyword hits: remote
 - Gaps: -
 
 ### Fraser Coast Regional Council - Expressions of Interest
@@ -949,27 +927,54 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Keyword hits: remote
 - Gaps: excel
 
-### Universia MÃ©xico - MEX Cajero Dual
+### ベクターリスクマネジメント株式会社 - [Desk work using English and Korean] Foreign-affiliated operator | Monthly salary example of 450,000 yen or more | No experience necessary | Security Controller
 - Score: 68 | Grade: C | RoleFit: 45
 - Decision: hold / compare
-- Keyword hits: remote
+- Keyword hits: -
 - Gaps: -
 
-### Apprentus - Entrenador a Deportivo
+### 株式会社YDM - ◆◇◆Design of medical equipment◆Utilize your English skills◆Top share in domestic market for dental equipment◆Medical equipment manufacturer◆
+- Score: 68 | Grade: C | RoleFit: 45
+- Decision: hold / compare
+- Keyword hits: -
+- Gaps: -
+
+### ADSAN LAW LLC - Conveyancing Secretary
+- Score: 68 | Grade: C | RoleFit: 45
+- Decision: hold / compare
+- Keyword hits: -
+- Gaps: -
+
+### confidential - Manufacturing engineer (Nwe graduated in 2027)
 - Score: 67 | Grade: C | RoleFit: 45
 - Decision: hold / compare
-- Keyword hits: remote
+- Keyword hits: -
+- Gaps: -
+
+### Fujisoft Co., Ltd. - [In-vehicle Software System Engineer] N2 level or higher welcome / Annual salary of 4.5 million yen or more / Career advancement / Atsugi City, Kanagawa Prefecture
+- Score: 67 | Grade: C | RoleFit: 45
+- Decision: hold / compare
+- Keyword hits: -
+- Gaps: -
+
+### Princess Cruise Lines ltd. (Carnival Japan, Inc) - Junior Assistant Purser / Guest Services Officer
+- Score: 67 | Grade: C | RoleFit: 45
+- Decision: hold / compare
+- Keyword hits: -
 - Gaps: -
 
 ## Layer C — Exploratory Signals (roleFit < 40)
 
+- **Capital One — Distinguished Engineer (Remote - Eligible)** (score: 93) | Top gap: python
+- **Stripe Greenhouse — Android Engineer, Terminal Developer Productivity** (score: 93) | Top gap: java
+- **Figma Greenhouse — Software Engineer, AI Product (London, United Kingdom)** (score: 93) | Top gap: llm
+- **Airbnb Greenhouse — Senior Software Engineer, Quality Platform** (score: 93) | Top gap: python
 - **Airbnb Greenhouse — Senior Web Automation Engineer, Quality Platform** (score: 93) | Top gap: agents
 - **MongoDB Greenhouse — Senior Software Engineer, Observability** (score: 93) | Top gap: java
 - **Capgemini Singapore  PTE. LTD. — Senior Frontend Engineer** (score: 92) | Top gap: operations
 - **NEUTRON PTE. LTD. — Frontend Engineer (Web & Mobile)** (score: 92) | Top gap: aws
 - **Uber — Sr Staff Engineer - Web Platform** (score: 92) | Top gap: growth
 - **Uber — Engineering Manager II** (score: 92) | Top gap: growth
-- **Uber — Senior Rider Web Software Engineer** (score: 92) | Top gap: vue
 - **Rent the Runway — Software Engineer III - Full Stack** (score: 92) | Top gap: java
 - **Flexport — Engineering Manager, Autonomous Freight Systems** (score: 92) | Top gap: java
 - **Bank of America — Software Engineer III - GBS IND** (score: 92) | Top gap: python
@@ -978,9 +983,11 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - **Zillow — Senior Engineering Manager** (score: 92) | Top gap: python
 - **Esri — Sr. Product Engineer - Web Services** (score: 92) | Top gap: python
 - **GitLab Greenhouse — Senior Backend Engineer (Ruby on Rails), Plan: Knowledge** (score: 92) | Top gap: agents
-- **Stripe Greenhouse — Learning Architect** (score: 92) | Top gap: growth
+- **Stripe Greenhouse — Full Stack Engineer, Growth** (score: 92) | Top gap: go
 - **Canonical Greenhouse — Security Software Engineer** (score: 92) | Top gap: python
 - **Vercel Greenhouse — Site Engineer** (score: 92) | Top gap: agents
+- **ElevenLabs Ashby — Safety Engineer** (score: 92) | Top gap: python
+- **PostHog Ashby — Product Engineer** (score: 92) | Top gap: python
 - **Uber — Graduate 2026 Software Engineer I, Chile** (score: 91) | Top gap: python
 - **EPAM Systems — Senior Data Engineer (Palantir)** (score: 91) | Top gap: python
 - **Allstate — Product Engineer - Java Spring Boot w/ Full Stack Option** (score: 91) | Top gap: python
@@ -988,9 +995,4 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - **Canonical Greenhouse — Web Frontend Engineer - JS, CSS, React, Flutter** (score: 91) | Top gap: docker
 - **Asana Greenhouse — Senior Engineering Manager, Payment Platform** (score: 91) | Top gap: kubernetes
 - **Asana Greenhouse — Senior Software Engineer, AI Chat** (score: 91) | Top gap: sales
-- **HAMSA APAC (SINGAPORE) PTE. LTD. — Software Engineer** (score: 90) | Top gap: java
-- **LawnStarter — Staff Product Engineer (Campinas)** (score: 90) | Top gap: aws
-- **LawnStarter — Staff Product Engineer (São Paulo)** (score: 90) | Top gap: aws
-- **DoorDash — UX Design Engineer, Content Tooling** (score: 90) | Top gap: java
-- **Merge — Software Engineer** (score: 90) | Top gap: python
 
