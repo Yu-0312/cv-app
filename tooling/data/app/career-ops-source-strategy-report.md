@@ -1,7 +1,7 @@
 # Career Ops Source Strategy Report
 
 - Strategy: Career Ops Source Strategy Example
-- Built at: 2026-05-30T23:17:39.016Z
+- Built at: 2026-05-31T23:32:04.961Z
 - Markets: all
 - Sources: 73
 - Search queries: 45

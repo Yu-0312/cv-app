@@ -1,6 +1,6 @@
 # Career Ops Deep Fit Report
 
-Generated: 2026-05-30T23:47:12.321Z
+Generated: 2026-05-31T23:59:59.551Z
 LLM provider: none
 Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 exploratory)
 
@@ -612,36 +612,6 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Use story story-2: systems and API collaboration.
 - Use story story-3: accessibility and quality.
 
-### Uber - Data Engineer II
-
-- Score: 93
-- Grade: A
-- Confidence: medium
-- Decision: pursue aggressively
-- Thesis: Data Engineer II at Uber is pursue aggressively because the snapshot score is 93, with 6 profile/role keyword hits and 1 external evidence item(s).
-
-#### Evidence
-- Keyword hits: Analytics, API, Performance Optimization, remote, analytics, Product Engineer
-- Keyword misses: python, java, go, spark, machine learning, growth
-- Research signals: AI / data / platform signal, remote or hybrid signal
-- Compensation leverage: high
-
-#### Concerns
-- None flagged
-
-#### Interview Strategy
-- Ask why the role is open and what success means in the first 90 days.
-- Probe team ownership, roadmap pressure, and cross-functional interfaces.
-- What business unit owns the Sr Software Engineer, Frontend (Web) role?
-- What measurable outcomes would this team expect in the first 90 days?
-- What recent company/product signals change the risk or upside?
-
-#### CV Strategy
-- Lead with proof around: Analytics, API, Performance Optimization, remote, analytics, Product Engineer.
-- Use story story-1: frontend product execution.
-- Use story story-2: systems and API collaboration.
-- Use story story-3: accessibility and quality.
-
 ### Pilotly - Product Engineer II
 
 - Score: 93
@@ -724,6 +694,33 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Use story story-2: systems and API collaboration.
 - Use story story-3: accessibility and quality.
 
+### Figma Greenhouse - Software Engineer, AI Product (London, United Kingdom)
+
+- Score: 93
+- Grade: A
+- Confidence: medium
+- Decision: pursue aggressively
+- Thesis: Software Engineer, AI Product (London, United Kingdom) at Figma Greenhouse is pursue aggressively because the snapshot score is 93, with 7 profile/role keyword hits and 0 external evidence item(s).
+
+#### Evidence
+- Keyword hits: TypeScript, React, API, Figma, TypeScript, React, Product Engineer
+- Keyword misses: llm, agents
+- Research signals: -
+- Compensation leverage: -
+
+#### Concerns
+- External company evidence is thin; run deep research with a search API.
+
+#### Interview Strategy
+- Ask why the role is open and what success means in the first 90 days.
+- Probe team ownership, roadmap pressure, and cross-functional interfaces.
+
+#### CV Strategy
+- Lead with proof around: TypeScript, React, API, Figma, TypeScript, React.
+- Use story story-1: frontend product execution.
+- Use story story-2: systems and API collaboration.
+- Use story story-3: accessibility and quality.
+
 ## Layer B — Standard Matches (roleFit 40-67)
 
 ### NVIDIA Workday - Senior Solution Architect - Telco Network Automation
@@ -797,6 +794,12 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Decision: pursue selectively
 - Keyword hits: -
 - Gaps: python
+
+### emagine Polska - IDM Developer / Analyst – One Identity
+- Score: 75 | Grade: B | RoleFit: 45
+- Decision: pursue selectively
+- Keyword hits: remote
+- Gaps: -
 
 ### Roblox Greenhouse - Human Evaluator, Studio (Contract)
 - Score: 74 | Grade: B | RoleFit: 45
@@ -954,21 +957,14 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Keyword hits: -
 - Gaps: -
 
-### å£ä¸°äº¨å©ç½®ä¸æéå¬å¸ - è£äºé¿ç§ä¹¦ å¹¿å·éå¢åå
+### Crossing Hurdles - Business Analyst
 - Score: 66 | Grade: C | RoleFit: 45
 - Decision: hold / compare
 - Keyword hits: remote
-- Gaps: -
-
-### US Army Corps of Engineers - Interdisciplinary
-- Score: 66 | Grade: C | RoleFit: 45
-- Decision: hold / compare
-- Keyword hits: remote
-- Gaps: -
+- Gaps: excel
 
 ## Layer C — Exploratory Signals (roleFit < 40)
 
-- **Figma Greenhouse — Software Engineer, AI Product (London, United Kingdom)** (score: 93) | Top gap: llm
 - **Airbnb Greenhouse — Senior Software Engineer, Quality Platform** (score: 93) | Top gap: python
 - **Airbnb Greenhouse — Senior Web Automation Engineer, Quality Platform** (score: 93) | Top gap: agents
 - **MongoDB Greenhouse — Senior Software Engineer, Observability** (score: 93) | Top gap: java
@@ -998,4 +994,5 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - **Asana Greenhouse — Senior Software Engineer, AI Chat** (score: 91) | Top gap: sales
 - **Asana Greenhouse — Senior Software Engineer, APIs** (score: 91) | Top gap: agents
 - **HAMSA APAC (SINGAPORE) PTE. LTD. — Software Engineer** (score: 90) | Top gap: java
+- **DADACONSULTANTS PTE. LTD. — Frontend Engineer (Internet, AI application system, React.js)** (score: 90) | Top gap: none
 

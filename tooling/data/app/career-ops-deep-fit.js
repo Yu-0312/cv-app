@@ -1,6 +1,6 @@
 window.CV_CAREER_OPS_DEEP_FIT = {
   "source": "career-ops-deep-fit",
-  "generatedAt": "2026-05-30T23:47:12.321Z",
+  "generatedAt": "2026-05-31T23:59:59.551Z",
   "llmProvider": "none",
   "summary": {
     "totalResults": 95,
@@ -1558,80 +1558,6 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "llm": null
     },
     {
-      "jobKey": "url:https://www.themuse.com/jobs/uber/data-engineer-ii-61805b",
-      "company": "Uber",
-      "title": "Data Engineer II",
-      "score": 93,
-      "grade": "A",
-      "confidence": "medium",
-      "decision": "pursue aggressively",
-      "thesis": "Data Engineer II at Uber is pursue aggressively because the snapshot score is 93, with 6 profile/role keyword hits and 1 external evidence item(s).",
-      "evidence": {
-        "keywordHits": [
-          "Analytics",
-          "API",
-          "Performance Optimization",
-          "remote",
-          "analytics",
-          "Product Engineer"
-        ],
-        "keywordMisses": [
-          "python",
-          "java",
-          "go",
-          "spark",
-          "machine learning",
-          "growth"
-        ],
-        "researchSignals": [
-          "AI / data / platform signal",
-          "remote or hybrid signal"
-        ],
-        "evidenceCount": 1,
-        "compensationLeverage": "high"
-      },
-      "concerns": [],
-      "interviewStrategy": [
-        "Ask why the role is open and what success means in the first 90 days.",
-        "Probe team ownership, roadmap pressure, and cross-functional interfaces.",
-        "What business unit owns the Sr Software Engineer, Frontend (Web) role?",
-        "What measurable outcomes would this team expect in the first 90 days?",
-        "What recent company/product signals change the risk or upside?"
-      ],
-      "cvStrategy": [
-        "Lead with proof around: Analytics, API, Performance Optimization, remote, analytics, Product Engineer.",
-        "Use story story-1: frontend product execution.",
-        "Use story story-2: systems and API collaboration.",
-        "Use story story-3: accessibility and quality."
-      ],
-      "compensationStrategy": {
-        "leverage": "high",
-        "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Sr Software Engineer, Frontend (Web) package, including base, bonus, equity, and review cycle?",
-        "valueAnchor": "Based on the scope of Sr Software Engineer, Frontend (Web) and my fit around JavaScript, TypeScript, React, CSS, I would like to calibrate toward the stronger end of the range if the team sees the level match."
-      },
-      "storyHooks": [
-        {
-          "id": "story-1",
-          "theme": "frontend product execution",
-          "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
-          "relevance": 0
-        },
-        {
-          "id": "story-2",
-          "theme": "systems and API collaboration",
-          "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
-          "relevance": 0
-        },
-        {
-          "id": "story-3",
-          "theme": "accessibility and quality",
-          "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
-          "relevance": 0
-        }
-      ],
-      "llm": null
-    },
-    {
       "jobKey": "url:https://www.themuse.com/jobs/pilotly/product-engineer-ii-8b1aeb",
       "company": "Pilotly",
       "title": "Product Engineer II",
@@ -1819,6 +1745,69 @@ window.CV_CAREER_OPS_DEEP_FIT = {
           "theme": "accessibility and quality",
           "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
           "relevance": 0
+        }
+      ],
+      "llm": null
+    },
+    {
+      "jobKey": "url:https://boards.greenhouse.io/figma/jobs/5551697004?gh_jid=5551697004",
+      "company": "Figma Greenhouse",
+      "title": "Software Engineer, AI Product (London, United Kingdom)",
+      "score": 93,
+      "grade": "A",
+      "confidence": "medium",
+      "decision": "pursue aggressively",
+      "thesis": "Software Engineer, AI Product (London, United Kingdom) at Figma Greenhouse is pursue aggressively because the snapshot score is 93, with 7 profile/role keyword hits and 0 external evidence item(s).",
+      "evidence": {
+        "keywordHits": [
+          "TypeScript",
+          "React",
+          "API",
+          "Figma",
+          "TypeScript",
+          "React",
+          "Product Engineer"
+        ],
+        "keywordMisses": [
+          "llm",
+          "agents"
+        ],
+        "researchSignals": [],
+        "evidenceCount": 0,
+        "compensationLeverage": ""
+      },
+      "concerns": [
+        "External company evidence is thin; run deep research with a search API."
+      ],
+      "interviewStrategy": [
+        "Ask why the role is open and what success means in the first 90 days.",
+        "Probe team ownership, roadmap pressure, and cross-functional interfaces."
+      ],
+      "cvStrategy": [
+        "Lead with proof around: TypeScript, React, API, Figma, TypeScript, React.",
+        "Use story story-1: frontend product execution.",
+        "Use story story-2: systems and API collaboration.",
+        "Use story story-3: accessibility and quality."
+      ],
+      "compensationStrategy": null,
+      "storyHooks": [
+        {
+          "id": "story-1",
+          "theme": "frontend product execution",
+          "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
+          "relevance": 2
+        },
+        {
+          "id": "story-2",
+          "theme": "systems and API collaboration",
+          "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
+          "relevance": 2
+        },
+        {
+          "id": "story-3",
+          "theme": "accessibility and quality",
+          "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
+          "relevance": 2
         }
       ],
       "llm": null
@@ -2029,6 +2018,22 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "keywordMisses": [
         "python"
       ],
+      "decision": "pursue selectively",
+      "layer": "B"
+    },
+    {
+      "jobKey": "url:https://justjoin.it/job-offer/emagine-polska-idm-developer-analyst---one-identity-warsaw-security-53f17d61",
+      "company": "emagine Polska",
+      "title": "IDM Developer / Analyst – One Identity",
+      "score": 75,
+      "grade": "B",
+      "roleFit": 45,
+      "url": "https://justjoin.it/job-offer/emagine-polska-idm-developer-analyst---one-identity-warsaw-security-53f17d61",
+      "location": "Warsaw, PL",
+      "keywordHits": [
+        "remote"
+      ],
+      "keywordMisses": [],
       "decision": "pursue selectively",
       "layer": "B"
     },
@@ -2429,61 +2434,25 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "layer": "B"
     },
     {
-      "jobKey": "url:https://remoteok.com/remote-jobs/",
-      "company": "å£ä¸°äº¨å©ç½®ä¸æéå¬å¸",
-      "title": "è£äºé¿ç§ä¹¦ å¹¿å·éå¢åå",
+      "jobKey": "url:https://remoteok.com/remote-jobs/remote-business-analyst-crossing-hurdles-1132575",
+      "company": "Crossing Hurdles",
+      "title": "Business Analyst",
       "score": 66,
       "grade": "C",
       "roleFit": 45,
-      "url": "https://remoteok.com/remote-jobs/",
-      "location": "å¹¿å·,",
+      "url": "https://remoteok.com/remote-jobs/remote-business-analyst-crossing-hurdles-1132575",
+      "location": "Canada,",
       "keywordHits": [
         "remote"
       ],
-      "keywordMisses": [],
-      "decision": "hold / compare",
-      "layer": "B"
-    },
-    {
-      "jobKey": "url:https://remoteok.com/remote-jobs/remote-interdisciplinary-us-army-corps-of-engineers-1132555",
-      "company": "US Army Corps of Engineers",
-      "title": "Interdisciplinary",
-      "score": 66,
-      "grade": "C",
-      "roleFit": 45,
-      "url": "https://remoteok.com/remote-jobs/remote-interdisciplinary-us-army-corps-of-engineers-1132555",
-      "location": "Texas,",
-      "keywordHits": [
-        "remote"
+      "keywordMisses": [
+        "excel"
       ],
-      "keywordMisses": [],
       "decision": "hold / compare",
       "layer": "B"
     }
   ],
   "layerC": [
-    {
-      "jobKey": "url:https://boards.greenhouse.io/figma/jobs/5551697004?gh_jid=5551697004",
-      "company": "Figma Greenhouse",
-      "title": "Software Engineer, AI Product (London, United Kingdom)",
-      "score": 93,
-      "grade": "A",
-      "roleFit": 92,
-      "url": "https://boards.greenhouse.io/figma/jobs/5551697004?gh_jid=5551697004",
-      "location": "London, England",
-      "keywordHits": [
-        "TypeScript",
-        "React",
-        "API",
-        "Figma"
-      ],
-      "topGap": "llm",
-      "mainGaps": [
-        "llm",
-        "agents"
-      ],
-      "layer": "C"
-    },
     {
       "jobKey": "url:https://careers.airbnb.com/positions/7380149?gh_jid=7380149",
       "company": "Airbnb Greenhouse",
@@ -3143,6 +3112,25 @@ window.CV_CAREER_OPS_DEEP_FIT = {
         "aws",
         "azure"
       ],
+      "layer": "C"
+    },
+    {
+      "jobKey": "url:https://www.mycareersfuture.gov.sg/job/39d3a1b2a44aca8359f5ab698e2c7412",
+      "company": "DADACONSULTANTS PTE. LTD.",
+      "title": "Frontend Engineer (Internet, AI application system, React.js)",
+      "score": 90,
+      "grade": "A",
+      "roleFit": 92,
+      "url": "https://www.mycareersfuture.gov.sg/job/39d3a1b2a44aca8359f5ab698e2c7412",
+      "location": "Islandwide, Singapore",
+      "keywordHits": [
+        "Frontend Engineer",
+        "JavaScript",
+        "React",
+        "CSS"
+      ],
+      "topGap": "",
+      "mainGaps": [],
       "layer": "C"
     }
   ],
@@ -4696,80 +4684,6 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "llm": null
     },
     {
-      "jobKey": "url:https://www.themuse.com/jobs/uber/data-engineer-ii-61805b",
-      "company": "Uber",
-      "title": "Data Engineer II",
-      "score": 93,
-      "grade": "A",
-      "confidence": "medium",
-      "decision": "pursue aggressively",
-      "thesis": "Data Engineer II at Uber is pursue aggressively because the snapshot score is 93, with 6 profile/role keyword hits and 1 external evidence item(s).",
-      "evidence": {
-        "keywordHits": [
-          "Analytics",
-          "API",
-          "Performance Optimization",
-          "remote",
-          "analytics",
-          "Product Engineer"
-        ],
-        "keywordMisses": [
-          "python",
-          "java",
-          "go",
-          "spark",
-          "machine learning",
-          "growth"
-        ],
-        "researchSignals": [
-          "AI / data / platform signal",
-          "remote or hybrid signal"
-        ],
-        "evidenceCount": 1,
-        "compensationLeverage": "high"
-      },
-      "concerns": [],
-      "interviewStrategy": [
-        "Ask why the role is open and what success means in the first 90 days.",
-        "Probe team ownership, roadmap pressure, and cross-functional interfaces.",
-        "What business unit owns the Sr Software Engineer, Frontend (Web) role?",
-        "What measurable outcomes would this team expect in the first 90 days?",
-        "What recent company/product signals change the risk or upside?"
-      ],
-      "cvStrategy": [
-        "Lead with proof around: Analytics, API, Performance Optimization, remote, analytics, Product Engineer.",
-        "Use story story-1: frontend product execution.",
-        "Use story story-2: systems and API collaboration.",
-        "Use story story-3: accessibility and quality."
-      ],
-      "compensationStrategy": {
-        "leverage": "high",
-        "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Sr Software Engineer, Frontend (Web) package, including base, bonus, equity, and review cycle?",
-        "valueAnchor": "Based on the scope of Sr Software Engineer, Frontend (Web) and my fit around JavaScript, TypeScript, React, CSS, I would like to calibrate toward the stronger end of the range if the team sees the level match."
-      },
-      "storyHooks": [
-        {
-          "id": "story-1",
-          "theme": "frontend product execution",
-          "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
-          "relevance": 0
-        },
-        {
-          "id": "story-2",
-          "theme": "systems and API collaboration",
-          "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
-          "relevance": 0
-        },
-        {
-          "id": "story-3",
-          "theme": "accessibility and quality",
-          "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
-          "relevance": 0
-        }
-      ],
-      "llm": null
-    },
-    {
       "jobKey": "url:https://www.themuse.com/jobs/pilotly/product-engineer-ii-8b1aeb",
       "company": "Pilotly",
       "title": "Product Engineer II",
@@ -4957,6 +4871,69 @@ window.CV_CAREER_OPS_DEEP_FIT = {
           "theme": "accessibility and quality",
           "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
           "relevance": 0
+        }
+      ],
+      "llm": null
+    },
+    {
+      "jobKey": "url:https://boards.greenhouse.io/figma/jobs/5551697004?gh_jid=5551697004",
+      "company": "Figma Greenhouse",
+      "title": "Software Engineer, AI Product (London, United Kingdom)",
+      "score": 93,
+      "grade": "A",
+      "confidence": "medium",
+      "decision": "pursue aggressively",
+      "thesis": "Software Engineer, AI Product (London, United Kingdom) at Figma Greenhouse is pursue aggressively because the snapshot score is 93, with 7 profile/role keyword hits and 0 external evidence item(s).",
+      "evidence": {
+        "keywordHits": [
+          "TypeScript",
+          "React",
+          "API",
+          "Figma",
+          "TypeScript",
+          "React",
+          "Product Engineer"
+        ],
+        "keywordMisses": [
+          "llm",
+          "agents"
+        ],
+        "researchSignals": [],
+        "evidenceCount": 0,
+        "compensationLeverage": ""
+      },
+      "concerns": [
+        "External company evidence is thin; run deep research with a search API."
+      ],
+      "interviewStrategy": [
+        "Ask why the role is open and what success means in the first 90 days.",
+        "Probe team ownership, roadmap pressure, and cross-functional interfaces."
+      ],
+      "cvStrategy": [
+        "Lead with proof around: TypeScript, React, API, Figma, TypeScript, React.",
+        "Use story story-1: frontend product execution.",
+        "Use story story-2: systems and API collaboration.",
+        "Use story story-3: accessibility and quality."
+      ],
+      "compensationStrategy": null,
+      "storyHooks": [
+        {
+          "id": "story-1",
+          "theme": "frontend product execution",
+          "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
+          "relevance": 2
+        },
+        {
+          "id": "story-2",
+          "theme": "systems and API collaboration",
+          "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
+          "relevance": 2
+        },
+        {
+          "id": "story-3",
+          "theme": "accessibility and quality",
+          "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
+          "relevance": 2
         }
       ],
       "llm": null
