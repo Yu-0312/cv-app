@@ -1,6 +1,6 @@
 # Career Ops Deep Research
 
-Generated: 2026-05-31T23:59:44.366Z
+Generated: 2026-06-02T00:16:26.462Z
 Search provider: none
 Queries: 14
 Evidence items: 7
@@ -143,8 +143,8 @@ Dossiers: 8
 ### Evidence
 - source-page: https://www.themuse.com/jobs/uber/sr-software-engineer-frontend-web-8fc2b7 — Sr Software Engineer, Frontend (Web) at Uber | The Muse | The Muse Skip to main content The Muse Logo A logo with &amp;quat;the muse&amp;quat; in dark blue text. Newsletter Jobs Ac
 - source-page: https://www.themuse.com/jobs/bankofamerica/principal-engineer-gbs-ind-783d05 — Principal Engineer - GBS IND at Bank of America | The Muse | The Muse Skip to main content The Muse Logo A logo with &amp;quat;the muse&amp;quat; in dark blue text. Newsletter Jobs
-- source-page: https://www.themuse.com/jobs/usaa/software-engineer-midlevel-java-full-stack-adab58 — Software Engineer Mid-level (Java Full Stack) at USAA | The Muse | The Muse Skip to main content The Muse Logo A logo with &amp;quat;the muse&amp;quat; in dark blue text. Newslette
 - source-page: https://www.themuse.com/jobs/usaa/software-engineer-midlevel-java-full-stack-461216 — Software Engineer Mid-level (Java Full Stack) at USAA | The Muse | The Muse Skip to main content The Muse Logo A logo with &amp;quat;the muse&amp;quat; in dark blue text. Newslette
+- source-page: https://www.themuse.com/jobs/usaa/software-engineer-midlevel-java-full-stack-91f31e — Software Engineer Mid-level (Java Full Stack) at USAA | The Muse | The Muse Skip to main content The Muse Logo A logo with &amp;quat;the muse&amp;quat; in dark blue text. Newslette
 
 ### Research Questions
 - What business unit owns the Software Engineer Mid-level (Java Full Stack) role?
@@ -166,8 +166,8 @@ Dossiers: 8
 ### Evidence
 - source-page: https://www.themuse.com/jobs/uber/sr-software-engineer-frontend-web-8fc2b7 — Sr Software Engineer, Frontend (Web) at Uber | The Muse | The Muse Skip to main content The Muse Logo A logo with &amp;quat;the muse&amp;quat; in dark blue text. Newsletter Jobs Ac
 - source-page: https://www.themuse.com/jobs/bankofamerica/principal-engineer-gbs-ind-783d05 — Principal Engineer - GBS IND at Bank of America | The Muse | The Muse Skip to main content The Muse Logo A logo with &amp;quat;the muse&amp;quat; in dark blue text. Newsletter Jobs
-- source-page: https://www.themuse.com/jobs/usaa/software-engineer-midlevel-java-full-stack-adab58 — Software Engineer Mid-level (Java Full Stack) at USAA | The Muse | The Muse Skip to main content The Muse Logo A logo with &amp;quat;the muse&amp;quat; in dark blue text. Newslette
 - source-page: https://www.themuse.com/jobs/usaa/software-engineer-midlevel-java-full-stack-461216 — Software Engineer Mid-level (Java Full Stack) at USAA | The Muse | The Muse Skip to main content The Muse Logo A logo with &amp;quat;the muse&amp;quat; in dark blue text. Newslette
+- source-page: https://www.themuse.com/jobs/usaa/software-engineer-midlevel-java-full-stack-91f31e — Software Engineer Mid-level (Java Full Stack) at USAA | The Muse | The Muse Skip to main content The Muse Logo A logo with &amp;quat;the muse&amp;quat; in dark blue text. Newslette
 
 ### Research Questions
 - What business unit owns the Software Engineer Mid-level (Java Full Stack) role?
