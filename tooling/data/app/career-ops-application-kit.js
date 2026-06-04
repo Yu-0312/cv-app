@@ -1,6 +1,6 @@
 window.CV_CAREER_OPS_APPLICATION_KIT = {
   "source": "career-ops-application-kit",
-  "generatedAt": "2026-06-03T00:35:04.731Z",
+  "generatedAt": "2026-06-04T00:32:21.456Z",
   "profileRole": "Frontend Engineer",
   "playbooks": [
     {
@@ -643,95 +643,6 @@ window.CV_CAREER_OPS_APPLICATION_KIT = {
       ]
     },
     {
-      "jobKey": "url:https://www.themuse.com/jobs/usaa/software-engineer-midlevel-java-full-stack-25cdae",
-      "title": "Software Engineer Mid-level (Java Full Stack)",
-      "company": "USAA",
-      "score": "95/A",
-      "rating": 4.8,
-      "blockG": {
-        "tier": "High Confidence",
-        "confidence": "medium"
-      },
-      "priority": "P0",
-      "atsInjection": {
-        "jdKeywords": [
-          "JavaScript",
-          "CSS",
-          "API",
-          "remote",
-          "engineer",
-          "data"
-        ],
-        "hardKeywords": [
-          "JavaScript",
-          "CSS",
-          "API",
-          "remote",
-          "engineer",
-          "data"
-        ],
-        "softKeywords": [],
-        "missingKeywords": [
-          "python",
-          "java",
-          "go",
-          "swift",
-          "kotlin",
-          "sql",
-          "aws",
-          "docker"
-        ],
-        "archetype": "Full Stack Engineer",
-        "summaryRewriteHints": [
-          "在 Professional Summary 中自然帶入：JavaScript、CSS、API、remote、engineer",
-          "使用職位語言：「Full Stack Engineer」方向的動詞和術語",
-          "【你已有但此 JD 未要求】可視情況選擇性提及：python、java、go、swift、kotlin"
-        ],
-        "atsRules": [
-          "單欄排版，避免 sidebar 雙欄（ATS parser 容易亂序）",
-          "使用標準 header：Professional Summary, Work Experience, Skills, Education",
-          "不使用巢狀表格或文字框",
-          "確保 PDF 文字可被選取（不可光柵化輸出）",
-          "UTF-8 編碼，移除 em dash / smart quote / zero-width space",
-          "關鍵技能在 Skills section 明確列出，不要只藏在 bullet 裡"
-        ],
-        "guardrails": [
-          "NEVER add skills the candidate lacks",
-          "Only reformulate real experience with exact JD vocabulary",
-          "Example: if candidate has 'API development', it can become 'JavaScript'"
-        ],
-        "keywordCoveragePercent": 100
-      },
-      "applyChecklist": [
-        "Open the source URL and confirm the role is still active.",
-        "Generate or refresh the tailored ATS PDF from this job.",
-        "Mirror these JD keywords honestly in your CV: JavaScript, CSS, API, remote, engineer, data",
-        "Do not overclaim missing areas: python, java, go, swift, kotlin, sql",
-        "Log status, recruiter/contact, and next follow-up date in the tracker."
-      ],
-      "outreachEmail": {
-        "subject": "Software Engineer Mid-level (Java Full Stack) application - USAA",
-        "body": "Hi USAA team,\n\nI am Alex Chen, and I am interested in the Software Engineer Mid-level (Java Full Stack) role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.\n\nThe role stood out because it maps closely to my experience with JavaScript, CSS, API, remote, engineer.\n\nI would appreciate the chance to share how my experience can support the team. Thank you for your time.\n\nBest,\nAlex Chen"
-      },
-      "followUp": {
-        "timing": "3-5 business days after applying or the last recruiter interaction.",
-        "body": "Hi USAA team,\n\nI wanted to follow up on my application for the Software Engineer Mid-level (Java Full Stack) role. I remain interested and would be glad to provide any additional context about my background.\n\nThank you again for your time.\n\nBest,\nAlex Chen"
-      },
-      "interviewPrep": [
-        "Prepare a 60-second story for why USAA and why Software Engineer Mid-level (Java Full Stack).",
-        "Prepare evidence for: JavaScript, CSS, API, remote, engineer, data.",
-        "Prepare one STAR story about execution under ambiguity.",
-        "Prepare one STAR story about collaboration and tradeoff decisions.",
-        "Prepare questions about team priorities, success metrics, and hiring timeline."
-      ],
-      "negotiationPrep": [
-        "Wait for a clear offer before anchoring compensation.",
-        "Ask for total compensation breakdown, work mode, title, level, review cycle, and start date.",
-        "Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.",
-        "Use competing priorities and role fit, not personal need, as the negotiation frame."
-      ]
-    },
-    {
       "jobKey": "url:https://www.themuse.com/jobs/usaa/software-engineer-midlevel-java-full-stack-461216",
       "title": "Software Engineer Mid-level (Java Full Stack)",
       "company": "USAA",
@@ -910,95 +821,6 @@ window.CV_CAREER_OPS_APPLICATION_KIT = {
       ]
     },
     {
-      "jobKey": "url:https://www.themuse.com/jobs/usaa/software-engineer-midlevel-java-full-stack-ad5ab2",
-      "title": "Software Engineer Mid-level (Java Full Stack)",
-      "company": "USAA",
-      "score": "95/A",
-      "rating": 4.8,
-      "blockG": {
-        "tier": "High Confidence",
-        "confidence": "medium"
-      },
-      "priority": "P0",
-      "atsInjection": {
-        "jdKeywords": [
-          "JavaScript",
-          "CSS",
-          "API",
-          "remote",
-          "engineer",
-          "data"
-        ],
-        "hardKeywords": [
-          "JavaScript",
-          "CSS",
-          "API",
-          "remote",
-          "engineer",
-          "data"
-        ],
-        "softKeywords": [],
-        "missingKeywords": [
-          "python",
-          "java",
-          "go",
-          "swift",
-          "kotlin",
-          "sql",
-          "aws",
-          "docker"
-        ],
-        "archetype": "Full Stack Engineer",
-        "summaryRewriteHints": [
-          "在 Professional Summary 中自然帶入：JavaScript、CSS、API、remote、engineer",
-          "使用職位語言：「Full Stack Engineer」方向的動詞和術語",
-          "【你已有但此 JD 未要求】可視情況選擇性提及：python、java、go、swift、kotlin"
-        ],
-        "atsRules": [
-          "單欄排版，避免 sidebar 雙欄（ATS parser 容易亂序）",
-          "使用標準 header：Professional Summary, Work Experience, Skills, Education",
-          "不使用巢狀表格或文字框",
-          "確保 PDF 文字可被選取（不可光柵化輸出）",
-          "UTF-8 編碼，移除 em dash / smart quote / zero-width space",
-          "關鍵技能在 Skills section 明確列出，不要只藏在 bullet 裡"
-        ],
-        "guardrails": [
-          "NEVER add skills the candidate lacks",
-          "Only reformulate real experience with exact JD vocabulary",
-          "Example: if candidate has 'API development', it can become 'JavaScript'"
-        ],
-        "keywordCoveragePercent": 100
-      },
-      "applyChecklist": [
-        "Open the source URL and confirm the role is still active.",
-        "Generate or refresh the tailored ATS PDF from this job.",
-        "Mirror these JD keywords honestly in your CV: JavaScript, CSS, API, remote, engineer, data",
-        "Do not overclaim missing areas: python, java, go, swift, kotlin, sql",
-        "Log status, recruiter/contact, and next follow-up date in the tracker."
-      ],
-      "outreachEmail": {
-        "subject": "Software Engineer Mid-level (Java Full Stack) application - USAA",
-        "body": "Hi USAA team,\n\nI am Alex Chen, and I am interested in the Software Engineer Mid-level (Java Full Stack) role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.\n\nThe role stood out because it maps closely to my experience with JavaScript, CSS, API, remote, engineer.\n\nI would appreciate the chance to share how my experience can support the team. Thank you for your time.\n\nBest,\nAlex Chen"
-      },
-      "followUp": {
-        "timing": "3-5 business days after applying or the last recruiter interaction.",
-        "body": "Hi USAA team,\n\nI wanted to follow up on my application for the Software Engineer Mid-level (Java Full Stack) role. I remain interested and would be glad to provide any additional context about my background.\n\nThank you again for your time.\n\nBest,\nAlex Chen"
-      },
-      "interviewPrep": [
-        "Prepare a 60-second story for why USAA and why Software Engineer Mid-level (Java Full Stack).",
-        "Prepare evidence for: JavaScript, CSS, API, remote, engineer, data.",
-        "Prepare one STAR story about execution under ambiguity.",
-        "Prepare one STAR story about collaboration and tradeoff decisions.",
-        "Prepare questions about team priorities, success metrics, and hiring timeline."
-      ],
-      "negotiationPrep": [
-        "Wait for a clear offer before anchoring compensation.",
-        "Ask for total compensation breakdown, work mode, title, level, review cycle, and start date.",
-        "Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.",
-        "Use competing priorities and role fit, not personal need, as the negotiation frame."
-      ]
-    },
-    {
       "jobKey": "url:https://www.tokyodev.com/companies/moneyforward/jobs/lead-backend-engineer-digital-bank",
       "title": "Lead Backend Engineer, Digital Bank",
       "company": "Money Forward",
@@ -1070,6 +892,188 @@ window.CV_CAREER_OPS_APPLICATION_KIT = {
       "interviewPrep": [
         "Prepare a 60-second story for why Money Forward and why Lead Backend Engineer, Digital Bank.",
         "Prepare evidence for: API, engineer, product, data.",
+        "Prepare one STAR story about execution under ambiguity.",
+        "Prepare one STAR story about collaboration and tradeoff decisions.",
+        "Prepare questions about team priorities, success metrics, and hiring timeline."
+      ],
+      "negotiationPrep": [
+        "Wait for a clear offer before anchoring compensation.",
+        "Ask for total compensation breakdown, work mode, title, level, review cycle, and start date.",
+        "Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.",
+        "Use competing priorities and role fit, not personal need, as the negotiation frame."
+      ]
+    },
+    {
+      "jobKey": "url:https://www.mycareersfuture.gov.sg/job/1ff5b9800085aabdc76396a96bf09117",
+      "title": "Senior Frontend Engineer, Regulatory Reporting",
+      "company": "AIRWALLEX (SINGAPORE) PTE. LTD.",
+      "score": "94/A",
+      "rating": 4.8,
+      "blockG": {
+        "tier": "High Confidence",
+        "confidence": "medium"
+      },
+      "priority": "P0",
+      "atsInjection": {
+        "jdKeywords": [
+          "TypeScript",
+          "React",
+          "API",
+          "design system",
+          "engineer",
+          "data",
+          "graphql",
+          "node.js",
+          "dashboards"
+        ],
+        "hardKeywords": [
+          "TypeScript",
+          "React",
+          "API",
+          "design system",
+          "engineer",
+          "data",
+          "graphql",
+          "node.js",
+          "dashboards"
+        ],
+        "softKeywords": [],
+        "missingKeywords": [
+          "rest",
+          "llm",
+          "agents",
+          "operations"
+        ],
+        "archetype": "Frontend Engineer",
+        "summaryRewriteHints": [
+          "在 Professional Summary 中自然帶入：TypeScript、React、API、design system、engineer",
+          "使用職位語言：「Frontend Engineer」方向的動詞和術語",
+          "【你已有但此 JD 未要求】可視情況選擇性提及：rest、llm、agents、operations"
+        ],
+        "atsRules": [
+          "單欄排版，避免 sidebar 雙欄（ATS parser 容易亂序）",
+          "使用標準 header：Professional Summary, Work Experience, Skills, Education",
+          "不使用巢狀表格或文字框",
+          "確保 PDF 文字可被選取（不可光柵化輸出）",
+          "UTF-8 編碼，移除 em dash / smart quote / zero-width space",
+          "關鍵技能在 Skills section 明確列出，不要只藏在 bullet 裡"
+        ],
+        "guardrails": [
+          "NEVER add skills the candidate lacks",
+          "Only reformulate real experience with exact JD vocabulary",
+          "Example: if candidate has 'API development', it can become 'TypeScript'"
+        ],
+        "keywordCoveragePercent": 100
+      },
+      "applyChecklist": [
+        "Open the source URL and confirm the role is still active.",
+        "Generate or refresh the tailored ATS PDF from this job.",
+        "Mirror these JD keywords honestly in your CV: TypeScript, React, API, design system, engineer, data, graphql, node.js",
+        "Do not overclaim missing areas: rest, llm, agents, operations",
+        "Log status, recruiter/contact, and next follow-up date in the tracker."
+      ],
+      "outreachEmail": {
+        "subject": "Senior Frontend Engineer, Regulatory Reporting application - AIRWALLEX (SINGAPORE) PTE. LTD.",
+        "body": "Hi AIRWALLEX (SINGAPORE) PTE. LTD. team,\n\nI am Alex Chen, and I am interested in the Senior Frontend Engineer, Regulatory Reporting role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.\n\nThe role stood out because it maps closely to my experience with TypeScript, React, API, design system, engineer.\n\nI would appreciate the chance to share how my experience can support the team. Thank you for your time.\n\nBest,\nAlex Chen"
+      },
+      "followUp": {
+        "timing": "3-5 business days after applying or the last recruiter interaction.",
+        "body": "Hi AIRWALLEX (SINGAPORE) PTE. LTD. team,\n\nI wanted to follow up on my application for the Senior Frontend Engineer, Regulatory Reporting role. I remain interested and would be glad to provide any additional context about my background.\n\nThank you again for your time.\n\nBest,\nAlex Chen"
+      },
+      "interviewPrep": [
+        "Prepare a 60-second story for why AIRWALLEX (SINGAPORE) PTE. LTD. and why Senior Frontend Engineer, Regulatory Reporting.",
+        "Prepare evidence for: TypeScript, React, API, design system, engineer, data.",
+        "Prepare one STAR story about execution under ambiguity.",
+        "Prepare one STAR story about collaboration and tradeoff decisions.",
+        "Prepare questions about team priorities, success metrics, and hiring timeline."
+      ],
+      "negotiationPrep": [
+        "Wait for a clear offer before anchoring compensation.",
+        "Ask for total compensation breakdown, work mode, title, level, review cycle, and start date.",
+        "Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.",
+        "Use competing priorities and role fit, not personal need, as the negotiation frame."
+      ]
+    },
+    {
+      "jobKey": "url:https://www.mycareersfuture.gov.sg/job/7fdbc2ddd10823e30828ded216db87b6",
+      "title": "Frontend Engineer",
+      "company": "ALPHA X TECHNOLOGY PTE. LTD.",
+      "score": "94/A",
+      "rating": 4.8,
+      "blockG": {
+        "tier": "High Confidence",
+        "confidence": "medium"
+      },
+      "priority": "P0",
+      "atsInjection": {
+        "jdKeywords": [
+          "JavaScript",
+          "TypeScript",
+          "React",
+          "API",
+          "Figma",
+          "engineer",
+          "data",
+          "graphql",
+          "visualization",
+          "CSS"
+        ],
+        "hardKeywords": [
+          "JavaScript",
+          "TypeScript",
+          "React",
+          "API",
+          "Figma",
+          "engineer",
+          "data",
+          "graphql",
+          "visualization",
+          "CSS"
+        ],
+        "softKeywords": [],
+        "missingKeywords": [
+          "vue",
+          "rest"
+        ],
+        "archetype": "Frontend Engineer",
+        "summaryRewriteHints": [
+          "在 Professional Summary 中自然帶入：JavaScript、TypeScript、React、API、Figma",
+          "使用職位語言：「Frontend Engineer」方向的動詞和術語",
+          "【你已有但此 JD 未要求】可視情況選擇性提及：vue、rest"
+        ],
+        "atsRules": [
+          "單欄排版，避免 sidebar 雙欄（ATS parser 容易亂序）",
+          "使用標準 header：Professional Summary, Work Experience, Skills, Education",
+          "不使用巢狀表格或文字框",
+          "確保 PDF 文字可被選取（不可光柵化輸出）",
+          "UTF-8 編碼，移除 em dash / smart quote / zero-width space",
+          "關鍵技能在 Skills section 明確列出，不要只藏在 bullet 裡"
+        ],
+        "guardrails": [
+          "NEVER add skills the candidate lacks",
+          "Only reformulate real experience with exact JD vocabulary",
+          "Example: if candidate has 'API development', it can become 'JavaScript'"
+        ],
+        "keywordCoveragePercent": 100
+      },
+      "applyChecklist": [
+        "Open the source URL and confirm the role is still active.",
+        "Generate or refresh the tailored ATS PDF from this job.",
+        "Mirror these JD keywords honestly in your CV: JavaScript, TypeScript, React, API, Figma, engineer, data, graphql",
+        "Do not overclaim missing areas: vue, rest",
+        "Log status, recruiter/contact, and next follow-up date in the tracker."
+      ],
+      "outreachEmail": {
+        "subject": "Frontend Engineer application - ALPHA X TECHNOLOGY PTE. LTD.",
+        "body": "Hi ALPHA X TECHNOLOGY PTE. LTD. team,\n\nI am Alex Chen, and I am interested in the Frontend Engineer role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.\n\nThe role stood out because it maps closely to my experience with JavaScript, TypeScript, React, API, Figma.\n\nI would appreciate the chance to share how my experience can support the team. Thank you for your time.\n\nBest,\nAlex Chen"
+      },
+      "followUp": {
+        "timing": "3-5 business days after applying or the last recruiter interaction.",
+        "body": "Hi ALPHA X TECHNOLOGY PTE. LTD. team,\n\nI wanted to follow up on my application for the Frontend Engineer role. I remain interested and would be glad to provide any additional context about my background.\n\nThank you again for your time.\n\nBest,\nAlex Chen"
+      },
+      "interviewPrep": [
+        "Prepare a 60-second story for why ALPHA X TECHNOLOGY PTE. LTD. and why Frontend Engineer.",
+        "Prepare evidence for: JavaScript, TypeScript, React, API, Figma, engineer.",
         "Prepare one STAR story about execution under ambiguity.",
         "Prepare one STAR story about collaboration and tradeoff decisions.",
         "Prepare questions about team priorities, success metrics, and hiring timeline."

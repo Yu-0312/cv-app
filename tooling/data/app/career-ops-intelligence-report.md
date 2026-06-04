@@ -1,11 +1,11 @@
 # Career Ops Intelligence Report
 
-Generated: 2026-06-03T00:34:50.626Z
+Generated: 2026-06-04T00:32:07.865Z
 
-- Active jobs: 83272
+- Active jobs: 83140
 - Expired jobs: 0
-- Duplicate groups: 3399
-- Jobs without enough description: 418
+- Duplicate groups: 3398
+- Jobs without enough description: 419
 - Rubric: Career Ops 10-Dimension Rubric
 
 ## Rubric Weights
@@ -21,56 +21,56 @@ Generated: 2026-06-03T00:34:50.626Z
 - applicationEffort: 0.08
 
 ## Top Skills
-- api: 7590
-- growth: 4509
-- operations: 4239
-- analytics: 3331
-- sales: 3139
-- python: 2231
-- go: 1948
-- sql: 1595
-- excel: 1541
+- api: 7576
+- growth: 4489
+- operations: 4225
+- analytics: 3328
+- sales: 3096
+- python: 2220
+- go: 1934
+- sql: 1599
+- excel: 1507
 - aws: 1198
-- machine learning: 981
-- azure: 964
+- machine learning: 968
+- azure: 955
 
 ## Missing High-Demand Skills
-- growth: 4509
-- operations: 4239
-- sales: 3139
-- python: 2231
-- go: 1948
-- sql: 1595
-- excel: 1541
+- growth: 4489
+- operations: 4225
+- sales: 3096
+- python: 2220
+- go: 1934
+- sql: 1599
+- excel: 1507
 - aws: 1198
-- machine learning: 981
-- azure: 964
+- machine learning: 968
+- azure: 955
 
 ## Global Skill Gap Priority (weighted by job score)
-- growth: 7166
-- operations: 6720.3
-- sales: 4920.9
-- python: 3617.4
-- go: 3107.3
-- sql: 2591.2
-- excel: 2407.5
-- aws: 1960.1
-- machine learning: 1589.1
-- azure: 1573.5
-- java: 1336.3
-- agents: 1221.3
+- growth: 7139.8
+- operations: 6701.3
+- sales: 4862.3
+- python: 3599.2
+- go: 3086.5
+- sql: 2598.2
+- excel: 2355.7
+- aws: 1960.6
+- machine learning: 1569.9
+- azure: 1560.5
+- java: 1300.5
+- agents: 1206.9
 
 ## Role Families
-- Backend: 79089
-- Other: 1733
-- Frontend: 796
-- AI / Data: 694
-- Sales: 371
-- Marketing: 175
-- Product: 153
-- Design: 145
+- Backend: 79075
+- Other: 1694
+- Frontend: 807
+- AI / Data: 665
+- Sales: 331
+- Marketing: 165
+- Product: 158
+- Design: 135
 - Operations: 78
-- Internship: 28
+- Internship: 24
 
 ## Recommended Search Queries
 - Frontend Engineer

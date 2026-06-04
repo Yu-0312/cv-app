@@ -1,6 +1,6 @@
 # Career Ops Application Kit
 
-Generated: 2026-06-03T00:35:04.731Z
+Generated: 2026-06-04T00:32:21.456Z
 Jobs: 12
 
 ## Pipeline
@@ -596,136 +596,6 @@ Alex Chen
 - Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.
 - Use competing priorities and role fit, not personal need, as the negotiation frame.
 
-## USAA - Software Engineer Mid-level (Java Full Stack)
-
-- Priority: P0
-- Score: 95/A
-- Subject: Software Engineer Mid-level (Java Full Stack) application - USAA
-
-- Block G: High Confidence
-- Rating: 4.8/5.0
-
-### ATS Keyword Injection
-- Archetype: Full Stack Engineer
-- Coverage: 100%
-- JD Keywords: JavaScript, CSS, API, remote, engineer, data
-- 在 Professional Summary 中自然帶入：JavaScript、CSS、API、remote、engineer
-- 使用職位語言：「Full Stack Engineer」方向的動詞和術語
-- 【你已有但此 JD 未要求】可視情況選擇性提及：python、java、go、swift、kotlin
-- Missing (do NOT fabricate): python, java, go, swift, kotlin, sql, aws, docker
-
-### Apply Checklist
-- Open the source URL and confirm the role is still active.
-- Generate or refresh the tailored ATS PDF from this job.
-- Mirror these JD keywords honestly in your CV: JavaScript, CSS, API, remote, engineer, data
-- Do not overclaim missing areas: python, java, go, swift, kotlin, sql
-- Log status, recruiter/contact, and next follow-up date in the tracker.
-
-### Outreach Email
-```text
-Hi USAA team,
-
-I am Alex Chen, and I am interested in the Software Engineer Mid-level (Java Full Stack) role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.
-
-The role stood out because it maps closely to my experience with JavaScript, CSS, API, remote, engineer.
-
-I would appreciate the chance to share how my experience can support the team. Thank you for your time.
-
-Best,
-Alex Chen
-```
-
-### Follow-up
-Timing: 3-5 business days after applying or the last recruiter interaction.
-```text
-Hi USAA team,
-
-I wanted to follow up on my application for the Software Engineer Mid-level (Java Full Stack) role. I remain interested and would be glad to provide any additional context about my background.
-
-Thank you again for your time.
-
-Best,
-Alex Chen
-```
-
-### Interview Prep
-- Prepare a 60-second story for why USAA and why Software Engineer Mid-level (Java Full Stack).
-- Prepare evidence for: JavaScript, CSS, API, remote, engineer, data.
-- Prepare one STAR story about execution under ambiguity.
-- Prepare one STAR story about collaboration and tradeoff decisions.
-- Prepare questions about team priorities, success metrics, and hiring timeline.
-
-### Negotiation Prep
-- Wait for a clear offer before anchoring compensation.
-- Ask for total compensation breakdown, work mode, title, level, review cycle, and start date.
-- Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.
-- Use competing priorities and role fit, not personal need, as the negotiation frame.
-
-## USAA - Software Engineer Mid-level (Java Full Stack)
-
-- Priority: P0
-- Score: 95/A
-- Subject: Software Engineer Mid-level (Java Full Stack) application - USAA
-
-- Block G: High Confidence
-- Rating: 4.8/5.0
-
-### ATS Keyword Injection
-- Archetype: Full Stack Engineer
-- Coverage: 100%
-- JD Keywords: JavaScript, CSS, API, remote, engineer, data
-- 在 Professional Summary 中自然帶入：JavaScript、CSS、API、remote、engineer
-- 使用職位語言：「Full Stack Engineer」方向的動詞和術語
-- 【你已有但此 JD 未要求】可視情況選擇性提及：python、java、go、swift、kotlin
-- Missing (do NOT fabricate): python, java, go, swift, kotlin, sql, aws, docker
-
-### Apply Checklist
-- Open the source URL and confirm the role is still active.
-- Generate or refresh the tailored ATS PDF from this job.
-- Mirror these JD keywords honestly in your CV: JavaScript, CSS, API, remote, engineer, data
-- Do not overclaim missing areas: python, java, go, swift, kotlin, sql
-- Log status, recruiter/contact, and next follow-up date in the tracker.
-
-### Outreach Email
-```text
-Hi USAA team,
-
-I am Alex Chen, and I am interested in the Software Engineer Mid-level (Java Full Stack) role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.
-
-The role stood out because it maps closely to my experience with JavaScript, CSS, API, remote, engineer.
-
-I would appreciate the chance to share how my experience can support the team. Thank you for your time.
-
-Best,
-Alex Chen
-```
-
-### Follow-up
-Timing: 3-5 business days after applying or the last recruiter interaction.
-```text
-Hi USAA team,
-
-I wanted to follow up on my application for the Software Engineer Mid-level (Java Full Stack) role. I remain interested and would be glad to provide any additional context about my background.
-
-Thank you again for your time.
-
-Best,
-Alex Chen
-```
-
-### Interview Prep
-- Prepare a 60-second story for why USAA and why Software Engineer Mid-level (Java Full Stack).
-- Prepare evidence for: JavaScript, CSS, API, remote, engineer, data.
-- Prepare one STAR story about execution under ambiguity.
-- Prepare one STAR story about collaboration and tradeoff decisions.
-- Prepare questions about team priorities, success metrics, and hiring timeline.
-
-### Negotiation Prep
-- Wait for a clear offer before anchoring compensation.
-- Ask for total compensation breakdown, work mode, title, level, review cycle, and start date.
-- Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.
-- Use competing priorities and role fit, not personal need, as the negotiation frame.
-
 ## Money Forward - Lead Backend Engineer, Digital Bank
 
 - Priority: P0
@@ -782,6 +652,136 @@ Alex Chen
 ### Interview Prep
 - Prepare a 60-second story for why Money Forward and why Lead Backend Engineer, Digital Bank.
 - Prepare evidence for: API, engineer, product, data.
+- Prepare one STAR story about execution under ambiguity.
+- Prepare one STAR story about collaboration and tradeoff decisions.
+- Prepare questions about team priorities, success metrics, and hiring timeline.
+
+### Negotiation Prep
+- Wait for a clear offer before anchoring compensation.
+- Ask for total compensation breakdown, work mode, title, level, review cycle, and start date.
+- Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.
+- Use competing priorities and role fit, not personal need, as the negotiation frame.
+
+## AIRWALLEX (SINGAPORE) PTE. LTD. - Senior Frontend Engineer, Regulatory Reporting
+
+- Priority: P0
+- Score: 94/A
+- Subject: Senior Frontend Engineer, Regulatory Reporting application - AIRWALLEX (SINGAPORE) PTE. LTD.
+
+- Block G: High Confidence
+- Rating: 4.8/5.0
+
+### ATS Keyword Injection
+- Archetype: Frontend Engineer
+- Coverage: 100%
+- JD Keywords: TypeScript, React, API, design system, engineer, data, graphql, node.js
+- 在 Professional Summary 中自然帶入：TypeScript、React、API、design system、engineer
+- 使用職位語言：「Frontend Engineer」方向的動詞和術語
+- 【你已有但此 JD 未要求】可視情況選擇性提及：rest、llm、agents、operations
+- Missing (do NOT fabricate): rest, llm, agents, operations
+
+### Apply Checklist
+- Open the source URL and confirm the role is still active.
+- Generate or refresh the tailored ATS PDF from this job.
+- Mirror these JD keywords honestly in your CV: TypeScript, React, API, design system, engineer, data, graphql, node.js
+- Do not overclaim missing areas: rest, llm, agents, operations
+- Log status, recruiter/contact, and next follow-up date in the tracker.
+
+### Outreach Email
+```text
+Hi AIRWALLEX (SINGAPORE) PTE. LTD. team,
+
+I am Alex Chen, and I am interested in the Senior Frontend Engineer, Regulatory Reporting role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.
+
+The role stood out because it maps closely to my experience with TypeScript, React, API, design system, engineer.
+
+I would appreciate the chance to share how my experience can support the team. Thank you for your time.
+
+Best,
+Alex Chen
+```
+
+### Follow-up
+Timing: 3-5 business days after applying or the last recruiter interaction.
+```text
+Hi AIRWALLEX (SINGAPORE) PTE. LTD. team,
+
+I wanted to follow up on my application for the Senior Frontend Engineer, Regulatory Reporting role. I remain interested and would be glad to provide any additional context about my background.
+
+Thank you again for your time.
+
+Best,
+Alex Chen
+```
+
+### Interview Prep
+- Prepare a 60-second story for why AIRWALLEX (SINGAPORE) PTE. LTD. and why Senior Frontend Engineer, Regulatory Reporting.
+- Prepare evidence for: TypeScript, React, API, design system, engineer, data.
+- Prepare one STAR story about execution under ambiguity.
+- Prepare one STAR story about collaboration and tradeoff decisions.
+- Prepare questions about team priorities, success metrics, and hiring timeline.
+
+### Negotiation Prep
+- Wait for a clear offer before anchoring compensation.
+- Ask for total compensation breakdown, work mode, title, level, review cycle, and start date.
+- Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.
+- Use competing priorities and role fit, not personal need, as the negotiation frame.
+
+## ALPHA X TECHNOLOGY PTE. LTD. - Frontend Engineer
+
+- Priority: P0
+- Score: 94/A
+- Subject: Frontend Engineer application - ALPHA X TECHNOLOGY PTE. LTD.
+
+- Block G: High Confidence
+- Rating: 4.8/5.0
+
+### ATS Keyword Injection
+- Archetype: Frontend Engineer
+- Coverage: 100%
+- JD Keywords: JavaScript, TypeScript, React, API, Figma, engineer, data, graphql
+- 在 Professional Summary 中自然帶入：JavaScript、TypeScript、React、API、Figma
+- 使用職位語言：「Frontend Engineer」方向的動詞和術語
+- 【你已有但此 JD 未要求】可視情況選擇性提及：vue、rest
+- Missing (do NOT fabricate): vue, rest
+
+### Apply Checklist
+- Open the source URL and confirm the role is still active.
+- Generate or refresh the tailored ATS PDF from this job.
+- Mirror these JD keywords honestly in your CV: JavaScript, TypeScript, React, API, Figma, engineer, data, graphql
+- Do not overclaim missing areas: vue, rest
+- Log status, recruiter/contact, and next follow-up date in the tracker.
+
+### Outreach Email
+```text
+Hi ALPHA X TECHNOLOGY PTE. LTD. team,
+
+I am Alex Chen, and I am interested in the Frontend Engineer role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.
+
+The role stood out because it maps closely to my experience with JavaScript, TypeScript, React, API, Figma.
+
+I would appreciate the chance to share how my experience can support the team. Thank you for your time.
+
+Best,
+Alex Chen
+```
+
+### Follow-up
+Timing: 3-5 business days after applying or the last recruiter interaction.
+```text
+Hi ALPHA X TECHNOLOGY PTE. LTD. team,
+
+I wanted to follow up on my application for the Frontend Engineer role. I remain interested and would be glad to provide any additional context about my background.
+
+Thank you again for your time.
+
+Best,
+Alex Chen
+```
+
+### Interview Prep
+- Prepare a 60-second story for why ALPHA X TECHNOLOGY PTE. LTD. and why Frontend Engineer.
+- Prepare evidence for: JavaScript, TypeScript, React, API, Figma, engineer.
 - Prepare one STAR story about execution under ambiguity.
 - Prepare one STAR story about collaboration and tradeoff decisions.
 - Prepare questions about team priorities, success metrics, and hiring timeline.

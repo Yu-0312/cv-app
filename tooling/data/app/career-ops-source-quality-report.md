@@ -1,16 +1,17 @@
 # Career Ops Source Quality
 
-- Generated: 2026-06-03T00:32:28.040Z
+- Generated: 2026-06-04T00:29:48.912Z
 - Mode: filter
 - Minimum score: 45
-- Input active jobs: 83424
-- Kept active jobs: 83272
-- Filtered active jobs: 152
-- Quality tiers: high 77936 / medium 5238 / low 98
+- Input active jobs: 83272
+- Kept active jobs: 83140
+- Filtered active jobs: 132
+- Quality tiers: high 77815 / medium 5229 / low 96
 
 ## Filtered Samples
 
 - 0 Unknown - Group Human Resources | DBS Bank (missing-company, landing-or-search-title, thin-description, job-board-landing-url)
+- 37 Grab - Senior Data Scientist (Search and Recommendations) (landing-or-search-title, thin-description)
 - 37 Apple - Careers at Apple: Join our community and culture. (landing-or-search-title, thin-description)
 - 19 Unknown - TW-Operations Expert - Jobs - Careers at Apple (missing-company, landing-or-search-title, thin-description)
 - 19 Unknown - Select Location - Jobs - Careers at Apple (missing-company, landing-or-search-title, thin-description)
@@ -21,7 +22,6 @@
 - 19 Unknown - Camera Electrical System Integration Engineer - Camera Hardware - Jobs - Careers at Apple (missing-company, landing-or-search-title, thin-description)
 - 19 Unknown - Display Reliability Engineer - Jobs - Careers at Apple (missing-company, landing-or-search-title, thin-description)
 - 19 Unknown - SoC Packaging Engineer - Jobs - Careers at Apple (missing-company, landing-or-search-title, thin-description)
-- 19 Unknown - Operation Test Engineer - Machine Learning - Jobs - Careers at Apple (missing-company, landing-or-search-title, thin-description)
 
 ## Kept Samples
 
