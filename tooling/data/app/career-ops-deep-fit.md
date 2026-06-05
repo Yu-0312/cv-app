@@ -1,6 +1,6 @@
 # Career Ops Deep Fit Report
 
-Generated: 2026-06-04T00:32:43.269Z
+Generated: 2026-06-05T00:08:53.242Z
 LLM provider: none
 Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 exploratory)
 
@@ -466,6 +466,34 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Use story story-2: systems and API collaboration.
 - Use story story-3: accessibility and quality.
 
+### Databricks Greenhouse - Resident Solutions Architect (Full Stack Engineer)
+
+- Score: 94
+- Grade: A
+- Confidence: medium
+- Decision: pursue aggressively
+- Thesis: Resident Solutions Architect (Full Stack Engineer) at Databricks Greenhouse is pursue aggressively because the snapshot score is 94, with 5 profile/role keyword hits and 0 external evidence item(s).
+
+#### Evidence
+- Keyword hits: Analytics, API, remote, analytics, Full Stack Engineer
+- Keyword misses: python, aws, gcp, azure, spark, operations, excel
+- Research signals: -
+- Compensation leverage: high
+
+#### Concerns
+- External company evidence is thin; run deep research with a search API.
+- Profile keyword coverage is weaker than the target role language.
+
+#### Interview Strategy
+- Ask why the role is open and what success means in the first 90 days.
+- Probe team ownership, roadmap pressure, and cross-functional interfaces.
+
+#### CV Strategy
+- Lead with proof around: Analytics, API, remote, analytics, Full Stack Engineer.
+- Use story story-1: frontend product execution.
+- Use story story-2: systems and API collaboration.
+- Use story story-3: accessibility and quality.
+
 ### Databricks Greenhouse - Director,Technical Solutions (Big Data/ AI)
 
 - Score: 94
@@ -564,7 +592,7 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Keyword hits: JavaScript, React, CSS, API, remote, dashboard, React, Product Engineer
 - Keyword misses: aws, growth
 - Research signals: -
-- Compensation leverage: high
+- Compensation leverage: -
 
 #### Concerns
 - External company evidence is thin; run deep research with a search API.
@@ -689,33 +717,6 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Use story story-2: systems and API collaboration.
 - Use story story-3: accessibility and quality.
 
-### Airbnb Greenhouse - Senior Web Automation Engineer, Quality Platform
-
-- Score: 93
-- Grade: A
-- Confidence: medium
-- Decision: pursue aggressively
-- Thesis: Senior Web Automation Engineer, Quality Platform at Airbnb Greenhouse is pursue aggressively because the snapshot score is 93, with 4 profile/role keyword hits and 0 external evidence item(s).
-
-#### Evidence
-- Keyword hits: JavaScript, TypeScript, TypeScript, Product Engineer
-- Keyword misses: agents, excel
-- Research signals: -
-- Compensation leverage: -
-
-#### Concerns
-- External company evidence is thin; run deep research with a search API.
-
-#### Interview Strategy
-- Ask why the role is open and what success means in the first 90 days.
-- Probe team ownership, roadmap pressure, and cross-functional interfaces.
-
-#### CV Strategy
-- Lead with proof around: JavaScript, TypeScript, TypeScript, Product Engineer.
-- Use story story-1: frontend product execution.
-- Use story story-2: systems and API collaboration.
-- Use story story-3: accessibility and quality.
-
 ## Layer B — Standard Matches (roleFit 40-67)
 
 ### NVIDIA Workday - Senior Solution Architect - Telco Network Automation
@@ -748,6 +749,12 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Keyword hits: -
 - Gaps: go, sql, power bi
 
+### Newhouse - Social and Content Lead
+- Score: 78 | Grade: B | RoleFit: 45
+- Decision: pursue selectively
+- Keyword hits: remote
+- Gaps: spark
+
 ### Databricks Greenhouse - Sr. Technical Enablement Specialist
 - Score: 78 | Grade: B | RoleFit: 45
 - Decision: pursue selectively
@@ -759,6 +766,12 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Decision: pursue selectively
 - Keyword hits: -
 - Gaps: go, excel
+
+### NCS PTE. LTD. - Senior Software Engineer
+- Score: 77 | Grade: B | RoleFit: 45
+- Decision: pursue selectively
+- Keyword hits: -
+- Gaps: -
 
 ### Databricks Greenhouse - Candidate Experience Coordinator (6-month contract)
 - Score: 77 | Grade: B | RoleFit: 45
@@ -807,6 +820,12 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Decision: pursue selectively
 - Keyword hits: -
 - Gaps: python
+
+### ORION SYSTEMS INTEGRATION PTE. LTD. - Software Engineer
+- Score: 74 | Grade: B | RoleFit: 45
+- Decision: pursue selectively
+- Keyword hits: JavaScript
+- Gaps: java
 
 ### SEMICONDUCTOR TECHNOLOGIES & INSTRUMENTS PTE LTD - SOFTWARE ENGINEER
 - Score: 74 | Grade: B | RoleFit: 45
@@ -868,17 +887,17 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Keyword hits: -
 - Gaps: python
 
-### emagine Polska - BI Developer
-- Score: 73 | Grade: B | RoleFit: 45
-- Decision: pursue selectively
-- Keyword hits: remote
-- Gaps: excel, power bi
-
 ### DCI CONSULTANTS PRIVATE LIMITED - Software Engineer (.net) - MC
 - Score: 71 | Grade: C | RoleFit: 45
 - Decision: pursue selectively
 - Keyword hits: -
 - Gaps: java, go
+
+### HPS PARTNERS PTE. LTD. - Senior/Software Engineer (Bluetooth Embedded System)
+- Score: 71 | Grade: C | RoleFit: 45
+- Decision: pursue selectively
+- Keyword hits: -
+- Gaps: -
 
 ### CERTIS TECHNOLOGY (SINGAPORE) PTE. LTD. - Senior/Software Engineer (Technical Lead)
 - Score: 71 | Grade: C | RoleFit: 45
@@ -898,29 +917,17 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Keyword hits: -
 - Gaps: -
 
-### ONG TENG CHONG BUILDING CONTRACTOR PTE LTD - M&E Coordinator cum Drafter
-- Score: 70 | Grade: C | RoleFit: 45
-- Decision: pursue selectively
-- Keyword hits: -
-- Gaps: -
-
 ### NVIDIA Workday - Senior Package Engineer
 - Score: 69 | Grade: C | RoleFit: 45
 - Decision: hold / compare
 - Keyword hits: -
 - Gaps: -
 
-### RG&amp;T Solutions - Content Tagger
+### CONSTRUKT PTE. LTD. - Contract Accounts Administrative Clerk
 - Score: 69 | Grade: C | RoleFit: 45
 - Decision: hold / compare
-- Keyword hits: remote
-- Gaps: -
-
-### RG&amp;T Solutions - Content Tagger
-- Score: 69 | Grade: C | RoleFit: 45
-- Decision: hold / compare
-- Keyword hits: remote
-- Gaps: -
+- Keyword hits: -
+- Gaps: excel
 
 ### ALLEGIS GROUP SINGAPORE PRIVATE LIMITED - Business Analyst
 - Score: 68 | Grade: C | RoleFit: 45
@@ -928,11 +935,23 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Keyword hits: -
 - Gaps: -
 
-### emagine Polska - Manual Quality Assurance Engineer
+### The Home Depot Canada - Asset Protection Specialist Vancouver Terminal
+- Score: 68 | Grade: C | RoleFit: 45
+- Decision: hold / compare
+- Keyword hits: remote
+- Gaps: -
+
+### BIOFRONTIER TECHNOLOGY PTE. LTD. - Laboratory Calibration Technician
 - Score: 68 | Grade: C | RoleFit: 45
 - Decision: hold / compare
 - Keyword hits: -
-- Gaps: go
+- Gaps: -
+
+### Bendigo Advertiser - Community Kids Thornton
+- Score: 67 | Grade: C | RoleFit: 45
+- Decision: hold / compare
+- Keyword hits: remote
+- Gaps: -
 
 ### CapitexAI - Private Equity Analyst
 - Score: 67 | Grade: C | RoleFit: 45
@@ -940,26 +959,9 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Keyword hits: API, remote
 - Gaps: -
 
-### NVIDIA - NVIDIA OVX Systems
-- Score: 66 | Grade: C | RoleFit: 45
-- Decision: hold / compare
-- Keyword hits: -
-- Gaps: -
-
-### Tencent Careers China - 腾讯投资-Fund Investment Associate / Associate Director
-- Score: 66 | Grade: C | RoleFit: 45
-- Decision: hold / compare
-- Keyword hits: -
-- Gaps: -
-
-### Jet Delivery, Inc - Employee Drivers
-- Score: 66 | Grade: C | RoleFit: 45
-- Decision: hold / compare
-- Keyword hits: remote
-- Gaps: -
-
 ## Layer C — Exploratory Signals (roleFit < 40)
 
+- **Airbnb Greenhouse — Senior Web Automation Engineer, Quality Platform** (score: 93) | Top gap: agents
 - **MongoDB Greenhouse — Senior Software Engineer, Observability** (score: 93) | Top gap: java
 - **Capgemini Singapore  PTE. LTD. — Senior Frontend Engineer** (score: 92) | Top gap: operations
 - **NEUTRON PTE. LTD. — Frontend Engineer (Web & Mobile)** (score: 92) | Top gap: aws
@@ -984,10 +986,9 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - **Canonical Greenhouse — Security Software Engineer** (score: 92) | Top gap: python
 - **Vercel Greenhouse — Site Engineer** (score: 92) | Top gap: agents
 - **ElevenLabs Ashby — Safety Engineer** (score: 92) | Top gap: python
-- **PostHog Ashby — Product Engineer** (score: 92) | Top gap: python
 - **The Coca-Cola Company — Manager, Fluidics Engineer** (score: 91) | Top gap: growth
 - **Uber — Graduate 2026 Software Engineer I, Chile** (score: 91) | Top gap: python
 - **EPAM Systems — Senior Data Engineer (Palantir)** (score: 91) | Top gap: python
-- **Allstate — Product Engineer - Java Spring Boot - Full Stack -** (score: 91) | Top gap: python
 - **Allstate — Product Engineer - Java Spring Boot w/ Full Stack Option** (score: 91) | Top gap: python
+- **Stripe Greenhouse — Full Stack Engineer, Support Experience** (score: 91) | Top gap: none
 

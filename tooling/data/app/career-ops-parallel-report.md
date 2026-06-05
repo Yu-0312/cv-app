@@ -1,6 +1,6 @@
 # Career Ops Parallel Worker Report
 
-Generated: 2026-06-04T00:32:39.787Z
+Generated: 2026-06-05T00:08:49.461Z
 Concurrency: 4
 Jobs processed: 50
 Errors: 0
@@ -251,6 +251,21 @@ Errors: 0
 - Never store API keys or credentials in job metadata.
 - Record only application status and user-approved notes.
 
+## P0 Databricks Greenhouse - Resident Solutions Architect (Full Stack Engineer)
+
+- Score: 94
+- Grade: A
+- Research evidence: 0
+- Keywords: Analytics, remote, engineer, product, data
+- Compensation leverage: high
+- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
+
+### Apply Agent Guardrails
+- Never submit without explicit user confirmation.
+- Never fabricate work authorization, salary history, degree, or experience.
+- Never store API keys or credentials in job metadata.
+- Record only application status and user-approved notes.
+
 ## P0 Databricks Greenhouse - Director,Technical Solutions (Big Data/ AI)
 
 - Score: 94
@@ -302,7 +317,7 @@ Errors: 0
 - Grade: A
 - Research evidence: 0
 - Keywords: JavaScript, React, CSS, API, remote, dashboard, engineer, product, data
-- Compensation leverage: high
+- Compensation leverage: -
 - Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
 
 ### Apply Agent Guardrails
@@ -737,21 +752,6 @@ Errors: 0
 - Grade: A
 - Research evidence: 0
 - Keywords: React, remote, engineer, product, data
-- Compensation leverage: -
-- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
-
-### Apply Agent Guardrails
-- Never submit without explicit user confirmation.
-- Never fabricate work authorization, salary history, degree, or experience.
-- Never store API keys or credentials in job metadata.
-- Record only application status and user-approved notes.
-
-## P0 PostHog Ashby - Product Engineer
-
-- Score: 92
-- Grade: A
-- Research evidence: 0
-- Keywords: TypeScript, React, Analytics, API, remote, design system, engineer, product, data
 - Compensation leverage: -
 - Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
 

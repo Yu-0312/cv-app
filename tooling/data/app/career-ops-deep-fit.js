@@ -1,6 +1,6 @@
 window.CV_CAREER_OPS_DEEP_FIT = {
   "source": "career-ops-deep-fit",
-  "generatedAt": "2026-06-04T00:32:43.269Z",
+  "generatedAt": "2026-06-05T00:08:53.242Z",
   "llmProvider": "none",
   "summary": {
     "totalResults": 95,
@@ -1199,6 +1199,77 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "llm": null
     },
     {
+      "jobKey": "url:https://databricks.com/company/careers/open-positions/job?gh_jid=8367942002",
+      "company": "Databricks Greenhouse",
+      "title": "Resident Solutions Architect (Full Stack Engineer)",
+      "score": 94,
+      "grade": "A",
+      "confidence": "medium",
+      "decision": "pursue aggressively",
+      "thesis": "Resident Solutions Architect (Full Stack Engineer) at Databricks Greenhouse is pursue aggressively because the snapshot score is 94, with 5 profile/role keyword hits and 0 external evidence item(s).",
+      "evidence": {
+        "keywordHits": [
+          "Analytics",
+          "API",
+          "remote",
+          "analytics",
+          "Full Stack Engineer"
+        ],
+        "keywordMisses": [
+          "python",
+          "aws",
+          "gcp",
+          "azure",
+          "spark",
+          "operations",
+          "excel"
+        ],
+        "researchSignals": [],
+        "evidenceCount": 0,
+        "compensationLeverage": "high"
+      },
+      "concerns": [
+        "External company evidence is thin; run deep research with a search API.",
+        "Profile keyword coverage is weaker than the target role language."
+      ],
+      "interviewStrategy": [
+        "Ask why the role is open and what success means in the first 90 days.",
+        "Probe team ownership, roadmap pressure, and cross-functional interfaces."
+      ],
+      "cvStrategy": [
+        "Lead with proof around: Analytics, API, remote, analytics, Full Stack Engineer.",
+        "Use story story-1: frontend product execution.",
+        "Use story story-2: systems and API collaboration.",
+        "Use story story-3: accessibility and quality."
+      ],
+      "compensationStrategy": {
+        "leverage": "high",
+        "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Resident Solutions Architect (Full Stack Engineer) package, including base, bonus, equity, and review cycle?",
+        "valueAnchor": "Based on the scope of Resident Solutions Architect (Full Stack Engineer) and my fit around Analytics, remote, engineer, product, I would like to calibrate toward the stronger end of the range if the team sees the level match."
+      },
+      "storyHooks": [
+        {
+          "id": "story-1",
+          "theme": "frontend product execution",
+          "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
+          "relevance": 0
+        },
+        {
+          "id": "story-2",
+          "theme": "systems and API collaboration",
+          "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
+          "relevance": 0
+        },
+        {
+          "id": "story-3",
+          "theme": "accessibility and quality",
+          "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
+          "relevance": 0
+        }
+      ],
+      "llm": null
+    },
+    {
       "jobKey": "url:https://databricks.com/company/careers/open-positions/job?gh_jid=8409447002",
       "company": "Databricks Greenhouse",
       "title": "Director,Technical Solutions (Big Data/ AI)",
@@ -1241,8 +1312,8 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       ],
       "compensationStrategy": {
         "leverage": "high",
-        "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Director,Technical Solutions (Big Data/ AI) package, including base, bonus, equity, and review cycle?",
-        "valueAnchor": "Based on the scope of Director,Technical Solutions (Big Data/ AI) and my fit around Analytics, Performance Optimization, product, data, I would like to calibrate toward the stronger end of the range if the team sees the level match."
+        "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Resident Solutions Architect (Full Stack Engineer) package, including base, bonus, equity, and review cycle?",
+        "valueAnchor": "Based on the scope of Resident Solutions Architect (Full Stack Engineer) and my fit around Analytics, remote, engineer, product, I would like to calibrate toward the stronger end of the range if the team sees the level match."
       },
       "storyHooks": [
         {
@@ -1431,7 +1502,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
         ],
         "researchSignals": [],
         "evidenceCount": 0,
-        "compensationLeverage": "high"
+        "compensationLeverage": ""
       },
       "concerns": [
         "External company evidence is thin; run deep research with a search API."
@@ -1446,11 +1517,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
         "Use story story-2: systems and API collaboration.",
         "Use story story-3: accessibility and quality."
       ],
-      "compensationStrategy": {
-        "leverage": "high",
-        "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Product Engineer II package, including base, bonus, equity, and review cycle?",
-        "valueAnchor": "Based on the scope of Product Engineer II and my fit around JavaScript, React, CSS, API, I would like to calibrate toward the stronger end of the range if the team sees the level match."
-      },
+      "compensationStrategy": null,
       "storyHooks": [
         {
           "id": "story-1",
@@ -1732,66 +1799,6 @@ window.CV_CAREER_OPS_DEEP_FIT = {
         }
       ],
       "llm": null
-    },
-    {
-      "jobKey": "url:https://careers.airbnb.com/positions/7863467?gh_jid=7863467",
-      "company": "Airbnb Greenhouse",
-      "title": "Senior Web Automation Engineer, Quality Platform",
-      "score": 93,
-      "grade": "A",
-      "confidence": "medium",
-      "decision": "pursue aggressively",
-      "thesis": "Senior Web Automation Engineer, Quality Platform at Airbnb Greenhouse is pursue aggressively because the snapshot score is 93, with 4 profile/role keyword hits and 0 external evidence item(s).",
-      "evidence": {
-        "keywordHits": [
-          "JavaScript",
-          "TypeScript",
-          "TypeScript",
-          "Product Engineer"
-        ],
-        "keywordMisses": [
-          "agents",
-          "excel"
-        ],
-        "researchSignals": [],
-        "evidenceCount": 0,
-        "compensationLeverage": ""
-      },
-      "concerns": [
-        "External company evidence is thin; run deep research with a search API."
-      ],
-      "interviewStrategy": [
-        "Ask why the role is open and what success means in the first 90 days.",
-        "Probe team ownership, roadmap pressure, and cross-functional interfaces."
-      ],
-      "cvStrategy": [
-        "Lead with proof around: JavaScript, TypeScript, TypeScript, Product Engineer.",
-        "Use story story-1: frontend product execution.",
-        "Use story story-2: systems and API collaboration.",
-        "Use story story-3: accessibility and quality."
-      ],
-      "compensationStrategy": null,
-      "storyHooks": [
-        {
-          "id": "story-1",
-          "theme": "frontend product execution",
-          "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
-          "relevance": 2
-        },
-        {
-          "id": "story-2",
-          "theme": "systems and API collaboration",
-          "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
-          "relevance": 2
-        },
-        {
-          "id": "story-3",
-          "theme": "accessibility and quality",
-          "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
-          "relevance": 2
-        }
-      ],
-      "llm": null
     }
   ],
   "layerB": [
@@ -1884,6 +1891,24 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "layer": "B"
     },
     {
+      "jobKey": "url:https://remoteok.com/remote-jobs/remote-social-and-content-lead-newhouse-1132767",
+      "company": "Newhouse",
+      "title": "Social and Content Lead",
+      "score": 78,
+      "grade": "B",
+      "roleFit": 45,
+      "url": "https://remoteok.com/remote-jobs/remote-social-and-content-lead-newhouse-1132767",
+      "location": "Los Angeles Metropolitan Area",
+      "keywordHits": [
+        "remote"
+      ],
+      "keywordMisses": [
+        "spark"
+      ],
+      "decision": "pursue selectively",
+      "layer": "B"
+    },
+    {
       "jobKey": "url:https://databricks.com/company/careers/open-positions/job?gh_jid=8185059002",
       "company": "Databricks Greenhouse",
       "title": "Sr. Technical Enablement Specialist",
@@ -1917,6 +1942,20 @@ window.CV_CAREER_OPS_DEEP_FIT = {
         "go",
         "excel"
       ],
+      "decision": "pursue selectively",
+      "layer": "B"
+    },
+    {
+      "jobKey": "url:https://www.mycareersfuture.gov.sg/job/b91c6b5afaa687cc5b3bea5491509aea",
+      "company": "NCS PTE. LTD.",
+      "title": "Senior Software Engineer",
+      "score": 77,
+      "grade": "B",
+      "roleFit": 45,
+      "url": "https://www.mycareersfuture.gov.sg/job/b91c6b5afaa687cc5b3bea5491509aea",
+      "location": "NCS HUB, ANG MO KIO STREET 62, D20 Ang Mo Kio, Bishan, Singapore",
+      "keywordHits": [],
+      "keywordMisses": [],
       "decision": "pursue selectively",
       "layer": "B"
     },
@@ -2044,6 +2083,24 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "keywordHits": [],
       "keywordMisses": [
         "python"
+      ],
+      "decision": "pursue selectively",
+      "layer": "B"
+    },
+    {
+      "jobKey": "url:https://www.mycareersfuture.gov.sg/job/c90d4483f22831b563ccea46d2b18b0a",
+      "company": "ORION SYSTEMS INTEGRATION PTE. LTD.",
+      "title": "Software Engineer",
+      "score": 74,
+      "grade": "B",
+      "roleFit": 45,
+      "url": "https://www.mycareersfuture.gov.sg/job/c90d4483f22831b563ccea46d2b18b0a",
+      "location": "NORDCOM ONE, GAMBAS CRESCENT, D27 Sembawang, Yishun, Singapore",
+      "keywordHits": [
+        "JavaScript"
+      ],
+      "keywordMisses": [
+        "java"
       ],
       "decision": "pursue selectively",
       "layer": "B"
@@ -2209,25 +2266,6 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "layer": "B"
     },
     {
-      "jobKey": "url:https://justjoin.it/job-offer/emagine-polska-bi-developer--warsaw-data",
-      "company": "emagine Polska",
-      "title": "BI Developer",
-      "score": 73,
-      "grade": "B",
-      "roleFit": 45,
-      "url": "https://justjoin.it/job-offer/emagine-polska-bi-developer--warsaw-data",
-      "location": "Warsaw, PL",
-      "keywordHits": [
-        "remote"
-      ],
-      "keywordMisses": [
-        "excel",
-        "power bi"
-      ],
-      "decision": "pursue selectively",
-      "layer": "B"
-    },
-    {
       "jobKey": "url:https://www.mycareersfuture.gov.sg/job/a4a0668d68ded0567c70a0e176d70511",
       "company": "DCI CONSULTANTS PRIVATE LIMITED",
       "title": "Software Engineer (.net) - MC",
@@ -2241,6 +2279,20 @@ window.CV_CAREER_OPS_DEEP_FIT = {
         "java",
         "go"
       ],
+      "decision": "pursue selectively",
+      "layer": "B"
+    },
+    {
+      "jobKey": "url:https://www.mycareersfuture.gov.sg/job/6813b1ce86e2266fd9953cebcb246155",
+      "company": "HPS PARTNERS PTE. LTD.",
+      "title": "Senior/Software Engineer (Bluetooth Embedded System)",
+      "score": 71,
+      "grade": "C",
+      "roleFit": 45,
+      "url": "https://www.mycareersfuture.gov.sg/job/6813b1ce86e2266fd9953cebcb246155",
+      "location": "NORDCOM ONE, GAMBAS CRESCENT, D27 Sembawang, Yishun, Singapore",
+      "keywordHits": [],
+      "keywordMisses": [],
       "decision": "pursue selectively",
       "layer": "B"
     },
@@ -2294,20 +2346,6 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "layer": "B"
     },
     {
-      "jobKey": "url:https://www.mycareersfuture.gov.sg/job/3c3360a03d6e9874591a308e369d56c4",
-      "company": "ONG TENG CHONG BUILDING CONTRACTOR PTE LTD",
-      "title": "M&E Coordinator cum Drafter",
-      "score": 70,
-      "grade": "C",
-      "roleFit": 45,
-      "url": "https://www.mycareersfuture.gov.sg/job/3c3360a03d6e9874591a308e369d56c4",
-      "location": "Islandwide, Singapore",
-      "keywordHits": [],
-      "keywordMisses": [],
-      "decision": "pursue selectively",
-      "layer": "B"
-    },
-    {
       "jobKey": "url:https://nvidia.wd5.myworkdayjobs.com/nvidiaexternalcareersite/job/taiwan-hsinchu/senior-package-engineer_jr2016717-1",
       "company": "NVIDIA Workday",
       "title": "Senior Package Engineer",
@@ -2322,34 +2360,18 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "layer": "B"
     },
     {
-      "jobKey": "url:https://remoteok.com/remote-jobs/remote-content-tagger-rgampt-solutions-1132629",
-      "company": "RG&amp;T Solutions",
-      "title": "Content Tagger",
+      "jobKey": "url:https://www.mycareersfuture.gov.sg/job/3b4c5f15ed0dfa3fd1ba2dfce5558d0f",
+      "company": "CONSTRUKT PTE. LTD.",
+      "title": "Contract Accounts Administrative Clerk",
       "score": 69,
       "grade": "C",
       "roleFit": 45,
-      "url": "https://remoteok.com/remote-jobs/remote-content-tagger-rgampt-solutions-1132629",
-      "location": "Stanwood,",
-      "keywordHits": [
-        "remote"
+      "url": "https://www.mycareersfuture.gov.sg/job/3b4c5f15ed0dfa3fd1ba2dfce5558d0f",
+      "location": "WOODLANDS 11, WOODLANDS CLOSE, D25 Kranji, Woodgrove, Woodlands, Singapore",
+      "keywordHits": [],
+      "keywordMisses": [
+        "excel"
       ],
-      "keywordMisses": [],
-      "decision": "hold / compare",
-      "layer": "B"
-    },
-    {
-      "jobKey": "url:https://remoteok.com/remote-jobs/remote-content-tagger-rgampt-solutions-1132658",
-      "company": "RG&amp;T Solutions",
-      "title": "Content Tagger",
-      "score": 69,
-      "grade": "C",
-      "roleFit": 45,
-      "url": "https://remoteok.com/remote-jobs/remote-content-tagger-rgampt-solutions-1132658",
-      "location": "Forsyth,",
-      "keywordHits": [
-        "remote"
-      ],
-      "keywordMisses": [],
       "decision": "hold / compare",
       "layer": "B"
     },
@@ -2368,18 +2390,48 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "layer": "B"
     },
     {
-      "jobKey": "url:https://justjoin.it/job-offer/emagine-polska-manual-quality-assurance-engineer-warsaw-testing",
-      "company": "emagine Polska",
-      "title": "Manual Quality Assurance Engineer",
+      "jobKey": "url:https://remoteok.com/remote-jobs/remote-asset-protection-specialist-vancouver-terminal-the-home-depot-canada-1132806",
+      "company": "The Home Depot Canada",
+      "title": "Asset Protection Specialist Vancouver Terminal",
       "score": 68,
       "grade": "C",
       "roleFit": 45,
-      "url": "https://justjoin.it/job-offer/emagine-polska-manual-quality-assurance-engineer-warsaw-testing",
-      "location": "Warsaw, PL",
-      "keywordHits": [],
-      "keywordMisses": [
-        "go"
+      "url": "https://remoteok.com/remote-jobs/remote-asset-protection-specialist-vancouver-terminal-the-home-depot-canada-1132806",
+      "location": "Greater Vancouver Metropolitan Area,",
+      "keywordHits": [
+        "remote"
       ],
+      "keywordMisses": [],
+      "decision": "hold / compare",
+      "layer": "B"
+    },
+    {
+      "jobKey": "url:https://www.mycareersfuture.gov.sg/job/d2307deb15c29da606da28e5e5aff7ea",
+      "company": "BIOFRONTIER TECHNOLOGY PTE. LTD.",
+      "title": "Laboratory Calibration Technician",
+      "score": 68,
+      "grade": "C",
+      "roleFit": 45,
+      "url": "https://www.mycareersfuture.gov.sg/job/d2307deb15c29da606da28e5e5aff7ea",
+      "location": "PRESTIGE CENTRE, BUKIT BATOK CRESCENT, D23 Hillview, Bukit Panjang, Dairy Farm, Choa Chu Kang, Singapore",
+      "keywordHits": [],
+      "keywordMisses": [],
+      "decision": "hold / compare",
+      "layer": "B"
+    },
+    {
+      "jobKey": "url:https://remoteok.com/remote-jobs/remote-community-kids-thornton-bendigo-advertiser-1132768",
+      "company": "Bendigo Advertiser",
+      "title": "Community Kids Thornton",
+      "score": 67,
+      "grade": "C",
+      "roleFit": 45,
+      "url": "https://remoteok.com/remote-jobs/remote-community-kids-thornton-bendigo-advertiser-1132768",
+      "location": "Bar Beach,",
+      "keywordHits": [
+        "remote"
+      ],
+      "keywordMisses": [],
       "decision": "hold / compare",
       "layer": "B"
     },
@@ -2399,53 +2451,31 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "keywordMisses": [],
       "decision": "hold / compare",
       "layer": "B"
-    },
-    {
-      "jobKey": "url:https://www.nvidia.com/en-us/data-center/products/ovx/",
-      "company": "NVIDIA",
-      "title": "NVIDIA OVX Systems",
-      "score": 66,
-      "grade": "C",
-      "roleFit": 45,
-      "url": "https://www.nvidia.com/en-us/data-center/products/ovx/",
-      "location": "",
-      "keywordHits": [],
-      "keywordMisses": [],
-      "decision": "hold / compare",
-      "layer": "B"
-    },
-    {
-      "jobKey": "url:http://careers.tencent.com/jobdesc.html?postid=2057421659916382208",
-      "company": "Tencent Careers China",
-      "title": "腾讯投资-Fund Investment Associate / Associate Director",
-      "score": 66,
-      "grade": "C",
-      "roleFit": 45,
-      "url": "http://careers.tencent.com/jobdesc.html?postId=2057421659916382208",
-      "location": "中国 / 北京",
-      "keywordHits": [],
-      "keywordMisses": [],
-      "decision": "hold / compare",
-      "layer": "B"
-    },
-    {
-      "jobKey": "url:https://remoteok.com/remote-jobs/remote-employee-drivers-jet-delivery-inc-1132759",
-      "company": "Jet Delivery, Inc",
-      "title": "Employee Drivers",
-      "score": 66,
-      "grade": "C",
-      "roleFit": 45,
-      "url": "https://remoteok.com/remote-jobs/remote-employee-drivers-jet-delivery-inc-1132759",
-      "location": "Oakland,",
-      "keywordHits": [
-        "remote"
-      ],
-      "keywordMisses": [],
-      "decision": "hold / compare",
-      "layer": "B"
     }
   ],
   "layerC": [
+    {
+      "jobKey": "url:https://careers.airbnb.com/positions/7863467?gh_jid=7863467",
+      "company": "Airbnb Greenhouse",
+      "title": "Senior Web Automation Engineer, Quality Platform",
+      "score": 93,
+      "grade": "A",
+      "roleFit": 92,
+      "url": "https://careers.airbnb.com/positions/7863467?gh_jid=7863467",
+      "location": "Brazil",
+      "keywordHits": [
+        "JavaScript",
+        "TypeScript",
+        "TypeScript",
+        "Product Engineer"
+      ],
+      "topGap": "agents",
+      "mainGaps": [
+        "agents",
+        "excel"
+      ],
+      "layer": "C"
+    },
     {
       "jobKey": "url:https://www.mongodb.com/careers/job/?gh_jid=7695616",
       "company": "MongoDB Greenhouse",
@@ -3000,30 +3030,6 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "layer": "C"
     },
     {
-      "jobKey": "url:https://jobs.ashbyhq.com/posthog/20ab9628-20ff-4ae3-bd6a-46ae7e9dc6b8",
-      "company": "PostHog Ashby",
-      "title": "Product Engineer",
-      "score": 92,
-      "grade": "A",
-      "roleFit": 92,
-      "url": "https://jobs.ashbyhq.com/posthog/20ab9628-20ff-4ae3-bd6a-46ae7e9dc6b8",
-      "location": "Remote",
-      "keywordHits": [
-        "TypeScript",
-        "React",
-        "Analytics",
-        "API"
-      ],
-      "topGap": "python",
-      "mainGaps": [
-        "python",
-        "go",
-        "sql",
-        "html"
-      ],
-      "layer": "C"
-    },
-    {
       "jobKey": "url:https://www.themuse.com/jobs/thecocacolacompany/manager-fluidics-engineer",
       "company": "The Coca-Cola Company",
       "title": "Manager, Fluidics Engineer",
@@ -3088,30 +3094,6 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "layer": "C"
     },
     {
-      "jobKey": "url:https://www.themuse.com/jobs/allstate/product-engineer-java-spring-boot-full-stack-cbf8a7",
-      "company": "Allstate",
-      "title": "Product Engineer - Java Spring Boot - Full Stack -",
-      "score": 91,
-      "grade": "A",
-      "roleFit": 92,
-      "url": "https://www.themuse.com/jobs/allstate/product-engineer-java-spring-boot-full-stack-cbf8a7",
-      "location": "Flexible / Remote",
-      "keywordHits": [
-        "Frontend Engineer",
-        "TypeScript",
-        "React",
-        "API"
-      ],
-      "topGap": "python",
-      "mainGaps": [
-        "python",
-        "java",
-        "aws",
-        "azure"
-      ],
-      "layer": "C"
-    },
-    {
       "jobKey": "url:https://www.themuse.com/jobs/allstate/product-engineer-java-spring-boot-w-full-stack-option-b5929a",
       "company": "Allstate",
       "title": "Product Engineer - Java Spring Boot w/ Full Stack Option",
@@ -3133,6 +3115,25 @@ window.CV_CAREER_OPS_DEEP_FIT = {
         "aws",
         "azure"
       ],
+      "layer": "C"
+    },
+    {
+      "jobKey": "url:https://stripe.com/jobs/search?gh_jid=7913464",
+      "company": "Stripe Greenhouse",
+      "title": "Full Stack Engineer, Support Experience",
+      "score": 91,
+      "grade": "A",
+      "roleFit": 92,
+      "url": "https://stripe.com/jobs/search?gh_jid=7913464",
+      "location": "Dublin",
+      "keywordHits": [
+        "React",
+        "API",
+        "React",
+        "Full Stack Engineer"
+      ],
+      "topGap": "",
+      "mainGaps": [],
       "layer": "C"
     }
   ],
@@ -4327,6 +4328,77 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "llm": null
     },
     {
+      "jobKey": "url:https://databricks.com/company/careers/open-positions/job?gh_jid=8367942002",
+      "company": "Databricks Greenhouse",
+      "title": "Resident Solutions Architect (Full Stack Engineer)",
+      "score": 94,
+      "grade": "A",
+      "confidence": "medium",
+      "decision": "pursue aggressively",
+      "thesis": "Resident Solutions Architect (Full Stack Engineer) at Databricks Greenhouse is pursue aggressively because the snapshot score is 94, with 5 profile/role keyword hits and 0 external evidence item(s).",
+      "evidence": {
+        "keywordHits": [
+          "Analytics",
+          "API",
+          "remote",
+          "analytics",
+          "Full Stack Engineer"
+        ],
+        "keywordMisses": [
+          "python",
+          "aws",
+          "gcp",
+          "azure",
+          "spark",
+          "operations",
+          "excel"
+        ],
+        "researchSignals": [],
+        "evidenceCount": 0,
+        "compensationLeverage": "high"
+      },
+      "concerns": [
+        "External company evidence is thin; run deep research with a search API.",
+        "Profile keyword coverage is weaker than the target role language."
+      ],
+      "interviewStrategy": [
+        "Ask why the role is open and what success means in the first 90 days.",
+        "Probe team ownership, roadmap pressure, and cross-functional interfaces."
+      ],
+      "cvStrategy": [
+        "Lead with proof around: Analytics, API, remote, analytics, Full Stack Engineer.",
+        "Use story story-1: frontend product execution.",
+        "Use story story-2: systems and API collaboration.",
+        "Use story story-3: accessibility and quality."
+      ],
+      "compensationStrategy": {
+        "leverage": "high",
+        "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Resident Solutions Architect (Full Stack Engineer) package, including base, bonus, equity, and review cycle?",
+        "valueAnchor": "Based on the scope of Resident Solutions Architect (Full Stack Engineer) and my fit around Analytics, remote, engineer, product, I would like to calibrate toward the stronger end of the range if the team sees the level match."
+      },
+      "storyHooks": [
+        {
+          "id": "story-1",
+          "theme": "frontend product execution",
+          "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
+          "relevance": 0
+        },
+        {
+          "id": "story-2",
+          "theme": "systems and API collaboration",
+          "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
+          "relevance": 0
+        },
+        {
+          "id": "story-3",
+          "theme": "accessibility and quality",
+          "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
+          "relevance": 0
+        }
+      ],
+      "llm": null
+    },
+    {
       "jobKey": "url:https://databricks.com/company/careers/open-positions/job?gh_jid=8409447002",
       "company": "Databricks Greenhouse",
       "title": "Director,Technical Solutions (Big Data/ AI)",
@@ -4369,8 +4441,8 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       ],
       "compensationStrategy": {
         "leverage": "high",
-        "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Director,Technical Solutions (Big Data/ AI) package, including base, bonus, equity, and review cycle?",
-        "valueAnchor": "Based on the scope of Director,Technical Solutions (Big Data/ AI) and my fit around Analytics, Performance Optimization, product, data, I would like to calibrate toward the stronger end of the range if the team sees the level match."
+        "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Resident Solutions Architect (Full Stack Engineer) package, including base, bonus, equity, and review cycle?",
+        "valueAnchor": "Based on the scope of Resident Solutions Architect (Full Stack Engineer) and my fit around Analytics, remote, engineer, product, I would like to calibrate toward the stronger end of the range if the team sees the level match."
       },
       "storyHooks": [
         {
@@ -4559,7 +4631,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
         ],
         "researchSignals": [],
         "evidenceCount": 0,
-        "compensationLeverage": "high"
+        "compensationLeverage": ""
       },
       "concerns": [
         "External company evidence is thin; run deep research with a search API."
@@ -4574,11 +4646,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
         "Use story story-2: systems and API collaboration.",
         "Use story story-3: accessibility and quality."
       ],
-      "compensationStrategy": {
-        "leverage": "high",
-        "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Product Engineer II package, including base, bonus, equity, and review cycle?",
-        "valueAnchor": "Based on the scope of Product Engineer II and my fit around JavaScript, React, CSS, API, I would like to calibrate toward the stronger end of the range if the team sees the level match."
-      },
+      "compensationStrategy": null,
       "storyHooks": [
         {
           "id": "story-1",
@@ -4857,66 +4925,6 @@ window.CV_CAREER_OPS_DEEP_FIT = {
           "theme": "accessibility and quality",
           "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
           "relevance": 1
-        }
-      ],
-      "llm": null
-    },
-    {
-      "jobKey": "url:https://careers.airbnb.com/positions/7863467?gh_jid=7863467",
-      "company": "Airbnb Greenhouse",
-      "title": "Senior Web Automation Engineer, Quality Platform",
-      "score": 93,
-      "grade": "A",
-      "confidence": "medium",
-      "decision": "pursue aggressively",
-      "thesis": "Senior Web Automation Engineer, Quality Platform at Airbnb Greenhouse is pursue aggressively because the snapshot score is 93, with 4 profile/role keyword hits and 0 external evidence item(s).",
-      "evidence": {
-        "keywordHits": [
-          "JavaScript",
-          "TypeScript",
-          "TypeScript",
-          "Product Engineer"
-        ],
-        "keywordMisses": [
-          "agents",
-          "excel"
-        ],
-        "researchSignals": [],
-        "evidenceCount": 0,
-        "compensationLeverage": ""
-      },
-      "concerns": [
-        "External company evidence is thin; run deep research with a search API."
-      ],
-      "interviewStrategy": [
-        "Ask why the role is open and what success means in the first 90 days.",
-        "Probe team ownership, roadmap pressure, and cross-functional interfaces."
-      ],
-      "cvStrategy": [
-        "Lead with proof around: JavaScript, TypeScript, TypeScript, Product Engineer.",
-        "Use story story-1: frontend product execution.",
-        "Use story story-2: systems and API collaboration.",
-        "Use story story-3: accessibility and quality."
-      ],
-      "compensationStrategy": null,
-      "storyHooks": [
-        {
-          "id": "story-1",
-          "theme": "frontend product execution",
-          "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
-          "relevance": 2
-        },
-        {
-          "id": "story-2",
-          "theme": "systems and API collaboration",
-          "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
-          "relevance": 2
-        },
-        {
-          "id": "story-3",
-          "theme": "accessibility and quality",
-          "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
-          "relevance": 2
         }
       ],
       "llm": null

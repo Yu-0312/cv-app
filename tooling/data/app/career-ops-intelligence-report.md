@@ -1,11 +1,11 @@
 # Career Ops Intelligence Report
 
-Generated: 2026-06-04T00:32:07.865Z
+Generated: 2026-06-05T00:08:17.683Z
 
-- Active jobs: 83140
+- Active jobs: 83152
 - Expired jobs: 0
-- Duplicate groups: 3398
-- Jobs without enough description: 419
+- Duplicate groups: 3386
+- Jobs without enough description: 420
 - Rubric: Career Ops 10-Dimension Rubric
 
 ## Rubric Weights
@@ -21,56 +21,56 @@ Generated: 2026-06-04T00:32:07.865Z
 - applicationEffort: 0.08
 
 ## Top Skills
-- api: 7576
-- growth: 4489
-- operations: 4225
-- analytics: 3328
-- sales: 3096
-- python: 2220
-- go: 1934
-- sql: 1599
-- excel: 1507
+- api: 7592
+- growth: 4498
+- operations: 4271
+- analytics: 3353
+- sales: 3142
+- python: 2206
+- go: 1941
+- sql: 1600
+- excel: 1545
 - aws: 1198
-- machine learning: 968
-- azure: 955
+- azure: 967
+- machine learning: 962
 
 ## Missing High-Demand Skills
-- growth: 4489
-- operations: 4225
-- sales: 3096
-- python: 2220
-- go: 1934
-- sql: 1599
-- excel: 1507
+- growth: 4498
+- operations: 4271
+- sales: 3142
+- python: 2206
+- go: 1941
+- sql: 1600
+- excel: 1545
 - aws: 1198
-- machine learning: 968
-- azure: 955
+- azure: 967
+- machine learning: 962
 
 ## Global Skill Gap Priority (weighted by job score)
-- growth: 7139.8
-- operations: 6701.3
-- sales: 4862.3
-- python: 3599.2
-- go: 3086.5
-- sql: 2598.2
-- excel: 2355.7
-- aws: 1960.6
-- machine learning: 1569.9
-- azure: 1560.5
-- java: 1300.5
-- agents: 1206.9
+- growth: 7155.1
+- operations: 6771.7
+- sales: 4930.9
+- python: 3578.2
+- go: 3097.2
+- sql: 2600.1
+- excel: 2415.2
+- aws: 1960.5
+- azure: 1580.4
+- machine learning: 1559.3
+- java: 1299.5
+- spark: 1226.4
 
 ## Role Families
-- Backend: 79075
+- Backend: 79096
 - Other: 1694
-- Frontend: 807
-- AI / Data: 665
-- Sales: 331
-- Marketing: 165
-- Product: 158
-- Design: 135
-- Operations: 78
-- Internship: 24
+- Frontend: 794
+- AI / Data: 680
+- Sales: 329
+- Product: 166
+- Marketing: 153
+- Design: 132
+- Operations: 73
+- Internship: 27
 
 ## Recommended Search Queries
 - Frontend Engineer

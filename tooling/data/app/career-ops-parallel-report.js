@@ -1,6 +1,6 @@
 window.CV_CAREER_OPS_PARALLEL = {
   "source": "career-ops-parallel",
-  "generatedAt": "2026-06-04T00:32:39.787Z",
+  "generatedAt": "2026-06-05T00:08:49.461Z",
   "concurrency": 4,
   "jobCount": 50,
   "results": [
@@ -11,8 +11,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 95,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-04T00:32:39.740Z",
-      "completedAt": "2026-06-04T00:32:39.742Z",
+      "startedAt": "2026-06-05T00:08:49.417Z",
+      "completedAt": "2026-06-05T00:08:49.419Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -225,8 +225,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 95,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-04T00:32:39.740Z",
-      "completedAt": "2026-06-04T00:32:39.743Z",
+      "startedAt": "2026-06-05T00:08:49.416Z",
+      "completedAt": "2026-06-05T00:08:49.418Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -441,8 +441,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 95,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-04T00:32:39.740Z",
-      "completedAt": "2026-06-04T00:32:39.742Z",
+      "startedAt": "2026-06-05T00:08:49.417Z",
+      "completedAt": "2026-06-05T00:08:49.419Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -656,8 +656,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 95,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-04T00:32:39.740Z",
-      "completedAt": "2026-06-04T00:32:39.742Z",
+      "startedAt": "2026-06-05T00:08:49.417Z",
+      "completedAt": "2026-06-05T00:08:49.419Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -871,8 +871,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 95,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-04T00:32:39.745Z",
-      "completedAt": "2026-06-04T00:32:39.746Z",
+      "startedAt": "2026-06-05T00:08:49.421Z",
+      "completedAt": "2026-06-05T00:08:49.422Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -1085,8 +1085,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 95,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-04T00:32:39.745Z",
-      "completedAt": "2026-06-04T00:32:39.746Z",
+      "startedAt": "2026-06-05T00:08:49.421Z",
+      "completedAt": "2026-06-05T00:08:49.422Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -1294,8 +1294,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 95,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-04T00:32:39.745Z",
-      "completedAt": "2026-06-04T00:32:39.746Z",
+      "startedAt": "2026-06-05T00:08:49.421Z",
+      "completedAt": "2026-06-05T00:08:49.423Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -1499,8 +1499,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 95,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-04T00:32:39.745Z",
-      "completedAt": "2026-06-04T00:32:39.747Z",
+      "startedAt": "2026-06-05T00:08:49.421Z",
+      "completedAt": "2026-06-05T00:08:49.423Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -1710,8 +1710,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 95,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-04T00:32:39.748Z",
-      "completedAt": "2026-06-04T00:32:39.750Z",
+      "startedAt": "2026-06-05T00:08:49.424Z",
+      "completedAt": "2026-06-05T00:08:49.426Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -1921,8 +1921,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 95,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-04T00:32:39.748Z",
-      "completedAt": "2026-06-04T00:32:39.750Z",
+      "startedAt": "2026-06-05T00:08:49.424Z",
+      "completedAt": "2026-06-05T00:08:49.426Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -2132,8 +2132,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 94,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-04T00:32:39.748Z",
-      "completedAt": "2026-06-04T00:32:39.749Z",
+      "startedAt": "2026-06-05T00:08:49.424Z",
+      "completedAt": "2026-06-05T00:08:49.426Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -2335,8 +2335,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 94,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-04T00:32:39.748Z",
-      "completedAt": "2026-06-04T00:32:39.750Z",
+      "startedAt": "2026-06-05T00:08:49.424Z",
+      "completedAt": "2026-06-05T00:08:49.426Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -2538,8 +2538,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 94,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-04T00:32:39.752Z",
-      "completedAt": "2026-06-04T00:32:39.754Z",
+      "startedAt": "2026-06-05T00:08:49.428Z",
+      "completedAt": "2026-06-05T00:08:49.429Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -2744,8 +2744,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 94,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-04T00:32:39.752Z",
-      "completedAt": "2026-06-04T00:32:39.753Z",
+      "startedAt": "2026-06-05T00:08:49.428Z",
+      "completedAt": "2026-06-05T00:08:49.429Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -2950,8 +2950,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 94,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-04T00:32:39.752Z",
-      "completedAt": "2026-06-04T00:32:39.753Z",
+      "startedAt": "2026-06-05T00:08:49.428Z",
+      "completedAt": "2026-06-05T00:08:49.429Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -3156,8 +3156,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 94,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-04T00:32:39.752Z",
-      "completedAt": "2026-06-04T00:32:39.753Z",
+      "startedAt": "2026-06-05T00:08:49.428Z",
+      "completedAt": "2026-06-05T00:08:49.430Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -3363,14 +3363,217 @@ window.CV_CAREER_OPS_PARALLEL = {
       }
     },
     {
+      "jobKey": "url:https://databricks.com/company/careers/open-positions/job?gh_jid=8367942002",
+      "company": "Databricks Greenhouse",
+      "title": "Resident Solutions Architect (Full Stack Engineer)",
+      "score": 94,
+      "grade": "A",
+      "priority": "P0",
+      "startedAt": "2026-06-05T00:08:49.431Z",
+      "completedAt": "2026-06-05T00:08:49.433Z",
+      "workers": {
+        "evaluation": {
+          "recommendation": "值得投遞",
+          "keywords": [
+            "Analytics",
+            "remote",
+            "engineer",
+            "product",
+            "data"
+          ],
+          "nextActions": [
+            "開啟職缺確認仍可投遞",
+            "產生客製 ATS PDF",
+            "用同職類高分職缺校準履歷關鍵字"
+          ]
+        },
+        "research": {
+          "signals": [],
+          "evidenceCount": 0,
+          "questions": []
+        },
+        "application": {
+          "checklist": [
+            "Confirm posting is active.",
+            "Generate tailored ATS PDF.",
+            "Prepare outreach and follow-up.",
+            "Log status and next follow-up."
+          ]
+        },
+        "compensation": {
+          "jobKey": "url:https://databricks.com/company/careers/open-positions/job?gh_jid=8367942002",
+          "company": "Databricks Greenhouse",
+          "title": "Resident Solutions Architect (Full Stack Engineer)",
+          "market": "us",
+          "inferredLevel": "senior-plus",
+          "candidateLevel": "mid",
+          "leverage": "high",
+          "evidence": {
+            "salaryMentions": [],
+            "benefitSignals": [
+              "work-mode flexibility",
+              "signing / relocation",
+              "learning budget"
+            ]
+          },
+          "marketBenchmark": null,
+          "structure": {
+            "baseSalary": [
+              "Need verified market data or recruiter range before setting a numeric anchor."
+            ],
+            "bonus": "Ask whether there is annual bonus, performance bonus, or sign-on bonus.",
+            "equity": "Ask whether equity, RSU, options, or profit-sharing exists.",
+            "benefits": [
+              "Health / insurance coverage",
+              "Paid leave and holidays",
+              "Learning budget or certification support",
+              "Remote/hybrid setup, commute, or relocation support",
+              "Review cycle and promotion timeline"
+            ],
+            "nonCashLevers": [
+              "Title / level calibration",
+              "Start date flexibility",
+              "Remote days",
+              "Equipment budget",
+              "First review at 3 or 6 months",
+              "Conference / learning budget"
+            ]
+          },
+          "negotiationScript": {
+            "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Resident Solutions Architect (Full Stack Engineer) package, including base, bonus, equity, and review cycle?",
+            "valueAnchor": "Based on the scope of Resident Solutions Architect (Full Stack Engineer) and my fit around Analytics, remote, engineer, product, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
+            "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
+            "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
+            "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
+          },
+          "redLines": [
+            "Do not disclose current compensation unless legally appropriate and strategically useful.",
+            "Do not accept verbal-only compensation details; ask for written package components.",
+            "Do not negotiate before confirming level, scope, work mode, and review cycle.",
+            "Do not trade base salary away without valuing the replacement benefit."
+          ],
+          "nextActions": [
+            "Collect market compensation evidence before naming a number.",
+            "Ask recruiter for approved range and level.",
+            "Map the job scope to proof points in the tailored CV.",
+            "Prepare one counter package with base, bonus/equity, and non-cash levers."
+          ],
+          "targetFrame": "Do not name a number first. Ask for the approved range, level, and total compensation structure before anchoring."
+        },
+        "stories": [
+          {
+            "id": "story-1",
+            "theme": "frontend product execution",
+            "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
+            "applicableQuestions": [
+              "Tell me about a project you are proud of.",
+              "Tell me about a time you handled ambiguity.",
+              "How have you applied frontend product execution?"
+            ],
+            "star": {
+              "situation": "You were tasked with a frontend product challenge. Proof point: \"Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.\" — set the scene: what product, what team size, and what was broken or missing?",
+              "task": "What was the specific outcome you were accountable for? Include the success metric (e.g. performance score, user adoption rate, release date).",
+              "action": "Walk through the key technical decisions: component architecture, state management tradeoffs, accessibility choices, or API contract design.",
+              "result": "Quantify the impact: load time delta, user adoption %, code reduction %, or stakeholder feedback. If no number, describe the quality or velocity improvement.",
+              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
+            },
+            "keywords": [
+              "frontend product execution",
+              "JavaScript",
+              "TypeScript",
+              "React",
+              "Next.js",
+              "CSS",
+              "Tailwind",
+              "Accessibility"
+            ],
+            "relevance": 0
+          },
+          {
+            "id": "story-2",
+            "theme": "systems and API collaboration",
+            "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
+            "applicableQuestions": [
+              "Tell me about a project you are proud of.",
+              "Tell me about a time you handled ambiguity.",
+              "How have you applied systems and API collaboration?"
+            ],
+            "star": {
+              "situation": "You collaborated across system boundaries. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — name the systems, teams, and integration surface area.",
+              "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
+              "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
+              "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
+              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
+            },
+            "keywords": [
+              "systems and API collaboration",
+              "JavaScript",
+              "TypeScript",
+              "React",
+              "Next.js",
+              "CSS",
+              "Tailwind",
+              "Accessibility"
+            ],
+            "relevance": 0
+          },
+          {
+            "id": "story-3",
+            "theme": "accessibility and quality",
+            "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
+            "applicableQuestions": [
+              "Tell me about a project you are proud of.",
+              "Tell me about a time you handled ambiguity.",
+              "How have you applied accessibility and quality?"
+            ],
+            "star": {
+              "situation": "You led or contributed to an accessibility or quality initiative. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — what was the starting state and who was affected?",
+              "task": "What standard or target were you working toward (WCAG level, test coverage %, zero-defect milestone)?",
+              "action": "Describe the audit process, tooling (axe, Lighthouse, screen reader testing), and how you prioritized fixes across components.",
+              "result": "State the outcome: WCAG compliance level achieved, user complaints reduced, or CI gate added to prevent regressions.",
+              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
+            },
+            "keywords": [
+              "accessibility and quality",
+              "JavaScript",
+              "TypeScript",
+              "React",
+              "Next.js",
+              "CSS",
+              "Tailwind",
+              "Accessibility"
+            ],
+            "relevance": 0
+          }
+        ],
+        "applyAgent": {
+          "mode": "human-in-the-loop",
+          "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8367942002",
+          "steps": [
+            "Open the application URL in a controlled browser session.",
+            "Extract visible form fields and required uploads.",
+            "Map CV profile fields to the form without submitting.",
+            "Prepare tailored PDF and outreach text.",
+            "Stop before final submit and ask the user to review."
+          ],
+          "guardrails": [
+            "Never submit without explicit user confirmation.",
+            "Never fabricate work authorization, salary history, degree, or experience.",
+            "Never store API keys or credentials in job metadata.",
+            "Record only application status and user-approved notes."
+          ]
+        }
+      }
+    },
+    {
       "jobKey": "url:https://databricks.com/company/careers/open-positions/job?gh_jid=8409447002",
       "company": "Databricks Greenhouse",
       "title": "Director,Technical Solutions (Big Data/ AI)",
       "score": 94,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-04T00:32:39.755Z",
-      "completedAt": "2026-06-04T00:32:39.757Z",
+      "startedAt": "2026-06-05T00:08:49.431Z",
+      "completedAt": "2026-06-05T00:08:49.432Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -3400,9 +3603,9 @@ window.CV_CAREER_OPS_PARALLEL = {
           ]
         },
         "compensation": {
-          "jobKey": "url:https://databricks.com/company/careers/open-positions/job?gh_jid=8409447002",
+          "jobKey": "url:https://databricks.com/company/careers/open-positions/job?gh_jid=8367942002",
           "company": "Databricks Greenhouse",
-          "title": "Director,Technical Solutions (Big Data/ AI)",
+          "title": "Resident Solutions Architect (Full Stack Engineer)",
           "market": "us",
           "inferredLevel": "senior-plus",
           "candidateLevel": "mid",
@@ -3410,6 +3613,8 @@ window.CV_CAREER_OPS_PARALLEL = {
           "evidence": {
             "salaryMentions": [],
             "benefitSignals": [
+              "work-mode flexibility",
+              "signing / relocation",
               "learning budget"
             ]
           },
@@ -3437,8 +3642,8 @@ window.CV_CAREER_OPS_PARALLEL = {
             ]
           },
           "negotiationScript": {
-            "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Director,Technical Solutions (Big Data/ AI) package, including base, bonus, equity, and review cycle?",
-            "valueAnchor": "Based on the scope of Director,Technical Solutions (Big Data/ AI) and my fit around Analytics, Performance Optimization, product, data, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
+            "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Resident Solutions Architect (Full Stack Engineer) package, including base, bonus, equity, and review cycle?",
+            "valueAnchor": "Based on the scope of Resident Solutions Architect (Full Stack Engineer) and my fit around Analytics, remote, engineer, product, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
             "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
             "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
             "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
@@ -3569,8 +3774,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 94,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-04T00:32:39.755Z",
-      "completedAt": "2026-06-04T00:32:39.756Z",
+      "startedAt": "2026-06-05T00:08:49.431Z",
+      "completedAt": "2026-06-05T00:08:49.433Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -3778,8 +3983,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 93,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-04T00:32:39.755Z",
-      "completedAt": "2026-06-04T00:32:39.757Z",
+      "startedAt": "2026-06-05T00:08:49.431Z",
+      "completedAt": "2026-06-05T00:08:49.433Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -3987,8 +4192,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 93,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-04T00:32:39.755Z",
-      "completedAt": "2026-06-04T00:32:39.757Z",
+      "startedAt": "2026-06-05T00:08:49.434Z",
+      "completedAt": "2026-06-05T00:08:49.436Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -4022,64 +4227,7 @@ window.CV_CAREER_OPS_PARALLEL = {
             "Log status and next follow-up."
           ]
         },
-        "compensation": {
-          "jobKey": "url:https://www.themuse.com/jobs/pilotly/product-engineer-ii-8b1aeb",
-          "company": "Pilotly",
-          "title": "Product Engineer II",
-          "market": "us",
-          "inferredLevel": "senior",
-          "candidateLevel": "mid",
-          "leverage": "high",
-          "evidence": {
-            "salaryMentions": [],
-            "benefitSignals": [
-              "learning budget"
-            ]
-          },
-          "marketBenchmark": null,
-          "structure": {
-            "baseSalary": [
-              "Need verified market data or recruiter range before setting a numeric anchor."
-            ],
-            "bonus": "Ask whether there is annual bonus, performance bonus, or sign-on bonus.",
-            "equity": "Ask whether equity, RSU, options, or profit-sharing exists.",
-            "benefits": [
-              "Health / insurance coverage",
-              "Paid leave and holidays",
-              "Learning budget or certification support",
-              "Remote/hybrid setup, commute, or relocation support",
-              "Review cycle and promotion timeline"
-            ],
-            "nonCashLevers": [
-              "Title / level calibration",
-              "Start date flexibility",
-              "Remote days",
-              "Equipment budget",
-              "First review at 3 or 6 months",
-              "Conference / learning budget"
-            ]
-          },
-          "negotiationScript": {
-            "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Product Engineer II package, including base, bonus, equity, and review cycle?",
-            "valueAnchor": "Based on the scope of Product Engineer II and my fit around JavaScript, React, CSS, API, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
-            "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
-            "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
-            "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
-          },
-          "redLines": [
-            "Do not disclose current compensation unless legally appropriate and strategically useful.",
-            "Do not accept verbal-only compensation details; ask for written package components.",
-            "Do not negotiate before confirming level, scope, work mode, and review cycle.",
-            "Do not trade base salary away without valuing the replacement benefit."
-          ],
-          "nextActions": [
-            "Collect market compensation evidence before naming a number.",
-            "Ask recruiter for approved range and level.",
-            "Map the job scope to proof points in the tailored CV.",
-            "Prepare one counter package with base, bonus/equity, and non-cash levers."
-          ],
-          "targetFrame": "Do not name a number first. Ask for the approved range, level, and total compensation structure before anchoring."
-        },
+        "compensation": null,
         "stories": [
           {
             "id": "story-1",
@@ -4192,8 +4340,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 93,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-04T00:32:39.758Z",
-      "completedAt": "2026-06-04T00:32:39.760Z",
+      "startedAt": "2026-06-05T00:08:49.434Z",
+      "completedAt": "2026-06-05T00:08:49.436Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -4338,8 +4486,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 93,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-04T00:32:39.759Z",
-      "completedAt": "2026-06-04T00:32:39.760Z",
+      "startedAt": "2026-06-05T00:08:49.434Z",
+      "completedAt": "2026-06-05T00:08:49.436Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -4481,8 +4629,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 93,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-04T00:32:39.759Z",
-      "completedAt": "2026-06-04T00:32:39.760Z",
+      "startedAt": "2026-06-05T00:08:49.434Z",
+      "completedAt": "2026-06-05T00:08:49.436Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -4626,8 +4774,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 93,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-04T00:32:39.759Z",
-      "completedAt": "2026-06-04T00:32:39.761Z",
+      "startedAt": "2026-06-05T00:08:49.438Z",
+      "completedAt": "2026-06-05T00:08:49.439Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -4771,8 +4919,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 93,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-04T00:32:39.762Z",
-      "completedAt": "2026-06-04T00:32:39.764Z",
+      "startedAt": "2026-06-05T00:08:49.438Z",
+      "completedAt": "2026-06-05T00:08:49.439Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -4914,8 +5062,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 93,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-04T00:32:39.762Z",
-      "completedAt": "2026-06-04T00:32:39.764Z",
+      "startedAt": "2026-06-05T00:08:49.438Z",
+      "completedAt": "2026-06-05T00:08:49.440Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -5059,8 +5207,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 92,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-04T00:32:39.762Z",
-      "completedAt": "2026-06-04T00:32:39.763Z",
+      "startedAt": "2026-06-05T00:08:49.438Z",
+      "completedAt": "2026-06-05T00:08:49.440Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -5207,8 +5355,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 92,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-04T00:32:39.762Z",
-      "completedAt": "2026-06-04T00:32:39.764Z",
+      "startedAt": "2026-06-05T00:08:49.445Z",
+      "completedAt": "2026-06-05T00:08:49.446Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -5355,8 +5503,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 92,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-04T00:32:39.769Z",
-      "completedAt": "2026-06-04T00:32:39.771Z",
+      "startedAt": "2026-06-05T00:08:49.445Z",
+      "completedAt": "2026-06-05T00:08:49.446Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -5503,8 +5651,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 92,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-04T00:32:39.769Z",
-      "completedAt": "2026-06-04T00:32:39.771Z",
+      "startedAt": "2026-06-05T00:08:49.445Z",
+      "completedAt": "2026-06-05T00:08:49.446Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -5649,8 +5797,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 92,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-04T00:32:39.769Z",
-      "completedAt": "2026-06-04T00:32:39.772Z",
+      "startedAt": "2026-06-05T00:08:49.445Z",
+      "completedAt": "2026-06-05T00:08:49.446Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -5795,8 +5943,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 92,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-04T00:32:39.770Z",
-      "completedAt": "2026-06-04T00:32:39.772Z",
+      "startedAt": "2026-06-05T00:08:49.448Z",
+      "completedAt": "2026-06-05T00:08:49.449Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -5941,8 +6089,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 92,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-04T00:32:39.773Z",
-      "completedAt": "2026-06-04T00:32:39.775Z",
+      "startedAt": "2026-06-05T00:08:49.448Z",
+      "completedAt": "2026-06-05T00:08:49.449Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -6087,8 +6235,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 92,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-04T00:32:39.773Z",
-      "completedAt": "2026-06-04T00:32:39.774Z",
+      "startedAt": "2026-06-05T00:08:49.448Z",
+      "completedAt": "2026-06-05T00:08:49.449Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -6233,8 +6381,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 92,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-04T00:32:39.773Z",
-      "completedAt": "2026-06-04T00:32:39.775Z",
+      "startedAt": "2026-06-05T00:08:49.448Z",
+      "completedAt": "2026-06-05T00:08:49.450Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -6446,8 +6594,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 92,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-04T00:32:39.773Z",
-      "completedAt": "2026-06-04T00:32:39.775Z",
+      "startedAt": "2026-06-05T00:08:49.451Z",
+      "completedAt": "2026-06-05T00:08:49.452Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -6654,8 +6802,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 92,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-04T00:32:39.776Z",
-      "completedAt": "2026-06-04T00:32:39.778Z",
+      "startedAt": "2026-06-05T00:08:49.451Z",
+      "completedAt": "2026-06-05T00:08:49.452Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -6797,8 +6945,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 92,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-04T00:32:39.776Z",
-      "completedAt": "2026-06-04T00:32:39.778Z",
+      "startedAt": "2026-06-05T00:08:49.451Z",
+      "completedAt": "2026-06-05T00:08:49.452Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -6940,8 +7088,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 92,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-04T00:32:39.776Z",
-      "completedAt": "2026-06-04T00:32:39.777Z",
+      "startedAt": "2026-06-05T00:08:49.451Z",
+      "completedAt": "2026-06-05T00:08:49.452Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -7148,8 +7296,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 92,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-04T00:32:39.776Z",
-      "completedAt": "2026-06-04T00:32:39.778Z",
+      "startedAt": "2026-06-05T00:08:49.453Z",
+      "completedAt": "2026-06-05T00:08:49.455Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -7293,8 +7441,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 92,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-04T00:32:39.779Z",
-      "completedAt": "2026-06-04T00:32:39.781Z",
+      "startedAt": "2026-06-05T00:08:49.453Z",
+      "completedAt": "2026-06-05T00:08:49.455Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -7438,8 +7586,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 92,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-04T00:32:39.779Z",
-      "completedAt": "2026-06-04T00:32:39.781Z",
+      "startedAt": "2026-06-05T00:08:49.453Z",
+      "completedAt": "2026-06-05T00:08:49.455Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -7584,8 +7732,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 92,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-04T00:32:39.779Z",
-      "completedAt": "2026-06-04T00:32:39.780Z",
+      "startedAt": "2026-06-05T00:08:49.453Z",
+      "completedAt": "2026-06-05T00:08:49.455Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -7728,8 +7876,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 92,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-04T00:32:39.779Z",
-      "completedAt": "2026-06-04T00:32:39.781Z",
+      "startedAt": "2026-06-05T00:08:49.456Z",
+      "completedAt": "2026-06-05T00:08:49.457Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -7875,8 +8023,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 92,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-04T00:32:39.782Z",
-      "completedAt": "2026-06-04T00:32:39.783Z",
+      "startedAt": "2026-06-05T00:08:49.456Z",
+      "completedAt": "2026-06-05T00:08:49.458Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -8019,8 +8167,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 92,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-04T00:32:39.782Z",
-      "completedAt": "2026-06-04T00:32:39.784Z",
+      "startedAt": "2026-06-05T00:08:49.456Z",
+      "completedAt": "2026-06-05T00:08:49.458Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -8166,8 +8314,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 92,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-04T00:32:39.782Z",
-      "completedAt": "2026-06-04T00:32:39.784Z",
+      "startedAt": "2026-06-05T00:08:49.456Z",
+      "completedAt": "2026-06-05T00:08:49.458Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -8311,8 +8459,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 92,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-04T00:32:39.782Z",
-      "completedAt": "2026-06-04T00:32:39.784Z",
+      "startedAt": "2026-06-05T00:08:49.459Z",
+      "completedAt": "2026-06-05T00:08:49.461Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -8460,8 +8608,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 92,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-04T00:32:39.785Z",
-      "completedAt": "2026-06-04T00:32:39.787Z",
+      "startedAt": "2026-06-05T00:08:49.459Z",
+      "completedAt": "2026-06-05T00:08:49.460Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -8581,154 +8729,6 @@ window.CV_CAREER_OPS_PARALLEL = {
         "applyAgent": {
           "mode": "human-in-the-loop",
           "url": "https://jobs.ashbyhq.com/elevenlabs/3b57cc5c-f019-4a0b-a5ff-e1046e4f1fa1",
-          "steps": [
-            "Open the application URL in a controlled browser session.",
-            "Extract visible form fields and required uploads.",
-            "Map CV profile fields to the form without submitting.",
-            "Prepare tailored PDF and outreach text.",
-            "Stop before final submit and ask the user to review."
-          ],
-          "guardrails": [
-            "Never submit without explicit user confirmation.",
-            "Never fabricate work authorization, salary history, degree, or experience.",
-            "Never store API keys or credentials in job metadata.",
-            "Record only application status and user-approved notes."
-          ]
-        }
-      }
-    },
-    {
-      "jobKey": "url:https://jobs.ashbyhq.com/posthog/20ab9628-20ff-4ae3-bd6a-46ae7e9dc6b8",
-      "company": "PostHog Ashby",
-      "title": "Product Engineer",
-      "score": 92,
-      "grade": "A",
-      "priority": "P0",
-      "startedAt": "2026-06-04T00:32:39.785Z",
-      "completedAt": "2026-06-04T00:32:39.786Z",
-      "workers": {
-        "evaluation": {
-          "recommendation": "值得投遞",
-          "keywords": [
-            "TypeScript",
-            "React",
-            "Analytics",
-            "API",
-            "remote",
-            "design system",
-            "engineer",
-            "product",
-            "data"
-          ],
-          "nextActions": [
-            "開啟職缺確認仍可投遞",
-            "產生客製 ATS PDF",
-            "用同職類高分職缺校準履歷關鍵字"
-          ]
-        },
-        "research": {
-          "signals": [],
-          "evidenceCount": 0,
-          "questions": []
-        },
-        "application": {
-          "checklist": [
-            "Confirm posting is active.",
-            "Generate tailored ATS PDF.",
-            "Prepare outreach and follow-up.",
-            "Log status and next follow-up."
-          ]
-        },
-        "compensation": null,
-        "stories": [
-          {
-            "id": "story-1",
-            "theme": "frontend product execution",
-            "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
-            "applicableQuestions": [
-              "Tell me about a project you are proud of.",
-              "Tell me about a time you handled ambiguity.",
-              "How have you applied frontend product execution?"
-            ],
-            "star": {
-              "situation": "You were tasked with a frontend product challenge. Proof point: \"Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.\" — set the scene: what product, what team size, and what was broken or missing?",
-              "task": "What was the specific outcome you were accountable for? Include the success metric (e.g. performance score, user adoption rate, release date).",
-              "action": "Walk through the key technical decisions: component architecture, state management tradeoffs, accessibility choices, or API contract design.",
-              "result": "Quantify the impact: load time delta, user adoption %, code reduction %, or stakeholder feedback. If no number, describe the quality or velocity improvement.",
-              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
-            },
-            "keywords": [
-              "frontend product execution",
-              "JavaScript",
-              "TypeScript",
-              "React",
-              "Next.js",
-              "CSS",
-              "Tailwind",
-              "Accessibility"
-            ],
-            "relevance": 2
-          },
-          {
-            "id": "story-2",
-            "theme": "systems and API collaboration",
-            "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
-            "applicableQuestions": [
-              "Tell me about a project you are proud of.",
-              "Tell me about a time you handled ambiguity.",
-              "How have you applied systems and API collaboration?"
-            ],
-            "star": {
-              "situation": "You collaborated across system boundaries. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — name the systems, teams, and integration surface area.",
-              "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
-              "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
-              "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
-              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
-            },
-            "keywords": [
-              "systems and API collaboration",
-              "JavaScript",
-              "TypeScript",
-              "React",
-              "Next.js",
-              "CSS",
-              "Tailwind",
-              "Accessibility"
-            ],
-            "relevance": 2
-          },
-          {
-            "id": "story-3",
-            "theme": "accessibility and quality",
-            "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
-            "applicableQuestions": [
-              "Tell me about a project you are proud of.",
-              "Tell me about a time you handled ambiguity.",
-              "How have you applied accessibility and quality?"
-            ],
-            "star": {
-              "situation": "You led or contributed to an accessibility or quality initiative. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — what was the starting state and who was affected?",
-              "task": "What standard or target were you working toward (WCAG level, test coverage %, zero-defect milestone)?",
-              "action": "Describe the audit process, tooling (axe, Lighthouse, screen reader testing), and how you prioritized fixes across components.",
-              "result": "State the outcome: WCAG compliance level achieved, user complaints reduced, or CI gate added to prevent regressions.",
-              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
-            },
-            "keywords": [
-              "accessibility and quality",
-              "JavaScript",
-              "TypeScript",
-              "React",
-              "Next.js",
-              "CSS",
-              "Tailwind",
-              "Accessibility"
-            ],
-            "relevance": 2
-          }
-        ],
-        "applyAgent": {
-          "mode": "human-in-the-loop",
-          "url": "https://jobs.ashbyhq.com/posthog/20ab9628-20ff-4ae3-bd6a-46ae7e9dc6b8",
           "steps": [
             "Open the application URL in a controlled browser session.",
             "Extract visible form fields and required uploads.",
