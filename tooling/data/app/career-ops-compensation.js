@@ -1,6 +1,6 @@
 window.CV_CAREER_OPS_COMPENSATION = {
   "source": "career-ops-compensation",
-  "generatedAt": "2026-06-05T00:08:41.901Z",
+  "generatedAt": "2026-06-06T00:10:52.595Z",
   "plans": [
     {
       "jobKey": "url:https://www.mycareersfuture.gov.sg/job/07eafbe6994e2090a0c2a6a6a6111e62",
@@ -42,66 +42,6 @@ window.CV_CAREER_OPS_COMPENSATION = {
       "negotiationScript": {
         "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Expert Frontend Engineer (React.JS & React Native) package, including base, bonus, equity, and review cycle?",
         "valueAnchor": "Based on the scope of Expert Frontend Engineer (React.JS & React Native) and my fit around JavaScript, TypeScript, React, Next.js, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
-        "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
-        "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
-        "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
-      },
-      "redLines": [
-        "Do not disclose current compensation unless legally appropriate and strategically useful.",
-        "Do not accept verbal-only compensation details; ask for written package components.",
-        "Do not negotiate before confirming level, scope, work mode, and review cycle.",
-        "Do not trade base salary away without valuing the replacement benefit."
-      ],
-      "nextActions": [
-        "Collect market compensation evidence before naming a number.",
-        "Ask recruiter for approved range and level.",
-        "Map the job scope to proof points in the tailored CV.",
-        "Prepare one counter package with base, bonus/equity, and non-cash levers."
-      ],
-      "targetFrame": "Do not name a number first. Ask for the approved range, level, and total compensation structure before anchoring."
-    },
-    {
-      "jobKey": "url:https://www.mycareersfuture.gov.sg/job/5b1506b45072ca274d8b7690ff8aee48",
-      "company": "GIC PRIVATE LIMITED",
-      "title": "AVP, Frontend Engineer, Technology Group(17140)",
-      "market": "sg",
-      "inferredLevel": "mid",
-      "candidateLevel": "mid",
-      "leverage": "high",
-      "evidence": {
-        "salaryMentions": [],
-        "benefitSignals": [
-          "equity",
-          "work-mode flexibility",
-          "learning budget"
-        ]
-      },
-      "marketBenchmark": null,
-      "structure": {
-        "baseSalary": [
-          "Need verified market data or recruiter range before setting a numeric anchor."
-        ],
-        "bonus": "Ask whether there is annual bonus, performance bonus, or sign-on bonus.",
-        "equity": "Clarify grant size, vesting schedule, refreshers, and strike/RSU terms.",
-        "benefits": [
-          "Health / insurance coverage",
-          "Paid leave and holidays",
-          "Learning budget or certification support",
-          "Remote/hybrid setup, commute, or relocation support",
-          "Review cycle and promotion timeline"
-        ],
-        "nonCashLevers": [
-          "Title / level calibration",
-          "Start date flexibility",
-          "Remote days",
-          "Equipment budget",
-          "First review at 3 or 6 months",
-          "Conference / learning budget"
-        ]
-      },
-      "negotiationScript": {
-        "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the AVP, Frontend Engineer, Technology Group(17140) package, including base, bonus, equity, and review cycle?",
-        "valueAnchor": "Based on the scope of AVP, Frontend Engineer, Technology Group(17140) and my fit around TypeScript, React, Accessibility, engineer, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
         "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
         "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
         "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
@@ -312,6 +252,7 @@ window.CV_CAREER_OPS_COMPENSATION = {
       "evidence": {
         "salaryMentions": [],
         "benefitSignals": [
+          "work-mode flexibility",
           "signing / relocation"
         ]
       },
@@ -370,6 +311,7 @@ window.CV_CAREER_OPS_COMPENSATION = {
       "evidence": {
         "salaryMentions": [],
         "benefitSignals": [
+          "work-mode flexibility",
           "signing / relocation"
         ]
       },
@@ -418,124 +360,6 @@ window.CV_CAREER_OPS_COMPENSATION = {
       "targetFrame": "Do not name a number first. Ask for the approved range, level, and total compensation structure before anchoring."
     },
     {
-      "jobKey": "url:https://www.themuse.com/jobs/usaa/software-engineer-midlevel-java-full-stack-461216",
-      "company": "USAA",
-      "title": "Software Engineer Mid-level (Java Full Stack)",
-      "market": "us",
-      "inferredLevel": "junior",
-      "candidateLevel": "mid",
-      "leverage": "high",
-      "evidence": {
-        "salaryMentions": [],
-        "benefitSignals": [
-          "work-mode flexibility",
-          "signing / relocation"
-        ]
-      },
-      "marketBenchmark": null,
-      "structure": {
-        "baseSalary": [
-          "Need verified market data or recruiter range before setting a numeric anchor."
-        ],
-        "bonus": "Ask whether there is annual bonus, performance bonus, or sign-on bonus.",
-        "equity": "Ask whether equity, RSU, options, or profit-sharing exists.",
-        "benefits": [
-          "Health / insurance coverage",
-          "Paid leave and holidays",
-          "Learning budget or certification support",
-          "Remote/hybrid setup, commute, or relocation support",
-          "Review cycle and promotion timeline"
-        ],
-        "nonCashLevers": [
-          "Title / level calibration",
-          "Start date flexibility",
-          "Remote days",
-          "Equipment budget",
-          "First review at 3 or 6 months",
-          "Conference / learning budget"
-        ]
-      },
-      "negotiationScript": {
-        "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Software Engineer Mid-level (Java Full Stack) package, including base, bonus, equity, and review cycle?",
-        "valueAnchor": "Based on the scope of Software Engineer Mid-level (Java Full Stack) and my fit around JavaScript, CSS, API, remote, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
-        "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
-        "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
-        "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
-      },
-      "redLines": [
-        "Do not disclose current compensation unless legally appropriate and strategically useful.",
-        "Do not accept verbal-only compensation details; ask for written package components.",
-        "Do not negotiate before confirming level, scope, work mode, and review cycle.",
-        "Do not trade base salary away without valuing the replacement benefit."
-      ],
-      "nextActions": [
-        "Collect market compensation evidence before naming a number.",
-        "Ask recruiter for approved range and level.",
-        "Map the job scope to proof points in the tailored CV.",
-        "Prepare one counter package with base, bonus/equity, and non-cash levers."
-      ],
-      "targetFrame": "Do not name a number first. Ask for the approved range, level, and total compensation structure before anchoring."
-    },
-    {
-      "jobKey": "url:https://www.themuse.com/jobs/usaa/software-engineer-midlevel-java-full-stack-91f31e",
-      "company": "USAA",
-      "title": "Software Engineer Mid-level (Java Full Stack)",
-      "market": "us",
-      "inferredLevel": "junior",
-      "candidateLevel": "mid",
-      "leverage": "high",
-      "evidence": {
-        "salaryMentions": [],
-        "benefitSignals": [
-          "work-mode flexibility",
-          "signing / relocation"
-        ]
-      },
-      "marketBenchmark": null,
-      "structure": {
-        "baseSalary": [
-          "Need verified market data or recruiter range before setting a numeric anchor."
-        ],
-        "bonus": "Ask whether there is annual bonus, performance bonus, or sign-on bonus.",
-        "equity": "Ask whether equity, RSU, options, or profit-sharing exists.",
-        "benefits": [
-          "Health / insurance coverage",
-          "Paid leave and holidays",
-          "Learning budget or certification support",
-          "Remote/hybrid setup, commute, or relocation support",
-          "Review cycle and promotion timeline"
-        ],
-        "nonCashLevers": [
-          "Title / level calibration",
-          "Start date flexibility",
-          "Remote days",
-          "Equipment budget",
-          "First review at 3 or 6 months",
-          "Conference / learning budget"
-        ]
-      },
-      "negotiationScript": {
-        "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Software Engineer Mid-level (Java Full Stack) package, including base, bonus, equity, and review cycle?",
-        "valueAnchor": "Based on the scope of Software Engineer Mid-level (Java Full Stack) and my fit around JavaScript, CSS, API, remote, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
-        "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
-        "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
-        "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
-      },
-      "redLines": [
-        "Do not disclose current compensation unless legally appropriate and strategically useful.",
-        "Do not accept verbal-only compensation details; ask for written package components.",
-        "Do not negotiate before confirming level, scope, work mode, and review cycle.",
-        "Do not trade base salary away without valuing the replacement benefit."
-      ],
-      "nextActions": [
-        "Collect market compensation evidence before naming a number.",
-        "Ask recruiter for approved range and level.",
-        "Map the job scope to proof points in the tailored CV.",
-        "Prepare one counter package with base, bonus/equity, and non-cash levers."
-      ],
-      "targetFrame": "Do not name a number first. Ask for the approved range, level, and total compensation structure before anchoring."
-    },
-    {
       "jobKey": "url:https://www.tokyodev.com/companies/moneyforward/jobs/lead-backend-engineer-digital-bank",
       "company": "Money Forward",
       "title": "Lead Backend Engineer, Digital Bank",
@@ -547,6 +371,7 @@ window.CV_CAREER_OPS_COMPENSATION = {
         "salaryMentions": [],
         "benefitSignals": [
           "equity",
+          "work-mode flexibility",
           "signing / relocation",
           "learning budget"
         ]
@@ -614,7 +439,10 @@ window.CV_CAREER_OPS_COMPENSATION = {
       "leverage": "high",
       "evidence": {
         "salaryMentions": [],
-        "benefitSignals": []
+        "benefitSignals": [
+          "work-mode flexibility",
+          "signing / relocation"
+        ]
       },
       "marketBenchmark": null,
       "structure": {
@@ -642,62 +470,6 @@ window.CV_CAREER_OPS_COMPENSATION = {
       "negotiationScript": {
         "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Senior Frontend Engineer, Regulatory Reporting package, including base, bonus, equity, and review cycle?",
         "valueAnchor": "Based on the scope of Senior Frontend Engineer, Regulatory Reporting and my fit around TypeScript, React, API, design system, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
-        "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
-        "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
-        "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
-      },
-      "redLines": [
-        "Do not disclose current compensation unless legally appropriate and strategically useful.",
-        "Do not accept verbal-only compensation details; ask for written package components.",
-        "Do not negotiate before confirming level, scope, work mode, and review cycle.",
-        "Do not trade base salary away without valuing the replacement benefit."
-      ],
-      "nextActions": [
-        "Collect market compensation evidence before naming a number.",
-        "Ask recruiter for approved range and level.",
-        "Map the job scope to proof points in the tailored CV.",
-        "Prepare one counter package with base, bonus/equity, and non-cash levers."
-      ],
-      "targetFrame": "Do not name a number first. Ask for the approved range, level, and total compensation structure before anchoring."
-    },
-    {
-      "jobKey": "url:https://www.mycareersfuture.gov.sg/job/7fdbc2ddd10823e30828ded216db87b6",
-      "company": "ALPHA X TECHNOLOGY PTE. LTD.",
-      "title": "Frontend Engineer",
-      "market": "cn",
-      "inferredLevel": "senior-plus",
-      "candidateLevel": "mid",
-      "leverage": "high",
-      "evidence": {
-        "salaryMentions": [],
-        "benefitSignals": []
-      },
-      "marketBenchmark": null,
-      "structure": {
-        "baseSalary": [
-          "Need verified market data or recruiter range before setting a numeric anchor."
-        ],
-        "bonus": "Ask whether there is annual bonus, performance bonus, or sign-on bonus.",
-        "equity": "Ask whether equity, RSU, options, or profit-sharing exists.",
-        "benefits": [
-          "Health / insurance coverage",
-          "Paid leave and holidays",
-          "Learning budget or certification support",
-          "Remote/hybrid setup, commute, or relocation support",
-          "Review cycle and promotion timeline"
-        ],
-        "nonCashLevers": [
-          "Title / level calibration",
-          "Start date flexibility",
-          "Remote days",
-          "Equipment budget",
-          "First review at 3 or 6 months",
-          "Conference / learning budget"
-        ]
-      },
-      "negotiationScript": {
-        "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Frontend Engineer package, including base, bonus, equity, and review cycle?",
-        "valueAnchor": "Based on the scope of Frontend Engineer and my fit around JavaScript, TypeScript, React, API, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
         "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
         "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
         "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
@@ -1088,7 +860,9 @@ window.CV_CAREER_OPS_COMPENSATION = {
       "evidence": {
         "salaryMentions": [],
         "benefitSignals": [
-          "equity"
+          "equity",
+          "work-mode flexibility",
+          "signing / relocation"
         ]
       },
       "marketBenchmark": {
@@ -1185,6 +959,238 @@ window.CV_CAREER_OPS_COMPENSATION = {
       "negotiationScript": {
         "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Director, Marketplace Central Operations Mobility EMEA package, including base, bonus, equity, and review cycle?",
         "valueAnchor": "Based on the scope of Director, Marketplace Central Operations Mobility EMEA and my fit around Analytics, API, product, data, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
+        "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
+        "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
+        "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
+      },
+      "redLines": [
+        "Do not disclose current compensation unless legally appropriate and strategically useful.",
+        "Do not accept verbal-only compensation details; ask for written package components.",
+        "Do not negotiate before confirming level, scope, work mode, and review cycle.",
+        "Do not trade base salary away without valuing the replacement benefit."
+      ],
+      "nextActions": [
+        "Collect market compensation evidence before naming a number.",
+        "Ask recruiter for approved range and level.",
+        "Map the job scope to proof points in the tailored CV.",
+        "Prepare one counter package with base, bonus/equity, and non-cash levers."
+      ],
+      "targetFrame": "Do not name a number first. Ask for the approved range, level, and total compensation structure before anchoring."
+    },
+    {
+      "jobKey": "url:https://www.themuse.com/jobs/pilotly/product-engineer-ii-8b1aeb",
+      "company": "Pilotly",
+      "title": "Product Engineer II",
+      "market": "us",
+      "inferredLevel": "senior",
+      "candidateLevel": "mid",
+      "leverage": "high",
+      "evidence": {
+        "salaryMentions": [],
+        "benefitSignals": [
+          "learning budget"
+        ]
+      },
+      "marketBenchmark": null,
+      "structure": {
+        "baseSalary": [
+          "Need verified market data or recruiter range before setting a numeric anchor."
+        ],
+        "bonus": "Ask whether there is annual bonus, performance bonus, or sign-on bonus.",
+        "equity": "Ask whether equity, RSU, options, or profit-sharing exists.",
+        "benefits": [
+          "Health / insurance coverage",
+          "Paid leave and holidays",
+          "Learning budget or certification support",
+          "Remote/hybrid setup, commute, or relocation support",
+          "Review cycle and promotion timeline"
+        ],
+        "nonCashLevers": [
+          "Title / level calibration",
+          "Start date flexibility",
+          "Remote days",
+          "Equipment budget",
+          "First review at 3 or 6 months",
+          "Conference / learning budget"
+        ]
+      },
+      "negotiationScript": {
+        "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Product Engineer II package, including base, bonus, equity, and review cycle?",
+        "valueAnchor": "Based on the scope of Product Engineer II and my fit around JavaScript, React, CSS, API, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
+        "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
+        "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
+        "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
+      },
+      "redLines": [
+        "Do not disclose current compensation unless legally appropriate and strategically useful.",
+        "Do not accept verbal-only compensation details; ask for written package components.",
+        "Do not negotiate before confirming level, scope, work mode, and review cycle.",
+        "Do not trade base salary away without valuing the replacement benefit."
+      ],
+      "nextActions": [
+        "Collect market compensation evidence before naming a number.",
+        "Ask recruiter for approved range and level.",
+        "Map the job scope to proof points in the tailored CV.",
+        "Prepare one counter package with base, bonus/equity, and non-cash levers."
+      ],
+      "targetFrame": "Do not name a number first. Ask for the approved range, level, and total compensation structure before anchoring."
+    },
+    {
+      "jobKey": "url:https://www.themuse.com/jobs/capitalone/distinguished-engineer-remote-eligible-9d0012",
+      "company": "Capital One",
+      "title": "Distinguished Engineer (Remote - Eligible)",
+      "market": "us",
+      "inferredLevel": "senior-plus",
+      "candidateLevel": "mid",
+      "leverage": "high",
+      "evidence": {
+        "salaryMentions": [],
+        "benefitSignals": [
+          "work-mode flexibility",
+          "learning budget"
+        ]
+      },
+      "marketBenchmark": null,
+      "structure": {
+        "baseSalary": [
+          "Need verified market data or recruiter range before setting a numeric anchor."
+        ],
+        "bonus": "Ask whether there is annual bonus, performance bonus, or sign-on bonus.",
+        "equity": "Ask whether equity, RSU, options, or profit-sharing exists.",
+        "benefits": [
+          "Health / insurance coverage",
+          "Paid leave and holidays",
+          "Learning budget or certification support",
+          "Remote/hybrid setup, commute, or relocation support",
+          "Review cycle and promotion timeline"
+        ],
+        "nonCashLevers": [
+          "Title / level calibration",
+          "Start date flexibility",
+          "Remote days",
+          "Equipment budget",
+          "First review at 3 or 6 months",
+          "Conference / learning budget"
+        ]
+      },
+      "negotiationScript": {
+        "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Distinguished Engineer (Remote - Eligible) package, including base, bonus, equity, and review cycle?",
+        "valueAnchor": "Based on the scope of Distinguished Engineer (Remote - Eligible) and my fit around JavaScript, TypeScript, API, remote, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
+        "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
+        "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
+        "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
+      },
+      "redLines": [
+        "Do not disclose current compensation unless legally appropriate and strategically useful.",
+        "Do not accept verbal-only compensation details; ask for written package components.",
+        "Do not negotiate before confirming level, scope, work mode, and review cycle.",
+        "Do not trade base salary away without valuing the replacement benefit."
+      ],
+      "nextActions": [
+        "Collect market compensation evidence before naming a number.",
+        "Ask recruiter for approved range and level.",
+        "Map the job scope to proof points in the tailored CV.",
+        "Prepare one counter package with base, bonus/equity, and non-cash levers."
+      ],
+      "targetFrame": "Do not name a number first. Ask for the approved range, level, and total compensation structure before anchoring."
+    },
+    {
+      "jobKey": "url:https://stripe.com/jobs/search?gh_jid=7550154",
+      "company": "Stripe Greenhouse",
+      "title": "Android Engineer, Terminal Developer Productivity",
+      "market": "us",
+      "inferredLevel": "mid",
+      "candidateLevel": "mid",
+      "leverage": "high",
+      "evidence": {
+        "salaryMentions": [],
+        "benefitSignals": [
+          "bonus",
+          "signing / relocation"
+        ]
+      },
+      "marketBenchmark": null,
+      "structure": {
+        "baseSalary": [
+          "Need verified market data or recruiter range before setting a numeric anchor."
+        ],
+        "bonus": "Ask whether bonus is guaranteed, target, or discretionary.",
+        "equity": "Ask whether equity, RSU, options, or profit-sharing exists.",
+        "benefits": [
+          "Health / insurance coverage",
+          "Paid leave and holidays",
+          "Learning budget or certification support",
+          "Remote/hybrid setup, commute, or relocation support",
+          "Review cycle and promotion timeline"
+        ],
+        "nonCashLevers": [
+          "Title / level calibration",
+          "Start date flexibility",
+          "Remote days",
+          "Equipment budget",
+          "First review at 3 or 6 months",
+          "Conference / learning budget"
+        ]
+      },
+      "negotiationScript": {
+        "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Android Engineer, Terminal Developer Productivity package, including base, bonus, equity, and review cycle?",
+        "valueAnchor": "Based on the scope of Android Engineer, Terminal Developer Productivity and my fit around API, remote, engineer, product, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
+        "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
+        "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
+        "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
+      },
+      "redLines": [
+        "Do not disclose current compensation unless legally appropriate and strategically useful.",
+        "Do not accept verbal-only compensation details; ask for written package components.",
+        "Do not negotiate before confirming level, scope, work mode, and review cycle.",
+        "Do not trade base salary away without valuing the replacement benefit."
+      ],
+      "nextActions": [
+        "Collect market compensation evidence before naming a number.",
+        "Ask recruiter for approved range and level.",
+        "Map the job scope to proof points in the tailored CV.",
+        "Prepare one counter package with base, bonus/equity, and non-cash levers."
+      ],
+      "targetFrame": "Do not name a number first. Ask for the approved range, level, and total compensation structure before anchoring."
+    },
+    {
+      "jobKey": "url:https://boards.greenhouse.io/figma/jobs/5551697004?gh_jid=5551697004",
+      "company": "Figma Greenhouse",
+      "title": "Software Engineer, AI Product (London, United Kingdom)",
+      "market": "us",
+      "inferredLevel": "mid",
+      "candidateLevel": "mid",
+      "leverage": "high",
+      "evidence": {
+        "salaryMentions": [],
+        "benefitSignals": []
+      },
+      "marketBenchmark": null,
+      "structure": {
+        "baseSalary": [
+          "Need verified market data or recruiter range before setting a numeric anchor."
+        ],
+        "bonus": "Ask whether there is annual bonus, performance bonus, or sign-on bonus.",
+        "equity": "Ask whether equity, RSU, options, or profit-sharing exists.",
+        "benefits": [
+          "Health / insurance coverage",
+          "Paid leave and holidays",
+          "Learning budget or certification support",
+          "Remote/hybrid setup, commute, or relocation support",
+          "Review cycle and promotion timeline"
+        ],
+        "nonCashLevers": [
+          "Title / level calibration",
+          "Start date flexibility",
+          "Remote days",
+          "Equipment budget",
+          "First review at 3 or 6 months",
+          "Conference / learning budget"
+        ]
+      },
+      "negotiationScript": {
+        "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Software Engineer, AI Product (London, United Kingdom) package, including base, bonus, equity, and review cycle?",
+        "valueAnchor": "Based on the scope of Software Engineer, AI Product (London, United Kingdom) and my fit around TypeScript, React, Figma, engineer, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
         "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
         "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
         "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."

@@ -1,6 +1,6 @@
 # Career Ops Application Kit
 
-Generated: 2026-06-05T00:08:30.637Z
+Generated: 2026-06-06T00:10:42.214Z
 Jobs: 12
 
 ## Pipeline
@@ -65,71 +65,6 @@ Alex Chen
 ### Interview Prep
 - Prepare a 60-second story for why VANGUARD SOFTWARE PTE. LTD. and why Expert Frontend Engineer (React.JS & React Native).
 - Prepare evidence for: JavaScript, TypeScript, React, Next.js, CSS, Accessibility.
-- Prepare one STAR story about execution under ambiguity.
-- Prepare one STAR story about collaboration and tradeoff decisions.
-- Prepare questions about team priorities, success metrics, and hiring timeline.
-
-### Negotiation Prep
-- Wait for a clear offer before anchoring compensation.
-- Ask for total compensation breakdown, work mode, title, level, review cycle, and start date.
-- Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.
-- Use competing priorities and role fit, not personal need, as the negotiation frame.
-
-## GIC PRIVATE LIMITED - AVP, Frontend Engineer, Technology Group(17140)
-
-- Priority: P0
-- Score: 95/A
-- Subject: AVP, Frontend Engineer, Technology Group(17140) application - GIC PRIVATE LIMITED
-
-- Block G: High Confidence
-- Rating: 4.8/5.0
-
-### ATS Keyword Injection
-- Archetype: Frontend Engineer
-- Coverage: 100%
-- JD Keywords: TypeScript, React, Accessibility, engineer, product, data, restful, graphql
-- 在 Professional Summary 中自然帶入：TypeScript、React、Accessibility、engineer、product
-- 使用職位語言：「Frontend Engineer」方向的動詞和術語
-- 【你已有但此 JD 未要求】可視情況選擇性提及：aws、docker、kubernetes、rest、llm
-- Missing (do NOT fabricate): aws, docker, kubernetes, rest, llm, rag, agents, growth
-
-### Apply Checklist
-- Open the source URL and confirm the role is still active.
-- Generate or refresh the tailored ATS PDF from this job.
-- Mirror these JD keywords honestly in your CV: TypeScript, React, Accessibility, engineer, product, data, restful, graphql
-- Do not overclaim missing areas: aws, docker, kubernetes, rest, llm, rag
-- Log status, recruiter/contact, and next follow-up date in the tracker.
-
-### Outreach Email
-```text
-Hi GIC PRIVATE LIMITED team,
-
-I am Alex Chen, and I am interested in the AVP, Frontend Engineer, Technology Group(17140) role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.
-
-The role stood out because it maps closely to my experience with TypeScript, React, Accessibility, engineer, product.
-
-I would appreciate the chance to share how my experience can support the team. Thank you for your time.
-
-Best,
-Alex Chen
-```
-
-### Follow-up
-Timing: 3-5 business days after applying or the last recruiter interaction.
-```text
-Hi GIC PRIVATE LIMITED team,
-
-I wanted to follow up on my application for the AVP, Frontend Engineer, Technology Group(17140) role. I remain interested and would be glad to provide any additional context about my background.
-
-Thank you again for your time.
-
-Best,
-Alex Chen
-```
-
-### Interview Prep
-- Prepare a 60-second story for why GIC PRIVATE LIMITED and why AVP, Frontend Engineer, Technology Group(17140).
-- Prepare evidence for: TypeScript, React, Accessibility, engineer, product, data.
 - Prepare one STAR story about execution under ambiguity.
 - Prepare one STAR story about collaboration and tradeoff decisions.
 - Prepare questions about team priorities, success metrics, and hiring timeline.
@@ -466,136 +401,6 @@ Alex Chen
 - Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.
 - Use competing priorities and role fit, not personal need, as the negotiation frame.
 
-## USAA - Software Engineer Mid-level (Java Full Stack)
-
-- Priority: P0
-- Score: 95/A
-- Subject: Software Engineer Mid-level (Java Full Stack) application - USAA
-
-- Block G: High Confidence
-- Rating: 4.8/5.0
-
-### ATS Keyword Injection
-- Archetype: Full Stack Engineer
-- Coverage: 100%
-- JD Keywords: JavaScript, CSS, API, remote, engineer, data
-- 在 Professional Summary 中自然帶入：JavaScript、CSS、API、remote、engineer
-- 使用職位語言：「Full Stack Engineer」方向的動詞和術語
-- 【你已有但此 JD 未要求】可視情況選擇性提及：python、java、go、swift、kotlin
-- Missing (do NOT fabricate): python, java, go, swift, kotlin, sql, aws, docker
-
-### Apply Checklist
-- Open the source URL and confirm the role is still active.
-- Generate or refresh the tailored ATS PDF from this job.
-- Mirror these JD keywords honestly in your CV: JavaScript, CSS, API, remote, engineer, data
-- Do not overclaim missing areas: python, java, go, swift, kotlin, sql
-- Log status, recruiter/contact, and next follow-up date in the tracker.
-
-### Outreach Email
-```text
-Hi USAA team,
-
-I am Alex Chen, and I am interested in the Software Engineer Mid-level (Java Full Stack) role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.
-
-The role stood out because it maps closely to my experience with JavaScript, CSS, API, remote, engineer.
-
-I would appreciate the chance to share how my experience can support the team. Thank you for your time.
-
-Best,
-Alex Chen
-```
-
-### Follow-up
-Timing: 3-5 business days after applying or the last recruiter interaction.
-```text
-Hi USAA team,
-
-I wanted to follow up on my application for the Software Engineer Mid-level (Java Full Stack) role. I remain interested and would be glad to provide any additional context about my background.
-
-Thank you again for your time.
-
-Best,
-Alex Chen
-```
-
-### Interview Prep
-- Prepare a 60-second story for why USAA and why Software Engineer Mid-level (Java Full Stack).
-- Prepare evidence for: JavaScript, CSS, API, remote, engineer, data.
-- Prepare one STAR story about execution under ambiguity.
-- Prepare one STAR story about collaboration and tradeoff decisions.
-- Prepare questions about team priorities, success metrics, and hiring timeline.
-
-### Negotiation Prep
-- Wait for a clear offer before anchoring compensation.
-- Ask for total compensation breakdown, work mode, title, level, review cycle, and start date.
-- Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.
-- Use competing priorities and role fit, not personal need, as the negotiation frame.
-
-## USAA - Software Engineer Mid-level (Java Full Stack)
-
-- Priority: P0
-- Score: 95/A
-- Subject: Software Engineer Mid-level (Java Full Stack) application - USAA
-
-- Block G: High Confidence
-- Rating: 4.8/5.0
-
-### ATS Keyword Injection
-- Archetype: Full Stack Engineer
-- Coverage: 100%
-- JD Keywords: JavaScript, CSS, API, remote, engineer, data
-- 在 Professional Summary 中自然帶入：JavaScript、CSS、API、remote、engineer
-- 使用職位語言：「Full Stack Engineer」方向的動詞和術語
-- 【你已有但此 JD 未要求】可視情況選擇性提及：python、java、go、swift、kotlin
-- Missing (do NOT fabricate): python, java, go, swift, kotlin, sql, aws, docker
-
-### Apply Checklist
-- Open the source URL and confirm the role is still active.
-- Generate or refresh the tailored ATS PDF from this job.
-- Mirror these JD keywords honestly in your CV: JavaScript, CSS, API, remote, engineer, data
-- Do not overclaim missing areas: python, java, go, swift, kotlin, sql
-- Log status, recruiter/contact, and next follow-up date in the tracker.
-
-### Outreach Email
-```text
-Hi USAA team,
-
-I am Alex Chen, and I am interested in the Software Engineer Mid-level (Java Full Stack) role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.
-
-The role stood out because it maps closely to my experience with JavaScript, CSS, API, remote, engineer.
-
-I would appreciate the chance to share how my experience can support the team. Thank you for your time.
-
-Best,
-Alex Chen
-```
-
-### Follow-up
-Timing: 3-5 business days after applying or the last recruiter interaction.
-```text
-Hi USAA team,
-
-I wanted to follow up on my application for the Software Engineer Mid-level (Java Full Stack) role. I remain interested and would be glad to provide any additional context about my background.
-
-Thank you again for your time.
-
-Best,
-Alex Chen
-```
-
-### Interview Prep
-- Prepare a 60-second story for why USAA and why Software Engineer Mid-level (Java Full Stack).
-- Prepare evidence for: JavaScript, CSS, API, remote, engineer, data.
-- Prepare one STAR story about execution under ambiguity.
-- Prepare one STAR story about collaboration and tradeoff decisions.
-- Prepare questions about team priorities, success metrics, and hiring timeline.
-
-### Negotiation Prep
-- Wait for a clear offer before anchoring compensation.
-- Ask for total compensation breakdown, work mode, title, level, review cycle, and start date.
-- Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.
-- Use competing priorities and role fit, not personal need, as the negotiation frame.
-
 ## Money Forward - Lead Backend Engineer, Digital Bank
 
 - Priority: P0
@@ -727,11 +532,11 @@ Alex Chen
 - Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.
 - Use competing priorities and role fit, not personal need, as the negotiation frame.
 
-## ALPHA X TECHNOLOGY PTE. LTD. - Frontend Engineer
+## GlossGenius - Staff Software Engineer, Frontend
 
 - Priority: P0
 - Score: 94/A
-- Subject: Frontend Engineer application - ALPHA X TECHNOLOGY PTE. LTD.
+- Subject: Staff Software Engineer, Frontend application - GlossGenius
 
 - Block G: High Confidence
 - Rating: 4.8/5.0
@@ -739,26 +544,26 @@ Alex Chen
 ### ATS Keyword Injection
 - Archetype: Frontend Engineer
 - Coverage: 100%
-- JD Keywords: JavaScript, TypeScript, React, API, Figma, engineer, data, graphql
-- 在 Professional Summary 中自然帶入：JavaScript、TypeScript、React、API、Figma
+- JD Keywords: JavaScript, TypeScript, React, CSS, Accessibility, API, Performance Optimization, Design Systems
+- 在 Professional Summary 中自然帶入：JavaScript、TypeScript、React、CSS、Accessibility
 - 使用職位語言：「Frontend Engineer」方向的動詞和術語
-- 【你已有但此 JD 未要求】可視情況選擇性提及：vue、rest
-- Missing (do NOT fabricate): vue, rest
+- 【你已有但此 JD 未要求】可視情況選擇性提及：go
+- Missing (do NOT fabricate): go
 
 ### Apply Checklist
 - Open the source URL and confirm the role is still active.
 - Generate or refresh the tailored ATS PDF from this job.
-- Mirror these JD keywords honestly in your CV: JavaScript, TypeScript, React, API, Figma, engineer, data, graphql
-- Do not overclaim missing areas: vue, rest
+- Mirror these JD keywords honestly in your CV: JavaScript, TypeScript, React, CSS, Accessibility, API, Performance Optimization, Design Systems
+- Do not overclaim missing areas: go
 - Log status, recruiter/contact, and next follow-up date in the tracker.
 
 ### Outreach Email
 ```text
-Hi ALPHA X TECHNOLOGY PTE. LTD. team,
+Hi GlossGenius team,
 
-I am Alex Chen, and I am interested in the Frontend Engineer role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.
+I am Alex Chen, and I am interested in the Staff Software Engineer, Frontend role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.
 
-The role stood out because it maps closely to my experience with JavaScript, TypeScript, React, API, Figma.
+The role stood out because it maps closely to my experience with JavaScript, TypeScript, React, CSS, Accessibility.
 
 I would appreciate the chance to share how my experience can support the team. Thank you for your time.
 
@@ -769,9 +574,9 @@ Alex Chen
 ### Follow-up
 Timing: 3-5 business days after applying or the last recruiter interaction.
 ```text
-Hi ALPHA X TECHNOLOGY PTE. LTD. team,
+Hi GlossGenius team,
 
-I wanted to follow up on my application for the Frontend Engineer role. I remain interested and would be glad to provide any additional context about my background.
+I wanted to follow up on my application for the Staff Software Engineer, Frontend role. I remain interested and would be glad to provide any additional context about my background.
 
 Thank you again for your time.
 
@@ -780,8 +585,203 @@ Alex Chen
 ```
 
 ### Interview Prep
-- Prepare a 60-second story for why ALPHA X TECHNOLOGY PTE. LTD. and why Frontend Engineer.
-- Prepare evidence for: JavaScript, TypeScript, React, API, Figma, engineer.
+- Prepare a 60-second story for why GlossGenius and why Staff Software Engineer, Frontend.
+- Prepare evidence for: JavaScript, TypeScript, React, CSS, Accessibility, API.
+- Prepare one STAR story about execution under ambiguity.
+- Prepare one STAR story about collaboration and tradeoff decisions.
+- Prepare questions about team priorities, success metrics, and hiring timeline.
+
+### Negotiation Prep
+- Wait for a clear offer before anchoring compensation.
+- Ask for total compensation breakdown, work mode, title, level, review cycle, and start date.
+- Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.
+- Use competing priorities and role fit, not personal need, as the negotiation frame.
+
+## GlossGenius - Staff Software Engineer, Frontend
+
+- Priority: P0
+- Score: 94/A
+- Subject: Staff Software Engineer, Frontend application - GlossGenius
+
+- Block G: High Confidence
+- Rating: 4.8/5.0
+
+### ATS Keyword Injection
+- Archetype: Frontend Engineer
+- Coverage: 100%
+- JD Keywords: JavaScript, TypeScript, React, CSS, Accessibility, API, Performance Optimization, Design Systems
+- 在 Professional Summary 中自然帶入：JavaScript、TypeScript、React、CSS、Accessibility
+- 使用職位語言：「Frontend Engineer」方向的動詞和術語
+- 【你已有但此 JD 未要求】可視情況選擇性提及：go
+- Missing (do NOT fabricate): go
+
+### Apply Checklist
+- Open the source URL and confirm the role is still active.
+- Generate or refresh the tailored ATS PDF from this job.
+- Mirror these JD keywords honestly in your CV: JavaScript, TypeScript, React, CSS, Accessibility, API, Performance Optimization, Design Systems
+- Do not overclaim missing areas: go
+- Log status, recruiter/contact, and next follow-up date in the tracker.
+
+### Outreach Email
+```text
+Hi GlossGenius team,
+
+I am Alex Chen, and I am interested in the Staff Software Engineer, Frontend role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.
+
+The role stood out because it maps closely to my experience with JavaScript, TypeScript, React, CSS, Accessibility.
+
+I would appreciate the chance to share how my experience can support the team. Thank you for your time.
+
+Best,
+Alex Chen
+```
+
+### Follow-up
+Timing: 3-5 business days after applying or the last recruiter interaction.
+```text
+Hi GlossGenius team,
+
+I wanted to follow up on my application for the Staff Software Engineer, Frontend role. I remain interested and would be glad to provide any additional context about my background.
+
+Thank you again for your time.
+
+Best,
+Alex Chen
+```
+
+### Interview Prep
+- Prepare a 60-second story for why GlossGenius and why Staff Software Engineer, Frontend.
+- Prepare evidence for: JavaScript, TypeScript, React, CSS, Accessibility, API.
+- Prepare one STAR story about execution under ambiguity.
+- Prepare one STAR story about collaboration and tradeoff decisions.
+- Prepare questions about team priorities, success metrics, and hiring timeline.
+
+### Negotiation Prep
+- Wait for a clear offer before anchoring compensation.
+- Ask for total compensation breakdown, work mode, title, level, review cycle, and start date.
+- Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.
+- Use competing priorities and role fit, not personal need, as the negotiation frame.
+
+## GlossGenius - Staff Software Engineer, Frontend
+
+- Priority: P0
+- Score: 94/A
+- Subject: Staff Software Engineer, Frontend application - GlossGenius
+
+- Block G: High Confidence
+- Rating: 4.8/5.0
+
+### ATS Keyword Injection
+- Archetype: Frontend Engineer
+- Coverage: 100%
+- JD Keywords: JavaScript, TypeScript, React, CSS, Accessibility, API, Performance Optimization, Design Systems
+- 在 Professional Summary 中自然帶入：JavaScript、TypeScript、React、CSS、Accessibility
+- 使用職位語言：「Frontend Engineer」方向的動詞和術語
+- 【你已有但此 JD 未要求】可視情況選擇性提及：go
+- Missing (do NOT fabricate): go
+
+### Apply Checklist
+- Open the source URL and confirm the role is still active.
+- Generate or refresh the tailored ATS PDF from this job.
+- Mirror these JD keywords honestly in your CV: JavaScript, TypeScript, React, CSS, Accessibility, API, Performance Optimization, Design Systems
+- Do not overclaim missing areas: go
+- Log status, recruiter/contact, and next follow-up date in the tracker.
+
+### Outreach Email
+```text
+Hi GlossGenius team,
+
+I am Alex Chen, and I am interested in the Staff Software Engineer, Frontend role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.
+
+The role stood out because it maps closely to my experience with JavaScript, TypeScript, React, CSS, Accessibility.
+
+I would appreciate the chance to share how my experience can support the team. Thank you for your time.
+
+Best,
+Alex Chen
+```
+
+### Follow-up
+Timing: 3-5 business days after applying or the last recruiter interaction.
+```text
+Hi GlossGenius team,
+
+I wanted to follow up on my application for the Staff Software Engineer, Frontend role. I remain interested and would be glad to provide any additional context about my background.
+
+Thank you again for your time.
+
+Best,
+Alex Chen
+```
+
+### Interview Prep
+- Prepare a 60-second story for why GlossGenius and why Staff Software Engineer, Frontend.
+- Prepare evidence for: JavaScript, TypeScript, React, CSS, Accessibility, API.
+- Prepare one STAR story about execution under ambiguity.
+- Prepare one STAR story about collaboration and tradeoff decisions.
+- Prepare questions about team priorities, success metrics, and hiring timeline.
+
+### Negotiation Prep
+- Wait for a clear offer before anchoring compensation.
+- Ask for total compensation breakdown, work mode, title, level, review cycle, and start date.
+- Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.
+- Use competing priorities and role fit, not personal need, as the negotiation frame.
+
+## Treasure Data - Senior Software Engineer - Ruby on Rails
+
+- Priority: P0
+- Score: 94/A
+- Subject: Senior Software Engineer - Ruby on Rails application - Treasure Data
+
+- Block G: High Confidence
+- Rating: 4.8/5.0
+
+### ATS Keyword Injection
+- Archetype: AI Platform / LLMOps
+- Coverage: 100%
+- JD Keywords: TypeScript, React, API, Performance Optimization, engineer, product, data
+- 在 Professional Summary 中自然帶入：TypeScript、React、API、Performance Optimization、engineer
+- 使用職位語言：「AI Platform / LLMOps」方向的動詞和術語
+- 【你已有但此 JD 未要求】可視情況選擇性提及：sql、aws、growth
+- Missing (do NOT fabricate): sql, aws, growth
+
+### Apply Checklist
+- Open the source URL and confirm the role is still active.
+- Generate or refresh the tailored ATS PDF from this job.
+- Mirror these JD keywords honestly in your CV: TypeScript, React, API, Performance Optimization, engineer, product, data
+- Do not overclaim missing areas: sql, aws, growth
+- Log status, recruiter/contact, and next follow-up date in the tracker.
+
+### Outreach Email
+```text
+Hi Treasure Data team,
+
+I am Alex Chen, and I am interested in the Senior Software Engineer - Ruby on Rails role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.
+
+The role stood out because it maps closely to my experience with TypeScript, React, API, Performance Optimization, engineer.
+
+I would appreciate the chance to share how my experience can support the team. Thank you for your time.
+
+Best,
+Alex Chen
+```
+
+### Follow-up
+Timing: 3-5 business days after applying or the last recruiter interaction.
+```text
+Hi Treasure Data team,
+
+I wanted to follow up on my application for the Senior Software Engineer - Ruby on Rails role. I remain interested and would be glad to provide any additional context about my background.
+
+Thank you again for your time.
+
+Best,
+Alex Chen
+```
+
+### Interview Prep
+- Prepare a 60-second story for why Treasure Data and why Senior Software Engineer - Ruby on Rails.
+- Prepare evidence for: TypeScript, React, API, Performance Optimization, engineer, product.
 - Prepare one STAR story about execution under ambiguity.
 - Prepare one STAR story about collaboration and tradeoff decisions.
 - Prepare questions about team priorities, success metrics, and hiring timeline.
