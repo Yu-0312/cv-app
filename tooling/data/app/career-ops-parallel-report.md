@@ -1,6 +1,6 @@
 # Career Ops Parallel Worker Report
 
-Generated: 2026-06-06T00:10:59.510Z
+Generated: 2026-06-06T23:48:33.001Z
 Concurrency: 4
 Jobs processed: 50
 Errors: 0
@@ -611,6 +611,21 @@ Errors: 0
 - Never store API keys or credentials in job metadata.
 - Record only application status and user-approved notes.
 
+## P0 Kyndryl - Mod Engineer (FDE)
+
+- Score: 92
+- Grade: A
+- Research evidence: 0
+- Keywords: TypeScript, React, API, remote, engineer, product, data
+- Compensation leverage: -
+- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
+
+### Apply Agent Guardrails
+- Never submit without explicit user confirmation.
+- Never fabricate work authorization, salary history, degree, or experience.
+- Never store API keys or credentials in job metadata.
+- Record only application status and user-approved notes.
+
 ## P0 Esri - Sr. Product Engineer - Web Services
 
 - Score: 92
@@ -738,21 +753,6 @@ Errors: 0
 - Research evidence: 0
 - Keywords: JavaScript, TypeScript, Analytics, API, engineer, product, data
 - Compensation leverage: -
-- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
-
-### Apply Agent Guardrails
-- Never submit without explicit user confirmation.
-- Never fabricate work authorization, salary history, degree, or experience.
-- Never store API keys or credentials in job metadata.
-- Record only application status and user-approved notes.
-
-## P0 Stripe Greenhouse - Full Stack Engineer, Support Experience
-
-- Score: 91
-- Grade: A
-- Research evidence: 0
-- Keywords: React, engineer, product
-- Compensation leverage: high
 - Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
 
 ### Apply Agent Guardrails

@@ -1,6 +1,6 @@
 window.CV_CAREER_OPS_STORY_BANK = {
   "source": "career-ops-story-bank",
-  "generatedAt": "2026-06-06T00:10:56.032Z",
+  "generatedAt": "2026-06-06T23:48:29.458Z",
   "llmProvider": "none",
   "storyBank": {
     "themes": [
@@ -233,7 +233,7 @@ window.CV_CAREER_OPS_STORY_BANK = {
     "learningPlan": [
       {
         "skill": "growth",
-        "marketCount": 43,
+        "marketCount": 42,
         "priority": "P0",
         "priorityLabel": "高優先",
         "reason": "市場需求極高，補充後可顯著提升評分",
@@ -241,7 +241,7 @@ window.CV_CAREER_OPS_STORY_BANK = {
       },
       {
         "skill": "aws",
-        "marketCount": 35,
+        "marketCount": 33,
         "priority": "P0",
         "priorityLabel": "高優先",
         "reason": "市場需求極高，補充後可顯著提升評分",
@@ -249,7 +249,7 @@ window.CV_CAREER_OPS_STORY_BANK = {
       },
       {
         "skill": "agents",
-        "marketCount": 32,
+        "marketCount": 33,
         "priority": "P0",
         "priorityLabel": "高優先",
         "reason": "市場需求極高，補充後可顯著提升評分",
@@ -257,7 +257,7 @@ window.CV_CAREER_OPS_STORY_BANK = {
       },
       {
         "skill": "python",
-        "marketCount": 28,
+        "marketCount": 27,
         "priority": "P0",
         "priorityLabel": "高優先",
         "reason": "市場需求極高，補充後可顯著提升評分",
@@ -265,7 +265,7 @@ window.CV_CAREER_OPS_STORY_BANK = {
       },
       {
         "skill": "go",
-        "marketCount": 26,
+        "marketCount": 25,
         "priority": "P0",
         "priorityLabel": "高優先",
         "reason": "市場需求極高，補充後可顯著提升評分",
@@ -273,7 +273,7 @@ window.CV_CAREER_OPS_STORY_BANK = {
       },
       {
         "skill": "operations",
-        "marketCount": 20,
+        "marketCount": 21,
         "priority": "P0",
         "priorityLabel": "高優先",
         "reason": "市場需求極高，補充後可顯著提升評分",
@@ -289,7 +289,7 @@ window.CV_CAREER_OPS_STORY_BANK = {
       },
       {
         "skill": "java",
-        "marketCount": 18,
+        "marketCount": 17,
         "priority": "P0",
         "priorityLabel": "高優先",
         "reason": "市場需求極高，補充後可顯著提升評分",
@@ -312,14 +312,6 @@ window.CV_CAREER_OPS_STORY_BANK = {
         "suggestion": "在簡歷或 profile 中加入 azure 的實際使用案例，並在 projects 欄位補充相關實作。"
       },
       {
-        "skill": "gcp",
-        "marketCount": 11,
-        "priority": "P0",
-        "priorityLabel": "高優先",
-        "reason": "市場需求極高，補充後可顯著提升評分",
-        "suggestion": "在簡歷或 profile 中加入 gcp 的實際使用案例，並在 projects 欄位補充相關實作。"
-      },
-      {
         "skill": "sql",
         "marketCount": 11,
         "priority": "P0",
@@ -328,12 +320,12 @@ window.CV_CAREER_OPS_STORY_BANK = {
         "suggestion": "在簡歷或 profile 中加入 sql 的實際使用案例，並在 projects 欄位補充相關實作。"
       },
       {
-        "skill": "docker",
+        "skill": "gcp",
         "marketCount": 9,
         "priority": "P1",
         "priorityLabel": "中優先",
         "reason": "市場常見，補充後能擴大適配職缺範圍",
-        "suggestion": "在簡歷或 profile 中加入 docker 的實際使用案例，並在 projects 欄位補充相關實作。"
+        "suggestion": "在簡歷或 profile 中加入 gcp 的實際使用案例，並在 projects 欄位補充相關實作。"
       },
       {
         "skill": "kotlin",
@@ -350,6 +342,14 @@ window.CV_CAREER_OPS_STORY_BANK = {
         "priorityLabel": "中優先",
         "reason": "市場常見，補充後能擴大適配職缺範圍",
         "suggestion": "在簡歷或 profile 中加入 llm 的實際使用案例，並在 projects 欄位補充相關實作。"
+      },
+      {
+        "skill": "machine learning",
+        "marketCount": 9,
+        "priority": "P1",
+        "priorityLabel": "中優先",
+        "reason": "市場常見，補充後能擴大適配職缺範圍",
+        "suggestion": "在簡歷或 profile 中加入 machine learning 的實際使用案例，並在 projects 欄位補充相關實作。"
       }
     ],
     "gaps": [

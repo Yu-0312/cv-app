@@ -1,82 +1,82 @@
 {
   "source": "career-ops-learning",
-  "generatedAt": "2026-06-06T00:11:06.640Z",
+  "generatedAt": "2026-06-06T23:48:39.966Z",
   "learning": {
-    "activeJobCount": 83272,
-    "positiveSignalCount": 81461,
+    "activeJobCount": 83309,
+    "positiveSignalCount": 81497,
     "negativeSignalCount": 0,
     "preferredSkills": [
       {
         "name": "data",
-        "score": 36044.3
+        "score": 36076.5
       },
       {
         "name": "api",
-        "score": 35500.5
+        "score": 35481.9
       },
       {
         "name": "API",
-        "score": 35484.6
+        "score": 35469.9
       },
       {
         "name": "product",
-        "score": 27771.7
+        "score": 27760.2
       },
       {
         "name": "operations",
-        "score": 23483
+        "score": 23574.6
       },
       {
         "name": "growth",
-        "score": 23265.9
+        "score": 23247.6
       },
       {
         "name": "analytics",
-        "score": 19107
+        "score": 19104.3
       },
       {
         "name": "Analytics",
-        "score": 18144.5
+        "score": 18161.9
       },
       {
         "name": "remote",
-        "score": 17640.7
+        "score": 17681.6
       },
       {
         "name": "sales",
-        "score": 17226.3
+        "score": 17264
       },
       {
         "name": "engineer",
-        "score": 16067.1
+        "score": 16228.3
       },
       {
         "name": "python",
-        "score": 11844.4
+        "score": 11882.1
       },
       {
         "name": "go",
-        "score": 9818.6
+        "score": 9898.2
       },
       {
         "name": "sql",
-        "score": 8533.8
+        "score": 8564.1
       },
       {
         "name": "excel",
-        "score": 7595.6
+        "score": 7546.4
       },
       {
         "name": "aws",
-        "score": 6652.9
+        "score": 6748.6
       },
       {
         "name": "azure",
-        "score": 5324.4
+        "score": 5374.6
       },
       {
         "name": "machine learning",
-        "score": 5113.2
+        "score": 5093.2
       }
     ],
     "avoidSignals": [],
@@ -99,7 +99,7 @@
       },
       {
         "name": "SpaceX",
-        "score": 3397.9
+        "score": 3453.9
       },
       {
         "name": "Databricks Greenhouse",
@@ -107,23 +107,23 @@
       },
       {
         "name": "Walmart",
-        "score": 2392.3
+        "score": 2347
       },
       {
         "name": "GE Vernova",
-        "score": 2278.6
+        "score": 2179.2
       },
       {
         "name": "Uber",
-        "score": 1936.8
+        "score": 1887
       },
       {
         "name": "Bank of America",
-        "score": 1843.6
+        "score": 1867.4
       },
       {
         "name": "Stripe Greenhouse",
-        "score": 1736.9
+        "score": 1736.8
       },
       {
         "name": "MongoDB Greenhouse",
@@ -137,81 +137,81 @@
       },
       {
         "name": "cn",
-        "score": 95174.4
+        "score": 95183.7
       },
       {
         "name": "jp",
-        "score": 64190.7
+        "score": 64252.8
       },
       {
         "name": "tw",
-        "score": 63532.9
+        "score": 63533.3
       },
       {
         "name": "market-public-api",
-        "score": 36151.7
+        "score": 36158.7
       },
       {
         "name": "global",
-        "score": 20034.7
+        "score": 19984.9
       },
       {
         "name": "us",
-        "score": 16111.9
+        "score": 16090.9
       },
       {
         "name": "flex-seed-source",
-        "score": 14207.4
+        "score": 14207.3
       },
       {
         "name": "in",
-        "score": 3269.2
+        "score": 3281.9
       },
       {
         "name": "sg",
-        "score": 2743.4
+        "score": 2755.6
       },
       {
         "name": "uk",
-        "score": 1265.2
+        "score": 1302.8
       },
       {
         "name": "ca",
-        "score": 1222
+        "score": 1230.8
       }
     ],
     "roleFamilies": [
       {
         "name": "Backend",
-        "score": 262249.8
+        "score": 262255.1
       },
       {
         "name": "Frontend",
-        "score": 4244.4
+        "score": 4261.3
       },
       {
         "name": "AI / Data",
-        "score": 2793.6
+        "score": 2817.1
       },
       {
         "name": "Sales",
-        "score": 1049.5
+        "score": 1077.1
       },
       {
         "name": "Marketing",
-        "score": 678.8
+        "score": 704.7
       },
       {
         "name": "Product",
-        "score": 574.3
+        "score": 560.8
       },
       {
         "name": "Other",
-        "score": 487.1
+        "score": 504.5
       },
       {
         "name": "Design",
-        "score": 443.1
+        "score": 447.9
       }
     ],
     "sourceCoverage": {

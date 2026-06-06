@@ -1,6 +1,6 @@
 # Career Ops Deep Fit Report
 
-Generated: 2026-06-06T00:11:03.174Z
+Generated: 2026-06-06T23:48:36.472Z
 LLM provider: none
 Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 exploratory)
 
@@ -747,12 +747,6 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Keyword hits: -
 - Gaps: go, sql, power bi
 
-### Newhouse - Social and Content Lead
-- Score: 78 | Grade: B | RoleFit: 45
-- Decision: pursue selectively
-- Keyword hits: remote
-- Gaps: spark
-
 ### Databricks Greenhouse - Sr. Technical Enablement Specialist
 - Score: 78 | Grade: B | RoleFit: 45
 - Decision: pursue selectively
@@ -801,12 +795,6 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Keyword hits: -
 - Gaps: -
 
-### NVIDIA Workday - Senior VLSI CDC Engineer
-- Score: 76 | Grade: B | RoleFit: 45
-- Decision: pursue selectively
-- Keyword hits: dashboard
-- Gaps: python
-
 ### Roblox Greenhouse - Senior QA Engineer, Game Engine
 - Score: 75 | Grade: B | RoleFit: 45
 - Decision: pursue selectively
@@ -824,6 +812,12 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Decision: pursue selectively
 - Keyword hits: JavaScript
 - Gaps: java
+
+### SEMICONDUCTOR TECHNOLOGIES & INSTRUMENTS PTE LTD - SOFTWARE ENGINEER
+- Score: 74 | Grade: B | RoleFit: 45
+- Decision: pursue selectively
+- Keyword hits: JavaScript
+- Gaps: python, java, sql
 
 ### Roblox Greenhouse - Human Evaluator, Studio (Contract)
 - Score: 74 | Grade: B | RoleFit: 45
@@ -861,29 +855,23 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Keyword hits: -
 - Gaps: -
 
-### DCONSTRUCT ROBOTICS PTE. LTD. - Software Engineer
-- Score: 73 | Grade: B | RoleFit: 45
-- Decision: pursue selectively
-- Keyword hits: -
-- Gaps: computer vision
-
 ### Roblox Greenhouse - Senior Software Engineer, App Performance
 - Score: 73 | Grade: B | RoleFit: 45
 - Decision: pursue selectively
 - Keyword hits: -
 - Gaps: -
 
-### NVIDIA Workday - Senior VLSI Integration Engineer
+### NVIDIA Workday - Senior Corporate Counsel
 - Score: 73 | Grade: B | RoleFit: 45
 - Decision: pursue selectively
 - Keyword hits: -
-- Gaps: python
+- Gaps: rest
 
-### NVIDIA Workday - VLSI Integration Engineer
+### NVIDIA Workday - Senior Corporate Counsel
 - Score: 73 | Grade: B | RoleFit: 45
 - Decision: pursue selectively
 - Keyword hits: -
-- Gaps: python
+- Gaps: rest
 
 ### The Home Depot Canada - Asset Protection Specialist
 - Score: 72 | Grade: B | RoleFit: 45
@@ -921,6 +909,18 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Keyword hits: -
 - Gaps: -
 
+### AIM RECRUIT CONSULTANCY PTE. LIMITED - Engineer (Project) @Chai Chee
+- Score: 71 | Grade: C | RoleFit: 45
+- Decision: pursue selectively
+- Keyword hits: -
+- Gaps: -
+
+### AIM RECRUIT CONSULTANCY PTE. LIMITED - Mechanical Engineer /M&E - Central
+- Score: 71 | Grade: C | RoleFit: 45
+- Decision: pursue selectively
+- Keyword hits: -
+- Gaps: -
+
 ### ECSAL TECHNOLOGIES PTE. LTD. - Software Engineer - PLC (Senior)
 - Score: 70 | Grade: C | RoleFit: 45
 - Decision: pursue selectively
@@ -933,28 +933,28 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Keyword hits: -
 - Gaps: -
 
+### I-PEX Inc. - [2027 New Graduates] Generalist Positions in Science and Engineering
+- Score: 70 | Grade: C | RoleFit: 45
+- Decision: pursue selectively
+- Keyword hits: -
+- Gaps: -
+
+### AIM RECRUIT CONSULTANCY PTE. LIMITED - Senior Field Service Engineer @Jurong East
+- Score: 70 | Grade: C | RoleFit: 45
+- Decision: pursue selectively
+- Keyword hits: -
+- Gaps: -
+
+### KUBO - Cybersecurity Engineer
+- Score: 70 | Grade: C | RoleFit: 45
+- Decision: pursue selectively
+- Keyword hits: -
+- Gaps: python, java
+
 ### NVIDIA Workday - Senior Package Engineer
 - Score: 69 | Grade: C | RoleFit: 45
 - Decision: hold / compare
 - Keyword hits: -
-- Gaps: -
-
-### ALLEGIS GROUP SINGAPORE PRIVATE LIMITED - Business Analyst
-- Score: 68 | Grade: C | RoleFit: 45
-- Decision: hold / compare
-- Keyword hits: -
-- Gaps: -
-
-### The Home Depot Canada - Asset Protection Specialist Vancouver Terminal
-- Score: 68 | Grade: C | RoleFit: 45
-- Decision: hold / compare
-- Keyword hits: remote
-- Gaps: -
-
-### Lumin Digital - Security Platform Engineer
-- Score: 67 | Grade: C | RoleFit: 45
-- Decision: hold / compare
-- Keyword hits: remote
 - Gaps: -
 
 ## Layer C — Exploratory Signals (roleFit < 40)
@@ -974,6 +974,7 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - **Atlassian — Senior Data Engineer** (score: 92) | Top gap: python
 - **Equinix, Inc — Staff Software Engineer** (score: 92) | Top gap: python
 - **Zillow — Senior Engineering Manager** (score: 92) | Top gap: python
+- **Kyndryl — Mod Engineer (FDE)** (score: 92) | Top gap: python
 - **Esri — Sr. Product Engineer - Web Services** (score: 92) | Top gap: python
 - **GitLab Greenhouse — Senior Backend Engineer (Ruby on Rails), Plan: Knowledge** (score: 92) | Top gap: agents
 - **Stripe Greenhouse — Full Stack Engineer, Growth** (score: 92) | Top gap: go
@@ -988,5 +989,4 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - **Asana Greenhouse — Senior Engineering Manager, Payment Platform** (score: 91) | Top gap: kubernetes
 - **Asana Greenhouse — Senior Software Engineer, AI Chat** (score: 91) | Top gap: sales
 - **Asana Greenhouse — Senior Software Engineer, APIs** (score: 91) | Top gap: agents
-- **HAMSA APAC (SINGAPORE) PTE. LTD. — Software Engineer** (score: 90) | Top gap: java
 
