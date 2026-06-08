@@ -1,10 +1,10 @@
 {
   "source": "career-ops-health-monitor",
-  "checkedAt": "2026-06-06T23:48:43.928Z",
+  "checkedAt": "2026-06-08T00:04:19.955Z",
   "threshold": 0.3,
   "health": {
-    "total": 83309,
-    "active": 83309,
+    "total": 83279,
+    "active": 83279,
     "expired": 0,
     "stale": 0,
     "expiredRate": 0,
@@ -12,27 +12,27 @@
     "avgActiveScore": 65,
     "bySource": {
       "MyCareersFuture Singapore Frontend Full Stack": {
-        "total": 34,
+        "total": 33,
         "expired": 0
       },
       "The Muse Global Public Jobs": {
-        "total": 1885,
+        "total": 1884,
         "expired": 0
       },
       "The Muse Global Software Engineering": {
-        "total": 1728,
+        "total": 1727,
         "expired": 0
       },
       "Source flex job board": {
-        "total": 129,
+        "total": 128,
         "expired": 0
       },
       "Japan Dev English Tech Jobs": {
-        "total": 50,
+        "total": 51,
         "expired": 0
       },
       "Databricks Greenhouse": {
-        "total": 438,
+        "total": 436,
         "expired": 0
       },
       "The Muse Global Data Analytics": {
@@ -40,7 +40,7 @@
         "expired": 0
       },
       "The Muse Global Remote Jobs": {
-        "total": 1802,
+        "total": 1812,
         "expired": 0
       },
       "Stripe Greenhouse": {
@@ -52,7 +52,7 @@
         "expired": 0
       },
       "Airbnb Greenhouse": {
-        "total": 142,
+        "total": 140,
         "expired": 0
       },
       "MongoDB Greenhouse": {
@@ -88,7 +88,7 @@
         "expired": 0
       },
       "Replit Ashby": {
-        "total": 63,
+        "total": 65,
         "expired": 0
       },
       "Supabase Ashby": {
@@ -156,7 +156,11 @@
         "expired": 0
       },
       "Perplexity Ashby": {
-        "total": 16,
+        "total": 17,
+        "expired": 0
+      },
+      "Micron Workday": {
+        "total": 63,
         "expired": 0
       },
       "Remote OK Global Remote Jobs": {
@@ -165,10 +169,6 @@
       },
       "Cloudflare Greenhouse": {
         "total": 1,
-        "expired": 0
-      },
-      "Microsoft Taipei": {
-        "total": 3,
         "expired": 0
       },
       "Logitech Workday Taiwan": {
@@ -180,19 +180,11 @@
         "expired": 0
       },
       "Daijob Japan Broad Listings": {
-        "total": 127,
-        "expired": 0
-      },
-      "Micron Workday": {
-        "total": 61,
+        "total": 90,
         "expired": 0
       },
       "Gogolook": {
         "total": 11,
-        "expired": 0
-      },
-      "Applied Materials Workday": {
-        "total": 7,
         "expired": 0
       },
       "MyCareersFuture Singapore Graduate Research": {
@@ -201,6 +193,10 @@
       },
       "Modal Ashby": {
         "total": 15,
+        "expired": 0
+      },
+      "Applied Materials Workday": {
+        "total": 5,
         "expired": 0
       },
       "Intel Workday Taiwan": {
@@ -220,7 +216,11 @@
         "expired": 0
       },
       "Tencent Careers China": {
-        "total": 1481,
+        "total": 1480,
+        "expired": 0
+      },
+      "Microsoft Taipei": {
+        "total": 1,
         "expired": 0
       },
       "NVIDIA Taiwan": {
@@ -256,7 +256,7 @@
         "expired": 0
       },
       "Tencent": {
-        "total": 18,
+        "total": 19,
         "expired": 0
       },
       "Mynavi Tenshoku Japan Sitemap": {
@@ -268,7 +268,7 @@
         "expired": 0
       },
       "Grab": {
-        "total": 49,
+        "total": 48,
         "expired": 0
       },
       "Garmin Taiwan": {
@@ -276,7 +276,7 @@
         "expired": 0
       },
       "Grab SmartRecruiters": {
-        "total": 12,
+        "total": 13,
         "expired": 0
       },
       "CONA SuccessFactors IT Development Engineer": {
@@ -288,6 +288,18 @@
         "expired": 0
       },
       "COEBank SuccessFactors Data & BI Engineer": {
+        "total": 1,
+        "expired": 0
+      },
+      "ASSA ABLOY SuccessFactors Taipei Manufacturing Engineer": {
+        "total": 1,
+        "expired": 0
+      },
+      "ASSA ABLOY SuccessFactors Software Engineer": {
+        "total": 1,
+        "expired": 0
+      },
+      "ASSA ABLOY SuccessFactors C# Software Engineer": {
         "total": 1,
         "expired": 0
       },

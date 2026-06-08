@@ -1,16 +1,16 @@
 window.CV_CAREER_OPS_STORY_BANK = {
   "source": "career-ops-story-bank",
-  "generatedAt": "2026-06-06T23:48:29.458Z",
+  "generatedAt": "2026-06-08T00:04:05.945Z",
   "llmProvider": "none",
   "storyBank": {
     "themes": [
       "frontend product execution",
+      "data-heavy product decisions",
       "systems and API collaboration",
-      "accessibility and quality",
       "performance and scale",
       "cross-functional influence",
       "AI/data product adoption",
-      "data-heavy product decisions"
+      "accessibility and quality"
     ],
     "stories": [
       {
@@ -42,22 +42,22 @@ window.CV_CAREER_OPS_STORY_BANK = {
       },
       {
         "id": "story-2",
-        "theme": "systems and API collaboration",
+        "theme": "data-heavy product decisions",
         "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
         "applicableQuestions": [
           "Tell me about a project you are proud of.",
           "Tell me about a time you handled ambiguity.",
-          "How have you applied systems and API collaboration?"
+          "How have you applied data-heavy product decisions?"
         ],
         "star": {
-          "situation": "You collaborated across system boundaries. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — name the systems, teams, and integration surface area.",
-          "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
-          "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
-          "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
+          "situation": "You were working with a data-intensive product. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — describe the data volume, the user workflow, and what was difficult to render or interpret.",
+          "task": "What decision did you own? (chart type, data model, aggregation strategy, caching layer, etc.)",
+          "action": "Explain how you chose between options, what you built or prototyped, and how you validated your approach with data or users.",
+          "result": "State the outcome: query latency, dashboard load time, user comprehension improvement, or reduction in support requests.",
           "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
         },
         "keywords": [
-          "systems and API collaboration",
+          "data-heavy product decisions",
           "JavaScript",
           "TypeScript",
           "React",
@@ -69,22 +69,22 @@ window.CV_CAREER_OPS_STORY_BANK = {
       },
       {
         "id": "story-3",
-        "theme": "accessibility and quality",
+        "theme": "systems and API collaboration",
         "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
         "applicableQuestions": [
           "Tell me about a project you are proud of.",
           "Tell me about a time you handled ambiguity.",
-          "How have you applied accessibility and quality?"
+          "How have you applied systems and API collaboration?"
         ],
         "star": {
-          "situation": "You led or contributed to an accessibility or quality initiative. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — what was the starting state and who was affected?",
-          "task": "What standard or target were you working toward (WCAG level, test coverage %, zero-defect milestone)?",
-          "action": "Describe the audit process, tooling (axe, Lighthouse, screen reader testing), and how you prioritized fixes across components.",
-          "result": "State the outcome: WCAG compliance level achieved, user complaints reduced, or CI gate added to prevent regressions.",
+          "situation": "You collaborated across system boundaries. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — name the systems, teams, and integration surface area.",
+          "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
+          "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
+          "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
           "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
         },
         "keywords": [
-          "accessibility and quality",
+          "systems and API collaboration",
           "JavaScript",
           "TypeScript",
           "React",
@@ -177,22 +177,22 @@ window.CV_CAREER_OPS_STORY_BANK = {
       },
       {
         "id": "story-7",
-        "theme": "data-heavy product decisions",
+        "theme": "accessibility and quality",
         "sourceProof": "Portfolio site — custom static site generator with markdown-first CMS and zero-JS fallback.",
         "applicableQuestions": [
           "Tell me about a project you are proud of.",
           "Tell me about a time you handled ambiguity.",
-          "How have you applied data-heavy product decisions?"
+          "How have you applied accessibility and quality?"
         ],
         "star": {
-          "situation": "You were working with a data-intensive product. Proof point: \"Portfolio site — custom static site generator with markdown-first CMS and zero-JS fallback.\" — describe the data volume, the user workflow, and what was difficult to render or interpret.",
-          "task": "What decision did you own? (chart type, data model, aggregation strategy, caching layer, etc.)",
-          "action": "Explain how you chose between options, what you built or prototyped, and how you validated your approach with data or users.",
-          "result": "State the outcome: query latency, dashboard load time, user comprehension improvement, or reduction in support requests.",
+          "situation": "You led or contributed to an accessibility or quality initiative. Proof point: \"Portfolio site — custom static site generator with markdown-first CMS and zero-JS fallback.\" — what was the starting state and who was affected?",
+          "task": "What standard or target were you working toward (WCAG level, test coverage %, zero-defect milestone)?",
+          "action": "Describe the audit process, tooling (axe, Lighthouse, screen reader testing), and how you prioritized fixes across components.",
+          "result": "State the outcome: WCAG compliance level achieved, user complaints reduced, or CI gate added to prevent regressions.",
           "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
         },
         "keywords": [
-          "data-heavy product decisions",
+          "accessibility and quality",
           "JavaScript",
           "TypeScript",
           "React",
@@ -240,24 +240,24 @@ window.CV_CAREER_OPS_STORY_BANK = {
         "suggestion": "在簡歷或 profile 中加入 growth 的實際使用案例，並在 projects 欄位補充相關實作。"
       },
       {
-        "skill": "aws",
-        "marketCount": 33,
-        "priority": "P0",
-        "priorityLabel": "高優先",
-        "reason": "市場需求極高，補充後可顯著提升評分",
-        "suggestion": "在簡歷或 profile 中加入 aws 的實際使用案例，並在 projects 欄位補充相關實作。"
-      },
-      {
         "skill": "agents",
-        "marketCount": 33,
+        "marketCount": 35,
         "priority": "P0",
         "priorityLabel": "高優先",
         "reason": "市場需求極高，補充後可顯著提升評分",
         "suggestion": "在簡歷或 profile 中加入 agents 的實際使用案例，並在 projects 欄位補充相關實作。"
       },
       {
+        "skill": "aws",
+        "marketCount": 34,
+        "priority": "P0",
+        "priorityLabel": "高優先",
+        "reason": "市場需求極高，補充後可顯著提升評分",
+        "suggestion": "在簡歷或 profile 中加入 aws 的實際使用案例，並在 projects 欄位補充相關實作。"
+      },
+      {
         "skill": "python",
-        "marketCount": 27,
+        "marketCount": 29,
         "priority": "P0",
         "priorityLabel": "高優先",
         "reason": "市場需求極高，補充後可顯著提升評分",
@@ -265,7 +265,7 @@ window.CV_CAREER_OPS_STORY_BANK = {
       },
       {
         "skill": "go",
-        "marketCount": 25,
+        "marketCount": 26,
         "priority": "P0",
         "priorityLabel": "高優先",
         "reason": "市場需求極高，補充後可顯著提升評分",
@@ -273,7 +273,7 @@ window.CV_CAREER_OPS_STORY_BANK = {
       },
       {
         "skill": "operations",
-        "marketCount": 21,
+        "marketCount": 20,
         "priority": "P0",
         "priorityLabel": "高優先",
         "reason": "市場需求極高，補充後可顯著提升評分",
@@ -312,44 +312,44 @@ window.CV_CAREER_OPS_STORY_BANK = {
         "suggestion": "在簡歷或 profile 中加入 azure 的實際使用案例，並在 projects 欄位補充相關實作。"
       },
       {
-        "skill": "sql",
+        "skill": "machine learning",
         "marketCount": 11,
+        "priority": "P0",
+        "priorityLabel": "高優先",
+        "reason": "市場需求極高，補充後可顯著提升評分",
+        "suggestion": "在簡歷或 profile 中加入 machine learning 的實際使用案例，並在 projects 欄位補充相關實作。"
+      },
+      {
+        "skill": "gcp",
+        "marketCount": 10,
+        "priority": "P0",
+        "priorityLabel": "高優先",
+        "reason": "市場需求極高，補充後可顯著提升評分",
+        "suggestion": "在簡歷或 profile 中加入 gcp 的實際使用案例，並在 projects 欄位補充相關實作。"
+      },
+      {
+        "skill": "llm",
+        "marketCount": 10,
+        "priority": "P0",
+        "priorityLabel": "高優先",
+        "reason": "市場需求極高，補充後可顯著提升評分",
+        "suggestion": "在簡歷或 profile 中加入 llm 的實際使用案例，並在 projects 欄位補充相關實作。"
+      },
+      {
+        "skill": "sql",
+        "marketCount": 10,
         "priority": "P0",
         "priorityLabel": "高優先",
         "reason": "市場需求極高，補充後可顯著提升評分",
         "suggestion": "在簡歷或 profile 中加入 sql 的實際使用案例，並在 projects 欄位補充相關實作。"
       },
       {
-        "skill": "gcp",
+        "skill": "docker",
         "marketCount": 9,
         "priority": "P1",
         "priorityLabel": "中優先",
         "reason": "市場常見，補充後能擴大適配職缺範圍",
-        "suggestion": "在簡歷或 profile 中加入 gcp 的實際使用案例，並在 projects 欄位補充相關實作。"
-      },
-      {
-        "skill": "kotlin",
-        "marketCount": 9,
-        "priority": "P1",
-        "priorityLabel": "中優先",
-        "reason": "市場常見，補充後能擴大適配職缺範圍",
-        "suggestion": "在簡歷或 profile 中加入 kotlin 的實際使用案例，並在 projects 欄位補充相關實作。"
-      },
-      {
-        "skill": "llm",
-        "marketCount": 9,
-        "priority": "P1",
-        "priorityLabel": "中優先",
-        "reason": "市場常見，補充後能擴大適配職缺範圍",
-        "suggestion": "在簡歷或 profile 中加入 llm 的實際使用案例，並在 projects 欄位補充相關實作。"
-      },
-      {
-        "skill": "machine learning",
-        "marketCount": 9,
-        "priority": "P1",
-        "priorityLabel": "中優先",
-        "reason": "市場常見，補充後能擴大適配職缺範圍",
-        "suggestion": "在簡歷或 profile 中加入 machine learning 的實際使用案例，並在 projects 欄位補充相關實作。"
+        "suggestion": "在簡歷或 profile 中加入 docker 的實際使用案例，並在 projects 欄位補充相關實作。"
       }
     ],
     "gaps": [

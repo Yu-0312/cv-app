@@ -1,48 +1,18 @@
 # Career Ops Deep Fit Report
 
-Generated: 2026-06-06T23:48:36.472Z
+Generated: 2026-06-08T00:04:12.718Z
 LLM provider: none
 Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 exploratory)
 
 ## Layer A — Full Dossiers (roleFit ≥ 68)
 
-### VANGUARD SOFTWARE PTE. LTD. - Expert Frontend Engineer (React.JS & React Native)
-
-- Score: 95
-- Grade: A
-- Confidence: high
-- Decision: pursue aggressively
-- Thesis: Expert Frontend Engineer (React.JS & React Native) at VANGUARD SOFTWARE PTE. LTD. is pursue aggressively because the snapshot score is 95, with 13 profile/role keyword hits and 5 external evidence item(s).
-
-#### Evidence
-- Keyword hits: Frontend Engineer, JavaScript, TypeScript, React, Next.js, CSS, Accessibility, API, Design Systems, design system, TypeScript, React, Frontend Engineer
-- Keyword misses: html, growth
-- Research signals: AI / data / platform signal, remote or hybrid signal
-- Compensation leverage: high
-
-#### Concerns
-- None flagged
-
-#### Interview Strategy
-- Ask why the role is open and what success means in the first 90 days.
-- Probe team ownership, roadmap pressure, and cross-functional interfaces.
-- What business unit owns the Expert Frontend Engineer (React.JS & React Native) role?
-- What measurable outcomes would this team expect in the first 90 days?
-- What recent company/product signals change the risk or upside?
-
-#### CV Strategy
-- Lead with proof around: Frontend Engineer, JavaScript, TypeScript, React, Next.js, CSS.
-- Use story story-1: frontend product execution.
-- Use story story-2: systems and API collaboration.
-- Use story story-3: accessibility and quality.
-
 ### BIFROST PTE. LTD. - Frontend Engineer
 
 - Score: 95
 - Grade: A
 - Confidence: medium
 - Decision: pursue aggressively
-- Thesis: Frontend Engineer at BIFROST PTE. LTD. is pursue aggressively because the snapshot score is 95, with 7 profile/role keyword hits and 1 external evidence item(s).
+- Thesis: Frontend Engineer at BIFROST PTE. LTD. is pursue aggressively because the snapshot score is 95, with 7 profile/role keyword hits and 2 external evidence item(s).
 
 #### Evidence
 - Keyword hits: Frontend Engineer, JavaScript, React, CSS, API, React, Frontend Engineer
@@ -63,8 +33,8 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 #### CV Strategy
 - Lead with proof around: Frontend Engineer, JavaScript, React, CSS, API, React.
 - Use story story-1: frontend product execution.
-- Use story story-2: systems and API collaboration.
-- Use story story-3: accessibility and quality.
+- Use story story-2: data-heavy product decisions.
+- Use story story-3: systems and API collaboration.
 
 ### BIFROST PTE. LTD. - Frontend Engineer
 
@@ -72,7 +42,7 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Grade: A
 - Confidence: medium
 - Decision: pursue aggressively
-- Thesis: Frontend Engineer at BIFROST PTE. LTD. is pursue aggressively because the snapshot score is 95, with 7 profile/role keyword hits and 1 external evidence item(s).
+- Thesis: Frontend Engineer at BIFROST PTE. LTD. is pursue aggressively because the snapshot score is 95, with 7 profile/role keyword hits and 2 external evidence item(s).
 
 #### Evidence
 - Keyword hits: Frontend Engineer, JavaScript, React, CSS, API, React, Frontend Engineer
@@ -93,8 +63,8 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 #### CV Strategy
 - Lead with proof around: Frontend Engineer, JavaScript, React, CSS, API, React.
 - Use story story-1: frontend product execution.
-- Use story story-2: systems and API collaboration.
-- Use story story-3: accessibility and quality.
+- Use story story-2: data-heavy product decisions.
+- Use story story-3: systems and API collaboration.
 
 ### Uber - Sr Software Engineer, Frontend (Web)
 
@@ -123,8 +93,8 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 #### CV Strategy
 - Lead with proof around: Frontend Engineer, JavaScript, TypeScript, React, CSS, API.
 - Use story story-1: frontend product execution.
-- Use story story-2: systems and API collaboration.
-- Use story story-3: accessibility and quality.
+- Use story story-2: data-heavy product decisions.
+- Use story story-3: systems and API collaboration.
 
 ### Disney - Lead Software Engineer
 
@@ -153,8 +123,8 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 #### CV Strategy
 - Lead with proof around: JavaScript, TypeScript, API, TypeScript, Product Engineer.
 - Use story story-1: frontend product execution.
-- Use story story-2: systems and API collaboration.
-- Use story story-3: accessibility and quality.
+- Use story story-2: data-heavy product decisions.
+- Use story story-3: systems and API collaboration.
 
 ### Bank of America - Principal Engineer - GBS IND
 
@@ -183,8 +153,8 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 #### CV Strategy
 - Lead with proof around: API, Full Stack Engineer.
 - Use story story-1: frontend product execution.
-- Use story story-2: systems and API collaboration.
-- Use story story-3: accessibility and quality.
+- Use story story-2: data-heavy product decisions.
+- Use story story-3: systems and API collaboration.
 
 ### Money Forward - Lead Backend Engineer, Digital Bank
 
@@ -213,8 +183,8 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 #### CV Strategy
 - Lead with proof around: Frontend Engineer, API, Frontend Engineer.
 - Use story story-1: frontend product execution.
-- Use story story-2: systems and API collaboration.
-- Use story story-3: accessibility and quality.
+- Use story story-2: data-heavy product decisions.
+- Use story story-3: systems and API collaboration.
 
 ### AIRWALLEX (SINGAPORE) PTE. LTD. - Senior Frontend Engineer, Regulatory Reporting
 
@@ -243,8 +213,8 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 #### CV Strategy
 - Lead with proof around: Frontend Engineer, TypeScript, React, API, dashboard, design system.
 - Use story story-1: frontend product execution.
-- Use story story-2: systems and API collaboration.
-- Use story story-3: accessibility and quality.
+- Use story story-2: data-heavy product decisions.
+- Use story story-3: systems and API collaboration.
 
 ### GlossGenius - Staff Software Engineer, Frontend
 
@@ -252,26 +222,29 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Grade: A
 - Confidence: medium
 - Decision: pursue aggressively
-- Thesis: Staff Software Engineer, Frontend at GlossGenius is pursue aggressively because the snapshot score is 94, with 13 profile/role keyword hits and 0 external evidence item(s).
+- Thesis: Staff Software Engineer, Frontend at GlossGenius is pursue aggressively because the snapshot score is 94, with 13 profile/role keyword hits and 1 external evidence item(s).
 
 #### Evidence
 - Keyword hits: Frontend Engineer, JavaScript, TypeScript, React, CSS, Accessibility, API, Performance Optimization, Design Systems, design system, TypeScript, React, Frontend Engineer
 - Keyword misses: go
-- Research signals: -
+- Research signals: AI / data / platform signal
 - Compensation leverage: high
 
 #### Concerns
-- External company evidence is thin; run deep research with a search API.
+- None flagged
 
 #### Interview Strategy
 - Ask why the role is open and what success means in the first 90 days.
 - Probe team ownership, roadmap pressure, and cross-functional interfaces.
+- What business unit owns the Staff Software Engineer, Frontend role?
+- What measurable outcomes would this team expect in the first 90 days?
+- What recent company/product signals change the risk or upside?
 
 #### CV Strategy
 - Lead with proof around: Frontend Engineer, JavaScript, TypeScript, React, CSS, Accessibility.
 - Use story story-1: frontend product execution.
-- Use story story-2: systems and API collaboration.
-- Use story story-3: accessibility and quality.
+- Use story story-2: data-heavy product decisions.
+- Use story story-3: systems and API collaboration.
 
 ### GlossGenius - Staff Software Engineer, Frontend
 
@@ -279,26 +252,29 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Grade: A
 - Confidence: medium
 - Decision: pursue aggressively
-- Thesis: Staff Software Engineer, Frontend at GlossGenius is pursue aggressively because the snapshot score is 94, with 13 profile/role keyword hits and 0 external evidence item(s).
+- Thesis: Staff Software Engineer, Frontend at GlossGenius is pursue aggressively because the snapshot score is 94, with 13 profile/role keyword hits and 1 external evidence item(s).
 
 #### Evidence
 - Keyword hits: Frontend Engineer, JavaScript, TypeScript, React, CSS, Accessibility, API, Performance Optimization, Design Systems, design system, TypeScript, React, Frontend Engineer
 - Keyword misses: go
-- Research signals: -
+- Research signals: AI / data / platform signal
 - Compensation leverage: high
 
 #### Concerns
-- External company evidence is thin; run deep research with a search API.
+- None flagged
 
 #### Interview Strategy
 - Ask why the role is open and what success means in the first 90 days.
 - Probe team ownership, roadmap pressure, and cross-functional interfaces.
+- What business unit owns the Staff Software Engineer, Frontend role?
+- What measurable outcomes would this team expect in the first 90 days?
+- What recent company/product signals change the risk or upside?
 
 #### CV Strategy
 - Lead with proof around: Frontend Engineer, JavaScript, TypeScript, React, CSS, Accessibility.
 - Use story story-1: frontend product execution.
-- Use story story-2: systems and API collaboration.
-- Use story story-3: accessibility and quality.
+- Use story story-2: data-heavy product decisions.
+- Use story story-3: systems and API collaboration.
 
 ### GlossGenius - Staff Software Engineer, Frontend
 
@@ -306,26 +282,29 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Grade: A
 - Confidence: medium
 - Decision: pursue aggressively
-- Thesis: Staff Software Engineer, Frontend at GlossGenius is pursue aggressively because the snapshot score is 94, with 13 profile/role keyword hits and 0 external evidence item(s).
+- Thesis: Staff Software Engineer, Frontend at GlossGenius is pursue aggressively because the snapshot score is 94, with 13 profile/role keyword hits and 1 external evidence item(s).
 
 #### Evidence
 - Keyword hits: Frontend Engineer, JavaScript, TypeScript, React, CSS, Accessibility, API, Performance Optimization, Design Systems, design system, TypeScript, React, Frontend Engineer
 - Keyword misses: go
-- Research signals: -
+- Research signals: AI / data / platform signal
 - Compensation leverage: high
 
 #### Concerns
-- External company evidence is thin; run deep research with a search API.
+- None flagged
 
 #### Interview Strategy
 - Ask why the role is open and what success means in the first 90 days.
 - Probe team ownership, roadmap pressure, and cross-functional interfaces.
+- What business unit owns the Staff Software Engineer, Frontend role?
+- What measurable outcomes would this team expect in the first 90 days?
+- What recent company/product signals change the risk or upside?
 
 #### CV Strategy
 - Lead with proof around: Frontend Engineer, JavaScript, TypeScript, React, CSS, Accessibility.
 - Use story story-1: frontend product execution.
-- Use story story-2: systems and API collaboration.
-- Use story story-3: accessibility and quality.
+- Use story story-2: data-heavy product decisions.
+- Use story story-3: systems and API collaboration.
 
 ### Treasure Data - Senior Software Engineer - Ruby on Rails
 
@@ -351,8 +330,8 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 #### CV Strategy
 - Lead with proof around: Frontend Engineer, TypeScript, React, API, Performance Optimization, TypeScript.
 - Use story story-1: frontend product execution.
-- Use story story-2: systems and API collaboration.
-- Use story story-3: accessibility and quality.
+- Use story story-2: data-heavy product decisions.
+- Use story story-3: systems and API collaboration.
 
 ### Databricks Greenhouse - Resident Solutions Architect (Full Stack Engineer)
 
@@ -379,8 +358,8 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 #### CV Strategy
 - Lead with proof around: Analytics, API, remote, analytics, Full Stack Engineer.
 - Use story story-1: frontend product execution.
-- Use story story-2: systems and API collaboration.
-- Use story story-3: accessibility and quality.
+- Use story story-2: data-heavy product decisions.
+- Use story story-3: systems and API collaboration.
 
 ### Databricks Greenhouse - Director,Technical Solutions (Big Data/ AI)
 
@@ -407,8 +386,8 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 #### CV Strategy
 - Lead with proof around: Analytics, Performance Optimization, analytics, Product Engineer.
 - Use story story-1: frontend product execution.
-- Use story story-2: systems and API collaboration.
-- Use story story-3: accessibility and quality.
+- Use story story-2: data-heavy product decisions.
+- Use story story-3: systems and API collaboration.
 
 ### Money Forward - Backend Engineer, Digital Bank
 
@@ -437,8 +416,8 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 #### CV Strategy
 - Lead with proof around: Frontend Engineer, API, Frontend Engineer.
 - Use story story-1: frontend product execution.
-- Use story story-2: systems and API collaboration.
-- Use story story-3: accessibility and quality.
+- Use story story-2: data-heavy product decisions.
+- Use story story-3: systems and API collaboration.
 
 ### Uber - Director, Marketplace Central Operations Mobility EMEA
 
@@ -467,8 +446,36 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 #### CV Strategy
 - Lead with proof around: Analytics, API, analytics, Product Engineer.
 - Use story story-1: frontend product execution.
-- Use story story-2: systems and API collaboration.
-- Use story story-3: accessibility and quality.
+- Use story story-2: data-heavy product decisions.
+- Use story story-3: systems and API collaboration.
+
+### Apple - AIML - Site Lead & Lead Researcher, Foundation Models
+
+- Score: 93
+- Grade: A
+- Confidence: medium
+- Decision: pursue aggressively
+- Thesis: AIML - Site Lead & Lead Researcher, Foundation Models at Apple is pursue aggressively because the snapshot score is 93, with 4 profile/role keyword hits and 0 external evidence item(s).
+
+#### Evidence
+- Keyword hits: Analytics, API, analytics, Product Engineer
+- Keyword misses: python, agents, machine learning, deep learning, pytorch, tensorflow, growth
+- Research signals: -
+- Compensation leverage: high
+
+#### Concerns
+- External company evidence is thin; run deep research with a search API.
+- Profile keyword coverage is weaker than the target role language.
+
+#### Interview Strategy
+- Ask why the role is open and what success means in the first 90 days.
+- Probe team ownership, roadmap pressure, and cross-functional interfaces.
+
+#### CV Strategy
+- Lead with proof around: Analytics, API, analytics, Product Engineer.
+- Use story story-1: frontend product execution.
+- Use story story-2: data-heavy product decisions.
+- Use story story-3: systems and API collaboration.
 
 ### Pilotly - Product Engineer II
 
@@ -494,8 +501,8 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 #### CV Strategy
 - Lead with proof around: JavaScript, React, CSS, API, remote, dashboard.
 - Use story story-1: frontend product execution.
-- Use story story-2: systems and API collaboration.
-- Use story story-3: accessibility and quality.
+- Use story story-2: data-heavy product decisions.
+- Use story story-3: systems and API collaboration.
 
 ### Capital One - Distinguished Engineer (Remote - Eligible)
 
@@ -522,8 +529,8 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 #### CV Strategy
 - Lead with proof around: JavaScript, TypeScript, API, remote, TypeScript, Product Engineer.
 - Use story story-1: frontend product execution.
-- Use story story-2: systems and API collaboration.
-- Use story story-3: accessibility and quality.
+- Use story story-2: data-heavy product decisions.
+- Use story story-3: systems and API collaboration.
 
 ### Stripe Greenhouse - Android Engineer, Terminal Developer Productivity
 
@@ -549,8 +556,8 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 #### CV Strategy
 - Lead with proof around: API, remote, Product Engineer.
 - Use story story-1: frontend product execution.
-- Use story story-2: systems and API collaboration.
-- Use story story-3: accessibility and quality.
+- Use story story-2: data-heavy product decisions.
+- Use story story-3: systems and API collaboration.
 
 ### Figma Greenhouse - Software Engineer, AI Product (London, United Kingdom)
 
@@ -576,8 +583,8 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 #### CV Strategy
 - Lead with proof around: TypeScript, React, API, Figma, TypeScript, React.
 - Use story story-1: frontend product execution.
-- Use story story-2: systems and API collaboration.
-- Use story story-3: accessibility and quality.
+- Use story story-2: data-heavy product decisions.
+- Use story story-3: systems and API collaboration.
 
 ### Airbnb Greenhouse - Senior Software Engineer, Quality Platform
 
@@ -604,8 +611,8 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 #### CV Strategy
 - Lead with proof around: TypeScript, API, Design Systems, design system, TypeScript, Product Engineer.
 - Use story story-1: frontend product execution.
-- Use story story-2: systems and API collaboration.
-- Use story story-3: accessibility and quality.
+- Use story story-2: data-heavy product decisions.
+- Use story story-3: systems and API collaboration.
 
 ### Airbnb Greenhouse - Senior Web Automation Engineer, Quality Platform
 
@@ -631,8 +638,8 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 #### CV Strategy
 - Lead with proof around: JavaScript, TypeScript, TypeScript, Product Engineer.
 - Use story story-1: frontend product execution.
-- Use story story-2: systems and API collaboration.
-- Use story story-3: accessibility and quality.
+- Use story story-2: data-heavy product decisions.
+- Use story story-3: systems and API collaboration.
 
 ### MongoDB Greenhouse - Senior Software Engineer, Observability
 
@@ -658,8 +665,8 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 #### CV Strategy
 - Lead with proof around: TypeScript, React, TypeScript, React, Full Stack Engineer.
 - Use story story-1: frontend product execution.
-- Use story story-2: systems and API collaboration.
-- Use story story-3: accessibility and quality.
+- Use story story-2: data-heavy product decisions.
+- Use story story-3: systems and API collaboration.
 
 ### Capgemini Singapore  PTE. LTD. - Senior Frontend Engineer
 
@@ -685,8 +692,8 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 #### CV Strategy
 - Lead with proof around: Frontend Engineer, JavaScript, TypeScript, React, CSS, Accessibility.
 - Use story story-1: frontend product execution.
-- Use story story-2: systems and API collaboration.
-- Use story story-3: accessibility and quality.
+- Use story story-2: data-heavy product decisions.
+- Use story story-3: systems and API collaboration.
 
 ### NEUTRON PTE. LTD. - Frontend Engineer (Web & Mobile)
 
@@ -712,8 +719,8 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 #### CV Strategy
 - Lead with proof around: Frontend Engineer, JavaScript, TypeScript, React, API, Performance Optimization.
 - Use story story-1: frontend product execution.
-- Use story story-2: systems and API collaboration.
-- Use story story-3: accessibility and quality.
+- Use story story-2: data-heavy product decisions.
+- Use story story-3: systems and API collaboration.
 
 ## Layer B — Standard Matches (roleFit 40-67)
 
@@ -752,6 +759,12 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Decision: pursue selectively
 - Keyword hits: Analytics, analytics
 - Gaps: spark, excel
+
+### N-iX - Senior Scala Engineer
+- Score: 78 | Grade: B | RoleFit: 45
+- Decision: pursue selectively
+- Keyword hits: Analytics, analytics
+- Gaps: docker, kubernetes
 
 ### NVIDIA Workday - Senior Mixed Signal Circuit Design Engineer
 - Score: 77 | Grade: B | RoleFit: 45
@@ -873,11 +886,11 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Keyword hits: -
 - Gaps: rest
 
-### The Home Depot Canada - Asset Protection Specialist
-- Score: 72 | Grade: B | RoleFit: 45
+### EXYTE SINGAPORE PTE. LTD. - Senior Electrical Engineer
+- Score: 73 | Grade: B | RoleFit: 45
 - Decision: pursue selectively
-- Keyword hits: remote
-- Gaps: -
+- Keyword hits: -
+- Gaps: excel
 
 ### DCI CONSULTANTS PRIVATE LIMITED - Software Engineer (.net) - MC
 - Score: 71 | Grade: C | RoleFit: 45
@@ -909,18 +922,6 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Keyword hits: -
 - Gaps: -
 
-### AIM RECRUIT CONSULTANCY PTE. LIMITED - Engineer (Project) @Chai Chee
-- Score: 71 | Grade: C | RoleFit: 45
-- Decision: pursue selectively
-- Keyword hits: -
-- Gaps: -
-
-### AIM RECRUIT CONSULTANCY PTE. LIMITED - Mechanical Engineer /M&E - Central
-- Score: 71 | Grade: C | RoleFit: 45
-- Decision: pursue selectively
-- Keyword hits: -
-- Gaps: -
-
 ### ECSAL TECHNOLOGIES PTE. LTD. - Software Engineer - PLC (Senior)
 - Score: 70 | Grade: C | RoleFit: 45
 - Decision: pursue selectively
@@ -933,28 +934,34 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Keyword hits: -
 - Gaps: -
 
-### I-PEX Inc. - [2027 New Graduates] Generalist Positions in Science and Engineering
+### EXYTE SINGAPORE PTE. LTD. - Senior Engineer Mechanical
 - Score: 70 | Grade: C | RoleFit: 45
 - Decision: pursue selectively
 - Keyword hits: -
 - Gaps: -
 
-### AIM RECRUIT CONSULTANCY PTE. LIMITED - Senior Field Service Engineer @Jurong East
+### EXYTE SINGAPORE PTE. LTD. - Engineer, Electrical
 - Score: 70 | Grade: C | RoleFit: 45
 - Decision: pursue selectively
 - Keyword hits: -
 - Gaps: -
 
-### KUBO - Cybersecurity Engineer
+### EXYTE SINGAPORE PTE. LTD. - Engineer Civil/Structural
 - Score: 70 | Grade: C | RoleFit: 45
 - Decision: pursue selectively
 - Keyword hits: -
-- Gaps: python, java
+- Gaps: -
 
 ### NVIDIA Workday - Senior Package Engineer
 - Score: 69 | Grade: C | RoleFit: 45
 - Decision: hold / compare
 - Keyword hits: -
+- Gaps: -
+
+### Dana Incorporated - General Production
+- Score: 69 | Grade: C | RoleFit: 45
+- Decision: hold / compare
+- Keyword hits: remote
 - Gaps: -
 
 ## Layer C — Exploratory Signals (roleFit < 40)
@@ -973,8 +980,8 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - **Allstate — Lead AI Cloud Platform Engineer** (score: 92) | Top gap: python
 - **Atlassian — Senior Data Engineer** (score: 92) | Top gap: python
 - **Equinix, Inc — Staff Software Engineer** (score: 92) | Top gap: python
-- **Zillow — Senior Engineering Manager** (score: 92) | Top gap: python
 - **Kyndryl — Mod Engineer (FDE)** (score: 92) | Top gap: python
+- **Zillow — Senior Engineering Manager** (score: 92) | Top gap: python
 - **Esri — Sr. Product Engineer - Web Services** (score: 92) | Top gap: python
 - **GitLab Greenhouse — Senior Backend Engineer (Ruby on Rails), Plan: Knowledge** (score: 92) | Top gap: agents
 - **Stripe Greenhouse — Full Stack Engineer, Growth** (score: 92) | Top gap: go

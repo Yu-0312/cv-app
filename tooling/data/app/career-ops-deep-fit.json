@@ -1,6 +1,6 @@
 {
   "source": "career-ops-deep-fit",
-  "generatedAt": "2026-06-06T23:48:36.472Z",
+  "generatedAt": "2026-06-08T00:04:12.718Z",
   "llmProvider": "none",
   "summary": {
     "totalResults": 95,
@@ -10,83 +10,6 @@
   },
   "layerA": [
     {
-      "jobKey": "url:https://www.mycareersfuture.gov.sg/job/07eafbe6994e2090a0c2a6a6a6111e62",
-      "company": "VANGUARD SOFTWARE PTE. LTD.",
-      "title": "Expert Frontend Engineer (React.JS & React Native)",
-      "score": 95,
-      "grade": "A",
-      "confidence": "high",
-      "decision": "pursue aggressively",
-      "thesis": "Expert Frontend Engineer (React.JS & React Native) at VANGUARD SOFTWARE PTE. LTD. is pursue aggressively because the snapshot score is 95, with 13 profile/role keyword hits and 5 external evidence item(s).",
-      "evidence": {
-        "keywordHits": [
-          "Frontend Engineer",
-          "JavaScript",
-          "TypeScript",
-          "React",
-          "Next.js",
-          "CSS",
-          "Accessibility",
-          "API",
-          "Design Systems",
-          "design system",
-          "TypeScript",
-          "React",
-          "Frontend Engineer"
-        ],
-        "keywordMisses": [
-          "html",
-          "growth"
-        ],
-        "researchSignals": [
-          "AI / data / platform signal",
-          "remote or hybrid signal"
-        ],
-        "evidenceCount": 5,
-        "compensationLeverage": "high"
-      },
-      "concerns": [],
-      "interviewStrategy": [
-        "Ask why the role is open and what success means in the first 90 days.",
-        "Probe team ownership, roadmap pressure, and cross-functional interfaces.",
-        "What business unit owns the Expert Frontend Engineer (React.JS & React Native) role?",
-        "What measurable outcomes would this team expect in the first 90 days?",
-        "What recent company/product signals change the risk or upside?"
-      ],
-      "cvStrategy": [
-        "Lead with proof around: Frontend Engineer, JavaScript, TypeScript, React, Next.js, CSS.",
-        "Use story story-1: frontend product execution.",
-        "Use story story-2: systems and API collaboration.",
-        "Use story story-3: accessibility and quality."
-      ],
-      "compensationStrategy": {
-        "leverage": "high",
-        "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Expert Frontend Engineer (React.JS & React Native) package, including base, bonus, equity, and review cycle?",
-        "valueAnchor": "Based on the scope of Expert Frontend Engineer (React.JS & React Native) and my fit around JavaScript, TypeScript, React, Next.js, I would like to calibrate toward the stronger end of the range if the team sees the level match."
-      },
-      "storyHooks": [
-        {
-          "id": "story-1",
-          "theme": "frontend product execution",
-          "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
-          "relevance": 6
-        },
-        {
-          "id": "story-2",
-          "theme": "systems and API collaboration",
-          "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
-          "relevance": 6
-        },
-        {
-          "id": "story-3",
-          "theme": "accessibility and quality",
-          "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
-          "relevance": 6
-        }
-      ],
-      "llm": null
-    },
-    {
       "jobKey": "url:https://www.mycareersfuture.gov.sg/job/dc06e8c5f714c11bfb2e053ac7ee2276",
       "company": "BIFROST PTE. LTD.",
       "title": "Frontend Engineer",
@@ -94,7 +17,7 @@
       "grade": "A",
       "confidence": "medium",
       "decision": "pursue aggressively",
-      "thesis": "Frontend Engineer at BIFROST PTE. LTD. is pursue aggressively because the snapshot score is 95, with 7 profile/role keyword hits and 1 external evidence item(s).",
+      "thesis": "Frontend Engineer at BIFROST PTE. LTD. is pursue aggressively because the snapshot score is 95, with 7 profile/role keyword hits and 2 external evidence item(s).",
       "evidence": {
         "keywordHits": [
           "Frontend Engineer",
@@ -123,7 +46,7 @@
           "AI / data / platform signal",
           "remote or hybrid signal"
         ],
-        "evidenceCount": 1,
+        "evidenceCount": 2,
         "compensationLeverage": "high"
       },
       "concerns": [
@@ -139,8 +62,8 @@
       "cvStrategy": [
         "Lead with proof around: Frontend Engineer, JavaScript, React, CSS, API, React.",
         "Use story story-1: frontend product execution.",
-        "Use story story-2: systems and API collaboration.",
-        "Use story story-3: accessibility and quality."
+        "Use story story-2: data-heavy product decisions.",
+        "Use story story-3: systems and API collaboration."
       ],
       "compensationStrategy": {
         "leverage": "high",
@@ -156,13 +79,13 @@
         },
         {
           "id": "story-2",
-          "theme": "systems and API collaboration",
+          "theme": "data-heavy product decisions",
           "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
           "relevance": 3
         },
         {
           "id": "story-3",
-          "theme": "accessibility and quality",
+          "theme": "systems and API collaboration",
           "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
           "relevance": 3
         }
@@ -177,7 +100,7 @@
       "grade": "A",
       "confidence": "medium",
       "decision": "pursue aggressively",
-      "thesis": "Frontend Engineer at BIFROST PTE. LTD. is pursue aggressively because the snapshot score is 95, with 7 profile/role keyword hits and 1 external evidence item(s).",
+      "thesis": "Frontend Engineer at BIFROST PTE. LTD. is pursue aggressively because the snapshot score is 95, with 7 profile/role keyword hits and 2 external evidence item(s).",
       "evidence": {
         "keywordHits": [
           "Frontend Engineer",
@@ -206,7 +129,7 @@
           "AI / data / platform signal",
           "remote or hybrid signal"
         ],
-        "evidenceCount": 1,
+        "evidenceCount": 2,
         "compensationLeverage": "high"
       },
       "concerns": [
@@ -222,8 +145,8 @@
       "cvStrategy": [
         "Lead with proof around: Frontend Engineer, JavaScript, React, CSS, API, React.",
         "Use story story-1: frontend product execution.",
-        "Use story story-2: systems and API collaboration.",
-        "Use story story-3: accessibility and quality."
+        "Use story story-2: data-heavy product decisions.",
+        "Use story story-3: systems and API collaboration."
       ],
       "compensationStrategy": {
         "leverage": "high",
@@ -239,13 +162,13 @@
         },
         {
           "id": "story-2",
-          "theme": "systems and API collaboration",
+          "theme": "data-heavy product decisions",
           "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
           "relevance": 3
         },
         {
           "id": "story-3",
-          "theme": "accessibility and quality",
+          "theme": "systems and API collaboration",
           "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
           "relevance": 3
         }
@@ -300,8 +223,8 @@
       "cvStrategy": [
         "Lead with proof around: Frontend Engineer, JavaScript, TypeScript, React, CSS, API.",
         "Use story story-1: frontend product execution.",
-        "Use story story-2: systems and API collaboration.",
-        "Use story story-3: accessibility and quality."
+        "Use story story-2: data-heavy product decisions.",
+        "Use story story-3: systems and API collaboration."
       ],
       "compensationStrategy": {
         "leverage": "high",
@@ -317,13 +240,13 @@
         },
         {
           "id": "story-2",
-          "theme": "systems and API collaboration",
+          "theme": "data-heavy product decisions",
           "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
           "relevance": 4
         },
         {
           "id": "story-3",
-          "theme": "accessibility and quality",
+          "theme": "systems and API collaboration",
           "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
           "relevance": 4
         }
@@ -369,8 +292,8 @@
       "cvStrategy": [
         "Lead with proof around: JavaScript, TypeScript, API, TypeScript, Product Engineer.",
         "Use story story-1: frontend product execution.",
-        "Use story story-2: systems and API collaboration.",
-        "Use story story-3: accessibility and quality."
+        "Use story story-2: data-heavy product decisions.",
+        "Use story story-3: systems and API collaboration."
       ],
       "compensationStrategy": {
         "leverage": "high",
@@ -386,13 +309,13 @@
         },
         {
           "id": "story-2",
-          "theme": "systems and API collaboration",
+          "theme": "data-heavy product decisions",
           "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
           "relevance": 2
         },
         {
           "id": "story-3",
-          "theme": "accessibility and quality",
+          "theme": "systems and API collaboration",
           "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
           "relevance": 2
         }
@@ -439,8 +362,8 @@
       "cvStrategy": [
         "Lead with proof around: API, Full Stack Engineer.",
         "Use story story-1: frontend product execution.",
-        "Use story story-2: systems and API collaboration.",
-        "Use story story-3: accessibility and quality."
+        "Use story story-2: data-heavy product decisions.",
+        "Use story story-3: systems and API collaboration."
       ],
       "compensationStrategy": {
         "leverage": "high",
@@ -456,13 +379,13 @@
         },
         {
           "id": "story-2",
-          "theme": "systems and API collaboration",
+          "theme": "data-heavy product decisions",
           "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
           "relevance": 0
         },
         {
           "id": "story-3",
-          "theme": "accessibility and quality",
+          "theme": "systems and API collaboration",
           "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
           "relevance": 0
         }
@@ -511,8 +434,8 @@
       "cvStrategy": [
         "Lead with proof around: Frontend Engineer, API, Frontend Engineer.",
         "Use story story-1: frontend product execution.",
-        "Use story story-2: systems and API collaboration.",
-        "Use story story-3: accessibility and quality."
+        "Use story story-2: data-heavy product decisions.",
+        "Use story story-3: systems and API collaboration."
       ],
       "compensationStrategy": {
         "leverage": "high",
@@ -528,13 +451,13 @@
         },
         {
           "id": "story-2",
-          "theme": "systems and API collaboration",
+          "theme": "data-heavy product decisions",
           "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
           "relevance": 0
         },
         {
           "id": "story-3",
-          "theme": "accessibility and quality",
+          "theme": "systems and API collaboration",
           "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
           "relevance": 0
         }
@@ -586,8 +509,8 @@
       "cvStrategy": [
         "Lead with proof around: Frontend Engineer, TypeScript, React, API, dashboard, design system.",
         "Use story story-1: frontend product execution.",
-        "Use story story-2: systems and API collaboration.",
-        "Use story story-3: accessibility and quality."
+        "Use story story-2: data-heavy product decisions.",
+        "Use story story-3: systems and API collaboration."
       ],
       "compensationStrategy": {
         "leverage": "high",
@@ -603,13 +526,13 @@
         },
         {
           "id": "story-2",
-          "theme": "systems and API collaboration",
+          "theme": "data-heavy product decisions",
           "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
           "relevance": 2
         },
         {
           "id": "story-3",
-          "theme": "accessibility and quality",
+          "theme": "systems and API collaboration",
           "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
           "relevance": 2
         }
@@ -624,7 +547,7 @@
       "grade": "A",
       "confidence": "medium",
       "decision": "pursue aggressively",
-      "thesis": "Staff Software Engineer, Frontend at GlossGenius is pursue aggressively because the snapshot score is 94, with 13 profile/role keyword hits and 0 external evidence item(s).",
+      "thesis": "Staff Software Engineer, Frontend at GlossGenius is pursue aggressively because the snapshot score is 94, with 13 profile/role keyword hits and 1 external evidence item(s).",
       "evidence": {
         "keywordHits": [
           "Frontend Engineer",
@@ -644,22 +567,25 @@
         "keywordMisses": [
           "go"
         ],
-        "researchSignals": [],
-        "evidenceCount": 0,
+        "researchSignals": [
+          "AI / data / platform signal"
+        ],
+        "evidenceCount": 1,
         "compensationLeverage": "high"
       },
-      "concerns": [
-        "External company evidence is thin; run deep research with a search API."
-      ],
+      "concerns": [],
       "interviewStrategy": [
         "Ask why the role is open and what success means in the first 90 days.",
-        "Probe team ownership, roadmap pressure, and cross-functional interfaces."
+        "Probe team ownership, roadmap pressure, and cross-functional interfaces.",
+        "What business unit owns the Staff Software Engineer, Frontend role?",
+        "What measurable outcomes would this team expect in the first 90 days?",
+        "What recent company/product signals change the risk or upside?"
       ],
       "cvStrategy": [
         "Lead with proof around: Frontend Engineer, JavaScript, TypeScript, React, CSS, Accessibility.",
         "Use story story-1: frontend product execution.",
-        "Use story story-2: systems and API collaboration.",
-        "Use story story-3: accessibility and quality."
+        "Use story story-2: data-heavy product decisions.",
+        "Use story story-3: systems and API collaboration."
       ],
       "compensationStrategy": {
         "leverage": "high",
@@ -675,13 +601,13 @@
         },
         {
           "id": "story-2",
-          "theme": "systems and API collaboration",
+          "theme": "data-heavy product decisions",
           "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
           "relevance": 5
         },
         {
           "id": "story-3",
-          "theme": "accessibility and quality",
+          "theme": "systems and API collaboration",
           "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
           "relevance": 5
         }
@@ -696,7 +622,7 @@
       "grade": "A",
       "confidence": "medium",
       "decision": "pursue aggressively",
-      "thesis": "Staff Software Engineer, Frontend at GlossGenius is pursue aggressively because the snapshot score is 94, with 13 profile/role keyword hits and 0 external evidence item(s).",
+      "thesis": "Staff Software Engineer, Frontend at GlossGenius is pursue aggressively because the snapshot score is 94, with 13 profile/role keyword hits and 1 external evidence item(s).",
       "evidence": {
         "keywordHits": [
           "Frontend Engineer",
@@ -716,22 +642,25 @@
         "keywordMisses": [
           "go"
         ],
-        "researchSignals": [],
-        "evidenceCount": 0,
+        "researchSignals": [
+          "AI / data / platform signal"
+        ],
+        "evidenceCount": 1,
         "compensationLeverage": "high"
       },
-      "concerns": [
-        "External company evidence is thin; run deep research with a search API."
-      ],
+      "concerns": [],
       "interviewStrategy": [
         "Ask why the role is open and what success means in the first 90 days.",
-        "Probe team ownership, roadmap pressure, and cross-functional interfaces."
+        "Probe team ownership, roadmap pressure, and cross-functional interfaces.",
+        "What business unit owns the Staff Software Engineer, Frontend role?",
+        "What measurable outcomes would this team expect in the first 90 days?",
+        "What recent company/product signals change the risk or upside?"
       ],
       "cvStrategy": [
         "Lead with proof around: Frontend Engineer, JavaScript, TypeScript, React, CSS, Accessibility.",
         "Use story story-1: frontend product execution.",
-        "Use story story-2: systems and API collaboration.",
-        "Use story story-3: accessibility and quality."
+        "Use story story-2: data-heavy product decisions.",
+        "Use story story-3: systems and API collaboration."
       ],
       "compensationStrategy": {
         "leverage": "high",
@@ -747,13 +676,13 @@
         },
         {
           "id": "story-2",
-          "theme": "systems and API collaboration",
+          "theme": "data-heavy product decisions",
           "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
           "relevance": 5
         },
         {
           "id": "story-3",
-          "theme": "accessibility and quality",
+          "theme": "systems and API collaboration",
           "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
           "relevance": 5
         }
@@ -768,7 +697,7 @@
       "grade": "A",
       "confidence": "medium",
       "decision": "pursue aggressively",
-      "thesis": "Staff Software Engineer, Frontend at GlossGenius is pursue aggressively because the snapshot score is 94, with 13 profile/role keyword hits and 0 external evidence item(s).",
+      "thesis": "Staff Software Engineer, Frontend at GlossGenius is pursue aggressively because the snapshot score is 94, with 13 profile/role keyword hits and 1 external evidence item(s).",
       "evidence": {
         "keywordHits": [
           "Frontend Engineer",
@@ -788,22 +717,25 @@
         "keywordMisses": [
           "go"
         ],
-        "researchSignals": [],
-        "evidenceCount": 0,
+        "researchSignals": [
+          "AI / data / platform signal"
+        ],
+        "evidenceCount": 1,
         "compensationLeverage": "high"
       },
-      "concerns": [
-        "External company evidence is thin; run deep research with a search API."
-      ],
+      "concerns": [],
       "interviewStrategy": [
         "Ask why the role is open and what success means in the first 90 days.",
-        "Probe team ownership, roadmap pressure, and cross-functional interfaces."
+        "Probe team ownership, roadmap pressure, and cross-functional interfaces.",
+        "What business unit owns the Staff Software Engineer, Frontend role?",
+        "What measurable outcomes would this team expect in the first 90 days?",
+        "What recent company/product signals change the risk or upside?"
       ],
       "cvStrategy": [
         "Lead with proof around: Frontend Engineer, JavaScript, TypeScript, React, CSS, Accessibility.",
         "Use story story-1: frontend product execution.",
-        "Use story story-2: systems and API collaboration.",
-        "Use story story-3: accessibility and quality."
+        "Use story story-2: data-heavy product decisions.",
+        "Use story story-3: systems and API collaboration."
       ],
       "compensationStrategy": {
         "leverage": "high",
@@ -819,13 +751,13 @@
         },
         {
           "id": "story-2",
-          "theme": "systems and API collaboration",
+          "theme": "data-heavy product decisions",
           "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
           "relevance": 5
         },
         {
           "id": "story-3",
-          "theme": "accessibility and quality",
+          "theme": "systems and API collaboration",
           "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
           "relevance": 5
         }
@@ -871,8 +803,8 @@
       "cvStrategy": [
         "Lead with proof around: Frontend Engineer, TypeScript, React, API, Performance Optimization, TypeScript.",
         "Use story story-1: frontend product execution.",
-        "Use story story-2: systems and API collaboration.",
-        "Use story story-3: accessibility and quality."
+        "Use story story-2: data-heavy product decisions.",
+        "Use story story-3: systems and API collaboration."
       ],
       "compensationStrategy": {
         "leverage": "high",
@@ -888,13 +820,13 @@
         },
         {
           "id": "story-2",
-          "theme": "systems and API collaboration",
+          "theme": "data-heavy product decisions",
           "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
           "relevance": 2
         },
         {
           "id": "story-3",
-          "theme": "accessibility and quality",
+          "theme": "systems and API collaboration",
           "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
           "relevance": 2
         }
@@ -942,8 +874,8 @@
       "cvStrategy": [
         "Lead with proof around: Analytics, API, remote, analytics, Full Stack Engineer.",
         "Use story story-1: frontend product execution.",
-        "Use story story-2: systems and API collaboration.",
-        "Use story story-3: accessibility and quality."
+        "Use story story-2: data-heavy product decisions.",
+        "Use story story-3: systems and API collaboration."
       ],
       "compensationStrategy": {
         "leverage": "high",
@@ -959,13 +891,13 @@
         },
         {
           "id": "story-2",
-          "theme": "systems and API collaboration",
+          "theme": "data-heavy product decisions",
           "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
           "relevance": 0
         },
         {
           "id": "story-3",
-          "theme": "accessibility and quality",
+          "theme": "systems and API collaboration",
           "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
           "relevance": 0
         }
@@ -1010,8 +942,8 @@
       "cvStrategy": [
         "Lead with proof around: Analytics, Performance Optimization, analytics, Product Engineer.",
         "Use story story-1: frontend product execution.",
-        "Use story story-2: systems and API collaboration.",
-        "Use story story-3: accessibility and quality."
+        "Use story story-2: data-heavy product decisions.",
+        "Use story story-3: systems and API collaboration."
       ],
       "compensationStrategy": {
         "leverage": "high",
@@ -1027,13 +959,13 @@
         },
         {
           "id": "story-2",
-          "theme": "systems and API collaboration",
+          "theme": "data-heavy product decisions",
           "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
           "relevance": 0
         },
         {
           "id": "story-3",
-          "theme": "accessibility and quality",
+          "theme": "systems and API collaboration",
           "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
           "relevance": 0
         }
@@ -1086,8 +1018,8 @@
       "cvStrategy": [
         "Lead with proof around: Frontend Engineer, API, Frontend Engineer.",
         "Use story story-1: frontend product execution.",
-        "Use story story-2: systems and API collaboration.",
-        "Use story story-3: accessibility and quality."
+        "Use story story-2: data-heavy product decisions.",
+        "Use story story-3: systems and API collaboration."
       ],
       "compensationStrategy": {
         "leverage": "high",
@@ -1103,13 +1035,13 @@
         },
         {
           "id": "story-2",
-          "theme": "systems and API collaboration",
+          "theme": "data-heavy product decisions",
           "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
           "relevance": 0
         },
         {
           "id": "story-3",
-          "theme": "accessibility and quality",
+          "theme": "systems and API collaboration",
           "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
           "relevance": 0
         }
@@ -1154,8 +1086,8 @@
       "cvStrategy": [
         "Lead with proof around: Analytics, API, analytics, Product Engineer.",
         "Use story story-1: frontend product execution.",
-        "Use story story-2: systems and API collaboration.",
-        "Use story story-3: accessibility and quality."
+        "Use story story-2: data-heavy product decisions.",
+        "Use story story-3: systems and API collaboration."
       ],
       "compensationStrategy": {
         "leverage": "high",
@@ -1171,13 +1103,83 @@
         },
         {
           "id": "story-2",
-          "theme": "systems and API collaboration",
+          "theme": "data-heavy product decisions",
           "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
           "relevance": 0
         },
         {
           "id": "story-3",
-          "theme": "accessibility and quality",
+          "theme": "systems and API collaboration",
+          "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
+          "relevance": 0
+        }
+      ],
+      "llm": null
+    },
+    {
+      "jobKey": "url:https://www.themuse.com/jobs/apple/aiml-site-lead-lead-researcher-foundation-models-f9cd35",
+      "company": "Apple",
+      "title": "AIML - Site Lead & Lead Researcher, Foundation Models",
+      "score": 93,
+      "grade": "A",
+      "confidence": "medium",
+      "decision": "pursue aggressively",
+      "thesis": "AIML - Site Lead & Lead Researcher, Foundation Models at Apple is pursue aggressively because the snapshot score is 93, with 4 profile/role keyword hits and 0 external evidence item(s).",
+      "evidence": {
+        "keywordHits": [
+          "Analytics",
+          "API",
+          "analytics",
+          "Product Engineer"
+        ],
+        "keywordMisses": [
+          "python",
+          "agents",
+          "machine learning",
+          "deep learning",
+          "pytorch",
+          "tensorflow",
+          "growth"
+        ],
+        "researchSignals": [],
+        "evidenceCount": 0,
+        "compensationLeverage": "high"
+      },
+      "concerns": [
+        "External company evidence is thin; run deep research with a search API.",
+        "Profile keyword coverage is weaker than the target role language."
+      ],
+      "interviewStrategy": [
+        "Ask why the role is open and what success means in the first 90 days.",
+        "Probe team ownership, roadmap pressure, and cross-functional interfaces."
+      ],
+      "cvStrategy": [
+        "Lead with proof around: Analytics, API, analytics, Product Engineer.",
+        "Use story story-1: frontend product execution.",
+        "Use story story-2: data-heavy product decisions.",
+        "Use story story-3: systems and API collaboration."
+      ],
+      "compensationStrategy": {
+        "leverage": "high",
+        "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the AIML - Site Lead & Lead Researcher, Foundation Models package, including base, bonus, equity, and review cycle?",
+        "valueAnchor": "Based on the scope of AIML - Site Lead & Lead Researcher, Foundation Models and my fit around Analytics, API, product, data, I would like to calibrate toward the stronger end of the range if the team sees the level match."
+      },
+      "storyHooks": [
+        {
+          "id": "story-1",
+          "theme": "frontend product execution",
+          "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
+          "relevance": 0
+        },
+        {
+          "id": "story-2",
+          "theme": "data-heavy product decisions",
+          "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
+          "relevance": 0
+        },
+        {
+          "id": "story-3",
+          "theme": "systems and API collaboration",
           "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
           "relevance": 0
         }
@@ -1222,8 +1224,8 @@
       "cvStrategy": [
         "Lead with proof around: JavaScript, React, CSS, API, remote, dashboard.",
         "Use story story-1: frontend product execution.",
-        "Use story story-2: systems and API collaboration.",
-        "Use story story-3: accessibility and quality."
+        "Use story story-2: data-heavy product decisions.",
+        "Use story story-3: systems and API collaboration."
       ],
       "compensationStrategy": {
         "leverage": "high",
@@ -1239,13 +1241,13 @@
         },
         {
           "id": "story-2",
-          "theme": "systems and API collaboration",
+          "theme": "data-heavy product decisions",
           "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
           "relevance": 3
         },
         {
           "id": "story-3",
-          "theme": "accessibility and quality",
+          "theme": "systems and API collaboration",
           "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
           "relevance": 3
         }
@@ -1294,8 +1296,8 @@
       "cvStrategy": [
         "Lead with proof around: JavaScript, TypeScript, API, remote, TypeScript, Product Engineer.",
         "Use story story-1: frontend product execution.",
-        "Use story story-2: systems and API collaboration.",
-        "Use story story-3: accessibility and quality."
+        "Use story story-2: data-heavy product decisions.",
+        "Use story story-3: systems and API collaboration."
       ],
       "compensationStrategy": {
         "leverage": "high",
@@ -1311,13 +1313,13 @@
         },
         {
           "id": "story-2",
-          "theme": "systems and API collaboration",
+          "theme": "data-heavy product decisions",
           "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
           "relevance": 2
         },
         {
           "id": "story-3",
-          "theme": "accessibility and quality",
+          "theme": "systems and API collaboration",
           "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
           "relevance": 2
         }
@@ -1358,8 +1360,8 @@
       "cvStrategy": [
         "Lead with proof around: API, remote, Product Engineer.",
         "Use story story-1: frontend product execution.",
-        "Use story story-2: systems and API collaboration.",
-        "Use story story-3: accessibility and quality."
+        "Use story story-2: data-heavy product decisions.",
+        "Use story story-3: systems and API collaboration."
       ],
       "compensationStrategy": {
         "leverage": "high",
@@ -1375,13 +1377,13 @@
         },
         {
           "id": "story-2",
-          "theme": "systems and API collaboration",
+          "theme": "data-heavy product decisions",
           "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
           "relevance": 0
         },
         {
           "id": "story-3",
-          "theme": "accessibility and quality",
+          "theme": "systems and API collaboration",
           "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
           "relevance": 0
         }
@@ -1425,8 +1427,8 @@
       "cvStrategy": [
         "Lead with proof around: TypeScript, React, API, Figma, TypeScript, React.",
         "Use story story-1: frontend product execution.",
-        "Use story story-2: systems and API collaboration.",
-        "Use story story-3: accessibility and quality."
+        "Use story story-2: data-heavy product decisions.",
+        "Use story story-3: systems and API collaboration."
       ],
       "compensationStrategy": {
         "leverage": "high",
@@ -1442,13 +1444,13 @@
         },
         {
           "id": "story-2",
-          "theme": "systems and API collaboration",
+          "theme": "data-heavy product decisions",
           "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
           "relevance": 2
         },
         {
           "id": "story-3",
-          "theme": "accessibility and quality",
+          "theme": "systems and API collaboration",
           "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
           "relevance": 2
         }
@@ -1498,8 +1500,8 @@
       "cvStrategy": [
         "Lead with proof around: TypeScript, API, Design Systems, design system, TypeScript, Product Engineer.",
         "Use story story-1: frontend product execution.",
-        "Use story story-2: systems and API collaboration.",
-        "Use story story-3: accessibility and quality."
+        "Use story story-2: data-heavy product decisions.",
+        "Use story story-3: systems and API collaboration."
       ],
       "compensationStrategy": null,
       "storyHooks": [
@@ -1511,13 +1513,13 @@
         },
         {
           "id": "story-2",
-          "theme": "systems and API collaboration",
+          "theme": "data-heavy product decisions",
           "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
           "relevance": 1
         },
         {
           "id": "story-3",
-          "theme": "accessibility and quality",
+          "theme": "systems and API collaboration",
           "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
           "relevance": 1
         }
@@ -1558,8 +1560,8 @@
       "cvStrategy": [
         "Lead with proof around: JavaScript, TypeScript, TypeScript, Product Engineer.",
         "Use story story-1: frontend product execution.",
-        "Use story story-2: systems and API collaboration.",
-        "Use story story-3: accessibility and quality."
+        "Use story story-2: data-heavy product decisions.",
+        "Use story story-3: systems and API collaboration."
       ],
       "compensationStrategy": null,
       "storyHooks": [
@@ -1571,13 +1573,13 @@
         },
         {
           "id": "story-2",
-          "theme": "systems and API collaboration",
+          "theme": "data-heavy product decisions",
           "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
           "relevance": 2
         },
         {
           "id": "story-3",
-          "theme": "accessibility and quality",
+          "theme": "systems and API collaboration",
           "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
           "relevance": 2
         }
@@ -1622,8 +1624,8 @@
       "cvStrategy": [
         "Lead with proof around: TypeScript, React, TypeScript, React, Full Stack Engineer.",
         "Use story story-1: frontend product execution.",
-        "Use story story-2: systems and API collaboration.",
-        "Use story story-3: accessibility and quality."
+        "Use story story-2: data-heavy product decisions.",
+        "Use story story-3: systems and API collaboration."
       ],
       "compensationStrategy": null,
       "storyHooks": [
@@ -1635,13 +1637,13 @@
         },
         {
           "id": "story-2",
-          "theme": "systems and API collaboration",
+          "theme": "data-heavy product decisions",
           "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
           "relevance": 2
         },
         {
           "id": "story-3",
-          "theme": "accessibility and quality",
+          "theme": "systems and API collaboration",
           "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
           "relevance": 2
         }
@@ -1689,8 +1691,8 @@
       "cvStrategy": [
         "Lead with proof around: Frontend Engineer, JavaScript, TypeScript, React, CSS, Accessibility.",
         "Use story story-1: frontend product execution.",
-        "Use story story-2: systems and API collaboration.",
-        "Use story story-3: accessibility and quality."
+        "Use story story-2: data-heavy product decisions.",
+        "Use story story-3: systems and API collaboration."
       ],
       "compensationStrategy": null,
       "storyHooks": [
@@ -1702,13 +1704,13 @@
         },
         {
           "id": "story-2",
-          "theme": "systems and API collaboration",
+          "theme": "data-heavy product decisions",
           "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
           "relevance": 5
         },
         {
           "id": "story-3",
-          "theme": "accessibility and quality",
+          "theme": "systems and API collaboration",
           "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
           "relevance": 5
         }
@@ -1754,8 +1756,8 @@
       "cvStrategy": [
         "Lead with proof around: Frontend Engineer, JavaScript, TypeScript, React, API, Performance Optimization.",
         "Use story story-1: frontend product execution.",
-        "Use story story-2: systems and API collaboration.",
-        "Use story story-3: accessibility and quality."
+        "Use story story-2: data-heavy product decisions.",
+        "Use story story-3: systems and API collaboration."
       ],
       "compensationStrategy": null,
       "storyHooks": [
@@ -1767,13 +1769,13 @@
         },
         {
           "id": "story-2",
-          "theme": "systems and API collaboration",
+          "theme": "data-heavy product decisions",
           "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
           "relevance": 3
         },
         {
           "id": "story-3",
-          "theme": "accessibility and quality",
+          "theme": "systems and API collaboration",
           "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
           "relevance": 3
         }
@@ -1886,6 +1888,26 @@
       "keywordMisses": [
         "spark",
         "excel"
+      ],
+      "decision": "pursue selectively",
+      "layer": "B"
+    },
+    {
+      "jobKey": "url:https://justjoin.it/job-offer/n-ix-senior-scala-engineer-krakow-scala-15ebf7dd",
+      "company": "N-iX",
+      "title": "Senior Scala Engineer",
+      "score": 78,
+      "grade": "B",
+      "roleFit": 45,
+      "url": "https://justjoin.it/job-offer/n-ix-senior-scala-engineer-krakow-scala-15ebf7dd",
+      "location": "Kraków, PL",
+      "keywordHits": [
+        "Analytics",
+        "analytics"
+      ],
+      "keywordMisses": [
+        "docker",
+        "kubernetes"
       ],
       "decision": "pursue selectively",
       "layer": "B"
@@ -2208,18 +2230,18 @@
       "layer": "B"
     },
     {
-      "jobKey": "url:https://remoteok.com/remote-jobs/remote-asset-protection-specialist-the-home-depot-canada-1132808",
-      "company": "The Home Depot Canada",
-      "title": "Asset Protection Specialist",
-      "score": 72,
+      "jobKey": "url:https://www.mycareersfuture.gov.sg/job/e0055495beaa190db29f3a0a3b69df7e",
+      "company": "EXYTE SINGAPORE PTE. LTD.",
+      "title": "Senior Electrical Engineer",
+      "score": 73,
       "grade": "B",
       "roleFit": 45,
-      "url": "https://remoteok.com/remote-jobs/remote-asset-protection-specialist-the-home-depot-canada-1132808",
-      "location": "Markham,",
-      "keywordHits": [
-        "remote"
+      "url": "https://www.mycareersfuture.gov.sg/job/e0055495beaa190db29f3a0a3b69df7e",
+      "location": "INTERNATIONAL BUSINESS PARK, D22 Jurong, Jurong Island, Tuas, Singapore",
+      "keywordHits": [],
+      "keywordMisses": [
+        "excel"
       ],
-      "keywordMisses": [],
       "decision": "pursue selectively",
       "layer": "B"
     },
@@ -2304,34 +2326,6 @@
       "layer": "B"
     },
     {
-      "jobKey": "url:https://www.mycareersfuture.gov.sg/job/ff08de21776f97b13ff3a3e9074f72c7",
-      "company": "AIM RECRUIT CONSULTANCY PTE. LIMITED",
-      "title": "Engineer (Project) @Chai Chee",
-      "score": 71,
-      "grade": "C",
-      "roleFit": 45,
-      "url": "https://www.mycareersfuture.gov.sg/job/ff08de21776f97b13ff3a3e9074f72c7",
-      "location": "Islandwide, Singapore",
-      "keywordHits": [],
-      "keywordMisses": [],
-      "decision": "pursue selectively",
-      "layer": "B"
-    },
-    {
-      "jobKey": "url:https://www.mycareersfuture.gov.sg/job/95694a9f53a1eae18681e70594392090",
-      "company": "AIM RECRUIT CONSULTANCY PTE. LIMITED",
-      "title": "Mechanical Engineer /M&E - Central",
-      "score": 71,
-      "grade": "C",
-      "roleFit": 45,
-      "url": "https://www.mycareersfuture.gov.sg/job/95694a9f53a1eae18681e70594392090",
-      "location": "Islandwide, Singapore",
-      "keywordHits": [],
-      "keywordMisses": [],
-      "decision": "pursue selectively",
-      "layer": "B"
-    },
-    {
       "jobKey": "url:https://www.mycareersfuture.gov.sg/job/b82add6aaaa170cc3524c563ad11b964",
       "company": "ECSAL TECHNOLOGIES PTE. LTD.",
       "title": "Software Engineer - PLC (Senior)",
@@ -2364,47 +2358,44 @@
       "layer": "B"
     },
     {
-      "jobKey": "url:https://www.daijob.com/en/jobs/detail/1521847",
-      "company": "I-PEX Inc.",
-      "title": "[2027 New Graduates] Generalist Positions in Science and Engineering",
+      "jobKey": "url:https://www.mycareersfuture.gov.sg/job/432ffe60521245b7145edc131fb419be",
+      "company": "EXYTE SINGAPORE PTE. LTD.",
+      "title": "Senior Engineer Mechanical",
       "score": 70,
       "grade": "C",
       "roleFit": 45,
-      "url": "https://www.daijob.com/en/jobs/detail/1521847",
-      "location": "Fukuoka, JP / Shimane, JP",
+      "url": "https://www.mycareersfuture.gov.sg/job/432ffe60521245b7145edc131fb419be",
+      "location": "INTERNATIONAL BUSINESS PARK, D22 Jurong, Jurong Island, Tuas, Singapore",
       "keywordHits": [],
       "keywordMisses": [],
       "decision": "pursue selectively",
       "layer": "B"
     },
     {
-      "jobKey": "url:https://www.mycareersfuture.gov.sg/job/6074bd051912596042424a33c8d147bd",
-      "company": "AIM RECRUIT CONSULTANCY PTE. LIMITED",
-      "title": "Senior Field Service Engineer @Jurong East",
+      "jobKey": "url:https://www.mycareersfuture.gov.sg/job/8d05e226ad9bd0527eee4e19991dc3e5",
+      "company": "EXYTE SINGAPORE PTE. LTD.",
+      "title": "Engineer, Electrical",
       "score": 70,
       "grade": "C",
       "roleFit": 45,
-      "url": "https://www.mycareersfuture.gov.sg/job/6074bd051912596042424a33c8d147bd",
-      "location": "Islandwide, Singapore",
+      "url": "https://www.mycareersfuture.gov.sg/job/8d05e226ad9bd0527eee4e19991dc3e5",
+      "location": "INTERNATIONAL BUSINESS PARK, D22 Jurong, Jurong Island, Tuas, Singapore",
       "keywordHits": [],
       "keywordMisses": [],
       "decision": "pursue selectively",
       "layer": "B"
     },
     {
-      "jobKey": "url:https://justjoin.it/job-offer/kubo-cybersecurity-engineer-warszawa-security",
-      "company": "KUBO",
-      "title": "Cybersecurity Engineer",
+      "jobKey": "url:https://www.mycareersfuture.gov.sg/job/be92cbd166b6d6394ea758e03c32374b",
+      "company": "EXYTE SINGAPORE PTE. LTD.",
+      "title": "Engineer Civil/Structural",
       "score": 70,
       "grade": "C",
       "roleFit": 45,
-      "url": "https://justjoin.it/job-offer/kubo-cybersecurity-engineer-warszawa-security",
-      "location": "Warszawa, PL",
+      "url": "https://www.mycareersfuture.gov.sg/job/be92cbd166b6d6394ea758e03c32374b",
+      "location": "INTERNATIONAL BUSINESS PARK, D22 Jurong, Jurong Island, Tuas, Singapore",
       "keywordHits": [],
-      "keywordMisses": [
-        "python",
-        "java"
-      ],
+      "keywordMisses": [],
       "decision": "pursue selectively",
       "layer": "B"
     },
@@ -2418,6 +2409,22 @@
       "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Taiwan-Hsinchu/Senior-Package-Engineer_JR2016717-1",
       "location": "Taiwan, Hsinchu",
       "keywordHits": [],
+      "keywordMisses": [],
+      "decision": "hold / compare",
+      "layer": "B"
+    },
+    {
+      "jobKey": "url:https://remoteok.com/remote-jobs/remote-general-production-dana-incorporated-1132953",
+      "company": "Dana Incorporated",
+      "title": "General Production",
+      "score": 69,
+      "grade": "C",
+      "roleFit": 45,
+      "url": "https://remoteok.com/remote-jobs/remote-general-production-dana-incorporated-1132953",
+      "location": "Mount Forest,",
+      "keywordHits": [
+        "remote"
+      ],
       "keywordMisses": [],
       "decision": "hold / compare",
       "layer": "B"
@@ -2746,6 +2753,30 @@
       "layer": "C"
     },
     {
+      "jobKey": "url:https://www.themuse.com/jobs/kyndryl/mod-engineer-fde-048b4a",
+      "company": "Kyndryl",
+      "title": "Mod Engineer (FDE)",
+      "score": 92,
+      "grade": "A",
+      "roleFit": 92,
+      "url": "https://www.themuse.com/jobs/kyndryl/mod-engineer-fde-048b4a",
+      "location": "Bangalore, India / Flexible / Remote",
+      "keywordHits": [
+        "TypeScript",
+        "React",
+        "API",
+        "TypeScript"
+      ],
+      "topGap": "python",
+      "mainGaps": [
+        "python",
+        "go",
+        "airflow",
+        "llm"
+      ],
+      "layer": "C"
+    },
+    {
       "jobKey": "url:https://www.themuse.com/jobs/zillow/senior-engineering-manager",
       "company": "Zillow",
       "title": "Senior Engineering Manager",
@@ -2766,30 +2797,6 @@
         "aws",
         "gcp",
         "operations"
-      ],
-      "layer": "C"
-    },
-    {
-      "jobKey": "url:https://www.themuse.com/jobs/kyndryl/mod-engineer-fde-669075",
-      "company": "Kyndryl",
-      "title": "Mod Engineer (FDE)",
-      "score": 92,
-      "grade": "A",
-      "roleFit": 92,
-      "url": "https://www.themuse.com/jobs/kyndryl/mod-engineer-fde-669075",
-      "location": "Bangalore, India / Flexible / Remote",
-      "keywordHits": [
-        "TypeScript",
-        "React",
-        "API",
-        "TypeScript"
-      ],
-      "topGap": "python",
-      "mainGaps": [
-        "python",
-        "airflow",
-        "llm",
-        "agents"
       ],
       "layer": "C"
     },
@@ -3109,83 +3116,6 @@
   ],
   "dossiers": [
     {
-      "jobKey": "url:https://www.mycareersfuture.gov.sg/job/07eafbe6994e2090a0c2a6a6a6111e62",
-      "company": "VANGUARD SOFTWARE PTE. LTD.",
-      "title": "Expert Frontend Engineer (React.JS & React Native)",
-      "score": 95,
-      "grade": "A",
-      "confidence": "high",
-      "decision": "pursue aggressively",
-      "thesis": "Expert Frontend Engineer (React.JS & React Native) at VANGUARD SOFTWARE PTE. LTD. is pursue aggressively because the snapshot score is 95, with 13 profile/role keyword hits and 5 external evidence item(s).",
-      "evidence": {
-        "keywordHits": [
-          "Frontend Engineer",
-          "JavaScript",
-          "TypeScript",
-          "React",
-          "Next.js",
-          "CSS",
-          "Accessibility",
-          "API",
-          "Design Systems",
-          "design system",
-          "TypeScript",
-          "React",
-          "Frontend Engineer"
-        ],
-        "keywordMisses": [
-          "html",
-          "growth"
-        ],
-        "researchSignals": [
-          "AI / data / platform signal",
-          "remote or hybrid signal"
-        ],
-        "evidenceCount": 5,
-        "compensationLeverage": "high"
-      },
-      "concerns": [],
-      "interviewStrategy": [
-        "Ask why the role is open and what success means in the first 90 days.",
-        "Probe team ownership, roadmap pressure, and cross-functional interfaces.",
-        "What business unit owns the Expert Frontend Engineer (React.JS & React Native) role?",
-        "What measurable outcomes would this team expect in the first 90 days?",
-        "What recent company/product signals change the risk or upside?"
-      ],
-      "cvStrategy": [
-        "Lead with proof around: Frontend Engineer, JavaScript, TypeScript, React, Next.js, CSS.",
-        "Use story story-1: frontend product execution.",
-        "Use story story-2: systems and API collaboration.",
-        "Use story story-3: accessibility and quality."
-      ],
-      "compensationStrategy": {
-        "leverage": "high",
-        "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Expert Frontend Engineer (React.JS & React Native) package, including base, bonus, equity, and review cycle?",
-        "valueAnchor": "Based on the scope of Expert Frontend Engineer (React.JS & React Native) and my fit around JavaScript, TypeScript, React, Next.js, I would like to calibrate toward the stronger end of the range if the team sees the level match."
-      },
-      "storyHooks": [
-        {
-          "id": "story-1",
-          "theme": "frontend product execution",
-          "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
-          "relevance": 6
-        },
-        {
-          "id": "story-2",
-          "theme": "systems and API collaboration",
-          "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
-          "relevance": 6
-        },
-        {
-          "id": "story-3",
-          "theme": "accessibility and quality",
-          "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
-          "relevance": 6
-        }
-      ],
-      "llm": null
-    },
-    {
       "jobKey": "url:https://www.mycareersfuture.gov.sg/job/dc06e8c5f714c11bfb2e053ac7ee2276",
       "company": "BIFROST PTE. LTD.",
       "title": "Frontend Engineer",
@@ -3193,7 +3123,7 @@
       "grade": "A",
       "confidence": "medium",
       "decision": "pursue aggressively",
-      "thesis": "Frontend Engineer at BIFROST PTE. LTD. is pursue aggressively because the snapshot score is 95, with 7 profile/role keyword hits and 1 external evidence item(s).",
+      "thesis": "Frontend Engineer at BIFROST PTE. LTD. is pursue aggressively because the snapshot score is 95, with 7 profile/role keyword hits and 2 external evidence item(s).",
       "evidence": {
         "keywordHits": [
           "Frontend Engineer",
@@ -3222,7 +3152,7 @@
           "AI / data / platform signal",
           "remote or hybrid signal"
         ],
-        "evidenceCount": 1,
+        "evidenceCount": 2,
         "compensationLeverage": "high"
       },
       "concerns": [
@@ -3238,8 +3168,8 @@
       "cvStrategy": [
         "Lead with proof around: Frontend Engineer, JavaScript, React, CSS, API, React.",
         "Use story story-1: frontend product execution.",
-        "Use story story-2: systems and API collaboration.",
-        "Use story story-3: accessibility and quality."
+        "Use story story-2: data-heavy product decisions.",
+        "Use story story-3: systems and API collaboration."
       ],
       "compensationStrategy": {
         "leverage": "high",
@@ -3255,13 +3185,13 @@
         },
         {
           "id": "story-2",
-          "theme": "systems and API collaboration",
+          "theme": "data-heavy product decisions",
           "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
           "relevance": 3
         },
         {
           "id": "story-3",
-          "theme": "accessibility and quality",
+          "theme": "systems and API collaboration",
           "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
           "relevance": 3
         }
@@ -3276,7 +3206,7 @@
       "grade": "A",
       "confidence": "medium",
       "decision": "pursue aggressively",
-      "thesis": "Frontend Engineer at BIFROST PTE. LTD. is pursue aggressively because the snapshot score is 95, with 7 profile/role keyword hits and 1 external evidence item(s).",
+      "thesis": "Frontend Engineer at BIFROST PTE. LTD. is pursue aggressively because the snapshot score is 95, with 7 profile/role keyword hits and 2 external evidence item(s).",
       "evidence": {
         "keywordHits": [
           "Frontend Engineer",
@@ -3305,7 +3235,7 @@
           "AI / data / platform signal",
           "remote or hybrid signal"
         ],
-        "evidenceCount": 1,
+        "evidenceCount": 2,
         "compensationLeverage": "high"
       },
       "concerns": [
@@ -3321,8 +3251,8 @@
       "cvStrategy": [
         "Lead with proof around: Frontend Engineer, JavaScript, React, CSS, API, React.",
         "Use story story-1: frontend product execution.",
-        "Use story story-2: systems and API collaboration.",
-        "Use story story-3: accessibility and quality."
+        "Use story story-2: data-heavy product decisions.",
+        "Use story story-3: systems and API collaboration."
       ],
       "compensationStrategy": {
         "leverage": "high",
@@ -3338,13 +3268,13 @@
         },
         {
           "id": "story-2",
-          "theme": "systems and API collaboration",
+          "theme": "data-heavy product decisions",
           "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
           "relevance": 3
         },
         {
           "id": "story-3",
-          "theme": "accessibility and quality",
+          "theme": "systems and API collaboration",
           "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
           "relevance": 3
         }
@@ -3399,8 +3329,8 @@
       "cvStrategy": [
         "Lead with proof around: Frontend Engineer, JavaScript, TypeScript, React, CSS, API.",
         "Use story story-1: frontend product execution.",
-        "Use story story-2: systems and API collaboration.",
-        "Use story story-3: accessibility and quality."
+        "Use story story-2: data-heavy product decisions.",
+        "Use story story-3: systems and API collaboration."
       ],
       "compensationStrategy": {
         "leverage": "high",
@@ -3416,13 +3346,13 @@
         },
         {
           "id": "story-2",
-          "theme": "systems and API collaboration",
+          "theme": "data-heavy product decisions",
           "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
           "relevance": 4
         },
         {
           "id": "story-3",
-          "theme": "accessibility and quality",
+          "theme": "systems and API collaboration",
           "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
           "relevance": 4
         }
@@ -3468,8 +3398,8 @@
       "cvStrategy": [
         "Lead with proof around: JavaScript, TypeScript, API, TypeScript, Product Engineer.",
         "Use story story-1: frontend product execution.",
-        "Use story story-2: systems and API collaboration.",
-        "Use story story-3: accessibility and quality."
+        "Use story story-2: data-heavy product decisions.",
+        "Use story story-3: systems and API collaboration."
       ],
       "compensationStrategy": {
         "leverage": "high",
@@ -3485,13 +3415,13 @@
         },
         {
           "id": "story-2",
-          "theme": "systems and API collaboration",
+          "theme": "data-heavy product decisions",
           "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
           "relevance": 2
         },
         {
           "id": "story-3",
-          "theme": "accessibility and quality",
+          "theme": "systems and API collaboration",
           "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
           "relevance": 2
         }
@@ -3538,8 +3468,8 @@
       "cvStrategy": [
         "Lead with proof around: API, Full Stack Engineer.",
         "Use story story-1: frontend product execution.",
-        "Use story story-2: systems and API collaboration.",
-        "Use story story-3: accessibility and quality."
+        "Use story story-2: data-heavy product decisions.",
+        "Use story story-3: systems and API collaboration."
       ],
       "compensationStrategy": {
         "leverage": "high",
@@ -3555,13 +3485,13 @@
         },
         {
           "id": "story-2",
-          "theme": "systems and API collaboration",
+          "theme": "data-heavy product decisions",
           "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
           "relevance": 0
         },
         {
           "id": "story-3",
-          "theme": "accessibility and quality",
+          "theme": "systems and API collaboration",
           "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
           "relevance": 0
         }
@@ -3610,8 +3540,8 @@
       "cvStrategy": [
         "Lead with proof around: Frontend Engineer, API, Frontend Engineer.",
         "Use story story-1: frontend product execution.",
-        "Use story story-2: systems and API collaboration.",
-        "Use story story-3: accessibility and quality."
+        "Use story story-2: data-heavy product decisions.",
+        "Use story story-3: systems and API collaboration."
       ],
       "compensationStrategy": {
         "leverage": "high",
@@ -3627,13 +3557,13 @@
         },
         {
           "id": "story-2",
-          "theme": "systems and API collaboration",
+          "theme": "data-heavy product decisions",
           "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
           "relevance": 0
         },
         {
           "id": "story-3",
-          "theme": "accessibility and quality",
+          "theme": "systems and API collaboration",
           "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
           "relevance": 0
         }
@@ -3685,8 +3615,8 @@
       "cvStrategy": [
         "Lead with proof around: Frontend Engineer, TypeScript, React, API, dashboard, design system.",
         "Use story story-1: frontend product execution.",
-        "Use story story-2: systems and API collaboration.",
-        "Use story story-3: accessibility and quality."
+        "Use story story-2: data-heavy product decisions.",
+        "Use story story-3: systems and API collaboration."
       ],
       "compensationStrategy": {
         "leverage": "high",
@@ -3702,13 +3632,13 @@
         },
         {
           "id": "story-2",
-          "theme": "systems and API collaboration",
+          "theme": "data-heavy product decisions",
           "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
           "relevance": 2
         },
         {
           "id": "story-3",
-          "theme": "accessibility and quality",
+          "theme": "systems and API collaboration",
           "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
           "relevance": 2
         }
@@ -3723,7 +3653,7 @@
       "grade": "A",
       "confidence": "medium",
       "decision": "pursue aggressively",
-      "thesis": "Staff Software Engineer, Frontend at GlossGenius is pursue aggressively because the snapshot score is 94, with 13 profile/role keyword hits and 0 external evidence item(s).",
+      "thesis": "Staff Software Engineer, Frontend at GlossGenius is pursue aggressively because the snapshot score is 94, with 13 profile/role keyword hits and 1 external evidence item(s).",
       "evidence": {
         "keywordHits": [
           "Frontend Engineer",
@@ -3743,22 +3673,25 @@
         "keywordMisses": [
           "go"
         ],
-        "researchSignals": [],
-        "evidenceCount": 0,
+        "researchSignals": [
+          "AI / data / platform signal"
+        ],
+        "evidenceCount": 1,
         "compensationLeverage": "high"
       },
-      "concerns": [
-        "External company evidence is thin; run deep research with a search API."
-      ],
+      "concerns": [],
       "interviewStrategy": [
         "Ask why the role is open and what success means in the first 90 days.",
-        "Probe team ownership, roadmap pressure, and cross-functional interfaces."
+        "Probe team ownership, roadmap pressure, and cross-functional interfaces.",
+        "What business unit owns the Staff Software Engineer, Frontend role?",
+        "What measurable outcomes would this team expect in the first 90 days?",
+        "What recent company/product signals change the risk or upside?"
       ],
       "cvStrategy": [
         "Lead with proof around: Frontend Engineer, JavaScript, TypeScript, React, CSS, Accessibility.",
         "Use story story-1: frontend product execution.",
-        "Use story story-2: systems and API collaboration.",
-        "Use story story-3: accessibility and quality."
+        "Use story story-2: data-heavy product decisions.",
+        "Use story story-3: systems and API collaboration."
       ],
       "compensationStrategy": {
         "leverage": "high",
@@ -3774,13 +3707,13 @@
         },
         {
           "id": "story-2",
-          "theme": "systems and API collaboration",
+          "theme": "data-heavy product decisions",
           "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
           "relevance": 5
         },
         {
           "id": "story-3",
-          "theme": "accessibility and quality",
+          "theme": "systems and API collaboration",
           "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
           "relevance": 5
         }
@@ -3795,7 +3728,7 @@
       "grade": "A",
       "confidence": "medium",
       "decision": "pursue aggressively",
-      "thesis": "Staff Software Engineer, Frontend at GlossGenius is pursue aggressively because the snapshot score is 94, with 13 profile/role keyword hits and 0 external evidence item(s).",
+      "thesis": "Staff Software Engineer, Frontend at GlossGenius is pursue aggressively because the snapshot score is 94, with 13 profile/role keyword hits and 1 external evidence item(s).",
       "evidence": {
         "keywordHits": [
           "Frontend Engineer",
@@ -3815,22 +3748,25 @@
         "keywordMisses": [
           "go"
         ],
-        "researchSignals": [],
-        "evidenceCount": 0,
+        "researchSignals": [
+          "AI / data / platform signal"
+        ],
+        "evidenceCount": 1,
         "compensationLeverage": "high"
       },
-      "concerns": [
-        "External company evidence is thin; run deep research with a search API."
-      ],
+      "concerns": [],
       "interviewStrategy": [
         "Ask why the role is open and what success means in the first 90 days.",
-        "Probe team ownership, roadmap pressure, and cross-functional interfaces."
+        "Probe team ownership, roadmap pressure, and cross-functional interfaces.",
+        "What business unit owns the Staff Software Engineer, Frontend role?",
+        "What measurable outcomes would this team expect in the first 90 days?",
+        "What recent company/product signals change the risk or upside?"
       ],
       "cvStrategy": [
         "Lead with proof around: Frontend Engineer, JavaScript, TypeScript, React, CSS, Accessibility.",
         "Use story story-1: frontend product execution.",
-        "Use story story-2: systems and API collaboration.",
-        "Use story story-3: accessibility and quality."
+        "Use story story-2: data-heavy product decisions.",
+        "Use story story-3: systems and API collaboration."
       ],
       "compensationStrategy": {
         "leverage": "high",
@@ -3846,13 +3782,13 @@
         },
         {
           "id": "story-2",
-          "theme": "systems and API collaboration",
+          "theme": "data-heavy product decisions",
           "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
           "relevance": 5
         },
         {
           "id": "story-3",
-          "theme": "accessibility and quality",
+          "theme": "systems and API collaboration",
           "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
           "relevance": 5
         }
@@ -3867,7 +3803,7 @@
       "grade": "A",
       "confidence": "medium",
       "decision": "pursue aggressively",
-      "thesis": "Staff Software Engineer, Frontend at GlossGenius is pursue aggressively because the snapshot score is 94, with 13 profile/role keyword hits and 0 external evidence item(s).",
+      "thesis": "Staff Software Engineer, Frontend at GlossGenius is pursue aggressively because the snapshot score is 94, with 13 profile/role keyword hits and 1 external evidence item(s).",
       "evidence": {
         "keywordHits": [
           "Frontend Engineer",
@@ -3887,22 +3823,25 @@
         "keywordMisses": [
           "go"
         ],
-        "researchSignals": [],
-        "evidenceCount": 0,
+        "researchSignals": [
+          "AI / data / platform signal"
+        ],
+        "evidenceCount": 1,
         "compensationLeverage": "high"
       },
-      "concerns": [
-        "External company evidence is thin; run deep research with a search API."
-      ],
+      "concerns": [],
       "interviewStrategy": [
         "Ask why the role is open and what success means in the first 90 days.",
-        "Probe team ownership, roadmap pressure, and cross-functional interfaces."
+        "Probe team ownership, roadmap pressure, and cross-functional interfaces.",
+        "What business unit owns the Staff Software Engineer, Frontend role?",
+        "What measurable outcomes would this team expect in the first 90 days?",
+        "What recent company/product signals change the risk or upside?"
       ],
       "cvStrategy": [
         "Lead with proof around: Frontend Engineer, JavaScript, TypeScript, React, CSS, Accessibility.",
         "Use story story-1: frontend product execution.",
-        "Use story story-2: systems and API collaboration.",
-        "Use story story-3: accessibility and quality."
+        "Use story story-2: data-heavy product decisions.",
+        "Use story story-3: systems and API collaboration."
       ],
       "compensationStrategy": {
         "leverage": "high",
@@ -3918,13 +3857,13 @@
         },
         {
           "id": "story-2",
-          "theme": "systems and API collaboration",
+          "theme": "data-heavy product decisions",
           "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
           "relevance": 5
         },
         {
           "id": "story-3",
-          "theme": "accessibility and quality",
+          "theme": "systems and API collaboration",
           "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
           "relevance": 5
         }
@@ -3970,8 +3909,8 @@
       "cvStrategy": [
         "Lead with proof around: Frontend Engineer, TypeScript, React, API, Performance Optimization, TypeScript.",
         "Use story story-1: frontend product execution.",
-        "Use story story-2: systems and API collaboration.",
-        "Use story story-3: accessibility and quality."
+        "Use story story-2: data-heavy product decisions.",
+        "Use story story-3: systems and API collaboration."
       ],
       "compensationStrategy": {
         "leverage": "high",
@@ -3987,13 +3926,13 @@
         },
         {
           "id": "story-2",
-          "theme": "systems and API collaboration",
+          "theme": "data-heavy product decisions",
           "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
           "relevance": 2
         },
         {
           "id": "story-3",
-          "theme": "accessibility and quality",
+          "theme": "systems and API collaboration",
           "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
           "relevance": 2
         }
@@ -4041,8 +3980,8 @@
       "cvStrategy": [
         "Lead with proof around: Analytics, API, remote, analytics, Full Stack Engineer.",
         "Use story story-1: frontend product execution.",
-        "Use story story-2: systems and API collaboration.",
-        "Use story story-3: accessibility and quality."
+        "Use story story-2: data-heavy product decisions.",
+        "Use story story-3: systems and API collaboration."
       ],
       "compensationStrategy": {
         "leverage": "high",
@@ -4058,13 +3997,13 @@
         },
         {
           "id": "story-2",
-          "theme": "systems and API collaboration",
+          "theme": "data-heavy product decisions",
           "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
           "relevance": 0
         },
         {
           "id": "story-3",
-          "theme": "accessibility and quality",
+          "theme": "systems and API collaboration",
           "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
           "relevance": 0
         }
@@ -4109,8 +4048,8 @@
       "cvStrategy": [
         "Lead with proof around: Analytics, Performance Optimization, analytics, Product Engineer.",
         "Use story story-1: frontend product execution.",
-        "Use story story-2: systems and API collaboration.",
-        "Use story story-3: accessibility and quality."
+        "Use story story-2: data-heavy product decisions.",
+        "Use story story-3: systems and API collaboration."
       ],
       "compensationStrategy": {
         "leverage": "high",
@@ -4126,13 +4065,13 @@
         },
         {
           "id": "story-2",
-          "theme": "systems and API collaboration",
+          "theme": "data-heavy product decisions",
           "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
           "relevance": 0
         },
         {
           "id": "story-3",
-          "theme": "accessibility and quality",
+          "theme": "systems and API collaboration",
           "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
           "relevance": 0
         }
@@ -4185,8 +4124,8 @@
       "cvStrategy": [
         "Lead with proof around: Frontend Engineer, API, Frontend Engineer.",
         "Use story story-1: frontend product execution.",
-        "Use story story-2: systems and API collaboration.",
-        "Use story story-3: accessibility and quality."
+        "Use story story-2: data-heavy product decisions.",
+        "Use story story-3: systems and API collaboration."
       ],
       "compensationStrategy": {
         "leverage": "high",
@@ -4202,13 +4141,13 @@
         },
         {
           "id": "story-2",
-          "theme": "systems and API collaboration",
+          "theme": "data-heavy product decisions",
           "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
           "relevance": 0
         },
         {
           "id": "story-3",
-          "theme": "accessibility and quality",
+          "theme": "systems and API collaboration",
           "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
           "relevance": 0
         }
@@ -4253,8 +4192,8 @@
       "cvStrategy": [
         "Lead with proof around: Analytics, API, analytics, Product Engineer.",
         "Use story story-1: frontend product execution.",
-        "Use story story-2: systems and API collaboration.",
-        "Use story story-3: accessibility and quality."
+        "Use story story-2: data-heavy product decisions.",
+        "Use story story-3: systems and API collaboration."
       ],
       "compensationStrategy": {
         "leverage": "high",
@@ -4270,13 +4209,83 @@
         },
         {
           "id": "story-2",
-          "theme": "systems and API collaboration",
+          "theme": "data-heavy product decisions",
           "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
           "relevance": 0
         },
         {
           "id": "story-3",
-          "theme": "accessibility and quality",
+          "theme": "systems and API collaboration",
+          "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
+          "relevance": 0
+        }
+      ],
+      "llm": null
+    },
+    {
+      "jobKey": "url:https://www.themuse.com/jobs/apple/aiml-site-lead-lead-researcher-foundation-models-f9cd35",
+      "company": "Apple",
+      "title": "AIML - Site Lead & Lead Researcher, Foundation Models",
+      "score": 93,
+      "grade": "A",
+      "confidence": "medium",
+      "decision": "pursue aggressively",
+      "thesis": "AIML - Site Lead & Lead Researcher, Foundation Models at Apple is pursue aggressively because the snapshot score is 93, with 4 profile/role keyword hits and 0 external evidence item(s).",
+      "evidence": {
+        "keywordHits": [
+          "Analytics",
+          "API",
+          "analytics",
+          "Product Engineer"
+        ],
+        "keywordMisses": [
+          "python",
+          "agents",
+          "machine learning",
+          "deep learning",
+          "pytorch",
+          "tensorflow",
+          "growth"
+        ],
+        "researchSignals": [],
+        "evidenceCount": 0,
+        "compensationLeverage": "high"
+      },
+      "concerns": [
+        "External company evidence is thin; run deep research with a search API.",
+        "Profile keyword coverage is weaker than the target role language."
+      ],
+      "interviewStrategy": [
+        "Ask why the role is open and what success means in the first 90 days.",
+        "Probe team ownership, roadmap pressure, and cross-functional interfaces."
+      ],
+      "cvStrategy": [
+        "Lead with proof around: Analytics, API, analytics, Product Engineer.",
+        "Use story story-1: frontend product execution.",
+        "Use story story-2: data-heavy product decisions.",
+        "Use story story-3: systems and API collaboration."
+      ],
+      "compensationStrategy": {
+        "leverage": "high",
+        "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the AIML - Site Lead & Lead Researcher, Foundation Models package, including base, bonus, equity, and review cycle?",
+        "valueAnchor": "Based on the scope of AIML - Site Lead & Lead Researcher, Foundation Models and my fit around Analytics, API, product, data, I would like to calibrate toward the stronger end of the range if the team sees the level match."
+      },
+      "storyHooks": [
+        {
+          "id": "story-1",
+          "theme": "frontend product execution",
+          "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
+          "relevance": 0
+        },
+        {
+          "id": "story-2",
+          "theme": "data-heavy product decisions",
+          "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
+          "relevance": 0
+        },
+        {
+          "id": "story-3",
+          "theme": "systems and API collaboration",
           "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
           "relevance": 0
         }
@@ -4321,8 +4330,8 @@
       "cvStrategy": [
         "Lead with proof around: JavaScript, React, CSS, API, remote, dashboard.",
         "Use story story-1: frontend product execution.",
-        "Use story story-2: systems and API collaboration.",
-        "Use story story-3: accessibility and quality."
+        "Use story story-2: data-heavy product decisions.",
+        "Use story story-3: systems and API collaboration."
       ],
       "compensationStrategy": {
         "leverage": "high",
@@ -4338,13 +4347,13 @@
         },
         {
           "id": "story-2",
-          "theme": "systems and API collaboration",
+          "theme": "data-heavy product decisions",
           "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
           "relevance": 3
         },
         {
           "id": "story-3",
-          "theme": "accessibility and quality",
+          "theme": "systems and API collaboration",
           "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
           "relevance": 3
         }
@@ -4393,8 +4402,8 @@
       "cvStrategy": [
         "Lead with proof around: JavaScript, TypeScript, API, remote, TypeScript, Product Engineer.",
         "Use story story-1: frontend product execution.",
-        "Use story story-2: systems and API collaboration.",
-        "Use story story-3: accessibility and quality."
+        "Use story story-2: data-heavy product decisions.",
+        "Use story story-3: systems and API collaboration."
       ],
       "compensationStrategy": {
         "leverage": "high",
@@ -4410,13 +4419,13 @@
         },
         {
           "id": "story-2",
-          "theme": "systems and API collaboration",
+          "theme": "data-heavy product decisions",
           "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
           "relevance": 2
         },
         {
           "id": "story-3",
-          "theme": "accessibility and quality",
+          "theme": "systems and API collaboration",
           "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
           "relevance": 2
         }
@@ -4457,8 +4466,8 @@
       "cvStrategy": [
         "Lead with proof around: API, remote, Product Engineer.",
         "Use story story-1: frontend product execution.",
-        "Use story story-2: systems and API collaboration.",
-        "Use story story-3: accessibility and quality."
+        "Use story story-2: data-heavy product decisions.",
+        "Use story story-3: systems and API collaboration."
       ],
       "compensationStrategy": {
         "leverage": "high",
@@ -4474,13 +4483,13 @@
         },
         {
           "id": "story-2",
-          "theme": "systems and API collaboration",
+          "theme": "data-heavy product decisions",
           "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
           "relevance": 0
         },
         {
           "id": "story-3",
-          "theme": "accessibility and quality",
+          "theme": "systems and API collaboration",
           "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
           "relevance": 0
         }
@@ -4524,8 +4533,8 @@
       "cvStrategy": [
         "Lead with proof around: TypeScript, React, API, Figma, TypeScript, React.",
         "Use story story-1: frontend product execution.",
-        "Use story story-2: systems and API collaboration.",
-        "Use story story-3: accessibility and quality."
+        "Use story story-2: data-heavy product decisions.",
+        "Use story story-3: systems and API collaboration."
       ],
       "compensationStrategy": {
         "leverage": "high",
@@ -4541,13 +4550,13 @@
         },
         {
           "id": "story-2",
-          "theme": "systems and API collaboration",
+          "theme": "data-heavy product decisions",
           "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
           "relevance": 2
         },
         {
           "id": "story-3",
-          "theme": "accessibility and quality",
+          "theme": "systems and API collaboration",
           "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
           "relevance": 2
         }
@@ -4597,8 +4606,8 @@
       "cvStrategy": [
         "Lead with proof around: TypeScript, API, Design Systems, design system, TypeScript, Product Engineer.",
         "Use story story-1: frontend product execution.",
-        "Use story story-2: systems and API collaboration.",
-        "Use story story-3: accessibility and quality."
+        "Use story story-2: data-heavy product decisions.",
+        "Use story story-3: systems and API collaboration."
       ],
       "compensationStrategy": null,
       "storyHooks": [
@@ -4610,13 +4619,13 @@
         },
         {
           "id": "story-2",
-          "theme": "systems and API collaboration",
+          "theme": "data-heavy product decisions",
           "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
           "relevance": 1
         },
         {
           "id": "story-3",
-          "theme": "accessibility and quality",
+          "theme": "systems and API collaboration",
           "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
           "relevance": 1
         }
@@ -4657,8 +4666,8 @@
       "cvStrategy": [
         "Lead with proof around: JavaScript, TypeScript, TypeScript, Product Engineer.",
         "Use story story-1: frontend product execution.",
-        "Use story story-2: systems and API collaboration.",
-        "Use story story-3: accessibility and quality."
+        "Use story story-2: data-heavy product decisions.",
+        "Use story story-3: systems and API collaboration."
       ],
       "compensationStrategy": null,
       "storyHooks": [
@@ -4670,13 +4679,13 @@
         },
         {
           "id": "story-2",
-          "theme": "systems and API collaboration",
+          "theme": "data-heavy product decisions",
           "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
           "relevance": 2
         },
         {
           "id": "story-3",
-          "theme": "accessibility and quality",
+          "theme": "systems and API collaboration",
           "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
           "relevance": 2
         }
@@ -4721,8 +4730,8 @@
       "cvStrategy": [
         "Lead with proof around: TypeScript, React, TypeScript, React, Full Stack Engineer.",
         "Use story story-1: frontend product execution.",
-        "Use story story-2: systems and API collaboration.",
-        "Use story story-3: accessibility and quality."
+        "Use story story-2: data-heavy product decisions.",
+        "Use story story-3: systems and API collaboration."
       ],
       "compensationStrategy": null,
       "storyHooks": [
@@ -4734,13 +4743,13 @@
         },
         {
           "id": "story-2",
-          "theme": "systems and API collaboration",
+          "theme": "data-heavy product decisions",
           "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
           "relevance": 2
         },
         {
           "id": "story-3",
-          "theme": "accessibility and quality",
+          "theme": "systems and API collaboration",
           "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
           "relevance": 2
         }
@@ -4788,8 +4797,8 @@
       "cvStrategy": [
         "Lead with proof around: Frontend Engineer, JavaScript, TypeScript, React, CSS, Accessibility.",
         "Use story story-1: frontend product execution.",
-        "Use story story-2: systems and API collaboration.",
-        "Use story story-3: accessibility and quality."
+        "Use story story-2: data-heavy product decisions.",
+        "Use story story-3: systems and API collaboration."
       ],
       "compensationStrategy": null,
       "storyHooks": [
@@ -4801,13 +4810,13 @@
         },
         {
           "id": "story-2",
-          "theme": "systems and API collaboration",
+          "theme": "data-heavy product decisions",
           "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
           "relevance": 5
         },
         {
           "id": "story-3",
-          "theme": "accessibility and quality",
+          "theme": "systems and API collaboration",
           "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
           "relevance": 5
         }
@@ -4853,8 +4862,8 @@
       "cvStrategy": [
         "Lead with proof around: Frontend Engineer, JavaScript, TypeScript, React, API, Performance Optimization.",
         "Use story story-1: frontend product execution.",
-        "Use story story-2: systems and API collaboration.",
-        "Use story story-3: accessibility and quality."
+        "Use story story-2: data-heavy product decisions.",
+        "Use story story-3: systems and API collaboration."
       ],
       "compensationStrategy": null,
       "storyHooks": [
@@ -4866,13 +4875,13 @@
         },
         {
           "id": "story-2",
-          "theme": "systems and API collaboration",
+          "theme": "data-heavy product decisions",
           "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
           "relevance": 3
         },
         {
           "id": "story-3",
-          "theme": "accessibility and quality",
+          "theme": "systems and API collaboration",
           "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
           "relevance": 3
         }

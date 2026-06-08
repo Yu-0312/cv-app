@@ -1,6 +1,6 @@
 # Career Ops Application Kit
 
-Generated: 2026-06-06T23:48:16.216Z
+Generated: 2026-06-08T00:03:52.660Z
 Jobs: 12
 
 ## Pipeline
@@ -9,71 +9,6 @@ Jobs: 12
 - Follow-up: 3-5 business days after applying or recruiter touch.
 - Interview: map JD keywords to STAR stories and questions.
 - Negotiation: total-comp package and role-level calibration after offer.
-
-## VANGUARD SOFTWARE PTE. LTD. - Expert Frontend Engineer (React.JS & React Native)
-
-- Priority: P0
-- Score: 95/A
-- Subject: Expert Frontend Engineer (React.JS & React Native) application - VANGUARD SOFTWARE PTE. LTD.
-
-- Block G: High Confidence
-- Rating: 4.8/5.0
-
-### ATS Keyword Injection
-- Archetype: Frontend Engineer
-- Coverage: 100%
-- JD Keywords: JavaScript, TypeScript, React, Next.js, CSS, Accessibility, Design Systems, design system
-- 在 Professional Summary 中自然帶入：JavaScript、TypeScript、React、Next.js、CSS
-- 使用職位語言：「Frontend Engineer」方向的動詞和術語
-- 【你已有但此 JD 未要求】可視情況選擇性提及：html、growth
-- Missing (do NOT fabricate): html, growth
-
-### Apply Checklist
-- Open the source URL and confirm the role is still active.
-- Generate or refresh the tailored ATS PDF from this job.
-- Mirror these JD keywords honestly in your CV: JavaScript, TypeScript, React, Next.js, CSS, Accessibility, Design Systems, design system
-- Do not overclaim missing areas: html, growth
-- Log status, recruiter/contact, and next follow-up date in the tracker.
-
-### Outreach Email
-```text
-Hi VANGUARD SOFTWARE PTE. LTD. team,
-
-I am Alex Chen, and I am interested in the Expert Frontend Engineer (React.JS & React Native) role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.
-
-The role stood out because it maps closely to my experience with JavaScript, TypeScript, React, Next.js, CSS.
-
-I would appreciate the chance to share how my experience can support the team. Thank you for your time.
-
-Best,
-Alex Chen
-```
-
-### Follow-up
-Timing: 3-5 business days after applying or the last recruiter interaction.
-```text
-Hi VANGUARD SOFTWARE PTE. LTD. team,
-
-I wanted to follow up on my application for the Expert Frontend Engineer (React.JS & React Native) role. I remain interested and would be glad to provide any additional context about my background.
-
-Thank you again for your time.
-
-Best,
-Alex Chen
-```
-
-### Interview Prep
-- Prepare a 60-second story for why VANGUARD SOFTWARE PTE. LTD. and why Expert Frontend Engineer (React.JS & React Native).
-- Prepare evidence for: JavaScript, TypeScript, React, Next.js, CSS, Accessibility.
-- Prepare one STAR story about execution under ambiguity.
-- Prepare one STAR story about collaboration and tradeoff decisions.
-- Prepare questions about team priorities, success metrics, and hiring timeline.
-
-### Negotiation Prep
-- Wait for a clear offer before anchoring compensation.
-- Ask for total compensation breakdown, work mode, title, level, review cycle, and start date.
-- Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.
-- Use competing priorities and role fit, not personal need, as the negotiation frame.
 
 ## BIFROST PTE. LTD. - Frontend Engineer
 
@@ -782,6 +717,71 @@ Alex Chen
 ### Interview Prep
 - Prepare a 60-second story for why Treasure Data and why Senior Software Engineer - Ruby on Rails.
 - Prepare evidence for: TypeScript, React, API, Performance Optimization, engineer, product.
+- Prepare one STAR story about execution under ambiguity.
+- Prepare one STAR story about collaboration and tradeoff decisions.
+- Prepare questions about team priorities, success metrics, and hiring timeline.
+
+### Negotiation Prep
+- Wait for a clear offer before anchoring compensation.
+- Ask for total compensation breakdown, work mode, title, level, review cycle, and start date.
+- Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.
+- Use competing priorities and role fit, not personal need, as the negotiation frame.
+
+## Databricks Greenhouse - Resident Solutions Architect (Full Stack Engineer)
+
+- Priority: P0
+- Score: 94/A
+- Subject: Resident Solutions Architect (Full Stack Engineer) application - Databricks Greenhouse
+
+- Block G: High Confidence
+- Rating: 4.8/5.0
+
+### ATS Keyword Injection
+- Archetype: AI Solutions Architect
+- Coverage: 100%
+- JD Keywords: Analytics, remote, engineer, product, data, API
+- 在 Professional Summary 中自然帶入：Analytics、remote、engineer、product、data
+- 使用職位語言：「AI Solutions Architect」方向的動詞和術語
+- 【你已有但此 JD 未要求】可視情況選擇性提及：python、aws、gcp、azure、spark
+- Missing (do NOT fabricate): python, aws, gcp, azure, spark, operations, excel
+
+### Apply Checklist
+- Open the source URL and confirm the role is still active.
+- Generate or refresh the tailored ATS PDF from this job.
+- Mirror these JD keywords honestly in your CV: Analytics, remote, engineer, product, data, API
+- Do not overclaim missing areas: python, aws, gcp, azure, spark, operations
+- Log status, recruiter/contact, and next follow-up date in the tracker.
+
+### Outreach Email
+```text
+Hi Databricks Greenhouse team,
+
+I am Alex Chen, and I am interested in the Resident Solutions Architect (Full Stack Engineer) role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.
+
+The role stood out because it maps closely to my experience with Analytics, remote, engineer, product, data.
+
+I would appreciate the chance to share how my experience can support the team. Thank you for your time.
+
+Best,
+Alex Chen
+```
+
+### Follow-up
+Timing: 3-5 business days after applying or the last recruiter interaction.
+```text
+Hi Databricks Greenhouse team,
+
+I wanted to follow up on my application for the Resident Solutions Architect (Full Stack Engineer) role. I remain interested and would be glad to provide any additional context about my background.
+
+Thank you again for your time.
+
+Best,
+Alex Chen
+```
+
+### Interview Prep
+- Prepare a 60-second story for why Databricks Greenhouse and why Resident Solutions Architect (Full Stack Engineer).
+- Prepare evidence for: Analytics, remote, engineer, product, data.
 - Prepare one STAR story about execution under ambiguity.
 - Prepare one STAR story about collaboration and tradeoff decisions.
 - Prepare questions about team priorities, success metrics, and hiring timeline.

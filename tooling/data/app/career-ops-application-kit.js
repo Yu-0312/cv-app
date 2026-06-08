@@ -1,100 +1,8 @@
 window.CV_CAREER_OPS_APPLICATION_KIT = {
   "source": "career-ops-application-kit",
-  "generatedAt": "2026-06-06T23:48:16.216Z",
+  "generatedAt": "2026-06-08T00:03:52.660Z",
   "profileRole": "Frontend Engineer",
   "playbooks": [
-    {
-      "jobKey": "url:https://www.mycareersfuture.gov.sg/job/07eafbe6994e2090a0c2a6a6a6111e62",
-      "title": "Expert Frontend Engineer (React.JS & React Native)",
-      "company": "VANGUARD SOFTWARE PTE. LTD.",
-      "score": "95/A",
-      "rating": 4.8,
-      "blockG": {
-        "tier": "High Confidence",
-        "confidence": "medium"
-      },
-      "priority": "P0",
-      "atsInjection": {
-        "jdKeywords": [
-          "JavaScript",
-          "TypeScript",
-          "React",
-          "Next.js",
-          "CSS",
-          "Accessibility",
-          "Design Systems",
-          "design system",
-          "engineer",
-          "product",
-          "API"
-        ],
-        "hardKeywords": [
-          "JavaScript",
-          "TypeScript",
-          "React",
-          "Next.js",
-          "CSS",
-          "Accessibility",
-          "Design Systems",
-          "design system",
-          "engineer",
-          "product"
-        ],
-        "softKeywords": [],
-        "missingKeywords": [
-          "html",
-          "growth"
-        ],
-        "archetype": "Frontend Engineer",
-        "summaryRewriteHints": [
-          "在 Professional Summary 中自然帶入：JavaScript、TypeScript、React、Next.js、CSS",
-          "使用職位語言：「Frontend Engineer」方向的動詞和術語",
-          "【你已有但此 JD 未要求】可視情況選擇性提及：html、growth"
-        ],
-        "atsRules": [
-          "單欄排版，避免 sidebar 雙欄（ATS parser 容易亂序）",
-          "使用標準 header：Professional Summary, Work Experience, Skills, Education",
-          "不使用巢狀表格或文字框",
-          "確保 PDF 文字可被選取（不可光柵化輸出）",
-          "UTF-8 編碼，移除 em dash / smart quote / zero-width space",
-          "關鍵技能在 Skills section 明確列出，不要只藏在 bullet 裡"
-        ],
-        "guardrails": [
-          "NEVER add skills the candidate lacks",
-          "Only reformulate real experience with exact JD vocabulary",
-          "Example: if candidate has 'API development', it can become 'JavaScript'"
-        ],
-        "keywordCoveragePercent": 100
-      },
-      "applyChecklist": [
-        "Open the source URL and confirm the role is still active.",
-        "Generate or refresh the tailored ATS PDF from this job.",
-        "Mirror these JD keywords honestly in your CV: JavaScript, TypeScript, React, Next.js, CSS, Accessibility, Design Systems, design system",
-        "Do not overclaim missing areas: html, growth",
-        "Log status, recruiter/contact, and next follow-up date in the tracker."
-      ],
-      "outreachEmail": {
-        "subject": "Expert Frontend Engineer (React.JS & React Native) application - VANGUARD SOFTWARE PTE. LTD.",
-        "body": "Hi VANGUARD SOFTWARE PTE. LTD. team,\n\nI am Alex Chen, and I am interested in the Expert Frontend Engineer (React.JS & React Native) role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.\n\nThe role stood out because it maps closely to my experience with JavaScript, TypeScript, React, Next.js, CSS.\n\nI would appreciate the chance to share how my experience can support the team. Thank you for your time.\n\nBest,\nAlex Chen"
-      },
-      "followUp": {
-        "timing": "3-5 business days after applying or the last recruiter interaction.",
-        "body": "Hi VANGUARD SOFTWARE PTE. LTD. team,\n\nI wanted to follow up on my application for the Expert Frontend Engineer (React.JS & React Native) role. I remain interested and would be glad to provide any additional context about my background.\n\nThank you again for your time.\n\nBest,\nAlex Chen"
-      },
-      "interviewPrep": [
-        "Prepare a 60-second story for why VANGUARD SOFTWARE PTE. LTD. and why Expert Frontend Engineer (React.JS & React Native).",
-        "Prepare evidence for: JavaScript, TypeScript, React, Next.js, CSS, Accessibility.",
-        "Prepare one STAR story about execution under ambiguity.",
-        "Prepare one STAR story about collaboration and tradeoff decisions.",
-        "Prepare questions about team priorities, success metrics, and hiring timeline."
-      ],
-      "negotiationPrep": [
-        "Wait for a clear offer before anchoring compensation.",
-        "Ask for total compensation breakdown, work mode, title, level, review cycle, and start date.",
-        "Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.",
-        "Use competing priorities and role fit, not personal need, as the negotiation frame."
-      ]
-    },
     {
       "jobKey": "url:https://www.mycareersfuture.gov.sg/job/dc06e8c5f714c11bfb2e053ac7ee2276",
       "title": "Frontend Engineer",
@@ -1066,6 +974,94 @@ window.CV_CAREER_OPS_APPLICATION_KIT = {
       "interviewPrep": [
         "Prepare a 60-second story for why Treasure Data and why Senior Software Engineer - Ruby on Rails.",
         "Prepare evidence for: TypeScript, React, API, Performance Optimization, engineer, product.",
+        "Prepare one STAR story about execution under ambiguity.",
+        "Prepare one STAR story about collaboration and tradeoff decisions.",
+        "Prepare questions about team priorities, success metrics, and hiring timeline."
+      ],
+      "negotiationPrep": [
+        "Wait for a clear offer before anchoring compensation.",
+        "Ask for total compensation breakdown, work mode, title, level, review cycle, and start date.",
+        "Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.",
+        "Use competing priorities and role fit, not personal need, as the negotiation frame."
+      ]
+    },
+    {
+      "jobKey": "url:https://databricks.com/company/careers/open-positions/job?gh_jid=8367942002",
+      "title": "Resident Solutions Architect (Full Stack Engineer)",
+      "company": "Databricks Greenhouse",
+      "score": "94/A",
+      "rating": 4.8,
+      "blockG": {
+        "tier": "High Confidence",
+        "confidence": "medium"
+      },
+      "priority": "P0",
+      "atsInjection": {
+        "jdKeywords": [
+          "Analytics",
+          "remote",
+          "engineer",
+          "product",
+          "data",
+          "API"
+        ],
+        "hardKeywords": [
+          "Analytics",
+          "remote",
+          "engineer",
+          "product",
+          "data",
+          "API"
+        ],
+        "softKeywords": [],
+        "missingKeywords": [
+          "python",
+          "aws",
+          "gcp",
+          "azure",
+          "spark",
+          "operations",
+          "excel"
+        ],
+        "archetype": "AI Solutions Architect",
+        "summaryRewriteHints": [
+          "在 Professional Summary 中自然帶入：Analytics、remote、engineer、product、data",
+          "使用職位語言：「AI Solutions Architect」方向的動詞和術語",
+          "【你已有但此 JD 未要求】可視情況選擇性提及：python、aws、gcp、azure、spark"
+        ],
+        "atsRules": [
+          "單欄排版，避免 sidebar 雙欄（ATS parser 容易亂序）",
+          "使用標準 header：Professional Summary, Work Experience, Skills, Education",
+          "不使用巢狀表格或文字框",
+          "確保 PDF 文字可被選取（不可光柵化輸出）",
+          "UTF-8 編碼，移除 em dash / smart quote / zero-width space",
+          "關鍵技能在 Skills section 明確列出，不要只藏在 bullet 裡"
+        ],
+        "guardrails": [
+          "NEVER add skills the candidate lacks",
+          "Only reformulate real experience with exact JD vocabulary",
+          "Example: if candidate has 'API development', it can become 'Analytics'"
+        ],
+        "keywordCoveragePercent": 100
+      },
+      "applyChecklist": [
+        "Open the source URL and confirm the role is still active.",
+        "Generate or refresh the tailored ATS PDF from this job.",
+        "Mirror these JD keywords honestly in your CV: Analytics, remote, engineer, product, data, API",
+        "Do not overclaim missing areas: python, aws, gcp, azure, spark, operations",
+        "Log status, recruiter/contact, and next follow-up date in the tracker."
+      ],
+      "outreachEmail": {
+        "subject": "Resident Solutions Architect (Full Stack Engineer) application - Databricks Greenhouse",
+        "body": "Hi Databricks Greenhouse team,\n\nI am Alex Chen, and I am interested in the Resident Solutions Architect (Full Stack Engineer) role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.\n\nThe role stood out because it maps closely to my experience with Analytics, remote, engineer, product, data.\n\nI would appreciate the chance to share how my experience can support the team. Thank you for your time.\n\nBest,\nAlex Chen"
+      },
+      "followUp": {
+        "timing": "3-5 business days after applying or the last recruiter interaction.",
+        "body": "Hi Databricks Greenhouse team,\n\nI wanted to follow up on my application for the Resident Solutions Architect (Full Stack Engineer) role. I remain interested and would be glad to provide any additional context about my background.\n\nThank you again for your time.\n\nBest,\nAlex Chen"
+      },
+      "interviewPrep": [
+        "Prepare a 60-second story for why Databricks Greenhouse and why Resident Solutions Architect (Full Stack Engineer).",
+        "Prepare evidence for: Analytics, remote, engineer, product, data.",
         "Prepare one STAR story about execution under ambiguity.",
         "Prepare one STAR story about collaboration and tradeoff decisions.",
         "Prepare questions about team priorities, success metrics, and hiring timeline."
