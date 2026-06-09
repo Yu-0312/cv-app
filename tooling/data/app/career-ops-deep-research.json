@@ -1,10 +1,12 @@
 {
   "source": "career-ops-deep-research",
-  "generatedAt": "2026-06-08T00:03:59.077Z",
+  "generatedAt": "2026-06-09T00:08:35.373Z",
   "searchProvider": "none",
   "queries": [
     "BIFROST PTE. LTD. Frontend Engineer careers team product funding interview",
     "BIFROST PTE. LTD. compensation culture engineering interview",
+    "The Coca-Cola Company Software Engineering I careers team product funding interview",
+    "The Coca-Cola Company compensation culture engineering interview",
     "Uber Sr Software Engineer, Frontend (Web) careers team product funding interview",
     "Uber compensation culture engineering interview",
     "Disney Lead Software Engineer careers team product funding interview",
@@ -14,9 +16,7 @@
     "Money Forward Lead Backend Engineer, Digital Bank careers team product funding interview",
     "Money Forward compensation culture engineering interview",
     "AIRWALLEX (SINGAPORE) PTE. LTD. Senior Frontend Engineer, Regulatory Reporting careers team product funding interview",
-    "AIRWALLEX (SINGAPORE) PTE. LTD. compensation culture engineering interview",
-    "GlossGenius Staff Software Engineer, Frontend careers team product funding interview",
-    "GlossGenius compensation culture engineering interview"
+    "AIRWALLEX (SINGAPORE) PTE. LTD. compensation culture engineering interview"
   ],
   "evidence": [
     {
@@ -29,6 +29,12 @@
       "title": "",
       "url": "https://www.mycareersfuture.gov.sg/job/ddc648c00fcb0cb0d717f2878ba8bc29",
       "snippet": "MyCareersFuture Singapore",
+      "provider": "source-page"
+    },
+    {
+      "title": "",
+      "url": "https://www.themuse.com/jobs/thecocacolacompany/software-engineering-i",
+      "snippet": "Software Engineering I at The Coca-Cola Company | The Muse | The Muse Skip to main content The Muse Logo A logo with &amp;quat;the muse&amp;quat; in dark blue text. Newsletter Jobs Account Management Accounting and Finance Administration and Office Advertising and Marketing Arts Business Operations Computer and IT Customer Service Data and Analytics Design and UX Education Healthcare Human Resources and Recruitment Management Media, PR, and Communications Product Management Project Management Sales Software Engineering Writing and Editing View All Jobs Companies Advice Coaching Newsletter Employers Sign In Saved Companies Account Settings Sign Out The Coca-Cola Company Software Engineering I Yesterday • Atlanta, GA Apply on company site About Us Iconic brands. Innovative technologies. Our careers span across functions and are globally connected to give you an unmatched career experience. Size: 10000+ employees Industry: Food &amp; Beverage, Manufacturing, Consumer Goods &amp; Services View Company Profile Digital products play a central role in how we create value for customers, support the teams who serve them, and shape the consumer experience. Our product and engineering organiz",
       "provider": "source-page"
     },
     {
@@ -54,12 +60,6 @@
       "url": "https://www.mycareersfuture.gov.sg/job/1ff5b9800085aabdc76396a96bf09117",
       "snippet": "MyCareersFuture Singapore",
       "provider": "source-page"
-    },
-    {
-      "title": "",
-      "url": "https://www.themuse.com/jobs/glossgenius/staff-software-engineer-frontend-36dfb3",
-      "snippet": "Staff Software Engineer, Frontend at GlossGenius | The Muse | The Muse Skip to main content The Muse Logo A logo with &amp;quat;the muse&amp;quat; in dark blue text. Newsletter Jobs Account Management Accounting and Finance Administration and Office Advertising and Marketing Arts Business Operations Computer and IT Customer Service Data and Analytics Design and UX Education Healthcare Human Resources and Recruitment Management Media, PR, and Communications Product Management Project Management Sales Software Engineering Writing and Editing View All Jobs Companies Advice Coaching Newsletter Employers Sign In Saved Companies Account Settings Sign Out GlossGenius Staff Software Engineer, Frontend 3+ months ago • New York, NY Apply on company site About Us GlossGenius is a POS and business management system for beauty and wellness businesses. Size: 51-200 employees Industry: Software View Company Profile About GlossGenius GlossGenius is the AI-powered system behind the world’s most meaningful appointments, helping 100,000+ service businesses earn more revenue and free up time for the work they love. Our agentic workforce gets more clients in the door, grows profit per appointment, and ",
-      "provider": "source-page"
     }
   ],
   "dossiers": [
@@ -74,12 +74,6 @@
           "title": "",
           "url": "https://www.themuse.com/jobs/uber/sr-software-engineer-frontend-web-8fc2b7",
           "snippet": "Sr Software Engineer, Frontend (Web) at Uber | The Muse | The Muse Skip to main content The Muse Logo A logo with &amp;quat;the muse&amp;quat; in dark blue text. Newsletter Jobs Account Management Accounting and Finance Administration and Office Advertising and Marketing Arts Business Operations Computer and IT Customer Service Data and Analytics Design and UX Education Healthcare Human Resources and Recruitment Management Media, PR, and Communications Product Management Project Management Sales Software Engineering Writing and Editing View All Jobs Companies Advice Coaching Newsletter Employers Sign In Saved Companies Account Settings Sign Out Uber Sr Software Engineer, Frontend (Web) 3 weeks ago • São Paulo, Brazil (+1 more) Rio de Janeiro, Brazil Apply on company site About Us Uber is changing how people think about transportation, part of the logistical fabric of 600+ cities - giving people what they want when they want it. Size: 10000+ employees Industry: Technology View Company Profile About the Role Please note: this hybrid position is based in São Paulo or Rio de Janeiro, Brazil - welcoming both local professionals and those open to relocating. At Uber, Frontend Engineers b",
-          "provider": "source-page"
-        },
-        {
-          "title": "",
-          "url": "https://www.themuse.com/jobs/glossgenius/staff-software-engineer-frontend-36dfb3",
-          "snippet": "Staff Software Engineer, Frontend at GlossGenius | The Muse | The Muse Skip to main content The Muse Logo A logo with &amp;quat;the muse&amp;quat; in dark blue text. Newsletter Jobs Account Management Accounting and Finance Administration and Office Advertising and Marketing Arts Business Operations Computer and IT Customer Service Data and Analytics Design and UX Education Healthcare Human Resources and Recruitment Management Media, PR, and Communications Product Management Project Management Sales Software Engineering Writing and Editing View All Jobs Companies Advice Coaching Newsletter Employers Sign In Saved Companies Account Settings Sign Out GlossGenius Staff Software Engineer, Frontend 3+ months ago • New York, NY Apply on company site About Us GlossGenius is a POS and business management system for beauty and wellness businesses. Size: 51-200 employees Industry: Software View Company Profile About GlossGenius GlossGenius is the AI-powered system behind the world’s most meaningful appointments, helping 100,000+ service businesses earn more revenue and free up time for the work they love. Our agentic workforce gets more clients in the door, grows profit per appointment, and ",
           "provider": "source-page"
         }
       ],
@@ -111,12 +105,6 @@
           "url": "https://www.themuse.com/jobs/uber/sr-software-engineer-frontend-web-8fc2b7",
           "snippet": "Sr Software Engineer, Frontend (Web) at Uber | The Muse | The Muse Skip to main content The Muse Logo A logo with &amp;quat;the muse&amp;quat; in dark blue text. Newsletter Jobs Account Management Accounting and Finance Administration and Office Advertising and Marketing Arts Business Operations Computer and IT Customer Service Data and Analytics Design and UX Education Healthcare Human Resources and Recruitment Management Media, PR, and Communications Product Management Project Management Sales Software Engineering Writing and Editing View All Jobs Companies Advice Coaching Newsletter Employers Sign In Saved Companies Account Settings Sign Out Uber Sr Software Engineer, Frontend (Web) 3 weeks ago • São Paulo, Brazil (+1 more) Rio de Janeiro, Brazil Apply on company site About Us Uber is changing how people think about transportation, part of the logistical fabric of 600+ cities - giving people what they want when they want it. Size: 10000+ employees Industry: Technology View Company Profile About the Role Please note: this hybrid position is based in São Paulo or Rio de Janeiro, Brazil - welcoming both local professionals and those open to relocating. At Uber, Frontend Engineers b",
           "provider": "source-page"
-        },
-        {
-          "title": "",
-          "url": "https://www.themuse.com/jobs/glossgenius/staff-software-engineer-frontend-36dfb3",
-          "snippet": "Staff Software Engineer, Frontend at GlossGenius | The Muse | The Muse Skip to main content The Muse Logo A logo with &amp;quat;the muse&amp;quat; in dark blue text. Newsletter Jobs Account Management Accounting and Finance Administration and Office Advertising and Marketing Arts Business Operations Computer and IT Customer Service Data and Analytics Design and UX Education Healthcare Human Resources and Recruitment Management Media, PR, and Communications Product Management Project Management Sales Software Engineering Writing and Editing View All Jobs Companies Advice Coaching Newsletter Employers Sign In Saved Companies Account Settings Sign Out GlossGenius Staff Software Engineer, Frontend 3+ months ago • New York, NY Apply on company site About Us GlossGenius is a POS and business management system for beauty and wellness businesses. Size: 51-200 employees Industry: Software View Company Profile About GlossGenius GlossGenius is the AI-powered system behind the world’s most meaningful appointments, helping 100,000+ service businesses earn more revenue and free up time for the work they love. Our agentic workforce gets more clients in the door, grows profit per appointment, and ",
-          "provider": "source-page"
         }
       ],
       "signals": [
@@ -125,6 +113,54 @@
       ],
       "researchQuestions": [
         "What business unit owns the Frontend Engineer role?",
+        "What measurable outcomes would this team expect in the first 90 days?",
+        "What recent company/product signals change the risk or upside?",
+        "Which CV proof points should be highlighted for this company?"
+      ],
+      "interviewAngles": [
+        "Ask about team success metrics and why the role is open.",
+        "Ask how the company evaluates impact across the first two quarters.",
+        "Prepare one story that maps directly to the highest-scoring ATS keywords."
+      ]
+    },
+    {
+      "jobKey": "url:https://www.themuse.com/jobs/thecocacolacompany/software-engineering-i",
+      "company": "The Coca-Cola Company",
+      "title": "Software Engineering I",
+      "score": 95,
+      "recommendation": "值得投遞",
+      "evidence": [
+        {
+          "title": "",
+          "url": "https://www.themuse.com/jobs/thecocacolacompany/software-engineering-i",
+          "snippet": "Software Engineering I at The Coca-Cola Company | The Muse | The Muse Skip to main content The Muse Logo A logo with &amp;quat;the muse&amp;quat; in dark blue text. Newsletter Jobs Account Management Accounting and Finance Administration and Office Advertising and Marketing Arts Business Operations Computer and IT Customer Service Data and Analytics Design and UX Education Healthcare Human Resources and Recruitment Management Media, PR, and Communications Product Management Project Management Sales Software Engineering Writing and Editing View All Jobs Companies Advice Coaching Newsletter Employers Sign In Saved Companies Account Settings Sign Out The Coca-Cola Company Software Engineering I Yesterday • Atlanta, GA Apply on company site About Us Iconic brands. Innovative technologies. Our careers span across functions and are globally connected to give you an unmatched career experience. Size: 10000+ employees Industry: Food &amp; Beverage, Manufacturing, Consumer Goods &amp; Services View Company Profile Digital products play a central role in how we create value for customers, support the teams who serve them, and shape the consumer experience. Our product and engineering organiz",
+          "provider": "source-page"
+        },
+        {
+          "title": "",
+          "url": "https://www.themuse.com/jobs/uber/sr-software-engineer-frontend-web-8fc2b7",
+          "snippet": "Sr Software Engineer, Frontend (Web) at Uber | The Muse | The Muse Skip to main content The Muse Logo A logo with &amp;quat;the muse&amp;quat; in dark blue text. Newsletter Jobs Account Management Accounting and Finance Administration and Office Advertising and Marketing Arts Business Operations Computer and IT Customer Service Data and Analytics Design and UX Education Healthcare Human Resources and Recruitment Management Media, PR, and Communications Product Management Project Management Sales Software Engineering Writing and Editing View All Jobs Companies Advice Coaching Newsletter Employers Sign In Saved Companies Account Settings Sign Out Uber Sr Software Engineer, Frontend (Web) 3 weeks ago • São Paulo, Brazil (+1 more) Rio de Janeiro, Brazil Apply on company site About Us Uber is changing how people think about transportation, part of the logistical fabric of 600+ cities - giving people what they want when they want it. Size: 10000+ employees Industry: Technology View Company Profile About the Role Please note: this hybrid position is based in São Paulo or Rio de Janeiro, Brazil - welcoming both local professionals and those open to relocating. At Uber, Frontend Engineers b",
+          "provider": "source-page"
+        },
+        {
+          "title": "",
+          "url": "https://www.themuse.com/jobs/bankofamerica/principal-engineer-gbs-ind-783d05",
+          "snippet": "Principal Engineer - GBS IND at Bank of America | The Muse | The Muse Skip to main content The Muse Logo A logo with &amp;quat;the muse&amp;quat; in dark blue text. Newsletter Jobs Account Management Accounting and Finance Administration and Office Advertising and Marketing Arts Business Operations Computer and IT Customer Service Data and Analytics Design and UX Education Healthcare Human Resources and Recruitment Management Media, PR, and Communications Product Management Project Management Sales Software Engineering Writing and Editing View All Jobs Companies Advice Coaching Newsletter Employers Sign In Saved Companies Account Settings Sign Out Bank of America Principal Engineer - GBS IND 1 month ago • Gurgaon, India (+3 more) Chennai, India Mumbai, India Serilingampalle, India Apply on company site About Us Bank of America provides people, companies, and institutional investors with industry-leading financial products and services. Size: 10000+ employees Industry: Financial Services View Company Profile Job Description: About Us At Bank of America, we are guided by a common purpose to help make financial lives better through the power of every connection. We do this by driving ",
+          "provider": "source-page"
+        },
+        {
+          "title": "",
+          "url": "https://www.tokyodev.com/companies/moneyforward/jobs/lead-backend-engineer-digital-bank",
+          "snippet": "Lead Backend Engineer, Digital Bank - Money Forward | TokyoDev Jobs Companies Articles Community ••• Companies Articles Get the newsletter Community Post a Job Developer Stories Surveys About 日本語 Post a Job Get the newsletter Lead Backend Engineer, Digital Bank Money Forward Minato-ku, Tokyo June 1 2026 💴 ¥9M ~ ¥15M annually 🏡 Partially remote 🗾 Japan residents only 💬 Business Japanese Business English 🧪 Senior level 7+ years experience required APPLY FOR THIS POSITION DO YOU NEED MORE INFO? ASK A QUESTION About Money Forward Money Forward Minato-ku, Tokyo Money Forward is a fintech startup delivering tools to visualize and improve both individuals&#39;​ and companies&#39;​ financial health. Key benefits Small but diverse team Great support for OSS Relocation support Read more About the position Under the mission of “Money Forward. Move your life forward,” Money Forward aims to resolve the financial concerns and anxieties of individuals and businesses through the power of technology. We have partnered with Sumitomo Mitsui Financial Group, Inc. and Sumitomo Mitsui Banking Corporation to establish a new company in preparation for the launch of a new digital bank. We are currentl",
+          "provider": "source-page"
+        }
+      ],
+      "signals": [
+        "AI / data / platform signal",
+        "remote or hybrid signal"
+      ],
+      "researchQuestions": [
+        "What business unit owns the Software Engineering I role?",
         "What measurable outcomes would this team expect in the first 90 days?",
         "What recent company/product signals change the risk or upside?",
         "Which CV proof points should be highlighted for this company?"
@@ -293,35 +329,6 @@
       ],
       "researchQuestions": [
         "What business unit owns the Senior Frontend Engineer, Regulatory Reporting role?",
-        "What measurable outcomes would this team expect in the first 90 days?",
-        "What recent company/product signals change the risk or upside?",
-        "Which CV proof points should be highlighted for this company?"
-      ],
-      "interviewAngles": [
-        "Ask about team success metrics and why the role is open.",
-        "Ask how the company evaluates impact across the first two quarters.",
-        "Prepare one story that maps directly to the highest-scoring ATS keywords."
-      ]
-    },
-    {
-      "jobKey": "url:https://www.themuse.com/jobs/glossgenius/staff-software-engineer-frontend-36dfb3",
-      "company": "GlossGenius",
-      "title": "Staff Software Engineer, Frontend",
-      "score": 94,
-      "recommendation": "值得投遞",
-      "evidence": [
-        {
-          "title": "",
-          "url": "https://www.themuse.com/jobs/glossgenius/staff-software-engineer-frontend-36dfb3",
-          "snippet": "Staff Software Engineer, Frontend at GlossGenius | The Muse | The Muse Skip to main content The Muse Logo A logo with &amp;quat;the muse&amp;quat; in dark blue text. Newsletter Jobs Account Management Accounting and Finance Administration and Office Advertising and Marketing Arts Business Operations Computer and IT Customer Service Data and Analytics Design and UX Education Healthcare Human Resources and Recruitment Management Media, PR, and Communications Product Management Project Management Sales Software Engineering Writing and Editing View All Jobs Companies Advice Coaching Newsletter Employers Sign In Saved Companies Account Settings Sign Out GlossGenius Staff Software Engineer, Frontend 3+ months ago • New York, NY Apply on company site About Us GlossGenius is a POS and business management system for beauty and wellness businesses. Size: 51-200 employees Industry: Software View Company Profile About GlossGenius GlossGenius is the AI-powered system behind the world’s most meaningful appointments, helping 100,000+ service businesses earn more revenue and free up time for the work they love. Our agentic workforce gets more clients in the door, grows profit per appointment, and ",
-          "provider": "source-page"
-        }
-      ],
-      "signals": [
-        "AI / data / platform signal"
-      ],
-      "researchQuestions": [
-        "What business unit owns the Staff Software Engineer, Frontend role?",
         "What measurable outcomes would this team expect in the first 90 days?",
         "What recent company/product signals change the risk or upside?",
         "Which CV proof points should be highlighted for this company?"

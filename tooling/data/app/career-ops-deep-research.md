@@ -1,6 +1,6 @@
 # Career Ops Deep Research
 
-Generated: 2026-06-08T00:03:59.077Z
+Generated: 2026-06-09T00:08:35.373Z
 Search provider: none
 Queries: 14
 Evidence items: 7
@@ -14,7 +14,6 @@ Dossiers: 8
 
 ### Evidence
 - source-page: https://www.themuse.com/jobs/uber/sr-software-engineer-frontend-web-8fc2b7 — Sr Software Engineer, Frontend (Web) at Uber | The Muse | The Muse Skip to main content The Muse Logo A logo with &amp;quat;the muse&amp;quat; in dark blue text. Newsletter Jobs Ac
-- source-page: https://www.themuse.com/jobs/glossgenius/staff-software-engineer-frontend-36dfb3 — Staff Software Engineer, Frontend at GlossGenius | The Muse | The Muse Skip to main content The Muse Logo A logo with &amp;quat;the muse&amp;quat; in dark blue text. Newsletter Job
 
 ### Research Questions
 - What business unit owns the Frontend Engineer role?
@@ -35,10 +34,32 @@ Dossiers: 8
 
 ### Evidence
 - source-page: https://www.themuse.com/jobs/uber/sr-software-engineer-frontend-web-8fc2b7 — Sr Software Engineer, Frontend (Web) at Uber | The Muse | The Muse Skip to main content The Muse Logo A logo with &amp;quat;the muse&amp;quat; in dark blue text. Newsletter Jobs Ac
-- source-page: https://www.themuse.com/jobs/glossgenius/staff-software-engineer-frontend-36dfb3 — Staff Software Engineer, Frontend at GlossGenius | The Muse | The Muse Skip to main content The Muse Logo A logo with &amp;quat;the muse&amp;quat; in dark blue text. Newsletter Job
 
 ### Research Questions
 - What business unit owns the Frontend Engineer role?
+- What measurable outcomes would this team expect in the first 90 days?
+- What recent company/product signals change the risk or upside?
+- Which CV proof points should be highlighted for this company?
+
+### Interview Angles
+- Ask about team success metrics and why the role is open.
+- Ask how the company evaluates impact across the first two quarters.
+- Prepare one story that maps directly to the highest-scoring ATS keywords.
+
+## The Coca-Cola Company - Software Engineering I
+
+- Score: 95
+- Recommendation: 值得投遞
+- Signals: AI / data / platform signal, remote or hybrid signal
+
+### Evidence
+- source-page: https://www.themuse.com/jobs/thecocacolacompany/software-engineering-i — Software Engineering I at The Coca-Cola Company | The Muse | The Muse Skip to main content The Muse Logo A logo with &amp;quat;the muse&amp;quat; in dark blue text. Newsletter Jobs
+- source-page: https://www.themuse.com/jobs/uber/sr-software-engineer-frontend-web-8fc2b7 — Sr Software Engineer, Frontend (Web) at Uber | The Muse | The Muse Skip to main content The Muse Logo A logo with &amp;quat;the muse&amp;quat; in dark blue text. Newsletter Jobs Ac
+- source-page: https://www.themuse.com/jobs/bankofamerica/principal-engineer-gbs-ind-783d05 — Principal Engineer - GBS IND at Bank of America | The Muse | The Muse Skip to main content The Muse Logo A logo with &amp;quat;the muse&amp;quat; in dark blue text. Newsletter Jobs
+- source-page: https://www.tokyodev.com/companies/moneyforward/jobs/lead-backend-engineer-digital-bank — Lead Backend Engineer, Digital Bank - Money Forward | TokyoDev Jobs Companies Articles Community ••• Companies Articles Get the newsletter Community Post a Job Developer Stories Su
+
+### Research Questions
+- What business unit owns the Software Engineering I role?
 - What measurable outcomes would this team expect in the first 90 days?
 - What recent company/product signals change the risk or upside?
 - Which CV proof points should be highlighted for this company?
@@ -142,26 +163,6 @@ Dossiers: 8
 
 ### Research Questions
 - What business unit owns the Senior Frontend Engineer, Regulatory Reporting role?
-- What measurable outcomes would this team expect in the first 90 days?
-- What recent company/product signals change the risk or upside?
-- Which CV proof points should be highlighted for this company?
-
-### Interview Angles
-- Ask about team success metrics and why the role is open.
-- Ask how the company evaluates impact across the first two quarters.
-- Prepare one story that maps directly to the highest-scoring ATS keywords.
-
-## GlossGenius - Staff Software Engineer, Frontend
-
-- Score: 94
-- Recommendation: 值得投遞
-- Signals: AI / data / platform signal
-
-### Evidence
-- source-page: https://www.themuse.com/jobs/glossgenius/staff-software-engineer-frontend-36dfb3 — Staff Software Engineer, Frontend at GlossGenius | The Muse | The Muse Skip to main content The Muse Logo A logo with &amp;quat;the muse&amp;quat; in dark blue text. Newsletter Job
-
-### Research Questions
-- What business unit owns the Staff Software Engineer, Frontend role?
 - What measurable outcomes would this team expect in the first 90 days?
 - What recent company/product signals change the risk or upside?
 - Which CV proof points should be highlighted for this company?

@@ -1,6 +1,6 @@
 # Career Ops Parallel Worker Report
 
-Generated: 2026-06-08T00:04:09.352Z
+Generated: 2026-06-09T00:08:45.770Z
 Concurrency: 4
 Jobs processed: 50
 Errors: 0
@@ -15,7 +15,7 @@ Errors: 0
 
 - Score: 95
 - Grade: A
-- Research evidence: 2
+- Research evidence: 1
 - Keywords: JavaScript, React, engineer, product, data, restful, graphql, node.js
 - Compensation leverage: high
 - Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
@@ -30,8 +30,23 @@ Errors: 0
 
 - Score: 95
 - Grade: A
-- Research evidence: 2
+- Research evidence: 1
 - Keywords: JavaScript, React, engineer, product, data, restful, graphql, node.js
+- Compensation leverage: high
+- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
+
+### Apply Agent Guardrails
+- Never submit without explicit user confirmation.
+- Never fabricate work authorization, salary history, degree, or experience.
+- Never store API keys or credentials in job metadata.
+- Record only application status and user-approved notes.
+
+## P0 The Coca-Cola Company - Software Engineering I
+
+- Score: 95
+- Grade: A
+- Research evidence: 4
+- Keywords: API, engineer, product, data
 - Compensation leverage: high
 - Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
@@ -120,7 +135,7 @@ Errors: 0
 
 - Score: 94
 - Grade: A
-- Research evidence: 1
+- Research evidence: 0
 - Keywords: JavaScript, TypeScript, React, CSS, Accessibility, API, Performance Optimization, Design Systems, design system, engineer
 - Compensation leverage: high
 - Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
@@ -132,41 +147,26 @@ Errors: 0
 - Record only application status and user-approved notes.
 
 ## P0 GlossGenius - Staff Software Engineer, Frontend
-
-- Score: 94
-- Grade: A
-- Research evidence: 1
-- Keywords: JavaScript, TypeScript, React, CSS, Accessibility, API, Performance Optimization, Design Systems, design system, engineer
-- Compensation leverage: high
-- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
-
-### Apply Agent Guardrails
-- Never submit without explicit user confirmation.
-- Never fabricate work authorization, salary history, degree, or experience.
-- Never store API keys or credentials in job metadata.
-- Record only application status and user-approved notes.
-
-## P0 GlossGenius - Staff Software Engineer, Frontend
-
-- Score: 94
-- Grade: A
-- Research evidence: 1
-- Keywords: JavaScript, TypeScript, React, CSS, Accessibility, API, Performance Optimization, Design Systems, design system, engineer
-- Compensation leverage: high
-- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
-
-### Apply Agent Guardrails
-- Never submit without explicit user confirmation.
-- Never fabricate work authorization, salary history, degree, or experience.
-- Never store API keys or credentials in job metadata.
-- Record only application status and user-approved notes.
-
-## P0 Treasure Data - Senior Software Engineer - Ruby on Rails
 
 - Score: 94
 - Grade: A
 - Research evidence: 0
-- Keywords: TypeScript, React, API, Performance Optimization, engineer, product, data
+- Keywords: JavaScript, TypeScript, React, CSS, Accessibility, API, Performance Optimization, Design Systems, design system, engineer
+- Compensation leverage: high
+- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
+
+### Apply Agent Guardrails
+- Never submit without explicit user confirmation.
+- Never fabricate work authorization, salary history, degree, or experience.
+- Never store API keys or credentials in job metadata.
+- Record only application status and user-approved notes.
+
+## P0 GlossGenius - Staff Software Engineer, Frontend
+
+- Score: 94
+- Grade: A
+- Research evidence: 0
+- Keywords: JavaScript, TypeScript, React, CSS, Accessibility, API, Performance Optimization, Design Systems, design system, engineer
 - Compensation leverage: high
 - Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
@@ -226,21 +226,6 @@ Errors: 0
 - Score: 93
 - Grade: A
 - Research evidence: 1
-- Keywords: Analytics, API, product, data
-- Compensation leverage: high
-- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
-
-### Apply Agent Guardrails
-- Never submit without explicit user confirmation.
-- Never fabricate work authorization, salary history, degree, or experience.
-- Never store API keys or credentials in job metadata.
-- Record only application status and user-approved notes.
-
-## P0 Apple - AIML - Site Lead & Lead Researcher, Foundation Models
-
-- Score: 93
-- Grade: A
-- Research evidence: 0
 - Keywords: Analytics, API, product, data
 - Compensation leverage: high
 - Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
@@ -317,7 +302,7 @@ Errors: 0
 - Grade: A
 - Research evidence: 0
 - Keywords: TypeScript, Design Systems, design system, engineer, product, data
-- Compensation leverage: -
+- Compensation leverage: high
 - Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
 ### Apply Agent Guardrails
@@ -332,7 +317,7 @@ Errors: 0
 - Grade: A
 - Research evidence: 0
 - Keywords: JavaScript, TypeScript, engineer, product
-- Compensation leverage: -
+- Compensation leverage: high
 - Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
 ### Apply Agent Guardrails
@@ -716,13 +701,28 @@ Errors: 0
 - Never store API keys or credentials in job metadata.
 - Record only application status and user-approved notes.
 
+## P0 Grid Dynamics Poland - Site Reliability Engineer
+
+- Score: 92
+- Grade: A
+- Research evidence: 0
+- Keywords: Analytics, dashboard, engineer, product, data
+- Compensation leverage: -
+- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
+
+### Apply Agent Guardrails
+- Never submit without explicit user confirmation.
+- Never fabricate work authorization, salary history, degree, or experience.
+- Never store API keys or credentials in job metadata.
+- Record only application status and user-approved notes.
+
 ## P0 The Coca-Cola Company - Manager, Fluidics Engineer
 
 - Score: 91
 - Grade: A
-- Research evidence: 0
+- Research evidence: 4
 - Keywords: API, engineer, product, data
-- Compensation leverage: -
+- Compensation leverage: high
 - Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
 ### Apply Agent Guardrails
@@ -746,12 +746,12 @@ Errors: 0
 - Never store API keys or credentials in job metadata.
 - Record only application status and user-approved notes.
 
-## P0 EPAM Systems - Senior Data Engineer (Palantir)
+## P0 NAVEX - Staff Software Engineer
 
 - Score: 91
 - Grade: A
 - Research evidence: 0
-- Keywords: JavaScript, TypeScript, Analytics, API, engineer, product, data
+- Keywords: React, Accessibility, API, engineer, product
 - Compensation leverage: -
 - Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 

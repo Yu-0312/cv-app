@@ -1,6 +1,6 @@
 # Career Ops Deep Fit Report
 
-Generated: 2026-06-08T00:04:12.718Z
+Generated: 2026-06-09T00:08:49.199Z
 LLM provider: none
 Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 exploratory)
 
@@ -12,7 +12,7 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Grade: A
 - Confidence: medium
 - Decision: pursue aggressively
-- Thesis: Frontend Engineer at BIFROST PTE. LTD. is pursue aggressively because the snapshot score is 95, with 7 profile/role keyword hits and 2 external evidence item(s).
+- Thesis: Frontend Engineer at BIFROST PTE. LTD. is pursue aggressively because the snapshot score is 95, with 7 profile/role keyword hits and 1 external evidence item(s).
 
 #### Evidence
 - Keyword hits: Frontend Engineer, JavaScript, React, CSS, API, React, Frontend Engineer
@@ -42,7 +42,7 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Grade: A
 - Confidence: medium
 - Decision: pursue aggressively
-- Thesis: Frontend Engineer at BIFROST PTE. LTD. is pursue aggressively because the snapshot score is 95, with 7 profile/role keyword hits and 2 external evidence item(s).
+- Thesis: Frontend Engineer at BIFROST PTE. LTD. is pursue aggressively because the snapshot score is 95, with 7 profile/role keyword hits and 1 external evidence item(s).
 
 #### Evidence
 - Keyword hits: Frontend Engineer, JavaScript, React, CSS, API, React, Frontend Engineer
@@ -62,6 +62,36 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 
 #### CV Strategy
 - Lead with proof around: Frontend Engineer, JavaScript, React, CSS, API, React.
+- Use story story-1: frontend product execution.
+- Use story story-2: data-heavy product decisions.
+- Use story story-3: systems and API collaboration.
+
+### The Coca-Cola Company - Software Engineering I
+
+- Score: 95
+- Grade: A
+- Confidence: medium
+- Decision: pursue aggressively
+- Thesis: Software Engineering I at The Coca-Cola Company is pursue aggressively because the snapshot score is 95, with 2 profile/role keyword hits and 4 external evidence item(s).
+
+#### Evidence
+- Keyword hits: API, Full Stack Engineer
+- Keyword misses: growth, sales
+- Research signals: AI / data / platform signal, remote or hybrid signal
+- Compensation leverage: high
+
+#### Concerns
+- None flagged
+
+#### Interview Strategy
+- Ask why the role is open and what success means in the first 90 days.
+- Probe team ownership, roadmap pressure, and cross-functional interfaces.
+- What business unit owns the Software Engineering I role?
+- What measurable outcomes would this team expect in the first 90 days?
+- What recent company/product signals change the risk or upside?
+
+#### CV Strategy
+- Lead with proof around: API, Full Stack Engineer.
 - Use story story-1: frontend product execution.
 - Use story story-2: data-heavy product decisions.
 - Use story story-3: systems and API collaboration.
@@ -222,101 +252,11 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Grade: A
 - Confidence: medium
 - Decision: pursue aggressively
-- Thesis: Staff Software Engineer, Frontend at GlossGenius is pursue aggressively because the snapshot score is 94, with 13 profile/role keyword hits and 1 external evidence item(s).
+- Thesis: Staff Software Engineer, Frontend at GlossGenius is pursue aggressively because the snapshot score is 94, with 13 profile/role keyword hits and 0 external evidence item(s).
 
 #### Evidence
 - Keyword hits: Frontend Engineer, JavaScript, TypeScript, React, CSS, Accessibility, API, Performance Optimization, Design Systems, design system, TypeScript, React, Frontend Engineer
 - Keyword misses: go
-- Research signals: AI / data / platform signal
-- Compensation leverage: high
-
-#### Concerns
-- None flagged
-
-#### Interview Strategy
-- Ask why the role is open and what success means in the first 90 days.
-- Probe team ownership, roadmap pressure, and cross-functional interfaces.
-- What business unit owns the Staff Software Engineer, Frontend role?
-- What measurable outcomes would this team expect in the first 90 days?
-- What recent company/product signals change the risk or upside?
-
-#### CV Strategy
-- Lead with proof around: Frontend Engineer, JavaScript, TypeScript, React, CSS, Accessibility.
-- Use story story-1: frontend product execution.
-- Use story story-2: data-heavy product decisions.
-- Use story story-3: systems and API collaboration.
-
-### GlossGenius - Staff Software Engineer, Frontend
-
-- Score: 94
-- Grade: A
-- Confidence: medium
-- Decision: pursue aggressively
-- Thesis: Staff Software Engineer, Frontend at GlossGenius is pursue aggressively because the snapshot score is 94, with 13 profile/role keyword hits and 1 external evidence item(s).
-
-#### Evidence
-- Keyword hits: Frontend Engineer, JavaScript, TypeScript, React, CSS, Accessibility, API, Performance Optimization, Design Systems, design system, TypeScript, React, Frontend Engineer
-- Keyword misses: go
-- Research signals: AI / data / platform signal
-- Compensation leverage: high
-
-#### Concerns
-- None flagged
-
-#### Interview Strategy
-- Ask why the role is open and what success means in the first 90 days.
-- Probe team ownership, roadmap pressure, and cross-functional interfaces.
-- What business unit owns the Staff Software Engineer, Frontend role?
-- What measurable outcomes would this team expect in the first 90 days?
-- What recent company/product signals change the risk or upside?
-
-#### CV Strategy
-- Lead with proof around: Frontend Engineer, JavaScript, TypeScript, React, CSS, Accessibility.
-- Use story story-1: frontend product execution.
-- Use story story-2: data-heavy product decisions.
-- Use story story-3: systems and API collaboration.
-
-### GlossGenius - Staff Software Engineer, Frontend
-
-- Score: 94
-- Grade: A
-- Confidence: medium
-- Decision: pursue aggressively
-- Thesis: Staff Software Engineer, Frontend at GlossGenius is pursue aggressively because the snapshot score is 94, with 13 profile/role keyword hits and 1 external evidence item(s).
-
-#### Evidence
-- Keyword hits: Frontend Engineer, JavaScript, TypeScript, React, CSS, Accessibility, API, Performance Optimization, Design Systems, design system, TypeScript, React, Frontend Engineer
-- Keyword misses: go
-- Research signals: AI / data / platform signal
-- Compensation leverage: high
-
-#### Concerns
-- None flagged
-
-#### Interview Strategy
-- Ask why the role is open and what success means in the first 90 days.
-- Probe team ownership, roadmap pressure, and cross-functional interfaces.
-- What business unit owns the Staff Software Engineer, Frontend role?
-- What measurable outcomes would this team expect in the first 90 days?
-- What recent company/product signals change the risk or upside?
-
-#### CV Strategy
-- Lead with proof around: Frontend Engineer, JavaScript, TypeScript, React, CSS, Accessibility.
-- Use story story-1: frontend product execution.
-- Use story story-2: data-heavy product decisions.
-- Use story story-3: systems and API collaboration.
-
-### Treasure Data - Senior Software Engineer - Ruby on Rails
-
-- Score: 94
-- Grade: A
-- Confidence: medium
-- Decision: pursue aggressively
-- Thesis: Senior Software Engineer - Ruby on Rails at Treasure Data is pursue aggressively because the snapshot score is 94, with 8 profile/role keyword hits and 0 external evidence item(s).
-
-#### Evidence
-- Keyword hits: Frontend Engineer, TypeScript, React, API, Performance Optimization, TypeScript, React, Frontend Engineer
-- Keyword misses: sql, aws, growth
 - Research signals: -
 - Compensation leverage: high
 
@@ -328,7 +268,61 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Probe team ownership, roadmap pressure, and cross-functional interfaces.
 
 #### CV Strategy
-- Lead with proof around: Frontend Engineer, TypeScript, React, API, Performance Optimization, TypeScript.
+- Lead with proof around: Frontend Engineer, JavaScript, TypeScript, React, CSS, Accessibility.
+- Use story story-1: frontend product execution.
+- Use story story-2: data-heavy product decisions.
+- Use story story-3: systems and API collaboration.
+
+### GlossGenius - Staff Software Engineer, Frontend
+
+- Score: 94
+- Grade: A
+- Confidence: medium
+- Decision: pursue aggressively
+- Thesis: Staff Software Engineer, Frontend at GlossGenius is pursue aggressively because the snapshot score is 94, with 13 profile/role keyword hits and 0 external evidence item(s).
+
+#### Evidence
+- Keyword hits: Frontend Engineer, JavaScript, TypeScript, React, CSS, Accessibility, API, Performance Optimization, Design Systems, design system, TypeScript, React, Frontend Engineer
+- Keyword misses: go
+- Research signals: -
+- Compensation leverage: high
+
+#### Concerns
+- External company evidence is thin; run deep research with a search API.
+
+#### Interview Strategy
+- Ask why the role is open and what success means in the first 90 days.
+- Probe team ownership, roadmap pressure, and cross-functional interfaces.
+
+#### CV Strategy
+- Lead with proof around: Frontend Engineer, JavaScript, TypeScript, React, CSS, Accessibility.
+- Use story story-1: frontend product execution.
+- Use story story-2: data-heavy product decisions.
+- Use story story-3: systems and API collaboration.
+
+### GlossGenius - Staff Software Engineer, Frontend
+
+- Score: 94
+- Grade: A
+- Confidence: medium
+- Decision: pursue aggressively
+- Thesis: Staff Software Engineer, Frontend at GlossGenius is pursue aggressively because the snapshot score is 94, with 13 profile/role keyword hits and 0 external evidence item(s).
+
+#### Evidence
+- Keyword hits: Frontend Engineer, JavaScript, TypeScript, React, CSS, Accessibility, API, Performance Optimization, Design Systems, design system, TypeScript, React, Frontend Engineer
+- Keyword misses: go
+- Research signals: -
+- Compensation leverage: high
+
+#### Concerns
+- External company evidence is thin; run deep research with a search API.
+
+#### Interview Strategy
+- Ask why the role is open and what success means in the first 90 days.
+- Probe team ownership, roadmap pressure, and cross-functional interfaces.
+
+#### CV Strategy
+- Lead with proof around: Frontend Engineer, JavaScript, TypeScript, React, CSS, Accessibility.
 - Use story story-1: frontend product execution.
 - Use story story-2: data-heavy product decisions.
 - Use story story-3: systems and API collaboration.
@@ -442,34 +436,6 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - What business unit owns the Sr Software Engineer, Frontend (Web) role?
 - What measurable outcomes would this team expect in the first 90 days?
 - What recent company/product signals change the risk or upside?
-
-#### CV Strategy
-- Lead with proof around: Analytics, API, analytics, Product Engineer.
-- Use story story-1: frontend product execution.
-- Use story story-2: data-heavy product decisions.
-- Use story story-3: systems and API collaboration.
-
-### Apple - AIML - Site Lead & Lead Researcher, Foundation Models
-
-- Score: 93
-- Grade: A
-- Confidence: medium
-- Decision: pursue aggressively
-- Thesis: AIML - Site Lead & Lead Researcher, Foundation Models at Apple is pursue aggressively because the snapshot score is 93, with 4 profile/role keyword hits and 0 external evidence item(s).
-
-#### Evidence
-- Keyword hits: Analytics, API, analytics, Product Engineer
-- Keyword misses: python, agents, machine learning, deep learning, pytorch, tensorflow, growth
-- Research signals: -
-- Compensation leverage: high
-
-#### Concerns
-- External company evidence is thin; run deep research with a search API.
-- Profile keyword coverage is weaker than the target role language.
-
-#### Interview Strategy
-- Ask why the role is open and what success means in the first 90 days.
-- Probe team ownership, roadmap pressure, and cross-functional interfaces.
 
 #### CV Strategy
 - Lead with proof around: Analytics, API, analytics, Product Engineer.
@@ -598,7 +564,7 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Keyword hits: TypeScript, API, Design Systems, design system, TypeScript, Product Engineer
 - Keyword misses: python, java, swift, kotlin, llm, rag, agents, prompt engineering
 - Research signals: -
-- Compensation leverage: -
+- Compensation leverage: high
 
 #### Concerns
 - External company evidence is thin; run deep research with a search API.
@@ -626,7 +592,7 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Keyword hits: JavaScript, TypeScript, TypeScript, Product Engineer
 - Keyword misses: agents, excel
 - Research signals: -
-- Compensation leverage: -
+- Compensation leverage: high
 
 #### Concerns
 - External company evidence is thin; run deep research with a search API.
@@ -722,6 +688,33 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Use story story-2: data-heavy product decisions.
 - Use story story-3: systems and API collaboration.
 
+### AIM GLOBAL TALENT PTE. LTD. - Senior Frontend Engineer
+
+- Score: 92
+- Grade: A
+- Confidence: medium
+- Decision: pursue aggressively
+- Thesis: Senior Frontend Engineer at AIM GLOBAL TALENT PTE. LTD. is pursue aggressively because the snapshot score is 92, with 9 profile/role keyword hits and 0 external evidence item(s).
+
+#### Evidence
+- Keyword hits: Frontend Engineer, JavaScript, TypeScript, React, API, Performance Optimization, TypeScript, React, Frontend Engineer
+- Keyword misses: aws, azure
+- Research signals: -
+- Compensation leverage: -
+
+#### Concerns
+- External company evidence is thin; run deep research with a search API.
+
+#### Interview Strategy
+- Ask why the role is open and what success means in the first 90 days.
+- Probe team ownership, roadmap pressure, and cross-functional interfaces.
+
+#### CV Strategy
+- Lead with proof around: Frontend Engineer, JavaScript, TypeScript, React, API, Performance Optimization.
+- Use story story-1: frontend product execution.
+- Use story story-2: data-heavy product decisions.
+- Use story story-3: systems and API collaboration.
+
 ## Layer B — Standard Matches (roleFit 40-67)
 
 ### NVIDIA Workday - Senior Solution Architect - Telco Network Automation
@@ -759,12 +752,6 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Decision: pursue selectively
 - Keyword hits: Analytics, analytics
 - Gaps: spark, excel
-
-### N-iX - Senior Scala Engineer
-- Score: 78 | Grade: B | RoleFit: 45
-- Decision: pursue selectively
-- Keyword hits: Analytics, analytics
-- Gaps: docker, kubernetes
 
 ### NVIDIA Workday - Senior Mixed Signal Circuit Design Engineer
 - Score: 77 | Grade: B | RoleFit: 45
@@ -868,29 +855,17 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Keyword hits: -
 - Gaps: -
 
+### DCONSTRUCT ROBOTICS PTE. LTD. - Software Engineer
+- Score: 73 | Grade: B | RoleFit: 45
+- Decision: pursue selectively
+- Keyword hits: -
+- Gaps: computer vision
+
 ### Roblox Greenhouse - Senior Software Engineer, App Performance
 - Score: 73 | Grade: B | RoleFit: 45
 - Decision: pursue selectively
 - Keyword hits: -
 - Gaps: -
-
-### NVIDIA Workday - Senior Corporate Counsel
-- Score: 73 | Grade: B | RoleFit: 45
-- Decision: pursue selectively
-- Keyword hits: -
-- Gaps: rest
-
-### NVIDIA Workday - Senior Corporate Counsel
-- Score: 73 | Grade: B | RoleFit: 45
-- Decision: pursue selectively
-- Keyword hits: -
-- Gaps: rest
-
-### EXYTE SINGAPORE PTE. LTD. - Senior Electrical Engineer
-- Score: 73 | Grade: B | RoleFit: 45
-- Decision: pursue selectively
-- Keyword hits: -
-- Gaps: excel
 
 ### DCI CONSULTANTS PRIVATE LIMITED - Software Engineer (.net) - MC
 - Score: 71 | Grade: C | RoleFit: 45
@@ -928,28 +903,10 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Keyword hits: remote
 - Gaps: go
 
-### Yumoto Electric INC - [Product Inspection/Shift Work] ★Visa support available/125 days of annual leave/Benefits Osaka location
+### Impact HR &amp; KM Solutions - Online Data Entry Operator Data Entry Clerk Data Entry Typing Data Entry
 - Score: 70 | Grade: C | RoleFit: 45
 - Decision: pursue selectively
-- Keyword hits: -
-- Gaps: -
-
-### EXYTE SINGAPORE PTE. LTD. - Senior Engineer Mechanical
-- Score: 70 | Grade: C | RoleFit: 45
-- Decision: pursue selectively
-- Keyword hits: -
-- Gaps: -
-
-### EXYTE SINGAPORE PTE. LTD. - Engineer, Electrical
-- Score: 70 | Grade: C | RoleFit: 45
-- Decision: pursue selectively
-- Keyword hits: -
-- Gaps: -
-
-### EXYTE SINGAPORE PTE. LTD. - Engineer Civil/Structural
-- Score: 70 | Grade: C | RoleFit: 45
-- Decision: pursue selectively
-- Keyword hits: -
+- Keyword hits: remote
 - Gaps: -
 
 ### NVIDIA Workday - Senior Package Engineer
@@ -964,9 +921,44 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Keyword hits: remote
 - Gaps: -
 
+### Dana Incorporated - General Production
+- Score: 69 | Grade: C | RoleFit: 45
+- Decision: hold / compare
+- Keyword hits: remote
+- Gaps: -
+
+### Dana Incorporated - CAN_GENERAL PRODUCTION
+- Score: 69 | Grade: C | RoleFit: 45
+- Decision: hold / compare
+- Keyword hits: remote
+- Gaps: -
+
+### re:act - Freelance UGC Creators Wanted
+- Score: 69 | Grade: C | RoleFit: 45
+- Decision: hold / compare
+- Keyword hits: remote
+- Gaps: -
+
+### ALLEGIS GROUP SINGAPORE PRIVATE LIMITED - Business Analyst
+- Score: 68 | Grade: C | RoleFit: 45
+- Decision: hold / compare
+- Keyword hits: -
+- Gaps: -
+
+### CodeGeniusRecruit - Data Annotator
+- Score: 68 | Grade: C | RoleFit: 45
+- Decision: hold / compare
+- Keyword hits: remote
+- Gaps: -
+
+### Igne - Site Labourer
+- Score: 68 | Grade: C | RoleFit: 45
+- Decision: hold / compare
+- Keyword hits: remote
+- Gaps: -
+
 ## Layer C — Exploratory Signals (roleFit < 40)
 
-- **AIM GLOBAL TALENT PTE. LTD. — Senior Frontend Engineer** (score: 92) | Top gap: aws
 - **LawnStarter — Staff Software Engineer, Product (Belo Horizonte)** (score: 92) | Top gap: aws
 - **LawnStarter — Staff Software Engineer, Product (Florianópolis)** (score: 92) | Top gap: aws
 - **LawnStarter — Staff Software Engineer, Product (Porto Alegre)** (score: 92) | Top gap: aws
@@ -988,12 +980,13 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - **Canonical Greenhouse — Security Software Engineer** (score: 92) | Top gap: python
 - **Vercel Greenhouse — Site Engineer** (score: 92) | Top gap: agents
 - **ElevenLabs Ashby — Safety Engineer** (score: 92) | Top gap: python
+- **Grid Dynamics Poland — Site Reliability Engineer** (score: 92) | Top gap: python
 - **The Coca-Cola Company — Manager, Fluidics Engineer** (score: 91) | Top gap: growth
 - **Uber — Graduate 2026 Software Engineer I, Chile** (score: 91) | Top gap: python
+- **NAVEX — Staff Software Engineer** (score: 91) | Top gap: angular
 - **EPAM Systems — Senior Data Engineer (Palantir)** (score: 91) | Top gap: python
 - **Stripe Greenhouse — Full Stack Engineer, Support Experience** (score: 91) | Top gap: none
 - **Canonical Greenhouse — Web Frontend Engineer - JS, CSS, React, Flutter** (score: 91) | Top gap: docker
 - **Asana Greenhouse — Senior Engineering Manager, Payment Platform** (score: 91) | Top gap: kubernetes
 - **Asana Greenhouse — Senior Software Engineer, AI Chat** (score: 91) | Top gap: sales
-- **Asana Greenhouse — Senior Software Engineer, APIs** (score: 91) | Top gap: agents
 
