@@ -1,22 +1,26 @@
 # Career Ops Deep Research
 
-Generated: 2026-06-09T00:08:35.373Z
+Generated: 2026-06-10T00:13:36.430Z
 Search provider: none
-Queries: 14
-Evidence items: 7
+Queries: 11
+Evidence items: 8
 Dossiers: 8
 
-## BIFROST PTE. LTD. - Frontend Engineer
+## VANGUARD SOFTWARE PTE. LTD. - Expert Frontend Engineer (React.JS & React Native)
 
 - Score: 95
 - Recommendation: 值得投遞
-- Signals: AI / data / platform signal, remote or hybrid signal
+- Signals: AI / data / platform signal
 
 ### Evidence
-- source-page: https://www.themuse.com/jobs/uber/sr-software-engineer-frontend-web-8fc2b7 — Sr Software Engineer, Frontend (Web) at Uber | The Muse | The Muse Skip to main content The Muse Logo A logo with &amp;quat;the muse&amp;quat; in dark blue text. Newsletter Jobs Ac
+- source-page: https://www.mycareersfuture.gov.sg/job/07eafbe6994e2090a0c2a6a6a6111e62 — MyCareersFuture Singapore
+- source-page: https://www.mycareersfuture.gov.sg/job/dc06e8c5f714c11bfb2e053ac7ee2276 — MyCareersFuture Singapore
+- source-page: https://www.mycareersfuture.gov.sg/job/ddc648c00fcb0cb0d717f2878ba8bc29 — MyCareersFuture Singapore
+- source-page: https://www.themuse.com/jobs/thecocacolacompany/tech-lead-service-provider-ee17f6 — Tech Lead, Service Provider at The Coca-Cola Company | The Muse | The Muse Skip to main content The Muse Logo A logo with &amp;quat;the muse&amp;quat; in dark blue text. Newsletter
+- source-page: https://www.themuse.com/jobs/thecocacolacompany/software-engineer-i-f085ec — Software Engineer I at The Coca-Cola Company | The Muse | The Muse Skip to main content The Muse Logo A logo with &amp;quat;the muse&amp;quat; in dark blue text. Newsletter Jobs Ac
 
 ### Research Questions
-- What business unit owns the Frontend Engineer role?
+- What business unit owns the Expert Frontend Engineer (React.JS & React Native) role?
 - What measurable outcomes would this team expect in the first 90 days?
 - What recent company/product signals change the risk or upside?
 - Which CV proof points should be highlighted for this company?
@@ -46,20 +50,113 @@ Dossiers: 8
 - Ask how the company evaluates impact across the first two quarters.
 - Prepare one story that maps directly to the highest-scoring ATS keywords.
 
-## The Coca-Cola Company - Software Engineering I
+## BIFROST PTE. LTD. - Frontend Engineer
 
 - Score: 95
 - Recommendation: 值得投遞
 - Signals: AI / data / platform signal, remote or hybrid signal
 
 ### Evidence
-- source-page: https://www.themuse.com/jobs/thecocacolacompany/software-engineering-i — Software Engineering I at The Coca-Cola Company | The Muse | The Muse Skip to main content The Muse Logo A logo with &amp;quat;the muse&amp;quat; in dark blue text. Newsletter Jobs
 - source-page: https://www.themuse.com/jobs/uber/sr-software-engineer-frontend-web-8fc2b7 — Sr Software Engineer, Frontend (Web) at Uber | The Muse | The Muse Skip to main content The Muse Logo A logo with &amp;quat;the muse&amp;quat; in dark blue text. Newsletter Jobs Ac
-- source-page: https://www.themuse.com/jobs/bankofamerica/principal-engineer-gbs-ind-783d05 — Principal Engineer - GBS IND at Bank of America | The Muse | The Muse Skip to main content The Muse Logo A logo with &amp;quat;the muse&amp;quat; in dark blue text. Newsletter Jobs
-- source-page: https://www.tokyodev.com/companies/moneyforward/jobs/lead-backend-engineer-digital-bank — Lead Backend Engineer, Digital Bank - Money Forward | TokyoDev Jobs Companies Articles Community ••• Companies Articles Get the newsletter Community Post a Job Developer Stories Su
 
 ### Research Questions
-- What business unit owns the Software Engineering I role?
+- What business unit owns the Frontend Engineer role?
+- What measurable outcomes would this team expect in the first 90 days?
+- What recent company/product signals change the risk or upside?
+- Which CV proof points should be highlighted for this company?
+
+### Interview Angles
+- Ask about team success metrics and why the role is open.
+- Ask how the company evaluates impact across the first two quarters.
+- Prepare one story that maps directly to the highest-scoring ATS keywords.
+
+## The Coca-Cola Company - Tech Lead, Service Provider
+
+- Score: 95
+- Recommendation: 值得投遞
+- Signals: AI / data / platform signal, remote or hybrid signal
+
+### Evidence
+- source-page: https://www.themuse.com/jobs/thecocacolacompany/tech-lead-service-provider-ee17f6 — Tech Lead, Service Provider at The Coca-Cola Company | The Muse | The Muse Skip to main content The Muse Logo A logo with &amp;quat;the muse&amp;quat; in dark blue text. Newsletter
+- source-page: https://www.themuse.com/jobs/thecocacolacompany/software-engineer-i-f085ec — Software Engineer I at The Coca-Cola Company | The Muse | The Muse Skip to main content The Muse Logo A logo with &amp;quat;the muse&amp;quat; in dark blue text. Newsletter Jobs Ac
+- source-page: https://www.themuse.com/jobs/thecocacolacompany/senior-manager-software-engineer-service-provider — Senior Manager, Software Engineer, Service Provider at The Coca-Cola Company | The Muse | The Muse Skip to main content The Muse Logo A logo with &amp;quat;the muse&amp;quat; in da
+- source-page: https://www.themuse.com/jobs/thecocacolacompany/senior-manager-software-engineer-fsop-sales-experience — Senior Manager, Software Engineer FSOP Sales Experience at The Coca-Cola Company | The Muse | The Muse Skip to main content The Muse Logo A logo with &amp;quat;the muse&amp;quat; i
+- source-page: https://www.themuse.com/jobs/uber/sr-software-engineer-frontend-web-8fc2b7 — Sr Software Engineer, Frontend (Web) at Uber | The Muse | The Muse Skip to main content The Muse Logo A logo with &amp;quat;the muse&amp;quat; in dark blue text. Newsletter Jobs Ac
+
+### Research Questions
+- What business unit owns the Tech Lead, Service Provider role?
+- What measurable outcomes would this team expect in the first 90 days?
+- What recent company/product signals change the risk or upside?
+- Which CV proof points should be highlighted for this company?
+
+### Interview Angles
+- Ask about team success metrics and why the role is open.
+- Ask how the company evaluates impact across the first two quarters.
+- Prepare one story that maps directly to the highest-scoring ATS keywords.
+
+## The Coca-Cola Company - Software Engineer I
+
+- Score: 95
+- Recommendation: 值得投遞
+- Signals: AI / data / platform signal, remote or hybrid signal
+
+### Evidence
+- source-page: https://www.themuse.com/jobs/thecocacolacompany/tech-lead-service-provider-ee17f6 — Tech Lead, Service Provider at The Coca-Cola Company | The Muse | The Muse Skip to main content The Muse Logo A logo with &amp;quat;the muse&amp;quat; in dark blue text. Newsletter
+- source-page: https://www.themuse.com/jobs/thecocacolacompany/software-engineer-i-f085ec — Software Engineer I at The Coca-Cola Company | The Muse | The Muse Skip to main content The Muse Logo A logo with &amp;quat;the muse&amp;quat; in dark blue text. Newsletter Jobs Ac
+- source-page: https://www.themuse.com/jobs/thecocacolacompany/senior-manager-software-engineer-service-provider — Senior Manager, Software Engineer, Service Provider at The Coca-Cola Company | The Muse | The Muse Skip to main content The Muse Logo A logo with &amp;quat;the muse&amp;quat; in da
+- source-page: https://www.themuse.com/jobs/thecocacolacompany/senior-manager-software-engineer-fsop-sales-experience — Senior Manager, Software Engineer FSOP Sales Experience at The Coca-Cola Company | The Muse | The Muse Skip to main content The Muse Logo A logo with &amp;quat;the muse&amp;quat; i
+- source-page: https://www.themuse.com/jobs/uber/sr-software-engineer-frontend-web-8fc2b7 — Sr Software Engineer, Frontend (Web) at Uber | The Muse | The Muse Skip to main content The Muse Logo A logo with &amp;quat;the muse&amp;quat; in dark blue text. Newsletter Jobs Ac
+
+### Research Questions
+- What business unit owns the Software Engineer I role?
+- What measurable outcomes would this team expect in the first 90 days?
+- What recent company/product signals change the risk or upside?
+- Which CV proof points should be highlighted for this company?
+
+### Interview Angles
+- Ask about team success metrics and why the role is open.
+- Ask how the company evaluates impact across the first two quarters.
+- Prepare one story that maps directly to the highest-scoring ATS keywords.
+
+## The Coca-Cola Company - Senior Manager, Software Engineer, Service Provider
+
+- Score: 95
+- Recommendation: 值得投遞
+- Signals: AI / data / platform signal, remote or hybrid signal
+
+### Evidence
+- source-page: https://www.themuse.com/jobs/thecocacolacompany/tech-lead-service-provider-ee17f6 — Tech Lead, Service Provider at The Coca-Cola Company | The Muse | The Muse Skip to main content The Muse Logo A logo with &amp;quat;the muse&amp;quat; in dark blue text. Newsletter
+- source-page: https://www.themuse.com/jobs/thecocacolacompany/software-engineer-i-f085ec — Software Engineer I at The Coca-Cola Company | The Muse | The Muse Skip to main content The Muse Logo A logo with &amp;quat;the muse&amp;quat; in dark blue text. Newsletter Jobs Ac
+- source-page: https://www.themuse.com/jobs/thecocacolacompany/senior-manager-software-engineer-service-provider — Senior Manager, Software Engineer, Service Provider at The Coca-Cola Company | The Muse | The Muse Skip to main content The Muse Logo A logo with &amp;quat;the muse&amp;quat; in da
+- source-page: https://www.themuse.com/jobs/thecocacolacompany/senior-manager-software-engineer-fsop-sales-experience — Senior Manager, Software Engineer FSOP Sales Experience at The Coca-Cola Company | The Muse | The Muse Skip to main content The Muse Logo A logo with &amp;quat;the muse&amp;quat; i
+- source-page: https://www.themuse.com/jobs/uber/sr-software-engineer-frontend-web-8fc2b7 — Sr Software Engineer, Frontend (Web) at Uber | The Muse | The Muse Skip to main content The Muse Logo A logo with &amp;quat;the muse&amp;quat; in dark blue text. Newsletter Jobs Ac
+
+### Research Questions
+- What business unit owns the Senior Manager, Software Engineer, Service Provider role?
+- What measurable outcomes would this team expect in the first 90 days?
+- What recent company/product signals change the risk or upside?
+- Which CV proof points should be highlighted for this company?
+
+### Interview Angles
+- Ask about team success metrics and why the role is open.
+- Ask how the company evaluates impact across the first two quarters.
+- Prepare one story that maps directly to the highest-scoring ATS keywords.
+
+## The Coca-Cola Company - Senior Manager, Software Engineer FSOP Sales Experience
+
+- Score: 95
+- Recommendation: 值得投遞
+- Signals: AI / data / platform signal, remote or hybrid signal
+
+### Evidence
+- source-page: https://www.themuse.com/jobs/thecocacolacompany/tech-lead-service-provider-ee17f6 — Tech Lead, Service Provider at The Coca-Cola Company | The Muse | The Muse Skip to main content The Muse Logo A logo with &amp;quat;the muse&amp;quat; in dark blue text. Newsletter
+- source-page: https://www.themuse.com/jobs/thecocacolacompany/software-engineer-i-f085ec — Software Engineer I at The Coca-Cola Company | The Muse | The Muse Skip to main content The Muse Logo A logo with &amp;quat;the muse&amp;quat; in dark blue text. Newsletter Jobs Ac
+- source-page: https://www.themuse.com/jobs/thecocacolacompany/senior-manager-software-engineer-service-provider — Senior Manager, Software Engineer, Service Provider at The Coca-Cola Company | The Muse | The Muse Skip to main content The Muse Logo A logo with &amp;quat;the muse&amp;quat; in da
+- source-page: https://www.themuse.com/jobs/thecocacolacompany/senior-manager-software-engineer-fsop-sales-experience — Senior Manager, Software Engineer FSOP Sales Experience at The Coca-Cola Company | The Muse | The Muse Skip to main content The Muse Logo A logo with &amp;quat;the muse&amp;quat; i
+- source-page: https://www.themuse.com/jobs/uber/sr-software-engineer-frontend-web-8fc2b7 — Sr Software Engineer, Frontend (Web) at Uber | The Muse | The Muse Skip to main content The Muse Logo A logo with &amp;quat;the muse&amp;quat; in dark blue text. Newsletter Jobs Ac
+
+### Research Questions
+- What business unit owns the Senior Manager, Software Engineer FSOP Sales Experience role?
 - What measurable outcomes would this team expect in the first 90 days?
 - What recent company/product signals change the risk or upside?
 - Which CV proof points should be highlighted for this company?
@@ -88,91 +185,4 @@ Dossiers: 8
 - Ask about team success metrics and why the role is open.
 - Ask how the company evaluates impact across the first two quarters.
 - Prepare one story that maps directly to the highest-scoring ATS keywords.
-
-## Disney - Lead Software Engineer
-
-- Score: 95
-- Recommendation: 值得投遞
-- Signals: AI / data / platform signal, remote or hybrid signal
-
-### Evidence
-- source-page: https://www.themuse.com/jobs/bankofamerica/principal-engineer-gbs-ind-783d05 — Principal Engineer - GBS IND at Bank of America | The Muse | The Muse Skip to main content The Muse Logo A logo with &amp;quat;the muse&amp;quat; in dark blue text. Newsletter Jobs
-- source-page: https://www.tokyodev.com/companies/moneyforward/jobs/lead-backend-engineer-digital-bank — Lead Backend Engineer, Digital Bank - Money Forward | TokyoDev Jobs Companies Articles Community ••• Companies Articles Get the newsletter Community Post a Job Developer Stories Su
-
-### Research Questions
-- What business unit owns the Lead Software Engineer role?
-- What measurable outcomes would this team expect in the first 90 days?
-- What recent company/product signals change the risk or upside?
-- Which CV proof points should be highlighted for this company?
-
-### Interview Angles
-- Ask about team success metrics and why the role is open.
-- Ask how the company evaluates impact across the first two quarters.
-- Prepare one story that maps directly to the highest-scoring ATS keywords.
-
-## Bank of America - Principal Engineer - GBS IND
-
-- Score: 95
-- Recommendation: 值得投遞
-- Signals: AI / data / platform signal, remote or hybrid signal
-
-### Evidence
-- source-page: https://www.themuse.com/jobs/bankofamerica/principal-engineer-gbs-ind-783d05 — Principal Engineer - GBS IND at Bank of America | The Muse | The Muse Skip to main content The Muse Logo A logo with &amp;quat;the muse&amp;quat; in dark blue text. Newsletter Jobs
-- source-page: https://www.tokyodev.com/companies/moneyforward/jobs/lead-backend-engineer-digital-bank — Lead Backend Engineer, Digital Bank - Money Forward | TokyoDev Jobs Companies Articles Community ••• Companies Articles Get the newsletter Community Post a Job Developer Stories Su
-
-### Research Questions
-- What business unit owns the Principal Engineer - GBS IND role?
-- What measurable outcomes would this team expect in the first 90 days?
-- What recent company/product signals change the risk or upside?
-- Which CV proof points should be highlighted for this company?
-
-### Interview Angles
-- Ask about team success metrics and why the role is open.
-- Ask how the company evaluates impact across the first two quarters.
-- Prepare one story that maps directly to the highest-scoring ATS keywords.
-
-## Money Forward - Lead Backend Engineer, Digital Bank
-
-- Score: 95
-- Recommendation: 值得投遞
-- Signals: AI / data / platform signal, remote or hybrid signal
-
-### Evidence
-- source-page: https://www.themuse.com/jobs/bankofamerica/principal-engineer-gbs-ind-783d05 — Principal Engineer - GBS IND at Bank of America | The Muse | The Muse Skip to main content The Muse Logo A logo with &amp;quat;the muse&amp;quat; in dark blue text. Newsletter Jobs
-- source-page: https://www.tokyodev.com/companies/moneyforward/jobs/lead-backend-engineer-digital-bank — Lead Backend Engineer, Digital Bank - Money Forward | TokyoDev Jobs Companies Articles Community ••• Companies Articles Get the newsletter Community Post a Job Developer Stories Su
-
-### Research Questions
-- What business unit owns the Lead Backend Engineer, Digital Bank role?
-- What measurable outcomes would this team expect in the first 90 days?
-- What recent company/product signals change the risk or upside?
-- Which CV proof points should be highlighted for this company?
-
-### Interview Angles
-- Ask about team success metrics and why the role is open.
-- Ask how the company evaluates impact across the first two quarters.
-- Prepare one story that maps directly to the highest-scoring ATS keywords.
-
-## AIRWALLEX (SINGAPORE) PTE. LTD. - Senior Frontend Engineer, Regulatory Reporting
-
-- Score: 94
-- Recommendation: 值得投遞
-- Signals: AI / data / platform signal, remote or hybrid signal
-
-### Evidence
-- source-page: https://www.tokyodev.com/companies/moneyforward/jobs/lead-backend-engineer-digital-bank — Lead Backend Engineer, Digital Bank - Money Forward | TokyoDev Jobs Companies Articles Community ••• Companies Articles Get the newsletter Community Post a Job Developer Stories Su
-
-### Research Questions
-- What business unit owns the Senior Frontend Engineer, Regulatory Reporting role?
-- What measurable outcomes would this team expect in the first 90 days?
-- What recent company/product signals change the risk or upside?
-- Which CV proof points should be highlighted for this company?
-
-### Interview Angles
-- Ask about team success metrics and why the role is open.
-- Ask how the company evaluates impact across the first two quarters.
-- Prepare one story that maps directly to the highest-scoring ATS keywords.
-
-## Errors
-
-- https://www.themuse.com/jobs/disney/lead-software-engineer-944f62: HTTP 404
 

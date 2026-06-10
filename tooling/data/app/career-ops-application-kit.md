@@ -1,6 +1,6 @@
 # Career Ops Application Kit
 
-Generated: 2026-06-09T00:08:29.440Z
+Generated: 2026-06-10T00:13:28.938Z
 Jobs: 12
 
 ## Pipeline
@@ -10,11 +10,11 @@ Jobs: 12
 - Interview: map JD keywords to STAR stories and questions.
 - Negotiation: total-comp package and role-level calibration after offer.
 
-## BIFROST PTE. LTD. - Frontend Engineer
+## VANGUARD SOFTWARE PTE. LTD. - Expert Frontend Engineer (React.JS & React Native)
 
 - Priority: P0
 - Score: 95/A
-- Subject: Frontend Engineer application - BIFROST PTE. LTD.
+- Subject: Expert Frontend Engineer (React.JS & React Native) application - VANGUARD SOFTWARE PTE. LTD.
 
 - Block G: High Confidence
 - Rating: 4.8/5.0
@@ -22,26 +22,26 @@ Jobs: 12
 ### ATS Keyword Injection
 - Archetype: Frontend Engineer
 - Coverage: 100%
-- JD Keywords: JavaScript, React, engineer, product, data, restful, graphql, node.js
-- 在 Professional Summary 中自然帶入：JavaScript、React、engineer、product、data
+- JD Keywords: JavaScript, TypeScript, React, Next.js, CSS, Accessibility, Design Systems, design system
+- 在 Professional Summary 中自然帶入：JavaScript、TypeScript、React、Next.js、CSS
 - 使用職位語言：「Frontend Engineer」方向的動詞和術語
-- 【你已有但此 JD 未要求】可視情況選擇性提及：vue、angular、python、java、go
-- Missing (do NOT fabricate): vue, angular, python, java, go, mysql, aws, gcp
+- 【你已有但此 JD 未要求】可視情況選擇性提及：html、growth
+- Missing (do NOT fabricate): html, growth
 
 ### Apply Checklist
 - Open the source URL and confirm the role is still active.
 - Generate or refresh the tailored ATS PDF from this job.
-- Mirror these JD keywords honestly in your CV: JavaScript, React, engineer, product, data, restful, graphql, node.js
-- Do not overclaim missing areas: vue, angular, python, java, go, mysql
+- Mirror these JD keywords honestly in your CV: JavaScript, TypeScript, React, Next.js, CSS, Accessibility, Design Systems, design system
+- Do not overclaim missing areas: html, growth
 - Log status, recruiter/contact, and next follow-up date in the tracker.
 
 ### Outreach Email
 ```text
-Hi BIFROST PTE. LTD. team,
+Hi VANGUARD SOFTWARE PTE. LTD. team,
 
-I am Alex Chen, and I am interested in the Frontend Engineer role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.
+I am Alex Chen, and I am interested in the Expert Frontend Engineer (React.JS & React Native) role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.
 
-The role stood out because it maps closely to my experience with JavaScript, React, engineer, product, data.
+The role stood out because it maps closely to my experience with JavaScript, TypeScript, React, Next.js, CSS.
 
 I would appreciate the chance to share how my experience can support the team. Thank you for your time.
 
@@ -52,9 +52,9 @@ Alex Chen
 ### Follow-up
 Timing: 3-5 business days after applying or the last recruiter interaction.
 ```text
-Hi BIFROST PTE. LTD. team,
+Hi VANGUARD SOFTWARE PTE. LTD. team,
 
-I wanted to follow up on my application for the Frontend Engineer role. I remain interested and would be glad to provide any additional context about my background.
+I wanted to follow up on my application for the Expert Frontend Engineer (React.JS & React Native) role. I remain interested and would be glad to provide any additional context about my background.
 
 Thank you again for your time.
 
@@ -63,8 +63,8 @@ Alex Chen
 ```
 
 ### Interview Prep
-- Prepare a 60-second story for why BIFROST PTE. LTD. and why Frontend Engineer.
-- Prepare evidence for: JavaScript, React, engineer, product, data, restful.
+- Prepare a 60-second story for why VANGUARD SOFTWARE PTE. LTD. and why Expert Frontend Engineer (React.JS & React Native).
+- Prepare evidence for: JavaScript, TypeScript, React, Next.js, CSS, Accessibility.
 - Prepare one STAR story about execution under ambiguity.
 - Prepare one STAR story about collaboration and tradeoff decisions.
 - Prepare questions about team priorities, success metrics, and hiring timeline.
@@ -140,11 +140,141 @@ Alex Chen
 - Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.
 - Use competing priorities and role fit, not personal need, as the negotiation frame.
 
-## The Coca-Cola Company - Software Engineering I
+## BIFROST PTE. LTD. - Frontend Engineer
 
 - Priority: P0
 - Score: 95/A
-- Subject: Software Engineering I application - The Coca-Cola Company
+- Subject: Frontend Engineer application - BIFROST PTE. LTD.
+
+- Block G: High Confidence
+- Rating: 4.8/5.0
+
+### ATS Keyword Injection
+- Archetype: Frontend Engineer
+- Coverage: 100%
+- JD Keywords: JavaScript, React, engineer, product, data, restful, graphql, node.js
+- 在 Professional Summary 中自然帶入：JavaScript、React、engineer、product、data
+- 使用職位語言：「Frontend Engineer」方向的動詞和術語
+- 【你已有但此 JD 未要求】可視情況選擇性提及：vue、angular、python、java、go
+- Missing (do NOT fabricate): vue, angular, python, java, go, mysql, aws, gcp
+
+### Apply Checklist
+- Open the source URL and confirm the role is still active.
+- Generate or refresh the tailored ATS PDF from this job.
+- Mirror these JD keywords honestly in your CV: JavaScript, React, engineer, product, data, restful, graphql, node.js
+- Do not overclaim missing areas: vue, angular, python, java, go, mysql
+- Log status, recruiter/contact, and next follow-up date in the tracker.
+
+### Outreach Email
+```text
+Hi BIFROST PTE. LTD. team,
+
+I am Alex Chen, and I am interested in the Frontend Engineer role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.
+
+The role stood out because it maps closely to my experience with JavaScript, React, engineer, product, data.
+
+I would appreciate the chance to share how my experience can support the team. Thank you for your time.
+
+Best,
+Alex Chen
+```
+
+### Follow-up
+Timing: 3-5 business days after applying or the last recruiter interaction.
+```text
+Hi BIFROST PTE. LTD. team,
+
+I wanted to follow up on my application for the Frontend Engineer role. I remain interested and would be glad to provide any additional context about my background.
+
+Thank you again for your time.
+
+Best,
+Alex Chen
+```
+
+### Interview Prep
+- Prepare a 60-second story for why BIFROST PTE. LTD. and why Frontend Engineer.
+- Prepare evidence for: JavaScript, React, engineer, product, data, restful.
+- Prepare one STAR story about execution under ambiguity.
+- Prepare one STAR story about collaboration and tradeoff decisions.
+- Prepare questions about team priorities, success metrics, and hiring timeline.
+
+### Negotiation Prep
+- Wait for a clear offer before anchoring compensation.
+- Ask for total compensation breakdown, work mode, title, level, review cycle, and start date.
+- Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.
+- Use competing priorities and role fit, not personal need, as the negotiation frame.
+
+## The Coca-Cola Company - Tech Lead, Service Provider
+
+- Priority: P0
+- Score: 95/A
+- Subject: Tech Lead, Service Provider application - The Coca-Cola Company
+
+- Block G: High Confidence
+- Rating: 4.8/5.0
+
+### ATS Keyword Injection
+- Archetype: AI Platform / LLMOps
+- Coverage: 100%
+- JD Keywords: API, product, data
+- 在 Professional Summary 中自然帶入：API、product、data
+- 使用職位語言：「AI Platform / LLMOps」方向的動詞和術語
+- 【你已有但此 JD 未要求】可視情況選擇性提及：growth、sales
+- Missing (do NOT fabricate): growth, sales
+
+### Apply Checklist
+- Open the source URL and confirm the role is still active.
+- Generate or refresh the tailored ATS PDF from this job.
+- Mirror these JD keywords honestly in your CV: API, product, data
+- Do not overclaim missing areas: growth, sales
+- Log status, recruiter/contact, and next follow-up date in the tracker.
+
+### Outreach Email
+```text
+Hi The Coca-Cola Company team,
+
+I am Alex Chen, and I am interested in the Tech Lead, Service Provider role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.
+
+The role stood out because it maps closely to my experience with API, product, data.
+
+I would appreciate the chance to share how my experience can support the team. Thank you for your time.
+
+Best,
+Alex Chen
+```
+
+### Follow-up
+Timing: 3-5 business days after applying or the last recruiter interaction.
+```text
+Hi The Coca-Cola Company team,
+
+I wanted to follow up on my application for the Tech Lead, Service Provider role. I remain interested and would be glad to provide any additional context about my background.
+
+Thank you again for your time.
+
+Best,
+Alex Chen
+```
+
+### Interview Prep
+- Prepare a 60-second story for why The Coca-Cola Company and why Tech Lead, Service Provider.
+- Prepare evidence for: API, product, data.
+- Prepare one STAR story about execution under ambiguity.
+- Prepare one STAR story about collaboration and tradeoff decisions.
+- Prepare questions about team priorities, success metrics, and hiring timeline.
+
+### Negotiation Prep
+- Wait for a clear offer before anchoring compensation.
+- Ask for total compensation breakdown, work mode, title, level, review cycle, and start date.
+- Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.
+- Use competing priorities and role fit, not personal need, as the negotiation frame.
+
+## The Coca-Cola Company - Software Engineer I
+
+- Priority: P0
+- Score: 95/A
+- Subject: Software Engineer I application - The Coca-Cola Company
 
 - Block G: High Confidence
 - Rating: 4.8/5.0
@@ -169,7 +299,7 @@ Alex Chen
 ```text
 Hi The Coca-Cola Company team,
 
-I am Alex Chen, and I am interested in the Software Engineering I role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.
+I am Alex Chen, and I am interested in the Software Engineer I role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.
 
 The role stood out because it maps closely to my experience with API, engineer, product, data.
 
@@ -184,7 +314,7 @@ Timing: 3-5 business days after applying or the last recruiter interaction.
 ```text
 Hi The Coca-Cola Company team,
 
-I wanted to follow up on my application for the Software Engineering I role. I remain interested and would be glad to provide any additional context about my background.
+I wanted to follow up on my application for the Software Engineer I role. I remain interested and would be glad to provide any additional context about my background.
 
 Thank you again for your time.
 
@@ -193,7 +323,137 @@ Alex Chen
 ```
 
 ### Interview Prep
-- Prepare a 60-second story for why The Coca-Cola Company and why Software Engineering I.
+- Prepare a 60-second story for why The Coca-Cola Company and why Software Engineer I.
+- Prepare evidence for: API, engineer, product, data.
+- Prepare one STAR story about execution under ambiguity.
+- Prepare one STAR story about collaboration and tradeoff decisions.
+- Prepare questions about team priorities, success metrics, and hiring timeline.
+
+### Negotiation Prep
+- Wait for a clear offer before anchoring compensation.
+- Ask for total compensation breakdown, work mode, title, level, review cycle, and start date.
+- Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.
+- Use competing priorities and role fit, not personal need, as the negotiation frame.
+
+## The Coca-Cola Company - Senior Manager, Software Engineer, Service Provider
+
+- Priority: P0
+- Score: 95/A
+- Subject: Senior Manager, Software Engineer, Service Provider application - The Coca-Cola Company
+
+- Block G: High Confidence
+- Rating: 4.8/5.0
+
+### ATS Keyword Injection
+- Archetype: AI Platform / LLMOps
+- Coverage: 100%
+- JD Keywords: API, engineer, product, data
+- 在 Professional Summary 中自然帶入：API、engineer、product、data
+- 使用職位語言：「AI Platform / LLMOps」方向的動詞和術語
+- 【你已有但此 JD 未要求】可視情況選擇性提及：growth、sales
+- Missing (do NOT fabricate): growth, sales
+
+### Apply Checklist
+- Open the source URL and confirm the role is still active.
+- Generate or refresh the tailored ATS PDF from this job.
+- Mirror these JD keywords honestly in your CV: API, engineer, product, data
+- Do not overclaim missing areas: growth, sales
+- Log status, recruiter/contact, and next follow-up date in the tracker.
+
+### Outreach Email
+```text
+Hi The Coca-Cola Company team,
+
+I am Alex Chen, and I am interested in the Senior Manager, Software Engineer, Service Provider role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.
+
+The role stood out because it maps closely to my experience with API, engineer, product, data.
+
+I would appreciate the chance to share how my experience can support the team. Thank you for your time.
+
+Best,
+Alex Chen
+```
+
+### Follow-up
+Timing: 3-5 business days after applying or the last recruiter interaction.
+```text
+Hi The Coca-Cola Company team,
+
+I wanted to follow up on my application for the Senior Manager, Software Engineer, Service Provider role. I remain interested and would be glad to provide any additional context about my background.
+
+Thank you again for your time.
+
+Best,
+Alex Chen
+```
+
+### Interview Prep
+- Prepare a 60-second story for why The Coca-Cola Company and why Senior Manager, Software Engineer, Service Provider.
+- Prepare evidence for: API, engineer, product, data.
+- Prepare one STAR story about execution under ambiguity.
+- Prepare one STAR story about collaboration and tradeoff decisions.
+- Prepare questions about team priorities, success metrics, and hiring timeline.
+
+### Negotiation Prep
+- Wait for a clear offer before anchoring compensation.
+- Ask for total compensation breakdown, work mode, title, level, review cycle, and start date.
+- Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.
+- Use competing priorities and role fit, not personal need, as the negotiation frame.
+
+## The Coca-Cola Company - Senior Manager, Software Engineer FSOP Sales Experience
+
+- Priority: P0
+- Score: 95/A
+- Subject: Senior Manager, Software Engineer FSOP Sales Experience application - The Coca-Cola Company
+
+- Block G: High Confidence
+- Rating: 4.8/5.0
+
+### ATS Keyword Injection
+- Archetype: AI Platform / LLMOps
+- Coverage: 100%
+- JD Keywords: API, engineer, product, data
+- 在 Professional Summary 中自然帶入：API、engineer、product、data
+- 使用職位語言：「AI Platform / LLMOps」方向的動詞和術語
+- 【你已有但此 JD 未要求】可視情況選擇性提及：crm、growth、sales
+- Missing (do NOT fabricate): crm, growth, sales
+
+### Apply Checklist
+- Open the source URL and confirm the role is still active.
+- Generate or refresh the tailored ATS PDF from this job.
+- Mirror these JD keywords honestly in your CV: API, engineer, product, data
+- Do not overclaim missing areas: crm, growth, sales
+- Log status, recruiter/contact, and next follow-up date in the tracker.
+
+### Outreach Email
+```text
+Hi The Coca-Cola Company team,
+
+I am Alex Chen, and I am interested in the Senior Manager, Software Engineer FSOP Sales Experience role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.
+
+The role stood out because it maps closely to my experience with API, engineer, product, data.
+
+I would appreciate the chance to share how my experience can support the team. Thank you for your time.
+
+Best,
+Alex Chen
+```
+
+### Follow-up
+Timing: 3-5 business days after applying or the last recruiter interaction.
+```text
+Hi The Coca-Cola Company team,
+
+I wanted to follow up on my application for the Senior Manager, Software Engineer FSOP Sales Experience role. I remain interested and would be glad to provide any additional context about my background.
+
+Thank you again for your time.
+
+Best,
+Alex Chen
+```
+
+### Interview Prep
+- Prepare a 60-second story for why The Coca-Cola Company and why Senior Manager, Software Engineer FSOP Sales Experience.
 - Prepare evidence for: API, engineer, product, data.
 - Prepare one STAR story about execution under ambiguity.
 - Prepare one STAR story about collaboration and tradeoff decisions.
@@ -336,6 +596,71 @@ Alex Chen
 - Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.
 - Use competing priorities and role fit, not personal need, as the negotiation frame.
 
+## The Coca-Cola Company - Software Engineer I - CRM
+
+- Priority: P0
+- Score: 95/A
+- Subject: Software Engineer I - CRM application - The Coca-Cola Company
+
+- Block G: High Confidence
+- Rating: 4.8/5.0
+
+### ATS Keyword Injection
+- Archetype: AI Platform / LLMOps
+- Coverage: 100%
+- JD Keywords: API, engineer, product, data
+- 在 Professional Summary 中自然帶入：API、engineer、product、data
+- 使用職位語言：「AI Platform / LLMOps」方向的動詞和術語
+- 【你已有但此 JD 未要求】可視情況選擇性提及：crm、growth、sales
+- Missing (do NOT fabricate): crm, growth, sales
+
+### Apply Checklist
+- Open the source URL and confirm the role is still active.
+- Generate or refresh the tailored ATS PDF from this job.
+- Mirror these JD keywords honestly in your CV: API, engineer, product, data
+- Do not overclaim missing areas: crm, growth, sales
+- Log status, recruiter/contact, and next follow-up date in the tracker.
+
+### Outreach Email
+```text
+Hi The Coca-Cola Company team,
+
+I am Alex Chen, and I am interested in the Software Engineer I - CRM role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.
+
+The role stood out because it maps closely to my experience with API, engineer, product, data.
+
+I would appreciate the chance to share how my experience can support the team. Thank you for your time.
+
+Best,
+Alex Chen
+```
+
+### Follow-up
+Timing: 3-5 business days after applying or the last recruiter interaction.
+```text
+Hi The Coca-Cola Company team,
+
+I wanted to follow up on my application for the Software Engineer I - CRM role. I remain interested and would be glad to provide any additional context about my background.
+
+Thank you again for your time.
+
+Best,
+Alex Chen
+```
+
+### Interview Prep
+- Prepare a 60-second story for why The Coca-Cola Company and why Software Engineer I - CRM.
+- Prepare evidence for: API, engineer, product, data.
+- Prepare one STAR story about execution under ambiguity.
+- Prepare one STAR story about collaboration and tradeoff decisions.
+- Prepare questions about team priorities, success metrics, and hiring timeline.
+
+### Negotiation Prep
+- Wait for a clear offer before anchoring compensation.
+- Ask for total compensation breakdown, work mode, title, level, review cycle, and start date.
+- Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.
+- Use competing priorities and role fit, not personal need, as the negotiation frame.
+
 ## Bank of America - Principal Engineer - GBS IND
 
 - Priority: P0
@@ -401,37 +726,36 @@ Alex Chen
 - Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.
 - Use competing priorities and role fit, not personal need, as the negotiation frame.
 
-## Money Forward - Lead Backend Engineer, Digital Bank
+## The Coca-Cola Company - Software Engineer I
 
 - Priority: P0
 - Score: 95/A
-- Subject: Lead Backend Engineer, Digital Bank application - Money Forward
+- Subject: Software Engineer I application - The Coca-Cola Company
 
-- Block G: Proceed with Caution
+- Block G: High Confidence
 - Rating: 4.8/5.0
 
 ### ATS Keyword Injection
-- Archetype: Backend Engineer
+- Archetype: AI Platform / LLMOps
 - Coverage: 100%
 - JD Keywords: API, engineer, product, data
 - 在 Professional Summary 中自然帶入：API、engineer、product、data
-- 使用職位語言：「Backend Engineer」方向的動詞和術語
-- 【你已有但此 JD 未要求】可視情況選擇性提及：kotlin、aws、docker、rest、agents
-- Missing (do NOT fabricate): kotlin, aws, docker, rest, agents
+- 使用職位語言：「AI Platform / LLMOps」方向的動詞和術語
+- 【你已有但此 JD 未要求】可視情況選擇性提及：growth、sales
+- Missing (do NOT fabricate): growth, sales
 
 ### Apply Checklist
 - Open the source URL and confirm the role is still active.
-- ⚠ Block G: Proceed with Caution — double-check recruiter identity.
 - Generate or refresh the tailored ATS PDF from this job.
 - Mirror these JD keywords honestly in your CV: API, engineer, product, data
-- Do not overclaim missing areas: kotlin, aws, docker, rest, agents
+- Do not overclaim missing areas: growth, sales
 - Log status, recruiter/contact, and next follow-up date in the tracker.
 
 ### Outreach Email
 ```text
-Hi Money Forward team,
+Hi The Coca-Cola Company team,
 
-I am Alex Chen, and I am interested in the Lead Backend Engineer, Digital Bank role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.
+I am Alex Chen, and I am interested in the Software Engineer I role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.
 
 The role stood out because it maps closely to my experience with API, engineer, product, data.
 
@@ -444,9 +768,9 @@ Alex Chen
 ### Follow-up
 Timing: 3-5 business days after applying or the last recruiter interaction.
 ```text
-Hi Money Forward team,
+Hi The Coca-Cola Company team,
 
-I wanted to follow up on my application for the Lead Backend Engineer, Digital Bank role. I remain interested and would be glad to provide any additional context about my background.
+I wanted to follow up on my application for the Software Engineer I role. I remain interested and would be glad to provide any additional context about my background.
 
 Thank you again for your time.
 
@@ -455,333 +779,8 @@ Alex Chen
 ```
 
 ### Interview Prep
-- Prepare a 60-second story for why Money Forward and why Lead Backend Engineer, Digital Bank.
+- Prepare a 60-second story for why The Coca-Cola Company and why Software Engineer I.
 - Prepare evidence for: API, engineer, product, data.
-- Prepare one STAR story about execution under ambiguity.
-- Prepare one STAR story about collaboration and tradeoff decisions.
-- Prepare questions about team priorities, success metrics, and hiring timeline.
-
-### Negotiation Prep
-- Wait for a clear offer before anchoring compensation.
-- Ask for total compensation breakdown, work mode, title, level, review cycle, and start date.
-- Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.
-- Use competing priorities and role fit, not personal need, as the negotiation frame.
-
-## AIRWALLEX (SINGAPORE) PTE. LTD. - Senior Frontend Engineer, Regulatory Reporting
-
-- Priority: P0
-- Score: 94/A
-- Subject: Senior Frontend Engineer, Regulatory Reporting application - AIRWALLEX (SINGAPORE) PTE. LTD.
-
-- Block G: High Confidence
-- Rating: 4.8/5.0
-
-### ATS Keyword Injection
-- Archetype: Frontend Engineer
-- Coverage: 100%
-- JD Keywords: TypeScript, React, API, design system, engineer, data, graphql, node.js
-- 在 Professional Summary 中自然帶入：TypeScript、React、API、design system、engineer
-- 使用職位語言：「Frontend Engineer」方向的動詞和術語
-- 【你已有但此 JD 未要求】可視情況選擇性提及：rest、llm、agents、operations
-- Missing (do NOT fabricate): rest, llm, agents, operations
-
-### Apply Checklist
-- Open the source URL and confirm the role is still active.
-- Generate or refresh the tailored ATS PDF from this job.
-- Mirror these JD keywords honestly in your CV: TypeScript, React, API, design system, engineer, data, graphql, node.js
-- Do not overclaim missing areas: rest, llm, agents, operations
-- Log status, recruiter/contact, and next follow-up date in the tracker.
-
-### Outreach Email
-```text
-Hi AIRWALLEX (SINGAPORE) PTE. LTD. team,
-
-I am Alex Chen, and I am interested in the Senior Frontend Engineer, Regulatory Reporting role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.
-
-The role stood out because it maps closely to my experience with TypeScript, React, API, design system, engineer.
-
-I would appreciate the chance to share how my experience can support the team. Thank you for your time.
-
-Best,
-Alex Chen
-```
-
-### Follow-up
-Timing: 3-5 business days after applying or the last recruiter interaction.
-```text
-Hi AIRWALLEX (SINGAPORE) PTE. LTD. team,
-
-I wanted to follow up on my application for the Senior Frontend Engineer, Regulatory Reporting role. I remain interested and would be glad to provide any additional context about my background.
-
-Thank you again for your time.
-
-Best,
-Alex Chen
-```
-
-### Interview Prep
-- Prepare a 60-second story for why AIRWALLEX (SINGAPORE) PTE. LTD. and why Senior Frontend Engineer, Regulatory Reporting.
-- Prepare evidence for: TypeScript, React, API, design system, engineer, data.
-- Prepare one STAR story about execution under ambiguity.
-- Prepare one STAR story about collaboration and tradeoff decisions.
-- Prepare questions about team priorities, success metrics, and hiring timeline.
-
-### Negotiation Prep
-- Wait for a clear offer before anchoring compensation.
-- Ask for total compensation breakdown, work mode, title, level, review cycle, and start date.
-- Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.
-- Use competing priorities and role fit, not personal need, as the negotiation frame.
-
-## GlossGenius - Staff Software Engineer, Frontend
-
-- Priority: P0
-- Score: 94/A
-- Subject: Staff Software Engineer, Frontend application - GlossGenius
-
-- Block G: High Confidence
-- Rating: 4.8/5.0
-
-### ATS Keyword Injection
-- Archetype: Frontend Engineer
-- Coverage: 100%
-- JD Keywords: JavaScript, TypeScript, React, CSS, Accessibility, API, Performance Optimization, Design Systems
-- 在 Professional Summary 中自然帶入：JavaScript、TypeScript、React、CSS、Accessibility
-- 使用職位語言：「Frontend Engineer」方向的動詞和術語
-- 【你已有但此 JD 未要求】可視情況選擇性提及：go
-- Missing (do NOT fabricate): go
-
-### Apply Checklist
-- Open the source URL and confirm the role is still active.
-- Generate or refresh the tailored ATS PDF from this job.
-- Mirror these JD keywords honestly in your CV: JavaScript, TypeScript, React, CSS, Accessibility, API, Performance Optimization, Design Systems
-- Do not overclaim missing areas: go
-- Log status, recruiter/contact, and next follow-up date in the tracker.
-
-### Outreach Email
-```text
-Hi GlossGenius team,
-
-I am Alex Chen, and I am interested in the Staff Software Engineer, Frontend role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.
-
-The role stood out because it maps closely to my experience with JavaScript, TypeScript, React, CSS, Accessibility.
-
-I would appreciate the chance to share how my experience can support the team. Thank you for your time.
-
-Best,
-Alex Chen
-```
-
-### Follow-up
-Timing: 3-5 business days after applying or the last recruiter interaction.
-```text
-Hi GlossGenius team,
-
-I wanted to follow up on my application for the Staff Software Engineer, Frontend role. I remain interested and would be glad to provide any additional context about my background.
-
-Thank you again for your time.
-
-Best,
-Alex Chen
-```
-
-### Interview Prep
-- Prepare a 60-second story for why GlossGenius and why Staff Software Engineer, Frontend.
-- Prepare evidence for: JavaScript, TypeScript, React, CSS, Accessibility, API.
-- Prepare one STAR story about execution under ambiguity.
-- Prepare one STAR story about collaboration and tradeoff decisions.
-- Prepare questions about team priorities, success metrics, and hiring timeline.
-
-### Negotiation Prep
-- Wait for a clear offer before anchoring compensation.
-- Ask for total compensation breakdown, work mode, title, level, review cycle, and start date.
-- Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.
-- Use competing priorities and role fit, not personal need, as the negotiation frame.
-
-## GlossGenius - Staff Software Engineer, Frontend
-
-- Priority: P0
-- Score: 94/A
-- Subject: Staff Software Engineer, Frontend application - GlossGenius
-
-- Block G: High Confidence
-- Rating: 4.8/5.0
-
-### ATS Keyword Injection
-- Archetype: Frontend Engineer
-- Coverage: 100%
-- JD Keywords: JavaScript, TypeScript, React, CSS, Accessibility, API, Performance Optimization, Design Systems
-- 在 Professional Summary 中自然帶入：JavaScript、TypeScript、React、CSS、Accessibility
-- 使用職位語言：「Frontend Engineer」方向的動詞和術語
-- 【你已有但此 JD 未要求】可視情況選擇性提及：go
-- Missing (do NOT fabricate): go
-
-### Apply Checklist
-- Open the source URL and confirm the role is still active.
-- Generate or refresh the tailored ATS PDF from this job.
-- Mirror these JD keywords honestly in your CV: JavaScript, TypeScript, React, CSS, Accessibility, API, Performance Optimization, Design Systems
-- Do not overclaim missing areas: go
-- Log status, recruiter/contact, and next follow-up date in the tracker.
-
-### Outreach Email
-```text
-Hi GlossGenius team,
-
-I am Alex Chen, and I am interested in the Staff Software Engineer, Frontend role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.
-
-The role stood out because it maps closely to my experience with JavaScript, TypeScript, React, CSS, Accessibility.
-
-I would appreciate the chance to share how my experience can support the team. Thank you for your time.
-
-Best,
-Alex Chen
-```
-
-### Follow-up
-Timing: 3-5 business days after applying or the last recruiter interaction.
-```text
-Hi GlossGenius team,
-
-I wanted to follow up on my application for the Staff Software Engineer, Frontend role. I remain interested and would be glad to provide any additional context about my background.
-
-Thank you again for your time.
-
-Best,
-Alex Chen
-```
-
-### Interview Prep
-- Prepare a 60-second story for why GlossGenius and why Staff Software Engineer, Frontend.
-- Prepare evidence for: JavaScript, TypeScript, React, CSS, Accessibility, API.
-- Prepare one STAR story about execution under ambiguity.
-- Prepare one STAR story about collaboration and tradeoff decisions.
-- Prepare questions about team priorities, success metrics, and hiring timeline.
-
-### Negotiation Prep
-- Wait for a clear offer before anchoring compensation.
-- Ask for total compensation breakdown, work mode, title, level, review cycle, and start date.
-- Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.
-- Use competing priorities and role fit, not personal need, as the negotiation frame.
-
-## GlossGenius - Staff Software Engineer, Frontend
-
-- Priority: P0
-- Score: 94/A
-- Subject: Staff Software Engineer, Frontend application - GlossGenius
-
-- Block G: High Confidence
-- Rating: 4.8/5.0
-
-### ATS Keyword Injection
-- Archetype: Frontend Engineer
-- Coverage: 100%
-- JD Keywords: JavaScript, TypeScript, React, CSS, Accessibility, API, Performance Optimization, Design Systems
-- 在 Professional Summary 中自然帶入：JavaScript、TypeScript、React、CSS、Accessibility
-- 使用職位語言：「Frontend Engineer」方向的動詞和術語
-- 【你已有但此 JD 未要求】可視情況選擇性提及：go
-- Missing (do NOT fabricate): go
-
-### Apply Checklist
-- Open the source URL and confirm the role is still active.
-- Generate or refresh the tailored ATS PDF from this job.
-- Mirror these JD keywords honestly in your CV: JavaScript, TypeScript, React, CSS, Accessibility, API, Performance Optimization, Design Systems
-- Do not overclaim missing areas: go
-- Log status, recruiter/contact, and next follow-up date in the tracker.
-
-### Outreach Email
-```text
-Hi GlossGenius team,
-
-I am Alex Chen, and I am interested in the Staff Software Engineer, Frontend role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.
-
-The role stood out because it maps closely to my experience with JavaScript, TypeScript, React, CSS, Accessibility.
-
-I would appreciate the chance to share how my experience can support the team. Thank you for your time.
-
-Best,
-Alex Chen
-```
-
-### Follow-up
-Timing: 3-5 business days after applying or the last recruiter interaction.
-```text
-Hi GlossGenius team,
-
-I wanted to follow up on my application for the Staff Software Engineer, Frontend role. I remain interested and would be glad to provide any additional context about my background.
-
-Thank you again for your time.
-
-Best,
-Alex Chen
-```
-
-### Interview Prep
-- Prepare a 60-second story for why GlossGenius and why Staff Software Engineer, Frontend.
-- Prepare evidence for: JavaScript, TypeScript, React, CSS, Accessibility, API.
-- Prepare one STAR story about execution under ambiguity.
-- Prepare one STAR story about collaboration and tradeoff decisions.
-- Prepare questions about team priorities, success metrics, and hiring timeline.
-
-### Negotiation Prep
-- Wait for a clear offer before anchoring compensation.
-- Ask for total compensation breakdown, work mode, title, level, review cycle, and start date.
-- Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.
-- Use competing priorities and role fit, not personal need, as the negotiation frame.
-
-## Databricks Greenhouse - Resident Solutions Architect (Full Stack Engineer)
-
-- Priority: P0
-- Score: 94/A
-- Subject: Resident Solutions Architect (Full Stack Engineer) application - Databricks Greenhouse
-
-- Block G: High Confidence
-- Rating: 4.8/5.0
-
-### ATS Keyword Injection
-- Archetype: AI Solutions Architect
-- Coverage: 100%
-- JD Keywords: Analytics, remote, engineer, product, data, API
-- 在 Professional Summary 中自然帶入：Analytics、remote、engineer、product、data
-- 使用職位語言：「AI Solutions Architect」方向的動詞和術語
-- 【你已有但此 JD 未要求】可視情況選擇性提及：python、aws、gcp、azure、spark
-- Missing (do NOT fabricate): python, aws, gcp, azure, spark, operations, excel
-
-### Apply Checklist
-- Open the source URL and confirm the role is still active.
-- Generate or refresh the tailored ATS PDF from this job.
-- Mirror these JD keywords honestly in your CV: Analytics, remote, engineer, product, data, API
-- Do not overclaim missing areas: python, aws, gcp, azure, spark, operations
-- Log status, recruiter/contact, and next follow-up date in the tracker.
-
-### Outreach Email
-```text
-Hi Databricks Greenhouse team,
-
-I am Alex Chen, and I am interested in the Resident Solutions Architect (Full Stack Engineer) role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.
-
-The role stood out because it maps closely to my experience with Analytics, remote, engineer, product, data.
-
-I would appreciate the chance to share how my experience can support the team. Thank you for your time.
-
-Best,
-Alex Chen
-```
-
-### Follow-up
-Timing: 3-5 business days after applying or the last recruiter interaction.
-```text
-Hi Databricks Greenhouse team,
-
-I wanted to follow up on my application for the Resident Solutions Architect (Full Stack Engineer) role. I remain interested and would be glad to provide any additional context about my background.
-
-Thank you again for your time.
-
-Best,
-Alex Chen
-```
-
-### Interview Prep
-- Prepare a 60-second story for why Databricks Greenhouse and why Resident Solutions Architect (Full Stack Engineer).
-- Prepare evidence for: Analytics, remote, engineer, product, data.
 - Prepare one STAR story about execution under ambiguity.
 - Prepare one STAR story about collaboration and tradeoff decisions.
 - Prepare questions about team priorities, success metrics, and hiring timeline.

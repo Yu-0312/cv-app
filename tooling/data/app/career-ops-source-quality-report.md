@@ -1,12 +1,12 @@
 # Career Ops Source Quality
 
-- Generated: 2026-06-09T00:06:05.458Z
+- Generated: 2026-06-10T00:11:03.511Z
 - Mode: filter
 - Minimum score: 45
-- Input active jobs: 83403
-- Kept active jobs: 83262
-- Filtered active jobs: 141
-- Quality tiers: high 77928 / medium 5237 / low 97
+- Input active jobs: 83431
+- Kept active jobs: 83293
+- Filtered active jobs: 138
+- Quality tiers: high 77959 / medium 5237 / low 97
 
 ## Filtered Samples
 
@@ -15,7 +15,7 @@
 - 37 Apple - Careers at Apple: Join our community and culture. (landing-or-search-title, thin-description)
 - 19 Unknown - TW-Operations Expert - Jobs - Careers at Apple (missing-company, landing-or-search-title, thin-description)
 - 19 Unknown - Select Location - Jobs - Careers at Apple (missing-company, landing-or-search-title, thin-description)
-- 19 Unknown - AI System Engineer - Jobs - Careers at Apple (missing-company, landing-or-search-title, thin-description)
+- 19 Unknown - AI System Engineer (Pre-Sales Engineer) - Jobs - Careers at Apple (missing-company, landing-or-search-title, thin-description)
 - 19 Unknown - IC Packaging Engineer - Jobs - Careers at Apple (missing-company, landing-or-search-title, thin-description)
 - 19 Unknown - Process & Integration Engineer - TFT Display Technology - Jobs - Careers at Apple (missing-company, landing-or-search-title, thin-description)
 - 19 Unknown - SoC - ATE Test Engineer - Jobs - Careers at Apple (missing-company, landing-or-search-title, thin-description)
