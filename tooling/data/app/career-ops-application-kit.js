@@ -1,8 +1,92 @@
 window.CV_CAREER_OPS_APPLICATION_KIT = {
   "source": "career-ops-application-kit",
-  "generatedAt": "2026-06-10T00:13:28.938Z",
+  "generatedAt": "2026-06-11T00:21:59.654Z",
   "profileRole": "Frontend Engineer",
   "playbooks": [
+    {
+      "jobKey": "url:https://micron.wd1.myworkdayjobs.com/external/job/taichung---aatt-taiwan/ai-enabled-full-stack-developer---experienced_jr103711",
+      "title": "AI-Enabled Full Stack Developer - Experienced",
+      "company": "Micron Workday",
+      "score": "95/A",
+      "rating": 4.8,
+      "blockG": {
+        "tier": "High Confidence",
+        "confidence": "medium"
+      },
+      "priority": "P0",
+      "atsInjection": {
+        "jdKeywords": [
+          "API",
+          "engineer",
+          "data",
+          "restful"
+        ],
+        "hardKeywords": [
+          "API",
+          "engineer",
+          "data",
+          "restful"
+        ],
+        "softKeywords": [],
+        "missingKeywords": [
+          "angular",
+          "sql",
+          "kubernetes",
+          "llm",
+          "rag",
+          "agents",
+          "prompt engineering"
+        ],
+        "archetype": "Full Stack Engineer",
+        "summaryRewriteHints": [
+          "在 Professional Summary 中自然帶入：API、engineer、data、restful",
+          "使用職位語言：「Full Stack Engineer」方向的動詞和術語",
+          "【你已有但此 JD 未要求】可視情況選擇性提及：angular、sql、kubernetes、llm、rag"
+        ],
+        "atsRules": [
+          "單欄排版，避免 sidebar 雙欄（ATS parser 容易亂序）",
+          "使用標準 header：Professional Summary, Work Experience, Skills, Education",
+          "不使用巢狀表格或文字框",
+          "確保 PDF 文字可被選取（不可光柵化輸出）",
+          "UTF-8 編碼，移除 em dash / smart quote / zero-width space",
+          "關鍵技能在 Skills section 明確列出，不要只藏在 bullet 裡"
+        ],
+        "guardrails": [
+          "NEVER add skills the candidate lacks",
+          "Only reformulate real experience with exact JD vocabulary",
+          "Example: if candidate has 'API development', it can become 'API'"
+        ],
+        "keywordCoveragePercent": 100
+      },
+      "applyChecklist": [
+        "Open the source URL and confirm the role is still active.",
+        "Generate or refresh the tailored ATS PDF from this job.",
+        "Mirror these JD keywords honestly in your CV: API, engineer, data, restful",
+        "Do not overclaim missing areas: angular, sql, kubernetes, llm, rag, agents",
+        "Log status, recruiter/contact, and next follow-up date in the tracker."
+      ],
+      "outreachEmail": {
+        "subject": "AI-Enabled Full Stack Developer - Experienced application - Micron Workday",
+        "body": "Hi Micron Workday team,\n\nI am Alex Chen, and I am interested in the AI-Enabled Full Stack Developer - Experienced role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.\n\nThe role stood out because it maps closely to my experience with API, engineer, data, restful.\n\nI would appreciate the chance to share how my experience can support the team. Thank you for your time.\n\nBest,\nAlex Chen"
+      },
+      "followUp": {
+        "timing": "3-5 business days after applying or the last recruiter interaction.",
+        "body": "Hi Micron Workday team,\n\nI wanted to follow up on my application for the AI-Enabled Full Stack Developer - Experienced role. I remain interested and would be glad to provide any additional context about my background.\n\nThank you again for your time.\n\nBest,\nAlex Chen"
+      },
+      "interviewPrep": [
+        "Prepare a 60-second story for why Micron Workday and why AI-Enabled Full Stack Developer - Experienced.",
+        "Prepare evidence for: API, engineer, data, restful.",
+        "Prepare one STAR story about execution under ambiguity.",
+        "Prepare one STAR story about collaboration and tradeoff decisions.",
+        "Prepare questions about team priorities, success metrics, and hiring timeline."
+      ],
+      "negotiationPrep": [
+        "Wait for a clear offer before anchoring compensation.",
+        "Ask for total compensation breakdown, work mode, title, level, review cycle, and start date.",
+        "Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.",
+        "Use competing priorities and role fit, not personal need, as the negotiation frame."
+      ]
+    },
     {
       "jobKey": "url:https://www.mycareersfuture.gov.sg/job/07eafbe6994e2090a0c2a6a6a6111e62",
       "title": "Expert Frontend Engineer (React.JS & React Native)",
@@ -290,83 +374,6 @@ window.CV_CAREER_OPS_APPLICATION_KIT = {
       ]
     },
     {
-      "jobKey": "url:https://www.themuse.com/jobs/thecocacolacompany/tech-lead-service-provider-ee17f6",
-      "title": "Tech Lead, Service Provider",
-      "company": "The Coca-Cola Company",
-      "score": "95/A",
-      "rating": 4.8,
-      "blockG": {
-        "tier": "High Confidence",
-        "confidence": "medium"
-      },
-      "priority": "P0",
-      "atsInjection": {
-        "jdKeywords": [
-          "API",
-          "product",
-          "data"
-        ],
-        "hardKeywords": [
-          "API",
-          "product",
-          "data"
-        ],
-        "softKeywords": [],
-        "missingKeywords": [
-          "growth",
-          "sales"
-        ],
-        "archetype": "AI Platform / LLMOps",
-        "summaryRewriteHints": [
-          "在 Professional Summary 中自然帶入：API、product、data",
-          "使用職位語言：「AI Platform / LLMOps」方向的動詞和術語",
-          "【你已有但此 JD 未要求】可視情況選擇性提及：growth、sales"
-        ],
-        "atsRules": [
-          "單欄排版，避免 sidebar 雙欄（ATS parser 容易亂序）",
-          "使用標準 header：Professional Summary, Work Experience, Skills, Education",
-          "不使用巢狀表格或文字框",
-          "確保 PDF 文字可被選取（不可光柵化輸出）",
-          "UTF-8 編碼，移除 em dash / smart quote / zero-width space",
-          "關鍵技能在 Skills section 明確列出，不要只藏在 bullet 裡"
-        ],
-        "guardrails": [
-          "NEVER add skills the candidate lacks",
-          "Only reformulate real experience with exact JD vocabulary",
-          "Example: if candidate has 'API development', it can become 'API'"
-        ],
-        "keywordCoveragePercent": 100
-      },
-      "applyChecklist": [
-        "Open the source URL and confirm the role is still active.",
-        "Generate or refresh the tailored ATS PDF from this job.",
-        "Mirror these JD keywords honestly in your CV: API, product, data",
-        "Do not overclaim missing areas: growth, sales",
-        "Log status, recruiter/contact, and next follow-up date in the tracker."
-      ],
-      "outreachEmail": {
-        "subject": "Tech Lead, Service Provider application - The Coca-Cola Company",
-        "body": "Hi The Coca-Cola Company team,\n\nI am Alex Chen, and I am interested in the Tech Lead, Service Provider role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.\n\nThe role stood out because it maps closely to my experience with API, product, data.\n\nI would appreciate the chance to share how my experience can support the team. Thank you for your time.\n\nBest,\nAlex Chen"
-      },
-      "followUp": {
-        "timing": "3-5 business days after applying or the last recruiter interaction.",
-        "body": "Hi The Coca-Cola Company team,\n\nI wanted to follow up on my application for the Tech Lead, Service Provider role. I remain interested and would be glad to provide any additional context about my background.\n\nThank you again for your time.\n\nBest,\nAlex Chen"
-      },
-      "interviewPrep": [
-        "Prepare a 60-second story for why The Coca-Cola Company and why Tech Lead, Service Provider.",
-        "Prepare evidence for: API, product, data.",
-        "Prepare one STAR story about execution under ambiguity.",
-        "Prepare one STAR story about collaboration and tradeoff decisions.",
-        "Prepare questions about team priorities, success metrics, and hiring timeline."
-      ],
-      "negotiationPrep": [
-        "Wait for a clear offer before anchoring compensation.",
-        "Ask for total compensation breakdown, work mode, title, level, review cycle, and start date.",
-        "Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.",
-        "Use competing priorities and role fit, not personal need, as the negotiation frame."
-      ]
-    },
-    {
       "jobKey": "url:https://www.themuse.com/jobs/thecocacolacompany/software-engineer-i-f085ec",
       "title": "Software Engineer I",
       "company": "The Coca-Cola Company",
@@ -433,165 +440,6 @@ window.CV_CAREER_OPS_APPLICATION_KIT = {
       },
       "interviewPrep": [
         "Prepare a 60-second story for why The Coca-Cola Company and why Software Engineer I.",
-        "Prepare evidence for: API, engineer, product, data.",
-        "Prepare one STAR story about execution under ambiguity.",
-        "Prepare one STAR story about collaboration and tradeoff decisions.",
-        "Prepare questions about team priorities, success metrics, and hiring timeline."
-      ],
-      "negotiationPrep": [
-        "Wait for a clear offer before anchoring compensation.",
-        "Ask for total compensation breakdown, work mode, title, level, review cycle, and start date.",
-        "Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.",
-        "Use competing priorities and role fit, not personal need, as the negotiation frame."
-      ]
-    },
-    {
-      "jobKey": "url:https://www.themuse.com/jobs/thecocacolacompany/senior-manager-software-engineer-service-provider",
-      "title": "Senior Manager, Software Engineer, Service Provider",
-      "company": "The Coca-Cola Company",
-      "score": "95/A",
-      "rating": 4.8,
-      "blockG": {
-        "tier": "High Confidence",
-        "confidence": "medium"
-      },
-      "priority": "P0",
-      "atsInjection": {
-        "jdKeywords": [
-          "API",
-          "engineer",
-          "product",
-          "data"
-        ],
-        "hardKeywords": [
-          "API",
-          "engineer",
-          "product",
-          "data"
-        ],
-        "softKeywords": [],
-        "missingKeywords": [
-          "growth",
-          "sales"
-        ],
-        "archetype": "AI Platform / LLMOps",
-        "summaryRewriteHints": [
-          "在 Professional Summary 中自然帶入：API、engineer、product、data",
-          "使用職位語言：「AI Platform / LLMOps」方向的動詞和術語",
-          "【你已有但此 JD 未要求】可視情況選擇性提及：growth、sales"
-        ],
-        "atsRules": [
-          "單欄排版，避免 sidebar 雙欄（ATS parser 容易亂序）",
-          "使用標準 header：Professional Summary, Work Experience, Skills, Education",
-          "不使用巢狀表格或文字框",
-          "確保 PDF 文字可被選取（不可光柵化輸出）",
-          "UTF-8 編碼，移除 em dash / smart quote / zero-width space",
-          "關鍵技能在 Skills section 明確列出，不要只藏在 bullet 裡"
-        ],
-        "guardrails": [
-          "NEVER add skills the candidate lacks",
-          "Only reformulate real experience with exact JD vocabulary",
-          "Example: if candidate has 'API development', it can become 'API'"
-        ],
-        "keywordCoveragePercent": 100
-      },
-      "applyChecklist": [
-        "Open the source URL and confirm the role is still active.",
-        "Generate or refresh the tailored ATS PDF from this job.",
-        "Mirror these JD keywords honestly in your CV: API, engineer, product, data",
-        "Do not overclaim missing areas: growth, sales",
-        "Log status, recruiter/contact, and next follow-up date in the tracker."
-      ],
-      "outreachEmail": {
-        "subject": "Senior Manager, Software Engineer, Service Provider application - The Coca-Cola Company",
-        "body": "Hi The Coca-Cola Company team,\n\nI am Alex Chen, and I am interested in the Senior Manager, Software Engineer, Service Provider role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.\n\nThe role stood out because it maps closely to my experience with API, engineer, product, data.\n\nI would appreciate the chance to share how my experience can support the team. Thank you for your time.\n\nBest,\nAlex Chen"
-      },
-      "followUp": {
-        "timing": "3-5 business days after applying or the last recruiter interaction.",
-        "body": "Hi The Coca-Cola Company team,\n\nI wanted to follow up on my application for the Senior Manager, Software Engineer, Service Provider role. I remain interested and would be glad to provide any additional context about my background.\n\nThank you again for your time.\n\nBest,\nAlex Chen"
-      },
-      "interviewPrep": [
-        "Prepare a 60-second story for why The Coca-Cola Company and why Senior Manager, Software Engineer, Service Provider.",
-        "Prepare evidence for: API, engineer, product, data.",
-        "Prepare one STAR story about execution under ambiguity.",
-        "Prepare one STAR story about collaboration and tradeoff decisions.",
-        "Prepare questions about team priorities, success metrics, and hiring timeline."
-      ],
-      "negotiationPrep": [
-        "Wait for a clear offer before anchoring compensation.",
-        "Ask for total compensation breakdown, work mode, title, level, review cycle, and start date.",
-        "Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.",
-        "Use competing priorities and role fit, not personal need, as the negotiation frame."
-      ]
-    },
-    {
-      "jobKey": "url:https://www.themuse.com/jobs/thecocacolacompany/senior-manager-software-engineer-fsop-sales-experience",
-      "title": "Senior Manager, Software Engineer FSOP Sales Experience",
-      "company": "The Coca-Cola Company",
-      "score": "95/A",
-      "rating": 4.8,
-      "blockG": {
-        "tier": "High Confidence",
-        "confidence": "medium"
-      },
-      "priority": "P0",
-      "atsInjection": {
-        "jdKeywords": [
-          "API",
-          "engineer",
-          "product",
-          "data"
-        ],
-        "hardKeywords": [
-          "API",
-          "engineer",
-          "product",
-          "data"
-        ],
-        "softKeywords": [],
-        "missingKeywords": [
-          "crm",
-          "growth",
-          "sales"
-        ],
-        "archetype": "AI Platform / LLMOps",
-        "summaryRewriteHints": [
-          "在 Professional Summary 中自然帶入：API、engineer、product、data",
-          "使用職位語言：「AI Platform / LLMOps」方向的動詞和術語",
-          "【你已有但此 JD 未要求】可視情況選擇性提及：crm、growth、sales"
-        ],
-        "atsRules": [
-          "單欄排版，避免 sidebar 雙欄（ATS parser 容易亂序）",
-          "使用標準 header：Professional Summary, Work Experience, Skills, Education",
-          "不使用巢狀表格或文字框",
-          "確保 PDF 文字可被選取（不可光柵化輸出）",
-          "UTF-8 編碼，移除 em dash / smart quote / zero-width space",
-          "關鍵技能在 Skills section 明確列出，不要只藏在 bullet 裡"
-        ],
-        "guardrails": [
-          "NEVER add skills the candidate lacks",
-          "Only reformulate real experience with exact JD vocabulary",
-          "Example: if candidate has 'API development', it can become 'API'"
-        ],
-        "keywordCoveragePercent": 100
-      },
-      "applyChecklist": [
-        "Open the source URL and confirm the role is still active.",
-        "Generate or refresh the tailored ATS PDF from this job.",
-        "Mirror these JD keywords honestly in your CV: API, engineer, product, data",
-        "Do not overclaim missing areas: crm, growth, sales",
-        "Log status, recruiter/contact, and next follow-up date in the tracker."
-      ],
-      "outreachEmail": {
-        "subject": "Senior Manager, Software Engineer FSOP Sales Experience application - The Coca-Cola Company",
-        "body": "Hi The Coca-Cola Company team,\n\nI am Alex Chen, and I am interested in the Senior Manager, Software Engineer FSOP Sales Experience role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.\n\nThe role stood out because it maps closely to my experience with API, engineer, product, data.\n\nI would appreciate the chance to share how my experience can support the team. Thank you for your time.\n\nBest,\nAlex Chen"
-      },
-      "followUp": {
-        "timing": "3-5 business days after applying or the last recruiter interaction.",
-        "body": "Hi The Coca-Cola Company team,\n\nI wanted to follow up on my application for the Senior Manager, Software Engineer FSOP Sales Experience role. I remain interested and would be glad to provide any additional context about my background.\n\nThank you again for your time.\n\nBest,\nAlex Chen"
-      },
-      "interviewPrep": [
-        "Prepare a 60-second story for why The Coca-Cola Company and why Senior Manager, Software Engineer FSOP Sales Experience.",
         "Prepare evidence for: API, engineer, product, data.",
         "Prepare one STAR story about execution under ambiguity.",
         "Prepare one STAR story about collaboration and tradeoff decisions.",
@@ -685,6 +533,164 @@ window.CV_CAREER_OPS_APPLICATION_KIT = {
       "interviewPrep": [
         "Prepare a 60-second story for why Uber and why Sr Software Engineer, Frontend (Web).",
         "Prepare evidence for: JavaScript, TypeScript, React, CSS, API, Performance Optimization.",
+        "Prepare one STAR story about execution under ambiguity.",
+        "Prepare one STAR story about collaboration and tradeoff decisions.",
+        "Prepare questions about team priorities, success metrics, and hiring timeline."
+      ],
+      "negotiationPrep": [
+        "Wait for a clear offer before anchoring compensation.",
+        "Ask for total compensation breakdown, work mode, title, level, review cycle, and start date.",
+        "Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.",
+        "Use competing priorities and role fit, not personal need, as the negotiation frame."
+      ]
+    },
+    {
+      "jobKey": "url:https://www.themuse.com/jobs/thecocacolacompany/senior-software-engineer-ii-45ddca",
+      "title": "Senior Software Engineer II",
+      "company": "The Coca-Cola Company",
+      "score": "95/A",
+      "rating": 4.8,
+      "blockG": {
+        "tier": "High Confidence",
+        "confidence": "medium"
+      },
+      "priority": "P0",
+      "atsInjection": {
+        "jdKeywords": [
+          "API",
+          "engineer",
+          "product",
+          "data"
+        ],
+        "hardKeywords": [
+          "API",
+          "engineer",
+          "product",
+          "data"
+        ],
+        "softKeywords": [],
+        "missingKeywords": [
+          "growth",
+          "sales"
+        ],
+        "archetype": "AI Platform / LLMOps",
+        "summaryRewriteHints": [
+          "在 Professional Summary 中自然帶入：API、engineer、product、data",
+          "使用職位語言：「AI Platform / LLMOps」方向的動詞和術語",
+          "【你已有但此 JD 未要求】可視情況選擇性提及：growth、sales"
+        ],
+        "atsRules": [
+          "單欄排版，避免 sidebar 雙欄（ATS parser 容易亂序）",
+          "使用標準 header：Professional Summary, Work Experience, Skills, Education",
+          "不使用巢狀表格或文字框",
+          "確保 PDF 文字可被選取（不可光柵化輸出）",
+          "UTF-8 編碼，移除 em dash / smart quote / zero-width space",
+          "關鍵技能在 Skills section 明確列出，不要只藏在 bullet 裡"
+        ],
+        "guardrails": [
+          "NEVER add skills the candidate lacks",
+          "Only reformulate real experience with exact JD vocabulary",
+          "Example: if candidate has 'API development', it can become 'API'"
+        ],
+        "keywordCoveragePercent": 100
+      },
+      "applyChecklist": [
+        "Open the source URL and confirm the role is still active.",
+        "Generate or refresh the tailored ATS PDF from this job.",
+        "Mirror these JD keywords honestly in your CV: API, engineer, product, data",
+        "Do not overclaim missing areas: growth, sales",
+        "Log status, recruiter/contact, and next follow-up date in the tracker."
+      ],
+      "outreachEmail": {
+        "subject": "Senior Software Engineer II application - The Coca-Cola Company",
+        "body": "Hi The Coca-Cola Company team,\n\nI am Alex Chen, and I am interested in the Senior Software Engineer II role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.\n\nThe role stood out because it maps closely to my experience with API, engineer, product, data.\n\nI would appreciate the chance to share how my experience can support the team. Thank you for your time.\n\nBest,\nAlex Chen"
+      },
+      "followUp": {
+        "timing": "3-5 business days after applying or the last recruiter interaction.",
+        "body": "Hi The Coca-Cola Company team,\n\nI wanted to follow up on my application for the Senior Software Engineer II role. I remain interested and would be glad to provide any additional context about my background.\n\nThank you again for your time.\n\nBest,\nAlex Chen"
+      },
+      "interviewPrep": [
+        "Prepare a 60-second story for why The Coca-Cola Company and why Senior Software Engineer II.",
+        "Prepare evidence for: API, engineer, product, data.",
+        "Prepare one STAR story about execution under ambiguity.",
+        "Prepare one STAR story about collaboration and tradeoff decisions.",
+        "Prepare questions about team priorities, success metrics, and hiring timeline."
+      ],
+      "negotiationPrep": [
+        "Wait for a clear offer before anchoring compensation.",
+        "Ask for total compensation breakdown, work mode, title, level, review cycle, and start date.",
+        "Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.",
+        "Use competing priorities and role fit, not personal need, as the negotiation frame."
+      ]
+    },
+    {
+      "jobKey": "url:https://www.themuse.com/jobs/thecocacolacompany/software-engineer-i",
+      "title": "Software Engineer I",
+      "company": "The Coca-Cola Company",
+      "score": "95/A",
+      "rating": 4.8,
+      "blockG": {
+        "tier": "High Confidence",
+        "confidence": "medium"
+      },
+      "priority": "P0",
+      "atsInjection": {
+        "jdKeywords": [
+          "API",
+          "engineer",
+          "product",
+          "data"
+        ],
+        "hardKeywords": [
+          "API",
+          "engineer",
+          "product",
+          "data"
+        ],
+        "softKeywords": [],
+        "missingKeywords": [
+          "growth",
+          "sales"
+        ],
+        "archetype": "AI Platform / LLMOps",
+        "summaryRewriteHints": [
+          "在 Professional Summary 中自然帶入：API、engineer、product、data",
+          "使用職位語言：「AI Platform / LLMOps」方向的動詞和術語",
+          "【你已有但此 JD 未要求】可視情況選擇性提及：growth、sales"
+        ],
+        "atsRules": [
+          "單欄排版，避免 sidebar 雙欄（ATS parser 容易亂序）",
+          "使用標準 header：Professional Summary, Work Experience, Skills, Education",
+          "不使用巢狀表格或文字框",
+          "確保 PDF 文字可被選取（不可光柵化輸出）",
+          "UTF-8 編碼，移除 em dash / smart quote / zero-width space",
+          "關鍵技能在 Skills section 明確列出，不要只藏在 bullet 裡"
+        ],
+        "guardrails": [
+          "NEVER add skills the candidate lacks",
+          "Only reformulate real experience with exact JD vocabulary",
+          "Example: if candidate has 'API development', it can become 'API'"
+        ],
+        "keywordCoveragePercent": 100
+      },
+      "applyChecklist": [
+        "Open the source URL and confirm the role is still active.",
+        "Generate or refresh the tailored ATS PDF from this job.",
+        "Mirror these JD keywords honestly in your CV: API, engineer, product, data",
+        "Do not overclaim missing areas: growth, sales",
+        "Log status, recruiter/contact, and next follow-up date in the tracker."
+      ],
+      "outreachEmail": {
+        "subject": "Software Engineer I application - The Coca-Cola Company",
+        "body": "Hi The Coca-Cola Company team,\n\nI am Alex Chen, and I am interested in the Software Engineer I role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.\n\nThe role stood out because it maps closely to my experience with API, engineer, product, data.\n\nI would appreciate the chance to share how my experience can support the team. Thank you for your time.\n\nBest,\nAlex Chen"
+      },
+      "followUp": {
+        "timing": "3-5 business days after applying or the last recruiter interaction.",
+        "body": "Hi The Coca-Cola Company team,\n\nI wanted to follow up on my application for the Software Engineer I role. I remain interested and would be glad to provide any additional context about my background.\n\nThank you again for your time.\n\nBest,\nAlex Chen"
+      },
+      "interviewPrep": [
+        "Prepare a 60-second story for why The Coca-Cola Company and why Software Engineer I.",
+        "Prepare evidence for: API, engineer, product, data.",
         "Prepare one STAR story about execution under ambiguity.",
         "Prepare one STAR story about collaboration and tradeoff decisions.",
         "Prepare questions about team priorities, success metrics, and hiring timeline."

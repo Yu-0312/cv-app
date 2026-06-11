@@ -1,6 +1,6 @@
 # Career Ops Parallel Worker Report
 
-Generated: 2026-06-10T00:13:46.913Z
+Generated: 2026-06-11T00:22:14.327Z
 Concurrency: 4
 Jobs processed: 50
 Errors: 0
@@ -11,6 +11,21 @@ Errors: 0
 - Independent worker outputs: evaluation, research, application, compensation, story bank, apply-agent plan.
 - Human-in-the-loop guardrails for apply automation.
 
+## P0 Micron Workday - AI-Enabled Full Stack Developer - Experienced
+
+- Score: 95
+- Grade: A
+- Research evidence: 2
+- Keywords: API, engineer, data, restful
+- Compensation leverage: high
+- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
+
+### Apply Agent Guardrails
+- Never submit without explicit user confirmation.
+- Never fabricate work authorization, salary history, degree, or experience.
+- Never store API keys or credentials in job metadata.
+- Record only application status and user-approved notes.
+
 ## P0 VANGUARD SOFTWARE PTE. LTD. - Expert Frontend Engineer (React.JS & React Native)
 
 - Score: 95
@@ -18,7 +33,7 @@ Errors: 0
 - Research evidence: 5
 - Keywords: JavaScript, TypeScript, React, Next.js, CSS, Accessibility, Design Systems, design system, engineer, product
 - Compensation leverage: high
-- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
+- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
 ### Apply Agent Guardrails
 - Never submit without explicit user confirmation.
@@ -33,7 +48,7 @@ Errors: 0
 - Research evidence: 1
 - Keywords: JavaScript, React, engineer, product, data, restful, graphql, node.js
 - Compensation leverage: high
-- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
+- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
 ### Apply Agent Guardrails
 - Never submit without explicit user confirmation.
@@ -48,22 +63,7 @@ Errors: 0
 - Research evidence: 1
 - Keywords: JavaScript, React, engineer, product, data, restful, graphql, node.js
 - Compensation leverage: high
-- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
-
-### Apply Agent Guardrails
-- Never submit without explicit user confirmation.
-- Never fabricate work authorization, salary history, degree, or experience.
-- Never store API keys or credentials in job metadata.
-- Record only application status and user-approved notes.
-
-## P0 The Coca-Cola Company - Tech Lead, Service Provider
-
-- Score: 95
-- Grade: A
-- Research evidence: 5
-- Keywords: API, product, data
-- Compensation leverage: high
-- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
+- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
 ### Apply Agent Guardrails
 - Never submit without explicit user confirmation.
@@ -75,40 +75,10 @@ Errors: 0
 
 - Score: 95
 - Grade: A
-- Research evidence: 5
+- Research evidence: 3
 - Keywords: API, engineer, product, data
 - Compensation leverage: high
-- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
-
-### Apply Agent Guardrails
-- Never submit without explicit user confirmation.
-- Never fabricate work authorization, salary history, degree, or experience.
-- Never store API keys or credentials in job metadata.
-- Record only application status and user-approved notes.
-
-## P0 The Coca-Cola Company - Senior Manager, Software Engineer, Service Provider
-
-- Score: 95
-- Grade: A
-- Research evidence: 5
-- Keywords: API, engineer, product, data
-- Compensation leverage: high
-- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
-
-### Apply Agent Guardrails
-- Never submit without explicit user confirmation.
-- Never fabricate work authorization, salary history, degree, or experience.
-- Never store API keys or credentials in job metadata.
-- Record only application status and user-approved notes.
-
-## P0 The Coca-Cola Company - Senior Manager, Software Engineer FSOP Sales Experience
-
-- Score: 95
-- Grade: A
-- Research evidence: 5
-- Keywords: API, engineer, product, data
-- Compensation leverage: high
-- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
+- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
 ### Apply Agent Guardrails
 - Never submit without explicit user confirmation.
@@ -123,7 +93,37 @@ Errors: 0
 - Research evidence: 1
 - Keywords: JavaScript, TypeScript, React, CSS, API, Performance Optimization, engineer, product, data
 - Compensation leverage: high
-- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
+- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
+
+### Apply Agent Guardrails
+- Never submit without explicit user confirmation.
+- Never fabricate work authorization, salary history, degree, or experience.
+- Never store API keys or credentials in job metadata.
+- Record only application status and user-approved notes.
+
+## P0 The Coca-Cola Company - Senior Software Engineer II
+
+- Score: 95
+- Grade: A
+- Research evidence: 3
+- Keywords: API, engineer, product, data
+- Compensation leverage: high
+- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
+
+### Apply Agent Guardrails
+- Never submit without explicit user confirmation.
+- Never fabricate work authorization, salary history, degree, or experience.
+- Never store API keys or credentials in job metadata.
+- Record only application status and user-approved notes.
+
+## P0 The Coca-Cola Company - Software Engineer I
+
+- Score: 95
+- Grade: A
+- Research evidence: 3
+- Keywords: API, engineer, product, data
+- Compensation leverage: high
+- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
 ### Apply Agent Guardrails
 - Never submit without explicit user confirmation.
@@ -138,7 +138,7 @@ Errors: 0
 - Research evidence: 0
 - Keywords: JavaScript, TypeScript, API, engineer, product, data
 - Compensation leverage: high
-- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
+- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
 ### Apply Agent Guardrails
 - Never submit without explicit user confirmation.
@@ -150,10 +150,10 @@ Errors: 0
 
 - Score: 95
 - Grade: A
-- Research evidence: 5
+- Research evidence: 3
 - Keywords: API, engineer, product, data
 - Compensation leverage: high
-- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
+- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
 ### Apply Agent Guardrails
 - Never submit without explicit user confirmation.
@@ -168,7 +168,7 @@ Errors: 0
 - Research evidence: 0
 - Keywords: API, engineer, data
 - Compensation leverage: high
-- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
+- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
 ### Apply Agent Guardrails
 - Never submit without explicit user confirmation.
@@ -180,10 +180,25 @@ Errors: 0
 
 - Score: 95
 - Grade: A
-- Research evidence: 5
+- Research evidence: 3
 - Keywords: API, engineer, product, data
 - Compensation leverage: high
-- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
+- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
+
+### Apply Agent Guardrails
+- Never submit without explicit user confirmation.
+- Never fabricate work authorization, salary history, degree, or experience.
+- Never store API keys or credentials in job metadata.
+- Record only application status and user-approved notes.
+
+## P0 The Coca-Cola Company - Senior Software Engineer , Service Provider
+
+- Score: 95
+- Grade: A
+- Research evidence: 3
+- Keywords: API, engineer, product, data
+- Compensation leverage: high
+- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
 ### Apply Agent Guardrails
 - Never submit without explicit user confirmation.
@@ -195,10 +210,10 @@ Errors: 0
 
 - Score: 95
 - Grade: A
-- Research evidence: 5
+- Research evidence: 3
 - Keywords: API, engineer, product, data
 - Compensation leverage: high
-- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
+- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
 ### Apply Agent Guardrails
 - Never submit without explicit user confirmation.
@@ -213,7 +228,7 @@ Errors: 0
 - Research evidence: 0
 - Keywords: JavaScript, CSS, API, remote, engineer, data
 - Compensation leverage: high
-- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
+- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
 ### Apply Agent Guardrails
 - Never submit without explicit user confirmation.
@@ -221,14 +236,14 @@ Errors: 0
 - Never store API keys or credentials in job metadata.
 - Record only application status and user-approved notes.
 
-## P0 The Coca-Cola Company - Senior Manager, Software Engineer, Precision Selling Experience
+## P0 The Coca-Cola Company - Software Engineer II - CRM
 
 - Score: 95
 - Grade: A
-- Research evidence: 5
+- Research evidence: 3
 - Keywords: API, engineer, product, data
 - Compensation leverage: high
-- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
+- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
 ### Apply Agent Guardrails
 - Never submit without explicit user confirmation.
@@ -236,14 +251,44 @@ Errors: 0
 - Never store API keys or credentials in job metadata.
 - Record only application status and user-approved notes.
 
-## P0 The Coca-Cola Company - Tech Lead, FSOP Sales Experience
+## P0 The Coca-Cola Company - Senior Software Engineer - CRM
 
 - Score: 95
 - Grade: A
-- Research evidence: 5
-- Keywords: API, product, data
+- Research evidence: 3
+- Keywords: API, engineer, product, data
 - Compensation leverage: high
-- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
+- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
+
+### Apply Agent Guardrails
+- Never submit without explicit user confirmation.
+- Never fabricate work authorization, salary history, degree, or experience.
+- Never store API keys or credentials in job metadata.
+- Record only application status and user-approved notes.
+
+## P0 The Coca-Cola Company - Senior Software Engineer
+
+- Score: 95
+- Grade: A
+- Research evidence: 3
+- Keywords: API, engineer, product, data
+- Compensation leverage: high
+- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
+
+### Apply Agent Guardrails
+- Never submit without explicit user confirmation.
+- Never fabricate work authorization, salary history, degree, or experience.
+- Never store API keys or credentials in job metadata.
+- Record only application status and user-approved notes.
+
+## P0 The Coca-Cola Company - Software Engineer II
+
+- Score: 95
+- Grade: A
+- Research evidence: 3
+- Keywords: API, engineer, product, data
+- Compensation leverage: high
+- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
 ### Apply Agent Guardrails
 - Never submit without explicit user confirmation.
@@ -258,7 +303,7 @@ Errors: 0
 - Research evidence: 0
 - Keywords: JavaScript, CSS, API, remote, engineer, data
 - Compensation leverage: high
-- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
+- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
 ### Apply Agent Guardrails
 - Never submit without explicit user confirmation.
@@ -270,10 +315,40 @@ Errors: 0
 
 - Score: 95
 - Grade: A
-- Research evidence: 5
+- Research evidence: 3
 - Keywords: API, engineer, product, data
 - Compensation leverage: high
-- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
+- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
+
+### Apply Agent Guardrails
+- Never submit without explicit user confirmation.
+- Never fabricate work authorization, salary history, degree, or experience.
+- Never store API keys or credentials in job metadata.
+- Record only application status and user-approved notes.
+
+## P0 The Coca-Cola Company - Software Engineer II - CRM
+
+- Score: 95
+- Grade: A
+- Research evidence: 3
+- Keywords: API, engineer, product, data
+- Compensation leverage: high
+- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
+
+### Apply Agent Guardrails
+- Never submit without explicit user confirmation.
+- Never fabricate work authorization, salary history, degree, or experience.
+- Never store API keys or credentials in job metadata.
+- Record only application status and user-approved notes.
+
+## P0 The Coca-Cola Company - Senior Software Engineer II
+
+- Score: 95
+- Grade: A
+- Research evidence: 3
+- Keywords: API, engineer, product, data
+- Compensation leverage: high
+- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
 ### Apply Agent Guardrails
 - Never submit without explicit user confirmation.
@@ -285,10 +360,10 @@ Errors: 0
 
 - Score: 95
 - Grade: A
-- Research evidence: 5
+- Research evidence: 3
 - Keywords: API, engineer, product, data
 - Compensation leverage: high
-- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
+- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
 ### Apply Agent Guardrails
 - Never submit without explicit user confirmation.
@@ -296,14 +371,44 @@ Errors: 0
 - Never store API keys or credentials in job metadata.
 - Record only application status and user-approved notes.
 
-## P0 The Coca-Cola Company - Senior Manager, Software Engineer Service Supply Chain
+## P0 The Coca-Cola Company - Software Engineer II
 
 - Score: 95
 - Grade: A
-- Research evidence: 5
+- Research evidence: 3
 - Keywords: API, engineer, product, data
 - Compensation leverage: high
-- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
+- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
+
+### Apply Agent Guardrails
+- Never submit without explicit user confirmation.
+- Never fabricate work authorization, salary history, degree, or experience.
+- Never store API keys or credentials in job metadata.
+- Record only application status and user-approved notes.
+
+## P0 The Coca-Cola Company - Senior Software Engineer - CRM
+
+- Score: 95
+- Grade: A
+- Research evidence: 3
+- Keywords: API, engineer, product, data
+- Compensation leverage: high
+- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
+
+### Apply Agent Guardrails
+- Never submit without explicit user confirmation.
+- Never fabricate work authorization, salary history, degree, or experience.
+- Never store API keys or credentials in job metadata.
+- Record only application status and user-approved notes.
+
+## P0 The Coca-Cola Company - Sr. Software Engineer , Service Supply Chain
+
+- Score: 95
+- Grade: A
+- Research evidence: 3
+- Keywords: API, engineer, product, data
+- Compensation leverage: high
+- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
 ### Apply Agent Guardrails
 - Never submit without explicit user confirmation.
@@ -315,10 +420,10 @@ Errors: 0
 
 - Score: 95
 - Grade: A
-- Research evidence: 5
+- Research evidence: 3
 - Keywords: API, engineer, product, data
 - Compensation leverage: high
-- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
+- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
 ### Apply Agent Guardrails
 - Never submit without explicit user confirmation.
@@ -333,7 +438,7 @@ Errors: 0
 - Research evidence: 0
 - Keywords: JavaScript, TypeScript, engineer, product, data
 - Compensation leverage: -
-- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
+- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
 ### Apply Agent Guardrails
 - Never submit without explicit user confirmation.
@@ -348,7 +453,7 @@ Errors: 0
 - Research evidence: 0
 - Keywords: TypeScript, React, API, design system, engineer, data, graphql, node.js, dashboards
 - Compensation leverage: -
-- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
+- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
 ### Apply Agent Guardrails
 - Never submit without explicit user confirmation.
@@ -363,7 +468,7 @@ Errors: 0
 - Research evidence: 0
 - Keywords: JavaScript, TypeScript, React, CSS, Accessibility, API, Performance Optimization, Design Systems, design system, engineer
 - Compensation leverage: -
-- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
+- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
 ### Apply Agent Guardrails
 - Never submit without explicit user confirmation.
@@ -378,7 +483,7 @@ Errors: 0
 - Research evidence: 0
 - Keywords: JavaScript, TypeScript, React, CSS, Accessibility, API, Performance Optimization, Design Systems, design system, engineer
 - Compensation leverage: -
-- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
+- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
 ### Apply Agent Guardrails
 - Never submit without explicit user confirmation.
@@ -393,7 +498,7 @@ Errors: 0
 - Research evidence: 0
 - Keywords: JavaScript, TypeScript, React, CSS, Accessibility, API, Performance Optimization, Design Systems, design system, engineer
 - Compensation leverage: -
-- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
+- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
 ### Apply Agent Guardrails
 - Never submit without explicit user confirmation.
@@ -408,7 +513,7 @@ Errors: 0
 - Research evidence: 0
 - Keywords: Analytics, remote, engineer, product, data
 - Compensation leverage: -
-- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
+- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
 ### Apply Agent Guardrails
 - Never submit without explicit user confirmation.
@@ -423,7 +528,7 @@ Errors: 0
 - Research evidence: 0
 - Keywords: Analytics, Performance Optimization, product, data
 - Compensation leverage: -
-- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
+- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
 ### Apply Agent Guardrails
 - Never submit without explicit user confirmation.
@@ -438,7 +543,7 @@ Errors: 0
 - Research evidence: 1
 - Keywords: Analytics, API, product, data
 - Compensation leverage: high
-- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
+- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
 ### Apply Agent Guardrails
 - Never submit without explicit user confirmation.
@@ -453,7 +558,7 @@ Errors: 0
 - Research evidence: 0
 - Keywords: JavaScript, React, CSS, API, remote, dashboard, engineer, product, data
 - Compensation leverage: -
-- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
+- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
 ### Apply Agent Guardrails
 - Never submit without explicit user confirmation.
@@ -468,7 +573,7 @@ Errors: 0
 - Research evidence: 0
 - Keywords: JavaScript, TypeScript, API, remote, engineer, product, data
 - Compensation leverage: -
-- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
+- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
 ### Apply Agent Guardrails
 - Never submit without explicit user confirmation.
@@ -483,7 +588,7 @@ Errors: 0
 - Research evidence: 0
 - Keywords: API, remote, engineer, product
 - Compensation leverage: -
-- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
+- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
 ### Apply Agent Guardrails
 - Never submit without explicit user confirmation.
@@ -498,7 +603,7 @@ Errors: 0
 - Research evidence: 0
 - Keywords: TypeScript, React, Figma, engineer, product, data
 - Compensation leverage: -
-- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
+- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
 ### Apply Agent Guardrails
 - Never submit without explicit user confirmation.
@@ -513,7 +618,7 @@ Errors: 0
 - Research evidence: 0
 - Keywords: TypeScript, Design Systems, design system, engineer, product, data
 - Compensation leverage: -
-- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
+- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
 ### Apply Agent Guardrails
 - Never submit without explicit user confirmation.
@@ -528,7 +633,7 @@ Errors: 0
 - Research evidence: 0
 - Keywords: JavaScript, TypeScript, engineer, product
 - Compensation leverage: -
-- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
+- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
 ### Apply Agent Guardrails
 - Never submit without explicit user confirmation.
@@ -543,22 +648,7 @@ Errors: 0
 - Research evidence: 0
 - Keywords: TypeScript, React, engineer, product, data, node.js
 - Compensation leverage: -
-- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
-
-### Apply Agent Guardrails
-- Never submit without explicit user confirmation.
-- Never fabricate work authorization, salary history, degree, or experience.
-- Never store API keys or credentials in job metadata.
-- Record only application status and user-approved notes.
-
-## P0 Centra - Senior Machine Learning (ML) Engineer (Product)
-
-- Score: 93
-- Grade: A
-- Research evidence: 0
-- Keywords: Analytics, API, engineer, product, data
-- Compensation leverage: -
-- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
+- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
 ### Apply Agent Guardrails
 - Never submit without explicit user confirmation.
@@ -573,22 +663,7 @@ Errors: 0
 - Research evidence: 0
 - Keywords: JavaScript, TypeScript, React, CSS, Accessibility, Performance Optimization, Design Systems, design system, engineer, product
 - Compensation leverage: -
-- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
-
-### Apply Agent Guardrails
-- Never submit without explicit user confirmation.
-- Never fabricate work authorization, salary history, degree, or experience.
-- Never store API keys or credentials in job metadata.
-- Record only application status and user-approved notes.
-
-## P0 NEUTRON PTE. LTD. - Frontend Engineer (Web & Mobile)
-
-- Score: 92
-- Grade: A
-- Research evidence: 0
-- Keywords: JavaScript, TypeScript, React, Performance Optimization, engineer, product, data, restful, graphql
-- Compensation leverage: -
-- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
+- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
 ### Apply Agent Guardrails
 - Never submit without explicit user confirmation.
@@ -603,7 +678,7 @@ Errors: 0
 - Research evidence: 0
 - Keywords: JavaScript, TypeScript, React, Performance Optimization, engineer, product, data, restful, graphql
 - Compensation leverage: -
-- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
+- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
 ### Apply Agent Guardrails
 - Never submit without explicit user confirmation.
@@ -618,7 +693,7 @@ Errors: 0
 - Research evidence: 0
 - Keywords: TypeScript, React, remote, dashboard, engineer, product, data
 - Compensation leverage: -
-- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
+- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
 ### Apply Agent Guardrails
 - Never submit without explicit user confirmation.
@@ -633,7 +708,7 @@ Errors: 0
 - Research evidence: 0
 - Keywords: TypeScript, React, remote, dashboard, engineer, product, data
 - Compensation leverage: -
-- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
+- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
 ### Apply Agent Guardrails
 - Never submit without explicit user confirmation.
@@ -648,7 +723,7 @@ Errors: 0
 - Research evidence: 0
 - Keywords: TypeScript, React, remote, dashboard, engineer, product, data
 - Compensation leverage: -
-- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
+- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
 ### Apply Agent Guardrails
 - Never submit without explicit user confirmation.
@@ -663,7 +738,7 @@ Errors: 0
 - Research evidence: 0
 - Keywords: TypeScript, React, remote, dashboard, engineer, product, data
 - Compensation leverage: -
-- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
+- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
 ### Apply Agent Guardrails
 - Never submit without explicit user confirmation.
@@ -678,82 +753,7 @@ Errors: 0
 - Research evidence: 0
 - Keywords: TypeScript, React, remote, dashboard, engineer, product, data
 - Compensation leverage: -
-- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
-
-### Apply Agent Guardrails
-- Never submit without explicit user confirmation.
-- Never fabricate work authorization, salary history, degree, or experience.
-- Never store API keys or credentials in job metadata.
-- Record only application status and user-approved notes.
-
-## P0 Uber - Sr Staff Engineer - Web Platform
-
-- Score: 92
-- Grade: A
-- Research evidence: 1
-- Keywords: TypeScript, React, Next.js, API, engineer, product, data, graphql
-- Compensation leverage: high
-- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
-
-### Apply Agent Guardrails
-- Never submit without explicit user confirmation.
-- Never fabricate work authorization, salary history, degree, or experience.
-- Never store API keys or credentials in job metadata.
-- Record only application status and user-approved notes.
-
-## P0 Uber - Engineering Manager II
-
-- Score: 92
-- Grade: A
-- Research evidence: 1
-- Keywords: API, product, data
-- Compensation leverage: high
-- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
-
-### Apply Agent Guardrails
-- Never submit without explicit user confirmation.
-- Never fabricate work authorization, salary history, degree, or experience.
-- Never store API keys or credentials in job metadata.
-- Record only application status and user-approved notes.
-
-## P0 Rent the Runway - Software Engineer III - Full Stack
-
-- Score: 92
-- Grade: A
-- Research evidence: 0
-- Keywords: JavaScript, API, engineer, product
-- Compensation leverage: -
-- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
-
-### Apply Agent Guardrails
-- Never submit without explicit user confirmation.
-- Never fabricate work authorization, salary history, degree, or experience.
-- Never store API keys or credentials in job metadata.
-- Record only application status and user-approved notes.
-
-## P0 Flexport - Engineering Manager, Autonomous Freight Systems
-
-- Score: 92
-- Grade: A
-- Research evidence: 0
-- Keywords: React, API, product, data
-- Compensation leverage: -
-- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
-
-### Apply Agent Guardrails
-- Never submit without explicit user confirmation.
-- Never fabricate work authorization, salary history, degree, or experience.
-- Never store API keys or credentials in job metadata.
-- Record only application status and user-approved notes.
-
-## P0 Bank of America - Software Engineer III - GBS IND
-
-- Score: 92
-- Grade: A
-- Research evidence: 0
-- Keywords: Accessibility, API, engineer, product, data
-- Compensation leverage: high
-- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
+- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
 ### Apply Agent Guardrails
 - Never submit without explicit user confirmation.

@@ -1,6 +1,6 @@
 # Career Ops Application Kit
 
-Generated: 2026-06-10T00:13:28.938Z
+Generated: 2026-06-11T00:21:59.654Z
 Jobs: 12
 
 ## Pipeline
@@ -9,6 +9,71 @@ Jobs: 12
 - Follow-up: 3-5 business days after applying or recruiter touch.
 - Interview: map JD keywords to STAR stories and questions.
 - Negotiation: total-comp package and role-level calibration after offer.
+
+## Micron Workday - AI-Enabled Full Stack Developer - Experienced
+
+- Priority: P0
+- Score: 95/A
+- Subject: AI-Enabled Full Stack Developer - Experienced application - Micron Workday
+
+- Block G: High Confidence
+- Rating: 4.8/5.0
+
+### ATS Keyword Injection
+- Archetype: Full Stack Engineer
+- Coverage: 100%
+- JD Keywords: API, engineer, data, restful
+- 在 Professional Summary 中自然帶入：API、engineer、data、restful
+- 使用職位語言：「Full Stack Engineer」方向的動詞和術語
+- 【你已有但此 JD 未要求】可視情況選擇性提及：angular、sql、kubernetes、llm、rag
+- Missing (do NOT fabricate): angular, sql, kubernetes, llm, rag, agents, prompt engineering
+
+### Apply Checklist
+- Open the source URL and confirm the role is still active.
+- Generate or refresh the tailored ATS PDF from this job.
+- Mirror these JD keywords honestly in your CV: API, engineer, data, restful
+- Do not overclaim missing areas: angular, sql, kubernetes, llm, rag, agents
+- Log status, recruiter/contact, and next follow-up date in the tracker.
+
+### Outreach Email
+```text
+Hi Micron Workday team,
+
+I am Alex Chen, and I am interested in the AI-Enabled Full Stack Developer - Experienced role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.
+
+The role stood out because it maps closely to my experience with API, engineer, data, restful.
+
+I would appreciate the chance to share how my experience can support the team. Thank you for your time.
+
+Best,
+Alex Chen
+```
+
+### Follow-up
+Timing: 3-5 business days after applying or the last recruiter interaction.
+```text
+Hi Micron Workday team,
+
+I wanted to follow up on my application for the AI-Enabled Full Stack Developer - Experienced role. I remain interested and would be glad to provide any additional context about my background.
+
+Thank you again for your time.
+
+Best,
+Alex Chen
+```
+
+### Interview Prep
+- Prepare a 60-second story for why Micron Workday and why AI-Enabled Full Stack Developer - Experienced.
+- Prepare evidence for: API, engineer, data, restful.
+- Prepare one STAR story about execution under ambiguity.
+- Prepare one STAR story about collaboration and tradeoff decisions.
+- Prepare questions about team priorities, success metrics, and hiring timeline.
+
+### Negotiation Prep
+- Wait for a clear offer before anchoring compensation.
+- Ask for total compensation breakdown, work mode, title, level, review cycle, and start date.
+- Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.
+- Use competing priorities and role fit, not personal need, as the negotiation frame.
 
 ## VANGUARD SOFTWARE PTE. LTD. - Expert Frontend Engineer (React.JS & React Native)
 
@@ -205,71 +270,6 @@ Alex Chen
 - Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.
 - Use competing priorities and role fit, not personal need, as the negotiation frame.
 
-## The Coca-Cola Company - Tech Lead, Service Provider
-
-- Priority: P0
-- Score: 95/A
-- Subject: Tech Lead, Service Provider application - The Coca-Cola Company
-
-- Block G: High Confidence
-- Rating: 4.8/5.0
-
-### ATS Keyword Injection
-- Archetype: AI Platform / LLMOps
-- Coverage: 100%
-- JD Keywords: API, product, data
-- 在 Professional Summary 中自然帶入：API、product、data
-- 使用職位語言：「AI Platform / LLMOps」方向的動詞和術語
-- 【你已有但此 JD 未要求】可視情況選擇性提及：growth、sales
-- Missing (do NOT fabricate): growth, sales
-
-### Apply Checklist
-- Open the source URL and confirm the role is still active.
-- Generate or refresh the tailored ATS PDF from this job.
-- Mirror these JD keywords honestly in your CV: API, product, data
-- Do not overclaim missing areas: growth, sales
-- Log status, recruiter/contact, and next follow-up date in the tracker.
-
-### Outreach Email
-```text
-Hi The Coca-Cola Company team,
-
-I am Alex Chen, and I am interested in the Tech Lead, Service Provider role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.
-
-The role stood out because it maps closely to my experience with API, product, data.
-
-I would appreciate the chance to share how my experience can support the team. Thank you for your time.
-
-Best,
-Alex Chen
-```
-
-### Follow-up
-Timing: 3-5 business days after applying or the last recruiter interaction.
-```text
-Hi The Coca-Cola Company team,
-
-I wanted to follow up on my application for the Tech Lead, Service Provider role. I remain interested and would be glad to provide any additional context about my background.
-
-Thank you again for your time.
-
-Best,
-Alex Chen
-```
-
-### Interview Prep
-- Prepare a 60-second story for why The Coca-Cola Company and why Tech Lead, Service Provider.
-- Prepare evidence for: API, product, data.
-- Prepare one STAR story about execution under ambiguity.
-- Prepare one STAR story about collaboration and tradeoff decisions.
-- Prepare questions about team priorities, success metrics, and hiring timeline.
-
-### Negotiation Prep
-- Wait for a clear offer before anchoring compensation.
-- Ask for total compensation breakdown, work mode, title, level, review cycle, and start date.
-- Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.
-- Use competing priorities and role fit, not personal need, as the negotiation frame.
-
 ## The Coca-Cola Company - Software Engineer I
 
 - Priority: P0
@@ -324,136 +324,6 @@ Alex Chen
 
 ### Interview Prep
 - Prepare a 60-second story for why The Coca-Cola Company and why Software Engineer I.
-- Prepare evidence for: API, engineer, product, data.
-- Prepare one STAR story about execution under ambiguity.
-- Prepare one STAR story about collaboration and tradeoff decisions.
-- Prepare questions about team priorities, success metrics, and hiring timeline.
-
-### Negotiation Prep
-- Wait for a clear offer before anchoring compensation.
-- Ask for total compensation breakdown, work mode, title, level, review cycle, and start date.
-- Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.
-- Use competing priorities and role fit, not personal need, as the negotiation frame.
-
-## The Coca-Cola Company - Senior Manager, Software Engineer, Service Provider
-
-- Priority: P0
-- Score: 95/A
-- Subject: Senior Manager, Software Engineer, Service Provider application - The Coca-Cola Company
-
-- Block G: High Confidence
-- Rating: 4.8/5.0
-
-### ATS Keyword Injection
-- Archetype: AI Platform / LLMOps
-- Coverage: 100%
-- JD Keywords: API, engineer, product, data
-- 在 Professional Summary 中自然帶入：API、engineer、product、data
-- 使用職位語言：「AI Platform / LLMOps」方向的動詞和術語
-- 【你已有但此 JD 未要求】可視情況選擇性提及：growth、sales
-- Missing (do NOT fabricate): growth, sales
-
-### Apply Checklist
-- Open the source URL and confirm the role is still active.
-- Generate or refresh the tailored ATS PDF from this job.
-- Mirror these JD keywords honestly in your CV: API, engineer, product, data
-- Do not overclaim missing areas: growth, sales
-- Log status, recruiter/contact, and next follow-up date in the tracker.
-
-### Outreach Email
-```text
-Hi The Coca-Cola Company team,
-
-I am Alex Chen, and I am interested in the Senior Manager, Software Engineer, Service Provider role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.
-
-The role stood out because it maps closely to my experience with API, engineer, product, data.
-
-I would appreciate the chance to share how my experience can support the team. Thank you for your time.
-
-Best,
-Alex Chen
-```
-
-### Follow-up
-Timing: 3-5 business days after applying or the last recruiter interaction.
-```text
-Hi The Coca-Cola Company team,
-
-I wanted to follow up on my application for the Senior Manager, Software Engineer, Service Provider role. I remain interested and would be glad to provide any additional context about my background.
-
-Thank you again for your time.
-
-Best,
-Alex Chen
-```
-
-### Interview Prep
-- Prepare a 60-second story for why The Coca-Cola Company and why Senior Manager, Software Engineer, Service Provider.
-- Prepare evidence for: API, engineer, product, data.
-- Prepare one STAR story about execution under ambiguity.
-- Prepare one STAR story about collaboration and tradeoff decisions.
-- Prepare questions about team priorities, success metrics, and hiring timeline.
-
-### Negotiation Prep
-- Wait for a clear offer before anchoring compensation.
-- Ask for total compensation breakdown, work mode, title, level, review cycle, and start date.
-- Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.
-- Use competing priorities and role fit, not personal need, as the negotiation frame.
-
-## The Coca-Cola Company - Senior Manager, Software Engineer FSOP Sales Experience
-
-- Priority: P0
-- Score: 95/A
-- Subject: Senior Manager, Software Engineer FSOP Sales Experience application - The Coca-Cola Company
-
-- Block G: High Confidence
-- Rating: 4.8/5.0
-
-### ATS Keyword Injection
-- Archetype: AI Platform / LLMOps
-- Coverage: 100%
-- JD Keywords: API, engineer, product, data
-- 在 Professional Summary 中自然帶入：API、engineer、product、data
-- 使用職位語言：「AI Platform / LLMOps」方向的動詞和術語
-- 【你已有但此 JD 未要求】可視情況選擇性提及：crm、growth、sales
-- Missing (do NOT fabricate): crm, growth, sales
-
-### Apply Checklist
-- Open the source URL and confirm the role is still active.
-- Generate or refresh the tailored ATS PDF from this job.
-- Mirror these JD keywords honestly in your CV: API, engineer, product, data
-- Do not overclaim missing areas: crm, growth, sales
-- Log status, recruiter/contact, and next follow-up date in the tracker.
-
-### Outreach Email
-```text
-Hi The Coca-Cola Company team,
-
-I am Alex Chen, and I am interested in the Senior Manager, Software Engineer FSOP Sales Experience role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.
-
-The role stood out because it maps closely to my experience with API, engineer, product, data.
-
-I would appreciate the chance to share how my experience can support the team. Thank you for your time.
-
-Best,
-Alex Chen
-```
-
-### Follow-up
-Timing: 3-5 business days after applying or the last recruiter interaction.
-```text
-Hi The Coca-Cola Company team,
-
-I wanted to follow up on my application for the Senior Manager, Software Engineer FSOP Sales Experience role. I remain interested and would be glad to provide any additional context about my background.
-
-Thank you again for your time.
-
-Best,
-Alex Chen
-```
-
-### Interview Prep
-- Prepare a 60-second story for why The Coca-Cola Company and why Senior Manager, Software Engineer FSOP Sales Experience.
 - Prepare evidence for: API, engineer, product, data.
 - Prepare one STAR story about execution under ambiguity.
 - Prepare one STAR story about collaboration and tradeoff decisions.
@@ -520,6 +390,136 @@ Alex Chen
 ### Interview Prep
 - Prepare a 60-second story for why Uber and why Sr Software Engineer, Frontend (Web).
 - Prepare evidence for: JavaScript, TypeScript, React, CSS, API, Performance Optimization.
+- Prepare one STAR story about execution under ambiguity.
+- Prepare one STAR story about collaboration and tradeoff decisions.
+- Prepare questions about team priorities, success metrics, and hiring timeline.
+
+### Negotiation Prep
+- Wait for a clear offer before anchoring compensation.
+- Ask for total compensation breakdown, work mode, title, level, review cycle, and start date.
+- Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.
+- Use competing priorities and role fit, not personal need, as the negotiation frame.
+
+## The Coca-Cola Company - Senior Software Engineer II
+
+- Priority: P0
+- Score: 95/A
+- Subject: Senior Software Engineer II application - The Coca-Cola Company
+
+- Block G: High Confidence
+- Rating: 4.8/5.0
+
+### ATS Keyword Injection
+- Archetype: AI Platform / LLMOps
+- Coverage: 100%
+- JD Keywords: API, engineer, product, data
+- 在 Professional Summary 中自然帶入：API、engineer、product、data
+- 使用職位語言：「AI Platform / LLMOps」方向的動詞和術語
+- 【你已有但此 JD 未要求】可視情況選擇性提及：growth、sales
+- Missing (do NOT fabricate): growth, sales
+
+### Apply Checklist
+- Open the source URL and confirm the role is still active.
+- Generate or refresh the tailored ATS PDF from this job.
+- Mirror these JD keywords honestly in your CV: API, engineer, product, data
+- Do not overclaim missing areas: growth, sales
+- Log status, recruiter/contact, and next follow-up date in the tracker.
+
+### Outreach Email
+```text
+Hi The Coca-Cola Company team,
+
+I am Alex Chen, and I am interested in the Senior Software Engineer II role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.
+
+The role stood out because it maps closely to my experience with API, engineer, product, data.
+
+I would appreciate the chance to share how my experience can support the team. Thank you for your time.
+
+Best,
+Alex Chen
+```
+
+### Follow-up
+Timing: 3-5 business days after applying or the last recruiter interaction.
+```text
+Hi The Coca-Cola Company team,
+
+I wanted to follow up on my application for the Senior Software Engineer II role. I remain interested and would be glad to provide any additional context about my background.
+
+Thank you again for your time.
+
+Best,
+Alex Chen
+```
+
+### Interview Prep
+- Prepare a 60-second story for why The Coca-Cola Company and why Senior Software Engineer II.
+- Prepare evidence for: API, engineer, product, data.
+- Prepare one STAR story about execution under ambiguity.
+- Prepare one STAR story about collaboration and tradeoff decisions.
+- Prepare questions about team priorities, success metrics, and hiring timeline.
+
+### Negotiation Prep
+- Wait for a clear offer before anchoring compensation.
+- Ask for total compensation breakdown, work mode, title, level, review cycle, and start date.
+- Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.
+- Use competing priorities and role fit, not personal need, as the negotiation frame.
+
+## The Coca-Cola Company - Software Engineer I
+
+- Priority: P0
+- Score: 95/A
+- Subject: Software Engineer I application - The Coca-Cola Company
+
+- Block G: High Confidence
+- Rating: 4.8/5.0
+
+### ATS Keyword Injection
+- Archetype: AI Platform / LLMOps
+- Coverage: 100%
+- JD Keywords: API, engineer, product, data
+- 在 Professional Summary 中自然帶入：API、engineer、product、data
+- 使用職位語言：「AI Platform / LLMOps」方向的動詞和術語
+- 【你已有但此 JD 未要求】可視情況選擇性提及：growth、sales
+- Missing (do NOT fabricate): growth, sales
+
+### Apply Checklist
+- Open the source URL and confirm the role is still active.
+- Generate or refresh the tailored ATS PDF from this job.
+- Mirror these JD keywords honestly in your CV: API, engineer, product, data
+- Do not overclaim missing areas: growth, sales
+- Log status, recruiter/contact, and next follow-up date in the tracker.
+
+### Outreach Email
+```text
+Hi The Coca-Cola Company team,
+
+I am Alex Chen, and I am interested in the Software Engineer I role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.
+
+The role stood out because it maps closely to my experience with API, engineer, product, data.
+
+I would appreciate the chance to share how my experience can support the team. Thank you for your time.
+
+Best,
+Alex Chen
+```
+
+### Follow-up
+Timing: 3-5 business days after applying or the last recruiter interaction.
+```text
+Hi The Coca-Cola Company team,
+
+I wanted to follow up on my application for the Software Engineer I role. I remain interested and would be glad to provide any additional context about my background.
+
+Thank you again for your time.
+
+Best,
+Alex Chen
+```
+
+### Interview Prep
+- Prepare a 60-second story for why The Coca-Cola Company and why Software Engineer I.
+- Prepare evidence for: API, engineer, product, data.
 - Prepare one STAR story about execution under ambiguity.
 - Prepare one STAR story about collaboration and tradeoff decisions.
 - Prepare questions about team priorities, success metrics, and hiring timeline.

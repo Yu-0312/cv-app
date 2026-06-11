@@ -1,10 +1,50 @@
 # Career Ops Compensation Planner
 
-Generated: 2026-06-10T00:13:39.929Z
+Generated: 2026-06-11T00:22:09.289Z
 Plans: 20
 
 ## Operating Rule
 Do not invent salary numbers. Use verified ranges, recruiter-provided ranges, or clearly marked market evidence before anchoring.
+
+## Micron Workday - AI-Enabled Full Stack Developer - Experienced
+
+- Market: tw
+- Job level (inferred): mid
+- Candidate level (from profile): mid
+- Leverage: high
+- Market benchmark (mid): NTD 55,000 – 90,000 monthly
+- Benchmark midpoint: NTD 70,000
+- Benchmark source: NodeFlair / PayScale TW 2024-2025
+- Note: Taipei market. Annual bonus (1-3 months) is common; multiply monthly by 13-14 for total annual estimate.
+- Target frame: Market benchmark for mid in TW is NTD 55,000 – 90,000 (monthly). Do not name a number first — ask for the approved range, then anchor near the midpoint or above.
+
+### Evidence
+- No verified salary mention found.
+- Benefit signal: equity
+- Benefit signal: signing / relocation
+
+### Structure
+- Base: Market range for mid (TW): NTD 55,000 – 90,000 monthly. Source: NodeFlair / PayScale TW 2024-2025.
+- Bonus: Ask whether there is annual bonus, performance bonus, or sign-on bonus.
+- Equity: Clarify grant size, vesting schedule, refreshers, and strike/RSU terms.
+- Benefit: Health / insurance coverage
+- Benefit: Paid leave and holidays
+- Benefit: Learning budget or certification support
+- Benefit: Remote/hybrid setup, commute, or relocation support
+- Benefit: Review cycle and promotion timeline
+
+### Scripts
+- Range question: Before I anchor on a number, could you share the approved range and level for the AI-Enabled Full Stack Developer - Experienced package, including base, bonus, equity, and review cycle?
+- Value anchor: Based on the scope of AI-Enabled Full Stack Developer - Experienced and my fit around API, engineer, data, restful, I would like to calibrate toward the stronger end of the range if the team sees the level match. My research indicates the TW midpoint for this level is around NTD 70,000 (monthly).
+- Counter: Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?
+- Pause: I appreciate the details. I would like to review the full package and come back with a thoughtful response.
+- Close: If we can align on the package and review timeline, I would feel confident moving forward.
+
+### Next Actions
+- Collect market compensation evidence before naming a number.
+- Ask recruiter for approved range and level.
+- Map the job scope to proof points in the tailored CV.
+- Prepare one counter package with base, bonus/equity, and non-cash levers.
 
 ## VANGUARD SOFTWARE PTE. LTD. - Expert Frontend Engineer (React.JS & React Native)
 
@@ -16,6 +56,7 @@ Do not invent salary numbers. Use verified ranges, recruiter-provided ranges, or
 
 ### Evidence
 - No verified salary mention found.
+- Benefit signal: work-mode flexibility
 
 ### Structure
 - Base: Need verified market data or recruiter range before setting a numeric anchor.
@@ -116,42 +157,6 @@ Do not invent salary numbers. Use verified ranges, recruiter-provided ranges, or
 - Map the job scope to proof points in the tailored CV.
 - Prepare one counter package with base, bonus/equity, and non-cash levers.
 
-## The Coca-Cola Company - Tech Lead, Service Provider
-
-- Market: us
-- Job level (inferred): senior-plus
-- Candidate level (from profile): mid
-- Leverage: high
-- Target frame: Do not name a number first. Ask for the approved range, level, and total compensation structure before anchoring.
-
-### Evidence
-- No verified salary mention found.
-- Benefit signal: work-mode flexibility
-- Benefit signal: learning budget
-
-### Structure
-- Base: Need verified market data or recruiter range before setting a numeric anchor.
-- Bonus: Ask whether there is annual bonus, performance bonus, or sign-on bonus.
-- Equity: Ask whether equity, RSU, options, or profit-sharing exists.
-- Benefit: Health / insurance coverage
-- Benefit: Paid leave and holidays
-- Benefit: Learning budget or certification support
-- Benefit: Remote/hybrid setup, commute, or relocation support
-- Benefit: Review cycle and promotion timeline
-
-### Scripts
-- Range question: Before I anchor on a number, could you share the approved range and level for the Tech Lead, Service Provider package, including base, bonus, equity, and review cycle?
-- Value anchor: Based on the scope of Tech Lead, Service Provider and my fit around API, product, data, I would like to calibrate toward the stronger end of the range if the team sees the level match.
-- Counter: Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?
-- Pause: I appreciate the details. I would like to review the full package and come back with a thoughtful response.
-- Close: If we can align on the package and review timeline, I would feel confident moving forward.
-
-### Next Actions
-- Collect market compensation evidence before naming a number.
-- Ask recruiter for approved range and level.
-- Map the job scope to proof points in the tailored CV.
-- Prepare one counter package with base, bonus/equity, and non-cash levers.
-
 ## The Coca-Cola Company - Software Engineer I
 
 - Market: us
@@ -188,79 +193,6 @@ Do not invent salary numbers. Use verified ranges, recruiter-provided ranges, or
 - Map the job scope to proof points in the tailored CV.
 - Prepare one counter package with base, bonus/equity, and non-cash levers.
 
-## The Coca-Cola Company - Senior Manager, Software Engineer, Service Provider
-
-- Market: us
-- Job level (inferred): senior
-- Candidate level (from profile): mid
-- Leverage: high
-- Target frame: Do not name a number first. Ask for the approved range, level, and total compensation structure before anchoring.
-
-### Evidence
-- No verified salary mention found.
-- Benefit signal: work-mode flexibility
-- Benefit signal: learning budget
-
-### Structure
-- Base: Need verified market data or recruiter range before setting a numeric anchor.
-- Bonus: Ask whether there is annual bonus, performance bonus, or sign-on bonus.
-- Equity: Ask whether equity, RSU, options, or profit-sharing exists.
-- Benefit: Health / insurance coverage
-- Benefit: Paid leave and holidays
-- Benefit: Learning budget or certification support
-- Benefit: Remote/hybrid setup, commute, or relocation support
-- Benefit: Review cycle and promotion timeline
-
-### Scripts
-- Range question: Before I anchor on a number, could you share the approved range and level for the Senior Manager, Software Engineer, Service Provider package, including base, bonus, equity, and review cycle?
-- Value anchor: Based on the scope of Senior Manager, Software Engineer, Service Provider and my fit around API, engineer, product, data, I would like to calibrate toward the stronger end of the range if the team sees the level match.
-- Counter: Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?
-- Pause: I appreciate the details. I would like to review the full package and come back with a thoughtful response.
-- Close: If we can align on the package and review timeline, I would feel confident moving forward.
-
-### Next Actions
-- Collect market compensation evidence before naming a number.
-- Ask recruiter for approved range and level.
-- Map the job scope to proof points in the tailored CV.
-- Prepare one counter package with base, bonus/equity, and non-cash levers.
-
-## The Coca-Cola Company - Senior Manager, Software Engineer FSOP Sales Experience
-
-- Market: us
-- Job level (inferred): senior
-- Candidate level (from profile): mid
-- Leverage: high
-- Target frame: Do not name a number first. Ask for the approved range, level, and total compensation structure before anchoring.
-
-### Evidence
-- No verified salary mention found.
-- Benefit signal: work-mode flexibility
-- Benefit signal: signing / relocation
-- Benefit signal: learning budget
-
-### Structure
-- Base: Need verified market data or recruiter range before setting a numeric anchor.
-- Bonus: Ask whether there is annual bonus, performance bonus, or sign-on bonus.
-- Equity: Ask whether equity, RSU, options, or profit-sharing exists.
-- Benefit: Health / insurance coverage
-- Benefit: Paid leave and holidays
-- Benefit: Learning budget or certification support
-- Benefit: Remote/hybrid setup, commute, or relocation support
-- Benefit: Review cycle and promotion timeline
-
-### Scripts
-- Range question: Before I anchor on a number, could you share the approved range and level for the Senior Manager, Software Engineer FSOP Sales Experience package, including base, bonus, equity, and review cycle?
-- Value anchor: Based on the scope of Senior Manager, Software Engineer FSOP Sales Experience and my fit around API, engineer, product, data, I would like to calibrate toward the stronger end of the range if the team sees the level match.
-- Counter: Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?
-- Pause: I appreciate the details. I would like to review the full package and come back with a thoughtful response.
-- Close: If we can align on the package and review timeline, I would feel confident moving forward.
-
-### Next Actions
-- Collect market compensation evidence before naming a number.
-- Ask recruiter for approved range and level.
-- Map the job scope to proof points in the tailored CV.
-- Prepare one counter package with base, bonus/equity, and non-cash levers.
-
 ## Uber - Sr Software Engineer, Frontend (Web)
 
 - Market: us
@@ -287,6 +219,78 @@ Do not invent salary numbers. Use verified ranges, recruiter-provided ranges, or
 ### Scripts
 - Range question: Before I anchor on a number, could you share the approved range and level for the Sr Software Engineer, Frontend (Web) package, including base, bonus, equity, and review cycle?
 - Value anchor: Based on the scope of Sr Software Engineer, Frontend (Web) and my fit around JavaScript, TypeScript, React, CSS, I would like to calibrate toward the stronger end of the range if the team sees the level match.
+- Counter: Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?
+- Pause: I appreciate the details. I would like to review the full package and come back with a thoughtful response.
+- Close: If we can align on the package and review timeline, I would feel confident moving forward.
+
+### Next Actions
+- Collect market compensation evidence before naming a number.
+- Ask recruiter for approved range and level.
+- Map the job scope to proof points in the tailored CV.
+- Prepare one counter package with base, bonus/equity, and non-cash levers.
+
+## The Coca-Cola Company - Senior Software Engineer II
+
+- Market: us
+- Job level (inferred): senior
+- Candidate level (from profile): mid
+- Leverage: high
+- Target frame: Do not name a number first. Ask for the approved range, level, and total compensation structure before anchoring.
+
+### Evidence
+- No verified salary mention found.
+- Benefit signal: work-mode flexibility
+- Benefit signal: learning budget
+
+### Structure
+- Base: Need verified market data or recruiter range before setting a numeric anchor.
+- Bonus: Ask whether there is annual bonus, performance bonus, or sign-on bonus.
+- Equity: Ask whether equity, RSU, options, or profit-sharing exists.
+- Benefit: Health / insurance coverage
+- Benefit: Paid leave and holidays
+- Benefit: Learning budget or certification support
+- Benefit: Remote/hybrid setup, commute, or relocation support
+- Benefit: Review cycle and promotion timeline
+
+### Scripts
+- Range question: Before I anchor on a number, could you share the approved range and level for the Senior Software Engineer II package, including base, bonus, equity, and review cycle?
+- Value anchor: Based on the scope of Senior Software Engineer II and my fit around API, engineer, product, data, I would like to calibrate toward the stronger end of the range if the team sees the level match.
+- Counter: Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?
+- Pause: I appreciate the details. I would like to review the full package and come back with a thoughtful response.
+- Close: If we can align on the package and review timeline, I would feel confident moving forward.
+
+### Next Actions
+- Collect market compensation evidence before naming a number.
+- Ask recruiter for approved range and level.
+- Map the job scope to proof points in the tailored CV.
+- Prepare one counter package with base, bonus/equity, and non-cash levers.
+
+## The Coca-Cola Company - Software Engineer I
+
+- Market: us
+- Job level (inferred): senior
+- Candidate level (from profile): mid
+- Leverage: high
+- Target frame: Do not name a number first. Ask for the approved range, level, and total compensation structure before anchoring.
+
+### Evidence
+- No verified salary mention found.
+- Benefit signal: work-mode flexibility
+- Benefit signal: learning budget
+
+### Structure
+- Base: Need verified market data or recruiter range before setting a numeric anchor.
+- Bonus: Ask whether there is annual bonus, performance bonus, or sign-on bonus.
+- Equity: Ask whether equity, RSU, options, or profit-sharing exists.
+- Benefit: Health / insurance coverage
+- Benefit: Paid leave and holidays
+- Benefit: Learning budget or certification support
+- Benefit: Remote/hybrid setup, commute, or relocation support
+- Benefit: Review cycle and promotion timeline
+
+### Scripts
+- Range question: Before I anchor on a number, could you share the approved range and level for the Software Engineer I package, including base, bonus, equity, and review cycle?
+- Value anchor: Based on the scope of Software Engineer I and my fit around API, engineer, product, data, I would like to calibrate toward the stronger end of the range if the team sees the level match.
 - Counter: Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?
 - Pause: I appreciate the details. I would like to review the full package and come back with a thoughtful response.
 - Close: If we can align on the package and review timeline, I would feel confident moving forward.
@@ -439,6 +443,42 @@ Do not invent salary numbers. Use verified ranges, recruiter-provided ranges, or
 - Map the job scope to proof points in the tailored CV.
 - Prepare one counter package with base, bonus/equity, and non-cash levers.
 
+## The Coca-Cola Company - Senior Software Engineer , Service Provider
+
+- Market: us
+- Job level (inferred): senior
+- Candidate level (from profile): mid
+- Leverage: high
+- Target frame: Do not name a number first. Ask for the approved range, level, and total compensation structure before anchoring.
+
+### Evidence
+- No verified salary mention found.
+- Benefit signal: work-mode flexibility
+- Benefit signal: learning budget
+
+### Structure
+- Base: Need verified market data or recruiter range before setting a numeric anchor.
+- Bonus: Ask whether there is annual bonus, performance bonus, or sign-on bonus.
+- Equity: Ask whether equity, RSU, options, or profit-sharing exists.
+- Benefit: Health / insurance coverage
+- Benefit: Paid leave and holidays
+- Benefit: Learning budget or certification support
+- Benefit: Remote/hybrid setup, commute, or relocation support
+- Benefit: Review cycle and promotion timeline
+
+### Scripts
+- Range question: Before I anchor on a number, could you share the approved range and level for the Senior Software Engineer , Service Provider package, including base, bonus, equity, and review cycle?
+- Value anchor: Based on the scope of Senior Software Engineer , Service Provider and my fit around API, engineer, product, data, I would like to calibrate toward the stronger end of the range if the team sees the level match.
+- Counter: Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?
+- Pause: I appreciate the details. I would like to review the full package and come back with a thoughtful response.
+- Close: If we can align on the package and review timeline, I would feel confident moving forward.
+
+### Next Actions
+- Collect market compensation evidence before naming a number.
+- Ask recruiter for approved range and level.
+- Map the job scope to proof points in the tailored CV.
+- Prepare one counter package with base, bonus/equity, and non-cash levers.
+
 ## The Coca-Cola Company - Software Engineer I - CRM
 
 - Market: us
@@ -511,7 +551,44 @@ Do not invent salary numbers. Use verified ranges, recruiter-provided ranges, or
 - Map the job scope to proof points in the tailored CV.
 - Prepare one counter package with base, bonus/equity, and non-cash levers.
 
-## The Coca-Cola Company - Senior Manager, Software Engineer, Precision Selling Experience
+## The Coca-Cola Company - Software Engineer II - CRM
+
+- Market: us
+- Job level (inferred): senior
+- Candidate level (from profile): mid
+- Leverage: high
+- Target frame: Do not name a number first. Ask for the approved range, level, and total compensation structure before anchoring.
+
+### Evidence
+- No verified salary mention found.
+- Benefit signal: work-mode flexibility
+- Benefit signal: signing / relocation
+- Benefit signal: learning budget
+
+### Structure
+- Base: Need verified market data or recruiter range before setting a numeric anchor.
+- Bonus: Ask whether there is annual bonus, performance bonus, or sign-on bonus.
+- Equity: Ask whether equity, RSU, options, or profit-sharing exists.
+- Benefit: Health / insurance coverage
+- Benefit: Paid leave and holidays
+- Benefit: Learning budget or certification support
+- Benefit: Remote/hybrid setup, commute, or relocation support
+- Benefit: Review cycle and promotion timeline
+
+### Scripts
+- Range question: Before I anchor on a number, could you share the approved range and level for the Software Engineer II - CRM package, including base, bonus, equity, and review cycle?
+- Value anchor: Based on the scope of Software Engineer II - CRM and my fit around API, engineer, product, data, I would like to calibrate toward the stronger end of the range if the team sees the level match.
+- Counter: Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?
+- Pause: I appreciate the details. I would like to review the full package and come back with a thoughtful response.
+- Close: If we can align on the package and review timeline, I would feel confident moving forward.
+
+### Next Actions
+- Collect market compensation evidence before naming a number.
+- Ask recruiter for approved range and level.
+- Map the job scope to proof points in the tailored CV.
+- Prepare one counter package with base, bonus/equity, and non-cash levers.
+
+## The Coca-Cola Company - Senior Software Engineer - CRM
 
 - Market: us
 - Job level (inferred): senior
@@ -535,8 +612,8 @@ Do not invent salary numbers. Use verified ranges, recruiter-provided ranges, or
 - Benefit: Review cycle and promotion timeline
 
 ### Scripts
-- Range question: Before I anchor on a number, could you share the approved range and level for the Senior Manager, Software Engineer, Precision Selling Experience package, including base, bonus, equity, and review cycle?
-- Value anchor: Based on the scope of Senior Manager, Software Engineer, Precision Selling Experience and my fit around API, engineer, product, data, I would like to calibrate toward the stronger end of the range if the team sees the level match.
+- Range question: Before I anchor on a number, could you share the approved range and level for the Senior Software Engineer - CRM package, including base, bonus, equity, and review cycle?
+- Value anchor: Based on the scope of Senior Software Engineer - CRM and my fit around API, engineer, product, data, I would like to calibrate toward the stronger end of the range if the team sees the level match.
 - Counter: Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?
 - Pause: I appreciate the details. I would like to review the full package and come back with a thoughtful response.
 - Close: If we can align on the package and review timeline, I would feel confident moving forward.
@@ -547,10 +624,10 @@ Do not invent salary numbers. Use verified ranges, recruiter-provided ranges, or
 - Map the job scope to proof points in the tailored CV.
 - Prepare one counter package with base, bonus/equity, and non-cash levers.
 
-## The Coca-Cola Company - Tech Lead, FSOP Sales Experience
+## The Coca-Cola Company - Senior Software Engineer
 
 - Market: us
-- Job level (inferred): senior-plus
+- Job level (inferred): senior
 - Candidate level (from profile): mid
 - Leverage: high
 - Target frame: Do not name a number first. Ask for the approved range, level, and total compensation structure before anchoring.
@@ -571,8 +648,44 @@ Do not invent salary numbers. Use verified ranges, recruiter-provided ranges, or
 - Benefit: Review cycle and promotion timeline
 
 ### Scripts
-- Range question: Before I anchor on a number, could you share the approved range and level for the Tech Lead, FSOP Sales Experience package, including base, bonus, equity, and review cycle?
-- Value anchor: Based on the scope of Tech Lead, FSOP Sales Experience and my fit around API, product, data, I would like to calibrate toward the stronger end of the range if the team sees the level match.
+- Range question: Before I anchor on a number, could you share the approved range and level for the Senior Software Engineer package, including base, bonus, equity, and review cycle?
+- Value anchor: Based on the scope of Senior Software Engineer and my fit around API, engineer, product, data, I would like to calibrate toward the stronger end of the range if the team sees the level match.
+- Counter: Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?
+- Pause: I appreciate the details. I would like to review the full package and come back with a thoughtful response.
+- Close: If we can align on the package and review timeline, I would feel confident moving forward.
+
+### Next Actions
+- Collect market compensation evidence before naming a number.
+- Ask recruiter for approved range and level.
+- Map the job scope to proof points in the tailored CV.
+- Prepare one counter package with base, bonus/equity, and non-cash levers.
+
+## The Coca-Cola Company - Software Engineer II
+
+- Market: us
+- Job level (inferred): senior
+- Candidate level (from profile): mid
+- Leverage: high
+- Target frame: Do not name a number first. Ask for the approved range, level, and total compensation structure before anchoring.
+
+### Evidence
+- No verified salary mention found.
+- Benefit signal: work-mode flexibility
+- Benefit signal: learning budget
+
+### Structure
+- Base: Need verified market data or recruiter range before setting a numeric anchor.
+- Bonus: Ask whether there is annual bonus, performance bonus, or sign-on bonus.
+- Equity: Ask whether equity, RSU, options, or profit-sharing exists.
+- Benefit: Health / insurance coverage
+- Benefit: Paid leave and holidays
+- Benefit: Learning budget or certification support
+- Benefit: Remote/hybrid setup, commute, or relocation support
+- Benefit: Review cycle and promotion timeline
+
+### Scripts
+- Range question: Before I anchor on a number, could you share the approved range and level for the Software Engineer II package, including base, bonus, equity, and review cycle?
+- Value anchor: Based on the scope of Software Engineer II and my fit around API, engineer, product, data, I would like to calibrate toward the stronger end of the range if the team sees the level match.
 - Counter: Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?
 - Pause: I appreciate the details. I would like to review the full package and come back with a thoughtful response.
 - Close: If we can align on the package and review timeline, I would feel confident moving forward.
@@ -609,114 +722,6 @@ Do not invent salary numbers. Use verified ranges, recruiter-provided ranges, or
 ### Scripts
 - Range question: Before I anchor on a number, could you share the approved range and level for the Software Engineer Mid-level (Java Full Stack) package, including base, bonus, equity, and review cycle?
 - Value anchor: Based on the scope of Software Engineer Mid-level (Java Full Stack) and my fit around JavaScript, CSS, API, remote, I would like to calibrate toward the stronger end of the range if the team sees the level match.
-- Counter: Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?
-- Pause: I appreciate the details. I would like to review the full package and come back with a thoughtful response.
-- Close: If we can align on the package and review timeline, I would feel confident moving forward.
-
-### Next Actions
-- Collect market compensation evidence before naming a number.
-- Ask recruiter for approved range and level.
-- Map the job scope to proof points in the tailored CV.
-- Prepare one counter package with base, bonus/equity, and non-cash levers.
-
-## The Coca-Cola Company - Software Engineer I
-
-- Market: us
-- Job level (inferred): senior
-- Candidate level (from profile): mid
-- Leverage: high
-- Target frame: Do not name a number first. Ask for the approved range, level, and total compensation structure before anchoring.
-
-### Evidence
-- No verified salary mention found.
-- Benefit signal: work-mode flexibility
-- Benefit signal: learning budget
-
-### Structure
-- Base: Need verified market data or recruiter range before setting a numeric anchor.
-- Bonus: Ask whether there is annual bonus, performance bonus, or sign-on bonus.
-- Equity: Ask whether equity, RSU, options, or profit-sharing exists.
-- Benefit: Health / insurance coverage
-- Benefit: Paid leave and holidays
-- Benefit: Learning budget or certification support
-- Benefit: Remote/hybrid setup, commute, or relocation support
-- Benefit: Review cycle and promotion timeline
-
-### Scripts
-- Range question: Before I anchor on a number, could you share the approved range and level for the Software Engineer I package, including base, bonus, equity, and review cycle?
-- Value anchor: Based on the scope of Software Engineer I and my fit around API, engineer, product, data, I would like to calibrate toward the stronger end of the range if the team sees the level match.
-- Counter: Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?
-- Pause: I appreciate the details. I would like to review the full package and come back with a thoughtful response.
-- Close: If we can align on the package and review timeline, I would feel confident moving forward.
-
-### Next Actions
-- Collect market compensation evidence before naming a number.
-- Ask recruiter for approved range and level.
-- Map the job scope to proof points in the tailored CV.
-- Prepare one counter package with base, bonus/equity, and non-cash levers.
-
-## The Coca-Cola Company - Software Engineer I
-
-- Market: us
-- Job level (inferred): senior
-- Candidate level (from profile): mid
-- Leverage: high
-- Target frame: Do not name a number first. Ask for the approved range, level, and total compensation structure before anchoring.
-
-### Evidence
-- No verified salary mention found.
-- Benefit signal: work-mode flexibility
-- Benefit signal: learning budget
-
-### Structure
-- Base: Need verified market data or recruiter range before setting a numeric anchor.
-- Bonus: Ask whether there is annual bonus, performance bonus, or sign-on bonus.
-- Equity: Ask whether equity, RSU, options, or profit-sharing exists.
-- Benefit: Health / insurance coverage
-- Benefit: Paid leave and holidays
-- Benefit: Learning budget or certification support
-- Benefit: Remote/hybrid setup, commute, or relocation support
-- Benefit: Review cycle and promotion timeline
-
-### Scripts
-- Range question: Before I anchor on a number, could you share the approved range and level for the Software Engineer I package, including base, bonus, equity, and review cycle?
-- Value anchor: Based on the scope of Software Engineer I and my fit around API, engineer, product, data, I would like to calibrate toward the stronger end of the range if the team sees the level match.
-- Counter: Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?
-- Pause: I appreciate the details. I would like to review the full package and come back with a thoughtful response.
-- Close: If we can align on the package and review timeline, I would feel confident moving forward.
-
-### Next Actions
-- Collect market compensation evidence before naming a number.
-- Ask recruiter for approved range and level.
-- Map the job scope to proof points in the tailored CV.
-- Prepare one counter package with base, bonus/equity, and non-cash levers.
-
-## The Coca-Cola Company - Senior Manager, Software Engineer Service Supply Chain
-
-- Market: us
-- Job level (inferred): senior
-- Candidate level (from profile): mid
-- Leverage: high
-- Target frame: Do not name a number first. Ask for the approved range, level, and total compensation structure before anchoring.
-
-### Evidence
-- No verified salary mention found.
-- Benefit signal: work-mode flexibility
-- Benefit signal: learning budget
-
-### Structure
-- Base: Need verified market data or recruiter range before setting a numeric anchor.
-- Bonus: Ask whether there is annual bonus, performance bonus, or sign-on bonus.
-- Equity: Ask whether equity, RSU, options, or profit-sharing exists.
-- Benefit: Health / insurance coverage
-- Benefit: Paid leave and holidays
-- Benefit: Learning budget or certification support
-- Benefit: Remote/hybrid setup, commute, or relocation support
-- Benefit: Review cycle and promotion timeline
-
-### Scripts
-- Range question: Before I anchor on a number, could you share the approved range and level for the Senior Manager, Software Engineer Service Supply Chain package, including base, bonus, equity, and review cycle?
-- Value anchor: Based on the scope of Senior Manager, Software Engineer Service Supply Chain and my fit around API, engineer, product, data, I would like to calibrate toward the stronger end of the range if the team sees the level match.
 - Counter: Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?
 - Pause: I appreciate the details. I would like to review the full package and come back with a thoughtful response.
 - Close: If we can align on the package and review timeline, I would feel confident moving forward.

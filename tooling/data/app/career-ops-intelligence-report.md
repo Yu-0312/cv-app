@@ -1,10 +1,10 @@
 # Career Ops Intelligence Report
 
-Generated: 2026-06-10T00:13:15.654Z
+Generated: 2026-06-11T00:21:47.798Z
 
-- Active jobs: 83293
+- Active jobs: 63161
 - Expired jobs: 0
-- Duplicate groups: 3412
+- Duplicate groups: 3415
 - Jobs without enough description: 411
 - Rubric: Career Ops 10-Dimension Rubric
 
@@ -21,56 +21,56 @@ Generated: 2026-06-10T00:13:15.654Z
 - applicationEffort: 0.08
 
 ## Top Skills
-- api: 7610
-- growth: 4487
-- operations: 4300
-- analytics: 3374
-- sales: 3187
-- python: 2226
-- go: 1965
-- sql: 1587
-- excel: 1542
-- aws: 1241
-- azure: 987
-- machine learning: 960
+- api: 7592
+- growth: 4460
+- operations: 4269
+- analytics: 3360
+- sales: 3174
+- python: 2217
+- go: 1924
+- sql: 1580
+- excel: 1562
+- aws: 1223
+- azure: 977
+- machine learning: 953
 
 ## Missing High-Demand Skills
-- growth: 4487
-- operations: 4300
-- sales: 3187
-- python: 2226
-- go: 1965
-- sql: 1587
-- excel: 1542
-- aws: 1241
-- azure: 987
-- machine learning: 960
+- growth: 4460
+- operations: 4269
+- sales: 3174
+- python: 2217
+- go: 1924
+- sql: 1580
+- excel: 1562
+- aws: 1223
+- azure: 977
+- machine learning: 953
 
 ## Global Skill Gap Priority (weighted by job score)
-- growth: 7140.7
-- operations: 6814.7
-- sales: 5009.4
-- python: 3613.8
-- go: 3137.1
-- sql: 2580.3
-- excel: 2413.2
-- aws: 2028
-- azure: 1611.9
-- machine learning: 1559.1
-- java: 1299.7
-- agents: 1266.6
+- growth: 7100.8
+- operations: 6771.4
+- sales: 4996.7
+- python: 3597.3
+- go: 3073.2
+- sql: 2569.3
+- excel: 2442.6
+- aws: 2000.6
+- azure: 1596.8
+- machine learning: 1546.9
+- java: 1290.8
+- agents: 1278.7
 
 ## Role Families
-- Backend: 79116
-- Other: 1722
-- Frontend: 846
-- AI / Data: 682
-- Sales: 370
-- Product: 166
-- Design: 143
-- Marketing: 141
-- Operations: 68
-- Internship: 31
+- Backend: 59060
+- Other: 1703
+- Frontend: 843
+- AI / Data: 666
+- Sales: 327
+- Marketing: 162
+- Product: 149
+- Design: 141
+- Operations: 65
+- Internship: 35
 
 ## Recommended Search Queries
 - Frontend Engineer
