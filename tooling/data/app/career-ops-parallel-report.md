@@ -1,6 +1,6 @@
 # Career Ops Parallel Worker Report
 
-Generated: 2026-06-11T00:22:14.327Z
+Generated: 2026-06-12T00:25:31.485Z
 Concurrency: 4
 Jobs processed: 50
 Errors: 0
@@ -116,26 +116,11 @@ Errors: 0
 - Never store API keys or credentials in job metadata.
 - Record only application status and user-approved notes.
 
-## P0 The Coca-Cola Company - Software Engineer I
-
-- Score: 95
-- Grade: A
-- Research evidence: 3
-- Keywords: API, engineer, product, data
-- Compensation leverage: high
-- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
-
-### Apply Agent Guardrails
-- Never submit without explicit user confirmation.
-- Never fabricate work authorization, salary history, degree, or experience.
-- Never store API keys or credentials in job metadata.
-- Record only application status and user-approved notes.
-
 ## P0 Disney - Lead Software Engineer
 
 - Score: 95
 - Grade: A
-- Research evidence: 0
+- Research evidence: 5
 - Keywords: JavaScript, TypeScript, API, engineer, product, data
 - Compensation leverage: high
 - Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
@@ -167,6 +152,21 @@ Errors: 0
 - Grade: A
 - Research evidence: 0
 - Keywords: API, engineer, data
+- Compensation leverage: high
+- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
+
+### Apply Agent Guardrails
+- Never submit without explicit user confirmation.
+- Never fabricate work authorization, salary history, degree, or experience.
+- Never store API keys or credentials in job metadata.
+- Record only application status and user-approved notes.
+
+## P0 The Coca-Cola Company - Software Engineer II - CRM
+
+- Score: 95
+- Grade: A
+- Research evidence: 3
+- Keywords: API, engineer, product, data
 - Compensation leverage: high
 - Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
@@ -212,21 +212,6 @@ Errors: 0
 - Grade: A
 - Research evidence: 3
 - Keywords: API, engineer, product, data
-- Compensation leverage: high
-- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
-
-### Apply Agent Guardrails
-- Never submit without explicit user confirmation.
-- Never fabricate work authorization, salary history, degree, or experience.
-- Never store API keys or credentials in job metadata.
-- Record only application status and user-approved notes.
-
-## P0 USAA - Software Engineer Mid-level (Java Full Stack)
-
-- Score: 95
-- Grade: A
-- Research evidence: 0
-- Keywords: JavaScript, CSS, API, remote, engineer, data
 - Compensation leverage: high
 - Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
@@ -296,21 +281,6 @@ Errors: 0
 - Never store API keys or credentials in job metadata.
 - Record only application status and user-approved notes.
 
-## P0 USAA - Software Engineer Mid-level (Java Full Stack)
-
-- Score: 95
-- Grade: A
-- Research evidence: 0
-- Keywords: JavaScript, CSS, API, remote, engineer, data
-- Compensation leverage: high
-- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
-
-### Apply Agent Guardrails
-- Never submit without explicit user confirmation.
-- Never fabricate work authorization, salary history, degree, or experience.
-- Never store API keys or credentials in job metadata.
-- Record only application status and user-approved notes.
-
 ## P0 The Coca-Cola Company - Software Engineer I
 
 - Score: 95
@@ -342,6 +312,21 @@ Errors: 0
 - Record only application status and user-approved notes.
 
 ## P0 The Coca-Cola Company - Senior Software Engineer II
+
+- Score: 95
+- Grade: A
+- Research evidence: 3
+- Keywords: API, engineer, product, data
+- Compensation leverage: high
+- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
+
+### Apply Agent Guardrails
+- Never submit without explicit user confirmation.
+- Never fabricate work authorization, salary history, degree, or experience.
+- Never store API keys or credentials in job metadata.
+- Record only application status and user-approved notes.
+
+## P0 The Coca-Cola Company - Software Engineer I
 
 - Score: 95
 - Grade: A
@@ -437,21 +422,6 @@ Errors: 0
 - Grade: A
 - Research evidence: 0
 - Keywords: JavaScript, TypeScript, engineer, product, data
-- Compensation leverage: -
-- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
-
-### Apply Agent Guardrails
-- Never submit without explicit user confirmation.
-- Never fabricate work authorization, salary history, degree, or experience.
-- Never store API keys or credentials in job metadata.
-- Record only application status and user-approved notes.
-
-## P0 AIRWALLEX (SINGAPORE) PTE. LTD. - Senior Frontend Engineer, Regulatory Reporting
-
-- Score: 94
-- Grade: A
-- Research evidence: 0
-- Keywords: TypeScript, React, API, design system, engineer, data, graphql, node.js, dashboards
 - Compensation leverage: -
 - Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
@@ -753,6 +723,36 @@ Errors: 0
 - Research evidence: 0
 - Keywords: TypeScript, React, remote, dashboard, engineer, product, data
 - Compensation leverage: -
+- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
+
+### Apply Agent Guardrails
+- Never submit without explicit user confirmation.
+- Never fabricate work authorization, salary history, degree, or experience.
+- Never store API keys or credentials in job metadata.
+- Record only application status and user-approved notes.
+
+## P0 Uber - Sr Staff Engineer - Web Platform
+
+- Score: 92
+- Grade: A
+- Research evidence: 1
+- Keywords: TypeScript, React, Next.js, API, engineer, product, data, graphql
+- Compensation leverage: high
+- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
+
+### Apply Agent Guardrails
+- Never submit without explicit user confirmation.
+- Never fabricate work authorization, salary history, degree, or experience.
+- Never store API keys or credentials in job metadata.
+- Record only application status and user-approved notes.
+
+## P0 Uber - Engineering Manager II
+
+- Score: 92
+- Grade: A
+- Research evidence: 1
+- Keywords: API, product, data
+- Compensation leverage: high
 - Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
 ### Apply Agent Guardrails
