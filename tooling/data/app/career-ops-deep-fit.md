@@ -1,40 +1,10 @@
 # Career Ops Deep Fit Report
 
-Generated: 2026-06-12T00:25:34.971Z
+Generated: 2026-06-13T00:26:59.733Z
 LLM provider: none
 Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 exploratory)
 
 ## Layer A — Full Dossiers (roleFit ≥ 68)
-
-### Micron Workday - AI-Enabled Full Stack Developer - Experienced
-
-- Score: 95
-- Grade: A
-- Confidence: medium
-- Decision: pursue aggressively
-- Thesis: AI-Enabled Full Stack Developer - Experienced at Micron Workday is pursue aggressively because the snapshot score is 95, with 2 profile/role keyword hits and 2 external evidence item(s).
-
-#### Evidence
-- Keyword hits: API, Full Stack Engineer
-- Keyword misses: angular, sql, kubernetes, llm, rag, agents, prompt engineering
-- Research signals: -
-- Compensation leverage: high
-
-#### Concerns
-- Profile keyword coverage is weaker than the target role language.
-
-#### Interview Strategy
-- Ask why the role is open and what success means in the first 90 days.
-- Probe team ownership, roadmap pressure, and cross-functional interfaces.
-- What business unit owns the AI-Enabled Full Stack Developer - Experienced role?
-- What measurable outcomes would this team expect in the first 90 days?
-- What recent company/product signals change the risk or upside?
-
-#### CV Strategy
-- Lead with proof around: API, Full Stack Engineer.
-- Use story story-1: frontend product execution.
-- Use story story-2: data-heavy product decisions.
-- Use story story-3: systems and API collaboration.
 
 ### VANGUARD SOFTWARE PTE. LTD. - Expert Frontend Engineer (React.JS & React Native)
 
@@ -47,7 +17,7 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 #### Evidence
 - Keyword hits: Frontend Engineer, JavaScript, TypeScript, React, Next.js, CSS, Accessibility, API, Design Systems, design system, TypeScript, React, Frontend Engineer
 - Keyword misses: html, growth
-- Research signals: -
+- Research signals: AI / data / platform signal, remote or hybrid signal
 - Compensation leverage: high
 
 #### Concerns
@@ -63,8 +33,8 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 #### CV Strategy
 - Lead with proof around: Frontend Engineer, JavaScript, TypeScript, React, Next.js, CSS.
 - Use story story-1: frontend product execution.
-- Use story story-2: data-heavy product decisions.
-- Use story story-3: systems and API collaboration.
+- Use story story-2: systems and API collaboration.
+- Use story story-3: accessibility and quality.
 
 ### BIFROST PTE. LTD. - Frontend Engineer
 
@@ -93,68 +63,8 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 #### CV Strategy
 - Lead with proof around: Frontend Engineer, JavaScript, React, CSS, API, React.
 - Use story story-1: frontend product execution.
-- Use story story-2: data-heavy product decisions.
-- Use story story-3: systems and API collaboration.
-
-### BIFROST PTE. LTD. - Frontend Engineer
-
-- Score: 95
-- Grade: A
-- Confidence: medium
-- Decision: pursue aggressively
-- Thesis: Frontend Engineer at BIFROST PTE. LTD. is pursue aggressively because the snapshot score is 95, with 7 profile/role keyword hits and 1 external evidence item(s).
-
-#### Evidence
-- Keyword hits: Frontend Engineer, JavaScript, React, CSS, API, React, Frontend Engineer
-- Keyword misses: vue, angular, python, java, go, mysql, aws, gcp, azure, docker, computer vision, growth
-- Research signals: AI / data / platform signal, remote or hybrid signal
-- Compensation leverage: high
-
-#### Concerns
-- Profile keyword coverage is weaker than the target role language.
-
-#### Interview Strategy
-- Ask why the role is open and what success means in the first 90 days.
-- Probe team ownership, roadmap pressure, and cross-functional interfaces.
-- What business unit owns the Frontend Engineer role?
-- What measurable outcomes would this team expect in the first 90 days?
-- What recent company/product signals change the risk or upside?
-
-#### CV Strategy
-- Lead with proof around: Frontend Engineer, JavaScript, React, CSS, API, React.
-- Use story story-1: frontend product execution.
-- Use story story-2: data-heavy product decisions.
-- Use story story-3: systems and API collaboration.
-
-### The Coca-Cola Company - Software Engineer I
-
-- Score: 95
-- Grade: A
-- Confidence: medium
-- Decision: pursue aggressively
-- Thesis: Software Engineer I at The Coca-Cola Company is pursue aggressively because the snapshot score is 95, with 2 profile/role keyword hits and 3 external evidence item(s).
-
-#### Evidence
-- Keyword hits: API, Full Stack Engineer
-- Keyword misses: growth, sales
-- Research signals: AI / data / platform signal, remote or hybrid signal
-- Compensation leverage: high
-
-#### Concerns
-- None flagged
-
-#### Interview Strategy
-- Ask why the role is open and what success means in the first 90 days.
-- Probe team ownership, roadmap pressure, and cross-functional interfaces.
-- What business unit owns the Software Engineer I role?
-- What measurable outcomes would this team expect in the first 90 days?
-- What recent company/product signals change the risk or upside?
-
-#### CV Strategy
-- Lead with proof around: API, Full Stack Engineer.
-- Use story story-1: frontend product execution.
-- Use story story-2: data-heavy product decisions.
-- Use story story-3: systems and API collaboration.
+- Use story story-2: systems and API collaboration.
+- Use story story-3: accessibility and quality.
 
 ### Uber - Sr Software Engineer, Frontend (Web)
 
@@ -183,16 +93,16 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 #### CV Strategy
 - Lead with proof around: Frontend Engineer, JavaScript, TypeScript, React, CSS, API.
 - Use story story-1: frontend product execution.
-- Use story story-2: data-heavy product decisions.
-- Use story story-3: systems and API collaboration.
+- Use story story-2: systems and API collaboration.
+- Use story story-3: accessibility and quality.
 
 ### The Coca-Cola Company - Senior Software Engineer II
 
 - Score: 95
 - Grade: A
-- Confidence: medium
+- Confidence: high
 - Decision: pursue aggressively
-- Thesis: Senior Software Engineer II at The Coca-Cola Company is pursue aggressively because the snapshot score is 95, with 2 profile/role keyword hits and 3 external evidence item(s).
+- Thesis: Senior Software Engineer II at The Coca-Cola Company is pursue aggressively because the snapshot score is 95, with 2 profile/role keyword hits and 5 external evidence item(s).
 
 #### Evidence
 - Keyword hits: API, Full Stack Engineer
@@ -206,28 +116,28 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 #### Interview Strategy
 - Ask why the role is open and what success means in the first 90 days.
 - Probe team ownership, roadmap pressure, and cross-functional interfaces.
-- What business unit owns the Software Engineer I role?
+- What business unit owns the Senior Software Engineer II role?
 - What measurable outcomes would this team expect in the first 90 days?
 - What recent company/product signals change the risk or upside?
 
 #### CV Strategy
 - Lead with proof around: API, Full Stack Engineer.
 - Use story story-1: frontend product execution.
-- Use story story-2: data-heavy product decisions.
-- Use story story-3: systems and API collaboration.
+- Use story story-2: systems and API collaboration.
+- Use story story-3: accessibility and quality.
 
 ### Disney - Lead Software Engineer
 
 - Score: 95
 - Grade: A
-- Confidence: high
+- Confidence: medium
 - Decision: pursue aggressively
-- Thesis: Lead Software Engineer at Disney is pursue aggressively because the snapshot score is 95, with 5 profile/role keyword hits and 5 external evidence item(s).
+- Thesis: Lead Software Engineer at Disney is pursue aggressively because the snapshot score is 95, with 5 profile/role keyword hits and 1 external evidence item(s).
 
 #### Evidence
 - Keyword hits: JavaScript, TypeScript, API, TypeScript, Product Engineer
 - Keyword misses: rust, aws
-- Research signals: -
+- Research signals: AI / data / platform signal
 - Compensation leverage: high
 
 #### Concerns
@@ -243,38 +153,8 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 #### CV Strategy
 - Lead with proof around: JavaScript, TypeScript, API, TypeScript, Product Engineer.
 - Use story story-1: frontend product execution.
-- Use story story-2: data-heavy product decisions.
-- Use story story-3: systems and API collaboration.
-
-### The Coca-Cola Company - Software Engineer I - CRM
-
-- Score: 95
-- Grade: A
-- Confidence: medium
-- Decision: pursue aggressively
-- Thesis: Software Engineer I - CRM at The Coca-Cola Company is pursue aggressively because the snapshot score is 95, with 2 profile/role keyword hits and 3 external evidence item(s).
-
-#### Evidence
-- Keyword hits: API, Full Stack Engineer
-- Keyword misses: crm, growth, sales
-- Research signals: AI / data / platform signal, remote or hybrid signal
-- Compensation leverage: high
-
-#### Concerns
-- Profile keyword coverage is weaker than the target role language.
-
-#### Interview Strategy
-- Ask why the role is open and what success means in the first 90 days.
-- Probe team ownership, roadmap pressure, and cross-functional interfaces.
-- What business unit owns the Software Engineer I role?
-- What measurable outcomes would this team expect in the first 90 days?
-- What recent company/product signals change the risk or upside?
-
-#### CV Strategy
-- Lead with proof around: API, Full Stack Engineer.
-- Use story story-1: frontend product execution.
-- Use story story-2: data-heavy product decisions.
-- Use story story-3: systems and API collaboration.
+- Use story story-2: systems and API collaboration.
+- Use story story-3: accessibility and quality.
 
 ### Bank of America - Principal Engineer - GBS IND
 
@@ -282,35 +162,37 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Grade: A
 - Confidence: medium
 - Decision: pursue aggressively
-- Thesis: Principal Engineer - GBS IND at Bank of America is pursue aggressively because the snapshot score is 95, with 2 profile/role keyword hits and 0 external evidence item(s).
+- Thesis: Principal Engineer - GBS IND at Bank of America is pursue aggressively because the snapshot score is 95, with 2 profile/role keyword hits and 1 external evidence item(s).
 
 #### Evidence
 - Keyword hits: API, Full Stack Engineer
 - Keyword misses: azure, agents, growth, operations
-- Research signals: -
+- Research signals: AI / data / platform signal
 - Compensation leverage: high
 
 #### Concerns
-- External company evidence is thin; run deep research with a search API.
 - Profile keyword coverage is weaker than the target role language.
 
 #### Interview Strategy
 - Ask why the role is open and what success means in the first 90 days.
 - Probe team ownership, roadmap pressure, and cross-functional interfaces.
+- What business unit owns the Principal Engineer - GBS IND role?
+- What measurable outcomes would this team expect in the first 90 days?
+- What recent company/product signals change the risk or upside?
 
 #### CV Strategy
 - Lead with proof around: API, Full Stack Engineer.
 - Use story story-1: frontend product execution.
-- Use story story-2: data-heavy product decisions.
-- Use story story-3: systems and API collaboration.
+- Use story story-2: systems and API collaboration.
+- Use story story-3: accessibility and quality.
 
 ### The Coca-Cola Company - Software Engineer II - CRM
 
 - Score: 95
 - Grade: A
-- Confidence: medium
+- Confidence: high
 - Decision: pursue aggressively
-- Thesis: Software Engineer II - CRM at The Coca-Cola Company is pursue aggressively because the snapshot score is 95, with 2 profile/role keyword hits and 3 external evidence item(s).
+- Thesis: Software Engineer II - CRM at The Coca-Cola Company is pursue aggressively because the snapshot score is 95, with 2 profile/role keyword hits and 5 external evidence item(s).
 
 #### Evidence
 - Keyword hits: API, Full Stack Engineer
@@ -324,23 +206,23 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 #### Interview Strategy
 - Ask why the role is open and what success means in the first 90 days.
 - Probe team ownership, roadmap pressure, and cross-functional interfaces.
-- What business unit owns the Software Engineer I role?
+- What business unit owns the Senior Software Engineer II role?
 - What measurable outcomes would this team expect in the first 90 days?
 - What recent company/product signals change the risk or upside?
 
 #### CV Strategy
 - Lead with proof around: API, Full Stack Engineer.
 - Use story story-1: frontend product execution.
-- Use story story-2: data-heavy product decisions.
-- Use story story-3: systems and API collaboration.
+- Use story story-2: systems and API collaboration.
+- Use story story-3: accessibility and quality.
 
 ### The Coca-Cola Company - Software Engineer I
 
 - Score: 95
 - Grade: A
-- Confidence: medium
+- Confidence: high
 - Decision: pursue aggressively
-- Thesis: Software Engineer I at The Coca-Cola Company is pursue aggressively because the snapshot score is 95, with 2 profile/role keyword hits and 3 external evidence item(s).
+- Thesis: Software Engineer I at The Coca-Cola Company is pursue aggressively because the snapshot score is 95, with 2 profile/role keyword hits and 5 external evidence item(s).
 
 #### Evidence
 - Keyword hits: API, Full Stack Engineer
@@ -354,23 +236,23 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 #### Interview Strategy
 - Ask why the role is open and what success means in the first 90 days.
 - Probe team ownership, roadmap pressure, and cross-functional interfaces.
-- What business unit owns the Software Engineer I role?
+- What business unit owns the Senior Software Engineer II role?
 - What measurable outcomes would this team expect in the first 90 days?
 - What recent company/product signals change the risk or upside?
 
 #### CV Strategy
 - Lead with proof around: API, Full Stack Engineer.
 - Use story story-1: frontend product execution.
-- Use story story-2: data-heavy product decisions.
-- Use story story-3: systems and API collaboration.
+- Use story story-2: systems and API collaboration.
+- Use story story-3: accessibility and quality.
 
 ### The Coca-Cola Company - Senior Software Engineer , Service Provider
 
 - Score: 95
 - Grade: A
-- Confidence: medium
+- Confidence: high
 - Decision: pursue aggressively
-- Thesis: Senior Software Engineer , Service Provider at The Coca-Cola Company is pursue aggressively because the snapshot score is 95, with 2 profile/role keyword hits and 3 external evidence item(s).
+- Thesis: Senior Software Engineer , Service Provider at The Coca-Cola Company is pursue aggressively because the snapshot score is 95, with 2 profile/role keyword hits and 5 external evidence item(s).
 
 #### Evidence
 - Keyword hits: API, Full Stack Engineer
@@ -384,53 +266,23 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 #### Interview Strategy
 - Ask why the role is open and what success means in the first 90 days.
 - Probe team ownership, roadmap pressure, and cross-functional interfaces.
-- What business unit owns the Software Engineer I role?
+- What business unit owns the Senior Software Engineer II role?
 - What measurable outcomes would this team expect in the first 90 days?
 - What recent company/product signals change the risk or upside?
 
 #### CV Strategy
 - Lead with proof around: API, Full Stack Engineer.
 - Use story story-1: frontend product execution.
-- Use story story-2: data-heavy product decisions.
-- Use story story-3: systems and API collaboration.
-
-### The Coca-Cola Company - Software Engineer I - CRM
-
-- Score: 95
-- Grade: A
-- Confidence: medium
-- Decision: pursue aggressively
-- Thesis: Software Engineer I - CRM at The Coca-Cola Company is pursue aggressively because the snapshot score is 95, with 2 profile/role keyword hits and 3 external evidence item(s).
-
-#### Evidence
-- Keyword hits: API, Full Stack Engineer
-- Keyword misses: crm, growth, sales
-- Research signals: AI / data / platform signal, remote or hybrid signal
-- Compensation leverage: high
-
-#### Concerns
-- Profile keyword coverage is weaker than the target role language.
-
-#### Interview Strategy
-- Ask why the role is open and what success means in the first 90 days.
-- Probe team ownership, roadmap pressure, and cross-functional interfaces.
-- What business unit owns the Software Engineer I role?
-- What measurable outcomes would this team expect in the first 90 days?
-- What recent company/product signals change the risk or upside?
-
-#### CV Strategy
-- Lead with proof around: API, Full Stack Engineer.
-- Use story story-1: frontend product execution.
-- Use story story-2: data-heavy product decisions.
-- Use story story-3: systems and API collaboration.
+- Use story story-2: systems and API collaboration.
+- Use story story-3: accessibility and quality.
 
 ### The Coca-Cola Company - Software Engineer II - CRM
 
 - Score: 95
 - Grade: A
-- Confidence: medium
+- Confidence: high
 - Decision: pursue aggressively
-- Thesis: Software Engineer II - CRM at The Coca-Cola Company is pursue aggressively because the snapshot score is 95, with 2 profile/role keyword hits and 3 external evidence item(s).
+- Thesis: Software Engineer II - CRM at The Coca-Cola Company is pursue aggressively because the snapshot score is 95, with 2 profile/role keyword hits and 5 external evidence item(s).
 
 #### Evidence
 - Keyword hits: API, Full Stack Engineer
@@ -444,23 +296,23 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 #### Interview Strategy
 - Ask why the role is open and what success means in the first 90 days.
 - Probe team ownership, roadmap pressure, and cross-functional interfaces.
-- What business unit owns the Software Engineer I role?
+- What business unit owns the Senior Software Engineer II role?
 - What measurable outcomes would this team expect in the first 90 days?
 - What recent company/product signals change the risk or upside?
 
 #### CV Strategy
 - Lead with proof around: API, Full Stack Engineer.
 - Use story story-1: frontend product execution.
-- Use story story-2: data-heavy product decisions.
-- Use story story-3: systems and API collaboration.
+- Use story story-2: systems and API collaboration.
+- Use story story-3: accessibility and quality.
 
 ### The Coca-Cola Company - Senior Software Engineer - CRM
 
 - Score: 95
 - Grade: A
-- Confidence: medium
+- Confidence: high
 - Decision: pursue aggressively
-- Thesis: Senior Software Engineer - CRM at The Coca-Cola Company is pursue aggressively because the snapshot score is 95, with 2 profile/role keyword hits and 3 external evidence item(s).
+- Thesis: Senior Software Engineer - CRM at The Coca-Cola Company is pursue aggressively because the snapshot score is 95, with 2 profile/role keyword hits and 5 external evidence item(s).
 
 #### Evidence
 - Keyword hits: API, Full Stack Engineer
@@ -474,23 +326,23 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 #### Interview Strategy
 - Ask why the role is open and what success means in the first 90 days.
 - Probe team ownership, roadmap pressure, and cross-functional interfaces.
-- What business unit owns the Software Engineer I role?
+- What business unit owns the Senior Software Engineer II role?
 - What measurable outcomes would this team expect in the first 90 days?
 - What recent company/product signals change the risk or upside?
 
 #### CV Strategy
 - Lead with proof around: API, Full Stack Engineer.
 - Use story story-1: frontend product execution.
-- Use story story-2: data-heavy product decisions.
-- Use story story-3: systems and API collaboration.
+- Use story story-2: systems and API collaboration.
+- Use story story-3: accessibility and quality.
 
 ### The Coca-Cola Company - Senior Software Engineer
 
 - Score: 95
 - Grade: A
-- Confidence: medium
+- Confidence: high
 - Decision: pursue aggressively
-- Thesis: Senior Software Engineer at The Coca-Cola Company is pursue aggressively because the snapshot score is 95, with 2 profile/role keyword hits and 3 external evidence item(s).
+- Thesis: Senior Software Engineer at The Coca-Cola Company is pursue aggressively because the snapshot score is 95, with 2 profile/role keyword hits and 5 external evidence item(s).
 
 #### Evidence
 - Keyword hits: API, Full Stack Engineer
@@ -504,53 +356,23 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 #### Interview Strategy
 - Ask why the role is open and what success means in the first 90 days.
 - Probe team ownership, roadmap pressure, and cross-functional interfaces.
-- What business unit owns the Software Engineer I role?
+- What business unit owns the Senior Software Engineer II role?
 - What measurable outcomes would this team expect in the first 90 days?
 - What recent company/product signals change the risk or upside?
 
 #### CV Strategy
 - Lead with proof around: API, Full Stack Engineer.
 - Use story story-1: frontend product execution.
-- Use story story-2: data-heavy product decisions.
-- Use story story-3: systems and API collaboration.
-
-### The Coca-Cola Company - Software Engineer II
-
-- Score: 95
-- Grade: A
-- Confidence: medium
-- Decision: pursue aggressively
-- Thesis: Software Engineer II at The Coca-Cola Company is pursue aggressively because the snapshot score is 95, with 2 profile/role keyword hits and 3 external evidence item(s).
-
-#### Evidence
-- Keyword hits: API, Full Stack Engineer
-- Keyword misses: growth, sales
-- Research signals: AI / data / platform signal, remote or hybrid signal
-- Compensation leverage: high
-
-#### Concerns
-- None flagged
-
-#### Interview Strategy
-- Ask why the role is open and what success means in the first 90 days.
-- Probe team ownership, roadmap pressure, and cross-functional interfaces.
-- What business unit owns the Software Engineer I role?
-- What measurable outcomes would this team expect in the first 90 days?
-- What recent company/product signals change the risk or upside?
-
-#### CV Strategy
-- Lead with proof around: API, Full Stack Engineer.
-- Use story story-1: frontend product execution.
-- Use story story-2: data-heavy product decisions.
-- Use story story-3: systems and API collaboration.
+- Use story story-2: systems and API collaboration.
+- Use story story-3: accessibility and quality.
 
 ### The Coca-Cola Company - Software Engineer I
 
 - Score: 95
 - Grade: A
-- Confidence: medium
+- Confidence: high
 - Decision: pursue aggressively
-- Thesis: Software Engineer I at The Coca-Cola Company is pursue aggressively because the snapshot score is 95, with 2 profile/role keyword hits and 3 external evidence item(s).
+- Thesis: Software Engineer I at The Coca-Cola Company is pursue aggressively because the snapshot score is 95, with 2 profile/role keyword hits and 5 external evidence item(s).
 
 #### Evidence
 - Keyword hits: API, Full Stack Engineer
@@ -564,23 +386,83 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 #### Interview Strategy
 - Ask why the role is open and what success means in the first 90 days.
 - Probe team ownership, roadmap pressure, and cross-functional interfaces.
-- What business unit owns the Software Engineer I role?
+- What business unit owns the Senior Software Engineer II role?
 - What measurable outcomes would this team expect in the first 90 days?
 - What recent company/product signals change the risk or upside?
 
 #### CV Strategy
 - Lead with proof around: API, Full Stack Engineer.
 - Use story story-1: frontend product execution.
-- Use story story-2: data-heavy product decisions.
-- Use story story-3: systems and API collaboration.
+- Use story story-2: systems and API collaboration.
+- Use story story-3: accessibility and quality.
+
+### The Coca-Cola Company - Software Engineer II
+
+- Score: 95
+- Grade: A
+- Confidence: high
+- Decision: pursue aggressively
+- Thesis: Software Engineer II at The Coca-Cola Company is pursue aggressively because the snapshot score is 95, with 2 profile/role keyword hits and 5 external evidence item(s).
+
+#### Evidence
+- Keyword hits: API, Full Stack Engineer
+- Keyword misses: growth, sales
+- Research signals: AI / data / platform signal, remote or hybrid signal
+- Compensation leverage: high
+
+#### Concerns
+- None flagged
+
+#### Interview Strategy
+- Ask why the role is open and what success means in the first 90 days.
+- Probe team ownership, roadmap pressure, and cross-functional interfaces.
+- What business unit owns the Senior Software Engineer II role?
+- What measurable outcomes would this team expect in the first 90 days?
+- What recent company/product signals change the risk or upside?
+
+#### CV Strategy
+- Lead with proof around: API, Full Stack Engineer.
+- Use story story-1: frontend product execution.
+- Use story story-2: systems and API collaboration.
+- Use story story-3: accessibility and quality.
+
+### The Coca-Cola Company - Software Engineer I
+
+- Score: 95
+- Grade: A
+- Confidence: high
+- Decision: pursue aggressively
+- Thesis: Software Engineer I at The Coca-Cola Company is pursue aggressively because the snapshot score is 95, with 2 profile/role keyword hits and 5 external evidence item(s).
+
+#### Evidence
+- Keyword hits: API, Full Stack Engineer
+- Keyword misses: growth, sales
+- Research signals: AI / data / platform signal, remote or hybrid signal
+- Compensation leverage: high
+
+#### Concerns
+- None flagged
+
+#### Interview Strategy
+- Ask why the role is open and what success means in the first 90 days.
+- Probe team ownership, roadmap pressure, and cross-functional interfaces.
+- What business unit owns the Senior Software Engineer II role?
+- What measurable outcomes would this team expect in the first 90 days?
+- What recent company/product signals change the risk or upside?
+
+#### CV Strategy
+- Lead with proof around: API, Full Stack Engineer.
+- Use story story-1: frontend product execution.
+- Use story story-2: systems and API collaboration.
+- Use story story-3: accessibility and quality.
 
 ### The Coca-Cola Company - Software Engineer II - CRM
 
 - Score: 95
 - Grade: A
-- Confidence: medium
+- Confidence: high
 - Decision: pursue aggressively
-- Thesis: Software Engineer II - CRM at The Coca-Cola Company is pursue aggressively because the snapshot score is 95, with 2 profile/role keyword hits and 3 external evidence item(s).
+- Thesis: Software Engineer II - CRM at The Coca-Cola Company is pursue aggressively because the snapshot score is 95, with 2 profile/role keyword hits and 5 external evidence item(s).
 
 #### Evidence
 - Keyword hits: API, Full Stack Engineer
@@ -594,23 +476,53 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 #### Interview Strategy
 - Ask why the role is open and what success means in the first 90 days.
 - Probe team ownership, roadmap pressure, and cross-functional interfaces.
-- What business unit owns the Software Engineer I role?
+- What business unit owns the Senior Software Engineer II role?
 - What measurable outcomes would this team expect in the first 90 days?
 - What recent company/product signals change the risk or upside?
 
 #### CV Strategy
 - Lead with proof around: API, Full Stack Engineer.
 - Use story story-1: frontend product execution.
-- Use story story-2: data-heavy product decisions.
-- Use story story-3: systems and API collaboration.
+- Use story story-2: systems and API collaboration.
+- Use story story-3: accessibility and quality.
+
+### The Coca-Cola Company - Software Engineering I
+
+- Score: 95
+- Grade: A
+- Confidence: high
+- Decision: pursue aggressively
+- Thesis: Software Engineering I at The Coca-Cola Company is pursue aggressively because the snapshot score is 95, with 2 profile/role keyword hits and 5 external evidence item(s).
+
+#### Evidence
+- Keyword hits: API, Full Stack Engineer
+- Keyword misses: growth, sales
+- Research signals: AI / data / platform signal, remote or hybrid signal
+- Compensation leverage: high
+
+#### Concerns
+- None flagged
+
+#### Interview Strategy
+- Ask why the role is open and what success means in the first 90 days.
+- Probe team ownership, roadmap pressure, and cross-functional interfaces.
+- What business unit owns the Senior Software Engineer II role?
+- What measurable outcomes would this team expect in the first 90 days?
+- What recent company/product signals change the risk or upside?
+
+#### CV Strategy
+- Lead with proof around: API, Full Stack Engineer.
+- Use story story-1: frontend product execution.
+- Use story story-2: systems and API collaboration.
+- Use story story-3: accessibility and quality.
 
 ### The Coca-Cola Company - Senior Software Engineer II
 
 - Score: 95
 - Grade: A
-- Confidence: medium
+- Confidence: high
 - Decision: pursue aggressively
-- Thesis: Senior Software Engineer II at The Coca-Cola Company is pursue aggressively because the snapshot score is 95, with 2 profile/role keyword hits and 3 external evidence item(s).
+- Thesis: Senior Software Engineer II at The Coca-Cola Company is pursue aggressively because the snapshot score is 95, with 2 profile/role keyword hits and 5 external evidence item(s).
 
 #### Evidence
 - Keyword hits: API, Full Stack Engineer
@@ -624,23 +536,23 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 #### Interview Strategy
 - Ask why the role is open and what success means in the first 90 days.
 - Probe team ownership, roadmap pressure, and cross-functional interfaces.
-- What business unit owns the Software Engineer I role?
+- What business unit owns the Senior Software Engineer II role?
 - What measurable outcomes would this team expect in the first 90 days?
 - What recent company/product signals change the risk or upside?
 
 #### CV Strategy
 - Lead with proof around: API, Full Stack Engineer.
 - Use story story-1: frontend product execution.
-- Use story story-2: data-heavy product decisions.
-- Use story story-3: systems and API collaboration.
+- Use story story-2: systems and API collaboration.
+- Use story story-3: accessibility and quality.
 
 ### The Coca-Cola Company - Software Engineer I
 
 - Score: 95
 - Grade: A
-- Confidence: medium
+- Confidence: high
 - Decision: pursue aggressively
-- Thesis: Software Engineer I at The Coca-Cola Company is pursue aggressively because the snapshot score is 95, with 2 profile/role keyword hits and 3 external evidence item(s).
+- Thesis: Software Engineer I at The Coca-Cola Company is pursue aggressively because the snapshot score is 95, with 2 profile/role keyword hits and 5 external evidence item(s).
 
 #### Evidence
 - Keyword hits: API, Full Stack Engineer
@@ -654,83 +566,23 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 #### Interview Strategy
 - Ask why the role is open and what success means in the first 90 days.
 - Probe team ownership, roadmap pressure, and cross-functional interfaces.
-- What business unit owns the Software Engineer I role?
+- What business unit owns the Senior Software Engineer II role?
 - What measurable outcomes would this team expect in the first 90 days?
 - What recent company/product signals change the risk or upside?
 
 #### CV Strategy
 - Lead with proof around: API, Full Stack Engineer.
 - Use story story-1: frontend product execution.
-- Use story story-2: data-heavy product decisions.
-- Use story story-3: systems and API collaboration.
+- Use story story-2: systems and API collaboration.
+- Use story story-3: accessibility and quality.
 
-### The Coca-Cola Company - Software Engineer I
-
-- Score: 95
-- Grade: A
-- Confidence: medium
-- Decision: pursue aggressively
-- Thesis: Software Engineer I at The Coca-Cola Company is pursue aggressively because the snapshot score is 95, with 2 profile/role keyword hits and 3 external evidence item(s).
-
-#### Evidence
-- Keyword hits: API, Full Stack Engineer
-- Keyword misses: growth, sales
-- Research signals: AI / data / platform signal, remote or hybrid signal
-- Compensation leverage: high
-
-#### Concerns
-- None flagged
-
-#### Interview Strategy
-- Ask why the role is open and what success means in the first 90 days.
-- Probe team ownership, roadmap pressure, and cross-functional interfaces.
-- What business unit owns the Software Engineer I role?
-- What measurable outcomes would this team expect in the first 90 days?
-- What recent company/product signals change the risk or upside?
-
-#### CV Strategy
-- Lead with proof around: API, Full Stack Engineer.
-- Use story story-1: frontend product execution.
-- Use story story-2: data-heavy product decisions.
-- Use story story-3: systems and API collaboration.
-
-### The Coca-Cola Company - Software Engineer II
+### The Coca-Cola Company - Software Engineer I - CRM
 
 - Score: 95
 - Grade: A
-- Confidence: medium
+- Confidence: high
 - Decision: pursue aggressively
-- Thesis: Software Engineer II at The Coca-Cola Company is pursue aggressively because the snapshot score is 95, with 2 profile/role keyword hits and 3 external evidence item(s).
-
-#### Evidence
-- Keyword hits: API, Full Stack Engineer
-- Keyword misses: growth, sales
-- Research signals: AI / data / platform signal, remote or hybrid signal
-- Compensation leverage: high
-
-#### Concerns
-- None flagged
-
-#### Interview Strategy
-- Ask why the role is open and what success means in the first 90 days.
-- Probe team ownership, roadmap pressure, and cross-functional interfaces.
-- What business unit owns the Software Engineer I role?
-- What measurable outcomes would this team expect in the first 90 days?
-- What recent company/product signals change the risk or upside?
-
-#### CV Strategy
-- Lead with proof around: API, Full Stack Engineer.
-- Use story story-1: frontend product execution.
-- Use story story-2: data-heavy product decisions.
-- Use story story-3: systems and API collaboration.
-
-### The Coca-Cola Company - Senior Software Engineer - CRM
-
-- Score: 95
-- Grade: A
-- Confidence: medium
-- Decision: pursue aggressively
-- Thesis: Senior Software Engineer - CRM at The Coca-Cola Company is pursue aggressively because the snapshot score is 95, with 2 profile/role keyword hits and 3 external evidence item(s).
+- Thesis: Software Engineer I - CRM at The Coca-Cola Company is pursue aggressively because the snapshot score is 95, with 2 profile/role keyword hits and 5 external evidence item(s).
 
 #### Evidence
 - Keyword hits: API, Full Stack Engineer
@@ -744,23 +596,167 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 #### Interview Strategy
 - Ask why the role is open and what success means in the first 90 days.
 - Probe team ownership, roadmap pressure, and cross-functional interfaces.
-- What business unit owns the Software Engineer I role?
+- What business unit owns the Senior Software Engineer II role?
 - What measurable outcomes would this team expect in the first 90 days?
 - What recent company/product signals change the risk or upside?
 
 #### CV Strategy
 - Lead with proof around: API, Full Stack Engineer.
 - Use story story-1: frontend product execution.
-- Use story story-2: data-heavy product decisions.
-- Use story story-3: systems and API collaboration.
+- Use story story-2: systems and API collaboration.
+- Use story story-3: accessibility and quality.
+
+### The Coca-Cola Company - Software Engineer II
+
+- Score: 95
+- Grade: A
+- Confidence: high
+- Decision: pursue aggressively
+- Thesis: Software Engineer II at The Coca-Cola Company is pursue aggressively because the snapshot score is 95, with 2 profile/role keyword hits and 5 external evidence item(s).
+
+#### Evidence
+- Keyword hits: API, Full Stack Engineer
+- Keyword misses: growth, sales
+- Research signals: AI / data / platform signal, remote or hybrid signal
+- Compensation leverage: high
+
+#### Concerns
+- None flagged
+
+#### Interview Strategy
+- Ask why the role is open and what success means in the first 90 days.
+- Probe team ownership, roadmap pressure, and cross-functional interfaces.
+- What business unit owns the Senior Software Engineer II role?
+- What measurable outcomes would this team expect in the first 90 days?
+- What recent company/product signals change the risk or upside?
+
+#### CV Strategy
+- Lead with proof around: API, Full Stack Engineer.
+- Use story story-1: frontend product execution.
+- Use story story-2: systems and API collaboration.
+- Use story story-3: accessibility and quality.
+
+### The Coca-Cola Company - Senior Software Engineer - CRM
+
+- Score: 95
+- Grade: A
+- Confidence: high
+- Decision: pursue aggressively
+- Thesis: Senior Software Engineer - CRM at The Coca-Cola Company is pursue aggressively because the snapshot score is 95, with 2 profile/role keyword hits and 5 external evidence item(s).
+
+#### Evidence
+- Keyword hits: API, Full Stack Engineer
+- Keyword misses: crm, growth, sales
+- Research signals: AI / data / platform signal, remote or hybrid signal
+- Compensation leverage: high
+
+#### Concerns
+- Profile keyword coverage is weaker than the target role language.
+
+#### Interview Strategy
+- Ask why the role is open and what success means in the first 90 days.
+- Probe team ownership, roadmap pressure, and cross-functional interfaces.
+- What business unit owns the Senior Software Engineer II role?
+- What measurable outcomes would this team expect in the first 90 days?
+- What recent company/product signals change the risk or upside?
+
+#### CV Strategy
+- Lead with proof around: API, Full Stack Engineer.
+- Use story story-1: frontend product execution.
+- Use story story-2: systems and API collaboration.
+- Use story story-3: accessibility and quality.
+
+### The Coca-Cola Company - Sr. Software Engineer , Service Supply Chain
+
+- Score: 95
+- Grade: A
+- Confidence: high
+- Decision: pursue aggressively
+- Thesis: Sr. Software Engineer , Service Supply Chain at The Coca-Cola Company is pursue aggressively because the snapshot score is 95, with 2 profile/role keyword hits and 5 external evidence item(s).
+
+#### Evidence
+- Keyword hits: API, Full Stack Engineer
+- Keyword misses: growth, sales
+- Research signals: AI / data / platform signal, remote or hybrid signal
+- Compensation leverage: high
+
+#### Concerns
+- None flagged
+
+#### Interview Strategy
+- Ask why the role is open and what success means in the first 90 days.
+- Probe team ownership, roadmap pressure, and cross-functional interfaces.
+- What business unit owns the Senior Software Engineer II role?
+- What measurable outcomes would this team expect in the first 90 days?
+- What recent company/product signals change the risk or upside?
+
+#### CV Strategy
+- Lead with proof around: API, Full Stack Engineer.
+- Use story story-1: frontend product execution.
+- Use story story-2: systems and API collaboration.
+- Use story story-3: accessibility and quality.
+
+### The Coca-Cola Company - Software Engineer I
+
+- Score: 95
+- Grade: A
+- Confidence: high
+- Decision: pursue aggressively
+- Thesis: Software Engineer I at The Coca-Cola Company is pursue aggressively because the snapshot score is 95, with 2 profile/role keyword hits and 5 external evidence item(s).
+
+#### Evidence
+- Keyword hits: API, Full Stack Engineer
+- Keyword misses: growth, sales
+- Research signals: AI / data / platform signal, remote or hybrid signal
+- Compensation leverage: high
+
+#### Concerns
+- None flagged
+
+#### Interview Strategy
+- Ask why the role is open and what success means in the first 90 days.
+- Probe team ownership, roadmap pressure, and cross-functional interfaces.
+- What business unit owns the Senior Software Engineer II role?
+- What measurable outcomes would this team expect in the first 90 days?
+- What recent company/product signals change the risk or upside?
+
+#### CV Strategy
+- Lead with proof around: API, Full Stack Engineer.
+- Use story story-1: frontend product execution.
+- Use story story-2: systems and API collaboration.
+- Use story story-3: accessibility and quality.
+
+### The Coca-Cola Company - Software Engineer I - CRM
+
+- Score: 95
+- Grade: A
+- Confidence: high
+- Decision: pursue aggressively
+- Thesis: Software Engineer I - CRM at The Coca-Cola Company is pursue aggressively because the snapshot score is 95, with 2 profile/role keyword hits and 5 external evidence item(s).
+
+#### Evidence
+- Keyword hits: API, Full Stack Engineer
+- Keyword misses: crm, growth, sales
+- Research signals: AI / data / platform signal, remote or hybrid signal
+- Compensation leverage: high
+
+#### Concerns
+- Profile keyword coverage is weaker than the target role language.
+
+#### Interview Strategy
+- Ask why the role is open and what success means in the first 90 days.
+- Probe team ownership, roadmap pressure, and cross-functional interfaces.
+- What business unit owns the Senior Software Engineer II role?
+- What measurable outcomes would this team expect in the first 90 days?
+- What recent company/product signals change the risk or upside?
+
+#### CV Strategy
+- Lead with proof around: API, Full Stack Engineer.
+- Use story story-1: frontend product execution.
+- Use story story-2: systems and API collaboration.
+- Use story story-3: accessibility and quality.
 
 ## Layer B — Standard Matches (roleFit 40-67)
-
-### NVIDIA Workday - Senior Solution Architect - Telco Network Automation
-- Score: 81 | Grade: B | RoleFit: 45
-- Decision: pursue selectively
-- Keyword hits: Analytics, analytics
-- Gaps: deep learning
 
 ### NVIDIA Workday - Senior Perception Engineer, Obstacle Foundation Models - Autonomous Vehicles
 - Score: 80 | Grade: B | RoleFit: 45
@@ -797,6 +793,12 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Decision: pursue selectively
 - Keyword hits: Analytics, analytics
 - Gaps: spark, excel
+
+### N-iX - Senior Scala Engineer
+- Score: 78 | Grade: B | RoleFit: 45
+- Decision: pursue selectively
+- Keyword hits: Analytics, analytics
+- Gaps: docker, kubernetes
 
 ### NVIDIA Workday - Senior Mixed Signal Circuit Design Engineer
 - Score: 77 | Grade: B | RoleFit: 45
@@ -839,6 +841,12 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Decision: pursue selectively
 - Keyword hits: -
 - Gaps: -
+
+### Anitech Solutions - Business Analyst
+- Score: 76 | Grade: B | RoleFit: 45
+- Decision: pursue selectively
+- Keyword hits: Accessibility, remote
+- Gaps: python
 
 ### Roblox Greenhouse - Senior QA Engineer, Game Engine
 - Score: 75 | Grade: B | RoleFit: 45
@@ -942,6 +950,12 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Keyword hits: remote
 - Gaps: go
 
+### DHL Express - COURIER
+- Score: 70 | Grade: C | RoleFit: 45
+- Decision: pursue selectively
+- Keyword hits: remote
+- Gaps: -
+
 ### Coralisle Group Ltd. - Underwriter Motor
 - Score: 70 | Grade: C | RoleFit: 45
 - Decision: pursue selectively
@@ -960,53 +974,40 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Keyword hits: remote
 - Gaps: -
 
-### 雋思集團_香港商雋思產品發展有限公司(台灣) - Senior Software Engineer
-- Score: 70 | Grade: C | RoleFit: 45
-- Decision: pursue selectively
-- Keyword hits: -
-- Gaps: -
-
 ### NVIDIA Workday - Senior Package Engineer
 - Score: 69 | Grade: C | RoleFit: 45
 - Decision: hold / compare
 - Keyword hits: -
 - Gaps: -
 
-### The Citation Group - Hypercare
-- Score: 68 | Grade: C | RoleFit: 45
-- Decision: hold / compare
-- Keyword hits: remote
-- Gaps: -
-
-### RECRUIT EXPRESS PTE LTD - Regional Total Rewards Specialist (1 Year Contract) #BLM
-- Score: 68 | Grade: C | RoleFit: 45
+### EVERSENDAI ENGINEERING PTE LTD - Accounts cum Admin Executive
+- Score: 69 | Grade: C | RoleFit: 45
 - Decision: hold / compare
 - Keyword hits: -
 - Gaps: excel
 
-### CuraSenseAI - Pharmaceutical & Clinical Research Expert
-- Score: 67 | Grade: C | RoleFit: 45
+### Humanit - Product Implementation Specialist
+- Score: 69 | Grade: C | RoleFit: 45
 - Decision: hold / compare
-- Keyword hits: remote
+- Keyword hits: -
 - Gaps: -
 
-### Arte-Miss - Comercial Y Formadora
+### Learnlight - Learning Project Manager
 - Score: 67 | Grade: C | RoleFit: 45
 - Decision: hold / compare
 - Keyword hits: remote
-- Gaps: -
+- Gaps: excel
 
 ## Layer C — Exploratory Signals (roleFit < 40)
 
-- **The Coca-Cola Company — Sr. Software Engineer , Service Supply Chain** (score: 95) | Top gap: growth
-- **The Coca-Cola Company — Software Engineering I** (score: 95) | Top gap: growth
 - **GN AUDIO SINGAPORE PTE. LTD. — Software Engineer II (SteelSeries)** (score: 94) | Top gap: go
 - **GlossGenius — Staff Software Engineer, Frontend** (score: 94) | Top gap: go
 - **GlossGenius — Staff Software Engineer, Frontend** (score: 94) | Top gap: go
 - **GlossGenius — Staff Software Engineer, Frontend** (score: 94) | Top gap: go
-- **Databricks Greenhouse — Resident Solutions Architect (Full Stack Engineer)** (score: 94) | Top gap: python
 - **Databricks Greenhouse — Director,Technical Solutions (Big Data/ AI)** (score: 94) | Top gap: spark
+- **SHEIN STAR PTE. LTD. — Product Manager – Apparel & Accessories** (score: 93) | Top gap: growth
 - **Uber — Director, Marketplace Central Operations Mobility EMEA** (score: 93) | Top gap: growth
+- **CrowdStrike — Sr. Full Stack Engineer (Remote)** (score: 93) | Top gap: python
 - **Pilotly — Product Engineer II** (score: 93) | Top gap: aws
 - **Capital One — Distinguished Engineer (Remote - Eligible)** (score: 93) | Top gap: python
 - **Stripe Greenhouse — Android Engineer, Terminal Developer Productivity** (score: 93) | Top gap: java
@@ -1014,6 +1015,7 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - **Airbnb Greenhouse — Senior Software Engineer, Quality Platform** (score: 93) | Top gap: python
 - **Airbnb Greenhouse — Senior Web Automation Engineer, Quality Platform** (score: 93) | Top gap: agents
 - **MongoDB Greenhouse — Senior Software Engineer, Observability** (score: 93) | Top gap: java
+- **GOVERNMENT TECHNOLOGY AGENCY — Staff Software Engineer - Digital Economy Products** (score: 92) | Top gap: vue
 - **Capgemini Singapore  PTE. LTD. — Senior Frontend Engineer** (score: 92) | Top gap: operations
 - **AIM GLOBAL TALENT PTE. LTD. — Senior Frontend Engineer** (score: 92) | Top gap: aws
 - **LawnStarter — Staff Software Engineer, Product (Belo Horizonte)** (score: 92) | Top gap: aws
@@ -1021,11 +1023,11 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - **LawnStarter — Staff Software Engineer, Product (Porto Alegre)** (score: 92) | Top gap: aws
 - **LawnStarter — Staff Software Engineer, Product (São Paulo)** (score: 92) | Top gap: aws
 - **LawnStarter — Staff Software Engineer, Product (Campinas)** (score: 92) | Top gap: aws
-- **Uber — Sr Staff Engineer - Web Platform** (score: 92) | Top gap: growth
 - **Uber — Engineering Manager II** (score: 92) | Top gap: growth
 - **Rent the Runway — Software Engineer III - Full Stack** (score: 92) | Top gap: java
 - **Bank of America — Software Engineer III - GBS IND** (score: 92) | Top gap: python
-- **Apple — Sr. Machine Learning Engineer, Siri Global** (score: 92) | Top gap: python
 - **Allstate — Lead AI Cloud Platform Engineer** (score: 92) | Top gap: python
 - **Atlassian — Senior Data Engineer** (score: 92) | Top gap: python
+- **Kyndryl — Mod Engineer (FDE)** (score: 92) | Top gap: python
+- **Esri — Sr. Product Engineer - Web Services** (score: 92) | Top gap: python
 

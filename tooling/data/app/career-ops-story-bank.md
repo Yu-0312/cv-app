@@ -1,27 +1,27 @@
 # Career Ops Story Bank
 
-Generated: 2026-06-12T00:25:27.876Z
+Generated: 2026-06-13T00:26:52.805Z
 Stories: 8
 
 ## Market Themes
 - frontend product execution
-- data-heavy product decisions
 - systems and API collaboration
-- performance and scale
-- AI/data product adoption
 - accessibility and quality
+- performance and scale
 - cross-functional influence
+- AI/data product adoption
+- data-heavy product decisions
 
 ## Learning Plan (Missing High-Demand Skills)
 - [P0] growth (市場出現 57 次) — 高優先：在簡歷或 profile 中加入 growth 的實際使用案例，並在 projects 欄位補充相關實作。
-- [P0] sales (市場出現 34 次) — 高優先：在簡歷或 profile 中加入 sales 的實際使用案例，並在 projects 欄位補充相關實作。
-- [P0] agents (市場出現 26 次) — 高優先：在簡歷或 profile 中加入 agents 的實際使用案例，並在 projects 欄位補充相關實作。
-- [P0] aws (市場出現 26 次) — 高優先：在簡歷或 profile 中加入 aws 的實際使用案例，並在 projects 欄位補充相關實作。
-- [P0] python (市場出現 25 次) — 高優先：在簡歷或 profile 中加入 python 的實際使用案例，並在 projects 欄位補充相關實作。
+- [P0] sales (市場出現 37 次) — 高優先：在簡歷或 profile 中加入 sales 的實際使用案例，並在 projects 欄位補充相關實作。
+- [P0] aws (市場出現 27 次) — 高優先：在簡歷或 profile 中加入 aws 的實際使用案例，並在 projects 欄位補充相關實作。
+- [P0] agents (市場出現 25 次) — 高優先：在簡歷或 profile 中加入 agents 的實際使用案例，並在 projects 欄位補充相關實作。
+- [P0] python (市場出現 23 次) — 高優先：在簡歷或 profile 中加入 python 的實際使用案例，並在 projects 欄位補充相關實作。
 - [P0] go (市場出現 23 次) — 高優先：在簡歷或 profile 中加入 go 的實際使用案例，並在 projects 欄位補充相關實作。
-- [P0] operations (市場出現 15 次) — 高優先：在簡歷或 profile 中加入 operations 的實際使用案例，並在 projects 欄位補充相關實作。
-- [P0] java (市場出現 14 次) — 高優先：在簡歷或 profile 中加入 java 的實際使用案例，並在 projects 欄位補充相關實作。
+- [P0] operations (市場出現 17 次) — 高優先：在簡歷或 profile 中加入 operations 的實際使用案例，並在 projects 欄位補充相關實作。
 - [P0] rest (市場出現 13 次) — 高優先：在簡歷或 profile 中加入 rest 的實際使用案例，並在 projects 欄位補充相關實作。
+- [P0] java (市場出現 12 次) — 高優先：在簡歷或 profile 中加入 java 的實際使用案例，並在 projects 欄位補充相關實作。
 - [P0] azure (市場出現 10 次) — 高優先：在簡歷或 profile 中加入 azure 的實際使用案例，並在 projects 欄位補充相關實作。
 
 ## Story Gaps
@@ -48,27 +48,9 @@ Source proof: Led frontend development of a multi-tenant analytics dashboard ser
 
 Keywords: frontend product execution, JavaScript, TypeScript, React, Next.js, CSS, Tailwind, Accessibility
 
-## story-2: data-heavy product decisions
+## story-2: systems and API collaboration
 
 Source proof: Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.
-
-### Questions
-- Tell me about a project you are proud of.
-- Tell me about a time you handled ambiguity.
-- How have you applied data-heavy product decisions?
-
-### STAR+Reflection
-- S: You were working with a data-intensive product. Proof point: "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%." — describe the data volume, the user workflow, and what was difficult to render or interpret.
-- T: What decision did you own? (chart type, data model, aggregation strategy, caching layer, etc.)
-- A: Explain how you chose between options, what you built or prototyped, and how you validated your approach with data or users.
-- R: State the outcome: query latency, dashboard load time, user comprehension improvement, or reduction in support requests.
-- Reflection: Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges.
-
-Keywords: data-heavy product decisions, JavaScript, TypeScript, React, Next.js, CSS, Tailwind, Accessibility
-
-## story-3: systems and API collaboration
-
-Source proof: Collaborated with backend and data teams to design RESTful and GraphQL API contracts.
 
 ### Questions
 - Tell me about a project you are proud of.
@@ -76,13 +58,31 @@ Source proof: Collaborated with backend and data teams to design RESTful and Gra
 - How have you applied systems and API collaboration?
 
 ### STAR+Reflection
-- S: You collaborated across system boundaries. Proof point: "Collaborated with backend and data teams to design RESTful and GraphQL API contracts." — name the systems, teams, and integration surface area.
+- S: You collaborated across system boundaries. Proof point: "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%." — name the systems, teams, and integration surface area.
 - T: What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?
 - A: Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.
 - R: State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.
 - Reflection: Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges.
 
 Keywords: systems and API collaboration, JavaScript, TypeScript, React, Next.js, CSS, Tailwind, Accessibility
+
+## story-3: accessibility and quality
+
+Source proof: Collaborated with backend and data teams to design RESTful and GraphQL API contracts.
+
+### Questions
+- Tell me about a project you are proud of.
+- Tell me about a time you handled ambiguity.
+- How have you applied accessibility and quality?
+
+### STAR+Reflection
+- S: You led or contributed to an accessibility or quality initiative. Proof point: "Collaborated with backend and data teams to design RESTful and GraphQL API contracts." — what was the starting state and who was affected?
+- T: What standard or target were you working toward (WCAG level, test coverage %, zero-defect milestone)?
+- A: Describe the audit process, tooling (axe, Lighthouse, screen reader testing), and how you prioritized fixes across components.
+- R: State the outcome: WCAG compliance level achieved, user complaints reduced, or CI gate added to prevent regressions.
+- Reflection: Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges.
+
+Keywords: accessibility and quality, JavaScript, TypeScript, React, Next.js, CSS, Tailwind, Accessibility
 
 ## story-4: performance and scale
 
@@ -102,45 +102,9 @@ Source proof: Championed accessibility audit (WCAG 2.1 AA) across three product 
 
 Keywords: performance and scale, JavaScript, TypeScript, React, Next.js, CSS, Tailwind, Accessibility
 
-## story-5: AI/data product adoption
+## story-5: cross-functional influence
 
 Source proof: Improved Lighthouse performance score from 54 to 91 through code splitting, lazy loading, and asset optimization.
-
-### Questions
-- Tell me about a project you are proud of.
-- Tell me about a time you handled ambiguity.
-- How have you applied AI/data product adoption?
-
-### STAR+Reflection
-- S: You worked on an AI or data-driven product feature. Proof point: "Improved Lighthouse performance score from 54 to 91 through code splitting, lazy loading, and asset optimization." — describe the model/pipeline involved and the user-facing surface.
-- T: What was your role: prompt design, evaluation framework, UI for model outputs, or feedback loop instrumentation?
-- A: Explain what you built, how you evaluated quality (accuracy, latency, hallucination rate), and what tradeoffs you made.
-- R: Describe adoption (% of users using the feature), quality improvement, or how you reduced user confusion around AI outputs.
-- Reflection: Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges.
-
-Keywords: AI/data product adoption, JavaScript, TypeScript, React, Next.js, CSS, Tailwind, Accessibility
-
-## story-6: accessibility and quality
-
-Source proof: CV Studio — full-stack PWA for CV generation and career intelligence, built with Node.js, Supabase, and vanilla JS; powers automated job scoring and application tracking.
-
-### Questions
-- Tell me about a project you are proud of.
-- Tell me about a time you handled ambiguity.
-- How have you applied accessibility and quality?
-
-### STAR+Reflection
-- S: You led or contributed to an accessibility or quality initiative. Proof point: "CV Studio — full-stack PWA for CV generation and career intelligence, built with Node.js, Supabase, and vanilla JS; powers automated job scoring and application tracking." — what was the starting state and who was affected?
-- T: What standard or target were you working toward (WCAG level, test coverage %, zero-defect milestone)?
-- A: Describe the audit process, tooling (axe, Lighthouse, screen reader testing), and how you prioritized fixes across components.
-- R: State the outcome: WCAG compliance level achieved, user complaints reduced, or CI gate added to prevent regressions.
-- Reflection: Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges.
-
-Keywords: accessibility and quality, JavaScript, TypeScript, React, Next.js, CSS, Tailwind, Accessibility
-
-## story-7: cross-functional influence
-
-Source proof: Portfolio site — custom static site generator with markdown-first CMS and zero-JS fallback.
 
 ### Questions
 - Tell me about a project you are proud of.
@@ -148,13 +112,49 @@ Source proof: Portfolio site — custom static site generator with markdown-firs
 - How have you applied cross-functional influence?
 
 ### STAR+Reflection
-- S: You influenced a decision across teams or functions. Proof point: "Portfolio site — custom static site generator with markdown-first CMS and zero-JS fallback." — who were the stakeholders and what was the disagreement or ambiguity?
+- S: You influenced a decision across teams or functions. Proof point: "Improved Lighthouse performance score from 54 to 91 through code splitting, lazy loading, and asset optimization." — who were the stakeholders and what was the disagreement or ambiguity?
 - T: What outcome were you trying to drive, and why did it require cross-functional alignment rather than a unilateral call?
 - A: Describe how you built your case: data, prototypes, async docs, 1:1s, or demos. What resistance did you encounter?
 - R: State the decision that was made, who it impacted, and whether the outcome matched your recommendation.
 - Reflection: Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges.
 
 Keywords: cross-functional influence, JavaScript, TypeScript, React, Next.js, CSS, Tailwind, Accessibility
+
+## story-6: AI/data product adoption
+
+Source proof: CV Studio — full-stack PWA for CV generation and career intelligence, built with Node.js, Supabase, and vanilla JS; powers automated job scoring and application tracking.
+
+### Questions
+- Tell me about a project you are proud of.
+- Tell me about a time you handled ambiguity.
+- How have you applied AI/data product adoption?
+
+### STAR+Reflection
+- S: You worked on an AI or data-driven product feature. Proof point: "CV Studio — full-stack PWA for CV generation and career intelligence, built with Node.js, Supabase, and vanilla JS; powers automated job scoring and application tracking." — describe the model/pipeline involved and the user-facing surface.
+- T: What was your role: prompt design, evaluation framework, UI for model outputs, or feedback loop instrumentation?
+- A: Explain what you built, how you evaluated quality (accuracy, latency, hallucination rate), and what tradeoffs you made.
+- R: Describe adoption (% of users using the feature), quality improvement, or how you reduced user confusion around AI outputs.
+- Reflection: Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges.
+
+Keywords: AI/data product adoption, JavaScript, TypeScript, React, Next.js, CSS, Tailwind, Accessibility
+
+## story-7: data-heavy product decisions
+
+Source proof: Portfolio site — custom static site generator with markdown-first CMS and zero-JS fallback.
+
+### Questions
+- Tell me about a project you are proud of.
+- Tell me about a time you handled ambiguity.
+- How have you applied data-heavy product decisions?
+
+### STAR+Reflection
+- S: You were working with a data-intensive product. Proof point: "Portfolio site — custom static site generator with markdown-first CMS and zero-JS fallback." — describe the data volume, the user workflow, and what was difficult to render or interpret.
+- T: What decision did you own? (chart type, data model, aggregation strategy, caching layer, etc.)
+- A: Explain how you chose between options, what you built or prototyped, and how you validated your approach with data or users.
+- R: State the outcome: query latency, dashboard load time, user comprehension improvement, or reduction in support requests.
+- Reflection: Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges.
+
+Keywords: data-heavy product decisions, JavaScript, TypeScript, React, Next.js, CSS, Tailwind, Accessibility
 
 ## story-8: frontend product execution
 

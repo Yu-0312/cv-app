@@ -1,16 +1,16 @@
 window.CV_CAREER_OPS_STORY_BANK = {
   "source": "career-ops-story-bank",
-  "generatedAt": "2026-06-12T00:25:27.876Z",
+  "generatedAt": "2026-06-13T00:26:52.805Z",
   "llmProvider": "none",
   "storyBank": {
     "themes": [
       "frontend product execution",
-      "data-heavy product decisions",
       "systems and API collaboration",
-      "performance and scale",
-      "AI/data product adoption",
       "accessibility and quality",
-      "cross-functional influence"
+      "performance and scale",
+      "cross-functional influence",
+      "AI/data product adoption",
+      "data-heavy product decisions"
     ],
     "stories": [
       {
@@ -42,22 +42,22 @@ window.CV_CAREER_OPS_STORY_BANK = {
       },
       {
         "id": "story-2",
-        "theme": "data-heavy product decisions",
+        "theme": "systems and API collaboration",
         "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
         "applicableQuestions": [
           "Tell me about a project you are proud of.",
           "Tell me about a time you handled ambiguity.",
-          "How have you applied data-heavy product decisions?"
+          "How have you applied systems and API collaboration?"
         ],
         "star": {
-          "situation": "You were working with a data-intensive product. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — describe the data volume, the user workflow, and what was difficult to render or interpret.",
-          "task": "What decision did you own? (chart type, data model, aggregation strategy, caching layer, etc.)",
-          "action": "Explain how you chose between options, what you built or prototyped, and how you validated your approach with data or users.",
-          "result": "State the outcome: query latency, dashboard load time, user comprehension improvement, or reduction in support requests.",
+          "situation": "You collaborated across system boundaries. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — name the systems, teams, and integration surface area.",
+          "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
+          "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
+          "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
           "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
         },
         "keywords": [
-          "data-heavy product decisions",
+          "systems and API collaboration",
           "JavaScript",
           "TypeScript",
           "React",
@@ -69,22 +69,22 @@ window.CV_CAREER_OPS_STORY_BANK = {
       },
       {
         "id": "story-3",
-        "theme": "systems and API collaboration",
+        "theme": "accessibility and quality",
         "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
         "applicableQuestions": [
           "Tell me about a project you are proud of.",
           "Tell me about a time you handled ambiguity.",
-          "How have you applied systems and API collaboration?"
+          "How have you applied accessibility and quality?"
         ],
         "star": {
-          "situation": "You collaborated across system boundaries. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — name the systems, teams, and integration surface area.",
-          "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
-          "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
-          "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
+          "situation": "You led or contributed to an accessibility or quality initiative. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — what was the starting state and who was affected?",
+          "task": "What standard or target were you working toward (WCAG level, test coverage %, zero-defect milestone)?",
+          "action": "Describe the audit process, tooling (axe, Lighthouse, screen reader testing), and how you prioritized fixes across components.",
+          "result": "State the outcome: WCAG compliance level achieved, user complaints reduced, or CI gate added to prevent regressions.",
           "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
         },
         "keywords": [
-          "systems and API collaboration",
+          "accessibility and quality",
           "JavaScript",
           "TypeScript",
           "React",
@@ -123,15 +123,42 @@ window.CV_CAREER_OPS_STORY_BANK = {
       },
       {
         "id": "story-5",
-        "theme": "AI/data product adoption",
+        "theme": "cross-functional influence",
         "sourceProof": "Improved Lighthouse performance score from 54 to 91 through code splitting, lazy loading, and asset optimization.",
+        "applicableQuestions": [
+          "Tell me about a project you are proud of.",
+          "Tell me about a time you handled ambiguity.",
+          "How have you applied cross-functional influence?"
+        ],
+        "star": {
+          "situation": "You influenced a decision across teams or functions. Proof point: \"Improved Lighthouse performance score from 54 to 91 through code splitting, lazy loading, and asset optimization.\" — who were the stakeholders and what was the disagreement or ambiguity?",
+          "task": "What outcome were you trying to drive, and why did it require cross-functional alignment rather than a unilateral call?",
+          "action": "Describe how you built your case: data, prototypes, async docs, 1:1s, or demos. What resistance did you encounter?",
+          "result": "State the decision that was made, who it impacted, and whether the outcome matched your recommendation.",
+          "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
+        },
+        "keywords": [
+          "cross-functional influence",
+          "JavaScript",
+          "TypeScript",
+          "React",
+          "Next.js",
+          "CSS",
+          "Tailwind",
+          "Accessibility"
+        ]
+      },
+      {
+        "id": "story-6",
+        "theme": "AI/data product adoption",
+        "sourceProof": "CV Studio — full-stack PWA for CV generation and career intelligence, built with Node.js, Supabase, and vanilla JS; powers automated job scoring and application tracking.",
         "applicableQuestions": [
           "Tell me about a project you are proud of.",
           "Tell me about a time you handled ambiguity.",
           "How have you applied AI/data product adoption?"
         ],
         "star": {
-          "situation": "You worked on an AI or data-driven product feature. Proof point: \"Improved Lighthouse performance score from 54 to 91 through code splitting, lazy loading, and asset optimization.\" — describe the model/pipeline involved and the user-facing surface.",
+          "situation": "You worked on an AI or data-driven product feature. Proof point: \"CV Studio — full-stack PWA for CV generation and career intelligence, built with Node.js, Supabase, and vanilla JS; powers automated job scoring and application tracking.\" — describe the model/pipeline involved and the user-facing surface.",
           "task": "What was your role: prompt design, evaluation framework, UI for model outputs, or feedback loop instrumentation?",
           "action": "Explain what you built, how you evaluated quality (accuracy, latency, hallucination rate), and what tradeoffs you made.",
           "result": "Describe adoption (% of users using the feature), quality improvement, or how you reduced user confusion around AI outputs.",
@@ -149,50 +176,23 @@ window.CV_CAREER_OPS_STORY_BANK = {
         ]
       },
       {
-        "id": "story-6",
-        "theme": "accessibility and quality",
-        "sourceProof": "CV Studio — full-stack PWA for CV generation and career intelligence, built with Node.js, Supabase, and vanilla JS; powers automated job scoring and application tracking.",
-        "applicableQuestions": [
-          "Tell me about a project you are proud of.",
-          "Tell me about a time you handled ambiguity.",
-          "How have you applied accessibility and quality?"
-        ],
-        "star": {
-          "situation": "You led or contributed to an accessibility or quality initiative. Proof point: \"CV Studio — full-stack PWA for CV generation and career intelligence, built with Node.js, Supabase, and vanilla JS; powers automated job scoring and application tracking.\" — what was the starting state and who was affected?",
-          "task": "What standard or target were you working toward (WCAG level, test coverage %, zero-defect milestone)?",
-          "action": "Describe the audit process, tooling (axe, Lighthouse, screen reader testing), and how you prioritized fixes across components.",
-          "result": "State the outcome: WCAG compliance level achieved, user complaints reduced, or CI gate added to prevent regressions.",
-          "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
-        },
-        "keywords": [
-          "accessibility and quality",
-          "JavaScript",
-          "TypeScript",
-          "React",
-          "Next.js",
-          "CSS",
-          "Tailwind",
-          "Accessibility"
-        ]
-      },
-      {
         "id": "story-7",
-        "theme": "cross-functional influence",
+        "theme": "data-heavy product decisions",
         "sourceProof": "Portfolio site — custom static site generator with markdown-first CMS and zero-JS fallback.",
         "applicableQuestions": [
           "Tell me about a project you are proud of.",
           "Tell me about a time you handled ambiguity.",
-          "How have you applied cross-functional influence?"
+          "How have you applied data-heavy product decisions?"
         ],
         "star": {
-          "situation": "You influenced a decision across teams or functions. Proof point: \"Portfolio site — custom static site generator with markdown-first CMS and zero-JS fallback.\" — who were the stakeholders and what was the disagreement or ambiguity?",
-          "task": "What outcome were you trying to drive, and why did it require cross-functional alignment rather than a unilateral call?",
-          "action": "Describe how you built your case: data, prototypes, async docs, 1:1s, or demos. What resistance did you encounter?",
-          "result": "State the decision that was made, who it impacted, and whether the outcome matched your recommendation.",
+          "situation": "You were working with a data-intensive product. Proof point: \"Portfolio site — custom static site generator with markdown-first CMS and zero-JS fallback.\" — describe the data volume, the user workflow, and what was difficult to render or interpret.",
+          "task": "What decision did you own? (chart type, data model, aggregation strategy, caching layer, etc.)",
+          "action": "Explain how you chose between options, what you built or prototyped, and how you validated your approach with data or users.",
+          "result": "State the outcome: query latency, dashboard load time, user comprehension improvement, or reduction in support requests.",
           "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
         },
         "keywords": [
-          "cross-functional influence",
+          "data-heavy product decisions",
           "JavaScript",
           "TypeScript",
           "React",
@@ -241,31 +241,31 @@ window.CV_CAREER_OPS_STORY_BANK = {
       },
       {
         "skill": "sales",
-        "marketCount": 34,
+        "marketCount": 37,
         "priority": "P0",
         "priorityLabel": "高優先",
         "reason": "市場需求極高，補充後可顯著提升評分",
         "suggestion": "在簡歷或 profile 中加入 sales 的實際使用案例，並在 projects 欄位補充相關實作。"
       },
       {
-        "skill": "agents",
-        "marketCount": 26,
-        "priority": "P0",
-        "priorityLabel": "高優先",
-        "reason": "市場需求極高，補充後可顯著提升評分",
-        "suggestion": "在簡歷或 profile 中加入 agents 的實際使用案例，並在 projects 欄位補充相關實作。"
-      },
-      {
         "skill": "aws",
-        "marketCount": 26,
+        "marketCount": 27,
         "priority": "P0",
         "priorityLabel": "高優先",
         "reason": "市場需求極高，補充後可顯著提升評分",
         "suggestion": "在簡歷或 profile 中加入 aws 的實際使用案例，並在 projects 欄位補充相關實作。"
       },
       {
-        "skill": "python",
+        "skill": "agents",
         "marketCount": 25,
+        "priority": "P0",
+        "priorityLabel": "高優先",
+        "reason": "市場需求極高，補充後可顯著提升評分",
+        "suggestion": "在簡歷或 profile 中加入 agents 的實際使用案例，並在 projects 欄位補充相關實作。"
+      },
+      {
+        "skill": "python",
+        "marketCount": 23,
         "priority": "P0",
         "priorityLabel": "高優先",
         "reason": "市場需求極高，補充後可顯著提升評分",
@@ -281,19 +281,11 @@ window.CV_CAREER_OPS_STORY_BANK = {
       },
       {
         "skill": "operations",
-        "marketCount": 15,
+        "marketCount": 17,
         "priority": "P0",
         "priorityLabel": "高優先",
         "reason": "市場需求極高，補充後可顯著提升評分",
         "suggestion": "在簡歷或 profile 中加入 operations 的實際使用案例，並在 projects 欄位補充相關實作。"
-      },
-      {
-        "skill": "java",
-        "marketCount": 14,
-        "priority": "P0",
-        "priorityLabel": "高優先",
-        "reason": "市場需求極高，補充後可顯著提升評分",
-        "suggestion": "在簡歷或 profile 中加入 java 的實際使用案例，並在 projects 欄位補充相關實作。"
       },
       {
         "skill": "rest",
@@ -302,6 +294,14 @@ window.CV_CAREER_OPS_STORY_BANK = {
         "priorityLabel": "高優先",
         "reason": "市場需求極高，補充後可顯著提升評分",
         "suggestion": "在簡歷或 profile 中加入 rest 的實際使用案例，並在 projects 欄位補充相關實作。"
+      },
+      {
+        "skill": "java",
+        "marketCount": 12,
+        "priority": "P0",
+        "priorityLabel": "高優先",
+        "reason": "市場需求極高，補充後可顯著提升評分",
+        "suggestion": "在簡歷或 profile 中加入 java 的實際使用案例，並在 projects 欄位補充相關實作。"
       },
       {
         "skill": "azure",
@@ -320,22 +320,6 @@ window.CV_CAREER_OPS_STORY_BANK = {
         "suggestion": "在簡歷或 profile 中加入 machine learning 的實際使用案例，並在 projects 欄位補充相關實作。"
       },
       {
-        "skill": "sql",
-        "marketCount": 8,
-        "priority": "P1",
-        "priorityLabel": "中優先",
-        "reason": "市場常見，補充後能擴大適配職缺範圍",
-        "suggestion": "在簡歷或 profile 中加入 sql 的實際使用案例，並在 projects 欄位補充相關實作。"
-      },
-      {
-        "skill": "llm",
-        "marketCount": 8,
-        "priority": "P1",
-        "priorityLabel": "中優先",
-        "reason": "市場常見，補充後能擴大適配職缺範圍",
-        "suggestion": "在簡歷或 profile 中加入 llm 的實際使用案例，並在 projects 欄位補充相關實作。"
-      },
-      {
         "skill": "gcp",
         "marketCount": 8,
         "priority": "P1",
@@ -350,6 +334,22 @@ window.CV_CAREER_OPS_STORY_BANK = {
         "priorityLabel": "中優先",
         "reason": "市場常見，補充後能擴大適配職缺範圍",
         "suggestion": "在簡歷或 profile 中加入 crm 的實際使用案例，並在 projects 欄位補充相關實作。"
+      },
+      {
+        "skill": "llm",
+        "marketCount": 7,
+        "priority": "P1",
+        "priorityLabel": "中優先",
+        "reason": "市場常見，補充後能擴大適配職缺範圍",
+        "suggestion": "在簡歷或 profile 中加入 llm 的實際使用案例，並在 projects 欄位補充相關實作。"
+      },
+      {
+        "skill": "sql",
+        "marketCount": 7,
+        "priority": "P1",
+        "priorityLabel": "中優先",
+        "reason": "市場常見，補充後能擴大適配職缺範圍",
+        "suggestion": "在簡歷或 profile 中加入 sql 的實際使用案例，並在 projects 欄位補充相關實作。"
       }
     ],
     "gaps": [

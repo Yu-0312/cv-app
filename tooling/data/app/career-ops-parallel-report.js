@@ -1,224 +1,9 @@
 window.CV_CAREER_OPS_PARALLEL = {
   "source": "career-ops-parallel",
-  "generatedAt": "2026-06-12T00:25:31.485Z",
+  "generatedAt": "2026-06-13T00:26:56.297Z",
   "concurrency": 4,
   "jobCount": 50,
   "results": [
-    {
-      "jobKey": "url:https://micron.wd1.myworkdayjobs.com/external/job/taichung---aatt-taiwan/ai-enabled-full-stack-developer---experienced_jr103711",
-      "company": "Micron Workday",
-      "title": "AI-Enabled Full Stack Developer - Experienced",
-      "score": 95,
-      "grade": "A",
-      "priority": "P0",
-      "startedAt": "2026-06-12T00:25:31.429Z",
-      "completedAt": "2026-06-12T00:25:31.432Z",
-      "workers": {
-        "evaluation": {
-          "recommendation": "值得投遞",
-          "keywords": [
-            "API",
-            "engineer",
-            "data",
-            "restful"
-          ],
-          "nextActions": [
-            "開啟職缺確認仍可投遞",
-            "產生客製 ATS PDF",
-            "用同職類高分職缺校準履歷關鍵字"
-          ]
-        },
-        "research": {
-          "signals": [],
-          "evidenceCount": 2,
-          "questions": [
-            "What business unit owns the AI-Enabled Full Stack Developer - Experienced role?",
-            "What measurable outcomes would this team expect in the first 90 days?",
-            "What recent company/product signals change the risk or upside?",
-            "Which CV proof points should be highlighted for this company?"
-          ]
-        },
-        "application": {
-          "checklist": [
-            "Confirm posting is active.",
-            "Generate tailored ATS PDF.",
-            "Prepare outreach and follow-up.",
-            "Log status and next follow-up."
-          ]
-        },
-        "compensation": {
-          "jobKey": "url:https://micron.wd1.myworkdayjobs.com/external/job/taichung---aatt-taiwan/ai-enabled-full-stack-developer---experienced_jr103711",
-          "company": "Micron Workday",
-          "title": "AI-Enabled Full Stack Developer - Experienced",
-          "market": "tw",
-          "inferredLevel": "mid",
-          "candidateLevel": "mid",
-          "leverage": "high",
-          "evidence": {
-            "salaryMentions": [],
-            "benefitSignals": [
-              "equity",
-              "signing / relocation"
-            ]
-          },
-          "marketBenchmark": {
-            "currency": "NTD",
-            "unit": "monthly",
-            "range": "NTD 55,000 – 90,000",
-            "midpoint": "NTD 70,000",
-            "floor": 55000,
-            "ceiling": 90000,
-            "source": "NodeFlair / PayScale TW 2024-2025",
-            "note": "Taipei market. Annual bonus (1-3 months) is common; multiply monthly by 13-14 for total annual estimate."
-          },
-          "structure": {
-            "baseSalary": [
-              "Market range for mid (TW): NTD 55,000 – 90,000 monthly. Source: NodeFlair / PayScale TW 2024-2025."
-            ],
-            "bonus": "Ask whether there is annual bonus, performance bonus, or sign-on bonus.",
-            "equity": "Clarify grant size, vesting schedule, refreshers, and strike/RSU terms.",
-            "benefits": [
-              "Health / insurance coverage",
-              "Paid leave and holidays",
-              "Learning budget or certification support",
-              "Remote/hybrid setup, commute, or relocation support",
-              "Review cycle and promotion timeline"
-            ],
-            "nonCashLevers": [
-              "Title / level calibration",
-              "Start date flexibility",
-              "Remote days",
-              "Equipment budget",
-              "First review at 3 or 6 months",
-              "Conference / learning budget"
-            ]
-          },
-          "negotiationScript": {
-            "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the AI-Enabled Full Stack Developer - Experienced package, including base, bonus, equity, and review cycle?",
-            "valueAnchor": "Based on the scope of AI-Enabled Full Stack Developer - Experienced and my fit around API, engineer, data, restful, I would like to calibrate toward the stronger end of the range if the team sees the level match. My research indicates the TW midpoint for this level is around NTD 70,000 (monthly).",
-            "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
-            "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
-            "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
-          },
-          "redLines": [
-            "Do not disclose current compensation unless legally appropriate and strategically useful.",
-            "Do not accept verbal-only compensation details; ask for written package components.",
-            "Do not negotiate before confirming level, scope, work mode, and review cycle.",
-            "Do not trade base salary away without valuing the replacement benefit."
-          ],
-          "nextActions": [
-            "Collect market compensation evidence before naming a number.",
-            "Ask recruiter for approved range and level.",
-            "Map the job scope to proof points in the tailored CV.",
-            "Prepare one counter package with base, bonus/equity, and non-cash levers."
-          ],
-          "targetFrame": "Market benchmark for mid in TW is NTD 55,000 – 90,000 (monthly). Do not name a number first — ask for the approved range, then anchor near the midpoint or above."
-        },
-        "stories": [
-          {
-            "id": "story-1",
-            "theme": "frontend product execution",
-            "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
-            "applicableQuestions": [
-              "Tell me about a project you are proud of.",
-              "Tell me about a time you handled ambiguity.",
-              "How have you applied frontend product execution?"
-            ],
-            "star": {
-              "situation": "You were tasked with a frontend product challenge. Proof point: \"Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.\" — set the scene: what product, what team size, and what was broken or missing?",
-              "task": "What was the specific outcome you were accountable for? Include the success metric (e.g. performance score, user adoption rate, release date).",
-              "action": "Walk through the key technical decisions: component architecture, state management tradeoffs, accessibility choices, or API contract design.",
-              "result": "Quantify the impact: load time delta, user adoption %, code reduction %, or stakeholder feedback. If no number, describe the quality or velocity improvement.",
-              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
-            },
-            "keywords": [
-              "frontend product execution",
-              "JavaScript",
-              "TypeScript",
-              "React",
-              "Next.js",
-              "CSS",
-              "Tailwind",
-              "Accessibility"
-            ],
-            "relevance": 0
-          },
-          {
-            "id": "story-2",
-            "theme": "data-heavy product decisions",
-            "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
-            "applicableQuestions": [
-              "Tell me about a project you are proud of.",
-              "Tell me about a time you handled ambiguity.",
-              "How have you applied data-heavy product decisions?"
-            ],
-            "star": {
-              "situation": "You were working with a data-intensive product. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — describe the data volume, the user workflow, and what was difficult to render or interpret.",
-              "task": "What decision did you own? (chart type, data model, aggregation strategy, caching layer, etc.)",
-              "action": "Explain how you chose between options, what you built or prototyped, and how you validated your approach with data or users.",
-              "result": "State the outcome: query latency, dashboard load time, user comprehension improvement, or reduction in support requests.",
-              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
-            },
-            "keywords": [
-              "data-heavy product decisions",
-              "JavaScript",
-              "TypeScript",
-              "React",
-              "Next.js",
-              "CSS",
-              "Tailwind",
-              "Accessibility"
-            ],
-            "relevance": 0
-          },
-          {
-            "id": "story-3",
-            "theme": "systems and API collaboration",
-            "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
-            "applicableQuestions": [
-              "Tell me about a project you are proud of.",
-              "Tell me about a time you handled ambiguity.",
-              "How have you applied systems and API collaboration?"
-            ],
-            "star": {
-              "situation": "You collaborated across system boundaries. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — name the systems, teams, and integration surface area.",
-              "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
-              "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
-              "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
-              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
-            },
-            "keywords": [
-              "systems and API collaboration",
-              "JavaScript",
-              "TypeScript",
-              "React",
-              "Next.js",
-              "CSS",
-              "Tailwind",
-              "Accessibility"
-            ],
-            "relevance": 0
-          }
-        ],
-        "applyAgent": {
-          "mode": "human-in-the-loop",
-          "url": "https://micron.wd1.myworkdayjobs.com/External/job/Taichung---AATT-Taiwan/AI-Enabled-Full-Stack-Developer---Experienced_JR103711",
-          "steps": [
-            "Open the application URL in a controlled browser session.",
-            "Extract visible form fields and required uploads.",
-            "Map CV profile fields to the form without submitting.",
-            "Prepare tailored PDF and outreach text.",
-            "Stop before final submit and ask the user to review."
-          ],
-          "guardrails": [
-            "Never submit without explicit user confirmation.",
-            "Never fabricate work authorization, salary history, degree, or experience.",
-            "Never store API keys or credentials in job metadata.",
-            "Record only application status and user-approved notes."
-          ]
-        }
-      }
-    },
     {
       "jobKey": "url:https://www.mycareersfuture.gov.sg/job/07eafbe6994e2090a0c2a6a6a6111e62",
       "company": "VANGUARD SOFTWARE PTE. LTD.",
@@ -226,8 +11,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 95,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-12T00:25:31.429Z",
-      "completedAt": "2026-06-12T00:25:31.431Z",
+      "startedAt": "2026-06-13T00:26:56.245Z",
+      "completedAt": "2026-06-13T00:26:56.246Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -250,7 +35,10 @@ window.CV_CAREER_OPS_PARALLEL = {
           ]
         },
         "research": {
-          "signals": [],
+          "signals": [
+            "AI / data / platform signal",
+            "remote or hybrid signal"
+          ],
           "evidenceCount": 5,
           "questions": [
             "What business unit owns the Expert Frontend Engineer (React.JS & React Native) role?",
@@ -277,7 +65,9 @@ window.CV_CAREER_OPS_PARALLEL = {
           "leverage": "high",
           "evidence": {
             "salaryMentions": [],
-            "benefitSignals": []
+            "benefitSignals": [
+              "work-mode flexibility"
+            ]
           },
           "marketBenchmark": null,
           "structure": {
@@ -354,22 +144,22 @@ window.CV_CAREER_OPS_PARALLEL = {
           },
           {
             "id": "story-2",
-            "theme": "data-heavy product decisions",
+            "theme": "systems and API collaboration",
             "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
             "applicableQuestions": [
               "Tell me about a project you are proud of.",
               "Tell me about a time you handled ambiguity.",
-              "How have you applied data-heavy product decisions?"
+              "How have you applied systems and API collaboration?"
             ],
             "star": {
-              "situation": "You were working with a data-intensive product. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — describe the data volume, the user workflow, and what was difficult to render or interpret.",
-              "task": "What decision did you own? (chart type, data model, aggregation strategy, caching layer, etc.)",
-              "action": "Explain how you chose between options, what you built or prototyped, and how you validated your approach with data or users.",
-              "result": "State the outcome: query latency, dashboard load time, user comprehension improvement, or reduction in support requests.",
+              "situation": "You collaborated across system boundaries. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — name the systems, teams, and integration surface area.",
+              "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
+              "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
+              "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
               "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
             },
             "keywords": [
-              "data-heavy product decisions",
+              "systems and API collaboration",
               "JavaScript",
               "TypeScript",
               "React",
@@ -382,22 +172,22 @@ window.CV_CAREER_OPS_PARALLEL = {
           },
           {
             "id": "story-3",
-            "theme": "systems and API collaboration",
+            "theme": "accessibility and quality",
             "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
             "applicableQuestions": [
               "Tell me about a project you are proud of.",
               "Tell me about a time you handled ambiguity.",
-              "How have you applied systems and API collaboration?"
+              "How have you applied accessibility and quality?"
             ],
             "star": {
-              "situation": "You collaborated across system boundaries. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — name the systems, teams, and integration surface area.",
-              "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
-              "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
-              "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
+              "situation": "You led or contributed to an accessibility or quality initiative. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — what was the starting state and who was affected?",
+              "task": "What standard or target were you working toward (WCAG level, test coverage %, zero-defect milestone)?",
+              "action": "Describe the audit process, tooling (axe, Lighthouse, screen reader testing), and how you prioritized fixes across components.",
+              "result": "State the outcome: WCAG compliance level achieved, user complaints reduced, or CI gate added to prevent regressions.",
               "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
             },
             "keywords": [
-              "systems and API collaboration",
+              "accessibility and quality",
               "JavaScript",
               "TypeScript",
               "React",
@@ -435,8 +225,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 95,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-12T00:25:31.428Z",
-      "completedAt": "2026-06-12T00:25:31.431Z",
+      "startedAt": "2026-06-13T00:26:56.245Z",
+      "completedAt": "2026-06-13T00:26:56.246Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -569,22 +359,22 @@ window.CV_CAREER_OPS_PARALLEL = {
           },
           {
             "id": "story-2",
-            "theme": "data-heavy product decisions",
+            "theme": "systems and API collaboration",
             "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
             "applicableQuestions": [
               "Tell me about a project you are proud of.",
               "Tell me about a time you handled ambiguity.",
-              "How have you applied data-heavy product decisions?"
+              "How have you applied systems and API collaboration?"
             ],
             "star": {
-              "situation": "You were working with a data-intensive product. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — describe the data volume, the user workflow, and what was difficult to render or interpret.",
-              "task": "What decision did you own? (chart type, data model, aggregation strategy, caching layer, etc.)",
-              "action": "Explain how you chose between options, what you built or prototyped, and how you validated your approach with data or users.",
-              "result": "State the outcome: query latency, dashboard load time, user comprehension improvement, or reduction in support requests.",
+              "situation": "You collaborated across system boundaries. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — name the systems, teams, and integration surface area.",
+              "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
+              "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
+              "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
               "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
             },
             "keywords": [
-              "data-heavy product decisions",
+              "systems and API collaboration",
               "JavaScript",
               "TypeScript",
               "React",
@@ -597,22 +387,22 @@ window.CV_CAREER_OPS_PARALLEL = {
           },
           {
             "id": "story-3",
-            "theme": "systems and API collaboration",
+            "theme": "accessibility and quality",
             "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
             "applicableQuestions": [
               "Tell me about a project you are proud of.",
               "Tell me about a time you handled ambiguity.",
-              "How have you applied systems and API collaboration?"
+              "How have you applied accessibility and quality?"
             ],
             "star": {
-              "situation": "You collaborated across system boundaries. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — name the systems, teams, and integration surface area.",
-              "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
-              "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
-              "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
+              "situation": "You led or contributed to an accessibility or quality initiative. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — what was the starting state and who was affected?",
+              "task": "What standard or target were you working toward (WCAG level, test coverage %, zero-defect milestone)?",
+              "action": "Describe the audit process, tooling (axe, Lighthouse, screen reader testing), and how you prioritized fixes across components.",
+              "result": "State the outcome: WCAG compliance level achieved, user complaints reduced, or CI gate added to prevent regressions.",
               "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
             },
             "keywords": [
-              "systems and API collaboration",
+              "accessibility and quality",
               "JavaScript",
               "TypeScript",
               "React",
@@ -644,438 +434,14 @@ window.CV_CAREER_OPS_PARALLEL = {
       }
     },
     {
-      "jobKey": "url:https://www.mycareersfuture.gov.sg/job/ddc648c00fcb0cb0d717f2878ba8bc29",
-      "company": "BIFROST PTE. LTD.",
-      "title": "Frontend Engineer",
-      "score": 95,
-      "grade": "A",
-      "priority": "P0",
-      "startedAt": "2026-06-12T00:25:31.429Z",
-      "completedAt": "2026-06-12T00:25:31.431Z",
-      "workers": {
-        "evaluation": {
-          "recommendation": "值得投遞",
-          "keywords": [
-            "JavaScript",
-            "React",
-            "engineer",
-            "product",
-            "data",
-            "restful",
-            "graphql",
-            "node.js"
-          ],
-          "nextActions": [
-            "開啟職缺確認仍可投遞",
-            "產生客製 ATS PDF",
-            "用同職類高分職缺校準履歷關鍵字"
-          ]
-        },
-        "research": {
-          "signals": [
-            "AI / data / platform signal",
-            "remote or hybrid signal"
-          ],
-          "evidenceCount": 1,
-          "questions": [
-            "What business unit owns the Frontend Engineer role?",
-            "What measurable outcomes would this team expect in the first 90 days?",
-            "What recent company/product signals change the risk or upside?",
-            "Which CV proof points should be highlighted for this company?"
-          ]
-        },
-        "application": {
-          "checklist": [
-            "Confirm posting is active.",
-            "Generate tailored ATS PDF.",
-            "Prepare outreach and follow-up.",
-            "Log status and next follow-up."
-          ]
-        },
-        "compensation": {
-          "jobKey": "url:https://www.mycareersfuture.gov.sg/job/dc06e8c5f714c11bfb2e053ac7ee2276",
-          "company": "BIFROST PTE. LTD.",
-          "title": "Frontend Engineer",
-          "market": "sg",
-          "inferredLevel": "mid",
-          "candidateLevel": "mid",
-          "leverage": "high",
-          "evidence": {
-            "salaryMentions": [],
-            "benefitSignals": [
-              "bonus",
-              "work-mode flexibility",
-              "signing / relocation",
-              "learning budget"
-            ]
-          },
-          "marketBenchmark": null,
-          "structure": {
-            "baseSalary": [
-              "Need verified market data or recruiter range before setting a numeric anchor."
-            ],
-            "bonus": "Ask whether bonus is guaranteed, target, or discretionary.",
-            "equity": "Ask whether equity, RSU, options, or profit-sharing exists.",
-            "benefits": [
-              "Health / insurance coverage",
-              "Paid leave and holidays",
-              "Learning budget or certification support",
-              "Remote/hybrid setup, commute, or relocation support",
-              "Review cycle and promotion timeline"
-            ],
-            "nonCashLevers": [
-              "Title / level calibration",
-              "Start date flexibility",
-              "Remote days",
-              "Equipment budget",
-              "First review at 3 or 6 months",
-              "Conference / learning budget"
-            ]
-          },
-          "negotiationScript": {
-            "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Frontend Engineer package, including base, bonus, equity, and review cycle?",
-            "valueAnchor": "Based on the scope of Frontend Engineer and my fit around JavaScript, React, engineer, product, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
-            "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
-            "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
-            "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
-          },
-          "redLines": [
-            "Do not disclose current compensation unless legally appropriate and strategically useful.",
-            "Do not accept verbal-only compensation details; ask for written package components.",
-            "Do not negotiate before confirming level, scope, work mode, and review cycle.",
-            "Do not trade base salary away without valuing the replacement benefit."
-          ],
-          "nextActions": [
-            "Collect market compensation evidence before naming a number.",
-            "Ask recruiter for approved range and level.",
-            "Map the job scope to proof points in the tailored CV.",
-            "Prepare one counter package with base, bonus/equity, and non-cash levers."
-          ],
-          "targetFrame": "Do not name a number first. Ask for the approved range, level, and total compensation structure before anchoring."
-        },
-        "stories": [
-          {
-            "id": "story-1",
-            "theme": "frontend product execution",
-            "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
-            "applicableQuestions": [
-              "Tell me about a project you are proud of.",
-              "Tell me about a time you handled ambiguity.",
-              "How have you applied frontend product execution?"
-            ],
-            "star": {
-              "situation": "You were tasked with a frontend product challenge. Proof point: \"Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.\" — set the scene: what product, what team size, and what was broken or missing?",
-              "task": "What was the specific outcome you were accountable for? Include the success metric (e.g. performance score, user adoption rate, release date).",
-              "action": "Walk through the key technical decisions: component architecture, state management tradeoffs, accessibility choices, or API contract design.",
-              "result": "Quantify the impact: load time delta, user adoption %, code reduction %, or stakeholder feedback. If no number, describe the quality or velocity improvement.",
-              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
-            },
-            "keywords": [
-              "frontend product execution",
-              "JavaScript",
-              "TypeScript",
-              "React",
-              "Next.js",
-              "CSS",
-              "Tailwind",
-              "Accessibility"
-            ],
-            "relevance": 3
-          },
-          {
-            "id": "story-2",
-            "theme": "data-heavy product decisions",
-            "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
-            "applicableQuestions": [
-              "Tell me about a project you are proud of.",
-              "Tell me about a time you handled ambiguity.",
-              "How have you applied data-heavy product decisions?"
-            ],
-            "star": {
-              "situation": "You were working with a data-intensive product. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — describe the data volume, the user workflow, and what was difficult to render or interpret.",
-              "task": "What decision did you own? (chart type, data model, aggregation strategy, caching layer, etc.)",
-              "action": "Explain how you chose between options, what you built or prototyped, and how you validated your approach with data or users.",
-              "result": "State the outcome: query latency, dashboard load time, user comprehension improvement, or reduction in support requests.",
-              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
-            },
-            "keywords": [
-              "data-heavy product decisions",
-              "JavaScript",
-              "TypeScript",
-              "React",
-              "Next.js",
-              "CSS",
-              "Tailwind",
-              "Accessibility"
-            ],
-            "relevance": 3
-          },
-          {
-            "id": "story-3",
-            "theme": "systems and API collaboration",
-            "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
-            "applicableQuestions": [
-              "Tell me about a project you are proud of.",
-              "Tell me about a time you handled ambiguity.",
-              "How have you applied systems and API collaboration?"
-            ],
-            "star": {
-              "situation": "You collaborated across system boundaries. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — name the systems, teams, and integration surface area.",
-              "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
-              "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
-              "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
-              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
-            },
-            "keywords": [
-              "systems and API collaboration",
-              "JavaScript",
-              "TypeScript",
-              "React",
-              "Next.js",
-              "CSS",
-              "Tailwind",
-              "Accessibility"
-            ],
-            "relevance": 3
-          }
-        ],
-        "applyAgent": {
-          "mode": "human-in-the-loop",
-          "url": "https://www.mycareersfuture.gov.sg/job/ddc648c00fcb0cb0d717f2878ba8bc29",
-          "steps": [
-            "Open the application URL in a controlled browser session.",
-            "Extract visible form fields and required uploads.",
-            "Map CV profile fields to the form without submitting.",
-            "Prepare tailored PDF and outreach text.",
-            "Stop before final submit and ask the user to review."
-          ],
-          "guardrails": [
-            "Never submit without explicit user confirmation.",
-            "Never fabricate work authorization, salary history, degree, or experience.",
-            "Never store API keys or credentials in job metadata.",
-            "Record only application status and user-approved notes."
-          ]
-        }
-      }
-    },
-    {
-      "jobKey": "url:https://www.themuse.com/jobs/thecocacolacompany/software-engineer-i-f085ec",
-      "company": "The Coca-Cola Company",
-      "title": "Software Engineer I",
-      "score": 95,
-      "grade": "A",
-      "priority": "P0",
-      "startedAt": "2026-06-12T00:25:31.434Z",
-      "completedAt": "2026-06-12T00:25:31.436Z",
-      "workers": {
-        "evaluation": {
-          "recommendation": "值得投遞",
-          "keywords": [
-            "API",
-            "engineer",
-            "product",
-            "data"
-          ],
-          "nextActions": [
-            "開啟職缺確認仍可投遞",
-            "產生客製 ATS PDF",
-            "用同職類高分職缺校準履歷關鍵字"
-          ]
-        },
-        "research": {
-          "signals": [
-            "AI / data / platform signal",
-            "remote or hybrid signal"
-          ],
-          "evidenceCount": 3,
-          "questions": [
-            "What business unit owns the Software Engineer I role?",
-            "What measurable outcomes would this team expect in the first 90 days?",
-            "What recent company/product signals change the risk or upside?",
-            "Which CV proof points should be highlighted for this company?"
-          ]
-        },
-        "application": {
-          "checklist": [
-            "Confirm posting is active.",
-            "Generate tailored ATS PDF.",
-            "Prepare outreach and follow-up.",
-            "Log status and next follow-up."
-          ]
-        },
-        "compensation": {
-          "jobKey": "url:https://www.themuse.com/jobs/thecocacolacompany/software-engineer-i-f085ec",
-          "company": "The Coca-Cola Company",
-          "title": "Software Engineer I",
-          "market": "us",
-          "inferredLevel": "senior",
-          "candidateLevel": "mid",
-          "leverage": "high",
-          "evidence": {
-            "salaryMentions": [],
-            "benefitSignals": [
-              "work-mode flexibility",
-              "learning budget"
-            ]
-          },
-          "marketBenchmark": null,
-          "structure": {
-            "baseSalary": [
-              "Need verified market data or recruiter range before setting a numeric anchor."
-            ],
-            "bonus": "Ask whether there is annual bonus, performance bonus, or sign-on bonus.",
-            "equity": "Ask whether equity, RSU, options, or profit-sharing exists.",
-            "benefits": [
-              "Health / insurance coverage",
-              "Paid leave and holidays",
-              "Learning budget or certification support",
-              "Remote/hybrid setup, commute, or relocation support",
-              "Review cycle and promotion timeline"
-            ],
-            "nonCashLevers": [
-              "Title / level calibration",
-              "Start date flexibility",
-              "Remote days",
-              "Equipment budget",
-              "First review at 3 or 6 months",
-              "Conference / learning budget"
-            ]
-          },
-          "negotiationScript": {
-            "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Software Engineer I package, including base, bonus, equity, and review cycle?",
-            "valueAnchor": "Based on the scope of Software Engineer I and my fit around API, engineer, product, data, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
-            "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
-            "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
-            "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
-          },
-          "redLines": [
-            "Do not disclose current compensation unless legally appropriate and strategically useful.",
-            "Do not accept verbal-only compensation details; ask for written package components.",
-            "Do not negotiate before confirming level, scope, work mode, and review cycle.",
-            "Do not trade base salary away without valuing the replacement benefit."
-          ],
-          "nextActions": [
-            "Collect market compensation evidence before naming a number.",
-            "Ask recruiter for approved range and level.",
-            "Map the job scope to proof points in the tailored CV.",
-            "Prepare one counter package with base, bonus/equity, and non-cash levers."
-          ],
-          "targetFrame": "Do not name a number first. Ask for the approved range, level, and total compensation structure before anchoring."
-        },
-        "stories": [
-          {
-            "id": "story-1",
-            "theme": "frontend product execution",
-            "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
-            "applicableQuestions": [
-              "Tell me about a project you are proud of.",
-              "Tell me about a time you handled ambiguity.",
-              "How have you applied frontend product execution?"
-            ],
-            "star": {
-              "situation": "You were tasked with a frontend product challenge. Proof point: \"Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.\" — set the scene: what product, what team size, and what was broken or missing?",
-              "task": "What was the specific outcome you were accountable for? Include the success metric (e.g. performance score, user adoption rate, release date).",
-              "action": "Walk through the key technical decisions: component architecture, state management tradeoffs, accessibility choices, or API contract design.",
-              "result": "Quantify the impact: load time delta, user adoption %, code reduction %, or stakeholder feedback. If no number, describe the quality or velocity improvement.",
-              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
-            },
-            "keywords": [
-              "frontend product execution",
-              "JavaScript",
-              "TypeScript",
-              "React",
-              "Next.js",
-              "CSS",
-              "Tailwind",
-              "Accessibility"
-            ],
-            "relevance": 0
-          },
-          {
-            "id": "story-2",
-            "theme": "data-heavy product decisions",
-            "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
-            "applicableQuestions": [
-              "Tell me about a project you are proud of.",
-              "Tell me about a time you handled ambiguity.",
-              "How have you applied data-heavy product decisions?"
-            ],
-            "star": {
-              "situation": "You were working with a data-intensive product. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — describe the data volume, the user workflow, and what was difficult to render or interpret.",
-              "task": "What decision did you own? (chart type, data model, aggregation strategy, caching layer, etc.)",
-              "action": "Explain how you chose between options, what you built or prototyped, and how you validated your approach with data or users.",
-              "result": "State the outcome: query latency, dashboard load time, user comprehension improvement, or reduction in support requests.",
-              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
-            },
-            "keywords": [
-              "data-heavy product decisions",
-              "JavaScript",
-              "TypeScript",
-              "React",
-              "Next.js",
-              "CSS",
-              "Tailwind",
-              "Accessibility"
-            ],
-            "relevance": 0
-          },
-          {
-            "id": "story-3",
-            "theme": "systems and API collaboration",
-            "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
-            "applicableQuestions": [
-              "Tell me about a project you are proud of.",
-              "Tell me about a time you handled ambiguity.",
-              "How have you applied systems and API collaboration?"
-            ],
-            "star": {
-              "situation": "You collaborated across system boundaries. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — name the systems, teams, and integration surface area.",
-              "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
-              "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
-              "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
-              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
-            },
-            "keywords": [
-              "systems and API collaboration",
-              "JavaScript",
-              "TypeScript",
-              "React",
-              "Next.js",
-              "CSS",
-              "Tailwind",
-              "Accessibility"
-            ],
-            "relevance": 0
-          }
-        ],
-        "applyAgent": {
-          "mode": "human-in-the-loop",
-          "url": "https://www.themuse.com/jobs/thecocacolacompany/software-engineer-i-f085ec",
-          "steps": [
-            "Open the application URL in a controlled browser session.",
-            "Extract visible form fields and required uploads.",
-            "Map CV profile fields to the form without submitting.",
-            "Prepare tailored PDF and outreach text.",
-            "Stop before final submit and ask the user to review."
-          ],
-          "guardrails": [
-            "Never submit without explicit user confirmation.",
-            "Never fabricate work authorization, salary history, degree, or experience.",
-            "Never store API keys or credentials in job metadata.",
-            "Record only application status and user-approved notes."
-          ]
-        }
-      }
-    },
-    {
       "jobKey": "url:https://www.themuse.com/jobs/uber/sr-software-engineer-frontend-web-8fc2b7",
       "company": "Uber",
       "title": "Sr Software Engineer, Frontend (Web)",
       "score": 95,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-12T00:25:31.434Z",
-      "completedAt": "2026-06-12T00:25:31.435Z",
+      "startedAt": "2026-06-13T00:26:56.245Z",
+      "completedAt": "2026-06-13T00:26:56.247Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -1207,22 +573,22 @@ window.CV_CAREER_OPS_PARALLEL = {
           },
           {
             "id": "story-2",
-            "theme": "data-heavy product decisions",
+            "theme": "systems and API collaboration",
             "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
             "applicableQuestions": [
               "Tell me about a project you are proud of.",
               "Tell me about a time you handled ambiguity.",
-              "How have you applied data-heavy product decisions?"
+              "How have you applied systems and API collaboration?"
             ],
             "star": {
-              "situation": "You were working with a data-intensive product. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — describe the data volume, the user workflow, and what was difficult to render or interpret.",
-              "task": "What decision did you own? (chart type, data model, aggregation strategy, caching layer, etc.)",
-              "action": "Explain how you chose between options, what you built or prototyped, and how you validated your approach with data or users.",
-              "result": "State the outcome: query latency, dashboard load time, user comprehension improvement, or reduction in support requests.",
+              "situation": "You collaborated across system boundaries. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — name the systems, teams, and integration surface area.",
+              "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
+              "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
+              "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
               "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
             },
             "keywords": [
-              "data-heavy product decisions",
+              "systems and API collaboration",
               "JavaScript",
               "TypeScript",
               "React",
@@ -1235,22 +601,22 @@ window.CV_CAREER_OPS_PARALLEL = {
           },
           {
             "id": "story-3",
-            "theme": "systems and API collaboration",
+            "theme": "accessibility and quality",
             "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
             "applicableQuestions": [
               "Tell me about a project you are proud of.",
               "Tell me about a time you handled ambiguity.",
-              "How have you applied systems and API collaboration?"
+              "How have you applied accessibility and quality?"
             ],
             "star": {
-              "situation": "You collaborated across system boundaries. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — name the systems, teams, and integration surface area.",
-              "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
-              "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
-              "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
+              "situation": "You led or contributed to an accessibility or quality initiative. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — what was the starting state and who was affected?",
+              "task": "What standard or target were you working toward (WCAG level, test coverage %, zero-defect milestone)?",
+              "action": "Describe the audit process, tooling (axe, Lighthouse, screen reader testing), and how you prioritized fixes across components.",
+              "result": "State the outcome: WCAG compliance level achieved, user complaints reduced, or CI gate added to prevent regressions.",
               "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
             },
             "keywords": [
-              "systems and API collaboration",
+              "accessibility and quality",
               "JavaScript",
               "TypeScript",
               "React",
@@ -1288,8 +654,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 95,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-12T00:25:31.434Z",
-      "completedAt": "2026-06-12T00:25:31.436Z",
+      "startedAt": "2026-06-13T00:26:56.246Z",
+      "completedAt": "2026-06-13T00:26:56.247Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -1310,9 +676,9 @@ window.CV_CAREER_OPS_PARALLEL = {
             "AI / data / platform signal",
             "remote or hybrid signal"
           ],
-          "evidenceCount": 3,
+          "evidenceCount": 5,
           "questions": [
-            "What business unit owns the Software Engineer I role?",
+            "What business unit owns the Senior Software Engineer II role?",
             "What measurable outcomes would this team expect in the first 90 days?",
             "What recent company/product signals change the risk or upside?",
             "Which CV proof points should be highlighted for this company?"
@@ -1327,9 +693,9 @@ window.CV_CAREER_OPS_PARALLEL = {
           ]
         },
         "compensation": {
-          "jobKey": "url:https://www.themuse.com/jobs/thecocacolacompany/software-engineer-i-f085ec",
+          "jobKey": "url:https://www.themuse.com/jobs/thecocacolacompany/senior-software-engineer-ii-45ddca",
           "company": "The Coca-Cola Company",
-          "title": "Software Engineer I",
+          "title": "Senior Software Engineer II",
           "market": "us",
           "inferredLevel": "senior",
           "candidateLevel": "mid",
@@ -1365,8 +731,8 @@ window.CV_CAREER_OPS_PARALLEL = {
             ]
           },
           "negotiationScript": {
-            "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Software Engineer I package, including base, bonus, equity, and review cycle?",
-            "valueAnchor": "Based on the scope of Software Engineer I and my fit around API, engineer, product, data, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
+            "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Senior Software Engineer II package, including base, bonus, equity, and review cycle?",
+            "valueAnchor": "Based on the scope of Senior Software Engineer II and my fit around API, engineer, product, data, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
             "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
             "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
             "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
@@ -1416,22 +782,22 @@ window.CV_CAREER_OPS_PARALLEL = {
           },
           {
             "id": "story-2",
-            "theme": "data-heavy product decisions",
+            "theme": "systems and API collaboration",
             "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
             "applicableQuestions": [
               "Tell me about a project you are proud of.",
               "Tell me about a time you handled ambiguity.",
-              "How have you applied data-heavy product decisions?"
+              "How have you applied systems and API collaboration?"
             ],
             "star": {
-              "situation": "You were working with a data-intensive product. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — describe the data volume, the user workflow, and what was difficult to render or interpret.",
-              "task": "What decision did you own? (chart type, data model, aggregation strategy, caching layer, etc.)",
-              "action": "Explain how you chose between options, what you built or prototyped, and how you validated your approach with data or users.",
-              "result": "State the outcome: query latency, dashboard load time, user comprehension improvement, or reduction in support requests.",
+              "situation": "You collaborated across system boundaries. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — name the systems, teams, and integration surface area.",
+              "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
+              "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
+              "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
               "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
             },
             "keywords": [
-              "data-heavy product decisions",
+              "systems and API collaboration",
               "JavaScript",
               "TypeScript",
               "React",
@@ -1444,22 +810,22 @@ window.CV_CAREER_OPS_PARALLEL = {
           },
           {
             "id": "story-3",
-            "theme": "systems and API collaboration",
+            "theme": "accessibility and quality",
             "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
             "applicableQuestions": [
               "Tell me about a project you are proud of.",
               "Tell me about a time you handled ambiguity.",
-              "How have you applied systems and API collaboration?"
+              "How have you applied accessibility and quality?"
             ],
             "star": {
-              "situation": "You collaborated across system boundaries. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — name the systems, teams, and integration surface area.",
-              "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
-              "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
-              "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
+              "situation": "You led or contributed to an accessibility or quality initiative. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — what was the starting state and who was affected?",
+              "task": "What standard or target were you working toward (WCAG level, test coverage %, zero-defect milestone)?",
+              "action": "Describe the audit process, tooling (axe, Lighthouse, screen reader testing), and how you prioritized fixes across components.",
+              "result": "State the outcome: WCAG compliance level achieved, user complaints reduced, or CI gate added to prevent regressions.",
               "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
             },
             "keywords": [
-              "systems and API collaboration",
+              "accessibility and quality",
               "JavaScript",
               "TypeScript",
               "React",
@@ -1497,8 +863,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 95,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-12T00:25:31.434Z",
-      "completedAt": "2026-06-12T00:25:31.436Z",
+      "startedAt": "2026-06-13T00:26:56.249Z",
+      "completedAt": "2026-06-13T00:26:56.250Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -1517,8 +883,10 @@ window.CV_CAREER_OPS_PARALLEL = {
           ]
         },
         "research": {
-          "signals": [],
-          "evidenceCount": 5,
+          "signals": [
+            "AI / data / platform signal"
+          ],
+          "evidenceCount": 1,
           "questions": [
             "What business unit owns the Lead Software Engineer role?",
             "What measurable outcomes would this team expect in the first 90 days?",
@@ -1623,22 +991,22 @@ window.CV_CAREER_OPS_PARALLEL = {
           },
           {
             "id": "story-2",
-            "theme": "data-heavy product decisions",
+            "theme": "systems and API collaboration",
             "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
             "applicableQuestions": [
               "Tell me about a project you are proud of.",
               "Tell me about a time you handled ambiguity.",
-              "How have you applied data-heavy product decisions?"
+              "How have you applied systems and API collaboration?"
             ],
             "star": {
-              "situation": "You were working with a data-intensive product. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — describe the data volume, the user workflow, and what was difficult to render or interpret.",
-              "task": "What decision did you own? (chart type, data model, aggregation strategy, caching layer, etc.)",
-              "action": "Explain how you chose between options, what you built or prototyped, and how you validated your approach with data or users.",
-              "result": "State the outcome: query latency, dashboard load time, user comprehension improvement, or reduction in support requests.",
+              "situation": "You collaborated across system boundaries. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — name the systems, teams, and integration surface area.",
+              "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
+              "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
+              "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
               "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
             },
             "keywords": [
-              "data-heavy product decisions",
+              "systems and API collaboration",
               "JavaScript",
               "TypeScript",
               "React",
@@ -1651,22 +1019,22 @@ window.CV_CAREER_OPS_PARALLEL = {
           },
           {
             "id": "story-3",
-            "theme": "systems and API collaboration",
+            "theme": "accessibility and quality",
             "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
             "applicableQuestions": [
               "Tell me about a project you are proud of.",
               "Tell me about a time you handled ambiguity.",
-              "How have you applied systems and API collaboration?"
+              "How have you applied accessibility and quality?"
             ],
             "star": {
-              "situation": "You collaborated across system boundaries. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — name the systems, teams, and integration surface area.",
-              "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
-              "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
-              "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
+              "situation": "You led or contributed to an accessibility or quality initiative. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — what was the starting state and who was affected?",
+              "task": "What standard or target were you working toward (WCAG level, test coverage %, zero-defect milestone)?",
+              "action": "Describe the audit process, tooling (axe, Lighthouse, screen reader testing), and how you prioritized fixes across components.",
+              "result": "State the outcome: WCAG compliance level achieved, user complaints reduced, or CI gate added to prevent regressions.",
               "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
             },
             "keywords": [
-              "systems and API collaboration",
+              "accessibility and quality",
               "JavaScript",
               "TypeScript",
               "React",
@@ -1698,223 +1066,14 @@ window.CV_CAREER_OPS_PARALLEL = {
       }
     },
     {
-      "jobKey": "url:https://www.themuse.com/jobs/thecocacolacompany/software-engineer-i-crm",
-      "company": "The Coca-Cola Company",
-      "title": "Software Engineer I - CRM",
-      "score": 95,
-      "grade": "A",
-      "priority": "P0",
-      "startedAt": "2026-06-12T00:25:31.438Z",
-      "completedAt": "2026-06-12T00:25:31.440Z",
-      "workers": {
-        "evaluation": {
-          "recommendation": "值得投遞",
-          "keywords": [
-            "API",
-            "engineer",
-            "product",
-            "data"
-          ],
-          "nextActions": [
-            "開啟職缺確認仍可投遞",
-            "產生客製 ATS PDF",
-            "用同職類高分職缺校準履歷關鍵字"
-          ]
-        },
-        "research": {
-          "signals": [
-            "AI / data / platform signal",
-            "remote or hybrid signal"
-          ],
-          "evidenceCount": 3,
-          "questions": [
-            "What business unit owns the Software Engineer I role?",
-            "What measurable outcomes would this team expect in the first 90 days?",
-            "What recent company/product signals change the risk or upside?",
-            "Which CV proof points should be highlighted for this company?"
-          ]
-        },
-        "application": {
-          "checklist": [
-            "Confirm posting is active.",
-            "Generate tailored ATS PDF.",
-            "Prepare outreach and follow-up.",
-            "Log status and next follow-up."
-          ]
-        },
-        "compensation": {
-          "jobKey": "url:https://www.themuse.com/jobs/thecocacolacompany/software-engineer-i-f085ec",
-          "company": "The Coca-Cola Company",
-          "title": "Software Engineer I",
-          "market": "us",
-          "inferredLevel": "senior",
-          "candidateLevel": "mid",
-          "leverage": "high",
-          "evidence": {
-            "salaryMentions": [],
-            "benefitSignals": [
-              "work-mode flexibility",
-              "learning budget"
-            ]
-          },
-          "marketBenchmark": null,
-          "structure": {
-            "baseSalary": [
-              "Need verified market data or recruiter range before setting a numeric anchor."
-            ],
-            "bonus": "Ask whether there is annual bonus, performance bonus, or sign-on bonus.",
-            "equity": "Ask whether equity, RSU, options, or profit-sharing exists.",
-            "benefits": [
-              "Health / insurance coverage",
-              "Paid leave and holidays",
-              "Learning budget or certification support",
-              "Remote/hybrid setup, commute, or relocation support",
-              "Review cycle and promotion timeline"
-            ],
-            "nonCashLevers": [
-              "Title / level calibration",
-              "Start date flexibility",
-              "Remote days",
-              "Equipment budget",
-              "First review at 3 or 6 months",
-              "Conference / learning budget"
-            ]
-          },
-          "negotiationScript": {
-            "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Software Engineer I package, including base, bonus, equity, and review cycle?",
-            "valueAnchor": "Based on the scope of Software Engineer I and my fit around API, engineer, product, data, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
-            "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
-            "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
-            "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
-          },
-          "redLines": [
-            "Do not disclose current compensation unless legally appropriate and strategically useful.",
-            "Do not accept verbal-only compensation details; ask for written package components.",
-            "Do not negotiate before confirming level, scope, work mode, and review cycle.",
-            "Do not trade base salary away without valuing the replacement benefit."
-          ],
-          "nextActions": [
-            "Collect market compensation evidence before naming a number.",
-            "Ask recruiter for approved range and level.",
-            "Map the job scope to proof points in the tailored CV.",
-            "Prepare one counter package with base, bonus/equity, and non-cash levers."
-          ],
-          "targetFrame": "Do not name a number first. Ask for the approved range, level, and total compensation structure before anchoring."
-        },
-        "stories": [
-          {
-            "id": "story-1",
-            "theme": "frontend product execution",
-            "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
-            "applicableQuestions": [
-              "Tell me about a project you are proud of.",
-              "Tell me about a time you handled ambiguity.",
-              "How have you applied frontend product execution?"
-            ],
-            "star": {
-              "situation": "You were tasked with a frontend product challenge. Proof point: \"Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.\" — set the scene: what product, what team size, and what was broken or missing?",
-              "task": "What was the specific outcome you were accountable for? Include the success metric (e.g. performance score, user adoption rate, release date).",
-              "action": "Walk through the key technical decisions: component architecture, state management tradeoffs, accessibility choices, or API contract design.",
-              "result": "Quantify the impact: load time delta, user adoption %, code reduction %, or stakeholder feedback. If no number, describe the quality or velocity improvement.",
-              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
-            },
-            "keywords": [
-              "frontend product execution",
-              "JavaScript",
-              "TypeScript",
-              "React",
-              "Next.js",
-              "CSS",
-              "Tailwind",
-              "Accessibility"
-            ],
-            "relevance": 0
-          },
-          {
-            "id": "story-2",
-            "theme": "data-heavy product decisions",
-            "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
-            "applicableQuestions": [
-              "Tell me about a project you are proud of.",
-              "Tell me about a time you handled ambiguity.",
-              "How have you applied data-heavy product decisions?"
-            ],
-            "star": {
-              "situation": "You were working with a data-intensive product. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — describe the data volume, the user workflow, and what was difficult to render or interpret.",
-              "task": "What decision did you own? (chart type, data model, aggregation strategy, caching layer, etc.)",
-              "action": "Explain how you chose between options, what you built or prototyped, and how you validated your approach with data or users.",
-              "result": "State the outcome: query latency, dashboard load time, user comprehension improvement, or reduction in support requests.",
-              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
-            },
-            "keywords": [
-              "data-heavy product decisions",
-              "JavaScript",
-              "TypeScript",
-              "React",
-              "Next.js",
-              "CSS",
-              "Tailwind",
-              "Accessibility"
-            ],
-            "relevance": 0
-          },
-          {
-            "id": "story-3",
-            "theme": "systems and API collaboration",
-            "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
-            "applicableQuestions": [
-              "Tell me about a project you are proud of.",
-              "Tell me about a time you handled ambiguity.",
-              "How have you applied systems and API collaboration?"
-            ],
-            "star": {
-              "situation": "You collaborated across system boundaries. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — name the systems, teams, and integration surface area.",
-              "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
-              "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
-              "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
-              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
-            },
-            "keywords": [
-              "systems and API collaboration",
-              "JavaScript",
-              "TypeScript",
-              "React",
-              "Next.js",
-              "CSS",
-              "Tailwind",
-              "Accessibility"
-            ],
-            "relevance": 0
-          }
-        ],
-        "applyAgent": {
-          "mode": "human-in-the-loop",
-          "url": "https://www.themuse.com/jobs/thecocacolacompany/software-engineer-i-crm",
-          "steps": [
-            "Open the application URL in a controlled browser session.",
-            "Extract visible form fields and required uploads.",
-            "Map CV profile fields to the form without submitting.",
-            "Prepare tailored PDF and outreach text.",
-            "Stop before final submit and ask the user to review."
-          ],
-          "guardrails": [
-            "Never submit without explicit user confirmation.",
-            "Never fabricate work authorization, salary history, degree, or experience.",
-            "Never store API keys or credentials in job metadata.",
-            "Record only application status and user-approved notes."
-          ]
-        }
-      }
-    },
-    {
       "jobKey": "url:https://www.themuse.com/jobs/bankofamerica/principal-engineer-gbs-ind-783d05",
       "company": "Bank of America",
       "title": "Principal Engineer - GBS IND",
       "score": 95,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-12T00:25:31.438Z",
-      "completedAt": "2026-06-12T00:25:31.440Z",
+      "startedAt": "2026-06-13T00:26:56.249Z",
+      "completedAt": "2026-06-13T00:26:56.251Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -1929,9 +1088,16 @@ window.CV_CAREER_OPS_PARALLEL = {
           ]
         },
         "research": {
-          "signals": [],
-          "evidenceCount": 0,
-          "questions": []
+          "signals": [
+            "AI / data / platform signal"
+          ],
+          "evidenceCount": 1,
+          "questions": [
+            "What business unit owns the Principal Engineer - GBS IND role?",
+            "What measurable outcomes would this team expect in the first 90 days?",
+            "What recent company/product signals change the risk or upside?",
+            "Which CV proof points should be highlighted for this company?"
+          ]
         },
         "application": {
           "checklist": [
@@ -2030,22 +1196,22 @@ window.CV_CAREER_OPS_PARALLEL = {
           },
           {
             "id": "story-2",
-            "theme": "data-heavy product decisions",
+            "theme": "systems and API collaboration",
             "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
             "applicableQuestions": [
               "Tell me about a project you are proud of.",
               "Tell me about a time you handled ambiguity.",
-              "How have you applied data-heavy product decisions?"
+              "How have you applied systems and API collaboration?"
             ],
             "star": {
-              "situation": "You were working with a data-intensive product. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — describe the data volume, the user workflow, and what was difficult to render or interpret.",
-              "task": "What decision did you own? (chart type, data model, aggregation strategy, caching layer, etc.)",
-              "action": "Explain how you chose between options, what you built or prototyped, and how you validated your approach with data or users.",
-              "result": "State the outcome: query latency, dashboard load time, user comprehension improvement, or reduction in support requests.",
+              "situation": "You collaborated across system boundaries. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — name the systems, teams, and integration surface area.",
+              "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
+              "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
+              "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
               "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
             },
             "keywords": [
-              "data-heavy product decisions",
+              "systems and API collaboration",
               "JavaScript",
               "TypeScript",
               "React",
@@ -2058,22 +1224,22 @@ window.CV_CAREER_OPS_PARALLEL = {
           },
           {
             "id": "story-3",
-            "theme": "systems and API collaboration",
+            "theme": "accessibility and quality",
             "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
             "applicableQuestions": [
               "Tell me about a project you are proud of.",
               "Tell me about a time you handled ambiguity.",
-              "How have you applied systems and API collaboration?"
+              "How have you applied accessibility and quality?"
             ],
             "star": {
-              "situation": "You collaborated across system boundaries. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — name the systems, teams, and integration surface area.",
-              "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
-              "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
-              "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
+              "situation": "You led or contributed to an accessibility or quality initiative. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — what was the starting state and who was affected?",
+              "task": "What standard or target were you working toward (WCAG level, test coverage %, zero-defect milestone)?",
+              "action": "Describe the audit process, tooling (axe, Lighthouse, screen reader testing), and how you prioritized fixes across components.",
+              "result": "State the outcome: WCAG compliance level achieved, user complaints reduced, or CI gate added to prevent regressions.",
               "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
             },
             "keywords": [
-              "systems and API collaboration",
+              "accessibility and quality",
               "JavaScript",
               "TypeScript",
               "React",
@@ -2111,8 +1277,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 95,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-12T00:25:31.438Z",
-      "completedAt": "2026-06-12T00:25:31.439Z",
+      "startedAt": "2026-06-13T00:26:56.249Z",
+      "completedAt": "2026-06-13T00:26:56.251Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -2133,9 +1299,9 @@ window.CV_CAREER_OPS_PARALLEL = {
             "AI / data / platform signal",
             "remote or hybrid signal"
           ],
-          "evidenceCount": 3,
+          "evidenceCount": 5,
           "questions": [
-            "What business unit owns the Software Engineer I role?",
+            "What business unit owns the Senior Software Engineer II role?",
             "What measurable outcomes would this team expect in the first 90 days?",
             "What recent company/product signals change the risk or upside?",
             "Which CV proof points should be highlighted for this company?"
@@ -2150,9 +1316,9 @@ window.CV_CAREER_OPS_PARALLEL = {
           ]
         },
         "compensation": {
-          "jobKey": "url:https://www.themuse.com/jobs/thecocacolacompany/software-engineer-i-f085ec",
+          "jobKey": "url:https://www.themuse.com/jobs/thecocacolacompany/senior-software-engineer-ii-45ddca",
           "company": "The Coca-Cola Company",
-          "title": "Software Engineer I",
+          "title": "Senior Software Engineer II",
           "market": "us",
           "inferredLevel": "senior",
           "candidateLevel": "mid",
@@ -2188,8 +1354,8 @@ window.CV_CAREER_OPS_PARALLEL = {
             ]
           },
           "negotiationScript": {
-            "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Software Engineer I package, including base, bonus, equity, and review cycle?",
-            "valueAnchor": "Based on the scope of Software Engineer I and my fit around API, engineer, product, data, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
+            "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Senior Software Engineer II package, including base, bonus, equity, and review cycle?",
+            "valueAnchor": "Based on the scope of Senior Software Engineer II and my fit around API, engineer, product, data, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
             "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
             "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
             "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
@@ -2239,22 +1405,22 @@ window.CV_CAREER_OPS_PARALLEL = {
           },
           {
             "id": "story-2",
-            "theme": "data-heavy product decisions",
+            "theme": "systems and API collaboration",
             "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
             "applicableQuestions": [
               "Tell me about a project you are proud of.",
               "Tell me about a time you handled ambiguity.",
-              "How have you applied data-heavy product decisions?"
+              "How have you applied systems and API collaboration?"
             ],
             "star": {
-              "situation": "You were working with a data-intensive product. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — describe the data volume, the user workflow, and what was difficult to render or interpret.",
-              "task": "What decision did you own? (chart type, data model, aggregation strategy, caching layer, etc.)",
-              "action": "Explain how you chose between options, what you built or prototyped, and how you validated your approach with data or users.",
-              "result": "State the outcome: query latency, dashboard load time, user comprehension improvement, or reduction in support requests.",
+              "situation": "You collaborated across system boundaries. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — name the systems, teams, and integration surface area.",
+              "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
+              "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
+              "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
               "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
             },
             "keywords": [
-              "data-heavy product decisions",
+              "systems and API collaboration",
               "JavaScript",
               "TypeScript",
               "React",
@@ -2267,22 +1433,22 @@ window.CV_CAREER_OPS_PARALLEL = {
           },
           {
             "id": "story-3",
-            "theme": "systems and API collaboration",
+            "theme": "accessibility and quality",
             "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
             "applicableQuestions": [
               "Tell me about a project you are proud of.",
               "Tell me about a time you handled ambiguity.",
-              "How have you applied systems and API collaboration?"
+              "How have you applied accessibility and quality?"
             ],
             "star": {
-              "situation": "You collaborated across system boundaries. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — name the systems, teams, and integration surface area.",
-              "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
-              "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
-              "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
+              "situation": "You led or contributed to an accessibility or quality initiative. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — what was the starting state and who was affected?",
+              "task": "What standard or target were you working toward (WCAG level, test coverage %, zero-defect milestone)?",
+              "action": "Describe the audit process, tooling (axe, Lighthouse, screen reader testing), and how you prioritized fixes across components.",
+              "result": "State the outcome: WCAG compliance level achieved, user complaints reduced, or CI gate added to prevent regressions.",
               "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
             },
             "keywords": [
-              "systems and API collaboration",
+              "accessibility and quality",
               "JavaScript",
               "TypeScript",
               "React",
@@ -2314,14 +1480,14 @@ window.CV_CAREER_OPS_PARALLEL = {
       }
     },
     {
-      "jobKey": "url:https://www.themuse.com/jobs/thecocacolacompany/software-engineer-i-ea6f68",
+      "jobKey": "url:https://www.themuse.com/jobs/thecocacolacompany/software-engineer-i-798d00",
       "company": "The Coca-Cola Company",
       "title": "Software Engineer I",
       "score": 95,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-12T00:25:31.438Z",
-      "completedAt": "2026-06-12T00:25:31.440Z",
+      "startedAt": "2026-06-13T00:26:56.249Z",
+      "completedAt": "2026-06-13T00:26:56.251Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -2342,9 +1508,9 @@ window.CV_CAREER_OPS_PARALLEL = {
             "AI / data / platform signal",
             "remote or hybrid signal"
           ],
-          "evidenceCount": 3,
+          "evidenceCount": 5,
           "questions": [
-            "What business unit owns the Software Engineer I role?",
+            "What business unit owns the Senior Software Engineer II role?",
             "What measurable outcomes would this team expect in the first 90 days?",
             "What recent company/product signals change the risk or upside?",
             "Which CV proof points should be highlighted for this company?"
@@ -2359,9 +1525,9 @@ window.CV_CAREER_OPS_PARALLEL = {
           ]
         },
         "compensation": {
-          "jobKey": "url:https://www.themuse.com/jobs/thecocacolacompany/software-engineer-i-f085ec",
+          "jobKey": "url:https://www.themuse.com/jobs/thecocacolacompany/senior-software-engineer-ii-45ddca",
           "company": "The Coca-Cola Company",
-          "title": "Software Engineer I",
+          "title": "Senior Software Engineer II",
           "market": "us",
           "inferredLevel": "senior",
           "candidateLevel": "mid",
@@ -2397,8 +1563,8 @@ window.CV_CAREER_OPS_PARALLEL = {
             ]
           },
           "negotiationScript": {
-            "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Software Engineer I package, including base, bonus, equity, and review cycle?",
-            "valueAnchor": "Based on the scope of Software Engineer I and my fit around API, engineer, product, data, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
+            "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Senior Software Engineer II package, including base, bonus, equity, and review cycle?",
+            "valueAnchor": "Based on the scope of Senior Software Engineer II and my fit around API, engineer, product, data, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
             "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
             "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
             "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
@@ -2448,43 +1614,15 @@ window.CV_CAREER_OPS_PARALLEL = {
           },
           {
             "id": "story-2",
-            "theme": "data-heavy product decisions",
-            "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
-            "applicableQuestions": [
-              "Tell me about a project you are proud of.",
-              "Tell me about a time you handled ambiguity.",
-              "How have you applied data-heavy product decisions?"
-            ],
-            "star": {
-              "situation": "You were working with a data-intensive product. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — describe the data volume, the user workflow, and what was difficult to render or interpret.",
-              "task": "What decision did you own? (chart type, data model, aggregation strategy, caching layer, etc.)",
-              "action": "Explain how you chose between options, what you built or prototyped, and how you validated your approach with data or users.",
-              "result": "State the outcome: query latency, dashboard load time, user comprehension improvement, or reduction in support requests.",
-              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
-            },
-            "keywords": [
-              "data-heavy product decisions",
-              "JavaScript",
-              "TypeScript",
-              "React",
-              "Next.js",
-              "CSS",
-              "Tailwind",
-              "Accessibility"
-            ],
-            "relevance": 0
-          },
-          {
-            "id": "story-3",
             "theme": "systems and API collaboration",
-            "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
+            "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
             "applicableQuestions": [
               "Tell me about a project you are proud of.",
               "Tell me about a time you handled ambiguity.",
               "How have you applied systems and API collaboration?"
             ],
             "star": {
-              "situation": "You collaborated across system boundaries. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — name the systems, teams, and integration surface area.",
+              "situation": "You collaborated across system boundaries. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — name the systems, teams, and integration surface area.",
               "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
               "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
               "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
@@ -2501,11 +1639,39 @@ window.CV_CAREER_OPS_PARALLEL = {
               "Accessibility"
             ],
             "relevance": 0
+          },
+          {
+            "id": "story-3",
+            "theme": "accessibility and quality",
+            "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
+            "applicableQuestions": [
+              "Tell me about a project you are proud of.",
+              "Tell me about a time you handled ambiguity.",
+              "How have you applied accessibility and quality?"
+            ],
+            "star": {
+              "situation": "You led or contributed to an accessibility or quality initiative. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — what was the starting state and who was affected?",
+              "task": "What standard or target were you working toward (WCAG level, test coverage %, zero-defect milestone)?",
+              "action": "Describe the audit process, tooling (axe, Lighthouse, screen reader testing), and how you prioritized fixes across components.",
+              "result": "State the outcome: WCAG compliance level achieved, user complaints reduced, or CI gate added to prevent regressions.",
+              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
+            },
+            "keywords": [
+              "accessibility and quality",
+              "JavaScript",
+              "TypeScript",
+              "React",
+              "Next.js",
+              "CSS",
+              "Tailwind",
+              "Accessibility"
+            ],
+            "relevance": 0
           }
         ],
         "applyAgent": {
           "mode": "human-in-the-loop",
-          "url": "https://www.themuse.com/jobs/thecocacolacompany/software-engineer-i-ea6f68",
+          "url": "https://www.themuse.com/jobs/thecocacolacompany/software-engineer-i-798d00",
           "steps": [
             "Open the application URL in a controlled browser session.",
             "Extract visible form fields and required uploads.",
@@ -2529,8 +1695,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 95,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-12T00:25:31.442Z",
-      "completedAt": "2026-06-12T00:25:31.443Z",
+      "startedAt": "2026-06-13T00:26:56.253Z",
+      "completedAt": "2026-06-13T00:26:56.255Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -2551,9 +1717,9 @@ window.CV_CAREER_OPS_PARALLEL = {
             "AI / data / platform signal",
             "remote or hybrid signal"
           ],
-          "evidenceCount": 3,
+          "evidenceCount": 5,
           "questions": [
-            "What business unit owns the Software Engineer I role?",
+            "What business unit owns the Senior Software Engineer II role?",
             "What measurable outcomes would this team expect in the first 90 days?",
             "What recent company/product signals change the risk or upside?",
             "Which CV proof points should be highlighted for this company?"
@@ -2568,9 +1734,9 @@ window.CV_CAREER_OPS_PARALLEL = {
           ]
         },
         "compensation": {
-          "jobKey": "url:https://www.themuse.com/jobs/thecocacolacompany/software-engineer-i-f085ec",
+          "jobKey": "url:https://www.themuse.com/jobs/thecocacolacompany/senior-software-engineer-ii-45ddca",
           "company": "The Coca-Cola Company",
-          "title": "Software Engineer I",
+          "title": "Senior Software Engineer II",
           "market": "us",
           "inferredLevel": "senior",
           "candidateLevel": "mid",
@@ -2606,8 +1772,8 @@ window.CV_CAREER_OPS_PARALLEL = {
             ]
           },
           "negotiationScript": {
-            "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Software Engineer I package, including base, bonus, equity, and review cycle?",
-            "valueAnchor": "Based on the scope of Software Engineer I and my fit around API, engineer, product, data, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
+            "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Senior Software Engineer II package, including base, bonus, equity, and review cycle?",
+            "valueAnchor": "Based on the scope of Senior Software Engineer II and my fit around API, engineer, product, data, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
             "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
             "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
             "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
@@ -2657,22 +1823,22 @@ window.CV_CAREER_OPS_PARALLEL = {
           },
           {
             "id": "story-2",
-            "theme": "data-heavy product decisions",
+            "theme": "systems and API collaboration",
             "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
             "applicableQuestions": [
               "Tell me about a project you are proud of.",
               "Tell me about a time you handled ambiguity.",
-              "How have you applied data-heavy product decisions?"
+              "How have you applied systems and API collaboration?"
             ],
             "star": {
-              "situation": "You were working with a data-intensive product. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — describe the data volume, the user workflow, and what was difficult to render or interpret.",
-              "task": "What decision did you own? (chart type, data model, aggregation strategy, caching layer, etc.)",
-              "action": "Explain how you chose between options, what you built or prototyped, and how you validated your approach with data or users.",
-              "result": "State the outcome: query latency, dashboard load time, user comprehension improvement, or reduction in support requests.",
+              "situation": "You collaborated across system boundaries. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — name the systems, teams, and integration surface area.",
+              "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
+              "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
+              "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
               "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
             },
             "keywords": [
-              "data-heavy product decisions",
+              "systems and API collaboration",
               "JavaScript",
               "TypeScript",
               "React",
@@ -2685,22 +1851,22 @@ window.CV_CAREER_OPS_PARALLEL = {
           },
           {
             "id": "story-3",
-            "theme": "systems and API collaboration",
+            "theme": "accessibility and quality",
             "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
             "applicableQuestions": [
               "Tell me about a project you are proud of.",
               "Tell me about a time you handled ambiguity.",
-              "How have you applied systems and API collaboration?"
+              "How have you applied accessibility and quality?"
             ],
             "star": {
-              "situation": "You collaborated across system boundaries. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — name the systems, teams, and integration surface area.",
-              "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
-              "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
-              "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
+              "situation": "You led or contributed to an accessibility or quality initiative. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — what was the starting state and who was affected?",
+              "task": "What standard or target were you working toward (WCAG level, test coverage %, zero-defect milestone)?",
+              "action": "Describe the audit process, tooling (axe, Lighthouse, screen reader testing), and how you prioritized fixes across components.",
+              "result": "State the outcome: WCAG compliance level achieved, user complaints reduced, or CI gate added to prevent regressions.",
               "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
             },
             "keywords": [
-              "systems and API collaboration",
+              "accessibility and quality",
               "JavaScript",
               "TypeScript",
               "React",
@@ -2732,223 +1898,14 @@ window.CV_CAREER_OPS_PARALLEL = {
       }
     },
     {
-      "jobKey": "url:https://www.themuse.com/jobs/thecocacolacompany/software-engineer-i-crm-0326df",
-      "company": "The Coca-Cola Company",
-      "title": "Software Engineer I - CRM",
-      "score": 95,
-      "grade": "A",
-      "priority": "P0",
-      "startedAt": "2026-06-12T00:25:31.442Z",
-      "completedAt": "2026-06-12T00:25:31.444Z",
-      "workers": {
-        "evaluation": {
-          "recommendation": "值得投遞",
-          "keywords": [
-            "API",
-            "engineer",
-            "product",
-            "data"
-          ],
-          "nextActions": [
-            "開啟職缺確認仍可投遞",
-            "產生客製 ATS PDF",
-            "用同職類高分職缺校準履歷關鍵字"
-          ]
-        },
-        "research": {
-          "signals": [
-            "AI / data / platform signal",
-            "remote or hybrid signal"
-          ],
-          "evidenceCount": 3,
-          "questions": [
-            "What business unit owns the Software Engineer I role?",
-            "What measurable outcomes would this team expect in the first 90 days?",
-            "What recent company/product signals change the risk or upside?",
-            "Which CV proof points should be highlighted for this company?"
-          ]
-        },
-        "application": {
-          "checklist": [
-            "Confirm posting is active.",
-            "Generate tailored ATS PDF.",
-            "Prepare outreach and follow-up.",
-            "Log status and next follow-up."
-          ]
-        },
-        "compensation": {
-          "jobKey": "url:https://www.themuse.com/jobs/thecocacolacompany/software-engineer-i-f085ec",
-          "company": "The Coca-Cola Company",
-          "title": "Software Engineer I",
-          "market": "us",
-          "inferredLevel": "senior",
-          "candidateLevel": "mid",
-          "leverage": "high",
-          "evidence": {
-            "salaryMentions": [],
-            "benefitSignals": [
-              "work-mode flexibility",
-              "learning budget"
-            ]
-          },
-          "marketBenchmark": null,
-          "structure": {
-            "baseSalary": [
-              "Need verified market data or recruiter range before setting a numeric anchor."
-            ],
-            "bonus": "Ask whether there is annual bonus, performance bonus, or sign-on bonus.",
-            "equity": "Ask whether equity, RSU, options, or profit-sharing exists.",
-            "benefits": [
-              "Health / insurance coverage",
-              "Paid leave and holidays",
-              "Learning budget or certification support",
-              "Remote/hybrid setup, commute, or relocation support",
-              "Review cycle and promotion timeline"
-            ],
-            "nonCashLevers": [
-              "Title / level calibration",
-              "Start date flexibility",
-              "Remote days",
-              "Equipment budget",
-              "First review at 3 or 6 months",
-              "Conference / learning budget"
-            ]
-          },
-          "negotiationScript": {
-            "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Software Engineer I package, including base, bonus, equity, and review cycle?",
-            "valueAnchor": "Based on the scope of Software Engineer I and my fit around API, engineer, product, data, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
-            "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
-            "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
-            "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
-          },
-          "redLines": [
-            "Do not disclose current compensation unless legally appropriate and strategically useful.",
-            "Do not accept verbal-only compensation details; ask for written package components.",
-            "Do not negotiate before confirming level, scope, work mode, and review cycle.",
-            "Do not trade base salary away without valuing the replacement benefit."
-          ],
-          "nextActions": [
-            "Collect market compensation evidence before naming a number.",
-            "Ask recruiter for approved range and level.",
-            "Map the job scope to proof points in the tailored CV.",
-            "Prepare one counter package with base, bonus/equity, and non-cash levers."
-          ],
-          "targetFrame": "Do not name a number first. Ask for the approved range, level, and total compensation structure before anchoring."
-        },
-        "stories": [
-          {
-            "id": "story-1",
-            "theme": "frontend product execution",
-            "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
-            "applicableQuestions": [
-              "Tell me about a project you are proud of.",
-              "Tell me about a time you handled ambiguity.",
-              "How have you applied frontend product execution?"
-            ],
-            "star": {
-              "situation": "You were tasked with a frontend product challenge. Proof point: \"Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.\" — set the scene: what product, what team size, and what was broken or missing?",
-              "task": "What was the specific outcome you were accountable for? Include the success metric (e.g. performance score, user adoption rate, release date).",
-              "action": "Walk through the key technical decisions: component architecture, state management tradeoffs, accessibility choices, or API contract design.",
-              "result": "Quantify the impact: load time delta, user adoption %, code reduction %, or stakeholder feedback. If no number, describe the quality or velocity improvement.",
-              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
-            },
-            "keywords": [
-              "frontend product execution",
-              "JavaScript",
-              "TypeScript",
-              "React",
-              "Next.js",
-              "CSS",
-              "Tailwind",
-              "Accessibility"
-            ],
-            "relevance": 0
-          },
-          {
-            "id": "story-2",
-            "theme": "data-heavy product decisions",
-            "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
-            "applicableQuestions": [
-              "Tell me about a project you are proud of.",
-              "Tell me about a time you handled ambiguity.",
-              "How have you applied data-heavy product decisions?"
-            ],
-            "star": {
-              "situation": "You were working with a data-intensive product. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — describe the data volume, the user workflow, and what was difficult to render or interpret.",
-              "task": "What decision did you own? (chart type, data model, aggregation strategy, caching layer, etc.)",
-              "action": "Explain how you chose between options, what you built or prototyped, and how you validated your approach with data or users.",
-              "result": "State the outcome: query latency, dashboard load time, user comprehension improvement, or reduction in support requests.",
-              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
-            },
-            "keywords": [
-              "data-heavy product decisions",
-              "JavaScript",
-              "TypeScript",
-              "React",
-              "Next.js",
-              "CSS",
-              "Tailwind",
-              "Accessibility"
-            ],
-            "relevance": 0
-          },
-          {
-            "id": "story-3",
-            "theme": "systems and API collaboration",
-            "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
-            "applicableQuestions": [
-              "Tell me about a project you are proud of.",
-              "Tell me about a time you handled ambiguity.",
-              "How have you applied systems and API collaboration?"
-            ],
-            "star": {
-              "situation": "You collaborated across system boundaries. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — name the systems, teams, and integration surface area.",
-              "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
-              "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
-              "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
-              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
-            },
-            "keywords": [
-              "systems and API collaboration",
-              "JavaScript",
-              "TypeScript",
-              "React",
-              "Next.js",
-              "CSS",
-              "Tailwind",
-              "Accessibility"
-            ],
-            "relevance": 0
-          }
-        ],
-        "applyAgent": {
-          "mode": "human-in-the-loop",
-          "url": "https://www.themuse.com/jobs/thecocacolacompany/software-engineer-i-crm-0326df",
-          "steps": [
-            "Open the application URL in a controlled browser session.",
-            "Extract visible form fields and required uploads.",
-            "Map CV profile fields to the form without submitting.",
-            "Prepare tailored PDF and outreach text.",
-            "Stop before final submit and ask the user to review."
-          ],
-          "guardrails": [
-            "Never submit without explicit user confirmation.",
-            "Never fabricate work authorization, salary history, degree, or experience.",
-            "Never store API keys or credentials in job metadata.",
-            "Record only application status and user-approved notes."
-          ]
-        }
-      }
-    },
-    {
       "jobKey": "url:https://www.themuse.com/jobs/thecocacolacompany/software-engineer-ii-crm-bdbbb8",
       "company": "The Coca-Cola Company",
       "title": "Software Engineer II - CRM",
       "score": 95,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-12T00:25:31.442Z",
-      "completedAt": "2026-06-12T00:25:31.444Z",
+      "startedAt": "2026-06-13T00:26:56.253Z",
+      "completedAt": "2026-06-13T00:26:56.255Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -2969,9 +1926,9 @@ window.CV_CAREER_OPS_PARALLEL = {
             "AI / data / platform signal",
             "remote or hybrid signal"
           ],
-          "evidenceCount": 3,
+          "evidenceCount": 5,
           "questions": [
-            "What business unit owns the Software Engineer I role?",
+            "What business unit owns the Senior Software Engineer II role?",
             "What measurable outcomes would this team expect in the first 90 days?",
             "What recent company/product signals change the risk or upside?",
             "Which CV proof points should be highlighted for this company?"
@@ -2986,9 +1943,9 @@ window.CV_CAREER_OPS_PARALLEL = {
           ]
         },
         "compensation": {
-          "jobKey": "url:https://www.themuse.com/jobs/thecocacolacompany/software-engineer-i-f085ec",
+          "jobKey": "url:https://www.themuse.com/jobs/thecocacolacompany/senior-software-engineer-ii-45ddca",
           "company": "The Coca-Cola Company",
-          "title": "Software Engineer I",
+          "title": "Senior Software Engineer II",
           "market": "us",
           "inferredLevel": "senior",
           "candidateLevel": "mid",
@@ -3024,8 +1981,8 @@ window.CV_CAREER_OPS_PARALLEL = {
             ]
           },
           "negotiationScript": {
-            "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Software Engineer I package, including base, bonus, equity, and review cycle?",
-            "valueAnchor": "Based on the scope of Software Engineer I and my fit around API, engineer, product, data, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
+            "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Senior Software Engineer II package, including base, bonus, equity, and review cycle?",
+            "valueAnchor": "Based on the scope of Senior Software Engineer II and my fit around API, engineer, product, data, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
             "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
             "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
             "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
@@ -3075,22 +2032,22 @@ window.CV_CAREER_OPS_PARALLEL = {
           },
           {
             "id": "story-2",
-            "theme": "data-heavy product decisions",
+            "theme": "systems and API collaboration",
             "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
             "applicableQuestions": [
               "Tell me about a project you are proud of.",
               "Tell me about a time you handled ambiguity.",
-              "How have you applied data-heavy product decisions?"
+              "How have you applied systems and API collaboration?"
             ],
             "star": {
-              "situation": "You were working with a data-intensive product. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — describe the data volume, the user workflow, and what was difficult to render or interpret.",
-              "task": "What decision did you own? (chart type, data model, aggregation strategy, caching layer, etc.)",
-              "action": "Explain how you chose between options, what you built or prototyped, and how you validated your approach with data or users.",
-              "result": "State the outcome: query latency, dashboard load time, user comprehension improvement, or reduction in support requests.",
+              "situation": "You collaborated across system boundaries. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — name the systems, teams, and integration surface area.",
+              "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
+              "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
+              "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
               "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
             },
             "keywords": [
-              "data-heavy product decisions",
+              "systems and API collaboration",
               "JavaScript",
               "TypeScript",
               "React",
@@ -3103,22 +2060,22 @@ window.CV_CAREER_OPS_PARALLEL = {
           },
           {
             "id": "story-3",
-            "theme": "systems and API collaboration",
+            "theme": "accessibility and quality",
             "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
             "applicableQuestions": [
               "Tell me about a project you are proud of.",
               "Tell me about a time you handled ambiguity.",
-              "How have you applied systems and API collaboration?"
+              "How have you applied accessibility and quality?"
             ],
             "star": {
-              "situation": "You collaborated across system boundaries. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — name the systems, teams, and integration surface area.",
-              "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
-              "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
-              "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
+              "situation": "You led or contributed to an accessibility or quality initiative. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — what was the starting state and who was affected?",
+              "task": "What standard or target were you working toward (WCAG level, test coverage %, zero-defect milestone)?",
+              "action": "Describe the audit process, tooling (axe, Lighthouse, screen reader testing), and how you prioritized fixes across components.",
+              "result": "State the outcome: WCAG compliance level achieved, user complaints reduced, or CI gate added to prevent regressions.",
               "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
             },
             "keywords": [
-              "systems and API collaboration",
+              "accessibility and quality",
               "JavaScript",
               "TypeScript",
               "React",
@@ -3156,8 +2113,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 95,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-12T00:25:31.442Z",
-      "completedAt": "2026-06-12T00:25:31.444Z",
+      "startedAt": "2026-06-13T00:26:56.253Z",
+      "completedAt": "2026-06-13T00:26:56.254Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -3178,9 +2135,9 @@ window.CV_CAREER_OPS_PARALLEL = {
             "AI / data / platform signal",
             "remote or hybrid signal"
           ],
-          "evidenceCount": 3,
+          "evidenceCount": 5,
           "questions": [
-            "What business unit owns the Software Engineer I role?",
+            "What business unit owns the Senior Software Engineer II role?",
             "What measurable outcomes would this team expect in the first 90 days?",
             "What recent company/product signals change the risk or upside?",
             "Which CV proof points should be highlighted for this company?"
@@ -3195,9 +2152,9 @@ window.CV_CAREER_OPS_PARALLEL = {
           ]
         },
         "compensation": {
-          "jobKey": "url:https://www.themuse.com/jobs/thecocacolacompany/software-engineer-i-f085ec",
+          "jobKey": "url:https://www.themuse.com/jobs/thecocacolacompany/senior-software-engineer-ii-45ddca",
           "company": "The Coca-Cola Company",
-          "title": "Software Engineer I",
+          "title": "Senior Software Engineer II",
           "market": "us",
           "inferredLevel": "senior",
           "candidateLevel": "mid",
@@ -3233,8 +2190,8 @@ window.CV_CAREER_OPS_PARALLEL = {
             ]
           },
           "negotiationScript": {
-            "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Software Engineer I package, including base, bonus, equity, and review cycle?",
-            "valueAnchor": "Based on the scope of Software Engineer I and my fit around API, engineer, product, data, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
+            "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Senior Software Engineer II package, including base, bonus, equity, and review cycle?",
+            "valueAnchor": "Based on the scope of Senior Software Engineer II and my fit around API, engineer, product, data, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
             "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
             "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
             "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
@@ -3284,22 +2241,22 @@ window.CV_CAREER_OPS_PARALLEL = {
           },
           {
             "id": "story-2",
-            "theme": "data-heavy product decisions",
+            "theme": "systems and API collaboration",
             "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
             "applicableQuestions": [
               "Tell me about a project you are proud of.",
               "Tell me about a time you handled ambiguity.",
-              "How have you applied data-heavy product decisions?"
+              "How have you applied systems and API collaboration?"
             ],
             "star": {
-              "situation": "You were working with a data-intensive product. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — describe the data volume, the user workflow, and what was difficult to render or interpret.",
-              "task": "What decision did you own? (chart type, data model, aggregation strategy, caching layer, etc.)",
-              "action": "Explain how you chose between options, what you built or prototyped, and how you validated your approach with data or users.",
-              "result": "State the outcome: query latency, dashboard load time, user comprehension improvement, or reduction in support requests.",
+              "situation": "You collaborated across system boundaries. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — name the systems, teams, and integration surface area.",
+              "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
+              "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
+              "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
               "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
             },
             "keywords": [
-              "data-heavy product decisions",
+              "systems and API collaboration",
               "JavaScript",
               "TypeScript",
               "React",
@@ -3312,22 +2269,22 @@ window.CV_CAREER_OPS_PARALLEL = {
           },
           {
             "id": "story-3",
-            "theme": "systems and API collaboration",
+            "theme": "accessibility and quality",
             "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
             "applicableQuestions": [
               "Tell me about a project you are proud of.",
               "Tell me about a time you handled ambiguity.",
-              "How have you applied systems and API collaboration?"
+              "How have you applied accessibility and quality?"
             ],
             "star": {
-              "situation": "You collaborated across system boundaries. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — name the systems, teams, and integration surface area.",
-              "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
-              "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
-              "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
+              "situation": "You led or contributed to an accessibility or quality initiative. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — what was the starting state and who was affected?",
+              "task": "What standard or target were you working toward (WCAG level, test coverage %, zero-defect milestone)?",
+              "action": "Describe the audit process, tooling (axe, Lighthouse, screen reader testing), and how you prioritized fixes across components.",
+              "result": "State the outcome: WCAG compliance level achieved, user complaints reduced, or CI gate added to prevent regressions.",
               "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
             },
             "keywords": [
-              "systems and API collaboration",
+              "accessibility and quality",
               "JavaScript",
               "TypeScript",
               "React",
@@ -3365,8 +2322,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 95,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-12T00:25:31.446Z",
-      "completedAt": "2026-06-12T00:25:31.448Z",
+      "startedAt": "2026-06-13T00:26:56.253Z",
+      "completedAt": "2026-06-13T00:26:56.255Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -3387,9 +2344,9 @@ window.CV_CAREER_OPS_PARALLEL = {
             "AI / data / platform signal",
             "remote or hybrid signal"
           ],
-          "evidenceCount": 3,
+          "evidenceCount": 5,
           "questions": [
-            "What business unit owns the Software Engineer I role?",
+            "What business unit owns the Senior Software Engineer II role?",
             "What measurable outcomes would this team expect in the first 90 days?",
             "What recent company/product signals change the risk or upside?",
             "Which CV proof points should be highlighted for this company?"
@@ -3404,9 +2361,9 @@ window.CV_CAREER_OPS_PARALLEL = {
           ]
         },
         "compensation": {
-          "jobKey": "url:https://www.themuse.com/jobs/thecocacolacompany/software-engineer-i-f085ec",
+          "jobKey": "url:https://www.themuse.com/jobs/thecocacolacompany/senior-software-engineer-ii-45ddca",
           "company": "The Coca-Cola Company",
-          "title": "Software Engineer I",
+          "title": "Senior Software Engineer II",
           "market": "us",
           "inferredLevel": "senior",
           "candidateLevel": "mid",
@@ -3442,8 +2399,8 @@ window.CV_CAREER_OPS_PARALLEL = {
             ]
           },
           "negotiationScript": {
-            "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Software Engineer I package, including base, bonus, equity, and review cycle?",
-            "valueAnchor": "Based on the scope of Software Engineer I and my fit around API, engineer, product, data, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
+            "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Senior Software Engineer II package, including base, bonus, equity, and review cycle?",
+            "valueAnchor": "Based on the scope of Senior Software Engineer II and my fit around API, engineer, product, data, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
             "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
             "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
             "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
@@ -3493,22 +2450,22 @@ window.CV_CAREER_OPS_PARALLEL = {
           },
           {
             "id": "story-2",
-            "theme": "data-heavy product decisions",
+            "theme": "systems and API collaboration",
             "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
             "applicableQuestions": [
               "Tell me about a project you are proud of.",
               "Tell me about a time you handled ambiguity.",
-              "How have you applied data-heavy product decisions?"
+              "How have you applied systems and API collaboration?"
             ],
             "star": {
-              "situation": "You were working with a data-intensive product. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — describe the data volume, the user workflow, and what was difficult to render or interpret.",
-              "task": "What decision did you own? (chart type, data model, aggregation strategy, caching layer, etc.)",
-              "action": "Explain how you chose between options, what you built or prototyped, and how you validated your approach with data or users.",
-              "result": "State the outcome: query latency, dashboard load time, user comprehension improvement, or reduction in support requests.",
+              "situation": "You collaborated across system boundaries. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — name the systems, teams, and integration surface area.",
+              "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
+              "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
+              "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
               "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
             },
             "keywords": [
-              "data-heavy product decisions",
+              "systems and API collaboration",
               "JavaScript",
               "TypeScript",
               "React",
@@ -3521,22 +2478,22 @@ window.CV_CAREER_OPS_PARALLEL = {
           },
           {
             "id": "story-3",
-            "theme": "systems and API collaboration",
+            "theme": "accessibility and quality",
             "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
             "applicableQuestions": [
               "Tell me about a project you are proud of.",
               "Tell me about a time you handled ambiguity.",
-              "How have you applied systems and API collaboration?"
+              "How have you applied accessibility and quality?"
             ],
             "star": {
-              "situation": "You collaborated across system boundaries. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — name the systems, teams, and integration surface area.",
-              "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
-              "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
-              "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
+              "situation": "You led or contributed to an accessibility or quality initiative. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — what was the starting state and who was affected?",
+              "task": "What standard or target were you working toward (WCAG level, test coverage %, zero-defect milestone)?",
+              "action": "Describe the audit process, tooling (axe, Lighthouse, screen reader testing), and how you prioritized fixes across components.",
+              "result": "State the outcome: WCAG compliance level achieved, user complaints reduced, or CI gate added to prevent regressions.",
               "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
             },
             "keywords": [
-              "systems and API collaboration",
+              "accessibility and quality",
               "JavaScript",
               "TypeScript",
               "React",
@@ -3568,14 +2525,14 @@ window.CV_CAREER_OPS_PARALLEL = {
       }
     },
     {
-      "jobKey": "url:https://www.themuse.com/jobs/thecocacolacompany/software-engineer-ii-395a67",
+      "jobKey": "url:https://www.themuse.com/jobs/thecocacolacompany/software-engineer-i-f085ec",
       "company": "The Coca-Cola Company",
-      "title": "Software Engineer II",
+      "title": "Software Engineer I",
       "score": 95,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-12T00:25:31.446Z",
-      "completedAt": "2026-06-12T00:25:31.447Z",
+      "startedAt": "2026-06-13T00:26:56.257Z",
+      "completedAt": "2026-06-13T00:26:56.259Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -3596,9 +2553,9 @@ window.CV_CAREER_OPS_PARALLEL = {
             "AI / data / platform signal",
             "remote or hybrid signal"
           ],
-          "evidenceCount": 3,
+          "evidenceCount": 5,
           "questions": [
-            "What business unit owns the Software Engineer I role?",
+            "What business unit owns the Senior Software Engineer II role?",
             "What measurable outcomes would this team expect in the first 90 days?",
             "What recent company/product signals change the risk or upside?",
             "Which CV proof points should be highlighted for this company?"
@@ -3613,9 +2570,9 @@ window.CV_CAREER_OPS_PARALLEL = {
           ]
         },
         "compensation": {
-          "jobKey": "url:https://www.themuse.com/jobs/thecocacolacompany/software-engineer-i-f085ec",
+          "jobKey": "url:https://www.themuse.com/jobs/thecocacolacompany/senior-software-engineer-ii-45ddca",
           "company": "The Coca-Cola Company",
-          "title": "Software Engineer I",
+          "title": "Senior Software Engineer II",
           "market": "us",
           "inferredLevel": "senior",
           "candidateLevel": "mid",
@@ -3651,8 +2608,8 @@ window.CV_CAREER_OPS_PARALLEL = {
             ]
           },
           "negotiationScript": {
-            "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Software Engineer I package, including base, bonus, equity, and review cycle?",
-            "valueAnchor": "Based on the scope of Software Engineer I and my fit around API, engineer, product, data, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
+            "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Senior Software Engineer II package, including base, bonus, equity, and review cycle?",
+            "valueAnchor": "Based on the scope of Senior Software Engineer II and my fit around API, engineer, product, data, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
             "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
             "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
             "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
@@ -3702,22 +2659,22 @@ window.CV_CAREER_OPS_PARALLEL = {
           },
           {
             "id": "story-2",
-            "theme": "data-heavy product decisions",
+            "theme": "systems and API collaboration",
             "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
             "applicableQuestions": [
               "Tell me about a project you are proud of.",
               "Tell me about a time you handled ambiguity.",
-              "How have you applied data-heavy product decisions?"
+              "How have you applied systems and API collaboration?"
             ],
             "star": {
-              "situation": "You were working with a data-intensive product. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — describe the data volume, the user workflow, and what was difficult to render or interpret.",
-              "task": "What decision did you own? (chart type, data model, aggregation strategy, caching layer, etc.)",
-              "action": "Explain how you chose between options, what you built or prototyped, and how you validated your approach with data or users.",
-              "result": "State the outcome: query latency, dashboard load time, user comprehension improvement, or reduction in support requests.",
+              "situation": "You collaborated across system boundaries. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — name the systems, teams, and integration surface area.",
+              "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
+              "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
+              "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
               "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
             },
             "keywords": [
-              "data-heavy product decisions",
+              "systems and API collaboration",
               "JavaScript",
               "TypeScript",
               "React",
@@ -3730,15 +2687,196 @@ window.CV_CAREER_OPS_PARALLEL = {
           },
           {
             "id": "story-3",
-            "theme": "systems and API collaboration",
+            "theme": "accessibility and quality",
             "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
+            "applicableQuestions": [
+              "Tell me about a project you are proud of.",
+              "Tell me about a time you handled ambiguity.",
+              "How have you applied accessibility and quality?"
+            ],
+            "star": {
+              "situation": "You led or contributed to an accessibility or quality initiative. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — what was the starting state and who was affected?",
+              "task": "What standard or target were you working toward (WCAG level, test coverage %, zero-defect milestone)?",
+              "action": "Describe the audit process, tooling (axe, Lighthouse, screen reader testing), and how you prioritized fixes across components.",
+              "result": "State the outcome: WCAG compliance level achieved, user complaints reduced, or CI gate added to prevent regressions.",
+              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
+            },
+            "keywords": [
+              "accessibility and quality",
+              "JavaScript",
+              "TypeScript",
+              "React",
+              "Next.js",
+              "CSS",
+              "Tailwind",
+              "Accessibility"
+            ],
+            "relevance": 0
+          }
+        ],
+        "applyAgent": {
+          "mode": "human-in-the-loop",
+          "url": "https://www.themuse.com/jobs/thecocacolacompany/software-engineer-i-f085ec",
+          "steps": [
+            "Open the application URL in a controlled browser session.",
+            "Extract visible form fields and required uploads.",
+            "Map CV profile fields to the form without submitting.",
+            "Prepare tailored PDF and outreach text.",
+            "Stop before final submit and ask the user to review."
+          ],
+          "guardrails": [
+            "Never submit without explicit user confirmation.",
+            "Never fabricate work authorization, salary history, degree, or experience.",
+            "Never store API keys or credentials in job metadata.",
+            "Record only application status and user-approved notes."
+          ]
+        }
+      }
+    },
+    {
+      "jobKey": "url:https://www.themuse.com/jobs/thecocacolacompany/software-engineer-ii-395a67",
+      "company": "The Coca-Cola Company",
+      "title": "Software Engineer II",
+      "score": 95,
+      "grade": "A",
+      "priority": "P0",
+      "startedAt": "2026-06-13T00:26:56.257Z",
+      "completedAt": "2026-06-13T00:26:56.258Z",
+      "workers": {
+        "evaluation": {
+          "recommendation": "值得投遞",
+          "keywords": [
+            "API",
+            "engineer",
+            "product",
+            "data"
+          ],
+          "nextActions": [
+            "開啟職缺確認仍可投遞",
+            "產生客製 ATS PDF",
+            "用同職類高分職缺校準履歷關鍵字"
+          ]
+        },
+        "research": {
+          "signals": [
+            "AI / data / platform signal",
+            "remote or hybrid signal"
+          ],
+          "evidenceCount": 5,
+          "questions": [
+            "What business unit owns the Senior Software Engineer II role?",
+            "What measurable outcomes would this team expect in the first 90 days?",
+            "What recent company/product signals change the risk or upside?",
+            "Which CV proof points should be highlighted for this company?"
+          ]
+        },
+        "application": {
+          "checklist": [
+            "Confirm posting is active.",
+            "Generate tailored ATS PDF.",
+            "Prepare outreach and follow-up.",
+            "Log status and next follow-up."
+          ]
+        },
+        "compensation": {
+          "jobKey": "url:https://www.themuse.com/jobs/thecocacolacompany/senior-software-engineer-ii-45ddca",
+          "company": "The Coca-Cola Company",
+          "title": "Senior Software Engineer II",
+          "market": "us",
+          "inferredLevel": "senior",
+          "candidateLevel": "mid",
+          "leverage": "high",
+          "evidence": {
+            "salaryMentions": [],
+            "benefitSignals": [
+              "work-mode flexibility",
+              "learning budget"
+            ]
+          },
+          "marketBenchmark": null,
+          "structure": {
+            "baseSalary": [
+              "Need verified market data or recruiter range before setting a numeric anchor."
+            ],
+            "bonus": "Ask whether there is annual bonus, performance bonus, or sign-on bonus.",
+            "equity": "Ask whether equity, RSU, options, or profit-sharing exists.",
+            "benefits": [
+              "Health / insurance coverage",
+              "Paid leave and holidays",
+              "Learning budget or certification support",
+              "Remote/hybrid setup, commute, or relocation support",
+              "Review cycle and promotion timeline"
+            ],
+            "nonCashLevers": [
+              "Title / level calibration",
+              "Start date flexibility",
+              "Remote days",
+              "Equipment budget",
+              "First review at 3 or 6 months",
+              "Conference / learning budget"
+            ]
+          },
+          "negotiationScript": {
+            "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Senior Software Engineer II package, including base, bonus, equity, and review cycle?",
+            "valueAnchor": "Based on the scope of Senior Software Engineer II and my fit around API, engineer, product, data, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
+            "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
+            "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
+            "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
+          },
+          "redLines": [
+            "Do not disclose current compensation unless legally appropriate and strategically useful.",
+            "Do not accept verbal-only compensation details; ask for written package components.",
+            "Do not negotiate before confirming level, scope, work mode, and review cycle.",
+            "Do not trade base salary away without valuing the replacement benefit."
+          ],
+          "nextActions": [
+            "Collect market compensation evidence before naming a number.",
+            "Ask recruiter for approved range and level.",
+            "Map the job scope to proof points in the tailored CV.",
+            "Prepare one counter package with base, bonus/equity, and non-cash levers."
+          ],
+          "targetFrame": "Do not name a number first. Ask for the approved range, level, and total compensation structure before anchoring."
+        },
+        "stories": [
+          {
+            "id": "story-1",
+            "theme": "frontend product execution",
+            "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
+            "applicableQuestions": [
+              "Tell me about a project you are proud of.",
+              "Tell me about a time you handled ambiguity.",
+              "How have you applied frontend product execution?"
+            ],
+            "star": {
+              "situation": "You were tasked with a frontend product challenge. Proof point: \"Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.\" — set the scene: what product, what team size, and what was broken or missing?",
+              "task": "What was the specific outcome you were accountable for? Include the success metric (e.g. performance score, user adoption rate, release date).",
+              "action": "Walk through the key technical decisions: component architecture, state management tradeoffs, accessibility choices, or API contract design.",
+              "result": "Quantify the impact: load time delta, user adoption %, code reduction %, or stakeholder feedback. If no number, describe the quality or velocity improvement.",
+              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
+            },
+            "keywords": [
+              "frontend product execution",
+              "JavaScript",
+              "TypeScript",
+              "React",
+              "Next.js",
+              "CSS",
+              "Tailwind",
+              "Accessibility"
+            ],
+            "relevance": 0
+          },
+          {
+            "id": "story-2",
+            "theme": "systems and API collaboration",
+            "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
             "applicableQuestions": [
               "Tell me about a project you are proud of.",
               "Tell me about a time you handled ambiguity.",
               "How have you applied systems and API collaboration?"
             ],
             "star": {
-              "situation": "You collaborated across system boundaries. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — name the systems, teams, and integration surface area.",
+              "situation": "You collaborated across system boundaries. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — name the systems, teams, and integration surface area.",
               "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
               "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
               "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
@@ -3746,6 +2884,34 @@ window.CV_CAREER_OPS_PARALLEL = {
             },
             "keywords": [
               "systems and API collaboration",
+              "JavaScript",
+              "TypeScript",
+              "React",
+              "Next.js",
+              "CSS",
+              "Tailwind",
+              "Accessibility"
+            ],
+            "relevance": 0
+          },
+          {
+            "id": "story-3",
+            "theme": "accessibility and quality",
+            "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
+            "applicableQuestions": [
+              "Tell me about a project you are proud of.",
+              "Tell me about a time you handled ambiguity.",
+              "How have you applied accessibility and quality?"
+            ],
+            "star": {
+              "situation": "You led or contributed to an accessibility or quality initiative. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — what was the starting state and who was affected?",
+              "task": "What standard or target were you working toward (WCAG level, test coverage %, zero-defect milestone)?",
+              "action": "Describe the audit process, tooling (axe, Lighthouse, screen reader testing), and how you prioritized fixes across components.",
+              "result": "State the outcome: WCAG compliance level achieved, user complaints reduced, or CI gate added to prevent regressions.",
+              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
+            },
+            "keywords": [
+              "accessibility and quality",
               "JavaScript",
               "TypeScript",
               "React",
@@ -3777,14 +2943,14 @@ window.CV_CAREER_OPS_PARALLEL = {
       }
     },
     {
-      "jobKey": "url:https://www.themuse.com/jobs/thecocacolacompany/software-engineer-i-798d00",
+      "jobKey": "url:https://www.themuse.com/jobs/thecocacolacompany/software-engineer-i-ea6f68",
       "company": "The Coca-Cola Company",
       "title": "Software Engineer I",
       "score": 95,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-12T00:25:31.446Z",
-      "completedAt": "2026-06-12T00:25:31.448Z",
+      "startedAt": "2026-06-13T00:26:56.257Z",
+      "completedAt": "2026-06-13T00:26:56.259Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -3805,9 +2971,9 @@ window.CV_CAREER_OPS_PARALLEL = {
             "AI / data / platform signal",
             "remote or hybrid signal"
           ],
-          "evidenceCount": 3,
+          "evidenceCount": 5,
           "questions": [
-            "What business unit owns the Software Engineer I role?",
+            "What business unit owns the Senior Software Engineer II role?",
             "What measurable outcomes would this team expect in the first 90 days?",
             "What recent company/product signals change the risk or upside?",
             "Which CV proof points should be highlighted for this company?"
@@ -3822,9 +2988,9 @@ window.CV_CAREER_OPS_PARALLEL = {
           ]
         },
         "compensation": {
-          "jobKey": "url:https://www.themuse.com/jobs/thecocacolacompany/software-engineer-i-f085ec",
+          "jobKey": "url:https://www.themuse.com/jobs/thecocacolacompany/senior-software-engineer-ii-45ddca",
           "company": "The Coca-Cola Company",
-          "title": "Software Engineer I",
+          "title": "Senior Software Engineer II",
           "market": "us",
           "inferredLevel": "senior",
           "candidateLevel": "mid",
@@ -3860,8 +3026,8 @@ window.CV_CAREER_OPS_PARALLEL = {
             ]
           },
           "negotiationScript": {
-            "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Software Engineer I package, including base, bonus, equity, and review cycle?",
-            "valueAnchor": "Based on the scope of Software Engineer I and my fit around API, engineer, product, data, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
+            "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Senior Software Engineer II package, including base, bonus, equity, and review cycle?",
+            "valueAnchor": "Based on the scope of Senior Software Engineer II and my fit around API, engineer, product, data, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
             "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
             "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
             "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
@@ -3911,43 +3077,15 @@ window.CV_CAREER_OPS_PARALLEL = {
           },
           {
             "id": "story-2",
-            "theme": "data-heavy product decisions",
-            "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
-            "applicableQuestions": [
-              "Tell me about a project you are proud of.",
-              "Tell me about a time you handled ambiguity.",
-              "How have you applied data-heavy product decisions?"
-            ],
-            "star": {
-              "situation": "You were working with a data-intensive product. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — describe the data volume, the user workflow, and what was difficult to render or interpret.",
-              "task": "What decision did you own? (chart type, data model, aggregation strategy, caching layer, etc.)",
-              "action": "Explain how you chose between options, what you built or prototyped, and how you validated your approach with data or users.",
-              "result": "State the outcome: query latency, dashboard load time, user comprehension improvement, or reduction in support requests.",
-              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
-            },
-            "keywords": [
-              "data-heavy product decisions",
-              "JavaScript",
-              "TypeScript",
-              "React",
-              "Next.js",
-              "CSS",
-              "Tailwind",
-              "Accessibility"
-            ],
-            "relevance": 0
-          },
-          {
-            "id": "story-3",
             "theme": "systems and API collaboration",
-            "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
+            "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
             "applicableQuestions": [
               "Tell me about a project you are proud of.",
               "Tell me about a time you handled ambiguity.",
               "How have you applied systems and API collaboration?"
             ],
             "star": {
-              "situation": "You collaborated across system boundaries. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — name the systems, teams, and integration surface area.",
+              "situation": "You collaborated across system boundaries. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — name the systems, teams, and integration surface area.",
               "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
               "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
               "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
@@ -3964,11 +3102,39 @@ window.CV_CAREER_OPS_PARALLEL = {
               "Accessibility"
             ],
             "relevance": 0
+          },
+          {
+            "id": "story-3",
+            "theme": "accessibility and quality",
+            "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
+            "applicableQuestions": [
+              "Tell me about a project you are proud of.",
+              "Tell me about a time you handled ambiguity.",
+              "How have you applied accessibility and quality?"
+            ],
+            "star": {
+              "situation": "You led or contributed to an accessibility or quality initiative. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — what was the starting state and who was affected?",
+              "task": "What standard or target were you working toward (WCAG level, test coverage %, zero-defect milestone)?",
+              "action": "Describe the audit process, tooling (axe, Lighthouse, screen reader testing), and how you prioritized fixes across components.",
+              "result": "State the outcome: WCAG compliance level achieved, user complaints reduced, or CI gate added to prevent regressions.",
+              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
+            },
+            "keywords": [
+              "accessibility and quality",
+              "JavaScript",
+              "TypeScript",
+              "React",
+              "Next.js",
+              "CSS",
+              "Tailwind",
+              "Accessibility"
+            ],
+            "relevance": 0
           }
         ],
         "applyAgent": {
           "mode": "human-in-the-loop",
-          "url": "https://www.themuse.com/jobs/thecocacolacompany/software-engineer-i-798d00",
+          "url": "https://www.themuse.com/jobs/thecocacolacompany/software-engineer-i-ea6f68",
           "steps": [
             "Open the application URL in a controlled browser session.",
             "Extract visible form fields and required uploads.",
@@ -3992,8 +3158,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 95,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-12T00:25:31.446Z",
-      "completedAt": "2026-06-12T00:25:31.448Z",
+      "startedAt": "2026-06-13T00:26:56.257Z",
+      "completedAt": "2026-06-13T00:26:56.259Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -4014,9 +3180,9 @@ window.CV_CAREER_OPS_PARALLEL = {
             "AI / data / platform signal",
             "remote or hybrid signal"
           ],
-          "evidenceCount": 3,
+          "evidenceCount": 5,
           "questions": [
-            "What business unit owns the Software Engineer I role?",
+            "What business unit owns the Senior Software Engineer II role?",
             "What measurable outcomes would this team expect in the first 90 days?",
             "What recent company/product signals change the risk or upside?",
             "Which CV proof points should be highlighted for this company?"
@@ -4031,9 +3197,9 @@ window.CV_CAREER_OPS_PARALLEL = {
           ]
         },
         "compensation": {
-          "jobKey": "url:https://www.themuse.com/jobs/thecocacolacompany/software-engineer-i-f085ec",
+          "jobKey": "url:https://www.themuse.com/jobs/thecocacolacompany/senior-software-engineer-ii-45ddca",
           "company": "The Coca-Cola Company",
-          "title": "Software Engineer I",
+          "title": "Senior Software Engineer II",
           "market": "us",
           "inferredLevel": "senior",
           "candidateLevel": "mid",
@@ -4069,8 +3235,8 @@ window.CV_CAREER_OPS_PARALLEL = {
             ]
           },
           "negotiationScript": {
-            "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Software Engineer I package, including base, bonus, equity, and review cycle?",
-            "valueAnchor": "Based on the scope of Software Engineer I and my fit around API, engineer, product, data, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
+            "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Senior Software Engineer II package, including base, bonus, equity, and review cycle?",
+            "valueAnchor": "Based on the scope of Senior Software Engineer II and my fit around API, engineer, product, data, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
             "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
             "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
             "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
@@ -4120,22 +3286,22 @@ window.CV_CAREER_OPS_PARALLEL = {
           },
           {
             "id": "story-2",
-            "theme": "data-heavy product decisions",
+            "theme": "systems and API collaboration",
             "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
             "applicableQuestions": [
               "Tell me about a project you are proud of.",
               "Tell me about a time you handled ambiguity.",
-              "How have you applied data-heavy product decisions?"
+              "How have you applied systems and API collaboration?"
             ],
             "star": {
-              "situation": "You were working with a data-intensive product. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — describe the data volume, the user workflow, and what was difficult to render or interpret.",
-              "task": "What decision did you own? (chart type, data model, aggregation strategy, caching layer, etc.)",
-              "action": "Explain how you chose between options, what you built or prototyped, and how you validated your approach with data or users.",
-              "result": "State the outcome: query latency, dashboard load time, user comprehension improvement, or reduction in support requests.",
+              "situation": "You collaborated across system boundaries. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — name the systems, teams, and integration surface area.",
+              "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
+              "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
+              "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
               "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
             },
             "keywords": [
-              "data-heavy product decisions",
+              "systems and API collaboration",
               "JavaScript",
               "TypeScript",
               "React",
@@ -4148,22 +3314,22 @@ window.CV_CAREER_OPS_PARALLEL = {
           },
           {
             "id": "story-3",
-            "theme": "systems and API collaboration",
+            "theme": "accessibility and quality",
             "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
             "applicableQuestions": [
               "Tell me about a project you are proud of.",
               "Tell me about a time you handled ambiguity.",
-              "How have you applied systems and API collaboration?"
+              "How have you applied accessibility and quality?"
             ],
             "star": {
-              "situation": "You collaborated across system boundaries. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — name the systems, teams, and integration surface area.",
-              "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
-              "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
-              "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
+              "situation": "You led or contributed to an accessibility or quality initiative. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — what was the starting state and who was affected?",
+              "task": "What standard or target were you working toward (WCAG level, test coverage %, zero-defect milestone)?",
+              "action": "Describe the audit process, tooling (axe, Lighthouse, screen reader testing), and how you prioritized fixes across components.",
+              "result": "State the outcome: WCAG compliance level achieved, user complaints reduced, or CI gate added to prevent regressions.",
               "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
             },
             "keywords": [
-              "systems and API collaboration",
+              "accessibility and quality",
               "JavaScript",
               "TypeScript",
               "React",
@@ -4195,14 +3361,14 @@ window.CV_CAREER_OPS_PARALLEL = {
       }
     },
     {
-      "jobKey": "url:https://www.themuse.com/jobs/thecocacolacompany/senior-software-engineer-ii",
+      "jobKey": "url:https://www.themuse.com/jobs/thecocacolacompany/software-engineering-i",
       "company": "The Coca-Cola Company",
-      "title": "Senior Software Engineer II",
+      "title": "Software Engineering I",
       "score": 95,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-12T00:25:31.455Z",
-      "completedAt": "2026-06-12T00:25:31.456Z",
+      "startedAt": "2026-06-13T00:26:56.261Z",
+      "completedAt": "2026-06-13T00:26:56.263Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -4223,9 +3389,9 @@ window.CV_CAREER_OPS_PARALLEL = {
             "AI / data / platform signal",
             "remote or hybrid signal"
           ],
-          "evidenceCount": 3,
+          "evidenceCount": 5,
           "questions": [
-            "What business unit owns the Software Engineer I role?",
+            "What business unit owns the Senior Software Engineer II role?",
             "What measurable outcomes would this team expect in the first 90 days?",
             "What recent company/product signals change the risk or upside?",
             "Which CV proof points should be highlighted for this company?"
@@ -4240,9 +3406,9 @@ window.CV_CAREER_OPS_PARALLEL = {
           ]
         },
         "compensation": {
-          "jobKey": "url:https://www.themuse.com/jobs/thecocacolacompany/software-engineer-i-f085ec",
+          "jobKey": "url:https://www.themuse.com/jobs/thecocacolacompany/senior-software-engineer-ii-45ddca",
           "company": "The Coca-Cola Company",
-          "title": "Software Engineer I",
+          "title": "Senior Software Engineer II",
           "market": "us",
           "inferredLevel": "senior",
           "candidateLevel": "mid",
@@ -4278,8 +3444,8 @@ window.CV_CAREER_OPS_PARALLEL = {
             ]
           },
           "negotiationScript": {
-            "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Software Engineer I package, including base, bonus, equity, and review cycle?",
-            "valueAnchor": "Based on the scope of Software Engineer I and my fit around API, engineer, product, data, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
+            "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Senior Software Engineer II package, including base, bonus, equity, and review cycle?",
+            "valueAnchor": "Based on the scope of Senior Software Engineer II and my fit around API, engineer, product, data, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
             "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
             "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
             "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
@@ -4329,22 +3495,22 @@ window.CV_CAREER_OPS_PARALLEL = {
           },
           {
             "id": "story-2",
-            "theme": "data-heavy product decisions",
+            "theme": "systems and API collaboration",
             "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
             "applicableQuestions": [
               "Tell me about a project you are proud of.",
               "Tell me about a time you handled ambiguity.",
-              "How have you applied data-heavy product decisions?"
+              "How have you applied systems and API collaboration?"
             ],
             "star": {
-              "situation": "You were working with a data-intensive product. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — describe the data volume, the user workflow, and what was difficult to render or interpret.",
-              "task": "What decision did you own? (chart type, data model, aggregation strategy, caching layer, etc.)",
-              "action": "Explain how you chose between options, what you built or prototyped, and how you validated your approach with data or users.",
-              "result": "State the outcome: query latency, dashboard load time, user comprehension improvement, or reduction in support requests.",
+              "situation": "You collaborated across system boundaries. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — name the systems, teams, and integration surface area.",
+              "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
+              "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
+              "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
               "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
             },
             "keywords": [
-              "data-heavy product decisions",
+              "systems and API collaboration",
               "JavaScript",
               "TypeScript",
               "React",
@@ -4357,15 +3523,196 @@ window.CV_CAREER_OPS_PARALLEL = {
           },
           {
             "id": "story-3",
-            "theme": "systems and API collaboration",
+            "theme": "accessibility and quality",
             "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
+            "applicableQuestions": [
+              "Tell me about a project you are proud of.",
+              "Tell me about a time you handled ambiguity.",
+              "How have you applied accessibility and quality?"
+            ],
+            "star": {
+              "situation": "You led or contributed to an accessibility or quality initiative. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — what was the starting state and who was affected?",
+              "task": "What standard or target were you working toward (WCAG level, test coverage %, zero-defect milestone)?",
+              "action": "Describe the audit process, tooling (axe, Lighthouse, screen reader testing), and how you prioritized fixes across components.",
+              "result": "State the outcome: WCAG compliance level achieved, user complaints reduced, or CI gate added to prevent regressions.",
+              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
+            },
+            "keywords": [
+              "accessibility and quality",
+              "JavaScript",
+              "TypeScript",
+              "React",
+              "Next.js",
+              "CSS",
+              "Tailwind",
+              "Accessibility"
+            ],
+            "relevance": 0
+          }
+        ],
+        "applyAgent": {
+          "mode": "human-in-the-loop",
+          "url": "https://www.themuse.com/jobs/thecocacolacompany/software-engineering-i",
+          "steps": [
+            "Open the application URL in a controlled browser session.",
+            "Extract visible form fields and required uploads.",
+            "Map CV profile fields to the form without submitting.",
+            "Prepare tailored PDF and outreach text.",
+            "Stop before final submit and ask the user to review."
+          ],
+          "guardrails": [
+            "Never submit without explicit user confirmation.",
+            "Never fabricate work authorization, salary history, degree, or experience.",
+            "Never store API keys or credentials in job metadata.",
+            "Record only application status and user-approved notes."
+          ]
+        }
+      }
+    },
+    {
+      "jobKey": "url:https://www.themuse.com/jobs/thecocacolacompany/senior-software-engineer-ii",
+      "company": "The Coca-Cola Company",
+      "title": "Senior Software Engineer II",
+      "score": 95,
+      "grade": "A",
+      "priority": "P0",
+      "startedAt": "2026-06-13T00:26:56.261Z",
+      "completedAt": "2026-06-13T00:26:56.262Z",
+      "workers": {
+        "evaluation": {
+          "recommendation": "值得投遞",
+          "keywords": [
+            "API",
+            "engineer",
+            "product",
+            "data"
+          ],
+          "nextActions": [
+            "開啟職缺確認仍可投遞",
+            "產生客製 ATS PDF",
+            "用同職類高分職缺校準履歷關鍵字"
+          ]
+        },
+        "research": {
+          "signals": [
+            "AI / data / platform signal",
+            "remote or hybrid signal"
+          ],
+          "evidenceCount": 5,
+          "questions": [
+            "What business unit owns the Senior Software Engineer II role?",
+            "What measurable outcomes would this team expect in the first 90 days?",
+            "What recent company/product signals change the risk or upside?",
+            "Which CV proof points should be highlighted for this company?"
+          ]
+        },
+        "application": {
+          "checklist": [
+            "Confirm posting is active.",
+            "Generate tailored ATS PDF.",
+            "Prepare outreach and follow-up.",
+            "Log status and next follow-up."
+          ]
+        },
+        "compensation": {
+          "jobKey": "url:https://www.themuse.com/jobs/thecocacolacompany/senior-software-engineer-ii-45ddca",
+          "company": "The Coca-Cola Company",
+          "title": "Senior Software Engineer II",
+          "market": "us",
+          "inferredLevel": "senior",
+          "candidateLevel": "mid",
+          "leverage": "high",
+          "evidence": {
+            "salaryMentions": [],
+            "benefitSignals": [
+              "work-mode flexibility",
+              "learning budget"
+            ]
+          },
+          "marketBenchmark": null,
+          "structure": {
+            "baseSalary": [
+              "Need verified market data or recruiter range before setting a numeric anchor."
+            ],
+            "bonus": "Ask whether there is annual bonus, performance bonus, or sign-on bonus.",
+            "equity": "Ask whether equity, RSU, options, or profit-sharing exists.",
+            "benefits": [
+              "Health / insurance coverage",
+              "Paid leave and holidays",
+              "Learning budget or certification support",
+              "Remote/hybrid setup, commute, or relocation support",
+              "Review cycle and promotion timeline"
+            ],
+            "nonCashLevers": [
+              "Title / level calibration",
+              "Start date flexibility",
+              "Remote days",
+              "Equipment budget",
+              "First review at 3 or 6 months",
+              "Conference / learning budget"
+            ]
+          },
+          "negotiationScript": {
+            "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Senior Software Engineer II package, including base, bonus, equity, and review cycle?",
+            "valueAnchor": "Based on the scope of Senior Software Engineer II and my fit around API, engineer, product, data, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
+            "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
+            "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
+            "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
+          },
+          "redLines": [
+            "Do not disclose current compensation unless legally appropriate and strategically useful.",
+            "Do not accept verbal-only compensation details; ask for written package components.",
+            "Do not negotiate before confirming level, scope, work mode, and review cycle.",
+            "Do not trade base salary away without valuing the replacement benefit."
+          ],
+          "nextActions": [
+            "Collect market compensation evidence before naming a number.",
+            "Ask recruiter for approved range and level.",
+            "Map the job scope to proof points in the tailored CV.",
+            "Prepare one counter package with base, bonus/equity, and non-cash levers."
+          ],
+          "targetFrame": "Do not name a number first. Ask for the approved range, level, and total compensation structure before anchoring."
+        },
+        "stories": [
+          {
+            "id": "story-1",
+            "theme": "frontend product execution",
+            "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
+            "applicableQuestions": [
+              "Tell me about a project you are proud of.",
+              "Tell me about a time you handled ambiguity.",
+              "How have you applied frontend product execution?"
+            ],
+            "star": {
+              "situation": "You were tasked with a frontend product challenge. Proof point: \"Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.\" — set the scene: what product, what team size, and what was broken or missing?",
+              "task": "What was the specific outcome you were accountable for? Include the success metric (e.g. performance score, user adoption rate, release date).",
+              "action": "Walk through the key technical decisions: component architecture, state management tradeoffs, accessibility choices, or API contract design.",
+              "result": "Quantify the impact: load time delta, user adoption %, code reduction %, or stakeholder feedback. If no number, describe the quality or velocity improvement.",
+              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
+            },
+            "keywords": [
+              "frontend product execution",
+              "JavaScript",
+              "TypeScript",
+              "React",
+              "Next.js",
+              "CSS",
+              "Tailwind",
+              "Accessibility"
+            ],
+            "relevance": 0
+          },
+          {
+            "id": "story-2",
+            "theme": "systems and API collaboration",
+            "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
             "applicableQuestions": [
               "Tell me about a project you are proud of.",
               "Tell me about a time you handled ambiguity.",
               "How have you applied systems and API collaboration?"
             ],
             "star": {
-              "situation": "You collaborated across system boundaries. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — name the systems, teams, and integration surface area.",
+              "situation": "You collaborated across system boundaries. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — name the systems, teams, and integration surface area.",
               "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
               "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
               "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
@@ -4373,6 +3720,34 @@ window.CV_CAREER_OPS_PARALLEL = {
             },
             "keywords": [
               "systems and API collaboration",
+              "JavaScript",
+              "TypeScript",
+              "React",
+              "Next.js",
+              "CSS",
+              "Tailwind",
+              "Accessibility"
+            ],
+            "relevance": 0
+          },
+          {
+            "id": "story-3",
+            "theme": "accessibility and quality",
+            "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
+            "applicableQuestions": [
+              "Tell me about a project you are proud of.",
+              "Tell me about a time you handled ambiguity.",
+              "How have you applied accessibility and quality?"
+            ],
+            "star": {
+              "situation": "You led or contributed to an accessibility or quality initiative. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — what was the starting state and who was affected?",
+              "task": "What standard or target were you working toward (WCAG level, test coverage %, zero-defect milestone)?",
+              "action": "Describe the audit process, tooling (axe, Lighthouse, screen reader testing), and how you prioritized fixes across components.",
+              "result": "State the outcome: WCAG compliance level achieved, user complaints reduced, or CI gate added to prevent regressions.",
+              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
+            },
+            "keywords": [
+              "accessibility and quality",
               "JavaScript",
               "TypeScript",
               "React",
@@ -4410,8 +3785,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 95,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-12T00:25:31.455Z",
-      "completedAt": "2026-06-12T00:25:31.456Z",
+      "startedAt": "2026-06-13T00:26:56.261Z",
+      "completedAt": "2026-06-13T00:26:56.262Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -4432,9 +3807,9 @@ window.CV_CAREER_OPS_PARALLEL = {
             "AI / data / platform signal",
             "remote or hybrid signal"
           ],
-          "evidenceCount": 3,
+          "evidenceCount": 5,
           "questions": [
-            "What business unit owns the Software Engineer I role?",
+            "What business unit owns the Senior Software Engineer II role?",
             "What measurable outcomes would this team expect in the first 90 days?",
             "What recent company/product signals change the risk or upside?",
             "Which CV proof points should be highlighted for this company?"
@@ -4449,9 +3824,9 @@ window.CV_CAREER_OPS_PARALLEL = {
           ]
         },
         "compensation": {
-          "jobKey": "url:https://www.themuse.com/jobs/thecocacolacompany/software-engineer-i-f085ec",
+          "jobKey": "url:https://www.themuse.com/jobs/thecocacolacompany/senior-software-engineer-ii-45ddca",
           "company": "The Coca-Cola Company",
-          "title": "Software Engineer I",
+          "title": "Senior Software Engineer II",
           "market": "us",
           "inferredLevel": "senior",
           "candidateLevel": "mid",
@@ -4487,8 +3862,8 @@ window.CV_CAREER_OPS_PARALLEL = {
             ]
           },
           "negotiationScript": {
-            "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Software Engineer I package, including base, bonus, equity, and review cycle?",
-            "valueAnchor": "Based on the scope of Software Engineer I and my fit around API, engineer, product, data, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
+            "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Senior Software Engineer II package, including base, bonus, equity, and review cycle?",
+            "valueAnchor": "Based on the scope of Senior Software Engineer II and my fit around API, engineer, product, data, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
             "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
             "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
             "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
@@ -4538,22 +3913,22 @@ window.CV_CAREER_OPS_PARALLEL = {
           },
           {
             "id": "story-2",
-            "theme": "data-heavy product decisions",
+            "theme": "systems and API collaboration",
             "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
             "applicableQuestions": [
               "Tell me about a project you are proud of.",
               "Tell me about a time you handled ambiguity.",
-              "How have you applied data-heavy product decisions?"
+              "How have you applied systems and API collaboration?"
             ],
             "star": {
-              "situation": "You were working with a data-intensive product. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — describe the data volume, the user workflow, and what was difficult to render or interpret.",
-              "task": "What decision did you own? (chart type, data model, aggregation strategy, caching layer, etc.)",
-              "action": "Explain how you chose between options, what you built or prototyped, and how you validated your approach with data or users.",
-              "result": "State the outcome: query latency, dashboard load time, user comprehension improvement, or reduction in support requests.",
+              "situation": "You collaborated across system boundaries. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — name the systems, teams, and integration surface area.",
+              "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
+              "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
+              "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
               "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
             },
             "keywords": [
-              "data-heavy product decisions",
+              "systems and API collaboration",
               "JavaScript",
               "TypeScript",
               "React",
@@ -4566,22 +3941,22 @@ window.CV_CAREER_OPS_PARALLEL = {
           },
           {
             "id": "story-3",
-            "theme": "systems and API collaboration",
+            "theme": "accessibility and quality",
             "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
             "applicableQuestions": [
               "Tell me about a project you are proud of.",
               "Tell me about a time you handled ambiguity.",
-              "How have you applied systems and API collaboration?"
+              "How have you applied accessibility and quality?"
             ],
             "star": {
-              "situation": "You collaborated across system boundaries. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — name the systems, teams, and integration surface area.",
-              "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
-              "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
-              "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
+              "situation": "You led or contributed to an accessibility or quality initiative. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — what was the starting state and who was affected?",
+              "task": "What standard or target were you working toward (WCAG level, test coverage %, zero-defect milestone)?",
+              "action": "Describe the audit process, tooling (axe, Lighthouse, screen reader testing), and how you prioritized fixes across components.",
+              "result": "State the outcome: WCAG compliance level achieved, user complaints reduced, or CI gate added to prevent regressions.",
               "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
             },
             "keywords": [
-              "systems and API collaboration",
+              "accessibility and quality",
               "JavaScript",
               "TypeScript",
               "React",
@@ -4613,14 +3988,14 @@ window.CV_CAREER_OPS_PARALLEL = {
       }
     },
     {
-      "jobKey": "url:https://www.themuse.com/jobs/thecocacolacompany/software-engineer-i-5e6a92",
+      "jobKey": "url:https://www.themuse.com/jobs/thecocacolacompany/software-engineer-i-crm",
       "company": "The Coca-Cola Company",
-      "title": "Software Engineer I",
+      "title": "Software Engineer I - CRM",
       "score": 95,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-12T00:25:31.455Z",
-      "completedAt": "2026-06-12T00:25:31.456Z",
+      "startedAt": "2026-06-13T00:26:56.261Z",
+      "completedAt": "2026-06-13T00:26:56.263Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -4641,9 +4016,9 @@ window.CV_CAREER_OPS_PARALLEL = {
             "AI / data / platform signal",
             "remote or hybrid signal"
           ],
-          "evidenceCount": 3,
+          "evidenceCount": 5,
           "questions": [
-            "What business unit owns the Software Engineer I role?",
+            "What business unit owns the Senior Software Engineer II role?",
             "What measurable outcomes would this team expect in the first 90 days?",
             "What recent company/product signals change the risk or upside?",
             "Which CV proof points should be highlighted for this company?"
@@ -4658,9 +4033,9 @@ window.CV_CAREER_OPS_PARALLEL = {
           ]
         },
         "compensation": {
-          "jobKey": "url:https://www.themuse.com/jobs/thecocacolacompany/software-engineer-i-f085ec",
+          "jobKey": "url:https://www.themuse.com/jobs/thecocacolacompany/senior-software-engineer-ii-45ddca",
           "company": "The Coca-Cola Company",
-          "title": "Software Engineer I",
+          "title": "Senior Software Engineer II",
           "market": "us",
           "inferredLevel": "senior",
           "candidateLevel": "mid",
@@ -4696,8 +4071,8 @@ window.CV_CAREER_OPS_PARALLEL = {
             ]
           },
           "negotiationScript": {
-            "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Software Engineer I package, including base, bonus, equity, and review cycle?",
-            "valueAnchor": "Based on the scope of Software Engineer I and my fit around API, engineer, product, data, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
+            "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Senior Software Engineer II package, including base, bonus, equity, and review cycle?",
+            "valueAnchor": "Based on the scope of Senior Software Engineer II and my fit around API, engineer, product, data, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
             "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
             "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
             "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
@@ -4747,43 +4122,15 @@ window.CV_CAREER_OPS_PARALLEL = {
           },
           {
             "id": "story-2",
-            "theme": "data-heavy product decisions",
-            "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
-            "applicableQuestions": [
-              "Tell me about a project you are proud of.",
-              "Tell me about a time you handled ambiguity.",
-              "How have you applied data-heavy product decisions?"
-            ],
-            "star": {
-              "situation": "You were working with a data-intensive product. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — describe the data volume, the user workflow, and what was difficult to render or interpret.",
-              "task": "What decision did you own? (chart type, data model, aggregation strategy, caching layer, etc.)",
-              "action": "Explain how you chose between options, what you built or prototyped, and how you validated your approach with data or users.",
-              "result": "State the outcome: query latency, dashboard load time, user comprehension improvement, or reduction in support requests.",
-              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
-            },
-            "keywords": [
-              "data-heavy product decisions",
-              "JavaScript",
-              "TypeScript",
-              "React",
-              "Next.js",
-              "CSS",
-              "Tailwind",
-              "Accessibility"
-            ],
-            "relevance": 0
-          },
-          {
-            "id": "story-3",
             "theme": "systems and API collaboration",
-            "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
+            "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
             "applicableQuestions": [
               "Tell me about a project you are proud of.",
               "Tell me about a time you handled ambiguity.",
               "How have you applied systems and API collaboration?"
             ],
             "star": {
-              "situation": "You collaborated across system boundaries. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — name the systems, teams, and integration surface area.",
+              "situation": "You collaborated across system boundaries. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — name the systems, teams, and integration surface area.",
               "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
               "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
               "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
@@ -4800,11 +4147,39 @@ window.CV_CAREER_OPS_PARALLEL = {
               "Accessibility"
             ],
             "relevance": 0
+          },
+          {
+            "id": "story-3",
+            "theme": "accessibility and quality",
+            "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
+            "applicableQuestions": [
+              "Tell me about a project you are proud of.",
+              "Tell me about a time you handled ambiguity.",
+              "How have you applied accessibility and quality?"
+            ],
+            "star": {
+              "situation": "You led or contributed to an accessibility or quality initiative. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — what was the starting state and who was affected?",
+              "task": "What standard or target were you working toward (WCAG level, test coverage %, zero-defect milestone)?",
+              "action": "Describe the audit process, tooling (axe, Lighthouse, screen reader testing), and how you prioritized fixes across components.",
+              "result": "State the outcome: WCAG compliance level achieved, user complaints reduced, or CI gate added to prevent regressions.",
+              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
+            },
+            "keywords": [
+              "accessibility and quality",
+              "JavaScript",
+              "TypeScript",
+              "React",
+              "Next.js",
+              "CSS",
+              "Tailwind",
+              "Accessibility"
+            ],
+            "relevance": 0
           }
         ],
         "applyAgent": {
           "mode": "human-in-the-loop",
-          "url": "https://www.themuse.com/jobs/thecocacolacompany/software-engineer-i-5e6a92",
+          "url": "https://www.themuse.com/jobs/thecocacolacompany/software-engineer-i-crm",
           "steps": [
             "Open the application URL in a controlled browser session.",
             "Extract visible form fields and required uploads.",
@@ -4828,8 +4203,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 95,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-12T00:25:31.455Z",
-      "completedAt": "2026-06-12T00:25:31.457Z",
+      "startedAt": "2026-06-13T00:26:56.269Z",
+      "completedAt": "2026-06-13T00:26:56.270Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -4850,9 +4225,9 @@ window.CV_CAREER_OPS_PARALLEL = {
             "AI / data / platform signal",
             "remote or hybrid signal"
           ],
-          "evidenceCount": 3,
+          "evidenceCount": 5,
           "questions": [
-            "What business unit owns the Software Engineer I role?",
+            "What business unit owns the Senior Software Engineer II role?",
             "What measurable outcomes would this team expect in the first 90 days?",
             "What recent company/product signals change the risk or upside?",
             "Which CV proof points should be highlighted for this company?"
@@ -4867,9 +4242,9 @@ window.CV_CAREER_OPS_PARALLEL = {
           ]
         },
         "compensation": {
-          "jobKey": "url:https://www.themuse.com/jobs/thecocacolacompany/software-engineer-i-f085ec",
+          "jobKey": "url:https://www.themuse.com/jobs/thecocacolacompany/senior-software-engineer-ii-45ddca",
           "company": "The Coca-Cola Company",
-          "title": "Software Engineer I",
+          "title": "Senior Software Engineer II",
           "market": "us",
           "inferredLevel": "senior",
           "candidateLevel": "mid",
@@ -4905,8 +4280,8 @@ window.CV_CAREER_OPS_PARALLEL = {
             ]
           },
           "negotiationScript": {
-            "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Software Engineer I package, including base, bonus, equity, and review cycle?",
-            "valueAnchor": "Based on the scope of Software Engineer I and my fit around API, engineer, product, data, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
+            "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Senior Software Engineer II package, including base, bonus, equity, and review cycle?",
+            "valueAnchor": "Based on the scope of Senior Software Engineer II and my fit around API, engineer, product, data, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
             "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
             "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
             "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
@@ -4956,22 +4331,22 @@ window.CV_CAREER_OPS_PARALLEL = {
           },
           {
             "id": "story-2",
-            "theme": "data-heavy product decisions",
+            "theme": "systems and API collaboration",
             "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
             "applicableQuestions": [
               "Tell me about a project you are proud of.",
               "Tell me about a time you handled ambiguity.",
-              "How have you applied data-heavy product decisions?"
+              "How have you applied systems and API collaboration?"
             ],
             "star": {
-              "situation": "You were working with a data-intensive product. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — describe the data volume, the user workflow, and what was difficult to render or interpret.",
-              "task": "What decision did you own? (chart type, data model, aggregation strategy, caching layer, etc.)",
-              "action": "Explain how you chose between options, what you built or prototyped, and how you validated your approach with data or users.",
-              "result": "State the outcome: query latency, dashboard load time, user comprehension improvement, or reduction in support requests.",
+              "situation": "You collaborated across system boundaries. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — name the systems, teams, and integration surface area.",
+              "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
+              "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
+              "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
               "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
             },
             "keywords": [
-              "data-heavy product decisions",
+              "systems and API collaboration",
               "JavaScript",
               "TypeScript",
               "React",
@@ -4984,22 +4359,22 @@ window.CV_CAREER_OPS_PARALLEL = {
           },
           {
             "id": "story-3",
-            "theme": "systems and API collaboration",
+            "theme": "accessibility and quality",
             "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
             "applicableQuestions": [
               "Tell me about a project you are proud of.",
               "Tell me about a time you handled ambiguity.",
-              "How have you applied systems and API collaboration?"
+              "How have you applied accessibility and quality?"
             ],
             "star": {
-              "situation": "You collaborated across system boundaries. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — name the systems, teams, and integration surface area.",
-              "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
-              "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
-              "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
+              "situation": "You led or contributed to an accessibility or quality initiative. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — what was the starting state and who was affected?",
+              "task": "What standard or target were you working toward (WCAG level, test coverage %, zero-defect milestone)?",
+              "action": "Describe the audit process, tooling (axe, Lighthouse, screen reader testing), and how you prioritized fixes across components.",
+              "result": "State the outcome: WCAG compliance level achieved, user complaints reduced, or CI gate added to prevent regressions.",
               "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
             },
             "keywords": [
-              "systems and API collaboration",
+              "accessibility and quality",
               "JavaScript",
               "TypeScript",
               "React",
@@ -5037,8 +4412,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 95,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-12T00:25:31.458Z",
-      "completedAt": "2026-06-12T00:25:31.460Z",
+      "startedAt": "2026-06-13T00:26:56.269Z",
+      "completedAt": "2026-06-13T00:26:56.269Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -5059,9 +4434,9 @@ window.CV_CAREER_OPS_PARALLEL = {
             "AI / data / platform signal",
             "remote or hybrid signal"
           ],
-          "evidenceCount": 3,
+          "evidenceCount": 5,
           "questions": [
-            "What business unit owns the Software Engineer I role?",
+            "What business unit owns the Senior Software Engineer II role?",
             "What measurable outcomes would this team expect in the first 90 days?",
             "What recent company/product signals change the risk or upside?",
             "Which CV proof points should be highlighted for this company?"
@@ -5076,9 +4451,9 @@ window.CV_CAREER_OPS_PARALLEL = {
           ]
         },
         "compensation": {
-          "jobKey": "url:https://www.themuse.com/jobs/thecocacolacompany/software-engineer-i-f085ec",
+          "jobKey": "url:https://www.themuse.com/jobs/thecocacolacompany/senior-software-engineer-ii-45ddca",
           "company": "The Coca-Cola Company",
-          "title": "Software Engineer I",
+          "title": "Senior Software Engineer II",
           "market": "us",
           "inferredLevel": "senior",
           "candidateLevel": "mid",
@@ -5114,8 +4489,8 @@ window.CV_CAREER_OPS_PARALLEL = {
             ]
           },
           "negotiationScript": {
-            "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Software Engineer I package, including base, bonus, equity, and review cycle?",
-            "valueAnchor": "Based on the scope of Software Engineer I and my fit around API, engineer, product, data, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
+            "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Senior Software Engineer II package, including base, bonus, equity, and review cycle?",
+            "valueAnchor": "Based on the scope of Senior Software Engineer II and my fit around API, engineer, product, data, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
             "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
             "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
             "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
@@ -5165,22 +4540,22 @@ window.CV_CAREER_OPS_PARALLEL = {
           },
           {
             "id": "story-2",
-            "theme": "data-heavy product decisions",
+            "theme": "systems and API collaboration",
             "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
             "applicableQuestions": [
               "Tell me about a project you are proud of.",
               "Tell me about a time you handled ambiguity.",
-              "How have you applied data-heavy product decisions?"
+              "How have you applied systems and API collaboration?"
             ],
             "star": {
-              "situation": "You were working with a data-intensive product. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — describe the data volume, the user workflow, and what was difficult to render or interpret.",
-              "task": "What decision did you own? (chart type, data model, aggregation strategy, caching layer, etc.)",
-              "action": "Explain how you chose between options, what you built or prototyped, and how you validated your approach with data or users.",
-              "result": "State the outcome: query latency, dashboard load time, user comprehension improvement, or reduction in support requests.",
+              "situation": "You collaborated across system boundaries. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — name the systems, teams, and integration surface area.",
+              "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
+              "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
+              "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
               "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
             },
             "keywords": [
-              "data-heavy product decisions",
+              "systems and API collaboration",
               "JavaScript",
               "TypeScript",
               "React",
@@ -5193,22 +4568,22 @@ window.CV_CAREER_OPS_PARALLEL = {
           },
           {
             "id": "story-3",
-            "theme": "systems and API collaboration",
+            "theme": "accessibility and quality",
             "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
             "applicableQuestions": [
               "Tell me about a project you are proud of.",
               "Tell me about a time you handled ambiguity.",
-              "How have you applied systems and API collaboration?"
+              "How have you applied accessibility and quality?"
             ],
             "star": {
-              "situation": "You collaborated across system boundaries. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — name the systems, teams, and integration surface area.",
-              "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
-              "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
-              "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
+              "situation": "You led or contributed to an accessibility or quality initiative. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — what was the starting state and who was affected?",
+              "task": "What standard or target were you working toward (WCAG level, test coverage %, zero-defect milestone)?",
+              "action": "Describe the audit process, tooling (axe, Lighthouse, screen reader testing), and how you prioritized fixes across components.",
+              "result": "State the outcome: WCAG compliance level achieved, user complaints reduced, or CI gate added to prevent regressions.",
               "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
             },
             "keywords": [
-              "systems and API collaboration",
+              "accessibility and quality",
               "JavaScript",
               "TypeScript",
               "React",
@@ -5246,8 +4621,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 95,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-12T00:25:31.458Z",
-      "completedAt": "2026-06-12T00:25:31.459Z",
+      "startedAt": "2026-06-13T00:26:56.269Z",
+      "completedAt": "2026-06-13T00:26:56.270Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -5268,9 +4643,9 @@ window.CV_CAREER_OPS_PARALLEL = {
             "AI / data / platform signal",
             "remote or hybrid signal"
           ],
-          "evidenceCount": 3,
+          "evidenceCount": 5,
           "questions": [
-            "What business unit owns the Software Engineer I role?",
+            "What business unit owns the Senior Software Engineer II role?",
             "What measurable outcomes would this team expect in the first 90 days?",
             "What recent company/product signals change the risk or upside?",
             "Which CV proof points should be highlighted for this company?"
@@ -5285,9 +4660,9 @@ window.CV_CAREER_OPS_PARALLEL = {
           ]
         },
         "compensation": {
-          "jobKey": "url:https://www.themuse.com/jobs/thecocacolacompany/software-engineer-i-f085ec",
+          "jobKey": "url:https://www.themuse.com/jobs/thecocacolacompany/senior-software-engineer-ii-45ddca",
           "company": "The Coca-Cola Company",
-          "title": "Software Engineer I",
+          "title": "Senior Software Engineer II",
           "market": "us",
           "inferredLevel": "senior",
           "candidateLevel": "mid",
@@ -5323,8 +4698,8 @@ window.CV_CAREER_OPS_PARALLEL = {
             ]
           },
           "negotiationScript": {
-            "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Software Engineer I package, including base, bonus, equity, and review cycle?",
-            "valueAnchor": "Based on the scope of Software Engineer I and my fit around API, engineer, product, data, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
+            "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Senior Software Engineer II package, including base, bonus, equity, and review cycle?",
+            "valueAnchor": "Based on the scope of Senior Software Engineer II and my fit around API, engineer, product, data, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
             "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
             "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
             "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
@@ -5374,22 +4749,22 @@ window.CV_CAREER_OPS_PARALLEL = {
           },
           {
             "id": "story-2",
-            "theme": "data-heavy product decisions",
+            "theme": "systems and API collaboration",
             "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
             "applicableQuestions": [
               "Tell me about a project you are proud of.",
               "Tell me about a time you handled ambiguity.",
-              "How have you applied data-heavy product decisions?"
+              "How have you applied systems and API collaboration?"
             ],
             "star": {
-              "situation": "You were working with a data-intensive product. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — describe the data volume, the user workflow, and what was difficult to render or interpret.",
-              "task": "What decision did you own? (chart type, data model, aggregation strategy, caching layer, etc.)",
-              "action": "Explain how you chose between options, what you built or prototyped, and how you validated your approach with data or users.",
-              "result": "State the outcome: query latency, dashboard load time, user comprehension improvement, or reduction in support requests.",
+              "situation": "You collaborated across system boundaries. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — name the systems, teams, and integration surface area.",
+              "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
+              "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
+              "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
               "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
             },
             "keywords": [
-              "data-heavy product decisions",
+              "systems and API collaboration",
               "JavaScript",
               "TypeScript",
               "React",
@@ -5402,22 +4777,22 @@ window.CV_CAREER_OPS_PARALLEL = {
           },
           {
             "id": "story-3",
-            "theme": "systems and API collaboration",
+            "theme": "accessibility and quality",
             "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
             "applicableQuestions": [
               "Tell me about a project you are proud of.",
               "Tell me about a time you handled ambiguity.",
-              "How have you applied systems and API collaboration?"
+              "How have you applied accessibility and quality?"
             ],
             "star": {
-              "situation": "You collaborated across system boundaries. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — name the systems, teams, and integration surface area.",
-              "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
-              "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
-              "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
+              "situation": "You led or contributed to an accessibility or quality initiative. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — what was the starting state and who was affected?",
+              "task": "What standard or target were you working toward (WCAG level, test coverage %, zero-defect milestone)?",
+              "action": "Describe the audit process, tooling (axe, Lighthouse, screen reader testing), and how you prioritized fixes across components.",
+              "result": "State the outcome: WCAG compliance level achieved, user complaints reduced, or CI gate added to prevent regressions.",
               "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
             },
             "keywords": [
-              "systems and API collaboration",
+              "accessibility and quality",
               "JavaScript",
               "TypeScript",
               "React",
@@ -5449,14 +4824,14 @@ window.CV_CAREER_OPS_PARALLEL = {
       }
     },
     {
-      "jobKey": "url:https://www.themuse.com/jobs/thecocacolacompany/software-engineering-i",
+      "jobKey": "url:https://www.themuse.com/jobs/thecocacolacompany/software-engineer-i-5e6a92",
       "company": "The Coca-Cola Company",
-      "title": "Software Engineering I",
+      "title": "Software Engineer I",
       "score": 95,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-12T00:25:31.458Z",
-      "completedAt": "2026-06-12T00:25:31.460Z",
+      "startedAt": "2026-06-13T00:26:56.269Z",
+      "completedAt": "2026-06-13T00:26:56.270Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -5477,9 +4852,9 @@ window.CV_CAREER_OPS_PARALLEL = {
             "AI / data / platform signal",
             "remote or hybrid signal"
           ],
-          "evidenceCount": 3,
+          "evidenceCount": 5,
           "questions": [
-            "What business unit owns the Software Engineer I role?",
+            "What business unit owns the Senior Software Engineer II role?",
             "What measurable outcomes would this team expect in the first 90 days?",
             "What recent company/product signals change the risk or upside?",
             "Which CV proof points should be highlighted for this company?"
@@ -5494,9 +4869,9 @@ window.CV_CAREER_OPS_PARALLEL = {
           ]
         },
         "compensation": {
-          "jobKey": "url:https://www.themuse.com/jobs/thecocacolacompany/software-engineer-i-f085ec",
+          "jobKey": "url:https://www.themuse.com/jobs/thecocacolacompany/senior-software-engineer-ii-45ddca",
           "company": "The Coca-Cola Company",
-          "title": "Software Engineer I",
+          "title": "Senior Software Engineer II",
           "market": "us",
           "inferredLevel": "senior",
           "candidateLevel": "mid",
@@ -5532,8 +4907,8 @@ window.CV_CAREER_OPS_PARALLEL = {
             ]
           },
           "negotiationScript": {
-            "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Software Engineer I package, including base, bonus, equity, and review cycle?",
-            "valueAnchor": "Based on the scope of Software Engineer I and my fit around API, engineer, product, data, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
+            "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Senior Software Engineer II package, including base, bonus, equity, and review cycle?",
+            "valueAnchor": "Based on the scope of Senior Software Engineer II and my fit around API, engineer, product, data, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
             "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
             "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
             "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
@@ -5583,43 +4958,15 @@ window.CV_CAREER_OPS_PARALLEL = {
           },
           {
             "id": "story-2",
-            "theme": "data-heavy product decisions",
-            "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
-            "applicableQuestions": [
-              "Tell me about a project you are proud of.",
-              "Tell me about a time you handled ambiguity.",
-              "How have you applied data-heavy product decisions?"
-            ],
-            "star": {
-              "situation": "You were working with a data-intensive product. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — describe the data volume, the user workflow, and what was difficult to render or interpret.",
-              "task": "What decision did you own? (chart type, data model, aggregation strategy, caching layer, etc.)",
-              "action": "Explain how you chose between options, what you built or prototyped, and how you validated your approach with data or users.",
-              "result": "State the outcome: query latency, dashboard load time, user comprehension improvement, or reduction in support requests.",
-              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
-            },
-            "keywords": [
-              "data-heavy product decisions",
-              "JavaScript",
-              "TypeScript",
-              "React",
-              "Next.js",
-              "CSS",
-              "Tailwind",
-              "Accessibility"
-            ],
-            "relevance": 0
-          },
-          {
-            "id": "story-3",
             "theme": "systems and API collaboration",
-            "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
+            "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
             "applicableQuestions": [
               "Tell me about a project you are proud of.",
               "Tell me about a time you handled ambiguity.",
               "How have you applied systems and API collaboration?"
             ],
             "star": {
-              "situation": "You collaborated across system boundaries. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — name the systems, teams, and integration surface area.",
+              "situation": "You collaborated across system boundaries. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — name the systems, teams, and integration surface area.",
               "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
               "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
               "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
@@ -5636,11 +4983,248 @@ window.CV_CAREER_OPS_PARALLEL = {
               "Accessibility"
             ],
             "relevance": 0
+          },
+          {
+            "id": "story-3",
+            "theme": "accessibility and quality",
+            "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
+            "applicableQuestions": [
+              "Tell me about a project you are proud of.",
+              "Tell me about a time you handled ambiguity.",
+              "How have you applied accessibility and quality?"
+            ],
+            "star": {
+              "situation": "You led or contributed to an accessibility or quality initiative. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — what was the starting state and who was affected?",
+              "task": "What standard or target were you working toward (WCAG level, test coverage %, zero-defect milestone)?",
+              "action": "Describe the audit process, tooling (axe, Lighthouse, screen reader testing), and how you prioritized fixes across components.",
+              "result": "State the outcome: WCAG compliance level achieved, user complaints reduced, or CI gate added to prevent regressions.",
+              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
+            },
+            "keywords": [
+              "accessibility and quality",
+              "JavaScript",
+              "TypeScript",
+              "React",
+              "Next.js",
+              "CSS",
+              "Tailwind",
+              "Accessibility"
+            ],
+            "relevance": 0
           }
         ],
         "applyAgent": {
           "mode": "human-in-the-loop",
-          "url": "https://www.themuse.com/jobs/thecocacolacompany/software-engineering-i",
+          "url": "https://www.themuse.com/jobs/thecocacolacompany/software-engineer-i-5e6a92",
+          "steps": [
+            "Open the application URL in a controlled browser session.",
+            "Extract visible form fields and required uploads.",
+            "Map CV profile fields to the form without submitting.",
+            "Prepare tailored PDF and outreach text.",
+            "Stop before final submit and ask the user to review."
+          ],
+          "guardrails": [
+            "Never submit without explicit user confirmation.",
+            "Never fabricate work authorization, salary history, degree, or experience.",
+            "Never store API keys or credentials in job metadata.",
+            "Record only application status and user-approved notes."
+          ]
+        }
+      }
+    },
+    {
+      "jobKey": "url:https://www.themuse.com/jobs/thecocacolacompany/software-engineer-i-crm-0326df",
+      "company": "The Coca-Cola Company",
+      "title": "Software Engineer I - CRM",
+      "score": 95,
+      "grade": "A",
+      "priority": "P0",
+      "startedAt": "2026-06-13T00:26:56.271Z",
+      "completedAt": "2026-06-13T00:26:56.273Z",
+      "workers": {
+        "evaluation": {
+          "recommendation": "值得投遞",
+          "keywords": [
+            "API",
+            "engineer",
+            "product",
+            "data"
+          ],
+          "nextActions": [
+            "開啟職缺確認仍可投遞",
+            "產生客製 ATS PDF",
+            "用同職類高分職缺校準履歷關鍵字"
+          ]
+        },
+        "research": {
+          "signals": [
+            "AI / data / platform signal",
+            "remote or hybrid signal"
+          ],
+          "evidenceCount": 5,
+          "questions": [
+            "What business unit owns the Senior Software Engineer II role?",
+            "What measurable outcomes would this team expect in the first 90 days?",
+            "What recent company/product signals change the risk or upside?",
+            "Which CV proof points should be highlighted for this company?"
+          ]
+        },
+        "application": {
+          "checklist": [
+            "Confirm posting is active.",
+            "Generate tailored ATS PDF.",
+            "Prepare outreach and follow-up.",
+            "Log status and next follow-up."
+          ]
+        },
+        "compensation": {
+          "jobKey": "url:https://www.themuse.com/jobs/thecocacolacompany/senior-software-engineer-ii-45ddca",
+          "company": "The Coca-Cola Company",
+          "title": "Senior Software Engineer II",
+          "market": "us",
+          "inferredLevel": "senior",
+          "candidateLevel": "mid",
+          "leverage": "high",
+          "evidence": {
+            "salaryMentions": [],
+            "benefitSignals": [
+              "work-mode flexibility",
+              "learning budget"
+            ]
+          },
+          "marketBenchmark": null,
+          "structure": {
+            "baseSalary": [
+              "Need verified market data or recruiter range before setting a numeric anchor."
+            ],
+            "bonus": "Ask whether there is annual bonus, performance bonus, or sign-on bonus.",
+            "equity": "Ask whether equity, RSU, options, or profit-sharing exists.",
+            "benefits": [
+              "Health / insurance coverage",
+              "Paid leave and holidays",
+              "Learning budget or certification support",
+              "Remote/hybrid setup, commute, or relocation support",
+              "Review cycle and promotion timeline"
+            ],
+            "nonCashLevers": [
+              "Title / level calibration",
+              "Start date flexibility",
+              "Remote days",
+              "Equipment budget",
+              "First review at 3 or 6 months",
+              "Conference / learning budget"
+            ]
+          },
+          "negotiationScript": {
+            "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Senior Software Engineer II package, including base, bonus, equity, and review cycle?",
+            "valueAnchor": "Based on the scope of Senior Software Engineer II and my fit around API, engineer, product, data, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
+            "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
+            "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
+            "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
+          },
+          "redLines": [
+            "Do not disclose current compensation unless legally appropriate and strategically useful.",
+            "Do not accept verbal-only compensation details; ask for written package components.",
+            "Do not negotiate before confirming level, scope, work mode, and review cycle.",
+            "Do not trade base salary away without valuing the replacement benefit."
+          ],
+          "nextActions": [
+            "Collect market compensation evidence before naming a number.",
+            "Ask recruiter for approved range and level.",
+            "Map the job scope to proof points in the tailored CV.",
+            "Prepare one counter package with base, bonus/equity, and non-cash levers."
+          ],
+          "targetFrame": "Do not name a number first. Ask for the approved range, level, and total compensation structure before anchoring."
+        },
+        "stories": [
+          {
+            "id": "story-1",
+            "theme": "frontend product execution",
+            "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
+            "applicableQuestions": [
+              "Tell me about a project you are proud of.",
+              "Tell me about a time you handled ambiguity.",
+              "How have you applied frontend product execution?"
+            ],
+            "star": {
+              "situation": "You were tasked with a frontend product challenge. Proof point: \"Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.\" — set the scene: what product, what team size, and what was broken or missing?",
+              "task": "What was the specific outcome you were accountable for? Include the success metric (e.g. performance score, user adoption rate, release date).",
+              "action": "Walk through the key technical decisions: component architecture, state management tradeoffs, accessibility choices, or API contract design.",
+              "result": "Quantify the impact: load time delta, user adoption %, code reduction %, or stakeholder feedback. If no number, describe the quality or velocity improvement.",
+              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
+            },
+            "keywords": [
+              "frontend product execution",
+              "JavaScript",
+              "TypeScript",
+              "React",
+              "Next.js",
+              "CSS",
+              "Tailwind",
+              "Accessibility"
+            ],
+            "relevance": 0
+          },
+          {
+            "id": "story-2",
+            "theme": "systems and API collaboration",
+            "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
+            "applicableQuestions": [
+              "Tell me about a project you are proud of.",
+              "Tell me about a time you handled ambiguity.",
+              "How have you applied systems and API collaboration?"
+            ],
+            "star": {
+              "situation": "You collaborated across system boundaries. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — name the systems, teams, and integration surface area.",
+              "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
+              "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
+              "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
+              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
+            },
+            "keywords": [
+              "systems and API collaboration",
+              "JavaScript",
+              "TypeScript",
+              "React",
+              "Next.js",
+              "CSS",
+              "Tailwind",
+              "Accessibility"
+            ],
+            "relevance": 0
+          },
+          {
+            "id": "story-3",
+            "theme": "accessibility and quality",
+            "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
+            "applicableQuestions": [
+              "Tell me about a project you are proud of.",
+              "Tell me about a time you handled ambiguity.",
+              "How have you applied accessibility and quality?"
+            ],
+            "star": {
+              "situation": "You led or contributed to an accessibility or quality initiative. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — what was the starting state and who was affected?",
+              "task": "What standard or target were you working toward (WCAG level, test coverage %, zero-defect milestone)?",
+              "action": "Describe the audit process, tooling (axe, Lighthouse, screen reader testing), and how you prioritized fixes across components.",
+              "result": "State the outcome: WCAG compliance level achieved, user complaints reduced, or CI gate added to prevent regressions.",
+              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
+            },
+            "keywords": [
+              "accessibility and quality",
+              "JavaScript",
+              "TypeScript",
+              "React",
+              "Next.js",
+              "CSS",
+              "Tailwind",
+              "Accessibility"
+            ],
+            "relevance": 0
+          }
+        ],
+        "applyAgent": {
+          "mode": "human-in-the-loop",
+          "url": "https://www.themuse.com/jobs/thecocacolacompany/software-engineer-i-crm-0326df",
           "steps": [
             "Open the application URL in a controlled browser session.",
             "Extract visible form fields and required uploads.",
@@ -5664,8 +5248,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 94,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-12T00:25:31.458Z",
-      "completedAt": "2026-06-12T00:25:31.460Z",
+      "startedAt": "2026-06-13T00:26:56.271Z",
+      "completedAt": "2026-06-13T00:26:56.273Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -5727,22 +5311,22 @@ window.CV_CAREER_OPS_PARALLEL = {
           },
           {
             "id": "story-2",
-            "theme": "data-heavy product decisions",
+            "theme": "systems and API collaboration",
             "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
             "applicableQuestions": [
               "Tell me about a project you are proud of.",
               "Tell me about a time you handled ambiguity.",
-              "How have you applied data-heavy product decisions?"
+              "How have you applied systems and API collaboration?"
             ],
             "star": {
-              "situation": "You were working with a data-intensive product. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — describe the data volume, the user workflow, and what was difficult to render or interpret.",
-              "task": "What decision did you own? (chart type, data model, aggregation strategy, caching layer, etc.)",
-              "action": "Explain how you chose between options, what you built or prototyped, and how you validated your approach with data or users.",
-              "result": "State the outcome: query latency, dashboard load time, user comprehension improvement, or reduction in support requests.",
+              "situation": "You collaborated across system boundaries. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — name the systems, teams, and integration surface area.",
+              "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
+              "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
+              "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
               "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
             },
             "keywords": [
-              "data-heavy product decisions",
+              "systems and API collaboration",
               "JavaScript",
               "TypeScript",
               "React",
@@ -5755,22 +5339,22 @@ window.CV_CAREER_OPS_PARALLEL = {
           },
           {
             "id": "story-3",
-            "theme": "systems and API collaboration",
+            "theme": "accessibility and quality",
             "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
             "applicableQuestions": [
               "Tell me about a project you are proud of.",
               "Tell me about a time you handled ambiguity.",
-              "How have you applied systems and API collaboration?"
+              "How have you applied accessibility and quality?"
             ],
             "star": {
-              "situation": "You collaborated across system boundaries. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — name the systems, teams, and integration surface area.",
-              "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
-              "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
-              "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
+              "situation": "You led or contributed to an accessibility or quality initiative. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — what was the starting state and who was affected?",
+              "task": "What standard or target were you working toward (WCAG level, test coverage %, zero-defect milestone)?",
+              "action": "Describe the audit process, tooling (axe, Lighthouse, screen reader testing), and how you prioritized fixes across components.",
+              "result": "State the outcome: WCAG compliance level achieved, user complaints reduced, or CI gate added to prevent regressions.",
               "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
             },
             "keywords": [
-              "systems and API collaboration",
+              "accessibility and quality",
               "JavaScript",
               "TypeScript",
               "React",
@@ -5808,8 +5392,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 94,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-12T00:25:31.461Z",
-      "completedAt": "2026-06-12T00:25:31.463Z",
+      "startedAt": "2026-06-13T00:26:56.271Z",
+      "completedAt": "2026-06-13T00:26:56.273Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -5876,22 +5460,22 @@ window.CV_CAREER_OPS_PARALLEL = {
           },
           {
             "id": "story-2",
-            "theme": "data-heavy product decisions",
+            "theme": "systems and API collaboration",
             "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
             "applicableQuestions": [
               "Tell me about a project you are proud of.",
               "Tell me about a time you handled ambiguity.",
-              "How have you applied data-heavy product decisions?"
+              "How have you applied systems and API collaboration?"
             ],
             "star": {
-              "situation": "You were working with a data-intensive product. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — describe the data volume, the user workflow, and what was difficult to render or interpret.",
-              "task": "What decision did you own? (chart type, data model, aggregation strategy, caching layer, etc.)",
-              "action": "Explain how you chose between options, what you built or prototyped, and how you validated your approach with data or users.",
-              "result": "State the outcome: query latency, dashboard load time, user comprehension improvement, or reduction in support requests.",
+              "situation": "You collaborated across system boundaries. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — name the systems, teams, and integration surface area.",
+              "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
+              "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
+              "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
               "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
             },
             "keywords": [
-              "data-heavy product decisions",
+              "systems and API collaboration",
               "JavaScript",
               "TypeScript",
               "React",
@@ -5904,22 +5488,22 @@ window.CV_CAREER_OPS_PARALLEL = {
           },
           {
             "id": "story-3",
-            "theme": "systems and API collaboration",
+            "theme": "accessibility and quality",
             "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
             "applicableQuestions": [
               "Tell me about a project you are proud of.",
               "Tell me about a time you handled ambiguity.",
-              "How have you applied systems and API collaboration?"
+              "How have you applied accessibility and quality?"
             ],
             "star": {
-              "situation": "You collaborated across system boundaries. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — name the systems, teams, and integration surface area.",
-              "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
-              "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
-              "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
+              "situation": "You led or contributed to an accessibility or quality initiative. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — what was the starting state and who was affected?",
+              "task": "What standard or target were you working toward (WCAG level, test coverage %, zero-defect milestone)?",
+              "action": "Describe the audit process, tooling (axe, Lighthouse, screen reader testing), and how you prioritized fixes across components.",
+              "result": "State the outcome: WCAG compliance level achieved, user complaints reduced, or CI gate added to prevent regressions.",
               "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
             },
             "keywords": [
-              "systems and API collaboration",
+              "accessibility and quality",
               "JavaScript",
               "TypeScript",
               "React",
@@ -5957,8 +5541,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 94,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-12T00:25:31.461Z",
-      "completedAt": "2026-06-12T00:25:31.463Z",
+      "startedAt": "2026-06-13T00:26:56.272Z",
+      "completedAt": "2026-06-13T00:26:56.274Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -6025,22 +5609,22 @@ window.CV_CAREER_OPS_PARALLEL = {
           },
           {
             "id": "story-2",
-            "theme": "data-heavy product decisions",
+            "theme": "systems and API collaboration",
             "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
             "applicableQuestions": [
               "Tell me about a project you are proud of.",
               "Tell me about a time you handled ambiguity.",
-              "How have you applied data-heavy product decisions?"
+              "How have you applied systems and API collaboration?"
             ],
             "star": {
-              "situation": "You were working with a data-intensive product. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — describe the data volume, the user workflow, and what was difficult to render or interpret.",
-              "task": "What decision did you own? (chart type, data model, aggregation strategy, caching layer, etc.)",
-              "action": "Explain how you chose between options, what you built or prototyped, and how you validated your approach with data or users.",
-              "result": "State the outcome: query latency, dashboard load time, user comprehension improvement, or reduction in support requests.",
+              "situation": "You collaborated across system boundaries. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — name the systems, teams, and integration surface area.",
+              "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
+              "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
+              "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
               "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
             },
             "keywords": [
-              "data-heavy product decisions",
+              "systems and API collaboration",
               "JavaScript",
               "TypeScript",
               "React",
@@ -6053,22 +5637,22 @@ window.CV_CAREER_OPS_PARALLEL = {
           },
           {
             "id": "story-3",
-            "theme": "systems and API collaboration",
+            "theme": "accessibility and quality",
             "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
             "applicableQuestions": [
               "Tell me about a project you are proud of.",
               "Tell me about a time you handled ambiguity.",
-              "How have you applied systems and API collaboration?"
+              "How have you applied accessibility and quality?"
             ],
             "star": {
-              "situation": "You collaborated across system boundaries. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — name the systems, teams, and integration surface area.",
-              "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
-              "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
-              "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
+              "situation": "You led or contributed to an accessibility or quality initiative. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — what was the starting state and who was affected?",
+              "task": "What standard or target were you working toward (WCAG level, test coverage %, zero-defect milestone)?",
+              "action": "Describe the audit process, tooling (axe, Lighthouse, screen reader testing), and how you prioritized fixes across components.",
+              "result": "State the outcome: WCAG compliance level achieved, user complaints reduced, or CI gate added to prevent regressions.",
               "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
             },
             "keywords": [
-              "systems and API collaboration",
+              "accessibility and quality",
               "JavaScript",
               "TypeScript",
               "React",
@@ -6106,8 +5690,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 94,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-12T00:25:31.461Z",
-      "completedAt": "2026-06-12T00:25:31.463Z",
+      "startedAt": "2026-06-13T00:26:56.275Z",
+      "completedAt": "2026-06-13T00:26:56.277Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -6174,22 +5758,22 @@ window.CV_CAREER_OPS_PARALLEL = {
           },
           {
             "id": "story-2",
-            "theme": "data-heavy product decisions",
+            "theme": "systems and API collaboration",
             "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
             "applicableQuestions": [
               "Tell me about a project you are proud of.",
               "Tell me about a time you handled ambiguity.",
-              "How have you applied data-heavy product decisions?"
+              "How have you applied systems and API collaboration?"
             ],
             "star": {
-              "situation": "You were working with a data-intensive product. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — describe the data volume, the user workflow, and what was difficult to render or interpret.",
-              "task": "What decision did you own? (chart type, data model, aggregation strategy, caching layer, etc.)",
-              "action": "Explain how you chose between options, what you built or prototyped, and how you validated your approach with data or users.",
-              "result": "State the outcome: query latency, dashboard load time, user comprehension improvement, or reduction in support requests.",
+              "situation": "You collaborated across system boundaries. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — name the systems, teams, and integration surface area.",
+              "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
+              "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
+              "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
               "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
             },
             "keywords": [
-              "data-heavy product decisions",
+              "systems and API collaboration",
               "JavaScript",
               "TypeScript",
               "React",
@@ -6202,22 +5786,22 @@ window.CV_CAREER_OPS_PARALLEL = {
           },
           {
             "id": "story-3",
-            "theme": "systems and API collaboration",
+            "theme": "accessibility and quality",
             "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
             "applicableQuestions": [
               "Tell me about a project you are proud of.",
               "Tell me about a time you handled ambiguity.",
-              "How have you applied systems and API collaboration?"
+              "How have you applied accessibility and quality?"
             ],
             "star": {
-              "situation": "You collaborated across system boundaries. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — name the systems, teams, and integration surface area.",
-              "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
-              "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
-              "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
+              "situation": "You led or contributed to an accessibility or quality initiative. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — what was the starting state and who was affected?",
+              "task": "What standard or target were you working toward (WCAG level, test coverage %, zero-defect milestone)?",
+              "action": "Describe the audit process, tooling (axe, Lighthouse, screen reader testing), and how you prioritized fixes across components.",
+              "result": "State the outcome: WCAG compliance level achieved, user complaints reduced, or CI gate added to prevent regressions.",
               "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
             },
             "keywords": [
-              "systems and API collaboration",
+              "accessibility and quality",
               "JavaScript",
               "TypeScript",
               "React",
@@ -6249,158 +5833,14 @@ window.CV_CAREER_OPS_PARALLEL = {
       }
     },
     {
-      "jobKey": "url:https://databricks.com/company/careers/open-positions/job?gh_jid=8367942002",
-      "company": "Databricks Greenhouse",
-      "title": "Resident Solutions Architect (Full Stack Engineer)",
-      "score": 94,
-      "grade": "A",
-      "priority": "P0",
-      "startedAt": "2026-06-12T00:25:31.461Z",
-      "completedAt": "2026-06-12T00:25:31.463Z",
-      "workers": {
-        "evaluation": {
-          "recommendation": "值得投遞",
-          "keywords": [
-            "Analytics",
-            "remote",
-            "engineer",
-            "product",
-            "data"
-          ],
-          "nextActions": [
-            "開啟職缺確認仍可投遞",
-            "產生客製 ATS PDF",
-            "用同職類高分職缺校準履歷關鍵字"
-          ]
-        },
-        "research": {
-          "signals": [],
-          "evidenceCount": 0,
-          "questions": []
-        },
-        "application": {
-          "checklist": [
-            "Confirm posting is active.",
-            "Generate tailored ATS PDF.",
-            "Prepare outreach and follow-up.",
-            "Log status and next follow-up."
-          ]
-        },
-        "compensation": null,
-        "stories": [
-          {
-            "id": "story-1",
-            "theme": "frontend product execution",
-            "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
-            "applicableQuestions": [
-              "Tell me about a project you are proud of.",
-              "Tell me about a time you handled ambiguity.",
-              "How have you applied frontend product execution?"
-            ],
-            "star": {
-              "situation": "You were tasked with a frontend product challenge. Proof point: \"Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.\" — set the scene: what product, what team size, and what was broken or missing?",
-              "task": "What was the specific outcome you were accountable for? Include the success metric (e.g. performance score, user adoption rate, release date).",
-              "action": "Walk through the key technical decisions: component architecture, state management tradeoffs, accessibility choices, or API contract design.",
-              "result": "Quantify the impact: load time delta, user adoption %, code reduction %, or stakeholder feedback. If no number, describe the quality or velocity improvement.",
-              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
-            },
-            "keywords": [
-              "frontend product execution",
-              "JavaScript",
-              "TypeScript",
-              "React",
-              "Next.js",
-              "CSS",
-              "Tailwind",
-              "Accessibility"
-            ],
-            "relevance": 0
-          },
-          {
-            "id": "story-2",
-            "theme": "data-heavy product decisions",
-            "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
-            "applicableQuestions": [
-              "Tell me about a project you are proud of.",
-              "Tell me about a time you handled ambiguity.",
-              "How have you applied data-heavy product decisions?"
-            ],
-            "star": {
-              "situation": "You were working with a data-intensive product. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — describe the data volume, the user workflow, and what was difficult to render or interpret.",
-              "task": "What decision did you own? (chart type, data model, aggregation strategy, caching layer, etc.)",
-              "action": "Explain how you chose between options, what you built or prototyped, and how you validated your approach with data or users.",
-              "result": "State the outcome: query latency, dashboard load time, user comprehension improvement, or reduction in support requests.",
-              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
-            },
-            "keywords": [
-              "data-heavy product decisions",
-              "JavaScript",
-              "TypeScript",
-              "React",
-              "Next.js",
-              "CSS",
-              "Tailwind",
-              "Accessibility"
-            ],
-            "relevance": 0
-          },
-          {
-            "id": "story-3",
-            "theme": "systems and API collaboration",
-            "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
-            "applicableQuestions": [
-              "Tell me about a project you are proud of.",
-              "Tell me about a time you handled ambiguity.",
-              "How have you applied systems and API collaboration?"
-            ],
-            "star": {
-              "situation": "You collaborated across system boundaries. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — name the systems, teams, and integration surface area.",
-              "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
-              "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
-              "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
-              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
-            },
-            "keywords": [
-              "systems and API collaboration",
-              "JavaScript",
-              "TypeScript",
-              "React",
-              "Next.js",
-              "CSS",
-              "Tailwind",
-              "Accessibility"
-            ],
-            "relevance": 0
-          }
-        ],
-        "applyAgent": {
-          "mode": "human-in-the-loop",
-          "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8367942002",
-          "steps": [
-            "Open the application URL in a controlled browser session.",
-            "Extract visible form fields and required uploads.",
-            "Map CV profile fields to the form without submitting.",
-            "Prepare tailored PDF and outreach text.",
-            "Stop before final submit and ask the user to review."
-          ],
-          "guardrails": [
-            "Never submit without explicit user confirmation.",
-            "Never fabricate work authorization, salary history, degree, or experience.",
-            "Never store API keys or credentials in job metadata.",
-            "Record only application status and user-approved notes."
-          ]
-        }
-      }
-    },
-    {
       "jobKey": "url:https://databricks.com/company/careers/open-positions/job?gh_jid=8409447002",
       "company": "Databricks Greenhouse",
       "title": "Director,Technical Solutions (Big Data/ AI)",
       "score": 94,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-12T00:25:31.465Z",
-      "completedAt": "2026-06-12T00:25:31.466Z",
+      "startedAt": "2026-06-13T00:26:56.275Z",
+      "completedAt": "2026-06-13T00:26:56.277Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -6461,22 +5901,22 @@ window.CV_CAREER_OPS_PARALLEL = {
           },
           {
             "id": "story-2",
-            "theme": "data-heavy product decisions",
+            "theme": "systems and API collaboration",
             "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
             "applicableQuestions": [
               "Tell me about a project you are proud of.",
               "Tell me about a time you handled ambiguity.",
-              "How have you applied data-heavy product decisions?"
+              "How have you applied systems and API collaboration?"
             ],
             "star": {
-              "situation": "You were working with a data-intensive product. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — describe the data volume, the user workflow, and what was difficult to render or interpret.",
-              "task": "What decision did you own? (chart type, data model, aggregation strategy, caching layer, etc.)",
-              "action": "Explain how you chose between options, what you built or prototyped, and how you validated your approach with data or users.",
-              "result": "State the outcome: query latency, dashboard load time, user comprehension improvement, or reduction in support requests.",
+              "situation": "You collaborated across system boundaries. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — name the systems, teams, and integration surface area.",
+              "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
+              "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
+              "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
               "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
             },
             "keywords": [
-              "data-heavy product decisions",
+              "systems and API collaboration",
               "JavaScript",
               "TypeScript",
               "React",
@@ -6489,22 +5929,22 @@ window.CV_CAREER_OPS_PARALLEL = {
           },
           {
             "id": "story-3",
-            "theme": "systems and API collaboration",
+            "theme": "accessibility and quality",
             "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
             "applicableQuestions": [
               "Tell me about a project you are proud of.",
               "Tell me about a time you handled ambiguity.",
-              "How have you applied systems and API collaboration?"
+              "How have you applied accessibility and quality?"
             ],
             "star": {
-              "situation": "You collaborated across system boundaries. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — name the systems, teams, and integration surface area.",
-              "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
-              "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
-              "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
+              "situation": "You led or contributed to an accessibility or quality initiative. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — what was the starting state and who was affected?",
+              "task": "What standard or target were you working toward (WCAG level, test coverage %, zero-defect milestone)?",
+              "action": "Describe the audit process, tooling (axe, Lighthouse, screen reader testing), and how you prioritized fixes across components.",
+              "result": "State the outcome: WCAG compliance level achieved, user complaints reduced, or CI gate added to prevent regressions.",
               "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
             },
             "keywords": [
-              "systems and API collaboration",
+              "accessibility and quality",
               "JavaScript",
               "TypeScript",
               "React",
@@ -6536,14 +5976,157 @@ window.CV_CAREER_OPS_PARALLEL = {
       }
     },
     {
+      "jobKey": "url:https://www.mycareersfuture.gov.sg/job/ab3bc86c20af766934980ae954bdfc2e",
+      "company": "SHEIN STAR PTE. LTD.",
+      "title": "Product Manager – Apparel & Accessories",
+      "score": 93,
+      "grade": "A",
+      "priority": "P0",
+      "startedAt": "2026-06-13T00:26:56.275Z",
+      "completedAt": "2026-06-13T00:26:56.276Z",
+      "workers": {
+        "evaluation": {
+          "recommendation": "值得投遞",
+          "keywords": [
+            "Analytics",
+            "dashboard",
+            "product",
+            "data"
+          ],
+          "nextActions": [
+            "開啟職缺確認仍可投遞",
+            "產生客製 ATS PDF",
+            "用同職類高分職缺校準履歷關鍵字"
+          ]
+        },
+        "research": {
+          "signals": [],
+          "evidenceCount": 0,
+          "questions": []
+        },
+        "application": {
+          "checklist": [
+            "Confirm posting is active.",
+            "Generate tailored ATS PDF.",
+            "Prepare outreach and follow-up.",
+            "Log status and next follow-up."
+          ]
+        },
+        "compensation": null,
+        "stories": [
+          {
+            "id": "story-1",
+            "theme": "frontend product execution",
+            "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
+            "applicableQuestions": [
+              "Tell me about a project you are proud of.",
+              "Tell me about a time you handled ambiguity.",
+              "How have you applied frontend product execution?"
+            ],
+            "star": {
+              "situation": "You were tasked with a frontend product challenge. Proof point: \"Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.\" — set the scene: what product, what team size, and what was broken or missing?",
+              "task": "What was the specific outcome you were accountable for? Include the success metric (e.g. performance score, user adoption rate, release date).",
+              "action": "Walk through the key technical decisions: component architecture, state management tradeoffs, accessibility choices, or API contract design.",
+              "result": "Quantify the impact: load time delta, user adoption %, code reduction %, or stakeholder feedback. If no number, describe the quality or velocity improvement.",
+              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
+            },
+            "keywords": [
+              "frontend product execution",
+              "JavaScript",
+              "TypeScript",
+              "React",
+              "Next.js",
+              "CSS",
+              "Tailwind",
+              "Accessibility"
+            ],
+            "relevance": 0
+          },
+          {
+            "id": "story-2",
+            "theme": "systems and API collaboration",
+            "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
+            "applicableQuestions": [
+              "Tell me about a project you are proud of.",
+              "Tell me about a time you handled ambiguity.",
+              "How have you applied systems and API collaboration?"
+            ],
+            "star": {
+              "situation": "You collaborated across system boundaries. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — name the systems, teams, and integration surface area.",
+              "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
+              "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
+              "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
+              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
+            },
+            "keywords": [
+              "systems and API collaboration",
+              "JavaScript",
+              "TypeScript",
+              "React",
+              "Next.js",
+              "CSS",
+              "Tailwind",
+              "Accessibility"
+            ],
+            "relevance": 0
+          },
+          {
+            "id": "story-3",
+            "theme": "accessibility and quality",
+            "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
+            "applicableQuestions": [
+              "Tell me about a project you are proud of.",
+              "Tell me about a time you handled ambiguity.",
+              "How have you applied accessibility and quality?"
+            ],
+            "star": {
+              "situation": "You led or contributed to an accessibility or quality initiative. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — what was the starting state and who was affected?",
+              "task": "What standard or target were you working toward (WCAG level, test coverage %, zero-defect milestone)?",
+              "action": "Describe the audit process, tooling (axe, Lighthouse, screen reader testing), and how you prioritized fixes across components.",
+              "result": "State the outcome: WCAG compliance level achieved, user complaints reduced, or CI gate added to prevent regressions.",
+              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
+            },
+            "keywords": [
+              "accessibility and quality",
+              "JavaScript",
+              "TypeScript",
+              "React",
+              "Next.js",
+              "CSS",
+              "Tailwind",
+              "Accessibility"
+            ],
+            "relevance": 0
+          }
+        ],
+        "applyAgent": {
+          "mode": "human-in-the-loop",
+          "url": "https://www.mycareersfuture.gov.sg/job/ab3bc86c20af766934980ae954bdfc2e",
+          "steps": [
+            "Open the application URL in a controlled browser session.",
+            "Extract visible form fields and required uploads.",
+            "Map CV profile fields to the form without submitting.",
+            "Prepare tailored PDF and outreach text.",
+            "Stop before final submit and ask the user to review."
+          ],
+          "guardrails": [
+            "Never submit without explicit user confirmation.",
+            "Never fabricate work authorization, salary history, degree, or experience.",
+            "Never store API keys or credentials in job metadata.",
+            "Record only application status and user-approved notes."
+          ]
+        }
+      }
+    },
+    {
       "jobKey": "url:https://www.themuse.com/jobs/uber/director-marketplace-central-operations-mobility-emea",
       "company": "Uber",
       "title": "Director, Marketplace Central Operations Mobility EMEA",
       "score": 93,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-12T00:25:31.465Z",
-      "completedAt": "2026-06-12T00:25:31.467Z",
+      "startedAt": "2026-06-13T00:26:56.275Z",
+      "completedAt": "2026-06-13T00:26:56.277Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -6670,22 +6253,22 @@ window.CV_CAREER_OPS_PARALLEL = {
           },
           {
             "id": "story-2",
-            "theme": "data-heavy product decisions",
+            "theme": "systems and API collaboration",
             "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
             "applicableQuestions": [
               "Tell me about a project you are proud of.",
               "Tell me about a time you handled ambiguity.",
-              "How have you applied data-heavy product decisions?"
+              "How have you applied systems and API collaboration?"
             ],
             "star": {
-              "situation": "You were working with a data-intensive product. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — describe the data volume, the user workflow, and what was difficult to render or interpret.",
-              "task": "What decision did you own? (chart type, data model, aggregation strategy, caching layer, etc.)",
-              "action": "Explain how you chose between options, what you built or prototyped, and how you validated your approach with data or users.",
-              "result": "State the outcome: query latency, dashboard load time, user comprehension improvement, or reduction in support requests.",
+              "situation": "You collaborated across system boundaries. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — name the systems, teams, and integration surface area.",
+              "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
+              "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
+              "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
               "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
             },
             "keywords": [
-              "data-heavy product decisions",
+              "systems and API collaboration",
               "JavaScript",
               "TypeScript",
               "React",
@@ -6698,22 +6281,22 @@ window.CV_CAREER_OPS_PARALLEL = {
           },
           {
             "id": "story-3",
-            "theme": "systems and API collaboration",
+            "theme": "accessibility and quality",
             "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
             "applicableQuestions": [
               "Tell me about a project you are proud of.",
               "Tell me about a time you handled ambiguity.",
-              "How have you applied systems and API collaboration?"
+              "How have you applied accessibility and quality?"
             ],
             "star": {
-              "situation": "You collaborated across system boundaries. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — name the systems, teams, and integration surface area.",
-              "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
-              "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
-              "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
+              "situation": "You led or contributed to an accessibility or quality initiative. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — what was the starting state and who was affected?",
+              "task": "What standard or target were you working toward (WCAG level, test coverage %, zero-defect milestone)?",
+              "action": "Describe the audit process, tooling (axe, Lighthouse, screen reader testing), and how you prioritized fixes across components.",
+              "result": "State the outcome: WCAG compliance level achieved, user complaints reduced, or CI gate added to prevent regressions.",
               "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
             },
             "keywords": [
-              "systems and API collaboration",
+              "accessibility and quality",
               "JavaScript",
               "TypeScript",
               "React",
@@ -6745,14 +6328,163 @@ window.CV_CAREER_OPS_PARALLEL = {
       }
     },
     {
+      "jobKey": "url:https://www.themuse.com/jobs/crowdstrike/sr-full-stack-engineer-remote",
+      "company": "CrowdStrike",
+      "title": "Sr. Full Stack Engineer (Remote)",
+      "score": 93,
+      "grade": "A",
+      "priority": "P0",
+      "startedAt": "2026-06-13T00:26:56.279Z",
+      "completedAt": "2026-06-13T00:26:56.280Z",
+      "workers": {
+        "evaluation": {
+          "recommendation": "值得投遞",
+          "keywords": [
+            "JavaScript",
+            "TypeScript",
+            "React",
+            "Analytics",
+            "API",
+            "remote",
+            "engineer",
+            "product",
+            "data",
+            "dashboards"
+          ],
+          "nextActions": [
+            "開啟職缺確認仍可投遞",
+            "產生客製 ATS PDF",
+            "用同職類高分職缺校準履歷關鍵字"
+          ]
+        },
+        "research": {
+          "signals": [],
+          "evidenceCount": 0,
+          "questions": []
+        },
+        "application": {
+          "checklist": [
+            "Confirm posting is active.",
+            "Generate tailored ATS PDF.",
+            "Prepare outreach and follow-up.",
+            "Log status and next follow-up."
+          ]
+        },
+        "compensation": null,
+        "stories": [
+          {
+            "id": "story-1",
+            "theme": "frontend product execution",
+            "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
+            "applicableQuestions": [
+              "Tell me about a project you are proud of.",
+              "Tell me about a time you handled ambiguity.",
+              "How have you applied frontend product execution?"
+            ],
+            "star": {
+              "situation": "You were tasked with a frontend product challenge. Proof point: \"Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.\" — set the scene: what product, what team size, and what was broken or missing?",
+              "task": "What was the specific outcome you were accountable for? Include the success metric (e.g. performance score, user adoption rate, release date).",
+              "action": "Walk through the key technical decisions: component architecture, state management tradeoffs, accessibility choices, or API contract design.",
+              "result": "Quantify the impact: load time delta, user adoption %, code reduction %, or stakeholder feedback. If no number, describe the quality or velocity improvement.",
+              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
+            },
+            "keywords": [
+              "frontend product execution",
+              "JavaScript",
+              "TypeScript",
+              "React",
+              "Next.js",
+              "CSS",
+              "Tailwind",
+              "Accessibility"
+            ],
+            "relevance": 3
+          },
+          {
+            "id": "story-2",
+            "theme": "systems and API collaboration",
+            "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
+            "applicableQuestions": [
+              "Tell me about a project you are proud of.",
+              "Tell me about a time you handled ambiguity.",
+              "How have you applied systems and API collaboration?"
+            ],
+            "star": {
+              "situation": "You collaborated across system boundaries. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — name the systems, teams, and integration surface area.",
+              "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
+              "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
+              "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
+              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
+            },
+            "keywords": [
+              "systems and API collaboration",
+              "JavaScript",
+              "TypeScript",
+              "React",
+              "Next.js",
+              "CSS",
+              "Tailwind",
+              "Accessibility"
+            ],
+            "relevance": 3
+          },
+          {
+            "id": "story-3",
+            "theme": "accessibility and quality",
+            "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
+            "applicableQuestions": [
+              "Tell me about a project you are proud of.",
+              "Tell me about a time you handled ambiguity.",
+              "How have you applied accessibility and quality?"
+            ],
+            "star": {
+              "situation": "You led or contributed to an accessibility or quality initiative. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — what was the starting state and who was affected?",
+              "task": "What standard or target were you working toward (WCAG level, test coverage %, zero-defect milestone)?",
+              "action": "Describe the audit process, tooling (axe, Lighthouse, screen reader testing), and how you prioritized fixes across components.",
+              "result": "State the outcome: WCAG compliance level achieved, user complaints reduced, or CI gate added to prevent regressions.",
+              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
+            },
+            "keywords": [
+              "accessibility and quality",
+              "JavaScript",
+              "TypeScript",
+              "React",
+              "Next.js",
+              "CSS",
+              "Tailwind",
+              "Accessibility"
+            ],
+            "relevance": 3
+          }
+        ],
+        "applyAgent": {
+          "mode": "human-in-the-loop",
+          "url": "https://www.themuse.com/jobs/crowdstrike/sr-full-stack-engineer-remote",
+          "steps": [
+            "Open the application URL in a controlled browser session.",
+            "Extract visible form fields and required uploads.",
+            "Map CV profile fields to the form without submitting.",
+            "Prepare tailored PDF and outreach text.",
+            "Stop before final submit and ask the user to review."
+          ],
+          "guardrails": [
+            "Never submit without explicit user confirmation.",
+            "Never fabricate work authorization, salary history, degree, or experience.",
+            "Never store API keys or credentials in job metadata.",
+            "Record only application status and user-approved notes."
+          ]
+        }
+      }
+    },
+    {
       "jobKey": "url:https://www.themuse.com/jobs/pilotly/product-engineer-ii-8b1aeb",
       "company": "Pilotly",
       "title": "Product Engineer II",
       "score": 93,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-12T00:25:31.465Z",
-      "completedAt": "2026-06-12T00:25:31.466Z",
+      "startedAt": "2026-06-13T00:26:56.278Z",
+      "completedAt": "2026-06-13T00:26:56.280Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -6818,22 +6550,22 @@ window.CV_CAREER_OPS_PARALLEL = {
           },
           {
             "id": "story-2",
-            "theme": "data-heavy product decisions",
+            "theme": "systems and API collaboration",
             "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
             "applicableQuestions": [
               "Tell me about a project you are proud of.",
               "Tell me about a time you handled ambiguity.",
-              "How have you applied data-heavy product decisions?"
+              "How have you applied systems and API collaboration?"
             ],
             "star": {
-              "situation": "You were working with a data-intensive product. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — describe the data volume, the user workflow, and what was difficult to render or interpret.",
-              "task": "What decision did you own? (chart type, data model, aggregation strategy, caching layer, etc.)",
-              "action": "Explain how you chose between options, what you built or prototyped, and how you validated your approach with data or users.",
-              "result": "State the outcome: query latency, dashboard load time, user comprehension improvement, or reduction in support requests.",
+              "situation": "You collaborated across system boundaries. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — name the systems, teams, and integration surface area.",
+              "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
+              "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
+              "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
               "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
             },
             "keywords": [
-              "data-heavy product decisions",
+              "systems and API collaboration",
               "JavaScript",
               "TypeScript",
               "React",
@@ -6846,22 +6578,22 @@ window.CV_CAREER_OPS_PARALLEL = {
           },
           {
             "id": "story-3",
-            "theme": "systems and API collaboration",
+            "theme": "accessibility and quality",
             "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
             "applicableQuestions": [
               "Tell me about a project you are proud of.",
               "Tell me about a time you handled ambiguity.",
-              "How have you applied systems and API collaboration?"
+              "How have you applied accessibility and quality?"
             ],
             "star": {
-              "situation": "You collaborated across system boundaries. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — name the systems, teams, and integration surface area.",
-              "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
-              "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
-              "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
+              "situation": "You led or contributed to an accessibility or quality initiative. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — what was the starting state and who was affected?",
+              "task": "What standard or target were you working toward (WCAG level, test coverage %, zero-defect milestone)?",
+              "action": "Describe the audit process, tooling (axe, Lighthouse, screen reader testing), and how you prioritized fixes across components.",
+              "result": "State the outcome: WCAG compliance level achieved, user complaints reduced, or CI gate added to prevent regressions.",
               "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
             },
             "keywords": [
-              "systems and API collaboration",
+              "accessibility and quality",
               "JavaScript",
               "TypeScript",
               "React",
@@ -6899,8 +6631,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 93,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-12T00:25:31.465Z",
-      "completedAt": "2026-06-12T00:25:31.467Z",
+      "startedAt": "2026-06-13T00:26:56.279Z",
+      "completedAt": "2026-06-13T00:26:56.280Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -6964,22 +6696,22 @@ window.CV_CAREER_OPS_PARALLEL = {
           },
           {
             "id": "story-2",
-            "theme": "data-heavy product decisions",
+            "theme": "systems and API collaboration",
             "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
             "applicableQuestions": [
               "Tell me about a project you are proud of.",
               "Tell me about a time you handled ambiguity.",
-              "How have you applied data-heavy product decisions?"
+              "How have you applied systems and API collaboration?"
             ],
             "star": {
-              "situation": "You were working with a data-intensive product. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — describe the data volume, the user workflow, and what was difficult to render or interpret.",
-              "task": "What decision did you own? (chart type, data model, aggregation strategy, caching layer, etc.)",
-              "action": "Explain how you chose between options, what you built or prototyped, and how you validated your approach with data or users.",
-              "result": "State the outcome: query latency, dashboard load time, user comprehension improvement, or reduction in support requests.",
+              "situation": "You collaborated across system boundaries. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — name the systems, teams, and integration surface area.",
+              "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
+              "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
+              "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
               "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
             },
             "keywords": [
-              "data-heavy product decisions",
+              "systems and API collaboration",
               "JavaScript",
               "TypeScript",
               "React",
@@ -6992,22 +6724,22 @@ window.CV_CAREER_OPS_PARALLEL = {
           },
           {
             "id": "story-3",
-            "theme": "systems and API collaboration",
+            "theme": "accessibility and quality",
             "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
             "applicableQuestions": [
               "Tell me about a project you are proud of.",
               "Tell me about a time you handled ambiguity.",
-              "How have you applied systems and API collaboration?"
+              "How have you applied accessibility and quality?"
             ],
             "star": {
-              "situation": "You collaborated across system boundaries. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — name the systems, teams, and integration surface area.",
-              "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
-              "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
-              "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
+              "situation": "You led or contributed to an accessibility or quality initiative. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — what was the starting state and who was affected?",
+              "task": "What standard or target were you working toward (WCAG level, test coverage %, zero-defect milestone)?",
+              "action": "Describe the audit process, tooling (axe, Lighthouse, screen reader testing), and how you prioritized fixes across components.",
+              "result": "State the outcome: WCAG compliance level achieved, user complaints reduced, or CI gate added to prevent regressions.",
               "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
             },
             "keywords": [
-              "systems and API collaboration",
+              "accessibility and quality",
               "JavaScript",
               "TypeScript",
               "React",
@@ -7045,8 +6777,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 93,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-12T00:25:31.468Z",
-      "completedAt": "2026-06-12T00:25:31.470Z",
+      "startedAt": "2026-06-13T00:26:56.278Z",
+      "completedAt": "2026-06-13T00:26:56.280Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -7107,22 +6839,22 @@ window.CV_CAREER_OPS_PARALLEL = {
           },
           {
             "id": "story-2",
-            "theme": "data-heavy product decisions",
+            "theme": "systems and API collaboration",
             "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
             "applicableQuestions": [
               "Tell me about a project you are proud of.",
               "Tell me about a time you handled ambiguity.",
-              "How have you applied data-heavy product decisions?"
+              "How have you applied systems and API collaboration?"
             ],
             "star": {
-              "situation": "You were working with a data-intensive product. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — describe the data volume, the user workflow, and what was difficult to render or interpret.",
-              "task": "What decision did you own? (chart type, data model, aggregation strategy, caching layer, etc.)",
-              "action": "Explain how you chose between options, what you built or prototyped, and how you validated your approach with data or users.",
-              "result": "State the outcome: query latency, dashboard load time, user comprehension improvement, or reduction in support requests.",
+              "situation": "You collaborated across system boundaries. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — name the systems, teams, and integration surface area.",
+              "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
+              "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
+              "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
               "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
             },
             "keywords": [
-              "data-heavy product decisions",
+              "systems and API collaboration",
               "JavaScript",
               "TypeScript",
               "React",
@@ -7135,22 +6867,22 @@ window.CV_CAREER_OPS_PARALLEL = {
           },
           {
             "id": "story-3",
-            "theme": "systems and API collaboration",
+            "theme": "accessibility and quality",
             "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
             "applicableQuestions": [
               "Tell me about a project you are proud of.",
               "Tell me about a time you handled ambiguity.",
-              "How have you applied systems and API collaboration?"
+              "How have you applied accessibility and quality?"
             ],
             "star": {
-              "situation": "You collaborated across system boundaries. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — name the systems, teams, and integration surface area.",
-              "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
-              "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
-              "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
+              "situation": "You led or contributed to an accessibility or quality initiative. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — what was the starting state and who was affected?",
+              "task": "What standard or target were you working toward (WCAG level, test coverage %, zero-defect milestone)?",
+              "action": "Describe the audit process, tooling (axe, Lighthouse, screen reader testing), and how you prioritized fixes across components.",
+              "result": "State the outcome: WCAG compliance level achieved, user complaints reduced, or CI gate added to prevent regressions.",
               "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
             },
             "keywords": [
-              "systems and API collaboration",
+              "accessibility and quality",
               "JavaScript",
               "TypeScript",
               "React",
@@ -7188,8 +6920,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 93,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-12T00:25:31.468Z",
-      "completedAt": "2026-06-12T00:25:31.470Z",
+      "startedAt": "2026-06-13T00:26:56.282Z",
+      "completedAt": "2026-06-13T00:26:56.283Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -7252,22 +6984,22 @@ window.CV_CAREER_OPS_PARALLEL = {
           },
           {
             "id": "story-2",
-            "theme": "data-heavy product decisions",
+            "theme": "systems and API collaboration",
             "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
             "applicableQuestions": [
               "Tell me about a project you are proud of.",
               "Tell me about a time you handled ambiguity.",
-              "How have you applied data-heavy product decisions?"
+              "How have you applied systems and API collaboration?"
             ],
             "star": {
-              "situation": "You were working with a data-intensive product. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — describe the data volume, the user workflow, and what was difficult to render or interpret.",
-              "task": "What decision did you own? (chart type, data model, aggregation strategy, caching layer, etc.)",
-              "action": "Explain how you chose between options, what you built or prototyped, and how you validated your approach with data or users.",
-              "result": "State the outcome: query latency, dashboard load time, user comprehension improvement, or reduction in support requests.",
+              "situation": "You collaborated across system boundaries. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — name the systems, teams, and integration surface area.",
+              "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
+              "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
+              "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
               "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
             },
             "keywords": [
-              "data-heavy product decisions",
+              "systems and API collaboration",
               "JavaScript",
               "TypeScript",
               "React",
@@ -7280,22 +7012,22 @@ window.CV_CAREER_OPS_PARALLEL = {
           },
           {
             "id": "story-3",
-            "theme": "systems and API collaboration",
+            "theme": "accessibility and quality",
             "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
             "applicableQuestions": [
               "Tell me about a project you are proud of.",
               "Tell me about a time you handled ambiguity.",
-              "How have you applied systems and API collaboration?"
+              "How have you applied accessibility and quality?"
             ],
             "star": {
-              "situation": "You collaborated across system boundaries. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — name the systems, teams, and integration surface area.",
-              "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
-              "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
-              "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
+              "situation": "You led or contributed to an accessibility or quality initiative. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — what was the starting state and who was affected?",
+              "task": "What standard or target were you working toward (WCAG level, test coverage %, zero-defect milestone)?",
+              "action": "Describe the audit process, tooling (axe, Lighthouse, screen reader testing), and how you prioritized fixes across components.",
+              "result": "State the outcome: WCAG compliance level achieved, user complaints reduced, or CI gate added to prevent regressions.",
               "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
             },
             "keywords": [
-              "systems and API collaboration",
+              "accessibility and quality",
               "JavaScript",
               "TypeScript",
               "React",
@@ -7333,8 +7065,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 93,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-12T00:25:31.468Z",
-      "completedAt": "2026-06-12T00:25:31.470Z",
+      "startedAt": "2026-06-13T00:26:56.282Z",
+      "completedAt": "2026-06-13T00:26:56.284Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -7397,22 +7129,22 @@ window.CV_CAREER_OPS_PARALLEL = {
           },
           {
             "id": "story-2",
-            "theme": "data-heavy product decisions",
+            "theme": "systems and API collaboration",
             "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
             "applicableQuestions": [
               "Tell me about a project you are proud of.",
               "Tell me about a time you handled ambiguity.",
-              "How have you applied data-heavy product decisions?"
+              "How have you applied systems and API collaboration?"
             ],
             "star": {
-              "situation": "You were working with a data-intensive product. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — describe the data volume, the user workflow, and what was difficult to render or interpret.",
-              "task": "What decision did you own? (chart type, data model, aggregation strategy, caching layer, etc.)",
-              "action": "Explain how you chose between options, what you built or prototyped, and how you validated your approach with data or users.",
-              "result": "State the outcome: query latency, dashboard load time, user comprehension improvement, or reduction in support requests.",
+              "situation": "You collaborated across system boundaries. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — name the systems, teams, and integration surface area.",
+              "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
+              "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
+              "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
               "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
             },
             "keywords": [
-              "data-heavy product decisions",
+              "systems and API collaboration",
               "JavaScript",
               "TypeScript",
               "React",
@@ -7425,22 +7157,22 @@ window.CV_CAREER_OPS_PARALLEL = {
           },
           {
             "id": "story-3",
-            "theme": "systems and API collaboration",
+            "theme": "accessibility and quality",
             "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
             "applicableQuestions": [
               "Tell me about a project you are proud of.",
               "Tell me about a time you handled ambiguity.",
-              "How have you applied systems and API collaboration?"
+              "How have you applied accessibility and quality?"
             ],
             "star": {
-              "situation": "You collaborated across system boundaries. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — name the systems, teams, and integration surface area.",
-              "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
-              "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
-              "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
+              "situation": "You led or contributed to an accessibility or quality initiative. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — what was the starting state and who was affected?",
+              "task": "What standard or target were you working toward (WCAG level, test coverage %, zero-defect milestone)?",
+              "action": "Describe the audit process, tooling (axe, Lighthouse, screen reader testing), and how you prioritized fixes across components.",
+              "result": "State the outcome: WCAG compliance level achieved, user complaints reduced, or CI gate added to prevent regressions.",
               "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
             },
             "keywords": [
-              "systems and API collaboration",
+              "accessibility and quality",
               "JavaScript",
               "TypeScript",
               "React",
@@ -7478,8 +7210,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 93,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-12T00:25:31.468Z",
-      "completedAt": "2026-06-12T00:25:31.470Z",
+      "startedAt": "2026-06-13T00:26:56.282Z",
+      "completedAt": "2026-06-13T00:26:56.283Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -7540,22 +7272,22 @@ window.CV_CAREER_OPS_PARALLEL = {
           },
           {
             "id": "story-2",
-            "theme": "data-heavy product decisions",
+            "theme": "systems and API collaboration",
             "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
             "applicableQuestions": [
               "Tell me about a project you are proud of.",
               "Tell me about a time you handled ambiguity.",
-              "How have you applied data-heavy product decisions?"
+              "How have you applied systems and API collaboration?"
             ],
             "star": {
-              "situation": "You were working with a data-intensive product. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — describe the data volume, the user workflow, and what was difficult to render or interpret.",
-              "task": "What decision did you own? (chart type, data model, aggregation strategy, caching layer, etc.)",
-              "action": "Explain how you chose between options, what you built or prototyped, and how you validated your approach with data or users.",
-              "result": "State the outcome: query latency, dashboard load time, user comprehension improvement, or reduction in support requests.",
+              "situation": "You collaborated across system boundaries. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — name the systems, teams, and integration surface area.",
+              "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
+              "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
+              "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
               "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
             },
             "keywords": [
-              "data-heavy product decisions",
+              "systems and API collaboration",
               "JavaScript",
               "TypeScript",
               "React",
@@ -7568,22 +7300,22 @@ window.CV_CAREER_OPS_PARALLEL = {
           },
           {
             "id": "story-3",
-            "theme": "systems and API collaboration",
+            "theme": "accessibility and quality",
             "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
             "applicableQuestions": [
               "Tell me about a project you are proud of.",
               "Tell me about a time you handled ambiguity.",
-              "How have you applied systems and API collaboration?"
+              "How have you applied accessibility and quality?"
             ],
             "star": {
-              "situation": "You collaborated across system boundaries. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — name the systems, teams, and integration surface area.",
-              "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
-              "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
-              "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
+              "situation": "You led or contributed to an accessibility or quality initiative. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — what was the starting state and who was affected?",
+              "task": "What standard or target were you working toward (WCAG level, test coverage %, zero-defect milestone)?",
+              "action": "Describe the audit process, tooling (axe, Lighthouse, screen reader testing), and how you prioritized fixes across components.",
+              "result": "State the outcome: WCAG compliance level achieved, user complaints reduced, or CI gate added to prevent regressions.",
               "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
             },
             "keywords": [
-              "systems and API collaboration",
+              "accessibility and quality",
               "JavaScript",
               "TypeScript",
               "React",
@@ -7621,8 +7353,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 93,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-12T00:25:31.476Z",
-      "completedAt": "2026-06-12T00:25:31.478Z",
+      "startedAt": "2026-06-13T00:26:56.282Z",
+      "completedAt": "2026-06-13T00:26:56.283Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -7685,22 +7417,22 @@ window.CV_CAREER_OPS_PARALLEL = {
           },
           {
             "id": "story-2",
-            "theme": "data-heavy product decisions",
+            "theme": "systems and API collaboration",
             "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
             "applicableQuestions": [
               "Tell me about a project you are proud of.",
               "Tell me about a time you handled ambiguity.",
-              "How have you applied data-heavy product decisions?"
+              "How have you applied systems and API collaboration?"
             ],
             "star": {
-              "situation": "You were working with a data-intensive product. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — describe the data volume, the user workflow, and what was difficult to render or interpret.",
-              "task": "What decision did you own? (chart type, data model, aggregation strategy, caching layer, etc.)",
-              "action": "Explain how you chose between options, what you built or prototyped, and how you validated your approach with data or users.",
-              "result": "State the outcome: query latency, dashboard load time, user comprehension improvement, or reduction in support requests.",
+              "situation": "You collaborated across system boundaries. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — name the systems, teams, and integration surface area.",
+              "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
+              "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
+              "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
               "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
             },
             "keywords": [
-              "data-heavy product decisions",
+              "systems and API collaboration",
               "JavaScript",
               "TypeScript",
               "React",
@@ -7713,22 +7445,22 @@ window.CV_CAREER_OPS_PARALLEL = {
           },
           {
             "id": "story-3",
-            "theme": "systems and API collaboration",
+            "theme": "accessibility and quality",
             "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
             "applicableQuestions": [
               "Tell me about a project you are proud of.",
               "Tell me about a time you handled ambiguity.",
-              "How have you applied systems and API collaboration?"
+              "How have you applied accessibility and quality?"
             ],
             "star": {
-              "situation": "You collaborated across system boundaries. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — name the systems, teams, and integration surface area.",
-              "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
-              "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
-              "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
+              "situation": "You led or contributed to an accessibility or quality initiative. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — what was the starting state and who was affected?",
+              "task": "What standard or target were you working toward (WCAG level, test coverage %, zero-defect milestone)?",
+              "action": "Describe the audit process, tooling (axe, Lighthouse, screen reader testing), and how you prioritized fixes across components.",
+              "result": "State the outcome: WCAG compliance level achieved, user complaints reduced, or CI gate added to prevent regressions.",
               "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
             },
             "keywords": [
-              "systems and API collaboration",
+              "accessibility and quality",
               "JavaScript",
               "TypeScript",
               "React",
@@ -7760,14 +7492,160 @@ window.CV_CAREER_OPS_PARALLEL = {
       }
     },
     {
+      "jobKey": "url:https://www.mycareersfuture.gov.sg/job/3f3baab7ed3017b3d7a69fb5b9ed0de5",
+      "company": "GOVERNMENT TECHNOLOGY AGENCY",
+      "title": "Staff Software Engineer - Digital Economy Products",
+      "score": 92,
+      "grade": "A",
+      "priority": "P0",
+      "startedAt": "2026-06-13T00:26:56.289Z",
+      "completedAt": "2026-06-13T00:26:56.291Z",
+      "workers": {
+        "evaluation": {
+          "recommendation": "值得投遞",
+          "keywords": [
+            "TypeScript",
+            "React",
+            "Next.js",
+            "engineer",
+            "product",
+            "data",
+            "node.js"
+          ],
+          "nextActions": [
+            "開啟職缺確認仍可投遞",
+            "產生客製 ATS PDF",
+            "用同職類高分職缺校準履歷關鍵字"
+          ]
+        },
+        "research": {
+          "signals": [],
+          "evidenceCount": 0,
+          "questions": []
+        },
+        "application": {
+          "checklist": [
+            "Confirm posting is active.",
+            "Generate tailored ATS PDF.",
+            "Prepare outreach and follow-up.",
+            "Log status and next follow-up."
+          ]
+        },
+        "compensation": null,
+        "stories": [
+          {
+            "id": "story-1",
+            "theme": "frontend product execution",
+            "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
+            "applicableQuestions": [
+              "Tell me about a project you are proud of.",
+              "Tell me about a time you handled ambiguity.",
+              "How have you applied frontend product execution?"
+            ],
+            "star": {
+              "situation": "You were tasked with a frontend product challenge. Proof point: \"Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.\" — set the scene: what product, what team size, and what was broken or missing?",
+              "task": "What was the specific outcome you were accountable for? Include the success metric (e.g. performance score, user adoption rate, release date).",
+              "action": "Walk through the key technical decisions: component architecture, state management tradeoffs, accessibility choices, or API contract design.",
+              "result": "Quantify the impact: load time delta, user adoption %, code reduction %, or stakeholder feedback. If no number, describe the quality or velocity improvement.",
+              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
+            },
+            "keywords": [
+              "frontend product execution",
+              "JavaScript",
+              "TypeScript",
+              "React",
+              "Next.js",
+              "CSS",
+              "Tailwind",
+              "Accessibility"
+            ],
+            "relevance": 3
+          },
+          {
+            "id": "story-2",
+            "theme": "systems and API collaboration",
+            "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
+            "applicableQuestions": [
+              "Tell me about a project you are proud of.",
+              "Tell me about a time you handled ambiguity.",
+              "How have you applied systems and API collaboration?"
+            ],
+            "star": {
+              "situation": "You collaborated across system boundaries. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — name the systems, teams, and integration surface area.",
+              "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
+              "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
+              "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
+              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
+            },
+            "keywords": [
+              "systems and API collaboration",
+              "JavaScript",
+              "TypeScript",
+              "React",
+              "Next.js",
+              "CSS",
+              "Tailwind",
+              "Accessibility"
+            ],
+            "relevance": 3
+          },
+          {
+            "id": "story-3",
+            "theme": "accessibility and quality",
+            "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
+            "applicableQuestions": [
+              "Tell me about a project you are proud of.",
+              "Tell me about a time you handled ambiguity.",
+              "How have you applied accessibility and quality?"
+            ],
+            "star": {
+              "situation": "You led or contributed to an accessibility or quality initiative. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — what was the starting state and who was affected?",
+              "task": "What standard or target were you working toward (WCAG level, test coverage %, zero-defect milestone)?",
+              "action": "Describe the audit process, tooling (axe, Lighthouse, screen reader testing), and how you prioritized fixes across components.",
+              "result": "State the outcome: WCAG compliance level achieved, user complaints reduced, or CI gate added to prevent regressions.",
+              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
+            },
+            "keywords": [
+              "accessibility and quality",
+              "JavaScript",
+              "TypeScript",
+              "React",
+              "Next.js",
+              "CSS",
+              "Tailwind",
+              "Accessibility"
+            ],
+            "relevance": 3
+          }
+        ],
+        "applyAgent": {
+          "mode": "human-in-the-loop",
+          "url": "https://www.mycareersfuture.gov.sg/job/3f3baab7ed3017b3d7a69fb5b9ed0de5",
+          "steps": [
+            "Open the application URL in a controlled browser session.",
+            "Extract visible form fields and required uploads.",
+            "Map CV profile fields to the form without submitting.",
+            "Prepare tailored PDF and outreach text.",
+            "Stop before final submit and ask the user to review."
+          ],
+          "guardrails": [
+            "Never submit without explicit user confirmation.",
+            "Never fabricate work authorization, salary history, degree, or experience.",
+            "Never store API keys or credentials in job metadata.",
+            "Record only application status and user-approved notes."
+          ]
+        }
+      }
+    },
+    {
       "jobKey": "url:https://www.mycareersfuture.gov.sg/job/db68a91faa7ec8b31abbace9d5a47f3a",
       "company": "Capgemini Singapore  PTE. LTD.",
       "title": "Senior Frontend Engineer",
       "score": 92,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-12T00:25:31.476Z",
-      "completedAt": "2026-06-12T00:25:31.478Z",
+      "startedAt": "2026-06-13T00:26:56.289Z",
+      "completedAt": "2026-06-13T00:26:56.290Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -7833,22 +7711,22 @@ window.CV_CAREER_OPS_PARALLEL = {
           },
           {
             "id": "story-2",
-            "theme": "data-heavy product decisions",
+            "theme": "systems and API collaboration",
             "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
             "applicableQuestions": [
               "Tell me about a project you are proud of.",
               "Tell me about a time you handled ambiguity.",
-              "How have you applied data-heavy product decisions?"
+              "How have you applied systems and API collaboration?"
             ],
             "star": {
-              "situation": "You were working with a data-intensive product. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — describe the data volume, the user workflow, and what was difficult to render or interpret.",
-              "task": "What decision did you own? (chart type, data model, aggregation strategy, caching layer, etc.)",
-              "action": "Explain how you chose between options, what you built or prototyped, and how you validated your approach with data or users.",
-              "result": "State the outcome: query latency, dashboard load time, user comprehension improvement, or reduction in support requests.",
+              "situation": "You collaborated across system boundaries. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — name the systems, teams, and integration surface area.",
+              "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
+              "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
+              "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
               "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
             },
             "keywords": [
-              "data-heavy product decisions",
+              "systems and API collaboration",
               "JavaScript",
               "TypeScript",
               "React",
@@ -7861,22 +7739,22 @@ window.CV_CAREER_OPS_PARALLEL = {
           },
           {
             "id": "story-3",
-            "theme": "systems and API collaboration",
+            "theme": "accessibility and quality",
             "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
             "applicableQuestions": [
               "Tell me about a project you are proud of.",
               "Tell me about a time you handled ambiguity.",
-              "How have you applied systems and API collaboration?"
+              "How have you applied accessibility and quality?"
             ],
             "star": {
-              "situation": "You collaborated across system boundaries. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — name the systems, teams, and integration surface area.",
-              "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
-              "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
-              "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
+              "situation": "You led or contributed to an accessibility or quality initiative. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — what was the starting state and who was affected?",
+              "task": "What standard or target were you working toward (WCAG level, test coverage %, zero-defect milestone)?",
+              "action": "Describe the audit process, tooling (axe, Lighthouse, screen reader testing), and how you prioritized fixes across components.",
+              "result": "State the outcome: WCAG compliance level achieved, user complaints reduced, or CI gate added to prevent regressions.",
               "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
             },
             "keywords": [
-              "systems and API collaboration",
+              "accessibility and quality",
               "JavaScript",
               "TypeScript",
               "React",
@@ -7914,8 +7792,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 92,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-12T00:25:31.476Z",
-      "completedAt": "2026-06-12T00:25:31.478Z",
+      "startedAt": "2026-06-13T00:26:56.289Z",
+      "completedAt": "2026-06-13T00:26:56.291Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -7981,22 +7859,22 @@ window.CV_CAREER_OPS_PARALLEL = {
           },
           {
             "id": "story-2",
-            "theme": "data-heavy product decisions",
+            "theme": "systems and API collaboration",
             "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
             "applicableQuestions": [
               "Tell me about a project you are proud of.",
               "Tell me about a time you handled ambiguity.",
-              "How have you applied data-heavy product decisions?"
+              "How have you applied systems and API collaboration?"
             ],
             "star": {
-              "situation": "You were working with a data-intensive product. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — describe the data volume, the user workflow, and what was difficult to render or interpret.",
-              "task": "What decision did you own? (chart type, data model, aggregation strategy, caching layer, etc.)",
-              "action": "Explain how you chose between options, what you built or prototyped, and how you validated your approach with data or users.",
-              "result": "State the outcome: query latency, dashboard load time, user comprehension improvement, or reduction in support requests.",
+              "situation": "You collaborated across system boundaries. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — name the systems, teams, and integration surface area.",
+              "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
+              "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
+              "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
               "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
             },
             "keywords": [
-              "data-heavy product decisions",
+              "systems and API collaboration",
               "JavaScript",
               "TypeScript",
               "React",
@@ -8009,22 +7887,22 @@ window.CV_CAREER_OPS_PARALLEL = {
           },
           {
             "id": "story-3",
-            "theme": "systems and API collaboration",
+            "theme": "accessibility and quality",
             "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
             "applicableQuestions": [
               "Tell me about a project you are proud of.",
               "Tell me about a time you handled ambiguity.",
-              "How have you applied systems and API collaboration?"
+              "How have you applied accessibility and quality?"
             ],
             "star": {
-              "situation": "You collaborated across system boundaries. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — name the systems, teams, and integration surface area.",
-              "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
-              "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
-              "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
+              "situation": "You led or contributed to an accessibility or quality initiative. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — what was the starting state and who was affected?",
+              "task": "What standard or target were you working toward (WCAG level, test coverage %, zero-defect milestone)?",
+              "action": "Describe the audit process, tooling (axe, Lighthouse, screen reader testing), and how you prioritized fixes across components.",
+              "result": "State the outcome: WCAG compliance level achieved, user complaints reduced, or CI gate added to prevent regressions.",
               "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
             },
             "keywords": [
-              "systems and API collaboration",
+              "accessibility and quality",
               "JavaScript",
               "TypeScript",
               "React",
@@ -8062,8 +7940,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 92,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-12T00:25:31.476Z",
-      "completedAt": "2026-06-12T00:25:31.478Z",
+      "startedAt": "2026-06-13T00:26:56.289Z",
+      "completedAt": "2026-06-13T00:26:56.291Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -8127,22 +8005,22 @@ window.CV_CAREER_OPS_PARALLEL = {
           },
           {
             "id": "story-2",
-            "theme": "data-heavy product decisions",
+            "theme": "systems and API collaboration",
             "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
             "applicableQuestions": [
               "Tell me about a project you are proud of.",
               "Tell me about a time you handled ambiguity.",
-              "How have you applied data-heavy product decisions?"
+              "How have you applied systems and API collaboration?"
             ],
             "star": {
-              "situation": "You were working with a data-intensive product. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — describe the data volume, the user workflow, and what was difficult to render or interpret.",
-              "task": "What decision did you own? (chart type, data model, aggregation strategy, caching layer, etc.)",
-              "action": "Explain how you chose between options, what you built or prototyped, and how you validated your approach with data or users.",
-              "result": "State the outcome: query latency, dashboard load time, user comprehension improvement, or reduction in support requests.",
+              "situation": "You collaborated across system boundaries. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — name the systems, teams, and integration surface area.",
+              "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
+              "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
+              "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
               "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
             },
             "keywords": [
-              "data-heavy product decisions",
+              "systems and API collaboration",
               "JavaScript",
               "TypeScript",
               "React",
@@ -8155,22 +8033,22 @@ window.CV_CAREER_OPS_PARALLEL = {
           },
           {
             "id": "story-3",
-            "theme": "systems and API collaboration",
+            "theme": "accessibility and quality",
             "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
             "applicableQuestions": [
               "Tell me about a project you are proud of.",
               "Tell me about a time you handled ambiguity.",
-              "How have you applied systems and API collaboration?"
+              "How have you applied accessibility and quality?"
             ],
             "star": {
-              "situation": "You collaborated across system boundaries. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — name the systems, teams, and integration surface area.",
-              "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
-              "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
-              "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
+              "situation": "You led or contributed to an accessibility or quality initiative. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — what was the starting state and who was affected?",
+              "task": "What standard or target were you working toward (WCAG level, test coverage %, zero-defect milestone)?",
+              "action": "Describe the audit process, tooling (axe, Lighthouse, screen reader testing), and how you prioritized fixes across components.",
+              "result": "State the outcome: WCAG compliance level achieved, user complaints reduced, or CI gate added to prevent regressions.",
               "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
             },
             "keywords": [
-              "systems and API collaboration",
+              "accessibility and quality",
               "JavaScript",
               "TypeScript",
               "React",
@@ -8208,8 +8086,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 92,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-12T00:25:31.480Z",
-      "completedAt": "2026-06-12T00:25:31.481Z",
+      "startedAt": "2026-06-13T00:26:56.292Z",
+      "completedAt": "2026-06-13T00:26:56.294Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -8273,22 +8151,22 @@ window.CV_CAREER_OPS_PARALLEL = {
           },
           {
             "id": "story-2",
-            "theme": "data-heavy product decisions",
+            "theme": "systems and API collaboration",
             "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
             "applicableQuestions": [
               "Tell me about a project you are proud of.",
               "Tell me about a time you handled ambiguity.",
-              "How have you applied data-heavy product decisions?"
+              "How have you applied systems and API collaboration?"
             ],
             "star": {
-              "situation": "You were working with a data-intensive product. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — describe the data volume, the user workflow, and what was difficult to render or interpret.",
-              "task": "What decision did you own? (chart type, data model, aggregation strategy, caching layer, etc.)",
-              "action": "Explain how you chose between options, what you built or prototyped, and how you validated your approach with data or users.",
-              "result": "State the outcome: query latency, dashboard load time, user comprehension improvement, or reduction in support requests.",
+              "situation": "You collaborated across system boundaries. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — name the systems, teams, and integration surface area.",
+              "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
+              "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
+              "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
               "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
             },
             "keywords": [
-              "data-heavy product decisions",
+              "systems and API collaboration",
               "JavaScript",
               "TypeScript",
               "React",
@@ -8301,22 +8179,22 @@ window.CV_CAREER_OPS_PARALLEL = {
           },
           {
             "id": "story-3",
-            "theme": "systems and API collaboration",
+            "theme": "accessibility and quality",
             "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
             "applicableQuestions": [
               "Tell me about a project you are proud of.",
               "Tell me about a time you handled ambiguity.",
-              "How have you applied systems and API collaboration?"
+              "How have you applied accessibility and quality?"
             ],
             "star": {
-              "situation": "You collaborated across system boundaries. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — name the systems, teams, and integration surface area.",
-              "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
-              "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
-              "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
+              "situation": "You led or contributed to an accessibility or quality initiative. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — what was the starting state and who was affected?",
+              "task": "What standard or target were you working toward (WCAG level, test coverage %, zero-defect milestone)?",
+              "action": "Describe the audit process, tooling (axe, Lighthouse, screen reader testing), and how you prioritized fixes across components.",
+              "result": "State the outcome: WCAG compliance level achieved, user complaints reduced, or CI gate added to prevent regressions.",
               "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
             },
             "keywords": [
-              "systems and API collaboration",
+              "accessibility and quality",
               "JavaScript",
               "TypeScript",
               "React",
@@ -8354,8 +8232,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 92,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-12T00:25:31.480Z",
-      "completedAt": "2026-06-12T00:25:31.481Z",
+      "startedAt": "2026-06-13T00:26:56.292Z",
+      "completedAt": "2026-06-13T00:26:56.294Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -8419,22 +8297,22 @@ window.CV_CAREER_OPS_PARALLEL = {
           },
           {
             "id": "story-2",
-            "theme": "data-heavy product decisions",
+            "theme": "systems and API collaboration",
             "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
             "applicableQuestions": [
               "Tell me about a project you are proud of.",
               "Tell me about a time you handled ambiguity.",
-              "How have you applied data-heavy product decisions?"
+              "How have you applied systems and API collaboration?"
             ],
             "star": {
-              "situation": "You were working with a data-intensive product. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — describe the data volume, the user workflow, and what was difficult to render or interpret.",
-              "task": "What decision did you own? (chart type, data model, aggregation strategy, caching layer, etc.)",
-              "action": "Explain how you chose between options, what you built or prototyped, and how you validated your approach with data or users.",
-              "result": "State the outcome: query latency, dashboard load time, user comprehension improvement, or reduction in support requests.",
+              "situation": "You collaborated across system boundaries. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — name the systems, teams, and integration surface area.",
+              "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
+              "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
+              "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
               "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
             },
             "keywords": [
-              "data-heavy product decisions",
+              "systems and API collaboration",
               "JavaScript",
               "TypeScript",
               "React",
@@ -8447,22 +8325,22 @@ window.CV_CAREER_OPS_PARALLEL = {
           },
           {
             "id": "story-3",
-            "theme": "systems and API collaboration",
+            "theme": "accessibility and quality",
             "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
             "applicableQuestions": [
               "Tell me about a project you are proud of.",
               "Tell me about a time you handled ambiguity.",
-              "How have you applied systems and API collaboration?"
+              "How have you applied accessibility and quality?"
             ],
             "star": {
-              "situation": "You collaborated across system boundaries. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — name the systems, teams, and integration surface area.",
-              "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
-              "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
-              "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
+              "situation": "You led or contributed to an accessibility or quality initiative. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — what was the starting state and who was affected?",
+              "task": "What standard or target were you working toward (WCAG level, test coverage %, zero-defect milestone)?",
+              "action": "Describe the audit process, tooling (axe, Lighthouse, screen reader testing), and how you prioritized fixes across components.",
+              "result": "State the outcome: WCAG compliance level achieved, user complaints reduced, or CI gate added to prevent regressions.",
               "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
             },
             "keywords": [
-              "systems and API collaboration",
+              "accessibility and quality",
               "JavaScript",
               "TypeScript",
               "React",
@@ -8500,8 +8378,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 92,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-12T00:25:31.480Z",
-      "completedAt": "2026-06-12T00:25:31.482Z",
+      "startedAt": "2026-06-13T00:26:56.292Z",
+      "completedAt": "2026-06-13T00:26:56.294Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -8565,22 +8443,22 @@ window.CV_CAREER_OPS_PARALLEL = {
           },
           {
             "id": "story-2",
-            "theme": "data-heavy product decisions",
+            "theme": "systems and API collaboration",
             "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
             "applicableQuestions": [
               "Tell me about a project you are proud of.",
               "Tell me about a time you handled ambiguity.",
-              "How have you applied data-heavy product decisions?"
+              "How have you applied systems and API collaboration?"
             ],
             "star": {
-              "situation": "You were working with a data-intensive product. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — describe the data volume, the user workflow, and what was difficult to render or interpret.",
-              "task": "What decision did you own? (chart type, data model, aggregation strategy, caching layer, etc.)",
-              "action": "Explain how you chose between options, what you built or prototyped, and how you validated your approach with data or users.",
-              "result": "State the outcome: query latency, dashboard load time, user comprehension improvement, or reduction in support requests.",
+              "situation": "You collaborated across system boundaries. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — name the systems, teams, and integration surface area.",
+              "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
+              "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
+              "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
               "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
             },
             "keywords": [
-              "data-heavy product decisions",
+              "systems and API collaboration",
               "JavaScript",
               "TypeScript",
               "React",
@@ -8593,22 +8471,22 @@ window.CV_CAREER_OPS_PARALLEL = {
           },
           {
             "id": "story-3",
-            "theme": "systems and API collaboration",
+            "theme": "accessibility and quality",
             "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
             "applicableQuestions": [
               "Tell me about a project you are proud of.",
               "Tell me about a time you handled ambiguity.",
-              "How have you applied systems and API collaboration?"
+              "How have you applied accessibility and quality?"
             ],
             "star": {
-              "situation": "You collaborated across system boundaries. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — name the systems, teams, and integration surface area.",
-              "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
-              "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
-              "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
+              "situation": "You led or contributed to an accessibility or quality initiative. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — what was the starting state and who was affected?",
+              "task": "What standard or target were you working toward (WCAG level, test coverage %, zero-defect milestone)?",
+              "action": "Describe the audit process, tooling (axe, Lighthouse, screen reader testing), and how you prioritized fixes across components.",
+              "result": "State the outcome: WCAG compliance level achieved, user complaints reduced, or CI gate added to prevent regressions.",
               "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
             },
             "keywords": [
-              "systems and API collaboration",
+              "accessibility and quality",
               "JavaScript",
               "TypeScript",
               "React",
@@ -8646,8 +8524,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 92,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-12T00:25:31.480Z",
-      "completedAt": "2026-06-12T00:25:31.482Z",
+      "startedAt": "2026-06-13T00:26:56.292Z",
+      "completedAt": "2026-06-13T00:26:56.295Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -8711,22 +8589,22 @@ window.CV_CAREER_OPS_PARALLEL = {
           },
           {
             "id": "story-2",
-            "theme": "data-heavy product decisions",
+            "theme": "systems and API collaboration",
             "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
             "applicableQuestions": [
               "Tell me about a project you are proud of.",
               "Tell me about a time you handled ambiguity.",
-              "How have you applied data-heavy product decisions?"
+              "How have you applied systems and API collaboration?"
             ],
             "star": {
-              "situation": "You were working with a data-intensive product. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — describe the data volume, the user workflow, and what was difficult to render or interpret.",
-              "task": "What decision did you own? (chart type, data model, aggregation strategy, caching layer, etc.)",
-              "action": "Explain how you chose between options, what you built or prototyped, and how you validated your approach with data or users.",
-              "result": "State the outcome: query latency, dashboard load time, user comprehension improvement, or reduction in support requests.",
+              "situation": "You collaborated across system boundaries. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — name the systems, teams, and integration surface area.",
+              "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
+              "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
+              "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
               "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
             },
             "keywords": [
-              "data-heavy product decisions",
+              "systems and API collaboration",
               "JavaScript",
               "TypeScript",
               "React",
@@ -8739,22 +8617,22 @@ window.CV_CAREER_OPS_PARALLEL = {
           },
           {
             "id": "story-3",
-            "theme": "systems and API collaboration",
+            "theme": "accessibility and quality",
             "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
             "applicableQuestions": [
               "Tell me about a project you are proud of.",
               "Tell me about a time you handled ambiguity.",
-              "How have you applied systems and API collaboration?"
+              "How have you applied accessibility and quality?"
             ],
             "star": {
-              "situation": "You collaborated across system boundaries. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — name the systems, teams, and integration surface area.",
-              "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
-              "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
-              "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
+              "situation": "You led or contributed to an accessibility or quality initiative. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — what was the starting state and who was affected?",
+              "task": "What standard or target were you working toward (WCAG level, test coverage %, zero-defect milestone)?",
+              "action": "Describe the audit process, tooling (axe, Lighthouse, screen reader testing), and how you prioritized fixes across components.",
+              "result": "State the outcome: WCAG compliance level achieved, user complaints reduced, or CI gate added to prevent regressions.",
               "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
             },
             "keywords": [
-              "systems and API collaboration",
+              "accessibility and quality",
               "JavaScript",
               "TypeScript",
               "React",
@@ -8786,227 +8664,14 @@ window.CV_CAREER_OPS_PARALLEL = {
       }
     },
     {
-      "jobKey": "url:https://www.themuse.com/jobs/uber/sr-staff-engineer-web-platform",
-      "company": "Uber",
-      "title": "Sr Staff Engineer - Web Platform",
-      "score": 92,
-      "grade": "A",
-      "priority": "P0",
-      "startedAt": "2026-06-12T00:25:31.483Z",
-      "completedAt": "2026-06-12T00:25:31.484Z",
-      "workers": {
-        "evaluation": {
-          "recommendation": "值得投遞",
-          "keywords": [
-            "TypeScript",
-            "React",
-            "Next.js",
-            "API",
-            "engineer",
-            "product",
-            "data",
-            "graphql"
-          ],
-          "nextActions": [
-            "開啟職缺確認仍可投遞",
-            "產生客製 ATS PDF",
-            "用同職類高分職缺校準履歷關鍵字"
-          ]
-        },
-        "research": {
-          "signals": [
-            "AI / data / platform signal",
-            "remote or hybrid signal"
-          ],
-          "evidenceCount": 1,
-          "questions": [
-            "What business unit owns the Sr Software Engineer, Frontend (Web) role?",
-            "What measurable outcomes would this team expect in the first 90 days?",
-            "What recent company/product signals change the risk or upside?",
-            "Which CV proof points should be highlighted for this company?"
-          ]
-        },
-        "application": {
-          "checklist": [
-            "Confirm posting is active.",
-            "Generate tailored ATS PDF.",
-            "Prepare outreach and follow-up.",
-            "Log status and next follow-up."
-          ]
-        },
-        "compensation": {
-          "jobKey": "url:https://www.themuse.com/jobs/uber/sr-software-engineer-frontend-web-8fc2b7",
-          "company": "Uber",
-          "title": "Sr Software Engineer, Frontend (Web)",
-          "market": "us",
-          "inferredLevel": "senior",
-          "candidateLevel": "mid",
-          "leverage": "high",
-          "evidence": {
-            "salaryMentions": [],
-            "benefitSignals": [
-              "bonus",
-              "work-mode flexibility"
-            ]
-          },
-          "marketBenchmark": null,
-          "structure": {
-            "baseSalary": [
-              "Need verified market data or recruiter range before setting a numeric anchor."
-            ],
-            "bonus": "Ask whether bonus is guaranteed, target, or discretionary.",
-            "equity": "Ask whether equity, RSU, options, or profit-sharing exists.",
-            "benefits": [
-              "Health / insurance coverage",
-              "Paid leave and holidays",
-              "Learning budget or certification support",
-              "Remote/hybrid setup, commute, or relocation support",
-              "Review cycle and promotion timeline"
-            ],
-            "nonCashLevers": [
-              "Title / level calibration",
-              "Start date flexibility",
-              "Remote days",
-              "Equipment budget",
-              "First review at 3 or 6 months",
-              "Conference / learning budget"
-            ]
-          },
-          "negotiationScript": {
-            "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Sr Software Engineer, Frontend (Web) package, including base, bonus, equity, and review cycle?",
-            "valueAnchor": "Based on the scope of Sr Software Engineer, Frontend (Web) and my fit around JavaScript, TypeScript, React, CSS, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
-            "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
-            "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
-            "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
-          },
-          "redLines": [
-            "Do not disclose current compensation unless legally appropriate and strategically useful.",
-            "Do not accept verbal-only compensation details; ask for written package components.",
-            "Do not negotiate before confirming level, scope, work mode, and review cycle.",
-            "Do not trade base salary away without valuing the replacement benefit."
-          ],
-          "nextActions": [
-            "Collect market compensation evidence before naming a number.",
-            "Ask recruiter for approved range and level.",
-            "Map the job scope to proof points in the tailored CV.",
-            "Prepare one counter package with base, bonus/equity, and non-cash levers."
-          ],
-          "targetFrame": "Do not name a number first. Ask for the approved range, level, and total compensation structure before anchoring."
-        },
-        "stories": [
-          {
-            "id": "story-1",
-            "theme": "frontend product execution",
-            "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
-            "applicableQuestions": [
-              "Tell me about a project you are proud of.",
-              "Tell me about a time you handled ambiguity.",
-              "How have you applied frontend product execution?"
-            ],
-            "star": {
-              "situation": "You were tasked with a frontend product challenge. Proof point: \"Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.\" — set the scene: what product, what team size, and what was broken or missing?",
-              "task": "What was the specific outcome you were accountable for? Include the success metric (e.g. performance score, user adoption rate, release date).",
-              "action": "Walk through the key technical decisions: component architecture, state management tradeoffs, accessibility choices, or API contract design.",
-              "result": "Quantify the impact: load time delta, user adoption %, code reduction %, or stakeholder feedback. If no number, describe the quality or velocity improvement.",
-              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
-            },
-            "keywords": [
-              "frontend product execution",
-              "JavaScript",
-              "TypeScript",
-              "React",
-              "Next.js",
-              "CSS",
-              "Tailwind",
-              "Accessibility"
-            ],
-            "relevance": 3
-          },
-          {
-            "id": "story-2",
-            "theme": "data-heavy product decisions",
-            "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
-            "applicableQuestions": [
-              "Tell me about a project you are proud of.",
-              "Tell me about a time you handled ambiguity.",
-              "How have you applied data-heavy product decisions?"
-            ],
-            "star": {
-              "situation": "You were working with a data-intensive product. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — describe the data volume, the user workflow, and what was difficult to render or interpret.",
-              "task": "What decision did you own? (chart type, data model, aggregation strategy, caching layer, etc.)",
-              "action": "Explain how you chose between options, what you built or prototyped, and how you validated your approach with data or users.",
-              "result": "State the outcome: query latency, dashboard load time, user comprehension improvement, or reduction in support requests.",
-              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
-            },
-            "keywords": [
-              "data-heavy product decisions",
-              "JavaScript",
-              "TypeScript",
-              "React",
-              "Next.js",
-              "CSS",
-              "Tailwind",
-              "Accessibility"
-            ],
-            "relevance": 3
-          },
-          {
-            "id": "story-3",
-            "theme": "systems and API collaboration",
-            "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
-            "applicableQuestions": [
-              "Tell me about a project you are proud of.",
-              "Tell me about a time you handled ambiguity.",
-              "How have you applied systems and API collaboration?"
-            ],
-            "star": {
-              "situation": "You collaborated across system boundaries. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — name the systems, teams, and integration surface area.",
-              "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
-              "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
-              "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
-              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
-            },
-            "keywords": [
-              "systems and API collaboration",
-              "JavaScript",
-              "TypeScript",
-              "React",
-              "Next.js",
-              "CSS",
-              "Tailwind",
-              "Accessibility"
-            ],
-            "relevance": 3
-          }
-        ],
-        "applyAgent": {
-          "mode": "human-in-the-loop",
-          "url": "https://www.themuse.com/jobs/uber/sr-staff-engineer-web-platform",
-          "steps": [
-            "Open the application URL in a controlled browser session.",
-            "Extract visible form fields and required uploads.",
-            "Map CV profile fields to the form without submitting.",
-            "Prepare tailored PDF and outreach text.",
-            "Stop before final submit and ask the user to review."
-          ],
-          "guardrails": [
-            "Never submit without explicit user confirmation.",
-            "Never fabricate work authorization, salary history, degree, or experience.",
-            "Never store API keys or credentials in job metadata.",
-            "Record only application status and user-approved notes."
-          ]
-        }
-      }
-    },
-    {
       "jobKey": "url:https://www.themuse.com/jobs/uber/engineering-manager-ii-4accc7",
       "company": "Uber",
       "title": "Engineering Manager II",
       "score": 92,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-12T00:25:31.483Z",
-      "completedAt": "2026-06-12T00:25:31.484Z",
+      "startedAt": "2026-06-13T00:26:56.296Z",
+      "completedAt": "2026-06-13T00:26:56.297Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -9132,43 +8797,15 @@ window.CV_CAREER_OPS_PARALLEL = {
           },
           {
             "id": "story-2",
-            "theme": "data-heavy product decisions",
-            "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
-            "applicableQuestions": [
-              "Tell me about a project you are proud of.",
-              "Tell me about a time you handled ambiguity.",
-              "How have you applied data-heavy product decisions?"
-            ],
-            "star": {
-              "situation": "You were working with a data-intensive product. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — describe the data volume, the user workflow, and what was difficult to render or interpret.",
-              "task": "What decision did you own? (chart type, data model, aggregation strategy, caching layer, etc.)",
-              "action": "Explain how you chose between options, what you built or prototyped, and how you validated your approach with data or users.",
-              "result": "State the outcome: query latency, dashboard load time, user comprehension improvement, or reduction in support requests.",
-              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
-            },
-            "keywords": [
-              "data-heavy product decisions",
-              "JavaScript",
-              "TypeScript",
-              "React",
-              "Next.js",
-              "CSS",
-              "Tailwind",
-              "Accessibility"
-            ],
-            "relevance": 0
-          },
-          {
-            "id": "story-3",
             "theme": "systems and API collaboration",
-            "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
+            "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
             "applicableQuestions": [
               "Tell me about a project you are proud of.",
               "Tell me about a time you handled ambiguity.",
               "How have you applied systems and API collaboration?"
             ],
             "star": {
-              "situation": "You collaborated across system boundaries. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — name the systems, teams, and integration surface area.",
+              "situation": "You collaborated across system boundaries. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — name the systems, teams, and integration surface area.",
               "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
               "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
               "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
@@ -9185,11 +8822,182 @@ window.CV_CAREER_OPS_PARALLEL = {
               "Accessibility"
             ],
             "relevance": 0
+          },
+          {
+            "id": "story-3",
+            "theme": "accessibility and quality",
+            "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
+            "applicableQuestions": [
+              "Tell me about a project you are proud of.",
+              "Tell me about a time you handled ambiguity.",
+              "How have you applied accessibility and quality?"
+            ],
+            "star": {
+              "situation": "You led or contributed to an accessibility or quality initiative. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — what was the starting state and who was affected?",
+              "task": "What standard or target were you working toward (WCAG level, test coverage %, zero-defect milestone)?",
+              "action": "Describe the audit process, tooling (axe, Lighthouse, screen reader testing), and how you prioritized fixes across components.",
+              "result": "State the outcome: WCAG compliance level achieved, user complaints reduced, or CI gate added to prevent regressions.",
+              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
+            },
+            "keywords": [
+              "accessibility and quality",
+              "JavaScript",
+              "TypeScript",
+              "React",
+              "Next.js",
+              "CSS",
+              "Tailwind",
+              "Accessibility"
+            ],
+            "relevance": 0
           }
         ],
         "applyAgent": {
           "mode": "human-in-the-loop",
           "url": "https://www.themuse.com/jobs/uber/engineering-manager-ii-4accc7",
+          "steps": [
+            "Open the application URL in a controlled browser session.",
+            "Extract visible form fields and required uploads.",
+            "Map CV profile fields to the form without submitting.",
+            "Prepare tailored PDF and outreach text.",
+            "Stop before final submit and ask the user to review."
+          ],
+          "guardrails": [
+            "Never submit without explicit user confirmation.",
+            "Never fabricate work authorization, salary history, degree, or experience.",
+            "Never store API keys or credentials in job metadata.",
+            "Record only application status and user-approved notes."
+          ]
+        }
+      }
+    },
+    {
+      "jobKey": "url:https://www.themuse.com/jobs/renttherunway/software-engineer-iii-full-stack-8f8f15",
+      "company": "Rent the Runway",
+      "title": "Software Engineer III - Full Stack",
+      "score": 92,
+      "grade": "A",
+      "priority": "P0",
+      "startedAt": "2026-06-13T00:26:56.296Z",
+      "completedAt": "2026-06-13T00:26:56.297Z",
+      "workers": {
+        "evaluation": {
+          "recommendation": "值得投遞",
+          "keywords": [
+            "JavaScript",
+            "API",
+            "engineer",
+            "product"
+          ],
+          "nextActions": [
+            "開啟職缺確認仍可投遞",
+            "產生客製 ATS PDF",
+            "用同職類高分職缺校準履歷關鍵字"
+          ]
+        },
+        "research": {
+          "signals": [],
+          "evidenceCount": 0,
+          "questions": []
+        },
+        "application": {
+          "checklist": [
+            "Confirm posting is active.",
+            "Generate tailored ATS PDF.",
+            "Prepare outreach and follow-up.",
+            "Log status and next follow-up."
+          ]
+        },
+        "compensation": null,
+        "stories": [
+          {
+            "id": "story-1",
+            "theme": "frontend product execution",
+            "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
+            "applicableQuestions": [
+              "Tell me about a project you are proud of.",
+              "Tell me about a time you handled ambiguity.",
+              "How have you applied frontend product execution?"
+            ],
+            "star": {
+              "situation": "You were tasked with a frontend product challenge. Proof point: \"Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.\" — set the scene: what product, what team size, and what was broken or missing?",
+              "task": "What was the specific outcome you were accountable for? Include the success metric (e.g. performance score, user adoption rate, release date).",
+              "action": "Walk through the key technical decisions: component architecture, state management tradeoffs, accessibility choices, or API contract design.",
+              "result": "Quantify the impact: load time delta, user adoption %, code reduction %, or stakeholder feedback. If no number, describe the quality or velocity improvement.",
+              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
+            },
+            "keywords": [
+              "frontend product execution",
+              "JavaScript",
+              "TypeScript",
+              "React",
+              "Next.js",
+              "CSS",
+              "Tailwind",
+              "Accessibility"
+            ],
+            "relevance": 2
+          },
+          {
+            "id": "story-2",
+            "theme": "systems and API collaboration",
+            "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
+            "applicableQuestions": [
+              "Tell me about a project you are proud of.",
+              "Tell me about a time you handled ambiguity.",
+              "How have you applied systems and API collaboration?"
+            ],
+            "star": {
+              "situation": "You collaborated across system boundaries. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — name the systems, teams, and integration surface area.",
+              "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
+              "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
+              "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
+              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
+            },
+            "keywords": [
+              "systems and API collaboration",
+              "JavaScript",
+              "TypeScript",
+              "React",
+              "Next.js",
+              "CSS",
+              "Tailwind",
+              "Accessibility"
+            ],
+            "relevance": 2
+          },
+          {
+            "id": "story-3",
+            "theme": "accessibility and quality",
+            "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
+            "applicableQuestions": [
+              "Tell me about a project you are proud of.",
+              "Tell me about a time you handled ambiguity.",
+              "How have you applied accessibility and quality?"
+            ],
+            "star": {
+              "situation": "You led or contributed to an accessibility or quality initiative. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — what was the starting state and who was affected?",
+              "task": "What standard or target were you working toward (WCAG level, test coverage %, zero-defect milestone)?",
+              "action": "Describe the audit process, tooling (axe, Lighthouse, screen reader testing), and how you prioritized fixes across components.",
+              "result": "State the outcome: WCAG compliance level achieved, user complaints reduced, or CI gate added to prevent regressions.",
+              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
+            },
+            "keywords": [
+              "accessibility and quality",
+              "JavaScript",
+              "TypeScript",
+              "React",
+              "Next.js",
+              "CSS",
+              "Tailwind",
+              "Accessibility"
+            ],
+            "relevance": 2
+          }
+        ],
+        "applyAgent": {
+          "mode": "human-in-the-loop",
+          "url": "https://www.themuse.com/jobs/renttherunway/software-engineer-iii-full-stack-8f8f15",
           "steps": [
             "Open the application URL in a controlled browser session.",
             "Extract visible form fields and required uploads.",
