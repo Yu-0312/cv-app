@@ -1,6 +1,6 @@
 window.CV_CAREER_OPS_STORY_BANK = {
   "source": "career-ops-story-bank",
-  "generatedAt": "2026-06-13T00:26:52.805Z",
+  "generatedAt": "2026-06-14T00:06:05.713Z",
   "llmProvider": "none",
   "storyBank": {
     "themes": [
@@ -233,7 +233,7 @@ window.CV_CAREER_OPS_STORY_BANK = {
     "learningPlan": [
       {
         "skill": "growth",
-        "marketCount": 57,
+        "marketCount": 55,
         "priority": "P0",
         "priorityLabel": "高優先",
         "reason": "市場需求極高，補充後可顯著提升評分",
@@ -241,15 +241,23 @@ window.CV_CAREER_OPS_STORY_BANK = {
       },
       {
         "skill": "sales",
-        "marketCount": 37,
+        "marketCount": 33,
         "priority": "P0",
         "priorityLabel": "高優先",
         "reason": "市場需求極高，補充後可顯著提升評分",
         "suggestion": "在簡歷或 profile 中加入 sales 的實際使用案例，並在 projects 欄位補充相關實作。"
       },
       {
+        "skill": "python",
+        "marketCount": 26,
+        "priority": "P0",
+        "priorityLabel": "高優先",
+        "reason": "市場需求極高，補充後可顯著提升評分",
+        "suggestion": "在簡歷或 profile 中加入 python 的實際使用案例，並在 projects 欄位補充相關實作。"
+      },
+      {
         "skill": "aws",
-        "marketCount": 27,
+        "marketCount": 26,
         "priority": "P0",
         "priorityLabel": "高優先",
         "reason": "市場需求極高，補充後可顯著提升評分",
@@ -264,16 +272,8 @@ window.CV_CAREER_OPS_STORY_BANK = {
         "suggestion": "在簡歷或 profile 中加入 agents 的實際使用案例，並在 projects 欄位補充相關實作。"
       },
       {
-        "skill": "python",
-        "marketCount": 23,
-        "priority": "P0",
-        "priorityLabel": "高優先",
-        "reason": "市場需求極高，補充後可顯著提升評分",
-        "suggestion": "在簡歷或 profile 中加入 python 的實際使用案例，並在 projects 欄位補充相關實作。"
-      },
-      {
         "skill": "go",
-        "marketCount": 23,
+        "marketCount": 22,
         "priority": "P0",
         "priorityLabel": "高優先",
         "reason": "市場需求極高，補充後可顯著提升評分",
@@ -281,7 +281,7 @@ window.CV_CAREER_OPS_STORY_BANK = {
       },
       {
         "skill": "operations",
-        "marketCount": 17,
+        "marketCount": 18,
         "priority": "P0",
         "priorityLabel": "高優先",
         "reason": "市場需求極高，補充後可顯著提升評分",
@@ -289,7 +289,7 @@ window.CV_CAREER_OPS_STORY_BANK = {
       },
       {
         "skill": "rest",
-        "marketCount": 13,
+        "marketCount": 16,
         "priority": "P0",
         "priorityLabel": "高優先",
         "reason": "市場需求極高，補充後可顯著提升評分",
@@ -297,7 +297,7 @@ window.CV_CAREER_OPS_STORY_BANK = {
       },
       {
         "skill": "java",
-        "marketCount": 12,
+        "marketCount": 14,
         "priority": "P0",
         "priorityLabel": "高優先",
         "reason": "市場需求極高，補充後可顯著提升評分",
@@ -313,10 +313,10 @@ window.CV_CAREER_OPS_STORY_BANK = {
       },
       {
         "skill": "machine learning",
-        "marketCount": 9,
-        "priority": "P1",
-        "priorityLabel": "中優先",
-        "reason": "市場常見，補充後能擴大適配職缺範圍",
+        "marketCount": 10,
+        "priority": "P0",
+        "priorityLabel": "高優先",
+        "reason": "市場需求極高，補充後可顯著提升評分",
         "suggestion": "在簡歷或 profile 中加入 machine learning 的實際使用案例，並在 projects 欄位補充相關實作。"
       },
       {
@@ -336,20 +336,20 @@ window.CV_CAREER_OPS_STORY_BANK = {
         "suggestion": "在簡歷或 profile 中加入 crm 的實際使用案例，並在 projects 欄位補充相關實作。"
       },
       {
+        "skill": "kubernetes",
+        "marketCount": 8,
+        "priority": "P1",
+        "priorityLabel": "中優先",
+        "reason": "市場常見，補充後能擴大適配職缺範圍",
+        "suggestion": "在簡歷或 profile 中加入 kubernetes 的實際使用案例，並在 projects 欄位補充相關實作。"
+      },
+      {
         "skill": "llm",
-        "marketCount": 7,
+        "marketCount": 8,
         "priority": "P1",
         "priorityLabel": "中優先",
         "reason": "市場常見，補充後能擴大適配職缺範圍",
         "suggestion": "在簡歷或 profile 中加入 llm 的實際使用案例，並在 projects 欄位補充相關實作。"
-      },
-      {
-        "skill": "sql",
-        "marketCount": 7,
-        "priority": "P1",
-        "priorityLabel": "中優先",
-        "reason": "市場常見，補充後能擴大適配職缺範圍",
-        "suggestion": "在簡歷或 profile 中加入 sql 的實際使用案例，並在 projects 欄位補充相關實作。"
       }
     ],
     "gaps": [

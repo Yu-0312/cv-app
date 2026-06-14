@@ -1,6 +1,6 @@
 # Career Ops Deep Fit Report
 
-Generated: 2026-06-13T00:26:59.733Z
+Generated: 2026-06-14T00:06:12.607Z
 LLM provider: none
 Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 exploratory)
 
@@ -666,6 +666,36 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Use story story-2: systems and API collaboration.
 - Use story story-3: accessibility and quality.
 
+### Bank of America - Vice President; Feature Lead - Technology
+
+- Score: 95
+- Grade: A
+- Confidence: medium
+- Decision: pursue aggressively
+- Thesis: Vice President; Feature Lead - Technology at Bank of America is pursue aggressively because the snapshot score is 95, with 3 profile/role keyword hits and 1 external evidence item(s).
+
+#### Evidence
+- Keyword hits: API, remote, Full Stack Engineer
+- Keyword misses: python, java, docker, kubernetes, rest, spark, growth
+- Research signals: AI / data / platform signal
+- Compensation leverage: high
+
+#### Concerns
+- Profile keyword coverage is weaker than the target role language.
+
+#### Interview Strategy
+- Ask why the role is open and what success means in the first 90 days.
+- Probe team ownership, roadmap pressure, and cross-functional interfaces.
+- What business unit owns the Principal Engineer - GBS IND role?
+- What measurable outcomes would this team expect in the first 90 days?
+- What recent company/product signals change the risk or upside?
+
+#### CV Strategy
+- Lead with proof around: API, remote, Full Stack Engineer.
+- Use story story-1: frontend product execution.
+- Use story story-2: systems and API collaboration.
+- Use story story-3: accessibility and quality.
+
 ### The Coca-Cola Company - Sr. Software Engineer , Service Supply Chain
 
 - Score: 95
@@ -726,36 +756,6 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Use story story-2: systems and API collaboration.
 - Use story story-3: accessibility and quality.
 
-### The Coca-Cola Company - Software Engineer I - CRM
-
-- Score: 95
-- Grade: A
-- Confidence: high
-- Decision: pursue aggressively
-- Thesis: Software Engineer I - CRM at The Coca-Cola Company is pursue aggressively because the snapshot score is 95, with 2 profile/role keyword hits and 5 external evidence item(s).
-
-#### Evidence
-- Keyword hits: API, Full Stack Engineer
-- Keyword misses: crm, growth, sales
-- Research signals: AI / data / platform signal, remote or hybrid signal
-- Compensation leverage: high
-
-#### Concerns
-- Profile keyword coverage is weaker than the target role language.
-
-#### Interview Strategy
-- Ask why the role is open and what success means in the first 90 days.
-- Probe team ownership, roadmap pressure, and cross-functional interfaces.
-- What business unit owns the Senior Software Engineer II role?
-- What measurable outcomes would this team expect in the first 90 days?
-- What recent company/product signals change the risk or upside?
-
-#### CV Strategy
-- Lead with proof around: API, Full Stack Engineer.
-- Use story story-1: frontend product execution.
-- Use story story-2: systems and API collaboration.
-- Use story story-3: accessibility and quality.
-
 ## Layer B — Standard Matches (roleFit 40-67)
 
 ### NVIDIA Workday - Senior Perception Engineer, Obstacle Foundation Models - Autonomous Vehicles
@@ -782,23 +782,11 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Keyword hits: -
 - Gaps: go, sql, power bi
 
-### GOLDTECH RESOURCES PTE LTD - Technical Business Analyst – Power Platform
-- Score: 78 | Grade: B | RoleFit: 45
-- Decision: pursue selectively
-- Keyword hits: -
-- Gaps: go, sql, power bi
-
 ### Databricks Greenhouse - Sr. Technical Enablement Specialist
 - Score: 78 | Grade: B | RoleFit: 45
 - Decision: pursue selectively
 - Keyword hits: Analytics, analytics
 - Gaps: spark, excel
-
-### N-iX - Senior Scala Engineer
-- Score: 78 | Grade: B | RoleFit: 45
-- Decision: pursue selectively
-- Keyword hits: Analytics, analytics
-- Gaps: docker, kubernetes
 
 ### NVIDIA Workday - Senior Mixed Signal Circuit Design Engineer
 - Score: 77 | Grade: B | RoleFit: 45
@@ -841,12 +829,6 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Decision: pursue selectively
 - Keyword hits: -
 - Gaps: -
-
-### Anitech Solutions - Business Analyst
-- Score: 76 | Grade: B | RoleFit: 45
-- Decision: pursue selectively
-- Keyword hits: Accessibility, remote
-- Gaps: python
 
 ### Roblox Greenhouse - Senior QA Engineer, Game Engine
 - Score: 75 | Grade: B | RoleFit: 45
@@ -908,24 +890,6 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Keyword hits: -
 - Gaps: -
 
-### NVIDIA Workday - Senior VLSI Integration Engineer
-- Score: 73 | Grade: B | RoleFit: 45
-- Decision: pursue selectively
-- Keyword hits: -
-- Gaps: python
-
-### NVIDIA Workday - VLSI Integration Engineer
-- Score: 73 | Grade: B | RoleFit: 45
-- Decision: pursue selectively
-- Keyword hits: -
-- Gaps: python
-
-### YO IT Consulting - Biology Expert
-- Score: 72 | Grade: B | RoleFit: 45
-- Decision: pursue selectively
-- Keyword hits: remote
-- Gaps: -
-
 ### DCI CONSULTANTS PRIVATE LIMITED - Software Engineer (.net) - MC
 - Score: 71 | Grade: C | RoleFit: 45
 - Decision: pursue selectively
@@ -938,8 +902,20 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Keyword hits: -
 - Gaps: -
 
+### PicCollage æ¼è²¼è¶£ - Other Position
+- Score: 71 | Grade: C | RoleFit: 45
+- Decision: pursue selectively
+- Keyword hits: remote
+- Gaps: -
+
 ### Money Forward - QA Manager, Digital Bank
 - Score: 71 | Grade: C | RoleFit: 45
+- Decision: pursue selectively
+- Keyword hits: -
+- Gaps: -
+
+### MANPOWER STAFFING SERVICES (SINGAPORE) PTE LTD - Software Engineer, C#/C++
+- Score: 70 | Grade: C | RoleFit: 45
 - Decision: pursue selectively
 - Keyword hits: -
 - Gaps: -
@@ -956,22 +932,10 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Keyword hits: remote
 - Gaps: -
 
-### Coralisle Group Ltd. - Underwriter Motor
+### 雋思集團_香港商雋思產品發展有限公司(台灣) - Senior Software Engineer
 - Score: 70 | Grade: C | RoleFit: 45
 - Decision: pursue selectively
-- Keyword hits: remote
-- Gaps: excel
-
-### Jaguar Building Services Ltd - Improver
-- Score: 70 | Grade: C | RoleFit: 45
-- Decision: pursue selectively
-- Keyword hits: remote
-- Gaps: -
-
-### Queensland Government - Lawyer
-- Score: 70 | Grade: C | RoleFit: 45
-- Decision: pursue selectively
-- Keyword hits: remote
+- Keyword hits: -
 - Gaps: -
 
 ### NVIDIA Workday - Senior Package Engineer
@@ -980,16 +944,28 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Keyword hits: -
 - Gaps: -
 
-### EVERSENDAI ENGINEERING PTE LTD - Accounts cum Admin Executive
+### US Army Corps of Engineers - Interdisciplinary
 - Score: 69 | Grade: C | RoleFit: 45
 - Decision: hold / compare
-- Keyword hits: -
+- Keyword hits: remote
+- Gaps: -
+
+### Covetus - ð Hiring BlueYonder Professionals PAN INDIA
+- Score: 69 | Grade: C | RoleFit: 45
+- Decision: hold / compare
+- Keyword hits: remote
+- Gaps: -
+
+### Canvia - Especialista de Soporte Service Desk Remoto Horario rotativo
+- Score: 68 | Grade: C | RoleFit: 45
+- Decision: hold / compare
+- Keyword hits: remote
 - Gaps: excel
 
-### Humanit - Product Implementation Specialist
-- Score: 69 | Grade: C | RoleFit: 45
+### Exactus Energy - Project Assistant
+- Score: 67 | Grade: C | RoleFit: 45
 - Decision: hold / compare
-- Keyword hits: -
+- Keyword hits: remote
 - Gaps: -
 
 ### Learnlight - Learning Project Manager
@@ -998,8 +974,34 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Keyword hits: remote
 - Gaps: excel
 
+### Universia Argentina - Contador a recibido o estudiante avanzado Para Estudio Contable \ Hibrido Zona Norte
+- Score: 67 | Grade: C | RoleFit: 45
+- Decision: hold / compare
+- Keyword hits: remote
+- Gaps: excel
+
+### ベクターリスクマネジメント株式会社 - [English x Korean] Foreign-affiliated office work (security management, report writing) | No experience necessary
+- Score: 67 | Grade: C | RoleFit: 45
+- Decision: hold / compare
+- Keyword hits: -
+- Gaps: -
+
+### NVIDIA - NVIDIA OVX Systems
+- Score: 66 | Grade: C | RoleFit: 45
+- Decision: hold / compare
+- Keyword hits: -
+- Gaps: -
+
+### Tencent Careers China - 腾讯投资-Fund Investment Associate / Associate Director
+- Score: 66 | Grade: C | RoleFit: 45
+- Decision: hold / compare
+- Keyword hits: -
+- Gaps: -
+
 ## Layer C — Exploratory Signals (roleFit < 40)
 
+- **The Coca-Cola Company — Software Engineer I - CRM** (score: 95) | Top gap: crm
+- **Allstate — Software Engineer Lead Consultant** (score: 95) | Top gap: python
 - **GN AUDIO SINGAPORE PTE. LTD. — Software Engineer II (SteelSeries)** (score: 94) | Top gap: go
 - **GlossGenius — Staff Software Engineer, Frontend** (score: 94) | Top gap: go
 - **GlossGenius — Staff Software Engineer, Frontend** (score: 94) | Top gap: go
@@ -1028,6 +1030,4 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - **Bank of America — Software Engineer III - GBS IND** (score: 92) | Top gap: python
 - **Allstate — Lead AI Cloud Platform Engineer** (score: 92) | Top gap: python
 - **Atlassian — Senior Data Engineer** (score: 92) | Top gap: python
-- **Kyndryl — Mod Engineer (FDE)** (score: 92) | Top gap: python
-- **Esri — Sr. Product Engineer - Web Services** (score: 92) | Top gap: python
 

@@ -1,6 +1,6 @@
 # Career Ops Parallel Worker Report
 
-Generated: 2026-06-13T00:26:56.297Z
+Generated: 2026-06-14T00:06:09.185Z
 Concurrency: 4
 Jobs processed: 50
 Errors: 0
@@ -341,6 +341,21 @@ Errors: 0
 - Never store API keys or credentials in job metadata.
 - Record only application status and user-approved notes.
 
+## P0 Bank of America - Vice President; Feature Lead - Technology
+
+- Score: 95
+- Grade: A
+- Research evidence: 1
+- Keywords: API, remote, data
+- Compensation leverage: high
+- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
+
+### Apply Agent Guardrails
+- Never submit without explicit user confirmation.
+- Never fabricate work authorization, salary history, degree, or experience.
+- Never store API keys or credentials in job metadata.
+- Record only application status and user-approved notes.
+
 ## P0 The Coca-Cola Company - Sr. Software Engineer , Service Supply Chain
 
 - Score: 95
@@ -378,6 +393,21 @@ Errors: 0
 - Research evidence: 5
 - Keywords: API, engineer, product, data
 - Compensation leverage: high
+- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
+
+### Apply Agent Guardrails
+- Never submit without explicit user confirmation.
+- Never fabricate work authorization, salary history, degree, or experience.
+- Never store API keys or credentials in job metadata.
+- Record only application status and user-approved notes.
+
+## P0 Allstate - Software Engineer Lead Consultant
+
+- Score: 95
+- Grade: A
+- Research evidence: 0
+- Keywords: API, remote, engineer, product, data
+- Compensation leverage: -
 - Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
 
 ### Apply Agent Guardrails
@@ -722,36 +752,6 @@ Errors: 0
 - Grade: A
 - Research evidence: 0
 - Keywords: TypeScript, React, remote, dashboard, engineer, product, data
-- Compensation leverage: -
-- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
-
-### Apply Agent Guardrails
-- Never submit without explicit user confirmation.
-- Never fabricate work authorization, salary history, degree, or experience.
-- Never store API keys or credentials in job metadata.
-- Record only application status and user-approved notes.
-
-## P0 Uber - Engineering Manager II
-
-- Score: 92
-- Grade: A
-- Research evidence: 1
-- Keywords: API, product, data
-- Compensation leverage: high
-- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
-
-### Apply Agent Guardrails
-- Never submit without explicit user confirmation.
-- Never fabricate work authorization, salary history, degree, or experience.
-- Never store API keys or credentials in job metadata.
-- Record only application status and user-approved notes.
-
-## P0 Rent the Runway - Software Engineer III - Full Stack
-
-- Score: 92
-- Grade: A
-- Research evidence: 0
-- Keywords: JavaScript, API, engineer, product
 - Compensation leverage: -
 - Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
 

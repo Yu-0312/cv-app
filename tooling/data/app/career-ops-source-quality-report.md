@@ -1,27 +1,27 @@
 # Career Ops Source Quality
 
-- Generated: 2026-06-13T00:24:12.332Z
+- Generated: 2026-06-14T00:03:25.206Z
 - Mode: filter
 - Minimum score: 45
-- Input active jobs: 83337
-- Kept active jobs: 83224
-- Filtered active jobs: 113
-- Quality tiers: high 77905 / medium 5223 / low 96
+- Input active jobs: 83437
+- Kept active jobs: 83301
+- Filtered active jobs: 136
+- Quality tiers: high 77973 / medium 5232 / low 96
 
 ## Filtered Samples
 
 - 0 Unknown - Group Human Resources | DBS Bank (missing-company, landing-or-search-title, thin-description, job-board-landing-url)
 - 37 Apple - Careers at Apple: Join our community and culture. (landing-or-search-title, thin-description)
+- 19 Unknown - TW-Operations Expert - Jobs - Careers at Apple (missing-company, landing-or-search-title, thin-description)
+- 19 Unknown - Select Location - Jobs - Careers at Apple (missing-company, landing-or-search-title, thin-description)
+- 19 Unknown - AI System Engineer (Pre-Sales Engineer) - Jobs - Careers at Apple (missing-company, landing-or-search-title, thin-description)
+- 19 Unknown - SoC - ATE Test Engineer - Jobs - Careers at Apple (missing-company, landing-or-search-title, thin-description)
+- 19 Unknown - Camera Electrical System Integration Engineer - Camera Hardware - Jobs - Careers at Apple (missing-company, landing-or-search-title, thin-description)
 - 19 Unknown - Display Reliability Engineer - Jobs - Careers at Apple (missing-company, landing-or-search-title, thin-description)
 - 19 Unknown - SoC Packaging Engineer - Jobs - Careers at Apple (missing-company, landing-or-search-title, thin-description)
 - 19 Unknown - Senior Equipment Integration & Automation Engineer - Jobs - Careers at Apple (missing-company, landing-or-search-title, thin-description)
 - 19 Unknown - Regional Regulatory Compliance Engineer - Jobs - Careers at Apple (missing-company, landing-or-search-title, thin-description)
 - 19 Unknown - Photo Process and Equipment Engineer - Jobs - Careers at Apple (missing-company, landing-or-search-title, thin-description)
-- 19 Unknown - Photolithography Process and Equipment Engineer - Jobs - Careers at Apple (missing-company, landing-or-search-title, thin-description)
-- 19 Unknown - Camera Hardware EE Design and Test Engineer - Jobs - Careers at Apple (missing-company, landing-or-search-title, thin-description)
-- 37 ASML - Find your job - Careers at ASML (landing-or-search-title, thin-description)
-- 37 ASML - Teams - Careers at ASML | Supplying the semiconductor industry (landing-or-search-title, thin-description)
-- 37 Apple - Careers at Apple: Explore Apple locations. (landing-or-search-title, thin-description)
 
 ## Kept Samples
 

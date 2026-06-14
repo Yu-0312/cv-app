@@ -1,10 +1,10 @@
 {
   "source": "career-ops-health-monitor",
-  "checkedAt": "2026-06-13T00:27:07.130Z",
+  "checkedAt": "2026-06-14T00:06:19.988Z",
   "threshold": 0.3,
   "health": {
-    "total": 83224,
-    "active": 83224,
+    "total": 83301,
+    "active": 83301,
     "expired": 0,
     "stale": 0,
     "expiredRate": 0,
@@ -12,15 +12,19 @@
     "avgActiveScore": 65,
     "bySource": {
       "MyCareersFuture Singapore Frontend Full Stack": {
-        "total": 24,
+        "total": 23,
         "expired": 0
       },
       "The Muse Global Public Jobs": {
-        "total": 1885,
+        "total": 1886,
         "expired": 0
       },
       "The Muse Global Software Engineering": {
-        "total": 1719,
+        "total": 1718,
+        "expired": 0
+      },
+      "The Muse Global Remote Jobs": {
+        "total": 1823,
         "expired": 0
       },
       "MyCareersFuture Singapore Software": {
@@ -28,7 +32,7 @@
         "expired": 0
       },
       "Databricks Greenhouse": {
-        "total": 448,
+        "total": 447,
         "expired": 0
       },
       "MyCareersFuture Singapore Product": {
@@ -36,11 +40,7 @@
         "expired": 0
       },
       "The Muse Global Data Analytics": {
-        "total": 1831,
-        "expired": 0
-      },
-      "The Muse Global Remote Jobs": {
-        "total": 1823,
+        "total": 1828,
         "expired": 0
       },
       "Stripe Greenhouse": {
@@ -60,7 +60,7 @@
         "expired": 0
       },
       "Remotive Global Remote Jobs": {
-        "total": 27,
+        "total": 29,
         "expired": 0
       },
       "GitLab Greenhouse": {
@@ -84,11 +84,7 @@
         "expired": 0
       },
       "Source flex job board": {
-        "total": 130,
-        "expired": 0
-      },
-      "Remote OK Global Remote Jobs": {
-        "total": 100,
+        "total": 110,
         "expired": 0
       },
       "Japan Dev English Tech Jobs": {
@@ -96,7 +92,7 @@
         "expired": 0
       },
       "Replit Ashby": {
-        "total": 70,
+        "total": 69,
         "expired": 0
       },
       "Supabase Ashby": {
@@ -112,7 +108,7 @@
         "expired": 0
       },
       "Reddit Greenhouse": {
-        "total": 81,
+        "total": 80,
         "expired": 0
       },
       "Roblox Greenhouse": {
@@ -128,7 +124,7 @@
         "expired": 0
       },
       "Samsung Workday": {
-        "total": 70,
+        "total": 69,
         "expired": 0
       },
       "Cardlytics Workday Taiwan": {
@@ -144,7 +140,7 @@
         "expired": 0
       },
       "NVIDIA Workday": {
-        "total": 298,
+        "total": 299,
         "expired": 0
       },
       "Micron Workday": {
@@ -171,12 +167,20 @@
         "total": 20,
         "expired": 0
       },
+      "Remote OK Global Remote Jobs": {
+        "total": 98,
+        "expired": 0
+      },
       "Cloudflare Greenhouse": {
         "total": 1,
         "expired": 0
       },
       "Logitech Workday Taiwan": {
         "total": 26,
+        "expired": 0
+      },
+      "Daijob Japan Broad Listings": {
+        "total": 101,
         "expired": 0
       },
       "Gogolook": {
@@ -216,7 +220,7 @@
         "expired": 0
       },
       "Tencent Careers China": {
-        "total": 1473,
+        "total": 1472,
         "expired": 0
       },
       "NVIDIA Taiwan": {
@@ -228,7 +232,7 @@
         "expired": 0
       },
       "Tencent": {
-        "total": 27,
+        "total": 28,
         "expired": 0
       },
       "ASML Taiwan": {
@@ -285,6 +289,18 @@
       },
       "Grab SmartRecruiters": {
         "total": 13,
+        "expired": 0
+      },
+      "ASSA ABLOY SuccessFactors Taipei Manufacturing Engineer": {
+        "total": 1,
+        "expired": 0
+      },
+      "ASSA ABLOY SuccessFactors Software Engineer": {
+        "total": 1,
+        "expired": 0
+      },
+      "ASSA ABLOY SuccessFactors C# Software Engineer": {
+        "total": 1,
         "expired": 0
       },
       "CONA SuccessFactors Data Analyst": {
