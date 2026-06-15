@@ -1,6 +1,6 @@
 {
   "source": "career-ops-deep-fit",
-  "generatedAt": "2026-06-14T00:06:12.607Z",
+  "generatedAt": "2026-06-15T00:07:27.903Z",
   "llmProvider": "none",
   "summary": {
     "totalResults": 95,
@@ -2181,36 +2181,6 @@
       "layer": "B"
     },
     {
-      "jobKey": "url:https://remoteok.com/remote-jobs/remote-courier-dhl-express-1133229",
-      "company": "DHL Express",
-      "title": "COURIER",
-      "score": 70,
-      "grade": "C",
-      "roleFit": 45,
-      "url": "https://remoteok.com/remote-jobs/remote-courier-dhl-express-1133229",
-      "location": "Kingston,",
-      "keywordHits": [
-        "remote"
-      ],
-      "keywordMisses": [],
-      "decision": "pursue selectively",
-      "layer": "B"
-    },
-    {
-      "jobKey": "url:https://www.cake.me/companies/qpp/jobs/senior-software-engineer-team-lead",
-      "company": "雋思集團_香港商雋思產品發展有限公司(台灣)",
-      "title": "Senior Software Engineer",
-      "score": 70,
-      "grade": "C",
-      "roleFit": 45,
-      "url": "https://www.cake.me/companies/qpp/jobs/senior-software-engineer-team-lead",
-      "location": "台灣, 台灣, TW",
-      "keywordHits": [],
-      "keywordMisses": [],
-      "decision": "pursue selectively",
-      "layer": "B"
-    },
-    {
       "jobKey": "url:https://nvidia.wd5.myworkdayjobs.com/nvidiaexternalcareersite/job/taiwan-hsinchu/senior-package-engineer_jr2016717-1",
       "company": "NVIDIA Workday",
       "title": "Senior Package Engineer",
@@ -2220,6 +2190,22 @@
       "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Taiwan-Hsinchu/Senior-Package-Engineer_JR2016717-1",
       "location": "Taiwan, Hsinchu",
       "keywordHits": [],
+      "keywordMisses": [],
+      "decision": "hold / compare",
+      "layer": "B"
+    },
+    {
+      "jobKey": "url:https://remoteok.com/remote-jobs/remote-various-positions-northern-news-services-1133385",
+      "company": "Northern News Services",
+      "title": "Various Positions",
+      "score": 69,
+      "grade": "C",
+      "roleFit": 45,
+      "url": "https://remoteok.com/remote-jobs/remote-various-positions-northern-news-services-1133385",
+      "location": "Northwest Territories,",
+      "keywordHits": [
+        "remote"
+      ],
       "keywordMisses": [],
       "decision": "hold / compare",
       "layer": "B"
@@ -2275,6 +2261,36 @@
       "layer": "B"
     },
     {
+      "jobKey": "url:https://remoteok.com/remote-jobs/remote-sheriffs-officer-attorney-generals-department-1133408",
+      "company": "Attorney-General's Department",
+      "title": "Sheriffâs Officer",
+      "score": 68,
+      "grade": "C",
+      "roleFit": 45,
+      "url": "https://remoteok.com/remote-jobs/remote-sheriffs-officer-attorney-generals-department-1133408",
+      "location": "Alice Springs,",
+      "keywordHits": [
+        "remote"
+      ],
+      "keywordMisses": [],
+      "decision": "hold / compare",
+      "layer": "B"
+    },
+    {
+      "jobKey": "url:https://www.mycareersfuture.gov.sg/job/94f0151b8b940f3fdc950d8779e80d0e",
+      "company": "SHARE RESOURCES PRIVATE LIMITED",
+      "title": "QC Inspector (Oracle/AGILE/Technical Drawing)",
+      "score": 68,
+      "grade": "C",
+      "roleFit": 45,
+      "url": "https://www.mycareersfuture.gov.sg/job/94f0151b8b940f3fdc950d8779e80d0e",
+      "location": "Islandwide, Singapore",
+      "keywordHits": [],
+      "keywordMisses": [],
+      "decision": "hold / compare",
+      "layer": "B"
+    },
+    {
       "jobKey": "url:https://remoteok.com/remote-jobs/remote-project-assistant-exactus-energy-1133322",
       "company": "Exactus Energy",
       "title": "Project Assistant",
@@ -2287,42 +2303,6 @@
         "remote"
       ],
       "keywordMisses": [],
-      "decision": "hold / compare",
-      "layer": "B"
-    },
-    {
-      "jobKey": "url:https://remoteok.com/remote-jobs/remote-learning-project-manager-learnlight-1133233",
-      "company": "Learnlight",
-      "title": "Learning Project Manager",
-      "score": 67,
-      "grade": "C",
-      "roleFit": 45,
-      "url": "https://remoteok.com/remote-jobs/remote-learning-project-manager-learnlight-1133233",
-      "location": "Remote / Global",
-      "keywordHits": [
-        "remote"
-      ],
-      "keywordMisses": [
-        "excel"
-      ],
-      "decision": "hold / compare",
-      "layer": "B"
-    },
-    {
-      "jobKey": "url:https://remoteok.com/remote-jobs/remote-contador-a-recibido-o-estudiante-avanzado-para-estudio-contable-hibrido-zona-norte-universia-argentina-1133351",
-      "company": "Universia Argentina",
-      "title": "Contador a recibido o estudiante avanzado Para Estudio Contable \\ Hibrido Zona Norte",
-      "score": 67,
-      "grade": "C",
-      "roleFit": 45,
-      "url": "https://remoteok.com/remote-jobs/remote-contador-a-recibido-o-estudiante-avanzado-para-estudio-contable-hibrido-zona-norte-universia-argentina-1133351",
-      "location": "CÃ³rdoba, CÃ³rdoba, CÃ³rdoba, Argentina",
-      "keywordHits": [
-        "remote"
-      ],
-      "keywordMisses": [
-        "excel"
-      ],
       "decision": "hold / compare",
       "layer": "B"
     },
@@ -2364,6 +2344,22 @@
       "url": "http://careers.tencent.com/jobdesc.html?postId=2057421659916382208",
       "location": "中国 / 北京",
       "keywordHits": [],
+      "keywordMisses": [],
+      "decision": "hold / compare",
+      "layer": "B"
+    },
+    {
+      "jobKey": "url:https://remoteok.com/remote-jobs/remote-programa-futuros-profesionales-productos-digitales-universia-argentina-1133398",
+      "company": "Universia Argentina",
+      "title": "Programa Futuros Profesionales Productos Digitales",
+      "score": 66,
+      "grade": "C",
+      "roleFit": 45,
+      "url": "https://remoteok.com/remote-jobs/remote-programa-futuros-profesionales-productos-digitales-universia-argentina-1133398",
+      "location": "Buenos Aires y alrededores",
+      "keywordHits": [
+        "remote"
+      ],
       "keywordMisses": [],
       "decision": "hold / compare",
       "layer": "B"
@@ -2564,6 +2560,30 @@
       "mainGaps": [
         "growth",
         "operations"
+      ],
+      "layer": "C"
+    },
+    {
+      "jobKey": "url:https://www.themuse.com/jobs/apple/aiml-site-lead-lead-researcher-foundation-models-f9cd35",
+      "company": "Apple",
+      "title": "AIML - Site Lead & Lead Researcher, Foundation Models",
+      "score": 93,
+      "grade": "A",
+      "roleFit": 92,
+      "url": "https://www.themuse.com/jobs/apple/aiml-site-lead-lead-researcher-foundation-models-f9cd35",
+      "location": "Seattle, WA",
+      "keywordHits": [
+        "Analytics",
+        "API",
+        "analytics",
+        "Product Engineer"
+      ],
+      "topGap": "python",
+      "mainGaps": [
+        "python",
+        "agents",
+        "machine learning",
+        "deep learning"
       ],
       "layer": "C"
     },
@@ -3020,30 +3040,6 @@
         "aws",
         "gcp",
         "azure"
-      ],
-      "layer": "C"
-    },
-    {
-      "jobKey": "url:https://www.themuse.com/jobs/atlassian/senior-data-engineer-7a25d1",
-      "company": "Atlassian",
-      "title": "Senior Data Engineer",
-      "score": 92,
-      "grade": "A",
-      "roleFit": 92,
-      "url": "https://www.themuse.com/jobs/atlassian/senior-data-engineer-7a25d1",
-      "location": "Bangalore, India / Flexible / Remote",
-      "keywordHits": [
-        "Accessibility",
-        "Analytics",
-        "API",
-        "analytics"
-      ],
-      "topGap": "python",
-      "mainGaps": [
-        "python",
-        "go",
-        "sql",
-        "postgres"
       ],
       "layer": "C"
     }

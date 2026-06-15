@@ -1,6 +1,6 @@
 # Career Ops Parallel Worker Report
 
-Generated: 2026-06-14T00:06:09.185Z
+Generated: 2026-06-15T00:07:24.395Z
 Concurrency: 4
 Jobs processed: 50
 Errors: 0
@@ -521,6 +521,21 @@ Errors: 0
 - Never store API keys or credentials in job metadata.
 - Record only application status and user-approved notes.
 
+## P0 Apple - AIML - Site Lead & Lead Researcher, Foundation Models
+
+- Score: 93
+- Grade: A
+- Research evidence: 0
+- Keywords: Analytics, API, product, data
+- Compensation leverage: -
+- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
+
+### Apply Agent Guardrails
+- Never submit without explicit user confirmation.
+- Never fabricate work authorization, salary history, degree, or experience.
+- Never store API keys or credentials in job metadata.
+- Record only application status and user-approved notes.
+
 ## P0 CrowdStrike - Sr. Full Stack Engineer (Remote)
 
 - Score: 93
@@ -732,21 +747,6 @@ Errors: 0
 - Record only application status and user-approved notes.
 
 ## P0 LawnStarter - Staff Software Engineer, Product (São Paulo)
-
-- Score: 92
-- Grade: A
-- Research evidence: 0
-- Keywords: TypeScript, React, remote, dashboard, engineer, product, data
-- Compensation leverage: -
-- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
-
-### Apply Agent Guardrails
-- Never submit without explicit user confirmation.
-- Never fabricate work authorization, salary history, degree, or experience.
-- Never store API keys or credentials in job metadata.
-- Record only application status and user-approved notes.
-
-## P0 LawnStarter - Staff Software Engineer, Product (Campinas)
 
 - Score: 92
 - Grade: A

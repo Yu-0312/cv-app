@@ -1,6 +1,6 @@
 # Career Ops Deep Fit Report
 
-Generated: 2026-06-14T00:06:12.607Z
+Generated: 2026-06-15T00:07:27.903Z
 LLM provider: none
 Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 exploratory)
 
@@ -926,22 +926,16 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Keyword hits: remote
 - Gaps: go
 
-### DHL Express - COURIER
-- Score: 70 | Grade: C | RoleFit: 45
-- Decision: pursue selectively
-- Keyword hits: remote
-- Gaps: -
-
-### 雋思集團_香港商雋思產品發展有限公司(台灣) - Senior Software Engineer
-- Score: 70 | Grade: C | RoleFit: 45
-- Decision: pursue selectively
-- Keyword hits: -
-- Gaps: -
-
 ### NVIDIA Workday - Senior Package Engineer
 - Score: 69 | Grade: C | RoleFit: 45
 - Decision: hold / compare
 - Keyword hits: -
+- Gaps: -
+
+### Northern News Services - Various Positions
+- Score: 69 | Grade: C | RoleFit: 45
+- Decision: hold / compare
+- Keyword hits: remote
 - Gaps: -
 
 ### US Army Corps of Engineers - Interdisciplinary
@@ -962,23 +956,23 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Keyword hits: remote
 - Gaps: excel
 
+### Attorney-General's Department - Sheriffâs Officer
+- Score: 68 | Grade: C | RoleFit: 45
+- Decision: hold / compare
+- Keyword hits: remote
+- Gaps: -
+
+### SHARE RESOURCES PRIVATE LIMITED - QC Inspector (Oracle/AGILE/Technical Drawing)
+- Score: 68 | Grade: C | RoleFit: 45
+- Decision: hold / compare
+- Keyword hits: -
+- Gaps: -
+
 ### Exactus Energy - Project Assistant
 - Score: 67 | Grade: C | RoleFit: 45
 - Decision: hold / compare
 - Keyword hits: remote
 - Gaps: -
-
-### Learnlight - Learning Project Manager
-- Score: 67 | Grade: C | RoleFit: 45
-- Decision: hold / compare
-- Keyword hits: remote
-- Gaps: excel
-
-### Universia Argentina - Contador a recibido o estudiante avanzado Para Estudio Contable \ Hibrido Zona Norte
-- Score: 67 | Grade: C | RoleFit: 45
-- Decision: hold / compare
-- Keyword hits: remote
-- Gaps: excel
 
 ### ベクターリスクマネジメント株式会社 - [English x Korean] Foreign-affiliated office work (security management, report writing) | No experience necessary
 - Score: 67 | Grade: C | RoleFit: 45
@@ -998,6 +992,12 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Keyword hits: -
 - Gaps: -
 
+### Universia Argentina - Programa Futuros Profesionales Productos Digitales
+- Score: 66 | Grade: C | RoleFit: 45
+- Decision: hold / compare
+- Keyword hits: remote
+- Gaps: -
+
 ## Layer C — Exploratory Signals (roleFit < 40)
 
 - **The Coca-Cola Company — Software Engineer I - CRM** (score: 95) | Top gap: crm
@@ -1009,6 +1009,7 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - **Databricks Greenhouse — Director,Technical Solutions (Big Data/ AI)** (score: 94) | Top gap: spark
 - **SHEIN STAR PTE. LTD. — Product Manager – Apparel & Accessories** (score: 93) | Top gap: growth
 - **Uber — Director, Marketplace Central Operations Mobility EMEA** (score: 93) | Top gap: growth
+- **Apple — AIML - Site Lead & Lead Researcher, Foundation Models** (score: 93) | Top gap: python
 - **CrowdStrike — Sr. Full Stack Engineer (Remote)** (score: 93) | Top gap: python
 - **Pilotly — Product Engineer II** (score: 93) | Top gap: aws
 - **Capital One — Distinguished Engineer (Remote - Eligible)** (score: 93) | Top gap: python
@@ -1029,5 +1030,4 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - **Rent the Runway — Software Engineer III - Full Stack** (score: 92) | Top gap: java
 - **Bank of America — Software Engineer III - GBS IND** (score: 92) | Top gap: python
 - **Allstate — Lead AI Cloud Platform Engineer** (score: 92) | Top gap: python
-- **Atlassian — Senior Data Engineer** (score: 92) | Top gap: python
 
