@@ -1,6 +1,6 @@
 # Career Ops Application Kit
 
-Generated: 2026-06-15T00:07:05.564Z
+Generated: 2026-06-16T00:33:04.181Z
 Jobs: 12
 
 ## Pipeline
@@ -130,6 +130,136 @@ Alex Chen
 ### Interview Prep
 - Prepare a 60-second story for why BIFROST PTE. LTD. and why Frontend Engineer.
 - Prepare evidence for: JavaScript, React, engineer, product, data, restful.
+- Prepare one STAR story about execution under ambiguity.
+- Prepare one STAR story about collaboration and tradeoff decisions.
+- Prepare questions about team priorities, success metrics, and hiring timeline.
+
+### Negotiation Prep
+- Wait for a clear offer before anchoring compensation.
+- Ask for total compensation breakdown, work mode, title, level, review cycle, and start date.
+- Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.
+- Use competing priorities and role fit, not personal need, as the negotiation frame.
+
+## MICRON SEMICONDUCTOR ASIA OPERATIONS PTE. LTD. - Senior/Staff Product Engineer (GenAI, AI/ML & Advanced Data Analytics)
+
+- Priority: P0
+- Score: 95/A
+- Subject: Senior/Staff Product Engineer (GenAI, AI/ML & Advanced Data Analytics) application - MICRON SEMICONDUCTOR ASIA OPERATIONS PTE. LTD.
+
+- Block G: High Confidence
+- Rating: 4.8/5.0
+
+### ATS Keyword Injection
+- Archetype: AI Platform / LLMOps
+- Coverage: 100%
+- JD Keywords: JavaScript, CSS, Analytics, API, engineer, product, data, visualization
+- 在 Professional Summary 中自然帶入：JavaScript、CSS、Analytics、API、engineer
+- 使用職位語言：「AI Platform / LLMOps」方向的動詞和術語
+- 【你已有但此 JD 未要求】可視情況選擇性提及：python、sql、aws、gcp、azure
+- Missing (do NOT fabricate): python, sql, aws, gcp, azure, kubernetes, html, llm
+
+### Apply Checklist
+- Open the source URL and confirm the role is still active.
+- Generate or refresh the tailored ATS PDF from this job.
+- Mirror these JD keywords honestly in your CV: JavaScript, CSS, Analytics, API, engineer, product, data, visualization
+- Do not overclaim missing areas: python, sql, aws, gcp, azure, kubernetes
+- Log status, recruiter/contact, and next follow-up date in the tracker.
+
+### Outreach Email
+```text
+Hi MICRON SEMICONDUCTOR ASIA OPERATIONS PTE. LTD. team,
+
+I am Alex Chen, and I am interested in the Senior/Staff Product Engineer (GenAI, AI/ML & Advanced Data Analytics) role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.
+
+The role stood out because it maps closely to my experience with JavaScript, CSS, Analytics, API, engineer.
+
+I would appreciate the chance to share how my experience can support the team. Thank you for your time.
+
+Best,
+Alex Chen
+```
+
+### Follow-up
+Timing: 3-5 business days after applying or the last recruiter interaction.
+```text
+Hi MICRON SEMICONDUCTOR ASIA OPERATIONS PTE. LTD. team,
+
+I wanted to follow up on my application for the Senior/Staff Product Engineer (GenAI, AI/ML & Advanced Data Analytics) role. I remain interested and would be glad to provide any additional context about my background.
+
+Thank you again for your time.
+
+Best,
+Alex Chen
+```
+
+### Interview Prep
+- Prepare a 60-second story for why MICRON SEMICONDUCTOR ASIA OPERATIONS PTE. LTD. and why Senior/Staff Product Engineer (GenAI, AI/ML & Advanced Data Analytics).
+- Prepare evidence for: JavaScript, CSS, Analytics, API, engineer, product.
+- Prepare one STAR story about execution under ambiguity.
+- Prepare one STAR story about collaboration and tradeoff decisions.
+- Prepare questions about team priorities, success metrics, and hiring timeline.
+
+### Negotiation Prep
+- Wait for a clear offer before anchoring compensation.
+- Ask for total compensation breakdown, work mode, title, level, review cycle, and start date.
+- Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.
+- Use competing priorities and role fit, not personal need, as the negotiation frame.
+
+## USAA - Software Engineer Mid-level (Java Full Stack)
+
+- Priority: P0
+- Score: 95/A
+- Subject: Software Engineer Mid-level (Java Full Stack) application - USAA
+
+- Block G: High Confidence
+- Rating: 4.8/5.0
+
+### ATS Keyword Injection
+- Archetype: Full Stack Engineer
+- Coverage: 100%
+- JD Keywords: JavaScript, CSS, API, remote, engineer, data
+- 在 Professional Summary 中自然帶入：JavaScript、CSS、API、remote、engineer
+- 使用職位語言：「Full Stack Engineer」方向的動詞和術語
+- 【你已有但此 JD 未要求】可視情況選擇性提及：python、java、go、swift、kotlin
+- Missing (do NOT fabricate): python, java, go, swift, kotlin, sql, aws, docker
+
+### Apply Checklist
+- Open the source URL and confirm the role is still active.
+- Generate or refresh the tailored ATS PDF from this job.
+- Mirror these JD keywords honestly in your CV: JavaScript, CSS, API, remote, engineer, data
+- Do not overclaim missing areas: python, java, go, swift, kotlin, sql
+- Log status, recruiter/contact, and next follow-up date in the tracker.
+
+### Outreach Email
+```text
+Hi USAA team,
+
+I am Alex Chen, and I am interested in the Software Engineer Mid-level (Java Full Stack) role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.
+
+The role stood out because it maps closely to my experience with JavaScript, CSS, API, remote, engineer.
+
+I would appreciate the chance to share how my experience can support the team. Thank you for your time.
+
+Best,
+Alex Chen
+```
+
+### Follow-up
+Timing: 3-5 business days after applying or the last recruiter interaction.
+```text
+Hi USAA team,
+
+I wanted to follow up on my application for the Software Engineer Mid-level (Java Full Stack) role. I remain interested and would be glad to provide any additional context about my background.
+
+Thank you again for your time.
+
+Best,
+Alex Chen
+```
+
+### Interview Prep
+- Prepare a 60-second story for why USAA and why Software Engineer Mid-level (Java Full Stack).
+- Prepare evidence for: JavaScript, CSS, API, remote, engineer, data.
 - Prepare one STAR story about execution under ambiguity.
 - Prepare one STAR story about collaboration and tradeoff decisions.
 - Prepare questions about team priorities, success metrics, and hiring timeline.
@@ -650,136 +780,6 @@ Alex Chen
 
 ### Interview Prep
 - Prepare a 60-second story for why The Coca-Cola Company and why Software Engineer II - CRM.
-- Prepare evidence for: API, engineer, product, data.
-- Prepare one STAR story about execution under ambiguity.
-- Prepare one STAR story about collaboration and tradeoff decisions.
-- Prepare questions about team priorities, success metrics, and hiring timeline.
-
-### Negotiation Prep
-- Wait for a clear offer before anchoring compensation.
-- Ask for total compensation breakdown, work mode, title, level, review cycle, and start date.
-- Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.
-- Use competing priorities and role fit, not personal need, as the negotiation frame.
-
-## The Coca-Cola Company - Senior Software Engineer - CRM
-
-- Priority: P0
-- Score: 95/A
-- Subject: Senior Software Engineer - CRM application - The Coca-Cola Company
-
-- Block G: High Confidence
-- Rating: 4.8/5.0
-
-### ATS Keyword Injection
-- Archetype: AI Platform / LLMOps
-- Coverage: 100%
-- JD Keywords: API, engineer, product, data
-- 在 Professional Summary 中自然帶入：API、engineer、product、data
-- 使用職位語言：「AI Platform / LLMOps」方向的動詞和術語
-- 【你已有但此 JD 未要求】可視情況選擇性提及：crm、growth、sales
-- Missing (do NOT fabricate): crm, growth, sales
-
-### Apply Checklist
-- Open the source URL and confirm the role is still active.
-- Generate or refresh the tailored ATS PDF from this job.
-- Mirror these JD keywords honestly in your CV: API, engineer, product, data
-- Do not overclaim missing areas: crm, growth, sales
-- Log status, recruiter/contact, and next follow-up date in the tracker.
-
-### Outreach Email
-```text
-Hi The Coca-Cola Company team,
-
-I am Alex Chen, and I am interested in the Senior Software Engineer - CRM role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.
-
-The role stood out because it maps closely to my experience with API, engineer, product, data.
-
-I would appreciate the chance to share how my experience can support the team. Thank you for your time.
-
-Best,
-Alex Chen
-```
-
-### Follow-up
-Timing: 3-5 business days after applying or the last recruiter interaction.
-```text
-Hi The Coca-Cola Company team,
-
-I wanted to follow up on my application for the Senior Software Engineer - CRM role. I remain interested and would be glad to provide any additional context about my background.
-
-Thank you again for your time.
-
-Best,
-Alex Chen
-```
-
-### Interview Prep
-- Prepare a 60-second story for why The Coca-Cola Company and why Senior Software Engineer - CRM.
-- Prepare evidence for: API, engineer, product, data.
-- Prepare one STAR story about execution under ambiguity.
-- Prepare one STAR story about collaboration and tradeoff decisions.
-- Prepare questions about team priorities, success metrics, and hiring timeline.
-
-### Negotiation Prep
-- Wait for a clear offer before anchoring compensation.
-- Ask for total compensation breakdown, work mode, title, level, review cycle, and start date.
-- Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.
-- Use competing priorities and role fit, not personal need, as the negotiation frame.
-
-## The Coca-Cola Company - Senior Software Engineer
-
-- Priority: P0
-- Score: 95/A
-- Subject: Senior Software Engineer application - The Coca-Cola Company
-
-- Block G: High Confidence
-- Rating: 4.8/5.0
-
-### ATS Keyword Injection
-- Archetype: AI Platform / LLMOps
-- Coverage: 100%
-- JD Keywords: API, engineer, product, data
-- 在 Professional Summary 中自然帶入：API、engineer、product、data
-- 使用職位語言：「AI Platform / LLMOps」方向的動詞和術語
-- 【你已有但此 JD 未要求】可視情況選擇性提及：growth、sales
-- Missing (do NOT fabricate): growth, sales
-
-### Apply Checklist
-- Open the source URL and confirm the role is still active.
-- Generate or refresh the tailored ATS PDF from this job.
-- Mirror these JD keywords honestly in your CV: API, engineer, product, data
-- Do not overclaim missing areas: growth, sales
-- Log status, recruiter/contact, and next follow-up date in the tracker.
-
-### Outreach Email
-```text
-Hi The Coca-Cola Company team,
-
-I am Alex Chen, and I am interested in the Senior Software Engineer role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.
-
-The role stood out because it maps closely to my experience with API, engineer, product, data.
-
-I would appreciate the chance to share how my experience can support the team. Thank you for your time.
-
-Best,
-Alex Chen
-```
-
-### Follow-up
-Timing: 3-5 business days after applying or the last recruiter interaction.
-```text
-Hi The Coca-Cola Company team,
-
-I wanted to follow up on my application for the Senior Software Engineer role. I remain interested and would be glad to provide any additional context about my background.
-
-Thank you again for your time.
-
-Best,
-Alex Chen
-```
-
-### Interview Prep
-- Prepare a 60-second story for why The Coca-Cola Company and why Senior Software Engineer.
 - Prepare evidence for: API, engineer, product, data.
 - Prepare one STAR story about execution under ambiguity.
 - Prepare one STAR story about collaboration and tradeoff decisions.

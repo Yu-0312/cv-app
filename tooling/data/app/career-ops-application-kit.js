@@ -1,6 +1,6 @@
 window.CV_CAREER_OPS_APPLICATION_KIT = {
   "source": "career-ops-application-kit",
-  "generatedAt": "2026-06-15T00:07:05.564Z",
+  "generatedAt": "2026-06-16T00:33:04.181Z",
   "profileRole": "Frontend Engineer",
   "playbooks": [
     {
@@ -181,6 +181,188 @@ window.CV_CAREER_OPS_APPLICATION_KIT = {
       "interviewPrep": [
         "Prepare a 60-second story for why BIFROST PTE. LTD. and why Frontend Engineer.",
         "Prepare evidence for: JavaScript, React, engineer, product, data, restful.",
+        "Prepare one STAR story about execution under ambiguity.",
+        "Prepare one STAR story about collaboration and tradeoff decisions.",
+        "Prepare questions about team priorities, success metrics, and hiring timeline."
+      ],
+      "negotiationPrep": [
+        "Wait for a clear offer before anchoring compensation.",
+        "Ask for total compensation breakdown, work mode, title, level, review cycle, and start date.",
+        "Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.",
+        "Use competing priorities and role fit, not personal need, as the negotiation frame."
+      ]
+    },
+    {
+      "jobKey": "url:https://www.mycareersfuture.gov.sg/job/216697e0837e4903a768dd7ce7397307",
+      "title": "Senior/Staff Product Engineer (GenAI, AI/ML & Advanced Data Analytics)",
+      "company": "MICRON SEMICONDUCTOR ASIA OPERATIONS PTE. LTD.",
+      "score": "95/A",
+      "rating": 4.8,
+      "blockG": {
+        "tier": "High Confidence",
+        "confidence": "medium"
+      },
+      "priority": "P0",
+      "atsInjection": {
+        "jdKeywords": [
+          "JavaScript",
+          "CSS",
+          "Analytics",
+          "API",
+          "engineer",
+          "product",
+          "data",
+          "visualization"
+        ],
+        "hardKeywords": [
+          "JavaScript",
+          "CSS",
+          "Analytics",
+          "API",
+          "engineer",
+          "product",
+          "data",
+          "visualization"
+        ],
+        "softKeywords": [],
+        "missingKeywords": [
+          "python",
+          "sql",
+          "aws",
+          "gcp",
+          "azure",
+          "kubernetes",
+          "html",
+          "llm"
+        ],
+        "archetype": "AI Platform / LLMOps",
+        "summaryRewriteHints": [
+          "在 Professional Summary 中自然帶入：JavaScript、CSS、Analytics、API、engineer",
+          "使用職位語言：「AI Platform / LLMOps」方向的動詞和術語",
+          "【你已有但此 JD 未要求】可視情況選擇性提及：python、sql、aws、gcp、azure"
+        ],
+        "atsRules": [
+          "單欄排版，避免 sidebar 雙欄（ATS parser 容易亂序）",
+          "使用標準 header：Professional Summary, Work Experience, Skills, Education",
+          "不使用巢狀表格或文字框",
+          "確保 PDF 文字可被選取（不可光柵化輸出）",
+          "UTF-8 編碼，移除 em dash / smart quote / zero-width space",
+          "關鍵技能在 Skills section 明確列出，不要只藏在 bullet 裡"
+        ],
+        "guardrails": [
+          "NEVER add skills the candidate lacks",
+          "Only reformulate real experience with exact JD vocabulary",
+          "Example: if candidate has 'API development', it can become 'JavaScript'"
+        ],
+        "keywordCoveragePercent": 100
+      },
+      "applyChecklist": [
+        "Open the source URL and confirm the role is still active.",
+        "Generate or refresh the tailored ATS PDF from this job.",
+        "Mirror these JD keywords honestly in your CV: JavaScript, CSS, Analytics, API, engineer, product, data, visualization",
+        "Do not overclaim missing areas: python, sql, aws, gcp, azure, kubernetes",
+        "Log status, recruiter/contact, and next follow-up date in the tracker."
+      ],
+      "outreachEmail": {
+        "subject": "Senior/Staff Product Engineer (GenAI, AI/ML & Advanced Data Analytics) application - MICRON SEMICONDUCTOR ASIA OPERATIONS PTE. LTD.",
+        "body": "Hi MICRON SEMICONDUCTOR ASIA OPERATIONS PTE. LTD. team,\n\nI am Alex Chen, and I am interested in the Senior/Staff Product Engineer (GenAI, AI/ML & Advanced Data Analytics) role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.\n\nThe role stood out because it maps closely to my experience with JavaScript, CSS, Analytics, API, engineer.\n\nI would appreciate the chance to share how my experience can support the team. Thank you for your time.\n\nBest,\nAlex Chen"
+      },
+      "followUp": {
+        "timing": "3-5 business days after applying or the last recruiter interaction.",
+        "body": "Hi MICRON SEMICONDUCTOR ASIA OPERATIONS PTE. LTD. team,\n\nI wanted to follow up on my application for the Senior/Staff Product Engineer (GenAI, AI/ML & Advanced Data Analytics) role. I remain interested and would be glad to provide any additional context about my background.\n\nThank you again for your time.\n\nBest,\nAlex Chen"
+      },
+      "interviewPrep": [
+        "Prepare a 60-second story for why MICRON SEMICONDUCTOR ASIA OPERATIONS PTE. LTD. and why Senior/Staff Product Engineer (GenAI, AI/ML & Advanced Data Analytics).",
+        "Prepare evidence for: JavaScript, CSS, Analytics, API, engineer, product.",
+        "Prepare one STAR story about execution under ambiguity.",
+        "Prepare one STAR story about collaboration and tradeoff decisions.",
+        "Prepare questions about team priorities, success metrics, and hiring timeline."
+      ],
+      "negotiationPrep": [
+        "Wait for a clear offer before anchoring compensation.",
+        "Ask for total compensation breakdown, work mode, title, level, review cycle, and start date.",
+        "Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.",
+        "Use competing priorities and role fit, not personal need, as the negotiation frame."
+      ]
+    },
+    {
+      "jobKey": "url:https://www.themuse.com/jobs/usaa/software-engineer-midlevel-java-full-stack-bbaa1e",
+      "title": "Software Engineer Mid-level (Java Full Stack)",
+      "company": "USAA",
+      "score": "95/A",
+      "rating": 4.8,
+      "blockG": {
+        "tier": "High Confidence",
+        "confidence": "medium"
+      },
+      "priority": "P0",
+      "atsInjection": {
+        "jdKeywords": [
+          "JavaScript",
+          "CSS",
+          "API",
+          "remote",
+          "engineer",
+          "data"
+        ],
+        "hardKeywords": [
+          "JavaScript",
+          "CSS",
+          "API",
+          "remote",
+          "engineer",
+          "data"
+        ],
+        "softKeywords": [],
+        "missingKeywords": [
+          "python",
+          "java",
+          "go",
+          "swift",
+          "kotlin",
+          "sql",
+          "aws",
+          "docker"
+        ],
+        "archetype": "Full Stack Engineer",
+        "summaryRewriteHints": [
+          "在 Professional Summary 中自然帶入：JavaScript、CSS、API、remote、engineer",
+          "使用職位語言：「Full Stack Engineer」方向的動詞和術語",
+          "【你已有但此 JD 未要求】可視情況選擇性提及：python、java、go、swift、kotlin"
+        ],
+        "atsRules": [
+          "單欄排版，避免 sidebar 雙欄（ATS parser 容易亂序）",
+          "使用標準 header：Professional Summary, Work Experience, Skills, Education",
+          "不使用巢狀表格或文字框",
+          "確保 PDF 文字可被選取（不可光柵化輸出）",
+          "UTF-8 編碼，移除 em dash / smart quote / zero-width space",
+          "關鍵技能在 Skills section 明確列出，不要只藏在 bullet 裡"
+        ],
+        "guardrails": [
+          "NEVER add skills the candidate lacks",
+          "Only reformulate real experience with exact JD vocabulary",
+          "Example: if candidate has 'API development', it can become 'JavaScript'"
+        ],
+        "keywordCoveragePercent": 100
+      },
+      "applyChecklist": [
+        "Open the source URL and confirm the role is still active.",
+        "Generate or refresh the tailored ATS PDF from this job.",
+        "Mirror these JD keywords honestly in your CV: JavaScript, CSS, API, remote, engineer, data",
+        "Do not overclaim missing areas: python, java, go, swift, kotlin, sql",
+        "Log status, recruiter/contact, and next follow-up date in the tracker."
+      ],
+      "outreachEmail": {
+        "subject": "Software Engineer Mid-level (Java Full Stack) application - USAA",
+        "body": "Hi USAA team,\n\nI am Alex Chen, and I am interested in the Software Engineer Mid-level (Java Full Stack) role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.\n\nThe role stood out because it maps closely to my experience with JavaScript, CSS, API, remote, engineer.\n\nI would appreciate the chance to share how my experience can support the team. Thank you for your time.\n\nBest,\nAlex Chen"
+      },
+      "followUp": {
+        "timing": "3-5 business days after applying or the last recruiter interaction.",
+        "body": "Hi USAA team,\n\nI wanted to follow up on my application for the Software Engineer Mid-level (Java Full Stack) role. I remain interested and would be glad to provide any additional context about my background.\n\nThank you again for your time.\n\nBest,\nAlex Chen"
+      },
+      "interviewPrep": [
+        "Prepare a 60-second story for why USAA and why Software Engineer Mid-level (Java Full Stack).",
+        "Prepare evidence for: JavaScript, CSS, API, remote, engineer, data.",
         "Prepare one STAR story about execution under ambiguity.",
         "Prepare one STAR story about collaboration and tradeoff decisions.",
         "Prepare questions about team priorities, success metrics, and hiring timeline."
@@ -832,165 +1014,6 @@ window.CV_CAREER_OPS_APPLICATION_KIT = {
       },
       "interviewPrep": [
         "Prepare a 60-second story for why The Coca-Cola Company and why Software Engineer II - CRM.",
-        "Prepare evidence for: API, engineer, product, data.",
-        "Prepare one STAR story about execution under ambiguity.",
-        "Prepare one STAR story about collaboration and tradeoff decisions.",
-        "Prepare questions about team priorities, success metrics, and hiring timeline."
-      ],
-      "negotiationPrep": [
-        "Wait for a clear offer before anchoring compensation.",
-        "Ask for total compensation breakdown, work mode, title, level, review cycle, and start date.",
-        "Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.",
-        "Use competing priorities and role fit, not personal need, as the negotiation frame."
-      ]
-    },
-    {
-      "jobKey": "url:https://www.themuse.com/jobs/thecocacolacompany/senior-software-engineer-crm",
-      "title": "Senior Software Engineer - CRM",
-      "company": "The Coca-Cola Company",
-      "score": "95/A",
-      "rating": 4.8,
-      "blockG": {
-        "tier": "High Confidence",
-        "confidence": "medium"
-      },
-      "priority": "P0",
-      "atsInjection": {
-        "jdKeywords": [
-          "API",
-          "engineer",
-          "product",
-          "data"
-        ],
-        "hardKeywords": [
-          "API",
-          "engineer",
-          "product",
-          "data"
-        ],
-        "softKeywords": [],
-        "missingKeywords": [
-          "crm",
-          "growth",
-          "sales"
-        ],
-        "archetype": "AI Platform / LLMOps",
-        "summaryRewriteHints": [
-          "在 Professional Summary 中自然帶入：API、engineer、product、data",
-          "使用職位語言：「AI Platform / LLMOps」方向的動詞和術語",
-          "【你已有但此 JD 未要求】可視情況選擇性提及：crm、growth、sales"
-        ],
-        "atsRules": [
-          "單欄排版，避免 sidebar 雙欄（ATS parser 容易亂序）",
-          "使用標準 header：Professional Summary, Work Experience, Skills, Education",
-          "不使用巢狀表格或文字框",
-          "確保 PDF 文字可被選取（不可光柵化輸出）",
-          "UTF-8 編碼，移除 em dash / smart quote / zero-width space",
-          "關鍵技能在 Skills section 明確列出，不要只藏在 bullet 裡"
-        ],
-        "guardrails": [
-          "NEVER add skills the candidate lacks",
-          "Only reformulate real experience with exact JD vocabulary",
-          "Example: if candidate has 'API development', it can become 'API'"
-        ],
-        "keywordCoveragePercent": 100
-      },
-      "applyChecklist": [
-        "Open the source URL and confirm the role is still active.",
-        "Generate or refresh the tailored ATS PDF from this job.",
-        "Mirror these JD keywords honestly in your CV: API, engineer, product, data",
-        "Do not overclaim missing areas: crm, growth, sales",
-        "Log status, recruiter/contact, and next follow-up date in the tracker."
-      ],
-      "outreachEmail": {
-        "subject": "Senior Software Engineer - CRM application - The Coca-Cola Company",
-        "body": "Hi The Coca-Cola Company team,\n\nI am Alex Chen, and I am interested in the Senior Software Engineer - CRM role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.\n\nThe role stood out because it maps closely to my experience with API, engineer, product, data.\n\nI would appreciate the chance to share how my experience can support the team. Thank you for your time.\n\nBest,\nAlex Chen"
-      },
-      "followUp": {
-        "timing": "3-5 business days after applying or the last recruiter interaction.",
-        "body": "Hi The Coca-Cola Company team,\n\nI wanted to follow up on my application for the Senior Software Engineer - CRM role. I remain interested and would be glad to provide any additional context about my background.\n\nThank you again for your time.\n\nBest,\nAlex Chen"
-      },
-      "interviewPrep": [
-        "Prepare a 60-second story for why The Coca-Cola Company and why Senior Software Engineer - CRM.",
-        "Prepare evidence for: API, engineer, product, data.",
-        "Prepare one STAR story about execution under ambiguity.",
-        "Prepare one STAR story about collaboration and tradeoff decisions.",
-        "Prepare questions about team priorities, success metrics, and hiring timeline."
-      ],
-      "negotiationPrep": [
-        "Wait for a clear offer before anchoring compensation.",
-        "Ask for total compensation breakdown, work mode, title, level, review cycle, and start date.",
-        "Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.",
-        "Use competing priorities and role fit, not personal need, as the negotiation frame."
-      ]
-    },
-    {
-      "jobKey": "url:https://www.themuse.com/jobs/thecocacolacompany/senior-software-engineer-51205e",
-      "title": "Senior Software Engineer",
-      "company": "The Coca-Cola Company",
-      "score": "95/A",
-      "rating": 4.8,
-      "blockG": {
-        "tier": "High Confidence",
-        "confidence": "medium"
-      },
-      "priority": "P0",
-      "atsInjection": {
-        "jdKeywords": [
-          "API",
-          "engineer",
-          "product",
-          "data"
-        ],
-        "hardKeywords": [
-          "API",
-          "engineer",
-          "product",
-          "data"
-        ],
-        "softKeywords": [],
-        "missingKeywords": [
-          "growth",
-          "sales"
-        ],
-        "archetype": "AI Platform / LLMOps",
-        "summaryRewriteHints": [
-          "在 Professional Summary 中自然帶入：API、engineer、product、data",
-          "使用職位語言：「AI Platform / LLMOps」方向的動詞和術語",
-          "【你已有但此 JD 未要求】可視情況選擇性提及：growth、sales"
-        ],
-        "atsRules": [
-          "單欄排版，避免 sidebar 雙欄（ATS parser 容易亂序）",
-          "使用標準 header：Professional Summary, Work Experience, Skills, Education",
-          "不使用巢狀表格或文字框",
-          "確保 PDF 文字可被選取（不可光柵化輸出）",
-          "UTF-8 編碼，移除 em dash / smart quote / zero-width space",
-          "關鍵技能在 Skills section 明確列出，不要只藏在 bullet 裡"
-        ],
-        "guardrails": [
-          "NEVER add skills the candidate lacks",
-          "Only reformulate real experience with exact JD vocabulary",
-          "Example: if candidate has 'API development', it can become 'API'"
-        ],
-        "keywordCoveragePercent": 100
-      },
-      "applyChecklist": [
-        "Open the source URL and confirm the role is still active.",
-        "Generate or refresh the tailored ATS PDF from this job.",
-        "Mirror these JD keywords honestly in your CV: API, engineer, product, data",
-        "Do not overclaim missing areas: growth, sales",
-        "Log status, recruiter/contact, and next follow-up date in the tracker."
-      ],
-      "outreachEmail": {
-        "subject": "Senior Software Engineer application - The Coca-Cola Company",
-        "body": "Hi The Coca-Cola Company team,\n\nI am Alex Chen, and I am interested in the Senior Software Engineer role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.\n\nThe role stood out because it maps closely to my experience with API, engineer, product, data.\n\nI would appreciate the chance to share how my experience can support the team. Thank you for your time.\n\nBest,\nAlex Chen"
-      },
-      "followUp": {
-        "timing": "3-5 business days after applying or the last recruiter interaction.",
-        "body": "Hi The Coca-Cola Company team,\n\nI wanted to follow up on my application for the Senior Software Engineer role. I remain interested and would be glad to provide any additional context about my background.\n\nThank you again for your time.\n\nBest,\nAlex Chen"
-      },
-      "interviewPrep": [
-        "Prepare a 60-second story for why The Coca-Cola Company and why Senior Software Engineer.",
         "Prepare evidence for: API, engineer, product, data.",
         "Prepare one STAR story about execution under ambiguity.",
         "Prepare one STAR story about collaboration and tradeoff decisions.",
