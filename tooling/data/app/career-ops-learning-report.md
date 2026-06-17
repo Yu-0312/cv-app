@@ -1,31 +1,31 @@
 # Career Ops Learning Report
 
-- Generated: 2026-06-16T00:33:28.442Z
-- Active jobs: 83313
-- Positive signals: 81486
+- Generated: 2026-06-17T00:20:26.365Z
+- Active jobs: 83327
+- Positive signals: 81492
 - Negative signals: 0
 - Source coverage: 421 sources / 10557 queries / markets tw, cn, jp, kr, sg, global, us, ca, uk, ie, de, nl, fr, es, it, se, dk, no, pl, pt, au, nz, in, br, mx, ch, fi, cz, za, id, my, ph, vn, th, il, hk, ae
 
 ## Preferred Skills
 
-- data: 36059.1
-- api: 35480.4
-- API: 35444.4
-- product: 27450.9
-- operations: 23535.5
-- growth: 23050.7
-- analytics: 19063.3
-- Analytics: 18130.9
-- remote: 17717.8
-- sales: 17189.6
-- engineer: 16527.8
-- python: 12136.5
-- go: 9692.8
-- sql: 8454.2
-- excel: 7558.4
-- aws: 6696.6
-- azure: 5308.6
-- machine learning: 4977.1
+- data: 36305.3
+- api: 35490.2
+- API: 35460.2
+- product: 27673
+- operations: 23611.6
+- growth: 23042.3
+- analytics: 19112.7
+- Analytics: 18156.4
+- remote: 17653.1
+- sales: 17196.1
+- engineer: 16557.2
+- python: 11968.1
+- go: 9712.2
+- sql: 8401.7
+- excel: 7452.9
+- aws: 6727
+- azure: 5332.4
+- machine learning: 5005.4
 
 ## Avoid Signals
 
@@ -37,14 +37,14 @@
 - 1111 Taiwan Job Sitemap: 63000
 - Mynavi Tenshoku Japan Sitemap: 46500
 - JAC Recruitment Japan Detail Sitemap: 15500
-- SpaceX: 3579.2
-- Databricks Greenhouse: 2502.5
-- GE Vernova: 2340.7
-- Bank of America: 1982.2
-- Walmart: 1851.9
-- Stripe Greenhouse: 1847.7
-- Uber: 1713.9
-- Bechtel: 1491
+- SpaceX: 3513.5
+- Databricks Greenhouse: 2490.5
+- GE Vernova: 2450
+- Walmart: 2028.7
+- Bank of America: 1950.3
+- Stripe Greenhouse: 1877
+- Uber: 1660.3
+- Bechtel: 1499.2
 
 ## Next Strategy
 

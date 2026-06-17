@@ -1,6 +1,6 @@
 window.CV_CAREER_OPS_PARALLEL = {
   "source": "career-ops-parallel",
-  "generatedAt": "2026-06-16T00:33:21.611Z",
+  "generatedAt": "2026-06-17T00:20:18.682Z",
   "concurrency": 4,
   "jobCount": 50,
   "results": [
@@ -11,8 +11,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 95,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-16T00:33:21.558Z",
-      "completedAt": "2026-06-16T00:33:21.560Z",
+      "startedAt": "2026-06-17T00:20:18.631Z",
+      "completedAt": "2026-06-17T00:20:18.633Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -225,8 +225,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 95,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-16T00:33:21.558Z",
-      "completedAt": "2026-06-16T00:33:21.560Z",
+      "startedAt": "2026-06-17T00:20:18.630Z",
+      "completedAt": "2026-06-17T00:20:18.632Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -434,14 +434,234 @@ window.CV_CAREER_OPS_PARALLEL = {
       }
     },
     {
+      "jobKey": "url:https://www.mycareersfuture.gov.sg/job/0da14018a05634ffde57785dcd4e7783",
+      "company": "TIKTOK PTE. LTD.",
+      "title": "Frontend Software Engineer (transaction), TikTok Live - Singapore",
+      "score": 95,
+      "grade": "A",
+      "priority": "P0",
+      "startedAt": "2026-06-17T00:20:18.631Z",
+      "completedAt": "2026-06-17T00:20:18.633Z",
+      "workers": {
+        "evaluation": {
+          "recommendation": "值得投遞",
+          "keywords": [
+            "JavaScript",
+            "CSS",
+            "remote",
+            "engineer",
+            "product",
+            "data"
+          ],
+          "nextActions": [
+            "開啟職缺確認仍可投遞",
+            "產生客製 ATS PDF",
+            "用同職類高分職缺校準履歷關鍵字"
+          ]
+        },
+        "research": {
+          "signals": [
+            "AI / data / platform signal",
+            "remote or hybrid signal"
+          ],
+          "evidenceCount": 1,
+          "questions": [
+            "What business unit owns the Frontend Software Engineer (transaction), TikTok Live - Singapore role?",
+            "What measurable outcomes would this team expect in the first 90 days?",
+            "What recent company/product signals change the risk or upside?",
+            "Which CV proof points should be highlighted for this company?"
+          ]
+        },
+        "application": {
+          "checklist": [
+            "Confirm posting is active.",
+            "Generate tailored ATS PDF.",
+            "Prepare outreach and follow-up.",
+            "Log status and next follow-up."
+          ]
+        },
+        "compensation": {
+          "jobKey": "url:https://www.mycareersfuture.gov.sg/job/0da14018a05634ffde57785dcd4e7783",
+          "company": "TIKTOK PTE. LTD.",
+          "title": "Frontend Software Engineer (transaction), TikTok Live - Singapore",
+          "market": "jp",
+          "inferredLevel": "mid",
+          "candidateLevel": "mid",
+          "leverage": "high",
+          "evidence": {
+            "salaryMentions": [],
+            "benefitSignals": [
+              "work-mode flexibility",
+              "learning budget"
+            ]
+          },
+          "marketBenchmark": {
+            "currency": "JPY",
+            "unit": "annual",
+            "range": "JPY 6,000,000 – 10,000,000",
+            "midpoint": "JPY 8,000,000",
+            "floor": 6000000,
+            "ceiling": 10000000,
+            "source": "TokyoDev / Japan-Dev 2024-2025",
+            "note": "Tokyo-based international tech companies skew higher (+30-50%). Japanese-headquartered companies average ¥8.5M for mid-level."
+          },
+          "structure": {
+            "baseSalary": [
+              "Market range for mid (JP): JPY 6,000,000 – 10,000,000 annual. Source: TokyoDev / Japan-Dev 2024-2025."
+            ],
+            "bonus": "Ask whether there is annual bonus, performance bonus, or sign-on bonus.",
+            "equity": "Ask whether equity, RSU, options, or profit-sharing exists.",
+            "benefits": [
+              "Health / insurance coverage",
+              "Paid leave and holidays",
+              "Learning budget or certification support",
+              "Remote/hybrid setup, commute, or relocation support",
+              "Review cycle and promotion timeline"
+            ],
+            "nonCashLevers": [
+              "Title / level calibration",
+              "Start date flexibility",
+              "Remote days",
+              "Equipment budget",
+              "First review at 3 or 6 months",
+              "Conference / learning budget"
+            ]
+          },
+          "negotiationScript": {
+            "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Frontend Software Engineer (transaction), TikTok Live - Singapore package, including base, bonus, equity, and review cycle?",
+            "valueAnchor": "Based on the scope of Frontend Software Engineer (transaction), TikTok Live - Singapore and my fit around JavaScript, CSS, remote, engineer, I would like to calibrate toward the stronger end of the range if the team sees the level match. My research indicates the JP midpoint for this level is around JPY 8,000,000 (annual).",
+            "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
+            "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
+            "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
+          },
+          "redLines": [
+            "Do not disclose current compensation unless legally appropriate and strategically useful.",
+            "Do not accept verbal-only compensation details; ask for written package components.",
+            "Do not negotiate before confirming level, scope, work mode, and review cycle.",
+            "Do not trade base salary away without valuing the replacement benefit."
+          ],
+          "nextActions": [
+            "Collect market compensation evidence before naming a number.",
+            "Ask recruiter for approved range and level.",
+            "Map the job scope to proof points in the tailored CV.",
+            "Prepare one counter package with base, bonus/equity, and non-cash levers."
+          ],
+          "targetFrame": "Market benchmark for mid in JP is JPY 6,000,000 – 10,000,000 (annual). Do not name a number first — ask for the approved range, then anchor near the midpoint or above."
+        },
+        "stories": [
+          {
+            "id": "story-1",
+            "theme": "frontend product execution",
+            "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
+            "applicableQuestions": [
+              "Tell me about a project you are proud of.",
+              "Tell me about a time you handled ambiguity.",
+              "How have you applied frontend product execution?"
+            ],
+            "star": {
+              "situation": "You were tasked with a frontend product challenge. Proof point: \"Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.\" — set the scene: what product, what team size, and what was broken or missing?",
+              "task": "What was the specific outcome you were accountable for? Include the success metric (e.g. performance score, user adoption rate, release date).",
+              "action": "Walk through the key technical decisions: component architecture, state management tradeoffs, accessibility choices, or API contract design.",
+              "result": "Quantify the impact: load time delta, user adoption %, code reduction %, or stakeholder feedback. If no number, describe the quality or velocity improvement.",
+              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
+            },
+            "keywords": [
+              "frontend product execution",
+              "JavaScript",
+              "TypeScript",
+              "React",
+              "Next.js",
+              "CSS",
+              "Tailwind",
+              "Accessibility"
+            ],
+            "relevance": 2
+          },
+          {
+            "id": "story-2",
+            "theme": "systems and API collaboration",
+            "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
+            "applicableQuestions": [
+              "Tell me about a project you are proud of.",
+              "Tell me about a time you handled ambiguity.",
+              "How have you applied systems and API collaboration?"
+            ],
+            "star": {
+              "situation": "You collaborated across system boundaries. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — name the systems, teams, and integration surface area.",
+              "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
+              "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
+              "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
+              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
+            },
+            "keywords": [
+              "systems and API collaboration",
+              "JavaScript",
+              "TypeScript",
+              "React",
+              "Next.js",
+              "CSS",
+              "Tailwind",
+              "Accessibility"
+            ],
+            "relevance": 2
+          },
+          {
+            "id": "story-3",
+            "theme": "accessibility and quality",
+            "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
+            "applicableQuestions": [
+              "Tell me about a project you are proud of.",
+              "Tell me about a time you handled ambiguity.",
+              "How have you applied accessibility and quality?"
+            ],
+            "star": {
+              "situation": "You led or contributed to an accessibility or quality initiative. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — what was the starting state and who was affected?",
+              "task": "What standard or target were you working toward (WCAG level, test coverage %, zero-defect milestone)?",
+              "action": "Describe the audit process, tooling (axe, Lighthouse, screen reader testing), and how you prioritized fixes across components.",
+              "result": "State the outcome: WCAG compliance level achieved, user complaints reduced, or CI gate added to prevent regressions.",
+              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
+            },
+            "keywords": [
+              "accessibility and quality",
+              "JavaScript",
+              "TypeScript",
+              "React",
+              "Next.js",
+              "CSS",
+              "Tailwind",
+              "Accessibility"
+            ],
+            "relevance": 2
+          }
+        ],
+        "applyAgent": {
+          "mode": "human-in-the-loop",
+          "url": "https://www.mycareersfuture.gov.sg/job/0da14018a05634ffde57785dcd4e7783",
+          "steps": [
+            "Open the application URL in a controlled browser session.",
+            "Extract visible form fields and required uploads.",
+            "Map CV profile fields to the form without submitting.",
+            "Prepare tailored PDF and outreach text.",
+            "Stop before final submit and ask the user to review."
+          ],
+          "guardrails": [
+            "Never submit without explicit user confirmation.",
+            "Never fabricate work authorization, salary history, degree, or experience.",
+            "Never store API keys or credentials in job metadata.",
+            "Record only application status and user-approved notes."
+          ]
+        }
+      }
+    },
+    {
       "jobKey": "url:https://www.mycareersfuture.gov.sg/job/216697e0837e4903a768dd7ce7397307",
       "company": "MICRON SEMICONDUCTOR ASIA OPERATIONS PTE. LTD.",
       "title": "Senior/Staff Product Engineer (GenAI, AI/ML & Advanced Data Analytics)",
       "score": 95,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-16T00:33:21.557Z",
-      "completedAt": "2026-06-16T00:33:21.559Z",
+      "startedAt": "2026-06-17T00:20:18.631Z",
+      "completedAt": "2026-06-17T00:20:18.633Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -648,225 +868,14 @@ window.CV_CAREER_OPS_PARALLEL = {
       }
     },
     {
-      "jobKey": "url:https://www.themuse.com/jobs/usaa/software-engineer-midlevel-java-full-stack-bbaa1e",
-      "company": "USAA",
-      "title": "Software Engineer Mid-level (Java Full Stack)",
-      "score": 95,
-      "grade": "A",
-      "priority": "P0",
-      "startedAt": "2026-06-16T00:33:21.558Z",
-      "completedAt": "2026-06-16T00:33:21.560Z",
-      "workers": {
-        "evaluation": {
-          "recommendation": "值得投遞",
-          "keywords": [
-            "JavaScript",
-            "CSS",
-            "API",
-            "remote",
-            "engineer",
-            "data"
-          ],
-          "nextActions": [
-            "開啟職缺確認仍可投遞",
-            "產生客製 ATS PDF",
-            "用同職類高分職缺校準履歷關鍵字"
-          ]
-        },
-        "research": {
-          "signals": [
-            "AI / data / platform signal",
-            "remote or hybrid signal"
-          ],
-          "evidenceCount": 4,
-          "questions": [
-            "What business unit owns the Software Engineer Mid-level (Java Full Stack) role?",
-            "What measurable outcomes would this team expect in the first 90 days?",
-            "What recent company/product signals change the risk or upside?",
-            "Which CV proof points should be highlighted for this company?"
-          ]
-        },
-        "application": {
-          "checklist": [
-            "Confirm posting is active.",
-            "Generate tailored ATS PDF.",
-            "Prepare outreach and follow-up.",
-            "Log status and next follow-up."
-          ]
-        },
-        "compensation": {
-          "jobKey": "url:https://www.themuse.com/jobs/usaa/software-engineer-midlevel-java-full-stack-bbaa1e",
-          "company": "USAA",
-          "title": "Software Engineer Mid-level (Java Full Stack)",
-          "market": "us",
-          "inferredLevel": "junior",
-          "candidateLevel": "mid",
-          "leverage": "high",
-          "evidence": {
-            "salaryMentions": [],
-            "benefitSignals": [
-              "work-mode flexibility",
-              "signing / relocation"
-            ]
-          },
-          "marketBenchmark": null,
-          "structure": {
-            "baseSalary": [
-              "Need verified market data or recruiter range before setting a numeric anchor."
-            ],
-            "bonus": "Ask whether there is annual bonus, performance bonus, or sign-on bonus.",
-            "equity": "Ask whether equity, RSU, options, or profit-sharing exists.",
-            "benefits": [
-              "Health / insurance coverage",
-              "Paid leave and holidays",
-              "Learning budget or certification support",
-              "Remote/hybrid setup, commute, or relocation support",
-              "Review cycle and promotion timeline"
-            ],
-            "nonCashLevers": [
-              "Title / level calibration",
-              "Start date flexibility",
-              "Remote days",
-              "Equipment budget",
-              "First review at 3 or 6 months",
-              "Conference / learning budget"
-            ]
-          },
-          "negotiationScript": {
-            "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Software Engineer Mid-level (Java Full Stack) package, including base, bonus, equity, and review cycle?",
-            "valueAnchor": "Based on the scope of Software Engineer Mid-level (Java Full Stack) and my fit around JavaScript, CSS, API, remote, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
-            "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
-            "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
-            "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
-          },
-          "redLines": [
-            "Do not disclose current compensation unless legally appropriate and strategically useful.",
-            "Do not accept verbal-only compensation details; ask for written package components.",
-            "Do not negotiate before confirming level, scope, work mode, and review cycle.",
-            "Do not trade base salary away without valuing the replacement benefit."
-          ],
-          "nextActions": [
-            "Collect market compensation evidence before naming a number.",
-            "Ask recruiter for approved range and level.",
-            "Map the job scope to proof points in the tailored CV.",
-            "Prepare one counter package with base, bonus/equity, and non-cash levers."
-          ],
-          "targetFrame": "Do not name a number first. Ask for the approved range, level, and total compensation structure before anchoring."
-        },
-        "stories": [
-          {
-            "id": "story-1",
-            "theme": "frontend product execution",
-            "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
-            "applicableQuestions": [
-              "Tell me about a project you are proud of.",
-              "Tell me about a time you handled ambiguity.",
-              "How have you applied frontend product execution?"
-            ],
-            "star": {
-              "situation": "You were tasked with a frontend product challenge. Proof point: \"Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.\" — set the scene: what product, what team size, and what was broken or missing?",
-              "task": "What was the specific outcome you were accountable for? Include the success metric (e.g. performance score, user adoption rate, release date).",
-              "action": "Walk through the key technical decisions: component architecture, state management tradeoffs, accessibility choices, or API contract design.",
-              "result": "Quantify the impact: load time delta, user adoption %, code reduction %, or stakeholder feedback. If no number, describe the quality or velocity improvement.",
-              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
-            },
-            "keywords": [
-              "frontend product execution",
-              "JavaScript",
-              "TypeScript",
-              "React",
-              "Next.js",
-              "CSS",
-              "Tailwind",
-              "Accessibility"
-            ],
-            "relevance": 2
-          },
-          {
-            "id": "story-2",
-            "theme": "systems and API collaboration",
-            "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
-            "applicableQuestions": [
-              "Tell me about a project you are proud of.",
-              "Tell me about a time you handled ambiguity.",
-              "How have you applied systems and API collaboration?"
-            ],
-            "star": {
-              "situation": "You collaborated across system boundaries. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — name the systems, teams, and integration surface area.",
-              "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
-              "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
-              "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
-              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
-            },
-            "keywords": [
-              "systems and API collaboration",
-              "JavaScript",
-              "TypeScript",
-              "React",
-              "Next.js",
-              "CSS",
-              "Tailwind",
-              "Accessibility"
-            ],
-            "relevance": 2
-          },
-          {
-            "id": "story-3",
-            "theme": "accessibility and quality",
-            "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
-            "applicableQuestions": [
-              "Tell me about a project you are proud of.",
-              "Tell me about a time you handled ambiguity.",
-              "How have you applied accessibility and quality?"
-            ],
-            "star": {
-              "situation": "You led or contributed to an accessibility or quality initiative. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — what was the starting state and who was affected?",
-              "task": "What standard or target were you working toward (WCAG level, test coverage %, zero-defect milestone)?",
-              "action": "Describe the audit process, tooling (axe, Lighthouse, screen reader testing), and how you prioritized fixes across components.",
-              "result": "State the outcome: WCAG compliance level achieved, user complaints reduced, or CI gate added to prevent regressions.",
-              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
-            },
-            "keywords": [
-              "accessibility and quality",
-              "JavaScript",
-              "TypeScript",
-              "React",
-              "Next.js",
-              "CSS",
-              "Tailwind",
-              "Accessibility"
-            ],
-            "relevance": 2
-          }
-        ],
-        "applyAgent": {
-          "mode": "human-in-the-loop",
-          "url": "https://www.themuse.com/jobs/usaa/software-engineer-midlevel-java-full-stack-bbaa1e",
-          "steps": [
-            "Open the application URL in a controlled browser session.",
-            "Extract visible form fields and required uploads.",
-            "Map CV profile fields to the form without submitting.",
-            "Prepare tailored PDF and outreach text.",
-            "Stop before final submit and ask the user to review."
-          ],
-          "guardrails": [
-            "Never submit without explicit user confirmation.",
-            "Never fabricate work authorization, salary history, degree, or experience.",
-            "Never store API keys or credentials in job metadata.",
-            "Record only application status and user-approved notes."
-          ]
-        }
-      }
-    },
-    {
       "jobKey": "url:https://www.themuse.com/jobs/uber/sr-software-engineer-frontend-web-8fc2b7",
       "company": "Uber",
       "title": "Sr Software Engineer, Frontend (Web)",
       "score": 95,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-16T00:33:21.562Z",
-      "completedAt": "2026-06-16T00:33:21.564Z",
+      "startedAt": "2026-06-17T00:20:18.635Z",
+      "completedAt": "2026-06-17T00:20:18.637Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -1079,8 +1088,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 95,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-16T00:33:21.562Z",
-      "completedAt": "2026-06-16T00:33:21.564Z",
+      "startedAt": "2026-06-17T00:20:18.635Z",
+      "completedAt": "2026-06-17T00:20:18.637Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -1101,7 +1110,7 @@ window.CV_CAREER_OPS_PARALLEL = {
             "AI / data / platform signal",
             "remote or hybrid signal"
           ],
-          "evidenceCount": 4,
+          "evidenceCount": 3,
           "questions": [
             "What business unit owns the Senior Software Engineer II role?",
             "What measurable outcomes would this team expect in the first 90 days?",
@@ -1288,8 +1297,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 95,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-16T00:33:21.562Z",
-      "completedAt": "2026-06-16T00:33:21.564Z",
+      "startedAt": "2026-06-17T00:20:18.635Z",
+      "completedAt": "2026-06-17T00:20:18.636Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -1497,8 +1506,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 95,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-16T00:33:21.562Z",
-      "completedAt": "2026-06-16T00:33:21.564Z",
+      "startedAt": "2026-06-17T00:20:18.635Z",
+      "completedAt": "2026-06-17T00:20:18.637Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -1702,8 +1711,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 95,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-16T00:33:21.566Z",
-      "completedAt": "2026-06-16T00:33:21.568Z",
+      "startedAt": "2026-06-17T00:20:18.639Z",
+      "completedAt": "2026-06-17T00:20:18.640Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -1724,7 +1733,7 @@ window.CV_CAREER_OPS_PARALLEL = {
             "AI / data / platform signal",
             "remote or hybrid signal"
           ],
-          "evidenceCount": 4,
+          "evidenceCount": 3,
           "questions": [
             "What business unit owns the Senior Software Engineer II role?",
             "What measurable outcomes would this team expect in the first 90 days?",
@@ -1911,8 +1920,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 95,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-16T00:33:21.566Z",
-      "completedAt": "2026-06-16T00:33:21.568Z",
+      "startedAt": "2026-06-17T00:20:18.639Z",
+      "completedAt": "2026-06-17T00:20:18.640Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -1933,7 +1942,7 @@ window.CV_CAREER_OPS_PARALLEL = {
             "AI / data / platform signal",
             "remote or hybrid signal"
           ],
-          "evidenceCount": 4,
+          "evidenceCount": 3,
           "questions": [
             "What business unit owns the Senior Software Engineer II role?",
             "What measurable outcomes would this team expect in the first 90 days?",
@@ -2120,8 +2129,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 95,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-16T00:33:21.566Z",
-      "completedAt": "2026-06-16T00:33:21.568Z",
+      "startedAt": "2026-06-17T00:20:18.639Z",
+      "completedAt": "2026-06-17T00:20:18.641Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -2142,7 +2151,7 @@ window.CV_CAREER_OPS_PARALLEL = {
             "AI / data / platform signal",
             "remote or hybrid signal"
           ],
-          "evidenceCount": 4,
+          "evidenceCount": 3,
           "questions": [
             "What business unit owns the Senior Software Engineer II role?",
             "What measurable outcomes would this team expect in the first 90 days?",
@@ -2329,8 +2338,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 95,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-16T00:33:21.566Z",
-      "completedAt": "2026-06-16T00:33:21.568Z",
+      "startedAt": "2026-06-17T00:20:18.639Z",
+      "completedAt": "2026-06-17T00:20:18.641Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -2351,7 +2360,7 @@ window.CV_CAREER_OPS_PARALLEL = {
             "AI / data / platform signal",
             "remote or hybrid signal"
           ],
-          "evidenceCount": 4,
+          "evidenceCount": 3,
           "questions": [
             "What business unit owns the Senior Software Engineer II role?",
             "What measurable outcomes would this team expect in the first 90 days?",
@@ -2538,8 +2547,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 95,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-16T00:33:21.570Z",
-      "completedAt": "2026-06-16T00:33:21.572Z",
+      "startedAt": "2026-06-17T00:20:18.642Z",
+      "completedAt": "2026-06-17T00:20:18.644Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -2560,7 +2569,7 @@ window.CV_CAREER_OPS_PARALLEL = {
             "AI / data / platform signal",
             "remote or hybrid signal"
           ],
-          "evidenceCount": 4,
+          "evidenceCount": 3,
           "questions": [
             "What business unit owns the Senior Software Engineer II role?",
             "What measurable outcomes would this team expect in the first 90 days?",
@@ -2747,8 +2756,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 95,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-16T00:33:21.570Z",
-      "completedAt": "2026-06-16T00:33:21.572Z",
+      "startedAt": "2026-06-17T00:20:18.642Z",
+      "completedAt": "2026-06-17T00:20:18.644Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -2769,7 +2778,7 @@ window.CV_CAREER_OPS_PARALLEL = {
             "AI / data / platform signal",
             "remote or hybrid signal"
           ],
-          "evidenceCount": 4,
+          "evidenceCount": 3,
           "questions": [
             "What business unit owns the Senior Software Engineer II role?",
             "What measurable outcomes would this team expect in the first 90 days?",
@@ -2956,8 +2965,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 95,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-16T00:33:21.570Z",
-      "completedAt": "2026-06-16T00:33:21.572Z",
+      "startedAt": "2026-06-17T00:20:18.642Z",
+      "completedAt": "2026-06-17T00:20:18.644Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -2978,7 +2987,7 @@ window.CV_CAREER_OPS_PARALLEL = {
             "AI / data / platform signal",
             "remote or hybrid signal"
           ],
-          "evidenceCount": 4,
+          "evidenceCount": 3,
           "questions": [
             "What business unit owns the Senior Software Engineer II role?",
             "What measurable outcomes would this team expect in the first 90 days?",
@@ -3165,8 +3174,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 95,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-16T00:33:21.570Z",
-      "completedAt": "2026-06-16T00:33:21.572Z",
+      "startedAt": "2026-06-17T00:20:18.643Z",
+      "completedAt": "2026-06-17T00:20:18.644Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -3187,7 +3196,7 @@ window.CV_CAREER_OPS_PARALLEL = {
             "AI / data / platform signal",
             "remote or hybrid signal"
           ],
-          "evidenceCount": 4,
+          "evidenceCount": 3,
           "questions": [
             "What business unit owns the Senior Software Engineer II role?",
             "What measurable outcomes would this team expect in the first 90 days?",
@@ -3374,8 +3383,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 95,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-16T00:33:21.574Z",
-      "completedAt": "2026-06-16T00:33:21.576Z",
+      "startedAt": "2026-06-17T00:20:18.651Z",
+      "completedAt": "2026-06-17T00:20:18.653Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -3396,7 +3405,7 @@ window.CV_CAREER_OPS_PARALLEL = {
             "AI / data / platform signal",
             "remote or hybrid signal"
           ],
-          "evidenceCount": 4,
+          "evidenceCount": 3,
           "questions": [
             "What business unit owns the Senior Software Engineer II role?",
             "What measurable outcomes would this team expect in the first 90 days?",
@@ -3583,8 +3592,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 95,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-16T00:33:21.574Z",
-      "completedAt": "2026-06-16T00:33:21.576Z",
+      "startedAt": "2026-06-17T00:20:18.651Z",
+      "completedAt": "2026-06-17T00:20:18.653Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -3605,7 +3614,7 @@ window.CV_CAREER_OPS_PARALLEL = {
             "AI / data / platform signal",
             "remote or hybrid signal"
           ],
-          "evidenceCount": 4,
+          "evidenceCount": 3,
           "questions": [
             "What business unit owns the Senior Software Engineer II role?",
             "What measurable outcomes would this team expect in the first 90 days?",
@@ -3786,225 +3795,14 @@ window.CV_CAREER_OPS_PARALLEL = {
       }
     },
     {
-      "jobKey": "url:https://www.themuse.com/jobs/usaa/software-engineer-midlevel-java-full-stack-4f2160",
-      "company": "USAA",
-      "title": "Software Engineer Mid-level (Java Full Stack)",
-      "score": 95,
-      "grade": "A",
-      "priority": "P0",
-      "startedAt": "2026-06-16T00:33:21.574Z",
-      "completedAt": "2026-06-16T00:33:21.576Z",
-      "workers": {
-        "evaluation": {
-          "recommendation": "值得投遞",
-          "keywords": [
-            "JavaScript",
-            "CSS",
-            "API",
-            "remote",
-            "engineer",
-            "data"
-          ],
-          "nextActions": [
-            "開啟職缺確認仍可投遞",
-            "產生客製 ATS PDF",
-            "用同職類高分職缺校準履歷關鍵字"
-          ]
-        },
-        "research": {
-          "signals": [
-            "AI / data / platform signal",
-            "remote or hybrid signal"
-          ],
-          "evidenceCount": 4,
-          "questions": [
-            "What business unit owns the Software Engineer Mid-level (Java Full Stack) role?",
-            "What measurable outcomes would this team expect in the first 90 days?",
-            "What recent company/product signals change the risk or upside?",
-            "Which CV proof points should be highlighted for this company?"
-          ]
-        },
-        "application": {
-          "checklist": [
-            "Confirm posting is active.",
-            "Generate tailored ATS PDF.",
-            "Prepare outreach and follow-up.",
-            "Log status and next follow-up."
-          ]
-        },
-        "compensation": {
-          "jobKey": "url:https://www.themuse.com/jobs/usaa/software-engineer-midlevel-java-full-stack-bbaa1e",
-          "company": "USAA",
-          "title": "Software Engineer Mid-level (Java Full Stack)",
-          "market": "us",
-          "inferredLevel": "junior",
-          "candidateLevel": "mid",
-          "leverage": "high",
-          "evidence": {
-            "salaryMentions": [],
-            "benefitSignals": [
-              "work-mode flexibility",
-              "signing / relocation"
-            ]
-          },
-          "marketBenchmark": null,
-          "structure": {
-            "baseSalary": [
-              "Need verified market data or recruiter range before setting a numeric anchor."
-            ],
-            "bonus": "Ask whether there is annual bonus, performance bonus, or sign-on bonus.",
-            "equity": "Ask whether equity, RSU, options, or profit-sharing exists.",
-            "benefits": [
-              "Health / insurance coverage",
-              "Paid leave and holidays",
-              "Learning budget or certification support",
-              "Remote/hybrid setup, commute, or relocation support",
-              "Review cycle and promotion timeline"
-            ],
-            "nonCashLevers": [
-              "Title / level calibration",
-              "Start date flexibility",
-              "Remote days",
-              "Equipment budget",
-              "First review at 3 or 6 months",
-              "Conference / learning budget"
-            ]
-          },
-          "negotiationScript": {
-            "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Software Engineer Mid-level (Java Full Stack) package, including base, bonus, equity, and review cycle?",
-            "valueAnchor": "Based on the scope of Software Engineer Mid-level (Java Full Stack) and my fit around JavaScript, CSS, API, remote, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
-            "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
-            "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
-            "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
-          },
-          "redLines": [
-            "Do not disclose current compensation unless legally appropriate and strategically useful.",
-            "Do not accept verbal-only compensation details; ask for written package components.",
-            "Do not negotiate before confirming level, scope, work mode, and review cycle.",
-            "Do not trade base salary away without valuing the replacement benefit."
-          ],
-          "nextActions": [
-            "Collect market compensation evidence before naming a number.",
-            "Ask recruiter for approved range and level.",
-            "Map the job scope to proof points in the tailored CV.",
-            "Prepare one counter package with base, bonus/equity, and non-cash levers."
-          ],
-          "targetFrame": "Do not name a number first. Ask for the approved range, level, and total compensation structure before anchoring."
-        },
-        "stories": [
-          {
-            "id": "story-1",
-            "theme": "frontend product execution",
-            "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
-            "applicableQuestions": [
-              "Tell me about a project you are proud of.",
-              "Tell me about a time you handled ambiguity.",
-              "How have you applied frontend product execution?"
-            ],
-            "star": {
-              "situation": "You were tasked with a frontend product challenge. Proof point: \"Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.\" — set the scene: what product, what team size, and what was broken or missing?",
-              "task": "What was the specific outcome you were accountable for? Include the success metric (e.g. performance score, user adoption rate, release date).",
-              "action": "Walk through the key technical decisions: component architecture, state management tradeoffs, accessibility choices, or API contract design.",
-              "result": "Quantify the impact: load time delta, user adoption %, code reduction %, or stakeholder feedback. If no number, describe the quality or velocity improvement.",
-              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
-            },
-            "keywords": [
-              "frontend product execution",
-              "JavaScript",
-              "TypeScript",
-              "React",
-              "Next.js",
-              "CSS",
-              "Tailwind",
-              "Accessibility"
-            ],
-            "relevance": 2
-          },
-          {
-            "id": "story-2",
-            "theme": "systems and API collaboration",
-            "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
-            "applicableQuestions": [
-              "Tell me about a project you are proud of.",
-              "Tell me about a time you handled ambiguity.",
-              "How have you applied systems and API collaboration?"
-            ],
-            "star": {
-              "situation": "You collaborated across system boundaries. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — name the systems, teams, and integration surface area.",
-              "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
-              "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
-              "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
-              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
-            },
-            "keywords": [
-              "systems and API collaboration",
-              "JavaScript",
-              "TypeScript",
-              "React",
-              "Next.js",
-              "CSS",
-              "Tailwind",
-              "Accessibility"
-            ],
-            "relevance": 2
-          },
-          {
-            "id": "story-3",
-            "theme": "accessibility and quality",
-            "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
-            "applicableQuestions": [
-              "Tell me about a project you are proud of.",
-              "Tell me about a time you handled ambiguity.",
-              "How have you applied accessibility and quality?"
-            ],
-            "star": {
-              "situation": "You led or contributed to an accessibility or quality initiative. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — what was the starting state and who was affected?",
-              "task": "What standard or target were you working toward (WCAG level, test coverage %, zero-defect milestone)?",
-              "action": "Describe the audit process, tooling (axe, Lighthouse, screen reader testing), and how you prioritized fixes across components.",
-              "result": "State the outcome: WCAG compliance level achieved, user complaints reduced, or CI gate added to prevent regressions.",
-              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
-            },
-            "keywords": [
-              "accessibility and quality",
-              "JavaScript",
-              "TypeScript",
-              "React",
-              "Next.js",
-              "CSS",
-              "Tailwind",
-              "Accessibility"
-            ],
-            "relevance": 2
-          }
-        ],
-        "applyAgent": {
-          "mode": "human-in-the-loop",
-          "url": "https://www.themuse.com/jobs/usaa/software-engineer-midlevel-java-full-stack-4f2160",
-          "steps": [
-            "Open the application URL in a controlled browser session.",
-            "Extract visible form fields and required uploads.",
-            "Map CV profile fields to the form without submitting.",
-            "Prepare tailored PDF and outreach text.",
-            "Stop before final submit and ask the user to review."
-          ],
-          "guardrails": [
-            "Never submit without explicit user confirmation.",
-            "Never fabricate work authorization, salary history, degree, or experience.",
-            "Never store API keys or credentials in job metadata.",
-            "Record only application status and user-approved notes."
-          ]
-        }
-      }
-    },
-    {
       "jobKey": "url:https://www.themuse.com/jobs/thecocacolacompany/software-engineering-i",
       "company": "The Coca-Cola Company",
       "title": "Software Engineering I",
       "score": 95,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-16T00:33:21.574Z",
-      "completedAt": "2026-06-16T00:33:21.576Z",
+      "startedAt": "2026-06-17T00:20:18.651Z",
+      "completedAt": "2026-06-17T00:20:18.653Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -4025,7 +3823,7 @@ window.CV_CAREER_OPS_PARALLEL = {
             "AI / data / platform signal",
             "remote or hybrid signal"
           ],
-          "evidenceCount": 4,
+          "evidenceCount": 3,
           "questions": [
             "What business unit owns the Senior Software Engineer II role?",
             "What measurable outcomes would this team expect in the first 90 days?",
@@ -4212,8 +4010,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 95,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-16T00:33:21.582Z",
-      "completedAt": "2026-06-16T00:33:21.584Z",
+      "startedAt": "2026-06-17T00:20:18.651Z",
+      "completedAt": "2026-06-17T00:20:18.653Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -4234,7 +4032,7 @@ window.CV_CAREER_OPS_PARALLEL = {
             "AI / data / platform signal",
             "remote or hybrid signal"
           ],
-          "evidenceCount": 4,
+          "evidenceCount": 3,
           "questions": [
             "What business unit owns the Senior Software Engineer II role?",
             "What measurable outcomes would this team expect in the first 90 days?",
@@ -4421,8 +4219,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 95,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-16T00:33:21.582Z",
-      "completedAt": "2026-06-16T00:33:21.584Z",
+      "startedAt": "2026-06-17T00:20:18.654Z",
+      "completedAt": "2026-06-17T00:20:18.656Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -4443,7 +4241,7 @@ window.CV_CAREER_OPS_PARALLEL = {
             "AI / data / platform signal",
             "remote or hybrid signal"
           ],
-          "evidenceCount": 4,
+          "evidenceCount": 3,
           "questions": [
             "What business unit owns the Senior Software Engineer II role?",
             "What measurable outcomes would this team expect in the first 90 days?",
@@ -4630,8 +4428,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 95,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-16T00:33:21.582Z",
-      "completedAt": "2026-06-16T00:33:21.584Z",
+      "startedAt": "2026-06-17T00:20:18.654Z",
+      "completedAt": "2026-06-17T00:20:18.656Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -4650,17 +4448,9 @@ window.CV_CAREER_OPS_PARALLEL = {
           ]
         },
         "research": {
-          "signals": [
-            "AI / data / platform signal",
-            "remote or hybrid signal"
-          ],
-          "evidenceCount": 4,
-          "questions": [
-            "What business unit owns the Software Engineer Mid-level (Java Full Stack) role?",
-            "What measurable outcomes would this team expect in the first 90 days?",
-            "What recent company/product signals change the risk or upside?",
-            "Which CV proof points should be highlighted for this company?"
-          ]
+          "signals": [],
+          "evidenceCount": 0,
+          "questions": []
         },
         "application": {
           "checklist": [
@@ -4670,65 +4460,7 @@ window.CV_CAREER_OPS_PARALLEL = {
             "Log status and next follow-up."
           ]
         },
-        "compensation": {
-          "jobKey": "url:https://www.themuse.com/jobs/usaa/software-engineer-midlevel-java-full-stack-bbaa1e",
-          "company": "USAA",
-          "title": "Software Engineer Mid-level (Java Full Stack)",
-          "market": "us",
-          "inferredLevel": "junior",
-          "candidateLevel": "mid",
-          "leverage": "high",
-          "evidence": {
-            "salaryMentions": [],
-            "benefitSignals": [
-              "work-mode flexibility",
-              "signing / relocation"
-            ]
-          },
-          "marketBenchmark": null,
-          "structure": {
-            "baseSalary": [
-              "Need verified market data or recruiter range before setting a numeric anchor."
-            ],
-            "bonus": "Ask whether there is annual bonus, performance bonus, or sign-on bonus.",
-            "equity": "Ask whether equity, RSU, options, or profit-sharing exists.",
-            "benefits": [
-              "Health / insurance coverage",
-              "Paid leave and holidays",
-              "Learning budget or certification support",
-              "Remote/hybrid setup, commute, or relocation support",
-              "Review cycle and promotion timeline"
-            ],
-            "nonCashLevers": [
-              "Title / level calibration",
-              "Start date flexibility",
-              "Remote days",
-              "Equipment budget",
-              "First review at 3 or 6 months",
-              "Conference / learning budget"
-            ]
-          },
-          "negotiationScript": {
-            "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Software Engineer Mid-level (Java Full Stack) package, including base, bonus, equity, and review cycle?",
-            "valueAnchor": "Based on the scope of Software Engineer Mid-level (Java Full Stack) and my fit around JavaScript, CSS, API, remote, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
-            "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
-            "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
-            "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
-          },
-          "redLines": [
-            "Do not disclose current compensation unless legally appropriate and strategically useful.",
-            "Do not accept verbal-only compensation details; ask for written package components.",
-            "Do not negotiate before confirming level, scope, work mode, and review cycle.",
-            "Do not trade base salary away without valuing the replacement benefit."
-          ],
-          "nextActions": [
-            "Collect market compensation evidence before naming a number.",
-            "Ask recruiter for approved range and level.",
-            "Map the job scope to proof points in the tailored CV.",
-            "Prepare one counter package with base, bonus/equity, and non-cash levers."
-          ],
-          "targetFrame": "Do not name a number first. Ask for the approved range, level, and total compensation structure before anchoring."
-        },
+        "compensation": null,
         "stories": [
           {
             "id": "story-1",
@@ -4841,8 +4573,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 95,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-16T00:33:21.582Z",
-      "completedAt": "2026-06-16T00:33:21.584Z",
+      "startedAt": "2026-06-17T00:20:18.654Z",
+      "completedAt": "2026-06-17T00:20:18.656Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -4863,7 +4595,7 @@ window.CV_CAREER_OPS_PARALLEL = {
             "AI / data / platform signal",
             "remote or hybrid signal"
           ],
-          "evidenceCount": 4,
+          "evidenceCount": 3,
           "questions": [
             "What business unit owns the Senior Software Engineer II role?",
             "What measurable outcomes would this team expect in the first 90 days?",
@@ -5050,8 +4782,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 95,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-16T00:33:21.586Z",
-      "completedAt": "2026-06-16T00:33:21.587Z",
+      "startedAt": "2026-06-17T00:20:18.654Z",
+      "completedAt": "2026-06-17T00:20:18.656Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -5070,17 +4802,9 @@ window.CV_CAREER_OPS_PARALLEL = {
           ]
         },
         "research": {
-          "signals": [
-            "AI / data / platform signal",
-            "remote or hybrid signal"
-          ],
-          "evidenceCount": 4,
-          "questions": [
-            "What business unit owns the Software Engineer Mid-level (Java Full Stack) role?",
-            "What measurable outcomes would this team expect in the first 90 days?",
-            "What recent company/product signals change the risk or upside?",
-            "Which CV proof points should be highlighted for this company?"
-          ]
+          "signals": [],
+          "evidenceCount": 0,
+          "questions": []
         },
         "application": {
           "checklist": [
@@ -5090,65 +4814,7 @@ window.CV_CAREER_OPS_PARALLEL = {
             "Log status and next follow-up."
           ]
         },
-        "compensation": {
-          "jobKey": "url:https://www.themuse.com/jobs/usaa/software-engineer-midlevel-java-full-stack-bbaa1e",
-          "company": "USAA",
-          "title": "Software Engineer Mid-level (Java Full Stack)",
-          "market": "us",
-          "inferredLevel": "junior",
-          "candidateLevel": "mid",
-          "leverage": "high",
-          "evidence": {
-            "salaryMentions": [],
-            "benefitSignals": [
-              "work-mode flexibility",
-              "signing / relocation"
-            ]
-          },
-          "marketBenchmark": null,
-          "structure": {
-            "baseSalary": [
-              "Need verified market data or recruiter range before setting a numeric anchor."
-            ],
-            "bonus": "Ask whether there is annual bonus, performance bonus, or sign-on bonus.",
-            "equity": "Ask whether equity, RSU, options, or profit-sharing exists.",
-            "benefits": [
-              "Health / insurance coverage",
-              "Paid leave and holidays",
-              "Learning budget or certification support",
-              "Remote/hybrid setup, commute, or relocation support",
-              "Review cycle and promotion timeline"
-            ],
-            "nonCashLevers": [
-              "Title / level calibration",
-              "Start date flexibility",
-              "Remote days",
-              "Equipment budget",
-              "First review at 3 or 6 months",
-              "Conference / learning budget"
-            ]
-          },
-          "negotiationScript": {
-            "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Software Engineer Mid-level (Java Full Stack) package, including base, bonus, equity, and review cycle?",
-            "valueAnchor": "Based on the scope of Software Engineer Mid-level (Java Full Stack) and my fit around JavaScript, CSS, API, remote, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
-            "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
-            "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
-            "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
-          },
-          "redLines": [
-            "Do not disclose current compensation unless legally appropriate and strategically useful.",
-            "Do not accept verbal-only compensation details; ask for written package components.",
-            "Do not negotiate before confirming level, scope, work mode, and review cycle.",
-            "Do not trade base salary away without valuing the replacement benefit."
-          ],
-          "nextActions": [
-            "Collect market compensation evidence before naming a number.",
-            "Ask recruiter for approved range and level.",
-            "Map the job scope to proof points in the tailored CV.",
-            "Prepare one counter package with base, bonus/equity, and non-cash levers."
-          ],
-          "targetFrame": "Do not name a number first. Ask for the approved range, level, and total compensation structure before anchoring."
-        },
+        "compensation": null,
         "stories": [
           {
             "id": "story-1",
@@ -5261,8 +4927,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 95,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-16T00:33:21.586Z",
-      "completedAt": "2026-06-16T00:33:21.587Z",
+      "startedAt": "2026-06-17T00:20:18.657Z",
+      "completedAt": "2026-06-17T00:20:18.659Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -5283,7 +4949,7 @@ window.CV_CAREER_OPS_PARALLEL = {
             "AI / data / platform signal",
             "remote or hybrid signal"
           ],
-          "evidenceCount": 4,
+          "evidenceCount": 3,
           "questions": [
             "What business unit owns the Senior Software Engineer II role?",
             "What measurable outcomes would this team expect in the first 90 days?",
@@ -5470,8 +5136,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 95,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-16T00:33:21.586Z",
-      "completedAt": "2026-06-16T00:33:21.587Z",
+      "startedAt": "2026-06-17T00:20:18.657Z",
+      "completedAt": "2026-06-17T00:20:18.659Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -5676,8 +5342,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 95,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-16T00:33:21.586Z",
-      "completedAt": "2026-06-16T00:33:21.588Z",
+      "startedAt": "2026-06-17T00:20:18.657Z",
+      "completedAt": "2026-06-17T00:20:18.659Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -5698,7 +5364,7 @@ window.CV_CAREER_OPS_PARALLEL = {
             "AI / data / platform signal",
             "remote or hybrid signal"
           ],
-          "evidenceCount": 4,
+          "evidenceCount": 3,
           "questions": [
             "What business unit owns the Senior Software Engineer II role?",
             "What measurable outcomes would this team expect in the first 90 days?",
@@ -5885,8 +5551,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 95,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-16T00:33:21.589Z",
-      "completedAt": "2026-06-16T00:33:21.590Z",
+      "startedAt": "2026-06-17T00:20:18.657Z",
+      "completedAt": "2026-06-17T00:20:18.659Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -5907,7 +5573,7 @@ window.CV_CAREER_OPS_PARALLEL = {
             "AI / data / platform signal",
             "remote or hybrid signal"
           ],
-          "evidenceCount": 4,
+          "evidenceCount": 3,
           "questions": [
             "What business unit owns the Senior Software Engineer II role?",
             "What measurable outcomes would this team expect in the first 90 days?",
@@ -6094,8 +5760,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 95,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-16T00:33:21.589Z",
-      "completedAt": "2026-06-16T00:33:21.591Z",
+      "startedAt": "2026-06-17T00:20:18.660Z",
+      "completedAt": "2026-06-17T00:20:18.662Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -6116,7 +5782,7 @@ window.CV_CAREER_OPS_PARALLEL = {
             "AI / data / platform signal",
             "remote or hybrid signal"
           ],
-          "evidenceCount": 4,
+          "evidenceCount": 3,
           "questions": [
             "What business unit owns the Senior Software Engineer II role?",
             "What measurable outcomes would this team expect in the first 90 days?",
@@ -6297,14 +5963,159 @@ window.CV_CAREER_OPS_PARALLEL = {
       }
     },
     {
+      "jobKey": "url:https://www.themuse.com/jobs/kyndryl/full-stack-engineer-ai-solutions-00bc2f",
+      "company": "Kyndryl",
+      "title": "Full Stack Engineer (AI Solutions)",
+      "score": 95,
+      "grade": "A",
+      "priority": "P0",
+      "startedAt": "2026-06-17T00:20:18.660Z",
+      "completedAt": "2026-06-17T00:20:18.662Z",
+      "workers": {
+        "evaluation": {
+          "recommendation": "值得投遞",
+          "keywords": [
+            "React",
+            "API",
+            "remote",
+            "engineer",
+            "product",
+            "data"
+          ],
+          "nextActions": [
+            "開啟職缺確認仍可投遞",
+            "產生客製 ATS PDF",
+            "用同職類高分職缺校準履歷關鍵字"
+          ]
+        },
+        "research": {
+          "signals": [],
+          "evidenceCount": 0,
+          "questions": []
+        },
+        "application": {
+          "checklist": [
+            "Confirm posting is active.",
+            "Generate tailored ATS PDF.",
+            "Prepare outreach and follow-up.",
+            "Log status and next follow-up."
+          ]
+        },
+        "compensation": null,
+        "stories": [
+          {
+            "id": "story-1",
+            "theme": "frontend product execution",
+            "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
+            "applicableQuestions": [
+              "Tell me about a project you are proud of.",
+              "Tell me about a time you handled ambiguity.",
+              "How have you applied frontend product execution?"
+            ],
+            "star": {
+              "situation": "You were tasked with a frontend product challenge. Proof point: \"Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.\" — set the scene: what product, what team size, and what was broken or missing?",
+              "task": "What was the specific outcome you were accountable for? Include the success metric (e.g. performance score, user adoption rate, release date).",
+              "action": "Walk through the key technical decisions: component architecture, state management tradeoffs, accessibility choices, or API contract design.",
+              "result": "Quantify the impact: load time delta, user adoption %, code reduction %, or stakeholder feedback. If no number, describe the quality or velocity improvement.",
+              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
+            },
+            "keywords": [
+              "frontend product execution",
+              "JavaScript",
+              "TypeScript",
+              "React",
+              "Next.js",
+              "CSS",
+              "Tailwind",
+              "Accessibility"
+            ],
+            "relevance": 1
+          },
+          {
+            "id": "story-2",
+            "theme": "systems and API collaboration",
+            "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
+            "applicableQuestions": [
+              "Tell me about a project you are proud of.",
+              "Tell me about a time you handled ambiguity.",
+              "How have you applied systems and API collaboration?"
+            ],
+            "star": {
+              "situation": "You collaborated across system boundaries. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — name the systems, teams, and integration surface area.",
+              "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
+              "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
+              "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
+              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
+            },
+            "keywords": [
+              "systems and API collaboration",
+              "JavaScript",
+              "TypeScript",
+              "React",
+              "Next.js",
+              "CSS",
+              "Tailwind",
+              "Accessibility"
+            ],
+            "relevance": 1
+          },
+          {
+            "id": "story-3",
+            "theme": "accessibility and quality",
+            "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
+            "applicableQuestions": [
+              "Tell me about a project you are proud of.",
+              "Tell me about a time you handled ambiguity.",
+              "How have you applied accessibility and quality?"
+            ],
+            "star": {
+              "situation": "You led or contributed to an accessibility or quality initiative. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — what was the starting state and who was affected?",
+              "task": "What standard or target were you working toward (WCAG level, test coverage %, zero-defect milestone)?",
+              "action": "Describe the audit process, tooling (axe, Lighthouse, screen reader testing), and how you prioritized fixes across components.",
+              "result": "State the outcome: WCAG compliance level achieved, user complaints reduced, or CI gate added to prevent regressions.",
+              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
+            },
+            "keywords": [
+              "accessibility and quality",
+              "JavaScript",
+              "TypeScript",
+              "React",
+              "Next.js",
+              "CSS",
+              "Tailwind",
+              "Accessibility"
+            ],
+            "relevance": 1
+          }
+        ],
+        "applyAgent": {
+          "mode": "human-in-the-loop",
+          "url": "https://www.themuse.com/jobs/kyndryl/full-stack-engineer-ai-solutions-00bc2f",
+          "steps": [
+            "Open the application URL in a controlled browser session.",
+            "Extract visible form fields and required uploads.",
+            "Map CV profile fields to the form without submitting.",
+            "Prepare tailored PDF and outreach text.",
+            "Stop before final submit and ask the user to review."
+          ],
+          "guardrails": [
+            "Never submit without explicit user confirmation.",
+            "Never fabricate work authorization, salary history, degree, or experience.",
+            "Never store API keys or credentials in job metadata.",
+            "Record only application status and user-approved notes."
+          ]
+        }
+      }
+    },
+    {
       "jobKey": "url:https://www.themuse.com/jobs/allstate/software-engineer-lead-consultant-8a7774",
       "company": "Allstate",
       "title": "Software Engineer Lead Consultant",
       "score": 95,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-16T00:33:21.589Z",
-      "completedAt": "2026-06-16T00:33:21.590Z",
+      "startedAt": "2026-06-17T00:20:18.660Z",
+      "completedAt": "2026-06-17T00:20:18.662Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -6441,14 +6252,158 @@ window.CV_CAREER_OPS_PARALLEL = {
       }
     },
     {
+      "jobKey": "url:https://careers.airbnb.com/positions/8009372?gh_jid=8009372",
+      "company": "Airbnb Greenhouse",
+      "title": "Lead - Advanced Analytics, Gurgaon",
+      "score": 95,
+      "grade": "A",
+      "priority": "P0",
+      "startedAt": "2026-06-17T00:20:18.660Z",
+      "completedAt": "2026-06-17T00:20:18.662Z",
+      "workers": {
+        "evaluation": {
+          "recommendation": "值得投遞",
+          "keywords": [
+            "Analytics",
+            "product",
+            "data",
+            "visualization",
+            "dashboards"
+          ],
+          "nextActions": [
+            "開啟職缺確認仍可投遞",
+            "產生客製 ATS PDF",
+            "用同職類高分職缺校準履歷關鍵字"
+          ]
+        },
+        "research": {
+          "signals": [],
+          "evidenceCount": 0,
+          "questions": []
+        },
+        "application": {
+          "checklist": [
+            "Confirm posting is active.",
+            "Generate tailored ATS PDF.",
+            "Prepare outreach and follow-up.",
+            "Log status and next follow-up."
+          ]
+        },
+        "compensation": null,
+        "stories": [
+          {
+            "id": "story-1",
+            "theme": "frontend product execution",
+            "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
+            "applicableQuestions": [
+              "Tell me about a project you are proud of.",
+              "Tell me about a time you handled ambiguity.",
+              "How have you applied frontend product execution?"
+            ],
+            "star": {
+              "situation": "You were tasked with a frontend product challenge. Proof point: \"Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.\" — set the scene: what product, what team size, and what was broken or missing?",
+              "task": "What was the specific outcome you were accountable for? Include the success metric (e.g. performance score, user adoption rate, release date).",
+              "action": "Walk through the key technical decisions: component architecture, state management tradeoffs, accessibility choices, or API contract design.",
+              "result": "Quantify the impact: load time delta, user adoption %, code reduction %, or stakeholder feedback. If no number, describe the quality or velocity improvement.",
+              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
+            },
+            "keywords": [
+              "frontend product execution",
+              "JavaScript",
+              "TypeScript",
+              "React",
+              "Next.js",
+              "CSS",
+              "Tailwind",
+              "Accessibility"
+            ],
+            "relevance": 0
+          },
+          {
+            "id": "story-2",
+            "theme": "systems and API collaboration",
+            "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
+            "applicableQuestions": [
+              "Tell me about a project you are proud of.",
+              "Tell me about a time you handled ambiguity.",
+              "How have you applied systems and API collaboration?"
+            ],
+            "star": {
+              "situation": "You collaborated across system boundaries. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — name the systems, teams, and integration surface area.",
+              "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
+              "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
+              "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
+              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
+            },
+            "keywords": [
+              "systems and API collaboration",
+              "JavaScript",
+              "TypeScript",
+              "React",
+              "Next.js",
+              "CSS",
+              "Tailwind",
+              "Accessibility"
+            ],
+            "relevance": 0
+          },
+          {
+            "id": "story-3",
+            "theme": "accessibility and quality",
+            "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
+            "applicableQuestions": [
+              "Tell me about a project you are proud of.",
+              "Tell me about a time you handled ambiguity.",
+              "How have you applied accessibility and quality?"
+            ],
+            "star": {
+              "situation": "You led or contributed to an accessibility or quality initiative. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — what was the starting state and who was affected?",
+              "task": "What standard or target were you working toward (WCAG level, test coverage %, zero-defect milestone)?",
+              "action": "Describe the audit process, tooling (axe, Lighthouse, screen reader testing), and how you prioritized fixes across components.",
+              "result": "State the outcome: WCAG compliance level achieved, user complaints reduced, or CI gate added to prevent regressions.",
+              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
+            },
+            "keywords": [
+              "accessibility and quality",
+              "JavaScript",
+              "TypeScript",
+              "React",
+              "Next.js",
+              "CSS",
+              "Tailwind",
+              "Accessibility"
+            ],
+            "relevance": 0
+          }
+        ],
+        "applyAgent": {
+          "mode": "human-in-the-loop",
+          "url": "https://careers.airbnb.com/positions/8009372?gh_jid=8009372",
+          "steps": [
+            "Open the application URL in a controlled browser session.",
+            "Extract visible form fields and required uploads.",
+            "Map CV profile fields to the form without submitting.",
+            "Prepare tailored PDF and outreach text.",
+            "Stop before final submit and ask the user to review."
+          ],
+          "guardrails": [
+            "Never submit without explicit user confirmation.",
+            "Never fabricate work authorization, salary history, degree, or experience.",
+            "Never store API keys or credentials in job metadata.",
+            "Record only application status and user-approved notes."
+          ]
+        }
+      }
+    },
+    {
       "jobKey": "url:https://www.mycareersfuture.gov.sg/job/678ea7d91a348fae8b16b401db2d1751",
       "company": "GN AUDIO SINGAPORE PTE. LTD.",
       "title": "Software Engineer II (SteelSeries)",
       "score": 94,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-16T00:33:21.589Z",
-      "completedAt": "2026-06-16T00:33:21.591Z",
+      "startedAt": "2026-06-17T00:20:18.668Z",
+      "completedAt": "2026-06-17T00:20:18.670Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -6591,8 +6546,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 94,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-16T00:33:21.592Z",
-      "completedAt": "2026-06-16T00:33:21.594Z",
+      "startedAt": "2026-06-17T00:20:18.668Z",
+      "completedAt": "2026-06-17T00:20:18.669Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -6740,8 +6695,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 94,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-16T00:33:21.592Z",
-      "completedAt": "2026-06-16T00:33:21.594Z",
+      "startedAt": "2026-06-17T00:20:18.668Z",
+      "completedAt": "2026-06-17T00:20:18.670Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -6889,8 +6844,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 94,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-16T00:33:21.592Z",
-      "completedAt": "2026-06-16T00:33:21.594Z",
+      "startedAt": "2026-06-17T00:20:18.668Z",
+      "completedAt": "2026-06-17T00:20:18.670Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -7038,8 +6993,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 94,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-16T00:33:21.592Z",
-      "completedAt": "2026-06-16T00:33:21.594Z",
+      "startedAt": "2026-06-17T00:20:18.671Z",
+      "completedAt": "2026-06-17T00:20:18.672Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -7175,14 +7130,155 @@ window.CV_CAREER_OPS_PARALLEL = {
       }
     },
     {
+      "jobKey": "url:https://micron.wd1.myworkdayjobs.com/external/job/fab-10a-singapore/product-engineer--pkg-pe-mfg----heterogeneous-integration-group-hig---high-bandwidth-memory--hbm-_jr100040",
+      "company": "Micron Workday",
+      "title": "Product Engineer (Pkg PE MFG),  Heterogeneous Integration Group(HIG), High Bandwidth Memory (HBM)",
+      "score": 93,
+      "grade": "A",
+      "priority": "P0",
+      "startedAt": "2026-06-17T00:20:18.671Z",
+      "completedAt": "2026-06-17T00:20:18.673Z",
+      "workers": {
+        "evaluation": {
+          "recommendation": "值得投遞",
+          "keywords": [
+            "engineer",
+            "product",
+            "data"
+          ],
+          "nextActions": [
+            "先與高分職缺比較，不急著投遞",
+            "補齊 JD 或標記喜歡 / 不喜歡以改善後續排序"
+          ]
+        },
+        "research": {
+          "signals": [],
+          "evidenceCount": 0,
+          "questions": []
+        },
+        "application": {
+          "checklist": [
+            "Confirm posting is active.",
+            "Generate tailored ATS PDF.",
+            "Prepare outreach and follow-up.",
+            "Log status and next follow-up."
+          ]
+        },
+        "compensation": null,
+        "stories": [
+          {
+            "id": "story-1",
+            "theme": "frontend product execution",
+            "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
+            "applicableQuestions": [
+              "Tell me about a project you are proud of.",
+              "Tell me about a time you handled ambiguity.",
+              "How have you applied frontend product execution?"
+            ],
+            "star": {
+              "situation": "You were tasked with a frontend product challenge. Proof point: \"Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.\" — set the scene: what product, what team size, and what was broken or missing?",
+              "task": "What was the specific outcome you were accountable for? Include the success metric (e.g. performance score, user adoption rate, release date).",
+              "action": "Walk through the key technical decisions: component architecture, state management tradeoffs, accessibility choices, or API contract design.",
+              "result": "Quantify the impact: load time delta, user adoption %, code reduction %, or stakeholder feedback. If no number, describe the quality or velocity improvement.",
+              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
+            },
+            "keywords": [
+              "frontend product execution",
+              "JavaScript",
+              "TypeScript",
+              "React",
+              "Next.js",
+              "CSS",
+              "Tailwind",
+              "Accessibility"
+            ],
+            "relevance": 0
+          },
+          {
+            "id": "story-2",
+            "theme": "systems and API collaboration",
+            "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
+            "applicableQuestions": [
+              "Tell me about a project you are proud of.",
+              "Tell me about a time you handled ambiguity.",
+              "How have you applied systems and API collaboration?"
+            ],
+            "star": {
+              "situation": "You collaborated across system boundaries. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — name the systems, teams, and integration surface area.",
+              "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
+              "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
+              "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
+              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
+            },
+            "keywords": [
+              "systems and API collaboration",
+              "JavaScript",
+              "TypeScript",
+              "React",
+              "Next.js",
+              "CSS",
+              "Tailwind",
+              "Accessibility"
+            ],
+            "relevance": 0
+          },
+          {
+            "id": "story-3",
+            "theme": "accessibility and quality",
+            "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
+            "applicableQuestions": [
+              "Tell me about a project you are proud of.",
+              "Tell me about a time you handled ambiguity.",
+              "How have you applied accessibility and quality?"
+            ],
+            "star": {
+              "situation": "You led or contributed to an accessibility or quality initiative. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — what was the starting state and who was affected?",
+              "task": "What standard or target were you working toward (WCAG level, test coverage %, zero-defect milestone)?",
+              "action": "Describe the audit process, tooling (axe, Lighthouse, screen reader testing), and how you prioritized fixes across components.",
+              "result": "State the outcome: WCAG compliance level achieved, user complaints reduced, or CI gate added to prevent regressions.",
+              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
+            },
+            "keywords": [
+              "accessibility and quality",
+              "JavaScript",
+              "TypeScript",
+              "React",
+              "Next.js",
+              "CSS",
+              "Tailwind",
+              "Accessibility"
+            ],
+            "relevance": 0
+          }
+        ],
+        "applyAgent": {
+          "mode": "human-in-the-loop",
+          "url": "https://micron.wd1.myworkdayjobs.com/External/job/Fab-10A-Singapore/Product-Engineer--Pkg-PE-MFG----Heterogeneous-Integration-Group-HIG---High-Bandwidth-Memory--HBM-_JR100040",
+          "steps": [
+            "Open the application URL in a controlled browser session.",
+            "Extract visible form fields and required uploads.",
+            "Map CV profile fields to the form without submitting.",
+            "Prepare tailored PDF and outreach text.",
+            "Stop before final submit and ask the user to review."
+          ],
+          "guardrails": [
+            "Never submit without explicit user confirmation.",
+            "Never fabricate work authorization, salary history, degree, or experience.",
+            "Never store API keys or credentials in job metadata.",
+            "Record only application status and user-approved notes."
+          ]
+        }
+      }
+    },
+    {
       "jobKey": "url:https://www.mycareersfuture.gov.sg/job/ab3bc86c20af766934980ae954bdfc2e",
       "company": "SHEIN STAR PTE. LTD.",
       "title": "Product Manager – Apparel & Accessories",
       "score": 93,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-16T00:33:21.600Z",
-      "completedAt": "2026-06-16T00:33:21.602Z",
+      "startedAt": "2026-06-17T00:20:18.671Z",
+      "completedAt": "2026-06-17T00:20:18.673Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -7318,223 +7414,14 @@ window.CV_CAREER_OPS_PARALLEL = {
       }
     },
     {
-      "jobKey": "url:https://www.themuse.com/jobs/uber/director-marketplace-central-operations-mobility-emea",
-      "company": "Uber",
-      "title": "Director, Marketplace Central Operations Mobility EMEA",
-      "score": 93,
-      "grade": "A",
-      "priority": "P0",
-      "startedAt": "2026-06-16T00:33:21.600Z",
-      "completedAt": "2026-06-16T00:33:21.602Z",
-      "workers": {
-        "evaluation": {
-          "recommendation": "值得投遞",
-          "keywords": [
-            "Analytics",
-            "API",
-            "product",
-            "data"
-          ],
-          "nextActions": [
-            "開啟職缺確認仍可投遞",
-            "產生客製 ATS PDF",
-            "用同職類高分職缺校準履歷關鍵字"
-          ]
-        },
-        "research": {
-          "signals": [
-            "AI / data / platform signal",
-            "remote or hybrid signal"
-          ],
-          "evidenceCount": 1,
-          "questions": [
-            "What business unit owns the Sr Software Engineer, Frontend (Web) role?",
-            "What measurable outcomes would this team expect in the first 90 days?",
-            "What recent company/product signals change the risk or upside?",
-            "Which CV proof points should be highlighted for this company?"
-          ]
-        },
-        "application": {
-          "checklist": [
-            "Confirm posting is active.",
-            "Generate tailored ATS PDF.",
-            "Prepare outreach and follow-up.",
-            "Log status and next follow-up."
-          ]
-        },
-        "compensation": {
-          "jobKey": "url:https://www.themuse.com/jobs/uber/sr-software-engineer-frontend-web-8fc2b7",
-          "company": "Uber",
-          "title": "Sr Software Engineer, Frontend (Web)",
-          "market": "us",
-          "inferredLevel": "senior",
-          "candidateLevel": "mid",
-          "leverage": "high",
-          "evidence": {
-            "salaryMentions": [],
-            "benefitSignals": [
-              "bonus",
-              "work-mode flexibility"
-            ]
-          },
-          "marketBenchmark": null,
-          "structure": {
-            "baseSalary": [
-              "Need verified market data or recruiter range before setting a numeric anchor."
-            ],
-            "bonus": "Ask whether bonus is guaranteed, target, or discretionary.",
-            "equity": "Ask whether equity, RSU, options, or profit-sharing exists.",
-            "benefits": [
-              "Health / insurance coverage",
-              "Paid leave and holidays",
-              "Learning budget or certification support",
-              "Remote/hybrid setup, commute, or relocation support",
-              "Review cycle and promotion timeline"
-            ],
-            "nonCashLevers": [
-              "Title / level calibration",
-              "Start date flexibility",
-              "Remote days",
-              "Equipment budget",
-              "First review at 3 or 6 months",
-              "Conference / learning budget"
-            ]
-          },
-          "negotiationScript": {
-            "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Sr Software Engineer, Frontend (Web) package, including base, bonus, equity, and review cycle?",
-            "valueAnchor": "Based on the scope of Sr Software Engineer, Frontend (Web) and my fit around JavaScript, TypeScript, React, CSS, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
-            "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
-            "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
-            "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
-          },
-          "redLines": [
-            "Do not disclose current compensation unless legally appropriate and strategically useful.",
-            "Do not accept verbal-only compensation details; ask for written package components.",
-            "Do not negotiate before confirming level, scope, work mode, and review cycle.",
-            "Do not trade base salary away without valuing the replacement benefit."
-          ],
-          "nextActions": [
-            "Collect market compensation evidence before naming a number.",
-            "Ask recruiter for approved range and level.",
-            "Map the job scope to proof points in the tailored CV.",
-            "Prepare one counter package with base, bonus/equity, and non-cash levers."
-          ],
-          "targetFrame": "Do not name a number first. Ask for the approved range, level, and total compensation structure before anchoring."
-        },
-        "stories": [
-          {
-            "id": "story-1",
-            "theme": "frontend product execution",
-            "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
-            "applicableQuestions": [
-              "Tell me about a project you are proud of.",
-              "Tell me about a time you handled ambiguity.",
-              "How have you applied frontend product execution?"
-            ],
-            "star": {
-              "situation": "You were tasked with a frontend product challenge. Proof point: \"Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.\" — set the scene: what product, what team size, and what was broken or missing?",
-              "task": "What was the specific outcome you were accountable for? Include the success metric (e.g. performance score, user adoption rate, release date).",
-              "action": "Walk through the key technical decisions: component architecture, state management tradeoffs, accessibility choices, or API contract design.",
-              "result": "Quantify the impact: load time delta, user adoption %, code reduction %, or stakeholder feedback. If no number, describe the quality or velocity improvement.",
-              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
-            },
-            "keywords": [
-              "frontend product execution",
-              "JavaScript",
-              "TypeScript",
-              "React",
-              "Next.js",
-              "CSS",
-              "Tailwind",
-              "Accessibility"
-            ],
-            "relevance": 0
-          },
-          {
-            "id": "story-2",
-            "theme": "systems and API collaboration",
-            "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
-            "applicableQuestions": [
-              "Tell me about a project you are proud of.",
-              "Tell me about a time you handled ambiguity.",
-              "How have you applied systems and API collaboration?"
-            ],
-            "star": {
-              "situation": "You collaborated across system boundaries. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — name the systems, teams, and integration surface area.",
-              "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
-              "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
-              "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
-              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
-            },
-            "keywords": [
-              "systems and API collaboration",
-              "JavaScript",
-              "TypeScript",
-              "React",
-              "Next.js",
-              "CSS",
-              "Tailwind",
-              "Accessibility"
-            ],
-            "relevance": 0
-          },
-          {
-            "id": "story-3",
-            "theme": "accessibility and quality",
-            "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
-            "applicableQuestions": [
-              "Tell me about a project you are proud of.",
-              "Tell me about a time you handled ambiguity.",
-              "How have you applied accessibility and quality?"
-            ],
-            "star": {
-              "situation": "You led or contributed to an accessibility or quality initiative. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — what was the starting state and who was affected?",
-              "task": "What standard or target were you working toward (WCAG level, test coverage %, zero-defect milestone)?",
-              "action": "Describe the audit process, tooling (axe, Lighthouse, screen reader testing), and how you prioritized fixes across components.",
-              "result": "State the outcome: WCAG compliance level achieved, user complaints reduced, or CI gate added to prevent regressions.",
-              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
-            },
-            "keywords": [
-              "accessibility and quality",
-              "JavaScript",
-              "TypeScript",
-              "React",
-              "Next.js",
-              "CSS",
-              "Tailwind",
-              "Accessibility"
-            ],
-            "relevance": 0
-          }
-        ],
-        "applyAgent": {
-          "mode": "human-in-the-loop",
-          "url": "https://www.themuse.com/jobs/uber/director-marketplace-central-operations-mobility-emea",
-          "steps": [
-            "Open the application URL in a controlled browser session.",
-            "Extract visible form fields and required uploads.",
-            "Map CV profile fields to the form without submitting.",
-            "Prepare tailored PDF and outreach text.",
-            "Stop before final submit and ask the user to review."
-          ],
-          "guardrails": [
-            "Never submit without explicit user confirmation.",
-            "Never fabricate work authorization, salary history, degree, or experience.",
-            "Never store API keys or credentials in job metadata.",
-            "Record only application status and user-approved notes."
-          ]
-        }
-      }
-    },
-    {
       "jobKey": "url:https://www.themuse.com/jobs/pilotly/product-engineer-ii-8b1aeb",
       "company": "Pilotly",
       "title": "Product Engineer II",
       "score": 93,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-16T00:33:21.600Z",
-      "completedAt": "2026-06-16T00:33:21.601Z",
+      "startedAt": "2026-06-17T00:20:18.671Z",
+      "completedAt": "2026-06-17T00:20:18.673Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -7681,8 +7568,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 93,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-16T00:33:21.600Z",
-      "completedAt": "2026-06-16T00:33:21.602Z",
+      "startedAt": "2026-06-17T00:20:18.674Z",
+      "completedAt": "2026-06-17T00:20:18.676Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -7827,8 +7714,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 93,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-16T00:33:21.603Z",
-      "completedAt": "2026-06-16T00:33:21.605Z",
+      "startedAt": "2026-06-17T00:20:18.674Z",
+      "completedAt": "2026-06-17T00:20:18.676Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -7970,8 +7857,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 93,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-16T00:33:21.603Z",
-      "completedAt": "2026-06-16T00:33:21.605Z",
+      "startedAt": "2026-06-17T00:20:18.674Z",
+      "completedAt": "2026-06-17T00:20:18.676Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -8115,8 +8002,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 93,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-16T00:33:21.603Z",
-      "completedAt": "2026-06-16T00:33:21.605Z",
+      "startedAt": "2026-06-17T00:20:18.674Z",
+      "completedAt": "2026-06-17T00:20:18.676Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -8260,8 +8147,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 93,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-16T00:33:21.603Z",
-      "completedAt": "2026-06-16T00:33:21.605Z",
+      "startedAt": "2026-06-17T00:20:18.677Z",
+      "completedAt": "2026-06-17T00:20:18.679Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -8403,8 +8290,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 93,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-16T00:33:21.606Z",
-      "completedAt": "2026-06-16T00:33:21.608Z",
+      "startedAt": "2026-06-17T00:20:18.677Z",
+      "completedAt": "2026-06-17T00:20:18.679Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -8548,8 +8435,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 92,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-16T00:33:21.606Z",
-      "completedAt": "2026-06-16T00:33:21.608Z",
+      "startedAt": "2026-06-17T00:20:18.677Z",
+      "completedAt": "2026-06-17T00:20:18.679Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -8694,8 +8581,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 92,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-16T00:33:21.606Z",
-      "completedAt": "2026-06-16T00:33:21.608Z",
+      "startedAt": "2026-06-17T00:20:18.677Z",
+      "completedAt": "2026-06-17T00:20:18.679Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -8842,8 +8729,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 92,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-16T00:33:21.606Z",
-      "completedAt": "2026-06-16T00:33:21.608Z",
+      "startedAt": "2026-06-17T00:20:18.680Z",
+      "completedAt": "2026-06-17T00:20:18.681Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -8990,8 +8877,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 92,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-16T00:33:21.609Z",
-      "completedAt": "2026-06-16T00:33:21.611Z",
+      "startedAt": "2026-06-17T00:20:18.680Z",
+      "completedAt": "2026-06-17T00:20:18.681Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -9113,152 +9000,6 @@ window.CV_CAREER_OPS_PARALLEL = {
         "applyAgent": {
           "mode": "human-in-the-loop",
           "url": "https://remotive.com/remote-jobs/software-development/staff-software-engineer-product-belo-horizonte-2090910",
-          "steps": [
-            "Open the application URL in a controlled browser session.",
-            "Extract visible form fields and required uploads.",
-            "Map CV profile fields to the form without submitting.",
-            "Prepare tailored PDF and outreach text.",
-            "Stop before final submit and ask the user to review."
-          ],
-          "guardrails": [
-            "Never submit without explicit user confirmation.",
-            "Never fabricate work authorization, salary history, degree, or experience.",
-            "Never store API keys or credentials in job metadata.",
-            "Record only application status and user-approved notes."
-          ]
-        }
-      }
-    },
-    {
-      "jobKey": "url:https://remotive.com/remote-jobs/software-development/staff-software-engineer-product-florianopolis-2090911",
-      "company": "LawnStarter",
-      "title": "Staff Software Engineer, Product (Florianópolis)",
-      "score": 92,
-      "grade": "A",
-      "priority": "P0",
-      "startedAt": "2026-06-16T00:33:21.609Z",
-      "completedAt": "2026-06-16T00:33:21.611Z",
-      "workers": {
-        "evaluation": {
-          "recommendation": "值得投遞",
-          "keywords": [
-            "TypeScript",
-            "React",
-            "remote",
-            "dashboard",
-            "engineer",
-            "product",
-            "data"
-          ],
-          "nextActions": [
-            "開啟職缺確認仍可投遞",
-            "產生客製 ATS PDF",
-            "用同職類高分職缺校準履歷關鍵字"
-          ]
-        },
-        "research": {
-          "signals": [],
-          "evidenceCount": 0,
-          "questions": []
-        },
-        "application": {
-          "checklist": [
-            "Confirm posting is active.",
-            "Generate tailored ATS PDF.",
-            "Prepare outreach and follow-up.",
-            "Log status and next follow-up."
-          ]
-        },
-        "compensation": null,
-        "stories": [
-          {
-            "id": "story-1",
-            "theme": "frontend product execution",
-            "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
-            "applicableQuestions": [
-              "Tell me about a project you are proud of.",
-              "Tell me about a time you handled ambiguity.",
-              "How have you applied frontend product execution?"
-            ],
-            "star": {
-              "situation": "You were tasked with a frontend product challenge. Proof point: \"Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.\" — set the scene: what product, what team size, and what was broken or missing?",
-              "task": "What was the specific outcome you were accountable for? Include the success metric (e.g. performance score, user adoption rate, release date).",
-              "action": "Walk through the key technical decisions: component architecture, state management tradeoffs, accessibility choices, or API contract design.",
-              "result": "Quantify the impact: load time delta, user adoption %, code reduction %, or stakeholder feedback. If no number, describe the quality or velocity improvement.",
-              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
-            },
-            "keywords": [
-              "frontend product execution",
-              "JavaScript",
-              "TypeScript",
-              "React",
-              "Next.js",
-              "CSS",
-              "Tailwind",
-              "Accessibility"
-            ],
-            "relevance": 2
-          },
-          {
-            "id": "story-2",
-            "theme": "systems and API collaboration",
-            "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
-            "applicableQuestions": [
-              "Tell me about a project you are proud of.",
-              "Tell me about a time you handled ambiguity.",
-              "How have you applied systems and API collaboration?"
-            ],
-            "star": {
-              "situation": "You collaborated across system boundaries. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — name the systems, teams, and integration surface area.",
-              "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
-              "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
-              "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
-              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
-            },
-            "keywords": [
-              "systems and API collaboration",
-              "JavaScript",
-              "TypeScript",
-              "React",
-              "Next.js",
-              "CSS",
-              "Tailwind",
-              "Accessibility"
-            ],
-            "relevance": 2
-          },
-          {
-            "id": "story-3",
-            "theme": "accessibility and quality",
-            "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
-            "applicableQuestions": [
-              "Tell me about a project you are proud of.",
-              "Tell me about a time you handled ambiguity.",
-              "How have you applied accessibility and quality?"
-            ],
-            "star": {
-              "situation": "You led or contributed to an accessibility or quality initiative. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — what was the starting state and who was affected?",
-              "task": "What standard or target were you working toward (WCAG level, test coverage %, zero-defect milestone)?",
-              "action": "Describe the audit process, tooling (axe, Lighthouse, screen reader testing), and how you prioritized fixes across components.",
-              "result": "State the outcome: WCAG compliance level achieved, user complaints reduced, or CI gate added to prevent regressions.",
-              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
-            },
-            "keywords": [
-              "accessibility and quality",
-              "JavaScript",
-              "TypeScript",
-              "React",
-              "Next.js",
-              "CSS",
-              "Tailwind",
-              "Accessibility"
-            ],
-            "relevance": 2
-          }
-        ],
-        "applyAgent": {
-          "mode": "human-in-the-loop",
-          "url": "https://remotive.com/remote-jobs/software-development/staff-software-engineer-product-florianopolis-2090911",
           "steps": [
             "Open the application URL in a controlled browser session.",
             "Extract visible form fields and required uploads.",

@@ -1,6 +1,6 @@
 # Career Ops Application Kit
 
-Generated: 2026-06-16T00:33:04.181Z
+Generated: 2026-06-17T00:20:00.615Z
 Jobs: 12
 
 ## Pipeline
@@ -140,6 +140,71 @@ Alex Chen
 - Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.
 - Use competing priorities and role fit, not personal need, as the negotiation frame.
 
+## TIKTOK PTE. LTD. - Frontend Software Engineer (transaction), TikTok Live - Singapore
+
+- Priority: P0
+- Score: 95/A
+- Subject: Frontend Software Engineer (transaction), TikTok Live - Singapore application - TIKTOK PTE. LTD.
+
+- Block G: High Confidence
+- Rating: 4.8/5.0
+
+### ATS Keyword Injection
+- Archetype: Frontend Engineer
+- Coverage: 100%
+- JD Keywords: JavaScript, CSS, remote, engineer, product, data, API
+- 在 Professional Summary 中自然帶入：JavaScript、CSS、remote、engineer、product
+- 使用職位語言：「Frontend Engineer」方向的動詞和術語
+- 【你已有但此 JD 未要求】可視情況選擇性提及：html、growth
+- Missing (do NOT fabricate): html, growth
+
+### Apply Checklist
+- Open the source URL and confirm the role is still active.
+- Generate or refresh the tailored ATS PDF from this job.
+- Mirror these JD keywords honestly in your CV: JavaScript, CSS, remote, engineer, product, data, API
+- Do not overclaim missing areas: html, growth
+- Log status, recruiter/contact, and next follow-up date in the tracker.
+
+### Outreach Email
+```text
+Hi TIKTOK PTE. LTD. team,
+
+I am Alex Chen, and I am interested in the Frontend Software Engineer (transaction), TikTok Live - Singapore role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.
+
+The role stood out because it maps closely to my experience with JavaScript, CSS, remote, engineer, product.
+
+I would appreciate the chance to share how my experience can support the team. Thank you for your time.
+
+Best,
+Alex Chen
+```
+
+### Follow-up
+Timing: 3-5 business days after applying or the last recruiter interaction.
+```text
+Hi TIKTOK PTE. LTD. team,
+
+I wanted to follow up on my application for the Frontend Software Engineer (transaction), TikTok Live - Singapore role. I remain interested and would be glad to provide any additional context about my background.
+
+Thank you again for your time.
+
+Best,
+Alex Chen
+```
+
+### Interview Prep
+- Prepare a 60-second story for why TIKTOK PTE. LTD. and why Frontend Software Engineer (transaction), TikTok Live - Singapore.
+- Prepare evidence for: JavaScript, CSS, remote, engineer, product, data.
+- Prepare one STAR story about execution under ambiguity.
+- Prepare one STAR story about collaboration and tradeoff decisions.
+- Prepare questions about team priorities, success metrics, and hiring timeline.
+
+### Negotiation Prep
+- Wait for a clear offer before anchoring compensation.
+- Ask for total compensation breakdown, work mode, title, level, review cycle, and start date.
+- Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.
+- Use competing priorities and role fit, not personal need, as the negotiation frame.
+
 ## MICRON SEMICONDUCTOR ASIA OPERATIONS PTE. LTD. - Senior/Staff Product Engineer (GenAI, AI/ML & Advanced Data Analytics)
 
 - Priority: P0
@@ -195,71 +260,6 @@ Alex Chen
 ### Interview Prep
 - Prepare a 60-second story for why MICRON SEMICONDUCTOR ASIA OPERATIONS PTE. LTD. and why Senior/Staff Product Engineer (GenAI, AI/ML & Advanced Data Analytics).
 - Prepare evidence for: JavaScript, CSS, Analytics, API, engineer, product.
-- Prepare one STAR story about execution under ambiguity.
-- Prepare one STAR story about collaboration and tradeoff decisions.
-- Prepare questions about team priorities, success metrics, and hiring timeline.
-
-### Negotiation Prep
-- Wait for a clear offer before anchoring compensation.
-- Ask for total compensation breakdown, work mode, title, level, review cycle, and start date.
-- Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.
-- Use competing priorities and role fit, not personal need, as the negotiation frame.
-
-## USAA - Software Engineer Mid-level (Java Full Stack)
-
-- Priority: P0
-- Score: 95/A
-- Subject: Software Engineer Mid-level (Java Full Stack) application - USAA
-
-- Block G: High Confidence
-- Rating: 4.8/5.0
-
-### ATS Keyword Injection
-- Archetype: Full Stack Engineer
-- Coverage: 100%
-- JD Keywords: JavaScript, CSS, API, remote, engineer, data
-- 在 Professional Summary 中自然帶入：JavaScript、CSS、API、remote、engineer
-- 使用職位語言：「Full Stack Engineer」方向的動詞和術語
-- 【你已有但此 JD 未要求】可視情況選擇性提及：python、java、go、swift、kotlin
-- Missing (do NOT fabricate): python, java, go, swift, kotlin, sql, aws, docker
-
-### Apply Checklist
-- Open the source URL and confirm the role is still active.
-- Generate or refresh the tailored ATS PDF from this job.
-- Mirror these JD keywords honestly in your CV: JavaScript, CSS, API, remote, engineer, data
-- Do not overclaim missing areas: python, java, go, swift, kotlin, sql
-- Log status, recruiter/contact, and next follow-up date in the tracker.
-
-### Outreach Email
-```text
-Hi USAA team,
-
-I am Alex Chen, and I am interested in the Software Engineer Mid-level (Java Full Stack) role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.
-
-The role stood out because it maps closely to my experience with JavaScript, CSS, API, remote, engineer.
-
-I would appreciate the chance to share how my experience can support the team. Thank you for your time.
-
-Best,
-Alex Chen
-```
-
-### Follow-up
-Timing: 3-5 business days after applying or the last recruiter interaction.
-```text
-Hi USAA team,
-
-I wanted to follow up on my application for the Software Engineer Mid-level (Java Full Stack) role. I remain interested and would be glad to provide any additional context about my background.
-
-Thank you again for your time.
-
-Best,
-Alex Chen
-```
-
-### Interview Prep
-- Prepare a 60-second story for why USAA and why Software Engineer Mid-level (Java Full Stack).
-- Prepare evidence for: JavaScript, CSS, API, remote, engineer, data.
 - Prepare one STAR story about execution under ambiguity.
 - Prepare one STAR story about collaboration and tradeoff decisions.
 - Prepare questions about team priorities, success metrics, and hiring timeline.
