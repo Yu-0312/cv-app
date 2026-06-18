@@ -1,6 +1,6 @@
 window.CV_CAREER_OPS_DEEP_FIT = {
   "source": "career-ops-deep-fit",
-  "generatedAt": "2026-06-17T00:20:22.537Z",
+  "generatedAt": "2026-06-18T00:23:13.614Z",
   "llmProvider": "none",
   "summary": {
     "totalResults": 95,
@@ -1842,6 +1842,26 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "layer": "B"
     },
     {
+      "jobKey": "url:https://justjoin.it/job-offer/n-ix-senior-scala-engineer-krakow-scala-15ebf7dd",
+      "company": "N-iX",
+      "title": "Senior Scala Engineer",
+      "score": 78,
+      "grade": "B",
+      "roleFit": 45,
+      "url": "https://justjoin.it/job-offer/n-ix-senior-scala-engineer-krakow-scala-15ebf7dd",
+      "location": "Kraków, PL",
+      "keywordHits": [
+        "Analytics",
+        "analytics"
+      ],
+      "keywordMisses": [
+        "docker",
+        "kubernetes"
+      ],
+      "decision": "pursue selectively",
+      "layer": "B"
+    },
+    {
       "jobKey": "url:https://nvidia.wd5.myworkdayjobs.com/nvidiaexternalcareersite/job/taiwan-hsinchu/senior-mixed-signal-circuit-design-engineer_jr2015519",
       "company": "NVIDIA Workday",
       "title": "Senior Mixed Signal Circuit Design Engineer",
@@ -1861,7 +1881,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
     {
       "jobKey": "url:https://databricks.com/company/careers/open-positions/job?gh_jid=6174735002",
       "company": "Databricks Greenhouse",
-      "title": "Candidate Experience Coordinator",
+      "title": "Candidate Experience Coordinator (6-month contract)",
       "score": 77,
       "grade": "B",
       "roleFit": 45,
@@ -2079,6 +2099,20 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "layer": "B"
     },
     {
+      "jobKey": "url:https://www.mycareersfuture.gov.sg/job/b718bbea2c9a6655a4dcee5e0ed1ba2f",
+      "company": "DCONSTRUCT ROBOTICS PTE. LTD.",
+      "title": "Robotics Software Engineer",
+      "score": 73,
+      "grade": "B",
+      "roleFit": 45,
+      "url": "https://www.mycareersfuture.gov.sg/job/b718bbea2c9a6655a4dcee5e0ed1ba2f",
+      "location": "PIXEL, CENTRAL EXCHANGE GREEN, D05 Pasir Panjang, Hong Leong Garden, Clementi New Town, Singapore",
+      "keywordHits": [],
+      "keywordMisses": [],
+      "decision": "pursue selectively",
+      "layer": "B"
+    },
+    {
       "jobKey": "url:https://www.mycareersfuture.gov.sg/job/4449d6bd725a1b749416cdb5daf65f62",
       "company": "DCONSTRUCT ROBOTICS PTE. LTD.",
       "title": "Software Engineer",
@@ -2127,39 +2161,6 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "layer": "B"
     },
     {
-      "jobKey": "url:https://remoteok.com/remote-jobs/remote-hr-services-contact-center-associate-the-home-depot-1133419",
-      "company": "The Home Depot",
-      "title": "HR Services Contact Center Associate",
-      "score": 72,
-      "grade": "B",
-      "roleFit": 45,
-      "url": "https://remoteok.com/remote-jobs/remote-hr-services-contact-center-associate-the-home-depot-1133419",
-      "location": "Atlanta,",
-      "keywordHits": [
-        "remote"
-      ],
-      "keywordMisses": [],
-      "decision": "pursue selectively",
-      "layer": "B"
-    },
-    {
-      "jobKey": "url:https://www.mycareersfuture.gov.sg/job/a4a0668d68ded0567c70a0e176d70511",
-      "company": "DCI CONSULTANTS PRIVATE LIMITED",
-      "title": "Software Engineer (.net) - MC",
-      "score": 71,
-      "grade": "C",
-      "roleFit": 45,
-      "url": "https://www.mycareersfuture.gov.sg/job/a4a0668d68ded0567c70a0e176d70511",
-      "location": "Islandwide, Singapore",
-      "keywordHits": [],
-      "keywordMisses": [
-        "java",
-        "go"
-      ],
-      "decision": "pursue selectively",
-      "layer": "B"
-    },
-    {
       "jobKey": "url:https://www.mycareersfuture.gov.sg/job/6813b1ce86e2266fd9953cebcb246155",
       "company": "HPS PARTNERS PTE. LTD.",
       "title": "Senior/Software Engineer (Bluetooth Embedded System)",
@@ -2169,22 +2170,6 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "url": "https://www.mycareersfuture.gov.sg/job/6813b1ce86e2266fd9953cebcb246155",
       "location": "NORDCOM ONE, GAMBAS CRESCENT, D27 Sembawang, Yishun, Singapore",
       "keywordHits": [],
-      "keywordMisses": [],
-      "decision": "pursue selectively",
-      "layer": "B"
-    },
-    {
-      "jobKey": "url:https://remoteok.com/remote-jobs/remote-other-position-piccollage-1133395",
-      "company": "PicCollage æ¼è²¼è¶£",
-      "title": "Other Position",
-      "score": 71,
-      "grade": "C",
-      "roleFit": 45,
-      "url": "https://remoteok.com/remote-jobs/remote-other-position-piccollage-1133395",
-      "location": "å°å,",
-      "keywordHits": [
-        "remote"
-      ],
       "keywordMisses": [],
       "decision": "pursue selectively",
       "layer": "B"
@@ -2294,34 +2279,16 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "layer": "B"
     },
     {
-      "jobKey": "url:https://remoteok.com/remote-jobs/remote-hiring-blueyonder-professionals-pan-india-covetus-1133338",
-      "company": "Covetus",
-      "title": "ð Hiring BlueYonder Professionals PAN INDIA",
+      "jobKey": "url:https://justjoin.it/job-offer/humanit-product-implementation-specialist-wroclaw-pm",
+      "company": "Humanit",
+      "title": "Product Implementation Specialist",
       "score": 69,
       "grade": "C",
       "roleFit": 45,
-      "url": "https://remoteok.com/remote-jobs/remote-hiring-blueyonder-professionals-pan-india-covetus-1133338",
-      "location": "Bengaluru,",
-      "keywordHits": [
-        "remote"
-      ],
-      "keywordMisses": [],
-      "decision": "hold / compare",
-      "layer": "B"
-    },
-    {
-      "jobKey": "url:https://www.dice.com/job-detail/31268e68-c110-4921-b6d9-1776d70617b7",
-      "company": "BURGEON IT SERVICES LLC",
-      "title": "SAP MDG Consultant",
-      "score": 69,
-      "grade": "C",
-      "roleFit": 45,
-      "url": "https://www.dice.com/job-detail/31268e68-c110-4921-b6d9-1776d70617b7",
-      "location": "Texas City, TX, US",
+      "url": "https://justjoin.it/job-offer/humanit-product-implementation-specialist-wroclaw-pm",
+      "location": "Wrocław, PL",
       "keywordHits": [],
-      "keywordMisses": [
-        "sql"
-      ],
+      "keywordMisses": [],
       "decision": "hold / compare",
       "layer": "B"
     },
@@ -2340,14 +2307,14 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "layer": "B"
     },
     {
-      "jobKey": "url:https://www.mycareersfuture.gov.sg/job/b9d2b1741451ef207fc0d662c2c8e615",
-      "company": "PALFINGER ASIA PACIFIC PTE. LTD.",
-      "title": "Senior / Service Engineer PLC",
-      "score": 68,
+      "jobKey": "url:https://remoteok.com/remote-jobs/remote-become-a-student-life-coach-flexible-role-uk-20-40-hr-findtutors-1133462",
+      "company": "FindTutors",
+      "title": "Become a Student Life Coach Flexible Role UK Â£20 Â£40 hr",
+      "score": 67,
       "grade": "C",
       "roleFit": 45,
-      "url": "https://www.mycareersfuture.gov.sg/job/b9d2b1741451ef207fc0d662c2c8e615",
-      "location": "Islandwide, Singapore",
+      "url": "https://remoteok.com/remote-jobs/remote-become-a-student-life-coach-flexible-role-uk-20-40-hr-findtutors-1133462",
+      "location": "Remote / Global",
       "keywordHits": [
         "remote"
       ],
@@ -2356,28 +2323,56 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "layer": "B"
     },
     {
-      "jobKey": "url:https://www.mycareersfuture.gov.sg/job/30c59a5ac2faecd54defc70f1a469485",
-      "company": "RECRUIT EXPERT PTE. LTD.",
-      "title": "Software Engineer (C/C++, Semiconductor/Automation)",
-      "score": 68,
+      "jobKey": "url:https://www.daijob.com/en/jobs/detail/1483003",
+      "company": "Fujisoft Co., Ltd.",
+      "title": "[In-vehicle Software System Engineer] N2 level or higher welcome / Annual salary of 4.5 million yen or more / Career advancement / Atsugi City, Kanagawa Prefecture",
+      "score": 67,
       "grade": "C",
       "roleFit": 45,
-      "url": "https://www.mycareersfuture.gov.sg/job/30c59a5ac2faecd54defc70f1a469485",
-      "location": "PLUS, CECIL STREET, D01 Marina, Raffles Place, People's Park, Cecil, Singapore",
+      "url": "https://www.daijob.com/en/jobs/detail/1483003",
+      "location": "Kanagawa, JP",
       "keywordHits": [],
       "keywordMisses": [],
       "decision": "hold / compare",
       "layer": "B"
     },
     {
-      "jobKey": "url:https://remoteok.com/remote-jobs/remote-project-assistant-exactus-energy-1133322",
-      "company": "Exactus Energy",
-      "title": "Project Assistant",
-      "score": 67,
+      "jobKey": "url:https://www.nvidia.com/en-us/data-center/products/ovx/",
+      "company": "NVIDIA",
+      "title": "NVIDIA OVX Systems",
+      "score": 66,
       "grade": "C",
       "roleFit": 45,
-      "url": "https://remoteok.com/remote-jobs/remote-project-assistant-exactus-energy-1133322",
-      "location": "Remote / Global",
+      "url": "https://www.nvidia.com/en-us/data-center/products/ovx/",
+      "location": "",
+      "keywordHits": [],
+      "keywordMisses": [],
+      "decision": "hold / compare",
+      "layer": "B"
+    },
+    {
+      "jobKey": "url:http://careers.tencent.com/jobdesc.html?postid=2057421659916382208",
+      "company": "Tencent Careers China",
+      "title": "腾讯投资-Fund Investment Associate / Associate Director",
+      "score": 66,
+      "grade": "C",
+      "roleFit": 45,
+      "url": "http://careers.tencent.com/jobdesc.html?postId=2057421659916382208",
+      "location": "中国 / 北京",
+      "keywordHits": [],
+      "keywordMisses": [],
+      "decision": "hold / compare",
+      "layer": "B"
+    },
+    {
+      "jobKey": "url:https://remoteok.com/remote-jobs/remote-narrator-hire-feed-1133501",
+      "company": "Hire Feed",
+      "title": "Narrator",
+      "score": 66,
+      "grade": "C",
+      "roleFit": 45,
+      "url": "https://remoteok.com/remote-jobs/remote-narrator-hire-feed-1133501",
+      "location": "Remote,",
       "keywordHits": [
         "remote"
       ],
@@ -2472,26 +2467,26 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "layer": "C"
     },
     {
-      "jobKey": "url:https://www.themuse.com/jobs/kyndryl/full-stack-engineer-ai-solutions-00bc2f",
-      "company": "Kyndryl",
-      "title": "Full Stack Engineer (AI Solutions)",
+      "jobKey": "url:https://www.themuse.com/jobs/allstate/lead-product-engineer-observability-enterprise-app-monitoring-remote-40d440",
+      "company": "Allstate",
+      "title": "Lead Product Engineer - Observability (Enterprise App Monitoring) - Remote",
       "score": 95,
       "grade": "A",
       "roleFit": 92,
-      "url": "https://www.themuse.com/jobs/kyndryl/full-stack-engineer-ai-solutions-00bc2f",
-      "location": "Barcelona, Spain / Flexible / Remote",
+      "url": "https://www.themuse.com/jobs/allstate/lead-product-engineer-observability-enterprise-app-monitoring-remote-40d440",
+      "location": "Flexible / Remote",
       "keywordHits": [
         "React",
         "API",
-        "React",
-        "Full Stack Engineer"
+        "remote",
+        "dashboard"
       ],
-      "topGap": "angular",
+      "topGap": "python",
       "mainGaps": [
-        "angular",
         "python",
         "java",
-        "sql"
+        "kubernetes",
+        "growth"
       ],
       "layer": "C"
     },
@@ -2514,6 +2509,30 @@ window.CV_CAREER_OPS_DEEP_FIT = {
         "java",
         "kubernetes",
         "rest"
+      ],
+      "layer": "C"
+    },
+    {
+      "jobKey": "url:https://japan-dev.com/jobs/dinii/dinii-senior-software-engineer-q41fc0",
+      "company": "Dinii",
+      "title": "Senior Software Engineer",
+      "score": 95,
+      "grade": "A",
+      "roleFit": 92,
+      "url": "https://japan-dev.com/jobs/dinii/dinii-senior-software-engineer-q41fc0",
+      "location": "Tokyo, Tokyo, JP",
+      "keywordHits": [
+        "TypeScript",
+        "React",
+        "API",
+        "TypeScript"
+      ],
+      "topGap": "aws",
+      "mainGaps": [
+        "aws",
+        "agents",
+        "crm",
+        "growth"
       ],
       "layer": "C"
     },
@@ -2651,13 +2670,53 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "layer": "C"
     },
     {
-      "jobKey": "url:https://micron.wd1.myworkdayjobs.com/external/job/fab-10a-singapore/product-engineer--pkg-pe-mfg----heterogeneous-integration-group-hig---high-bandwidth-memory--hbm-_jr100040",
+      "jobKey": "url:https://justjoin.it/job-offer/centra-senior-analytics-engineer-wroclaw-analytics",
+      "company": "Centra",
+      "title": "Senior Data Engineer",
+      "score": 94,
+      "grade": "A",
+      "roleFit": 92,
+      "url": "https://justjoin.it/job-offer/centra-senior-analytics-engineer-wroclaw-analytics",
+      "location": "Wrocław, PL",
+      "keywordHits": [
+        "Analytics",
+        "API",
+        "dashboard",
+        "analytics"
+      ],
+      "topGap": "sql",
+      "mainGaps": [
+        "sql",
+        "aws",
+        "gcp",
+        "azure"
+      ],
+      "layer": "C"
+    },
+    {
+      "jobKey": "url:https://micron.wd1.myworkdayjobs.com/external/job/fab-10a-singapore/product-engineer--pkg-pe-mfg----heterogeneous-integration-group-hig---high-bandwidth-memory--hbm-_jr101855-1",
       "company": "Micron Workday",
       "title": "Product Engineer (Pkg PE MFG),  Heterogeneous Integration Group(HIG), High Bandwidth Memory (HBM)",
       "score": 93,
       "grade": "A",
       "roleFit": 92,
-      "url": "https://micron.wd1.myworkdayjobs.com/External/job/Fab-10A-Singapore/Product-Engineer--Pkg-PE-MFG----Heterogeneous-Integration-Group-HIG---High-Bandwidth-Memory--HBM-_JR100040",
+      "url": "https://micron.wd1.myworkdayjobs.com/External/job/Fab-10A-Singapore/Product-Engineer--Pkg-PE-MFG----Heterogeneous-Integration-Group-HIG---High-Bandwidth-Memory--HBM-_JR101855-1",
+      "location": "Fab 10A, Singapore",
+      "keywordHits": [
+        "Product Engineer"
+      ],
+      "topGap": "",
+      "mainGaps": [],
+      "layer": "C"
+    },
+    {
+      "jobKey": "url:https://micron.wd1.myworkdayjobs.com/external/job/fab-10a-singapore/product-engineer--pkg-pe-mfg----heterogeneous-integration-group-hig---high-bandwidth-memory--hbm-_jr103063",
+      "company": "Micron Workday",
+      "title": "Product Engineer (Pkg PE MFG),  Heterogeneous Integration Group(HIG), High Bandwidth Memory (HBM)",
+      "score": 93,
+      "grade": "A",
+      "roleFit": 92,
+      "url": "https://micron.wd1.myworkdayjobs.com/External/job/Fab-10A-Singapore/Product-Engineer--Pkg-PE-MFG----Heterogeneous-Integration-Group-HIG---High-Bandwidth-Memory--HBM-_JR103063",
       "location": "Fab 10A, Singapore",
       "keywordHits": [
         "Product Engineer"
@@ -2732,27 +2791,6 @@ window.CV_CAREER_OPS_DEEP_FIT = {
         "java",
         "go",
         "swift"
-      ],
-      "layer": "C"
-    },
-    {
-      "jobKey": "url:https://stripe.com/jobs/search?gh_jid=7550154",
-      "company": "Stripe Greenhouse",
-      "title": "Android Engineer, Terminal Developer Productivity",
-      "score": 93,
-      "grade": "A",
-      "roleFit": 92,
-      "url": "https://stripe.com/jobs/search?gh_jid=7550154",
-      "location": "San Francisco, Seattle, Remote in US",
-      "keywordHits": [
-        "API",
-        "Product Engineer"
-      ],
-      "topGap": "java",
-      "mainGaps": [
-        "java",
-        "go",
-        "kotlin"
       ],
       "layer": "C"
     },
@@ -2916,6 +2954,27 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "layer": "C"
     },
     {
+      "jobKey": "url:https://www.mycareersfuture.gov.sg/job/2d01b81e8b9d4d99ff869e1e5c480360",
+      "company": "REVOLUT TECHNOLOGIES SINGAPORE PTE. LTD.",
+      "title": "Frontend Engineer",
+      "score": 92,
+      "grade": "A",
+      "roleFit": 92,
+      "url": "https://www.mycareersfuture.gov.sg/job/2d01b81e8b9d4d99ff869e1e5c480360",
+      "location": "CITY HOUSE, ROBINSON ROAD, D01 Marina, Raffles Place, People's Park, Cecil, Singapore",
+      "keywordHits": [
+        "Frontend Engineer",
+        "JavaScript",
+        "TypeScript",
+        "React"
+      ],
+      "topGap": "growth",
+      "mainGaps": [
+        "growth"
+      ],
+      "layer": "C"
+    },
+    {
       "jobKey": "url:https://remotive.com/remote-jobs/software-development/staff-software-engineer-product-belo-horizonte-2090910",
       "company": "LawnStarter",
       "title": "Staff Software Engineer, Product (Belo Horizonte)",
@@ -2981,73 +3040,6 @@ window.CV_CAREER_OPS_DEEP_FIT = {
         "aws",
         "rest",
         "agents"
-      ],
-      "layer": "C"
-    },
-    {
-      "jobKey": "url:https://remotive.com/remote-jobs/software-development/staff-software-engineer-product-sao-paulo-2090912",
-      "company": "LawnStarter",
-      "title": "Staff Software Engineer, Product (São Paulo)",
-      "score": 92,
-      "grade": "A",
-      "roleFit": 92,
-      "url": "https://remotive.com/remote-jobs/software-development/staff-software-engineer-product-sao-paulo-2090912",
-      "location": "Brazil",
-      "keywordHits": [
-        "TypeScript",
-        "React",
-        "API",
-        "remote"
-      ],
-      "topGap": "aws",
-      "mainGaps": [
-        "aws",
-        "rest",
-        "agents"
-      ],
-      "layer": "C"
-    },
-    {
-      "jobKey": "url:https://remotive.com/remote-jobs/software-development/staff-software-engineer-product-campinas-2090913",
-      "company": "LawnStarter",
-      "title": "Staff Software Engineer, Product (Campinas)",
-      "score": 92,
-      "grade": "A",
-      "roleFit": 92,
-      "url": "https://remotive.com/remote-jobs/software-development/staff-software-engineer-product-campinas-2090913",
-      "location": "Brazil",
-      "keywordHits": [
-        "TypeScript",
-        "React",
-        "API",
-        "remote"
-      ],
-      "topGap": "aws",
-      "mainGaps": [
-        "aws",
-        "rest",
-        "agents"
-      ],
-      "layer": "C"
-    },
-    {
-      "jobKey": "url:https://www.themuse.com/jobs/uber/engineering-manager-ii-4accc7",
-      "company": "Uber",
-      "title": "Engineering Manager II",
-      "score": 92,
-      "grade": "A",
-      "roleFit": 92,
-      "url": "https://www.themuse.com/jobs/uber/engineering-manager-ii-4accc7",
-      "location": "Bangalore, India / Hyderabad, India",
-      "keywordHits": [
-        "API",
-        "remote",
-        "Product Engineer"
-      ],
-      "topGap": "growth",
-      "mainGaps": [
-        "growth",
-        "operations"
       ],
       "layer": "C"
     }

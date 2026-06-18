@@ -1,6 +1,6 @@
 # Career Ops Deep Research
 
-Generated: 2026-06-17T00:20:07.059Z
+Generated: 2026-06-18T00:22:59.237Z
 Search provider: none
 Queries: 16
 Evidence items: 7

@@ -1,6 +1,6 @@
 # Career Ops Deep Fit Report
 
-Generated: 2026-06-17T00:20:22.537Z
+Generated: 2026-06-18T00:23:13.614Z
 LLM provider: none
 Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 exploratory)
 
@@ -784,13 +784,19 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Keyword hits: Analytics, analytics
 - Gaps: spark, excel
 
+### N-iX - Senior Scala Engineer
+- Score: 78 | Grade: B | RoleFit: 45
+- Decision: pursue selectively
+- Keyword hits: Analytics, analytics
+- Gaps: docker, kubernetes
+
 ### NVIDIA Workday - Senior Mixed Signal Circuit Design Engineer
 - Score: 77 | Grade: B | RoleFit: 45
 - Decision: pursue selectively
 - Keyword hits: -
 - Gaps: go, excel
 
-### Databricks Greenhouse - Candidate Experience Coordinator
+### Databricks Greenhouse - Candidate Experience Coordinator (6-month contract)
 - Score: 77 | Grade: B | RoleFit: 45
 - Decision: pursue selectively
 - Keyword hits: Analytics, analytics
@@ -874,6 +880,12 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Keyword hits: -
 - Gaps: -
 
+### DCONSTRUCT ROBOTICS PTE. LTD. - Robotics Software Engineer
+- Score: 73 | Grade: B | RoleFit: 45
+- Decision: pursue selectively
+- Keyword hits: -
+- Gaps: -
+
 ### DCONSTRUCT ROBOTICS PTE. LTD. - Software Engineer
 - Score: 73 | Grade: B | RoleFit: 45
 - Decision: pursue selectively
@@ -892,28 +904,10 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Keyword hits: remote
 - Gaps: -
 
-### The Home Depot - HR Services Contact Center Associate
-- Score: 72 | Grade: B | RoleFit: 45
-- Decision: pursue selectively
-- Keyword hits: remote
-- Gaps: -
-
-### DCI CONSULTANTS PRIVATE LIMITED - Software Engineer (.net) - MC
-- Score: 71 | Grade: C | RoleFit: 45
-- Decision: pursue selectively
-- Keyword hits: -
-- Gaps: java, go
-
 ### HPS PARTNERS PTE. LTD. - Senior/Software Engineer (Bluetooth Embedded System)
 - Score: 71 | Grade: C | RoleFit: 45
 - Decision: pursue selectively
 - Keyword hits: -
-- Gaps: -
-
-### PicCollage æ¼è²¼è¶£ - Other Position
-- Score: 71 | Grade: C | RoleFit: 45
-- Decision: pursue selectively
-- Keyword hits: remote
 - Gaps: -
 
 ### Money Forward - QA Manager, Digital Bank
@@ -958,17 +952,11 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Keyword hits: remote
 - Gaps: -
 
-### Covetus - ð Hiring BlueYonder Professionals PAN INDIA
-- Score: 69 | Grade: C | RoleFit: 45
-- Decision: hold / compare
-- Keyword hits: remote
-- Gaps: -
-
-### BURGEON IT SERVICES LLC - SAP MDG Consultant
+### Humanit - Product Implementation Specialist
 - Score: 69 | Grade: C | RoleFit: 45
 - Decision: hold / compare
 - Keyword hits: -
-- Gaps: sql
+- Gaps: -
 
 ### MANPOWER STAFFING SERVICES (SINGAPORE) PTE LTD - Software Engineer C++/C#
 - Score: 68 | Grade: C | RoleFit: 45
@@ -976,20 +964,32 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Keyword hits: -
 - Gaps: -
 
-### PALFINGER ASIA PACIFIC PTE. LTD. - Senior / Service Engineer PLC
-- Score: 68 | Grade: C | RoleFit: 45
+### FindTutors - Become a Student Life Coach Flexible Role UK Â£20 Â£40 hr
+- Score: 67 | Grade: C | RoleFit: 45
 - Decision: hold / compare
 - Keyword hits: remote
 - Gaps: -
 
-### RECRUIT EXPERT PTE. LTD. - Software Engineer (C/C++, Semiconductor/Automation)
-- Score: 68 | Grade: C | RoleFit: 45
+### Fujisoft Co., Ltd. - [In-vehicle Software System Engineer] N2 level or higher welcome / Annual salary of 4.5 million yen or more / Career advancement / Atsugi City, Kanagawa Prefecture
+- Score: 67 | Grade: C | RoleFit: 45
 - Decision: hold / compare
 - Keyword hits: -
 - Gaps: -
 
-### Exactus Energy - Project Assistant
-- Score: 67 | Grade: C | RoleFit: 45
+### NVIDIA - NVIDIA OVX Systems
+- Score: 66 | Grade: C | RoleFit: 45
+- Decision: hold / compare
+- Keyword hits: -
+- Gaps: -
+
+### Tencent Careers China - 腾讯投资-Fund Investment Associate / Associate Director
+- Score: 66 | Grade: C | RoleFit: 45
+- Decision: hold / compare
+- Keyword hits: -
+- Gaps: -
+
+### Hire Feed - Narrator
+- Score: 66 | Grade: C | RoleFit: 45
 - Decision: hold / compare
 - Keyword hits: remote
 - Gaps: -
@@ -1000,19 +1000,21 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - **The Coca-Cola Company — Sr. Software Engineer , Service Supply Chain** (score: 95) | Top gap: growth
 - **The Coca-Cola Company — Software Engineer I** (score: 95) | Top gap: growth
 - **The Coca-Cola Company — Software Engineer I - CRM** (score: 95) | Top gap: crm
-- **Kyndryl — Full Stack Engineer (AI Solutions)** (score: 95) | Top gap: angular
+- **Allstate — Lead Product Engineer - Observability (Enterprise App Monitoring) - Remote** (score: 95) | Top gap: python
 - **Allstate — Software Engineer Lead Consultant** (score: 95) | Top gap: python
+- **Dinii — Senior Software Engineer** (score: 95) | Top gap: aws
 - **Airbnb Greenhouse — Lead - Advanced Analytics, Gurgaon** (score: 95) | Top gap: python
 - **GN AUDIO SINGAPORE PTE. LTD. — Software Engineer II (SteelSeries)** (score: 94) | Top gap: go
 - **GlossGenius — Staff Software Engineer, Frontend** (score: 94) | Top gap: go
 - **GlossGenius — Staff Software Engineer, Frontend** (score: 94) | Top gap: go
 - **GlossGenius — Staff Software Engineer, Frontend** (score: 94) | Top gap: go
 - **Databricks Greenhouse — Director,Technical Solutions (Big Data/ AI)** (score: 94) | Top gap: spark
+- **Centra — Senior Data Engineer** (score: 94) | Top gap: sql
+- **Micron Workday — Product Engineer (Pkg PE MFG),  Heterogeneous Integration Group(HIG), High Bandwidth Memory (HBM)** (score: 93) | Top gap: none
 - **Micron Workday — Product Engineer (Pkg PE MFG),  Heterogeneous Integration Group(HIG), High Bandwidth Memory (HBM)** (score: 93) | Top gap: none
 - **SHEIN STAR PTE. LTD. — Product Manager – Apparel & Accessories** (score: 93) | Top gap: growth
 - **Pilotly — Product Engineer II** (score: 93) | Top gap: aws
 - **Capital One — Distinguished Engineer (Remote - Eligible)** (score: 93) | Top gap: python
-- **Stripe Greenhouse — Android Engineer, Terminal Developer Productivity** (score: 93) | Top gap: java
 - **Figma Greenhouse — Software Engineer, AI Product (London, United Kingdom)** (score: 93) | Top gap: llm
 - **Airbnb Greenhouse — Senior Software Engineer, Quality Platform** (score: 93) | Top gap: python
 - **Airbnb Greenhouse — Senior Web Automation Engineer, Quality Platform** (score: 93) | Top gap: agents
@@ -1020,10 +1022,8 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - **GOVERNMENT TECHNOLOGY AGENCY — Staff Software Engineer - Digital Economy Products** (score: 92) | Top gap: vue
 - **Capgemini Singapore  PTE. LTD. — Senior Frontend Engineer** (score: 92) | Top gap: operations
 - **AIM GLOBAL TALENT PTE. LTD. — Senior Frontend Engineer** (score: 92) | Top gap: aws
+- **REVOLUT TECHNOLOGIES SINGAPORE PTE. LTD. — Frontend Engineer** (score: 92) | Top gap: growth
 - **LawnStarter — Staff Software Engineer, Product (Belo Horizonte)** (score: 92) | Top gap: aws
 - **LawnStarter — Staff Software Engineer, Product (Florianópolis)** (score: 92) | Top gap: aws
 - **LawnStarter — Staff Software Engineer, Product (Porto Alegre)** (score: 92) | Top gap: aws
-- **LawnStarter — Staff Software Engineer, Product (São Paulo)** (score: 92) | Top gap: aws
-- **LawnStarter — Staff Software Engineer, Product (Campinas)** (score: 92) | Top gap: aws
-- **Uber — Engineering Manager II** (score: 92) | Top gap: growth
 

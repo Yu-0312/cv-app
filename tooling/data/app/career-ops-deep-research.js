@@ -1,6 +1,6 @@
 window.CV_CAREER_OPS_DEEP_RESEARCH = {
   "source": "career-ops-deep-research",
-  "generatedAt": "2026-06-17T00:20:07.059Z",
+  "generatedAt": "2026-06-18T00:22:59.237Z",
   "searchProvider": "none",
   "queries": [
     "VANGUARD SOFTWARE PTE. LTD. Expert Frontend Engineer (React.JS & React Native) careers team product funding interview",
