@@ -1,82 +1,82 @@
 {
   "source": "career-ops-learning",
-  "generatedAt": "2026-06-18T00:23:17.151Z",
+  "generatedAt": "2026-06-19T00:30:29.003Z",
   "learning": {
-    "activeJobCount": 83333,
-    "positiveSignalCount": 81508,
+    "activeJobCount": 83375,
+    "positiveSignalCount": 81545,
     "negativeSignalCount": 0,
     "preferredSkills": [
       {
         "name": "data",
-        "score": 36261.5
+        "score": 36156.9
       },
       {
         "name": "api",
-        "score": 35409.4
+        "score": 35333.6
       },
       {
         "name": "API",
-        "score": 35375.5
+        "score": 35287.6
       },
       {
         "name": "product",
-        "score": 27486.3
-      },
-      {
-        "name": "operations",
-        "score": 23288.5
+        "score": 27415.8
       },
       {
         "name": "growth",
-        "score": 23243.4
+        "score": 23553.9
+      },
+      {
+        "name": "operations",
+        "score": 22631.8
       },
       {
         "name": "analytics",
-        "score": 19021.5
+        "score": 18707.6
       },
       {
         "name": "Analytics",
-        "score": 18030.3
-      },
-      {
-        "name": "remote",
-        "score": 17696.5
+        "score": 17797.6
       },
       {
         "name": "sales",
-        "score": 17306.9
+        "score": 17525.7
+      },
+      {
+        "name": "remote",
+        "score": 17057.6
       },
       {
         "name": "engineer",
-        "score": 16555
+        "score": 16649.8
       },
       {
         "name": "python",
-        "score": 12180.9
+        "score": 12427.1
       },
       {
         "name": "go",
-        "score": 9793.4
+        "score": 9728
       },
       {
         "name": "sql",
-        "score": 8494.5
+        "score": 8346
       },
       {
         "name": "excel",
-        "score": 7512.7
+        "score": 7381.5
       },
       {
         "name": "aws",
-        "score": 6660.7
+        "score": 6678
       },
       {
         "name": "azure",
-        "score": 5344.4
+        "score": 5422.7
       },
       {
         "name": "machine learning",
-        "score": 5059.6
+        "score": 5396.4
       }
     ],
     "avoidSignals": [],
@@ -99,31 +99,31 @@
       },
       {
         "name": "SpaceX",
-        "score": 3574
-      },
-      {
-        "name": "Databricks Greenhouse",
-        "score": 2482.4
-      },
-      {
-        "name": "GE Vernova",
-        "score": 2456.5
+        "score": 3665.8
       },
       {
         "name": "Walmart",
-        "score": 2214.1
+        "score": 2671.6
       },
       {
-        "name": "Bank of America",
-        "score": 1993
+        "name": "GE Vernova",
+        "score": 2504.1
       },
       {
-        "name": "Stripe Greenhouse",
-        "score": 1856.8
+        "name": "Databricks Greenhouse",
+        "score": 2472.3
       },
       {
         "name": "Uber",
-        "score": 1573.1
+        "score": 2182.1
+      },
+      {
+        "name": "Bank of America",
+        "score": 2001.2
+      },
+      {
+        "name": "Stripe Greenhouse",
+        "score": 1862.7
       },
       {
         "name": "Bechtel",
@@ -137,81 +137,81 @@
       },
       {
         "name": "cn",
-        "score": 95197.2
+        "score": 95192.9
       },
       {
         "name": "jp",
-        "score": 64257.2
+        "score": 64299.8
       },
       {
         "name": "tw",
-        "score": 63511.5
+        "score": 63515
       },
       {
         "name": "market-public-api",
-        "score": 36047.9
+        "score": 36004.6
       },
       {
         "name": "global",
-        "score": 20040.3
+        "score": 20564.7
       },
       {
         "name": "us",
-        "score": 16486.5
+        "score": 16270.3
       },
       {
         "name": "flex-seed-source",
-        "score": 14355.1
+        "score": 14412.3
       },
       {
         "name": "sg",
-        "score": 2747.8
+        "score": 2796.6
       },
       {
         "name": "in",
-        "score": 2726.8
+        "score": 2298.7
       },
       {
         "name": "uk",
-        "score": 1429
+        "score": 1462.5
       },
       {
         "name": "ca",
-        "score": 1190.5
+        "score": 1144.8
       }
     ],
     "roleFamilies": [
       {
         "name": "Backend",
-        "score": 262213.9
+        "score": 262029.9
       },
       {
         "name": "Frontend",
-        "score": 4419
+        "score": 4508.5
       },
       {
         "name": "AI / Data",
-        "score": 2761.6
+        "score": 2824.2
       },
       {
         "name": "Sales",
-        "score": 1062.3
+        "score": 1058.2
       },
       {
         "name": "Marketing",
-        "score": 680.6
+        "score": 699
       },
       {
         "name": "Product",
-        "score": 541.3
+        "score": 553.6
       },
       {
         "name": "Other",
-        "score": 479.2
+        "score": 476.2
       },
       {
         "name": "Design",
-        "score": 435.6
+        "score": 438.8
       }
     ],
     "sourceCoverage": {
@@ -258,7 +258,7 @@
       ]
     },
     "nextStrategy": [
-      "Expand searches around data, api, API, product, operations.",
+      "Expand searches around data, api, API, product, growth.",
       "Prioritize sources like market-sitemap, cn, jp, tw.",
       "No strong avoid pattern learned yet.",
       "Refresh this learning layer after each batch evaluation or feedback session."
@@ -276,8 +276,8 @@
           "api",
           "API",
           "product",
-          "operations",
           "growth",
+          "operations",
           "Analytics"
         ],
         "avoidKeywords": [
@@ -295,9 +295,9 @@
           "Mynavi Tenshoku Japan Sitemap",
           "JAC Recruitment Japan Detail Sitemap",
           "SpaceX",
-          "Databricks Greenhouse",
+          "Walmart",
           "GE Vernova",
-          "Walmart"
+          "Databricks Greenhouse"
         ]
       }
     }

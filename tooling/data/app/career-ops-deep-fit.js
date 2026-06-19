@@ -1,6 +1,6 @@
 window.CV_CAREER_OPS_DEEP_FIT = {
   "source": "career-ops-deep-fit",
-  "generatedAt": "2026-06-18T00:23:13.614Z",
+  "generatedAt": "2026-06-19T00:30:25.544Z",
   "llmProvider": "none",
   "summary": {
     "totalResults": 95,
@@ -38,10 +38,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
           "html",
           "growth"
         ],
-        "researchSignals": [
-          "AI / data / platform signal",
-          "remote or hybrid signal"
-        ],
+        "researchSignals": [],
         "evidenceCount": 5,
         "compensationLeverage": "high"
       },
@@ -170,6 +167,75 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "llm": null
     },
     {
+      "jobKey": "url:https://www.mycareersfuture.gov.sg/job/eebd44b1382d7840b8c092b1fc312524",
+      "company": "TIKTOK PTE. LTD.",
+      "title": "Frontend Software Engineer (Payment), TikTok Live - Singapore",
+      "score": 95,
+      "grade": "A",
+      "confidence": "medium",
+      "decision": "pursue aggressively",
+      "thesis": "Frontend Software Engineer (Payment), TikTok Live - Singapore at TIKTOK PTE. LTD. is pursue aggressively because the snapshot score is 95, with 6 profile/role keyword hits and 1 external evidence item(s).",
+      "evidence": {
+        "keywordHits": [
+          "Frontend Engineer",
+          "JavaScript",
+          "CSS",
+          "API",
+          "remote",
+          "Frontend Engineer"
+        ],
+        "keywordMisses": [
+          "growth"
+        ],
+        "researchSignals": [
+          "AI / data / platform signal",
+          "remote or hybrid signal"
+        ],
+        "evidenceCount": 1,
+        "compensationLeverage": "high"
+      },
+      "concerns": [],
+      "interviewStrategy": [
+        "Ask why the role is open and what success means in the first 90 days.",
+        "Probe team ownership, roadmap pressure, and cross-functional interfaces.",
+        "What business unit owns the Frontend Software Engineer (Payment), TikTok Live - Singapore role?",
+        "What measurable outcomes would this team expect in the first 90 days?",
+        "What recent company/product signals change the risk or upside?"
+      ],
+      "cvStrategy": [
+        "Lead with proof around: Frontend Engineer, JavaScript, CSS, API, remote, Frontend Engineer.",
+        "Use story story-1: frontend product execution.",
+        "Use story story-2: systems and API collaboration.",
+        "Use story story-3: accessibility and quality."
+      ],
+      "compensationStrategy": {
+        "leverage": "high",
+        "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Frontend Software Engineer (Payment), TikTok Live - Singapore package, including base, bonus, equity, and review cycle?",
+        "valueAnchor": "Based on the scope of Frontend Software Engineer (Payment), TikTok Live - Singapore and my fit around JavaScript, CSS, remote, engineer, I would like to calibrate toward the stronger end of the range if the team sees the level match. My research indicates the JP midpoint for this level is around JPY 8,000,000 (annual)."
+      },
+      "storyHooks": [
+        {
+          "id": "story-1",
+          "theme": "frontend product execution",
+          "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
+          "relevance": 2
+        },
+        {
+          "id": "story-2",
+          "theme": "systems and API collaboration",
+          "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
+          "relevance": 2
+        },
+        {
+          "id": "story-3",
+          "theme": "accessibility and quality",
+          "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
+          "relevance": 2
+        }
+      ],
+      "llm": null
+    },
+    {
       "jobKey": "url:https://www.mycareersfuture.gov.sg/job/0da14018a05634ffde57785dcd4e7783",
       "company": "TIKTOK PTE. LTD.",
       "title": "Frontend Software Engineer (transaction), TikTok Live - Singapore",
@@ -188,7 +254,6 @@ window.CV_CAREER_OPS_DEEP_FIT = {
           "Frontend Engineer"
         ],
         "keywordMisses": [
-          "html",
           "growth"
         ],
         "researchSignals": [
@@ -202,7 +267,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "interviewStrategy": [
         "Ask why the role is open and what success means in the first 90 days.",
         "Probe team ownership, roadmap pressure, and cross-functional interfaces.",
-        "What business unit owns the Frontend Software Engineer (transaction), TikTok Live - Singapore role?",
+        "What business unit owns the Frontend Software Engineer (Payment), TikTok Live - Singapore role?",
         "What measurable outcomes would this team expect in the first 90 days?",
         "What recent company/product signals change the risk or upside?"
       ],
@@ -214,8 +279,8 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       ],
       "compensationStrategy": {
         "leverage": "high",
-        "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Frontend Software Engineer (transaction), TikTok Live - Singapore package, including base, bonus, equity, and review cycle?",
-        "valueAnchor": "Based on the scope of Frontend Software Engineer (transaction), TikTok Live - Singapore and my fit around JavaScript, CSS, remote, engineer, I would like to calibrate toward the stronger end of the range if the team sees the level match. My research indicates the JP midpoint for this level is around JPY 8,000,000 (annual)."
+        "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Frontend Software Engineer (Payment), TikTok Live - Singapore package, including base, bonus, equity, and review cycle?",
+        "valueAnchor": "Based on the scope of Frontend Software Engineer (Payment), TikTok Live - Singapore and my fit around JavaScript, CSS, remote, engineer, I would like to calibrate toward the stronger end of the range if the team sees the level match. My research indicates the JP midpoint for this level is around JPY 8,000,000 (annual)."
       },
       "storyHooks": [
         {
@@ -271,10 +336,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
           "deep learning",
           "computer vision"
         ],
-        "researchSignals": [
-          "AI / data / platform signal",
-          "remote or hybrid signal"
-        ],
+        "researchSignals": [],
         "evidenceCount": 5,
         "compensationLeverage": "high"
       },
@@ -407,7 +469,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "grade": "A",
       "confidence": "medium",
       "decision": "pursue aggressively",
-      "thesis": "Senior Software Engineer II at The Coca-Cola Company is pursue aggressively because the snapshot score is 95, with 2 profile/role keyword hits and 3 external evidence item(s).",
+      "thesis": "Senior Software Engineer II at The Coca-Cola Company is pursue aggressively because the snapshot score is 95, with 2 profile/role keyword hits and 2 external evidence item(s).",
       "evidence": {
         "keywordHits": [
           "API",
@@ -421,7 +483,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
           "AI / data / platform signal",
           "remote or hybrid signal"
         ],
-        "evidenceCount": 3,
+        "evidenceCount": 2,
         "compensationLeverage": "high"
       },
       "concerns": [],
@@ -471,9 +533,9 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "title": "Lead Software Engineer",
       "score": 95,
       "grade": "A",
-      "confidence": "medium",
+      "confidence": "high",
       "decision": "pursue aggressively",
-      "thesis": "Lead Software Engineer at Disney is pursue aggressively because the snapshot score is 95, with 5 profile/role keyword hits and 1 external evidence item(s).",
+      "thesis": "Lead Software Engineer at Disney is pursue aggressively because the snapshot score is 95, with 5 profile/role keyword hits and 5 external evidence item(s).",
       "evidence": {
         "keywordHits": [
           "JavaScript",
@@ -486,10 +548,8 @@ window.CV_CAREER_OPS_DEEP_FIT = {
           "rust",
           "aws"
         ],
-        "researchSignals": [
-          "AI / data / platform signal"
-        ],
-        "evidenceCount": 1,
+        "researchSignals": [],
+        "evidenceCount": 5,
         "compensationLeverage": "high"
       },
       "concerns": [],
@@ -541,7 +601,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "grade": "A",
       "confidence": "medium",
       "decision": "pursue aggressively",
-      "thesis": "Principal Engineer - GBS IND at Bank of America is pursue aggressively because the snapshot score is 95, with 2 profile/role keyword hits and 1 external evidence item(s).",
+      "thesis": "Principal Engineer - GBS IND at Bank of America is pursue aggressively because the snapshot score is 95, with 2 profile/role keyword hits and 0 external evidence item(s).",
       "evidence": {
         "keywordHits": [
           "API",
@@ -553,21 +613,17 @@ window.CV_CAREER_OPS_DEEP_FIT = {
           "growth",
           "operations"
         ],
-        "researchSignals": [
-          "AI / data / platform signal"
-        ],
-        "evidenceCount": 1,
+        "researchSignals": [],
+        "evidenceCount": 0,
         "compensationLeverage": "high"
       },
       "concerns": [
+        "External company evidence is thin; run deep research with a search API.",
         "Profile keyword coverage is weaker than the target role language."
       ],
       "interviewStrategy": [
         "Ask why the role is open and what success means in the first 90 days.",
-        "Probe team ownership, roadmap pressure, and cross-functional interfaces.",
-        "What business unit owns the Principal Engineer - GBS IND role?",
-        "What measurable outcomes would this team expect in the first 90 days?",
-        "What recent company/product signals change the risk or upside?"
+        "Probe team ownership, roadmap pressure, and cross-functional interfaces."
       ],
       "cvStrategy": [
         "Lead with proof around: API, Full Stack Engineer.",
@@ -610,7 +666,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "grade": "A",
       "confidence": "medium",
       "decision": "pursue aggressively",
-      "thesis": "Software Engineer II - CRM at The Coca-Cola Company is pursue aggressively because the snapshot score is 95, with 2 profile/role keyword hits and 3 external evidence item(s).",
+      "thesis": "Software Engineer II - CRM at The Coca-Cola Company is pursue aggressively because the snapshot score is 95, with 2 profile/role keyword hits and 2 external evidence item(s).",
       "evidence": {
         "keywordHits": [
           "API",
@@ -625,7 +681,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
           "AI / data / platform signal",
           "remote or hybrid signal"
         ],
-        "evidenceCount": 3,
+        "evidenceCount": 2,
         "compensationLeverage": "high"
       },
       "concerns": [
@@ -679,7 +735,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "grade": "A",
       "confidence": "medium",
       "decision": "pursue aggressively",
-      "thesis": "Software Engineer I at The Coca-Cola Company is pursue aggressively because the snapshot score is 95, with 2 profile/role keyword hits and 3 external evidence item(s).",
+      "thesis": "Software Engineer I at The Coca-Cola Company is pursue aggressively because the snapshot score is 95, with 2 profile/role keyword hits and 2 external evidence item(s).",
       "evidence": {
         "keywordHits": [
           "API",
@@ -693,7 +749,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
           "AI / data / platform signal",
           "remote or hybrid signal"
         ],
-        "evidenceCount": 3,
+        "evidenceCount": 2,
         "compensationLeverage": "high"
       },
       "concerns": [],
@@ -745,7 +801,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "grade": "A",
       "confidence": "medium",
       "decision": "pursue aggressively",
-      "thesis": "Senior Software Engineer , Service Provider at The Coca-Cola Company is pursue aggressively because the snapshot score is 95, with 2 profile/role keyword hits and 3 external evidence item(s).",
+      "thesis": "Senior Software Engineer , Service Provider at The Coca-Cola Company is pursue aggressively because the snapshot score is 95, with 2 profile/role keyword hits and 2 external evidence item(s).",
       "evidence": {
         "keywordHits": [
           "API",
@@ -759,7 +815,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
           "AI / data / platform signal",
           "remote or hybrid signal"
         ],
-        "evidenceCount": 3,
+        "evidenceCount": 2,
         "compensationLeverage": "high"
       },
       "concerns": [],
@@ -811,7 +867,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "grade": "A",
       "confidence": "medium",
       "decision": "pursue aggressively",
-      "thesis": "Software Engineer II - CRM at The Coca-Cola Company is pursue aggressively because the snapshot score is 95, with 2 profile/role keyword hits and 3 external evidence item(s).",
+      "thesis": "Software Engineer II - CRM at The Coca-Cola Company is pursue aggressively because the snapshot score is 95, with 2 profile/role keyword hits and 2 external evidence item(s).",
       "evidence": {
         "keywordHits": [
           "API",
@@ -826,7 +882,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
           "AI / data / platform signal",
           "remote or hybrid signal"
         ],
-        "evidenceCount": 3,
+        "evidenceCount": 2,
         "compensationLeverage": "high"
       },
       "concerns": [
@@ -880,7 +936,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "grade": "A",
       "confidence": "medium",
       "decision": "pursue aggressively",
-      "thesis": "Senior Software Engineer - CRM at The Coca-Cola Company is pursue aggressively because the snapshot score is 95, with 2 profile/role keyword hits and 3 external evidence item(s).",
+      "thesis": "Senior Software Engineer - CRM at The Coca-Cola Company is pursue aggressively because the snapshot score is 95, with 2 profile/role keyword hits and 2 external evidence item(s).",
       "evidence": {
         "keywordHits": [
           "API",
@@ -895,7 +951,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
           "AI / data / platform signal",
           "remote or hybrid signal"
         ],
-        "evidenceCount": 3,
+        "evidenceCount": 2,
         "compensationLeverage": "high"
       },
       "concerns": [
@@ -949,7 +1005,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "grade": "A",
       "confidence": "medium",
       "decision": "pursue aggressively",
-      "thesis": "Senior Software Engineer at The Coca-Cola Company is pursue aggressively because the snapshot score is 95, with 2 profile/role keyword hits and 3 external evidence item(s).",
+      "thesis": "Senior Software Engineer at The Coca-Cola Company is pursue aggressively because the snapshot score is 95, with 2 profile/role keyword hits and 2 external evidence item(s).",
       "evidence": {
         "keywordHits": [
           "API",
@@ -963,7 +1019,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
           "AI / data / platform signal",
           "remote or hybrid signal"
         ],
-        "evidenceCount": 3,
+        "evidenceCount": 2,
         "compensationLeverage": "high"
       },
       "concerns": [],
@@ -1015,7 +1071,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "grade": "A",
       "confidence": "medium",
       "decision": "pursue aggressively",
-      "thesis": "Software Engineer I at The Coca-Cola Company is pursue aggressively because the snapshot score is 95, with 2 profile/role keyword hits and 3 external evidence item(s).",
+      "thesis": "Software Engineer I at The Coca-Cola Company is pursue aggressively because the snapshot score is 95, with 2 profile/role keyword hits and 2 external evidence item(s).",
       "evidence": {
         "keywordHits": [
           "API",
@@ -1029,7 +1085,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
           "AI / data / platform signal",
           "remote or hybrid signal"
         ],
-        "evidenceCount": 3,
+        "evidenceCount": 2,
         "compensationLeverage": "high"
       },
       "concerns": [],
@@ -1081,7 +1137,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "grade": "A",
       "confidence": "medium",
       "decision": "pursue aggressively",
-      "thesis": "Software Engineer II at The Coca-Cola Company is pursue aggressively because the snapshot score is 95, with 2 profile/role keyword hits and 3 external evidence item(s).",
+      "thesis": "Software Engineer II at The Coca-Cola Company is pursue aggressively because the snapshot score is 95, with 2 profile/role keyword hits and 2 external evidence item(s).",
       "evidence": {
         "keywordHits": [
           "API",
@@ -1095,7 +1151,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
           "AI / data / platform signal",
           "remote or hybrid signal"
         ],
-        "evidenceCount": 3,
+        "evidenceCount": 2,
         "compensationLeverage": "high"
       },
       "concerns": [],
@@ -1147,7 +1203,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "grade": "A",
       "confidence": "medium",
       "decision": "pursue aggressively",
-      "thesis": "Software Engineer I at The Coca-Cola Company is pursue aggressively because the snapshot score is 95, with 2 profile/role keyword hits and 3 external evidence item(s).",
+      "thesis": "Software Engineer I at The Coca-Cola Company is pursue aggressively because the snapshot score is 95, with 2 profile/role keyword hits and 2 external evidence item(s).",
       "evidence": {
         "keywordHits": [
           "API",
@@ -1161,7 +1217,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
           "AI / data / platform signal",
           "remote or hybrid signal"
         ],
-        "evidenceCount": 3,
+        "evidenceCount": 2,
         "compensationLeverage": "high"
       },
       "concerns": [],
@@ -1213,7 +1269,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "grade": "A",
       "confidence": "medium",
       "decision": "pursue aggressively",
-      "thesis": "Software Engineer II - CRM at The Coca-Cola Company is pursue aggressively because the snapshot score is 95, with 2 profile/role keyword hits and 3 external evidence item(s).",
+      "thesis": "Software Engineer II - CRM at The Coca-Cola Company is pursue aggressively because the snapshot score is 95, with 2 profile/role keyword hits and 2 external evidence item(s).",
       "evidence": {
         "keywordHits": [
           "API",
@@ -1228,7 +1284,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
           "AI / data / platform signal",
           "remote or hybrid signal"
         ],
-        "evidenceCount": 3,
+        "evidenceCount": 2,
         "compensationLeverage": "high"
       },
       "concerns": [
@@ -1282,7 +1338,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "grade": "A",
       "confidence": "medium",
       "decision": "pursue aggressively",
-      "thesis": "Software Engineering I at The Coca-Cola Company is pursue aggressively because the snapshot score is 95, with 2 profile/role keyword hits and 3 external evidence item(s).",
+      "thesis": "Software Engineering I at The Coca-Cola Company is pursue aggressively because the snapshot score is 95, with 2 profile/role keyword hits and 2 external evidence item(s).",
       "evidence": {
         "keywordHits": [
           "API",
@@ -1296,7 +1352,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
           "AI / data / platform signal",
           "remote or hybrid signal"
         ],
-        "evidenceCount": 3,
+        "evidenceCount": 2,
         "compensationLeverage": "high"
       },
       "concerns": [],
@@ -1348,7 +1404,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "grade": "A",
       "confidence": "medium",
       "decision": "pursue aggressively",
-      "thesis": "Software Engineer I at The Coca-Cola Company is pursue aggressively because the snapshot score is 95, with 2 profile/role keyword hits and 3 external evidence item(s).",
+      "thesis": "Software Engineer I at The Coca-Cola Company is pursue aggressively because the snapshot score is 95, with 2 profile/role keyword hits and 2 external evidence item(s).",
       "evidence": {
         "keywordHits": [
           "API",
@@ -1362,7 +1418,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
           "AI / data / platform signal",
           "remote or hybrid signal"
         ],
-        "evidenceCount": 3,
+        "evidenceCount": 2,
         "compensationLeverage": "high"
       },
       "concerns": [],
@@ -1414,7 +1470,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "grade": "A",
       "confidence": "medium",
       "decision": "pursue aggressively",
-      "thesis": "Software Engineer I - CRM at The Coca-Cola Company is pursue aggressively because the snapshot score is 95, with 2 profile/role keyword hits and 3 external evidence item(s).",
+      "thesis": "Software Engineer I - CRM at The Coca-Cola Company is pursue aggressively because the snapshot score is 95, with 2 profile/role keyword hits and 2 external evidence item(s).",
       "evidence": {
         "keywordHits": [
           "API",
@@ -1429,7 +1485,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
           "AI / data / platform signal",
           "remote or hybrid signal"
         ],
-        "evidenceCount": 3,
+        "evidenceCount": 2,
         "compensationLeverage": "high"
       },
       "concerns": [
@@ -1476,76 +1532,6 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "llm": null
     },
     {
-      "jobKey": "url:https://www.themuse.com/jobs/usaa/software-engineer-midlevel-java-full-stack-a3566c",
-      "company": "USAA",
-      "title": "Software Engineer Mid-level (Java Full Stack)",
-      "score": 95,
-      "grade": "A",
-      "confidence": "medium",
-      "decision": "pursue aggressively",
-      "thesis": "Software Engineer Mid-level (Java Full Stack) at USAA is pursue aggressively because the snapshot score is 95, with 5 profile/role keyword hits and 0 external evidence item(s).",
-      "evidence": {
-        "keywordHits": [
-          "JavaScript",
-          "CSS",
-          "API",
-          "remote",
-          "Full Stack Engineer"
-        ],
-        "keywordMisses": [
-          "python",
-          "java",
-          "go",
-          "swift",
-          "kotlin",
-          "sql",
-          "aws",
-          "docker",
-          "html",
-          "operations"
-        ],
-        "researchSignals": [],
-        "evidenceCount": 0,
-        "compensationLeverage": ""
-      },
-      "concerns": [
-        "External company evidence is thin; run deep research with a search API.",
-        "Profile keyword coverage is weaker than the target role language."
-      ],
-      "interviewStrategy": [
-        "Ask why the role is open and what success means in the first 90 days.",
-        "Probe team ownership, roadmap pressure, and cross-functional interfaces."
-      ],
-      "cvStrategy": [
-        "Lead with proof around: JavaScript, CSS, API, remote, Full Stack Engineer.",
-        "Use story story-1: frontend product execution.",
-        "Use story story-2: systems and API collaboration.",
-        "Use story story-3: accessibility and quality."
-      ],
-      "compensationStrategy": null,
-      "storyHooks": [
-        {
-          "id": "story-1",
-          "theme": "frontend product execution",
-          "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
-          "relevance": 2
-        },
-        {
-          "id": "story-2",
-          "theme": "systems and API collaboration",
-          "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
-          "relevance": 2
-        },
-        {
-          "id": "story-3",
-          "theme": "accessibility and quality",
-          "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
-          "relevance": 2
-        }
-      ],
-      "llm": null
-    },
-    {
       "jobKey": "url:https://www.themuse.com/jobs/thecocacolacompany/software-engineer-ii",
       "company": "The Coca-Cola Company",
       "title": "Software Engineer II",
@@ -1553,7 +1539,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "grade": "A",
       "confidence": "medium",
       "decision": "pursue aggressively",
-      "thesis": "Software Engineer II at The Coca-Cola Company is pursue aggressively because the snapshot score is 95, with 2 profile/role keyword hits and 3 external evidence item(s).",
+      "thesis": "Software Engineer II at The Coca-Cola Company is pursue aggressively because the snapshot score is 95, with 2 profile/role keyword hits and 2 external evidence item(s).",
       "evidence": {
         "keywordHits": [
           "API",
@@ -1567,7 +1553,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
           "AI / data / platform signal",
           "remote or hybrid signal"
         ],
-        "evidenceCount": 3,
+        "evidenceCount": 2,
         "compensationLeverage": "high"
       },
       "concerns": [],
@@ -1612,76 +1598,6 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "llm": null
     },
     {
-      "jobKey": "url:https://www.themuse.com/jobs/usaa/software-engineer-midlevel-java-full-stack-bbdb10",
-      "company": "USAA",
-      "title": "Software Engineer Mid-level (Java Full Stack)",
-      "score": 95,
-      "grade": "A",
-      "confidence": "medium",
-      "decision": "pursue aggressively",
-      "thesis": "Software Engineer Mid-level (Java Full Stack) at USAA is pursue aggressively because the snapshot score is 95, with 5 profile/role keyword hits and 0 external evidence item(s).",
-      "evidence": {
-        "keywordHits": [
-          "JavaScript",
-          "CSS",
-          "API",
-          "remote",
-          "Full Stack Engineer"
-        ],
-        "keywordMisses": [
-          "python",
-          "java",
-          "go",
-          "swift",
-          "kotlin",
-          "sql",
-          "aws",
-          "docker",
-          "html",
-          "operations"
-        ],
-        "researchSignals": [],
-        "evidenceCount": 0,
-        "compensationLeverage": ""
-      },
-      "concerns": [
-        "External company evidence is thin; run deep research with a search API.",
-        "Profile keyword coverage is weaker than the target role language."
-      ],
-      "interviewStrategy": [
-        "Ask why the role is open and what success means in the first 90 days.",
-        "Probe team ownership, roadmap pressure, and cross-functional interfaces."
-      ],
-      "cvStrategy": [
-        "Lead with proof around: JavaScript, CSS, API, remote, Full Stack Engineer.",
-        "Use story story-1: frontend product execution.",
-        "Use story story-2: systems and API collaboration.",
-        "Use story story-3: accessibility and quality."
-      ],
-      "compensationStrategy": null,
-      "storyHooks": [
-        {
-          "id": "story-1",
-          "theme": "frontend product execution",
-          "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
-          "relevance": 2
-        },
-        {
-          "id": "story-2",
-          "theme": "systems and API collaboration",
-          "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
-          "relevance": 2
-        },
-        {
-          "id": "story-3",
-          "theme": "accessibility and quality",
-          "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
-          "relevance": 2
-        }
-      ],
-      "llm": null
-    },
-    {
       "jobKey": "url:https://www.themuse.com/jobs/thecocacolacompany/senior-software-engineer-crm-182c0e",
       "company": "The Coca-Cola Company",
       "title": "Senior Software Engineer - CRM",
@@ -1689,7 +1605,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "grade": "A",
       "confidence": "medium",
       "decision": "pursue aggressively",
-      "thesis": "Senior Software Engineer - CRM at The Coca-Cola Company is pursue aggressively because the snapshot score is 95, with 2 profile/role keyword hits and 3 external evidence item(s).",
+      "thesis": "Senior Software Engineer - CRM at The Coca-Cola Company is pursue aggressively because the snapshot score is 95, with 2 profile/role keyword hits and 2 external evidence item(s).",
       "evidence": {
         "keywordHits": [
           "API",
@@ -1704,7 +1620,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
           "AI / data / platform signal",
           "remote or hybrid signal"
         ],
-        "evidenceCount": 3,
+        "evidenceCount": 2,
         "compensationLeverage": "high"
       },
       "concerns": [
@@ -1727,6 +1643,75 @@ window.CV_CAREER_OPS_DEEP_FIT = {
         "leverage": "high",
         "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Senior Software Engineer II package, including base, bonus, equity, and review cycle?",
         "valueAnchor": "Based on the scope of Senior Software Engineer II and my fit around API, engineer, product, data, I would like to calibrate toward the stronger end of the range if the team sees the level match."
+      },
+      "storyHooks": [
+        {
+          "id": "story-1",
+          "theme": "frontend product execution",
+          "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
+          "relevance": 0
+        },
+        {
+          "id": "story-2",
+          "theme": "systems and API collaboration",
+          "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
+          "relevance": 0
+        },
+        {
+          "id": "story-3",
+          "theme": "accessibility and quality",
+          "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
+          "relevance": 0
+        }
+      ],
+      "llm": null
+    },
+    {
+      "jobKey": "url:https://www.themuse.com/jobs/bankofamerica/vice-president-feature-lead-technology-54a664",
+      "company": "Bank of America",
+      "title": "Vice President; Feature Lead - Technology",
+      "score": 95,
+      "grade": "A",
+      "confidence": "medium",
+      "decision": "pursue aggressively",
+      "thesis": "Vice President; Feature Lead - Technology at Bank of America is pursue aggressively because the snapshot score is 95, with 3 profile/role keyword hits and 0 external evidence item(s).",
+      "evidence": {
+        "keywordHits": [
+          "API",
+          "remote",
+          "Full Stack Engineer"
+        ],
+        "keywordMisses": [
+          "python",
+          "java",
+          "docker",
+          "kubernetes",
+          "rest",
+          "spark",
+          "growth"
+        ],
+        "researchSignals": [],
+        "evidenceCount": 0,
+        "compensationLeverage": "high"
+      },
+      "concerns": [
+        "External company evidence is thin; run deep research with a search API.",
+        "Profile keyword coverage is weaker than the target role language."
+      ],
+      "interviewStrategy": [
+        "Ask why the role is open and what success means in the first 90 days.",
+        "Probe team ownership, roadmap pressure, and cross-functional interfaces."
+      ],
+      "cvStrategy": [
+        "Lead with proof around: API, remote, Full Stack Engineer.",
+        "Use story story-1: frontend product execution.",
+        "Use story story-2: systems and API collaboration.",
+        "Use story story-3: accessibility and quality."
+      ],
+      "compensationStrategy": {
+        "leverage": "high",
+        "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Principal Engineer - GBS IND package, including base, bonus, equity, and review cycle?",
+        "valueAnchor": "Based on the scope of Principal Engineer - GBS IND and my fit around API, engineer, data, I would like to calibrate toward the stronger end of the range if the team sees the level match."
       },
       "storyHooks": [
         {
@@ -1842,26 +1827,6 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "layer": "B"
     },
     {
-      "jobKey": "url:https://justjoin.it/job-offer/n-ix-senior-scala-engineer-krakow-scala-15ebf7dd",
-      "company": "N-iX",
-      "title": "Senior Scala Engineer",
-      "score": 78,
-      "grade": "B",
-      "roleFit": 45,
-      "url": "https://justjoin.it/job-offer/n-ix-senior-scala-engineer-krakow-scala-15ebf7dd",
-      "location": "Kraków, PL",
-      "keywordHits": [
-        "Analytics",
-        "analytics"
-      ],
-      "keywordMisses": [
-        "docker",
-        "kubernetes"
-      ],
-      "decision": "pursue selectively",
-      "layer": "B"
-    },
-    {
       "jobKey": "url:https://nvidia.wd5.myworkdayjobs.com/nvidiaexternalcareersite/job/taiwan-hsinchu/senior-mixed-signal-circuit-design-engineer_jr2015519",
       "company": "NVIDIA Workday",
       "title": "Senior Mixed Signal Circuit Design Engineer",
@@ -1952,6 +1917,23 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Denmark-Roskilde/Hardware-Design-Engineer---Interconnect-Design_JR2018723",
       "location": "Denmark, Roskilde",
       "keywordHits": [],
+      "keywordMisses": [],
+      "decision": "pursue selectively",
+      "layer": "B"
+    },
+    {
+      "jobKey": "url:https://www.daijob.com/en/jobs/detail/1530593",
+      "company": "Infosys Limited",
+      "title": "Workday HCM Consultant",
+      "score": 75,
+      "grade": "B",
+      "roleFit": 45,
+      "url": "https://www.daijob.com/en/jobs/detail/1530593",
+      "location": "Tokyo, JP",
+      "keywordHits": [
+        "Analytics",
+        "analytics"
+      ],
       "keywordMisses": [],
       "decision": "pursue selectively",
       "layer": "B"
@@ -2113,6 +2095,25 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "layer": "B"
     },
     {
+      "jobKey": "url:https://www.mycareersfuture.gov.sg/job/a2b730e330ad00748ec1e528aa397660",
+      "company": "ELEC-PRO TECHNOLOGY PTE. LTD.",
+      "title": "Software Engineer (LABVIEW)",
+      "score": 73,
+      "grade": "B",
+      "roleFit": 45,
+      "url": "https://www.mycareersfuture.gov.sg/job/a2b730e330ad00748ec1e528aa397660",
+      "location": "Islandwide, Singapore",
+      "keywordHits": [
+        "JavaScript"
+      ],
+      "keywordMisses": [
+        "python",
+        "sql"
+      ],
+      "decision": "pursue selectively",
+      "layer": "B"
+    },
+    {
       "jobKey": "url:https://www.mycareersfuture.gov.sg/job/4449d6bd725a1b749416cdb5daf65f62",
       "company": "DCONSTRUCT ROBOTICS PTE. LTD.",
       "title": "Software Engineer",
@@ -2141,22 +2142,6 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "keywordMisses": [
         "python"
       ],
-      "decision": "pursue selectively",
-      "layer": "B"
-    },
-    {
-      "jobKey": "url:https://remoteok.com/remote-jobs/remote-production-utility-fxi-1133415",
-      "company": "FXI",
-      "title": "Production Utility",
-      "score": 72,
-      "grade": "B",
-      "roleFit": 45,
-      "url": "https://remoteok.com/remote-jobs/remote-production-utility-fxi-1133415",
-      "location": "Santa Teresa,",
-      "keywordHits": [
-        "remote"
-      ],
-      "keywordMisses": [],
       "decision": "pursue selectively",
       "layer": "B"
     },
@@ -2219,6 +2204,20 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "layer": "B"
     },
     {
+      "jobKey": "url:https://www.daijob.com/en/jobs/detail/1521847",
+      "company": "I-PEX Inc.",
+      "title": "[2027 New Graduates] Generalist Positions in Science and Engineering",
+      "score": 70,
+      "grade": "C",
+      "roleFit": 45,
+      "url": "https://www.daijob.com/en/jobs/detail/1521847",
+      "location": "Fukuoka, JP / Shimane, JP",
+      "keywordHits": [],
+      "keywordMisses": [],
+      "decision": "pursue selectively",
+      "layer": "B"
+    },
+    {
       "jobKey": "url:https://www.cake.me/companies/qpp/jobs/senior-software-engineer-team-lead",
       "company": "雋思集團_香港商雋思產品發展有限公司(台灣)",
       "title": "Senior Software Engineer",
@@ -2247,47 +2246,18 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "layer": "B"
     },
     {
-      "jobKey": "url:https://remoteok.com/remote-jobs/remote-various-positions-northern-news-services-1133385",
-      "company": "Northern News Services",
-      "title": "Various Positions",
+      "jobKey": "url:https://www.mycareersfuture.gov.sg/job/2ea3fd4b3e51af0199ec840f6961484c",
+      "company": "APAR TECHNOLOGIES PTE. LTD.",
+      "title": "Business Analyst",
       "score": 69,
       "grade": "C",
       "roleFit": 45,
-      "url": "https://remoteok.com/remote-jobs/remote-various-positions-northern-news-services-1133385",
-      "location": "Northwest Territories,",
+      "url": "https://www.mycareersfuture.gov.sg/job/2ea3fd4b3e51af0199ec840f6961484c",
+      "location": "SGX CENTRE II, SHENTON WAY, D01 Marina, Raffles Place, People's Park, Cecil, Singapore",
       "keywordHits": [
-        "remote"
+        "Analytics",
+        "analytics"
       ],
-      "keywordMisses": [],
-      "decision": "hold / compare",
-      "layer": "B"
-    },
-    {
-      "jobKey": "url:https://remoteok.com/remote-jobs/remote-interdisciplinary-us-army-corps-of-engineers-1133360",
-      "company": "US Army Corps of Engineers",
-      "title": "Interdisciplinary",
-      "score": 69,
-      "grade": "C",
-      "roleFit": 45,
-      "url": "https://remoteok.com/remote-jobs/remote-interdisciplinary-us-army-corps-of-engineers-1133360",
-      "location": "Savannah,",
-      "keywordHits": [
-        "remote"
-      ],
-      "keywordMisses": [],
-      "decision": "hold / compare",
-      "layer": "B"
-    },
-    {
-      "jobKey": "url:https://justjoin.it/job-offer/humanit-product-implementation-specialist-wroclaw-pm",
-      "company": "Humanit",
-      "title": "Product Implementation Specialist",
-      "score": 69,
-      "grade": "C",
-      "roleFit": 45,
-      "url": "https://justjoin.it/job-offer/humanit-product-implementation-specialist-wroclaw-pm",
-      "location": "Wrocław, PL",
-      "keywordHits": [],
       "keywordMisses": [],
       "decision": "hold / compare",
       "layer": "B"
@@ -2307,6 +2277,52 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "layer": "B"
     },
     {
+      "jobKey": "url:https://www.daijob.com/en/jobs/detail/1280254",
+      "company": "Galileo Co.,Ltd./株式会社ガリレオ",
+      "title": "Visa support★Relocation allowance★ [Mechanical engineer] People with skills in CAD/MATLAB/Python etc. are welcome Kanto / Nagoya",
+      "score": 68,
+      "grade": "C",
+      "roleFit": 45,
+      "url": "https://www.daijob.com/en/jobs/detail/1280254",
+      "location": "Aichi, JP / Tokyo, JP / Kanagawa, JP",
+      "keywordHits": [],
+      "keywordMisses": [
+        "python"
+      ],
+      "decision": "hold / compare",
+      "layer": "B"
+    },
+    {
+      "jobKey": "url:http://apply.careers.microsoft.com/careers/job/1970393556875994?hl=en",
+      "company": "Microsoft",
+      "title": "Customer Success Account Manager",
+      "score": 67,
+      "grade": "C",
+      "roleFit": 45,
+      "url": "http://apply.careers.microsoft.com/careers/job/1970393556875994?hl=en",
+      "location": "Shanghai, Shanghai,CN, CN",
+      "keywordHits": [],
+      "keywordMisses": [],
+      "decision": "hold / compare",
+      "layer": "B"
+    },
+    {
+      "jobKey": "url:https://remoteok.com/remote-jobs/remote-industrial-operatives-denholm-energy-services-1133652",
+      "company": "Denholm Energy Services",
+      "title": "Industrial Operatives",
+      "score": 67,
+      "grade": "C",
+      "roleFit": 45,
+      "url": "https://remoteok.com/remote-jobs/remote-industrial-operatives-denholm-energy-services-1133652",
+      "location": "Accrington,",
+      "keywordHits": [
+        "remote"
+      ],
+      "keywordMisses": [],
+      "decision": "hold / compare",
+      "layer": "B"
+    },
+    {
       "jobKey": "url:https://remoteok.com/remote-jobs/remote-become-a-student-life-coach-flexible-role-uk-20-40-hr-findtutors-1133462",
       "company": "FindTutors",
       "title": "Become a Student Life Coach Flexible Role UK Â£20 Â£40 hr",
@@ -2318,20 +2334,6 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "keywordHits": [
         "remote"
       ],
-      "keywordMisses": [],
-      "decision": "hold / compare",
-      "layer": "B"
-    },
-    {
-      "jobKey": "url:https://www.daijob.com/en/jobs/detail/1483003",
-      "company": "Fujisoft Co., Ltd.",
-      "title": "[In-vehicle Software System Engineer] N2 level or higher welcome / Annual salary of 4.5 million yen or more / Career advancement / Atsugi City, Kanagawa Prefecture",
-      "score": 67,
-      "grade": "C",
-      "roleFit": 45,
-      "url": "https://www.daijob.com/en/jobs/detail/1483003",
-      "location": "Kanagawa, JP",
-      "keywordHits": [],
       "keywordMisses": [],
       "decision": "hold / compare",
       "layer": "B"
@@ -2363,48 +2365,9 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "keywordMisses": [],
       "decision": "hold / compare",
       "layer": "B"
-    },
-    {
-      "jobKey": "url:https://remoteok.com/remote-jobs/remote-narrator-hire-feed-1133501",
-      "company": "Hire Feed",
-      "title": "Narrator",
-      "score": 66,
-      "grade": "C",
-      "roleFit": 45,
-      "url": "https://remoteok.com/remote-jobs/remote-narrator-hire-feed-1133501",
-      "location": "Remote,",
-      "keywordHits": [
-        "remote"
-      ],
-      "keywordMisses": [],
-      "decision": "hold / compare",
-      "layer": "B"
     }
   ],
   "layerC": [
-    {
-      "jobKey": "url:https://www.themuse.com/jobs/bankofamerica/vice-president-feature-lead-technology-54a664",
-      "company": "Bank of America",
-      "title": "Vice President; Feature Lead - Technology",
-      "score": 95,
-      "grade": "A",
-      "roleFit": 92,
-      "url": "https://www.themuse.com/jobs/bankofamerica/vice-president-feature-lead-technology-54a664",
-      "location": "Newark, DE",
-      "keywordHits": [
-        "API",
-        "remote",
-        "Full Stack Engineer"
-      ],
-      "topGap": "python",
-      "mainGaps": [
-        "python",
-        "java",
-        "docker",
-        "kubernetes"
-      ],
-      "layer": "C"
-    },
     {
       "jobKey": "url:https://www.themuse.com/jobs/thecocacolacompany/sr-software-engineer-service-supply-chain",
       "company": "The Coca-Cola Company",
@@ -2463,6 +2426,30 @@ window.CV_CAREER_OPS_DEEP_FIT = {
         "crm",
         "growth",
         "sales"
+      ],
+      "layer": "C"
+    },
+    {
+      "jobKey": "url:https://www.themuse.com/jobs/airbnb/senior-manager-machine-learning-customer-support-engineering",
+      "company": "Airbnb",
+      "title": "Senior/ Manager, Machine Learning, Customer Support Engineering",
+      "score": 95,
+      "grade": "A",
+      "roleFit": 92,
+      "url": "https://www.themuse.com/jobs/airbnb/senior-manager-machine-learning-customer-support-engineering",
+      "location": "Lanzhou, China",
+      "keywordHits": [
+        "Frontend Engineer",
+        "Analytics",
+        "API",
+        "analytics"
+      ],
+      "topGap": "llm",
+      "mainGaps": [
+        "llm",
+        "agents",
+        "machine learning",
+        "growth"
       ],
       "layer": "C"
     },
@@ -2670,13 +2657,13 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "layer": "C"
     },
     {
-      "jobKey": "url:https://justjoin.it/job-offer/centra-senior-analytics-engineer-wroclaw-analytics",
+      "jobKey": "url:https://justjoin.it/job-offer/centra-senior-analytics-engineer-wroclaw-data",
       "company": "Centra",
       "title": "Senior Data Engineer",
       "score": 94,
       "grade": "A",
       "roleFit": 92,
-      "url": "https://justjoin.it/job-offer/centra-senior-analytics-engineer-wroclaw-analytics",
+      "url": "https://justjoin.it/job-offer/centra-senior-analytics-engineer-wroclaw-data",
       "location": "Wrocław, PL",
       "keywordHits": [
         "Analytics",
@@ -2691,38 +2678,6 @@ window.CV_CAREER_OPS_DEEP_FIT = {
         "gcp",
         "azure"
       ],
-      "layer": "C"
-    },
-    {
-      "jobKey": "url:https://micron.wd1.myworkdayjobs.com/external/job/fab-10a-singapore/product-engineer--pkg-pe-mfg----heterogeneous-integration-group-hig---high-bandwidth-memory--hbm-_jr101855-1",
-      "company": "Micron Workday",
-      "title": "Product Engineer (Pkg PE MFG),  Heterogeneous Integration Group(HIG), High Bandwidth Memory (HBM)",
-      "score": 93,
-      "grade": "A",
-      "roleFit": 92,
-      "url": "https://micron.wd1.myworkdayjobs.com/External/job/Fab-10A-Singapore/Product-Engineer--Pkg-PE-MFG----Heterogeneous-Integration-Group-HIG---High-Bandwidth-Memory--HBM-_JR101855-1",
-      "location": "Fab 10A, Singapore",
-      "keywordHits": [
-        "Product Engineer"
-      ],
-      "topGap": "",
-      "mainGaps": [],
-      "layer": "C"
-    },
-    {
-      "jobKey": "url:https://micron.wd1.myworkdayjobs.com/external/job/fab-10a-singapore/product-engineer--pkg-pe-mfg----heterogeneous-integration-group-hig---high-bandwidth-memory--hbm-_jr103063",
-      "company": "Micron Workday",
-      "title": "Product Engineer (Pkg PE MFG),  Heterogeneous Integration Group(HIG), High Bandwidth Memory (HBM)",
-      "score": 93,
-      "grade": "A",
-      "roleFit": 92,
-      "url": "https://micron.wd1.myworkdayjobs.com/External/job/Fab-10A-Singapore/Product-Engineer--Pkg-PE-MFG----Heterogeneous-Integration-Group-HIG---High-Bandwidth-Memory--HBM-_JR103063",
-      "location": "Fab 10A, Singapore",
-      "keywordHits": [
-        "Product Engineer"
-      ],
-      "topGap": "",
-      "mainGaps": [],
       "layer": "C"
     },
     {
@@ -2744,6 +2699,28 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "mainGaps": [
         "growth",
         "sales",
+        "operations"
+      ],
+      "layer": "C"
+    },
+    {
+      "jobKey": "url:https://www.themuse.com/jobs/uber/director-marketplace-central-operations-mobility-emea",
+      "company": "Uber",
+      "title": "Director, Marketplace Central Operations Mobility EMEA",
+      "score": 93,
+      "grade": "A",
+      "roleFit": 92,
+      "url": "https://www.themuse.com/jobs/uber/director-marketplace-central-operations-mobility-emea",
+      "location": "Amsterdam, Netherlands",
+      "keywordHits": [
+        "Analytics",
+        "API",
+        "analytics",
+        "Product Engineer"
+      ],
+      "topGap": "growth",
+      "mainGaps": [
+        "growth",
         "operations"
       ],
       "layer": "C"
@@ -2887,6 +2864,30 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "layer": "C"
     },
     {
+      "jobKey": "url:https://justjoin.it/job-offer/centra-senior-machine-learning-ml-engineer-product--wroclaw-ai",
+      "company": "Centra",
+      "title": "Senior Machine Learning (ML) Engineer (Product)",
+      "score": 93,
+      "grade": "A",
+      "roleFit": 92,
+      "url": "https://justjoin.it/job-offer/centra-senior-machine-learning-ml-engineer-product--wroclaw-ai",
+      "location": "Wrocław, PL",
+      "keywordHits": [
+        "Analytics",
+        "API",
+        "analytics",
+        "Product Engineer"
+      ],
+      "topGap": "python",
+      "mainGaps": [
+        "python",
+        "llm",
+        "rag",
+        "machine learning"
+      ],
+      "layer": "C"
+    },
+    {
       "jobKey": "url:https://www.mycareersfuture.gov.sg/job/3f3baab7ed3017b3d7a69fb5b9ed0de5",
       "company": "GOVERNMENT TECHNOLOGY AGENCY",
       "title": "Staff Software Engineer - Digital Economy Products",
@@ -2907,6 +2908,30 @@ window.CV_CAREER_OPS_DEEP_FIT = {
         "java",
         "go",
         "sql"
+      ],
+      "layer": "C"
+    },
+    {
+      "jobKey": "url:https://www.mycareersfuture.gov.sg/job/b8509bb5dc1aa39de560b3eef92b8686",
+      "company": "INTEROPERA PTE. LTD.",
+      "title": "Software Engineer",
+      "score": 92,
+      "grade": "A",
+      "roleFit": 92,
+      "url": "https://www.mycareersfuture.gov.sg/job/b8509bb5dc1aa39de560b3eef92b8686",
+      "location": "61 ROBINSON, ROBINSON ROAD, D01 Marina, Raffles Place, People's Park, Cecil, Singapore",
+      "keywordHits": [
+        "React",
+        "Next.js",
+        "React",
+        "Product Engineer"
+      ],
+      "topGap": "python",
+      "mainGaps": [
+        "python",
+        "java",
+        "aws",
+        "gcp"
       ],
       "layer": "C"
     },
@@ -3019,29 +3044,6 @@ window.CV_CAREER_OPS_DEEP_FIT = {
         "agents"
       ],
       "layer": "C"
-    },
-    {
-      "jobKey": "url:https://remotive.com/remote-jobs/software-development/staff-software-engineer-product-porto-alegre-2090909",
-      "company": "LawnStarter",
-      "title": "Staff Software Engineer, Product (Porto Alegre)",
-      "score": 92,
-      "grade": "A",
-      "roleFit": 92,
-      "url": "https://remotive.com/remote-jobs/software-development/staff-software-engineer-product-porto-alegre-2090909",
-      "location": "Brazil",
-      "keywordHits": [
-        "TypeScript",
-        "React",
-        "API",
-        "remote"
-      ],
-      "topGap": "aws",
-      "mainGaps": [
-        "aws",
-        "rest",
-        "agents"
-      ],
-      "layer": "C"
     }
   ],
   "dossiers": [
@@ -3074,10 +3076,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
           "html",
           "growth"
         ],
-        "researchSignals": [
-          "AI / data / platform signal",
-          "remote or hybrid signal"
-        ],
+        "researchSignals": [],
         "evidenceCount": 5,
         "compensationLeverage": "high"
       },
@@ -3206,6 +3205,75 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "llm": null
     },
     {
+      "jobKey": "url:https://www.mycareersfuture.gov.sg/job/eebd44b1382d7840b8c092b1fc312524",
+      "company": "TIKTOK PTE. LTD.",
+      "title": "Frontend Software Engineer (Payment), TikTok Live - Singapore",
+      "score": 95,
+      "grade": "A",
+      "confidence": "medium",
+      "decision": "pursue aggressively",
+      "thesis": "Frontend Software Engineer (Payment), TikTok Live - Singapore at TIKTOK PTE. LTD. is pursue aggressively because the snapshot score is 95, with 6 profile/role keyword hits and 1 external evidence item(s).",
+      "evidence": {
+        "keywordHits": [
+          "Frontend Engineer",
+          "JavaScript",
+          "CSS",
+          "API",
+          "remote",
+          "Frontend Engineer"
+        ],
+        "keywordMisses": [
+          "growth"
+        ],
+        "researchSignals": [
+          "AI / data / platform signal",
+          "remote or hybrid signal"
+        ],
+        "evidenceCount": 1,
+        "compensationLeverage": "high"
+      },
+      "concerns": [],
+      "interviewStrategy": [
+        "Ask why the role is open and what success means in the first 90 days.",
+        "Probe team ownership, roadmap pressure, and cross-functional interfaces.",
+        "What business unit owns the Frontend Software Engineer (Payment), TikTok Live - Singapore role?",
+        "What measurable outcomes would this team expect in the first 90 days?",
+        "What recent company/product signals change the risk or upside?"
+      ],
+      "cvStrategy": [
+        "Lead with proof around: Frontend Engineer, JavaScript, CSS, API, remote, Frontend Engineer.",
+        "Use story story-1: frontend product execution.",
+        "Use story story-2: systems and API collaboration.",
+        "Use story story-3: accessibility and quality."
+      ],
+      "compensationStrategy": {
+        "leverage": "high",
+        "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Frontend Software Engineer (Payment), TikTok Live - Singapore package, including base, bonus, equity, and review cycle?",
+        "valueAnchor": "Based on the scope of Frontend Software Engineer (Payment), TikTok Live - Singapore and my fit around JavaScript, CSS, remote, engineer, I would like to calibrate toward the stronger end of the range if the team sees the level match. My research indicates the JP midpoint for this level is around JPY 8,000,000 (annual)."
+      },
+      "storyHooks": [
+        {
+          "id": "story-1",
+          "theme": "frontend product execution",
+          "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
+          "relevance": 2
+        },
+        {
+          "id": "story-2",
+          "theme": "systems and API collaboration",
+          "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
+          "relevance": 2
+        },
+        {
+          "id": "story-3",
+          "theme": "accessibility and quality",
+          "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
+          "relevance": 2
+        }
+      ],
+      "llm": null
+    },
+    {
       "jobKey": "url:https://www.mycareersfuture.gov.sg/job/0da14018a05634ffde57785dcd4e7783",
       "company": "TIKTOK PTE. LTD.",
       "title": "Frontend Software Engineer (transaction), TikTok Live - Singapore",
@@ -3224,7 +3292,6 @@ window.CV_CAREER_OPS_DEEP_FIT = {
           "Frontend Engineer"
         ],
         "keywordMisses": [
-          "html",
           "growth"
         ],
         "researchSignals": [
@@ -3238,7 +3305,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "interviewStrategy": [
         "Ask why the role is open and what success means in the first 90 days.",
         "Probe team ownership, roadmap pressure, and cross-functional interfaces.",
-        "What business unit owns the Frontend Software Engineer (transaction), TikTok Live - Singapore role?",
+        "What business unit owns the Frontend Software Engineer (Payment), TikTok Live - Singapore role?",
         "What measurable outcomes would this team expect in the first 90 days?",
         "What recent company/product signals change the risk or upside?"
       ],
@@ -3250,8 +3317,8 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       ],
       "compensationStrategy": {
         "leverage": "high",
-        "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Frontend Software Engineer (transaction), TikTok Live - Singapore package, including base, bonus, equity, and review cycle?",
-        "valueAnchor": "Based on the scope of Frontend Software Engineer (transaction), TikTok Live - Singapore and my fit around JavaScript, CSS, remote, engineer, I would like to calibrate toward the stronger end of the range if the team sees the level match. My research indicates the JP midpoint for this level is around JPY 8,000,000 (annual)."
+        "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Frontend Software Engineer (Payment), TikTok Live - Singapore package, including base, bonus, equity, and review cycle?",
+        "valueAnchor": "Based on the scope of Frontend Software Engineer (Payment), TikTok Live - Singapore and my fit around JavaScript, CSS, remote, engineer, I would like to calibrate toward the stronger end of the range if the team sees the level match. My research indicates the JP midpoint for this level is around JPY 8,000,000 (annual)."
       },
       "storyHooks": [
         {
@@ -3307,10 +3374,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
           "deep learning",
           "computer vision"
         ],
-        "researchSignals": [
-          "AI / data / platform signal",
-          "remote or hybrid signal"
-        ],
+        "researchSignals": [],
         "evidenceCount": 5,
         "compensationLeverage": "high"
       },
@@ -3443,7 +3507,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "grade": "A",
       "confidence": "medium",
       "decision": "pursue aggressively",
-      "thesis": "Senior Software Engineer II at The Coca-Cola Company is pursue aggressively because the snapshot score is 95, with 2 profile/role keyword hits and 3 external evidence item(s).",
+      "thesis": "Senior Software Engineer II at The Coca-Cola Company is pursue aggressively because the snapshot score is 95, with 2 profile/role keyword hits and 2 external evidence item(s).",
       "evidence": {
         "keywordHits": [
           "API",
@@ -3457,7 +3521,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
           "AI / data / platform signal",
           "remote or hybrid signal"
         ],
-        "evidenceCount": 3,
+        "evidenceCount": 2,
         "compensationLeverage": "high"
       },
       "concerns": [],
@@ -3507,9 +3571,9 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "title": "Lead Software Engineer",
       "score": 95,
       "grade": "A",
-      "confidence": "medium",
+      "confidence": "high",
       "decision": "pursue aggressively",
-      "thesis": "Lead Software Engineer at Disney is pursue aggressively because the snapshot score is 95, with 5 profile/role keyword hits and 1 external evidence item(s).",
+      "thesis": "Lead Software Engineer at Disney is pursue aggressively because the snapshot score is 95, with 5 profile/role keyword hits and 5 external evidence item(s).",
       "evidence": {
         "keywordHits": [
           "JavaScript",
@@ -3522,10 +3586,8 @@ window.CV_CAREER_OPS_DEEP_FIT = {
           "rust",
           "aws"
         ],
-        "researchSignals": [
-          "AI / data / platform signal"
-        ],
-        "evidenceCount": 1,
+        "researchSignals": [],
+        "evidenceCount": 5,
         "compensationLeverage": "high"
       },
       "concerns": [],
@@ -3577,7 +3639,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "grade": "A",
       "confidence": "medium",
       "decision": "pursue aggressively",
-      "thesis": "Principal Engineer - GBS IND at Bank of America is pursue aggressively because the snapshot score is 95, with 2 profile/role keyword hits and 1 external evidence item(s).",
+      "thesis": "Principal Engineer - GBS IND at Bank of America is pursue aggressively because the snapshot score is 95, with 2 profile/role keyword hits and 0 external evidence item(s).",
       "evidence": {
         "keywordHits": [
           "API",
@@ -3589,21 +3651,17 @@ window.CV_CAREER_OPS_DEEP_FIT = {
           "growth",
           "operations"
         ],
-        "researchSignals": [
-          "AI / data / platform signal"
-        ],
-        "evidenceCount": 1,
+        "researchSignals": [],
+        "evidenceCount": 0,
         "compensationLeverage": "high"
       },
       "concerns": [
+        "External company evidence is thin; run deep research with a search API.",
         "Profile keyword coverage is weaker than the target role language."
       ],
       "interviewStrategy": [
         "Ask why the role is open and what success means in the first 90 days.",
-        "Probe team ownership, roadmap pressure, and cross-functional interfaces.",
-        "What business unit owns the Principal Engineer - GBS IND role?",
-        "What measurable outcomes would this team expect in the first 90 days?",
-        "What recent company/product signals change the risk or upside?"
+        "Probe team ownership, roadmap pressure, and cross-functional interfaces."
       ],
       "cvStrategy": [
         "Lead with proof around: API, Full Stack Engineer.",
@@ -3646,7 +3704,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "grade": "A",
       "confidence": "medium",
       "decision": "pursue aggressively",
-      "thesis": "Software Engineer II - CRM at The Coca-Cola Company is pursue aggressively because the snapshot score is 95, with 2 profile/role keyword hits and 3 external evidence item(s).",
+      "thesis": "Software Engineer II - CRM at The Coca-Cola Company is pursue aggressively because the snapshot score is 95, with 2 profile/role keyword hits and 2 external evidence item(s).",
       "evidence": {
         "keywordHits": [
           "API",
@@ -3661,7 +3719,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
           "AI / data / platform signal",
           "remote or hybrid signal"
         ],
-        "evidenceCount": 3,
+        "evidenceCount": 2,
         "compensationLeverage": "high"
       },
       "concerns": [
@@ -3715,7 +3773,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "grade": "A",
       "confidence": "medium",
       "decision": "pursue aggressively",
-      "thesis": "Software Engineer I at The Coca-Cola Company is pursue aggressively because the snapshot score is 95, with 2 profile/role keyword hits and 3 external evidence item(s).",
+      "thesis": "Software Engineer I at The Coca-Cola Company is pursue aggressively because the snapshot score is 95, with 2 profile/role keyword hits and 2 external evidence item(s).",
       "evidence": {
         "keywordHits": [
           "API",
@@ -3729,7 +3787,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
           "AI / data / platform signal",
           "remote or hybrid signal"
         ],
-        "evidenceCount": 3,
+        "evidenceCount": 2,
         "compensationLeverage": "high"
       },
       "concerns": [],
@@ -3781,7 +3839,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "grade": "A",
       "confidence": "medium",
       "decision": "pursue aggressively",
-      "thesis": "Senior Software Engineer , Service Provider at The Coca-Cola Company is pursue aggressively because the snapshot score is 95, with 2 profile/role keyword hits and 3 external evidence item(s).",
+      "thesis": "Senior Software Engineer , Service Provider at The Coca-Cola Company is pursue aggressively because the snapshot score is 95, with 2 profile/role keyword hits and 2 external evidence item(s).",
       "evidence": {
         "keywordHits": [
           "API",
@@ -3795,7 +3853,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
           "AI / data / platform signal",
           "remote or hybrid signal"
         ],
-        "evidenceCount": 3,
+        "evidenceCount": 2,
         "compensationLeverage": "high"
       },
       "concerns": [],
@@ -3847,7 +3905,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "grade": "A",
       "confidence": "medium",
       "decision": "pursue aggressively",
-      "thesis": "Software Engineer II - CRM at The Coca-Cola Company is pursue aggressively because the snapshot score is 95, with 2 profile/role keyword hits and 3 external evidence item(s).",
+      "thesis": "Software Engineer II - CRM at The Coca-Cola Company is pursue aggressively because the snapshot score is 95, with 2 profile/role keyword hits and 2 external evidence item(s).",
       "evidence": {
         "keywordHits": [
           "API",
@@ -3862,7 +3920,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
           "AI / data / platform signal",
           "remote or hybrid signal"
         ],
-        "evidenceCount": 3,
+        "evidenceCount": 2,
         "compensationLeverage": "high"
       },
       "concerns": [
@@ -3916,7 +3974,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "grade": "A",
       "confidence": "medium",
       "decision": "pursue aggressively",
-      "thesis": "Senior Software Engineer - CRM at The Coca-Cola Company is pursue aggressively because the snapshot score is 95, with 2 profile/role keyword hits and 3 external evidence item(s).",
+      "thesis": "Senior Software Engineer - CRM at The Coca-Cola Company is pursue aggressively because the snapshot score is 95, with 2 profile/role keyword hits and 2 external evidence item(s).",
       "evidence": {
         "keywordHits": [
           "API",
@@ -3931,7 +3989,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
           "AI / data / platform signal",
           "remote or hybrid signal"
         ],
-        "evidenceCount": 3,
+        "evidenceCount": 2,
         "compensationLeverage": "high"
       },
       "concerns": [
@@ -3985,7 +4043,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "grade": "A",
       "confidence": "medium",
       "decision": "pursue aggressively",
-      "thesis": "Senior Software Engineer at The Coca-Cola Company is pursue aggressively because the snapshot score is 95, with 2 profile/role keyword hits and 3 external evidence item(s).",
+      "thesis": "Senior Software Engineer at The Coca-Cola Company is pursue aggressively because the snapshot score is 95, with 2 profile/role keyword hits and 2 external evidence item(s).",
       "evidence": {
         "keywordHits": [
           "API",
@@ -3999,7 +4057,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
           "AI / data / platform signal",
           "remote or hybrid signal"
         ],
-        "evidenceCount": 3,
+        "evidenceCount": 2,
         "compensationLeverage": "high"
       },
       "concerns": [],
@@ -4051,7 +4109,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "grade": "A",
       "confidence": "medium",
       "decision": "pursue aggressively",
-      "thesis": "Software Engineer I at The Coca-Cola Company is pursue aggressively because the snapshot score is 95, with 2 profile/role keyword hits and 3 external evidence item(s).",
+      "thesis": "Software Engineer I at The Coca-Cola Company is pursue aggressively because the snapshot score is 95, with 2 profile/role keyword hits and 2 external evidence item(s).",
       "evidence": {
         "keywordHits": [
           "API",
@@ -4065,7 +4123,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
           "AI / data / platform signal",
           "remote or hybrid signal"
         ],
-        "evidenceCount": 3,
+        "evidenceCount": 2,
         "compensationLeverage": "high"
       },
       "concerns": [],
@@ -4117,7 +4175,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "grade": "A",
       "confidence": "medium",
       "decision": "pursue aggressively",
-      "thesis": "Software Engineer II at The Coca-Cola Company is pursue aggressively because the snapshot score is 95, with 2 profile/role keyword hits and 3 external evidence item(s).",
+      "thesis": "Software Engineer II at The Coca-Cola Company is pursue aggressively because the snapshot score is 95, with 2 profile/role keyword hits and 2 external evidence item(s).",
       "evidence": {
         "keywordHits": [
           "API",
@@ -4131,7 +4189,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
           "AI / data / platform signal",
           "remote or hybrid signal"
         ],
-        "evidenceCount": 3,
+        "evidenceCount": 2,
         "compensationLeverage": "high"
       },
       "concerns": [],
@@ -4183,7 +4241,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "grade": "A",
       "confidence": "medium",
       "decision": "pursue aggressively",
-      "thesis": "Software Engineer I at The Coca-Cola Company is pursue aggressively because the snapshot score is 95, with 2 profile/role keyword hits and 3 external evidence item(s).",
+      "thesis": "Software Engineer I at The Coca-Cola Company is pursue aggressively because the snapshot score is 95, with 2 profile/role keyword hits and 2 external evidence item(s).",
       "evidence": {
         "keywordHits": [
           "API",
@@ -4197,7 +4255,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
           "AI / data / platform signal",
           "remote or hybrid signal"
         ],
-        "evidenceCount": 3,
+        "evidenceCount": 2,
         "compensationLeverage": "high"
       },
       "concerns": [],
@@ -4249,7 +4307,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "grade": "A",
       "confidence": "medium",
       "decision": "pursue aggressively",
-      "thesis": "Software Engineer II - CRM at The Coca-Cola Company is pursue aggressively because the snapshot score is 95, with 2 profile/role keyword hits and 3 external evidence item(s).",
+      "thesis": "Software Engineer II - CRM at The Coca-Cola Company is pursue aggressively because the snapshot score is 95, with 2 profile/role keyword hits and 2 external evidence item(s).",
       "evidence": {
         "keywordHits": [
           "API",
@@ -4264,7 +4322,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
           "AI / data / platform signal",
           "remote or hybrid signal"
         ],
-        "evidenceCount": 3,
+        "evidenceCount": 2,
         "compensationLeverage": "high"
       },
       "concerns": [
@@ -4318,7 +4376,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "grade": "A",
       "confidence": "medium",
       "decision": "pursue aggressively",
-      "thesis": "Software Engineering I at The Coca-Cola Company is pursue aggressively because the snapshot score is 95, with 2 profile/role keyword hits and 3 external evidence item(s).",
+      "thesis": "Software Engineering I at The Coca-Cola Company is pursue aggressively because the snapshot score is 95, with 2 profile/role keyword hits and 2 external evidence item(s).",
       "evidence": {
         "keywordHits": [
           "API",
@@ -4332,7 +4390,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
           "AI / data / platform signal",
           "remote or hybrid signal"
         ],
-        "evidenceCount": 3,
+        "evidenceCount": 2,
         "compensationLeverage": "high"
       },
       "concerns": [],
@@ -4384,7 +4442,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "grade": "A",
       "confidence": "medium",
       "decision": "pursue aggressively",
-      "thesis": "Software Engineer I at The Coca-Cola Company is pursue aggressively because the snapshot score is 95, with 2 profile/role keyword hits and 3 external evidence item(s).",
+      "thesis": "Software Engineer I at The Coca-Cola Company is pursue aggressively because the snapshot score is 95, with 2 profile/role keyword hits and 2 external evidence item(s).",
       "evidence": {
         "keywordHits": [
           "API",
@@ -4398,7 +4456,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
           "AI / data / platform signal",
           "remote or hybrid signal"
         ],
-        "evidenceCount": 3,
+        "evidenceCount": 2,
         "compensationLeverage": "high"
       },
       "concerns": [],
@@ -4450,7 +4508,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "grade": "A",
       "confidence": "medium",
       "decision": "pursue aggressively",
-      "thesis": "Software Engineer I - CRM at The Coca-Cola Company is pursue aggressively because the snapshot score is 95, with 2 profile/role keyword hits and 3 external evidence item(s).",
+      "thesis": "Software Engineer I - CRM at The Coca-Cola Company is pursue aggressively because the snapshot score is 95, with 2 profile/role keyword hits and 2 external evidence item(s).",
       "evidence": {
         "keywordHits": [
           "API",
@@ -4465,7 +4523,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
           "AI / data / platform signal",
           "remote or hybrid signal"
         ],
-        "evidenceCount": 3,
+        "evidenceCount": 2,
         "compensationLeverage": "high"
       },
       "concerns": [
@@ -4512,76 +4570,6 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "llm": null
     },
     {
-      "jobKey": "url:https://www.themuse.com/jobs/usaa/software-engineer-midlevel-java-full-stack-a3566c",
-      "company": "USAA",
-      "title": "Software Engineer Mid-level (Java Full Stack)",
-      "score": 95,
-      "grade": "A",
-      "confidence": "medium",
-      "decision": "pursue aggressively",
-      "thesis": "Software Engineer Mid-level (Java Full Stack) at USAA is pursue aggressively because the snapshot score is 95, with 5 profile/role keyword hits and 0 external evidence item(s).",
-      "evidence": {
-        "keywordHits": [
-          "JavaScript",
-          "CSS",
-          "API",
-          "remote",
-          "Full Stack Engineer"
-        ],
-        "keywordMisses": [
-          "python",
-          "java",
-          "go",
-          "swift",
-          "kotlin",
-          "sql",
-          "aws",
-          "docker",
-          "html",
-          "operations"
-        ],
-        "researchSignals": [],
-        "evidenceCount": 0,
-        "compensationLeverage": ""
-      },
-      "concerns": [
-        "External company evidence is thin; run deep research with a search API.",
-        "Profile keyword coverage is weaker than the target role language."
-      ],
-      "interviewStrategy": [
-        "Ask why the role is open and what success means in the first 90 days.",
-        "Probe team ownership, roadmap pressure, and cross-functional interfaces."
-      ],
-      "cvStrategy": [
-        "Lead with proof around: JavaScript, CSS, API, remote, Full Stack Engineer.",
-        "Use story story-1: frontend product execution.",
-        "Use story story-2: systems and API collaboration.",
-        "Use story story-3: accessibility and quality."
-      ],
-      "compensationStrategy": null,
-      "storyHooks": [
-        {
-          "id": "story-1",
-          "theme": "frontend product execution",
-          "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
-          "relevance": 2
-        },
-        {
-          "id": "story-2",
-          "theme": "systems and API collaboration",
-          "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
-          "relevance": 2
-        },
-        {
-          "id": "story-3",
-          "theme": "accessibility and quality",
-          "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
-          "relevance": 2
-        }
-      ],
-      "llm": null
-    },
-    {
       "jobKey": "url:https://www.themuse.com/jobs/thecocacolacompany/software-engineer-ii",
       "company": "The Coca-Cola Company",
       "title": "Software Engineer II",
@@ -4589,7 +4577,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "grade": "A",
       "confidence": "medium",
       "decision": "pursue aggressively",
-      "thesis": "Software Engineer II at The Coca-Cola Company is pursue aggressively because the snapshot score is 95, with 2 profile/role keyword hits and 3 external evidence item(s).",
+      "thesis": "Software Engineer II at The Coca-Cola Company is pursue aggressively because the snapshot score is 95, with 2 profile/role keyword hits and 2 external evidence item(s).",
       "evidence": {
         "keywordHits": [
           "API",
@@ -4603,7 +4591,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
           "AI / data / platform signal",
           "remote or hybrid signal"
         ],
-        "evidenceCount": 3,
+        "evidenceCount": 2,
         "compensationLeverage": "high"
       },
       "concerns": [],
@@ -4648,76 +4636,6 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "llm": null
     },
     {
-      "jobKey": "url:https://www.themuse.com/jobs/usaa/software-engineer-midlevel-java-full-stack-bbdb10",
-      "company": "USAA",
-      "title": "Software Engineer Mid-level (Java Full Stack)",
-      "score": 95,
-      "grade": "A",
-      "confidence": "medium",
-      "decision": "pursue aggressively",
-      "thesis": "Software Engineer Mid-level (Java Full Stack) at USAA is pursue aggressively because the snapshot score is 95, with 5 profile/role keyword hits and 0 external evidence item(s).",
-      "evidence": {
-        "keywordHits": [
-          "JavaScript",
-          "CSS",
-          "API",
-          "remote",
-          "Full Stack Engineer"
-        ],
-        "keywordMisses": [
-          "python",
-          "java",
-          "go",
-          "swift",
-          "kotlin",
-          "sql",
-          "aws",
-          "docker",
-          "html",
-          "operations"
-        ],
-        "researchSignals": [],
-        "evidenceCount": 0,
-        "compensationLeverage": ""
-      },
-      "concerns": [
-        "External company evidence is thin; run deep research with a search API.",
-        "Profile keyword coverage is weaker than the target role language."
-      ],
-      "interviewStrategy": [
-        "Ask why the role is open and what success means in the first 90 days.",
-        "Probe team ownership, roadmap pressure, and cross-functional interfaces."
-      ],
-      "cvStrategy": [
-        "Lead with proof around: JavaScript, CSS, API, remote, Full Stack Engineer.",
-        "Use story story-1: frontend product execution.",
-        "Use story story-2: systems and API collaboration.",
-        "Use story story-3: accessibility and quality."
-      ],
-      "compensationStrategy": null,
-      "storyHooks": [
-        {
-          "id": "story-1",
-          "theme": "frontend product execution",
-          "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
-          "relevance": 2
-        },
-        {
-          "id": "story-2",
-          "theme": "systems and API collaboration",
-          "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
-          "relevance": 2
-        },
-        {
-          "id": "story-3",
-          "theme": "accessibility and quality",
-          "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
-          "relevance": 2
-        }
-      ],
-      "llm": null
-    },
-    {
       "jobKey": "url:https://www.themuse.com/jobs/thecocacolacompany/senior-software-engineer-crm-182c0e",
       "company": "The Coca-Cola Company",
       "title": "Senior Software Engineer - CRM",
@@ -4725,7 +4643,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "grade": "A",
       "confidence": "medium",
       "decision": "pursue aggressively",
-      "thesis": "Senior Software Engineer - CRM at The Coca-Cola Company is pursue aggressively because the snapshot score is 95, with 2 profile/role keyword hits and 3 external evidence item(s).",
+      "thesis": "Senior Software Engineer - CRM at The Coca-Cola Company is pursue aggressively because the snapshot score is 95, with 2 profile/role keyword hits and 2 external evidence item(s).",
       "evidence": {
         "keywordHits": [
           "API",
@@ -4740,7 +4658,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
           "AI / data / platform signal",
           "remote or hybrid signal"
         ],
-        "evidenceCount": 3,
+        "evidenceCount": 2,
         "compensationLeverage": "high"
       },
       "concerns": [
@@ -4763,6 +4681,75 @@ window.CV_CAREER_OPS_DEEP_FIT = {
         "leverage": "high",
         "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Senior Software Engineer II package, including base, bonus, equity, and review cycle?",
         "valueAnchor": "Based on the scope of Senior Software Engineer II and my fit around API, engineer, product, data, I would like to calibrate toward the stronger end of the range if the team sees the level match."
+      },
+      "storyHooks": [
+        {
+          "id": "story-1",
+          "theme": "frontend product execution",
+          "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
+          "relevance": 0
+        },
+        {
+          "id": "story-2",
+          "theme": "systems and API collaboration",
+          "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
+          "relevance": 0
+        },
+        {
+          "id": "story-3",
+          "theme": "accessibility and quality",
+          "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
+          "relevance": 0
+        }
+      ],
+      "llm": null
+    },
+    {
+      "jobKey": "url:https://www.themuse.com/jobs/bankofamerica/vice-president-feature-lead-technology-54a664",
+      "company": "Bank of America",
+      "title": "Vice President; Feature Lead - Technology",
+      "score": 95,
+      "grade": "A",
+      "confidence": "medium",
+      "decision": "pursue aggressively",
+      "thesis": "Vice President; Feature Lead - Technology at Bank of America is pursue aggressively because the snapshot score is 95, with 3 profile/role keyword hits and 0 external evidence item(s).",
+      "evidence": {
+        "keywordHits": [
+          "API",
+          "remote",
+          "Full Stack Engineer"
+        ],
+        "keywordMisses": [
+          "python",
+          "java",
+          "docker",
+          "kubernetes",
+          "rest",
+          "spark",
+          "growth"
+        ],
+        "researchSignals": [],
+        "evidenceCount": 0,
+        "compensationLeverage": "high"
+      },
+      "concerns": [
+        "External company evidence is thin; run deep research with a search API.",
+        "Profile keyword coverage is weaker than the target role language."
+      ],
+      "interviewStrategy": [
+        "Ask why the role is open and what success means in the first 90 days.",
+        "Probe team ownership, roadmap pressure, and cross-functional interfaces."
+      ],
+      "cvStrategy": [
+        "Lead with proof around: API, remote, Full Stack Engineer.",
+        "Use story story-1: frontend product execution.",
+        "Use story story-2: systems and API collaboration.",
+        "Use story story-3: accessibility and quality."
+      ],
+      "compensationStrategy": {
+        "leverage": "high",
+        "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Principal Engineer - GBS IND package, including base, bonus, equity, and review cycle?",
+        "valueAnchor": "Based on the scope of Principal Engineer - GBS IND and my fit around API, engineer, data, I would like to calibrate toward the stronger end of the range if the team sees the level match."
       },
       "storyHooks": [
         {

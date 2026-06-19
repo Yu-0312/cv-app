@@ -1,6 +1,6 @@
 # Career Ops Application Kit
 
-Generated: 2026-06-18T00:22:52.046Z
+Generated: 2026-06-19T00:30:04.594Z
 Jobs: 12
 
 ## Pipeline
@@ -140,6 +140,71 @@ Alex Chen
 - Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.
 - Use competing priorities and role fit, not personal need, as the negotiation frame.
 
+## TIKTOK PTE. LTD. - Frontend Software Engineer (Payment), TikTok Live - Singapore
+
+- Priority: P0
+- Score: 95/A
+- Subject: Frontend Software Engineer (Payment), TikTok Live - Singapore application - TIKTOK PTE. LTD.
+
+- Block G: High Confidence
+- Rating: 4.8/5.0
+
+### ATS Keyword Injection
+- Archetype: Frontend Engineer
+- Coverage: 100%
+- JD Keywords: JavaScript, CSS, remote, engineer, product, data, API
+- 在 Professional Summary 中自然帶入：JavaScript、CSS、remote、engineer、product
+- 使用職位語言：「Frontend Engineer」方向的動詞和術語
+- 【你已有但此 JD 未要求】可視情況選擇性提及：growth
+- Missing (do NOT fabricate): growth
+
+### Apply Checklist
+- Open the source URL and confirm the role is still active.
+- Generate or refresh the tailored ATS PDF from this job.
+- Mirror these JD keywords honestly in your CV: JavaScript, CSS, remote, engineer, product, data, API
+- Do not overclaim missing areas: growth
+- Log status, recruiter/contact, and next follow-up date in the tracker.
+
+### Outreach Email
+```text
+Hi TIKTOK PTE. LTD. team,
+
+I am Alex Chen, and I am interested in the Frontend Software Engineer (Payment), TikTok Live - Singapore role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.
+
+The role stood out because it maps closely to my experience with JavaScript, CSS, remote, engineer, product.
+
+I would appreciate the chance to share how my experience can support the team. Thank you for your time.
+
+Best,
+Alex Chen
+```
+
+### Follow-up
+Timing: 3-5 business days after applying or the last recruiter interaction.
+```text
+Hi TIKTOK PTE. LTD. team,
+
+I wanted to follow up on my application for the Frontend Software Engineer (Payment), TikTok Live - Singapore role. I remain interested and would be glad to provide any additional context about my background.
+
+Thank you again for your time.
+
+Best,
+Alex Chen
+```
+
+### Interview Prep
+- Prepare a 60-second story for why TIKTOK PTE. LTD. and why Frontend Software Engineer (Payment), TikTok Live - Singapore.
+- Prepare evidence for: JavaScript, CSS, remote, engineer, product, data.
+- Prepare one STAR story about execution under ambiguity.
+- Prepare one STAR story about collaboration and tradeoff decisions.
+- Prepare questions about team priorities, success metrics, and hiring timeline.
+
+### Negotiation Prep
+- Wait for a clear offer before anchoring compensation.
+- Ask for total compensation breakdown, work mode, title, level, review cycle, and start date.
+- Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.
+- Use competing priorities and role fit, not personal need, as the negotiation frame.
+
 ## TIKTOK PTE. LTD. - Frontend Software Engineer (transaction), TikTok Live - Singapore
 
 - Priority: P0
@@ -155,14 +220,14 @@ Alex Chen
 - JD Keywords: JavaScript, CSS, remote, engineer, product, data, API
 - 在 Professional Summary 中自然帶入：JavaScript、CSS、remote、engineer、product
 - 使用職位語言：「Frontend Engineer」方向的動詞和術語
-- 【你已有但此 JD 未要求】可視情況選擇性提及：html、growth
-- Missing (do NOT fabricate): html, growth
+- 【你已有但此 JD 未要求】可視情況選擇性提及：growth
+- Missing (do NOT fabricate): growth
 
 ### Apply Checklist
 - Open the source URL and confirm the role is still active.
 - Generate or refresh the tailored ATS PDF from this job.
 - Mirror these JD keywords honestly in your CV: JavaScript, CSS, remote, engineer, product, data, API
-- Do not overclaim missing areas: html, growth
+- Do not overclaim missing areas: growth
 - Log status, recruiter/contact, and next follow-up date in the tracker.
 
 ### Outreach Email
@@ -715,71 +780,6 @@ Alex Chen
 
 ### Interview Prep
 - Prepare a 60-second story for why The Coca-Cola Company and why Senior Software Engineer , Service Provider.
-- Prepare evidence for: API, engineer, product, data.
-- Prepare one STAR story about execution under ambiguity.
-- Prepare one STAR story about collaboration and tradeoff decisions.
-- Prepare questions about team priorities, success metrics, and hiring timeline.
-
-### Negotiation Prep
-- Wait for a clear offer before anchoring compensation.
-- Ask for total compensation breakdown, work mode, title, level, review cycle, and start date.
-- Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.
-- Use competing priorities and role fit, not personal need, as the negotiation frame.
-
-## The Coca-Cola Company - Software Engineer II - CRM
-
-- Priority: P0
-- Score: 95/A
-- Subject: Software Engineer II - CRM application - The Coca-Cola Company
-
-- Block G: High Confidence
-- Rating: 4.8/5.0
-
-### ATS Keyword Injection
-- Archetype: AI Platform / LLMOps
-- Coverage: 100%
-- JD Keywords: API, engineer, product, data
-- 在 Professional Summary 中自然帶入：API、engineer、product、data
-- 使用職位語言：「AI Platform / LLMOps」方向的動詞和術語
-- 【你已有但此 JD 未要求】可視情況選擇性提及：crm、growth、sales
-- Missing (do NOT fabricate): crm, growth, sales
-
-### Apply Checklist
-- Open the source URL and confirm the role is still active.
-- Generate or refresh the tailored ATS PDF from this job.
-- Mirror these JD keywords honestly in your CV: API, engineer, product, data
-- Do not overclaim missing areas: crm, growth, sales
-- Log status, recruiter/contact, and next follow-up date in the tracker.
-
-### Outreach Email
-```text
-Hi The Coca-Cola Company team,
-
-I am Alex Chen, and I am interested in the Software Engineer II - CRM role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.
-
-The role stood out because it maps closely to my experience with API, engineer, product, data.
-
-I would appreciate the chance to share how my experience can support the team. Thank you for your time.
-
-Best,
-Alex Chen
-```
-
-### Follow-up
-Timing: 3-5 business days after applying or the last recruiter interaction.
-```text
-Hi The Coca-Cola Company team,
-
-I wanted to follow up on my application for the Software Engineer II - CRM role. I remain interested and would be glad to provide any additional context about my background.
-
-Thank you again for your time.
-
-Best,
-Alex Chen
-```
-
-### Interview Prep
-- Prepare a 60-second story for why The Coca-Cola Company and why Software Engineer II - CRM.
 - Prepare evidence for: API, engineer, product, data.
 - Prepare one STAR story about execution under ambiguity.
 - Prepare one STAR story about collaboration and tradeoff decisions.

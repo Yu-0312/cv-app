@@ -1,6 +1,6 @@
 window.CV_CAREER_OPS_APPLICATION_KIT = {
   "source": "career-ops-application-kit",
-  "generatedAt": "2026-06-18T00:22:52.046Z",
+  "generatedAt": "2026-06-19T00:30:04.594Z",
   "profileRole": "Frontend Engineer",
   "playbooks": [
     {
@@ -193,6 +193,90 @@ window.CV_CAREER_OPS_APPLICATION_KIT = {
       ]
     },
     {
+      "jobKey": "url:https://www.mycareersfuture.gov.sg/job/eebd44b1382d7840b8c092b1fc312524",
+      "title": "Frontend Software Engineer (Payment), TikTok Live - Singapore",
+      "company": "TIKTOK PTE. LTD.",
+      "score": "95/A",
+      "rating": 4.8,
+      "blockG": {
+        "tier": "High Confidence",
+        "confidence": "medium"
+      },
+      "priority": "P0",
+      "atsInjection": {
+        "jdKeywords": [
+          "JavaScript",
+          "CSS",
+          "remote",
+          "engineer",
+          "product",
+          "data",
+          "API"
+        ],
+        "hardKeywords": [
+          "JavaScript",
+          "CSS",
+          "remote",
+          "engineer",
+          "product",
+          "data",
+          "API"
+        ],
+        "softKeywords": [],
+        "missingKeywords": [
+          "growth"
+        ],
+        "archetype": "Frontend Engineer",
+        "summaryRewriteHints": [
+          "在 Professional Summary 中自然帶入：JavaScript、CSS、remote、engineer、product",
+          "使用職位語言：「Frontend Engineer」方向的動詞和術語",
+          "【你已有但此 JD 未要求】可視情況選擇性提及：growth"
+        ],
+        "atsRules": [
+          "單欄排版，避免 sidebar 雙欄（ATS parser 容易亂序）",
+          "使用標準 header：Professional Summary, Work Experience, Skills, Education",
+          "不使用巢狀表格或文字框",
+          "確保 PDF 文字可被選取（不可光柵化輸出）",
+          "UTF-8 編碼，移除 em dash / smart quote / zero-width space",
+          "關鍵技能在 Skills section 明確列出，不要只藏在 bullet 裡"
+        ],
+        "guardrails": [
+          "NEVER add skills the candidate lacks",
+          "Only reformulate real experience with exact JD vocabulary",
+          "Example: if candidate has 'API development', it can become 'JavaScript'"
+        ],
+        "keywordCoveragePercent": 100
+      },
+      "applyChecklist": [
+        "Open the source URL and confirm the role is still active.",
+        "Generate or refresh the tailored ATS PDF from this job.",
+        "Mirror these JD keywords honestly in your CV: JavaScript, CSS, remote, engineer, product, data, API",
+        "Do not overclaim missing areas: growth",
+        "Log status, recruiter/contact, and next follow-up date in the tracker."
+      ],
+      "outreachEmail": {
+        "subject": "Frontend Software Engineer (Payment), TikTok Live - Singapore application - TIKTOK PTE. LTD.",
+        "body": "Hi TIKTOK PTE. LTD. team,\n\nI am Alex Chen, and I am interested in the Frontend Software Engineer (Payment), TikTok Live - Singapore role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.\n\nThe role stood out because it maps closely to my experience with JavaScript, CSS, remote, engineer, product.\n\nI would appreciate the chance to share how my experience can support the team. Thank you for your time.\n\nBest,\nAlex Chen"
+      },
+      "followUp": {
+        "timing": "3-5 business days after applying or the last recruiter interaction.",
+        "body": "Hi TIKTOK PTE. LTD. team,\n\nI wanted to follow up on my application for the Frontend Software Engineer (Payment), TikTok Live - Singapore role. I remain interested and would be glad to provide any additional context about my background.\n\nThank you again for your time.\n\nBest,\nAlex Chen"
+      },
+      "interviewPrep": [
+        "Prepare a 60-second story for why TIKTOK PTE. LTD. and why Frontend Software Engineer (Payment), TikTok Live - Singapore.",
+        "Prepare evidence for: JavaScript, CSS, remote, engineer, product, data.",
+        "Prepare one STAR story about execution under ambiguity.",
+        "Prepare one STAR story about collaboration and tradeoff decisions.",
+        "Prepare questions about team priorities, success metrics, and hiring timeline."
+      ],
+      "negotiationPrep": [
+        "Wait for a clear offer before anchoring compensation.",
+        "Ask for total compensation breakdown, work mode, title, level, review cycle, and start date.",
+        "Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.",
+        "Use competing priorities and role fit, not personal need, as the negotiation frame."
+      ]
+    },
+    {
       "jobKey": "url:https://www.mycareersfuture.gov.sg/job/0da14018a05634ffde57785dcd4e7783",
       "title": "Frontend Software Engineer (transaction), TikTok Live - Singapore",
       "company": "TIKTOK PTE. LTD.",
@@ -224,14 +308,13 @@ window.CV_CAREER_OPS_APPLICATION_KIT = {
         ],
         "softKeywords": [],
         "missingKeywords": [
-          "html",
           "growth"
         ],
         "archetype": "Frontend Engineer",
         "summaryRewriteHints": [
           "在 Professional Summary 中自然帶入：JavaScript、CSS、remote、engineer、product",
           "使用職位語言：「Frontend Engineer」方向的動詞和術語",
-          "【你已有但此 JD 未要求】可視情況選擇性提及：html、growth"
+          "【你已有但此 JD 未要求】可視情況選擇性提及：growth"
         ],
         "atsRules": [
           "單欄排版，避免 sidebar 雙欄（ATS parser 容易亂序）",
@@ -252,7 +335,7 @@ window.CV_CAREER_OPS_APPLICATION_KIT = {
         "Open the source URL and confirm the role is still active.",
         "Generate or refresh the tailored ATS PDF from this job.",
         "Mirror these JD keywords honestly in your CV: JavaScript, CSS, remote, engineer, product, data, API",
-        "Do not overclaim missing areas: html, growth",
+        "Do not overclaim missing areas: growth",
         "Log status, recruiter/contact, and next follow-up date in the tracker."
       ],
       "outreachEmail": {
@@ -930,86 +1013,6 @@ window.CV_CAREER_OPS_APPLICATION_KIT = {
       },
       "interviewPrep": [
         "Prepare a 60-second story for why The Coca-Cola Company and why Senior Software Engineer , Service Provider.",
-        "Prepare evidence for: API, engineer, product, data.",
-        "Prepare one STAR story about execution under ambiguity.",
-        "Prepare one STAR story about collaboration and tradeoff decisions.",
-        "Prepare questions about team priorities, success metrics, and hiring timeline."
-      ],
-      "negotiationPrep": [
-        "Wait for a clear offer before anchoring compensation.",
-        "Ask for total compensation breakdown, work mode, title, level, review cycle, and start date.",
-        "Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.",
-        "Use competing priorities and role fit, not personal need, as the negotiation frame."
-      ]
-    },
-    {
-      "jobKey": "url:https://www.themuse.com/jobs/thecocacolacompany/software-engineer-ii-crm-bdbbb8",
-      "title": "Software Engineer II - CRM",
-      "company": "The Coca-Cola Company",
-      "score": "95/A",
-      "rating": 4.8,
-      "blockG": {
-        "tier": "High Confidence",
-        "confidence": "medium"
-      },
-      "priority": "P0",
-      "atsInjection": {
-        "jdKeywords": [
-          "API",
-          "engineer",
-          "product",
-          "data"
-        ],
-        "hardKeywords": [
-          "API",
-          "engineer",
-          "product",
-          "data"
-        ],
-        "softKeywords": [],
-        "missingKeywords": [
-          "crm",
-          "growth",
-          "sales"
-        ],
-        "archetype": "AI Platform / LLMOps",
-        "summaryRewriteHints": [
-          "在 Professional Summary 中自然帶入：API、engineer、product、data",
-          "使用職位語言：「AI Platform / LLMOps」方向的動詞和術語",
-          "【你已有但此 JD 未要求】可視情況選擇性提及：crm、growth、sales"
-        ],
-        "atsRules": [
-          "單欄排版，避免 sidebar 雙欄（ATS parser 容易亂序）",
-          "使用標準 header：Professional Summary, Work Experience, Skills, Education",
-          "不使用巢狀表格或文字框",
-          "確保 PDF 文字可被選取（不可光柵化輸出）",
-          "UTF-8 編碼，移除 em dash / smart quote / zero-width space",
-          "關鍵技能在 Skills section 明確列出，不要只藏在 bullet 裡"
-        ],
-        "guardrails": [
-          "NEVER add skills the candidate lacks",
-          "Only reformulate real experience with exact JD vocabulary",
-          "Example: if candidate has 'API development', it can become 'API'"
-        ],
-        "keywordCoveragePercent": 100
-      },
-      "applyChecklist": [
-        "Open the source URL and confirm the role is still active.",
-        "Generate or refresh the tailored ATS PDF from this job.",
-        "Mirror these JD keywords honestly in your CV: API, engineer, product, data",
-        "Do not overclaim missing areas: crm, growth, sales",
-        "Log status, recruiter/contact, and next follow-up date in the tracker."
-      ],
-      "outreachEmail": {
-        "subject": "Software Engineer II - CRM application - The Coca-Cola Company",
-        "body": "Hi The Coca-Cola Company team,\n\nI am Alex Chen, and I am interested in the Software Engineer II - CRM role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.\n\nThe role stood out because it maps closely to my experience with API, engineer, product, data.\n\nI would appreciate the chance to share how my experience can support the team. Thank you for your time.\n\nBest,\nAlex Chen"
-      },
-      "followUp": {
-        "timing": "3-5 business days after applying or the last recruiter interaction.",
-        "body": "Hi The Coca-Cola Company team,\n\nI wanted to follow up on my application for the Software Engineer II - CRM role. I remain interested and would be glad to provide any additional context about my background.\n\nThank you again for your time.\n\nBest,\nAlex Chen"
-      },
-      "interviewPrep": [
-        "Prepare a 60-second story for why The Coca-Cola Company and why Software Engineer II - CRM.",
         "Prepare evidence for: API, engineer, product, data.",
         "Prepare one STAR story about execution under ambiguity.",
         "Prepare one STAR story about collaboration and tradeoff decisions.",
