@@ -1,6 +1,6 @@
 {
   "source": "career-ops-deep-fit",
-  "generatedAt": "2026-06-19T00:30:25.544Z",
+  "generatedAt": "2026-06-19T23:47:56.466Z",
   "llmProvider": "none",
   "summary": {
     "totalResults": 95,
@@ -1667,70 +1667,78 @@
       "llm": null
     },
     {
-      "jobKey": "url:https://www.themuse.com/jobs/bankofamerica/vice-president-feature-lead-technology-54a664",
-      "company": "Bank of America",
-      "title": "Vice President; Feature Lead - Technology",
+      "jobKey": "url:https://www.themuse.com/jobs/uber/software-engineer-ii-frontend-3e411c",
+      "company": "Uber",
+      "title": "Software Engineer II - Frontend",
       "score": 95,
       "grade": "A",
       "confidence": "medium",
       "decision": "pursue aggressively",
-      "thesis": "Vice President; Feature Lead - Technology at Bank of America is pursue aggressively because the snapshot score is 95, with 3 profile/role keyword hits and 0 external evidence item(s).",
+      "thesis": "Software Engineer II - Frontend at Uber is pursue aggressively because the snapshot score is 95, with 10 profile/role keyword hits and 1 external evidence item(s).",
       "evidence": {
         "keywordHits": [
+          "Frontend Engineer",
+          "JavaScript",
+          "TypeScript",
+          "React",
+          "CSS",
           "API",
           "remote",
-          "Full Stack Engineer"
+          "TypeScript",
+          "React",
+          "Frontend Engineer"
         ],
         "keywordMisses": [
+          "angular",
           "python",
-          "java",
-          "docker",
-          "kubernetes",
-          "rest",
-          "spark",
+          "go",
+          "html",
           "growth"
         ],
-        "researchSignals": [],
-        "evidenceCount": 0,
+        "researchSignals": [
+          "AI / data / platform signal",
+          "remote or hybrid signal"
+        ],
+        "evidenceCount": 1,
         "compensationLeverage": "high"
       },
-      "concerns": [
-        "External company evidence is thin; run deep research with a search API.",
-        "Profile keyword coverage is weaker than the target role language."
-      ],
+      "concerns": [],
       "interviewStrategy": [
         "Ask why the role is open and what success means in the first 90 days.",
-        "Probe team ownership, roadmap pressure, and cross-functional interfaces."
+        "Probe team ownership, roadmap pressure, and cross-functional interfaces.",
+        "What business unit owns the Sr Software Engineer, Frontend (Web) role?",
+        "What measurable outcomes would this team expect in the first 90 days?",
+        "What recent company/product signals change the risk or upside?"
       ],
       "cvStrategy": [
-        "Lead with proof around: API, remote, Full Stack Engineer.",
+        "Lead with proof around: Frontend Engineer, JavaScript, TypeScript, React, CSS, API.",
         "Use story story-1: frontend product execution.",
         "Use story story-2: systems and API collaboration.",
         "Use story story-3: accessibility and quality."
       ],
       "compensationStrategy": {
         "leverage": "high",
-        "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Principal Engineer - GBS IND package, including base, bonus, equity, and review cycle?",
-        "valueAnchor": "Based on the scope of Principal Engineer - GBS IND and my fit around API, engineer, data, I would like to calibrate toward the stronger end of the range if the team sees the level match."
+        "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Sr Software Engineer, Frontend (Web) package, including base, bonus, equity, and review cycle?",
+        "valueAnchor": "Based on the scope of Sr Software Engineer, Frontend (Web) and my fit around JavaScript, TypeScript, React, CSS, I would like to calibrate toward the stronger end of the range if the team sees the level match."
       },
       "storyHooks": [
         {
           "id": "story-1",
           "theme": "frontend product execution",
           "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
-          "relevance": 0
+          "relevance": 4
         },
         {
           "id": "story-2",
           "theme": "systems and API collaboration",
           "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
-          "relevance": 0
+          "relevance": 4
         },
         {
           "id": "story-3",
           "theme": "accessibility and quality",
           "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
-          "relevance": 0
+          "relevance": 4
         }
       ],
       "llm": null
@@ -1887,22 +1895,6 @@
       "url": "https://www.mycareersfuture.gov.sg/job/d311cbbc5e3d3b81d84241f91e960ef1",
       "location": "TEMPLE STREET, D01 Marina, Raffles Place, People's Park, Cecil, Singapore",
       "keywordHits": [],
-      "keywordMisses": [],
-      "decision": "pursue selectively",
-      "layer": "B"
-    },
-    {
-      "jobKey": "url:https://www.mycareersfuture.gov.sg/job/02e92e6234a40935a164b9187431e39c",
-      "company": "GOERTEK SINGAPORE PTE. LTD.",
-      "title": "Automation & Control Software Engineer",
-      "score": 76,
-      "grade": "B",
-      "roleFit": 45,
-      "url": "https://www.mycareersfuture.gov.sg/job/02e92e6234a40935a164b9187431e39c",
-      "location": "ROBINSON ROAD, D01 Marina, Raffles Place, People's Park, Cecil, Singapore",
-      "keywordHits": [
-        "Performance Optimization"
-      ],
       "keywordMisses": [],
       "decision": "pursue selectively",
       "layer": "B"
@@ -2130,6 +2122,29 @@
       "layer": "B"
     },
     {
+      "jobKey": "url:https://remoteok.com/remote-jobs/remote-junior-data-analyst-haystack-1133663",
+      "company": "Haystack",
+      "title": "Junior Data Analyst",
+      "score": 73,
+      "grade": "B",
+      "roleFit": 45,
+      "url": "https://remoteok.com/remote-jobs/remote-junior-data-analyst-haystack-1133663",
+      "location": "London, London, England, United Kingdom",
+      "keywordHits": [
+        "remote"
+      ],
+      "keywordMisses": [
+        "python",
+        "sql",
+        "azure",
+        "excel",
+        "tableau",
+        "power bi"
+      ],
+      "decision": "pursue selectively",
+      "layer": "B"
+    },
+    {
       "jobKey": "url:https://nvidia.wd5.myworkdayjobs.com/nvidiaexternalcareersite/job/israel-tel-aviv/senior-vlsi-integration-engineer_jr1989467",
       "company": "NVIDIA Workday",
       "title": "Senior VLSI Integration Engineer",
@@ -2142,6 +2157,20 @@
       "keywordMisses": [
         "python"
       ],
+      "decision": "pursue selectively",
+      "layer": "B"
+    },
+    {
+      "jobKey": "url:https://www.mycareersfuture.gov.sg/job/6971f20da18c6eb931635320faf15608",
+      "company": "BUILDBRIDGE PARTNERS PTE. LTD.",
+      "title": "Data Centre Design Engineer / Design Manager",
+      "score": 72,
+      "grade": "B",
+      "roleFit": 45,
+      "url": "https://www.mycareersfuture.gov.sg/job/6971f20da18c6eb931635320faf15608",
+      "location": "Islandwide, Singapore",
+      "keywordHits": [],
+      "keywordMisses": [],
       "decision": "pursue selectively",
       "layer": "B"
     },
@@ -2200,20 +2229,6 @@
       "keywordMisses": [
         "go"
       ],
-      "decision": "pursue selectively",
-      "layer": "B"
-    },
-    {
-      "jobKey": "url:https://www.daijob.com/en/jobs/detail/1521847",
-      "company": "I-PEX Inc.",
-      "title": "[2027 New Graduates] Generalist Positions in Science and Engineering",
-      "score": 70,
-      "grade": "C",
-      "roleFit": 45,
-      "url": "https://www.daijob.com/en/jobs/detail/1521847",
-      "location": "Fukuoka, JP / Shimane, JP",
-      "keywordHits": [],
-      "keywordMisses": [],
       "decision": "pursue selectively",
       "layer": "B"
     },
@@ -2277,18 +2292,16 @@
       "layer": "B"
     },
     {
-      "jobKey": "url:https://www.daijob.com/en/jobs/detail/1280254",
-      "company": "Galileo Co.,Ltd./株式会社ガリレオ",
-      "title": "Visa support★Relocation allowance★ [Mechanical engineer] People with skills in CAD/MATLAB/Python etc. are welcome Kanto / Nagoya",
+      "jobKey": "url:https://www.mycareersfuture.gov.sg/job/c6a10d0177f17a2c6ed1d2c8105efa30",
+      "company": "LEE TECH ENGINEERING PTE. LTD.",
+      "title": "PROJECT ENGINEER",
       "score": 68,
       "grade": "C",
       "roleFit": 45,
-      "url": "https://www.daijob.com/en/jobs/detail/1280254",
-      "location": "Aichi, JP / Tokyo, JP / Kanagawa, JP",
+      "url": "https://www.mycareersfuture.gov.sg/job/c6a10d0177f17a2c6ed1d2c8105efa30",
+      "location": "LINK@AMK, ANG MO KIO STREET 62, D20 Ang Mo Kio, Bishan, Singapore",
       "keywordHits": [],
-      "keywordMisses": [
-        "python"
-      ],
+      "keywordMisses": [],
       "decision": "hold / compare",
       "layer": "B"
     },
@@ -2307,14 +2320,14 @@
       "layer": "B"
     },
     {
-      "jobKey": "url:https://remoteok.com/remote-jobs/remote-industrial-operatives-denholm-energy-services-1133652",
-      "company": "Denholm Energy Services",
-      "title": "Industrial Operatives",
+      "jobKey": "url:https://remoteok.com/remote-jobs/remote-customer-support-specialist-velsera-1133682",
+      "company": "Velsera",
+      "title": "Customer Support Specialist",
       "score": 67,
       "grade": "C",
       "roleFit": 45,
-      "url": "https://remoteok.com/remote-jobs/remote-industrial-operatives-denholm-energy-services-1133652",
-      "location": "Accrington,",
+      "url": "https://remoteok.com/remote-jobs/remote-customer-support-specialist-velsera-1133682",
+      "location": "US Remote,",
       "keywordHits": [
         "remote"
       ],
@@ -2323,13 +2336,13 @@
       "layer": "B"
     },
     {
-      "jobKey": "url:https://remoteok.com/remote-jobs/remote-become-a-student-life-coach-flexible-role-uk-20-40-hr-findtutors-1133462",
-      "company": "FindTutors",
-      "title": "Become a Student Life Coach Flexible Role UK Â£20 Â£40 hr",
+      "jobKey": "url:https://remoteok.com/remote-jobs/remote-data-entry-clerk-virtual-assistant-sundayy-1133681",
+      "company": "Sundayy",
+      "title": "Data Entry Clerk Virtual Assistant",
       "score": 67,
       "grade": "C",
       "roleFit": 45,
-      "url": "https://remoteok.com/remote-jobs/remote-become-a-student-life-coach-flexible-role-uk-20-40-hr-findtutors-1133462",
+      "url": "https://remoteok.com/remote-jobs/remote-data-entry-clerk-virtual-assistant-sundayy-1133681",
       "location": "Remote / Global",
       "keywordHits": [
         "remote"
@@ -2339,35 +2352,62 @@
       "layer": "B"
     },
     {
-      "jobKey": "url:https://www.nvidia.com/en-us/data-center/products/ovx/",
-      "company": "NVIDIA",
-      "title": "NVIDIA OVX Systems",
-      "score": 66,
+      "jobKey": "url:https://remoteok.com/remote-jobs/remote-hr-administrative-assistant-atlantic-health-strategiestm-1133671",
+      "company": "Atlantic Health Strategiesâ¢",
+      "title": "HR Administrative Assistant",
+      "score": 67,
       "grade": "C",
       "roleFit": 45,
-      "url": "https://www.nvidia.com/en-us/data-center/products/ovx/",
-      "location": "",
-      "keywordHits": [],
+      "url": "https://remoteok.com/remote-jobs/remote-hr-administrative-assistant-atlantic-health-strategiestm-1133671",
+      "location": "United States,",
+      "keywordHits": [
+        "remote"
+      ],
       "keywordMisses": [],
       "decision": "hold / compare",
       "layer": "B"
     },
     {
-      "jobKey": "url:http://careers.tencent.com/jobdesc.html?postid=2057421659916382208",
-      "company": "Tencent Careers China",
-      "title": "腾讯投资-Fund Investment Associate / Associate Director",
-      "score": 66,
+      "jobKey": "url:https://remoteok.com/remote-jobs/remote-general-digital-lifestyles-1133722",
+      "company": "Digital Lifestyles",
+      "title": "General",
+      "score": 67,
       "grade": "C",
       "roleFit": 45,
-      "url": "http://careers.tencent.com/jobdesc.html?postId=2057421659916382208",
-      "location": "中国 / 北京",
-      "keywordHits": [],
+      "url": "https://remoteok.com/remote-jobs/remote-general-digital-lifestyles-1133722",
+      "location": "Calgary,",
+      "keywordHits": [
+        "remote"
+      ],
       "keywordMisses": [],
       "decision": "hold / compare",
       "layer": "B"
     }
   ],
   "layerC": [
+    {
+      "jobKey": "url:https://www.themuse.com/jobs/bankofamerica/vice-president-feature-lead-technology-54a664",
+      "company": "Bank of America",
+      "title": "Vice President; Feature Lead - Technology",
+      "score": 95,
+      "grade": "A",
+      "roleFit": 92,
+      "url": "https://www.themuse.com/jobs/bankofamerica/vice-president-feature-lead-technology-54a664",
+      "location": "Newark, DE",
+      "keywordHits": [
+        "API",
+        "remote",
+        "Full Stack Engineer"
+      ],
+      "topGap": "python",
+      "mainGaps": [
+        "python",
+        "java",
+        "docker",
+        "kubernetes"
+      ],
+      "layer": "C"
+    },
     {
       "jobKey": "url:https://www.themuse.com/jobs/thecocacolacompany/sr-software-engineer-service-supply-chain",
       "company": "The Coca-Cola Company",
@@ -2657,30 +2697,6 @@
       "layer": "C"
     },
     {
-      "jobKey": "url:https://justjoin.it/job-offer/centra-senior-analytics-engineer-wroclaw-data",
-      "company": "Centra",
-      "title": "Senior Data Engineer",
-      "score": 94,
-      "grade": "A",
-      "roleFit": 92,
-      "url": "https://justjoin.it/job-offer/centra-senior-analytics-engineer-wroclaw-data",
-      "location": "Wrocław, PL",
-      "keywordHits": [
-        "Analytics",
-        "API",
-        "dashboard",
-        "analytics"
-      ],
-      "topGap": "sql",
-      "mainGaps": [
-        "sql",
-        "aws",
-        "gcp",
-        "azure"
-      ],
-      "layer": "C"
-    },
-    {
       "jobKey": "url:https://www.mycareersfuture.gov.sg/job/ab3bc86c20af766934980ae954bdfc2e",
       "company": "SHEIN STAR PTE. LTD.",
       "title": "Product Manager – Apparel & Accessories",
@@ -2768,6 +2784,30 @@
         "java",
         "go",
         "swift"
+      ],
+      "layer": "C"
+    },
+    {
+      "jobKey": "url:https://databricks.com/company/careers/open-positions/job?gh_jid=8407895002",
+      "company": "Databricks Greenhouse",
+      "title": "Manager - Tech Solutions (Big Data / AI)",
+      "score": 93,
+      "grade": "A",
+      "roleFit": 92,
+      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8407895002",
+      "location": "Bengaluru, India",
+      "keywordHits": [
+        "Analytics",
+        "Performance Optimization",
+        "analytics",
+        "Product Engineer"
+      ],
+      "topGap": "spark",
+      "mainGaps": [
+        "spark",
+        "machine learning",
+        "sales",
+        "operations"
       ],
       "layer": "C"
     },
@@ -2860,30 +2900,6 @@
         "go",
         "aws",
         "azure"
-      ],
-      "layer": "C"
-    },
-    {
-      "jobKey": "url:https://justjoin.it/job-offer/centra-senior-machine-learning-ml-engineer-product--wroclaw-ai",
-      "company": "Centra",
-      "title": "Senior Machine Learning (ML) Engineer (Product)",
-      "score": 93,
-      "grade": "A",
-      "roleFit": 92,
-      "url": "https://justjoin.it/job-offer/centra-senior-machine-learning-ml-engineer-product--wroclaw-ai",
-      "location": "Wrocław, PL",
-      "keywordHits": [
-        "Analytics",
-        "API",
-        "analytics",
-        "Product Engineer"
-      ],
-      "topGap": "python",
-      "mainGaps": [
-        "python",
-        "llm",
-        "rag",
-        "machine learning"
       ],
       "layer": "C"
     },
@@ -4705,70 +4721,78 @@
       "llm": null
     },
     {
-      "jobKey": "url:https://www.themuse.com/jobs/bankofamerica/vice-president-feature-lead-technology-54a664",
-      "company": "Bank of America",
-      "title": "Vice President; Feature Lead - Technology",
+      "jobKey": "url:https://www.themuse.com/jobs/uber/software-engineer-ii-frontend-3e411c",
+      "company": "Uber",
+      "title": "Software Engineer II - Frontend",
       "score": 95,
       "grade": "A",
       "confidence": "medium",
       "decision": "pursue aggressively",
-      "thesis": "Vice President; Feature Lead - Technology at Bank of America is pursue aggressively because the snapshot score is 95, with 3 profile/role keyword hits and 0 external evidence item(s).",
+      "thesis": "Software Engineer II - Frontend at Uber is pursue aggressively because the snapshot score is 95, with 10 profile/role keyword hits and 1 external evidence item(s).",
       "evidence": {
         "keywordHits": [
+          "Frontend Engineer",
+          "JavaScript",
+          "TypeScript",
+          "React",
+          "CSS",
           "API",
           "remote",
-          "Full Stack Engineer"
+          "TypeScript",
+          "React",
+          "Frontend Engineer"
         ],
         "keywordMisses": [
+          "angular",
           "python",
-          "java",
-          "docker",
-          "kubernetes",
-          "rest",
-          "spark",
+          "go",
+          "html",
           "growth"
         ],
-        "researchSignals": [],
-        "evidenceCount": 0,
+        "researchSignals": [
+          "AI / data / platform signal",
+          "remote or hybrid signal"
+        ],
+        "evidenceCount": 1,
         "compensationLeverage": "high"
       },
-      "concerns": [
-        "External company evidence is thin; run deep research with a search API.",
-        "Profile keyword coverage is weaker than the target role language."
-      ],
+      "concerns": [],
       "interviewStrategy": [
         "Ask why the role is open and what success means in the first 90 days.",
-        "Probe team ownership, roadmap pressure, and cross-functional interfaces."
+        "Probe team ownership, roadmap pressure, and cross-functional interfaces.",
+        "What business unit owns the Sr Software Engineer, Frontend (Web) role?",
+        "What measurable outcomes would this team expect in the first 90 days?",
+        "What recent company/product signals change the risk or upside?"
       ],
       "cvStrategy": [
-        "Lead with proof around: API, remote, Full Stack Engineer.",
+        "Lead with proof around: Frontend Engineer, JavaScript, TypeScript, React, CSS, API.",
         "Use story story-1: frontend product execution.",
         "Use story story-2: systems and API collaboration.",
         "Use story story-3: accessibility and quality."
       ],
       "compensationStrategy": {
         "leverage": "high",
-        "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Principal Engineer - GBS IND package, including base, bonus, equity, and review cycle?",
-        "valueAnchor": "Based on the scope of Principal Engineer - GBS IND and my fit around API, engineer, data, I would like to calibrate toward the stronger end of the range if the team sees the level match."
+        "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Sr Software Engineer, Frontend (Web) package, including base, bonus, equity, and review cycle?",
+        "valueAnchor": "Based on the scope of Sr Software Engineer, Frontend (Web) and my fit around JavaScript, TypeScript, React, CSS, I would like to calibrate toward the stronger end of the range if the team sees the level match."
       },
       "storyHooks": [
         {
           "id": "story-1",
           "theme": "frontend product execution",
           "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
-          "relevance": 0
+          "relevance": 4
         },
         {
           "id": "story-2",
           "theme": "systems and API collaboration",
           "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
-          "relevance": 0
+          "relevance": 4
         },
         {
           "id": "story-3",
           "theme": "accessibility and quality",
           "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
-          "relevance": 0
+          "relevance": 4
         }
       ],
       "llm": null

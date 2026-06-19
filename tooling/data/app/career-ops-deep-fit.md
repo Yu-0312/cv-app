@@ -1,6 +1,6 @@
 # Career Ops Deep Fit Report
 
-Generated: 2026-06-19T00:30:25.544Z
+Generated: 2026-06-19T23:47:56.466Z
 LLM provider: none
 Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 exploratory)
 
@@ -724,30 +724,32 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Use story story-2: systems and API collaboration.
 - Use story story-3: accessibility and quality.
 
-### Bank of America - Vice President; Feature Lead - Technology
+### Uber - Software Engineer II - Frontend
 
 - Score: 95
 - Grade: A
 - Confidence: medium
 - Decision: pursue aggressively
-- Thesis: Vice President; Feature Lead - Technology at Bank of America is pursue aggressively because the snapshot score is 95, with 3 profile/role keyword hits and 0 external evidence item(s).
+- Thesis: Software Engineer II - Frontend at Uber is pursue aggressively because the snapshot score is 95, with 10 profile/role keyword hits and 1 external evidence item(s).
 
 #### Evidence
-- Keyword hits: API, remote, Full Stack Engineer
-- Keyword misses: python, java, docker, kubernetes, rest, spark, growth
-- Research signals: -
+- Keyword hits: Frontend Engineer, JavaScript, TypeScript, React, CSS, API, remote, TypeScript, React, Frontend Engineer
+- Keyword misses: angular, python, go, html, growth
+- Research signals: AI / data / platform signal, remote or hybrid signal
 - Compensation leverage: high
 
 #### Concerns
-- External company evidence is thin; run deep research with a search API.
-- Profile keyword coverage is weaker than the target role language.
+- None flagged
 
 #### Interview Strategy
 - Ask why the role is open and what success means in the first 90 days.
 - Probe team ownership, roadmap pressure, and cross-functional interfaces.
+- What business unit owns the Sr Software Engineer, Frontend (Web) role?
+- What measurable outcomes would this team expect in the first 90 days?
+- What recent company/product signals change the risk or upside?
 
 #### CV Strategy
-- Lead with proof around: API, remote, Full Stack Engineer.
+- Lead with proof around: Frontend Engineer, JavaScript, TypeScript, React, CSS, API.
 - Use story story-1: frontend product execution.
 - Use story story-2: systems and API collaboration.
 - Use story story-3: accessibility and quality.
@@ -806,12 +808,6 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Score: 76 | Grade: B | RoleFit: 45
 - Decision: pursue selectively
 - Keyword hits: -
-- Gaps: -
-
-### GOERTEK SINGAPORE PTE. LTD. - Automation & Control Software Engineer
-- Score: 76 | Grade: B | RoleFit: 45
-- Decision: pursue selectively
-- Keyword hits: Performance Optimization
 - Gaps: -
 
 ### NVIDIA Workday - Hardware Design Engineer – Interconnect Design
@@ -898,11 +894,23 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Keyword hits: -
 - Gaps: computer vision
 
+### Haystack - Junior Data Analyst
+- Score: 73 | Grade: B | RoleFit: 45
+- Decision: pursue selectively
+- Keyword hits: remote
+- Gaps: python, sql, azure, excel, tableau, power bi
+
 ### NVIDIA Workday - Senior VLSI Integration Engineer
 - Score: 73 | Grade: B | RoleFit: 45
 - Decision: pursue selectively
 - Keyword hits: -
 - Gaps: python
+
+### BUILDBRIDGE PARTNERS PTE. LTD. - Data Centre Design Engineer / Design Manager
+- Score: 72 | Grade: B | RoleFit: 45
+- Decision: pursue selectively
+- Keyword hits: -
+- Gaps: -
 
 ### HPS PARTNERS PTE. LTD. - Senior/Software Engineer (Bluetooth Embedded System)
 - Score: 71 | Grade: C | RoleFit: 45
@@ -928,12 +936,6 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Keyword hits: -
 - Gaps: go
 
-### I-PEX Inc. - [2027 New Graduates] Generalist Positions in Science and Engineering
-- Score: 70 | Grade: C | RoleFit: 45
-- Decision: pursue selectively
-- Keyword hits: -
-- Gaps: -
-
 ### 雋思集團_香港商雋思產品發展有限公司(台灣) - Senior Software Engineer
 - Score: 70 | Grade: C | RoleFit: 45
 - Decision: pursue selectively
@@ -958,11 +960,11 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Keyword hits: -
 - Gaps: -
 
-### Galileo Co.,Ltd./株式会社ガリレオ - Visa support★Relocation allowance★ [Mechanical engineer] People with skills in CAD/MATLAB/Python etc. are welcome Kanto / Nagoya
+### LEE TECH ENGINEERING PTE. LTD. - PROJECT ENGINEER
 - Score: 68 | Grade: C | RoleFit: 45
 - Decision: hold / compare
 - Keyword hits: -
-- Gaps: python
+- Gaps: -
 
 ### Microsoft - Customer Success Account Manager
 - Score: 67 | Grade: C | RoleFit: 45
@@ -970,32 +972,33 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Keyword hits: -
 - Gaps: -
 
-### Denholm Energy Services - Industrial Operatives
+### Velsera - Customer Support Specialist
 - Score: 67 | Grade: C | RoleFit: 45
 - Decision: hold / compare
 - Keyword hits: remote
 - Gaps: -
 
-### FindTutors - Become a Student Life Coach Flexible Role UK Â£20 Â£40 hr
+### Sundayy - Data Entry Clerk Virtual Assistant
 - Score: 67 | Grade: C | RoleFit: 45
 - Decision: hold / compare
 - Keyword hits: remote
 - Gaps: -
 
-### NVIDIA - NVIDIA OVX Systems
-- Score: 66 | Grade: C | RoleFit: 45
+### Atlantic Health Strategiesâ¢ - HR Administrative Assistant
+- Score: 67 | Grade: C | RoleFit: 45
 - Decision: hold / compare
-- Keyword hits: -
+- Keyword hits: remote
 - Gaps: -
 
-### Tencent Careers China - 腾讯投资-Fund Investment Associate / Associate Director
-- Score: 66 | Grade: C | RoleFit: 45
+### Digital Lifestyles - General
+- Score: 67 | Grade: C | RoleFit: 45
 - Decision: hold / compare
-- Keyword hits: -
+- Keyword hits: remote
 - Gaps: -
 
 ## Layer C — Exploratory Signals (roleFit < 40)
 
+- **Bank of America — Vice President; Feature Lead - Technology** (score: 95) | Top gap: python
 - **The Coca-Cola Company — Sr. Software Engineer , Service Supply Chain** (score: 95) | Top gap: growth
 - **The Coca-Cola Company — Software Engineer I** (score: 95) | Top gap: growth
 - **The Coca-Cola Company — Software Engineer I - CRM** (score: 95) | Top gap: crm
@@ -1009,16 +1012,15 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - **GlossGenius — Staff Software Engineer, Frontend** (score: 94) | Top gap: go
 - **GlossGenius — Staff Software Engineer, Frontend** (score: 94) | Top gap: go
 - **Databricks Greenhouse — Director,Technical Solutions (Big Data/ AI)** (score: 94) | Top gap: spark
-- **Centra — Senior Data Engineer** (score: 94) | Top gap: sql
 - **SHEIN STAR PTE. LTD. — Product Manager – Apparel & Accessories** (score: 93) | Top gap: growth
 - **Uber — Director, Marketplace Central Operations Mobility EMEA** (score: 93) | Top gap: growth
 - **Pilotly — Product Engineer II** (score: 93) | Top gap: aws
 - **Capital One — Distinguished Engineer (Remote - Eligible)** (score: 93) | Top gap: python
+- **Databricks Greenhouse — Manager - Tech Solutions (Big Data / AI)** (score: 93) | Top gap: spark
 - **Figma Greenhouse — Software Engineer, AI Product (London, United Kingdom)** (score: 93) | Top gap: llm
 - **Airbnb Greenhouse — Senior Software Engineer, Quality Platform** (score: 93) | Top gap: python
 - **Airbnb Greenhouse — Senior Web Automation Engineer, Quality Platform** (score: 93) | Top gap: agents
 - **MongoDB Greenhouse — Senior Software Engineer, Observability** (score: 93) | Top gap: java
-- **Centra — Senior Machine Learning (ML) Engineer (Product)** (score: 93) | Top gap: python
 - **GOVERNMENT TECHNOLOGY AGENCY — Staff Software Engineer - Digital Economy Products** (score: 92) | Top gap: vue
 - **INTEROPERA PTE. LTD. — Software Engineer** (score: 92) | Top gap: python
 - **Capgemini Singapore  PTE. LTD. — Senior Frontend Engineer** (score: 92) | Top gap: operations

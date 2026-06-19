@@ -1,6 +1,6 @@
 # Career Ops Parallel Worker Report
 
-Generated: 2026-06-19T00:30:22.064Z
+Generated: 2026-06-19T23:47:53.323Z
 Concurrency: 4
 Jobs processed: 50
 Errors: 0
@@ -371,6 +371,21 @@ Errors: 0
 - Never store API keys or credentials in job metadata.
 - Record only application status and user-approved notes.
 
+## P0 Uber - Software Engineer II - Frontend
+
+- Score: 95
+- Grade: A
+- Research evidence: 1
+- Keywords: JavaScript, TypeScript, React, CSS, API, engineer, product, data
+- Compensation leverage: high
+- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
+
+### Apply Agent Guardrails
+- Never submit without explicit user confirmation.
+- Never fabricate work authorization, salary history, degree, or experience.
+- Never store API keys or credentials in job metadata.
+- Record only application status and user-approved notes.
+
 ## P0 Bank of America - Vice President; Feature Lead - Technology
 
 - Score: 95
@@ -581,21 +596,6 @@ Errors: 0
 - Never store API keys or credentials in job metadata.
 - Record only application status and user-approved notes.
 
-## P0 Centra - Senior Data Engineer
-
-- Score: 94
-- Grade: A
-- Research evidence: 0
-- Keywords: Analytics, API, engineer, product, data, dashboards
-- Compensation leverage: -
-- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
-
-### Apply Agent Guardrails
-- Never submit without explicit user confirmation.
-- Never fabricate work authorization, salary history, degree, or experience.
-- Never store API keys or credentials in job metadata.
-- Record only application status and user-approved notes.
-
 ## P0 SHEIN STAR PTE. LTD. - Product Manager – Apparel & Accessories
 
 - Score: 93
@@ -656,6 +656,21 @@ Errors: 0
 - Never store API keys or credentials in job metadata.
 - Record only application status and user-approved notes.
 
+## P0 Databricks Greenhouse - Manager - Tech Solutions (Big Data / AI)
+
+- Score: 93
+- Grade: A
+- Research evidence: 0
+- Keywords: Analytics, Performance Optimization, product, data
+- Compensation leverage: -
+- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
+
+### Apply Agent Guardrails
+- Never submit without explicit user confirmation.
+- Never fabricate work authorization, salary history, degree, or experience.
+- Never store API keys or credentials in job metadata.
+- Record only application status and user-approved notes.
+
 ## P0 Figma Greenhouse - Software Engineer, AI Product (London, United Kingdom)
 
 - Score: 93
@@ -707,21 +722,6 @@ Errors: 0
 - Grade: A
 - Research evidence: 0
 - Keywords: TypeScript, React, engineer, product, data, node.js
-- Compensation leverage: -
-- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
-
-### Apply Agent Guardrails
-- Never submit without explicit user confirmation.
-- Never fabricate work authorization, salary history, degree, or experience.
-- Never store API keys or credentials in job metadata.
-- Record only application status and user-approved notes.
-
-## P0 Centra - Senior Machine Learning (ML) Engineer (Product)
-
-- Score: 93
-- Grade: A
-- Research evidence: 0
-- Keywords: Analytics, API, engineer, product, data
 - Compensation leverage: -
 - Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
 

@@ -1,10 +1,10 @@
 {
   "source": "career-ops-health-monitor",
-  "checkedAt": "2026-06-19T00:30:32.931Z",
+  "checkedAt": "2026-06-19T23:48:02.993Z",
   "threshold": 0.3,
   "health": {
-    "total": 83375,
-    "active": 83375,
+    "total": 63338,
+    "active": 63338,
     "expired": 0,
     "stale": 0,
     "expiredRate": 0,
@@ -12,7 +12,7 @@
     "avgActiveScore": 65,
     "bySource": {
       "MyCareersFuture Singapore Frontend Full Stack": {
-        "total": 22,
+        "total": 24,
         "expired": 0
       },
       "MyCareersFuture Singapore AI Data": {
@@ -24,15 +24,15 @@
         "expired": 0
       },
       "The Muse Global Software Engineering": {
-        "total": 1731,
+        "total": 1729,
         "expired": 0
       },
       "The Muse Global Data Analytics": {
-        "total": 1841,
+        "total": 1835,
         "expired": 0
       },
       "The Muse Global Remote Jobs": {
-        "total": 1817,
+        "total": 1814,
         "expired": 0
       },
       "Japan Dev English Tech Jobs": {
@@ -40,7 +40,7 @@
         "expired": 0
       },
       "Airbnb Greenhouse": {
-        "total": 125,
+        "total": 126,
         "expired": 0
       },
       "MyCareersFuture Singapore Software": {
@@ -48,11 +48,7 @@
         "expired": 0
       },
       "Databricks Greenhouse": {
-        "total": 434,
-        "expired": 0
-      },
-      "Source flex job board": {
-        "total": 135,
+        "total": 437,
         "expired": 0
       },
       "MyCareersFuture Singapore Product": {
@@ -64,7 +60,7 @@
         "expired": 0
       },
       "MongoDB Greenhouse": {
-        "total": 273,
+        "total": 272,
         "expired": 0
       },
       "Remotive Global Remote Jobs": {
@@ -92,7 +88,7 @@
         "expired": 0
       },
       "Roblox Greenhouse": {
-        "total": 143,
+        "total": 142,
         "expired": 0
       },
       "Replit Ashby": {
@@ -100,7 +96,7 @@
         "expired": 0
       },
       "Supabase Ashby": {
-        "total": 43,
+        "total": 44,
         "expired": 0
       },
       "PostHog Ashby": {
@@ -108,7 +104,7 @@
         "expired": 0
       },
       "Reddit Greenhouse": {
-        "total": 81,
+        "total": 84,
         "expired": 0
       },
       "Notion Ashby": {
@@ -128,7 +124,7 @@
         "expired": 0
       },
       "GitLab Greenhouse": {
-        "total": 93,
+        "total": 91,
         "expired": 0
       },
       "Cursor Ashby": {
@@ -139,8 +135,12 @@
         "total": 295,
         "expired": 0
       },
+      "Source flex job board": {
+        "total": 112,
+        "expired": 0
+      },
       "Mozilla Greenhouse": {
-        "total": 26,
+        "total": 27,
         "expired": 0
       },
       "Linear Ashby": {
@@ -156,7 +156,7 @@
         "expired": 0
       },
       "Perplexity Ashby": {
-        "total": 20,
+        "total": 23,
         "expired": 0
       },
       "Samsung Workday": {
@@ -177,6 +177,10 @@
       },
       "Gogolook": {
         "total": 10,
+        "expired": 0
+      },
+      "MyCareersFuture Singapore Graduate Research": {
+        "total": 3,
         "expired": 0
       },
       "Micron Workday": {
@@ -212,7 +216,7 @@
         "expired": 0
       },
       "Daijob Japan Broad Listings": {
-        "total": 115,
+        "total": 103,
         "expired": 0
       },
       "Microsoft Shanghai": {
@@ -221,10 +225,6 @@
       },
       "Tencent Careers China": {
         "total": 1478,
-        "expired": 0
-      },
-      "MyCareersFuture Singapore Graduate Research": {
-        "total": 2,
         "expired": 0
       },
       "NVIDIA Taiwan": {
@@ -247,10 +247,6 @@
         "total": 7,
         "expired": 0
       },
-      "1111 Taiwan Job Sitemap": {
-        "total": 20000,
-        "expired": 0
-      },
       "Zhaopin China Job Sitemap": {
         "total": 30000,
         "expired": 0
@@ -264,7 +260,7 @@
         "expired": 0
       },
       "Grab": {
-        "total": 43,
+        "total": 39,
         "expired": 0
       },
       "Mynavi Tenshoku Japan Sitemap": {
@@ -292,7 +288,7 @@
         "expired": 0
       },
       "Grab SmartRecruiters": {
-        "total": 9,
+        "total": 11,
         "expired": 0
       },
       "ASSA ABLOY SuccessFactors Taipei Manufacturing Engineer": {

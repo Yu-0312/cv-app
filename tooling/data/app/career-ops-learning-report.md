@@ -1,31 +1,31 @@
 # Career Ops Learning Report
 
-- Generated: 2026-06-19T00:30:29.003Z
-- Active jobs: 83375
-- Positive signals: 81545
+- Generated: 2026-06-19T23:47:59.653Z
+- Active jobs: 63338
+- Positive signals: 61508
 - Negative signals: 0
 - Source coverage: 421 sources / 10557 queries / markets tw, cn, jp, kr, sg, global, us, ca, uk, ie, de, nl, fr, es, it, se, dk, no, pl, pt, au, nz, in, br, mx, ch, fi, cz, za, id, my, ph, vn, th, il, hk, ae
 
 ## Preferred Skills
 
-- data: 36156.9
-- api: 35333.6
-- API: 35287.6
-- product: 27415.8
-- growth: 23553.9
-- operations: 22631.8
-- analytics: 18707.6
-- Analytics: 17797.6
-- sales: 17525.7
-- remote: 17057.6
-- engineer: 16649.8
-- python: 12427.1
-- go: 9728
-- sql: 8346
-- excel: 7381.5
-- aws: 6678
-- azure: 5422.7
-- machine learning: 5396.4
+- data: 36281.9
+- api: 35366.6
+- API: 35320.7
+- product: 27410.1
+- growth: 23711.7
+- operations: 22795.2
+- analytics: 18694.9
+- Analytics: 17757
+- sales: 17506.7
+- remote: 17151.2
+- engineer: 16699.4
+- python: 12507.8
+- go: 9766.9
+- sql: 8511.9
+- excel: 7404
+- aws: 6667.4
+- machine learning: 5424.6
+- azure: 5410.7
 
 ## Avoid Signals
 
@@ -34,21 +34,21 @@
 ## Preferred Companies
 
 - Zhaopin China Job Sitemap: 94500
-- 1111 Taiwan Job Sitemap: 63000
 - Mynavi Tenshoku Japan Sitemap: 46500
 - JAC Recruitment Japan Detail Sitemap: 15500
-- SpaceX: 3665.8
-- Walmart: 2671.6
-- GE Vernova: 2504.1
-- Databricks Greenhouse: 2472.3
-- Uber: 2182.1
-- Bank of America: 2001.2
-- Stripe Greenhouse: 1862.7
+- SpaceX: 3710.8
+- Walmart: 2562.3
+- Databricks Greenhouse: 2490.3
+- GE Vernova: 2471.9
+- Uber: 2264.1
+- Bank of America: 2052.8
+- Stripe Greenhouse: 1871.6
 - Bechtel: 1569.2
+- MongoDB Greenhouse: 1372.3
 
 ## Next Strategy
 
 - Expand searches around data, api, API, product, growth.
-- Prioritize sources like market-sitemap, cn, jp, tw.
+- Prioritize sources like market-sitemap, cn, jp, market-public-api.
 - No strong avoid pattern learned yet.
 - Refresh this learning layer after each batch evaluation or feedback session.

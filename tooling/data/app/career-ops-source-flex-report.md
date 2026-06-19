@@ -1,6 +1,6 @@
 # Career Ops Source Flex Report
 
-- Generated at: 2026-06-19T00:01:01.011Z
+- Generated at: 2026-06-19T23:17:11.196Z
 - Target markets: tw, cn, jp, kr, sg, global, us, ca, uk, ie, de, nl, fr, es, it, se, dk, no, pl, pt, au, nz, in, br, mx, ch, fi, cz, za, id, my, ph, vn, th, il, hk, ae
 - Total sources: 421
 - Flex candidates: 348
