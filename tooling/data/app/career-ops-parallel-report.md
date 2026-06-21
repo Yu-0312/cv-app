@@ -1,6 +1,6 @@
 # Career Ops Parallel Worker Report
 
-Generated: 2026-06-19T23:47:53.323Z
+Generated: 2026-06-21T00:04:50.387Z
 Concurrency: 4
 Jobs processed: 50
 Errors: 0
@@ -461,27 +461,12 @@ Errors: 0
 - Never store API keys or credentials in job metadata.
 - Record only application status and user-approved notes.
 
-## P0 Allstate - Lead Product Engineer - Observability (Enterprise App Monitoring) - Remote
+## P0 Allstate - Product Engineer (hybrid/remote)
 
 - Score: 95
 - Grade: A
 - Research evidence: 0
-- Keywords: API, remote, engineer, product, dashboards
-- Compensation leverage: -
-- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
-
-### Apply Agent Guardrails
-- Never submit without explicit user confirmation.
-- Never fabricate work authorization, salary history, degree, or experience.
-- Never store API keys or credentials in job metadata.
-- Record only application status and user-approved notes.
-
-## P0 Allstate - Software Engineer Lead Consultant
-
-- Score: 95
-- Grade: A
-- Research evidence: 0
-- Keywords: API, remote, engineer, product, data
+- Keywords: React, API, remote, engineer, product, data, restful
 - Compensation leverage: -
 - Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
 
@@ -574,6 +559,21 @@ Errors: 0
 - Keywords: JavaScript, TypeScript, React, CSS, Accessibility, API, Performance Optimization, Design Systems, design system, engineer
 - Compensation leverage: -
 - Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
+
+### Apply Agent Guardrails
+- Never submit without explicit user confirmation.
+- Never fabricate work authorization, salary history, degree, or experience.
+- Never store API keys or credentials in job metadata.
+- Record only application status and user-approved notes.
+
+## P0 Warner Bros. Discovery - Sr. Principal Data Scientist
+
+- Score: 94
+- Grade: A
+- Research evidence: 0
+- Keywords: Analytics, API, product, data
+- Compensation leverage: -
+- Story hooks: cross-functional influence, frontend product execution, systems and API collaboration
 
 ### Apply Agent Guardrails
 - Never submit without explicit user confirmation.

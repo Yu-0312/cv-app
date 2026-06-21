@@ -1,6 +1,6 @@
 window.CV_CAREER_OPS_DEEP_FIT = {
   "source": "career-ops-deep-fit",
-  "generatedAt": "2026-06-19T23:47:56.466Z",
+  "generatedAt": "2026-06-21T00:04:53.916Z",
   "llmProvider": "none",
   "summary": {
     "totalResults": 95,
@@ -1963,6 +1963,22 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "layer": "B"
     },
     {
+      "jobKey": "url:https://justjoin.it/job-offer/emagine-polska-idm-developer-analyst---one-identity-warsaw-security-53f17d61",
+      "company": "emagine Polska",
+      "title": "IDM Developer / Analyst – One Identity",
+      "score": 75,
+      "grade": "B",
+      "roleFit": 45,
+      "url": "https://justjoin.it/job-offer/emagine-polska-idm-developer-analyst---one-identity-warsaw-security-53f17d61",
+      "location": "Warsaw, PL",
+      "keywordHits": [
+        "remote"
+      ],
+      "keywordMisses": [],
+      "decision": "pursue selectively",
+      "layer": "B"
+    },
+    {
       "jobKey": "url:https://www.mycareersfuture.gov.sg/job/c90d4483f22831b563ccea46d2b18b0a",
       "company": "ORION SYSTEMS INTEGRATION PTE. LTD.",
       "title": "Software Engineer",
@@ -2145,36 +2161,6 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "layer": "B"
     },
     {
-      "jobKey": "url:https://nvidia.wd5.myworkdayjobs.com/nvidiaexternalcareersite/job/israel-tel-aviv/senior-vlsi-integration-engineer_jr1989467",
-      "company": "NVIDIA Workday",
-      "title": "Senior VLSI Integration Engineer",
-      "score": 73,
-      "grade": "B",
-      "roleFit": 45,
-      "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Israel-Tel-Aviv/Senior-VLSI-Integration-Engineer_JR1989467",
-      "location": "Israel, Tel Aviv",
-      "keywordHits": [],
-      "keywordMisses": [
-        "python"
-      ],
-      "decision": "pursue selectively",
-      "layer": "B"
-    },
-    {
-      "jobKey": "url:https://www.mycareersfuture.gov.sg/job/6971f20da18c6eb931635320faf15608",
-      "company": "BUILDBRIDGE PARTNERS PTE. LTD.",
-      "title": "Data Centre Design Engineer / Design Manager",
-      "score": 72,
-      "grade": "B",
-      "roleFit": 45,
-      "url": "https://www.mycareersfuture.gov.sg/job/6971f20da18c6eb931635320faf15608",
-      "location": "Islandwide, Singapore",
-      "keywordHits": [],
-      "keywordMisses": [],
-      "decision": "pursue selectively",
-      "layer": "B"
-    },
-    {
       "jobKey": "url:https://www.mycareersfuture.gov.sg/job/6813b1ce86e2266fd9953cebcb246155",
       "company": "HPS PARTNERS PTE. LTD.",
       "title": "Senior/Software Engineer (Bluetooth Embedded System)",
@@ -2184,6 +2170,22 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "url": "https://www.mycareersfuture.gov.sg/job/6813b1ce86e2266fd9953cebcb246155",
       "location": "NORDCOM ONE, GAMBAS CRESCENT, D27 Sembawang, Yishun, Singapore",
       "keywordHits": [],
+      "keywordMisses": [],
+      "decision": "pursue selectively",
+      "layer": "B"
+    },
+    {
+      "jobKey": "url:https://remoteok.com/remote-jobs/remote-all-other-roles-collate-1133733",
+      "company": "Collate",
+      "title": "All Other Roles",
+      "score": 71,
+      "grade": "C",
+      "roleFit": 45,
+      "url": "https://remoteok.com/remote-jobs/remote-all-other-roles-collate-1133733",
+      "location": "San Francisco,",
+      "keywordHits": [
+        "remote"
+      ],
       "keywordMisses": [],
       "decision": "pursue selectively",
       "layer": "B"
@@ -2229,6 +2231,20 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "keywordMisses": [
         "go"
       ],
+      "decision": "pursue selectively",
+      "layer": "B"
+    },
+    {
+      "jobKey": "url:https://www.daijob.com/en/jobs/detail/1521847",
+      "company": "I-PEX Inc.",
+      "title": "[2027 New Graduates] Generalist Positions in Science and Engineering",
+      "score": 70,
+      "grade": "C",
+      "roleFit": 45,
+      "url": "https://www.daijob.com/en/jobs/detail/1521847",
+      "location": "Fukuoka, JP / Shimane, JP",
+      "keywordHits": [],
+      "keywordMisses": [],
       "decision": "pursue selectively",
       "layer": "B"
     },
@@ -2292,15 +2308,17 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "layer": "B"
     },
     {
-      "jobKey": "url:https://www.mycareersfuture.gov.sg/job/c6a10d0177f17a2c6ed1d2c8105efa30",
-      "company": "LEE TECH ENGINEERING PTE. LTD.",
-      "title": "PROJECT ENGINEER",
+      "jobKey": "url:https://remoteok.com/remote-jobs/remote-test-job-ad-2-test-1133716",
+      "company": "TEST",
+      "title": "TEST JOB AD 2",
       "score": 68,
       "grade": "C",
       "roleFit": 45,
-      "url": "https://www.mycareersfuture.gov.sg/job/c6a10d0177f17a2c6ed1d2c8105efa30",
-      "location": "LINK@AMK, ANG MO KIO STREET 62, D20 Ang Mo Kio, Bishan, Singapore",
-      "keywordHits": [],
+      "url": "https://remoteok.com/remote-jobs/remote-test-job-ad-2-test-1133716",
+      "location": "Brisbane,",
+      "keywordHits": [
+        "remote"
+      ],
       "keywordMisses": [],
       "decision": "hold / compare",
       "layer": "B"
@@ -2360,22 +2378,6 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "roleFit": 45,
       "url": "https://remoteok.com/remote-jobs/remote-hr-administrative-assistant-atlantic-health-strategiestm-1133671",
       "location": "United States,",
-      "keywordHits": [
-        "remote"
-      ],
-      "keywordMisses": [],
-      "decision": "hold / compare",
-      "layer": "B"
-    },
-    {
-      "jobKey": "url:https://remoteok.com/remote-jobs/remote-general-digital-lifestyles-1133722",
-      "company": "Digital Lifestyles",
-      "title": "General",
-      "score": 67,
-      "grade": "C",
-      "roleFit": 45,
-      "url": "https://remoteok.com/remote-jobs/remote-general-digital-lifestyles-1133722",
-      "location": "Calgary,",
       "keywordHits": [
         "remote"
       ],
@@ -2494,48 +2496,26 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "layer": "C"
     },
     {
-      "jobKey": "url:https://www.themuse.com/jobs/allstate/lead-product-engineer-observability-enterprise-app-monitoring-remote-40d440",
+      "jobKey": "url:https://www.themuse.com/jobs/allstate/product-engineer-hybridremote-4ba55e",
       "company": "Allstate",
-      "title": "Lead Product Engineer - Observability (Enterprise App Monitoring) - Remote",
+      "title": "Product Engineer (hybrid/remote)",
       "score": 95,
       "grade": "A",
       "roleFit": 92,
-      "url": "https://www.themuse.com/jobs/allstate/lead-product-engineer-observability-enterprise-app-monitoring-remote-40d440",
-      "location": "Flexible / Remote",
+      "url": "https://www.themuse.com/jobs/allstate/product-engineer-hybridremote-4ba55e",
+      "location": "Belfast, United Kingdom / Flexible / Remote",
       "keywordHits": [
         "React",
         "API",
         "remote",
-        "dashboard"
+        "React"
       ],
       "topGap": "python",
       "mainGaps": [
         "python",
         "java",
-        "kubernetes",
-        "growth"
-      ],
-      "layer": "C"
-    },
-    {
-      "jobKey": "url:https://www.themuse.com/jobs/allstate/software-engineer-lead-consultant-8a7774",
-      "company": "Allstate",
-      "title": "Software Engineer Lead Consultant",
-      "score": 95,
-      "grade": "A",
-      "roleFit": 92,
-      "url": "https://www.themuse.com/jobs/allstate/software-engineer-lead-consultant-8a7774",
-      "location": "Flexible / Remote",
-      "keywordHits": [
-        "API",
-        "Product Engineer"
-      ],
-      "topGap": "python",
-      "mainGaps": [
-        "python",
-        "java",
-        "kubernetes",
-        "rest"
+        "aws",
+        "azure"
       ],
       "layer": "C"
     },
@@ -2669,6 +2649,30 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "topGap": "go",
       "mainGaps": [
         "go"
+      ],
+      "layer": "C"
+    },
+    {
+      "jobKey": "url:https://www.themuse.com/jobs/warnerbrosdiscovery/sr-principal-data-scientist",
+      "company": "Warner Bros. Discovery",
+      "title": "Sr. Principal Data Scientist",
+      "score": 94,
+      "grade": "A",
+      "roleFit": 92,
+      "url": "https://www.themuse.com/jobs/warnerbrosdiscovery/sr-principal-data-scientist",
+      "location": "Atlanta, GA",
+      "keywordHits": [
+        "Analytics",
+        "API",
+        "analytics",
+        "Product Engineer"
+      ],
+      "topGap": "python",
+      "mainGaps": [
+        "python",
+        "sql",
+        "aws",
+        "gcp"
       ],
       "layer": "C"
     },
@@ -2952,27 +2956,6 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "layer": "C"
     },
     {
-      "jobKey": "url:https://www.mycareersfuture.gov.sg/job/db68a91faa7ec8b31abbace9d5a47f3a",
-      "company": "Capgemini Singapore  PTE. LTD.",
-      "title": "Senior Frontend Engineer",
-      "score": 92,
-      "grade": "A",
-      "roleFit": 92,
-      "url": "https://www.mycareersfuture.gov.sg/job/db68a91faa7ec8b31abbace9d5a47f3a",
-      "location": "MARINA BAY FINANCIAL CENTRE, MARINA BOULEVARD, D01 Marina, Raffles Place, People's Park, Cecil, Singapore",
-      "keywordHits": [
-        "Frontend Engineer",
-        "JavaScript",
-        "TypeScript",
-        "React"
-      ],
-      "topGap": "operations",
-      "mainGaps": [
-        "operations"
-      ],
-      "layer": "C"
-    },
-    {
       "jobKey": "url:https://www.mycareersfuture.gov.sg/job/b76e59cf6675791412b918f98ca4ac07",
       "company": "AIM GLOBAL TALENT PTE. LTD.",
       "title": "Senior Frontend Engineer",
@@ -3046,6 +3029,29 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "grade": "A",
       "roleFit": 92,
       "url": "https://remotive.com/remote-jobs/software-development/staff-software-engineer-product-florianopolis-2090911",
+      "location": "Brazil",
+      "keywordHits": [
+        "TypeScript",
+        "React",
+        "API",
+        "remote"
+      ],
+      "topGap": "aws",
+      "mainGaps": [
+        "aws",
+        "rest",
+        "agents"
+      ],
+      "layer": "C"
+    },
+    {
+      "jobKey": "url:https://remotive.com/remote-jobs/software-development/staff-software-engineer-product-porto-alegre-2090909",
+      "company": "LawnStarter",
+      "title": "Staff Software Engineer, Product (Porto Alegre)",
+      "score": 92,
+      "grade": "A",
+      "roleFit": 92,
+      "url": "https://remotive.com/remote-jobs/software-development/staff-software-engineer-product-porto-alegre-2090909",
       "location": "Brazil",
       "keywordHits": [
         "TypeScript",
