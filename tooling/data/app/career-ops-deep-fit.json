@@ -1,6 +1,6 @@
 {
   "source": "career-ops-deep-fit",
-  "generatedAt": "2026-06-21T00:04:53.916Z",
+  "generatedAt": "2026-06-22T00:17:07.962Z",
   "llmProvider": "none",
   "summary": {
     "totalResults": 95,
@@ -1963,22 +1963,6 @@
       "layer": "B"
     },
     {
-      "jobKey": "url:https://justjoin.it/job-offer/emagine-polska-idm-developer-analyst---one-identity-warsaw-security-53f17d61",
-      "company": "emagine Polska",
-      "title": "IDM Developer / Analyst – One Identity",
-      "score": 75,
-      "grade": "B",
-      "roleFit": 45,
-      "url": "https://justjoin.it/job-offer/emagine-polska-idm-developer-analyst---one-identity-warsaw-security-53f17d61",
-      "location": "Warsaw, PL",
-      "keywordHits": [
-        "remote"
-      ],
-      "keywordMisses": [],
-      "decision": "pursue selectively",
-      "layer": "B"
-    },
-    {
       "jobKey": "url:https://www.mycareersfuture.gov.sg/job/c90d4483f22831b563ccea46d2b18b0a",
       "company": "ORION SYSTEMS INTEGRATION PTE. LTD.",
       "title": "Software Engineer",
@@ -2161,6 +2145,22 @@
       "layer": "B"
     },
     {
+      "jobKey": "url:https://www.mycareersfuture.gov.sg/job/eb48e26d18b0104fabcaac972c32dc54",
+      "company": "FINSURGE PTE. LTD.",
+      "title": "Murex Datamart Reporting Consultant",
+      "score": 72,
+      "grade": "B",
+      "roleFit": 45,
+      "url": "https://www.mycareersfuture.gov.sg/job/eb48e26d18b0104fabcaac972c32dc54",
+      "location": "THE SIGNATURE, CHANGI BUSINESS PARK CENTRAL 2, D16 Bedok, Eastwood, Kew Drive, Upper East Coast, Singapore",
+      "keywordHits": [],
+      "keywordMisses": [
+        "sql"
+      ],
+      "decision": "pursue selectively",
+      "layer": "B"
+    },
+    {
       "jobKey": "url:https://www.mycareersfuture.gov.sg/job/6813b1ce86e2266fd9953cebcb246155",
       "company": "HPS PARTNERS PTE. LTD.",
       "title": "Senior/Software Engineer (Bluetooth Embedded System)",
@@ -2235,20 +2235,6 @@
       "layer": "B"
     },
     {
-      "jobKey": "url:https://www.daijob.com/en/jobs/detail/1521847",
-      "company": "I-PEX Inc.",
-      "title": "[2027 New Graduates] Generalist Positions in Science and Engineering",
-      "score": 70,
-      "grade": "C",
-      "roleFit": 45,
-      "url": "https://www.daijob.com/en/jobs/detail/1521847",
-      "location": "Fukuoka, JP / Shimane, JP",
-      "keywordHits": [],
-      "keywordMisses": [],
-      "decision": "pursue selectively",
-      "layer": "B"
-    },
-    {
       "jobKey": "url:https://www.cake.me/companies/qpp/jobs/senior-software-engineer-team-lead",
       "company": "雋思集團_香港商雋思產品發展有限公司(台灣)",
       "title": "Senior Software Engineer",
@@ -2257,6 +2243,20 @@
       "roleFit": 45,
       "url": "https://www.cake.me/companies/qpp/jobs/senior-software-engineer-team-lead",
       "location": "台灣, 台灣, TW",
+      "keywordHits": [],
+      "keywordMisses": [],
+      "decision": "pursue selectively",
+      "layer": "B"
+    },
+    {
+      "jobKey": "url:https://www.dice.com/job-detail/3f535fc9-71dd-4380-8612-4b0163ead612",
+      "company": "Belcan, LLC",
+      "title": "Metallurgical Engineer",
+      "score": 70,
+      "grade": "C",
+      "roleFit": 45,
+      "url": "https://www.dice.com/job-detail/3f535fc9-71dd-4380-8612-4b0163ead612",
+      "location": "Decatur, IL, US",
       "keywordHits": [],
       "keywordMisses": [],
       "decision": "pursue selectively",
@@ -2520,6 +2520,52 @@
       "layer": "C"
     },
     {
+      "jobKey": "url:https://www.themuse.com/jobs/allstate/lead-product-engineer-observability-enterprise-app-monitoring-remote-40d440",
+      "company": "Allstate",
+      "title": "Lead Product Engineer - Observability (Enterprise App Monitoring) - Remote",
+      "score": 95,
+      "grade": "A",
+      "roleFit": 92,
+      "url": "https://www.themuse.com/jobs/allstate/lead-product-engineer-observability-enterprise-app-monitoring-remote-40d440",
+      "location": "Flexible / Remote",
+      "keywordHits": [
+        "React",
+        "API",
+        "remote",
+        "dashboard"
+      ],
+      "topGap": "python",
+      "mainGaps": [
+        "python",
+        "java",
+        "kubernetes",
+        "growth"
+      ],
+      "layer": "C"
+    },
+    {
+      "jobKey": "url:https://www.themuse.com/jobs/allstate/software-engineer-lead-consultant-8a7774",
+      "company": "Allstate",
+      "title": "Software Engineer Lead Consultant",
+      "score": 95,
+      "grade": "A",
+      "roleFit": 92,
+      "url": "https://www.themuse.com/jobs/allstate/software-engineer-lead-consultant-8a7774",
+      "location": "Flexible / Remote",
+      "keywordHits": [
+        "API",
+        "Product Engineer"
+      ],
+      "topGap": "python",
+      "mainGaps": [
+        "python",
+        "java",
+        "kubernetes",
+        "rest"
+      ],
+      "layer": "C"
+    },
+    {
       "jobKey": "url:https://japan-dev.com/jobs/dinii/dinii-senior-software-engineer-q41fc0",
       "company": "Dinii",
       "title": "Senior Software Engineer",
@@ -2701,6 +2747,30 @@
       "layer": "C"
     },
     {
+      "jobKey": "url:https://justjoin.it/job-offer/centra-senior-analytics-engineer-wroclaw-analytics",
+      "company": "Centra",
+      "title": "Senior Data Engineer",
+      "score": 94,
+      "grade": "A",
+      "roleFit": 92,
+      "url": "https://justjoin.it/job-offer/centra-senior-analytics-engineer-wroclaw-analytics",
+      "location": "Wrocław, PL",
+      "keywordHits": [
+        "Analytics",
+        "API",
+        "dashboard",
+        "analytics"
+      ],
+      "topGap": "sql",
+      "mainGaps": [
+        "sql",
+        "aws",
+        "gcp",
+        "azure"
+      ],
+      "layer": "C"
+    },
+    {
       "jobKey": "url:https://www.mycareersfuture.gov.sg/job/ab3bc86c20af766934980ae954bdfc2e",
       "company": "SHEIN STAR PTE. LTD.",
       "title": "Product Manager – Apparel & Accessories",
@@ -2834,30 +2904,6 @@
       "mainGaps": [
         "llm",
         "agents"
-      ],
-      "layer": "C"
-    },
-    {
-      "jobKey": "url:https://careers.airbnb.com/positions/7380149?gh_jid=7380149",
-      "company": "Airbnb Greenhouse",
-      "title": "Senior Software Engineer, Quality Platform",
-      "score": 93,
-      "grade": "A",
-      "roleFit": 92,
-      "url": "https://careers.airbnb.com/positions/7380149?gh_jid=7380149",
-      "location": "Brazil",
-      "keywordHits": [
-        "TypeScript",
-        "API",
-        "Design Systems",
-        "design system"
-      ],
-      "topGap": "python",
-      "mainGaps": [
-        "python",
-        "java",
-        "swift",
-        "kotlin"
       ],
       "layer": "C"
     },
@@ -3006,52 +3052,6 @@
       "grade": "A",
       "roleFit": 92,
       "url": "https://remotive.com/remote-jobs/software-development/staff-software-engineer-product-belo-horizonte-2090910",
-      "location": "Brazil",
-      "keywordHits": [
-        "TypeScript",
-        "React",
-        "API",
-        "remote"
-      ],
-      "topGap": "aws",
-      "mainGaps": [
-        "aws",
-        "rest",
-        "agents"
-      ],
-      "layer": "C"
-    },
-    {
-      "jobKey": "url:https://remotive.com/remote-jobs/software-development/staff-software-engineer-product-florianopolis-2090911",
-      "company": "LawnStarter",
-      "title": "Staff Software Engineer, Product (Florianópolis)",
-      "score": 92,
-      "grade": "A",
-      "roleFit": 92,
-      "url": "https://remotive.com/remote-jobs/software-development/staff-software-engineer-product-florianopolis-2090911",
-      "location": "Brazil",
-      "keywordHits": [
-        "TypeScript",
-        "React",
-        "API",
-        "remote"
-      ],
-      "topGap": "aws",
-      "mainGaps": [
-        "aws",
-        "rest",
-        "agents"
-      ],
-      "layer": "C"
-    },
-    {
-      "jobKey": "url:https://remotive.com/remote-jobs/software-development/staff-software-engineer-product-porto-alegre-2090909",
-      "company": "LawnStarter",
-      "title": "Staff Software Engineer, Product (Porto Alegre)",
-      "score": 92,
-      "grade": "A",
-      "roleFit": 92,
-      "url": "https://remotive.com/remote-jobs/software-development/staff-software-engineer-product-porto-alegre-2090909",
       "location": "Brazil",
       "keywordHits": [
         "TypeScript",

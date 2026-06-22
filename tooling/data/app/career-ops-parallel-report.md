@@ -1,6 +1,6 @@
 # Career Ops Parallel Worker Report
 
-Generated: 2026-06-21T00:04:50.387Z
+Generated: 2026-06-22T00:17:04.518Z
 Concurrency: 4
 Jobs processed: 50
 Errors: 0
@@ -476,6 +476,36 @@ Errors: 0
 - Never store API keys or credentials in job metadata.
 - Record only application status and user-approved notes.
 
+## P0 Allstate - Lead Product Engineer - Observability (Enterprise App Monitoring) - Remote
+
+- Score: 95
+- Grade: A
+- Research evidence: 0
+- Keywords: API, remote, engineer, product, dashboards
+- Compensation leverage: -
+- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
+
+### Apply Agent Guardrails
+- Never submit without explicit user confirmation.
+- Never fabricate work authorization, salary history, degree, or experience.
+- Never store API keys or credentials in job metadata.
+- Record only application status and user-approved notes.
+
+## P0 Allstate - Software Engineer Lead Consultant
+
+- Score: 95
+- Grade: A
+- Research evidence: 0
+- Keywords: API, remote, engineer, product, data
+- Compensation leverage: -
+- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
+
+### Apply Agent Guardrails
+- Never submit without explicit user confirmation.
+- Never fabricate work authorization, salary history, degree, or experience.
+- Never store API keys or credentials in job metadata.
+- Record only application status and user-approved notes.
+
 ## P0 Dinii - Senior Software Engineer
 
 - Score: 95
@@ -596,6 +626,21 @@ Errors: 0
 - Never store API keys or credentials in job metadata.
 - Record only application status and user-approved notes.
 
+## P0 Centra - Senior Data Engineer
+
+- Score: 94
+- Grade: A
+- Research evidence: 0
+- Keywords: Analytics, API, engineer, product, data, dashboards
+- Compensation leverage: -
+- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
+
+### Apply Agent Guardrails
+- Never submit without explicit user confirmation.
+- Never fabricate work authorization, salary history, degree, or experience.
+- Never store API keys or credentials in job metadata.
+- Record only application status and user-approved notes.
+
 ## P0 SHEIN STAR PTE. LTD. - Product Manager – Apparel & Accessories
 
 - Score: 93
@@ -686,21 +731,6 @@ Errors: 0
 - Never store API keys or credentials in job metadata.
 - Record only application status and user-approved notes.
 
-## P0 Airbnb Greenhouse - Senior Software Engineer, Quality Platform
-
-- Score: 93
-- Grade: A
-- Research evidence: 0
-- Keywords: TypeScript, Design Systems, design system, engineer, product, data
-- Compensation leverage: -
-- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
-
-### Apply Agent Guardrails
-- Never submit without explicit user confirmation.
-- Never fabricate work authorization, salary history, degree, or experience.
-- Never store API keys or credentials in job metadata.
-- Record only application status and user-approved notes.
-
 ## P0 Airbnb Greenhouse - Senior Web Automation Engineer, Quality Platform
 
 - Score: 93
@@ -722,36 +752,6 @@ Errors: 0
 - Grade: A
 - Research evidence: 0
 - Keywords: TypeScript, React, engineer, product, data, node.js
-- Compensation leverage: -
-- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
-
-### Apply Agent Guardrails
-- Never submit without explicit user confirmation.
-- Never fabricate work authorization, salary history, degree, or experience.
-- Never store API keys or credentials in job metadata.
-- Record only application status and user-approved notes.
-
-## P0 GOVERNMENT TECHNOLOGY AGENCY - Staff Software Engineer - Digital Economy Products
-
-- Score: 92
-- Grade: A
-- Research evidence: 0
-- Keywords: TypeScript, React, Next.js, engineer, product, data, node.js
-- Compensation leverage: -
-- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
-
-### Apply Agent Guardrails
-- Never submit without explicit user confirmation.
-- Never fabricate work authorization, salary history, degree, or experience.
-- Never store API keys or credentials in job metadata.
-- Record only application status and user-approved notes.
-
-## P0 INTEROPERA PTE. LTD. - Software Engineer
-
-- Score: 92
-- Grade: A
-- Research evidence: 0
-- Keywords: React, Next.js, engineer, product, data
 - Compensation leverage: -
 - Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
 

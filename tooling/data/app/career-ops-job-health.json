@@ -1,18 +1,18 @@
 {
   "source": "career-ops-health-monitor",
-  "checkedAt": "2026-06-21T00:05:01.309Z",
+  "checkedAt": "2026-06-22T00:17:15.293Z",
   "threshold": 0.3,
   "health": {
-    "total": 82089,
-    "active": 82089,
+    "total": 83339,
+    "active": 83339,
     "expired": 0,
     "stale": 0,
     "expiredRate": 0,
     "expiredRatePct": "0%",
-    "avgActiveScore": 64,
+    "avgActiveScore": 65,
     "bySource": {
       "MyCareersFuture Singapore Frontend Full Stack": {
-        "total": 22,
+        "total": 21,
         "expired": 0
       },
       "MyCareersFuture Singapore AI Data": {
@@ -24,15 +24,15 @@
         "expired": 0
       },
       "The Muse Global Software Engineering": {
-        "total": 1730,
+        "total": 1729,
         "expired": 0
       },
       "The Muse Global Data Analytics": {
-        "total": 1835,
+        "total": 1831,
         "expired": 0
       },
       "The Muse Global Remote Jobs": {
-        "total": 532,
+        "total": 1809,
         "expired": 0
       },
       "Japan Dev English Tech Jobs": {
@@ -40,7 +40,7 @@
         "expired": 0
       },
       "Airbnb Greenhouse": {
-        "total": 126,
+        "total": 122,
         "expired": 0
       },
       "MyCareersFuture Singapore Software": {
@@ -49,6 +49,10 @@
       },
       "Databricks Greenhouse": {
         "total": 436,
+        "expired": 0
+      },
+      "Source flex job board": {
+        "total": 130,
         "expired": 0
       },
       "MyCareersFuture Singapore Product": {
@@ -64,7 +68,7 @@
         "expired": 0
       },
       "Remotive Global Remote Jobs": {
-        "total": 29,
+        "total": 30,
         "expired": 0
       },
       "Stripe Greenhouse": {
@@ -128,15 +132,11 @@
         "expired": 0
       },
       "Cursor Ashby": {
-        "total": 88,
+        "total": 87,
         "expired": 0
       },
       "NVIDIA Workday": {
-        "total": 293,
-        "expired": 0
-      },
-      "Source flex job board": {
-        "total": 135,
+        "total": 294,
         "expired": 0
       },
       "Mozilla Greenhouse": {
@@ -152,7 +152,7 @@
         "expired": 0
       },
       "Remote OK Global Remote Jobs": {
-        "total": 99,
+        "total": 98,
         "expired": 0
       },
       "Perplexity Ashby": {
@@ -184,7 +184,7 @@
         "expired": 0
       },
       "Micron Workday": {
-        "total": 59,
+        "total": 58,
         "expired": 0
       },
       "Logitech Workday Taiwan": {
@@ -216,7 +216,7 @@
         "expired": 0
       },
       "Daijob Japan Broad Listings": {
-        "total": 121,
+        "total": 109,
         "expired": 0
       },
       "Microsoft Shanghai": {
@@ -224,7 +224,7 @@
         "expired": 0
       },
       "Tencent Careers China": {
-        "total": 1477,
+        "total": 1478,
         "expired": 0
       },
       "NVIDIA Taiwan": {
@@ -264,7 +264,7 @@
         "expired": 0
       },
       "Grab": {
-        "total": 39,
+        "total": 40,
         "expired": 0
       },
       "Mynavi Tenshoku Japan Sitemap": {
@@ -292,7 +292,7 @@
         "expired": 0
       },
       "Grab SmartRecruiters": {
-        "total": 11,
+        "total": 10,
         "expired": 0
       },
       "ASSA ABLOY SuccessFactors Taipei Manufacturing Engineer": {

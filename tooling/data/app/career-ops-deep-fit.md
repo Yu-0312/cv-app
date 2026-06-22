@@ -1,6 +1,6 @@
 # Career Ops Deep Fit Report
 
-Generated: 2026-06-21T00:04:53.916Z
+Generated: 2026-06-22T00:17:07.962Z
 LLM provider: none
 Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 exploratory)
 
@@ -834,12 +834,6 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Keyword hits: -
 - Gaps: python
 
-### emagine Polska - IDM Developer / Analyst – One Identity
-- Score: 75 | Grade: B | RoleFit: 45
-- Decision: pursue selectively
-- Keyword hits: remote
-- Gaps: -
-
 ### ORION SYSTEMS INTEGRATION PTE. LTD. - Software Engineer
 - Score: 74 | Grade: B | RoleFit: 45
 - Decision: pursue selectively
@@ -906,6 +900,12 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Keyword hits: remote
 - Gaps: python, sql, azure, excel, tableau, power bi
 
+### FINSURGE PTE. LTD. - Murex Datamart Reporting Consultant
+- Score: 72 | Grade: B | RoleFit: 45
+- Decision: pursue selectively
+- Keyword hits: -
+- Gaps: sql
+
 ### HPS PARTNERS PTE. LTD. - Senior/Software Engineer (Bluetooth Embedded System)
 - Score: 71 | Grade: C | RoleFit: 45
 - Decision: pursue selectively
@@ -936,13 +936,13 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Keyword hits: -
 - Gaps: go
 
-### I-PEX Inc. - [2027 New Graduates] Generalist Positions in Science and Engineering
+### 雋思集團_香港商雋思產品發展有限公司(台灣) - Senior Software Engineer
 - Score: 70 | Grade: C | RoleFit: 45
 - Decision: pursue selectively
 - Keyword hits: -
 - Gaps: -
 
-### 雋思集團_香港商雋思產品發展有限公司(台灣) - Senior Software Engineer
+### Belcan, LLC - Metallurgical Engineer
 - Score: 70 | Grade: C | RoleFit: 45
 - Decision: pursue selectively
 - Keyword hits: -
@@ -1004,6 +1004,8 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - **The Coca-Cola Company — Software Engineer I - CRM** (score: 95) | Top gap: crm
 - **Airbnb — Senior/ Manager, Machine Learning, Customer Support Engineering** (score: 95) | Top gap: llm
 - **Allstate — Product Engineer (hybrid/remote)** (score: 95) | Top gap: python
+- **Allstate — Lead Product Engineer - Observability (Enterprise App Monitoring) - Remote** (score: 95) | Top gap: python
+- **Allstate — Software Engineer Lead Consultant** (score: 95) | Top gap: python
 - **Dinii — Senior Software Engineer** (score: 95) | Top gap: aws
 - **Airbnb Greenhouse — Lead - Advanced Analytics, Gurgaon** (score: 95) | Top gap: python
 - **GN AUDIO SINGAPORE PTE. LTD. — Software Engineer II (SteelSeries)** (score: 94) | Top gap: go
@@ -1012,13 +1014,13 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - **GlossGenius — Staff Software Engineer, Frontend** (score: 94) | Top gap: go
 - **Warner Bros. Discovery — Sr. Principal Data Scientist** (score: 94) | Top gap: python
 - **Databricks Greenhouse — Director,Technical Solutions (Big Data/ AI)** (score: 94) | Top gap: spark
+- **Centra — Senior Data Engineer** (score: 94) | Top gap: sql
 - **SHEIN STAR PTE. LTD. — Product Manager – Apparel & Accessories** (score: 93) | Top gap: growth
 - **Uber — Director, Marketplace Central Operations Mobility EMEA** (score: 93) | Top gap: growth
 - **Pilotly — Product Engineer II** (score: 93) | Top gap: aws
 - **Capital One — Distinguished Engineer (Remote - Eligible)** (score: 93) | Top gap: python
 - **Databricks Greenhouse — Manager - Tech Solutions (Big Data / AI)** (score: 93) | Top gap: spark
 - **Figma Greenhouse — Software Engineer, AI Product (London, United Kingdom)** (score: 93) | Top gap: llm
-- **Airbnb Greenhouse — Senior Software Engineer, Quality Platform** (score: 93) | Top gap: python
 - **Airbnb Greenhouse — Senior Web Automation Engineer, Quality Platform** (score: 93) | Top gap: agents
 - **MongoDB Greenhouse — Senior Software Engineer, Observability** (score: 93) | Top gap: java
 - **GOVERNMENT TECHNOLOGY AGENCY — Staff Software Engineer - Digital Economy Products** (score: 92) | Top gap: vue
@@ -1026,6 +1028,4 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - **AIM GLOBAL TALENT PTE. LTD. — Senior Frontend Engineer** (score: 92) | Top gap: aws
 - **REVOLUT TECHNOLOGIES SINGAPORE PTE. LTD. — Frontend Engineer** (score: 92) | Top gap: growth
 - **LawnStarter — Staff Software Engineer, Product (Belo Horizonte)** (score: 92) | Top gap: aws
-- **LawnStarter — Staff Software Engineer, Product (Florianópolis)** (score: 92) | Top gap: aws
-- **LawnStarter — Staff Software Engineer, Product (Porto Alegre)** (score: 92) | Top gap: aws
 

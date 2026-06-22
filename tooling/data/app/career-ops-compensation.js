@@ -1,6 +1,6 @@
 window.CV_CAREER_OPS_COMPENSATION = {
   "source": "career-ops-compensation",
-  "generatedAt": "2026-06-21T00:04:43.339Z",
+  "generatedAt": "2026-06-22T00:16:57.613Z",
   "plans": [
     {
       "jobKey": "url:https://www.mycareersfuture.gov.sg/job/07eafbe6994e2090a0c2a6a6a6111e62",
