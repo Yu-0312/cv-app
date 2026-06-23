@@ -1,6 +1,6 @@
 # Career Ops Parallel Worker Report
 
-Generated: 2026-06-22T00:17:04.518Z
+Generated: 2026-06-23T00:15:46.474Z
 Concurrency: 4
 Jobs processed: 50
 Errors: 0
@@ -611,12 +611,12 @@ Errors: 0
 - Never store API keys or credentials in job metadata.
 - Record only application status and user-approved notes.
 
-## P0 Databricks Greenhouse - Director,Technical Solutions (Big Data/ AI)
+## P0 Cubastion Consulting K.K. - Bilingual Full Stack Engineer
 
 - Score: 94
 - Grade: A
 - Research evidence: 0
-- Keywords: Analytics, Performance Optimization, product, data
+- Keywords: API, engineer, product, data, restful, graphql
 - Compensation leverage: -
 - Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
 
@@ -626,12 +626,12 @@ Errors: 0
 - Never store API keys or credentials in job metadata.
 - Record only application status and user-approved notes.
 
-## P0 Centra - Senior Data Engineer
+## P0 Databricks Greenhouse - Director,Technical Solutions (Big Data/ AI)
 
 - Score: 94
 - Grade: A
 - Research evidence: 0
-- Keywords: Analytics, API, engineer, product, data, dashboards
+- Keywords: Analytics, Performance Optimization, product, data
 - Compensation leverage: -
 - Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
 

@@ -1,12 +1,12 @@
 # Career Ops Source Quality
 
-- Generated: 2026-06-22T00:14:24.674Z
+- Generated: 2026-06-23T00:13:10.132Z
 - Mode: filter
 - Minimum score: 45
-- Input active jobs: 83484
-- Kept active jobs: 83339
-- Filtered active jobs: 145
-- Quality tiers: high 78010 / medium 5232 / low 97
+- Input active jobs: 63458
+- Kept active jobs: 63312
+- Filtered active jobs: 146
+- Quality tiers: high 57996 / medium 5219 / low 97
 
 ## Filtered Samples
 
@@ -21,7 +21,7 @@
 - 19 Unknown - SoC Packaging Engineer - Jobs - Careers at Apple (missing-company, landing-or-search-title, thin-description)
 - 19 Unknown - Senior Equipment Integration & Automation Engineer - Jobs - Careers at Apple (missing-company, landing-or-search-title, thin-description)
 - 19 Unknown - Regional Regulatory Compliance Engineer - Jobs - Careers at Apple (missing-company, landing-or-search-title, thin-description)
-- 19 Unknown - Photo Process and Equipment Engineer - Jobs - Careers at Apple (missing-company, landing-or-search-title, thin-description)
+- 19 Unknown - Camera Hardware EE Design and Test Engineer - Jobs - Careers at Apple (missing-company, landing-or-search-title, thin-description)
 
 ## Kept Samples
 

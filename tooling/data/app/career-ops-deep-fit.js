@@ -1,6 +1,6 @@
 window.CV_CAREER_OPS_DEEP_FIT = {
   "source": "career-ops-deep-fit",
-  "generatedAt": "2026-06-22T00:17:07.962Z",
+  "generatedAt": "2026-06-23T00:15:49.582Z",
   "llmProvider": "none",
   "summary": {
     "totalResults": 95,
@@ -1835,6 +1835,26 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "layer": "B"
     },
     {
+      "jobKey": "url:https://justjoin.it/job-offer/n-ix-senior-scala-engineer-krakow-scala-15ebf7dd",
+      "company": "N-iX",
+      "title": "Senior Scala Engineer",
+      "score": 78,
+      "grade": "B",
+      "roleFit": 45,
+      "url": "https://justjoin.it/job-offer/n-ix-senior-scala-engineer-krakow-scala-15ebf7dd",
+      "location": "Kraków, PL",
+      "keywordHits": [
+        "Analytics",
+        "analytics"
+      ],
+      "keywordMisses": [
+        "docker",
+        "kubernetes"
+      ],
+      "decision": "pursue selectively",
+      "layer": "B"
+    },
+    {
       "jobKey": "url:https://nvidia.wd5.myworkdayjobs.com/nvidiaexternalcareersite/job/taiwan-hsinchu/senior-mixed-signal-circuit-design-engineer_jr2015519",
       "company": "NVIDIA Workday",
       "title": "Senior Mixed Signal Circuit Design Engineer",
@@ -1927,38 +1947,6 @@ window.CV_CAREER_OPS_DEEP_FIT = {
         "analytics"
       ],
       "keywordMisses": [],
-      "decision": "pursue selectively",
-      "layer": "B"
-    },
-    {
-      "jobKey": "url:https://careers.roblox.com/jobs/7412400?gh_jid=7412400",
-      "company": "Roblox Greenhouse",
-      "title": "Senior QA Engineer, Game Engine",
-      "score": 75,
-      "grade": "B",
-      "roleFit": 45,
-      "url": "https://careers.roblox.com/jobs/7412400?gh_jid=7412400",
-      "location": "San Mateo, CA, United States",
-      "keywordHits": [],
-      "keywordMisses": [
-        "python"
-      ],
-      "decision": "pursue selectively",
-      "layer": "B"
-    },
-    {
-      "jobKey": "url:https://careers.roblox.com/jobs/7391936?gh_jid=7391936",
-      "company": "Roblox Greenhouse",
-      "title": "Senior QA Engineer, Interactivity",
-      "score": 75,
-      "grade": "B",
-      "roleFit": 45,
-      "url": "https://careers.roblox.com/jobs/7391936?gh_jid=7391936",
-      "location": "San Mateo, CA, United States",
-      "keywordHits": [],
-      "keywordMisses": [
-        "python"
-      ],
       "decision": "pursue selectively",
       "layer": "B"
     },
@@ -2122,40 +2110,47 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "layer": "B"
     },
     {
-      "jobKey": "url:https://remoteok.com/remote-jobs/remote-junior-data-analyst-haystack-1133663",
-      "company": "Haystack",
-      "title": "Junior Data Analyst",
+      "jobKey": "url:https://nvidia.wd5.myworkdayjobs.com/nvidiaexternalcareersite/job/israel-tel-aviv/senior-vlsi-integration-engineer_jr1989467",
+      "company": "NVIDIA Workday",
+      "title": "Senior VLSI Integration Engineer",
       "score": 73,
       "grade": "B",
       "roleFit": 45,
-      "url": "https://remoteok.com/remote-jobs/remote-junior-data-analyst-haystack-1133663",
-      "location": "London, London, England, United Kingdom",
-      "keywordHits": [
-        "remote"
-      ],
+      "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Israel-Tel-Aviv/Senior-VLSI-Integration-Engineer_JR1989467",
+      "location": "Israel, Tel Aviv",
+      "keywordHits": [],
       "keywordMisses": [
-        "python",
-        "sql",
-        "azure",
-        "excel",
-        "tableau",
-        "power bi"
+        "python"
       ],
       "decision": "pursue selectively",
       "layer": "B"
     },
     {
-      "jobKey": "url:https://www.mycareersfuture.gov.sg/job/eb48e26d18b0104fabcaac972c32dc54",
-      "company": "FINSURGE PTE. LTD.",
-      "title": "Murex Datamart Reporting Consultant",
+      "jobKey": "url:https://www.daijob.com/en/jobs/detail/1530889",
+      "company": "Peroptyx",
+      "title": "Data Analyst◆Work from anywhere in Japan◆Flexible work hours",
       "score": 72,
       "grade": "B",
       "roleFit": 45,
-      "url": "https://www.mycareersfuture.gov.sg/job/eb48e26d18b0104fabcaac972c32dc54",
-      "location": "THE SIGNATURE, CHANGI BUSINESS PARK CENTRAL 2, D16 Bedok, Eastwood, Kew Drive, Upper East Coast, Singapore",
+      "url": "https://www.daijob.com/en/jobs/detail/1530889",
+      "location": "JP",
+      "keywordHits": [],
+      "keywordMisses": [],
+      "decision": "pursue selectively",
+      "layer": "B"
+    },
+    {
+      "jobKey": "url:https://www.tokyodev.com/companies/moneyforward/jobs/qa-manager-digital-bank",
+      "company": "Money Forward",
+      "title": "QA Manager, Digital Bank",
+      "score": 72,
+      "grade": "B",
+      "roleFit": 45,
+      "url": "https://www.tokyodev.com/companies/moneyforward/jobs/qa-manager-digital-bank",
+      "location": "Minato-ku, Tokyo, JP",
       "keywordHits": [],
       "keywordMisses": [
-        "sql"
+        "agents"
       ],
       "decision": "pursue selectively",
       "layer": "B"
@@ -2191,14 +2186,14 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "layer": "B"
     },
     {
-      "jobKey": "url:https://www.tokyodev.com/companies/moneyforward/jobs/qa-manager-digital-bank",
-      "company": "Money Forward",
-      "title": "QA Manager, Digital Bank",
+      "jobKey": "url:https://www.dice.com/job-detail/3a716a08-52ff-4573-85f5-46b216e588b2",
+      "company": "Belcan, LLC",
+      "title": "Electronics Assembly Technician I for Calibration, Measurement and Test Equipment Manufacturer",
       "score": 71,
       "grade": "C",
       "roleFit": 45,
-      "url": "https://www.tokyodev.com/companies/moneyforward/jobs/qa-manager-digital-bank",
-      "location": "Minato-ku, Tokyo, JP",
+      "url": "https://www.dice.com/job-detail/3a716a08-52ff-4573-85f5-46b216e588b2",
+      "location": "Milford, OH, US",
       "keywordHits": [],
       "keywordMisses": [],
       "decision": "pursue selectively",
@@ -2235,6 +2230,38 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "layer": "B"
     },
     {
+      "jobKey": "url:https://remoteok.com/remote-jobs/remote-differentiating-membership-offers-steward-1133823",
+      "company": "Steward",
+      "title": "Differentiating Membership Offers",
+      "score": 70,
+      "grade": "C",
+      "roleFit": 45,
+      "url": "https://remoteok.com/remote-jobs/remote-differentiating-membership-offers-steward-1133823",
+      "location": "Amreli,",
+      "keywordHits": [
+        "remote"
+      ],
+      "keywordMisses": [
+        "go"
+      ],
+      "decision": "pursue selectively",
+      "layer": "B"
+    },
+    {
+      "jobKey": "url:https://www.daijob.com/en/jobs/detail/1472289",
+      "company": "Yumoto Electric INC",
+      "title": "[Product Inspection/Shift Work] ★Visa support available/125 days of annual leave/Benefits Osaka location",
+      "score": 70,
+      "grade": "C",
+      "roleFit": 45,
+      "url": "https://www.daijob.com/en/jobs/detail/1472289",
+      "location": "Osaka, Osaka, JP",
+      "keywordHits": [],
+      "keywordMisses": [],
+      "decision": "pursue selectively",
+      "layer": "B"
+    },
+    {
       "jobKey": "url:https://www.cake.me/companies/qpp/jobs/senior-software-engineer-team-lead",
       "company": "雋思集團_香港商雋思產品發展有限公司(台灣)",
       "title": "Senior Software Engineer",
@@ -2243,6 +2270,34 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "roleFit": 45,
       "url": "https://www.cake.me/companies/qpp/jobs/senior-software-engineer-team-lead",
       "location": "台灣, 台灣, TW",
+      "keywordHits": [],
+      "keywordMisses": [],
+      "decision": "pursue selectively",
+      "layer": "B"
+    },
+    {
+      "jobKey": "url:https://www.mycareersfuture.gov.sg/job/59748955992e90ce742bd6c6c161fa0f",
+      "company": "BEAUM PTE. LTD.",
+      "title": "A Registered Qualified Individual (RQI)",
+      "score": 70,
+      "grade": "C",
+      "roleFit": 45,
+      "url": "https://www.mycareersfuture.gov.sg/job/59748955992e90ce742bd6c6c161fa0f",
+      "location": "CIRCULAR ROAD, D01 Marina, Raffles Place, People's Park, Cecil, Singapore",
+      "keywordHits": [],
+      "keywordMisses": [],
+      "decision": "pursue selectively",
+      "layer": "B"
+    },
+    {
+      "jobKey": "url:https://www.dice.com/job-detail/e871d458-1485-40ed-8383-2257da517aec",
+      "company": "Belcan, LLC",
+      "title": "Electrical Engineer",
+      "score": 70,
+      "grade": "C",
+      "roleFit": 45,
+      "url": "https://www.dice.com/job-detail/e871d458-1485-40ed-8383-2257da517aec",
+      "location": "Mossville, IL, US",
       "keywordHits": [],
       "keywordMisses": [],
       "decision": "pursue selectively",
@@ -2308,76 +2363,14 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "layer": "B"
     },
     {
-      "jobKey": "url:https://remoteok.com/remote-jobs/remote-test-job-ad-2-test-1133716",
-      "company": "TEST",
-      "title": "TEST JOB AD 2",
+      "jobKey": "url:https://remoteok.com/remote-jobs/remote-preparador-a-de-oposiciones-de-magisterio-ucademy-1133849",
+      "company": "Ucademy",
+      "title": "Preparador a de Oposiciones de Magisterio",
       "score": 68,
       "grade": "C",
       "roleFit": 45,
-      "url": "https://remoteok.com/remote-jobs/remote-test-job-ad-2-test-1133716",
-      "location": "Brisbane,",
-      "keywordHits": [
-        "remote"
-      ],
-      "keywordMisses": [],
-      "decision": "hold / compare",
-      "layer": "B"
-    },
-    {
-      "jobKey": "url:http://apply.careers.microsoft.com/careers/job/1970393556875994?hl=en",
-      "company": "Microsoft",
-      "title": "Customer Success Account Manager",
-      "score": 67,
-      "grade": "C",
-      "roleFit": 45,
-      "url": "http://apply.careers.microsoft.com/careers/job/1970393556875994?hl=en",
-      "location": "Shanghai, Shanghai,CN, CN",
-      "keywordHits": [],
-      "keywordMisses": [],
-      "decision": "hold / compare",
-      "layer": "B"
-    },
-    {
-      "jobKey": "url:https://remoteok.com/remote-jobs/remote-customer-support-specialist-velsera-1133682",
-      "company": "Velsera",
-      "title": "Customer Support Specialist",
-      "score": 67,
-      "grade": "C",
-      "roleFit": 45,
-      "url": "https://remoteok.com/remote-jobs/remote-customer-support-specialist-velsera-1133682",
-      "location": "US Remote,",
-      "keywordHits": [
-        "remote"
-      ],
-      "keywordMisses": [],
-      "decision": "hold / compare",
-      "layer": "B"
-    },
-    {
-      "jobKey": "url:https://remoteok.com/remote-jobs/remote-data-entry-clerk-virtual-assistant-sundayy-1133681",
-      "company": "Sundayy",
-      "title": "Data Entry Clerk Virtual Assistant",
-      "score": 67,
-      "grade": "C",
-      "roleFit": 45,
-      "url": "https://remoteok.com/remote-jobs/remote-data-entry-clerk-virtual-assistant-sundayy-1133681",
-      "location": "Remote / Global",
-      "keywordHits": [
-        "remote"
-      ],
-      "keywordMisses": [],
-      "decision": "hold / compare",
-      "layer": "B"
-    },
-    {
-      "jobKey": "url:https://remoteok.com/remote-jobs/remote-hr-administrative-assistant-atlantic-health-strategiestm-1133671",
-      "company": "Atlantic Health Strategiesâ¢",
-      "title": "HR Administrative Assistant",
-      "score": 67,
-      "grade": "C",
-      "roleFit": 45,
-      "url": "https://remoteok.com/remote-jobs/remote-hr-administrative-assistant-atlantic-health-strategiestm-1133671",
-      "location": "United States,",
+      "url": "https://remoteok.com/remote-jobs/remote-preparador-a-de-oposiciones-de-magisterio-ucademy-1133849",
+      "location": "Madrid, Madrid, Comunidad de Madrid, EspaÃ±a",
       "keywordHits": [
         "remote"
       ],
@@ -2723,6 +2716,28 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "layer": "C"
     },
     {
+      "jobKey": "url:https://www.daijob.com/en/jobs/detail/1523157",
+      "company": "Cubastion Consulting K.K.",
+      "title": "Bilingual Full Stack Engineer",
+      "score": 94,
+      "grade": "A",
+      "roleFit": 92,
+      "url": "https://www.daijob.com/en/jobs/detail/1523157",
+      "location": "Yokohama, Kanagawa, JP / Kanagawa, JP / JP",
+      "keywordHits": [
+        "API",
+        "Full Stack Engineer"
+      ],
+      "topGap": "mysql",
+      "mainGaps": [
+        "mysql",
+        "aws",
+        "gcp",
+        "azure"
+      ],
+      "layer": "C"
+    },
+    {
       "jobKey": "url:https://databricks.com/company/careers/open-positions/job?gh_jid=8409447002",
       "company": "Databricks Greenhouse",
       "title": "Director,Technical Solutions (Big Data/ AI)",
@@ -2743,30 +2758,6 @@ window.CV_CAREER_OPS_DEEP_FIT = {
         "machine learning",
         "sales",
         "operations"
-      ],
-      "layer": "C"
-    },
-    {
-      "jobKey": "url:https://justjoin.it/job-offer/centra-senior-analytics-engineer-wroclaw-analytics",
-      "company": "Centra",
-      "title": "Senior Data Engineer",
-      "score": 94,
-      "grade": "A",
-      "roleFit": 92,
-      "url": "https://justjoin.it/job-offer/centra-senior-analytics-engineer-wroclaw-analytics",
-      "location": "Wrocław, PL",
-      "keywordHits": [
-        "Analytics",
-        "API",
-        "dashboard",
-        "analytics"
-      ],
-      "topGap": "sql",
-      "mainGaps": [
-        "sql",
-        "aws",
-        "gcp",
-        "azure"
       ],
       "layer": "C"
     },
@@ -3045,25 +3036,23 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "layer": "C"
     },
     {
-      "jobKey": "url:https://remotive.com/remote-jobs/software-development/staff-software-engineer-product-belo-horizonte-2090910",
-      "company": "LawnStarter",
-      "title": "Staff Software Engineer, Product (Belo Horizonte)",
+      "jobKey": "url:https://www.mycareersfuture.gov.sg/job/5206db5262862b3016aa3a41933869ec",
+      "company": "KRIS INFOTECH PTE. LTD.",
+      "title": "Frontend Systems Engineer - Unity",
       "score": 92,
       "grade": "A",
       "roleFit": 92,
-      "url": "https://remotive.com/remote-jobs/software-development/staff-software-engineer-product-belo-horizonte-2090910",
-      "location": "Brazil",
+      "url": "https://www.mycareersfuture.gov.sg/job/5206db5262862b3016aa3a41933869ec",
+      "location": "Islandwide, Singapore",
       "keywordHits": [
-        "TypeScript",
-        "React",
+        "Frontend Engineer",
         "API",
-        "remote"
+        "dashboard",
+        "design system"
       ],
-      "topGap": "aws",
+      "topGap": "rest",
       "mainGaps": [
-        "aws",
-        "rest",
-        "agents"
+        "rest"
       ],
       "layer": "C"
     }
