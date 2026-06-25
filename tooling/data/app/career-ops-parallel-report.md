@@ -1,6 +1,6 @@
 # Career Ops Parallel Worker Report
 
-Generated: 2026-06-24T00:01:59.702Z
+Generated: 2026-06-25T00:06:59.993Z
 Concurrency: 4
 Jobs processed: 50
 Errors: 0
@@ -611,51 +611,6 @@ Errors: 0
 - Never store API keys or credentials in job metadata.
 - Record only application status and user-approved notes.
 
-## P0 GlossGenius - Staff Software Engineer, Frontend
-
-- Score: 94
-- Grade: A
-- Research evidence: 0
-- Keywords: JavaScript, TypeScript, React, CSS, Accessibility, API, Performance Optimization, Design Systems, design system, engineer
-- Compensation leverage: -
-- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
-
-### Apply Agent Guardrails
-- Never submit without explicit user confirmation.
-- Never fabricate work authorization, salary history, degree, or experience.
-- Never store API keys or credentials in job metadata.
-- Record only application status and user-approved notes.
-
-## P0 GlossGenius - Staff Software Engineer, Frontend
-
-- Score: 94
-- Grade: A
-- Research evidence: 0
-- Keywords: JavaScript, TypeScript, React, CSS, Accessibility, API, Performance Optimization, Design Systems, design system, engineer
-- Compensation leverage: -
-- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
-
-### Apply Agent Guardrails
-- Never submit without explicit user confirmation.
-- Never fabricate work authorization, salary history, degree, or experience.
-- Never store API keys or credentials in job metadata.
-- Record only application status and user-approved notes.
-
-## P0 GlossGenius - Staff Software Engineer, Frontend
-
-- Score: 94
-- Grade: A
-- Research evidence: 0
-- Keywords: JavaScript, TypeScript, React, CSS, Accessibility, API, Performance Optimization, Design Systems, design system, engineer
-- Compensation leverage: -
-- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
-
-### Apply Agent Guardrails
-- Never submit without explicit user confirmation.
-- Never fabricate work authorization, salary history, degree, or experience.
-- Never store API keys or credentials in job metadata.
-- Record only application status and user-approved notes.
-
 ## P0 Warner Bros. Discovery - Sr. Principal Data Scientist
 
 - Score: 94
@@ -692,6 +647,21 @@ Errors: 0
 - Grade: A
 - Research evidence: 0
 - Keywords: Analytics, dashboard, product, data
+- Compensation leverage: -
+- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
+
+### Apply Agent Guardrails
+- Never submit without explicit user confirmation.
+- Never fabricate work authorization, salary history, degree, or experience.
+- Never store API keys or credentials in job metadata.
+- Record only application status and user-approved notes.
+
+## P0 NOAH HEALTH PTE. LTD. - Staff Product Manager
+
+- Score: 93
+- Grade: A
+- Research evidence: 0
+- Keywords: JavaScript, TypeScript, React, CSS, remote, engineer, product, restful, node.js
 - Compensation leverage: -
 - Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
 
@@ -752,6 +722,36 @@ Errors: 0
 - Grade: A
 - Research evidence: 0
 - Keywords: Analytics, Performance Optimization, product, data
+- Compensation leverage: -
+- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
+
+### Apply Agent Guardrails
+- Never submit without explicit user confirmation.
+- Never fabricate work authorization, salary history, degree, or experience.
+- Never store API keys or credentials in job metadata.
+- Record only application status and user-approved notes.
+
+## P0 Figma Greenhouse - Software Engineer, AI Product (London, United Kingdom)
+
+- Score: 93
+- Grade: A
+- Research evidence: 0
+- Keywords: TypeScript, React, Figma, engineer, product, data
+- Compensation leverage: -
+- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
+
+### Apply Agent Guardrails
+- Never submit without explicit user confirmation.
+- Never fabricate work authorization, salary history, degree, or experience.
+- Never store API keys or credentials in job metadata.
+- Record only application status and user-approved notes.
+
+## P0 Airbnb Greenhouse - Senior Web Automation Engineer, Quality Platform
+
+- Score: 93
+- Grade: A
+- Research evidence: 0
+- Keywords: JavaScript, TypeScript, engineer, product
 - Compensation leverage: -
 - Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
 

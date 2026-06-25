@@ -1,6 +1,6 @@
 # Career Ops Deep Fit Report
 
-Generated: 2026-06-24T00:02:03.319Z
+Generated: 2026-06-25T00:07:03.640Z
 LLM provider: none
 Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 exploratory)
 
@@ -801,18 +801,6 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Keyword hits: -
 - Gaps: -
 
-### SAIC - Technical Writer
-- Score: 77 | Grade: B | RoleFit: 45
-- Decision: pursue selectively
-- Keyword hits: remote
-- Gaps: -
-
-### SAIC - Technical Writer
-- Score: 77 | Grade: B | RoleFit: 45
-- Decision: pursue selectively
-- Keyword hits: remote
-- Gaps: -
-
 ### NVIDIA Workday - Hardware Design Engineer – Interconnect Design
 - Score: 76 | Grade: B | RoleFit: 45
 - Decision: pursue selectively
@@ -855,6 +843,12 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Keyword hits: -
 - Gaps: -
 
+### Roblox Greenhouse - Senior Software Engineer (C++)
+- Score: 74 | Grade: B | RoleFit: 45
+- Decision: pursue selectively
+- Keyword hits: -
+- Gaps: -
+
 ### ElevenLabs Ashby - Audio Engineering (Freelance)
 - Score: 74 | Grade: B | RoleFit: 45
 - Decision: pursue selectively
@@ -879,11 +873,29 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Keyword hits: -
 - Gaps: computer vision
 
+### YO IT Consulting - Data Analyst Excel
+- Score: 73 | Grade: B | RoleFit: 45
+- Decision: pursue selectively
+- Keyword hits: remote
+- Gaps: excel
+
 ### NVIDIA Workday - Senior VLSI Integration Engineer
 - Score: 73 | Grade: B | RoleFit: 45
 - Decision: pursue selectively
 - Keyword hits: -
 - Gaps: python
+
+### SCIENTEC CONSULTING PTE. LTD. - *GOV* IT Business Analyst
+- Score: 72 | Grade: B | RoleFit: 45
+- Decision: pursue selectively
+- Keyword hits: -
+- Gaps: aws
+
+### SCIENTEC CONSULTING PTE. LTD. - *GOV* IT Business Analyst | Digitalization
+- Score: 72 | Grade: B | RoleFit: 45
+- Decision: pursue selectively
+- Keyword hits: -
+- Gaps: aws
 
 ### Peroptyx - Data Analyst◆Work from anywhere in Japan◆Flexible work hours
 - Score: 72 | Grade: B | RoleFit: 45
@@ -897,25 +909,7 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Keyword hits: -
 - Gaps: agents
 
-### RECRUIT EXPERT PTE. LTD. - Design Engineer (3D CAD, Automation/Semiconductor Equipment)
-- Score: 72 | Grade: B | RoleFit: 45
-- Decision: pursue selectively
-- Keyword hits: -
-- Gaps: -
-
 ### HPS PARTNERS PTE. LTD. - Senior/Software Engineer (Bluetooth Embedded System)
-- Score: 71 | Grade: C | RoleFit: 45
-- Decision: pursue selectively
-- Keyword hits: -
-- Gaps: -
-
-### Collate - All Other Roles
-- Score: 71 | Grade: C | RoleFit: 45
-- Decision: pursue selectively
-- Keyword hits: remote
-- Gaps: -
-
-### Belcan, LLC - Electronics Assembly Technician I  for Calibration, Measurement and Test Equipment Manufacturer
 - Score: 71 | Grade: C | RoleFit: 45
 - Decision: pursue selectively
 - Keyword hits: -
@@ -945,12 +939,6 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Keyword hits: -
 - Gaps: -
 
-### Belcan, LLC - Electrical Engineer
-- Score: 70 | Grade: C | RoleFit: 45
-- Decision: pursue selectively
-- Keyword hits: -
-- Gaps: -
-
 ### NVIDIA Workday - Senior Package Engineer
 - Score: 69 | Grade: C | RoleFit: 45
 - Decision: hold / compare
@@ -963,25 +951,13 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Keyword hits: Analytics, analytics
 - Gaps: -
 
-### RECRUIT EXPERT PTE. LTD. - Bench Test Engineer (IP/RF, Embedded C/C++/LabVIEW/FPGA)
-- Score: 69 | Grade: C | RoleFit: 45
-- Decision: hold / compare
-- Keyword hits: -
-- Gaps: -
-
 ### MANPOWER STAFFING SERVICES (SINGAPORE) PTE LTD - Software Engineer C++/C#
 - Score: 68 | Grade: C | RoleFit: 45
 - Decision: hold / compare
 - Keyword hits: -
 - Gaps: -
 
-### Ucademy - Preparador a de Oposiciones de Magisterio
-- Score: 68 | Grade: C | RoleFit: 45
-- Decision: hold / compare
-- Keyword hits: remote
-- Gaps: -
-
-### RECRUIT EXPERT PTE. LTD. - Software Engineer (C/C++, Semiconductor/Automation)
+### KEONG HONG CONSTRUCTION PTE LTD - Assistant Contracts Manager
 - Score: 68 | Grade: C | RoleFit: 45
 - Decision: hold / compare
 - Keyword hits: -
@@ -989,6 +965,30 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 
 ### Microsoft - Customer Success Account Manager
 - Score: 67 | Grade: C | RoleFit: 45
+- Decision: hold / compare
+- Keyword hits: -
+- Gaps: -
+
+### YO HR Consultancy - Data Analyst
+- Score: 67 | Grade: C | RoleFit: 45
+- Decision: hold / compare
+- Keyword hits: remote
+- Gaps: excel
+
+### NHN JAPAN Corp. - Labor Governance | Employment regulations
+- Score: 67 | Grade: C | RoleFit: 45
+- Decision: hold / compare
+- Keyword hits: -
+- Gaps: -
+
+### NVIDIA - NVIDIA OVX Systems
+- Score: 66 | Grade: C | RoleFit: 45
+- Decision: hold / compare
+- Keyword hits: -
+- Gaps: -
+
+### Tencent Careers China - 光子 AI-视频生成基础模型研究员
+- Score: 66 | Grade: C | RoleFit: 45
 - Decision: hold / compare
 - Keyword hits: -
 - Gaps: -
@@ -1010,12 +1010,10 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - **Dinii — Senior Software Engineer** (score: 95) | Top gap: aws
 - **Airbnb Greenhouse — Lead - Advanced Analytics, Gurgaon** (score: 95) | Top gap: python
 - **GN AUDIO SINGAPORE PTE. LTD. — Software Engineer II (SteelSeries)** (score: 94) | Top gap: go
-- **GlossGenius — Staff Software Engineer, Frontend** (score: 94) | Top gap: go
-- **GlossGenius — Staff Software Engineer, Frontend** (score: 94) | Top gap: go
-- **GlossGenius — Staff Software Engineer, Frontend** (score: 94) | Top gap: go
 - **Warner Bros. Discovery — Sr. Principal Data Scientist** (score: 94) | Top gap: python
 - **Databricks Greenhouse — Director,Technical Solutions (Big Data/ AI)** (score: 94) | Top gap: spark
 - **SHEIN STAR PTE. LTD. — Product Manager – Apparel & Accessories** (score: 93) | Top gap: growth
+- **NOAH HEALTH PTE. LTD. — Staff Product Manager** (score: 93) | Top gap: rest
 - **Uber — Director, Marketplace Central Operations Mobility EMEA** (score: 93) | Top gap: growth
 - **Pilotly — Product Engineer II** (score: 93) | Top gap: aws
 - **Capital One — Distinguished Engineer (Remote - Eligible)** (score: 93) | Top gap: python
@@ -1025,4 +1023,6 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - **MongoDB Greenhouse — Senior Software Engineer, Observability** (score: 93) | Top gap: java
 - **GOVERNMENT TECHNOLOGY AGENCY — Staff Software Engineer - Digital Economy Products** (score: 92) | Top gap: vue
 - **INTEROPERA PTE. LTD. — Software Engineer** (score: 92) | Top gap: python
+- **AIM GLOBAL TALENT PTE. LTD. — Senior Frontend Engineer** (score: 92) | Top gap: aws
+- **REVOLUT TECHNOLOGIES SINGAPORE PTE. LTD. — Frontend Engineer** (score: 92) | Top gap: growth
 

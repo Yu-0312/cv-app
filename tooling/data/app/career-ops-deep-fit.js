@@ -1,6 +1,6 @@
 window.CV_CAREER_OPS_DEEP_FIT = {
   "source": "career-ops-deep-fit",
-  "generatedAt": "2026-06-24T00:02:03.319Z",
+  "generatedAt": "2026-06-25T00:07:03.640Z",
   "llmProvider": "none",
   "summary": {
     "totalResults": 95,
@@ -1920,38 +1920,6 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "layer": "B"
     },
     {
-      "jobKey": "url:https://www.dice.com/job-detail/f9104125-e4c4-49dc-a449-b4750cd80ec5",
-      "company": "SAIC",
-      "title": "Technical Writer",
-      "score": 77,
-      "grade": "B",
-      "roleFit": 45,
-      "url": "https://www.dice.com/job-detail/f9104125-e4c4-49dc-a449-b4750cd80ec5",
-      "location": "Colorado Springs, CO, US",
-      "keywordHits": [
-        "remote"
-      ],
-      "keywordMisses": [],
-      "decision": "pursue selectively",
-      "layer": "B"
-    },
-    {
-      "jobKey": "url:https://www.dice.com/job-detail/012ae6e6-a4ea-495e-9ff9-106547ba56cc",
-      "company": "SAIC",
-      "title": "Technical Writer",
-      "score": 77,
-      "grade": "B",
-      "roleFit": 45,
-      "url": "https://www.dice.com/job-detail/012ae6e6-a4ea-495e-9ff9-106547ba56cc",
-      "location": "Beale AFB, CA, US",
-      "keywordHits": [
-        "remote"
-      ],
-      "keywordMisses": [],
-      "decision": "pursue selectively",
-      "layer": "B"
-    },
-    {
       "jobKey": "url:https://nvidia.wd5.myworkdayjobs.com/nvidiaexternalcareersite/job/denmark-roskilde/hardware-design-engineer---interconnect-design_jr2018723",
       "company": "NVIDIA Workday",
       "title": "Hardware Design Engineer – Interconnect Design",
@@ -2063,6 +2031,20 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "layer": "B"
     },
     {
+      "jobKey": "url:https://careers.roblox.com/jobs/8025510?gh_jid=8025510",
+      "company": "Roblox Greenhouse",
+      "title": "Senior Software Engineer (C++)",
+      "score": 74,
+      "grade": "B",
+      "roleFit": 45,
+      "url": "https://careers.roblox.com/jobs/8025510?gh_jid=8025510",
+      "location": "San Mateo, CA, United States",
+      "keywordHits": [],
+      "keywordMisses": [],
+      "decision": "pursue selectively",
+      "layer": "B"
+    },
+    {
       "jobKey": "url:https://jobs.ashbyhq.com/elevenlabs/4389da7f-b5c9-4660-aaf2-d097f4caba07",
       "company": "ElevenLabs Ashby",
       "title": "Audio Engineering (Freelance)",
@@ -2070,7 +2052,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "grade": "B",
       "roleFit": 45,
       "url": "https://jobs.ashbyhq.com/elevenlabs/4389da7f-b5c9-4660-aaf2-d097f4caba07",
-      "location": "London / Poland / New York",
+      "location": "London / New York / Poland",
       "keywordHits": [
         "remote"
       ],
@@ -2123,6 +2105,24 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "layer": "B"
     },
     {
+      "jobKey": "url:https://remoteok.com/remote-jobs/remote-data-analyst-excel-yo-it-consulting-1134019",
+      "company": "YO IT Consulting",
+      "title": "Data Analyst Excel",
+      "score": 73,
+      "grade": "B",
+      "roleFit": 45,
+      "url": "https://remoteok.com/remote-jobs/remote-data-analyst-excel-yo-it-consulting-1134019",
+      "location": "Sydney, Sydney, New South Wales, Australia",
+      "keywordHits": [
+        "remote"
+      ],
+      "keywordMisses": [
+        "excel"
+      ],
+      "decision": "pursue selectively",
+      "layer": "B"
+    },
+    {
       "jobKey": "url:https://nvidia.wd5.myworkdayjobs.com/nvidiaexternalcareersite/job/israel-tel-aviv/senior-vlsi-integration-engineer_jr1989467",
       "company": "NVIDIA Workday",
       "title": "Senior VLSI Integration Engineer",
@@ -2134,6 +2134,38 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "keywordHits": [],
       "keywordMisses": [
         "python"
+      ],
+      "decision": "pursue selectively",
+      "layer": "B"
+    },
+    {
+      "jobKey": "url:https://www.mycareersfuture.gov.sg/job/89a8c47a892384df0bd414e27c4c4352",
+      "company": "SCIENTEC CONSULTING PTE. LTD.",
+      "title": "*GOV* IT Business Analyst",
+      "score": 72,
+      "grade": "B",
+      "roleFit": 45,
+      "url": "https://www.mycareersfuture.gov.sg/job/89a8c47a892384df0bd414e27c4c4352",
+      "location": "Islandwide, Singapore",
+      "keywordHits": [],
+      "keywordMisses": [
+        "aws"
+      ],
+      "decision": "pursue selectively",
+      "layer": "B"
+    },
+    {
+      "jobKey": "url:https://www.mycareersfuture.gov.sg/job/92e953bb29aab5cc0a7729bde52e0071",
+      "company": "SCIENTEC CONSULTING PTE. LTD.",
+      "title": "*GOV* IT Business Analyst | Digitalization",
+      "score": 72,
+      "grade": "B",
+      "roleFit": 45,
+      "url": "https://www.mycareersfuture.gov.sg/job/92e953bb29aab5cc0a7729bde52e0071",
+      "location": "Islandwide, Singapore",
+      "keywordHits": [],
+      "keywordMisses": [
+        "aws"
       ],
       "decision": "pursue selectively",
       "layer": "B"
@@ -2169,20 +2201,6 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "layer": "B"
     },
     {
-      "jobKey": "url:https://www.mycareersfuture.gov.sg/job/f9a6f68e37677e4a6b4d926c55373595",
-      "company": "RECRUIT EXPERT PTE. LTD.",
-      "title": "Design Engineer (3D CAD, Automation/Semiconductor Equipment)",
-      "score": 72,
-      "grade": "B",
-      "roleFit": 45,
-      "url": "https://www.mycareersfuture.gov.sg/job/f9a6f68e37677e4a6b4d926c55373595",
-      "location": "PLUS, CECIL STREET, D01 Marina, Raffles Place, People's Park, Cecil, Singapore",
-      "keywordHits": [],
-      "keywordMisses": [],
-      "decision": "pursue selectively",
-      "layer": "B"
-    },
-    {
       "jobKey": "url:https://www.mycareersfuture.gov.sg/job/6813b1ce86e2266fd9953cebcb246155",
       "company": "HPS PARTNERS PTE. LTD.",
       "title": "Senior/Software Engineer (Bluetooth Embedded System)",
@@ -2191,36 +2209,6 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "roleFit": 45,
       "url": "https://www.mycareersfuture.gov.sg/job/6813b1ce86e2266fd9953cebcb246155",
       "location": "NORDCOM ONE, GAMBAS CRESCENT, D27 Sembawang, Yishun, Singapore",
-      "keywordHits": [],
-      "keywordMisses": [],
-      "decision": "pursue selectively",
-      "layer": "B"
-    },
-    {
-      "jobKey": "url:https://remoteok.com/remote-jobs/remote-all-other-roles-collate-1133733",
-      "company": "Collate",
-      "title": "All Other Roles",
-      "score": 71,
-      "grade": "C",
-      "roleFit": 45,
-      "url": "https://remoteok.com/remote-jobs/remote-all-other-roles-collate-1133733",
-      "location": "San Francisco,",
-      "keywordHits": [
-        "remote"
-      ],
-      "keywordMisses": [],
-      "decision": "pursue selectively",
-      "layer": "B"
-    },
-    {
-      "jobKey": "url:https://www.dice.com/job-detail/3a716a08-52ff-4573-85f5-46b216e588b2",
-      "company": "Belcan, LLC",
-      "title": "Electronics Assembly Technician I  for Calibration, Measurement and Test Equipment Manufacturer",
-      "score": 71,
-      "grade": "C",
-      "roleFit": 45,
-      "url": "https://www.dice.com/job-detail/3a716a08-52ff-4573-85f5-46b216e588b2",
-      "location": "Milford, OH, US",
       "keywordHits": [],
       "keywordMisses": [],
       "decision": "pursue selectively",
@@ -2289,20 +2277,6 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "layer": "B"
     },
     {
-      "jobKey": "url:https://www.dice.com/job-detail/e871d458-1485-40ed-8383-2257da517aec",
-      "company": "Belcan, LLC",
-      "title": "Electrical Engineer",
-      "score": 70,
-      "grade": "C",
-      "roleFit": 45,
-      "url": "https://www.dice.com/job-detail/e871d458-1485-40ed-8383-2257da517aec",
-      "location": "Mossville, IL, US",
-      "keywordHits": [],
-      "keywordMisses": [],
-      "decision": "pursue selectively",
-      "layer": "B"
-    },
-    {
       "jobKey": "url:https://nvidia.wd5.myworkdayjobs.com/nvidiaexternalcareersite/job/taiwan-hsinchu/senior-package-engineer_jr2016717-1",
       "company": "NVIDIA Workday",
       "title": "Senior Package Engineer",
@@ -2334,20 +2308,6 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "layer": "B"
     },
     {
-      "jobKey": "url:https://www.mycareersfuture.gov.sg/job/1cf420b69e25d68118bd756aefa7f987",
-      "company": "RECRUIT EXPERT PTE. LTD.",
-      "title": "Bench Test Engineer (IP/RF, Embedded C/C++/LabVIEW/FPGA)",
-      "score": 69,
-      "grade": "C",
-      "roleFit": 45,
-      "url": "https://www.mycareersfuture.gov.sg/job/1cf420b69e25d68118bd756aefa7f987",
-      "location": "PLUS, CECIL STREET, D01 Marina, Raffles Place, People's Park, Cecil, Singapore",
-      "keywordHits": [],
-      "keywordMisses": [],
-      "decision": "hold / compare",
-      "layer": "B"
-    },
-    {
       "jobKey": "url:https://www.mycareersfuture.gov.sg/job/2b52c3da2fca4b2ff0aa29c8691b483a",
       "company": "MANPOWER STAFFING SERVICES (SINGAPORE) PTE LTD",
       "title": "Software Engineer C++/C#",
@@ -2362,30 +2322,14 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "layer": "B"
     },
     {
-      "jobKey": "url:https://remoteok.com/remote-jobs/remote-preparador-a-de-oposiciones-de-magisterio-ucademy-1133849",
-      "company": "Ucademy",
-      "title": "Preparador a de Oposiciones de Magisterio",
+      "jobKey": "url:https://www.mycareersfuture.gov.sg/job/9269781c719a1b0f33ff82b48b872b8e",
+      "company": "KEONG HONG CONSTRUCTION PTE LTD",
+      "title": "Assistant Contracts Manager",
       "score": 68,
       "grade": "C",
       "roleFit": 45,
-      "url": "https://remoteok.com/remote-jobs/remote-preparador-a-de-oposiciones-de-magisterio-ucademy-1133849",
-      "location": "Madrid, Madrid, Comunidad de Madrid, EspaÃ±a",
-      "keywordHits": [
-        "remote"
-      ],
-      "keywordMisses": [],
-      "decision": "hold / compare",
-      "layer": "B"
-    },
-    {
-      "jobKey": "url:https://www.mycareersfuture.gov.sg/job/4f422931d940a7d227bd653f5f18d94d",
-      "company": "RECRUIT EXPERT PTE. LTD.",
-      "title": "Software Engineer (C/C++, Semiconductor/Automation)",
-      "score": 68,
-      "grade": "C",
-      "roleFit": 45,
-      "url": "https://www.mycareersfuture.gov.sg/job/4f422931d940a7d227bd653f5f18d94d",
-      "location": "PLUS, CECIL STREET, D01 Marina, Raffles Place, People's Park, Cecil, Singapore",
+      "url": "https://www.mycareersfuture.gov.sg/job/9269781c719a1b0f33ff82b48b872b8e",
+      "location": "CHIN BEE DRIVE, D22 Jurong, Jurong Island, Tuas, Singapore",
       "keywordHits": [],
       "keywordMisses": [],
       "decision": "hold / compare",
@@ -2400,6 +2344,66 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "roleFit": 45,
       "url": "http://apply.careers.microsoft.com/careers/job/1970393556875994?hl=en",
       "location": "Shanghai, Shanghai,CN, CN",
+      "keywordHits": [],
+      "keywordMisses": [],
+      "decision": "hold / compare",
+      "layer": "B"
+    },
+    {
+      "jobKey": "url:https://remoteok.com/remote-jobs/remote-data-analyst-yo-hr-consultancy-1133880",
+      "company": "YO HR Consultancy",
+      "title": "Data Analyst",
+      "score": 67,
+      "grade": "C",
+      "roleFit": 45,
+      "url": "https://remoteok.com/remote-jobs/remote-data-analyst-yo-hr-consultancy-1133880",
+      "location": "Remote / Global",
+      "keywordHits": [
+        "remote"
+      ],
+      "keywordMisses": [
+        "excel"
+      ],
+      "decision": "hold / compare",
+      "layer": "B"
+    },
+    {
+      "jobKey": "url:https://www.daijob.com/en/jobs/detail/1530641",
+      "company": "NHN JAPAN Corp.",
+      "title": "Labor Governance | Employment regulations",
+      "score": 67,
+      "grade": "C",
+      "roleFit": 45,
+      "url": "https://www.daijob.com/en/jobs/detail/1530641",
+      "location": "Minato, Tokyo, JP",
+      "keywordHits": [],
+      "keywordMisses": [],
+      "decision": "hold / compare",
+      "layer": "B"
+    },
+    {
+      "jobKey": "url:https://www.nvidia.com/en-us/data-center/products/ovx/",
+      "company": "NVIDIA",
+      "title": "NVIDIA OVX Systems",
+      "score": 66,
+      "grade": "C",
+      "roleFit": 45,
+      "url": "https://www.nvidia.com/en-us/data-center/products/ovx/",
+      "location": "",
+      "keywordHits": [],
+      "keywordMisses": [],
+      "decision": "hold / compare",
+      "layer": "B"
+    },
+    {
+      "jobKey": "url:http://careers.tencent.com/jobdesc.html?postid=2067065222975369216",
+      "company": "Tencent Careers China",
+      "title": "光子 AI-视频生成基础模型研究员",
+      "score": 66,
+      "grade": "C",
+      "roleFit": 45,
+      "url": "http://careers.tencent.com/jobdesc.html?postId=2067065222975369216",
+      "location": "中国 / 深圳",
       "keywordHits": [],
       "keywordMisses": [],
       "decision": "hold / compare",
@@ -2742,69 +2746,6 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "layer": "C"
     },
     {
-      "jobKey": "url:https://www.themuse.com/jobs/glossgenius/staff-software-engineer-frontend-36dfb3",
-      "company": "GlossGenius",
-      "title": "Staff Software Engineer, Frontend",
-      "score": 94,
-      "grade": "A",
-      "roleFit": 92,
-      "url": "https://www.themuse.com/jobs/glossgenius/staff-software-engineer-frontend-36dfb3",
-      "location": "New York, NY",
-      "keywordHits": [
-        "Frontend Engineer",
-        "JavaScript",
-        "TypeScript",
-        "React"
-      ],
-      "topGap": "go",
-      "mainGaps": [
-        "go"
-      ],
-      "layer": "C"
-    },
-    {
-      "jobKey": "url:https://www.themuse.com/jobs/glossgenius/staff-software-engineer-frontend-237b40",
-      "company": "GlossGenius",
-      "title": "Staff Software Engineer, Frontend",
-      "score": 94,
-      "grade": "A",
-      "roleFit": 92,
-      "url": "https://www.themuse.com/jobs/glossgenius/staff-software-engineer-frontend-237b40",
-      "location": "New York, NY",
-      "keywordHits": [
-        "Frontend Engineer",
-        "JavaScript",
-        "TypeScript",
-        "React"
-      ],
-      "topGap": "go",
-      "mainGaps": [
-        "go"
-      ],
-      "layer": "C"
-    },
-    {
-      "jobKey": "url:https://www.themuse.com/jobs/glossgenius/staff-software-engineer-frontend-35be0b",
-      "company": "GlossGenius",
-      "title": "Staff Software Engineer, Frontend",
-      "score": 94,
-      "grade": "A",
-      "roleFit": 92,
-      "url": "https://www.themuse.com/jobs/glossgenius/staff-software-engineer-frontend-35be0b",
-      "location": "New York, NY",
-      "keywordHits": [
-        "Frontend Engineer",
-        "JavaScript",
-        "TypeScript",
-        "React"
-      ],
-      "topGap": "go",
-      "mainGaps": [
-        "go"
-      ],
-      "layer": "C"
-    },
-    {
       "jobKey": "url:https://www.themuse.com/jobs/warnerbrosdiscovery/sr-principal-data-scientist",
       "company": "Warner Bros. Discovery",
       "title": "Sr. Principal Data Scientist",
@@ -2871,6 +2812,30 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "mainGaps": [
         "growth",
         "sales",
+        "operations"
+      ],
+      "layer": "C"
+    },
+    {
+      "jobKey": "url:https://www.mycareersfuture.gov.sg/job/2125fe0f439be00a9041d32dcb82a2be",
+      "company": "NOAH HEALTH PTE. LTD.",
+      "title": "Staff Product Manager",
+      "score": 93,
+      "grade": "A",
+      "roleFit": 92,
+      "url": "https://www.mycareersfuture.gov.sg/job/2125fe0f439be00a9041d32dcb82a2be",
+      "location": "GOLDEN WALL FLATTED FACTORY, JALAN RAJAH, D12 Toa Payoh, Balestier, Serangoon, Singapore",
+      "keywordHits": [
+        "JavaScript",
+        "TypeScript",
+        "React",
+        "CSS"
+      ],
+      "topGap": "rest",
+      "mainGaps": [
+        "rest",
+        "html",
+        "growth",
         "operations"
       ],
       "layer": "C"
@@ -3080,6 +3045,49 @@ window.CV_CAREER_OPS_DEEP_FIT = {
         "java",
         "aws",
         "gcp"
+      ],
+      "layer": "C"
+    },
+    {
+      "jobKey": "url:https://www.mycareersfuture.gov.sg/job/b76e59cf6675791412b918f98ca4ac07",
+      "company": "AIM GLOBAL TALENT PTE. LTD.",
+      "title": "Senior Frontend Engineer",
+      "score": 92,
+      "grade": "A",
+      "roleFit": 92,
+      "url": "https://www.mycareersfuture.gov.sg/job/b76e59cf6675791412b918f98ca4ac07",
+      "location": "Islandwide, Singapore",
+      "keywordHits": [
+        "Frontend Engineer",
+        "JavaScript",
+        "TypeScript",
+        "React"
+      ],
+      "topGap": "aws",
+      "mainGaps": [
+        "aws",
+        "azure"
+      ],
+      "layer": "C"
+    },
+    {
+      "jobKey": "url:https://www.mycareersfuture.gov.sg/job/2d01b81e8b9d4d99ff869e1e5c480360",
+      "company": "REVOLUT TECHNOLOGIES SINGAPORE PTE. LTD.",
+      "title": "Frontend Engineer",
+      "score": 92,
+      "grade": "A",
+      "roleFit": 92,
+      "url": "https://www.mycareersfuture.gov.sg/job/2d01b81e8b9d4d99ff869e1e5c480360",
+      "location": "CITY HOUSE, ROBINSON ROAD, D01 Marina, Raffles Place, People's Park, Cecil, Singapore",
+      "keywordHits": [
+        "Frontend Engineer",
+        "JavaScript",
+        "TypeScript",
+        "React"
+      ],
+      "topGap": "growth",
+      "mainGaps": [
+        "growth"
       ],
       "layer": "C"
     }
