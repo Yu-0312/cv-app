@@ -1,12 +1,12 @@
 # Career Ops Source Quality
 
-- Generated: 2026-06-25T00:04:07.478Z
+- Generated: 2026-06-26T00:15:30.931Z
 - Mode: filter
 - Minimum score: 45
-- Input active jobs: 83480
-- Kept active jobs: 83339
-- Filtered active jobs: 141
-- Quality tiers: high 78023 / medium 5222 / low 94
+- Input active jobs: 83475
+- Kept active jobs: 83332
+- Filtered active jobs: 143
+- Quality tiers: high 78014 / medium 5225 / low 93
 
 ## Filtered Samples
 
@@ -14,6 +14,7 @@
 - 37 Apple - Careers at Apple: Join our community and culture. (landing-or-search-title, thin-description)
 - 19 Unknown - TW-Operations Expert - Jobs - Careers at Apple (missing-company, landing-or-search-title, thin-description)
 - 19 Unknown - Select Location - Jobs - Careers at Apple (missing-company, landing-or-search-title, thin-description)
+- 19 Unknown - Process & Integration Engineer - TFT Display Technology - Jobs - Careers at Apple (missing-company, landing-or-search-title, thin-description)
 - 19 Unknown - AI System Engineer (Pre-Sales Engineer) - Jobs - Careers at Apple (missing-company, landing-or-search-title, thin-description)
 - 19 Unknown - SoC - ATE Test Engineer - Jobs - Careers at Apple (missing-company, landing-or-search-title, thin-description)
 - 19 Unknown - Camera Electrical System Integration Engineer - Camera Hardware - Jobs - Careers at Apple (missing-company, landing-or-search-title, thin-description)
@@ -21,7 +22,6 @@
 - 19 Unknown - SoC Packaging Engineer - Jobs - Careers at Apple (missing-company, landing-or-search-title, thin-description)
 - 19 Unknown - Senior Equipment Integration & Automation Engineer - Jobs - Careers at Apple (missing-company, landing-or-search-title, thin-description)
 - 19 Unknown - Regional Regulatory Compliance Engineer - Jobs - Careers at Apple (missing-company, landing-or-search-title, thin-description)
-- 19 Unknown - Camera Hardware EE Design and Test Engineer - Jobs - Careers at Apple (missing-company, landing-or-search-title, thin-description)
 
 ## Kept Samples
 

@@ -1,6 +1,6 @@
 {
   "source": "career-ops-application-kit",
-  "generatedAt": "2026-06-25T00:06:42.901Z",
+  "generatedAt": "2026-06-26T00:17:55.312Z",
   "profileRole": "Frontend Engineer",
   "playbooks": [
     {
@@ -84,6 +84,103 @@
       "interviewPrep": [
         "Prepare a 60-second story for why VANGUARD SOFTWARE PTE. LTD. and why Expert Frontend Engineer (React.JS & React Native).",
         "Prepare evidence for: JavaScript, TypeScript, React, Next.js, CSS, Accessibility.",
+        "Prepare one STAR story about execution under ambiguity.",
+        "Prepare one STAR story about collaboration and tradeoff decisions.",
+        "Prepare questions about team priorities, success metrics, and hiring timeline."
+      ],
+      "negotiationPrep": [
+        "Wait for a clear offer before anchoring compensation.",
+        "Ask for total compensation breakdown, work mode, title, level, review cycle, and start date.",
+        "Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.",
+        "Use competing priorities and role fit, not personal need, as the negotiation frame."
+      ]
+    },
+    {
+      "jobKey": "url:https://www.mycareersfuture.gov.sg/job/fe789bec11c6a9d195bf371bcbcec73d",
+      "title": "Frontend Engineer",
+      "company": "BIFROST PTE. LTD.",
+      "score": "95/A",
+      "rating": 4.8,
+      "blockG": {
+        "tier": "High Confidence",
+        "confidence": "medium"
+      },
+      "priority": "P0",
+      "atsInjection": {
+        "jdKeywords": [
+          "JavaScript",
+          "React",
+          "engineer",
+          "product",
+          "data",
+          "restful",
+          "graphql",
+          "node.js",
+          "CSS",
+          "API"
+        ],
+        "hardKeywords": [
+          "JavaScript",
+          "React",
+          "engineer",
+          "product",
+          "data",
+          "restful",
+          "graphql",
+          "node.js",
+          "CSS",
+          "API"
+        ],
+        "softKeywords": [],
+        "missingKeywords": [
+          "vue",
+          "angular",
+          "python",
+          "java",
+          "go",
+          "mysql",
+          "aws",
+          "gcp"
+        ],
+        "archetype": "Frontend Engineer",
+        "summaryRewriteHints": [
+          "在 Professional Summary 中自然帶入：JavaScript、React、engineer、product、data",
+          "使用職位語言：「Frontend Engineer」方向的動詞和術語",
+          "【你已有但此 JD 未要求】可視情況選擇性提及：vue、angular、python、java、go"
+        ],
+        "atsRules": [
+          "單欄排版，避免 sidebar 雙欄（ATS parser 容易亂序）",
+          "使用標準 header：Professional Summary, Work Experience, Skills, Education",
+          "不使用巢狀表格或文字框",
+          "確保 PDF 文字可被選取（不可光柵化輸出）",
+          "UTF-8 編碼，移除 em dash / smart quote / zero-width space",
+          "關鍵技能在 Skills section 明確列出，不要只藏在 bullet 裡"
+        ],
+        "guardrails": [
+          "NEVER add skills the candidate lacks",
+          "Only reformulate real experience with exact JD vocabulary",
+          "Example: if candidate has 'API development', it can become 'JavaScript'"
+        ],
+        "keywordCoveragePercent": 100
+      },
+      "applyChecklist": [
+        "Open the source URL and confirm the role is still active.",
+        "Generate or refresh the tailored ATS PDF from this job.",
+        "Mirror these JD keywords honestly in your CV: JavaScript, React, engineer, product, data, restful, graphql, node.js",
+        "Do not overclaim missing areas: vue, angular, python, java, go, mysql",
+        "Log status, recruiter/contact, and next follow-up date in the tracker."
+      ],
+      "outreachEmail": {
+        "subject": "Frontend Engineer application - BIFROST PTE. LTD.",
+        "body": "Hi BIFROST PTE. LTD. team,\n\nI am Alex Chen, and I am interested in the Frontend Engineer role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.\n\nThe role stood out because it maps closely to my experience with JavaScript, React, engineer, product, data.\n\nI would appreciate the chance to share how my experience can support the team. Thank you for your time.\n\nBest,\nAlex Chen"
+      },
+      "followUp": {
+        "timing": "3-5 business days after applying or the last recruiter interaction.",
+        "body": "Hi BIFROST PTE. LTD. team,\n\nI wanted to follow up on my application for the Frontend Engineer role. I remain interested and would be glad to provide any additional context about my background.\n\nThank you again for your time.\n\nBest,\nAlex Chen"
+      },
+      "interviewPrep": [
+        "Prepare a 60-second story for why BIFROST PTE. LTD. and why Frontend Engineer.",
+        "Prepare evidence for: JavaScript, React, engineer, product, data, restful.",
         "Prepare one STAR story about execution under ambiguity.",
         "Prepare one STAR story about collaboration and tradeoff decisions.",
         "Prepare questions about team priorities, success metrics, and hiring timeline."
@@ -442,95 +539,6 @@
       "interviewPrep": [
         "Prepare a 60-second story for why MICRON SEMICONDUCTOR ASIA OPERATIONS PTE. LTD. and why Senior/Staff Product Engineer (GenAI, AI/ML & Advanced Data Analytics).",
         "Prepare evidence for: JavaScript, CSS, Analytics, API, engineer, product.",
-        "Prepare one STAR story about execution under ambiguity.",
-        "Prepare one STAR story about collaboration and tradeoff decisions.",
-        "Prepare questions about team priorities, success metrics, and hiring timeline."
-      ],
-      "negotiationPrep": [
-        "Wait for a clear offer before anchoring compensation.",
-        "Ask for total compensation breakdown, work mode, title, level, review cycle, and start date.",
-        "Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.",
-        "Use competing priorities and role fit, not personal need, as the negotiation frame."
-      ]
-    },
-    {
-      "jobKey": "url:https://www.themuse.com/jobs/usaa/software-engineer-midlevel-java-full-stack-533aac",
-      "title": "Software Engineer Mid-level (Java Full Stack)",
-      "company": "USAA",
-      "score": "95/A",
-      "rating": 4.8,
-      "blockG": {
-        "tier": "High Confidence",
-        "confidence": "medium"
-      },
-      "priority": "P0",
-      "atsInjection": {
-        "jdKeywords": [
-          "JavaScript",
-          "CSS",
-          "API",
-          "remote",
-          "engineer",
-          "data"
-        ],
-        "hardKeywords": [
-          "JavaScript",
-          "CSS",
-          "API",
-          "remote",
-          "engineer",
-          "data"
-        ],
-        "softKeywords": [],
-        "missingKeywords": [
-          "python",
-          "java",
-          "go",
-          "swift",
-          "kotlin",
-          "sql",
-          "aws",
-          "docker"
-        ],
-        "archetype": "Full Stack Engineer",
-        "summaryRewriteHints": [
-          "在 Professional Summary 中自然帶入：JavaScript、CSS、API、remote、engineer",
-          "使用職位語言：「Full Stack Engineer」方向的動詞和術語",
-          "【你已有但此 JD 未要求】可視情況選擇性提及：python、java、go、swift、kotlin"
-        ],
-        "atsRules": [
-          "單欄排版，避免 sidebar 雙欄（ATS parser 容易亂序）",
-          "使用標準 header：Professional Summary, Work Experience, Skills, Education",
-          "不使用巢狀表格或文字框",
-          "確保 PDF 文字可被選取（不可光柵化輸出）",
-          "UTF-8 編碼，移除 em dash / smart quote / zero-width space",
-          "關鍵技能在 Skills section 明確列出，不要只藏在 bullet 裡"
-        ],
-        "guardrails": [
-          "NEVER add skills the candidate lacks",
-          "Only reformulate real experience with exact JD vocabulary",
-          "Example: if candidate has 'API development', it can become 'JavaScript'"
-        ],
-        "keywordCoveragePercent": 100
-      },
-      "applyChecklist": [
-        "Open the source URL and confirm the role is still active.",
-        "Generate or refresh the tailored ATS PDF from this job.",
-        "Mirror these JD keywords honestly in your CV: JavaScript, CSS, API, remote, engineer, data",
-        "Do not overclaim missing areas: python, java, go, swift, kotlin, sql",
-        "Log status, recruiter/contact, and next follow-up date in the tracker."
-      ],
-      "outreachEmail": {
-        "subject": "Software Engineer Mid-level (Java Full Stack) application - USAA",
-        "body": "Hi USAA team,\n\nI am Alex Chen, and I am interested in the Software Engineer Mid-level (Java Full Stack) role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.\n\nThe role stood out because it maps closely to my experience with JavaScript, CSS, API, remote, engineer.\n\nI would appreciate the chance to share how my experience can support the team. Thank you for your time.\n\nBest,\nAlex Chen"
-      },
-      "followUp": {
-        "timing": "3-5 business days after applying or the last recruiter interaction.",
-        "body": "Hi USAA team,\n\nI wanted to follow up on my application for the Software Engineer Mid-level (Java Full Stack) role. I remain interested and would be glad to provide any additional context about my background.\n\nThank you again for your time.\n\nBest,\nAlex Chen"
-      },
-      "interviewPrep": [
-        "Prepare a 60-second story for why USAA and why Software Engineer Mid-level (Java Full Stack).",
-        "Prepare evidence for: JavaScript, CSS, API, remote, engineer, data.",
         "Prepare one STAR story about execution under ambiguity.",
         "Prepare one STAR story about collaboration and tradeoff decisions.",
         "Prepare questions about team priorities, success metrics, and hiring timeline."
@@ -957,9 +965,9 @@
       ]
     },
     {
-      "jobKey": "url:https://www.themuse.com/jobs/usaa/software-engineer-midlevel-java-full-stack-131a95",
-      "title": "Software Engineer Mid-level (Java Full Stack)",
-      "company": "USAA",
+      "jobKey": "url:https://www.themuse.com/jobs/thecocacolacompany/software-engineer-i-798d00",
+      "title": "Software Engineer I",
+      "company": "The Coca-Cola Company",
       "score": "95/A",
       "rating": 4.8,
       "blockG": {
@@ -969,37 +977,27 @@
       "priority": "P0",
       "atsInjection": {
         "jdKeywords": [
-          "JavaScript",
-          "CSS",
           "API",
-          "remote",
           "engineer",
+          "product",
           "data"
         ],
         "hardKeywords": [
-          "JavaScript",
-          "CSS",
           "API",
-          "remote",
           "engineer",
+          "product",
           "data"
         ],
         "softKeywords": [],
         "missingKeywords": [
-          "python",
-          "java",
-          "go",
-          "swift",
-          "kotlin",
-          "sql",
-          "aws",
-          "docker"
+          "growth",
+          "sales"
         ],
-        "archetype": "Full Stack Engineer",
+        "archetype": "AI Platform / LLMOps",
         "summaryRewriteHints": [
-          "在 Professional Summary 中自然帶入：JavaScript、CSS、API、remote、engineer",
-          "使用職位語言：「Full Stack Engineer」方向的動詞和術語",
-          "【你已有但此 JD 未要求】可視情況選擇性提及：python、java、go、swift、kotlin"
+          "在 Professional Summary 中自然帶入：API、engineer、product、data",
+          "使用職位語言：「AI Platform / LLMOps」方向的動詞和術語",
+          "【你已有但此 JD 未要求】可視情況選擇性提及：growth、sales"
         ],
         "atsRules": [
           "單欄排版，避免 sidebar 雙欄（ATS parser 容易亂序）",
@@ -1012,28 +1010,28 @@
         "guardrails": [
           "NEVER add skills the candidate lacks",
           "Only reformulate real experience with exact JD vocabulary",
-          "Example: if candidate has 'API development', it can become 'JavaScript'"
+          "Example: if candidate has 'API development', it can become 'API'"
         ],
         "keywordCoveragePercent": 100
       },
       "applyChecklist": [
         "Open the source URL and confirm the role is still active.",
         "Generate or refresh the tailored ATS PDF from this job.",
-        "Mirror these JD keywords honestly in your CV: JavaScript, CSS, API, remote, engineer, data",
-        "Do not overclaim missing areas: python, java, go, swift, kotlin, sql",
+        "Mirror these JD keywords honestly in your CV: API, engineer, product, data",
+        "Do not overclaim missing areas: growth, sales",
         "Log status, recruiter/contact, and next follow-up date in the tracker."
       ],
       "outreachEmail": {
-        "subject": "Software Engineer Mid-level (Java Full Stack) application - USAA",
-        "body": "Hi USAA team,\n\nI am Alex Chen, and I am interested in the Software Engineer Mid-level (Java Full Stack) role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.\n\nThe role stood out because it maps closely to my experience with JavaScript, CSS, API, remote, engineer.\n\nI would appreciate the chance to share how my experience can support the team. Thank you for your time.\n\nBest,\nAlex Chen"
+        "subject": "Software Engineer I application - The Coca-Cola Company",
+        "body": "Hi The Coca-Cola Company team,\n\nI am Alex Chen, and I am interested in the Software Engineer I role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.\n\nThe role stood out because it maps closely to my experience with API, engineer, product, data.\n\nI would appreciate the chance to share how my experience can support the team. Thank you for your time.\n\nBest,\nAlex Chen"
       },
       "followUp": {
         "timing": "3-5 business days after applying or the last recruiter interaction.",
-        "body": "Hi USAA team,\n\nI wanted to follow up on my application for the Software Engineer Mid-level (Java Full Stack) role. I remain interested and would be glad to provide any additional context about my background.\n\nThank you again for your time.\n\nBest,\nAlex Chen"
+        "body": "Hi The Coca-Cola Company team,\n\nI wanted to follow up on my application for the Software Engineer I role. I remain interested and would be glad to provide any additional context about my background.\n\nThank you again for your time.\n\nBest,\nAlex Chen"
       },
       "interviewPrep": [
-        "Prepare a 60-second story for why USAA and why Software Engineer Mid-level (Java Full Stack).",
-        "Prepare evidence for: JavaScript, CSS, API, remote, engineer, data.",
+        "Prepare a 60-second story for why The Coca-Cola Company and why Software Engineer I.",
+        "Prepare evidence for: API, engineer, product, data.",
         "Prepare one STAR story about execution under ambiguity.",
         "Prepare one STAR story about collaboration and tradeoff decisions.",
         "Prepare questions about team priorities, success metrics, and hiring timeline."

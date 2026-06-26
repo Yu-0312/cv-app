@@ -1,6 +1,6 @@
 # Career Ops Parallel Worker Report
 
-Generated: 2026-06-25T00:06:59.993Z
+Generated: 2026-06-26T00:18:11.690Z
 Concurrency: 4
 Jobs processed: 50
 Errors: 0
@@ -17,6 +17,21 @@ Errors: 0
 - Grade: A
 - Research evidence: 5
 - Keywords: JavaScript, TypeScript, React, Next.js, CSS, Accessibility, Design Systems, design system, engineer, product
+- Compensation leverage: high
+- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
+
+### Apply Agent Guardrails
+- Never submit without explicit user confirmation.
+- Never fabricate work authorization, salary history, degree, or experience.
+- Never store API keys or credentials in job metadata.
+- Record only application status and user-approved notes.
+
+## P0 BIFROST PTE. LTD. - Frontend Engineer
+
+- Score: 95
+- Grade: A
+- Research evidence: 1
+- Keywords: JavaScript, React, engineer, product, data, restful, graphql, node.js
 - Compensation leverage: high
 - Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
 
@@ -86,21 +101,6 @@ Errors: 0
 - Never store API keys or credentials in job metadata.
 - Record only application status and user-approved notes.
 
-## P0 USAA - Software Engineer Mid-level (Java Full Stack)
-
-- Score: 95
-- Grade: A
-- Research evidence: 3
-- Keywords: JavaScript, CSS, API, remote, engineer, data
-- Compensation leverage: high
-- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
-
-### Apply Agent Guardrails
-- Never submit without explicit user confirmation.
-- Never fabricate work authorization, salary history, degree, or experience.
-- Never store API keys or credentials in job metadata.
-- Record only application status and user-approved notes.
-
 ## P0 Uber - Sr Software Engineer, Frontend (Web)
 
 - Score: 95
@@ -120,7 +120,7 @@ Errors: 0
 
 - Score: 95
 - Grade: A
-- Research evidence: 3
+- Research evidence: 2
 - Keywords: API, engineer, product, data
 - Compensation leverage: high
 - Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
@@ -165,23 +165,8 @@ Errors: 0
 
 - Score: 95
 - Grade: A
-- Research evidence: 3
+- Research evidence: 2
 - Keywords: API, engineer, product, data
-- Compensation leverage: high
-- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
-
-### Apply Agent Guardrails
-- Never submit without explicit user confirmation.
-- Never fabricate work authorization, salary history, degree, or experience.
-- Never store API keys or credentials in job metadata.
-- Record only application status and user-approved notes.
-
-## P0 USAA - Software Engineer Mid-level (Java Full Stack)
-
-- Score: 95
-- Grade: A
-- Research evidence: 3
-- Keywords: JavaScript, CSS, API, remote, engineer, data
 - Compensation leverage: high
 - Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
 
@@ -195,7 +180,7 @@ Errors: 0
 
 - Score: 95
 - Grade: A
-- Research evidence: 3
+- Research evidence: 2
 - Keywords: API, engineer, product, data
 - Compensation leverage: high
 - Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
@@ -210,7 +195,7 @@ Errors: 0
 
 - Score: 95
 - Grade: A
-- Research evidence: 3
+- Research evidence: 2
 - Keywords: API, engineer, product, data
 - Compensation leverage: high
 - Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
@@ -225,7 +210,7 @@ Errors: 0
 
 - Score: 95
 - Grade: A
-- Research evidence: 3
+- Research evidence: 2
 - Keywords: API, engineer, product, data
 - Compensation leverage: high
 - Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
@@ -240,7 +225,7 @@ Errors: 0
 
 - Score: 95
 - Grade: A
-- Research evidence: 3
+- Research evidence: 2
 - Keywords: API, engineer, product, data
 - Compensation leverage: high
 - Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
@@ -255,23 +240,8 @@ Errors: 0
 
 - Score: 95
 - Grade: A
-- Research evidence: 3
+- Research evidence: 2
 - Keywords: API, engineer, product, data
-- Compensation leverage: high
-- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
-
-### Apply Agent Guardrails
-- Never submit without explicit user confirmation.
-- Never fabricate work authorization, salary history, degree, or experience.
-- Never store API keys or credentials in job metadata.
-- Record only application status and user-approved notes.
-
-## P0 USAA - Software Engineer Mid-level (Java Full Stack)
-
-- Score: 95
-- Grade: A
-- Research evidence: 3
-- Keywords: JavaScript, CSS, API, remote, engineer, data
 - Compensation leverage: high
 - Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
 
@@ -285,7 +255,7 @@ Errors: 0
 
 - Score: 95
 - Grade: A
-- Research evidence: 3
+- Research evidence: 2
 - Keywords: API, engineer, product, data
 - Compensation leverage: high
 - Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
@@ -300,23 +270,8 @@ Errors: 0
 
 - Score: 95
 - Grade: A
-- Research evidence: 3
+- Research evidence: 2
 - Keywords: API, engineer, product, data
-- Compensation leverage: high
-- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
-
-### Apply Agent Guardrails
-- Never submit without explicit user confirmation.
-- Never fabricate work authorization, salary history, degree, or experience.
-- Never store API keys or credentials in job metadata.
-- Record only application status and user-approved notes.
-
-## P0 USAA - Software Engineer Mid-level (Java Full Stack)
-
-- Score: 95
-- Grade: A
-- Research evidence: 3
-- Keywords: JavaScript, CSS, API, remote, engineer, data
 - Compensation leverage: high
 - Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
 
@@ -330,7 +285,7 @@ Errors: 0
 
 - Score: 95
 - Grade: A
-- Research evidence: 3
+- Research evidence: 2
 - Keywords: API, engineer, product, data
 - Compensation leverage: high
 - Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
@@ -345,7 +300,7 @@ Errors: 0
 
 - Score: 95
 - Grade: A
-- Research evidence: 3
+- Research evidence: 2
 - Keywords: API, engineer, product, data
 - Compensation leverage: high
 - Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
@@ -360,7 +315,7 @@ Errors: 0
 
 - Score: 95
 - Grade: A
-- Research evidence: 3
+- Research evidence: 2
 - Keywords: API, engineer, product, data
 - Compensation leverage: high
 - Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
@@ -375,7 +330,7 @@ Errors: 0
 
 - Score: 95
 - Grade: A
-- Research evidence: 3
+- Research evidence: 2
 - Keywords: API, engineer, product, data
 - Compensation leverage: high
 - Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
@@ -390,7 +345,7 @@ Errors: 0
 
 - Score: 95
 - Grade: A
-- Research evidence: 3
+- Research evidence: 2
 - Keywords: API, engineer, product, data
 - Compensation leverage: high
 - Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
@@ -405,7 +360,7 @@ Errors: 0
 
 - Score: 95
 - Grade: A
-- Research evidence: 3
+- Research evidence: 2
 - Keywords: API, engineer, product, data
 - Compensation leverage: high
 - Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
@@ -420,7 +375,7 @@ Errors: 0
 
 - Score: 95
 - Grade: A
-- Research evidence: 3
+- Research evidence: 2
 - Keywords: API, engineer, product, data
 - Compensation leverage: high
 - Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
@@ -465,7 +420,7 @@ Errors: 0
 
 - Score: 95
 - Grade: A
-- Research evidence: 3
+- Research evidence: 2
 - Keywords: API, engineer, product, data
 - Compensation leverage: high
 - Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
@@ -480,7 +435,7 @@ Errors: 0
 
 - Score: 95
 - Grade: A
-- Research evidence: 3
+- Research evidence: 2
 - Keywords: API, engineer, product, data
 - Compensation leverage: high
 - Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
@@ -495,7 +450,7 @@ Errors: 0
 
 - Score: 95
 - Grade: A
-- Research evidence: 3
+- Research evidence: 2
 - Keywords: API, engineer, product, data
 - Compensation leverage: high
 - Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
@@ -536,12 +491,12 @@ Errors: 0
 - Never store API keys or credentials in job metadata.
 - Record only application status and user-approved notes.
 
-## P0 Allstate - Lead Product Engineer - Observability (Enterprise App Monitoring) - Remote
+## P0 Zillow - Senior Manager, Site Reliability Engineering, Follow Up Boss
 
 - Score: 95
 - Grade: A
 - Research evidence: 0
-- Keywords: API, remote, engineer, product, dashboards
+- Keywords: API, remote, product, data
 - Compensation leverage: -
 - Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
 
@@ -626,6 +581,21 @@ Errors: 0
 - Never store API keys or credentials in job metadata.
 - Record only application status and user-approved notes.
 
+## P0 Allstate - Manager Database Engineering (MongoDB)
+
+- Score: 94
+- Grade: A
+- Research evidence: 0
+- Keywords: Analytics, API, remote, engineer, product, data
+- Compensation leverage: -
+- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
+
+### Apply Agent Guardrails
+- Never submit without explicit user confirmation.
+- Never fabricate work authorization, salary history, degree, or experience.
+- Never store API keys or credentials in job metadata.
+- Record only application status and user-approved notes.
+
 ## P0 Databricks Greenhouse - Director,Technical Solutions (Big Data/ AI)
 
 - Score: 94
@@ -686,6 +656,21 @@ Errors: 0
 - Never store API keys or credentials in job metadata.
 - Record only application status and user-approved notes.
 
+## P0 Apple - AIML - Site Lead & Lead Researcher, Foundation Models
+
+- Score: 93
+- Grade: A
+- Research evidence: 0
+- Keywords: Analytics, API, product, data
+- Compensation leverage: -
+- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
+
+### Apply Agent Guardrails
+- Never submit without explicit user confirmation.
+- Never fabricate work authorization, salary history, degree, or experience.
+- Never store API keys or credentials in job metadata.
+- Record only application status and user-approved notes.
+
 ## P0 Pilotly - Product Engineer II
 
 - Score: 93
@@ -731,6 +716,21 @@ Errors: 0
 - Never store API keys or credentials in job metadata.
 - Record only application status and user-approved notes.
 
+## P0 Figma Greenhouse - Manager, Software Engineering - AI Product (London, United Kingdom)
+
+- Score: 93
+- Grade: A
+- Research evidence: 0
+- Keywords: React, Figma, product, data
+- Compensation leverage: -
+- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
+
+### Apply Agent Guardrails
+- Never submit without explicit user confirmation.
+- Never fabricate work authorization, salary history, degree, or experience.
+- Never store API keys or credentials in job metadata.
+- Record only application status and user-approved notes.
+
 ## P0 Figma Greenhouse - Software Engineer, AI Product (London, United Kingdom)
 
 - Score: 93
@@ -746,12 +746,12 @@ Errors: 0
 - Never store API keys or credentials in job metadata.
 - Record only application status and user-approved notes.
 
-## P0 Airbnb Greenhouse - Senior Web Automation Engineer, Quality Platform
+## P0 Airbnb Greenhouse - Senior Software Engineer, Quality Platform
 
 - Score: 93
 - Grade: A
 - Research evidence: 0
-- Keywords: JavaScript, TypeScript, engineer, product
+- Keywords: TypeScript, Design Systems, design system, engineer, product, data
 - Compensation leverage: -
 - Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
 
