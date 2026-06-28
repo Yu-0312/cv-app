@@ -1,6 +1,6 @@
 window.CV_CAREER_OPS_COMPENSATION = {
   "source": "career-ops-compensation",
-  "generatedAt": "2026-06-27T00:06:29.536Z",
+  "generatedAt": "2026-06-27T23:59:19.071Z",
   "plans": [
     {
       "jobKey": "url:https://www.mycareersfuture.gov.sg/job/07eafbe6994e2090a0c2a6a6a6111e62",
@@ -532,64 +532,6 @@ window.CV_CAREER_OPS_COMPENSATION = {
       "negotiationScript": {
         "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Principal Engineer - GBS IND package, including base, bonus, equity, and review cycle?",
         "valueAnchor": "Based on the scope of Principal Engineer - GBS IND and my fit around API, engineer, data, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
-        "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
-        "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
-        "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
-      },
-      "redLines": [
-        "Do not disclose current compensation unless legally appropriate and strategically useful.",
-        "Do not accept verbal-only compensation details; ask for written package components.",
-        "Do not negotiate before confirming level, scope, work mode, and review cycle.",
-        "Do not trade base salary away without valuing the replacement benefit."
-      ],
-      "nextActions": [
-        "Collect market compensation evidence before naming a number.",
-        "Ask recruiter for approved range and level.",
-        "Map the job scope to proof points in the tailored CV.",
-        "Prepare one counter package with base, bonus/equity, and non-cash levers."
-      ],
-      "targetFrame": "Do not name a number first. Ask for the approved range, level, and total compensation structure before anchoring."
-    },
-    {
-      "jobKey": "url:https://www.themuse.com/jobs/uber/software-engineer-ii-frontend-3e411c",
-      "company": "Uber",
-      "title": "Software Engineer II - Frontend",
-      "market": "us",
-      "inferredLevel": "mid",
-      "candidateLevel": "mid",
-      "leverage": "high",
-      "evidence": {
-        "salaryMentions": [],
-        "benefitSignals": [
-          "work-mode flexibility"
-        ]
-      },
-      "marketBenchmark": null,
-      "structure": {
-        "baseSalary": [
-          "Need verified market data or recruiter range before setting a numeric anchor."
-        ],
-        "bonus": "Ask whether there is annual bonus, performance bonus, or sign-on bonus.",
-        "equity": "Ask whether equity, RSU, options, or profit-sharing exists.",
-        "benefits": [
-          "Health / insurance coverage",
-          "Paid leave and holidays",
-          "Learning budget or certification support",
-          "Remote/hybrid setup, commute, or relocation support",
-          "Review cycle and promotion timeline"
-        ],
-        "nonCashLevers": [
-          "Title / level calibration",
-          "Start date flexibility",
-          "Remote days",
-          "Equipment budget",
-          "First review at 3 or 6 months",
-          "Conference / learning budget"
-        ]
-      },
-      "negotiationScript": {
-        "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Software Engineer II - Frontend package, including base, bonus, equity, and review cycle?",
-        "valueAnchor": "Based on the scope of Software Engineer II - Frontend and my fit around JavaScript, TypeScript, React, CSS, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
         "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
         "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
         "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
@@ -1181,6 +1123,64 @@ window.CV_CAREER_OPS_COMPENSATION = {
       "negotiationScript": {
         "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Manager Database Engineering (MongoDB) package, including base, bonus, equity, and review cycle?",
         "valueAnchor": "Based on the scope of Manager Database Engineering (MongoDB) and my fit around Analytics, API, remote, engineer, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
+        "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
+        "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
+        "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
+      },
+      "redLines": [
+        "Do not disclose current compensation unless legally appropriate and strategically useful.",
+        "Do not accept verbal-only compensation details; ask for written package components.",
+        "Do not negotiate before confirming level, scope, work mode, and review cycle.",
+        "Do not trade base salary away without valuing the replacement benefit."
+      ],
+      "nextActions": [
+        "Collect market compensation evidence before naming a number.",
+        "Ask recruiter for approved range and level.",
+        "Map the job scope to proof points in the tailored CV.",
+        "Prepare one counter package with base, bonus/equity, and non-cash levers."
+      ],
+      "targetFrame": "Do not name a number first. Ask for the approved range, level, and total compensation structure before anchoring."
+    },
+    {
+      "jobKey": "url:https://databricks.com/company/careers/open-positions/job?gh_jid=8409447002",
+      "company": "Databricks Greenhouse",
+      "title": "Director,Technical Solutions (Big Data/ AI)",
+      "market": "us",
+      "inferredLevel": "senior-plus",
+      "candidateLevel": "mid",
+      "leverage": "high",
+      "evidence": {
+        "salaryMentions": [],
+        "benefitSignals": [
+          "learning budget"
+        ]
+      },
+      "marketBenchmark": null,
+      "structure": {
+        "baseSalary": [
+          "Need verified market data or recruiter range before setting a numeric anchor."
+        ],
+        "bonus": "Ask whether there is annual bonus, performance bonus, or sign-on bonus.",
+        "equity": "Ask whether equity, RSU, options, or profit-sharing exists.",
+        "benefits": [
+          "Health / insurance coverage",
+          "Paid leave and holidays",
+          "Learning budget or certification support",
+          "Remote/hybrid setup, commute, or relocation support",
+          "Review cycle and promotion timeline"
+        ],
+        "nonCashLevers": [
+          "Title / level calibration",
+          "Start date flexibility",
+          "Remote days",
+          "Equipment budget",
+          "First review at 3 or 6 months",
+          "Conference / learning budget"
+        ]
+      },
+      "negotiationScript": {
+        "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Director,Technical Solutions (Big Data/ AI) package, including base, bonus, equity, and review cycle?",
+        "valueAnchor": "Based on the scope of Director,Technical Solutions (Big Data/ AI) and my fit around Analytics, Performance Optimization, product, data, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
         "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
         "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
         "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."

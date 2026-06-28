@@ -1,10 +1,10 @@
 {
   "source": "career-ops-health-monitor",
-  "checkedAt": "2026-06-27T00:06:47.185Z",
+  "checkedAt": "2026-06-27T23:59:36.792Z",
   "threshold": 0.3,
   "health": {
-    "total": 83387,
-    "active": 83387,
+    "total": 83394,
+    "active": 83394,
     "expired": 0,
     "stale": 0,
     "expiredRate": 0,
@@ -20,19 +20,19 @@
         "expired": 0
       },
       "The Muse Global Public Jobs": {
-        "total": 1887,
+        "total": 1888,
         "expired": 0
       },
       "The Muse Global Software Engineering": {
-        "total": 1732,
+        "total": 1738,
         "expired": 0
       },
       "The Muse Global Data Analytics": {
-        "total": 1823,
+        "total": 1848,
         "expired": 0
       },
       "The Muse Global Remote Jobs": {
-        "total": 1810,
+        "total": 1801,
         "expired": 0
       },
       "Japan Dev English Tech Jobs": {
@@ -48,7 +48,7 @@
         "expired": 0
       },
       "Databricks Greenhouse": {
-        "total": 443,
+        "total": 441,
         "expired": 0
       },
       "MyCareersFuture Singapore Product": {
@@ -60,11 +60,11 @@
         "expired": 0
       },
       "MongoDB Greenhouse": {
-        "total": 280,
+        "total": 278,
         "expired": 0
       },
       "Remotive Global Remote Jobs": {
-        "total": 34,
+        "total": 33,
         "expired": 0
       },
       "Stripe Greenhouse": {
@@ -103,6 +103,10 @@
         "total": 16,
         "expired": 0
       },
+      "Source flex job board": {
+        "total": 129,
+        "expired": 0
+      },
       "Reddit Greenhouse": {
         "total": 108,
         "expired": 0
@@ -124,7 +128,7 @@
         "expired": 0
       },
       "GitLab Greenhouse": {
-        "total": 90,
+        "total": 91,
         "expired": 0
       },
       "Cursor Ashby": {
@@ -132,11 +136,7 @@
         "expired": 0
       },
       "NVIDIA Workday": {
-        "total": 278,
-        "expired": 0
-      },
-      "Source flex job board": {
-        "total": 134,
+        "total": 276,
         "expired": 0
       },
       "Mozilla Greenhouse": {
@@ -152,7 +152,7 @@
         "expired": 0
       },
       "Remote OK Global Remote Jobs": {
-        "total": 95,
+        "total": 96,
         "expired": 0
       },
       "Perplexity Ashby": {
@@ -160,7 +160,7 @@
         "expired": 0
       },
       "Samsung Workday": {
-        "total": 71,
+        "total": 70,
         "expired": 0
       },
       "Micron Workday": {
@@ -176,7 +176,7 @@
         "expired": 0
       },
       "Microsoft Taipei": {
-        "total": 2,
+        "total": 3,
         "expired": 0
       },
       "Gogolook": {
@@ -188,7 +188,7 @@
         "expired": 0
       },
       "Logitech Workday Taiwan": {
-        "total": 19,
+        "total": 20,
         "expired": 0
       },
       "Modal Ashby": {
@@ -212,7 +212,7 @@
         "expired": 0
       },
       "Daijob Japan Broad Listings": {
-        "total": 119,
+        "total": 113,
         "expired": 0
       },
       "Tencent Careers China": {
@@ -228,7 +228,7 @@
         "expired": 0
       },
       "Tencent": {
-        "total": 26,
+        "total": 25,
         "expired": 0
       },
       "NVIDIA Taiwan": {

@@ -1,6 +1,6 @@
 window.CV_CAREER_OPS_APPLICATION_KIT = {
   "source": "career-ops-application-kit",
-  "generatedAt": "2026-06-27T00:06:19.555Z",
+  "generatedAt": "2026-06-27T23:59:09.230Z",
   "profileRole": "Frontend Engineer",
   "playbooks": [
     {
@@ -806,96 +806,6 @@ window.CV_CAREER_OPS_APPLICATION_KIT = {
       ]
     },
     {
-      "jobKey": "url:https://www.themuse.com/jobs/uber/software-engineer-ii-frontend-3e411c",
-      "title": "Software Engineer II - Frontend",
-      "company": "Uber",
-      "score": "95/A",
-      "rating": 4.8,
-      "blockG": {
-        "tier": "High Confidence",
-        "confidence": "medium"
-      },
-      "priority": "P0",
-      "atsInjection": {
-        "jdKeywords": [
-          "JavaScript",
-          "TypeScript",
-          "React",
-          "CSS",
-          "API",
-          "engineer",
-          "product",
-          "data"
-        ],
-        "hardKeywords": [
-          "JavaScript",
-          "TypeScript",
-          "React",
-          "CSS",
-          "API",
-          "engineer",
-          "product",
-          "data"
-        ],
-        "softKeywords": [],
-        "missingKeywords": [
-          "angular",
-          "python",
-          "go",
-          "html",
-          "growth"
-        ],
-        "archetype": "Frontend Engineer",
-        "summaryRewriteHints": [
-          "在 Professional Summary 中自然帶入：JavaScript、TypeScript、React、CSS、API",
-          "使用職位語言：「Frontend Engineer」方向的動詞和術語",
-          "【你已有但此 JD 未要求】可視情況選擇性提及：angular、python、go、html、growth"
-        ],
-        "atsRules": [
-          "單欄排版，避免 sidebar 雙欄（ATS parser 容易亂序）",
-          "使用標準 header：Professional Summary, Work Experience, Skills, Education",
-          "不使用巢狀表格或文字框",
-          "確保 PDF 文字可被選取（不可光柵化輸出）",
-          "UTF-8 編碼，移除 em dash / smart quote / zero-width space",
-          "關鍵技能在 Skills section 明確列出，不要只藏在 bullet 裡"
-        ],
-        "guardrails": [
-          "NEVER add skills the candidate lacks",
-          "Only reformulate real experience with exact JD vocabulary",
-          "Example: if candidate has 'API development', it can become 'JavaScript'"
-        ],
-        "keywordCoveragePercent": 100
-      },
-      "applyChecklist": [
-        "Open the source URL and confirm the role is still active.",
-        "Generate or refresh the tailored ATS PDF from this job.",
-        "Mirror these JD keywords honestly in your CV: JavaScript, TypeScript, React, CSS, API, engineer, product, data",
-        "Do not overclaim missing areas: angular, python, go, html, growth",
-        "Log status, recruiter/contact, and next follow-up date in the tracker."
-      ],
-      "outreachEmail": {
-        "subject": "Software Engineer II - Frontend application - Uber",
-        "body": "Hi Uber team,\n\nI am Alex Chen, and I am interested in the Software Engineer II - Frontend role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.\n\nThe role stood out because it maps closely to my experience with JavaScript, TypeScript, React, CSS, API.\n\nI would appreciate the chance to share how my experience can support the team. Thank you for your time.\n\nBest,\nAlex Chen"
-      },
-      "followUp": {
-        "timing": "3-5 business days after applying or the last recruiter interaction.",
-        "body": "Hi Uber team,\n\nI wanted to follow up on my application for the Software Engineer II - Frontend role. I remain interested and would be glad to provide any additional context about my background.\n\nThank you again for your time.\n\nBest,\nAlex Chen"
-      },
-      "interviewPrep": [
-        "Prepare a 60-second story for why Uber and why Software Engineer II - Frontend.",
-        "Prepare evidence for: JavaScript, TypeScript, React, CSS, API, engineer.",
-        "Prepare one STAR story about execution under ambiguity.",
-        "Prepare one STAR story about collaboration and tradeoff decisions.",
-        "Prepare questions about team priorities, success metrics, and hiring timeline."
-      ],
-      "negotiationPrep": [
-        "Wait for a clear offer before anchoring compensation.",
-        "Ask for total compensation breakdown, work mode, title, level, review cycle, and start date.",
-        "Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.",
-        "Use competing priorities and role fit, not personal need, as the negotiation frame."
-      ]
-    },
-    {
       "jobKey": "url:https://www.themuse.com/jobs/airbnb/senior-manager-machine-learning-customer-support-engineering",
       "title": "Senior/ Manager, Machine Learning, Customer Support Engineering",
       "company": "Airbnb",
@@ -1059,6 +969,90 @@ window.CV_CAREER_OPS_APPLICATION_KIT = {
       "interviewPrep": [
         "Prepare a 60-second story for why Allstate and why Product Engineer (hybrid/remote).",
         "Prepare evidence for: React, API, remote, engineer, product, data.",
+        "Prepare one STAR story about execution under ambiguity.",
+        "Prepare one STAR story about collaboration and tradeoff decisions.",
+        "Prepare questions about team priorities, success metrics, and hiring timeline."
+      ],
+      "negotiationPrep": [
+        "Wait for a clear offer before anchoring compensation.",
+        "Ask for total compensation breakdown, work mode, title, level, review cycle, and start date.",
+        "Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.",
+        "Use competing priorities and role fit, not personal need, as the negotiation frame."
+      ]
+    },
+    {
+      "jobKey": "url:https://www.themuse.com/jobs/allstate/software-engineer-lead-consultant-8a7774",
+      "title": "Software Engineer Lead Consultant",
+      "company": "Allstate",
+      "score": "95/A",
+      "rating": 4.8,
+      "blockG": {
+        "tier": "High Confidence",
+        "confidence": "medium"
+      },
+      "priority": "P0",
+      "atsInjection": {
+        "jdKeywords": [
+          "API",
+          "remote",
+          "engineer",
+          "product",
+          "data"
+        ],
+        "hardKeywords": [
+          "API",
+          "remote",
+          "engineer",
+          "product",
+          "data"
+        ],
+        "softKeywords": [],
+        "missingKeywords": [
+          "python",
+          "java",
+          "kubernetes",
+          "rest",
+          "rag"
+        ],
+        "archetype": "AI Platform / LLMOps",
+        "summaryRewriteHints": [
+          "在 Professional Summary 中自然帶入：API、remote、engineer、product、data",
+          "使用職位語言：「AI Platform / LLMOps」方向的動詞和術語",
+          "【你已有但此 JD 未要求】可視情況選擇性提及：python、java、kubernetes、rest、rag"
+        ],
+        "atsRules": [
+          "單欄排版，避免 sidebar 雙欄（ATS parser 容易亂序）",
+          "使用標準 header：Professional Summary, Work Experience, Skills, Education",
+          "不使用巢狀表格或文字框",
+          "確保 PDF 文字可被選取（不可光柵化輸出）",
+          "UTF-8 編碼，移除 em dash / smart quote / zero-width space",
+          "關鍵技能在 Skills section 明確列出，不要只藏在 bullet 裡"
+        ],
+        "guardrails": [
+          "NEVER add skills the candidate lacks",
+          "Only reformulate real experience with exact JD vocabulary",
+          "Example: if candidate has 'API development', it can become 'API'"
+        ],
+        "keywordCoveragePercent": 100
+      },
+      "applyChecklist": [
+        "Open the source URL and confirm the role is still active.",
+        "Generate or refresh the tailored ATS PDF from this job.",
+        "Mirror these JD keywords honestly in your CV: API, remote, engineer, product, data",
+        "Do not overclaim missing areas: python, java, kubernetes, rest, rag",
+        "Log status, recruiter/contact, and next follow-up date in the tracker."
+      ],
+      "outreachEmail": {
+        "subject": "Software Engineer Lead Consultant application - Allstate",
+        "body": "Hi Allstate team,\n\nI am Alex Chen, and I am interested in the Software Engineer Lead Consultant role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.\n\nThe role stood out because it maps closely to my experience with API, remote, engineer, product, data.\n\nI would appreciate the chance to share how my experience can support the team. Thank you for your time.\n\nBest,\nAlex Chen"
+      },
+      "followUp": {
+        "timing": "3-5 business days after applying or the last recruiter interaction.",
+        "body": "Hi Allstate team,\n\nI wanted to follow up on my application for the Software Engineer Lead Consultant role. I remain interested and would be glad to provide any additional context about my background.\n\nThank you again for your time.\n\nBest,\nAlex Chen"
+      },
+      "interviewPrep": [
+        "Prepare a 60-second story for why Allstate and why Software Engineer Lead Consultant.",
+        "Prepare evidence for: API, remote, engineer, product, data.",
         "Prepare one STAR story about execution under ambiguity.",
         "Prepare one STAR story about collaboration and tradeoff decisions.",
         "Prepare questions about team priorities, success metrics, and hiring timeline."

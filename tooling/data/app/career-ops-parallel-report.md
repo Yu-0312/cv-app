@@ -1,6 +1,6 @@
 # Career Ops Parallel Worker Report
 
-Generated: 2026-06-27T00:06:36.463Z
+Generated: 2026-06-27T23:59:26.068Z
 Concurrency: 4
 Jobs processed: 50
 Errors: 0
@@ -137,21 +137,6 @@ Errors: 0
 - Grade: A
 - Research evidence: 0
 - Keywords: API, engineer, data
-- Compensation leverage: high
-- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
-
-### Apply Agent Guardrails
-- Never submit without explicit user confirmation.
-- Never fabricate work authorization, salary history, degree, or experience.
-- Never store API keys or credentials in job metadata.
-- Record only application status and user-approved notes.
-
-## P0 Uber - Software Engineer II - Frontend
-
-- Score: 95
-- Grade: A
-- Research evidence: 1
-- Keywords: JavaScript, TypeScript, React, CSS, API, engineer, product, data
 - Compensation leverage: high
 - Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
 
@@ -317,7 +302,7 @@ Errors: 0
 - Grade: A
 - Research evidence: 0
 - Keywords: Analytics, Performance Optimization, product, data
-- Compensation leverage: -
+- Compensation leverage: high
 - Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
 
 ### Apply Agent Guardrails
@@ -341,13 +326,13 @@ Errors: 0
 - Never store API keys or credentials in job metadata.
 - Record only application status and user-approved notes.
 
-## P0 Uber - Director, Marketplace Central Operations Mobility EMEA
+## P0 NOAH HEALTH PTE. LTD. - Staff Product Manager
 
 - Score: 93
 - Grade: A
-- Research evidence: 1
-- Keywords: Analytics, API, product, data
-- Compensation leverage: high
+- Research evidence: 0
+- Keywords: JavaScript, TypeScript, React, CSS, remote, engineer, product, restful, node.js
+- Compensation leverage: -
 - Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
 
 ### Apply Agent Guardrails
@@ -356,13 +341,13 @@ Errors: 0
 - Never store API keys or credentials in job metadata.
 - Record only application status and user-approved notes.
 
-## P0 Apple - AIML - Site Lead & Lead Researcher, Foundation Models
+## P0 Uber - Director, Marketplace Central Operations Mobility EMEA
 
 - Score: 93
 - Grade: A
-- Research evidence: 0
+- Research evidence: 1
 - Keywords: Analytics, API, product, data
-- Compensation leverage: -
+- Compensation leverage: high
 - Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
 
 ### Apply Agent Guardrails
@@ -407,7 +392,7 @@ Errors: 0
 - Grade: A
 - Research evidence: 0
 - Keywords: Analytics, Performance Optimization, product, data
-- Compensation leverage: -
+- Compensation leverage: high
 - Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
 
 ### Apply Agent Guardrails
@@ -512,6 +497,21 @@ Errors: 0
 - Grade: A
 - Research evidence: 0
 - Keywords: TypeScript, React, Next.js, engineer, product, data, node.js
+- Compensation leverage: -
+- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
+
+### Apply Agent Guardrails
+- Never submit without explicit user confirmation.
+- Never fabricate work authorization, salary history, degree, or experience.
+- Never store API keys or credentials in job metadata.
+- Record only application status and user-approved notes.
+
+## P0 INTEROPERA PTE. LTD. - Software Engineer
+
+- Score: 92
+- Grade: A
+- Research evidence: 0
+- Keywords: React, Next.js, engineer, product, data
 - Compensation leverage: -
 - Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
 
@@ -671,6 +671,21 @@ Errors: 0
 - Never store API keys or credentials in job metadata.
 - Record only application status and user-approved notes.
 
+## P0 Rent the Runway - Senior Software Engineer
+
+- Score: 92
+- Grade: A
+- Research evidence: 0
+- Keywords: JavaScript, API, engineer, product
+- Compensation leverage: -
+- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
+
+### Apply Agent Guardrails
+- Never submit without explicit user confirmation.
+- Never fabricate work authorization, salary history, degree, or experience.
+- Never store API keys or credentials in job metadata.
+- Record only application status and user-approved notes.
+
 ## P0 Uber - Engineering Manager II
 
 - Score: 92
@@ -737,21 +752,6 @@ Errors: 0
 - Grade: A
 - Research evidence: 0
 - Keywords: JavaScript, API, engineer, product
-- Compensation leverage: -
-- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
-
-### Apply Agent Guardrails
-- Never submit without explicit user confirmation.
-- Never fabricate work authorization, salary history, degree, or experience.
-- Never store API keys or credentials in job metadata.
-- Record only application status and user-approved notes.
-
-## P0 GlossGenius - Software Engineer - All Levels
-
-- Score: 92
-- Grade: A
-- Research evidence: 0
-- Keywords: JavaScript, TypeScript, React, API, engineer, product
 - Compensation leverage: -
 - Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
 
