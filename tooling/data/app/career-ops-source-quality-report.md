@@ -1,12 +1,12 @@
 # Career Ops Source Quality
 
-- Generated: 2026-06-28T23:58:33.418Z
+- Generated: 2026-06-29T23:42:17.251Z
 - Mode: filter
 - Minimum score: 45
-- Input active jobs: 83526
-- Kept active jobs: 83395
-- Filtered active jobs: 131
-- Quality tiers: high 78075 / medium 5227 / low 93
+- Input active jobs: 76206
+- Kept active jobs: 76122
+- Filtered active jobs: 84
+- Quality tiers: high 70905 / medium 5124 / low 93
 
 ## Filtered Samples
 
@@ -14,14 +14,14 @@
 - 37 Apple - Careers at Apple: Join our community and culture. (landing-or-search-title, thin-description)
 - 19 Unknown - TW-Operations Expert - Jobs - Careers at Apple (missing-company, landing-or-search-title, thin-description)
 - 19 Unknown - Select Location - Jobs - Careers at Apple (missing-company, landing-or-search-title, thin-description)
+- 19 Unknown - SoC Packaging Engineer - Jobs - Careers at Apple (missing-company, landing-or-search-title, thin-description)
 - 19 Unknown - Process & Integration Engineer - TFT Display Technology - Jobs - Careers at Apple (missing-company, landing-or-search-title, thin-description)
-- 19 Unknown - AI System Engineer (Pre-Sales Engineer) - Jobs - Careers at Apple (missing-company, landing-or-search-title, thin-description)
 - 19 Unknown - SoC - ATE Test Engineer - Jobs - Careers at Apple (missing-company, landing-or-search-title, thin-description)
 - 19 Unknown - Camera Electrical System Integration Engineer - Camera Hardware - Jobs - Careers at Apple (missing-company, landing-or-search-title, thin-description)
 - 19 Unknown - Display Reliability Engineer - Jobs - Careers at Apple (missing-company, landing-or-search-title, thin-description)
-- 19 Unknown - SoC Packaging Engineer - Jobs - Careers at Apple (missing-company, landing-or-search-title, thin-description)
 - 19 Unknown - Senior Equipment Integration & Automation Engineer - Jobs - Careers at Apple (missing-company, landing-or-search-title, thin-description)
 - 19 Unknown - Regional Regulatory Compliance Engineer - Jobs - Careers at Apple (missing-company, landing-or-search-title, thin-description)
+- 19 Unknown - Camera Hardware EE Design and Test Engineer - Jobs - Careers at Apple (missing-company, landing-or-search-title, thin-description)
 
 ## Kept Samples
 

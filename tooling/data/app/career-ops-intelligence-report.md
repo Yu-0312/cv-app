@@ -1,11 +1,11 @@
 # Career Ops Intelligence Report
 
-Generated: 2026-06-29T00:00:47.745Z
+Generated: 2026-06-29T23:43:53.801Z
 
-- Active jobs: 83395
+- Active jobs: 76122
 - Expired jobs: 0
-- Duplicate groups: 3472
-- Jobs without enough description: 375
+- Duplicate groups: 2680
+- Jobs without enough description: 385
 - Rubric: Career Ops 10-Dimension Rubric
 
 ## Rubric Weights
@@ -21,56 +21,56 @@ Generated: 2026-06-29T00:00:47.745Z
 - applicationEffort: 0.08
 
 ## Top Skills
-- api: 7624
-- growth: 4588
-- operations: 4186
-- analytics: 3296
-- sales: 3228
-- python: 2352
-- go: 1900
-- sql: 1562
-- excel: 1515
-- aws: 1246
-- azure: 1015
-- machine learning: 1005
+- growth: 1893
+- sales: 1625
+- operations: 1244
+- go: 1093
+- python: 990
+- analytics: 906
+- aws: 747
+- excel: 722
+- azure: 612
+- sql: 586
+- spark: 545
+- agents: 533
 
 ## Missing High-Demand Skills
-- growth: 4588
-- operations: 4186
-- sales: 3228
-- python: 2352
-- go: 1900
-- sql: 1562
-- excel: 1515
-- aws: 1246
-- azure: 1015
-- machine learning: 1005
+- growth: 1893
+- sales: 1625
+- operations: 1244
+- go: 1093
+- python: 990
+- aws: 747
+- excel: 722
+- azure: 612
+- sql: 586
+- spark: 545
 
 ## Global Skill Gap Priority (weighted by job score)
-- growth: 7291.4
-- operations: 6614.6
-- sales: 5071.1
-- python: 3821.2
-- go: 3041.1
-- sql: 2538.4
-- excel: 2368.3
-- aws: 2039.4
-- azure: 1660.8
-- machine learning: 1637.8
-- agents: 1305
-- java: 1287.2
+- growth: 3035.2
+- sales: 2583.9
+- operations: 1979.4
+- go: 1749.5
+- python: 1602.6
+- aws: 1219.3
+- excel: 1140
+- azure: 993.9
+- sql: 949.4
+- spark: 896.1
+- agents: 866.6
+- machine learning: 618.5
 
 ## Role Families
-- Backend: 79229
-- Other: 1680
-- Frontend: 841
-- AI / Data: 712
-- Sales: 360
-- Marketing: 183
-- Product: 140
-- Design: 136
-- Operations: 68
-- Internship: 34
+- Backend: 72352
+- Other: 1673
+- AI / Data: 710
+- Frontend: 451
+- Sales: 355
+- Marketing: 177
+- Product: 151
+- Design: 139
+- Operations: 66
+- Internship: 38
 
 ## Recommended Search Queries
 - Frontend Engineer
@@ -85,8 +85,8 @@ Generated: 2026-06-29T00:00:47.745Z
 - Accessibility
 - Analytics
 - growth
-- operations
 - sales
-- python
+- operations
 - go
+- python
 
