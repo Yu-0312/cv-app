@@ -1,6 +1,6 @@
 window.CV_CAREER_OPS_APPLICATION_KIT = {
   "source": "career-ops-application-kit",
-  "generatedAt": "2026-06-27T23:59:09.230Z",
+  "generatedAt": "2026-06-29T00:01:00.876Z",
   "profileRole": "Frontend Engineer",
   "playbooks": [
     {

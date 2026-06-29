@@ -1,6 +1,6 @@
 # Career Ops Parallel Worker Report
 
-Generated: 2026-06-27T23:59:26.068Z
+Generated: 2026-06-29T00:01:16.862Z
 Concurrency: 4
 Jobs processed: 50
 Errors: 0

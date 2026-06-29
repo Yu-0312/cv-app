@@ -1,6 +1,6 @@
 window.CV_CAREER_OPS_STORY_BANK = {
   "source": "career-ops-story-bank",
-  "generatedAt": "2026-06-27T23:59:22.572Z",
+  "generatedAt": "2026-06-29T00:01:13.366Z",
   "llmProvider": "none",
   "storyBank": {
     "themes": [
@@ -233,7 +233,7 @@ window.CV_CAREER_OPS_STORY_BANK = {
     "learningPlan": [
       {
         "skill": "growth",
-        "marketCount": 43,
+        "marketCount": 44,
         "priority": "P0",
         "priorityLabel": "高優先",
         "reason": "市場需求極高，補充後可顯著提升評分",
@@ -249,7 +249,7 @@ window.CV_CAREER_OPS_STORY_BANK = {
       },
       {
         "skill": "aws",
-        "marketCount": 32,
+        "marketCount": 31,
         "priority": "P0",
         "priorityLabel": "高優先",
         "reason": "市場需求極高，補充後可顯著提升評分",
@@ -264,20 +264,20 @@ window.CV_CAREER_OPS_STORY_BANK = {
         "suggestion": "在簡歷或 profile 中加入 operations 的實際使用案例，並在 projects 欄位補充相關實作。"
       },
       {
-        "skill": "go",
-        "marketCount": 25,
-        "priority": "P0",
-        "priorityLabel": "高優先",
-        "reason": "市場需求極高，補充後可顯著提升評分",
-        "suggestion": "在簡歷或 profile 中加入 go 的實際使用案例，並在 projects 欄位補充相關實作。"
-      },
-      {
         "skill": "agents",
         "marketCount": 25,
         "priority": "P0",
         "priorityLabel": "高優先",
         "reason": "市場需求極高，補充後可顯著提升評分",
         "suggestion": "在簡歷或 profile 中加入 agents 的實際使用案例，並在 projects 欄位補充相關實作。"
+      },
+      {
+        "skill": "go",
+        "marketCount": 24,
+        "priority": "P0",
+        "priorityLabel": "高優先",
+        "reason": "市場需求極高，補充後可顯著提升評分",
+        "suggestion": "在簡歷或 profile 中加入 go 的實際使用案例，並在 projects 欄位補充相關實作。"
       },
       {
         "skill": "rest",
@@ -289,43 +289,43 @@ window.CV_CAREER_OPS_STORY_BANK = {
       },
       {
         "skill": "java",
-        "marketCount": 20,
+        "marketCount": 21,
         "priority": "P0",
         "priorityLabel": "高優先",
         "reason": "市場需求極高，補充後可顯著提升評分",
         "suggestion": "在簡歷或 profile 中加入 java 的實際使用案例，並在 projects 欄位補充相關實作。"
       },
       {
-        "skill": "azure",
-        "marketCount": 20,
-        "priority": "P0",
-        "priorityLabel": "高優先",
-        "reason": "市場需求極高，補充後可顯著提升評分",
-        "suggestion": "在簡歷或 profile 中加入 azure 的實際使用案例，並在 projects 欄位補充相關實作。"
-      },
-      {
         "skill": "sales",
-        "marketCount": 19,
+        "marketCount": 20,
         "priority": "P0",
         "priorityLabel": "高優先",
         "reason": "市場需求極高，補充後可顯著提升評分",
         "suggestion": "在簡歷或 profile 中加入 sales 的實際使用案例，並在 projects 欄位補充相關實作。"
       },
       {
-        "skill": "gcp",
+        "skill": "azure",
+        "marketCount": 19,
+        "priority": "P0",
+        "priorityLabel": "高優先",
+        "reason": "市場需求極高，補充後可顯著提升評分",
+        "suggestion": "在簡歷或 profile 中加入 azure 的實際使用案例，並在 projects 欄位補充相關實作。"
+      },
+      {
+        "skill": "machine learning",
         "marketCount": 17,
         "priority": "P0",
         "priorityLabel": "高優先",
         "reason": "市場需求極高，補充後可顯著提升評分",
-        "suggestion": "在簡歷或 profile 中加入 gcp 的實際使用案例，並在 projects 欄位補充相關實作。"
+        "suggestion": "在簡歷或 profile 中加入 machine learning 的實際使用案例，並在 projects 欄位補充相關實作。"
       },
       {
-        "skill": "machine learning",
+        "skill": "gcp",
         "marketCount": 16,
         "priority": "P0",
         "priorityLabel": "高優先",
         "reason": "市場需求極高，補充後可顯著提升評分",
-        "suggestion": "在簡歷或 profile 中加入 machine learning 的實際使用案例，並在 projects 欄位補充相關實作。"
+        "suggestion": "在簡歷或 profile 中加入 gcp 的實際使用案例，並在 projects 欄位補充相關實作。"
       },
       {
         "skill": "llm",
@@ -337,7 +337,7 @@ window.CV_CAREER_OPS_STORY_BANK = {
       },
       {
         "skill": "sql",
-        "marketCount": 12,
+        "marketCount": 11,
         "priority": "P0",
         "priorityLabel": "高優先",
         "reason": "市場需求極高，補充後可顯著提升評分",
@@ -345,7 +345,7 @@ window.CV_CAREER_OPS_STORY_BANK = {
       },
       {
         "skill": "docker",
-        "marketCount": 11,
+        "marketCount": 10,
         "priority": "P0",
         "priorityLabel": "高優先",
         "reason": "市場需求極高，補充後可顯著提升評分",

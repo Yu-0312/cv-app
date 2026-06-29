@@ -1,6 +1,6 @@
 window.CV_CAREER_OPS_PARALLEL = {
   "source": "career-ops-parallel",
-  "generatedAt": "2026-06-27T23:59:26.068Z",
+  "generatedAt": "2026-06-29T00:01:16.862Z",
   "concurrency": 4,
   "jobCount": 50,
   "results": [
@@ -11,8 +11,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 95,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-27T23:59:26.011Z",
-      "completedAt": "2026-06-27T23:59:26.012Z",
+      "startedAt": "2026-06-29T00:01:16.798Z",
+      "completedAt": "2026-06-29T00:01:16.801Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -220,8 +220,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 95,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-27T23:59:26.011Z",
-      "completedAt": "2026-06-27T23:59:26.012Z",
+      "startedAt": "2026-06-29T00:01:16.798Z",
+      "completedAt": "2026-06-29T00:01:16.800Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -435,8 +435,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 95,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-27T23:59:26.010Z",
-      "completedAt": "2026-06-27T23:59:26.011Z",
+      "startedAt": "2026-06-29T00:01:16.798Z",
+      "completedAt": "2026-06-29T00:01:16.800Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -650,8 +650,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 95,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-27T23:59:26.011Z",
-      "completedAt": "2026-06-27T23:59:26.012Z",
+      "startedAt": "2026-06-29T00:01:16.798Z",
+      "completedAt": "2026-06-29T00:01:16.801Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -870,8 +870,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 95,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-27T23:59:26.014Z",
-      "completedAt": "2026-06-27T23:59:26.016Z",
+      "startedAt": "2026-06-29T00:01:16.803Z",
+      "completedAt": "2026-06-29T00:01:16.804Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -1090,8 +1090,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 95,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-27T23:59:26.014Z",
-      "completedAt": "2026-06-27T23:59:26.016Z",
+      "startedAt": "2026-06-29T00:01:16.803Z",
+      "completedAt": "2026-06-29T00:01:16.805Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -1300,8 +1300,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 95,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-27T23:59:26.014Z",
-      "completedAt": "2026-06-27T23:59:26.016Z",
+      "startedAt": "2026-06-29T00:01:16.803Z",
+      "completedAt": "2026-06-29T00:01:16.804Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -1514,8 +1514,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 95,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-27T23:59:26.014Z",
-      "completedAt": "2026-06-27T23:59:26.016Z",
+      "startedAt": "2026-06-29T00:01:16.803Z",
+      "completedAt": "2026-06-29T00:01:16.805Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -1721,8 +1721,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 95,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-27T23:59:26.023Z",
-      "completedAt": "2026-06-27T23:59:26.025Z",
+      "startedAt": "2026-06-29T00:01:16.813Z",
+      "completedAt": "2026-06-29T00:01:16.814Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -1919,8 +1919,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 95,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-27T23:59:26.023Z",
-      "completedAt": "2026-06-27T23:59:26.025Z",
+      "startedAt": "2026-06-29T00:01:16.813Z",
+      "completedAt": "2026-06-29T00:01:16.815Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -2120,8 +2120,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 95,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-27T23:59:26.023Z",
-      "completedAt": "2026-06-27T23:59:26.025Z",
+      "startedAt": "2026-06-29T00:01:16.813Z",
+      "completedAt": "2026-06-29T00:01:16.815Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -2323,8 +2323,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 95,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-27T23:59:26.023Z",
-      "completedAt": "2026-06-27T23:59:26.025Z",
+      "startedAt": "2026-06-29T00:01:16.813Z",
+      "completedAt": "2026-06-29T00:01:16.815Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -2524,8 +2524,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 95,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-27T23:59:26.034Z",
-      "completedAt": "2026-06-27T23:59:26.035Z",
+      "startedAt": "2026-06-29T00:01:16.827Z",
+      "completedAt": "2026-06-29T00:01:16.829Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -2733,8 +2733,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 95,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-27T23:59:26.034Z",
-      "completedAt": "2026-06-27T23:59:26.035Z",
+      "startedAt": "2026-06-29T00:01:16.827Z",
+      "completedAt": "2026-06-29T00:01:16.830Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -2934,8 +2934,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 95,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-27T23:59:26.034Z",
-      "completedAt": "2026-06-27T23:59:26.036Z",
+      "startedAt": "2026-06-29T00:01:16.827Z",
+      "completedAt": "2026-06-29T00:01:16.829Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -3135,8 +3135,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 95,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-27T23:59:26.034Z",
-      "completedAt": "2026-06-27T23:59:26.036Z",
+      "startedAt": "2026-06-29T00:01:16.827Z",
+      "completedAt": "2026-06-29T00:01:16.829Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -3334,8 +3334,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 94,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-27T23:59:26.038Z",
-      "completedAt": "2026-06-27T23:59:26.040Z",
+      "startedAt": "2026-06-29T00:01:16.832Z",
+      "completedAt": "2026-06-29T00:01:16.833Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -3536,8 +3536,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 94,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-27T23:59:26.038Z",
-      "completedAt": "2026-06-27T23:59:26.039Z",
+      "startedAt": "2026-06-29T00:01:16.832Z",
+      "completedAt": "2026-06-29T00:01:16.833Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -3736,8 +3736,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 94,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-27T23:59:26.038Z",
-      "completedAt": "2026-06-27T23:59:26.040Z",
+      "startedAt": "2026-06-29T00:01:16.832Z",
+      "completedAt": "2026-06-29T00:01:16.834Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -3938,8 +3938,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 94,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-27T23:59:26.038Z",
-      "completedAt": "2026-06-27T23:59:26.040Z",
+      "startedAt": "2026-06-29T00:01:16.832Z",
+      "completedAt": "2026-06-29T00:01:16.834Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -4138,8 +4138,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 93,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-27T23:59:26.042Z",
-      "completedAt": "2026-06-27T23:59:26.044Z",
+      "startedAt": "2026-06-29T00:01:16.835Z",
+      "completedAt": "2026-06-29T00:01:16.837Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -4281,8 +4281,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 93,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-27T23:59:26.042Z",
-      "completedAt": "2026-06-27T23:59:26.043Z",
+      "startedAt": "2026-06-29T00:01:16.835Z",
+      "completedAt": "2026-06-29T00:01:16.837Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -4429,8 +4429,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 93,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-27T23:59:26.042Z",
-      "completedAt": "2026-06-27T23:59:26.043Z",
+      "startedAt": "2026-06-29T00:01:16.835Z",
+      "completedAt": "2026-06-29T00:01:16.837Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -4638,8 +4638,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 93,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-27T23:59:26.042Z",
-      "completedAt": "2026-06-27T23:59:26.044Z",
+      "startedAt": "2026-06-29T00:01:16.835Z",
+      "completedAt": "2026-06-29T00:01:16.837Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -4786,8 +4786,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 93,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-27T23:59:26.046Z",
-      "completedAt": "2026-06-27T23:59:26.047Z",
+      "startedAt": "2026-06-29T00:01:16.839Z",
+      "completedAt": "2026-06-29T00:01:16.841Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -4932,8 +4932,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 93,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-27T23:59:26.046Z",
-      "completedAt": "2026-06-27T23:59:26.047Z",
+      "startedAt": "2026-06-29T00:01:16.839Z",
+      "completedAt": "2026-06-29T00:01:16.841Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -5132,8 +5132,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 93,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-27T23:59:26.046Z",
-      "completedAt": "2026-06-27T23:59:26.047Z",
+      "startedAt": "2026-06-29T00:01:16.839Z",
+      "completedAt": "2026-06-29T00:01:16.840Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -5275,8 +5275,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 93,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-27T23:59:26.046Z",
-      "completedAt": "2026-06-27T23:59:26.048Z",
+      "startedAt": "2026-06-29T00:01:16.839Z",
+      "completedAt": "2026-06-29T00:01:16.840Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -5420,8 +5420,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 93,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-27T23:59:26.049Z",
-      "completedAt": "2026-06-27T23:59:26.051Z",
+      "startedAt": "2026-06-29T00:01:16.842Z",
+      "completedAt": "2026-06-29T00:01:16.844Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -5620,8 +5620,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 93,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-27T23:59:26.049Z",
-      "completedAt": "2026-06-27T23:59:26.051Z",
+      "startedAt": "2026-06-29T00:01:16.842Z",
+      "completedAt": "2026-06-29T00:01:16.844Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -5818,8 +5818,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 93,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-27T23:59:26.049Z",
-      "completedAt": "2026-06-27T23:59:26.051Z",
+      "startedAt": "2026-06-29T00:01:16.842Z",
+      "completedAt": "2026-06-29T00:01:16.844Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -6018,8 +6018,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 93,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-27T23:59:26.049Z",
-      "completedAt": "2026-06-27T23:59:26.051Z",
+      "startedAt": "2026-06-29T00:01:16.842Z",
+      "completedAt": "2026-06-29T00:01:16.844Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -6163,8 +6163,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 92,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-27T23:59:26.053Z",
-      "completedAt": "2026-06-27T23:59:26.054Z",
+      "startedAt": "2026-06-29T00:01:16.846Z",
+      "completedAt": "2026-06-29T00:01:16.847Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -6309,8 +6309,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 92,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-27T23:59:26.053Z",
-      "completedAt": "2026-06-27T23:59:26.054Z",
+      "startedAt": "2026-06-29T00:01:16.846Z",
+      "completedAt": "2026-06-29T00:01:16.847Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -6453,8 +6453,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 92,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-27T23:59:26.053Z",
-      "completedAt": "2026-06-27T23:59:26.054Z",
+      "startedAt": "2026-06-29T00:01:16.846Z",
+      "completedAt": "2026-06-29T00:01:16.848Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -6601,8 +6601,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 92,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-27T23:59:26.053Z",
-      "completedAt": "2026-06-27T23:59:26.055Z",
+      "startedAt": "2026-06-29T00:01:16.846Z",
+      "completedAt": "2026-06-29T00:01:16.847Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -6746,8 +6746,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 92,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-27T23:59:26.056Z",
-      "completedAt": "2026-06-27T23:59:26.058Z",
+      "startedAt": "2026-06-29T00:01:16.849Z",
+      "completedAt": "2026-06-29T00:01:16.850Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -6891,8 +6891,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 92,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-27T23:59:26.056Z",
-      "completedAt": "2026-06-27T23:59:26.058Z",
+      "startedAt": "2026-06-29T00:01:16.849Z",
+      "completedAt": "2026-06-29T00:01:16.851Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -7037,8 +7037,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 92,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-27T23:59:26.056Z",
-      "completedAt": "2026-06-27T23:59:26.058Z",
+      "startedAt": "2026-06-29T00:01:16.849Z",
+      "completedAt": "2026-06-29T00:01:16.850Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -7183,8 +7183,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 92,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-27T23:59:26.056Z",
-      "completedAt": "2026-06-27T23:59:26.058Z",
+      "startedAt": "2026-06-29T00:01:16.849Z",
+      "completedAt": "2026-06-29T00:01:16.851Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -7329,8 +7329,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 92,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-27T23:59:26.060Z",
-      "completedAt": "2026-06-27T23:59:26.062Z",
+      "startedAt": "2026-06-29T00:01:16.852Z",
+      "completedAt": "2026-06-29T00:01:16.855Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -7475,8 +7475,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 92,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-27T23:59:26.060Z",
-      "completedAt": "2026-06-27T23:59:26.062Z",
+      "startedAt": "2026-06-29T00:01:16.852Z",
+      "completedAt": "2026-06-29T00:01:16.854Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -7621,8 +7621,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 92,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-27T23:59:26.060Z",
-      "completedAt": "2026-06-27T23:59:26.061Z",
+      "startedAt": "2026-06-29T00:01:16.852Z",
+      "completedAt": "2026-06-29T00:01:16.854Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -7767,8 +7767,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 92,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-27T23:59:26.060Z",
-      "completedAt": "2026-06-27T23:59:26.061Z",
+      "startedAt": "2026-06-29T00:01:16.852Z",
+      "completedAt": "2026-06-29T00:01:16.854Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -7915,8 +7915,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 92,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-27T23:59:26.063Z",
-      "completedAt": "2026-06-27T23:59:26.065Z",
+      "startedAt": "2026-06-29T00:01:16.856Z",
+      "completedAt": "2026-06-29T00:01:16.857Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -8058,8 +8058,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 92,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-27T23:59:26.063Z",
-      "completedAt": "2026-06-27T23:59:26.065Z",
+      "startedAt": "2026-06-29T00:01:16.856Z",
+      "completedAt": "2026-06-29T00:01:16.857Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -8266,8 +8266,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 92,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-27T23:59:26.063Z",
-      "completedAt": "2026-06-27T23:59:26.065Z",
+      "startedAt": "2026-06-29T00:01:16.856Z",
+      "completedAt": "2026-06-29T00:01:16.858Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -8414,8 +8414,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 92,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-27T23:59:26.063Z",
-      "completedAt": "2026-06-27T23:59:26.065Z",
+      "startedAt": "2026-06-29T00:01:16.856Z",
+      "completedAt": "2026-06-29T00:01:16.858Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -8562,8 +8562,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 92,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-27T23:59:26.066Z",
-      "completedAt": "2026-06-27T23:59:26.068Z",
+      "startedAt": "2026-06-29T00:01:16.859Z",
+      "completedAt": "2026-06-29T00:01:16.861Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -8706,8 +8706,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 92,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-06-27T23:59:26.066Z",
-      "completedAt": "2026-06-27T23:59:26.068Z",
+      "startedAt": "2026-06-29T00:01:16.859Z",
+      "completedAt": "2026-06-29T00:01:16.859Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",

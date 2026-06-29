@@ -1,6 +1,6 @@
 window.CV_CAREER_OPS_DEEP_FIT = {
   "source": "career-ops-deep-fit",
-  "generatedAt": "2026-06-27T23:59:29.505Z",
+  "generatedAt": "2026-06-29T00:01:20.277Z",
   "llmProvider": "none",
   "summary": {
     "totalResults": 95,
@@ -1867,26 +1867,6 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "layer": "B"
     },
     {
-      "jobKey": "url:https://justjoin.it/job-offer/n-ix-senior-scala-engineer-krakow-scala-15ebf7dd",
-      "company": "N-iX",
-      "title": "Senior Scala Engineer",
-      "score": 78,
-      "grade": "B",
-      "roleFit": 45,
-      "url": "https://justjoin.it/job-offer/n-ix-senior-scala-engineer-krakow-scala-15ebf7dd",
-      "location": "Kraków, PL",
-      "keywordHits": [
-        "Analytics",
-        "analytics"
-      ],
-      "keywordMisses": [
-        "docker",
-        "kubernetes"
-      ],
-      "decision": "pursue selectively",
-      "layer": "B"
-    },
-    {
       "jobKey": "url:https://nvidia.wd5.myworkdayjobs.com/nvidiaexternalcareersite/job/taiwan-hsinchu/senior-mixed-signal-circuit-design-engineer_jr2015519",
       "company": "NVIDIA Workday",
       "title": "Senior Mixed Signal Circuit Design Engineer",
@@ -1918,6 +1898,22 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "layer": "B"
     },
     {
+      "jobKey": "url:https://www.dice.com/job-detail/93e496c9-4651-417e-a3b6-91524777dcfb",
+      "company": "SAIC",
+      "title": "Systems Engineer",
+      "score": 77,
+      "grade": "B",
+      "roleFit": 45,
+      "url": "https://www.dice.com/job-detail/93e496c9-4651-417e-a3b6-91524777dcfb",
+      "location": "El Segundo, CA, US",
+      "keywordHits": [
+        "remote"
+      ],
+      "keywordMisses": [],
+      "decision": "pursue selectively",
+      "layer": "B"
+    },
+    {
       "jobKey": "url:https://nvidia.wd5.myworkdayjobs.com/nvidiaexternalcareersite/job/denmark-roskilde/hardware-design-engineer---interconnect-design_jr2018723",
       "company": "NVIDIA Workday",
       "title": "Hardware Design Engineer – Interconnect Design",
@@ -1927,22 +1923,6 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Denmark-Roskilde/Hardware-Design-Engineer---Interconnect-Design_JR2018723",
       "location": "Denmark, Roskilde",
       "keywordHits": [],
-      "keywordMisses": [],
-      "decision": "pursue selectively",
-      "layer": "B"
-    },
-    {
-      "jobKey": "url:https://www.dice.com/job-detail/1b1879a5-b708-4d96-a54c-25fca60a0932",
-      "company": "SAIC",
-      "title": "Deskside Support Engineer",
-      "score": 76,
-      "grade": "B",
-      "roleFit": 45,
-      "url": "https://www.dice.com/job-detail/1b1879a5-b708-4d96-a54c-25fca60a0932",
-      "location": "Sacramento, CA, US",
-      "keywordHits": [
-        "remote"
-      ],
       "keywordMisses": [],
       "decision": "pursue selectively",
       "layer": "B"
@@ -2132,22 +2112,6 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "layer": "B"
     },
     {
-      "jobKey": "url:https://justjoin.it/job-offer/emagine-polska-post-trade-solutions-analyst-banking--gdansk-analytics-0ea22fb8",
-      "company": "emagine Polska",
-      "title": "Post-Trade Solutions Analyst (banking)",
-      "score": 72,
-      "grade": "B",
-      "roleFit": 45,
-      "url": "https://justjoin.it/job-offer/emagine-polska-post-trade-solutions-analyst-banking--gdansk-analytics-0ea22fb8",
-      "location": "Gdansk, PL",
-      "keywordHits": [],
-      "keywordMisses": [
-        "java"
-      ],
-      "decision": "pursue selectively",
-      "layer": "B"
-    },
-    {
       "jobKey": "url:https://www.mycareersfuture.gov.sg/job/6813b1ce86e2266fd9953cebcb246155",
       "company": "HPS PARTNERS PTE. LTD.",
       "title": "Senior/Software Engineer (Bluetooth Embedded System)",
@@ -2204,6 +2168,22 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "keywordMisses": [
         "go"
       ],
+      "decision": "pursue selectively",
+      "layer": "B"
+    },
+    {
+      "jobKey": "url:https://remoteok.com/remote-jobs/remote-document-formatting-specialist-sharon-wells-1134219",
+      "company": "Sharon Wells",
+      "title": "DOCUMENT FORMATTING SPECIALIST",
+      "score": 70,
+      "grade": "C",
+      "roleFit": 45,
+      "url": "https://remoteok.com/remote-jobs/remote-document-formatting-specialist-sharon-wells-1134219",
+      "location": "Excellence Estates 2,",
+      "keywordHits": [
+        "remote"
+      ],
+      "keywordMisses": [],
       "decision": "pursue selectively",
       "layer": "B"
     },
@@ -2320,20 +2300,6 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "layer": "B"
     },
     {
-      "jobKey": "url:https://justjoin.it/job-offer/humanit-product-implementation-specialist-wroclaw-pm",
-      "company": "Humanit",
-      "title": "Product Implementation Specialist",
-      "score": 69,
-      "grade": "C",
-      "roleFit": 45,
-      "url": "https://justjoin.it/job-offer/humanit-product-implementation-specialist-wroclaw-pm",
-      "location": "Wrocław, PL",
-      "keywordHits": [],
-      "keywordMisses": [],
-      "decision": "hold / compare",
-      "layer": "B"
-    },
-    {
       "jobKey": "url:https://www.mycareersfuture.gov.sg/job/2b52c3da2fca4b2ff0aa29c8691b483a",
       "company": "MANPOWER STAFFING SERVICES (SINGAPORE) PTE LTD",
       "title": "Software Engineer C++/C#",
@@ -2360,6 +2326,22 @@ window.CV_CAREER_OPS_DEEP_FIT = {
         "remote"
       ],
       "keywordMisses": [],
+      "decision": "hold / compare",
+      "layer": "B"
+    },
+    {
+      "jobKey": "url:https://www.mycareersfuture.gov.sg/job/69d0d799af23e4beb206dc531351e8ab",
+      "company": "SHARE RESOURCES PRIVATE LIMITED",
+      "title": "Program Manager (HMLV/Semicon)",
+      "score": 68,
+      "grade": "C",
+      "roleFit": 45,
+      "url": "https://www.mycareersfuture.gov.sg/job/69d0d799af23e4beb206dc531351e8ab",
+      "location": "Islandwide, Singapore",
+      "keywordHits": [],
+      "keywordMisses": [
+        "excel"
+      ],
       "decision": "hold / compare",
       "layer": "B"
     },
@@ -2407,6 +2389,24 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       ],
       "keywordMisses": [
         "aws"
+      ],
+      "decision": "hold / compare",
+      "layer": "B"
+    },
+    {
+      "jobKey": "url:https://remoteok.com/remote-jobs/remote-curso-humanizacion-del-servicio-comfenalco-valle-delagente-1134074",
+      "company": "Comfenalco Valle delagente",
+      "title": "Curso HumanizaciÃ³n del Servicio",
+      "score": 67,
+      "grade": "C",
+      "roleFit": 45,
+      "url": "https://remoteok.com/remote-jobs/remote-curso-humanizacion-del-servicio-comfenalco-valle-delagente-1134074",
+      "location": "Cali, Cali, Valle del Cauca, Colombia",
+      "keywordHits": [
+        "remote"
+      ],
+      "keywordMisses": [
+        "excel"
       ],
       "decision": "hold / compare",
       "layer": "B"
@@ -3022,6 +3022,30 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "layer": "C"
     },
     {
+      "jobKey": "url:https://www.themuse.com/jobs/apple/sr-machine-learning-engineer-siri-global-167671",
+      "company": "Apple",
+      "title": "Sr. Machine Learning Engineer, Siri Global",
+      "score": 92,
+      "grade": "A",
+      "roleFit": 92,
+      "url": "https://www.themuse.com/jobs/apple/sr-machine-learning-engineer-siri-global-167671",
+      "location": "Cupertino, CA",
+      "keywordHits": [
+        "Analytics",
+        "API",
+        "analytics",
+        "Product Engineer"
+      ],
+      "topGap": "python",
+      "mainGaps": [
+        "python",
+        "java",
+        "swift",
+        "machine learning"
+      ],
+      "layer": "C"
+    },
+    {
       "jobKey": "url:https://www.themuse.com/jobs/yext/senior-systems-engineer-e6abbf",
       "company": "Yext",
       "title": "Senior Systems Engineer",
@@ -3065,30 +3089,6 @@ window.CV_CAREER_OPS_DEEP_FIT = {
         "aws",
         "gcp",
         "azure"
-      ],
-      "layer": "C"
-    },
-    {
-      "jobKey": "url:https://www.themuse.com/jobs/atlassian/senior-data-engineer-7a25d1",
-      "company": "Atlassian",
-      "title": "Senior Data Engineer",
-      "score": 92,
-      "grade": "A",
-      "roleFit": 92,
-      "url": "https://www.themuse.com/jobs/atlassian/senior-data-engineer-7a25d1",
-      "location": "Bangalore, India / Flexible / Remote",
-      "keywordHits": [
-        "Accessibility",
-        "Analytics",
-        "API",
-        "analytics"
-      ],
-      "topGap": "python",
-      "mainGaps": [
-        "python",
-        "go",
-        "sql",
-        "postgres"
       ],
       "layer": "C"
     }

@@ -1,6 +1,6 @@
 # Career Ops Deep Fit Report
 
-Generated: 2026-06-27T23:59:29.505Z
+Generated: 2026-06-29T00:01:20.277Z
 LLM provider: none
 Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 exploratory)
 
@@ -748,12 +748,6 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Keyword hits: Analytics, analytics
 - Gaps: spark, excel
 
-### N-iX - Senior Scala Engineer
-- Score: 78 | Grade: B | RoleFit: 45
-- Decision: pursue selectively
-- Keyword hits: Analytics, analytics
-- Gaps: docker, kubernetes
-
 ### NVIDIA Workday - Senior Mixed Signal Circuit Design Engineer
 - Score: 77 | Grade: B | RoleFit: 45
 - Decision: pursue selectively
@@ -766,16 +760,16 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Keyword hits: -
 - Gaps: -
 
+### SAIC - Systems Engineer
+- Score: 77 | Grade: B | RoleFit: 45
+- Decision: pursue selectively
+- Keyword hits: remote
+- Gaps: -
+
 ### NVIDIA Workday - Hardware Design Engineer – Interconnect Design
 - Score: 76 | Grade: B | RoleFit: 45
 - Decision: pursue selectively
 - Keyword hits: -
-- Gaps: -
-
-### SAIC - Deskside Support Engineer
-- Score: 76 | Grade: B | RoleFit: 45
-- Decision: pursue selectively
-- Keyword hits: remote
 - Gaps: -
 
 ### ORION SYSTEMS INTEGRATION PTE. LTD. - Software Engineer
@@ -850,12 +844,6 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Keyword hits: -
 - Gaps: agents
 
-### emagine Polska - Post-Trade Solutions Analyst (banking)
-- Score: 72 | Grade: B | RoleFit: 45
-- Decision: pursue selectively
-- Keyword hits: -
-- Gaps: java
-
 ### HPS PARTNERS PTE. LTD. - Senior/Software Engineer (Bluetooth Embedded System)
 - Score: 71 | Grade: C | RoleFit: 45
 - Decision: pursue selectively
@@ -879,6 +867,12 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Decision: pursue selectively
 - Keyword hits: -
 - Gaps: go
+
+### Sharon Wells - DOCUMENT FORMATTING SPECIALIST
+- Score: 70 | Grade: C | RoleFit: 45
+- Decision: pursue selectively
+- Keyword hits: remote
+- Gaps: -
 
 ### 雋思集團_香港商雋思產品發展有限公司(台灣) - Senior Software Engineer
 - Score: 70 | Grade: C | RoleFit: 45
@@ -922,12 +916,6 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Keyword hits: JavaScript, remote
 - Gaps: -
 
-### Humanit - Product Implementation Specialist
-- Score: 69 | Grade: C | RoleFit: 45
-- Decision: hold / compare
-- Keyword hits: -
-- Gaps: -
-
 ### MANPOWER STAFFING SERVICES (SINGAPORE) PTE LTD - Software Engineer C++/C#
 - Score: 68 | Grade: C | RoleFit: 45
 - Decision: hold / compare
@@ -939,6 +927,12 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Decision: hold / compare
 - Keyword hits: remote
 - Gaps: -
+
+### SHARE RESOURCES PRIVATE LIMITED - Program Manager (HMLV/Semicon)
+- Score: 68 | Grade: C | RoleFit: 45
+- Decision: hold / compare
+- Keyword hits: -
+- Gaps: excel
 
 ### Microsoft - Customer Success Account Manager
 - Score: 67 | Grade: C | RoleFit: 45
@@ -957,6 +951,12 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Decision: hold / compare
 - Keyword hits: remote
 - Gaps: aws
+
+### Comfenalco Valle delagente - Curso HumanizaciÃ³n del Servicio
+- Score: 67 | Grade: C | RoleFit: 45
+- Decision: hold / compare
+- Keyword hits: remote
+- Gaps: excel
 
 ## Layer C — Exploratory Signals (roleFit < 40)
 
@@ -987,7 +987,7 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - **Rent the Runway — Software Engineer III - Full Stack** (score: 92) | Top gap: java
 - **GlossGenius — Software Engineer - All Levels** (score: 92) | Top gap: kotlin
 - **Bank of America — Software Engineer III - GBS IND** (score: 92) | Top gap: python
+- **Apple — Sr. Machine Learning Engineer, Siri Global** (score: 92) | Top gap: python
 - **Yext — Senior Systems Engineer** (score: 92) | Top gap: python
 - **Allstate — Lead AI Cloud Platform Engineer** (score: 92) | Top gap: python
-- **Atlassian — Senior Data Engineer** (score: 92) | Top gap: python
 
