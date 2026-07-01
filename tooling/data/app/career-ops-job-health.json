@@ -1,18 +1,34 @@
 {
   "source": "career-ops-health-monitor",
-  "checkedAt": "2026-06-29T23:44:37.797Z",
+  "checkedAt": "2026-07-01T00:09:31.285Z",
   "threshold": 0.3,
   "health": {
-    "total": 76122,
-    "active": 76122,
+    "total": 83396,
+    "active": 83396,
     "expired": 0,
     "stale": 0,
     "expiredRate": 0,
     "expiredRatePct": "0%",
-    "avgActiveScore": 63,
+    "avgActiveScore": 65,
     "bySource": {
       "MyCareersFuture Singapore Frontend Full Stack": {
         "total": 36,
+        "expired": 0
+      },
+      "The Muse Global Public Jobs": {
+        "total": 1889,
+        "expired": 0
+      },
+      "The Muse Global Software Engineering": {
+        "total": 1731,
+        "expired": 0
+      },
+      "The Muse Global Data Analytics": {
+        "total": 1841,
+        "expired": 0
+      },
+      "The Muse Global Remote Jobs": {
+        "total": 1812,
         "expired": 0
       },
       "Japan Dev English Tech Jobs": {
@@ -20,7 +36,7 @@
         "expired": 0
       },
       "Airbnb Greenhouse": {
-        "total": 134,
+        "total": 127,
         "expired": 0
       },
       "MyCareersFuture Singapore Software": {
@@ -28,11 +44,7 @@
         "expired": 0
       },
       "Databricks Greenhouse": {
-        "total": 448,
-        "expired": 0
-      },
-      "Source flex job board": {
-        "total": 129,
+        "total": 450,
         "expired": 0
       },
       "MyCareersFuture Singapore Product": {
@@ -40,11 +52,11 @@
         "expired": 0
       },
       "Figma Greenhouse": {
-        "total": 124,
+        "total": 123,
         "expired": 0
       },
       "MongoDB Greenhouse": {
-        "total": 268,
+        "total": 262,
         "expired": 0
       },
       "Remotive Global Remote Jobs": {
@@ -52,7 +64,7 @@
         "expired": 0
       },
       "Stripe Greenhouse": {
-        "total": 381,
+        "total": 389,
         "expired": 0
       },
       "Canonical Greenhouse": {
@@ -60,23 +72,23 @@
         "expired": 0
       },
       "Vercel Greenhouse": {
-        "total": 58,
+        "total": 52,
         "expired": 0
       },
       "ElevenLabs Ashby": {
-        "total": 93,
+        "total": 92,
         "expired": 0
       },
       "Asana Greenhouse": {
-        "total": 84,
+        "total": 89,
         "expired": 0
       },
       "Roblox Greenhouse": {
-        "total": 143,
+        "total": 142,
         "expired": 0
       },
       "Replit Ashby": {
-        "total": 64,
+        "total": 65,
         "expired": 0
       },
       "Supabase Ashby": {
@@ -87,20 +99,28 @@
         "total": 17,
         "expired": 0
       },
+      "Source flex job board": {
+        "total": 131,
+        "expired": 0
+      },
       "MyCareersFuture Singapore AI Data": {
         "total": 99,
         "expired": 0
       },
       "Reddit Greenhouse": {
-        "total": 107,
+        "total": 109,
         "expired": 0
       },
       "Notion Ashby": {
-        "total": 84,
+        "total": 85,
         "expired": 0
       },
       "Ramp Ashby": {
         "total": 102,
+        "expired": 0
+      },
+      "Micron Workday": {
+        "total": 57,
         "expired": 0
       },
       "MyCareersFuture Singapore Business Operations": {
@@ -108,19 +128,19 @@
         "expired": 0
       },
       "GitLab Greenhouse": {
-        "total": 90,
+        "total": 88,
         "expired": 0
       },
       "Cursor Ashby": {
-        "total": 95,
+        "total": 92,
         "expired": 0
       },
       "NVIDIA Workday": {
-        "total": 283,
+        "total": 297,
         "expired": 0
       },
       "Mozilla Greenhouse": {
-        "total": 30,
+        "total": 28,
         "expired": 0
       },
       "Linear Ashby": {
@@ -140,11 +160,7 @@
         "expired": 0
       },
       "Samsung Workday": {
-        "total": 69,
-        "expired": 0
-      },
-      "Micron Workday": {
-        "total": 56,
+        "total": 72,
         "expired": 0
       },
       "Intel Workday Taiwan": {
@@ -168,7 +184,7 @@
         "expired": 0
       },
       "Logitech Workday Taiwan": {
-        "total": 20,
+        "total": 21,
         "expired": 0
       },
       "MyCareersFuture Singapore Graduate Research": {
@@ -187,20 +203,16 @@
         "total": 340,
         "expired": 0
       },
+      "Daijob Japan Broad Listings": {
+        "total": 115,
+        "expired": 0
+      },
       "Samsung Research": {
         "total": 2,
         "expired": 0
       },
-      "Meet.jobs Global Public API": {
-        "total": 18,
-        "expired": 0
-      },
-      "Daijob Japan Broad Listings": {
-        "total": 110,
-        "expired": 0
-      },
       "Tencent Careers China": {
-        "total": 1484,
+        "total": 1475,
         "expired": 0
       },
       "Microsoft Beijing": {
@@ -231,6 +243,10 @@
         "total": 7,
         "expired": 0
       },
+      "Tencent": {
+        "total": 25,
+        "expired": 0
+      },
       "1111 Taiwan Job Sitemap": {
         "total": 20000,
         "expired": 0
@@ -243,10 +259,6 @@
         "total": 1,
         "expired": 0
       },
-      "Tencent": {
-        "total": 15,
-        "expired": 0
-      },
       "Mynavi Tenshoku Japan Sitemap": {
         "total": 15000,
         "expired": 0
@@ -256,11 +268,11 @@
         "expired": 0
       },
       "Grab": {
-        "total": 47,
+        "total": 48,
         "expired": 0
       },
       "Garmin Taiwan": {
-        "total": 3,
+        "total": 4,
         "expired": 0
       },
       "CONA SuccessFactors IT Development Engineer": {
@@ -273,6 +285,10 @@
       },
       "COEBank SuccessFactors Data & BI Engineer": {
         "total": 1,
+        "expired": 0
+      },
+      "Grab SmartRecruiters": {
+        "total": 5,
         "expired": 0
       },
       "ASSA ABLOY SuccessFactors Taipei Manufacturing Engineer": {
@@ -289,10 +305,6 @@
       },
       "CONA SuccessFactors Data Analyst": {
         "total": 1,
-        "expired": 0
-      },
-      "Grab SmartRecruiters": {
-        "total": 5,
         "expired": 0
       },
       "ByteDance": {

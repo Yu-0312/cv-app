@@ -1,9 +1,9 @@
 # Career Ops Deep Research
 
-Generated: 2026-06-29T23:44:17.551Z
+Generated: 2026-07-01T00:09:09.885Z
 Search provider: none
-Queries: 12
-Evidence items: 19
+Queries: 13
+Evidence items: 7
 Dossiers: 8
 
 ## VANGUARD SOFTWARE PTE. LTD. - Expert Frontend Engineer (React.JS & React Native)
@@ -34,11 +34,10 @@ Dossiers: 8
 
 - Score: 95
 - Recommendation: 值得投遞
-- Signals: AI / data / platform signal
+- Signals: AI / data / platform signal, remote or hybrid signal
 
 ### Evidence
-- source-page: https://careers.airbnb.com/positions/8031755?gh_jid=8031755 — Frontend Engineer, Quality Platform - Careers at Airbnb Skip to main content Careers Life at Airbnb Job Search Connect Engineering Apprenticeship Internship Programs Contractor Rol
-- source-page: https://careers.airbnb.com/positions/8031737?gh_jid=8031737 — Senior Frontend Engineer, Quality Platform - Careers at Airbnb Skip to main content Careers Life at Airbnb Job Search Connect Engineering Apprenticeship Internship Programs Contrac
+- source-page: https://www.themuse.com/jobs/uber/sr-software-engineer-frontend-web-8fc2b7 — Sr Software Engineer, Frontend (Web) at Uber | The Muse | The Muse Skip to main content The Muse Logo A logo with &amp;quat;the muse&amp;quat; in dark blue text. Newsletter Jobs Ac
 
 ### Research Questions
 - What business unit owns the Frontend Engineer role?
@@ -55,11 +54,10 @@ Dossiers: 8
 
 - Score: 95
 - Recommendation: 值得投遞
-- Signals: AI / data / platform signal
+- Signals: AI / data / platform signal, remote or hybrid signal
 
 ### Evidence
-- source-page: https://careers.airbnb.com/positions/8031755?gh_jid=8031755 — Frontend Engineer, Quality Platform - Careers at Airbnb Skip to main content Careers Life at Airbnb Job Search Connect Engineering Apprenticeship Internship Programs Contractor Rol
-- source-page: https://careers.airbnb.com/positions/8031737?gh_jid=8031737 — Senior Frontend Engineer, Quality Platform - Careers at Airbnb Skip to main content Careers Life at Airbnb Job Search Connect Engineering Apprenticeship Internship Programs Contrac
+- source-page: https://www.themuse.com/jobs/uber/sr-software-engineer-frontend-web-8fc2b7 — Sr Software Engineer, Frontend (Web) at Uber | The Muse | The Muse Skip to main content The Muse Logo A logo with &amp;quat;the muse&amp;quat; in dark blue text. Newsletter Jobs Ac
 
 ### Research Questions
 - What business unit owns the Frontend Engineer role?
@@ -76,11 +74,10 @@ Dossiers: 8
 
 - Score: 95
 - Recommendation: 值得投遞
-- Signals: AI / data / platform signal
+- Signals: AI / data / platform signal, remote or hybrid signal
 
 ### Evidence
-- source-page: https://careers.airbnb.com/positions/8031755?gh_jid=8031755 — Frontend Engineer, Quality Platform - Careers at Airbnb Skip to main content Careers Life at Airbnb Job Search Connect Engineering Apprenticeship Internship Programs Contractor Rol
-- source-page: https://careers.airbnb.com/positions/8031737?gh_jid=8031737 — Senior Frontend Engineer, Quality Platform - Careers at Airbnb Skip to main content Careers Life at Airbnb Job Search Connect Engineering Apprenticeship Internship Programs Contrac
+- source-page: https://www.themuse.com/jobs/uber/sr-software-engineer-frontend-web-8fc2b7 — Sr Software Engineer, Frontend (Web) at Uber | The Muse | The Muse Skip to main content The Muse Logo A logo with &amp;quat;the muse&amp;quat; in dark blue text. Newsletter Jobs Ac
 
 ### Research Questions
 - What business unit owns the Frontend Software Engineer (Payment), TikTok Live - Singapore role?
@@ -97,11 +94,10 @@ Dossiers: 8
 
 - Score: 95
 - Recommendation: 值得投遞
-- Signals: AI / data / platform signal
+- Signals: AI / data / platform signal, remote or hybrid signal
 
 ### Evidence
-- source-page: https://careers.airbnb.com/positions/8031755?gh_jid=8031755 — Frontend Engineer, Quality Platform - Careers at Airbnb Skip to main content Careers Life at Airbnb Job Search Connect Engineering Apprenticeship Internship Programs Contractor Rol
-- source-page: https://careers.airbnb.com/positions/8031737?gh_jid=8031737 — Senior Frontend Engineer, Quality Platform - Careers at Airbnb Skip to main content Careers Life at Airbnb Job Search Connect Engineering Apprenticeship Internship Programs Contrac
+- source-page: https://www.themuse.com/jobs/uber/sr-software-engineer-frontend-web-8fc2b7 — Sr Software Engineer, Frontend (Web) at Uber | The Muse | The Muse Skip to main content The Muse Logo A logo with &amp;quat;the muse&amp;quat; in dark blue text. Newsletter Jobs Ac
 
 ### Research Questions
 - What business unit owns the Frontend Software Engineer (transaction), TikTok Live - Singapore role?
@@ -114,22 +110,17 @@ Dossiers: 8
 - Ask how the company evaluates impact across the first two quarters.
 - Prepare one story that maps directly to the highest-scoring ATS keywords.
 
-## Dinii - Senior Software Engineer
+## Disney - Lead Software Engineer
 
 - Score: 95
 - Recommendation: 值得投遞
-- Signals: AI / data / platform signal, remote or hybrid signal
+- Signals: AI / data / platform signal
 
 ### Evidence
-- source-page: https://japan-dev.com/jobs/dinii/dinii-senior-software-engineer-q41fc0 — Senior Software Engineer at Dinii in Japan | Japan Dev /r/JapanDev - Check out our new Reddit Community for Tech Careers in Japan - New Reddit Community! × NEWSLETTER Sign Up Dashb
-- source-page: https://boards.greenhouse.io/airbnb?cv_market=us — Positions Archive - Careers at Airbnb Skip to main content Careers Life at Airbnb Job Search Connect Engineering Apprenticeship Internship Programs Contractor Roles Airbnb Customer
-- source-page: https://boards.greenhouse.io/airbnb?cv_market=ca — Positions Archive - Careers at Airbnb Skip to main content Careers Life at Airbnb Job Search Connect Engineering Apprenticeship Internship Programs Contractor Roles Airbnb Customer
-- source-page: https://boards.greenhouse.io/airbnb?cv_market=uk — Positions Archive - Careers at Airbnb Skip to main content Careers Life at Airbnb Job Search Connect Engineering Apprenticeship Internship Programs Contractor Roles Airbnb Customer
-- source-page: https://boards.greenhouse.io/airbnb?cv_market=ie — Positions Archive - Careers at Airbnb Skip to main content Careers Life at Airbnb Job Search Connect Engineering Apprenticeship Internship Programs Contractor Roles Airbnb Customer
-- source-page: https://boards.greenhouse.io/airbnb?cv_market=de — Positions Archive - Careers at Airbnb Skip to main content Careers Life at Airbnb Job Search Connect Engineering Apprenticeship Internship Programs Contractor Roles Airbnb Customer
+- source-page: https://www.themuse.com/jobs/bankofamerica/principal-engineer-gbs-ind-783d05 — Principal Engineer - GBS IND at Bank of America | The Muse | The Muse Skip to main content The Muse Logo A logo with &amp;quat;the muse&amp;quat; in dark blue text. Newsletter Jobs
 
 ### Research Questions
-- What business unit owns the Senior Software Engineer role?
+- What business unit owns the Lead Software Engineer role?
 - What measurable outcomes would this team expect in the first 90 days?
 - What recent company/product signals change the risk or upside?
 - Which CV proof points should be highlighted for this company?
@@ -139,22 +130,17 @@ Dossiers: 8
 - Ask how the company evaluates impact across the first two quarters.
 - Prepare one story that maps directly to the highest-scoring ATS keywords.
 
-## Airbnb Greenhouse - Frontend Engineer, Quality Platform
+## Bank of America - Principal Engineer - GBS IND
 
 - Score: 95
 - Recommendation: 值得投遞
-- Signals: AI / data / platform signal, remote or hybrid signal
+- Signals: AI / data / platform signal
 
 ### Evidence
-- source-page: https://careers.airbnb.com/positions/8031755?gh_jid=8031755 — Frontend Engineer, Quality Platform - Careers at Airbnb Skip to main content Careers Life at Airbnb Job Search Connect Engineering Apprenticeship Internship Programs Contractor Rol
-- source-page: https://boards.greenhouse.io/airbnb?cv_market=us — Positions Archive - Careers at Airbnb Skip to main content Careers Life at Airbnb Job Search Connect Engineering Apprenticeship Internship Programs Contractor Roles Airbnb Customer
-- source-page: https://boards.greenhouse.io/airbnb?cv_market=ca — Positions Archive - Careers at Airbnb Skip to main content Careers Life at Airbnb Job Search Connect Engineering Apprenticeship Internship Programs Contractor Roles Airbnb Customer
-- source-page: https://boards.greenhouse.io/airbnb?cv_market=uk — Positions Archive - Careers at Airbnb Skip to main content Careers Life at Airbnb Job Search Connect Engineering Apprenticeship Internship Programs Contractor Roles Airbnb Customer
-- source-page: https://boards.greenhouse.io/airbnb?cv_market=ie — Positions Archive - Careers at Airbnb Skip to main content Careers Life at Airbnb Job Search Connect Engineering Apprenticeship Internship Programs Contractor Roles Airbnb Customer
-- source-page: https://boards.greenhouse.io/airbnb?cv_market=de — Positions Archive - Careers at Airbnb Skip to main content Careers Life at Airbnb Job Search Connect Engineering Apprenticeship Internship Programs Contractor Roles Airbnb Customer
+- source-page: https://www.themuse.com/jobs/bankofamerica/principal-engineer-gbs-ind-783d05 — Principal Engineer - GBS IND at Bank of America | The Muse | The Muse Skip to main content The Muse Logo A logo with &amp;quat;the muse&amp;quat; in dark blue text. Newsletter Jobs
 
 ### Research Questions
-- What business unit owns the Frontend Engineer, Quality Platform role?
+- What business unit owns the Principal Engineer - GBS IND role?
 - What measurable outcomes would this team expect in the first 90 days?
 - What recent company/product signals change the risk or upside?
 - Which CV proof points should be highlighted for this company?
@@ -164,22 +150,17 @@ Dossiers: 8
 - Ask how the company evaluates impact across the first two quarters.
 - Prepare one story that maps directly to the highest-scoring ATS keywords.
 
-## Airbnb Greenhouse - Senior Frontend Engineer, Quality Platform
+## Uber - Sr Software Engineer, Frontend (Web)
 
 - Score: 95
 - Recommendation: 值得投遞
 - Signals: AI / data / platform signal, remote or hybrid signal
 
 ### Evidence
-- source-page: https://japan-dev.com/jobs/dinii/dinii-senior-software-engineer-q41fc0 — Senior Software Engineer at Dinii in Japan | Japan Dev /r/JapanDev - Check out our new Reddit Community for Tech Careers in Japan - New Reddit Community! × NEWSLETTER Sign Up Dashb
-- source-page: https://careers.airbnb.com/positions/8031755?gh_jid=8031755 — Frontend Engineer, Quality Platform - Careers at Airbnb Skip to main content Careers Life at Airbnb Job Search Connect Engineering Apprenticeship Internship Programs Contractor Rol
-- source-page: https://boards.greenhouse.io/airbnb?cv_market=us — Positions Archive - Careers at Airbnb Skip to main content Careers Life at Airbnb Job Search Connect Engineering Apprenticeship Internship Programs Contractor Roles Airbnb Customer
-- source-page: https://boards.greenhouse.io/airbnb?cv_market=ca — Positions Archive - Careers at Airbnb Skip to main content Careers Life at Airbnb Job Search Connect Engineering Apprenticeship Internship Programs Contractor Roles Airbnb Customer
-- source-page: https://boards.greenhouse.io/airbnb?cv_market=uk — Positions Archive - Careers at Airbnb Skip to main content Careers Life at Airbnb Job Search Connect Engineering Apprenticeship Internship Programs Contractor Roles Airbnb Customer
-- source-page: https://boards.greenhouse.io/airbnb?cv_market=ie — Positions Archive - Careers at Airbnb Skip to main content Careers Life at Airbnb Job Search Connect Engineering Apprenticeship Internship Programs Contractor Roles Airbnb Customer
+- source-page: https://www.themuse.com/jobs/uber/sr-software-engineer-frontend-web-8fc2b7 — Sr Software Engineer, Frontend (Web) at Uber | The Muse | The Muse Skip to main content The Muse Logo A logo with &amp;quat;the muse&amp;quat; in dark blue text. Newsletter Jobs Ac
 
 ### Research Questions
-- What business unit owns the Senior Frontend Engineer, Quality Platform role?
+- What business unit owns the Sr Software Engineer, Frontend (Web) role?
 - What measurable outcomes would this team expect in the first 90 days?
 - What recent company/product signals change the risk or upside?
 - Which CV proof points should be highlighted for this company?
@@ -188,4 +169,8 @@ Dossiers: 8
 - Ask about team success metrics and why the role is open.
 - Ask how the company evaluates impact across the first two quarters.
 - Prepare one story that maps directly to the highest-scoring ATS keywords.
+
+## Errors
+
+- https://www.themuse.com/jobs/disney/lead-software-engineer-944f62: HTTP 404
 
