@@ -1,11 +1,11 @@
 # Career Ops Intelligence Report
 
-Generated: 2026-07-01T00:08:48.929Z
+Generated: 2026-07-02T00:18:41.412Z
 
-- Active jobs: 83396
+- Active jobs: 81658
 - Expired jobs: 0
-- Duplicate groups: 3505
-- Jobs without enough description: 403
+- Duplicate groups: 3294
+- Jobs without enough description: 398
 - Rubric: Career Ops 10-Dimension Rubric
 
 ## Rubric Weights
@@ -21,55 +21,55 @@ Generated: 2026-07-01T00:08:48.929Z
 - applicationEffort: 0.08
 
 ## Top Skills
-- api: 7610
-- growth: 4542
-- operations: 4105
-- analytics: 3311
-- sales: 3250
-- python: 2356
-- go: 1901
-- sql: 1579
-- excel: 1533
-- aws: 1237
-- azure: 1035
-- machine learning: 1009
+- api: 5860
+- growth: 3885
+- operations: 3420
+- analytics: 2865
+- sales: 2718
+- python: 2173
+- go: 1635
+- sql: 1424
+- excel: 1310
+- aws: 1109
+- azure: 929
+- machine learning: 854
 
 ## Missing High-Demand Skills
-- growth: 4542
-- operations: 4105
-- sales: 3250
-- python: 2356
-- go: 1901
-- sql: 1579
-- excel: 1533
-- aws: 1237
-- azure: 1035
-- machine learning: 1009
+- growth: 3885
+- operations: 3420
+- sales: 2718
+- python: 2173
+- go: 1635
+- sql: 1424
+- excel: 1310
+- aws: 1109
+- azure: 929
+- machine learning: 854
 
 ## Global Skill Gap Priority (weighted by job score)
-- growth: 7212.8
-- operations: 6485.1
-- sales: 5106.3
-- python: 3823.3
-- go: 3042.5
-- sql: 2565
-- excel: 2393.5
-- aws: 2025.6
-- azure: 1694.4
-- machine learning: 1644
-- agents: 1311.7
-- java: 1265.8
+- growth: 6157.7
+- operations: 5385.8
+- sales: 4265
+- python: 3523.6
+- go: 2616.5
+- sql: 2312.5
+- excel: 2046.8
+- aws: 1812.2
+- azure: 1519.3
+- machine learning: 1392.6
+- spark: 1156.8
+- agents: 1144.3
 
 ## Role Families
-- Backend: 79233
-- Other: 1690
-- Frontend: 818
-- AI / Data: 718
-- Sales: 345
-- Marketing: 165
-- Product: 152
-- Design: 144
-- Operations: 74
+- Backend: 77572
+- Other: 1675
+- AI / Data: 727
+- Frontend: 722
+- Sales: 362
+- Marketing: 161
+- Product: 159
+- Design: 141
+- Operations: 84
 - Internship: 42
 
 ## Recommended Search Queries

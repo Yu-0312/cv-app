@@ -1,31 +1,31 @@
 # Career Ops Learning Report
 
-- Generated: 2026-07-01T00:09:27.354Z
-- Active jobs: 83396
-- Positive signals: 81604
+- Generated: 2026-07-02T00:19:18.680Z
+- Active jobs: 81658
+- Positive signals: 79856
 - Negative signals: 0
 - Source coverage: 421 sources / 10557 queries / markets tw, cn, jp, kr, sg, global, us, ca, uk, ie, de, nl, fr, es, it, se, dk, no, pl, pt, au, nz, in, br, mx, ch, fi, cz, za, id, my, ph, vn, th, il, hk, ae
 
 ## Preferred Skills
 
-- data: 36424
-- api: 35216.9
-- API: 35153
-- product: 27521.8
-- growth: 23072.6
-- operations: 21871.5
-- analytics: 18629.8
-- Analytics: 17691.7
-- sales: 17594.1
-- remote: 17540.2
-- engineer: 17160.2
-- python: 12645.9
-- go: 9712.5
-- sql: 8482.2
-- excel: 7412.6
-- aws: 6887.3
-- azure: 5708.9
-- machine learning: 5392.2
+- data: 31037
+- api: 26825.7
+- API: 26773.7
+- product: 23747.4
+- growth: 19725.4
+- operations: 18178
+- analytics: 16090.5
+- Analytics: 15271.4
+- engineer: 15157.1
+- sales: 14495.4
+- python: 11642.7
+- remote: 9783.5
+- go: 8402.9
+- sql: 7647.3
+- excel: 6413.6
+- aws: 6133.8
+- azure: 5096.3
+- machine learning: 4617.8
 
 ## Avoid Signals
 
@@ -37,14 +37,14 @@
 - 1111 Taiwan Job Sitemap: 63000
 - Mynavi Tenshoku Japan Sitemap: 46500
 - JAC Recruitment Japan Detail Sitemap: 15500
-- SpaceX: 4332.6
-- Walmart: 2937.8
-- Databricks Greenhouse: 2564
-- GE Vernova: 2222.6
-- Bank of America: 2095.7
-- Stripe Greenhouse: 1829.3
+- SpaceX: 4333.5
+- Walmart: 2720.9
+- Databricks Greenhouse: 2580
+- Bank of America: 2176.6
+- Stripe Greenhouse: 1797.8
 - Canonical Greenhouse: 1327.4
-- MongoDB Greenhouse: 1322.8
+- MongoDB Greenhouse: 1322.7
+- Uber: 1105.3
 
 ## Next Strategy
 

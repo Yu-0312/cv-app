@@ -1,6 +1,6 @@
 # Career Ops Deep Fit Report
 
-Generated: 2026-07-01T00:09:23.915Z
+Generated: 2026-07-02T00:19:15.234Z
 LLM provider: none
 Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 exploratory)
 
@@ -40,14 +40,14 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 
 - Score: 95
 - Grade: A
-- Confidence: medium
+- Confidence: high
 - Decision: pursue aggressively
-- Thesis: Frontend Engineer at BIFROST PTE. LTD. is pursue aggressively because the snapshot score is 95, with 7 profile/role keyword hits and 1 external evidence item(s).
+- Thesis: Frontend Engineer at BIFROST PTE. LTD. is pursue aggressively because the snapshot score is 95, with 7 profile/role keyword hits and 5 external evidence item(s).
 
 #### Evidence
 - Keyword hits: Frontend Engineer, JavaScript, React, CSS, API, React, Frontend Engineer
 - Keyword misses: vue, angular, python, java, go, mysql, aws, gcp, azure, docker, computer vision, growth
-- Research signals: AI / data / platform signal, remote or hybrid signal
+- Research signals: -
 - Compensation leverage: high
 
 #### Concerns
@@ -70,14 +70,14 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 
 - Score: 95
 - Grade: A
-- Confidence: medium
+- Confidence: high
 - Decision: pursue aggressively
-- Thesis: Frontend Engineer at BIFROST PTE. LTD. is pursue aggressively because the snapshot score is 95, with 7 profile/role keyword hits and 1 external evidence item(s).
+- Thesis: Frontend Engineer at BIFROST PTE. LTD. is pursue aggressively because the snapshot score is 95, with 7 profile/role keyword hits and 5 external evidence item(s).
 
 #### Evidence
 - Keyword hits: Frontend Engineer, JavaScript, React, CSS, API, React, Frontend Engineer
 - Keyword misses: vue, angular, python, java, go, mysql, aws, gcp, azure, docker, computer vision, growth
-- Research signals: AI / data / platform signal, remote or hybrid signal
+- Research signals: -
 - Compensation leverage: high
 
 #### Concerns
@@ -100,14 +100,14 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 
 - Score: 95
 - Grade: A
-- Confidence: medium
+- Confidence: high
 - Decision: pursue aggressively
-- Thesis: Frontend Software Engineer (Payment), TikTok Live - Singapore at TIKTOK PTE. LTD. is pursue aggressively because the snapshot score is 95, with 6 profile/role keyword hits and 1 external evidence item(s).
+- Thesis: Frontend Software Engineer (Payment), TikTok Live - Singapore at TIKTOK PTE. LTD. is pursue aggressively because the snapshot score is 95, with 6 profile/role keyword hits and 5 external evidence item(s).
 
 #### Evidence
 - Keyword hits: Frontend Engineer, JavaScript, CSS, API, remote, Frontend Engineer
 - Keyword misses: growth
-- Research signals: AI / data / platform signal, remote or hybrid signal
+- Research signals: -
 - Compensation leverage: high
 
 #### Concerns
@@ -130,14 +130,14 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 
 - Score: 95
 - Grade: A
-- Confidence: medium
+- Confidence: high
 - Decision: pursue aggressively
-- Thesis: Frontend Software Engineer (transaction), TikTok Live - Singapore at TIKTOK PTE. LTD. is pursue aggressively because the snapshot score is 95, with 6 profile/role keyword hits and 1 external evidence item(s).
+- Thesis: Frontend Software Engineer (transaction), TikTok Live - Singapore at TIKTOK PTE. LTD. is pursue aggressively because the snapshot score is 95, with 6 profile/role keyword hits and 5 external evidence item(s).
 
 #### Evidence
 - Keyword hits: Frontend Engineer, JavaScript, CSS, API, remote, Frontend Engineer
 - Keyword misses: growth
-- Research signals: AI / data / platform signal, remote or hybrid signal
+- Research signals: -
 - Compensation leverage: high
 
 #### Concerns
@@ -156,18 +156,78 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Use story story-2: systems and API collaboration.
 - Use story story-3: accessibility and quality.
 
-### Disney - Lead Software Engineer
+### The Coca-Cola Company - Sr. Software Engineer , Service Supply Chain
 
 - Score: 95
 - Grade: A
 - Confidence: medium
 - Decision: pursue aggressively
-- Thesis: Lead Software Engineer at Disney is pursue aggressively because the snapshot score is 95, with 5 profile/role keyword hits and 1 external evidence item(s).
+- Thesis: Sr. Software Engineer , Service Supply Chain at The Coca-Cola Company is pursue aggressively because the snapshot score is 95, with 2 profile/role keyword hits and 2 external evidence item(s).
+
+#### Evidence
+- Keyword hits: API, Full Stack Engineer
+- Keyword misses: growth, sales
+- Research signals: AI / data / platform signal
+- Compensation leverage: high
+
+#### Concerns
+- None flagged
+
+#### Interview Strategy
+- Ask why the role is open and what success means in the first 90 days.
+- Probe team ownership, roadmap pressure, and cross-functional interfaces.
+- What business unit owns the Sr. Software Engineer , Service Supply Chain role?
+- What measurable outcomes would this team expect in the first 90 days?
+- What recent company/product signals change the risk or upside?
+
+#### CV Strategy
+- Lead with proof around: API, Full Stack Engineer.
+- Use story story-1: frontend product execution.
+- Use story story-2: systems and API collaboration.
+- Use story story-3: accessibility and quality.
+
+### The Coca-Cola Company - Senior Software Engineer , Service Provider
+
+- Score: 95
+- Grade: A
+- Confidence: medium
+- Decision: pursue aggressively
+- Thesis: Senior Software Engineer , Service Provider at The Coca-Cola Company is pursue aggressively because the snapshot score is 95, with 2 profile/role keyword hits and 2 external evidence item(s).
+
+#### Evidence
+- Keyword hits: API, Full Stack Engineer
+- Keyword misses: growth, sales
+- Research signals: AI / data / platform signal
+- Compensation leverage: high
+
+#### Concerns
+- None flagged
+
+#### Interview Strategy
+- Ask why the role is open and what success means in the first 90 days.
+- Probe team ownership, roadmap pressure, and cross-functional interfaces.
+- What business unit owns the Sr. Software Engineer , Service Supply Chain role?
+- What measurable outcomes would this team expect in the first 90 days?
+- What recent company/product signals change the risk or upside?
+
+#### CV Strategy
+- Lead with proof around: API, Full Stack Engineer.
+- Use story story-1: frontend product execution.
+- Use story story-2: systems and API collaboration.
+- Use story story-3: accessibility and quality.
+
+### Disney - Lead Software Engineer
+
+- Score: 95
+- Grade: A
+- Confidence: high
+- Decision: pursue aggressively
+- Thesis: Lead Software Engineer at Disney is pursue aggressively because the snapshot score is 95, with 5 profile/role keyword hits and 5 external evidence item(s).
 
 #### Evidence
 - Keyword hits: JavaScript, TypeScript, API, TypeScript, Product Engineer
 - Keyword misses: rust, aws
-- Research signals: AI / data / platform signal
+- Research signals: -
 - Compensation leverage: high
 
 #### Concerns
@@ -192,23 +252,21 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Grade: A
 - Confidence: medium
 - Decision: pursue aggressively
-- Thesis: Principal Engineer - GBS IND at Bank of America is pursue aggressively because the snapshot score is 95, with 2 profile/role keyword hits and 1 external evidence item(s).
+- Thesis: Principal Engineer - GBS IND at Bank of America is pursue aggressively because the snapshot score is 95, with 2 profile/role keyword hits and 0 external evidence item(s).
 
 #### Evidence
 - Keyword hits: API, Full Stack Engineer
 - Keyword misses: azure, agents, growth, operations
-- Research signals: AI / data / platform signal
+- Research signals: -
 - Compensation leverage: high
 
 #### Concerns
+- External company evidence is thin; run deep research with a search API.
 - Profile keyword coverage is weaker than the target role language.
 
 #### Interview Strategy
 - Ask why the role is open and what success means in the first 90 days.
 - Probe team ownership, roadmap pressure, and cross-functional interfaces.
-- What business unit owns the Principal Engineer - GBS IND role?
-- What measurable outcomes would this team expect in the first 90 days?
-- What recent company/product signals change the risk or upside?
 
 #### CV Strategy
 - Lead with proof around: API, Full Stack Engineer.
@@ -222,26 +280,51 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Grade: A
 - Confidence: medium
 - Decision: pursue aggressively
-- Thesis: Sr Software Engineer, Frontend (Web) at Uber is pursue aggressively because the snapshot score is 95, with 11 profile/role keyword hits and 1 external evidence item(s).
+- Thesis: Sr Software Engineer, Frontend (Web) at Uber is pursue aggressively because the snapshot score is 95, with 11 profile/role keyword hits and 0 external evidence item(s).
 
 #### Evidence
 - Keyword hits: Frontend Engineer, JavaScript, TypeScript, React, CSS, API, Performance Optimization, remote, TypeScript, React, Frontend Engineer
 - Keyword misses: angular, python, go, html, growth
-- Research signals: AI / data / platform signal, remote or hybrid signal
+- Research signals: -
 - Compensation leverage: high
 
 #### Concerns
-- None flagged
+- External company evidence is thin; run deep research with a search API.
 
 #### Interview Strategy
 - Ask why the role is open and what success means in the first 90 days.
 - Probe team ownership, roadmap pressure, and cross-functional interfaces.
-- What business unit owns the Sr Software Engineer, Frontend (Web) role?
-- What measurable outcomes would this team expect in the first 90 days?
-- What recent company/product signals change the risk or upside?
 
 #### CV Strategy
 - Lead with proof around: Frontend Engineer, JavaScript, TypeScript, React, CSS, API.
+- Use story story-1: frontend product execution.
+- Use story story-2: systems and API collaboration.
+- Use story story-3: accessibility and quality.
+
+### Celonis - Application Product Manager - (AI System Transformations)
+
+- Score: 95
+- Grade: A
+- Confidence: medium
+- Decision: pursue aggressively
+- Thesis: Application Product Manager - (AI System Transformations) at Celonis is pursue aggressively because the snapshot score is 95, with 4 profile/role keyword hits and 0 external evidence item(s).
+
+#### Evidence
+- Keyword hits: Analytics, API, analytics, Product Engineer
+- Keyword misses: python, go, sql, rest, agents
+- Research signals: -
+- Compensation leverage: high
+
+#### Concerns
+- External company evidence is thin; run deep research with a search API.
+- Profile keyword coverage is weaker than the target role language.
+
+#### Interview Strategy
+- Ask why the role is open and what success means in the first 90 days.
+- Probe team ownership, roadmap pressure, and cross-functional interfaces.
+
+#### CV Strategy
+- Lead with proof around: Analytics, API, analytics, Product Engineer.
 - Use story story-1: frontend product execution.
 - Use story story-2: systems and API collaboration.
 - Use story story-3: accessibility and quality.
@@ -273,17 +356,45 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Use story story-2: systems and API collaboration.
 - Use story story-3: accessibility and quality.
 
-### Allstate - Software Engineer Lead Consultant
+### Deloitte - Google AI Lead Architect
 
 - Score: 95
 - Grade: A
 - Confidence: medium
 - Decision: pursue aggressively
-- Thesis: Software Engineer Lead Consultant at Allstate is pursue aggressively because the snapshot score is 95, with 3 profile/role keyword hits and 0 external evidence item(s).
+- Thesis: Google AI Lead Architect at Deloitte is pursue aggressively because the snapshot score is 95, with 4 profile/role keyword hits and 0 external evidence item(s).
+
+#### Evidence
+- Keyword hits: Analytics, API, analytics, Product Engineer
+- Keyword misses: sql, aws, gcp, azure, docker, kubernetes, terraform, llm, rag, growth, operations
+- Research signals: -
+- Compensation leverage: high
+
+#### Concerns
+- External company evidence is thin; run deep research with a search API.
+- Profile keyword coverage is weaker than the target role language.
+
+#### Interview Strategy
+- Ask why the role is open and what success means in the first 90 days.
+- Probe team ownership, roadmap pressure, and cross-functional interfaces.
+
+#### CV Strategy
+- Lead with proof around: Analytics, API, analytics, Product Engineer.
+- Use story story-1: frontend product execution.
+- Use story story-2: systems and API collaboration.
+- Use story story-3: accessibility and quality.
+
+### Zoom - Forward Deployed Engineer (Japanese speaker)
+
+- Score: 95
+- Grade: A
+- Confidence: medium
+- Decision: pursue aggressively
+- Thesis: Forward Deployed Engineer (Japanese speaker) at Zoom is pursue aggressively because the snapshot score is 95, with 3 profile/role keyword hits and 0 external evidence item(s).
 
 #### Evidence
 - Keyword hits: API, remote, Product Engineer
-- Keyword misses: python, java, kubernetes, rest, rag
+- Keyword misses: python, azure, llm, agents, prompt engineering, crm, growth
 - Research signals: -
 - Compensation leverage: high
 
@@ -382,34 +493,6 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Use story story-2: systems and API collaboration.
 - Use story story-3: accessibility and quality.
 
-### Airbnb Greenhouse - Lead - Advanced Analytics, Gurgaon
-
-- Score: 95
-- Grade: A
-- Confidence: medium
-- Decision: pursue aggressively
-- Thesis: Lead - Advanced Analytics, Gurgaon at Airbnb Greenhouse is pursue aggressively because the snapshot score is 95, with 4 profile/role keyword hits and 0 external evidence item(s).
-
-#### Evidence
-- Keyword hits: Analytics, dashboard, analytics, Product Engineer
-- Keyword misses: python, sql, etl, spark, llm, agents, prompt engineering, machine learning, nlp, scikit, sales, operations
-- Research signals: -
-- Compensation leverage: high
-
-#### Concerns
-- External company evidence is thin; run deep research with a search API.
-- Profile keyword coverage is weaker than the target role language.
-
-#### Interview Strategy
-- Ask why the role is open and what success means in the first 90 days.
-- Probe team ownership, roadmap pressure, and cross-functional interfaces.
-
-#### CV Strategy
-- Lead with proof around: Analytics, dashboard, analytics, Product Engineer.
-- Use story story-1: frontend product execution.
-- Use story story-2: systems and API collaboration.
-- Use story story-3: accessibility and quality.
-
 ### GN AUDIO SINGAPORE PTE. LTD. - Software Engineer II (SteelSeries)
 
 - Score: 94
@@ -465,34 +548,6 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Use story story-1: frontend product execution.
 - Use story story-2: systems and API collaboration.
 
-### Allstate - Manager Database Engineering (MongoDB)
-
-- Score: 94
-- Grade: A
-- Confidence: medium
-- Decision: pursue aggressively
-- Thesis: Manager Database Engineering (MongoDB) at Allstate is pursue aggressively because the snapshot score is 94, with 5 profile/role keyword hits and 0 external evidence item(s).
-
-#### Evidence
-- Keyword hits: Analytics, API, remote, analytics, Product Engineer
-- Keyword misses: mysql, aws, gcp, azure, rest, crm
-- Research signals: -
-- Compensation leverage: high
-
-#### Concerns
-- External company evidence is thin; run deep research with a search API.
-- Profile keyword coverage is weaker than the target role language.
-
-#### Interview Strategy
-- Ask why the role is open and what success means in the first 90 days.
-- Probe team ownership, roadmap pressure, and cross-functional interfaces.
-
-#### CV Strategy
-- Lead with proof around: Analytics, API, remote, analytics, Product Engineer.
-- Use story story-1: frontend product execution.
-- Use story story-2: systems and API collaboration.
-- Use story story-3: accessibility and quality.
-
 ### Databricks Greenhouse - Director,Technical Solutions (Big Data/ AI)
 
 - Score: 94
@@ -533,7 +588,7 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Keyword hits: Analytics, dashboard, analytics, Product Engineer
 - Keyword misses: growth, sales, operations
 - Research signals: -
-- Compensation leverage: high
+- Compensation leverage: -
 
 #### Concerns
 - External company evidence is thin; run deep research with a search API.
@@ -544,115 +599,6 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 
 #### CV Strategy
 - Lead with proof around: Analytics, dashboard, analytics, Product Engineer.
-- Use story story-1: frontend product execution.
-- Use story story-2: systems and API collaboration.
-- Use story story-3: accessibility and quality.
-
-### NOAH HEALTH PTE. LTD. - Staff Product Manager
-
-- Score: 93
-- Grade: A
-- Confidence: medium
-- Decision: pursue aggressively
-- Thesis: Staff Product Manager at NOAH HEALTH PTE. LTD. is pursue aggressively because the snapshot score is 93, with 9 profile/role keyword hits and 0 external evidence item(s).
-
-#### Evidence
-- Keyword hits: JavaScript, TypeScript, React, CSS, API, remote, TypeScript, React, Product Engineer
-- Keyword misses: rest, html, growth, operations
-- Research signals: -
-- Compensation leverage: high
-
-#### Concerns
-- External company evidence is thin; run deep research with a search API.
-
-#### Interview Strategy
-- Ask why the role is open and what success means in the first 90 days.
-- Probe team ownership, roadmap pressure, and cross-functional interfaces.
-
-#### CV Strategy
-- Lead with proof around: JavaScript, TypeScript, React, CSS, API, remote.
-- Use story story-1: frontend product execution.
-- Use story story-2: systems and API collaboration.
-- Use story story-3: accessibility and quality.
-
-### Pilotly - Product Engineer II
-
-- Score: 93
-- Grade: A
-- Confidence: medium
-- Decision: pursue aggressively
-- Thesis: Product Engineer II at Pilotly is pursue aggressively because the snapshot score is 93, with 8 profile/role keyword hits and 0 external evidence item(s).
-
-#### Evidence
-- Keyword hits: JavaScript, React, CSS, API, remote, dashboard, React, Product Engineer
-- Keyword misses: aws, growth
-- Research signals: -
-- Compensation leverage: -
-
-#### Concerns
-- External company evidence is thin; run deep research with a search API.
-
-#### Interview Strategy
-- Ask why the role is open and what success means in the first 90 days.
-- Probe team ownership, roadmap pressure, and cross-functional interfaces.
-
-#### CV Strategy
-- Lead with proof around: JavaScript, React, CSS, API, remote, dashboard.
-- Use story story-1: frontend product execution.
-- Use story story-2: systems and API collaboration.
-- Use story story-3: accessibility and quality.
-
-### Capital One - Distinguished Engineer (Remote - Eligible)
-
-- Score: 93
-- Grade: A
-- Confidence: medium
-- Decision: pursue aggressively
-- Thesis: Distinguished Engineer (Remote - Eligible) at Capital One is pursue aggressively because the snapshot score is 93, with 6 profile/role keyword hits and 0 external evidence item(s).
-
-#### Evidence
-- Keyword hits: JavaScript, TypeScript, API, remote, TypeScript, Product Engineer
-- Keyword misses: python, java, go, swift, aws, azure, machine learning
-- Research signals: -
-- Compensation leverage: -
-
-#### Concerns
-- External company evidence is thin; run deep research with a search API.
-- Profile keyword coverage is weaker than the target role language.
-
-#### Interview Strategy
-- Ask why the role is open and what success means in the first 90 days.
-- Probe team ownership, roadmap pressure, and cross-functional interfaces.
-
-#### CV Strategy
-- Lead with proof around: JavaScript, TypeScript, API, remote, TypeScript, Product Engineer.
-- Use story story-1: frontend product execution.
-- Use story story-2: systems and API collaboration.
-- Use story story-3: accessibility and quality.
-
-### CrowdStrike - Sr. Full Stack Engineer (Remote)
-
-- Score: 93
-- Grade: A
-- Confidence: medium
-- Decision: pursue aggressively
-- Thesis: Sr. Full Stack Engineer (Remote) at CrowdStrike is pursue aggressively because the snapshot score is 93, with 13 profile/role keyword hits and 0 external evidence item(s).
-
-#### Evidence
-- Keyword hits: Frontend Engineer, JavaScript, TypeScript, React, Analytics, API, remote, dashboard, analytics, TypeScript, React, Frontend Engineer, Full Stack Engineer
-- Keyword misses: python, html, llm, agents, operations
-- Research signals: -
-- Compensation leverage: -
-
-#### Concerns
-- External company evidence is thin; run deep research with a search API.
-
-#### Interview Strategy
-- Ask why the role is open and what success means in the first 90 days.
-- Probe team ownership, roadmap pressure, and cross-functional interfaces.
-
-#### CV Strategy
-- Lead with proof around: Frontend Engineer, JavaScript, TypeScript, React, Analytics, API.
 - Use story story-1: frontend product execution.
 - Use story story-2: systems and API collaboration.
 - Use story story-3: accessibility and quality.
@@ -712,6 +658,61 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Use story story-2: systems and API collaboration.
 - Use story story-3: accessibility and quality.
 
+### Figma Greenhouse - Software Engineer, AI Product (London, United Kingdom)
+
+- Score: 93
+- Grade: A
+- Confidence: medium
+- Decision: pursue aggressively
+- Thesis: Software Engineer, AI Product (London, United Kingdom) at Figma Greenhouse is pursue aggressively because the snapshot score is 93, with 7 profile/role keyword hits and 0 external evidence item(s).
+
+#### Evidence
+- Keyword hits: TypeScript, React, API, Figma, TypeScript, React, Product Engineer
+- Keyword misses: llm, agents
+- Research signals: -
+- Compensation leverage: -
+
+#### Concerns
+- External company evidence is thin; run deep research with a search API.
+
+#### Interview Strategy
+- Ask why the role is open and what success means in the first 90 days.
+- Probe team ownership, roadmap pressure, and cross-functional interfaces.
+
+#### CV Strategy
+- Lead with proof around: TypeScript, React, API, Figma, TypeScript, React.
+- Use story story-1: frontend product execution.
+- Use story story-2: systems and API collaboration.
+- Use story story-3: accessibility and quality.
+
+### Airbnb Greenhouse - Senior Software Engineer, Quality Platform
+
+- Score: 93
+- Grade: A
+- Confidence: medium
+- Decision: pursue aggressively
+- Thesis: Senior Software Engineer, Quality Platform at Airbnb Greenhouse is pursue aggressively because the snapshot score is 93, with 6 profile/role keyword hits and 0 external evidence item(s).
+
+#### Evidence
+- Keyword hits: TypeScript, API, Design Systems, design system, TypeScript, Product Engineer
+- Keyword misses: python, java, swift, kotlin, llm, rag, agents, prompt engineering
+- Research signals: -
+- Compensation leverage: high
+
+#### Concerns
+- External company evidence is thin; run deep research with a search API.
+- Profile keyword coverage is weaker than the target role language.
+
+#### Interview Strategy
+- Ask why the role is open and what success means in the first 90 days.
+- Probe team ownership, roadmap pressure, and cross-functional interfaces.
+
+#### CV Strategy
+- Lead with proof around: TypeScript, API, Design Systems, design system, TypeScript, Product Engineer.
+- Use story story-1: frontend product execution.
+- Use story story-2: systems and API collaboration.
+- Use story story-3: accessibility and quality.
+
 ## Layer B — Standard Matches (roleFit 40-67)
 
 ### NVIDIA Workday - Senior Perception Engineer, Obstacle Foundation Models - Autonomous Vehicles
@@ -767,6 +768,18 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Decision: pursue selectively
 - Keyword hits: -
 - Gaps: -
+
+### SAIC - IT Post?Award Contracts Program Management SETA
+- Score: 76 | Grade: B | RoleFit: 45
+- Decision: pursue selectively
+- Keyword hits: remote
+- Gaps: -
+
+### SAIC - NAVWAR-CRPTO ENGINEER
+- Score: 75 | Grade: B | RoleFit: 45
+- Decision: pursue selectively
+- Keyword hits: remote
+- Gaps: python
 
 ### ORION SYSTEMS INTEGRATION PTE. LTD. - Software Engineer
 - Score: 74 | Grade: B | RoleFit: 45
@@ -834,29 +847,23 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Keyword hits: -
 - Gaps: python
 
+### Justworks - Template
+- Score: 72 | Grade: B | RoleFit: 45
+- Decision: pursue selectively
+- Keyword hits: remote
+- Gaps: -
+
 ### Money Forward - QA Manager, Digital Bank
 - Score: 72 | Grade: B | RoleFit: 45
 - Decision: pursue selectively
 - Keyword hits: -
 - Gaps: agents
 
-### Ducommun, Inc. - EHS Safety & Environmental Engineer
-- Score: 72 | Grade: B | RoleFit: 45
-- Decision: pursue selectively
-- Keyword hits: -
-- Gaps: excel
-
 ### HPS PARTNERS PTE. LTD. - Senior/Software Engineer (Bluetooth Embedded System)
 - Score: 71 | Grade: C | RoleFit: 45
 - Decision: pursue selectively
 - Keyword hits: -
 - Gaps: -
-
-### ITCAN PTE. LIMITED - Software Engineer (Must Have Java + Prefer Spring Boot, Spring Web MVC, Apache Maven and Jasper Report)
-- Score: 71 | Grade: C | RoleFit: 45
-- Decision: pursue selectively
-- Keyword hits: -
-- Gaps: java
 
 ### Brainkind - Business Administration
 - Score: 71 | Grade: C | RoleFit: 45
@@ -924,24 +931,6 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Keyword hits: Accessibility, remote
 - Gaps: -
 
-### Godo Kaisha Amaris Japan/合同会社Amaris Japan - 【Global Environment】Business Analysis Consultant
-- Score: 69 | Grade: C | RoleFit: 45
-- Decision: hold / compare
-- Keyword hits: -
-- Gaps: -
-
-### BUILDER 90 PTE LTD - M&E Engineer/Coordinator
-- Score: 69 | Grade: C | RoleFit: 45
-- Decision: hold / compare
-- Keyword hits: -
-- Gaps: excel
-
-### BUILDER 90 PTE LTD - M&E Engineer
-- Score: 69 | Grade: C | RoleFit: 45
-- Decision: hold / compare
-- Keyword hits: -
-- Gaps: -
-
 ### MANPOWER STAFFING SERVICES (SINGAPORE) PTE LTD - Software Engineer C++/C#
 - Score: 68 | Grade: C | RoleFit: 45
 - Decision: hold / compare
@@ -954,10 +943,20 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Keyword hits: remote
 - Gaps: go
 
+### Genuit Group - Operator
+- Score: 68 | Grade: C | RoleFit: 45
+- Decision: hold / compare
+- Keyword hits: remote
+- Gaps: -
+
+### Atlantic Oceanic LLC - Full crew
+- Score: 67 | Grade: C | RoleFit: 45
+- Decision: hold / compare
+- Keyword hits: remote
+- Gaps: -
+
 ## Layer C — Exploratory Signals (roleFit < 40)
 
-- **Figma Greenhouse — Software Engineer, AI Product (London, United Kingdom)** (score: 93) | Top gap: llm
-- **Airbnb Greenhouse — Senior Software Engineer, Quality Platform** (score: 93) | Top gap: python
 - **Airbnb Greenhouse — Senior Web Automation Engineer, Quality Platform** (score: 93) | Top gap: agents
 - **Airbnb Greenhouse — Software Engineer, Quality Platform** (score: 93) | Top gap: python
 - **MongoDB Greenhouse — Senior Software Engineer, Observability** (score: 93) | Top gap: java
@@ -966,11 +965,6 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - **REVOLUT TECHNOLOGIES SINGAPORE PTE. LTD. — Frontend Engineer** (score: 92) | Top gap: growth
 - **KRIS INFOTECH PTE. LTD. — Frontend Systems Engineer - Unity** (score: 92) | Top gap: rest
 - **LawnStarter — Staff Product Engineer (São Paulo)** (score: 92) | Top gap: aws
-- **LawnStarter — Staff Software Engineer, Product (Belo Horizonte)** (score: 92) | Top gap: aws
-- **LawnStarter — Staff Software Engineer, Product (Florianópolis)** (score: 92) | Top gap: aws
-- **LawnStarter — Staff Software Engineer, Product (Porto Alegre)** (score: 92) | Top gap: aws
-- **LawnStarter — Staff Software Engineer, Product (São Paulo)** (score: 92) | Top gap: aws
-- **LawnStarter — Staff Software Engineer, Product (Campinas)** (score: 92) | Top gap: aws
 - **GlossGenius — Staff Software Engineer, Frontend** (score: 92) | Top gap: none
 - **Rent the Runway — Senior Software Engineer** (score: 92) | Top gap: java
 - **Uber — Engineering Manager II** (score: 92) | Top gap: growth
@@ -980,10 +974,17 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - **Rent the Runway — Software Engineer III - Full Stack** (score: 92) | Top gap: java
 - **GlossGenius — Software Engineer - All Levels** (score: 92) | Top gap: kotlin
 - **Bank of America — Software Engineer III - GBS IND** (score: 92) | Top gap: python
-- **Apple — WPC Partner Ops Support & Optimization** (score: 92) | Top gap: operations
-- **Yext — Senior Systems Engineer** (score: 92) | Top gap: python
-- **Allstate — Lead AI Cloud Platform Engineer** (score: 92) | Top gap: python
-- **Kyndryl — Mod Engineer (FDE)** (score: 92) | Top gap: python
-- **Equinix, Inc — Staff Software Engineer (Full-Stack)** (score: 92) | Top gap: python
-- **Esri — Sr. Product Engineer - Web Services** (score: 92) | Top gap: python
+- **Apple — Sr. Machine Learning Engineer, Siri Global** (score: 92) | Top gap: python
+- **Stripe Greenhouse — Learning Architect** (score: 92) | Top gap: growth
+- **Stripe Greenhouse — Full Stack Engineer, Growth** (score: 92) | Top gap: go
+- **Canonical Greenhouse — Security Software Engineer** (score: 92) | Top gap: python
+- **Vercel Greenhouse — Site Engineer** (score: 92) | Top gap: agents
+- **ElevenLabs Ashby — Safety Engineer** (score: 92) | Top gap: python
+- **ESOL PTE. LTD. — Frontend Systems Engineer-Unity - 12 months contract** (score: 91) | Top gap: rest
+- **EPAM Systems — Senior Data Engineer (Palantir)** (score: 91) | Top gap: python
+- **Tradeweb — AI/ML Lead** (score: 91) | Top gap: python
+- **Allstate — Microsoft 365 Cloud Platform Engineer Expert** (score: 91) | Top gap: gcp
+- **Stripe Greenhouse — Full-Stack Engineer** (score: 91) | Top gap: python
+- **Stripe Greenhouse — Full Stack Engineer, Support Experience** (score: 91) | Top gap: none
+- **Canonical Greenhouse — Web Frontend Engineer - JS, CSS, React, Flutter** (score: 91) | Top gap: docker
 

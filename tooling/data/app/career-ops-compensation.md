@@ -1,6 +1,6 @@
 # Career Ops Compensation Planner
 
-Generated: 2026-07-01T00:09:13.407Z
+Generated: 2026-07-02T00:19:04.476Z
 Plans: 20
 
 ## Operating Rule
@@ -51,7 +51,6 @@ Do not invent salary numbers. Use verified ranges, recruiter-provided ranges, or
 ### Evidence
 - No verified salary mention found.
 - Benefit signal: bonus
-- Benefit signal: work-mode flexibility
 - Benefit signal: signing / relocation
 - Benefit signal: learning budget
 
@@ -89,7 +88,6 @@ Do not invent salary numbers. Use verified ranges, recruiter-provided ranges, or
 ### Evidence
 - No verified salary mention found.
 - Benefit signal: bonus
-- Benefit signal: work-mode flexibility
 - Benefit signal: signing / relocation
 - Benefit signal: learning budget
 
@@ -186,6 +184,76 @@ Do not invent salary numbers. Use verified ranges, recruiter-provided ranges, or
 ### Scripts
 - Range question: Before I anchor on a number, could you share the approved range and level for the Frontend Software Engineer (transaction), TikTok Live - Singapore package, including base, bonus, equity, and review cycle?
 - Value anchor: Based on the scope of Frontend Software Engineer (transaction), TikTok Live - Singapore and my fit around JavaScript, CSS, remote, engineer, I would like to calibrate toward the stronger end of the range if the team sees the level match. My research indicates the JP midpoint for this level is around JPY 8,000,000 (annual).
+- Counter: Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?
+- Pause: I appreciate the details. I would like to review the full package and come back with a thoughtful response.
+- Close: If we can align on the package and review timeline, I would feel confident moving forward.
+
+### Next Actions
+- Collect market compensation evidence before naming a number.
+- Ask recruiter for approved range and level.
+- Map the job scope to proof points in the tailored CV.
+- Prepare one counter package with base, bonus/equity, and non-cash levers.
+
+## The Coca-Cola Company - Sr. Software Engineer , Service Supply Chain
+
+- Market: us
+- Job level (inferred): senior
+- Candidate level (from profile): mid
+- Leverage: high
+- Target frame: Do not name a number first. Ask for the approved range, level, and total compensation structure before anchoring.
+
+### Evidence
+- No verified salary mention found.
+- Benefit signal: learning budget
+
+### Structure
+- Base: Need verified market data or recruiter range before setting a numeric anchor.
+- Bonus: Ask whether there is annual bonus, performance bonus, or sign-on bonus.
+- Equity: Ask whether equity, RSU, options, or profit-sharing exists.
+- Benefit: Health / insurance coverage
+- Benefit: Paid leave and holidays
+- Benefit: Learning budget or certification support
+- Benefit: Remote/hybrid setup, commute, or relocation support
+- Benefit: Review cycle and promotion timeline
+
+### Scripts
+- Range question: Before I anchor on a number, could you share the approved range and level for the Sr. Software Engineer , Service Supply Chain package, including base, bonus, equity, and review cycle?
+- Value anchor: Based on the scope of Sr. Software Engineer , Service Supply Chain and my fit around API, engineer, product, data, I would like to calibrate toward the stronger end of the range if the team sees the level match.
+- Counter: Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?
+- Pause: I appreciate the details. I would like to review the full package and come back with a thoughtful response.
+- Close: If we can align on the package and review timeline, I would feel confident moving forward.
+
+### Next Actions
+- Collect market compensation evidence before naming a number.
+- Ask recruiter for approved range and level.
+- Map the job scope to proof points in the tailored CV.
+- Prepare one counter package with base, bonus/equity, and non-cash levers.
+
+## The Coca-Cola Company - Senior Software Engineer , Service Provider
+
+- Market: us
+- Job level (inferred): senior
+- Candidate level (from profile): mid
+- Leverage: high
+- Target frame: Do not name a number first. Ask for the approved range, level, and total compensation structure before anchoring.
+
+### Evidence
+- No verified salary mention found.
+- Benefit signal: learning budget
+
+### Structure
+- Base: Need verified market data or recruiter range before setting a numeric anchor.
+- Bonus: Ask whether there is annual bonus, performance bonus, or sign-on bonus.
+- Equity: Ask whether equity, RSU, options, or profit-sharing exists.
+- Benefit: Health / insurance coverage
+- Benefit: Paid leave and holidays
+- Benefit: Learning budget or certification support
+- Benefit: Remote/hybrid setup, commute, or relocation support
+- Benefit: Review cycle and promotion timeline
+
+### Scripts
+- Range question: Before I anchor on a number, could you share the approved range and level for the Senior Software Engineer , Service Provider package, including base, bonus, equity, and review cycle?
+- Value anchor: Based on the scope of Senior Software Engineer , Service Provider and my fit around API, engineer, product, data, I would like to calibrate toward the stronger end of the range if the team sees the level match.
 - Counter: Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?
 - Pause: I appreciate the details. I would like to review the full package and come back with a thoughtful response.
 - Close: If we can align on the package and review timeline, I would feel confident moving forward.
@@ -302,6 +370,42 @@ Do not invent salary numbers. Use verified ranges, recruiter-provided ranges, or
 - Map the job scope to proof points in the tailored CV.
 - Prepare one counter package with base, bonus/equity, and non-cash levers.
 
+## Celonis - Application Product Manager - (AI System Transformations)
+
+- Market: in
+- Job level (inferred): mid
+- Candidate level (from profile): mid
+- Leverage: high
+- Target frame: Do not name a number first. Ask for the approved range, level, and total compensation structure before anchoring.
+
+### Evidence
+- No verified salary mention found.
+- Benefit signal: work-mode flexibility
+- Benefit signal: signing / relocation
+
+### Structure
+- Base: Need verified market data or recruiter range before setting a numeric anchor.
+- Bonus: Ask whether there is annual bonus, performance bonus, or sign-on bonus.
+- Equity: Ask whether equity, RSU, options, or profit-sharing exists.
+- Benefit: Health / insurance coverage
+- Benefit: Paid leave and holidays
+- Benefit: Learning budget or certification support
+- Benefit: Remote/hybrid setup, commute, or relocation support
+- Benefit: Review cycle and promotion timeline
+
+### Scripts
+- Range question: Before I anchor on a number, could you share the approved range and level for the Application Product Manager - (AI System Transformations) package, including base, bonus, equity, and review cycle?
+- Value anchor: Based on the scope of Application Product Manager - (AI System Transformations) and my fit around Analytics, API, engineer, product, I would like to calibrate toward the stronger end of the range if the team sees the level match.
+- Counter: Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?
+- Pause: I appreciate the details. I would like to review the full package and come back with a thoughtful response.
+- Close: If we can align on the package and review timeline, I would feel confident moving forward.
+
+### Next Actions
+- Collect market compensation evidence before naming a number.
+- Ask recruiter for approved range and level.
+- Map the job scope to proof points in the tailored CV.
+- Prepare one counter package with base, bonus/equity, and non-cash levers.
+
 ## Airbnb - Senior/ Manager, Machine Learning, Customer Support Engineering
 
 - Market: cn
@@ -337,7 +441,7 @@ Do not invent salary numbers. Use verified ranges, recruiter-provided ranges, or
 - Map the job scope to proof points in the tailored CV.
 - Prepare one counter package with base, bonus/equity, and non-cash levers.
 
-## Allstate - Software Engineer Lead Consultant
+## Deloitte - Google AI Lead Architect
 
 - Market: us
 - Job level (inferred): senior-plus
@@ -361,8 +465,49 @@ Do not invent salary numbers. Use verified ranges, recruiter-provided ranges, or
 - Benefit: Review cycle and promotion timeline
 
 ### Scripts
-- Range question: Before I anchor on a number, could you share the approved range and level for the Software Engineer Lead Consultant package, including base, bonus, equity, and review cycle?
-- Value anchor: Based on the scope of Software Engineer Lead Consultant and my fit around API, remote, engineer, product, I would like to calibrate toward the stronger end of the range if the team sees the level match.
+- Range question: Before I anchor on a number, could you share the approved range and level for the Google AI Lead Architect package, including base, bonus, equity, and review cycle?
+- Value anchor: Based on the scope of Google AI Lead Architect and my fit around Analytics, API, product, data, I would like to calibrate toward the stronger end of the range if the team sees the level match.
+- Counter: Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?
+- Pause: I appreciate the details. I would like to review the full package and come back with a thoughtful response.
+- Close: If we can align on the package and review timeline, I would feel confident moving forward.
+
+### Next Actions
+- Collect market compensation evidence before naming a number.
+- Ask recruiter for approved range and level.
+- Map the job scope to proof points in the tailored CV.
+- Prepare one counter package with base, bonus/equity, and non-cash levers.
+
+## Zoom - Forward Deployed Engineer (Japanese speaker)
+
+- Market: jp
+- Job level (inferred): senior-plus
+- Candidate level (from profile): mid
+- Leverage: high
+- Market benchmark (mid): JPY 6,000,000 – 10,000,000 annual
+- Benchmark midpoint: JPY 8,000,000
+- Benchmark source: TokyoDev / Japan-Dev 2024-2025
+- Note: Tokyo-based international tech companies skew higher (+30-50%). Japanese-headquartered companies average ¥8.5M for mid-level.
+- Target frame: Market benchmark for mid in JP is JPY 6,000,000 – 10,000,000 (annual). Do not name a number first — ask for the approved range, then anchor near the midpoint or above.
+
+### Evidence
+- No verified salary mention found.
+- Benefit signal: equity
+- Benefit signal: work-mode flexibility
+- Benefit signal: signing / relocation
+
+### Structure
+- Base: Market range for mid (JP): JPY 6,000,000 – 10,000,000 annual. Source: TokyoDev / Japan-Dev 2024-2025.
+- Bonus: Ask whether there is annual bonus, performance bonus, or sign-on bonus.
+- Equity: Clarify grant size, vesting schedule, refreshers, and strike/RSU terms.
+- Benefit: Health / insurance coverage
+- Benefit: Paid leave and holidays
+- Benefit: Learning budget or certification support
+- Benefit: Remote/hybrid setup, commute, or relocation support
+- Benefit: Review cycle and promotion timeline
+
+### Scripts
+- Range question: Before I anchor on a number, could you share the approved range and level for the Forward Deployed Engineer (Japanese speaker) package, including base, bonus, equity, and review cycle?
+- Value anchor: Based on the scope of Forward Deployed Engineer (Japanese speaker) and my fit around API, remote, engineer, product, I would like to calibrate toward the stronger end of the range if the team sees the level match. My research indicates the JP midpoint for this level is around JPY 8,000,000 (annual).
 - Counter: Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?
 - Pause: I appreciate the details. I would like to review the full package and come back with a thoughtful response.
 - Close: If we can align on the package and review timeline, I would feel confident moving forward.
@@ -481,44 +626,6 @@ Do not invent salary numbers. Use verified ranges, recruiter-provided ranges, or
 - Map the job scope to proof points in the tailored CV.
 - Prepare one counter package with base, bonus/equity, and non-cash levers.
 
-## Airbnb Greenhouse - Lead - Advanced Analytics, Gurgaon
-
-- Market: us
-- Job level (inferred): senior-plus
-- Candidate level (from profile): mid
-- Leverage: high
-- Target frame: Do not name a number first. Ask for the approved range, level, and total compensation structure before anchoring.
-
-### Evidence
-- No verified salary mention found.
-- Benefit signal: bonus
-- Benefit signal: equity
-- Benefit signal: signing / relocation
-- Benefit signal: learning budget
-
-### Structure
-- Base: Need verified market data or recruiter range before setting a numeric anchor.
-- Bonus: Ask whether bonus is guaranteed, target, or discretionary.
-- Equity: Clarify grant size, vesting schedule, refreshers, and strike/RSU terms.
-- Benefit: Health / insurance coverage
-- Benefit: Paid leave and holidays
-- Benefit: Learning budget or certification support
-- Benefit: Remote/hybrid setup, commute, or relocation support
-- Benefit: Review cycle and promotion timeline
-
-### Scripts
-- Range question: Before I anchor on a number, could you share the approved range and level for the Lead - Advanced Analytics, Gurgaon package, including base, bonus, equity, and review cycle?
-- Value anchor: Based on the scope of Lead - Advanced Analytics, Gurgaon and my fit around Analytics, product, data, visualization, I would like to calibrate toward the stronger end of the range if the team sees the level match.
-- Counter: Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?
-- Pause: I appreciate the details. I would like to review the full package and come back with a thoughtful response.
-- Close: If we can align on the package and review timeline, I would feel confident moving forward.
-
-### Next Actions
-- Collect market compensation evidence before naming a number.
-- Ask recruiter for approved range and level.
-- Map the job scope to proof points in the tailored CV.
-- Prepare one counter package with base, bonus/equity, and non-cash levers.
-
 ## GN AUDIO SINGAPORE PTE. LTD. - Software Engineer II (SteelSeries)
 
 - Market: sg
@@ -590,41 +697,6 @@ Do not invent salary numbers. Use verified ranges, recruiter-provided ranges, or
 - Map the job scope to proof points in the tailored CV.
 - Prepare one counter package with base, bonus/equity, and non-cash levers.
 
-## Allstate - Manager Database Engineering (MongoDB)
-
-- Market: us
-- Job level (inferred): senior
-- Candidate level (from profile): mid
-- Leverage: high
-- Target frame: Do not name a number first. Ask for the approved range, level, and total compensation structure before anchoring.
-
-### Evidence
-- No verified salary mention found.
-- Benefit signal: work-mode flexibility
-
-### Structure
-- Base: Need verified market data or recruiter range before setting a numeric anchor.
-- Bonus: Ask whether there is annual bonus, performance bonus, or sign-on bonus.
-- Equity: Ask whether equity, RSU, options, or profit-sharing exists.
-- Benefit: Health / insurance coverage
-- Benefit: Paid leave and holidays
-- Benefit: Learning budget or certification support
-- Benefit: Remote/hybrid setup, commute, or relocation support
-- Benefit: Review cycle and promotion timeline
-
-### Scripts
-- Range question: Before I anchor on a number, could you share the approved range and level for the Manager Database Engineering (MongoDB) package, including base, bonus, equity, and review cycle?
-- Value anchor: Based on the scope of Manager Database Engineering (MongoDB) and my fit around Analytics, API, remote, engineer, I would like to calibrate toward the stronger end of the range if the team sees the level match.
-- Counter: Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?
-- Pause: I appreciate the details. I would like to review the full package and come back with a thoughtful response.
-- Close: If we can align on the package and review timeline, I would feel confident moving forward.
-
-### Next Actions
-- Collect market compensation evidence before naming a number.
-- Ask recruiter for approved range and level.
-- Map the job scope to proof points in the tailored CV.
-- Prepare one counter package with base, bonus/equity, and non-cash levers.
-
 ## Databricks Greenhouse - Director,Technical Solutions (Big Data/ AI)
 
 - Market: us
@@ -650,76 +722,6 @@ Do not invent salary numbers. Use verified ranges, recruiter-provided ranges, or
 ### Scripts
 - Range question: Before I anchor on a number, could you share the approved range and level for the Director,Technical Solutions (Big Data/ AI) package, including base, bonus, equity, and review cycle?
 - Value anchor: Based on the scope of Director,Technical Solutions (Big Data/ AI) and my fit around Analytics, Performance Optimization, product, data, I would like to calibrate toward the stronger end of the range if the team sees the level match.
-- Counter: Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?
-- Pause: I appreciate the details. I would like to review the full package and come back with a thoughtful response.
-- Close: If we can align on the package and review timeline, I would feel confident moving forward.
-
-### Next Actions
-- Collect market compensation evidence before naming a number.
-- Ask recruiter for approved range and level.
-- Map the job scope to proof points in the tailored CV.
-- Prepare one counter package with base, bonus/equity, and non-cash levers.
-
-## SHEIN STAR PTE. LTD. - Product Manager – Apparel & Accessories
-
-- Market: sg
-- Job level (inferred): senior
-- Candidate level (from profile): mid
-- Leverage: high
-- Target frame: Do not name a number first. Ask for the approved range, level, and total compensation structure before anchoring.
-
-### Evidence
-- No verified salary mention found.
-
-### Structure
-- Base: Need verified market data or recruiter range before setting a numeric anchor.
-- Bonus: Ask whether there is annual bonus, performance bonus, or sign-on bonus.
-- Equity: Ask whether equity, RSU, options, or profit-sharing exists.
-- Benefit: Health / insurance coverage
-- Benefit: Paid leave and holidays
-- Benefit: Learning budget or certification support
-- Benefit: Remote/hybrid setup, commute, or relocation support
-- Benefit: Review cycle and promotion timeline
-
-### Scripts
-- Range question: Before I anchor on a number, could you share the approved range and level for the Product Manager – Apparel & Accessories package, including base, bonus, equity, and review cycle?
-- Value anchor: Based on the scope of Product Manager – Apparel & Accessories and my fit around Analytics, dashboard, product, data, I would like to calibrate toward the stronger end of the range if the team sees the level match.
-- Counter: Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?
-- Pause: I appreciate the details. I would like to review the full package and come back with a thoughtful response.
-- Close: If we can align on the package and review timeline, I would feel confident moving forward.
-
-### Next Actions
-- Collect market compensation evidence before naming a number.
-- Ask recruiter for approved range and level.
-- Map the job scope to proof points in the tailored CV.
-- Prepare one counter package with base, bonus/equity, and non-cash levers.
-
-## NOAH HEALTH PTE. LTD. - Staff Product Manager
-
-- Market: sg
-- Job level (inferred): senior-plus
-- Candidate level (from profile): mid
-- Leverage: high
-- Target frame: Do not name a number first. Ask for the approved range, level, and total compensation structure before anchoring.
-
-### Evidence
-- No verified salary mention found.
-- Benefit signal: equity
-- Benefit signal: work-mode flexibility
-
-### Structure
-- Base: Need verified market data or recruiter range before setting a numeric anchor.
-- Bonus: Ask whether there is annual bonus, performance bonus, or sign-on bonus.
-- Equity: Clarify grant size, vesting schedule, refreshers, and strike/RSU terms.
-- Benefit: Health / insurance coverage
-- Benefit: Paid leave and holidays
-- Benefit: Learning budget or certification support
-- Benefit: Remote/hybrid setup, commute, or relocation support
-- Benefit: Review cycle and promotion timeline
-
-### Scripts
-- Range question: Before I anchor on a number, could you share the approved range and level for the Staff Product Manager package, including base, bonus, equity, and review cycle?
-- Value anchor: Based on the scope of Staff Product Manager and my fit around JavaScript, TypeScript, React, CSS, I would like to calibrate toward the stronger end of the range if the team sees the level match.
 - Counter: Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?
 - Pause: I appreciate the details. I would like to review the full package and come back with a thoughtful response.
 - Close: If we can align on the package and review timeline, I would feel confident moving forward.
