@@ -8443,14 +8443,14 @@
           <div id="careerOpsSection" hidden>
             <div class="career-panel-label">大量職缺匯入</div>
             <textarea id="careerOpsImportInput" class="career-textarea" placeholder="貼上多筆職缺描述，每筆用 --- 分隔。建議包含公司、職稱、連結、職責與要求技能；只有 URL 的職缺會先進追蹤器，但需要補上描述才能評估。"></textarea>
-            <div class="career-ops-help">支援貼上 JD / URL 清單、匯入後端職缺快照、全職缺池找最佳與批次 AI 評估；本機引擎會同步產生 GitHub career-ops 風格 A-G 報告、4.0/5 投遞門檻、Block G 合法性與客製化行動。</div>
+            <div class="career-ops-help">支援貼上 JD / URL 清單、匯入後端職缺快照、全台職缺找最佳與批次 AI 評估；「全台職缺找最佳」只評分台灣職缺（海外來源仍可匯入追蹤器個別評估），本機引擎會同步產生 GitHub career-ops 風格 A-G 報告、4.0/5 投遞門檻、Block G 合法性與客製化行動。</div>
             <div class="career-ops-actions">
               <button id="careerOpsImportBtn" class="career-link-btn" type="button">匯入到追蹤器</button>
               <button id="careerOpsImportSnapshotBtn" class="career-link-btn" type="button">匯入後端職缺快照</button>
               <button id="careerOpsSyncSnapshotBtn" class="career-link-btn" type="button">同步今日快照</button>
               <button id="careerOpsImportSingaporeBtn" class="career-link-btn" type="button">匯入新加坡職缺快照</button>
               <button id="careerOpsRunLocalEngineBtn" class="career-link-btn" type="button">本機分析引擎</button>
-              <button id="careerOpsRunFullPoolBtn" class="career-link-btn" type="button">全職缺找最佳</button>
+              <button id="careerOpsRunFullPoolBtn" class="career-link-btn" type="button" title="從全職缺池中，只針對台灣職缺用目前履歷找出最適合的職缺">全台職缺找最佳</button>
               <button id="careerOpsRunBatchBtn" class="career-link-btn" type="button">AI 批次評估</button>
               <button id="careerOpsExportCsvBtn" class="career-link-btn" type="button">匯出追蹤 CSV</button>
             </div>
@@ -9207,6 +9207,8 @@
         "匯入新加坡職缺快照": "Import Singapore Job Snapshot",
         "新加坡入口：MyCareersFuture 公開快照可直接匯入；Indeed SG、JobStreet SG、NodeFlair 保留為瀏覽器查詢入口。": "Singapore sources: import the MyCareersFuture public snapshot directly; Indeed SG, JobStreet SG, and NodeFlair stay available as browser search links.",
         "本機分析引擎": "Local Analysis Engine",
+        "全台職缺找最佳": "Find Best (Taiwan)",
+        "支援貼上 JD / URL 清單、匯入後端職缺快照、全台職缺找最佳與批次 AI 評估；「全台職缺找最佳」只評分台灣職缺（海外來源仍可匯入追蹤器個別評估），本機引擎會同步產生 GitHub career-ops 風格 A-G 報告、4.0/5 投遞門檻、Block G 合法性與客製化行動。": "Supports pasted JDs / URL lists, backend job snapshots, Find Best (Taiwan), and batch AI evaluation. \"Find Best (Taiwan)\" only scores Taiwan jobs (overseas sources can still be imported to the tracker and evaluated individually); the local engine also generates GitHub career-ops style A-G reports, a 4.0/5 apply threshold, Block G legitimacy checks, and tailored actions.",
         "AI 批次評估": "AI Batch Evaluation",
         "本機重評": "Re-score Locally",
         "批次評估未評估職缺": "Batch Evaluate Unscored Jobs",
@@ -19983,6 +19985,13 @@ Schema:
 	          }
 	        }
 
+	        // 全職缺自動分析（全職缺找最佳）鎖定台灣就業市場，海外求職來源仍保留於匯入與瀏覽入口。
+	        const CAREER_OPS_ANALYSIS_COUNTRY = "TW";
+
+	        function careerOpsIsAnalysisCountryJob(job = {}) {
+	          return careerOpsCountryKey(job) === CAREER_OPS_ANALYSIS_COUNTRY;
+	        }
+
 	        function careerOpsFullPoolEligibleJobs(snapshot) {
 	          const snapshotJobs = Array.isArray(snapshot?.jobs) ? snapshot.jobs : [];
 	          return snapshotJobs
@@ -19991,7 +20000,11 @@ Schema:
 	              normalized.jobKey = normalized.jobKey || careerOpsJobKey(normalized);
 	              return normalized;
 	            })
-	            .filter(job => !job.isExpired && (job.description || "").replace(job.url || "", "").trim().length >= 80);
+	            .filter(job =>
+	              careerOpsIsAnalysisCountryJob(job) &&
+	              !job.isExpired &&
+	              (job.description || "").replace(job.url || "", "").trim().length >= 80
+	            );
 	        }
 
 	        function careerOpsFullPoolRankScore(result, job) {
@@ -20039,16 +20052,19 @@ Schema:
 	            showError("請先至「CV 履歷」頁填寫或匯入一筆履歷，再掃完整職缺池。");
 	            return;
 	          }
-	          showLoading("正在載入完整職缺池，準備用這份履歷尋找最佳職缺…");
+	          showLoading("正在載入完整職缺池，準備用這份履歷在台灣職缺中尋找最佳職缺…");
 	          const snapshot = await loadCareerOpsFullPoolSnapshot({
 	            onProgress: ({ loadedJobs, totalJobs, shardIndex, shardCount }) => {
 	              const totalText = totalJobs ? ` / ${Number(totalJobs).toLocaleString()}` : "";
 	              showLoading(`正在載入遠端職缺分片 ${shardIndex.toLocaleString()} / ${shardCount.toLocaleString()}，已載入 ${loadedJobs.toLocaleString()}${totalText} 筆…`);
 	            }
 	          });
+	          const totalPool = Array.isArray(snapshot?.jobs) ? snapshot.jobs.length : 0;
 	          const eligible = careerOpsFullPoolEligibleJobs(snapshot);
 	          if (!eligible.length) {
-	            showError("目前沒有可評分的後端職缺快照。請先確認 Supabase Storage manifest 已產生，或執行 Career Ops 更新流程產生 data/app/career-ops-jobs.json / .js。");
+	            showError(totalPool
+	              ? `職缺池共 ${totalPool.toLocaleString()} 筆，但沒有符合條件的台灣職缺可評分（分析已限縮台灣）。海外職缺仍可從匯入入口加入追蹤器後個別評估。`
+	              : "目前沒有可評分的後端職缺快照。請先確認 Supabase Storage manifest 已產生，或執行 Career Ops 更新流程產生 data/app/career-ops-jobs.json / .js。");
 	            return;
 	          }
 	          const profile = careerOpsLocalProfile();
@@ -20074,7 +20090,7 @@ Schema:
 	              careerOpsTrimFullPoolCandidates(ranked, topLimit);
 	            }
 	            if (i && i % 2000 === 0) {
-	              showLoading(`正在掃描完整職缺池 ${i.toLocaleString()} / ${eligible.length.toLocaleString()}，目前最高分 ${chunkBestScore}…`);
+	              showLoading(`正在掃描台灣職缺 ${i.toLocaleString()} / ${eligible.length.toLocaleString()}，目前最高分 ${chunkBestScore}…`);
 	              chunkBestScore = 0;
 	              await new Promise(resolve => setTimeout(resolve, 0));
 	            }
@@ -20091,8 +20107,9 @@ Schema:
 	          const elapsedSeconds = Math.round((Date.now() - startedAt) / 100) / 10;
 	          const best = topJobs[0];
 	          const sourceLabel = snapshot.snapshotStorageMode === "sharded" ? "遠端分片快照" : "本機快照";
+	          const poolScopeText = totalPool ? `（已從 ${totalPool.toLocaleString()} 筆全職缺池篩出台灣職缺）` : "";
 	          renderCareerOpsDashboard(
-	            `全職缺池掃描完成：已從${sourceLabel}用目前履歷評分 ${eligible.length.toLocaleString()} 筆職缺，耗時 ${elapsedSeconds} 秒；已把 Top ${mergeResult.merged} 放入 tracker。最佳職缺：${best?.company || ""} / ${best?.title || ""}（${best?.score || "—"}/100）。`
+	            `台灣職缺掃描完成：已用目前履歷從${sourceLabel}評分 ${eligible.length.toLocaleString()} 筆台灣職缺${poolScopeText}，耗時 ${elapsedSeconds} 秒；已把 Top ${mergeResult.merged} 放入 tracker。最佳職缺：${best?.company || ""} / ${best?.title || ""}（${best?.score || "—"}/100）。`
 	          );
 	        }
 
