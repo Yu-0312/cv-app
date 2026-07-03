@@ -1,6 +1,6 @@
 # Career Ops Application Kit
 
-Generated: 2026-07-02T00:18:54.681Z
+Generated: 2026-07-03T00:02:17.275Z
 Jobs: 12
 
 ## Pipeline
@@ -65,71 +65,6 @@ Alex Chen
 ### Interview Prep
 - Prepare a 60-second story for why VANGUARD SOFTWARE PTE. LTD. and why Expert Frontend Engineer (React.JS & React Native).
 - Prepare evidence for: JavaScript, TypeScript, React, Next.js, CSS, Accessibility.
-- Prepare one STAR story about execution under ambiguity.
-- Prepare one STAR story about collaboration and tradeoff decisions.
-- Prepare questions about team priorities, success metrics, and hiring timeline.
-
-### Negotiation Prep
-- Wait for a clear offer before anchoring compensation.
-- Ask for total compensation breakdown, work mode, title, level, review cycle, and start date.
-- Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.
-- Use competing priorities and role fit, not personal need, as the negotiation frame.
-
-## BIFROST PTE. LTD. - Frontend Engineer
-
-- Priority: P0
-- Score: 95/A
-- Subject: Frontend Engineer application - BIFROST PTE. LTD.
-
-- Block G: High Confidence
-- Rating: 4.8/5.0
-
-### ATS Keyword Injection
-- Archetype: Frontend Engineer
-- Coverage: 100%
-- JD Keywords: JavaScript, React, engineer, product, data, restful, graphql, node.js
-- 在 Professional Summary 中自然帶入：JavaScript、React、engineer、product、data
-- 使用職位語言：「Frontend Engineer」方向的動詞和術語
-- 【你已有但此 JD 未要求】可視情況選擇性提及：vue、angular、python、java、go
-- Missing (do NOT fabricate): vue, angular, python, java, go, mysql, aws, gcp
-
-### Apply Checklist
-- Open the source URL and confirm the role is still active.
-- Generate or refresh the tailored ATS PDF from this job.
-- Mirror these JD keywords honestly in your CV: JavaScript, React, engineer, product, data, restful, graphql, node.js
-- Do not overclaim missing areas: vue, angular, python, java, go, mysql
-- Log status, recruiter/contact, and next follow-up date in the tracker.
-
-### Outreach Email
-```text
-Hi BIFROST PTE. LTD. team,
-
-I am Alex Chen, and I am interested in the Frontend Engineer role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.
-
-The role stood out because it maps closely to my experience with JavaScript, React, engineer, product, data.
-
-I would appreciate the chance to share how my experience can support the team. Thank you for your time.
-
-Best,
-Alex Chen
-```
-
-### Follow-up
-Timing: 3-5 business days after applying or the last recruiter interaction.
-```text
-Hi BIFROST PTE. LTD. team,
-
-I wanted to follow up on my application for the Frontend Engineer role. I remain interested and would be glad to provide any additional context about my background.
-
-Thank you again for your time.
-
-Best,
-Alex Chen
-```
-
-### Interview Prep
-- Prepare a 60-second story for why BIFROST PTE. LTD. and why Frontend Engineer.
-- Prepare evidence for: JavaScript, React, engineer, product, data, restful.
 - Prepare one STAR story about execution under ambiguity.
 - Prepare one STAR story about collaboration and tradeoff decisions.
 - Prepare questions about team priorities, success metrics, and hiring timeline.
@@ -781,6 +716,71 @@ Alex Chen
 ### Interview Prep
 - Prepare a 60-second story for why Airbnb and why Senior/ Manager, Machine Learning, Customer Support Engineering.
 - Prepare evidence for: Analytics, API, engineer, product, data.
+- Prepare one STAR story about execution under ambiguity.
+- Prepare one STAR story about collaboration and tradeoff decisions.
+- Prepare questions about team priorities, success metrics, and hiring timeline.
+
+### Negotiation Prep
+- Wait for a clear offer before anchoring compensation.
+- Ask for total compensation breakdown, work mode, title, level, review cycle, and start date.
+- Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.
+- Use competing priorities and role fit, not personal need, as the negotiation frame.
+
+## Deloitte - Google AI Lead Architect
+
+- Priority: P0
+- Score: 95/A
+- Subject: Google AI Lead Architect application - Deloitte
+
+- Block G: High Confidence
+- Rating: 4.8/5.0
+
+### ATS Keyword Injection
+- Archetype: AI Platform / LLMOps
+- Coverage: 100%
+- JD Keywords: Analytics, API, product, data
+- 在 Professional Summary 中自然帶入：Analytics、API、product、data
+- 使用職位語言：「AI Platform / LLMOps」方向的動詞和術語
+- 【你已有但此 JD 未要求】可視情況選擇性提及：sql、aws、gcp、azure、docker
+- Missing (do NOT fabricate): sql, aws, gcp, azure, docker, kubernetes, terraform, llm
+
+### Apply Checklist
+- Open the source URL and confirm the role is still active.
+- Generate or refresh the tailored ATS PDF from this job.
+- Mirror these JD keywords honestly in your CV: Analytics, API, product, data
+- Do not overclaim missing areas: sql, aws, gcp, azure, docker, kubernetes
+- Log status, recruiter/contact, and next follow-up date in the tracker.
+
+### Outreach Email
+```text
+Hi Deloitte team,
+
+I am Alex Chen, and I am interested in the Google AI Lead Architect role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.
+
+The role stood out because it maps closely to my experience with Analytics, API, product, data.
+
+I would appreciate the chance to share how my experience can support the team. Thank you for your time.
+
+Best,
+Alex Chen
+```
+
+### Follow-up
+Timing: 3-5 business days after applying or the last recruiter interaction.
+```text
+Hi Deloitte team,
+
+I wanted to follow up on my application for the Google AI Lead Architect role. I remain interested and would be glad to provide any additional context about my background.
+
+Thank you again for your time.
+
+Best,
+Alex Chen
+```
+
+### Interview Prep
+- Prepare a 60-second story for why Deloitte and why Google AI Lead Architect.
+- Prepare evidence for: Analytics, API, product, data.
 - Prepare one STAR story about execution under ambiguity.
 - Prepare one STAR story about collaboration and tradeoff decisions.
 - Prepare questions about team priorities, success metrics, and hiring timeline.

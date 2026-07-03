@@ -1,6 +1,6 @@
 window.CV_CAREER_OPS_DEEP_RESEARCH = {
   "source": "career-ops-deep-research",
-  "generatedAt": "2026-07-02T00:19:00.788Z",
+  "generatedAt": "2026-07-03T00:02:24.319Z",
   "searchProvider": "none",
   "queries": [
     "VANGUARD SOFTWARE PTE. LTD. Expert Frontend Engineer (React.JS & React Native) careers team product funding interview",
@@ -14,7 +14,9 @@ window.CV_CAREER_OPS_DEEP_RESEARCH = {
     "The Coca-Cola Company compensation culture engineering interview",
     "The Coca-Cola Company Senior Software Engineer , Service Provider careers team product funding interview",
     "Disney Lead Software Engineer careers team product funding interview",
-    "Disney compensation culture engineering interview"
+    "Disney compensation culture engineering interview",
+    "Bank of America Principal Engineer - GBS IND careers team product funding interview",
+    "Bank of America compensation culture engineering interview"
   ],
   "evidence": [
     {
@@ -26,12 +28,6 @@ window.CV_CAREER_OPS_DEEP_RESEARCH = {
     {
       "title": "",
       "url": "https://www.mycareersfuture.gov.sg/job/fe789bec11c6a9d195bf371bcbcec73d",
-      "snippet": "MyCareersFuture Singapore",
-      "provider": "source-page"
-    },
-    {
-      "title": "",
-      "url": "https://www.mycareersfuture.gov.sg/job/dc06e8c5f714c11bfb2e053ac7ee2276",
       "snippet": "MyCareersFuture Singapore",
       "provider": "source-page"
     },
@@ -50,13 +46,19 @@ window.CV_CAREER_OPS_DEEP_RESEARCH = {
     {
       "title": "",
       "url": "https://www.themuse.com/jobs/thecocacolacompany/sr-software-engineer-service-supply-chain-74ffa9",
-      "snippet": "Sr. Software Engineer , Service Supply Chain at The Coca-Cola Company | The Muse | The Muse Skip to main content The Muse Logo A logo with &amp;quat;the muse&amp;quat; in dark blue text. Newsletter Jobs Account Management Accounting and Finance Administration and Office Advertising and Marketing Arts Business Operations Computer and IT Customer Service Data and Analytics Design and UX Education Healthcare Human Resources and Recruitment Management Media, PR, and Communications Product Management Project Management Sales Software Engineering Writing and Editing View All Jobs Companies Advice Coaching Newsletter Employers Sign In Saved Companies Account Settings Sign Out The Coca-Cola Company Sr. Software Engineer , Service Supply Chain 2 days ago • Atlanta, GA Apply on company site About Us Iconic brands. Innovative technologies. Our careers span across functions and are globally connected to give you an unmatched career experience. Size: 10000+ employees Industry: Food &amp; Beverage, Manufacturing, Consumer Goods &amp; Services View Company Profile Digital products play a central role in how we create value for customers, support the teams who serve them, and shape the consumer ex",
+      "snippet": "Sr. Software Engineer , Service Supply Chain at The Coca-Cola Company | The Muse | The Muse Skip to main content The Muse Logo A logo with &amp;quat;the muse&amp;quat; in dark blue text. Newsletter Jobs Account Management Accounting and Finance Administration and Office Advertising and Marketing Arts Business Operations Computer and IT Customer Service Data and Analytics Design and UX Education Healthcare Human Resources and Recruitment Management Media, PR, and Communications Product Management Project Management Sales Software Engineering Writing and Editing View All Jobs Companies Advice Coaching Newsletter Employers Sign In Saved Companies Account Settings Sign Out The Coca-Cola Company Sr. Software Engineer , Service Supply Chain 3 days ago • Atlanta, GA Apply on company site About Us Iconic brands. Innovative technologies. Our careers span across functions and are globally connected to give you an unmatched career experience. Size: 10000+ employees Industry: Food &amp; Beverage, Manufacturing, Consumer Goods &amp; Services View Company Profile Digital products play a central role in how we create value for customers, support the teams who serve them, and shape the consumer ex",
       "provider": "source-page"
     },
     {
       "title": "",
       "url": "https://www.themuse.com/jobs/thecocacolacompany/senior-software-engineer-service-provider-f1a5ba",
-      "snippet": "Senior Software Engineer , Service Provider at The Coca-Cola Company | The Muse | The Muse Skip to main content The Muse Logo A logo with &amp;quat;the muse&amp;quat; in dark blue text. Newsletter Jobs Account Management Accounting and Finance Administration and Office Advertising and Marketing Arts Business Operations Computer and IT Customer Service Data and Analytics Design and UX Education Healthcare Human Resources and Recruitment Management Media, PR, and Communications Product Management Project Management Sales Software Engineering Writing and Editing View All Jobs Companies Advice Coaching Newsletter Employers Sign In Saved Companies Account Settings Sign Out The Coca-Cola Company Senior Software Engineer , Service Provider 2 days ago • Atlanta, GA Apply on company site About Us Iconic brands. Innovative technologies. Our careers span across functions and are globally connected to give you an unmatched career experience. Size: 10000+ employees Industry: Food &amp; Beverage, Manufacturing, Consumer Goods &amp; Services View Company Profile Digital products play a central role in how we create value for customers, support the teams who serve them, and shape the consumer expe",
+      "snippet": "Senior Software Engineer , Service Provider at The Coca-Cola Company | The Muse | The Muse Skip to main content The Muse Logo A logo with &amp;quat;the muse&amp;quat; in dark blue text. Newsletter Jobs Account Management Accounting and Finance Administration and Office Advertising and Marketing Arts Business Operations Computer and IT Customer Service Data and Analytics Design and UX Education Healthcare Human Resources and Recruitment Management Media, PR, and Communications Product Management Project Management Sales Software Engineering Writing and Editing View All Jobs Companies Advice Coaching Newsletter Employers Sign In Saved Companies Account Settings Sign Out The Coca-Cola Company Senior Software Engineer , Service Provider 3 days ago • Atlanta, GA Apply on company site About Us Iconic brands. Innovative technologies. Our careers span across functions and are globally connected to give you an unmatched career experience. Size: 10000+ employees Industry: Food &amp; Beverage, Manufacturing, Consumer Goods &amp; Services View Company Profile Digital products play a central role in how we create value for customers, support the teams who serve them, and shape the consumer expe",
+      "provider": "source-page"
+    },
+    {
+      "title": "",
+      "url": "https://www.themuse.com/jobs/bankofamerica/principal-engineer-gbs-ind-783d05",
+      "snippet": "Principal Engineer - GBS IND at Bank of America | The Muse | The Muse Skip to main content The Muse Logo A logo with &amp;quat;the muse&amp;quat; in dark blue text. Newsletter Jobs Account Management Accounting and Finance Administration and Office Advertising and Marketing Arts Business Operations Computer and IT Customer Service Data and Analytics Design and UX Education Healthcare Human Resources and Recruitment Management Media, PR, and Communications Product Management Project Management Sales Software Engineering Writing and Editing View All Jobs Companies Advice Coaching Newsletter Employers Sign In Saved Companies Account Settings Sign Out Bank of America Principal Engineer - GBS IND 2 months ago • Gurgaon, India (+3 more) Chennai, India Mumbai, India Serilingampalle, India Apply on company site About Us Bank of America provides people, companies, and institutional investors with industry-leading financial products and services. Size: 10000+ employees Industry: Financial Services View Company Profile Job Description: About Us At Bank of America, we are guided by a common purpose to help make financial lives better through the power of every connection. We do this by driving",
       "provider": "source-page"
     }
   ],
@@ -82,12 +84,6 @@ window.CV_CAREER_OPS_DEEP_RESEARCH = {
         },
         {
           "title": "",
-          "url": "https://www.mycareersfuture.gov.sg/job/dc06e8c5f714c11bfb2e053ac7ee2276",
-          "snippet": "MyCareersFuture Singapore",
-          "provider": "source-page"
-        },
-        {
-          "title": "",
           "url": "https://www.mycareersfuture.gov.sg/job/eebd44b1382d7840b8c092b1fc312524",
           "snippet": "MyCareersFuture Singapore",
           "provider": "source-page"
@@ -97,9 +93,17 @@ window.CV_CAREER_OPS_DEEP_RESEARCH = {
           "url": "https://www.mycareersfuture.gov.sg/job/0da14018a05634ffde57785dcd4e7783",
           "snippet": "MyCareersFuture Singapore",
           "provider": "source-page"
+        },
+        {
+          "title": "",
+          "url": "https://www.themuse.com/jobs/thecocacolacompany/sr-software-engineer-service-supply-chain-74ffa9",
+          "snippet": "Sr. Software Engineer , Service Supply Chain at The Coca-Cola Company | The Muse | The Muse Skip to main content The Muse Logo A logo with &amp;quat;the muse&amp;quat; in dark blue text. Newsletter Jobs Account Management Accounting and Finance Administration and Office Advertising and Marketing Arts Business Operations Computer and IT Customer Service Data and Analytics Design and UX Education Healthcare Human Resources and Recruitment Management Media, PR, and Communications Product Management Project Management Sales Software Engineering Writing and Editing View All Jobs Companies Advice Coaching Newsletter Employers Sign In Saved Companies Account Settings Sign Out The Coca-Cola Company Sr. Software Engineer , Service Supply Chain 3 days ago • Atlanta, GA Apply on company site About Us Iconic brands. Innovative technologies. Our careers span across functions and are globally connected to give you an unmatched career experience. Size: 10000+ employees Industry: Food &amp; Beverage, Manufacturing, Consumer Goods &amp; Services View Company Profile Digital products play a central role in how we create value for customers, support the teams who serve them, and shape the consumer ex",
+          "provider": "source-page"
         }
       ],
-      "signals": [],
+      "signals": [
+        "AI / data / platform signal"
+      ],
       "researchQuestions": [
         "What business unit owns the Expert Frontend Engineer (React.JS & React Native) role?",
         "What measurable outcomes would this team expect in the first 90 days?",
@@ -133,12 +137,6 @@ window.CV_CAREER_OPS_DEEP_RESEARCH = {
         },
         {
           "title": "",
-          "url": "https://www.mycareersfuture.gov.sg/job/dc06e8c5f714c11bfb2e053ac7ee2276",
-          "snippet": "MyCareersFuture Singapore",
-          "provider": "source-page"
-        },
-        {
-          "title": "",
           "url": "https://www.mycareersfuture.gov.sg/job/eebd44b1382d7840b8c092b1fc312524",
           "snippet": "MyCareersFuture Singapore",
           "provider": "source-page"
@@ -148,60 +146,17 @@ window.CV_CAREER_OPS_DEEP_RESEARCH = {
           "url": "https://www.mycareersfuture.gov.sg/job/0da14018a05634ffde57785dcd4e7783",
           "snippet": "MyCareersFuture Singapore",
           "provider": "source-page"
-        }
-      ],
-      "signals": [],
-      "researchQuestions": [
-        "What business unit owns the Frontend Engineer role?",
-        "What measurable outcomes would this team expect in the first 90 days?",
-        "What recent company/product signals change the risk or upside?",
-        "Which CV proof points should be highlighted for this company?"
-      ],
-      "interviewAngles": [
-        "Ask about team success metrics and why the role is open.",
-        "Ask how the company evaluates impact across the first two quarters.",
-        "Prepare one story that maps directly to the highest-scoring ATS keywords."
-      ]
-    },
-    {
-      "jobKey": "url:https://www.mycareersfuture.gov.sg/job/dc06e8c5f714c11bfb2e053ac7ee2276",
-      "company": "BIFROST PTE. LTD.",
-      "title": "Frontend Engineer",
-      "score": 95,
-      "recommendation": "值得投遞",
-      "evidence": [
-        {
-          "title": "",
-          "url": "https://www.mycareersfuture.gov.sg/job/07eafbe6994e2090a0c2a6a6a6111e62",
-          "snippet": "MyCareersFuture Singapore",
-          "provider": "source-page"
         },
         {
           "title": "",
-          "url": "https://www.mycareersfuture.gov.sg/job/fe789bec11c6a9d195bf371bcbcec73d",
-          "snippet": "MyCareersFuture Singapore",
-          "provider": "source-page"
-        },
-        {
-          "title": "",
-          "url": "https://www.mycareersfuture.gov.sg/job/dc06e8c5f714c11bfb2e053ac7ee2276",
-          "snippet": "MyCareersFuture Singapore",
-          "provider": "source-page"
-        },
-        {
-          "title": "",
-          "url": "https://www.mycareersfuture.gov.sg/job/eebd44b1382d7840b8c092b1fc312524",
-          "snippet": "MyCareersFuture Singapore",
-          "provider": "source-page"
-        },
-        {
-          "title": "",
-          "url": "https://www.mycareersfuture.gov.sg/job/0da14018a05634ffde57785dcd4e7783",
-          "snippet": "MyCareersFuture Singapore",
+          "url": "https://www.themuse.com/jobs/thecocacolacompany/sr-software-engineer-service-supply-chain-74ffa9",
+          "snippet": "Sr. Software Engineer , Service Supply Chain at The Coca-Cola Company | The Muse | The Muse Skip to main content The Muse Logo A logo with &amp;quat;the muse&amp;quat; in dark blue text. Newsletter Jobs Account Management Accounting and Finance Administration and Office Advertising and Marketing Arts Business Operations Computer and IT Customer Service Data and Analytics Design and UX Education Healthcare Human Resources and Recruitment Management Media, PR, and Communications Product Management Project Management Sales Software Engineering Writing and Editing View All Jobs Companies Advice Coaching Newsletter Employers Sign In Saved Companies Account Settings Sign Out The Coca-Cola Company Sr. Software Engineer , Service Supply Chain 3 days ago • Atlanta, GA Apply on company site About Us Iconic brands. Innovative technologies. Our careers span across functions and are globally connected to give you an unmatched career experience. Size: 10000+ employees Industry: Food &amp; Beverage, Manufacturing, Consumer Goods &amp; Services View Company Profile Digital products play a central role in how we create value for customers, support the teams who serve them, and shape the consumer ex",
           "provider": "source-page"
         }
       ],
-      "signals": [],
+      "signals": [
+        "AI / data / platform signal"
+      ],
       "researchQuestions": [
         "What business unit owns the Frontend Engineer role?",
         "What measurable outcomes would this team expect in the first 90 days?",
@@ -235,12 +190,6 @@ window.CV_CAREER_OPS_DEEP_RESEARCH = {
         },
         {
           "title": "",
-          "url": "https://www.mycareersfuture.gov.sg/job/dc06e8c5f714c11bfb2e053ac7ee2276",
-          "snippet": "MyCareersFuture Singapore",
-          "provider": "source-page"
-        },
-        {
-          "title": "",
           "url": "https://www.mycareersfuture.gov.sg/job/eebd44b1382d7840b8c092b1fc312524",
           "snippet": "MyCareersFuture Singapore",
           "provider": "source-page"
@@ -250,9 +199,17 @@ window.CV_CAREER_OPS_DEEP_RESEARCH = {
           "url": "https://www.mycareersfuture.gov.sg/job/0da14018a05634ffde57785dcd4e7783",
           "snippet": "MyCareersFuture Singapore",
           "provider": "source-page"
+        },
+        {
+          "title": "",
+          "url": "https://www.themuse.com/jobs/thecocacolacompany/sr-software-engineer-service-supply-chain-74ffa9",
+          "snippet": "Sr. Software Engineer , Service Supply Chain at The Coca-Cola Company | The Muse | The Muse Skip to main content The Muse Logo A logo with &amp;quat;the muse&amp;quat; in dark blue text. Newsletter Jobs Account Management Accounting and Finance Administration and Office Advertising and Marketing Arts Business Operations Computer and IT Customer Service Data and Analytics Design and UX Education Healthcare Human Resources and Recruitment Management Media, PR, and Communications Product Management Project Management Sales Software Engineering Writing and Editing View All Jobs Companies Advice Coaching Newsletter Employers Sign In Saved Companies Account Settings Sign Out The Coca-Cola Company Sr. Software Engineer , Service Supply Chain 3 days ago • Atlanta, GA Apply on company site About Us Iconic brands. Innovative technologies. Our careers span across functions and are globally connected to give you an unmatched career experience. Size: 10000+ employees Industry: Food &amp; Beverage, Manufacturing, Consumer Goods &amp; Services View Company Profile Digital products play a central role in how we create value for customers, support the teams who serve them, and shape the consumer ex",
+          "provider": "source-page"
         }
       ],
-      "signals": [],
+      "signals": [
+        "AI / data / platform signal"
+      ],
       "researchQuestions": [
         "What business unit owns the Frontend Software Engineer (Payment), TikTok Live - Singapore role?",
         "What measurable outcomes would this team expect in the first 90 days?",
@@ -286,12 +243,6 @@ window.CV_CAREER_OPS_DEEP_RESEARCH = {
         },
         {
           "title": "",
-          "url": "https://www.mycareersfuture.gov.sg/job/dc06e8c5f714c11bfb2e053ac7ee2276",
-          "snippet": "MyCareersFuture Singapore",
-          "provider": "source-page"
-        },
-        {
-          "title": "",
           "url": "https://www.mycareersfuture.gov.sg/job/eebd44b1382d7840b8c092b1fc312524",
           "snippet": "MyCareersFuture Singapore",
           "provider": "source-page"
@@ -301,9 +252,17 @@ window.CV_CAREER_OPS_DEEP_RESEARCH = {
           "url": "https://www.mycareersfuture.gov.sg/job/0da14018a05634ffde57785dcd4e7783",
           "snippet": "MyCareersFuture Singapore",
           "provider": "source-page"
+        },
+        {
+          "title": "",
+          "url": "https://www.themuse.com/jobs/thecocacolacompany/sr-software-engineer-service-supply-chain-74ffa9",
+          "snippet": "Sr. Software Engineer , Service Supply Chain at The Coca-Cola Company | The Muse | The Muse Skip to main content The Muse Logo A logo with &amp;quat;the muse&amp;quat; in dark blue text. Newsletter Jobs Account Management Accounting and Finance Administration and Office Advertising and Marketing Arts Business Operations Computer and IT Customer Service Data and Analytics Design and UX Education Healthcare Human Resources and Recruitment Management Media, PR, and Communications Product Management Project Management Sales Software Engineering Writing and Editing View All Jobs Companies Advice Coaching Newsletter Employers Sign In Saved Companies Account Settings Sign Out The Coca-Cola Company Sr. Software Engineer , Service Supply Chain 3 days ago • Atlanta, GA Apply on company site About Us Iconic brands. Innovative technologies. Our careers span across functions and are globally connected to give you an unmatched career experience. Size: 10000+ employees Industry: Food &amp; Beverage, Manufacturing, Consumer Goods &amp; Services View Company Profile Digital products play a central role in how we create value for customers, support the teams who serve them, and shape the consumer ex",
+          "provider": "source-page"
         }
       ],
-      "signals": [],
+      "signals": [
+        "AI / data / platform signal"
+      ],
       "researchQuestions": [
         "What business unit owns the Frontend Software Engineer (transaction), TikTok Live - Singapore role?",
         "What measurable outcomes would this team expect in the first 90 days?",
@@ -326,13 +285,19 @@ window.CV_CAREER_OPS_DEEP_RESEARCH = {
         {
           "title": "",
           "url": "https://www.themuse.com/jobs/thecocacolacompany/sr-software-engineer-service-supply-chain-74ffa9",
-          "snippet": "Sr. Software Engineer , Service Supply Chain at The Coca-Cola Company | The Muse | The Muse Skip to main content The Muse Logo A logo with &amp;quat;the muse&amp;quat; in dark blue text. Newsletter Jobs Account Management Accounting and Finance Administration and Office Advertising and Marketing Arts Business Operations Computer and IT Customer Service Data and Analytics Design and UX Education Healthcare Human Resources and Recruitment Management Media, PR, and Communications Product Management Project Management Sales Software Engineering Writing and Editing View All Jobs Companies Advice Coaching Newsletter Employers Sign In Saved Companies Account Settings Sign Out The Coca-Cola Company Sr. Software Engineer , Service Supply Chain 2 days ago • Atlanta, GA Apply on company site About Us Iconic brands. Innovative technologies. Our careers span across functions and are globally connected to give you an unmatched career experience. Size: 10000+ employees Industry: Food &amp; Beverage, Manufacturing, Consumer Goods &amp; Services View Company Profile Digital products play a central role in how we create value for customers, support the teams who serve them, and shape the consumer ex",
+          "snippet": "Sr. Software Engineer , Service Supply Chain at The Coca-Cola Company | The Muse | The Muse Skip to main content The Muse Logo A logo with &amp;quat;the muse&amp;quat; in dark blue text. Newsletter Jobs Account Management Accounting and Finance Administration and Office Advertising and Marketing Arts Business Operations Computer and IT Customer Service Data and Analytics Design and UX Education Healthcare Human Resources and Recruitment Management Media, PR, and Communications Product Management Project Management Sales Software Engineering Writing and Editing View All Jobs Companies Advice Coaching Newsletter Employers Sign In Saved Companies Account Settings Sign Out The Coca-Cola Company Sr. Software Engineer , Service Supply Chain 3 days ago • Atlanta, GA Apply on company site About Us Iconic brands. Innovative technologies. Our careers span across functions and are globally connected to give you an unmatched career experience. Size: 10000+ employees Industry: Food &amp; Beverage, Manufacturing, Consumer Goods &amp; Services View Company Profile Digital products play a central role in how we create value for customers, support the teams who serve them, and shape the consumer ex",
           "provider": "source-page"
         },
         {
           "title": "",
           "url": "https://www.themuse.com/jobs/thecocacolacompany/senior-software-engineer-service-provider-f1a5ba",
-          "snippet": "Senior Software Engineer , Service Provider at The Coca-Cola Company | The Muse | The Muse Skip to main content The Muse Logo A logo with &amp;quat;the muse&amp;quat; in dark blue text. Newsletter Jobs Account Management Accounting and Finance Administration and Office Advertising and Marketing Arts Business Operations Computer and IT Customer Service Data and Analytics Design and UX Education Healthcare Human Resources and Recruitment Management Media, PR, and Communications Product Management Project Management Sales Software Engineering Writing and Editing View All Jobs Companies Advice Coaching Newsletter Employers Sign In Saved Companies Account Settings Sign Out The Coca-Cola Company Senior Software Engineer , Service Provider 2 days ago • Atlanta, GA Apply on company site About Us Iconic brands. Innovative technologies. Our careers span across functions and are globally connected to give you an unmatched career experience. Size: 10000+ employees Industry: Food &amp; Beverage, Manufacturing, Consumer Goods &amp; Services View Company Profile Digital products play a central role in how we create value for customers, support the teams who serve them, and shape the consumer expe",
+          "snippet": "Senior Software Engineer , Service Provider at The Coca-Cola Company | The Muse | The Muse Skip to main content The Muse Logo A logo with &amp;quat;the muse&amp;quat; in dark blue text. Newsletter Jobs Account Management Accounting and Finance Administration and Office Advertising and Marketing Arts Business Operations Computer and IT Customer Service Data and Analytics Design and UX Education Healthcare Human Resources and Recruitment Management Media, PR, and Communications Product Management Project Management Sales Software Engineering Writing and Editing View All Jobs Companies Advice Coaching Newsletter Employers Sign In Saved Companies Account Settings Sign Out The Coca-Cola Company Senior Software Engineer , Service Provider 3 days ago • Atlanta, GA Apply on company site About Us Iconic brands. Innovative technologies. Our careers span across functions and are globally connected to give you an unmatched career experience. Size: 10000+ employees Industry: Food &amp; Beverage, Manufacturing, Consumer Goods &amp; Services View Company Profile Digital products play a central role in how we create value for customers, support the teams who serve them, and shape the consumer expe",
+          "provider": "source-page"
+        },
+        {
+          "title": "",
+          "url": "https://www.themuse.com/jobs/bankofamerica/principal-engineer-gbs-ind-783d05",
+          "snippet": "Principal Engineer - GBS IND at Bank of America | The Muse | The Muse Skip to main content The Muse Logo A logo with &amp;quat;the muse&amp;quat; in dark blue text. Newsletter Jobs Account Management Accounting and Finance Administration and Office Advertising and Marketing Arts Business Operations Computer and IT Customer Service Data and Analytics Design and UX Education Healthcare Human Resources and Recruitment Management Media, PR, and Communications Product Management Project Management Sales Software Engineering Writing and Editing View All Jobs Companies Advice Coaching Newsletter Employers Sign In Saved Companies Account Settings Sign Out Bank of America Principal Engineer - GBS IND 2 months ago • Gurgaon, India (+3 more) Chennai, India Mumbai, India Serilingampalle, India Apply on company site About Us Bank of America provides people, companies, and institutional investors with industry-leading financial products and services. Size: 10000+ employees Industry: Financial Services View Company Profile Job Description: About Us At Bank of America, we are guided by a common purpose to help make financial lives better through the power of every connection. We do this by driving",
           "provider": "source-page"
         }
       ],
@@ -361,13 +326,19 @@ window.CV_CAREER_OPS_DEEP_RESEARCH = {
         {
           "title": "",
           "url": "https://www.themuse.com/jobs/thecocacolacompany/sr-software-engineer-service-supply-chain-74ffa9",
-          "snippet": "Sr. Software Engineer , Service Supply Chain at The Coca-Cola Company | The Muse | The Muse Skip to main content The Muse Logo A logo with &amp;quat;the muse&amp;quat; in dark blue text. Newsletter Jobs Account Management Accounting and Finance Administration and Office Advertising and Marketing Arts Business Operations Computer and IT Customer Service Data and Analytics Design and UX Education Healthcare Human Resources and Recruitment Management Media, PR, and Communications Product Management Project Management Sales Software Engineering Writing and Editing View All Jobs Companies Advice Coaching Newsletter Employers Sign In Saved Companies Account Settings Sign Out The Coca-Cola Company Sr. Software Engineer , Service Supply Chain 2 days ago • Atlanta, GA Apply on company site About Us Iconic brands. Innovative technologies. Our careers span across functions and are globally connected to give you an unmatched career experience. Size: 10000+ employees Industry: Food &amp; Beverage, Manufacturing, Consumer Goods &amp; Services View Company Profile Digital products play a central role in how we create value for customers, support the teams who serve them, and shape the consumer ex",
+          "snippet": "Sr. Software Engineer , Service Supply Chain at The Coca-Cola Company | The Muse | The Muse Skip to main content The Muse Logo A logo with &amp;quat;the muse&amp;quat; in dark blue text. Newsletter Jobs Account Management Accounting and Finance Administration and Office Advertising and Marketing Arts Business Operations Computer and IT Customer Service Data and Analytics Design and UX Education Healthcare Human Resources and Recruitment Management Media, PR, and Communications Product Management Project Management Sales Software Engineering Writing and Editing View All Jobs Companies Advice Coaching Newsletter Employers Sign In Saved Companies Account Settings Sign Out The Coca-Cola Company Sr. Software Engineer , Service Supply Chain 3 days ago • Atlanta, GA Apply on company site About Us Iconic brands. Innovative technologies. Our careers span across functions and are globally connected to give you an unmatched career experience. Size: 10000+ employees Industry: Food &amp; Beverage, Manufacturing, Consumer Goods &amp; Services View Company Profile Digital products play a central role in how we create value for customers, support the teams who serve them, and shape the consumer ex",
           "provider": "source-page"
         },
         {
           "title": "",
           "url": "https://www.themuse.com/jobs/thecocacolacompany/senior-software-engineer-service-provider-f1a5ba",
-          "snippet": "Senior Software Engineer , Service Provider at The Coca-Cola Company | The Muse | The Muse Skip to main content The Muse Logo A logo with &amp;quat;the muse&amp;quat; in dark blue text. Newsletter Jobs Account Management Accounting and Finance Administration and Office Advertising and Marketing Arts Business Operations Computer and IT Customer Service Data and Analytics Design and UX Education Healthcare Human Resources and Recruitment Management Media, PR, and Communications Product Management Project Management Sales Software Engineering Writing and Editing View All Jobs Companies Advice Coaching Newsletter Employers Sign In Saved Companies Account Settings Sign Out The Coca-Cola Company Senior Software Engineer , Service Provider 2 days ago • Atlanta, GA Apply on company site About Us Iconic brands. Innovative technologies. Our careers span across functions and are globally connected to give you an unmatched career experience. Size: 10000+ employees Industry: Food &amp; Beverage, Manufacturing, Consumer Goods &amp; Services View Company Profile Digital products play a central role in how we create value for customers, support the teams who serve them, and shape the consumer expe",
+          "snippet": "Senior Software Engineer , Service Provider at The Coca-Cola Company | The Muse | The Muse Skip to main content The Muse Logo A logo with &amp;quat;the muse&amp;quat; in dark blue text. Newsletter Jobs Account Management Accounting and Finance Administration and Office Advertising and Marketing Arts Business Operations Computer and IT Customer Service Data and Analytics Design and UX Education Healthcare Human Resources and Recruitment Management Media, PR, and Communications Product Management Project Management Sales Software Engineering Writing and Editing View All Jobs Companies Advice Coaching Newsletter Employers Sign In Saved Companies Account Settings Sign Out The Coca-Cola Company Senior Software Engineer , Service Provider 3 days ago • Atlanta, GA Apply on company site About Us Iconic brands. Innovative technologies. Our careers span across functions and are globally connected to give you an unmatched career experience. Size: 10000+ employees Industry: Food &amp; Beverage, Manufacturing, Consumer Goods &amp; Services View Company Profile Digital products play a central role in how we create value for customers, support the teams who serve them, and shape the consumer expe",
+          "provider": "source-page"
+        },
+        {
+          "title": "",
+          "url": "https://www.themuse.com/jobs/bankofamerica/principal-engineer-gbs-ind-783d05",
+          "snippet": "Principal Engineer - GBS IND at Bank of America | The Muse | The Muse Skip to main content The Muse Logo A logo with &amp;quat;the muse&amp;quat; in dark blue text. Newsletter Jobs Account Management Accounting and Finance Administration and Office Advertising and Marketing Arts Business Operations Computer and IT Customer Service Data and Analytics Design and UX Education Healthcare Human Resources and Recruitment Management Media, PR, and Communications Product Management Project Management Sales Software Engineering Writing and Editing View All Jobs Companies Advice Coaching Newsletter Employers Sign In Saved Companies Account Settings Sign Out Bank of America Principal Engineer - GBS IND 2 months ago • Gurgaon, India (+3 more) Chennai, India Mumbai, India Serilingampalle, India Apply on company site About Us Bank of America provides people, companies, and institutional investors with industry-leading financial products and services. Size: 10000+ employees Industry: Financial Services View Company Profile Job Description: About Us At Bank of America, we are guided by a common purpose to help make financial lives better through the power of every connection. We do this by driving",
           "provider": "source-page"
         }
       ],
@@ -395,38 +366,45 @@ window.CV_CAREER_OPS_DEEP_RESEARCH = {
       "evidence": [
         {
           "title": "",
-          "url": "https://www.mycareersfuture.gov.sg/job/07eafbe6994e2090a0c2a6a6a6111e62",
-          "snippet": "MyCareersFuture Singapore",
-          "provider": "source-page"
-        },
-        {
-          "title": "",
-          "url": "https://www.mycareersfuture.gov.sg/job/fe789bec11c6a9d195bf371bcbcec73d",
-          "snippet": "MyCareersFuture Singapore",
-          "provider": "source-page"
-        },
-        {
-          "title": "",
-          "url": "https://www.mycareersfuture.gov.sg/job/dc06e8c5f714c11bfb2e053ac7ee2276",
-          "snippet": "MyCareersFuture Singapore",
-          "provider": "source-page"
-        },
-        {
-          "title": "",
-          "url": "https://www.mycareersfuture.gov.sg/job/eebd44b1382d7840b8c092b1fc312524",
-          "snippet": "MyCareersFuture Singapore",
-          "provider": "source-page"
-        },
-        {
-          "title": "",
-          "url": "https://www.mycareersfuture.gov.sg/job/0da14018a05634ffde57785dcd4e7783",
-          "snippet": "MyCareersFuture Singapore",
+          "url": "https://www.themuse.com/jobs/bankofamerica/principal-engineer-gbs-ind-783d05",
+          "snippet": "Principal Engineer - GBS IND at Bank of America | The Muse | The Muse Skip to main content The Muse Logo A logo with &amp;quat;the muse&amp;quat; in dark blue text. Newsletter Jobs Account Management Accounting and Finance Administration and Office Advertising and Marketing Arts Business Operations Computer and IT Customer Service Data and Analytics Design and UX Education Healthcare Human Resources and Recruitment Management Media, PR, and Communications Product Management Project Management Sales Software Engineering Writing and Editing View All Jobs Companies Advice Coaching Newsletter Employers Sign In Saved Companies Account Settings Sign Out Bank of America Principal Engineer - GBS IND 2 months ago • Gurgaon, India (+3 more) Chennai, India Mumbai, India Serilingampalle, India Apply on company site About Us Bank of America provides people, companies, and institutional investors with industry-leading financial products and services. Size: 10000+ employees Industry: Financial Services View Company Profile Job Description: About Us At Bank of America, we are guided by a common purpose to help make financial lives better through the power of every connection. We do this by driving",
           "provider": "source-page"
         }
       ],
-      "signals": [],
+      "signals": [
+        "AI / data / platform signal"
+      ],
       "researchQuestions": [
         "What business unit owns the Lead Software Engineer role?",
+        "What measurable outcomes would this team expect in the first 90 days?",
+        "What recent company/product signals change the risk or upside?",
+        "Which CV proof points should be highlighted for this company?"
+      ],
+      "interviewAngles": [
+        "Ask about team success metrics and why the role is open.",
+        "Ask how the company evaluates impact across the first two quarters.",
+        "Prepare one story that maps directly to the highest-scoring ATS keywords."
+      ]
+    },
+    {
+      "jobKey": "url:https://www.themuse.com/jobs/bankofamerica/principal-engineer-gbs-ind-783d05",
+      "company": "Bank of America",
+      "title": "Principal Engineer - GBS IND",
+      "score": 95,
+      "recommendation": "值得投遞",
+      "evidence": [
+        {
+          "title": "",
+          "url": "https://www.themuse.com/jobs/bankofamerica/principal-engineer-gbs-ind-783d05",
+          "snippet": "Principal Engineer - GBS IND at Bank of America | The Muse | The Muse Skip to main content The Muse Logo A logo with &amp;quat;the muse&amp;quat; in dark blue text. Newsletter Jobs Account Management Accounting and Finance Administration and Office Advertising and Marketing Arts Business Operations Computer and IT Customer Service Data and Analytics Design and UX Education Healthcare Human Resources and Recruitment Management Media, PR, and Communications Product Management Project Management Sales Software Engineering Writing and Editing View All Jobs Companies Advice Coaching Newsletter Employers Sign In Saved Companies Account Settings Sign Out Bank of America Principal Engineer - GBS IND 2 months ago • Gurgaon, India (+3 more) Chennai, India Mumbai, India Serilingampalle, India Apply on company site About Us Bank of America provides people, companies, and institutional investors with industry-leading financial products and services. Size: 10000+ employees Industry: Financial Services View Company Profile Job Description: About Us At Bank of America, we are guided by a common purpose to help make financial lives better through the power of every connection. We do this by driving",
+          "provider": "source-page"
+        }
+      ],
+      "signals": [
+        "AI / data / platform signal"
+      ],
+      "researchQuestions": [
+        "What business unit owns the Principal Engineer - GBS IND role?",
         "What measurable outcomes would this team expect in the first 90 days?",
         "What recent company/product signals change the risk or upside?",
         "Which CV proof points should be highlighted for this company?"

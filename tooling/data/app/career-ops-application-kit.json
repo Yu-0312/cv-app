@@ -1,6 +1,6 @@
 {
   "source": "career-ops-application-kit",
-  "generatedAt": "2026-07-02T00:18:54.681Z",
+  "generatedAt": "2026-07-03T00:02:17.275Z",
   "profileRole": "Frontend Engineer",
   "playbooks": [
     {
@@ -97,103 +97,6 @@
     },
     {
       "jobKey": "url:https://www.mycareersfuture.gov.sg/job/fe789bec11c6a9d195bf371bcbcec73d",
-      "title": "Frontend Engineer",
-      "company": "BIFROST PTE. LTD.",
-      "score": "95/A",
-      "rating": 4.8,
-      "blockG": {
-        "tier": "High Confidence",
-        "confidence": "medium"
-      },
-      "priority": "P0",
-      "atsInjection": {
-        "jdKeywords": [
-          "JavaScript",
-          "React",
-          "engineer",
-          "product",
-          "data",
-          "restful",
-          "graphql",
-          "node.js",
-          "CSS",
-          "API"
-        ],
-        "hardKeywords": [
-          "JavaScript",
-          "React",
-          "engineer",
-          "product",
-          "data",
-          "restful",
-          "graphql",
-          "node.js",
-          "CSS",
-          "API"
-        ],
-        "softKeywords": [],
-        "missingKeywords": [
-          "vue",
-          "angular",
-          "python",
-          "java",
-          "go",
-          "mysql",
-          "aws",
-          "gcp"
-        ],
-        "archetype": "Frontend Engineer",
-        "summaryRewriteHints": [
-          "在 Professional Summary 中自然帶入：JavaScript、React、engineer、product、data",
-          "使用職位語言：「Frontend Engineer」方向的動詞和術語",
-          "【你已有但此 JD 未要求】可視情況選擇性提及：vue、angular、python、java、go"
-        ],
-        "atsRules": [
-          "單欄排版，避免 sidebar 雙欄（ATS parser 容易亂序）",
-          "使用標準 header：Professional Summary, Work Experience, Skills, Education",
-          "不使用巢狀表格或文字框",
-          "確保 PDF 文字可被選取（不可光柵化輸出）",
-          "UTF-8 編碼，移除 em dash / smart quote / zero-width space",
-          "關鍵技能在 Skills section 明確列出，不要只藏在 bullet 裡"
-        ],
-        "guardrails": [
-          "NEVER add skills the candidate lacks",
-          "Only reformulate real experience with exact JD vocabulary",
-          "Example: if candidate has 'API development', it can become 'JavaScript'"
-        ],
-        "keywordCoveragePercent": 100
-      },
-      "applyChecklist": [
-        "Open the source URL and confirm the role is still active.",
-        "Generate or refresh the tailored ATS PDF from this job.",
-        "Mirror these JD keywords honestly in your CV: JavaScript, React, engineer, product, data, restful, graphql, node.js",
-        "Do not overclaim missing areas: vue, angular, python, java, go, mysql",
-        "Log status, recruiter/contact, and next follow-up date in the tracker."
-      ],
-      "outreachEmail": {
-        "subject": "Frontend Engineer application - BIFROST PTE. LTD.",
-        "body": "Hi BIFROST PTE. LTD. team,\n\nI am Alex Chen, and I am interested in the Frontend Engineer role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.\n\nThe role stood out because it maps closely to my experience with JavaScript, React, engineer, product, data.\n\nI would appreciate the chance to share how my experience can support the team. Thank you for your time.\n\nBest,\nAlex Chen"
-      },
-      "followUp": {
-        "timing": "3-5 business days after applying or the last recruiter interaction.",
-        "body": "Hi BIFROST PTE. LTD. team,\n\nI wanted to follow up on my application for the Frontend Engineer role. I remain interested and would be glad to provide any additional context about my background.\n\nThank you again for your time.\n\nBest,\nAlex Chen"
-      },
-      "interviewPrep": [
-        "Prepare a 60-second story for why BIFROST PTE. LTD. and why Frontend Engineer.",
-        "Prepare evidence for: JavaScript, React, engineer, product, data, restful.",
-        "Prepare one STAR story about execution under ambiguity.",
-        "Prepare one STAR story about collaboration and tradeoff decisions.",
-        "Prepare questions about team priorities, success metrics, and hiring timeline."
-      ],
-      "negotiationPrep": [
-        "Wait for a clear offer before anchoring compensation.",
-        "Ask for total compensation breakdown, work mode, title, level, review cycle, and start date.",
-        "Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.",
-        "Use competing priorities and role fit, not personal need, as the negotiation frame."
-      ]
-    },
-    {
-      "jobKey": "url:https://www.mycareersfuture.gov.sg/job/dc06e8c5f714c11bfb2e053ac7ee2276",
       "title": "Frontend Engineer",
       "company": "BIFROST PTE. LTD.",
       "score": "95/A",
@@ -1027,6 +930,91 @@
       "interviewPrep": [
         "Prepare a 60-second story for why Airbnb and why Senior/ Manager, Machine Learning, Customer Support Engineering.",
         "Prepare evidence for: Analytics, API, engineer, product, data.",
+        "Prepare one STAR story about execution under ambiguity.",
+        "Prepare one STAR story about collaboration and tradeoff decisions.",
+        "Prepare questions about team priorities, success metrics, and hiring timeline."
+      ],
+      "negotiationPrep": [
+        "Wait for a clear offer before anchoring compensation.",
+        "Ask for total compensation breakdown, work mode, title, level, review cycle, and start date.",
+        "Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.",
+        "Use competing priorities and role fit, not personal need, as the negotiation frame."
+      ]
+    },
+    {
+      "jobKey": "url:https://www.themuse.com/jobs/deloitte/google-ai-lead-architect",
+      "title": "Google AI Lead Architect",
+      "company": "Deloitte",
+      "score": "95/A",
+      "rating": 4.8,
+      "blockG": {
+        "tier": "High Confidence",
+        "confidence": "medium"
+      },
+      "priority": "P0",
+      "atsInjection": {
+        "jdKeywords": [
+          "Analytics",
+          "API",
+          "product",
+          "data"
+        ],
+        "hardKeywords": [
+          "Analytics",
+          "API",
+          "product",
+          "data"
+        ],
+        "softKeywords": [],
+        "missingKeywords": [
+          "sql",
+          "aws",
+          "gcp",
+          "azure",
+          "docker",
+          "kubernetes",
+          "terraform",
+          "llm"
+        ],
+        "archetype": "AI Platform / LLMOps",
+        "summaryRewriteHints": [
+          "在 Professional Summary 中自然帶入：Analytics、API、product、data",
+          "使用職位語言：「AI Platform / LLMOps」方向的動詞和術語",
+          "【你已有但此 JD 未要求】可視情況選擇性提及：sql、aws、gcp、azure、docker"
+        ],
+        "atsRules": [
+          "單欄排版，避免 sidebar 雙欄（ATS parser 容易亂序）",
+          "使用標準 header：Professional Summary, Work Experience, Skills, Education",
+          "不使用巢狀表格或文字框",
+          "確保 PDF 文字可被選取（不可光柵化輸出）",
+          "UTF-8 編碼，移除 em dash / smart quote / zero-width space",
+          "關鍵技能在 Skills section 明確列出，不要只藏在 bullet 裡"
+        ],
+        "guardrails": [
+          "NEVER add skills the candidate lacks",
+          "Only reformulate real experience with exact JD vocabulary",
+          "Example: if candidate has 'API development', it can become 'Analytics'"
+        ],
+        "keywordCoveragePercent": 100
+      },
+      "applyChecklist": [
+        "Open the source URL and confirm the role is still active.",
+        "Generate or refresh the tailored ATS PDF from this job.",
+        "Mirror these JD keywords honestly in your CV: Analytics, API, product, data",
+        "Do not overclaim missing areas: sql, aws, gcp, azure, docker, kubernetes",
+        "Log status, recruiter/contact, and next follow-up date in the tracker."
+      ],
+      "outreachEmail": {
+        "subject": "Google AI Lead Architect application - Deloitte",
+        "body": "Hi Deloitte team,\n\nI am Alex Chen, and I am interested in the Google AI Lead Architect role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.\n\nThe role stood out because it maps closely to my experience with Analytics, API, product, data.\n\nI would appreciate the chance to share how my experience can support the team. Thank you for your time.\n\nBest,\nAlex Chen"
+      },
+      "followUp": {
+        "timing": "3-5 business days after applying or the last recruiter interaction.",
+        "body": "Hi Deloitte team,\n\nI wanted to follow up on my application for the Google AI Lead Architect role. I remain interested and would be glad to provide any additional context about my background.\n\nThank you again for your time.\n\nBest,\nAlex Chen"
+      },
+      "interviewPrep": [
+        "Prepare a 60-second story for why Deloitte and why Google AI Lead Architect.",
+        "Prepare evidence for: Analytics, API, product, data.",
         "Prepare one STAR story about execution under ambiguity.",
         "Prepare one STAR story about collaboration and tradeoff decisions.",
         "Prepare questions about team priorities, success metrics, and hiring timeline."

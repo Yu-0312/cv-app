@@ -1,12 +1,12 @@
 # Career Ops Source Quality
 
-- Generated: 2026-07-02T00:16:27.523Z
+- Generated: 2026-07-02T23:59:45.720Z
 - Mode: filter
 - Minimum score: 45
-- Input active jobs: 81779
-- Kept active jobs: 81658
-- Filtered active jobs: 121
-- Quality tiers: high 76355 / medium 5210 / low 93
+- Input active jobs: 83542
+- Kept active jobs: 83426
+- Filtered active jobs: 116
+- Quality tiers: high 78106 / medium 5227 / low 93
 
 ## Filtered Samples
 
@@ -18,10 +18,10 @@
 - 19 Unknown - Process & Integration Engineer - TFT Display Technology - Jobs - Careers at Apple (missing-company, landing-or-search-title, thin-description)
 - 19 Unknown - SoC - ATE Test Engineer - Jobs - Careers at Apple (missing-company, landing-or-search-title, thin-description)
 - 19 Unknown - Camera Electrical System Integration Engineer - Camera Hardware - Jobs - Careers at Apple (missing-company, landing-or-search-title, thin-description)
-- 19 Unknown - Display Reliability Engineer - Jobs - Careers at Apple (missing-company, landing-or-search-title, thin-description)
 - 19 Unknown - Senior Equipment Integration & Automation Engineer - Jobs - Careers at Apple (missing-company, landing-or-search-title, thin-description)
 - 19 Unknown - Regional Regulatory Compliance Engineer - Jobs - Careers at Apple (missing-company, landing-or-search-title, thin-description)
 - 19 Unknown - Camera Hardware EE Design and Test Engineer - Jobs - Careers at Apple (missing-company, landing-or-search-title, thin-description)
+- 37 ASML - Find your job - Careers at ASML (landing-or-search-title, thin-description)
 
 ## Kept Samples
 
