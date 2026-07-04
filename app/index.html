@@ -17131,7 +17131,13 @@ Schema:
   "interview_prep":{ "title": "面試準備重點", "points": ["重點1","重點2","重點3"] },
   "salary_notes":  "薪資談判定位建議（根據層級與技能稀缺性評估，給出範圍方向）",
   "cover_letter_hook": "求職信開場白（80-100字，展現對公司的理解，帶入1-2個量化成就，有力且不誇張）"
-}`;
+}
+
+評分紀律（精準度優先，務必嚴格遵守）：
+- 學歷／工作資格是硬門檻：先判斷候選人是否符合這份職缺的最低學歷與工作資格。若履歷是高中／學習歷程、仍在學、或明顯不具備合法全職工作資格，而職缺為一般正式職位（非實習／工讀），則屬「不符最低資格」，cvMatch、North Star 與 overall.score 一律給 20 分以下，並在 level_assessment.gap_analysis 明確指出學歷／資格落差。
+- cvMatch 與 North Star 必須嚴格反映履歷與這份職缺的實質吻合度，並引用履歷具體內容與 JD 具體要求作為依據。若與職缺領域無關、或缺乏職缺要求的核心經驗與硬技能，兩項一律給 40 分以下。
+- compensation、redFlags、culture、effort 衡量的是「職缺本身好不好」，與「這個人配不配」無關，絕對不可用來墊高整體適配分數。
+- overall.score 不得高於 cvMatch 與 North Star 兩項的平均；當兩項皆低於 40 時，overall.score 必須低於 40 並如實說明不適配的原因。`;
 
           const prompt = `我的履歷：\n\n${cv}\n\n---\n\n職缺描述：\n\n${jd}`;
 
@@ -17753,6 +17759,24 @@ Schema:
 	          );
 	        }
 
+	        // 依履歷推估「可雇用性 / 最低學歷資格」訊號。用於資格閘門：僅有高中／學習歷程、
+	        // 且無高等學歷與工作經驗者，對絕大多數正式職缺不符最低資格（實習職缺除外）。
+	        function careerOpsEmployabilitySignal(cv = {}, extraText = "") {
+	          const allText = [cv.education, cv.summary, cv.experience, cv.role, cv.awards, cv.highlights, cv.projects, extraText]
+	            .map(part => String(part || "")).join("\n");
+	          const highSchoolHit = /(高中|高級中學|完全中學|高職|進修部|普通科|綜合高中|學習歷程|高一|高二|高三|senior high|high school|十二年級|十一年級|十年級|1[012]th grade)/i.test(allText);
+	          const higherEduHit = /(大學|學士|碩士|博士|學院|大專|副學士|技術學院|科技大學|研究所|university|college|bachelor|master|ph\.?\s?d|mba|associate degree)/i.test(allText);
+	          const workExperienceHit = /(工作經驗|任職|正職|全職|full[- ]?time|年資|資歷|\d+\s*年(以上)?(工作|相關)?經驗|years?\s+of\s+experience|曾任|現職)/i.test(allText);
+	          const stillStudent = /(在學|就讀中|在校生|應屆|current student|預計\s*\d{4}\s*年?\s*畢業|expected\s+graduation)/i.test(allText);
+	          const eligible = higherEduHit || workExperienceHit;
+	          return {
+	            highSchoolOnly: highSchoolHit && !eligible,
+	            stillStudent,
+	            hasHigherEducation: higherEduHit,
+	            hasWorkExperience: workExperienceHit
+	          };
+	        }
+
 	        function careerOpsStructuredLocalProfile(cv = window.cvStudioState?.data || {}) {
 	          const payload = window.cvCareerOpsLoadProfilePayload?.() || null;
 	          const profile = careerOpsActiveProfilePayload(payload);
@@ -17799,6 +17823,7 @@ Schema:
 		            remote: Boolean(preferences.remote) || /(remote|wfh|遠端|hybrid|混合)/i.test(profileText),
 		            proofPoints: careerOpsProfileProofPoints(profile, cv),
 		            starStories: careerOpsProfileStarStories(profile, cv),
+		            employability: careerOpsEmployabilitySignal(cv, profileText),
 		            source: "structured-career-ops-profile"
 		          };
 		        }
@@ -17830,6 +17855,7 @@ Schema:
 		            remote: /(remote|wfh|遠端|hybrid|混合)/i.test(cvText),
 		            proofPoints: careerOpsProfileProofPoints(fallbackProfile, cv),
 		            starStories: careerOpsProfileStarStories(fallbackProfile, cv),
+		            employability: careerOpsEmployabilitySignal(cv, cvText),
 		            source: "cv-field-projection"
 		          };
 		        }
@@ -18214,14 +18240,37 @@ Schema:
 	            redFlags: { score: redFlagsScore, grade: careerOpsGrade6D(redFlagsScore), label: "Red Flags", avoidHits, riskHits },
 	            effort: { score: effortScore, grade: careerOpsGrade6D(effortScore), label: "Application Effort" }
 	          };
-	          const score = Math.max(0, Math.min(100, Math.round(
+	          // ── 適配度閘門（精準度優先）─────────────────────────────
+	          // 六維中只有 cvMatch 與 North Star 真正衡量「這個人配不配這份職缺」；
+	          // compensation / culture / redFlags / effort 衡量的是職缺本身品質，與適配度無關，
+	          // 過去會讓完全不相關的內容（例如高中學習歷程）靠這些底分被墊到 60 幾分。
+	          // 因此以 cvMatch 為主的適配訊號對加權總分做強力衰減，讓不相關內容確實掉分。
+	          const weightedBase = Math.max(0, Math.min(100,
 	            cvMatchScore * CAREER_OPS_LOCAL_WEIGHTS.cvMatch +
 	            northStarScore * CAREER_OPS_LOCAL_WEIGHTS.northStar +
 	            compensationScore * CAREER_OPS_LOCAL_WEIGHTS.compensation +
 	            cultureScore * CAREER_OPS_LOCAL_WEIGHTS.culture +
 	            redFlagsScore * CAREER_OPS_LOCAL_WEIGHTS.redFlags +
 	            effortScore * CAREER_OPS_LOCAL_WEIGHTS.effort
-	          )));
+	          ));
+	          const fitSignal = Math.max(0, Math.min(1, (cvMatchScore * 0.75 + northStarScore * 0.25) / 100));
+	          const fitGate = Math.min(1, 0.15 + fitSignal * 1.05);
+	          let score = Math.round(weightedBase * fitGate);
+	          // 履歷與職缺幾乎零重疊時（無技能命中、無目標職位命中、無偏好公司命中）再加一道硬上限，避免殘留高分。
+	          if (cvMatchScore < 15 && targetRoleHits.length === 0 && companyHits.length === 0) {
+	            score = Math.min(score, 30);
+	          }
+	          // ── 學歷 / 可雇用性資格閘門 ──────────────────────────────
+	          // 多數正式職缺要求大學以上學歷與工作資格。若履歷僅為高中／學習歷程、且無高等學歷或工作經驗，
+	          // 對「非實習」職缺屬於不符最低資格，需硬性大扣分（實習／工讀職缺不套用）。
+	          const employability = profile.employability || {};
+	          const isInternshipRole = family === "Internship" || level === "Intern" ||
+	            /(intern|實習|工讀|建教|校園大使|campus ambassador|part[- ]?time|兼職|打工)/i.test(lowerTitleDescription);
+	          const failsMinimumEligibility = Boolean(employability.highSchoolOnly) && !isInternshipRole;
+	          if (failsMinimumEligibility) {
+	            score = Math.min(score, 18);
+	          }
+	          score = Math.max(0, Math.min(100, score));
 	          const rating = Math.round(((score / 100) * 4 + 1) * 10) / 10;
 	          const blockG = careerOpsComputeBlockG(job);
 	          const grade = careerOpsGradeFromScore(score);
@@ -18270,6 +18319,7 @@ Schema:
 	                missing: missingProfileSkills.slice(0, 12)
 	              },
 	              risks: [
+	                failsMinimumEligibility ? "學歷／工作資格不符：履歷為高中／學習歷程，未達此職缺最低學歷與工作資格（實習／工讀職缺除外），已大幅扣分" : "",
 	                blockG.tier !== "High Confidence" ? `Block G：${blockG.tier}` : "",
 	                avoidHits.length ? `排除訊號：${avoidHits.join("、")}` : "",
 	                riskHits.length ? `風險訊號：${riskHits.join("、")}` : "",
@@ -20802,7 +20852,9 @@ Schema:
   },
   "risks": ["可能被刷掉或面試被追問的風險"],
   "next_actions": ["投遞前最該做的行動1", "行動2", "行動3"]
-}`;
+}
+
+評分紀律（精準度優先，務必嚴格遵守）：overall.score 只反映履歷與這份職缺的實質適配度。學歷／工作資格是硬門檻——若履歷是高中／學習歷程、仍在學、或不具合法全職工作資格，而職缺為一般正式職位（非實習／工讀），屬不符最低資格，overall.score 一律給 20 分以下、recommendation 設為「略過」，並在 decision_factors 指出學歷／資格落差。其餘情況若與職缺領域無關或缺乏核心經驗與硬技能，overall.score 給 40 分以下並說明；職缺本身的薪資、風險、文化等條件不得用來墊高適配分數。`;
 	          const prompt = `履歷：\n\n${cv}\n\n---\n\n職缺：\n公司：${job.company || "未知"}\n職稱：${job.title}\n連結：${job.url || "無"}\n\n${job.description}`;
 	          if (!options.silent) showLoading("正在評估這筆職缺，通常需要 15–30 秒…");
 	          try {
