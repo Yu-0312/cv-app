@@ -17134,8 +17134,8 @@ Schema:
 }
 
 評分紀律（精準度優先，務必嚴格遵守）：
-- 學歷／工作資格是硬門檻：先判斷候選人是否符合這份職缺的最低學歷與工作資格。若履歷是高中／學習歷程、仍在學、或明顯不具備合法全職工作資格，而職缺為一般正式職位（非實習／工讀），則屬「不符最低資格」，cvMatch、North Star 與 overall.score 一律給 20 分以下，並在 level_assessment.gap_analysis 明確指出學歷／資格落差。
-- cvMatch 與 North Star 必須嚴格反映履歷與這份職缺的實質吻合度，並引用履歷具體內容與 JD 具體要求作為依據。若與職缺領域無關、或缺乏職缺要求的核心經驗與硬技能，兩項一律給 40 分以下。
+- 學歷→職缺類型是硬路由，先判斷再評分：(a) 履歷為高中／學習歷程、仍在學高中生、或不具正職工作資格者，只適用「工讀／兼職／實習」職缺；若這份職缺是正職／全職，屬「不符資格」，cvMatch、North Star 與 overall.score 一律給 15 分以下，recommendation/application_probability 明確標為不建議，並在 level_assessment.gap_analysis 指出「學歷未達正職資格，建議改投工讀／實習」。(b) 若這份職缺本身是工讀／兼職／實習，則高中生為適格對象，不可因缺乏專業／硬技能而過度扣分，應改以學習動機、基本能力、可配合時段等面向評估。(c) 大學／碩士／博士或已有正職工作經驗者，正職與各類型皆適格，正常依技能與專業評分。
+- cvMatch 與 North Star 必須嚴格反映履歷與這份職缺的實質吻合度（技能與專業對應），並引用履歷具體內容與 JD 具體要求作為依據。若與職缺領域無關、或缺乏職缺要求的核心經驗與硬技能，兩項一律給 40 分以下。
 - compensation、redFlags、culture、effort 衡量的是「職缺本身好不好」，與「這個人配不配」無關，絕對不可用來墊高整體適配分數。
 - overall.score 不得高於 cvMatch 與 North Star 兩項的平均；當兩項皆低於 40 時，overall.score 必須低於 40 並如實說明不適配的原因。`;
 
@@ -17759,21 +17759,29 @@ Schema:
 	          );
 	        }
 
-	        // 依履歷推估「可雇用性 / 最低學歷資格」訊號。用於資格閘門：僅有高中／學習歷程、
-	        // 且無高等學歷與工作經驗者，對絕大多數正式職缺不符最低資格（實習職缺除外）。
+	        // 依履歷推估「學歷分級 / 正職工作資格」訊號，供學歷→職缺類型硬路由使用。
+	        // 規則：僅高中／學習歷程且無高等學歷與工作經驗者，不具正職資格，只適用工讀／兼職／實習；
+	        //       大學／碩士／博士，或已具工作經驗者，正職與各類型皆適用。
 	        function careerOpsEmployabilitySignal(cv = {}, extraText = "") {
 	          const allText = [cv.education, cv.summary, cv.experience, cv.role, cv.awards, cv.highlights, cv.projects, extraText]
 	            .map(part => String(part || "")).join("\n");
+	          const phdHit = /(博士|ph\.?\s?d|doctoral|doctorate)/i.test(allText);
+	          const masterHit = /(碩士|master(?:'s)?\b|mba|研究所)/i.test(allText);
+	          const bachelorHit = /(大學|學士|大專|副學士|技術學院|科技大學|university|college|bachelor|associate\s+degree)/i.test(allText);
 	          const highSchoolHit = /(高中|高級中學|完全中學|高職|進修部|普通科|綜合高中|學習歷程|高一|高二|高三|senior high|high school|十二年級|十一年級|十年級|1[012]th grade)/i.test(allText);
-	          const higherEduHit = /(大學|學士|碩士|博士|學院|大專|副學士|技術學院|科技大學|研究所|university|college|bachelor|master|ph\.?\s?d|mba|associate degree)/i.test(allText);
 	          const workExperienceHit = /(工作經驗|任職|正職|全職|full[- ]?time|年資|資歷|\d+\s*年(以上)?(工作|相關)?經驗|years?\s+of\s+experience|曾任|現職)/i.test(allText);
 	          const stillStudent = /(在學|就讀中|在校生|應屆|current student|預計\s*\d{4}\s*年?\s*畢業|expected\s+graduation)/i.test(allText);
-	          const eligible = higherEduHit || workExperienceHit;
+	          const hasHigherEducation = phdHit || masterHit || bachelorHit;
+	          const tier = phdHit ? "phd" : masterHit ? "master" : bachelorHit ? "bachelor" : highSchoolHit ? "highSchool" : "unknown";
+	          // 具正職資格：大學以上學歷，或已有工作經驗。僅高中／學習歷程且無上述者 → 只適用工讀／兼職／實習。
+	          const fullTimeEligible = hasHigherEducation || workExperienceHit;
 	          return {
-	            highSchoolOnly: highSchoolHit && !eligible,
+	            tier,
 	            stillStudent,
-	            hasHigherEducation: higherEduHit,
-	            hasWorkExperience: workExperienceHit
+	            hasHigherEducation,
+	            hasWorkExperience: workExperienceHit,
+	            fullTimeEligible,
+	            highSchoolOnly: highSchoolHit && !fullTimeEligible
 	          };
 	        }
 
@@ -17890,6 +17898,15 @@ Schema:
 	          if (/(hybrid|混合)/i.test(text)) return "Hybrid";
 	          if (/(on-site|onsite|現場|辦公室)/i.test(text)) return "On-site";
 	          return "Unknown";
+	        }
+
+	        // 判斷職缺聘用型態，供學歷→職缺類型路由使用：實習 / 工讀兼職 / 正職。未明示者預設視為正職。
+	        function careerOpsJobEmploymentType(job = {}) {
+	          const text = `${job.title || ""} ${job.employmentType || ""} ${job.description || ""}`;
+	          if (/(實習生?|intern(ship)?|建教|校園大使|campus\s+ambassador|見習)/i.test(text)) return "internship";
+	          if (/(工讀生?|兼職|兼任|打工|part[- ]?time|時薪|計時|讀書助理|課餘)/i.test(text)) return "partTime";
+	          if (/(正職|全職|full[- ]?time|正式員工|月薪|年薪)/i.test(text)) return "fullTime";
+	          return "fullTime";
 	        }
 
 	        function careerOpsExtractSkills(job) {
@@ -18260,15 +18277,20 @@ Schema:
 	          if (cvMatchScore < 15 && targetRoleHits.length === 0 && companyHits.length === 0) {
 	            score = Math.min(score, 30);
 	          }
-	          // ── 學歷 / 可雇用性資格閘門 ──────────────────────────────
-	          // 多數正式職缺要求大學以上學歷與工作資格。若履歷僅為高中／學習歷程、且無高等學歷或工作經驗，
-	          // 對「非實習」職缺屬於不符最低資格，需硬性大扣分（實習／工讀職缺不套用）。
+	          // ── 學歷 → 職缺類型 硬路由（超精準資格規則）──────────────────
+	          // 高中／學習歷程（無高等學歷、無工作經驗）不具正職資格：只適用工讀／兼職／實習，
+	          //   投遞正職一律判為不符資格並硬性壓到極低分；而工讀／實習職缺本就適配，不因缺乏
+	          //   專業技能被適配閘門壓低，確保系統會把這類職缺推薦給高中生。
+	          // 大學／碩士／博士，或已具工作經驗者：正職與各類型皆適用，完全依技能與專業評分。
 	          const employability = profile.employability || {};
-	          const isInternshipRole = family === "Internship" || level === "Intern" ||
-	            /(intern|實習|工讀|建教|校園大使|campus ambassador|part[- ]?time|兼職|打工)/i.test(lowerTitleDescription);
-	          const failsMinimumEligibility = Boolean(employability.highSchoolOnly) && !isInternshipRole;
+	          const jobEmploymentType = careerOpsJobEmploymentType(job);
+	          const jobIsPartTimeOrIntern = jobEmploymentType === "partTime" || jobEmploymentType === "internship";
+	          const restrictedToPartTime = employability.tier === "highSchool" && employability.fullTimeEligible === false;
+	          const failsMinimumEligibility = restrictedToPartTime && !jobIsPartTimeOrIntern;
 	          if (failsMinimumEligibility) {
-	            score = Math.min(score, 18);
+	            score = Math.min(score, 10);
+	          } else if (restrictedToPartTime && jobIsPartTimeOrIntern) {
+	            score = Math.max(score, Math.round(weightedBase * 0.85));
 	          }
 	          score = Math.max(0, Math.min(100, score));
 	          const rating = Math.round(((score / 100) * 4 + 1) * 10) / 10;
@@ -18319,7 +18341,7 @@ Schema:
 	                missing: missingProfileSkills.slice(0, 12)
 	              },
 	              risks: [
-	                failsMinimumEligibility ? "學歷／工作資格不符：履歷為高中／學習歷程，未達此職缺最低學歷與工作資格（實習／工讀職缺除外），已大幅扣分" : "",
+	                failsMinimumEligibility ? "學歷不符正職資格：履歷為高中／學習歷程，尚無正職工作資格，僅適用工讀／兼職／實習；投遞正職已大幅扣分，建議改投工讀職缺" : "",
 	                blockG.tier !== "High Confidence" ? `Block G：${blockG.tier}` : "",
 	                avoidHits.length ? `排除訊號：${avoidHits.join("、")}` : "",
 	                riskHits.length ? `風險訊號：${riskHits.join("、")}` : "",
@@ -20854,7 +20876,7 @@ Schema:
   "next_actions": ["投遞前最該做的行動1", "行動2", "行動3"]
 }
 
-評分紀律（精準度優先，務必嚴格遵守）：overall.score 只反映履歷與這份職缺的實質適配度。學歷／工作資格是硬門檻——若履歷是高中／學習歷程、仍在學、或不具合法全職工作資格，而職缺為一般正式職位（非實習／工讀），屬不符最低資格，overall.score 一律給 20 分以下、recommendation 設為「略過」，並在 decision_factors 指出學歷／資格落差。其餘情況若與職缺領域無關或缺乏核心經驗與硬技能，overall.score 給 40 分以下並說明；職缺本身的薪資、風險、文化等條件不得用來墊高適配分數。`;
+評分紀律（精準度優先，務必嚴格遵守）：overall.score 只反映履歷與這份職缺的實質適配度，並依技能與專業對應評分。學歷→職缺類型硬路由：(1) 履歷為高中／學習歷程、仍在學高中生或不具正職資格者，只適用工讀／兼職／實習；若這份職缺是正職／全職，屬不符資格，overall.score 一律給 15 分以下、recommendation 設「略過」，decision_factors 指出「學歷未達正職資格，建議改投工讀／實習」。(2) 若職缺本身是工讀／兼職／實習，高中生為適格對象，不可因缺乏專業技能而過度扣分。(3) 大學／碩士／博士或已有正職工作經驗者，各類型皆適格，正常依技能與專業評分。職缺本身的薪資、風險、文化等條件不得用來墊高適配分數。`;
 	          const prompt = `履歷：\n\n${cv}\n\n---\n\n職缺：\n公司：${job.company || "未知"}\n職稱：${job.title}\n連結：${job.url || "無"}\n\n${job.description}`;
 	          if (!options.silent) showLoading("正在評估這筆職缺，通常需要 15–30 秒…");
 	          try {
