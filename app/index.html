@@ -19066,9 +19066,12 @@ Schema:
 		          const statusEl = options.statusEl || null;
 		          const setStatus = text => { if (statusEl) statusEl.textContent = text; };
 		          setStatus("讀取職缺快照中...");
-		          const jobs = await careerOpsLoadSnapshotJobs();
-		          if (!jobs.length) throw new Error("職缺快照是空的，請先匯入或產生 data/app/career-ops-jobs.js。");
-		          setStatus(`本機評分中... ${jobs.length} 筆職缺`);
+		          const allJobs = await careerOpsLoadSnapshotJobs();
+		          if (!allJobs.length) throw new Error("職缺快照是空的，請先匯入或產生 data/app/career-ops-jobs.js。");
+		          // 簡歷比對同樣鎖定台灣就業市場，海外來源仍可從匯入入口個別評估。
+		          const jobs = allJobs.filter(job => careerOpsIsAnalysisCountryJob(job));
+		          if (!jobs.length) throw new Error(`職缺快照共 ${allJobs.length} 筆，但沒有台灣職缺可比對（分析已限縮台灣）。海外職缺仍可從匯入入口加入追蹤器後個別評估。`);
+		          setStatus(`本機評分中... ${jobs.length} 筆台灣職缺（已從 ${allJobs.length} 筆篩出）`);
 		          await new Promise(resolve => setTimeout(resolve, 0));
 		          const classified = careerOpsClassifyLocalJobs(jobs, profile);
 		          setStatus("整理 Layer A / B / C 結果...");
