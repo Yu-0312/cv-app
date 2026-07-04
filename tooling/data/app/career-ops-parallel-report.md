@@ -1,6 +1,6 @@
 # Career Ops Parallel Worker Report
 
-Generated: 2026-07-03T23:59:04.734Z
+Generated: 2026-07-04T23:43:27.381Z
 Concurrency: 4
 Jobs processed: 50
 Errors: 0
@@ -281,21 +281,6 @@ Errors: 0
 - Never store API keys or credentials in job metadata.
 - Record only application status and user-approved notes.
 
-## P0 Allstate - Manager Database Engineering (MongoDB)
-
-- Score: 94
-- Grade: A
-- Research evidence: 0
-- Keywords: Analytics, API, remote, engineer, product, data
-- Compensation leverage: high
-- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
-
-### Apply Agent Guardrails
-- Never submit without explicit user confirmation.
-- Never fabricate work authorization, salary history, degree, or experience.
-- Never store API keys or credentials in job metadata.
-- Record only application status and user-approved notes.
-
 ## P0 Databricks Greenhouse - Director,Technical Solutions (Big Data/ AI)
 
 - Score: 94
@@ -317,7 +302,7 @@ Errors: 0
 - Grade: A
 - Research evidence: 0
 - Keywords: engineer, product, data
-- Compensation leverage: -
+- Compensation leverage: high
 - Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
 
 ### Apply Agent Guardrails
@@ -362,6 +347,21 @@ Errors: 0
 - Grade: A
 - Research evidence: 0
 - Keywords: JavaScript, React, CSS, API, remote, dashboard, engineer, product, data
+- Compensation leverage: -
+- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
+
+### Apply Agent Guardrails
+- Never submit without explicit user confirmation.
+- Never fabricate work authorization, salary history, degree, or experience.
+- Never store API keys or credentials in job metadata.
+- Record only application status and user-approved notes.
+
+## P0 UKG - Director Software Development Engineering
+
+- Score: 93
+- Grade: A
+- Research evidence: 0
+- Keywords: Analytics, API, remote, product, data
 - Compensation leverage: -
 - Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
 
@@ -671,6 +671,21 @@ Errors: 0
 - Never store API keys or credentials in job metadata.
 - Record only application status and user-approved notes.
 
+## P0 Salesforce - Manager, Technical Consulting
+
+- Score: 92
+- Grade: A
+- Research evidence: 0
+- Keywords: API, product
+- Compensation leverage: -
+- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
+
+### Apply Agent Guardrails
+- Never submit without explicit user confirmation.
+- Never fabricate work authorization, salary history, degree, or experience.
+- Never store API keys or credentials in job metadata.
+- Record only application status and user-approved notes.
+
 ## P0 Yext - Senior Systems Engineer
 
 - Score: 92
@@ -692,7 +707,7 @@ Errors: 0
 - Grade: A
 - Research evidence: 0
 - Keywords: Analytics, API, remote, engineer, product, data
-- Compensation leverage: high
+- Compensation leverage: -
 - Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
 
 ### Apply Agent Guardrails
@@ -738,21 +753,6 @@ Errors: 0
 - Research evidence: 0
 - Keywords: JavaScript, TypeScript, API, remote, engineer, product, data, restful
 - Compensation leverage: -
-- Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
-
-### Apply Agent Guardrails
-- Never submit without explicit user confirmation.
-- Never fabricate work authorization, salary history, degree, or experience.
-- Never store API keys or credentials in job metadata.
-- Record only application status and user-approved notes.
-
-## P0 Stripe Greenhouse - Learning Architect
-
-- Score: 92
-- Grade: A
-- Research evidence: 0
-- Keywords: Figma, engineer, product, data
-- Compensation leverage: high
 - Story hooks: frontend product execution, systems and API collaboration, accessibility and quality
 
 ### Apply Agent Guardrails
