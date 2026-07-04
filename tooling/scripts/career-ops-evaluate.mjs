@@ -1,35 +1,45 @@
 #!/usr/bin/env node
 
 /**
- * Career Ops batch evaluator — v2
+ * Career Ops batch evaluator — v3
  *
- * Scores each job across 6 named dimensions (matching career-ops A–F / 1–5 system)
+ * Scores each job across 8 named dimensions (matching career-ops A–F / 1–5 system)
  * plus a separate Block G legitimacy tier.
  *
- * Dimensions (weights):
- *   cvMatch        0.25  — profile keyword / skills match
- *   northStar      0.20  — role / career-direction alignment
- *   compensation   0.15  — salary competitiveness signals
- *   culture        0.15  — growth / culture / work-mode signals
- *   redFlags       0.15  — risk / concern signals (inverted: 100 = clean)
- *   effort         0.10  — application feasibility (has URL, quality JD)
+ * Dimensions (default weights, tunable via lib/career-ops-scoring-config.mjs or --config):
+ *   cvMatch        0.20  — profile keyword / skills match
+ *   experience     0.15  — work-history relevance + promotion trajectory      (NEW v3)
+ *   northStar      0.15  — role / career-direction alignment
+ *   compensation   0.12  — salary competitiveness signals            (noData → redistributed)
+ *   redFlags       0.12  — risk / concern signals (inverted: 100 = clean)
+ *   fieldMatch     0.10  — field-of-study ↔ role-domain alignment    (NEW v3, noData → redistributed)
+ *   culture        0.10  — growth / culture / work-mode signals
+ *   effort         0.06  — application feasibility (has URL, quality JD)
  *
  * Block G  (separate)  — legitimacy tier: High Confidence | Proceed with Caution | Suspicious
  *
  * Global score: weighted average 0–100, mapped to 1–5 and A–F.
- * Thresholds (1–5 scale): ≥4.5 pursue aggressively, ≥3.0 eligible, <2.5 skip.
+ * Any dimension reporting `noData` is dropped and its weight redistributed
+ * proportionally across the remaining dimensions.
  */
 
 import fs from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import {
+  DEFAULT_SCORING_CONFIG,
+  loadScoringConfig,
+  inferSeniority,
+} from "./lib/career-ops-scoring-config.mjs";
+
+export const SCHEMA_VERSION = "career-ops/3.0";
 
 // ── helpers ──────────────────────────────────────────────────────────────────
 
 function printHelp() {
-  console.log(`Career Ops batch evaluator v2
+  console.log(`Career Ops batch evaluator v3
 
-Scores jobs across 6 dimensions + Block G legitimacy. Output includes per-dimension
+Scores jobs across 8 dimensions + Block G legitimacy. Output includes per-dimension
 A–F grades and a 1–5 global rating matching the career-ops evaluation standard.
 
 Usage:
@@ -38,33 +48,42 @@ Usage:
 
 Options:
   --jobs <file>     Input Career Ops snapshot JSON
-  --profile <file>  CV/profile JSON. Supports {role, skills, summary, experience, projects, preferences}
+  --profile <file>  CV/profile JSON. Supports {role, skills, summary, experience, projects,
+                    education, workHistory, preferences}
+  --config <file>   Optional scoring-config override JSON (deep-merged over defaults)
   --out <file>      Output JSON. Default: overwrite --jobs
   --help            Show this help
 `);
 }
 
 function parseArgs(argv) {
-  const args = { jobs: "", profile: "", out: "" };
+  const args = { jobs: "", profile: "", out: "", config: "" };
   for (let i = 0; i < argv.length; i += 1) {
     const token = argv[i];
     if (token === "--help" || token === "-h") { args.help = true; }
     else if (token === "--jobs")    { args.jobs    = argv[++i] || ""; }
     else if (token === "--profile") { args.profile = argv[++i] || ""; }
+    else if (token === "--config")  { args.config  = argv[++i] || ""; }
     else if (token === "--out")     { args.out     = argv[++i] || ""; }
     else throw new Error(`Unknown argument: ${token}`);
   }
   return args;
 }
 
-function tokenize(value) {
+function stopwordRegex(stopwords) {
+  const escaped = stopwords.map((w) => w.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"));
+  return new RegExp(`^(${escaped.join("|")})$`);
+}
+
+export function tokenize(value, config = DEFAULT_SCORING_CONFIG) {
+  const stop = config.__stopRe || (config.__stopRe = stopwordRegex(config.stopwords));
   return Array.from(new Set(
     String(value || "")
       .toLowerCase()
       .replace(/[^\p{L}\p{N}+#.-]+/gu, " ")
       .split(/\s+/)
       .map((t) => t.trim())
-      .filter((t) => t.length >= 2 && !/^(and|the|with|for|you|our|我們|以及|或|與|和|工作|職缺|相關|負責|具備|優先)$/.test(t))
+      .filter((t) => t.length >= 2 && !stop.test(t))
   ));
 }
 
@@ -78,58 +97,136 @@ function includes(text, term) {
 
 // ── profile normalisation ────────────────────────────────────────────────────
 
-export function normalizeProfile(profile) {
+/** Coerce various education shapes into a flat list of major/field strings. */
+function normalizeEducation(profile) {
+  const out = [];
+  const push = (v) => { const s = String(v || "").trim(); if (s) out.push(s); };
+  const edu = profile.education;
+  if (typeof edu === "string") push(edu);
+  else if (Array.isArray(edu)) {
+    for (const e of edu) {
+      if (typeof e === "string") push(e);
+      else if (e && typeof e === "object") { push(e.major); push(e.field); push(e.department); push(e.degree && e.field ? "" : e.study); }
+    }
+  } else if (edu && typeof edu === "object") { push(edu.major); push(edu.field); push(edu.department); }
+  // also accept top-level convenience keys
+  push(profile.major); push(profile.field);
+  return out;
+}
+
+function parseYear(value) {
+  const s = String(value || "").trim().toLowerCase();
+  if (!s) return null;
+  if (/(present|current|now|迄今|至今|現在|目前)/.test(s)) return new Date().getFullYear();
+  const m = s.match(/(\d{4})/);
+  return m ? Number(m[1]) : null;
+}
+
+/** Build a structured work history [{title, rank, level, start, end}] from profile. */
+function normalizeWorkHistory(profile, config) {
+  const entries = [];
+  const raw = profile.workHistory || profile.work_history || profile.jobs || [];
+  if (Array.isArray(raw)) {
+    for (const w of raw) {
+      if (!w || typeof w !== "object") continue;
+      const title = String(w.title || w.role || w.position || "").trim();
+      const sen = w.seniority
+        ? { level: String(w.seniority), rank: config.seniorityRank[w.seniority] || inferSeniority(title, config.seniorityPatterns).rank }
+        : inferSeniority(`${title} ${w.level || ""}`, config.seniorityPatterns);
+      entries.push({
+        title,
+        company: String(w.company || "").trim(),
+        level: sen.level,
+        rank: sen.rank,
+        start: parseYear(w.start || w.from || w.startDate),
+        end: parseYear(w.end || w.to || w.endDate || "present"),
+      });
+    }
+  }
+  // stable chronological order (earliest start first); unknown starts sink to front
+  entries.sort((a, b) => (a.start || 0) - (b.start || 0));
+  return entries;
+}
+
+/** Total years of experience: prefer workHistory span, fall back to prose signals. */
+function inferTotalYears(profile, workHistory) {
+  const years = workHistory.map((w) => w.start).filter((y) => Number.isFinite(y));
+  const ends = workHistory.map((w) => w.end).filter((y) => Number.isFinite(y));
+  if (years.length && ends.length) return Math.max(0, Math.max(...ends) - Math.min(...years));
+  if (typeof profile.yearsOfExperience === "number") return profile.yearsOfExperience;
+  const prose = [profile.summary, profile.experience].filter(Boolean).join(" ");
+  const m = prose.match(/(\d+)\s*\+?\s*(?:years|yrs|年)/i);
+  return m ? Number(m[1]) : null;
+}
+
+export function normalizeProfile(profile, config = DEFAULT_SCORING_CONFIG) {
   const prefs = (profile.preferences && typeof profile.preferences === "object") ? profile.preferences : {};
   const keywords = tokenize([
     profile.role,
     profile.summary,
     profile.skills,
-    profile.experience,
-    profile.projects,
+    typeof profile.experience === "string" ? profile.experience : "",
+    typeof profile.projects === "string" ? profile.projects : "",
     prefs.keywords,
     prefs.targetRoles,
-  ].flat().join(" "));
-  const avoid = tokenize([prefs.avoidKeywords, prefs.exclude].flat().join(" "));
+  ].flat().join(" "), config);
+  const avoid = tokenize([prefs.avoidKeywords, prefs.exclude].flat().join(" "), config);
+  const workHistory = normalizeWorkHistory(profile, config);
+  const latest = workHistory[workHistory.length - 1] || null;
+  const selfSeniority = latest && latest.rank
+    ? { level: latest.level, rank: latest.rank }
+    : inferSeniority(`${profile.role || ""} ${profile.summary || ""}`, config.seniorityPatterns);
   return {
     keywords,
     avoid,
     role: String(profile.role || "").trim(),
     rawSkills: [].concat(profile.skills || prefs.keywords || []).map(s => String(s).trim()).filter(Boolean),
     targetRoles: [].concat(prefs.targetRoles || []).map(String),
-    preferredLocations: tokenize([].concat(prefs.locations || []).concat(prefs.remote ? ["remote"] : []).join(" ")),
-    preferredCompanies: tokenize([].concat(prefs.companies || []).join(" ")),
-    northStarGoals: tokenize(String(prefs.northStar || prefs.goals || prefs.targetIndustry || "")),
+    preferredLocations: tokenize([].concat(prefs.locations || []).concat(prefs.remote ? ["remote"] : []).join(" "), config),
+    preferredCompanies: tokenize([].concat(prefs.companies || []).join(" "), config),
+    northStarGoals: tokenize(String(prefs.northStar || prefs.goals || prefs.targetIndustry || ""), config),
     salaryMin: Number(prefs.salaryMin || 0),
     remote: Boolean(prefs.remote),
+    education: normalizeEducation(profile),
+    workHistory,
+    seniority: selfSeniority,
+    totalYears: inferTotalYears(profile, workHistory),
   };
 }
 
-// ── dimension scorers (each returns 0–100) ────────────────────────────────────
+// ── lightweight role-family inference (intelligence.mjs runs AFTER evaluate) ──
 
-const RISK_TERMS  = ["unpaid", "commission-only", "volunteer", "on-site only", "must be local",
-                     "無薪", "純抽成", "責任制", "到府服務", "無底薪"];
-const GROWTH_TERMS = ["scale", "scalable", "growth", "0-1", "startup", "founding", "ownership",
-                      "lead", "platform", "data", "ai", "llm", "automation", "成長", "新創", "平台", "資料", "自動化"];
-const LEGITIMACY_RED = ["apply now via whatsapp", "wire transfer", "send bank", "advance fee",
-                        "buy equipment", "training fee", "deposit required", "salary upfront",
-                        "whatsapp only", "telegram only"];
-const LEGITIMACY_YELLOW = ["work from home guaranteed", "no experience needed", "$$$ per week",
-                           "earn up to", "must pay", "no interview", "quick hire"];
-const COMP_TERMS = ["salary", "compensation", "薪資", "薪水", "待遇", "年薪", "月薪", "nt\\$", "twd", "\\$", "k/month"];
+const ROLE_FAMILY_PATTERNS = [
+  { fam: "Frontend",   re: /(front.?end|前端|react|vue|angular|ui engineer)/i },
+  { fam: "Backend",    re: /(back.?end|後端|server|golang|java\b|node\.?js|api engineer)/i },
+  { fam: "Full Stack", re: /(full.?stack|全端|全棧)/i },
+  { fam: "AI/Data",    re: /(machine learning|ml engineer|data scien|deep learning|人工智慧|演算法|ai engineer|llm)/i },
+  { fam: "Data/Analytics", re: /(data analyst|data engineer|analytics|資料工程|數據分析|bi\b)/i },
+  { fam: "Product",    re: /(product manager|產品經理|product owner|\bpm\b)/i },
+  { fam: "Design",     re: /(designer|設計師|ux|ui\/ux|視覺|graphic)/i },
+  { fam: "Marketing",  re: /(marketing|行銷|growth marketer|seo|社群)/i },
+  { fam: "Sales",      re: /(sales|業務|銷售|account executive|bd\b)/i },
+  { fam: "Hardware",   re: /(hardware|硬體|ic design|電路|firmware|韌體|embedded|嵌入式)/i },
+  { fam: "Operations", re: /(operations|營運|ops engineer|supply chain|客服)/i },
+];
 
-function scoreCvMatch(job, profile) {
+function inferRoleFamily(job) {
+  const text = `${job.title || ""} ${job.description || ""}`;
+  for (const p of ROLE_FAMILY_PATTERNS) if (p.re.test(text)) return p.fam;
+  return "General";
+}
+
+// ── dimension scorers (each returns 0–100, or {score:null,noData:true}) ───────
+
+function scoreCvMatch(job, profile, config) {
   const jdText = [job.title, job.company, job.location, job.description, job.employmentType]
     .filter(Boolean).join(" ");
-  const jdTokens = new Set(tokenize(jdText));
+  const jdTokens = new Set(tokenize(jdText, config));
 
-  // Bidirectional: check each raw skill phrase against JD text (profile → JD)
   const skillHits   = (profile.rawSkills || []).filter(s => includes(jdText, s));
   const skillMissed = (profile.rawSkills || []).filter(s => !includes(jdText, s));
-
-  // Tokenized keyword density (JD → profile keywords) for scoring boost
   const tokenHits = profile.keywords.filter(k => jdTokens.has(k));
 
-  // found = accurate raw skill hits + extra token-based hits for display
   const foundSet = new Set(skillHits.map(s => s.toLowerCase()));
   const extraTokens = tokenHits.filter(t => !foundSet.has(t)).slice(0, 6);
   const found = [...skillHits, ...extraTokens].slice(0, 16);
@@ -150,12 +247,123 @@ function scoreNorthStar(job, profile) {
   return { score, targetHit, roleHit, nsHits };
 }
 
-function scoreCompensation(job) {
+// ── NEW v3: field-of-study ↔ role-domain match (科系匹配度) ───────────────────
+
+function candidateDomains(profile, config) {
+  const domains = new Set();
+  const majors = (profile.education || []).map((m) => m.toLowerCase());
+  if (!majors.length) return domains;
+  for (const [domain, keywords] of Object.entries(config.fieldDomains)) {
+    if (keywords.some((kw) => majors.some((m) => m.includes(kw.toLowerCase())))) domains.add(domain);
+  }
+  return domains;
+}
+
+function jobDomains(job, config) {
+  const domains = new Set();
   const text = `${job.title || ""} ${job.description || ""}`.toLowerCase();
-  const hasSalary = COMP_TERMS.some((t) => new RegExp(t, "i").test(text));
+  // 1. Explicit major mentions in the JD ("資工相關科系", "CS degree")
+  for (const [domain, keywords] of Object.entries(config.fieldDomains)) {
+    if (keywords.some((kw) => text.includes(kw.toLowerCase()))) domains.add(domain);
+  }
+  // 2. Role-family implied domains
+  const fam = inferRoleFamily(job);
+  for (const d of (config.roleFamilyDomains[fam] || [])) domains.add(d);
+  return { domains, roleFamily: fam };
+}
+
+function scoreFieldMatch(job, profile, config) {
+  const candDomains = candidateDomains(profile, config);
+  if (!candDomains.size) {
+    return { score: null, noData: true, candidateDomains: [], jobDomains: [] };
+  }
+  const { domains: jDomains, roleFamily } = jobDomains(job, config);
+  if (!jDomains.size) {
+    // Job gives no domain signal — neutral, don't penalise the candidate.
+    return { score: 60, noData: false, candidateDomains: [...candDomains], jobDomains: [], roleFamily, overlap: [] };
+  }
+  const overlap = [...candDomains].filter((d) => jDomains.has(d));
+  let score;
+  if (overlap.length) {
+    // Same-field → higher. Full coverage of the job's domains earns the top band.
+    const coverage = overlap.length / jDomains.size;
+    score = Math.min(100, 68 + Math.round(coverage * 27) + (overlap.length - 1) * 4);
+  } else {
+    // Candidate's field is unrelated to the role's domain → below neutral.
+    score = 38;
+  }
+  return { score, noData: false, candidateDomains: [...candDomains], jobDomains: [...jDomains], roleFamily, overlap };
+}
+
+// ── NEW v3: work-experience relevance + promotion trajectory (工作經驗) ───────
+
+function scoreExperience(job, profile, config) {
+  const cfg = config.experience;
+  const wh = profile.workHistory || [];
+  const totalYears = profile.totalYears;
+  const hasSignal = wh.length > 0 || (typeof totalYears === "number") || (profile.seniority?.rank > 0);
+  if (!hasSignal) {
+    return { score: null, noData: true, reasons: ["profile has no work-history / seniority signal"] };
+  }
+
+  const reasons = [];
+  let score = cfg.base;
+
+  // 1. Role/seniority fit against the posting (工作經驗高 → 看崗位是否符合)
+  const jobSen = inferSeniority(`${job.title || ""} ${job.description || ""}`, config.seniorityPatterns);
+  const candRank = profile.seniority?.rank || 0;
+  if (jobSen.rank && candRank) {
+    const gap = candRank - jobSen.rank;
+    if (gap === 0 || gap === 1) { score += cfg.roleFitBonus; reasons.push(`seniority matches posting (${profile.seniority.level} ≈ ${jobSen.level})`); }
+    else if (gap <= -2) { score -= cfg.underLevelPenalty; reasons.push(`candidate below posting level (${profile.seniority.level} < ${jobSen.level})`); }
+    else if (gap >= 2)  { score -= cfg.overQualifiedPenalty; reasons.push(`candidate over-qualified for posting (${profile.seniority.level} > ${jobSen.level})`); }
+  }
+
+  // 2. Domain relevance of prior titles to this role (崗位符合 → 加分)
+  const roleFamily = inferRoleFamily(job);
+  const jobText = `${job.title || ""} ${job.description || ""}`;
+  const relevantRoles = wh.filter((w) => includes(jobText, w.title) || inferRoleFamily({ title: w.title, description: "" }) === roleFamily);
+  if (wh.length) {
+    if (relevantRoles.length) { score += Math.min(14, relevantRoles.length * 7); reasons.push(`${relevantRoles.length} prior role(s) relevant to this position`); }
+    else { score -= 6; reasons.push("no prior role clearly matches this position"); }
+  }
+
+  // 3. Promotion trajectory (經驗久但沒晉升 → 扣分)
+  // Keep zero-rank titles (no seniority keyword, e.g. plain "Engineer"): staying
+  // at the same undifferentiated title for many years is itself a stagnation signal.
+  let promotions = 0;
+  if (wh.length >= 2) {
+    const ranks = wh.map((w) => w.rank);
+    for (let i = 1; i < ranks.length; i += 1) if (ranks[i] > ranks[i - 1]) promotions += 1;
+    const flat = new Set(ranks).size === 1; // every role at the same level
+    if (promotions > 0) {
+      const bonus = Math.min(cfg.promotionBonusCap, promotions * cfg.promotionBonusPerStep);
+      score += bonus; reasons.push(`${promotions} promotion(s) across roles (+${bonus})`);
+    } else if (flat && typeof totalYears === "number" && totalYears >= cfg.stagnationYears) {
+      score -= cfg.stagnationPenalty;
+      reasons.push(`${totalYears}y experience with no promotion — stagnation (-${cfg.stagnationPenalty})`);
+    }
+  } else if (typeof totalYears === "number" && totalYears >= cfg.stagnationYears && candRank <= 3) {
+    // Long tenure, still non-senior, single flat entry → soft stagnation signal.
+    score -= Math.round(cfg.stagnationPenalty / 2);
+    reasons.push(`${totalYears}y experience but still ${profile.seniority?.level || "non-senior"} — soft stagnation`);
+  }
+
+  return {
+    score: Math.max(0, Math.min(100, Math.round(score))),
+    noData: false,
+    totalYears,
+    seniority: profile.seniority?.level,
+    promotions,
+    reasons,
+  };
+}
+
+function scoreCompensation(job, config) {
+  const text = `${job.title || ""} ${job.description || ""}`.toLowerCase();
+  const hasSalary = config.compTerms.some((t) => new RegExp(t, "i").test(text));
   const salary = job.salary || job.compensation || "";
   const hasRange = /\d/.test(String(salary));
-  // No salary signal at all → N/A, excluded from weighted average
   if (!hasSalary && !hasRange) {
     return { score: null, hasSalary: false, hasRange: false, noData: true };
   }
@@ -164,9 +372,9 @@ function scoreCompensation(job) {
   return { score, hasSalary, hasRange, noData: false };
 }
 
-function scoreCulture(job) {
+function scoreCulture(job, config) {
   const text = `${job.title || ""} ${job.location || ""} ${job.description || ""}`;
-  const growthHits = GROWTH_TERMS.filter((t) => includes(text, t));
+  const growthHits = config.growthTerms.filter((t) => includes(text, t));
   const remote = /(remote|work from home|wfh|遠端)/i.test(text);
   const hybrid = /(hybrid|混合)/i.test(text);
   const missionDriven = /(mission|impact|purpose|使命|影響力)/i.test(text);
@@ -176,10 +384,10 @@ function scoreCulture(job) {
   return { score: Math.min(100, score), growthHits, remote, hybrid };
 }
 
-function scoreRedFlags(job, profile) {
+function scoreRedFlags(job, profile, config) {
   const text = `${job.title || ""} ${job.company || ""} ${job.description || ""}`;
   const avoidHits = profile.avoid.filter((k) => includes(text, k));
-  const riskHits  = RISK_TERMS.filter((t) => includes(text, t));
+  const riskHits  = config.riskTerms.filter((t) => includes(text, t));
   const expiredPenalty = job.isExpired ? 40 : 0;
   const tooShort = (!job.description || job.description.length < 120) ? 15 : 0;
   const penalty = Math.min(80, avoidHits.length * 12 + riskHits.length * 18 + expiredPenalty + tooShort);
@@ -198,26 +406,15 @@ function scoreEffort(job) {
 
 // ── Block G legitimacy tier ──────────────────────────────────────────────────
 
-const ATS_DOMAINS = [
-  "greenhouse.io", "lever.co", "ashby.io", "workable.com", "bamboohr.com",
-  "smartrecruiters.com", "indeed.com", "linkedin.com", "104.com.tw", "yourator.co",
-  "cakeresume.com", "myworkday.com", "taleo.net", "icims.com", "jobvite.com",
-  "recruitee.com", "teamtailor.com", "workday.com", "japan-dev.com",
-  "boards.greenhouse.io", "jobs.ashbyhq.com", "amazon.jobs", "careers.microsoft.com",
-];
-
-function blockG(job) {
+function blockG(job, config) {
   const text = [job.title, job.company, job.description].filter(Boolean).join(" ").toLowerCase();
   const url  = String(job.url || "").toLowerCase();
 
-  const redHits    = LEGITIMACY_RED.filter(t => text.includes(t));
-  const yellowHits = LEGITIMACY_YELLOW.filter(t => text.includes(t));
+  const redHits    = config.legitimacyRed.filter(t => text.includes(t));
+  const yellowHits = config.legitimacyYellow.filter(t => text.includes(t));
   const noUrl      = !job.url;
 
-  // ── Structural signals ──────────────────────────────────────────────────
   const signals = [];
-
-  // 1. Posting freshness
   const postDate = job.datePosted ? new Date(job.datePosted) : null;
   const daysOld  = postDate && !Number.isNaN(postDate.getTime())
     ? Math.floor((Date.now() - postDate.getTime()) / 86400000) : null;
@@ -227,8 +424,7 @@ function blockG(job) {
     else if (daysOld <= 14) signals.push({ k: "green",  msg: `Fresh posting: ${daysOld}d old` });
   }
 
-  // 2. URL quality — known ATS vs generic careers page
-  const isKnownAts = Boolean(url && ATS_DOMAINS.some(d => url.includes(d)));
+  const isKnownAts = Boolean(url && config.atsDomains.some(d => url.includes(d)));
   if (isKnownAts) {
     signals.push({ k: "green", msg: "Known ATS platform URL" });
   } else if (url) {
@@ -238,12 +434,10 @@ function blockG(job) {
     }
   }
 
-  // 3. Description depth
   if (String(job.description || "").length < 200) {
     signals.push({ k: "yellow", msg: "Very short job description" });
   }
 
-  // ── Tier decision ────────────────────────────────────────────────────────
   const yellowCount = yellowHits.length + signals.filter(s => s.k === "yellow").length;
 
   if (redHits.length >= 2 || (redHits.length >= 1 && noUrl)) {
@@ -263,78 +457,78 @@ function blockG(job) {
 
 // ── global scoring ───────────────────────────────────────────────────────────
 
-const WEIGHTS = {
-  cvMatch:      0.25,
-  northStar:    0.20,
-  compensation: 0.15,
-  culture:      0.15,
-  redFlags:     0.15,
-  effort:       0.10,
-};
-
-function dimGrade(score) {
+function dimGrade(score, t = DEFAULT_SCORING_CONFIG.thresholds.dimGrade) {
   if (score === null || score === undefined) return "N/A";
-  if (score >= 87) return "A";
-  if (score >= 74) return "B";
-  if (score >= 60) return "C";
-  if (score >= 44) return "D";
+  if (score >= t.A) return "A";
+  if (score >= t.B) return "B";
+  if (score >= t.C) return "C";
+  if (score >= t.D) return "D";
   return "F";
 }
 
 function globalTo15(score) {
-  // map 0–100 to 1.0–5.0
   return Math.round(((score / 100) * 4 + 1) * 10) / 10;
 }
 
-function globalGrade(score) {
-  if (score >= 85) return "A";
-  if (score >= 72) return "B";
-  if (score >= 58) return "C";
-  if (score >= 42) return "D";
+function globalGrade(score, t = DEFAULT_SCORING_CONFIG.thresholds.globalGrade) {
+  if (score >= t.A) return "A";
+  if (score >= t.B) return "B";
+  if (score >= t.C) return "C";
+  if (score >= t.D) return "D";
   return "F";
 }
 
-function recommendation(score, legitimacyTier) {
+function recommendation(score, legitimacyTier, t = DEFAULT_SCORING_CONFIG.thresholds.recommend) {
   if (legitimacyTier === "Suspicious") return "略過";
-  if (score >= 80) return "值得投遞";
-  if (score >= 62) return "觀望";
+  if (score >= t.pursue) return "值得投遞";
+  if (score >= t.watch) return "觀望";
   return "略過";
 }
 
 // ── main evaluator ────────────────────────────────────────────────────────────
 
-export function evaluateJob(job, profile) {
-  const cvMatch      = scoreCvMatch(job, profile);
+export function evaluateJob(job, profile, config = DEFAULT_SCORING_CONFIG) {
+  const cvMatch      = scoreCvMatch(job, profile, config);
+  const experience   = scoreExperience(job, profile, config);
+  const fieldMatch   = scoreFieldMatch(job, profile, config);
   const northStar    = scoreNorthStar(job, profile);
-  const compensation = scoreCompensation(job);
-  const culture      = scoreCulture(job);
-  const redFlags     = scoreRedFlags(job, profile);
+  const compensation = scoreCompensation(job, config);
+  const culture      = scoreCulture(job, config);
+  const redFlags     = scoreRedFlags(job, profile, config);
   const effort       = scoreEffort(job);
-  const legitimacy   = blockG(job);
+  const legitimacy   = blockG(job, config);
 
-  // Skip compensation when no salary data → redistribute its 15% proportionally
-  const compW  = compensation.noData ? 0 : WEIGHTS.compensation;
-  const totalW = WEIGHTS.cvMatch + WEIGHTS.northStar + compW + WEIGHTS.culture + WEIGHTS.redFlags + WEIGHTS.effort;
-  const rawScore = Math.round((
-    cvMatch.score             * WEIGHTS.cvMatch   +
-    northStar.score           * WEIGHTS.northStar +
-    (compensation.score ?? 0) * compW             +
-    culture.score             * WEIGHTS.culture   +
-    redFlags.score            * WEIGHTS.redFlags  +
-    effort.score              * WEIGHTS.effort
-  ) / totalW);
+  const W = config.weights;
+  // Assemble each dimension's contribution, dropping noData dims and
+  // redistributing their weight proportionally across the rest.
+  const parts = [
+    { key: "cvMatch",      score: cvMatch.score,       w: W.cvMatch },
+    { key: "experience",   score: experience.noData   ? null : experience.score,   w: W.experience },
+    { key: "northStar",    score: northStar.score,     w: W.northStar },
+    { key: "compensation", score: compensation.noData ? null : compensation.score, w: W.compensation },
+    { key: "redFlags",     score: redFlags.score,      w: W.redFlags },
+    { key: "fieldMatch",   score: fieldMatch.noData   ? null : fieldMatch.score,   w: W.fieldMatch },
+    { key: "culture",      score: culture.score,       w: W.culture },
+    { key: "effort",       score: effort.score,        w: W.effort },
+  ];
+  const active = parts.filter((p) => p.score !== null && p.score !== undefined);
+  const totalW = active.reduce((s, p) => s + p.w, 0) || 1;
+  const rawScore = Math.round(active.reduce((s, p) => s + p.score * p.w, 0) / totalW);
   const score   = Math.max(0, Math.min(100, rawScore));
-  const rating  = globalTo15(score);  // 1.0–5.0
-  const grade   = globalGrade(score);
-  const rec     = recommendation(score, legitimacy.tier);
+  const rating  = globalTo15(score);
+  const grade   = globalGrade(score, config.thresholds.globalGrade);
+  const rec     = recommendation(score, legitimacy.tier, config.thresholds.recommend);
+  const dg = (s) => dimGrade(s, config.thresholds.dimGrade);
 
   const dimensions = {
-    cvMatch:      { score: cvMatch.score,      grade: dimGrade(cvMatch.score),      label: "CV Match",                  found: cvMatch.found,      missing: cvMatch.missing },
-    northStar:    { score: northStar.score,    grade: dimGrade(northStar.score),    label: "North Star Alignment" },
-    compensation: { score: compensation.score, grade: dimGrade(compensation.score), label: "Compensation Competitiveness", noData: compensation.noData || false },
-    culture:      { score: culture.score,      grade: dimGrade(culture.score),      label: "Culture Signals",           growthHits: culture.growthHits },
-    redFlags:     { score: redFlags.score,     grade: dimGrade(redFlags.score),     label: "Red Flags",                 avoidHits: redFlags.avoidHits, riskHits: redFlags.riskHits },
-    effort:       { score: effort.score,       grade: dimGrade(effort.score),       label: "Application Effort" },
+    cvMatch:      { score: cvMatch.score,      grade: dg(cvMatch.score),      label: "CV Match",                  found: cvMatch.found,      missing: cvMatch.missing },
+    experience:   { score: experience.score,   grade: dg(experience.score),   label: "Experience & Trajectory",   noData: experience.noData || false, totalYears: experience.totalYears ?? null, seniority: experience.seniority ?? null, promotions: experience.promotions ?? 0, reasons: experience.reasons || [] },
+    northStar:    { score: northStar.score,    grade: dg(northStar.score),    label: "North Star Alignment" },
+    compensation: { score: compensation.score, grade: dg(compensation.score), label: "Compensation Competitiveness", noData: compensation.noData || false },
+    fieldMatch:   { score: fieldMatch.score,   grade: dg(fieldMatch.score),   label: "Field-of-Study Match",      noData: fieldMatch.noData || false, candidateDomains: fieldMatch.candidateDomains || [], jobDomains: fieldMatch.jobDomains || [], overlap: fieldMatch.overlap || [] },
+    culture:      { score: culture.score,      grade: dg(culture.score),      label: "Culture Signals",           growthHits: culture.growthHits },
+    redFlags:     { score: redFlags.score,     grade: dg(redFlags.score),     label: "Red Flags",                 avoidHits: redFlags.avoidHits, riskHits: redFlags.riskHits },
+    effort:       { score: effort.score,       grade: dg(effort.score),       label: "Application Effort" },
   };
 
   return {
@@ -348,7 +542,7 @@ export function evaluateJob(job, profile) {
     blockG: legitimacy,
     dimensions,
     evaluation: {
-      source: "career-ops-evaluate-v2",
+      source: "career-ops-evaluate-v3",
       overall: {
         grade,
         score,
@@ -357,7 +551,7 @@ export function evaluateJob(job, profile) {
         legitimacyTier: legitimacy.tier,
         summary: buildSummary(score, rating, dimensions, legitimacy, cvMatch),
       },
-      decision_factors: buildDecisionFactors(dimensions, northStar, culture),
+      decision_factors: buildDecisionFactors(dimensions, northStar, culture, fieldMatch, experience),
       ats_keywords: { found: cvMatch.found, missing: cvMatch.missing },
       risks: buildRisks(redFlags, legitimacy, job),
       next_actions: buildNextActions(score, legitimacy.tier),
@@ -374,11 +568,14 @@ function buildSummary(score, rating, dims, legitimacy, cvMatch) {
   return parts.filter(Boolean).join(" ");
 }
 
-function buildDecisionFactors(dims, northStar, culture) {
+function buildDecisionFactors(dims, northStar, culture, fieldMatch, experience) {
   const factors = [];
   if (northStar.targetHit) factors.push("命中目標職位類型");
   else if (northStar.roleHit) factors.push("符合目標職稱關鍵字");
   if (northStar.nsHits?.length) factors.push(`職涯方向吻合訊號：${northStar.nsHits.slice(0, 4).join("、")}`);
+  if (!fieldMatch.noData && fieldMatch.overlap?.length) factors.push(`科系相符領域：${fieldMatch.overlap.join("、")}`);
+  if (!experience.noData && experience.promotions > 0) factors.push(`具晉升軌跡（${experience.promotions} 次）`);
+  if (!experience.noData && experience.reasons?.some((r) => r.includes("stagnation"))) factors.push("年資久但缺乏晉升，需留意職涯停滯");
   if (culture.growthHits?.length) factors.push(`成長/文化訊號：${culture.growthHits.slice(0, 5).join("、")}`);
   if (culture.remote) factors.push("支援遠端工作");
   if (dims.compensation.noData) factors.push("薪資未揭露（不影響整體評分）");
@@ -418,19 +615,23 @@ async function main() {
   if (args.help) return printHelp();
   if (!args.jobs || !args.profile) throw new Error("Use --jobs <file> and --profile <file>.");
 
+  const config      = await loadScoringConfig(args.config);
   const jobsPayload = JSON.parse(await fs.readFile(args.jobs, "utf8"));
-  const profile     = normalizeProfile(JSON.parse(await fs.readFile(args.profile, "utf8")));
+  const profile     = normalizeProfile(JSON.parse(await fs.readFile(args.profile, "utf8")), config);
   const jobs        = Array.isArray(jobsPayload.jobs) ? jobsPayload.jobs : [];
-  const evaluated   = jobs.map((job) => job.isExpired ? job : evaluateJob(job, profile));
+  // Full coverage: every non-expired job is scored (expired ones are passed through untouched).
+  const evaluated   = jobs.map((job) => job.isExpired ? job : evaluateJob(job, profile, config));
 
   const payload = {
     ...jobsPayload,
+    schemaVersion: SCHEMA_VERSION,
     evaluatedAt: new Date().toISOString(),
-    evaluatedBy: "career-ops-evaluate-v2",
+    evaluatedBy: "career-ops-evaluate-v3",
     scoringModel: {
-      version: "v2",
-      dimensions: Object.keys(WEIGHTS),
-      weights: WEIGHTS,
+      version: "v3",
+      schemaVersion: SCHEMA_VERSION,
+      dimensions: Object.keys(config.weights),
+      weights: config.weights,
       scale: "0–100 + 1.0–5.0 + A–F + Block G",
     },
     jobs: evaluated,
@@ -439,7 +640,7 @@ async function main() {
   const out = args.out || args.jobs;
   await fs.mkdir(path.dirname(out), { recursive: true });
   await fs.writeFile(out, `${JSON.stringify(payload)}\n`, "utf8");
-  console.log(`[career-ops] evaluated ${evaluated.length} job(s) with 6D+BlockG -> ${out}`);
+  console.log(`[career-ops] evaluated ${evaluated.length} job(s) with 8D+BlockG (schema ${SCHEMA_VERSION}) -> ${out}`);
 }
 
 if (process.argv[1] && fileURLToPath(import.meta.url) === path.resolve(process.argv[1])) {
@@ -448,3 +649,6 @@ if (process.argv[1] && fileURLToPath(import.meta.url) === path.resolve(process.a
     process.exitCode = 1;
   });
 }
+
+// Exports for unit tests
+export { scoreFieldMatch, scoreExperience, inferRoleFamily, blockG };
