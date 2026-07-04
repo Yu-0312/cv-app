@@ -18218,7 +18218,34 @@ Schema:
 	          return counts;
 	        }
 
-	        function careerOpsScoreLocalJob(job, profile, skillCounts) {
+	        function careerOpsScoreLocalJob(job, rawProfile, skillCounts) {
+	          // 這裡收到的是 AI 解析後的原始 profile（技能在 profile.skills、目標職位在 profile.preferences.targetRoles）。
+	          // 底下的評分邏輯預期已攤平的欄位（targetRoles / preferredLocations / avoidKeywords…）；
+	          // 若直接取用原始 profile，會在這些缺少的欄位上呼叫 .filter 而丟出
+	          // 「Cannot read properties of undefined (reading 'filter')」。先正規化成安全形狀再往下用。
+	          const source = rawProfile && typeof rawProfile === "object" ? rawProfile : {};
+	          const preferences = source.preferences && typeof source.preferences === "object" ? source.preferences : {};
+	          const normalizedTargetRoles = careerOpsProfileArray(
+	            source.targetRoles || preferences.targetRoles || preferences.target_roles
+	          );
+	          if (!normalizedTargetRoles.length && source.role) normalizedTargetRoles.push(String(source.role));
+	          const profile = {
+	            ...source,
+	            skills: careerOpsProfileArray(source.skills),
+	            targetRoles: normalizedTargetRoles,
+	            preferredLocations: careerOpsProfileArray(
+	              source.preferredLocations || preferences.preferredLocations || preferences.locations
+	            ),
+	            preferredCompanies: careerOpsProfileArray(
+	              source.preferredCompanies || preferences.preferredCompanies || preferences.companies
+	            ),
+	            avoidKeywords: careerOpsProfileArray(
+	              source.avoidKeywords || preferences.avoidKeywords || preferences.avoid
+	            ),
+	            role: source.role || "",
+	            remote: source.remote != null ? source.remote : preferences.remote,
+	            employability: source.employability && typeof source.employability === "object" ? source.employability : {}
+	          };
 	          const text = `${job.title || ""}\n${job.company || ""}\n${job.location || ""}\n${job.description || ""}\n${job.employmentType || ""}`;
 	          const lowerText = text.toLowerCase();
 	          const lowerTitleDescription = `${job.title || ""} ${job.description || ""}`.toLowerCase();
