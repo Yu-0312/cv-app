@@ -1,11 +1,11 @@
 # Career Ops Intelligence Report
 
-Generated: 2026-07-03T00:02:04.362Z
+Generated: 2026-07-03T23:58:31.990Z
 
-- Active jobs: 83426
+- Active jobs: 83388
 - Expired jobs: 0
-- Duplicate groups: 3501
-- Jobs without enough description: 393
+- Duplicate groups: 3455
+- Jobs without enough description: 387
 - Rubric: Career Ops 10-Dimension Rubric
 
 ## Rubric Weights
@@ -21,56 +21,56 @@ Generated: 2026-07-03T00:02:04.362Z
 - applicationEffort: 0.08
 
 ## Top Skills
-- api: 7623
-- growth: 4624
-- operations: 4099
-- analytics: 3315
-- sales: 3257
-- python: 2377
-- go: 1921
-- sql: 1562
-- excel: 1524
-- aws: 1225
-- azure: 1014
-- machine learning: 1012
+- api: 7616
+- growth: 4592
+- operations: 4093
+- analytics: 3300
+- sales: 3227
+- python: 2362
+- go: 1928
+- sql: 1570
+- excel: 1515
+- aws: 1236
+- machine learning: 1014
+- azure: 1002
 
 ## Missing High-Demand Skills
-- growth: 4624
-- operations: 4099
-- sales: 3257
-- python: 2377
-- go: 1921
-- sql: 1562
-- excel: 1524
-- aws: 1225
-- azure: 1014
-- machine learning: 1012
+- growth: 4592
+- operations: 4093
+- sales: 3227
+- python: 2362
+- go: 1928
+- sql: 1570
+- excel: 1515
+- aws: 1236
+- machine learning: 1014
+- azure: 1002
 
 ## Global Skill Gap Priority (weighted by job score)
-- growth: 7347.9
-- operations: 6471.7
-- sales: 5118.3
-- python: 3860.8
-- go: 3078.1
-- sql: 2538.9
-- excel: 2381.6
-- aws: 2005.5
-- azure: 1662.1
-- machine learning: 1647.8
-- agents: 1307.6
-- java: 1280.6
+- growth: 7299.6
+- operations: 6462.4
+- sales: 5076
+- python: 3838.4
+- go: 3088.7
+- sql: 2554.7
+- excel: 2368.8
+- aws: 2023.6
+- machine learning: 1653.5
+- azure: 1642.3
+- agents: 1297.3
+- java: 1275.7
 
 ## Role Families
-- Backend: 79239
-- Other: 1678
-- Frontend: 825
-- AI / Data: 732
-- Sales: 352
-- Marketing: 177
-- Product: 147
-- Design: 143
-- Operations: 79
-- Internship: 40
+- Backend: 79222
+- Other: 1682
+- Frontend: 828
+- AI / Data: 729
+- Sales: 351
+- Marketing: 157
+- Product: 155
+- Design: 132
+- Operations: 78
+- Internship: 38
 
 ## Recommended Search Queries
 - Frontend Engineer

@@ -1,10 +1,10 @@
 {
   "source": "career-ops-health-monitor",
-  "checkedAt": "2026-07-03T00:02:45.579Z",
+  "checkedAt": "2026-07-03T23:59:16.076Z",
   "threshold": 0.3,
   "health": {
-    "total": 83426,
-    "active": 83426,
+    "total": 83388,
+    "active": 83388,
     "expired": 0,
     "stale": 0,
     "expiredRate": 0,
@@ -12,7 +12,7 @@
     "avgActiveScore": 65,
     "bySource": {
       "MyCareersFuture Singapore Frontend Full Stack": {
-        "total": 32,
+        "total": 31,
         "expired": 0
       },
       "The Muse Global Public Jobs": {
@@ -20,31 +20,39 @@
         "expired": 0
       },
       "The Muse Global Software Engineering": {
-        "total": 1733,
+        "total": 1737,
         "expired": 0
       },
       "The Muse Global Data Analytics": {
-        "total": 1841,
-        "expired": 0
-      },
-      "The Muse Global Remote Jobs": {
-        "total": 1816,
+        "total": 1838,
         "expired": 0
       },
       "Japan Dev English Tech Jobs": {
-        "total": 57,
+        "total": 58,
+        "expired": 0
+      },
+      "Stripe Greenhouse": {
+        "total": 385,
         "expired": 0
       },
       "Airbnb Greenhouse": {
-        "total": 129,
+        "total": 130,
         "expired": 0
       },
       "MyCareersFuture Singapore Software": {
         "total": 150,
         "expired": 0
       },
+      "The Muse Global Remote Jobs": {
+        "total": 1812,
+        "expired": 0
+      },
       "Databricks Greenhouse": {
-        "total": 455,
+        "total": 456,
+        "expired": 0
+      },
+      "Micron Workday": {
+        "total": 55,
         "expired": 0
       },
       "MyCareersFuture Singapore Product": {
@@ -52,7 +60,7 @@
         "expired": 0
       },
       "Figma Greenhouse": {
-        "total": 124,
+        "total": 125,
         "expired": 0
       },
       "MongoDB Greenhouse": {
@@ -61,10 +69,6 @@
       },
       "Remotive Global Remote Jobs": {
         "total": 31,
-        "expired": 0
-      },
-      "Stripe Greenhouse": {
-        "total": 386,
         "expired": 0
       },
       "Canonical Greenhouse": {
@@ -76,11 +80,11 @@
         "expired": 0
       },
       "ElevenLabs Ashby": {
-        "total": 94,
+        "total": 93,
         "expired": 0
       },
       "Asana Greenhouse": {
-        "total": 89,
+        "total": 88,
         "expired": 0
       },
       "Roblox Greenhouse": {
@@ -92,7 +96,7 @@
         "expired": 0
       },
       "Supabase Ashby": {
-        "total": 42,
+        "total": 43,
         "expired": 0
       },
       "PostHog Ashby": {
@@ -100,7 +104,7 @@
         "expired": 0
       },
       "Source flex job board": {
-        "total": 148,
+        "total": 124,
         "expired": 0
       },
       "MyCareersFuture Singapore AI Data": {
@@ -108,15 +112,15 @@
         "expired": 0
       },
       "Reddit Greenhouse": {
-        "total": 116,
+        "total": 115,
         "expired": 0
       },
       "Notion Ashby": {
-        "total": 87,
+        "total": 86,
         "expired": 0
       },
       "Ramp Ashby": {
-        "total": 106,
+        "total": 105,
         "expired": 0
       },
       "MyCareersFuture Singapore Business Operations": {
@@ -124,7 +128,7 @@
         "expired": 0
       },
       "GitLab Greenhouse": {
-        "total": 96,
+        "total": 93,
         "expired": 0
       },
       "Cursor Ashby": {
@@ -132,11 +136,7 @@
         "expired": 0
       },
       "NVIDIA Workday": {
-        "total": 290,
-        "expired": 0
-      },
-      "Micron Workday": {
-        "total": 55,
+        "total": 287,
         "expired": 0
       },
       "Mozilla Greenhouse": {
@@ -208,7 +208,7 @@
         "expired": 0
       },
       "Daijob Japan Broad Listings": {
-        "total": 106,
+        "total": 109,
         "expired": 0
       },
       "Samsung Research": {
@@ -216,7 +216,7 @@
         "expired": 0
       },
       "Tencent Careers China": {
-        "total": 1472,
+        "total": 1470,
         "expired": 0
       },
       "Microsoft Shanghai": {
@@ -244,7 +244,7 @@
         "expired": 0
       },
       "Tencent": {
-        "total": 27,
+        "total": 29,
         "expired": 0
       },
       "1111 Taiwan Job Sitemap": {
@@ -268,7 +268,7 @@
         "expired": 0
       },
       "Grab": {
-        "total": 45,
+        "total": 43,
         "expired": 0
       },
       "Garmin Taiwan": {
@@ -288,7 +288,7 @@
         "expired": 0
       },
       "Grab SmartRecruiters": {
-        "total": 9,
+        "total": 8,
         "expired": 0
       },
       "ASSA ABLOY SuccessFactors Taipei Manufacturing Engineer": {
@@ -320,7 +320,7 @@
         "expired": 0
       },
       "UMC": {
-        "total": 83,
+        "total": 80,
         "expired": 0
       },
       "Apple Taiwan": {
