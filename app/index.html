@@ -14545,7 +14545,7 @@
             if (provider === "gemini" && base64Data) {
               // Gemini multimodal: send PDF as base64
               const res = await fetch(
-                `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-pro:generateContent?key=${key}`,
+                `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${key}`,
                 {
                   method: "POST",
                   headers: { "Content-Type": "application/json" },
@@ -16946,7 +16946,7 @@ Schema:
 
         function detectProvider(key) {
           if (key.startsWith("sk-ant-")) return "anthropic";
-          if (key.startsWith("AIza"))   return "gemini";
+          if (key.startsWith("AIza") || key.startsWith("AQ.")) return "gemini";
           if (key.startsWith("gsk_"))   return "groq";
           if (key.startsWith("sk-"))    return "openai";
           return null;
@@ -17030,7 +17030,7 @@ Schema:
 
           /* ── Google Gemini ── */
           if (provider === "gemini") {
-            res = await careerFetchWithTimeout(`https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-pro:generateContent?key=${key}`, {
+            res = await careerFetchWithTimeout(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${key}`, {
               method: "POST",
               headers: { "Content-Type": "application/json" },
               body: JSON.stringify({
