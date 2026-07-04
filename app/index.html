@@ -18932,6 +18932,7 @@ Schema:
 		          const targetRoles = careerOpsLocalProfileTerms(profile).targetRoles;
 		          const candidateStage = careerOpsInferCandidateStage(profile);
 		          const earlyCandidate = careerOpsIsEarlyCandidateStage(candidateStage);
+		          const skillCounts = careerOpsSkillCounts(Array.isArray(jobs) ? jobs : []);
 		          const scored = (Array.isArray(jobs) ? jobs : [])
 		            .map((job, index) => normalizeCareerOpsJob(job, index))
 		            .filter(job => !job.isExpired)
@@ -18940,12 +18941,14 @@ Schema:
 		              const intel = careerOpsScoreJobAgainstProfile(normalized, profile);
 		              const staticScore = normalized.score === "" ? null : Number(normalized.score);
 		              const seniorityFit = careerOpsCandidateSeniorityFit(normalized, candidateStage);
-		              const blendedScore = careerOpsBlendProfileScore(intel.score, staticScore, seniorityFit);
+		              // 用精準 gated 評分（fit gate + 學歷路由）取代舊的 roleFit/skillCoverage 混合分數，避免分數擠在同一區間。
+		              const preciseResult = careerOpsScoreLocalJob(normalized, profile, skillCounts);
 		              const roleFit = Math.round(intel.dimensions.roleFit * 0.74 + seniorityFit.score * 0.26);
 		              return {
 		                ...normalized,
 		                _roleFit: roleFit,
-		                _score: blendedScore,
+		                _score: preciseResult.score,
+		                _preciseResult: preciseResult,
 		                _intel: intel,
 		                _candidateStage: candidateStage,
 		                _seniorityFit: seniorityFit
@@ -18960,16 +18963,18 @@ Schema:
 		            ? candidatePool
 		            : scored.filter(job => !["Senior+", "Manager+"].includes(job._seniorityFit?.seniority));
 		          const filteredSeniorityMismatches = Math.max(0, scored.length - pool.length);
+		          // Layer 分層改以「精準分數」為主軸，roleFit 為輔，確保被 fit gate/學歷路由壓低的職缺不會誤入強配對區。
 		          const layerAJobs = pool
 		            .filter(job => {
 		              const strongRoleFit = job._roleFit >= 68;
-		              const entryStretchFit = candidateStage === "entry" && job._roleFit >= 74 && job._score >= 64;
-		              return strongRoleFit && (!earlyCandidate || job._seniorityFit?.score >= 70 || entryStretchFit);
+		              const strongScore = job._score >= 55;
+		              const entryStretchFit = candidateStage === "entry" && job._roleFit >= 74 && job._score >= 55;
+		              return strongScore && strongRoleFit && (!earlyCandidate || job._seniorityFit?.score >= 70 || entryStretchFit);
 		            })
 		            .slice(0, 25);
 		          const layerAKeys = new Set(layerAJobs.map(job => job.jobKey || job.url));
 		          const layerBJobs = pool
-		            .filter(job => !layerAKeys.has(job.jobKey || job.url) && job._roleFit >= 40 && job._roleFit < 68)
+		            .filter(job => !layerAKeys.has(job.jobKey || job.url) && job._score >= 30 && job._roleFit >= 40)
 		            .slice(0, 40);
 		          const layerBKeys = new Set(layerBJobs.map(job => job.jobKey || job.url));
 		          const layerCJobs = pool
