@@ -8455,6 +8455,7 @@
               <div class="tool-row" style="margin-top:8px;">
                 <button id="careerOpsRunTargetFitBtn" class="career-link-btn" type="button" title="先填目標公司或職位，再從全台職缺池找出最相似的職缺並用目前履歷評分">填目標找相似職缺</button>
               </div>
+              <div id="careerOpsFreshness" class="career-ops-help" style="margin-top:8px;" title="職缺每天台灣 06:00 / 12:00 / 20:00 自動刷新；過期率達 25% 也會自動刷新。">職缺快照：讀取中…</div>
             </div>
             <div class="career-ops-help">支援貼上 JD / URL 清單、匯入後端職缺快照、全台職缺找最佳與批次 AI 評估；「填目標找相似職缺」會先依相似度篩出目標附近的職缺再評分，「全台職缺找最佳」則評分全部台灣職缺（海外來源仍可匯入追蹤器個別評估），本機引擎會同步產生 GitHub career-ops 風格 A-G 報告、4.0/5 投遞門檻、Block G 合法性與客製化行動。</div>
             <div class="career-ops-actions">
@@ -20117,6 +20118,87 @@ Schema:
 	          }
 	        }
 
+	        // ── 職缺快照新鮮度提示 ─────────────────────────────────────────────
+	        // 後端每天台灣 06:00 / 12:00 / 20:00（UTC 22 / 04 / 12）自動刷新，
+	        // 過期率達 25% 也會由 2 小時一次的健康檢查觸發額外刷新。
+	        const CAREER_OPS_REFRESH_UTC_HOURS = [22, 4, 12];
+	        let careerOpsLastRefreshISO = "";
+	        let careerOpsFreshnessTimer = null;
+
+	        function careerOpsNextScheduledRefresh(now = new Date()) {
+	          let best = null;
+	          const hours = CAREER_OPS_REFRESH_UTC_HOURS.slice().sort((a, b) => a - b);
+	          for (let dayOffset = 0; dayOffset <= 1 && !best; dayOffset += 1) {
+	            for (const hour of hours) {
+	              const candidate = new Date(Date.UTC(
+	                now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate() + dayOffset,
+	                hour, 0, 0, 0));
+	              if (candidate.getTime() > now.getTime()) { best = candidate; break; }
+	            }
+	          }
+	          return best;
+	        }
+
+	        function careerOpsFormatLocalTime(date) {
+	          if (!(date instanceof Date) || Number.isNaN(date.getTime())) return "";
+	          try {
+	            return new Intl.DateTimeFormat(undefined, {
+	              month: "numeric", day: "numeric", hour: "2-digit", minute: "2-digit"
+	            }).format(date);
+	          } catch {
+	            return date.toLocaleString();
+	          }
+	        }
+
+	        function careerOpsFormatRelative(ms) {
+	          const totalMinutes = Math.max(0, Math.round(ms / 60000));
+	          const hours = Math.floor(totalMinutes / 60);
+	          const minutes = totalMinutes % 60;
+	          if (hours > 0) return `${hours} 小時 ${minutes} 分`;
+	          return `${minutes} 分`;
+	        }
+
+	        function careerOpsRenderFreshness() {
+	          const el = document.getElementById("careerOpsFreshness");
+	          if (!el) return;
+	          const snapshot = window.CV_CAREER_OPS_JOBS || {};
+	          const lastISO = careerOpsLastRefreshISO
+	            || String(snapshot.generatedAt || snapshot.extractedAt || "");
+	          const now = new Date();
+	          const parts = [];
+	          if (lastISO) {
+	            const last = new Date(lastISO);
+	            if (!Number.isNaN(last.getTime())) {
+	              parts.push(`上次刷新：${careerOpsFormatLocalTime(last)}（${careerOpsFormatRelative(now.getTime() - last.getTime())}前）`);
+	            }
+	          }
+	          const next = careerOpsNextScheduledRefresh(now);
+	          if (next) {
+	            parts.push(`下次刷新：${careerOpsFormatLocalTime(next)}（約 ${careerOpsFormatRelative(next.getTime() - now.getTime())}後）`);
+	          }
+	          el.textContent = parts.length ? `職缺快照 · ${parts.join(" · ")}` : "職缺快照：每天台灣 06:00 / 12:00 / 20:00 自動刷新";
+	        }
+
+	        async function careerOpsInitFreshness() {
+	          const snapshot = window.CV_CAREER_OPS_JOBS || {};
+	          if (snapshot.generatedAt || snapshot.extractedAt) {
+	            careerOpsLastRefreshISO = String(snapshot.generatedAt || snapshot.extractedAt);
+	          } else {
+	            for (const manifestUrl of careerOpsSnapshotManifestUrls()) {
+	              try {
+	                const manifest = await careerOpsFetchJson(manifestUrl);
+	                const iso = String(manifest.generatedAt || manifest.extractedAt || "");
+	                if (iso) { careerOpsLastRefreshISO = iso; break; }
+	              } catch {
+	                // 忽略無法取得的來源，改用下一個。
+	              }
+	            }
+	          }
+	          careerOpsRenderFreshness();
+	          if (careerOpsFreshnessTimer) clearInterval(careerOpsFreshnessTimer);
+	          careerOpsFreshnessTimer = setInterval(careerOpsRenderFreshness, 60000);
+	        }
+
 	        // 全職缺自動分析（全職缺找最佳）鎖定台灣就業市場，海外求職來源仍保留於匯入與瀏覽入口。
 	        const CAREER_OPS_ANALYSIS_COUNTRY = "TW";
 
@@ -20309,6 +20391,10 @@ Schema:
 	            }
 	          });
 	          const totalPool = Array.isArray(snapshot?.jobs) ? snapshot.jobs.length : 0;
+	          if (snapshot && (snapshot.generatedAt || snapshot.extractedAt)) {
+	            careerOpsLastRefreshISO = String(snapshot.generatedAt || snapshot.extractedAt);
+	            careerOpsRenderFreshness();
+	          }
 	          const eligible = careerOpsFullPoolEligibleJobs(snapshot);
 	          if (!eligible.length) {
 	            showError(totalPool
@@ -20366,6 +20452,10 @@ Schema:
 	            }
 	          });
 	          const totalPool = Array.isArray(snapshot?.jobs) ? snapshot.jobs.length : 0;
+	          if (snapshot && (snapshot.generatedAt || snapshot.extractedAt)) {
+	            careerOpsLastRefreshISO = String(snapshot.generatedAt || snapshot.extractedAt);
+	            careerOpsRenderFreshness();
+	          }
 	          const eligible = careerOpsFullPoolEligibleJobs(snapshot);
 	          if (!eligible.length) {
 	            showError(totalPool
@@ -21582,6 +21672,7 @@ Schema:
 	          $c("careerOpsRunFullPoolBtn")?.addEventListener("click", runCareerOpsFullPoolRanker);
 	          $c("careerOpsRunTargetFitBtn")?.addEventListener("click", runCareerOpsTargetFitRanker);
 	          $c("careerOpsRunBatchBtn")?.addEventListener("click", runCareerOpsBatch);
+	          careerOpsInitFreshness();
 	          $c("careerOpsExportCsvBtn")?.addEventListener("click", exportCareerOpsCsv);
 	          $c("careerResultsArea")?.addEventListener("click", handleCareerOpsResultsClick);
 	          $c("careerResultsArea")?.addEventListener("change", handleCareerOpsResultsChange);
