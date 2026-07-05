@@ -32,7 +32,7 @@ import {
   inferSeniority,
 } from "./lib/career-ops-scoring-config.mjs";
 
-export const SCHEMA_VERSION = "career-ops/3.0";
+export const SCHEMA_VERSION = "career-ops/4.0";
 
 // ── helpers ──────────────────────────────────────────────────────────────────
 
@@ -122,6 +122,51 @@ function parseYear(value) {
   return m ? Number(m[1]) : null;
 }
 
+/**
+ * Parse a salary string into an annualised numeric {min, max} in the local
+ * currency, or null when nothing parseable. CJK-aware (萬/月薪) and handles
+ * k/M suffixes, ranges, and monthly→annual (×12) normalisation.
+ */
+function parseSalaryRange(value) {
+  const s = String(value || "").toLowerCase().replace(/,/g, "");
+  if (!s || !/\d/.test(s)) return null;
+  const monthly = /(月薪|per month|\/mo|\/month|monthly|每月)/.test(s);
+  const hourly  = /(時薪|per hour|\/hr|\/hour|hourly)/.test(s);
+  // number + optional unit suffix (k / m / 萬 / 千)
+  const re = /(\d+(?:\.\d+)?)\s*(k|m|萬|万|千)?/g;
+  const nums = [];
+  let m;
+  while ((m = re.exec(s)) !== null) {
+    let n = parseFloat(m[1]);
+    const unit = m[2];
+    if (unit === "k" || unit === "千") n *= 1e3;
+    else if (unit === "m") n *= 1e6;
+    else if (unit === "萬" || unit === "万") n *= 1e4;
+    if (n >= 1000 || unit) nums.push(n); // ignore stray small integers (e.g. "40 hours")
+  }
+  if (!nums.length) return null;
+  let min = Math.min(...nums);
+  let max = Math.max(...nums);
+  if (hourly) { min *= 2080; max *= 2080; }      // ~40h/wk × 52
+  else if (monthly) { min *= 12; max *= 12; }
+  return { min, max };
+}
+
+/** Candidate's expected salary as an annual number, or null. */
+function normalizeExpectedSalary(prefs) {
+  const direct = prefs.expectedSalary ?? prefs.salaryExpectation ?? prefs.targetSalary;
+  if (direct != null && direct !== "") {
+    const parsed = typeof direct === "number" ? { min: direct, max: direct } : parseSalaryRange(direct);
+    if (parsed) {
+      let v = parsed.max;
+      if (prefs.expectedSalaryPeriod === "month" || prefs.salaryPeriod === "month") v *= 12;
+      return v;
+    }
+  }
+  const min = Number(prefs.salaryMin || 0);
+  return min > 0 ? min : null;
+}
+
 /** Build a structured work history [{title, rank, level, start, end}] from profile. */
 function normalizeWorkHistory(profile, config) {
   const entries = [];
@@ -183,10 +228,13 @@ export function normalizeProfile(profile, config = DEFAULT_SCORING_CONFIG) {
     rawSkills: [].concat(profile.skills || prefs.keywords || []).map(s => String(s).trim()).filter(Boolean),
     targetRoles: [].concat(prefs.targetRoles || []).map(String),
     preferredLocations: tokenize([].concat(prefs.locations || []).concat(prefs.remote ? ["remote"] : []).join(" "), config),
+    rawLocations: [].concat(prefs.locations || []).map((s) => String(s).trim().toLowerCase()).filter(Boolean),
     preferredCompanies: tokenize([].concat(prefs.companies || []).join(" "), config),
     northStarGoals: tokenize(String(prefs.northStar || prefs.goals || prefs.targetIndustry || ""), config),
     salaryMin: Number(prefs.salaryMin || 0),
+    expectedSalary: normalizeExpectedSalary(prefs),
     remote: Boolean(prefs.remote),
+    needsVisa: Boolean(prefs.needsVisa || prefs.visaSponsorship || prefs.requiresSponsorship),
     education: normalizeEducation(profile),
     workHistory,
     seniority: selfSeniority,
@@ -359,17 +407,128 @@ function scoreExperience(job, profile, config) {
   };
 }
 
-function scoreCompensation(job, config) {
+function scoreCompensation(job, profile, config) {
+  const cfg = config.compensation;
   const text = `${job.title || ""} ${job.description || ""}`.toLowerCase();
   const hasSalary = config.compTerms.some((t) => new RegExp(t, "i").test(text));
-  const salary = job.salary || job.compensation || "";
-  const hasRange = /\d/.test(String(salary));
+  const salaryStr = job.salary || job.compensation || "";
+  const range = parseSalaryRange(salaryStr) || parseSalaryRange(job.description);
+  const hasRange = Boolean(range);
   if (!hasSalary && !hasRange) {
     return { score: null, hasSalary: false, hasRange: false, noData: true };
   }
-  let score = hasSalary ? 72 : 50;
-  if (hasRange) score = Math.min(100, score + 18);
-  return { score, hasSalary, hasRange, noData: false };
+
+  // Two-way fit: when the candidate states an expectation AND the job has a
+  // numeric range, score the alignment (雙向薪資適配) instead of signal-only.
+  const expectation = profile?.expectedSalary;
+  if (expectation && range) {
+    let score, verdict;
+    if (range.min >= expectation)             { score = cfg.wellAbove;      verdict = "job floor above expectation"; }
+    else if (range.max >= expectation)        { score = cfg.meetsExpectation; verdict = "range covers expectation"; }
+    else if (range.max >= expectation * cfg.nearBandRatio) { score = cfg.nearExpectation; verdict = "near expectation"; }
+    else                                      { score = cfg.belowExpectation; verdict = "below expectation"; }
+    return { score, hasSalary, hasRange: true, noData: false, expectation, jobRange: range, verdict, twoWay: true };
+  }
+
+  // Signal-only fallback (no candidate expectation or no numeric range).
+  let score = hasSalary ? cfg.signalOnly : cfg.signalNoRange;
+  if (hasRange) score = Math.min(100, score + cfg.rangeBonus);
+  return { score, hasSalary, hasRange, noData: false, jobRange: range || null, twoWay: false };
+}
+
+// ── NEW v4: location / remote / visa fit (地點・遠端・簽證) ─────────────────────
+function scoreLocation(job, profile, config) {
+  const cfg = config.location;
+  const hasPref = profile.remote || profile.needsVisa || (profile.rawLocations || []).length > 0;
+  if (!hasPref) return { score: null, noData: true, reasons: ["no location/remote/visa preference set"] };
+
+  const text = `${job.title || ""} ${job.location || ""} ${job.description || ""}`;
+  const isRemote = config.remoteTerms.some((t) => includes(text, t));
+  const isHybrid = config.hybridTerms.some((t) => includes(text, t));
+  const isOnsiteOnly = config.onsiteTerms.some((t) => includes(text, t));
+  const mentionsVisa = config.visaTerms.some((t) => includes(text, t));
+
+  const reasons = [];
+  let score = cfg.base;
+
+  if (profile.remote) {
+    if (isRemote)          { score += cfg.remoteMatchBonus; reasons.push("remote role matches remote preference"); }
+    else if (isHybrid)     { score += cfg.hybridBonus; reasons.push("hybrid role partly matches remote preference"); }
+    else if (isOnsiteOnly) { score -= cfg.remoteMismatchPenalty; reasons.push("on-site only conflicts with remote preference"); }
+  }
+
+  const locHit = (profile.rawLocations || []).find((loc) => includes(`${job.location || ""} ${text}`, loc));
+  if ((profile.rawLocations || []).length) {
+    if (locHit)         { score += cfg.locationMatchBonus; reasons.push(`preferred location matched: ${locHit}`); }
+    else if (isRemote)  { reasons.push("no city match but role is remote"); }
+    else                { score -= cfg.locationMismatchPenalty; reasons.push("no preferred location matched"); }
+  }
+
+  if (profile.needsVisa) {
+    if (mentionsVisa)   { score += cfg.visaNeededSatisfied; reasons.push("visa sponsorship / relocation mentioned"); }
+    else                { score -= cfg.visaNeededMissingPenalty; reasons.push("candidate needs visa but posting is silent"); }
+  }
+
+  return { score: Math.max(0, Math.min(100, Math.round(score))), noData: false, isRemote, isHybrid, isOnsiteOnly, mentionsVisa, reasons };
+}
+
+// ── NEW v4: company quality / reputation (公司體質・聲譽) ──────────────────────
+function scoreCompanyQuality(job, config) {
+  const cfg = config.companyQuality;
+  const company = String(job.company || "").trim();
+  const text = `${company} ${job.description || ""}`;
+  const url = String(job.url || "").toLowerCase();
+
+  const scaleHits = config.companyScaleTerms.filter((t) => includes(text, t));
+  const benefitHits = config.companyBenefitTerms.filter((t) => includes(text, t));
+  const repHits = config.companyReputationTerms.filter((t) => includes(text, t));
+  const knownAts = Boolean(url && config.atsDomains.some((d) => url.includes(d)));
+  const anonymous = !company;
+
+  // No company name and zero quality signals → nothing to judge.
+  if (anonymous && !scaleHits.length && !benefitHits.length && !repHits.length && !knownAts) {
+    return { score: null, noData: true, reasons: ["no company name or quality signal"] };
+  }
+
+  const reasons = [];
+  let score = cfg.base;
+  if (scaleHits.length)   { const b = Math.min(cfg.scaleCap, scaleHits.length * cfg.scaleBonusPer); score += b; reasons.push(`scale/funding signals (+${b})`); }
+  if (benefitHits.length) { const b = Math.min(cfg.benefitCap, benefitHits.length * cfg.benefitBonusPer); score += b; reasons.push(`benefit signals (+${b})`); }
+  if (repHits.length)     { const b = Math.min(cfg.reputationCap, repHits.length * cfg.reputationBonusPer); score += b; reasons.push(`reputation signals (+${b})`); }
+  if (knownAts)           { score += cfg.knownAtsBonus; reasons.push("reputable ATS platform"); }
+  if (anonymous)          { score -= cfg.anonymousPenalty; reasons.push("company name withheld"); }
+
+  return { score: Math.max(0, Math.min(100, Math.round(score))), noData: false, scaleHits, benefitHits, repHits, knownAts, reasons };
+}
+
+// ── NEW v4: tenure stability / job-hopping (穩定度・跳槽風險) ──────────────────
+function scoreStability(job, profile, config) {
+  const cfg = config.stability;
+  const wh = (profile.workHistory || []).filter((w) => Number.isFinite(w.start) && Number.isFinite(w.end) && w.end >= w.start);
+  if (wh.length < 2) return { score: null, noData: true, reasons: ["insufficient dated work history to judge tenure"] };
+
+  const tenures = wh.map((w) => Math.max(0, w.end - w.start));
+  const avg = tenures.reduce((a, b) => a + b, 0) / tenures.length;
+  const longest = Math.max(...tenures);
+  const reasons = [];
+  let score = cfg.base;
+
+  if (wh.length >= cfg.hoppingRoles && avg < cfg.shortTenureYears) {
+    score -= cfg.hoppingPenalty;
+    reasons.push(`avg tenure ${avg.toFixed(1)}y across ${wh.length} roles — job-hopping risk (-${cfg.hoppingPenalty})`);
+  } else if (wh.length >= cfg.hoppingRoles && avg < cfg.moderateTenureYears) {
+    score -= cfg.moderateHopPenalty;
+    reasons.push(`avg tenure ${avg.toFixed(1)}y — somewhat short (-${cfg.moderateHopPenalty})`);
+  } else if (avg >= cfg.stableTenureYears) {
+    score += cfg.stableBonus;
+    reasons.push(`avg tenure ${avg.toFixed(1)}y — stable (+${cfg.stableBonus})`);
+  }
+  if (longest >= cfg.longestStintStableYears) {
+    score += cfg.longestStintBonus;
+    reasons.push(`longest stint ${longest}y (+${cfg.longestStintBonus})`);
+  }
+
+  return { score: Math.max(0, Math.min(100, Math.round(score))), noData: false, avgTenure: Math.round(avg * 10) / 10, longestStint: longest, roles: wh.length, reasons };
 }
 
 function scoreCulture(job, config) {
@@ -488,28 +647,34 @@ function recommendation(score, legitimacyTier, t = DEFAULT_SCORING_CONFIG.thresh
 // ── main evaluator ────────────────────────────────────────────────────────────
 
 export function evaluateJob(job, profile, config = DEFAULT_SCORING_CONFIG) {
-  const cvMatch      = scoreCvMatch(job, profile, config);
-  const experience   = scoreExperience(job, profile, config);
-  const fieldMatch   = scoreFieldMatch(job, profile, config);
-  const northStar    = scoreNorthStar(job, profile);
-  const compensation = scoreCompensation(job, config);
-  const culture      = scoreCulture(job, config);
-  const redFlags     = scoreRedFlags(job, profile, config);
-  const effort       = scoreEffort(job);
-  const legitimacy   = blockG(job, config);
+  const cvMatch        = scoreCvMatch(job, profile, config);
+  const experience     = scoreExperience(job, profile, config);
+  const fieldMatch     = scoreFieldMatch(job, profile, config);
+  const northStar      = scoreNorthStar(job, profile);
+  const compensation   = scoreCompensation(job, profile, config);
+  const culture        = scoreCulture(job, config);
+  const stability      = scoreStability(job, profile, config);
+  const location       = scoreLocation(job, profile, config);
+  const companyQuality = scoreCompanyQuality(job, config);
+  const redFlags       = scoreRedFlags(job, profile, config);
+  const effort         = scoreEffort(job);
+  const legitimacy     = blockG(job, config);
 
   const W = config.weights;
   // Assemble each dimension's contribution, dropping noData dims and
   // redistributing their weight proportionally across the rest.
   const parts = [
-    { key: "cvMatch",      score: cvMatch.score,       w: W.cvMatch },
-    { key: "experience",   score: experience.noData   ? null : experience.score,   w: W.experience },
-    { key: "northStar",    score: northStar.score,     w: W.northStar },
-    { key: "compensation", score: compensation.noData ? null : compensation.score, w: W.compensation },
-    { key: "redFlags",     score: redFlags.score,      w: W.redFlags },
-    { key: "fieldMatch",   score: fieldMatch.noData   ? null : fieldMatch.score,   w: W.fieldMatch },
-    { key: "culture",      score: culture.score,       w: W.culture },
-    { key: "effort",       score: effort.score,        w: W.effort },
+    { key: "cvMatch",        score: cvMatch.score,         w: W.cvMatch },
+    { key: "experience",     score: experience.noData     ? null : experience.score,     w: W.experience },
+    { key: "northStar",      score: northStar.score,       w: W.northStar },
+    { key: "compensation",   score: compensation.noData   ? null : compensation.score,   w: W.compensation },
+    { key: "redFlags",       score: redFlags.score,        w: W.redFlags },
+    { key: "fieldMatch",     score: fieldMatch.noData     ? null : fieldMatch.score,     w: W.fieldMatch },
+    { key: "culture",        score: culture.score,         w: W.culture },
+    { key: "stability",      score: stability.noData      ? null : stability.score,      w: W.stability },
+    { key: "location",       score: location.noData       ? null : location.score,       w: W.location },
+    { key: "companyQuality", score: companyQuality.noData ? null : companyQuality.score, w: W.companyQuality },
+    { key: "effort",         score: effort.score,          w: W.effort },
   ];
   const active = parts.filter((p) => p.score !== null && p.score !== undefined);
   const totalW = active.reduce((s, p) => s + p.w, 0) || 1;
@@ -524,9 +689,12 @@ export function evaluateJob(job, profile, config = DEFAULT_SCORING_CONFIG) {
     cvMatch:      { score: cvMatch.score,      grade: dg(cvMatch.score),      label: "CV Match",                  found: cvMatch.found,      missing: cvMatch.missing },
     experience:   { score: experience.score,   grade: dg(experience.score),   label: "Experience & Trajectory",   noData: experience.noData || false, totalYears: experience.totalYears ?? null, seniority: experience.seniority ?? null, promotions: experience.promotions ?? 0, reasons: experience.reasons || [] },
     northStar:    { score: northStar.score,    grade: dg(northStar.score),    label: "North Star Alignment" },
-    compensation: { score: compensation.score, grade: dg(compensation.score), label: "Compensation Competitiveness", noData: compensation.noData || false },
+    compensation: { score: compensation.score, grade: dg(compensation.score), label: "Compensation Competitiveness", noData: compensation.noData || false, twoWay: compensation.twoWay || false, verdict: compensation.verdict || null, jobRange: compensation.jobRange || null, expectation: compensation.expectation || null },
     fieldMatch:   { score: fieldMatch.score,   grade: dg(fieldMatch.score),   label: "Field-of-Study Match",      noData: fieldMatch.noData || false, candidateDomains: fieldMatch.candidateDomains || [], jobDomains: fieldMatch.jobDomains || [], overlap: fieldMatch.overlap || [] },
     culture:      { score: culture.score,      grade: dg(culture.score),      label: "Culture Signals",           growthHits: culture.growthHits },
+    stability:    { score: stability.score,    grade: dg(stability.score),    label: "Tenure Stability",          noData: stability.noData || false, avgTenure: stability.avgTenure ?? null, longestStint: stability.longestStint ?? null, roles: stability.roles ?? 0, reasons: stability.reasons || [] },
+    location:     { score: location.score,     grade: dg(location.score),     label: "Location / Remote / Visa",  noData: location.noData || false, isRemote: location.isRemote || false, isHybrid: location.isHybrid || false, mentionsVisa: location.mentionsVisa || false, reasons: location.reasons || [] },
+    companyQuality:{ score: companyQuality.score, grade: dg(companyQuality.score), label: "Company Quality",       noData: companyQuality.noData || false, knownAts: companyQuality.knownAts || false, reasons: companyQuality.reasons || [] },
     redFlags:     { score: redFlags.score,     grade: dg(redFlags.score),     label: "Red Flags",                 avoidHits: redFlags.avoidHits, riskHits: redFlags.riskHits },
     effort:       { score: effort.score,       grade: dg(effort.score),       label: "Application Effort" },
   };
@@ -542,7 +710,7 @@ export function evaluateJob(job, profile, config = DEFAULT_SCORING_CONFIG) {
     blockG: legitimacy,
     dimensions,
     evaluation: {
-      source: "career-ops-evaluate-v3",
+      source: "career-ops-evaluate-v4",
       overall: {
         grade,
         score,
@@ -626,9 +794,9 @@ async function main() {
     ...jobsPayload,
     schemaVersion: SCHEMA_VERSION,
     evaluatedAt: new Date().toISOString(),
-    evaluatedBy: "career-ops-evaluate-v3",
+    evaluatedBy: "career-ops-evaluate-v4",
     scoringModel: {
-      version: "v3",
+      version: "v4",
       schemaVersion: SCHEMA_VERSION,
       dimensions: Object.keys(config.weights),
       weights: config.weights,
@@ -640,7 +808,7 @@ async function main() {
   const out = args.out || args.jobs;
   await fs.mkdir(path.dirname(out), { recursive: true });
   await fs.writeFile(out, `${JSON.stringify(payload)}\n`, "utf8");
-  console.log(`[career-ops] evaluated ${evaluated.length} job(s) with 8D+BlockG (schema ${SCHEMA_VERSION}) -> ${out}`);
+  console.log(`[career-ops] evaluated ${evaluated.length} job(s) with 11D+BlockG (schema ${SCHEMA_VERSION}) -> ${out}`);
 }
 
 if (process.argv[1] && fileURLToPath(import.meta.url) === path.resolve(process.argv[1])) {
@@ -651,4 +819,5 @@ if (process.argv[1] && fileURLToPath(import.meta.url) === path.resolve(process.a
 }
 
 // Exports for unit tests
-export { scoreFieldMatch, scoreExperience, inferRoleFamily, blockG };
+export { scoreFieldMatch, scoreExperience, inferRoleFamily, blockG,
+  scoreCompensation, scoreLocation, scoreCompanyQuality, scoreStability };

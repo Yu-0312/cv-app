@@ -15,6 +15,10 @@ import {
   scoreExperience,
   inferRoleFamily,
   blockG,
+  scoreCompensation,
+  scoreLocation,
+  scoreCompanyQuality,
+  scoreStability,
 } from "../career-ops-evaluate.mjs";
 import { DEFAULT_SCORING_CONFIG, inferSeniority } from "../lib/career-ops-scoring-config.mjs";
 
@@ -165,7 +169,7 @@ test("inferRoleFamily classifies common roles", () => {
 
 // ── end-to-end: new dims actually move the needle ────────────────────────────
 
-test("evaluateJob surfaces all 8 dimensions", () => {
+test("evaluateJob surfaces all 11 dimensions", () => {
   const profile = normalizeProfile({
     role: "Frontend Engineer",
     skills: ["React", "TypeScript"],
@@ -174,11 +178,97 @@ test("evaluateJob surfaces all 8 dimensions", () => {
       { title: "Junior Engineer", start: "2018", end: "2020" },
       { title: "Senior Frontend Engineer", start: "2020", end: "present" },
     ],
+    preferences: { expectedSalary: 1400000, locations: ["Taipei"], remote: true },
   }, cfg);
-  const job = { title: "Senior Frontend Engineer", description: "React TypeScript " + "d".repeat(400), url: "https://boards.greenhouse.io/x/1", salary: "NT$1,500,000", datePosted: new Date().toISOString() };
+  const job = { title: "Senior Frontend Engineer", company: "Acme", location: "Taipei / Remote", description: "React TypeScript remote " + "d".repeat(400), url: "https://boards.greenhouse.io/x/1", salary: "NT$1,500,000 - NT$1,800,000", datePosted: new Date().toISOString() };
   const out = evaluateJob(job, profile, cfg);
-  for (const key of ["cvMatch", "experience", "northStar", "compensation", "redFlags", "fieldMatch", "culture", "effort"]) {
+  for (const key of ["cvMatch", "experience", "northStar", "compensation", "redFlags", "fieldMatch", "culture", "stability", "location", "companyQuality", "effort"]) {
     assert.ok(out.dimensions[key], `dimension ${key} present`);
   }
   assert.ok(out.score > 60, `well-matched senior FE role should score decently, got ${out.score}`);
+});
+
+// ── two-way compensation (雙向薪資適配) ──────────────────────────────────────
+
+test("scoreCompensation: two-way fit rewards a range that covers expectation", () => {
+  const meets = normalizeProfile({ preferences: { expectedSalary: 1500000 } }, cfg);
+  const jobCovers = { title: "Engineer", description: "x", salary: "NT$1,400,000 - NT$1,800,000" };
+  const jobBelow  = { title: "Engineer", description: "x", salary: "NT$700,000 - NT$900,000" };
+  const covers = scoreCompensation(jobCovers, meets, cfg);
+  const below  = scoreCompensation(jobBelow, meets, cfg);
+  assert.equal(covers.twoWay, true);
+  assert.ok(covers.score > below.score, `covers (${covers.score}) should beat below (${below.score})`);
+});
+
+test("scoreCompensation: monthly salary is annualised (月薪 × 12)", () => {
+  const prof = normalizeProfile({ preferences: { expectedSalary: 1200000 } }, cfg);
+  const job = { title: "Engineer", description: "薪資 月薪 100000", salary: "月薪 100000" };
+  const res = scoreCompensation(job, prof, cfg);
+  // 100k/mo → 1.2M/yr covers the 1.2M expectation
+  assert.equal(res.noData, false);
+  assert.ok(res.jobRange && res.jobRange.max >= 1200000, `annualised max ${res.jobRange?.max}`);
+});
+
+test("scoreCompensation: no salary signal at all → noData", () => {
+  const prof = normalizeProfile({ preferences: {} }, cfg);
+  const res = scoreCompensation({ title: "Engineer", description: "build things" }, prof, cfg);
+  assert.equal(res.noData, true);
+});
+
+// ── location / remote / visa ─────────────────────────────────────────────────
+
+test("scoreLocation: remote match beats on-site-only conflict", () => {
+  const prof = normalizeProfile({ preferences: { remote: true, locations: ["Taipei"] } }, cfg);
+  const remoteJob = { title: "Engineer", location: "Taipei / Remote", description: "remote-first team" };
+  const onsiteJob = { title: "Engineer", location: "Kaohsiung", description: "on-site only, must be local" };
+  const r = scoreLocation(remoteJob, prof, cfg);
+  const o = scoreLocation(onsiteJob, prof, cfg);
+  assert.ok(r.score > o.score, `remote (${r.score}) should beat on-site (${o.score})`);
+});
+
+test("scoreLocation: no preference → noData", () => {
+  const prof = normalizeProfile({ preferences: {} }, cfg);
+  const res = scoreLocation({ title: "Engineer", location: "Taipei", description: "x" }, prof, cfg);
+  assert.equal(res.noData, true);
+});
+
+// ── company quality ──────────────────────────────────────────────────────────
+
+test("scoreCompanyQuality: funding/benefit/reputation signals raise the score", () => {
+  const rich = { title: "Engineer", company: "Acme", description: "Series C, well-funded. Stock options, learning budget. Great place to work.", url: "https://boards.greenhouse.io/acme/1" };
+  const plain = { title: "Engineer", company: "Acme", description: "we build software", url: "https://acme.example/careers/1" };
+  const r = scoreCompanyQuality(rich, cfg);
+  const p = scoreCompanyQuality(plain, cfg);
+  assert.ok(r.score > p.score, `rich (${r.score}) should beat plain (${p.score})`);
+});
+
+test("scoreCompanyQuality: anonymous company with no signal → noData", () => {
+  const res = scoreCompanyQuality({ title: "Engineer", company: "", description: "apply now", url: "" }, cfg);
+  assert.equal(res.noData, true);
+});
+
+// ── stability / job-hopping (穩定度) ─────────────────────────────────────────
+
+test("scoreStability: frequent short stints score lower than stable tenure", () => {
+  const hopper = normalizeProfile({ workHistory: [
+    { title: "Engineer", start: "2021", end: "2022" },
+    { title: "Engineer", start: "2022", end: "2023" },
+    { title: "Engineer", start: "2023", end: "2024" },
+    { title: "Engineer", start: "2024", end: "2025" },
+  ] }, cfg);
+  const stable = normalizeProfile({ workHistory: [
+    { title: "Engineer", start: "2015", end: "2019" },
+    { title: "Engineer", start: "2019", end: "2025" },
+  ] }, cfg);
+  const job = { title: "Engineer", description: "y".repeat(200) };
+  const h = scoreStability(job, hopper, cfg);
+  const s = scoreStability(job, stable, cfg);
+  assert.ok(h.reasons.some((r) => r.includes("job-hopping")), `expected hopping reason, got ${JSON.stringify(h.reasons)}`);
+  assert.ok(s.score > h.score, `stable (${s.score}) should beat hopper (${h.score})`);
+});
+
+test("scoreStability: fewer than 2 dated roles → noData", () => {
+  const bare = normalizeProfile({ workHistory: [{ title: "Engineer", start: "2020", end: "present" }] }, cfg);
+  const res = scoreStability({ title: "Engineer", description: "x" }, bare, cfg);
+  assert.equal(res.noData, true);
 });

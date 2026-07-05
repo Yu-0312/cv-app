@@ -12,20 +12,25 @@
 
 import fs from "node:fs/promises";
 
-// ── dimension weights (must cover the 8 named dimensions) ─────────────────────
-// Dimensions that report `noData` (compensation, fieldMatch, experience) are
-// dropped from the weighted average and their weight is redistributed
-// proportionally across the remaining dimensions — see evaluateJob().
+// ── dimension weights (must cover the named dimensions) ──────────────────────
+// Dimensions that report `noData` (compensation, fieldMatch, experience,
+// stability, location, companyQuality) are dropped from the weighted average
+// and their weight is redistributed proportionally across the remaining
+// active dimensions — see evaluateJob().
 export const DEFAULT_WEIGHTS = {
-  cvMatch:      0.20, // profile keyword / skills match
-  experience:   0.15, // work-history relevance + promotion trajectory (NEW)
-  northStar:    0.15, // role / career-direction alignment
-  compensation: 0.12, // salary competitiveness signals
-  redFlags:     0.12, // risk / concern signals (inverted: 100 = clean)
-  fieldMatch:   0.10, // field-of-study ↔ role-domain alignment (NEW)
-  culture:      0.10, // growth / culture / work-mode signals
-  effort:       0.06, // application feasibility (has URL, quality JD)
+  cvMatch:        0.17, // profile keyword / skills match
+  experience:     0.13, // work-history relevance + promotion trajectory
+  northStar:      0.12, // role / career-direction alignment
+  compensation:   0.10, // salary competitiveness + two-way expectation fit (NEW two-way)
+  redFlags:       0.10, // risk / concern signals (inverted: 100 = clean)
+  fieldMatch:     0.08, // field-of-study ↔ role-domain alignment
+  culture:        0.07, // growth / culture / work-mode signals
+  stability:      0.07, // tenure stability / job-hopping (NEW v4, noData-capable)
+  location:       0.06, // location / remote / visa fit (NEW v4, noData-capable)
+  companyQuality: 0.05, // company scale / funding / reputation (NEW v4, noData-capable)
+  effort:         0.05, // application feasibility (has URL, quality JD)
 };
+// Sum = 1.00.
 
 // ── keyword lexicons ──────────────────────────────────────────────────────────
 export const RISK_TERMS = [
@@ -53,6 +58,34 @@ export const LEGITIMACY_YELLOW = [
 export const COMP_TERMS = [
   "salary", "compensation", "薪資", "薪水", "待遇", "年薪", "月薪",
   "nt\\$", "twd", "\\$", "k/month",
+];
+
+// ── location / remote / visa lexicons (地點・遠端・簽證) ────────────────────────
+export const REMOTE_TERMS = [
+  "remote", "work from home", "wfh", "fully remote", "distributed team",
+  "遠端", "遠距", "在家工作", "居家辦公",
+];
+export const HYBRID_TERMS = ["hybrid", "flexible location", "混合", "混合辦公", "彈性辦公"];
+export const ONSITE_TERMS = ["on-site only", "on site only", "must be local", "到府", "駐點", "現場辦公"];
+export const VISA_TERMS = [
+  "visa sponsorship", "sponsor visa", "work permit", "relocation support",
+  "簽證", "工作簽", "工作許可", "外籍", "relocation",
+];
+
+// ── company-quality signal lexicons (公司體質・聲譽) ──────────────────────────
+// Coarse JD-derived signals; a richer signal can come from the deep-research file.
+export const COMPANY_SCALE_TERMS = [
+  "series a", "series b", "series c", "series d", "ipo", "publicly traded",
+  "unicorn", "fortune 500", "well-funded", "backed by", "raised", "funding",
+  "上市", "上櫃", "興櫃", "融資", "獨角獸", "跨國", "外商", "500 強",
+];
+export const COMPANY_BENEFIT_TERMS = [
+  "stock options", "rsu", "equity", "401k", "health insurance", "unlimited pto",
+  "learning budget", "分紅", "股票", "選擇權", "年終", "員工旅遊", "彈性工時", "教育訓練補助",
+];
+export const COMPANY_REPUTATION_TERMS = [
+  "award-winning", "great place to work", "best employer", "top employer",
+  "industry leader", "market leader", "領導品牌", "產業龍頭", "最佳雇主", "獲獎",
 ];
 
 export const ATS_DOMAINS = [
@@ -156,6 +189,57 @@ export const EXPERIENCE_CONFIG = {
   base: 55,
 };
 
+// Two-way compensation tunables (雙向薪資適配)
+export const COMPENSATION_CONFIG = {
+  signalOnly: 72,        // job mentions comp but no numeric range
+  signalNoRange: 50,     // weak comp mention
+  rangeBonus: 18,        // numeric range present → +this (signal-only path)
+  // When the candidate provides an expected salary, compare against the job's
+  // numeric range and score the two-way fit instead of signal-only.
+  meetsExpectation: 90,  // job's top of range ≥ expectation
+  nearExpectation: 74,   // within `nearBandRatio` below expectation
+  belowExpectation: 46,  // clearly below expectation
+  wellAbove: 96,         // job floor already above expectation (great)
+  nearBandRatio: 0.9,    // ≥ 90% of expectation counts as "near"
+};
+
+// Location / remote / visa tunables (地點・遠端・簽證)
+export const LOCATION_CONFIG = {
+  base: 60,
+  remoteMatchBonus: 30,  // candidate wants remote AND job is remote
+  remoteMismatchPenalty: 24, // candidate wants remote but job is on-site only
+  hybridBonus: 14,
+  locationMatchBonus: 26, // candidate's preferred city appears in job location
+  locationMismatchPenalty: 18, // preferred cities set, none match, not remote
+  visaNeededSatisfied: 20, // candidate needs visa AND job mentions sponsorship
+  visaNeededMissingPenalty: 22, // candidate needs visa, job silent/on-site
+};
+
+// Company-quality tunables (公司體質・聲譽)
+export const COMPANY_QUALITY_CONFIG = {
+  base: 58,
+  scaleBonusPer: 8,   scaleCap: 24,
+  benefitBonusPer: 6, benefitCap: 18,
+  reputationBonusPer: 9, reputationCap: 18,
+  knownAtsBonus: 8,   // reputable ATS platform (greenhouse/lever/ashby…)
+  anonymousPenalty: 16, // no company name → dock
+  // If company is anonymous AND there is not a single quality signal → noData.
+};
+
+// Stability / job-hopping tunables (穩定度・跳槽風險)
+export const STABILITY_CONFIG = {
+  base: 62,
+  shortTenureYears: 1.3,   // avg tenure below this over enough roles = hopping
+  hoppingRoles: 3,         // need ≥ this many dated roles to judge hopping
+  hoppingPenalty: 26,
+  moderateHopPenalty: 12,  // 1.3–1.8y avg
+  moderateTenureYears: 1.8,
+  stableTenureYears: 3.0,  // avg ≥ this = stable
+  stableBonus: 18,
+  longestStintStableYears: 4, // at least one 4y+ stint → reassurance bonus
+  longestStintBonus: 8,
+};
+
 // ── deep-merge helper for overrides ──────────────────────────────────────────
 function isObject(v) { return v && typeof v === "object" && !Array.isArray(v); }
 
@@ -183,6 +267,17 @@ export const DEFAULT_SCORING_CONFIG = {
   seniorityRank: SENIORITY_RANK,
   seniorityPatterns: SENIORITY_PATTERNS, // note: RegExp not JSON-serialisable; overrides use `seniorityPatternsRaw`
   experience: EXPERIENCE_CONFIG,
+  compensation: COMPENSATION_CONFIG,
+  location: LOCATION_CONFIG,
+  companyQuality: COMPANY_QUALITY_CONFIG,
+  stability: STABILITY_CONFIG,
+  remoteTerms: REMOTE_TERMS,
+  hybridTerms: HYBRID_TERMS,
+  onsiteTerms: ONSITE_TERMS,
+  visaTerms: VISA_TERMS,
+  companyScaleTerms: COMPANY_SCALE_TERMS,
+  companyBenefitTerms: COMPANY_BENEFIT_TERMS,
+  companyReputationTerms: COMPANY_REPUTATION_TERMS,
 };
 
 /**
