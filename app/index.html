@@ -8549,6 +8549,14 @@
               <div id="careerSelectedResumeFile" class="career-selected-file" style="display:none;"></div>
               <div id="careerUploadStatus" class="career-upload-status" role="status" aria-live="polite" style="display:none;"></div>
               <div id="careerUploadProfilePreview" class="career-upload-profile-preview" style="display:none;"></div>
+              <div class="career-upload-target" style="margin-top:12px;background:rgba(255,255,255,0.55);border:1px solid var(--line);border-radius:12px;padding:12px 14px;">
+                <div class="career-panel-label" style="margin-bottom:6px;">目標職種／關鍵字（選填）</div>
+                <p style="font-size:12px;color:var(--muted);margin:0 0 8px;line-height:1.5;">填入你想找的職種或公司後，本機比對會先用加權相似度篩出最相關的前 10000 筆職缺再評分，避免掃過全部台灣職缺；留空則照舊比對全部。</p>
+                <div class="compact-field-grid">
+                  <input id="careerUploadTargetTitle" type="text" placeholder="目標職種／關鍵字，例如：前端工程師" />
+                  <input id="careerUploadTargetCompany" type="text" placeholder="目標公司（選填）" />
+                </div>
+              </div>
               <div class="career-upload-actions">
                 <button id="careerParseResumeBtn" class="career-link-btn" type="button" style="display:none;">解析已選履歷</button>
                 <button id="careerRunAnalysisBtn" class="career-analyze-btn" type="button" style="display:none;">開始本機職缺比對</button>
@@ -9234,6 +9242,9 @@
         "地點（選填）": "Location (optional)",
         "偏好遠端": "Prefer remote",
         "填目標找相似職缺": "Find similar to target",
+        "目標職種／關鍵字（選填）": "Target role / keyword (optional)",
+        "填入你想找的職種或公司後，本機比對會先用加權相似度篩出最相關的前 10000 筆職缺再評分，避免掃過全部台灣職缺；留空則照舊比對全部。": "Enter the role or company you want. The local match first uses weighted similarity to pick the top 10,000 most relevant jobs before scoring, instead of scanning every Taiwan job; leave it blank to compare all as before.",
+        "目標職種／關鍵字，例如：前端工程師": "Target role / keyword, e.g. Frontend Engineer",
         "支援貼上 JD / URL 清單、匯入後端職缺快照、全台職缺找最佳與批次 AI 評估；「全台職缺找最佳」只評分台灣職缺（海外來源仍可匯入追蹤器個別評估），本機引擎會同步產生 GitHub career-ops 風格 A-G 報告、4.0/5 投遞門檻、Block G 合法性與客製化行動。": "Supports pasted JDs / URL lists, backend job snapshots, Find Best (Taiwan), and batch AI evaluation. \"Find Best (Taiwan)\" only scores Taiwan jobs (overseas sources can still be imported to the tracker and evaluated individually); the local engine also generates GitHub career-ops style A-G reports, a 4.0/5 apply threshold, Block G legitimacy checks, and tailored actions.",
         "AI 批次評估": "AI Batch Evaluation",
         "本機重評": "Re-score Locally",
@@ -16948,7 +16959,23 @@ Schema:
             d.education  && `教育背景：${d.education}`,
             d.projects   && `專案/作品：${d.projects}`,
           ].filter(Boolean);
-          return parts.length ? parts.join("\n\n") : "";
+          if (parts.length) return parts.join("\n\n");
+          // 後備：若「CV 履歷」頁尚未填寫，但使用者已在右側「履歷上傳」解析過 PDF，
+          // 就直接沿用那份解析出的履歷文字，讓左側 AI 模式不必再回去重填。
+          const uploaded = window._careerOpsExtractedProfile || null;
+          if (uploaded) {
+            const up = [
+              uploaded.role && `職稱/目標：${uploaded.role}`,
+              Array.isArray(uploaded.skills) && uploaded.skills.length && `技能：${uploaded.skills.join("、")}`,
+              uploaded.summary && `自我介紹：${uploaded.summary}`,
+              Array.isArray(uploaded.workHistory) && uploaded.workHistory.length &&
+                `工作經歷：${uploaded.workHistory.map(w => [w.title, w.company].filter(Boolean).join(" @ ")).filter(Boolean).join("；")}`,
+            ].filter(Boolean);
+            if (up.length) return up.join("\n\n");
+          }
+          const uploadedText = window._careerOpsExtractedProfileText || "";
+          if (uploadedText) return String(uploadedText).slice(0, 6000);
+          return "";
         }
 
         function updateCvSnippet() {
@@ -17098,6 +17125,9 @@ Schema:
 
         /* ── loading / error states ── */
         function showLoading(msg) {
+          // 左側分析的結果與載入狀態都畫在 careerResultsArea（職缺追蹤分頁），
+          // 若使用者正停在「履歷上傳 / Deep Fit」分頁會看不到 → 先切回追蹤分頁。
+          try { if (typeof careerOpsSetTab === "function") careerOpsSetTab("tracker"); } catch {}
           $c("careerResultsArea").innerHTML = `
             <div class="career-loading">
               <div class="career-loading-spinner"></div>
@@ -17106,6 +17136,8 @@ Schema:
         }
 
         function showError(msg) {
+          // 同 showLoading：確保錯誤訊息所在的分頁是可見的，避免「按了沒反應」。
+          try { if (typeof careerOpsSetTab === "function") careerOpsSetTab("tracker"); } catch {}
           $c("careerResultsArea").innerHTML = `
             <div style="padding:40px 32px;text-align:center;color:var(--danger);font-size:13.5px;line-height:1.6;">${careerText(msg)}</div>`;
         }
@@ -19127,9 +19159,24 @@ Schema:
 		          const allJobs = await careerOpsLoadSnapshotJobs();
 		          if (!allJobs.length) throw new Error("職缺快照是空的，請先匯入或產生 data/app/career-ops-jobs.js。");
 		          // 簡歷比對同樣鎖定台灣就業市場，海外來源仍可從匯入入口個別評估。
-		          const jobs = allJobs.filter(job => careerOpsIsAnalysisCountryJob(job));
+		          let jobs = allJobs.filter(job => careerOpsIsAnalysisCountryJob(job));
 		          if (!jobs.length) throw new Error(`職缺快照共 ${allJobs.length} 筆，但沒有台灣職缺可比對（分析已限縮台灣）。海外職缺仍可從匯入入口加入追蹤器後個別評估。`);
-		          setStatus(`本機評分中... ${jobs.length} 筆台灣職缺（已從 ${allJobs.length} 筆篩出）`);
+		          // 若使用者填了「目標職種／關鍵字」，先用加權相似度把台灣職缺篩到最相關的前 N 筆再評分，
+		          // 避免每次都掃過全部台灣職缺；未填則維持原本全比對。
+		          const targetSeed = options.targetSeed && (options.targetSeed.company || options.targetSeed.title)
+		            ? options.targetSeed : null;
+		          const twCount = jobs.length;
+		          if (targetSeed && typeof careerOpsRankBySimilarity === "function") {
+		            const seedLabel = [targetSeed.company, targetSeed.title].filter(Boolean).join(" / ");
+		            setStatus(`依「${seedLabel}」相似度篩選中... 共 ${twCount} 筆台灣職缺`);
+		            await new Promise(resolve => setTimeout(resolve, 0));
+		            const ranked = careerOpsRankBySimilarity(targetSeed, jobs, { limit: 10000, threshold: 0 });
+		            if (ranked.length) jobs = ranked.map(item => item.job);
+		          }
+		          const scopeNote = targetSeed
+		            ? `本機評分中... 已依目標篩出 ${jobs.length} 筆相似職缺（原台灣職缺 ${twCount} 筆）`
+		            : `本機評分中... ${jobs.length} 筆台灣職缺（已從 ${allJobs.length} 筆篩出）`;
+		          setStatus(scopeNote);
 		          await new Promise(resolve => setTimeout(resolve, 0));
 		          const classified = careerOpsClassifyLocalJobs(jobs, profile);
 		          setStatus("整理 Layer A / B / C 結果...");
@@ -19460,7 +19507,12 @@ Schema:
 		            runBtn.disabled = true;
 		            try {
 		              setCareerUploadStatus("讀取職缺快照中…");
-		              await careerOpsRunLocalDeepFit(profile, profileId, { statusEl });
+		              const upTitle = String(document.getElementById("careerUploadTargetTitle")?.value || "").trim();
+		              const upCompany = String(document.getElementById("careerUploadTargetCompany")?.value || "").trim();
+		              const targetSeed = {};
+		              if (upCompany) targetSeed.company = upCompany;
+		              if (upTitle) targetSeed.title = upTitle;
+		              await careerOpsRunLocalDeepFit(profile, profileId, { statusEl, targetSeed });
 		              runBtn.textContent = "分析完成！查看結果";
 		              setCareerUploadStatus("分析完成：已產生本機職缺比對結果。", "success");
 		              careerOpsSetTab("deepfit");
@@ -20877,6 +20929,7 @@ Schema:
 	        }
 
 	        function renderCareerOpsDashboard(message = "") {
+	          try { if (typeof careerOpsSetTab === "function") careerOpsSetTab("tracker"); } catch {}
 	          if (!careerOpsReportsLoaded) loadCareerOpsReports();
 	          const allJobs = loadCareerOpsJobs().sort(careerOpsJobSort);
 	          if (!allJobs.length) {
