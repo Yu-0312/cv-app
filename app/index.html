@@ -18706,6 +18706,26 @@ Schema:
 	            : `<div class="career-explore-card">${content}</div>`;
 	        }
 
+	        function renderCareerTargetRow(item) {
+	          const url = item.url || "";
+	          const color = careerOpsTargetTierColor(item.targetTier);
+	          const scoreText = (item.score != null && item.score !== "") ? item.score : "—";
+	          const locPart = item.location ? " · " + careerText(item.location) : "";
+	          const content = `
+	            <div style="display:flex;align-items:center;gap:12px;min-width:0;flex:1;">
+	              <span style="flex:none;font-size:11px;font-weight:800;color:#fff;background:${color};padding:3px 8px;border-radius:999px;white-space:nowrap;">${careerText(item.targetTierLabel || "")}</span>
+	              <div style="min-width:0;">
+	                <div style="font-weight:700;font-size:13.5px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${careerText(item.title || "—")}</div>
+	                <div style="color:var(--muted);font-size:12px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${careerText(item.company || "")}${locPart}</div>
+	              </div>
+	            </div>
+	            <div style="flex:none;font-weight:800;font-size:15px;">${careerText(scoreText)}</div>`;
+	          const rowStyle = "display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 14px;border:1px solid var(--line);border-radius:10px;background:#fff;text-decoration:none;color:inherit;";
+	          return url
+	            ? `<a style="${rowStyle}" href="${careerText(url)}" target="_blank" rel="noreferrer noopener">${content}</a>`
+	            : `<div style="${rowStyle}">${content}</div>`;
+	        }
+
 	        function renderDeepFitDashboard() {
 		          const area = $c("careerDeepFitArea");
 		          if (!area) return;
@@ -18763,6 +18783,28 @@ Schema:
 	            </div>
 	            <div class="career-explore-grid">${layerC.map(renderLayerCCard).join("")}</div>` : "";
 
+	          // 若有填目標（公司/職位），改用單一清單、依四層目標優先級排序；否則維持 Layer A/B/C。
+	          const targetSeed = df.targetSeed || null;
+	          const targetRanked = Array.isArray(df.targetRanked) ? df.targetRanked : null;
+	          let mainSectionsHtml;
+	          if (targetSeed && targetRanked) {
+	            const counts = Array.isArray(df.targetTierCounts) ? df.targetTierCounts : [0, 0, 0, 0];
+	            const seedLabel = [targetSeed.company, targetSeed.title].filter(Boolean).join(" / ");
+	            const tierSummaryHtml = `
+	              <div style="border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin-bottom:14px;background:var(--surface-strong);">
+	                <div style="font-weight:800;margin-bottom:10px;font-size:13px;">目標優先排序（依「${careerText(seedLabel)}」由高到低）</div>
+	                <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:8px;">
+	                  ${CAREER_OPS_TARGET_TIER_LABELS.map((label, i) => `<div style="display:flex;align-items:center;justify-content:space-between;gap:8px;border:1px solid var(--line);border-radius:8px;padding:6px 10px;"><span style="font-size:12px;display:flex;align-items:center;gap:6px;"><span style="width:9px;height:9px;border-radius:50%;background:${careerOpsTargetTierColor(i)};display:inline-block;"></span>${careerText(label)}</span><strong style="font-size:12.5px;${counts[i] ? "" : "color:var(--muted);"}">${counts[i] ? counts[i] + " 筆" : "沒有"}</strong></div>`).join("")}
+	                </div>
+	              </div>`;
+	            const targetListHtml = targetRanked.length
+	              ? `<div style="display:flex;flex-direction:column;gap:8px;">${targetRanked.map(renderCareerTargetRow).join("")}</div>`
+	              : `<div class="career-ops-empty">目標比對後沒有可顯示的職缺。</div>`;
+	            mainSectionsHtml = `${tierSummaryHtml}${targetListHtml}`;
+	          } else {
+	            mainSectionsHtml = `${layerAHtml}${layerBHtml}${layerCHtml}`;
+	          }
+
 	          area.innerHTML = `
 	            ${sourceNoteHtml}
 	            ${healthHtml}
@@ -18776,9 +18818,7 @@ Schema:
 	              <button class="career-link-btn" type="button" onclick="careerOpsDownloadDeepFitJson()">下載 JSON 報告</button>
 	              <button class="career-link-btn" type="button" onclick="careerOpsCreateShareLink()">產生分享連結（7天）</button>
 	            </div>
-	            ${layerAHtml}
-	            ${layerBHtml}
-	            ${layerCHtml}
+	            ${mainSectionsHtml}
 	            <div id="careerDeepFitSharePanel" style="display:none;" class="career-share-panel">
 	              <strong>分享連結（7 天有效）</strong>
 	              <div class="career-share-url" id="careerShareUrl"></div>
@@ -19192,6 +19232,16 @@ Schema:
 		            engine: "frontend-local-heuristic"
 		          };
 		          const result = { summary, layerA: classified.layerA, layerB: classified.layerB, layerC: classified.layerC };
+		          if (targetSeed) {
+		            const tr = careerOpsBuildTargetRanked(targetSeed, [
+		              ...(classified.layerA || []),
+		              ...(classified.layerB || []),
+		              ...(classified.layerC || [])
+		            ]);
+		            result.targetSeed = targetSeed;
+		            result.targetRanked = tr.ranked;
+		            result.targetTierCounts = tr.counts;
+		          }
 		          window.CV_CAREER_OPS_DEEP_FIT = result;
 		          window._careerOpsDeepFitSource = "user-upload";
 		          const analysisId = await careerOpsSaveLocalAnalysisToCloud(result, profileId);
@@ -20408,6 +20458,44 @@ Schema:
 	          }
 	          scored.sort((a, b) => b.similarity - a.similarity);
 	          return (typeof limit === "number" && limit > 0) ? scored.slice(0, limit) : scored;
+	        }
+
+	        // 目標優先分層：依「公司是否相同 + 職位關鍵字是否對應」把職缺分成四層（0 最高、3 最低）。
+	        const CAREER_OPS_TARGET_TIER_LABELS = ["對應公司 + 對應職位", "對應公司", "對應職位", "都不對應"];
+	        function careerOpsTargetTierColor(tier) {
+	          return ["#0a7d3e", "#1d4ed8", "#b45309", "#6b7280"][tier] || "#6b7280";
+	        }
+	        function careerOpsTitleKeywordMatch(seedTitle, jobTitle) {
+	          const st = String(seedTitle || "").trim();
+	          if (!st) return false;
+	          const seedTokens = careerOpsSimTokens(st);
+	          const jobTokens = careerOpsSimTokens(jobTitle);
+	          for (const t of seedTokens) { if (jobTokens.has(t)) return true; }
+	          const seedFam = careerOpsRoleFamily({ title: st });
+	          const jobFam = careerOpsRoleFamily({ title: jobTitle });
+	          return seedFam !== "Other" && seedFam === jobFam;
+	        }
+	        function careerOpsTargetTier(seed, job) {
+	          const companyMatch = Boolean(seed && seed.company) && careerOpsSimCompanyScore(seed.company, job.company) === 1;
+	          const titleMatch = Boolean(seed && seed.title) && careerOpsTitleKeywordMatch(seed.title, job.title);
+	          let tier;
+	          if (companyMatch && titleMatch) tier = 0;
+	          else if (companyMatch && !titleMatch) tier = 1;
+	          else if (!companyMatch && titleMatch) tier = 2;
+	          else tier = 3;
+	          return { tier, companyMatch, titleMatch, label: CAREER_OPS_TARGET_TIER_LABELS[tier] };
+	        }
+	        function careerOpsBuildTargetRanked(seed, layers) {
+	          const combined = [];
+	          for (const item of (layers || [])) {
+	            if (!item) continue;
+	            const t = careerOpsTargetTier(seed, item);
+	            combined.push({ ...item, targetTier: t.tier, targetTierLabel: t.label, targetCompanyMatch: t.companyMatch, targetTitleMatch: t.titleMatch });
+	          }
+	          combined.sort((a, b) => a.targetTier - b.targetTier || (Number(b.score) || 0) - (Number(a.score) || 0));
+	          const counts = [0, 0, 0, 0];
+	          for (const item of combined) counts[item.targetTier] += 1;
+	          return { ranked: combined, counts };
 	        }
 
 	        function careerOpsReadTargetSeed() {
