@@ -191,7 +191,29 @@ async function writeReport(filePath, report) {
   await fs.writeFile(filePath, report, "utf8");
 }
 
-function renderParallelReport({ startedAt, finishedAt, concurrency, chunkCount, sourceCount, jobCount, errors }) {
+function summarizeBySource(jobs) {
+  // Aggregate active (non-expired) jobs by their sourceType (e.g. "adapter:104")
+  // and human-readable source label, so each CI run shows which board actually
+  // returned data — a board that returned 0 either found nothing or errored out.
+  const counts = new Map();
+  for (const job of jobs) {
+    if (job?.isExpired) continue;
+    const key = job?.sourceType || "unknown";
+    const label = job?.source || "";
+    const entry = counts.get(key) || { key, label, count: 0 };
+    entry.count += 1;
+    if (!entry.label && label) entry.label = label;
+    counts.set(key, entry);
+  }
+  return [...counts.values()].sort((a, b) => b.count - a.count);
+}
+
+function renderSourceBreakdownLines(breakdown) {
+  if (!breakdown.length) return ["- None"];
+  return breakdown.map((e) => `- ${e.key}${e.label && e.label !== e.key ? ` (${e.label})` : ""}: ${e.count}`);
+}
+
+function renderParallelReport({ startedAt, finishedAt, concurrency, chunkCount, sourceCount, jobCount, errors, breakdown = [] }) {
   return `# Career Ops Parallel Pipeline Report
 
 - Started: ${startedAt}
@@ -201,6 +223,10 @@ function renderParallelReport({ startedAt, finishedAt, concurrency, chunkCount, 
 - Sources scanned: ${sourceCount}
 - Jobs: ${jobCount}
 - Errors: ${errors.length}
+
+## Jobs by Source
+
+${renderSourceBreakdownLines(breakdown).join("\n")}
 
 ## Worker Errors
 
@@ -264,6 +290,12 @@ async function main() {
     const merged = await mergeWorkerOutputs(outputFiles, "tooling/data/app/career-ops-jobs.json", args.includeExpired);
     await writeJson("tooling/data/app/career-ops-jobs.json", merged);
     await writeBrowserJs("tooling/data/app/career-ops-jobs.js", merged);
+    const breakdown = summarizeBySource(merged.jobs);
+    console.log(`[career-ops] jobs by source (${merged.jobCount} active total):`);
+    for (const e of breakdown) {
+      console.log(`  ${e.key}${e.label && e.label !== e.key ? ` (${e.label})` : ""}: ${e.count}`);
+    }
+    if (!breakdown.length) console.log("  (no jobs returned by any source)");
     await writeReport("tooling/data/app/career-ops-parallel-report.md", renderParallelReport({
       startedAt,
       finishedAt: new Date().toISOString(),
@@ -271,7 +303,8 @@ async function main() {
       chunkCount: chunks.length,
       sourceCount: merged.sourceCount,
       jobCount: merged.jobCount,
-      errors: merged.errors
+      errors: merged.errors,
+      breakdown
     }));
   }
 
