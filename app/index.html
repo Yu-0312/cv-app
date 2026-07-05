@@ -20399,7 +20399,54 @@ Schema:
 	          }
 	          return out;
 	        }
+	        // 公司別名對應：使用者輸入「台積電」也要能對到「TSMC」「TSMC 台積電」「Taiwan Semiconductor」等等。
+	        // 每組列出彼此等價的中英文名稱／常見寫法；公司字串只要包含其中任一關鍵字即視為同一家。
+	        // 關鍵字皆採用夠獨特的字串，避免把不同公司誤併在一起。
+	        const CAREER_OPS_COMPANY_ALIASES = [
+	          { id: "tsmc", keys: ["台積電", "台積", "tsmc", "taiwan semiconductor"] },
+	          { id: "foxconn", keys: ["鴻海", "富士康", "foxconn", "hon hai"] },
+	          { id: "mediatek", keys: ["聯發科", "mediatek"] },
+	          { id: "delta-electronics", keys: ["台達電", "台達", "delta electronics"] },
+	          { id: "quanta", keys: ["廣達", "quanta computer"] },
+	          { id: "asus", keys: ["華碩", "asus", "asustek"] },
+	          { id: "acer", keys: ["宏碁", "acer"] },
+	          { id: "umc", keys: ["聯電", "united microelectronics"] },
+	          { id: "ase", keys: ["日月光", "ase technology", "advanced semiconductor engineering"] },
+	          { id: "pegatron", keys: ["和碩", "pegatron"] },
+	          { id: "wistron", keys: ["緯創", "wistron"] },
+	          { id: "compal", keys: ["仁寶", "compal"] },
+	          { id: "innolux", keys: ["群創", "innolux"] },
+	          { id: "auo", keys: ["友達", "au optronics"] },
+	          { id: "realtek", keys: ["瑞昱", "realtek"] },
+	          { id: "novatek", keys: ["聯詠", "novatek"] },
+	          { id: "msi", keys: ["微星", "micro-star"] },
+	          { id: "gigabyte", keys: ["技嘉", "gigabyte"] },
+	          { id: "garmin", keys: ["台灣國際航電", "garmin"] },
+	          { id: "trendmicro", keys: ["趨勢科技", "trend micro"] },
+	          { id: "chunghwa-telecom", keys: ["中華電信", "chunghwa telecom"] },
+	          { id: "taiwan-mobile", keys: ["台灣大哥大", "taiwan mobile"] },
+	          { id: "cathay", keys: ["國泰金", "國泰人壽", "國泰世華", "cathay financial", "cathay life", "cathay united"] },
+	          { id: "fubon", keys: ["富邦金", "富邦人壽", "fubon financial", "fubon life"] },
+	          { id: "formosa-plastics", keys: ["台塑", "formosa plastics"] },
+	          { id: "shopee", keys: ["蝦皮", "shopee"] },
+	          { id: "google", keys: ["google", "谷歌"] },
+	          { id: "microsoft", keys: ["microsoft", "微軟"] },
+	          { id: "amazon", keys: ["amazon", "亞馬遜"] },
+	          { id: "apple", keys: ["蘋果", "apple inc", "apple taiwan"] },
+	          { id: "meta", keys: ["facebook", "臉書", "meta platforms"] },
+	          { id: "nvidia", keys: ["nvidia", "輝達"] },
+	        ];
+	        function careerOpsCompanyCanonical(raw) {
+	          const s = String(raw || "").toLowerCase();
+	          if (!s) return null;
+	          for (const group of CAREER_OPS_COMPANY_ALIASES) {
+	            for (const key of group.keys) { if (s.includes(key.toLowerCase())) return group.id; }
+	          }
+	          return null;
+	        }
 	        function careerOpsSimCompanyScore(seed, job) {
+	          const ca = careerOpsCompanyCanonical(seed), cb = careerOpsCompanyCanonical(job);
+	          if (ca && cb) return ca === cb ? 1 : 0;
 	          const a = careerOpsSimNormCompany(seed), b = careerOpsSimNormCompany(job);
 	          if (!a || !b) return 0;
 	          if (a === b) return 1;

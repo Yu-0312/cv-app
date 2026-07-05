@@ -1043,6 +1043,98 @@ function normalizeSitemapJob(entry, source, toolkit) {
   });
 }
 
+// 台灣人力銀行（104 / yourator）多半要求帶 Referer 才會回傳 JSON，否則會 403。
+// 因此用專屬的 fetch helper 帶上必要標頭，而不是走 toolkit.fetchJson。
+async function fetchJsonWithHeaders(url, timeoutMs, extraHeaders = {}) {
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), timeoutMs);
+  try {
+    const response = await fetch(url, {
+      signal: controller.signal,
+      headers: {
+        "accept": "application/json,text/plain,*/*",
+        "accept-language": "zh-TW,zh;q=0.9,en;q=0.8",
+        "cache-control": "no-cache",
+        "user-agent": "Mozilla/5.0 CV-Studio-Career-Ops/1.0",
+        ...extraHeaders
+      }
+    });
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    return await response.json();
+  } finally {
+    clearTimeout(timer);
+  }
+}
+
+function normalize104Job(job, source, toolkit) {
+  // 104 list API 每筆 job：jobName / custName / jobAddrNoDesc / description / link.job(協定相對) / jobNo / appearDate / salaryDesc ...
+  const rawLink = job?.link?.job || job?.link?.applyAnalyze || "";
+  let url = "";
+  if (rawLink) {
+    const cleaned = String(rawLink).startsWith("//") ? `https:${rawLink}` : String(rawLink);
+    url = normalizeUrl(cleaned) || normalizeUrl(new URL(cleaned, "https://www.104.com.tw").href);
+  }
+  if (!url && job?.jobNo) url = `https://www.104.com.tw/job/${encodeURIComponent(String(job.jobNo))}`;
+  if (url) {
+    try { const parsed = new URL(url); parsed.search = ""; url = parsed.href; } catch {}
+  }
+  const tags = Array.isArray(job?.tags) ? job.tags.filter(Boolean).join(", ") : "";
+  const description = [
+    toolkit.stripHtml(job?.description || ""),
+    job?.salaryDesc ? `Salary: ${job.salaryDesc}` : "",
+    job?.periodDesc ? `Experience: ${job.periodDesc}` : "",
+    job?.optionEdu ? `Education: ${job.optionEdu}` : "",
+    tags ? `Tags: ${tags}` : "",
+    "此職缺由 104 人力銀行公開搜尋 API 匯入，保留原始職缺 URL 供後續查看、去重與排序。"
+  ].filter(Boolean).join("\n\n");
+  return toolkit.normalizeJob({
+    source: sourceName(source) || "104",
+    sourceType: "adapter:104",
+    title: job?.jobName,
+    company: job?.custName,
+    url,
+    location: job?.jobAddrNoDesc || job?.jobAddrArea || "台灣",
+    description,
+    datePosted: job?.appearDate,
+    employmentType: [job?.jobType, job?.workType].filter(Boolean).join(" / ")
+  });
+}
+
+function normalizeYouratorJob(job, source, toolkit) {
+  // Yourator API 回傳的 job 欄位在不同版本略有差異，這裡對多種形狀做防禦性讀取。
+  const companyName = job?.company_name || job?.company?.name || job?.employer?.name || "";
+  const companyPath = job?.company?.path || job?.company?.slug || "";
+  const rawPath = job?.path || job?.url || (companyPath && job?.id ? `/companies/${companyPath}/jobs/${job.id}` : "");
+  let url = "";
+  if (rawPath) {
+    try { url = normalizeUrl(new URL(rawPath, "https://www.yourator.co").href); } catch {}
+  }
+  const locations = Array.isArray(job?.area_options)
+    ? job.area_options.map((item) => item?.name || item?.value || item).filter(Boolean).join(" / ")
+    : (Array.isArray(job?.locations) ? job.locations.filter(Boolean).join(" / ") : (job?.location || ""));
+  const skills = Array.isArray(job?.skills)
+    ? job.skills.map((item) => item?.name || item).filter(Boolean).join(", ")
+    : (Array.isArray(job?.tags) ? job.tags.map((item) => item?.name || item).filter(Boolean).join(", ") : "");
+  const description = [
+    compactPlainDescription(job?.description || job?.job_description || "", toolkit),
+    job?.salary || job?.salary_range ? `Salary: ${job.salary || job.salary_range}` : "",
+    job?.remote_type || job?.work_type ? `Work type: ${job.remote_type || job.work_type}` : "",
+    skills ? `Skills: ${skills}` : "",
+    "此職缺由 Yourator 公開 API 匯入，保留原始職缺 URL 供後續查看、去重與排序。"
+  ].filter(Boolean).join("\n\n");
+  return toolkit.normalizeJob({
+    source: sourceName(source) || "Yourator",
+    sourceType: "adapter:yourator",
+    title: job?.name || job?.title,
+    company: companyName || (sourceName(source) || "Yourator"),
+    url,
+    location: locations || "台灣",
+    description,
+    datePosted: job?.created_at || job?.updated_at || job?.published_at,
+    employmentType: job?.job_type || job?.category || "全職"
+  });
+}
+
 export const SOURCE_ADAPTERS = [
   {
     id: "sitemap",
@@ -1076,7 +1168,9 @@ export const SOURCE_ADAPTERS = [
       return source.adapter === "taiwanjobs" || hostMatches(source.url || source.apiUrl, /(^|\.)taiwanjobs\.gov\.tw$/i);
     },
     async scrape(source, options, toolkit) {
-      const max = sourceMax(source, options, 1000, 1000);
+      // TaiwanJobs 是政府公開資料（無反爬、欄位結構完整），是最可靠的台灣真實職缺來源。
+      // 不設硬上限：count 直接用 maxDiscovered，API 有多少回多少（越多越好），若回傳較少會自動取到多少算多少。
+      const max = sourceMax(source, options, 5000);
       const apiUrl = addSearchParams(source.apiUrl || source.url || "https://free.taiwanjobs.gov.tw/WebService_Taipei/Webservice.ashx", {
         count: max,
         T: "CSV"
@@ -1372,6 +1466,117 @@ export const SOURCE_ADAPTERS = [
         if (added === 0) break;
       }
       return jobs;
+    }
+  },
+  {
+    id: "104",
+    match(source) {
+      return source.adapter === "104" || hostMatches(source.url || source.apiUrl, /(^|\.)104\.com\.tw$/i);
+    },
+    async scrape(source, options, toolkit) {
+      // 104 公開搜尋 list API：需帶 Referer，回傳 { data: { list, totalPage, totalCount } }。
+      // keyword 留空即抓「所有職缺」；不設硬上限（cap 預設 MAX_SAFE_INTEGER），
+      // 迴圈會在 totalPage 或無新資料時自然停止 —— 抓取階段越多越好，篩選交給後續使用者關鍵詞。
+      const max = sourceMax(source, options, 3000);
+      const pageSize = 20; // 104 list API 固定每頁 20 筆
+      const baseUrl = source.apiUrl || "https://www.104.com.tw/jobs/search/list";
+      const keyword = cleanText(source.keyword || source.searchText || "");
+      const referer = source.referer || "https://www.104.com.tw/jobs/search/";
+      const rows = [];
+      const seen = new Set();
+      const pageCap = Math.ceil(max / pageSize) + 4;
+      for (let page = 1; page <= pageCap && rows.length < max; page += 1) {
+        const url = addSearchParams(baseUrl, {
+          ro: 0,
+          kwop: 7,
+          keyword,
+          order: 15, // 依更新日期排序，優先抓最新職缺
+          asc: 0,
+          page,
+          mode: "s",
+          jobsource: "index_s_new"
+        });
+        let payload;
+        try {
+          payload = await fetchJsonWithHeaders(url, options.timeoutMs, { referer });
+        } catch (error) {
+          if (rows.length) break; // 已有資料就優雅停止，別讓整個來源掛掉
+          throw error;
+        }
+        const list = Array.isArray(payload?.data?.list) ? payload.data.list : (Array.isArray(payload?.data) ? payload.data : []);
+        let added = 0;
+        for (const item of list) {
+          const key = String(item?.jobNo || item?.link?.job || "").toLowerCase();
+          if (key && seen.has(key)) continue;
+          if (key) seen.add(key);
+          rows.push(item);
+          added += 1;
+          if (rows.length >= max) break;
+        }
+        const totalPage = Number(payload?.data?.totalPage || 0);
+        if (!list.length || added === 0 || (totalPage && page >= totalPage)) break;
+      }
+      return rows.slice(0, max).map((job) => normalize104Job(job, source, toolkit));
+    }
+  },
+  {
+    id: "yourator",
+    match(source) {
+      return source.adapter === "yourator" || hostMatches(source.url || source.apiUrl, /(^|\.)yourator\.co$/i);
+    },
+    async scrape(source, options, toolkit) {
+      // Yourator 公開 API：分頁抓取，欄位形狀跨版本不同，normalizeYouratorJob 做防禦性讀取。
+      // 不設硬上限；迴圈在 total_page 或無新資料時自然停止。
+      const max = sourceMax(source, options, 2000);
+      const baseUrl = source.apiUrl || "https://www.yourator.co/api/v4/jobs";
+      const referer = source.referer || "https://www.yourator.co/jobs";
+      const rows = [];
+      const seen = new Set();
+      for (let page = 1; rows.length < max; page += 1) {
+        const url = addSearchParams(baseUrl, { page });
+        let payload;
+        try {
+          payload = await fetchJsonWithHeaders(url, options.timeoutMs, { referer });
+        } catch (error) {
+          if (rows.length) break;
+          throw error;
+        }
+        const list = Array.isArray(payload?.payload?.jobs) ? payload.payload.jobs
+          : (Array.isArray(payload?.jobs) ? payload.jobs
+            : (Array.isArray(payload?.data) ? payload.data : []));
+        let added = 0;
+        for (const item of list) {
+          const key = String(item?.id || item?.path || "").toLowerCase();
+          if (key && seen.has(key)) continue;
+          if (key) seen.add(key);
+          rows.push(item);
+          added += 1;
+          if (rows.length >= max) break;
+        }
+        const totalPage = Number(payload?.total_page || payload?.payload?.total_page || payload?.meta?.total_pages || 0);
+        if (!list.length || added === 0 || (totalPage && page >= totalPage)) break;
+      }
+      return rows.slice(0, max).map((job) => normalizeYouratorJob(job, source, toolkit));
+    }
+  },
+  {
+    id: "yes123",
+    match(source) {
+      return source.adapter === "yes123" || hostMatches(source.url || source.apiUrl, /(^|\.)yes123\.com\.tw$/i);
+    },
+    async scrape(source, options, toolkit) {
+      // yes123 為 ASP 搜尋頁、無乾淨 JSON API，採「搜尋頁探索連結 → 逐筆抓內頁」的 HTML 路線（同 boss-zhipin/58）。
+      return scrapeHtmlCareerAdapter(source, options, toolkit, "yes123", /(joblist_detail|job_detail|joboffer)/i);
+    }
+  },
+  {
+    id: "518",
+    match(source) {
+      return source.adapter === "518" || hostMatches(source.url || source.apiUrl, /(^|\.)518\.com\.tw$/i);
+    },
+    async scrape(source, options, toolkit) {
+      // 518 熊班搜尋頁採 HTML 路線探索職缺內頁連結後逐筆抓取。
+      return scrapeHtmlCareerAdapter(source, options, toolkit, "518", /(\/job-|\/job\/|job-index)/i);
     }
   },
   {
