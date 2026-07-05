@@ -1,6 +1,6 @@
 # Career Ops Compensation Planner
 
-Generated: 2026-07-03T23:58:57.433Z
+Generated: 2026-07-04T23:43:20.290Z
 Plans: 20
 
 ## Operating Rule
@@ -654,41 +654,6 @@ Do not invent salary numbers. Use verified ranges, recruiter-provided ranges, or
 - Map the job scope to proof points in the tailored CV.
 - Prepare one counter package with base, bonus/equity, and non-cash levers.
 
-## Allstate - Manager Database Engineering (MongoDB)
-
-- Market: us
-- Job level (inferred): senior
-- Candidate level (from profile): mid
-- Leverage: high
-- Target frame: Do not name a number first. Ask for the approved range, level, and total compensation structure before anchoring.
-
-### Evidence
-- No verified salary mention found.
-- Benefit signal: work-mode flexibility
-
-### Structure
-- Base: Need verified market data or recruiter range before setting a numeric anchor.
-- Bonus: Ask whether there is annual bonus, performance bonus, or sign-on bonus.
-- Equity: Ask whether equity, RSU, options, or profit-sharing exists.
-- Benefit: Health / insurance coverage
-- Benefit: Paid leave and holidays
-- Benefit: Learning budget or certification support
-- Benefit: Remote/hybrid setup, commute, or relocation support
-- Benefit: Review cycle and promotion timeline
-
-### Scripts
-- Range question: Before I anchor on a number, could you share the approved range and level for the Manager Database Engineering (MongoDB) package, including base, bonus, equity, and review cycle?
-- Value anchor: Based on the scope of Manager Database Engineering (MongoDB) and my fit around Analytics, API, remote, engineer, I would like to calibrate toward the stronger end of the range if the team sees the level match.
-- Counter: Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?
-- Pause: I appreciate the details. I would like to review the full package and come back with a thoughtful response.
-- Close: If we can align on the package and review timeline, I would feel confident moving forward.
-
-### Next Actions
-- Collect market compensation evidence before naming a number.
-- Ask recruiter for approved range and level.
-- Map the job scope to proof points in the tailored CV.
-- Prepare one counter package with base, bonus/equity, and non-cash levers.
-
 ## Databricks Greenhouse - Director,Technical Solutions (Big Data/ AI)
 
 - Market: us
@@ -714,6 +679,46 @@ Do not invent salary numbers. Use verified ranges, recruiter-provided ranges, or
 ### Scripts
 - Range question: Before I anchor on a number, could you share the approved range and level for the Director,Technical Solutions (Big Data/ AI) package, including base, bonus, equity, and review cycle?
 - Value anchor: Based on the scope of Director,Technical Solutions (Big Data/ AI) and my fit around Analytics, Performance Optimization, product, data, I would like to calibrate toward the stronger end of the range if the team sees the level match.
+- Counter: Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?
+- Pause: I appreciate the details. I would like to review the full package and come back with a thoughtful response.
+- Close: If we can align on the package and review timeline, I would feel confident moving forward.
+
+### Next Actions
+- Collect market compensation evidence before naming a number.
+- Ask recruiter for approved range and level.
+- Map the job scope to proof points in the tailored CV.
+- Prepare one counter package with base, bonus/equity, and non-cash levers.
+
+## Micron Workday - Senior Product Engineer (Pkg PE MFG),  Heterogeneous Integration Group(HIG), High Bandwidth Memory (HBM)
+
+- Market: tw
+- Job level (inferred): senior
+- Candidate level (from profile): mid
+- Leverage: high
+- Market benchmark (mid): NTD 55,000 – 90,000 monthly
+- Benchmark midpoint: NTD 70,000
+- Benchmark source: NodeFlair / PayScale TW 2024-2025
+- Note: Taipei market. Annual bonus (1-3 months) is common; multiply monthly by 13-14 for total annual estimate.
+- Target frame: Market benchmark for mid in TW is NTD 55,000 – 90,000 (monthly). Do not name a number first — ask for the approved range, then anchor near the midpoint or above.
+
+### Evidence
+- No verified salary mention found.
+- Benefit signal: equity
+- Benefit signal: learning budget
+
+### Structure
+- Base: Market range for mid (TW): NTD 55,000 – 90,000 monthly. Source: NodeFlair / PayScale TW 2024-2025.
+- Bonus: Ask whether there is annual bonus, performance bonus, or sign-on bonus.
+- Equity: Clarify grant size, vesting schedule, refreshers, and strike/RSU terms.
+- Benefit: Health / insurance coverage
+- Benefit: Paid leave and holidays
+- Benefit: Learning budget or certification support
+- Benefit: Remote/hybrid setup, commute, or relocation support
+- Benefit: Review cycle and promotion timeline
+
+### Scripts
+- Range question: Before I anchor on a number, could you share the approved range and level for the Senior Product Engineer (Pkg PE MFG),  Heterogeneous Integration Group(HIG), High Bandwidth Memory (HBM) package, including base, bonus, equity, and review cycle?
+- Value anchor: Based on the scope of Senior Product Engineer (Pkg PE MFG),  Heterogeneous Integration Group(HIG), High Bandwidth Memory (HBM) and my fit around engineer, product, data, I would like to calibrate toward the stronger end of the range if the team sees the level match. My research indicates the TW midpoint for this level is around NTD 70,000 (monthly).
 - Counter: Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?
 - Pause: I appreciate the details. I would like to review the full package and come back with a thoughtful response.
 - Close: If we can align on the package and review timeline, I would feel confident moving forward.

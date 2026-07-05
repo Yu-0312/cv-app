@@ -1,6 +1,6 @@
 # Career Ops Deep Fit Report
 
-Generated: 2026-07-03T23:59:08.339Z
+Generated: 2026-07-04T23:43:30.953Z
 LLM provider: none
 Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 exploratory)
 
@@ -520,34 +520,6 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Use story story-1: frontend product execution.
 - Use story story-2: systems and API collaboration.
 
-### Allstate - Manager Database Engineering (MongoDB)
-
-- Score: 94
-- Grade: A
-- Confidence: medium
-- Decision: pursue aggressively
-- Thesis: Manager Database Engineering (MongoDB) at Allstate is pursue aggressively because the snapshot score is 94, with 5 profile/role keyword hits and 0 external evidence item(s).
-
-#### Evidence
-- Keyword hits: Analytics, API, remote, analytics, Product Engineer
-- Keyword misses: mysql, aws, gcp, azure, rest, crm
-- Research signals: -
-- Compensation leverage: high
-
-#### Concerns
-- External company evidence is thin; run deep research with a search API.
-- Profile keyword coverage is weaker than the target role language.
-
-#### Interview Strategy
-- Ask why the role is open and what success means in the first 90 days.
-- Probe team ownership, roadmap pressure, and cross-functional interfaces.
-
-#### CV Strategy
-- Lead with proof around: Analytics, API, remote, analytics, Product Engineer.
-- Use story story-1: frontend product execution.
-- Use story story-2: systems and API collaboration.
-- Use story story-3: accessibility and quality.
-
 ### Databricks Greenhouse - Director,Technical Solutions (Big Data/ AI)
 
 - Score: 94
@@ -588,7 +560,7 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Keyword hits: Product Engineer
 - Keyword misses: agents
 - Research signals: -
-- Compensation leverage: -
+- Compensation leverage: high
 
 #### Concerns
 - External company evidence is thin; run deep research with a search API.
@@ -680,6 +652,33 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 
 #### CV Strategy
 - Lead with proof around: JavaScript, React, CSS, API, remote, dashboard.
+- Use story story-1: frontend product execution.
+- Use story story-2: systems and API collaboration.
+- Use story story-3: accessibility and quality.
+
+### UKG - Director Software Development Engineering
+
+- Score: 93
+- Grade: A
+- Confidence: medium
+- Decision: pursue aggressively
+- Thesis: Director Software Development Engineering at UKG is pursue aggressively because the snapshot score is 93, with 5 profile/role keyword hits and 0 external evidence item(s).
+
+#### Evidence
+- Keyword hits: Analytics, API, remote, analytics, Product Engineer
+- Keyword misses: go, growth, sales
+- Research signals: -
+- Compensation leverage: -
+
+#### Concerns
+- External company evidence is thin; run deep research with a search API.
+
+#### Interview Strategy
+- Ask why the role is open and what success means in the first 90 days.
+- Probe team ownership, roadmap pressure, and cross-functional interfaces.
+
+#### CV Strategy
+- Lead with proof around: Analytics, API, remote, analytics, Product Engineer.
 - Use story story-1: frontend product execution.
 - Use story story-2: systems and API collaboration.
 - Use story story-3: accessibility and quality.
@@ -780,12 +779,6 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Keyword hits: -
 - Gaps: crm
 
-### ORION SYSTEMS INTEGRATION PTE. LTD. - Software Engineer
-- Score: 74 | Grade: B | RoleFit: 45
-- Decision: pursue selectively
-- Keyword hits: JavaScript
-- Gaps: java
-
 ### Roblox Greenhouse - Human Evaluator, Studio (Contract)
 - Score: 74 | Grade: B | RoleFit: 45
 - Decision: pursue selectively
@@ -840,11 +833,11 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Keyword hits: -
 - Gaps: computer vision
 
-### NVIDIA Workday - Senior VLSI Integration Engineer
-- Score: 73 | Grade: B | RoleFit: 45
+### Ajax Systems - f
+- Score: 72 | Grade: B | RoleFit: 45
 - Decision: pursue selectively
-- Keyword hits: -
-- Gaps: python
+- Keyword hits: remote
+- Gaps: -
 
 ### Justworks - Template
 - Score: 72 | Grade: B | RoleFit: 45
@@ -858,17 +851,11 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Keyword hits: -
 - Gaps: agents
 
-### HPS PARTNERS PTE. LTD. - Senior/Software Engineer (Bluetooth Embedded System)
+### ITCAN PTE. LIMITED - Software Engineer (Must Have Java + Prefer Spring Boot, Spring Web MVC, Apache Maven and Jasper Report)
 - Score: 71 | Grade: C | RoleFit: 45
 - Decision: pursue selectively
 - Keyword hits: -
-- Gaps: -
-
-### Brainkind - Business Administration
-- Score: 71 | Grade: C | RoleFit: 45
-- Decision: pursue selectively
-- Keyword hits: remote
-- Gaps: -
+- Gaps: java
 
 ### NVIDIA Workday - Formal Verification Engineer - New College Graduate
 - Score: 71 | Grade: C | RoleFit: 45
@@ -906,6 +893,18 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Keyword hits: -
 - Gaps: -
 
+### The Home Depot Canada - Special Services Associate AIRDRIE
+- Score: 68 | Grade: C | RoleFit: 45
+- Decision: hold / compare
+- Keyword hits: remote
+- Gaps: -
+
+### ABP Food Group - General Operative Northern Ireland
+- Score: 68 | Grade: C | RoleFit: 45
+- Decision: hold / compare
+- Keyword hits: remote
+- Gaps: -
+
 ### Unigo - 5 Ways Be a Better Listener
 - Score: 68 | Grade: C | RoleFit: 45
 - Decision: hold / compare
@@ -930,12 +929,6 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Keyword hits: remote
 - Gaps: -
 
-### Edmonton City Centre - Sharetea Edmonton City Centre
-- Score: 68 | Grade: C | RoleFit: 45
-- Decision: hold / compare
-- Keyword hits: remote
-- Gaps: go
-
 ### Microsoft - Customer Success Account Manager
 - Score: 67 | Grade: C | RoleFit: 45
 - Decision: hold / compare
@@ -949,6 +942,12 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Gaps: -
 
 ### JurÃ­dico Vagas - Advogado Trabalhista de Prazos
+- Score: 67 | Grade: C | RoleFit: 45
+- Decision: hold / compare
+- Keyword hits: remote
+- Gaps: -
+
+### Atlantic Oceanic LLC - Full crew
 - Score: 67 | Grade: C | RoleFit: 45
 - Decision: hold / compare
 - Keyword hits: remote
@@ -975,6 +974,7 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - **Rent the Runway — Software Engineer III - Full Stack** (score: 92) | Top gap: java
 - **GlossGenius — Software Engineer - All Levels** (score: 92) | Top gap: kotlin
 - **Bank of America — Software Engineer III - GBS IND** (score: 92) | Top gap: python
+- **Salesforce — Manager, Technical Consulting** (score: 92) | Top gap: etl
 - **Yext — Senior Systems Engineer** (score: 92) | Top gap: python
 - **Allstate — Lead AI Cloud Platform Engineer** (score: 92) | Top gap: python
 - **Kyndryl — Mod Engineer (FDE)** (score: 92) | Top gap: python
@@ -985,5 +985,4 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - **Canonical Greenhouse — Security Software Engineer** (score: 92) | Top gap: python
 - **Vercel Greenhouse — Site Engineer** (score: 92) | Top gap: agents
 - **ElevenLabs Ashby — Safety Engineer** (score: 92) | Top gap: python
-- **Micron Workday — Senior ASIC Test Engineer** (score: 91) | Top gap: python
 

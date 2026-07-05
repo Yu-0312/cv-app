@@ -1,6 +1,6 @@
 window.CV_CAREER_OPS_DEEP_FIT = {
   "source": "career-ops-deep-fit",
-  "generatedAt": "2026-07-03T23:59:08.339Z",
+  "generatedAt": "2026-07-04T23:43:30.953Z",
   "llmProvider": "none",
   "summary": {
     "totalResults": 95,
@@ -1277,76 +1277,6 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "llm": null
     },
     {
-      "jobKey": "url:https://www.themuse.com/jobs/allstate/manager-database-engineering-mongodb",
-      "company": "Allstate",
-      "title": "Manager Database Engineering (MongoDB)",
-      "score": 94,
-      "grade": "A",
-      "confidence": "medium",
-      "decision": "pursue aggressively",
-      "thesis": "Manager Database Engineering (MongoDB) at Allstate is pursue aggressively because the snapshot score is 94, with 5 profile/role keyword hits and 0 external evidence item(s).",
-      "evidence": {
-        "keywordHits": [
-          "Analytics",
-          "API",
-          "remote",
-          "analytics",
-          "Product Engineer"
-        ],
-        "keywordMisses": [
-          "mysql",
-          "aws",
-          "gcp",
-          "azure",
-          "rest",
-          "crm"
-        ],
-        "researchSignals": [],
-        "evidenceCount": 0,
-        "compensationLeverage": "high"
-      },
-      "concerns": [
-        "External company evidence is thin; run deep research with a search API.",
-        "Profile keyword coverage is weaker than the target role language."
-      ],
-      "interviewStrategy": [
-        "Ask why the role is open and what success means in the first 90 days.",
-        "Probe team ownership, roadmap pressure, and cross-functional interfaces."
-      ],
-      "cvStrategy": [
-        "Lead with proof around: Analytics, API, remote, analytics, Product Engineer.",
-        "Use story story-1: frontend product execution.",
-        "Use story story-2: systems and API collaboration.",
-        "Use story story-3: accessibility and quality."
-      ],
-      "compensationStrategy": {
-        "leverage": "high",
-        "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Manager Database Engineering (MongoDB) package, including base, bonus, equity, and review cycle?",
-        "valueAnchor": "Based on the scope of Manager Database Engineering (MongoDB) and my fit around Analytics, API, remote, engineer, I would like to calibrate toward the stronger end of the range if the team sees the level match."
-      },
-      "storyHooks": [
-        {
-          "id": "story-1",
-          "theme": "frontend product execution",
-          "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
-          "relevance": 0
-        },
-        {
-          "id": "story-2",
-          "theme": "systems and API collaboration",
-          "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
-          "relevance": 0
-        },
-        {
-          "id": "story-3",
-          "theme": "accessibility and quality",
-          "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
-          "relevance": 0
-        }
-      ],
-      "llm": null
-    },
-    {
       "jobKey": "url:https://databricks.com/company/careers/open-positions/job?gh_jid=8409447002",
       "company": "Databricks Greenhouse",
       "title": "Director,Technical Solutions (Big Data/ AI)",
@@ -1432,7 +1362,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
         ],
         "researchSignals": [],
         "evidenceCount": 0,
-        "compensationLeverage": ""
+        "compensationLeverage": "high"
       },
       "concerns": [
         "External company evidence is thin; run deep research with a search API."
@@ -1447,7 +1377,11 @@ window.CV_CAREER_OPS_DEEP_FIT = {
         "Use story story-2: systems and API collaboration.",
         "Use story story-3: accessibility and quality."
       ],
-      "compensationStrategy": null,
+      "compensationStrategy": {
+        "leverage": "high",
+        "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Senior Product Engineer (Pkg PE MFG),  Heterogeneous Integration Group(HIG), High Bandwidth Memory (HBM) package, including base, bonus, equity, and review cycle?",
+        "valueAnchor": "Based on the scope of Senior Product Engineer (Pkg PE MFG),  Heterogeneous Integration Group(HIG), High Bandwidth Memory (HBM) and my fit around engineer, product, data, I would like to calibrate toward the stronger end of the range if the team sees the level match. My research indicates the TW midpoint for this level is around NTD 70,000 (monthly)."
+      },
       "storyHooks": [
         {
           "id": "story-1",
@@ -1655,6 +1589,68 @@ window.CV_CAREER_OPS_DEEP_FIT = {
           "theme": "accessibility and quality",
           "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
           "relevance": 3
+        }
+      ],
+      "llm": null
+    },
+    {
+      "jobKey": "url:https://www.themuse.com/jobs/ukg/director-software-development-engineering",
+      "company": "UKG",
+      "title": "Director Software Development Engineering",
+      "score": 93,
+      "grade": "A",
+      "confidence": "medium",
+      "decision": "pursue aggressively",
+      "thesis": "Director Software Development Engineering at UKG is pursue aggressively because the snapshot score is 93, with 5 profile/role keyword hits and 0 external evidence item(s).",
+      "evidence": {
+        "keywordHits": [
+          "Analytics",
+          "API",
+          "remote",
+          "analytics",
+          "Product Engineer"
+        ],
+        "keywordMisses": [
+          "go",
+          "growth",
+          "sales"
+        ],
+        "researchSignals": [],
+        "evidenceCount": 0,
+        "compensationLeverage": ""
+      },
+      "concerns": [
+        "External company evidence is thin; run deep research with a search API."
+      ],
+      "interviewStrategy": [
+        "Ask why the role is open and what success means in the first 90 days.",
+        "Probe team ownership, roadmap pressure, and cross-functional interfaces."
+      ],
+      "cvStrategy": [
+        "Lead with proof around: Analytics, API, remote, analytics, Product Engineer.",
+        "Use story story-1: frontend product execution.",
+        "Use story story-2: systems and API collaboration.",
+        "Use story story-3: accessibility and quality."
+      ],
+      "compensationStrategy": null,
+      "storyHooks": [
+        {
+          "id": "story-1",
+          "theme": "frontend product execution",
+          "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
+          "relevance": 0
+        },
+        {
+          "id": "story-2",
+          "theme": "systems and API collaboration",
+          "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
+          "relevance": 0
+        },
+        {
+          "id": "story-3",
+          "theme": "accessibility and quality",
+          "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
+          "relevance": 0
         }
       ],
       "llm": null
@@ -1910,24 +1906,6 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "layer": "B"
     },
     {
-      "jobKey": "url:https://www.mycareersfuture.gov.sg/job/c90d4483f22831b563ccea46d2b18b0a",
-      "company": "ORION SYSTEMS INTEGRATION PTE. LTD.",
-      "title": "Software Engineer",
-      "score": 74,
-      "grade": "B",
-      "roleFit": 45,
-      "url": "https://www.mycareersfuture.gov.sg/job/c90d4483f22831b563ccea46d2b18b0a",
-      "location": "NORDCOM ONE, GAMBAS CRESCENT, D27 Sembawang, Yishun, Singapore",
-      "keywordHits": [
-        "JavaScript"
-      ],
-      "keywordMisses": [
-        "java"
-      ],
-      "decision": "pursue selectively",
-      "layer": "B"
-    },
-    {
       "jobKey": "url:https://careers.roblox.com/jobs/7697520?gh_jid=7697520",
       "company": "Roblox Greenhouse",
       "title": "Human Evaluator, Studio (Contract)",
@@ -2064,18 +2042,18 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "layer": "B"
     },
     {
-      "jobKey": "url:https://nvidia.wd5.myworkdayjobs.com/nvidiaexternalcareersite/job/israel-tel-aviv/senior-vlsi-integration-engineer_jr1989467",
-      "company": "NVIDIA Workday",
-      "title": "Senior VLSI Integration Engineer",
-      "score": 73,
+      "jobKey": "url:https://remoteok.com/remote-jobs/remote-f-ajax-systems-1134445",
+      "company": "Ajax Systems",
+      "title": "f",
+      "score": 72,
       "grade": "B",
       "roleFit": 45,
-      "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Israel-Tel-Aviv/Senior-VLSI-Integration-Engineer_JR1989467",
-      "location": "Israel, Tel Aviv",
-      "keywordHits": [],
-      "keywordMisses": [
-        "python"
+      "url": "https://remoteok.com/remote-jobs/remote-f-ajax-systems-1134445",
+      "location": "Greater Uzhgorod Area,",
+      "keywordHits": [
+        "remote"
       ],
+      "keywordMisses": [],
       "decision": "pursue selectively",
       "layer": "B"
     },
@@ -2112,32 +2090,18 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "layer": "B"
     },
     {
-      "jobKey": "url:https://www.mycareersfuture.gov.sg/job/6813b1ce86e2266fd9953cebcb246155",
-      "company": "HPS PARTNERS PTE. LTD.",
-      "title": "Senior/Software Engineer (Bluetooth Embedded System)",
+      "jobKey": "url:https://www.mycareersfuture.gov.sg/job/1c2babe9f349d240826b60dcabc3a5db",
+      "company": "ITCAN PTE. LIMITED",
+      "title": "Software Engineer (Must Have Java + Prefer Spring Boot, Spring Web MVC, Apache Maven and Jasper Report)",
       "score": 71,
       "grade": "C",
       "roleFit": 45,
-      "url": "https://www.mycareersfuture.gov.sg/job/6813b1ce86e2266fd9953cebcb246155",
-      "location": "NORDCOM ONE, GAMBAS CRESCENT, D27 Sembawang, Yishun, Singapore",
+      "url": "https://www.mycareersfuture.gov.sg/job/1c2babe9f349d240826b60dcabc3a5db",
+      "location": "PRUDENTIAL TOWER, CECIL STREET, D01 Marina, Raffles Place, People's Park, Cecil, Singapore",
       "keywordHits": [],
-      "keywordMisses": [],
-      "decision": "pursue selectively",
-      "layer": "B"
-    },
-    {
-      "jobKey": "url:https://remoteok.com/remote-jobs/remote-business-administration-brainkind-1134238",
-      "company": "Brainkind",
-      "title": "Business Administration",
-      "score": 71,
-      "grade": "C",
-      "roleFit": 45,
-      "url": "https://remoteok.com/remote-jobs/remote-business-administration-brainkind-1134238",
-      "location": "Eastbourne,",
-      "keywordHits": [
-        "remote"
+      "keywordMisses": [
+        "java"
       ],
-      "keywordMisses": [],
       "decision": "pursue selectively",
       "layer": "B"
     },
@@ -2230,6 +2194,38 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "layer": "B"
     },
     {
+      "jobKey": "url:https://remoteok.com/remote-jobs/remote-special-services-associate-airdrie-the-home-depot-canada-1134446",
+      "company": "The Home Depot Canada",
+      "title": "Special Services Associate AIRDRIE",
+      "score": 68,
+      "grade": "C",
+      "roleFit": 45,
+      "url": "https://remoteok.com/remote-jobs/remote-special-services-associate-airdrie-the-home-depot-canada-1134446",
+      "location": "Airdrie,",
+      "keywordHits": [
+        "remote"
+      ],
+      "keywordMisses": [],
+      "decision": "hold / compare",
+      "layer": "B"
+    },
+    {
+      "jobKey": "url:https://remoteok.com/remote-jobs/remote-general-operative-northern-ireland-abp-food-group-1134483",
+      "company": "ABP Food Group",
+      "title": "General Operative Northern Ireland",
+      "score": 68,
+      "grade": "C",
+      "roleFit": 45,
+      "url": "https://remoteok.com/remote-jobs/remote-general-operative-northern-ireland-abp-food-group-1134483",
+      "location": "Northern Ireland,",
+      "keywordHits": [
+        "remote"
+      ],
+      "keywordMisses": [],
+      "decision": "hold / compare",
+      "layer": "B"
+    },
+    {
       "jobKey": "url:https://remoteok.com/remote-jobs/remote-5-ways-be-a-better-listener-unigo-1134411",
       "company": "Unigo",
       "title": "5 Ways Be a Better Listener",
@@ -2294,24 +2290,6 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "layer": "B"
     },
     {
-      "jobKey": "url:https://remoteok.com/remote-jobs/remote-sharetea-edmonton-city-centre-edmonton-city-centre-1134251",
-      "company": "Edmonton City Centre",
-      "title": "Sharetea Edmonton City Centre",
-      "score": 68,
-      "grade": "C",
-      "roleFit": 45,
-      "url": "https://remoteok.com/remote-jobs/remote-sharetea-edmonton-city-centre-edmonton-city-centre-1134251",
-      "location": "Edmonton,",
-      "keywordHits": [
-        "remote"
-      ],
-      "keywordMisses": [
-        "go"
-      ],
-      "decision": "hold / compare",
-      "layer": "B"
-    },
-    {
       "jobKey": "url:http://apply.careers.microsoft.com/careers/job/1970393556914457?hl=en",
       "company": "Microsoft",
       "title": "Customer Success Account Manager",
@@ -2350,6 +2328,22 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "roleFit": 45,
       "url": "https://remoteok.com/remote-jobs/remote-advogado-trabalhista-de-prazos-juridico-vagas-1134432",
       "location": "CuiabÃ¡,",
+      "keywordHits": [
+        "remote"
+      ],
+      "keywordMisses": [],
+      "decision": "hold / compare",
+      "layer": "B"
+    },
+    {
+      "jobKey": "url:https://remoteok.com/remote-jobs/remote-full-crew-atlantic-oceanic-llc-1134321",
+      "company": "Atlantic Oceanic LLC",
+      "title": "Full crew",
+      "score": 67,
+      "grade": "C",
+      "roleFit": 45,
+      "url": "https://remoteok.com/remote-jobs/remote-full-crew-atlantic-oceanic-llc-1134321",
+      "location": "Freeport,",
       "keywordHits": [
         "remote"
       ],
@@ -2783,6 +2777,28 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "layer": "C"
     },
     {
+      "jobKey": "url:https://www.themuse.com/jobs/salesforce/manager-technical-consulting-a28a79",
+      "company": "Salesforce",
+      "title": "Manager, Technical Consulting",
+      "score": 92,
+      "grade": "A",
+      "roleFit": 92,
+      "url": "https://www.themuse.com/jobs/salesforce/manager-technical-consulting-a28a79",
+      "location": "Mexico City, Mexico",
+      "keywordHits": [
+        "API",
+        "Full Stack Engineer"
+      ],
+      "topGap": "etl",
+      "mainGaps": [
+        "etl",
+        "agents",
+        "crm",
+        "growth"
+      ],
+      "layer": "C"
+    },
+    {
       "jobKey": "url:https://www.themuse.com/jobs/yext/senior-systems-engineer-e6abbf",
       "company": "Yext",
       "title": "Senior Systems Engineer",
@@ -3014,28 +3030,6 @@ window.CV_CAREER_OPS_DEEP_FIT = {
         "sql",
         "aws",
         "gcp"
-      ],
-      "layer": "C"
-    },
-    {
-      "jobKey": "url:https://micron.wd1.myworkdayjobs.com/external/job/hsinchu-taiwan/senior-asic-test-engineer_jr104923",
-      "company": "Micron Workday",
-      "title": "Senior ASIC Test Engineer",
-      "score": 91,
-      "grade": "A",
-      "roleFit": 92,
-      "url": "https://micron.wd1.myworkdayjobs.com/External/job/Hsinchu-Taiwan/Senior-ASIC-Test-Engineer_JR104923",
-      "location": "Hsinchu, Taiwan",
-      "keywordHits": [
-        "Analytics",
-        "analytics",
-        "Product Engineer"
-      ],
-      "topGap": "python",
-      "mainGaps": [
-        "python",
-        "llm",
-        "operations"
       ],
       "layer": "C"
     }
@@ -4309,76 +4303,6 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "llm": null
     },
     {
-      "jobKey": "url:https://www.themuse.com/jobs/allstate/manager-database-engineering-mongodb",
-      "company": "Allstate",
-      "title": "Manager Database Engineering (MongoDB)",
-      "score": 94,
-      "grade": "A",
-      "confidence": "medium",
-      "decision": "pursue aggressively",
-      "thesis": "Manager Database Engineering (MongoDB) at Allstate is pursue aggressively because the snapshot score is 94, with 5 profile/role keyword hits and 0 external evidence item(s).",
-      "evidence": {
-        "keywordHits": [
-          "Analytics",
-          "API",
-          "remote",
-          "analytics",
-          "Product Engineer"
-        ],
-        "keywordMisses": [
-          "mysql",
-          "aws",
-          "gcp",
-          "azure",
-          "rest",
-          "crm"
-        ],
-        "researchSignals": [],
-        "evidenceCount": 0,
-        "compensationLeverage": "high"
-      },
-      "concerns": [
-        "External company evidence is thin; run deep research with a search API.",
-        "Profile keyword coverage is weaker than the target role language."
-      ],
-      "interviewStrategy": [
-        "Ask why the role is open and what success means in the first 90 days.",
-        "Probe team ownership, roadmap pressure, and cross-functional interfaces."
-      ],
-      "cvStrategy": [
-        "Lead with proof around: Analytics, API, remote, analytics, Product Engineer.",
-        "Use story story-1: frontend product execution.",
-        "Use story story-2: systems and API collaboration.",
-        "Use story story-3: accessibility and quality."
-      ],
-      "compensationStrategy": {
-        "leverage": "high",
-        "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Manager Database Engineering (MongoDB) package, including base, bonus, equity, and review cycle?",
-        "valueAnchor": "Based on the scope of Manager Database Engineering (MongoDB) and my fit around Analytics, API, remote, engineer, I would like to calibrate toward the stronger end of the range if the team sees the level match."
-      },
-      "storyHooks": [
-        {
-          "id": "story-1",
-          "theme": "frontend product execution",
-          "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
-          "relevance": 0
-        },
-        {
-          "id": "story-2",
-          "theme": "systems and API collaboration",
-          "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
-          "relevance": 0
-        },
-        {
-          "id": "story-3",
-          "theme": "accessibility and quality",
-          "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
-          "relevance": 0
-        }
-      ],
-      "llm": null
-    },
-    {
       "jobKey": "url:https://databricks.com/company/careers/open-positions/job?gh_jid=8409447002",
       "company": "Databricks Greenhouse",
       "title": "Director,Technical Solutions (Big Data/ AI)",
@@ -4464,7 +4388,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
         ],
         "researchSignals": [],
         "evidenceCount": 0,
-        "compensationLeverage": ""
+        "compensationLeverage": "high"
       },
       "concerns": [
         "External company evidence is thin; run deep research with a search API."
@@ -4479,7 +4403,11 @@ window.CV_CAREER_OPS_DEEP_FIT = {
         "Use story story-2: systems and API collaboration.",
         "Use story story-3: accessibility and quality."
       ],
-      "compensationStrategy": null,
+      "compensationStrategy": {
+        "leverage": "high",
+        "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Senior Product Engineer (Pkg PE MFG),  Heterogeneous Integration Group(HIG), High Bandwidth Memory (HBM) package, including base, bonus, equity, and review cycle?",
+        "valueAnchor": "Based on the scope of Senior Product Engineer (Pkg PE MFG),  Heterogeneous Integration Group(HIG), High Bandwidth Memory (HBM) and my fit around engineer, product, data, I would like to calibrate toward the stronger end of the range if the team sees the level match. My research indicates the TW midpoint for this level is around NTD 70,000 (monthly)."
+      },
       "storyHooks": [
         {
           "id": "story-1",
@@ -4687,6 +4615,68 @@ window.CV_CAREER_OPS_DEEP_FIT = {
           "theme": "accessibility and quality",
           "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
           "relevance": 3
+        }
+      ],
+      "llm": null
+    },
+    {
+      "jobKey": "url:https://www.themuse.com/jobs/ukg/director-software-development-engineering",
+      "company": "UKG",
+      "title": "Director Software Development Engineering",
+      "score": 93,
+      "grade": "A",
+      "confidence": "medium",
+      "decision": "pursue aggressively",
+      "thesis": "Director Software Development Engineering at UKG is pursue aggressively because the snapshot score is 93, with 5 profile/role keyword hits and 0 external evidence item(s).",
+      "evidence": {
+        "keywordHits": [
+          "Analytics",
+          "API",
+          "remote",
+          "analytics",
+          "Product Engineer"
+        ],
+        "keywordMisses": [
+          "go",
+          "growth",
+          "sales"
+        ],
+        "researchSignals": [],
+        "evidenceCount": 0,
+        "compensationLeverage": ""
+      },
+      "concerns": [
+        "External company evidence is thin; run deep research with a search API."
+      ],
+      "interviewStrategy": [
+        "Ask why the role is open and what success means in the first 90 days.",
+        "Probe team ownership, roadmap pressure, and cross-functional interfaces."
+      ],
+      "cvStrategy": [
+        "Lead with proof around: Analytics, API, remote, analytics, Product Engineer.",
+        "Use story story-1: frontend product execution.",
+        "Use story story-2: systems and API collaboration.",
+        "Use story story-3: accessibility and quality."
+      ],
+      "compensationStrategy": null,
+      "storyHooks": [
+        {
+          "id": "story-1",
+          "theme": "frontend product execution",
+          "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
+          "relevance": 0
+        },
+        {
+          "id": "story-2",
+          "theme": "systems and API collaboration",
+          "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
+          "relevance": 0
+        },
+        {
+          "id": "story-3",
+          "theme": "accessibility and quality",
+          "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
+          "relevance": 0
         }
       ],
       "llm": null

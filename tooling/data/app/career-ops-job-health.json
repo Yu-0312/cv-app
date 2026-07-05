@@ -1,10 +1,10 @@
 {
   "source": "career-ops-health-monitor",
-  "checkedAt": "2026-07-03T23:59:16.076Z",
+  "checkedAt": "2026-07-04T23:43:38.478Z",
   "threshold": 0.3,
   "health": {
-    "total": 83388,
-    "active": 83388,
+    "total": 83392,
+    "active": 83392,
     "expired": 0,
     "stale": 0,
     "expiredRate": 0,
@@ -20,11 +20,11 @@
         "expired": 0
       },
       "The Muse Global Software Engineering": {
-        "total": 1737,
+        "total": 1734,
         "expired": 0
       },
       "The Muse Global Data Analytics": {
-        "total": 1838,
+        "total": 1834,
         "expired": 0
       },
       "Japan Dev English Tech Jobs": {
@@ -36,15 +36,11 @@
         "expired": 0
       },
       "Airbnb Greenhouse": {
-        "total": 130,
+        "total": 129,
         "expired": 0
       },
       "MyCareersFuture Singapore Software": {
         "total": 150,
-        "expired": 0
-      },
-      "The Muse Global Remote Jobs": {
-        "total": 1812,
         "expired": 0
       },
       "Databricks Greenhouse": {
@@ -59,6 +55,10 @@
         "total": 80,
         "expired": 0
       },
+      "The Muse Global Remote Jobs": {
+        "total": 1815,
+        "expired": 0
+      },
       "Figma Greenhouse": {
         "total": 125,
         "expired": 0
@@ -68,7 +68,7 @@
         "expired": 0
       },
       "Remotive Global Remote Jobs": {
-        "total": 31,
+        "total": 32,
         "expired": 0
       },
       "Canonical Greenhouse": {
@@ -104,7 +104,7 @@
         "expired": 0
       },
       "Source flex job board": {
-        "total": 124,
+        "total": 139,
         "expired": 0
       },
       "MyCareersFuture Singapore AI Data": {
@@ -136,7 +136,7 @@
         "expired": 0
       },
       "NVIDIA Workday": {
-        "total": 287,
+        "total": 285,
         "expired": 0
       },
       "Mozilla Greenhouse": {
@@ -152,7 +152,7 @@
         "expired": 0
       },
       "Remote OK Global Remote Jobs": {
-        "total": 98,
+        "total": 99,
         "expired": 0
       },
       "Cloudflare Greenhouse": {
@@ -208,7 +208,7 @@
         "expired": 0
       },
       "Daijob Japan Broad Listings": {
-        "total": 109,
+        "total": 104,
         "expired": 0
       },
       "Samsung Research": {
@@ -216,11 +216,15 @@
         "expired": 0
       },
       "Tencent Careers China": {
-        "total": 1470,
+        "total": 1468,
         "expired": 0
       },
       "Microsoft Shanghai": {
         "total": 2,
+        "expired": 0
+      },
+      "Tencent": {
+        "total": 30,
         "expired": 0
       },
       "NVIDIA Taiwan": {
@@ -241,10 +245,6 @@
       },
       "Delta Electronics": {
         "total": 7,
-        "expired": 0
-      },
-      "Tencent": {
-        "total": 29,
         "expired": 0
       },
       "1111 Taiwan Job Sitemap": {

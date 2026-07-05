@@ -1,6 +1,6 @@
 window.CV_CAREER_OPS_COMPENSATION = {
   "source": "career-ops-compensation",
-  "generatedAt": "2026-07-03T23:58:57.433Z",
+  "generatedAt": "2026-07-04T23:43:20.290Z",
   "plans": [
     {
       "jobKey": "url:https://www.mycareersfuture.gov.sg/job/07eafbe6994e2090a0c2a6a6a6111e62",
@@ -1077,64 +1077,6 @@ window.CV_CAREER_OPS_COMPENSATION = {
       "targetFrame": "Do not name a number first. Ask for the approved range, level, and total compensation structure before anchoring."
     },
     {
-      "jobKey": "url:https://www.themuse.com/jobs/allstate/manager-database-engineering-mongodb",
-      "company": "Allstate",
-      "title": "Manager Database Engineering (MongoDB)",
-      "market": "us",
-      "inferredLevel": "senior",
-      "candidateLevel": "mid",
-      "leverage": "high",
-      "evidence": {
-        "salaryMentions": [],
-        "benefitSignals": [
-          "work-mode flexibility"
-        ]
-      },
-      "marketBenchmark": null,
-      "structure": {
-        "baseSalary": [
-          "Need verified market data or recruiter range before setting a numeric anchor."
-        ],
-        "bonus": "Ask whether there is annual bonus, performance bonus, or sign-on bonus.",
-        "equity": "Ask whether equity, RSU, options, or profit-sharing exists.",
-        "benefits": [
-          "Health / insurance coverage",
-          "Paid leave and holidays",
-          "Learning budget or certification support",
-          "Remote/hybrid setup, commute, or relocation support",
-          "Review cycle and promotion timeline"
-        ],
-        "nonCashLevers": [
-          "Title / level calibration",
-          "Start date flexibility",
-          "Remote days",
-          "Equipment budget",
-          "First review at 3 or 6 months",
-          "Conference / learning budget"
-        ]
-      },
-      "negotiationScript": {
-        "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Manager Database Engineering (MongoDB) package, including base, bonus, equity, and review cycle?",
-        "valueAnchor": "Based on the scope of Manager Database Engineering (MongoDB) and my fit around Analytics, API, remote, engineer, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
-        "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
-        "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
-        "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
-      },
-      "redLines": [
-        "Do not disclose current compensation unless legally appropriate and strategically useful.",
-        "Do not accept verbal-only compensation details; ask for written package components.",
-        "Do not negotiate before confirming level, scope, work mode, and review cycle.",
-        "Do not trade base salary away without valuing the replacement benefit."
-      ],
-      "nextActions": [
-        "Collect market compensation evidence before naming a number.",
-        "Ask recruiter for approved range and level.",
-        "Map the job scope to proof points in the tailored CV.",
-        "Prepare one counter package with base, bonus/equity, and non-cash levers."
-      ],
-      "targetFrame": "Do not name a number first. Ask for the approved range, level, and total compensation structure before anchoring."
-    },
-    {
       "jobKey": "url:https://databricks.com/company/careers/open-positions/job?gh_jid=8409447002",
       "company": "Databricks Greenhouse",
       "title": "Director,Technical Solutions (Big Data/ AI)",
@@ -1191,6 +1133,74 @@ window.CV_CAREER_OPS_COMPENSATION = {
         "Prepare one counter package with base, bonus/equity, and non-cash levers."
       ],
       "targetFrame": "Do not name a number first. Ask for the approved range, level, and total compensation structure before anchoring."
+    },
+    {
+      "jobKey": "url:https://micron.wd1.myworkdayjobs.com/external/job/fab-10a-singapore/senior-product-engineer--pkg-pe-mfg----heterogeneous-integration-group-hig---high-bandwidth-memory--hbm-_jr104690",
+      "company": "Micron Workday",
+      "title": "Senior Product Engineer (Pkg PE MFG),  Heterogeneous Integration Group(HIG), High Bandwidth Memory (HBM)",
+      "market": "tw",
+      "inferredLevel": "senior",
+      "candidateLevel": "mid",
+      "leverage": "high",
+      "evidence": {
+        "salaryMentions": [],
+        "benefitSignals": [
+          "equity",
+          "learning budget"
+        ]
+      },
+      "marketBenchmark": {
+        "currency": "NTD",
+        "unit": "monthly",
+        "range": "NTD 55,000 – 90,000",
+        "midpoint": "NTD 70,000",
+        "floor": 55000,
+        "ceiling": 90000,
+        "source": "NodeFlair / PayScale TW 2024-2025",
+        "note": "Taipei market. Annual bonus (1-3 months) is common; multiply monthly by 13-14 for total annual estimate."
+      },
+      "structure": {
+        "baseSalary": [
+          "Market range for mid (TW): NTD 55,000 – 90,000 monthly. Source: NodeFlair / PayScale TW 2024-2025."
+        ],
+        "bonus": "Ask whether there is annual bonus, performance bonus, or sign-on bonus.",
+        "equity": "Clarify grant size, vesting schedule, refreshers, and strike/RSU terms.",
+        "benefits": [
+          "Health / insurance coverage",
+          "Paid leave and holidays",
+          "Learning budget or certification support",
+          "Remote/hybrid setup, commute, or relocation support",
+          "Review cycle and promotion timeline"
+        ],
+        "nonCashLevers": [
+          "Title / level calibration",
+          "Start date flexibility",
+          "Remote days",
+          "Equipment budget",
+          "First review at 3 or 6 months",
+          "Conference / learning budget"
+        ]
+      },
+      "negotiationScript": {
+        "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Senior Product Engineer (Pkg PE MFG),  Heterogeneous Integration Group(HIG), High Bandwidth Memory (HBM) package, including base, bonus, equity, and review cycle?",
+        "valueAnchor": "Based on the scope of Senior Product Engineer (Pkg PE MFG),  Heterogeneous Integration Group(HIG), High Bandwidth Memory (HBM) and my fit around engineer, product, data, I would like to calibrate toward the stronger end of the range if the team sees the level match. My research indicates the TW midpoint for this level is around NTD 70,000 (monthly).",
+        "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
+        "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
+        "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
+      },
+      "redLines": [
+        "Do not disclose current compensation unless legally appropriate and strategically useful.",
+        "Do not accept verbal-only compensation details; ask for written package components.",
+        "Do not negotiate before confirming level, scope, work mode, and review cycle.",
+        "Do not trade base salary away without valuing the replacement benefit."
+      ],
+      "nextActions": [
+        "Collect market compensation evidence before naming a number.",
+        "Ask recruiter for approved range and level.",
+        "Map the job scope to proof points in the tailored CV.",
+        "Prepare one counter package with base, bonus/equity, and non-cash levers."
+      ],
+      "targetFrame": "Market benchmark for mid in TW is NTD 55,000 – 90,000 (monthly). Do not name a number first — ask for the approved range, then anchor near the midpoint or above."
     }
   ]
 };
