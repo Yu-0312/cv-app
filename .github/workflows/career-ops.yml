@@ -2,8 +2,12 @@ name: Career Ops Snapshot
 
 on:
   workflow_dispatch:
+  workflow_call:
   schedule:
-    - cron: "17 22 * * *"
+    # Times are UTC. Taiwan is UTC+8.
+    - cron: "0 22 * * *"   # 06:00 Taiwan
+    - cron: "0 4 * * *"    # 12:00 Taiwan
+    - cron: "0 12 * * *"   # 20:00 Taiwan
 
 concurrency:
   group: career-ops-snapshot
@@ -31,7 +35,7 @@ jobs:
               --jobs tooling/data/app/career-ops-jobs.json \
               --out tooling/data/app/career-ops-job-health.json \
               --report-out tooling/data/app/career-ops-job-health-report.md \
-              --threshold 0.30
+              --threshold 0.25
           fi
 
       - name: Build sources and scrape jobs
@@ -80,7 +84,7 @@ jobs:
             --jobs tooling/data/app/career-ops-jobs.json \
             --out tooling/data/app/career-ops-job-health.json \
             --report-out tooling/data/app/career-ops-job-health-report.md \
-            --threshold 0.30
+            --threshold 0.25
 
       - name: Publish Career Ops snapshot to Supabase Storage
         env:

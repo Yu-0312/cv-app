@@ -8443,7 +8443,21 @@
           <div id="careerOpsSection" hidden>
             <div class="career-panel-label">大量職缺匯入</div>
             <textarea id="careerOpsImportInput" class="career-textarea" placeholder="貼上多筆職缺描述，每筆用 --- 分隔。建議包含公司、職稱、連結、職責與要求技能；只有 URL 的職缺會先進追蹤器，但需要補上描述才能評估。"></textarea>
-            <div class="career-ops-help">支援貼上 JD / URL 清單、匯入後端職缺快照、全台職缺找最佳與批次 AI 評估；「全台職缺找最佳」只評分台灣職缺（海外來源仍可匯入追蹤器個別評估），本機引擎會同步產生 GitHub career-ops 風格 A-G 報告、4.0/5 投遞門檻、Block G 合法性與客製化行動。</div>
+            <div class="career-ops-target" style="margin-top:10px;background:rgba(255,255,255,0.55);border:1px solid var(--line);border-radius:12px;padding:12px 14px;">
+              <div class="career-panel-label" style="margin-bottom:6px;">目標職缺（先填目標，再跑相似）</div>
+              <p style="font-size:12px;color:var(--muted);margin:0 0 8px;line-height:1.5;">填入你想投的公司或職位，系統會先用「綜合加權相似度」（公司／職務族群／領域／地點）從全台職缺池挑出最相似的職缺，再只針對這批用目前履歷評分，不必掃全部 9 萬筆。</p>
+              <div class="compact-field-grid">
+                <input id="careerOpsTargetCompany" type="text" placeholder="目標公司（選填）" />
+                <input id="careerOpsTargetTitle" type="text" placeholder="目標職位，例如：前端工程師" />
+                <input id="careerOpsTargetLocation" type="text" placeholder="地點（選填）" />
+                <label style="display:flex;align-items:center;gap:6px;font-size:12px;color:var(--muted);"><input id="careerOpsTargetRemote" type="checkbox" style="width:auto;" /> 偏好遠端</label>
+              </div>
+              <div class="tool-row" style="margin-top:8px;">
+                <button id="careerOpsRunTargetFitBtn" class="career-link-btn" type="button" title="先填目標公司或職位，再從全台職缺池找出最相似的職缺並用目前履歷評分">填目標找相似職缺</button>
+              </div>
+              <div id="careerOpsFreshness" class="career-ops-help" style="margin-top:8px;" title="職缺每天台灣 06:00 / 12:00 / 20:00 自動刷新；過期率達 25% 也會自動刷新。">職缺快照：讀取中…</div>
+            </div>
+            <div class="career-ops-help">支援貼上 JD / URL 清單、匯入後端職缺快照、全台職缺找最佳與批次 AI 評估；「填目標找相似職缺」會先依相似度篩出目標附近的職缺再評分，「全台職缺找最佳」則評分全部台灣職缺（海外來源仍可匯入追蹤器個別評估），本機引擎會同步產生 GitHub career-ops 風格 A-G 報告、4.0/5 投遞門檻、Block G 合法性與客製化行動。</div>
             <div class="career-ops-actions">
               <button id="careerOpsImportBtn" class="career-link-btn" type="button">匯入到追蹤器</button>
               <button id="careerOpsImportSnapshotBtn" class="career-link-btn" type="button">匯入後端職缺快照</button>
@@ -9213,6 +9227,13 @@
         "新加坡入口：MyCareersFuture 公開快照可直接匯入；Indeed SG、JobStreet SG、NodeFlair 保留為瀏覽器查詢入口。": "Singapore sources: import the MyCareersFuture public snapshot directly; Indeed SG, JobStreet SG, and NodeFlair stay available as browser search links.",
         "本機分析引擎": "Local Analysis Engine",
         "全台職缺找最佳": "Find Best (Taiwan)",
+        "目標職缺（先填目標，再跑相似）": "Target role (fill in first, then find similar)",
+        "填入你想投的公司或職位，系統會先用「綜合加權相似度」（公司／職務族群／領域／地點）從全台職缺池挑出最相似的職缺，再只針對這批用目前履歷評分，不必掃全部 9 萬筆。": "Enter the company or role you want to apply for. The system first uses a weighted composite similarity (company / role family / domain / location) to pick the most similar jobs from the Taiwan pool, then scores only that subset against your current resume — no need to scan all 90k+ jobs.",
+        "目標公司（選填）": "Target company (optional)",
+        "目標職位，例如：前端工程師": "Target role, e.g. Frontend Engineer",
+        "地點（選填）": "Location (optional)",
+        "偏好遠端": "Prefer remote",
+        "填目標找相似職缺": "Find similar to target",
         "支援貼上 JD / URL 清單、匯入後端職缺快照、全台職缺找最佳與批次 AI 評估；「全台職缺找最佳」只評分台灣職缺（海外來源仍可匯入追蹤器個別評估），本機引擎會同步產生 GitHub career-ops 風格 A-G 報告、4.0/5 投遞門檻、Block G 合法性與客製化行動。": "Supports pasted JDs / URL lists, backend job snapshots, Find Best (Taiwan), and batch AI evaluation. \"Find Best (Taiwan)\" only scores Taiwan jobs (overseas sources can still be imported to the tracker and evaluated individually); the local engine also generates GitHub career-ops style A-G reports, a 4.0/5 apply threshold, Block G legitimacy checks, and tailored actions.",
         "AI 批次評估": "AI Batch Evaluation",
         "本機重評": "Re-score Locally",
@@ -20097,6 +20118,87 @@ Schema:
 	          }
 	        }
 
+	        // ── 職缺快照新鮮度提示 ─────────────────────────────────────────────
+	        // 後端每天台灣 06:00 / 12:00 / 20:00（UTC 22 / 04 / 12）自動刷新，
+	        // 過期率達 25% 也會由 2 小時一次的健康檢查觸發額外刷新。
+	        const CAREER_OPS_REFRESH_UTC_HOURS = [22, 4, 12];
+	        let careerOpsLastRefreshISO = "";
+	        let careerOpsFreshnessTimer = null;
+
+	        function careerOpsNextScheduledRefresh(now = new Date()) {
+	          let best = null;
+	          const hours = CAREER_OPS_REFRESH_UTC_HOURS.slice().sort((a, b) => a - b);
+	          for (let dayOffset = 0; dayOffset <= 1 && !best; dayOffset += 1) {
+	            for (const hour of hours) {
+	              const candidate = new Date(Date.UTC(
+	                now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate() + dayOffset,
+	                hour, 0, 0, 0));
+	              if (candidate.getTime() > now.getTime()) { best = candidate; break; }
+	            }
+	          }
+	          return best;
+	        }
+
+	        function careerOpsFormatLocalTime(date) {
+	          if (!(date instanceof Date) || Number.isNaN(date.getTime())) return "";
+	          try {
+	            return new Intl.DateTimeFormat(undefined, {
+	              month: "numeric", day: "numeric", hour: "2-digit", minute: "2-digit"
+	            }).format(date);
+	          } catch {
+	            return date.toLocaleString();
+	          }
+	        }
+
+	        function careerOpsFormatRelative(ms) {
+	          const totalMinutes = Math.max(0, Math.round(ms / 60000));
+	          const hours = Math.floor(totalMinutes / 60);
+	          const minutes = totalMinutes % 60;
+	          if (hours > 0) return `${hours} 小時 ${minutes} 分`;
+	          return `${minutes} 分`;
+	        }
+
+	        function careerOpsRenderFreshness() {
+	          const el = document.getElementById("careerOpsFreshness");
+	          if (!el) return;
+	          const snapshot = window.CV_CAREER_OPS_JOBS || {};
+	          const lastISO = careerOpsLastRefreshISO
+	            || String(snapshot.generatedAt || snapshot.extractedAt || "");
+	          const now = new Date();
+	          const parts = [];
+	          if (lastISO) {
+	            const last = new Date(lastISO);
+	            if (!Number.isNaN(last.getTime())) {
+	              parts.push(`上次刷新：${careerOpsFormatLocalTime(last)}（${careerOpsFormatRelative(now.getTime() - last.getTime())}前）`);
+	            }
+	          }
+	          const next = careerOpsNextScheduledRefresh(now);
+	          if (next) {
+	            parts.push(`下次刷新：${careerOpsFormatLocalTime(next)}（約 ${careerOpsFormatRelative(next.getTime() - now.getTime())}後）`);
+	          }
+	          el.textContent = parts.length ? `職缺快照 · ${parts.join(" · ")}` : "職缺快照：每天台灣 06:00 / 12:00 / 20:00 自動刷新";
+	        }
+
+	        async function careerOpsInitFreshness() {
+	          const snapshot = window.CV_CAREER_OPS_JOBS || {};
+	          if (snapshot.generatedAt || snapshot.extractedAt) {
+	            careerOpsLastRefreshISO = String(snapshot.generatedAt || snapshot.extractedAt);
+	          } else {
+	            for (const manifestUrl of careerOpsSnapshotManifestUrls()) {
+	              try {
+	                const manifest = await careerOpsFetchJson(manifestUrl);
+	                const iso = String(manifest.generatedAt || manifest.extractedAt || "");
+	                if (iso) { careerOpsLastRefreshISO = iso; break; }
+	              } catch {
+	                // 忽略無法取得的來源，改用下一個。
+	              }
+	            }
+	          }
+	          careerOpsRenderFreshness();
+	          if (careerOpsFreshnessTimer) clearInterval(careerOpsFreshnessTimer);
+	          careerOpsFreshnessTimer = setInterval(careerOpsRenderFreshness, 60000);
+	        }
+
 	        // 全職缺自動分析（全職缺找最佳）鎖定台灣就業市場，海外求職來源仍保留於匯入與瀏覽入口。
 	        const CAREER_OPS_ANALYSIS_COUNTRY = "TW";
 
@@ -20158,6 +20260,184 @@ Schema:
 	          return candidates;
 	        }
 
+	        // ── Target-similarity (mirrors tooling/scripts/lib/career-ops-target-match.mjs) ──
+	        // Weighted composite of company / title-family / domain / location. Any sub-signal
+	        // the target does not specify is dropped and its weight redistributed. Keep in sync
+	        // with the Node source of truth (which is unit-tested).
+	        const CAREER_OPS_SIMILARITY_WEIGHTS = { company: 0.30, title: 0.38, domain: 0.17, location: 0.15 };
+	        const CAREER_OPS_SIM_DOMAIN_KEYWORDS = {
+	          software: ["software", "engineer", "developer", "程式", "軟體", "工程師", "react", "backend", "frontend", "full stack", "api"],
+	          data:     ["data", "ml", "machine learning", "analytics", "statistics", "資料", "數據", "演算法", "ai", "人工智慧"],
+	          hardware: ["hardware", "firmware", "embedded", "ic", "circuit", "硬體", "韌體", "電路", "半導體", "電機"],
+	          design:   ["design", "ux", "ui", "設計", "視覺", "graphic"],
+	          business: ["product", "marketing", "sales", "business", "operations", "產品", "行銷", "業務", "營運", "商務"],
+	          mobile:   ["ios", "android", "mobile", "flutter", "行動", "app"],
+	        };
+	        const CAREER_OPS_SIM_COMPANY_SUFFIXES = /\b(inc|inc\.|llc|ltd|ltd\.|co|co\.|corp|corporation|company|limited|gmbh|group|holdings|technologies|technology|tech|labs|studio)\b/gi;
+	        const CAREER_OPS_SIM_COMPANY_CJK_SUFFIX = /(股份有限公司|有限公司|股份|集團|公司|科技|資訊|網路|國際|企業)/g;
+	        function careerOpsSimNormCompany(v) {
+	          return String(v || "").toLowerCase()
+	            .replace(CAREER_OPS_SIM_COMPANY_CJK_SUFFIX, " ")
+	            .replace(CAREER_OPS_SIM_COMPANY_SUFFIXES, " ")
+	            .replace(/[^\p{L}\p{N}]+/gu, " ").trim().replace(/\s+/g, " ");
+	        }
+	        function careerOpsSimTokens(v) {
+	          return new Set(String(v || "").toLowerCase()
+	            .replace(/[^\p{L}\p{N}+#]+/gu, " ").split(/\s+/).filter(t => t.length >= 2));
+	        }
+	        function careerOpsSimJaccard(a, b) {
+	          if (!a.size || !b.size) return 0;
+	          let inter = 0; for (const t of a) if (b.has(t)) inter += 1;
+	          return inter / (a.size + b.size - inter);
+	        }
+	        function careerOpsSimInferDomains(text) {
+	          const src = String(text || "").toLowerCase(); const out = new Set();
+	          for (const [domain, kws] of Object.entries(CAREER_OPS_SIM_DOMAIN_KEYWORDS)) {
+	            if (kws.some(kw => src.includes(kw))) out.add(domain);
+	          }
+	          return out;
+	        }
+	        function careerOpsSimCompanyScore(seed, job) {
+	          const a = careerOpsSimNormCompany(seed), b = careerOpsSimNormCompany(job);
+	          if (!a || !b) return 0;
+	          if (a === b) return 1;
+	          if (a.includes(b) || b.includes(a)) return 0.85;
+	          return careerOpsSimJaccard(new Set(a.split(" ")), new Set(b.split(" ")));
+	        }
+	        function careerOpsSimTitleScore(seedTitle, jobTitle, jobText) {
+	          const st = String(seedTitle || ""); if (!st) return 0;
+	          const seedFam = careerOpsRoleFamily({ title: st });
+	          const jobFam = careerOpsRoleFamily({ title: jobTitle, description: jobText });
+	          let famScore = 0;
+	          if (seedFam !== "Other" && seedFam === jobFam) famScore = 0.6;
+	          else if (seedFam === jobFam) famScore = 0.25;
+	          const tokScore = careerOpsSimJaccard(careerOpsSimTokens(st), careerOpsSimTokens(jobTitle)) * 0.4;
+	          return Math.min(1, famScore + tokScore);
+	        }
+	        function careerOpsSimDomainScore(seedText, jobText) {
+	          const a = careerOpsSimInferDomains(seedText), b = careerOpsSimInferDomains(jobText);
+	          if (!a.size || !b.size) return 0;
+	          return careerOpsSimJaccard(a, b);
+	        }
+	        function careerOpsSimLocationScore(seed, job) {
+	          const seedLoc = String(seed.location || "").toLowerCase().trim();
+	          const wantRemote = Boolean(seed.remote);
+	          if (!seedLoc && !wantRemote) return null;
+	          const jobLoc = `${job.location || ""} ${job.description || ""}`.toLowerCase();
+	          const jobRemote = /(remote|work from home|wfh|遠端|遠距|在家)/.test(jobLoc);
+	          let score = 0;
+	          if (wantRemote && jobRemote) score = Math.max(score, 1);
+	          if (seedLoc) {
+	            if (jobLoc.includes(seedLoc)) score = Math.max(score, 1);
+	            else score = Math.max(score, careerOpsSimJaccard(careerOpsSimTokens(seedLoc), careerOpsSimTokens(job.location)));
+	          }
+	          return score;
+	        }
+	        function careerOpsTargetSimilarity(seed, job, weights = CAREER_OPS_SIMILARITY_WEIGHTS) {
+	          const seedTitle = seed.title || seed.role || "";
+	          const seedText = `${seedTitle} ${seed.description || ""}`;
+	          const jobText = `${job.title || ""} ${job.description || ""}`;
+	          const parts = {}; const active = [];
+	          const add = (key, val, w) => { if (val !== null && val !== undefined) { parts[key] = val; active.push({ val, w }); } };
+	          add("company", seed.company ? careerOpsSimCompanyScore(seed.company, job.company) : null, weights.company);
+	          add("title", seedTitle ? careerOpsSimTitleScore(seedTitle, job.title, jobText) : null, weights.title);
+	          add("domain", (seedTitle || seed.description) ? careerOpsSimDomainScore(seedText, jobText) : null, weights.domain);
+	          add("location", careerOpsSimLocationScore(seed, job), weights.location);
+	          const totalW = active.reduce((s, p) => s + p.w, 0) || 1;
+	          const score = active.reduce((s, p) => s + p.val * p.w, 0) / totalW;
+	          return { score: Math.round(score * 1000) / 1000, parts };
+	        }
+	        function careerOpsRankBySimilarity(seed, jobs, opts = {}) {
+	          const { limit = 250, threshold = 0.12, weights = CAREER_OPS_SIMILARITY_WEIGHTS } = opts;
+	          const scored = [];
+	          for (const job of jobs || []) {
+	            const sim = careerOpsTargetSimilarity(seed, job, weights);
+	            if (sim.score >= threshold) scored.push({ job, similarity: sim.score, similarityParts: sim.parts });
+	          }
+	          scored.sort((a, b) => b.similarity - a.similarity);
+	          return (typeof limit === "number" && limit > 0) ? scored.slice(0, limit) : scored;
+	        }
+
+	        function careerOpsReadTargetSeed() {
+	          const company = String($c("careerOpsTargetCompany")?.value || "").trim();
+	          const title = String($c("careerOpsTargetTitle")?.value || "").trim();
+	          const location = String($c("careerOpsTargetLocation")?.value || "").trim();
+	          const remote = Boolean($c("careerOpsTargetRemote")?.checked);
+	          const seed = {};
+	          if (company) seed.company = company;
+	          if (title) seed.title = title;
+	          if (location) seed.location = location;
+	          if (remote) seed.remote = true;
+	          return seed;
+	        }
+
+	        async function runCareerOpsTargetFitRanker() {
+	          const cv = getCvSummary();
+	          if (!cv) {
+	            showError("請先至「CV 履歷」頁填寫或匯入一筆履歷，再用目標找相似職缺。");
+	            return;
+	          }
+	          const seed = careerOpsReadTargetSeed();
+	          if (!seed.company && !seed.title) {
+	            showError("請先填寫目標公司或目標職位，再找相似職缺。");
+	            return;
+	          }
+	          const seedLabel = [seed.company, seed.title].filter(Boolean).join(" / ");
+	          showLoading(`正在載入完整職缺池，準備找出與「${seedLabel}」最相似的台灣職缺…`);
+	          const snapshot = await loadCareerOpsFullPoolSnapshot({
+	            onProgress: ({ loadedJobs, totalJobs, shardIndex, shardCount }) => {
+	              const totalText = totalJobs ? ` / ${Number(totalJobs).toLocaleString()}` : "";
+	              showLoading(`正在載入遠端職缺分片 ${shardIndex.toLocaleString()} / ${shardCount.toLocaleString()}，已載入 ${loadedJobs.toLocaleString()}${totalText} 筆…`);
+	            }
+	          });
+	          const totalPool = Array.isArray(snapshot?.jobs) ? snapshot.jobs.length : 0;
+	          if (snapshot && (snapshot.generatedAt || snapshot.extractedAt)) {
+	            careerOpsLastRefreshISO = String(snapshot.generatedAt || snapshot.extractedAt);
+	            careerOpsRenderFreshness();
+	          }
+	          const eligible = careerOpsFullPoolEligibleJobs(snapshot);
+	          if (!eligible.length) {
+	            showError(totalPool
+	              ? `職缺池共 ${totalPool.toLocaleString()} 筆，但沒有符合條件的台灣職缺可比對。`
+	              : "目前沒有可比對的後端職缺快照。請先確認今日快照已產生。");
+	            return;
+	          }
+	          showLoading(`正在比對 ${eligible.length.toLocaleString()} 筆台灣職缺與目標的相似度…`);
+	          const topLimit = Math.min(CAREER_OPS_FULL_POOL_IMPORT_LIMIT, CAREER_OPS_TRACKER_LIMIT);
+	          const similar = careerOpsRankBySimilarity(seed, eligible, { limit: topLimit, threshold: 0.12 });
+	          if (!similar.length) {
+	            showError(`已比對 ${eligible.length.toLocaleString()} 筆台灣職缺，但沒有與「${seedLabel}」足夠相似的職缺（相似度門檻 0.12）。試著只填職位、放寬地點，或改用「全台職缺找最佳」。`);
+	            return;
+	          }
+	          const profile = careerOpsLocalProfile();
+	          const similarJobs = similar.map(item => item.job);
+	          const skillCounts = careerOpsSkillCounts(similarJobs);
+	          const startedAt = Date.now();
+	          const runId = Date.now();
+	          const topJobs = similar.map((item, index) => {
+	            const result = careerOpsScoreLocalJob(item.job, profile, skillCounts);
+	            const scored = applyCareerOpsLocalEngineToJob({
+	              ...item.job,
+	              id: `target-fit-${runId}-${index}`,
+	              jobKey: item.job.jobKey || careerOpsJobKey(item.job)
+	            }, profile, skillCounts, { result });
+	            scored.similarity = item.similarity;
+	            scored.similarityParts = item.similarityParts;
+	            return scored;
+	          });
+	          // primary sort: fit score desc; similarity as tiebreak
+	          topJobs.sort((a, b) =>
+	            (Number(b.score) || 0) - (Number(a.score) || 0) ||
+	            (Number(b.similarity) || 0) - (Number(a.similarity) || 0));
+	          const mergeResult = mergeCareerOpsRankedJobs(topJobs);
+	          const elapsedSeconds = Math.round((Date.now() - startedAt) / 100) / 10;
+	          const best = topJobs[0];
+	          const poolScopeText = totalPool ? `（已從 ${totalPool.toLocaleString()} 筆全職缺池篩出台灣職缺）` : "";
+	          renderCareerOpsDashboard(
+	            `目標比對完成：以「${seedLabel}」為目標，從 ${eligible.length.toLocaleString()} 筆台灣職缺中找出 ${similar.length} 筆最相似的職缺${poolScopeText}並用目前履歷評分，耗時 ${elapsedSeconds} 秒；已把 Top ${mergeResult.merged} 放入 tracker。最相似最佳職缺：${best?.company || ""} / ${best?.title || ""}（相似度 ${(Number(best?.similarity) || 0).toFixed(2)}、適配 ${best?.score || "—"}/100）。`
+	          );
+	        }
+
 	        async function runCareerOpsFullPoolRanker() {
 	          const cv = getCvSummary();
 	          if (!cv) {
@@ -20172,6 +20452,10 @@ Schema:
 	            }
 	          });
 	          const totalPool = Array.isArray(snapshot?.jobs) ? snapshot.jobs.length : 0;
+	          if (snapshot && (snapshot.generatedAt || snapshot.extractedAt)) {
+	            careerOpsLastRefreshISO = String(snapshot.generatedAt || snapshot.extractedAt);
+	            careerOpsRenderFreshness();
+	          }
 	          const eligible = careerOpsFullPoolEligibleJobs(snapshot);
 	          if (!eligible.length) {
 	            showError(totalPool
@@ -21386,7 +21670,9 @@ Schema:
 	          $c("careerOpsImportSingaporeBtn")?.addEventListener("click", importCareerOpsSingaporeSnapshot);
 	          $c("careerOpsRunLocalEngineBtn")?.addEventListener("click", runCareerOpsLocalEngine);
 	          $c("careerOpsRunFullPoolBtn")?.addEventListener("click", runCareerOpsFullPoolRanker);
+	          $c("careerOpsRunTargetFitBtn")?.addEventListener("click", runCareerOpsTargetFitRanker);
 	          $c("careerOpsRunBatchBtn")?.addEventListener("click", runCareerOpsBatch);
+	          careerOpsInitFreshness();
 	          $c("careerOpsExportCsvBtn")?.addEventListener("click", exportCareerOpsCsv);
 	          $c("careerResultsArea")?.addEventListener("click", handleCareerOpsResultsClick);
 	          $c("careerResultsArea")?.addEventListener("change", handleCareerOpsResultsChange);

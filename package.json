@@ -2,6 +2,8 @@
   "name": "cv-studio",
   "private": true,
   "scripts": {
+    "test": "node --test \"tooling/scripts/__tests__/*.test.mjs\"",
+    "test:career-ops": "node --test tooling/scripts/__tests__/career-ops-evaluate.test.mjs",
     "university-tw:help": "node tooling/scripts/scrape-university-tw.mjs --help",
     "university-tw:scrape": "node tooling/scripts/scrape-university-tw.mjs --out tooling/data/raw/university-tw-site.json",
     "university-tw:build:help": "node tooling/scripts/build-university-tw-app-data.mjs --help",
@@ -34,6 +36,8 @@
     "career-ops:quality": "node tooling/scripts/career-ops-source-quality.mjs --jobs tooling/data/app/career-ops-jobs.json --out tooling/data/app/career-ops-jobs.json --js-out tooling/data/app/career-ops-jobs.js --report-out tooling/data/app/career-ops-source-quality-report.md",
     "career-ops:source-health:help": "node tooling/scripts/career-ops-source-health.mjs --help",
     "career-ops:source-health": "node tooling/scripts/career-ops-source-health.mjs --sources tooling/data/career-ops-sources.json --jobs tooling/data/app/career-ops-jobs.json --out tooling/data/app/career-ops-source-health.json --report-out tooling/data/app/career-ops-source-health-report.md",
+    "career-ops:target-fit:help": "node tooling/scripts/career-ops-target-fit.mjs --help",
+    "career-ops:target-fit": "node tooling/scripts/career-ops-target-fit.mjs --jobs tooling/data/app/career-ops-jobs.json --profile tooling/data/career-ops-profile.example.json --out tooling/data/app/career-ops-target-fit.json",
     "career-ops:evaluate:help": "node tooling/scripts/career-ops-evaluate.mjs --help",
     "career-ops:evaluate": "node tooling/scripts/career-ops-evaluate.mjs --jobs tooling/data/app/career-ops-jobs.json --profile tooling/data/career-ops-profile.example.json --out tooling/data/app/career-ops-jobs.json",
     "career-ops:intelligence:help": "node tooling/scripts/career-ops-intelligence.mjs --help",
