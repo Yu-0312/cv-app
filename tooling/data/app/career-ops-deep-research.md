@@ -1,26 +1,22 @@
 # Career Ops Deep Research
 
-Generated: 2026-07-04T23:43:16.701Z
+Generated: 2026-07-06T14:12:40.868Z
 Search provider: none
-Queries: 14
-Evidence items: 7
+Queries: 13
+Evidence items: 23
 Dossiers: 8
 
-## VANGUARD SOFTWARE PTE. LTD. - Expert Frontend Engineer (React.JS & React Native)
+## GitLab Greenhouse - Staff Backend Engineer (Go), Continuous Delivery
 
-- Score: 95
+- Score: 87
 - Recommendation: 值得投遞
-- Signals: AI / data / platform signal
+- Signals: AI / data / platform signal, risk signal to inspect manually, remote or hybrid signal
 
 ### Evidence
-- source-page: https://www.mycareersfuture.gov.sg/job/07eafbe6994e2090a0c2a6a6a6111e62 — MyCareersFuture Singapore
-- source-page: https://www.mycareersfuture.gov.sg/job/fe789bec11c6a9d195bf371bcbcec73d — MyCareersFuture Singapore
-- source-page: https://www.mycareersfuture.gov.sg/job/eebd44b1382d7840b8c092b1fc312524 — MyCareersFuture Singapore
-- source-page: https://www.mycareersfuture.gov.sg/job/0da14018a05634ffde57785dcd4e7783 — MyCareersFuture Singapore
-- source-page: https://www.themuse.com/jobs/thecocacolacompany/sr-software-engineer-service-supply-chain-74ffa9 — Sr. Software Engineer , Service Supply Chain at The Coca-Cola Company | The Muse | The Muse Skip to main content The Muse Logo A logo with &amp;quat;the muse&amp;quat; in dark blue
+- source-page: https://job-boards.greenhouse.io/gitlab/jobs/8488961002 — Job Application for Staff Backend Engineer (Go), Continuous Delivery at GitLab Staff Backend Engineer (Go), Continuous Delivery Remote, India Apply GitLab is the intelligent orches
 
 ### Research Questions
-- What business unit owns the Expert Frontend Engineer (React.JS & React Native) role?
+- What business unit owns the Staff Backend Engineer (Go), Continuous Delivery role?
 - What measurable outcomes would this team expect in the first 90 days?
 - What recent company/product signals change the risk or upside?
 - Which CV proof points should be highlighted for this company?
@@ -30,21 +26,22 @@ Dossiers: 8
 - Ask how the company evaluates impact across the first two quarters.
 - Prepare one story that maps directly to the highest-scoring ATS keywords.
 
-## BIFROST PTE. LTD. - Frontend Engineer
+## Canonical Greenhouse - Security Software Engineer
 
-- Score: 95
+- Score: 87
 - Recommendation: 值得投遞
-- Signals: AI / data / platform signal
+- Signals: AI / data / platform signal, risk signal to inspect manually, remote or hybrid signal
 
 ### Evidence
-- source-page: https://www.mycareersfuture.gov.sg/job/07eafbe6994e2090a0c2a6a6a6111e62 — MyCareersFuture Singapore
-- source-page: https://www.mycareersfuture.gov.sg/job/fe789bec11c6a9d195bf371bcbcec73d — MyCareersFuture Singapore
-- source-page: https://www.mycareersfuture.gov.sg/job/eebd44b1382d7840b8c092b1fc312524 — MyCareersFuture Singapore
-- source-page: https://www.mycareersfuture.gov.sg/job/0da14018a05634ffde57785dcd4e7783 — MyCareersFuture Singapore
-- source-page: https://www.themuse.com/jobs/thecocacolacompany/sr-software-engineer-service-supply-chain-74ffa9 — Sr. Software Engineer , Service Supply Chain at The Coca-Cola Company | The Muse | The Muse Skip to main content The Muse Logo A logo with &amp;quat;the muse&amp;quat; in dark blue
+- source-page: https://job-boards.greenhouse.io/gitlab/jobs/8488961002 — Job Application for Staff Backend Engineer (Go), Continuous Delivery at GitLab Staff Backend Engineer (Go), Continuous Delivery Remote, India Apply GitLab is the intelligent orches
+- source-page: https://job-boards.greenhouse.io/canonical/jobs/5146620 — Job Application for Security Software Engineer at Canonical Security Software Engineer Home based - Worldwide Submit application Canonical is a leading provider of open source soft
+- source-page: https://boards.greenhouse.io/canonical?cv_market=global — Jobs at Canonical Current openings at Canonical Featured Jobs Alliances Field Engineer Home based - Worldwide Canonical is a leading provider of open source software and operating 
+- source-page: https://boards.greenhouse.io/canonical?cv_market=us — Jobs at Canonical Current openings at Canonical Featured Jobs Alliances Field Engineer Home based - Worldwide Canonical is a leading provider of open source software and operating 
+- source-page: https://boards.greenhouse.io/canonical?cv_market=ca — Jobs at Canonical Current openings at Canonical Featured Jobs Alliances Field Engineer Home based - Worldwide Canonical is a leading provider of open source software and operating 
+- source-page: https://boards.greenhouse.io/canonical?cv_market=uk — Jobs at Canonical Current openings at Canonical Featured Jobs Alliances Field Engineer Home based - Worldwide Canonical is a leading provider of open source software and operating 
 
 ### Research Questions
-- What business unit owns the Frontend Engineer role?
+- What business unit owns the Security Software Engineer role?
 - What measurable outcomes would this team expect in the first 90 days?
 - What recent company/product signals change the risk or upside?
 - Which CV proof points should be highlighted for this company?
@@ -54,21 +51,21 @@ Dossiers: 8
 - Ask how the company evaluates impact across the first two quarters.
 - Prepare one story that maps directly to the highest-scoring ATS keywords.
 
-## TIKTOK PTE. LTD. - Frontend Software Engineer (Payment), TikTok Live - Singapore
+## Linear Ashby - Senior / Staff Product Engineer
 
-- Score: 95
+- Score: 87
 - Recommendation: 值得投遞
-- Signals: AI / data / platform signal
+- Signals: AI / data / platform signal, risk signal to inspect manually, remote or hybrid signal
 
 ### Evidence
-- source-page: https://www.mycareersfuture.gov.sg/job/07eafbe6994e2090a0c2a6a6a6111e62 — MyCareersFuture Singapore
-- source-page: https://www.mycareersfuture.gov.sg/job/fe789bec11c6a9d195bf371bcbcec73d — MyCareersFuture Singapore
-- source-page: https://www.mycareersfuture.gov.sg/job/eebd44b1382d7840b8c092b1fc312524 — MyCareersFuture Singapore
-- source-page: https://www.mycareersfuture.gov.sg/job/0da14018a05634ffde57785dcd4e7783 — MyCareersFuture Singapore
-- source-page: https://www.themuse.com/jobs/thecocacolacompany/sr-software-engineer-service-supply-chain-74ffa9 — Sr. Software Engineer , Service Supply Chain at The Coca-Cola Company | The Muse | The Muse Skip to main content The Muse Logo A logo with &amp;quat;the muse&amp;quat; in dark blue
+- source-page: https://job-boards.greenhouse.io/gitlab/jobs/8488961002 — Job Application for Staff Backend Engineer (Go), Continuous Delivery at GitLab Staff Backend Engineer (Go), Continuous Delivery Remote, India Apply GitLab is the intelligent orches
+- source-page: https://job-boards.greenhouse.io/canonical/jobs/5146620 — Job Application for Security Software Engineer at Canonical Security Software Engineer Home based - Worldwide Submit application Canonical is a leading provider of open source soft
+- source-page: https://boards.greenhouse.io/canonical?cv_market=global — Jobs at Canonical Current openings at Canonical Featured Jobs Alliances Field Engineer Home based - Worldwide Canonical is a leading provider of open source software and operating 
+- source-page: https://boards.greenhouse.io/canonical?cv_market=us — Jobs at Canonical Current openings at Canonical Featured Jobs Alliances Field Engineer Home based - Worldwide Canonical is a leading provider of open source software and operating 
+- source-page: https://boards.greenhouse.io/canonical?cv_market=ca — Jobs at Canonical Current openings at Canonical Featured Jobs Alliances Field Engineer Home based - Worldwide Canonical is a leading provider of open source software and operating 
 
 ### Research Questions
-- What business unit owns the Frontend Software Engineer (Payment), TikTok Live - Singapore role?
+- What business unit owns the Senior / Staff Product Engineer role?
 - What measurable outcomes would this team expect in the first 90 days?
 - What recent company/product signals change the risk or upside?
 - Which CV proof points should be highlighted for this company?
@@ -78,21 +75,21 @@ Dossiers: 8
 - Ask how the company evaluates impact across the first two quarters.
 - Prepare one story that maps directly to the highest-scoring ATS keywords.
 
-## TIKTOK PTE. LTD. - Frontend Software Engineer (transaction), TikTok Live - Singapore
+## Linear Ashby - Senior / Staff Product Engineer
 
-- Score: 95
+- Score: 87
 - Recommendation: 值得投遞
-- Signals: AI / data / platform signal
+- Signals: AI / data / platform signal, risk signal to inspect manually, remote or hybrid signal
 
 ### Evidence
-- source-page: https://www.mycareersfuture.gov.sg/job/07eafbe6994e2090a0c2a6a6a6111e62 — MyCareersFuture Singapore
-- source-page: https://www.mycareersfuture.gov.sg/job/fe789bec11c6a9d195bf371bcbcec73d — MyCareersFuture Singapore
-- source-page: https://www.mycareersfuture.gov.sg/job/eebd44b1382d7840b8c092b1fc312524 — MyCareersFuture Singapore
-- source-page: https://www.mycareersfuture.gov.sg/job/0da14018a05634ffde57785dcd4e7783 — MyCareersFuture Singapore
-- source-page: https://www.themuse.com/jobs/thecocacolacompany/sr-software-engineer-service-supply-chain-74ffa9 — Sr. Software Engineer , Service Supply Chain at The Coca-Cola Company | The Muse | The Muse Skip to main content The Muse Logo A logo with &amp;quat;the muse&amp;quat; in dark blue
+- source-page: https://job-boards.greenhouse.io/gitlab/jobs/8488961002 — Job Application for Staff Backend Engineer (Go), Continuous Delivery at GitLab Staff Backend Engineer (Go), Continuous Delivery Remote, India Apply GitLab is the intelligent orches
+- source-page: https://job-boards.greenhouse.io/canonical/jobs/5146620 — Job Application for Security Software Engineer at Canonical Security Software Engineer Home based - Worldwide Submit application Canonical is a leading provider of open source soft
+- source-page: https://boards.greenhouse.io/canonical?cv_market=global — Jobs at Canonical Current openings at Canonical Featured Jobs Alliances Field Engineer Home based - Worldwide Canonical is a leading provider of open source software and operating 
+- source-page: https://boards.greenhouse.io/canonical?cv_market=us — Jobs at Canonical Current openings at Canonical Featured Jobs Alliances Field Engineer Home based - Worldwide Canonical is a leading provider of open source software and operating 
+- source-page: https://boards.greenhouse.io/canonical?cv_market=ca — Jobs at Canonical Current openings at Canonical Featured Jobs Alliances Field Engineer Home based - Worldwide Canonical is a leading provider of open source software and operating 
 
 ### Research Questions
-- What business unit owns the Frontend Software Engineer (transaction), TikTok Live - Singapore role?
+- What business unit owns the Senior / Staff Product Engineer role?
 - What measurable outcomes would this team expect in the first 90 days?
 - What recent company/product signals change the risk or upside?
 - Which CV proof points should be highlighted for this company?
@@ -102,19 +99,18 @@ Dossiers: 8
 - Ask how the company evaluates impact across the first two quarters.
 - Prepare one story that maps directly to the highest-scoring ATS keywords.
 
-## The Coca-Cola Company - Sr. Software Engineer , Service Supply Chain
+## Linear Ashby - Product Engineer
 
-- Score: 95
+- Score: 87
 - Recommendation: 值得投遞
-- Signals: AI / data / platform signal
+- Signals: AI / data / platform signal, risk signal to inspect manually, remote or hybrid signal
 
 ### Evidence
-- source-page: https://www.themuse.com/jobs/thecocacolacompany/sr-software-engineer-service-supply-chain-74ffa9 — Sr. Software Engineer , Service Supply Chain at The Coca-Cola Company | The Muse | The Muse Skip to main content The Muse Logo A logo with &amp;quat;the muse&amp;quat; in dark blue
-- source-page: https://www.themuse.com/jobs/thecocacolacompany/senior-software-engineer-service-provider-f1a5ba — Senior Software Engineer , Service Provider at The Coca-Cola Company | The Muse | The Muse Skip to main content The Muse Logo A logo with &amp;quat;the muse&amp;quat; in dark blue 
-- source-page: https://www.themuse.com/jobs/bankofamerica/principal-engineer-gbs-ind-783d05 — Principal Engineer - GBS IND at Bank of America | The Muse | The Muse Skip to main content The Muse Logo A logo with &amp;quat;the muse&amp;quat; in dark blue text. Newsletter Jobs
+- source-page: https://job-boards.greenhouse.io/gitlab/jobs/8488961002 — Job Application for Staff Backend Engineer (Go), Continuous Delivery at GitLab Staff Backend Engineer (Go), Continuous Delivery Remote, India Apply GitLab is the intelligent orches
+- source-page: https://job-boards.greenhouse.io/canonical/jobs/5146620 — Job Application for Security Software Engineer at Canonical Security Software Engineer Home based - Worldwide Submit application Canonical is a leading provider of open source soft
 
 ### Research Questions
-- What business unit owns the Sr. Software Engineer , Service Supply Chain role?
+- What business unit owns the Product Engineer role?
 - What measurable outcomes would this team expect in the first 90 days?
 - What recent company/product signals change the risk or upside?
 - Which CV proof points should be highlighted for this company?
@@ -124,19 +120,21 @@ Dossiers: 8
 - Ask how the company evaluates impact across the first two quarters.
 - Prepare one story that maps directly to the highest-scoring ATS keywords.
 
-## The Coca-Cola Company - Senior Software Engineer , Service Provider
+## ElevenLabs Ashby - Safety Engineer
 
-- Score: 95
+- Score: 87
 - Recommendation: 值得投遞
-- Signals: AI / data / platform signal
+- Signals: AI / data / platform signal, risk signal to inspect manually, remote or hybrid signal
 
 ### Evidence
-- source-page: https://www.themuse.com/jobs/thecocacolacompany/sr-software-engineer-service-supply-chain-74ffa9 — Sr. Software Engineer , Service Supply Chain at The Coca-Cola Company | The Muse | The Muse Skip to main content The Muse Logo A logo with &amp;quat;the muse&amp;quat; in dark blue
-- source-page: https://www.themuse.com/jobs/thecocacolacompany/senior-software-engineer-service-provider-f1a5ba — Senior Software Engineer , Service Provider at The Coca-Cola Company | The Muse | The Muse Skip to main content The Muse Logo A logo with &amp;quat;the muse&amp;quat; in dark blue 
-- source-page: https://www.themuse.com/jobs/bankofamerica/principal-engineer-gbs-ind-783d05 — Principal Engineer - GBS IND at Bank of America | The Muse | The Muse Skip to main content The Muse Logo A logo with &amp;quat;the muse&amp;quat; in dark blue text. Newsletter Jobs
+- source-page: https://job-boards.greenhouse.io/gitlab/jobs/8488961002 — Job Application for Staff Backend Engineer (Go), Continuous Delivery at GitLab Staff Backend Engineer (Go), Continuous Delivery Remote, India Apply GitLab is the intelligent orches
+- source-page: https://job-boards.greenhouse.io/canonical/jobs/5146620 — Job Application for Security Software Engineer at Canonical Security Software Engineer Home based - Worldwide Submit application Canonical is a leading provider of open source soft
+- source-page: https://boards.greenhouse.io/canonical?cv_market=global — Jobs at Canonical Current openings at Canonical Featured Jobs Alliances Field Engineer Home based - Worldwide Canonical is a leading provider of open source software and operating 
+- source-page: https://boards.greenhouse.io/canonical?cv_market=us — Jobs at Canonical Current openings at Canonical Featured Jobs Alliances Field Engineer Home based - Worldwide Canonical is a leading provider of open source software and operating 
+- source-page: https://boards.greenhouse.io/canonical?cv_market=ca — Jobs at Canonical Current openings at Canonical Featured Jobs Alliances Field Engineer Home based - Worldwide Canonical is a leading provider of open source software and operating 
 
 ### Research Questions
-- What business unit owns the Senior Software Engineer , Service Provider role?
+- What business unit owns the Safety Engineer role?
 - What measurable outcomes would this team expect in the first 90 days?
 - What recent company/product signals change the risk or upside?
 - Which CV proof points should be highlighted for this company?
@@ -146,17 +144,17 @@ Dossiers: 8
 - Ask how the company evaluates impact across the first two quarters.
 - Prepare one story that maps directly to the highest-scoring ATS keywords.
 
-## Disney - Lead Software Engineer
+## LawnStarter - Staff Product Engineer (São Paulo)
 
-- Score: 95
+- Score: 86
 - Recommendation: 值得投遞
-- Signals: AI / data / platform signal
+- Signals: AI / data / platform signal, risk signal to inspect manually, remote or hybrid signal
 
 ### Evidence
-- source-page: https://www.themuse.com/jobs/bankofamerica/principal-engineer-gbs-ind-783d05 — Principal Engineer - GBS IND at Bank of America | The Muse | The Muse Skip to main content The Muse Logo A logo with &amp;quat;the muse&amp;quat; in dark blue text. Newsletter Jobs
+- source-page: https://job-boards.greenhouse.io/gitlab/jobs/8488961002 — Job Application for Staff Backend Engineer (Go), Continuous Delivery at GitLab Staff Backend Engineer (Go), Continuous Delivery Remote, India Apply GitLab is the intelligent orches
 
 ### Research Questions
-- What business unit owns the Lead Software Engineer role?
+- What business unit owns the Staff Product Engineer (São Paulo) role?
 - What measurable outcomes would this team expect in the first 90 days?
 - What recent company/product signals change the risk or upside?
 - Which CV proof points should be highlighted for this company?
@@ -166,17 +164,21 @@ Dossiers: 8
 - Ask how the company evaluates impact across the first two quarters.
 - Prepare one story that maps directly to the highest-scoring ATS keywords.
 
-## Bank of America - Principal Engineer - GBS IND
+## Yext - Senior Systems Engineer
 
-- Score: 95
+- Score: 86
 - Recommendation: 值得投遞
-- Signals: AI / data / platform signal
+- Signals: AI / data / platform signal, risk signal to inspect manually, remote or hybrid signal
 
 ### Evidence
-- source-page: https://www.themuse.com/jobs/bankofamerica/principal-engineer-gbs-ind-783d05 — Principal Engineer - GBS IND at Bank of America | The Muse | The Muse Skip to main content The Muse Logo A logo with &amp;quat;the muse&amp;quat; in dark blue text. Newsletter Jobs
+- source-page: https://job-boards.greenhouse.io/gitlab/jobs/8488961002 — Job Application for Staff Backend Engineer (Go), Continuous Delivery at GitLab Staff Backend Engineer (Go), Continuous Delivery Remote, India Apply GitLab is the intelligent orches
+- source-page: https://job-boards.greenhouse.io/canonical/jobs/5146620 — Job Application for Security Software Engineer at Canonical Security Software Engineer Home based - Worldwide Submit application Canonical is a leading provider of open source soft
+- source-page: https://boards.greenhouse.io/canonical?cv_market=global — Jobs at Canonical Current openings at Canonical Featured Jobs Alliances Field Engineer Home based - Worldwide Canonical is a leading provider of open source software and operating 
+- source-page: https://boards.greenhouse.io/canonical?cv_market=us — Jobs at Canonical Current openings at Canonical Featured Jobs Alliances Field Engineer Home based - Worldwide Canonical is a leading provider of open source software and operating 
+- source-page: https://boards.greenhouse.io/canonical?cv_market=ca — Jobs at Canonical Current openings at Canonical Featured Jobs Alliances Field Engineer Home based - Worldwide Canonical is a leading provider of open source software and operating 
 
 ### Research Questions
-- What business unit owns the Principal Engineer - GBS IND role?
+- What business unit owns the Senior Systems Engineer role?
 - What measurable outcomes would this team expect in the first 90 days?
 - What recent company/product signals change the risk or upside?
 - Which CV proof points should be highlighted for this company?
@@ -188,5 +190,5 @@ Dossiers: 8
 
 ## Errors
 
-- https://www.themuse.com/jobs/disney/lead-software-engineer-944f62: HTTP 404
+- https://boards.greenhouse.io/gitlab: This operation was aborted
 

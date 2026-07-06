@@ -1,16 +1,20 @@
 # Career Ops Source Flex Report
 
-- Generated at: 2026-07-04T23:16:04.811Z
+- Generated at: 2026-07-06T13:39:34.099Z
 - Target markets: tw, cn, jp, kr, sg, global, us, ca, uk, ie, de, nl, fr, es, it, se, dk, no, pl, pt, au, nz, in, br, mx, ch, fi, cz, za, id, my, ph, vn, th, il, hk, ae
-- Total sources: 421
-- Flex candidates: 348
+- Total sources: 425
+- Flex candidates: 352
 - Search queries: 10557
 
 ## Flex Candidates
 
 | Strategy | Market | Name | URL |
 |---|---|---|---|
-| market-open-data | tw | TaiwanJobs Open Data TW | https://free.taiwanjobs.gov.tw/WebService_Taipei/Webservice.ashx?count=1000&T=CSV |
+| market-open-data | tw | TaiwanJobs Open Data TW | https://free.taiwanjobs.gov.tw/WebService_Taipei/Webservice.ashx?count=100000&T=CSV |
+| market-job-board | tw | 104 Taiwan Job Search TW | https://www.104.com.tw/jobs/search/list |
+| market-job-board | tw | Yourator Taiwan Job Search TW | https://www.yourator.co/jobs |
+| market-job-board | tw | yes123 Taiwan Job Search TW | https://www.yes123.com.tw/wk_index/joblist.asp |
+| market-job-board | tw | 518 Taiwan Job Search TW | https://www.518.com.tw/job-index.html |
 | market-sitemap | tw | 1111 Taiwan Job Sitemap TW | https://www.1111.com.tw/sitemap/sitemap.xml |
 | market-company-api | cn | Tencent Careers China CN | https://careers.tencent.com/tencentcareer/api/post/Query |
 | market-job-board | cn | Boss Zhipin Shanghai Software CN | https://www.zhipin.com/web/geek/job?query=%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E5%B8%88&city=101020100&page=1 |
@@ -86,10 +90,6 @@
 | flex-seed-source | jp | Stripe Greenhouse JP | https://boards.greenhouse.io/stripe?cv_market=jp |
 | flex-seed-source | br | Stripe Greenhouse BR | https://boards.greenhouse.io/stripe?cv_market=br |
 | flex-seed-source | mx | Stripe Greenhouse MX | https://boards.greenhouse.io/stripe?cv_market=mx |
-| flex-seed-source | us | Figma Greenhouse US | https://boards.greenhouse.io/figma?cv_market=us |
-| flex-seed-source | uk | Figma Greenhouse UK | https://boards.greenhouse.io/figma?cv_market=uk |
-| flex-seed-source | jp | Figma Greenhouse JP | https://boards.greenhouse.io/figma?cv_market=jp |
-| flex-seed-source | us | Airbnb Greenhouse US | https://boards.greenhouse.io/airbnb?cv_market=us |
 
 ## Search Query Expansion
 

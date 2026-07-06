@@ -1,55 +1,44 @@
 window.CV_CAREER_OPS_APPLICATION_KIT = {
   "source": "career-ops-application-kit",
-  "generatedAt": "2026-07-04T23:43:09.017Z",
+  "generatedAt": "2026-07-06T14:12:08.742Z",
   "profileRole": "Frontend Engineer",
   "playbooks": [
     {
-      "jobKey": "url:https://www.mycareersfuture.gov.sg/job/07eafbe6994e2090a0c2a6a6a6111e62",
-      "title": "Expert Frontend Engineer (React.JS & React Native)",
-      "company": "VANGUARD SOFTWARE PTE. LTD.",
-      "score": "95/A",
-      "rating": 4.8,
+      "jobKey": "url:https://job-boards.greenhouse.io/gitlab/jobs/8488961002",
+      "title": "Staff Backend Engineer (Go), Continuous Delivery",
+      "company": "GitLab Greenhouse",
+      "score": "87/A",
+      "rating": 4.5,
       "blockG": {
         "tier": "High Confidence",
-        "confidence": "medium"
+        "confidence": "high"
       },
       "priority": "P0",
       "atsInjection": {
         "jdKeywords": [
-          "JavaScript",
-          "TypeScript",
-          "React",
-          "Next.js",
-          "CSS",
-          "Accessibility",
-          "Design Systems",
-          "design system",
+          "remote",
           "engineer",
           "product",
-          "API"
+          "data"
         ],
         "hardKeywords": [
-          "JavaScript",
-          "TypeScript",
-          "React",
-          "Next.js",
-          "CSS",
-          "Accessibility",
-          "Design Systems",
-          "design system",
+          "remote",
           "engineer",
-          "product"
+          "product",
+          "data"
         ],
         "softKeywords": [],
         "missingKeywords": [
-          "html",
+          "go",
+          "docker",
+          "kubernetes",
           "growth"
         ],
-        "archetype": "Frontend Engineer",
+        "archetype": "Backend Engineer",
         "summaryRewriteHints": [
-          "在 Professional Summary 中自然帶入：JavaScript、TypeScript、React、Next.js、CSS",
-          "使用職位語言：「Frontend Engineer」方向的動詞和術語",
-          "【你已有但此 JD 未要求】可視情況選擇性提及：html、growth"
+          "在 Professional Summary 中自然帶入：remote、engineer、product、data",
+          "使用職位語言：「Backend Engineer」方向的動詞和術語",
+          "【你已有但此 JD 未要求】可視情況選擇性提及：go、docker、kubernetes、growth"
         ],
         "atsRules": [
           "單欄排版，避免 sidebar 雙欄（ATS parser 容易亂序）",
@@ -62,28 +51,28 @@ window.CV_CAREER_OPS_APPLICATION_KIT = {
         "guardrails": [
           "NEVER add skills the candidate lacks",
           "Only reformulate real experience with exact JD vocabulary",
-          "Example: if candidate has 'API development', it can become 'JavaScript'"
+          "Example: if candidate has 'API development', it can become 'remote'"
         ],
         "keywordCoveragePercent": 100
       },
       "applyChecklist": [
         "Open the source URL and confirm the role is still active.",
         "Generate or refresh the tailored ATS PDF from this job.",
-        "Mirror these JD keywords honestly in your CV: JavaScript, TypeScript, React, Next.js, CSS, Accessibility, Design Systems, design system",
-        "Do not overclaim missing areas: html, growth",
+        "Mirror these JD keywords honestly in your CV: remote, engineer, product, data",
+        "Do not overclaim missing areas: go, docker, kubernetes, growth",
         "Log status, recruiter/contact, and next follow-up date in the tracker."
       ],
       "outreachEmail": {
-        "subject": "Expert Frontend Engineer (React.JS & React Native) application - VANGUARD SOFTWARE PTE. LTD.",
-        "body": "Hi VANGUARD SOFTWARE PTE. LTD. team,\n\nI am Alex Chen, and I am interested in the Expert Frontend Engineer (React.JS & React Native) role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.\n\nThe role stood out because it maps closely to my experience with JavaScript, TypeScript, React, Next.js, CSS.\n\nI would appreciate the chance to share how my experience can support the team. Thank you for your time.\n\nBest,\nAlex Chen"
+        "subject": "Staff Backend Engineer (Go), Continuous Delivery application - GitLab Greenhouse",
+        "body": "Hi GitLab Greenhouse team,\n\nI am Alex Chen, and I am interested in the Staff Backend Engineer (Go), Continuous Delivery role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.\n\nThe role stood out because it maps closely to my experience with remote, engineer, product, data.\n\nI would appreciate the chance to share how my experience can support the team. Thank you for your time.\n\nBest,\nAlex Chen"
       },
       "followUp": {
         "timing": "3-5 business days after applying or the last recruiter interaction.",
-        "body": "Hi VANGUARD SOFTWARE PTE. LTD. team,\n\nI wanted to follow up on my application for the Expert Frontend Engineer (React.JS & React Native) role. I remain interested and would be glad to provide any additional context about my background.\n\nThank you again for your time.\n\nBest,\nAlex Chen"
+        "body": "Hi GitLab Greenhouse team,\n\nI wanted to follow up on my application for the Staff Backend Engineer (Go), Continuous Delivery role. I remain interested and would be glad to provide any additional context about my background.\n\nThank you again for your time.\n\nBest,\nAlex Chen"
       },
       "interviewPrep": [
-        "Prepare a 60-second story for why VANGUARD SOFTWARE PTE. LTD. and why Expert Frontend Engineer (React.JS & React Native).",
-        "Prepare evidence for: JavaScript, TypeScript, React, Next.js, CSS, Accessibility.",
+        "Prepare a 60-second story for why GitLab Greenhouse and why Staff Backend Engineer (Go), Continuous Delivery.",
+        "Prepare evidence for: remote, engineer, product, data.",
         "Prepare one STAR story about execution under ambiguity.",
         "Prepare one STAR story about collaboration and tradeoff decisions.",
         "Prepare questions about team priorities, success metrics, and hiring timeline."
@@ -96,57 +85,47 @@ window.CV_CAREER_OPS_APPLICATION_KIT = {
       ]
     },
     {
-      "jobKey": "url:https://www.mycareersfuture.gov.sg/job/fe789bec11c6a9d195bf371bcbcec73d",
-      "title": "Frontend Engineer",
-      "company": "BIFROST PTE. LTD.",
-      "score": "95/A",
-      "rating": 4.8,
+      "jobKey": "url:https://job-boards.greenhouse.io/canonical/jobs/5146620",
+      "title": "Security Software Engineer",
+      "company": "Canonical Greenhouse",
+      "score": "87/A",
+      "rating": 4.5,
       "blockG": {
         "tier": "High Confidence",
-        "confidence": "medium"
+        "confidence": "high"
       },
       "priority": "P0",
       "atsInjection": {
         "jdKeywords": [
           "JavaScript",
-          "React",
+          "TypeScript",
+          "remote",
           "engineer",
           "product",
           "data",
-          "restful",
-          "graphql",
-          "node.js",
-          "CSS",
           "API"
         ],
         "hardKeywords": [
           "JavaScript",
-          "React",
+          "TypeScript",
+          "remote",
           "engineer",
           "product",
           "data",
-          "restful",
-          "graphql",
-          "node.js",
-          "CSS",
           "API"
         ],
         "softKeywords": [],
         "missingKeywords": [
-          "vue",
-          "angular",
           "python",
           "java",
           "go",
-          "mysql",
-          "aws",
-          "gcp"
+          "rust"
         ],
-        "archetype": "Frontend Engineer",
+        "archetype": "Backend Engineer",
         "summaryRewriteHints": [
-          "在 Professional Summary 中自然帶入：JavaScript、React、engineer、product、data",
-          "使用職位語言：「Frontend Engineer」方向的動詞和術語",
-          "【你已有但此 JD 未要求】可視情況選擇性提及：vue、angular、python、java、go"
+          "在 Professional Summary 中自然帶入：JavaScript、TypeScript、remote、engineer、product",
+          "使用職位語言：「Backend Engineer」方向的動詞和術語",
+          "【你已有但此 JD 未要求】可視情況選擇性提及：python、java、go、rust"
         ],
         "atsRules": [
           "單欄排版，避免 sidebar 雙欄（ATS parser 容易亂序）",
@@ -166,21 +145,21 @@ window.CV_CAREER_OPS_APPLICATION_KIT = {
       "applyChecklist": [
         "Open the source URL and confirm the role is still active.",
         "Generate or refresh the tailored ATS PDF from this job.",
-        "Mirror these JD keywords honestly in your CV: JavaScript, React, engineer, product, data, restful, graphql, node.js",
-        "Do not overclaim missing areas: vue, angular, python, java, go, mysql",
+        "Mirror these JD keywords honestly in your CV: JavaScript, TypeScript, remote, engineer, product, data, API",
+        "Do not overclaim missing areas: python, java, go, rust",
         "Log status, recruiter/contact, and next follow-up date in the tracker."
       ],
       "outreachEmail": {
-        "subject": "Frontend Engineer application - BIFROST PTE. LTD.",
-        "body": "Hi BIFROST PTE. LTD. team,\n\nI am Alex Chen, and I am interested in the Frontend Engineer role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.\n\nThe role stood out because it maps closely to my experience with JavaScript, React, engineer, product, data.\n\nI would appreciate the chance to share how my experience can support the team. Thank you for your time.\n\nBest,\nAlex Chen"
+        "subject": "Security Software Engineer application - Canonical Greenhouse",
+        "body": "Hi Canonical Greenhouse team,\n\nI am Alex Chen, and I am interested in the Security Software Engineer role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.\n\nThe role stood out because it maps closely to my experience with JavaScript, TypeScript, remote, engineer, product.\n\nI would appreciate the chance to share how my experience can support the team. Thank you for your time.\n\nBest,\nAlex Chen"
       },
       "followUp": {
         "timing": "3-5 business days after applying or the last recruiter interaction.",
-        "body": "Hi BIFROST PTE. LTD. team,\n\nI wanted to follow up on my application for the Frontend Engineer role. I remain interested and would be glad to provide any additional context about my background.\n\nThank you again for your time.\n\nBest,\nAlex Chen"
+        "body": "Hi Canonical Greenhouse team,\n\nI wanted to follow up on my application for the Security Software Engineer role. I remain interested and would be glad to provide any additional context about my background.\n\nThank you again for your time.\n\nBest,\nAlex Chen"
       },
       "interviewPrep": [
-        "Prepare a 60-second story for why BIFROST PTE. LTD. and why Frontend Engineer.",
-        "Prepare evidence for: JavaScript, React, engineer, product, data, restful.",
+        "Prepare a 60-second story for why Canonical Greenhouse and why Security Software Engineer.",
+        "Prepare evidence for: JavaScript, TypeScript, remote, engineer, product, data.",
         "Prepare one STAR story about execution under ambiguity.",
         "Prepare one STAR story about collaboration and tradeoff decisions.",
         "Prepare questions about team priorities, success metrics, and hiring timeline."
@@ -193,337 +172,11 @@ window.CV_CAREER_OPS_APPLICATION_KIT = {
       ]
     },
     {
-      "jobKey": "url:https://www.mycareersfuture.gov.sg/job/eebd44b1382d7840b8c092b1fc312524",
-      "title": "Frontend Software Engineer (Payment), TikTok Live - Singapore",
-      "company": "TIKTOK PTE. LTD.",
-      "score": "95/A",
-      "rating": 4.8,
-      "blockG": {
-        "tier": "High Confidence",
-        "confidence": "medium"
-      },
-      "priority": "P0",
-      "atsInjection": {
-        "jdKeywords": [
-          "JavaScript",
-          "CSS",
-          "remote",
-          "engineer",
-          "product",
-          "data",
-          "API"
-        ],
-        "hardKeywords": [
-          "JavaScript",
-          "CSS",
-          "remote",
-          "engineer",
-          "product",
-          "data",
-          "API"
-        ],
-        "softKeywords": [],
-        "missingKeywords": [
-          "growth"
-        ],
-        "archetype": "Frontend Engineer",
-        "summaryRewriteHints": [
-          "在 Professional Summary 中自然帶入：JavaScript、CSS、remote、engineer、product",
-          "使用職位語言：「Frontend Engineer」方向的動詞和術語",
-          "【你已有但此 JD 未要求】可視情況選擇性提及：growth"
-        ],
-        "atsRules": [
-          "單欄排版，避免 sidebar 雙欄（ATS parser 容易亂序）",
-          "使用標準 header：Professional Summary, Work Experience, Skills, Education",
-          "不使用巢狀表格或文字框",
-          "確保 PDF 文字可被選取（不可光柵化輸出）",
-          "UTF-8 編碼，移除 em dash / smart quote / zero-width space",
-          "關鍵技能在 Skills section 明確列出，不要只藏在 bullet 裡"
-        ],
-        "guardrails": [
-          "NEVER add skills the candidate lacks",
-          "Only reformulate real experience with exact JD vocabulary",
-          "Example: if candidate has 'API development', it can become 'JavaScript'"
-        ],
-        "keywordCoveragePercent": 100
-      },
-      "applyChecklist": [
-        "Open the source URL and confirm the role is still active.",
-        "Generate or refresh the tailored ATS PDF from this job.",
-        "Mirror these JD keywords honestly in your CV: JavaScript, CSS, remote, engineer, product, data, API",
-        "Do not overclaim missing areas: growth",
-        "Log status, recruiter/contact, and next follow-up date in the tracker."
-      ],
-      "outreachEmail": {
-        "subject": "Frontend Software Engineer (Payment), TikTok Live - Singapore application - TIKTOK PTE. LTD.",
-        "body": "Hi TIKTOK PTE. LTD. team,\n\nI am Alex Chen, and I am interested in the Frontend Software Engineer (Payment), TikTok Live - Singapore role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.\n\nThe role stood out because it maps closely to my experience with JavaScript, CSS, remote, engineer, product.\n\nI would appreciate the chance to share how my experience can support the team. Thank you for your time.\n\nBest,\nAlex Chen"
-      },
-      "followUp": {
-        "timing": "3-5 business days after applying or the last recruiter interaction.",
-        "body": "Hi TIKTOK PTE. LTD. team,\n\nI wanted to follow up on my application for the Frontend Software Engineer (Payment), TikTok Live - Singapore role. I remain interested and would be glad to provide any additional context about my background.\n\nThank you again for your time.\n\nBest,\nAlex Chen"
-      },
-      "interviewPrep": [
-        "Prepare a 60-second story for why TIKTOK PTE. LTD. and why Frontend Software Engineer (Payment), TikTok Live - Singapore.",
-        "Prepare evidence for: JavaScript, CSS, remote, engineer, product, data.",
-        "Prepare one STAR story about execution under ambiguity.",
-        "Prepare one STAR story about collaboration and tradeoff decisions.",
-        "Prepare questions about team priorities, success metrics, and hiring timeline."
-      ],
-      "negotiationPrep": [
-        "Wait for a clear offer before anchoring compensation.",
-        "Ask for total compensation breakdown, work mode, title, level, review cycle, and start date.",
-        "Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.",
-        "Use competing priorities and role fit, not personal need, as the negotiation frame."
-      ]
-    },
-    {
-      "jobKey": "url:https://www.mycareersfuture.gov.sg/job/0da14018a05634ffde57785dcd4e7783",
-      "title": "Frontend Software Engineer (transaction), TikTok Live - Singapore",
-      "company": "TIKTOK PTE. LTD.",
-      "score": "95/A",
-      "rating": 4.8,
-      "blockG": {
-        "tier": "High Confidence",
-        "confidence": "medium"
-      },
-      "priority": "P0",
-      "atsInjection": {
-        "jdKeywords": [
-          "JavaScript",
-          "CSS",
-          "remote",
-          "engineer",
-          "product",
-          "data",
-          "API"
-        ],
-        "hardKeywords": [
-          "JavaScript",
-          "CSS",
-          "remote",
-          "engineer",
-          "product",
-          "data",
-          "API"
-        ],
-        "softKeywords": [],
-        "missingKeywords": [
-          "growth"
-        ],
-        "archetype": "Frontend Engineer",
-        "summaryRewriteHints": [
-          "在 Professional Summary 中自然帶入：JavaScript、CSS、remote、engineer、product",
-          "使用職位語言：「Frontend Engineer」方向的動詞和術語",
-          "【你已有但此 JD 未要求】可視情況選擇性提及：growth"
-        ],
-        "atsRules": [
-          "單欄排版，避免 sidebar 雙欄（ATS parser 容易亂序）",
-          "使用標準 header：Professional Summary, Work Experience, Skills, Education",
-          "不使用巢狀表格或文字框",
-          "確保 PDF 文字可被選取（不可光柵化輸出）",
-          "UTF-8 編碼，移除 em dash / smart quote / zero-width space",
-          "關鍵技能在 Skills section 明確列出，不要只藏在 bullet 裡"
-        ],
-        "guardrails": [
-          "NEVER add skills the candidate lacks",
-          "Only reformulate real experience with exact JD vocabulary",
-          "Example: if candidate has 'API development', it can become 'JavaScript'"
-        ],
-        "keywordCoveragePercent": 100
-      },
-      "applyChecklist": [
-        "Open the source URL and confirm the role is still active.",
-        "Generate or refresh the tailored ATS PDF from this job.",
-        "Mirror these JD keywords honestly in your CV: JavaScript, CSS, remote, engineer, product, data, API",
-        "Do not overclaim missing areas: growth",
-        "Log status, recruiter/contact, and next follow-up date in the tracker."
-      ],
-      "outreachEmail": {
-        "subject": "Frontend Software Engineer (transaction), TikTok Live - Singapore application - TIKTOK PTE. LTD.",
-        "body": "Hi TIKTOK PTE. LTD. team,\n\nI am Alex Chen, and I am interested in the Frontend Software Engineer (transaction), TikTok Live - Singapore role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.\n\nThe role stood out because it maps closely to my experience with JavaScript, CSS, remote, engineer, product.\n\nI would appreciate the chance to share how my experience can support the team. Thank you for your time.\n\nBest,\nAlex Chen"
-      },
-      "followUp": {
-        "timing": "3-5 business days after applying or the last recruiter interaction.",
-        "body": "Hi TIKTOK PTE. LTD. team,\n\nI wanted to follow up on my application for the Frontend Software Engineer (transaction), TikTok Live - Singapore role. I remain interested and would be glad to provide any additional context about my background.\n\nThank you again for your time.\n\nBest,\nAlex Chen"
-      },
-      "interviewPrep": [
-        "Prepare a 60-second story for why TIKTOK PTE. LTD. and why Frontend Software Engineer (transaction), TikTok Live - Singapore.",
-        "Prepare evidence for: JavaScript, CSS, remote, engineer, product, data.",
-        "Prepare one STAR story about execution under ambiguity.",
-        "Prepare one STAR story about collaboration and tradeoff decisions.",
-        "Prepare questions about team priorities, success metrics, and hiring timeline."
-      ],
-      "negotiationPrep": [
-        "Wait for a clear offer before anchoring compensation.",
-        "Ask for total compensation breakdown, work mode, title, level, review cycle, and start date.",
-        "Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.",
-        "Use competing priorities and role fit, not personal need, as the negotiation frame."
-      ]
-    },
-    {
-      "jobKey": "url:https://www.themuse.com/jobs/thecocacolacompany/sr-software-engineer-service-supply-chain-74ffa9",
-      "title": "Sr. Software Engineer , Service Supply Chain",
-      "company": "The Coca-Cola Company",
-      "score": "95/A",
-      "rating": 4.8,
-      "blockG": {
-        "tier": "High Confidence",
-        "confidence": "medium"
-      },
-      "priority": "P0",
-      "atsInjection": {
-        "jdKeywords": [
-          "API",
-          "engineer",
-          "product",
-          "data"
-        ],
-        "hardKeywords": [
-          "API",
-          "engineer",
-          "product",
-          "data"
-        ],
-        "softKeywords": [],
-        "missingKeywords": [
-          "growth",
-          "sales"
-        ],
-        "archetype": "AI Platform / LLMOps",
-        "summaryRewriteHints": [
-          "在 Professional Summary 中自然帶入：API、engineer、product、data",
-          "使用職位語言：「AI Platform / LLMOps」方向的動詞和術語",
-          "【你已有但此 JD 未要求】可視情況選擇性提及：growth、sales"
-        ],
-        "atsRules": [
-          "單欄排版，避免 sidebar 雙欄（ATS parser 容易亂序）",
-          "使用標準 header：Professional Summary, Work Experience, Skills, Education",
-          "不使用巢狀表格或文字框",
-          "確保 PDF 文字可被選取（不可光柵化輸出）",
-          "UTF-8 編碼，移除 em dash / smart quote / zero-width space",
-          "關鍵技能在 Skills section 明確列出，不要只藏在 bullet 裡"
-        ],
-        "guardrails": [
-          "NEVER add skills the candidate lacks",
-          "Only reformulate real experience with exact JD vocabulary",
-          "Example: if candidate has 'API development', it can become 'API'"
-        ],
-        "keywordCoveragePercent": 100
-      },
-      "applyChecklist": [
-        "Open the source URL and confirm the role is still active.",
-        "Generate or refresh the tailored ATS PDF from this job.",
-        "Mirror these JD keywords honestly in your CV: API, engineer, product, data",
-        "Do not overclaim missing areas: growth, sales",
-        "Log status, recruiter/contact, and next follow-up date in the tracker."
-      ],
-      "outreachEmail": {
-        "subject": "Sr. Software Engineer , Service Supply Chain application - The Coca-Cola Company",
-        "body": "Hi The Coca-Cola Company team,\n\nI am Alex Chen, and I am interested in the Sr. Software Engineer , Service Supply Chain role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.\n\nThe role stood out because it maps closely to my experience with API, engineer, product, data.\n\nI would appreciate the chance to share how my experience can support the team. Thank you for your time.\n\nBest,\nAlex Chen"
-      },
-      "followUp": {
-        "timing": "3-5 business days after applying or the last recruiter interaction.",
-        "body": "Hi The Coca-Cola Company team,\n\nI wanted to follow up on my application for the Sr. Software Engineer , Service Supply Chain role. I remain interested and would be glad to provide any additional context about my background.\n\nThank you again for your time.\n\nBest,\nAlex Chen"
-      },
-      "interviewPrep": [
-        "Prepare a 60-second story for why The Coca-Cola Company and why Sr. Software Engineer , Service Supply Chain.",
-        "Prepare evidence for: API, engineer, product, data.",
-        "Prepare one STAR story about execution under ambiguity.",
-        "Prepare one STAR story about collaboration and tradeoff decisions.",
-        "Prepare questions about team priorities, success metrics, and hiring timeline."
-      ],
-      "negotiationPrep": [
-        "Wait for a clear offer before anchoring compensation.",
-        "Ask for total compensation breakdown, work mode, title, level, review cycle, and start date.",
-        "Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.",
-        "Use competing priorities and role fit, not personal need, as the negotiation frame."
-      ]
-    },
-    {
-      "jobKey": "url:https://www.themuse.com/jobs/thecocacolacompany/senior-software-engineer-service-provider-f1a5ba",
-      "title": "Senior Software Engineer , Service Provider",
-      "company": "The Coca-Cola Company",
-      "score": "95/A",
-      "rating": 4.8,
-      "blockG": {
-        "tier": "High Confidence",
-        "confidence": "medium"
-      },
-      "priority": "P0",
-      "atsInjection": {
-        "jdKeywords": [
-          "API",
-          "engineer",
-          "product",
-          "data"
-        ],
-        "hardKeywords": [
-          "API",
-          "engineer",
-          "product",
-          "data"
-        ],
-        "softKeywords": [],
-        "missingKeywords": [
-          "growth",
-          "sales"
-        ],
-        "archetype": "AI Platform / LLMOps",
-        "summaryRewriteHints": [
-          "在 Professional Summary 中自然帶入：API、engineer、product、data",
-          "使用職位語言：「AI Platform / LLMOps」方向的動詞和術語",
-          "【你已有但此 JD 未要求】可視情況選擇性提及：growth、sales"
-        ],
-        "atsRules": [
-          "單欄排版，避免 sidebar 雙欄（ATS parser 容易亂序）",
-          "使用標準 header：Professional Summary, Work Experience, Skills, Education",
-          "不使用巢狀表格或文字框",
-          "確保 PDF 文字可被選取（不可光柵化輸出）",
-          "UTF-8 編碼，移除 em dash / smart quote / zero-width space",
-          "關鍵技能在 Skills section 明確列出，不要只藏在 bullet 裡"
-        ],
-        "guardrails": [
-          "NEVER add skills the candidate lacks",
-          "Only reformulate real experience with exact JD vocabulary",
-          "Example: if candidate has 'API development', it can become 'API'"
-        ],
-        "keywordCoveragePercent": 100
-      },
-      "applyChecklist": [
-        "Open the source URL and confirm the role is still active.",
-        "Generate or refresh the tailored ATS PDF from this job.",
-        "Mirror these JD keywords honestly in your CV: API, engineer, product, data",
-        "Do not overclaim missing areas: growth, sales",
-        "Log status, recruiter/contact, and next follow-up date in the tracker."
-      ],
-      "outreachEmail": {
-        "subject": "Senior Software Engineer , Service Provider application - The Coca-Cola Company",
-        "body": "Hi The Coca-Cola Company team,\n\nI am Alex Chen, and I am interested in the Senior Software Engineer , Service Provider role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.\n\nThe role stood out because it maps closely to my experience with API, engineer, product, data.\n\nI would appreciate the chance to share how my experience can support the team. Thank you for your time.\n\nBest,\nAlex Chen"
-      },
-      "followUp": {
-        "timing": "3-5 business days after applying or the last recruiter interaction.",
-        "body": "Hi The Coca-Cola Company team,\n\nI wanted to follow up on my application for the Senior Software Engineer , Service Provider role. I remain interested and would be glad to provide any additional context about my background.\n\nThank you again for your time.\n\nBest,\nAlex Chen"
-      },
-      "interviewPrep": [
-        "Prepare a 60-second story for why The Coca-Cola Company and why Senior Software Engineer , Service Provider.",
-        "Prepare evidence for: API, engineer, product, data.",
-        "Prepare one STAR story about execution under ambiguity.",
-        "Prepare one STAR story about collaboration and tradeoff decisions.",
-        "Prepare questions about team priorities, success metrics, and hiring timeline."
-      ],
-      "negotiationPrep": [
-        "Wait for a clear offer before anchoring compensation.",
-        "Ask for total compensation breakdown, work mode, title, level, review cycle, and start date.",
-        "Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.",
-        "Use competing priorities and role fit, not personal need, as the negotiation frame."
-      ]
-    },
-    {
-      "jobKey": "url:https://www.themuse.com/jobs/disney/lead-software-engineer-944f62",
-      "title": "Lead Software Engineer",
-      "company": "Disney",
-      "score": "95/A",
-      "rating": 4.8,
+      "jobKey": "url:https://jobs.ashbyhq.com/linear/069c4628-88d7-4e4d-b393-c996fc7f3076",
+      "title": "Senior / Staff Product Engineer",
+      "company": "Linear Ashby",
+      "score": "87/A",
+      "rating": 4.5,
       "blockG": {
         "tier": "Proceed with Caution",
         "confidence": "medium"
@@ -531,31 +184,35 @@ window.CV_CAREER_OPS_APPLICATION_KIT = {
       "priority": "P0",
       "atsInjection": {
         "jdKeywords": [
-          "JavaScript",
           "TypeScript",
+          "React",
           "API",
+          "remote",
           "engineer",
           "product",
-          "data"
+          "data",
+          "graphql"
         ],
         "hardKeywords": [
-          "JavaScript",
           "TypeScript",
+          "React",
           "API",
+          "remote",
           "engineer",
           "product",
-          "data"
+          "data",
+          "graphql"
         ],
         "softKeywords": [],
         "missingKeywords": [
-          "rust",
-          "aws"
+          "postgres",
+          "agents"
         ],
-        "archetype": "Backend Engineer",
+        "archetype": "Agentic / Automation",
         "summaryRewriteHints": [
-          "在 Professional Summary 中自然帶入：JavaScript、TypeScript、API、engineer、product",
-          "使用職位語言：「Backend Engineer」方向的動詞和術語",
-          "【你已有但此 JD 未要求】可視情況選擇性提及：rust、aws"
+          "在 Professional Summary 中自然帶入：TypeScript、React、API、remote、engineer",
+          "使用職位語言：「Agentic / Automation」方向的動詞和術語",
+          "【你已有但此 JD 未要求】可視情況選擇性提及：postgres、agents"
         ],
         "atsRules": [
           "單欄排版，避免 sidebar 雙欄（ATS parser 容易亂序）",
@@ -568,7 +225,7 @@ window.CV_CAREER_OPS_APPLICATION_KIT = {
         "guardrails": [
           "NEVER add skills the candidate lacks",
           "Only reformulate real experience with exact JD vocabulary",
-          "Example: if candidate has 'API development', it can become 'JavaScript'"
+          "Example: if candidate has 'API development', it can become 'TypeScript'"
         ],
         "keywordCoveragePercent": 100
       },
@@ -576,21 +233,21 @@ window.CV_CAREER_OPS_APPLICATION_KIT = {
         "Open the source URL and confirm the role is still active.",
         "⚠ Block G: Proceed with Caution — double-check recruiter identity.",
         "Generate or refresh the tailored ATS PDF from this job.",
-        "Mirror these JD keywords honestly in your CV: JavaScript, TypeScript, API, engineer, product, data",
-        "Do not overclaim missing areas: rust, aws",
+        "Mirror these JD keywords honestly in your CV: TypeScript, React, API, remote, engineer, product, data, graphql",
+        "Do not overclaim missing areas: postgres, agents",
         "Log status, recruiter/contact, and next follow-up date in the tracker."
       ],
       "outreachEmail": {
-        "subject": "Lead Software Engineer application - Disney",
-        "body": "Hi Disney team,\n\nI am Alex Chen, and I am interested in the Lead Software Engineer role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.\n\nThe role stood out because it maps closely to my experience with JavaScript, TypeScript, API, engineer, product.\n\nI would appreciate the chance to share how my experience can support the team. Thank you for your time.\n\nBest,\nAlex Chen"
+        "subject": "Senior / Staff Product Engineer application - Linear Ashby",
+        "body": "Hi Linear Ashby team,\n\nI am Alex Chen, and I am interested in the Senior / Staff Product Engineer role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.\n\nThe role stood out because it maps closely to my experience with TypeScript, React, API, remote, engineer.\n\nI would appreciate the chance to share how my experience can support the team. Thank you for your time.\n\nBest,\nAlex Chen"
       },
       "followUp": {
         "timing": "3-5 business days after applying or the last recruiter interaction.",
-        "body": "Hi Disney team,\n\nI wanted to follow up on my application for the Lead Software Engineer role. I remain interested and would be glad to provide any additional context about my background.\n\nThank you again for your time.\n\nBest,\nAlex Chen"
+        "body": "Hi Linear Ashby team,\n\nI wanted to follow up on my application for the Senior / Staff Product Engineer role. I remain interested and would be glad to provide any additional context about my background.\n\nThank you again for your time.\n\nBest,\nAlex Chen"
       },
       "interviewPrep": [
-        "Prepare a 60-second story for why Disney and why Lead Software Engineer.",
-        "Prepare evidence for: JavaScript, TypeScript, API, engineer, product, data.",
+        "Prepare a 60-second story for why Linear Ashby and why Senior / Staff Product Engineer.",
+        "Prepare evidence for: TypeScript, React, API, remote, engineer, product.",
         "Prepare one STAR story about execution under ambiguity.",
         "Prepare one STAR story about collaboration and tradeoff decisions.",
         "Prepare questions about team priorities, success metrics, and hiring timeline."
@@ -603,11 +260,362 @@ window.CV_CAREER_OPS_APPLICATION_KIT = {
       ]
     },
     {
-      "jobKey": "url:https://www.themuse.com/jobs/bankofamerica/principal-engineer-gbs-ind-783d05",
-      "title": "Principal Engineer - GBS IND",
-      "company": "Bank of America",
-      "score": "95/A",
-      "rating": 4.8,
+      "jobKey": "url:https://jobs.ashbyhq.com/linear/12f8f208-0b9c-4569-bb3d-41c8a197029e",
+      "title": "Senior / Staff Product Engineer",
+      "company": "Linear Ashby",
+      "score": "87/A",
+      "rating": 4.5,
+      "blockG": {
+        "tier": "Proceed with Caution",
+        "confidence": "medium"
+      },
+      "priority": "P0",
+      "atsInjection": {
+        "jdKeywords": [
+          "TypeScript",
+          "React",
+          "API",
+          "remote",
+          "engineer",
+          "product",
+          "data",
+          "graphql"
+        ],
+        "hardKeywords": [
+          "TypeScript",
+          "React",
+          "API",
+          "remote",
+          "engineer",
+          "product",
+          "data",
+          "graphql"
+        ],
+        "softKeywords": [],
+        "missingKeywords": [
+          "postgres",
+          "agents"
+        ],
+        "archetype": "Agentic / Automation",
+        "summaryRewriteHints": [
+          "在 Professional Summary 中自然帶入：TypeScript、React、API、remote、engineer",
+          "使用職位語言：「Agentic / Automation」方向的動詞和術語",
+          "【你已有但此 JD 未要求】可視情況選擇性提及：postgres、agents"
+        ],
+        "atsRules": [
+          "單欄排版，避免 sidebar 雙欄（ATS parser 容易亂序）",
+          "使用標準 header：Professional Summary, Work Experience, Skills, Education",
+          "不使用巢狀表格或文字框",
+          "確保 PDF 文字可被選取（不可光柵化輸出）",
+          "UTF-8 編碼，移除 em dash / smart quote / zero-width space",
+          "關鍵技能在 Skills section 明確列出，不要只藏在 bullet 裡"
+        ],
+        "guardrails": [
+          "NEVER add skills the candidate lacks",
+          "Only reformulate real experience with exact JD vocabulary",
+          "Example: if candidate has 'API development', it can become 'TypeScript'"
+        ],
+        "keywordCoveragePercent": 100
+      },
+      "applyChecklist": [
+        "Open the source URL and confirm the role is still active.",
+        "⚠ Block G: Proceed with Caution — double-check recruiter identity.",
+        "Generate or refresh the tailored ATS PDF from this job.",
+        "Mirror these JD keywords honestly in your CV: TypeScript, React, API, remote, engineer, product, data, graphql",
+        "Do not overclaim missing areas: postgres, agents",
+        "Log status, recruiter/contact, and next follow-up date in the tracker."
+      ],
+      "outreachEmail": {
+        "subject": "Senior / Staff Product Engineer application - Linear Ashby",
+        "body": "Hi Linear Ashby team,\n\nI am Alex Chen, and I am interested in the Senior / Staff Product Engineer role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.\n\nThe role stood out because it maps closely to my experience with TypeScript, React, API, remote, engineer.\n\nI would appreciate the chance to share how my experience can support the team. Thank you for your time.\n\nBest,\nAlex Chen"
+      },
+      "followUp": {
+        "timing": "3-5 business days after applying or the last recruiter interaction.",
+        "body": "Hi Linear Ashby team,\n\nI wanted to follow up on my application for the Senior / Staff Product Engineer role. I remain interested and would be glad to provide any additional context about my background.\n\nThank you again for your time.\n\nBest,\nAlex Chen"
+      },
+      "interviewPrep": [
+        "Prepare a 60-second story for why Linear Ashby and why Senior / Staff Product Engineer.",
+        "Prepare evidence for: TypeScript, React, API, remote, engineer, product.",
+        "Prepare one STAR story about execution under ambiguity.",
+        "Prepare one STAR story about collaboration and tradeoff decisions.",
+        "Prepare questions about team priorities, success metrics, and hiring timeline."
+      ],
+      "negotiationPrep": [
+        "Wait for a clear offer before anchoring compensation.",
+        "Ask for total compensation breakdown, work mode, title, level, review cycle, and start date.",
+        "Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.",
+        "Use competing priorities and role fit, not personal need, as the negotiation frame."
+      ]
+    },
+    {
+      "jobKey": "url:https://jobs.ashbyhq.com/linear/0c7c2e26-0a98-42cf-a47c-9a3999fb513b",
+      "title": "Product Engineer",
+      "company": "Linear Ashby",
+      "score": "87/A",
+      "rating": 4.5,
+      "blockG": {
+        "tier": "High Confidence",
+        "confidence": "high"
+      },
+      "priority": "P0",
+      "atsInjection": {
+        "jdKeywords": [
+          "TypeScript",
+          "React",
+          "API",
+          "remote",
+          "engineer",
+          "product",
+          "data",
+          "graphql"
+        ],
+        "hardKeywords": [
+          "TypeScript",
+          "React",
+          "API",
+          "remote",
+          "engineer",
+          "product",
+          "data",
+          "graphql"
+        ],
+        "softKeywords": [],
+        "missingKeywords": [
+          "agents"
+        ],
+        "archetype": "Agentic / Automation",
+        "summaryRewriteHints": [
+          "在 Professional Summary 中自然帶入：TypeScript、React、API、remote、engineer",
+          "使用職位語言：「Agentic / Automation」方向的動詞和術語",
+          "【你已有但此 JD 未要求】可視情況選擇性提及：agents"
+        ],
+        "atsRules": [
+          "單欄排版，避免 sidebar 雙欄（ATS parser 容易亂序）",
+          "使用標準 header：Professional Summary, Work Experience, Skills, Education",
+          "不使用巢狀表格或文字框",
+          "確保 PDF 文字可被選取（不可光柵化輸出）",
+          "UTF-8 編碼，移除 em dash / smart quote / zero-width space",
+          "關鍵技能在 Skills section 明確列出，不要只藏在 bullet 裡"
+        ],
+        "guardrails": [
+          "NEVER add skills the candidate lacks",
+          "Only reformulate real experience with exact JD vocabulary",
+          "Example: if candidate has 'API development', it can become 'TypeScript'"
+        ],
+        "keywordCoveragePercent": 100
+      },
+      "applyChecklist": [
+        "Open the source URL and confirm the role is still active.",
+        "Generate or refresh the tailored ATS PDF from this job.",
+        "Mirror these JD keywords honestly in your CV: TypeScript, React, API, remote, engineer, product, data, graphql",
+        "Do not overclaim missing areas: agents",
+        "Log status, recruiter/contact, and next follow-up date in the tracker."
+      ],
+      "outreachEmail": {
+        "subject": "Product Engineer application - Linear Ashby",
+        "body": "Hi Linear Ashby team,\n\nI am Alex Chen, and I am interested in the Product Engineer role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.\n\nThe role stood out because it maps closely to my experience with TypeScript, React, API, remote, engineer.\n\nI would appreciate the chance to share how my experience can support the team. Thank you for your time.\n\nBest,\nAlex Chen"
+      },
+      "followUp": {
+        "timing": "3-5 business days after applying or the last recruiter interaction.",
+        "body": "Hi Linear Ashby team,\n\nI wanted to follow up on my application for the Product Engineer role. I remain interested and would be glad to provide any additional context about my background.\n\nThank you again for your time.\n\nBest,\nAlex Chen"
+      },
+      "interviewPrep": [
+        "Prepare a 60-second story for why Linear Ashby and why Product Engineer.",
+        "Prepare evidence for: TypeScript, React, API, remote, engineer, product.",
+        "Prepare one STAR story about execution under ambiguity.",
+        "Prepare one STAR story about collaboration and tradeoff decisions.",
+        "Prepare questions about team priorities, success metrics, and hiring timeline."
+      ],
+      "negotiationPrep": [
+        "Wait for a clear offer before anchoring compensation.",
+        "Ask for total compensation breakdown, work mode, title, level, review cycle, and start date.",
+        "Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.",
+        "Use competing priorities and role fit, not personal need, as the negotiation frame."
+      ]
+    },
+    {
+      "jobKey": "url:https://jobs.ashbyhq.com/elevenlabs/3b57cc5c-f019-4a0b-a5ff-e1046e4f1fa1",
+      "title": "Safety Engineer",
+      "company": "ElevenLabs Ashby",
+      "score": "87/A",
+      "rating": 4.5,
+      "blockG": {
+        "tier": "High Confidence",
+        "confidence": "high"
+      },
+      "priority": "P0",
+      "atsInjection": {
+        "jdKeywords": [
+          "React",
+          "remote",
+          "engineer",
+          "product",
+          "data",
+          "API"
+        ],
+        "hardKeywords": [
+          "React",
+          "remote",
+          "engineer",
+          "product",
+          "data",
+          "API"
+        ],
+        "softKeywords": [],
+        "missingKeywords": [
+          "python",
+          "sql",
+          "aws",
+          "gcp",
+          "docker",
+          "agents",
+          "growth",
+          "operations"
+        ],
+        "archetype": "AI Platform / LLMOps",
+        "summaryRewriteHints": [
+          "在 Professional Summary 中自然帶入：React、remote、engineer、product、data",
+          "使用職位語言：「AI Platform / LLMOps」方向的動詞和術語",
+          "【你已有但此 JD 未要求】可視情況選擇性提及：python、sql、aws、gcp、docker"
+        ],
+        "atsRules": [
+          "單欄排版，避免 sidebar 雙欄（ATS parser 容易亂序）",
+          "使用標準 header：Professional Summary, Work Experience, Skills, Education",
+          "不使用巢狀表格或文字框",
+          "確保 PDF 文字可被選取（不可光柵化輸出）",
+          "UTF-8 編碼，移除 em dash / smart quote / zero-width space",
+          "關鍵技能在 Skills section 明確列出，不要只藏在 bullet 裡"
+        ],
+        "guardrails": [
+          "NEVER add skills the candidate lacks",
+          "Only reformulate real experience with exact JD vocabulary",
+          "Example: if candidate has 'API development', it can become 'React'"
+        ],
+        "keywordCoveragePercent": 100
+      },
+      "applyChecklist": [
+        "Open the source URL and confirm the role is still active.",
+        "Generate or refresh the tailored ATS PDF from this job.",
+        "Mirror these JD keywords honestly in your CV: React, remote, engineer, product, data, API",
+        "Do not overclaim missing areas: python, sql, aws, gcp, docker, agents",
+        "Log status, recruiter/contact, and next follow-up date in the tracker."
+      ],
+      "outreachEmail": {
+        "subject": "Safety Engineer application - ElevenLabs Ashby",
+        "body": "Hi ElevenLabs Ashby team,\n\nI am Alex Chen, and I am interested in the Safety Engineer role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.\n\nThe role stood out because it maps closely to my experience with React, remote, engineer, product, data.\n\nI would appreciate the chance to share how my experience can support the team. Thank you for your time.\n\nBest,\nAlex Chen"
+      },
+      "followUp": {
+        "timing": "3-5 business days after applying or the last recruiter interaction.",
+        "body": "Hi ElevenLabs Ashby team,\n\nI wanted to follow up on my application for the Safety Engineer role. I remain interested and would be glad to provide any additional context about my background.\n\nThank you again for your time.\n\nBest,\nAlex Chen"
+      },
+      "interviewPrep": [
+        "Prepare a 60-second story for why ElevenLabs Ashby and why Safety Engineer.",
+        "Prepare evidence for: React, remote, engineer, product, data.",
+        "Prepare one STAR story about execution under ambiguity.",
+        "Prepare one STAR story about collaboration and tradeoff decisions.",
+        "Prepare questions about team priorities, success metrics, and hiring timeline."
+      ],
+      "negotiationPrep": [
+        "Wait for a clear offer before anchoring compensation.",
+        "Ask for total compensation breakdown, work mode, title, level, review cycle, and start date.",
+        "Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.",
+        "Use competing priorities and role fit, not personal need, as the negotiation frame."
+      ]
+    },
+    {
+      "jobKey": "url:https://remotive.com/remote-jobs/product/staff-product-engineer-sao-paulo-2091000",
+      "title": "Staff Product Engineer (São Paulo)",
+      "company": "LawnStarter",
+      "score": "86/A",
+      "rating": 4.4,
+      "blockG": {
+        "tier": "High Confidence",
+        "confidence": "medium"
+      },
+      "priority": "P0",
+      "atsInjection": {
+        "jdKeywords": [
+          "TypeScript",
+          "React",
+          "remote",
+          "dashboard",
+          "engineer",
+          "product",
+          "data",
+          "API"
+        ],
+        "hardKeywords": [
+          "TypeScript",
+          "React",
+          "remote",
+          "dashboard",
+          "engineer",
+          "product",
+          "data",
+          "API"
+        ],
+        "softKeywords": [],
+        "missingKeywords": [
+          "aws",
+          "rest",
+          "agents"
+        ],
+        "archetype": "AI Platform / LLMOps",
+        "summaryRewriteHints": [
+          "在 Professional Summary 中自然帶入：TypeScript、React、remote、dashboard、engineer",
+          "使用職位語言：「AI Platform / LLMOps」方向的動詞和術語",
+          "【你已有但此 JD 未要求】可視情況選擇性提及：aws、rest、agents"
+        ],
+        "atsRules": [
+          "單欄排版，避免 sidebar 雙欄（ATS parser 容易亂序）",
+          "使用標準 header：Professional Summary, Work Experience, Skills, Education",
+          "不使用巢狀表格或文字框",
+          "確保 PDF 文字可被選取（不可光柵化輸出）",
+          "UTF-8 編碼，移除 em dash / smart quote / zero-width space",
+          "關鍵技能在 Skills section 明確列出，不要只藏在 bullet 裡"
+        ],
+        "guardrails": [
+          "NEVER add skills the candidate lacks",
+          "Only reformulate real experience with exact JD vocabulary",
+          "Example: if candidate has 'API development', it can become 'TypeScript'"
+        ],
+        "keywordCoveragePercent": 100
+      },
+      "applyChecklist": [
+        "Open the source URL and confirm the role is still active.",
+        "Generate or refresh the tailored ATS PDF from this job.",
+        "Mirror these JD keywords honestly in your CV: TypeScript, React, remote, dashboard, engineer, product, data, API",
+        "Do not overclaim missing areas: aws, rest, agents",
+        "Log status, recruiter/contact, and next follow-up date in the tracker."
+      ],
+      "outreachEmail": {
+        "subject": "Staff Product Engineer (São Paulo) application - LawnStarter",
+        "body": "Hi LawnStarter team,\n\nI am Alex Chen, and I am interested in the Staff Product Engineer (São Paulo) role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.\n\nThe role stood out because it maps closely to my experience with TypeScript, React, remote, dashboard, engineer.\n\nI would appreciate the chance to share how my experience can support the team. Thank you for your time.\n\nBest,\nAlex Chen"
+      },
+      "followUp": {
+        "timing": "3-5 business days after applying or the last recruiter interaction.",
+        "body": "Hi LawnStarter team,\n\nI wanted to follow up on my application for the Staff Product Engineer (São Paulo) role. I remain interested and would be glad to provide any additional context about my background.\n\nThank you again for your time.\n\nBest,\nAlex Chen"
+      },
+      "interviewPrep": [
+        "Prepare a 60-second story for why LawnStarter and why Staff Product Engineer (São Paulo).",
+        "Prepare evidence for: TypeScript, React, remote, dashboard, engineer, product.",
+        "Prepare one STAR story about execution under ambiguity.",
+        "Prepare one STAR story about collaboration and tradeoff decisions.",
+        "Prepare questions about team priorities, success metrics, and hiring timeline."
+      ],
+      "negotiationPrep": [
+        "Wait for a clear offer before anchoring compensation.",
+        "Ask for total compensation breakdown, work mode, title, level, review cycle, and start date.",
+        "Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.",
+        "Use competing priorities and role fit, not personal need, as the negotiation frame."
+      ]
+    },
+    {
+      "jobKey": "url:https://www.themuse.com/jobs/yext/senior-systems-engineer-e6abbf",
+      "title": "Senior Systems Engineer",
+      "company": "Yext",
+      "score": "86/A",
+      "rating": 4.4,
       "blockG": {
         "tier": "High Confidence",
         "confidence": "medium"
@@ -616,26 +624,36 @@ window.CV_CAREER_OPS_APPLICATION_KIT = {
       "atsInjection": {
         "jdKeywords": [
           "API",
+          "Performance Optimization",
+          "remote",
           "engineer",
+          "product",
           "data"
         ],
         "hardKeywords": [
           "API",
+          "Performance Optimization",
+          "remote",
           "engineer",
+          "product",
           "data"
         ],
         "softKeywords": [],
         "missingKeywords": [
+          "python",
+          "go",
+          "aws",
+          "gcp",
           "azure",
-          "agents",
-          "growth",
-          "operations"
+          "docker",
+          "kubernetes",
+          "terraform"
         ],
-        "archetype": "Agentic / Automation",
+        "archetype": "AI Platform / LLMOps",
         "summaryRewriteHints": [
-          "在 Professional Summary 中自然帶入：API、engineer、data",
-          "使用職位語言：「Agentic / Automation」方向的動詞和術語",
-          "【你已有但此 JD 未要求】可視情況選擇性提及：azure、agents、growth、operations"
+          "在 Professional Summary 中自然帶入：API、Performance Optimization、remote、engineer、product",
+          "使用職位語言：「AI Platform / LLMOps」方向的動詞和術語",
+          "【你已有但此 JD 未要求】可視情況選擇性提及：python、go、aws、gcp、azure"
         ],
         "atsRules": [
           "單欄排版，避免 sidebar 雙欄（ATS parser 容易亂序）",
@@ -655,21 +673,21 @@ window.CV_CAREER_OPS_APPLICATION_KIT = {
       "applyChecklist": [
         "Open the source URL and confirm the role is still active.",
         "Generate or refresh the tailored ATS PDF from this job.",
-        "Mirror these JD keywords honestly in your CV: API, engineer, data",
-        "Do not overclaim missing areas: azure, agents, growth, operations",
+        "Mirror these JD keywords honestly in your CV: API, Performance Optimization, remote, engineer, product, data",
+        "Do not overclaim missing areas: python, go, aws, gcp, azure, docker",
         "Log status, recruiter/contact, and next follow-up date in the tracker."
       ],
       "outreachEmail": {
-        "subject": "Principal Engineer - GBS IND application - Bank of America",
-        "body": "Hi Bank of America team,\n\nI am Alex Chen, and I am interested in the Principal Engineer - GBS IND role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.\n\nThe role stood out because it maps closely to my experience with API, engineer, data.\n\nI would appreciate the chance to share how my experience can support the team. Thank you for your time.\n\nBest,\nAlex Chen"
+        "subject": "Senior Systems Engineer application - Yext",
+        "body": "Hi Yext team,\n\nI am Alex Chen, and I am interested in the Senior Systems Engineer role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.\n\nThe role stood out because it maps closely to my experience with API, Performance Optimization, remote, engineer, product.\n\nI would appreciate the chance to share how my experience can support the team. Thank you for your time.\n\nBest,\nAlex Chen"
       },
       "followUp": {
         "timing": "3-5 business days after applying or the last recruiter interaction.",
-        "body": "Hi Bank of America team,\n\nI wanted to follow up on my application for the Principal Engineer - GBS IND role. I remain interested and would be glad to provide any additional context about my background.\n\nThank you again for your time.\n\nBest,\nAlex Chen"
+        "body": "Hi Yext team,\n\nI wanted to follow up on my application for the Senior Systems Engineer role. I remain interested and would be glad to provide any additional context about my background.\n\nThank you again for your time.\n\nBest,\nAlex Chen"
       },
       "interviewPrep": [
-        "Prepare a 60-second story for why Bank of America and why Principal Engineer - GBS IND.",
-        "Prepare evidence for: API, engineer, data.",
+        "Prepare a 60-second story for why Yext and why Senior Systems Engineer.",
+        "Prepare evidence for: API, Performance Optimization, remote, engineer, product, data.",
         "Prepare one STAR story about execution under ambiguity.",
         "Prepare one STAR story about collaboration and tradeoff decisions.",
         "Prepare questions about team priorities, success metrics, and hiring timeline."
@@ -682,11 +700,99 @@ window.CV_CAREER_OPS_APPLICATION_KIT = {
       ]
     },
     {
-      "jobKey": "url:https://www.themuse.com/jobs/uber/sr-software-engineer-frontend-web-8fc2b7",
-      "title": "Sr Software Engineer, Frontend (Web)",
-      "company": "Uber",
-      "score": "95/A",
-      "rating": 4.8,
+      "jobKey": "url:https://www.themuse.com/jobs/allstate/lead-ai-cloud-platform-engineer-799e2a",
+      "title": "Lead AI Cloud Platform Engineer",
+      "company": "Allstate",
+      "score": "86/A",
+      "rating": 4.4,
+      "blockG": {
+        "tier": "High Confidence",
+        "confidence": "medium"
+      },
+      "priority": "P0",
+      "atsInjection": {
+        "jdKeywords": [
+          "Analytics",
+          "API",
+          "remote",
+          "engineer",
+          "product",
+          "data"
+        ],
+        "hardKeywords": [
+          "Analytics",
+          "API",
+          "remote",
+          "engineer",
+          "product",
+          "data"
+        ],
+        "softKeywords": [],
+        "missingKeywords": [
+          "python",
+          "aws",
+          "gcp",
+          "azure",
+          "terraform",
+          "llm",
+          "prompt engineering"
+        ],
+        "archetype": "Agentic / Automation",
+        "summaryRewriteHints": [
+          "在 Professional Summary 中自然帶入：Analytics、API、remote、engineer、product",
+          "使用職位語言：「Agentic / Automation」方向的動詞和術語",
+          "【你已有但此 JD 未要求】可視情況選擇性提及：python、aws、gcp、azure、terraform"
+        ],
+        "atsRules": [
+          "單欄排版，避免 sidebar 雙欄（ATS parser 容易亂序）",
+          "使用標準 header：Professional Summary, Work Experience, Skills, Education",
+          "不使用巢狀表格或文字框",
+          "確保 PDF 文字可被選取（不可光柵化輸出）",
+          "UTF-8 編碼，移除 em dash / smart quote / zero-width space",
+          "關鍵技能在 Skills section 明確列出，不要只藏在 bullet 裡"
+        ],
+        "guardrails": [
+          "NEVER add skills the candidate lacks",
+          "Only reformulate real experience with exact JD vocabulary",
+          "Example: if candidate has 'API development', it can become 'Analytics'"
+        ],
+        "keywordCoveragePercent": 100
+      },
+      "applyChecklist": [
+        "Open the source URL and confirm the role is still active.",
+        "Generate or refresh the tailored ATS PDF from this job.",
+        "Mirror these JD keywords honestly in your CV: Analytics, API, remote, engineer, product, data",
+        "Do not overclaim missing areas: python, aws, gcp, azure, terraform, llm",
+        "Log status, recruiter/contact, and next follow-up date in the tracker."
+      ],
+      "outreachEmail": {
+        "subject": "Lead AI Cloud Platform Engineer application - Allstate",
+        "body": "Hi Allstate team,\n\nI am Alex Chen, and I am interested in the Lead AI Cloud Platform Engineer role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.\n\nThe role stood out because it maps closely to my experience with Analytics, API, remote, engineer, product.\n\nI would appreciate the chance to share how my experience can support the team. Thank you for your time.\n\nBest,\nAlex Chen"
+      },
+      "followUp": {
+        "timing": "3-5 business days after applying or the last recruiter interaction.",
+        "body": "Hi Allstate team,\n\nI wanted to follow up on my application for the Lead AI Cloud Platform Engineer role. I remain interested and would be glad to provide any additional context about my background.\n\nThank you again for your time.\n\nBest,\nAlex Chen"
+      },
+      "interviewPrep": [
+        "Prepare a 60-second story for why Allstate and why Lead AI Cloud Platform Engineer.",
+        "Prepare evidence for: Analytics, API, remote, engineer, product, data.",
+        "Prepare one STAR story about execution under ambiguity.",
+        "Prepare one STAR story about collaboration and tradeoff decisions.",
+        "Prepare questions about team priorities, success metrics, and hiring timeline."
+      ],
+      "negotiationPrep": [
+        "Wait for a clear offer before anchoring compensation.",
+        "Ask for total compensation breakdown, work mode, title, level, review cycle, and start date.",
+        "Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.",
+        "Use competing priorities and role fit, not personal need, as the negotiation frame."
+      ]
+    },
+    {
+      "jobKey": "url:https://www.themuse.com/jobs/esri/sr-product-engineer-web-services-2ea51e",
+      "title": "Sr. Product Engineer - Web Services",
+      "company": "Esri",
+      "score": "86/A",
+      "rating": 4.4,
       "blockG": {
         "tier": "High Confidence",
         "confidence": "medium"
@@ -696,38 +802,35 @@ window.CV_CAREER_OPS_APPLICATION_KIT = {
         "jdKeywords": [
           "JavaScript",
           "TypeScript",
-          "React",
-          "CSS",
           "API",
-          "Performance Optimization",
+          "remote",
           "engineer",
           "product",
-          "data"
+          "data",
+          "restful"
         ],
         "hardKeywords": [
           "JavaScript",
           "TypeScript",
-          "React",
-          "CSS",
           "API",
-          "Performance Optimization",
+          "remote",
           "engineer",
           "product",
-          "data"
+          "data",
+          "restful"
         ],
         "softKeywords": [],
         "missingKeywords": [
-          "angular",
           "python",
-          "go",
-          "html",
+          "sql",
+          "rest",
           "growth"
         ],
-        "archetype": "Frontend Engineer",
+        "archetype": "AI Platform / LLMOps",
         "summaryRewriteHints": [
-          "在 Professional Summary 中自然帶入：JavaScript、TypeScript、React、CSS、API",
-          "使用職位語言：「Frontend Engineer」方向的動詞和術語",
-          "【你已有但此 JD 未要求】可視情況選擇性提及：angular、python、go、html、growth"
+          "在 Professional Summary 中自然帶入：JavaScript、TypeScript、API、remote、engineer",
+          "使用職位語言：「AI Platform / LLMOps」方向的動詞和術語",
+          "【你已有但此 JD 未要求】可視情況選擇性提及：python、sql、rest、growth"
         ],
         "atsRules": [
           "單欄排版，避免 sidebar 雙欄（ATS parser 容易亂序）",
@@ -747,21 +850,21 @@ window.CV_CAREER_OPS_APPLICATION_KIT = {
       "applyChecklist": [
         "Open the source URL and confirm the role is still active.",
         "Generate or refresh the tailored ATS PDF from this job.",
-        "Mirror these JD keywords honestly in your CV: JavaScript, TypeScript, React, CSS, API, Performance Optimization, engineer, product",
-        "Do not overclaim missing areas: angular, python, go, html, growth",
+        "Mirror these JD keywords honestly in your CV: JavaScript, TypeScript, API, remote, engineer, product, data, restful",
+        "Do not overclaim missing areas: python, sql, rest, growth",
         "Log status, recruiter/contact, and next follow-up date in the tracker."
       ],
       "outreachEmail": {
-        "subject": "Sr Software Engineer, Frontend (Web) application - Uber",
-        "body": "Hi Uber team,\n\nI am Alex Chen, and I am interested in the Sr Software Engineer, Frontend (Web) role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.\n\nThe role stood out because it maps closely to my experience with JavaScript, TypeScript, React, CSS, API.\n\nI would appreciate the chance to share how my experience can support the team. Thank you for your time.\n\nBest,\nAlex Chen"
+        "subject": "Sr. Product Engineer - Web Services application - Esri",
+        "body": "Hi Esri team,\n\nI am Alex Chen, and I am interested in the Sr. Product Engineer - Web Services role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.\n\nThe role stood out because it maps closely to my experience with JavaScript, TypeScript, API, remote, engineer.\n\nI would appreciate the chance to share how my experience can support the team. Thank you for your time.\n\nBest,\nAlex Chen"
       },
       "followUp": {
         "timing": "3-5 business days after applying or the last recruiter interaction.",
-        "body": "Hi Uber team,\n\nI wanted to follow up on my application for the Sr Software Engineer, Frontend (Web) role. I remain interested and would be glad to provide any additional context about my background.\n\nThank you again for your time.\n\nBest,\nAlex Chen"
+        "body": "Hi Esri team,\n\nI wanted to follow up on my application for the Sr. Product Engineer - Web Services role. I remain interested and would be glad to provide any additional context about my background.\n\nThank you again for your time.\n\nBest,\nAlex Chen"
       },
       "interviewPrep": [
-        "Prepare a 60-second story for why Uber and why Sr Software Engineer, Frontend (Web).",
-        "Prepare evidence for: JavaScript, TypeScript, React, CSS, API, Performance Optimization.",
+        "Prepare a 60-second story for why Esri and why Sr. Product Engineer - Web Services.",
+        "Prepare evidence for: JavaScript, TypeScript, API, remote, engineer, product.",
         "Prepare one STAR story about execution under ambiguity.",
         "Prepare one STAR story about collaboration and tradeoff decisions.",
         "Prepare questions about team priorities, success metrics, and hiring timeline."
@@ -774,213 +877,41 @@ window.CV_CAREER_OPS_APPLICATION_KIT = {
       ]
     },
     {
-      "jobKey": "url:https://www.themuse.com/jobs/celonis/application-product-manager-ai-system-transformations",
-      "title": "Application Product Manager - (AI System Transformations)",
-      "company": "Celonis",
-      "score": "95/A",
-      "rating": 4.8,
+      "jobKey": "url:https://job-boards.greenhouse.io/gitlab/jobs/8488966002",
+      "title": "Senior Backend Engineer(Go), Continuous Delivery",
+      "company": "GitLab Greenhouse",
+      "score": "86/A",
+      "rating": 4.4,
       "blockG": {
         "tier": "High Confidence",
-        "confidence": "medium"
+        "confidence": "high"
       },
       "priority": "P0",
       "atsInjection": {
         "jdKeywords": [
-          "Analytics",
-          "API",
+          "remote",
           "engineer",
           "product",
           "data"
         ],
         "hardKeywords": [
-          "Analytics",
-          "API",
+          "remote",
           "engineer",
           "product",
           "data"
         ],
         "softKeywords": [],
         "missingKeywords": [
-          "python",
           "go",
-          "sql",
-          "rest",
-          "agents"
-        ],
-        "archetype": "Technical AI PM",
-        "summaryRewriteHints": [
-          "在 Professional Summary 中自然帶入：Analytics、API、engineer、product、data",
-          "使用職位語言：「Technical AI PM」方向的動詞和術語",
-          "【你已有但此 JD 未要求】可視情況選擇性提及：python、go、sql、rest、agents"
-        ],
-        "atsRules": [
-          "單欄排版，避免 sidebar 雙欄（ATS parser 容易亂序）",
-          "使用標準 header：Professional Summary, Work Experience, Skills, Education",
-          "不使用巢狀表格或文字框",
-          "確保 PDF 文字可被選取（不可光柵化輸出）",
-          "UTF-8 編碼，移除 em dash / smart quote / zero-width space",
-          "關鍵技能在 Skills section 明確列出，不要只藏在 bullet 裡"
-        ],
-        "guardrails": [
-          "NEVER add skills the candidate lacks",
-          "Only reformulate real experience with exact JD vocabulary",
-          "Example: if candidate has 'API development', it can become 'Analytics'"
-        ],
-        "keywordCoveragePercent": 100
-      },
-      "applyChecklist": [
-        "Open the source URL and confirm the role is still active.",
-        "Generate or refresh the tailored ATS PDF from this job.",
-        "Mirror these JD keywords honestly in your CV: Analytics, API, engineer, product, data",
-        "Do not overclaim missing areas: python, go, sql, rest, agents",
-        "Log status, recruiter/contact, and next follow-up date in the tracker."
-      ],
-      "outreachEmail": {
-        "subject": "Application Product Manager - (AI System Transformations) application - Celonis",
-        "body": "Hi Celonis team,\n\nI am Alex Chen, and I am interested in the Application Product Manager - (AI System Transformations) role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.\n\nThe role stood out because it maps closely to my experience with Analytics, API, engineer, product, data.\n\nI would appreciate the chance to share how my experience can support the team. Thank you for your time.\n\nBest,\nAlex Chen"
-      },
-      "followUp": {
-        "timing": "3-5 business days after applying or the last recruiter interaction.",
-        "body": "Hi Celonis team,\n\nI wanted to follow up on my application for the Application Product Manager - (AI System Transformations) role. I remain interested and would be glad to provide any additional context about my background.\n\nThank you again for your time.\n\nBest,\nAlex Chen"
-      },
-      "interviewPrep": [
-        "Prepare a 60-second story for why Celonis and why Application Product Manager - (AI System Transformations).",
-        "Prepare evidence for: Analytics, API, engineer, product, data.",
-        "Prepare one STAR story about execution under ambiguity.",
-        "Prepare one STAR story about collaboration and tradeoff decisions.",
-        "Prepare questions about team priorities, success metrics, and hiring timeline."
-      ],
-      "negotiationPrep": [
-        "Wait for a clear offer before anchoring compensation.",
-        "Ask for total compensation breakdown, work mode, title, level, review cycle, and start date.",
-        "Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.",
-        "Use competing priorities and role fit, not personal need, as the negotiation frame."
-      ]
-    },
-    {
-      "jobKey": "url:https://www.themuse.com/jobs/airbnb/senior-manager-machine-learning-customer-support-engineering",
-      "title": "Senior/ Manager, Machine Learning, Customer Support Engineering",
-      "company": "Airbnb",
-      "score": "95/A",
-      "rating": 4.8,
-      "blockG": {
-        "tier": "High Confidence",
-        "confidence": "medium"
-      },
-      "priority": "P0",
-      "atsInjection": {
-        "jdKeywords": [
-          "Analytics",
-          "API",
-          "engineer",
-          "product",
-          "data"
-        ],
-        "hardKeywords": [
-          "Analytics",
-          "API",
-          "engineer",
-          "product",
-          "data"
-        ],
-        "softKeywords": [],
-        "missingKeywords": [
-          "llm",
-          "agents",
-          "machine learning",
-          "growth",
-          "operations"
-        ],
-        "archetype": "Frontend Engineer",
-        "summaryRewriteHints": [
-          "在 Professional Summary 中自然帶入：Analytics、API、engineer、product、data",
-          "使用職位語言：「Frontend Engineer」方向的動詞和術語",
-          "【你已有但此 JD 未要求】可視情況選擇性提及：llm、agents、machine learning、growth、operations"
-        ],
-        "atsRules": [
-          "單欄排版，避免 sidebar 雙欄（ATS parser 容易亂序）",
-          "使用標準 header：Professional Summary, Work Experience, Skills, Education",
-          "不使用巢狀表格或文字框",
-          "確保 PDF 文字可被選取（不可光柵化輸出）",
-          "UTF-8 編碼，移除 em dash / smart quote / zero-width space",
-          "關鍵技能在 Skills section 明確列出，不要只藏在 bullet 裡"
-        ],
-        "guardrails": [
-          "NEVER add skills the candidate lacks",
-          "Only reformulate real experience with exact JD vocabulary",
-          "Example: if candidate has 'API development', it can become 'Analytics'"
-        ],
-        "keywordCoveragePercent": 100
-      },
-      "applyChecklist": [
-        "Open the source URL and confirm the role is still active.",
-        "Generate or refresh the tailored ATS PDF from this job.",
-        "Mirror these JD keywords honestly in your CV: Analytics, API, engineer, product, data",
-        "Do not overclaim missing areas: llm, agents, machine learning, growth, operations",
-        "Log status, recruiter/contact, and next follow-up date in the tracker."
-      ],
-      "outreachEmail": {
-        "subject": "Senior/ Manager, Machine Learning, Customer Support Engineering application - Airbnb",
-        "body": "Hi Airbnb team,\n\nI am Alex Chen, and I am interested in the Senior/ Manager, Machine Learning, Customer Support Engineering role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.\n\nThe role stood out because it maps closely to my experience with Analytics, API, engineer, product, data.\n\nI would appreciate the chance to share how my experience can support the team. Thank you for your time.\n\nBest,\nAlex Chen"
-      },
-      "followUp": {
-        "timing": "3-5 business days after applying or the last recruiter interaction.",
-        "body": "Hi Airbnb team,\n\nI wanted to follow up on my application for the Senior/ Manager, Machine Learning, Customer Support Engineering role. I remain interested and would be glad to provide any additional context about my background.\n\nThank you again for your time.\n\nBest,\nAlex Chen"
-      },
-      "interviewPrep": [
-        "Prepare a 60-second story for why Airbnb and why Senior/ Manager, Machine Learning, Customer Support Engineering.",
-        "Prepare evidence for: Analytics, API, engineer, product, data.",
-        "Prepare one STAR story about execution under ambiguity.",
-        "Prepare one STAR story about collaboration and tradeoff decisions.",
-        "Prepare questions about team priorities, success metrics, and hiring timeline."
-      ],
-      "negotiationPrep": [
-        "Wait for a clear offer before anchoring compensation.",
-        "Ask for total compensation breakdown, work mode, title, level, review cycle, and start date.",
-        "Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.",
-        "Use competing priorities and role fit, not personal need, as the negotiation frame."
-      ]
-    },
-    {
-      "jobKey": "url:https://www.themuse.com/jobs/deloitte/google-ai-lead-architect",
-      "title": "Google AI Lead Architect",
-      "company": "Deloitte",
-      "score": "95/A",
-      "rating": 4.8,
-      "blockG": {
-        "tier": "High Confidence",
-        "confidence": "medium"
-      },
-      "priority": "P0",
-      "atsInjection": {
-        "jdKeywords": [
-          "Analytics",
-          "API",
-          "product",
-          "data"
-        ],
-        "hardKeywords": [
-          "Analytics",
-          "API",
-          "product",
-          "data"
-        ],
-        "softKeywords": [],
-        "missingKeywords": [
-          "sql",
-          "aws",
-          "gcp",
-          "azure",
           "docker",
           "kubernetes",
-          "terraform",
-          "llm"
+          "growth"
         ],
-        "archetype": "AI Platform / LLMOps",
+        "archetype": "Backend Engineer",
         "summaryRewriteHints": [
-          "在 Professional Summary 中自然帶入：Analytics、API、product、data",
-          "使用職位語言：「AI Platform / LLMOps」方向的動詞和術語",
-          "【你已有但此 JD 未要求】可視情況選擇性提及：sql、aws、gcp、azure、docker"
+          "在 Professional Summary 中自然帶入：remote、engineer、product、data",
+          "使用職位語言：「Backend Engineer」方向的動詞和術語",
+          "【你已有但此 JD 未要求】可視情況選擇性提及：go、docker、kubernetes、growth"
         ],
         "atsRules": [
           "單欄排版，避免 sidebar 雙欄（ATS parser 容易亂序）",
@@ -993,28 +924,108 @@ window.CV_CAREER_OPS_APPLICATION_KIT = {
         "guardrails": [
           "NEVER add skills the candidate lacks",
           "Only reformulate real experience with exact JD vocabulary",
-          "Example: if candidate has 'API development', it can become 'Analytics'"
+          "Example: if candidate has 'API development', it can become 'remote'"
         ],
         "keywordCoveragePercent": 100
       },
       "applyChecklist": [
         "Open the source URL and confirm the role is still active.",
         "Generate or refresh the tailored ATS PDF from this job.",
-        "Mirror these JD keywords honestly in your CV: Analytics, API, product, data",
-        "Do not overclaim missing areas: sql, aws, gcp, azure, docker, kubernetes",
+        "Mirror these JD keywords honestly in your CV: remote, engineer, product, data",
+        "Do not overclaim missing areas: go, docker, kubernetes, growth",
         "Log status, recruiter/contact, and next follow-up date in the tracker."
       ],
       "outreachEmail": {
-        "subject": "Google AI Lead Architect application - Deloitte",
-        "body": "Hi Deloitte team,\n\nI am Alex Chen, and I am interested in the Google AI Lead Architect role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.\n\nThe role stood out because it maps closely to my experience with Analytics, API, product, data.\n\nI would appreciate the chance to share how my experience can support the team. Thank you for your time.\n\nBest,\nAlex Chen"
+        "subject": "Senior Backend Engineer(Go), Continuous Delivery application - GitLab Greenhouse",
+        "body": "Hi GitLab Greenhouse team,\n\nI am Alex Chen, and I am interested in the Senior Backend Engineer(Go), Continuous Delivery role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.\n\nThe role stood out because it maps closely to my experience with remote, engineer, product, data.\n\nI would appreciate the chance to share how my experience can support the team. Thank you for your time.\n\nBest,\nAlex Chen"
       },
       "followUp": {
         "timing": "3-5 business days after applying or the last recruiter interaction.",
-        "body": "Hi Deloitte team,\n\nI wanted to follow up on my application for the Google AI Lead Architect role. I remain interested and would be glad to provide any additional context about my background.\n\nThank you again for your time.\n\nBest,\nAlex Chen"
+        "body": "Hi GitLab Greenhouse team,\n\nI wanted to follow up on my application for the Senior Backend Engineer(Go), Continuous Delivery role. I remain interested and would be glad to provide any additional context about my background.\n\nThank you again for your time.\n\nBest,\nAlex Chen"
       },
       "interviewPrep": [
-        "Prepare a 60-second story for why Deloitte and why Google AI Lead Architect.",
-        "Prepare evidence for: Analytics, API, product, data.",
+        "Prepare a 60-second story for why GitLab Greenhouse and why Senior Backend Engineer(Go), Continuous Delivery.",
+        "Prepare evidence for: remote, engineer, product, data.",
+        "Prepare one STAR story about execution under ambiguity.",
+        "Prepare one STAR story about collaboration and tradeoff decisions.",
+        "Prepare questions about team priorities, success metrics, and hiring timeline."
+      ],
+      "negotiationPrep": [
+        "Wait for a clear offer before anchoring compensation.",
+        "Ask for total compensation breakdown, work mode, title, level, review cycle, and start date.",
+        "Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.",
+        "Use competing priorities and role fit, not personal need, as the negotiation frame."
+      ]
+    },
+    {
+      "jobKey": "url:https://job-boards.greenhouse.io/gitlab/jobs/8539288002",
+      "title": "VP of Product Security",
+      "company": "GitLab Greenhouse",
+      "score": "86/A",
+      "rating": 4.4,
+      "blockG": {
+        "tier": "High Confidence",
+        "confidence": "high"
+      },
+      "priority": "P0",
+      "atsInjection": {
+        "jdKeywords": [
+          "API",
+          "remote",
+          "product",
+          "data"
+        ],
+        "hardKeywords": [
+          "API",
+          "remote",
+          "product",
+          "data"
+        ],
+        "softKeywords": [],
+        "missingKeywords": [
+          "growth",
+          "sales",
+          "operations"
+        ],
+        "archetype": "Agentic / Automation",
+        "summaryRewriteHints": [
+          "在 Professional Summary 中自然帶入：API、remote、product、data",
+          "使用職位語言：「Agentic / Automation」方向的動詞和術語",
+          "【你已有但此 JD 未要求】可視情況選擇性提及：growth、sales、operations"
+        ],
+        "atsRules": [
+          "單欄排版，避免 sidebar 雙欄（ATS parser 容易亂序）",
+          "使用標準 header：Professional Summary, Work Experience, Skills, Education",
+          "不使用巢狀表格或文字框",
+          "確保 PDF 文字可被選取（不可光柵化輸出）",
+          "UTF-8 編碼，移除 em dash / smart quote / zero-width space",
+          "關鍵技能在 Skills section 明確列出，不要只藏在 bullet 裡"
+        ],
+        "guardrails": [
+          "NEVER add skills the candidate lacks",
+          "Only reformulate real experience with exact JD vocabulary",
+          "Example: if candidate has 'API development', it can become 'API'"
+        ],
+        "keywordCoveragePercent": 100
+      },
+      "applyChecklist": [
+        "Open the source URL and confirm the role is still active.",
+        "Generate or refresh the tailored ATS PDF from this job.",
+        "Mirror these JD keywords honestly in your CV: API, remote, product, data",
+        "Do not overclaim missing areas: growth, sales, operations",
+        "Log status, recruiter/contact, and next follow-up date in the tracker."
+      ],
+      "outreachEmail": {
+        "subject": "VP of Product Security application - GitLab Greenhouse",
+        "body": "Hi GitLab Greenhouse team,\n\nI am Alex Chen, and I am interested in the VP of Product Security role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.\n\nThe role stood out because it maps closely to my experience with API, remote, product, data.\n\nI would appreciate the chance to share how my experience can support the team. Thank you for your time.\n\nBest,\nAlex Chen"
+      },
+      "followUp": {
+        "timing": "3-5 business days after applying or the last recruiter interaction.",
+        "body": "Hi GitLab Greenhouse team,\n\nI wanted to follow up on my application for the VP of Product Security role. I remain interested and would be glad to provide any additional context about my background.\n\nThank you again for your time.\n\nBest,\nAlex Chen"
+      },
+      "interviewPrep": [
+        "Prepare a 60-second story for why GitLab Greenhouse and why VP of Product Security.",
+        "Prepare evidence for: API, remote, product, data.",
         "Prepare one STAR story about execution under ambiguity.",
         "Prepare one STAR story about collaboration and tradeoff decisions.",
         "Prepare questions about team priorities, success metrics, and hiring timeline."

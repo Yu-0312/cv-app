@@ -1,111 +1,184 @@
 window.CV_CAREER_OPS_DEEP_RESEARCH = {
   "source": "career-ops-deep-research",
-  "generatedAt": "2026-07-04T23:43:16.701Z",
+  "generatedAt": "2026-07-06T14:12:40.868Z",
   "searchProvider": "none",
   "queries": [
-    "VANGUARD SOFTWARE PTE. LTD. Expert Frontend Engineer (React.JS & React Native) careers team product funding interview",
-    "VANGUARD SOFTWARE PTE. LTD. compensation culture engineering interview",
-    "BIFROST PTE. LTD. Frontend Engineer careers team product funding interview",
-    "BIFROST PTE. LTD. compensation culture engineering interview",
-    "TIKTOK PTE. LTD. Frontend Software Engineer (Payment), TikTok Live - Singapore careers team product funding interview",
-    "TIKTOK PTE. LTD. compensation culture engineering interview",
-    "TIKTOK PTE. LTD. Frontend Software Engineer (transaction), TikTok Live - Singapore careers team product funding interview",
-    "The Coca-Cola Company Sr. Software Engineer , Service Supply Chain careers team product funding interview",
-    "The Coca-Cola Company compensation culture engineering interview",
-    "The Coca-Cola Company Senior Software Engineer , Service Provider careers team product funding interview",
-    "Disney Lead Software Engineer careers team product funding interview",
-    "Disney compensation culture engineering interview",
-    "Bank of America Principal Engineer - GBS IND careers team product funding interview",
-    "Bank of America compensation culture engineering interview"
+    "GitLab Greenhouse Staff Backend Engineer (Go), Continuous Delivery careers team product funding interview",
+    "GitLab Greenhouse compensation culture engineering interview",
+    "Canonical Greenhouse Security Software Engineer careers team product funding interview",
+    "Canonical Greenhouse compensation culture engineering interview",
+    "Linear Ashby Senior / Staff Product Engineer careers team product funding interview",
+    "Linear Ashby compensation culture engineering interview",
+    "Linear Ashby Product Engineer careers team product funding interview",
+    "ElevenLabs Ashby Safety Engineer careers team product funding interview",
+    "ElevenLabs Ashby compensation culture engineering interview",
+    "LawnStarter Staff Product Engineer (São Paulo) careers team product funding interview",
+    "LawnStarter compensation culture engineering interview",
+    "Yext Senior Systems Engineer careers team product funding interview",
+    "Yext compensation culture engineering interview"
   ],
   "evidence": [
     {
       "title": "",
-      "url": "https://www.mycareersfuture.gov.sg/job/07eafbe6994e2090a0c2a6a6a6111e62",
-      "snippet": "MyCareersFuture Singapore",
+      "url": "https://job-boards.greenhouse.io/gitlab/jobs/8488961002",
+      "snippet": "Job Application for Staff Backend Engineer (Go), Continuous Delivery at GitLab Staff Backend Engineer (Go), Continuous Delivery Remote, India Apply GitLab is the intelligent orchestration platform for DevSecOps. GitLab enables organizations to increase developer productivity, improve operational efficiency, reduce security and compliance risk, and accelerate digital transformation. More than 50 million registered users and more than 50% of the Fortune 100* trust GitLab to ship better, more secure software faster. The same principles built into our products are reflected in how our team works: we embrace AI as a core productivity multiplier, with all team members expected to incorporate AI into their daily workflows to drive efficiency, innovation, and impact. GitLab is where careers accelerate, innovation flourishes, and every voice is valued. Our high-performance culture is driven by our values&nbsp;and continuous knowledge exchange, enabling our team members to reach their full potential while collaborating with industry leaders to solve complex problems. Co-create the future with us as we build technology that transforms how the world develops software. * Fortune 500® is a regis",
       "provider": "source-page"
     },
     {
       "title": "",
-      "url": "https://www.mycareersfuture.gov.sg/job/fe789bec11c6a9d195bf371bcbcec73d",
-      "snippet": "MyCareersFuture Singapore",
+      "url": "https://job-boards.greenhouse.io/canonical/jobs/5146620",
+      "snippet": "Job Application for Security Software Engineer at Canonical Security Software Engineer Home based - Worldwide Submit application Canonical is a leading provider of open source software and operating systems to the global enterprise and technology markets. Our platform, Ubuntu, is widely used in breakthrough enterprise initiatives such as public cloud, data science, AI, engineering innovation, and IoT. Our customers include the world's leading public cloud and silicon providers, and industry leaders in many sectors. The company is a pioneer of global distributed collaboration, with 1200+ colleagues in 75+ countries and very few office-based roles. Teams meet two to four times yearly in person, in interesting locations around the world, to align on strategy and execution. The company is founder-led, profitable, and growing. Canonical is looking for exceptional security-focused software engineers to be integrated across product teams. While they also contribute to the product as engineers, their primary focus is to challenge the entire team to think more deeply about security through state-of-the-art practices such as threat modeling, table-top exercises, architecture and design revie",
       "provider": "source-page"
     },
     {
       "title": "",
-      "url": "https://www.mycareersfuture.gov.sg/job/eebd44b1382d7840b8c092b1fc312524",
-      "snippet": "MyCareersFuture Singapore",
+      "url": "https://boards.greenhouse.io/canonical?cv_market=global",
+      "snippet": "Jobs at Canonical Current openings at Canonical Featured Jobs Alliances Field Engineer Home based - Worldwide Canonical is a leading provider of open source software and operating systems to the global enterprise and technology markets. Our platform, Ubuntu, is very widely used in breakthrough enterprise initiatives such as public cloud, data science, AI, engineering innovation and IoT. Our customers include the world's leading public cloud and silicon providers, and industry leaders in many sectors. The company is a pioneer of global distributed collaboration, with 1000+ colleagues in 70+ countries and very few roles based in offices. Teams meet two to four times yearly in person, in interesting locations around the world, to align on strategy and execution. The company is founder led, profitable and growing. We are hiring an Alliances Field Engineer to help our biggest partners (companies like Intel, Nvidia, Google, Dell, HP, Accenture, Tata and the like) understand and embrace our open source platform for themselves and their customers. Our worldwide field engineering team apply expert insights to real-world customer problems, enabling the enterprise adoption of Ubuntu, OpenStac",
       "provider": "source-page"
     },
     {
       "title": "",
-      "url": "https://www.mycareersfuture.gov.sg/job/0da14018a05634ffde57785dcd4e7783",
-      "snippet": "MyCareersFuture Singapore",
+      "url": "https://boards.greenhouse.io/canonical?cv_market=us",
+      "snippet": "Jobs at Canonical Current openings at Canonical Featured Jobs Alliances Field Engineer Home based - Worldwide Canonical is a leading provider of open source software and operating systems to the global enterprise and technology markets. Our platform, Ubuntu, is very widely used in breakthrough enterprise initiatives such as public cloud, data science, AI, engineering innovation and IoT. Our customers include the world's leading public cloud and silicon providers, and industry leaders in many sectors. The company is a pioneer of global distributed collaboration, with 1000+ colleagues in 70+ countries and very few roles based in offices. Teams meet two to four times yearly in person, in interesting locations around the world, to align on strategy and execution. The company is founder led, profitable and growing. We are hiring an Alliances Field Engineer to help our biggest partners (companies like Intel, Nvidia, Google, Dell, HP, Accenture, Tata and the like) understand and embrace our open source platform for themselves and their customers. Our worldwide field engineering team apply expert insights to real-world customer problems, enabling the enterprise adoption of Ubuntu, OpenStac",
       "provider": "source-page"
     },
     {
       "title": "",
-      "url": "https://www.themuse.com/jobs/thecocacolacompany/sr-software-engineer-service-supply-chain-74ffa9",
-      "snippet": "Sr. Software Engineer , Service Supply Chain at The Coca-Cola Company | The Muse | The Muse Skip to main content The Muse Logo A logo with &amp;quat;the muse&amp;quat; in dark blue text. Newsletter Jobs Account Management Accounting and Finance Administration and Office Advertising and Marketing Arts Business Operations Computer and IT Customer Service Data and Analytics Design and UX Education Healthcare Human Resources and Recruitment Management Media, PR, and Communications Product Management Project Management Sales Software Engineering Writing and Editing View All Jobs Companies Advice Coaching Newsletter Employers Sign In Saved Companies Account Settings Sign Out The Coca-Cola Company Sr. Software Engineer , Service Supply Chain 4 days ago • Atlanta, GA Apply on company site About Us Iconic brands. Innovative technologies. Our careers span across functions and are globally connected to give you an unmatched career experience. Size: 10000+ employees Industry: Food &amp; Beverage, Manufacturing, Consumer Goods &amp; Services View Company Profile Digital products play a central role in how we create value for customers, support the teams who serve them, and shape the consumer ex",
+      "url": "https://boards.greenhouse.io/canonical?cv_market=ca",
+      "snippet": "Jobs at Canonical Current openings at Canonical Featured Jobs Alliances Field Engineer Home based - Worldwide Canonical is a leading provider of open source software and operating systems to the global enterprise and technology markets. Our platform, Ubuntu, is very widely used in breakthrough enterprise initiatives such as public cloud, data science, AI, engineering innovation and IoT. Our customers include the world's leading public cloud and silicon providers, and industry leaders in many sectors. The company is a pioneer of global distributed collaboration, with 1000+ colleagues in 70+ countries and very few roles based in offices. Teams meet two to four times yearly in person, in interesting locations around the world, to align on strategy and execution. The company is founder led, profitable and growing. We are hiring an Alliances Field Engineer to help our biggest partners (companies like Intel, Nvidia, Google, Dell, HP, Accenture, Tata and the like) understand and embrace our open source platform for themselves and their customers. Our worldwide field engineering team apply expert insights to real-world customer problems, enabling the enterprise adoption of Ubuntu, OpenStac",
       "provider": "source-page"
     },
     {
       "title": "",
-      "url": "https://www.themuse.com/jobs/thecocacolacompany/senior-software-engineer-service-provider-f1a5ba",
-      "snippet": "Senior Software Engineer , Service Provider at The Coca-Cola Company | The Muse | The Muse Skip to main content The Muse Logo A logo with &amp;quat;the muse&amp;quat; in dark blue text. Newsletter Jobs Account Management Accounting and Finance Administration and Office Advertising and Marketing Arts Business Operations Computer and IT Customer Service Data and Analytics Design and UX Education Healthcare Human Resources and Recruitment Management Media, PR, and Communications Product Management Project Management Sales Software Engineering Writing and Editing View All Jobs Companies Advice Coaching Newsletter Employers Sign In Saved Companies Account Settings Sign Out The Coca-Cola Company Senior Software Engineer , Service Provider 4 days ago • Atlanta, GA Apply on company site About Us Iconic brands. Innovative technologies. Our careers span across functions and are globally connected to give you an unmatched career experience. Size: 10000+ employees Industry: Food &amp; Beverage, Manufacturing, Consumer Goods &amp; Services View Company Profile Digital products play a central role in how we create value for customers, support the teams who serve them, and shape the consumer expe",
+      "url": "https://boards.greenhouse.io/canonical?cv_market=uk",
+      "snippet": "Jobs at Canonical Current openings at Canonical Featured Jobs Alliances Field Engineer Home based - Worldwide Canonical is a leading provider of open source software and operating systems to the global enterprise and technology markets. Our platform, Ubuntu, is very widely used in breakthrough enterprise initiatives such as public cloud, data science, AI, engineering innovation and IoT. Our customers include the world's leading public cloud and silicon providers, and industry leaders in many sectors. The company is a pioneer of global distributed collaboration, with 1000+ colleagues in 70+ countries and very few roles based in offices. Teams meet two to four times yearly in person, in interesting locations around the world, to align on strategy and execution. The company is founder led, profitable and growing. We are hiring an Alliances Field Engineer to help our biggest partners (companies like Intel, Nvidia, Google, Dell, HP, Accenture, Tata and the like) understand and embrace our open source platform for themselves and their customers. Our worldwide field engineering team apply expert insights to real-world customer problems, enabling the enterprise adoption of Ubuntu, OpenStac",
       "provider": "source-page"
     },
     {
       "title": "",
-      "url": "https://www.themuse.com/jobs/bankofamerica/principal-engineer-gbs-ind-783d05",
-      "snippet": "Principal Engineer - GBS IND at Bank of America | The Muse | The Muse Skip to main content The Muse Logo A logo with &amp;quat;the muse&amp;quat; in dark blue text. Newsletter Jobs Account Management Accounting and Finance Administration and Office Advertising and Marketing Arts Business Operations Computer and IT Customer Service Data and Analytics Design and UX Education Healthcare Human Resources and Recruitment Management Media, PR, and Communications Product Management Project Management Sales Software Engineering Writing and Editing View All Jobs Companies Advice Coaching Newsletter Employers Sign In Saved Companies Account Settings Sign Out Bank of America Principal Engineer - GBS IND 2 months ago • Gurgaon, India (+3 more) Chennai, India Mumbai, India Serilingampalle, India Apply on company site About Us Bank of America provides people, companies, and institutional investors with industry-leading financial products and services. Size: 10000+ employees Industry: Financial Services View Company Profile Job Description: About Us At Bank of America, we are guided by a common purpose to help make financial lives better through the power of every connection. We do this by driving",
+      "url": "https://boards.greenhouse.io/canonical?cv_market=ie",
+      "snippet": "Jobs at Canonical Current openings at Canonical Featured Jobs Alliances Field Engineer Home based - Worldwide Canonical is a leading provider of open source software and operating systems to the global enterprise and technology markets. Our platform, Ubuntu, is very widely used in breakthrough enterprise initiatives such as public cloud, data science, AI, engineering innovation and IoT. Our customers include the world's leading public cloud and silicon providers, and industry leaders in many sectors. The company is a pioneer of global distributed collaboration, with 1000+ colleagues in 70+ countries and very few roles based in offices. Teams meet two to four times yearly in person, in interesting locations around the world, to align on strategy and execution. The company is founder led, profitable and growing. We are hiring an Alliances Field Engineer to help our biggest partners (companies like Intel, Nvidia, Google, Dell, HP, Accenture, Tata and the like) understand and embrace our open source platform for themselves and their customers. Our worldwide field engineering team apply expert insights to real-world customer problems, enabling the enterprise adoption of Ubuntu, OpenStac",
+      "provider": "source-page"
+    },
+    {
+      "title": "",
+      "url": "https://boards.greenhouse.io/canonical?cv_market=de",
+      "snippet": "Jobs at Canonical Current openings at Canonical Featured Jobs Alliances Field Engineer Home based - Worldwide Canonical is a leading provider of open source software and operating systems to the global enterprise and technology markets. Our platform, Ubuntu, is very widely used in breakthrough enterprise initiatives such as public cloud, data science, AI, engineering innovation and IoT. Our customers include the world's leading public cloud and silicon providers, and industry leaders in many sectors. The company is a pioneer of global distributed collaboration, with 1000+ colleagues in 70+ countries and very few roles based in offices. Teams meet two to four times yearly in person, in interesting locations around the world, to align on strategy and execution. The company is founder led, profitable and growing. We are hiring an Alliances Field Engineer to help our biggest partners (companies like Intel, Nvidia, Google, Dell, HP, Accenture, Tata and the like) understand and embrace our open source platform for themselves and their customers. Our worldwide field engineering team apply expert insights to real-world customer problems, enabling the enterprise adoption of Ubuntu, OpenStac",
+      "provider": "source-page"
+    },
+    {
+      "title": "",
+      "url": "https://boards.greenhouse.io/canonical?cv_market=nl",
+      "snippet": "Jobs at Canonical Current openings at Canonical Featured Jobs Alliances Field Engineer Home based - Worldwide Canonical is a leading provider of open source software and operating systems to the global enterprise and technology markets. Our platform, Ubuntu, is very widely used in breakthrough enterprise initiatives such as public cloud, data science, AI, engineering innovation and IoT. Our customers include the world's leading public cloud and silicon providers, and industry leaders in many sectors. The company is a pioneer of global distributed collaboration, with 1000+ colleagues in 70+ countries and very few roles based in offices. Teams meet two to four times yearly in person, in interesting locations around the world, to align on strategy and execution. The company is founder led, profitable and growing. We are hiring an Alliances Field Engineer to help our biggest partners (companies like Intel, Nvidia, Google, Dell, HP, Accenture, Tata and the like) understand and embrace our open source platform for themselves and their customers. Our worldwide field engineering team apply expert insights to real-world customer problems, enabling the enterprise adoption of Ubuntu, OpenStac",
+      "provider": "source-page"
+    },
+    {
+      "title": "",
+      "url": "https://boards.greenhouse.io/canonical?cv_market=fr",
+      "snippet": "Jobs at Canonical Current openings at Canonical Featured Jobs Alliances Field Engineer Home based - Worldwide Canonical is a leading provider of open source software and operating systems to the global enterprise and technology markets. Our platform, Ubuntu, is very widely used in breakthrough enterprise initiatives such as public cloud, data science, AI, engineering innovation and IoT. Our customers include the world's leading public cloud and silicon providers, and industry leaders in many sectors. The company is a pioneer of global distributed collaboration, with 1000+ colleagues in 70+ countries and very few roles based in offices. Teams meet two to four times yearly in person, in interesting locations around the world, to align on strategy and execution. The company is founder led, profitable and growing. We are hiring an Alliances Field Engineer to help our biggest partners (companies like Intel, Nvidia, Google, Dell, HP, Accenture, Tata and the like) understand and embrace our open source platform for themselves and their customers. Our worldwide field engineering team apply expert insights to real-world customer problems, enabling the enterprise adoption of Ubuntu, OpenStac",
+      "provider": "source-page"
+    },
+    {
+      "title": "",
+      "url": "https://boards.greenhouse.io/canonical?cv_market=es",
+      "snippet": "Jobs at Canonical Current openings at Canonical Featured Jobs Alliances Field Engineer Home based - Worldwide Canonical is a leading provider of open source software and operating systems to the global enterprise and technology markets. Our platform, Ubuntu, is very widely used in breakthrough enterprise initiatives such as public cloud, data science, AI, engineering innovation and IoT. Our customers include the world's leading public cloud and silicon providers, and industry leaders in many sectors. The company is a pioneer of global distributed collaboration, with 1000+ colleagues in 70+ countries and very few roles based in offices. Teams meet two to four times yearly in person, in interesting locations around the world, to align on strategy and execution. The company is founder led, profitable and growing. We are hiring an Alliances Field Engineer to help our biggest partners (companies like Intel, Nvidia, Google, Dell, HP, Accenture, Tata and the like) understand and embrace our open source platform for themselves and their customers. Our worldwide field engineering team apply expert insights to real-world customer problems, enabling the enterprise adoption of Ubuntu, OpenStac",
+      "provider": "source-page"
+    },
+    {
+      "title": "",
+      "url": "https://boards.greenhouse.io/canonical?cv_market=it",
+      "snippet": "Jobs at Canonical Current openings at Canonical Featured Jobs Alliances Field Engineer Home based - Worldwide Canonical is a leading provider of open source software and operating systems to the global enterprise and technology markets. Our platform, Ubuntu, is very widely used in breakthrough enterprise initiatives such as public cloud, data science, AI, engineering innovation and IoT. Our customers include the world's leading public cloud and silicon providers, and industry leaders in many sectors. The company is a pioneer of global distributed collaboration, with 1000+ colleagues in 70+ countries and very few roles based in offices. Teams meet two to four times yearly in person, in interesting locations around the world, to align on strategy and execution. The company is founder led, profitable and growing. We are hiring an Alliances Field Engineer to help our biggest partners (companies like Intel, Nvidia, Google, Dell, HP, Accenture, Tata and the like) understand and embrace our open source platform for themselves and their customers. Our worldwide field engineering team apply expert insights to real-world customer problems, enabling the enterprise adoption of Ubuntu, OpenStac",
+      "provider": "source-page"
+    },
+    {
+      "title": "",
+      "url": "https://boards.greenhouse.io/canonical?cv_market=se",
+      "snippet": "Jobs at Canonical Current openings at Canonical Featured Jobs Alliances Field Engineer Home based - Worldwide Canonical is a leading provider of open source software and operating systems to the global enterprise and technology markets. Our platform, Ubuntu, is very widely used in breakthrough enterprise initiatives such as public cloud, data science, AI, engineering innovation and IoT. Our customers include the world's leading public cloud and silicon providers, and industry leaders in many sectors. The company is a pioneer of global distributed collaboration, with 1000+ colleagues in 70+ countries and very few roles based in offices. Teams meet two to four times yearly in person, in interesting locations around the world, to align on strategy and execution. The company is founder led, profitable and growing. We are hiring an Alliances Field Engineer to help our biggest partners (companies like Intel, Nvidia, Google, Dell, HP, Accenture, Tata and the like) understand and embrace our open source platform for themselves and their customers. Our worldwide field engineering team apply expert insights to real-world customer problems, enabling the enterprise adoption of Ubuntu, OpenStac",
+      "provider": "source-page"
+    },
+    {
+      "title": "",
+      "url": "https://boards.greenhouse.io/canonical?cv_market=dk",
+      "snippet": "Jobs at Canonical Current openings at Canonical Featured Jobs Alliances Field Engineer Home based - Worldwide Canonical is a leading provider of open source software and operating systems to the global enterprise and technology markets. Our platform, Ubuntu, is very widely used in breakthrough enterprise initiatives such as public cloud, data science, AI, engineering innovation and IoT. Our customers include the world's leading public cloud and silicon providers, and industry leaders in many sectors. The company is a pioneer of global distributed collaboration, with 1000+ colleagues in 70+ countries and very few roles based in offices. Teams meet two to four times yearly in person, in interesting locations around the world, to align on strategy and execution. The company is founder led, profitable and growing. We are hiring an Alliances Field Engineer to help our biggest partners (companies like Intel, Nvidia, Google, Dell, HP, Accenture, Tata and the like) understand and embrace our open source platform for themselves and their customers. Our worldwide field engineering team apply expert insights to real-world customer problems, enabling the enterprise adoption of Ubuntu, OpenStac",
+      "provider": "source-page"
+    },
+    {
+      "title": "",
+      "url": "https://boards.greenhouse.io/canonical?cv_market=fi",
+      "snippet": "Jobs at Canonical Current openings at Canonical Featured Jobs Alliances Field Engineer Home based - Worldwide Canonical is a leading provider of open source software and operating systems to the global enterprise and technology markets. Our platform, Ubuntu, is very widely used in breakthrough enterprise initiatives such as public cloud, data science, AI, engineering innovation and IoT. Our customers include the world's leading public cloud and silicon providers, and industry leaders in many sectors. The company is a pioneer of global distributed collaboration, with 1000+ colleagues in 70+ countries and very few roles based in offices. Teams meet two to four times yearly in person, in interesting locations around the world, to align on strategy and execution. The company is founder led, profitable and growing. We are hiring an Alliances Field Engineer to help our biggest partners (companies like Intel, Nvidia, Google, Dell, HP, Accenture, Tata and the like) understand and embrace our open source platform for themselves and their customers. Our worldwide field engineering team apply expert insights to real-world customer problems, enabling the enterprise adoption of Ubuntu, OpenStac",
+      "provider": "source-page"
+    },
+    {
+      "title": "",
+      "url": "https://boards.greenhouse.io/canonical?cv_market=ch",
+      "snippet": "Jobs at Canonical Current openings at Canonical Featured Jobs Alliances Field Engineer Home based - Worldwide Canonical is a leading provider of open source software and operating systems to the global enterprise and technology markets. Our platform, Ubuntu, is very widely used in breakthrough enterprise initiatives such as public cloud, data science, AI, engineering innovation and IoT. Our customers include the world's leading public cloud and silicon providers, and industry leaders in many sectors. The company is a pioneer of global distributed collaboration, with 1000+ colleagues in 70+ countries and very few roles based in offices. Teams meet two to four times yearly in person, in interesting locations around the world, to align on strategy and execution. The company is founder led, profitable and growing. We are hiring an Alliances Field Engineer to help our biggest partners (companies like Intel, Nvidia, Google, Dell, HP, Accenture, Tata and the like) understand and embrace our open source platform for themselves and their customers. Our worldwide field engineering team apply expert insights to real-world customer problems, enabling the enterprise adoption of Ubuntu, OpenStac",
+      "provider": "source-page"
+    },
+    {
+      "title": "",
+      "url": "https://boards.greenhouse.io/canonical?cv_market=pl",
+      "snippet": "Jobs at Canonical Current openings at Canonical Featured Jobs Alliances Field Engineer Home based - Worldwide Canonical is a leading provider of open source software and operating systems to the global enterprise and technology markets. Our platform, Ubuntu, is very widely used in breakthrough enterprise initiatives such as public cloud, data science, AI, engineering innovation and IoT. Our customers include the world's leading public cloud and silicon providers, and industry leaders in many sectors. The company is a pioneer of global distributed collaboration, with 1000+ colleagues in 70+ countries and very few roles based in offices. Teams meet two to four times yearly in person, in interesting locations around the world, to align on strategy and execution. The company is founder led, profitable and growing. We are hiring an Alliances Field Engineer to help our biggest partners (companies like Intel, Nvidia, Google, Dell, HP, Accenture, Tata and the like) understand and embrace our open source platform for themselves and their customers. Our worldwide field engineering team apply expert insights to real-world customer problems, enabling the enterprise adoption of Ubuntu, OpenStac",
+      "provider": "source-page"
+    },
+    {
+      "title": "",
+      "url": "https://boards.greenhouse.io/canonical?cv_market=pt",
+      "snippet": "Jobs at Canonical Current openings at Canonical Featured Jobs Alliances Field Engineer Home based - Worldwide Canonical is a leading provider of open source software and operating systems to the global enterprise and technology markets. Our platform, Ubuntu, is very widely used in breakthrough enterprise initiatives such as public cloud, data science, AI, engineering innovation and IoT. Our customers include the world's leading public cloud and silicon providers, and industry leaders in many sectors. The company is a pioneer of global distributed collaboration, with 1000+ colleagues in 70+ countries and very few roles based in offices. Teams meet two to four times yearly in person, in interesting locations around the world, to align on strategy and execution. The company is founder led, profitable and growing. We are hiring an Alliances Field Engineer to help our biggest partners (companies like Intel, Nvidia, Google, Dell, HP, Accenture, Tata and the like) understand and embrace our open source platform for themselves and their customers. Our worldwide field engineering team apply expert insights to real-world customer problems, enabling the enterprise adoption of Ubuntu, OpenStac",
+      "provider": "source-page"
+    },
+    {
+      "title": "",
+      "url": "https://boards.greenhouse.io/canonical?cv_market=cz",
+      "snippet": "Jobs at Canonical Current openings at Canonical Featured Jobs Alliances Field Engineer Home based - Worldwide Canonical is a leading provider of open source software and operating systems to the global enterprise and technology markets. Our platform, Ubuntu, is very widely used in breakthrough enterprise initiatives such as public cloud, data science, AI, engineering innovation and IoT. Our customers include the world's leading public cloud and silicon providers, and industry leaders in many sectors. The company is a pioneer of global distributed collaboration, with 1000+ colleagues in 70+ countries and very few roles based in offices. Teams meet two to four times yearly in person, in interesting locations around the world, to align on strategy and execution. The company is founder led, profitable and growing. We are hiring an Alliances Field Engineer to help our biggest partners (companies like Intel, Nvidia, Google, Dell, HP, Accenture, Tata and the like) understand and embrace our open source platform for themselves and their customers. Our worldwide field engineering team apply expert insights to real-world customer problems, enabling the enterprise adoption of Ubuntu, OpenStac",
+      "provider": "source-page"
+    },
+    {
+      "title": "",
+      "url": "https://boards.greenhouse.io/canonical?cv_market=in",
+      "snippet": "Jobs at Canonical Current openings at Canonical Featured Jobs Alliances Field Engineer Home based - Worldwide Canonical is a leading provider of open source software and operating systems to the global enterprise and technology markets. Our platform, Ubuntu, is very widely used in breakthrough enterprise initiatives such as public cloud, data science, AI, engineering innovation and IoT. Our customers include the world's leading public cloud and silicon providers, and industry leaders in many sectors. The company is a pioneer of global distributed collaboration, with 1000+ colleagues in 70+ countries and very few roles based in offices. Teams meet two to four times yearly in person, in interesting locations around the world, to align on strategy and execution. The company is founder led, profitable and growing. We are hiring an Alliances Field Engineer to help our biggest partners (companies like Intel, Nvidia, Google, Dell, HP, Accenture, Tata and the like) understand and embrace our open source platform for themselves and their customers. Our worldwide field engineering team apply expert insights to real-world customer problems, enabling the enterprise adoption of Ubuntu, OpenStac",
+      "provider": "source-page"
+    },
+    {
+      "title": "",
+      "url": "https://boards.greenhouse.io/canonical?cv_market=au",
+      "snippet": "Jobs at Canonical Current openings at Canonical Featured Jobs Alliances Field Engineer Home based - Worldwide Canonical is a leading provider of open source software and operating systems to the global enterprise and technology markets. Our platform, Ubuntu, is very widely used in breakthrough enterprise initiatives such as public cloud, data science, AI, engineering innovation and IoT. Our customers include the world's leading public cloud and silicon providers, and industry leaders in many sectors. The company is a pioneer of global distributed collaboration, with 1000+ colleagues in 70+ countries and very few roles based in offices. Teams meet two to four times yearly in person, in interesting locations around the world, to align on strategy and execution. The company is founder led, profitable and growing. We are hiring an Alliances Field Engineer to help our biggest partners (companies like Intel, Nvidia, Google, Dell, HP, Accenture, Tata and the like) understand and embrace our open source platform for themselves and their customers. Our worldwide field engineering team apply expert insights to real-world customer problems, enabling the enterprise adoption of Ubuntu, OpenStac",
+      "provider": "source-page"
+    },
+    {
+      "title": "",
+      "url": "https://boards.greenhouse.io/canonical?cv_market=br",
+      "snippet": "Jobs at Canonical Current openings at Canonical Featured Jobs Alliances Field Engineer Home based - Worldwide Canonical is a leading provider of open source software and operating systems to the global enterprise and technology markets. Our platform, Ubuntu, is very widely used in breakthrough enterprise initiatives such as public cloud, data science, AI, engineering innovation and IoT. Our customers include the world's leading public cloud and silicon providers, and industry leaders in many sectors. The company is a pioneer of global distributed collaboration, with 1000+ colleagues in 70+ countries and very few roles based in offices. Teams meet two to four times yearly in person, in interesting locations around the world, to align on strategy and execution. The company is founder led, profitable and growing. We are hiring an Alliances Field Engineer to help our biggest partners (companies like Intel, Nvidia, Google, Dell, HP, Accenture, Tata and the like) understand and embrace our open source platform for themselves and their customers. Our worldwide field engineering team apply expert insights to real-world customer problems, enabling the enterprise adoption of Ubuntu, OpenStac",
+      "provider": "source-page"
+    },
+    {
+      "title": "",
+      "url": "https://boards.greenhouse.io/canonical?cv_market=mx",
+      "snippet": "Jobs at Canonical Current openings at Canonical Featured Jobs Alliances Field Engineer Home based - Worldwide Canonical is a leading provider of open source software and operating systems to the global enterprise and technology markets. Our platform, Ubuntu, is very widely used in breakthrough enterprise initiatives such as public cloud, data science, AI, engineering innovation and IoT. Our customers include the world's leading public cloud and silicon providers, and industry leaders in many sectors. The company is a pioneer of global distributed collaboration, with 1000+ colleagues in 70+ countries and very few roles based in offices. Teams meet two to four times yearly in person, in interesting locations around the world, to align on strategy and execution. The company is founder led, profitable and growing. We are hiring an Alliances Field Engineer to help our biggest partners (companies like Intel, Nvidia, Google, Dell, HP, Accenture, Tata and the like) understand and embrace our open source platform for themselves and their customers. Our worldwide field engineering team apply expert insights to real-world customer problems, enabling the enterprise adoption of Ubuntu, OpenStac",
       "provider": "source-page"
     }
   ],
   "dossiers": [
     {
-      "jobKey": "url:https://www.mycareersfuture.gov.sg/job/07eafbe6994e2090a0c2a6a6a6111e62",
-      "company": "VANGUARD SOFTWARE PTE. LTD.",
-      "title": "Expert Frontend Engineer (React.JS & React Native)",
-      "score": 95,
+      "jobKey": "url:https://job-boards.greenhouse.io/gitlab/jobs/8488961002",
+      "company": "GitLab Greenhouse",
+      "title": "Staff Backend Engineer (Go), Continuous Delivery",
+      "score": 87,
       "recommendation": "值得投遞",
       "evidence": [
         {
           "title": "",
-          "url": "https://www.mycareersfuture.gov.sg/job/07eafbe6994e2090a0c2a6a6a6111e62",
-          "snippet": "MyCareersFuture Singapore",
-          "provider": "source-page"
-        },
-        {
-          "title": "",
-          "url": "https://www.mycareersfuture.gov.sg/job/fe789bec11c6a9d195bf371bcbcec73d",
-          "snippet": "MyCareersFuture Singapore",
-          "provider": "source-page"
-        },
-        {
-          "title": "",
-          "url": "https://www.mycareersfuture.gov.sg/job/eebd44b1382d7840b8c092b1fc312524",
-          "snippet": "MyCareersFuture Singapore",
-          "provider": "source-page"
-        },
-        {
-          "title": "",
-          "url": "https://www.mycareersfuture.gov.sg/job/0da14018a05634ffde57785dcd4e7783",
-          "snippet": "MyCareersFuture Singapore",
-          "provider": "source-page"
-        },
-        {
-          "title": "",
-          "url": "https://www.themuse.com/jobs/thecocacolacompany/sr-software-engineer-service-supply-chain-74ffa9",
-          "snippet": "Sr. Software Engineer , Service Supply Chain at The Coca-Cola Company | The Muse | The Muse Skip to main content The Muse Logo A logo with &amp;quat;the muse&amp;quat; in dark blue text. Newsletter Jobs Account Management Accounting and Finance Administration and Office Advertising and Marketing Arts Business Operations Computer and IT Customer Service Data and Analytics Design and UX Education Healthcare Human Resources and Recruitment Management Media, PR, and Communications Product Management Project Management Sales Software Engineering Writing and Editing View All Jobs Companies Advice Coaching Newsletter Employers Sign In Saved Companies Account Settings Sign Out The Coca-Cola Company Sr. Software Engineer , Service Supply Chain 4 days ago • Atlanta, GA Apply on company site About Us Iconic brands. Innovative technologies. Our careers span across functions and are globally connected to give you an unmatched career experience. Size: 10000+ employees Industry: Food &amp; Beverage, Manufacturing, Consumer Goods &amp; Services View Company Profile Digital products play a central role in how we create value for customers, support the teams who serve them, and shape the consumer ex",
+          "url": "https://job-boards.greenhouse.io/gitlab/jobs/8488961002",
+          "snippet": "Job Application for Staff Backend Engineer (Go), Continuous Delivery at GitLab Staff Backend Engineer (Go), Continuous Delivery Remote, India Apply GitLab is the intelligent orchestration platform for DevSecOps. GitLab enables organizations to increase developer productivity, improve operational efficiency, reduce security and compliance risk, and accelerate digital transformation. More than 50 million registered users and more than 50% of the Fortune 100* trust GitLab to ship better, more secure software faster. The same principles built into our products are reflected in how our team works: we embrace AI as a core productivity multiplier, with all team members expected to incorporate AI into their daily workflows to drive efficiency, innovation, and impact. GitLab is where careers accelerate, innovation flourishes, and every voice is valued. Our high-performance culture is driven by our values&nbsp;and continuous knowledge exchange, enabling our team members to reach their full potential while collaborating with industry leaders to solve complex problems. Co-create the future with us as we build technology that transforms how the world develops software. * Fortune 500® is a regis",
           "provider": "source-page"
         }
       ],
       "signals": [
-        "AI / data / platform signal"
+        "AI / data / platform signal",
+        "risk signal to inspect manually",
+        "remote or hybrid signal"
       ],
       "researchQuestions": [
-        "What business unit owns the Expert Frontend Engineer (React.JS & React Native) role?",
+        "What business unit owns the Staff Backend Engineer (Go), Continuous Delivery role?",
         "What measurable outcomes would this team expect in the first 90 days?",
         "What recent company/product signals change the risk or upside?",
         "Which CV proof points should be highlighted for this company?"
@@ -117,48 +190,80 @@ window.CV_CAREER_OPS_DEEP_RESEARCH = {
       ]
     },
     {
-      "jobKey": "url:https://www.mycareersfuture.gov.sg/job/fe789bec11c6a9d195bf371bcbcec73d",
-      "company": "BIFROST PTE. LTD.",
-      "title": "Frontend Engineer",
-      "score": 95,
+      "jobKey": "url:https://job-boards.greenhouse.io/canonical/jobs/5146620",
+      "company": "Canonical Greenhouse",
+      "title": "Security Software Engineer",
+      "score": 87,
       "recommendation": "值得投遞",
       "evidence": [
         {
           "title": "",
-          "url": "https://www.mycareersfuture.gov.sg/job/07eafbe6994e2090a0c2a6a6a6111e62",
-          "snippet": "MyCareersFuture Singapore",
+          "url": "https://job-boards.greenhouse.io/gitlab/jobs/8488961002",
+          "snippet": "Job Application for Staff Backend Engineer (Go), Continuous Delivery at GitLab Staff Backend Engineer (Go), Continuous Delivery Remote, India Apply GitLab is the intelligent orchestration platform for DevSecOps. GitLab enables organizations to increase developer productivity, improve operational efficiency, reduce security and compliance risk, and accelerate digital transformation. More than 50 million registered users and more than 50% of the Fortune 100* trust GitLab to ship better, more secure software faster. The same principles built into our products are reflected in how our team works: we embrace AI as a core productivity multiplier, with all team members expected to incorporate AI into their daily workflows to drive efficiency, innovation, and impact. GitLab is where careers accelerate, innovation flourishes, and every voice is valued. Our high-performance culture is driven by our values&nbsp;and continuous knowledge exchange, enabling our team members to reach their full potential while collaborating with industry leaders to solve complex problems. Co-create the future with us as we build technology that transforms how the world develops software. * Fortune 500® is a regis",
           "provider": "source-page"
         },
         {
           "title": "",
-          "url": "https://www.mycareersfuture.gov.sg/job/fe789bec11c6a9d195bf371bcbcec73d",
-          "snippet": "MyCareersFuture Singapore",
+          "url": "https://job-boards.greenhouse.io/canonical/jobs/5146620",
+          "snippet": "Job Application for Security Software Engineer at Canonical Security Software Engineer Home based - Worldwide Submit application Canonical is a leading provider of open source software and operating systems to the global enterprise and technology markets. Our platform, Ubuntu, is widely used in breakthrough enterprise initiatives such as public cloud, data science, AI, engineering innovation, and IoT. Our customers include the world's leading public cloud and silicon providers, and industry leaders in many sectors. The company is a pioneer of global distributed collaboration, with 1200+ colleagues in 75+ countries and very few office-based roles. Teams meet two to four times yearly in person, in interesting locations around the world, to align on strategy and execution. The company is founder-led, profitable, and growing. Canonical is looking for exceptional security-focused software engineers to be integrated across product teams. While they also contribute to the product as engineers, their primary focus is to challenge the entire team to think more deeply about security through state-of-the-art practices such as threat modeling, table-top exercises, architecture and design revie",
           "provider": "source-page"
         },
         {
           "title": "",
-          "url": "https://www.mycareersfuture.gov.sg/job/eebd44b1382d7840b8c092b1fc312524",
-          "snippet": "MyCareersFuture Singapore",
+          "url": "https://boards.greenhouse.io/canonical?cv_market=global",
+          "snippet": "Jobs at Canonical Current openings at Canonical Featured Jobs Alliances Field Engineer Home based - Worldwide Canonical is a leading provider of open source software and operating systems to the global enterprise and technology markets. Our platform, Ubuntu, is very widely used in breakthrough enterprise initiatives such as public cloud, data science, AI, engineering innovation and IoT. Our customers include the world's leading public cloud and silicon providers, and industry leaders in many sectors. The company is a pioneer of global distributed collaboration, with 1000+ colleagues in 70+ countries and very few roles based in offices. Teams meet two to four times yearly in person, in interesting locations around the world, to align on strategy and execution. The company is founder led, profitable and growing. We are hiring an Alliances Field Engineer to help our biggest partners (companies like Intel, Nvidia, Google, Dell, HP, Accenture, Tata and the like) understand and embrace our open source platform for themselves and their customers. Our worldwide field engineering team apply expert insights to real-world customer problems, enabling the enterprise adoption of Ubuntu, OpenStac",
           "provider": "source-page"
         },
         {
           "title": "",
-          "url": "https://www.mycareersfuture.gov.sg/job/0da14018a05634ffde57785dcd4e7783",
-          "snippet": "MyCareersFuture Singapore",
+          "url": "https://boards.greenhouse.io/canonical?cv_market=us",
+          "snippet": "Jobs at Canonical Current openings at Canonical Featured Jobs Alliances Field Engineer Home based - Worldwide Canonical is a leading provider of open source software and operating systems to the global enterprise and technology markets. Our platform, Ubuntu, is very widely used in breakthrough enterprise initiatives such as public cloud, data science, AI, engineering innovation and IoT. Our customers include the world's leading public cloud and silicon providers, and industry leaders in many sectors. The company is a pioneer of global distributed collaboration, with 1000+ colleagues in 70+ countries and very few roles based in offices. Teams meet two to four times yearly in person, in interesting locations around the world, to align on strategy and execution. The company is founder led, profitable and growing. We are hiring an Alliances Field Engineer to help our biggest partners (companies like Intel, Nvidia, Google, Dell, HP, Accenture, Tata and the like) understand and embrace our open source platform for themselves and their customers. Our worldwide field engineering team apply expert insights to real-world customer problems, enabling the enterprise adoption of Ubuntu, OpenStac",
           "provider": "source-page"
         },
         {
           "title": "",
-          "url": "https://www.themuse.com/jobs/thecocacolacompany/sr-software-engineer-service-supply-chain-74ffa9",
-          "snippet": "Sr. Software Engineer , Service Supply Chain at The Coca-Cola Company | The Muse | The Muse Skip to main content The Muse Logo A logo with &amp;quat;the muse&amp;quat; in dark blue text. Newsletter Jobs Account Management Accounting and Finance Administration and Office Advertising and Marketing Arts Business Operations Computer and IT Customer Service Data and Analytics Design and UX Education Healthcare Human Resources and Recruitment Management Media, PR, and Communications Product Management Project Management Sales Software Engineering Writing and Editing View All Jobs Companies Advice Coaching Newsletter Employers Sign In Saved Companies Account Settings Sign Out The Coca-Cola Company Sr. Software Engineer , Service Supply Chain 4 days ago • Atlanta, GA Apply on company site About Us Iconic brands. Innovative technologies. Our careers span across functions and are globally connected to give you an unmatched career experience. Size: 10000+ employees Industry: Food &amp; Beverage, Manufacturing, Consumer Goods &amp; Services View Company Profile Digital products play a central role in how we create value for customers, support the teams who serve them, and shape the consumer ex",
+          "url": "https://boards.greenhouse.io/canonical?cv_market=ca",
+          "snippet": "Jobs at Canonical Current openings at Canonical Featured Jobs Alliances Field Engineer Home based - Worldwide Canonical is a leading provider of open source software and operating systems to the global enterprise and technology markets. Our platform, Ubuntu, is very widely used in breakthrough enterprise initiatives such as public cloud, data science, AI, engineering innovation and IoT. Our customers include the world's leading public cloud and silicon providers, and industry leaders in many sectors. The company is a pioneer of global distributed collaboration, with 1000+ colleagues in 70+ countries and very few roles based in offices. Teams meet two to four times yearly in person, in interesting locations around the world, to align on strategy and execution. The company is founder led, profitable and growing. We are hiring an Alliances Field Engineer to help our biggest partners (companies like Intel, Nvidia, Google, Dell, HP, Accenture, Tata and the like) understand and embrace our open source platform for themselves and their customers. Our worldwide field engineering team apply expert insights to real-world customer problems, enabling the enterprise adoption of Ubuntu, OpenStac",
+          "provider": "source-page"
+        },
+        {
+          "title": "",
+          "url": "https://boards.greenhouse.io/canonical?cv_market=uk",
+          "snippet": "Jobs at Canonical Current openings at Canonical Featured Jobs Alliances Field Engineer Home based - Worldwide Canonical is a leading provider of open source software and operating systems to the global enterprise and technology markets. Our platform, Ubuntu, is very widely used in breakthrough enterprise initiatives such as public cloud, data science, AI, engineering innovation and IoT. Our customers include the world's leading public cloud and silicon providers, and industry leaders in many sectors. The company is a pioneer of global distributed collaboration, with 1000+ colleagues in 70+ countries and very few roles based in offices. Teams meet two to four times yearly in person, in interesting locations around the world, to align on strategy and execution. The company is founder led, profitable and growing. We are hiring an Alliances Field Engineer to help our biggest partners (companies like Intel, Nvidia, Google, Dell, HP, Accenture, Tata and the like) understand and embrace our open source platform for themselves and their customers. Our worldwide field engineering team apply expert insights to real-world customer problems, enabling the enterprise adoption of Ubuntu, OpenStac",
+          "provider": "source-page"
+        },
+        {
+          "title": "",
+          "url": "https://boards.greenhouse.io/canonical?cv_market=ie",
+          "snippet": "Jobs at Canonical Current openings at Canonical Featured Jobs Alliances Field Engineer Home based - Worldwide Canonical is a leading provider of open source software and operating systems to the global enterprise and technology markets. Our platform, Ubuntu, is very widely used in breakthrough enterprise initiatives such as public cloud, data science, AI, engineering innovation and IoT. Our customers include the world's leading public cloud and silicon providers, and industry leaders in many sectors. The company is a pioneer of global distributed collaboration, with 1000+ colleagues in 70+ countries and very few roles based in offices. Teams meet two to four times yearly in person, in interesting locations around the world, to align on strategy and execution. The company is founder led, profitable and growing. We are hiring an Alliances Field Engineer to help our biggest partners (companies like Intel, Nvidia, Google, Dell, HP, Accenture, Tata and the like) understand and embrace our open source platform for themselves and their customers. Our worldwide field engineering team apply expert insights to real-world customer problems, enabling the enterprise adoption of Ubuntu, OpenStac",
+          "provider": "source-page"
+        },
+        {
+          "title": "",
+          "url": "https://boards.greenhouse.io/canonical?cv_market=de",
+          "snippet": "Jobs at Canonical Current openings at Canonical Featured Jobs Alliances Field Engineer Home based - Worldwide Canonical is a leading provider of open source software and operating systems to the global enterprise and technology markets. Our platform, Ubuntu, is very widely used in breakthrough enterprise initiatives such as public cloud, data science, AI, engineering innovation and IoT. Our customers include the world's leading public cloud and silicon providers, and industry leaders in many sectors. The company is a pioneer of global distributed collaboration, with 1000+ colleagues in 70+ countries and very few roles based in offices. Teams meet two to four times yearly in person, in interesting locations around the world, to align on strategy and execution. The company is founder led, profitable and growing. We are hiring an Alliances Field Engineer to help our biggest partners (companies like Intel, Nvidia, Google, Dell, HP, Accenture, Tata and the like) understand and embrace our open source platform for themselves and their customers. Our worldwide field engineering team apply expert insights to real-world customer problems, enabling the enterprise adoption of Ubuntu, OpenStac",
+          "provider": "source-page"
+        },
+        {
+          "title": "",
+          "url": "https://boards.greenhouse.io/canonical?cv_market=nl",
+          "snippet": "Jobs at Canonical Current openings at Canonical Featured Jobs Alliances Field Engineer Home based - Worldwide Canonical is a leading provider of open source software and operating systems to the global enterprise and technology markets. Our platform, Ubuntu, is very widely used in breakthrough enterprise initiatives such as public cloud, data science, AI, engineering innovation and IoT. Our customers include the world's leading public cloud and silicon providers, and industry leaders in many sectors. The company is a pioneer of global distributed collaboration, with 1000+ colleagues in 70+ countries and very few roles based in offices. Teams meet two to four times yearly in person, in interesting locations around the world, to align on strategy and execution. The company is founder led, profitable and growing. We are hiring an Alliances Field Engineer to help our biggest partners (companies like Intel, Nvidia, Google, Dell, HP, Accenture, Tata and the like) understand and embrace our open source platform for themselves and their customers. Our worldwide field engineering team apply expert insights to real-world customer problems, enabling the enterprise adoption of Ubuntu, OpenStac",
+          "provider": "source-page"
+        },
+        {
+          "title": "",
+          "url": "https://boards.greenhouse.io/canonical?cv_market=fr",
+          "snippet": "Jobs at Canonical Current openings at Canonical Featured Jobs Alliances Field Engineer Home based - Worldwide Canonical is a leading provider of open source software and operating systems to the global enterprise and technology markets. Our platform, Ubuntu, is very widely used in breakthrough enterprise initiatives such as public cloud, data science, AI, engineering innovation and IoT. Our customers include the world's leading public cloud and silicon providers, and industry leaders in many sectors. The company is a pioneer of global distributed collaboration, with 1000+ colleagues in 70+ countries and very few roles based in offices. Teams meet two to four times yearly in person, in interesting locations around the world, to align on strategy and execution. The company is founder led, profitable and growing. We are hiring an Alliances Field Engineer to help our biggest partners (companies like Intel, Nvidia, Google, Dell, HP, Accenture, Tata and the like) understand and embrace our open source platform for themselves and their customers. Our worldwide field engineering team apply expert insights to real-world customer problems, enabling the enterprise adoption of Ubuntu, OpenStac",
           "provider": "source-page"
         }
       ],
       "signals": [
-        "AI / data / platform signal"
+        "AI / data / platform signal",
+        "risk signal to inspect manually",
+        "remote or hybrid signal"
       ],
       "researchQuestions": [
-        "What business unit owns the Frontend Engineer role?",
+        "What business unit owns the Security Software Engineer role?",
         "What measurable outcomes would this team expect in the first 90 days?",
         "What recent company/product signals change the risk or upside?",
         "Which CV proof points should be highlighted for this company?"
@@ -170,48 +275,50 @@ window.CV_CAREER_OPS_DEEP_RESEARCH = {
       ]
     },
     {
-      "jobKey": "url:https://www.mycareersfuture.gov.sg/job/eebd44b1382d7840b8c092b1fc312524",
-      "company": "TIKTOK PTE. LTD.",
-      "title": "Frontend Software Engineer (Payment), TikTok Live - Singapore",
-      "score": 95,
+      "jobKey": "url:https://jobs.ashbyhq.com/linear/069c4628-88d7-4e4d-b393-c996fc7f3076",
+      "company": "Linear Ashby",
+      "title": "Senior / Staff Product Engineer",
+      "score": 87,
       "recommendation": "值得投遞",
       "evidence": [
         {
           "title": "",
-          "url": "https://www.mycareersfuture.gov.sg/job/07eafbe6994e2090a0c2a6a6a6111e62",
-          "snippet": "MyCareersFuture Singapore",
+          "url": "https://job-boards.greenhouse.io/gitlab/jobs/8488961002",
+          "snippet": "Job Application for Staff Backend Engineer (Go), Continuous Delivery at GitLab Staff Backend Engineer (Go), Continuous Delivery Remote, India Apply GitLab is the intelligent orchestration platform for DevSecOps. GitLab enables organizations to increase developer productivity, improve operational efficiency, reduce security and compliance risk, and accelerate digital transformation. More than 50 million registered users and more than 50% of the Fortune 100* trust GitLab to ship better, more secure software faster. The same principles built into our products are reflected in how our team works: we embrace AI as a core productivity multiplier, with all team members expected to incorporate AI into their daily workflows to drive efficiency, innovation, and impact. GitLab is where careers accelerate, innovation flourishes, and every voice is valued. Our high-performance culture is driven by our values&nbsp;and continuous knowledge exchange, enabling our team members to reach their full potential while collaborating with industry leaders to solve complex problems. Co-create the future with us as we build technology that transforms how the world develops software. * Fortune 500® is a regis",
           "provider": "source-page"
         },
         {
           "title": "",
-          "url": "https://www.mycareersfuture.gov.sg/job/fe789bec11c6a9d195bf371bcbcec73d",
-          "snippet": "MyCareersFuture Singapore",
+          "url": "https://job-boards.greenhouse.io/canonical/jobs/5146620",
+          "snippet": "Job Application for Security Software Engineer at Canonical Security Software Engineer Home based - Worldwide Submit application Canonical is a leading provider of open source software and operating systems to the global enterprise and technology markets. Our platform, Ubuntu, is widely used in breakthrough enterprise initiatives such as public cloud, data science, AI, engineering innovation, and IoT. Our customers include the world's leading public cloud and silicon providers, and industry leaders in many sectors. The company is a pioneer of global distributed collaboration, with 1200+ colleagues in 75+ countries and very few office-based roles. Teams meet two to four times yearly in person, in interesting locations around the world, to align on strategy and execution. The company is founder-led, profitable, and growing. Canonical is looking for exceptional security-focused software engineers to be integrated across product teams. While they also contribute to the product as engineers, their primary focus is to challenge the entire team to think more deeply about security through state-of-the-art practices such as threat modeling, table-top exercises, architecture and design revie",
           "provider": "source-page"
         },
         {
           "title": "",
-          "url": "https://www.mycareersfuture.gov.sg/job/eebd44b1382d7840b8c092b1fc312524",
-          "snippet": "MyCareersFuture Singapore",
+          "url": "https://boards.greenhouse.io/canonical?cv_market=global",
+          "snippet": "Jobs at Canonical Current openings at Canonical Featured Jobs Alliances Field Engineer Home based - Worldwide Canonical is a leading provider of open source software and operating systems to the global enterprise and technology markets. Our platform, Ubuntu, is very widely used in breakthrough enterprise initiatives such as public cloud, data science, AI, engineering innovation and IoT. Our customers include the world's leading public cloud and silicon providers, and industry leaders in many sectors. The company is a pioneer of global distributed collaboration, with 1000+ colleagues in 70+ countries and very few roles based in offices. Teams meet two to four times yearly in person, in interesting locations around the world, to align on strategy and execution. The company is founder led, profitable and growing. We are hiring an Alliances Field Engineer to help our biggest partners (companies like Intel, Nvidia, Google, Dell, HP, Accenture, Tata and the like) understand and embrace our open source platform for themselves and their customers. Our worldwide field engineering team apply expert insights to real-world customer problems, enabling the enterprise adoption of Ubuntu, OpenStac",
           "provider": "source-page"
         },
         {
           "title": "",
-          "url": "https://www.mycareersfuture.gov.sg/job/0da14018a05634ffde57785dcd4e7783",
-          "snippet": "MyCareersFuture Singapore",
+          "url": "https://boards.greenhouse.io/canonical?cv_market=us",
+          "snippet": "Jobs at Canonical Current openings at Canonical Featured Jobs Alliances Field Engineer Home based - Worldwide Canonical is a leading provider of open source software and operating systems to the global enterprise and technology markets. Our platform, Ubuntu, is very widely used in breakthrough enterprise initiatives such as public cloud, data science, AI, engineering innovation and IoT. Our customers include the world's leading public cloud and silicon providers, and industry leaders in many sectors. The company is a pioneer of global distributed collaboration, with 1000+ colleagues in 70+ countries and very few roles based in offices. Teams meet two to four times yearly in person, in interesting locations around the world, to align on strategy and execution. The company is founder led, profitable and growing. We are hiring an Alliances Field Engineer to help our biggest partners (companies like Intel, Nvidia, Google, Dell, HP, Accenture, Tata and the like) understand and embrace our open source platform for themselves and their customers. Our worldwide field engineering team apply expert insights to real-world customer problems, enabling the enterprise adoption of Ubuntu, OpenStac",
           "provider": "source-page"
         },
         {
           "title": "",
-          "url": "https://www.themuse.com/jobs/thecocacolacompany/sr-software-engineer-service-supply-chain-74ffa9",
-          "snippet": "Sr. Software Engineer , Service Supply Chain at The Coca-Cola Company | The Muse | The Muse Skip to main content The Muse Logo A logo with &amp;quat;the muse&amp;quat; in dark blue text. Newsletter Jobs Account Management Accounting and Finance Administration and Office Advertising and Marketing Arts Business Operations Computer and IT Customer Service Data and Analytics Design and UX Education Healthcare Human Resources and Recruitment Management Media, PR, and Communications Product Management Project Management Sales Software Engineering Writing and Editing View All Jobs Companies Advice Coaching Newsletter Employers Sign In Saved Companies Account Settings Sign Out The Coca-Cola Company Sr. Software Engineer , Service Supply Chain 4 days ago • Atlanta, GA Apply on company site About Us Iconic brands. Innovative technologies. Our careers span across functions and are globally connected to give you an unmatched career experience. Size: 10000+ employees Industry: Food &amp; Beverage, Manufacturing, Consumer Goods &amp; Services View Company Profile Digital products play a central role in how we create value for customers, support the teams who serve them, and shape the consumer ex",
+          "url": "https://boards.greenhouse.io/canonical?cv_market=ca",
+          "snippet": "Jobs at Canonical Current openings at Canonical Featured Jobs Alliances Field Engineer Home based - Worldwide Canonical is a leading provider of open source software and operating systems to the global enterprise and technology markets. Our platform, Ubuntu, is very widely used in breakthrough enterprise initiatives such as public cloud, data science, AI, engineering innovation and IoT. Our customers include the world's leading public cloud and silicon providers, and industry leaders in many sectors. The company is a pioneer of global distributed collaboration, with 1000+ colleagues in 70+ countries and very few roles based in offices. Teams meet two to four times yearly in person, in interesting locations around the world, to align on strategy and execution. The company is founder led, profitable and growing. We are hiring an Alliances Field Engineer to help our biggest partners (companies like Intel, Nvidia, Google, Dell, HP, Accenture, Tata and the like) understand and embrace our open source platform for themselves and their customers. Our worldwide field engineering team apply expert insights to real-world customer problems, enabling the enterprise adoption of Ubuntu, OpenStac",
           "provider": "source-page"
         }
       ],
       "signals": [
-        "AI / data / platform signal"
+        "AI / data / platform signal",
+        "risk signal to inspect manually",
+        "remote or hybrid signal"
       ],
       "researchQuestions": [
-        "What business unit owns the Frontend Software Engineer (Payment), TikTok Live - Singapore role?",
+        "What business unit owns the Senior / Staff Product Engineer role?",
         "What measurable outcomes would this team expect in the first 90 days?",
         "What recent company/product signals change the risk or upside?",
         "Which CV proof points should be highlighted for this company?"
@@ -223,48 +330,50 @@ window.CV_CAREER_OPS_DEEP_RESEARCH = {
       ]
     },
     {
-      "jobKey": "url:https://www.mycareersfuture.gov.sg/job/0da14018a05634ffde57785dcd4e7783",
-      "company": "TIKTOK PTE. LTD.",
-      "title": "Frontend Software Engineer (transaction), TikTok Live - Singapore",
-      "score": 95,
+      "jobKey": "url:https://jobs.ashbyhq.com/linear/12f8f208-0b9c-4569-bb3d-41c8a197029e",
+      "company": "Linear Ashby",
+      "title": "Senior / Staff Product Engineer",
+      "score": 87,
       "recommendation": "值得投遞",
       "evidence": [
         {
           "title": "",
-          "url": "https://www.mycareersfuture.gov.sg/job/07eafbe6994e2090a0c2a6a6a6111e62",
-          "snippet": "MyCareersFuture Singapore",
+          "url": "https://job-boards.greenhouse.io/gitlab/jobs/8488961002",
+          "snippet": "Job Application for Staff Backend Engineer (Go), Continuous Delivery at GitLab Staff Backend Engineer (Go), Continuous Delivery Remote, India Apply GitLab is the intelligent orchestration platform for DevSecOps. GitLab enables organizations to increase developer productivity, improve operational efficiency, reduce security and compliance risk, and accelerate digital transformation. More than 50 million registered users and more than 50% of the Fortune 100* trust GitLab to ship better, more secure software faster. The same principles built into our products are reflected in how our team works: we embrace AI as a core productivity multiplier, with all team members expected to incorporate AI into their daily workflows to drive efficiency, innovation, and impact. GitLab is where careers accelerate, innovation flourishes, and every voice is valued. Our high-performance culture is driven by our values&nbsp;and continuous knowledge exchange, enabling our team members to reach their full potential while collaborating with industry leaders to solve complex problems. Co-create the future with us as we build technology that transforms how the world develops software. * Fortune 500® is a regis",
           "provider": "source-page"
         },
         {
           "title": "",
-          "url": "https://www.mycareersfuture.gov.sg/job/fe789bec11c6a9d195bf371bcbcec73d",
-          "snippet": "MyCareersFuture Singapore",
+          "url": "https://job-boards.greenhouse.io/canonical/jobs/5146620",
+          "snippet": "Job Application for Security Software Engineer at Canonical Security Software Engineer Home based - Worldwide Submit application Canonical is a leading provider of open source software and operating systems to the global enterprise and technology markets. Our platform, Ubuntu, is widely used in breakthrough enterprise initiatives such as public cloud, data science, AI, engineering innovation, and IoT. Our customers include the world's leading public cloud and silicon providers, and industry leaders in many sectors. The company is a pioneer of global distributed collaboration, with 1200+ colleagues in 75+ countries and very few office-based roles. Teams meet two to four times yearly in person, in interesting locations around the world, to align on strategy and execution. The company is founder-led, profitable, and growing. Canonical is looking for exceptional security-focused software engineers to be integrated across product teams. While they also contribute to the product as engineers, their primary focus is to challenge the entire team to think more deeply about security through state-of-the-art practices such as threat modeling, table-top exercises, architecture and design revie",
           "provider": "source-page"
         },
         {
           "title": "",
-          "url": "https://www.mycareersfuture.gov.sg/job/eebd44b1382d7840b8c092b1fc312524",
-          "snippet": "MyCareersFuture Singapore",
+          "url": "https://boards.greenhouse.io/canonical?cv_market=global",
+          "snippet": "Jobs at Canonical Current openings at Canonical Featured Jobs Alliances Field Engineer Home based - Worldwide Canonical is a leading provider of open source software and operating systems to the global enterprise and technology markets. Our platform, Ubuntu, is very widely used in breakthrough enterprise initiatives such as public cloud, data science, AI, engineering innovation and IoT. Our customers include the world's leading public cloud and silicon providers, and industry leaders in many sectors. The company is a pioneer of global distributed collaboration, with 1000+ colleagues in 70+ countries and very few roles based in offices. Teams meet two to four times yearly in person, in interesting locations around the world, to align on strategy and execution. The company is founder led, profitable and growing. We are hiring an Alliances Field Engineer to help our biggest partners (companies like Intel, Nvidia, Google, Dell, HP, Accenture, Tata and the like) understand and embrace our open source platform for themselves and their customers. Our worldwide field engineering team apply expert insights to real-world customer problems, enabling the enterprise adoption of Ubuntu, OpenStac",
           "provider": "source-page"
         },
         {
           "title": "",
-          "url": "https://www.mycareersfuture.gov.sg/job/0da14018a05634ffde57785dcd4e7783",
-          "snippet": "MyCareersFuture Singapore",
+          "url": "https://boards.greenhouse.io/canonical?cv_market=us",
+          "snippet": "Jobs at Canonical Current openings at Canonical Featured Jobs Alliances Field Engineer Home based - Worldwide Canonical is a leading provider of open source software and operating systems to the global enterprise and technology markets. Our platform, Ubuntu, is very widely used in breakthrough enterprise initiatives such as public cloud, data science, AI, engineering innovation and IoT. Our customers include the world's leading public cloud and silicon providers, and industry leaders in many sectors. The company is a pioneer of global distributed collaboration, with 1000+ colleagues in 70+ countries and very few roles based in offices. Teams meet two to four times yearly in person, in interesting locations around the world, to align on strategy and execution. The company is founder led, profitable and growing. We are hiring an Alliances Field Engineer to help our biggest partners (companies like Intel, Nvidia, Google, Dell, HP, Accenture, Tata and the like) understand and embrace our open source platform for themselves and their customers. Our worldwide field engineering team apply expert insights to real-world customer problems, enabling the enterprise adoption of Ubuntu, OpenStac",
           "provider": "source-page"
         },
         {
           "title": "",
-          "url": "https://www.themuse.com/jobs/thecocacolacompany/sr-software-engineer-service-supply-chain-74ffa9",
-          "snippet": "Sr. Software Engineer , Service Supply Chain at The Coca-Cola Company | The Muse | The Muse Skip to main content The Muse Logo A logo with &amp;quat;the muse&amp;quat; in dark blue text. Newsletter Jobs Account Management Accounting and Finance Administration and Office Advertising and Marketing Arts Business Operations Computer and IT Customer Service Data and Analytics Design and UX Education Healthcare Human Resources and Recruitment Management Media, PR, and Communications Product Management Project Management Sales Software Engineering Writing and Editing View All Jobs Companies Advice Coaching Newsletter Employers Sign In Saved Companies Account Settings Sign Out The Coca-Cola Company Sr. Software Engineer , Service Supply Chain 4 days ago • Atlanta, GA Apply on company site About Us Iconic brands. Innovative technologies. Our careers span across functions and are globally connected to give you an unmatched career experience. Size: 10000+ employees Industry: Food &amp; Beverage, Manufacturing, Consumer Goods &amp; Services View Company Profile Digital products play a central role in how we create value for customers, support the teams who serve them, and shape the consumer ex",
+          "url": "https://boards.greenhouse.io/canonical?cv_market=ca",
+          "snippet": "Jobs at Canonical Current openings at Canonical Featured Jobs Alliances Field Engineer Home based - Worldwide Canonical is a leading provider of open source software and operating systems to the global enterprise and technology markets. Our platform, Ubuntu, is very widely used in breakthrough enterprise initiatives such as public cloud, data science, AI, engineering innovation and IoT. Our customers include the world's leading public cloud and silicon providers, and industry leaders in many sectors. The company is a pioneer of global distributed collaboration, with 1000+ colleagues in 70+ countries and very few roles based in offices. Teams meet two to four times yearly in person, in interesting locations around the world, to align on strategy and execution. The company is founder led, profitable and growing. We are hiring an Alliances Field Engineer to help our biggest partners (companies like Intel, Nvidia, Google, Dell, HP, Accenture, Tata and the like) understand and embrace our open source platform for themselves and their customers. Our worldwide field engineering team apply expert insights to real-world customer problems, enabling the enterprise adoption of Ubuntu, OpenStac",
           "provider": "source-page"
         }
       ],
       "signals": [
-        "AI / data / platform signal"
+        "AI / data / platform signal",
+        "risk signal to inspect manually",
+        "remote or hybrid signal"
       ],
       "researchQuestions": [
-        "What business unit owns the Frontend Software Engineer (transaction), TikTok Live - Singapore role?",
+        "What business unit owns the Senior / Staff Product Engineer role?",
         "What measurable outcomes would this team expect in the first 90 days?",
         "What recent company/product signals change the risk or upside?",
         "Which CV proof points should be highlighted for this company?"
@@ -276,36 +385,32 @@ window.CV_CAREER_OPS_DEEP_RESEARCH = {
       ]
     },
     {
-      "jobKey": "url:https://www.themuse.com/jobs/thecocacolacompany/sr-software-engineer-service-supply-chain-74ffa9",
-      "company": "The Coca-Cola Company",
-      "title": "Sr. Software Engineer , Service Supply Chain",
-      "score": 95,
+      "jobKey": "url:https://jobs.ashbyhq.com/linear/0c7c2e26-0a98-42cf-a47c-9a3999fb513b",
+      "company": "Linear Ashby",
+      "title": "Product Engineer",
+      "score": 87,
       "recommendation": "值得投遞",
       "evidence": [
         {
           "title": "",
-          "url": "https://www.themuse.com/jobs/thecocacolacompany/sr-software-engineer-service-supply-chain-74ffa9",
-          "snippet": "Sr. Software Engineer , Service Supply Chain at The Coca-Cola Company | The Muse | The Muse Skip to main content The Muse Logo A logo with &amp;quat;the muse&amp;quat; in dark blue text. Newsletter Jobs Account Management Accounting and Finance Administration and Office Advertising and Marketing Arts Business Operations Computer and IT Customer Service Data and Analytics Design and UX Education Healthcare Human Resources and Recruitment Management Media, PR, and Communications Product Management Project Management Sales Software Engineering Writing and Editing View All Jobs Companies Advice Coaching Newsletter Employers Sign In Saved Companies Account Settings Sign Out The Coca-Cola Company Sr. Software Engineer , Service Supply Chain 4 days ago • Atlanta, GA Apply on company site About Us Iconic brands. Innovative technologies. Our careers span across functions and are globally connected to give you an unmatched career experience. Size: 10000+ employees Industry: Food &amp; Beverage, Manufacturing, Consumer Goods &amp; Services View Company Profile Digital products play a central role in how we create value for customers, support the teams who serve them, and shape the consumer ex",
+          "url": "https://job-boards.greenhouse.io/gitlab/jobs/8488961002",
+          "snippet": "Job Application for Staff Backend Engineer (Go), Continuous Delivery at GitLab Staff Backend Engineer (Go), Continuous Delivery Remote, India Apply GitLab is the intelligent orchestration platform for DevSecOps. GitLab enables organizations to increase developer productivity, improve operational efficiency, reduce security and compliance risk, and accelerate digital transformation. More than 50 million registered users and more than 50% of the Fortune 100* trust GitLab to ship better, more secure software faster. The same principles built into our products are reflected in how our team works: we embrace AI as a core productivity multiplier, with all team members expected to incorporate AI into their daily workflows to drive efficiency, innovation, and impact. GitLab is where careers accelerate, innovation flourishes, and every voice is valued. Our high-performance culture is driven by our values&nbsp;and continuous knowledge exchange, enabling our team members to reach their full potential while collaborating with industry leaders to solve complex problems. Co-create the future with us as we build technology that transforms how the world develops software. * Fortune 500® is a regis",
           "provider": "source-page"
         },
         {
           "title": "",
-          "url": "https://www.themuse.com/jobs/thecocacolacompany/senior-software-engineer-service-provider-f1a5ba",
-          "snippet": "Senior Software Engineer , Service Provider at The Coca-Cola Company | The Muse | The Muse Skip to main content The Muse Logo A logo with &amp;quat;the muse&amp;quat; in dark blue text. Newsletter Jobs Account Management Accounting and Finance Administration and Office Advertising and Marketing Arts Business Operations Computer and IT Customer Service Data and Analytics Design and UX Education Healthcare Human Resources and Recruitment Management Media, PR, and Communications Product Management Project Management Sales Software Engineering Writing and Editing View All Jobs Companies Advice Coaching Newsletter Employers Sign In Saved Companies Account Settings Sign Out The Coca-Cola Company Senior Software Engineer , Service Provider 4 days ago • Atlanta, GA Apply on company site About Us Iconic brands. Innovative technologies. Our careers span across functions and are globally connected to give you an unmatched career experience. Size: 10000+ employees Industry: Food &amp; Beverage, Manufacturing, Consumer Goods &amp; Services View Company Profile Digital products play a central role in how we create value for customers, support the teams who serve them, and shape the consumer expe",
-          "provider": "source-page"
-        },
-        {
-          "title": "",
-          "url": "https://www.themuse.com/jobs/bankofamerica/principal-engineer-gbs-ind-783d05",
-          "snippet": "Principal Engineer - GBS IND at Bank of America | The Muse | The Muse Skip to main content The Muse Logo A logo with &amp;quat;the muse&amp;quat; in dark blue text. Newsletter Jobs Account Management Accounting and Finance Administration and Office Advertising and Marketing Arts Business Operations Computer and IT Customer Service Data and Analytics Design and UX Education Healthcare Human Resources and Recruitment Management Media, PR, and Communications Product Management Project Management Sales Software Engineering Writing and Editing View All Jobs Companies Advice Coaching Newsletter Employers Sign In Saved Companies Account Settings Sign Out Bank of America Principal Engineer - GBS IND 2 months ago • Gurgaon, India (+3 more) Chennai, India Mumbai, India Serilingampalle, India Apply on company site About Us Bank of America provides people, companies, and institutional investors with industry-leading financial products and services. Size: 10000+ employees Industry: Financial Services View Company Profile Job Description: About Us At Bank of America, we are guided by a common purpose to help make financial lives better through the power of every connection. We do this by driving",
+          "url": "https://job-boards.greenhouse.io/canonical/jobs/5146620",
+          "snippet": "Job Application for Security Software Engineer at Canonical Security Software Engineer Home based - Worldwide Submit application Canonical is a leading provider of open source software and operating systems to the global enterprise and technology markets. Our platform, Ubuntu, is widely used in breakthrough enterprise initiatives such as public cloud, data science, AI, engineering innovation, and IoT. Our customers include the world's leading public cloud and silicon providers, and industry leaders in many sectors. The company is a pioneer of global distributed collaboration, with 1200+ colleagues in 75+ countries and very few office-based roles. Teams meet two to four times yearly in person, in interesting locations around the world, to align on strategy and execution. The company is founder-led, profitable, and growing. Canonical is looking for exceptional security-focused software engineers to be integrated across product teams. While they also contribute to the product as engineers, their primary focus is to challenge the entire team to think more deeply about security through state-of-the-art practices such as threat modeling, table-top exercises, architecture and design revie",
           "provider": "source-page"
         }
       ],
       "signals": [
-        "AI / data / platform signal"
+        "AI / data / platform signal",
+        "risk signal to inspect manually",
+        "remote or hybrid signal"
       ],
       "researchQuestions": [
-        "What business unit owns the Sr. Software Engineer , Service Supply Chain role?",
+        "What business unit owns the Product Engineer role?",
         "What measurable outcomes would this team expect in the first 90 days?",
         "What recent company/product signals change the risk or upside?",
         "Which CV proof points should be highlighted for this company?"
@@ -317,36 +422,50 @@ window.CV_CAREER_OPS_DEEP_RESEARCH = {
       ]
     },
     {
-      "jobKey": "url:https://www.themuse.com/jobs/thecocacolacompany/senior-software-engineer-service-provider-f1a5ba",
-      "company": "The Coca-Cola Company",
-      "title": "Senior Software Engineer , Service Provider",
-      "score": 95,
+      "jobKey": "url:https://jobs.ashbyhq.com/elevenlabs/3b57cc5c-f019-4a0b-a5ff-e1046e4f1fa1",
+      "company": "ElevenLabs Ashby",
+      "title": "Safety Engineer",
+      "score": 87,
       "recommendation": "值得投遞",
       "evidence": [
         {
           "title": "",
-          "url": "https://www.themuse.com/jobs/thecocacolacompany/sr-software-engineer-service-supply-chain-74ffa9",
-          "snippet": "Sr. Software Engineer , Service Supply Chain at The Coca-Cola Company | The Muse | The Muse Skip to main content The Muse Logo A logo with &amp;quat;the muse&amp;quat; in dark blue text. Newsletter Jobs Account Management Accounting and Finance Administration and Office Advertising and Marketing Arts Business Operations Computer and IT Customer Service Data and Analytics Design and UX Education Healthcare Human Resources and Recruitment Management Media, PR, and Communications Product Management Project Management Sales Software Engineering Writing and Editing View All Jobs Companies Advice Coaching Newsletter Employers Sign In Saved Companies Account Settings Sign Out The Coca-Cola Company Sr. Software Engineer , Service Supply Chain 4 days ago • Atlanta, GA Apply on company site About Us Iconic brands. Innovative technologies. Our careers span across functions and are globally connected to give you an unmatched career experience. Size: 10000+ employees Industry: Food &amp; Beverage, Manufacturing, Consumer Goods &amp; Services View Company Profile Digital products play a central role in how we create value for customers, support the teams who serve them, and shape the consumer ex",
+          "url": "https://job-boards.greenhouse.io/gitlab/jobs/8488961002",
+          "snippet": "Job Application for Staff Backend Engineer (Go), Continuous Delivery at GitLab Staff Backend Engineer (Go), Continuous Delivery Remote, India Apply GitLab is the intelligent orchestration platform for DevSecOps. GitLab enables organizations to increase developer productivity, improve operational efficiency, reduce security and compliance risk, and accelerate digital transformation. More than 50 million registered users and more than 50% of the Fortune 100* trust GitLab to ship better, more secure software faster. The same principles built into our products are reflected in how our team works: we embrace AI as a core productivity multiplier, with all team members expected to incorporate AI into their daily workflows to drive efficiency, innovation, and impact. GitLab is where careers accelerate, innovation flourishes, and every voice is valued. Our high-performance culture is driven by our values&nbsp;and continuous knowledge exchange, enabling our team members to reach their full potential while collaborating with industry leaders to solve complex problems. Co-create the future with us as we build technology that transforms how the world develops software. * Fortune 500® is a regis",
           "provider": "source-page"
         },
         {
           "title": "",
-          "url": "https://www.themuse.com/jobs/thecocacolacompany/senior-software-engineer-service-provider-f1a5ba",
-          "snippet": "Senior Software Engineer , Service Provider at The Coca-Cola Company | The Muse | The Muse Skip to main content The Muse Logo A logo with &amp;quat;the muse&amp;quat; in dark blue text. Newsletter Jobs Account Management Accounting and Finance Administration and Office Advertising and Marketing Arts Business Operations Computer and IT Customer Service Data and Analytics Design and UX Education Healthcare Human Resources and Recruitment Management Media, PR, and Communications Product Management Project Management Sales Software Engineering Writing and Editing View All Jobs Companies Advice Coaching Newsletter Employers Sign In Saved Companies Account Settings Sign Out The Coca-Cola Company Senior Software Engineer , Service Provider 4 days ago • Atlanta, GA Apply on company site About Us Iconic brands. Innovative technologies. Our careers span across functions and are globally connected to give you an unmatched career experience. Size: 10000+ employees Industry: Food &amp; Beverage, Manufacturing, Consumer Goods &amp; Services View Company Profile Digital products play a central role in how we create value for customers, support the teams who serve them, and shape the consumer expe",
+          "url": "https://job-boards.greenhouse.io/canonical/jobs/5146620",
+          "snippet": "Job Application for Security Software Engineer at Canonical Security Software Engineer Home based - Worldwide Submit application Canonical is a leading provider of open source software and operating systems to the global enterprise and technology markets. Our platform, Ubuntu, is widely used in breakthrough enterprise initiatives such as public cloud, data science, AI, engineering innovation, and IoT. Our customers include the world's leading public cloud and silicon providers, and industry leaders in many sectors. The company is a pioneer of global distributed collaboration, with 1200+ colleagues in 75+ countries and very few office-based roles. Teams meet two to four times yearly in person, in interesting locations around the world, to align on strategy and execution. The company is founder-led, profitable, and growing. Canonical is looking for exceptional security-focused software engineers to be integrated across product teams. While they also contribute to the product as engineers, their primary focus is to challenge the entire team to think more deeply about security through state-of-the-art practices such as threat modeling, table-top exercises, architecture and design revie",
           "provider": "source-page"
         },
         {
           "title": "",
-          "url": "https://www.themuse.com/jobs/bankofamerica/principal-engineer-gbs-ind-783d05",
-          "snippet": "Principal Engineer - GBS IND at Bank of America | The Muse | The Muse Skip to main content The Muse Logo A logo with &amp;quat;the muse&amp;quat; in dark blue text. Newsletter Jobs Account Management Accounting and Finance Administration and Office Advertising and Marketing Arts Business Operations Computer and IT Customer Service Data and Analytics Design and UX Education Healthcare Human Resources and Recruitment Management Media, PR, and Communications Product Management Project Management Sales Software Engineering Writing and Editing View All Jobs Companies Advice Coaching Newsletter Employers Sign In Saved Companies Account Settings Sign Out Bank of America Principal Engineer - GBS IND 2 months ago • Gurgaon, India (+3 more) Chennai, India Mumbai, India Serilingampalle, India Apply on company site About Us Bank of America provides people, companies, and institutional investors with industry-leading financial products and services. Size: 10000+ employees Industry: Financial Services View Company Profile Job Description: About Us At Bank of America, we are guided by a common purpose to help make financial lives better through the power of every connection. We do this by driving",
+          "url": "https://boards.greenhouse.io/canonical?cv_market=global",
+          "snippet": "Jobs at Canonical Current openings at Canonical Featured Jobs Alliances Field Engineer Home based - Worldwide Canonical is a leading provider of open source software and operating systems to the global enterprise and technology markets. Our platform, Ubuntu, is very widely used in breakthrough enterprise initiatives such as public cloud, data science, AI, engineering innovation and IoT. Our customers include the world's leading public cloud and silicon providers, and industry leaders in many sectors. The company is a pioneer of global distributed collaboration, with 1000+ colleagues in 70+ countries and very few roles based in offices. Teams meet two to four times yearly in person, in interesting locations around the world, to align on strategy and execution. The company is founder led, profitable and growing. We are hiring an Alliances Field Engineer to help our biggest partners (companies like Intel, Nvidia, Google, Dell, HP, Accenture, Tata and the like) understand and embrace our open source platform for themselves and their customers. Our worldwide field engineering team apply expert insights to real-world customer problems, enabling the enterprise adoption of Ubuntu, OpenStac",
+          "provider": "source-page"
+        },
+        {
+          "title": "",
+          "url": "https://boards.greenhouse.io/canonical?cv_market=us",
+          "snippet": "Jobs at Canonical Current openings at Canonical Featured Jobs Alliances Field Engineer Home based - Worldwide Canonical is a leading provider of open source software and operating systems to the global enterprise and technology markets. Our platform, Ubuntu, is very widely used in breakthrough enterprise initiatives such as public cloud, data science, AI, engineering innovation and IoT. Our customers include the world's leading public cloud and silicon providers, and industry leaders in many sectors. The company is a pioneer of global distributed collaboration, with 1000+ colleagues in 70+ countries and very few roles based in offices. Teams meet two to four times yearly in person, in interesting locations around the world, to align on strategy and execution. The company is founder led, profitable and growing. We are hiring an Alliances Field Engineer to help our biggest partners (companies like Intel, Nvidia, Google, Dell, HP, Accenture, Tata and the like) understand and embrace our open source platform for themselves and their customers. Our worldwide field engineering team apply expert insights to real-world customer problems, enabling the enterprise adoption of Ubuntu, OpenStac",
+          "provider": "source-page"
+        },
+        {
+          "title": "",
+          "url": "https://boards.greenhouse.io/canonical?cv_market=ca",
+          "snippet": "Jobs at Canonical Current openings at Canonical Featured Jobs Alliances Field Engineer Home based - Worldwide Canonical is a leading provider of open source software and operating systems to the global enterprise and technology markets. Our platform, Ubuntu, is very widely used in breakthrough enterprise initiatives such as public cloud, data science, AI, engineering innovation and IoT. Our customers include the world's leading public cloud and silicon providers, and industry leaders in many sectors. The company is a pioneer of global distributed collaboration, with 1000+ colleagues in 70+ countries and very few roles based in offices. Teams meet two to four times yearly in person, in interesting locations around the world, to align on strategy and execution. The company is founder led, profitable and growing. We are hiring an Alliances Field Engineer to help our biggest partners (companies like Intel, Nvidia, Google, Dell, HP, Accenture, Tata and the like) understand and embrace our open source platform for themselves and their customers. Our worldwide field engineering team apply expert insights to real-world customer problems, enabling the enterprise adoption of Ubuntu, OpenStac",
           "provider": "source-page"
         }
       ],
       "signals": [
-        "AI / data / platform signal"
+        "AI / data / platform signal",
+        "risk signal to inspect manually",
+        "remote or hybrid signal"
       ],
       "researchQuestions": [
-        "What business unit owns the Senior Software Engineer , Service Provider role?",
+        "What business unit owns the Safety Engineer role?",
         "What measurable outcomes would this team expect in the first 90 days?",
         "What recent company/product signals change the risk or upside?",
         "Which CV proof points should be highlighted for this company?"
@@ -358,24 +477,26 @@ window.CV_CAREER_OPS_DEEP_RESEARCH = {
       ]
     },
     {
-      "jobKey": "url:https://www.themuse.com/jobs/disney/lead-software-engineer-944f62",
-      "company": "Disney",
-      "title": "Lead Software Engineer",
-      "score": 95,
+      "jobKey": "url:https://remotive.com/remote-jobs/product/staff-product-engineer-sao-paulo-2091000",
+      "company": "LawnStarter",
+      "title": "Staff Product Engineer (São Paulo)",
+      "score": 86,
       "recommendation": "值得投遞",
       "evidence": [
         {
           "title": "",
-          "url": "https://www.themuse.com/jobs/bankofamerica/principal-engineer-gbs-ind-783d05",
-          "snippet": "Principal Engineer - GBS IND at Bank of America | The Muse | The Muse Skip to main content The Muse Logo A logo with &amp;quat;the muse&amp;quat; in dark blue text. Newsletter Jobs Account Management Accounting and Finance Administration and Office Advertising and Marketing Arts Business Operations Computer and IT Customer Service Data and Analytics Design and UX Education Healthcare Human Resources and Recruitment Management Media, PR, and Communications Product Management Project Management Sales Software Engineering Writing and Editing View All Jobs Companies Advice Coaching Newsletter Employers Sign In Saved Companies Account Settings Sign Out Bank of America Principal Engineer - GBS IND 2 months ago • Gurgaon, India (+3 more) Chennai, India Mumbai, India Serilingampalle, India Apply on company site About Us Bank of America provides people, companies, and institutional investors with industry-leading financial products and services. Size: 10000+ employees Industry: Financial Services View Company Profile Job Description: About Us At Bank of America, we are guided by a common purpose to help make financial lives better through the power of every connection. We do this by driving",
+          "url": "https://job-boards.greenhouse.io/gitlab/jobs/8488961002",
+          "snippet": "Job Application for Staff Backend Engineer (Go), Continuous Delivery at GitLab Staff Backend Engineer (Go), Continuous Delivery Remote, India Apply GitLab is the intelligent orchestration platform for DevSecOps. GitLab enables organizations to increase developer productivity, improve operational efficiency, reduce security and compliance risk, and accelerate digital transformation. More than 50 million registered users and more than 50% of the Fortune 100* trust GitLab to ship better, more secure software faster. The same principles built into our products are reflected in how our team works: we embrace AI as a core productivity multiplier, with all team members expected to incorporate AI into their daily workflows to drive efficiency, innovation, and impact. GitLab is where careers accelerate, innovation flourishes, and every voice is valued. Our high-performance culture is driven by our values&nbsp;and continuous knowledge exchange, enabling our team members to reach their full potential while collaborating with industry leaders to solve complex problems. Co-create the future with us as we build technology that transforms how the world develops software. * Fortune 500® is a regis",
           "provider": "source-page"
         }
       ],
       "signals": [
-        "AI / data / platform signal"
+        "AI / data / platform signal",
+        "risk signal to inspect manually",
+        "remote or hybrid signal"
       ],
       "researchQuestions": [
-        "What business unit owns the Lead Software Engineer role?",
+        "What business unit owns the Staff Product Engineer (São Paulo) role?",
         "What measurable outcomes would this team expect in the first 90 days?",
         "What recent company/product signals change the risk or upside?",
         "Which CV proof points should be highlighted for this company?"
@@ -387,24 +508,50 @@ window.CV_CAREER_OPS_DEEP_RESEARCH = {
       ]
     },
     {
-      "jobKey": "url:https://www.themuse.com/jobs/bankofamerica/principal-engineer-gbs-ind-783d05",
-      "company": "Bank of America",
-      "title": "Principal Engineer - GBS IND",
-      "score": 95,
+      "jobKey": "url:https://www.themuse.com/jobs/yext/senior-systems-engineer-e6abbf",
+      "company": "Yext",
+      "title": "Senior Systems Engineer",
+      "score": 86,
       "recommendation": "值得投遞",
       "evidence": [
         {
           "title": "",
-          "url": "https://www.themuse.com/jobs/bankofamerica/principal-engineer-gbs-ind-783d05",
-          "snippet": "Principal Engineer - GBS IND at Bank of America | The Muse | The Muse Skip to main content The Muse Logo A logo with &amp;quat;the muse&amp;quat; in dark blue text. Newsletter Jobs Account Management Accounting and Finance Administration and Office Advertising and Marketing Arts Business Operations Computer and IT Customer Service Data and Analytics Design and UX Education Healthcare Human Resources and Recruitment Management Media, PR, and Communications Product Management Project Management Sales Software Engineering Writing and Editing View All Jobs Companies Advice Coaching Newsletter Employers Sign In Saved Companies Account Settings Sign Out Bank of America Principal Engineer - GBS IND 2 months ago • Gurgaon, India (+3 more) Chennai, India Mumbai, India Serilingampalle, India Apply on company site About Us Bank of America provides people, companies, and institutional investors with industry-leading financial products and services. Size: 10000+ employees Industry: Financial Services View Company Profile Job Description: About Us At Bank of America, we are guided by a common purpose to help make financial lives better through the power of every connection. We do this by driving",
+          "url": "https://job-boards.greenhouse.io/gitlab/jobs/8488961002",
+          "snippet": "Job Application for Staff Backend Engineer (Go), Continuous Delivery at GitLab Staff Backend Engineer (Go), Continuous Delivery Remote, India Apply GitLab is the intelligent orchestration platform for DevSecOps. GitLab enables organizations to increase developer productivity, improve operational efficiency, reduce security and compliance risk, and accelerate digital transformation. More than 50 million registered users and more than 50% of the Fortune 100* trust GitLab to ship better, more secure software faster. The same principles built into our products are reflected in how our team works: we embrace AI as a core productivity multiplier, with all team members expected to incorporate AI into their daily workflows to drive efficiency, innovation, and impact. GitLab is where careers accelerate, innovation flourishes, and every voice is valued. Our high-performance culture is driven by our values&nbsp;and continuous knowledge exchange, enabling our team members to reach their full potential while collaborating with industry leaders to solve complex problems. Co-create the future with us as we build technology that transforms how the world develops software. * Fortune 500® is a regis",
+          "provider": "source-page"
+        },
+        {
+          "title": "",
+          "url": "https://job-boards.greenhouse.io/canonical/jobs/5146620",
+          "snippet": "Job Application for Security Software Engineer at Canonical Security Software Engineer Home based - Worldwide Submit application Canonical is a leading provider of open source software and operating systems to the global enterprise and technology markets. Our platform, Ubuntu, is widely used in breakthrough enterprise initiatives such as public cloud, data science, AI, engineering innovation, and IoT. Our customers include the world's leading public cloud and silicon providers, and industry leaders in many sectors. The company is a pioneer of global distributed collaboration, with 1200+ colleagues in 75+ countries and very few office-based roles. Teams meet two to four times yearly in person, in interesting locations around the world, to align on strategy and execution. The company is founder-led, profitable, and growing. Canonical is looking for exceptional security-focused software engineers to be integrated across product teams. While they also contribute to the product as engineers, their primary focus is to challenge the entire team to think more deeply about security through state-of-the-art practices such as threat modeling, table-top exercises, architecture and design revie",
+          "provider": "source-page"
+        },
+        {
+          "title": "",
+          "url": "https://boards.greenhouse.io/canonical?cv_market=global",
+          "snippet": "Jobs at Canonical Current openings at Canonical Featured Jobs Alliances Field Engineer Home based - Worldwide Canonical is a leading provider of open source software and operating systems to the global enterprise and technology markets. Our platform, Ubuntu, is very widely used in breakthrough enterprise initiatives such as public cloud, data science, AI, engineering innovation and IoT. Our customers include the world's leading public cloud and silicon providers, and industry leaders in many sectors. The company is a pioneer of global distributed collaboration, with 1000+ colleagues in 70+ countries and very few roles based in offices. Teams meet two to four times yearly in person, in interesting locations around the world, to align on strategy and execution. The company is founder led, profitable and growing. We are hiring an Alliances Field Engineer to help our biggest partners (companies like Intel, Nvidia, Google, Dell, HP, Accenture, Tata and the like) understand and embrace our open source platform for themselves and their customers. Our worldwide field engineering team apply expert insights to real-world customer problems, enabling the enterprise adoption of Ubuntu, OpenStac",
+          "provider": "source-page"
+        },
+        {
+          "title": "",
+          "url": "https://boards.greenhouse.io/canonical?cv_market=us",
+          "snippet": "Jobs at Canonical Current openings at Canonical Featured Jobs Alliances Field Engineer Home based - Worldwide Canonical is a leading provider of open source software and operating systems to the global enterprise and technology markets. Our platform, Ubuntu, is very widely used in breakthrough enterprise initiatives such as public cloud, data science, AI, engineering innovation and IoT. Our customers include the world's leading public cloud and silicon providers, and industry leaders in many sectors. The company is a pioneer of global distributed collaboration, with 1000+ colleagues in 70+ countries and very few roles based in offices. Teams meet two to four times yearly in person, in interesting locations around the world, to align on strategy and execution. The company is founder led, profitable and growing. We are hiring an Alliances Field Engineer to help our biggest partners (companies like Intel, Nvidia, Google, Dell, HP, Accenture, Tata and the like) understand and embrace our open source platform for themselves and their customers. Our worldwide field engineering team apply expert insights to real-world customer problems, enabling the enterprise adoption of Ubuntu, OpenStac",
+          "provider": "source-page"
+        },
+        {
+          "title": "",
+          "url": "https://boards.greenhouse.io/canonical?cv_market=ca",
+          "snippet": "Jobs at Canonical Current openings at Canonical Featured Jobs Alliances Field Engineer Home based - Worldwide Canonical is a leading provider of open source software and operating systems to the global enterprise and technology markets. Our platform, Ubuntu, is very widely used in breakthrough enterprise initiatives such as public cloud, data science, AI, engineering innovation and IoT. Our customers include the world's leading public cloud and silicon providers, and industry leaders in many sectors. The company is a pioneer of global distributed collaboration, with 1000+ colleagues in 70+ countries and very few roles based in offices. Teams meet two to four times yearly in person, in interesting locations around the world, to align on strategy and execution. The company is founder led, profitable and growing. We are hiring an Alliances Field Engineer to help our biggest partners (companies like Intel, Nvidia, Google, Dell, HP, Accenture, Tata and the like) understand and embrace our open source platform for themselves and their customers. Our worldwide field engineering team apply expert insights to real-world customer problems, enabling the enterprise adoption of Ubuntu, OpenStac",
           "provider": "source-page"
         }
       ],
       "signals": [
-        "AI / data / platform signal"
+        "AI / data / platform signal",
+        "risk signal to inspect manually",
+        "remote or hybrid signal"
       ],
       "researchQuestions": [
-        "What business unit owns the Principal Engineer - GBS IND role?",
+        "What business unit owns the Senior Systems Engineer role?",
         "What measurable outcomes would this team expect in the first 90 days?",
         "What recent company/product signals change the risk or upside?",
         "Which CV proof points should be highlighted for this company?"
@@ -418,8 +565,8 @@ window.CV_CAREER_OPS_DEEP_RESEARCH = {
   ],
   "errors": [
     {
-      "url": "https://www.themuse.com/jobs/disney/lead-software-engineer-944f62",
-      "message": "HTTP 404"
+      "url": "https://boards.greenhouse.io/gitlab",
+      "message": "This operation was aborted"
     }
   ]
 };
