@@ -1,6 +1,6 @@
 window.CV_CAREER_OPS_DEEP_FIT = {
   "source": "career-ops-deep-fit",
-  "generatedAt": "2026-07-06T14:12:57.749Z",
+  "generatedAt": "2026-07-06T15:54:06.013Z",
   "llmProvider": "none",
   "summary": {
     "totalResults": 95,
@@ -17,7 +17,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "grade": "A",
       "confidence": "medium",
       "decision": "pursue aggressively",
-      "thesis": "Staff Backend Engineer (Go), Continuous Delivery at GitLab Greenhouse is pursue aggressively because the snapshot score is 87, with 3 profile/role keyword hits and 1 external evidence item(s).",
+      "thesis": "Staff Backend Engineer (Go), Continuous Delivery at GitLab Greenhouse is pursue aggressively because the snapshot score is 87, with 3 profile/role keyword hits and 2 external evidence item(s).",
       "evidence": {
         "keywordHits": [
           "Frontend Engineer",
@@ -32,10 +32,11 @@ window.CV_CAREER_OPS_DEEP_FIT = {
         ],
         "researchSignals": [
           "AI / data / platform signal",
+          "growth or funding signal",
           "risk signal to inspect manually",
           "remote or hybrid signal"
         ],
-        "evidenceCount": 1,
+        "evidenceCount": 2,
         "compensationLeverage": "high"
       },
       "concerns": [
@@ -57,7 +58,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "compensationStrategy": {
         "leverage": "high",
         "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Staff Backend Engineer (Go), Continuous Delivery package, including base, bonus, equity, and review cycle?",
-        "valueAnchor": "Based on the scope of Staff Backend Engineer (Go), Continuous Delivery and my fit around remote, engineer, product, data, I would like to calibrate toward the stronger end of the range if the team sees the level match."
+        "valueAnchor": "Based on the scope of Staff Backend Engineer (Go), Continuous Delivery and my fit around frontend, engineer, building, product, I would like to calibrate toward the stronger end of the range if the team sees the level match."
       },
       "storyHooks": [
         {
@@ -130,7 +131,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "compensationStrategy": {
         "leverage": "high",
         "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Security Software Engineer package, including base, bonus, equity, and review cycle?",
-        "valueAnchor": "Based on the scope of Security Software Engineer and my fit around JavaScript, TypeScript, remote, engineer, I would like to calibrate toward the stronger end of the range if the team sees the level match."
+        "valueAnchor": "Based on the scope of Security Software Engineer and my fit around JavaScript, TypeScript, engineer, product, I would like to calibrate toward the stronger end of the range if the team sees the level match."
       },
       "storyHooks": [
         {
@@ -160,9 +161,9 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "title": "Senior / Staff Product Engineer",
       "score": 87,
       "grade": "A",
-      "confidence": "high",
+      "confidence": "medium",
       "decision": "pursue aggressively",
-      "thesis": "Senior / Staff Product Engineer at Linear Ashby is pursue aggressively because the snapshot score is 87, with 7 profile/role keyword hits and 5 external evidence item(s).",
+      "thesis": "Senior / Staff Product Engineer at Linear Ashby is pursue aggressively because the snapshot score is 87, with 7 profile/role keyword hits and 1 external evidence item(s).",
       "evidence": {
         "keywordHits": [
           "TypeScript",
@@ -179,10 +180,10 @@ window.CV_CAREER_OPS_DEEP_FIT = {
         ],
         "researchSignals": [
           "AI / data / platform signal",
-          "risk signal to inspect manually",
+          "growth or funding signal",
           "remote or hybrid signal"
         ],
-        "evidenceCount": 5,
+        "evidenceCount": 1,
         "compensationLeverage": "high"
       },
       "concerns": [],
@@ -202,7 +203,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "compensationStrategy": {
         "leverage": "high",
         "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Senior / Staff Product Engineer package, including base, bonus, equity, and review cycle?",
-        "valueAnchor": "Based on the scope of Senior / Staff Product Engineer and my fit around TypeScript, React, API, remote, I would like to calibrate toward the stronger end of the range if the team sees the level match."
+        "valueAnchor": "Based on the scope of Senior / Staff Product Engineer and my fit around TypeScript, React, API, frontend, I would like to calibrate toward the stronger end of the range if the team sees the level match."
       },
       "storyHooks": [
         {
@@ -232,9 +233,9 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "title": "Senior / Staff Product Engineer",
       "score": 87,
       "grade": "A",
-      "confidence": "high",
+      "confidence": "medium",
       "decision": "pursue aggressively",
-      "thesis": "Senior / Staff Product Engineer at Linear Ashby is pursue aggressively because the snapshot score is 87, with 7 profile/role keyword hits and 5 external evidence item(s).",
+      "thesis": "Senior / Staff Product Engineer at Linear Ashby is pursue aggressively because the snapshot score is 87, with 7 profile/role keyword hits and 1 external evidence item(s).",
       "evidence": {
         "keywordHits": [
           "TypeScript",
@@ -251,10 +252,10 @@ window.CV_CAREER_OPS_DEEP_FIT = {
         ],
         "researchSignals": [
           "AI / data / platform signal",
-          "risk signal to inspect manually",
+          "growth or funding signal",
           "remote or hybrid signal"
         ],
-        "evidenceCount": 5,
+        "evidenceCount": 1,
         "compensationLeverage": "high"
       },
       "concerns": [],
@@ -274,7 +275,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "compensationStrategy": {
         "leverage": "high",
         "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Senior / Staff Product Engineer package, including base, bonus, equity, and review cycle?",
-        "valueAnchor": "Based on the scope of Senior / Staff Product Engineer and my fit around TypeScript, React, API, remote, I would like to calibrate toward the stronger end of the range if the team sees the level match."
+        "valueAnchor": "Based on the scope of Senior / Staff Product Engineer and my fit around TypeScript, React, API, frontend, I would like to calibrate toward the stronger end of the range if the team sees the level match."
       },
       "storyHooks": [
         {
@@ -304,9 +305,9 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "title": "Product Engineer",
       "score": 87,
       "grade": "A",
-      "confidence": "high",
+      "confidence": "medium",
       "decision": "pursue aggressively",
-      "thesis": "Product Engineer at Linear Ashby is pursue aggressively because the snapshot score is 87, with 7 profile/role keyword hits and 5 external evidence item(s).",
+      "thesis": "Product Engineer at Linear Ashby is pursue aggressively because the snapshot score is 87, with 7 profile/role keyword hits and 1 external evidence item(s).",
       "evidence": {
         "keywordHits": [
           "TypeScript",
@@ -322,10 +323,10 @@ window.CV_CAREER_OPS_DEEP_FIT = {
         ],
         "researchSignals": [
           "AI / data / platform signal",
-          "risk signal to inspect manually",
+          "growth or funding signal",
           "remote or hybrid signal"
         ],
-        "evidenceCount": 5,
+        "evidenceCount": 1,
         "compensationLeverage": "high"
       },
       "concerns": [],
@@ -345,7 +346,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "compensationStrategy": {
         "leverage": "high",
         "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Senior / Staff Product Engineer package, including base, bonus, equity, and review cycle?",
-        "valueAnchor": "Based on the scope of Senior / Staff Product Engineer and my fit around TypeScript, React, API, remote, I would like to calibrate toward the stronger end of the range if the team sees the level match."
+        "valueAnchor": "Based on the scope of Senior / Staff Product Engineer and my fit around TypeScript, React, API, frontend, I would like to calibrate toward the stronger end of the range if the team sees the level match."
       },
       "storyHooks": [
         {
@@ -398,6 +399,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
         ],
         "researchSignals": [
           "AI / data / platform signal",
+          "growth or funding signal",
           "risk signal to inspect manually",
           "remote or hybrid signal"
         ],
@@ -423,7 +425,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "compensationStrategy": {
         "leverage": "high",
         "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Safety Engineer package, including base, bonus, equity, and review cycle?",
-        "valueAnchor": "Based on the scope of Safety Engineer and my fit around React, remote, engineer, product, I would like to calibrate toward the stronger end of the range if the team sees the level match. My research indicates the JP midpoint for this level is around JPY 8,000,000 (annual)."
+        "valueAnchor": "Based on the scope of Safety Engineer and my fit around React, frontend, engineer, years, I would like to calibrate toward the stronger end of the range if the team sees the level match. My research indicates the JP midpoint for this level is around JPY 8,000,000 (annual)."
       },
       "storyHooks": [
         {
@@ -455,7 +457,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "grade": "A",
       "confidence": "medium",
       "decision": "pursue aggressively",
-      "thesis": "Staff Product Engineer (São Paulo) at LawnStarter is pursue aggressively because the snapshot score is 86, with 8 profile/role keyword hits and 1 external evidence item(s).",
+      "thesis": "Staff Product Engineer (São Paulo) at LawnStarter is pursue aggressively because the snapshot score is 86, with 8 profile/role keyword hits and 2 external evidence item(s).",
       "evidence": {
         "keywordHits": [
           "TypeScript",
@@ -474,10 +476,11 @@ window.CV_CAREER_OPS_DEEP_FIT = {
         ],
         "researchSignals": [
           "AI / data / platform signal",
+          "growth or funding signal",
           "risk signal to inspect manually",
           "remote or hybrid signal"
         ],
-        "evidenceCount": 1,
+        "evidenceCount": 2,
         "compensationLeverage": "high"
       },
       "concerns": [],
@@ -497,7 +500,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "compensationStrategy": {
         "leverage": "high",
         "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Staff Product Engineer (São Paulo) package, including base, bonus, equity, and review cycle?",
-        "valueAnchor": "Based on the scope of Staff Product Engineer (São Paulo) and my fit around TypeScript, React, remote, dashboard, I would like to calibrate toward the stronger end of the range if the team sees the level match."
+        "valueAnchor": "Based on the scope of Staff Product Engineer (São Paulo) and my fit around TypeScript, React, frontend, engineer, I would like to calibrate toward the stronger end of the range if the team sees the level match."
       },
       "storyHooks": [
         {
@@ -527,9 +530,9 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "title": "Senior Systems Engineer",
       "score": 86,
       "grade": "A",
-      "confidence": "high",
+      "confidence": "medium",
       "decision": "pursue aggressively",
-      "thesis": "Senior Systems Engineer at Yext is pursue aggressively because the snapshot score is 86, with 4 profile/role keyword hits and 5 external evidence item(s).",
+      "thesis": "Senior Systems Engineer at Yext is pursue aggressively because the snapshot score is 86, with 4 profile/role keyword hits and 1 external evidence item(s).",
       "evidence": {
         "keywordHits": [
           "API",
@@ -550,10 +553,10 @@ window.CV_CAREER_OPS_DEEP_FIT = {
         ],
         "researchSignals": [
           "AI / data / platform signal",
-          "risk signal to inspect manually",
+          "growth or funding signal",
           "remote or hybrid signal"
         ],
-        "evidenceCount": 5,
+        "evidenceCount": 1,
         "compensationLeverage": "high"
       },
       "concerns": [
@@ -575,7 +578,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "compensationStrategy": {
         "leverage": "high",
         "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Senior Systems Engineer package, including base, bonus, equity, and review cycle?",
-        "valueAnchor": "Based on the scope of Senior Systems Engineer and my fit around API, Performance Optimization, remote, engineer, I would like to calibrate toward the stronger end of the range if the team sees the level match."
+        "valueAnchor": "Based on the scope of Senior Systems Engineer and my fit around API, Performance Optimization, engineer, building, I would like to calibrate toward the stronger end of the range if the team sees the level match."
       },
       "storyHooks": [
         {
@@ -646,7 +649,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "compensationStrategy": {
         "leverage": "high",
         "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Lead AI Cloud Platform Engineer package, including base, bonus, equity, and review cycle?",
-        "valueAnchor": "Based on the scope of Lead AI Cloud Platform Engineer and my fit around Analytics, API, remote, engineer, I would like to calibrate toward the stronger end of the range if the team sees the level match."
+        "valueAnchor": "Based on the scope of Lead AI Cloud Platform Engineer and my fit around Analytics, API, engineer, years, I would like to calibrate toward the stronger end of the range if the team sees the level match."
       },
       "storyHooks": [
         {
@@ -714,7 +717,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "compensationStrategy": {
         "leverage": "high",
         "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Sr. Product Engineer - Web Services package, including base, bonus, equity, and review cycle?",
-        "valueAnchor": "Based on the scope of Sr. Product Engineer - Web Services and my fit around JavaScript, TypeScript, API, remote, I would like to calibrate toward the stronger end of the range if the team sees the level match."
+        "valueAnchor": "Based on the scope of Sr. Product Engineer - Web Services and my fit around JavaScript, TypeScript, API, engineer, I would like to calibrate toward the stronger end of the range if the team sees the level match."
       },
       "storyHooks": [
         {
@@ -746,7 +749,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "grade": "A",
       "confidence": "medium",
       "decision": "pursue aggressively",
-      "thesis": "Senior Backend Engineer(Go), Continuous Delivery at GitLab Greenhouse is pursue aggressively because the snapshot score is 86, with 3 profile/role keyword hits and 1 external evidence item(s).",
+      "thesis": "Senior Backend Engineer(Go), Continuous Delivery at GitLab Greenhouse is pursue aggressively because the snapshot score is 86, with 3 profile/role keyword hits and 2 external evidence item(s).",
       "evidence": {
         "keywordHits": [
           "Frontend Engineer",
@@ -761,10 +764,11 @@ window.CV_CAREER_OPS_DEEP_FIT = {
         ],
         "researchSignals": [
           "AI / data / platform signal",
+          "growth or funding signal",
           "risk signal to inspect manually",
           "remote or hybrid signal"
         ],
-        "evidenceCount": 1,
+        "evidenceCount": 2,
         "compensationLeverage": "high"
       },
       "concerns": [
@@ -786,7 +790,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "compensationStrategy": {
         "leverage": "high",
         "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Staff Backend Engineer (Go), Continuous Delivery package, including base, bonus, equity, and review cycle?",
-        "valueAnchor": "Based on the scope of Staff Backend Engineer (Go), Continuous Delivery and my fit around remote, engineer, product, data, I would like to calibrate toward the stronger end of the range if the team sees the level match."
+        "valueAnchor": "Based on the scope of Staff Backend Engineer (Go), Continuous Delivery and my fit around frontend, engineer, building, product, I would like to calibrate toward the stronger end of the range if the team sees the level match."
       },
       "storyHooks": [
         {
@@ -818,7 +822,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "grade": "A",
       "confidence": "medium",
       "decision": "pursue aggressively",
-      "thesis": "VP of Product Security at GitLab Greenhouse is pursue aggressively because the snapshot score is 86, with 3 profile/role keyword hits and 1 external evidence item(s).",
+      "thesis": "VP of Product Security at GitLab Greenhouse is pursue aggressively because the snapshot score is 86, with 3 profile/role keyword hits and 2 external evidence item(s).",
       "evidence": {
         "keywordHits": [
           "API",
@@ -832,10 +836,11 @@ window.CV_CAREER_OPS_DEEP_FIT = {
         ],
         "researchSignals": [
           "AI / data / platform signal",
+          "growth or funding signal",
           "risk signal to inspect manually",
           "remote or hybrid signal"
         ],
-        "evidenceCount": 1,
+        "evidenceCount": 2,
         "compensationLeverage": "high"
       },
       "concerns": [],
@@ -855,7 +860,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "compensationStrategy": {
         "leverage": "high",
         "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Staff Backend Engineer (Go), Continuous Delivery package, including base, bonus, equity, and review cycle?",
-        "valueAnchor": "Based on the scope of Staff Backend Engineer (Go), Continuous Delivery and my fit around remote, engineer, product, data, I would like to calibrate toward the stronger end of the range if the team sees the level match."
+        "valueAnchor": "Based on the scope of Staff Backend Engineer (Go), Continuous Delivery and my fit around frontend, engineer, building, product, I would like to calibrate toward the stronger end of the range if the team sees the level match."
       },
       "storyHooks": [
         {
@@ -932,7 +937,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "compensationStrategy": {
         "leverage": "high",
         "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Security Software Engineer package, including base, bonus, equity, and review cycle?",
-        "valueAnchor": "Based on the scope of Security Software Engineer and my fit around JavaScript, TypeScript, remote, engineer, I would like to calibrate toward the stronger end of the range if the team sees the level match."
+        "valueAnchor": "Based on the scope of Security Software Engineer and my fit around JavaScript, TypeScript, engineer, product, I would like to calibrate toward the stronger end of the range if the team sees the level match."
       },
       "storyHooks": [
         {
@@ -1037,9 +1042,9 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "title": "Senior / Staff Product Engineer, AI",
       "score": 86,
       "grade": "A",
-      "confidence": "high",
+      "confidence": "medium",
       "decision": "pursue aggressively",
-      "thesis": "Senior / Staff Product Engineer, AI at Linear Ashby is pursue aggressively because the snapshot score is 86, with 7 profile/role keyword hits and 5 external evidence item(s).",
+      "thesis": "Senior / Staff Product Engineer, AI at Linear Ashby is pursue aggressively because the snapshot score is 86, with 7 profile/role keyword hits and 1 external evidence item(s).",
       "evidence": {
         "keywordHits": [
           "TypeScript",
@@ -1056,10 +1061,10 @@ window.CV_CAREER_OPS_DEEP_FIT = {
         ],
         "researchSignals": [
           "AI / data / platform signal",
-          "risk signal to inspect manually",
+          "growth or funding signal",
           "remote or hybrid signal"
         ],
-        "evidenceCount": 5,
+        "evidenceCount": 1,
         "compensationLeverage": "high"
       },
       "concerns": [],
@@ -1079,7 +1084,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "compensationStrategy": {
         "leverage": "high",
         "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Senior / Staff Product Engineer package, including base, bonus, equity, and review cycle?",
-        "valueAnchor": "Based on the scope of Senior / Staff Product Engineer and my fit around TypeScript, React, API, remote, I would like to calibrate toward the stronger end of the range if the team sees the level match."
+        "valueAnchor": "Based on the scope of Senior / Staff Product Engineer and my fit around TypeScript, React, API, frontend, I would like to calibrate toward the stronger end of the range if the team sees the level match."
       },
       "storyHooks": [
         {
@@ -1149,7 +1154,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "compensationStrategy": {
         "leverage": "high",
         "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Support Engineer (AMER) package, including base, bonus, equity, and review cycle?",
-        "valueAnchor": "Based on the scope of Support Engineer (AMER) and my fit around JavaScript, React, remote, engineer, I would like to calibrate toward the stronger end of the range if the team sees the level match."
+        "valueAnchor": "Based on the scope of Support Engineer (AMER) and my fit around JavaScript, React, engineer, years, I would like to calibrate toward the stronger end of the range if the team sees the level match."
       },
       "storyHooks": [
         {
@@ -1219,7 +1224,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "compensationStrategy": {
         "leverage": "high",
         "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Support Engineer (AMER) package, including base, bonus, equity, and review cycle?",
-        "valueAnchor": "Based on the scope of Support Engineer (AMER) and my fit around JavaScript, React, remote, engineer, I would like to calibrate toward the stronger end of the range if the team sees the level match."
+        "valueAnchor": "Based on the scope of Support Engineer (AMER) and my fit around JavaScript, React, engineer, years, I would like to calibrate toward the stronger end of the range if the team sees the level match."
       },
       "storyHooks": [
         {
@@ -1285,7 +1290,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "compensationStrategy": {
         "leverage": "high",
         "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Support Engineer (AMER) package, including base, bonus, equity, and review cycle?",
-        "valueAnchor": "Based on the scope of Support Engineer (AMER) and my fit around JavaScript, React, remote, engineer, I would like to calibrate toward the stronger end of the range if the team sees the level match."
+        "valueAnchor": "Based on the scope of Support Engineer (AMER) and my fit around JavaScript, React, engineer, years, I would like to calibrate toward the stronger end of the range if the team sees the level match."
       },
       "storyHooks": [
         {
@@ -1385,6 +1390,136 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "llm": null
     },
     {
+      "jobKey": "url:https://www.mycareersfuture.gov.sg/job/eebd44b1382d7840b8c092b1fc312524",
+      "company": "TIKTOK PTE. LTD.",
+      "title": "Frontend Software Engineer (Payment), TikTok Live - Singapore",
+      "score": 85,
+      "grade": "A",
+      "confidence": "medium",
+      "decision": "pursue aggressively",
+      "thesis": "Frontend Software Engineer (Payment), TikTok Live - Singapore at TIKTOK PTE. LTD. is pursue aggressively because the snapshot score is 85, with 6 profile/role keyword hits and 0 external evidence item(s).",
+      "evidence": {
+        "keywordHits": [
+          "Frontend Engineer",
+          "JavaScript",
+          "CSS",
+          "API",
+          "remote",
+          "Frontend Engineer"
+        ],
+        "keywordMisses": [
+          "growth"
+        ],
+        "researchSignals": [],
+        "evidenceCount": 0,
+        "compensationLeverage": "high"
+      },
+      "concerns": [
+        "External company evidence is thin; run deep research with a search API."
+      ],
+      "interviewStrategy": [
+        "Ask why the role is open and what success means in the first 90 days.",
+        "Probe team ownership, roadmap pressure, and cross-functional interfaces."
+      ],
+      "cvStrategy": [
+        "Lead with proof around: Frontend Engineer, JavaScript, CSS, API, remote, Frontend Engineer.",
+        "Use story story-1: frontend product execution.",
+        "Use story story-2: data-heavy product decisions.",
+        "Use story story-3: systems and API collaboration."
+      ],
+      "compensationStrategy": {
+        "leverage": "high",
+        "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Frontend Software Engineer (Payment), TikTok Live - Singapore package, including base, bonus, equity, and review cycle?",
+        "valueAnchor": "Based on the scope of Frontend Software Engineer (Payment), TikTok Live - Singapore and my fit around JavaScript, CSS, frontend, engineer, I would like to calibrate toward the stronger end of the range if the team sees the level match. My research indicates the JP midpoint for this level is around JPY 8,000,000 (annual)."
+      },
+      "storyHooks": [
+        {
+          "id": "story-1",
+          "theme": "frontend product execution",
+          "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
+          "relevance": 2
+        },
+        {
+          "id": "story-2",
+          "theme": "data-heavy product decisions",
+          "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
+          "relevance": 2
+        },
+        {
+          "id": "story-3",
+          "theme": "systems and API collaboration",
+          "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
+          "relevance": 2
+        }
+      ],
+      "llm": null
+    },
+    {
+      "jobKey": "url:https://www.mycareersfuture.gov.sg/job/0da14018a05634ffde57785dcd4e7783",
+      "company": "TIKTOK PTE. LTD.",
+      "title": "Frontend Software Engineer (transaction), TikTok Live - Singapore",
+      "score": 85,
+      "grade": "A",
+      "confidence": "medium",
+      "decision": "pursue aggressively",
+      "thesis": "Frontend Software Engineer (transaction), TikTok Live - Singapore at TIKTOK PTE. LTD. is pursue aggressively because the snapshot score is 85, with 6 profile/role keyword hits and 0 external evidence item(s).",
+      "evidence": {
+        "keywordHits": [
+          "Frontend Engineer",
+          "JavaScript",
+          "CSS",
+          "API",
+          "remote",
+          "Frontend Engineer"
+        ],
+        "keywordMisses": [
+          "growth"
+        ],
+        "researchSignals": [],
+        "evidenceCount": 0,
+        "compensationLeverage": "high"
+      },
+      "concerns": [
+        "External company evidence is thin; run deep research with a search API."
+      ],
+      "interviewStrategy": [
+        "Ask why the role is open and what success means in the first 90 days.",
+        "Probe team ownership, roadmap pressure, and cross-functional interfaces."
+      ],
+      "cvStrategy": [
+        "Lead with proof around: Frontend Engineer, JavaScript, CSS, API, remote, Frontend Engineer.",
+        "Use story story-1: frontend product execution.",
+        "Use story story-2: data-heavy product decisions.",
+        "Use story story-3: systems and API collaboration."
+      ],
+      "compensationStrategy": {
+        "leverage": "high",
+        "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Frontend Software Engineer (Payment), TikTok Live - Singapore package, including base, bonus, equity, and review cycle?",
+        "valueAnchor": "Based on the scope of Frontend Software Engineer (Payment), TikTok Live - Singapore and my fit around JavaScript, CSS, frontend, engineer, I would like to calibrate toward the stronger end of the range if the team sees the level match. My research indicates the JP midpoint for this level is around JPY 8,000,000 (annual)."
+      },
+      "storyHooks": [
+        {
+          "id": "story-1",
+          "theme": "frontend product execution",
+          "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
+          "relevance": 2
+        },
+        {
+          "id": "story-2",
+          "theme": "data-heavy product decisions",
+          "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
+          "relevance": 2
+        },
+        {
+          "id": "story-3",
+          "theme": "systems and API collaboration",
+          "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
+          "relevance": 2
+        }
+      ],
+      "llm": null
+    },
+    {
       "jobKey": "url:https://remotive.com/remote-jobs/software-development/frontend-developer-2090991",
       "company": "Quinncia Inc",
       "title": "Frontend Developer",
@@ -1416,7 +1551,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
         ],
         "researchSignals": [],
         "evidenceCount": 0,
-        "compensationLeverage": "high"
+        "compensationLeverage": ""
       },
       "concerns": [
         "External company evidence is thin; run deep research with a search API."
@@ -1431,11 +1566,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
         "Use story story-2: data-heavy product decisions.",
         "Use story story-3: systems and API collaboration."
       ],
-      "compensationStrategy": {
-        "leverage": "high",
-        "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Frontend Developer package, including base, bonus, equity, and review cycle?",
-        "valueAnchor": "Based on the scope of Frontend Developer and my fit around JavaScript, TypeScript, React, Next.js, I would like to calibrate toward the stronger end of the range if the team sees the level match."
-      },
+      "compensationStrategy": null,
       "storyHooks": [
         {
           "id": "story-1",
@@ -1532,7 +1663,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "grade": "A",
       "confidence": "medium",
       "decision": "pursue aggressively",
-      "thesis": "Engineering Manager, SSCS: Supply Chain at GitLab Greenhouse is pursue aggressively because the snapshot score is 85, with 2 profile/role keyword hits and 1 external evidence item(s).",
+      "thesis": "Engineering Manager, SSCS: Supply Chain at GitLab Greenhouse is pursue aggressively because the snapshot score is 85, with 2 profile/role keyword hits and 2 external evidence item(s).",
       "evidence": {
         "keywordHits": [
           "remote",
@@ -1543,10 +1674,11 @@ window.CV_CAREER_OPS_DEEP_FIT = {
         ],
         "researchSignals": [
           "AI / data / platform signal",
+          "growth or funding signal",
           "risk signal to inspect manually",
           "remote or hybrid signal"
         ],
-        "evidenceCount": 1,
+        "evidenceCount": 2,
         "compensationLeverage": "high"
       },
       "concerns": [],
@@ -1566,7 +1698,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "compensationStrategy": {
         "leverage": "high",
         "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Staff Backend Engineer (Go), Continuous Delivery package, including base, bonus, equity, and review cycle?",
-        "valueAnchor": "Based on the scope of Staff Backend Engineer (Go), Continuous Delivery and my fit around remote, engineer, product, data, I would like to calibrate toward the stronger end of the range if the team sees the level match."
+        "valueAnchor": "Based on the scope of Staff Backend Engineer (Go), Continuous Delivery and my fit around frontend, engineer, building, product, I would like to calibrate toward the stronger end of the range if the team sees the level match."
       },
       "storyHooks": [
         {
@@ -1650,67 +1782,1031 @@ window.CV_CAREER_OPS_DEEP_FIT = {
         }
       ],
       "llm": null
+    }
+  ],
+  "layerB": [
+    {
+      "jobKey": "url:https://japan-dev.com/jobs/micoworks/mico-senior-fullstack-engineer-tokyo-0speiq",
+      "company": "Mico",
+      "title": "Senior Fullstack Engineer (Tokyo)",
+      "score": 84,
+      "grade": "B",
+      "roleFit": 62,
+      "url": "https://japan-dev.com/jobs/micoworks/mico-senior-fullstack-engineer-tokyo-0speiq",
+      "location": "Tokyo, Tokyo, JP",
+      "keywordHits": [
+        "TypeScript",
+        "React",
+        "Next.js",
+        "API",
+        "remote",
+        "TypeScript",
+        "React"
+      ],
+      "keywordMisses": [
+        "vue",
+        "python",
+        "mysql",
+        "llm",
+        "growth"
+      ],
+      "decision": "pursue selectively",
+      "layer": "B"
     },
+    {
+      "jobKey": "url:https://www.themuse.com/jobs/mavenclinic/performance-marketing-lead-paid-acquisition",
+      "company": "Maven Clinic",
+      "title": "Performance Marketing Lead, Paid Acquisition",
+      "score": 83,
+      "grade": "B",
+      "roleFit": 62,
+      "url": "https://www.themuse.com/jobs/mavenclinic/performance-marketing-lead-paid-acquisition",
+      "location": "Flexible / Remote",
+      "keywordHits": [
+        "Analytics",
+        "API",
+        "remote",
+        "analytics"
+      ],
+      "keywordMisses": [
+        "sql",
+        "growth"
+      ],
+      "decision": "pursue selectively",
+      "layer": "B"
+    },
+    {
+      "jobKey": "url:https://job-boards.greenhouse.io/gitlab/jobs/8605283002",
+      "company": "GitLab Greenhouse",
+      "title": "Backend Engineer (Ruby), AI Engineering: Duo Agent Platform Tools",
+      "score": 83,
+      "grade": "B",
+      "roleFit": 62,
+      "url": "https://job-boards.greenhouse.io/gitlab/jobs/8605283002",
+      "location": "Remote, Canada; Remote, United Kingdom",
+      "keywordHits": [
+        "API",
+        "remote"
+      ],
+      "keywordMisses": [
+        "vue",
+        "python",
+        "go",
+        "sql",
+        "rest",
+        "agents"
+      ],
+      "decision": "pursue selectively",
+      "layer": "B"
+    },
+    {
+      "jobKey": "url:https://job-boards.greenhouse.io/gitlab/jobs/8481197002",
+      "company": "GitLab Greenhouse",
+      "title": "Engineering Manager, Observability, Monitoring, and Integrations (Monetization)",
+      "score": 83,
+      "grade": "B",
+      "roleFit": 62,
+      "url": "https://job-boards.greenhouse.io/gitlab/jobs/8481197002",
+      "location": "Remote, India",
+      "keywordHits": [
+        "API",
+        "remote"
+      ],
+      "keywordMisses": [
+        "go",
+        "machine learning",
+        "growth",
+        "sales",
+        "operations"
+      ],
+      "decision": "pursue selectively",
+      "layer": "B"
+    },
+    {
+      "jobKey": "url:https://job-boards.greenhouse.io/gitlab/jobs/8597813002",
+      "company": "GitLab Greenhouse",
+      "title": "Principal Product Manager, Engineering Intelligence & Insights",
+      "score": 83,
+      "grade": "B",
+      "roleFit": 62,
+      "url": "https://job-boards.greenhouse.io/gitlab/jobs/8597813002",
+      "location": "Remote, Canada; Remote, US",
+      "keywordHits": [
+        "Analytics",
+        "API",
+        "remote",
+        "dashboard",
+        "analytics"
+      ],
+      "keywordMisses": [
+        "growth",
+        "sales"
+      ],
+      "decision": "pursue selectively",
+      "layer": "B"
+    },
+    {
+      "jobKey": "url:https://job-boards.greenhouse.io/gitlab/jobs/8556658002",
+      "company": "GitLab Greenhouse",
+      "title": "Senior AI Engineer",
+      "score": 83,
+      "grade": "B",
+      "roleFit": 62,
+      "url": "https://job-boards.greenhouse.io/gitlab/jobs/8556658002",
+      "location": "Remote, Bangalore",
+      "keywordHits": [
+        "JavaScript",
+        "TypeScript",
+        "API",
+        "remote",
+        "TypeScript"
+      ],
+      "keywordMisses": [
+        "python",
+        "rest",
+        "llm",
+        "rag",
+        "prompt engineering",
+        "crm"
+      ],
+      "decision": "pursue selectively",
+      "layer": "B"
+    },
+    {
+      "jobKey": "url:https://job-boards.greenhouse.io/gitlab/jobs/8603839002",
+      "company": "GitLab Greenhouse",
+      "title": "Senior Backend Engineer (Ruby), AI Engineering: Duo Agent Platform Tools",
+      "score": 83,
+      "grade": "B",
+      "roleFit": 62,
+      "url": "https://job-boards.greenhouse.io/gitlab/jobs/8603839002",
+      "location": "Remote, Canada; Remote, United Kingdom",
+      "keywordHits": [
+        "API",
+        "remote"
+      ],
+      "keywordMisses": [
+        "vue",
+        "python",
+        "go",
+        "sql",
+        "rest",
+        "agents"
+      ],
+      "decision": "pursue selectively",
+      "layer": "B"
+    },
+    {
+      "jobKey": "url:https://job-boards.greenhouse.io/gitlab/jobs/8480580002",
+      "company": "GitLab Greenhouse",
+      "title": "Senior Backend Engineer,  SSCS: Supply Chain",
+      "score": 83,
+      "grade": "B",
+      "roleFit": 62,
+      "url": "https://job-boards.greenhouse.io/gitlab/jobs/8480580002",
+      "location": "Remote, India",
+      "keywordHits": [
+        "API",
+        "remote"
+      ],
+      "keywordMisses": [
+        "go",
+        "rest",
+        "growth"
+      ],
+      "decision": "pursue selectively",
+      "layer": "B"
+    },
+    {
+      "jobKey": "url:https://job-boards.greenhouse.io/gitlab/jobs/8490453002",
+      "company": "GitLab Greenhouse",
+      "title": "Senior Site Reliability Engineer, Tenant Services: Geo",
+      "score": 83,
+      "grade": "B",
+      "roleFit": 62,
+      "url": "https://job-boards.greenhouse.io/gitlab/jobs/8490453002",
+      "location": "Remote, India",
+      "keywordHits": [
+        "remote",
+        "dashboard"
+      ],
+      "keywordMisses": [
+        "python",
+        "go",
+        "aws",
+        "kubernetes",
+        "terraform",
+        "growth"
+      ],
+      "decision": "pursue selectively",
+      "layer": "B"
+    },
+    {
+      "jobKey": "url:https://job-boards.greenhouse.io/gitlab/jobs/8614945002",
+      "company": "GitLab Greenhouse",
+      "title": "Senior Software Engineer (RoR/Go), SSCS: Authentication",
+      "score": 83,
+      "grade": "B",
+      "roleFit": 62,
+      "url": "https://job-boards.greenhouse.io/gitlab/jobs/8614945002",
+      "location": "Remote, Canada",
+      "keywordHits": [
+        "Accessibility",
+        "API",
+        "remote"
+      ],
+      "keywordMisses": [
+        "go",
+        "growth"
+      ],
+      "decision": "pursue selectively",
+      "layer": "B"
+    },
+    {
+      "jobKey": "url:https://job-boards.greenhouse.io/gitlab/jobs/8463922002",
+      "company": "GitLab Greenhouse",
+      "title": "Staff Backend Engineer, Gitlab Delivery: Upgrades",
+      "score": 83,
+      "grade": "B",
+      "roleFit": 62,
+      "url": "https://job-boards.greenhouse.io/gitlab/jobs/8463922002",
+      "location": "Remote, India",
+      "keywordHits": [
+        "remote"
+      ],
+      "keywordMisses": [
+        "go",
+        "kubernetes",
+        "terraform",
+        "growth",
+        "operations"
+      ],
+      "decision": "pursue selectively",
+      "layer": "B"
+    },
+    {
+      "jobKey": "url:https://job-boards.greenhouse.io/gitlab/jobs/8448283002",
+      "company": "GitLab Greenhouse",
+      "title": "Staff Backend Engineer (Ruby on Rails/AI), Verify",
+      "score": 83,
+      "grade": "B",
+      "roleFit": 62,
+      "url": "https://job-boards.greenhouse.io/gitlab/jobs/8448283002",
+      "location": "Remote, United Kingdom",
+      "keywordHits": [
+        "remote",
+        "dashboard"
+      ],
+      "keywordMisses": [
+        "go",
+        "llm",
+        "agents",
+        "growth"
+      ],
+      "decision": "pursue selectively",
+      "layer": "B"
+    },
+    {
+      "jobKey": "url:https://job-boards.greenhouse.io/gitlab/jobs/8480559002",
+      "company": "GitLab Greenhouse",
+      "title": "Staff Backend Engineer,  Software Supply Chain Security",
+      "score": 83,
+      "grade": "B",
+      "roleFit": 62,
+      "url": "https://job-boards.greenhouse.io/gitlab/jobs/8480559002",
+      "location": "Remote, India",
+      "keywordHits": [
+        "remote"
+      ],
+      "keywordMisses": [
+        "go",
+        "growth"
+      ],
+      "decision": "pursue selectively",
+      "layer": "B"
+    },
+    {
+      "jobKey": "url:https://job-boards.greenhouse.io/gitlab/jobs/8480531002",
+      "company": "GitLab Greenhouse",
+      "title": "Staff Backend Engineer, SSCS: AI Governance",
+      "score": 83,
+      "grade": "B",
+      "roleFit": 62,
+      "url": "https://job-boards.greenhouse.io/gitlab/jobs/8480531002",
+      "location": "Remote, India",
+      "keywordHits": [
+        "API",
+        "remote"
+      ],
+      "keywordMisses": [
+        "python",
+        "postgres",
+        "rest",
+        "agents",
+        "growth"
+      ],
+      "decision": "pursue selectively",
+      "layer": "B"
+    },
+    {
+      "jobKey": "url:https://job-boards.greenhouse.io/canonical/jobs/7566317",
+      "company": "Canonical Greenhouse",
+      "title": "Design Manager (Visual)",
+      "score": 83,
+      "grade": "B",
+      "roleFit": 62,
+      "url": "https://job-boards.greenhouse.io/canonical/jobs/7566317",
+      "location": "Home based - EMEA",
+      "keywordHits": [
+        "Accessibility",
+        "Design Systems",
+        "remote",
+        "design system"
+      ],
+      "keywordMisses": [
+        "go",
+        "rest",
+        "growth",
+        "sales",
+        "excel"
+      ],
+      "decision": "pursue selectively",
+      "layer": "B"
+    },
+    {
+      "jobKey": "url:https://jobs.ashbyhq.com/linear/d3bc1ced-3ce4-4086-a050-555055dbb1ff",
+      "company": "Linear Ashby",
+      "title": "Senior / Staff Fullstack Engineer",
+      "score": 83,
+      "grade": "B",
+      "roleFit": 62,
+      "url": "https://jobs.ashbyhq.com/Linear/d3bc1ced-3ce4-4086-a050-555055dbb1ff",
+      "location": "Europe",
+      "keywordHits": [
+        "JavaScript",
+        "TypeScript",
+        "React",
+        "Analytics",
+        "API",
+        "remote",
+        "analytics",
+        "TypeScript"
+      ],
+      "keywordMisses": [
+        "postgres",
+        "agents",
+        "growth"
+      ],
+      "decision": "pursue selectively",
+      "layer": "B"
+    },
+    {
+      "jobKey": "url:https://jobs.ashbyhq.com/linear/cd5ae036-0223-427a-b038-ba16ef9dcb32",
+      "company": "Linear Ashby",
+      "title": "Senior / Staff Fullstack Engineer",
+      "score": 83,
+      "grade": "B",
+      "roleFit": 62,
+      "url": "https://jobs.ashbyhq.com/Linear/cd5ae036-0223-427a-b038-ba16ef9dcb32",
+      "location": "North America",
+      "keywordHits": [
+        "TypeScript",
+        "React",
+        "Analytics",
+        "API",
+        "remote",
+        "analytics",
+        "TypeScript",
+        "React"
+      ],
+      "keywordMisses": [
+        "postgres",
+        "agents",
+        "growth"
+      ],
+      "decision": "pursue selectively",
+      "layer": "B"
+    },
+    {
+      "jobKey": "url:https://jobs.ashbyhq.com/elevenlabs/02762c18-304f-4759-a34e-a26976567dcc",
+      "company": "ElevenLabs Ashby",
+      "title": "Social Media Manager",
+      "score": 83,
+      "grade": "B",
+      "roleFit": 62,
+      "url": "https://jobs.ashbyhq.com/elevenlabs/02762c18-304f-4759-a34e-a26976567dcc",
+      "location": "London / Dublin / Spain / United States / New York / Denmark / Poland / United Kingdom / Boston",
+      "keywordHits": [
+        "Analytics",
+        "API",
+        "Figma",
+        "remote",
+        "dashboard",
+        "analytics"
+      ],
+      "keywordMisses": [
+        "agents",
+        "growth",
+        "operations"
+      ],
+      "decision": "pursue selectively",
+      "layer": "B"
+    },
+    {
+      "jobKey": "url:https://jobs.ashbyhq.com/elevenlabs/6a530871-b6c6-4783-ac6b-69cc3b084192",
+      "company": "ElevenLabs Ashby",
+      "title": "Full-Stack Engineer",
+      "score": 83,
+      "grade": "B",
+      "roleFit": 62,
+      "url": "https://jobs.ashbyhq.com/elevenlabs/6a530871-b6c6-4783-ac6b-69cc3b084192",
+      "location": "United Kingdom / Dublin / Spain / United States / New York / Sofia / Germany / Poland / Boston / Amsterdam / Bulgaria",
+      "keywordHits": [
+        "TypeScript",
+        "React",
+        "API",
+        "remote",
+        "TypeScript",
+        "React"
+      ],
+      "keywordMisses": [
+        "python",
+        "agents",
+        "growth",
+        "sales",
+        "operations"
+      ],
+      "decision": "pursue selectively",
+      "layer": "B"
+    },
+    {
+      "jobKey": "url:https://jobs.ashbyhq.com/elevenlabs/ada7cd2c-8b9f-4f19-a88b-7c2ca1be1fde",
+      "company": "ElevenLabs Ashby",
+      "title": "Full-Stack Engineer (Front-End Leaning)",
+      "score": 83,
+      "grade": "B",
+      "roleFit": 62,
+      "url": "https://jobs.ashbyhq.com/elevenlabs/ada7cd2c-8b9f-4f19-a88b-7c2ca1be1fde",
+      "location": "United Kingdom / Ireland / Dublin / New York / Sofia / Los Angeles / Portugal / Warsaw / Sweden / London / Netherlands / Boston / Amsterdam / Washington, D.C. /",
+      "keywordHits": [
+        "TypeScript",
+        "React",
+        "API",
+        "remote",
+        "TypeScript",
+        "React"
+      ],
+      "keywordMisses": [
+        "agents",
+        "growth",
+        "sales",
+        "operations"
+      ],
+      "decision": "pursue selectively",
+      "layer": "B"
+    },
+    {
+      "jobKey": "url:https://jobs.ashbyhq.com/supabase/d5573afa-636c-4219-832f-386f498243bf",
+      "company": "Supabase Ashby",
+      "title": "Customer Solution Architect (AMER)",
+      "score": 83,
+      "grade": "B",
+      "roleFit": 62,
+      "url": "https://jobs.ashbyhq.com/supabase/d5573afa-636c-4219-832f-386f498243bf",
+      "location": "Remote",
+      "keywordHits": [
+        "JavaScript",
+        "React",
+        "API",
+        "Performance Optimization",
+        "remote",
+        "React"
+      ],
+      "keywordMisses": [
+        "vue",
+        "python",
+        "go",
+        "postgres",
+        "mysql",
+        "growth"
+      ],
+      "decision": "pursue selectively",
+      "layer": "B"
+    },
+    {
+      "jobKey": "url:https://jobs.ashbyhq.com/supabase/51c3a3a9-7539-47f3-82e7-b95958342e2c",
+      "company": "Supabase Ashby",
+      "title": "Customer Solution Architect (APAC)",
+      "score": 83,
+      "grade": "B",
+      "roleFit": 62,
+      "url": "https://jobs.ashbyhq.com/supabase/51c3a3a9-7539-47f3-82e7-b95958342e2c",
+      "location": "APAC",
+      "keywordHits": [
+        "JavaScript",
+        "React",
+        "API",
+        "Performance Optimization",
+        "remote",
+        "React"
+      ],
+      "keywordMisses": [
+        "vue",
+        "python",
+        "go",
+        "postgres",
+        "mysql",
+        "growth"
+      ],
+      "decision": "pursue selectively",
+      "layer": "B"
+    },
+    {
+      "jobKey": "url:https://jobs.ashbyhq.com/supabase/a1320bbf-bfae-49a8-a1b7-12eeccaf39ca",
+      "company": "Supabase Ashby",
+      "title": "Developer Relations Engineer (San Francisco, CA)",
+      "score": 83,
+      "grade": "B",
+      "roleFit": 62,
+      "url": "https://jobs.ashbyhq.com/supabase/a1320bbf-bfae-49a8-a1b7-12eeccaf39ca",
+      "location": "Remote",
+      "keywordHits": [
+        "JavaScript",
+        "TypeScript",
+        "React",
+        "Next.js",
+        "remote",
+        "TypeScript",
+        "React"
+      ],
+      "keywordMisses": [
+        "vue",
+        "go",
+        "postgres",
+        "growth"
+      ],
+      "decision": "pursue selectively",
+      "layer": "B"
+    },
+    {
+      "jobKey": "url:https://jobs.ashbyhq.com/supabase/66bab062-b769-43cf-ac3c-a2630257624c",
+      "company": "Supabase Ashby",
+      "title": "Customer Solution Architect, Team Lead (AMER)",
+      "score": 83,
+      "grade": "B",
+      "roleFit": 62,
+      "url": "https://jobs.ashbyhq.com/supabase/66bab062-b769-43cf-ac3c-a2630257624c",
+      "location": "Remote / AMER",
+      "keywordHits": [
+        "React",
+        "remote",
+        "dashboard",
+        "React"
+      ],
+      "keywordMisses": [
+        "vue",
+        "go",
+        "postgres",
+        "growth",
+        "sales"
+      ],
+      "decision": "pursue selectively",
+      "layer": "B"
+    },
+    {
+      "jobKey": "url:https://jobs.ashbyhq.com/supabase/26ad8432-a03e-40f9-a4cc-05344ceedfa3",
+      "company": "Supabase Ashby",
+      "title": "Customer Reliability Engineer",
+      "score": 83,
+      "grade": "B",
+      "roleFit": 62,
+      "url": "https://jobs.ashbyhq.com/supabase/26ad8432-a03e-40f9-a4cc-05344ceedfa3",
+      "location": "AMER",
+      "keywordHits": [
+        "JavaScript",
+        "TypeScript",
+        "React",
+        "Performance Optimization",
+        "remote",
+        "TypeScript",
+        "React"
+      ],
+      "keywordMisses": [
+        "vue",
+        "python",
+        "go",
+        "postgres",
+        "mysql",
+        "growth"
+      ],
+      "decision": "pursue selectively",
+      "layer": "B"
+    },
+    {
+      "jobKey": "url:https://jobs.ashbyhq.com/supabase/48950725-e0d9-4025-92d9-f75e1b60ce45",
+      "company": "Supabase Ashby",
+      "title": "Postgres Deployment Engineer (Nix)",
+      "score": 83,
+      "grade": "B",
+      "roleFit": 62,
+      "url": "https://jobs.ashbyhq.com/supabase/48950725-e0d9-4025-92d9-f75e1b60ce45",
+      "location": "Remote",
+      "keywordHits": [
+        "JavaScript",
+        "Performance Optimization",
+        "remote"
+      ],
+      "keywordMisses": [
+        "go",
+        "rust",
+        "postgres",
+        "aws",
+        "docker",
+        "kubernetes"
+      ],
+      "decision": "pursue selectively",
+      "layer": "B"
+    },
+    {
+      "jobKey": "url:https://jobs.ashbyhq.com/supabase/e569b7f7-fa8f-4139-86f6-4f52b456882d",
+      "company": "Supabase Ashby",
+      "title": "Software Engineer - Auth",
+      "score": 83,
+      "grade": "B",
+      "roleFit": 62,
+      "url": "https://jobs.ashbyhq.com/supabase/e569b7f7-fa8f-4139-86f6-4f52b456882d",
+      "location": "Remote",
+      "keywordHits": [
+        "JavaScript",
+        "TypeScript",
+        "Next.js",
+        "API",
+        "remote",
+        "dashboard",
+        "TypeScript"
+      ],
+      "keywordMisses": [
+        "go",
+        "postgres",
+        "mysql",
+        "aws",
+        "kubernetes",
+        "growth"
+      ],
+      "decision": "pursue selectively",
+      "layer": "B"
+    },
+    {
+      "jobKey": "url:https://jobs.ashbyhq.com/supabase/dc8187e4-c799-48a9-a408-ad8393eec39f",
+      "company": "Supabase Ashby",
+      "title": "Strategic Customer Solutions Architect (APAC)",
+      "score": 83,
+      "grade": "B",
+      "roleFit": 62,
+      "url": "https://jobs.ashbyhq.com/supabase/dc8187e4-c799-48a9-a408-ad8393eec39f",
+      "location": "APAC",
+      "keywordHits": [
+        "JavaScript",
+        "React",
+        "Analytics",
+        "remote",
+        "analytics",
+        "React"
+      ],
+      "keywordMisses": [
+        "vue",
+        "python",
+        "go",
+        "sql",
+        "postgres",
+        "mysql"
+      ],
+      "decision": "pursue selectively",
+      "layer": "B"
+    },
+    {
+      "jobKey": "url:https://jobs.ashbyhq.com/supabase/2e6ee4b3-6573-477f-9c95-d1221cd9f9f9",
+      "company": "Supabase Ashby",
+      "title": "Design Engineer",
+      "score": 83,
+      "grade": "B",
+      "roleFit": 62,
+      "url": "https://jobs.ashbyhq.com/supabase/2e6ee4b3-6573-477f-9c95-d1221cd9f9f9",
+      "location": "Remote",
+      "keywordHits": [
+        "React",
+        "Next.js",
+        "CSS",
+        "Tailwind",
+        "Figma",
+        "remote",
+        "design system",
+        "React"
+      ],
+      "keywordMisses": [
+        "go",
+        "postgres",
+        "growth"
+      ],
+      "decision": "pursue selectively",
+      "layer": "B"
+    },
+    {
+      "jobKey": "url:https://jobs.ashbyhq.com/supabase/dd3f74dc-29f8-46b1-bcfb-b7f090b7146a",
+      "company": "Supabase Ashby",
+      "title": "CLI Engineer",
+      "score": 83,
+      "grade": "B",
+      "roleFit": 62,
+      "url": "https://jobs.ashbyhq.com/supabase/dd3f74dc-29f8-46b1-bcfb-b7f090b7146a",
+      "location": "Remote",
+      "keywordHits": [
+        "TypeScript",
+        "API",
+        "remote",
+        "TypeScript"
+      ],
+      "keywordMisses": [
+        "python",
+        "go",
+        "rust",
+        "postgres",
+        "docker",
+        "kubernetes"
+      ],
+      "decision": "pursue selectively",
+      "layer": "B"
+    },
+    {
+      "jobKey": "url:https://jobs.ashbyhq.com/supabase/85606cff-df9a-462e-a6b9-5c7d0892eaa8",
+      "company": "Supabase Ashby",
+      "title": "Partner Solutions Architect - AWS",
+      "score": 83,
+      "grade": "B",
+      "roleFit": 62,
+      "url": "https://jobs.ashbyhq.com/supabase/85606cff-df9a-462e-a6b9-5c7d0892eaa8",
+      "location": "AMER",
+      "keywordHits": [
+        "React",
+        "Next.js",
+        "API",
+        "remote",
+        "React"
+      ],
+      "keywordMisses": [
+        "go",
+        "postgres",
+        "aws",
+        "growth"
+      ],
+      "decision": "pursue selectively",
+      "layer": "B"
+    },
+    {
+      "jobKey": "url:https://jobs.ashbyhq.com/supabase/3ab0b926-c9b5-4197-aff2-88d5bf009e13",
+      "company": "Supabase Ashby",
+      "title": "Edge Functions Engineer",
+      "score": 83,
+      "grade": "B",
+      "roleFit": 62,
+      "url": "https://jobs.ashbyhq.com/supabase/3ab0b926-c9b5-4197-aff2-88d5bf009e13",
+      "location": "Remote",
+      "keywordHits": [
+        "JavaScript",
+        "TypeScript",
+        "remote",
+        "TypeScript"
+      ],
+      "keywordMisses": [
+        "go",
+        "rust",
+        "postgres",
+        "aws",
+        "kubernetes",
+        "rest"
+      ],
+      "decision": "pursue selectively",
+      "layer": "B"
+    },
+    {
+      "jobKey": "url:https://jobs.ashbyhq.com/supabase/c59d03d5-60c4-43ce-9556-04acab8d87cb",
+      "company": "Supabase Ashby",
+      "title": "Anti Abuse Engineer",
+      "score": 83,
+      "grade": "B",
+      "roleFit": 62,
+      "url": "https://jobs.ashbyhq.com/supabase/c59d03d5-60c4-43ce-9556-04acab8d87cb",
+      "location": "Remote",
+      "keywordHits": [
+        "React",
+        "API",
+        "remote",
+        "dashboard",
+        "React"
+      ],
+      "keywordMisses": [
+        "python",
+        "go",
+        "sql",
+        "postgres",
+        "growth",
+        "operations"
+      ],
+      "decision": "pursue selectively",
+      "layer": "B"
+    },
+    {
+      "jobKey": "url:https://jobs.ashbyhq.com/supabase/620bcab3-787c-4ffe-bd37-5d45e209925e",
+      "company": "Supabase Ashby",
+      "title": "Control Plane Engineer",
+      "score": 83,
+      "grade": "B",
+      "roleFit": 62,
+      "url": "https://jobs.ashbyhq.com/supabase/620bcab3-787c-4ffe-bd37-5d45e209925e",
+      "location": "AMER",
+      "keywordHits": [
+        "JavaScript",
+        "TypeScript",
+        "API",
+        "remote",
+        "dashboard",
+        "TypeScript"
+      ],
+      "keywordMisses": [
+        "go",
+        "postgres",
+        "docker",
+        "rest",
+        "growth"
+      ],
+      "decision": "pursue selectively",
+      "layer": "B"
+    },
+    {
+      "jobKey": "url:https://www.themuse.com/jobs/exadel/senior-software-engineer-python-ai-ca21d9",
+      "company": "Exadel",
+      "title": "Senior Software Engineer (Python, AI)",
+      "score": 82,
+      "grade": "B",
+      "roleFit": 62,
+      "url": "https://www.themuse.com/jobs/exadel/senior-software-engineer-python-ai-ca21d9",
+      "location": "Făgăraș, Romania / Kazanlak, Bulgaria / Kėdainiai, Lithuania / Nurota, Uzbekistan / Ozorków, Poland / Zestap’oni, Georgia",
+      "keywordHits": [
+        "API",
+        "Performance Optimization",
+        "remote"
+      ],
+      "keywordMisses": [
+        "angular",
+        "python",
+        "sql",
+        "azure",
+        "docker",
+        "kubernetes"
+      ],
+      "decision": "pursue selectively",
+      "layer": "B"
+    },
+    {
+      "jobKey": "url:https://www.themuse.com/jobs/exadel/senior-platform-engineer-19fabf",
+      "company": "Exadel",
+      "title": "Senior Platform Engineer",
+      "score": 82,
+      "grade": "B",
+      "roleFit": 62,
+      "url": "https://www.themuse.com/jobs/exadel/senior-platform-engineer-19fabf",
+      "location": "Ozorków, Poland",
+      "keywordHits": [
+        "TypeScript",
+        "API",
+        "remote",
+        "TypeScript"
+      ],
+      "keywordMisses": [
+        "python",
+        "java",
+        "kotlin",
+        "aws",
+        "gcp",
+        "azure"
+      ],
+      "decision": "pursue selectively",
+      "layer": "B"
+    },
+    {
+      "jobKey": "url:https://www.themuse.com/jobs/bankofamerica/assistant-vice-president-software-engineer-7aca5b",
+      "company": "Bank of America",
+      "title": "Assistant Vice President; Software Engineer",
+      "score": 82,
+      "grade": "B",
+      "roleFit": 62,
+      "url": "https://www.themuse.com/jobs/bankofamerica/assistant-vice-president-software-engineer-7aca5b",
+      "location": "New York, NY",
+      "keywordHits": [
+        "React",
+        "API",
+        "remote",
+        "React"
+      ],
+      "keywordMisses": [
+        "python",
+        "sql",
+        "rest",
+        "etl",
+        "growth"
+      ],
+      "decision": "pursue selectively",
+      "layer": "B"
+    },
+    {
+      "jobKey": "url:https://www.themuse.com/jobs/exadel/senior-api-engineer-net",
+      "company": "Exadel",
+      "title": "Senior API Engineer (.NET)",
+      "score": 82,
+      "grade": "B",
+      "roleFit": 62,
+      "url": "https://www.themuse.com/jobs/exadel/senior-api-engineer-net",
+      "location": "Kazanlak, Bulgaria",
+      "keywordHits": [
+        "API",
+        "remote"
+      ],
+      "keywordMisses": [
+        "sql",
+        "aws",
+        "azure"
+      ],
+      "decision": "pursue selectively",
+      "layer": "B"
+    },
+    {
+      "jobKey": "url:https://www.themuse.com/jobs/exadel/senior-software-architect-net",
+      "company": "Exadel",
+      "title": "Senior Software Architect (.NET)",
+      "score": 82,
+      "grade": "B",
+      "roleFit": 62,
+      "url": "https://www.themuse.com/jobs/exadel/senior-software-architect-net",
+      "location": "Dabas, Hungary / Kazanlak, Bulgaria / Ozorków, Poland",
+      "keywordHits": [
+        "API",
+        "remote"
+      ],
+      "keywordMisses": [
+        "sql",
+        "aws",
+        "azure",
+        "rest"
+      ],
+      "decision": "pursue selectively",
+      "layer": "B"
+    },
+    {
+      "jobKey": "url:https://www.themuse.com/jobs/exadel/senior-devops-engineer-4d9696",
+      "company": "Exadel",
+      "title": "Senior DevOps Engineer",
+      "score": 82,
+      "grade": "B",
+      "roleFit": 62,
+      "url": "https://www.themuse.com/jobs/exadel/senior-devops-engineer-4d9696",
+      "location": "Kazanlak, Bulgaria",
+      "keywordHits": [
+        "API",
+        "remote"
+      ],
+      "keywordMisses": [
+        "sql",
+        "aws",
+        "azure",
+        "docker",
+        "kubernetes"
+      ],
+      "decision": "pursue selectively",
+      "layer": "B"
+    }
+  ],
+  "layerC": [
     {
       "jobKey": "url:https://careers.airbnb.com/positions/7763307?gh_jid=7763307",
       "company": "Airbnb Greenhouse",
       "title": "Staff Full Stack Engineer, Reservations and Additional Products",
       "score": 85,
       "grade": "A",
-      "confidence": "medium",
-      "decision": "pursue aggressively",
-      "thesis": "Staff Full Stack Engineer, Reservations and Additional Products at Airbnb Greenhouse is pursue aggressively because the snapshot score is 85, with 5 profile/role keyword hits and 0 external evidence item(s).",
-      "evidence": {
-        "keywordHits": [
-          "JavaScript",
-          "React",
-          "remote",
-          "React",
-          "Full Stack Engineer"
-        ],
-        "keywordMisses": [
-          "java",
-          "kotlin"
-        ],
-        "researchSignals": [],
-        "evidenceCount": 0,
-        "compensationLeverage": ""
-      },
-      "concerns": [
-        "External company evidence is thin; run deep research with a search API."
+      "roleFit": 82,
+      "url": "https://careers.airbnb.com/positions/7763307?gh_jid=7763307",
+      "location": "Remote, USA",
+      "keywordHits": [
+        "JavaScript",
+        "React",
+        "remote",
+        "React"
       ],
-      "interviewStrategy": [
-        "Ask why the role is open and what success means in the first 90 days.",
-        "Probe team ownership, roadmap pressure, and cross-functional interfaces."
+      "topGap": "java",
+      "mainGaps": [
+        "java",
+        "kotlin"
       ],
-      "cvStrategy": [
-        "Lead with proof around: JavaScript, React, remote, React, Full Stack Engineer.",
-        "Use story story-1: frontend product execution.",
-        "Use story story-2: data-heavy product decisions.",
-        "Use story story-3: systems and API collaboration."
-      ],
-      "compensationStrategy": null,
-      "storyHooks": [
-        {
-          "id": "story-1",
-          "theme": "frontend product execution",
-          "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
-          "relevance": 2
-        },
-        {
-          "id": "story-2",
-          "theme": "data-heavy product decisions",
-          "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
-          "relevance": 2
-        },
-        {
-          "id": "story-3",
-          "theme": "systems and API collaboration",
-          "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
-          "relevance": 2
-        }
-      ],
-      "llm": null
+      "layer": "C"
     },
     {
       "jobKey": "url:https://job-boards.greenhouse.io/anthropic/jobs/5223916008",
@@ -1718,710 +2814,31 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "title": "Design Engineer, Web",
       "score": 85,
       "grade": "A",
-      "confidence": "medium",
-      "decision": "pursue aggressively",
-      "thesis": "Design Engineer, Web at Anthropic Greenhouse is pursue aggressively because the snapshot score is 85, with 8 profile/role keyword hits and 0 external evidence item(s).",
-      "evidence": {
-        "keywordHits": [
-          "React",
-          "Next.js",
-          "Accessibility",
-          "API",
-          "remote",
-          "design system",
-          "React",
-          "Product Engineer"
-        ],
-        "keywordMisses": [
-          "seo",
-          "growth",
-          "sales",
-          "operations"
-        ],
-        "researchSignals": [],
-        "evidenceCount": 0,
-        "compensationLeverage": ""
-      },
-      "concerns": [
-        "External company evidence is thin; run deep research with a search API."
-      ],
-      "interviewStrategy": [
-        "Ask why the role is open and what success means in the first 90 days.",
-        "Probe team ownership, roadmap pressure, and cross-functional interfaces."
-      ],
-      "cvStrategy": [
-        "Lead with proof around: React, Next.js, Accessibility, API, remote, design system.",
-        "Use story story-1: frontend product execution.",
-        "Use story story-2: data-heavy product decisions.",
-        "Use story story-3: systems and API collaboration."
-      ],
-      "compensationStrategy": null,
-      "storyHooks": [
-        {
-          "id": "story-1",
-          "theme": "frontend product execution",
-          "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
-          "relevance": 3
-        },
-        {
-          "id": "story-2",
-          "theme": "data-heavy product decisions",
-          "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
-          "relevance": 3
-        },
-        {
-          "id": "story-3",
-          "theme": "systems and API collaboration",
-          "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
-          "relevance": 3
-        }
-      ],
-      "llm": null
-    }
-  ],
-  "layerB": [
-    {
-      "jobKey": "url:https://nvidia.wd5.myworkdayjobs.com/nvidiaexternalcareersite/job/switzerland-remote/senior-cpu-performance-developer-technology-engineer_jr2003570",
-      "company": "NVIDIA Workday",
-      "title": "Senior CPU Performance Developer Technology Engineer",
-      "score": 75,
-      "grade": "B",
-      "roleFit": 45,
-      "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Switzerland-Remote/Senior-CPU-Performance-Developer-Technology-Engineer_JR2003570",
-      "location": "Switzerland, Remote",
-      "keywordHits": [],
-      "keywordMisses": [],
-      "decision": "pursue selectively",
-      "layer": "B"
-    },
-    {
-      "jobKey": "url:https://jobs.ashbyhq.com/cursor/fcdf7683-bd29-49a5-9284-f000b04a266a",
-      "company": "Cursor Ashby",
-      "title": "Strategic Account Executive, Life Sciences",
-      "score": 74,
-      "grade": "B",
-      "roleFit": 45,
-      "url": "https://jobs.ashbyhq.com/Cursor/fcdf7683-bd29-49a5-9284-f000b04a266a",
-      "location": "Remote",
-      "keywordHits": [],
-      "keywordMisses": [
-        "sales"
-      ],
-      "decision": "pursue selectively",
-      "layer": "B"
-    },
-    {
-      "jobKey": "url:https://nvidia.wd5.myworkdayjobs.com/nvidiaexternalcareersite/job/sweden-remote/senior-software-engineer-aerial-platform_jr2011026",
-      "company": "NVIDIA Workday",
-      "title": "Senior Software Engineer Aerial Platform",
-      "score": 73,
-      "grade": "B",
-      "roleFit": 45,
-      "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Sweden-Remote/Senior-Software-Engineer-Aerial-Platform_JR2011026",
-      "location": "Sweden, Remote",
-      "keywordHits": [],
-      "keywordMisses": [
-        "python"
-      ],
-      "decision": "pursue selectively",
-      "layer": "B"
-    },
-    {
-      "jobKey": "url:https://www.mycareersfuture.gov.sg/job/fb5ebe974ba629a893ef1030eb16be49",
-      "company": "GOLDTECH RESOURCES PTE LTD",
-      "title": "Technical Business Analyst – Power Platform",
-      "score": 72,
-      "grade": "B",
-      "roleFit": 45,
-      "url": "https://www.mycareersfuture.gov.sg/job/fb5ebe974ba629a893ef1030eb16be49",
-      "location": "Islandwide, Singapore",
-      "keywordHits": [],
-      "keywordMisses": [
-        "go",
-        "sql",
-        "power bi"
-      ],
-      "decision": "pursue selectively",
-      "layer": "B"
-    },
-    {
-      "jobKey": "url:https://careers.roblox.com/jobs/7918002?gh_jid=7918002",
-      "company": "Roblox Greenhouse",
-      "title": "Principal Software Engineer, WebRTC",
-      "score": 72,
-      "grade": "B",
-      "roleFit": 45,
-      "url": "https://careers.roblox.com/jobs/7918002?gh_jid=7918002",
-      "location": "San Mateo, CA, United States",
+      "roleFit": 82,
+      "url": "https://job-boards.greenhouse.io/anthropic/jobs/5223916008",
+      "location": "Remote-Friendly (Travel-Required) | San Francisco, CA | New York City, NY",
       "keywordHits": [
-        "Performance Optimization"
-      ],
-      "keywordMisses": [],
-      "decision": "pursue selectively",
-      "layer": "B"
-    },
-    {
-      "jobKey": "url:https://careers.roblox.com/jobs/7697520?gh_jid=7697520",
-      "company": "Roblox Greenhouse",
-      "title": "Human Evaluator, Studio (Contract)",
-      "score": 71,
-      "grade": "C",
-      "roleFit": 45,
-      "url": "https://careers.roblox.com/jobs/7697520?gh_jid=7697520",
-      "location": "United States",
-      "keywordHits": [
-        "remote"
-      ],
-      "keywordMisses": [],
-      "decision": "pursue selectively",
-      "layer": "B"
-    },
-    {
-      "jobKey": "url:https://jobs.ashbyhq.com/elevenlabs/4389da7f-b5c9-4660-aaf2-d097f4caba07",
-      "company": "ElevenLabs Ashby",
-      "title": "Audio Engineering (Freelance)",
-      "score": 71,
-      "grade": "C",
-      "roleFit": 45,
-      "url": "https://jobs.ashbyhq.com/elevenlabs/4389da7f-b5c9-4660-aaf2-d097f4caba07",
-      "location": "London / New York / Poland",
-      "keywordHits": [
-        "remote"
-      ],
-      "keywordMisses": [],
-      "decision": "pursue selectively",
-      "layer": "B"
-    },
-    {
-      "jobKey": "url:https://nvidia.wd5.myworkdayjobs.com/nvidiaexternalcareersite/job/korea-seoul/senior-perception-engineer--obstacle-foundation-models---autonomous-vehicles_jr2017868",
-      "company": "NVIDIA Workday",
-      "title": "Senior Perception Engineer, Obstacle Foundation Models - Autonomous Vehicles",
-      "score": 71,
-      "grade": "C",
-      "roleFit": 45,
-      "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Korea-Seoul/Senior-Perception-Engineer--Obstacle-Foundation-Models---Autonomous-Vehicles_JR2017868",
-      "location": "Korea, Seoul",
-      "keywordHits": [],
-      "keywordMisses": [
-        "python",
-        "deep learning",
-        "computer vision",
-        "pytorch"
-      ],
-      "decision": "pursue selectively",
-      "layer": "B"
-    },
-    {
-      "jobKey": "url:https://remoteok.com/remote-jobs/remote-buyer-i-jabil-1134489",
-      "company": "Jabil",
-      "title": "Buyer I",
-      "score": 70,
-      "grade": "C",
-      "roleFit": 45,
-      "url": "https://remoteok.com/remote-jobs/remote-buyer-i-jabil-1134489",
-      "location": "New Delhi, New Delhi, Delhi, India",
-      "keywordHits": [
-        "remote"
-      ],
-      "keywordMisses": [],
-      "decision": "pursue selectively",
-      "layer": "B"
-    },
-    {
-      "jobKey": "url:https://remoteok.com/remote-jobs/remote-greenskeeper-city-of-brantford-1134491",
-      "company": "City of Brantford",
-      "title": "Greenskeeper",
-      "score": 70,
-      "grade": "C",
-      "roleFit": 45,
-      "url": "https://remoteok.com/remote-jobs/remote-greenskeeper-city-of-brantford-1134491",
-      "location": "Brantford,",
-      "keywordHits": [
+        "React",
+        "Next.js",
         "Accessibility",
-        "remote"
+        "API"
       ],
-      "keywordMisses": [],
-      "decision": "pursue selectively",
-      "layer": "B"
-    },
-    {
-      "jobKey": "url:https://databricks.com/company/careers/open-positions/job?gh_jid=8185059002",
-      "company": "Databricks Greenhouse",
-      "title": "Sr. Technical Enablement Specialist",
-      "score": 70,
-      "grade": "C",
-      "roleFit": 45,
-      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8185059002",
-      "location": "Bengaluru, India",
-      "keywordHits": [
-        "Analytics",
-        "analytics"
+      "topGap": "seo",
+      "mainGaps": [
+        "seo",
+        "growth",
+        "sales",
+        "operations"
       ],
-      "keywordMisses": [
-        "spark",
-        "excel"
-      ],
-      "decision": "pursue selectively",
-      "layer": "B"
+      "layer": "C"
     },
-    {
-      "jobKey": "url:https://careers.roblox.com/jobs/7669537?gh_jid=7669537",
-      "company": "Roblox Greenhouse",
-      "title": "Senior QA Engineer (Audio, Video, Communication)",
-      "score": 70,
-      "grade": "C",
-      "roleFit": 45,
-      "url": "https://careers.roblox.com/jobs/7669537?gh_jid=7669537",
-      "location": "San Mateo, CA, United States",
-      "keywordHits": [],
-      "keywordMisses": [
-        "python"
-      ],
-      "decision": "pursue selectively",
-      "layer": "B"
-    },
-    {
-      "jobKey": "url:https://careers.roblox.com/jobs/7558857?gh_jid=7558857",
-      "company": "Roblox Greenhouse",
-      "title": "Senior QA Engineer, AVC",
-      "score": 70,
-      "grade": "C",
-      "roleFit": 45,
-      "url": "https://careers.roblox.com/jobs/7558857?gh_jid=7558857",
-      "location": "San Mateo, CA, United States",
-      "keywordHits": [],
-      "keywordMisses": [
-        "python"
-      ],
-      "decision": "pursue selectively",
-      "layer": "B"
-    },
-    {
-      "jobKey": "url:https://careers.roblox.com/jobs/7360413?gh_jid=7360413",
-      "company": "Roblox Greenhouse",
-      "title": "Senior Software Engineer, App Performance",
-      "score": 70,
-      "grade": "C",
-      "roleFit": 45,
-      "url": "https://careers.roblox.com/jobs/7360413?gh_jid=7360413",
-      "location": "San Mateo, CA, United States",
-      "keywordHits": [],
-      "keywordMisses": [],
-      "decision": "pursue selectively",
-      "layer": "B"
-    },
-    {
-      "jobKey": "url:https://careers.roblox.com/jobs/8025510?gh_jid=8025510",
-      "company": "Roblox Greenhouse",
-      "title": "Senior Software Engineer (C++)",
-      "score": 70,
-      "grade": "C",
-      "roleFit": 45,
-      "url": "https://careers.roblox.com/jobs/8025510?gh_jid=8025510",
-      "location": "San Mateo, CA, United States",
-      "keywordHits": [],
-      "keywordMisses": [],
-      "decision": "pursue selectively",
-      "layer": "B"
-    },
-    {
-      "jobKey": "url:https://remoteok.com/remote-jobs/remote-f-ajax-systems-1134445",
-      "company": "Ajax Systems",
-      "title": "f",
-      "score": 69,
-      "grade": "C",
-      "roleFit": 45,
-      "url": "https://remoteok.com/remote-jobs/remote-f-ajax-systems-1134445",
-      "location": "Greater Uzhgorod Area,",
-      "keywordHits": [
-        "remote"
-      ],
-      "keywordMisses": [],
-      "decision": "hold / compare",
-      "layer": "B"
-    },
-    {
-      "jobKey": "url:https://remoteok.com/remote-jobs/remote-watch-clerk-city-of-campbell-river-1134493",
-      "company": "City of Campbell River",
-      "title": "Watch Clerk",
-      "score": 69,
-      "grade": "C",
-      "roleFit": 45,
-      "url": "https://remoteok.com/remote-jobs/remote-watch-clerk-city-of-campbell-river-1134493",
-      "location": "Campbell River,",
-      "keywordHits": [
-        "remote"
-      ],
-      "keywordMisses": [],
-      "decision": "hold / compare",
-      "layer": "B"
-    },
-    {
-      "jobKey": "url:https://remoteok.com/remote-jobs/remote-multi-skilled-operative-tarmac-1134400",
-      "company": "Tarmac",
-      "title": "Multi Skilled Operative",
-      "score": 69,
-      "grade": "C",
-      "roleFit": 45,
-      "url": "https://remoteok.com/remote-jobs/remote-multi-skilled-operative-tarmac-1134400",
-      "location": "Shoreham,",
-      "keywordHits": [
-        "remote"
-      ],
-      "keywordMisses": [],
-      "decision": "hold / compare",
-      "layer": "B"
-    },
-    {
-      "jobKey": "url:https://nvidia.wd5.myworkdayjobs.com/nvidiaexternalcareersite/job/israel-yokneam/senior-system-architect--high-speed-interconnects_jr2011546",
-      "company": "NVIDIA Workday",
-      "title": "Senior System Architect, High-Speed Interconnects",
-      "score": 69,
-      "grade": "C",
-      "roleFit": 45,
-      "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Israel-Yokneam/Senior-System-Architect--High-Speed-Interconnects_JR2011546",
-      "location": "Israel, Yokneam",
-      "keywordHits": [],
-      "keywordMisses": [],
-      "decision": "hold / compare",
-      "layer": "B"
-    },
-    {
-      "jobKey": "url:https://nvidia.wd5.myworkdayjobs.com/nvidiaexternalcareersite/job/israel-yokneam/senior-hardware-time-synchronization-architect_jr2012825",
-      "company": "NVIDIA Workday",
-      "title": "Senior Hardware Time Synchronization Architect",
-      "score": 69,
-      "grade": "C",
-      "roleFit": 45,
-      "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Israel-Yokneam/Senior-Hardware-Time-Synchronization-Architect_JR2012825",
-      "location": "Israel, Yokneam",
-      "keywordHits": [],
-      "keywordMisses": [
-        "python"
-      ],
-      "decision": "hold / compare",
-      "layer": "B"
-    },
-    {
-      "jobKey": "url:https://www.dice.com/job-detail/601057cf-5044-4f8b-ac56-013eb75321e4",
-      "company": "ISCO International LLC",
-      "title": "Junior Wireless DSP/PHY Algorithm Engineer",
-      "score": 69,
-      "grade": "C",
-      "roleFit": 45,
-      "url": "https://www.dice.com/job-detail/601057cf-5044-4f8b-ac56-013eb75321e4",
-      "location": "Schaumburg, IL, US",
-      "keywordHits": [
-        "remote"
-      ],
-      "keywordMisses": [
-        "python"
-      ],
-      "decision": "hold / compare",
-      "layer": "B"
-    },
-    {
-      "jobKey": "url:https://nvidia.wd5.myworkdayjobs.com/nvidiaexternalcareersite/job/taiwan-hsinchu/senior-mixed-signal-circuit-design-engineer_jr2015519",
-      "company": "NVIDIA Workday",
-      "title": "Senior Mixed Signal Circuit Design Engineer",
-      "score": 68,
-      "grade": "C",
-      "roleFit": 45,
-      "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Taiwan-Hsinchu/Senior-Mixed-Signal-Circuit-Design-Engineer_JR2015519",
-      "location": "Taiwan, Hsinchu",
-      "keywordHits": [],
-      "keywordMisses": [
-        "go",
-        "excel"
-      ],
-      "decision": "hold / compare",
-      "layer": "B"
-    },
-    {
-      "jobKey": "url:https://remoteok.com/remote-jobs/remote-12-jobs-that-pay-well-without-a-degree-bluefield-daily-telegraph-1134387",
-      "company": "Bluefield Daily Telegraph",
-      "title": "12 jobs that pay well without a degree",
-      "score": 68,
-      "grade": "C",
-      "roleFit": 45,
-      "url": "https://remoteok.com/remote-jobs/remote-12-jobs-that-pay-well-without-a-degree-bluefield-daily-telegraph-1134387",
-      "location": "Paying,",
-      "keywordHits": [
-        "remote"
-      ],
-      "keywordMisses": [],
-      "decision": "hold / compare",
-      "layer": "B"
-    },
-    {
-      "jobKey": "url:https://nvidia.wd5.myworkdayjobs.com/nvidiaexternalcareersite/job/denmark-roskilde/hardware-design-engineer---interconnect-design_jr2018723",
-      "company": "NVIDIA Workday",
-      "title": "Hardware Design Engineer – Interconnect Design",
-      "score": 68,
-      "grade": "C",
-      "roleFit": 45,
-      "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Denmark-Roskilde/Hardware-Design-Engineer---Interconnect-Design_JR2018723",
-      "location": "Denmark, Roskilde",
-      "keywordHits": [],
-      "keywordMisses": [],
-      "decision": "hold / compare",
-      "layer": "B"
-    },
-    {
-      "jobKey": "url:https://nvidia.wd5.myworkdayjobs.com/nvidiaexternalcareersite/job/korea-seoul/developer-technology-engineer---hpc_jr2020295",
-      "company": "NVIDIA Workday",
-      "title": "Developer Technology Engineer - HPC",
-      "score": 68,
-      "grade": "C",
-      "roleFit": 45,
-      "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Korea-Seoul/Developer-Technology-Engineer---HPC_JR2020295",
-      "location": "Korea, Seoul",
-      "keywordHits": [],
-      "keywordMisses": [],
-      "decision": "hold / compare",
-      "layer": "B"
-    },
-    {
-      "jobKey": "url:https://remoteok.com/remote-jobs/remote-docente-a-tiempo-parcial-para-escuela-de-comunicacion-universidad-catolica-santo-toribio-de-mogrovejo-1134426",
-      "company": "Universidad CatÃ³lica Santo Toribio de Mogrovejo",
-      "title": "Docente a Tiempo Parcial para Escuela de ComunicaciÃ³n",
-      "score": 67,
-      "grade": "C",
-      "roleFit": 45,
-      "url": "https://remoteok.com/remote-jobs/remote-docente-a-tiempo-parcial-para-escuela-de-comunicacion-universidad-catolica-santo-toribio-de-mogrovejo-1134426",
-      "location": "Chiclayo, Chiclayo, Lambayeque, PerÃº",
-      "keywordHits": [
-        "remote"
-      ],
-      "keywordMisses": [],
-      "decision": "hold / compare",
-      "layer": "B"
-    },
-    {
-      "jobKey": "url:https://www.daijob.com/en/jobs/detail/1531667",
-      "company": "British Embassy Tokyo",
-      "title": "Events and Hospitality Officer",
-      "score": 67,
-      "grade": "C",
-      "roleFit": 45,
-      "url": "https://www.daijob.com/en/jobs/detail/1531667",
-      "location": "Chiyoda, Tokyo, JP",
-      "keywordHits": [],
-      "keywordMisses": [
-        "crm"
-      ],
-      "decision": "hold / compare",
-      "layer": "B"
-    },
-    {
-      "jobKey": "url:https://www.mycareersfuture.gov.sg/job/de027dffd4d07e8f694bbdf20c226e1a",
-      "company": "DCONSTRUCT ROBOTICS PTE. LTD.",
-      "title": "C/C++ Software Engineer",
-      "score": 66,
-      "grade": "C",
-      "roleFit": 45,
-      "url": "https://www.mycareersfuture.gov.sg/job/de027dffd4d07e8f694bbdf20c226e1a",
-      "location": "PIXEL, CENTRAL EXCHANGE GREEN, D05 Pasir Panjang, Hong Leong Garden, Clementi New Town, Singapore",
-      "keywordHits": [],
-      "keywordMisses": [],
-      "decision": "hold / compare",
-      "layer": "B"
-    },
-    {
-      "jobKey": "url:https://www.mycareersfuture.gov.sg/job/b718bbea2c9a6655a4dcee5e0ed1ba2f",
-      "company": "DCONSTRUCT ROBOTICS PTE. LTD.",
-      "title": "Robotics Software Engineer",
-      "score": 66,
-      "grade": "C",
-      "roleFit": 45,
-      "url": "https://www.mycareersfuture.gov.sg/job/b718bbea2c9a6655a4dcee5e0ed1ba2f",
-      "location": "PIXEL, CENTRAL EXCHANGE GREEN, D05 Pasir Panjang, Hong Leong Garden, Clementi New Town, Singapore",
-      "keywordHits": [],
-      "keywordMisses": [],
-      "decision": "hold / compare",
-      "layer": "B"
-    },
-    {
-      "jobKey": "url:https://www.mycareersfuture.gov.sg/job/6813b1ce86e2266fd9953cebcb246155",
-      "company": "HPS PARTNERS PTE. LTD.",
-      "title": "Senior/Software Engineer (Bluetooth Embedded System)",
-      "score": 66,
-      "grade": "C",
-      "roleFit": 45,
-      "url": "https://www.mycareersfuture.gov.sg/job/6813b1ce86e2266fd9953cebcb246155",
-      "location": "NORDCOM ONE, GAMBAS CRESCENT, D27 Sembawang, Yishun, Singapore",
-      "keywordHits": [],
-      "keywordMisses": [],
-      "decision": "hold / compare",
-      "layer": "B"
-    },
-    {
-      "jobKey": "url:https://www.mycareersfuture.gov.sg/job/4449d6bd725a1b749416cdb5daf65f62",
-      "company": "DCONSTRUCT ROBOTICS PTE. LTD.",
-      "title": "Software Engineer",
-      "score": 66,
-      "grade": "C",
-      "roleFit": 45,
-      "url": "https://www.mycareersfuture.gov.sg/job/4449d6bd725a1b749416cdb5daf65f62",
-      "location": "PIXEL, CENTRAL EXCHANGE GREEN, D05 Pasir Panjang, Hong Leong Garden, Clementi New Town, Singapore",
-      "keywordHits": [],
-      "keywordMisses": [
-        "computer vision"
-      ],
-      "decision": "hold / compare",
-      "layer": "B"
-    },
-    {
-      "jobKey": "url:https://remoteok.com/remote-jobs/remote-special-services-associate-airdrie-the-home-depot-canada-1134446",
-      "company": "The Home Depot Canada",
-      "title": "Special Services Associate AIRDRIE",
-      "score": 66,
-      "grade": "C",
-      "roleFit": 45,
-      "url": "https://remoteok.com/remote-jobs/remote-special-services-associate-airdrie-the-home-depot-canada-1134446",
-      "location": "Airdrie,",
-      "keywordHits": [
-        "remote"
-      ],
-      "keywordMisses": [],
-      "decision": "hold / compare",
-      "layer": "B"
-    },
-    {
-      "jobKey": "url:https://remoteok.com/remote-jobs/remote-general-operative-northern-ireland-abp-food-group-1134483",
-      "company": "ABP Food Group",
-      "title": "General Operative Northern Ireland",
-      "score": 66,
-      "grade": "C",
-      "roleFit": 45,
-      "url": "https://remoteok.com/remote-jobs/remote-general-operative-northern-ireland-abp-food-group-1134483",
-      "location": "Northern Ireland,",
-      "keywordHits": [
-        "remote"
-      ],
-      "keywordMisses": [],
-      "decision": "hold / compare",
-      "layer": "B"
-    },
-    {
-      "jobKey": "url:https://remoteok.com/remote-jobs/remote-5-ways-be-a-better-listener-unigo-1134411",
-      "company": "Unigo",
-      "title": "5 Ways Be a Better Listener",
-      "score": 66,
-      "grade": "C",
-      "roleFit": 45,
-      "url": "https://remoteok.com/remote-jobs/remote-5-ways-be-a-better-listener-unigo-1134411",
-      "location": "Upottery,",
-      "keywordHits": [
-        "remote"
-      ],
-      "keywordMisses": [],
-      "decision": "hold / compare",
-      "layer": "B"
-    },
-    {
-      "jobKey": "url:https://remoteok.com/remote-jobs/remote-department-supervisor-the-home-depot-canada-1134409",
-      "company": "The Home Depot Canada",
-      "title": "Department Supervisor",
-      "score": 66,
-      "grade": "C",
-      "roleFit": 45,
-      "url": "https://remoteok.com/remote-jobs/remote-department-supervisor-the-home-depot-canada-1134409",
-      "location": "Victoria,",
-      "keywordHits": [
-        "remote"
-      ],
-      "keywordMisses": [],
-      "decision": "hold / compare",
-      "layer": "B"
-    },
-    {
-      "jobKey": "url:https://remoteok.com/remote-jobs/remote-brentwood-chaguanas-tommys-brewing-company-1134374",
-      "company": "Tommy's Brewing Company",
-      "title": "BRENTWOOD CHAGUANAS",
-      "score": 66,
-      "grade": "C",
-      "roleFit": 45,
-      "url": "https://remoteok.com/remote-jobs/remote-brentwood-chaguanas-tommys-brewing-company-1134374",
-      "location": "Chaguanas,",
-      "keywordHits": [
-        "remote"
-      ],
-      "keywordMisses": [],
-      "decision": "hold / compare",
-      "layer": "B"
-    },
-    {
-      "jobKey": "url:https://www.nvidia.com/en-us/data-center/products/mgx/",
-      "company": "NVIDIA",
-      "title": "NVIDIA MGX Platform",
-      "score": 65,
-      "grade": "C",
-      "roleFit": 45,
-      "url": "https://www.nvidia.com/en-us/data-center/products/mgx/",
-      "location": "",
-      "keywordHits": [
-        "remote"
-      ],
-      "keywordMisses": [],
-      "decision": "hold / compare",
-      "layer": "B"
-    },
-    {
-      "jobKey": "url:https://www.mycareersfuture.gov.sg/job/e263a36de881fba66b346f49d0087e5c",
-      "company": "MANPOWER STAFFING SERVICES (SINGAPORE) PTE LTD",
-      "title": "Software Engineer, C#/C++",
-      "score": 65,
-      "grade": "C",
-      "roleFit": 45,
-      "url": "https://www.mycareersfuture.gov.sg/job/e263a36de881fba66b346f49d0087e5c",
-      "location": "GUOCO TOWER, WALLICH STREET, D02 Anson, Tanjong Pagar, Singapore",
-      "keywordHits": [],
-      "keywordMisses": [],
-      "decision": "hold / compare",
-      "layer": "B"
-    },
-    {
-      "jobKey": "url:https://www.mycareersfuture.gov.sg/job/2644df65e2ad0d5731af7005b7207c1f",
-      "company": "ELLIOTT MOSS CONSULTING PTE. LTD.",
-      "title": "Software Engineer - Java",
-      "score": 65,
-      "grade": "C",
-      "roleFit": 45,
-      "url": "https://www.mycareersfuture.gov.sg/job/2644df65e2ad0d5731af7005b7207c1f",
-      "location": "HIGH STREET PLAZA, HIGH STREET, D06 Beach Road, High Street, Singapore",
-      "keywordHits": [],
-      "keywordMisses": [
-        "java"
-      ],
-      "decision": "hold / compare",
-      "layer": "B"
-    },
-    {
-      "jobKey": "url:https://remoteok.com/remote-jobs/remote-innovation-doshi-group-1134520",
-      "company": "Doshi Group",
-      "title": "Innovation",
-      "score": 65,
-      "grade": "C",
-      "roleFit": 45,
-      "url": "https://remoteok.com/remote-jobs/remote-innovation-doshi-group-1134520",
-      "location": "Nagpur,",
-      "keywordHits": [
-        "remote"
-      ],
-      "keywordMisses": [],
-      "decision": "hold / compare",
-      "layer": "B"
-    }
-  ],
-  "layerC": [
     {
       "jobKey": "url:https://job-boards.greenhouse.io/vercel/jobs/6102343004",
       "company": "Vercel Greenhouse",
       "title": "Product Security Engineer",
       "score": 85,
       "grade": "A",
-      "roleFit": 92,
+      "roleFit": 82,
       "url": "https://job-boards.greenhouse.io/vercel/jobs/6102343004",
       "location": "Remote - United States",
       "keywordHits": [
@@ -2443,7 +2860,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "title": "Director of Engineering, Developer Productivity",
       "score": 85,
       "grade": "A",
-      "roleFit": 92,
+      "roleFit": 82,
       "url": "https://job-boards.greenhouse.io/reddit/jobs/7947591",
       "location": "Remote - United States",
       "keywordHits": [
@@ -2458,34 +2875,12 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "layer": "C"
     },
     {
-      "jobKey": "url:https://job-boards.greenhouse.io/reddit/jobs/7944159",
-      "company": "Reddit Greenhouse",
-      "title": "Principal Technical Program Manager, Developer Productivity",
-      "score": 85,
-      "grade": "A",
-      "roleFit": 92,
-      "url": "https://job-boards.greenhouse.io/reddit/jobs/7944159",
-      "location": "Remote - United States",
-      "keywordHits": [
-        "API",
-        "Product Engineer"
-      ],
-      "topGap": "llm",
-      "mainGaps": [
-        "llm",
-        "machine learning",
-        "growth",
-        "operations"
-      ],
-      "layer": "C"
-    },
-    {
       "jobKey": "url:https://job-boards.greenhouse.io/reddit/jobs/7947049",
       "company": "Reddit Greenhouse",
       "title": "Principal Technical Program Manager, Performance",
       "score": 85,
       "grade": "A",
-      "roleFit": 92,
+      "roleFit": 82,
       "url": "https://job-boards.greenhouse.io/reddit/jobs/7947049",
       "location": "Remote - United States",
       "keywordHits": [
@@ -2507,7 +2902,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "title": "Senior Frontend Engineer, Community Builders",
       "score": 85,
       "grade": "A",
-      "roleFit": 92,
+      "roleFit": 82,
       "url": "https://job-boards.greenhouse.io/reddit/jobs/7955200",
       "location": "Remote - United States",
       "keywordHits": [
@@ -2531,7 +2926,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "title": "Senior Software Engineer - Full Stack Internal Tooling (Build and Deployment Platform)",
       "score": 85,
       "grade": "A",
-      "roleFit": 92,
+      "roleFit": 82,
       "url": "https://job-boards.greenhouse.io/reddit/jobs/7976852",
       "location": "Remote - United States",
       "keywordHits": [
@@ -2555,7 +2950,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "title": "Senior Staff Machine Learning Systems Engineer, Indexing & Retrieval Search",
       "score": 85,
       "grade": "A",
-      "roleFit": 92,
+      "roleFit": 82,
       "url": "https://job-boards.greenhouse.io/reddit/jobs/7844238",
       "location": "Remote - United States",
       "keywordHits": [
@@ -2577,7 +2972,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "title": "Staff Software Engineer, Onboarding",
       "score": 85,
       "grade": "A",
-      "roleFit": 92,
+      "roleFit": 82,
       "url": "https://job-boards.greenhouse.io/reddit/jobs/7961154",
       "location": "Remote - United States",
       "keywordHits": [
@@ -2597,7 +2992,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "title": "Product Designer",
       "score": 85,
       "grade": "A",
-      "roleFit": 92,
+      "roleFit": 82,
       "url": "https://jobs.ashbyhq.com/elevenlabs/89da00ec-11b0-4359-913b-c3a89c1013bc",
       "location": "London / New York",
       "keywordHits": [
@@ -2620,7 +3015,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "title": "Software Engineer, Frontend",
       "score": 85,
       "grade": "A",
-      "roleFit": 92,
+      "roleFit": 82,
       "url": "https://jobs.ashbyhq.com/ramp/4e64ab86-4e30-403b-b1b9-41dc052570ce",
       "location": "New York, NY (HQ) / Remote (Canada) / San Francisco, CA / Remote (US) / Miami, FL",
       "keywordHits": [
@@ -2639,7 +3034,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "title": "Developer who connects with other developers",
       "score": 85,
       "grade": "A",
-      "roleFit": 92,
+      "roleFit": 82,
       "url": "https://jobs.ashbyhq.com/posthog/c539d9f2-ea48-47f1-a45b-414b49fe5c15",
       "location": "Remote",
       "keywordHits": [
@@ -2663,7 +3058,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "title": "Technical Account Executive",
       "score": 85,
       "grade": "A",
-      "roleFit": 92,
+      "roleFit": 82,
       "url": "https://jobs.ashbyhq.com/posthog/f8af3807-3595-4580-a65c-dad2e268ace5",
       "location": "Remote",
       "keywordHits": [
@@ -2682,12 +3077,57 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "layer": "C"
     },
     {
+      "jobKey": "url:https://justjoin.it/job-offer/point-wild-principal-mlops-platform-engineer-warszawa-ai",
+      "company": "Point Wild",
+      "title": "Principal MLOps / Platform Engineer",
+      "score": 85,
+      "grade": "A",
+      "roleFit": 82,
+      "url": "https://justjoin.it/job-offer/point-wild-principal-mlops-platform-engineer-warszawa-ai",
+      "location": "Warszawa, PL",
+      "keywordHits": [
+        "Frontend Engineer",
+        "API",
+        "remote",
+        "Frontend Engineer"
+      ],
+      "topGap": "go",
+      "mainGaps": [
+        "go",
+        "sql",
+        "gcp",
+        "kubernetes"
+      ],
+      "layer": "C"
+    },
+    {
+      "jobKey": "url:https://www.themuse.com/jobs/uber/staff-frontend-engineer-core-services-eng",
+      "company": "Uber",
+      "title": "Staff Frontend Engineer, Core Services Eng",
+      "score": 84,
+      "grade": "B",
+      "roleFit": 82,
+      "url": "https://www.themuse.com/jobs/uber/staff-frontend-engineer-core-services-eng",
+      "location": "Sunnyvale, CA",
+      "keywordHits": [
+        "Frontend Engineer",
+        "React",
+        "Analytics",
+        "API"
+      ],
+      "topGap": "growth",
+      "mainGaps": [
+        "growth"
+      ],
+      "layer": "C"
+    },
+    {
       "jobKey": "url:https://www.themuse.com/jobs/pilotly/product-engineer-ii-8b1aeb",
       "company": "Pilotly",
       "title": "Product Engineer II",
       "score": 84,
       "grade": "B",
-      "roleFit": 92,
+      "roleFit": 82,
       "url": "https://www.themuse.com/jobs/pilotly/product-engineer-ii-8b1aeb",
       "location": "Flexible / Remote / Los Angeles, CA / Oakland, CA",
       "keywordHits": [
@@ -2709,7 +3149,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "title": "Staff Software Engineer (Full-Stack)",
       "score": 84,
       "grade": "B",
-      "roleFit": 92,
+      "roleFit": 82,
       "url": "https://www.themuse.com/jobs/equinixinc/staff-software-engineer-fullstack-c1d01c",
       "location": "Bangalore, India / Flexible / Remote",
       "keywordHits": [
@@ -2733,7 +3173,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "title": "Senior Software Engineer, Frontend (Consumer - Trading)",
       "score": 84,
       "grade": "B",
-      "roleFit": 92,
+      "roleFit": 82,
       "url": "https://www.themuse.com/jobs/coinbase/senior-software-engineer-frontend-consumer-trading",
       "location": "Atlanta, GA / Austin, TX / Berkeley, CA / Boston, MA / Buffalo, NY / Charlotte, NC / Chicago, IL / Columbus, OH / Concord, CA / Corte Madera, CA / Dallas, TX /",
       "keywordHits": [
@@ -2755,7 +3195,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "title": "Product Engineer Senior Java Springboot",
       "score": 84,
       "grade": "B",
-      "roleFit": 92,
+      "roleFit": 82,
       "url": "https://www.themuse.com/jobs/allstate/product-engineer-senior-java-springboot",
       "location": "Flexible / Remote",
       "keywordHits": [
@@ -2772,36 +3212,12 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "layer": "C"
     },
     {
-      "jobKey": "url:https://japan-dev.com/jobs/micoworks/mico-senior-fullstack-engineer-tokyo-0speiq",
-      "company": "Mico",
-      "title": "Senior Fullstack Engineer (Tokyo)",
-      "score": 84,
-      "grade": "B",
-      "roleFit": 68,
-      "url": "https://japan-dev.com/jobs/micoworks/mico-senior-fullstack-engineer-tokyo-0speiq",
-      "location": "Tokyo, Tokyo, JP",
-      "keywordHits": [
-        "TypeScript",
-        "React",
-        "Next.js",
-        "API"
-      ],
-      "topGap": "vue",
-      "mainGaps": [
-        "vue",
-        "python",
-        "mysql",
-        "llm"
-      ],
-      "layer": "C"
-    },
-    {
       "jobKey": "url:https://job-boards.greenhouse.io/gitlab/jobs/8482744002",
       "company": "GitLab Greenhouse",
       "title": "Engineering Manager, Continuous Delivery",
       "score": 84,
       "grade": "B",
-      "roleFit": 92,
+      "roleFit": 82,
       "url": "https://job-boards.greenhouse.io/gitlab/jobs/8482744002",
       "location": "Remote, India",
       "keywordHits": [
@@ -2823,7 +3239,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "title": "Manager, Delivery Solutions Architects - Digital Native Business",
       "score": 84,
       "grade": "B",
-      "roleFit": 92,
+      "roleFit": 82,
       "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8567320002",
       "location": "Remote - California; Remote - Colorado; Remote - Oregon; Remote - Washington",
       "keywordHits": [
@@ -2846,7 +3262,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "title": "Software Engineer, Full Stack",
       "score": 84,
       "grade": "B",
-      "roleFit": 92,
+      "roleFit": 82,
       "url": "https://boards.greenhouse.io/figma/jobs/5691911004?gh_jid=5691911004",
       "location": "San Francisco, CA • New York, NY • United States",
       "keywordHits": [
@@ -2870,7 +3286,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "title": "IT Systems Engineer, Client Platform Engineer",
       "score": 84,
       "grade": "B",
-      "roleFit": 92,
+      "roleFit": 82,
       "url": "https://job-boards.greenhouse.io/anthropic/jobs/5255853008",
       "location": "Boston, MA; New York City, NY; Remote-Friendly (Travel-Required) |  Washington, DC",
       "keywordHits": [
@@ -2893,7 +3309,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "title": "Software Engineer - Python and K8s",
       "score": 84,
       "grade": "B",
-      "roleFit": 92,
+      "roleFit": 82,
       "url": "https://job-boards.greenhouse.io/canonical/jobs/3752633",
       "location": "Home based - Worldwide",
       "keywordHits": [
@@ -2916,7 +3332,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "title": "Senior Engineering Manager, AI Product (Thunderbolt)",
       "score": 84,
       "grade": "B",
-      "roleFit": 92,
+      "roleFit": 82,
       "url": "https://job-boards.greenhouse.io/mozilla/jobs/8031796",
       "location": "Remote US",
       "keywordHits": [
@@ -2940,7 +3356,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "title": "Senior Engineering Manager, AI Product (Thunderbolt)",
       "score": 84,
       "grade": "B",
-      "roleFit": 92,
+      "roleFit": 82,
       "url": "https://job-boards.greenhouse.io/mozilla/jobs/8031761",
       "location": "Remote Canada",
       "keywordHits": [
@@ -2964,7 +3380,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "title": "Senior Software Engineer, GraphQL",
       "score": 84,
       "grade": "B",
-      "roleFit": 92,
+      "roleFit": 82,
       "url": "https://job-boards.greenhouse.io/reddit/jobs/7309137",
       "location": "Remote - United States",
       "keywordHits": [
@@ -2987,7 +3403,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "title": "Staff Software Engineer, API",
       "score": 84,
       "grade": "B",
-      "roleFit": 92,
+      "roleFit": 82,
       "url": "https://www.asana.com/jobs/apply/7776446?gh_jid=7776446",
       "location": "Vancouver, BC",
       "keywordHits": [
@@ -3010,7 +3426,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "title": "Deployment Strategist - North America",
       "score": 84,
       "grade": "B",
-      "roleFit": 92,
+      "roleFit": 82,
       "url": "https://jobs.ashbyhq.com/elevenlabs/8c068ebf-c79f-4f12-97ef-b4c9a4f7ae5f",
       "location": "United States / New York / Los Angeles / Boston / San Francisco / Washington, D.C. / Canada",
       "keywordHits": [
@@ -3033,55 +3449,9 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "title": "Deployment Strategist - Europe",
       "score": 84,
       "grade": "B",
-      "roleFit": 92,
+      "roleFit": 82,
       "url": "https://jobs.ashbyhq.com/elevenlabs/5d1390e2-a6e8-4f8b-b01f-ad7e286009d2",
       "location": "United Kingdom / Ireland / Germany / Denmark / Portugal / Sweden / Italy / Poland",
-      "keywordHits": [
-        "API",
-        "remote",
-        "Product Engineer"
-      ],
-      "topGap": "python",
-      "mainGaps": [
-        "python",
-        "go",
-        "llm",
-        "agents"
-      ],
-      "layer": "C"
-    },
-    {
-      "jobKey": "url:https://jobs.ashbyhq.com/elevenlabs/6848ece5-1ce5-4ab4-9dd6-0704cd0f8ecd",
-      "company": "ElevenLabs Ashby",
-      "title": "Deployment Strategist - Spain",
-      "score": 84,
-      "grade": "B",
-      "roleFit": 92,
-      "url": "https://jobs.ashbyhq.com/elevenlabs/6848ece5-1ce5-4ab4-9dd6-0704cd0f8ecd",
-      "location": "Spain",
-      "keywordHits": [
-        "API",
-        "remote",
-        "Product Engineer"
-      ],
-      "topGap": "python",
-      "mainGaps": [
-        "python",
-        "go",
-        "llm",
-        "agents"
-      ],
-      "layer": "C"
-    },
-    {
-      "jobKey": "url:https://jobs.ashbyhq.com/elevenlabs/f0cccf77-a255-4620-9639-2f1cc5f9c0ab",
-      "company": "ElevenLabs Ashby",
-      "title": "Deployment Strategist - Poland",
-      "score": 84,
-      "grade": "B",
-      "roleFit": 92,
-      "url": "https://jobs.ashbyhq.com/elevenlabs/f0cccf77-a255-4620-9639-2f1cc5f9c0ab",
-      "location": "Poland",
       "keywordHits": [
         "API",
         "remote",
@@ -3106,7 +3476,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "grade": "A",
       "confidence": "medium",
       "decision": "pursue aggressively",
-      "thesis": "Staff Backend Engineer (Go), Continuous Delivery at GitLab Greenhouse is pursue aggressively because the snapshot score is 87, with 3 profile/role keyword hits and 1 external evidence item(s).",
+      "thesis": "Staff Backend Engineer (Go), Continuous Delivery at GitLab Greenhouse is pursue aggressively because the snapshot score is 87, with 3 profile/role keyword hits and 2 external evidence item(s).",
       "evidence": {
         "keywordHits": [
           "Frontend Engineer",
@@ -3121,10 +3491,11 @@ window.CV_CAREER_OPS_DEEP_FIT = {
         ],
         "researchSignals": [
           "AI / data / platform signal",
+          "growth or funding signal",
           "risk signal to inspect manually",
           "remote or hybrid signal"
         ],
-        "evidenceCount": 1,
+        "evidenceCount": 2,
         "compensationLeverage": "high"
       },
       "concerns": [
@@ -3146,7 +3517,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "compensationStrategy": {
         "leverage": "high",
         "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Staff Backend Engineer (Go), Continuous Delivery package, including base, bonus, equity, and review cycle?",
-        "valueAnchor": "Based on the scope of Staff Backend Engineer (Go), Continuous Delivery and my fit around remote, engineer, product, data, I would like to calibrate toward the stronger end of the range if the team sees the level match."
+        "valueAnchor": "Based on the scope of Staff Backend Engineer (Go), Continuous Delivery and my fit around frontend, engineer, building, product, I would like to calibrate toward the stronger end of the range if the team sees the level match."
       },
       "storyHooks": [
         {
@@ -3219,7 +3590,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "compensationStrategy": {
         "leverage": "high",
         "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Security Software Engineer package, including base, bonus, equity, and review cycle?",
-        "valueAnchor": "Based on the scope of Security Software Engineer and my fit around JavaScript, TypeScript, remote, engineer, I would like to calibrate toward the stronger end of the range if the team sees the level match."
+        "valueAnchor": "Based on the scope of Security Software Engineer and my fit around JavaScript, TypeScript, engineer, product, I would like to calibrate toward the stronger end of the range if the team sees the level match."
       },
       "storyHooks": [
         {
@@ -3249,9 +3620,9 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "title": "Senior / Staff Product Engineer",
       "score": 87,
       "grade": "A",
-      "confidence": "high",
+      "confidence": "medium",
       "decision": "pursue aggressively",
-      "thesis": "Senior / Staff Product Engineer at Linear Ashby is pursue aggressively because the snapshot score is 87, with 7 profile/role keyword hits and 5 external evidence item(s).",
+      "thesis": "Senior / Staff Product Engineer at Linear Ashby is pursue aggressively because the snapshot score is 87, with 7 profile/role keyword hits and 1 external evidence item(s).",
       "evidence": {
         "keywordHits": [
           "TypeScript",
@@ -3268,10 +3639,10 @@ window.CV_CAREER_OPS_DEEP_FIT = {
         ],
         "researchSignals": [
           "AI / data / platform signal",
-          "risk signal to inspect manually",
+          "growth or funding signal",
           "remote or hybrid signal"
         ],
-        "evidenceCount": 5,
+        "evidenceCount": 1,
         "compensationLeverage": "high"
       },
       "concerns": [],
@@ -3291,7 +3662,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "compensationStrategy": {
         "leverage": "high",
         "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Senior / Staff Product Engineer package, including base, bonus, equity, and review cycle?",
-        "valueAnchor": "Based on the scope of Senior / Staff Product Engineer and my fit around TypeScript, React, API, remote, I would like to calibrate toward the stronger end of the range if the team sees the level match."
+        "valueAnchor": "Based on the scope of Senior / Staff Product Engineer and my fit around TypeScript, React, API, frontend, I would like to calibrate toward the stronger end of the range if the team sees the level match."
       },
       "storyHooks": [
         {
@@ -3321,9 +3692,9 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "title": "Senior / Staff Product Engineer",
       "score": 87,
       "grade": "A",
-      "confidence": "high",
+      "confidence": "medium",
       "decision": "pursue aggressively",
-      "thesis": "Senior / Staff Product Engineer at Linear Ashby is pursue aggressively because the snapshot score is 87, with 7 profile/role keyword hits and 5 external evidence item(s).",
+      "thesis": "Senior / Staff Product Engineer at Linear Ashby is pursue aggressively because the snapshot score is 87, with 7 profile/role keyword hits and 1 external evidence item(s).",
       "evidence": {
         "keywordHits": [
           "TypeScript",
@@ -3340,10 +3711,10 @@ window.CV_CAREER_OPS_DEEP_FIT = {
         ],
         "researchSignals": [
           "AI / data / platform signal",
-          "risk signal to inspect manually",
+          "growth or funding signal",
           "remote or hybrid signal"
         ],
-        "evidenceCount": 5,
+        "evidenceCount": 1,
         "compensationLeverage": "high"
       },
       "concerns": [],
@@ -3363,7 +3734,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "compensationStrategy": {
         "leverage": "high",
         "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Senior / Staff Product Engineer package, including base, bonus, equity, and review cycle?",
-        "valueAnchor": "Based on the scope of Senior / Staff Product Engineer and my fit around TypeScript, React, API, remote, I would like to calibrate toward the stronger end of the range if the team sees the level match."
+        "valueAnchor": "Based on the scope of Senior / Staff Product Engineer and my fit around TypeScript, React, API, frontend, I would like to calibrate toward the stronger end of the range if the team sees the level match."
       },
       "storyHooks": [
         {
@@ -3393,9 +3764,9 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "title": "Product Engineer",
       "score": 87,
       "grade": "A",
-      "confidence": "high",
+      "confidence": "medium",
       "decision": "pursue aggressively",
-      "thesis": "Product Engineer at Linear Ashby is pursue aggressively because the snapshot score is 87, with 7 profile/role keyword hits and 5 external evidence item(s).",
+      "thesis": "Product Engineer at Linear Ashby is pursue aggressively because the snapshot score is 87, with 7 profile/role keyword hits and 1 external evidence item(s).",
       "evidence": {
         "keywordHits": [
           "TypeScript",
@@ -3411,10 +3782,10 @@ window.CV_CAREER_OPS_DEEP_FIT = {
         ],
         "researchSignals": [
           "AI / data / platform signal",
-          "risk signal to inspect manually",
+          "growth or funding signal",
           "remote or hybrid signal"
         ],
-        "evidenceCount": 5,
+        "evidenceCount": 1,
         "compensationLeverage": "high"
       },
       "concerns": [],
@@ -3434,7 +3805,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "compensationStrategy": {
         "leverage": "high",
         "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Senior / Staff Product Engineer package, including base, bonus, equity, and review cycle?",
-        "valueAnchor": "Based on the scope of Senior / Staff Product Engineer and my fit around TypeScript, React, API, remote, I would like to calibrate toward the stronger end of the range if the team sees the level match."
+        "valueAnchor": "Based on the scope of Senior / Staff Product Engineer and my fit around TypeScript, React, API, frontend, I would like to calibrate toward the stronger end of the range if the team sees the level match."
       },
       "storyHooks": [
         {
@@ -3487,6 +3858,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
         ],
         "researchSignals": [
           "AI / data / platform signal",
+          "growth or funding signal",
           "risk signal to inspect manually",
           "remote or hybrid signal"
         ],
@@ -3512,7 +3884,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "compensationStrategy": {
         "leverage": "high",
         "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Safety Engineer package, including base, bonus, equity, and review cycle?",
-        "valueAnchor": "Based on the scope of Safety Engineer and my fit around React, remote, engineer, product, I would like to calibrate toward the stronger end of the range if the team sees the level match. My research indicates the JP midpoint for this level is around JPY 8,000,000 (annual)."
+        "valueAnchor": "Based on the scope of Safety Engineer and my fit around React, frontend, engineer, years, I would like to calibrate toward the stronger end of the range if the team sees the level match. My research indicates the JP midpoint for this level is around JPY 8,000,000 (annual)."
       },
       "storyHooks": [
         {
@@ -3544,7 +3916,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "grade": "A",
       "confidence": "medium",
       "decision": "pursue aggressively",
-      "thesis": "Staff Product Engineer (São Paulo) at LawnStarter is pursue aggressively because the snapshot score is 86, with 8 profile/role keyword hits and 1 external evidence item(s).",
+      "thesis": "Staff Product Engineer (São Paulo) at LawnStarter is pursue aggressively because the snapshot score is 86, with 8 profile/role keyword hits and 2 external evidence item(s).",
       "evidence": {
         "keywordHits": [
           "TypeScript",
@@ -3563,10 +3935,11 @@ window.CV_CAREER_OPS_DEEP_FIT = {
         ],
         "researchSignals": [
           "AI / data / platform signal",
+          "growth or funding signal",
           "risk signal to inspect manually",
           "remote or hybrid signal"
         ],
-        "evidenceCount": 1,
+        "evidenceCount": 2,
         "compensationLeverage": "high"
       },
       "concerns": [],
@@ -3586,7 +3959,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "compensationStrategy": {
         "leverage": "high",
         "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Staff Product Engineer (São Paulo) package, including base, bonus, equity, and review cycle?",
-        "valueAnchor": "Based on the scope of Staff Product Engineer (São Paulo) and my fit around TypeScript, React, remote, dashboard, I would like to calibrate toward the stronger end of the range if the team sees the level match."
+        "valueAnchor": "Based on the scope of Staff Product Engineer (São Paulo) and my fit around TypeScript, React, frontend, engineer, I would like to calibrate toward the stronger end of the range if the team sees the level match."
       },
       "storyHooks": [
         {
@@ -3616,9 +3989,9 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "title": "Senior Systems Engineer",
       "score": 86,
       "grade": "A",
-      "confidence": "high",
+      "confidence": "medium",
       "decision": "pursue aggressively",
-      "thesis": "Senior Systems Engineer at Yext is pursue aggressively because the snapshot score is 86, with 4 profile/role keyword hits and 5 external evidence item(s).",
+      "thesis": "Senior Systems Engineer at Yext is pursue aggressively because the snapshot score is 86, with 4 profile/role keyword hits and 1 external evidence item(s).",
       "evidence": {
         "keywordHits": [
           "API",
@@ -3639,10 +4012,10 @@ window.CV_CAREER_OPS_DEEP_FIT = {
         ],
         "researchSignals": [
           "AI / data / platform signal",
-          "risk signal to inspect manually",
+          "growth or funding signal",
           "remote or hybrid signal"
         ],
-        "evidenceCount": 5,
+        "evidenceCount": 1,
         "compensationLeverage": "high"
       },
       "concerns": [
@@ -3664,7 +4037,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "compensationStrategy": {
         "leverage": "high",
         "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Senior Systems Engineer package, including base, bonus, equity, and review cycle?",
-        "valueAnchor": "Based on the scope of Senior Systems Engineer and my fit around API, Performance Optimization, remote, engineer, I would like to calibrate toward the stronger end of the range if the team sees the level match."
+        "valueAnchor": "Based on the scope of Senior Systems Engineer and my fit around API, Performance Optimization, engineer, building, I would like to calibrate toward the stronger end of the range if the team sees the level match."
       },
       "storyHooks": [
         {
@@ -3735,7 +4108,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "compensationStrategy": {
         "leverage": "high",
         "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Lead AI Cloud Platform Engineer package, including base, bonus, equity, and review cycle?",
-        "valueAnchor": "Based on the scope of Lead AI Cloud Platform Engineer and my fit around Analytics, API, remote, engineer, I would like to calibrate toward the stronger end of the range if the team sees the level match."
+        "valueAnchor": "Based on the scope of Lead AI Cloud Platform Engineer and my fit around Analytics, API, engineer, years, I would like to calibrate toward the stronger end of the range if the team sees the level match."
       },
       "storyHooks": [
         {
@@ -3803,7 +4176,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "compensationStrategy": {
         "leverage": "high",
         "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Sr. Product Engineer - Web Services package, including base, bonus, equity, and review cycle?",
-        "valueAnchor": "Based on the scope of Sr. Product Engineer - Web Services and my fit around JavaScript, TypeScript, API, remote, I would like to calibrate toward the stronger end of the range if the team sees the level match."
+        "valueAnchor": "Based on the scope of Sr. Product Engineer - Web Services and my fit around JavaScript, TypeScript, API, engineer, I would like to calibrate toward the stronger end of the range if the team sees the level match."
       },
       "storyHooks": [
         {
@@ -3835,7 +4208,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "grade": "A",
       "confidence": "medium",
       "decision": "pursue aggressively",
-      "thesis": "Senior Backend Engineer(Go), Continuous Delivery at GitLab Greenhouse is pursue aggressively because the snapshot score is 86, with 3 profile/role keyword hits and 1 external evidence item(s).",
+      "thesis": "Senior Backend Engineer(Go), Continuous Delivery at GitLab Greenhouse is pursue aggressively because the snapshot score is 86, with 3 profile/role keyword hits and 2 external evidence item(s).",
       "evidence": {
         "keywordHits": [
           "Frontend Engineer",
@@ -3850,10 +4223,11 @@ window.CV_CAREER_OPS_DEEP_FIT = {
         ],
         "researchSignals": [
           "AI / data / platform signal",
+          "growth or funding signal",
           "risk signal to inspect manually",
           "remote or hybrid signal"
         ],
-        "evidenceCount": 1,
+        "evidenceCount": 2,
         "compensationLeverage": "high"
       },
       "concerns": [
@@ -3875,7 +4249,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "compensationStrategy": {
         "leverage": "high",
         "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Staff Backend Engineer (Go), Continuous Delivery package, including base, bonus, equity, and review cycle?",
-        "valueAnchor": "Based on the scope of Staff Backend Engineer (Go), Continuous Delivery and my fit around remote, engineer, product, data, I would like to calibrate toward the stronger end of the range if the team sees the level match."
+        "valueAnchor": "Based on the scope of Staff Backend Engineer (Go), Continuous Delivery and my fit around frontend, engineer, building, product, I would like to calibrate toward the stronger end of the range if the team sees the level match."
       },
       "storyHooks": [
         {
@@ -3907,7 +4281,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "grade": "A",
       "confidence": "medium",
       "decision": "pursue aggressively",
-      "thesis": "VP of Product Security at GitLab Greenhouse is pursue aggressively because the snapshot score is 86, with 3 profile/role keyword hits and 1 external evidence item(s).",
+      "thesis": "VP of Product Security at GitLab Greenhouse is pursue aggressively because the snapshot score is 86, with 3 profile/role keyword hits and 2 external evidence item(s).",
       "evidence": {
         "keywordHits": [
           "API",
@@ -3921,10 +4295,11 @@ window.CV_CAREER_OPS_DEEP_FIT = {
         ],
         "researchSignals": [
           "AI / data / platform signal",
+          "growth or funding signal",
           "risk signal to inspect manually",
           "remote or hybrid signal"
         ],
-        "evidenceCount": 1,
+        "evidenceCount": 2,
         "compensationLeverage": "high"
       },
       "concerns": [],
@@ -3944,7 +4319,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "compensationStrategy": {
         "leverage": "high",
         "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Staff Backend Engineer (Go), Continuous Delivery package, including base, bonus, equity, and review cycle?",
-        "valueAnchor": "Based on the scope of Staff Backend Engineer (Go), Continuous Delivery and my fit around remote, engineer, product, data, I would like to calibrate toward the stronger end of the range if the team sees the level match."
+        "valueAnchor": "Based on the scope of Staff Backend Engineer (Go), Continuous Delivery and my fit around frontend, engineer, building, product, I would like to calibrate toward the stronger end of the range if the team sees the level match."
       },
       "storyHooks": [
         {
@@ -4021,7 +4396,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "compensationStrategy": {
         "leverage": "high",
         "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Security Software Engineer package, including base, bonus, equity, and review cycle?",
-        "valueAnchor": "Based on the scope of Security Software Engineer and my fit around JavaScript, TypeScript, remote, engineer, I would like to calibrate toward the stronger end of the range if the team sees the level match."
+        "valueAnchor": "Based on the scope of Security Software Engineer and my fit around JavaScript, TypeScript, engineer, product, I would like to calibrate toward the stronger end of the range if the team sees the level match."
       },
       "storyHooks": [
         {
@@ -4126,9 +4501,9 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "title": "Senior / Staff Product Engineer, AI",
       "score": 86,
       "grade": "A",
-      "confidence": "high",
+      "confidence": "medium",
       "decision": "pursue aggressively",
-      "thesis": "Senior / Staff Product Engineer, AI at Linear Ashby is pursue aggressively because the snapshot score is 86, with 7 profile/role keyword hits and 5 external evidence item(s).",
+      "thesis": "Senior / Staff Product Engineer, AI at Linear Ashby is pursue aggressively because the snapshot score is 86, with 7 profile/role keyword hits and 1 external evidence item(s).",
       "evidence": {
         "keywordHits": [
           "TypeScript",
@@ -4145,10 +4520,10 @@ window.CV_CAREER_OPS_DEEP_FIT = {
         ],
         "researchSignals": [
           "AI / data / platform signal",
-          "risk signal to inspect manually",
+          "growth or funding signal",
           "remote or hybrid signal"
         ],
-        "evidenceCount": 5,
+        "evidenceCount": 1,
         "compensationLeverage": "high"
       },
       "concerns": [],
@@ -4168,7 +4543,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "compensationStrategy": {
         "leverage": "high",
         "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Senior / Staff Product Engineer package, including base, bonus, equity, and review cycle?",
-        "valueAnchor": "Based on the scope of Senior / Staff Product Engineer and my fit around TypeScript, React, API, remote, I would like to calibrate toward the stronger end of the range if the team sees the level match."
+        "valueAnchor": "Based on the scope of Senior / Staff Product Engineer and my fit around TypeScript, React, API, frontend, I would like to calibrate toward the stronger end of the range if the team sees the level match."
       },
       "storyHooks": [
         {
@@ -4238,7 +4613,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "compensationStrategy": {
         "leverage": "high",
         "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Support Engineer (AMER) package, including base, bonus, equity, and review cycle?",
-        "valueAnchor": "Based on the scope of Support Engineer (AMER) and my fit around JavaScript, React, remote, engineer, I would like to calibrate toward the stronger end of the range if the team sees the level match."
+        "valueAnchor": "Based on the scope of Support Engineer (AMER) and my fit around JavaScript, React, engineer, years, I would like to calibrate toward the stronger end of the range if the team sees the level match."
       },
       "storyHooks": [
         {
@@ -4308,7 +4683,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "compensationStrategy": {
         "leverage": "high",
         "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Support Engineer (AMER) package, including base, bonus, equity, and review cycle?",
-        "valueAnchor": "Based on the scope of Support Engineer (AMER) and my fit around JavaScript, React, remote, engineer, I would like to calibrate toward the stronger end of the range if the team sees the level match."
+        "valueAnchor": "Based on the scope of Support Engineer (AMER) and my fit around JavaScript, React, engineer, years, I would like to calibrate toward the stronger end of the range if the team sees the level match."
       },
       "storyHooks": [
         {
@@ -4374,7 +4749,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "compensationStrategy": {
         "leverage": "high",
         "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Support Engineer (AMER) package, including base, bonus, equity, and review cycle?",
-        "valueAnchor": "Based on the scope of Support Engineer (AMER) and my fit around JavaScript, React, remote, engineer, I would like to calibrate toward the stronger end of the range if the team sees the level match."
+        "valueAnchor": "Based on the scope of Support Engineer (AMER) and my fit around JavaScript, React, engineer, years, I would like to calibrate toward the stronger end of the range if the team sees the level match."
       },
       "storyHooks": [
         {
@@ -4474,6 +4849,136 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "llm": null
     },
     {
+      "jobKey": "url:https://www.mycareersfuture.gov.sg/job/eebd44b1382d7840b8c092b1fc312524",
+      "company": "TIKTOK PTE. LTD.",
+      "title": "Frontend Software Engineer (Payment), TikTok Live - Singapore",
+      "score": 85,
+      "grade": "A",
+      "confidence": "medium",
+      "decision": "pursue aggressively",
+      "thesis": "Frontend Software Engineer (Payment), TikTok Live - Singapore at TIKTOK PTE. LTD. is pursue aggressively because the snapshot score is 85, with 6 profile/role keyword hits and 0 external evidence item(s).",
+      "evidence": {
+        "keywordHits": [
+          "Frontend Engineer",
+          "JavaScript",
+          "CSS",
+          "API",
+          "remote",
+          "Frontend Engineer"
+        ],
+        "keywordMisses": [
+          "growth"
+        ],
+        "researchSignals": [],
+        "evidenceCount": 0,
+        "compensationLeverage": "high"
+      },
+      "concerns": [
+        "External company evidence is thin; run deep research with a search API."
+      ],
+      "interviewStrategy": [
+        "Ask why the role is open and what success means in the first 90 days.",
+        "Probe team ownership, roadmap pressure, and cross-functional interfaces."
+      ],
+      "cvStrategy": [
+        "Lead with proof around: Frontend Engineer, JavaScript, CSS, API, remote, Frontend Engineer.",
+        "Use story story-1: frontend product execution.",
+        "Use story story-2: data-heavy product decisions.",
+        "Use story story-3: systems and API collaboration."
+      ],
+      "compensationStrategy": {
+        "leverage": "high",
+        "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Frontend Software Engineer (Payment), TikTok Live - Singapore package, including base, bonus, equity, and review cycle?",
+        "valueAnchor": "Based on the scope of Frontend Software Engineer (Payment), TikTok Live - Singapore and my fit around JavaScript, CSS, frontend, engineer, I would like to calibrate toward the stronger end of the range if the team sees the level match. My research indicates the JP midpoint for this level is around JPY 8,000,000 (annual)."
+      },
+      "storyHooks": [
+        {
+          "id": "story-1",
+          "theme": "frontend product execution",
+          "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
+          "relevance": 2
+        },
+        {
+          "id": "story-2",
+          "theme": "data-heavy product decisions",
+          "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
+          "relevance": 2
+        },
+        {
+          "id": "story-3",
+          "theme": "systems and API collaboration",
+          "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
+          "relevance": 2
+        }
+      ],
+      "llm": null
+    },
+    {
+      "jobKey": "url:https://www.mycareersfuture.gov.sg/job/0da14018a05634ffde57785dcd4e7783",
+      "company": "TIKTOK PTE. LTD.",
+      "title": "Frontend Software Engineer (transaction), TikTok Live - Singapore",
+      "score": 85,
+      "grade": "A",
+      "confidence": "medium",
+      "decision": "pursue aggressively",
+      "thesis": "Frontend Software Engineer (transaction), TikTok Live - Singapore at TIKTOK PTE. LTD. is pursue aggressively because the snapshot score is 85, with 6 profile/role keyword hits and 0 external evidence item(s).",
+      "evidence": {
+        "keywordHits": [
+          "Frontend Engineer",
+          "JavaScript",
+          "CSS",
+          "API",
+          "remote",
+          "Frontend Engineer"
+        ],
+        "keywordMisses": [
+          "growth"
+        ],
+        "researchSignals": [],
+        "evidenceCount": 0,
+        "compensationLeverage": "high"
+      },
+      "concerns": [
+        "External company evidence is thin; run deep research with a search API."
+      ],
+      "interviewStrategy": [
+        "Ask why the role is open and what success means in the first 90 days.",
+        "Probe team ownership, roadmap pressure, and cross-functional interfaces."
+      ],
+      "cvStrategy": [
+        "Lead with proof around: Frontend Engineer, JavaScript, CSS, API, remote, Frontend Engineer.",
+        "Use story story-1: frontend product execution.",
+        "Use story story-2: data-heavy product decisions.",
+        "Use story story-3: systems and API collaboration."
+      ],
+      "compensationStrategy": {
+        "leverage": "high",
+        "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Frontend Software Engineer (Payment), TikTok Live - Singapore package, including base, bonus, equity, and review cycle?",
+        "valueAnchor": "Based on the scope of Frontend Software Engineer (Payment), TikTok Live - Singapore and my fit around JavaScript, CSS, frontend, engineer, I would like to calibrate toward the stronger end of the range if the team sees the level match. My research indicates the JP midpoint for this level is around JPY 8,000,000 (annual)."
+      },
+      "storyHooks": [
+        {
+          "id": "story-1",
+          "theme": "frontend product execution",
+          "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
+          "relevance": 2
+        },
+        {
+          "id": "story-2",
+          "theme": "data-heavy product decisions",
+          "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
+          "relevance": 2
+        },
+        {
+          "id": "story-3",
+          "theme": "systems and API collaboration",
+          "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
+          "relevance": 2
+        }
+      ],
+      "llm": null
+    },
+    {
       "jobKey": "url:https://remotive.com/remote-jobs/software-development/frontend-developer-2090991",
       "company": "Quinncia Inc",
       "title": "Frontend Developer",
@@ -4505,7 +5010,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
         ],
         "researchSignals": [],
         "evidenceCount": 0,
-        "compensationLeverage": "high"
+        "compensationLeverage": ""
       },
       "concerns": [
         "External company evidence is thin; run deep research with a search API."
@@ -4520,11 +5025,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
         "Use story story-2: data-heavy product decisions.",
         "Use story story-3: systems and API collaboration."
       ],
-      "compensationStrategy": {
-        "leverage": "high",
-        "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Frontend Developer package, including base, bonus, equity, and review cycle?",
-        "valueAnchor": "Based on the scope of Frontend Developer and my fit around JavaScript, TypeScript, React, Next.js, I would like to calibrate toward the stronger end of the range if the team sees the level match."
-      },
+      "compensationStrategy": null,
       "storyHooks": [
         {
           "id": "story-1",
@@ -4621,7 +5122,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "grade": "A",
       "confidence": "medium",
       "decision": "pursue aggressively",
-      "thesis": "Engineering Manager, SSCS: Supply Chain at GitLab Greenhouse is pursue aggressively because the snapshot score is 85, with 2 profile/role keyword hits and 1 external evidence item(s).",
+      "thesis": "Engineering Manager, SSCS: Supply Chain at GitLab Greenhouse is pursue aggressively because the snapshot score is 85, with 2 profile/role keyword hits and 2 external evidence item(s).",
       "evidence": {
         "keywordHits": [
           "remote",
@@ -4632,10 +5133,11 @@ window.CV_CAREER_OPS_DEEP_FIT = {
         ],
         "researchSignals": [
           "AI / data / platform signal",
+          "growth or funding signal",
           "risk signal to inspect manually",
           "remote or hybrid signal"
         ],
-        "evidenceCount": 1,
+        "evidenceCount": 2,
         "compensationLeverage": "high"
       },
       "concerns": [],
@@ -4655,7 +5157,7 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "compensationStrategy": {
         "leverage": "high",
         "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Staff Backend Engineer (Go), Continuous Delivery package, including base, bonus, equity, and review cycle?",
-        "valueAnchor": "Based on the scope of Staff Backend Engineer (Go), Continuous Delivery and my fit around remote, engineer, product, data, I would like to calibrate toward the stronger end of the range if the team sees the level match."
+        "valueAnchor": "Based on the scope of Staff Backend Engineer (Go), Continuous Delivery and my fit around frontend, engineer, building, product, I would like to calibrate toward the stronger end of the range if the team sees the level match."
       },
       "storyHooks": [
         {
@@ -4736,133 +5238,6 @@ window.CV_CAREER_OPS_DEEP_FIT = {
           "theme": "systems and API collaboration",
           "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
           "relevance": 0
-        }
-      ],
-      "llm": null
-    },
-    {
-      "jobKey": "url:https://careers.airbnb.com/positions/7763307?gh_jid=7763307",
-      "company": "Airbnb Greenhouse",
-      "title": "Staff Full Stack Engineer, Reservations and Additional Products",
-      "score": 85,
-      "grade": "A",
-      "confidence": "medium",
-      "decision": "pursue aggressively",
-      "thesis": "Staff Full Stack Engineer, Reservations and Additional Products at Airbnb Greenhouse is pursue aggressively because the snapshot score is 85, with 5 profile/role keyword hits and 0 external evidence item(s).",
-      "evidence": {
-        "keywordHits": [
-          "JavaScript",
-          "React",
-          "remote",
-          "React",
-          "Full Stack Engineer"
-        ],
-        "keywordMisses": [
-          "java",
-          "kotlin"
-        ],
-        "researchSignals": [],
-        "evidenceCount": 0,
-        "compensationLeverage": ""
-      },
-      "concerns": [
-        "External company evidence is thin; run deep research with a search API."
-      ],
-      "interviewStrategy": [
-        "Ask why the role is open and what success means in the first 90 days.",
-        "Probe team ownership, roadmap pressure, and cross-functional interfaces."
-      ],
-      "cvStrategy": [
-        "Lead with proof around: JavaScript, React, remote, React, Full Stack Engineer.",
-        "Use story story-1: frontend product execution.",
-        "Use story story-2: data-heavy product decisions.",
-        "Use story story-3: systems and API collaboration."
-      ],
-      "compensationStrategy": null,
-      "storyHooks": [
-        {
-          "id": "story-1",
-          "theme": "frontend product execution",
-          "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
-          "relevance": 2
-        },
-        {
-          "id": "story-2",
-          "theme": "data-heavy product decisions",
-          "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
-          "relevance": 2
-        },
-        {
-          "id": "story-3",
-          "theme": "systems and API collaboration",
-          "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
-          "relevance": 2
-        }
-      ],
-      "llm": null
-    },
-    {
-      "jobKey": "url:https://job-boards.greenhouse.io/anthropic/jobs/5223916008",
-      "company": "Anthropic Greenhouse",
-      "title": "Design Engineer, Web",
-      "score": 85,
-      "grade": "A",
-      "confidence": "medium",
-      "decision": "pursue aggressively",
-      "thesis": "Design Engineer, Web at Anthropic Greenhouse is pursue aggressively because the snapshot score is 85, with 8 profile/role keyword hits and 0 external evidence item(s).",
-      "evidence": {
-        "keywordHits": [
-          "React",
-          "Next.js",
-          "Accessibility",
-          "API",
-          "remote",
-          "design system",
-          "React",
-          "Product Engineer"
-        ],
-        "keywordMisses": [
-          "seo",
-          "growth",
-          "sales",
-          "operations"
-        ],
-        "researchSignals": [],
-        "evidenceCount": 0,
-        "compensationLeverage": ""
-      },
-      "concerns": [
-        "External company evidence is thin; run deep research with a search API."
-      ],
-      "interviewStrategy": [
-        "Ask why the role is open and what success means in the first 90 days.",
-        "Probe team ownership, roadmap pressure, and cross-functional interfaces."
-      ],
-      "cvStrategy": [
-        "Lead with proof around: React, Next.js, Accessibility, API, remote, design system.",
-        "Use story story-1: frontend product execution.",
-        "Use story story-2: data-heavy product decisions.",
-        "Use story story-3: systems and API collaboration."
-      ],
-      "compensationStrategy": null,
-      "storyHooks": [
-        {
-          "id": "story-1",
-          "theme": "frontend product execution",
-          "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
-          "relevance": 3
-        },
-        {
-          "id": "story-2",
-          "theme": "data-heavy product decisions",
-          "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
-          "relevance": 3
-        },
-        {
-          "id": "story-3",
-          "theme": "systems and API collaboration",
-          "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
-          "relevance": 3
         }
       ],
       "llm": null

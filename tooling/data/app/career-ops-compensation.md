@@ -1,6 +1,6 @@
 # Career Ops Compensation Planner
 
-Generated: 2026-07-06T14:12:44.999Z
+Generated: 2026-07-06T15:53:52.956Z
 Plans: 20
 
 ## Operating Rule
@@ -32,7 +32,7 @@ Do not invent salary numbers. Use verified ranges, recruiter-provided ranges, or
 
 ### Scripts
 - Range question: Before I anchor on a number, could you share the approved range and level for the Staff Backend Engineer (Go), Continuous Delivery package, including base, bonus, equity, and review cycle?
-- Value anchor: Based on the scope of Staff Backend Engineer (Go), Continuous Delivery and my fit around remote, engineer, product, data, I would like to calibrate toward the stronger end of the range if the team sees the level match.
+- Value anchor: Based on the scope of Staff Backend Engineer (Go), Continuous Delivery and my fit around frontend, engineer, building, product, I would like to calibrate toward the stronger end of the range if the team sees the level match.
 - Counter: Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?
 - Pause: I appreciate the details. I would like to review the full package and come back with a thoughtful response.
 - Close: If we can align on the package and review timeline, I would feel confident moving forward.
@@ -69,7 +69,7 @@ Do not invent salary numbers. Use verified ranges, recruiter-provided ranges, or
 
 ### Scripts
 - Range question: Before I anchor on a number, could you share the approved range and level for the Security Software Engineer package, including base, bonus, equity, and review cycle?
-- Value anchor: Based on the scope of Security Software Engineer and my fit around JavaScript, TypeScript, remote, engineer, I would like to calibrate toward the stronger end of the range if the team sees the level match.
+- Value anchor: Based on the scope of Security Software Engineer and my fit around JavaScript, TypeScript, engineer, product, I would like to calibrate toward the stronger end of the range if the team sees the level match.
 - Counter: Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?
 - Pause: I appreciate the details. I would like to review the full package and come back with a thoughtful response.
 - Close: If we can align on the package and review timeline, I would feel confident moving forward.
@@ -106,7 +106,7 @@ Do not invent salary numbers. Use verified ranges, recruiter-provided ranges, or
 
 ### Scripts
 - Range question: Before I anchor on a number, could you share the approved range and level for the Senior / Staff Product Engineer package, including base, bonus, equity, and review cycle?
-- Value anchor: Based on the scope of Senior / Staff Product Engineer and my fit around TypeScript, React, API, remote, I would like to calibrate toward the stronger end of the range if the team sees the level match.
+- Value anchor: Based on the scope of Senior / Staff Product Engineer and my fit around TypeScript, React, API, frontend, I would like to calibrate toward the stronger end of the range if the team sees the level match.
 - Counter: Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?
 - Pause: I appreciate the details. I would like to review the full package and come back with a thoughtful response.
 - Close: If we can align on the package and review timeline, I would feel confident moving forward.
@@ -143,7 +143,7 @@ Do not invent salary numbers. Use verified ranges, recruiter-provided ranges, or
 
 ### Scripts
 - Range question: Before I anchor on a number, could you share the approved range and level for the Senior / Staff Product Engineer package, including base, bonus, equity, and review cycle?
-- Value anchor: Based on the scope of Senior / Staff Product Engineer and my fit around TypeScript, React, API, remote, I would like to calibrate toward the stronger end of the range if the team sees the level match.
+- Value anchor: Based on the scope of Senior / Staff Product Engineer and my fit around TypeScript, React, API, frontend, I would like to calibrate toward the stronger end of the range if the team sees the level match.
 - Counter: Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?
 - Pause: I appreciate the details. I would like to review the full package and come back with a thoughtful response.
 - Close: If we can align on the package and review timeline, I would feel confident moving forward.
@@ -180,7 +180,7 @@ Do not invent salary numbers. Use verified ranges, recruiter-provided ranges, or
 
 ### Scripts
 - Range question: Before I anchor on a number, could you share the approved range and level for the Product Engineer package, including base, bonus, equity, and review cycle?
-- Value anchor: Based on the scope of Product Engineer and my fit around TypeScript, React, API, remote, I would like to calibrate toward the stronger end of the range if the team sees the level match.
+- Value anchor: Based on the scope of Product Engineer and my fit around TypeScript, React, API, frontend, I would like to calibrate toward the stronger end of the range if the team sees the level match.
 - Counter: Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?
 - Pause: I appreciate the details. I would like to review the full package and come back with a thoughtful response.
 - Close: If we can align on the package and review timeline, I would feel confident moving forward.
@@ -222,7 +222,7 @@ Do not invent salary numbers. Use verified ranges, recruiter-provided ranges, or
 
 ### Scripts
 - Range question: Before I anchor on a number, could you share the approved range and level for the Safety Engineer package, including base, bonus, equity, and review cycle?
-- Value anchor: Based on the scope of Safety Engineer and my fit around React, remote, engineer, product, I would like to calibrate toward the stronger end of the range if the team sees the level match. My research indicates the JP midpoint for this level is around JPY 8,000,000 (annual).
+- Value anchor: Based on the scope of Safety Engineer and my fit around React, frontend, engineer, years, I would like to calibrate toward the stronger end of the range if the team sees the level match. My research indicates the JP midpoint for this level is around JPY 8,000,000 (annual).
 - Counter: Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?
 - Pause: I appreciate the details. I would like to review the full package and come back with a thoughtful response.
 - Close: If we can align on the package and review timeline, I would feel confident moving forward.
@@ -259,7 +259,7 @@ Do not invent salary numbers. Use verified ranges, recruiter-provided ranges, or
 
 ### Scripts
 - Range question: Before I anchor on a number, could you share the approved range and level for the Staff Product Engineer (São Paulo) package, including base, bonus, equity, and review cycle?
-- Value anchor: Based on the scope of Staff Product Engineer (São Paulo) and my fit around TypeScript, React, remote, dashboard, I would like to calibrate toward the stronger end of the range if the team sees the level match.
+- Value anchor: Based on the scope of Staff Product Engineer (São Paulo) and my fit around TypeScript, React, frontend, engineer, I would like to calibrate toward the stronger end of the range if the team sees the level match.
 - Counter: Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?
 - Pause: I appreciate the details. I would like to review the full package and come back with a thoughtful response.
 - Close: If we can align on the package and review timeline, I would feel confident moving forward.
@@ -297,7 +297,7 @@ Do not invent salary numbers. Use verified ranges, recruiter-provided ranges, or
 
 ### Scripts
 - Range question: Before I anchor on a number, could you share the approved range and level for the Senior Systems Engineer package, including base, bonus, equity, and review cycle?
-- Value anchor: Based on the scope of Senior Systems Engineer and my fit around API, Performance Optimization, remote, engineer, I would like to calibrate toward the stronger end of the range if the team sees the level match.
+- Value anchor: Based on the scope of Senior Systems Engineer and my fit around API, Performance Optimization, engineer, building, I would like to calibrate toward the stronger end of the range if the team sees the level match.
 - Counter: Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?
 - Pause: I appreciate the details. I would like to review the full package and come back with a thoughtful response.
 - Close: If we can align on the package and review timeline, I would feel confident moving forward.
@@ -331,7 +331,7 @@ Do not invent salary numbers. Use verified ranges, recruiter-provided ranges, or
 
 ### Scripts
 - Range question: Before I anchor on a number, could you share the approved range and level for the Lead AI Cloud Platform Engineer package, including base, bonus, equity, and review cycle?
-- Value anchor: Based on the scope of Lead AI Cloud Platform Engineer and my fit around Analytics, API, remote, engineer, I would like to calibrate toward the stronger end of the range if the team sees the level match.
+- Value anchor: Based on the scope of Lead AI Cloud Platform Engineer and my fit around Analytics, API, engineer, years, I would like to calibrate toward the stronger end of the range if the team sees the level match.
 - Counter: Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?
 - Pause: I appreciate the details. I would like to review the full package and come back with a thoughtful response.
 - Close: If we can align on the package and review timeline, I would feel confident moving forward.
@@ -368,7 +368,7 @@ Do not invent salary numbers. Use verified ranges, recruiter-provided ranges, or
 
 ### Scripts
 - Range question: Before I anchor on a number, could you share the approved range and level for the Sr. Product Engineer - Web Services package, including base, bonus, equity, and review cycle?
-- Value anchor: Based on the scope of Sr. Product Engineer - Web Services and my fit around JavaScript, TypeScript, API, remote, I would like to calibrate toward the stronger end of the range if the team sees the level match.
+- Value anchor: Based on the scope of Sr. Product Engineer - Web Services and my fit around JavaScript, TypeScript, API, engineer, I would like to calibrate toward the stronger end of the range if the team sees the level match.
 - Counter: Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?
 - Pause: I appreciate the details. I would like to review the full package and come back with a thoughtful response.
 - Close: If we can align on the package and review timeline, I would feel confident moving forward.
@@ -405,7 +405,7 @@ Do not invent salary numbers. Use verified ranges, recruiter-provided ranges, or
 
 ### Scripts
 - Range question: Before I anchor on a number, could you share the approved range and level for the Senior Backend Engineer(Go), Continuous Delivery package, including base, bonus, equity, and review cycle?
-- Value anchor: Based on the scope of Senior Backend Engineer(Go), Continuous Delivery and my fit around remote, engineer, product, data, I would like to calibrate toward the stronger end of the range if the team sees the level match.
+- Value anchor: Based on the scope of Senior Backend Engineer(Go), Continuous Delivery and my fit around frontend, engineer, building, product, I would like to calibrate toward the stronger end of the range if the team sees the level match.
 - Counter: Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?
 - Pause: I appreciate the details. I would like to review the full package and come back with a thoughtful response.
 - Close: If we can align on the package and review timeline, I would feel confident moving forward.
@@ -444,7 +444,7 @@ Do not invent salary numbers. Use verified ranges, recruiter-provided ranges, or
 
 ### Scripts
 - Range question: Before I anchor on a number, could you share the approved range and level for the VP of Product Security package, including base, bonus, equity, and review cycle?
-- Value anchor: Based on the scope of VP of Product Security and my fit around API, remote, product, data, I would like to calibrate toward the stronger end of the range if the team sees the level match.
+- Value anchor: Based on the scope of VP of Product Security and my fit around API, building, product, in, I would like to calibrate toward the stronger end of the range if the team sees the level match.
 - Counter: Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?
 - Pause: I appreciate the details. I would like to review the full package and come back with a thoughtful response.
 - Close: If we can align on the package and review timeline, I would feel confident moving forward.
@@ -558,7 +558,7 @@ Do not invent salary numbers. Use verified ranges, recruiter-provided ranges, or
 
 ### Scripts
 - Range question: Before I anchor on a number, could you share the approved range and level for the Senior / Staff Product Engineer, AI package, including base, bonus, equity, and review cycle?
-- Value anchor: Based on the scope of Senior / Staff Product Engineer, AI and my fit around TypeScript, React, API, remote, I would like to calibrate toward the stronger end of the range if the team sees the level match.
+- Value anchor: Based on the scope of Senior / Staff Product Engineer, AI and my fit around TypeScript, React, API, frontend, I would like to calibrate toward the stronger end of the range if the team sees the level match.
 - Counter: Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?
 - Pause: I appreciate the details. I would like to review the full package and come back with a thoughtful response.
 - Close: If we can align on the package and review timeline, I would feel confident moving forward.
@@ -596,7 +596,7 @@ Do not invent salary numbers. Use verified ranges, recruiter-provided ranges, or
 
 ### Scripts
 - Range question: Before I anchor on a number, could you share the approved range and level for the Support Engineer (AMER) package, including base, bonus, equity, and review cycle?
-- Value anchor: Based on the scope of Support Engineer (AMER) and my fit around JavaScript, React, remote, engineer, I would like to calibrate toward the stronger end of the range if the team sees the level match.
+- Value anchor: Based on the scope of Support Engineer (AMER) and my fit around JavaScript, React, engineer, years, I would like to calibrate toward the stronger end of the range if the team sees the level match.
 - Counter: Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?
 - Pause: I appreciate the details. I would like to review the full package and come back with a thoughtful response.
 - Close: If we can align on the package and review timeline, I would feel confident moving forward.
@@ -634,7 +634,7 @@ Do not invent salary numbers. Use verified ranges, recruiter-provided ranges, or
 
 ### Scripts
 - Range question: Before I anchor on a number, could you share the approved range and level for the Support Engineer (APAC) package, including base, bonus, equity, and review cycle?
-- Value anchor: Based on the scope of Support Engineer (APAC) and my fit around JavaScript, React, remote, engineer, I would like to calibrate toward the stronger end of the range if the team sees the level match.
+- Value anchor: Based on the scope of Support Engineer (APAC) and my fit around JavaScript, React, engineer, years, I would like to calibrate toward the stronger end of the range if the team sees the level match.
 - Counter: Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?
 - Pause: I appreciate the details. I would like to review the full package and come back with a thoughtful response.
 - Close: If we can align on the package and review timeline, I would feel confident moving forward.
@@ -671,7 +671,7 @@ Do not invent salary numbers. Use verified ranges, recruiter-provided ranges, or
 
 ### Scripts
 - Range question: Before I anchor on a number, could you share the approved range and level for the SDK Engineer - Kotlin package, including base, bonus, equity, and review cycle?
-- Value anchor: Based on the scope of SDK Engineer - Kotlin and my fit around API, remote, engineer, product, I would like to calibrate toward the stronger end of the range if the team sees the level match.
+- Value anchor: Based on the scope of SDK Engineer - Kotlin and my fit around API, engineer, years, building, I would like to calibrate toward the stronger end of the range if the team sees the level match.
 - Counter: Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?
 - Pause: I appreciate the details. I would like to review the full package and come back with a thoughtful response.
 - Close: If we can align on the package and review timeline, I would feel confident moving forward.
@@ -720,26 +720,27 @@ Do not invent salary numbers. Use verified ranges, recruiter-provided ranges, or
 - Map the job scope to proof points in the tailored CV.
 - Prepare one counter package with base, bonus/equity, and non-cash levers.
 
-## Quinncia Inc - Frontend Developer
+## TIKTOK PTE. LTD. - Frontend Software Engineer (Payment), TikTok Live - Singapore
 
-- Market: us
+- Market: jp
 - Job level (inferred): mid
 - Candidate level (from profile): mid
 - Leverage: high
-- Target frame: Use posted compensation as the floor for scope calibration; anchor near the upper third only after confirming level and scope.
+- Market benchmark (mid): JPY 6,000,000 – 10,000,000 annual
+- Benchmark midpoint: JPY 8,000,000
+- Benchmark source: TokyoDev / Japan-Dev 2024-2025
+- Note: Tokyo-based international tech companies skew higher (+30-50%). Japanese-headquartered companies average ¥8.5M for mid-level.
+- Target frame: Market benchmark for mid in JP is JPY 6,000,000 – 10,000,000 (annual). Do not name a number first — ask for the approved range, then anchor near the midpoint or above.
 
 ### Evidence
-- Salary mention: $20
-- Salary mention: $35
-- Benefit signal: bonus
-- Benefit signal: equity
+- No verified salary mention found.
 - Benefit signal: work-mode flexibility
 - Benefit signal: learning budget
 
 ### Structure
-- Base: $20; $35
-- Bonus: Ask whether bonus is guaranteed, target, or discretionary.
-- Equity: Clarify grant size, vesting schedule, refreshers, and strike/RSU terms.
+- Base: Market range for mid (JP): JPY 6,000,000 – 10,000,000 annual. Source: TokyoDev / Japan-Dev 2024-2025.
+- Bonus: Ask whether there is annual bonus, performance bonus, or sign-on bonus.
+- Equity: Ask whether equity, RSU, options, or profit-sharing exists.
 - Benefit: Health / insurance coverage
 - Benefit: Paid leave and holidays
 - Benefit: Learning budget or certification support
@@ -747,14 +748,14 @@ Do not invent salary numbers. Use verified ranges, recruiter-provided ranges, or
 - Benefit: Review cycle and promotion timeline
 
 ### Scripts
-- Range question: Before I anchor on a number, could you share the approved range and level for the Frontend Developer package, including base, bonus, equity, and review cycle?
-- Value anchor: Based on the scope of Frontend Developer and my fit around JavaScript, TypeScript, React, Next.js, I would like to calibrate toward the stronger end of the range if the team sees the level match.
+- Range question: Before I anchor on a number, could you share the approved range and level for the Frontend Software Engineer (Payment), TikTok Live - Singapore package, including base, bonus, equity, and review cycle?
+- Value anchor: Based on the scope of Frontend Software Engineer (Payment), TikTok Live - Singapore and my fit around JavaScript, CSS, frontend, engineer, I would like to calibrate toward the stronger end of the range if the team sees the level match. My research indicates the JP midpoint for this level is around JPY 8,000,000 (annual).
 - Counter: Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?
 - Pause: I appreciate the details. I would like to review the full package and come back with a thoughtful response.
 - Close: If we can align on the package and review timeline, I would feel confident moving forward.
 
 ### Next Actions
-- Verify whether posted compensation is base-only or total compensation.
+- Collect market compensation evidence before naming a number.
 - Ask recruiter for approved range and level.
 - Map the job scope to proof points in the tailored CV.
 - Prepare one counter package with base, bonus/equity, and non-cash levers.

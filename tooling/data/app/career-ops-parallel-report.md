@@ -1,6 +1,6 @@
 # Career Ops Parallel Worker Report
 
-Generated: 2026-07-06T14:12:53.566Z
+Generated: 2026-07-06T15:54:01.611Z
 Concurrency: 4
 Jobs processed: 50
 Errors: 0
@@ -15,8 +15,8 @@ Errors: 0
 
 - Score: 87
 - Grade: A
-- Research evidence: 1
-- Keywords: remote, engineer, product, data
+- Research evidence: 2
+- Keywords: frontend, engineer, building, product, in, design
 - Compensation leverage: high
 - Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
@@ -31,7 +31,7 @@ Errors: 0
 - Score: 87
 - Grade: A
 - Research evidence: 10
-- Keywords: JavaScript, TypeScript, remote, engineer, product, data
+- Keywords: JavaScript, TypeScript, engineer, product, in, design, system, architecture
 - Compensation leverage: high
 - Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
@@ -45,8 +45,8 @@ Errors: 0
 
 - Score: 87
 - Grade: A
-- Research evidence: 5
-- Keywords: TypeScript, React, API, remote, engineer, product, data, graphql
+- Research evidence: 1
+- Keywords: TypeScript, React, API, frontend, engineer, years, building, product, in
 - Compensation leverage: high
 - Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
@@ -60,8 +60,8 @@ Errors: 0
 
 - Score: 87
 - Grade: A
-- Research evidence: 5
-- Keywords: TypeScript, React, API, remote, engineer, product, data, graphql
+- Research evidence: 1
+- Keywords: TypeScript, React, API, frontend, engineer, years, building, product, in
 - Compensation leverage: high
 - Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
@@ -75,8 +75,8 @@ Errors: 0
 
 - Score: 87
 - Grade: A
-- Research evidence: 5
-- Keywords: TypeScript, React, API, remote, engineer, product, data, graphql
+- Research evidence: 1
+- Keywords: TypeScript, React, API, frontend, engineer, years, building, product, in
 - Compensation leverage: high
 - Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
@@ -91,7 +91,7 @@ Errors: 0
 - Score: 87
 - Grade: A
 - Research evidence: 5
-- Keywords: React, remote, engineer, product, data
+- Keywords: React, frontend, engineer, years, building, product, in
 - Compensation leverage: high
 - Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
@@ -105,8 +105,8 @@ Errors: 0
 
 - Score: 86
 - Grade: A
-- Research evidence: 1
-- Keywords: TypeScript, React, remote, dashboard, engineer, product, data
+- Research evidence: 2
+- Keywords: TypeScript, React, frontend, engineer, product, in, design, architecture
 - Compensation leverage: high
 - Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
@@ -120,8 +120,8 @@ Errors: 0
 
 - Score: 86
 - Grade: A
-- Research evidence: 5
-- Keywords: API, Performance Optimization, remote, engineer, product, data
+- Research evidence: 1
+- Keywords: API, Performance Optimization, engineer, building, product, in, design, system
 - Compensation leverage: high
 - Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
@@ -136,7 +136,7 @@ Errors: 0
 - Score: 86
 - Grade: A
 - Research evidence: 0
-- Keywords: Analytics, API, remote, engineer, product, data
+- Keywords: Analytics, API, engineer, years, product, in, design, owning
 - Compensation leverage: high
 - Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
@@ -151,7 +151,7 @@ Errors: 0
 - Score: 86
 - Grade: A
 - Research evidence: 0
-- Keywords: JavaScript, TypeScript, API, remote, engineer, product, data, restful
+- Keywords: JavaScript, TypeScript, API, engineer, years, product, in, component, system
 - Compensation leverage: high
 - Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
@@ -165,8 +165,8 @@ Errors: 0
 
 - Score: 86
 - Grade: A
-- Research evidence: 1
-- Keywords: remote, engineer, product, data
+- Research evidence: 2
+- Keywords: frontend, engineer, building, product, in, design
 - Compensation leverage: high
 - Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
@@ -180,8 +180,8 @@ Errors: 0
 
 - Score: 86
 - Grade: A
-- Research evidence: 1
-- Keywords: API, remote, product, data
+- Research evidence: 2
+- Keywords: API, building, product, in, design, architecture, full
 - Compensation leverage: high
 - Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
@@ -196,7 +196,7 @@ Errors: 0
 - Score: 86
 - Grade: A
 - Research evidence: 10
-- Keywords: TypeScript, React, CSS, Accessibility, API, remote, engineer, product, data
+- Keywords: TypeScript, React, CSS, Accessibility, API, frontend, engineer, accessible, product, in
 - Compensation leverage: high
 - Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
@@ -211,7 +211,7 @@ Errors: 0
 - Score: 86
 - Grade: A
 - Research evidence: 0
-- Keywords: JavaScript, React, Next.js, CSS, Tailwind, Accessibility, Design Systems, remote, design system, engineer
+- Keywords: JavaScript, React, Next.js, CSS, Tailwind, Accessibility, Design Systems, frontend, engineer, years
 - Compensation leverage: high
 - Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
@@ -225,8 +225,8 @@ Errors: 0
 
 - Score: 86
 - Grade: A
-- Research evidence: 5
-- Keywords: TypeScript, React, API, remote, engineer, product, data, graphql
+- Research evidence: 1
+- Keywords: TypeScript, React, API, frontend, engineer, years, building, product, in
 - Compensation leverage: high
 - Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
@@ -241,7 +241,7 @@ Errors: 0
 - Score: 86
 - Grade: A
 - Research evidence: 0
-- Keywords: JavaScript, React, remote, engineer, product, node.js, supabase
+- Keywords: JavaScript, React, engineer, years, building, product, in, optimization
 - Compensation leverage: high
 - Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
@@ -256,7 +256,7 @@ Errors: 0
 - Score: 86
 - Grade: A
 - Research evidence: 0
-- Keywords: JavaScript, React, remote, engineer, product, node.js, supabase
+- Keywords: JavaScript, React, engineer, years, building, product, in, optimization
 - Compensation leverage: high
 - Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
@@ -271,7 +271,7 @@ Errors: 0
 - Score: 86
 - Grade: A
 - Research evidence: 0
-- Keywords: API, remote, engineer, product, supabase
+- Keywords: API, engineer, years, building, product, in, libraries
 - Compensation leverage: high
 - Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
@@ -286,7 +286,37 @@ Errors: 0
 - Score: 86
 - Grade: A
 - Research evidence: 0
-- Keywords: TypeScript, React, Analytics, API, remote, design system, engineer, product, data
+- Keywords: TypeScript, React, Analytics, API, engineer, building, accessible, product, in, design
+- Compensation leverage: high
+- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
+
+### Apply Agent Guardrails
+- Never submit without explicit user confirmation.
+- Never fabricate work authorization, salary history, degree, or experience.
+- Never store API keys or credentials in job metadata.
+- Record only application status and user-approved notes.
+
+## P0 TIKTOK PTE. LTD. - Frontend Software Engineer (Payment), TikTok Live - Singapore
+
+- Score: 85
+- Grade: A
+- Research evidence: 0
+- Keywords: JavaScript, CSS, frontend, engineer, years, building, product, in
+- Compensation leverage: high
+- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
+
+### Apply Agent Guardrails
+- Never submit without explicit user confirmation.
+- Never fabricate work authorization, salary history, degree, or experience.
+- Never store API keys or credentials in job metadata.
+- Record only application status and user-approved notes.
+
+## P0 TIKTOK PTE. LTD. - Frontend Software Engineer (transaction), TikTok Live - Singapore
+
+- Score: 85
+- Grade: A
+- Research evidence: 0
+- Keywords: JavaScript, CSS, frontend, engineer, years, building, product, in
 - Compensation leverage: high
 - Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
@@ -301,8 +331,8 @@ Errors: 0
 - Score: 85
 - Grade: A
 - Research evidence: 0
-- Keywords: JavaScript, TypeScript, React, Next.js, CSS, remote, engineer, product, data, restful
-- Compensation leverage: high
+- Keywords: JavaScript, TypeScript, React, Next.js, CSS, frontend, engineer, product, in, design
+- Compensation leverage: -
 - Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
 ### Apply Agent Guardrails
@@ -316,7 +346,7 @@ Errors: 0
 - Score: 85
 - Grade: A
 - Research evidence: 0
-- Keywords: TypeScript, React, CSS, API, remote, product
+- Keywords: TypeScript, React, CSS, API, frontend, years, building, product, in, design
 - Compensation leverage: -
 - Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
@@ -330,8 +360,8 @@ Errors: 0
 
 - Score: 85
 - Grade: A
-- Research evidence: 1
-- Keywords: remote, engineer, product, data
+- Research evidence: 2
+- Keywords: engineer, years, building, product, in, design
 - Compensation leverage: high
 - Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
@@ -346,7 +376,7 @@ Errors: 0
 - Score: 85
 - Grade: A
 - Research evidence: 0
-- Keywords: API, remote, dashboard, engineer, product, data
+- Keywords: API, engineer, years, building, in, design, system
 - Compensation leverage: -
 - Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
@@ -361,7 +391,7 @@ Errors: 0
 - Score: 85
 - Grade: A
 - Research evidence: 0
-- Keywords: JavaScript, React, remote, engineer, product, data
+- Keywords: JavaScript, React, engineer, years, product, in, design, system
 - Compensation leverage: -
 - Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
@@ -376,7 +406,7 @@ Errors: 0
 - Score: 85
 - Grade: A
 - Research evidence: 0
-- Keywords: React, Next.js, Accessibility, remote, design system, engineer, product, data, visualization
+- Keywords: React, Next.js, Accessibility, frontend, engineer, years, building, product, in
 - Compensation leverage: -
 - Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
@@ -391,7 +421,7 @@ Errors: 0
 - Score: 85
 - Grade: A
 - Research evidence: 0
-- Keywords: JavaScript, TypeScript, React, Next.js, remote, engineer, product, data, node.js
+- Keywords: JavaScript, TypeScript, React, Next.js, frontend, engineer, years, building, product, in
 - Compensation leverage: high
 - Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
@@ -406,22 +436,7 @@ Errors: 0
 - Score: 85
 - Grade: A
 - Research evidence: 0
-- Keywords: remote, product, data
-- Compensation leverage: -
-- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
-
-### Apply Agent Guardrails
-- Never submit without explicit user confirmation.
-- Never fabricate work authorization, salary history, degree, or experience.
-- Never store API keys or credentials in job metadata.
-- Record only application status and user-approved notes.
-
-## P0 Reddit Greenhouse - Principal Technical Program Manager, Developer Productivity
-
-- Score: 85
-- Grade: A
-- Research evidence: 0
-- Keywords: remote, product, data
+- Keywords: years, building, product, in, design, workflows.
 - Compensation leverage: -
 - Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
@@ -436,7 +451,7 @@ Errors: 0
 - Score: 85
 - Grade: A
 - Research evidence: 0
-- Keywords: remote, product, data
+- Keywords: years, building, product, in, design, architecture
 - Compensation leverage: -
 - Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
@@ -451,7 +466,7 @@ Errors: 0
 - Score: 85
 - Grade: A
 - Research evidence: 0
-- Keywords: JavaScript, TypeScript, React, CSS, remote, engineer, product, data, graphql
+- Keywords: JavaScript, TypeScript, React, CSS, frontend, engineer, years, building, product, in
 - Compensation leverage: -
 - Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
@@ -466,7 +481,7 @@ Errors: 0
 - Score: 85
 - Grade: A
 - Research evidence: 0
-- Keywords: React, API, Figma, remote, engineer, product, data, graphql
+- Keywords: React, API, Figma, frontend, engineer, years, building, product, in
 - Compensation leverage: -
 - Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
@@ -481,7 +496,7 @@ Errors: 0
 - Score: 85
 - Grade: A
 - Research evidence: 0
-- Keywords: remote, engineer, product, data
+- Keywords: engineer, years, building, product, in, design
 - Compensation leverage: -
 - Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
@@ -496,7 +511,7 @@ Errors: 0
 - Score: 85
 - Grade: A
 - Research evidence: 0
-- Keywords: remote, dashboard, engineer, product, data
+- Keywords: engineer, years, building, product, in, design
 - Compensation leverage: -
 - Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
@@ -511,7 +526,7 @@ Errors: 0
 - Score: 85
 - Grade: A
 - Research evidence: 5
-- Keywords: Figma, remote, engineer, product
+- Keywords: Figma, frontend, engineer, building, accessible, product, in
 - Compensation leverage: high
 - Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
@@ -526,7 +541,7 @@ Errors: 0
 - Score: 85
 - Grade: A
 - Research evidence: 0
-- Keywords: JavaScript, TypeScript, React, remote, design system, engineer, product, data
+- Keywords: JavaScript, TypeScript, React, frontend, engineer, years, building, product, in
 - Compensation leverage: -
 - Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
@@ -541,7 +556,7 @@ Errors: 0
 - Score: 85
 - Grade: A
 - Research evidence: 0
-- Keywords: Analytics, remote, product, data
+- Keywords: Analytics, building, product, in, design, system, scope
 - Compensation leverage: high
 - Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
@@ -556,8 +571,38 @@ Errors: 0
 - Score: 85
 - Grade: A
 - Research evidence: 0
-- Keywords: Analytics, remote, engineer, product, data
+- Keywords: Analytics, engineer, building, product, in, component, comfortable
 - Compensation leverage: high
+- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
+
+### Apply Agent Guardrails
+- Never submit without explicit user confirmation.
+- Never fabricate work authorization, salary history, degree, or experience.
+- Never store API keys or credentials in job metadata.
+- Record only application status and user-approved notes.
+
+## P0 Point Wild - Principal MLOps / Platform Engineer
+
+- Score: 85
+- Grade: A
+- Research evidence: 0
+- Keywords: API, frontend, engineer, years, in, design, system
+- Compensation leverage: -
+- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
+
+### Apply Agent Guardrails
+- Never submit without explicit user confirmation.
+- Never fabricate work authorization, salary history, degree, or experience.
+- Never store API keys or credentials in job metadata.
+- Record only application status and user-approved notes.
+
+## P1 Uber - Staff Frontend Engineer, Core Services Eng
+
+- Score: 84
+- Grade: B
+- Research evidence: 0
+- Keywords: React, Analytics, API, frontend, engineer, years, product, in, design
+- Compensation leverage: -
 - Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
 ### Apply Agent Guardrails
@@ -571,7 +616,7 @@ Errors: 0
 - Score: 84
 - Grade: B
 - Research evidence: 0
-- Keywords: JavaScript, React, CSS, API, remote, dashboard, engineer, product, data
+- Keywords: JavaScript, React, CSS, API, engineer, building, product, in, design, from
 - Compensation leverage: -
 - Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
@@ -586,7 +631,7 @@ Errors: 0
 - Score: 84
 - Grade: B
 - Research evidence: 0
-- Keywords: TypeScript, React, API, remote, engineer, product, data
+- Keywords: TypeScript, React, API, frontend, engineer, years, building, product, in
 - Compensation leverage: -
 - Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
@@ -601,7 +646,7 @@ Errors: 0
 - Score: 84
 - Grade: B
 - Research evidence: 0
-- Keywords: JavaScript, TypeScript, React, API, remote, engineer, product, data, graphql, visualization
+- Keywords: JavaScript, TypeScript, React, API, frontend, engineer, years, building, product, in
 - Compensation leverage: -
 - Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
@@ -616,7 +661,7 @@ Errors: 0
 - Score: 84
 - Grade: B
 - Research evidence: 0
-- Keywords: JavaScript, API, remote, engineer, product
+- Keywords: JavaScript, API, engineer, years, building, product, in, component
 - Compensation leverage: high
 - Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
@@ -631,7 +676,7 @@ Errors: 0
 - Score: 84
 - Grade: B
 - Research evidence: 0
-- Keywords: TypeScript, React, Next.js, remote, engineer, product, data, node.js
+- Keywords: TypeScript, React, Next.js, frontend, engineer, years, building, product, in
 - Compensation leverage: -
 - Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
@@ -645,8 +690,8 @@ Errors: 0
 
 - Score: 84
 - Grade: B
-- Research evidence: 1
-- Keywords: remote, product, data
+- Research evidence: 2
+- Keywords: frontend, building, product, in, performance, full
 - Compensation leverage: high
 - Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
@@ -661,7 +706,7 @@ Errors: 0
 - Score: 84
 - Grade: B
 - Research evidence: 0
-- Keywords: Analytics, remote, product, data
+- Keywords: Analytics, years, product, in, design, architecture, performance
 - Compensation leverage: -
 - Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
@@ -676,7 +721,7 @@ Errors: 0
 - Score: 84
 - Grade: B
 - Research evidence: 0
-- Keywords: TypeScript, React, Figma, engineer, product, data
+- Keywords: TypeScript, React, Figma, engineer, building, accessible, product, in, design
 - Compensation leverage: -
 - Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
@@ -691,7 +736,7 @@ Errors: 0
 - Score: 84
 - Grade: B
 - Research evidence: 0
-- Keywords: remote, engineer, product, data, dashboards
+- Keywords: engineer, years, building, product, in, design
 - Compensation leverage: -
 - Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
@@ -706,53 +751,8 @@ Errors: 0
 - Score: 84
 - Grade: B
 - Research evidence: 10
-- Keywords: remote, engineer, product, data
+- Keywords: engineer, building, product, in, design, architecture
 - Compensation leverage: high
-- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
-
-### Apply Agent Guardrails
-- Never submit without explicit user confirmation.
-- Never fabricate work authorization, salary history, degree, or experience.
-- Never store API keys or credentials in job metadata.
-- Record only application status and user-approved notes.
-
-## P1 Mozilla Greenhouse - Senior Engineering Manager, AI Product (Thunderbolt)
-
-- Score: 84
-- Grade: B
-- Research evidence: 0
-- Keywords: React, remote, product, data
-- Compensation leverage: -
-- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
-
-### Apply Agent Guardrails
-- Never submit without explicit user confirmation.
-- Never fabricate work authorization, salary history, degree, or experience.
-- Never store API keys or credentials in job metadata.
-- Record only application status and user-approved notes.
-
-## P1 Mozilla Greenhouse - Senior Engineering Manager, AI Product (Thunderbolt)
-
-- Score: 84
-- Grade: B
-- Research evidence: 0
-- Keywords: React, remote, product, data
-- Compensation leverage: -
-- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
-
-### Apply Agent Guardrails
-- Never submit without explicit user confirmation.
-- Never fabricate work authorization, salary history, degree, or experience.
-- Never store API keys or credentials in job metadata.
-- Record only application status and user-approved notes.
-
-## P1 Reddit Greenhouse - Senior Software Engineer, GraphQL
-
-- Score: 84
-- Grade: B
-- Research evidence: 0
-- Keywords: API, remote, engineer, product, data, graphql
-- Compensation leverage: -
 - Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
 ### Apply Agent Guardrails

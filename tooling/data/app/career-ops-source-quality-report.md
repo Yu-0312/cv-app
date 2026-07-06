@@ -1,12 +1,12 @@
 # Career Ops Source Quality
 
-- Generated: 2026-07-06T14:09:01.896Z
+- Generated: 2026-07-06T15:51:51.605Z
 - Mode: filter
 - Minimum score: 45
-- Input active jobs: 85274
-- Kept active jobs: 85074
-- Filtered active jobs: 200
-- Quality tiers: high 79462 / medium 5480 / low 132
+- Input active jobs: 85333
+- Kept active jobs: 85123
+- Filtered active jobs: 210
+- Quality tiers: high 79536 / medium 5455 / low 132
 
 ## Filtered Samples
 

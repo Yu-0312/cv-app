@@ -1,6 +1,6 @@
 # Career Ops Application Kit
 
-Generated: 2026-07-06T14:12:08.742Z
+Generated: 2026-07-06T15:53:37.152Z
 Jobs: 12
 
 ## Pipeline
@@ -22,17 +22,17 @@ Jobs: 12
 ### ATS Keyword Injection
 - Archetype: Backend Engineer
 - Coverage: 100%
-- JD Keywords: remote, engineer, product, data
-- 在 Professional Summary 中自然帶入：remote、engineer、product、data
+- JD Keywords: frontend, engineer, building, product, in, design
+- 在 Professional Summary 中自然帶入：frontend、engineer、building、product、in
 - 使用職位語言：「Backend Engineer」方向的動詞和術語
-- 【你已有但此 JD 未要求】可視情況選擇性提及：go、docker、kubernetes、growth
-- Missing (do NOT fabricate): go, docker, kubernetes, growth
+- 【你已有但此 JD 未要求】可視情況選擇性提及：JavaScript、TypeScript、React、Next.js、CSS
+- Missing (do NOT fabricate): JavaScript, TypeScript, React, Next.js, CSS, Tailwind, Accessibility, Analytics
 
 ### Apply Checklist
 - Open the source URL and confirm the role is still active.
 - Generate or refresh the tailored ATS PDF from this job.
-- Mirror these JD keywords honestly in your CV: remote, engineer, product, data
-- Do not overclaim missing areas: go, docker, kubernetes, growth
+- Mirror these JD keywords honestly in your CV: frontend, engineer, building, product, in, design
+- Do not overclaim missing areas: JavaScript, TypeScript, React, Next.js, CSS, Tailwind
 - Log status, recruiter/contact, and next follow-up date in the tracker.
 
 ### Outreach Email
@@ -41,7 +41,7 @@ Hi GitLab Greenhouse team,
 
 I am Alex Chen, and I am interested in the Staff Backend Engineer (Go), Continuous Delivery role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.
 
-The role stood out because it maps closely to my experience with remote, engineer, product, data.
+The role stood out because it maps closely to my experience with frontend, engineer, building, product, in.
 
 I would appreciate the chance to share how my experience can support the team. Thank you for your time.
 
@@ -64,7 +64,7 @@ Alex Chen
 
 ### Interview Prep
 - Prepare a 60-second story for why GitLab Greenhouse and why Staff Backend Engineer (Go), Continuous Delivery.
-- Prepare evidence for: remote, engineer, product, data.
+- Prepare evidence for: frontend, engineer, building, product, in, design.
 - Prepare one STAR story about execution under ambiguity.
 - Prepare one STAR story about collaboration and tradeoff decisions.
 - Prepare questions about team priorities, success metrics, and hiring timeline.
@@ -87,17 +87,17 @@ Alex Chen
 ### ATS Keyword Injection
 - Archetype: Backend Engineer
 - Coverage: 100%
-- JD Keywords: JavaScript, TypeScript, remote, engineer, product, data, API
-- 在 Professional Summary 中自然帶入：JavaScript、TypeScript、remote、engineer、product
+- JD Keywords: JavaScript, TypeScript, engineer, product, in, design, system, architecture
+- 在 Professional Summary 中自然帶入：JavaScript、TypeScript、engineer、product、in
 - 使用職位語言：「Backend Engineer」方向的動詞和術語
-- 【你已有但此 JD 未要求】可視情況選擇性提及：python、java、go、rust
-- Missing (do NOT fabricate): python, java, go, rust
+- 【你已有但此 JD 未要求】可視情況選擇性提及：React、Next.js、CSS、Tailwind、Accessibility
+- Missing (do NOT fabricate): React, Next.js, CSS, Tailwind, Accessibility, Analytics, API, Figma
 
 ### Apply Checklist
 - Open the source URL and confirm the role is still active.
 - Generate or refresh the tailored ATS PDF from this job.
-- Mirror these JD keywords honestly in your CV: JavaScript, TypeScript, remote, engineer, product, data, API
-- Do not overclaim missing areas: python, java, go, rust
+- Mirror these JD keywords honestly in your CV: JavaScript, TypeScript, engineer, product, in, design, system, architecture
+- Do not overclaim missing areas: React, Next.js, CSS, Tailwind, Accessibility, Analytics
 - Log status, recruiter/contact, and next follow-up date in the tracker.
 
 ### Outreach Email
@@ -106,7 +106,7 @@ Hi Canonical Greenhouse team,
 
 I am Alex Chen, and I am interested in the Security Software Engineer role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.
 
-The role stood out because it maps closely to my experience with JavaScript, TypeScript, remote, engineer, product.
+The role stood out because it maps closely to my experience with JavaScript, TypeScript, engineer, product, in.
 
 I would appreciate the chance to share how my experience can support the team. Thank you for your time.
 
@@ -129,7 +129,7 @@ Alex Chen
 
 ### Interview Prep
 - Prepare a 60-second story for why Canonical Greenhouse and why Security Software Engineer.
-- Prepare evidence for: JavaScript, TypeScript, remote, engineer, product, data.
+- Prepare evidence for: JavaScript, TypeScript, engineer, product, in, design.
 - Prepare one STAR story about execution under ambiguity.
 - Prepare one STAR story about collaboration and tradeoff decisions.
 - Prepare questions about team priorities, success metrics, and hiring timeline.
@@ -152,18 +152,18 @@ Alex Chen
 ### ATS Keyword Injection
 - Archetype: Agentic / Automation
 - Coverage: 100%
-- JD Keywords: TypeScript, React, API, remote, engineer, product, data, graphql
-- 在 Professional Summary 中自然帶入：TypeScript、React、API、remote、engineer
+- JD Keywords: TypeScript, React, API, frontend, engineer, years, building, product
+- 在 Professional Summary 中自然帶入：TypeScript、React、API、frontend、engineer
 - 使用職位語言：「Agentic / Automation」方向的動詞和術語
-- 【你已有但此 JD 未要求】可視情況選擇性提及：postgres、agents
-- Missing (do NOT fabricate): postgres, agents
+- 【你已有但此 JD 未要求】可視情況選擇性提及：JavaScript、Next.js、CSS、Tailwind、Accessibility
+- Missing (do NOT fabricate): JavaScript, Next.js, CSS, Tailwind, Accessibility, Analytics, Figma, Performance Optimization
 
 ### Apply Checklist
 - Open the source URL and confirm the role is still active.
 - ⚠ Block G: Proceed with Caution — double-check recruiter identity.
 - Generate or refresh the tailored ATS PDF from this job.
-- Mirror these JD keywords honestly in your CV: TypeScript, React, API, remote, engineer, product, data, graphql
-- Do not overclaim missing areas: postgres, agents
+- Mirror these JD keywords honestly in your CV: TypeScript, React, API, frontend, engineer, years, building, product
+- Do not overclaim missing areas: JavaScript, Next.js, CSS, Tailwind, Accessibility, Analytics
 - Log status, recruiter/contact, and next follow-up date in the tracker.
 
 ### Outreach Email
@@ -172,7 +172,7 @@ Hi Linear Ashby team,
 
 I am Alex Chen, and I am interested in the Senior / Staff Product Engineer role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.
 
-The role stood out because it maps closely to my experience with TypeScript, React, API, remote, engineer.
+The role stood out because it maps closely to my experience with TypeScript, React, API, frontend, engineer.
 
 I would appreciate the chance to share how my experience can support the team. Thank you for your time.
 
@@ -195,7 +195,7 @@ Alex Chen
 
 ### Interview Prep
 - Prepare a 60-second story for why Linear Ashby and why Senior / Staff Product Engineer.
-- Prepare evidence for: TypeScript, React, API, remote, engineer, product.
+- Prepare evidence for: TypeScript, React, API, frontend, engineer, years.
 - Prepare one STAR story about execution under ambiguity.
 - Prepare one STAR story about collaboration and tradeoff decisions.
 - Prepare questions about team priorities, success metrics, and hiring timeline.
@@ -218,18 +218,18 @@ Alex Chen
 ### ATS Keyword Injection
 - Archetype: Agentic / Automation
 - Coverage: 100%
-- JD Keywords: TypeScript, React, API, remote, engineer, product, data, graphql
-- 在 Professional Summary 中自然帶入：TypeScript、React、API、remote、engineer
+- JD Keywords: TypeScript, React, API, frontend, engineer, years, building, product
+- 在 Professional Summary 中自然帶入：TypeScript、React、API、frontend、engineer
 - 使用職位語言：「Agentic / Automation」方向的動詞和術語
-- 【你已有但此 JD 未要求】可視情況選擇性提及：postgres、agents
-- Missing (do NOT fabricate): postgres, agents
+- 【你已有但此 JD 未要求】可視情況選擇性提及：JavaScript、Next.js、CSS、Tailwind、Accessibility
+- Missing (do NOT fabricate): JavaScript, Next.js, CSS, Tailwind, Accessibility, Analytics, Figma, Performance Optimization
 
 ### Apply Checklist
 - Open the source URL and confirm the role is still active.
 - ⚠ Block G: Proceed with Caution — double-check recruiter identity.
 - Generate or refresh the tailored ATS PDF from this job.
-- Mirror these JD keywords honestly in your CV: TypeScript, React, API, remote, engineer, product, data, graphql
-- Do not overclaim missing areas: postgres, agents
+- Mirror these JD keywords honestly in your CV: TypeScript, React, API, frontend, engineer, years, building, product
+- Do not overclaim missing areas: JavaScript, Next.js, CSS, Tailwind, Accessibility, Analytics
 - Log status, recruiter/contact, and next follow-up date in the tracker.
 
 ### Outreach Email
@@ -238,7 +238,7 @@ Hi Linear Ashby team,
 
 I am Alex Chen, and I am interested in the Senior / Staff Product Engineer role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.
 
-The role stood out because it maps closely to my experience with TypeScript, React, API, remote, engineer.
+The role stood out because it maps closely to my experience with TypeScript, React, API, frontend, engineer.
 
 I would appreciate the chance to share how my experience can support the team. Thank you for your time.
 
@@ -261,7 +261,7 @@ Alex Chen
 
 ### Interview Prep
 - Prepare a 60-second story for why Linear Ashby and why Senior / Staff Product Engineer.
-- Prepare evidence for: TypeScript, React, API, remote, engineer, product.
+- Prepare evidence for: TypeScript, React, API, frontend, engineer, years.
 - Prepare one STAR story about execution under ambiguity.
 - Prepare one STAR story about collaboration and tradeoff decisions.
 - Prepare questions about team priorities, success metrics, and hiring timeline.
@@ -284,17 +284,17 @@ Alex Chen
 ### ATS Keyword Injection
 - Archetype: Agentic / Automation
 - Coverage: 100%
-- JD Keywords: TypeScript, React, API, remote, engineer, product, data, graphql
-- 在 Professional Summary 中自然帶入：TypeScript、React、API、remote、engineer
+- JD Keywords: TypeScript, React, API, frontend, engineer, years, building, product
+- 在 Professional Summary 中自然帶入：TypeScript、React、API、frontend、engineer
 - 使用職位語言：「Agentic / Automation」方向的動詞和術語
-- 【你已有但此 JD 未要求】可視情況選擇性提及：agents
-- Missing (do NOT fabricate): agents
+- 【你已有但此 JD 未要求】可視情況選擇性提及：JavaScript、Next.js、CSS、Tailwind、Accessibility
+- Missing (do NOT fabricate): JavaScript, Next.js, CSS, Tailwind, Accessibility, Analytics, Figma, Performance Optimization
 
 ### Apply Checklist
 - Open the source URL and confirm the role is still active.
 - Generate or refresh the tailored ATS PDF from this job.
-- Mirror these JD keywords honestly in your CV: TypeScript, React, API, remote, engineer, product, data, graphql
-- Do not overclaim missing areas: agents
+- Mirror these JD keywords honestly in your CV: TypeScript, React, API, frontend, engineer, years, building, product
+- Do not overclaim missing areas: JavaScript, Next.js, CSS, Tailwind, Accessibility, Analytics
 - Log status, recruiter/contact, and next follow-up date in the tracker.
 
 ### Outreach Email
@@ -303,7 +303,7 @@ Hi Linear Ashby team,
 
 I am Alex Chen, and I am interested in the Product Engineer role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.
 
-The role stood out because it maps closely to my experience with TypeScript, React, API, remote, engineer.
+The role stood out because it maps closely to my experience with TypeScript, React, API, frontend, engineer.
 
 I would appreciate the chance to share how my experience can support the team. Thank you for your time.
 
@@ -326,7 +326,7 @@ Alex Chen
 
 ### Interview Prep
 - Prepare a 60-second story for why Linear Ashby and why Product Engineer.
-- Prepare evidence for: TypeScript, React, API, remote, engineer, product.
+- Prepare evidence for: TypeScript, React, API, frontend, engineer, years.
 - Prepare one STAR story about execution under ambiguity.
 - Prepare one STAR story about collaboration and tradeoff decisions.
 - Prepare questions about team priorities, success metrics, and hiring timeline.
@@ -349,17 +349,17 @@ Alex Chen
 ### ATS Keyword Injection
 - Archetype: AI Platform / LLMOps
 - Coverage: 100%
-- JD Keywords: React, remote, engineer, product, data, API
-- 在 Professional Summary 中自然帶入：React、remote、engineer、product、data
+- JD Keywords: React, frontend, engineer, years, building, product, in, API
+- 在 Professional Summary 中自然帶入：React、frontend、engineer、years、building
 - 使用職位語言：「AI Platform / LLMOps」方向的動詞和術語
-- 【你已有但此 JD 未要求】可視情況選擇性提及：python、sql、aws、gcp、docker
-- Missing (do NOT fabricate): python, sql, aws, gcp, docker, agents, growth, operations
+- 【你已有但此 JD 未要求】可視情況選擇性提及：JavaScript、TypeScript、Next.js、CSS、Tailwind
+- Missing (do NOT fabricate): JavaScript, TypeScript, Next.js, CSS, Tailwind, Accessibility, Analytics, API
 
 ### Apply Checklist
 - Open the source URL and confirm the role is still active.
 - Generate or refresh the tailored ATS PDF from this job.
-- Mirror these JD keywords honestly in your CV: React, remote, engineer, product, data, API
-- Do not overclaim missing areas: python, sql, aws, gcp, docker, agents
+- Mirror these JD keywords honestly in your CV: React, frontend, engineer, years, building, product, in, API
+- Do not overclaim missing areas: JavaScript, TypeScript, Next.js, CSS, Tailwind, Accessibility
 - Log status, recruiter/contact, and next follow-up date in the tracker.
 
 ### Outreach Email
@@ -368,7 +368,7 @@ Hi ElevenLabs Ashby team,
 
 I am Alex Chen, and I am interested in the Safety Engineer role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.
 
-The role stood out because it maps closely to my experience with React, remote, engineer, product, data.
+The role stood out because it maps closely to my experience with React, frontend, engineer, years, building.
 
 I would appreciate the chance to share how my experience can support the team. Thank you for your time.
 
@@ -391,7 +391,7 @@ Alex Chen
 
 ### Interview Prep
 - Prepare a 60-second story for why ElevenLabs Ashby and why Safety Engineer.
-- Prepare evidence for: React, remote, engineer, product, data.
+- Prepare evidence for: React, frontend, engineer, years, building, product.
 - Prepare one STAR story about execution under ambiguity.
 - Prepare one STAR story about collaboration and tradeoff decisions.
 - Prepare questions about team priorities, success metrics, and hiring timeline.
@@ -414,17 +414,17 @@ Alex Chen
 ### ATS Keyword Injection
 - Archetype: AI Platform / LLMOps
 - Coverage: 100%
-- JD Keywords: TypeScript, React, remote, dashboard, engineer, product, data, API
-- 在 Professional Summary 中自然帶入：TypeScript、React、remote、dashboard、engineer
+- JD Keywords: TypeScript, React, frontend, engineer, product, in, design, architecture
+- 在 Professional Summary 中自然帶入：TypeScript、React、frontend、engineer、product
 - 使用職位語言：「AI Platform / LLMOps」方向的動詞和術語
-- 【你已有但此 JD 未要求】可視情況選擇性提及：aws、rest、agents
-- Missing (do NOT fabricate): aws, rest, agents
+- 【你已有但此 JD 未要求】可視情況選擇性提及：JavaScript、Next.js、CSS、Tailwind、Accessibility
+- Missing (do NOT fabricate): JavaScript, Next.js, CSS, Tailwind, Accessibility, Analytics, API, Figma
 
 ### Apply Checklist
 - Open the source URL and confirm the role is still active.
 - Generate or refresh the tailored ATS PDF from this job.
-- Mirror these JD keywords honestly in your CV: TypeScript, React, remote, dashboard, engineer, product, data, API
-- Do not overclaim missing areas: aws, rest, agents
+- Mirror these JD keywords honestly in your CV: TypeScript, React, frontend, engineer, product, in, design, architecture
+- Do not overclaim missing areas: JavaScript, Next.js, CSS, Tailwind, Accessibility, Analytics
 - Log status, recruiter/contact, and next follow-up date in the tracker.
 
 ### Outreach Email
@@ -433,7 +433,7 @@ Hi LawnStarter team,
 
 I am Alex Chen, and I am interested in the Staff Product Engineer (São Paulo) role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.
 
-The role stood out because it maps closely to my experience with TypeScript, React, remote, dashboard, engineer.
+The role stood out because it maps closely to my experience with TypeScript, React, frontend, engineer, product.
 
 I would appreciate the chance to share how my experience can support the team. Thank you for your time.
 
@@ -456,7 +456,7 @@ Alex Chen
 
 ### Interview Prep
 - Prepare a 60-second story for why LawnStarter and why Staff Product Engineer (São Paulo).
-- Prepare evidence for: TypeScript, React, remote, dashboard, engineer, product.
+- Prepare evidence for: TypeScript, React, frontend, engineer, product, in.
 - Prepare one STAR story about execution under ambiguity.
 - Prepare one STAR story about collaboration and tradeoff decisions.
 - Prepare questions about team priorities, success metrics, and hiring timeline.
@@ -479,17 +479,17 @@ Alex Chen
 ### ATS Keyword Injection
 - Archetype: AI Platform / LLMOps
 - Coverage: 100%
-- JD Keywords: API, Performance Optimization, remote, engineer, product, data
-- 在 Professional Summary 中自然帶入：API、Performance Optimization、remote、engineer、product
+- JD Keywords: API, Performance Optimization, engineer, building, product, in, design, system
+- 在 Professional Summary 中自然帶入：API、Performance Optimization、engineer、building、product
 - 使用職位語言：「AI Platform / LLMOps」方向的動詞和術語
-- 【你已有但此 JD 未要求】可視情況選擇性提及：python、go、aws、gcp、azure
-- Missing (do NOT fabricate): python, go, aws, gcp, azure, docker, kubernetes, terraform
+- 【你已有但此 JD 未要求】可視情況選擇性提及：JavaScript、TypeScript、React、Next.js、CSS
+- Missing (do NOT fabricate): JavaScript, TypeScript, React, Next.js, CSS, Tailwind, Accessibility, Analytics
 
 ### Apply Checklist
 - Open the source URL and confirm the role is still active.
 - Generate or refresh the tailored ATS PDF from this job.
-- Mirror these JD keywords honestly in your CV: API, Performance Optimization, remote, engineer, product, data
-- Do not overclaim missing areas: python, go, aws, gcp, azure, docker
+- Mirror these JD keywords honestly in your CV: API, Performance Optimization, engineer, building, product, in, design, system
+- Do not overclaim missing areas: JavaScript, TypeScript, React, Next.js, CSS, Tailwind
 - Log status, recruiter/contact, and next follow-up date in the tracker.
 
 ### Outreach Email
@@ -498,7 +498,7 @@ Hi Yext team,
 
 I am Alex Chen, and I am interested in the Senior Systems Engineer role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.
 
-The role stood out because it maps closely to my experience with API, Performance Optimization, remote, engineer, product.
+The role stood out because it maps closely to my experience with API, Performance Optimization, engineer, building, product.
 
 I would appreciate the chance to share how my experience can support the team. Thank you for your time.
 
@@ -521,7 +521,7 @@ Alex Chen
 
 ### Interview Prep
 - Prepare a 60-second story for why Yext and why Senior Systems Engineer.
-- Prepare evidence for: API, Performance Optimization, remote, engineer, product, data.
+- Prepare evidence for: API, Performance Optimization, engineer, building, product, in.
 - Prepare one STAR story about execution under ambiguity.
 - Prepare one STAR story about collaboration and tradeoff decisions.
 - Prepare questions about team priorities, success metrics, and hiring timeline.
@@ -544,17 +544,17 @@ Alex Chen
 ### ATS Keyword Injection
 - Archetype: Agentic / Automation
 - Coverage: 100%
-- JD Keywords: Analytics, API, remote, engineer, product, data
-- 在 Professional Summary 中自然帶入：Analytics、API、remote、engineer、product
+- JD Keywords: Analytics, API, engineer, years, product, in, design, owning
+- 在 Professional Summary 中自然帶入：Analytics、API、engineer、years、product
 - 使用職位語言：「Agentic / Automation」方向的動詞和術語
-- 【你已有但此 JD 未要求】可視情況選擇性提及：python、aws、gcp、azure、terraform
-- Missing (do NOT fabricate): python, aws, gcp, azure, terraform, llm, prompt engineering
+- 【你已有但此 JD 未要求】可視情況選擇性提及：JavaScript、TypeScript、React、Next.js、CSS
+- Missing (do NOT fabricate): JavaScript, TypeScript, React, Next.js, CSS, Tailwind, Accessibility, Figma
 
 ### Apply Checklist
 - Open the source URL and confirm the role is still active.
 - Generate or refresh the tailored ATS PDF from this job.
-- Mirror these JD keywords honestly in your CV: Analytics, API, remote, engineer, product, data
-- Do not overclaim missing areas: python, aws, gcp, azure, terraform, llm
+- Mirror these JD keywords honestly in your CV: Analytics, API, engineer, years, product, in, design, owning
+- Do not overclaim missing areas: JavaScript, TypeScript, React, Next.js, CSS, Tailwind
 - Log status, recruiter/contact, and next follow-up date in the tracker.
 
 ### Outreach Email
@@ -563,7 +563,7 @@ Hi Allstate team,
 
 I am Alex Chen, and I am interested in the Lead AI Cloud Platform Engineer role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.
 
-The role stood out because it maps closely to my experience with Analytics, API, remote, engineer, product.
+The role stood out because it maps closely to my experience with Analytics, API, engineer, years, product.
 
 I would appreciate the chance to share how my experience can support the team. Thank you for your time.
 
@@ -586,7 +586,7 @@ Alex Chen
 
 ### Interview Prep
 - Prepare a 60-second story for why Allstate and why Lead AI Cloud Platform Engineer.
-- Prepare evidence for: Analytics, API, remote, engineer, product, data.
+- Prepare evidence for: Analytics, API, engineer, years, product, in.
 - Prepare one STAR story about execution under ambiguity.
 - Prepare one STAR story about collaboration and tradeoff decisions.
 - Prepare questions about team priorities, success metrics, and hiring timeline.
@@ -609,17 +609,17 @@ Alex Chen
 ### ATS Keyword Injection
 - Archetype: AI Platform / LLMOps
 - Coverage: 100%
-- JD Keywords: JavaScript, TypeScript, API, remote, engineer, product, data, restful
-- 在 Professional Summary 中自然帶入：JavaScript、TypeScript、API、remote、engineer
+- JD Keywords: JavaScript, TypeScript, API, engineer, years, product, in, component
+- 在 Professional Summary 中自然帶入：JavaScript、TypeScript、API、engineer、years
 - 使用職位語言：「AI Platform / LLMOps」方向的動詞和術語
-- 【你已有但此 JD 未要求】可視情況選擇性提及：python、sql、rest、growth
-- Missing (do NOT fabricate): python, sql, rest, growth
+- 【你已有但此 JD 未要求】可視情況選擇性提及：React、Next.js、CSS、Tailwind、Accessibility
+- Missing (do NOT fabricate): React, Next.js, CSS, Tailwind, Accessibility, Analytics, Figma, Performance Optimization
 
 ### Apply Checklist
 - Open the source URL and confirm the role is still active.
 - Generate or refresh the tailored ATS PDF from this job.
-- Mirror these JD keywords honestly in your CV: JavaScript, TypeScript, API, remote, engineer, product, data, restful
-- Do not overclaim missing areas: python, sql, rest, growth
+- Mirror these JD keywords honestly in your CV: JavaScript, TypeScript, API, engineer, years, product, in, component
+- Do not overclaim missing areas: React, Next.js, CSS, Tailwind, Accessibility, Analytics
 - Log status, recruiter/contact, and next follow-up date in the tracker.
 
 ### Outreach Email
@@ -628,7 +628,7 @@ Hi Esri team,
 
 I am Alex Chen, and I am interested in the Sr. Product Engineer - Web Services role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.
 
-The role stood out because it maps closely to my experience with JavaScript, TypeScript, API, remote, engineer.
+The role stood out because it maps closely to my experience with JavaScript, TypeScript, API, engineer, years.
 
 I would appreciate the chance to share how my experience can support the team. Thank you for your time.
 
@@ -651,7 +651,7 @@ Alex Chen
 
 ### Interview Prep
 - Prepare a 60-second story for why Esri and why Sr. Product Engineer - Web Services.
-- Prepare evidence for: JavaScript, TypeScript, API, remote, engineer, product.
+- Prepare evidence for: JavaScript, TypeScript, API, engineer, years, product.
 - Prepare one STAR story about execution under ambiguity.
 - Prepare one STAR story about collaboration and tradeoff decisions.
 - Prepare questions about team priorities, success metrics, and hiring timeline.
@@ -674,17 +674,17 @@ Alex Chen
 ### ATS Keyword Injection
 - Archetype: Backend Engineer
 - Coverage: 100%
-- JD Keywords: remote, engineer, product, data
-- 在 Professional Summary 中自然帶入：remote、engineer、product、data
+- JD Keywords: frontend, engineer, building, product, in, design
+- 在 Professional Summary 中自然帶入：frontend、engineer、building、product、in
 - 使用職位語言：「Backend Engineer」方向的動詞和術語
-- 【你已有但此 JD 未要求】可視情況選擇性提及：go、docker、kubernetes、growth
-- Missing (do NOT fabricate): go, docker, kubernetes, growth
+- 【你已有但此 JD 未要求】可視情況選擇性提及：JavaScript、TypeScript、React、Next.js、CSS
+- Missing (do NOT fabricate): JavaScript, TypeScript, React, Next.js, CSS, Tailwind, Accessibility, Analytics
 
 ### Apply Checklist
 - Open the source URL and confirm the role is still active.
 - Generate or refresh the tailored ATS PDF from this job.
-- Mirror these JD keywords honestly in your CV: remote, engineer, product, data
-- Do not overclaim missing areas: go, docker, kubernetes, growth
+- Mirror these JD keywords honestly in your CV: frontend, engineer, building, product, in, design
+- Do not overclaim missing areas: JavaScript, TypeScript, React, Next.js, CSS, Tailwind
 - Log status, recruiter/contact, and next follow-up date in the tracker.
 
 ### Outreach Email
@@ -693,7 +693,7 @@ Hi GitLab Greenhouse team,
 
 I am Alex Chen, and I am interested in the Senior Backend Engineer(Go), Continuous Delivery role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.
 
-The role stood out because it maps closely to my experience with remote, engineer, product, data.
+The role stood out because it maps closely to my experience with frontend, engineer, building, product, in.
 
 I would appreciate the chance to share how my experience can support the team. Thank you for your time.
 
@@ -716,7 +716,7 @@ Alex Chen
 
 ### Interview Prep
 - Prepare a 60-second story for why GitLab Greenhouse and why Senior Backend Engineer(Go), Continuous Delivery.
-- Prepare evidence for: remote, engineer, product, data.
+- Prepare evidence for: frontend, engineer, building, product, in, design.
 - Prepare one STAR story about execution under ambiguity.
 - Prepare one STAR story about collaboration and tradeoff decisions.
 - Prepare questions about team priorities, success metrics, and hiring timeline.
@@ -739,17 +739,17 @@ Alex Chen
 ### ATS Keyword Injection
 - Archetype: Agentic / Automation
 - Coverage: 100%
-- JD Keywords: API, remote, product, data
-- 在 Professional Summary 中自然帶入：API、remote、product、data
+- JD Keywords: API, building, product, in, design, architecture, full
+- 在 Professional Summary 中自然帶入：API、building、product、in、design
 - 使用職位語言：「Agentic / Automation」方向的動詞和術語
-- 【你已有但此 JD 未要求】可視情況選擇性提及：growth、sales、operations
-- Missing (do NOT fabricate): growth, sales, operations
+- 【你已有但此 JD 未要求】可視情況選擇性提及：JavaScript、TypeScript、React、Next.js、CSS
+- Missing (do NOT fabricate): JavaScript, TypeScript, React, Next.js, CSS, Tailwind, Accessibility, Analytics
 
 ### Apply Checklist
 - Open the source URL and confirm the role is still active.
 - Generate or refresh the tailored ATS PDF from this job.
-- Mirror these JD keywords honestly in your CV: API, remote, product, data
-- Do not overclaim missing areas: growth, sales, operations
+- Mirror these JD keywords honestly in your CV: API, building, product, in, design, architecture, full
+- Do not overclaim missing areas: JavaScript, TypeScript, React, Next.js, CSS, Tailwind
 - Log status, recruiter/contact, and next follow-up date in the tracker.
 
 ### Outreach Email
@@ -758,7 +758,7 @@ Hi GitLab Greenhouse team,
 
 I am Alex Chen, and I am interested in the VP of Product Security role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.
 
-The role stood out because it maps closely to my experience with API, remote, product, data.
+The role stood out because it maps closely to my experience with API, building, product, in, design.
 
 I would appreciate the chance to share how my experience can support the team. Thank you for your time.
 
@@ -781,7 +781,7 @@ Alex Chen
 
 ### Interview Prep
 - Prepare a 60-second story for why GitLab Greenhouse and why VP of Product Security.
-- Prepare evidence for: API, remote, product, data.
+- Prepare evidence for: API, building, product, in, design, architecture.
 - Prepare one STAR story about execution under ambiguity.
 - Prepare one STAR story about collaboration and tradeoff decisions.
 - Prepare questions about team priorities, success metrics, and hiring timeline.

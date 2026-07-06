@@ -1,6 +1,6 @@
 # Career Ops Deep Fit Report
 
-Generated: 2026-07-06T14:12:57.749Z
+Generated: 2026-07-06T15:54:06.013Z
 LLM provider: none
 Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 exploratory)
 
@@ -12,12 +12,12 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Grade: A
 - Confidence: medium
 - Decision: pursue aggressively
-- Thesis: Staff Backend Engineer (Go), Continuous Delivery at GitLab Greenhouse is pursue aggressively because the snapshot score is 87, with 3 profile/role keyword hits and 1 external evidence item(s).
+- Thesis: Staff Backend Engineer (Go), Continuous Delivery at GitLab Greenhouse is pursue aggressively because the snapshot score is 87, with 3 profile/role keyword hits and 2 external evidence item(s).
 
 #### Evidence
 - Keyword hits: Frontend Engineer, remote, Frontend Engineer
 - Keyword misses: go, docker, kubernetes, growth
-- Research signals: AI / data / platform signal, risk signal to inspect manually, remote or hybrid signal
+- Research signals: AI / data / platform signal, growth or funding signal, risk signal to inspect manually, remote or hybrid signal
 - Compensation leverage: high
 
 #### Concerns
@@ -70,14 +70,14 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 
 - Score: 87
 - Grade: A
-- Confidence: high
+- Confidence: medium
 - Decision: pursue aggressively
-- Thesis: Senior / Staff Product Engineer at Linear Ashby is pursue aggressively because the snapshot score is 87, with 7 profile/role keyword hits and 5 external evidence item(s).
+- Thesis: Senior / Staff Product Engineer at Linear Ashby is pursue aggressively because the snapshot score is 87, with 7 profile/role keyword hits and 1 external evidence item(s).
 
 #### Evidence
 - Keyword hits: TypeScript, React, API, remote, TypeScript, React, Product Engineer
 - Keyword misses: postgres, agents
-- Research signals: AI / data / platform signal, risk signal to inspect manually, remote or hybrid signal
+- Research signals: AI / data / platform signal, growth or funding signal, remote or hybrid signal
 - Compensation leverage: high
 
 #### Concerns
@@ -100,14 +100,14 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 
 - Score: 87
 - Grade: A
-- Confidence: high
+- Confidence: medium
 - Decision: pursue aggressively
-- Thesis: Senior / Staff Product Engineer at Linear Ashby is pursue aggressively because the snapshot score is 87, with 7 profile/role keyword hits and 5 external evidence item(s).
+- Thesis: Senior / Staff Product Engineer at Linear Ashby is pursue aggressively because the snapshot score is 87, with 7 profile/role keyword hits and 1 external evidence item(s).
 
 #### Evidence
 - Keyword hits: TypeScript, React, API, remote, TypeScript, React, Product Engineer
 - Keyword misses: postgres, agents
-- Research signals: AI / data / platform signal, risk signal to inspect manually, remote or hybrid signal
+- Research signals: AI / data / platform signal, growth or funding signal, remote or hybrid signal
 - Compensation leverage: high
 
 #### Concerns
@@ -130,14 +130,14 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 
 - Score: 87
 - Grade: A
-- Confidence: high
+- Confidence: medium
 - Decision: pursue aggressively
-- Thesis: Product Engineer at Linear Ashby is pursue aggressively because the snapshot score is 87, with 7 profile/role keyword hits and 5 external evidence item(s).
+- Thesis: Product Engineer at Linear Ashby is pursue aggressively because the snapshot score is 87, with 7 profile/role keyword hits and 1 external evidence item(s).
 
 #### Evidence
 - Keyword hits: TypeScript, React, API, remote, TypeScript, React, Product Engineer
 - Keyword misses: agents
-- Research signals: AI / data / platform signal, risk signal to inspect manually, remote or hybrid signal
+- Research signals: AI / data / platform signal, growth or funding signal, remote or hybrid signal
 - Compensation leverage: high
 
 #### Concerns
@@ -167,7 +167,7 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 #### Evidence
 - Keyword hits: React, API, remote, React, Full Stack Engineer
 - Keyword misses: python, sql, aws, gcp, docker, agents, growth, operations
-- Research signals: AI / data / platform signal, risk signal to inspect manually, remote or hybrid signal
+- Research signals: AI / data / platform signal, growth or funding signal, risk signal to inspect manually, remote or hybrid signal
 - Compensation leverage: high
 
 #### Concerns
@@ -192,12 +192,12 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Grade: A
 - Confidence: medium
 - Decision: pursue aggressively
-- Thesis: Staff Product Engineer (São Paulo) at LawnStarter is pursue aggressively because the snapshot score is 86, with 8 profile/role keyword hits and 1 external evidence item(s).
+- Thesis: Staff Product Engineer (São Paulo) at LawnStarter is pursue aggressively because the snapshot score is 86, with 8 profile/role keyword hits and 2 external evidence item(s).
 
 #### Evidence
 - Keyword hits: TypeScript, React, API, remote, dashboard, TypeScript, React, Product Engineer
 - Keyword misses: aws, rest, agents
-- Research signals: AI / data / platform signal, risk signal to inspect manually, remote or hybrid signal
+- Research signals: AI / data / platform signal, growth or funding signal, risk signal to inspect manually, remote or hybrid signal
 - Compensation leverage: high
 
 #### Concerns
@@ -220,14 +220,14 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 
 - Score: 86
 - Grade: A
-- Confidence: high
+- Confidence: medium
 - Decision: pursue aggressively
-- Thesis: Senior Systems Engineer at Yext is pursue aggressively because the snapshot score is 86, with 4 profile/role keyword hits and 5 external evidence item(s).
+- Thesis: Senior Systems Engineer at Yext is pursue aggressively because the snapshot score is 86, with 4 profile/role keyword hits and 1 external evidence item(s).
 
 #### Evidence
 - Keyword hits: API, Performance Optimization, remote, Product Engineer
 - Keyword misses: python, go, aws, gcp, azure, docker, kubernetes, terraform, agents
-- Research signals: AI / data / platform signal, risk signal to inspect manually, remote or hybrid signal
+- Research signals: AI / data / platform signal, growth or funding signal, remote or hybrid signal
 - Compensation leverage: high
 
 #### Concerns
@@ -307,12 +307,12 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Grade: A
 - Confidence: medium
 - Decision: pursue aggressively
-- Thesis: Senior Backend Engineer(Go), Continuous Delivery at GitLab Greenhouse is pursue aggressively because the snapshot score is 86, with 3 profile/role keyword hits and 1 external evidence item(s).
+- Thesis: Senior Backend Engineer(Go), Continuous Delivery at GitLab Greenhouse is pursue aggressively because the snapshot score is 86, with 3 profile/role keyword hits and 2 external evidence item(s).
 
 #### Evidence
 - Keyword hits: Frontend Engineer, remote, Frontend Engineer
 - Keyword misses: go, docker, kubernetes, growth
-- Research signals: AI / data / platform signal, risk signal to inspect manually, remote or hybrid signal
+- Research signals: AI / data / platform signal, growth or funding signal, risk signal to inspect manually, remote or hybrid signal
 - Compensation leverage: high
 
 #### Concerns
@@ -337,12 +337,12 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Grade: A
 - Confidence: medium
 - Decision: pursue aggressively
-- Thesis: VP of Product Security at GitLab Greenhouse is pursue aggressively because the snapshot score is 86, with 3 profile/role keyword hits and 1 external evidence item(s).
+- Thesis: VP of Product Security at GitLab Greenhouse is pursue aggressively because the snapshot score is 86, with 3 profile/role keyword hits and 2 external evidence item(s).
 
 #### Evidence
 - Keyword hits: API, remote, Product Engineer
 - Keyword misses: growth, sales, operations
-- Research signals: AI / data / platform signal, risk signal to inspect manually, remote or hybrid signal
+- Research signals: AI / data / platform signal, growth or funding signal, risk signal to inspect manually, remote or hybrid signal
 - Compensation leverage: high
 
 #### Concerns
@@ -422,14 +422,14 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 
 - Score: 86
 - Grade: A
-- Confidence: high
+- Confidence: medium
 - Decision: pursue aggressively
-- Thesis: Senior / Staff Product Engineer, AI at Linear Ashby is pursue aggressively because the snapshot score is 86, with 7 profile/role keyword hits and 5 external evidence item(s).
+- Thesis: Senior / Staff Product Engineer, AI at Linear Ashby is pursue aggressively because the snapshot score is 86, with 7 profile/role keyword hits and 1 external evidence item(s).
 
 #### Evidence
 - Keyword hits: TypeScript, React, API, remote, TypeScript, React, Product Engineer
 - Keyword misses: postgres, agents
-- Research signals: AI / data / platform signal, risk signal to inspect manually, remote or hybrid signal
+- Research signals: AI / data / platform signal, growth or funding signal, remote or hybrid signal
 - Compensation leverage: high
 
 #### Concerns
@@ -559,6 +559,60 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Use story story-2: data-heavy product decisions.
 - Use story story-3: systems and API collaboration.
 
+### TIKTOK PTE. LTD. - Frontend Software Engineer (Payment), TikTok Live - Singapore
+
+- Score: 85
+- Grade: A
+- Confidence: medium
+- Decision: pursue aggressively
+- Thesis: Frontend Software Engineer (Payment), TikTok Live - Singapore at TIKTOK PTE. LTD. is pursue aggressively because the snapshot score is 85, with 6 profile/role keyword hits and 0 external evidence item(s).
+
+#### Evidence
+- Keyword hits: Frontend Engineer, JavaScript, CSS, API, remote, Frontend Engineer
+- Keyword misses: growth
+- Research signals: -
+- Compensation leverage: high
+
+#### Concerns
+- External company evidence is thin; run deep research with a search API.
+
+#### Interview Strategy
+- Ask why the role is open and what success means in the first 90 days.
+- Probe team ownership, roadmap pressure, and cross-functional interfaces.
+
+#### CV Strategy
+- Lead with proof around: Frontend Engineer, JavaScript, CSS, API, remote, Frontend Engineer.
+- Use story story-1: frontend product execution.
+- Use story story-2: data-heavy product decisions.
+- Use story story-3: systems and API collaboration.
+
+### TIKTOK PTE. LTD. - Frontend Software Engineer (transaction), TikTok Live - Singapore
+
+- Score: 85
+- Grade: A
+- Confidence: medium
+- Decision: pursue aggressively
+- Thesis: Frontend Software Engineer (transaction), TikTok Live - Singapore at TIKTOK PTE. LTD. is pursue aggressively because the snapshot score is 85, with 6 profile/role keyword hits and 0 external evidence item(s).
+
+#### Evidence
+- Keyword hits: Frontend Engineer, JavaScript, CSS, API, remote, Frontend Engineer
+- Keyword misses: growth
+- Research signals: -
+- Compensation leverage: high
+
+#### Concerns
+- External company evidence is thin; run deep research with a search API.
+
+#### Interview Strategy
+- Ask why the role is open and what success means in the first 90 days.
+- Probe team ownership, roadmap pressure, and cross-functional interfaces.
+
+#### CV Strategy
+- Lead with proof around: Frontend Engineer, JavaScript, CSS, API, remote, Frontend Engineer.
+- Use story story-1: frontend product execution.
+- Use story story-2: data-heavy product decisions.
+- Use story story-3: systems and API collaboration.
+
 ### Quinncia Inc - Frontend Developer
 
 - Score: 85
@@ -571,7 +625,7 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Keyword hits: Frontend Engineer, JavaScript, TypeScript, React, Next.js, CSS, remote, TypeScript, React, Frontend Engineer
 - Keyword misses: docker, rest, machine learning, nlp, computer vision, operations
 - Research signals: -
-- Compensation leverage: high
+- Compensation leverage: -
 
 #### Concerns
 - External company evidence is thin; run deep research with a search API.
@@ -619,12 +673,12 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Grade: A
 - Confidence: medium
 - Decision: pursue aggressively
-- Thesis: Engineering Manager, SSCS: Supply Chain at GitLab Greenhouse is pursue aggressively because the snapshot score is 85, with 2 profile/role keyword hits and 1 external evidence item(s).
+- Thesis: Engineering Manager, SSCS: Supply Chain at GitLab Greenhouse is pursue aggressively because the snapshot score is 85, with 2 profile/role keyword hits and 2 external evidence item(s).
 
 #### Evidence
 - Keyword hits: remote, Product Engineer
 - Keyword misses: growth
-- Research signals: AI / data / platform signal, risk signal to inspect manually, remote or hybrid signal
+- Research signals: AI / data / platform signal, growth or funding signal, risk signal to inspect manually, remote or hybrid signal
 - Compensation leverage: high
 
 #### Concerns
@@ -670,307 +724,254 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Use story story-2: data-heavy product decisions.
 - Use story story-3: systems and API collaboration.
 
-### Airbnb Greenhouse - Staff Full Stack Engineer, Reservations and Additional Products
-
-- Score: 85
-- Grade: A
-- Confidence: medium
-- Decision: pursue aggressively
-- Thesis: Staff Full Stack Engineer, Reservations and Additional Products at Airbnb Greenhouse is pursue aggressively because the snapshot score is 85, with 5 profile/role keyword hits and 0 external evidence item(s).
-
-#### Evidence
-- Keyword hits: JavaScript, React, remote, React, Full Stack Engineer
-- Keyword misses: java, kotlin
-- Research signals: -
-- Compensation leverage: -
-
-#### Concerns
-- External company evidence is thin; run deep research with a search API.
-
-#### Interview Strategy
-- Ask why the role is open and what success means in the first 90 days.
-- Probe team ownership, roadmap pressure, and cross-functional interfaces.
-
-#### CV Strategy
-- Lead with proof around: JavaScript, React, remote, React, Full Stack Engineer.
-- Use story story-1: frontend product execution.
-- Use story story-2: data-heavy product decisions.
-- Use story story-3: systems and API collaboration.
-
-### Anthropic Greenhouse - Design Engineer, Web
-
-- Score: 85
-- Grade: A
-- Confidence: medium
-- Decision: pursue aggressively
-- Thesis: Design Engineer, Web at Anthropic Greenhouse is pursue aggressively because the snapshot score is 85, with 8 profile/role keyword hits and 0 external evidence item(s).
-
-#### Evidence
-- Keyword hits: React, Next.js, Accessibility, API, remote, design system, React, Product Engineer
-- Keyword misses: seo, growth, sales, operations
-- Research signals: -
-- Compensation leverage: -
-
-#### Concerns
-- External company evidence is thin; run deep research with a search API.
-
-#### Interview Strategy
-- Ask why the role is open and what success means in the first 90 days.
-- Probe team ownership, roadmap pressure, and cross-functional interfaces.
-
-#### CV Strategy
-- Lead with proof around: React, Next.js, Accessibility, API, remote, design system.
-- Use story story-1: frontend product execution.
-- Use story story-2: data-heavy product decisions.
-- Use story story-3: systems and API collaboration.
-
 ## Layer B — Standard Matches (roleFit 40-67)
 
-### NVIDIA Workday - Senior CPU Performance Developer Technology Engineer
-- Score: 75 | Grade: B | RoleFit: 45
+### Mico - Senior Fullstack Engineer (Tokyo)
+- Score: 84 | Grade: B | RoleFit: 62
 - Decision: pursue selectively
-- Keyword hits: -
-- Gaps: -
+- Keyword hits: TypeScript, React, Next.js, API, remote, TypeScript, React
+- Gaps: vue, python, mysql, llm, growth
 
-### Cursor Ashby - Strategic Account Executive, Life Sciences
-- Score: 74 | Grade: B | RoleFit: 45
+### Maven Clinic - Performance Marketing Lead, Paid Acquisition
+- Score: 83 | Grade: B | RoleFit: 62
 - Decision: pursue selectively
-- Keyword hits: -
-- Gaps: sales
+- Keyword hits: Analytics, API, remote, analytics
+- Gaps: sql, growth
 
-### NVIDIA Workday - Senior Software Engineer Aerial Platform
-- Score: 73 | Grade: B | RoleFit: 45
+### GitLab Greenhouse - Backend Engineer (Ruby), AI Engineering: Duo Agent Platform Tools
+- Score: 83 | Grade: B | RoleFit: 62
 - Decision: pursue selectively
-- Keyword hits: -
-- Gaps: python
+- Keyword hits: API, remote
+- Gaps: vue, python, go, sql, rest, agents
 
-### GOLDTECH RESOURCES PTE LTD - Technical Business Analyst – Power Platform
-- Score: 72 | Grade: B | RoleFit: 45
+### GitLab Greenhouse - Engineering Manager, Observability, Monitoring, and Integrations (Monetization)
+- Score: 83 | Grade: B | RoleFit: 62
 - Decision: pursue selectively
-- Keyword hits: -
-- Gaps: go, sql, power bi
+- Keyword hits: API, remote
+- Gaps: go, machine learning, growth, sales, operations
 
-### Roblox Greenhouse - Principal Software Engineer, WebRTC
-- Score: 72 | Grade: B | RoleFit: 45
+### GitLab Greenhouse - Principal Product Manager, Engineering Intelligence & Insights
+- Score: 83 | Grade: B | RoleFit: 62
 - Decision: pursue selectively
-- Keyword hits: Performance Optimization
-- Gaps: -
+- Keyword hits: Analytics, API, remote, dashboard, analytics
+- Gaps: growth, sales
 
-### Roblox Greenhouse - Human Evaluator, Studio (Contract)
-- Score: 71 | Grade: C | RoleFit: 45
+### GitLab Greenhouse - Senior AI Engineer
+- Score: 83 | Grade: B | RoleFit: 62
+- Decision: pursue selectively
+- Keyword hits: JavaScript, TypeScript, API, remote, TypeScript
+- Gaps: python, rest, llm, rag, prompt engineering, crm
+
+### GitLab Greenhouse - Senior Backend Engineer (Ruby), AI Engineering: Duo Agent Platform Tools
+- Score: 83 | Grade: B | RoleFit: 62
+- Decision: pursue selectively
+- Keyword hits: API, remote
+- Gaps: vue, python, go, sql, rest, agents
+
+### GitLab Greenhouse - Senior Backend Engineer,  SSCS: Supply Chain
+- Score: 83 | Grade: B | RoleFit: 62
+- Decision: pursue selectively
+- Keyword hits: API, remote
+- Gaps: go, rest, growth
+
+### GitLab Greenhouse - Senior Site Reliability Engineer, Tenant Services: Geo
+- Score: 83 | Grade: B | RoleFit: 62
+- Decision: pursue selectively
+- Keyword hits: remote, dashboard
+- Gaps: python, go, aws, kubernetes, terraform, growth
+
+### GitLab Greenhouse - Senior Software Engineer (RoR/Go), SSCS: Authentication
+- Score: 83 | Grade: B | RoleFit: 62
+- Decision: pursue selectively
+- Keyword hits: Accessibility, API, remote
+- Gaps: go, growth
+
+### GitLab Greenhouse - Staff Backend Engineer, Gitlab Delivery: Upgrades
+- Score: 83 | Grade: B | RoleFit: 62
 - Decision: pursue selectively
 - Keyword hits: remote
-- Gaps: -
+- Gaps: go, kubernetes, terraform, growth, operations
 
-### ElevenLabs Ashby - Audio Engineering (Freelance)
-- Score: 71 | Grade: C | RoleFit: 45
+### GitLab Greenhouse - Staff Backend Engineer (Ruby on Rails/AI), Verify
+- Score: 83 | Grade: B | RoleFit: 62
+- Decision: pursue selectively
+- Keyword hits: remote, dashboard
+- Gaps: go, llm, agents, growth
+
+### GitLab Greenhouse - Staff Backend Engineer,  Software Supply Chain Security
+- Score: 83 | Grade: B | RoleFit: 62
 - Decision: pursue selectively
 - Keyword hits: remote
-- Gaps: -
+- Gaps: go, growth
 
-### NVIDIA Workday - Senior Perception Engineer, Obstacle Foundation Models - Autonomous Vehicles
-- Score: 71 | Grade: C | RoleFit: 45
+### GitLab Greenhouse - Staff Backend Engineer, SSCS: AI Governance
+- Score: 83 | Grade: B | RoleFit: 62
 - Decision: pursue selectively
-- Keyword hits: -
-- Gaps: python, deep learning, computer vision, pytorch
+- Keyword hits: API, remote
+- Gaps: python, postgres, rest, agents, growth
 
-### Jabil - Buyer I
-- Score: 70 | Grade: C | RoleFit: 45
+### Canonical Greenhouse - Design Manager (Visual)
+- Score: 83 | Grade: B | RoleFit: 62
 - Decision: pursue selectively
-- Keyword hits: remote
-- Gaps: -
+- Keyword hits: Accessibility, Design Systems, remote, design system
+- Gaps: go, rest, growth, sales, excel
 
-### City of Brantford - Greenskeeper
-- Score: 70 | Grade: C | RoleFit: 45
+### Linear Ashby - Senior / Staff Fullstack Engineer
+- Score: 83 | Grade: B | RoleFit: 62
 - Decision: pursue selectively
-- Keyword hits: Accessibility, remote
-- Gaps: -
+- Keyword hits: JavaScript, TypeScript, React, Analytics, API, remote, analytics, TypeScript
+- Gaps: postgres, agents, growth
 
-### Databricks Greenhouse - Sr. Technical Enablement Specialist
-- Score: 70 | Grade: C | RoleFit: 45
+### Linear Ashby - Senior / Staff Fullstack Engineer
+- Score: 83 | Grade: B | RoleFit: 62
 - Decision: pursue selectively
-- Keyword hits: Analytics, analytics
-- Gaps: spark, excel
+- Keyword hits: TypeScript, React, Analytics, API, remote, analytics, TypeScript, React
+- Gaps: postgres, agents, growth
 
-### Roblox Greenhouse - Senior QA Engineer (Audio, Video, Communication)
-- Score: 70 | Grade: C | RoleFit: 45
+### ElevenLabs Ashby - Social Media Manager
+- Score: 83 | Grade: B | RoleFit: 62
 - Decision: pursue selectively
-- Keyword hits: -
-- Gaps: python
+- Keyword hits: Analytics, API, Figma, remote, dashboard, analytics
+- Gaps: agents, growth, operations
 
-### Roblox Greenhouse - Senior QA Engineer, AVC
-- Score: 70 | Grade: C | RoleFit: 45
+### ElevenLabs Ashby - Full-Stack Engineer
+- Score: 83 | Grade: B | RoleFit: 62
 - Decision: pursue selectively
-- Keyword hits: -
-- Gaps: python
+- Keyword hits: TypeScript, React, API, remote, TypeScript, React
+- Gaps: python, agents, growth, sales, operations
 
-### Roblox Greenhouse - Senior Software Engineer, App Performance
-- Score: 70 | Grade: C | RoleFit: 45
+### ElevenLabs Ashby - Full-Stack Engineer (Front-End Leaning)
+- Score: 83 | Grade: B | RoleFit: 62
 - Decision: pursue selectively
-- Keyword hits: -
-- Gaps: -
+- Keyword hits: TypeScript, React, API, remote, TypeScript, React
+- Gaps: agents, growth, sales, operations
 
-### Roblox Greenhouse - Senior Software Engineer (C++)
-- Score: 70 | Grade: C | RoleFit: 45
+### Supabase Ashby - Customer Solution Architect (AMER)
+- Score: 83 | Grade: B | RoleFit: 62
 - Decision: pursue selectively
-- Keyword hits: -
-- Gaps: -
+- Keyword hits: JavaScript, React, API, Performance Optimization, remote, React
+- Gaps: vue, python, go, postgres, mysql, growth
 
-### Ajax Systems - f
-- Score: 69 | Grade: C | RoleFit: 45
-- Decision: hold / compare
-- Keyword hits: remote
-- Gaps: -
+### Supabase Ashby - Customer Solution Architect (APAC)
+- Score: 83 | Grade: B | RoleFit: 62
+- Decision: pursue selectively
+- Keyword hits: JavaScript, React, API, Performance Optimization, remote, React
+- Gaps: vue, python, go, postgres, mysql, growth
 
-### City of Campbell River - Watch Clerk
-- Score: 69 | Grade: C | RoleFit: 45
-- Decision: hold / compare
-- Keyword hits: remote
-- Gaps: -
+### Supabase Ashby - Developer Relations Engineer (San Francisco, CA)
+- Score: 83 | Grade: B | RoleFit: 62
+- Decision: pursue selectively
+- Keyword hits: JavaScript, TypeScript, React, Next.js, remote, TypeScript, React
+- Gaps: vue, go, postgres, growth
 
-### Tarmac - Multi Skilled Operative
-- Score: 69 | Grade: C | RoleFit: 45
-- Decision: hold / compare
-- Keyword hits: remote
-- Gaps: -
+### Supabase Ashby - Customer Solution Architect, Team Lead (AMER)
+- Score: 83 | Grade: B | RoleFit: 62
+- Decision: pursue selectively
+- Keyword hits: React, remote, dashboard, React
+- Gaps: vue, go, postgres, growth, sales
 
-### NVIDIA Workday - Senior System Architect, High-Speed Interconnects
-- Score: 69 | Grade: C | RoleFit: 45
-- Decision: hold / compare
-- Keyword hits: -
-- Gaps: -
+### Supabase Ashby - Customer Reliability Engineer
+- Score: 83 | Grade: B | RoleFit: 62
+- Decision: pursue selectively
+- Keyword hits: JavaScript, TypeScript, React, Performance Optimization, remote, TypeScript, React
+- Gaps: vue, python, go, postgres, mysql, growth
 
-### NVIDIA Workday - Senior Hardware Time Synchronization Architect
-- Score: 69 | Grade: C | RoleFit: 45
-- Decision: hold / compare
-- Keyword hits: -
-- Gaps: python
+### Supabase Ashby - Postgres Deployment Engineer (Nix)
+- Score: 83 | Grade: B | RoleFit: 62
+- Decision: pursue selectively
+- Keyword hits: JavaScript, Performance Optimization, remote
+- Gaps: go, rust, postgres, aws, docker, kubernetes
 
-### ISCO International LLC - Junior Wireless DSP/PHY Algorithm Engineer
-- Score: 69 | Grade: C | RoleFit: 45
-- Decision: hold / compare
-- Keyword hits: remote
-- Gaps: python
+### Supabase Ashby - Software Engineer - Auth
+- Score: 83 | Grade: B | RoleFit: 62
+- Decision: pursue selectively
+- Keyword hits: JavaScript, TypeScript, Next.js, API, remote, dashboard, TypeScript
+- Gaps: go, postgres, mysql, aws, kubernetes, growth
 
-### NVIDIA Workday - Senior Mixed Signal Circuit Design Engineer
-- Score: 68 | Grade: C | RoleFit: 45
-- Decision: hold / compare
-- Keyword hits: -
-- Gaps: go, excel
+### Supabase Ashby - Strategic Customer Solutions Architect (APAC)
+- Score: 83 | Grade: B | RoleFit: 62
+- Decision: pursue selectively
+- Keyword hits: JavaScript, React, Analytics, remote, analytics, React
+- Gaps: vue, python, go, sql, postgres, mysql
 
-### Bluefield Daily Telegraph - 12 jobs that pay well without a degree
-- Score: 68 | Grade: C | RoleFit: 45
-- Decision: hold / compare
-- Keyword hits: remote
-- Gaps: -
+### Supabase Ashby - Design Engineer
+- Score: 83 | Grade: B | RoleFit: 62
+- Decision: pursue selectively
+- Keyword hits: React, Next.js, CSS, Tailwind, Figma, remote, design system, React
+- Gaps: go, postgres, growth
 
-### NVIDIA Workday - Hardware Design Engineer – Interconnect Design
-- Score: 68 | Grade: C | RoleFit: 45
-- Decision: hold / compare
-- Keyword hits: -
-- Gaps: -
+### Supabase Ashby - CLI Engineer
+- Score: 83 | Grade: B | RoleFit: 62
+- Decision: pursue selectively
+- Keyword hits: TypeScript, API, remote, TypeScript
+- Gaps: python, go, rust, postgres, docker, kubernetes
 
-### NVIDIA Workday - Developer Technology Engineer - HPC
-- Score: 68 | Grade: C | RoleFit: 45
-- Decision: hold / compare
-- Keyword hits: -
-- Gaps: -
+### Supabase Ashby - Partner Solutions Architect - AWS
+- Score: 83 | Grade: B | RoleFit: 62
+- Decision: pursue selectively
+- Keyword hits: React, Next.js, API, remote, React
+- Gaps: go, postgres, aws, growth
 
-### Universidad CatÃ³lica Santo Toribio de Mogrovejo - Docente a Tiempo Parcial para Escuela de ComunicaciÃ³n
-- Score: 67 | Grade: C | RoleFit: 45
-- Decision: hold / compare
-- Keyword hits: remote
-- Gaps: -
+### Supabase Ashby - Edge Functions Engineer
+- Score: 83 | Grade: B | RoleFit: 62
+- Decision: pursue selectively
+- Keyword hits: JavaScript, TypeScript, remote, TypeScript
+- Gaps: go, rust, postgres, aws, kubernetes, rest
 
-### British Embassy Tokyo - Events and Hospitality Officer
-- Score: 67 | Grade: C | RoleFit: 45
-- Decision: hold / compare
-- Keyword hits: -
-- Gaps: crm
+### Supabase Ashby - Anti Abuse Engineer
+- Score: 83 | Grade: B | RoleFit: 62
+- Decision: pursue selectively
+- Keyword hits: React, API, remote, dashboard, React
+- Gaps: python, go, sql, postgres, growth, operations
 
-### DCONSTRUCT ROBOTICS PTE. LTD. - C/C++ Software Engineer
-- Score: 66 | Grade: C | RoleFit: 45
-- Decision: hold / compare
-- Keyword hits: -
-- Gaps: -
+### Supabase Ashby - Control Plane Engineer
+- Score: 83 | Grade: B | RoleFit: 62
+- Decision: pursue selectively
+- Keyword hits: JavaScript, TypeScript, API, remote, dashboard, TypeScript
+- Gaps: go, postgres, docker, rest, growth
 
-### DCONSTRUCT ROBOTICS PTE. LTD. - Robotics Software Engineer
-- Score: 66 | Grade: C | RoleFit: 45
-- Decision: hold / compare
-- Keyword hits: -
-- Gaps: -
+### Exadel - Senior Software Engineer (Python, AI)
+- Score: 82 | Grade: B | RoleFit: 62
+- Decision: pursue selectively
+- Keyword hits: API, Performance Optimization, remote
+- Gaps: angular, python, sql, azure, docker, kubernetes
 
-### HPS PARTNERS PTE. LTD. - Senior/Software Engineer (Bluetooth Embedded System)
-- Score: 66 | Grade: C | RoleFit: 45
-- Decision: hold / compare
-- Keyword hits: -
-- Gaps: -
+### Exadel - Senior Platform Engineer
+- Score: 82 | Grade: B | RoleFit: 62
+- Decision: pursue selectively
+- Keyword hits: TypeScript, API, remote, TypeScript
+- Gaps: python, java, kotlin, aws, gcp, azure
 
-### DCONSTRUCT ROBOTICS PTE. LTD. - Software Engineer
-- Score: 66 | Grade: C | RoleFit: 45
-- Decision: hold / compare
-- Keyword hits: -
-- Gaps: computer vision
+### Bank of America - Assistant Vice President; Software Engineer
+- Score: 82 | Grade: B | RoleFit: 62
+- Decision: pursue selectively
+- Keyword hits: React, API, remote, React
+- Gaps: python, sql, rest, etl, growth
 
-### The Home Depot Canada - Special Services Associate AIRDRIE
-- Score: 66 | Grade: C | RoleFit: 45
-- Decision: hold / compare
-- Keyword hits: remote
-- Gaps: -
+### Exadel - Senior API Engineer (.NET)
+- Score: 82 | Grade: B | RoleFit: 62
+- Decision: pursue selectively
+- Keyword hits: API, remote
+- Gaps: sql, aws, azure
 
-### ABP Food Group - General Operative Northern Ireland
-- Score: 66 | Grade: C | RoleFit: 45
-- Decision: hold / compare
-- Keyword hits: remote
-- Gaps: -
+### Exadel - Senior Software Architect (.NET)
+- Score: 82 | Grade: B | RoleFit: 62
+- Decision: pursue selectively
+- Keyword hits: API, remote
+- Gaps: sql, aws, azure, rest
 
-### Unigo - 5 Ways Be a Better Listener
-- Score: 66 | Grade: C | RoleFit: 45
-- Decision: hold / compare
-- Keyword hits: remote
-- Gaps: -
-
-### The Home Depot Canada - Department Supervisor
-- Score: 66 | Grade: C | RoleFit: 45
-- Decision: hold / compare
-- Keyword hits: remote
-- Gaps: -
-
-### Tommy's Brewing Company - BRENTWOOD CHAGUANAS
-- Score: 66 | Grade: C | RoleFit: 45
-- Decision: hold / compare
-- Keyword hits: remote
-- Gaps: -
-
-### NVIDIA - NVIDIA MGX Platform
-- Score: 65 | Grade: C | RoleFit: 45
-- Decision: hold / compare
-- Keyword hits: remote
-- Gaps: -
-
-### MANPOWER STAFFING SERVICES (SINGAPORE) PTE LTD - Software Engineer, C#/C++
-- Score: 65 | Grade: C | RoleFit: 45
-- Decision: hold / compare
-- Keyword hits: -
-- Gaps: -
-
-### ELLIOTT MOSS CONSULTING PTE. LTD. - Software Engineer - Java
-- Score: 65 | Grade: C | RoleFit: 45
-- Decision: hold / compare
-- Keyword hits: -
-- Gaps: java
-
-### Doshi Group - Innovation
-- Score: 65 | Grade: C | RoleFit: 45
-- Decision: hold / compare
-- Keyword hits: remote
-- Gaps: -
+### Exadel - Senior DevOps Engineer
+- Score: 82 | Grade: B | RoleFit: 62
+- Decision: pursue selectively
+- Keyword hits: API, remote
+- Gaps: sql, aws, azure, docker, kubernetes
 
 ## Layer C — Exploratory Signals (roleFit < 40)
 
+- **Airbnb Greenhouse — Staff Full Stack Engineer, Reservations and Additional Products** (score: 85) | Top gap: java
+- **Anthropic Greenhouse — Design Engineer, Web** (score: 85) | Top gap: seo
 - **Vercel Greenhouse — Product Security Engineer** (score: 85) | Top gap: terraform
 - **Reddit Greenhouse — Director of Engineering, Developer Productivity** (score: 85) | Top gap: llm
-- **Reddit Greenhouse — Principal Technical Program Manager, Developer Productivity** (score: 85) | Top gap: llm
 - **Reddit Greenhouse — Principal Technical Program Manager, Performance** (score: 85) | Top gap: growth
 - **Reddit Greenhouse — Senior Frontend Engineer, Community Builders** (score: 85) | Top gap: vue
 - **Reddit Greenhouse — Senior Software Engineer - Full Stack Internal Tooling (Build and Deployment Platform)** (score: 85) | Top gap: go
@@ -980,11 +981,12 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - **Ramp Ashby — Software Engineer, Frontend** (score: 85) | Top gap: none
 - **PostHog Ashby — Developer who connects with other developers** (score: 85) | Top gap: go
 - **PostHog Ashby — Technical Account Executive** (score: 85) | Top gap: go
+- **Point Wild — Principal MLOps / Platform Engineer** (score: 85) | Top gap: go
+- **Uber — Staff Frontend Engineer, Core Services Eng** (score: 84) | Top gap: growth
 - **Pilotly — Product Engineer II** (score: 84) | Top gap: aws
 - **Equinix, Inc — Staff Software Engineer (Full-Stack)** (score: 84) | Top gap: python
 - **Coinbase — Senior Software Engineer, Frontend (Consumer - Trading)** (score: 84) | Top gap: growth
 - **Allstate — Product Engineer Senior Java Springboot** (score: 84) | Top gap: python
-- **Mico — Senior Fullstack Engineer (Tokyo)** (score: 84) | Top gap: vue
 - **GitLab Greenhouse — Engineering Manager, Continuous Delivery** (score: 84) | Top gap: go
 - **Databricks Greenhouse — Manager, Delivery Solutions Architects - Digital Native Business** (score: 84) | Top gap: python
 - **Figma Greenhouse — Software Engineer, Full Stack** (score: 84) | Top gap: python
@@ -996,6 +998,4 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - **Asana Greenhouse — Staff Software Engineer, API** (score: 84) | Top gap: agents
 - **ElevenLabs Ashby — Deployment Strategist - North America** (score: 84) | Top gap: python
 - **ElevenLabs Ashby — Deployment Strategist - Europe** (score: 84) | Top gap: python
-- **ElevenLabs Ashby — Deployment Strategist - Spain** (score: 84) | Top gap: python
-- **ElevenLabs Ashby — Deployment Strategist - Poland** (score: 84) | Top gap: python
 

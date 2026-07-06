@@ -1,6 +1,6 @@
 window.CV_CAREER_OPS_PARALLEL = {
   "source": "career-ops-parallel",
-  "generatedAt": "2026-07-06T14:12:53.566Z",
+  "generatedAt": "2026-07-06T15:54:01.611Z",
   "concurrency": 4,
   "jobCount": 50,
   "results": [
@@ -11,30 +11,34 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 87,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-07-06T14:12:53.461Z",
-      "completedAt": "2026-07-06T14:12:53.463Z",
+      "startedAt": "2026-07-06T15:54:01.494Z",
+      "completedAt": "2026-07-06T15:54:01.499Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
           "keywords": [
-            "remote",
+            "frontend",
             "engineer",
+            "building",
             "product",
-            "data"
+            "in",
+            "design"
           ],
           "nextActions": [
-            "開啟職缺確認仍可投遞",
-            "產生客製 ATS PDF",
-            "用同職類高分職缺校準履歷關鍵字"
+            "確認職缺仍開放",
+            "產生客製 ATS PDF（keyword injection）",
+            "安排 48 小時內投遞",
+            "準備 STAR 故事與 cover letter hook"
           ]
         },
         "research": {
           "signals": [
             "AI / data / platform signal",
+            "growth or funding signal",
             "risk signal to inspect manually",
             "remote or hybrid signal"
           ],
-          "evidenceCount": 1,
+          "evidenceCount": 2,
           "questions": [
             "What business unit owns the Staff Backend Engineer (Go), Continuous Delivery role?",
             "What measurable outcomes would this team expect in the first 90 days?",
@@ -91,7 +95,7 @@ window.CV_CAREER_OPS_PARALLEL = {
           },
           "negotiationScript": {
             "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Staff Backend Engineer (Go), Continuous Delivery package, including base, bonus, equity, and review cycle?",
-            "valueAnchor": "Based on the scope of Staff Backend Engineer (Go), Continuous Delivery and my fit around remote, engineer, product, data, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
+            "valueAnchor": "Based on the scope of Staff Backend Engineer (Go), Continuous Delivery and my fit around frontend, engineer, building, product, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
             "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
             "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
             "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
@@ -222,23 +226,26 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 87,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-07-06T14:12:53.461Z",
-      "completedAt": "2026-07-06T14:12:53.462Z",
+      "startedAt": "2026-07-06T15:54:01.493Z",
+      "completedAt": "2026-07-06T15:54:01.499Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
           "keywords": [
             "JavaScript",
             "TypeScript",
-            "remote",
             "engineer",
             "product",
-            "data"
+            "in",
+            "design",
+            "system",
+            "architecture"
           ],
           "nextActions": [
-            "開啟職缺確認仍可投遞",
-            "產生客製 ATS PDF",
-            "用同職類高分職缺校準履歷關鍵字"
+            "確認職缺仍開放",
+            "產生客製 ATS PDF（keyword injection）",
+            "安排 48 小時內投遞",
+            "準備 STAR 故事與 cover letter hook"
           ]
         },
         "research": {
@@ -306,7 +313,7 @@ window.CV_CAREER_OPS_PARALLEL = {
           },
           "negotiationScript": {
             "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Security Software Engineer package, including base, bonus, equity, and review cycle?",
-            "valueAnchor": "Based on the scope of Security Software Engineer and my fit around JavaScript, TypeScript, remote, engineer, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
+            "valueAnchor": "Based on the scope of Security Software Engineer and my fit around JavaScript, TypeScript, engineer, product, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
             "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
             "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
             "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
@@ -437,8 +444,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 87,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-07-06T14:12:53.462Z",
-      "completedAt": "2026-07-06T14:12:53.467Z",
+      "startedAt": "2026-07-06T15:54:01.494Z",
+      "completedAt": "2026-07-06T15:54:01.499Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -446,25 +453,27 @@ window.CV_CAREER_OPS_PARALLEL = {
             "TypeScript",
             "React",
             "API",
-            "remote",
+            "frontend",
             "engineer",
+            "years",
+            "building",
             "product",
-            "data",
-            "graphql"
+            "in"
           ],
           "nextActions": [
-            "開啟職缺確認仍可投遞",
-            "產生客製 ATS PDF",
-            "用同職類高分職缺校準履歷關鍵字"
+            "確認職缺仍開放",
+            "產生客製 ATS PDF（keyword injection）",
+            "安排 48 小時內投遞",
+            "準備 STAR 故事與 cover letter hook"
           ]
         },
         "research": {
           "signals": [
             "AI / data / platform signal",
-            "risk signal to inspect manually",
+            "growth or funding signal",
             "remote or hybrid signal"
           ],
-          "evidenceCount": 5,
+          "evidenceCount": 1,
           "questions": [
             "What business unit owns the Senior / Staff Product Engineer role?",
             "What measurable outcomes would this team expect in the first 90 days?",
@@ -521,7 +530,7 @@ window.CV_CAREER_OPS_PARALLEL = {
           },
           "negotiationScript": {
             "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Senior / Staff Product Engineer package, including base, bonus, equity, and review cycle?",
-            "valueAnchor": "Based on the scope of Senior / Staff Product Engineer and my fit around TypeScript, React, API, remote, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
+            "valueAnchor": "Based on the scope of Senior / Staff Product Engineer and my fit around TypeScript, React, API, frontend, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
             "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
             "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
             "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
@@ -652,8 +661,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 87,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-07-06T14:12:53.463Z",
-      "completedAt": "2026-07-06T14:12:53.467Z",
+      "startedAt": "2026-07-06T15:54:01.494Z",
+      "completedAt": "2026-07-06T15:54:01.500Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -661,25 +670,27 @@ window.CV_CAREER_OPS_PARALLEL = {
             "TypeScript",
             "React",
             "API",
-            "remote",
+            "frontend",
             "engineer",
+            "years",
+            "building",
             "product",
-            "data",
-            "graphql"
+            "in"
           ],
           "nextActions": [
-            "開啟職缺確認仍可投遞",
-            "產生客製 ATS PDF",
-            "用同職類高分職缺校準履歷關鍵字"
+            "確認職缺仍開放",
+            "產生客製 ATS PDF（keyword injection）",
+            "安排 48 小時內投遞",
+            "準備 STAR 故事與 cover letter hook"
           ]
         },
         "research": {
           "signals": [
             "AI / data / platform signal",
-            "risk signal to inspect manually",
+            "growth or funding signal",
             "remote or hybrid signal"
           ],
-          "evidenceCount": 5,
+          "evidenceCount": 1,
           "questions": [
             "What business unit owns the Senior / Staff Product Engineer role?",
             "What measurable outcomes would this team expect in the first 90 days?",
@@ -736,7 +747,7 @@ window.CV_CAREER_OPS_PARALLEL = {
           },
           "negotiationScript": {
             "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Senior / Staff Product Engineer package, including base, bonus, equity, and review cycle?",
-            "valueAnchor": "Based on the scope of Senior / Staff Product Engineer and my fit around TypeScript, React, API, remote, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
+            "valueAnchor": "Based on the scope of Senior / Staff Product Engineer and my fit around TypeScript, React, API, frontend, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
             "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
             "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
             "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
@@ -867,8 +878,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 87,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-07-06T14:12:53.469Z",
-      "completedAt": "2026-07-06T14:12:53.470Z",
+      "startedAt": "2026-07-06T15:54:01.509Z",
+      "completedAt": "2026-07-06T15:54:01.511Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -876,25 +887,27 @@ window.CV_CAREER_OPS_PARALLEL = {
             "TypeScript",
             "React",
             "API",
-            "remote",
+            "frontend",
             "engineer",
+            "years",
+            "building",
             "product",
-            "data",
-            "graphql"
+            "in"
           ],
           "nextActions": [
-            "開啟職缺確認仍可投遞",
-            "產生客製 ATS PDF",
-            "用同職類高分職缺校準履歷關鍵字"
+            "確認職缺仍開放",
+            "產生客製 ATS PDF（keyword injection）",
+            "安排 48 小時內投遞",
+            "準備 STAR 故事與 cover letter hook"
           ]
         },
         "research": {
           "signals": [
             "AI / data / platform signal",
-            "risk signal to inspect manually",
+            "growth or funding signal",
             "remote or hybrid signal"
           ],
-          "evidenceCount": 5,
+          "evidenceCount": 1,
           "questions": [
             "What business unit owns the Senior / Staff Product Engineer role?",
             "What measurable outcomes would this team expect in the first 90 days?",
@@ -951,7 +964,7 @@ window.CV_CAREER_OPS_PARALLEL = {
           },
           "negotiationScript": {
             "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Senior / Staff Product Engineer package, including base, bonus, equity, and review cycle?",
-            "valueAnchor": "Based on the scope of Senior / Staff Product Engineer and my fit around TypeScript, React, API, remote, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
+            "valueAnchor": "Based on the scope of Senior / Staff Product Engineer and my fit around TypeScript, React, API, frontend, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
             "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
             "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
             "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
@@ -1082,27 +1095,31 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 87,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-07-06T14:12:53.469Z",
-      "completedAt": "2026-07-06T14:12:53.471Z",
+      "startedAt": "2026-07-06T15:54:01.509Z",
+      "completedAt": "2026-07-06T15:54:01.510Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
           "keywords": [
             "React",
-            "remote",
+            "frontend",
             "engineer",
+            "years",
+            "building",
             "product",
-            "data"
+            "in"
           ],
           "nextActions": [
-            "開啟職缺確認仍可投遞",
-            "產生客製 ATS PDF",
-            "用同職類高分職缺校準履歷關鍵字"
+            "確認職缺仍開放",
+            "產生客製 ATS PDF（keyword injection）",
+            "安排 48 小時內投遞",
+            "準備 STAR 故事與 cover letter hook"
           ]
         },
         "research": {
           "signals": [
             "AI / data / platform signal",
+            "growth or funding signal",
             "risk signal to inspect manually",
             "remote or hybrid signal"
           ],
@@ -1176,7 +1193,7 @@ window.CV_CAREER_OPS_PARALLEL = {
           },
           "negotiationScript": {
             "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Safety Engineer package, including base, bonus, equity, and review cycle?",
-            "valueAnchor": "Based on the scope of Safety Engineer and my fit around React, remote, engineer, product, I would like to calibrate toward the stronger end of the range if the team sees the level match. My research indicates the JP midpoint for this level is around JPY 8,000,000 (annual).",
+            "valueAnchor": "Based on the scope of Safety Engineer and my fit around React, frontend, engineer, years, I would like to calibrate toward the stronger end of the range if the team sees the level match. My research indicates the JP midpoint for this level is around JPY 8,000,000 (annual).",
             "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
             "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
             "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
@@ -1307,33 +1324,36 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 86,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-07-06T14:12:53.472Z",
-      "completedAt": "2026-07-06T14:12:53.478Z",
+      "startedAt": "2026-07-06T15:54:01.509Z",
+      "completedAt": "2026-07-06T15:54:01.510Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
           "keywords": [
             "TypeScript",
             "React",
-            "remote",
-            "dashboard",
+            "frontend",
             "engineer",
             "product",
-            "data"
+            "in",
+            "design",
+            "architecture"
           ],
           "nextActions": [
-            "開啟職缺確認仍可投遞",
-            "產生客製 ATS PDF",
-            "用同職類高分職缺校準履歷關鍵字"
+            "確認職缺仍開放",
+            "產生客製 ATS PDF（keyword injection）",
+            "安排 48 小時內投遞",
+            "準備 STAR 故事與 cover letter hook"
           ]
         },
         "research": {
           "signals": [
             "AI / data / platform signal",
+            "growth or funding signal",
             "risk signal to inspect manually",
             "remote or hybrid signal"
           ],
-          "evidenceCount": 1,
+          "evidenceCount": 2,
           "questions": [
             "What business unit owns the Staff Product Engineer (São Paulo) role?",
             "What measurable outcomes would this team expect in the first 90 days?",
@@ -1393,7 +1413,7 @@ window.CV_CAREER_OPS_PARALLEL = {
           },
           "negotiationScript": {
             "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Staff Product Engineer (São Paulo) package, including base, bonus, equity, and review cycle?",
-            "valueAnchor": "Based on the scope of Staff Product Engineer (São Paulo) and my fit around TypeScript, React, remote, dashboard, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
+            "valueAnchor": "Based on the scope of Staff Product Engineer (São Paulo) and my fit around TypeScript, React, frontend, engineer, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
             "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
             "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
             "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
@@ -1524,32 +1544,35 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 86,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-07-06T14:12:53.472Z",
-      "completedAt": "2026-07-06T14:12:53.478Z",
+      "startedAt": "2026-07-06T15:54:01.509Z",
+      "completedAt": "2026-07-06T15:54:01.511Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
           "keywords": [
             "API",
             "Performance Optimization",
-            "remote",
             "engineer",
+            "building",
             "product",
-            "data"
+            "in",
+            "design",
+            "system"
           ],
           "nextActions": [
-            "開啟職缺確認仍可投遞",
-            "產生客製 ATS PDF",
-            "用同職類高分職缺校準履歷關鍵字"
+            "確認職缺仍開放",
+            "產生客製 ATS PDF（keyword injection）",
+            "安排 48 小時內投遞",
+            "準備 STAR 故事與 cover letter hook"
           ]
         },
         "research": {
           "signals": [
             "AI / data / platform signal",
-            "risk signal to inspect manually",
+            "growth or funding signal",
             "remote or hybrid signal"
           ],
-          "evidenceCount": 5,
+          "evidenceCount": 1,
           "questions": [
             "What business unit owns the Senior Systems Engineer role?",
             "What measurable outcomes would this team expect in the first 90 days?",
@@ -1610,7 +1633,7 @@ window.CV_CAREER_OPS_PARALLEL = {
           },
           "negotiationScript": {
             "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Senior Systems Engineer package, including base, bonus, equity, and review cycle?",
-            "valueAnchor": "Based on the scope of Senior Systems Engineer and my fit around API, Performance Optimization, remote, engineer, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
+            "valueAnchor": "Based on the scope of Senior Systems Engineer and my fit around API, Performance Optimization, engineer, building, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
             "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
             "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
             "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
@@ -1741,23 +1764,26 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 86,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-07-06T14:12:53.479Z",
-      "completedAt": "2026-07-06T14:12:53.480Z",
+      "startedAt": "2026-07-06T15:54:01.527Z",
+      "completedAt": "2026-07-06T15:54:01.529Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
           "keywords": [
             "Analytics",
             "API",
-            "remote",
             "engineer",
+            "years",
             "product",
-            "data"
+            "in",
+            "design",
+            "owning"
           ],
           "nextActions": [
-            "開啟職缺確認仍可投遞",
-            "產生客製 ATS PDF",
-            "用同職類高分職缺校準履歷關鍵字"
+            "確認職缺仍開放",
+            "產生客製 ATS PDF（keyword injection）",
+            "安排 48 小時內投遞",
+            "準備 STAR 故事與 cover letter hook"
           ]
         },
         "research": {
@@ -1810,7 +1836,7 @@ window.CV_CAREER_OPS_PARALLEL = {
           },
           "negotiationScript": {
             "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Lead AI Cloud Platform Engineer package, including base, bonus, equity, and review cycle?",
-            "valueAnchor": "Based on the scope of Lead AI Cloud Platform Engineer and my fit around Analytics, API, remote, engineer, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
+            "valueAnchor": "Based on the scope of Lead AI Cloud Platform Engineer and my fit around Analytics, API, engineer, years, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
             "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
             "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
             "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
@@ -1941,8 +1967,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 86,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-07-06T14:12:53.479Z",
-      "completedAt": "2026-07-06T14:12:53.480Z",
+      "startedAt": "2026-07-06T15:54:01.527Z",
+      "completedAt": "2026-07-06T15:54:01.530Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -1950,16 +1976,18 @@ window.CV_CAREER_OPS_PARALLEL = {
             "JavaScript",
             "TypeScript",
             "API",
-            "remote",
             "engineer",
+            "years",
             "product",
-            "data",
-            "restful"
+            "in",
+            "component",
+            "system"
           ],
           "nextActions": [
-            "開啟職缺確認仍可投遞",
-            "產生客製 ATS PDF",
-            "用同職類高分職缺校準履歷關鍵字"
+            "確認職缺仍開放",
+            "產生客製 ATS PDF（keyword injection）",
+            "安排 48 小時內投遞",
+            "準備 STAR 故事與 cover letter hook"
           ]
         },
         "research": {
@@ -2018,7 +2046,7 @@ window.CV_CAREER_OPS_PARALLEL = {
           },
           "negotiationScript": {
             "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Sr. Product Engineer - Web Services package, including base, bonus, equity, and review cycle?",
-            "valueAnchor": "Based on the scope of Sr. Product Engineer - Web Services and my fit around JavaScript, TypeScript, API, remote, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
+            "valueAnchor": "Based on the scope of Sr. Product Engineer - Web Services and my fit around JavaScript, TypeScript, API, engineer, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
             "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
             "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
             "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
@@ -2149,30 +2177,34 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 86,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-07-06T14:12:53.481Z",
-      "completedAt": "2026-07-06T14:12:53.487Z",
+      "startedAt": "2026-07-06T15:54:01.527Z",
+      "completedAt": "2026-07-06T15:54:01.529Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
           "keywords": [
-            "remote",
+            "frontend",
             "engineer",
+            "building",
             "product",
-            "data"
+            "in",
+            "design"
           ],
           "nextActions": [
-            "開啟職缺確認仍可投遞",
-            "產生客製 ATS PDF",
-            "用同職類高分職缺校準履歷關鍵字"
+            "確認職缺仍開放",
+            "產生客製 ATS PDF（keyword injection）",
+            "安排 48 小時內投遞",
+            "準備 STAR 故事與 cover letter hook"
           ]
         },
         "research": {
           "signals": [
             "AI / data / platform signal",
+            "growth or funding signal",
             "risk signal to inspect manually",
             "remote or hybrid signal"
           ],
-          "evidenceCount": 1,
+          "evidenceCount": 2,
           "questions": [
             "What business unit owns the Staff Backend Engineer (Go), Continuous Delivery role?",
             "What measurable outcomes would this team expect in the first 90 days?",
@@ -2229,7 +2261,7 @@ window.CV_CAREER_OPS_PARALLEL = {
           },
           "negotiationScript": {
             "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Staff Backend Engineer (Go), Continuous Delivery package, including base, bonus, equity, and review cycle?",
-            "valueAnchor": "Based on the scope of Staff Backend Engineer (Go), Continuous Delivery and my fit around remote, engineer, product, data, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
+            "valueAnchor": "Based on the scope of Staff Backend Engineer (Go), Continuous Delivery and my fit around frontend, engineer, building, product, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
             "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
             "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
             "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
@@ -2360,30 +2392,35 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 86,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-07-06T14:12:53.481Z",
-      "completedAt": "2026-07-06T14:12:53.488Z",
+      "startedAt": "2026-07-06T15:54:01.527Z",
+      "completedAt": "2026-07-06T15:54:01.530Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
           "keywords": [
             "API",
-            "remote",
+            "building",
             "product",
-            "data"
+            "in",
+            "design",
+            "architecture",
+            "full"
           ],
           "nextActions": [
-            "開啟職缺確認仍可投遞",
-            "產生客製 ATS PDF",
-            "用同職類高分職缺校準履歷關鍵字"
+            "確認職缺仍開放",
+            "產生客製 ATS PDF（keyword injection）",
+            "安排 48 小時內投遞",
+            "準備 STAR 故事與 cover letter hook"
           ]
         },
         "research": {
           "signals": [
             "AI / data / platform signal",
+            "growth or funding signal",
             "risk signal to inspect manually",
             "remote or hybrid signal"
           ],
-          "evidenceCount": 1,
+          "evidenceCount": 2,
           "questions": [
             "What business unit owns the Staff Backend Engineer (Go), Continuous Delivery role?",
             "What measurable outcomes would this team expect in the first 90 days?",
@@ -2440,7 +2477,7 @@ window.CV_CAREER_OPS_PARALLEL = {
           },
           "negotiationScript": {
             "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Staff Backend Engineer (Go), Continuous Delivery package, including base, bonus, equity, and review cycle?",
-            "valueAnchor": "Based on the scope of Staff Backend Engineer (Go), Continuous Delivery and my fit around remote, engineer, product, data, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
+            "valueAnchor": "Based on the scope of Staff Backend Engineer (Go), Continuous Delivery and my fit around frontend, engineer, building, product, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
             "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
             "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
             "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
@@ -2571,8 +2608,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 86,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-07-06T14:12:53.488Z",
-      "completedAt": "2026-07-06T14:12:53.494Z",
+      "startedAt": "2026-07-06T15:54:01.542Z",
+      "completedAt": "2026-07-06T15:54:01.544Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -2582,15 +2619,17 @@ window.CV_CAREER_OPS_PARALLEL = {
             "CSS",
             "Accessibility",
             "API",
-            "remote",
+            "frontend",
             "engineer",
+            "accessible",
             "product",
-            "data"
+            "in"
           ],
           "nextActions": [
-            "開啟職缺確認仍可投遞",
-            "產生客製 ATS PDF",
-            "用同職類高分職缺校準履歷關鍵字"
+            "確認職缺仍開放",
+            "產生客製 ATS PDF（keyword injection）",
+            "安排 48 小時內投遞",
+            "準備 STAR 故事與 cover letter hook"
           ]
         },
         "research": {
@@ -2658,7 +2697,7 @@ window.CV_CAREER_OPS_PARALLEL = {
           },
           "negotiationScript": {
             "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Security Software Engineer package, including base, bonus, equity, and review cycle?",
-            "valueAnchor": "Based on the scope of Security Software Engineer and my fit around JavaScript, TypeScript, remote, engineer, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
+            "valueAnchor": "Based on the scope of Security Software Engineer and my fit around JavaScript, TypeScript, engineer, product, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
             "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
             "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
             "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
@@ -2789,8 +2828,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 86,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-07-06T14:12:53.488Z",
-      "completedAt": "2026-07-06T14:12:53.494Z",
+      "startedAt": "2026-07-06T15:54:01.542Z",
+      "completedAt": "2026-07-06T15:54:01.543Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -2802,14 +2841,15 @@ window.CV_CAREER_OPS_PARALLEL = {
             "Tailwind",
             "Accessibility",
             "Design Systems",
-            "remote",
-            "design system",
-            "engineer"
+            "frontend",
+            "engineer",
+            "years"
           ],
           "nextActions": [
-            "開啟職缺確認仍可投遞",
-            "產生客製 ATS PDF",
-            "用同職類高分職缺校準履歷關鍵字"
+            "確認職缺仍開放",
+            "產生客製 ATS PDF（keyword injection）",
+            "安排 48 小時內投遞",
+            "準備 STAR 故事與 cover letter hook"
           ]
         },
         "research": {
@@ -3000,8 +3040,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 86,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-07-06T14:12:53.495Z",
-      "completedAt": "2026-07-06T14:12:53.496Z",
+      "startedAt": "2026-07-06T15:54:01.542Z",
+      "completedAt": "2026-07-06T15:54:01.544Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -3009,25 +3049,27 @@ window.CV_CAREER_OPS_PARALLEL = {
             "TypeScript",
             "React",
             "API",
-            "remote",
+            "frontend",
             "engineer",
+            "years",
+            "building",
             "product",
-            "data",
-            "graphql"
+            "in"
           ],
           "nextActions": [
-            "開啟職缺確認仍可投遞",
-            "產生客製 ATS PDF",
-            "用同職類高分職缺校準履歷關鍵字"
+            "確認職缺仍開放",
+            "產生客製 ATS PDF（keyword injection）",
+            "安排 48 小時內投遞",
+            "準備 STAR 故事與 cover letter hook"
           ]
         },
         "research": {
           "signals": [
             "AI / data / platform signal",
-            "risk signal to inspect manually",
+            "growth or funding signal",
             "remote or hybrid signal"
           ],
-          "evidenceCount": 5,
+          "evidenceCount": 1,
           "questions": [
             "What business unit owns the Senior / Staff Product Engineer role?",
             "What measurable outcomes would this team expect in the first 90 days?",
@@ -3084,7 +3126,7 @@ window.CV_CAREER_OPS_PARALLEL = {
           },
           "negotiationScript": {
             "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Senior / Staff Product Engineer package, including base, bonus, equity, and review cycle?",
-            "valueAnchor": "Based on the scope of Senior / Staff Product Engineer and my fit around TypeScript, React, API, remote, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
+            "valueAnchor": "Based on the scope of Senior / Staff Product Engineer and my fit around TypeScript, React, API, frontend, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
             "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
             "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
             "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
@@ -3215,24 +3257,26 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 86,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-07-06T14:12:53.495Z",
-      "completedAt": "2026-07-06T14:12:53.496Z",
+      "startedAt": "2026-07-06T15:54:01.542Z",
+      "completedAt": "2026-07-06T15:54:01.544Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
           "keywords": [
             "JavaScript",
             "React",
-            "remote",
             "engineer",
+            "years",
+            "building",
             "product",
-            "node.js",
-            "supabase"
+            "in",
+            "optimization"
           ],
           "nextActions": [
-            "開啟職缺確認仍可投遞",
-            "產生客製 ATS PDF",
-            "用同職類高分職缺校準履歷關鍵字"
+            "確認職缺仍開放",
+            "產生客製 ATS PDF（keyword injection）",
+            "安排 48 小時內投遞",
+            "準備 STAR 故事與 cover letter hook"
           ]
         },
         "research": {
@@ -3292,7 +3336,7 @@ window.CV_CAREER_OPS_PARALLEL = {
           },
           "negotiationScript": {
             "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Support Engineer (AMER) package, including base, bonus, equity, and review cycle?",
-            "valueAnchor": "Based on the scope of Support Engineer (AMER) and my fit around JavaScript, React, remote, engineer, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
+            "valueAnchor": "Based on the scope of Support Engineer (AMER) and my fit around JavaScript, React, engineer, years, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
             "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
             "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
             "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
@@ -3423,24 +3467,26 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 86,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-07-06T14:12:53.497Z",
-      "completedAt": "2026-07-06T14:12:53.502Z",
+      "startedAt": "2026-07-06T15:54:01.552Z",
+      "completedAt": "2026-07-06T15:54:01.554Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
           "keywords": [
             "JavaScript",
             "React",
-            "remote",
             "engineer",
+            "years",
+            "building",
             "product",
-            "node.js",
-            "supabase"
+            "in",
+            "optimization"
           ],
           "nextActions": [
-            "開啟職缺確認仍可投遞",
-            "產生客製 ATS PDF",
-            "用同職類高分職缺校準履歷關鍵字"
+            "確認職缺仍開放",
+            "產生客製 ATS PDF（keyword injection）",
+            "安排 48 小時內投遞",
+            "準備 STAR 故事與 cover letter hook"
           ]
         },
         "research": {
@@ -3500,7 +3546,7 @@ window.CV_CAREER_OPS_PARALLEL = {
           },
           "negotiationScript": {
             "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Support Engineer (AMER) package, including base, bonus, equity, and review cycle?",
-            "valueAnchor": "Based on the scope of Support Engineer (AMER) and my fit around JavaScript, React, remote, engineer, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
+            "valueAnchor": "Based on the scope of Support Engineer (AMER) and my fit around JavaScript, React, engineer, years, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
             "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
             "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
             "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
@@ -3631,22 +3677,25 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 86,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-07-06T14:12:53.497Z",
-      "completedAt": "2026-07-06T14:12:53.502Z",
+      "startedAt": "2026-07-06T15:54:01.552Z",
+      "completedAt": "2026-07-06T15:54:01.554Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
           "keywords": [
             "API",
-            "remote",
             "engineer",
+            "years",
+            "building",
             "product",
-            "supabase"
+            "in",
+            "libraries"
           ],
           "nextActions": [
-            "開啟職缺確認仍可投遞",
-            "產生客製 ATS PDF",
-            "用同職類高分職缺校準履歷關鍵字"
+            "確認職缺仍開放",
+            "產生客製 ATS PDF（keyword injection）",
+            "安排 48 小時內投遞",
+            "準備 STAR 故事與 cover letter hook"
           ]
         },
         "research": {
@@ -3706,7 +3755,7 @@ window.CV_CAREER_OPS_PARALLEL = {
           },
           "negotiationScript": {
             "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Support Engineer (AMER) package, including base, bonus, equity, and review cycle?",
-            "valueAnchor": "Based on the scope of Support Engineer (AMER) and my fit around JavaScript, React, remote, engineer, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
+            "valueAnchor": "Based on the scope of Support Engineer (AMER) and my fit around JavaScript, React, engineer, years, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
             "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
             "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
             "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
@@ -3837,8 +3886,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 86,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-07-06T14:12:53.503Z",
-      "completedAt": "2026-07-06T14:12:53.509Z",
+      "startedAt": "2026-07-06T15:54:01.552Z",
+      "completedAt": "2026-07-06T15:54:01.553Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -3847,16 +3896,18 @@ window.CV_CAREER_OPS_PARALLEL = {
             "React",
             "Analytics",
             "API",
-            "remote",
-            "design system",
             "engineer",
+            "building",
+            "accessible",
             "product",
-            "data"
+            "in",
+            "design"
           ],
           "nextActions": [
-            "開啟職缺確認仍可投遞",
-            "產生客製 ATS PDF",
-            "用同職類高分職缺校準履歷關鍵字"
+            "確認職缺仍開放",
+            "產生客製 ATS PDF（keyword injection）",
+            "安排 48 小時內投遞",
+            "準備 STAR 故事與 cover letter hook"
           ]
         },
         "research": {
@@ -4041,33 +4092,32 @@ window.CV_CAREER_OPS_PARALLEL = {
       }
     },
     {
-      "jobKey": "url:https://remotive.com/remote-jobs/software-development/frontend-developer-2090991",
-      "company": "Quinncia Inc",
-      "title": "Frontend Developer",
+      "jobKey": "url:https://www.mycareersfuture.gov.sg/job/eebd44b1382d7840b8c092b1fc312524",
+      "company": "TIKTOK PTE. LTD.",
+      "title": "Frontend Software Engineer (Payment), TikTok Live - Singapore",
       "score": 85,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-07-06T14:12:53.503Z",
-      "completedAt": "2026-07-06T14:12:53.509Z",
+      "startedAt": "2026-07-06T15:54:01.552Z",
+      "completedAt": "2026-07-06T15:54:01.554Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
           "keywords": [
             "JavaScript",
-            "TypeScript",
-            "React",
-            "Next.js",
             "CSS",
-            "remote",
+            "frontend",
             "engineer",
+            "years",
+            "building",
             "product",
-            "data",
-            "restful"
+            "in"
           ],
           "nextActions": [
-            "開啟職缺確認仍可投遞",
-            "產生客製 ATS PDF",
-            "用同職類高分職缺校準履歷關鍵字"
+            "確認職缺仍開放",
+            "產生客製 ATS PDF（keyword injection）",
+            "安排 48 小時內投遞",
+            "準備 STAR 故事與 cover letter hook"
           ]
         },
         "research": {
@@ -4084,33 +4134,36 @@ window.CV_CAREER_OPS_PARALLEL = {
           ]
         },
         "compensation": {
-          "jobKey": "url:https://remotive.com/remote-jobs/software-development/frontend-developer-2090991",
-          "company": "Quinncia Inc",
-          "title": "Frontend Developer",
-          "market": "us",
+          "jobKey": "url:https://www.mycareersfuture.gov.sg/job/eebd44b1382d7840b8c092b1fc312524",
+          "company": "TIKTOK PTE. LTD.",
+          "title": "Frontend Software Engineer (Payment), TikTok Live - Singapore",
+          "market": "jp",
           "inferredLevel": "mid",
           "candidateLevel": "mid",
           "leverage": "high",
           "evidence": {
-            "salaryMentions": [
-              "$20",
-              "$35"
-            ],
+            "salaryMentions": [],
             "benefitSignals": [
-              "bonus",
-              "equity",
               "work-mode flexibility",
               "learning budget"
             ]
           },
-          "marketBenchmark": null,
+          "marketBenchmark": {
+            "currency": "JPY",
+            "unit": "annual",
+            "range": "JPY 6,000,000 – 10,000,000",
+            "midpoint": "JPY 8,000,000",
+            "floor": 6000000,
+            "ceiling": 10000000,
+            "source": "TokyoDev / Japan-Dev 2024-2025",
+            "note": "Tokyo-based international tech companies skew higher (+30-50%). Japanese-headquartered companies average ¥8.5M for mid-level."
+          },
           "structure": {
             "baseSalary": [
-              "$20",
-              "$35"
+              "Market range for mid (JP): JPY 6,000,000 – 10,000,000 annual. Source: TokyoDev / Japan-Dev 2024-2025."
             ],
-            "bonus": "Ask whether bonus is guaranteed, target, or discretionary.",
-            "equity": "Clarify grant size, vesting schedule, refreshers, and strike/RSU terms.",
+            "bonus": "Ask whether there is annual bonus, performance bonus, or sign-on bonus.",
+            "equity": "Ask whether equity, RSU, options, or profit-sharing exists.",
             "benefits": [
               "Health / insurance coverage",
               "Paid leave and holidays",
@@ -4128,8 +4181,8 @@ window.CV_CAREER_OPS_PARALLEL = {
             ]
           },
           "negotiationScript": {
-            "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Frontend Developer package, including base, bonus, equity, and review cycle?",
-            "valueAnchor": "Based on the scope of Frontend Developer and my fit around JavaScript, TypeScript, React, Next.js, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
+            "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Frontend Software Engineer (Payment), TikTok Live - Singapore package, including base, bonus, equity, and review cycle?",
+            "valueAnchor": "Based on the scope of Frontend Software Engineer (Payment), TikTok Live - Singapore and my fit around JavaScript, CSS, frontend, engineer, I would like to calibrate toward the stronger end of the range if the team sees the level match. My research indicates the JP midpoint for this level is around JPY 8,000,000 (annual).",
             "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
             "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
             "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
@@ -4141,13 +4194,378 @@ window.CV_CAREER_OPS_PARALLEL = {
             "Do not trade base salary away without valuing the replacement benefit."
           ],
           "nextActions": [
-            "Verify whether posted compensation is base-only or total compensation.",
+            "Collect market compensation evidence before naming a number.",
             "Ask recruiter for approved range and level.",
             "Map the job scope to proof points in the tailored CV.",
             "Prepare one counter package with base, bonus/equity, and non-cash levers."
           ],
-          "targetFrame": "Use posted compensation as the floor for scope calibration; anchor near the upper third only after confirming level and scope."
+          "targetFrame": "Market benchmark for mid in JP is JPY 6,000,000 – 10,000,000 (annual). Do not name a number first — ask for the approved range, then anchor near the midpoint or above."
         },
+        "stories": [
+          {
+            "id": "story-1",
+            "theme": "frontend product execution",
+            "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
+            "applicableQuestions": [
+              "Tell me about a project you are proud of.",
+              "Tell me about a time you handled ambiguity.",
+              "How have you applied frontend product execution?"
+            ],
+            "star": {
+              "situation": "You were tasked with a frontend product challenge. Proof point: \"Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.\" — set the scene: what product, what team size, and what was broken or missing?",
+              "task": "What was the specific outcome you were accountable for? Include the success metric (e.g. performance score, user adoption rate, release date).",
+              "action": "Walk through the key technical decisions: component architecture, state management tradeoffs, accessibility choices, or API contract design.",
+              "result": "Quantify the impact: load time delta, user adoption %, code reduction %, or stakeholder feedback. If no number, describe the quality or velocity improvement.",
+              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
+            },
+            "keywords": [
+              "frontend product execution",
+              "JavaScript",
+              "TypeScript",
+              "React",
+              "Next.js",
+              "CSS",
+              "Tailwind",
+              "Accessibility"
+            ],
+            "relevance": 2
+          },
+          {
+            "id": "story-2",
+            "theme": "data-heavy product decisions",
+            "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
+            "applicableQuestions": [
+              "Tell me about a project you are proud of.",
+              "Tell me about a time you handled ambiguity.",
+              "How have you applied data-heavy product decisions?"
+            ],
+            "star": {
+              "situation": "You were working with a data-intensive product. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — describe the data volume, the user workflow, and what was difficult to render or interpret.",
+              "task": "What decision did you own? (chart type, data model, aggregation strategy, caching layer, etc.)",
+              "action": "Explain how you chose between options, what you built or prototyped, and how you validated your approach with data or users.",
+              "result": "State the outcome: query latency, dashboard load time, user comprehension improvement, or reduction in support requests.",
+              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
+            },
+            "keywords": [
+              "data-heavy product decisions",
+              "JavaScript",
+              "TypeScript",
+              "React",
+              "Next.js",
+              "CSS",
+              "Tailwind",
+              "Accessibility"
+            ],
+            "relevance": 2
+          },
+          {
+            "id": "story-3",
+            "theme": "systems and API collaboration",
+            "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
+            "applicableQuestions": [
+              "Tell me about a project you are proud of.",
+              "Tell me about a time you handled ambiguity.",
+              "How have you applied systems and API collaboration?"
+            ],
+            "star": {
+              "situation": "You collaborated across system boundaries. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — name the systems, teams, and integration surface area.",
+              "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
+              "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
+              "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
+              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
+            },
+            "keywords": [
+              "systems and API collaboration",
+              "JavaScript",
+              "TypeScript",
+              "React",
+              "Next.js",
+              "CSS",
+              "Tailwind",
+              "Accessibility"
+            ],
+            "relevance": 2
+          }
+        ],
+        "applyAgent": {
+          "mode": "human-in-the-loop",
+          "url": "https://www.mycareersfuture.gov.sg/job/eebd44b1382d7840b8c092b1fc312524",
+          "steps": [
+            "Open the application URL in a controlled browser session.",
+            "Extract visible form fields and required uploads.",
+            "Map CV profile fields to the form without submitting.",
+            "Prepare tailored PDF and outreach text.",
+            "Stop before final submit and ask the user to review."
+          ],
+          "guardrails": [
+            "Never submit without explicit user confirmation.",
+            "Never fabricate work authorization, salary history, degree, or experience.",
+            "Never store API keys or credentials in job metadata.",
+            "Record only application status and user-approved notes."
+          ]
+        }
+      }
+    },
+    {
+      "jobKey": "url:https://www.mycareersfuture.gov.sg/job/0da14018a05634ffde57785dcd4e7783",
+      "company": "TIKTOK PTE. LTD.",
+      "title": "Frontend Software Engineer (transaction), TikTok Live - Singapore",
+      "score": 85,
+      "grade": "A",
+      "priority": "P0",
+      "startedAt": "2026-07-06T15:54:01.566Z",
+      "completedAt": "2026-07-06T15:54:01.568Z",
+      "workers": {
+        "evaluation": {
+          "recommendation": "值得投遞",
+          "keywords": [
+            "JavaScript",
+            "CSS",
+            "frontend",
+            "engineer",
+            "years",
+            "building",
+            "product",
+            "in"
+          ],
+          "nextActions": [
+            "確認職缺仍開放",
+            "產生客製 ATS PDF（keyword injection）",
+            "安排 48 小時內投遞",
+            "準備 STAR 故事與 cover letter hook"
+          ]
+        },
+        "research": {
+          "signals": [],
+          "evidenceCount": 0,
+          "questions": []
+        },
+        "application": {
+          "checklist": [
+            "Confirm posting is active.",
+            "Generate tailored ATS PDF.",
+            "Prepare outreach and follow-up.",
+            "Log status and next follow-up."
+          ]
+        },
+        "compensation": {
+          "jobKey": "url:https://www.mycareersfuture.gov.sg/job/eebd44b1382d7840b8c092b1fc312524",
+          "company": "TIKTOK PTE. LTD.",
+          "title": "Frontend Software Engineer (Payment), TikTok Live - Singapore",
+          "market": "jp",
+          "inferredLevel": "mid",
+          "candidateLevel": "mid",
+          "leverage": "high",
+          "evidence": {
+            "salaryMentions": [],
+            "benefitSignals": [
+              "work-mode flexibility",
+              "learning budget"
+            ]
+          },
+          "marketBenchmark": {
+            "currency": "JPY",
+            "unit": "annual",
+            "range": "JPY 6,000,000 – 10,000,000",
+            "midpoint": "JPY 8,000,000",
+            "floor": 6000000,
+            "ceiling": 10000000,
+            "source": "TokyoDev / Japan-Dev 2024-2025",
+            "note": "Tokyo-based international tech companies skew higher (+30-50%). Japanese-headquartered companies average ¥8.5M for mid-level."
+          },
+          "structure": {
+            "baseSalary": [
+              "Market range for mid (JP): JPY 6,000,000 – 10,000,000 annual. Source: TokyoDev / Japan-Dev 2024-2025."
+            ],
+            "bonus": "Ask whether there is annual bonus, performance bonus, or sign-on bonus.",
+            "equity": "Ask whether equity, RSU, options, or profit-sharing exists.",
+            "benefits": [
+              "Health / insurance coverage",
+              "Paid leave and holidays",
+              "Learning budget or certification support",
+              "Remote/hybrid setup, commute, or relocation support",
+              "Review cycle and promotion timeline"
+            ],
+            "nonCashLevers": [
+              "Title / level calibration",
+              "Start date flexibility",
+              "Remote days",
+              "Equipment budget",
+              "First review at 3 or 6 months",
+              "Conference / learning budget"
+            ]
+          },
+          "negotiationScript": {
+            "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Frontend Software Engineer (Payment), TikTok Live - Singapore package, including base, bonus, equity, and review cycle?",
+            "valueAnchor": "Based on the scope of Frontend Software Engineer (Payment), TikTok Live - Singapore and my fit around JavaScript, CSS, frontend, engineer, I would like to calibrate toward the stronger end of the range if the team sees the level match. My research indicates the JP midpoint for this level is around JPY 8,000,000 (annual).",
+            "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
+            "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
+            "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
+          },
+          "redLines": [
+            "Do not disclose current compensation unless legally appropriate and strategically useful.",
+            "Do not accept verbal-only compensation details; ask for written package components.",
+            "Do not negotiate before confirming level, scope, work mode, and review cycle.",
+            "Do not trade base salary away without valuing the replacement benefit."
+          ],
+          "nextActions": [
+            "Collect market compensation evidence before naming a number.",
+            "Ask recruiter for approved range and level.",
+            "Map the job scope to proof points in the tailored CV.",
+            "Prepare one counter package with base, bonus/equity, and non-cash levers."
+          ],
+          "targetFrame": "Market benchmark for mid in JP is JPY 6,000,000 – 10,000,000 (annual). Do not name a number first — ask for the approved range, then anchor near the midpoint or above."
+        },
+        "stories": [
+          {
+            "id": "story-1",
+            "theme": "frontend product execution",
+            "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
+            "applicableQuestions": [
+              "Tell me about a project you are proud of.",
+              "Tell me about a time you handled ambiguity.",
+              "How have you applied frontend product execution?"
+            ],
+            "star": {
+              "situation": "You were tasked with a frontend product challenge. Proof point: \"Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.\" — set the scene: what product, what team size, and what was broken or missing?",
+              "task": "What was the specific outcome you were accountable for? Include the success metric (e.g. performance score, user adoption rate, release date).",
+              "action": "Walk through the key technical decisions: component architecture, state management tradeoffs, accessibility choices, or API contract design.",
+              "result": "Quantify the impact: load time delta, user adoption %, code reduction %, or stakeholder feedback. If no number, describe the quality or velocity improvement.",
+              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
+            },
+            "keywords": [
+              "frontend product execution",
+              "JavaScript",
+              "TypeScript",
+              "React",
+              "Next.js",
+              "CSS",
+              "Tailwind",
+              "Accessibility"
+            ],
+            "relevance": 2
+          },
+          {
+            "id": "story-2",
+            "theme": "data-heavy product decisions",
+            "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
+            "applicableQuestions": [
+              "Tell me about a project you are proud of.",
+              "Tell me about a time you handled ambiguity.",
+              "How have you applied data-heavy product decisions?"
+            ],
+            "star": {
+              "situation": "You were working with a data-intensive product. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — describe the data volume, the user workflow, and what was difficult to render or interpret.",
+              "task": "What decision did you own? (chart type, data model, aggregation strategy, caching layer, etc.)",
+              "action": "Explain how you chose between options, what you built or prototyped, and how you validated your approach with data or users.",
+              "result": "State the outcome: query latency, dashboard load time, user comprehension improvement, or reduction in support requests.",
+              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
+            },
+            "keywords": [
+              "data-heavy product decisions",
+              "JavaScript",
+              "TypeScript",
+              "React",
+              "Next.js",
+              "CSS",
+              "Tailwind",
+              "Accessibility"
+            ],
+            "relevance": 2
+          },
+          {
+            "id": "story-3",
+            "theme": "systems and API collaboration",
+            "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
+            "applicableQuestions": [
+              "Tell me about a project you are proud of.",
+              "Tell me about a time you handled ambiguity.",
+              "How have you applied systems and API collaboration?"
+            ],
+            "star": {
+              "situation": "You collaborated across system boundaries. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — name the systems, teams, and integration surface area.",
+              "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
+              "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
+              "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
+              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
+            },
+            "keywords": [
+              "systems and API collaboration",
+              "JavaScript",
+              "TypeScript",
+              "React",
+              "Next.js",
+              "CSS",
+              "Tailwind",
+              "Accessibility"
+            ],
+            "relevance": 2
+          }
+        ],
+        "applyAgent": {
+          "mode": "human-in-the-loop",
+          "url": "https://www.mycareersfuture.gov.sg/job/0da14018a05634ffde57785dcd4e7783",
+          "steps": [
+            "Open the application URL in a controlled browser session.",
+            "Extract visible form fields and required uploads.",
+            "Map CV profile fields to the form without submitting.",
+            "Prepare tailored PDF and outreach text.",
+            "Stop before final submit and ask the user to review."
+          ],
+          "guardrails": [
+            "Never submit without explicit user confirmation.",
+            "Never fabricate work authorization, salary history, degree, or experience.",
+            "Never store API keys or credentials in job metadata.",
+            "Record only application status and user-approved notes."
+          ]
+        }
+      }
+    },
+    {
+      "jobKey": "url:https://remotive.com/remote-jobs/software-development/frontend-developer-2090991",
+      "company": "Quinncia Inc",
+      "title": "Frontend Developer",
+      "score": 85,
+      "grade": "A",
+      "priority": "P0",
+      "startedAt": "2026-07-06T15:54:01.566Z",
+      "completedAt": "2026-07-06T15:54:01.568Z",
+      "workers": {
+        "evaluation": {
+          "recommendation": "值得投遞",
+          "keywords": [
+            "JavaScript",
+            "TypeScript",
+            "React",
+            "Next.js",
+            "CSS",
+            "frontend",
+            "engineer",
+            "product",
+            "in",
+            "design"
+          ],
+          "nextActions": [
+            "確認職缺仍開放",
+            "產生客製 ATS PDF（keyword injection）",
+            "安排 48 小時內投遞",
+            "準備 STAR 故事與 cover letter hook"
+          ]
+        },
+        "research": {
+          "signals": [],
+          "evidenceCount": 0,
+          "questions": []
+        },
+        "application": {
+          "checklist": [
+            "Confirm posting is active.",
+            "Generate tailored ATS PDF.",
+            "Prepare outreach and follow-up.",
+            "Log status and next follow-up."
+          ]
+        },
+        "compensation": null,
         "stories": [
           {
             "id": "story-1",
@@ -4260,8 +4678,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 85,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-07-06T14:12:53.510Z",
-      "completedAt": "2026-07-06T14:12:53.511Z",
+      "startedAt": "2026-07-06T15:54:01.566Z",
+      "completedAt": "2026-07-06T15:54:01.568Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -4270,13 +4688,18 @@ window.CV_CAREER_OPS_PARALLEL = {
             "React",
             "CSS",
             "API",
-            "remote",
-            "product"
+            "frontend",
+            "years",
+            "building",
+            "product",
+            "in",
+            "design"
           ],
           "nextActions": [
-            "開啟職缺確認仍可投遞",
-            "產生客製 ATS PDF",
-            "用同職類高分職缺校準履歷關鍵字"
+            "確認職缺仍開放",
+            "產生客製 ATS PDF（keyword injection）",
+            "安排 48 小時內投遞",
+            "準備 STAR 故事與 cover letter hook"
           ]
         },
         "research": {
@@ -4405,30 +4828,34 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 85,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-07-06T14:12:53.510Z",
-      "completedAt": "2026-07-06T14:12:53.511Z",
+      "startedAt": "2026-07-06T15:54:01.566Z",
+      "completedAt": "2026-07-06T15:54:01.568Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
           "keywords": [
-            "remote",
             "engineer",
+            "years",
+            "building",
             "product",
-            "data"
+            "in",
+            "design"
           ],
           "nextActions": [
-            "開啟職缺確認仍可投遞",
-            "產生客製 ATS PDF",
-            "用同職類高分職缺校準履歷關鍵字"
+            "確認職缺仍開放",
+            "產生客製 ATS PDF（keyword injection）",
+            "安排 48 小時內投遞",
+            "準備 STAR 故事與 cover letter hook"
           ]
         },
         "research": {
           "signals": [
             "AI / data / platform signal",
+            "growth or funding signal",
             "risk signal to inspect manually",
             "remote or hybrid signal"
           ],
-          "evidenceCount": 1,
+          "evidenceCount": 2,
           "questions": [
             "What business unit owns the Staff Backend Engineer (Go), Continuous Delivery role?",
             "What measurable outcomes would this team expect in the first 90 days?",
@@ -4485,7 +4912,7 @@ window.CV_CAREER_OPS_PARALLEL = {
           },
           "negotiationScript": {
             "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Staff Backend Engineer (Go), Continuous Delivery package, including base, bonus, equity, and review cycle?",
-            "valueAnchor": "Based on the scope of Staff Backend Engineer (Go), Continuous Delivery and my fit around remote, engineer, product, data, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
+            "valueAnchor": "Based on the scope of Staff Backend Engineer (Go), Continuous Delivery and my fit around frontend, engineer, building, product, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
             "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
             "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
             "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
@@ -4616,23 +5043,25 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 85,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-07-06T14:12:53.512Z",
-      "completedAt": "2026-07-06T14:12:53.513Z",
+      "startedAt": "2026-07-06T15:54:01.580Z",
+      "completedAt": "2026-07-06T15:54:01.582Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
           "keywords": [
             "API",
-            "remote",
-            "dashboard",
             "engineer",
-            "product",
-            "data"
+            "years",
+            "building",
+            "in",
+            "design",
+            "system"
           ],
           "nextActions": [
-            "開啟職缺確認仍可投遞",
-            "產生客製 ATS PDF",
-            "用同職類高分職缺校準履歷關鍵字"
+            "確認職缺仍開放",
+            "產生客製 ATS PDF（keyword injection）",
+            "安排 48 小時內投遞",
+            "準備 STAR 故事與 cover letter hook"
           ]
         },
         "research": {
@@ -4761,23 +5190,26 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 85,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-07-06T14:12:53.512Z",
-      "completedAt": "2026-07-06T14:12:53.513Z",
+      "startedAt": "2026-07-06T15:54:01.580Z",
+      "completedAt": "2026-07-06T15:54:01.582Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
           "keywords": [
             "JavaScript",
             "React",
-            "remote",
             "engineer",
+            "years",
             "product",
-            "data"
+            "in",
+            "design",
+            "system"
           ],
           "nextActions": [
-            "開啟職缺確認仍可投遞",
-            "產生客製 ATS PDF",
-            "用同職類高分職缺校準履歷關鍵字"
+            "確認職缺仍開放",
+            "產生客製 ATS PDF（keyword injection）",
+            "安排 48 小時內投遞",
+            "準備 STAR 故事與 cover letter hook"
           ]
         },
         "research": {
@@ -4906,8 +5338,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 85,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-07-06T14:12:53.514Z",
-      "completedAt": "2026-07-06T14:12:53.520Z",
+      "startedAt": "2026-07-06T15:54:01.580Z",
+      "completedAt": "2026-07-06T15:54:01.582Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -4915,17 +5347,18 @@ window.CV_CAREER_OPS_PARALLEL = {
             "React",
             "Next.js",
             "Accessibility",
-            "remote",
-            "design system",
+            "frontend",
             "engineer",
+            "years",
+            "building",
             "product",
-            "data",
-            "visualization"
+            "in"
           ],
           "nextActions": [
-            "開啟職缺確認仍可投遞",
-            "產生客製 ATS PDF",
-            "用同職類高分職缺校準履歷關鍵字"
+            "確認職缺仍開放",
+            "產生客製 ATS PDF（keyword injection）",
+            "安排 48 小時內投遞",
+            "準備 STAR 故事與 cover letter hook"
           ]
         },
         "research": {
@@ -5054,8 +5487,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 85,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-07-06T14:12:53.514Z",
-      "completedAt": "2026-07-06T14:12:53.520Z",
+      "startedAt": "2026-07-06T15:54:01.580Z",
+      "completedAt": "2026-07-06T15:54:01.582Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -5064,16 +5497,18 @@ window.CV_CAREER_OPS_PARALLEL = {
             "TypeScript",
             "React",
             "Next.js",
-            "remote",
+            "frontend",
             "engineer",
+            "years",
+            "building",
             "product",
-            "data",
-            "node.js"
+            "in"
           ],
           "nextActions": [
-            "開啟職缺確認仍可投遞",
-            "產生客製 ATS PDF",
-            "用同職類高分職缺校準履歷關鍵字"
+            "確認職缺仍開放",
+            "產生客製 ATS PDF（keyword injection）",
+            "安排 48 小時內投遞",
+            "準備 STAR 故事與 cover letter hook"
           ]
         },
         "research": {
@@ -5264,19 +5699,24 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 85,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-07-06T14:12:53.521Z",
-      "completedAt": "2026-07-06T14:12:53.523Z",
+      "startedAt": "2026-07-06T15:54:01.588Z",
+      "completedAt": "2026-07-06T15:54:01.589Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
           "keywords": [
-            "remote",
+            "years",
+            "building",
             "product",
-            "data"
+            "in",
+            "design",
+            "workflows."
           ],
           "nextActions": [
-            "先與高分職缺比較，不急著投遞",
-            "補齊 JD 或標記喜歡 / 不喜歡以改善後續排序"
+            "確認職缺仍開放",
+            "產生客製 ATS PDF（keyword injection）",
+            "安排 48 小時內投遞",
+            "準備 STAR 故事與 cover letter hook"
           ]
         },
         "research": {
@@ -5399,166 +5839,30 @@ window.CV_CAREER_OPS_PARALLEL = {
       }
     },
     {
-      "jobKey": "url:https://job-boards.greenhouse.io/reddit/jobs/7944159",
-      "company": "Reddit Greenhouse",
-      "title": "Principal Technical Program Manager, Developer Productivity",
-      "score": 85,
-      "grade": "A",
-      "priority": "P0",
-      "startedAt": "2026-07-06T14:12:53.521Z",
-      "completedAt": "2026-07-06T14:12:53.522Z",
-      "workers": {
-        "evaluation": {
-          "recommendation": "值得投遞",
-          "keywords": [
-            "remote",
-            "product",
-            "data"
-          ],
-          "nextActions": [
-            "先與高分職缺比較，不急著投遞",
-            "補齊 JD 或標記喜歡 / 不喜歡以改善後續排序"
-          ]
-        },
-        "research": {
-          "signals": [],
-          "evidenceCount": 0,
-          "questions": []
-        },
-        "application": {
-          "checklist": [
-            "Confirm posting is active.",
-            "Generate tailored ATS PDF.",
-            "Prepare outreach and follow-up.",
-            "Log status and next follow-up."
-          ]
-        },
-        "compensation": null,
-        "stories": [
-          {
-            "id": "story-1",
-            "theme": "frontend product execution",
-            "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
-            "applicableQuestions": [
-              "Tell me about a project you are proud of.",
-              "Tell me about a time you handled ambiguity.",
-              "How have you applied frontend product execution?"
-            ],
-            "star": {
-              "situation": "You were tasked with a frontend product challenge. Proof point: \"Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.\" — set the scene: what product, what team size, and what was broken or missing?",
-              "task": "What was the specific outcome you were accountable for? Include the success metric (e.g. performance score, user adoption rate, release date).",
-              "action": "Walk through the key technical decisions: component architecture, state management tradeoffs, accessibility choices, or API contract design.",
-              "result": "Quantify the impact: load time delta, user adoption %, code reduction %, or stakeholder feedback. If no number, describe the quality or velocity improvement.",
-              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
-            },
-            "keywords": [
-              "frontend product execution",
-              "JavaScript",
-              "TypeScript",
-              "React",
-              "Next.js",
-              "CSS",
-              "Tailwind",
-              "Accessibility"
-            ],
-            "relevance": 0
-          },
-          {
-            "id": "story-2",
-            "theme": "data-heavy product decisions",
-            "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
-            "applicableQuestions": [
-              "Tell me about a project you are proud of.",
-              "Tell me about a time you handled ambiguity.",
-              "How have you applied data-heavy product decisions?"
-            ],
-            "star": {
-              "situation": "You were working with a data-intensive product. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — describe the data volume, the user workflow, and what was difficult to render or interpret.",
-              "task": "What decision did you own? (chart type, data model, aggregation strategy, caching layer, etc.)",
-              "action": "Explain how you chose between options, what you built or prototyped, and how you validated your approach with data or users.",
-              "result": "State the outcome: query latency, dashboard load time, user comprehension improvement, or reduction in support requests.",
-              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
-            },
-            "keywords": [
-              "data-heavy product decisions",
-              "JavaScript",
-              "TypeScript",
-              "React",
-              "Next.js",
-              "CSS",
-              "Tailwind",
-              "Accessibility"
-            ],
-            "relevance": 0
-          },
-          {
-            "id": "story-3",
-            "theme": "systems and API collaboration",
-            "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
-            "applicableQuestions": [
-              "Tell me about a project you are proud of.",
-              "Tell me about a time you handled ambiguity.",
-              "How have you applied systems and API collaboration?"
-            ],
-            "star": {
-              "situation": "You collaborated across system boundaries. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — name the systems, teams, and integration surface area.",
-              "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
-              "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
-              "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
-              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
-            },
-            "keywords": [
-              "systems and API collaboration",
-              "JavaScript",
-              "TypeScript",
-              "React",
-              "Next.js",
-              "CSS",
-              "Tailwind",
-              "Accessibility"
-            ],
-            "relevance": 0
-          }
-        ],
-        "applyAgent": {
-          "mode": "human-in-the-loop",
-          "url": "https://job-boards.greenhouse.io/reddit/jobs/7944159",
-          "steps": [
-            "Open the application URL in a controlled browser session.",
-            "Extract visible form fields and required uploads.",
-            "Map CV profile fields to the form without submitting.",
-            "Prepare tailored PDF and outreach text.",
-            "Stop before final submit and ask the user to review."
-          ],
-          "guardrails": [
-            "Never submit without explicit user confirmation.",
-            "Never fabricate work authorization, salary history, degree, or experience.",
-            "Never store API keys or credentials in job metadata.",
-            "Record only application status and user-approved notes."
-          ]
-        }
-      }
-    },
-    {
       "jobKey": "url:https://job-boards.greenhouse.io/reddit/jobs/7947049",
       "company": "Reddit Greenhouse",
       "title": "Principal Technical Program Manager, Performance",
       "score": 85,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-07-06T14:12:53.540Z",
-      "completedAt": "2026-07-06T14:12:53.541Z",
+      "startedAt": "2026-07-06T15:54:01.588Z",
+      "completedAt": "2026-07-06T15:54:01.590Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
           "keywords": [
-            "remote",
+            "years",
+            "building",
             "product",
-            "data"
+            "in",
+            "design",
+            "architecture"
           ],
           "nextActions": [
-            "先與高分職缺比較，不急著投遞",
-            "補齊 JD 或標記喜歡 / 不喜歡以改善後續排序"
+            "確認職缺仍開放",
+            "產生客製 ATS PDF（keyword injection）",
+            "安排 48 小時內投遞",
+            "準備 STAR 故事與 cover letter hook"
           ]
         },
         "research": {
@@ -5687,8 +5991,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 85,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-07-06T14:12:53.540Z",
-      "completedAt": "2026-07-06T14:12:53.541Z",
+      "startedAt": "2026-07-06T15:54:01.588Z",
+      "completedAt": "2026-07-06T15:54:01.590Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -5697,15 +6001,18 @@ window.CV_CAREER_OPS_PARALLEL = {
             "TypeScript",
             "React",
             "CSS",
-            "remote",
+            "frontend",
             "engineer",
+            "years",
+            "building",
             "product",
-            "data",
-            "graphql"
+            "in"
           ],
           "nextActions": [
-            "先與高分職缺比較，不急著投遞",
-            "補齊 JD 或標記喜歡 / 不喜歡以改善後續排序"
+            "確認職缺仍開放",
+            "產生客製 ATS PDF（keyword injection）",
+            "安排 48 小時內投遞",
+            "準備 STAR 故事與 cover letter hook"
           ]
         },
         "research": {
@@ -5834,8 +6141,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 85,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-07-06T14:12:53.542Z",
-      "completedAt": "2026-07-06T14:12:53.543Z",
+      "startedAt": "2026-07-06T15:54:01.588Z",
+      "completedAt": "2026-07-06T15:54:01.590Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -5843,15 +6150,18 @@ window.CV_CAREER_OPS_PARALLEL = {
             "React",
             "API",
             "Figma",
-            "remote",
+            "frontend",
             "engineer",
+            "years",
+            "building",
             "product",
-            "data",
-            "graphql"
+            "in"
           ],
           "nextActions": [
-            "先與高分職缺比較，不急著投遞",
-            "補齊 JD 或標記喜歡 / 不喜歡以改善後續排序"
+            "確認職缺仍開放",
+            "產生客製 ATS PDF（keyword injection）",
+            "安排 48 小時內投遞",
+            "準備 STAR 故事與 cover letter hook"
           ]
         },
         "research": {
@@ -5980,20 +6290,24 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 85,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-07-06T14:12:53.542Z",
-      "completedAt": "2026-07-06T14:12:53.543Z",
+      "startedAt": "2026-07-06T15:54:01.592Z",
+      "completedAt": "2026-07-06T15:54:01.594Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
           "keywords": [
-            "remote",
             "engineer",
+            "years",
+            "building",
             "product",
-            "data"
+            "in",
+            "design"
           ],
           "nextActions": [
-            "先與高分職缺比較，不急著投遞",
-            "補齊 JD 或標記喜歡 / 不喜歡以改善後續排序"
+            "確認職缺仍開放",
+            "產生客製 ATS PDF（keyword injection）",
+            "安排 48 小時內投遞",
+            "準備 STAR 故事與 cover letter hook"
           ]
         },
         "research": {
@@ -6122,21 +6436,24 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 85,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-07-06T14:12:53.544Z",
-      "completedAt": "2026-07-06T14:12:53.547Z",
+      "startedAt": "2026-07-06T15:54:01.592Z",
+      "completedAt": "2026-07-06T15:54:01.595Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
           "keywords": [
-            "remote",
-            "dashboard",
             "engineer",
+            "years",
+            "building",
             "product",
-            "data"
+            "in",
+            "design"
           ],
           "nextActions": [
-            "先與高分職缺比較，不急著投遞",
-            "補齊 JD 或標記喜歡 / 不喜歡以改善後續排序"
+            "確認職缺仍開放",
+            "產生客製 ATS PDF（keyword injection）",
+            "安排 48 小時內投遞",
+            "準備 STAR 故事與 cover letter hook"
           ]
         },
         "research": {
@@ -6265,26 +6582,31 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 85,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-07-06T14:12:53.544Z",
-      "completedAt": "2026-07-06T14:12:53.547Z",
+      "startedAt": "2026-07-06T15:54:01.592Z",
+      "completedAt": "2026-07-06T15:54:01.594Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
           "keywords": [
             "Figma",
-            "remote",
+            "frontend",
             "engineer",
-            "product"
+            "building",
+            "accessible",
+            "product",
+            "in"
           ],
           "nextActions": [
-            "開啟職缺確認仍可投遞",
-            "產生客製 ATS PDF",
-            "用同職類高分職缺校準履歷關鍵字"
+            "確認職缺仍開放",
+            "產生客製 ATS PDF（keyword injection）",
+            "安排 48 小時內投遞",
+            "準備 STAR 故事與 cover letter hook"
           ]
         },
         "research": {
           "signals": [
             "AI / data / platform signal",
+            "growth or funding signal",
             "risk signal to inspect manually",
             "remote or hybrid signal"
           ],
@@ -6358,7 +6680,7 @@ window.CV_CAREER_OPS_PARALLEL = {
           },
           "negotiationScript": {
             "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Safety Engineer package, including base, bonus, equity, and review cycle?",
-            "valueAnchor": "Based on the scope of Safety Engineer and my fit around React, remote, engineer, product, I would like to calibrate toward the stronger end of the range if the team sees the level match. My research indicates the JP midpoint for this level is around JPY 8,000,000 (annual).",
+            "valueAnchor": "Based on the scope of Safety Engineer and my fit around React, frontend, engineer, years, I would like to calibrate toward the stronger end of the range if the team sees the level match. My research indicates the JP midpoint for this level is around JPY 8,000,000 (annual).",
             "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
             "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
             "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
@@ -6489,8 +6811,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 85,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-07-06T14:12:53.545Z",
-      "completedAt": "2026-07-06T14:12:53.548Z",
+      "startedAt": "2026-07-06T15:54:01.592Z",
+      "completedAt": "2026-07-06T15:54:01.595Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -6498,16 +6820,18 @@ window.CV_CAREER_OPS_PARALLEL = {
             "JavaScript",
             "TypeScript",
             "React",
-            "remote",
-            "design system",
+            "frontend",
             "engineer",
+            "years",
+            "building",
             "product",
-            "data"
+            "in"
           ],
           "nextActions": [
-            "開啟職缺確認仍可投遞",
-            "產生客製 ATS PDF",
-            "用同職類高分職缺校準履歷關鍵字"
+            "確認職缺仍開放",
+            "產生客製 ATS PDF（keyword injection）",
+            "安排 48 小時內投遞",
+            "準備 STAR 故事與 cover letter hook"
           ]
         },
         "research": {
@@ -6636,21 +6960,25 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 85,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-07-06T14:12:53.545Z",
-      "completedAt": "2026-07-06T14:12:53.547Z",
+      "startedAt": "2026-07-06T15:54:01.597Z",
+      "completedAt": "2026-07-06T15:54:01.599Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
           "keywords": [
             "Analytics",
-            "remote",
+            "building",
             "product",
-            "data"
+            "in",
+            "design",
+            "system",
+            "scope"
           ],
           "nextActions": [
-            "開啟職缺確認仍可投遞",
-            "產生客製 ATS PDF",
-            "用同職類高分職缺校準履歷關鍵字"
+            "確認職缺仍開放",
+            "產生客製 ATS PDF（keyword injection）",
+            "安排 48 小時內投遞",
+            "準備 STAR 故事與 cover letter hook"
           ]
         },
         "research": {
@@ -6841,22 +7169,25 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 85,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-07-06T14:12:53.550Z",
-      "completedAt": "2026-07-06T14:12:53.552Z",
+      "startedAt": "2026-07-06T15:54:01.597Z",
+      "completedAt": "2026-07-06T15:54:01.599Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
           "keywords": [
             "Analytics",
-            "remote",
             "engineer",
+            "building",
             "product",
-            "data"
+            "in",
+            "component",
+            "comfortable"
           ],
           "nextActions": [
-            "開啟職缺確認仍可投遞",
-            "產生客製 ATS PDF",
-            "用同職類高分職缺校準履歷關鍵字"
+            "確認職缺仍開放",
+            "產生客製 ATS PDF（keyword injection）",
+            "安排 48 小時內投遞",
+            "準備 STAR 故事與 cover letter hook"
           ]
         },
         "research": {
@@ -7041,14 +7372,310 @@ window.CV_CAREER_OPS_PARALLEL = {
       }
     },
     {
+      "jobKey": "url:https://justjoin.it/job-offer/point-wild-principal-mlops-platform-engineer-warszawa-ai",
+      "company": "Point Wild",
+      "title": "Principal MLOps / Platform Engineer",
+      "score": 85,
+      "grade": "A",
+      "priority": "P0",
+      "startedAt": "2026-07-06T15:54:01.597Z",
+      "completedAt": "2026-07-06T15:54:01.598Z",
+      "workers": {
+        "evaluation": {
+          "recommendation": "值得投遞",
+          "keywords": [
+            "API",
+            "frontend",
+            "engineer",
+            "years",
+            "in",
+            "design",
+            "system"
+          ],
+          "nextActions": [
+            "確認職缺仍開放",
+            "產生客製 ATS PDF（keyword injection）",
+            "安排 48 小時內投遞",
+            "準備 STAR 故事與 cover letter hook"
+          ]
+        },
+        "research": {
+          "signals": [],
+          "evidenceCount": 0,
+          "questions": []
+        },
+        "application": {
+          "checklist": [
+            "Confirm posting is active.",
+            "Generate tailored ATS PDF.",
+            "Prepare outreach and follow-up.",
+            "Log status and next follow-up."
+          ]
+        },
+        "compensation": null,
+        "stories": [
+          {
+            "id": "story-1",
+            "theme": "frontend product execution",
+            "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
+            "applicableQuestions": [
+              "Tell me about a project you are proud of.",
+              "Tell me about a time you handled ambiguity.",
+              "How have you applied frontend product execution?"
+            ],
+            "star": {
+              "situation": "You were tasked with a frontend product challenge. Proof point: \"Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.\" — set the scene: what product, what team size, and what was broken or missing?",
+              "task": "What was the specific outcome you were accountable for? Include the success metric (e.g. performance score, user adoption rate, release date).",
+              "action": "Walk through the key technical decisions: component architecture, state management tradeoffs, accessibility choices, or API contract design.",
+              "result": "Quantify the impact: load time delta, user adoption %, code reduction %, or stakeholder feedback. If no number, describe the quality or velocity improvement.",
+              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
+            },
+            "keywords": [
+              "frontend product execution",
+              "JavaScript",
+              "TypeScript",
+              "React",
+              "Next.js",
+              "CSS",
+              "Tailwind",
+              "Accessibility"
+            ],
+            "relevance": 0
+          },
+          {
+            "id": "story-2",
+            "theme": "data-heavy product decisions",
+            "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
+            "applicableQuestions": [
+              "Tell me about a project you are proud of.",
+              "Tell me about a time you handled ambiguity.",
+              "How have you applied data-heavy product decisions?"
+            ],
+            "star": {
+              "situation": "You were working with a data-intensive product. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — describe the data volume, the user workflow, and what was difficult to render or interpret.",
+              "task": "What decision did you own? (chart type, data model, aggregation strategy, caching layer, etc.)",
+              "action": "Explain how you chose between options, what you built or prototyped, and how you validated your approach with data or users.",
+              "result": "State the outcome: query latency, dashboard load time, user comprehension improvement, or reduction in support requests.",
+              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
+            },
+            "keywords": [
+              "data-heavy product decisions",
+              "JavaScript",
+              "TypeScript",
+              "React",
+              "Next.js",
+              "CSS",
+              "Tailwind",
+              "Accessibility"
+            ],
+            "relevance": 0
+          },
+          {
+            "id": "story-3",
+            "theme": "systems and API collaboration",
+            "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
+            "applicableQuestions": [
+              "Tell me about a project you are proud of.",
+              "Tell me about a time you handled ambiguity.",
+              "How have you applied systems and API collaboration?"
+            ],
+            "star": {
+              "situation": "You collaborated across system boundaries. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — name the systems, teams, and integration surface area.",
+              "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
+              "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
+              "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
+              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
+            },
+            "keywords": [
+              "systems and API collaboration",
+              "JavaScript",
+              "TypeScript",
+              "React",
+              "Next.js",
+              "CSS",
+              "Tailwind",
+              "Accessibility"
+            ],
+            "relevance": 0
+          }
+        ],
+        "applyAgent": {
+          "mode": "human-in-the-loop",
+          "url": "https://justjoin.it/job-offer/point-wild-principal-mlops-platform-engineer-warszawa-ai",
+          "steps": [
+            "Open the application URL in a controlled browser session.",
+            "Extract visible form fields and required uploads.",
+            "Map CV profile fields to the form without submitting.",
+            "Prepare tailored PDF and outreach text.",
+            "Stop before final submit and ask the user to review."
+          ],
+          "guardrails": [
+            "Never submit without explicit user confirmation.",
+            "Never fabricate work authorization, salary history, degree, or experience.",
+            "Never store API keys or credentials in job metadata.",
+            "Record only application status and user-approved notes."
+          ]
+        }
+      }
+    },
+    {
+      "jobKey": "url:https://www.themuse.com/jobs/uber/staff-frontend-engineer-core-services-eng",
+      "company": "Uber",
+      "title": "Staff Frontend Engineer, Core Services Eng",
+      "score": 84,
+      "grade": "B",
+      "priority": "P1",
+      "startedAt": "2026-07-06T15:54:01.597Z",
+      "completedAt": "2026-07-06T15:54:01.599Z",
+      "workers": {
+        "evaluation": {
+          "recommendation": "值得投遞",
+          "keywords": [
+            "React",
+            "Analytics",
+            "API",
+            "frontend",
+            "engineer",
+            "years",
+            "product",
+            "in",
+            "design"
+          ],
+          "nextActions": [
+            "確認職缺仍開放",
+            "產生客製 ATS PDF（keyword injection）",
+            "安排 48 小時內投遞",
+            "準備 STAR 故事與 cover letter hook"
+          ]
+        },
+        "research": {
+          "signals": [],
+          "evidenceCount": 0,
+          "questions": []
+        },
+        "application": {
+          "checklist": [
+            "Confirm posting is active.",
+            "Generate tailored ATS PDF.",
+            "Prepare outreach and follow-up.",
+            "Log status and next follow-up."
+          ]
+        },
+        "compensation": null,
+        "stories": [
+          {
+            "id": "story-1",
+            "theme": "frontend product execution",
+            "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
+            "applicableQuestions": [
+              "Tell me about a project you are proud of.",
+              "Tell me about a time you handled ambiguity.",
+              "How have you applied frontend product execution?"
+            ],
+            "star": {
+              "situation": "You were tasked with a frontend product challenge. Proof point: \"Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.\" — set the scene: what product, what team size, and what was broken or missing?",
+              "task": "What was the specific outcome you were accountable for? Include the success metric (e.g. performance score, user adoption rate, release date).",
+              "action": "Walk through the key technical decisions: component architecture, state management tradeoffs, accessibility choices, or API contract design.",
+              "result": "Quantify the impact: load time delta, user adoption %, code reduction %, or stakeholder feedback. If no number, describe the quality or velocity improvement.",
+              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
+            },
+            "keywords": [
+              "frontend product execution",
+              "JavaScript",
+              "TypeScript",
+              "React",
+              "Next.js",
+              "CSS",
+              "Tailwind",
+              "Accessibility"
+            ],
+            "relevance": 1
+          },
+          {
+            "id": "story-2",
+            "theme": "data-heavy product decisions",
+            "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
+            "applicableQuestions": [
+              "Tell me about a project you are proud of.",
+              "Tell me about a time you handled ambiguity.",
+              "How have you applied data-heavy product decisions?"
+            ],
+            "star": {
+              "situation": "You were working with a data-intensive product. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — describe the data volume, the user workflow, and what was difficult to render or interpret.",
+              "task": "What decision did you own? (chart type, data model, aggregation strategy, caching layer, etc.)",
+              "action": "Explain how you chose between options, what you built or prototyped, and how you validated your approach with data or users.",
+              "result": "State the outcome: query latency, dashboard load time, user comprehension improvement, or reduction in support requests.",
+              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
+            },
+            "keywords": [
+              "data-heavy product decisions",
+              "JavaScript",
+              "TypeScript",
+              "React",
+              "Next.js",
+              "CSS",
+              "Tailwind",
+              "Accessibility"
+            ],
+            "relevance": 1
+          },
+          {
+            "id": "story-3",
+            "theme": "systems and API collaboration",
+            "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
+            "applicableQuestions": [
+              "Tell me about a project you are proud of.",
+              "Tell me about a time you handled ambiguity.",
+              "How have you applied systems and API collaboration?"
+            ],
+            "star": {
+              "situation": "You collaborated across system boundaries. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — name the systems, teams, and integration surface area.",
+              "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
+              "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
+              "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
+              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
+            },
+            "keywords": [
+              "systems and API collaboration",
+              "JavaScript",
+              "TypeScript",
+              "React",
+              "Next.js",
+              "CSS",
+              "Tailwind",
+              "Accessibility"
+            ],
+            "relevance": 1
+          }
+        ],
+        "applyAgent": {
+          "mode": "human-in-the-loop",
+          "url": "https://www.themuse.com/jobs/uber/staff-frontend-engineer-core-services-eng",
+          "steps": [
+            "Open the application URL in a controlled browser session.",
+            "Extract visible form fields and required uploads.",
+            "Map CV profile fields to the form without submitting.",
+            "Prepare tailored PDF and outreach text.",
+            "Stop before final submit and ask the user to review."
+          ],
+          "guardrails": [
+            "Never submit without explicit user confirmation.",
+            "Never fabricate work authorization, salary history, degree, or experience.",
+            "Never store API keys or credentials in job metadata.",
+            "Record only application status and user-approved notes."
+          ]
+        }
+      }
+    },
+    {
       "jobKey": "url:https://www.themuse.com/jobs/pilotly/product-engineer-ii-8b1aeb",
       "company": "Pilotly",
       "title": "Product Engineer II",
       "score": 84,
       "grade": "B",
       "priority": "P1",
-      "startedAt": "2026-07-06T14:12:53.550Z",
-      "completedAt": "2026-07-06T14:12:53.552Z",
+      "startedAt": "2026-07-06T15:54:01.601Z",
+      "completedAt": "2026-07-06T15:54:01.602Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -7057,16 +7684,18 @@ window.CV_CAREER_OPS_PARALLEL = {
             "React",
             "CSS",
             "API",
-            "remote",
-            "dashboard",
             "engineer",
+            "building",
             "product",
-            "data"
+            "in",
+            "design",
+            "from"
           ],
           "nextActions": [
-            "開啟職缺確認仍可投遞",
-            "產生客製 ATS PDF",
-            "用同職類高分職缺校準履歷關鍵字"
+            "確認職缺仍開放",
+            "產生客製 ATS PDF（keyword injection）",
+            "安排 48 小時內投遞",
+            "準備 STAR 故事與 cover letter hook"
           ]
         },
         "research": {
@@ -7195,8 +7824,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 84,
       "grade": "B",
       "priority": "P1",
-      "startedAt": "2026-07-06T14:12:53.550Z",
-      "completedAt": "2026-07-06T14:12:53.552Z",
+      "startedAt": "2026-07-06T15:54:01.601Z",
+      "completedAt": "2026-07-06T15:54:01.602Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -7204,15 +7833,18 @@ window.CV_CAREER_OPS_PARALLEL = {
             "TypeScript",
             "React",
             "API",
-            "remote",
+            "frontend",
             "engineer",
+            "years",
+            "building",
             "product",
-            "data"
+            "in"
           ],
           "nextActions": [
-            "開啟職缺確認仍可投遞",
-            "產生客製 ATS PDF",
-            "用同職類高分職缺校準履歷關鍵字"
+            "確認職缺仍開放",
+            "產生客製 ATS PDF（keyword injection）",
+            "安排 48 小時內投遞",
+            "準備 STAR 故事與 cover letter hook"
           ]
         },
         "research": {
@@ -7341,8 +7973,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 84,
       "grade": "B",
       "priority": "P1",
-      "startedAt": "2026-07-06T14:12:53.550Z",
-      "completedAt": "2026-07-06T14:12:53.551Z",
+      "startedAt": "2026-07-06T15:54:01.601Z",
+      "completedAt": "2026-07-06T15:54:01.602Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -7351,17 +7983,18 @@ window.CV_CAREER_OPS_PARALLEL = {
             "TypeScript",
             "React",
             "API",
-            "remote",
+            "frontend",
             "engineer",
+            "years",
+            "building",
             "product",
-            "data",
-            "graphql",
-            "visualization"
+            "in"
           ],
           "nextActions": [
-            "開啟職缺確認仍可投遞",
-            "產生客製 ATS PDF",
-            "用同職類高分職缺校準履歷關鍵字"
+            "確認職缺仍開放",
+            "產生客製 ATS PDF（keyword injection）",
+            "安排 48 小時內投遞",
+            "準備 STAR 故事與 cover letter hook"
           ]
         },
         "research": {
@@ -7490,22 +8123,26 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 84,
       "grade": "B",
       "priority": "P1",
-      "startedAt": "2026-07-06T14:12:53.555Z",
-      "completedAt": "2026-07-06T14:12:53.557Z",
+      "startedAt": "2026-07-06T15:54:01.601Z",
+      "completedAt": "2026-07-06T15:54:01.603Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
           "keywords": [
             "JavaScript",
             "API",
-            "remote",
             "engineer",
-            "product"
+            "years",
+            "building",
+            "product",
+            "in",
+            "component"
           ],
           "nextActions": [
-            "開啟職缺確認仍可投遞",
-            "產生客製 ATS PDF",
-            "用同職類高分職缺校準履歷關鍵字"
+            "確認職缺仍開放",
+            "產生客製 ATS PDF（keyword injection）",
+            "安排 48 小時內投遞",
+            "準備 STAR 故事與 cover letter hook"
           ]
         },
         "research": {
@@ -7558,7 +8195,7 @@ window.CV_CAREER_OPS_PARALLEL = {
           },
           "negotiationScript": {
             "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Lead AI Cloud Platform Engineer package, including base, bonus, equity, and review cycle?",
-            "valueAnchor": "Based on the scope of Lead AI Cloud Platform Engineer and my fit around Analytics, API, remote, engineer, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
+            "valueAnchor": "Based on the scope of Lead AI Cloud Platform Engineer and my fit around Analytics, API, engineer, years, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
             "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
             "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
             "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
@@ -7689,8 +8326,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 84,
       "grade": "B",
       "priority": "P1",
-      "startedAt": "2026-07-06T14:12:53.555Z",
-      "completedAt": "2026-07-06T14:12:53.557Z",
+      "startedAt": "2026-07-06T15:54:01.604Z",
+      "completedAt": "2026-07-06T15:54:01.606Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -7698,16 +8335,18 @@ window.CV_CAREER_OPS_PARALLEL = {
             "TypeScript",
             "React",
             "Next.js",
-            "remote",
+            "frontend",
             "engineer",
+            "years",
+            "building",
             "product",
-            "data",
-            "node.js"
+            "in"
           ],
           "nextActions": [
-            "開啟職缺確認仍可投遞",
-            "產生客製 ATS PDF",
-            "用同職類高分職缺校準履歷關鍵字"
+            "確認職缺仍開放",
+            "產生客製 ATS PDF（keyword injection）",
+            "安排 48 小時內投遞",
+            "準備 STAR 故事與 cover letter hook"
           ]
         },
         "research": {
@@ -7836,29 +8475,34 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 84,
       "grade": "B",
       "priority": "P1",
-      "startedAt": "2026-07-06T14:12:53.555Z",
-      "completedAt": "2026-07-06T14:12:53.557Z",
+      "startedAt": "2026-07-06T15:54:01.604Z",
+      "completedAt": "2026-07-06T15:54:01.606Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
           "keywords": [
-            "remote",
+            "frontend",
+            "building",
             "product",
-            "data"
+            "in",
+            "performance",
+            "full"
           ],
           "nextActions": [
-            "開啟職缺確認仍可投遞",
-            "產生客製 ATS PDF",
-            "用同職類高分職缺校準履歷關鍵字"
+            "確認職缺仍開放",
+            "產生客製 ATS PDF（keyword injection）",
+            "安排 48 小時內投遞",
+            "準備 STAR 故事與 cover letter hook"
           ]
         },
         "research": {
           "signals": [
             "AI / data / platform signal",
+            "growth or funding signal",
             "risk signal to inspect manually",
             "remote or hybrid signal"
           ],
-          "evidenceCount": 1,
+          "evidenceCount": 2,
           "questions": [
             "What business unit owns the Staff Backend Engineer (Go), Continuous Delivery role?",
             "What measurable outcomes would this team expect in the first 90 days?",
@@ -7915,7 +8559,7 @@ window.CV_CAREER_OPS_PARALLEL = {
           },
           "negotiationScript": {
             "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Staff Backend Engineer (Go), Continuous Delivery package, including base, bonus, equity, and review cycle?",
-            "valueAnchor": "Based on the scope of Staff Backend Engineer (Go), Continuous Delivery and my fit around remote, engineer, product, data, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
+            "valueAnchor": "Based on the scope of Staff Backend Engineer (Go), Continuous Delivery and my fit around frontend, engineer, building, product, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
             "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
             "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
             "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
@@ -8046,21 +8690,25 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 84,
       "grade": "B",
       "priority": "P1",
-      "startedAt": "2026-07-06T14:12:53.555Z",
-      "completedAt": "2026-07-06T14:12:53.557Z",
+      "startedAt": "2026-07-06T15:54:01.604Z",
+      "completedAt": "2026-07-06T15:54:01.606Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
           "keywords": [
             "Analytics",
-            "remote",
+            "years",
             "product",
-            "data"
+            "in",
+            "design",
+            "architecture",
+            "performance"
           ],
           "nextActions": [
-            "開啟職缺確認仍可投遞",
-            "產生客製 ATS PDF",
-            "用同職類高分職缺校準履歷關鍵字"
+            "確認職缺仍開放",
+            "產生客製 ATS PDF（keyword injection）",
+            "安排 48 小時內投遞",
+            "準備 STAR 故事與 cover letter hook"
           ]
         },
         "research": {
@@ -8189,8 +8837,8 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 84,
       "grade": "B",
       "priority": "P1",
-      "startedAt": "2026-07-06T14:12:53.559Z",
-      "completedAt": "2026-07-06T14:12:53.560Z",
+      "startedAt": "2026-07-06T15:54:01.604Z",
+      "completedAt": "2026-07-06T15:54:01.607Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -8199,13 +8847,17 @@ window.CV_CAREER_OPS_PARALLEL = {
             "React",
             "Figma",
             "engineer",
+            "building",
+            "accessible",
             "product",
-            "data"
+            "in",
+            "design"
           ],
           "nextActions": [
-            "開啟職缺確認仍可投遞",
-            "產生客製 ATS PDF",
-            "用同職類高分職缺校準履歷關鍵字"
+            "確認職缺仍開放",
+            "產生客製 ATS PDF（keyword injection）",
+            "安排 48 小時內投遞",
+            "準備 STAR 故事與 cover letter hook"
           ]
         },
         "research": {
@@ -8334,22 +8986,24 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 84,
       "grade": "B",
       "priority": "P1",
-      "startedAt": "2026-07-06T14:12:53.559Z",
-      "completedAt": "2026-07-06T14:12:53.561Z",
+      "startedAt": "2026-07-06T15:54:01.608Z",
+      "completedAt": "2026-07-06T15:54:01.610Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
           "keywords": [
-            "remote",
             "engineer",
+            "years",
+            "building",
             "product",
-            "data",
-            "dashboards"
+            "in",
+            "design"
           ],
           "nextActions": [
-            "開啟職缺確認仍可投遞",
-            "產生客製 ATS PDF",
-            "用同職類高分職缺校準履歷關鍵字"
+            "確認職缺仍開放",
+            "產生客製 ATS PDF（keyword injection）",
+            "安排 48 小時內投遞",
+            "準備 STAR 故事與 cover letter hook"
           ]
         },
         "research": {
@@ -8478,21 +9132,24 @@ window.CV_CAREER_OPS_PARALLEL = {
       "score": 84,
       "grade": "B",
       "priority": "P1",
-      "startedAt": "2026-07-06T14:12:53.559Z",
-      "completedAt": "2026-07-06T14:12:53.561Z",
+      "startedAt": "2026-07-06T15:54:01.608Z",
+      "completedAt": "2026-07-06T15:54:01.610Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
           "keywords": [
-            "remote",
             "engineer",
+            "building",
             "product",
-            "data"
+            "in",
+            "design",
+            "architecture"
           ],
           "nextActions": [
-            "開啟職缺確認仍可投遞",
-            "產生客製 ATS PDF",
-            "用同職類高分職缺校準履歷關鍵字"
+            "確認職缺仍開放",
+            "產生客製 ATS PDF（keyword injection）",
+            "安排 48 小時內投遞",
+            "準備 STAR 故事與 cover letter hook"
           ]
         },
         "research": {
@@ -8560,7 +9217,7 @@ window.CV_CAREER_OPS_PARALLEL = {
           },
           "negotiationScript": {
             "recruiterRangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Security Software Engineer package, including base, bonus, equity, and review cycle?",
-            "valueAnchor": "Based on the scope of Security Software Engineer and my fit around JavaScript, TypeScript, remote, engineer, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
+            "valueAnchor": "Based on the scope of Security Software Engineer and my fit around JavaScript, TypeScript, engineer, product, I would like to calibrate toward the stronger end of the range if the team sees the level match.",
             "counterOffer": "Thank you for the offer. I am excited about the role. Given the scope, expected impact, and market calibration, is there flexibility to improve the total package through base, sign-on, equity, or an earlier compensation review?",
             "pauseLine": "I appreciate the details. I would like to review the full package and come back with a thoughtful response.",
             "closeLine": "If we can align on the package and review timeline, I would feel confident moving forward."
@@ -8668,436 +9325,6 @@ window.CV_CAREER_OPS_PARALLEL = {
         "applyAgent": {
           "mode": "human-in-the-loop",
           "url": "https://job-boards.greenhouse.io/canonical/jobs/3752633",
-          "steps": [
-            "Open the application URL in a controlled browser session.",
-            "Extract visible form fields and required uploads.",
-            "Map CV profile fields to the form without submitting.",
-            "Prepare tailored PDF and outreach text.",
-            "Stop before final submit and ask the user to review."
-          ],
-          "guardrails": [
-            "Never submit without explicit user confirmation.",
-            "Never fabricate work authorization, salary history, degree, or experience.",
-            "Never store API keys or credentials in job metadata.",
-            "Record only application status and user-approved notes."
-          ]
-        }
-      }
-    },
-    {
-      "jobKey": "url:https://job-boards.greenhouse.io/mozilla/jobs/8031796",
-      "company": "Mozilla Greenhouse",
-      "title": "Senior Engineering Manager, AI Product (Thunderbolt)",
-      "score": 84,
-      "grade": "B",
-      "priority": "P1",
-      "startedAt": "2026-07-06T14:12:53.559Z",
-      "completedAt": "2026-07-06T14:12:53.561Z",
-      "workers": {
-        "evaluation": {
-          "recommendation": "值得投遞",
-          "keywords": [
-            "React",
-            "remote",
-            "product",
-            "data"
-          ],
-          "nextActions": [
-            "開啟職缺確認仍可投遞",
-            "產生客製 ATS PDF",
-            "用同職類高分職缺校準履歷關鍵字"
-          ]
-        },
-        "research": {
-          "signals": [],
-          "evidenceCount": 0,
-          "questions": []
-        },
-        "application": {
-          "checklist": [
-            "Confirm posting is active.",
-            "Generate tailored ATS PDF.",
-            "Prepare outreach and follow-up.",
-            "Log status and next follow-up."
-          ]
-        },
-        "compensation": null,
-        "stories": [
-          {
-            "id": "story-1",
-            "theme": "frontend product execution",
-            "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
-            "applicableQuestions": [
-              "Tell me about a project you are proud of.",
-              "Tell me about a time you handled ambiguity.",
-              "How have you applied frontend product execution?"
-            ],
-            "star": {
-              "situation": "You were tasked with a frontend product challenge. Proof point: \"Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.\" — set the scene: what product, what team size, and what was broken or missing?",
-              "task": "What was the specific outcome you were accountable for? Include the success metric (e.g. performance score, user adoption rate, release date).",
-              "action": "Walk through the key technical decisions: component architecture, state management tradeoffs, accessibility choices, or API contract design.",
-              "result": "Quantify the impact: load time delta, user adoption %, code reduction %, or stakeholder feedback. If no number, describe the quality or velocity improvement.",
-              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
-            },
-            "keywords": [
-              "frontend product execution",
-              "JavaScript",
-              "TypeScript",
-              "React",
-              "Next.js",
-              "CSS",
-              "Tailwind",
-              "Accessibility"
-            ],
-            "relevance": 1
-          },
-          {
-            "id": "story-2",
-            "theme": "data-heavy product decisions",
-            "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
-            "applicableQuestions": [
-              "Tell me about a project you are proud of.",
-              "Tell me about a time you handled ambiguity.",
-              "How have you applied data-heavy product decisions?"
-            ],
-            "star": {
-              "situation": "You were working with a data-intensive product. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — describe the data volume, the user workflow, and what was difficult to render or interpret.",
-              "task": "What decision did you own? (chart type, data model, aggregation strategy, caching layer, etc.)",
-              "action": "Explain how you chose between options, what you built or prototyped, and how you validated your approach with data or users.",
-              "result": "State the outcome: query latency, dashboard load time, user comprehension improvement, or reduction in support requests.",
-              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
-            },
-            "keywords": [
-              "data-heavy product decisions",
-              "JavaScript",
-              "TypeScript",
-              "React",
-              "Next.js",
-              "CSS",
-              "Tailwind",
-              "Accessibility"
-            ],
-            "relevance": 1
-          },
-          {
-            "id": "story-3",
-            "theme": "systems and API collaboration",
-            "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
-            "applicableQuestions": [
-              "Tell me about a project you are proud of.",
-              "Tell me about a time you handled ambiguity.",
-              "How have you applied systems and API collaboration?"
-            ],
-            "star": {
-              "situation": "You collaborated across system boundaries. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — name the systems, teams, and integration surface area.",
-              "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
-              "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
-              "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
-              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
-            },
-            "keywords": [
-              "systems and API collaboration",
-              "JavaScript",
-              "TypeScript",
-              "React",
-              "Next.js",
-              "CSS",
-              "Tailwind",
-              "Accessibility"
-            ],
-            "relevance": 1
-          }
-        ],
-        "applyAgent": {
-          "mode": "human-in-the-loop",
-          "url": "https://job-boards.greenhouse.io/mozilla/jobs/8031796",
-          "steps": [
-            "Open the application URL in a controlled browser session.",
-            "Extract visible form fields and required uploads.",
-            "Map CV profile fields to the form without submitting.",
-            "Prepare tailored PDF and outreach text.",
-            "Stop before final submit and ask the user to review."
-          ],
-          "guardrails": [
-            "Never submit without explicit user confirmation.",
-            "Never fabricate work authorization, salary history, degree, or experience.",
-            "Never store API keys or credentials in job metadata.",
-            "Record only application status and user-approved notes."
-          ]
-        }
-      }
-    },
-    {
-      "jobKey": "url:https://job-boards.greenhouse.io/mozilla/jobs/8031761",
-      "company": "Mozilla Greenhouse",
-      "title": "Senior Engineering Manager, AI Product (Thunderbolt)",
-      "score": 84,
-      "grade": "B",
-      "priority": "P1",
-      "startedAt": "2026-07-06T14:12:53.563Z",
-      "completedAt": "2026-07-06T14:12:53.565Z",
-      "workers": {
-        "evaluation": {
-          "recommendation": "值得投遞",
-          "keywords": [
-            "React",
-            "remote",
-            "product",
-            "data"
-          ],
-          "nextActions": [
-            "開啟職缺確認仍可投遞",
-            "產生客製 ATS PDF",
-            "用同職類高分職缺校準履歷關鍵字"
-          ]
-        },
-        "research": {
-          "signals": [],
-          "evidenceCount": 0,
-          "questions": []
-        },
-        "application": {
-          "checklist": [
-            "Confirm posting is active.",
-            "Generate tailored ATS PDF.",
-            "Prepare outreach and follow-up.",
-            "Log status and next follow-up."
-          ]
-        },
-        "compensation": null,
-        "stories": [
-          {
-            "id": "story-1",
-            "theme": "frontend product execution",
-            "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
-            "applicableQuestions": [
-              "Tell me about a project you are proud of.",
-              "Tell me about a time you handled ambiguity.",
-              "How have you applied frontend product execution?"
-            ],
-            "star": {
-              "situation": "You were tasked with a frontend product challenge. Proof point: \"Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.\" — set the scene: what product, what team size, and what was broken or missing?",
-              "task": "What was the specific outcome you were accountable for? Include the success metric (e.g. performance score, user adoption rate, release date).",
-              "action": "Walk through the key technical decisions: component architecture, state management tradeoffs, accessibility choices, or API contract design.",
-              "result": "Quantify the impact: load time delta, user adoption %, code reduction %, or stakeholder feedback. If no number, describe the quality or velocity improvement.",
-              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
-            },
-            "keywords": [
-              "frontend product execution",
-              "JavaScript",
-              "TypeScript",
-              "React",
-              "Next.js",
-              "CSS",
-              "Tailwind",
-              "Accessibility"
-            ],
-            "relevance": 1
-          },
-          {
-            "id": "story-2",
-            "theme": "data-heavy product decisions",
-            "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
-            "applicableQuestions": [
-              "Tell me about a project you are proud of.",
-              "Tell me about a time you handled ambiguity.",
-              "How have you applied data-heavy product decisions?"
-            ],
-            "star": {
-              "situation": "You were working with a data-intensive product. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — describe the data volume, the user workflow, and what was difficult to render or interpret.",
-              "task": "What decision did you own? (chart type, data model, aggregation strategy, caching layer, etc.)",
-              "action": "Explain how you chose between options, what you built or prototyped, and how you validated your approach with data or users.",
-              "result": "State the outcome: query latency, dashboard load time, user comprehension improvement, or reduction in support requests.",
-              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
-            },
-            "keywords": [
-              "data-heavy product decisions",
-              "JavaScript",
-              "TypeScript",
-              "React",
-              "Next.js",
-              "CSS",
-              "Tailwind",
-              "Accessibility"
-            ],
-            "relevance": 1
-          },
-          {
-            "id": "story-3",
-            "theme": "systems and API collaboration",
-            "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
-            "applicableQuestions": [
-              "Tell me about a project you are proud of.",
-              "Tell me about a time you handled ambiguity.",
-              "How have you applied systems and API collaboration?"
-            ],
-            "star": {
-              "situation": "You collaborated across system boundaries. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — name the systems, teams, and integration surface area.",
-              "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
-              "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
-              "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
-              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
-            },
-            "keywords": [
-              "systems and API collaboration",
-              "JavaScript",
-              "TypeScript",
-              "React",
-              "Next.js",
-              "CSS",
-              "Tailwind",
-              "Accessibility"
-            ],
-            "relevance": 1
-          }
-        ],
-        "applyAgent": {
-          "mode": "human-in-the-loop",
-          "url": "https://job-boards.greenhouse.io/mozilla/jobs/8031761",
-          "steps": [
-            "Open the application URL in a controlled browser session.",
-            "Extract visible form fields and required uploads.",
-            "Map CV profile fields to the form without submitting.",
-            "Prepare tailored PDF and outreach text.",
-            "Stop before final submit and ask the user to review."
-          ],
-          "guardrails": [
-            "Never submit without explicit user confirmation.",
-            "Never fabricate work authorization, salary history, degree, or experience.",
-            "Never store API keys or credentials in job metadata.",
-            "Record only application status and user-approved notes."
-          ]
-        }
-      }
-    },
-    {
-      "jobKey": "url:https://job-boards.greenhouse.io/reddit/jobs/7309137",
-      "company": "Reddit Greenhouse",
-      "title": "Senior Software Engineer, GraphQL",
-      "score": 84,
-      "grade": "B",
-      "priority": "P1",
-      "startedAt": "2026-07-06T14:12:53.563Z",
-      "completedAt": "2026-07-06T14:12:53.564Z",
-      "workers": {
-        "evaluation": {
-          "recommendation": "值得投遞",
-          "keywords": [
-            "API",
-            "remote",
-            "engineer",
-            "product",
-            "data",
-            "graphql"
-          ],
-          "nextActions": [
-            "先與高分職缺比較，不急著投遞",
-            "補齊 JD 或標記喜歡 / 不喜歡以改善後續排序"
-          ]
-        },
-        "research": {
-          "signals": [],
-          "evidenceCount": 0,
-          "questions": []
-        },
-        "application": {
-          "checklist": [
-            "Confirm posting is active.",
-            "Generate tailored ATS PDF.",
-            "Prepare outreach and follow-up.",
-            "Log status and next follow-up."
-          ]
-        },
-        "compensation": null,
-        "stories": [
-          {
-            "id": "story-1",
-            "theme": "frontend product execution",
-            "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
-            "applicableQuestions": [
-              "Tell me about a project you are proud of.",
-              "Tell me about a time you handled ambiguity.",
-              "How have you applied frontend product execution?"
-            ],
-            "star": {
-              "situation": "You were tasked with a frontend product challenge. Proof point: \"Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.\" — set the scene: what product, what team size, and what was broken or missing?",
-              "task": "What was the specific outcome you were accountable for? Include the success metric (e.g. performance score, user adoption rate, release date).",
-              "action": "Walk through the key technical decisions: component architecture, state management tradeoffs, accessibility choices, or API contract design.",
-              "result": "Quantify the impact: load time delta, user adoption %, code reduction %, or stakeholder feedback. If no number, describe the quality or velocity improvement.",
-              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
-            },
-            "keywords": [
-              "frontend product execution",
-              "JavaScript",
-              "TypeScript",
-              "React",
-              "Next.js",
-              "CSS",
-              "Tailwind",
-              "Accessibility"
-            ],
-            "relevance": 0
-          },
-          {
-            "id": "story-2",
-            "theme": "data-heavy product decisions",
-            "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
-            "applicableQuestions": [
-              "Tell me about a project you are proud of.",
-              "Tell me about a time you handled ambiguity.",
-              "How have you applied data-heavy product decisions?"
-            ],
-            "star": {
-              "situation": "You were working with a data-intensive product. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — describe the data volume, the user workflow, and what was difficult to render or interpret.",
-              "task": "What decision did you own? (chart type, data model, aggregation strategy, caching layer, etc.)",
-              "action": "Explain how you chose between options, what you built or prototyped, and how you validated your approach with data or users.",
-              "result": "State the outcome: query latency, dashboard load time, user comprehension improvement, or reduction in support requests.",
-              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
-            },
-            "keywords": [
-              "data-heavy product decisions",
-              "JavaScript",
-              "TypeScript",
-              "React",
-              "Next.js",
-              "CSS",
-              "Tailwind",
-              "Accessibility"
-            ],
-            "relevance": 0
-          },
-          {
-            "id": "story-3",
-            "theme": "systems and API collaboration",
-            "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
-            "applicableQuestions": [
-              "Tell me about a project you are proud of.",
-              "Tell me about a time you handled ambiguity.",
-              "How have you applied systems and API collaboration?"
-            ],
-            "star": {
-              "situation": "You collaborated across system boundaries. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — name the systems, teams, and integration surface area.",
-              "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
-              "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
-              "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
-              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
-            },
-            "keywords": [
-              "systems and API collaboration",
-              "JavaScript",
-              "TypeScript",
-              "React",
-              "Next.js",
-              "CSS",
-              "Tailwind",
-              "Accessibility"
-            ],
-            "relevance": 0
-          }
-        ],
-        "applyAgent": {
-          "mode": "human-in-the-loop",
-          "url": "https://job-boards.greenhouse.io/reddit/jobs/7309137",
           "steps": [
             "Open the application URL in a controlled browser session.",
             "Extract visible form fields and required uploads.",
