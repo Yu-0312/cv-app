@@ -18808,7 +18808,8 @@ Schema:
 	                : `<div style="margin-bottom:20px;"></div>`;
 	              return `${headerHtml}${rowsHtml}${pagerHtml}`;
 	            }).join("");
-	            const introHtml = `<div class="career-ops-help" style="margin:0 0 14px;">依「${careerText(seedLabel)}」分成四象限，每個象限列出全部符合職缺（每頁 ${QUAD_PAGE_SIZE} 筆，可翻頁）。</div>`;
+	            const derivedNote = targetSeed._derived ? "（此目標由履歷自動推導，可在上方欄位手動填寫目標公司／職位覆蓋）" : "";
+            const introHtml = `<div class="career-ops-help" style="margin:0 0 14px;">依「${careerText(seedLabel)}」用關鍵詞相似度分成四象限，每個象限列出全部符合職缺（每頁 ${QUAD_PAGE_SIZE} 筆，可翻頁）。${careerText(derivedNote)}</div>`;
 	            mainSectionsHtml = `${introHtml}${sectionsHtml}`;
 	          } else {
 	            mainSectionsHtml = `${layerAHtml}${layerBHtml}${layerCHtml}`;
@@ -19232,6 +19233,33 @@ Schema:
 		          return { id: data[0].id, profile: data[0].profile_json || {} };
 		        }
 
+		        // 從履歷自動推導四象限種子：職位軸取目標職種／現職／角色，公司軸取經歷中最近一間非校園單位。
+		        // 只要能取到職位或公司其中之一就回傳（帶 _derived 標記），取不到才回 null（退回 Layer A/B/C）。
+		        function careerOpsDeriveSeedFromProfile(profile = {}) {
+		          const preferences = profile && typeof profile.preferences === "object" ? profile.preferences : {};
+		          const roles = careerOpsProfileArray(preferences.targetRoles || preferences.target_roles);
+		          const title = String(roles.find(Boolean) || profile.targetRole || profile.role || profile.title || "").trim();
+		          const schoolRe = /(高中|高職|國中|國小|大學|學院|學校|社團|校隊|club|school|university|college|coursework|課程|專題)/i;
+		          let company = "";
+		          const expItems = careerOpsValueArray(profile.experience || profile.workExperience || profile.employmentHistory || profile.careerTimeline);
+		          for (const item of expItems) {
+		            let c = "";
+		            if (item && typeof item === "object") {
+		              c = careerOpsStructuredText(item.company || item.organization || item.employer || item.institution || "").trim();
+		            } else {
+		              const parts = String(item || "").split(/[|｜]/).map(s => s.trim()).filter(Boolean);
+		              if (parts.length >= 2) c = parts[1].split(/[\/／]/)[0].trim();
+		            }
+		            if (c && !schoolRe.test(c)) { company = c; break; }
+		          }
+		          const seed = {};
+		          if (company) seed.company = company;
+		          if (title) seed.title = title;
+		          if (!seed.company && !seed.title) return null;
+		          seed._derived = true;
+		          return seed;
+		        }
+
 		        async function careerOpsRunLocalDeepFit(profile, profileId, options = {}) {
 		          const statusEl = options.statusEl || null;
 		          const setStatus = text => { if (statusEl) statusEl.textContent = text; };
@@ -19243,8 +19271,11 @@ Schema:
 		          if (!jobs.length) throw new Error(`職缺快照共 ${allJobs.length} 筆，但沒有台灣職缺可比對（分析已限縮台灣）。海外職缺仍可從匯入入口加入追蹤器後個別評估。`);
 		          // 若使用者填了「目標職種／關鍵字」，先用加權相似度把台灣職缺篩到最相關的前 N 筆再評分，
 		          // 避免每次都掃過全部台灣職缺；未填則維持原本全比對。
-		          const targetSeed = options.targetSeed && (options.targetSeed.company || options.targetSeed.title)
+		          const explicitSeed = options.targetSeed && (options.targetSeed.company || options.targetSeed.title)
 		            ? options.targetSeed : null;
+		          // 沒有手動填目標時，從履歷自動推導一個種子（職位＝目標職種／技能，公司＝經歷最近一間單位），
+		          // 讓四象限的「公司×職位」關鍵詞相似度比對在「只上傳履歷」時也能顯示，而不是退回 Layer A/B/C。
+		          const targetSeed = explicitSeed || careerOpsDeriveSeedFromProfile(profile);
 		          const twCount = jobs.length;
 		          if (targetSeed && typeof careerOpsRankBySimilarity === "function") {
 		            const seedLabel = [targetSeed.company, targetSeed.title].filter(Boolean).join(" / ");
