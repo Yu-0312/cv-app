@@ -87,12 +87,36 @@ export function tokenize(value, config = DEFAULT_SCORING_CONFIG) {
   ));
 }
 
+// Only ASCII letters/digits count as "word" characters for boundary checks.
+// CJK characters are treated as boundaries, so an embedded Latin term
+// ("python" in "Python工程師") and an embedded CJK term ("行銷" in "數位行銷專員")
+// both match. Mirrors the browser app's careerOpsIncludesTerm so CI-side scores
+// agree with what the in-browser matcher produces.
+function isAsciiTermChar(char) {
+  if (!char) return false;
+  const code = char.charCodeAt(0);
+  return (code >= 48 && code <= 57) || (code >= 65 && code <= 90) || (code >= 97 && code <= 122);
+}
+
+function hasAsciiBoundaryMatch(src, needle) {
+  let index = src.indexOf(needle);
+  while (index !== -1) {
+    const before = index > 0 ? src[index - 1] : "";
+    const after = index + needle.length < src.length ? src[index + needle.length] : "";
+    if (!isAsciiTermChar(before) && !isAsciiTermChar(after)) return true;
+    index = src.indexOf(needle, index + needle.length);
+  }
+  return false;
+}
+
 function includes(text, term) {
   const src = String(text || "").toLowerCase();
-  const needle = String(term || "").toLowerCase();
+  const needle = String(term || "").toLowerCase().trim();
   if (!needle) return false;
   if (needle.includes(" ")) return src.includes(needle);
-  return new RegExp(`(^|[^\\p{L}\\p{N}])${needle.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}([^\\p{L}\\p{N}]|$)`, "iu").test(src);
+  if (!src.includes(needle)) return false;
+  if (/[^\x00-\x7F]/.test(needle)) return true;
+  return hasAsciiBoundaryMatch(src, needle);
 }
 
 // ── profile normalisation ────────────────────────────────────────────────────
@@ -137,8 +161,13 @@ function parseSalaryRange(value) {
   const nums = [];
   let m;
   while ((m = re.exec(s)) !== null) {
-    let n = parseFloat(m[1]);
+    const raw = m[1];
+    let n = parseFloat(raw);
     const unit = m[2];
+    // Skip bare 4-digit year-like integers (1900–2099) with no unit — JDs routinely
+    // mention founding years, graduation years, cohorts ("2024 校園徵才") that are
+    // not salaries. Previously these polluted the parsed range.
+    if (!unit && /^\d{4}$/.test(raw) && n >= 1900 && n <= 2099) continue;
     if (unit === "k" || unit === "千") n *= 1e3;
     else if (unit === "m") n *= 1e6;
     else if (unit === "萬" || unit === "万") n *= 1e4;
@@ -412,7 +441,10 @@ function scoreCompensation(job, profile, config) {
   const text = `${job.title || ""} ${job.description || ""}`.toLowerCase();
   const hasSalary = config.compTerms.some((t) => new RegExp(t, "i").test(text));
   const salaryStr = job.salary || job.compensation || "";
-  const range = parseSalaryRange(salaryStr) || parseSalaryRange(job.description);
+  // Only mine the free-text description for a numeric range when there is an
+  // actual salary signal in the posting; otherwise stray numbers (headcount,
+  // revenue, years) can be misread as compensation.
+  const range = parseSalaryRange(salaryStr) || (hasSalary ? parseSalaryRange(job.description) : null);
   const hasRange = Boolean(range);
   if (!hasSalary && !hasRange) {
     return { score: null, hasSalary: false, hasRange: false, noData: true };

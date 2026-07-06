@@ -4,6 +4,7 @@ import fs from "node:fs/promises";
 import path from "node:path";
 import { resolveSourceAdapter } from "./career-ops-source-adapters.mjs";
 import { inferJobMarketMetadata } from "./lib/career-ops-market.mjs";
+import { stableJobKey } from "./lib/utils.mjs";
 
 const DEFAULT_JSON_OUT = "tooling/data/app/career-ops-jobs.json";
 const DEFAULT_JS_OUT = "tooling/data/app/career-ops-jobs.js";
@@ -108,22 +109,9 @@ function normalizeUrl(value) {
   }
 }
 
-function stableJobKey(job) {
-  const url = normalizeUrl(job?.url || "");
-  if (url) {
-    const parsed = new URL(url);
-    parsed.hash = "";
-    for (const key of ["utm_source", "utm_medium", "utm_campaign", "utm_term", "utm_content"]) {
-      parsed.searchParams.delete(key);
-    }
-    return `url:${parsed.href.toLowerCase()}`;
-  }
-  return `text:${[
-    job?.company,
-    job?.title,
-    job?.location
-  ].map((item) => String(item || "").trim().toLowerCase()).join("|")}`;
-}
+// stableJobKey is imported from ./lib/utils.mjs so the scrape, merge and
+// lifecycle stages share one canonical de-duplication key (previously each file
+// defined its own slightly-different version).
 
 async function readPreviousSnapshot(filePath) {
   if (!filePath) return null;

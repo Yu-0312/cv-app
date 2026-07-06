@@ -5,6 +5,7 @@ import fs from "node:fs/promises";
 import fsSync from "node:fs";
 import os from "node:os";
 import path from "node:path";
+import { stableJobKey } from "./lib/utils.mjs";
 
 const DEFAULT_PROFILE = fsSync.existsSync("tooling/data/career-ops-profile.json")
   ? "tooling/data/career-ops-profile.json"
@@ -12,6 +13,11 @@ const DEFAULT_PROFILE = fsSync.existsSync("tooling/data/career-ops-profile.json"
 const DEFAULT_RUBRIC = fsSync.existsSync("tooling/data/career-ops-rubric.json")
   ? "tooling/data/career-ops-rubric.json"
   : "tooling/data/career-ops-rubric.example.json";
+
+// Number of consecutive scrape runs a previously-seen job must be absent before
+// it is flagged expired. 2 = a single missed run is tolerated as a transient
+// board hiccup; two in a row is treated as a genuine takedown.
+const MISS_STREAK_TO_EXPIRE = 2;
 
 function printHelp() {
   console.log(`Career Ops parallel pipeline
@@ -118,20 +124,8 @@ function marketArgs(markets) {
   return markets.flatMap((market) => ["--market", market]);
 }
 
-function stableJobKey(job) {
-  const url = String(job?.url || "").trim();
-  if (url) {
-    try {
-      const parsed = new URL(url);
-      parsed.hash = "";
-      for (const key of ["utm_source", "utm_medium", "utm_campaign", "utm_term", "utm_content"]) {
-        parsed.searchParams.delete(key);
-      }
-      return `url:${parsed.href.toLowerCase()}`;
-    } catch {}
-  }
-  return `text:${[job?.company, job?.title, job?.location].map((item) => String(item || "").trim().toLowerCase()).join("|")}`;
-}
+// stableJobKey imported from ./lib/utils.mjs — one canonical key shared with the
+// worker/scrape stage so merge + lifecycle agree on job identity.
 
 async function mergeWorkerOutputs(files, previousPath, includeExpired) {
   const jobs = [];
@@ -161,22 +155,40 @@ async function mergeWorkerOutputs(files, previousPath, includeExpired) {
       lastSeenAt: now,
       isNew: !prev,
       isExpired: false,
-      expiredAt: ""
+      expiredAt: "",
+      missStreak: 0
     });
   }
-  const expired = includeExpired
-    ? previousJobs
-      .filter((job) => !seen.has(job.jobKey || stableJobKey(job)))
-      .map((job) => ({ ...job, isNew: false, isExpired: true, expiredAt: job.expiredAt || now }))
-    : [];
+  // Expiry debounce: a job absent from ONE scrape run is often a transient
+  // board hiccup (rate-limit, timeout, pagination glitch) rather than a real
+  // takedown. Instead of expiring immediately, we increment a per-job
+  // missStreak and only flag it expired once it has been absent for
+  // MISS_STREAK_TO_EXPIRE consecutive runs. Jobs still within the grace
+  // window are carried over as active (isExpired:false) so the front-end and
+  // downstream scoring keep seeing them.
+  const carriedOver = [];
+  const expired = [];
+  if (includeExpired) {
+    for (const job of previousJobs) {
+      const key = job.jobKey || stableJobKey(job);
+      if (seen.has(key)) continue;
+      const missStreak = (Number(job.missStreak) || 0) + 1;
+      if (missStreak >= MISS_STREAK_TO_EXPIRE) {
+        expired.push({ ...job, jobKey: key, isNew: false, isExpired: true, missStreak, expiredAt: job.expiredAt || now });
+      } else {
+        carriedOver.push({ ...job, jobKey: key, isNew: false, isExpired: false, missStreak, expiredAt: "" });
+      }
+    }
+  }
   return {
     source: "career-ops-parallel-pipeline",
     extractedAt: now,
     sourceCount,
-    jobCount: active.length,
+    jobCount: active.length + carriedOver.length,
     newJobCount: active.filter((job) => job.isNew).length,
+    carriedOverJobCount: carriedOver.length,
     expiredJobCount: expired.length,
-    jobs: [...active, ...expired],
+    jobs: [...active, ...carriedOver, ...expired],
     errors
   };
 }

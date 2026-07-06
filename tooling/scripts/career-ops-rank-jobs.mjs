@@ -205,9 +205,19 @@ async function main() {
 
   const scored = eligible.map(({ job, index }) => {
     const evaluated = evaluateJob(job, profile);
-    return { sourceJob: job, index, evaluated, rankScore: rankScore(evaluated, job) };
+    return {
+      sourceJob: job,
+      index,
+      evaluated,
+      rankScore: rankScore(evaluated, job),
+      // Legitimacy band drives the PRIMARY sort so a "Suspicious" posting can
+      // never outrank a legitimate one on raw score alone. Suspicious → 0
+      // (sinks to the bottom); everything else keeps its natural score order.
+      legitimacyBand: evaluated.blockG?.tier === "Suspicious" ? 0 : 1
+    };
   });
   scored.sort((a, b) =>
+    b.legitimacyBand - a.legitimacyBand ||
     Number(b.evaluated.score || 0) - Number(a.evaluated.score || 0) ||
     Number(b.rankScore || 0) - Number(a.rankScore || 0) ||
     String(a.evaluated.company || "").localeCompare(String(b.evaluated.company || "")) ||

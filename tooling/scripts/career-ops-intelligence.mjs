@@ -104,11 +104,37 @@ function tokenize(value) {
     .filter((item) => item.length >= 2 && !STOPWORDS.has(item))));
 }
 
+// Only ASCII letters/digits count as "word" characters for boundary checks.
+// CJK characters are treated as boundaries so an embedded Latin term (e.g.
+// "python" in "Python工程師") and an embedded CJK term (e.g. "行銷" in
+// "數位行銷專員") both match. Mirrors the browser app's careerOpsIncludesTerm.
+function isAsciiTermChar(char) {
+  if (!char) return false;
+  const code = char.charCodeAt(0);
+  return (code >= 48 && code <= 57) || (code >= 65 && code <= 90) || (code >= 97 && code <= 122);
+}
+
+function hasAsciiBoundaryMatch(source, needle) {
+  let index = source.indexOf(needle);
+  while (index !== -1) {
+    const before = index > 0 ? source[index - 1] : "";
+    const after = index + needle.length < source.length ? source[index + needle.length] : "";
+    if (!isAsciiTermChar(before) && !isAsciiTermChar(after)) return true;
+    index = source.indexOf(needle, index + needle.length);
+  }
+  return false;
+}
+
 function includesTerm(text, term) {
   const source = String(text || "").toLowerCase();
-  const needle = String(term || "").toLowerCase();
+  const needle = String(term || "").toLowerCase().trim();
   if (!needle) return false;
-  return needle.includes(" ") ? source.includes(needle) : new RegExp(`(^|[^\\p{L}\\p{N}])${escapeRegExp(needle)}([^\\p{L}\\p{N}]|$)`, "iu").test(source);
+  if (needle.includes(" ")) return source.includes(needle);
+  if (!source.includes(needle)) return false;
+  // Non-ASCII (CJK) term: plain substring is correct (no word boundaries in CJK).
+  if (/[^\x00-\x7F]/.test(needle)) return true;
+  // ASCII term: require an ASCII word boundary, but CJK neighbours count as boundaries.
+  return hasAsciiBoundaryMatch(source, needle);
 }
 
 function escapeRegExp(value) {
@@ -127,12 +153,24 @@ function countBy(items, getter) {
     .sort((a, b) => b.count - a.count || a.name.localeCompare(b.name));
 }
 
+// Flatten a profile field (string | array of strings | array of objects | object)
+// into a single searchable/measurable text blob.
+function coerceProfileText(value) {
+  if (!value) return "";
+  if (typeof value === "string") return value.trim();
+  if (Array.isArray(value)) return value.map((item) => coerceProfileText(item)).filter(Boolean).join(" ").trim();
+  if (typeof value === "object") {
+    return Object.values(value).map((item) => coerceProfileText(item)).filter(Boolean).join(" ").trim();
+  }
+  return String(value).trim();
+}
+
 function normalizeProfile(profile) {
   const preferences = profile.preferences && typeof profile.preferences === "object" ? profile.preferences : {};
   const rawSkills = [
     ...array(profile.skills),
     ...array(preferences.keywords),
-    ...tokenize([profile.role, profile.summary, profile.experience, profile.projects].join(" "))
+    ...tokenize([profile.role, profile.summary, coerceProfileText(profile.experience), coerceProfileText(profile.projects)].join(" "))
       .filter((term) => term.length >= 3 && SKILL_TERMS.some((known) => known === term || known.includes(term) || term.includes(known)))
   ].map((item) => String(item || "").trim()).filter(Boolean);
   const seenSkills = new Set();
@@ -145,6 +183,11 @@ function normalizeProfile(profile) {
   return {
     role: String(profile.role || "").trim(),
     summary: String(profile.summary || "").trim(),
+    // Coerce experience/projects into flat text so scoreProfileCompleteness can
+    // measure them. Without this they were always absent -> completeness capped
+    // at 6/8 and users were told to "add experience/projects" even after filling them.
+    experience: coerceProfileText(profile.experience),
+    projects: coerceProfileText(profile.projects),
     name: String(profile.name || profile.fullName || profile.displayName || "").trim(),
     skills,
     languages: array(profile.languages).map((l) => String(l).trim()).filter(Boolean),
@@ -291,7 +334,14 @@ function scoreJob(job, profile, corpusSkillCounts, rubric) {
 
   const profileMatch = Math.min(100, profileSkills.length * 14 + targetRoleHits.length * 18 + companyHits.length * 10);
   const atsCoverage = profile.skills.length ? Math.round((profileSkills.length / profile.skills.length) * 100) : Math.min(100, skills.length * 12);
-  const roleFit = targetRoleHits.length ? 92 : profile.role && includesTerm(`${job.title} ${job.description}`, profile.role) ? 86 : family === "Other" ? 45 : 68;
+  // roleFit as a graded signal instead of 4 discrete buckets {45,68,86,92}, which
+  // used to pile most jobs onto exactly 68 and starve deep-fit's Layer B band.
+  // Combine: base by role-family recognition, +role-title hit, +per target-role hit.
+  const roleHit = Boolean(profile.role) && includesTerm(`${job.title} ${job.description}`, profile.role);
+  let roleFit = family === "Other" ? 45 : 62;      // family recognised → mild lift
+  if (roleHit) roleFit = Math.max(roleFit, 78);     // profile's own role title appears
+  if (targetRoleHits.length) roleFit = Math.min(96, 82 + (targetRoleHits.length - 1) * 6); // explicit target role(s) hit
+  roleFit = Math.max(0, Math.min(100, Math.round(roleFit)));
   const seniorityFit = level === "Intern" && !/intern|實習/i.test(profile.role) ? 55 : level === "Senior+" ? 70 : 82;
   const locationFit = locationHits.length || (profile.remote && mode === "Remote") ? 95 : mode === "Remote" ? 82 : profile.preferredLocations.length ? 58 : 70;
   const sourceQuality = /^adapter:/i.test(job.sourceType || "") ? 90 : job.sourceType === "json-ld" ? 78 : job.description?.length > 800 ? 72 : 55;
@@ -479,14 +529,26 @@ function enrichJob(job, intelligence) {
   // (i.e., allow manual overrides and external evaluator scores to persist).
   const wasIntelligenceScored = job.evaluation?.source === "career-ops-intelligence";
   const hasNoScore = job.score === undefined || job.score === "";
-  if (hasNoScore || wasIntelligenceScored || job.evaluation?.source === "career-ops-evaluate-heuristic") {
-    next.score = intelligence.score;
-    next.grade = intelligence.grade;
-    next.recommendation = intelligence.recommendation;
-    next.status = next.status && next.status !== "待評估" ? next.status : intelligence.recommendation;
-    next.evaluatedAt = new Date().toISOString();
+  const intelligenceOwnsScore = hasNoScore || wasIntelligenceScored || job.evaluation?.source === "career-ops-evaluate-heuristic";
+  // `next` already carries `intelligence` (spread above) so downstream consumers
+  // (deep-fit's roleFit layering, global skill gaps) have the features regardless
+  // of who owns the headline score.
+  if (!intelligenceOwnsScore) {
+    // A richer evaluator (e.g. career-ops-evaluate-v4) already produced the score
+    // AND its own coherent evaluation block (summary / ats_keywords / dimensions),
+    // computed against the same profile in the same run. Overwriting only the
+    // evaluation text with intelligence's *different* matcher produced a
+    // "Frankenstein" record: a v4 headline score next to intelligence-derived
+    // keyword hits. Preserve the owning evaluator's evaluation untouched.
+    return next;
   }
-  // Always refresh the evaluation block (features, ats_keywords, risks) — these depend on the current profile
+
+  // Intelligence owns scoring → set score/grade and build a coherent evaluation.
+  next.score = intelligence.score;
+  next.grade = intelligence.grade;
+  next.recommendation = intelligence.recommendation;
+  next.status = next.status && next.status !== "待評估" ? next.status : intelligence.recommendation;
+  next.evaluatedAt = new Date().toISOString();
   next.evaluation = {
     source: "career-ops-intelligence",
     overall: {
