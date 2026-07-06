@@ -18783,24 +18783,33 @@ Schema:
 	            </div>
 	            <div class="career-explore-grid">${layerC.map(renderLayerCCard).join("")}</div>` : "";
 
-	          // 若有填目標（公司/職位），改用單一清單、依四層目標優先級排序；否則維持 Layer A/B/C。
+	          // 若有填目標（公司/職位），改用四象限分組：每個象限各自列出全部符合職缺並前端分頁；否則維持 Layer A/B/C。
 	          const targetSeed = df.targetSeed || null;
 	          const targetRanked = Array.isArray(df.targetRanked) ? df.targetRanked : null;
 	          let mainSectionsHtml;
 	          if (targetSeed && targetRanked) {
-	            const counts = Array.isArray(df.targetTierCounts) ? df.targetTierCounts : [0, 0, 0, 0];
 	            const seedLabel = [targetSeed.company, targetSeed.title].filter(Boolean).join(" / ");
-	            const tierSummaryHtml = `
-	              <div style="border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin-bottom:14px;background:var(--surface-strong);">
-	                <div style="font-weight:800;margin-bottom:10px;font-size:13px;">目標優先排序（依「${careerText(seedLabel)}」由高到低）</div>
-	                <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:8px;">
-	                  ${CAREER_OPS_TARGET_TIER_LABELS.map((label, i) => `<div style="display:flex;align-items:center;justify-content:space-between;gap:8px;border:1px solid var(--line);border-radius:8px;padding:6px 10px;"><span style="font-size:12px;display:flex;align-items:center;gap:6px;"><span style="width:9px;height:9px;border-radius:50%;background:${careerOpsTargetTierColor(i)};display:inline-block;"></span>${careerText(label)}</span><strong style="font-size:12.5px;${counts[i] ? "" : "color:var(--muted);"}">${counts[i] ? counts[i] + " 筆" : "沒有"}</strong></div>`).join("")}
-	                </div>
-	              </div>`;
-	            const targetListHtml = targetRanked.length
-	              ? `<div style="display:flex;flex-direction:column;gap:8px;">${targetRanked.map(renderCareerTargetRow).join("")}</div>`
-	              : `<div class="career-ops-empty">目標比對後沒有可顯示的職缺。</div>`;
-	            mainSectionsHtml = `${tierSummaryHtml}${targetListHtml}`;
+	            const QUAD_PAGE_SIZE = 20;
+	            if (!Array.isArray(window._careerOpsQuadPage)) window._careerOpsQuadPage = [0, 0, 0, 0];
+	            const byTier = [[], [], [], []];
+	            targetRanked.forEach(item => { const t = Number(item.targetTier); (byTier[t] || byTier[3]).push(item); });
+	            const sectionsHtml = CAREER_OPS_TARGET_TIER_LABELS.map((label, i) => {
+	              const items = byTier[i] || [];
+	              const color = careerOpsTargetTierColor(i);
+	              const headerHtml = `<div class="career-layer-header"><span style="flex:none;width:11px;height:11px;border-radius:50%;background:${color};display:inline-block;"></span><h3>${careerText(label)}</h3><small>${items.length} 筆</small></div>`;
+	              if (!items.length) return `${headerHtml}<div class="career-ops-empty" style="margin-bottom:16px;">此象限目前沒有符合職缺。</div>`;
+	              const maxPage = Math.max(0, Math.ceil(items.length / QUAD_PAGE_SIZE) - 1);
+	              let page = Math.min(Math.max(0, window._careerOpsQuadPage[i] || 0), maxPage);
+	              window._careerOpsQuadPage[i] = page;
+	              const pageItems = items.slice(page * QUAD_PAGE_SIZE, page * QUAD_PAGE_SIZE + QUAD_PAGE_SIZE);
+	              const rowsHtml = `<div style="display:flex;flex-direction:column;gap:8px;">${pageItems.map(renderCareerTargetRow).join("")}</div>`;
+	              const pagerHtml = maxPage > 0
+	                ? `<div style="display:flex;align-items:center;justify-content:center;gap:12px;margin:12px 0 20px;"><button class="career-link-btn" type="button" ${page <= 0 ? "disabled" : ""} onclick="careerOpsSetQuadPage(${i}, ${page - 1})">上一頁</button><span style="font-size:12.5px;color:var(--muted);">第 ${page + 1} / ${maxPage + 1} 頁 · 共 ${items.length} 筆</span><button class="career-link-btn" type="button" ${page >= maxPage ? "disabled" : ""} onclick="careerOpsSetQuadPage(${i}, ${page + 1})">下一頁</button></div>`
+	                : `<div style="margin-bottom:20px;"></div>`;
+	              return `${headerHtml}${rowsHtml}${pagerHtml}`;
+	            }).join("");
+	            const introHtml = `<div class="career-ops-help" style="margin:0 0 14px;">依「${careerText(seedLabel)}」分成四象限，每個象限列出全部符合職缺（每頁 ${QUAD_PAGE_SIZE} 筆，可翻頁）。</div>`;
+	            mainSectionsHtml = `${introHtml}${sectionsHtml}`;
 	          } else {
 	            mainSectionsHtml = `${layerAHtml}${layerBHtml}${layerCHtml}`;
 	          }
@@ -18825,6 +18834,15 @@ Schema:
 	              <button class="career-link-btn" type="button" onclick="navigator.clipboard.writeText($c('careerShareUrl').textContent)">複製連結</button>
 	            </div>`;
 		        }
+
+		        // 四象限分頁：切換某象限頁碼後重繪整個 Deep Fit 儀表板。
+		        function careerOpsSetQuadPage(tier, page) {
+		          if (!Array.isArray(window._careerOpsQuadPage)) window._careerOpsQuadPage = [0, 0, 0, 0];
+		          const t = Math.min(3, Math.max(0, Number(tier) || 0));
+		          window._careerOpsQuadPage[t] = Math.max(0, Number(page) || 0);
+		          renderDeepFitDashboard();
+		        }
+		        window.careerOpsSetQuadPage = careerOpsSetQuadPage;
 
 		        function careerOpsDownloadDeepFitJson() {
 		          const df = careerOpsGetActiveDeepFitResult();
@@ -19102,8 +19120,30 @@ Schema:
 		            .slice(0, 30);
 		          const profileSkills = careerOpsLocalProfileTerms(profile).skills;
 
+		          // 完整輕量清單（不截斷）：供四象限分組使用，讓每個象限能列出全部符合職缺再前端分頁。
+		          // layer 標籤依門檻直接計算（不受 A/B/C 顯示上限影響），僅作為參考徽章。
+		          const layerLabelOf = (job) => {
+		            if (job._score >= 55 && job._roleFit >= 68) return "A";
+		            if (job._score >= 30 && job._roleFit >= 40) return "B";
+		            return "C";
+		          };
+		          const allLight = pool.map(job => ({
+		            jobKey: job.jobKey || "",
+		            company: job.company || "",
+		            title: job.title || "",
+		            url: job.url || "",
+		            score: job._score,
+		            grade: job.grade || careerOpsLocalGrade(job._score),
+		            roleFit: job._roleFit,
+		            seniority: job._seniorityFit?.seniority || "",
+		            location: job.location || "",
+		            decision: careerOpsLocalDecision(job._score),
+		            layer: layerLabelOf(job)
+		          }));
+
 		          return {
 		            activeJobCount: scored.length,
+		            allLight,
 		            candidateStage,
 		            candidateStageLabel: careerOpsCandidateStageLabel(candidateStage),
 		            filteredSeniorityMismatches,
@@ -19233,7 +19273,9 @@ Schema:
 		          };
 		          const result = { summary, layerA: classified.layerA, layerB: classified.layerB, layerC: classified.layerC };
 		          if (targetSeed) {
-		            const tr = careerOpsBuildTargetRanked(targetSeed, [
+		            // 四象限改吃「完整輕量清單」（全部符合職缺，不受 A/B/C 顯示上限截斷），
+		            // 每象限再由前端分頁顯示。
+		            const tr = careerOpsBuildTargetRanked(targetSeed, classified.allLight || [
 		              ...(classified.layerA || []),
 		              ...(classified.layerB || []),
 		              ...(classified.layerC || [])
@@ -19241,6 +19283,7 @@ Schema:
 		            result.targetSeed = targetSeed;
 		            result.targetRanked = tr.ranked;
 		            result.targetTierCounts = tr.counts;
+		            window._careerOpsQuadPage = [0, 0, 0, 0]; // 新分析重置每象限頁碼
 		          }
 		          window.CV_CAREER_OPS_DEEP_FIT = result;
 		          window._careerOpsDeepFitSource = "user-upload";
