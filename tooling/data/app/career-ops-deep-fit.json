@@ -1,6 +1,6 @@
 {
   "source": "career-ops-deep-fit",
-  "generatedAt": "2026-07-06T17:19:09.840Z",
+  "generatedAt": "2026-07-06T20:16:16.547Z",
   "llmProvider": "none",
   "summary": {
     "totalResults": 95,
@@ -2897,30 +2897,6 @@
       "layer": "C"
     },
     {
-      "jobKey": "url:https://job-boards.greenhouse.io/reddit/jobs/7955200",
-      "company": "Reddit Greenhouse",
-      "title": "Senior Frontend Engineer, Community Builders",
-      "score": 85,
-      "grade": "A",
-      "roleFit": 82,
-      "url": "https://job-boards.greenhouse.io/reddit/jobs/7955200",
-      "location": "Remote - United States",
-      "keywordHits": [
-        "Frontend Engineer",
-        "JavaScript",
-        "TypeScript",
-        "React"
-      ],
-      "topGap": "vue",
-      "mainGaps": [
-        "vue",
-        "angular",
-        "rest",
-        "growth"
-      ],
-      "layer": "C"
-    },
-    {
       "jobKey": "url:https://job-boards.greenhouse.io/reddit/jobs/7976852",
       "company": "Reddit Greenhouse",
       "title": "Senior Software Engineer - Full Stack Internal Tooling (Build and Deployment Platform)",
@@ -3451,6 +3427,29 @@
       "roleFit": 82,
       "url": "https://jobs.ashbyhq.com/elevenlabs/6848ece5-1ce5-4ab4-9dd6-0704cd0f8ecd",
       "location": "Spain",
+      "keywordHits": [
+        "API",
+        "remote",
+        "Product Engineer"
+      ],
+      "topGap": "python",
+      "mainGaps": [
+        "python",
+        "go",
+        "llm",
+        "agents"
+      ],
+      "layer": "C"
+    },
+    {
+      "jobKey": "url:https://jobs.ashbyhq.com/elevenlabs/f0cccf77-a255-4620-9639-2f1cc5f9c0ab",
+      "company": "ElevenLabs Ashby",
+      "title": "Deployment Strategist - Poland",
+      "score": 84,
+      "grade": "B",
+      "roleFit": 82,
+      "url": "https://jobs.ashbyhq.com/elevenlabs/f0cccf77-a255-4620-9639-2f1cc5f9c0ab",
+      "location": "Poland",
       "keywordHits": [
         "API",
         "remote",

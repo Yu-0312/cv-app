@@ -1,6 +1,6 @@
 window.CV_CAREER_OPS_COMPENSATION = {
   "source": "career-ops-compensation",
-  "generatedAt": "2026-07-06T17:18:57.329Z",
+  "generatedAt": "2026-07-06T20:16:03.482Z",
   "plans": [
     {
       "jobKey": "url:https://job-boards.greenhouse.io/gitlab/jobs/8488961002",

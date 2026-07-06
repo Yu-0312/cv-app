@@ -1,6 +1,6 @@
 window.CV_CAREER_OPS_STORY_BANK = {
   "source": "career-ops-story-bank",
-  "generatedAt": "2026-07-06T17:19:01.565Z",
+  "generatedAt": "2026-07-06T20:16:08.001Z",
   "llmProvider": "none",
   "storyBank": {
     "themes": [
@@ -233,7 +233,7 @@ window.CV_CAREER_OPS_STORY_BANK = {
     "learningPlan": [
       {
         "skill": "growth",
-        "marketCount": 64,
+        "marketCount": 63,
         "priority": "P0",
         "priorityLabel": "高優先",
         "reason": "市場需求極高，補充後可顯著提升評分",
@@ -241,7 +241,7 @@ window.CV_CAREER_OPS_STORY_BANK = {
       },
       {
         "skill": "go",
-        "marketCount": 47,
+        "marketCount": 48,
         "priority": "P0",
         "priorityLabel": "高優先",
         "reason": "市場需求極高，補充後可顯著提升評分",
@@ -257,7 +257,7 @@ window.CV_CAREER_OPS_STORY_BANK = {
       },
       {
         "skill": "sales",
-        "marketCount": 34,
+        "marketCount": 35,
         "priority": "P0",
         "priorityLabel": "高優先",
         "reason": "市場需求極高，補充後可顯著提升評分",
@@ -281,7 +281,7 @@ window.CV_CAREER_OPS_STORY_BANK = {
       },
       {
         "skill": "llm",
-        "marketCount": 17,
+        "marketCount": 18,
         "priority": "P0",
         "priorityLabel": "高優先",
         "reason": "市場需求極高，補充後可顯著提升評分",
@@ -297,7 +297,7 @@ window.CV_CAREER_OPS_STORY_BANK = {
       },
       {
         "skill": "rest",
-        "marketCount": 16,
+        "marketCount": 15,
         "priority": "P0",
         "priorityLabel": "高優先",
         "reason": "市場需求極高，補充後可顯著提升評分",

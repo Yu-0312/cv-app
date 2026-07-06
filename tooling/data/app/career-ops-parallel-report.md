@@ -1,6 +1,6 @@
 # Career Ops Parallel Worker Report
 
-Generated: 2026-07-06T17:19:05.592Z
+Generated: 2026-07-06T20:16:12.500Z
 Concurrency: 4
 Jobs processed: 50
 Errors: 0
@@ -461,21 +461,6 @@ Errors: 0
 - Never store API keys or credentials in job metadata.
 - Record only application status and user-approved notes.
 
-## P0 Reddit Greenhouse - Senior Frontend Engineer, Community Builders
-
-- Score: 85
-- Grade: A
-- Research evidence: 0
-- Keywords: JavaScript, TypeScript, React, CSS, frontend, engineer, years, building, product, in
-- Compensation leverage: -
-- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
-
-### Apply Agent Guardrails
-- Never submit without explicit user confirmation.
-- Never fabricate work authorization, salary history, degree, or experience.
-- Never store API keys or credentials in job metadata.
-- Record only application status and user-approved notes.
-
 ## P0 Reddit Greenhouse - Senior Software Engineer - Full Stack Internal Tooling (Build and Deployment Platform)
 
 - Score: 85
@@ -738,6 +723,21 @@ Errors: 0
 - Research evidence: 10
 - Keywords: engineer, building, product, in, design, architecture
 - Compensation leverage: high
+- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
+
+### Apply Agent Guardrails
+- Never submit without explicit user confirmation.
+- Never fabricate work authorization, salary history, degree, or experience.
+- Never store API keys or credentials in job metadata.
+- Record only application status and user-approved notes.
+
+## P1 Mozilla Greenhouse - Senior Engineering Manager, AI Product (Thunderbolt)
+
+- Score: 84
+- Grade: B
+- Research evidence: 0
+- Keywords: React, years, product, in, design, system, performance
+- Compensation leverage: -
 - Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
 ### Apply Agent Guardrails

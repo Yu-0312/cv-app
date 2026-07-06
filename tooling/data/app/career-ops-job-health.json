@@ -1,10 +1,10 @@
 {
   "source": "career-ops-health-monitor",
-  "checkedAt": "2026-07-06T17:19:18.048Z",
+  "checkedAt": "2026-07-06T20:16:24.821Z",
   "threshold": 0.25,
   "health": {
-    "total": 86626,
-    "active": 86626,
+    "total": 86642,
+    "active": 86642,
     "expired": 0,
     "stale": 0,
     "expiredRate": 0,
@@ -32,15 +32,15 @@
         "expired": 0
       },
       "The Muse Global Remote Jobs": {
-        "total": 1815,
+        "total": 1814,
         "expired": 0
       },
       "Vercel Greenhouse": {
-        "total": 64,
+        "total": 63,
         "expired": 0
       },
       "Supabase Ashby": {
-        "total": 49,
+        "total": 50,
         "expired": 0
       },
       "PostHog Ashby": {
@@ -48,7 +48,7 @@
         "expired": 0
       },
       "MyCareersFuture Singapore Frontend Full Stack": {
-        "total": 32,
+        "total": 30,
         "expired": 0
       },
       "Stripe Greenhouse": {
@@ -64,7 +64,7 @@
         "expired": 0
       },
       "Reddit Greenhouse": {
-        "total": 166,
+        "total": 164,
         "expired": 0
       },
       "Ramp Ashby": {
@@ -72,7 +72,7 @@
         "expired": 0
       },
       "The Muse Global Software Engineering": {
-        "total": 1735,
+        "total": 1740,
         "expired": 0
       },
       "Japan Dev English Tech Jobs": {
@@ -84,15 +84,15 @@
         "expired": 0
       },
       "Figma Greenhouse": {
-        "total": 135,
+        "total": 134,
         "expired": 0
       },
       "Mozilla Greenhouse": {
-        "total": 48,
+        "total": 47,
         "expired": 0
       },
       "Asana Greenhouse": {
-        "total": 114,
+        "total": 113,
         "expired": 0
       },
       "The Muse Global Public Jobs": {
@@ -100,7 +100,7 @@
         "expired": 0
       },
       "The Muse Global Data Analytics": {
-        "total": 1838,
+        "total": 1837,
         "expired": 0
       },
       "Perplexity Ashby": {
@@ -124,7 +124,7 @@
         "expired": 0
       },
       "Notion Ashby": {
-        "total": 108,
+        "total": 110,
         "expired": 0
       },
       "MyCareersFuture Singapore Software": {
@@ -136,11 +136,11 @@
         "expired": 0
       },
       "MongoDB Greenhouse": {
-        "total": 327,
+        "total": 326,
         "expired": 0
       },
       "Roblox Greenhouse": {
-        "total": 196,
+        "total": 194,
         "expired": 0
       },
       "NVIDIA Workday": {
@@ -164,7 +164,7 @@
         "expired": 0
       },
       "Source flex job board": {
-        "total": 147,
+        "total": 158,
         "expired": 0
       },
       "Gogolook": {
@@ -192,11 +192,15 @@
         "expired": 0
       },
       "Yourator Taiwan Job Search": {
-        "total": 1748,
+        "total": 1742,
         "expired": 0
       },
       "Logitech Workday Taiwan": {
         "total": 27,
+        "expired": 0
+      },
+      "Daijob Japan Broad Listings": {
+        "total": 117,
         "expired": 0
       },
       "MyCareersFuture Singapore Graduate Research": {
@@ -209,10 +213,6 @@
       },
       "Microsoft Beijing": {
         "total": 3,
-        "expired": 0
-      },
-      "Daijob Japan Broad Listings": {
-        "total": 98,
         "expired": 0
       },
       "Samsung Research": {
@@ -307,6 +307,10 @@
         "total": 1,
         "expired": 0
       },
+      "yes123 Taiwan Job Search": {
+        "total": 1,
+        "expired": 0
+      },
       "Grab SmartRecruiters": {
         "total": 17,
         "expired": 0
@@ -348,22 +352,6 @@
         "expired": 0
       },
       "Apple Shanghai": {
-        "total": 1,
-        "expired": 0
-      },
-      "ASSA ABLOY SuccessFactors Taipei Manufacturing Engineer": {
-        "total": 1,
-        "expired": 0
-      },
-      "ASSA ABLOY SuccessFactors Software Engineer": {
-        "total": 1,
-        "expired": 0
-      },
-      "ASSA ABLOY SuccessFactors C# Software Engineer": {
-        "total": 1,
-        "expired": 0
-      },
-      "yes123 Taiwan Job Search": {
         "total": 1,
         "expired": 0
       }

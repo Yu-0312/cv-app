@@ -1,6 +1,6 @@
 # Career Ops Deep Fit Report
 
-Generated: 2026-07-06T17:19:09.840Z
+Generated: 2026-07-06T20:16:16.547Z
 LLM provider: none
 Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 exploratory)
 
@@ -973,7 +973,6 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - **Vercel Greenhouse — Product Security Engineer** (score: 85) | Top gap: terraform
 - **Reddit Greenhouse — Director of Engineering, Developer Productivity** (score: 85) | Top gap: llm
 - **Reddit Greenhouse — Principal Technical Program Manager, Performance** (score: 85) | Top gap: growth
-- **Reddit Greenhouse — Senior Frontend Engineer, Community Builders** (score: 85) | Top gap: vue
 - **Reddit Greenhouse — Senior Software Engineer - Full Stack Internal Tooling (Build and Deployment Platform)** (score: 85) | Top gap: go
 - **Reddit Greenhouse — Senior Staff Machine Learning Systems Engineer, Indexing & Retrieval Search** (score: 85) | Top gap: python
 - **Reddit Greenhouse — Staff Software Engineer, Onboarding** (score: 85) | Top gap: machine learning
@@ -998,4 +997,5 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - **ElevenLabs Ashby — Deployment Strategist - North America** (score: 84) | Top gap: python
 - **ElevenLabs Ashby — Deployment Strategist - Europe** (score: 84) | Top gap: python
 - **ElevenLabs Ashby — Deployment Strategist - Spain** (score: 84) | Top gap: python
+- **ElevenLabs Ashby — Deployment Strategist - Poland** (score: 84) | Top gap: python
 
