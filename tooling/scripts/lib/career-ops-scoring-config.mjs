@@ -198,7 +198,11 @@ export const COMPENSATION_CONFIG = {
   // numeric range and score the two-way fit instead of signal-only.
   meetsExpectation: 90,  // job's top of range ≥ expectation
   nearExpectation: 74,   // within `nearBandRatio` below expectation
-  belowExpectation: 46,  // clearly below expectation
+  // Clearly below expectation. Kept above ~50 on purpose: a job that HONESTLY
+  // discloses a below-expectation range should not score worse than one that
+  // hides salary entirely (hidden → noData → weight redistributed, effectively
+  // neutral). Under-penalising disclosure avoids rewarding opaque postings.
+  belowExpectation: 56,  // clearly below expectation (transparency still has value)
   wellAbove: 96,         // job floor already above expectation (great)
   nearBandRatio: 0.9,    // ≥ 90% of expectation counts as "near"
 };

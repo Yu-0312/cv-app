@@ -25,6 +25,42 @@ export async function ensureDir(filePath) {
   await fs.mkdir(path.dirname(filePath), { recursive: true });
 }
 
+// Tracking / attribution query params that are safe to strip when de-duplicating
+// job URLs. IMPORTANT: this list must never include params that carry the actual
+// job identity (e.g. Greenhouse's `gh_jid`, Lever's job id path) — only source /
+// campaign / referrer tags.
+const TRACKING_PARAMS = [
+  "utm_source", "utm_medium", "utm_campaign", "utm_term", "utm_content",
+  "ref", "source", "src", "referrer", "referer",
+  "fbclid", "gclid", "mc_cid", "mc_eid", "igshid",
+  "gh_src", "lever-source", "lever-origin", "trk", "trackid",
+];
+
+/**
+ * Canonical de-duplication key for a job, shared across the scrape → merge →
+ * lifecycle path so every stage agrees on identity. Prefer a normalised URL
+ * (http/https only, hash + tracking params stripped, lower-cased); otherwise
+ * fall back to company|title|location text.
+ */
+export function stableJobKey(job) {
+  const rawUrl = String(job?.url || "").trim();
+  if (rawUrl) {
+    try {
+      const parsed = new URL(rawUrl);
+      if (parsed.protocol === "http:" || parsed.protocol === "https:") {
+        parsed.hash = "";
+        for (const key of [...parsed.searchParams.keys()]) {
+          if (TRACKING_PARAMS.includes(key.toLowerCase())) parsed.searchParams.delete(key);
+        }
+        return `url:${parsed.href.toLowerCase()}`;
+      }
+    } catch {}
+  }
+  return `text:${[job?.company, job?.title, job?.location]
+    .map((item) => String(item || "").trim().toLowerCase())
+    .join("|")}`;
+}
+
 export function randomDelay(minMs, maxMs) {
   const ms = Math.floor(Math.random() * (maxMs - minMs + 1)) + minMs;
   return new Promise((resolve) => setTimeout(resolve, ms));
