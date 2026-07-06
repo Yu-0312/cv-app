@@ -1,6 +1,6 @@
 # Career Ops Deep Fit Report
 
-Generated: 2026-07-06T21:54:14.527Z
+Generated: 2026-07-06T23:30:05.045Z
 LLM provider: none
 Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 exploratory)
 
@@ -948,23 +948,23 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Keyword hits: TypeScript, API, remote, TypeScript
 - Gaps: python, java, kotlin, aws, gcp, azure
 
-### Uber - Senior Localization Program Manager, Multilingual AI
+### Bank of America - Assistant Vice President; Software Engineer
 - Score: 82 | Grade: B | RoleFit: 62
 - Decision: pursue selectively
-- Keyword hits: Analytics, API, remote, dashboard, analytics
-- Gaps: python, gcp, llm, rag, operations
+- Keyword hits: React, API, remote, React
+- Gaps: python, sql, rest, etl, growth
 
-### Exadel - Senior Data Engineer
+### Exadel - Senior API Engineer (.NET)
 - Score: 82 | Grade: B | RoleFit: 62
 - Decision: pursue selectively
-- Keyword hits: Analytics, API, remote, dashboard, analytics
-- Gaps: python, sql, aws, terraform, etl, spark
+- Keyword hits: API, remote
+- Gaps: sql, aws, azure
 
-### Exadel - Senior/Lead Machine Learning Engineer
+### Exadel - Senior Software Architect (.NET)
 - Score: 82 | Grade: B | RoleFit: 62
 - Decision: pursue selectively
-- Keyword hits: Analytics, API, remote, analytics
-- Gaps: python, sql, aws, azure, rag, prompt engineering
+- Keyword hits: API, remote
+- Gaps: sql, aws, azure, rest
 
 ## Layer C — Exploratory Signals (roleFit < 40)
 
@@ -982,6 +982,7 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - **PostHog Ashby — Developer who connects with other developers** (score: 85) | Top gap: go
 - **PostHog Ashby — Technical Account Executive** (score: 85) | Top gap: go
 - **Uber — Sr Software Engineer, Frontend (Web)** (score: 84) | Top gap: angular
+- **Uber — Principal Engineer - Client and Product Foundations** (score: 84) | Top gap: none
 - **Pilotly — Product Engineer II** (score: 84) | Top gap: aws
 - **Equinix, Inc — Staff Software Engineer (Full-Stack)** (score: 84) | Top gap: python
 - **Coinbase — Senior Software Engineer, Frontend (Consumer - Trading)** (score: 84) | Top gap: growth
@@ -997,5 +998,4 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - **Asana Greenhouse — Staff Software Engineer, API** (score: 84) | Top gap: agents
 - **ElevenLabs Ashby — Deployment Strategist - North America** (score: 84) | Top gap: python
 - **ElevenLabs Ashby — Deployment Strategist - Europe** (score: 84) | Top gap: python
-- **ElevenLabs Ashby — Deployment Strategist - Spain** (score: 84) | Top gap: python
 

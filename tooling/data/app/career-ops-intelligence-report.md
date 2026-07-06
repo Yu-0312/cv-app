@@ -1,11 +1,11 @@
 # Career Ops Intelligence Report
 
-Generated: 2026-07-06T21:53:37.513Z
+Generated: 2026-07-06T23:29:26.817Z
 
-- Active jobs: 85597
+- Active jobs: 86611
 - Expired jobs: 0
-- Duplicate groups: 3430
-- Jobs without enough description: 2288
+- Duplicate groups: 3577
+- Jobs without enough description: 2289
 - Rubric: Career Ops 10-Dimension Rubric
 
 ## Rubric Weights
@@ -21,55 +21,55 @@ Generated: 2026-07-06T21:53:37.513Z
 - applicationEffort: 0.08
 
 ## Top Skills
-- api: 8512
-- growth: 4847
-- operations: 4119
-- sales: 3737
-- analytics: 3582
-- python: 2408
-- go: 2171
-- excel: 1708
-- sql: 1638
-- aws: 1399
-- machine learning: 1167
-- azure: 1108
+- api: 9527
+- growth: 5066
+- operations: 4474
+- sales: 3917
+- analytics: 3629
+- python: 2697
+- go: 2297
+- excel: 1766
+- sql: 1740
+- aws: 1465
+- machine learning: 1195
+- azure: 1162
 
 ## Missing High-Demand Skills
-- growth: 4847
-- operations: 4119
-- sales: 3737
-- python: 2408
-- go: 2171
-- excel: 1708
-- sql: 1638
-- aws: 1399
-- machine learning: 1167
-- azure: 1108
+- growth: 5066
+- operations: 4474
+- sales: 3917
+- python: 2697
+- go: 2297
+- excel: 1766
+- sql: 1740
+- aws: 1465
+- machine learning: 1195
+- azure: 1162
 
 ## Global Skill Gap Priority (weighted by job score)
-- growth: 7155.6
-- operations: 6051.8
-- sales: 5486.7
-- python: 3610.7
-- go: 3248.6
-- excel: 2486.3
-- sql: 2450.5
-- aws: 2092.8
-- machine learning: 1749.3
-- azure: 1655.2
-- agents: 1479.6
-- spark: 1418.7
+- growth: 7467.5
+- operations: 6558.2
+- sales: 5735.6
+- python: 4037.9
+- go: 3432.3
+- sql: 2601.1
+- excel: 2569
+- aws: 2191.3
+- machine learning: 1791.8
+- azure: 1735.8
+- agents: 1499.5
+- spark: 1433.9
 
 ## Role Families
-- Backend: 80806
-- Other: 2005
-- AI / Data: 919
-- Frontend: 878
-- Sales: 357
-- Marketing: 213
+- Backend: 81740
+- Other: 2004
+- Frontend: 957
+- AI / Data: 920
+- Sales: 358
+- Marketing: 211
 - Product: 150
 - Design: 130
-- Operations: 76
+- Operations: 78
 - Internship: 42
 
 ## Recommended Search Queries

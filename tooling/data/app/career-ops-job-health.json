@@ -1,10 +1,10 @@
 {
   "source": "career-ops-health-monitor",
-  "checkedAt": "2026-07-06T21:54:22.914Z",
+  "checkedAt": "2026-07-06T23:30:13.247Z",
   "threshold": 0.25,
   "health": {
-    "total": 85597,
-    "active": 85597,
+    "total": 86611,
+    "active": 86611,
     "expired": 0,
     "stale": 0,
     "expiredRate": 0,
@@ -32,7 +32,7 @@
         "expired": 0
       },
       "The Muse Global Remote Jobs": {
-        "total": 1827,
+        "total": 1814,
         "expired": 0
       },
       "Vercel Greenhouse": {
@@ -52,11 +52,11 @@
         "expired": 0
       },
       "The Muse Global Software Engineering": {
-        "total": 709,
+        "total": 1737,
         "expired": 0
       },
       "Stripe Greenhouse": {
-        "total": 444,
+        "total": 442,
         "expired": 0
       },
       "Airbnb Greenhouse": {
@@ -64,7 +64,7 @@
         "expired": 0
       },
       "Anthropic Greenhouse": {
-        "total": 377,
+        "total": 378,
         "expired": 0
       },
       "Reddit Greenhouse": {
@@ -80,7 +80,7 @@
         "expired": 0
       },
       "Databricks Greenhouse": {
-        "total": 628,
+        "total": 629,
         "expired": 0
       },
       "Figma Greenhouse": {
@@ -100,7 +100,7 @@
         "expired": 0
       },
       "The Muse Global Data Analytics": {
-        "total": 1826,
+        "total": 1827,
         "expired": 0
       },
       "Perplexity Ashby": {
@@ -140,7 +140,7 @@
         "expired": 0
       },
       "Roblox Greenhouse": {
-        "total": 195,
+        "total": 194,
         "expired": 0
       },
       "NVIDIA Workday": {
@@ -160,7 +160,7 @@
         "expired": 0
       },
       "Cursor Ashby": {
-        "total": 106,
+        "total": 107,
         "expired": 0
       },
       "Source flex job board": {
@@ -212,7 +212,7 @@
         "expired": 0
       },
       "Daijob Japan Broad Listings": {
-        "total": 97,
+        "total": 95,
         "expired": 0
       },
       "Samsung Research": {

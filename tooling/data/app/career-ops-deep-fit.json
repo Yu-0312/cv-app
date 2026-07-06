@@ -1,6 +1,6 @@
 {
   "source": "career-ops-deep-fit",
-  "generatedAt": "2026-07-06T21:54:14.527Z",
+  "generatedAt": "2026-07-06T23:30:05.045Z",
   "llmProvider": "none",
   "summary": {
     "totalResults": 95,
@@ -2720,80 +2720,69 @@
       "layer": "B"
     },
     {
-      "jobKey": "url:https://www.themuse.com/jobs/uber/senior-localization-program-manager-multilingual-ai",
-      "company": "Uber",
-      "title": "Senior Localization Program Manager, Multilingual AI",
+      "jobKey": "url:https://www.themuse.com/jobs/bankofamerica/assistant-vice-president-software-engineer-7aca5b",
+      "company": "Bank of America",
+      "title": "Assistant Vice President; Software Engineer",
       "score": 82,
       "grade": "B",
       "roleFit": 62,
-      "url": "https://www.themuse.com/jobs/uber/senior-localization-program-manager-multilingual-ai",
-      "location": "Sunnyvale, CA",
+      "url": "https://www.themuse.com/jobs/bankofamerica/assistant-vice-president-software-engineer-7aca5b",
+      "location": "New York, NY",
       "keywordHits": [
-        "Analytics",
+        "React",
         "API",
         "remote",
-        "dashboard",
-        "analytics"
-      ],
-      "keywordMisses": [
-        "python",
-        "gcp",
-        "llm",
-        "rag",
-        "operations"
-      ],
-      "decision": "pursue selectively",
-      "layer": "B"
-    },
-    {
-      "jobKey": "url:https://www.themuse.com/jobs/exadel/senior-data-engineer-b94a14",
-      "company": "Exadel",
-      "title": "Senior Data Engineer",
-      "score": 82,
-      "grade": "B",
-      "roleFit": 62,
-      "url": "https://www.themuse.com/jobs/exadel/senior-data-engineer-b94a14",
-      "location": "Dabas, Hungary / Kazanlak, Bulgaria / Ozorków, Poland",
-      "keywordHits": [
-        "Analytics",
-        "API",
-        "remote",
-        "dashboard",
-        "analytics"
+        "React"
       ],
       "keywordMisses": [
         "python",
         "sql",
-        "aws",
-        "terraform",
+        "rest",
         "etl",
-        "spark"
+        "growth"
       ],
       "decision": "pursue selectively",
       "layer": "B"
     },
     {
-      "jobKey": "url:https://www.themuse.com/jobs/exadel/seniorlead-machine-learning-engineer-c5f830",
+      "jobKey": "url:https://www.themuse.com/jobs/exadel/senior-api-engineer-net",
       "company": "Exadel",
-      "title": "Senior/Lead Machine Learning Engineer",
+      "title": "Senior API Engineer (.NET)",
       "score": 82,
       "grade": "B",
       "roleFit": 62,
-      "url": "https://www.themuse.com/jobs/exadel/seniorlead-machine-learning-engineer-c5f830",
-      "location": "Dabas, Hungary / Kazanlak, Bulgaria / Ozorków, Poland",
+      "url": "https://www.themuse.com/jobs/exadel/senior-api-engineer-net",
+      "location": "Kazanlak, Bulgaria",
       "keywordHits": [
-        "Analytics",
         "API",
-        "remote",
-        "analytics"
+        "remote"
       ],
       "keywordMisses": [
-        "python",
+        "sql",
+        "aws",
+        "azure"
+      ],
+      "decision": "pursue selectively",
+      "layer": "B"
+    },
+    {
+      "jobKey": "url:https://www.themuse.com/jobs/exadel/senior-software-architect-net",
+      "company": "Exadel",
+      "title": "Senior Software Architect (.NET)",
+      "score": 82,
+      "grade": "B",
+      "roleFit": 62,
+      "url": "https://www.themuse.com/jobs/exadel/senior-software-architect-net",
+      "location": "Dabas, Hungary / Kazanlak, Bulgaria / Ozorków, Poland",
+      "keywordHits": [
+        "API",
+        "remote"
+      ],
+      "keywordMisses": [
         "sql",
         "aws",
         "azure",
-        "rag",
-        "prompt engineering"
+        "rest"
       ],
       "decision": "pursue selectively",
       "layer": "B"
@@ -3111,6 +3100,24 @@
         "go",
         "html"
       ],
+      "layer": "C"
+    },
+    {
+      "jobKey": "url:https://www.themuse.com/jobs/uber/principal-engineer-client-and-product-foundations",
+      "company": "Uber",
+      "title": "Principal Engineer - Client and Product Foundations",
+      "score": 84,
+      "grade": "B",
+      "roleFit": 82,
+      "url": "https://www.themuse.com/jobs/uber/principal-engineer-client-and-product-foundations",
+      "location": "San Francisco, CA",
+      "keywordHits": [
+        "API",
+        "remote",
+        "Product Engineer"
+      ],
+      "topGap": "",
+      "mainGaps": [],
       "layer": "C"
     },
     {
@@ -3444,29 +3451,6 @@
       "roleFit": 82,
       "url": "https://jobs.ashbyhq.com/elevenlabs/5d1390e2-a6e8-4f8b-b01f-ad7e286009d2",
       "location": "United Kingdom / Ireland / Germany / Denmark / Portugal / Sweden / Italy / Poland",
-      "keywordHits": [
-        "API",
-        "remote",
-        "Product Engineer"
-      ],
-      "topGap": "python",
-      "mainGaps": [
-        "python",
-        "go",
-        "llm",
-        "agents"
-      ],
-      "layer": "C"
-    },
-    {
-      "jobKey": "url:https://jobs.ashbyhq.com/elevenlabs/6848ece5-1ce5-4ab4-9dd6-0704cd0f8ecd",
-      "company": "ElevenLabs Ashby",
-      "title": "Deployment Strategist - Spain",
-      "score": 84,
-      "grade": "B",
-      "roleFit": 82,
-      "url": "https://jobs.ashbyhq.com/elevenlabs/6848ece5-1ce5-4ab4-9dd6-0704cd0f8ecd",
-      "location": "Spain",
       "keywordHits": [
         "API",
         "remote",

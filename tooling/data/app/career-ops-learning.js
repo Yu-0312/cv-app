@@ -1,117 +1,117 @@
 window.CV_CAREER_OPS_LEARNING = {
   "source": "career-ops-learning",
-  "generatedAt": "2026-07-06T21:54:18.817Z",
+  "generatedAt": "2026-07-06T23:30:09.142Z",
   "learning": {
-    "activeJobCount": 85597,
-    "positiveSignalCount": 12173,
+    "activeJobCount": 86611,
+    "positiveSignalCount": 13181,
     "negativeSignalCount": 0,
     "preferredSkills": [
       {
         "name": "in",
-        "score": 42360.9
+        "score": 45996.9
       },
       {
         "name": "years",
-        "score": 31393.6
+        "score": 34016.2
       },
       {
         "name": "api",
-        "score": 27267.8
+        "score": 30932
       },
       {
         "name": "API",
-        "score": 27186.6
+        "score": 30844.8
       },
       {
         "name": "product",
-        "score": 22841.6
+        "score": 24267.2
       },
       {
         "name": "building",
-        "score": 21758.2
+        "score": 23279.5
       },
       {
         "name": "design",
-        "score": 19885
+        "score": 21796
       },
       {
         "name": "growth",
-        "score": 19353.6
+        "score": 20166
       },
       {
         "name": "operations",
-        "score": 17387.4
-      },
-      {
-        "name": "sales",
-        "score": 16144.2
+        "score": 18775.8
       },
       {
         "name": "from",
-        "score": 16094.7
+        "score": 17768.9
       },
       {
         "name": "to",
-        "score": 15914.8
+        "score": 17293.4
       },
       {
-        "name": "analytics",
-        "score": 14611
+        "name": "sales",
+        "score": 16767
       },
       {
         "name": "engineer",
-        "score": 14388.3
+        "score": 16294.4
       },
       {
         "name": "performance",
-        "score": 13976.2
+        "score": 14926.1
+      },
+      {
+        "name": "analytics",
+        "score": 14806.3
       },
       {
         "name": "Analytics",
-        "score": 13955
+        "score": 14142.9
       },
       {
         "name": "python",
-        "score": 9764.7
+        "score": 10883.7
       },
       {
         "name": "system",
-        "score": 9594.2
+        "score": 10639
       }
     ],
     "avoidSignals": [],
     "preferredCompanies": [
       {
-        "name": "Databricks Greenhouse",
-        "score": 2449.6
+        "name": "SpaceX",
+        "score": 3513.8
       },
       {
-        "name": "SpaceX",
-        "score": 2422.1
+        "name": "Databricks Greenhouse",
+        "score": 2453.6
+      },
+      {
+        "name": "Walmart",
+        "score": 2064.8
       },
       {
         "name": "GE Vernova",
-        "score": 1870.3
+        "score": 1891.5
       },
       {
         "name": "Yourator Taiwan Job Search",
         "score": 1861.8
       },
       {
+        "name": "Bank of America",
+        "score": 1680.4
+      },
+      {
         "name": "Stripe Greenhouse",
-        "score": 1612.5
+        "score": 1604.9
       },
       {
         "name": "Anthropic Greenhouse",
-        "score": 1448.4
-      },
-      {
-        "name": "Bank of America",
-        "score": 1429.5
-      },
-      {
-        "name": "Walmart",
-        "score": 1331.2
+        "score": 1451.9
       },
       {
         "name": "Canonical Greenhouse",
@@ -123,7 +123,7 @@ window.CV_CAREER_OPS_LEARNING = {
       },
       {
         "name": "Uber",
-        "score": 916.1
+        "score": 1101.3
       },
       {
         "name": "Airbnb Greenhouse",
@@ -133,27 +133,27 @@ window.CV_CAREER_OPS_LEARNING = {
     "preferredSources": [
       {
         "name": "market-public-api",
-        "score": 25263.3
-      },
-      {
-        "name": "flex-seed-source",
-        "score": 16228.1
+        "score": 28925.5
       },
       {
         "name": "global",
-        "score": 16184.9
+        "score": 17584.5
       },
       {
         "name": "us",
-        "score": 15127
+        "score": 16843.8
       },
       {
-        "name": "market-job-board",
-        "score": 2225.4
+        "name": "flex-seed-source",
+        "score": 16227.8
       },
       {
         "name": "sg",
-        "score": 2216.6
+        "score": 2248.3
+      },
+      {
+        "name": "market-job-board",
+        "score": 2219.1
       },
       {
         "name": "tw",
@@ -161,15 +161,15 @@ window.CV_CAREER_OPS_LEARNING = {
       },
       {
         "name": "jp",
-        "score": 2009.6
+        "score": 2021.4
       },
       {
         "name": "in",
-        "score": 1429.4
+        "score": 1561.5
       },
       {
         "name": "uk",
-        "score": 1343
+        "score": 1400.5
       },
       {
         "name": "market-research-opportunity",
@@ -177,29 +177,29 @@ window.CV_CAREER_OPS_LEARNING = {
       },
       {
         "name": "ca",
-        "score": 1033.9
+        "score": 1052.4
       }
     ],
     "roleFamilies": [
       {
         "name": "Backend",
-        "score": 36097.8
+        "score": 39424.3
       },
       {
         "name": "Frontend",
-        "score": 3682.7
+        "score": 4010.5
       },
       {
         "name": "AI / Data",
-        "score": 2940.6
+        "score": 2944
       },
       {
         "name": "Sales",
-        "score": 950.3
+        "score": 953.4
       },
       {
         "name": "Marketing",
-        "score": 697.1
+        "score": 695.3
       },
       {
         "name": "Product",
@@ -211,7 +211,7 @@ window.CV_CAREER_OPS_LEARNING = {
       },
       {
         "name": "Other",
-        "score": 198.8
+        "score": 191.9
       }
     ],
     "sourceCoverage": {
@@ -259,7 +259,7 @@ window.CV_CAREER_OPS_LEARNING = {
     },
     "nextStrategy": [
       "Expand searches around in, years, api, API, product.",
-      "Prioritize sources like market-public-api, flex-seed-source, global, us.",
+      "Prioritize sources like market-public-api, global, us, flex-seed-source.",
       "No strong avoid pattern learned yet.",
       "Refresh this learning layer after each batch evaluation or feedback session."
     ],
@@ -291,14 +291,14 @@ window.CV_CAREER_OPS_LEARNING = {
           "Linear",
           "Notion",
           "Vercel",
-          "Databricks Greenhouse",
           "SpaceX",
+          "Databricks Greenhouse",
+          "Walmart",
           "GE Vernova",
           "Yourator Taiwan Job Search",
-          "Stripe Greenhouse",
-          "Anthropic Greenhouse",
           "Bank of America",
-          "Walmart"
+          "Stripe Greenhouse",
+          "Anthropic Greenhouse"
         ]
       }
     }

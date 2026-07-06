@@ -1,6 +1,6 @@
 window.CV_CAREER_OPS_STORY_BANK = {
   "source": "career-ops-story-bank",
-  "generatedAt": "2026-07-06T21:54:06.215Z",
+  "generatedAt": "2026-07-06T23:29:56.447Z",
   "llmProvider": "none",
   "storyBank": {
     "themes": [
@@ -241,7 +241,7 @@ window.CV_CAREER_OPS_STORY_BANK = {
       },
       {
         "skill": "go",
-        "marketCount": 49,
+        "marketCount": 47,
         "priority": "P0",
         "priorityLabel": "高優先",
         "reason": "市場需求極高，補充後可顯著提升評分",
@@ -257,7 +257,7 @@ window.CV_CAREER_OPS_STORY_BANK = {
       },
       {
         "skill": "sales",
-        "marketCount": 36,
+        "marketCount": 34,
         "priority": "P0",
         "priorityLabel": "高優先",
         "reason": "市場需求極高，補充後可顯著提升評分",
@@ -273,7 +273,7 @@ window.CV_CAREER_OPS_STORY_BANK = {
       },
       {
         "skill": "operations",
-        "marketCount": 22,
+        "marketCount": 23,
         "priority": "P0",
         "priorityLabel": "高優先",
         "reason": "市場需求極高，補充後可顯著提升評分",
@@ -281,7 +281,7 @@ window.CV_CAREER_OPS_STORY_BANK = {
       },
       {
         "skill": "llm",
-        "marketCount": 18,
+        "marketCount": 17,
         "priority": "P0",
         "priorityLabel": "高優先",
         "reason": "市場需求極高，補充後可顯著提升評分",
@@ -297,7 +297,7 @@ window.CV_CAREER_OPS_STORY_BANK = {
       },
       {
         "skill": "rest",
-        "marketCount": 16,
+        "marketCount": 15,
         "priority": "P0",
         "priorityLabel": "高優先",
         "reason": "市場需求極高，補充後可顯著提升評分",
@@ -344,12 +344,12 @@ window.CV_CAREER_OPS_STORY_BANK = {
         "suggestion": "在簡歷或 profile 中加入 machine learning 的實際使用案例，並在 projects 欄位補充相關實作。"
       },
       {
-        "skill": "postgres",
+        "skill": "java",
         "marketCount": 8,
         "priority": "P1",
         "priorityLabel": "中優先",
         "reason": "市場常見，補充後能擴大適配職缺範圍",
-        "suggestion": "在簡歷或 profile 中加入 postgres 的實際使用案例，並在 projects 欄位補充相關實作。"
+        "suggestion": "在簡歷或 profile 中加入 java 的實際使用案例，並在 projects 欄位補充相關實作。"
       }
     ],
     "gaps": [
