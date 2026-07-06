@@ -561,12 +561,17 @@ async function readJsonIfExists(filePath) {
 
 async function writeJson(filePath, data) {
   await fs.mkdir(path.dirname(filePath), { recursive: true });
-  await fs.writeFile(filePath, `${JSON.stringify(data, null, 2)}\n`, "utf8");
+  // Compact (no pretty-print): this file holds the FULL job pool (tens of
+  // thousands of records). Pretty-printing with null,2 inflates the string past
+  // V8's ~512MB max string length and throws "Invalid string length". evaluate
+  // / quality / worker all serialize the full pool compact for the same reason.
+  await fs.writeFile(filePath, `${JSON.stringify(data)}\n`, "utf8");
 }
 
 async function writeJs(filePath, data) {
   await fs.mkdir(path.dirname(filePath), { recursive: true });
-  await fs.writeFile(filePath, `window.CV_CAREER_OPS_JOBS = ${JSON.stringify(data, null, 2)};\n`, "utf8");
+  // Compact for the same reason as writeJson above (full-pool payload).
+  await fs.writeFile(filePath, `window.CV_CAREER_OPS_JOBS = ${JSON.stringify(data)};\n`, "utf8");
 }
 
 async function writeText(filePath, text) {
