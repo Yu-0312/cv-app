@@ -1,6 +1,6 @@
 # Career Ops Application Kit
 
-Generated: 2026-07-06T20:15:47.097Z
+Generated: 2026-07-06T21:53:50.875Z
 Jobs: 12
 
 ## Pipeline

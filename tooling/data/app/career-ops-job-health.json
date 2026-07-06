@@ -1,10 +1,10 @@
 {
   "source": "career-ops-health-monitor",
-  "checkedAt": "2026-07-06T20:16:24.821Z",
+  "checkedAt": "2026-07-06T21:54:22.914Z",
   "threshold": 0.25,
   "health": {
-    "total": 86642,
-    "active": 86642,
+    "total": 85597,
+    "active": 85597,
     "expired": 0,
     "stale": 0,
     "expiredRate": 0,
@@ -12,7 +12,7 @@
     "avgActiveScore": 61,
     "bySource": {
       "GitLab Greenhouse": {
-        "total": 146,
+        "total": 145,
         "expired": 0
       },
       "Canonical Greenhouse": {
@@ -20,7 +20,7 @@
         "expired": 0
       },
       "Linear Ashby": {
-        "total": 24,
+        "total": 25,
         "expired": 0
       },
       "ElevenLabs Ashby": {
@@ -32,7 +32,7 @@
         "expired": 0
       },
       "The Muse Global Remote Jobs": {
-        "total": 1814,
+        "total": 1827,
         "expired": 0
       },
       "Vercel Greenhouse": {
@@ -49,6 +49,10 @@
       },
       "MyCareersFuture Singapore Frontend Full Stack": {
         "total": 30,
+        "expired": 0
+      },
+      "The Muse Global Software Engineering": {
+        "total": 709,
         "expired": 0
       },
       "Stripe Greenhouse": {
@@ -71,16 +75,12 @@
         "total": 122,
         "expired": 0
       },
-      "The Muse Global Software Engineering": {
-        "total": 1740,
-        "expired": 0
-      },
       "Japan Dev English Tech Jobs": {
         "total": 60,
         "expired": 0
       },
       "Databricks Greenhouse": {
-        "total": 625,
+        "total": 628,
         "expired": 0
       },
       "Figma Greenhouse": {
@@ -100,7 +100,7 @@
         "expired": 0
       },
       "The Muse Global Data Analytics": {
-        "total": 1837,
+        "total": 1826,
         "expired": 0
       },
       "Perplexity Ashby": {
@@ -132,7 +132,7 @@
         "expired": 0
       },
       "Remote OK Global Remote Jobs": {
-        "total": 98,
+        "total": 97,
         "expired": 0
       },
       "MongoDB Greenhouse": {
@@ -140,11 +140,11 @@
         "expired": 0
       },
       "Roblox Greenhouse": {
-        "total": 194,
+        "total": 195,
         "expired": 0
       },
       "NVIDIA Workday": {
-        "total": 315,
+        "total": 314,
         "expired": 0
       },
       "Samsung Workday": {
@@ -164,7 +164,7 @@
         "expired": 0
       },
       "Source flex job board": {
-        "total": 158,
+        "total": 157,
         "expired": 0
       },
       "Gogolook": {
@@ -199,10 +199,6 @@
         "total": 27,
         "expired": 0
       },
-      "Daijob Japan Broad Listings": {
-        "total": 117,
-        "expired": 0
-      },
       "MyCareersFuture Singapore Graduate Research": {
         "total": 2,
         "expired": 0
@@ -213,6 +209,10 @@
       },
       "Microsoft Beijing": {
         "total": 3,
+        "expired": 0
+      },
+      "Daijob Japan Broad Listings": {
+        "total": 97,
         "expired": 0
       },
       "Samsung Research": {
@@ -352,6 +352,18 @@
         "expired": 0
       },
       "Apple Shanghai": {
+        "total": 1,
+        "expired": 0
+      },
+      "ASSA ABLOY SuccessFactors Taipei Manufacturing Engineer": {
+        "total": 1,
+        "expired": 0
+      },
+      "ASSA ABLOY SuccessFactors Software Engineer": {
+        "total": 1,
+        "expired": 0
+      },
+      "ASSA ABLOY SuccessFactors C# Software Engineer": {
         "total": 1,
         "expired": 0
       }

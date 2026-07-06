@@ -1,6 +1,6 @@
 {
   "source": "career-ops-parallel",
-  "generatedAt": "2026-07-06T20:16:12.500Z",
+  "generatedAt": "2026-07-06T21:54:10.351Z",
   "concurrency": 4,
   "jobCount": 50,
   "results": [
@@ -11,8 +11,8 @@
       "score": 87,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-07-06T20:16:12.384Z",
-      "completedAt": "2026-07-06T20:16:12.385Z",
+      "startedAt": "2026-07-06T21:54:10.296Z",
+      "completedAt": "2026-07-06T21:54:10.299Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -226,8 +226,8 @@
       "score": 87,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-07-06T20:16:12.383Z",
-      "completedAt": "2026-07-06T20:16:12.385Z",
+      "startedAt": "2026-07-06T21:54:10.296Z",
+      "completedAt": "2026-07-06T21:54:10.298Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -444,8 +444,8 @@
       "score": 87,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-07-06T20:16:12.385Z",
-      "completedAt": "2026-07-06T20:16:12.387Z",
+      "startedAt": "2026-07-06T21:54:10.296Z",
+      "completedAt": "2026-07-06T21:54:10.298Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -661,8 +661,8 @@
       "score": 87,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-07-06T20:16:12.385Z",
-      "completedAt": "2026-07-06T20:16:12.386Z",
+      "startedAt": "2026-07-06T21:54:10.295Z",
+      "completedAt": "2026-07-06T21:54:10.297Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -878,8 +878,8 @@
       "score": 87,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-07-06T20:16:12.390Z",
-      "completedAt": "2026-07-06T20:16:12.391Z",
+      "startedAt": "2026-07-06T21:54:10.301Z",
+      "completedAt": "2026-07-06T21:54:10.303Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -1095,8 +1095,8 @@
       "score": 87,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-07-06T20:16:12.390Z",
-      "completedAt": "2026-07-06T20:16:12.391Z",
+      "startedAt": "2026-07-06T21:54:10.301Z",
+      "completedAt": "2026-07-06T21:54:10.303Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -1324,8 +1324,8 @@
       "score": 86,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-07-06T20:16:12.390Z",
-      "completedAt": "2026-07-06T20:16:12.392Z",
+      "startedAt": "2026-07-06T21:54:10.301Z",
+      "completedAt": "2026-07-06T21:54:10.303Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -1544,8 +1544,8 @@
       "score": 86,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-07-06T20:16:12.390Z",
-      "completedAt": "2026-07-06T20:16:12.392Z",
+      "startedAt": "2026-07-06T21:54:10.301Z",
+      "completedAt": "2026-07-06T21:54:10.303Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -1764,8 +1764,8 @@
       "score": 86,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-07-06T20:16:12.395Z",
-      "completedAt": "2026-07-06T20:16:12.397Z",
+      "startedAt": "2026-07-06T21:54:10.306Z",
+      "completedAt": "2026-07-06T21:54:10.308Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -1967,8 +1967,8 @@
       "score": 86,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-07-06T20:16:12.395Z",
-      "completedAt": "2026-07-06T20:16:12.396Z",
+      "startedAt": "2026-07-06T21:54:10.306Z",
+      "completedAt": "2026-07-06T21:54:10.307Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -2177,8 +2177,8 @@
       "score": 86,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-07-06T20:16:12.395Z",
-      "completedAt": "2026-07-06T20:16:12.397Z",
+      "startedAt": "2026-07-06T21:54:10.306Z",
+      "completedAt": "2026-07-06T21:54:10.308Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -2392,8 +2392,8 @@
       "score": 86,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-07-06T20:16:12.395Z",
-      "completedAt": "2026-07-06T20:16:12.398Z",
+      "startedAt": "2026-07-06T21:54:10.306Z",
+      "completedAt": "2026-07-06T21:54:10.309Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -2608,8 +2608,8 @@
       "score": 86,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-07-06T20:16:12.401Z",
-      "completedAt": "2026-07-06T20:16:12.403Z",
+      "startedAt": "2026-07-06T21:54:10.311Z",
+      "completedAt": "2026-07-06T21:54:10.313Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -2828,8 +2828,8 @@
       "score": 86,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-07-06T20:16:12.401Z",
-      "completedAt": "2026-07-06T20:16:12.402Z",
+      "startedAt": "2026-07-06T21:54:10.311Z",
+      "completedAt": "2026-07-06T21:54:10.313Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -3040,8 +3040,8 @@
       "score": 86,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-07-06T20:16:12.401Z",
-      "completedAt": "2026-07-06T20:16:12.402Z",
+      "startedAt": "2026-07-06T21:54:10.311Z",
+      "completedAt": "2026-07-06T21:54:10.312Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -3257,8 +3257,8 @@
       "score": 86,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-07-06T20:16:12.401Z",
-      "completedAt": "2026-07-06T20:16:12.403Z",
+      "startedAt": "2026-07-06T21:54:10.311Z",
+      "completedAt": "2026-07-06T21:54:10.313Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -3467,8 +3467,8 @@
       "score": 86,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-07-06T20:16:12.411Z",
-      "completedAt": "2026-07-06T20:16:12.413Z",
+      "startedAt": "2026-07-06T21:54:10.315Z",
+      "completedAt": "2026-07-06T21:54:10.317Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -3677,8 +3677,8 @@
       "score": 86,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-07-06T20:16:12.411Z",
-      "completedAt": "2026-07-06T20:16:12.413Z",
+      "startedAt": "2026-07-06T21:54:10.315Z",
+      "completedAt": "2026-07-06T21:54:10.317Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -3886,8 +3886,8 @@
       "score": 86,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-07-06T20:16:12.411Z",
-      "completedAt": "2026-07-06T20:16:12.414Z",
+      "startedAt": "2026-07-06T21:54:10.315Z",
+      "completedAt": "2026-07-06T21:54:10.317Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -4098,8 +4098,8 @@
       "score": 85,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-07-06T20:16:12.411Z",
-      "completedAt": "2026-07-06T20:16:12.413Z",
+      "startedAt": "2026-07-06T21:54:10.315Z",
+      "completedAt": "2026-07-06T21:54:10.317Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -4313,8 +4313,8 @@
       "score": 85,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-07-06T20:16:12.429Z",
-      "completedAt": "2026-07-06T20:16:12.430Z",
+      "startedAt": "2026-07-06T21:54:10.320Z",
+      "completedAt": "2026-07-06T21:54:10.322Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -4528,8 +4528,8 @@
       "score": 85,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-07-06T20:16:12.429Z",
-      "completedAt": "2026-07-06T20:16:12.431Z",
+      "startedAt": "2026-07-06T21:54:10.320Z",
+      "completedAt": "2026-07-06T21:54:10.322Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -4672,14 +4672,163 @@
       }
     },
     {
+      "jobKey": "url:https://www.themuse.com/jobs/uber/staff-frontend-engineer-core-services-eng",
+      "company": "Uber",
+      "title": "Staff Frontend Engineer, Core Services Eng",
+      "score": 85,
+      "grade": "A",
+      "priority": "P0",
+      "startedAt": "2026-07-06T21:54:10.320Z",
+      "completedAt": "2026-07-06T21:54:10.322Z",
+      "workers": {
+        "evaluation": {
+          "recommendation": "值得投遞",
+          "keywords": [
+            "React",
+            "Analytics",
+            "API",
+            "frontend",
+            "engineer",
+            "years",
+            "product",
+            "in",
+            "design"
+          ],
+          "nextActions": [
+            "確認職缺仍開放",
+            "產生客製 ATS PDF（keyword injection）",
+            "安排 48 小時內投遞",
+            "準備 STAR 故事與 cover letter hook"
+          ]
+        },
+        "research": {
+          "signals": [],
+          "evidenceCount": 0,
+          "questions": []
+        },
+        "application": {
+          "checklist": [
+            "Confirm posting is active.",
+            "Generate tailored ATS PDF.",
+            "Prepare outreach and follow-up.",
+            "Log status and next follow-up."
+          ]
+        },
+        "compensation": null,
+        "stories": [
+          {
+            "id": "story-1",
+            "theme": "frontend product execution",
+            "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
+            "applicableQuestions": [
+              "Tell me about a project you are proud of.",
+              "Tell me about a time you handled ambiguity.",
+              "How have you applied frontend product execution?"
+            ],
+            "star": {
+              "situation": "You were tasked with a frontend product challenge. Proof point: \"Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.\" — set the scene: what product, what team size, and what was broken or missing?",
+              "task": "What was the specific outcome you were accountable for? Include the success metric (e.g. performance score, user adoption rate, release date).",
+              "action": "Walk through the key technical decisions: component architecture, state management tradeoffs, accessibility choices, or API contract design.",
+              "result": "Quantify the impact: load time delta, user adoption %, code reduction %, or stakeholder feedback. If no number, describe the quality or velocity improvement.",
+              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
+            },
+            "keywords": [
+              "frontend product execution",
+              "JavaScript",
+              "TypeScript",
+              "React",
+              "Next.js",
+              "CSS",
+              "Tailwind",
+              "Accessibility"
+            ],
+            "relevance": 1
+          },
+          {
+            "id": "story-2",
+            "theme": "data-heavy product decisions",
+            "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
+            "applicableQuestions": [
+              "Tell me about a project you are proud of.",
+              "Tell me about a time you handled ambiguity.",
+              "How have you applied data-heavy product decisions?"
+            ],
+            "star": {
+              "situation": "You were working with a data-intensive product. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — describe the data volume, the user workflow, and what was difficult to render or interpret.",
+              "task": "What decision did you own? (chart type, data model, aggregation strategy, caching layer, etc.)",
+              "action": "Explain how you chose between options, what you built or prototyped, and how you validated your approach with data or users.",
+              "result": "State the outcome: query latency, dashboard load time, user comprehension improvement, or reduction in support requests.",
+              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
+            },
+            "keywords": [
+              "data-heavy product decisions",
+              "JavaScript",
+              "TypeScript",
+              "React",
+              "Next.js",
+              "CSS",
+              "Tailwind",
+              "Accessibility"
+            ],
+            "relevance": 1
+          },
+          {
+            "id": "story-3",
+            "theme": "systems and API collaboration",
+            "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
+            "applicableQuestions": [
+              "Tell me about a project you are proud of.",
+              "Tell me about a time you handled ambiguity.",
+              "How have you applied systems and API collaboration?"
+            ],
+            "star": {
+              "situation": "You collaborated across system boundaries. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — name the systems, teams, and integration surface area.",
+              "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
+              "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
+              "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
+              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
+            },
+            "keywords": [
+              "systems and API collaboration",
+              "JavaScript",
+              "TypeScript",
+              "React",
+              "Next.js",
+              "CSS",
+              "Tailwind",
+              "Accessibility"
+            ],
+            "relevance": 1
+          }
+        ],
+        "applyAgent": {
+          "mode": "human-in-the-loop",
+          "url": "https://www.themuse.com/jobs/uber/staff-frontend-engineer-core-services-eng",
+          "steps": [
+            "Open the application URL in a controlled browser session.",
+            "Extract visible form fields and required uploads.",
+            "Map CV profile fields to the form without submitting.",
+            "Prepare tailored PDF and outreach text.",
+            "Stop before final submit and ask the user to review."
+          ],
+          "guardrails": [
+            "Never submit without explicit user confirmation.",
+            "Never fabricate work authorization, salary history, degree, or experience.",
+            "Never store API keys or credentials in job metadata.",
+            "Record only application status and user-approved notes."
+          ]
+        }
+      }
+    },
+    {
       "jobKey": "url:https://www.themuse.com/jobs/zillow/senior-manager-software-development-engineering-7e24a5",
       "company": "Zillow",
       "title": "Senior Manager, Software Development Engineering",
       "score": 85,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-07-06T20:16:12.429Z",
-      "completedAt": "2026-07-06T20:16:12.431Z",
+      "startedAt": "2026-07-06T21:54:10.320Z",
+      "completedAt": "2026-07-06T21:54:10.322Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -4828,8 +4977,8 @@
       "score": 85,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-07-06T20:16:12.429Z",
-      "completedAt": "2026-07-06T20:16:12.431Z",
+      "startedAt": "2026-07-06T21:54:10.325Z",
+      "completedAt": "2026-07-06T21:54:10.327Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -5043,8 +5192,8 @@
       "score": 85,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-07-06T20:16:12.443Z",
-      "completedAt": "2026-07-06T20:16:12.445Z",
+      "startedAt": "2026-07-06T21:54:10.325Z",
+      "completedAt": "2026-07-06T21:54:10.326Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -5190,8 +5339,8 @@
       "score": 85,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-07-06T20:16:12.443Z",
-      "completedAt": "2026-07-06T20:16:12.446Z",
+      "startedAt": "2026-07-06T21:54:10.325Z",
+      "completedAt": "2026-07-06T21:54:10.327Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -5338,8 +5487,8 @@
       "score": 85,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-07-06T20:16:12.443Z",
-      "completedAt": "2026-07-06T20:16:12.445Z",
+      "startedAt": "2026-07-06T21:54:10.325Z",
+      "completedAt": "2026-07-06T21:54:10.327Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -5487,8 +5636,8 @@
       "score": 85,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-07-06T20:16:12.443Z",
-      "completedAt": "2026-07-06T20:16:12.445Z",
+      "startedAt": "2026-07-06T21:54:10.330Z",
+      "completedAt": "2026-07-06T21:54:10.332Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -5699,8 +5848,8 @@
       "score": 85,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-07-06T20:16:12.473Z",
-      "completedAt": "2026-07-06T20:16:12.475Z",
+      "startedAt": "2026-07-06T21:54:10.330Z",
+      "completedAt": "2026-07-06T21:54:10.332Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -5845,8 +5994,8 @@
       "score": 85,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-07-06T20:16:12.473Z",
-      "completedAt": "2026-07-06T20:16:12.473Z",
+      "startedAt": "2026-07-06T21:54:10.329Z",
+      "completedAt": "2026-07-06T21:54:10.331Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -5991,8 +6140,8 @@
       "score": 85,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-07-06T20:16:12.473Z",
-      "completedAt": "2026-07-06T20:16:12.474Z",
+      "startedAt": "2026-07-06T21:54:10.330Z",
+      "completedAt": "2026-07-06T21:54:10.333Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -6140,8 +6289,8 @@
       "score": 85,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-07-06T20:16:12.473Z",
-      "completedAt": "2026-07-06T20:16:12.475Z",
+      "startedAt": "2026-07-06T21:54:10.336Z",
+      "completedAt": "2026-07-06T21:54:10.337Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -6286,8 +6435,8 @@
       "score": 85,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-07-06T20:16:12.477Z",
-      "completedAt": "2026-07-06T20:16:12.479Z",
+      "startedAt": "2026-07-06T21:54:10.336Z",
+      "completedAt": "2026-07-06T21:54:10.338Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -6432,8 +6581,8 @@
       "score": 85,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-07-06T20:16:12.478Z",
-      "completedAt": "2026-07-06T20:16:12.479Z",
+      "startedAt": "2026-07-06T21:54:10.336Z",
+      "completedAt": "2026-07-06T21:54:10.336Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -6661,8 +6810,8 @@
       "score": 85,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-07-06T20:16:12.478Z",
-      "completedAt": "2026-07-06T20:16:12.480Z",
+      "startedAt": "2026-07-06T21:54:10.336Z",
+      "completedAt": "2026-07-06T21:54:10.338Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -6810,8 +6959,8 @@
       "score": 85,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-07-06T20:16:12.478Z",
-      "completedAt": "2026-07-06T20:16:12.480Z",
+      "startedAt": "2026-07-06T21:54:10.339Z",
+      "completedAt": "2026-07-06T21:54:10.340Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -7019,8 +7168,8 @@
       "score": 85,
       "grade": "A",
       "priority": "P0",
-      "startedAt": "2026-07-06T20:16:12.483Z",
-      "completedAt": "2026-07-06T20:16:12.485Z",
+      "startedAt": "2026-07-06T21:54:10.340Z",
+      "completedAt": "2026-07-06T21:54:10.341Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -7222,27 +7371,28 @@
       }
     },
     {
-      "jobKey": "url:https://www.themuse.com/jobs/uber/staff-frontend-engineer-core-services-eng",
+      "jobKey": "url:https://www.themuse.com/jobs/uber/sr-software-engineer-frontend-web-8fc2b7",
       "company": "Uber",
-      "title": "Staff Frontend Engineer, Core Services Eng",
+      "title": "Sr Software Engineer, Frontend (Web)",
       "score": 84,
       "grade": "B",
       "priority": "P1",
-      "startedAt": "2026-07-06T20:16:12.483Z",
-      "completedAt": "2026-07-06T20:16:12.484Z",
+      "startedAt": "2026-07-06T21:54:10.340Z",
+      "completedAt": "2026-07-06T21:54:10.340Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
           "keywords": [
+            "JavaScript",
+            "TypeScript",
             "React",
-            "Analytics",
+            "CSS",
             "API",
+            "Performance Optimization",
             "frontend",
             "engineer",
             "years",
-            "product",
-            "in",
-            "design"
+            "building"
           ],
           "nextActions": [
             "確認職缺仍開放",
@@ -7292,7 +7442,7 @@
               "Tailwind",
               "Accessibility"
             ],
-            "relevance": 1
+            "relevance": 4
           },
           {
             "id": "story-2",
@@ -7320,7 +7470,7 @@
               "Tailwind",
               "Accessibility"
             ],
-            "relevance": 1
+            "relevance": 4
           },
           {
             "id": "story-3",
@@ -7348,12 +7498,12 @@
               "Tailwind",
               "Accessibility"
             ],
-            "relevance": 1
+            "relevance": 4
           }
         ],
         "applyAgent": {
           "mode": "human-in-the-loop",
-          "url": "https://www.themuse.com/jobs/uber/staff-frontend-engineer-core-services-eng",
+          "url": "https://www.themuse.com/jobs/uber/sr-software-engineer-frontend-web-8fc2b7",
           "steps": [
             "Open the application URL in a controlled browser session.",
             "Extract visible form fields and required uploads.",
@@ -7377,8 +7527,8 @@
       "score": 84,
       "grade": "B",
       "priority": "P1",
-      "startedAt": "2026-07-06T20:16:12.483Z",
-      "completedAt": "2026-07-06T20:16:12.484Z",
+      "startedAt": "2026-07-06T21:54:10.340Z",
+      "completedAt": "2026-07-06T21:54:10.340Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -7527,8 +7677,8 @@
       "score": 84,
       "grade": "B",
       "priority": "P1",
-      "startedAt": "2026-07-06T20:16:12.483Z",
-      "completedAt": "2026-07-06T20:16:12.485Z",
+      "startedAt": "2026-07-06T21:54:10.342Z",
+      "completedAt": "2026-07-06T21:54:10.342Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -7676,8 +7826,8 @@
       "score": 84,
       "grade": "B",
       "priority": "P1",
-      "startedAt": "2026-07-06T20:16:12.488Z",
-      "completedAt": "2026-07-06T20:16:12.490Z",
+      "startedAt": "2026-07-06T21:54:10.342Z",
+      "completedAt": "2026-07-06T21:54:10.343Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -7826,8 +7976,8 @@
       "score": 84,
       "grade": "B",
       "priority": "P1",
-      "startedAt": "2026-07-06T20:16:12.488Z",
-      "completedAt": "2026-07-06T20:16:12.490Z",
+      "startedAt": "2026-07-06T21:54:10.342Z",
+      "completedAt": "2026-07-06T21:54:10.344Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -8029,8 +8179,8 @@
       "score": 84,
       "grade": "B",
       "priority": "P1",
-      "startedAt": "2026-07-06T20:16:12.488Z",
-      "completedAt": "2026-07-06T20:16:12.491Z",
+      "startedAt": "2026-07-06T21:54:10.342Z",
+      "completedAt": "2026-07-06T21:54:10.344Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -8178,8 +8328,8 @@
       "score": 84,
       "grade": "B",
       "priority": "P1",
-      "startedAt": "2026-07-06T20:16:12.488Z",
-      "completedAt": "2026-07-06T20:16:12.490Z",
+      "startedAt": "2026-07-06T21:54:10.344Z",
+      "completedAt": "2026-07-06T21:54:10.346Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -8393,8 +8543,8 @@
       "score": 84,
       "grade": "B",
       "priority": "P1",
-      "startedAt": "2026-07-06T20:16:12.493Z",
-      "completedAt": "2026-07-06T20:16:12.495Z",
+      "startedAt": "2026-07-06T21:54:10.346Z",
+      "completedAt": "2026-07-06T21:54:10.346Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -8540,8 +8690,8 @@
       "score": 84,
       "grade": "B",
       "priority": "P1",
-      "startedAt": "2026-07-06T20:16:12.493Z",
-      "completedAt": "2026-07-06T20:16:12.494Z",
+      "startedAt": "2026-07-06T21:54:10.346Z",
+      "completedAt": "2026-07-06T21:54:10.347Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -8689,8 +8839,8 @@
       "score": 84,
       "grade": "B",
       "priority": "P1",
-      "startedAt": "2026-07-06T20:16:12.493Z",
-      "completedAt": "2026-07-06T20:16:12.495Z",
+      "startedAt": "2026-07-06T21:54:10.346Z",
+      "completedAt": "2026-07-06T21:54:10.347Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -8835,8 +8985,8 @@
       "score": 84,
       "grade": "B",
       "priority": "P1",
-      "startedAt": "2026-07-06T20:16:12.493Z",
-      "completedAt": "2026-07-06T20:16:12.495Z",
+      "startedAt": "2026-07-06T21:54:10.348Z",
+      "completedAt": "2026-07-06T21:54:10.348Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -9051,8 +9201,8 @@
       "score": 84,
       "grade": "B",
       "priority": "P1",
-      "startedAt": "2026-07-06T20:16:12.497Z",
-      "completedAt": "2026-07-06T20:16:12.499Z",
+      "startedAt": "2026-07-06T21:54:10.349Z",
+      "completedAt": "2026-07-06T21:54:10.350Z",
       "workers": {
         "evaluation": {
           "recommendation": "值得投遞",
@@ -9175,153 +9325,6 @@
         "applyAgent": {
           "mode": "human-in-the-loop",
           "url": "https://job-boards.greenhouse.io/mozilla/jobs/8031796",
-          "steps": [
-            "Open the application URL in a controlled browser session.",
-            "Extract visible form fields and required uploads.",
-            "Map CV profile fields to the form without submitting.",
-            "Prepare tailored PDF and outreach text.",
-            "Stop before final submit and ask the user to review."
-          ],
-          "guardrails": [
-            "Never submit without explicit user confirmation.",
-            "Never fabricate work authorization, salary history, degree, or experience.",
-            "Never store API keys or credentials in job metadata.",
-            "Record only application status and user-approved notes."
-          ]
-        }
-      }
-    },
-    {
-      "jobKey": "url:https://job-boards.greenhouse.io/mozilla/jobs/8031761",
-      "company": "Mozilla Greenhouse",
-      "title": "Senior Engineering Manager, AI Product (Thunderbolt)",
-      "score": 84,
-      "grade": "B",
-      "priority": "P1",
-      "startedAt": "2026-07-06T20:16:12.497Z",
-      "completedAt": "2026-07-06T20:16:12.499Z",
-      "workers": {
-        "evaluation": {
-          "recommendation": "值得投遞",
-          "keywords": [
-            "React",
-            "years",
-            "product",
-            "in",
-            "design",
-            "system",
-            "performance"
-          ],
-          "nextActions": [
-            "確認職缺仍開放",
-            "產生客製 ATS PDF（keyword injection）",
-            "安排 48 小時內投遞",
-            "準備 STAR 故事與 cover letter hook"
-          ]
-        },
-        "research": {
-          "signals": [],
-          "evidenceCount": 0,
-          "questions": []
-        },
-        "application": {
-          "checklist": [
-            "Confirm posting is active.",
-            "Generate tailored ATS PDF.",
-            "Prepare outreach and follow-up.",
-            "Log status and next follow-up."
-          ]
-        },
-        "compensation": null,
-        "stories": [
-          {
-            "id": "story-1",
-            "theme": "frontend product execution",
-            "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
-            "applicableQuestions": [
-              "Tell me about a project you are proud of.",
-              "Tell me about a time you handled ambiguity.",
-              "How have you applied frontend product execution?"
-            ],
-            "star": {
-              "situation": "You were tasked with a frontend product challenge. Proof point: \"Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.\" — set the scene: what product, what team size, and what was broken or missing?",
-              "task": "What was the specific outcome you were accountable for? Include the success metric (e.g. performance score, user adoption rate, release date).",
-              "action": "Walk through the key technical decisions: component architecture, state management tradeoffs, accessibility choices, or API contract design.",
-              "result": "Quantify the impact: load time delta, user adoption %, code reduction %, or stakeholder feedback. If no number, describe the quality or velocity improvement.",
-              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
-            },
-            "keywords": [
-              "frontend product execution",
-              "JavaScript",
-              "TypeScript",
-              "React",
-              "Next.js",
-              "CSS",
-              "Tailwind",
-              "Accessibility"
-            ],
-            "relevance": 1
-          },
-          {
-            "id": "story-2",
-            "theme": "data-heavy product decisions",
-            "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
-            "applicableQuestions": [
-              "Tell me about a project you are proud of.",
-              "Tell me about a time you handled ambiguity.",
-              "How have you applied data-heavy product decisions?"
-            ],
-            "star": {
-              "situation": "You were working with a data-intensive product. Proof point: \"Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.\" — describe the data volume, the user workflow, and what was difficult to render or interpret.",
-              "task": "What decision did you own? (chart type, data model, aggregation strategy, caching layer, etc.)",
-              "action": "Explain how you chose between options, what you built or prototyped, and how you validated your approach with data or users.",
-              "result": "State the outcome: query latency, dashboard load time, user comprehension improvement, or reduction in support requests.",
-              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
-            },
-            "keywords": [
-              "data-heavy product decisions",
-              "JavaScript",
-              "TypeScript",
-              "React",
-              "Next.js",
-              "CSS",
-              "Tailwind",
-              "Accessibility"
-            ],
-            "relevance": 1
-          },
-          {
-            "id": "story-3",
-            "theme": "systems and API collaboration",
-            "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
-            "applicableQuestions": [
-              "Tell me about a project you are proud of.",
-              "Tell me about a time you handled ambiguity.",
-              "How have you applied systems and API collaboration?"
-            ],
-            "star": {
-              "situation": "You collaborated across system boundaries. Proof point: \"Collaborated with backend and data teams to design RESTful and GraphQL API contracts.\" — name the systems, teams, and integration surface area.",
-              "task": "What was your specific responsibility: API contract design, data schema alignment, error handling, or auth flow?",
-              "action": "Describe how you coordinated: async reviews, shared type contracts, versioning strategy, or escalation path when specs changed.",
-              "result": "State the outcome: integration delivered on time, breaking changes avoided, latency reduced, or cross-team dependency resolved.",
-              "reflection": "Explain what you would repeat, what you would improve, and how this story maps to the target role's core challenges."
-            },
-            "keywords": [
-              "systems and API collaboration",
-              "JavaScript",
-              "TypeScript",
-              "React",
-              "Next.js",
-              "CSS",
-              "Tailwind",
-              "Accessibility"
-            ],
-            "relevance": 1
-          }
-        ],
-        "applyAgent": {
-          "mode": "human-in-the-loop",
-          "url": "https://job-boards.greenhouse.io/mozilla/jobs/8031761",
           "steps": [
             "Open the application URL in a controlled browser session.",
             "Extract visible form fields and required uploads.",

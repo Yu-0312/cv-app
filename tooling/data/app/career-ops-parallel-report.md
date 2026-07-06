@@ -1,6 +1,6 @@
 # Career Ops Parallel Worker Report
 
-Generated: 2026-07-06T20:16:12.500Z
+Generated: 2026-07-06T21:54:10.351Z
 Concurrency: 4
 Jobs processed: 50
 Errors: 0
@@ -341,6 +341,21 @@ Errors: 0
 - Never store API keys or credentials in job metadata.
 - Record only application status and user-approved notes.
 
+## P0 Uber - Staff Frontend Engineer, Core Services Eng
+
+- Score: 85
+- Grade: A
+- Research evidence: 0
+- Keywords: React, Analytics, API, frontend, engineer, years, product, in, design
+- Compensation leverage: -
+- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
+
+### Apply Agent Guardrails
+- Never submit without explicit user confirmation.
+- Never fabricate work authorization, salary history, degree, or experience.
+- Never store API keys or credentials in job metadata.
+- Record only application status and user-approved notes.
+
 ## P0 Zillow - Senior Manager, Software Development Engineering
 
 - Score: 85
@@ -566,12 +581,12 @@ Errors: 0
 - Never store API keys or credentials in job metadata.
 - Record only application status and user-approved notes.
 
-## P1 Uber - Staff Frontend Engineer, Core Services Eng
+## P1 Uber - Sr Software Engineer, Frontend (Web)
 
 - Score: 84
 - Grade: B
 - Research evidence: 0
-- Keywords: React, Analytics, API, frontend, engineer, years, product, in, design
+- Keywords: JavaScript, TypeScript, React, CSS, API, Performance Optimization, frontend, engineer, years, building
 - Compensation leverage: -
 - Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
@@ -723,21 +738,6 @@ Errors: 0
 - Research evidence: 10
 - Keywords: engineer, building, product, in, design, architecture
 - Compensation leverage: high
-- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
-
-### Apply Agent Guardrails
-- Never submit without explicit user confirmation.
-- Never fabricate work authorization, salary history, degree, or experience.
-- Never store API keys or credentials in job metadata.
-- Record only application status and user-approved notes.
-
-## P1 Mozilla Greenhouse - Senior Engineering Manager, AI Product (Thunderbolt)
-
-- Score: 84
-- Grade: B
-- Research evidence: 0
-- Keywords: React, years, product, in, design, system, performance
-- Compensation leverage: -
 - Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
 ### Apply Agent Guardrails

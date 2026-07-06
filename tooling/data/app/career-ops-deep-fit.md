@@ -1,6 +1,6 @@
 # Career Ops Deep Fit Report
 
-Generated: 2026-07-06T20:16:16.547Z
+Generated: 2026-07-06T21:54:14.527Z
 LLM provider: none
 Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 exploratory)
 
@@ -640,6 +640,33 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Use story story-2: data-heavy product decisions.
 - Use story story-3: systems and API collaboration.
 
+### Uber - Staff Frontend Engineer, Core Services Eng
+
+- Score: 85
+- Grade: A
+- Confidence: medium
+- Decision: pursue aggressively
+- Thesis: Staff Frontend Engineer, Core Services Eng at Uber is pursue aggressively because the snapshot score is 85, with 8 profile/role keyword hits and 0 external evidence item(s).
+
+#### Evidence
+- Keyword hits: Frontend Engineer, React, Analytics, API, remote, analytics, React, Frontend Engineer
+- Keyword misses: -
+- Research signals: -
+- Compensation leverage: -
+
+#### Concerns
+- External company evidence is thin; run deep research with a search API.
+
+#### Interview Strategy
+- Ask why the role is open and what success means in the first 90 days.
+- Probe team ownership, roadmap pressure, and cross-functional interfaces.
+
+#### CV Strategy
+- Lead with proof around: Frontend Engineer, React, Analytics, API, remote, analytics.
+- Use story story-1: frontend product execution.
+- Use story story-2: data-heavy product decisions.
+- Use story story-3: systems and API collaboration.
+
 ### Zillow - Senior Manager, Software Development Engineering
 
 - Score: 85
@@ -693,33 +720,6 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 
 #### CV Strategy
 - Lead with proof around: remote, Product Engineer.
-- Use story story-1: frontend product execution.
-- Use story story-2: data-heavy product decisions.
-- Use story story-3: systems and API collaboration.
-
-### Stripe Greenhouse - Full-Stack Engineer
-
-- Score: 85
-- Grade: A
-- Confidence: medium
-- Decision: pursue aggressively
-- Thesis: Full-Stack Engineer at Stripe Greenhouse is pursue aggressively because the snapshot score is 85, with 4 profile/role keyword hits and 0 external evidence item(s).
-
-#### Evidence
-- Keyword hits: API, remote, dashboard, Full Stack Engineer
-- Keyword misses: python, sales, operations
-- Research signals: -
-- Compensation leverage: -
-
-#### Concerns
-- External company evidence is thin; run deep research with a search API.
-
-#### Interview Strategy
-- Ask why the role is open and what success means in the first 90 days.
-- Probe team ownership, roadmap pressure, and cross-functional interfaces.
-
-#### CV Strategy
-- Lead with proof around: API, remote, dashboard, Full Stack Engineer.
 - Use story story-1: frontend product execution.
 - Use story story-2: data-heavy product decisions.
 - Use story story-3: systems and API collaboration.
@@ -936,38 +936,39 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Keyword hits: API, Performance Optimization, remote
 - Gaps: angular, python, sql, azure, docker, kubernetes
 
+### Uber - Program Manager II, GTM Enablement & Field Programs
+- Score: 82 | Grade: B | RoleFit: 62
+- Decision: pursue selectively
+- Keyword hits: Analytics, API, remote, dashboard, analytics
+- Gaps: go, crm, growth, sales, operations
+
 ### Exadel - Senior Platform Engineer
 - Score: 82 | Grade: B | RoleFit: 62
 - Decision: pursue selectively
 - Keyword hits: TypeScript, API, remote, TypeScript
 - Gaps: python, java, kotlin, aws, gcp, azure
 
-### Bank of America - Assistant Vice President; Software Engineer
+### Uber - Senior Localization Program Manager, Multilingual AI
 - Score: 82 | Grade: B | RoleFit: 62
 - Decision: pursue selectively
-- Keyword hits: React, API, remote, React
-- Gaps: python, sql, rest, etl, growth
+- Keyword hits: Analytics, API, remote, dashboard, analytics
+- Gaps: python, gcp, llm, rag, operations
 
-### Exadel - Senior API Engineer (.NET)
+### Exadel - Senior Data Engineer
 - Score: 82 | Grade: B | RoleFit: 62
 - Decision: pursue selectively
-- Keyword hits: API, remote
-- Gaps: sql, aws, azure
+- Keyword hits: Analytics, API, remote, dashboard, analytics
+- Gaps: python, sql, aws, terraform, etl, spark
 
-### Exadel - Senior Software Architect (.NET)
+### Exadel - Senior/Lead Machine Learning Engineer
 - Score: 82 | Grade: B | RoleFit: 62
 - Decision: pursue selectively
-- Keyword hits: API, remote
-- Gaps: sql, aws, azure, rest
-
-### Exadel - Senior DevOps Engineer
-- Score: 82 | Grade: B | RoleFit: 62
-- Decision: pursue selectively
-- Keyword hits: API, remote
-- Gaps: sql, aws, azure, docker, kubernetes
+- Keyword hits: Analytics, API, remote, analytics
+- Gaps: python, sql, aws, azure, rag, prompt engineering
 
 ## Layer C — Exploratory Signals (roleFit < 40)
 
+- **Stripe Greenhouse — Full-Stack Engineer** (score: 85) | Top gap: python
 - **Airbnb Greenhouse — Staff Full Stack Engineer, Reservations and Additional Products** (score: 85) | Top gap: java
 - **Anthropic Greenhouse — Design Engineer, Web** (score: 85) | Top gap: seo
 - **Vercel Greenhouse — Product Security Engineer** (score: 85) | Top gap: terraform
@@ -980,7 +981,7 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - **Ramp Ashby — Software Engineer, Frontend** (score: 85) | Top gap: none
 - **PostHog Ashby — Developer who connects with other developers** (score: 85) | Top gap: go
 - **PostHog Ashby — Technical Account Executive** (score: 85) | Top gap: go
-- **Uber — Staff Frontend Engineer, Core Services Eng** (score: 84) | Top gap: growth
+- **Uber — Sr Software Engineer, Frontend (Web)** (score: 84) | Top gap: angular
 - **Pilotly — Product Engineer II** (score: 84) | Top gap: aws
 - **Equinix, Inc — Staff Software Engineer (Full-Stack)** (score: 84) | Top gap: python
 - **Coinbase — Senior Software Engineer, Frontend (Consumer - Trading)** (score: 84) | Top gap: growth
@@ -997,5 +998,4 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - **ElevenLabs Ashby — Deployment Strategist - North America** (score: 84) | Top gap: python
 - **ElevenLabs Ashby — Deployment Strategist - Europe** (score: 84) | Top gap: python
 - **ElevenLabs Ashby — Deployment Strategist - Spain** (score: 84) | Top gap: python
-- **ElevenLabs Ashby — Deployment Strategist - Poland** (score: 84) | Top gap: python
 

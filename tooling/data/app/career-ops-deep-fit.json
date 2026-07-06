@@ -1,6 +1,6 @@
 {
   "source": "career-ops-deep-fit",
-  "generatedAt": "2026-07-06T20:16:16.547Z",
+  "generatedAt": "2026-07-06T21:54:14.527Z",
   "llmProvider": "none",
   "summary": {
     "totalResults": 95,
@@ -1590,6 +1590,67 @@
       "llm": null
     },
     {
+      "jobKey": "url:https://www.themuse.com/jobs/uber/staff-frontend-engineer-core-services-eng",
+      "company": "Uber",
+      "title": "Staff Frontend Engineer, Core Services Eng",
+      "score": 85,
+      "grade": "A",
+      "confidence": "medium",
+      "decision": "pursue aggressively",
+      "thesis": "Staff Frontend Engineer, Core Services Eng at Uber is pursue aggressively because the snapshot score is 85, with 8 profile/role keyword hits and 0 external evidence item(s).",
+      "evidence": {
+        "keywordHits": [
+          "Frontend Engineer",
+          "React",
+          "Analytics",
+          "API",
+          "remote",
+          "analytics",
+          "React",
+          "Frontend Engineer"
+        ],
+        "keywordMisses": [],
+        "researchSignals": [],
+        "evidenceCount": 0,
+        "compensationLeverage": ""
+      },
+      "concerns": [
+        "External company evidence is thin; run deep research with a search API."
+      ],
+      "interviewStrategy": [
+        "Ask why the role is open and what success means in the first 90 days.",
+        "Probe team ownership, roadmap pressure, and cross-functional interfaces."
+      ],
+      "cvStrategy": [
+        "Lead with proof around: Frontend Engineer, React, Analytics, API, remote, analytics.",
+        "Use story story-1: frontend product execution.",
+        "Use story story-2: data-heavy product decisions.",
+        "Use story story-3: systems and API collaboration."
+      ],
+      "compensationStrategy": null,
+      "storyHooks": [
+        {
+          "id": "story-1",
+          "theme": "frontend product execution",
+          "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
+          "relevance": 1
+        },
+        {
+          "id": "story-2",
+          "theme": "data-heavy product decisions",
+          "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
+          "relevance": 1
+        },
+        {
+          "id": "story-3",
+          "theme": "systems and API collaboration",
+          "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
+          "relevance": 1
+        }
+      ],
+      "llm": null
+    },
+    {
       "jobKey": "url:https://www.themuse.com/jobs/zillow/senior-manager-software-development-engineering-7e24a5",
       "company": "Zillow",
       "title": "Senior Manager, Software Development Engineering",
@@ -1700,67 +1761,6 @@
         "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Staff Backend Engineer (Go), Continuous Delivery package, including base, bonus, equity, and review cycle?",
         "valueAnchor": "Based on the scope of Staff Backend Engineer (Go), Continuous Delivery and my fit around frontend, engineer, building, product, I would like to calibrate toward the stronger end of the range if the team sees the level match."
       },
-      "storyHooks": [
-        {
-          "id": "story-1",
-          "theme": "frontend product execution",
-          "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
-          "relevance": 0
-        },
-        {
-          "id": "story-2",
-          "theme": "data-heavy product decisions",
-          "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
-          "relevance": 0
-        },
-        {
-          "id": "story-3",
-          "theme": "systems and API collaboration",
-          "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
-          "relevance": 0
-        }
-      ],
-      "llm": null
-    },
-    {
-      "jobKey": "url:https://stripe.com/jobs/search?gh_jid=8003382",
-      "company": "Stripe Greenhouse",
-      "title": "Full-Stack Engineer",
-      "score": 85,
-      "grade": "A",
-      "confidence": "medium",
-      "decision": "pursue aggressively",
-      "thesis": "Full-Stack Engineer at Stripe Greenhouse is pursue aggressively because the snapshot score is 85, with 4 profile/role keyword hits and 0 external evidence item(s).",
-      "evidence": {
-        "keywordHits": [
-          "API",
-          "remote",
-          "dashboard",
-          "Full Stack Engineer"
-        ],
-        "keywordMisses": [
-          "python",
-          "sales",
-          "operations"
-        ],
-        "researchSignals": [],
-        "evidenceCount": 0,
-        "compensationLeverage": ""
-      },
-      "concerns": [
-        "External company evidence is thin; run deep research with a search API."
-      ],
-      "interviewStrategy": [
-        "Ask why the role is open and what success means in the first 90 days.",
-        "Probe team ownership, roadmap pressure, and cross-functional interfaces."
-      ],
-      "cvStrategy": [
-        "Lead with proof around: API, remote, dashboard, Full Stack Engineer.",
-        "Use story story-1: frontend product execution.",
-        "Use story story-2: data-heavy product decisions.",
-        "Use story story-3: systems and API collaboration."
-      ],
-      "compensationStrategy": null,
       "storyHooks": [
         {
           "id": "story-1",
@@ -2668,6 +2668,32 @@
       "layer": "B"
     },
     {
+      "jobKey": "url:https://www.themuse.com/jobs/uber/program-manager-ii-gtm-enablement-field-programs",
+      "company": "Uber",
+      "title": "Program Manager II, GTM Enablement & Field Programs",
+      "score": 82,
+      "grade": "B",
+      "roleFit": 62,
+      "url": "https://www.themuse.com/jobs/uber/program-manager-ii-gtm-enablement-field-programs",
+      "location": "San Francisco, CA",
+      "keywordHits": [
+        "Analytics",
+        "API",
+        "remote",
+        "dashboard",
+        "analytics"
+      ],
+      "keywordMisses": [
+        "go",
+        "crm",
+        "growth",
+        "sales",
+        "operations"
+      ],
+      "decision": "pursue selectively",
+      "layer": "B"
+    },
+    {
       "jobKey": "url:https://www.themuse.com/jobs/exadel/senior-platform-engineer-19fabf",
       "company": "Exadel",
       "title": "Senior Platform Engineer",
@@ -2694,98 +2720,109 @@
       "layer": "B"
     },
     {
-      "jobKey": "url:https://www.themuse.com/jobs/bankofamerica/assistant-vice-president-software-engineer-7aca5b",
-      "company": "Bank of America",
-      "title": "Assistant Vice President; Software Engineer",
+      "jobKey": "url:https://www.themuse.com/jobs/uber/senior-localization-program-manager-multilingual-ai",
+      "company": "Uber",
+      "title": "Senior Localization Program Manager, Multilingual AI",
       "score": 82,
       "grade": "B",
       "roleFit": 62,
-      "url": "https://www.themuse.com/jobs/bankofamerica/assistant-vice-president-software-engineer-7aca5b",
-      "location": "New York, NY",
+      "url": "https://www.themuse.com/jobs/uber/senior-localization-program-manager-multilingual-ai",
+      "location": "Sunnyvale, CA",
       "keywordHits": [
-        "React",
+        "Analytics",
         "API",
         "remote",
-        "React"
+        "dashboard",
+        "analytics"
+      ],
+      "keywordMisses": [
+        "python",
+        "gcp",
+        "llm",
+        "rag",
+        "operations"
+      ],
+      "decision": "pursue selectively",
+      "layer": "B"
+    },
+    {
+      "jobKey": "url:https://www.themuse.com/jobs/exadel/senior-data-engineer-b94a14",
+      "company": "Exadel",
+      "title": "Senior Data Engineer",
+      "score": 82,
+      "grade": "B",
+      "roleFit": 62,
+      "url": "https://www.themuse.com/jobs/exadel/senior-data-engineer-b94a14",
+      "location": "Dabas, Hungary / Kazanlak, Bulgaria / Ozorków, Poland",
+      "keywordHits": [
+        "Analytics",
+        "API",
+        "remote",
+        "dashboard",
+        "analytics"
       ],
       "keywordMisses": [
         "python",
         "sql",
-        "rest",
-        "etl",
-        "growth"
-      ],
-      "decision": "pursue selectively",
-      "layer": "B"
-    },
-    {
-      "jobKey": "url:https://www.themuse.com/jobs/exadel/senior-api-engineer-net",
-      "company": "Exadel",
-      "title": "Senior API Engineer (.NET)",
-      "score": 82,
-      "grade": "B",
-      "roleFit": 62,
-      "url": "https://www.themuse.com/jobs/exadel/senior-api-engineer-net",
-      "location": "Kazanlak, Bulgaria",
-      "keywordHits": [
-        "API",
-        "remote"
-      ],
-      "keywordMisses": [
-        "sql",
         "aws",
-        "azure"
+        "terraform",
+        "etl",
+        "spark"
       ],
       "decision": "pursue selectively",
       "layer": "B"
     },
     {
-      "jobKey": "url:https://www.themuse.com/jobs/exadel/senior-software-architect-net",
+      "jobKey": "url:https://www.themuse.com/jobs/exadel/seniorlead-machine-learning-engineer-c5f830",
       "company": "Exadel",
-      "title": "Senior Software Architect (.NET)",
+      "title": "Senior/Lead Machine Learning Engineer",
       "score": 82,
       "grade": "B",
       "roleFit": 62,
-      "url": "https://www.themuse.com/jobs/exadel/senior-software-architect-net",
+      "url": "https://www.themuse.com/jobs/exadel/seniorlead-machine-learning-engineer-c5f830",
       "location": "Dabas, Hungary / Kazanlak, Bulgaria / Ozorków, Poland",
       "keywordHits": [
+        "Analytics",
         "API",
-        "remote"
+        "remote",
+        "analytics"
       ],
       "keywordMisses": [
+        "python",
         "sql",
         "aws",
         "azure",
-        "rest"
-      ],
-      "decision": "pursue selectively",
-      "layer": "B"
-    },
-    {
-      "jobKey": "url:https://www.themuse.com/jobs/exadel/senior-devops-engineer-4d9696",
-      "company": "Exadel",
-      "title": "Senior DevOps Engineer",
-      "score": 82,
-      "grade": "B",
-      "roleFit": 62,
-      "url": "https://www.themuse.com/jobs/exadel/senior-devops-engineer-4d9696",
-      "location": "Kazanlak, Bulgaria",
-      "keywordHits": [
-        "API",
-        "remote"
-      ],
-      "keywordMisses": [
-        "sql",
-        "aws",
-        "azure",
-        "docker",
-        "kubernetes"
+        "rag",
+        "prompt engineering"
       ],
       "decision": "pursue selectively",
       "layer": "B"
     }
   ],
   "layerC": [
+    {
+      "jobKey": "url:https://stripe.com/jobs/search?gh_jid=8003382",
+      "company": "Stripe Greenhouse",
+      "title": "Full-Stack Engineer",
+      "score": 85,
+      "grade": "A",
+      "roleFit": 82,
+      "url": "https://stripe.com/jobs/search?gh_jid=8003382",
+      "location": "San Francisco",
+      "keywordHits": [
+        "API",
+        "remote",
+        "dashboard",
+        "Full Stack Engineer"
+      ],
+      "topGap": "python",
+      "mainGaps": [
+        "python",
+        "sales",
+        "operations"
+      ],
+      "layer": "C"
+    },
     {
       "jobKey": "url:https://careers.airbnb.com/positions/7763307?gh_jid=7763307",
       "company": "Airbnb Greenhouse",
@@ -3053,23 +3090,26 @@
       "layer": "C"
     },
     {
-      "jobKey": "url:https://www.themuse.com/jobs/uber/staff-frontend-engineer-core-services-eng",
+      "jobKey": "url:https://www.themuse.com/jobs/uber/sr-software-engineer-frontend-web-8fc2b7",
       "company": "Uber",
-      "title": "Staff Frontend Engineer, Core Services Eng",
+      "title": "Sr Software Engineer, Frontend (Web)",
       "score": 84,
       "grade": "B",
       "roleFit": 82,
-      "url": "https://www.themuse.com/jobs/uber/staff-frontend-engineer-core-services-eng",
-      "location": "Sunnyvale, CA",
+      "url": "https://www.themuse.com/jobs/uber/sr-software-engineer-frontend-web-8fc2b7",
+      "location": "Rio de Janeiro, Brazil / São Paulo, Brazil",
       "keywordHits": [
         "Frontend Engineer",
-        "React",
-        "Analytics",
-        "API"
+        "JavaScript",
+        "TypeScript",
+        "React"
       ],
-      "topGap": "growth",
+      "topGap": "angular",
       "mainGaps": [
-        "growth"
+        "angular",
+        "python",
+        "go",
+        "html"
       ],
       "layer": "C"
     },
@@ -3427,29 +3467,6 @@
       "roleFit": 82,
       "url": "https://jobs.ashbyhq.com/elevenlabs/6848ece5-1ce5-4ab4-9dd6-0704cd0f8ecd",
       "location": "Spain",
-      "keywordHits": [
-        "API",
-        "remote",
-        "Product Engineer"
-      ],
-      "topGap": "python",
-      "mainGaps": [
-        "python",
-        "go",
-        "llm",
-        "agents"
-      ],
-      "layer": "C"
-    },
-    {
-      "jobKey": "url:https://jobs.ashbyhq.com/elevenlabs/f0cccf77-a255-4620-9639-2f1cc5f9c0ab",
-      "company": "ElevenLabs Ashby",
-      "title": "Deployment Strategist - Poland",
-      "score": 84,
-      "grade": "B",
-      "roleFit": 82,
-      "url": "https://jobs.ashbyhq.com/elevenlabs/f0cccf77-a255-4620-9639-2f1cc5f9c0ab",
-      "location": "Poland",
       "keywordHits": [
         "API",
         "remote",
@@ -5047,6 +5064,67 @@
       "llm": null
     },
     {
+      "jobKey": "url:https://www.themuse.com/jobs/uber/staff-frontend-engineer-core-services-eng",
+      "company": "Uber",
+      "title": "Staff Frontend Engineer, Core Services Eng",
+      "score": 85,
+      "grade": "A",
+      "confidence": "medium",
+      "decision": "pursue aggressively",
+      "thesis": "Staff Frontend Engineer, Core Services Eng at Uber is pursue aggressively because the snapshot score is 85, with 8 profile/role keyword hits and 0 external evidence item(s).",
+      "evidence": {
+        "keywordHits": [
+          "Frontend Engineer",
+          "React",
+          "Analytics",
+          "API",
+          "remote",
+          "analytics",
+          "React",
+          "Frontend Engineer"
+        ],
+        "keywordMisses": [],
+        "researchSignals": [],
+        "evidenceCount": 0,
+        "compensationLeverage": ""
+      },
+      "concerns": [
+        "External company evidence is thin; run deep research with a search API."
+      ],
+      "interviewStrategy": [
+        "Ask why the role is open and what success means in the first 90 days.",
+        "Probe team ownership, roadmap pressure, and cross-functional interfaces."
+      ],
+      "cvStrategy": [
+        "Lead with proof around: Frontend Engineer, React, Analytics, API, remote, analytics.",
+        "Use story story-1: frontend product execution.",
+        "Use story story-2: data-heavy product decisions.",
+        "Use story story-3: systems and API collaboration."
+      ],
+      "compensationStrategy": null,
+      "storyHooks": [
+        {
+          "id": "story-1",
+          "theme": "frontend product execution",
+          "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
+          "relevance": 1
+        },
+        {
+          "id": "story-2",
+          "theme": "data-heavy product decisions",
+          "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
+          "relevance": 1
+        },
+        {
+          "id": "story-3",
+          "theme": "systems and API collaboration",
+          "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
+          "relevance": 1
+        }
+      ],
+      "llm": null
+    },
+    {
       "jobKey": "url:https://www.themuse.com/jobs/zillow/senior-manager-software-development-engineering-7e24a5",
       "company": "Zillow",
       "title": "Senior Manager, Software Development Engineering",
@@ -5157,67 +5235,6 @@
         "rangeQuestion": "Before I anchor on a number, could you share the approved range and level for the Staff Backend Engineer (Go), Continuous Delivery package, including base, bonus, equity, and review cycle?",
         "valueAnchor": "Based on the scope of Staff Backend Engineer (Go), Continuous Delivery and my fit around frontend, engineer, building, product, I would like to calibrate toward the stronger end of the range if the team sees the level match."
       },
-      "storyHooks": [
-        {
-          "id": "story-1",
-          "theme": "frontend product execution",
-          "sourceProof": "Led frontend development of a multi-tenant analytics dashboard serving 10k+ daily active users.",
-          "relevance": 0
-        },
-        {
-          "id": "story-2",
-          "theme": "data-heavy product decisions",
-          "sourceProof": "Rebuilt the design system from scratch using React + Tailwind, reducing component duplication by 60%.",
-          "relevance": 0
-        },
-        {
-          "id": "story-3",
-          "theme": "systems and API collaboration",
-          "sourceProof": "Collaborated with backend and data teams to design RESTful and GraphQL API contracts.",
-          "relevance": 0
-        }
-      ],
-      "llm": null
-    },
-    {
-      "jobKey": "url:https://stripe.com/jobs/search?gh_jid=8003382",
-      "company": "Stripe Greenhouse",
-      "title": "Full-Stack Engineer",
-      "score": 85,
-      "grade": "A",
-      "confidence": "medium",
-      "decision": "pursue aggressively",
-      "thesis": "Full-Stack Engineer at Stripe Greenhouse is pursue aggressively because the snapshot score is 85, with 4 profile/role keyword hits and 0 external evidence item(s).",
-      "evidence": {
-        "keywordHits": [
-          "API",
-          "remote",
-          "dashboard",
-          "Full Stack Engineer"
-        ],
-        "keywordMisses": [
-          "python",
-          "sales",
-          "operations"
-        ],
-        "researchSignals": [],
-        "evidenceCount": 0,
-        "compensationLeverage": ""
-      },
-      "concerns": [
-        "External company evidence is thin; run deep research with a search API."
-      ],
-      "interviewStrategy": [
-        "Ask why the role is open and what success means in the first 90 days.",
-        "Probe team ownership, roadmap pressure, and cross-functional interfaces."
-      ],
-      "cvStrategy": [
-        "Lead with proof around: API, remote, dashboard, Full Stack Engineer.",
-        "Use story story-1: frontend product execution.",
-        "Use story story-2: data-heavy product decisions.",
-        "Use story story-3: systems and API collaboration."
-      ],
-      "compensationStrategy": null,
       "storyHooks": [
         {
           "id": "story-1",
