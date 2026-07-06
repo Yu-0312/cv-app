@@ -1,6 +1,6 @@
 window.CV_CAREER_OPS_DEEP_FIT = {
   "source": "career-ops-deep-fit",
-  "generatedAt": "2026-07-06T15:54:06.013Z",
+  "generatedAt": "2026-07-06T17:19:09.840Z",
   "llmProvider": "none",
   "summary": {
     "totalResults": 95,
@@ -3077,30 +3077,6 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "layer": "C"
     },
     {
-      "jobKey": "url:https://justjoin.it/job-offer/point-wild-principal-mlops-platform-engineer-warszawa-ai",
-      "company": "Point Wild",
-      "title": "Principal MLOps / Platform Engineer",
-      "score": 85,
-      "grade": "A",
-      "roleFit": 82,
-      "url": "https://justjoin.it/job-offer/point-wild-principal-mlops-platform-engineer-warszawa-ai",
-      "location": "Warszawa, PL",
-      "keywordHits": [
-        "Frontend Engineer",
-        "API",
-        "remote",
-        "Frontend Engineer"
-      ],
-      "topGap": "go",
-      "mainGaps": [
-        "go",
-        "sql",
-        "gcp",
-        "kubernetes"
-      ],
-      "layer": "C"
-    },
-    {
       "jobKey": "url:https://www.themuse.com/jobs/uber/staff-frontend-engineer-core-services-eng",
       "company": "Uber",
       "title": "Staff Frontend Engineer, Core Services Eng",
@@ -3452,6 +3428,29 @@ window.CV_CAREER_OPS_DEEP_FIT = {
       "roleFit": 82,
       "url": "https://jobs.ashbyhq.com/elevenlabs/5d1390e2-a6e8-4f8b-b01f-ad7e286009d2",
       "location": "United Kingdom / Ireland / Germany / Denmark / Portugal / Sweden / Italy / Poland",
+      "keywordHits": [
+        "API",
+        "remote",
+        "Product Engineer"
+      ],
+      "topGap": "python",
+      "mainGaps": [
+        "python",
+        "go",
+        "llm",
+        "agents"
+      ],
+      "layer": "C"
+    },
+    {
+      "jobKey": "url:https://jobs.ashbyhq.com/elevenlabs/6848ece5-1ce5-4ab4-9dd6-0704cd0f8ecd",
+      "company": "ElevenLabs Ashby",
+      "title": "Deployment Strategist - Spain",
+      "score": 84,
+      "grade": "B",
+      "roleFit": 82,
+      "url": "https://jobs.ashbyhq.com/elevenlabs/6848ece5-1ce5-4ab4-9dd6-0704cd0f8ecd",
+      "location": "Spain",
       "keywordHits": [
         "API",
         "remote",

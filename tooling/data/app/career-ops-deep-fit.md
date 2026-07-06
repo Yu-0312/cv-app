@@ -1,6 +1,6 @@
 # Career Ops Deep Fit Report
 
-Generated: 2026-07-06T15:54:06.013Z
+Generated: 2026-07-06T17:19:09.840Z
 LLM provider: none
 Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 exploratory)
 
@@ -981,7 +981,6 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - **Ramp Ashby — Software Engineer, Frontend** (score: 85) | Top gap: none
 - **PostHog Ashby — Developer who connects with other developers** (score: 85) | Top gap: go
 - **PostHog Ashby — Technical Account Executive** (score: 85) | Top gap: go
-- **Point Wild — Principal MLOps / Platform Engineer** (score: 85) | Top gap: go
 - **Uber — Staff Frontend Engineer, Core Services Eng** (score: 84) | Top gap: growth
 - **Pilotly — Product Engineer II** (score: 84) | Top gap: aws
 - **Equinix, Inc — Staff Software Engineer (Full-Stack)** (score: 84) | Top gap: python
@@ -998,4 +997,5 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - **Asana Greenhouse — Staff Software Engineer, API** (score: 84) | Top gap: agents
 - **ElevenLabs Ashby — Deployment Strategist - North America** (score: 84) | Top gap: python
 - **ElevenLabs Ashby — Deployment Strategist - Europe** (score: 84) | Top gap: python
+- **ElevenLabs Ashby — Deployment Strategist - Spain** (score: 84) | Top gap: python
 

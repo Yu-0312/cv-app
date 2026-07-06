@@ -84,5 +84,5 @@ window.CV_CAREER_OPS_MODES = {
     "Never rewrite the CV with experience the user did not provide."
   ],
   "source": "career-ops-modes",
-  "generatedAt": "2026-07-06T15:54:10.438Z"
+  "generatedAt": "2026-07-06T17:19:14.273Z"
 };

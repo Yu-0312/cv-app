@@ -1,6 +1,6 @@
 # Career Ops Parallel Worker Report
 
-Generated: 2026-07-06T15:54:01.611Z
+Generated: 2026-07-06T17:19:05.592Z
 Concurrency: 4
 Jobs processed: 50
 Errors: 0
@@ -581,21 +581,6 @@ Errors: 0
 - Never store API keys or credentials in job metadata.
 - Record only application status and user-approved notes.
 
-## P0 Point Wild - Principal MLOps / Platform Engineer
-
-- Score: 85
-- Grade: A
-- Research evidence: 0
-- Keywords: API, frontend, engineer, years, in, design, system
-- Compensation leverage: -
-- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
-
-### Apply Agent Guardrails
-- Never submit without explicit user confirmation.
-- Never fabricate work authorization, salary history, degree, or experience.
-- Never store API keys or credentials in job metadata.
-- Record only application status and user-approved notes.
-
 ## P1 Uber - Staff Frontend Engineer, Core Services Eng
 
 - Score: 84
@@ -753,6 +738,21 @@ Errors: 0
 - Research evidence: 10
 - Keywords: engineer, building, product, in, design, architecture
 - Compensation leverage: high
+- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
+
+### Apply Agent Guardrails
+- Never submit without explicit user confirmation.
+- Never fabricate work authorization, salary history, degree, or experience.
+- Never store API keys or credentials in job metadata.
+- Record only application status and user-approved notes.
+
+## P1 Mozilla Greenhouse - Senior Engineering Manager, AI Product (Thunderbolt)
+
+- Score: 84
+- Grade: B
+- Research evidence: 0
+- Keywords: React, years, product, in, design, system, performance
+- Compensation leverage: -
 - Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
 ### Apply Agent Guardrails

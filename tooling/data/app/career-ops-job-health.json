@@ -1,10 +1,10 @@
 {
   "source": "career-ops-health-monitor",
-  "checkedAt": "2026-07-06T15:54:14.146Z",
+  "checkedAt": "2026-07-06T17:19:18.048Z",
   "threshold": 0.25,
   "health": {
-    "total": 85123,
-    "active": 85123,
+    "total": 86626,
+    "active": 86626,
     "expired": 0,
     "stale": 0,
     "expiredRate": 0,
@@ -32,11 +32,11 @@
         "expired": 0
       },
       "The Muse Global Remote Jobs": {
-        "total": 1883,
+        "total": 1815,
         "expired": 0
       },
       "Vercel Greenhouse": {
-        "total": 65,
+        "total": 64,
         "expired": 0
       },
       "Supabase Ashby": {
@@ -52,7 +52,7 @@
         "expired": 0
       },
       "Stripe Greenhouse": {
-        "total": 443,
+        "total": 444,
         "expired": 0
       },
       "Airbnb Greenhouse": {
@@ -60,19 +60,15 @@
         "expired": 0
       },
       "Anthropic Greenhouse": {
-        "total": 376,
+        "total": 377,
         "expired": 0
       },
       "Reddit Greenhouse": {
-        "total": 167,
+        "total": 166,
         "expired": 0
       },
       "Ramp Ashby": {
         "total": 122,
-        "expired": 0
-      },
-      "Source flex job board": {
-        "total": 167,
         "expired": 0
       },
       "The Muse Global Software Engineering": {
@@ -84,11 +80,11 @@
         "expired": 0
       },
       "Databricks Greenhouse": {
-        "total": 628,
+        "total": 625,
         "expired": 0
       },
       "Figma Greenhouse": {
-        "total": 136,
+        "total": 135,
         "expired": 0
       },
       "Mozilla Greenhouse": {
@@ -96,11 +92,15 @@
         "expired": 0
       },
       "Asana Greenhouse": {
-        "total": 111,
+        "total": 114,
         "expired": 0
       },
       "The Muse Global Public Jobs": {
         "total": 1889,
+        "expired": 0
+      },
+      "The Muse Global Data Analytics": {
+        "total": 1838,
         "expired": 0
       },
       "Perplexity Ashby": {
@@ -113,10 +113,6 @@
       },
       "Sentry Ashby": {
         "total": 40,
-        "expired": 0
-      },
-      "The Muse Global Data Analytics": {
-        "total": 253,
         "expired": 0
       },
       "Cloudflare Greenhouse": {
@@ -144,11 +140,11 @@
         "expired": 0
       },
       "Roblox Greenhouse": {
-        "total": 197,
+        "total": 196,
         "expired": 0
       },
       "NVIDIA Workday": {
-        "total": 313,
+        "total": 315,
         "expired": 0
       },
       "Samsung Workday": {
@@ -164,7 +160,11 @@
         "expired": 0
       },
       "Cursor Ashby": {
-        "total": 107,
+        "total": 106,
+        "expired": 0
+      },
+      "Source flex job board": {
+        "total": 147,
         "expired": 0
       },
       "Gogolook": {
@@ -212,7 +212,7 @@
         "expired": 0
       },
       "Daijob Japan Broad Listings": {
-        "total": 91,
+        "total": 98,
         "expired": 0
       },
       "Samsung Research": {
@@ -307,10 +307,6 @@
         "total": 1,
         "expired": 0
       },
-      "yes123 Taiwan Job Search": {
-        "total": 1,
-        "expired": 0
-      },
       "Grab SmartRecruiters": {
         "total": 17,
         "expired": 0
@@ -364,6 +360,10 @@
         "expired": 0
       },
       "ASSA ABLOY SuccessFactors C# Software Engineer": {
+        "total": 1,
+        "expired": 0
+      },
+      "yes123 Taiwan Job Search": {
         "total": 1,
         "expired": 0
       }
