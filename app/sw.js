@@ -1,4 +1,4 @@
-const CACHE_NAME = "cv-studio-cache-v18";
+const CACHE_NAME = "cv-studio-cache-v19";
 const ASSETS = [
   "./manifest.json",
   "./icon.svg",
@@ -70,7 +70,9 @@ self.addEventListener("fetch", (event) => {
   if (event.request.method !== "GET") return;
 
   const url = new URL(event.request.url);
-  const isHtml = url.pathname.endsWith(".html") || url.pathname === "/" || url.pathname === "";
+  // 目錄路徑（如 GitHub Pages 的 /cv-app/）也是 HTML 導覽請求，必須走 network-first，
+  // 否則會掉入 cache-first 而永遠拿到舊版頁面。
+  const isHtml = url.pathname.endsWith(".html") || url.pathname.endsWith("/") || url.pathname === "" || event.request.mode === "navigate";
 
   if (isHtml) {
     /* Network-first for HTML — always get latest code */
