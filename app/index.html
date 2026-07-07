@@ -5445,6 +5445,87 @@
       color: var(--ink);
       box-shadow: 0 1px 4px rgba(0,0,0,0.1);
     }
+    .career-ops-tab.is-disabled,
+    .career-ops-tab:disabled {
+      opacity: 0.42;
+      cursor: not-allowed;
+      color: var(--muted);
+      background: transparent;
+      box-shadow: none;
+      pointer-events: none;
+    }
+    /* ── 四象限（工作符合度 × 公司符合度）── */
+    .career-quadrant-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 6px;
+    }
+    @media (max-width: 720px) {
+      .career-quadrant-grid { grid-template-columns: 1fr; }
+    }
+    .career-quadrant-cell {
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: var(--surface-strong);
+      padding: 14px 14px 10px;
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+    }
+    .career-quadrant-cell.is-empty { opacity: 0.72; }
+    .career-quadrant-head {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 10px;
+    }
+    .career-quadrant-dot {
+      flex: none;
+      width: 11px;
+      height: 11px;
+      border-radius: 50%;
+      display: inline-block;
+    }
+    .career-quadrant-title {
+      font-size: 13.5px;
+      font-weight: 800;
+      color: var(--ink);
+      min-width: 0;
+    }
+    .career-quadrant-count {
+      margin-left: auto;
+      flex: none;
+      font-size: 12px;
+      font-weight: 800;
+      color: #fff;
+      padding: 2px 9px;
+      border-radius: 999px;
+    }
+    .career-quadrant-axis {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      flex: none;
+      font-size: 11px;
+      font-weight: 800;
+      color: var(--muted);
+      background: rgba(255,255,255,0.7);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 2px 8px;
+      white-space: nowrap;
+    }
+    .career-quadrant-pager {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin-top: auto;
+      padding-top: 10px;
+      font-size: 12px;
+      color: var(--muted);
+    }
     /* ── Layer badges ── */
     .career-layer-badge {
       display: inline-flex;
@@ -8509,9 +8590,9 @@
         <div class="career-results-shell">
           <!-- Tab switcher -->
           <div class="career-ops-tabs" id="careerOpsTabs">
-            <button class="career-ops-tab active" type="button" data-career-ops-tab="tracker">職缺追蹤</button>
-            <button class="career-ops-tab" type="button" data-career-ops-tab="deepfit">Deep Fit 分析</button>
-            <button class="career-ops-tab" type="button" data-career-ops-tab="upload">履歷上傳</button>
+            <button class="career-ops-tab is-disabled" type="button" data-career-ops-tab="tracker" disabled aria-disabled="true" title="暫停使用">職缺追蹤（暫停使用）</button>
+            <button class="career-ops-tab is-disabled" type="button" data-career-ops-tab="deepfit" disabled aria-disabled="true" title="暫停使用">Deep Fit 分析（暫停使用）</button>
+            <button class="career-ops-tab active" type="button" data-career-ops-tab="upload">履歷上傳</button>
           </div>
 
           <!-- Tab: Job Tracker (existing) -->
@@ -8532,8 +8613,8 @@
           <!-- Tab: Resume Upload -->
           <div id="careerUploadArea" hidden>
             <div class="career-upload-card">
-              <h3 class="career-upload-title">上傳履歷，本機比對 50-100 個職缺</h3>
-              <p class="career-upload-copy">系統會使用左側 API Key 在瀏覽器解析履歷，再直接於前端比對職缺資料庫並回傳三層結果：深度評估（Layer A）、標準比對（Layer B）、探索訊號（Layer C）。</p>
+              <h3 class="career-upload-title">上傳履歷，本機不限數量比對台灣職缺</h3>
+              <p class="career-upload-copy">系統會使用左側 API Key 在瀏覽器解析履歷，再直接於前端「全量」比對職缺資料庫，並依「工作符合度」與「公司符合度」兩軸把結果分成四象限（每象限可翻頁瀏覽全部符合職缺）。</p>
               <label class="career-upload-zone" id="careerUploadZone">
                 <input type="file" id="careerResumeFile" accept=".pdf,.txt,.md,.docx" />
                 <svg class="career-upload-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
@@ -8550,8 +8631,8 @@
               <div id="careerUploadStatus" class="career-upload-status" role="status" aria-live="polite" style="display:none;"></div>
               <div id="careerUploadProfilePreview" class="career-upload-profile-preview" style="display:none;"></div>
               <div class="career-upload-target" style="margin-top:12px;background:rgba(255,255,255,0.55);border:1px solid var(--line);border-radius:12px;padding:12px 14px;">
-                <div class="career-panel-label" style="margin-bottom:6px;">目標職種／關鍵字（選填）</div>
-                <p style="font-size:12px;color:var(--muted);margin:0 0 8px;line-height:1.5;">填入你想找的職種或公司後，本機比對會先用加權相似度篩出最相關的前 10000 筆職缺再評分，避免掃過全部台灣職缺；留空則照舊比對全部。</p>
+                <div class="career-panel-label" style="margin-bottom:6px;">目標職種／公司關鍵字（選填）</div>
+                <p style="font-size:12px;color:var(--muted);margin:0 0 8px;line-height:1.5;">關鍵字不再用來「先篩選」職缺，而是作為兩軸的加權訊號：職種關鍵字加權「工作符合軸」、公司關鍵字加權「公司符合軸」。無論是否填寫，都會全量比對所有未過期的台灣職缺。</p>
                 <div class="compact-field-grid">
                   <input id="careerUploadTargetTitle" type="text" placeholder="目標職種／關鍵字，例如：前端工程師" />
                   <input id="careerUploadTargetCompany" type="text" placeholder="目標公司（選填）" />
@@ -8572,6 +8653,8 @@
                 <div id="careerStaticSnapshotStatus" class="career-upload-static-status" style="display:none;"></div>
               </details>
             </div>
+            <!-- 比對結果（四象限）直接顯示在履歷上傳分頁內 -->
+            <div id="careerUploadResultsArea" class="career-upload-results"></div>
           </div>
         </div>
 
@@ -17127,7 +17210,7 @@ Schema:
         function showLoading(msg) {
           // 左側分析的結果與載入狀態都畫在 careerResultsArea（職缺追蹤分頁），
           // 若使用者正停在「履歷上傳 / Deep Fit」分頁會看不到 → 先切回追蹤分頁。
-          try { if (typeof careerOpsSetTab === "function") careerOpsSetTab("tracker"); } catch {}
+          try { if (typeof careerOpsSetTab === "function") careerOpsSetTab("upload"); } catch {}
           $c("careerResultsArea").innerHTML = `
             <div class="career-loading">
               <div class="career-loading-spinner"></div>
@@ -17137,7 +17220,7 @@ Schema:
 
         function showError(msg) {
           // 同 showLoading：確保錯誤訊息所在的分頁是可見的，避免「按了沒反應」。
-          try { if (typeof careerOpsSetTab === "function") careerOpsSetTab("tracker"); } catch {}
+          try { if (typeof careerOpsSetTab === "function") careerOpsSetTab("upload"); } catch {}
           $c("careerResultsArea").innerHTML = `
             <div style="padding:40px 32px;text-align:center;color:var(--danger);font-size:13.5px;line-height:1.6;">${careerText(msg)}</div>`;
         }
@@ -18577,9 +18660,11 @@ Schema:
 	          return null;
 	        }
 
-	        let careerOpsActiveTab = "tracker";
+	        let careerOpsActiveTab = "upload";
 
 	        function careerOpsSetTab(tab) {
+	          // 「職缺追蹤」與「Deep Fit 分析」暫停使用：一律導回「履歷上傳」，比對結果直接顯示在履歷上傳分頁內。
+	          if (tab === "tracker" || tab === "deepfit") tab = "upload";
 	          careerOpsActiveTab = tab;
 	          document.querySelectorAll("[data-career-ops-tab]").forEach(btn => {
 	            btn.classList.toggle("active", btn.dataset.careerOpsTab === tab);
@@ -18588,9 +18673,9 @@ Schema:
 	          const deepfit = $c("careerDeepFitArea");
 	          const upload  = $c("careerUploadArea");
 	          if (tracker) tracker.hidden = tab !== "tracker";
-	          if (deepfit) deepfit.hidden = tab !== "deepfit";
+	          if (deepfit) deepfit.hidden = true; // Deep Fit 分頁停用，結果改顯示於履歷上傳分頁內
 	          if (upload)  upload.hidden  = tab !== "upload";
-	          if (tab === "deepfit") renderDeepFitDashboard();
+	          if (tab === "upload") renderDeepFitDashboard();
 	        }
 
 	        document.addEventListener("click", function(e) {
@@ -18708,18 +18793,19 @@ Schema:
 
 	        function renderCareerTargetRow(item) {
 	          const url = item.url || "";
-	          const color = careerOpsTargetTierColor(item.targetTier);
-	          const scoreText = (item.score != null && item.score !== "") ? item.score : "—";
+	          const jobAxis = item.jobAxis != null ? Math.round(Number(item.jobAxis)) : null;
+	          const companyAxis = item.companyAxis != null ? Math.round(Number(item.companyAxis)) : null;
 	          const locPart = item.location ? " · " + careerText(item.location) : "";
+	          const chip = (label, val, pass) => val == null ? "" :
+	            `<span style="flex:none;font-size:10.5px;font-weight:700;padding:2px 7px;border-radius:999px;white-space:nowrap;color:${pass ? "#0a7d3e" : "#b45309"};background:${pass ? "#e7f6ec" : "#fdf0e0"};">${label} ${val}</span>`;
 	          const content = `
 	            <div style="display:flex;align-items:center;gap:12px;min-width:0;flex:1;">
-	              <span style="flex:none;font-size:11px;font-weight:800;color:#fff;background:${color};padding:3px 8px;border-radius:999px;white-space:nowrap;">${careerText(item.targetTierLabel || "")}</span>
-	              <div style="min-width:0;">
+	              <div style="min-width:0;flex:1;">
 	                <div style="font-weight:700;font-size:13.5px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${careerText(item.title || "—")}</div>
 	                <div style="color:var(--muted);font-size:12px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${careerText(item.company || "")}${locPart}</div>
 	              </div>
 	            </div>
-	            <div style="flex:none;font-weight:800;font-size:15px;">${careerText(scoreText)}</div>`;
+	            <div style="flex:none;display:flex;align-items:center;gap:6px;">${chip("工作", jobAxis, item.jobPass)}${chip("公司", companyAxis, item.companyPass)}</div>`;
 	          const rowStyle = "display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 14px;border:1px solid var(--line);border-radius:10px;background:#fff;text-decoration:none;color:inherit;";
 	          return url
 	            ? `<a style="${rowStyle}" href="${careerText(url)}" target="_blank" rel="noreferrer noopener">${content}</a>`
@@ -18727,16 +18813,15 @@ Schema:
 	        }
 
 	        function renderDeepFitDashboard() {
-		          const area = $c("careerDeepFitArea");
+		          const area = $c("careerUploadResultsArea") || $c("careerDeepFitArea");
 		          if (!area) return;
 		          const df = careerOpsGetActiveDeepFitResult();
 		          if (!df || (!df.layerA?.length && !df.layerB?.length && !df.layerC?.length && !df.dossiers?.length)) {
 	            area.innerHTML = `
 	              <div class="career-ops-empty">
-	                <strong>尚未產生你的 Deep Fit 分析。</strong><br>
-	                請先切換到「履歷上傳」，上傳你的履歷並按「開始本機職缺比對」。<br>
-	                內建靜態快照不會自動顯示；需要檢查舊快照時，可在履歷上傳頁手動讀取。<br><br>
-	                <button type="button" onclick="careerOpsSetTab('upload')" style="margin-top:10px;padding:8px 20px;border-radius:10px;border:1px solid var(--line);background:#fff;cursor:pointer;font-size:13px;font-weight:700;">前往履歷上傳</button>
+	                <strong>尚未產生四象限比對結果。</strong><br>
+	                請在上方上傳你的履歷並按「開始本機職缺比對」，結果會依「工作符合度 × 公司符合度」分成四象限顯示於此。<br>
+	                內建靜態快照不會自動顯示；需要檢查舊快照時，可在上方手動讀取。
 	              </div>`;
 	            return;
 	          }
@@ -18783,46 +18868,40 @@ Schema:
 	            </div>
 	            <div class="career-explore-grid">${layerC.map(renderLayerCCard).join("")}</div>` : "";
 
-	          // 若有填目標（公司/職位），改用四象限分組：每個象限各自列出全部符合職缺並前端分頁；否則維持 Layer A/B/C。
-	          const targetSeed = df.targetSeed || null;
-	          const targetRanked = Array.isArray(df.targetRanked) ? df.targetRanked : null;
-	          let mainSectionsHtml;
-	          if (targetSeed && targetRanked) {
-	            const seedLabel = [targetSeed.company, targetSeed.title].filter(Boolean).join(" / ");
-	            const QUAD_PAGE_SIZE = 20;
-	            if (!Array.isArray(window._careerOpsQuadPage)) window._careerOpsQuadPage = [0, 0, 0, 0];
-	            const byTier = [[], [], [], []];
-	            targetRanked.forEach(item => { const t = Number(item.targetTier); (byTier[t] || byTier[3]).push(item); });
-	            const sectionsHtml = CAREER_OPS_TARGET_TIER_LABELS.map((label, i) => {
-	              const items = byTier[i] || [];
-	              const color = careerOpsTargetTierColor(i);
-	              const headerHtml = `<div class="career-layer-header"><span style="flex:none;width:11px;height:11px;border-radius:50%;background:${color};display:inline-block;"></span><h3>${careerText(label)}</h3><small>${items.length} 筆</small></div>`;
-	              if (!items.length) return `${headerHtml}<div class="career-ops-empty" style="margin-bottom:16px;">此象限目前沒有符合職缺。</div>`;
-	              const maxPage = Math.max(0, Math.ceil(items.length / QUAD_PAGE_SIZE) - 1);
-	              let page = Math.min(Math.max(0, window._careerOpsQuadPage[i] || 0), maxPage);
-	              window._careerOpsQuadPage[i] = page;
-	              const pageItems = items.slice(page * QUAD_PAGE_SIZE, page * QUAD_PAGE_SIZE + QUAD_PAGE_SIZE);
-	              const rowsHtml = `<div style="display:flex;flex-direction:column;gap:8px;">${pageItems.map(renderCareerTargetRow).join("")}</div>`;
-	              const pagerHtml = maxPage > 0
-	                ? `<div style="display:flex;align-items:center;justify-content:center;gap:12px;margin:12px 0 20px;"><button class="career-link-btn" type="button" ${page <= 0 ? "disabled" : ""} onclick="careerOpsSetQuadPage(${i}, ${page - 1})">上一頁</button><span style="font-size:12.5px;color:var(--muted);">第 ${page + 1} / ${maxPage + 1} 頁 · 共 ${items.length} 筆</span><button class="career-link-btn" type="button" ${page >= maxPage ? "disabled" : ""} onclick="careerOpsSetQuadPage(${i}, ${page + 1})">下一頁</button></div>`
-	                : `<div style="margin-bottom:20px;"></div>`;
-	              return `${headerHtml}${rowsHtml}${pagerHtml}`;
-	            }).join("");
-	            const derivedNote = targetSeed._derived ? "（此目標由履歷自動推導，可在上方欄位手動填寫目標公司／職位覆蓋）" : "";
-            const introHtml = `<div class="career-ops-help" style="margin:0 0 14px;">依「${careerText(seedLabel)}」用關鍵詞相似度分成四象限，每個象限列出全部符合職缺（每頁 ${QUAD_PAGE_SIZE} 筆，可翻頁）。${careerText(derivedNote)}</div>`;
-	            mainSectionsHtml = `${introHtml}${sectionsHtml}`;
-	          } else {
-	            mainSectionsHtml = `${layerAHtml}${layerBHtml}${layerCHtml}`;
-	          }
+	          // 四象限（工作符合度 × 公司符合度）永遠顯示，取代舊的 Layer A/B/C。
+	          // 每個象限先列出前 N 筆（依兩軸分數排序），按「載入更多」遞增，避免一次渲染數萬筆。
+	          const targetRanked = Array.isArray(df.targetRanked) ? df.targetRanked : [];
+	          const keywordsMeta = df.quadrantKeywords || df.targetSeed || {};
+	          const QUAD_PAGE_SIZE = 25;
+	          if (!Array.isArray(window._careerOpsQuadShown)) window._careerOpsQuadShown = [QUAD_PAGE_SIZE, QUAD_PAGE_SIZE, QUAD_PAGE_SIZE, QUAD_PAGE_SIZE];
+	          const byQuad = [[], [], [], []];
+	          targetRanked.forEach(item => { const t = Math.min(3, Math.max(0, Number(item.targetTier) || 0)); byQuad[t].push(item); });
+	          const quadCellHtml = CAREER_OPS_QUADRANT_LABELS.map((label, i) => {
+	            const items = byQuad[i] || [];
+	            const color = careerOpsQuadrantColor(i);
+	            const shown = Math.min(items.length, Math.max(QUAD_PAGE_SIZE, window._careerOpsQuadShown[i] || QUAD_PAGE_SIZE));
+	            window._careerOpsQuadShown[i] = shown;
+	            const head = `<div class="career-quadrant-head"><span class="career-quadrant-dot" style="background:${color};"></span><span class="career-quadrant-title">${careerText(label)}</span><span class="career-quadrant-count">${items.length}</span></div>`;
+	            if (!items.length) return `<div class="career-quadrant-cell">${head}<div class="career-ops-empty" style="margin:6px 0 0;">此象限目前沒有職缺。</div></div>`;
+	            const rowsHtml = `<div style="display:flex;flex-direction:column;gap:8px;margin-top:10px;">${items.slice(0, shown).map(renderCareerTargetRow).join("")}</div>`;
+	            const moreHtml = shown < items.length
+	              ? `<div class="career-quadrant-pager"><button class="career-link-btn" type="button" onclick="careerOpsQuadLoadMore(${i})">載入更多（已顯示 ${shown} / ${items.length}）</button></div>`
+	              : (items.length > QUAD_PAGE_SIZE ? `<div class="career-quadrant-pager"><span style="font-size:12px;color:var(--muted);">已顯示全部 ${items.length} 筆</span></div>` : "");
+	            return `<div class="career-quadrant-cell">${head}${rowsHtml}${moreHtml}</div>`;
+	          }).join("");
+	          const seedLabel = [keywordsMeta.company, keywordsMeta.title].filter(Boolean).join(" / ");
+	          const introHtml = `<div class="career-ops-help" style="margin:0 0 14px;">已將全部台灣職缺依「工作符合度 × 公司符合度」分成四象限${seedLabel ? `（關鍵字：${careerText(seedLabel)} 作為兩軸加權訊號）` : ""}，每象限預設列出前 ${QUAD_PAGE_SIZE} 筆、可載入更多。</div>`;
+	          const mainSectionsHtml = `${introHtml}<div class="career-quadrant-grid">${quadCellHtml}</div>`;
+	          const quadCounts = [byQuad[0].length, byQuad[1].length, byQuad[2].length, byQuad[3].length];
 
 	          area.innerHTML = `
 	            ${sourceNoteHtml}
 	            ${healthHtml}
 	            <div class="career-deepfit-summary">
-	              <div class="career-deepfit-summary-card"><div class="career-deepfit-summary-num">${careerText(summary.totalResults)}</div><div class="career-deepfit-summary-label">比對總數</div></div>
-	              <div class="career-deepfit-summary-card"><div class="career-deepfit-summary-num">${careerText(summary.layerA)}</div><div class="career-deepfit-summary-label">深度評估</div></div>
-	              <div class="career-deepfit-summary-card"><div class="career-deepfit-summary-num">${careerText(summary.layerB)}</div><div class="career-deepfit-summary-label">標準比對</div></div>
-	              <div class="career-deepfit-summary-card"><div class="career-deepfit-summary-num">${careerText(summary.layerC)}</div><div class="career-deepfit-summary-label">探索訊號</div></div>
+	              <div class="career-deepfit-summary-card"><div class="career-deepfit-summary-num" style="color:#0a7d3e;">${careerText(quadCounts[0])}</div><div class="career-deepfit-summary-label">✅工作 ✅公司</div></div>
+	              <div class="career-deepfit-summary-card"><div class="career-deepfit-summary-num" style="color:#1d4ed8;">${careerText(quadCounts[1])}</div><div class="career-deepfit-summary-label">✅工作 ❌公司</div></div>
+	              <div class="career-deepfit-summary-card"><div class="career-deepfit-summary-num" style="color:#b45309;">${careerText(quadCounts[2])}</div><div class="career-deepfit-summary-label">❌工作 ✅公司</div></div>
+	              <div class="career-deepfit-summary-card"><div class="career-deepfit-summary-num" style="color:#6b7280;">${careerText(quadCounts[3])}</div><div class="career-deepfit-summary-label">❌工作 ❌公司</div></div>
 	            </div>
 	            <div style="display:flex;gap:8px;justify-content:flex-end;margin-bottom:14px;">
 	              <button class="career-link-btn" type="button" onclick="careerOpsDownloadDeepFitJson()">下載 JSON 報告</button>
@@ -18836,14 +18915,14 @@ Schema:
 	            </div>`;
 		        }
 
-		        // 四象限分頁：切換某象限頁碼後重繪整個 Deep Fit 儀表板。
-		        function careerOpsSetQuadPage(tier, page) {
-		          if (!Array.isArray(window._careerOpsQuadPage)) window._careerOpsQuadPage = [0, 0, 0, 0];
+		        // 四象限載入更多：遞增某象限顯示筆數後重繪整個 Deep Fit 儀表板。
+		        function careerOpsQuadLoadMore(tier) {
+		          if (!Array.isArray(window._careerOpsQuadShown)) window._careerOpsQuadShown = [25, 25, 25, 25];
 		          const t = Math.min(3, Math.max(0, Number(tier) || 0));
-		          window._careerOpsQuadPage[t] = Math.max(0, Number(page) || 0);
+		          window._careerOpsQuadShown[t] = (window._careerOpsQuadShown[t] || 25) + 50;
 		          renderDeepFitDashboard();
 		        }
-		        window.careerOpsSetQuadPage = careerOpsSetQuadPage;
+		        window.careerOpsQuadLoadMore = careerOpsQuadLoadMore;
 
 		        function careerOpsDownloadDeepFitJson() {
 		          const df = careerOpsGetActiveDeepFitResult();
@@ -19024,7 +19103,7 @@ Schema:
 		        }
 
 		        function careerOpsBuildLocalDossier(job, profile) {
-		          const intel = careerOpsScoreJobAgainstProfile(job, profile);
+		          const intel = job._intel || careerOpsScoreJobAgainstProfile(job, profile);
 		          const text = `${job.title || ""} ${job.company || ""} ${job.description || ""}`.toLowerCase();
 		          const skills = careerOpsLocalProfileTerms(profile).skills;
 		          const hits = skills.filter(skill => text.includes(skill)).slice(0, 14);
@@ -19067,23 +19146,28 @@ Schema:
 		          };
 		        }
 
-		        function careerOpsClassifyLocalJobs(jobs, profile) {
+		        async function careerOpsClassifyLocalJobs(jobs, profile, keywords, progressCb) {
+		          const quadrantKeywords = keywords || {};
 		          const targetRoles = careerOpsLocalProfileTerms(profile).targetRoles;
 		          const candidateStage = careerOpsInferCandidateStage(profile);
 		          const earlyCandidate = careerOpsIsEarlyCandidateStage(candidateStage);
 		          const skillCounts = careerOpsSkillCounts(Array.isArray(jobs) ? jobs : []);
-		          const scored = (Array.isArray(jobs) ? jobs : [])
+		          // 全量比對可達數萬筆，改用分批評分並在每批之間讓出事件迴圈，避免 UI 卡死；同時回報進度。
+		          const _active = (Array.isArray(jobs) ? jobs : [])
 		            .map((job, index) => normalizeCareerOpsJob(job, index))
-		            .filter(job => !job.isExpired)
-		            .map(normalized => {
+		            .filter(job => !job.isExpired);
+		          const scored = [];
+		          const SCORE_BATCH = 2000;
+		          for (let _i = 0; _i < _active.length; _i += SCORE_BATCH) {
+		            const _slice = _active.slice(_i, _i + SCORE_BATCH);
+		            for (const normalized of _slice) {
 		              normalized.jobKey = normalized.jobKey || careerOpsJobKey(normalized);
 		              const intel = careerOpsScoreJobAgainstProfile(normalized, profile);
-		              const staticScore = normalized.score === "" ? null : Number(normalized.score);
 		              const seniorityFit = careerOpsCandidateSeniorityFit(normalized, candidateStage);
 		              // 用精準 gated 評分（fit gate + 學歷路由）取代舊的 roleFit/skillCoverage 混合分數，避免分數擠在同一區間。
 		              const preciseResult = careerOpsScoreLocalJob(normalized, profile, skillCounts);
 		              const roleFit = Math.round(intel.dimensions.roleFit * 0.74 + seniorityFit.score * 0.26);
-		              return {
+		              scored.push({
 		                ...normalized,
 		                _roleFit: roleFit,
 		                _score: preciseResult.score,
@@ -19091,9 +19175,12 @@ Schema:
 		                _intel: intel,
 		                _candidateStage: candidateStage,
 		                _seniorityFit: seniorityFit
-		              };
-		            })
-		            .sort((a, b) => b._score - a._score);
+		              });
+		            }
+		            if (typeof progressCb === "function") { try { progressCb(Math.min(_active.length, _i + SCORE_BATCH), _active.length); } catch (e) {} }
+		            if (_i + SCORE_BATCH < _active.length) await new Promise(_r => setTimeout(_r, 0));
+		          }
+		          scored.sort((a, b) => b._score - a._score);
 
 		          const candidatePool = earlyCandidate
 		            ? scored.filter(job => job._seniorityFit?.suitable)
@@ -19109,16 +19196,13 @@ Schema:
 		              const strongScore = job._score >= 55;
 		              const entryStretchFit = candidateStage === "entry" && job._roleFit >= 74 && job._score >= 55;
 		              return strongScore && strongRoleFit && (!earlyCandidate || job._seniorityFit?.score >= 70 || entryStretchFit);
-		            })
-		            .slice(0, 25);
+		            });
 		          const layerAKeys = new Set(layerAJobs.map(job => job.jobKey || job.url));
 		          const layerBJobs = pool
-		            .filter(job => !layerAKeys.has(job.jobKey || job.url) && job._score >= 30 && job._roleFit >= 40)
-		            .slice(0, 40);
+		            .filter(job => !layerAKeys.has(job.jobKey || job.url) && job._score >= 30 && job._roleFit >= 40);
 		          const layerBKeys = new Set(layerBJobs.map(job => job.jobKey || job.url));
 		          const layerCJobs = pool
-		            .filter(job => !layerAKeys.has(job.jobKey || job.url) && !layerBKeys.has(job.jobKey || job.url))
-		            .slice(0, 30);
+		            .filter(job => !layerAKeys.has(job.jobKey || job.url) && !layerBKeys.has(job.jobKey || job.url));
 		          const profileSkills = careerOpsLocalProfileTerms(profile).skills;
 
 		          // 完整輕量清單（不截斷）：供四象限分組使用，讓每個象限能列出全部符合職缺再前端分頁。
@@ -19128,19 +19212,29 @@ Schema:
 		            if (job._score >= 30 && job._roleFit >= 40) return "B";
 		            return "C";
 		          };
-		          const allLight = pool.map(job => ({
-		            jobKey: job.jobKey || "",
-		            company: job.company || "",
-		            title: job.title || "",
-		            url: job.url || "",
-		            score: job._score,
-		            grade: job.grade || careerOpsLocalGrade(job._score),
-		            roleFit: job._roleFit,
-		            seniority: job._seniorityFit?.seniority || "",
-		            location: job.location || "",
-		            decision: careerOpsLocalDecision(job._score),
-		            layer: layerLabelOf(job)
-		          }));
+		          const allLight = pool.map(job => {
+		            const quad = careerOpsQuadrantScore(job, profile, quadrantKeywords);
+		            return {
+		              jobKey: job.jobKey || "",
+		              company: job.company || "",
+		              title: job.title || "",
+		              url: job.url || "",
+		              score: job._score,
+		              grade: job.grade || careerOpsLocalGrade(job._score),
+		              roleFit: job._roleFit,
+		              seniority: job._seniorityFit?.seniority || "",
+		              location: job.location || "",
+		              decision: careerOpsLocalDecision(job._score),
+		              layer: layerLabelOf(job),
+		              jobAxis: quad.jobAxis,
+		              companyAxis: quad.companyAxis,
+		              jobPass: quad.jobPass,
+		              companyPass: quad.companyPass,
+		              quadrant: quad.quadrant,
+		              titleHit: quad.titleHit,
+		              companyHit: quad.companyHit
+		            };
+		          });
 
 		          return {
 		            activeJobCount: scored.length,
@@ -19192,6 +19286,10 @@ Schema:
 		          if (!client || !user) return "";
 		          const now = new Date().toISOString();
 		          const snapshot = window.CV_CAREER_OPS_JOBS || {};
+		          // 四象限改用本地全量比對後，layerC 可能達數萬筆；雲端儲存僅保留可視化所需的上限筆數，
+		          // 避免單筆 insert 過大而失敗（完整四象限清單仍保留於前端記憶體）。
+		          const CLOUD_LAYER_CAP = 300;
+		          const cap = (arr) => Array.isArray(arr) ? arr.slice(0, CLOUD_LAYER_CAP) : arr;
 		          const { data, error } = await client
 		            .from("career_ops_analyses")
 		            .insert({
@@ -19201,9 +19299,9 @@ Schema:
 		              stage: "completed",
 		              progress: 100,
 		              summary_json: result.summary,
-		              layer_a_json: result.layerA,
-		              layer_b_json: result.layerB,
-		              layer_c_json: result.layerC,
+		              layer_a_json: cap(result.layerA),
+		              layer_b_json: cap(result.layerB),
+		              layer_c_json: cap(result.layerC),
 		              job_snapshot_hash: String(snapshot.extractedAt || snapshot.jobCount || now),
 		              started_at: now,
 		              completed_at: now
@@ -19233,33 +19331,6 @@ Schema:
 		          return { id: data[0].id, profile: data[0].profile_json || {} };
 		        }
 
-		        // 從履歷自動推導四象限種子：職位軸取目標職種／現職／角色，公司軸取經歷中最近一間非校園單位。
-		        // 只要能取到職位或公司其中之一就回傳（帶 _derived 標記），取不到才回 null（退回 Layer A/B/C）。
-		        function careerOpsDeriveSeedFromProfile(profile = {}) {
-		          const preferences = profile && typeof profile.preferences === "object" ? profile.preferences : {};
-		          const roles = careerOpsProfileArray(preferences.targetRoles || preferences.target_roles);
-		          const title = String(roles.find(Boolean) || profile.targetRole || profile.role || profile.title || "").trim();
-		          const schoolRe = /(高中|高職|國中|國小|大學|學院|學校|社團|校隊|club|school|university|college|coursework|課程|專題)/i;
-		          let company = "";
-		          const expItems = careerOpsValueArray(profile.experience || profile.workExperience || profile.employmentHistory || profile.careerTimeline);
-		          for (const item of expItems) {
-		            let c = "";
-		            if (item && typeof item === "object") {
-		              c = careerOpsStructuredText(item.company || item.organization || item.employer || item.institution || "").trim();
-		            } else {
-		              const parts = String(item || "").split(/[|｜]/).map(s => s.trim()).filter(Boolean);
-		              if (parts.length >= 2) c = parts[1].split(/[\/／]/)[0].trim();
-		            }
-		            if (c && !schoolRe.test(c)) { company = c; break; }
-		          }
-		          const seed = {};
-		          if (company) seed.company = company;
-		          if (title) seed.title = title;
-		          if (!seed.company && !seed.title) return null;
-		          seed._derived = true;
-		          return seed;
-		        }
-
 		        async function careerOpsRunLocalDeepFit(profile, profileId, options = {}) {
 		          const statusEl = options.statusEl || null;
 		          const setStatus = text => { if (statusEl) statusEl.textContent = text; };
@@ -19269,28 +19340,22 @@ Schema:
 		          // 簡歷比對同樣鎖定台灣就業市場，海外來源仍可從匯入入口個別評估。
 		          let jobs = allJobs.filter(job => careerOpsIsAnalysisCountryJob(job));
 		          if (!jobs.length) throw new Error(`職缺快照共 ${allJobs.length} 筆，但沒有台灣職缺可比對（分析已限縮台灣）。海外職缺仍可從匯入入口加入追蹤器後個別評估。`);
-		          // 若使用者填了「目標職種／關鍵字」，先用加權相似度把台灣職缺篩到最相關的前 N 筆再評分，
-		          // 避免每次都掃過全部台灣職缺；未填則維持原本全比對。
-		          const explicitSeed = options.targetSeed && (options.targetSeed.company || options.targetSeed.title)
+		          // 四象限模型：關鍵字（目標職種／公司）不再作為前置篩選，而是作為兩軸加權訊號。
+		          // 因此不再用相似度把職缺截斷，完整比對全部台灣職缺，交由象限評分排序。
+		          const targetSeed = options.targetSeed && (options.targetSeed.company || options.targetSeed.title)
 		            ? options.targetSeed : null;
-		          // 沒有手動填目標時，從履歷自動推導一個種子（職位＝目標職種／技能，公司＝經歷最近一間單位），
-		          // 讓四象限的「公司×職位」關鍵詞相似度比對在「只上傳履歷」時也能顯示，而不是退回 Layer A/B/C。
-		          const targetSeed = explicitSeed || careerOpsDeriveSeedFromProfile(profile);
+		          const quadKeywords = {
+		            title: (options.targetSeed && options.targetSeed.title) || "",
+		            company: (options.targetSeed && options.targetSeed.company) || ""
+		          };
 		          const twCount = jobs.length;
-		          if (targetSeed && typeof careerOpsRankBySimilarity === "function") {
-		            const seedLabel = [targetSeed.company, targetSeed.title].filter(Boolean).join(" / ");
-		            setStatus(`依「${seedLabel}」相似度篩選中... 共 ${twCount} 筆台灣職缺`);
-		            await new Promise(resolve => setTimeout(resolve, 0));
-		            const ranked = careerOpsRankBySimilarity(targetSeed, jobs, { limit: 10000, threshold: 0 });
-		            if (ranked.length) jobs = ranked.map(item => item.job);
-		          }
-		          const scopeNote = targetSeed
-		            ? `本機評分中... 已依目標篩出 ${jobs.length} 筆相似職缺（原台灣職缺 ${twCount} 筆）`
-		            : `本機評分中... ${jobs.length} 筆台灣職缺（已從 ${allJobs.length} 筆篩出）`;
+		          const scopeNote = `本機評分中... 全量比對 ${jobs.length} 筆台灣職缺（已從 ${allJobs.length} 筆篩出）`;
 		          setStatus(scopeNote);
 		          await new Promise(resolve => setTimeout(resolve, 0));
-		          const classified = careerOpsClassifyLocalJobs(jobs, profile);
-		          setStatus("整理 Layer A / B / C 結果...");
+		          const classified = await careerOpsClassifyLocalJobs(jobs, profile, quadKeywords, (done, total) => {
+		            setStatus(`本機評分中... 全量比對 ${done}/${total} 筆台灣職缺（已從 ${allJobs.length} 筆篩出）`);
+		          });
+		          setStatus("整理四象限結果...");
 		          const summary = {
 		            totalResults: classified.layerA.length + classified.layerB.length + classified.layerC.length,
 		            layerA: classified.layerA.length,
@@ -19303,19 +19368,15 @@ Schema:
 		            engine: "frontend-local-heuristic"
 		          };
 		          const result = { summary, layerA: classified.layerA, layerB: classified.layerB, layerC: classified.layerC };
-		          if (targetSeed) {
-		            // 四象限改吃「完整輕量清單」（全部符合職缺，不受 A/B/C 顯示上限截斷），
-		            // 每象限再由前端分頁顯示。
-		            const tr = careerOpsBuildTargetRanked(targetSeed, classified.allLight || [
-		              ...(classified.layerA || []),
-		              ...(classified.layerB || []),
-		              ...(classified.layerC || [])
-		            ]);
-		            result.targetSeed = targetSeed;
-		            result.targetRanked = tr.ranked;
-		            result.targetTierCounts = tr.counts;
-		            window._careerOpsQuadPage = [0, 0, 0, 0]; // 新分析重置每象限頁碼
-		          }
+		          // 四象限永遠建立（不再只在有目標關鍵字時才建），吃「完整輕量清單」全量分組，前端每象限分頁顯示。
+		          const quad = careerOpsBuildQuadrants(classified.allLight || []);
+		          result.targetSeed = targetSeed || quadKeywords;
+		          result.quadrantKeywords = quadKeywords;
+		          result.targetRanked = quad.ranked;
+		          result.targetTierCounts = quad.counts;
+		          summary.quadrantCounts = quad.counts;
+		          window._careerOpsQuadPage = [0, 0, 0, 0]; // 新分析重置每象限頁碼
+		          window._careerOpsQuadShown = [25, 25, 25, 25]; // 新分析重置每象限顯示筆數
 		          window.CV_CAREER_OPS_DEEP_FIT = result;
 		          window._careerOpsDeepFitSource = "user-upload";
 		          const analysisId = await careerOpsSaveLocalAnalysisToCloud(result, profileId);
@@ -19493,7 +19554,7 @@ Schema:
 	              staticStatusEl.style.display = "block";
 	              staticStatusEl.textContent = `已清除舊 Deep Fit / 示範快照畫面，下一次結果會以 ${file?.name || "這份履歷"} 重新產生。`;
 	            }
-	            if (careerOpsActiveTab === "deepfit") renderDeepFitDashboard();
+	            if (careerOpsActiveTab === "upload") renderDeepFitDashboard();
 	          }
 
 	          loadStaticBtn?.addEventListener("click", () => {
@@ -19517,7 +19578,7 @@ Schema:
 	            if (!window.confirm("這會切到示範快照結果，內容不會代表你目前上傳的履歷。要繼續嗎？")) return;
 	            window.CV_CAREER_OPS_DEEP_FIT = snapshot;
 	            window._careerOpsDeepFitSource = "static";
-	            careerOpsSetTab("deepfit");
+	            careerOpsSetTab("upload");
 	          });
 
 	          zone.addEventListener("dragover", e => { e.preventDefault(); zone.classList.add("dragover"); });
@@ -19639,7 +19700,7 @@ Schema:
 		              await careerOpsRunLocalDeepFit(profile, profileId, { statusEl, targetSeed });
 		              runBtn.textContent = "分析完成！查看結果";
 		              setCareerUploadStatus("分析完成：已產生本機職缺比對結果。", "success");
-		              careerOpsSetTab("deepfit");
+		              careerOpsSetTab("upload");
 		            } catch (err) {
 		              runBtn.textContent = "開始本機職缺比對";
 		              runBtn.disabled = false;
@@ -20582,7 +20643,82 @@ Schema:
 	        }
 
 	        // 目標優先分層：依「公司是否相同 + 職位關鍵字是否對應」把職缺分成四層（0 最高、3 最低）。
-	        const CAREER_OPS_TARGET_TIER_LABELS = ["對應公司 + 對應職位", "對應公司", "對應職位", "都不對應"];
+	        const CAREER_OPS_QUADRANT_THRESHOLDS = { job: 50, company: 50 };
+        const CAREER_OPS_QUADRANT_WEIGHTS = {
+          job: { roleFit: 0.42, cvMatch: 0.30, northStar: 0.20, effort: 0.08 },
+          company: { culture: 0.58, redFlags: 0.42 }
+        };
+        // 關鍵字命中/未命中對該軸的加權訊號（命中加分、未命中小幅扣分），不再當作前置過濾。
+        const CAREER_OPS_QUADRANT_KEYWORD = { bonus: 14, penalty: 8 };
+        const CAREER_OPS_QUADRANT_LABELS = [
+          "✅ 工作符合 · ✅ 公司符合",
+          "✅ 工作符合 · ❌ 公司待考量",
+          "❌ 工作待考量 · ✅ 公司符合",
+          "❌ 工作待考量 · ❌ 公司待考量"
+        ];
+        function careerOpsQuadrantColor(q) {
+          return ["#0a7d3e", "#1d4ed8", "#b45309", "#6b7280"][q] || "#6b7280";
+        }
+        function careerOpsQuadrantKeywordHit(keyword, haystack) {
+          const kw = String(keyword || "").toLowerCase().trim();
+          if (!kw) return false;
+          const hay = String(haystack || "").toLowerCase();
+          if (hay.includes(kw)) return true;
+          const parts = kw.split(/[\s,，、/|｜]+/).map(s => s.trim()).filter(s => s.length >= 2);
+          return parts.some(p => hay.includes(p));
+        }
+        // 兩軸評分公式：job 為已評分職缺（含 _preciseResult.dimensions / _roleFit），keywords = { title, company }。
+        function careerOpsQuadrantScore(job, profile, keywords) {
+          const dims = (job && job._preciseResult && job._preciseResult.dimensions) || (job && job.dimensions) || {};
+          const num = (v) => Math.max(0, Math.min(100, Number(v) || 0));
+          const roleFit = num(job && job._roleFit != null ? job._roleFit : dims.northStar?.roleFit);
+          const cvMatch = num(dims.cvMatch?.score);
+          const northStar = num(dims.northStar?.score);
+          const effort = num(dims.effort?.score);
+          const culture = num(dims.culture?.score);
+          const redFlags = num(dims.redFlags?.score);
+          const jw = CAREER_OPS_QUADRANT_WEIGHTS.job;
+          const cw = CAREER_OPS_QUADRANT_WEIGHTS.company;
+          let jobAxis = roleFit * jw.roleFit + cvMatch * jw.cvMatch + northStar * jw.northStar + effort * jw.effort;
+          let companyAxis = culture * cw.culture + redFlags * cw.redFlags;
+          const kw = keywords || {};
+          const titleKw = String(kw.title || "").trim();
+          const companyKw = String(kw.company || "").trim();
+          let titleHit = null, companyHit = null;
+          if (titleKw) {
+            titleHit = careerOpsQuadrantKeywordHit(titleKw, `${job.title || ""} ${job.description || ""}`);
+            jobAxis += titleHit ? CAREER_OPS_QUADRANT_KEYWORD.bonus : -CAREER_OPS_QUADRANT_KEYWORD.penalty;
+          }
+          if (companyKw) {
+            companyHit = careerOpsQuadrantKeywordHit(companyKw, `${job.company || ""}`);
+            companyAxis += companyHit ? CAREER_OPS_QUADRANT_KEYWORD.bonus : -CAREER_OPS_QUADRANT_KEYWORD.penalty;
+          }
+          jobAxis = Math.max(0, Math.min(100, Math.round(jobAxis)));
+          companyAxis = Math.max(0, Math.min(100, Math.round(companyAxis)));
+          const jobPass = jobAxis >= CAREER_OPS_QUADRANT_THRESHOLDS.job;
+          const companyPass = companyAxis >= CAREER_OPS_QUADRANT_THRESHOLDS.company;
+          const quadrant = jobPass ? (companyPass ? 0 : 1) : (companyPass ? 2 : 3);
+          return { jobAxis, companyAxis, jobPass, companyPass, quadrant, titleHit, companyHit };
+        }
+        // 把「完整輕量清單」（每筆已帶 quadrant/jobAxis/companyAxis）分組成四象限並排序，不截斷。
+        function careerOpsBuildQuadrants(lightItems) {
+          const ranked = [];
+          for (const item of (lightItems || [])) {
+            if (!item) continue;
+            const q = Math.min(3, Math.max(0, Number(item.quadrant) || 0));
+            ranked.push({ ...item, targetTier: q, targetTierLabel: CAREER_OPS_QUADRANT_LABELS[q] });
+          }
+          ranked.sort((a, b) =>
+            a.targetTier - b.targetTier ||
+            ((Number(b.jobAxis) + Number(b.companyAxis)) - (Number(a.jobAxis) + Number(a.companyAxis))) ||
+            ((Number(b.score) || 0) - (Number(a.score) || 0))
+          );
+          const counts = [0, 0, 0, 0];
+          for (const item of ranked) counts[item.targetTier] += 1;
+          return { ranked, counts };
+        }
+        // 目標優先分層（舊版，保留備用）
+        const CAREER_OPS_TARGET_TIER_LABELS = ["對應公司 + 對應職位", "對應公司", "對應職位", "都不對應"];
 	        function careerOpsTargetTierColor(tier) {
 	          return ["#0a7d3e", "#1d4ed8", "#b45309", "#6b7280"][tier] || "#6b7280";
 	        }
@@ -21138,7 +21274,7 @@ Schema:
 	        }
 
 	        function renderCareerOpsDashboard(message = "") {
-	          try { if (typeof careerOpsSetTab === "function") careerOpsSetTab("tracker"); } catch {}
+	          try { if (typeof careerOpsSetTab === "function") careerOpsSetTab("upload"); } catch {}
 	          if (!careerOpsReportsLoaded) loadCareerOpsReports();
 	          const allJobs = loadCareerOpsJobs().sort(careerOpsJobSort);
 	          if (!allJobs.length) {
