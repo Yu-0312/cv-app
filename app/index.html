@@ -5778,6 +5778,42 @@
       width: min(680px, 100%);
       margin: 0 auto;
     }
+    /* ── 履歷比對步驟式介面 ── */
+    .resume-compare-workspace { width: min(920px, 100%); margin: 0 auto; padding: 8px 0 40px; }
+    .resume-compare-head { margin-bottom: 18px; }
+    .resume-compare-title { font-size: 20px; font-weight: 800; color: var(--ink); margin-bottom: 4px; }
+    .resume-compare-sub { font-size: 13px; color: var(--muted); line-height: 1.55; }
+    .resume-steps {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin-bottom: 22px;
+    }
+    @media (max-width: 720px) { .resume-steps { grid-template-columns: 1fr; } }
+    .resume-step-tab {
+      display: flex; align-items: center; gap: 10px;
+      text-align: left; padding: 12px 14px;
+      border: 1.5px solid var(--line); border-radius: 12px;
+      background: rgba(255,255,255,0.55); cursor: pointer;
+      transition: border-color .15s ease, background .15s ease;
+    }
+    .resume-step-tab:hover { border-color: rgba(15,118,110,0.28); }
+    .resume-step-tab.active { background: #edf8f6; border-color: rgba(15,118,110,0.35); box-shadow: inset 0 -3px 0 var(--accent); }
+    .resume-step-num {
+      flex: none; width: 26px; height: 26px; border-radius: 999px;
+      display: grid; place-items: center; font-weight: 800; font-size: 13px;
+      background: rgba(148,163,184,0.22); color: var(--muted);
+    }
+    .resume-step-tab.active .resume-step-num { background: var(--accent); color: #fff; }
+    .resume-step-copy { display: flex; flex-direction: column; line-height: 1.25; }
+    .resume-step-copy strong { font-size: 13.5px; color: var(--ink); }
+    .resume-step-copy small { font-size: 11px; color: var(--muted); }
+    .resume-step-panel { display: none; }
+    .resume-step-panel.active { display: block; }
+    .resume-step-nav {
+      width: min(680px, 100%); margin: 16px auto 0;
+      display: flex; align-items: center; justify-content: space-between; gap: 12px;
+    }
     .career-upload-title {
       margin: 0 0 8px;
       color: var(--ink);
@@ -6616,6 +6652,12 @@
       color: #fff;
     }
 
+    .app-tab.is-unavailable { opacity: 0.62; }
+    .app-tab.is-unavailable .app-tab-icon {
+      background: rgba(148, 163, 184, 0.22);
+      color: var(--muted);
+    }
+
     .nav-context-actions {
       display: grid;
       grid-template-columns: 1fr;
@@ -7305,11 +7347,18 @@
             <span>章節、圖片、成果頁</span>
           </span>
         </button>
-        <button class="app-tab" data-tab="career" type="button">
+        <button class="app-tab" data-tab="resume" type="button">
+          <span class="app-tab-icon" aria-hidden="true">RC</span>
+          <span class="app-tab-copy">
+            <strong>履歷比對</strong>
+            <span>上傳履歷、四象限職缺比對</span>
+          </span>
+        </button>
+        <button class="app-tab is-unavailable" data-tab="career" type="button">
           <span class="app-tab-icon" aria-hidden="true">AI</span>
           <span class="app-tab-copy">
-            <strong>Career Ops</strong>
-            <span>AI 分析、職缺適配、求職信</span>
+            <strong>求職顧問</strong>
+            <span>AI 分析、職缺適配、求職信（暫停使用）</span>
           </span>
         </button>
         <button class="app-tab" data-tab="gsat" type="button">
@@ -7444,10 +7493,10 @@
               <strong>建立或修改履歷</strong>
               <small>模板、區塊、即時預覽</small>
             </button>
-            <button class="function-item feature-card-action" data-guide-tab="career" type="button">
-              <span class="function-item-tag">AI</span>
-              <strong>用求職顧問分析履歷</strong>
-              <small>直接分析適合崗位</small>
+            <button class="function-item feature-card-action" data-guide-tab="resume" type="button">
+              <span class="function-item-tag">RC</span>
+              <strong>上傳履歷比對職缺</strong>
+              <small>四象限工作／公司符合度</small>
             </button>
             <button class="function-item feature-card-action" data-guide-tab="gsat" type="button">
               <span class="function-item-tag">GSAT</span>
@@ -8494,7 +8543,12 @@
     </div><!-- /page-portfolio -->
 
     <div id="page-career" class="app-page">
-      <div class="career-workspace">
+      <div id="careerUnavailableNotice" style="max-width:560px;margin:80px auto;padding:40px 32px;text-align:center;border:1.5px solid var(--line);border-radius:16px;background:var(--bg);">
+        <div style="font-size:32px;margin-bottom:12px;">🛠️</div>
+        <div style="font-size:20px;font-weight:800;color:var(--ink);margin-bottom:10px;">求職顧問暫時停用</div>
+        <div style="font-size:14px;color:var(--muted);line-height:1.6;">職位適配分析、推薦崗位、STAR 面試、求職信與批次職缺追蹤正在維護中，暫時不可使用。功能機制仍保留，稍後將重新開放。<br>需要比對職缺，請改用「履歷比對」功能。</div>
+      </div>
+      <div class="career-workspace" style="display:none;" inert aria-hidden="true">
 
         <!-- LEFT PANEL -->
         <div class="career-panel">
@@ -8570,16 +8624,6 @@
             <div class="career-cv-note">求職顧問會直接讀取 CV 履歷頁已填寫的摘要、技能、經歷、教育與專案資料。</div>
           </div>
 
-          <!-- API key -->
-          <div>
-            <div class="career-panel-label">AI API Key</div>
-            <input id="claudeApiKey" class="career-api-input" type="password" placeholder="sk-ant- / sk- / AIza / gsk_..." autocomplete="off" />
-            <div class="career-api-note" style="margin-top:8px;">
-              支援 Anthropic、OpenAI、Google Gemini、Groq，系統自動識別。<br>
-              API Key 僅存於目前頁籤；呼叫模型時只會送到對應 AI provider，不會寫入 Supabase、Railway 或 GitHub。
-            </div>
-          </div>
-
           <!-- Analyze button -->
           <button id="careerAnalyzeBtn" class="career-analyze-btn" data-mode="fit" type="button">
             分析職位適配度
@@ -8592,7 +8636,6 @@
           <div class="career-ops-tabs" id="careerOpsTabs">
             <button class="career-ops-tab is-disabled" type="button" data-career-ops-tab="tracker" disabled aria-disabled="true" title="暫停使用">職缺追蹤（暫停使用）</button>
             <button class="career-ops-tab is-disabled" type="button" data-career-ops-tab="deepfit" disabled aria-disabled="true" title="暫停使用">Deep Fit 分析（暫停使用）</button>
-            <button class="career-ops-tab active" type="button" data-career-ops-tab="upload">履歷上傳</button>
           </div>
 
           <!-- Tab: Job Tracker (existing) -->
@@ -8609,57 +8652,109 @@
 
           <!-- Tab: Deep Fit Dashboard -->
           <div id="careerDeepFitArea" hidden></div>
-
-          <!-- Tab: Resume Upload -->
-          <div id="careerUploadArea" hidden>
-            <div class="career-upload-card">
-              <h3 class="career-upload-title">上傳履歷，本機不限數量比對台灣職缺</h3>
-              <p class="career-upload-copy">系統會使用左側 API Key 在瀏覽器解析履歷，再直接於前端「全量」比對職缺資料庫，並依「工作符合度」與「公司符合度」兩軸把結果分成四象限（每象限可翻頁瀏覽全部符合職缺）。</p>
-              <label class="career-upload-zone" id="careerUploadZone">
-                <input type="file" id="careerResumeFile" accept=".pdf,.txt,.md,.docx" />
-                <svg class="career-upload-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-                  <polyline points="14,2 14,8 20,8"/>
-                  <line x1="12" y1="18" x2="12" y2="12"/>
-                  <polyline points="9,15 12,12 15,15"/>
-                </svg>
-                <div class="career-upload-label">拖曳履歷至此</div>
-                <div class="career-upload-sub">支援 PDF、TXT、Markdown（最大 10MB）</div>
-                <span class="career-upload-cta">選擇檔案</span>
-              </label>
-              <div id="careerSelectedResumeFile" class="career-selected-file" style="display:none;"></div>
-              <div id="careerUploadStatus" class="career-upload-status" role="status" aria-live="polite" style="display:none;"></div>
-              <div id="careerUploadProfilePreview" class="career-upload-profile-preview" style="display:none;"></div>
-              <div class="career-upload-target" style="margin-top:12px;background:rgba(255,255,255,0.55);border:1px solid var(--line);border-radius:12px;padding:12px 14px;">
-                <div class="career-panel-label" style="margin-bottom:6px;">目標職種／公司關鍵字（選填）</div>
-                <p style="font-size:12px;color:var(--muted);margin:0 0 8px;line-height:1.5;">關鍵字不再用來「先篩選」職缺，而是作為兩軸的加權訊號：職種關鍵字加權「工作符合軸」、公司關鍵字加權「公司符合軸」。無論是否填寫，都會全量比對所有未過期的台灣職缺。</p>
-                <div class="compact-field-grid">
-                  <input id="careerUploadTargetTitle" type="text" placeholder="目標職種／關鍵字，例如：前端工程師" />
-                  <input id="careerUploadTargetCompany" type="text" placeholder="目標公司（選填）" />
-                </div>
-              </div>
-              <div class="career-upload-actions">
-                <button id="careerParseResumeBtn" class="career-link-btn" type="button" style="display:none;">解析已選履歷</button>
-                <button id="careerRunAnalysisBtn" class="career-analyze-btn" type="button" style="display:none;">開始本機職缺比對</button>
-              </div>
-              <details class="career-upload-dev-snapshot">
-                <summary>示範快照（非你的履歷，預設不使用）</summary>
-                <div class="career-upload-dev-title">開發 / 本機快照</div>
-                <p class="career-upload-dev-copy">這只會讀取專案內建的舊 Deep Fit 快照，用來檢查版面；不會混入目前上傳履歷的分析結果。</p>
-                <div class="career-upload-dev-actions">
-                  <button id="careerLoadStaticDeepFit" class="career-link-btn" type="button">讀取示範快照</button>
-                  <button id="careerViewStaticDeepFit" class="career-link-btn" type="button" style="display:none;">查看示範快照</button>
-                </div>
-                <div id="careerStaticSnapshotStatus" class="career-upload-static-status" style="display:none;"></div>
-              </details>
-            </div>
-            <!-- 比對結果（四象限）直接顯示在履歷上傳分頁內 -->
-            <div id="careerUploadResultsArea" class="career-upload-results"></div>
-          </div>
         </div>
 
       </div>
     </div><!-- /page-career -->
+
+    <div id="page-resume" class="app-page">
+      <div class="resume-compare-workspace">
+        <header class="resume-compare-head">
+          <div>
+            <div class="resume-compare-title">履歷比對</div>
+            <div class="resume-compare-sub">上傳履歷，本機在瀏覽器「全量」比對台灣職缺，依「工作符合度 × 公司符合度」分成四象限（每象限可翻頁瀏覽全部符合職缺）。</div>
+          </div>
+        </header>
+
+        <!-- Step tabs -->
+        <div class="resume-steps" id="resumeSteps" role="tablist" aria-label="履歷比對步驟">
+          <button class="resume-step-tab active" type="button" data-resume-step="1"><span class="resume-step-num">1</span><span class="resume-step-copy"><strong>上傳與解析</strong><small>上傳履歷、用你的 API Key 解析</small></span></button>
+          <button class="resume-step-tab" type="button" data-resume-step="2"><span class="resume-step-num">2</span><span class="resume-step-copy"><strong>目標職種／公司</strong><small>選填關鍵字並開始比對</small></span></button>
+          <button class="resume-step-tab" type="button" data-resume-step="3"><span class="resume-step-num">3</span><span class="resume-step-copy"><strong>四象限比對結果</strong><small>瀏覽比對結果</small></span></button>
+        </div>
+
+        <!-- Step 1: 上傳與解析 -->
+        <section class="resume-step-panel active" data-resume-panel="1">
+          <div class="career-upload-card">
+            <p class="career-upload-copy">系統會使用下方 API Key 在瀏覽器解析履歷，再於下一步全量比對職缺資料庫。解析完成後即可前往步驟 2 設定目標並開始比對。</p>
+            <label class="career-upload-zone" id="careerUploadZone">
+              <input type="file" id="careerResumeFile" accept=".pdf,.txt,.md,.docx" />
+              <svg class="career-upload-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                <polyline points="14,2 14,8 20,8"/>
+                <line x1="12" y1="18" x2="12" y2="12"/>
+                <polyline points="9,15 12,12 15,15"/>
+              </svg>
+              <div class="career-upload-label">拖曳履歷至此</div>
+              <div class="career-upload-sub">支援 PDF、TXT、Markdown（最大 10MB）</div>
+              <span class="career-upload-cta">選擇檔案</span>
+            </label>
+            <div id="careerSelectedResumeFile" class="career-selected-file" style="display:none;"></div>
+            <div id="careerUploadStatus" class="career-upload-status" role="status" aria-live="polite" style="display:none;"></div>
+            <div id="careerUploadProfilePreview" class="career-upload-profile-preview" style="display:none;"></div>
+
+            <!-- API key -->
+            <div style="margin-top:14px;">
+              <div class="career-panel-label">AI API Key</div>
+              <input id="claudeApiKey" class="career-api-input" type="password" placeholder="sk-ant- / sk- / AIza / gsk_..." autocomplete="off" />
+              <div class="career-api-note" style="margin-top:8px;">
+                支援 Anthropic、OpenAI、Google Gemini、Groq，系統自動識別。<br>
+                API Key 僅存於目前頁籤；呼叫模型時只會送到對應 AI provider，不會寫入 Supabase、Railway 或 GitHub。
+              </div>
+            </div>
+
+            <div class="career-upload-actions">
+              <button id="careerParseResumeBtn" class="career-link-btn" type="button" style="display:none;">解析已選履歷</button>
+            </div>
+            <details class="career-upload-dev-snapshot">
+              <summary>示範快照（非你的履歷，預設不使用）</summary>
+              <div class="career-upload-dev-title">開發 / 本機快照</div>
+              <p class="career-upload-dev-copy">這只會讀取專案內建的舊 Deep Fit 快照，用來檢查版面；不會混入目前上傳履歷的分析結果。</p>
+              <div class="career-upload-dev-actions">
+                <button id="careerLoadStaticDeepFit" class="career-link-btn" type="button">讀取示範快照</button>
+                <button id="careerViewStaticDeepFit" class="career-link-btn" type="button" style="display:none;">查看示範快照</button>
+              </div>
+              <div id="careerStaticSnapshotStatus" class="career-upload-static-status" style="display:none;"></div>
+            </details>
+          </div>
+          <div class="resume-step-nav">
+            <span></span>
+            <button class="resume-step-next career-link-btn" type="button" data-resume-step="2">下一步：設定目標職種／公司 →</button>
+          </div>
+        </section>
+
+        <!-- Step 2: 目標職種／公司關鍵字 -->
+        <section class="resume-step-panel" data-resume-panel="2">
+          <div class="career-upload-card">
+            <div class="career-upload-target" style="background:rgba(255,255,255,0.55);border:1px solid var(--line);border-radius:12px;padding:12px 14px;">
+              <div class="career-panel-label" style="margin-bottom:6px;">目標職種／公司關鍵字（選填）</div>
+              <p style="font-size:12px;color:var(--muted);margin:0 0 8px;line-height:1.5;">職種關鍵字作為「工作符合軸」的加權訊號。<strong>目標公司</strong>則採硬性比對：一旦填寫，只有公司名稱命中（支援中英別名，如台積電／TSMC／台灣積體電路）的職缺，才能進入「公司符合」象限；未命中者一律歸到「公司待考量」。無論是否填寫，都會全量比對所有未過期的台灣職缺。</p>
+              <div class="compact-field-grid">
+                <input id="careerUploadTargetTitle" type="text" placeholder="目標職種／關鍵字，例如：前端工程師" />
+                <input id="careerUploadTargetCompany" type="text" placeholder="目標公司（選填），例如：台積電 / TSMC" />
+              </div>
+            </div>
+            <div class="career-upload-actions">
+              <button id="careerRunAnalysisBtn" class="career-analyze-btn" type="button" style="display:none;">開始本機職缺比對</button>
+            </div>
+            <p class="career-cv-note" id="resumeStep2Hint">請先在步驟 1 上傳並解析履歷；解析完成後，這裡會出現「開始本機職缺比對」按鈕。</p>
+          </div>
+          <div class="resume-step-nav">
+            <button class="resume-step-back career-link-btn" type="button" data-resume-step="1">← 上一步</button>
+            <button class="resume-step-next career-link-btn" type="button" data-resume-step="3">前往四象限結果 →</button>
+          </div>
+        </section>
+
+        <!-- Step 3: 四象限比對結果 -->
+        <section class="resume-step-panel" data-resume-panel="3">
+          <div id="careerUploadResultsArea" class="career-upload-results"></div>
+          <div class="resume-step-nav">
+            <button class="resume-step-back career-link-btn" type="button" data-resume-step="2">← 回到目標設定</button>
+            <span></span>
+          </div>
+        </section>
+      </div>
+    </div><!-- /page-resume -->
 
     <div id="page-gsat" class="app-page">
       <div id="gsatUnavailableNotice" style="max-width:560px;margin:80px auto;padding:40px 32px;text-align:center;border:1.5px solid var(--line);border-radius:16px;background:var(--bg);">
@@ -15559,7 +15654,7 @@
       }
 
       /* ── TAB SWITCHING ── */
-      const APP_TAB_IDS = ["home", "cv", "portfolio", "career", "gsat"];
+      const APP_TAB_IDS = ["home", "cv", "portfolio", "resume", "career", "gsat"];
 
       function normalizeTabId(tabId) {
         return document.getElementById("page-" + tabId) ? tabId : "home";
@@ -15614,9 +15709,17 @@
           label: "下載學習歷程 PDF",
           run: () => clickActionTarget("pfDownloadBtn")
         },
+        resume: {
+          label: "上傳履歷比對",
+          run: () => {
+            const step1 = document.querySelector('[data-resume-step="1"]');
+            if (step1) step1.click();
+            document.getElementById("careerResumeFile")?.click();
+          }
+        },
         career: {
-          label: "分析職位適配度",
-          run: () => clickActionTarget("careerAnalyzeBtn")
+          label: "求職顧問暫停使用",
+          run: () => {}
         },
         gsat: {
           label: "開始落點分析",
@@ -19655,6 +19758,9 @@ Schema:
 		              window._careerOpsLastAnalysisId = "";
 		              if (parseBtn) parseBtn.style.display = "none";
 		              if (runBtn) runBtn.style.display = "block";
+		              var _rs2h = document.getElementById("resumeStep2Hint");
+		              if (_rs2h) _rs2h.style.display = "none";
+		              if (window.resumeStepSet) window.resumeStepSet(2);
 		            } catch (err) {
 		              showCareerSelectedFile(file, "解析失敗");
 		              setCareerUploadStatus("解析失敗：" + err.message, "error");
@@ -19699,14 +19805,37 @@ Schema:
 		              if (upTitle) targetSeed.title = upTitle;
 		              await careerOpsRunLocalDeepFit(profile, profileId, { statusEl, targetSeed });
 		              runBtn.textContent = "分析完成！查看結果";
+		              runBtn.disabled = false;
 		              setCareerUploadStatus("分析完成：已產生本機職缺比對結果。", "success");
 		              careerOpsSetTab("upload");
+		              if (window.resumeStepSet) window.resumeStepSet(3);
 		            } catch (err) {
 		              runBtn.textContent = "開始本機職缺比對";
 		              runBtn.disabled = false;
 		              setCareerUploadStatus("本機分析失敗：" + err.message, "error");
 		            }
 		          });
+	        })();
+
+	        // 履歷比對步驟式導覽：控制 #page-resume 內三個步驟分頁（① 上傳與解析 → ② 目標職種／公司 → ③ 四象限結果）。
+	        (function initResumeSteps() {
+	          function resumeStepSet(step) {
+	            const n = String(step);
+	            document.querySelectorAll('.resume-step-tab').forEach(function (btn) {
+	              btn.classList.toggle('active', btn.dataset.resumeStep === n);
+	            });
+	            document.querySelectorAll('.resume-step-panel').forEach(function (panel) {
+	              panel.classList.toggle('active', panel.dataset.resumePanel === n);
+	            });
+	            if (n === '3' && typeof renderDeepFitDashboard === 'function') {
+	              try { renderDeepFitDashboard(); } catch (e) {}
+	            }
+	          }
+	          window.resumeStepSet = resumeStepSet;
+	          document.addEventListener('click', function (e) {
+	            const btn = e.target.closest('[data-resume-step]');
+	            if (btn) { e.preventDefault(); resumeStepSet(btn.dataset.resumeStep); }
+	          });
 	        })();
 
 	        function careerOpsSupabaseReady() {
@@ -20538,7 +20667,7 @@ Schema:
 	        // 每組列出彼此等價的中英文名稱／常見寫法；公司字串只要包含其中任一關鍵字即視為同一家。
 	        // 關鍵字皆採用夠獨特的字串，避免把不同公司誤併在一起。
 	        const CAREER_OPS_COMPANY_ALIASES = [
-	          { id: "tsmc", keys: ["台積電", "台積", "tsmc", "taiwan semiconductor"] },
+	          { id: "tsmc", keys: ["台積電", "台積", "tsmc", "taiwan semiconductor", "台灣積體電路"] },
 	          { id: "foxconn", keys: ["鴻海", "富士康", "foxconn", "hon hai"] },
 	          { id: "mediatek", keys: ["聯發科", "mediatek"] },
 	          { id: "delta-electronics", keys: ["台達電", "台達", "delta electronics"] },
@@ -20571,13 +20700,38 @@ Schema:
 	          { id: "meta", keys: ["facebook", "臉書", "meta platforms"] },
 	          { id: "nvidia", keys: ["nvidia", "輝達"] },
 	        ];
+	        // 全形→半形正規化：把全形英數與符號（U+FF01–FF5E）轉半形，全形空白（U+3000）轉一般空白，
+	        // 再統一小寫。這樣「ＴＳＭＣ」「台積電（全形）」也能對到「tsmc」。
+	        function careerOpsNormalizeWidth(raw) {
+	          return String(raw || "")
+	            .replace(/[\uFF01-\uFF5E]/g, ch => String.fromCharCode(ch.charCodeAt(0) - 0xFEE0))
+	            .replace(/\u3000/g, " ")
+	            .toLowerCase()
+	            .trim();
+	        }
 	        function careerOpsCompanyCanonical(raw) {
-	          const s = String(raw || "").toLowerCase();
+	          const s = careerOpsNormalizeWidth(raw);
 	          if (!s) return null;
 	          for (const group of CAREER_OPS_COMPANY_ALIASES) {
-	            for (const key of group.keys) { if (s.includes(key.toLowerCase())) return group.id; }
+	            for (const key of group.keys) { if (s.includes(careerOpsNormalizeWidth(key))) return group.id; }
 	          }
 	          return null;
+	        }
+	        // 公司「硬性比對」：目標公司一旦填寫，只有名稱真正對到的職缺才算命中（給四象限公司軸用）。
+	        // 1) 若目標對得到已知別名群組（如台積電→tsmc），職缺公司必須也對到同一群組才算命中；
+	        //    這能讓「台積電 / TSMC / 台灣積體電路 / Taiwan Semiconductor」互通，同時排除其他公司。
+	        // 2) 若目標不在別名表內，退回正規化後的名稱比對（相等或彼此包含），並套用全形/大小寫正規化。
+	        function careerOpsCompanyHardMatch(targetCompany, jobCompany) {
+	          const target = careerOpsNormalizeWidth(targetCompany);
+	          if (!target) return false;
+	          const canonTarget = careerOpsCompanyCanonical(targetCompany);
+	          if (canonTarget) return careerOpsCompanyCanonical(jobCompany) === canonTarget;
+	          const a = careerOpsSimNormCompany(careerOpsNormalizeWidth(targetCompany));
+	          const b = careerOpsSimNormCompany(careerOpsNormalizeWidth(jobCompany));
+	          if (!a || !b) return false;
+	          if (a === b) return true;
+	          if (a.length >= 2 && (b.includes(a) || a.includes(b))) return true;
+	          return false;
 	        }
 	        function careerOpsSimCompanyScore(seed, job) {
 	          const ca = careerOpsCompanyCanonical(seed), cb = careerOpsCompanyCanonical(job);
@@ -20689,16 +20843,25 @@ Schema:
             titleHit = careerOpsQuadrantKeywordHit(titleKw, `${job.title || ""} ${job.description || ""}`);
             jobAxis += titleHit ? CAREER_OPS_QUADRANT_KEYWORD.bonus : -CAREER_OPS_QUADRANT_KEYWORD.penalty;
           }
+          // 公司軸改為「硬性比對」：一旦填了目標公司，公司名稱沒命中（含中英別名／全形大小寫）就不能進入
+          // 「公司符合」象限——直接把公司軸壓到門檻以下；命中則給壓倒性權重，確保落在「公司符合」象限。
+          let companyForced = false;
           if (companyKw) {
-            companyHit = careerOpsQuadrantKeywordHit(companyKw, `${job.company || ""}`);
-            companyAxis += companyHit ? CAREER_OPS_QUADRANT_KEYWORD.bonus : -CAREER_OPS_QUADRANT_KEYWORD.penalty;
+            companyHit = careerOpsCompanyHardMatch(companyKw, job.company);
+            companyForced = true;
+            if (companyHit) {
+              companyAxis = Math.max(companyAxis, CAREER_OPS_QUADRANT_THRESHOLDS.company) + CAREER_OPS_QUADRANT_KEYWORD.bonus;
+            } else {
+              companyAxis = Math.min(companyAxis, CAREER_OPS_QUADRANT_THRESHOLDS.company - 1);
+            }
           }
           jobAxis = Math.max(0, Math.min(100, Math.round(jobAxis)));
           companyAxis = Math.max(0, Math.min(100, Math.round(companyAxis)));
           const jobPass = jobAxis >= CAREER_OPS_QUADRANT_THRESHOLDS.job;
-          const companyPass = companyAxis >= CAREER_OPS_QUADRANT_THRESHOLDS.company;
+          // 硬性比對模式下，公司是否通過完全由名稱命中決定，不受分數四捨五入邊界影響。
+          const companyPass = companyForced ? Boolean(companyHit) : companyAxis >= CAREER_OPS_QUADRANT_THRESHOLDS.company;
           const quadrant = jobPass ? (companyPass ? 0 : 1) : (companyPass ? 2 : 3);
-          return { jobAxis, companyAxis, jobPass, companyPass, quadrant, titleHit, companyHit };
+          return { jobAxis, companyAxis, jobPass, companyPass, quadrant, titleHit, companyHit, companyForced };
         }
         // 把「完整輕量清單」（每筆已帶 quadrant/jobAxis/companyAxis）分組成四象限並排序，不截斷。
         function careerOpsBuildQuadrants(lightItems) {
@@ -22140,9 +22303,13 @@ Schema:
           document.querySelector("[data-tab='career']")?.addEventListener("click", () => {
             syncCareerAdvisorState();
           });
+          // 履歷比對頁也需要還原 API Key（履歷解析使用同一個 #claudeApiKey 欄位）。
+          document.querySelector("[data-tab='resume']")?.addEventListener("click", () => {
+            syncCareerAdvisorState();
+          });
 
           window.addEventListener("cv:tab-changed", (event) => {
-            if (event.detail?.tabId === "career") syncCareerAdvisorState();
+            if (event.detail?.tabId === "career" || event.detail?.tabId === "resume") syncCareerAdvisorState();
           });
 
           window.addEventListener("cv:supabase-auth-changed", () => {
