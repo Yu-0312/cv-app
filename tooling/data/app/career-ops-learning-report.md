@@ -1,31 +1,31 @@
 # Career Ops Learning Report
 
-- Generated: 2026-07-06T23:30:09.142Z
-- Active jobs: 86611
-- Positive signals: 13181
+- Generated: 2026-07-07T02:46:52.647Z
+- Active jobs: 86607
+- Positive signals: 13180
 - Negative signals: 0
 - Source coverage: 425 sources / 10557 queries / markets tw, cn, jp, kr, sg, global, us, ca, uk, ie, de, nl, fr, es, it, se, dk, no, pl, pt, au, nz, in, br, mx, ch, fi, cz, za, id, my, ph, vn, th, il, hk, ae
 
 ## Preferred Skills
 
-- in: 45996.9
-- years: 34016.2
-- api: 30932
-- API: 30844.8
-- product: 24267.2
-- building: 23279.5
-- design: 21796
-- growth: 20166
-- operations: 18775.8
-- from: 17768.9
-- to: 17293.4
-- sales: 16767
-- engineer: 16294.4
-- performance: 14926.1
-- analytics: 14806.3
-- Analytics: 14142.9
-- python: 10883.7
-- system: 10639
+- in: 46011.8
+- years: 34081.1
+- api: 30931.5
+- API: 30844.3
+- product: 24203.4
+- building: 23214.2
+- design: 21834.3
+- growth: 20052.9
+- operations: 18772.6
+- from: 17690.9
+- to: 17277.2
+- sales: 16676.6
+- engineer: 16307.4
+- performance: 14869
+- analytics: 14820.3
+- Analytics: 14146.2
+- python: 10890.5
+- system: 10653.1
 
 ## Avoid Signals
 
@@ -33,18 +33,18 @@
 
 ## Preferred Companies
 
-- SpaceX: 3513.8
-- Databricks Greenhouse: 2453.6
-- Walmart: 2064.8
-- GE Vernova: 1891.5
+- SpaceX: 3528.6
+- Databricks Greenhouse: 2459.6
+- Walmart: 1939.4
+- GE Vernova: 1895.4
 - Yourator Taiwan Job Search: 1861.8
-- Bank of America: 1680.4
-- Stripe Greenhouse: 1604.9
-- Anthropic Greenhouse: 1451.9
+- Bank of America: 1684.2
+- Stripe Greenhouse: 1612.5
+- Anthropic Greenhouse: 1452
 - Canonical Greenhouse: 1270.8
-- MongoDB Greenhouse: 1192.9
-- Uber: 1101.3
-- Airbnb Greenhouse: 758.6
+- MongoDB Greenhouse: 1189.5
+- Uber: 1111.8
+- GitLab Greenhouse: 749.6
 
 ## Next Strategy
 

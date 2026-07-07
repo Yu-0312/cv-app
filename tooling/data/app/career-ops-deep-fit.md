@@ -1,6 +1,6 @@
 # Career Ops Deep Fit Report
 
-Generated: 2026-07-06T23:30:05.045Z
+Generated: 2026-07-07T02:46:48.599Z
 LLM provider: none
 Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 exploratory)
 
@@ -774,12 +774,6 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Keyword hits: API, remote
 - Gaps: go, rest, growth
 
-### GitLab Greenhouse - Senior Site Reliability Engineer, Tenant Services: Geo
-- Score: 83 | Grade: B | RoleFit: 62
-- Decision: pursue selectively
-- Keyword hits: remote, dashboard
-- Gaps: python, go, aws, kubernetes, terraform, growth
-
 ### GitLab Greenhouse - Senior Software Engineer (RoR/Go), SSCS: Authentication
 - Score: 83 | Grade: B | RoleFit: 62
 - Decision: pursue selectively
@@ -966,6 +960,12 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Keyword hits: API, remote
 - Gaps: sql, aws, azure, rest
 
+### Uber - Application Developer - Atlassian
+- Score: 82 | Grade: B | RoleFit: 62
+- Decision: pursue selectively
+- Keyword hits: Analytics, API, remote, dashboard, analytics
+- Gaps: rest, llm, agents, prompt engineering, operations
+
 ## Layer C — Exploratory Signals (roleFit < 40)
 
 - **Stripe Greenhouse — Full-Stack Engineer** (score: 85) | Top gap: python
@@ -981,12 +981,13 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - **Ramp Ashby — Software Engineer, Frontend** (score: 85) | Top gap: none
 - **PostHog Ashby — Developer who connects with other developers** (score: 85) | Top gap: go
 - **PostHog Ashby — Technical Account Executive** (score: 85) | Top gap: go
-- **Uber — Sr Software Engineer, Frontend (Web)** (score: 84) | Top gap: angular
 - **Uber — Principal Engineer - Client and Product Foundations** (score: 84) | Top gap: none
+- **Uber — Sr Software Engineer, Frontend (Web)** (score: 84) | Top gap: angular
 - **Pilotly — Product Engineer II** (score: 84) | Top gap: aws
 - **Equinix, Inc — Staff Software Engineer (Full-Stack)** (score: 84) | Top gap: python
 - **Coinbase — Senior Software Engineer, Frontend (Consumer - Trading)** (score: 84) | Top gap: growth
 - **Allstate — Product Engineer Senior Java Springboot** (score: 84) | Top gap: python
+- **Equinix, Inc — Staff Software Engineer** (score: 84) | Top gap: python
 - **GitLab Greenhouse — Engineering Manager, Continuous Delivery** (score: 84) | Top gap: go
 - **Databricks Greenhouse — Manager, Delivery Solutions Architects - Digital Native Business** (score: 84) | Top gap: python
 - **Figma Greenhouse — Software Engineer, Full Stack** (score: 84) | Top gap: python
@@ -997,5 +998,4 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - **Reddit Greenhouse — Senior Software Engineer, GraphQL** (score: 84) | Top gap: go
 - **Asana Greenhouse — Staff Software Engineer, API** (score: 84) | Top gap: agents
 - **ElevenLabs Ashby — Deployment Strategist - North America** (score: 84) | Top gap: python
-- **ElevenLabs Ashby — Deployment Strategist - Europe** (score: 84) | Top gap: python
 

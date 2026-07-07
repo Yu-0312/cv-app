@@ -1,6 +1,6 @@
 # Career Ops Deep Research
 
-Generated: 2026-07-06T23:29:47.934Z
+Generated: 2026-07-07T02:46:31.401Z
 Search provider: none
 Queries: 13
 Evidence items: 24
@@ -14,7 +14,7 @@ Dossiers: 8
 
 ### Evidence
 - source-page: https://job-boards.greenhouse.io/gitlab/jobs/8488961002 — Job Application for Staff Backend Engineer (Go), Continuous Delivery at GitLab Staff Backend Engineer (Go), Continuous Delivery Remote, India Apply GitLab is the intelligent orches
-- source-page: https://boards.greenhouse.io/gitlab — Jobs at GitLab Current openings at GitLab Search Department Select... 145 jobs Engineering AI Engineering Job Backend Engineer (Ruby), AI Engineering: Duo Agent Platform Tools New 
+- source-page: https://boards.greenhouse.io/gitlab — Jobs at GitLab Current openings at GitLab Search Department Select... 144 jobs Engineering AI Engineering Job Backend Engineer (Ruby), AI Engineering: Duo Agent Platform Tools New 
 
 ### Research Questions
 - What business unit owns the Staff Backend Engineer (Go), Continuous Delivery role?
@@ -59,7 +59,7 @@ Dossiers: 8
 - Signals: AI / data / platform signal, growth or funding signal, remote or hybrid signal
 
 ### Evidence
-- source-page: https://boards.greenhouse.io/gitlab — Jobs at GitLab Current openings at GitLab Search Department Select... 145 jobs Engineering AI Engineering Job Backend Engineer (Ruby), AI Engineering: Duo Agent Platform Tools New 
+- source-page: https://boards.greenhouse.io/gitlab — Jobs at GitLab Current openings at GitLab Search Department Select... 144 jobs Engineering AI Engineering Job Backend Engineer (Ruby), AI Engineering: Duo Agent Platform Tools New 
 
 ### Research Questions
 - What business unit owns the Senior / Staff Product Engineer role?
@@ -79,7 +79,7 @@ Dossiers: 8
 - Signals: AI / data / platform signal, growth or funding signal, remote or hybrid signal
 
 ### Evidence
-- source-page: https://boards.greenhouse.io/gitlab — Jobs at GitLab Current openings at GitLab Search Department Select... 145 jobs Engineering AI Engineering Job Backend Engineer (Ruby), AI Engineering: Duo Agent Platform Tools New 
+- source-page: https://boards.greenhouse.io/gitlab — Jobs at GitLab Current openings at GitLab Search Department Select... 144 jobs Engineering AI Engineering Job Backend Engineer (Ruby), AI Engineering: Duo Agent Platform Tools New 
 
 ### Research Questions
 - What business unit owns the Senior / Staff Product Engineer role?
@@ -100,7 +100,7 @@ Dossiers: 8
 
 ### Evidence
 - source-page: https://job-boards.greenhouse.io/gitlab/jobs/8488961002 — Job Application for Staff Backend Engineer (Go), Continuous Delivery at GitLab Staff Backend Engineer (Go), Continuous Delivery Remote, India Apply GitLab is the intelligent orches
-- source-page: https://boards.greenhouse.io/gitlab — Jobs at GitLab Current openings at GitLab Search Department Select... 145 jobs Engineering AI Engineering Job Backend Engineer (Ruby), AI Engineering: Duo Agent Platform Tools New 
+- source-page: https://boards.greenhouse.io/gitlab — Jobs at GitLab Current openings at GitLab Search Department Select... 144 jobs Engineering AI Engineering Job Backend Engineer (Ruby), AI Engineering: Duo Agent Platform Tools New 
 - source-page: https://job-boards.greenhouse.io/canonical/jobs/5146620 — Job Application for Security Software Engineer at Canonical Security Software Engineer Home based - Worldwide Submit application Canonical is a leading provider of open source soft
 
 ### Research Questions
@@ -122,7 +122,7 @@ Dossiers: 8
 
 ### Evidence
 - source-page: https://job-boards.greenhouse.io/gitlab/jobs/8488961002 — Job Application for Staff Backend Engineer (Go), Continuous Delivery at GitLab Staff Backend Engineer (Go), Continuous Delivery Remote, India Apply GitLab is the intelligent orches
-- source-page: https://boards.greenhouse.io/gitlab — Jobs at GitLab Current openings at GitLab Search Department Select... 145 jobs Engineering AI Engineering Job Backend Engineer (Ruby), AI Engineering: Duo Agent Platform Tools New 
+- source-page: https://boards.greenhouse.io/gitlab — Jobs at GitLab Current openings at GitLab Search Department Select... 144 jobs Engineering AI Engineering Job Backend Engineer (Ruby), AI Engineering: Duo Agent Platform Tools New 
 - source-page: https://job-boards.greenhouse.io/canonical/jobs/5146620 — Job Application for Security Software Engineer at Canonical Security Software Engineer Home based - Worldwide Submit application Canonical is a leading provider of open source soft
 - source-page: https://boards.greenhouse.io/canonical?cv_market=global — Jobs at Canonical Current openings at Canonical Featured Jobs Alliances Field Engineer Home based - Worldwide Canonical is a leading provider of open source software and operating 
 - source-page: https://boards.greenhouse.io/canonical?cv_market=us — Jobs at Canonical Current openings at Canonical Featured Jobs Alliances Field Engineer Home based - Worldwide Canonical is a leading provider of open source software and operating 
@@ -146,7 +146,7 @@ Dossiers: 8
 
 ### Evidence
 - source-page: https://job-boards.greenhouse.io/gitlab/jobs/8488961002 — Job Application for Staff Backend Engineer (Go), Continuous Delivery at GitLab Staff Backend Engineer (Go), Continuous Delivery Remote, India Apply GitLab is the intelligent orches
-- source-page: https://boards.greenhouse.io/gitlab — Jobs at GitLab Current openings at GitLab Search Department Select... 145 jobs Engineering AI Engineering Job Backend Engineer (Ruby), AI Engineering: Duo Agent Platform Tools New 
+- source-page: https://boards.greenhouse.io/gitlab — Jobs at GitLab Current openings at GitLab Search Department Select... 144 jobs Engineering AI Engineering Job Backend Engineer (Ruby), AI Engineering: Duo Agent Platform Tools New 
 
 ### Research Questions
 - What business unit owns the Staff Product Engineer (São Paulo) role?
@@ -166,7 +166,7 @@ Dossiers: 8
 - Signals: AI / data / platform signal, growth or funding signal, remote or hybrid signal
 
 ### Evidence
-- source-page: https://boards.greenhouse.io/gitlab — Jobs at GitLab Current openings at GitLab Search Department Select... 145 jobs Engineering AI Engineering Job Backend Engineer (Ruby), AI Engineering: Duo Agent Platform Tools New 
+- source-page: https://boards.greenhouse.io/gitlab — Jobs at GitLab Current openings at GitLab Search Department Select... 144 jobs Engineering AI Engineering Job Backend Engineer (Ruby), AI Engineering: Duo Agent Platform Tools New 
 
 ### Research Questions
 - What business unit owns the Senior Systems Engineer role?

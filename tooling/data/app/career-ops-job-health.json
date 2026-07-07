@@ -1,10 +1,10 @@
 {
   "source": "career-ops-health-monitor",
-  "checkedAt": "2026-07-06T23:30:13.247Z",
+  "checkedAt": "2026-07-07T02:46:56.783Z",
   "threshold": 0.25,
   "health": {
-    "total": 86611,
-    "active": 86611,
+    "total": 86607,
+    "active": 86607,
     "expired": 0,
     "stale": 0,
     "expiredRate": 0,
@@ -12,7 +12,7 @@
     "avgActiveScore": 61,
     "bySource": {
       "GitLab Greenhouse": {
-        "total": 145,
+        "total": 144,
         "expired": 0
       },
       "Canonical Greenhouse": {
@@ -32,7 +32,7 @@
         "expired": 0
       },
       "The Muse Global Remote Jobs": {
-        "total": 1814,
+        "total": 1815,
         "expired": 0
       },
       "Vercel Greenhouse": {
@@ -52,15 +52,15 @@
         "expired": 0
       },
       "The Muse Global Software Engineering": {
-        "total": 1737,
+        "total": 1734,
         "expired": 0
       },
       "Stripe Greenhouse": {
-        "total": 442,
+        "total": 444,
         "expired": 0
       },
       "Airbnb Greenhouse": {
-        "total": 183,
+        "total": 181,
         "expired": 0
       },
       "Anthropic Greenhouse": {
@@ -80,7 +80,7 @@
         "expired": 0
       },
       "Databricks Greenhouse": {
-        "total": 629,
+        "total": 630,
         "expired": 0
       },
       "Figma Greenhouse": {
@@ -92,7 +92,7 @@
         "expired": 0
       },
       "Asana Greenhouse": {
-        "total": 113,
+        "total": 112,
         "expired": 0
       },
       "The Muse Global Public Jobs": {
@@ -100,7 +100,7 @@
         "expired": 0
       },
       "The Muse Global Data Analytics": {
-        "total": 1827,
+        "total": 1826,
         "expired": 0
       },
       "Perplexity Ashby": {
@@ -136,11 +136,11 @@
         "expired": 0
       },
       "MongoDB Greenhouse": {
-        "total": 326,
+        "total": 325,
         "expired": 0
       },
       "Roblox Greenhouse": {
-        "total": 194,
+        "total": 196,
         "expired": 0
       },
       "NVIDIA Workday": {
@@ -152,7 +152,7 @@
         "expired": 0
       },
       "Micron Workday": {
-        "total": 74,
+        "total": 68,
         "expired": 0
       },
       "MyCareersFuture Singapore Product": {
@@ -191,6 +191,10 @@
         "total": 340,
         "expired": 0
       },
+      "Microsoft Beijing": {
+        "total": 3,
+        "expired": 0
+      },
       "Yourator Taiwan Job Search": {
         "total": 1742,
         "expired": 0
@@ -207,12 +211,8 @@
         "total": 6,
         "expired": 0
       },
-      "Microsoft Beijing": {
-        "total": 3,
-        "expired": 0
-      },
       "Daijob Japan Broad Listings": {
-        "total": 95,
+        "total": 100,
         "expired": 0
       },
       "Samsung Research": {

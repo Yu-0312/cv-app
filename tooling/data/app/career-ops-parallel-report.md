@@ -1,6 +1,6 @@
 # Career Ops Parallel Worker Report
 
-Generated: 2026-07-06T23:30:00.794Z
+Generated: 2026-07-07T02:46:44.442Z
 Concurrency: 4
 Jobs processed: 50
 Errors: 0
@@ -581,12 +581,12 @@ Errors: 0
 - Never store API keys or credentials in job metadata.
 - Record only application status and user-approved notes.
 
-## P1 Uber - Sr Software Engineer, Frontend (Web)
+## P1 Uber - Principal Engineer - Client and Product Foundations
 
 - Score: 84
 - Grade: B
 - Research evidence: 0
-- Keywords: JavaScript, TypeScript, React, CSS, API, Performance Optimization, frontend, engineer, years, building
+- Keywords: API, engineer, years, product, in, design, system
 - Compensation leverage: -
 - Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
@@ -596,12 +596,12 @@ Errors: 0
 - Never store API keys or credentials in job metadata.
 - Record only application status and user-approved notes.
 
-## P1 Uber - Principal Engineer - Client and Product Foundations
+## P1 Uber - Sr Software Engineer, Frontend (Web)
 
 - Score: 84
 - Grade: B
 - Research evidence: 0
-- Keywords: API, engineer, years, product, in, design, system
+- Keywords: JavaScript, TypeScript, React, CSS, API, Performance Optimization, frontend, engineer, years, building
 - Compensation leverage: -
 - Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
@@ -663,6 +663,21 @@ Errors: 0
 - Research evidence: 0
 - Keywords: JavaScript, API, engineer, years, building, product, in, component
 - Compensation leverage: high
+- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
+
+### Apply Agent Guardrails
+- Never submit without explicit user confirmation.
+- Never fabricate work authorization, salary history, degree, or experience.
+- Never store API keys or credentials in job metadata.
+- Record only application status and user-approved notes.
+
+## P1 Equinix, Inc - Staff Software Engineer
+
+- Score: 84
+- Grade: B
+- Research evidence: 0
+- Keywords: TypeScript, React, API, frontend, engineer, years, building, product, in
+- Compensation leverage: -
 - Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
 ### Apply Agent Guardrails
@@ -738,21 +753,6 @@ Errors: 0
 - Research evidence: 0
 - Keywords: engineer, years, building, product, in, design
 - Compensation leverage: -
-- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
-
-### Apply Agent Guardrails
-- Never submit without explicit user confirmation.
-- Never fabricate work authorization, salary history, degree, or experience.
-- Never store API keys or credentials in job metadata.
-- Record only application status and user-approved notes.
-
-## P1 Canonical Greenhouse - Software Engineer - Python and K8s
-
-- Score: 84
-- Grade: B
-- Research evidence: 10
-- Keywords: engineer, building, product, in, design, architecture
-- Compensation leverage: high
 - Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
 ### Apply Agent Guardrails

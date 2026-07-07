@@ -1,11 +1,11 @@
 # Career Ops Intelligence Report
 
-Generated: 2026-07-06T23:29:26.817Z
+Generated: 2026-07-07T02:46:11.442Z
 
-- Active jobs: 86611
+- Active jobs: 86607
 - Expired jobs: 0
-- Duplicate groups: 3577
-- Jobs without enough description: 2289
+- Duplicate groups: 3574
+- Jobs without enough description: 2283
 - Rubric: Career Ops 10-Dimension Rubric
 
 ## Rubric Weights
@@ -22,55 +22,55 @@ Generated: 2026-07-06T23:29:26.817Z
 
 ## Top Skills
 - api: 9527
-- growth: 5066
-- operations: 4474
-- sales: 3917
-- analytics: 3629
-- python: 2697
-- go: 2297
+- growth: 5036
+- operations: 4477
+- sales: 3884
+- analytics: 3630
+- python: 2700
+- go: 2311
 - excel: 1766
-- sql: 1740
-- aws: 1465
-- machine learning: 1195
-- azure: 1162
+- sql: 1738
+- aws: 1468
+- machine learning: 1193
+- azure: 1163
 
 ## Missing High-Demand Skills
-- growth: 5066
-- operations: 4474
-- sales: 3917
-- python: 2697
-- go: 2297
+- growth: 5036
+- operations: 4477
+- sales: 3884
+- python: 2700
+- go: 2311
 - excel: 1766
-- sql: 1740
-- aws: 1465
-- machine learning: 1195
-- azure: 1162
+- sql: 1738
+- aws: 1468
+- machine learning: 1193
+- azure: 1163
 
 ## Global Skill Gap Priority (weighted by job score)
-- growth: 7467.5
-- operations: 6558.2
-- sales: 5735.6
-- python: 4037.9
-- go: 3432.3
-- sql: 2601.1
-- excel: 2569
-- aws: 2191.3
-- machine learning: 1791.8
-- azure: 1735.8
-- agents: 1499.5
-- spark: 1433.9
+- growth: 7426.4
+- operations: 6560.8
+- sales: 5692.5
+- python: 4042.1
+- go: 3449.8
+- sql: 2597.7
+- excel: 2567.9
+- aws: 2195.5
+- machine learning: 1788.9
+- azure: 1737.2
+- agents: 1514.5
+- spark: 1435.5
 
 ## Role Families
-- Backend: 81740
-- Other: 2004
+- Backend: 81743
+- Other: 2010
 - Frontend: 957
-- AI / Data: 920
+- AI / Data: 922
 - Sales: 358
-- Marketing: 211
-- Product: 150
-- Design: 130
-- Operations: 78
-- Internship: 42
+- Marketing: 187
+- Product: 153
+- Design: 133
+- Operations: 77
+- Internship: 46
 
 ## Recommended Search Queries
 - Frontend Engineer
