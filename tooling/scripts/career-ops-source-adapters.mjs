@@ -504,19 +504,52 @@ function uniqueDetailLinks(html, baseUrl, pattern) {
   return links;
 }
 
+// 以有界並行度跑一組非同步工作，保留輸入順序回傳結果。concurrency=1 等同原本的序列行為。
+async function mapWithConcurrency(items, concurrency, worker) {
+  const limit = Math.max(1, Number(concurrency) || 1);
+  const results = new Array(items.length);
+  let cursor = 0;
+  async function runner() {
+    while (cursor < items.length) {
+      const index = cursor++;
+      results[index] = await worker(items[index], index);
+    }
+  }
+  await Promise.all(Array.from({ length: Math.min(limit, items.length || 1) }, runner));
+  return results;
+}
+
 async function scrapeDetailLinks(links, source, options, toolkit, adapterId) {
-  const jobs = [];
-  for (const url of links) {
+  // 逐筆抓內頁預設為序列（concurrency=1），保持既有各 adapter 行為不變。
+  // 對靜態、可容忍並行的站（如 yes123 的 sitemap 內頁），可用 source.detailConcurrency 開啟有界並行以大幅縮短時間。
+  const concurrency = Math.max(1, Number(source.detailConcurrency ?? options.detailConcurrency ?? 1) || 1);
+  const chunks = await mapWithConcurrency(links, concurrency, async (url) => {
     try {
       if (typeof toolkit.scrapeJobPage === "function") {
-        jobs.push(...await toolkit.scrapeJobPage({ ...source, url, type: "job", source: sourceName(source) }, options, `adapter:${adapterId}`));
-      } else {
-        const html = await toolkit.fetchText(url, options.timeoutMs);
-        jobs.push(...htmlJobsFromPage(html, source, toolkit, url, `adapter:${adapterId}`));
+        return await toolkit.scrapeJobPage({ ...source, url, type: "job", source: sourceName(source) }, options, `adapter:${adapterId}`);
       }
-    } catch {}
-  }
+      const html = await toolkit.fetchText(url, options.timeoutMs);
+      return htmlJobsFromPage(html, source, toolkit, url, `adapter:${adapterId}`);
+    } catch {
+      return [];
+    }
+  });
+  const jobs = [];
+  for (const part of chunks) if (Array.isArray(part)) jobs.push(...part);
   return jobs;
+}
+
+// TaiwanJobs 政府 API 的 CSV 標題含中文括號說明，例如 "OCCU_DESC（職務名稱）"。
+// 這裡把括號（全形（）或半形()）之後的說明去掉，讓欄位鍵回到純代碼 OCCU_DESC，
+// normalizeTaiwanJobsRow 才讀得到值。同時保留原始鍵，避免影響其他讀取方式。
+function remapTaiwanJobsRow(row) {
+  const out = {};
+  for (const [key, value] of Object.entries(row || {})) {
+    const base = String(key).split(/[（(]/)[0].trim();
+    if (base && !(base in out)) out[base] = value;
+    out[key] = value;
+  }
+  return out;
 }
 
 function normalizeTaiwanJobsRow(row, source, toolkit) {
@@ -1169,14 +1202,16 @@ export const SOURCE_ADAPTERS = [
     },
     async scrape(source, options, toolkit) {
       // TaiwanJobs 是政府公開資料（無反爬、欄位結構完整），是最可靠的台灣真實職缺來源。
-      // 不設硬上限：count 直接用 maxDiscovered，API 有多少回多少（越多越好），若回傳較少會自動取到多少算多少。
-      const max = sourceMax(source, options, 5000);
+      // 不設硬上限：count 直接用 maxDiscovered（預設極大），API 有多少回多少（越多越好）。
+      // CSV 標題含中文括號說明，先用 remapTaiwanJobsRow 還原欄位鍵再正規化。
+      const max = sourceMax(source, options, 500000, Number.MAX_SAFE_INTEGER);
       const apiUrl = addSearchParams(source.apiUrl || source.url || "https://free.taiwanjobs.gov.tw/WebService_Taipei/Webservice.ashx", {
         count: max,
         T: "CSV"
       });
       const csv = await toolkit.fetchText(apiUrl, options.timeoutMs);
-      return parseCsvRows(csv).slice(0, max).map((row) => normalizeTaiwanJobsRow(row, source, toolkit));
+      const rows = parseCsvRows(csv).map((row) => remapTaiwanJobsRow(row));
+      return rows.map((row) => normalizeTaiwanJobsRow(row, source, toolkit));
     }
   },
   {
@@ -1565,8 +1600,38 @@ export const SOURCE_ADAPTERS = [
       return source.adapter === "yes123" || hostMatches(source.url || source.apiUrl, /(^|\.)yes123\.com\.tw$/i);
     },
     async scrape(source, options, toolkit) {
-      // yes123 為 ASP 搜尋頁、無乾淨 JSON API，採「搜尋頁探索連結 → 逐筆抓內頁」的 HTML 路線（同 boss-zhipin/58）。
-      return scrapeHtmlCareerAdapter(source, options, toolkit, "yes123", /(joblist_detail|job_detail|joboffer)/i);
+      // yes123 的搜尋頁/API 有反爬，但 sitemap_index.xml 是靜態 XML（11 個子 sitemap，各約 5000 筆職缺內頁）。
+      // 策略：走 sitemap 收集 job.asp 內頁連結 → 逐筆抓內頁的 JobPosting JSON-LD（title/company/location 齊全）。
+      const sitemapSource = {
+        ...source,
+        url: source.sitemapUrl || "https://www.yes123.com.tw/sitemap_index.xml",
+        jobUrlPattern: source.jobUrlPattern || "/wk_index/job\\.asp",
+        maxSitemapFiles: source.maxSitemapFiles ?? 30
+      };
+      // 先用 sitemap 快速收齊「全部」職缺內頁 URL（只解析 XML，不逐筆抓，很快）。
+      const allSource = { ...sitemapSource, maxDiscovered: 100000 };
+      const entries = await collectSitemapJobEntries(allSource, options);
+      if (!entries.length) return [];
+
+      // yes123 只容忍序列抓取（並行會被限流卡住），單次全抓 55k 需數小時，不切實際。
+      // 因此每次只抓一個「輪轉視窗」：以時間推導起點，讓每天多次排程各自覆蓋不同切片，
+      // 幾天內把全部 URL 掃過一輪並持續刷新；DB 端靠 merge/lifecycle 累積成完整覆蓋。
+      const window = Math.max(1, Number(source.rotateWindow ?? source.maxDiscovered ?? 3000) || 3000);
+      if (window >= entries.length) {
+        // 視窗涵蓋全部：直接序列抓完整批。
+        const detailedAll = await scrapeDetailLinks(entries.map((e) => e.loc), source, options, toolkit, "yes123");
+        return detailedAll.length ? detailedAll : entries.map((entry) => normalizeSitemapJob(entry, source, toolkit));
+      }
+      const stepMs = Math.max(1, Number(source.rotateStepMinutes ?? 240) || 240) * 60 * 1000;
+      const tick = Math.floor(Date.now() / stepMs);
+      const start = ((tick * window) % entries.length + entries.length) % entries.length;
+      const windowLinks = [];
+      for (let i = 0; i < window; i += 1) windowLinks.push(entries[(start + i) % entries.length].loc);
+
+      const detailed = await scrapeDetailLinks(windowLinks, source, options, toolkit, "yes123");
+      // 內頁若因暫時性阻擋抓不到結構化資料，至少保留該視窗的 URL 級職缺，避免整批歸零。
+      if (detailed.length) return detailed;
+      return windowLinks.map((loc) => normalizeSitemapJob({ loc }, source, toolkit));
     }
   },
   {
