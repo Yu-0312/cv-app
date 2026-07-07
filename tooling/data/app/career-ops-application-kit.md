@@ -1,6 +1,6 @@
 # Career Ops Application Kit
 
-Generated: 2026-07-07T02:46:24.880Z
+Generated: 2026-07-07T08:01:58.313Z
 Jobs: 12
 
 ## Pipeline
@@ -532,136 +532,6 @@ Alex Chen
 - Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.
 - Use competing priorities and role fit, not personal need, as the negotiation frame.
 
-## Allstate - Lead AI Cloud Platform Engineer
-
-- Priority: P0
-- Score: 86/A
-- Subject: Lead AI Cloud Platform Engineer application - Allstate
-
-- Block G: High Confidence
-- Rating: 4.4/5.0
-
-### ATS Keyword Injection
-- Archetype: Agentic / Automation
-- Coverage: 100%
-- JD Keywords: Analytics, API, engineer, years, product, in, design, owning
-- 在 Professional Summary 中自然帶入：Analytics、API、engineer、years、product
-- 使用職位語言：「Agentic / Automation」方向的動詞和術語
-- 【你已有但此 JD 未要求】可視情況選擇性提及：JavaScript、TypeScript、React、Next.js、CSS
-- Missing (do NOT fabricate): JavaScript, TypeScript, React, Next.js, CSS, Tailwind, Accessibility, Figma
-
-### Apply Checklist
-- Open the source URL and confirm the role is still active.
-- Generate or refresh the tailored ATS PDF from this job.
-- Mirror these JD keywords honestly in your CV: Analytics, API, engineer, years, product, in, design, owning
-- Do not overclaim missing areas: JavaScript, TypeScript, React, Next.js, CSS, Tailwind
-- Log status, recruiter/contact, and next follow-up date in the tracker.
-
-### Outreach Email
-```text
-Hi Allstate team,
-
-I am Alex Chen, and I am interested in the Lead AI Cloud Platform Engineer role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.
-
-The role stood out because it maps closely to my experience with Analytics, API, engineer, years, product.
-
-I would appreciate the chance to share how my experience can support the team. Thank you for your time.
-
-Best,
-Alex Chen
-```
-
-### Follow-up
-Timing: 3-5 business days after applying or the last recruiter interaction.
-```text
-Hi Allstate team,
-
-I wanted to follow up on my application for the Lead AI Cloud Platform Engineer role. I remain interested and would be glad to provide any additional context about my background.
-
-Thank you again for your time.
-
-Best,
-Alex Chen
-```
-
-### Interview Prep
-- Prepare a 60-second story for why Allstate and why Lead AI Cloud Platform Engineer.
-- Prepare evidence for: Analytics, API, engineer, years, product, in.
-- Prepare one STAR story about execution under ambiguity.
-- Prepare one STAR story about collaboration and tradeoff decisions.
-- Prepare questions about team priorities, success metrics, and hiring timeline.
-
-### Negotiation Prep
-- Wait for a clear offer before anchoring compensation.
-- Ask for total compensation breakdown, work mode, title, level, review cycle, and start date.
-- Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.
-- Use competing priorities and role fit, not personal need, as the negotiation frame.
-
-## Esri - Sr. Product Engineer - Web Services
-
-- Priority: P0
-- Score: 86/A
-- Subject: Sr. Product Engineer - Web Services application - Esri
-
-- Block G: High Confidence
-- Rating: 4.4/5.0
-
-### ATS Keyword Injection
-- Archetype: AI Platform / LLMOps
-- Coverage: 100%
-- JD Keywords: JavaScript, TypeScript, API, engineer, years, product, in, component
-- 在 Professional Summary 中自然帶入：JavaScript、TypeScript、API、engineer、years
-- 使用職位語言：「AI Platform / LLMOps」方向的動詞和術語
-- 【你已有但此 JD 未要求】可視情況選擇性提及：React、Next.js、CSS、Tailwind、Accessibility
-- Missing (do NOT fabricate): React, Next.js, CSS, Tailwind, Accessibility, Analytics, Figma, Performance Optimization
-
-### Apply Checklist
-- Open the source URL and confirm the role is still active.
-- Generate or refresh the tailored ATS PDF from this job.
-- Mirror these JD keywords honestly in your CV: JavaScript, TypeScript, API, engineer, years, product, in, component
-- Do not overclaim missing areas: React, Next.js, CSS, Tailwind, Accessibility, Analytics
-- Log status, recruiter/contact, and next follow-up date in the tracker.
-
-### Outreach Email
-```text
-Hi Esri team,
-
-I am Alex Chen, and I am interested in the Sr. Product Engineer - Web Services role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.
-
-The role stood out because it maps closely to my experience with JavaScript, TypeScript, API, engineer, years.
-
-I would appreciate the chance to share how my experience can support the team. Thank you for your time.
-
-Best,
-Alex Chen
-```
-
-### Follow-up
-Timing: 3-5 business days after applying or the last recruiter interaction.
-```text
-Hi Esri team,
-
-I wanted to follow up on my application for the Sr. Product Engineer - Web Services role. I remain interested and would be glad to provide any additional context about my background.
-
-Thank you again for your time.
-
-Best,
-Alex Chen
-```
-
-### Interview Prep
-- Prepare a 60-second story for why Esri and why Sr. Product Engineer - Web Services.
-- Prepare evidence for: JavaScript, TypeScript, API, engineer, years, product.
-- Prepare one STAR story about execution under ambiguity.
-- Prepare one STAR story about collaboration and tradeoff decisions.
-- Prepare questions about team priorities, success metrics, and hiring timeline.
-
-### Negotiation Prep
-- Wait for a clear offer before anchoring compensation.
-- Ask for total compensation breakdown, work mode, title, level, review cycle, and start date.
-- Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.
-- Use competing priorities and role fit, not personal need, as the negotiation frame.
-
 ## GitLab Greenhouse - Senior Backend Engineer(Go), Continuous Delivery
 
 - Priority: P0
@@ -782,6 +652,136 @@ Alex Chen
 ### Interview Prep
 - Prepare a 60-second story for why GitLab Greenhouse and why VP of Product Security.
 - Prepare evidence for: API, building, product, in, design, architecture.
+- Prepare one STAR story about execution under ambiguity.
+- Prepare one STAR story about collaboration and tradeoff decisions.
+- Prepare questions about team priorities, success metrics, and hiring timeline.
+
+### Negotiation Prep
+- Wait for a clear offer before anchoring compensation.
+- Ask for total compensation breakdown, work mode, title, level, review cycle, and start date.
+- Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.
+- Use competing priorities and role fit, not personal need, as the negotiation frame.
+
+## Canonical Greenhouse - Web Frontend Engineer - JS, CSS, React, Flutter
+
+- Priority: P0
+- Score: 86/A
+- Subject: Web Frontend Engineer - JS, CSS, React, Flutter application - Canonical Greenhouse
+
+- Block G: High Confidence
+- Rating: 4.4/5.0
+
+### ATS Keyword Injection
+- Archetype: Frontend Engineer
+- Coverage: 100%
+- JD Keywords: TypeScript, React, CSS, Accessibility, API, frontend, engineer, accessible
+- 在 Professional Summary 中自然帶入：TypeScript、React、CSS、Accessibility、API
+- 使用職位語言：「Frontend Engineer」方向的動詞和術語
+- 【你已有但此 JD 未要求】可視情況選擇性提及：JavaScript、Next.js、Tailwind、Analytics、Figma
+- Missing (do NOT fabricate): JavaScript, Next.js, Tailwind, Analytics, Figma, Performance Optimization, Design Systems
+
+### Apply Checklist
+- Open the source URL and confirm the role is still active.
+- Generate or refresh the tailored ATS PDF from this job.
+- Mirror these JD keywords honestly in your CV: TypeScript, React, CSS, Accessibility, API, frontend, engineer, accessible
+- Do not overclaim missing areas: JavaScript, Next.js, Tailwind, Analytics, Figma, Performance Optimization
+- Log status, recruiter/contact, and next follow-up date in the tracker.
+
+### Outreach Email
+```text
+Hi Canonical Greenhouse team,
+
+I am Alex Chen, and I am interested in the Web Frontend Engineer - JS, CSS, React, Flutter role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.
+
+The role stood out because it maps closely to my experience with TypeScript, React, CSS, Accessibility, API.
+
+I would appreciate the chance to share how my experience can support the team. Thank you for your time.
+
+Best,
+Alex Chen
+```
+
+### Follow-up
+Timing: 3-5 business days after applying or the last recruiter interaction.
+```text
+Hi Canonical Greenhouse team,
+
+I wanted to follow up on my application for the Web Frontend Engineer - JS, CSS, React, Flutter role. I remain interested and would be glad to provide any additional context about my background.
+
+Thank you again for your time.
+
+Best,
+Alex Chen
+```
+
+### Interview Prep
+- Prepare a 60-second story for why Canonical Greenhouse and why Web Frontend Engineer - JS, CSS, React, Flutter.
+- Prepare evidence for: TypeScript, React, CSS, Accessibility, API, frontend.
+- Prepare one STAR story about execution under ambiguity.
+- Prepare one STAR story about collaboration and tradeoff decisions.
+- Prepare questions about team priorities, success metrics, and hiring timeline.
+
+### Negotiation Prep
+- Wait for a clear offer before anchoring compensation.
+- Ask for total compensation breakdown, work mode, title, level, review cycle, and start date.
+- Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.
+- Use competing priorities and role fit, not personal need, as the negotiation frame.
+
+## Vercel Greenhouse - Site Engineer
+
+- Priority: P0
+- Score: 86/A
+- Subject: Site Engineer application - Vercel Greenhouse
+
+- Block G: High Confidence
+- Rating: 4.4/5.0
+
+### ATS Keyword Injection
+- Archetype: Agentic / Automation
+- Coverage: 100%
+- JD Keywords: JavaScript, React, Next.js, CSS, Tailwind, Accessibility, Design Systems, frontend
+- 在 Professional Summary 中自然帶入：JavaScript、React、Next.js、CSS、Tailwind
+- 使用職位語言：「Agentic / Automation」方向的動詞和術語
+- 【你已有但此 JD 未要求】可視情況選擇性提及：TypeScript、Analytics、API、Figma、Performance Optimization
+- Missing (do NOT fabricate): TypeScript, Analytics, API, Figma, Performance Optimization
+
+### Apply Checklist
+- Open the source URL and confirm the role is still active.
+- Generate or refresh the tailored ATS PDF from this job.
+- Mirror these JD keywords honestly in your CV: JavaScript, React, Next.js, CSS, Tailwind, Accessibility, Design Systems, frontend
+- Do not overclaim missing areas: TypeScript, Analytics, API, Figma, Performance Optimization
+- Log status, recruiter/contact, and next follow-up date in the tracker.
+
+### Outreach Email
+```text
+Hi Vercel Greenhouse team,
+
+I am Alex Chen, and I am interested in the Site Engineer role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.
+
+The role stood out because it maps closely to my experience with JavaScript, React, Next.js, CSS, Tailwind.
+
+I would appreciate the chance to share how my experience can support the team. Thank you for your time.
+
+Best,
+Alex Chen
+```
+
+### Follow-up
+Timing: 3-5 business days after applying or the last recruiter interaction.
+```text
+Hi Vercel Greenhouse team,
+
+I wanted to follow up on my application for the Site Engineer role. I remain interested and would be glad to provide any additional context about my background.
+
+Thank you again for your time.
+
+Best,
+Alex Chen
+```
+
+### Interview Prep
+- Prepare a 60-second story for why Vercel Greenhouse and why Site Engineer.
+- Prepare evidence for: JavaScript, React, Next.js, CSS, Tailwind, Accessibility.
 - Prepare one STAR story about execution under ambiguity.
 - Prepare one STAR story about collaboration and tradeoff decisions.
 - Prepare questions about team priorities, success metrics, and hiring timeline.

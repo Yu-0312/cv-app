@@ -1,6 +1,6 @@
 # Career Ops Parallel Worker Report
 
-Generated: 2026-07-07T02:46:44.442Z
+Generated: 2026-07-07T08:02:18.479Z
 Concurrency: 4
 Jobs processed: 50
 Errors: 0
@@ -122,36 +122,6 @@ Errors: 0
 - Grade: A
 - Research evidence: 1
 - Keywords: API, Performance Optimization, engineer, building, product, in, design, system
-- Compensation leverage: high
-- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
-
-### Apply Agent Guardrails
-- Never submit without explicit user confirmation.
-- Never fabricate work authorization, salary history, degree, or experience.
-- Never store API keys or credentials in job metadata.
-- Record only application status and user-approved notes.
-
-## P0 Allstate - Lead AI Cloud Platform Engineer
-
-- Score: 86
-- Grade: A
-- Research evidence: 0
-- Keywords: Analytics, API, engineer, years, product, in, design, owning
-- Compensation leverage: high
-- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
-
-### Apply Agent Guardrails
-- Never submit without explicit user confirmation.
-- Never fabricate work authorization, salary history, degree, or experience.
-- Never store API keys or credentials in job metadata.
-- Record only application status and user-approved notes.
-
-## P0 Esri - Sr. Product Engineer - Web Services
-
-- Score: 86
-- Grade: A
-- Research evidence: 0
-- Keywords: JavaScript, TypeScript, API, engineer, years, product, in, component, system
 - Compensation leverage: high
 - Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
@@ -296,73 +266,13 @@ Errors: 0
 - Never store API keys or credentials in job metadata.
 - Record only application status and user-approved notes.
 
-## P0 TIKTOK PTE. LTD. - Frontend Software Engineer (Payment), TikTok Live - Singapore
-
-- Score: 85
-- Grade: A
-- Research evidence: 0
-- Keywords: JavaScript, CSS, frontend, engineer, years, building, product, in
-- Compensation leverage: high
-- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
-
-### Apply Agent Guardrails
-- Never submit without explicit user confirmation.
-- Never fabricate work authorization, salary history, degree, or experience.
-- Never store API keys or credentials in job metadata.
-- Record only application status and user-approved notes.
-
-## P0 TIKTOK PTE. LTD. - Frontend Software Engineer (transaction), TikTok Live - Singapore
-
-- Score: 85
-- Grade: A
-- Research evidence: 0
-- Keywords: JavaScript, CSS, frontend, engineer, years, building, product, in
-- Compensation leverage: high
-- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
-
-### Apply Agent Guardrails
-- Never submit without explicit user confirmation.
-- Never fabricate work authorization, salary history, degree, or experience.
-- Never store API keys or credentials in job metadata.
-- Record only application status and user-approved notes.
-
 ## P0 Quinncia Inc - Frontend Developer
 
 - Score: 85
 - Grade: A
 - Research evidence: 0
 - Keywords: JavaScript, TypeScript, React, Next.js, CSS, frontend, engineer, product, in, design
-- Compensation leverage: -
-- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
-
-### Apply Agent Guardrails
-- Never submit without explicit user confirmation.
-- Never fabricate work authorization, salary history, degree, or experience.
-- Never store API keys or credentials in job metadata.
-- Record only application status and user-approved notes.
-
-## P0 Uber - Staff Frontend Engineer, Core Services Eng
-
-- Score: 85
-- Grade: A
-- Research evidence: 0
-- Keywords: React, Analytics, API, frontend, engineer, years, product, in, design
-- Compensation leverage: -
-- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
-
-### Apply Agent Guardrails
-- Never submit without explicit user confirmation.
-- Never fabricate work authorization, salary history, degree, or experience.
-- Never store API keys or credentials in job metadata.
-- Record only application status and user-approved notes.
-
-## P0 Zillow - Senior Manager, Software Development Engineering
-
-- Score: 85
-- Grade: A
-- Research evidence: 0
-- Keywords: TypeScript, React, CSS, API, frontend, years, building, product, in, design
-- Compensation leverage: -
+- Compensation leverage: high
 - Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
 ### Apply Agent Guardrails
@@ -392,7 +302,7 @@ Errors: 0
 - Grade: A
 - Research evidence: 0
 - Keywords: API, engineer, years, building, in, design, system
-- Compensation leverage: -
+- Compensation leverage: high
 - Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
 ### Apply Agent Guardrails
@@ -581,102 +491,12 @@ Errors: 0
 - Never store API keys or credentials in job metadata.
 - Record only application status and user-approved notes.
 
-## P1 Uber - Principal Engineer - Client and Product Foundations
-
-- Score: 84
-- Grade: B
-- Research evidence: 0
-- Keywords: API, engineer, years, product, in, design, system
-- Compensation leverage: -
-- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
-
-### Apply Agent Guardrails
-- Never submit without explicit user confirmation.
-- Never fabricate work authorization, salary history, degree, or experience.
-- Never store API keys or credentials in job metadata.
-- Record only application status and user-approved notes.
-
-## P1 Uber - Sr Software Engineer, Frontend (Web)
-
-- Score: 84
-- Grade: B
-- Research evidence: 0
-- Keywords: JavaScript, TypeScript, React, CSS, API, Performance Optimization, frontend, engineer, years, building
-- Compensation leverage: -
-- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
-
-### Apply Agent Guardrails
-- Never submit without explicit user confirmation.
-- Never fabricate work authorization, salary history, degree, or experience.
-- Never store API keys or credentials in job metadata.
-- Record only application status and user-approved notes.
-
 ## P1 Pilotly - Product Engineer II
 
 - Score: 84
 - Grade: B
 - Research evidence: 0
 - Keywords: JavaScript, React, CSS, API, engineer, building, product, in, design, from
-- Compensation leverage: -
-- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
-
-### Apply Agent Guardrails
-- Never submit without explicit user confirmation.
-- Never fabricate work authorization, salary history, degree, or experience.
-- Never store API keys or credentials in job metadata.
-- Record only application status and user-approved notes.
-
-## P1 Equinix, Inc - Staff Software Engineer (Full-Stack)
-
-- Score: 84
-- Grade: B
-- Research evidence: 0
-- Keywords: TypeScript, React, API, frontend, engineer, years, building, product, in
-- Compensation leverage: -
-- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
-
-### Apply Agent Guardrails
-- Never submit without explicit user confirmation.
-- Never fabricate work authorization, salary history, degree, or experience.
-- Never store API keys or credentials in job metadata.
-- Record only application status and user-approved notes.
-
-## P1 Coinbase - Senior Software Engineer, Frontend (Consumer - Trading)
-
-- Score: 84
-- Grade: B
-- Research evidence: 0
-- Keywords: JavaScript, TypeScript, React, API, frontend, engineer, years, building, product, in
-- Compensation leverage: -
-- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
-
-### Apply Agent Guardrails
-- Never submit without explicit user confirmation.
-- Never fabricate work authorization, salary history, degree, or experience.
-- Never store API keys or credentials in job metadata.
-- Record only application status and user-approved notes.
-
-## P1 Allstate - Product Engineer Senior Java Springboot
-
-- Score: 84
-- Grade: B
-- Research evidence: 0
-- Keywords: JavaScript, API, engineer, years, building, product, in, component
-- Compensation leverage: high
-- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
-
-### Apply Agent Guardrails
-- Never submit without explicit user confirmation.
-- Never fabricate work authorization, salary history, degree, or experience.
-- Never store API keys or credentials in job metadata.
-- Record only application status and user-approved notes.
-
-## P1 Equinix, Inc - Staff Software Engineer
-
-- Score: 84
-- Grade: B
-- Research evidence: 0
-- Keywords: TypeScript, React, API, frontend, engineer, years, building, product, in
 - Compensation leverage: -
 - Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
@@ -753,6 +573,186 @@ Errors: 0
 - Research evidence: 0
 - Keywords: engineer, years, building, product, in, design
 - Compensation leverage: -
+- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
+
+### Apply Agent Guardrails
+- Never submit without explicit user confirmation.
+- Never fabricate work authorization, salary history, degree, or experience.
+- Never store API keys or credentials in job metadata.
+- Record only application status and user-approved notes.
+
+## P1 Canonical Greenhouse - Software Engineer - Python and K8s
+
+- Score: 84
+- Grade: B
+- Research evidence: 10
+- Keywords: engineer, building, product, in, design, architecture
+- Compensation leverage: high
+- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
+
+### Apply Agent Guardrails
+- Never submit without explicit user confirmation.
+- Never fabricate work authorization, salary history, degree, or experience.
+- Never store API keys or credentials in job metadata.
+- Record only application status and user-approved notes.
+
+## P1 Mozilla Greenhouse - Senior Engineering Manager, AI Product (Thunderbolt)
+
+- Score: 84
+- Grade: B
+- Research evidence: 0
+- Keywords: React, years, product, in, design, system, performance
+- Compensation leverage: -
+- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
+
+### Apply Agent Guardrails
+- Never submit without explicit user confirmation.
+- Never fabricate work authorization, salary history, degree, or experience.
+- Never store API keys or credentials in job metadata.
+- Record only application status and user-approved notes.
+
+## P1 Mozilla Greenhouse - Senior Engineering Manager, AI Product (Thunderbolt)
+
+- Score: 84
+- Grade: B
+- Research evidence: 0
+- Keywords: React, years, product, in, design, system, performance
+- Compensation leverage: -
+- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
+
+### Apply Agent Guardrails
+- Never submit without explicit user confirmation.
+- Never fabricate work authorization, salary history, degree, or experience.
+- Never store API keys or credentials in job metadata.
+- Record only application status and user-approved notes.
+
+## P1 Reddit Greenhouse - Senior Software Engineer, GraphQL
+
+- Score: 84
+- Grade: B
+- Research evidence: 0
+- Keywords: API, engineer, years, building, product, in, design
+- Compensation leverage: -
+- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
+
+### Apply Agent Guardrails
+- Never submit without explicit user confirmation.
+- Never fabricate work authorization, salary history, degree, or experience.
+- Never store API keys or credentials in job metadata.
+- Record only application status and user-approved notes.
+
+## P1 Asana Greenhouse - Staff Software Engineer, API
+
+- Score: 84
+- Grade: B
+- Research evidence: 0
+- Keywords: JavaScript, TypeScript, API, engineer, years, building, product, in, design
+- Compensation leverage: -
+- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
+
+### Apply Agent Guardrails
+- Never submit without explicit user confirmation.
+- Never fabricate work authorization, salary history, degree, or experience.
+- Never store API keys or credentials in job metadata.
+- Record only application status and user-approved notes.
+
+## P1 ElevenLabs Ashby - Deployment Strategist - North America
+
+- Score: 84
+- Grade: B
+- Research evidence: 5
+- Keywords: API, years, product, in, design, scope, from
+- Compensation leverage: high
+- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
+
+### Apply Agent Guardrails
+- Never submit without explicit user confirmation.
+- Never fabricate work authorization, salary history, degree, or experience.
+- Never store API keys or credentials in job metadata.
+- Record only application status and user-approved notes.
+
+## P1 ElevenLabs Ashby - Deployment Strategist - Europe
+
+- Score: 84
+- Grade: B
+- Research evidence: 5
+- Keywords: API, years, product, in, design, scope, from
+- Compensation leverage: high
+- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
+
+### Apply Agent Guardrails
+- Never submit without explicit user confirmation.
+- Never fabricate work authorization, salary history, degree, or experience.
+- Never store API keys or credentials in job metadata.
+- Record only application status and user-approved notes.
+
+## P1 ElevenLabs Ashby - Deployment Strategist - Spain
+
+- Score: 84
+- Grade: B
+- Research evidence: 5
+- Keywords: API, years, product, in, design, scope, from
+- Compensation leverage: high
+- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
+
+### Apply Agent Guardrails
+- Never submit without explicit user confirmation.
+- Never fabricate work authorization, salary history, degree, or experience.
+- Never store API keys or credentials in job metadata.
+- Record only application status and user-approved notes.
+
+## P1 ElevenLabs Ashby - Deployment Strategist - Poland
+
+- Score: 84
+- Grade: B
+- Research evidence: 5
+- Keywords: API, years, product, in, design, scope, from
+- Compensation leverage: high
+- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
+
+### Apply Agent Guardrails
+- Never submit without explicit user confirmation.
+- Never fabricate work authorization, salary history, degree, or experience.
+- Never store API keys or credentials in job metadata.
+- Record only application status and user-approved notes.
+
+## P1 ElevenLabs Ashby - Deployment Strategist - India
+
+- Score: 84
+- Grade: B
+- Research evidence: 5
+- Keywords: API, years, product, in, design, scope, from
+- Compensation leverage: high
+- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
+
+### Apply Agent Guardrails
+- Never submit without explicit user confirmation.
+- Never fabricate work authorization, salary history, degree, or experience.
+- Never store API keys or credentials in job metadata.
+- Record only application status and user-approved notes.
+
+## P1 PostHog Ashby - Technical Customer Success Manager - EMEA
+
+- Score: 84
+- Grade: B
+- Research evidence: 0
+- Keywords: Analytics, engineer, building, product, in, component, comfortable
+- Compensation leverage: high
+- Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
+
+### Apply Agent Guardrails
+- Never submit without explicit user confirmation.
+- Never fabricate work authorization, salary history, degree, or experience.
+- Never store API keys or credentials in job metadata.
+- Record only application status and user-approved notes.
+
+## P1 PostHog Ashby - Technical Customer Success Manager - Americas
+
+- Score: 84
+- Grade: B
+- Research evidence: 0
+- Keywords: Analytics, engineer, building, product, in, component, comfortable
+- Compensation leverage: high
 - Story hooks: frontend product execution, data-heavy product decisions, systems and API collaboration
 
 ### Apply Agent Guardrails

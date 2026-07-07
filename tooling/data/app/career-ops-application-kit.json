@@ -1,6 +1,6 @@
 {
   "source": "career-ops-application-kit",
-  "generatedAt": "2026-07-07T02:46:24.880Z",
+  "generatedAt": "2026-07-07T08:01:58.313Z",
   "profileRole": "Frontend Engineer",
   "playbooks": [
     {
@@ -756,194 +756,6 @@
       ]
     },
     {
-      "jobKey": "url:https://www.themuse.com/jobs/allstate/lead-ai-cloud-platform-engineer-799e2a",
-      "title": "Lead AI Cloud Platform Engineer",
-      "company": "Allstate",
-      "score": "86/A",
-      "rating": 4.4,
-      "blockG": {
-        "tier": "High Confidence",
-        "confidence": "medium"
-      },
-      "priority": "P0",
-      "atsInjection": {
-        "jdKeywords": [
-          "Analytics",
-          "API",
-          "engineer",
-          "years",
-          "product",
-          "in",
-          "design",
-          "owning"
-        ],
-        "hardKeywords": [
-          "Analytics",
-          "API",
-          "engineer",
-          "years",
-          "product",
-          "in",
-          "design",
-          "owning"
-        ],
-        "softKeywords": [],
-        "missingKeywords": [
-          "JavaScript",
-          "TypeScript",
-          "React",
-          "Next.js",
-          "CSS",
-          "Tailwind",
-          "Accessibility",
-          "Figma"
-        ],
-        "archetype": "Agentic / Automation",
-        "summaryRewriteHints": [
-          "在 Professional Summary 中自然帶入：Analytics、API、engineer、years、product",
-          "使用職位語言：「Agentic / Automation」方向的動詞和術語",
-          "【你已有但此 JD 未要求】可視情況選擇性提及：JavaScript、TypeScript、React、Next.js、CSS"
-        ],
-        "atsRules": [
-          "單欄排版，避免 sidebar 雙欄（ATS parser 容易亂序）",
-          "使用標準 header：Professional Summary, Work Experience, Skills, Education",
-          "不使用巢狀表格或文字框",
-          "確保 PDF 文字可被選取（不可光柵化輸出）",
-          "UTF-8 編碼，移除 em dash / smart quote / zero-width space",
-          "關鍵技能在 Skills section 明確列出，不要只藏在 bullet 裡"
-        ],
-        "guardrails": [
-          "NEVER add skills the candidate lacks",
-          "Only reformulate real experience with exact JD vocabulary",
-          "Example: if candidate has 'API development', it can become 'Analytics'"
-        ],
-        "keywordCoveragePercent": 100
-      },
-      "applyChecklist": [
-        "Open the source URL and confirm the role is still active.",
-        "Generate or refresh the tailored ATS PDF from this job.",
-        "Mirror these JD keywords honestly in your CV: Analytics, API, engineer, years, product, in, design, owning",
-        "Do not overclaim missing areas: JavaScript, TypeScript, React, Next.js, CSS, Tailwind",
-        "Log status, recruiter/contact, and next follow-up date in the tracker."
-      ],
-      "outreachEmail": {
-        "subject": "Lead AI Cloud Platform Engineer application - Allstate",
-        "body": "Hi Allstate team,\n\nI am Alex Chen, and I am interested in the Lead AI Cloud Platform Engineer role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.\n\nThe role stood out because it maps closely to my experience with Analytics, API, engineer, years, product.\n\nI would appreciate the chance to share how my experience can support the team. Thank you for your time.\n\nBest,\nAlex Chen"
-      },
-      "followUp": {
-        "timing": "3-5 business days after applying or the last recruiter interaction.",
-        "body": "Hi Allstate team,\n\nI wanted to follow up on my application for the Lead AI Cloud Platform Engineer role. I remain interested and would be glad to provide any additional context about my background.\n\nThank you again for your time.\n\nBest,\nAlex Chen"
-      },
-      "interviewPrep": [
-        "Prepare a 60-second story for why Allstate and why Lead AI Cloud Platform Engineer.",
-        "Prepare evidence for: Analytics, API, engineer, years, product, in.",
-        "Prepare one STAR story about execution under ambiguity.",
-        "Prepare one STAR story about collaboration and tradeoff decisions.",
-        "Prepare questions about team priorities, success metrics, and hiring timeline."
-      ],
-      "negotiationPrep": [
-        "Wait for a clear offer before anchoring compensation.",
-        "Ask for total compensation breakdown, work mode, title, level, review cycle, and start date.",
-        "Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.",
-        "Use competing priorities and role fit, not personal need, as the negotiation frame."
-      ]
-    },
-    {
-      "jobKey": "url:https://www.themuse.com/jobs/esri/sr-product-engineer-web-services-2ea51e",
-      "title": "Sr. Product Engineer - Web Services",
-      "company": "Esri",
-      "score": "86/A",
-      "rating": 4.4,
-      "blockG": {
-        "tier": "High Confidence",
-        "confidence": "medium"
-      },
-      "priority": "P0",
-      "atsInjection": {
-        "jdKeywords": [
-          "JavaScript",
-          "TypeScript",
-          "API",
-          "engineer",
-          "years",
-          "product",
-          "in",
-          "component",
-          "system"
-        ],
-        "hardKeywords": [
-          "JavaScript",
-          "TypeScript",
-          "API",
-          "engineer",
-          "years",
-          "product",
-          "in",
-          "component",
-          "system"
-        ],
-        "softKeywords": [],
-        "missingKeywords": [
-          "React",
-          "Next.js",
-          "CSS",
-          "Tailwind",
-          "Accessibility",
-          "Analytics",
-          "Figma",
-          "Performance Optimization"
-        ],
-        "archetype": "AI Platform / LLMOps",
-        "summaryRewriteHints": [
-          "在 Professional Summary 中自然帶入：JavaScript、TypeScript、API、engineer、years",
-          "使用職位語言：「AI Platform / LLMOps」方向的動詞和術語",
-          "【你已有但此 JD 未要求】可視情況選擇性提及：React、Next.js、CSS、Tailwind、Accessibility"
-        ],
-        "atsRules": [
-          "單欄排版，避免 sidebar 雙欄（ATS parser 容易亂序）",
-          "使用標準 header：Professional Summary, Work Experience, Skills, Education",
-          "不使用巢狀表格或文字框",
-          "確保 PDF 文字可被選取（不可光柵化輸出）",
-          "UTF-8 編碼，移除 em dash / smart quote / zero-width space",
-          "關鍵技能在 Skills section 明確列出，不要只藏在 bullet 裡"
-        ],
-        "guardrails": [
-          "NEVER add skills the candidate lacks",
-          "Only reformulate real experience with exact JD vocabulary",
-          "Example: if candidate has 'API development', it can become 'JavaScript'"
-        ],
-        "keywordCoveragePercent": 100
-      },
-      "applyChecklist": [
-        "Open the source URL and confirm the role is still active.",
-        "Generate or refresh the tailored ATS PDF from this job.",
-        "Mirror these JD keywords honestly in your CV: JavaScript, TypeScript, API, engineer, years, product, in, component",
-        "Do not overclaim missing areas: React, Next.js, CSS, Tailwind, Accessibility, Analytics",
-        "Log status, recruiter/contact, and next follow-up date in the tracker."
-      ],
-      "outreachEmail": {
-        "subject": "Sr. Product Engineer - Web Services application - Esri",
-        "body": "Hi Esri team,\n\nI am Alex Chen, and I am interested in the Sr. Product Engineer - Web Services role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.\n\nThe role stood out because it maps closely to my experience with JavaScript, TypeScript, API, engineer, years.\n\nI would appreciate the chance to share how my experience can support the team. Thank you for your time.\n\nBest,\nAlex Chen"
-      },
-      "followUp": {
-        "timing": "3-5 business days after applying or the last recruiter interaction.",
-        "body": "Hi Esri team,\n\nI wanted to follow up on my application for the Sr. Product Engineer - Web Services role. I remain interested and would be glad to provide any additional context about my background.\n\nThank you again for your time.\n\nBest,\nAlex Chen"
-      },
-      "interviewPrep": [
-        "Prepare a 60-second story for why Esri and why Sr. Product Engineer - Web Services.",
-        "Prepare evidence for: JavaScript, TypeScript, API, engineer, years, product.",
-        "Prepare one STAR story about execution under ambiguity.",
-        "Prepare one STAR story about collaboration and tradeoff decisions.",
-        "Prepare questions about team priorities, success metrics, and hiring timeline."
-      ],
-      "negotiationPrep": [
-        "Wait for a clear offer before anchoring compensation.",
-        "Ask for total compensation breakdown, work mode, title, level, review cycle, and start date.",
-        "Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.",
-        "Use competing priorities and role fit, not personal need, as the negotiation frame."
-      ]
-    },
-    {
       "jobKey": "url:https://job-boards.greenhouse.io/gitlab/jobs/8488966002",
       "title": "Senior Backend Engineer(Go), Continuous Delivery",
       "company": "GitLab Greenhouse",
@@ -1112,6 +924,201 @@
       "interviewPrep": [
         "Prepare a 60-second story for why GitLab Greenhouse and why VP of Product Security.",
         "Prepare evidence for: API, building, product, in, design, architecture.",
+        "Prepare one STAR story about execution under ambiguity.",
+        "Prepare one STAR story about collaboration and tradeoff decisions.",
+        "Prepare questions about team priorities, success metrics, and hiring timeline."
+      ],
+      "negotiationPrep": [
+        "Wait for a clear offer before anchoring compensation.",
+        "Ask for total compensation breakdown, work mode, title, level, review cycle, and start date.",
+        "Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.",
+        "Use competing priorities and role fit, not personal need, as the negotiation frame."
+      ]
+    },
+    {
+      "jobKey": "url:https://job-boards.greenhouse.io/canonical/jobs/5150422",
+      "title": "Web Frontend Engineer - JS, CSS, React, Flutter",
+      "company": "Canonical Greenhouse",
+      "score": "86/A",
+      "rating": 4.4,
+      "blockG": {
+        "tier": "High Confidence",
+        "confidence": "high"
+      },
+      "priority": "P0",
+      "atsInjection": {
+        "jdKeywords": [
+          "TypeScript",
+          "React",
+          "CSS",
+          "Accessibility",
+          "API",
+          "frontend",
+          "engineer",
+          "accessible",
+          "product",
+          "in",
+          "design"
+        ],
+        "hardKeywords": [
+          "TypeScript",
+          "React",
+          "CSS",
+          "Accessibility",
+          "API",
+          "frontend",
+          "engineer",
+          "accessible",
+          "product",
+          "in"
+        ],
+        "softKeywords": [],
+        "missingKeywords": [
+          "JavaScript",
+          "Next.js",
+          "Tailwind",
+          "Analytics",
+          "Figma",
+          "Performance Optimization",
+          "Design Systems"
+        ],
+        "archetype": "Frontend Engineer",
+        "summaryRewriteHints": [
+          "在 Professional Summary 中自然帶入：TypeScript、React、CSS、Accessibility、API",
+          "使用職位語言：「Frontend Engineer」方向的動詞和術語",
+          "【你已有但此 JD 未要求】可視情況選擇性提及：JavaScript、Next.js、Tailwind、Analytics、Figma"
+        ],
+        "atsRules": [
+          "單欄排版，避免 sidebar 雙欄（ATS parser 容易亂序）",
+          "使用標準 header：Professional Summary, Work Experience, Skills, Education",
+          "不使用巢狀表格或文字框",
+          "確保 PDF 文字可被選取（不可光柵化輸出）",
+          "UTF-8 編碼，移除 em dash / smart quote / zero-width space",
+          "關鍵技能在 Skills section 明確列出，不要只藏在 bullet 裡"
+        ],
+        "guardrails": [
+          "NEVER add skills the candidate lacks",
+          "Only reformulate real experience with exact JD vocabulary",
+          "Example: if candidate has 'API development', it can become 'TypeScript'"
+        ],
+        "keywordCoveragePercent": 100
+      },
+      "applyChecklist": [
+        "Open the source URL and confirm the role is still active.",
+        "Generate or refresh the tailored ATS PDF from this job.",
+        "Mirror these JD keywords honestly in your CV: TypeScript, React, CSS, Accessibility, API, frontend, engineer, accessible",
+        "Do not overclaim missing areas: JavaScript, Next.js, Tailwind, Analytics, Figma, Performance Optimization",
+        "Log status, recruiter/contact, and next follow-up date in the tracker."
+      ],
+      "outreachEmail": {
+        "subject": "Web Frontend Engineer - JS, CSS, React, Flutter application - Canonical Greenhouse",
+        "body": "Hi Canonical Greenhouse team,\n\nI am Alex Chen, and I am interested in the Web Frontend Engineer - JS, CSS, React, Flutter role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.\n\nThe role stood out because it maps closely to my experience with TypeScript, React, CSS, Accessibility, API.\n\nI would appreciate the chance to share how my experience can support the team. Thank you for your time.\n\nBest,\nAlex Chen"
+      },
+      "followUp": {
+        "timing": "3-5 business days after applying or the last recruiter interaction.",
+        "body": "Hi Canonical Greenhouse team,\n\nI wanted to follow up on my application for the Web Frontend Engineer - JS, CSS, React, Flutter role. I remain interested and would be glad to provide any additional context about my background.\n\nThank you again for your time.\n\nBest,\nAlex Chen"
+      },
+      "interviewPrep": [
+        "Prepare a 60-second story for why Canonical Greenhouse and why Web Frontend Engineer - JS, CSS, React, Flutter.",
+        "Prepare evidence for: TypeScript, React, CSS, Accessibility, API, frontend.",
+        "Prepare one STAR story about execution under ambiguity.",
+        "Prepare one STAR story about collaboration and tradeoff decisions.",
+        "Prepare questions about team priorities, success metrics, and hiring timeline."
+      ],
+      "negotiationPrep": [
+        "Wait for a clear offer before anchoring compensation.",
+        "Ask for total compensation breakdown, work mode, title, level, review cycle, and start date.",
+        "Negotiate around the whole package: base, bonus, equity, signing bonus, relocation, remote setup, learning budget, and review timing.",
+        "Use competing priorities and role fit, not personal need, as the negotiation frame."
+      ]
+    },
+    {
+      "jobKey": "url:https://job-boards.greenhouse.io/vercel/jobs/5732855004",
+      "title": "Site Engineer",
+      "company": "Vercel Greenhouse",
+      "score": "86/A",
+      "rating": 4.4,
+      "blockG": {
+        "tier": "High Confidence",
+        "confidence": "high"
+      },
+      "priority": "P0",
+      "atsInjection": {
+        "jdKeywords": [
+          "JavaScript",
+          "React",
+          "Next.js",
+          "CSS",
+          "Tailwind",
+          "Accessibility",
+          "Design Systems",
+          "frontend",
+          "engineer",
+          "years",
+          "building",
+          "product",
+          "in",
+          "API"
+        ],
+        "hardKeywords": [
+          "JavaScript",
+          "React",
+          "Next.js",
+          "CSS",
+          "Tailwind",
+          "Accessibility",
+          "Design Systems",
+          "frontend",
+          "engineer",
+          "years"
+        ],
+        "softKeywords": [],
+        "missingKeywords": [
+          "TypeScript",
+          "Analytics",
+          "API",
+          "Figma",
+          "Performance Optimization"
+        ],
+        "archetype": "Agentic / Automation",
+        "summaryRewriteHints": [
+          "在 Professional Summary 中自然帶入：JavaScript、React、Next.js、CSS、Tailwind",
+          "使用職位語言：「Agentic / Automation」方向的動詞和術語",
+          "【你已有但此 JD 未要求】可視情況選擇性提及：TypeScript、Analytics、API、Figma、Performance Optimization"
+        ],
+        "atsRules": [
+          "單欄排版，避免 sidebar 雙欄（ATS parser 容易亂序）",
+          "使用標準 header：Professional Summary, Work Experience, Skills, Education",
+          "不使用巢狀表格或文字框",
+          "確保 PDF 文字可被選取（不可光柵化輸出）",
+          "UTF-8 編碼，移除 em dash / smart quote / zero-width space",
+          "關鍵技能在 Skills section 明確列出，不要只藏在 bullet 裡"
+        ],
+        "guardrails": [
+          "NEVER add skills the candidate lacks",
+          "Only reformulate real experience with exact JD vocabulary",
+          "Example: if candidate has 'API development', it can become 'JavaScript'"
+        ],
+        "keywordCoveragePercent": 100
+      },
+      "applyChecklist": [
+        "Open the source URL and confirm the role is still active.",
+        "Generate or refresh the tailored ATS PDF from this job.",
+        "Mirror these JD keywords honestly in your CV: JavaScript, React, Next.js, CSS, Tailwind, Accessibility, Design Systems, frontend",
+        "Do not overclaim missing areas: TypeScript, Analytics, API, Figma, Performance Optimization",
+        "Log status, recruiter/contact, and next follow-up date in the tracker."
+      ],
+      "outreachEmail": {
+        "subject": "Site Engineer application - Vercel Greenhouse",
+        "body": "Hi Vercel Greenhouse team,\n\nI am Alex Chen, and I am interested in the Site Engineer role. My background is focused on Frontend Engineer with hands-on work in JavaScript, TypeScript, React, Next.js, CSS.\n\nThe role stood out because it maps closely to my experience with JavaScript, React, Next.js, CSS, Tailwind.\n\nI would appreciate the chance to share how my experience can support the team. Thank you for your time.\n\nBest,\nAlex Chen"
+      },
+      "followUp": {
+        "timing": "3-5 business days after applying or the last recruiter interaction.",
+        "body": "Hi Vercel Greenhouse team,\n\nI wanted to follow up on my application for the Site Engineer role. I remain interested and would be glad to provide any additional context about my background.\n\nThank you again for your time.\n\nBest,\nAlex Chen"
+      },
+      "interviewPrep": [
+        "Prepare a 60-second story for why Vercel Greenhouse and why Site Engineer.",
+        "Prepare evidence for: JavaScript, React, Next.js, CSS, Tailwind, Accessibility.",
         "Prepare one STAR story about execution under ambiguity.",
         "Prepare one STAR story about collaboration and tradeoff decisions.",
         "Prepare questions about team priorities, success metrics, and hiring timeline."

@@ -1,31 +1,31 @@
 # Career Ops Learning Report
 
-- Generated: 2026-07-07T02:46:52.647Z
-- Active jobs: 86607
-- Positive signals: 13180
+- Generated: 2026-07-07T08:02:26.775Z
+- Active jobs: 83236
+- Positive signals: 9824
 - Negative signals: 0
 - Source coverage: 425 sources / 10557 queries / markets tw, cn, jp, kr, sg, global, us, ca, uk, ie, de, nl, fr, es, it, se, dk, no, pl, pt, au, nz, in, br, mx, ch, fi, cz, za, id, my, ph, vn, th, il, hk, ae
 
 ## Preferred Skills
 
-- in: 46011.8
-- years: 34081.1
-- api: 30931.5
-- API: 30844.3
-- product: 24203.4
-- building: 23214.2
-- design: 21834.3
-- growth: 20052.9
-- operations: 18772.6
-- from: 17690.9
-- to: 17277.2
-- sales: 16676.6
-- engineer: 16307.4
-- performance: 14869
-- analytics: 14820.3
-- Analytics: 14146.2
-- python: 10890.5
-- system: 10653.1
+- in: 33616.4
+- years: 24326.7
+- api: 19773.7
+- API: 19699.9
+- product: 19023.8
+- building: 18506.9
+- growth: 16315
+- design: 15192.4
+- operations: 14307.5
+- sales: 13836.9
+- analytics: 13041.6
+- from: 12954.9
+- Analytics: 12438.8
+- to: 12396.9
+- performance: 11448.5
+- engineer: 10771.1
+- python: 7649.7
+- go: 7306.5
 
 ## Avoid Signals
 
@@ -33,22 +33,22 @@
 
 ## Preferred Companies
 
-- SpaceX: 3528.6
-- Databricks Greenhouse: 2459.6
-- Walmart: 1939.4
-- GE Vernova: 1895.4
-- Yourator Taiwan Job Search: 1861.8
-- Bank of America: 1684.2
-- Stripe Greenhouse: 1612.5
-- Anthropic Greenhouse: 1452
+- Databricks Greenhouse: 2440.6
+- Yourator Taiwan Job Search: 1855.5
+- Stripe Greenhouse: 1612.6
+- Anthropic Greenhouse: 1455.8
+- SpaceX: 1321.9
+- Walmart: 1305.7
 - Canonical Greenhouse: 1270.8
 - MongoDB Greenhouse: 1189.5
-- Uber: 1111.8
+- Bank of America: 1171.4
+- Uber: 772.4
 - GitLab Greenhouse: 749.6
+- Airbnb Greenhouse: 738.9
 
 ## Next Strategy
 
 - Expand searches around in, years, api, API, product.
-- Prioritize sources like market-public-api, global, us, flex-seed-source.
+- Prioritize sources like market-public-api, flex-seed-source, us, global.
 - No strong avoid pattern learned yet.
 - Refresh this learning layer after each batch evaluation or feedback session.

@@ -1,6 +1,6 @@
 # Career Ops Deep Fit Report
 
-Generated: 2026-07-07T02:46:48.599Z
+Generated: 2026-07-07T08:02:22.728Z
 LLM provider: none
 Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 exploratory)
 
@@ -242,61 +242,6 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 
 #### CV Strategy
 - Lead with proof around: API, Performance Optimization, remote, Product Engineer.
-- Use story story-1: frontend product execution.
-- Use story story-2: data-heavy product decisions.
-- Use story story-3: systems and API collaboration.
-
-### Allstate - Lead AI Cloud Platform Engineer
-
-- Score: 86
-- Grade: A
-- Confidence: medium
-- Decision: pursue aggressively
-- Thesis: Lead AI Cloud Platform Engineer at Allstate is pursue aggressively because the snapshot score is 86, with 5 profile/role keyword hits and 0 external evidence item(s).
-
-#### Evidence
-- Keyword hits: Analytics, API, remote, analytics, Full Stack Engineer
-- Keyword misses: python, aws, gcp, azure, terraform, llm, prompt engineering
-- Research signals: -
-- Compensation leverage: high
-
-#### Concerns
-- External company evidence is thin; run deep research with a search API.
-- Profile keyword coverage is weaker than the target role language.
-
-#### Interview Strategy
-- Ask why the role is open and what success means in the first 90 days.
-- Probe team ownership, roadmap pressure, and cross-functional interfaces.
-
-#### CV Strategy
-- Lead with proof around: Analytics, API, remote, analytics, Full Stack Engineer.
-- Use story story-1: frontend product execution.
-- Use story story-2: data-heavy product decisions.
-- Use story story-3: systems and API collaboration.
-
-### Esri - Sr. Product Engineer - Web Services
-
-- Score: 86
-- Grade: A
-- Confidence: medium
-- Decision: pursue aggressively
-- Thesis: Sr. Product Engineer - Web Services at Esri is pursue aggressively because the snapshot score is 86, with 6 profile/role keyword hits and 0 external evidence item(s).
-
-#### Evidence
-- Keyword hits: JavaScript, TypeScript, API, remote, TypeScript, Product Engineer
-- Keyword misses: python, sql, rest, growth
-- Research signals: -
-- Compensation leverage: high
-
-#### Concerns
-- External company evidence is thin; run deep research with a search API.
-
-#### Interview Strategy
-- Ask why the role is open and what success means in the first 90 days.
-- Probe team ownership, roadmap pressure, and cross-functional interfaces.
-
-#### CV Strategy
-- Lead with proof around: JavaScript, TypeScript, API, remote, TypeScript, Product Engineer.
 - Use story story-1: frontend product execution.
 - Use story story-2: data-heavy product decisions.
 - Use story story-3: systems and API collaboration.
@@ -559,60 +504,6 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Use story story-2: data-heavy product decisions.
 - Use story story-3: systems and API collaboration.
 
-### TIKTOK PTE. LTD. - Frontend Software Engineer (Payment), TikTok Live - Singapore
-
-- Score: 85
-- Grade: A
-- Confidence: medium
-- Decision: pursue aggressively
-- Thesis: Frontend Software Engineer (Payment), TikTok Live - Singapore at TIKTOK PTE. LTD. is pursue aggressively because the snapshot score is 85, with 6 profile/role keyword hits and 0 external evidence item(s).
-
-#### Evidence
-- Keyword hits: Frontend Engineer, JavaScript, CSS, API, remote, Frontend Engineer
-- Keyword misses: growth
-- Research signals: -
-- Compensation leverage: high
-
-#### Concerns
-- External company evidence is thin; run deep research with a search API.
-
-#### Interview Strategy
-- Ask why the role is open and what success means in the first 90 days.
-- Probe team ownership, roadmap pressure, and cross-functional interfaces.
-
-#### CV Strategy
-- Lead with proof around: Frontend Engineer, JavaScript, CSS, API, remote, Frontend Engineer.
-- Use story story-1: frontend product execution.
-- Use story story-2: data-heavy product decisions.
-- Use story story-3: systems and API collaboration.
-
-### TIKTOK PTE. LTD. - Frontend Software Engineer (transaction), TikTok Live - Singapore
-
-- Score: 85
-- Grade: A
-- Confidence: medium
-- Decision: pursue aggressively
-- Thesis: Frontend Software Engineer (transaction), TikTok Live - Singapore at TIKTOK PTE. LTD. is pursue aggressively because the snapshot score is 85, with 6 profile/role keyword hits and 0 external evidence item(s).
-
-#### Evidence
-- Keyword hits: Frontend Engineer, JavaScript, CSS, API, remote, Frontend Engineer
-- Keyword misses: growth
-- Research signals: -
-- Compensation leverage: high
-
-#### Concerns
-- External company evidence is thin; run deep research with a search API.
-
-#### Interview Strategy
-- Ask why the role is open and what success means in the first 90 days.
-- Probe team ownership, roadmap pressure, and cross-functional interfaces.
-
-#### CV Strategy
-- Lead with proof around: Frontend Engineer, JavaScript, CSS, API, remote, Frontend Engineer.
-- Use story story-1: frontend product execution.
-- Use story story-2: data-heavy product decisions.
-- Use story story-3: systems and API collaboration.
-
 ### Quinncia Inc - Frontend Developer
 
 - Score: 85
@@ -625,7 +516,7 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Keyword hits: Frontend Engineer, JavaScript, TypeScript, React, Next.js, CSS, remote, TypeScript, React, Frontend Engineer
 - Keyword misses: docker, rest, machine learning, nlp, computer vision, operations
 - Research signals: -
-- Compensation leverage: -
+- Compensation leverage: high
 
 #### Concerns
 - External company evidence is thin; run deep research with a search API.
@@ -636,60 +527,6 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 
 #### CV Strategy
 - Lead with proof around: Frontend Engineer, JavaScript, TypeScript, React, Next.js, CSS.
-- Use story story-1: frontend product execution.
-- Use story story-2: data-heavy product decisions.
-- Use story story-3: systems and API collaboration.
-
-### Uber - Staff Frontend Engineer, Core Services Eng
-
-- Score: 85
-- Grade: A
-- Confidence: medium
-- Decision: pursue aggressively
-- Thesis: Staff Frontend Engineer, Core Services Eng at Uber is pursue aggressively because the snapshot score is 85, with 8 profile/role keyword hits and 0 external evidence item(s).
-
-#### Evidence
-- Keyword hits: Frontend Engineer, React, Analytics, API, remote, analytics, React, Frontend Engineer
-- Keyword misses: -
-- Research signals: -
-- Compensation leverage: -
-
-#### Concerns
-- External company evidence is thin; run deep research with a search API.
-
-#### Interview Strategy
-- Ask why the role is open and what success means in the first 90 days.
-- Probe team ownership, roadmap pressure, and cross-functional interfaces.
-
-#### CV Strategy
-- Lead with proof around: Frontend Engineer, React, Analytics, API, remote, analytics.
-- Use story story-1: frontend product execution.
-- Use story story-2: data-heavy product decisions.
-- Use story story-3: systems and API collaboration.
-
-### Zillow - Senior Manager, Software Development Engineering
-
-- Score: 85
-- Grade: A
-- Confidence: medium
-- Decision: pursue aggressively
-- Thesis: Senior Manager, Software Development Engineering at Zillow is pursue aggressively because the snapshot score is 85, with 9 profile/role keyword hits and 0 external evidence item(s).
-
-#### Evidence
-- Keyword hits: Frontend Engineer, TypeScript, React, CSS, API, remote, TypeScript, React, Frontend Engineer
-- Keyword misses: swift, kotlin, growth
-- Research signals: -
-- Compensation leverage: -
-
-#### Concerns
-- External company evidence is thin; run deep research with a search API.
-
-#### Interview Strategy
-- Ask why the role is open and what success means in the first 90 days.
-- Probe team ownership, roadmap pressure, and cross-functional interfaces.
-
-#### CV Strategy
-- Lead with proof around: Frontend Engineer, TypeScript, React, CSS, API, remote.
 - Use story story-1: frontend product execution.
 - Use story story-2: data-heavy product decisions.
 - Use story story-3: systems and API collaboration.
@@ -724,6 +561,169 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Use story story-2: data-heavy product decisions.
 - Use story story-3: systems and API collaboration.
 
+### Stripe Greenhouse - Full-Stack Engineer
+
+- Score: 85
+- Grade: A
+- Confidence: medium
+- Decision: pursue aggressively
+- Thesis: Full-Stack Engineer at Stripe Greenhouse is pursue aggressively because the snapshot score is 85, with 4 profile/role keyword hits and 0 external evidence item(s).
+
+#### Evidence
+- Keyword hits: API, remote, dashboard, Full Stack Engineer
+- Keyword misses: python, sales, operations
+- Research signals: -
+- Compensation leverage: high
+
+#### Concerns
+- External company evidence is thin; run deep research with a search API.
+
+#### Interview Strategy
+- Ask why the role is open and what success means in the first 90 days.
+- Probe team ownership, roadmap pressure, and cross-functional interfaces.
+
+#### CV Strategy
+- Lead with proof around: API, remote, dashboard, Full Stack Engineer.
+- Use story story-1: frontend product execution.
+- Use story story-2: data-heavy product decisions.
+- Use story story-3: systems and API collaboration.
+
+### Airbnb Greenhouse - Staff Full Stack Engineer, Reservations and Additional Products
+
+- Score: 85
+- Grade: A
+- Confidence: medium
+- Decision: pursue aggressively
+- Thesis: Staff Full Stack Engineer, Reservations and Additional Products at Airbnb Greenhouse is pursue aggressively because the snapshot score is 85, with 5 profile/role keyword hits and 0 external evidence item(s).
+
+#### Evidence
+- Keyword hits: JavaScript, React, remote, React, Full Stack Engineer
+- Keyword misses: java, kotlin
+- Research signals: -
+- Compensation leverage: -
+
+#### Concerns
+- External company evidence is thin; run deep research with a search API.
+
+#### Interview Strategy
+- Ask why the role is open and what success means in the first 90 days.
+- Probe team ownership, roadmap pressure, and cross-functional interfaces.
+
+#### CV Strategy
+- Lead with proof around: JavaScript, React, remote, React, Full Stack Engineer.
+- Use story story-1: frontend product execution.
+- Use story story-2: data-heavy product decisions.
+- Use story story-3: systems and API collaboration.
+
+### Anthropic Greenhouse - Design Engineer, Web
+
+- Score: 85
+- Grade: A
+- Confidence: medium
+- Decision: pursue aggressively
+- Thesis: Design Engineer, Web at Anthropic Greenhouse is pursue aggressively because the snapshot score is 85, with 8 profile/role keyword hits and 0 external evidence item(s).
+
+#### Evidence
+- Keyword hits: React, Next.js, Accessibility, API, remote, design system, React, Product Engineer
+- Keyword misses: seo, growth, sales, operations
+- Research signals: -
+- Compensation leverage: -
+
+#### Concerns
+- External company evidence is thin; run deep research with a search API.
+
+#### Interview Strategy
+- Ask why the role is open and what success means in the first 90 days.
+- Probe team ownership, roadmap pressure, and cross-functional interfaces.
+
+#### CV Strategy
+- Lead with proof around: React, Next.js, Accessibility, API, remote, design system.
+- Use story story-1: frontend product execution.
+- Use story story-2: data-heavy product decisions.
+- Use story story-3: systems and API collaboration.
+
+### Vercel Greenhouse - Product Security Engineer
+
+- Score: 85
+- Grade: A
+- Confidence: medium
+- Decision: pursue aggressively
+- Thesis: Product Security Engineer at Vercel Greenhouse is pursue aggressively because the snapshot score is 85, with 9 profile/role keyword hits and 0 external evidence item(s).
+
+#### Evidence
+- Keyword hits: JavaScript, TypeScript, React, Next.js, API, remote, TypeScript, React, Product Engineer
+- Keyword misses: terraform, agents
+- Research signals: -
+- Compensation leverage: high
+
+#### Concerns
+- External company evidence is thin; run deep research with a search API.
+
+#### Interview Strategy
+- Ask why the role is open and what success means in the first 90 days.
+- Probe team ownership, roadmap pressure, and cross-functional interfaces.
+
+#### CV Strategy
+- Lead with proof around: JavaScript, TypeScript, React, Next.js, API, remote.
+- Use story story-1: frontend product execution.
+- Use story story-2: data-heavy product decisions.
+- Use story story-3: systems and API collaboration.
+
+### Reddit Greenhouse - Director of Engineering, Developer Productivity
+
+- Score: 85
+- Grade: A
+- Confidence: medium
+- Decision: pursue aggressively
+- Thesis: Director of Engineering, Developer Productivity at Reddit Greenhouse is pursue aggressively because the snapshot score is 85, with 2 profile/role keyword hits and 0 external evidence item(s).
+
+#### Evidence
+- Keyword hits: remote, Product Engineer
+- Keyword misses: llm, machine learning, growth
+- Research signals: -
+- Compensation leverage: -
+
+#### Concerns
+- External company evidence is thin; run deep research with a search API.
+- Profile keyword coverage is weaker than the target role language.
+
+#### Interview Strategy
+- Ask why the role is open and what success means in the first 90 days.
+- Probe team ownership, roadmap pressure, and cross-functional interfaces.
+
+#### CV Strategy
+- Lead with proof around: remote, Product Engineer.
+- Use story story-1: frontend product execution.
+- Use story story-2: data-heavy product decisions.
+- Use story story-3: systems and API collaboration.
+
+### Reddit Greenhouse - Principal Technical Program Manager, Performance
+
+- Score: 85
+- Grade: A
+- Confidence: medium
+- Decision: pursue aggressively
+- Thesis: Principal Technical Program Manager, Performance at Reddit Greenhouse is pursue aggressively because the snapshot score is 85, with 5 profile/role keyword hits and 0 external evidence item(s).
+
+#### Evidence
+- Keyword hits: React, API, remote, React, Product Engineer
+- Keyword misses: growth, operations
+- Research signals: -
+- Compensation leverage: -
+
+#### Concerns
+- External company evidence is thin; run deep research with a search API.
+
+#### Interview Strategy
+- Ask why the role is open and what success means in the first 90 days.
+- Probe team ownership, roadmap pressure, and cross-functional interfaces.
+
+#### CV Strategy
+- Lead with proof around: React, API, remote, React, Product Engineer.
+- Use story story-1: frontend product execution.
+- Use story story-2: data-heavy product decisions.
+- Use story story-3: systems and API collaboration.
+
 ## Layer B — Standard Matches (roleFit 40-67)
 
 ### Mico - Senior Fullstack Engineer (Tokyo)
@@ -731,12 +731,6 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Decision: pursue selectively
 - Keyword hits: TypeScript, React, Next.js, API, remote, TypeScript, React
 - Gaps: vue, python, mysql, llm, growth
-
-### Maven Clinic - Performance Marketing Lead, Paid Acquisition
-- Score: 83 | Grade: B | RoleFit: 62
-- Decision: pursue selectively
-- Keyword hits: Analytics, API, remote, analytics
-- Gaps: sql, growth
 
 ### GitLab Greenhouse - Backend Engineer (Ruby), AI Engineering: Duo Agent Platform Tools
 - Score: 83 | Grade: B | RoleFit: 62
@@ -936,44 +930,44 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - Keyword hits: Analytics, API, remote, dashboard, analytics
 - Gaps: go, crm, growth, sales, operations
 
-### Exadel - Senior Platform Engineer
-- Score: 82 | Grade: B | RoleFit: 62
-- Decision: pursue selectively
-- Keyword hits: TypeScript, API, remote, TypeScript
-- Gaps: python, java, kotlin, aws, gcp, azure
-
-### Bank of America - Assistant Vice President; Software Engineer
-- Score: 82 | Grade: B | RoleFit: 62
-- Decision: pursue selectively
-- Keyword hits: React, API, remote, React
-- Gaps: python, sql, rest, etl, growth
-
-### Exadel - Senior API Engineer (.NET)
-- Score: 82 | Grade: B | RoleFit: 62
-- Decision: pursue selectively
-- Keyword hits: API, remote
-- Gaps: sql, aws, azure
-
-### Exadel - Senior Software Architect (.NET)
-- Score: 82 | Grade: B | RoleFit: 62
-- Decision: pursue selectively
-- Keyword hits: API, remote
-- Gaps: sql, aws, azure, rest
-
-### Uber - Application Developer - Atlassian
+### Uber - Senior Localization Program Manager, Multilingual AI
 - Score: 82 | Grade: B | RoleFit: 62
 - Decision: pursue selectively
 - Keyword hits: Analytics, API, remote, dashboard, analytics
-- Gaps: rest, llm, agents, prompt engineering, operations
+- Gaps: python, gcp, llm, rag, operations
+
+### Exadel - Senior Data Engineer
+- Score: 82 | Grade: B | RoleFit: 62
+- Decision: pursue selectively
+- Keyword hits: Analytics, API, remote, dashboard, analytics
+- Gaps: python, sql, aws, terraform, etl, spark
+
+### Exadel - Senior/Lead Machine Learning Engineer
+- Score: 82 | Grade: B | RoleFit: 62
+- Decision: pursue selectively
+- Keyword hits: Analytics, API, remote, analytics
+- Gaps: python, sql, aws, azure, rag, prompt engineering
+
+### Exadel - Senior/Lead Machine Learning Engineer
+- Score: 82 | Grade: B | RoleFit: 62
+- Decision: pursue selectively
+- Keyword hits: Analytics, API, remote, analytics
+- Gaps: python, sql, aws, azure, rag, prompt engineering
+
+### Uber - Software Engineer II ML, Merchant Intel 8
+- Score: 82 | Grade: B | RoleFit: 62
+- Decision: pursue selectively
+- Keyword hits: Analytics, API, remote, analytics
+- Gaps: python, java, go, spark, machine learning, nlp
+
+### Uber - Senior ML Engineer, Computer Vision - Applied AI
+- Score: 82 | Grade: B | RoleFit: 62
+- Decision: pursue selectively
+- Keyword hits: Analytics, API, Performance Optimization, remote, analytics
+- Gaps: python, machine learning, deep learning, computer vision, pytorch, tensorflow
 
 ## Layer C — Exploratory Signals (roleFit < 40)
 
-- **Stripe Greenhouse — Full-Stack Engineer** (score: 85) | Top gap: python
-- **Airbnb Greenhouse — Staff Full Stack Engineer, Reservations and Additional Products** (score: 85) | Top gap: java
-- **Anthropic Greenhouse — Design Engineer, Web** (score: 85) | Top gap: seo
-- **Vercel Greenhouse — Product Security Engineer** (score: 85) | Top gap: terraform
-- **Reddit Greenhouse — Director of Engineering, Developer Productivity** (score: 85) | Top gap: llm
-- **Reddit Greenhouse — Principal Technical Program Manager, Performance** (score: 85) | Top gap: growth
 - **Reddit Greenhouse — Senior Software Engineer - Full Stack Internal Tooling (Build and Deployment Platform)** (score: 85) | Top gap: go
 - **Reddit Greenhouse — Senior Staff Machine Learning Systems Engineer, Indexing & Retrieval Search** (score: 85) | Top gap: python
 - **Reddit Greenhouse — Staff Software Engineer, Onboarding** (score: 85) | Top gap: machine learning
@@ -981,13 +975,7 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - **Ramp Ashby — Software Engineer, Frontend** (score: 85) | Top gap: none
 - **PostHog Ashby — Developer who connects with other developers** (score: 85) | Top gap: go
 - **PostHog Ashby — Technical Account Executive** (score: 85) | Top gap: go
-- **Uber — Principal Engineer - Client and Product Foundations** (score: 84) | Top gap: none
-- **Uber — Sr Software Engineer, Frontend (Web)** (score: 84) | Top gap: angular
 - **Pilotly — Product Engineer II** (score: 84) | Top gap: aws
-- **Equinix, Inc — Staff Software Engineer (Full-Stack)** (score: 84) | Top gap: python
-- **Coinbase — Senior Software Engineer, Frontend (Consumer - Trading)** (score: 84) | Top gap: growth
-- **Allstate — Product Engineer Senior Java Springboot** (score: 84) | Top gap: python
-- **Equinix, Inc — Staff Software Engineer** (score: 84) | Top gap: python
 - **GitLab Greenhouse — Engineering Manager, Continuous Delivery** (score: 84) | Top gap: go
 - **Databricks Greenhouse — Manager, Delivery Solutions Architects - Digital Native Business** (score: 84) | Top gap: python
 - **Figma Greenhouse — Software Engineer, Full Stack** (score: 84) | Top gap: python
@@ -998,4 +986,16 @@ Total results: 95 (Layer A: 25 dossiers, Layer B: 40 standard, Layer C: 30 explo
 - **Reddit Greenhouse — Senior Software Engineer, GraphQL** (score: 84) | Top gap: go
 - **Asana Greenhouse — Staff Software Engineer, API** (score: 84) | Top gap: agents
 - **ElevenLabs Ashby — Deployment Strategist - North America** (score: 84) | Top gap: python
+- **ElevenLabs Ashby — Deployment Strategist - Europe** (score: 84) | Top gap: python
+- **ElevenLabs Ashby — Deployment Strategist - Spain** (score: 84) | Top gap: python
+- **ElevenLabs Ashby — Deployment Strategist - Poland** (score: 84) | Top gap: python
+- **ElevenLabs Ashby — Deployment Strategist - India** (score: 84) | Top gap: python
+- **PostHog Ashby — Technical Customer Success Manager - EMEA** (score: 84) | Top gap: go
+- **PostHog Ashby — Technical Customer Success Manager - Americas** (score: 84) | Top gap: go
+- **PostHog Ashby — Technical Account Manager - EMEA** (score: 84) | Top gap: go
+- **Shelf — Middle Frontend React Developer** (score: 84) | Top gap: python
+- **GlossGenius — Staff Software Engineer, Frontend** (score: 83) | Top gap: none
+- **Tradeweb — AI/ML Lead** (score: 83) | Top gap: python
+- **Allstate — Microsoft 365 Cloud Platform Engineer Expert** (score: 83) | Top gap: gcp
+- **PowerX — Full Stack Engineer** (score: 83) | Top gap: java
 
