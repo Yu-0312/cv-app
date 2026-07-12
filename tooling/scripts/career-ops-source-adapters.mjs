@@ -1133,6 +1133,140 @@ function normalize104Job(job, source, toolkit) {
   });
 }
 
+// ---------------------------------------------------------------------------
+// 104 stage-2 detail endpoint (two-stage 串聯 / two-stage linking).
+// The list API in the "104" adapter above is stage 1: cheap, ~20 fields/page.
+// This is stage 2 — one request per job for the full JD, salary range and
+// requirements. Same anti-bot shape as the list API: it only needs a per-job
+// Referer header, no browser. Keep callers throttled (the staging script adds
+// jitter + a bounded batch) so we stay polite to 104.
+// ---------------------------------------------------------------------------
+
+const JOB_104_DETAIL_ENDPOINT = "https://www.104.com.tw/job/ajax/content/";
+
+export function job104NoFromUrl(url) {
+  const text = cleanText(url);
+  if (!text) return "";
+  const match = text.match(/104\.com\.tw\/job\/([0-9a-z]+)/i);
+  return match ? match[1] : "";
+}
+
+export async function fetch104JobDetail(jobNo, timeoutMs = 30000, extraHeaders = {}) {
+  const id = cleanText(jobNo);
+  if (!id) throw new Error("fetch104JobDetail: missing jobNo");
+  const url = `${JOB_104_DETAIL_ENDPOINT}${encodeURIComponent(id)}`;
+  // 104 rejects the detail API without a per-job Referer (403 / empty body).
+  const referer = `https://www.104.com.tw/job/${encodeURIComponent(id)}`;
+  return fetchJsonWithHeaders(url, timeoutMs, { referer, ...extraHeaders });
+}
+
+function stripHtmlBasic(value) {
+  return cleanText(value)
+    .replace(/<br\s*\/?>/gi, "\n")
+    .replace(/<\/(p|div|li|tr)>/gi, "\n")
+    .replace(/<[^>]+>/g, "")
+    .replace(/&nbsp;/gi, " ")
+    .replace(/&amp;/gi, "&")
+    .replace(/\n{3,}/g, "\n\n")
+    .trim();
+}
+
+function descriptionList(list) {
+  return Array.isArray(list)
+    ? list.map((item) => cleanText(item?.description || item?.name || item)).filter(Boolean)
+    : [];
+}
+
+function salaryTypeFrom(desc, code) {
+  const text = String(desc || "");
+  if (/面議/.test(text)) return "negotiable";
+  if (/年薪/.test(text)) return "yearly";
+  if (/月薪/.test(text)) return "monthly";
+  if (/日薪/.test(text)) return "daily";
+  if (/時薪/.test(text)) return "hourly";
+  if (/論件|按件/.test(text)) return "piece";
+  const codes = { 10: "negotiable", 20: "piece", 30: "daily", 40: "hourly", 50: "monthly", 60: "yearly" };
+  return codes[Number(code)] || "";
+}
+
+function parse104Salary(detail) {
+  const min = Number(detail?.salaryMin);
+  const max = Number(detail?.salaryMax);
+  const out = {};
+  if (Number.isFinite(min) && min > 0) out.salaryMin = Math.round(min);
+  if (Number.isFinite(max) && max > 0 && max < 1e9) out.salaryMax = Math.round(max);
+  if (out.salaryMin === undefined && out.salaryMax === undefined) {
+    const nums = String(detail?.salary || "").replace(/[,，]/g, "").match(/\d{4,}/g);
+    if (nums && nums.length) {
+      out.salaryMin = Number(nums[0]);
+      if (nums.length > 1) out.salaryMax = Number(nums[1]);
+    }
+  }
+  return out;
+}
+
+// Normalize a raw 104 detail payload into a flat, DB-ready detail record.
+// `toolkit.stripHtml` is used when available (worker context); otherwise a
+// local fallback keeps this callable standalone from the staging script.
+export function normalize104Detail(jobNo, payload, toolkit = {}) {
+  const strip = typeof toolkit.stripHtml === "function" ? toolkit.stripHtml : stripHtmlBasic;
+  const data = payload?.data || payload || {};
+  const header = data.header || {};
+  const detail = data.jobDetail || {};
+  const condition = data.condition || {};
+  const welfare = data.welfare || {};
+  const contact = data.contact || {};
+
+  const jdText = strip(detail.jobDescription || "");
+  const category = descriptionList(detail.jobCategory).join(", ");
+  const specialties = descriptionList(condition.specialty);
+  const skills = descriptionList(condition.skill);
+  const majors = descriptionList(condition.major);
+  const languages = Array.isArray(condition.language)
+    ? condition.language.map((l) => [l?.language, l?.ability].filter(Boolean).join(" ")).filter(Boolean)
+    : [];
+  const requirements = [
+    condition?.acceptRole?.description ? `接受身份: ${condition.acceptRole.description}` : "",
+    condition.workExp ? `工作經歷: ${condition.workExp}` : "",
+    condition.edu ? `學歷要求: ${condition.edu}` : "",
+    majors.length ? `科系要求: ${majors.join(", ")}` : "",
+    languages.length ? `語文條件: ${languages.join("、")}` : "",
+    skills.length ? `工具技能: ${skills.join(", ")}` : "",
+    specialties.length ? `擅長工具: ${specialties.join(", ")}` : "",
+    cleanText(condition.other) ? `其他條件: ${strip(condition.other)}` : ""
+  ].filter(Boolean).join("\n");
+
+  const tags = Array.isArray(welfare.tag) ? welfare.tag.map((t) => cleanText(t)).filter(Boolean) : [];
+  const bounds = parse104Salary(detail);
+
+  return {
+    source: "104",
+    externalId: cleanText(jobNo),
+    title: cleanText(header.jobName || detail.jobName),
+    company: cleanText(header.custName),
+    url: `https://www.104.com.tw/job/${encodeURIComponent(cleanText(jobNo))}`,
+    description: [jdText, category ? `職務類別: ${category}` : ""].filter(Boolean).join("\n\n"),
+    requirements,
+    salaryDesc: cleanText(detail.salary),
+    salaryType: salaryTypeFrom(detail.salary, detail.salaryType),
+    salaryMin: bounds.salaryMin,
+    salaryMax: bounds.salaryMax,
+    workExperience: cleanText(condition.workExp),
+    education: cleanText(condition.edu),
+    industry: cleanText(data.industry || header.industryDesc || data.industryDesc),
+    headcount: cleanText(data.employees || header.employees),
+    skills: [...new Set([...skills, ...specialties])],
+    tags,
+    contact: {
+      name: cleanText(contact.hrName),
+      email: cleanText(contact.email),
+      phone: cleanText(contact.phone),
+      reply: cleanText(contact.reply)
+    },
+    appearDate: cleanText(header.appearDate)
+  };
+}
+
 function normalizeYouratorJob(job, source, toolkit) {
   // Yourator API 回傳的 job 欄位在不同版本略有差異，這裡對多種形狀做防禦性讀取。
   const companyName = job?.company_name || job?.company?.name || job?.employer?.name || "";
