@@ -87,7 +87,9 @@
     "career-ops:staging": "node tooling/scripts/career-ops-staging.mjs --jobs tooling/data/app/career-ops-jobs.json --out tooling/data/app/career-ops-staging.json --report-out tooling/data/app/career-ops-staging.md",
     "career-ops:staging:probe": "node tooling/scripts/career-ops-staging.mjs --jobs tooling/data/app/career-ops-jobs.json --out tooling/data/app/career-ops-staging.json --report-out tooling/data/app/career-ops-staging.md --enrich --probe 3",
     "career-ops:staging:push": "node tooling/scripts/career-ops-staging.mjs --jobs tooling/data/app/career-ops-jobs.json --out tooling/data/app/career-ops-staging.json --report-out tooling/data/app/career-ops-staging.md --push",
-    "career-ops:staging:push-enrich": "node tooling/scripts/career-ops-staging.mjs --jobs tooling/data/app/career-ops-jobs.json --out tooling/data/app/career-ops-staging.json --report-out tooling/data/app/career-ops-staging.md --push --enrich --detail-limit 40"
+    "career-ops:staging:push-enrich": "node tooling/scripts/career-ops-staging.mjs --jobs tooling/data/app/career-ops-jobs.json --out tooling/data/app/career-ops-staging.json --report-out tooling/data/app/career-ops-staging.md --push --enrich --detail-limit 40",
+    "career-ops:salary:help": "node tooling/scripts/career-ops-salary-insights.mjs --help",
+    "career-ops:salary": "node --max-old-space-size=6144 tooling/scripts/career-ops-salary-insights.mjs --jobs tooling/data/app/career-ops-jobs.json --out tooling/data/app/career-ops-salary-insights.json --js-out tooling/data/app/career-ops-salary-insights.js --report-out tooling/data/app/career-ops-salary-insights.md"
   },
   "devDependencies": {
     "js-yaml": "^4.1.1",
