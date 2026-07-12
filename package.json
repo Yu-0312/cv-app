@@ -82,7 +82,12 @@
     "smoke:test": "npm run build && node tooling/scripts/smoke-test.mjs",
     "career-ops:upstream:import": "node tooling/scripts/career-ops-import-upstream-portals.mjs",
     "career-ops:upstream:scrape": "node tooling/scripts/career-ops-worker.mjs --source tooling/data/career-ops-upstream-sources.json --json-out tooling/data/app/career-ops-upstream-jobs.json --js-out tooling/data/app/career-ops-upstream-jobs.js",
-    "career-ops:merge-pools": "node tooling/scripts/career-ops-merge-job-pools.mjs"
+    "career-ops:merge-pools": "node tooling/scripts/career-ops-merge-job-pools.mjs",
+    "career-ops:staging:help": "node tooling/scripts/career-ops-staging.mjs --help",
+    "career-ops:staging": "node tooling/scripts/career-ops-staging.mjs --jobs tooling/data/app/career-ops-jobs.json --out tooling/data/app/career-ops-staging.json --report-out tooling/data/app/career-ops-staging.md",
+    "career-ops:staging:probe": "node tooling/scripts/career-ops-staging.mjs --jobs tooling/data/app/career-ops-jobs.json --out tooling/data/app/career-ops-staging.json --report-out tooling/data/app/career-ops-staging.md --enrich --probe 3",
+    "career-ops:staging:push": "node tooling/scripts/career-ops-staging.mjs --jobs tooling/data/app/career-ops-jobs.json --out tooling/data/app/career-ops-staging.json --report-out tooling/data/app/career-ops-staging.md --push",
+    "career-ops:staging:push-enrich": "node tooling/scripts/career-ops-staging.mjs --jobs tooling/data/app/career-ops-jobs.json --out tooling/data/app/career-ops-staging.json --report-out tooling/data/app/career-ops-staging.md --push --enrich --detail-limit 40"
   },
   "devDependencies": {
     "js-yaml": "^4.1.1",
