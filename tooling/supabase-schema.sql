@@ -398,3 +398,168 @@ create index if not exists career_ops_analyses_user_id_idx on public.career_ops_
 create index if not exists career_ops_analyses_status_idx on public.career_ops_analyses (status);
 create index if not exists career_ops_shared_analyses_slug_idx on public.career_ops_shared_analyses (slug);
 create index if not exists career_ops_job_health_log_checked_at_idx on public.career_ops_job_health_log (checked_at desc);
+
+-- ============================================================
+-- CAREER OPS — 104 STAGING POOL (two-stage 串聯 / two-stage linking)
+-- Evolves the old "one big JSON snapshot" model into a persisted,
+-- deduped, two-stage job pool inspired by the 104-job-tracker pattern:
+--
+--   Stage 1 (cheap, no detail cost):
+--     crawl the 104 search list JSON API  →  career_ops_job_candidates
+--   Stage 2 (throttled, on-demand):
+--     fetch the 104 detail JSON API        →  career_ops_job_details
+--
+-- Dedup key:  (source, external_id)  e.g. ('104', jobNo).
+-- job_key mirrors scripts/lib/utils.mjs stableJobKey() for cross-source dedup.
+-- Freshness:  first_seen_at / last_seen_at / seen_count + is_expired,
+--             so daily runs can tell "new / still-live / gone (expired)".
+-- Liveness:   career_ops_job_details.is_live + http_status let the pipeline
+--             drop dead links before expensive recompute.
+--
+-- Access mirrors career_ops_job_health_log (shared infrastructure):
+--   read  = any authenticated user
+--   write = service_role only (the crawler / staging script)
+--
+-- When you add/rename columns, bump schema_version on write and keep the
+-- frontend guarding on it so a shape change never silently breaks the UI.
+-- ============================================================
+
+-- Stage 1 — candidate pool (one row per live 104 posting, cheap list fields)
+create table if not exists public.career_ops_job_candidates (
+  id uuid primary key default gen_random_uuid(),
+  source text not null,                              -- '104' | 'yourator' | ...
+  external_id text not null,                         -- per-source stable id (104 jobNo)
+  job_key text not null default '',                  -- stableJobKey() url:... (cross-source dedup)
+  title text not null default '',
+  company text not null default '',
+  url text not null default '',
+  location text not null default '',
+  salary_desc text not null default '',
+  employment_type text not null default '',
+  appear_date text not null default '',              -- raw 104 appearDate
+  market text not null default 'tw',
+  list_json jsonb not null default '{}'::jsonb,       -- raw stage-1 list row (audit / re-normalize)
+  content_hash text not null default '',             -- hash of meaningful fields (repost / change detection)
+  detail_status text not null default 'pending',     -- pending | fetched | failed | stale | skipped
+  detail_fetched_at timestamptz,
+  first_seen_at timestamptz not null default now(),
+  last_seen_at timestamptz not null default now(),
+  seen_count integer not null default 1,
+  is_active boolean not null default true,
+  is_expired boolean not null default false,
+  expired_at timestamptz,
+  schema_version integer not null default 1,
+  created_at timestamptz not null default now(),
+  updated_at timestamptz not null default now(),
+  unique (source, external_id)
+);
+
+drop trigger if exists career_ops_job_candidates_set_updated_at on public.career_ops_job_candidates;
+create trigger career_ops_job_candidates_set_updated_at
+before update on public.career_ops_job_candidates
+for each row execute function public.handle_cv_profiles_updated_at();
+
+alter table public.career_ops_job_candidates enable row level security;
+
+drop policy if exists "Authenticated users can read job candidates" on public.career_ops_job_candidates;
+create policy "Authenticated users can read job candidates"
+on public.career_ops_job_candidates for select to authenticated using (true);
+
+drop policy if exists "Service role can write job candidates" on public.career_ops_job_candidates;
+create policy "Service role can write job candidates"
+on public.career_ops_job_candidates for all to service_role using (true) with check (true);
+
+-- Stage 2 — enriched detail (one row per candidate, fetched on demand)
+create table if not exists public.career_ops_job_details (
+  id uuid primary key default gen_random_uuid(),
+  candidate_id uuid references public.career_ops_job_candidates(id) on delete cascade,
+  source text not null,
+  external_id text not null,
+  job_key text not null default '',
+  description text not null default '',              -- full JD (stage-2)
+  requirements text not null default '',
+  salary_min integer,
+  salary_max integer,
+  salary_type text not null default '',              -- monthly | yearly | hourly | negotiable | ''
+  salary_desc text not null default '',
+  work_experience text not null default '',
+  education text not null default '',
+  industry text not null default '',
+  headcount text not null default '',
+  skills jsonb not null default '[]'::jsonb,
+  tags jsonb not null default '[]'::jsonb,
+  contact jsonb not null default '{}'::jsonb,
+  raw_json jsonb not null default '{}'::jsonb,        -- raw 104 detail payload
+  detail_hash text not null default '',
+  is_live boolean not null default true,             -- liveness check result
+  http_status integer,
+  last_checked_at timestamptz,
+  schema_version integer not null default 1,
+  fetched_at timestamptz not null default now(),
+  created_at timestamptz not null default now(),
+  updated_at timestamptz not null default now(),
+  unique (source, external_id)
+);
+
+drop trigger if exists career_ops_job_details_set_updated_at on public.career_ops_job_details;
+create trigger career_ops_job_details_set_updated_at
+before update on public.career_ops_job_details
+for each row execute function public.handle_cv_profiles_updated_at();
+
+alter table public.career_ops_job_details enable row level security;
+
+drop policy if exists "Authenticated users can read job details" on public.career_ops_job_details;
+create policy "Authenticated users can read job details"
+on public.career_ops_job_details for select to authenticated using (true);
+
+drop policy if exists "Service role can write job details" on public.career_ops_job_details;
+create policy "Service role can write job details"
+on public.career_ops_job_details for all to service_role using (true) with check (true);
+
+-- Staging pool indexes
+create index if not exists career_ops_job_candidates_source_status_idx
+  on public.career_ops_job_candidates (source, detail_status);
+create index if not exists career_ops_job_candidates_job_key_idx
+  on public.career_ops_job_candidates (job_key);
+create index if not exists career_ops_job_candidates_last_seen_idx
+  on public.career_ops_job_candidates (last_seen_at desc);
+create index if not exists career_ops_job_candidates_active_idx
+  on public.career_ops_job_candidates (is_active, is_expired);
+create index if not exists career_ops_job_details_job_key_idx
+  on public.career_ops_job_details (job_key);
+create index if not exists career_ops_job_details_live_idx
+  on public.career_ops_job_details (is_live);
+
+-- Convenience join surface for the frontend: live candidates + their detail.
+-- security_invoker = true → the base tables' RLS applies to the caller.
+drop view if exists public.career_ops_job_pool;
+create view public.career_ops_job_pool
+with (security_invoker = true) as
+select
+  c.source,
+  c.external_id,
+  c.job_key,
+  c.title,
+  c.company,
+  c.url,
+  c.location,
+  coalesce(nullif(d.salary_desc, ''), c.salary_desc) as salary_desc,
+  d.salary_min,
+  d.salary_max,
+  d.salary_type,
+  coalesce(d.description, '')                         as description,
+  d.skills,
+  d.industry,
+  d.education,
+  d.work_experience,
+  c.detail_status,
+  coalesce(d.is_live, true)                           as is_live,
+  c.first_seen_at,
+  c.last_seen_at,
+  c.seen_count,
+  c.is_active,
+  c.is_expired
+from public.career_ops_job_candidates c
+left join public.career_ops_job_details d
+  on d.source = c.source and d.external_id = c.external_id
+where c.is_active and not c.is_expired;
