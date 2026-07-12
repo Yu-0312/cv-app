@@ -133,6 +133,73 @@ for delete
 using (auth.uid() = user_id);
 
 -- ============================================================
+-- CAREER OPS — APPLICATION STATUS EVENTS (求職追蹤時間軸)
+-- One row per status transition of a tracked job. This is the event log
+-- that unlocks funnel / conversion / dwell-time analytics: cv_career_ops_jobs
+-- only stores the *current* status, so we can count "how many are in
+-- interviewing" but not "how long a job sat in 已投遞". A trigger auto-logs
+-- every status change, so the app doesn't have to remember to write events.
+-- ============================================================
+
+create table if not exists public.cv_career_ops_job_events (
+  id uuid primary key default gen_random_uuid(),
+  user_id uuid not null references auth.users(id) on delete cascade,
+  job_key text not null,
+  from_status text not null default '',            -- '' for the first (insert) event
+  to_status text not null default '',
+  changed_at timestamptz not null default now(),
+  created_at timestamptz not null default now()
+);
+
+create index if not exists cv_career_ops_job_events_user_key_idx
+  on public.cv_career_ops_job_events (user_id, job_key, changed_at);
+create index if not exists cv_career_ops_job_events_user_changed_idx
+  on public.cv_career_ops_job_events (user_id, changed_at desc);
+
+-- Auto-log: on insert, record the initial status; on status change, record
+-- the transition. No-op when status is unchanged so we don't spam the log
+-- on unrelated field updates.
+create or replace function public.handle_cv_career_ops_job_status_event()
+returns trigger
+language plpgsql
+as $$
+begin
+  if (tg_op = 'INSERT') then
+    insert into public.cv_career_ops_job_events (user_id, job_key, from_status, to_status, changed_at)
+    values (new.user_id, new.job_key, '', coalesce(new.status, ''), coalesce(new.updated_at, now()));
+  elsif (tg_op = 'UPDATE' and coalesce(new.status, '') is distinct from coalesce(old.status, '')) then
+    insert into public.cv_career_ops_job_events (user_id, job_key, from_status, to_status, changed_at)
+    values (new.user_id, new.job_key, coalesce(old.status, ''), coalesce(new.status, ''), now());
+  end if;
+  return new;
+end;
+$$;
+
+drop trigger if exists cv_career_ops_jobs_log_status on public.cv_career_ops_jobs;
+create trigger cv_career_ops_jobs_log_status
+after insert or update on public.cv_career_ops_jobs
+for each row
+execute function public.handle_cv_career_ops_job_status_event();
+
+alter table public.cv_career_ops_job_events enable row level security;
+
+-- Events are append-only from the user's perspective: they can read their own
+-- timeline; inserts happen via the trigger (security definer context) but we
+-- also allow direct self-inserts for backfill. No update/delete policy → the
+-- log is immutable to clients.
+drop policy if exists "Users can view own job events" on public.cv_career_ops_job_events;
+create policy "Users can view own job events"
+on public.cv_career_ops_job_events
+for select
+using (auth.uid() = user_id);
+
+drop policy if exists "Users can insert own job events" on public.cv_career_ops_job_events;
+create policy "Users can insert own job events"
+on public.cv_career_ops_job_events
+for insert
+with check (auth.uid() = user_id);
+
+-- ============================================================
 -- PUBLIC SHARE PAGES
 -- One public snapshot per user. Owners can publish/update/delete
 -- their own snapshot; anyone can read by slug.
