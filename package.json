@@ -91,7 +91,9 @@
     "career-ops:salary:help": "node tooling/scripts/career-ops-salary-insights.mjs --help",
     "career-ops:salary": "node --max-old-space-size=6144 tooling/scripts/career-ops-salary-insights.mjs --jobs tooling/data/app/career-ops-jobs.json --out tooling/data/app/career-ops-salary-insights.json --js-out tooling/data/app/career-ops-salary-insights.js --report-out tooling/data/app/career-ops-salary-insights.md",
     "career-ops:stats:help": "node tooling/scripts/career-ops-stats.mjs --help",
-    "career-ops:stats": "node tooling/scripts/career-ops-stats.mjs --supabase-url \"$SUPABASE_URL\" --supabase-key \"$SUPABASE_SERVICE_ROLE_KEY\" --out tooling/data/app/career-ops-stats.json --js-out tooling/data/app/career-ops-stats.js --report-out tooling/data/app/career-ops-stats.md"
+    "career-ops:stats": "node tooling/scripts/career-ops-stats.mjs --supabase-url \"$SUPABASE_URL\" --supabase-key \"$SUPABASE_SERVICE_ROLE_KEY\" --out tooling/data/app/career-ops-stats.json --js-out tooling/data/app/career-ops-stats.js --report-out tooling/data/app/career-ops-stats.md",
+    "career-ops:digest:help": "node tooling/scripts/career-ops-digest.mjs --help",
+    "career-ops:digest": "node tooling/scripts/career-ops-digest.mjs --supabase-url \"$SUPABASE_URL\" --supabase-key \"$SUPABASE_SERVICE_ROLE_KEY\" --since-hours 24 --out tooling/data/app/career-ops-digest.json --js-out tooling/data/app/career-ops-digest.js --report-out tooling/data/app/career-ops-digest.md"
   },
   "devDependencies": {
     "js-yaml": "^4.1.1",
