@@ -21271,6 +21271,113 @@ Schema:
                     ${staleRows ? `<ul style="margin:0;padding-left:18px;font-size:12px;">${staleRows}</ul>` : `<p style="color:var(--muted);font-size:12px;margin:0;">無</p>`}
                   </div>
                 </div>` : `<p style="color:var(--muted);font-size:12px;margin-top:8px;">目前沒有到期或久未更新的職缺。</p>`}
+              <div id="careerOpsEventInsights"></div>
+            </div>`;
+        }
+
+        // ── 雲端事件時間軸：停留中位數 + 近期動態（鏡射 stats/digest lib）──
+        // 事件表 cv_career_ops_job_events 由 DB trigger 於狀態變更時自動記錄。
+        // 非同步抓取、fail-safe：抓不到或表為空就優雅降級，不阻塞主 render。
+        let careerOpsEventsCache = { key: "", at: 0, rows: [] };
+        async function careerOpsFetchEvents() {
+          if (!careerOpsSupabaseReady()) return [];
+          const uid = window.cvStudioState.user.id;
+          const now = Date.now();
+          if (careerOpsEventsCache.key === uid && (now - careerOpsEventsCache.at) < 60000) return careerOpsEventsCache.rows;
+          try {
+            const { data, error } = await window.cvStudioState.client
+              .from("cv_career_ops_job_events")
+              .select("job_key, from_status, to_status, changed_at")
+              .eq("user_id", uid)
+              .order("changed_at", { ascending: true })
+              .limit(5000);
+            if (error) return [];
+            const rows = Array.isArray(data) ? data : [];
+            careerOpsEventsCache = { key: uid, at: now, rows };
+            return rows;
+          } catch { return []; }
+        }
+        function careerOpsMedian(xs) {
+          const a = (xs || []).filter(Number.isFinite).sort((p, q) => p - q);
+          if (!a.length) return null;
+          const m = (a.length - 1) / 2, lo = Math.floor(m), hi = Math.ceil(m);
+          return lo === hi ? a[lo] : (a[lo] + a[hi]) / 2;
+        }
+        function careerOpsGroupEvents(events) {
+          const g = new Map();
+          (events || []).forEach(ev => {
+            if (ev.job_key == null) return;
+            if (!g.has(ev.job_key)) g.set(ev.job_key, []);
+            g.get(ev.job_key).push(ev);
+          });
+          g.forEach(list => list.sort((a, b) => new Date(a.changed_at) - new Date(b.changed_at)));
+          return g;
+        }
+        function careerOpsComputeDwellLite(events, now = Date.now()) {
+          const byJob = careerOpsGroupEvents(events);
+          const dur = {};
+          CAREER_OPS_FUNNEL_STAGES.forEach(s => { dur[s] = []; });
+          byJob.forEach(list => {
+            const pts = list
+              .map(ev => ({ stage: CAREER_OPS_STATUS_STAGE[String(ev.to_status || "").trim()] || "", t: new Date(ev.changed_at).getTime() }))
+              .filter(p => Number.isFinite(p.t));
+            for (let i = 0; i < pts.length; i += 1) {
+              const { stage, t } = pts[i];
+              if (!stage) continue;
+              const end = i + 1 < pts.length ? pts[i + 1].t : now;
+              const d = (end - t) / 86400000;
+              if (d >= 0) dur[stage].push(d);
+            }
+          });
+          const per = {};
+          CAREER_OPS_FUNNEL_STAGES.forEach(s => { per[s] = { medianDays: careerOpsMedian(dur[s]), samples: dur[s].length }; });
+          return per;
+        }
+        function careerOpsRecentChanges(jobs, events, { now = Date.now(), sinceHours = 168 } = {}) {
+          const sinceT = now - sinceHours * 3600000;
+          const jobByKey = new Map();
+          (jobs || []).forEach(j => { jobByKey.set(j.jobKey, j); });
+          const label = k => { const j = jobByKey.get(k); return j ? ([j.company, j.title].filter(Boolean).join(" · ") || k) : k; };
+          const changes = [], offers = [], interviews = [];
+          (events || []).forEach(ev => {
+            const t = new Date(ev.changed_at).getTime();
+            if (!(t > sinceT && t <= now)) return;
+            const from = ev.from_status || "", to = ev.to_status || "";
+            const stage = CAREER_OPS_STATUS_STAGE[String(to).trim()] || "";
+            if (from !== to) changes.push({ label: label(ev.job_key), from, to });
+            if (stage === "offer") offers.push(label(ev.job_key));
+            else if (stage === "interviewing") interviews.push(label(ev.job_key));
+          });
+          return { changes, offers, interviews, sinceHours };
+        }
+        async function careerOpsRenderEventInsights() {
+          const host = document.getElementById("careerOpsEventInsights");
+          if (!host) return;
+          if (!careerOpsSupabaseReady()) { host.innerHTML = ""; return; }
+          const events = await careerOpsFetchEvents();
+          const host2 = document.getElementById("careerOpsEventInsights");
+          if (!host2) return;
+          if (!events.length) {
+            host2.innerHTML = `<p style="color:var(--muted);font-size:11px;margin:8px 0 0;">尚無狀態事件時間軸資料。狀態變更同步到雲端後，這裡會顯示各階段停留中位數與近 7 天動態。</p>`;
+            return;
+          }
+          const jobs = loadCareerOpsJobs();
+          const dwell = careerOpsComputeDwellLite(events);
+          const rec = careerOpsRecentChanges(jobs, events, { sinceHours: 168 });
+          const dwellLine = CAREER_OPS_FUNNEL_STAGES
+            .map(s => { const d = dwell[s]; return d.samples ? `${CAREER_OPS_STAGE_LABEL[s]} ${Math.round(d.medianDays * 10) / 10}d` : null; })
+            .filter(Boolean).join("｜");
+          const changeRows = rec.changes.slice(0, 8)
+            .map(c => `<li>${careerText(c.label)}：${careerText(c.from || "（新增）")} → ${careerText(c.to)}</li>`).join("");
+          const highlight = [
+            rec.offers.length ? `🎉 拿到 Offer ${rec.offers.length}` : "",
+            rec.interviews.length ? `📞 進面試 ${rec.interviews.length}` : "",
+          ].filter(Boolean).join("｜");
+          host2.innerHTML = `
+            <div style="margin-top:10px;border-top:1px solid var(--line);padding-top:10px;">
+              ${dwellLine ? `<p style="font-size:12px;margin:0 0 6px;"><strong>各階段停留中位數：</strong>${careerText(dwellLine)}</p>` : ""}
+              <h5 style="margin:4px 0 4px;font-size:12px;">近 7 天動態${highlight ? `　<span style="color:var(--muted);font-weight:400;">${careerText(highlight)}</span>` : ""}</h5>
+              ${changeRows ? `<ul style="margin:0;padding-left:18px;font-size:12px;">${changeRows}</ul>` : `<p style="color:var(--muted);font-size:12px;margin:0;">近 7 天沒有狀態變動。</p>`}
             </div>`;
         }
 
@@ -21738,6 +21845,7 @@ Schema:
 	                ${detailBlocks}
 	              </div>
 	            </div>`;
+	          try { careerOpsRenderEventInsights(); } catch {}
 	        }
 
 	        function getCareerOpsJob(id) {
