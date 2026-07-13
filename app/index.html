@@ -21173,7 +21173,108 @@ Schema:
 	          return { total: jobs.length, evaluated: evaluated.length, average, best: best?.score ?? "—", newJobs, expired, markets };
 	        }
 
-	        function careerOpsCountBy(items, getter) {
+	        // ── 求職漏斗 / 過期追蹤（就地計算，鏡射 tooling/lib/career-ops-stats.mjs）──
+        // 純現況版：由每筆的目前 status 推「曾到達」的最高階段（累積漏斗）。
+        // 停留時間需要事件時間軸，這裡不算；離線也能跑，零 LLM。
+        const CAREER_OPS_FUNNEL_STAGES = ["considering", "shortlisted", "applied", "interviewing", "offer"];
+        const CAREER_OPS_STAGE_LABEL = { considering: "評估中", shortlisted: "短名單", applied: "已投遞", interviewing: "面試中", offer: "Offer" };
+        const CAREER_OPS_STATUS_STAGE = {
+          "待評估": "considering", "觀望": "considering",
+          "值得投遞": "shortlisted", "強烈投遞": "shortlisted",
+          "已投遞": "applied", "待追蹤": "applied",
+          "面試中": "interviewing", "Offer": "offer",
+        };
+        const CAREER_OPS_TERMINAL_STATUS = { "拒絕": "rejected", "略過": "dropped", "已下架": "dropped" };
+        function careerOpsStageRank(status) {
+          const stage = CAREER_OPS_STATUS_STAGE[String(status || "").trim()] || "";
+          return stage ? CAREER_OPS_FUNNEL_STAGES.indexOf(stage) + 1 : 0;
+        }
+        function careerOpsDaysBetween(a, b) {
+          const t1 = new Date(a).getTime(), t2 = new Date(b).getTime();
+          if (Number.isNaN(t1) || Number.isNaN(t2)) return null;
+          return (t2 - t1) / 86400000;
+        }
+        function careerOpsComputeFunnelLite(jobs, { now = Date.now(), staleDays = 14 } = {}) {
+          const reached = CAREER_OPS_FUNNEL_STAGES.map(() => 0);
+          let rejected = 0, dropped = 0;
+          const followUps = [], stale = [];
+          (jobs || []).forEach(job => {
+            const term = CAREER_OPS_TERMINAL_STATUS[String(job.status || "").trim()];
+            if (term === "rejected") rejected += 1;
+            else if (term === "dropped") dropped += 1;
+            const rank = careerOpsStageRank(job.status);
+            for (let i = 0; i < rank; i += 1) reached[i] += 1;
+            // 待追蹤到期（有設 nextFollowUpAt、已到期、且未終結）
+            if (!term && job.nextFollowUpAt) {
+              const due = new Date(job.nextFollowUpAt).getTime();
+              if (Number.isFinite(due) && due <= now) {
+                followUps.push({ job, overdueDays: Math.round((now - due) / 86400000 * 10) / 10 });
+              }
+            }
+            // 過期（仍在進行中、且久未更新）
+            if (!term && rank > 0 && !job.isExpired) {
+              const lastTouch = Math.max(
+                new Date(job.updatedAt || 0).getTime() || 0,
+                new Date(job.lastSeenAt || 0).getTime() || 0,
+              );
+              if (lastTouch > 0) {
+                const idle = (now - lastTouch) / 86400000;
+                if (idle >= staleDays) stale.push({ job, idleDays: Math.round(idle * 10) / 10 });
+              }
+            }
+          });
+          followUps.sort((a, b) => b.overdueDays - a.overdueDays);
+          stale.sort((a, b) => b.idleDays - a.idleDays);
+          const stages = CAREER_OPS_FUNNEL_STAGES.map((stage, i) => {
+            const prev = i === 0 ? reached[i] : reached[i - 1];
+            const rate = prev ? reached[i] / prev : null;
+            return { stage, label: CAREER_OPS_STAGE_LABEL[stage], reached: reached[i], convRate: i === 0 ? null : rate };
+          });
+          return { stages, rejected, dropped, followUps, stale, staleDays };
+        }
+        function careerOpsAnalyticsPanel(jobs) {
+          const f = careerOpsComputeFunnelLite(jobs);
+          const maxReached = Math.max(1, ...f.stages.map(s => s.reached));
+          const bars = f.stages.map(s => {
+            const pct = Math.round((s.reached / maxReached) * 100);
+            const conv = s.convRate == null ? "" : `<span style="color:var(--muted);font-size:11px;">↳ ${Math.round(s.convRate * 100)}%</span>`;
+            return `
+              <div style="display:flex;align-items:center;gap:8px;">
+                <span style="color:var(--muted);font-size:11px;min-width:52px;text-align:right;">${careerText(s.label)}</span>
+                <div style="flex:1;height:22px;border-radius:6px;background:var(--surface-strong);overflow:hidden;">
+                  <div style="height:100%;width:${pct}%;min-width:${s.reached ? 28 : 0}px;background:linear-gradient(90deg,#93c5fd,#3b82f6);border-radius:6px;display:flex;align-items:center;justify-content:flex-end;padding-right:6px;color:#fff;font-size:11px;font-weight:700;">${s.reached || ""}</div>
+                </div>
+                ${conv}
+              </div>`;
+          }).join("");
+          const followRows = f.followUps.slice(0, 6).map(({ job, overdueDays }) => {
+            const od = overdueDays > 0 ? `逾期 ${overdueDays} 天` : "今日";
+            return `<li>${careerText([job.company, job.title].filter(Boolean).join(" · ") || job.jobKey || "未填公司")}｜${careerText(job.status)}（${od}）</li>`;
+          }).join("");
+          const staleRows = f.stale.slice(0, 6).map(({ job, idleDays }) =>
+            `<li>${careerText([job.company, job.title].filter(Boolean).join(" · ") || job.jobKey || "未填公司")}｜${careerText(job.status)}（閒置 ${idleDays} 天）</li>`
+          ).join("");
+          const anyReminder = f.followUps.length || f.stale.length;
+          return `
+            <div class="career-ops-panel" style="margin-bottom:12px;">
+              <h4>求職漏斗 · 追蹤提醒</h4>
+              <div style="display:grid;gap:6px;margin:10px 0 4px;">${bars}</div>
+              <p style="color:var(--muted);font-size:11px;margin-top:6px;">曾到達各階段的職缺數（累積）；拒絕 ${f.rejected}、放棄/下架 ${f.dropped}。停留時間需雲端事件時間軸，於工具管線 (career-ops:stats) 計算。</p>
+              ${anyReminder ? `
+                <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:10px;">
+                  <div>
+                    <h5 style="margin:0 0 4px;font-size:12px;">⏰ 待追蹤到期（${f.followUps.length}）</h5>
+                    ${followRows ? `<ul style="margin:0;padding-left:18px;font-size:12px;">${followRows}</ul>` : `<p style="color:var(--muted);font-size:12px;margin:0;">無</p>`}
+                  </div>
+                  <div>
+                    <h5 style="margin:0 0 4px;font-size:12px;">💤 久未更新（≥${f.staleDays} 天，${f.stale.length}）</h5>
+                    ${staleRows ? `<ul style="margin:0;padding-left:18px;font-size:12px;">${staleRows}</ul>` : `<p style="color:var(--muted);font-size:12px;margin:0;">無</p>`}
+                  </div>
+                </div>` : `<p style="color:var(--muted);font-size:12px;margin-top:8px;">目前沒有到期或久未更新的職缺。</p>`}
+            </div>`;
+        }
+
+        function careerOpsCountBy(items, getter) {
 	          const counts = new Map();
 	          items.forEach(item => {
 	            const key = getter(item) || "Unknown";
@@ -21584,6 +21685,7 @@ Schema:
 	              <div class="career-ops-stat"><span>市場數</span><strong>${careerText(stats.markets || 0)}</strong></div>
 	              <div class="career-ops-stat"><span>新 / 下架</span><strong>${careerText(`${stats.newJobs} / ${stats.expired}`)}</strong></div>
 	            </div>
+	            ${careerOpsAnalyticsPanel(jobs)}
 	            ${careerOpsSearchStrategy(jobs)}
 	            <div class="career-ops-grid">
 	              <div class="career-ops-list">${rows}</div>
