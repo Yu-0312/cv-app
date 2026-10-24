@@ -10809,7 +10809,32 @@
       }
 
       function normalizeLayoutPrefs(value) {
-        return isPlainObject(value) ? value : {};
+        if (!isPlainObject(value)) return {};
+        // Defense-in-depth: blockStyles values are later interpolated into a
+        // style="" attribute, so sanitize each entry down to finite numbers and
+        // drop everything else. This neutralizes malicious profile/share JSON
+        // (e.g. fontSize: '0px"><img src=x onerror=...>') at the input boundary.
+        const sanitizeNumber = (num) => {
+          const n = Number(num);
+          return Number.isFinite(n) ? n : undefined;
+        };
+        Object.values(value).forEach((layout) => {
+          if (!isPlainObject(layout) || !isPlainObject(layout.blockStyles)) return;
+          Object.keys(layout.blockStyles).forEach((blockId) => {
+            const raw = layout.blockStyles[blockId];
+            if (!isPlainObject(raw)) {
+              delete layout.blockStyles[blockId];
+              return;
+            }
+            const clean = {};
+            const fontSize = sanitizeNumber(raw.fontSize);
+            const padding = sanitizeNumber(raw.padding);
+            if (fontSize !== undefined) clean.fontSize = fontSize;
+            if (padding !== undefined) clean.padding = padding;
+            layout.blockStyles[blockId] = clean;
+          });
+        });
+        return value;
       }
 
       function normalizeTemplateId(value, fallback = "n-tech") {
@@ -11898,9 +11923,14 @@
 
       function renderEditableBlock(blockId, layoutState) {
         const blockStyle = getBlockStyle(blockId, layoutState);
+        // Coerce to finite numbers before interpolating into the style attribute.
+        // blockStyle values originate from stored/cloud/public-share profile JSON,
+        // so a string value could otherwise break out of style="" and inject HTML.
+        const fontSize = Number(blockStyle.fontSize);
+        const padding = Number(blockStyle.padding);
         const style = [
-          blockStyle.fontSize ? `font-size:${blockStyle.fontSize}px;` : "",
-          blockStyle.padding ? `padding:${blockStyle.padding}px;` : ""
+          Number.isFinite(fontSize) && fontSize > 0 ? `font-size:${fontSize}px;` : "",
+          Number.isFinite(padding) && padding >= 0 ? `padding:${padding}px;` : ""
         ].join("");
         return `
           <section
