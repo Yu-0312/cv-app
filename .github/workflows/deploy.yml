@@ -38,7 +38,8 @@ jobs:
         run: npm run build
 
       - name: Verify runtime data
-        run: npm run runtime:data:verify
+        # skip-remote: the configured Supabase project no longer resolves; local bundle checks still run.
+        run: npm run runtime:data:verify -- --skip-remote
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
