@@ -328,6 +328,19 @@ const SUPABASE_STUB_SOURCE = `
           from(tableName) {
             return createBuilder(tableName);
           },
+          rpc(fnName, args = {}) {
+            const result = fnName === "get_public_profile"
+              ? findPublicProfile({ slug: args.p_slug })
+              : null;
+            const data = result
+              ? { content: result.content, template_id: result.template_id, title: result.title }
+              : null;
+            return {
+              maybeSingle() { return resolve(data); },
+              single() { return resolve(data); },
+              then(onFulfilled, onRejected) { return resolve(data ? [data] : []).then(onFulfilled, onRejected); }
+            };
+          },
           storage: createStorage()
         };
       }

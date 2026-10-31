@@ -37,7 +37,7 @@ jobs:
         with:
           node-version: 20
       - name: Install dependencies
-        run: npm install
+        run: npm ci --ignore-scripts
 
       - name: Check expiry rate (threshold 25%)
         id: check

@@ -224,11 +224,30 @@ execute function public.handle_cv_profiles_updated_at();
 
 alter table public.cv_public_profiles enable row level security;
 
+-- 訪客不能直接 select（否則可列出整張表），改用下方 get_public_profile(slug) RPC。
 drop policy if exists "Anyone can view public CV shares" on public.cv_public_profiles;
-create policy "Anyone can view public CV shares"
+drop policy if exists "Users can view own public CV share" on public.cv_public_profiles;
+create policy "Users can view own public CV share"
 on public.cv_public_profiles
 for select
-using (true);
+to authenticated
+using (auth.uid() = user_id);
+
+create or replace function public.get_public_profile(p_slug text)
+returns table (content jsonb, template_id text, title text)
+language sql
+stable
+security definer
+set search_path = ''
+as $$
+  select p.content, p.template_id, p.title
+  from public.cv_public_profiles p
+  where p.slug = p_slug
+  limit 1;
+$$;
+
+revoke all on function public.get_public_profile(text) from public;
+grant execute on function public.get_public_profile(text) to anon, authenticated;
 
 drop policy if exists "Users can insert own public CV share" on public.cv_public_profiles;
 create policy "Users can insert own public CV share"
@@ -292,13 +311,18 @@ using (
   and (storage.foldername(name))[1] = auth.uid()::text
 );
 
--- Allow everyone (including anon) to read images (for public CV preview & PDF)
+-- Public bucket 的公開網址不經過 RLS，分享頁與 PDF 圖片照常可讀。
+-- 這裡只讓本人 select 自己的物件（upload upsert 需要），不開放匿名 list 整個 bucket。
 drop policy if exists "Public can read cv-images" on storage.objects;
-create policy "Public can read cv-images"
+drop policy if exists "Users can read own images" on storage.objects;
+create policy "Users can read own images"
 on storage.objects
 for select
-to public
-using (bucket_id = 'cv-images');
+to authenticated
+using (
+  bucket_id = 'cv-images'
+  and (storage.foldername(name))[1] = auth.uid()::text
+);
 
 -- ============================================================
 -- CAREER OPS SAAS — ANALYSIS LAYER
@@ -401,10 +425,36 @@ create table if not exists public.career_ops_shared_analyses (
 
 alter table public.career_ops_shared_analyses enable row level security;
 
+-- 訪客改用 get_shared_analysis(slug) RPC，一次只取一筆、不回傳 user_id。
 drop policy if exists "Anyone can view shared analysis by slug" on public.career_ops_shared_analyses;
-create policy "Anyone can view shared analysis by slug"
+drop policy if exists "Users can view own shared analyses" on public.career_ops_shared_analyses;
+create policy "Users can view own shared analyses"
 on public.career_ops_shared_analyses for select
-using (expires_at > now());
+to authenticated
+using (auth.uid() = user_id);
+
+create or replace function public.get_shared_analysis(p_slug text)
+returns table (snapshot_json jsonb, expires_at timestamptz, created_at timestamptz)
+language sql
+stable
+security definer
+set search_path = ''
+as $$
+  select s.snapshot_json, s.expires_at, s.created_at
+  from public.career_ops_shared_analyses s
+  where s.slug = p_slug
+    and s.expires_at > now()
+  limit 1;
+$$;
+
+revoke all on function public.get_shared_analysis(text) from public;
+grant execute on function public.get_shared_analysis(text) to anon, authenticated;
+
+alter table public.career_ops_shared_analyses
+  drop constraint if exists career_ops_shared_analyses_expiry_cap;
+alter table public.career_ops_shared_analyses
+  add constraint career_ops_shared_analyses_expiry_cap
+  check (expires_at <= created_at + interval '30 days') not valid;
 
 drop policy if exists "Users can create own shared analyses" on public.career_ops_shared_analyses;
 create policy "Users can create own shared analyses"
@@ -447,7 +497,7 @@ create or replace function public.pg_notify_career_ops_analysis(
   analysis_id uuid,
   user_id uuid,
   profile_id uuid
-) returns void language plpgsql security definer as $$
+) returns void language plpgsql security definer set search_path = '' as $$
 begin
   perform pg_notify(
     'career_ops_analysis_queued',
@@ -459,6 +509,10 @@ begin
   );
 end;
 $$;
+
+-- 只有 service role（Edge Function）能呼叫，避免任何人從 /rest/v1/rpc 偽造 worker 通知。
+revoke all on function public.pg_notify_career_ops_analysis(uuid, uuid, uuid) from public, anon, authenticated;
+grant execute on function public.pg_notify_career_ops_analysis(uuid, uuid, uuid) to service_role;
 
 -- Helpful indexes
 create index if not exists career_ops_analyses_user_id_idx on public.career_ops_analyses (user_id);

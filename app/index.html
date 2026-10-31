@@ -31,6 +31,19 @@
   <script src="./data/app/career-ops-learning.js"></script>
   <script src="./data/app/career-ops-modes.js"></script>
   <script>
+    // 只允許 http(s) / mailto 連結；職缺網址來自爬蟲與 AI 輸出，不能信任 javascript: 等 scheme。
+    function safeHref(value) {
+      const raw = String(value == null ? "" : value).trim();
+      let href = "#";
+      try {
+        const url = new URL(raw, window.location.href);
+        if (url.protocol === "http:" || url.protocol === "https:" || url.protocol === "mailto:") href = url.href;
+      } catch (error) {
+        href = "#";
+      }
+      return href.replace(/[&<>"']/g, (ch) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[ch]);
+    }
+
     function injectScriptOnce(src) {
       if (!src || document.querySelector(`script[src="${src}"]`)) return;
       const script = document.createElement("script");
@@ -12684,10 +12697,9 @@
           setMessage("這個分享頁需要 Supabase 設定才能讀取。", "error");
           return false;
         }
+        // 透過 RPC 依 slug 取一筆：訪客不能直接 select cv_public_profiles（避免整張表被列出）
         const { data, error } = await state.client
-          .from("cv_public_profiles")
-          .select("content, template_id, title")
-          .eq("slug", slug)
+          .rpc("get_public_profile", { p_slug: slug })
           .maybeSingle();
         if (error || !data?.content) {
           setMessage(`找不到公開分享頁${error?.message ? `：${error.message}` : "。"}`, "error");
@@ -14392,7 +14404,7 @@
               <small>${escapeHtml(item.date || "")}${snap ? ` · 使用版本：${escapeHtml(snap.name)}` : ""}</small>
               ${item.note ? `<span>${escapeHtml(item.note)}</span>` : ""}
               <div class="mini-list-actions">
-                ${item.link ? `<a class="button-link soft" href="${escapeHtml(item.link)}" target="_blank" rel="noreferrer noopener">開啟連結</a>` : ""}
+                ${item.link ? `<a class="button-link soft" href="${safeHref(item.link)}" target="_blank" rel="noreferrer noopener">開啟連結</a>` : ""}
                 <button class="ghost" type="button" data-application-delete="${escapeHtml(String(item.id))}" style="color:var(--danger);">刪除</button>
               </div>
             </div>`;
@@ -15474,7 +15486,7 @@
                 <span class="status-chip">${image ? "可套用" : "附件"}</span>
               </div>
               <div class="mini-list-actions">
-                <a class="button-link soft" href="${esc(asset.url)}" target="_blank" rel="noreferrer noopener">開啟</a>
+                <a class="button-link soft" href="${safeHref(asset.url)}" target="_blank" rel="noreferrer noopener">開啟</a>
                 ${image ? `<button class="secondary" type="button" data-pf-asset-cover="${esc(asset.id)}">設為封面</button>` : ""}
                 ${image ? `<button class="soft" type="button" data-pf-asset-section="${esc(asset.id)}">套到首章圖片</button>` : ""}
                 <button class="ghost" type="button" data-pf-asset-copy="${esc(asset.id)}">複製 URL</button>
@@ -18878,7 +18890,7 @@ Schema:
 	                    <ul style="margin:0;padding-left:16px;font-size:12.5px;color:var(--muted);">${d.cvStrategy.map(s => `<li>${careerText(s)}</li>`).join("")}</ul>
 	                  </div>` : ""}
 	                <div class="career-dossier-actions">
-	                  ${url ? `<a href="${careerText(url)}" target="_blank" rel="noreferrer noopener" class="career-link-btn">開啟職缺</a>` : ""}
+	                  ${url ? `<a href="${safeHref(url)}" target="_blank" rel="noreferrer noopener" class="career-link-btn">開啟職缺</a>` : ""}
 	                </div>
 	              </div>
 	            </div>`;
@@ -18900,7 +18912,7 @@ Schema:
 	              </div>
 	              <div class="career-match-score">${careerText(m.score || "—")}</div>`;
 	          return url
-	            ? `<a class="career-match-row" href="${careerText(url)}" target="_blank" rel="noreferrer noopener">${content}</a>`
+	            ? `<a class="career-match-row" href="${safeHref(url)}" target="_blank" rel="noreferrer noopener">${content}</a>`
 	            : `<div class="career-match-row">${content}</div>`;
 	        }
 
@@ -18920,7 +18932,7 @@ Schema:
 	            </div>
 	            <div class="career-match-score">${careerText(s.score || "—")}</div>`;
 	          return url
-	            ? `<a class="career-explore-card" href="${careerText(url)}" target="_blank" rel="noreferrer noopener">${content}</a>`
+	            ? `<a class="career-explore-card" href="${safeHref(url)}" target="_blank" rel="noreferrer noopener">${content}</a>`
 	            : `<div class="career-explore-card">${content}</div>`;
 	        }
 
@@ -18941,7 +18953,7 @@ Schema:
 	            <div style="flex:none;display:flex;align-items:center;gap:6px;">${chip("工作", jobAxis, item.jobPass)}${chip("公司", companyAxis, item.companyPass)}</div>`;
 	          const rowStyle = "display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 14px;border:1px solid var(--line);border-radius:10px;background:#fff;text-decoration:none;color:inherit;";
 	          return url
-	            ? `<a style="${rowStyle}" href="${careerText(url)}" target="_blank" rel="noreferrer noopener">${content}</a>`
+	            ? `<a style="${rowStyle}" href="${safeHref(url)}" target="_blank" rel="noreferrer noopener">${content}</a>`
 	            : `<div style="${rowStyle}">${content}</div>`;
 	        }
 
@@ -21832,7 +21844,7 @@ Schema:
 	                    <div>
 	                      <div class="career-ops-detail-title">${careerText(selected.title)}</div>
 	                      <div class="career-ops-detail-meta">${careerText([selected.company, selected.location, careerOpsJobMarketLabel(selected)].filter(Boolean).join(" · ") || "未填公司")}</div>
-	                      ${selected.url ? `<div class="career-ops-detail-meta"><a href="${careerText(selected.url)}" target="_blank" rel="noreferrer noopener">開啟職缺連結</a></div>` : ""}
+	                      ${selected.url ? `<div class="career-ops-detail-meta"><a href="${safeHref(selected.url)}" target="_blank" rel="noreferrer noopener">開啟職缺連結</a></div>` : ""}
 	                    </div>
 	                    <div class="career-ops-score">${selected.score === "" ? "—" : careerText(selected.score)}<small>${careerText(selected.grade || "未評估")}</small></div>
 	                  </div>

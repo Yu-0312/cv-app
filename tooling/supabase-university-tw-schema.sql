@@ -193,3 +193,30 @@ alter table if exists public.university_tw_registration_departments
 
 create index if not exists university_tw_registration_departments_name_idx
   on public.university_tw_registration_departments (department_name);
+
+-- ============================================================
+-- RLS：前端只能讀，寫入只能用 service role（匯入腳本 / SQL Editor）。
+-- ============================================================
+do $$
+declare
+  t text;
+begin
+  foreach t in array array[
+    'university_tw_snapshots',
+    'university_tw_universities',
+    'university_tw_uac_departments',
+    'university_tw_caac_departments',
+    'university_tw_caac_scores',
+    'university_tw_star_departments',
+    'university_tw_gender_departments',
+    'university_tw_registration_departments'
+  ] loop
+    execute format('alter table public.%I enable row level security', t);
+    execute format('drop policy if exists %I on public.%I', t || '_public_read', t);
+    execute format(
+      'create policy %I on public.%I for select to anon, authenticated using (true)',
+      t || '_public_read', t
+    );
+    execute format('revoke insert, update, delete, truncate on public.%I from anon, authenticated', t);
+  end loop;
+end $$;

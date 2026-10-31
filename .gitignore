@@ -9,6 +9,7 @@ template-reference-*.pdf
 config.js
 !app/config.js
 .claude/worktrees/
+.claude/settings.local.json
 data/raw/104-browser-capture.json
 data/normalized/104-gsat-115-browser.json
 data/career-ops-profiles/

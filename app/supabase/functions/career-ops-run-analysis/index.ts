@@ -31,14 +31,21 @@
 
 import { createClient } from "https://esm.sh/@supabase/supabase-js@2";
 
+const CORS_HEADERS = {
+  "Access-Control-Allow-Origin": "*",
+  "Access-Control-Allow-Headers": "authorization, x-client-info, apikey, content-type",
+};
+
+function json(body: unknown, status = 200): Response {
+  return new Response(JSON.stringify(body), {
+    status,
+    headers: { "content-type": "application/json", ...CORS_HEADERS },
+  });
+}
+
 Deno.serve(async (req: Request) => {
   if (req.method === "OPTIONS") {
-    return new Response(null, {
-      headers: {
-        "Access-Control-Allow-Origin": "*",
-        "Access-Control-Allow-Headers": "authorization, x-client-info, apikey, content-type",
-      },
-    });
+    return new Response(null, { headers: CORS_HEADERS });
   }
 
   const supabaseUrl = Deno.env.get("SUPABASE_URL")!;
@@ -53,10 +60,7 @@ Deno.serve(async (req: Request) => {
   // Authenticate
   const { data: { user }, error: authError } = await supabase.auth.getUser();
   if (authError || !user) {
-    return new Response(JSON.stringify({ error: "Unauthorized" }), {
-      status: 401,
-      headers: { "content-type": "application/json" },
-    });
+    return json({ error: "Unauthorized" }, 401);
   }
 
   // Handle poll (GET ?id=...)
@@ -64,10 +68,7 @@ Deno.serve(async (req: Request) => {
     const url = new URL(req.url);
     const analysisId = url.searchParams.get("id");
     if (!analysisId) {
-      return new Response(JSON.stringify({ error: "Missing ?id parameter" }), {
-        status: 400,
-        headers: { "content-type": "application/json" },
-      });
+      return json({ error: "Missing ?id parameter" }, 400);
     }
     const { data, error } = await supabase
       .from("career_ops_analyses")
@@ -76,15 +77,9 @@ Deno.serve(async (req: Request) => {
       .eq("user_id", user.id)
       .single();
     if (error || !data) {
-      return new Response(JSON.stringify({ error: error?.message || "Not found" }), {
-        status: 404,
-        headers: { "content-type": "application/json" },
-      });
+      return json({ error: error?.message || "Not found" }, 404);
     }
-    return new Response(JSON.stringify(data), {
-      status: 200,
-      headers: { "content-type": "application/json", "Access-Control-Allow-Origin": "*" },
-    });
+    return json(data, 200);
   }
 
   // POST — create analysis job
@@ -93,7 +88,18 @@ Deno.serve(async (req: Request) => {
     let profileId: string | null = body.profileId ?? null;
 
     // Resolve active profile if not specified
-    if (!profileId) {
+    if (profileId) {
+      // profile_id 只有外鍵，不保證屬於呼叫者；先確認所有權，避免 worker 用 service role 讀到別人的履歷。
+      const { data: owned } = await supabase
+        .from("career_ops_user_profiles")
+        .select("id")
+        .eq("id", profileId)
+        .eq("user_id", user.id)
+        .maybeSingle();
+      if (!owned) {
+        return json({ error: "Profile not found" }, 404);
+      }
+    } else {
       const { data: prof } = await supabase
         .from("career_ops_user_profiles")
         .select("id")
@@ -106,10 +112,7 @@ Deno.serve(async (req: Request) => {
     }
 
     if (!profileId) {
-      return new Response(
-        JSON.stringify({ error: "No active profile found. Upload a resume first." }),
-        { status: 422, headers: { "content-type": "application/json" } },
-      );
+      return json({ error: "No active profile found. Upload a resume first." }, 422);
     }
 
     // Check for a recent in-progress analysis (debounce: 60s)
@@ -123,10 +126,7 @@ Deno.serve(async (req: Request) => {
       .single();
 
     if (recent) {
-      return new Response(
-        JSON.stringify({ analysisId: recent.id, status: recent.status, message: "Analysis already in progress" }),
-        { status: 200, headers: { "content-type": "application/json", "Access-Control-Allow-Origin": "*" } },
-      );
+      return json({ analysisId: recent.id, status: recent.status, message: "Analysis already in progress" }, 200);
     }
 
     // Create the analysis record
@@ -149,27 +149,20 @@ Deno.serve(async (req: Request) => {
     // Notify the worker via pg_notify (worker listens on this channel)
     // Uses service role to call rpc
     const adminClient = createClient(supabaseUrl, supabaseServiceKey);
-    await adminClient.rpc("pg_notify_career_ops_analysis", {
+    // supabase-js 的 query builder 只實作 then()，沒有 .catch()；錯誤是放在回傳的 { error } 裡。
+    const { error: notifyError } = await adminClient.rpc("pg_notify_career_ops_analysis", {
       analysis_id: analysis.id,
       user_id: user.id,
       profile_id: profileId,
-    }).catch(() => {
-      // pg_notify helper may not exist yet — worker can also poll the analyses table
-      console.log("pg_notify not available, worker will poll");
     });
+    if (notifyError) {
+      // pg_notify helper may not exist yet — worker can also poll the analyses table
+      console.log("pg_notify not available, worker will poll:", notifyError.message);
+    }
 
-    return new Response(
-      JSON.stringify({ analysisId: analysis.id, status: "queued" }),
-      {
-        status: 202,
-        headers: { "content-type": "application/json", "Access-Control-Allow-Origin": "*" },
-      },
-    );
+    return json({ analysisId: analysis.id, status: "queued" }, 202);
   } catch (err) {
     const message = err instanceof Error ? err.message : String(err);
-    return new Response(JSON.stringify({ error: message }), {
-      status: 500,
-      headers: { "content-type": "application/json", "Access-Control-Allow-Origin": "*" },
-    });
+    return json({ error: message }, 500);
   }
 });
